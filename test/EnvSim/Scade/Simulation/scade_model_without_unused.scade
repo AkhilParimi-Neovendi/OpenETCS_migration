@@ -1,0 +1,355 @@
+
+type
+   #pragma ed <Type oid="!ed/d102d/3FDE/6B80/65240909da9"/>
+#end
+
+NID_PACKET = int64;
+   #pragma ed <Type oid="!ed/d1047/3FDE/6B80/652409092d49"/>
+#end
+
+Q_DIR = enum {#pragma ed <Constant oid="!ed/d1044/3FDE/6B80/652409092973"/>
+#end
+ #pragma kcg enum_val 0 #end Q_DIR_Reverse, #pragma ed <Constant oid="!ed/d1045/3FDE/6B80/6524090953e7"/>
+#end
+ #pragma kcg enum_val 1 #end Q_DIR_Nominal, #pragma ed <Constant oid="!ed/d1046/3FDE/6B80/652409091565"/>
+#end
+ #pragma kcg enum_val 2 #end Q_DIR_Both_directions};
+
+package EnvSim
+
+function imported #pragma ed <Operator oid="!ed/5ef985/5971/E40/55f97a0014e5"/>
+#end
+
+ScriptedTrack(
+      #pragma ed    <Variable oid="!ed/5ef986/5971/E40/55f97a13ae"/>
+#end
+
+   #pragma SMP set varSmpUnit {}
+set varSmpType {}
+set varSmpInfo {} #end 
+actualTrainPos : float64; 
+      #pragma ed    <Variable oid="!ed/5ef98f/5971/E40/55f97a2c2b34"/>
+#end
+
+radioTrainPos : float64)
+returns (
+      #pragma ed    <Variable oid="!ed/5ef9a2/5971/E40/55f97b6b32c1"/>
+#end
+
+baliseMessage : TM::CompressedBaliseMessage; 
+      #pragma ed    <Variable oid="!ed/5ef998/5971/E40/55f97a467309"/>
+#end
+
+radioMessage : TM::CompressedRadioMessage)
+; 
+package Internal
+
+function private #pragma ed <Operator oid="!ed/5ef9c4/5971/E40/55f986602b4e">
+	<diagrams>
+		<NetDiagram name="diagram_ScriptedTrackTest_1" landscape="true" format="A4 (210 297)" oid="!ed/5ef9c5/5971/E40/55f9866094f">
+			<presentationElements>
+				<EquationGE presentable="!ed/5ef9e0/5971/E40/55f98686597d">
+					<position>
+						<Point x="8644" y="2955"/>
+					</position>
+					<size>
+						<Size width="2397" height="2080"/>
+					</size>
+				</EquationGE>
+				<EquationGE presentable="!ed/5ef9e7/5971/E40/55f9869636c">
+					<position>
+						<Point x="6747" y="3387"/>
+					</position>
+					<size>
+						<Size width="265" height="502"/>
+					</size>
+				</EquationGE>
+				<EquationGE presentable="!ed/5ef9e9/5971/E40/55f986962108">
+					<position>
+						<Point x="6747" y="4075"/>
+					</position>
+					<size>
+						<Size width="265" height="503"/>
+					</size>
+				</EquationGE>
+				<EquationGE presentable="!ed/5ef9eb/5971/E40/55f986963d33">
+					<position>
+						<Point x="12885" y="4419"/>
+					</position>
+					<size>
+						<Size width="318" height="503"/>
+					</size>
+				</EquationGE>
+				<EquationGE presentable="!ed/5ef9ec/5971/E40/55f9869648f4">
+					<position>
+						<Point x="12859" y="3440"/>
+					</position>
+					<size>
+						<Size width="318" height="503"/>
+					</size>
+				</EquationGE>
+				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/5ef9e7/5971/E40/55f9869636c" dstEquation="!ed/5ef9e0/5971/E40/55f98686597d">
+					<positions>
+						<Point x="7006" y="3641"/>
+						<Point x="7832" y="3641"/>
+						<Point x="7832" y="3641"/>
+						<Point x="8636" y="3641"/>
+					</positions>
+				</Edge>
+				<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/5ef9e9/5971/E40/55f986962108" dstEquation="!ed/5ef9e0/5971/E40/55f98686597d">
+					<positions>
+						<Point x="7006" y="4339"/>
+						<Point x="7832" y="4339"/>
+						<Point x="7832" y="4339"/>
+						<Point x="8636" y="4339"/>
+					</positions>
+				</Edge>
+				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/5ef9e0/5971/E40/55f98686597d" dstEquation="!ed/5ef9ec/5971/E40/55f9869648f4">
+					<positions>
+						<Point x="11049" y="3662"/>
+						<Point x="11959" y="3662"/>
+						<Point x="11959" y="3704"/>
+						<Point x="12912" y="3704"/>
+					</positions>
+				</Edge>
+				<Edge leftVarIndex="2" rightExprIndex="1" srcEquation="!ed/5ef9e0/5971/E40/55f98686597d" dstEquation="!ed/5ef9eb/5971/E40/55f986963d33">
+					<positions>
+						<Point x="11049" y="4339"/>
+						<Point x="11980" y="4339"/>
+						<Point x="11980" y="4678"/>
+						<Point x="12933" y="4678"/>
+					</positions>
+				</Edge>
+			</presentationElements>
+		</NetDiagram>
+	</diagrams>
+</Operator>
+#end
+
+ScriptedTrackTest(
+      #pragma ed    <Variable oid="!ed/5ef9cb/5971/E40/55f986817892"/>
+#end
+
+   #pragma SMP set varSmpUnit {}
+set varSmpType {}
+set varSmpInfo {} #end 
+actualTrainPos : float64; 
+      #pragma ed    <Variable oid="!ed/5ef9d1/5971/E40/55f986815463"/>
+#end
+
+radioTrainPos : float64)
+returns (
+      #pragma ed    <Variable oid="!ed/5ef9d8/5971/E40/55f986813e4e"/>
+#end
+
+radioMessage : TM::CompressedRadioMessage; 
+      #pragma ed    <Variable oid="!ed/5ef9df/5971/E40/55f986812c48"/>
+#end
+
+baliseMessage : TM::CompressedBaliseMessage)
+var
+      #pragma ed    <Variable oid="!ed/5ef9e2/5971/E40/55f98686a1b"/>
+#end
+
+_L2 : TM::CompressedBaliseMessage;
+      #pragma ed    <Variable oid="!ed/5ef9e1/5971/E40/55f986866686"/>
+#end
+
+_L1 : TM::CompressedRadioMessage;
+      #pragma ed    <Variable oid="!ed/5ef9e8/5971/E40/55f986961256"/>
+#end
+
+_L3 : float64;
+      #pragma ed    <Variable oid="!ed/5ef9ea/5971/E40/55f986963195"/>
+#end
+
+_L4 : float64;
+let
+   #pragma ed    <Equation oid="!ed/5ef9e0/5971/E40/55f98686597d"/>
+#end
+
+   _L2, _L1 =  #1 ScriptedTrack(_L3, _L4);
+   #pragma ed    <Equation oid="!ed/5ef9e7/5971/E40/55f9869636c"/>
+#end
+
+   _L3 = actualTrainPos;
+   #pragma ed    <Equation oid="!ed/5ef9e9/5971/E40/55f986962108"/>
+#end
+
+   _L4 = radioTrainPos;
+   #pragma ed    <Equation oid="!ed/5ef9eb/5971/E40/55f986963d33"/>
+#end
+
+   radioMessage = _L1;
+   #pragma ed    <Equation oid="!ed/5ef9ec/5971/E40/55f9869648f4"/>
+#end
+
+   baliseMessage = _L2;
+tel
+
+      end;
+
+   end;
+
+package TM
+
+   type
+      #pragma ed <Type oid="!ed/a522/B49/640/554b560665d6"/>
+#end
+
+CompressedBaliseMessage = {#pragma ed <Field oid="!ed/a523/B49/640/554b56066ea4"/>
+#end
+Header : BaliseTelegramHeader_int_T, #pragma ed <Field oid="!ed/a524/B49/640/554b56066328"/>
+#end
+Messages : Common_Types_Pkg::CompressedPackets_T};
+      -- 8.4.2.1: The Balise Telegram Header
+-- This structure is not "packed" to bit boundaries
+#pragma ed <Type oid="!ed/a50e/B49/640/554b56066b24"/>
+#end
+
+BaliseTelegramHeader_int_T = {-- 0 downlink 1 uplink
+#pragma ed <Field oid="!ed/a50f/B49/640/554b56065fe4"/>
+#end
+q_updown : int64, -- <15= previous version 16= V1.0 17=V1.1 32=V2.0 33=Reserved 127=reserved 
+#pragma ed <Field oid="!ed/a510/B49/640/554b56066aac"/>
+#end
+m_version : int64, -- 0 balise 1 loop
+#pragma ed <Field oid="!ed/a511/B49/640/554b56063c69"/>
+#end
+q_media : int64, -- index 0...7 of balise position in BG
+#pragma ed <Field oid="!ed/a512/B49/640/554b56062967"/>
+#end
+n_pig : int64, -- number 0...7 of total balises in BG (max n8)
+#pragma ed <Field oid="!ed/a513/B49/640/554b5606527c"/>
+#end
+n_total : int64, -- number of duplicates: 0=0 1=1 2=2 3=Spare
+#pragma ed <Field oid="!ed/a514/B49/640/554b5606303"/>
+#end
+m_dup : int64, -- 0-253 are numbers 254 telegram never fits 255 telegram fits all telegrams 
+#pragma ed <Field oid="!ed/a515/B49/640/554b56063a4e"/>
+#end
+m_mcount : int64, -- country ID
+#pragma ed <Field oid="!ed/a516/B49/640/554b5606153d"/>
+#end
+nid_c : int64, -- Balise ID
+#pragma ed <Field oid="!ed/a517/B49/640/554b56062faf"/>
+#end
+nid_bg : int64, -- 0 unlinked 1 linked
+#pragma ed <Field oid="!ed/a518/B49/640/554b56061585"/>
+#end
+q_link : int64};
+      #pragma ed <Type oid="!ed/a52e/B49/640/554b56061c6"/>
+#end
+
+CompressedRadioMessage = {#pragma ed <Field oid="!ed/a52f/B49/640/554b56061d2"/>
+#end
+Header : Radio_TrackTrain_Header_T, #pragma ed <Field oid="!ed/a530/B49/640/554b56064567"/>
+#end
+Messages : Common_Types_Pkg::CompressedPackets_T};
+      #pragma ed <Type oid="!ed/a89e/B49/640/554b560670c9"/>
+#end
+
+Radio_TrackTrain_Header_T = {-- Identifier of the radio device (assuming 2 devices are installed for RBC-RBC-Handover)
+#pragma ed <Field oid="!ed/a89f/B49/640/554b56062cf6"/>
+#end
+radioDevice : int64, -- Timestamp when the message has been received in the system
+#pragma ed <Field oid="!ed/a8a0/B49/640/554b56063a77"/>
+#end
+receivedSystemTime : int64, -- Message Identifier / From: General header
+#pragma ed <Field oid="!ed/a8a1/B49/640/554b56063509"/>
+#end
+nid_message : int64, -- Time, according to trainborne clock, at which message is sent / From: General header
+#pragma ed <Field oid="!ed/a8a2/B49/640/554b56066082"/>
+#end
+t_train : int64, -- Indicates whether the telegram must be acknowledged or not / From: General header
+#pragma ed <Field oid="!ed/a8a3/B49/640/554b56063f3f"/>
+#end
+m_ack : int64, -- Identity of last relevant balise group / From: General header
+#pragma ed <Field oid="!ed/a8a4/B49/640/554b5606277c"/>
+#end
+nid_lrbg : int64, -- 8.7.4: Reference to received train data message
+#pragma ed <Field oid="!ed/a8a5/B49/640/554b56062998"/>
+#end
+t_train_reference : int64, -- 8.7.6: Message 15: Conditional Emergency Stop
+#pragma ed <Field oid="!ed/a8a6/B49/640/554b56065a3b"/>
+#end
+nid_em : int64, -- Qualifier for the distance scale / From: Message 33: MA with Shifted Location Reference
+#pragma ed <Field oid="!ed/a8a7/B49/640/554b56062d1f"/>
+#end
+q_scale : int64, #pragma ed <Field oid="!ed/a8a8/B49/640/554b560628fd"/>
+#end
+d_sr : int64, #pragma ed <Field oid="!ed/a8a9/B49/640/554b56062eef"/>
+#end
+t_sh_rqst : int64, #pragma ed <Field oid="!ed/a8aa/B49/640/554b56066ae5"/>
+#end
+d_ref : int64, #pragma ed <Field oid="!ed/a8ab/B49/640/554b56065e4f"/>
+#end
+q_dir : int64, -- 8.7.6: Distance between LRBG and the position reference to the emergency stop.
+#pragma ed <Field oid="!ed/a8ac/B49/640/554b56061c20"/>
+#end
+d_emergencystop : int64, -- 8.7.12: Version of the ERTMS/ETCS system.
+#pragma ed <Field oid="!ed/a8ad/B49/640/554b560630ae"/>
+#end
+m_version : int64};
+
+   end;
+
+package Common_Types_Pkg
+
+   const
+      #pragma ed <Constant oid="!ed/3729a/7634/2B24/54d8908a2f14"/>
+#end
+
+cMetadataArraySize : int64 = cDIM_MaxRMessages;
+      #pragma ed <Constant oid="!ed/14fc9a/4207/1150/552681a9773b"/>
+#end
+
+cDIM_MaxRMessages : int64 = 30;
+      #pragma ed <Constant oid="!ed/19a4b/24D8/D90/5525381a6d18"/>
+#end
+
+cDIM_MaxDataElementsInRMessage : int64 = 500;
+
+   type
+      -- Definition for handling generic data interfaces
+#pragma ed <Type oid="!ed/14fc8e/4207/1150/552680e33790"/>
+#end
+
+CompressedPackets_T = {#pragma ed <Field oid="!ed/14fc8f/4207/1150/5526810a53e2"/>
+#end
+PacketHeaders : Metadata_T, #pragma ed <Field oid="!ed/14fcbc/4207/1150/552683d63a75"/>
+#end
+PacketData : CompressedPacketData_T};
+      -- Stores the metadata about packets. 26 = 2*13 = max packet number in scenario * 2 directions
+#pragma ed <Type oid="!ed/26988/25CF/CD0/54909c802311"/>
+#end
+
+Metadata_T = MetadataElement_T ^cMetadataArraySize;
+      -- Used to store generic metadata about a packet
+#pragma ed <Type oid="!ed/2698a/25CF/CD0/54909c9c2897"/>
+#end
+
+MetadataElement_T = {-- Packet number
+#pragma ed <Field oid="!ed/26a42/25CF/CD0/54914ba221b4"/>
+#end
+nid_packet : NID_PACKET, -- Direction
+#pragma ed <Field oid="!ed/3327b/25CF/CD0/549160cb18a"/>
+#end
+q_dir : Q_DIR, -- True, if the data of this packet is valid.
+#pragma ed <Field oid="!ed/26994/25CF/CD0/54909cb045c9"/>
+#end
+valid : bool, -- Start address of packet in generic packet array
+#pragma ed <Field oid="!ed/19938/124C/1F28/54f036281c02"/>
+#end
+startAddress : int64, -- End address of packet in generic packet array
+#pragma ed <Field oid="!ed/19941/124C/1F28/54f0362f2fb1"/>
+#end
+endAddress : int64};
+      -- packets received. If packets for "bothdirections" are processed both variables for the packets are in use. The packet-selection is limited to the Utrecht-Amsterdam-scenario
+#pragma ed <Type oid="!ed/5acb/6191/117C/549194957cf7"/>
+#end
+
+CompressedPacketData_T = int64 ^cDIM_MaxDataElementsInRMessage;
+
+   end;
+

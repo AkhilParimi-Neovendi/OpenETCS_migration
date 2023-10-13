@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="function" name="isMRSPorLOATarget">
+	<inputs>
+		<Variable name="Target">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="TargetManagement_types::Target_real_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/7b460/74ED/A61C/5538f4ab4bf5"/>
+			</pragmas>
+		</Variable>
+	</inputs>
+	<outputs>
+		<Variable name="isVnonZero">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/7b463/74ED/A61C/5538f4ab4120"/>
+			</pragmas>
+		</Variable>
+	</outputs>
+	<locals>
+		<Variable name="_L1">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="TargetManagement_types::Target_real_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/7b462/74ED/A61C/5538f4ab613f"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L2">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="SDM_Types_Pkg::V_internal_real_Type"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/7ae1c/74ED/A61C/5537be74780e"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L8">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/c640f/6A95/1CAC/55afa3ff7d4c"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L9">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float64"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/c6417/6A95/1CAC/55afa4163e74"/>
+			</pragmas>
+		</Variable>
+	</locals>
+	<data>
+		<!-- isVnonZero = _L8; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="isVnonZero"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="_L8"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/7b465/74ED/A61C/5538f4ab4777"/>
+			</pragmas>
+		</Equation>
+		<!-- _L1 = Target; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L1"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="Target"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/7b461/74ED/A61C/5538f4ab4926"/>
+			</pragmas>
+		</Equation>
+		<!-- _L2 = _L1.speed; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L2"/>
+			</lefts>
+			<right>
+				<!-- _L1.speed -->
+				<PrjOp name="1">
+					<flow>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L1"/>
+							</path>
+						</IdExpression>
+					</flow>
+					<with>
+						<Label name="speed"/>
+					</with>
+				</PrjOp>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/7ae1b/74ED/A61C/5537be742954"/>
+			</pragmas>
+		</Equation>
+		<!-- _L8 = _L2 > _L9; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L8"/>
+			</lefts>
+			<right>
+				<!-- _L2 > _L9 -->
+				<BinaryOp name="1" operator="&gt;">
+					<operands>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L2"/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L9"/>
+							</path>
+						</IdExpression>
+					</operands>
+				</BinaryOp>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/c640e/6A95/1CAC/55afa3ff677d"/>
+			</pragmas>
+		</Equation>
+		<!-- _L9 = 0.0; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L9"/>
+			</lefts>
+			<right>
+				<ConstValue value="0.0"/>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/c6416/6A95/1CAC/55afa4164987"/>
+			</pragmas>
+		</Equation>
+	</data>
+	<pragmas>
+		<ed:Operator oid="!ed/7b45e/74ED/A61C/5538f4ab26f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+			<diagrams>
+				<NetDiagram name="diagram_isMRSPorLOATarget_1" landscape="true" format="A4 (210 297)" oid="!ed/7b45f/74ED/A61C/5538f4ab1e37">
+					<presentationElements>
+						<EquationGE presentable="!ed/7b465/74ED/A61C/5538f4ab4777">
+							<position>
+								<Point x="5530" y="582"/>
+							</position>
+							<size>
+								<Size width="317" height="503"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/7b461/74ED/A61C/5538f4ab4926">
+							<position>
+								<Point x="1164" y="397"/>
+							</position>
+							<size>
+								<Size width="264" height="503"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/7ae1b/74ED/A61C/5537be742954">
+							<position>
+								<Point x="1720" y="318"/>
+							</position>
+							<size>
+								<Size width="1656" height="677"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/7b461/74ED/A61C/5538f4ab4926" dstEquation="!ed/7ae1b/74ED/A61C/5537be742954">
+							<positions>
+								<Point x="1429" y="661"/>
+								<Point x="1561" y="661"/>
+								<Point x="1561" y="661"/>
+								<Point x="1720" y="661"/>
+							</positions>
+						</Edge>
+						<EquationGE presentable="!ed/c640e/6A95/1CAC/55afa3ff677d">
+							<position>
+								<Point x="4180" y="318"/>
+							</position>
+							<size>
+								<Size width="1021" height="1048"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/7ae1b/74ED/A61C/5537be742954" dstEquation="!ed/c640e/6A95/1CAC/55afa3ff677d">
+							<positions>
+								<Point x="3387" y="661"/>
+								<Point x="3784" y="661"/>
+								<Point x="3784" y="661"/>
+								<Point x="4180" y="661"/>
+							</positions>
+						</Edge>
+						<EquationGE kind="OBJ_LIT" presentable="!ed/c6416/6A95/1CAC/55afa4164987">
+							<position>
+								<Point x="3836" y="847"/>
+							</position>
+							<size>
+								<Size width="211" height="317"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/c6416/6A95/1CAC/55afa4164987" dstEquation="!ed/c640e/6A95/1CAC/55afa3ff677d">
+							<positions>
+								<Point x="4048" y="1005"/>
+								<Point x="4101" y="1005"/>
+								<Point x="4101" y="1005"/>
+								<Point x="4180" y="1005"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/c640e/6A95/1CAC/55afa3ff677d" dstEquation="!ed/7b465/74ED/A61C/5538f4ab4777">
+							<positions>
+								<Point x="5186" y="847"/>
+								<Point x="5371" y="847"/>
+								<Point x="5371" y="847"/>
+								<Point x="5583" y="847"/>
+							</positions>
+						</Edge>
+					</presentationElements>
+				</NetDiagram>
+			</diagrams>
+			<references>
+				<TypeRef path="TargetManagement_types::Target_real_T" refOid="!ed/2cb93/6534/166C/54db4dcad59"/>
+			</references>
+		</ed:Operator>
+	</pragmas>
+</Operator>

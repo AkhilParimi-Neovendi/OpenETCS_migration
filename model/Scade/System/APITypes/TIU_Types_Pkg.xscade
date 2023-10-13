@@ -1,0 +1,2528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Package name="TIU_Types_Pkg">
+			<declarations>
+				<Constant name="emptyTIUInfo">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="Message_Train_Interface_to_EVC_T"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<!-- {train_status : {valid : false, m_sleeping_st : signal_active, m_passiveshunting_... -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="train_status">
+									<flow>
+										<!-- {valid : false, m_sleeping_st : signal_active, m_passiveshunting_st : passive_shu... -->
+										<DataStructOp>
+											<data>
+												<LabelledExpression label="valid">
+													<flow>
+														<ConstValue value="false"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="m_sleeping_st">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="signal_active"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="m_passiveshunting_st">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="passive_shunting_permitted"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="m_nonleading_st">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="non_leading_signall_status_not_defined"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="m_cab_st">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="cab_signal_status_not_defined"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="m_directioncontroller_st">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="direction_controller_in_neutral"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="m_trainintegrity_st">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="train_is_not_integer"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="m_traction_st">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="traction_on"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+											</data>
+										</DataStructOp>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="brake_status">
+									<flow>
+										<!-- {valid : false, m_regenerativebrake_st : brake_status_not_defined, m_eddycurrentb... -->
+										<DataStructOp>
+											<data>
+												<LabelledExpression label="valid">
+													<flow>
+														<ConstValue value="false"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="m_regenerativebrake_st">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="brake_status_not_defined"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="m_eddycurrentbrake_st">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="brake_status_not_defined"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="m_magneticshoebrake_st">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="brake_status_not_defined"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="m_electropneumaticbrake_st">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="brake_status_not_defined"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="m_additionalbrake_st">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="brake_status_not_defined"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+											</data>
+										</DataStructOp>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="brake_pressure">
+									<flow>
+										<!-- {valid : false, pressure : 0} -->
+										<DataStructOp>
+											<data>
+												<LabelledExpression label="valid">
+													<flow>
+														<ConstValue value="false"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="pressure">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+											</data>
+										</DataStructOp>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="train_data_entry_type">
+									<flow>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="fixed_entry_type"/>
+											</path>
+										</IdExpression>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="train_data_info">
+									<flow>
+										<!-- {valid : false, acknowledgedByDriver : false, trainCategory : NC_TRAIN_Train_does... -->
+										<DataStructOp>
+											<data>
+												<LabelledExpression label="valid">
+													<flow>
+														<ConstValue value="false"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="acknowledgedByDriver">
+													<flow>
+														<ConstValue value="false"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="trainCategory">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="cantDeficientcy">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="NC_CDTRAIN_Cant_Deficiency_80_mm"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="trainLength">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="brakePerctage">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="maxTrainSpeed">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="loadingGauge">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="axleLoadCategory">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="M_AXLELOADCAT_A"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="airtightSystem">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="M_AIRTIGHT_Not_fitted"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="axleNumber">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="numberNationalSystems">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="nationSystems">
+													<flow>
+														<!-- [0, 0, 0, 0, 0] -->
+														<DataArrayOp>
+															<data>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+															</data>
+														</DataArrayOp>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="numberTractionSystems">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="tractionSystem">
+													<flow>
+														<!-- [{m_voltage : M_VOLTAGE_Line_not_fitted_with_any_traction_system, nid_ctraction :... -->
+														<DataArrayOp>
+															<data>
+																<!-- {m_voltage : M_VOLTAGE_Line_not_fitted_with_any_traction_system, nid_ctraction : ... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="m_voltage">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="M_VOLTAGE_Line_not_fitted_with_any_traction_system"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="nid_ctraction">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {m_voltage : M_VOLTAGE_Line_not_fitted_with_any_traction_system, nid_ctraction : ... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="m_voltage">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="M_VOLTAGE_Line_not_fitted_with_any_traction_system"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="nid_ctraction">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {m_voltage : M_VOLTAGE_Line_not_fitted_with_any_traction_system, nid_ctraction : ... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="m_voltage">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="M_VOLTAGE_Line_not_fitted_with_any_traction_system"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="nid_ctraction">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {m_voltage : M_VOLTAGE_Line_not_fitted_with_any_traction_system, nid_ctraction : ... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="m_voltage">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="M_VOLTAGE_Line_not_fitted_with_any_traction_system"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="nid_ctraction">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+															</data>
+														</DataArrayOp>
+													</flow>
+												</LabelledExpression>
+											</data>
+										</DataStructOp>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="type_I_train_and_brake_inhibition">
+									<flow>
+										<!-- {valid : false, nothing_to_resume_profile_follow : {d_test_trackcond : {now : 0, ... -->
+										<DataStructOp>
+											<data>
+												<LabelledExpression label="valid">
+													<flow>
+														<ConstValue value="false"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="nothing_to_resume_profile_follow">
+													<flow>
+														<!-- {d_test_trackcond : {now : 0, distance : 0}, l_test_trackcond : {now : 0, distanc... -->
+														<DataStructOp>
+															<data>
+																<LabelledExpression label="d_test_trackcond">
+																	<flow>
+																		<!-- {now : 0, distance : 0} -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="now">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="distance">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																	</flow>
+																</LabelledExpression>
+																<LabelledExpression label="l_test_trackcond">
+																	<flow>
+																		<!-- {now : 0, distance : 0} -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="now">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="distance">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																	</flow>
+																</LabelledExpression>
+																<LabelledExpression label="m_trackcond">
+																	<flow>
+																		<IdExpression>
+																			<path>
+																				<ConstVarRef name="non_stopping_area"/>
+																			</path>
+																		</IdExpression>
+																	</flow>
+																</LabelledExpression>
+															</data>
+														</DataStructOp>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="empty_profile_initial_state_to_be_resumed">
+													<flow>
+														<!-- {now : 0, distance : 0} -->
+														<DataStructOp>
+															<data>
+																<LabelledExpression label="now">
+																	<flow>
+																		<ConstValue value="0"/>
+																	</flow>
+																</LabelledExpression>
+																<LabelledExpression label="distance">
+																	<flow>
+																		<ConstValue value="0"/>
+																	</flow>
+																</LabelledExpression>
+															</data>
+														</DataStructOp>
+													</flow>
+												</LabelledExpression>
+											</data>
+										</DataStructOp>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/b86e/2ABF/1248/54b6433127c7"/>
+					</pragmas>
+				</Constant>
+				<Type name="Type_I_train_commands_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/17547/1DD5/1710/54bd185d7664"/>
+									</pragmas>
+								</Field>
+								<Field name="m_pantograph_cm">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_pantograph_command_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b783/4B8D/12C4/54845f882d49"/>
+									</pragmas>
+								</Field>
+								<Field name="m_airtightness_cm">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_airtightness_command_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b784/4B8D/12C4/54845f88b47"/>
+									</pragmas>
+								</Field>
+								<Field name="m_mainpowerswitch_cm">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_mainpowerswitch_command_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b785/4B8D/12C4/54845f88604d"/>
+									</pragmas>
+								</Field>
+								<Field name="m_traction_cutoff_cm">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_traction_cutoff_command_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b786/4B8D/12C4/54845f88c6b"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b782/4B8D/12C4/54845f881d67"/>
+					</pragmas>
+				</Type>
+				<Type name="Type_I_train_and_brake_inhibition_with_distance_commands_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/ba82/5F0/BD0/54b677d14460" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Valid Indicator for this information</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="nothing_to_resume_profile_follow">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="nothing_to_resume_profile_follow_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b773/4B8D/12C4/54845f88a86" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>??Usecase??</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="empty_profile_initial_state_to_be_resumed">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_test_trackinit_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b774/4B8D/12C4/54845f8865b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>??Usecase??</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b772/4B8D/12C4/54845f8831e7"/>
+					</pragmas>
+				</Type>
+				<Type name="S_nothing_to_resume_profile_follow_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="nIter">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b767/4B8D/12C4/54845f88329a"/>
+									</pragmas>
+								</Field>
+								<Field name="value">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="A_nothing_to_resume_profile_follow_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b768/4B8D/12C4/54845f88316a"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b766/4B8D/12C4/54845f8832df"/>
+					</pragmas>
+				</Type>
+				<Type name="Passenger_door_control_info_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/17564/1DD5/1710/54bd1e715fe3" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>This part is valid</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="door_control_info">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1756d/1DD5/1710/54bd200b4fd" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Type is not defined yet!!</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b75d/4B8D/12C4/54845f883b1f"/>
+					</pragmas>
+				</Type>
+				<Type name="Brake_pressure_value_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b756/4B8D/12C4/54845f8829eb"/>
+									</pragmas>
+								</Field>
+								<Field name="pressure">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b757/4B8D/12C4/54845f88344d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Unit is [mBar]</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b755/4B8D/12C4/54845f8880a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Brake pressure</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="nothing_to_resume_profile_follow_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="d_test_trackcond">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_test_trackcond_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b74b/4B8D/12C4/54845f8867fe"/>
+									</pragmas>
+								</Field>
+								<Field name="l_test_trackcond">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="L_test_trackcond_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b74c/4B8D/12C4/54845f886ee9"/>
+									</pragmas>
+								</Field>
+								<Field name="m_trackcond">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_trackcond_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b74d/4B8D/12C4/54845f8862a6"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b74a/4B8D/12C4/54845f881b79"/>
+					</pragmas>
+				</Type>
+				<Type name="NID_ctraction_T">
+					<definition>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b73e/4B8D/12C4/54845f8817cd"/>
+					</pragmas>
+				</Type>
+				<Type name="Mode_control_and_train_status_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b8c6/2ABF/1248/54b644d011e6"/>
+									</pragmas>
+								</Field>
+								<Field name="m_sleeping_st">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_sleeping_signal_status_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b732/4B8D/12C4/54845f884193"/>
+									</pragmas>
+								</Field>
+								<Field name="m_passiveshunting_st">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_passiveshunting_signal_status_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b733/4B8D/12C4/54845f884a13"/>
+									</pragmas>
+								</Field>
+								<Field name="m_nonleading_st">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_nonleading_signal_status_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b734/4B8D/12C4/54845f887fa"/>
+									</pragmas>
+								</Field>
+								<Field name="m_cab_st">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_cab_signal_status_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b735/4B8D/12C4/54845f882403"/>
+									</pragmas>
+								</Field>
+								<Field name="m_directioncontroller_st">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_directioncontroller_signal_status_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b736/4B8D/12C4/54845f887ae0"/>
+									</pragmas>
+								</Field>
+								<Field name="m_trainintegrity_st">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_trainintegrity_signal_status_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b737/4B8D/12C4/54845f8830cf"/>
+									</pragmas>
+								</Field>
+								<Field name="m_traction_st">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_traction_signal_status_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b738/4B8D/12C4/54845f886d1d"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b731/4B8D/12C4/54845f886b99" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Assumption: if valid all enumerations in this definition are valid.</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="Message_Train_Interface_to_EVC_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="train_status">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Mode_control_and_train_status_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b718/4B8D/12C4/54845f887520" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Status of the train</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="brake_status">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Brake_status_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b719/4B8D/12C4/54845f8877a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Status of the bakes</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="brake_pressure">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Brake_pressure_value_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b71a/4B8D/12C4/54845f8840f8" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Current brake pressure</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="train_data_entry_type">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_train_data_entry_type_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b71b/4B8D/12C4/54845f88394d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>??Usecase??</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="train_data_info">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="trainData_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b71c/4B8D/12C4/54845f883e90" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>!!Incomplete Definition!! What is the purpose of this information?</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="type_I_train_and_brake_inhibition">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Type_I_train_and_brake_inhibition_with_distance_commands_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b71d/4B8D/12C4/54845f88df1"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b717/4B8D/12C4/54845f88e81" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Definition of packages received from the TIU. Each of the components in this structure reflects atomic information. This information might be valid or not valid.</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="Message_EVC_to_Train_Interface_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="isolation_status">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Isolation_Status_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b6ff/4B8D/12C4/54845f881a02"/>
+									</pragmas>
+								</Field>
+								<Field name="brake_command">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Brake_command_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b700/4B8D/12C4/54845f8844"/>
+									</pragmas>
+								</Field>
+								<Field name="brake_inhibition">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Brake_inhibition_command_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b701/4B8D/12C4/54845f887f9b"/>
+									</pragmas>
+								</Field>
+								<Field name="type_I_train_commands">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Type_I_train_commands_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b702/4B8D/12C4/54845f882471"/>
+									</pragmas>
+								</Field>
+								<Field name="change_traction_system">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Change_traction_system_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b703/4B8D/12C4/54845f8861d0"/>
+									</pragmas>
+								</Field>
+								<Field name="passenger_door_control_info">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Passenger_door_control_info_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b704/4B8D/12C4/54845f8828bf"/>
+									</pragmas>
+								</Field>
+								<Field name="change_of_allowed_current_consumption">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Change_of_allowed_current_consumption_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b705/4B8D/12C4/54845f88ebb"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b6fe/4B8D/12C4/54845f881201"/>
+					</pragmas>
+				</Type>
+				<Type name="M_voltage_types_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="line_not_fitted_with_any_traction_system">
+									<pragmas>
+										<ed:Value oid="!ed/b6e5/4B8D/12C4/54845f881c00"/>
+									</pragmas>
+								</Value>
+								<Value name="ac_25kV_50Hz">
+									<pragmas>
+										<ed:Value oid="!ed/b6e6/4B8D/12C4/54845f88bce"/>
+									</pragmas>
+								</Value>
+								<Value name="ac_15kV_16_7Hz">
+									<pragmas>
+										<ed:Value oid="!ed/b6e7/4B8D/12C4/54845f881e50"/>
+									</pragmas>
+								</Value>
+								<Value name="dc_3kV">
+									<pragmas>
+										<ed:Value oid="!ed/b6e8/4B8D/12C4/54845f8822b5"/>
+									</pragmas>
+								</Value>
+								<Value name="dc_1_5kV">
+									<pragmas>
+										<ed:Value oid="!ed/b6e9/4B8D/12C4/54845f887cb8"/>
+									</pragmas>
+								</Value>
+								<Value name="dc_600_750kV">
+									<pragmas>
+										<ed:Value oid="!ed/b6ea/4B8D/12C4/54845f88284a"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b6e4/4B8D/12C4/54845f88fc4"/>
+					</pragmas>
+				</Type>
+				<Type name="M_voltage_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="voltage_type">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_voltage_types_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b6d7/4B8D/12C4/54845f88695a"/>
+									</pragmas>
+								</Field>
+								<Field name="NID_ctraction">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_ctraction_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b6d8/4B8D/12C4/54845f88428c"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b6d6/4B8D/12C4/54845f88513e"/>
+					</pragmas>
+				</Type>
+				<Type name="trainData_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/ba70/5F0/BD0/54b6769dcc9" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Train data are valid. This status is reached when data are available from the TIU</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="acknowledgedByDriver">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/41cf7/2946/564/54ed8ef3270b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>This information comes from the DMI and is added when a train-data-ach is received</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="trainCategory">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NC_TRAIN"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/ba79/5F0/BD0/54b676af7a1a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>3.18.3.2 a) Train category(ies)</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="cantDeficientcy">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NC_CDTRAIN"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1ec7f/3A01/1B38/55a510f7247" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Cant deficiency train category</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="trainLength">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::L_internal_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/291e2/2566/1808/54ec8ec32233" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>3.18.3.2 b) Train length</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="brakePerctage">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/291f6/2566/1808/54ec90dd6646" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>3.18.3.2 c) Traction / Brake Parameters. This item is currently not complete</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="maxTrainSpeed">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::V_internal_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/291ff/2566/1808/54ec93e5715d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>3.18.3.2 d) Maximum train speed</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="loadingGauge">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_LOADINGGAUGE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/29209/2566/1808/54ec940e780f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>3.18.3.2 e) Loading gauge</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="axleLoadCategory">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_AXLELOADCAT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/29213/2566/1808/54ec9457797e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>3.18.3.2 f) Axle load category</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="airtightSystem">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_AIRTIGHT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2921d/2566/1808/54ec94952305" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>3.18.3.2 h) Train fitted with airtight system</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="axleNumber">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/29227/2566/1808/54ec952c49a2" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>3.18.3.2 k) Axle number</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="numberNationalSystems">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1ec70/3A01/1B38/55a50c915e36" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>The number of national systems. This is always one more than niter in the messages</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="nationSystems">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Packet_TrainTypes_Pkg::aNID_NTC_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/a499/3BC/CC8/555d8d6d65f9" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>3.18.3.2 i) List of National Systems available on-board</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="numberTractionSystems">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1ec7e/3A01/1B38/55a50d0b2e89" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>The number of traction systems. This is always one more than niter in the messages</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="tractionSystem">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Packet_TrainTypes_Pkg::aTractionIdentity_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/a4a3/3BC/CC8/555d8dbd6abc" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>3.18.3.2 g) Traction system(s) accepted by the engine</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b6cc/4B8D/12C4/54845f881511" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>3.18.3 Train Data definition</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="M_trackcond_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="non_stopping_area">
+									<pragmas>
+										<ed:Value oid="!ed/b6bc/4B8D/12C4/54845f8892d"/>
+									</pragmas>
+								</Value>
+								<Value name="tunnel_stopping_area">
+									<pragmas>
+										<ed:Value oid="!ed/b6bd/4B8D/12C4/54845f882a4d"/>
+									</pragmas>
+								</Value>
+								<Value name="sound_horn">
+									<pragmas>
+										<ed:Value oid="!ed/b6be/4B8D/12C4/54845f885cda"/>
+									</pragmas>
+								</Value>
+								<Value name="powerless_section_lower_pantograph">
+									<pragmas>
+										<ed:Value oid="!ed/b6bf/4B8D/12C4/54845f8874d9"/>
+									</pragmas>
+								</Value>
+								<Value name="radio_hole">
+									<pragmas>
+										<ed:Value oid="!ed/b6c0/4B8D/12C4/54845f88997"/>
+									</pragmas>
+								</Value>
+								<Value name="air_tightness">
+									<pragmas>
+										<ed:Value oid="!ed/b6c1/4B8D/12C4/54845f88321c"/>
+									</pragmas>
+								</Value>
+								<Value name="switch_off_regenerative_brake">
+									<pragmas>
+										<ed:Value oid="!ed/b6c2/4B8D/12C4/54845f884d7d"/>
+									</pragmas>
+								</Value>
+								<Value name="switch_off_eddy_current_brake_for_service_brake">
+									<pragmas>
+										<ed:Value oid="!ed/b6c3/4B8D/12C4/54845f8820fe"/>
+									</pragmas>
+								</Value>
+								<Value name="switch_off_magnetic_shoe_brake">
+									<pragmas>
+										<ed:Value oid="!ed/b6c4/4B8D/12C4/54845f88483d"/>
+									</pragmas>
+								</Value>
+								<Value name="powerless_section_switch_off_main_power_switch">
+									<pragmas>
+										<ed:Value oid="!ed/b6c5/4B8D/12C4/54845f88752c"/>
+									</pragmas>
+								</Value>
+								<Value name="switch_off_eddy_current_brake_for_emergency_brake">
+									<pragmas>
+										<ed:Value oid="!ed/b6c6/4B8D/12C4/54845f882e8b"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b6bb/4B8D/12C4/54845f88774c"/>
+					</pragmas>
+				</Type>
+				<Type name="M_current_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="no_restriction">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b6a9/4B8D/12C4/54845f882571"/>
+									</pragmas>
+								</Field>
+								<Field name="restriction">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b6aa/4B8D/12C4/54845f8858e"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b6a8/4B8D/12C4/54845f88576b"/>
+					</pragmas>
+				</Type>
+				<Type name="Change_traction_system_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1755b/1DD5/1710/54bd1b3a6646"/>
+									</pragmas>
+								</Field>
+								<Field name="d_test_traction">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_test_traction_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b69f/4B8D/12C4/54845f88fd5"/>
+									</pragmas>
+								</Field>
+								<Field name="m_voltage">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_voltage_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b6a0/4B8D/12C4/54845f886f6e"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b69e/4B8D/12C4/54845f88ae1"/>
+					</pragmas>
+				</Type>
+				<Type name="M_traction_cutoff_command_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="traction_cutoff_command_not_defined">
+									<pragmas>
+										<ed:Value oid="!ed/17551/1DD5/1710/54bd196d5c3f"/>
+									</pragmas>
+								</Value>
+								<Value name="apply_traction_cutoff">
+									<pragmas>
+										<ed:Value oid="!ed/b693/4B8D/12C4/54845f882f92"/>
+									</pragmas>
+								</Value>
+								<Value name="release_traction_cutoff">
+									<pragmas>
+										<ed:Value oid="!ed/b694/4B8D/12C4/54845f88740e"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b691/4B8D/12C4/54845f884640"/>
+					</pragmas>
+				</Type>
+				<Type name="M_mainpowerswitch_command_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="open_main_power_swicth">
+									<pragmas>
+										<ed:Value oid="!ed/b687/4B8D/12C4/54845f887229"/>
+									</pragmas>
+								</Value>
+								<Value name="close_main_power_switch">
+									<pragmas>
+										<ed:Value oid="!ed/b688/4B8D/12C4/54845f88179e"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b685/4B8D/12C4/54845f882817"/>
+					</pragmas>
+				</Type>
+				<Type name="M_airtightness_command_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="airtightness_command_not_defined">
+									<pragmas>
+										<ed:Value oid="!ed/17513/1DD5/1710/54bd14d454b2"/>
+									</pragmas>
+								</Value>
+								<Value name="tunnel_condition_active">
+									<pragmas>
+										<ed:Value oid="!ed/b67b/4B8D/12C4/54845f884c3d"/>
+									</pragmas>
+								</Value>
+								<Value name="tunnel_condition_not_active">
+									<pragmas>
+										<ed:Value oid="!ed/b67c/4B8D/12C4/54845f886502"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b679/4B8D/12C4/54845f884d4e"/>
+					</pragmas>
+				</Type>
+				<Type name="M_pantograph_command_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="pantograph_command_not_defined">
+									<pragmas>
+										<ed:Value oid="!ed/17550/1DD5/1710/54bd18b21d2a"/>
+									</pragmas>
+								</Value>
+								<Value name="lower_pantograph">
+									<pragmas>
+										<ed:Value oid="!ed/b66f/4B8D/12C4/54845f887676"/>
+									</pragmas>
+								</Value>
+								<Value name="raise_pantograph">
+									<pragmas>
+										<ed:Value oid="!ed/b670/4B8D/12C4/54845f883814"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b66d/4B8D/12C4/54845f88ad6"/>
+					</pragmas>
+				</Type>
+				<Type name="M_train_data_entry_type_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="fixed_entry_type">
+									<pragmas>
+										<ed:Value oid="!ed/b662/4B8D/12C4/54845f8859f5"/>
+									</pragmas>
+								</Value>
+								<Value name="flexible_entry_type">
+									<pragmas>
+										<ed:Value oid="!ed/b663/4B8D/12C4/54845f881df3"/>
+									</pragmas>
+								</Value>
+								<Value name="switchable_entry_type">
+									<pragmas>
+										<ed:Value oid="!ed/b664/4B8D/12C4/54845f887c49"/>
+									</pragmas>
+								</Value>
+								<Value name="no_entry_type">
+									<pragmas>
+										<ed:Value oid="!ed/ba6f/5F0/BD0/54b676247627" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Information is undefined</comment>
+										</ed:Value>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b660/4B8D/12C4/54845f8812ee" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Who needs it?</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="M_eddy_current_brake_inhibition_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="eddy_current_brake_inhibition_not_defined">
+									<pragmas>
+										<ed:Value oid="!ed/17518/1DD5/1710/54bd161d3f25"/>
+									</pragmas>
+								</Value>
+								<Value name="inhibit_for_service_brake">
+									<pragmas>
+										<ed:Value oid="!ed/b651/4B8D/12C4/54845f882b28"/>
+									</pragmas>
+								</Value>
+								<Value name="inhibit_for_emergency_brake">
+									<pragmas>
+										<ed:Value oid="!ed/b652/4B8D/12C4/54845f884f9c"/>
+									</pragmas>
+								</Value>
+								<Value name="inhibit_for_both_service_emergency_brake">
+									<pragmas>
+										<ed:Value oid="!ed/b653/4B8D/12C4/54845f882bdc"/>
+									</pragmas>
+								</Value>
+								<Value name="do_not_inhibit_for_service_brake">
+									<pragmas>
+										<ed:Value oid="!ed/b654/4B8D/12C4/54845f8868f8"/>
+									</pragmas>
+								</Value>
+								<Value name="do_not_inhibit_for_emergency_brake">
+									<pragmas>
+										<ed:Value oid="!ed/b655/4B8D/12C4/54845f886ffe"/>
+									</pragmas>
+								</Value>
+								<Value name="do_not_inhibit_for_both_service_emergency_brake">
+									<pragmas>
+										<ed:Value oid="!ed/b656/4B8D/12C4/54845f88440a"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b64f/4B8D/12C4/54845f88db0"/>
+					</pragmas>
+				</Type>
+				<Type name="M_brake_inhibit_command_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="brake_inhibit_not_defined">
+									<pragmas>
+										<ed:Value oid="!ed/17514/1DD5/1710/54bd15117d85"/>
+									</pragmas>
+								</Value>
+								<Value name="inhibit_brake">
+									<pragmas>
+										<ed:Value oid="!ed/b641/4B8D/12C4/54845f886283"/>
+									</pragmas>
+								</Value>
+								<Value name="do_not_inhibit_brake">
+									<pragmas>
+										<ed:Value oid="!ed/b642/4B8D/12C4/54845f88465"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b63f/4B8D/12C4/54845f882eae"/>
+					</pragmas>
+				</Type>
+				<Type name="M_brake_signal_command_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="brake_signal_command_not_defined">
+									<pragmas>
+										<ed:Value oid="!ed/17515/1DD5/1710/54bd154542a3"/>
+									</pragmas>
+								</Value>
+								<Value name="apply_brake">
+									<pragmas>
+										<ed:Value oid="!ed/b635/4B8D/12C4/54845f8860ed"/>
+									</pragmas>
+								</Value>
+								<Value name="release_brake">
+									<pragmas>
+										<ed:Value oid="!ed/b636/4B8D/12C4/54845f88101c"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b633/4B8D/12C4/54845f886d95"/>
+					</pragmas>
+				</Type>
+				<Type name="M_brake_status_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="brake_status_not_defined">
+									<pragmas>
+										<ed:Value oid="!ed/17516/1DD5/1710/54bd157562b7"/>
+									</pragmas>
+								</Value>
+								<Value name="is_active">
+									<pragmas>
+										<ed:Value oid="!ed/b629/4B8D/12C4/54845f882641"/>
+									</pragmas>
+								</Value>
+								<Value name="is_not_active">
+									<pragmas>
+										<ed:Value oid="!ed/b62a/4B8D/12C4/54845f8858fc"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b627/4B8D/12C4/54845f8871b1"/>
+					</pragmas>
+				</Type>
+				<Type name="M_Isolation_status_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="on_board_equipment_is_isolated">
+									<pragmas>
+										<ed:Value oid="!ed/b61d/4B8D/12C4/54845f88187b"/>
+									</pragmas>
+								</Value>
+								<Value name="on_board_equipement_is_not_isolated">
+									<pragmas>
+										<ed:Value oid="!ed/b61e/4B8D/12C4/54845f88445d"/>
+									</pragmas>
+								</Value>
+								<Value name="isolation_status_not_defined">
+									<pragmas>
+										<ed:Value oid="!ed/17519/1DD5/1710/54bd165360be"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b61b/4B8D/12C4/54845f884a6f"/>
+					</pragmas>
+				</Type>
+				<Type name="M_traction_signal_status_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="traction_on">
+									<pragmas>
+										<ed:Value oid="!ed/b612/4B8D/12C4/54845f885f5e"/>
+									</pragmas>
+								</Value>
+								<Value name="traction_off">
+									<pragmas>
+										<ed:Value oid="!ed/5c16/10DD/1798/54b6274f1313"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b610/4B8D/12C4/54845f882357"/>
+					</pragmas>
+				</Type>
+				<Type name="M_trainintegrity_signal_status_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="train_is_not_integer">
+									<pragmas>
+										<ed:Value oid="!ed/b607/4B8D/12C4/54845f889c4"/>
+									</pragmas>
+								</Value>
+								<Value name="train_is_integer">
+									<pragmas>
+										<ed:Value oid="!ed/b608/4B8D/12C4/54845f8883b"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b605/4B8D/12C4/54845f883a60"/>
+					</pragmas>
+				</Type>
+				<Type name="M_directioncontroller_signal_status_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="direction_controller_in_neutral">
+									<pragmas>
+										<ed:Value oid="!ed/b5fa/4B8D/12C4/54845f887280"/>
+									</pragmas>
+								</Value>
+								<Value name="direction_controller_in_forward">
+									<pragmas>
+										<ed:Value oid="!ed/b5fb/4B8D/12C4/54845f883ada"/>
+									</pragmas>
+								</Value>
+								<Value name="direction_controller_in_backward">
+									<pragmas>
+										<ed:Value oid="!ed/b5fc/4B8D/12C4/54845f886d7a"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b5f8/4B8D/12C4/54845f8855f9"/>
+					</pragmas>
+				</Type>
+				<Type name="M_cab_signal_status_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="cab_signal_status_not_defined">
+									<pragmas>
+										<ed:Value oid="!ed/17517/1DD5/1710/54bd15ba69a1"/>
+									</pragmas>
+								</Value>
+								<Value name="both_desks_are_closed">
+									<pragmas>
+										<ed:Value oid="!ed/b5eb/4B8D/12C4/54845f885aeb"/>
+									</pragmas>
+								</Value>
+								<Value name="desk_A_is_open">
+									<pragmas>
+										<ed:Value oid="!ed/b5ec/4B8D/12C4/54845f8854b7"/>
+									</pragmas>
+								</Value>
+								<Value name="desk_B_is_open">
+									<pragmas>
+										<ed:Value oid="!ed/b5ed/4B8D/12C4/54845f886f7a"/>
+									</pragmas>
+								</Value>
+								<Value name="both_desks_are_open">
+									<pragmas>
+										<ed:Value oid="!ed/b5ee/4B8D/12C4/54845f8874ee"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b5e9/4B8D/12C4/54845f8819d7"/>
+					</pragmas>
+				</Type>
+				<Type name="M_nonleading_signal_status_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="non_leading_signall_status_not_defined">
+									<pragmas>
+										<ed:Value oid="!ed/b5dc/4B8D/12C4/54845f88698f"/>
+									</pragmas>
+								</Value>
+								<Value name="non_leading_permitted">
+									<pragmas>
+										<ed:Value oid="!ed/b5dd/4B8D/12C4/54845f885bad"/>
+									</pragmas>
+								</Value>
+								<Value name="non_leading_not_permitted">
+									<pragmas>
+										<ed:Value oid="!ed/b5de/4B8D/12C4/54845f88b25"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b5db/4B8D/12C4/54845f88638f"/>
+					</pragmas>
+				</Type>
+				<Type name="M_passiveshunting_signal_status_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="passive_shunting_permitted">
+									<pragmas>
+										<ed:Value oid="!ed/b5d1/4B8D/12C4/54845f88608d"/>
+									</pragmas>
+								</Value>
+								<Value name="passive_shunting_not_permitted">
+									<pragmas>
+										<ed:Value oid="!ed/b5d2/4B8D/12C4/54845f88650b"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b5cf/4B8D/12C4/54845f88502f"/>
+					</pragmas>
+				</Type>
+				<Type name="M_sleeping_signal_status_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="signal_active">
+									<pragmas>
+										<ed:Value oid="!ed/b5c5/4B8D/12C4/54845f885d3d"/>
+									</pragmas>
+								</Value>
+								<Value name="signal_not_active">
+									<pragmas>
+										<ed:Value oid="!ed/b5c6/4B8D/12C4/54845f884d53"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b5c3/4B8D/12C4/54845f8840a1"/>
+					</pragmas>
+				</Type>
+				<Type name="L_test_trackcond_T">
+					<definition>
+						<NamedType>
+							<type>
+								<TypeRef name="D_test_distance_T"/>
+							</type>
+						</NamedType>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b5ba/4B8D/12C4/54845f886b43"/>
+					</pragmas>
+				</Type>
+				<Type name="D_test_traction_T">
+					<definition>
+						<NamedType>
+							<type>
+								<TypeRef name="D_test_distance_T"/>
+							</type>
+						</NamedType>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b5b3/4B8D/12C4/54845f88309e"/>
+					</pragmas>
+				</Type>
+				<Type name="D_test_trackinit_T">
+					<definition>
+						<NamedType>
+							<type>
+								<TypeRef name="D_test_distance_T"/>
+							</type>
+						</NamedType>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b5ac/4B8D/12C4/54845f883438"/>
+					</pragmas>
+				</Type>
+				<Type name="D_test_trackcond_T">
+					<definition>
+						<NamedType>
+							<type>
+								<TypeRef name="D_test_distance_T"/>
+							</type>
+						</NamedType>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b5a5/4B8D/12C4/54845f88755e"/>
+					</pragmas>
+				</Type>
+				<Type name="D_test_distance_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="now">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b59d/4B8D/12C4/54845f882c33"/>
+									</pragmas>
+								</Field>
+								<Field name="distance">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b59e/4B8D/12C4/54845f886f2"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b59c/4B8D/12C4/54845f88793b"/>
+					</pragmas>
+				</Type>
+				<Type name="D_test_current_T">
+					<definition>
+						<NamedType>
+							<type>
+								<TypeRef name="D_test_distance_T"/>
+							</type>
+						</NamedType>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b594/4B8D/12C4/54845f88599f"/>
+					</pragmas>
+				</Type>
+				<Type name="Change_of_allowed_current_consumption_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/17552/1DD5/1710/54bd1ac47104"/>
+									</pragmas>
+								</Field>
+								<Field name="d_test_current">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_test_current_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b58c/4B8D/12C4/54845f884ff8"/>
+									</pragmas>
+								</Field>
+								<Field name="m_current">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_current_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b58d/4B8D/12C4/54845f883906"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b58b/4B8D/12C4/54845f883a94"/>
+					</pragmas>
+				</Type>
+				<Type name="Brake_status_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b8d8/2ABF/1248/54b6456c17f"/>
+									</pragmas>
+								</Field>
+								<Field name="m_regenerativebrake_st">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_brake_status_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b57d/4B8D/12C4/54845f886801"/>
+									</pragmas>
+								</Field>
+								<Field name="m_eddycurrentbrake_st">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_brake_status_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b57e/4B8D/12C4/54845f886d17"/>
+									</pragmas>
+								</Field>
+								<Field name="m_magneticshoebrake_st">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_brake_status_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b57f/4B8D/12C4/54845f881410"/>
+									</pragmas>
+								</Field>
+								<Field name="m_electropneumaticbrake_st">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_brake_status_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b580/4B8D/12C4/54845f883824"/>
+									</pragmas>
+								</Field>
+								<Field name="m_additionalbrake_st">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_brake_status_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b581/4B8D/12C4/54845f88ddd"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b57c/4B8D/12C4/54845f88c03"/>
+					</pragmas>
+				</Type>
+				<Type name="Brake_inhibition_command_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/174fa/1DD5/1710/54bd116d5347" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Information is valid</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="m_regenerativebrake_cm">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_brake_inhibit_command_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b56a/4B8D/12C4/54845f889a3"/>
+									</pragmas>
+								</Field>
+								<Field name="m_eddycurrentbrake_cm">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_eddy_current_brake_inhibition_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b56b/4B8D/12C4/54845f88405e"/>
+									</pragmas>
+								</Field>
+								<Field name="m_magneticshoebrake_cm">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_brake_inhibit_command_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b56c/4B8D/12C4/54845f88172e"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b569/4B8D/12C4/54845f884c23" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Commands Inhibition of brakes</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="Brake_command_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1753e/1DD5/1710/54bd174b126e"/>
+									</pragmas>
+								</Field>
+								<Field name="m_servicebrake_cm">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_brake_signal_command_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b55c/4B8D/12C4/54845f88218c"/>
+									</pragmas>
+								</Field>
+								<Field name="m_emergencybrake_cm">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_brake_signal_command_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b55d/4B8D/12C4/54845f8813cc"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b55b/4B8D/12C4/54845f885aaa"/>
+					</pragmas>
+				</Type>
+				<Type name="A_nothing_to_resume_profile_follow_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="nothing_to_resume_profile_follow_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<ConstValue value="32"/>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b551/4B8D/12C4/54845f88610e"/>
+					</pragmas>
+				</Type>
+				<Type name="Isolation_Status_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/175c6/1DD5/1710/54bd2198328c"/>
+									</pragmas>
+								</Field>
+								<Field name="isolation_status">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_Isolation_status_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/175cf/1DD5/1710/54bd21ab41e"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/175c5/1DD5/1710/54bd21712c59"/>
+					</pragmas>
+				</Type>
+				<Type name="TIU_trainStatus_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/282d2/103F/1130/54d7725967fe" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Information is updated</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="deskOpen">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/282db/103F/1130/54d772e15ef4" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>the cab is active and a desk is open</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="ownCab">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="cab_ID_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/50cd8/4602/28C4/54f1e52a436" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Own Id of the EVC</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="activeCab">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="cab_ID_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/a4ae/3BC/CC8/555d908d6191" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Id of the active CAB</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/282d1/103F/1130/54d7721731c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>This structure collects states received from TIU to be used by functions in the EVC</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="TIU_commandStatus_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/282f6/103F/1130/54d775d067ab" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Information is updated</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="emergencyBrakeActive">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/282f7/103F/1130/54d775d04d05" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>the cab is active and a desk is open</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="isolationStatus">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1409c/6C5F/584/54d78ddd7f6f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>EVC is in Isolation from Train</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/282f5/103F/1130/54d775d03652" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>This structure collects states received from TIU to be used by functions in the EVC</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="cab_ID_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="CabUndefined">
+									<pragmas>
+										<ed:Value oid="!ed/50ccf/4602/28C4/54f1e4727d0f"/>
+									</pragmas>
+								</Value>
+								<Value name="CabA">
+									<pragmas>
+										<ed:Value oid="!ed/50cd0/4602/28C4/54f1e4921cfc"/>
+									</pragmas>
+								</Value>
+								<Value name="CabB">
+									<pragmas>
+										<ed:Value oid="!ed/50cd7/4602/28C4/54f1e4a1675d"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/50cce/4602/28C4/54f1e438bc" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Identifies the connected cab</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+			</declarations>
+			<pragmas>
+				<ed:Package oid="!ed/10ec5/4587/1C64/548456684f7e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<diagrams>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/10ec6/4587/1C64/54845668540" blockKind="constants" columnsSize="0, 230, 592, 329, 300"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/10ec7/4587/1C64/5484566828bc" blockKind="types" columnsSize="0, 339, 257, 454"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/10ec8/4587/1C64/548456687b1" blockKind="sensors"/>
+					</diagrams>
+					<references>
+						<TypeRef path="Obu_BasicTypes_Pkg::L_internal_Type" refOid="!ed/816f/4AD8/11D4/5304c4f23c06"/>
+						<TypeRef path="Obu_BasicTypes_Pkg::V_internal_Type" refOid="!ed/8181/4AD8/11D4/5304c68a59ab"/>
+						<TypeRef path="Packet_TrainTypes_Pkg::aNID_NTC_T" refOid="!ed/854bf/1963/1E14/54d0f4ba872"/>
+						<TypeRef path="Packet_TrainTypes_Pkg::aTractionIdentity_T" refOid="!ed/8546e/1963/1E14/54d0f2c8493a"/>
+					</references>
+				</ed:Package>
+			</pragmas>
+		</Package>
+	</declarations>
+</File>

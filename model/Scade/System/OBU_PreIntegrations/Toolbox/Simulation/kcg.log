@@ -1,0 +1,102 @@
+$********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
+** Command: kcg662.exe -config C:/DBC/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Toolbox/Simulation/config.txt
+** Generation date: 2023-09-12T13:45:37
+*************************************************************$
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Toolbox/Simulation/scade_model_without_unused.scade, line 861, character 0
+  at path RadioTrackTrainMessageQueue_T/
+ Interface element RadioTrackTrainMessageQueue_T has been renamed because it
+ collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Toolbox/Simulation/scade_model_without_unused.scade, line 867, character 0
+  at path RadioTrackTrainMessageQueueEntries_T/
+ Interface element RadioTrackTrainMessageQueueEntries_T has been renamed because
+ it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Toolbox/Simulation/scade_model_without_unused.scade, line 20873, character 0
+  at path Radio_Types_Pkg::Radio_TrackTrain_Header_T/
+ Interface element Radio_TrackTrain_Header_T_Radio_Types_Pkg has been renamed
+ because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Toolbox/Simulation/scade_model_without_unused.scade, line 62468, character 0
+  at path TM_transitional::Radio_TrackTrain_Header_T/
+ Interface element Radio_TrackTrain_Header_T_TM_transitional has been renamed
+ because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Toolbox/Simulation/scade_model_without_unused.scade, line 133676, character 0
+  at path TM_baseline2::P027V1_OBU_sectionlist_int_qdiff_T/
+ Interface element P027V1_OBU_sectionlist_int_qdiff_T_TM_baseline2 has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Toolbox/Simulation/scade_model_without_unused.scade, line 133668, character 0
+  at path TM_baseline2::P027V1_OBU_sectionlist_array_qdiff_T/
+ Interface element P027V1_OBU_sectionlist_array_qdiff_T_TM_baseline2 has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Toolbox/Simulation/scade_model_without_unused.scade, line 79, character 0
+  at path RADIO_TRACK_TRAIN_MESSAGE_QUEUE_ENTRY_DEFAULT/
+ Interface element RADIO_TRACK_TRAIN_MESSAGE_QUEUE_ENTRY_DEFAULT has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Toolbox/Simulation/scade_model_without_unused.scade, line 83, character 0
+  at path RADIO_TRACK_TRAIN_MESSAGE_QUEUE_DEFAULT/
+ Interface element RADIO_TRACK_TRAIN_MESSAGE_QUEUE_DEFAULT has been renamed
+ because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Toolbox/Simulation/scade_model_without_unused.scade, line 21159, character 0
+  at path TM_conversions::INT_Q_EMERGENCYSTOP_cond_accepted_with_no_EOA_update/
+ Interface element
+ INT_Q_EMERGENCYSTOP_cond_accepted_with_no_EOA_update_TM_conversions has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Toolbox/Simulation/scade_model_without_unused.scade, line 21183, character 0
+  at path TM_conversions::ENUM_Q_EMERGENCYSTOP_cond_accepted_with_EOA_update/
+ Interface element
+ ENUM_Q_EMERGENCYSTOP_cond_accepted_with_EOA_update_TM_conversions has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Toolbox/Simulation/scade_model_without_unused.scade, line 898, character 29
+  at path Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA/
+ Interface element
+ Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Toolbox/Simulation/scade_model_without_unused.scade, line 660, character 29
+  at path Q_LENGTH_Train_integrity_confirmed_by_integrity_monitoring_device/
+ Interface element
+ Q_LENGTH_Train_integrity_confirmed_by_integrity_monitoring_device has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Toolbox/Simulation/scade_model_without_unused.scade, line 203, character 29
+  at path NC_TRAIN_Freight_train_braked_in_P_position/
+ Interface element NC_TRAIN_Freight_train_braked_in_P_position has been renamed
+ because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Toolbox/Simulation/scade_model_without_unused.scade, line 387, character 29
+  at path M_DUP_This_balise_is_a_duplicate_of_the_previous_balise/
+ Interface element M_DUP_This_balise_is_a_duplicate_of_the_previous_balise has
+ been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Toolbox/Simulation/scade_model_without_unused.scade, line 957, character 29
+  at path Q_ORIENTATION_The_balise_group_has_been_passed_by_the_train_in_nominal_direction/
+ Interface element
+ Q_ORIENTATION_The_balise_group_has_been_passed_by_the_train_in_nominal_direction
+ has been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Toolbox/Simulation/scade_model_without_unused.scade, line 2900, character 0
+  at path Toolbox::TestEnvironmentSimulation_IncludingRBC_Complete/
+ Interface element TestEnvironmentSimulation_IncludingRBC_Complete_Toolbox has
+ been renamed because it is too long
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Toolbox/Simulation/scade_model_without_unused.scade, line 20226, character 0
+  at path TIU_Types_Pkg::switch_off_eddy_current_brake_for_emergency_brake/
+ Interface element
+ switch_off_eddy_current_brake_for_emergency_brake_TIU_Types_Pkg has been
+ renamed because it collides
+17 warnings were found
+No error was found
+No failure occurred
+$********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
+** kcg.log
+** Generation date: 2023-09-12T13:45:53
+*************************************************************$

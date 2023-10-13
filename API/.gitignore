@@ -1,0 +1,15 @@
+# Generic ignored files
+*~
+
+# Latex temporary files
+description/*.aux
+description/*.lof
+description/*.log
+description/*.lot
+description/*.toc
+description/*.bbl
+description/*.blg
+description/*.out
+description/*.idx
+description/*.ilg
+description/*.ind

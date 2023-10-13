@@ -1,0 +1,558 @@
+
+package SPDI
+
+node #pragma ed <Operator oid="!ed/4b06/2F2A/730/564f6656503e">
+	<diagrams>
+		<NetDiagram name="diagram_test_1" landscape="true" format="A4 (210 297)" oid="!ed/4b07/2F2A/730/564f66562312">
+			<presentationElements>
+				<EquationGE presentable="!ed/4b08/2F2A/730/564f6662478d">
+					<position>
+						<Point x="12639" y="7162"/>
+					</position>
+					<size>
+						<Size width="6207" height="3059"/>
+					</size>
+				</EquationGE>
+				<EquationGE presentable="!ed/4b65/2F2A/730/564f670c696f">
+					<position>
+						<Point x="8176" y="7329"/>
+					</position>
+					<size>
+						<Size width="265" height="503"/>
+					</size>
+				</EquationGE>
+				<EquationGE presentable="!ed/4b67/2F2A/730/564f670c5ff0">
+					<position>
+						<Point x="8176" y="8361"/>
+					</position>
+					<size>
+						<Size width="265" height="503"/>
+					</size>
+				</EquationGE>
+				<EquationGE presentable="!ed/4b69/2F2A/730/564f670c4c1f">
+					<position>
+						<Point x="8176" y="9393"/>
+					</position>
+					<size>
+						<Size width="265" height="503"/>
+					</size>
+				</EquationGE>
+				<EquationGE presentable="!ed/4b6b/2F2A/730/564f670c105">
+					<position>
+						<Point x="21908" y="7885"/>
+					</position>
+					<size>
+						<Size width="317" height="503"/>
+					</size>
+				</EquationGE>
+				<EquationGE presentable="!ed/4b6c/2F2A/730/564f670c3b47">
+					<position>
+						<Point x="21908" y="8916"/>
+					</position>
+					<size>
+						<Size width="317" height="503"/>
+					</size>
+				</EquationGE>
+				<EquationGE presentable="!ed/4b6d/2F2A/730/564f670c5ac3">
+					<position>
+						<Point x="21908" y="9948"/>
+					</position>
+					<size>
+						<Size width="317" height="503"/>
+					</size>
+				</EquationGE>
+				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/4b65/2F2A/730/564f670c696f" dstEquation="!ed/4b08/2F2A/730/564f6662478d">
+					<positions>
+						<Point x="8440" y="7594"/>
+						<Point x="12488" y="7594"/>
+						<Point x="12488" y="7964"/>
+						<Point x="12488" y="7964"/>
+						<Point x="12488" y="7938"/>
+						<Point x="12647" y="7938"/>
+					</positions>
+				</Edge>
+				<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/4b67/2F2A/730/564f670c5ff0" dstEquation="!ed/4b08/2F2A/730/564f6662478d">
+					<positions>
+						<Point x="8440" y="8625"/>
+						<Point x="10530" y="8625"/>
+						<Point x="10530" y="8678"/>
+						<Point x="12647" y="8678"/>
+					</positions>
+				</Edge>
+				<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/4b69/2F2A/730/564f670c4c1f" dstEquation="!ed/4b08/2F2A/730/564f6662478d">
+					<positions>
+						<Point x="8440" y="9657"/>
+						<Point x="10530" y="9657"/>
+						<Point x="10530" y="9446"/>
+						<Point x="12647" y="9446"/>
+					</positions>
+				</Edge>
+				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/4b08/2F2A/730/564f6662478d" dstEquation="!ed/4b6b/2F2A/730/564f670c105">
+					<positions>
+						<Point x="18838" y="7938"/>
+						<Point x="20399" y="7938"/>
+						<Point x="20399" y="8149"/>
+						<Point x="21960" y="8149"/>
+					</positions>
+				</Edge>
+				<Edge leftVarIndex="2" rightExprIndex="1" srcEquation="!ed/4b08/2F2A/730/564f6662478d" dstEquation="!ed/4b6c/2F2A/730/564f670c3b47">
+					<positions>
+						<Point x="18838" y="8678"/>
+						<Point x="20399" y="8678"/>
+						<Point x="20399" y="9181"/>
+						<Point x="21960" y="9181"/>
+					</positions>
+				</Edge>
+				<Edge leftVarIndex="3" rightExprIndex="1" srcEquation="!ed/4b08/2F2A/730/564f6662478d" dstEquation="!ed/4b6d/2F2A/730/564f670c5ac3">
+					<positions>
+						<Point x="18838" y="9446"/>
+						<Point x="20399" y="9446"/>
+						<Point x="20399" y="10213"/>
+						<Point x="21960" y="10213"/>
+					</positions>
+				</Edge>
+			</presentationElements>
+		</NetDiagram>
+	</diagrams>
+</Operator>
+#end
+
+test(
+      #pragma ed    <Variable oid="!ed/4b1e/2F2A/730/564f66de5d61"/>
+#end
+
+acc_last_change : int; 
+      #pragma ed    <Variable oid="!ed/4b24/2F2A/730/564f66de29d"/>
+#end
+
+acc_last_visable_flag : bool ^10; 
+      #pragma ed    <Variable oid="!ed/4b2a/2F2A/730/564f66de7d70"/>
+#end
+
+acc_change_index : int ^10)
+returns (
+      #pragma ed    <Variable oid="!ed/4b30/2F2A/730/564f66de30e7"/>
+#end
+
+acc_last_visable_flag_out : bool ^10; 
+      #pragma ed    <Variable oid="!ed/4b36/2F2A/730/564f66de70e2"/>
+#end
+
+acc_last_change_index_out : int ^10; 
+      #pragma ed    <Variable oid="!ed/4b3c/2F2A/730/564f66de2e97"/>
+#end
+
+min_distance : real ^10)
+var
+      #pragma ed    <Variable oid="!ed/4b0b/2F2A/730/564f66626041"/>
+#end
+
+_L3 : real ^10;
+      #pragma ed    <Variable oid="!ed/4b0a/2F2A/730/564f66627ef7"/>
+#end
+
+_L2 : int ^10;
+      #pragma ed    <Variable oid="!ed/4b09/2F2A/730/564f66623905"/>
+#end
+
+_L1 : bool;
+      #pragma ed    <Variable oid="!ed/4b66/2F2A/730/564f670c1965"/>
+#end
+
+_L4 : int;
+      #pragma ed    <Variable oid="!ed/4b68/2F2A/730/564f670c7a76"/>
+#end
+
+_L5 : bool ^10;
+      #pragma ed    <Variable oid="!ed/4b6a/2F2A/730/564f670c7064"/>
+#end
+
+_L6 : int ^10;
+let
+   #pragma ed    <Equation oid="!ed/4b08/2F2A/730/564f6662478d"/>
+#end
+
+   _L1, _L2, _L3 = ( #1 mapfold  #1 MinDis2Displey <<10>>)(_L4, _L5, _L6);
+   #pragma ed    <Equation oid="!ed/4b65/2F2A/730/564f670c696f"/>
+#end
+
+   _L4 = acc_last_change;
+   #pragma ed    <Equation oid="!ed/4b67/2F2A/730/564f670c5ff0"/>
+#end
+
+   _L5 = acc_last_visable_flag;
+   #pragma ed    <Equation oid="!ed/4b69/2F2A/730/564f670c4c1f"/>
+#end
+
+   _L6 = acc_change_index;
+   #pragma ed    <Equation oid="!ed/4b6b/2F2A/730/564f670c105"/>
+#end
+
+   acc_last_visable_flag_out = _L1;
+   #pragma ed    <Equation oid="!ed/4b6c/2F2A/730/564f670c3b47"/>
+#end
+
+   acc_last_change_index_out = _L2;
+   #pragma ed    <Equation oid="!ed/4b6d/2F2A/730/564f670c5ac3"/>
+#end
+
+   min_distance = _L3;
+tel
+
+function #pragma ed <Operator oid="!ed/47e2/2F2A/730/564f539c773f">
+	<diagrams>
+		<NetDiagram name="diagram_MinDis2Displey_1" landscape="true" format="A4 (210 297)" oid="!ed/47e3/2F2A/730/564f539cd00">
+			<presentationElements>
+				<EquationGE presentable="!ed/4850/2F2A/730/564f570a30a2">
+					<position>
+						<Point x="23601" y="1984"/>
+					</position>
+					<size>
+						<Size width="264" height="503"/>
+					</size>
+				</EquationGE>
+				<EquationGE presentable="!ed/4856/2F2A/730/564f570d7854">
+					<position>
+						<Point x="27014" y="1984"/>
+					</position>
+					<size>
+						<Size width="318" height="503"/>
+					</size>
+				</EquationGE>
+				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/4850/2F2A/730/564f570a30a2" dstEquation="!ed/4856/2F2A/730/564f570d7854">
+					<positions>
+						<Point x="23865" y="2249"/>
+						<Point x="25718" y="2249"/>
+						<Point x="25718" y="2249"/>
+						<Point x="27067" y="2249"/>
+					</positions>
+				</Edge>
+				<EquationGE presentable="!ed/485b/2F2A/730/564f57191f1f">
+					<position>
+						<Point x="23601" y="3122"/>
+					</position>
+					<size>
+						<Size width="265" height="503"/>
+					</size>
+				</EquationGE>
+				<EquationGE presentable="!ed/4861/2F2A/730/564f571f351d">
+					<position>
+						<Point x="27014" y="3122"/>
+					</position>
+					<size>
+						<Size width="317" height="502"/>
+					</size>
+				</EquationGE>
+				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/485b/2F2A/730/564f57191f1f" dstEquation="!ed/4861/2F2A/730/564f571f351d">
+					<positions>
+						<Point x="23865" y="3387"/>
+						<Point x="25532" y="3387"/>
+						<Point x="25532" y="3387"/>
+						<Point x="27067" y="3387"/>
+					</positions>
+				</Edge>
+				<IfBlockGE presentable="!ed/499f/2F2A/730/564f5f2e5866">
+					<position>
+						<Point x="344" y="53"/>
+					</position>
+					<size>
+						<Size width="16060" height="12594"/>
+					</size>
+				</IfBlockGE>
+				<ActionGE presentable="!ed/49a6/2F2A/730/564f5f2f7721">
+					<position>
+						<Point x="2170" y="556"/>
+					</position>
+					<size>
+						<Size width="12038" height="5926"/>
+					</size>
+				</ActionGE>
+				<IfNodeGE labelWidth="9446" presentable="!ed/49a5/2F2A/730/564f5f2f46da">
+					<position>
+						<Point x="794" y="635"/>
+					</position>
+				</IfNodeGE>
+				<IfBlockGE presentable="!ed/4a4c/2F2A/730/564f61d1686d">
+					<position>
+						<Point x="3598" y="1614"/>
+					</position>
+					<size>
+						<Size width="7700" height="4154"/>
+					</size>
+				</IfBlockGE>
+				<ActionGE presentable="!ed/4a52/2F2A/730/564f61d21ff7">
+					<position>
+						<Point x="4974" y="2117"/>
+					</position>
+					<size>
+						<Size width="5847" height="1376"/>
+					</size>
+				</ActionGE>
+				<ActionGE presentable="!ed/4a53/2F2A/730/564f61d211a5">
+					<position>
+						<Point x="5027" y="4392"/>
+					</position>
+					<size>
+						<Size width="4842" height="926"/>
+					</size>
+				</ActionGE>
+				<IfNodeGE labelWidth="2567" presentable="!ed/4a51/2F2A/730/564f61d2374d">
+					<position>
+						<Point x="4048" y="2196"/>
+					</position>
+				</IfNodeGE>
+				<EquationGE kind="OBJ_LIT" presentable="!ed/4a73/2F2A/730/564f620358d3">
+					<position>
+						<Point x="6615" y="2858"/>
+					</position>
+					<size>
+						<Size width="211" height="317"/>
+					</size>
+				</EquationGE>
+				<EquationGE presentable="!ed/4a75/2F2A/730/564f62035e81">
+					<position>
+						<Point x="8493" y="2752"/>
+					</position>
+					<size>
+						<Size width="344" height="502"/>
+					</size>
+				</EquationGE>
+				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/4a73/2F2A/730/564f620358d3" dstEquation="!ed/4a75/2F2A/730/564f62035e81">
+					<positions>
+						<Point x="6826" y="3016"/>
+						<Point x="7646" y="3016"/>
+						<Point x="7646" y="3016"/>
+						<Point x="8493" y="3016"/>
+					</positions>
+				</Edge>
+				<EquationGE presentable="!ed/4a97/2F2A/730/564f621251dc">
+					<position>
+						<Point x="8043" y="4683"/>
+					</position>
+					<size>
+						<Size width="344" height="503"/>
+					</size>
+				</EquationGE>
+				<EquationGE kind="OBJ_LIT" presentable="!ed/4a98/2F2A/730/564f62126339">
+					<position>
+						<Point x="6165" y="4789"/>
+					</position>
+					<size>
+						<Size width="211" height="317"/>
+					</size>
+				</EquationGE>
+				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/4a98/2F2A/730/564f62126339" dstEquation="!ed/4a97/2F2A/730/564f621251dc">
+					<positions>
+						<Point x="6376" y="4948"/>
+						<Point x="7197" y="4948"/>
+						<Point x="7197" y="4948"/>
+						<Point x="8043" y="4948"/>
+					</positions>
+				</Edge>
+				<ActionGE presentable="!ed/4ab2/2F2A/730/564f62585127">
+					<position>
+						<Point x="2223" y="7911"/>
+					</position>
+					<size>
+						<Size width="8942" height="3440"/>
+					</size>
+				</ActionGE>
+				<EquationGE kind="OBJ_LIT" presentable="!ed/4ac2/2F2A/730/564f625ec32">
+					<position>
+						<Point x="5265" y="9234"/>
+					</position>
+					<size>
+						<Size width="212" height="317"/>
+					</size>
+				</EquationGE>
+				<EquationGE presentable="!ed/4ac4/2F2A/730/564f625e2140">
+					<position>
+						<Point x="7144" y="9128"/>
+					</position>
+					<size>
+						<Size width="344" height="503"/>
+					</size>
+				</EquationGE>
+				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/4ac2/2F2A/730/564f625ec32" dstEquation="!ed/4ac4/2F2A/730/564f625e2140">
+					<positions>
+						<Point x="5477" y="9393"/>
+						<Point x="6297" y="9393"/>
+						<Point x="6297" y="9393"/>
+						<Point x="7144" y="9393"/>
+					</positions>
+				</Edge>
+				<EquationGE presentable="!ed/4af2/2F2A/730/564f657c3a98">
+					<position>
+						<Point x="27014" y="4419"/>
+					</position>
+					<size>
+						<Size width="318" height="503"/>
+					</size>
+				</EquationGE>
+				<EquationGE presentable="!ed/4af8/2F2A/730/564f65814fda">
+					<position>
+						<Point x="23601" y="4419"/>
+					</position>
+					<size>
+						<Size width="265" height="503"/>
+					</size>
+				</EquationGE>
+				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/4af8/2F2A/730/564f65814fda" dstEquation="!ed/4af2/2F2A/730/564f657c3a98">
+					<positions>
+						<Point x="23865" y="4683"/>
+						<Point x="25453" y="4683"/>
+						<Point x="25453" y="4683"/>
+						<Point x="27067" y="4683"/>
+					</positions>
+				</Edge>
+			</presentationElements>
+		</NetDiagram>
+	</diagrams>
+</Operator>
+#end
+
+MinDis2Displey(
+      #pragma ed    <Variable oid="!ed/47e4/2F2A/730/564f54505546"/>
+#end
+
+acc_last_change : int; 
+      #pragma ed    <Variable oid="!ed/47e5/2F2A/730/564f545e598d"/>
+#end
+
+acc_last_visable_flag : bool; 
+      #pragma ed    <Variable oid="!ed/47e6/2F2A/730/564f54913f44"/>
+#end
+
+acc_change_index : int)
+returns (
+      #pragma ed    <Variable oid="!ed/47e8/2F2A/730/564f54d26643"/>
+#end
+
+acc_last_visable_flag_out : bool; 
+      #pragma ed    <Variable oid="!ed/47e9/2F2A/730/564f550e3bc9"/>
+#end
+
+acc_last_change_index_out : int; 
+      #pragma ed    <Variable oid="!ed/47ea/2F2A/730/564f55565d32"/>
+#end
+
+min_distance : real)
+var
+      #pragma ed    <Variable oid="!ed/493e/2F2A/730/564f5ca7551f"/>
+#end
+
+min_dis : real;
+      #pragma ed    <Variable oid="!ed/4851/2F2A/730/564f570ac26"/>
+#end
+
+_L4 : bool;
+      #pragma ed    <Variable oid="!ed/485c/2F2A/730/564f57194323"/>
+#end
+
+_L5 : int;
+      #pragma ed    <Variable oid="!ed/4af9/2F2A/730/564f6581335e"/>
+#end
+
+_L16 : real;
+let
+   #pragma ed    <Equation oid="!ed/4850/2F2A/730/564f570a30a2"/>
+#end
+
+   _L4 = acc_last_visable_flag;
+   #pragma ed    <Equation oid="!ed/4856/2F2A/730/564f570d7854"/>
+#end
+
+   acc_last_visable_flag_out = _L4;
+   #pragma ed    <Equation oid="!ed/485b/2F2A/730/564f57191f1f"/>
+#end
+
+   _L5 = acc_change_index;
+   #pragma ed    <Equation oid="!ed/4861/2F2A/730/564f571f351d"/>
+#end
+
+   acc_last_change_index_out = _L5;
+   #pragma ed    <IfBlock oid="!ed/499f/2F2A/730/564f5f2e5866"/>
+#end
+
+   activate IfBlock4
+      if (acc_last_visable_flag #7  and (acc_last_change #19  = 3 #8  or acc_last_change #20  = 2))      #pragma ed       <Action oid="!ed/49a6/2F2A/730/564f5f2f7721"/>
+#end
+
+ then 
+         #pragma ed          <IfBlock oid="!ed/4a4c/2F2A/730/564f61d1686d"/>
+#end
+
+         activate IfBlock2
+            if (acc_change_index #18  = 1)            #pragma ed             <Action oid="!ed/4a52/2F2A/730/564f61d21ff7"/>
+#end
+
+ then 
+               var
+                                    #pragma ed                   <Variable oid="!ed/4a74/2F2A/730/564f620344d9"/>
+#end
+
+_L1 : real;
+               let
+                  #pragma ed                   <Equation oid="!ed/4a73/2F2A/730/564f620358d3"/>
+#end
+
+                  _L1 = 30.0;
+                  #pragma ed                   <Equation oid="!ed/4a75/2F2A/730/564f62035e81"/>
+#end
+
+                  min_dis = _L1;
+               tel
+            #pragma ed             <Action oid="!ed/4a53/2F2A/730/564f61d211a5"/>
+#end
+
+            else 
+               var
+                                    #pragma ed                   <Variable oid="!ed/4a99/2F2A/730/564f621263b9"/>
+#end
+
+_L1 : real;
+               let
+                  #pragma ed                   <Equation oid="!ed/4a97/2F2A/730/564f621251dc"/>
+#end
+
+                  min_dis = _L1;
+                  #pragma ed                   <Equation oid="!ed/4a98/2F2A/730/564f62126339"/>
+#end
+
+                  _L1 = 15.0;
+               tel
+
+         returns .. ;
+      #pragma ed       <Action oid="!ed/4ab2/2F2A/730/564f62585127"/>
+#end
+
+      else 
+         var
+                        #pragma ed             <Variable oid="!ed/4ac3/2F2A/730/564f625e5f9e"/>
+#end
+
+_L1 : real;
+         let
+            #pragma ed             <Equation oid="!ed/4ac2/2F2A/730/564f625ec32"/>
+#end
+
+            _L1 = 0.0;
+            #pragma ed             <Equation oid="!ed/4ac4/2F2A/730/564f625e2140"/>
+#end
+
+            min_dis = _L1;
+         tel
+
+   returns .. ;
+   #pragma ed    <Equation oid="!ed/4af2/2F2A/730/564f657c3a98"/>
+#end
+
+   min_distance = _L16;
+   #pragma ed    <Equation oid="!ed/4af8/2F2A/730/564f65814fda"/>
+#end
+
+   _L16 = min_dis;
+tel
+
+   end;
+

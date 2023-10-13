@@ -1,0 +1,43 @@
+
+[STUDIO\TOOLS\CONFIGURATIONS\Code Generator]
+
+"C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ETCS_Language\\S026_7\\S026_7.etp"="KCG" 
+"C:\\DBC\\OpenETCS\\modeling-Scade65Migration\\model\\Scade\\System\\ETCS_Language\\S026_7\\S026_7.etp"="KCG" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Metrics and Rules Checker]
+
+"C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ETCS_Language\\S026_7\\S026_7.etp"="KCG" 
+"C:\\DBC\\OpenETCS\\modeling-Scade65Migration\\model\\Scade\\System\\ETCS_Language\\S026_7\\S026_7.etp"="KCG" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Reporter]
+
+"C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ETCS_Language\\S026_7\\S026_7.etp"="HTML" 
+"C:\\DBC\\OpenETCS\\modeling-Scade65Migration\\model\\Scade\\System\\ETCS_Language\\S026_7\\S026_7.etp"="HTML" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Timing and Stack Analysis Tools]
+
+"C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ETCS_Language\\S026_7\\S026_7.etp"="KCG" 
+"C:\\DBC\\OpenETCS\\modeling-Scade65Migration\\model\\Scade\\System\\ETCS_Language\\S026_7\\S026_7.etp"="KCG" 
+
+[STUDIO\Workspace]
+
+"ActiveProject"="C:\\DBC\\OpenETCS\\modeling-Scade65Migration\\model\\Scade\\System\\ETCS_Language\\S026_7\\S026_7.etp" 
+
+[SCADE\Editor\Shortcut]
+
+"groupNb"="0" 
+
+[SCADE\Editor\Tool]
+
+"UsePolyline"="false" 
+"TransitionKind"="strong" 
+
+[SCADE\Diff\Tool]
+
+"LastProject1"="" 
+"LastProject2"="" 
+"ModifiedOnly"="0" 
+
+[SCADE\Generator\Tool]
+
+"PragmaTarget"="C" 

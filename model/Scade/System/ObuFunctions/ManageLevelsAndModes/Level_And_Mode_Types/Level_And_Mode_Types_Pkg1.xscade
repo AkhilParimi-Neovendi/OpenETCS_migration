@@ -1,0 +1,2159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Package name="Level_And_Mode_Types_Pkg">
+			<declarations>
+				<Constant name="C_Driver_Ack_Delay">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="5000"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/5e88b/6C3E/858/54c123696bfb" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>5 second</comment>
+						</ed:Constant>
+					</pragmas>
+				</Constant>
+				<Constant name="C_Cycle_Duration">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="300"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/5e87d/6C3E/858/54c123694f48" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>300 millisecond</comment>
+						</ed:Constant>
+					</pragmas>
+				</Constant>
+				<Constant name="M_Max_TransitionInPriorityTable">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="7"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/1770d5/4664/660/54f050185c9e"/>
+					</pragmas>
+				</Constant>
+				<Constant name="M_Default_Transition">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="T_LevelTransition"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<!-- {is_set : false, transition : {level : M_LEVEL_Level_0, position : 0, transitionT... -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="is_set">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="transition">
+									<flow>
+										<!-- {level : M_LEVEL_Level_0, position : 0, transitionType : M_TransitionType_Normal,... -->
+										<DataStructOp>
+											<data>
+												<LabelledExpression label="level">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="M_LEVEL_Level_0"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="position">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="transitionType">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="M_TransitionType_Normal"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="immediateAck">
+													<flow>
+														<ConstValue value="false"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="AckLength">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+											</data>
+										</DataStructOp>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="LRBG">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="referenceLocation">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/1770c7/4664/660/54f050183858"/>
+					</pragmas>
+				</Constant>
+				<Constant name="C_Immediate_transition_order_position">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="32767"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/19bd4/19D1/DF8/54fec4bc7633"/>
+					</pragmas>
+				</Constant>
+				<Constant name="C_NoTrackLevelTransition">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="T_Data_From_Track_MASSPGradient_Available"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<!-- {P12_received : false, P15_received : false, P21_received : false, P27_received :... -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="P12_received">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="P15_received">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="P21_received">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="P27_received">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/1da42/208F/CA8/55d482672ead"/>
+					</pragmas>
+				</Constant>
+				<Constant name="M_Max_ModeProfile">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="3"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/4daab0/6AB7/288/55f6d8d34856"/>
+					</pragmas>
+				</Constant>
+				<Type name="T_Mode_Profile">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="Distance">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::Location_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/3a535/471B/12D0/54be4f532102"/>
+									</pragmas>
+								</Field>
+								<Field name="Mode">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_MA"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/3a536/471B/12D0/54be4f531ff1"/>
+									</pragmas>
+								</Field>
+								<Field name="Speed">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::Speed_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/3a537/471B/12D0/54be4f532812"/>
+									</pragmas>
+								</Field>
+								<Field name="Length">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::Location_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/3a538/471B/12D0/54be4f532413"/>
+									</pragmas>
+								</Field>
+								<Field name="Length_Ack">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::Location_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/3a539/471B/12D0/54be4f534957"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/3a534/471B/12D0/54be4f5386e"/>
+					</pragmas>
+				</Type>
+				<Type name="T_Mode">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="NP">
+									<pragmas>
+										<ed:Value oid="!ed/3a514/471B/12D0/54be4f5352a4"/>
+									</pragmas>
+								</Value>
+								<Value name="SB">
+									<pragmas>
+										<ed:Value oid="!ed/3a515/471B/12D0/54be4f53d40"/>
+									</pragmas>
+								</Value>
+								<Value name="PS">
+									<pragmas>
+										<ed:Value oid="!ed/3a516/471B/12D0/54be4f536091"/>
+									</pragmas>
+								</Value>
+								<Value name="SH">
+									<pragmas>
+										<ed:Value oid="!ed/3a517/471B/12D0/54be4f532420"/>
+									</pragmas>
+								</Value>
+								<Value name="FS">
+									<pragmas>
+										<ed:Value oid="!ed/3a518/471B/12D0/54be4f53c1e"/>
+									</pragmas>
+								</Value>
+								<Value name="LS">
+									<pragmas>
+										<ed:Value oid="!ed/3a519/471B/12D0/54be4f533a8e"/>
+									</pragmas>
+								</Value>
+								<Value name="SR">
+									<pragmas>
+										<ed:Value oid="!ed/3a51a/471B/12D0/54be4f5340b2"/>
+									</pragmas>
+								</Value>
+								<Value name="OS">
+									<pragmas>
+										<ed:Value oid="!ed/3a51b/471B/12D0/54be4f536bdb"/>
+									</pragmas>
+								</Value>
+								<Value name="SL">
+									<pragmas>
+										<ed:Value oid="!ed/3a51c/471B/12D0/54be4f531bd2"/>
+									</pragmas>
+								</Value>
+								<Value name="NL">
+									<pragmas>
+										<ed:Value oid="!ed/3a51d/471B/12D0/54be4f53790a"/>
+									</pragmas>
+								</Value>
+								<Value name="UN">
+									<pragmas>
+										<ed:Value oid="!ed/3a51e/471B/12D0/54be4f5355c0"/>
+									</pragmas>
+								</Value>
+								<Value name="TR">
+									<pragmas>
+										<ed:Value oid="!ed/3a51f/471B/12D0/54be4f536f72"/>
+									</pragmas>
+								</Value>
+								<Value name="PT">
+									<pragmas>
+										<ed:Value oid="!ed/3a520/471B/12D0/54be4f532c0d"/>
+									</pragmas>
+								</Value>
+								<Value name="SF">
+									<pragmas>
+										<ed:Value oid="!ed/3a521/471B/12D0/54be4f534d97"/>
+									</pragmas>
+								</Value>
+								<Value name="IS">
+									<pragmas>
+										<ed:Value oid="!ed/3a522/471B/12D0/54be4f53459e"/>
+									</pragmas>
+								</Value>
+								<Value name="SN">
+									<pragmas>
+										<ed:Value oid="!ed/3a523/471B/12D0/54be4f535f89"/>
+									</pragmas>
+								</Value>
+								<Value name="RV">
+									<pragmas>
+										<ed:Value oid="!ed/3a524/471B/12D0/54be4f533f7"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/3a513/471B/12D0/54be4f531fac"/>
+					</pragmas>
+				</Type>
+				<Type name="T_MA">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="Profile_OS">
+									<pragmas>
+										<ed:Value oid="!ed/3a4f9/471B/12D0/54be4f53766f"/>
+									</pragmas>
+								</Value>
+								<Value name="Profile_LS">
+									<pragmas>
+										<ed:Value oid="!ed/3a4fa/471B/12D0/54be4f53442"/>
+									</pragmas>
+								</Value>
+								<Value name="Profile_SH">
+									<pragmas>
+										<ed:Value oid="!ed/3a4fb/471B/12D0/54be4f536991"/>
+									</pragmas>
+								</Value>
+								<Value name="No_Profile">
+									<pragmas>
+										<ed:Value oid="!ed/3a4fc/471B/12D0/54be4f533f7f"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/3a4f8/471B/12D0/54be4f534806"/>
+					</pragmas>
+				</Type>
+				<Type name="T_Reversing_Data">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="Available">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/781a0/55A5/260/54c7b5882419"/>
+									</pragmas>
+								</Field>
+								<Field name="Dist_Start">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::Location_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/781a1/55A5/260/54c7b5886b84"/>
+									</pragmas>
+								</Field>
+								<Field name="Length">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::Location_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/781a2/55A5/260/54c7b588659b"/>
+									</pragmas>
+								</Field>
+								<Field name="Dist_Run">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::Location_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/781a3/55A5/260/54c7b5886e3b"/>
+									</pragmas>
+								</Field>
+								<Field name="Speed">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::Speed_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/781a4/55A5/260/54c7b58877e0"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/7819f/55A5/260/54c7b58829de"/>
+					</pragmas>
+				</Type>
+				<Type name="T_Data_To_DMI">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="Ack_LS">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/777e3/3EAE/758/54cba79f3179"/>
+									</pragmas>
+								</Field>
+								<Field name="Ack_OS">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/777e4/3EAE/758/54cba79f315b"/>
+									</pragmas>
+								</Field>
+								<Field name="Ack_RV">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/777e5/3EAE/758/54cba79f1542"/>
+									</pragmas>
+								</Field>
+								<Field name="Ack_SH">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/777e6/3EAE/758/54cba79f3a9a"/>
+									</pragmas>
+								</Field>
+								<Field name="Ack_SN">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/777e7/3EAE/758/54cba79f2457"/>
+									</pragmas>
+								</Field>
+								<Field name="Ack_SR">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/777e8/3EAE/758/54cba79f3301"/>
+									</pragmas>
+								</Field>
+								<Field name="Ack_TR">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/777e9/3EAE/758/54cba79f57cd"/>
+									</pragmas>
+								</Field>
+								<Field name="Ack_UN">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/777ea/3EAE/758/54cba79f19c0"/>
+									</pragmas>
+								</Field>
+								<Field name="SH_Refused_By_RBC">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/777eb/3EAE/758/54cba79f1ad6"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/777e2/3EAE/758/54cba79f3539" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Output to DMI interface</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="T_Data_To_BG_Management">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="EoM_Procedure_req">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/777d0/3EAE/758/54cba79f6774"/>
+									</pragmas>
+								</Field>
+								<Field name="Clean_BG_List_SH_Area">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/777d1/3EAE/758/54cba79f3f27"/>
+									</pragmas>
+								</Field>
+								<Field name="MA_Req">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/777d2/3EAE/758/54cba79f421d"/>
+									</pragmas>
+								</Field>
+								<Field name="Req_for_SH_from_Driver">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/777d3/3EAE/758/54cba79f40f8"/>
+									</pragmas>
+								</Field>
+								<Field name="Connection_to_RBC_req">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/346bd1/3A61/C18/560d226f3f7f"/>
+									</pragmas>
+								</Field>
+								<Field name="Position_Repport_Needed">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/346bda/3A61/C18/560d228f13a8"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/777cf/3EAE/758/54cba79f5a2c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Output to BG Management or RBC</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="T_Data_From_Speed_Supervision">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="Estim_front_End_overpass_SR_Dist">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/7779b/3EAE/758/54cba79f755a"/>
+									</pragmas>
+								</Field>
+								<Field name="Estim_Front_End_Rear_SSP">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/7779c/3EAE/758/54cba79fbff"/>
+									</pragmas>
+								</Field>
+								<Field name="Override_Function_Active">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/7779e/3EAE/758/54cba79f53bc"/>
+									</pragmas>
+								</Field>
+								<Field name="EOA_Antenna_Overpass">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/777a0/3EAE/758/54cba79f6f4d"/>
+									</pragmas>
+								</Field>
+								<Field name="EOA_Front_End">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/777a2/3EAE/758/54cba79f3929"/>
+									</pragmas>
+								</Field>
+								<Field name="Train_Speed_Under_Overide_Limit">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/777a4/3EAE/758/54cba79f2287"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/77798/3EAE/758/54cba79fb69" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Input Data From Speed and Supervision functions</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="T_Data_From_DMI">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="Ack_LS">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/77777/3EAE/758/54cba79f615f"/>
+									</pragmas>
+								</Field>
+								<Field name="Ack_OS">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/77778/3EAE/758/54cba79f31ee"/>
+									</pragmas>
+								</Field>
+								<Field name="Ack_RV">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/77779/3EAE/758/54cba79f11ff"/>
+									</pragmas>
+								</Field>
+								<Field name="Ack_SH">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/7777a/3EAE/758/54cba79f3b3d"/>
+									</pragmas>
+								</Field>
+								<Field name="Ack_SN">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/7777b/3EAE/758/54cba79f6723"/>
+									</pragmas>
+								</Field>
+								<Field name="Ack_SR">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/7777c/3EAE/758/54cba79f20c4"/>
+									</pragmas>
+								</Field>
+								<Field name="Ack_TR">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/7777d/3EAE/758/54cba79f5f59"/>
+									</pragmas>
+								</Field>
+								<Field name="Ack_UN">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/7777e/3EAE/758/54cba79f36dc"/>
+									</pragmas>
+								</Field>
+								<Field name="Req_Exit_SH">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/7777f/3EAE/758/54cba79f357c"/>
+									</pragmas>
+								</Field>
+								<Field name="Req_NL">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/77780/3EAE/758/54cba79f2d55"/>
+									</pragmas>
+								</Field>
+								<Field name="Req_Override">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/77781/3EAE/758/54cba79f210a"/>
+									</pragmas>
+								</Field>
+								<Field name="Req_SH">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/77782/3EAE/758/54cba79f50df"/>
+									</pragmas>
+								</Field>
+								<Field name="Req_Start">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/77783/3EAE/758/54cba79fa7a"/>
+									</pragmas>
+								</Field>
+								<Field name="ETCS_Isolated">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1282bf/12E6/10C4/54e607ef6721"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/77776/3EAE/758/54cba79f2fed" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Input Data from  DMI  needed for Mode Management, they correspond to  the acknoledgement from the driver or the request from the driver to  change mode</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="T_Data_From_Localisation">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="BG_In_List_Expected_BG_In_SR">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/128261/12E6/10C4/54e5fe5e4276"/>
+									</pragmas>
+								</Field>
+								<Field name="BG_In_List_Expected_BG_In_SH">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/128262/12E6/10C4/54e5fe5e2eeb"/>
+									</pragmas>
+								</Field>
+								<Field name="PositionErrors">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="TrainPosition_Types_Pck::positionErrors_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/128265/12E6/10C4/54e5fe5e54ec" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>To compute condition 66, provided by  position_errors_T</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="Train_Position">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="TrainPosition_Types_Pck::trainPosition_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1282c8/12E6/10C4/54e6094d76e4"/>
+									</pragmas>
+								</Field>
+								<Field name="Train_Speed">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::Speed_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/12826b/12E6/10C4/54e5fe5e7027"/>
+									</pragmas>
+								</Field>
+								<Field name="Train_Standstill">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/12826d/12E6/10C4/54e5fe5e2175"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/128260/12E6/10C4/54e5fe5e1b1c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Input Data From Speed and Supervision functions</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="T_TransitionType">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="M_TransitionType_Conditional">
+									<pragmas>
+										<ed:Value oid="!ed/1770ae/4664/660/54f0500944d4"/>
+									</pragmas>
+								</Value>
+								<Value name="M_TransitionType_DriverInit">
+									<pragmas>
+										<ed:Value oid="!ed/1770af/4664/660/54f05009363a"/>
+									</pragmas>
+								</Value>
+								<Value name="M_TransitionType_Normal">
+									<pragmas>
+										<ed:Value oid="!ed/1770b0/4664/660/54f050095055"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/1770ac/4664/660/54f0500926db"/>
+					</pragmas>
+				</Type>
+				<Type name="T_LevelTransition_PriorityTable">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="T_LevelTransition"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="M_Max_TransitionInPriorityTable"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/177094/4664/660/54f050093b47"/>
+					</pragmas>
+				</Type>
+				<Type name="T_LevelTransition">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="is_set">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/17708c/4664/660/54f0500956c3"/>
+									</pragmas>
+								</Field>
+								<Field name="transition">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_LevelTansitionInfo"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/17708d/4664/660/54f050094a97"/>
+									</pragmas>
+								</Field>
+								<Field name="LRBG">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_LRBG"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1dbb9/3E58/1240/55d486e9463b"/>
+									</pragmas>
+								</Field>
+								<Field name="referenceLocation">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::L_internal_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1dbd6/2DE0/DE0/55d57d365579"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/17708b/4664/660/54f05009107e"/>
+					</pragmas>
+				</Type>
+				<Type name="T_LevelTansitionInfo">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="level">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_LEVEL"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/177080/4664/660/54f050096b74" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>the level to swtich to</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="position">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_POSITION"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/177081/4664/660/54f050095f42" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>the position at which to switch</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="transitionType">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_TransitionType"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/177082/4664/660/54f050095026" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>signals type of transition</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="immediateAck">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/3092b1/6AB7/288/55f6bc2a74e7"/>
+									</pragmas>
+								</Field>
+								<Field name="AckLength">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::Location_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/3092ba/6AB7/288/55f6bc4273c5"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/17707f/4664/660/54f05009146e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>&quot;5.10.1.2 A level transition announcement to the ERTMS/ETCS on-board equipment shall</comment>
+							<comment>consist of an order to execute the level transition at a further location corresponding to</comment>
+							<comment>the border.&quot;</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="T_ERTMS_capabilities">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="NTC">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/17706f/4664/660/54f050096a2d"/>
+									</pragmas>
+								</Field>
+								<Field name="L0">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/177070/4664/660/54f05009553e"/>
+									</pragmas>
+								</Field>
+								<Field name="L1">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/177071/4664/660/54f0500973ca"/>
+									</pragmas>
+								</Field>
+								<Field name="L2">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/177072/4664/660/54f0500963db"/>
+									</pragmas>
+								</Field>
+								<Field name="L3">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/177073/4664/660/54f050092fb7"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/17706e/4664/660/54f050091a18"/>
+					</pragmas>
+				</Type>
+				<Type name="T_Data_From_Track_Packet">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="P_12">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Packet_Types_Pkg::P12_Level1MovementAuthorities_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b649e/14CD/990/5527d87c61b4"/>
+									</pragmas>
+								</Field>
+								<Field name="P_135">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Packet_Types_Pkg::P135_StopShuntingOnDeskOpening_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b649f/14CD/990/5527d87c430b"/>
+									</pragmas>
+								</Field>
+								<Field name="P_137">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Packet_Types_Pkg::P137_StopIfInStaffResponsible_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b64a0/14CD/990/5527d87c7e36"/>
+									</pragmas>
+								</Field>
+								<Field name="P_138">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Packet_Types_Pkg::P138_ReversingAreaInformation_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b64a1/14CD/990/5527d87c1655"/>
+									</pragmas>
+								</Field>
+								<Field name="P_139">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Packet_Types_Pkg::P139_ReversingSupervisionInformation_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b64a2/14CD/990/5527d87c7b87"/>
+									</pragmas>
+								</Field>
+								<Field name="P_15">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Packet_Types_Pkg::P15_Level23MovementAuthorities_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b64a3/14CD/990/5527d87c63f0"/>
+									</pragmas>
+								</Field>
+								<Field name="P_21">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Packet_Types_Pkg::P21_GradientProfiles_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b64a4/14CD/990/5527d87c40aa"/>
+									</pragmas>
+								</Field>
+								<Field name="P_27">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Packet_Types_Pkg::P27_InternationalStaticSpeedProfile_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b64a5/14CD/990/5527d87cecf"/>
+									</pragmas>
+								</Field>
+								<Field name="P_41">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Packet_Types_Pkg::P41_LevelTransistionOrders_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b64a6/14CD/990/5527d87c44d2"/>
+									</pragmas>
+								</Field>
+								<Field name="P_46">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Packet_Types_Pkg::P46_ConditionalLevelTransitionOrders_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b64a7/14CD/990/5527d87c1924"/>
+									</pragmas>
+								</Field>
+								<Field name="P_63">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Packet_Types_Pkg::P63_ListofBalisesinSRAuthority_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b64a8/14CD/990/5527d87c7211"/>
+									</pragmas>
+								</Field>
+								<Field name="P_80">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Packet_Types_Pkg::P80_ModeProfiles_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b64aa/14CD/990/5527d87c2674"/>
+									</pragmas>
+								</Field>
+								<Field name="LRBG">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_LRBG"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/251c81/3EA4/850/55f2c8315bfa" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>LRBG which is the reference for the packets</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="referenceLocation">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::Location_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/251c88/3EA4/850/55f2c83d144b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Position of the LRBG</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b649d/14CD/990/5527d87c4711" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Input Data From track  needed for Mode Management</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="T_Data_From_Track_Mess">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="Mess_15">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b64c2/14CD/990/5527d8be3fb9"/>
+									</pragmas>
+								</Field>
+								<Field name="Mess_16">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b64c4/14CD/990/5527d8be7e5d"/>
+									</pragmas>
+								</Field>
+								<Field name="Mess_2">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b64c5/14CD/990/5527d8be60c8"/>
+									</pragmas>
+								</Field>
+								<Field name="Mess_27">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b64c6/14CD/990/5527d8befb6"/>
+									</pragmas>
+								</Field>
+								<Field name="Mess_28">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b64c7/14CD/990/5527d8be500d"/>
+									</pragmas>
+								</Field>
+								<Field name="Mess_6">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b64ca/14CD/990/5527d8be71e7"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b64c1/14CD/990/5527d8be1ddc" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Data received from track side as message (without packets). Type for each message shall be defined explicitely (as packet), at least with NID_LRBG, distance, ID,...</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="T_Mode_Profile_Table">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="T_Mode_Profile"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="M_Max_ModeProfile"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/aa2c5/760F/878/552b8fae5bc9"/>
+					</pragmas>
+				</Type>
+				<Type name="T_Mode_Level">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="compatibleModeAndLevel">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/aa5a4/28BE/FE4/552d06e32fdf"/>
+									</pragmas>
+								</Field>
+								<Field name="level">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_LEVEL"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/aa5ad/28BE/FE4/552d06f4211"/>
+									</pragmas>
+								</Field>
+								<Field name="newLevel">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5598b0/6700/D8C/55e9b90c5491"/>
+									</pragmas>
+								</Field>
+								<Field name="Mode">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_MODE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/aa5ae/28BE/FE4/552d06f57131"/>
+									</pragmas>
+								</Field>
+								<Field name="newMode">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5598b9/6700/D8C/55e9b9181a4e"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/aa5a3/28BE/FE4/552d06cc6ad9"/>
+					</pragmas>
+				</Type>
+				<Type name="T_Data_From_Track_MASSPGradient_Available">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="P12_received">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1dbb8/3E58/1240/55d4869f79fb" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>MA in Level 1 has been received and can be used by SSF</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="P15_received">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1da4d/67D/B2C/55d46004453f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>MA in Level 2/3 has been received and can be used by SSF</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="P21_received">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1da4e/67D/B2C/55d46004b5e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Gradient Profile has been received and can be used by SSF</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="P27_received">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1da4f/67D/B2C/55d4600450ba" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>SSP has been received and can be used by SSF</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/1da4a/67D/B2C/55d460046269" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Input Data From  TrackSide needed for Mode management : information that speed curve for FS mode can be computed by Speed and Supervision function</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="T_Data_From_STM">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="Interface_To_National_System">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1391d7/30AD/1348/55e8485944b8"/>
+									</pragmas>
+								</Field>
+								<Field name="National_trip_Order">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1391e0/30AD/1348/55e84879674"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/1391d6/30AD/1348/55e847d531"/>
+					</pragmas>
+				</Type>
+				<Type name="T_Data_From_F2_functions">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="Common_Errors">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Common_Types_Pkg::MSG_Errors_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1391eb/30AD/1348/55e854fd2f8b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>To computeLinking_Reaction_To_Trip (Condition 17),  T_NV_contact_error (Condition 41), Error_BG_System_Version (Condition 65)</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="Failure_Occured">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1391f1/30AD/1348/55e85527fba"/>
+									</pragmas>
+								</Field>
+								<Field name="Continue_Shunting_Active">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1391fb/30AD/1348/55e855f67fe8"/>
+									</pragmas>
+								</Field>
+								<Field name="Stop_Shunting_Stored">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/139204/30AD/1348/55e856294e9"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/1391ea/30AD/1348/55e85496792e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Set of data provided by other EVC functions, not identify in early version of the EVC kernel</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="T_Data_From_Track_To_Mode">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="MA_SSP_Gradient_Available">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/777ba/3EAE/758/54cba79f6a81"/>
+									</pragmas>
+								</Field>
+								<Field name="Mode_Profile_On_Board">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_Mode_Profile_Table"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/777bb/3EAE/758/54cba79f21ab"/>
+									</pragmas>
+								</Field>
+								<Field name="Shunting_granted_By_RBC">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/777bc/3EAE/758/54cba79f2c2a"/>
+									</pragmas>
+								</Field>
+								<Field name="Trip_Order_Given_By_Balise">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/777bd/3EAE/758/54cba79f5023"/>
+									</pragmas>
+								</Field>
+								<Field name="List_Bg_Related_To_SR_Empty">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/777be/3EAE/758/54cba79f5f89"/>
+									</pragmas>
+								</Field>
+								<Field name="Stop_If_In_shunting">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/777bf/3EAE/758/54cba79f2e59"/>
+									</pragmas>
+								</Field>
+								<Field name="Stop_If_In_SR">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/777c0/3EAE/758/54cba79f3e10"/>
+									</pragmas>
+								</Field>
+								<Field name="RBC_Ack_TR_EB_Revocked">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/777c3/3EAE/758/54cba79f1a1d"/>
+									</pragmas>
+								</Field>
+								<Field name="RBC_Authorized_SR">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/777c4/3EAE/758/54cba79f2a40"/>
+									</pragmas>
+								</Field>
+								<Field name="Reversing_Data">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_Reversing_Data"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/777c5/3EAE/758/54cba79f3024"/>
+									</pragmas>
+								</Field>
+								<Field name="Emergency_Stop_Message_Received">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1282b6/12E6/10C4/54e607c52d55"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/777b9/3EAE/758/54cba79f1aa6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Input Data From track  needed for Mode Management</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="T_Data_From_Track_To_Level">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="level_transition_priority_table">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_LevelTransition_PriorityTable"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/137b1a/5E5A/928/55f6f7d57a24"/>
+									</pragmas>
+								</Field>
+								<Field name="conditionnalTransition">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_LevelTransition_PriorityTable"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/137ad4/5E5A/928/55f6f746292f"/>
+									</pragmas>
+								</Field>
+								<Field name="receivedL2L3MA_track">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/137b2b/5E5A/928/55f6f7fc3cd0"/>
+									</pragmas>
+								</Field>
+								<Field name="receivedL1MA_track">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/137b2c/5E5A/928/55f6f7fd7c5b"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/137ad3/5E5A/928/55f6f723357d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Input Data from terrack to  Level Management</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="T_AnnouncedLevel">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="LevelTransition">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_LevelTransition"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/18cccd/643B/120C/5617c8fc4e38" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>announced level transition</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="IsAvailableForUse">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/18cce3/643B/120C/5617c93a600f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Indicates is the future transition is available for use or if it is one with low priority §5.10.2.7</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/18cccc/643B/120C/5617c8d85220"/>
+					</pragmas>
+				</Type>
+				<Type name="T_AcknoledgementRequest">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/18ccf3/643B/120C/5617c9e57764" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>This information is valid</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="whichMode">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_MODE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/18ccfa/643B/120C/5617c9ec2418" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Mode to acknowledge</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="SH_Req_RefusedByRBC">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/18cd00/643B/120C/5617c9f43268"/>
+									</pragmas>
+								</Field>
+								<Field name="LevelNeedsAck">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/18cd06/643B/120C/5617c9fb7034"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/18ccec/643B/120C/5617c99e5223"/>
+					</pragmas>
+				</Type>
+			</declarations>
+			<pragmas>
+				<ed:Package oid="!ed/3a4db/471B/12D0/54be4f2b6afc" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<diagrams>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/3a4dc/471B/12D0/54be4f2b4f4e" blockKind="constants" columnsSize="0, 150, 150, 150, 300"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/3a4dd/471B/12D0/54be4f2b7f6" blockKind="types" columnsSize="0, 312, 370, 300"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/3a4de/471B/12D0/54be4f2b78d3" blockKind="sensors"/>
+					</diagrams>
+					<references>
+						<TypeRef path="Obu_BasicTypes_Pkg::Location_T" refOid="!ed/1c796/1CCC/1EE4/53d0e7cd3b13"/>
+						<TypeRef path="Obu_BasicTypes_Pkg::Speed_T" refOid="!ed/1c7cc/1CCC/1EE4/53d0e893263a"/>
+						<TypeRef path="TrainPosition_Types_Pck::positionErrors_T" refOid="!ed/1478d/464A/1DAC/53981c6c3f32"/>
+						<TypeRef path="TrainPosition_Types_Pck::trainPosition_T" refOid="!ed/93a92/113E/16A8/5346d6722fb6"/>
+						<TypeRef path="Obu_BasicTypes_Pkg::L_internal_Type" refOid="!ed/816f/4AD8/11D4/5304c4f23c06"/>
+						<TypeRef path="Packet_Types_Pkg::P12_Level1MovementAuthorities_T" refOid="!ed/13eba/3FFB/13E0/55755bf33a42"/>
+						<TypeRef path="Packet_Types_Pkg::P135_StopShuntingOnDeskOpening_T" refOid="!ed/13f8a/3FFB/13E0/557560dd39ad"/>
+						<TypeRef path="Packet_Types_Pkg::P137_StopIfInStaffResponsible_T" refOid="!ed/5a66/569A/FF0/54880cef4781"/>
+						<TypeRef path="Packet_Types_Pkg::P138_ReversingAreaInformation_T" refOid="!ed/5a77/569A/FF0/54880cef38a9"/>
+						<TypeRef path="Packet_Types_Pkg::P139_ReversingSupervisionInformation_T" refOid="!ed/5a89/569A/FF0/54880cef4885"/>
+						<TypeRef path="Packet_Types_Pkg::P15_Level23MovementAuthorities_T" refOid="!ed/ca50/7202/4D4/5490996450ba"/>
+						<TypeRef path="Packet_Types_Pkg::P21_GradientProfiles_T" refOid="!ed/5dc2/569A/FF0/54880f243049"/>
+						<TypeRef path="Packet_Types_Pkg::P27_InternationalStaticSpeedProfile_T" refOid="!ed/5ac8/569A/FF0/54880cef60f2"/>
+						<TypeRef path="Packet_Types_Pkg::P41_LevelTransistionOrders_T" refOid="!ed/5ec7/569A/FF0/5488151c26da"/>
+						<TypeRef path="Packet_Types_Pkg::P46_ConditionalLevelTransitionOrders_T" refOid="!ed/f843/569A/FF0/54881788c1b"/>
+						<TypeRef path="Packet_Types_Pkg::P63_ListofBalisesinSRAuthority_T" refOid="!ed/13ef3/2EC8/14D8/55756d543db4"/>
+						<TypeRef path="Packet_Types_Pkg::P80_ModeProfiles_T" refOid="!ed/fb26/569A/FF0/5488259455a0"/>
+						<TypeRef path="Common_Types_Pkg::MSG_Errors_T" refOid="!ed/4661b/411B/1A00/555ed92952ac"/>
+					</references>
+				</ed:Package>
+			</pragmas>
+		</Package>
+	</declarations>
+</File>

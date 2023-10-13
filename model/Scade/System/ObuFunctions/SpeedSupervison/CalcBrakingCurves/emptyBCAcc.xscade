@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="function" name="emptyBCAcc">
+	<outputs>
+		<Variable name="Output1">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="BCAccumulator_type"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/7b9ba/74ED/A61C/55390a7f6200"/>
+			</pragmas>
+		</Variable>
+	</outputs>
+	<locals>
+		<Variable name="_L6">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="BCAccumulator_type"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/7b972/74ED/A61C/55390a1b18d0"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L7">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float64"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/7b98a/74ED/A61C/55390a313fd4"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L8">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/7b9a2/74ED/A61C/55390a3e7aed"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L10">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="CalcBrakingCurves_types::ParabolaCurve_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/c5d1/5F82/1D5C/5559f10671db"/>
+			</pragmas>
+		</Variable>
+	</locals>
+	<data>
+		<!-- Output1 = _L6; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="Output1"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="_L6"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/7b9bb/74ED/A61C/55390a7f273d"/>
+			</pragmas>
+		</Equation>
+		<!-- _L6 = (make BCAccumulator_type)(_L7, _L7, _L8, _L8, _L10); -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L6"/>
+			</lefts>
+			<right>
+				<!-- (make BCAccumulator_type)(_L7, _L7, _L8, _L8, _L10) -->
+				<CallExpression>
+					<operator>
+						<MakeOp name="3">
+							<type>
+								<TypeRef name="BCAccumulator_type"/>
+							</type>
+						</MakeOp>
+					</operator>
+					<callParameters>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L7"/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L7"/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L8"/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L8"/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L10"/>
+							</path>
+						</IdExpression>
+					</callParameters>
+					<pragmas>
+						<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<references>
+								<TypeRef path="BCAccumulator_type" refOid="!ed/176cf/548F/DF0/54d8bb097305">
+									<LabelRef refOid="!ed/176d0/548F/DF0/54d8bb09fba"/>
+									<LabelRef refOid="!ed/176d2/548F/DF0/54d8bb0962d7"/>
+									<LabelRef refOid="!ed/176d1/548F/DF0/54d8bb094d79"/>
+									<LabelRef refOid="!ed/176d3/548F/DF0/54d8bb09585e"/>
+									<LabelRef refOid="!ed/176d4/548F/DF0/54d8bb093291"/>
+								</TypeRef>
+							</references>
+						</ed:CallExpression>
+					</pragmas>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/7b971/74ED/A61C/55390a1b3f02"/>
+			</pragmas>
+		</Equation>
+		<!-- _L7 = 0.0; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L7"/>
+			</lefts>
+			<right>
+				<ConstValue value="0.0"/>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/7b989/74ED/A61C/55390a31112f"/>
+			</pragmas>
+		</Equation>
+		<!-- _L8 = 0; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L8"/>
+			</lefts>
+			<right>
+				<ConstValue value="0"/>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/7b9a1/74ED/A61C/55390a3e2d23"/>
+			</pragmas>
+		</Equation>
+		<!-- _L10 = CalcBrakingCurves_types::makeEmptyParabolaCurve(); -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L10"/>
+			</lefts>
+			<right>
+				<!-- CalcBrakingCurves_types::makeEmptyParabolaCurve() -->
+				<CallExpression>
+					<operator>
+						<OpCall name="2">
+							<operator>
+								<OperatorRef name="CalcBrakingCurves_types::makeEmptyParabolaCurve"/>
+							</operator>
+						</OpCall>
+					</operator>
+					<pragmas>
+						<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<references>
+								<OperatorRef path="CalcBrakingCurves_types::makeEmptyParabolaCurve" refOid="!ed/b163/2FC0/CB0/5559ea44688c">
+									<OutputRef refOid="!ed/b165/2FC0/CB0/5559ea5544eb"/>
+								</OperatorRef>
+							</references>
+						</ed:CallExpression>
+					</pragmas>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/c5d0/5F82/1D5C/5559f106845"/>
+			</pragmas>
+		</Equation>
+	</data>
+	<pragmas>
+		<ed:Operator oid="!ed/7b9b7/74ED/A61C/55390a7f419b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+			<diagrams>
+				<NetDiagram name="diagram_emptyBCAcc_1" landscape="true" format="A4 (210 297)" oid="!ed/7b9b8/74ED/A61C/55390a7f125">
+					<presentationElements>
+						<EquationGE presentable="!ed/7b9bb/74ED/A61C/55390a7f273d">
+							<position>
+								<Point x="13176" y="1720"/>
+							</position>
+							<size>
+								<Size width="265" height="503"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/7b971/74ED/A61C/55390a1b3f02">
+							<position>
+								<Point x="8864" y="265"/>
+							</position>
+							<size>
+								<Size width="3429" height="3376"/>
+							</size>
+						</EquationGE>
+						<EquationGE kind="OBJ_LIT" presentable="!ed/7b989/74ED/A61C/55390a31112f">
+							<position>
+								<Point x="7355" y="926"/>
+							</position>
+							<size>
+								<Size width="211" height="317"/>
+							</size>
+						</EquationGE>
+						<EquationGE kind="OBJ_LIT" presentable="!ed/7b9a1/74ED/A61C/55390a3e2d23">
+							<position>
+								<Point x="7355" y="2064"/>
+							</position>
+							<size>
+								<Size width="212" height="317"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="4" srcEquation="!ed/7b9a1/74ED/A61C/55390a3e2d23" dstEquation="!ed/7b971/74ED/A61C/55390a1b3f02">
+							<positions>
+								<Point x="7567" y="2223"/>
+								<Point x="8202" y="2223"/>
+								<Point x="8202" y="2514"/>
+								<Point x="8864" y="2514"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/7b9a1/74ED/A61C/55390a3e2d23" dstEquation="!ed/7b971/74ED/A61C/55390a1b3f02">
+							<positions>
+								<Point x="7567" y="2223"/>
+								<Point x="8202" y="2223"/>
+								<Point x="8202" y="1958"/>
+								<Point x="8864" y="1958"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/7b989/74ED/A61C/55390a31112f" dstEquation="!ed/7b971/74ED/A61C/55390a1b3f02">
+							<positions>
+								<Point x="7567" y="1085"/>
+								<Point x="8202" y="1085"/>
+								<Point x="8202" y="1376"/>
+								<Point x="8864" y="1376"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/7b989/74ED/A61C/55390a31112f" dstEquation="!ed/7b971/74ED/A61C/55390a1b3f02">
+							<positions>
+								<Point x="7567" y="1085"/>
+								<Point x="8202" y="1085"/>
+								<Point x="8202" y="820"/>
+								<Point x="8864" y="820"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/7b971/74ED/A61C/55390a1b3f02" dstEquation="!ed/7b9bb/74ED/A61C/55390a7f273d">
+							<positions>
+								<Point x="12277" y="1958"/>
+								<Point x="12753" y="1958"/>
+								<Point x="12753" y="1958"/>
+								<Point x="13229" y="1958"/>
+							</positions>
+						</Edge>
+						<EquationGE presentable="!ed/c5d0/5F82/1D5C/5559f106845">
+							<position>
+								<Point x="291" y="2725"/>
+							</position>
+							<size>
+								<Size width="7276" height="662"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="5" srcEquation="!ed/c5d0/5F82/1D5C/5559f106845" dstEquation="!ed/7b971/74ED/A61C/55390a1b3f02">
+							<positions>
+								<Point x="7567" y="3069"/>
+								<Point x="8202" y="3069"/>
+								<Point x="8202" y="3069"/>
+								<Point x="8864" y="3069"/>
+							</positions>
+						</Edge>
+					</presentationElements>
+				</NetDiagram>
+			</diagrams>
+			<references>
+				<TypeRef path="BCAccumulator_type" refOid="!ed/176cf/548F/DF0/54d8bb097305"/>
+			</references>
+		</ed:Operator>
+	</pragmas>
+</Operator>

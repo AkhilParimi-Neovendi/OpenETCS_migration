@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/4" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/2" kind="node" name="SIM_06_Bijlmer_Standalone">
+	<locals>
+		<Variable name="_L30">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="InfraLib::TrackSectionData_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/d9de4/1F32/CBC/554b9b4f2ca1"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L32">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="InfraLib::TrackSectionData_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/d9dfb/1F32/CBC/554b9b7845b7"/>
+			</pragmas>
+		</Variable>
+	</locals>
+	<data>
+		<!-- _L30 = InfraLib::TrackInit(_null, _null); -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L30"/>
+			</lefts>
+			<right>
+				<!-- InfraLib::TrackInit(_null, _null) -->
+				<CallExpression>
+					<operator>
+						<OpCall name="1">
+							<operator>
+								<OperatorRef name="InfraLib::TrackInit"/>
+							</operator>
+						</OpCall>
+					</operator>
+					<callParameters>
+						<IdExpression>
+							<path>
+								<NullRef/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<NullRef/>
+							</path>
+						</IdExpression>
+					</callParameters>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/d9de3/1F32/CBC/554b9b4f13fb"/>
+			</pragmas>
+		</Equation>
+		<!-- _L32 = Sheet06_Bijlmer(_L30); -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L32"/>
+			</lefts>
+			<right>
+				<!-- Sheet06_Bijlmer(_L30) -->
+				<CallExpression>
+					<operator>
+						<OpCall name="1">
+							<operator>
+								<OperatorRef name="Sheet06_Bijlmer"/>
+							</operator>
+						</OpCall>
+					</operator>
+					<callParameters>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L30"/>
+							</path>
+						</IdExpression>
+					</callParameters>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/d9de5/1F32/CBC/554b9b4f58a1"/>
+			</pragmas>
+		</Equation>
+	</data>
+	<pragmas>
+		<ed:Operator oid="!ed/35bb6/2753/D78/553e98141ee3" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4">
+			<diagrams>
+				<NetDiagram name="diagram_TEMPLATE_Balise_Group1_1_Balises" landscape="true" format="A4 (210 297)" oid="!ed/35bd2/2753/D78/553e98143c2a">
+					<presentationElements>
+						<EquationGE kind="OBJ_LIBNODE" presentable="!ed/d9de3/1F32/CBC/554b9b4f13fb">
+							<position>
+								<Point x="5980" y="6615"/>
+							</position>
+							<size>
+								<Size width="5000" height="2751"/>
+							</size>
+						</EquationGE>
+						<EquationGE kind="OBJ_NODE" presentable="!ed/d9de5/1F32/CBC/554b9b4f58a1">
+							<position>
+								<Point x="13282" y="5794"/>
+							</position>
+							<size>
+								<Size width="10107" height="4392"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/d9de3/1F32/CBC/554b9b4f13fb" dstEquation="!ed/d9de5/1F32/CBC/554b9b4f58a1">
+							<positions>
+								<Point x="10980" y="7990"/>
+								<Point x="12118" y="7990"/>
+								<Point x="12118" y="7990"/>
+								<Point x="13282" y="7990"/>
+							</positions>
+						</Edge>
+					</presentationElements>
+				</NetDiagram>
+			</diagrams>
+		</ed:Operator>
+	</pragmas>
+</Operator>

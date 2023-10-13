@@ -1,0 +1,106 @@
+\chapter{Introduction and context}
+
+\section{Introduction}
+
+This document describes the ``openETCS API''. The openETCS API is an
+open, standardized, interface between a vendor specific platform and
+the openETCS application software. More details on the software
+architecture are given in chapter \ref{software-arch}.
+
+\paragraph{Main objectives} The main objectives of this document are
+to describe an API:
+\begin{itemize}
+\item Suitable for every partner of openETCS project;
+\item Compatible with Vendor specific API through an ``Adaptation Layer'';
+\item Making explicit all assumptions, including non-functional ones;
+\item Language agnostic, allowing interfacing with software written
+  in C, Ada or other programming languages;
+\item Simple;
+\item Fulfilling safety objectives;
+\item Offering reasonable performance.
+\end{itemize}
+
+
+\section{References}
+
+The requirements for this document are defined in \cite[§7.1]{D2.6-9} and
+\cite{API-req-2} documents.
+
+Source of information and constraints for this document are following
+documents:
+\begin{itemize}
+\item Alstom API proposal defined in \cite{alstom-api},
+  \cite{alstom-api-app-layer} and \cite{alstom-api-data-dict};
+\item Comments on Alstom API proposal in \cite{alstom-api-comments};
+\item The top level interfaces of \cite{sysml-model};
+\item SCADE openETCS model requirements on run-time defined in §2.2
+  and §3 of \cite{scade-modelling-guide};
+\item ERSA Simulator API\cite{ERSA-api};
+\item ETCS on-board interfaces as pointed out in Figure 1 of §2.5.3 in
+  \cite{subset-026}.
+\end{itemize}
+
+
+\section{Identified issues}
+
+This documents aims at reaching a consensus, satisfying relevant point
+of view of all openETCS project's partners.
+
+As of now, we have identified following issues on which no consensus
+has been found (yet!):
+\begin{enumerate}
+\item Timing requirements are currently incompatible between SCADE
+  model and Alstom's API definition
+  \begin{enumerate}
+  \item 	Sub-issue regarding cycle time definition
+  \item 	Sub-issue regarding ordering of events
+  \end{enumerate}
+\item The data flow definition in Alstom's API proposal is sometimes
+  too far from SRS
+\item No agreement on the overall behaviour of Basic software and
+  Application software: when data flows are exchanged, how they are
+  stored, constraints on them, ...
+  \begin{enumerate}
+  \item No agreement on general software architecture
+  \item What is in application Sw and generic software?
+  \end{enumerate}
+\item Define what is in or out of application (odometry, crc, ...)?
+  Allow differentiation points between suppliers
+\item No agreement on the way the various components are calling each
+  other: order sequence, constraints, ...
+\item How to manage physical units in unambiguous way?
+\item The API description should distinguish abstract and concrete
+  parts:
+  \begin{enumerate}
+  \item Abstract parts: Dataflows, Datatypes, Input/Output, ...
+  \item Concrete parts: Given by value or reference, C or Ada
+    language, where is made allocation and (possible) de-allocation,
+    ...
+  \end{enumerate}
+\item For WP5 needs, it would be preferable to have two levels within
+  the API:
+  \begin{itemize}
+  \item a low level where only ``conduits'' are opened between
+    hardware architecture units. Opaque messages would be exchanged
+    over such conduits;
+  \item a higher level where the specific kind of information
+    exchanged of the conduits is detailed (e.g. precise kind of
+    DMI/EVC messages).
+  \end{itemize}
+  For the lower level, it seems interesting to define non-functional
+  properties (latency bounds, message size bounds, ...).
+\end{enumerate}
+
+\section{Abbreviations}
+
+Abbreviations not described in this section are described in
+\cite{subset-023}.
+
+\begin{description}
+\item[\define{API}] Application Programming Interface. An interface
+  between two parts of a system, describing aspects that the two parts
+  shall be compliant with and keeping other points undetermined
+\item [\define{JRU}] Juridical Recording Unit
+\end{description}
+
+% LocalWords:  Alstom API openETCS SysML DMI EVC

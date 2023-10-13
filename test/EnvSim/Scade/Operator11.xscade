@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="function" name="Operator11">
+	<inputs>
+		<Variable name="Input1">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="TM::CompressedRadioMessage"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/13c501/1256/3CB0/6502c5972cef"/>
+			</pragmas>
+		</Variable>
+	</inputs>
+	<outputs>
+		<Variable name="Output1">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="TM::CompressedRadioMessage"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/13c508/1256/3CB0/6502c59b1510"/>
+			</pragmas>
+		</Variable>
+	</outputs>
+	<locals>
+		<Variable name="_L2">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="TM::CompressedRadioMessage"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/13c503/1256/3CB0/6502c5977f97"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L1">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="TM::CompressedRadioMessage"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/13c4fc/1256/3CB0/6502c5947f3f"/>
+			</pragmas>
+		</Variable>
+	</locals>
+	<data>
+		<!-- _L2 = Input1; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L2"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="Input1"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/13c502/1256/3CB0/6502c597d96"/>
+			</pragmas>
+		</Equation>
+		<!-- Output1 = _L1; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="Output1"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="_L1"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/13c509/1256/3CB0/6502c59b5caa"/>
+			</pragmas>
+		</Equation>
+		<!-- _L1 = InjectRadioMessage(_L2); -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L1"/>
+			</lefts>
+			<right>
+				<!-- InjectRadioMessage(_L2) -->
+				<CallExpression>
+					<operator>
+						<OpCall name="1">
+							<operator>
+								<OperatorRef name="InjectRadioMessage"/>
+							</operator>
+						</OpCall>
+					</operator>
+					<callParameters>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L2"/>
+							</path>
+						</IdExpression>
+					</callParameters>
+					<pragmas>
+						<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<references>
+								<OperatorRef path="InjectRadioMessage" refOid="!ed/17d43f/30A9/171C/56557a7128e">
+									<InputRef refOid="!ed/17d440/30A9/171C/56557af623ce"/>
+									<OutputRef refOid="!ed/17d44a/30A9/171C/56557b615167"/>
+								</OperatorRef>
+							</references>
+						</ed:CallExpression>
+					</pragmas>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/13c4fb/1256/3CB0/6502c5945e4b"/>
+			</pragmas>
+		</Equation>
+	</data>
+	<pragmas>
+		<ed:Operator oid="!ed/13c4f9/1256/3CB0/6502c58f6850" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+			<diagrams>
+				<NetDiagram name="Operator11_1" landscape="true" format="A4 (210 297)" oid="!ed/13c4fa/1256/3CB0/6502c58f4340">
+					<presentationElements>
+						<EquationGE presentable="!ed/13c502/1256/3CB0/6502c597d96">
+							<position>
+								<Point x="4207" y="3625"/>
+							</position>
+							<size>
+								<Size width="291" height="1032"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/13c509/1256/3CB0/6502c59b5caa">
+							<position>
+								<Point x="12541" y="3995"/>
+							</position>
+							<size>
+								<Size width="318" height="503"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/13c4fb/1256/3CB0/6502c5945e4b">
+							<position>
+								<Point x="7779" y="4180"/>
+							</position>
+							<size>
+								<Size width="1772" height="1403"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/13c502/1256/3CB0/6502c597d96" dstEquation="!ed/13c4fb/1256/3CB0/6502c5945e4b">
+							<positions>
+								<Point x="4498" y="4154"/>
+								<Point x="6138" y="4154"/>
+								<Point x="6138" y="4895"/>
+								<Point x="7779" y="4895"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/13c4fb/1256/3CB0/6502c5945e4b" dstEquation="!ed/13c509/1256/3CB0/6502c59b5caa">
+							<positions>
+								<Point x="9551" y="4895"/>
+								<Point x="11060" y="4895"/>
+								<Point x="11060" y="4260"/>
+								<Point x="12594" y="4260"/>
+							</positions>
+						</Edge>
+					</presentationElements>
+				</NetDiagram>
+			</diagrams>
+			<references>
+				<TypeRef path="TM::CompressedRadioMessage" refOid="!ed/a52e/B49/640/554b56061c6"/>
+			</references>
+		</ed:Operator>
+	</pragmas>
+</Operator>

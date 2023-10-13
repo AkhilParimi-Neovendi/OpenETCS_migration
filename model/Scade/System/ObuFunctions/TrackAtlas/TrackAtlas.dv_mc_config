@@ -1,0 +1,43 @@
+## Options for DV_MC
+## Empty lines and lines starting with # are ignored
+
+## @criterion@ is expanded to:
+## - MC mode:    option from active Test configuration
+## - SCADE mode: '-criterion OMCDC'
+@criterion@
+
+## instrumentation options
+#-instr    P::N,P::N2
+#-noinstr P::N,P::N2
+
+## @expansion@ is expanded to:
+## - MC mode:    options from Suite configuration referenced by active Test configuration
+## - SCADE mode: options from active Suite configuration
+@expansion@
+
+## @observation@ is expanded to:
+## - MC mode:    options from Suite configuration referenced by active Test configuration
+## - SCADE mode: options from active Suite configuration
+@observation@
+
+## @root@ is expanded to:
+## - MC mode:    options from Suite configuration referenced by active Test configuration
+## - SCADE mode: '-root <selected operator>'
+@root@
+
+## timeout in seconds
+-timeout 20
+
+## maximum depth for BMC (bounded model checking)
+-bmc_depth 7
+
+## number of threads used by PSL
+## * strictly negative value: PSL is run using a single core,
+## * 0: PSL is run with the maximum of cores,
+## * strictly positive value: PSL is run with the specified value, this value
+##   being bounded by the maximum number of cores on host
+-threads 4
+
+## custom strategy
+#-strategy " -solver current {inc=true} -bmc conj start 0 stop 5 -solver 5 -eqLemmas ind full timeout 5 -solver 1+3 -ind conj stop 1 -solver current {inc=true} -bmc conj start 5 stop 7 -solver current {inc=false} -ipol timeout 15"
+

@@ -1,0 +1,2311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Package name="Radio_Types_Pkg">
+			<declarations>
+				<Constant name="cEmptyRadioMsg">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="RadioMessage_T"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<!-- {present : false, consistencyError : false, header : {radioDevice : 0, receivedSy... -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="present">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="consistencyError">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="header">
+									<flow>
+										<!-- {radioDevice : 0, receivedSystemTime : 0, nid_message : 0, t_train : 0, m_ack : M... -->
+										<DataStructOp>
+											<data>
+												<LabelledExpression label="radioDevice">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="receivedSystemTime">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="nid_message">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="t_train">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="m_ack">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="M_ACK_No_acknowledgement_required"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="nid_lrbg">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="t_train_reference">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="nid_em">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="q_scale">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="d_sr">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="t_sh_rqst">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="d_ref">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="q_dir">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="Q_DIR_Reverse"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="d_emergencystop">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="m_version">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+											</data>
+										</DataStructOp>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="radioMetadata">
+									<flow>
+										<!-- {t_train_reference : false, nid_em : false, q_scale : false, d_sr : false, t_sh_r... -->
+										<DataStructOp>
+											<data>
+												<LabelledExpression label="t_train_reference">
+													<flow>
+														<ConstValue value="false"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="nid_em">
+													<flow>
+														<ConstValue value="false"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="q_scale">
+													<flow>
+														<ConstValue value="false"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="d_sr">
+													<flow>
+														<ConstValue value="false"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="t_sh_rqst">
+													<flow>
+														<ConstValue value="false"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="d_ref">
+													<flow>
+														<ConstValue value="false"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="q_dir">
+													<flow>
+														<ConstValue value="false"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="d_emergencystop">
+													<flow>
+														<ConstValue value="false"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="m_version">
+													<flow>
+														<ConstValue value="false"/>
+													</flow>
+												</LabelledExpression>
+											</data>
+										</DataStructOp>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="packets">
+									<flow>
+										<!-- {PacketHeaders : [{nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAdd... -->
+										<DataStructOp>
+											<data>
+												<LabelledExpression label="PacketHeaders">
+													<flow>
+														<!-- [{nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddr... -->
+														<DataArrayOp>
+															<data>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+																<!-- {nid_packet : 0, q_dir : Q_DIR_Reverse, valid : false, startAddress : 0, endAddre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nid_packet">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="startAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="endAddress">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+															</data>
+														</DataArrayOp>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="PacketData">
+													<flow>
+														<!-- [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,... -->
+														<DataArrayOp>
+															<data>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+																<ConstValue value="0"/>
+															</data>
+														</DataArrayOp>
+													</flow>
+												</LabelledExpression>
+											</data>
+										</DataStructOp>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="sendingRBC">
+									<flow>
+										<!-- {valid : false, nid_c : 0, rbc_id : 0, device_id : 0} -->
+										<DataStructOp>
+											<data>
+												<LabelledExpression label="valid">
+													<flow>
+														<ConstValue value="false"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="nid_c">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="rbc_id">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="device_id">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+											</data>
+										</DataStructOp>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/293144/2014/174/54c22d4b2d8c"/>
+					</pragmas>
+				</Constant>
+				<Type name="Radio_TrackTrain_Header_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="radioDevice">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/3fa4f/7215/4C8/54cb742d4c48" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Identifier of the radio device (assuming 2 devices are installed for RBC-RBC-Handover)</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="receivedSystemTime">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::T_internal_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13ddb/7136/1EEC/54e0ab9d15ef" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Timestamp when the message has been received in the system</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="nid_message">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_MESSAGE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5bee/59EE/B08/546dbba26ce8" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Message Identifier / From: General header</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="t_train">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_TRAIN"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5bf9/59EE/B08/546dbbd33ef7" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Time, according to trainborne clock, at which message is sent / From: General header</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="m_ack">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_ACK"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5bfa/59EE/B08/546dbbd3957" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Indicates whether the telegram must be acknowledged or not / From: General header</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="nid_lrbg">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_LRBG"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5bfb/59EE/B08/546dbbd434cf" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Identity of last relevant balise group / From: General header</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="t_train_reference">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_TRAIN"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/29516/4850/156C/5499729ba86" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>8.7.4: Reference to received train data message</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="nid_em">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_EM"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/29520/4850/156C/5499730f245a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>8.7.6: Message 15: Conditional Emergency Stop</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="q_scale">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SCALE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5c22/59EE/B08/546dbc215799" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Qualifier for the distance scale / From: Message 33: MA with Shifted Location Reference</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="d_sr">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_SR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b48f/35CD/12BC/548594af7c86"/>
+									</pragmas>
+								</Field>
+								<Field name="t_sh_rqst">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_TRAIN"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b499/35CD/12BC/548594b91b5a"/>
+									</pragmas>
+								</Field>
+								<Field name="d_ref">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_REF"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b4a3/35CD/12BC/548594c4203e"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2952a/4850/156C/5499735715b7"/>
+									</pragmas>
+								</Field>
+								<Field name="d_emergencystop">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_EMERGENCYSTOP"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/29534/4850/156C/5499738f72aa" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>8.7.6: Distance between LRBG and the position reference to the emergency stop.</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="m_version">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_VERSION"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2953e/4850/156C/54997430290f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>8.7.12: Version of the ERTMS/ETCS system.</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5bed/59EE/B08/546dba56264c"/>
+					</pragmas>
+				</Type>
+				<Type name="sessionStatus_Type">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="morc_st_inactive">
+									<pragmas>
+										<ed:Value oid="!ed/5afa/28EB/1620/5499627f29d3"/>
+									</pragmas>
+								</Value>
+								<Value name="morc_st_establishing">
+									<pragmas>
+										<ed:Value oid="!ed/5afb/28EB/1620/5499627f7186"/>
+									</pragmas>
+								</Value>
+								<Value name="morc_st_maintaining">
+									<pragmas>
+										<ed:Value oid="!ed/5afc/28EB/1620/5499627f5339"/>
+									</pragmas>
+								</Value>
+								<Value name="morc_st_terminating">
+									<pragmas>
+										<ed:Value oid="!ed/5afd/28EB/1620/5499627f16ef"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5af9/28EB/1620/5499627f62d2" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Designates the MoRC session status</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="RadioMessage_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="present">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/c3f8/2F31/1C78/54bfb32d69fd" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>True if new data is available.</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="consistencyError">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1e84a/4C11/2284/54bfee3b7efa" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>A consistency error was detected.</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="header">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Radio_TrackTrain_Header_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/c3f9/2F31/1C78/54bfb32d24d7" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Radio message header </comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="radioMetadata">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Common_Types_Pkg::RadioMetadata_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/a73ea/232F/CFC/55269fe01cd" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Metadata for radio interface specific variables. For radio messages some variables are mandatory per nid_message.</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="packets">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Common_Types_Pkg::CompressedPackets_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/c3fa/2F31/1C78/54bfb32d37d8" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Packets of the radio message</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="sendingRBC">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Common_Types_Pkg::RBC_Id_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/57458/635B/150C/55a4e85c48a2" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Information defing the RBC which was sending the information</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/c3f7/2F31/1C78/54bfb32d4b74"/>
+					</pragmas>
+				</Type>
+				<Type name="Radio_TrainTrack_Header_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="present">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/27fbd/176B/DC0/54d0ab3c6153" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Indicates whether the header is present in the interface.</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="nid_message">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_MESSAGE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/3da82/176B/DC0/54d0b0116f24" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Message Identifier / From: General header</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="t_train">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_TRAIN"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/3da89/176B/DC0/54d0b06426e9" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Time, according to trainborne clock, at which message is sent / From: General header</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="nid_engine">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_ENGINE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/3da7b/176B/DC0/54d0aff85481" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Identity of the train</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="xQ_MARQSTREASON">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_MARQSTREASON"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/854e2/1963/1E14/54d0f6b260b7" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Only relevant for some messages</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="xT_TRAIN">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_TRAIN"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/854ec/1963/1E14/54d0f7125531" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Only relevant for some messages: Time stamp contained in the message that is acknowledged</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="xNID_EM">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_EM"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/a6547/7C60/2CF8/55649ac83681" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Only relevant for some messages: Emergency message identity</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="xQ_EMERGENCYSTOP">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_EMERGENCYSTOP"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/a6551/7C60/2CF8/55649b376fca" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Only relevant for some messages: Qualifier for emergency stop management</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="xNID_TEXTMESSAGE">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_TEXTMESSAGE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/a655b/7C60/2CF8/55649dcf2513" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Only relevant for some messages: Text message identifier</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/27fbc/176B/DC0/54d0ab104efb" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>8.4.4.7: Standard format of rdio message train to track</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="Radio_TrainTrack_Message_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="present">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13e27/1963/1E14/54d0c1b719f0"/>
+									</pragmas>
+								</Field>
+								<Field name="header">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Radio_TrainTrack_Header_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13e30/1963/1E14/54d0c1c74d91"/>
+									</pragmas>
+								</Field>
+								<Field name="packets">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Common_Types_Pkg::outPackets_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13e40/1963/1E14/54d0c1fb1c8d"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13e1d/1963/1E14/54d0c12e1c42"/>
+					</pragmas>
+				</Type>
+			</declarations>
+			<pragmas>
+				<ed:Package oid="!ed/5be9/59EE/B08/546db9e878fe" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<diagrams>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/5bea/59EE/B08/546db9e8718a" blockKind="constants"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/5beb/59EE/B08/546db9e81058" blockKind="types" columnsSize="0, 249, 298, 534"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/5bec/59EE/B08/546db9e816cc" blockKind="sensors"/>
+					</diagrams>
+					<references>
+						<TypeRef path="Obu_BasicTypes_Pkg::T_internal_Type" refOid="!ed/8178/4AD8/11D4/5304c5cd1d44"/>
+						<TypeRef path="Common_Types_Pkg::RadioMetadata_T" refOid="!ed/23a2f/100C/D58/5498431b70df"/>
+						<TypeRef path="Common_Types_Pkg::CompressedPackets_T" refOid="!ed/14fc8e/4207/1150/552680e33790"/>
+						<TypeRef path="Common_Types_Pkg::RBC_Id_T" refOid="!ed/1d84e/1FEB/11C8/55a3d08f5387"/>
+						<TypeRef path="Common_Types_Pkg::outPackets_T" refOid="!ed/854f6/1963/1E14/54d0f8165fa8"/>
+					</references>
+				</ed:Package>
+			</pragmas>
+		</Package>
+	</declarations>
+</File>

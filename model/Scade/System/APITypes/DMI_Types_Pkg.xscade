@@ -1,0 +1,5656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Package name="DMI_Types_Pkg">
+			<declarations>
+				<Constant name="cDMI_maxTrackCondProfile">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="32"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/13cd8/5512/1860/54c8e3fa71ca" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Reduced (4)</comment>
+						</ed:Constant>
+					</pragmas>
+				</Constant>
+				<Constant name="cDMI_maxSpeedProfile">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="32"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/13cca/5512/1860/54c8e3fa1bdf" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Reduced (4)</comment>
+						</ed:Constant>
+					</pragmas>
+				</Constant>
+				<Constant name="cDMI_maxLevels">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="32"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/13cbc/5512/1860/54c8e3fa509e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>maximum number of elements in the level list</comment>
+						</ed:Constant>
+					</pragmas>
+				</Constant>
+				<Constant name="cDMI_maxGradientProfile">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="32"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/13cae/5512/1860/54c8e3fa7db3" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Linked with TrackAtlas</comment>
+						</ed:Constant>
+					</pragmas>
+				</Constant>
+				<Constant name="cDMI_charsInText">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="255"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/3dc34/3E1F/180/54e72f686f3b"/>
+					</pragmas>
+				</Constant>
+				<Constant name="cDMIUnknownSpeed">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="Obu_BasicTypes_Pkg::V_internal_Type"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="-1"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/557a3/5961/E00/54f03978b20" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Will be used in the interfaces where speed information is not available.</comment>
+						</ed:Constant>
+					</pragmas>
+				</Constant>
+				<Constant name="cDMI_EVC_Status_Default">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="DMI_EVC_status_T"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<!-- {DMI_Active : false, DMI_Error : false, DMI_DriverIdValidated : false, DMI_LevelS... -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="DMI_Active">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="DMI_Error">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="DMI_DriverIdValidated">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="DMI_LevelSelectedByDirver">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="DMI_TrainRunningNumberFirstValidation">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="DMI_TrainRunningNumberValidated">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="DMI_TrainDataValidated">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="DMI_StartReceived">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="DMI_Identifier">
+									<flow>
+										<!-- {valid : false, systemTime : 0, DMI_Identifier : DMI_1, Cabin_Identifier : cabin_... -->
+										<DataStructOp>
+											<data>
+												<LabelledExpression label="valid">
+													<flow>
+														<ConstValue value="false"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="systemTime">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="DMI_Identifier">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="DMI_1"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="Cabin_Identifier">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="cabin_A"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="l_name">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="DMI_name">
+													<flow>
+														<!-- [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ... -->
+														<DataArrayOp>
+															<data>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+																<ConstValue value="' '"/>
+															</data>
+														</DataArrayOp>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="m_version">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+											</data>
+										</DataStructOp>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/1e765/56C4/CBC/5584385b3dc3"/>
+					</pragmas>
+				</Constant>
+				<Constant name="cDMI_TextMsgListSize">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="31"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/1e792/730B/1FF8/5586c9af3cde" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>size of status list for text messages with confirmation</comment>
+						</ed:Constant>
+					</pragmas>
+				</Constant>
+				<Constant name="cFreeTestStatusElement">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="DMI_TXT_MSG_status_T"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="valid">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="dmi_textMessageID">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="timeStamp">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="textReport">
+									<flow>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+											</path>
+										</IdExpression>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="context">
+									<flow>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="con_undefined"/>
+											</path>
+										</IdExpression>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="nid_textmessage">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="whichLevel">
+									<flow>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="M_LEVEL_Level_0"/>
+											</path>
+										</IdExpression>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="whichMode">
+									<flow>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="M_MODE_Full_Supervision"/>
+											</path>
+										</IdExpression>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/1e7a5/3615/204/558804f9231c"/>
+					</pragmas>
+				</Constant>
+				<Constant name="cEmptyTestStatusList">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="DMI_TXT_MSGList_status_T"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<!-- [{valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_... -->
+						<DataArrayOp>
+							<data>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+								<!-- {valid : false, dmi_textMessageID : 0, timeStamp : 0, textReport : Q_TEXTREPORT_N... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="dmi_textMessageID">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="timeStamp">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="textReport">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_TEXTREPORT_No_driver_acknowledgement_report_required"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="context">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="con_undefined"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_textmessage">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichLevel">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_LEVEL_Level_0"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="whichMode">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M_MODE_Full_Supervision"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+							</data>
+						</DataArrayOp>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/1e7e2/7D1B/167C/558aa4a6a43"/>
+					</pragmas>
+				</Constant>
+				<Type name="NID_STM">
+					<definition>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13df1/77E9/1E10/54c8d61f4970" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>See §6.2.2 of DMI document</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="M_SUPERVISION_STATUS">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="CSM">
+									<pragmas>
+										<ed:Value oid="!ed/13ddb/77E9/1E10/54c8d61f7312" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Ceiling Speed Monitoring</comment>
+										</ed:Value>
+									</pragmas>
+								</Value>
+								<Value name="PIM">
+									<pragmas>
+										<ed:Value oid="!ed/13ddc/77E9/1E10/54c8d61f448d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>??Taken from Spec??</comment>
+										</ed:Value>
+									</pragmas>
+								</Value>
+								<Value name="TSM">
+									<pragmas>
+										<ed:Value oid="!ed/13ddd/77E9/1E10/54c8d61f1224" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Target Speed Monitoring</comment>
+										</ed:Value>
+									</pragmas>
+								</Value>
+								<Value name="RSM">
+									<pragmas>
+										<ed:Value oid="!ed/13dde/77E9/1E10/54c8d61f2539" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Release Speed Monitoring</comment>
+										</ed:Value>
+									</pragmas>
+								</Value>
+								<Value name="supervision_status_unknown">
+									<pragmas>
+										<ed:Value oid="!ed/13ddf/77E9/1E10/54c8d61f72a0"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13dda/77E9/1E10/54c8d61f1a61" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Supervision Status</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="DMI_vMax_id_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="number">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13dcc/77E9/1E10/54c8d61f2e17" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Number ofvalid  digits in the id</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="dig1">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="BCD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13dcd/77E9/1E10/54c8d61f48b9" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Digit</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="dig2">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="BCD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13dce/77E9/1E10/54c8d61f1ee5" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Digit</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="dig3">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="BCD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13dcf/77E9/1E10/54c8d61f485b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Digit</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13dcb/77E9/1E10/54c8d61f26fb" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Max permitted speed for the train as shown on the DMI</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="DMI_train_length_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="number">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13db2/77E9/1E10/54c8d61f3e56" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Number ofvalid  digits in the id</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="dig1">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="BCD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13db3/77E9/1E10/54c8d61f5eeb" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Digit</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="dig2">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="BCD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13db4/77E9/1E10/54c8d61f4f5c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Digit</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="dig3">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="BCD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13db5/77E9/1E10/54c8d61f62a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Digit</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="dig4">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="BCD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13db6/77E9/1E10/54c8d61fd4f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Digit</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13db1/77E9/1E10/54c8d61f2081" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>The length of the train as shown at the DMI</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="DMI_train_id_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="number">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13d9d/77E9/1E10/54c8d61f757f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Number ofvalid  digits in the id</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="dig1">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="BCD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13d9e/77E9/1E10/54c8d61f3d33" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Digit</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="dig2">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="BCD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13d9f/77E9/1E10/54c8d61f5091" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Digit</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="dig3">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="BCD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13da0/77E9/1E10/54c8d61f7879" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Digit</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="dig4">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="BCD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13da1/77E9/1E10/54c8d61f3668" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Digit</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="dig5">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="BCD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13da2/77E9/1E10/54c8d61f898" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Digit</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13d9c/77E9/1E10/54c8d61f2651" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>The train id as entered at the DMI</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="DMI_trackConditionElement_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="d_trackcond">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_TRACKCOND"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13d82/77E9/1E10/54c8d61f3608" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Position,  in  absolute  odometer</comment>
+											<comment>co-ordinates, of the start location of  a  point  where  an announcement  of  a  track condition must be shown on the DMI.</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="m_trackcond">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_TRACKCOND"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13d83/77E9/1E10/54c8d61fd98" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Type of track condition</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13d81/77E9/1E10/54c8d61f6ba1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>An element of the track-condition profile </comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="DMI_trackConditionArray_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="DMI_trackConditionElement_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cDMI_maxTrackCondProfile"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13d77/77E9/1E10/54c8d61f3d19" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Track-Condition Profile for use in DMI Interface</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="DMI_trackCondition_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="nIter">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13d6f/77E9/1E10/54c8d61f3775" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>number of </comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="trackCondition">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="DMI_trackConditionArray_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13d70/77E9/1E10/54c8d61f4a81" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Position,  in  absolute  odometer</comment>
+											<comment>co-ordinates, without tolerance correction, of the start location of a speed discontinuity in the most restrictive static speed profile</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13d6e/77E9/1E10/54c8d61f4d61" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Speed Profile for Display at DMI</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="DMI_SR_Data_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13d65/77E9/1E10/54c8d61f1bb9" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Valid indicator for the packet</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13d64/77E9/1E10/54c8d61f7bd7" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>DMI &lt;-&gt; EVC: Default or Entered Staff Responsible Data</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="DMI_speedProfileElement_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/e3482/418A/1AE8/55ae9f22f0b"/>
+									</pragmas>
+								</Field>
+								<Field name="Loc_Abs">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::L_internal_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/e3489/418A/1AE8/55ae9f3b566f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Safe Distance from Origin</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="Loc_LRBG">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::L_internal_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/e3490/418A/1AE8/55ae9f5b40b8" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Safe Distance from LRBG</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="MRS">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::V_internal_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/e3497/418A/1AE8/55ae9f6f876" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Most Restrictive Speed, for head of train (compensated for train length)</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13d5b/77E9/1E10/54c8d61f6bce" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>An element of the speed profile </comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="DMI_SpeedProfileArray_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="DMI_speedProfileElement_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cDMI_maxSpeedProfile"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13d51/77E9/1E10/54c8d61f44f2" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Speed Profile for use in DMI Interface</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="DMI_speedProfile_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="profileChanged">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13d49/77E9/1E10/54c8d61f2ab2" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>the profile has been changed</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="speedProfiles">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="DMI_SpeedProfileArray_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13d4a/77E9/1E10/54c8d61f7404" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Position,  in  absolute  odometer</comment>
+											<comment>co-ordinates, without tolerance correction, of the start location of a speed discontinuity in the most restrictive static speed profile</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13d48/77E9/1E10/54c8d61f1266" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Speed Profile for Display at DMI</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="DMI_mAxleLoad_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="number">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13d3c/77E9/1E10/54c8d61f2971" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Number ofvalid  digits in the id</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="dig1">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="BCD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13d3d/77E9/1E10/54c8d61f3c7b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Axle Load in 0,5 tons (tens, before</comment>
+											<comment>decimal pt.)</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="dig2">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="BCD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13d3e/77E9/1E10/54c8d61f12e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Axle Load in 0,5 tons (ones, before</comment>
+											<comment>decimal pt.)</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="dig3">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="BCD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13d3f/77E9/1E10/54c8d61f1bcf" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Axle  Load in  0,5  tons (hundredth,</comment>
+											<comment>after decimal pt.)</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13d3b/77E9/1E10/54c8d61f6e71" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Maximum axle load for the train</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="DMI_loadingGauge_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="number">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13d2b/77E9/1E10/54c8d61f32c6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Number o fvalid  digits in the id</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="dig1">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="BCD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13d2c/77E9/1E10/54c8d61f6555" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Digit</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="dig2">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="BCD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13d2d/77E9/1E10/54c8d61f7120" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Digit</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="dig3">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="BCD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13d2e/77E9/1E10/54c8d61f214b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Digit</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13d2a/77E9/1E10/54c8d61f1cd3" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Loading Gauge</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="DMI_LevelList_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="number">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1df1d/1D44/D28/557ed05f607b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>number of levels in the list</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="levelList">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="DMI_level_array_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13d1d/77E9/1E10/54c8d61f5e82"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13d1c/77E9/1E10/54c8d61f3e15" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>List of active levels. In case of level = STM also the NID_STM is to be used</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="DMI_level_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="level">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_LEVEL"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13d13/77E9/1E10/54c8d61f4ebb" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>active level</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="nid_stm">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_STM"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13d14/77E9/1E10/54c8d61f38fb" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>only relevant when level is stm</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13d12/77E9/1E10/54c8d61f119d"/>
+					</pragmas>
+				</Type>
+				<Type name="DMI_level_array_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="DMI_level_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cDMI_maxLevels"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13d08/77E9/1E10/54c8d61f69cc"/>
+					</pragmas>
+				</Type>
+				<Type name="DMI_gradientProfileElement_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/e349d/418A/1AE8/55ae9fdd4510"/>
+									</pragmas>
+								</Field>
+								<Field name="begin_section">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::L_internal_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/e34a4/418A/1AE8/55ae9fee1eeb"/>
+									</pragmas>
+								</Field>
+								<Field name="end_section">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::L_internal_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/e34ab/418A/1AE8/55aea0005ca0"/>
+									</pragmas>
+								</Field>
+								<Field name="gradient">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::G_internal_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/e34b2/418A/1AE8/55aea03c128a"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13cfe/77E9/1E10/54c8d61f6810" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>An element of the gradient profile </comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="DMI_gradientProfileArray_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="DMI_gradientProfileElement_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cDMI_maxGradientProfile"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13cf2/77E9/1E10/54c8d61f7999" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Speed Profile for use in DMI Interface</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="DMI_gradientProfile_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="profileChanged">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cea/77E9/1E10/54c8d61f7c39" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>The data have been changed</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="gradientProfiles">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="DMI_gradientProfileArray_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13ceb/77E9/1E10/54c8d61f7784" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Position,  in  absolute  odometer</comment>
+											<comment>co-ordinates, without tolerance correction, of the start location of a speed discontinuity in the most restrictive static speed profile</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13ce9/77E9/1E10/54c8d61f7f59" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Speed Profile for Display at DMI</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="DMI_brakeModel_id_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="number">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cd5/77E9/1E10/54c8d61f123b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Number o fvalid  digits in the id</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="dig1">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="BCD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cd6/77E9/1E10/54c8d61fdd3" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Digit</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="dig2">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="BCD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cd7/77E9/1E10/54c8d61f73b2" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Digit</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="dig3">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="BCD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cd8/77E9/1E10/54c8d61f338d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Digit</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13cd4/77E9/1E10/54c8d61f55b4"/>
+					</pragmas>
+				</Type>
+				<Type name="DMI_airtightSystem_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="number">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cc4/77E9/1E10/54c8d61f10bc" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Number ofvalid  digits in the id</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="dig1">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="BCD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cc5/77E9/1E10/54c8d61f557d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Digit</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="dig2">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="BCD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cc6/77E9/1E10/54c8d61f7dff" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Digit</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="dig3">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="BCD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cc7/77E9/1E10/54c8d61f3057" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Digit</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13cc3/77E9/1E10/54c8d61f4f86" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Train fitted with airtight system</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="BCD">
+					<definition>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13cae/77E9/1E10/54c8d61f3668" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Binary Coded Digit (Range 0..9)</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="DMI_StatusSet_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="Running_state">
+									<pragmas>
+										<ed:Value oid="!ed/13d73/7DB/31C/54c8e2782f0f"/>
+									</pragmas>
+								</Value>
+								<Value name="Starting_state">
+									<pragmas>
+										<ed:Value oid="!ed/13d74/7DB/31C/54c8e2785fa5"/>
+									</pragmas>
+								</Value>
+								<Value name="Failure_state">
+									<pragmas>
+										<ed:Value oid="!ed/13d75/7DB/31C/54c8e27832d5"/>
+									</pragmas>
+								</Value>
+								<Value name="Running_not_active_state">
+									<pragmas>
+										<ed:Value oid="!ed/13d76/7DB/31C/54c8e2784fdc"/>
+									</pragmas>
+								</Value>
+								<Value name="Train_Speed_Overflow">
+									<pragmas>
+										<ed:Value oid="!ed/13d77/7DB/31C/54c8e27824b0"/>
+									</pragmas>
+								</Value>
+								<Value name="Invalid_track_condition">
+									<pragmas>
+										<ed:Value oid="!ed/13d78/7DB/31C/54c8e278136d"/>
+									</pragmas>
+								</Value>
+								<Value name="Invalid_predefined_text_message">
+									<pragmas>
+										<ed:Value oid="!ed/13d79/7DB/31C/54c8e2786cb8"/>
+									</pragmas>
+								</Value>
+								<Value name="Invalid_text_message">
+									<pragmas>
+										<ed:Value oid="!ed/13d7a/7DB/31C/54c8e27868bd"/>
+									</pragmas>
+								</Value>
+								<Value name="HW_warning_temp_reached">
+									<pragmas>
+										<ed:Value oid="!ed/13d7b/7DB/31C/54c8e27833ad"/>
+									</pragmas>
+								</Value>
+								<Value name="TFT_OFF_temp_reached">
+									<pragmas>
+										<ed:Value oid="!ed/13d7c/7DB/31C/54c8e27851d3"/>
+									</pragmas>
+								</Value>
+								<Value name="Device_OFF_temp_reached">
+									<pragmas>
+										<ed:Value oid="!ed/13d7d/7DB/31C/54c8e2786b1"/>
+									</pragmas>
+								</Value>
+								<Value name="Over_temperature">
+									<pragmas>
+										<ed:Value oid="!ed/13d7e/7DB/31C/54c8e2785596"/>
+									</pragmas>
+								</Value>
+								<Value name="Backlight_on_off">
+									<pragmas>
+										<ed:Value oid="!ed/13d7f/7DB/31C/54c8e278e18"/>
+									</pragmas>
+								</Value>
+								<Value name="FAN_blocked">
+									<pragmas>
+										<ed:Value oid="!ed/13d80/7DB/31C/54c8e2786bf1"/>
+									</pragmas>
+								</Value>
+								<Value name="Power_supply_key_switch_off">
+									<pragmas>
+										<ed:Value oid="!ed/13d81/7DB/31C/54c8e278177e"/>
+									</pragmas>
+								</Value>
+								<Value name="Watchdog_not_running">
+									<pragmas>
+										<ed:Value oid="!ed/13d82/7DB/31C/54c8e27873fd"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13d72/7DB/31C/54c8e27811c8"/>
+					</pragmas>
+				</Type>
+				<Type name="DMI_Request_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="Start_of_mission">
+									<pragmas>
+										<ed:Value oid="!ed/13d37/7DB/31C/54c8e2784e2f"/>
+									</pragmas>
+								</Value>
+								<Value name="Shunting_entry">
+									<pragmas>
+										<ed:Value oid="!ed/13d38/7DB/31C/54c8e27856ac"/>
+									</pragmas>
+								</Value>
+								<Value name="Shunting_exit">
+									<pragmas>
+										<ed:Value oid="!ed/13d39/7DB/31C/54c8e278fcb"/>
+									</pragmas>
+								</Value>
+								<Value name="Non_leading">
+									<pragmas>
+										<ed:Value oid="!ed/13d3a/7DB/31C/54c8e2783519"/>
+									</pragmas>
+								</Value>
+								<Value name="Non_leading_exit">
+									<pragmas>
+										<ed:Value oid="!ed/13d3b/7DB/31C/54c8e27839e0"/>
+									</pragmas>
+								</Value>
+								<Value name="Maintain_shunting">
+									<pragmas>
+										<ed:Value oid="!ed/13d3c/7DB/31C/54c8e2785966"/>
+									</pragmas>
+								</Value>
+								<Value name="Level_entry_request">
+									<pragmas>
+										<ed:Value oid="!ed/13d3d/7DB/31C/54c8e278d76"/>
+									</pragmas>
+								</Value>
+								<Value name="Override_EOA">
+									<pragmas>
+										<ed:Value oid="!ed/13d3e/7DB/31C/54c8e27824ca"/>
+									</pragmas>
+								</Value>
+								<Value name="Override_route_unsuitability">
+									<pragmas>
+										<ed:Value oid="!ed/13d3f/7DB/31C/54c8e27841f3"/>
+									</pragmas>
+								</Value>
+								<Value name="Request_for_radio_network_entry">
+									<pragmas>
+										<ed:Value oid="!ed/13d40/7DB/31C/54c8e2787fa"/>
+									</pragmas>
+								</Value>
+								<Value name="Request_for_train_data">
+									<pragmas>
+										<ed:Value oid="!ed/13d41/7DB/31C/54c8e2784890"/>
+									</pragmas>
+								</Value>
+								<Value name="Request_for_Adhesion_factor_data">
+									<pragmas>
+										<ed:Value oid="!ed/13d42/7DB/31C/54c8e2784d38"/>
+									</pragmas>
+								</Value>
+								<Value name="Request_for_SR_data">
+									<pragmas>
+										<ed:Value oid="!ed/13d43/7DB/31C/54c8e27830b4"/>
+									</pragmas>
+								</Value>
+								<Value name="Request_for_system_version">
+									<pragmas>
+										<ed:Value oid="!ed/13d44/7DB/31C/54c8e27823d5"/>
+									</pragmas>
+								</Value>
+								<Value name="Request_for_switching_train_data_entry">
+									<pragmas>
+										<ed:Value oid="!ed/13d45/7DB/31C/54c8e2785be4"/>
+									</pragmas>
+								</Value>
+								<Value name="Request_for_train_data_view">
+									<pragmas>
+										<ed:Value oid="!ed/13d46/7DB/31C/54c8e278d4"/>
+									</pragmas>
+								</Value>
+								<Value name="Request_to_show_geographical_position">
+									<pragmas>
+										<ed:Value oid="!ed/13d47/7DB/31C/54c8e2786662"/>
+									</pragmas>
+								</Value>
+								<Value name="Language_changed">
+									<pragmas>
+										<ed:Value oid="!ed/13d48/7DB/31C/54c8e278458c"/>
+									</pragmas>
+								</Value>
+								<Value name="Train_data_entry_aborted">
+									<pragmas>
+										<ed:Value oid="!ed/13d49/7DB/31C/54c8e27811bf"/>
+									</pragmas>
+								</Value>
+								<Value name="Train_running_number_entry_aborted">
+									<pragmas>
+										<ed:Value oid="!ed/13d4a/7DB/31C/54c8e2786481"/>
+									</pragmas>
+								</Value>
+								<Value name="SR_data_entry_aborted">
+									<pragmas>
+										<ed:Value oid="!ed/13d4b/7DB/31C/54c8e27828e0"/>
+									</pragmas>
+								</Value>
+								<Value name="Radio_network_entry_aborted">
+									<pragmas>
+										<ed:Value oid="!ed/13d4c/7DB/31C/54c8e2783dc3"/>
+									</pragmas>
+								</Value>
+								<Value name="Request_to_hide_geographical_information">
+									<pragmas>
+										<ed:Value oid="!ed/13d4d/7DB/31C/54c8e2785149"/>
+									</pragmas>
+								</Value>
+								<Value name="Request_to_show_supervision_data">
+									<pragmas>
+										<ed:Value oid="!ed/13d4e/7DB/31C/54c8e278779a"/>
+									</pragmas>
+								</Value>
+								<Value name="Request_to_hide_supervision_data">
+									<pragmas>
+										<ed:Value oid="!ed/13d4f/7DB/31C/54c8e2781bad"/>
+									</pragmas>
+								</Value>
+								<Value name="Scroll_text_up">
+									<pragmas>
+										<ed:Value oid="!ed/13d50/7DB/31C/54c8e2787d4d"/>
+									</pragmas>
+								</Value>
+								<Value name="Scroll_text_down">
+									<pragmas>
+										<ed:Value oid="!ed/13d51/7DB/31C/54c8e2787614"/>
+									</pragmas>
+								</Value>
+								<Value name="Request_to_contact_last_known_RBC">
+									<pragmas>
+										<ed:Value oid="!ed/13d52/7DB/31C/54c8e2785d37"/>
+									</pragmas>
+								</Value>
+								<Value name="Request_to_use_short_number">
+									<pragmas>
+										<ed:Value oid="!ed/13d53/7DB/31C/54c8e2787416"/>
+									</pragmas>
+								</Value>
+								<Value name="Request_isolation">
+									<pragmas>
+										<ed:Value oid="!ed/13d54/7DB/31C/54c8e2784895"/>
+									</pragmas>
+								</Value>
+								<Value name="Track_Ahead_Free_is_validated">
+									<pragmas>
+										<ed:Value oid="!ed/13d55/7DB/31C/54c8e27845f6"/>
+									</pragmas>
+								</Value>
+								<Value name="The_Train_Integrity_request">
+									<pragmas>
+										<ed:Value oid="!ed/13d56/7DB/31C/54c8e2784aac"/>
+									</pragmas>
+								</Value>
+								<Value name="Set_VBC_request">
+									<pragmas>
+										<ed:Value oid="!ed/13d57/7DB/31C/54c8e2783daa"/>
+									</pragmas>
+								</Value>
+								<Value name="Remove_VBC_request">
+									<pragmas>
+										<ed:Value oid="!ed/13d58/7DB/31C/54c8e2783a3c"/>
+									</pragmas>
+								</Value>
+								<Value name="Show_tunnel_stopping_information">
+									<pragmas>
+										<ed:Value oid="!ed/13d59/7DB/31C/54c8e2787914"/>
+									</pragmas>
+								</Value>
+								<Value name="Hide_tunnel_stopping_information">
+									<pragmas>
+										<ed:Value oid="!ed/13d5a/7DB/31C/54c8e2783f53"/>
+									</pragmas>
+								</Value>
+								<Value name="NTC_data_entry_request">
+									<pragmas>
+										<ed:Value oid="!ed/13d5b/7DB/31C/54c8e27842ef"/>
+									</pragmas>
+								</Value>
+								<Value name="End_of_NTC_data_entry">
+									<pragmas>
+										<ed:Value oid="!ed/13d5c/7DB/31C/54c8e2785903"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13d36/7DB/31C/54c8e2781364"/>
+					</pragmas>
+				</Type>
+				<Type name="DMI_List_Entry_Request_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="Enter_revalidate_driver_identifier">
+									<pragmas>
+										<ed:Value oid="!ed/13cfc/7DB/31C/54c8e2782aa5"/>
+									</pragmas>
+								</Value>
+								<Value name="Enter_revalidate_train_running_number">
+									<pragmas>
+										<ed:Value oid="!ed/13cfd/7DB/31C/54c8e2787439"/>
+									</pragmas>
+								</Value>
+								<Value name="Enter_revalidate_ETCS_level">
+									<pragmas>
+										<ed:Value oid="!ed/13cfe/7DB/31C/54c8e2781d03"/>
+									</pragmas>
+								</Value>
+								<Value name="Enter_RBC_contact_menu">
+									<pragmas>
+										<ed:Value oid="!ed/13cff/7DB/31C/54c8e2781fbe"/>
+									</pragmas>
+								</Value>
+								<Value name="Validate_train_data">
+									<pragmas>
+										<ed:Value oid="!ed/13d00/7DB/31C/54c8e2783733"/>
+									</pragmas>
+								</Value>
+								<Value name="Enter_NTC_data">
+									<pragmas>
+										<ed:Value oid="!ed/13d01/7DB/31C/54c8e278d15"/>
+									</pragmas>
+								</Value>
+								<Value name="Spare">
+									<pragmas>
+										<ed:Value oid="!ed/13d02/7DB/31C/54c8e27851d"/>
+									</pragmas>
+								</Value>
+								<Value name="Enable_the_track_ahead_free_by_the_driver">
+									<pragmas>
+										<ed:Value oid="!ed/13d03/7DB/31C/54c8e2784ad"/>
+									</pragmas>
+								</Value>
+								<Value name="Disable_the_Track_Ahead_free_page">
+									<pragmas>
+										<ed:Value oid="!ed/13d04/7DB/31C/54c8e27810f6"/>
+									</pragmas>
+								</Value>
+								<Value name="Show_main_window">
+									<pragmas>
+										<ed:Value oid="!ed/13d05/7DB/31C/54c8e2784560"/>
+									</pragmas>
+								</Value>
+								<Value name="Hide_main_window">
+									<pragmas>
+										<ed:Value oid="!ed/13d06/7DB/31C/54c8e2786dc0"/>
+									</pragmas>
+								</Value>
+								<Value name="Hide_adhesion_factor_entry_window">
+									<pragmas>
+										<ed:Value oid="!ed/13d07/7DB/31C/54c8e2786f75"/>
+									</pragmas>
+								</Value>
+								<Value name="Hide_staff_responsible_entry_window">
+									<pragmas>
+										<ed:Value oid="!ed/13d08/7DB/31C/54c8e27856cf"/>
+									</pragmas>
+								</Value>
+								<Value name="Show_Set_VBC_validation_window">
+									<pragmas>
+										<ed:Value oid="!ed/13d09/7DB/31C/54c8e278487"/>
+									</pragmas>
+								</Value>
+								<Value name="Show_Remove_VBC_validation_window">
+									<pragmas>
+										<ed:Value oid="!ed/13d0a/7DB/31C/54c8e278147c"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13cfb/7DB/31C/54c8e2783d2e"/>
+					</pragmas>
+				</Type>
+				<Type name="DMI_Available_Menu_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="Menu_button_start_of_mission">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cc9/7DB/31C/54c8e2786129"/>
+									</pragmas>
+								</Field>
+								<Field name="Menu_button_shunting">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cca/7DB/31C/54c8e2783fe8"/>
+									</pragmas>
+								</Field>
+								<Field name="Menu_button_shunting_exit">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13ccb/7DB/31C/54c8e27851b7"/>
+									</pragmas>
+								</Field>
+								<Field name="Menu_button_non_leading">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13ccc/7DB/31C/54c8e2784a12"/>
+									</pragmas>
+								</Field>
+								<Field name="Menu_button_exit_non_leading">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13ccd/7DB/31C/54c8e2786fda"/>
+									</pragmas>
+								</Field>
+								<Field name="Menu_button_maintain_shunting">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cce/7DB/31C/54c8e278496b"/>
+									</pragmas>
+								</Field>
+								<Field name="Menu_button_driver_ID">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13ccf/7DB/31C/54c8e27835a8"/>
+									</pragmas>
+								</Field>
+								<Field name="Menu_button_train_running_number">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cd0/7DB/31C/54c8e2783912"/>
+									</pragmas>
+								</Field>
+								<Field name="Menu_button_ETCS_level">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cd1/7DB/31C/54c8e2787da3"/>
+									</pragmas>
+								</Field>
+								<Field name="Menu_button_train_data_modification">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cd2/7DB/31C/54c8e278df1"/>
+									</pragmas>
+								</Field>
+								<Field name="Menu_button_train_data_view">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cd3/7DB/31C/54c8e27823b6"/>
+									</pragmas>
+								</Field>
+								<Field name="Menu_button_staff_responsible_data">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cd4/7DB/31C/54c8e2782c4b"/>
+									</pragmas>
+								</Field>
+								<Field name="Menu_button_language_selection">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cd5/7DB/31C/54c8e2781b0f"/>
+									</pragmas>
+								</Field>
+								<Field name="Menu_button_override_EOA">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cd6/7DB/31C/54c8e27842a7"/>
+									</pragmas>
+								</Field>
+								<Field name="Menu_button_override_route_suitability">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cd7/7DB/31C/54c8e2787e8"/>
+									</pragmas>
+								</Field>
+								<Field name="Menu_button_adhesion_factor">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cd8/7DB/31C/54c8e2787cf8"/>
+									</pragmas>
+								</Field>
+								<Field name="Menu_button_system_version">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cd9/7DB/31C/54c8e278247d"/>
+									</pragmas>
+								</Field>
+								<Field name="Menu_button_volume">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cda/7DB/31C/54c8e2785a3e"/>
+									</pragmas>
+								</Field>
+								<Field name="Menu_button_luminance">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cdb/7DB/31C/54c8e27832bc"/>
+									</pragmas>
+								</Field>
+								<Field name="Menu_button_train_integrity">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cdc/7DB/31C/54c8e2787ff0"/>
+									</pragmas>
+								</Field>
+								<Field name="Menu_button_isolation">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cdd/7DB/31C/54c8e278876"/>
+									</pragmas>
+								</Field>
+								<Field name="Show_hourglass">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cde/7DB/31C/54c8e2781ee"/>
+									</pragmas>
+								</Field>
+								<Field name="Menu_button_use_short_number">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13cdf/7DB/31C/54c8e278721a"/>
+									</pragmas>
+								</Field>
+								<Field name="Menu_button_enter_RBC_data">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13ce0/7DB/31C/54c8e278acd"/>
+									</pragmas>
+								</Field>
+								<Field name="Menu_button_radio_network_ID">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13ce1/7DB/31C/54c8e278483e"/>
+									</pragmas>
+								</Field>
+								<Field name="Menu_button_contact_last_RBC">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13ce2/7DB/31C/54c8e2786fbb"/>
+									</pragmas>
+								</Field>
+								<Field name="Button_switch_for_train_data">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13ce3/7DB/31C/54c8e2783687"/>
+									</pragmas>
+								</Field>
+								<Field name="Fix_train_data_entry">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13ce4/7DB/31C/54c8e278544d"/>
+									</pragmas>
+								</Field>
+								<Field name="Menu_button_Set_VBC">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13ce5/7DB/31C/54c8e27866a9"/>
+									</pragmas>
+								</Field>
+								<Field name="Menu_button_Remove_VBC">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13ce6/7DB/31C/54c8e27865f7"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13cc8/7DB/31C/54c8e27813c8"/>
+					</pragmas>
+				</Type>
+				<Type name="M_BRAKEPERCT">
+					<definition>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/3b653/2D0B/E1C/54c8ee531e3e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Braking Percentage. </comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="NID_DRIVER">
+					<definition>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/4f364/2D0B/E1C/54c8f5f87419" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Driver Identifier Number. (BCD)</comment>
+							<comment>It consists of up to 8 digits which</comment>
+							<comment>are entered left adjusted into the data field, the leftmost digit is the digit to be entered first. In case the</comment>
+							<comment>number is shorter than 8 digits, the remaining space is to be filled with special character</comment>
+							<comment>“F”.</comment>
+							<comment>Length of variable Minimum Value</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="DMI_DMI_Identifier_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="DMI_1">
+									<pragmas>
+										<ed:Value oid="!ed/3bc62/273B/1120/54ca0ab3467b"/>
+									</pragmas>
+								</Value>
+								<Value name="DMI_2">
+									<pragmas>
+										<ed:Value oid="!ed/3bc69/273B/1120/54ca0acd5fa8"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/3bc61/273B/1120/54ca0a0d422d"/>
+					</pragmas>
+				</Type>
+				<Type name="DMI_Cabin_Identifier_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="cabin_A">
+									<pragmas>
+										<ed:Value oid="!ed/3bc72/273B/1120/54ca0ad81d4"/>
+									</pragmas>
+								</Value>
+								<Value name="cabin_B">
+									<pragmas>
+										<ed:Value oid="!ed/3bc73/273B/1120/54ca0ad87549"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/3bc71/273B/1120/54ca0ad8352a"/>
+					</pragmas>
+				</Type>
+				<Type name="DMI_EVC_status_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="DMI_Active">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/29346/5770/1564/54e5a7895823" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>DMI is powered up and has sent a signal</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="DMI_Error">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/29347/5770/1564/54e5a7896d59" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>DMI Interface is not working</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="DMI_DriverIdValidated">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/292ce/11C0/1520/54e5fe366f66" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>DMI Driver Idetifier is validated</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="DMI_LevelSelectedByDirver">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1df16/4536/1694/558437767c80" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>DMI Driver has selected the level </comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="DMI_TrainRunningNumberFirstValidation">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/29349/5770/1564/54e5a789227" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>DMI Train Identification is performed.</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="DMI_TrainRunningNumberValidated">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/292d5/11C0/1520/54e5fe776620" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>DMI Train Identification is performed. Id has been validated.</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="DMI_TrainDataValidated">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/29391/49D6/1124/54e6e9c15d84" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>DMI Start (of Mission ) acknowledged by the driver start button.</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="DMI_StartReceived">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/293ac/2850/DA0/54e6ef6b1d05" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>DMI Start (of Mission ) acknowledged by the driver start button.</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="DMI_Identifier">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="DMI_Messages_DMI_to_EVC_Pkg::DMI_Identifier_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/292e4/11C0/1520/54e5feda7040" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>DMI Train Identification is performed. Id has been validated.</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/29345/5770/1564/54e5a7892dda" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>This output is always present</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="DMI_Q_TEXT">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="balise_read_error">
+									<pragmas>
+										<ed:Value oid="!ed/2ea65/4DAD/FFC/54e6080f111e"/>
+									</pragmas>
+								</Value>
+								<Value name="communication_error">
+									<pragmas>
+										<ed:Value oid="!ed/2ea66/4DAD/FFC/54e6080f2056"/>
+									</pragmas>
+								</Value>
+								<Value name="entering_FS">
+									<pragmas>
+										<ed:Value oid="!ed/2ea67/4DAD/FFC/54e6080f72e7"/>
+									</pragmas>
+								</Value>
+								<Value name="entering_OS">
+									<pragmas>
+										<ed:Value oid="!ed/2ea68/4DAD/FFC/54e6080f64fc"/>
+									</pragmas>
+								</Value>
+								<Value name="no_track_condition_will_be_received">
+									<pragmas>
+										<ed:Value oid="!ed/2ea69/4DAD/FFC/54e6080f5213"/>
+									</pragmas>
+								</Value>
+								<Value name="runaway_movement">
+									<pragmas>
+										<ed:Value oid="!ed/2ea6a/4DAD/FFC/54e6080f7eb8"/>
+									</pragmas>
+								</Value>
+								<Value name="SH_refused">
+									<pragmas>
+										<ed:Value oid="!ed/2ea6b/4DAD/FFC/54e6080f2336"/>
+									</pragmas>
+								</Value>
+								<Value name="trackside_not_compatible">
+									<pragmas>
+										<ed:Value oid="!ed/2ea6c/4DAD/FFC/54e6080f63e8"/>
+									</pragmas>
+								</Value>
+								<Value name="train_data_changed">
+									<pragmas>
+										<ed:Value oid="!ed/2ea6d/4DAD/FFC/54e6080f4f03"/>
+									</pragmas>
+								</Value>
+								<Value name="train_is_rejected">
+									<pragmas>
+										<ed:Value oid="!ed/2ea6e/4DAD/FFC/54e6080f1f0e"/>
+									</pragmas>
+								</Value>
+								<Value name="unauthorized_passing_of_EOA_LOA">
+									<pragmas>
+										<ed:Value oid="!ed/2ea6f/4DAD/FFC/54e6080f7009"/>
+									</pragmas>
+								</Value>
+								<Value name="no_MA_received_at_level_transition">
+									<pragmas>
+										<ed:Value oid="!ed/2ea70/4DAD/FFC/54e6080f1a31"/>
+									</pragmas>
+								</Value>
+								<Value name="SR_distance_exceeded">
+									<pragmas>
+										<ed:Value oid="!ed/2ea71/4DAD/FFC/54e6080f6321"/>
+									</pragmas>
+								</Value>
+								<Value name="SH_stop_order">
+									<pragmas>
+										<ed:Value oid="!ed/2ea72/4DAD/FFC/54e6080f1607"/>
+									</pragmas>
+								</Value>
+								<Value name="SR_stop_order">
+									<pragmas>
+										<ed:Value oid="!ed/2ea73/4DAD/FFC/54e6080f6860"/>
+									</pragmas>
+								</Value>
+								<Value name="emergency_stop">
+									<pragmas>
+										<ed:Value oid="!ed/2ea74/4DAD/FFC/54e6080f33a6"/>
+									</pragmas>
+								</Value>
+								<Value name="trackside_malfunction">
+									<pragmas>
+										<ed:Value oid="!ed/2ea75/4DAD/FFC/54e6080f408f"/>
+									</pragmas>
+								</Value>
+								<Value name="SH_request_failed">
+									<pragmas>
+										<ed:Value oid="!ed/2ea76/4DAD/FFC/54e6080f6c94"/>
+									</pragmas>
+								</Value>
+								<Value name="RV_distance_esceeded">
+									<pragmas>
+										<ed:Value oid="!ed/2ea77/4DAD/FFC/54e6080f5378"/>
+									</pragmas>
+								</Value>
+								<Value name="no_track_description">
+									<pragmas>
+										<ed:Value oid="!ed/2ea78/4DAD/FFC/54e6080f7464"/>
+									</pragmas>
+								</Value>
+								<Value name="STM_brake_Deman">
+									<pragmas>
+										<ed:Value oid="!ed/2ea79/4DAD/FFC/54e6080fd89"/>
+									</pragmas>
+								</Value>
+								<Value name="route_unsuitable_axle_load_category">
+									<pragmas>
+										<ed:Value oid="!ed/2ea7a/4DAD/FFC/54e6080f184c"/>
+									</pragmas>
+								</Value>
+								<Value name="route_unsuitable_loading_gauge">
+									<pragmas>
+										<ed:Value oid="!ed/2ea7b/4DAD/FFC/54e6080f579c"/>
+									</pragmas>
+								</Value>
+								<Value name="route_unsuitable_traction_system">
+									<pragmas>
+										<ed:Value oid="!ed/2ea7c/4DAD/FFC/54e6080f1454"/>
+									</pragmas>
+								</Value>
+								<Value name="radio_network_registration_failed">
+									<pragmas>
+										<ed:Value oid="!ed/2ea7d/4DAD/FFC/54e6080f61e1"/>
+									</pragmas>
+								</Value>
+								<Value name="level_crossing_not_protected">
+									<pragmas>
+										<ed:Value oid="!ed/2ea7e/4DAD/FFC/54e6080f530e"/>
+									</pragmas>
+								</Value>
+								<Value name="acknowledgment">
+									<pragmas>
+										<ed:Value oid="!ed/2ea7f/4DAD/FFC/54e6080f33e"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+					</pragmas>
+				</Type>
+				<Type name="DMI_TEXT">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="char"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cDMI_charsInText"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/3dc08/3E1F/180/54e72f157a9e"/>
+					</pragmas>
+				</Type>
+				<Type name="Icon_group_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="level_symbol">
+									<pragmas>
+										<ed:Value oid="!ed/2d39a/4329/12CC/54edd61a7f91"/>
+									</pragmas>
+								</Value>
+								<Value name="mode_symbols">
+									<pragmas>
+										<ed:Value oid="!ed/2d39b/4329/12CC/54edd61a6a8a"/>
+									</pragmas>
+								</Value>
+								<Value name="status_symbols">
+									<pragmas>
+										<ed:Value oid="!ed/2d39c/4329/12CC/54edd61a6c26"/>
+									</pragmas>
+								</Value>
+								<Value name="order_an_announcements_symbols">
+									<pragmas>
+										<ed:Value oid="!ed/2d39d/4329/12CC/54edd61a282a"/>
+									</pragmas>
+								</Value>
+								<Value name="planning_information_symbols">
+									<pragmas>
+										<ed:Value oid="!ed/2d39e/4329/12CC/54edd61a5841"/>
+									</pragmas>
+								</Value>
+								<Value name="navigation_symbols">
+									<pragmas>
+										<ed:Value oid="!ed/2d39f/4329/12CC/54edd61a6786"/>
+									</pragmas>
+								</Value>
+								<Value name="settings_symbols">
+									<pragmas>
+										<ed:Value oid="!ed/2d3a0/4329/12CC/54edd61a374c"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/2d399/4329/12CC/54edd61a75f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Id of the icon group as defined in ERA</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="Icon_control_flag_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="show_icon_in_area">
+									<pragmas>
+										<ed:Value oid="!ed/2d3ab/4329/12CC/54edd6246790"/>
+									</pragmas>
+								</Value>
+								<Value name="clear_area">
+									<pragmas>
+										<ed:Value oid="!ed/2d3ac/4329/12CC/54edd6242ca8"/>
+									</pragmas>
+								</Value>
+								<Value name="show_icon_flashing_in_area">
+									<pragmas>
+										<ed:Value oid="!ed/2d3ad/4329/12CC/54edd62460ea"/>
+									</pragmas>
+								</Value>
+								<Value name="show_icon_with_yellow_flashing_frame_in_area">
+									<pragmas>
+										<ed:Value oid="!ed/2d3ae/4329/12CC/54edd6245c38"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/2d3aa/4329/12CC/54edd6245cb7" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Control flag for the icon(s) display</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="Area_group_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="A">
+									<pragmas>
+										<ed:Value oid="!ed/2d41e/4329/12CC/54edd7be2bb2"/>
+									</pragmas>
+								</Value>
+								<Value name="B">
+									<pragmas>
+										<ed:Value oid="!ed/2d41f/4329/12CC/54edd7be61dc"/>
+									</pragmas>
+								</Value>
+								<Value name="C">
+									<pragmas>
+										<ed:Value oid="!ed/2d420/4329/12CC/54edd7be124a"/>
+									</pragmas>
+								</Value>
+								<Value name="D">
+									<pragmas>
+										<ed:Value oid="!ed/2d421/4329/12CC/54edd7be13ad"/>
+									</pragmas>
+								</Value>
+								<Value name="E">
+									<pragmas>
+										<ed:Value oid="!ed/2d422/4329/12CC/54edd7be7530"/>
+									</pragmas>
+								</Value>
+								<Value name="F">
+									<pragmas>
+										<ed:Value oid="!ed/2d423/4329/12CC/54edd7be68f"/>
+									</pragmas>
+								</Value>
+								<Value name="G">
+									<pragmas>
+										<ed:Value oid="!ed/2d424/4329/12CC/54edd7be3be8"/>
+									</pragmas>
+								</Value>
+								<Value name="H">
+									<pragmas>
+										<ed:Value oid="!ed/2d425/4329/12CC/54edd7be7def" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>softkeys only</comment>
+										</ed:Value>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/2d41d/4329/12CC/54edd7be23d5"/>
+					</pragmas>
+				</Type>
+				<Type name="M_SupervisionDisplay_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="supDis_normal">
+									<pragmas>
+										<ed:Value oid="!ed/2d5d9/5A05/534/54eecabe6f61"/>
+									</pragmas>
+								</Value>
+								<Value name="supDis_indication">
+									<pragmas>
+										<ed:Value oid="!ed/2d5e0/5A05/534/54eecb7a3157"/>
+									</pragmas>
+								</Value>
+								<Value name="supDis_overspeed">
+									<pragmas>
+										<ed:Value oid="!ed/2d5e7/5A05/534/54eecb7a36db"/>
+									</pragmas>
+								</Value>
+								<Value name="supDis_warning">
+									<pragmas>
+										<ed:Value oid="!ed/2d5ee/5A05/534/54eecb7b1b1b"/>
+									</pragmas>
+								</Value>
+								<Value name="supDis_intervention">
+									<pragmas>
+										<ed:Value oid="!ed/2d5f5/5A05/534/54eecb7c7c02"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/2d5d8/5A05/534/54eeca4c5f69" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>According to SRS Section 3.13.10.4.15</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="speedSupervisionForDMI_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2d64a/5A05/534/54eecc8a5818"/>
+									</pragmas>
+								</Field>
+								<Field name="targetSpeed">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::V_internal_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2d64b/5A05/534/54eecc8ab48"/>
+									</pragmas>
+								</Field>
+								<Field name="permittedSpeed">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::V_internal_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2d64c/5A05/534/54eecc8a5afc" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Permitted  speed  according  to  current</comment>
+											<comment>ATP rules</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="releaseSpeed">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::V_internal_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2d64d/5A05/534/54eecc8a3843" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Release speed at the EOA, shown when</comment>
+											<comment>release  speed  is  lower  than  permitted speed</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="locationBrakeTarget">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::L_internal_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2d64e/5A05/534/54eecc8a62b6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Position,   in   odometer   co-ordinates,</comment>
+											<comment>without tolerance correction, of the next brakeing target</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="location_brake_curve_starting_point">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::L_internal_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2d64f/5A05/534/54eecc8a663a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Position,   in   odometer   co-ordinates,</comment>
+											<comment>without tolerance correction, of the next brake starting point for the next brake target.</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="interventionSpeed">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::V_internal_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2d650/5A05/534/54eecc8a360a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Intervention speed</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="sup_status">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_SUPERVISION_STATUS"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2d651/5A05/534/54eecc8a4eb5" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Current supervision status</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="supervisionDisplay">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_SupervisionDisplay_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2d652/5A05/534/54eecc8a66d0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Warning</comment>
+											<comment>indicator</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="distanceIndicationPoint">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::L_internal_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1def7/325/158/557a7ec5781a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Distance to the indication Point</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/2d649/5A05/534/54eecc8a5c0"/>
+					</pragmas>
+				</Type>
+				<Type name="nationValuesForDMI_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2d630/5A05/534/54eecc8aed6"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_c">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_C"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2d631/5A05/534/54eecc8a10a8" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Country Id</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="nid_c_valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2d632/5A05/534/54eecc8a79f1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Tells whether the value of the country</comment>
+											<comment>Id (DMI_NID_C) is known or not. Unknown value of DMI_NID_C shall be ignored</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/2d62f/5A05/534/54eecc8a50cf"/>
+					</pragmas>
+				</Type>
+				<Type name="movementAuthorityForDMI_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2d623/5A05/534/54eecc8a3d79"/>
+									</pragmas>
+								</Field>
+								<Field name="location_LOA">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::L_internal_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2d624/5A05/534/54eecc8a2ffe" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Position,   in   absolute   odometer   co-</comment>
+											<comment>ordinates, without tolerance correction, of the limit of authority.</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="v_LOA">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::V_internal_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2d625/5A05/534/54eecc8a2200" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Speed at the Limit Of Authority</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/2d622/5A05/534/54eecc8af22"/>
+					</pragmas>
+				</Type>
+				<Type name="DMI_To_Modes_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a732/459/1440/54f439231127"/>
+									</pragmas>
+								</Field>
+								<Field name="DriverAck">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="DMI_DriverAck_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a733/459/1440/54f439232058"/>
+									</pragmas>
+								</Field>
+								<Field name="DriverRequest">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="DMI_DriverRequest_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a734/459/1440/54f4392374da"/>
+									</pragmas>
+								</Field>
+								<Field name="LevelAck">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a735/459/1440/54f439231241"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5a731/459/1440/54f43923741f"/>
+					</pragmas>
+				</Type>
+				<Type name="DMI_ModesToDMI_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a720/459/1440/54f4392351a5" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>This information is valid</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="whichMode">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_MODE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a721/459/1440/54f439231ee7" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Mode to acknowledge</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="SH_Req_RefusedByRBC">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a722/459/1440/54f439232f70"/>
+									</pragmas>
+								</Field>
+								<Field name="LevelNeedsAck">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a723/459/1440/54f439235c99"/>
+									</pragmas>
+								</Field>
+								<Field name="newLevel">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_LEVEL"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a724/459/1440/54f4392321bf"/>
+									</pragmas>
+								</Field>
+								<Field name="previousLevel">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_LEVEL"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a725/459/1440/54f43923719f"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5a71f/459/1440/54f4392331f0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>The driver actions to change modes are available here</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="DMI_DriverRequest_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a70a/459/1440/54f439236897" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>This information is valid</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="Req_Exit_SH">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a70b/459/1440/54f439235428"/>
+									</pragmas>
+								</Field>
+								<Field name="Req_NL">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a70c/459/1440/54f43923648a"/>
+									</pragmas>
+								</Field>
+								<Field name="Req_Override">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a70d/459/1440/54f439237553"/>
+									</pragmas>
+								</Field>
+								<Field name="Req_SH">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a70e/459/1440/54f43923b96"/>
+									</pragmas>
+								</Field>
+								<Field name="Req_Start">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a70f/459/1440/54f439233a5"/>
+									</pragmas>
+								</Field>
+								<Field name="ETCS_Isolated">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a710/459/1440/54f439236ce1"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5a709/459/1440/54f43923615a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>The driver actions to change modes are available here</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="DMI_DriverAck_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a6fa/459/1440/54f439231551" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>This information is valid</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="whichMode">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_MODE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a6fb/459/1440/54f439236a5e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Mode to acknowledge</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="acknowledgement">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a6fc/459/1440/54f4392313b5" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>The drivers response to the Ack request</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5a6f9/459/1440/54f439235f9e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>The driver actions to change modes are available here</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="DMI_TXT_MSG_status_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1e76a/2845/1A4/5586a23a945" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>the element is in use</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="dmi_textMessageID">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="DMI_TextMessage_ID_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1e773/730B/1FF8/5586c82313d4" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>unique identifier for the message</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="timeStamp">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::T_internal_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1e786/730B/1FF8/5586c88f116b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>indicates the time the text message has been received</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="textReport">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_TEXTREPORT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1e79e/729C/1790/5586d44e447d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>The message nees to be reported to the RBC after confirmation</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="context">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="DMI_context_TXT_MSG_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1e7ba/5BAB/121C/558a4eb850de"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_textmessage">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_TEXTMESSAGE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1e7a8/729C/1790/5586d4a751dd" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>The id to be used for identifacation of the mesaage in the report</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="whichLevel">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_LEVEL"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1e7a6/5BAB/121C/558a4e852319" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Only relevant for level changes</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="whichMode">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_MODE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1e7b0/5BAB/121C/558a4ea33003" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Only relevant for mode changes</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/1e769/2845/1A4/5586a2057481" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>When sending text messages to the DMI with with confirmation request the status of the message has to be stored in this list.</comment>
+							<comment>When receiving the drivers ackknowledment the message status is set to not valid.</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="DMI_TXT_MSGList_status_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="DMI_TXT_MSG_status_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cDMI_TextMsgListSize"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/1e791/730B/1FF8/5586c987d49" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Status List for text messages</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="DMI_TextMessage_ID_T">
+					<definition>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/1e77a/729C/1790/5586d0196324"/>
+					</pragmas>
+				</Type>
+				<Type name="DMI_context_TXT_MSG_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="con_undefined">
+									<pragmas>
+										<ed:Value oid="!ed/1e7a2/5BAB/121C/558a4d636933"/>
+									</pragmas>
+								</Value>
+								<Value name="con_levelMgmt">
+									<pragmas>
+										<ed:Value oid="!ed/1e7a3/5BAB/121C/558a4d7a47cc"/>
+									</pragmas>
+								</Value>
+								<Value name="con_modeChange">
+									<pragmas>
+										<ed:Value oid="!ed/1e7a4/5BAB/121C/558a4d8c456e"/>
+									</pragmas>
+								</Value>
+								<Value name="con_trackRequest">
+									<pragmas>
+										<ed:Value oid="!ed/1e7a5/5BAB/121C/558a4d9b4a72"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/1e7a1/5BAB/121C/558a4d1d10ad" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>For text messages different reasons are possible. This parameter keeps the context of the text message for proper allocation of a response tpo the request</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+			</declarations>
+			<pragmas>
+				<ed:Package oid="!ed/13ca5/77E9/1E10/54c8d5633867" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<diagrams>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/13ca6/77E9/1E10/54c8d5631556" blockKind="constants"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/13ca7/77E9/1E10/54c8d5636010" blockKind="types" columnsSize="0, 316, 267, 300"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/13ca8/77E9/1E10/54c8d56312be" blockKind="sensors"/>
+					</diagrams>
+					<references>
+						<TypeRef path="Obu_BasicTypes_Pkg::V_internal_Type" refOid="!ed/8181/4AD8/11D4/5304c68a59ab"/>
+						<TypeRef path="Obu_BasicTypes_Pkg::L_internal_Type" refOid="!ed/816f/4AD8/11D4/5304c4f23c06"/>
+						<TypeRef path="Obu_BasicTypes_Pkg::G_internal_Type" refOid="!ed/818a/4AD8/11D4/5304c7bc1070"/>
+						<TypeRef path="DMI_Messages_DMI_to_EVC_Pkg::DMI_Identifier_T" refOid="!ed/3bc52/273B/1120/54ca09697684"/>
+						<TypeRef path="Obu_BasicTypes_Pkg::T_internal_Type" refOid="!ed/8178/4AD8/11D4/5304c5cd1d44"/>
+					</references>
+				</ed:Package>
+			</pragmas>
+		</Package>
+	</declarations>
+</File>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="node" name="F1_Receive_Information_from_Trackside">
+	<locals>
+		<Variable name="_L1">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="Common_Types_Pkg::TrackSide_ForCheck_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/157491/1AE7/E88/54c962117b98"/>
+			</pragmas>
+		</Variable>
+	</locals>
+	<data>
+		<!-- _L1 = Receive_TrackSide_Msg_Pkg::Receive_TrackSide_Msg(_null, _null, _null); -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L1"/>
+			</lefts>
+			<right>
+				<!-- Receive_TrackSide_Msg_Pkg::Receive_TrackSide_Msg(_null, _null, _null) -->
+				<CallExpression>
+					<operator>
+						<OpCall name="1">
+							<operator>
+								<OperatorRef name="Receive_TrackSide_Msg_Pkg::Receive_TrackSide_Msg"/>
+							</operator>
+						</OpCall>
+					</operator>
+					<callParameters>
+						<IdExpression>
+							<path>
+								<NullRef/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<NullRef/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<NullRef/>
+							</path>
+						</IdExpression>
+					</callParameters>
+					<pragmas>
+						<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<references>
+								<OperatorRef path="Receive_TrackSide_Msg_Pkg::Receive_TrackSide_Msg" refOid="!ed/12035/7BFC/674/54bfd8a17ff5">
+									<InputRef refOid="!ed/1e7e2/7BFC/674/54bfdbf96ec"/>
+									<InputRef refOid="!ed/17d82/7BFC/674/54bfd9e23146"/>
+									<InputRef refOid="!ed/1e7fd/7BFC/674/54bfdbf926d8"/>
+									<OutputRef refOid="!ed/1e804/7BFC/674/54bfdbf96f98"/>
+								</OperatorRef>
+							</references>
+						</ed:CallExpression>
+					</pragmas>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/157490/1AE7/E88/54c962112553"/>
+			</pragmas>
+		</Equation>
+	</data>
+	<pragmas>
+		<ed:Operator oid="!ed/157458/1AE7/E88/54c95cac62b1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+			<diagrams>
+				<NetDiagram name="diagram_F1_Receive_Information_from_Trackside_1" landscape="true" format="A4 (210 297)" oid="!ed/157459/1AE7/E88/54c95cac3787">
+					<presentationElements>
+						<EquationGE presentable="!ed/157490/1AE7/E88/54c962112553">
+							<position>
+								<Point x="5160" y="5407"/>
+							</position>
+							<size>
+								<Size width="14868" height="5855"/>
+							</size>
+						</EquationGE>
+					</presentationElements>
+				</NetDiagram>
+			</diagrams>
+		</ed:Operator>
+	</pragmas>
+</Operator>

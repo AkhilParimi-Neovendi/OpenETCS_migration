@@ -1,0 +1,196 @@
+$********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
+** Command: kcg662.exe -config C:/DBC/modeling-Scade65Migration/test/EnvSim/Scade/KCG/config.txt
+** Generation date: 2023-09-12T14:15:56
+*************************************************************$
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_MA.xscade, line 2610, character 21
+  at path TA_MA::Build_MA/reset/
+ The input variable reset is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_MA.xscade, line 2646, character 21
+  at path TA_MA::Build_MA/train_position/
+ The input variable train_position is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_Export.xscade, line 14516, character 21
+  at path TA_Export::MA_export_loop/_L20/
+ The local variable _L20 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_Export.xscade, line 14528, character 21
+  at path TA_Export::MA_export_loop/_L19/
+ The local variable _L19 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_Export.xscade, line 14540, character 21
+  at path TA_Export::MA_export_loop/_L17/
+ The local variable _L17 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_Export.xscade, line 14552, character 21
+  at path TA_Export::MA_export_loop/_L16/
+ The local variable _L16 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_Export.xscade, line 14648, character 21
+  at path TA_Export::MA_export_loop/_L7/
+ The local variable _L7 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_Export.xscade, line 14756, character 21
+  at path TA_Export::MA_export_loop/_L53/
+ The local variable _L53 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_Export.xscade, line 14768, character 21
+  at path TA_Export::MA_export_loop/_L55/
+ The local variable _L55 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_Export.xscade, line 14780, character 21
+  at path TA_Export::MA_export_loop/_L56/
+ The local variable _L56 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_Export.xscade, line 14792, character 21
+  at path TA_Export::MA_export_loop/_L58/
+ The local variable _L58 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_Export.xscade, line 14804, character 21
+  at path TA_Export::MA_export_loop/_L59/
+ The local variable _L59 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_Export.xscade, line 14816, character 21
+  at path TA_Export::MA_export_loop/_L60/
+ The local variable _L60 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_Export.xscade, line 14828, character 21
+  at path TA_Export::MA_export_loop/_L61/
+ The local variable _L61 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_Export.xscade, line 14888, character 21
+  at path TA_Export::MA_export_loop/_L77/
+ The local variable _L77 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_Export.xscade, line 14900, character 21
+  at path TA_Export::MA_export_loop/_L76/
+ The local variable _L76 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_Export.xscade, line 14912, character 21
+  at path TA_Export::MA_export_loop/_L75/
+ The local variable _L75 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_Export.xscade, line 14924, character 21
+  at path TA_Export::MA_export_loop/_L74/
+ The local variable _L74 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_Export.xscade, line 14936, character 21
+  at path TA_Export::MA_export_loop/_L73/
+ The local variable _L73 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_Export.xscade, line 14948, character 21
+  at path TA_Export::MA_export_loop/_L72/
+ The local variable _L72 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_Export.xscade, line 14960, character 21
+  at path TA_Export::MA_export_loop/_L71/
+ The local variable _L71 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_Export.xscade, line 14972, character 21
+  at path TA_Export::MA_export_loop/_L70/
+ The local variable _L70 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_Export.xscade, line 14984, character 21
+  at path TA_Export::MA_export_loop/_L69/
+ The local variable _L69 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_Export.xscade, line 14104, character 21
+  at path TA_Export::MA_export/_L33/
+ The local variable _L33 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_SpeedProfiles.xscade, line 7518, character 21
+  at path TA_SpeedProfiles::SP_SSP_inner/_L7/
+ The local variable _L7 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_SpeedProfiles.xscade, line 7530, character 21
+  at path TA_SpeedProfiles::SP_SSP_inner/_L8/
+ The local variable _L8 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_SpeedProfiles.xscade, line 7542, character 21
+  at path TA_SpeedProfiles::SP_SSP_inner/_L9/
+ The local variable _L9 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_NTC.xscade, line 3528, character 21
+  at path TA_NTC::SpeedSupervision/Waakzam/
+ The input variable Waakzam is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_NTC.xscade, line 3540, character 21
+  at path TA_NTC::SpeedSupervision/Brake_Command/
+ The input variable Brake_Command is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_NTC.xscade, line 4169, character 21
+  at path TA_NTC::Build_MA_EOA/_L45/
+ The local variable _L45 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_MA_new.xscade, line 2610, character 21
+  at path TA_MA_new::Build_MA/reset/
+ The input variable reset is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_MA_new.xscade, line 2646, character 21
+  at path TA_MA_new::Build_MA/train_position/
+ The input variable train_position is never used
+*** Type Warning (WAR_151): Internal state expected
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/ETCS_Messaging/TrackMessages/TM_conversions.xscade, line 396618, character 31
+  at path TM_conversions::C_legacy_to_M129/
+ Node C_legacy_to_M129 has no internal state
+ (it should probably be declared as a function)
+*** Type Warning (WAR_151): Internal state expected
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/ETCS_Messaging/TrackMessages/TM_RBC_conversions_legacy.xscade, line 23948, character 31
+  at path TM_RBC_conversions_legacy::m_version_filter/
+ Node m_version_filter has no internal state
+ (it should probably be declared as a function)
+*** Type Warning (WAR_151): Internal state expected
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_MA.xscade, line 3406, character 31
+  at path TA_MA::BuildNewMA_L2/
+ Node BuildNewMA_L2 has no internal state
+ (it should probably be declared as a function)
+*** Type Warning (WAR_151): Internal state expected
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_MA.xscade, line 3415, character 31
+  at path TA_MA::ShortenMA_L2/
+ Node ShortenMA_L2 has no internal state
+ (it should probably be declared as a function)
+*** Type Warning (WAR_151): Internal state expected
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_MA.xscade, line 3424, character 31
+  at path TA_MA::ExtendMA_L2/
+ Node ExtendMA_L2 has no internal state
+ (it should probably be declared as a function)
+*** Type Warning (WAR_151): Internal state expected
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_Export.xscade, line 14426, character 52
+  at path TA_Export::MA_export_loop/
+ Node MA_export_loop has no internal state
+ (it should probably be declared as a function)
+*** Type Warning (WAR_151): Internal state expected
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_SpeedProfiles.xscade, line 7478, character 31
+  at path TA_SpeedProfiles::SP_SSP_inner/
+ Node SP_SSP_inner has no internal state
+ (it should probably be declared as a function)
+*** Type Warning (WAR_151): Internal state expected
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_Gradient.xscade, line 10372, character 31
+  at path TA_Gradient::GP_correct_L_Gradient_1st_section/
+ Node GP_correct_L_Gradient_1st_section has no internal state
+ (it should probably be declared as a function)
+*** Type Warning (WAR_151): Internal state expected
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_MA_new.xscade, line 3406, character 31
+  at path TA_MA_new::BuildNewMA_L2/
+ Node BuildNewMA_L2 has no internal state
+ (it should probably be declared as a function)
+*** Type Warning (WAR_151): Internal state expected
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_MA_new.xscade, line 3415, character 31
+  at path TA_MA_new::ShortenMA_L2/
+ Node ShortenMA_L2 has no internal state
+ (it should probably be declared as a function)
+*** Type Warning (WAR_151): Internal state expected
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/TrackAtlas/TA_MA_new.xscade, line 3424, character 31
+  at path TA_MA_new::ExtendMA_L2/
+ Node ExtendMA_L2 has no internal state
+ (it should probably be declared as a function)
+*** License Failure (FAIL_22): Missing license
+ Cannot find license for KCG 32-bit 6.6.2 (build i4)
+43 warnings were found
+No error was found
+A failure occurred
+$********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
+** kcg.log
+** Generation date: 2023-09-12T14:16:09
+*************************************************************$

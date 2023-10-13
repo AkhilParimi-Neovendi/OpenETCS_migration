@@ -1,0 +1,1158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/4" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/2">
+	<declarations>
+		<Package name="Radio426">
+			<declarations>
+				<Constant name="RM139_27">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="TM::P027"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<!-- {valid : false, Q_DIR : 0, L_PACKET : 0, Q_SCALE : 0, N_ITER : 0, SECTIONS : [{va... -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="valid">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="Q_DIR">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="L_PACKET">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="Q_SCALE">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="N_ITER">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="SECTIONS">
+									<flow>
+										<!-- [{valid : false, D_STATIC : 0, V_STATIC : 0, Q_FRONT : 0, N_ITER : 0}, {valid : f... -->
+										<DataArrayOp>
+											<data>
+												<!-- {valid : false, D_STATIC : 0, V_STATIC : 0, Q_FRONT : 0, N_ITER : 0} -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="valid">
+															<flow>
+																<ConstValue value="false"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="D_STATIC">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="V_STATIC">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_FRONT">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="N_ITER">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+												<!-- {valid : false, D_STATIC : 0, V_STATIC : 0, Q_FRONT : 0, N_ITER : 0} -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="valid">
+															<flow>
+																<ConstValue value="false"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="D_STATIC">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="V_STATIC">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_FRONT">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="N_ITER">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+												<!-- {valid : false, D_STATIC : 0, V_STATIC : 0, Q_FRONT : 0, N_ITER : 0} -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="valid">
+															<flow>
+																<ConstValue value="false"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="D_STATIC">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="V_STATIC">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_FRONT">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="N_ITER">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+												<!-- {valid : false, D_STATIC : 0, V_STATIC : 0, Q_FRONT : 0, N_ITER : 0} -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="valid">
+															<flow>
+																<ConstValue value="false"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="D_STATIC">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="V_STATIC">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_FRONT">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="N_ITER">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+												<!-- {valid : false, D_STATIC : 0, V_STATIC : 0, Q_FRONT : 0, N_ITER : 0} -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="valid">
+															<flow>
+																<ConstValue value="false"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="D_STATIC">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="V_STATIC">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_FRONT">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="N_ITER">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+											</data>
+										</DataArrayOp>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/d00e3/6351/B74/54f40c9033d"/>
+					</pragmas>
+				</Constant>
+				<Constant name="RM139_21">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="TM::P021"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<!-- {valid : false, Q_DIR : 0, L_PACKET : 0, Q_SCALE : 0, N_ITER : 0, SECTIONS : [{va... -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="valid">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="Q_DIR">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="L_PACKET">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="Q_SCALE">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="N_ITER">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="SECTIONS">
+									<flow>
+										<!-- [{valid : false, D_GRADIENT : 0, Q_GDIR : 0, G_A : 0}, {valid : false, D_GRADIENT... -->
+										<DataArrayOp>
+											<data>
+												<!-- {valid : false, D_GRADIENT : 0, Q_GDIR : 0, G_A : 0} -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="valid">
+															<flow>
+																<ConstValue value="false"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="D_GRADIENT">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_GDIR">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="G_A">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+												<!-- {valid : false, D_GRADIENT : 0, Q_GDIR : 0, G_A : 0} -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="valid">
+															<flow>
+																<ConstValue value="false"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="D_GRADIENT">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_GDIR">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="G_A">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+												<!-- {valid : false, D_GRADIENT : 0, Q_GDIR : 0, G_A : 0} -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="valid">
+															<flow>
+																<ConstValue value="false"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="D_GRADIENT">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_GDIR">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="G_A">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+												<!-- {valid : false, D_GRADIENT : 0, Q_GDIR : 0, G_A : 0} -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="valid">
+															<flow>
+																<ConstValue value="false"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="D_GRADIENT">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_GDIR">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="G_A">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+												<!-- {valid : false, D_GRADIENT : 0, Q_GDIR : 0, G_A : 0} -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="valid">
+															<flow>
+																<ConstValue value="false"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="D_GRADIENT">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_GDIR">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="G_A">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+											</data>
+										</DataArrayOp>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/cfff4/6351/B74/54f40c903355"/>
+					</pragmas>
+				</Constant>
+				<Constant name="RM139_15">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="TM::P015"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<!-- {valid : false, Q_DIR : 0, L_PACKET : 0, Q_SCALE : 0, V_LOA : 0, T_LOA : 0, N_ITE... -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="valid">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="Q_DIR">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="L_PACKET">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="Q_SCALE">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="V_LOA">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="T_LOA">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="N_ITER">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="SECTIONS">
+									<flow>
+										<!-- [{valid : false, L_ENDSECTION : 0, Q_ENDSECTION : 0, Q_ENDTIMER : 0, Q_DANGERPOIN... -->
+										<DataArrayOp>
+											<data>
+												<!-- {valid : false, L_ENDSECTION : 0, Q_ENDSECTION : 0, Q_ENDTIMER : 0, Q_DANGERPOINT... -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="valid">
+															<flow>
+																<ConstValue value="false"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="L_ENDSECTION">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_ENDSECTION">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_ENDTIMER">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_DANGERPOINT">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="D_DP">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="V_RELEASEDP">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_OVERLAP">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+												<!-- {valid : false, L_ENDSECTION : 0, Q_ENDSECTION : 0, Q_ENDTIMER : 0, Q_DANGERPOINT... -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="valid">
+															<flow>
+																<ConstValue value="false"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="L_ENDSECTION">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_ENDSECTION">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_ENDTIMER">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_DANGERPOINT">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="D_DP">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="V_RELEASEDP">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_OVERLAP">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+												<!-- {valid : false, L_ENDSECTION : 0, Q_ENDSECTION : 0, Q_ENDTIMER : 0, Q_DANGERPOINT... -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="valid">
+															<flow>
+																<ConstValue value="false"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="L_ENDSECTION">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_ENDSECTION">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_ENDTIMER">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_DANGERPOINT">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="D_DP">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="V_RELEASEDP">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_OVERLAP">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+												<!-- {valid : false, L_ENDSECTION : 0, Q_ENDSECTION : 0, Q_ENDTIMER : 0, Q_DANGERPOINT... -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="valid">
+															<flow>
+																<ConstValue value="false"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="L_ENDSECTION">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_ENDSECTION">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_ENDTIMER">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_DANGERPOINT">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="D_DP">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="V_RELEASEDP">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_OVERLAP">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+											</data>
+										</DataArrayOp>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/cff2d/6351/B74/54f40c90617c"/>
+					</pragmas>
+				</Constant>
+				<Constant name="RM139_05">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="TM::P005"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<!-- {valid : false, Q_DIR : 0, L_PACKET : 0, Q_SCALE : 0, N_ITER : 0, SECTIONS : [{va... -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="valid">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="Q_DIR">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="L_PACKET">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="Q_SCALE">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="N_ITER">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="SECTIONS">
+									<flow>
+										<!-- [{valid : false, D_LINK : 0, Q_NEWCOUNTRY : 0, NID_C : 0, NID_BG : 0, Q_LINKORIEN... -->
+										<DataArrayOp>
+											<data>
+												<!-- {valid : false, D_LINK : 0, Q_NEWCOUNTRY : 0, NID_C : 0, NID_BG : 0, Q_LINKORIENT... -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="valid">
+															<flow>
+																<ConstValue value="false"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="D_LINK">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_NEWCOUNTRY">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="NID_C">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="NID_BG">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_LINKORIENTATION">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_LINKREACTION">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_LOCACC">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+												<!-- {valid : false, D_LINK : 0, Q_NEWCOUNTRY : 0, NID_C : 0, NID_BG : 0, Q_LINKORIENT... -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="valid">
+															<flow>
+																<ConstValue value="false"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="D_LINK">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_NEWCOUNTRY">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="NID_C">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="NID_BG">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_LINKORIENTATION">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_LINKREACTION">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_LOCACC">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+												<!-- {valid : false, D_LINK : 0, Q_NEWCOUNTRY : 0, NID_C : 0, NID_BG : 0, Q_LINKORIENT... -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="valid">
+															<flow>
+																<ConstValue value="false"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="D_LINK">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_NEWCOUNTRY">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="NID_C">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="NID_BG">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_LINKORIENTATION">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_LINKREACTION">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_LOCACC">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+												<!-- {valid : false, D_LINK : 0, Q_NEWCOUNTRY : 0, NID_C : 0, NID_BG : 0, Q_LINKORIENT... -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="valid">
+															<flow>
+																<ConstValue value="false"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="D_LINK">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_NEWCOUNTRY">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="NID_C">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="NID_BG">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_LINKORIENTATION">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_LINKREACTION">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_LOCACC">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+												<!-- {valid : false, D_LINK : 0, Q_NEWCOUNTRY : 0, NID_C : 0, NID_BG : 0, Q_LINKORIENT... -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="valid">
+															<flow>
+																<ConstValue value="false"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="D_LINK">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_NEWCOUNTRY">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="NID_C">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="NID_BG">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_LINKORIENTATION">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_LINKREACTION">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="Q_LOCACC">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+											</data>
+										</DataArrayOp>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/cfdf6/6351/B74/54f40c905557"/>
+					</pragmas>
+				</Constant>
+				<Constant name="RM139_03">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="TM::P003_T"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<!-- {valid : false, Q_DIR : 0, L_PACKET : 0, Q_SCALE : 0, D_VALIDNV : 0, N_ITER : 0, ... -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="valid">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="Q_DIR">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="L_PACKET">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="Q_SCALE">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="D_VALIDNV">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="N_ITER">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="NID_C">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="V_NVSHUNT">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="V_NVSTFF">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="V_NVONSIGHT">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="V_NVUNFIT">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="V_NVREL">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="D_NVROLL">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="Q_NVSRBKTRG">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="Q_NVEMRRLS">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="V_NVALLOWOVTRP">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="V_NVSUPOVTRP">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="D_NVOVTRP">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="T_NVOVTRP">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="D_NVOTRP">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="M_NVCONTACT">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="T_NVCONTACT">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="M_DVDERUN">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="D_NVSTFF">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="Q_NVDRIVER">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/cfcb7/6351/B74/54f40c9031bb"/>
+					</pragmas>
+				</Constant>
+				<Constant name="RM139_00Header">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="TM::Radio_TrackTrain_Header_T"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<!-- {radioDevice : 0, receivedSystemTime : 0, nid_message : 0, t_train : 0, m_ack : 0... -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="radioDevice">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="receivedSystemTime">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="nid_message">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="t_train">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="m_ack">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="nid_lrbg">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="t_train_reference">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="nid_em">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="q_scale">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="d_sr">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="t_sh_rqst">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="d_ref">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="q_dir">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="d_emergencystop">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="m_version">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/cfbf0/6351/B74/54f40c90495d"/>
+					</pragmas>
+				</Constant>
+			</declarations>
+			<pragmas>
+				<ed:Package oid="!ed/cfb6e/6351/B74/54f40c441e42" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<diagrams>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/cfb6f/6351/B74/54f40c4453e1" blockKind="constants"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/cfb70/6351/B74/54f40c447063" blockKind="types"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/cfb71/6351/B74/54f40c44292e" blockKind="sensors"/>
+					</diagrams>
+				</ed:Package>
+			</pragmas>
+		</Package>
+	</declarations>
+</File>

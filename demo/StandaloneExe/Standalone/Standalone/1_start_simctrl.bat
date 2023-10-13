@@ -1,0 +1,1 @@
+Controller\tool\wishrun.exe Controller\tool\tcl\simctrl\main.tcl Controller\simcfg\US01_to_US12.cfg

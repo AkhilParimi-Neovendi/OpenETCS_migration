@@ -1,0 +1,29 @@
+$********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
+** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-10-12T15:10:04
+*************************************************************$
+Data structures
+  Structures
+    Max members in a single structure: 1668
+  Arrays
+    Max number of dimensions for an array: 3
+    Maximum size for a dimension: 999
+  Enumeration
+    Max of enum constants in a single enumeration: 38
+Control structures
+  Max numbers of case labels in a switch: 32
+  Max number of nesting levels in compound statement: 38
+Program size
+  Functions
+    Max number of function parameters in definition: 56
+    Max number of function arguments in a call: 56
+  Expressions
+    Max number of nesting levels of parenthesized expression in a full expression: 5
+  Identifiers
+    Max number of identifiers with block scope declared in one block: 1756
+    Max number of macro identifiers simultaneously defined in one preprocessing translation unit: 4563
+    Max number of extern identifiers in one translation unit: 9390
+$********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
+** kcg_metrics.txt
+** Generation date: 2023-10-12T15:10:04
+*************************************************************$

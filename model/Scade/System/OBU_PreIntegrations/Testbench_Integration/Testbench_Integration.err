@@ -1,0 +1,3 @@
+*** Monomorphization Warning (WAR_153): No specialized operator found
+  at file C:\Users\AKHILP~1\AppData\Local\Temp\ScadeChecker\15912\checker_file.scade, line 1134498, character 14
+  at path DMI_Control_Pkg::Utils::ASCII_to_INTEGER_iterator/_L17=

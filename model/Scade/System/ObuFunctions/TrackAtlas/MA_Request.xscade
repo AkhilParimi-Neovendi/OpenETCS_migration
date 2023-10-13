@@ -1,0 +1,1282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Package name="MA_Request">
+			<declarations>
+				<Constant name="ct_train">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="T_TRAIN"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="0"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/1348d7/15E0/1354/55b0a50c47f9"/>
+					</pragmas>
+				</Constant>
+				<Constant name="cQMAreqreason">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="Q_MARQSTREASON"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="Q_MARQSTREASON_Start_selected_by_driver"/>
+							</path>
+						</IdExpression>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/1348c8/15E0/1354/55b0a50c4c"/>
+					</pragmas>
+				</Constant>
+				<Constant name="cQemergencyStop">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="Q_EMERGENCYSTOP"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA"/>
+							</path>
+						</IdExpression>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/1348c1/15E0/1354/55b0a50c193c"/>
+					</pragmas>
+				</Constant>
+				<Constant name="cPacket132">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="Radio_Types_Pkg::Radio_TrainTrack_Message_T"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<!-- {present : false, header : {present : false, nid_message : 0, t_train : 0, nid_en... -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="present">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="header">
+									<flow>
+										<!-- {present : false, nid_message : 0, t_train : 0, nid_engine : 0, xQ_MARQSTREASON :... -->
+										<DataStructOp>
+											<data>
+												<LabelledExpression label="present">
+													<flow>
+														<ConstValue value="false"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="nid_message">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="t_train">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="nid_engine">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="xQ_MARQSTREASON">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="Q_MARQSTREASON_Start_selected_by_driver"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="xT_TRAIN">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="xNID_EM">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="xQ_EMERGENCYSTOP">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="xNID_TEXTMESSAGE">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+											</data>
+										</DataStructOp>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="packets">
+									<flow>
+										<!-- {p0 : {valid : false, packet0 : {NID_PACKET : 0, L_PACKET : 0, qscale : Q_SCALE_1... -->
+										<DataStructOp>
+											<data>
+												<LabelledExpression label="p0">
+													<flow>
+														<!-- {valid : false, packet0 : {NID_PACKET : 0, L_PACKET : 0, qscale : Q_SCALE_10_cm_s... -->
+														<DataStructOp>
+															<data>
+																<LabelledExpression label="valid">
+																	<flow>
+																		<ConstValue value="false"/>
+																	</flow>
+																</LabelledExpression>
+																<LabelledExpression label="packet0">
+																	<flow>
+																		<!-- {NID_PACKET : 0, L_PACKET : 0, qscale : Q_SCALE_10_cm_scale, NID_LRBG : 0, D_LRBG... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="NID_PACKET">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="L_PACKET">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="qscale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="NID_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="D_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="dirlrbg">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIRLRBG_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="dlrbg">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DLRBG_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="L_DOUBTOVER">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="L_DOUBTUNDER">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="length">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LENGTH_No_train_integrity_information_available"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="L_TRAININT">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="V_TRAIN">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="dirtrain">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIRTRAIN_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="mode">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="M_MODE_Full_Supervision"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="level">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="M_LEVEL_Level_0"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="NID_NTC">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																	</flow>
+																</LabelledExpression>
+															</data>
+														</DataStructOp>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="p1">
+													<flow>
+														<!-- {valid : false, packet1 : {NID_PACKET : 0, L_PACKET : 0, qscale : Q_SCALE_10_cm_s... -->
+														<DataStructOp>
+															<data>
+																<LabelledExpression label="valid">
+																	<flow>
+																		<ConstValue value="false"/>
+																	</flow>
+																</LabelledExpression>
+																<LabelledExpression label="packet1">
+																	<flow>
+																		<!-- {NID_PACKET : 0, L_PACKET : 0, qscale : Q_SCALE_10_cm_scale, NID_LRBG : 0, NID_PR... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="NID_PACKET">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="L_PACKET">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="qscale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="NID_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="NID_PRVLRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="D_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="dirlrbg">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIRLRBG_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="dlrbg">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DLRBG_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="L_DOUBTOVER">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="L_DOUBTUNDER">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="length">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LENGTH_No_train_integrity_information_available"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="L_TRAININT">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="V_TRAIN">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="dirtrain">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIRTRAIN_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="mode">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="M_MODE_Full_Supervision"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="level">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="M_LEVEL_Level_0"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="NID_NTC">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																	</flow>
+																</LabelledExpression>
+															</data>
+														</DataStructOp>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="p3">
+													<flow>
+														<!-- {valid : false, number : 0, aNID_RADIO : [{valid : false, telephoneNumber : [0, 0... -->
+														<DataStructOp>
+															<data>
+																<LabelledExpression label="valid">
+																	<flow>
+																		<ConstValue value="false"/>
+																	</flow>
+																</LabelledExpression>
+																<LabelledExpression label="number">
+																	<flow>
+																		<ConstValue value="0"/>
+																	</flow>
+																</LabelledExpression>
+																<LabelledExpression label="aNID_RADIO">
+																	<flow>
+																		<!-- [{valid : false, telephoneNumber : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}... -->
+																		<DataArrayOp>
+																			<data>
+																				<!-- {valid : false, telephoneNumber : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]} -->
+																				<DataStructOp>
+																					<data>
+																						<LabelledExpression label="valid">
+																							<flow>
+																								<ConstValue value="false"/>
+																							</flow>
+																						</LabelledExpression>
+																						<LabelledExpression label="telephoneNumber">
+																							<flow>
+																								<!-- [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] -->
+																								<DataArrayOp>
+																									<data>
+																										<ConstValue value="0"/>
+																										<ConstValue value="0"/>
+																										<ConstValue value="0"/>
+																										<ConstValue value="0"/>
+																										<ConstValue value="0"/>
+																										<ConstValue value="0"/>
+																										<ConstValue value="0"/>
+																										<ConstValue value="0"/>
+																										<ConstValue value="0"/>
+																										<ConstValue value="0"/>
+																										<ConstValue value="0"/>
+																										<ConstValue value="0"/>
+																										<ConstValue value="0"/>
+																										<ConstValue value="0"/>
+																										<ConstValue value="0"/>
+																									</data>
+																								</DataArrayOp>
+																							</flow>
+																						</LabelledExpression>
+																					</data>
+																				</DataStructOp>
+																			</data>
+																		</DataArrayOp>
+																	</flow>
+																</LabelledExpression>
+															</data>
+														</DataStructOp>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="p4">
+													<flow>
+														<!-- {valid : false, m_error : M_ERROR_Balise_group_linking_consistency_error} -->
+														<DataStructOp>
+															<data>
+																<LabelledExpression label="valid">
+																	<flow>
+																		<ConstValue value="false"/>
+																	</flow>
+																</LabelledExpression>
+																<LabelledExpression label="m_error">
+																	<flow>
+																		<IdExpression>
+																			<path>
+																				<ConstVarRef name="M_ERROR_Balise_group_linking_consistency_error"/>
+																			</path>
+																		</IdExpression>
+																	</flow>
+																</LabelledExpression>
+															</data>
+														</DataStructOp>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="p5">
+													<flow>
+														<!-- {valid : false, TrainRunningNumber : 0} -->
+														<DataStructOp>
+															<data>
+																<LabelledExpression label="valid">
+																	<flow>
+																		<ConstValue value="false"/>
+																	</flow>
+																</LabelledExpression>
+																<LabelledExpression label="TrainRunningNumber">
+																	<flow>
+																		<ConstValue value="0"/>
+																	</flow>
+																</LabelledExpression>
+															</data>
+														</DataStructOp>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="p9">
+													<flow>
+														<!-- {valid : false, transitionInformation : 0} -->
+														<DataStructOp>
+															<data>
+																<LabelledExpression label="valid">
+																	<flow>
+																		<ConstValue value="false"/>
+																	</flow>
+																</LabelledExpression>
+																<LabelledExpression label="transitionInformation">
+																	<flow>
+																		<ConstValue value="0"/>
+																	</flow>
+																</LabelledExpression>
+															</data>
+														</DataStructOp>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="p11">
+													<flow>
+														<!-- {valid : false, nc_cdtrain : NC_CDTRAIN_Cant_Deficiency_80_mm, nc_train : NC_TRAI... -->
+														<DataStructOp>
+															<data>
+																<LabelledExpression label="valid">
+																	<flow>
+																		<ConstValue value="false"/>
+																	</flow>
+																</LabelledExpression>
+																<LabelledExpression label="nc_cdtrain">
+																	<flow>
+																		<IdExpression>
+																			<path>
+																				<ConstVarRef name="NC_CDTRAIN_Cant_Deficiency_80_mm"/>
+																			</path>
+																		</IdExpression>
+																	</flow>
+																</LabelledExpression>
+																<LabelledExpression label="nc_train">
+																	<flow>
+																		<IdExpression>
+																			<path>
+																				<ConstVarRef name="NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category"/>
+																			</path>
+																		</IdExpression>
+																	</flow>
+																</LabelledExpression>
+																<LabelledExpression label="l_train">
+																	<flow>
+																		<ConstValue value="0"/>
+																	</flow>
+																</LabelledExpression>
+																<LabelledExpression label="v_maxtrain">
+																	<flow>
+																		<ConstValue value="0"/>
+																	</flow>
+																</LabelledExpression>
+																<LabelledExpression label="m_loadinggoage">
+																	<flow>
+																		<IdExpression>
+																			<path>
+																				<ConstVarRef name="M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles"/>
+																			</path>
+																		</IdExpression>
+																	</flow>
+																</LabelledExpression>
+																<LabelledExpression label="m_axleloadcat">
+																	<flow>
+																		<IdExpression>
+																			<path>
+																				<ConstVarRef name="M_AXLELOADCAT_A"/>
+																			</path>
+																		</IdExpression>
+																	</flow>
+																</LabelledExpression>
+																<LabelledExpression label="m_airtight">
+																	<flow>
+																		<IdExpression>
+																			<path>
+																				<ConstVarRef name="M_AIRTIGHT_Not_fitted"/>
+																			</path>
+																		</IdExpression>
+																	</flow>
+																</LabelledExpression>
+																<LabelledExpression label="n_axle">
+																	<flow>
+																		<ConstValue value="0"/>
+																	</flow>
+																</LabelledExpression>
+																<LabelledExpression label="nIter_tractionIdentity">
+																	<flow>
+																		<ConstValue value="0"/>
+																	</flow>
+																</LabelledExpression>
+																<LabelledExpression label="tractionIdentity">
+																	<flow>
+																		<!-- [{m_voltage : M_VOLTAGE_Line_not_fitted_with_any_traction_system, nid_ctraction :... -->
+																		<DataArrayOp>
+																			<data>
+																				<!-- {m_voltage : M_VOLTAGE_Line_not_fitted_with_any_traction_system, nid_ctraction : ... -->
+																				<DataStructOp>
+																					<data>
+																						<LabelledExpression label="m_voltage">
+																							<flow>
+																								<IdExpression>
+																									<path>
+																										<ConstVarRef name="M_VOLTAGE_Line_not_fitted_with_any_traction_system"/>
+																									</path>
+																								</IdExpression>
+																							</flow>
+																						</LabelledExpression>
+																						<LabelledExpression label="nid_ctraction">
+																							<flow>
+																								<ConstValue value="0"/>
+																							</flow>
+																						</LabelledExpression>
+																					</data>
+																				</DataStructOp>
+																				<!-- {m_voltage : M_VOLTAGE_Line_not_fitted_with_any_traction_system, nid_ctraction : ... -->
+																				<DataStructOp>
+																					<data>
+																						<LabelledExpression label="m_voltage">
+																							<flow>
+																								<IdExpression>
+																									<path>
+																										<ConstVarRef name="M_VOLTAGE_Line_not_fitted_with_any_traction_system"/>
+																									</path>
+																								</IdExpression>
+																							</flow>
+																						</LabelledExpression>
+																						<LabelledExpression label="nid_ctraction">
+																							<flow>
+																								<ConstValue value="0"/>
+																							</flow>
+																						</LabelledExpression>
+																					</data>
+																				</DataStructOp>
+																				<!-- {m_voltage : M_VOLTAGE_Line_not_fitted_with_any_traction_system, nid_ctraction : ... -->
+																				<DataStructOp>
+																					<data>
+																						<LabelledExpression label="m_voltage">
+																							<flow>
+																								<IdExpression>
+																									<path>
+																										<ConstVarRef name="M_VOLTAGE_Line_not_fitted_with_any_traction_system"/>
+																									</path>
+																								</IdExpression>
+																							</flow>
+																						</LabelledExpression>
+																						<LabelledExpression label="nid_ctraction">
+																							<flow>
+																								<ConstValue value="0"/>
+																							</flow>
+																						</LabelledExpression>
+																					</data>
+																				</DataStructOp>
+																				<!-- {m_voltage : M_VOLTAGE_Line_not_fitted_with_any_traction_system, nid_ctraction : ... -->
+																				<DataStructOp>
+																					<data>
+																						<LabelledExpression label="m_voltage">
+																							<flow>
+																								<IdExpression>
+																									<path>
+																										<ConstVarRef name="M_VOLTAGE_Line_not_fitted_with_any_traction_system"/>
+																									</path>
+																								</IdExpression>
+																							</flow>
+																						</LabelledExpression>
+																						<LabelledExpression label="nid_ctraction">
+																							<flow>
+																								<ConstValue value="0"/>
+																							</flow>
+																						</LabelledExpression>
+																					</data>
+																				</DataStructOp>
+																			</data>
+																		</DataArrayOp>
+																	</flow>
+																</LabelledExpression>
+																<LabelledExpression label="nIter_ntc">
+																	<flow>
+																		<ConstValue value="0"/>
+																	</flow>
+																</LabelledExpression>
+																<LabelledExpression label="nid_ntc">
+																	<flow>
+																		<!-- [0, 0, 0, 0, 0] -->
+																		<DataArrayOp>
+																			<data>
+																				<ConstValue value="0"/>
+																				<ConstValue value="0"/>
+																				<ConstValue value="0"/>
+																				<ConstValue value="0"/>
+																				<ConstValue value="0"/>
+																			</data>
+																		</DataArrayOp>
+																	</flow>
+																</LabelledExpression>
+															</data>
+														</DataStructOp>
+													</flow>
+												</LabelledExpression>
+											</data>
+										</DataStructOp>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/1348ba/15E0/1354/55b0a50c4382"/>
+					</pragmas>
+				</Constant>
+				<Constant name="cNidTextMessage">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="NID_TEXTMESSAGE"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="0"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/13488b/15E0/1354/55b0a50c7d41"/>
+					</pragmas>
+				</Constant>
+				<Constant name="cNid_em">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="NID_EM"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="0"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/13487c/15E0/1354/55b0a50c4ab"/>
+					</pragmas>
+				</Constant>
+				<Constant name="cMA_RequestParam">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="Packet_Types_Pkg::P57_MovementAuthorityRequestParameters_T"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<!-- {valid : false, q_dir : Q_DIR_Reverse, t_mar : 0, t_timeoutrqst : 0, t_cycrqst : ... -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="valid">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="q_dir">
+									<flow>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="Q_DIR_Reverse"/>
+											</path>
+										</IdExpression>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="t_mar">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="t_timeoutrqst">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="t_cycrqst">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/13486d/15E0/1354/55b0a50c3e5a"/>
+					</pragmas>
+				</Constant>
+				<Constant name="cPT3_OBUTelephoneNumber">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="Packet_TrainTypes_Pkg::PT3_OnboardTelephoneNumbers_T"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<!-- {valid : false, number : 0, aNID_RADIO : [{valid : false, telephoneNumber : [0, 0... -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="valid">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="number">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="aNID_RADIO">
+									<flow>
+										<!-- [{valid : false, telephoneNumber : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}... -->
+										<DataArrayOp>
+											<data>
+												<!-- {valid : false, telephoneNumber : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]} -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="valid">
+															<flow>
+																<ConstValue value="false"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="telephoneNumber">
+															<flow>
+																<!-- [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] -->
+																<DataArrayOp>
+																	<data>
+																		<ConstValue value="0"/>
+																		<ConstValue value="0"/>
+																		<ConstValue value="0"/>
+																		<ConstValue value="0"/>
+																		<ConstValue value="0"/>
+																		<ConstValue value="0"/>
+																		<ConstValue value="0"/>
+																		<ConstValue value="0"/>
+																		<ConstValue value="0"/>
+																		<ConstValue value="0"/>
+																		<ConstValue value="0"/>
+																		<ConstValue value="0"/>
+																		<ConstValue value="0"/>
+																		<ConstValue value="0"/>
+																		<ConstValue value="0"/>
+																	</data>
+																</DataArrayOp>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+											</data>
+										</DataArrayOp>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/32e281/15E0/1354/55b0b5eb47b6"/>
+					</pragmas>
+				</Constant>
+				<Constant name="cPT11_ValidateTrainData">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="Packet_TrainTypes_Pkg::PT11_ValidatedTrainData_T"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<!-- {valid : false, nc_cdtrain : NC_CDTRAIN_Cant_Deficiency_80_mm, nc_train : NC_TRAI... -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="valid">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="nc_cdtrain">
+									<flow>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="NC_CDTRAIN_Cant_Deficiency_80_mm"/>
+											</path>
+										</IdExpression>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="nc_train">
+									<flow>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category"/>
+											</path>
+										</IdExpression>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="l_train">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="v_maxtrain">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="m_loadinggoage">
+									<flow>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles"/>
+											</path>
+										</IdExpression>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="m_axleloadcat">
+									<flow>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="M_AXLELOADCAT_A"/>
+											</path>
+										</IdExpression>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="m_airtight">
+									<flow>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="M_AIRTIGHT_Not_fitted"/>
+											</path>
+										</IdExpression>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="n_axle">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="nIter_tractionIdentity">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="tractionIdentity">
+									<flow>
+										<!-- [{m_voltage : M_VOLTAGE_Line_not_fitted_with_any_traction_system, nid_ctraction :... -->
+										<DataArrayOp>
+											<data>
+												<!-- {m_voltage : M_VOLTAGE_Line_not_fitted_with_any_traction_system, nid_ctraction : ... -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="m_voltage">
+															<flow>
+																<IdExpression>
+																	<path>
+																		<ConstVarRef name="M_VOLTAGE_Line_not_fitted_with_any_traction_system"/>
+																	</path>
+																</IdExpression>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="nid_ctraction">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+												<!-- {m_voltage : M_VOLTAGE_Line_not_fitted_with_any_traction_system, nid_ctraction : ... -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="m_voltage">
+															<flow>
+																<IdExpression>
+																	<path>
+																		<ConstVarRef name="M_VOLTAGE_Line_not_fitted_with_any_traction_system"/>
+																	</path>
+																</IdExpression>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="nid_ctraction">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+												<!-- {m_voltage : M_VOLTAGE_Line_not_fitted_with_any_traction_system, nid_ctraction : ... -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="m_voltage">
+															<flow>
+																<IdExpression>
+																	<path>
+																		<ConstVarRef name="M_VOLTAGE_Line_not_fitted_with_any_traction_system"/>
+																	</path>
+																</IdExpression>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="nid_ctraction">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+												<!-- {m_voltage : M_VOLTAGE_Line_not_fitted_with_any_traction_system, nid_ctraction : ... -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="m_voltage">
+															<flow>
+																<IdExpression>
+																	<path>
+																		<ConstVarRef name="M_VOLTAGE_Line_not_fitted_with_any_traction_system"/>
+																	</path>
+																</IdExpression>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="nid_ctraction">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+											</data>
+										</DataArrayOp>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="nIter_ntc">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="nid_ntc">
+									<flow>
+										<!-- [0, 0, 0, 0, 0] -->
+										<DataArrayOp>
+											<data>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+											</data>
+										</DataArrayOp>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/32e282/15E0/1354/55b0b60a22cc"/>
+					</pragmas>
+				</Constant>
+				<Constant name="cPT4_ErrorReporting">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="Packet_TrainTypes_Pkg::PT4_ErrorReporting_T"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<!-- {valid : false, m_error : M_ERROR_Balise_group_linking_consistency_error} -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="valid">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="m_error">
+									<flow>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="M_ERROR_Balise_group_linking_consistency_error"/>
+											</path>
+										</IdExpression>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/32e283/15E0/1354/55b0b60d7616"/>
+					</pragmas>
+				</Constant>
+				<Constant name="cPT5_TrainRunningNumber">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="Packet_TrainTypes_Pkg::PT5_TrainRunningNumber"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<!-- {valid : false, TrainRunningNumber : 0} -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="valid">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="TrainRunningNumber">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/32e284/15E0/1354/55b0b60e3c5"/>
+					</pragmas>
+				</Constant>
+				<Constant name="cPT9_Level23">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="Packet_TrainTypes_Pkg::PT9_Level23_TransitionInformation_T"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<!-- {valid : false, transitionInformation : 0} -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="valid">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="transitionInformation">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/32e285/15E0/1354/55b0b60e6482"/>
+					</pragmas>
+				</Constant>
+				<Constant name="cM_version">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="M_VERSION"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="M_VERSION_Version_1_1_introduced_in_SRS_3_3_0"/>
+							</path>
+						</IdExpression>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/2105f7/6095/17E4/561e5f642750"/>
+					</pragmas>
+				</Constant>
+				<Constant name="DEFAULT_P009">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="TM_TrainToTrack::P009"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<!-- {valid : false, nid_packet : 0, l_packet : 0, nid_ltrbg : 0} -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="valid">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="nid_packet">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="l_packet">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="nid_ltrbg">
+									<flow>
+										<ConstValue value="0"/>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/210607/6095/17E4/561e5fd72079"/>
+					</pragmas>
+				</Constant>
+				<Type name="Driver2MAR_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="trackAheadFree">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1f94d8/15E0/1354/55b0ab815ff9" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>true if the driver confirms a track ahead free request sent by the RBC</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="driverSelectsStart">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1f94ea/15E0/1354/55b0abd13b85" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>true if the driver selects to start the train  (from Start of Mission)</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/1f94d7/15E0/1354/55b0ab5e63f0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>info from driver necessary in to determine MA request</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+			</declarations>
+			<pragmas>
+				<ed:Package oid="!ed/79b8b/FD6/5F8/555256937e33" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<diagrams>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/79b8c/FD6/5F8/555256936481" blockKind="constants" columnsSize="0, 209, 454, 723, 300"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/79b8d/FD6/5F8/555256937016" blockKind="types" columnsSize="0, 150, 150, 431"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/79b8e/FD6/5F8/55525693c89" blockKind="sensors"/>
+					</diagrams>
+					<references>
+						<TypeRef path="Radio_Types_Pkg::Radio_TrainTrack_Message_T" refOid="!ed/13e1d/1963/1E14/54d0c12e1c42"/>
+						<TypeRef path="Packet_Types_Pkg::P57_MovementAuthorityRequestParameters_T" refOid="!ed/5c10/569A/FF0/54880cefa8d"/>
+						<TypeRef path="Packet_TrainTypes_Pkg::PT3_OnboardTelephoneNumbers_T" refOid="!ed/13e41/1963/1E14/54d0c29346e"/>
+						<TypeRef path="Packet_TrainTypes_Pkg::PT11_ValidatedTrainData_T" refOid="!ed/853f9/1963/1E14/54d0ec9017e0"/>
+						<TypeRef path="Packet_TrainTypes_Pkg::PT4_ErrorReporting_T" refOid="!ed/3daca/176B/DC0/54d0b47f1a59"/>
+						<TypeRef path="Packet_TrainTypes_Pkg::PT5_TrainRunningNumber" refOid="!ed/3daf6/176B/DC0/54d0b47f5a4f"/>
+						<TypeRef path="Packet_TrainTypes_Pkg::PT9_Level23_TransitionInformation_T" refOid="!ed/13e94/4F99/1A90/54d1d4ac4f3b"/>
+						<TypeRef path="TM_TrainToTrack::P009" refOid="!ed/6cc81e/66E4/DF4/55a6a2dc608f"/>
+					</references>
+				</ed:Package>
+			</pragmas>
+		</Package>
+	</declarations>
+</File>

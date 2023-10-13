@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <Model commandLine="" date="">
+    <Option name="use_types" value="#off#"/>
+    <Option name="imported_root_package" value="#off#"/>
+    <Option name="root_package" value="#off#"/>
+    <Option name="xml_basename" value="kcg_xml_filter_out.scade"/>
+    <Option name="state_vector" value="#off#"/>
+    <Option name="static" value="#off#"/>
+    <Option name="separate_io_all" value="#off#"/>
+    <Option name="no_separate_io" value="#off#"/>
+    <Option name="separate_io" value="#off#"/>
+    <Option name="warn_error" value="#off#"/>
+    <Option name="short_circuit" value="#off#"/>
+    <Option name="wrap_c_ops" value="#off#"/>
+    <Option name="input_file" value="C:/DBC/OpenETCS/modeling-Scade65Migration/test/EnvSim/Scade/Simulation/scade_model_without_unused.scade"/>
+    <Option name="probes" value="#on#"/>
+    <Option name="no_observe" value="#off#"/>
+    <Option name="observe" value="#off#"/>
+    <Option name="debug" value="#on#"/>
+    <Option name="user_config" value="./user_macros.h"/>
+    <Option name="input_threshold" value="#off#"/>
+    <Option name="header" value="#off#"/>
+    <Option name="significance_length" value="31"/>
+    <Option name="name_length" value="200"/>
+    <Option name="globals_prefix" value="#off#"/>
+    <Option name="keep_asserts" value="#off#"/>
+    <Option name="global_root_context" value="#off#"/>
+    <Option name="expall" value="#off#"/>
+    <Option name="noexp" value="#off#"/>
+    <Option name="exp" value="#off#"/>
+    <Option name="target_dir" value="C:/DBC/OpenETCS/modeling-Scade65Migration/test/EnvSim/Scade/Simulation"/>
+    <Option name="target" value="C"/>
+    <Option name="root" value="EnvSim::Internal::ScriptedTrackTest"/>
+    <Option name="auth" value="#off#"/>
+    <NamedType refType="kcg_int64" scadeName="NID_PACKET" targetName="NID_PACKET"/>
+    <EnumType scadeName="Q_DIR" targetName="Q_DIR">
+      <EnumVal scadeName="Q_DIR_Reverse" targetName="Q_DIR_Reverse"/>
+      <EnumVal scadeName="Q_DIR_Nominal" targetName="Q_DIR_Nominal"/>
+      <EnumVal scadeName="Q_DIR_Both_directions" targetName="Q_DIR_Both_directions"/>
+    </EnumType>
+    <Package scadeName="EnvSim">
+      <NoExpNode headerFile="kcg_imported_functions.h" imported="true" scadeName="ScriptedTrack" targetCycleFct="ScriptedTrack_EnvSim">
+        <Input scadeName="actualTrainPos" scadeType="float64" targetName="actualTrainPos" targetType="kcg_float64"/>
+        <Input scadeName="radioTrainPos" scadeType="float64" targetName="radioTrainPos" targetType="kcg_float64"/>
+        <Output scadeName="baliseMessage" scadeType="TM::CompressedBaliseMessage" targetName="baliseMessage" targetType="CompressedBaliseMessage_TM"/>
+        <Output scadeName="radioMessage" scadeType="TM::CompressedRadioMessage" targetName="radioMessage" targetType="CompressedRadioMessage_TM"/>
+      </NoExpNode>
+      <Package scadeName="Internal">
+        <RootNode headerFile="ScriptedTrackTest_EnvSim_Internal.h" scadeName="ScriptedTrackTest" targetCycleFct="ScriptedTrackTest_EnvSim_Internal" targetInitFct="ScriptedTrackTest_reset_EnvSim_Internal" targetInitializationFct="ScriptedTrackTest_init_EnvSim_Internal">
+          <Input inCtx="true" scadeName="actualTrainPos" scadeType="float64" targetName="actualTrainPos" targetType="kcg_float64"/>
+          <Input inCtx="true" scadeName="radioTrainPos" scadeType="float64" targetName="radioTrainPos" targetType="kcg_float64"/>
+          <Output inCtx="true" scadeName="radioMessage" scadeType="TM::CompressedRadioMessage" targetName="radioMessage" targetType="CompressedRadioMessage_TM"/>
+          <Output inCtx="true" scadeName="baliseMessage" scadeType="TM::CompressedBaliseMessage" targetName="baliseMessage" targetType="CompressedBaliseMessage_TM"/>
+          <Local inCtx="true" scadeName="_L2" scadeType="TM::CompressedBaliseMessage" targetName="_L2" targetType="CompressedBaliseMessage_TM"/>
+          <Local inCtx="true" scadeName="_L1" scadeType="TM::CompressedRadioMessage" targetName="_L1" targetType="CompressedRadioMessage_TM"/>
+          <Local inCtx="true" scadeName="_L3" scadeType="float64" targetName="_L3" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L4" scadeType="float64" targetName="_L4" targetType="kcg_float64"/>
+          <NodeInstance instName="1" refName="ScriptedTrack_EnvSim" scadeName="EnvSim::ScriptedTrack"/>
+          <OutCtxType targetName="outC_ScriptedTrackTest_EnvSim_Internal"/>
+          <InCtxType targetName="inC_ScriptedTrackTest_EnvSim_Internal"/>
+        </RootNode>
+      </Package>
+    </Package>
+    <Package scadeName="TM">
+      <NamedType refType="CompressedBaliseMessage_TM" scadeName="CompressedBaliseMessage" targetName="CompressedBaliseMessage_TM"/>
+      <NamedType refType="BaliseTelegramHeader_int_T_TM" scadeName="BaliseTelegramHeader_int_T" targetName="BaliseTelegramHeader_int_T_TM"/>
+      <NamedType refType="CompressedRadioMessage_TM" scadeName="CompressedRadioMessage" targetName="CompressedRadioMessage_TM"/>
+      <NamedType refType="Radio_TrackTrain_Header_T_TM" scadeName="Radio_TrackTrain_Header_T" targetName="Radio_TrackTrain_Header_T_TM"/>
+    </Package>
+    <Package scadeName="Common_Types_Pkg">
+      <Constant macroDef="true" scadeName="cMetadataArraySize" scadeType="int64" targetName="cMetadataArraySize_Common_Types_Pkg" targetType="kcg_int64"/>
+      <Constant macroDef="true" scadeName="cDIM_MaxRMessages" scadeType="int64" targetName="cDIM_MaxRMessages_Common_Types_Pkg" targetType="kcg_int64"/>
+      <Constant macroDef="true" scadeName="cDIM_MaxDataElementsInRMessage" scadeType="int64" targetName="cDIM_MaxDataElementsInRMessage_Common_Types_Pkg" targetType="kcg_int64"/>
+      <NamedType refType="CompressedPackets_T_Common_Types_Pkg" scadeName="CompressedPackets_T" targetName="CompressedPackets_T_Common_Types_Pkg"/>
+      <NamedType refType="Metadata_T_Common_Types_Pkg" scadeName="Metadata_T" targetName="Metadata_T_Common_Types_Pkg"/>
+      <NamedType refType="MetadataElement_T_Common_Types_Pkg" scadeName="MetadataElement_T" targetName="MetadataElement_T_Common_Types_Pkg"/>
+      <NamedType refType="CompressedPacketData_T_Common_Types_Pkg" scadeName="CompressedPacketData_T" targetName="CompressedPacketData_T_Common_Types_Pkg"/>
+    </Package>
+    <StructType targetCompFct="kcg_comp_CompressedRadioMessage_TM" targetCopyFct="kcg_copy_CompressedRadioMessage_TM" targetName="CompressedRadioMessage_TM">
+      <Field scadeName="Header" scadeType="Radio_TrackTrain_Header_T_TM" targetName="Header" targetType="Radio_TrackTrain_Header_T_TM"/>
+      <Field scadeName="Messages" scadeType="CompressedPackets_T_Common_Types_Pkg" targetName="Messages" targetType="CompressedPackets_T_Common_Types_Pkg"/>
+    </StructType>
+    <StructType targetCompFct="kcg_comp_Radio_TrackTrain_Header_T_TM" targetCopyFct="kcg_copy_Radio_TrackTrain_Header_T_TM" targetName="Radio_TrackTrain_Header_T_TM">
+      <Field scadeName="radioDevice" scadeType="kcg_int64" targetName="radioDevice" targetType="kcg_int64"/>
+      <Field scadeName="receivedSystemTime" scadeType="kcg_int64" targetName="receivedSystemTime" targetType="kcg_int64"/>
+      <Field scadeName="nid_message" scadeType="kcg_int64" targetName="nid_message" targetType="kcg_int64"/>
+      <Field scadeName="t_train" scadeType="kcg_int64" targetName="t_train" targetType="kcg_int64"/>
+      <Field scadeName="m_ack" scadeType="kcg_int64" targetName="m_ack" targetType="kcg_int64"/>
+      <Field scadeName="nid_lrbg" scadeType="kcg_int64" targetName="nid_lrbg" targetType="kcg_int64"/>
+      <Field scadeName="t_train_reference" scadeType="kcg_int64" targetName="t_train_reference" targetType="kcg_int64"/>
+      <Field scadeName="nid_em" scadeType="kcg_int64" targetName="nid_em" targetType="kcg_int64"/>
+      <Field scadeName="q_scale" scadeType="kcg_int64" targetName="q_scale" targetType="kcg_int64"/>
+      <Field scadeName="d_sr" scadeType="kcg_int64" targetName="d_sr" targetType="kcg_int64"/>
+      <Field scadeName="t_sh_rqst" scadeType="kcg_int64" targetName="t_sh_rqst" targetType="kcg_int64"/>
+      <Field scadeName="d_ref" scadeType="kcg_int64" targetName="d_ref" targetType="kcg_int64"/>
+      <Field scadeName="q_dir" scadeType="kcg_int64" targetName="q_dir" targetType="kcg_int64"/>
+      <Field scadeName="d_emergencystop" scadeType="kcg_int64" targetName="d_emergencystop" targetType="kcg_int64"/>
+      <Field scadeName="m_version" scadeType="kcg_int64" targetName="m_version" targetType="kcg_int64"/>
+    </StructType>
+    <StructType targetCompFct="kcg_comp_CompressedBaliseMessage_TM" targetCopyFct="kcg_copy_CompressedBaliseMessage_TM" targetName="CompressedBaliseMessage_TM">
+      <Field scadeName="Header" scadeType="BaliseTelegramHeader_int_T_TM" targetName="Header" targetType="BaliseTelegramHeader_int_T_TM"/>
+      <Field scadeName="Messages" scadeType="CompressedPackets_T_Common_Types_Pkg" targetName="Messages" targetType="CompressedPackets_T_Common_Types_Pkg"/>
+    </StructType>
+    <StructType targetCompFct="kcg_comp_BaliseTelegramHeader_int_T_TM" targetCopyFct="kcg_copy_BaliseTelegramHeader_int_T_TM" targetName="BaliseTelegramHeader_int_T_TM">
+      <Field scadeName="q_updown" scadeType="kcg_int64" targetName="q_updown" targetType="kcg_int64"/>
+      <Field scadeName="m_version" scadeType="kcg_int64" targetName="m_version" targetType="kcg_int64"/>
+      <Field scadeName="q_media" scadeType="kcg_int64" targetName="q_media" targetType="kcg_int64"/>
+      <Field scadeName="n_pig" scadeType="kcg_int64" targetName="n_pig" targetType="kcg_int64"/>
+      <Field scadeName="n_total" scadeType="kcg_int64" targetName="n_total" targetType="kcg_int64"/>
+      <Field scadeName="m_dup" scadeType="kcg_int64" targetName="m_dup" targetType="kcg_int64"/>
+      <Field scadeName="m_mcount" scadeType="kcg_int64" targetName="m_mcount" targetType="kcg_int64"/>
+      <Field scadeName="nid_c" scadeType="kcg_int64" targetName="nid_c" targetType="kcg_int64"/>
+      <Field scadeName="nid_bg" scadeType="kcg_int64" targetName="nid_bg" targetType="kcg_int64"/>
+      <Field scadeName="q_link" scadeType="kcg_int64" targetName="q_link" targetType="kcg_int64"/>
+    </StructType>
+    <StructType targetCompFct="kcg_comp_CompressedPackets_T_Common_Types_Pkg" targetCopyFct="kcg_copy_CompressedPackets_T_Common_Types_Pkg" targetName="CompressedPackets_T_Common_Types_Pkg">
+      <Field scadeName="PacketHeaders" scadeType="Metadata_T_Common_Types_Pkg" targetName="PacketHeaders" targetType="Metadata_T_Common_Types_Pkg"/>
+      <Field scadeName="PacketData" scadeType="CompressedPacketData_T_Common_Types_Pkg" targetName="PacketData" targetType="CompressedPacketData_T_Common_Types_Pkg"/>
+    </StructType>
+    <ArrayType cellType="MetadataElement_T_Common_Types_Pkg" size="30" targetCompFct="kcg_comp_Metadata_T_Common_Types_Pkg" targetCopyFct="kcg_copy_Metadata_T_Common_Types_Pkg" targetName="Metadata_T_Common_Types_Pkg"/>
+    <StructType targetCompFct="kcg_comp_MetadataElement_T_Common_Types_Pkg" targetCopyFct="kcg_copy_MetadataElement_T_Common_Types_Pkg" targetName="MetadataElement_T_Common_Types_Pkg">
+      <Field scadeName="nid_packet" scadeType="" targetName="nid_packet" targetType="NID_PACKET"/>
+      <Field scadeName="q_dir" scadeType="Q_DIR" targetName="q_dir" targetType="Q_DIR"/>
+      <Field scadeName="valid" scadeType="kcg_bool" targetName="valid" targetType="kcg_bool"/>
+      <Field scadeName="startAddress" scadeType="kcg_int64" targetName="startAddress" targetType="kcg_int64"/>
+      <Field scadeName="endAddress" scadeType="kcg_int64" targetName="endAddress" targetType="kcg_int64"/>
+    </StructType>
+    <ArrayType cellType="kcg_int64" size="500" targetCompFct="kcg_comp_CompressedPacketData_T_Common_Types_Pkg" targetCopyFct="kcg_copy_CompressedPacketData_T_Common_Types_Pkg" targetName="CompressedPacketData_T_Common_Types_Pkg"/>
+    <PredefType scadeName="int8" targetName="kcg_int8"/>
+    <PredefType scadeName="int16" targetName="kcg_int16"/>
+    <PredefType scadeName="int32" targetName="kcg_int32"/>
+    <PredefType scadeName="int64" targetName="kcg_int64"/>
+    <PredefType scadeName="uint8" targetName="kcg_uint8"/>
+    <PredefType scadeName="uint16" targetName="kcg_uint16"/>
+    <PredefType scadeName="uint32" targetName="kcg_uint32"/>
+    <PredefType scadeName="uint64" targetName="kcg_uint64"/>
+    <PredefType scadeName="size" targetName="kcg_size"/>
+    <PredefType scadeName="float32" targetName="kcg_float32"/>
+    <PredefType scadeName="float64" targetName="kcg_float64"/>
+    <PredefType scadeName="bool" targetName="kcg_bool"/>
+    <PredefType scadeName="char" targetName="kcg_char"/>
+  </Model>

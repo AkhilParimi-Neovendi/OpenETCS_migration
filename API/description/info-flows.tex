@@ -1,0 +1,31 @@
+\chapter{Abstract information flows}
+\label{information-flows}
+
+We describe in this chapter the information flow betwen EVC and other
+units using ASN.1 notation. See appendix \ref{asn1-primer} to know
+more about ASN.1.
+
+\section{Train Interface}
+
+The interface between the EVC and Train Interface Unit is defined in
+following \ASN{Train-interface} module. This module defines
+\ASN{Message-Train-Interface-to-EVC} and
+\ASN{Message-EVC-to-Train-Interface}.
+
+Its structure follows \cite{subset-094} which itself defines a
+concrete interface for \cite{subset-034} (Train Interface FIS).
+
+\lstinputlisting[language=ASN1]{asn1/train-interface.asn}
+
+\section{Balise Interface}
+
+The interface between the EVC and Balise Transmission Unit is defined
+in following \ASN{Balise-Interface} module. This module defines
+\ASN{Message-Balise-Interface-to-EVC} and
+\ASN{Message-EVC-to-Balise-Interface}.
+
+Its structure follows \cite[§4.8 Eurobalise interface]{alstom-api}.
+
+\lstinputlisting[language=ASN1]{asn1/balise-interface.asn}
+
+% LocalWords:  EVC Balise

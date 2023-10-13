@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="function" name="ToIsolate">
+	<inputs>
+		<Variable name="ETCS_Isolation_Status">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/2cbe2/5EC5/A90/54c1335e3ce3"/>
+			</pragmas>
+		</Variable>
+	</inputs>
+	<outputs>
+		<Variable name="Condition1">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/2c890/5EC5/A90/54c12e5f6527"/>
+			</pragmas>
+		</Variable>
+	</outputs>
+	<locals>
+		<Variable name="_L2">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/2cbe5/5EC5/A90/54c1335e5039"/>
+			</pragmas>
+		</Variable>
+	</locals>
+	<data>
+		<!-- Condition1 = _L2; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="Condition1"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="_L2"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/2cbe3/5EC5/A90/54c1335e1e97"/>
+			</pragmas>
+		</Equation>
+		<!-- _L2 = ETCS_Isolation_Status; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L2"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="ETCS_Isolation_Status"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/2cbe4/5EC5/A90/54c1335e5aaf"/>
+			</pragmas>
+		</Equation>
+	</data>
+	<pragmas>
+		<ed:Operator oid="!ed/2c88b/5EC5/A90/54c12e5f3c28" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+			<comment>§4.6.3 : Condition 1 : &quot;The driver isolates the ERTMS/ETCS on-board equipment&quot;.</comment>
+			<diagrams>
+				<NetDiagram name="diagram_ToIsolate_1" landscape="true" format="A4 (210 297)" oid="!ed/2c88e/5EC5/A90/54c12e5f7dc0">
+					<presentationElements>
+						<EquationGE presentable="!ed/2cbe3/5EC5/A90/54c1335e1e97">
+							<position>
+								<Point x="15187" y="8176"/>
+							</position>
+							<size>
+								<Size width="318" height="502"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/2cbe4/5EC5/A90/54c1335e5aaf">
+							<position>
+								<Point x="9472" y="8202"/>
+							</position>
+							<size>
+								<Size width="264" height="502"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/2cbe4/5EC5/A90/54c1335e5aaf" dstEquation="!ed/2cbe3/5EC5/A90/54c1335e1e97">
+							<positions>
+								<Point x="9737" y="8467"/>
+								<Point x="12488" y="8467"/>
+								<Point x="12488" y="8440"/>
+								<Point x="15240" y="8440"/>
+							</positions>
+						</Edge>
+					</presentationElements>
+				</NetDiagram>
+			</diagrams>
+		</ed:Operator>
+	</pragmas>
+</Operator>

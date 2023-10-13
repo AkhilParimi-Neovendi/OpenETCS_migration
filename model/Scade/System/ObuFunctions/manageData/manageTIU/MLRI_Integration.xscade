@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Constant name="cEmptyTrainData">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="TIU_Types_Pkg::trainData_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- {valid : false, acknowledgedByDriver : false, trainCategory : NC_TRAIN_Train_does... -->
+				<DataStructOp>
+					<data>
+						<LabelledExpression label="valid">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="acknowledgedByDriver">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="trainCategory">
+							<flow>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category"/>
+									</path>
+								</IdExpression>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="cantDeficientcy">
+							<flow>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="NC_CDTRAIN_Cant_Deficiency_80_mm"/>
+									</path>
+								</IdExpression>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="trainLength">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="brakePerctage">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="maxTrainSpeed">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="loadingGauge">
+							<flow>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles"/>
+									</path>
+								</IdExpression>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="axleLoadCategory">
+							<flow>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="M_AXLELOADCAT_A"/>
+									</path>
+								</IdExpression>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="airtightSystem">
+							<flow>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="M_AIRTIGHT_Not_fitted"/>
+									</path>
+								</IdExpression>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="axleNumber">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="numberNationalSystems">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="nationSystems">
+							<flow>
+								<!-- [0, 0, 0, 0, 0] -->
+								<DataArrayOp>
+									<data>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+									</data>
+								</DataArrayOp>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="numberTractionSystems">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="tractionSystem">
+							<flow>
+								<!-- [{m_voltage : M_VOLTAGE_Line_not_fitted_with_any_traction_system, nid_ctraction :... -->
+								<DataArrayOp>
+									<data>
+										<!-- {m_voltage : M_VOLTAGE_Line_not_fitted_with_any_traction_system, nid_ctraction : ... -->
+										<DataStructOp>
+											<data>
+												<LabelledExpression label="m_voltage">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="M_VOLTAGE_Line_not_fitted_with_any_traction_system"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="nid_ctraction">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+											</data>
+										</DataStructOp>
+										<!-- {m_voltage : M_VOLTAGE_Line_not_fitted_with_any_traction_system, nid_ctraction : ... -->
+										<DataStructOp>
+											<data>
+												<LabelledExpression label="m_voltage">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="M_VOLTAGE_Line_not_fitted_with_any_traction_system"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="nid_ctraction">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+											</data>
+										</DataStructOp>
+										<!-- {m_voltage : M_VOLTAGE_Line_not_fitted_with_any_traction_system, nid_ctraction : ... -->
+										<DataStructOp>
+											<data>
+												<LabelledExpression label="m_voltage">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="M_VOLTAGE_Line_not_fitted_with_any_traction_system"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="nid_ctraction">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+											</data>
+										</DataStructOp>
+										<!-- {m_voltage : M_VOLTAGE_Line_not_fitted_with_any_traction_system, nid_ctraction : ... -->
+										<DataStructOp>
+											<data>
+												<LabelledExpression label="m_voltage">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="M_VOLTAGE_Line_not_fitted_with_any_traction_system"/>
+															</path>
+														</IdExpression>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="nid_ctraction">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+											</data>
+										</DataStructOp>
+									</data>
+								</DataArrayOp>
+							</flow>
+						</LabelledExpression>
+					</data>
+				</DataStructOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/14acd/39F3/D40/54ec9f64984" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="TIU_Types_Pkg::trainData_T" refOid="!ed/b6cc/4B8D/12C4/54845f881511"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="cEmptyBrakeCmd">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="TIU_Types_Pkg::Brake_command_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- {valid : false, m_servicebrake_cm : TIU_Types_Pkg::brake_signal_command_not_defin... -->
+				<DataStructOp>
+					<data>
+						<LabelledExpression label="valid">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="m_servicebrake_cm">
+							<flow>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="TIU_Types_Pkg::brake_signal_command_not_defined"/>
+									</path>
+								</IdExpression>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="m_emergencybrake_cm">
+							<flow>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="TIU_Types_Pkg::brake_signal_command_not_defined"/>
+									</path>
+								</IdExpression>
+							</flow>
+						</LabelledExpression>
+					</data>
+				</DataStructOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/37e50/7311/16E4/54f486b874f4" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="TIU_Types_Pkg::Brake_command_T" refOid="!ed/b55b/4B8D/12C4/54845f885aaa"/>
+						<ConstVarRef path="TIU_Types_Pkg::brake_signal_command_not_defined" refOid="!ed/17515/1DD5/1710/54bd154542a3"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+	</declarations>
+</File>

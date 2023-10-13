@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Package name="TargetManagement_types">
+			<declarations>
+				<Constant name="MaSections">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="TrackAtlasTypes::MAsMaxSections"/>
+							</path>
+						</IdExpression>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/26291c/5DE2/F50/55a8c33e264c"/>
+					</pragmas>
+				</Constant>
+				<Type name="Target_real_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="targetType">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="TargetType_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/98335/3A91/DF8/54eceb8c737b"/>
+									</pragmas>
+								</Field>
+								<Field name="distance">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="SDM_Types_Pkg::L_internal_real_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2cb94/6534/166C/54db4dca5ee9"/>
+									</pragmas>
+								</Field>
+								<Field name="speed">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="SDM_Types_Pkg::V_internal_real_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2cb95/6534/166C/54db4dca4cb2"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/2cb93/6534/166C/54db4dcad59" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>input value</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="TargetType_T">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="EoA">
+									<pragmas>
+										<ed:Value oid="!ed/2cb97/6534/166C/54db4dca7b04"/>
+									</pragmas>
+								</Value>
+								<Value name="SvL">
+									<pragmas>
+										<ed:Value oid="!ed/98333/3A91/DF8/54eceb5f2755"/>
+									</pragmas>
+								</Value>
+								<Value name="MRSP">
+									<pragmas>
+										<ed:Value oid="!ed/98334/3A91/DF8/54eceb6944eb"/>
+									</pragmas>
+								</Value>
+								<Value name="invalid">
+									<pragmas>
+										<ed:Value oid="!ed/c50d9/7394/1A6C/55af8a82efe"/>
+									</pragmas>
+								</Value>
+								<Value name="LoA">
+									<pragmas>
+										<ed:Value oid="!ed/c50f1/1E98/180/55afa7f76f1d"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/2cb96/6534/166C/54db4dca491b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>the possibles types of a target</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="MRSP_internal_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="MRSP_internal_section_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="TrackAtlasTypes::MRSPMaxSections"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/3babc/2115/1C84/54ecb96845c5"/>
+					</pragmas>
+				</Type>
+				<Type name="MRSP_internal_section_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="Loc_Abs">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="SDM_Types_Pkg::L_internal_real_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/a7b46/2115/1C84/54ecbb8d639e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Safe Distance from Origin</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="MRS">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="SDM_Types_Pkg::V_internal_real_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/a7b4d/2115/1C84/54ecbbc32cbe" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Most Restrictive Speed, for head of train (compensated for train length)</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/a7b71/2115/1C84/54ecbc2e7020"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/a7b3e/2115/1C84/54ecbb565ed6"/>
+					</pragmas>
+				</Type>
+				<Type name="Target_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="targetType">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="TargetType_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/11be1a/3A91/DF8/54ecf79b77cc"/>
+									</pragmas>
+								</Field>
+								<Field name="distance">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::L_internal_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/11be24/3A91/DF8/54ecf7c33f46"/>
+									</pragmas>
+								</Field>
+								<Field name="speed">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::V_internal_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/11be2e/3A91/DF8/54ecf7ee4741"/>
+									</pragmas>
+								</Field>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/c50e8/1E98/180/55afa7d8510b"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/11be19/3A91/DF8/54ecf7633eb4" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Target_T with integer types</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="Target_list_MRSP_real_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="Target_real_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="TrackAtlasTypes::MRSPMaxSections"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b0414/138A/304/54f44ef73d98"/>
+					</pragmas>
+				</Type>
+				<Type name="MA_section_real_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5c9f9/24AA/89C/54f99eab3b94"/>
+									</pragmas>
+								</Field>
+								<Field name="v_main">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="SDM_Types_Pkg::V_internal_real_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/752245/574E/C58/55a92f4b4ede"/>
+									</pragmas>
+								</Field>
+								<Field name="EOA">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="EOA_real_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5bb92/578F/938/54f60ab21874"/>
+									</pragmas>
+								</Field>
+								<Field name="DP_valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5bb93/578F/938/54f60ab2851"/>
+									</pragmas>
+								</Field>
+								<Field name="DangerPoint">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="SDM_Types_Pkg::L_internal_real_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5bb94/578F/938/54f60ab26fb2"/>
+									</pragmas>
+								</Field>
+								<Field name="OL_valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5bb95/578F/938/54f60ab2457"/>
+									</pragmas>
+								</Field>
+								<Field name="Overlap">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="SDM_Types_Pkg::L_internal_real_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5bb96/578F/938/54f60ab25700"/>
+									</pragmas>
+								</Field>
+								<Field name="q_calculate_release">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1ae8f/66CC/3828/5506071bfa7"/>
+									</pragmas>
+								</Field>
+								<Field name="ReleaseSpeed">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="SDM_Types_Pkg::V_internal_real_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5bb97/578F/938/54f60ab21a67"/>
+									</pragmas>
+								</Field>
+								<Field name="level">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="TrackAtlasTypes::MA_Level_t"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/75224f/574E/C58/55a92fc03bca"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5bb90/578F/938/54f60ab23f33"/>
+					</pragmas>
+				</Type>
+				<Type name="EOA_real_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="Location">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="SDM_Types_Pkg::L_internal_real_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5bc04/578F/938/54f60beb2ee5"/>
+									</pragmas>
+								</Field>
+								<Field name="TargetSpeed">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="SDM_Types_Pkg::V_internal_real_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5bc05/578F/938/54f60beb7f9d"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5bc03/578F/938/54f60beb4543"/>
+					</pragmas>
+				</Type>
+				<Type name="TargetCollection_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="updatedTargetList">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/9ce5e/578F/938/54f617834776"/>
+									</pragmas>
+								</Field>
+								<Field name="MRSP_targetList">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Target_list_MRSP_real_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/9ce71/578F/938/54f617f17442"/>
+									</pragmas>
+								</Field>
+								<Field name="EOA_target">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Target_real_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/9ce7b/578F/938/54f61808509a"/>
+									</pragmas>
+								</Field>
+								<Field name="SvL_LoA_target">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Target_real_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1d87ff/578F/938/54f63a1f6e14"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/9ce5d/578F/938/54f617711054" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>collects all targets</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+			</declarations>
+			<pragmas>
+				<ed:Package oid="!ed/2cb8f/6534/166C/54db4dca7dc7" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<diagrams>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/2cb90/6534/166C/54db4dca36c1" blockKind="constants"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/2cb91/6534/166C/54db4dca257d" blockKind="types" columnsSize="0, 331, 377, 300"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/2cb92/6534/166C/54db4dcaa7c" blockKind="sensors"/>
+					</diagrams>
+					<references>
+						<ConstVarRef path="TrackAtlasTypes::MAsMaxSections" refOid="!ed/4843ed/3111/9E8/5592fcee3010"/>
+						<TypeRef path="SDM_Types_Pkg::L_internal_real_Type" refOid="!ed/4646/7A5F/209C/54ddb225736d"/>
+						<TypeRef path="SDM_Types_Pkg::V_internal_real_Type" refOid="!ed/4669/7A5F/209C/54ddb4416204"/>
+						<ConstVarRef path="TrackAtlasTypes::MRSPMaxSections" refOid="!ed/4843ec/3111/9E8/5592fceed2e"/>
+						<TypeRef path="Obu_BasicTypes_Pkg::L_internal_Type" refOid="!ed/816f/4AD8/11D4/5304c4f23c06"/>
+						<TypeRef path="Obu_BasicTypes_Pkg::V_internal_Type" refOid="!ed/8181/4AD8/11D4/5304c68a59ab"/>
+						<TypeRef path="TrackAtlasTypes::MA_Level_t" refOid="!ed/c2524/4FF6/EC4/55a65dca39e5"/>
+					</references>
+				</ed:Package>
+			</pragmas>
+		</Package>
+	</declarations>
+</File>

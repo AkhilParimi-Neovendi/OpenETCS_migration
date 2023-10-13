@@ -1,0 +1,48 @@
+$********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
+** Command: kcg662.exe -config C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/Radio/MoRC/Simulation/config.txt
+** Generation date: 2023-09-01T13:36:11
+*************************************************************$
+*** Type Error (ERR_100): Type mismatch
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/Radio/MoRC/Simulation/scade_model_without_unused.scade, line 8006, character 18
+  at path MoRC_Pck::Subfunc_Pkg::initiateSession_v2/IfBlock1:else:else:else:nid_c=
+ This expression has type int32 but should have type int64 (output flow mismatch)
+*** Type Error (ERR_100): Type mismatch
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/Radio/MoRC/Simulation/scade_model_without_unused.scade, line 34646, character 31
+  at path TM_lib_internal::RECV_LookupPacketLoop/_L32=
+ This expression has type (int32, int64, bool, bool)
+ but should have type (int32, int32, bool, bool)
+ (input flow #2 (Metadata_looked_for) mismatch)
+*** Type Error (ERR_100): Type mismatch
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/Radio/MoRC/Simulation/scade_model_without_unused.scade, line 36712, character 3
+  at path TM_conversions::CAST_Int_to_NID_MN/nid_mn=
+ This expression has type int32 but should have type int64 (output flow mismatch)
+*** Type Error (ERR_100): Type mismatch
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/Radio/MoRC/Simulation/scade_model_without_unused.scade, line 37399, character 3
+  at path TM_conversions::CAST_Int_to_NID_PACKET/nid_packet=
+ This expression has type int32 but should have type int64 (output flow mismatch)
+*** Type Error (ERR_100): Type mismatch
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/Radio/MoRC/Simulation/scade_model_without_unused.scade, line 31163, character 62
+  at path MoRC_Pck::Coder_Pkg::genMsgToRBC/_L1=
+ This expression has type (bool, int64, int64, int64, enum Q_MARQSTREASON/,
+ int64, int32, enum Q_EMERGENCYSTOP/, int32)
+ but should have type (bool, int64, int64, int64, enum Q_MARQSTREASON/, int64,
+ int64, enum Q_EMERGENCYSTOP/, int64)
+*** Type Error (ERR_100): Type mismatch
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/Radio/MoRC/Simulation/scade_model_without_unused.scade, line 38544, character 3
+  at path TM_conversions::CAST_Int_to_NID_C/nid_c=
+ This expression has type int32 but should have type int64 (output flow mismatch)
+*** Type Error (ERR_100): Type mismatch
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/Radio/MoRC/Simulation/scade_model_without_unused.scade, line 38740, character 3
+  at path TM_conversions::CAST_Int_to_NID_RBC/nid_rbc=
+ This expression has type int32 but should have type int64 (output flow mismatch)
+*** Type Error (ERR_100): Type mismatch
+  at file C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/Radio/MoRC/Simulation/scade_model_without_unused.scade, line 38936, character 3
+  at path TM_conversions::CAST_Int_to_NID_RADIO/nid_radio=
+ This expression has type int32 but should have type int64 (output flow mismatch)
+No warning was found
+8 errors were found
+No failure occurred
+$********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
+** kcg.log
+** Generation date: 2023-09-01T13:36:11
+*************************************************************$

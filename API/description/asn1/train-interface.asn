@@ -1,0 +1,220 @@
+Train-interface DEFINITIONS AUTOMATIC TAGS ::=
+BEGIN
+  M-sleeping-signal-status ::=
+        ENUMERATED { info-not-available, signal-active, signal-not-active }
+
+  M-passiveshunting-signal-status ::=
+        ENUMERATED { info-not-available, passive-shunting-permitted,
+                     passive-shunting-not-permitted }
+
+  M-nonleading-signal-status ::=
+        ENUMERATED { info-not-available, non-leading-permitted,
+                     non-leading-not-permitted }
+
+  M-cab-signal-status ::=
+        ENUMERATED { info-not-available, both-desks-are-closed,
+                     desk-A-is-open, desk-B-is-open,
+                     both-desks-are-open }
+
+  M-directioncontroller-signal-status ::=
+        ENUMERATED { info-not-available, direction-controller-in-neutral,
+                     direction-controller-in-forward,
+                     direction-controller-in-backward }
+
+  M-trainintegrity-signal-status ::=
+        ENUMERATED { info-not-available, train-is-not-integer,
+                     train-is-integer }
+
+  M-traction-signal-status ::=
+        ENUMERATED { info-not-available, traction-on, traction-off }
+
+  Mode-control-and-train-status ::= SEQUENCE {
+        m-sleeping-st                   M-sleeping-signal-status,
+        m-passiveshunting-st            M-passiveshunting-signal-status,
+        m-nonleading-st                 M-nonleading-signal-status,
+        m-cab-st                        M-cab-signal-status,
+        m-directioncontroller-st        M-directioncontroller-signal-status,
+        m-trainintegrity-st             M-trainintegrity-signal-status,
+        m-traction-st                   M-traction-signal-status
+  }
+
+  Isolation-status ::=
+        ENUMERATED { info-not-available, on-board-equipment-is-isolated,
+                     on-board-equipement-is-not-isolated }
+
+  M-brake-status ::=
+        ENUMERATED { info-not-available, is-active, is-not-active }
+
+  Brake-status ::= SEQUENCE {
+        m-regenerativebrake-st          M-brake-status,
+        m-eddycurrentbrake-st           M-brake-status,
+        m-magneticshoebrake-st          M-brake-status,
+        m-electropneumaticbrake-st      M-brake-status,
+        m-additionalbrake-st            M-brake-status
+  }
+
+  P-brake-pressure-value ::= CHOICE {
+        info-not-available      NULL,
+        pressure                -- 0 to 6 bar with 0.1 increment
+                        REAL (WITH COMPONENTS { mantissa        (0..60),
+                                                base            (10),
+                                                exponent        (-1) })
+  }
+
+  M-brake-signal-command ::=
+        ENUMERATED { info-not-available, apply-brake, release-brake }
+
+  Brake-command ::= SEQUENCE {
+        m-servicebrake-cm       M-brake-signal-command,
+        m-emergencybrake-cm     M-brake-signal-command
+  }
+
+  M-brake-inhibit-command ::=
+        ENUMERATED { info-not-available, inhibit-brake,
+                     do-not-inhibit-brake }
+
+  M-eddy-current-brake-inhibition ::=
+        ENUMERATED { info-not-available,
+                     inhibit-for-service-brake,
+                     inhibit-for-emergency-brake,
+                     inhibit-for-both-service-emergency-brake,
+                     do-not-inhibit-for-service-brake,
+                     do-not-inhibit-for-emergency-brake,
+                     do-not-inhibit-for-both-service-emergency-brake
+                   }
+
+  Brake-inhibition-command ::= SEQUENCE {
+        m-regenerativebrake-cm  M-brake-inhibit-command,
+        m-eddycurrentbrake-cm   M-eddy-current-brake-inhibition,
+        m-magneticshoebrake-cm  M-brake-inhibit-command
+  }
+
+  M-train-data-entry-type ::=
+        ENUMERATED { info-not-available, fixed-entry-type,
+                     flexible-entry-type, switchable-entry-type }
+
+  M-train-data-info ::= NULL -- FIXME: to do
+
+  M-pantograph-command ::=
+        ENUMERATED { info-not-available, lower-pantograph,
+                     raise-pantograph }
+
+  M-airtightness-command ::=
+        ENUMERATED { info-not-available, tunnel-condition-active,
+                     tunnel-condition-not-active }
+
+  M-mainpowerswitch-command ::=
+        ENUMERATED { info-not-available, open-main-power-swicth,
+                     close-main-power-switch }
+
+  M-traction-cutoff-command ::=
+        ENUMERATED { info-not-available, apply-traction-cutoff,
+                     release-traction-cutoff }
+
+  Type-I-train-commands ::= SEQUENCE {
+        m-pantograph-cm         M-pantograph-command,
+        m-airtightness-cm       M-airtightness-command,
+        m-mainpowerswitch-cm    M-mainpowerswitch-command,
+        m-traction-cutoff-cm    M-traction-cutoff-command
+  }
+
+  D-test-distance ::= CHOICE {
+        now      NULL,
+        distance -- 0..42949672940 mm with 10 mm increment
+                 REAL (WITH COMPONENTS { mantissa        (0..4294967294),
+                                         base            (10),
+                                         exponent        (-2) }) -- cm
+  }
+
+  D-test-trackcond ::= D-test-distance -- SUBSET-094 8.3.3.4
+
+  L-test-trackcond ::= D-test-distance -- SUBSET-094 8.3.3.8
+
+  M-trackcond ::=
+        ENUMERATED { non-stopping-area,
+                     tunnel-stopping-area,
+                     sound-horn,
+                     powerless-section-lower-pantograph,
+                     radio-hole,
+                     air-tightness,
+                     switch-off-regenerative-brake,
+                     switch-off-eddy-current-brake-for-service-brake,
+                     switch-off-magnetic-shoe-brake,
+                     powerless-section-switch-off-main-power-switch,
+                     switch-off-eddy-current-brake-for-emergency-brake }
+
+  D-test-trackinit ::= D-test-distance -- SUBSET-094 8.3.3.5
+
+  Type-I-train-and-brake-inhibition-with-distance-commands ::=
+        CHOICE { -- Q_TRACKINIT
+                nothing-to-resume-profile-follow [0] SEQUENCE {
+                        d-test-trackcond        D-test-trackcond,
+                        l-test-trackcond        L-test-trackcond,
+                        m-trackcond             M-trackcond,
+                        n-iter  SEQUENCE (SIZE (0..31)) OF SEQUENCE {
+                                  d-test-trackcond      D-test-trackcond,
+                                  l-test-trackcond      L-test-trackcond,
+                                  m-trackcond           M-trackcond
+                                }
+                },
+                empty-profile-initial-state-to-be-resumed [1] D-test-trackinit
+               }
+
+  D-test-traction ::= D-test-distance
+
+  NID-ctraction ::= INTEGER (0..1023)
+
+  M-voltage ::= CHOICE {
+        line-not-fitted-with-any-traction-system        NULL,
+        ac-25kV-50Hz                                    NID-ctraction,
+        ac-15kV-16-7Hz                                  NID-ctraction,
+        dc-3kV                                          NID-ctraction,
+        dc-1-5kV                                        NID-ctraction,
+        dc-600-750kV                                    NID-ctraction
+  }
+
+  M-change-traction-system ::= SEQUENCE {
+        d-test-traction         D-test-traction,
+        m-voltage               M-voltage
+  }
+
+  Passenger-door-control-info ::= NULL -- FIXME: to do
+
+  D-test-current ::= D-test-distance -- SUBSET-094 8.3.3.3
+
+  M-current ::= CHOICE { -- SUBSET-026 7.5.1.62.1
+        no-restriction  NULL,
+        restriction     -- 0..10000 A with 10 A increment
+                        REAL (WITH COMPONENTS { mantissa        (0..1000),
+                                                base            (10),
+                                                exponent        (1) }) --10 A
+  }
+
+  Change-of-allowed-current-consumption ::= SEQUENCE {
+        d-test-current  D-test-current,
+        m-current       M-current
+  }
+
+  Message-Train-Interface-to-EVC ::= CHOICE {
+        train-status    Mode-control-and-train-status, -- SUBSET-094 8.3.2.6
+        brake-status    Brake-status, -- SUBSET-094 8.3.2.8
+        brake-pressure  P-brake-pressure-value, -- SUBSET-094 8.3.2.9
+        train-data-entry-type   M-train-data-entry-type, -- SUBSET-094 8.3.2.12
+        train-data-info M-train-data-info, -- SUBSET-094 8.3.2.13
+        type-I-train-and-brake-inhibition  -- SUBSET-094 8.3.2.15
+                Type-I-train-and-brake-inhibition-with-distance-commands
+  }
+
+  Message-EVC-to-Train-Interface ::= CHOICE {
+        isolation-status        Isolation-status, -- SUBSET-094 8.3.2.7
+        brake-command           Brake-command, -- SUBSET-094 8.3.2.10
+        brake-inhibition     Brake-inhibition-command, -- SUBSET-094 8.3.2.11
+        type-I-train-commands   Type-I-train-commands, -- SUBSET-094 8.3.2.14
+        change-traction-system
+                        M-change-traction-system, -- SUBSET-094 8.3.2.16
+        passenger-door-control-info
+                        Passenger-door-control-info, -- SUBSET-094 8.3.2.17
+        change-of-allowed-current-consumption -- SUBSET-094 8.3.2.18
+                        Change-of-allowed-current-consumption
+  }
+END

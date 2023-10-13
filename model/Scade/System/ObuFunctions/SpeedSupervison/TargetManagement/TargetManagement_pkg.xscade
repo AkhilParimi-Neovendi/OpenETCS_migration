@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Package name="TargetManagement_pkg">
+			<declarations>
+				<Package name="internalOperators" href="internalOperators.xscade"/>
+				<Constant name="emptyMRSPSection">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="TargetManagement_types::MRSP_internal_section_T"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<!-- {Loc_Abs : 0.0, MRS : 0.0, valid : false} -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="Loc_Abs">
+									<flow>
+										<ConstValue value="0.0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="MRS">
+									<flow>
+										<ConstValue value="0.0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="valid">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/6ac03/3667/221C/54f073716dd7"/>
+					</pragmas>
+				</Constant>
+				<Constant name="emptyMASection">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="TargetManagement_types::MA_section_real_T"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<!-- {valid : false, v_main : 0.0, EOA : {Location : 0.0, TargetSpeed : 0.0}, DP_valid... -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="valid">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="v_main">
+									<flow>
+										<ConstValue value="0.0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="EOA">
+									<flow>
+										<!-- {Location : 0.0, TargetSpeed : 0.0} -->
+										<DataStructOp>
+											<data>
+												<LabelledExpression label="Location">
+													<flow>
+														<ConstValue value="0.0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="TargetSpeed">
+													<flow>
+														<ConstValue value="0.0"/>
+													</flow>
+												</LabelledExpression>
+											</data>
+										</DataStructOp>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="DP_valid">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="DangerPoint">
+									<flow>
+										<ConstValue value="0.0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="OL_valid">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="Overlap">
+									<flow>
+										<ConstValue value="0.0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="q_calculate_release">
+									<flow>
+										<ConstValue value="false"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="ReleaseSpeed">
+									<flow>
+										<ConstValue value="0.0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="level">
+									<flow>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="TrackAtlasTypes::MA_L1"/>
+											</path>
+										</IdExpression>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/cb26f/600D/1E78/54f0b2a93a72"/>
+					</pragmas>
+				</Constant>
+				<Constant name="emptyTarget">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="TargetManagement_types::Target_real_T"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<!-- {targetType : TargetManagement_types::invalid, distance : 0.0, speed : 0.0} -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="targetType">
+									<flow>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="TargetManagement_types::invalid"/>
+											</path>
+										</IdExpression>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="distance">
+									<flow>
+										<ConstValue value="0.0"/>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="speed">
+									<flow>
+										<ConstValue value="0.0"/>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/affc1/600D/1E78/54f0a2ae4ffc"/>
+					</pragmas>
+				</Constant>
+				<Type name="extractTargetsMRSPACC">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="targetList">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="TargetManagement_types::Target_list_MRSP_real_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/52c9c/3D2D/63B0/54da48bf635c"/>
+									</pragmas>
+								</Field>
+								<Field name="lastInsertedTargetIndex">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/52cb8/3D2D/63B0/54da490d4bed"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/52c9b/3D2D/63B0/54da48ae3fbc"/>
+					</pragmas>
+				</Type>
+				<Operator name="TargetManagement" href="TargetManagement.xscade"/>
+			</declarations>
+			<pragmas>
+				<ed:Package oid="!ed/52c5c/3D2D/63B0/54da483f6041" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<diagrams>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/52c5d/3D2D/63B0/54da483f516a" blockKind="constants" columnsSize="0, 209, 426, 410, 300"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/52c5e/3D2D/63B0/54da483f3d80" blockKind="types" columnsSize="0, 228, 363, 300"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/52c5f/3D2D/63B0/54da483f7fc0" blockKind="sensors"/>
+					</diagrams>
+					<references>
+						<TypeRef path="TargetManagement_types::MRSP_internal_section_T" refOid="!ed/a7b3e/2115/1C84/54ecbb565ed6"/>
+						<TypeRef path="TargetManagement_types::MA_section_real_T" refOid="!ed/5bb90/578F/938/54f60ab23f33"/>
+						<ConstVarRef path="TrackAtlasTypes::MA_L1" refOid="!ed/c2525/4FF6/EC4/55a65dd84b12"/>
+						<TypeRef path="TargetManagement_types::Target_real_T" refOid="!ed/2cb93/6534/166C/54db4dcad59"/>
+						<ConstVarRef path="TargetManagement_types::invalid" refOid="!ed/c50d9/7394/1A6C/55af8a82efe"/>
+						<TypeRef path="TargetManagement_types::Target_list_MRSP_real_T" refOid="!ed/b0414/138A/304/54f44ef73d98"/>
+					</references>
+				</ed:Package>
+			</pragmas>
+		</Package>
+	</declarations>
+</File>

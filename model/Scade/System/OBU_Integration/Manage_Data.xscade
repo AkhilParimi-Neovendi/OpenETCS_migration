@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="node" name="Manage_Data">
+	<inputs>
+		<Variable name="TrainFromAPI">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="BaliseGroupInCoordinateSystem_t"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4adafb/1AE7/E88/54cb29fe7184"/>
+			</pragmas>
+		</Variable>
+		<Variable name="From_Proc">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="Placeholder_Generic"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4ad950/1AE7/E88/54caca155602"/>
+			</pragmas>
+		</Variable>
+	</inputs>
+	<outputs>
+		<Variable name="To_Proc">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="Placeholder_Generic"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4ada23/1AE7/E88/54cad0005c76"/>
+			</pragmas>
+		</Variable>
+		<Variable name="To_RBC_Mgr">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="Placeholder_Generic"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4adaa6/1AE7/E88/54cb28d55498"/>
+			</pragmas>
+		</Variable>
+		<Variable name="outTIUStatus">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="TIU_Types_Pkg::TIU_trainStatus_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/9706a/2D25/D1C/54d9ea381dae"/>
+			</pragmas>
+		</Variable>
+	</outputs>
+	<locals>
+		<Variable name="_L2">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4ad7d3/1AE7/E88/54cac1bd7ee"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L1">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="TIU_Types_Pkg::Message_Train_Interface_to_EVC_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4ad7d2/1AE7/E88/54cac1bd2530"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L3">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="TIU_Types_Pkg::TIU_trainStatus_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/97063/2D25/D1C/54d9e9ca3cfa"/>
+			</pragmas>
+		</Variable>
+	</locals>
+	<data>
+		<!-- _L1, _L2, _L3 = input_from_TIU_API_Pkg::manageTIU_input(_null, _null); -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L1"/>
+				<VariableRef name="_L2"/>
+				<VariableRef name="_L3"/>
+			</lefts>
+			<right>
+				<!-- input_from_TIU_API_Pkg::manageTIU_input(_null, _null) -->
+				<CallExpression>
+					<operator>
+						<OpCall name="2">
+							<operator>
+								<OperatorRef name="input_from_TIU_API_Pkg::manageTIU_input"/>
+							</operator>
+						</OpCall>
+					</operator>
+					<callParameters>
+						<IdExpression>
+							<path>
+								<NullRef/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<NullRef/>
+							</path>
+						</IdExpression>
+					</callParameters>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/4ad7d1/1AE7/E88/54cac1bd224f"/>
+			</pragmas>
+		</Equation>
+	</data>
+	<pragmas>
+		<ed:Operator oid="!ed/32e6a5/1AE7/E88/54c96a994122" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+			<diagrams>
+				<NetDiagram name="diagram_Manage_Data_1" landscape="true" format="A4 (210 297)" oid="!ed/32e6a6/1AE7/E88/54c96a994fe">
+					<presentationElements>
+						<EquationGE presentable="!ed/4ad7d1/1AE7/E88/54cac1bd224f">
+							<position>
+								<Point x="6730" y="5531"/>
+							</position>
+							<size>
+								<Size width="9806" height="10670"/>
+							</size>
+						</EquationGE>
+					</presentationElements>
+				</NetDiagram>
+			</diagrams>
+			<references>
+				<TypeRef path="BaliseGroupInCoordinateSystem_t" refOid="!ed/44de63/1AE7/E88/54cabab67cf0"/>
+				<TypeRef path="Placeholder_Generic" refOid="!ed/4ad7f6/1AE7/E88/54cac39d3747"/>
+				<TypeRef path="TIU_Types_Pkg::TIU_trainStatus_T" refOid="!ed/282d1/103F/1130/54d7721731c"/>
+			</references>
+		</ed:Operator>
+	</pragmas>
+</Operator>

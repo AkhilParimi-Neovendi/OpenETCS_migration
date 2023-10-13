@@ -1,0 +1,5496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Constant name="INT_DMI_DMI_Identifier_T_DMI_1">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39068/6E5D/1EF4/55b613257807"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_DMI_Identifier_T_DMI_2">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3907e/6E5D/1EF4/55b6134536e8"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Cabin_Identifier_T_cabin_A">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/38fe9/B01/2EA0/55bf5f8b5095"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Cabin_Identifier_T_cabin_B">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/38fff/B01/2EA0/55bf5fb07032"/>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_StatusSet_T_Running_state">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_StatusSet_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Running_state"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3909f/B01/2EA0/55bf61d432b1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_StatusSet_T" refOid="!ed/13d72/7DB/31C/54c8e27811c8"/>
+						<ConstVarRef path="DMI_Types_Pkg::Running_state" refOid="!ed/13d73/7DB/31C/54c8e2782f0f"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_StatusSet_T_Starting_state">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_StatusSet_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Starting_state"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/390af/B01/2EA0/55bf6259297d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_StatusSet_T" refOid="!ed/13d72/7DB/31C/54c8e27811c8"/>
+						<ConstVarRef path="DMI_Types_Pkg::Starting_state" refOid="!ed/13d74/7DB/31C/54c8e2785fa5"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_StatusSet_T_Failure_state">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_StatusSet_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Failure_state"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/390b6/B01/2EA0/55bf625c7016" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_StatusSet_T" refOid="!ed/13d72/7DB/31C/54c8e27811c8"/>
+						<ConstVarRef path="DMI_Types_Pkg::Failure_state" refOid="!ed/13d75/7DB/31C/54c8e27832d5"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_StatusSet_T_Running_not_active_state">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_StatusSet_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Running_not_active_state"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/390bd/B01/2EA0/55bf625eff8" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_StatusSet_T" refOid="!ed/13d72/7DB/31C/54c8e27811c8"/>
+						<ConstVarRef path="DMI_Types_Pkg::Running_not_active_state" refOid="!ed/13d76/7DB/31C/54c8e2784fdc"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_StatusSet_T_Train_Speed_Overflow">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_StatusSet_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Train_Speed_Overflow"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/390c4/B01/2EA0/55bf625e1e6f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_StatusSet_T" refOid="!ed/13d72/7DB/31C/54c8e27811c8"/>
+						<ConstVarRef path="DMI_Types_Pkg::Train_Speed_Overflow" refOid="!ed/13d77/7DB/31C/54c8e27824b0"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_StatusSet_T_Invalid_track_condition">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_StatusSet_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Invalid_track_condition"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/390cb/B01/2EA0/55bf625f7ac0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_StatusSet_T" refOid="!ed/13d72/7DB/31C/54c8e27811c8"/>
+						<ConstVarRef path="DMI_Types_Pkg::Invalid_track_condition" refOid="!ed/13d78/7DB/31C/54c8e278136d"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_StatusSet_T_Invalid_predefined_text_message">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_StatusSet_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Invalid_predefined_text_message"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/390d2/B01/2EA0/55bf626023f7" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_StatusSet_T" refOid="!ed/13d72/7DB/31C/54c8e27811c8"/>
+						<ConstVarRef path="DMI_Types_Pkg::Invalid_predefined_text_message" refOid="!ed/13d79/7DB/31C/54c8e2786cb8"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_StatusSet_T_Invalid_text_message">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_StatusSet_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Invalid_text_message"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/390d9/B01/2EA0/55bf6260ec6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_StatusSet_T" refOid="!ed/13d72/7DB/31C/54c8e27811c8"/>
+						<ConstVarRef path="DMI_Types_Pkg::Invalid_text_message" refOid="!ed/13d7a/7DB/31C/54c8e27868bd"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_StatusSet_T_HW_warning_temp_reached">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_StatusSet_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::HW_warning_temp_reached"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/390e0/B01/2EA0/55bf6261ef0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_StatusSet_T" refOid="!ed/13d72/7DB/31C/54c8e27811c8"/>
+						<ConstVarRef path="DMI_Types_Pkg::HW_warning_temp_reached" refOid="!ed/13d7b/7DB/31C/54c8e27833ad"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_StatusSet_T_TFT_OFF_temp_reached">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_StatusSet_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::TFT_OFF_temp_reached"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/390e7/B01/2EA0/55bf62615020" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_StatusSet_T" refOid="!ed/13d72/7DB/31C/54c8e27811c8"/>
+						<ConstVarRef path="DMI_Types_Pkg::TFT_OFF_temp_reached" refOid="!ed/13d7c/7DB/31C/54c8e27851d3"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_StatusSet_T_Device_OFF_temp_reached">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_StatusSet_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Device_OFF_temp_reached"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/390fc/B01/2EA0/55bf666e315b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_StatusSet_T" refOid="!ed/13d72/7DB/31C/54c8e27811c8"/>
+						<ConstVarRef path="DMI_Types_Pkg::Device_OFF_temp_reached" refOid="!ed/13d7d/7DB/31C/54c8e2786b1"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_StatusSet_T_Over_temperature">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_StatusSet_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Over_temperature"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39103/B01/2EA0/55bf66705b45" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_StatusSet_T" refOid="!ed/13d72/7DB/31C/54c8e27811c8"/>
+						<ConstVarRef path="DMI_Types_Pkg::Over_temperature" refOid="!ed/13d7e/7DB/31C/54c8e2785596"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_StatusSet_T_Backlight_on_off">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_StatusSet_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Backlight_on_off"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3910a/B01/2EA0/55bf667234df" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_StatusSet_T" refOid="!ed/13d72/7DB/31C/54c8e27811c8"/>
+						<ConstVarRef path="DMI_Types_Pkg::Backlight_on_off" refOid="!ed/13d7f/7DB/31C/54c8e278e18"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_StatusSet_T_FAN_blocked">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_StatusSet_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::FAN_blocked"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39111/B01/2EA0/55bf667329a7" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_StatusSet_T" refOid="!ed/13d72/7DB/31C/54c8e27811c8"/>
+						<ConstVarRef path="DMI_Types_Pkg::FAN_blocked" refOid="!ed/13d80/7DB/31C/54c8e2786bf1"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_StatusSet_T_Power_supply_key_switch_off">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_StatusSet_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Power_supply_key_switch_off"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39118/B01/2EA0/55bf6674681a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_StatusSet_T" refOid="!ed/13d72/7DB/31C/54c8e27811c8"/>
+						<ConstVarRef path="DMI_Types_Pkg::Power_supply_key_switch_off" refOid="!ed/13d81/7DB/31C/54c8e278177e"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_StatusSet_T_Watchdog_not_running">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_StatusSet_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Watchdog_not_running"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3911f/B01/2EA0/55bf6674f0c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_StatusSet_T" refOid="!ed/13d72/7DB/31C/54c8e27811c8"/>
+						<ConstVarRef path="DMI_Types_Pkg::Watchdog_not_running" refOid="!ed/13d82/7DB/31C/54c8e27873fd"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_StatusSet_T_Watchdog_not_running">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="16"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3918f/B01/2EA0/55bf67671d85"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_StatusSet_T_Train_Speed_Overflow">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="4"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39188/B01/2EA0/55bf67676e44"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_StatusSet_T_TFT_OFF_temp_reached">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="9"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39181/B01/2EA0/55bf67677834"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_StatusSet_T_Starting_state">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3917a/B01/2EA0/55bf67674daa"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_StatusSet_T_Running_state">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39173/B01/2EA0/55bf67675d1b"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_StatusSet_T_Running_not_active_state">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="3"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3916c/B01/2EA0/55bf676728b8"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_StatusSet_T_Power_supply_key_switch_off">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="15"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39165/B01/2EA0/55bf67674e7b"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_StatusSet_T_Over_temperature">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="11"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3915e/B01/2EA0/55bf67675105"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_StatusSet_T_Invalid_track_condition">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="5"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39157/B01/2EA0/55bf67672982"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_StatusSet_T_Invalid_text_message">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="7"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39150/B01/2EA0/55bf676741e"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_StatusSet_T_Invalid_predefined_text_message">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="6"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39149/B01/2EA0/55bf6767a3c"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_StatusSet_T_HW_warning_temp_reached">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="8"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39142/B01/2EA0/55bf67677d79"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_StatusSet_T_FAN_blocked">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="14"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3913b/B01/2EA0/55bf67675113"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_StatusSet_T_Failure_state">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="2"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39134/B01/2EA0/55bf6767468a"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_StatusSet_T_Device_OFF_temp_reached">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="10"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3912d/B01/2EA0/55bf6767928"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_StatusSet_T_Backlight_on_off">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="12"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39126/B01/2EA0/55bf676763d"/>
+			</pragmas>
+		</Constant>
+		<Type name="DMI_TEXT_INT_Array_T">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="DMI_Types_Pkg::cDMI_charsInText"/>
+							</path>
+						</IdExpression>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/39d08/B01/2EA0/55bf801e389a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<ConstVarRef path="DMI_Types_Pkg::cDMI_charsInText" refOid="!ed/3dc34/3E1F/180/54e72f686f3b"/>
+					</references>
+				</ed:Type>
+			</pragmas>
+		</Type>
+		<Constant name="ENUM_DMI_Request_T_Train_running_number_entry_aborted">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Train_running_number_entry_aborted"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/396f5/4FD/3768/55c1feb1382a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Train_running_number_entry_aborted" refOid="!ed/13d4a/7DB/31C/54c8e2786481"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Train_data_entry_aborted">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Train_data_entry_aborted"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/396ee/4FD/3768/55c1feb16abf" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Train_data_entry_aborted" refOid="!ed/13d49/7DB/31C/54c8e27811bf"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Track_Ahead_Free_is_validated">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Track_Ahead_Free_is_validated"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/396e7/4FD/3768/55c1feb13b3a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Track_Ahead_Free_is_validated" refOid="!ed/13d55/7DB/31C/54c8e27845f6"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_The_Train_Integrity_request">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::The_Train_Integrity_request"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/396e0/4FD/3768/55c1feb13440" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::The_Train_Integrity_request" refOid="!ed/13d56/7DB/31C/54c8e2784aac"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Start_of_mission">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Start_of_mission"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/396d9/4FD/3768/55c1feb17208" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Start_of_mission" refOid="!ed/13d37/7DB/31C/54c8e2784e2f"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_SR_data_entry_aborted">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::SR_data_entry_aborted"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/396d2/4FD/3768/55c1feb1cbd" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::SR_data_entry_aborted" refOid="!ed/13d4b/7DB/31C/54c8e27828e0"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Shunting_exit">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Shunting_exit"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/396cb/4FD/3768/55c1feb16b43" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Shunting_exit" refOid="!ed/13d39/7DB/31C/54c8e278fcb"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Train_running_number_entry_aborted">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="19"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39909/4FD/3768/55c1fee052f6"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Train_data_entry_aborted">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="18"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/398fb/4FD/3768/55c1fee030ae"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Track_Ahead_Free_is_validated">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="30"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/398ed/4FD/3768/55c1fee0383e"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_The_Train_Integrity_request">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="31"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/398df/4FD/3768/55c1fee05092"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Start_of_mission">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/398d1/4FD/3768/55c1fee051e4"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_SR_data_entry_aborted">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="20"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/398c3/4FD/3768/55c1fee06c6e"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Shunting_exit">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="2"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/398b5/4FD/3768/55c1fee03b83"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Shunting_entry">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/398a7/4FD/3768/55c1fee0362"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Show_tunnel_stopping_information">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="34"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39899/4FD/3768/55c1fee07052"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Set_VBC_request">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="32"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3988b/4FD/3768/55c1fee077bb"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Scroll_text_up">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="25"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3987d/4FD/3768/55c1fee0485a"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Scroll_text_down">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="26"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3986f/4FD/3768/55c1fee014c8"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Request_to_use_short_number">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="28"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39861/4FD/3768/55c1fee03e7"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Request_to_show_supervision_data">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="23"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39853/4FD/3768/55c1fee044f0"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Request_to_show_geographical_position">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="16"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39845/4FD/3768/55c1fee0393d"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Request_to_hide_supervision_data">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="24"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39837/4FD/3768/55c1fee06c03"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Request_to_hide_geographical_information">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="22"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39829/4FD/3768/55c1fee0388e"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Request_to_contact_last_known_RBC">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="27"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3981b/4FD/3768/55c1fee019cf"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Request_isolation">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="29"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3980d/4FD/3768/55c1fee03a2b"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Request_for_train_data_view">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="15"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/397ff/4FD/3768/55c1fee08f4"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Request_for_train_data">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="10"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/397f1/4FD/3768/55c1fee06af8"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Request_for_system_version">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="13"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/397e3/4FD/3768/55c1fee01dfb"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Request_for_switching_train_data_entry">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="14"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/397d5/4FD/3768/55c1fee02b24"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Request_for_SR_data">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="12"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/397c7/4FD/3768/55c1fee05aa4"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Request_for_radio_network_entry">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="9"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/397b9/4FD/3768/55c1fee01318"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Request_for_Adhesion_factor_data">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="11"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/397ab/4FD/3768/55c1fee0797e"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Remove_VBC_request">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="33"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3979d/4FD/3768/55c1fee012af"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Radio_network_entry_aborted">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="21"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3978f/4FD/3768/55c1fee025bb"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Override_route_unsuitability">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="8"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39781/4FD/3768/55c1fee03ea6"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Override_EOA">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="7"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39773/4FD/3768/55c1fee0344"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_NTC_data_entry_request">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="36"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39765/4FD/3768/55c1fee02054"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Non_leading_exit">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="4"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39757/4FD/3768/55c1fee07b0a"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Non_leading">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="3"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39749/4FD/3768/55c1fee01b9c"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Maintain_shunting">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="5"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3973b/4FD/3768/55c1fee07f9d"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Level_entry_request">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="6"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3972d/4FD/3768/55c1fee03f22"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Language_changed">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="17"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3971f/4FD/3768/55c1fee03e02"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_Hide_tunnel_stopping_information">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="35"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39711/4FD/3768/55c1fee012bc"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Request_T_End_of_NTC_data_entry">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="37"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39703/4FD/3768/55c1fedf6ec0"/>
+			</pragmas>
+		</Constant>
+		<Type name="DMI_level_INT_T">
+			<definition>
+				<Struct>
+					<fields>
+						<Field name="level">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="int64"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/398b1/1A37/3A3C/55c35d2f4c3e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<comment>active level</comment>
+								</ed:Field>
+							</pragmas>
+						</Field>
+						<Field name="nid_stm">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="int64"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/398b2/1A37/3A3C/55c35d2fbd" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<comment>only relevant when level is stm</comment>
+								</ed:Field>
+							</pragmas>
+						</Field>
+					</fields>
+				</Struct>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/398b0/1A37/3A3C/55c35d2f6889"/>
+			</pragmas>
+		</Type>
+		<Constant name="ENUM_M_SupervisionDisplay_T_supDis_normal">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::M_SupervisionDisplay_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::supDis_normal"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b6ed/3751/1C9C/55f94f721ffa" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::M_SupervisionDisplay_T" refOid="!ed/2d5d8/5A05/534/54eeca4c5f69"/>
+						<ConstVarRef path="DMI_Types_Pkg::supDis_normal" refOid="!ed/2d5d9/5A05/534/54eecabe6f61"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_M_SupervisionDisplay_T_supDis_indication">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::M_SupervisionDisplay_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::supDis_indication"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b6fb/3751/1C9C/55f94f964eb4" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::M_SupervisionDisplay_T" refOid="!ed/2d5d8/5A05/534/54eeca4c5f69"/>
+						<ConstVarRef path="DMI_Types_Pkg::supDis_indication" refOid="!ed/2d5e0/5A05/534/54eecb7a3157"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_M_SupervisionDisplay_T_supDis_overspeed">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::M_SupervisionDisplay_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::supDis_overspeed"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b709/3751/1C9C/55f94f9995f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::M_SupervisionDisplay_T" refOid="!ed/2d5d8/5A05/534/54eeca4c5f69"/>
+						<ConstVarRef path="DMI_Types_Pkg::supDis_overspeed" refOid="!ed/2d5e7/5A05/534/54eecb7a36db"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_M_SupervisionDisplay_T_supDis_warning">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::M_SupervisionDisplay_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::supDis_warning"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b717/3751/1C9C/55f94fa56295" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::M_SupervisionDisplay_T" refOid="!ed/2d5d8/5A05/534/54eeca4c5f69"/>
+						<ConstVarRef path="DMI_Types_Pkg::supDis_warning" refOid="!ed/2d5ee/5A05/534/54eecb7b1b1b"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_M_SupervisionDisplay_T_supDis_intervention">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::M_SupervisionDisplay_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::supDis_intervention"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b725/3751/1C9C/55f94fa969c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::M_SupervisionDisplay_T" refOid="!ed/2d5d8/5A05/534/54eeca4c5f69"/>
+						<ConstVarRef path="DMI_Types_Pkg::supDis_intervention" refOid="!ed/2d5f5/5A05/534/54eecb7c7c02"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_M_SupervisionDisplay_T_supDis_normal">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b759/3751/1C9C/55f950f96041"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_M_SupervisionDisplay_T_supDis_indication">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b768/3751/1C9C/55f953306711"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_M_SupervisionDisplay_T_supDis_overspeed">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="2"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b77f/3751/1C9C/55f953687d5a"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_M_SupervisionDisplay_T_supDis_warning">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="3"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b796/3751/1C9C/55f9539431be"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_M_SupervisionDisplay_T_supDis_intervention">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="4"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b7ad/3751/1C9C/55f95b4f76af"/>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_M_SUPERVISION_STATUS_CSM">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::M_SUPERVISION_STATUS"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::CSM"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bb6f/3751/1C9C/55f96b8286f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::M_SUPERVISION_STATUS" refOid="!ed/13dda/77E9/1E10/54c8d61f1a61"/>
+						<ConstVarRef path="DMI_Types_Pkg::CSM" refOid="!ed/13ddb/77E9/1E10/54c8d61f7312"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_M_SUPERVISION_STATUS_PIM">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::M_SUPERVISION_STATUS"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::PIM"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bb7f/3751/1C9C/55f96bb16bfc" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::M_SUPERVISION_STATUS" refOid="!ed/13dda/77E9/1E10/54c8d61f1a61"/>
+						<ConstVarRef path="DMI_Types_Pkg::PIM" refOid="!ed/13ddc/77E9/1E10/54c8d61f448d"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_M_SUPERVISION_STATUS_TSM">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::M_SUPERVISION_STATUS"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::TSM"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bb86/3751/1C9C/55f96be148df" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::M_SUPERVISION_STATUS" refOid="!ed/13dda/77E9/1E10/54c8d61f1a61"/>
+						<ConstVarRef path="DMI_Types_Pkg::TSM" refOid="!ed/13ddd/77E9/1E10/54c8d61f1224"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_M_SUPERVISION_STATUS_RSM">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::M_SUPERVISION_STATUS"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::RSM"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bb8d/3751/1C9C/55f96be66746" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::M_SUPERVISION_STATUS" refOid="!ed/13dda/77E9/1E10/54c8d61f1a61"/>
+						<ConstVarRef path="DMI_Types_Pkg::RSM" refOid="!ed/13dde/77E9/1E10/54c8d61f2539"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_M_SUPERVISION_STATUS_supervision_status_unknown">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::M_SUPERVISION_STATUS"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::supervision_status_unknown"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bb94/3751/1C9C/55f96bea99e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::M_SUPERVISION_STATUS" refOid="!ed/13dda/77E9/1E10/54c8d61f1a61"/>
+						<ConstVarRef path="DMI_Types_Pkg::supervision_status_unknown" refOid="!ed/13ddf/77E9/1E10/54c8d61f72a0"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_M_SUPERVISION_STATUS_CSM">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bb9b/3751/1C9C/55f96c5d2e07"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_M_SUPERVISION_STATUS_PIM">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bbaa/3751/1C9C/55f96cbb5f71"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_M_SUPERVISION_STATUS_TSM">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="2"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bbc1/3751/1C9C/55f96d134221"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_M_SUPERVISION_STATUS_RSM">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="3"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bbd8/3751/1C9C/55f96d3a479d"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_M_SUPERVISION_STATUS_supervision_status_unknown">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="4"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bbef/3751/1C9C/55f96d6c3e41"/>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_connectionStatusRadioUnit_T_conn_unknown">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="API_RadioCommunication_Pkg::connectionStatusRadioUnit_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="API_RadioCommunication_Pkg::conn_unknown"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bd26/3751/1C9C/55f971dc4e23" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="API_RadioCommunication_Pkg::connectionStatusRadioUnit_T" refOid="!ed/147d2/5770/1564/54e5a3807e9"/>
+						<ConstVarRef path="API_RadioCommunication_Pkg::conn_unknown" refOid="!ed/147d3/5770/1564/54e5a38050bf"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_connectionStatusRadioUnit_T_conn_no_connection">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="API_RadioCommunication_Pkg::connectionStatusRadioUnit_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="API_RadioCommunication_Pkg::conn_no_connection"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bd36/3751/1C9C/55f9722d3609" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="API_RadioCommunication_Pkg::connectionStatusRadioUnit_T" refOid="!ed/147d2/5770/1564/54e5a3807e9"/>
+						<ConstVarRef path="API_RadioCommunication_Pkg::conn_no_connection" refOid="!ed/53b38/532/10C4/54e5fb4976e3"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_connectionStatusRadioUnit_T_conn_ConnectionUp">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="API_RadioCommunication_Pkg::connectionStatusRadioUnit_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="API_RadioCommunication_Pkg::conn_ConnectionUp"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bd3d/3751/1C9C/55f97231547b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="API_RadioCommunication_Pkg::connectionStatusRadioUnit_T" refOid="!ed/147d2/5770/1564/54e5a3807e9"/>
+						<ConstVarRef path="API_RadioCommunication_Pkg::conn_ConnectionUp" refOid="!ed/147d4/5770/1564/54e5a3801ede"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_connectionStatusRadioUnit_T_conn_SetupFailed">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="API_RadioCommunication_Pkg::connectionStatusRadioUnit_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="API_RadioCommunication_Pkg::conn_SetupFailed"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bd44/3751/1C9C/55f9723419ad" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="API_RadioCommunication_Pkg::connectionStatusRadioUnit_T" refOid="!ed/147d2/5770/1564/54e5a3807e9"/>
+						<ConstVarRef path="API_RadioCommunication_Pkg::conn_SetupFailed" refOid="!ed/147d5/5770/1564/54e5a38076ce"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_connectionStatusRadioUnit_T_conn_unknown">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bd4b/3751/1C9C/55f973345eda"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_connectionStatusRadioUnit_T_conn_no_connection">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bd5a/3751/1C9C/55f9735c1931"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_connectionStatusRadioUnit_T_conn_ConnectionUp">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="2"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bd71/3751/1C9C/55f9737b4d3f"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_connectionStatusRadioUnit_T_conn_SetupFailed">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="3"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bd88/3751/1C9C/55f9739e853"/>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_List_Entry_Request_T_Enter_revalidate_driver_identifier">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_List_Entry_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Enter_revalidate_driver_identifier"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a3f9/788/229C/55fbe79a4adc" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_List_Entry_Request_T" refOid="!ed/13cfb/7DB/31C/54c8e2783d2e"/>
+						<ConstVarRef path="DMI_Types_Pkg::Enter_revalidate_driver_identifier" refOid="!ed/13cfc/7DB/31C/54c8e2782aa5"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_List_Entry_Request_T_Enter_revalidate_train_running_number">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_List_Entry_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Enter_revalidate_train_running_number"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a409/788/229C/55fbe822997" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_List_Entry_Request_T" refOid="!ed/13cfb/7DB/31C/54c8e2783d2e"/>
+						<ConstVarRef path="DMI_Types_Pkg::Enter_revalidate_train_running_number" refOid="!ed/13cfd/7DB/31C/54c8e2787439"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_List_Entry_Request_T_Enter_revalidate_ETCS_level">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_List_Entry_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Enter_revalidate_ETCS_level"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a410/788/229C/55fbe8251b2f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_List_Entry_Request_T" refOid="!ed/13cfb/7DB/31C/54c8e2783d2e"/>
+						<ConstVarRef path="DMI_Types_Pkg::Enter_revalidate_ETCS_level" refOid="!ed/13cfe/7DB/31C/54c8e2781d03"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_List_Entry_Request_T_Enter_RBC_contact_menu">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_List_Entry_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Enter_RBC_contact_menu"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a417/788/229C/55fbe8281192" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_List_Entry_Request_T" refOid="!ed/13cfb/7DB/31C/54c8e2783d2e"/>
+						<ConstVarRef path="DMI_Types_Pkg::Enter_RBC_contact_menu" refOid="!ed/13cff/7DB/31C/54c8e2781fbe"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_List_Entry_Request_T_Validate_train_data">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_List_Entry_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Validate_train_data"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a41e/788/229C/55fbe82b253c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_List_Entry_Request_T" refOid="!ed/13cfb/7DB/31C/54c8e2783d2e"/>
+						<ConstVarRef path="DMI_Types_Pkg::Validate_train_data" refOid="!ed/13d00/7DB/31C/54c8e2783733"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_List_Entry_Request_T_Enter_NTC_data">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_List_Entry_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Enter_NTC_data"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a425/788/229C/55fbe831d1f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_List_Entry_Request_T" refOid="!ed/13cfb/7DB/31C/54c8e2783d2e"/>
+						<ConstVarRef path="DMI_Types_Pkg::Enter_NTC_data" refOid="!ed/13d01/7DB/31C/54c8e278d15"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_List_Entry_Request_T_Spare">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_List_Entry_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Spare"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a42c/788/229C/55fbe8351df3" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_List_Entry_Request_T" refOid="!ed/13cfb/7DB/31C/54c8e2783d2e"/>
+						<ConstVarRef path="DMI_Types_Pkg::Spare" refOid="!ed/13d02/7DB/31C/54c8e27851d"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_List_Entry_Request_T_Enable_the_track_ahead_free_by_the_driver">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_List_Entry_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Enable_the_track_ahead_free_by_the_driver"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a433/788/229C/55fbe8386757" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_List_Entry_Request_T" refOid="!ed/13cfb/7DB/31C/54c8e2783d2e"/>
+						<ConstVarRef path="DMI_Types_Pkg::Enable_the_track_ahead_free_by_the_driver" refOid="!ed/13d03/7DB/31C/54c8e2784ad"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_List_Entry_Request_T_Disable_the_Track_Ahead_free_page">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_List_Entry_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Disable_the_Track_Ahead_free_page"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a43a/788/229C/55fbe83b5a2c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_List_Entry_Request_T" refOid="!ed/13cfb/7DB/31C/54c8e2783d2e"/>
+						<ConstVarRef path="DMI_Types_Pkg::Disable_the_Track_Ahead_free_page" refOid="!ed/13d04/7DB/31C/54c8e27810f6"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_List_Entry_Request_T_Show_main_window">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_List_Entry_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Show_main_window"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a441/788/229C/55fbe83e70c1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_List_Entry_Request_T" refOid="!ed/13cfb/7DB/31C/54c8e2783d2e"/>
+						<ConstVarRef path="DMI_Types_Pkg::Show_main_window" refOid="!ed/13d05/7DB/31C/54c8e2784560"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_List_Entry_Request_T_Hide_adhesion_factor_entry_window">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_List_Entry_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Hide_adhesion_factor_entry_window"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a448/788/229C/55fbe8412d5b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_List_Entry_Request_T" refOid="!ed/13cfb/7DB/31C/54c8e2783d2e"/>
+						<ConstVarRef path="DMI_Types_Pkg::Hide_adhesion_factor_entry_window" refOid="!ed/13d07/7DB/31C/54c8e2786f75"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_List_Entry_Request_T_Hide_staff_responsible_entry_window">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_List_Entry_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Hide_staff_responsible_entry_window"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a44f/788/229C/55fbe8452bbf" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_List_Entry_Request_T" refOid="!ed/13cfb/7DB/31C/54c8e2783d2e"/>
+						<ConstVarRef path="DMI_Types_Pkg::Hide_staff_responsible_entry_window" refOid="!ed/13d08/7DB/31C/54c8e27856cf"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_List_Entry_Request_T_Show_Set_VBC_validation_window">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_List_Entry_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Show_Set_VBC_validation_window"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a456/788/229C/55fbe84812c6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_List_Entry_Request_T" refOid="!ed/13cfb/7DB/31C/54c8e2783d2e"/>
+						<ConstVarRef path="DMI_Types_Pkg::Show_Set_VBC_validation_window" refOid="!ed/13d09/7DB/31C/54c8e278487"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_List_Entry_Request_T_Show_Remove_VBC_validation_window">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_List_Entry_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Show_Remove_VBC_validation_window"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a45d/788/229C/55fbe84b7b6d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_List_Entry_Request_T" refOid="!ed/13cfb/7DB/31C/54c8e2783d2e"/>
+						<ConstVarRef path="DMI_Types_Pkg::Show_Remove_VBC_validation_window" refOid="!ed/13d0a/7DB/31C/54c8e278147c"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_List_Entry_Request_T_Hide_main_window">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_List_Entry_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Hide_main_window"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a464/788/229C/55fbe84d652d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_List_Entry_Request_T" refOid="!ed/13cfb/7DB/31C/54c8e2783d2e"/>
+						<ConstVarRef path="DMI_Types_Pkg::Hide_main_window" refOid="!ed/13d06/7DB/31C/54c8e2786dc0"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_List_Entry_Request_T_Enter_revalidate_driver_identifier">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a46b/788/229C/55fbf8994ad3"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_List_Entry_Request_T_Enter_revalidate_train_running_number">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a47a/788/229C/55fbf8c7a32"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_List_Entry_Request_T_Enter_revalidate_ETCS_level">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="2"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a491/788/229C/55fbf8fa589b"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_List_Entry_Request_T_Enter_RBC_contact_menu">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="3"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a4a8/788/229C/55fbf925183e"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_List_Entry_Request_T_Validate_train_data">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="4"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a4bf/788/229C/55fbf95b56d"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_List_Entry_Request_T_Enter_NTC_data">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="5"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a4d6/788/229C/55fbf9803782"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_List_Entry_Request_T_Spare">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="6"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a4ed/788/229C/55fbf9a426f1"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_List_Entry_Request_T_Enable_the_track_ahead_free_by_the_driver">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="7"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a504/788/229C/55fbfa652e53"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_List_Entry_Request_T_Disable_the_Track_Ahead_free_page">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="8"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a51b/788/229C/55fbfbb06102"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_List_Entry_Request_T_Show_main_window">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="9"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a532/788/229C/55fbfbda3827"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_List_Entry_Request_T_Hide_main_window">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="10"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a549/788/229C/55fbfc30226a"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_List_Entry_Request_T_Hide_adhesion_factor_entry_window">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="11"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a560/788/229C/55fbfc5c5c0c"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_List_Entry_Request_T_Hide_staff_responsible_entry_window">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="12"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a577/788/229C/55fbfc865543"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_List_Entry_Request_T_Show_Set_VBC_validation_window">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="13"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a58e/788/229C/55fbfcba23a2"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_List_Entry_Request_T_Show_Remove_VBC_validation_window">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="14"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3a5a5/788/229C/55fbfce31d8d"/>
+			</pragmas>
+		</Constant>
+		<Type name="Icon_control_flag_INT_T">
+			<definition>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/3b60f/788/229C/5601607e2da" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<comment>Control flag for the icon(s) display</comment>
+				</ed:Type>
+			</pragmas>
+		</Type>
+		<Constant name="ENUM_Icon_control_flag_T_show_icon_in_area">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::Icon_control_flag_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::show_icon_in_area"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b61c/788/229C/560160c717f3" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::Icon_control_flag_T" refOid="!ed/2d3aa/4329/12CC/54edd6245cb7"/>
+						<ConstVarRef path="DMI_Types_Pkg::show_icon_in_area" refOid="!ed/2d3ab/4329/12CC/54edd6246790"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_Icon_control_flag_T_clear_area">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::Icon_control_flag_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::clear_area"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b62c/788/229C/56016144210" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::Icon_control_flag_T" refOid="!ed/2d3aa/4329/12CC/54edd6245cb7"/>
+						<ConstVarRef path="DMI_Types_Pkg::clear_area" refOid="!ed/2d3ac/4329/12CC/54edd6242ca8"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_Icon_control_flag_T_show_icon_flashing_in_area">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::Icon_control_flag_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::show_icon_flashing_in_area"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b633/788/229C/56016148e59" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::Icon_control_flag_T" refOid="!ed/2d3aa/4329/12CC/54edd6245cb7"/>
+						<ConstVarRef path="DMI_Types_Pkg::show_icon_flashing_in_area" refOid="!ed/2d3ad/4329/12CC/54edd62460ea"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_Icon_control_flag_T_show_icon_with_yellow_flashing_frame_in_area">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::Icon_control_flag_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::show_icon_with_yellow_flashing_frame_in_area"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b63a/788/229C/5601614a7e45" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::Icon_control_flag_T" refOid="!ed/2d3aa/4329/12CC/54edd6245cb7"/>
+						<ConstVarRef path="DMI_Types_Pkg::show_icon_with_yellow_flashing_frame_in_area" refOid="!ed/2d3ae/4329/12CC/54edd6245c38"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_Icon_control_flag_T_show_icon_in_area">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b649/788/229C/5601620075d9"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_Icon_control_flag_T_clear_area">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b658/788/229C/560162281ab8"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_Icon_control_flag_T_show_icon_flashing_in_area">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="2"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b66f/788/229C/5604af5a7776"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_Icon_control_flag_T_show_icon_with_yellow_flashing_frame_in_area">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="3"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b686/788/229C/5604afa8420b"/>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_Icon_group_T_level_symbol">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::Icon_group_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::level_symbol"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b8f7/788/229C/5604be606529" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::Icon_group_T" refOid="!ed/2d399/4329/12CC/54edd61a75f"/>
+						<ConstVarRef path="DMI_Types_Pkg::level_symbol" refOid="!ed/2d39a/4329/12CC/54edd61a7f91"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_Icon_group_T_mode_symbols">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::Icon_group_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::mode_symbols"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b926/788/229C/5604c44edbe" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::Icon_group_T" refOid="!ed/2d399/4329/12CC/54edd61a75f"/>
+						<ConstVarRef path="DMI_Types_Pkg::mode_symbols" refOid="!ed/2d39b/4329/12CC/54edd61a6a8a"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_Icon_group_T_status_symbols">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::Icon_group_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::status_symbols"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b92d/788/229C/5604c450d91" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::Icon_group_T" refOid="!ed/2d399/4329/12CC/54edd61a75f"/>
+						<ConstVarRef path="DMI_Types_Pkg::status_symbols" refOid="!ed/2d39c/4329/12CC/54edd61a6c26"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_Icon_group_T_order_an_announcements_symbols">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::Icon_group_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::order_an_announcements_symbols"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b934/788/229C/5604c4516ee1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::Icon_group_T" refOid="!ed/2d399/4329/12CC/54edd61a75f"/>
+						<ConstVarRef path="DMI_Types_Pkg::order_an_announcements_symbols" refOid="!ed/2d39d/4329/12CC/54edd61a282a"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_Icon_group_T_planning_information_symbols">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::Icon_group_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::planning_information_symbols"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b93b/788/229C/5604c45331b3" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::Icon_group_T" refOid="!ed/2d399/4329/12CC/54edd61a75f"/>
+						<ConstVarRef path="DMI_Types_Pkg::planning_information_symbols" refOid="!ed/2d39e/4329/12CC/54edd61a5841"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_Icon_group_T_navigation_symbols">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::Icon_group_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::navigation_symbols"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b942/788/229C/5604c45449c1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::Icon_group_T" refOid="!ed/2d399/4329/12CC/54edd61a75f"/>
+						<ConstVarRef path="DMI_Types_Pkg::navigation_symbols" refOid="!ed/2d39f/4329/12CC/54edd61a6786"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_Icon_group_T_settings_symbols">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::Icon_group_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::settings_symbols"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b949/788/229C/5604c45539ea" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::Icon_group_T" refOid="!ed/2d399/4329/12CC/54edd61a75f"/>
+						<ConstVarRef path="DMI_Types_Pkg::settings_symbols" refOid="!ed/2d3a0/4329/12CC/54edd61a374c"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_Icon_group_T_level_symbol">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b950/788/229C/5604c6e01b05"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_Icon_group_T_mode_symbols">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b95f/788/229C/5604c71851b1"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_Icon_group_T_status_symbols">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="2"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b976/788/229C/5604ccc62a5a"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_Icon_group_T_order_an_announcements_symbols">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="3"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b98d/788/229C/5604cd13412"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_Icon_group_T_planning_information_symbols">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="4"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b9a4/788/229C/5604cd517d42"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_Icon_group_T_navigation_symbols">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="5"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b9bb/788/229C/5604cd8f2ce5"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_Icon_group_T_settings_symbols">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="6"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3b9d2/788/229C/5604cdd61abe"/>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_Area_group_T_A">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::Area_group_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::A"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bf03/788/229C/5604ef546e73" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::Area_group_T" refOid="!ed/2d41d/4329/12CC/54edd7be23d5"/>
+						<ConstVarRef path="DMI_Types_Pkg::A" refOid="!ed/2d41e/4329/12CC/54edd7be2bb2"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_Area_group_T_B">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::Area_group_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::B"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bf7b/788/229C/5604f3364668" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::Area_group_T" refOid="!ed/2d41d/4329/12CC/54edd7be23d5"/>
+						<ConstVarRef path="DMI_Types_Pkg::B" refOid="!ed/2d41f/4329/12CC/54edd7be61dc"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_Area_group_T_C">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::Area_group_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::C"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bf82/788/229C/5604f337101b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::Area_group_T" refOid="!ed/2d41d/4329/12CC/54edd7be23d5"/>
+						<ConstVarRef path="DMI_Types_Pkg::C" refOid="!ed/2d420/4329/12CC/54edd7be124a"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_Area_group_T_D">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::Area_group_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::D"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bf89/788/229C/5604f33820f9" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::Area_group_T" refOid="!ed/2d41d/4329/12CC/54edd7be23d5"/>
+						<ConstVarRef path="DMI_Types_Pkg::D" refOid="!ed/2d421/4329/12CC/54edd7be13ad"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_Area_group_T_E">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::Area_group_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::E"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bf90/788/229C/5604f3391922" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::Area_group_T" refOid="!ed/2d41d/4329/12CC/54edd7be23d5"/>
+						<ConstVarRef path="DMI_Types_Pkg::E" refOid="!ed/2d422/4329/12CC/54edd7be7530"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_Area_group_T_F">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::Area_group_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::F"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bf97/788/229C/5604f33a344a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::Area_group_T" refOid="!ed/2d41d/4329/12CC/54edd7be23d5"/>
+						<ConstVarRef path="DMI_Types_Pkg::F" refOid="!ed/2d423/4329/12CC/54edd7be68f"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_Area_group_T_G">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::Area_group_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::G"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bf9e/788/229C/5604f33b359f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::Area_group_T" refOid="!ed/2d41d/4329/12CC/54edd7be23d5"/>
+						<ConstVarRef path="DMI_Types_Pkg::G" refOid="!ed/2d424/4329/12CC/54edd7be3be8"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_Area_group_T_H">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::Area_group_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::H"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bfa5/788/229C/5604f33c1b39" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::Area_group_T" refOid="!ed/2d41d/4329/12CC/54edd7be23d5"/>
+						<ConstVarRef path="DMI_Types_Pkg::H" refOid="!ed/2d425/4329/12CC/54edd7be7def"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_Area_group_T_A">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bfb4/788/229C/5604f4287cd6"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_Area_group_T_B">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bfc3/788/229C/5604f43f5684"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_Area_group_T_C">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="2"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bfda/788/229C/5604f4604929"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_Area_group_T_D">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="3"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3bff1/788/229C/5604f48055fa"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_Area_group_T_E">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="4"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3c008/788/229C/5604f4a463c4"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_Area_group_T_F">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="5"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3c01f/788/229C/5604f4bd5674"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_Area_group_T_G">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="6"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3c036/788/229C/5604f4df3b39"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_Area_group_T_H">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="7"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3c04d/788/229C/5604f4f9773a"/>
+			</pragmas>
+		</Constant>
+		<Type name="DMI_LevelList_INT_T">
+			<definition>
+				<Struct>
+					<fields>
+						<Field name="number">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="int64"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/3c491/788/229C/560500d75a80" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<comment>number of levels in the list</comment>
+								</ed:Field>
+							</pragmas>
+						</Field>
+						<Field name="levelList">
+							<type>
+								<NamedType>
+									<type>
+										<NullRef/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/3c492/788/229C/560500d76e42"/>
+							</pragmas>
+						</Field>
+					</fields>
+				</Struct>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/3c490/788/229C/560500d7198f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<comment>List of active levels. In case of level = STM also the NID_STM is to be used</comment>
+				</ed:Type>
+			</pragmas>
+		</Type>
+		<Type name="DMI_to_EVC_Message_T">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="290"/>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/3a8de/7CB0/1E6C/561531602554"/>
+			</pragmas>
+		</Type>
+		<Constant name="ENUM_DMI_Q_TEXT_balise_read_error">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::balise_read_error"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/400a4/7CB0/1E6C/561b98644a5f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::balise_read_error" refOid="!ed/2ea65/4DAD/FFC/54e6080f111e"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Q_TEXT_communication_error">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::communication_error"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/400f3/7CB0/1E6C/561b99163b08" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::communication_error" refOid="!ed/2ea66/4DAD/FFC/54e6080f2056"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Q_TEXT_entering_FS">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::entering_FS"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/400fa/7CB0/1E6C/561b99186056" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::entering_FS" refOid="!ed/2ea67/4DAD/FFC/54e6080f72e7"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Q_TEXT_entering_OS">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::entering_OS"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/40101/7CB0/1E6C/561b99185fa" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::entering_OS" refOid="!ed/2ea68/4DAD/FFC/54e6080f64fc"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Q_TEXT_no_track_condition_will_be_received">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::no_track_condition_will_be_received"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/40108/7CB0/1E6C/561b99195388" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::no_track_condition_will_be_received" refOid="!ed/2ea69/4DAD/FFC/54e6080f5213"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Q_TEXT_runaway_movement">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::runaway_movement"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4010f/7CB0/1E6C/561b991a644e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::runaway_movement" refOid="!ed/2ea6a/4DAD/FFC/54e6080f7eb8"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Q_TEXT_SH_refused">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::SH_refused"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/40116/7CB0/1E6C/561b991b16bb" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::SH_refused" refOid="!ed/2ea6b/4DAD/FFC/54e6080f2336"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Q_TEXT_trackside_not_compatible">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::trackside_not_compatible"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4011d/7CB0/1E6C/561b991c2e46" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::trackside_not_compatible" refOid="!ed/2ea6c/4DAD/FFC/54e6080f63e8"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Q_TEXT_train_data_changed">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::train_data_changed"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/40124/7CB0/1E6C/561b991f3348" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::train_data_changed" refOid="!ed/2ea6d/4DAD/FFC/54e6080f4f03"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Q_TEXT_train_is_rejected">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::train_is_rejected"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4012b/7CB0/1E6C/561b99202659" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::train_is_rejected" refOid="!ed/2ea6e/4DAD/FFC/54e6080f1f0e"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Q_TEXT_unauthorized_passing_of_EOA_LOA">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::unauthorized_passing_of_EOA_LOA"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/40132/7CB0/1E6C/561b9a0964" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::unauthorized_passing_of_EOA_LOA" refOid="!ed/2ea6f/4DAD/FFC/54e6080f7009"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Q_TEXT_no_MA_received_at_level_transition">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::no_MA_received_at_level_transition"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/40139/7CB0/1E6C/561b9a0a7d23" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::no_MA_received_at_level_transition" refOid="!ed/2ea70/4DAD/FFC/54e6080f1a31"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Q_TEXT_SR_distance_exceeded">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::SR_distance_exceeded"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/40140/7CB0/1E6C/561b9a0c1841" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::SR_distance_exceeded" refOid="!ed/2ea71/4DAD/FFC/54e6080f6321"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Q_TEXT_SH_stop_order">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::SH_stop_order"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/40147/7CB0/1E6C/561b9a0d5a57" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::SH_stop_order" refOid="!ed/2ea72/4DAD/FFC/54e6080f1607"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Q_TEXT_SR_stop_order">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::SR_stop_order"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4014e/7CB0/1E6C/561b9a0e9ba" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::SR_stop_order" refOid="!ed/2ea73/4DAD/FFC/54e6080f6860"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Q_TEXT_emergency_stop">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::emergency_stop"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/40155/7CB0/1E6C/561b9a0f162e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::emergency_stop" refOid="!ed/2ea74/4DAD/FFC/54e6080f33a6"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Q_TEXT_trackside_malfunction">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::trackside_malfunction"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4015c/7CB0/1E6C/561b9a10c35" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::trackside_malfunction" refOid="!ed/2ea75/4DAD/FFC/54e6080f408f"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Q_TEXT_SH_request_failed">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::SH_request_failed"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/40163/7CB0/1E6C/561b9a111700" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::SH_request_failed" refOid="!ed/2ea76/4DAD/FFC/54e6080f6c94"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Q_TEXT_RV_distance_esceeded">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::RV_distance_esceeded"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4016a/7CB0/1E6C/561b9a134100" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::RV_distance_esceeded" refOid="!ed/2ea77/4DAD/FFC/54e6080f5378"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Q_TEXT_no_track_description">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::no_track_description"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/40171/7CB0/1E6C/561b9b0b2d0e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::no_track_description" refOid="!ed/2ea78/4DAD/FFC/54e6080f7464"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Q_TEXT_STM_brake_Deman">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::STM_brake_Deman"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/40178/7CB0/1E6C/561b9b0c856" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::STM_brake_Deman" refOid="!ed/2ea79/4DAD/FFC/54e6080fd89"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_route_unsuitable_axle_load_category">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="21"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4017f/7CB0/1E6C/561b9b0d5aa7"/>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Q_TEXT_route_unsuitable_loading_gauge">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::route_unsuitable_loading_gauge"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/40186/7CB0/1E6C/561b9b0d71cd" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::route_unsuitable_loading_gauge" refOid="!ed/2ea7b/4DAD/FFC/54e6080f579c"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_route_unsuitable_traction_system">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="23"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4018d/7CB0/1E6C/561b9b0e4924"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_radio_network_registration_failed">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="24"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/40194/7CB0/1E6C/561b9b0f26e0"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_level_crossing_not_protected">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="25"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4019b/7CB0/1E6C/561b9b124b80"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_acknowledgment">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="26"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/401a2/7CB0/1E6C/561b9b132bca"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_balise_read_error">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/401b0/7CB0/1E6C/561b9cbe45f6"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_communication_error">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/401bf/7CB0/1E6C/561b9cf84b33"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_entering_FS">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="2"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/401d6/7CB0/1E6C/561b9d3d75ed"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_entering_OS">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="3"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/401ed/7CB0/1E6C/561b9d6b2be3"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_no_track_condition_will_be_received">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="4"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/40204/7CB0/1E6C/561b9d913d8b"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_runaway_movement">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="5"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4021b/7CB0/1E6C/561b9dc9fce"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_SH_refused">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="6"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/40232/7CB0/1E6C/561b9e0d1a98"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_trackside_not_compatible">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="7"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/40249/7CB0/1E6C/561b9e3d6fb7"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_train_data_changed">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="8"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/40260/7CB0/1E6C/561b9e714374"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_train_is_rejected">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="9"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/40277/7CB0/1E6C/561b9ea035ac"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_unauthorized_passing_of_EOA_LOA">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="10"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4028e/7CB0/1E6C/561b9ec7560e"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_no_MA_received_at_level_transition">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="11"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/402a5/7CB0/1E6C/561b9efe15a8"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_SR_distance_exceeded">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="12"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/402bc/7CB0/1E6C/561b9f407ccc"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_SH_stop_order">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="13"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/402d3/7CB0/1E6C/561b9f801951"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_SR_stop_order">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="14"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/402ea/7CB0/1E6C/561b9fd93172"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_emergency_stop">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="15"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/40301/7CB0/1E6C/561ba002432"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_trackside_malfunction">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="16"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/40318/7CB0/1E6C/561ba0243f3"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_SH_request_failed">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="17"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4032f/7CB0/1E6C/561ba0541a3e"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_RV_distance_esceeded">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="18"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/40346/7CB0/1E6C/561ba08c6c29"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_no_track_description">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="19"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4035d/7CB0/1E6C/561ba0c41489"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_STM_brake_Deman">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="20"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/40374/7CB0/1E6C/561ba0fb44e5"/>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Q_TEXT_route_unsuitable_axle_load_category">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::route_unsuitable_axle_load_category"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4038b/7CB0/1E6C/561ba1364074" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::route_unsuitable_axle_load_category" refOid="!ed/2ea7a/4DAD/FFC/54e6080f184c"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="INT_DMI_Q_TEXT_route_unsuitable_loading_gauge">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="22"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/403a2/7CB0/1E6C/561ba1bc6bdb"/>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Q_TEXT_route_unsuitable_traction_system">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::route_unsuitable_traction_system"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/403b9/7CB0/1E6C/561ba21c73c0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::route_unsuitable_traction_system" refOid="!ed/2ea7c/4DAD/FFC/54e6080f1454"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Q_TEXT_radio_network_registration_failed">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::radio_network_registration_failed"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/403d0/7CB0/1E6C/561ba2517554" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::radio_network_registration_failed" refOid="!ed/2ea7d/4DAD/FFC/54e6080f61e1"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Q_TEXT_level_crossing_not_protected">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::level_crossing_not_protected"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/403e7/7CB0/1E6C/561ba27e3c46" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::level_crossing_not_protected" refOid="!ed/2ea7e/4DAD/FFC/54e6080f530e"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Q_TEXT_acknowledgment">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Q_TEXT"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::acknowledgment"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/403fe/7CB0/1E6C/561ba2a93bac" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Q_TEXT" refOid="!ed/2ea64/4DAD/FFC/54e6080f63a3"/>
+						<ConstVarRef path="DMI_Types_Pkg::acknowledgment" refOid="!ed/2ea7f/4DAD/FFC/54e6080f33e"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Type name="DMI_speedProfileElement_int_arrayT">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="4"/>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/445d7/DF/28F0/561f275d4996" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<comment>An element of the speed profile </comment>
+				</ed:Type>
+			</pragmas>
+		</Type>
+		<Type name="DMI_SpeedProfileArray_T">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="128"/>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/445f2/DF/28F0/561f27b03870" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<comment>Speed Profile for use in DMI Interface</comment>
+				</ed:Type>
+			</pragmas>
+		</Type>
+		<Type name="DMI_speedProfile_int_array_T">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="129"/>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/44614/DF/28F0/561f28c047ba" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<comment>Speed Profile for Display at DMI</comment>
+				</ed:Type>
+			</pragmas>
+		</Type>
+		<Type name="DMI_gradientProfile_int_arrayT">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="129"/>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/446e1/DF/28F0/561f2e7f7cff" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<comment>Speed Profile for Display at DMI</comment>
+				</ed:Type>
+			</pragmas>
+		</Type>
+		<Type name="DMI_trackConditionElement_int_array_T">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="2"/>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/447d6/DF/28F0/561f33187004" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<comment>An element of the track-condition profile </comment>
+				</ed:Type>
+			</pragmas>
+		</Type>
+		<Type name="DMI_trackCondition_int_array_T">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="65"/>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/4486e/DF/28F0/561f34dd5d1a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<comment>Speed Profile for Display at DMI</comment>
+				</ed:Type>
+			</pragmas>
+		</Type>
+		<Type name="DMI_Track_Description_int_array_T">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="325"/>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/448bc/DF/28F0/561f366559f6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<comment>EVC -&gt; DMI: Description of track (speed and gradient profile…)</comment>
+				</ed:Type>
+			</pragmas>
+		</Type>
+		<Type name="V5">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="5"/>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/45a06/7E40/234C/561f940a728c"/>
+			</pragmas>
+		</Type>
+		<Constant name="ENUM_DMI_Cabin_Identifier_T_cabin_A">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Cabin_Identifier_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::cabin_A"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/38fca/B01/2EA0/55bf5f1177f1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Cabin_Identifier_T" refOid="!ed/3bc71/273B/1120/54ca0ad8352a"/>
+						<ConstVarRef path="DMI_Types_Pkg::cabin_A" refOid="!ed/3bc72/273B/1120/54ca0ad81d4"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Cabin_Identifier_T_cabin_B">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Cabin_Identifier_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::cabin_B"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/38fda/B01/2EA0/55bf5f6c32c5" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Cabin_Identifier_T" refOid="!ed/3bc71/273B/1120/54ca0ad8352a"/>
+						<ConstVarRef path="DMI_Types_Pkg::cabin_B" refOid="!ed/3bc73/273B/1120/54ca0ad87549"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_DMI_Identifier_T_DMI_1">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_DMI_Identifier_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::DMI_1"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39003/6E5D/1EF4/55b611c71013" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_DMI_Identifier_T" refOid="!ed/3bc61/273B/1120/54ca0a0d422d"/>
+						<ConstVarRef path="DMI_Types_Pkg::DMI_1" refOid="!ed/3bc62/273B/1120/54ca0ab3467b"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_DMI_Identifier_T_DMI_2">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_DMI_Identifier_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::DMI_2"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39061/6E5D/1EF4/55b612e86da4" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_DMI_Identifier_T" refOid="!ed/3bc61/273B/1120/54ca0a0d422d"/>
+						<ConstVarRef path="DMI_Types_Pkg::DMI_2" refOid="!ed/3bc69/273B/1120/54ca0acd5fa8"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_End_of_NTC_data_entry">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::End_of_NTC_data_entry"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/395f2/4FD/3768/55c1feb121b6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::End_of_NTC_data_entry" refOid="!ed/13d5c/7DB/31C/54c8e2785903"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Hide_tunnel_stopping_information">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Hide_tunnel_stopping_information"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/395f9/4FD/3768/55c1feb17d89" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Hide_tunnel_stopping_information" refOid="!ed/13d5a/7DB/31C/54c8e2783f53"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Language_changed">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Language_changed"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39600/4FD/3768/55c1feb15ce2" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Language_changed" refOid="!ed/13d48/7DB/31C/54c8e278458c"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Level_entry_request">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Level_entry_request"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39607/4FD/3768/55c1feb17e4e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Level_entry_request" refOid="!ed/13d3d/7DB/31C/54c8e278d76"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Maintain_shunting">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Maintain_shunting"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3960e/4FD/3768/55c1feb161b7" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Maintain_shunting" refOid="!ed/13d3c/7DB/31C/54c8e2785966"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Non_leading">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Non_leading"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39615/4FD/3768/55c1feb17e7c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Non_leading" refOid="!ed/13d3a/7DB/31C/54c8e2783519"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Non_leading_exit">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Non_leading_exit"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3961c/4FD/3768/55c1feb162fe" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Non_leading_exit" refOid="!ed/13d3b/7DB/31C/54c8e27839e0"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_NTC_data_entry_request">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::NTC_data_entry_request"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39623/4FD/3768/55c1feb14764" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::NTC_data_entry_request" refOid="!ed/13d5b/7DB/31C/54c8e27842ef"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Override_EOA">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Override_EOA"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3962a/4FD/3768/55c1feb16fc" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Override_EOA" refOid="!ed/13d3e/7DB/31C/54c8e27824ca"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Override_route_unsuitability">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Override_route_unsuitability"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39631/4FD/3768/55c1feb13897" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Override_route_unsuitability" refOid="!ed/13d3f/7DB/31C/54c8e27841f3"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Radio_network_entry_aborted">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Radio_network_entry_aborted"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39638/4FD/3768/55c1feb121aa" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Radio_network_entry_aborted" refOid="!ed/13d4c/7DB/31C/54c8e2783dc3"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Remove_VBC_request">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Remove_VBC_request"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3963f/4FD/3768/55c1feb14fe2" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Remove_VBC_request" refOid="!ed/13d58/7DB/31C/54c8e2783a3c"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Request_for_Adhesion_factor_data">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Request_for_Adhesion_factor_data"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39646/4FD/3768/55c1feb11986" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Request_for_Adhesion_factor_data" refOid="!ed/13d42/7DB/31C/54c8e2784d38"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Request_for_radio_network_entry">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Request_for_radio_network_entry"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3964d/4FD/3768/55c1feb1320b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Request_for_radio_network_entry" refOid="!ed/13d40/7DB/31C/54c8e2787fa"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Request_for_SR_data">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Request_for_SR_data"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39654/4FD/3768/55c1feb1579b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Request_for_SR_data" refOid="!ed/13d43/7DB/31C/54c8e27830b4"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Request_for_switching_train_data_entry">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Request_for_switching_train_data_entry"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3965b/4FD/3768/55c1feb121c3" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Request_for_switching_train_data_entry" refOid="!ed/13d45/7DB/31C/54c8e2785be4"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Request_for_system_version">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Request_for_system_version"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39662/4FD/3768/55c1feb13297" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Request_for_system_version" refOid="!ed/13d44/7DB/31C/54c8e27823d5"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Request_for_train_data">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Request_for_train_data"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39669/4FD/3768/55c1feb1a88" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Request_for_train_data" refOid="!ed/13d41/7DB/31C/54c8e2784890"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Request_for_train_data_view">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Request_for_train_data_view"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39670/4FD/3768/55c1feb13a0a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Request_for_train_data_view" refOid="!ed/13d46/7DB/31C/54c8e278d4"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Request_isolation">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Request_isolation"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39677/4FD/3768/55c1feb11b7a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Request_isolation" refOid="!ed/13d54/7DB/31C/54c8e2784895"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Request_to_contact_last_known_RBC">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Request_to_contact_last_known_RBC"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3967e/4FD/3768/55c1feb17213" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Request_to_contact_last_known_RBC" refOid="!ed/13d52/7DB/31C/54c8e2785d37"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Request_to_hide_geographical_information">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Request_to_hide_geographical_information"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39685/4FD/3768/55c1feb17243" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Request_to_hide_geographical_information" refOid="!ed/13d4d/7DB/31C/54c8e2785149"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Request_to_hide_supervision_data">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Request_to_hide_supervision_data"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3968c/4FD/3768/55c1feb14138" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Request_to_hide_supervision_data" refOid="!ed/13d4f/7DB/31C/54c8e2781bad"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Request_to_show_geographical_position">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Request_to_show_geographical_position"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/39693/4FD/3768/55c1feb118a3" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Request_to_show_geographical_position" refOid="!ed/13d47/7DB/31C/54c8e2786662"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Request_to_show_supervision_data">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Request_to_show_supervision_data"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3969a/4FD/3768/55c1feb15917" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Request_to_show_supervision_data" refOid="!ed/13d4e/7DB/31C/54c8e278779a"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Request_to_use_short_number">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Request_to_use_short_number"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/396a1/4FD/3768/55c1feb12748" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Request_to_use_short_number" refOid="!ed/13d53/7DB/31C/54c8e2787416"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Scroll_text_down">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Scroll_text_down"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/396a8/4FD/3768/55c1feb11027" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Scroll_text_down" refOid="!ed/13d51/7DB/31C/54c8e2787614"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Scroll_text_up">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Scroll_text_up"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/396af/4FD/3768/55c1feb14eed" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Scroll_text_up" refOid="!ed/13d50/7DB/31C/54c8e2787d4d"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Set_VBC_request">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Set_VBC_request"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/396b6/4FD/3768/55c1feb145d7" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Set_VBC_request" refOid="!ed/13d57/7DB/31C/54c8e2783daa"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Show_tunnel_stopping_information">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Show_tunnel_stopping_information"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/396bd/4FD/3768/55c1feb16502" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Show_tunnel_stopping_information" refOid="!ed/13d59/7DB/31C/54c8e2787914"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="ENUM_DMI_Request_T_Shunting_entry">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::DMI_Request_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::Shunting_entry"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/396c4/4FD/3768/55c1feb15397" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::DMI_Request_T" refOid="!ed/13d36/7DB/31C/54c8e2781364"/>
+						<ConstVarRef path="DMI_Types_Pkg::Shunting_entry" refOid="!ed/13d38/7DB/31C/54c8e27856ac"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+	</declarations>
+</File>

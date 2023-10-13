@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Type name="tPASPOutput_Array">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float64"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="cPASPOutput_Array_Size"/>
+							</path>
+						</IdExpression>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/44cf/5D79/2F0C/560d43616429"/>
+			</pragmas>
+		</Type>
+		<Constant name="cPASPOutput_Array_Size">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="4"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/44dd/5D79/2F0C/560d43ab122f"/>
+			</pragmas>
+		</Constant>
+		<Constant name="cCSM">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::M_SUPERVISION_STATUS"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::CSM"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/201f1/349D/A18/565728ee267c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::M_SUPERVISION_STATUS" refOid="!ed/13dda/77E9/1E10/54c8d61f1a61"/>
+						<ConstVarRef path="DMI_Types_Pkg::CSM" refOid="!ed/13ddb/77E9/1E10/54c8d61f7312"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="cPIM">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="DMI_Types_Pkg::M_SUPERVISION_STATUS"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="DMI_Types_Pkg::PIM"/>
+					</path>
+				</IdExpression>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/20215/2DE7/188C/565814be495" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="DMI_Types_Pkg::M_SUPERVISION_STATUS" refOid="!ed/13dda/77E9/1E10/54c8d61f1a61"/>
+						<ConstVarRef path="DMI_Types_Pkg::PIM" refOid="!ed/13ddc/77E9/1E10/54c8d61f448d"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+	</declarations>
+</File>

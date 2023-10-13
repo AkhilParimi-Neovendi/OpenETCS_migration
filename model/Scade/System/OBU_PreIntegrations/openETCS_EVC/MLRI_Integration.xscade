@@ -1,0 +1,4140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Constant name="cNoBGErrors">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="Common_Types_Pkg::MSG_Errors_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- {linkedBGError : false, unlinkedBGError : false, BG_versionIncompatible : false, ... -->
+				<DataStructOp>
+					<data>
+						<LabelledExpression label="linkedBGError">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="unlinkedBGError">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="BG_versionIncompatible">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="radioSequenceError">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="tNvContactError">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="otherTimingError">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="radioMessageConsistencyError">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="nid_c">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="nid_errorbg">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+					</data>
+				</DataStructOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/b921c/F11/9D4/56128c6b6011" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="Common_Types_Pkg::MSG_Errors_T" refOid="!ed/4661b/411B/1A00/555ed92952ac"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="cBusStart">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="TM_TrainTrack_Bus::M_TrainTrackMessageBus_t"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- [{Message : {valid : false, nid_message : 0, l_message : 0, t_train : 0, nid_engi... -->
+				<DataArrayOp>
+					<data>
+						<!-- {Message : {valid : false, nid_message : 0, l_message : 0, t_train : 0, nid_engin... -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="Message">
+									<flow>
+										<!-- {valid : false, nid_message : 0, l_message : 0, t_train : 0, nid_engine : 0, fiel... -->
+										<DataStructOp>
+											<data>
+												<LabelledExpression label="valid">
+													<flow>
+														<ConstValue value="false"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="nid_message">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="l_message">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="t_train">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="nid_engine">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="field1">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="field2">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="field3">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+											</data>
+										</DataStructOp>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="OptionalPackets">
+									<flow>
+										<!-- [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,... -->
+										<DataArrayOp>
+											<data>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+											</data>
+										</DataArrayOp>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+						<!-- {Message : {valid : false, nid_message : 0, l_message : 0, t_train : 0, nid_engin... -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="Message">
+									<flow>
+										<!-- {valid : false, nid_message : 0, l_message : 0, t_train : 0, nid_engine : 0, fiel... -->
+										<DataStructOp>
+											<data>
+												<LabelledExpression label="valid">
+													<flow>
+														<ConstValue value="false"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="nid_message">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="l_message">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="t_train">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="nid_engine">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="field1">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="field2">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="field3">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+											</data>
+										</DataStructOp>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="OptionalPackets">
+									<flow>
+										<!-- [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,... -->
+										<DataArrayOp>
+											<data>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+											</data>
+										</DataArrayOp>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+						<!-- {Message : {valid : false, nid_message : 0, l_message : 0, t_train : 0, nid_engin... -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="Message">
+									<flow>
+										<!-- {valid : false, nid_message : 0, l_message : 0, t_train : 0, nid_engine : 0, fiel... -->
+										<DataStructOp>
+											<data>
+												<LabelledExpression label="valid">
+													<flow>
+														<ConstValue value="false"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="nid_message">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="l_message">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="t_train">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="nid_engine">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="field1">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="field2">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="field3">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+											</data>
+										</DataStructOp>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="OptionalPackets">
+									<flow>
+										<!-- [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,... -->
+										<DataArrayOp>
+											<data>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+											</data>
+										</DataArrayOp>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+						<!-- {Message : {valid : false, nid_message : 0, l_message : 0, t_train : 0, nid_engin... -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="Message">
+									<flow>
+										<!-- {valid : false, nid_message : 0, l_message : 0, t_train : 0, nid_engine : 0, fiel... -->
+										<DataStructOp>
+											<data>
+												<LabelledExpression label="valid">
+													<flow>
+														<ConstValue value="false"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="nid_message">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="l_message">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="t_train">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="nid_engine">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="field1">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="field2">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="field3">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+											</data>
+										</DataStructOp>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="OptionalPackets">
+									<flow>
+										<!-- [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,... -->
+										<DataArrayOp>
+											<data>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+											</data>
+										</DataArrayOp>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+						<!-- {Message : {valid : false, nid_message : 0, l_message : 0, t_train : 0, nid_engin... -->
+						<DataStructOp>
+							<data>
+								<LabelledExpression label="Message">
+									<flow>
+										<!-- {valid : false, nid_message : 0, l_message : 0, t_train : 0, nid_engine : 0, fiel... -->
+										<DataStructOp>
+											<data>
+												<LabelledExpression label="valid">
+													<flow>
+														<ConstValue value="false"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="nid_message">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="l_message">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="t_train">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="nid_engine">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="field1">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="field2">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+												<LabelledExpression label="field3">
+													<flow>
+														<ConstValue value="0"/>
+													</flow>
+												</LabelledExpression>
+											</data>
+										</DataStructOp>
+									</flow>
+								</LabelledExpression>
+								<LabelledExpression label="OptionalPackets">
+									<flow>
+										<!-- [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,... -->
+										<DataArrayOp>
+											<data>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+												<ConstValue value="0"/>
+											</data>
+										</DataArrayOp>
+									</flow>
+								</LabelledExpression>
+							</data>
+						</DataStructOp>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/f7ec0/1798/1120/561ce9814e17" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="TM_TrainTrack_Bus::M_TrainTrackMessageBus_t" refOid="!ed/3a00e6/4AB4/E3C/56147c004b4c"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="cNoMobileRegistrationContext">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="RCM_Types_Pkg::mobileRegistrationContext_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- {valid : false, mobileDeviceNo : 0, healthStatus : RCM_Types_Pkg::mhs_nok, status... -->
+				<DataStructOp>
+					<data>
+						<LabelledExpression label="valid">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="mobileDeviceNo">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="healthStatus">
+							<flow>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="RCM_Types_Pkg::mhs_nok"/>
+									</path>
+								</IdExpression>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="status">
+							<flow>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="RCM_Types_Pkg::mrs_unregistered"/>
+									</path>
+								</IdExpression>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="nid_mn">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+					</data>
+				</DataStructOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/134e4f/6E5C/928/5630e30ee16" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="RCM_Types_Pkg::mobileRegistrationContext_T" refOid="!ed/13bd38/54F5/1D9C/55c9aa9e260"/>
+						<ConstVarRef path="RCM_Types_Pkg::mhs_nok" refOid="!ed/13bd52/54F5/1D9C/55c9aba7da9"/>
+						<ConstVarRef path="RCM_Types_Pkg::mrs_unregistered" refOid="!ed/13bd5e/54F5/1D9C/55c9ac0c7a26"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="cNoMobileConnectionContext">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="RCM_Types_Pkg::mobileConnectionContext_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- {valid : false, mobileDeviceNo : 0, status : RCM_Types_Pkg::mcs_disconnected, nid... -->
+				<DataStructOp>
+					<data>
+						<LabelledExpression label="valid">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="mobileDeviceNo">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="status">
+							<flow>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="RCM_Types_Pkg::mcs_disconnected"/>
+									</path>
+								</IdExpression>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="nid_radio">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="settingUpConnectionHasFailed">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="connectionLost">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="isInRadioHole">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+					</data>
+				</DataStructOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/134e77/6E5C/928/5630e3571a8b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="RCM_Types_Pkg::mobileConnectionContext_T" refOid="!ed/13bded/54F5/1D9C/55c9c8477b"/>
+						<ConstVarRef path="RCM_Types_Pkg::mcs_disconnected" refOid="!ed/13bd62/54F5/1D9C/55c9accb752b"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="cNoSupervisingRBC">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="Handover_Pkg::connection_ids_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- {valid : false, mobileDeviceNo : 0, nid_c : 0, nid_RBC : 0, nid_radio : 0, nid_mn... -->
+				<DataStructOp>
+					<data>
+						<LabelledExpression label="valid">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="mobileDeviceNo">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="nid_c">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="nid_RBC">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="nid_radio">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="nid_mn">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+					</data>
+				</DataStructOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/134c36/1C13/185C/56321a1a4180" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="Handover_Pkg::connection_ids_T" refOid="!ed/122537/7FE3/A44/553f75934f28"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="cNoTDEvents">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="trainData_Types_pkg::trainData_Events_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- {trainStandStill : false, driverRequestModify : false, communicationSessionEstabl... -->
+				<DataStructOp>
+					<data>
+						<LabelledExpression label="trainStandStill">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="driverRequestModify">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="communicationSessionEstablished">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="safeRadioConnectionLost">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="approachingRBCarea">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="MoRCreadyFlag">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+					</data>
+				</DataStructOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/1f4a07/56F8/2718/5637ae64240d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="trainData_Types_pkg::trainData_Events_T" refOid="!ed/48dd5/22F4/EA8/55a22f3f3a45"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="cNoPositioningErrors">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="TrainPosition_Types_Pck::positionErrors_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- {outOfMemSpace : false, passedBG_foundNotWhereExpected : false, positionCalculati... -->
+				<DataStructOp>
+					<data>
+						<LabelledExpression label="outOfMemSpace">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="passedBG_foundNotWhereExpected">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="positionCalculation_inconsistent">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="linkedBGMissed">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="BGpassedInUnexpectedDirection">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="BG_LinkingConsistencyError">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="twoConsecutiveLinkedBGs_missed">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="doubleRepositioningError">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="bg">
+							<flow>
+								<!-- {valid : false, nid_c : 0, nid_bg : 0, q_link : Q_LINK_Unlinked, location : {nomi... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_c">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_bg">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="q_link">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Q_LINK_Unlinked"/>
+													</path>
+												</IdExpression>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="location">
+											<flow>
+												<!-- {nominal : 0, d_min : 0, d_max : 0} -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="nominal">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="d_min">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="d_max">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="seqNoOnTrack">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="infoFromLinking">
+											<flow>
+												<!-- {valid : false, nid_bg_fromLinkingBG : 0, nid_c_fromLinkingBG : 0, expectedLocati... -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="valid">
+															<flow>
+																<ConstValue value="false"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="nid_bg_fromLinkingBG">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="nid_c_fromLinkingBG">
+															<flow>
+																<ConstValue value="0"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="expectedLocation">
+															<flow>
+																<!-- {nominal : 0, d_min : 0, d_max : 0} -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nominal">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="d_min">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="d_max">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="d_link">
+															<flow>
+																<!-- {nominal : 0, d_min : 0, d_max : 0} -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="nominal">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="d_min">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="d_max">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="linkingInfo">
+															<flow>
+																<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="nid_LRBG">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_dir">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIR_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_scale">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="d_link">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_newcountry">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="nid_c">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="nid_bg">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_linkorientation">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_linkreaction">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_locacc">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="infoFromPassing">
+											<flow>
+												<!-- {valid : false, BG_Header : {valid : false, q_updown : Q_UPDOWN_Down_link_telegra... -->
+												<DataStructOp>
+													<data>
+														<LabelledExpression label="valid">
+															<flow>
+																<ConstValue value="false"/>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="BG_Header">
+															<flow>
+																<!-- {valid : false, q_updown : Q_UPDOWN_Down_link_telegram, m_version : M_VERSION_Pre... -->
+																<DataStructOp>
+																	<data>
+																		<LabelledExpression label="valid">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_updown">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_UPDOWN_Down_link_telegram"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="m_version">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_media">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_MEDIA_Balise"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="n_total">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="N_TOTAL_1_balise_in_the_group"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="m_mcount">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="nid_c">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="nid_bg">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_link">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_LINK_Unlinked"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="bgPosition">
+																			<flow>
+																				<!-- {valid : false, timestamp : 0, odo : {o_nominal : 0, o_min : 0, o_max : 0}, speed... -->
+																				<DataStructOp>
+																					<data>
+																						<LabelledExpression label="valid">
+																							<flow>
+																								<ConstValue value="false"/>
+																							</flow>
+																						</LabelledExpression>
+																						<LabelledExpression label="timestamp">
+																							<flow>
+																								<ConstValue value="0"/>
+																							</flow>
+																						</LabelledExpression>
+																						<LabelledExpression label="odo">
+																							<flow>
+																								<!-- {o_nominal : 0, o_min : 0, o_max : 0} -->
+																								<DataStructOp>
+																									<data>
+																										<LabelledExpression label="o_nominal">
+																											<flow>
+																												<ConstValue value="0"/>
+																											</flow>
+																										</LabelledExpression>
+																										<LabelledExpression label="o_min">
+																											<flow>
+																												<ConstValue value="0"/>
+																											</flow>
+																										</LabelledExpression>
+																										<LabelledExpression label="o_max">
+																											<flow>
+																												<ConstValue value="0"/>
+																											</flow>
+																										</LabelledExpression>
+																									</data>
+																								</DataStructOp>
+																							</flow>
+																						</LabelledExpression>
+																						<LabelledExpression label="speed">
+																							<flow>
+																								<!-- {v_safeNominal : 0, v_rawNominal : 0, v_lower : 0, v_upper : 0} -->
+																								<DataStructOp>
+																									<data>
+																										<LabelledExpression label="v_safeNominal">
+																											<flow>
+																												<ConstValue value="0"/>
+																											</flow>
+																										</LabelledExpression>
+																										<LabelledExpression label="v_rawNominal">
+																											<flow>
+																												<ConstValue value="0"/>
+																											</flow>
+																										</LabelledExpression>
+																										<LabelledExpression label="v_lower">
+																											<flow>
+																												<ConstValue value="0"/>
+																											</flow>
+																										</LabelledExpression>
+																										<LabelledExpression label="v_upper">
+																											<flow>
+																												<ConstValue value="0"/>
+																											</flow>
+																										</LabelledExpression>
+																									</data>
+																								</DataStructOp>
+																							</flow>
+																						</LabelledExpression>
+																						<LabelledExpression label="acceleration">
+																							<flow>
+																								<ConstValue value="0"/>
+																							</flow>
+																						</LabelledExpression>
+																						<LabelledExpression label="motionState">
+																							<flow>
+																								<IdExpression>
+																									<path>
+																										<ConstVarRef name="Obu_BasicTypes_Pkg::noMotion"/>
+																									</path>
+																								</IdExpression>
+																							</flow>
+																						</LabelledExpression>
+																						<LabelledExpression label="motionDirection">
+																							<flow>
+																								<IdExpression>
+																									<path>
+																										<ConstVarRef name="Obu_BasicTypes_Pkg::unknownDirection"/>
+																									</path>
+																								</IdExpression>
+																							</flow>
+																						</LabelledExpression>
+																					</data>
+																				</DataStructOp>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="BG_centerDetectionInaccuraccuracies">
+																			<flow>
+																				<!-- {nominal : 0, d_min : 0, d_max : 0} -->
+																				<DataStructOp>
+																					<data>
+																						<LabelledExpression label="nominal">
+																							<flow>
+																								<ConstValue value="0"/>
+																							</flow>
+																						</LabelledExpression>
+																						<LabelledExpression label="d_min">
+																							<flow>
+																								<ConstValue value="0"/>
+																							</flow>
+																						</LabelledExpression>
+																						<LabelledExpression label="d_max">
+																							<flow>
+																								<ConstValue value="0"/>
+																							</flow>
+																						</LabelledExpression>
+																					</data>
+																				</DataStructOp>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="q_nvlocacc">
+																			<flow>
+																				<ConstValue value="0"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="noCoordinateSystemHasBeenAssigned">
+																			<flow>
+																				<ConstValue value="false"/>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="trainOrientationToBG">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIRLRBG_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																		<LabelledExpression label="trainRunningDirectionToBG">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="Q_DIRTRAIN_Reverse"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																		</LabelledExpression>
+																	</data>
+																</DataStructOp>
+															</flow>
+														</LabelledExpression>
+														<LabelledExpression label="linkedBGs">
+															<flow>
+																<!-- [{valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_sca... -->
+																<DataArrayOp>
+																	<data>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																		<!-- {valid : false, nid_LRBG : 0, q_dir : Q_DIR_Reverse, q_scale : Q_SCALE_10_cm_scal... -->
+																		<DataStructOp>
+																			<data>
+																				<LabelledExpression label="valid">
+																					<flow>
+																						<ConstValue value="false"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_LRBG">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_dir">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_DIR_Reverse"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_scale">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_SCALE_10_cm_scale"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="d_link">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_newcountry">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_c">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="nid_bg">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkorientation">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_linkreaction">
+																					<flow>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="Q_LINKREACTION_Train_trip"/>
+																							</path>
+																						</IdExpression>
+																					</flow>
+																				</LabelledExpression>
+																				<LabelledExpression label="q_locacc">
+																					<flow>
+																						<ConstValue value="0"/>
+																					</flow>
+																				</LabelledExpression>
+																			</data>
+																		</DataStructOp>
+																	</data>
+																</DataArrayOp>
+															</flow>
+														</LabelledExpression>
+													</data>
+												</DataStructOp>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="missed">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+							</flow>
+						</LabelledExpression>
+					</data>
+				</DataStructOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/1f4b2e/5C79/276C/56443c096242" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="TrainPosition_Types_Pck::positionErrors_T" refOid="!ed/1478d/464A/1DAC/53981c6c3f32"/>
+						<ConstVarRef path="Obu_BasicTypes_Pkg::noMotion" refOid="!ed/3c3e/3EFF/1644/5475e9693159"/>
+						<ConstVarRef path="Obu_BasicTypes_Pkg::unknownDirection" refOid="!ed/3c41/3EFF/1644/5475e9e941c7"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="cNoMsgErrors">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="Common_Types_Pkg::MSG_Errors_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- {linkedBGError : false, unlinkedBGError : false, BG_versionIncompatible : false, ... -->
+				<DataStructOp>
+					<data>
+						<LabelledExpression label="linkedBGError">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="unlinkedBGError">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="BG_versionIncompatible">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="radioSequenceError">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="tNvContactError">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="otherTimingError">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="radioMessageConsistencyError">
+							<flow>
+								<ConstValue value="false"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="nid_c">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="nid_errorbg">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+					</data>
+				</DataStructOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/1f542d/CC4/E38/5645abcbf30" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<TypeRef path="Common_Types_Pkg::MSG_Errors_T" refOid="!ed/4661b/411B/1A00/555ed92952ac"/>
+					</references>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Open>
+			<package>
+				<PackageRef name="EVC_PermanentData_Pkg"/>
+			</package>
+			<pragmas>
+				<ed:Open oid="!ed/7077bf/4491/81CC/6461f87f725c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<PackageRef path="EVC_PermanentData_Pkg" refOid="!ed/123f4e/51D7/17B4/55b72c473978"/>
+					</references>
+				</ed:Open>
+			</pragmas>
+		</Open>
+	</declarations>
+</File>

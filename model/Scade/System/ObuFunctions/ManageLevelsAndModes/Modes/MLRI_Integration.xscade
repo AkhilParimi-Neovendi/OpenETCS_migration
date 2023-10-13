@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Open>
+			<package>
+				<PackageRef name="TrainPosition_Types_Pck"/>
+			</package>
+			<pragmas>
+				<ed:Open oid="!ed/403ef/471B/12D0/54be516e1195" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<references>
+						<PackageRef path="TrainPosition_Types_Pck" refOid="!ed/3a829/1CAF/1A3C/5304ab986f05"/>
+					</references>
+				</ed:Open>
+			</pragmas>
+		</Open>
+	</declarations>
+</File>

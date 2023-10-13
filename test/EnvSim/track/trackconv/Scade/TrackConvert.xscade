@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/4" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/2">
+	<declarations>
+		<Constant name="cEMPTY_TRAINTRACK_MESSAGE">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="TM_radio_messages::M_TrainTrack_Message_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- {Message : {valid : false, nid_message : 0, l_message : 0, t_train : 0, nid_engin... -->
+				<DataStructOp>
+					<data>
+						<LabelledExpression label="Message">
+							<flow>
+								<!-- {valid : false, nid_message : 0, l_message : 0, t_train : 0, nid_engine : 0, fiel... -->
+								<DataStructOp>
+									<data>
+										<LabelledExpression label="valid">
+											<flow>
+												<ConstValue value="false"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_message">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="l_message">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="t_train">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="nid_engine">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="field1">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="field2">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+										<LabelledExpression label="field3">
+											<flow>
+												<ConstValue value="0"/>
+											</flow>
+										</LabelledExpression>
+									</data>
+								</DataStructOp>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="OptionalPackets">
+							<flow>
+								<!-- [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,... -->
+								<DataArrayOp>
+									<data>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+										<ConstValue value="0"/>
+									</data>
+								</DataArrayOp>
+							</flow>
+						</LabelledExpression>
+					</data>
+				</DataStructOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/6425ba/3AA6/554/566eb28e37e6"/>
+			</pragmas>
+		</Constant>
+	</declarations>
+</File>

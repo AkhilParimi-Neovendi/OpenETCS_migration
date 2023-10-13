@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="function" name="deleteLeadingUndefinedElements">
+	<inputs>
+		<Variable name="oldCurve">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="CalcBrakingCurves_types::ParabolaCurve_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/5066/61AA/4B94/54da12f92748"/>
+			</pragmas>
+		</Variable>
+	</inputs>
+	<outputs>
+		<Variable name="condition">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/51c5/61AA/4B94/54da15a4439a"/>
+			</pragmas>
+		</Variable>
+		<Variable name="newCurve">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="CalcBrakingCurves_types::ParabolaCurve_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/5067/61AA/4B94/54da130e4dee"/>
+			</pragmas>
+		</Variable>
+	</outputs>
+	<locals>
+		<Variable name="_L2">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="CalcBrakingCurves_types::ParabolaCurve_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/508c/61AA/4B94/54da13a82a96"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L21">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/5211/12B6/1CA4/54dc7c352df0"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L23">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="CalcBrakingCurves_types::ParabolaCurve_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/1fc8a/47C7/E88/5502a5e66d67"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L24">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="CalcBrakingCurves_types::ParabolaCurveValid_T"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/1fca1/47C7/E88/5502a62e20a6"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L25">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/f305c/7B5D/1AC4/5502bae443e0"/>
+			</pragmas>
+		</Variable>
+	</locals>
+	<data>
+		<!-- _L2 = oldCurve; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L2"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="oldCurve"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/508b/61AA/4B94/54da13a81fc"/>
+			</pragmas>
+		</Equation>
+		<!-- newCurve = _L23; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="newCurve"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="_L23"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/5091/61AA/4B94/54da13ab748b"/>
+			</pragmas>
+		</Equation>
+		<!-- condition = _L25; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="condition"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="_L25"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/51c6/61AA/4B94/54da15b059f3"/>
+			</pragmas>
+		</Equation>
+		<!-- _L21 = _L24[0]; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L21"/>
+			</lefts>
+			<right>
+				<!-- _L24[0] -->
+				<PrjOp name="1">
+					<flow>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L24"/>
+							</path>
+						</IdExpression>
+					</flow>
+					<with>
+						<ConstValue value="0"/>
+					</with>
+				</PrjOp>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/5210/12B6/1CA4/54dc7c357658"/>
+			</pragmas>
+		</Equation>
+		<!-- _L23 = (activate popLeadingArc every _L25 default (_L2))(_L2); -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L23"/>
+			</lefts>
+			<right>
+				<!-- (activate popLeadingArc every _L25 default (_L2))(_L2) -->
+				<CallExpression>
+					<operator>
+						<ActivateNoInitOp>
+							<operator>
+								<OpCall>
+									<operator>
+										<OperatorRef name="popLeadingArc"/>
+									</operator>
+								</OpCall>
+							</operator>
+							<every>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L25"/>
+									</path>
+								</IdExpression>
+							</every>
+							<default>
+								<ListExpression>
+									<items>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="_L2"/>
+											</path>
+										</IdExpression>
+									</items>
+								</ListExpression>
+							</default>
+						</ActivateNoInitOp>
+					</operator>
+					<callParameters>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L2"/>
+							</path>
+						</IdExpression>
+					</callParameters>
+					<pragmas>
+						<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<references>
+								<OperatorRef path="popLeadingArc" refOid="!ed/1fc81/47C7/E88/5502a5e6392">
+									<InputRef refOid="!ed/1fc86/47C7/E88/5502a5e63c94"/>
+									<OutputRef refOid="!ed/1fc89/47C7/E88/5502a5e61413"/>
+								</OperatorRef>
+							</references>
+						</ed:CallExpression>
+					</pragmas>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/1fc8c/47C7/E88/5502a5e6353c"/>
+			</pragmas>
+		</Equation>
+		<!-- _L24 = _L2.valid; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L24"/>
+			</lefts>
+			<right>
+				<!-- _L2.valid -->
+				<PrjOp name="2">
+					<flow>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L2"/>
+							</path>
+						</IdExpression>
+					</flow>
+					<with>
+						<Label name="valid"/>
+					</with>
+				</PrjOp>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/1fca0/47C7/E88/5502a62e2874"/>
+			</pragmas>
+		</Equation>
+		<!-- _L25 =  not _L21; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L25"/>
+			</lefts>
+			<right>
+				<!--  not _L21 -->
+				<UnaryOp name="1" operator="not">
+					<operand>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L21"/>
+							</path>
+						</IdExpression>
+					</operand>
+				</UnaryOp>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/f305b/7B5D/1AC4/5502bae46903"/>
+			</pragmas>
+		</Equation>
+	</data>
+	<pragmas>
+		<ed:Operator oid="!ed/5064/61AA/4B94/54da12d1454c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+			<diagrams>
+				<NetDiagram name="diagram_deleteLeadingUndefinedElements_1" landscape="true" format="A4 (210 297)" oid="!ed/5065/61AA/4B94/54da12d171dc">
+					<presentationElements>
+						<EquationGE presentable="!ed/508b/61AA/4B94/54da13a81fc">
+							<position>
+								<Point x="1826" y="2223"/>
+							</position>
+							<size>
+								<Size width="265" height="503"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/5091/61AA/4B94/54da13ab748b">
+							<position>
+								<Point x="16457" y="2223"/>
+							</position>
+							<size>
+								<Size width="318" height="503"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/51c6/61AA/4B94/54da15b059f3">
+							<position>
+								<Point x="16457" y="1032"/>
+							</position>
+							<size>
+								<Size width="318" height="503"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/5210/12B6/1CA4/54dc7c357658">
+							<position>
+								<Point x="5715" y="820"/>
+							</position>
+							<size>
+								<Size width="952" height="952"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/1fc8c/47C7/E88/5502a5e6353c">
+							<position>
+								<Point x="9393" y="1773"/>
+							</position>
+							<size>
+								<Size width="5731" height="1418"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/1fca0/47C7/E88/5502a62e2874">
+							<position>
+								<Point x="3836" y="820"/>
+							</position>
+							<size>
+								<Size width="953" height="953"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/508b/61AA/4B94/54da13a81fc" dstEquation="!ed/1fca0/47C7/E88/5502a62e2874">
+							<positions>
+								<Point x="2090" y="2487"/>
+								<Point x="2963" y="2487"/>
+								<Point x="2963" y="1296"/>
+								<Point x="3836" y="1296"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/1fca0/47C7/E88/5502a62e2874" dstEquation="!ed/5210/12B6/1CA4/54dc7c357658">
+							<positions>
+								<Point x="4789" y="1296"/>
+								<Point x="5239" y="1296"/>
+								<Point x="5239" y="1296"/>
+								<Point x="5715" y="1296"/>
+							</positions>
+						</Edge>
+						<EquationGE presentable="!ed/f305b/7B5D/1AC4/5502bae46903">
+							<position>
+								<Point x="7911" y="953"/>
+							</position>
+							<size>
+								<Size width="1005" height="661"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/5210/12B6/1CA4/54dc7c357658" dstEquation="!ed/f305b/7B5D/1AC4/5502bae46903">
+							<positions>
+								<Point x="6668" y="1296"/>
+								<Point x="7276" y="1296"/>
+								<Point x="7276" y="1296"/>
+								<Point x="7911" y="1296"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/f305b/7B5D/1AC4/5502bae46903" dstEquation="!ed/51c6/61AA/4B94/54da15b059f3">
+							<positions>
+								<Point x="8916" y="1296"/>
+								<Point x="12700" y="1296"/>
+								<Point x="12700" y="1296"/>
+								<Point x="16510" y="1296"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/1fc8c/47C7/E88/5502a5e6353c" dstEquation="!ed/5091/61AA/4B94/54da13ab748b">
+							<positions>
+								<Point x="15134" y="2487"/>
+								<Point x="15796" y="2487"/>
+								<Point x="15796" y="2487"/>
+								<Point x="16510" y="2487"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/508b/61AA/4B94/54da13a81fc" dstEquation="!ed/1fc8c/47C7/E88/5502a5e6353c">
+							<positions>
+								<Point x="2090" y="2487"/>
+								<Point x="7170" y="2487"/>
+								<Point x="7170" y="4498"/>
+								<Point x="12277" y="4498"/>
+								<Point x="12277" y="3201"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/508b/61AA/4B94/54da13a81fc" dstEquation="!ed/1fc8c/47C7/E88/5502a5e6353c">
+							<positions>
+								<Point x="2090" y="2487"/>
+								<Point x="5741" y="2487"/>
+								<Point x="5741" y="2487"/>
+								<Point x="9393" y="2487"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/f305b/7B5D/1AC4/5502bae46903" dstEquation="!ed/1fc8c/47C7/E88/5502a5e6353c">
+							<positions>
+								<Point x="8916" y="1296"/>
+								<Point x="12277" y="1296"/>
+								<Point x="12277" y="1773"/>
+							</positions>
+						</Edge>
+					</presentationElements>
+				</NetDiagram>
+			</diagrams>
+			<references>
+				<TypeRef path="CalcBrakingCurves_types::ParabolaCurve_T" refOid="!ed/3e68a/3FC3/11D4/54db533928fe"/>
+			</references>
+		</ed:Operator>
+	</pragmas>
+</Operator>

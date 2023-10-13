@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ALMGateway:ALMGProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ALMGateway="http://www.ansys.com/scade/lifecycle/almgateway/4" name="Testbench_Integration" id="_Ptz-AGESEe6-zvle840M_w">
+  <connectors xsi:type="ALMGateway:GenericConnector" name="Polarion" id="com.esterel.scade.lifecycle.almgateway.connector.polarion" location="https://dbcargo-cato.de/polarion">
+    <exportdocuments xsi:type="ALMGateway:GenericExportDocument" filterLocation="" filterParameters="">
+      <attributes name="proxyDoc"/>
+      <attributes name="proxyResourceShape"/>
+      <attributes name="proxyHeadingResourceShape"/>
+      <attributes name="proxyLinkType"/>
+    </exportdocuments>
+    <attributes name="provider" value="https://dbcargo-cato.de/project/DBCargo|DBCargo"/>
+  </connectors>
+</ALMGateway:ALMGProject>

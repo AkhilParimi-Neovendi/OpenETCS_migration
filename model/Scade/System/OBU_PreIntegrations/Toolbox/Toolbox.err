@@ -1,0 +1,7 @@
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:\Users\AKHILP~1\AppData\Local\Temp\ScadeChecker\15912\checker_file.scade, line 15396, character 0
+  at path DMI_Control_Pkg::DMI_Controller_without_Handshake/CabinSM:DeskIsOpen:IdentifierRequest/
+ The local variable IdentifierRequest is never used
+*** Monomorphization Warning (WAR_153): No specialized operator found
+  at file C:\Users\AKHILP~1\AppData\Local\Temp\ScadeChecker\15912\checker_file.scade, line 100231, character 14
+  at path DMI_Control_Pkg::Utils::ASCII_to_INTEGER_iterator/_L17=

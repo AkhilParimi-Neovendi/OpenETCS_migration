@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="node" name="Receive_Trackside_Data">
+	<inputs>
+		<Variable name="FromRadio">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="BaliseGroupInCoordinateSystem_t"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4adabb/1AE7/E88/54cb293b6b89"/>
+			</pragmas>
+		</Variable>
+		<Variable name="BaliseFromAPI">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="BaliseGroupInCoordinateSystem_t"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4adac3/1AE7/E88/54cb29484224"/>
+			</pragmas>
+		</Variable>
+	</inputs>
+	<outputs>
+		<Variable name="BG_data">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="BaliseGroupInCoordinateSystem_t"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/44de75/1AE7/E88/54cabb5727fd"/>
+			</pragmas>
+		</Variable>
+	</outputs>
+	<pragmas>
+		<ed:Operator oid="!ed/32e6a9/1AE7/E88/54c96afc5fc7" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+			<diagrams>
+				<NetDiagram name="diagram_Receive_Trackside_Data_1" landscape="true" format="A4 (210 297)" oid="!ed/32e6aa/1AE7/E88/54c96afc1256"/>
+			</diagrams>
+			<references>
+				<TypeRef path="BaliseGroupInCoordinateSystem_t" refOid="!ed/44de63/1AE7/E88/54cabab67cf0"/>
+			</references>
+		</ed:Operator>
+	</pragmas>
+</Operator>

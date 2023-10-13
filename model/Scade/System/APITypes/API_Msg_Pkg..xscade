@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Package name="API_Msg_Pkg">
+			<declarations>
+				<Type name="API_TelegramHeader_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="present">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/a31a/54B3/F70/546c7c333a77" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Indicates the presence of new and valid information at the start of the routine</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="checkResult">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/a31b/54B3/F70/546c7c33221d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>reports the result of the decoding procedure.</comment>
+											<comment>  true: successfully decoded</comment>
+											<comment>  false: errors during decoding. Typically, this is the result of the check of the parameters of the telegram.</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="api_bad_balise_received">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/a31c/54B3/F70/546c7c332f0b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>inicates, whether a bad balise has been received. In this scenario, dta are not valid.</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="api_header">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="BG_Types_Pkg::TelegramHeader_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/a31d/54B3/F70/546c7c337b50" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Telegram_Header</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="centerOfBalisePosition">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="BG_Types_Pkg::centerOfBalisePosition_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/a31f/54B3/F70/546c7c33235c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>actual odometry of where the telegram has been received</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/a319/54B3/F70/546c7c33f2c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Telegram as received via the API.</comment>
+							<comment>This type has to be defined in the openETCS API</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="API_TrackSideInput_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2ca68/6AA/111C/54be6d6545a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Information is valid and contains new information.</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="systemTimeMsgReceived">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Obu_BasicTypes_Pkg::T_internal_Type"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2cac8/6AA/111C/54be71805faf" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Timestamp when the system has received this message</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="msg_type">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Common_Types_Pkg::MsgSource_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2ca71/6AA/111C/54be6e552546" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>What is the source of the message</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="btm_msg">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="API_TelegramHeader_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2ca87/6AA/111C/54be6f551046" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Information for the balise telegram (if a balis has been received)</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="rtm_msg">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="API_RadioMsgHeader_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2ca91/6AA/111C/54be700238ab" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Information for the radio message (if this type has been received)</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="packets">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Common_Types_Pkg::CompressedPackets_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2cad2/6AA/111C/54be71e36453" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Packets received as a part of the message</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/2ca67/6AA/111C/54be6ccd47d2" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>This inteface is used for incoming trackside messages (RTM or BTM).</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="API_RadioMsgHeader_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="present">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2cab8/6AA/111C/54be70564012"/>
+									</pragmas>
+								</Field>
+								<Field name="apiConsistencyError">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2cab9/6AA/111C/54be70561354" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>true, if inconsistencies were detected by the API</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="Radio_Common_Header">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Radio_Types_Pkg::Radio_TrackTrain_Header_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/2cabc/6AA/111C/54be7056156d"/>
+									</pragmas>
+								</Field>
+								<Field name="Radio_MetaData">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Common_Types_Pkg::RadioMetadata_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/b051f6/70D2/1AC0/54c0c02329f8"/>
+									</pragmas>
+								</Field>
+								<Field name="sendingRBC_Id">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Common_Types_Pkg::RBC_Id_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/1ec56/1F4E/1880/55a3d67c291d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Identification of the sending rbc. Filled by the rtm</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/2cab6/6AA/111C/54be70563ff7"/>
+					</pragmas>
+				</Type>
+			</declarations>
+			<pragmas>
+				<ed:Package oid="!ed/b88d/1CD8/1D0C/546ca1bf57d3" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<diagrams>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/b88e/1CD8/1D0C/546ca1bf55fc" blockKind="constants"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/b88f/1CD8/1D0C/546ca1bf6e86" blockKind="types" columnsSize="0, 260, 281, 300"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/b890/1CD8/1D0C/546ca1bf6ecb" blockKind="sensors"/>
+					</diagrams>
+					<references>
+						<TypeRef path="BG_Types_Pkg::TelegramHeader_T" refOid="!ed/1c86f/4F04/13D0/53d6006b2c00"/>
+						<TypeRef path="BG_Types_Pkg::centerOfBalisePosition_T" refOid="!ed/f968/3DE2/1740/53d762024439"/>
+						<TypeRef path="Obu_BasicTypes_Pkg::T_internal_Type" refOid="!ed/8178/4AD8/11D4/5304c5cd1d44"/>
+						<TypeRef path="Common_Types_Pkg::MsgSource_T" refOid="!ed/b478/35CD/12BC/5485942514c"/>
+						<TypeRef path="Common_Types_Pkg::CompressedPackets_T" refOid="!ed/14fc8e/4207/1150/552680e33790"/>
+						<TypeRef path="Radio_Types_Pkg::Radio_TrackTrain_Header_T" refOid="!ed/5bed/59EE/B08/546dba56264c"/>
+						<TypeRef path="Common_Types_Pkg::RadioMetadata_T" refOid="!ed/23a2f/100C/D58/5498431b70df"/>
+						<TypeRef path="Common_Types_Pkg::RBC_Id_T" refOid="!ed/1d84e/1FEB/11C8/55a3d08f5387"/>
+					</references>
+				</ed:Package>
+			</pragmas>
+		</Package>
+	</declarations>
+</File>

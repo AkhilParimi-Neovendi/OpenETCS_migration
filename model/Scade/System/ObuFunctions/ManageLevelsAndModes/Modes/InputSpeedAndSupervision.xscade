@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="function" name="InputSpeedAndSupervision">
+	<inputs>
+		<Variable name="Data_From_Speed_and_Supervision">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="Level_And_Mode_Types_Pkg::T_Data_From_Speed_Supervision"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/7752d/2524/DB4/54cba90055b8"/>
+			</pragmas>
+		</Variable>
+	</inputs>
+	<outputs>
+		<Variable name="Estimated_Front_End_Overpass_SR_Distance">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/77522/2524/DB4/54cba900594e"/>
+			</pragmas>
+		</Variable>
+		<Variable name="Estimated_Front_End_Rear_Location_SSP_Or_Gradient">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/77523/2524/DB4/54cba9001814"/>
+			</pragmas>
+		</Variable>
+		<Variable name="Override_Function_Active">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/77525/2524/DB4/54cba9006a90"/>
+			</pragmas>
+		</Variable>
+		<Variable name="Train_Overpass_EOA_Antenna">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/77527/2524/DB4/54cba9007bad"/>
+			</pragmas>
+		</Variable>
+		<Variable name="Train_Overpass_EOA_Front_End">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/77529/2524/DB4/54cba90042ec"/>
+			</pragmas>
+		</Variable>
+		<Variable name="Train_Speed_Under_Override_Limit">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/7752b/2524/DB4/54cba9006bd4"/>
+			</pragmas>
+		</Variable>
+	</outputs>
+	<locals>
+		<Variable name="_L1">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="Level_And_Mode_Types_Pkg::T_Data_From_Speed_Supervision"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/77512/2524/DB4/54cba9001438"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L14">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/77513/2524/DB4/54cba90018ee"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L13">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/77514/2524/DB4/54cba90069a"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L12">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/77515/2524/DB4/54cba90067e3"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L11">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/77516/2524/DB4/54cba9002c10"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L10">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/77517/2524/DB4/54cba900329f"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L9">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/77518/2524/DB4/54cba9004423"/>
+			</pragmas>
+		</Variable>
+	</locals>
+	<data>
+		<!-- Estimated_Front_End_Overpass_SR_Distance = _L14; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="Estimated_Front_End_Overpass_SR_Distance"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="_L14"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/77504/2524/DB4/54cba9003d7d"/>
+			</pragmas>
+		</Equation>
+		<!-- Estimated_Front_End_Rear_Location_SSP_Or_Gradient = _L13; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="Estimated_Front_End_Rear_Location_SSP_Or_Gradient"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="_L13"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/77505/2524/DB4/54cba90019dd"/>
+			</pragmas>
+		</Equation>
+		<!-- Override_Function_Active = _L12; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="Override_Function_Active"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="_L12"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/77507/2524/DB4/54cba900d10"/>
+			</pragmas>
+		</Equation>
+		<!-- Train_Overpass_EOA_Antenna = _L11; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="Train_Overpass_EOA_Antenna"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="_L11"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/77509/2524/DB4/54cba9001c8e"/>
+			</pragmas>
+		</Equation>
+		<!-- Train_Speed_Under_Override_Limit = _L9; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="Train_Speed_Under_Override_Limit"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="_L9"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/7750d/2524/DB4/54cba9002cd6"/>
+			</pragmas>
+		</Equation>
+		<!-- _L1 = Data_From_Speed_and_Supervision; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L1"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="Data_From_Speed_and_Supervision"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/7750f/2524/DB4/54cba9004acd"/>
+			</pragmas>
+		</Equation>
+		<!-- _L14, _L13, _L12, _L11, _L10, _L9 = (flatten Level_And_Mode_Types_Pkg::T_Data_Fro... -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L14"/>
+				<VariableRef name="_L13"/>
+				<VariableRef name="_L12"/>
+				<VariableRef name="_L11"/>
+				<VariableRef name="_L10"/>
+				<VariableRef name="_L9"/>
+			</lefts>
+			<right>
+				<!-- (flatten Level_And_Mode_Types_Pkg::T_Data_From_Speed_Supervision)(_L1) -->
+				<CallExpression>
+					<operator>
+						<FlattenOp name="1">
+							<type>
+								<TypeRef name="Level_And_Mode_Types_Pkg::T_Data_From_Speed_Supervision"/>
+							</type>
+						</FlattenOp>
+					</operator>
+					<callParameters>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L1"/>
+							</path>
+						</IdExpression>
+					</callParameters>
+					<pragmas>
+						<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<references>
+								<TypeRef path="Level_And_Mode_Types_Pkg::T_Data_From_Speed_Supervision" refOid="!ed/77798/3EAE/758/54cba79fb69">
+									<LabelRef refOid="!ed/7779b/3EAE/758/54cba79f755a"/>
+									<LabelRef refOid="!ed/7779c/3EAE/758/54cba79fbff"/>
+									<LabelRef refOid="!ed/7779e/3EAE/758/54cba79f53bc"/>
+									<LabelRef refOid="!ed/777a0/3EAE/758/54cba79f6f4d"/>
+									<LabelRef refOid="!ed/777a2/3EAE/758/54cba79f3929"/>
+									<LabelRef refOid="!ed/777a4/3EAE/758/54cba79f2287"/>
+								</TypeRef>
+							</references>
+						</ed:CallExpression>
+					</pragmas>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/77510/2524/DB4/54cba9003d68"/>
+			</pragmas>
+		</Equation>
+		<!-- Train_Overpass_EOA_Front_End = _L10; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="Train_Overpass_EOA_Front_End"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="_L10"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/7750b/2524/DB4/54cba90010ea"/>
+			</pragmas>
+		</Equation>
+	</data>
+	<pragmas>
+		<ed:Operator oid="!ed/77501/2524/DB4/54cba900445d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+			<diagrams>
+				<NetDiagram name="diagram_InputSpeedAndSupervision_1" landscape="true" format="A4 (210 297)" oid="!ed/77511/2524/DB4/54cba9004cf1">
+					<presentationElements>
+						<EquationGE presentable="!ed/77504/2524/DB4/54cba9003d7d">
+							<position>
+								<Point x="19579" y="3519"/>
+							</position>
+							<size>
+								<Size width="318" height="502"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/77505/2524/DB4/54cba90019dd">
+							<position>
+								<Point x="19579" y="4524"/>
+							</position>
+							<size>
+								<Size width="318" height="503"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/77507/2524/DB4/54cba900d10">
+							<position>
+								<Point x="19579" y="6509"/>
+							</position>
+							<size>
+								<Size width="318" height="503"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/77509/2524/DB4/54cba9001c8e">
+							<position>
+								<Point x="19579" y="8493"/>
+							</position>
+							<size>
+								<Size width="318" height="503"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/7750d/2524/DB4/54cba9002cd6">
+							<position>
+								<Point x="19579" y="12488"/>
+							</position>
+							<size>
+								<Size width="318" height="503"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/7750f/2524/DB4/54cba9004acd">
+							<position>
+								<Point x="4445" y="7514"/>
+							</position>
+							<size>
+								<Size width="265" height="503"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/77510/2524/DB4/54cba9003d68">
+							<position>
+								<Point x="10099" y="786"/>
+							</position>
+							<size>
+								<Size width="6789" height="13959"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/7750f/2524/DB4/54cba9004acd" dstEquation="!ed/77510/2524/DB4/54cba9003d68">
+							<positions>
+								<Point x="4720" y="7768"/>
+								<Point x="7408" y="7768"/>
+								<Point x="7408" y="7768"/>
+								<Point x="10097" y="7768"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/77510/2524/DB4/54cba9003d68" dstEquation="!ed/77504/2524/DB4/54cba9003d7d">
+							<positions>
+								<Point x="16891" y="2773"/>
+								<Point x="18246" y="2773"/>
+								<Point x="18246" y="3768"/>
+								<Point x="19622" y="3768"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="2" rightExprIndex="1" srcEquation="!ed/77510/2524/DB4/54cba9003d68" dstEquation="!ed/77505/2524/DB4/54cba90019dd">
+							<positions>
+								<Point x="16891" y="4784"/>
+								<Point x="18246" y="4784"/>
+								<Point x="18246" y="4784"/>
+								<Point x="19622" y="4784"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="3" rightExprIndex="1" srcEquation="!ed/77510/2524/DB4/54cba9003d68" dstEquation="!ed/77507/2524/DB4/54cba900d10">
+							<positions>
+								<Point x="16891" y="6773"/>
+								<Point x="18246" y="6773"/>
+								<Point x="18246" y="6773"/>
+								<Point x="19622" y="6773"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="4" rightExprIndex="1" srcEquation="!ed/77510/2524/DB4/54cba9003d68" dstEquation="!ed/77509/2524/DB4/54cba9001c8e">
+							<positions>
+								<Point x="16891" y="8763"/>
+								<Point x="18246" y="8763"/>
+								<Point x="18246" y="8763"/>
+								<Point x="19622" y="8763"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="6" rightExprIndex="1" srcEquation="!ed/77510/2524/DB4/54cba9003d68" dstEquation="!ed/7750d/2524/DB4/54cba9002cd6">
+							<positions>
+								<Point x="16891" y="12764"/>
+								<Point x="18246" y="12764"/>
+								<Point x="18246" y="12764"/>
+								<Point x="19622" y="12764"/>
+							</positions>
+						</Edge>
+						<EquationGE presentable="!ed/7750b/2524/DB4/54cba90010ea">
+							<position>
+								<Point x="19579" y="10478"/>
+							</position>
+							<size>
+								<Size width="318" height="502"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="5" rightExprIndex="1" srcEquation="!ed/77510/2524/DB4/54cba9003d68" dstEquation="!ed/7750b/2524/DB4/54cba90010ea">
+							<positions>
+								<Point x="16891" y="10753"/>
+								<Point x="18246" y="10753"/>
+								<Point x="18246" y="10753"/>
+								<Point x="19622" y="10753"/>
+							</positions>
+						</Edge>
+					</presentationElements>
+				</NetDiagram>
+			</diagrams>
+			<references>
+				<TypeRef path="Level_And_Mode_Types_Pkg::T_Data_From_Speed_Supervision" refOid="!ed/77798/3EAE/758/54cba79fb69"/>
+			</references>
+		</ed:Operator>
+	</pragmas>
+</Operator>

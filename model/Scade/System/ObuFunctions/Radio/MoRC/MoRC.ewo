@@ -1,0 +1,39 @@
+
+[STUDIO\TOOLS\CONFIGURATIONS\Code Generator]
+
+"C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\Radio\\MoRC\\MoRC.etp"="Simulation" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Metrics and Rules Checker]
+
+"C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\Radio\\MoRC\\MoRC.etp"="KCG" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Reporter]
+
+"C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\Radio\\MoRC\\MoRC.etp"="HTML" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Timing and Stack Analysis Tools]
+
+"C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\Radio\\MoRC\\MoRC.etp"="KCG" 
+
+[STUDIO\Workspace]
+
+"ActiveProject"="C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\Radio\\MoRC\\MoRC.etp" 
+
+[SCADE\Editor\Shortcut]
+
+"groupNb"="0" 
+
+[SCADE\Editor\Tool]
+
+"UsePolyline"="false" 
+"TransitionKind"="strong" 
+
+[SCADE\Diff\Tool]
+
+"LastProject1"="" 
+"LastProject2"="" 
+"ModifiedOnly"="0" 
+
+[SCADE\Generator\Tool]
+
+"PragmaTarget"="C" 

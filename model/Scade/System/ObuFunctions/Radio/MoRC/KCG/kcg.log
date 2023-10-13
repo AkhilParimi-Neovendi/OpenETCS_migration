@@ -1,0 +1,13 @@
+$********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
+** Command: kcg662.exe -config C:/DBC/modeling-Scade65Migration/model/Scade/System/ObuFunctions/Radio/MoRC/KCG/config.txt
+** Generation date: 2023-09-01T13:20:56
+*************************************************************$
+*** License Failure (FAIL_22): Missing license
+ Cannot find license for KCG 32-bit 6.6.2 (build i4)
+No warning was found
+No error was found
+A failure occurred
+$********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
+** kcg.log
+** Generation date: 2023-09-01T13:21:01
+*************************************************************$

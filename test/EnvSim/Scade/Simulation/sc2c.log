@@ -1,0 +1,64 @@
+$************** ANSYS(R) SCADE Suite(R) - SCADETOC - Version 2022 R2 (build 20220513T211013) **************
+** Generation date: 2023-10-09T16:07:02
+** Command: scade -code "C:\DBC\OpenETCS\modeling-Scade65Migration\test\EnvSim\Scade\EnvSim.etp" -root EnvSim::Internal::ScriptedTrackTest -conf Simulation -sim -all
+*************************************************************$
+*** Generated Files Information (GENFIL): KCG- Generated files
+  at file C:\DBC\OpenETCS\modeling-Scade65Migration\test\EnvSim\Scade\Simulation\mapping.xml, line 0, character 0
+ ~mapping.xml
+  at file C:\DBC\OpenETCS\modeling-Scade65Migration\test\EnvSim\Scade\Simulation\kcg_metrics.txt, line 0, character 0
+ ~kcg_metrics.txt
+  at file C:\DBC\OpenETCS\modeling-Scade65Migration\test\EnvSim\Scade\Simulation\ScriptedTrackTest_EnvSim_Internal.c, line 0, character 0
+ ~ScriptedTrackTest_EnvSim_Internal.c
+  at file C:\DBC\OpenETCS\modeling-Scade65Migration\test\EnvSim\Scade\Simulation\ScriptedTrackTest_EnvSim_Internal.h, line 0, character 0
+ ~ScriptedTrackTest_EnvSim_Internal.h
+  at file C:\DBC\OpenETCS\modeling-Scade65Migration\test\EnvSim\Scade\Simulation\kcg_types.h, line 0, character 0
+ ~kcg_types.h
+  at file C:\DBC\OpenETCS\modeling-Scade65Migration\test\EnvSim\Scade\Simulation\kcg_consts.h, line 0, character 0
+ ~kcg_consts.h
+  at file C:\DBC\OpenETCS\modeling-Scade65Migration\test\EnvSim\Scade\Simulation\kcg_sensors.h, line 0, character 0
+ ~kcg_sensors.h
+  at file C:\DBC\OpenETCS\modeling-Scade65Migration\test\EnvSim\Scade\Simulation\kcg_imported_functions.h, line 0, character 0
+ ~kcg_imported_functions.h
+  at file C:\DBC\OpenETCS\modeling-Scade65Migration\test\EnvSim\Scade\Simulation\kcg_types.c, line 0, character 0
+ ~kcg_types.c
+  at file C:\DBC\OpenETCS\modeling-Scade65Migration\test\EnvSim\Scade\Simulation\kcg_consts.c, line 0, character 0
+ ~kcg_consts.c
+  at file C:\DBC\OpenETCS\modeling-Scade65Migration\test\EnvSim\Scade\Simulation\config.txt, line 0, character 0
+ ~config.txt
+*** Generated Files Information (GENFIL): Code Generator Generated files
+  at file C:\DBC\OpenETCS\modeling-Scade65Migration\test\EnvSim\Scade\Simulation\user_macros.h, line 0, character 0
+ ~user_macros.h
+  at file C:\DBC\OpenETCS\modeling-Scade65Migration\test\EnvSim\Scade\Simulation\kcg_imported_types.h, line 0, character 0
+ ~kcg_imported_types.h
+  at file C:\DBC\OpenETCS\modeling-Scade65Migration\test\EnvSim\Scade\Simulation\sc2c.log, line 0, character 0
+ ~sc2c.log
+  at file C:\DBC\OpenETCS\modeling-Scade65Migration\test\EnvSim\Scade\Simulation\sc2c_integration_files.txt, line 0, character 0
+ ~sc2c_integration_files.txt
+*** Generated Files Information (GENFIL): Type Utils Generated files
+  at file C:\DBC\OpenETCS\modeling-Scade65Migration\test\EnvSim\Scade\Simulation\EnvSim_type.h, line 0, character 0
+ ~EnvSim_type.h
+  at file C:\DBC\OpenETCS\modeling-Scade65Migration\test\EnvSim\Scade\Simulation\EnvSim_type.c, line 0, character 0
+ ~EnvSim_type.c
+*** Generated Files Information (GENFIL): Mapping Utils Generated files
+  at file C:\DBC\OpenETCS\modeling-Scade65Migration\test\EnvSim\Scade\Simulation\EnvSim_mapping.h, line 0, character 0
+ ~EnvSim_mapping.h
+  at file C:\DBC\OpenETCS\modeling-Scade65Migration\test\EnvSim\Scade\Simulation\EnvSim_mapping.c, line 0, character 0
+ ~EnvSim_mapping.c
+*** Generated Files Information (GENFIL): Simulator Generated files
+  at file C:\DBC\OpenETCS\modeling-Scade65Migration\test\EnvSim\Scade\Simulation\EnvSim_interface.h, line 0, character 0
+ ~EnvSim_interface.h
+  at file C:\DBC\OpenETCS\modeling-Scade65Migration\test\EnvSim\Scade\Simulation\EnvSim_interface.c, line 0, character 0
+ ~EnvSim_interface.c
+  at file C:\DBC\OpenETCS\modeling-Scade65Migration\test\EnvSim\Scade\Simulation\EnvSim_dll.c, line 0, character 0
+ ~EnvSim_dll.c
+*** Generated Files Information (GENFIL): Build Generated files
+  at file C:\DBC\OpenETCS\modeling-Scade65Migration\test\EnvSim\Scade\Simulation\Makefile_win64, line 0, character 0
+ ~Makefile_win64
+  at file C:\DBC\OpenETCS\modeling-Scade65Migration\test\EnvSim\Scade\Simulation\EnvSim__Internal__ScriptedTrackTest.dll, line 0, character 0
+ ~EnvSim__Internal__ScriptedTrackTest.dll
+  at file C:\DBC\OpenETCS\modeling-Scade65Migration\test\EnvSim\Scade\Simulation\EnvSim__Internal__ScriptedTrackTest.exe, line 0, character 0
+ ~EnvSim__Internal__ScriptedTrackTest.exe
+$************** ANSYS(R) SCADE Suite(R) - SCADETOC - Version 2022 R2 (build 20220513T211013) **************
+** Generation date: 2023-10-09T16:07:21
+** sc2c.log
+*************************************************************$

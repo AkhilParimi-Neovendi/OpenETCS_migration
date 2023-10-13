@@ -1,0 +1,5728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Package name="Packet_Types_Pkg">
+			<declarations>
+				<Constant name="cNIterMax">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="7"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/5dc3/569A/FF0/54880f397b51" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Max number of iterations in packets is 31 according to SRS. Set to 7 for scenario Utrecht-Amsterdam</comment>
+						</ed:Constant>
+					</pragmas>
+				</Constant>
+				<Constant name="cNIterMaxMA">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="5"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/5b00/1023/25E8/54c11a4310b2" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Subset 040 4.3.2.1.1 a)</comment>
+						</ed:Constant>
+					</pragmas>
+				</Constant>
+				<Constant name="cNIterMaxAxleloadSpeedProfile">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="7"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/5b21/1023/25E8/54c11bce2ab4" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Max number of iterations in 1 packet 14(+1 default iteration) according to Subset 040 4.3.2.1.1 o). Set to 7 for Utrecht-Amsterdam scenario</comment>
+						</ed:Constant>
+					</pragmas>
+				</Constant>
+				<Constant name="cNIterMaxPermittedBrakingDistanceInformation">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="3"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/5b4b/1023/25E8/54c11c885cf2" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Subset 040 4.3.2.1.1 s)</comment>
+						</ed:Constant>
+					</pragmas>
+				</Constant>
+				<Constant name="cNIterMaxTSR">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="10"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/5b74/1023/25E8/54c11d10638d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>10 = maximal number of packets in one message according to Subset 040 4.3.2.1.1 e)</comment>
+						</ed:Constant>
+					</pragmas>
+				</Constant>
+				<Constant name="cNIterMaxTrackConditions">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="7"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/5b8d/1023/25E8/54c11d464239" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Max number of iterations in 1 packet = 19 (+1 default iteration) according to Subset 040 4.3.2.1.1 l). Set to 7 for scenario Utrecht-Amsterdam</comment>
+						</ed:Constant>
+					</pragmas>
+				</Constant>
+				<Constant name="cNIterMaxTrackConditionStationPlatform">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="5"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/5bb6/1023/25E8/54c11de37ba2" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Subset 040 4.3.2.1.1 l)</comment>
+						</ed:Constant>
+					</pragmas>
+				</Constant>
+				<Constant name="cNIterMaxRouteSuitabilityData">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="3"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/5bd7/1023/25E8/54c11e41b7c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Subset 040 4.3.2.1.1 m)</comment>
+						</ed:Constant>
+					</pragmas>
+				</Constant>
+				<Constant name="cNIterMaxModeProfiles">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="3"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/5be8/1023/25E8/54c11ecd7f56" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Subset 040 4.3.2.1.1 c)</comment>
+						</ed:Constant>
+					</pragmas>
+				</Constant>
+				<Constant name="cIterPacket58">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="2"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/13e99/26D1/4500/54d33c531479" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>value is bound to 32</comment>
+						</ed:Constant>
+					</pragmas>
+				</Constant>
+				<Type name="P88_LevelCrossingInformation_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/22a83/10D9/1AD4/54bd0ba01d4c"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d85/569A/FF0/54880cef6b4e"/>
+									</pragmas>
+								</Field>
+								<Field name="q_scale">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SCALE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/fb42/569A/FF0/548825d88af"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_lx">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_LX"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d86/569A/FF0/54880cef7518"/>
+									</pragmas>
+								</Field>
+								<Field name="d_lx">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_LX"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d87/569A/FF0/54880cef224b"/>
+									</pragmas>
+								</Field>
+								<Field name="l_lx">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="L_LX"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d88/569A/FF0/54880cef46ed"/>
+									</pragmas>
+								</Field>
+								<Field name="q_lxstatus">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_LXSTATUS"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d89/569A/FF0/54880cef708a"/>
+									</pragmas>
+								</Field>
+								<Field name="v_lx">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="V_LX"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d8a/569A/FF0/54880cef1897"/>
+									</pragmas>
+								</Field>
+								<Field name="q_stoplx">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_STOPLX"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d8b/569A/FF0/54880cef2f73"/>
+									</pragmas>
+								</Field>
+								<Field name="l_stoplx">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="L_STOPLX"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d8c/569A/FF0/54880cef4c0"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5d83/569A/FF0/54880cef5fa6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 88: 7.4.2.26.1</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P80_ModeProfile_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/fadf/569A/FF0/54882556722b"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d6a/569A/FF0/54880cef5bbe"/>
+									</pragmas>
+								</Field>
+								<Field name="q_scale">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SCALE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/facf/569A/FF0/548823d2111d"/>
+									</pragmas>
+								</Field>
+								<Field name="d_mamode">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_MAMODE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/fad9/569A/FF0/548823e03acf"/>
+									</pragmas>
+								</Field>
+								<Field name="m_mamode">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_MAMODE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/fada/569A/FF0/548823e66438"/>
+									</pragmas>
+								</Field>
+								<Field name="v_mamode">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="V_MAMODE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/fadb/569A/FF0/548823ec24c2"/>
+									</pragmas>
+								</Field>
+								<Field name="l_mamode">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="L_MAMODE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/fadc/569A/FF0/548823f115c3"/>
+									</pragmas>
+								</Field>
+								<Field name="l_ackmamode">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="L_ACKMAMODE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/fadd/569A/FF0/548823f73011"/>
+									</pragmas>
+								</Field>
+								<Field name="q_mamode">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_MAMODE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/fade/569A/FF0/548823fb49a3"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5d68/569A/FF0/54880cef5dea" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 80: 7.4.2.26</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P79_GeographicalPositionInformation_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/fab4/569A/FF0/548823764a6"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d5b/569A/FF0/54880cef3c2b"/>
+									</pragmas>
+								</Field>
+								<Field name="q_scale">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SCALE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/fa80/569A/FF0/5488233acf4"/>
+									</pragmas>
+								</Field>
+								<Field name="q_newcountry">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_NEWCOUNTRY"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/fa90/569A/FF0/5488235c2322"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_c">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_C"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/fa97/569A/FF0/54882360e48"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_bg">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_BG"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/fa9e/569A/FF0/5488236328f4"/>
+									</pragmas>
+								</Field>
+								<Field name="d_posoff">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_POSOFF"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/faa5/569A/FF0/54882366529e"/>
+									</pragmas>
+								</Field>
+								<Field name="q_mposition">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_MPOSITION"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/faac/569A/FF0/54882369a10"/>
+									</pragmas>
+								</Field>
+								<Field name="m_position">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_POSITION"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/fab3/569A/FF0/5488236d58e3"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5d59/569A/FF0/54880cef57fa" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 79: 7.4.2.25</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P76_PacketForSendingFixedTextMessages_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/22a7a/10D9/1AD4/54bd0b9073fa"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d3b/569A/FF0/54880cef4979"/>
+									</pragmas>
+								</Field>
+								<Field name="q_scale">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SCALE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/fa76/569A/FF0/548822fc5790"/>
+									</pragmas>
+								</Field>
+								<Field name="q_textclass">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_TEXTCLASS"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d3c/569A/FF0/54880cef3019"/>
+									</pragmas>
+								</Field>
+								<Field name="q_textdisplay">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_TEXTDISPLAY"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d3d/569A/FF0/54880cefb20"/>
+									</pragmas>
+								</Field>
+								<Field name="d_textdisplay">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_TEXTDISPLAY"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d3e/569A/FF0/54880cef6fc8"/>
+									</pragmas>
+								</Field>
+								<Field name="m_modetextdisplay_start">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_MODETEXTDISPLAY"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d3f/569A/FF0/54880cef3946"/>
+									</pragmas>
+								</Field>
+								<Field name="m_leveltextdisplay_start">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_LEVELTEXTDISPLAY"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d40/569A/FF0/54880cef2c5d"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_ntc_start">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_NTC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d41/569A/FF0/54880cef293"/>
+									</pragmas>
+								</Field>
+								<Field name="l_textdisplay">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="L_TEXTDISPLAY"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d42/569A/FF0/54880cef56f2"/>
+									</pragmas>
+								</Field>
+								<Field name="t_textdisplay">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_TEXTDISPLAY"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d43/569A/FF0/54880cef6483"/>
+									</pragmas>
+								</Field>
+								<Field name="m_modetextdisplay_end">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_MODETEXTDISPLAY"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d44/569A/FF0/54880cef2cb2"/>
+									</pragmas>
+								</Field>
+								<Field name="m_leveltextdisplay_end">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_LEVELTEXTDISPLAY"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d45/569A/FF0/54880cefeb0"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_ntc_end">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_NTC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d46/569A/FF0/54880cef5184"/>
+									</pragmas>
+								</Field>
+								<Field name="q_textconfirm">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_TEXTCONFIRM"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d47/569A/FF0/54880cef454f"/>
+									</pragmas>
+								</Field>
+								<Field name="q_conftextdisplay">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_CONFTEXTDISPLAY"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d48/569A/FF0/54880cef110a"/>
+									</pragmas>
+								</Field>
+								<Field name="q_textreport">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_TEXTREPORT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d49/569A/FF0/54880cef64b3"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_textmessage">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_TEXTMESSAGE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d4a/569A/FF0/54880cef9f"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_c">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_C"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d4b/569A/FF0/54880cef75d5"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_rbc">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_RBC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d4c/569A/FF0/54880cef5237"/>
+									</pragmas>
+								</Field>
+								<Field name="q_text">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_TEXT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d4d/569A/FF0/54880cef431"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5d39/569A/FF0/54880cef7ae8" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 76: 7.4.2.24</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P72_PacketForSendingPlainTextMessages_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/22a71/10D9/1AD4/54bd0b892de8"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5cf8/569A/FF0/54880cef16d9"/>
+									</pragmas>
+								</Field>
+								<Field name="q_scale">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SCALE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/fa6c/569A/FF0/548822d52750"/>
+									</pragmas>
+								</Field>
+								<Field name="q_textclass">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_TEXTCLASS"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5cf9/569A/FF0/54880cef722d"/>
+									</pragmas>
+								</Field>
+								<Field name="q_textdisplay">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_TEXTDISPLAY"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5cfa/569A/FF0/54880cef67d"/>
+									</pragmas>
+								</Field>
+								<Field name="d_textdisplay">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_TEXTDISPLAY"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5cfb/569A/FF0/54880cef3855"/>
+									</pragmas>
+								</Field>
+								<Field name="m_modetextdisplay_start">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_MODETEXTDISPLAY"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5cfc/569A/FF0/54880cef7160"/>
+									</pragmas>
+								</Field>
+								<Field name="m_leveltextdisplay_start">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_LEVELTEXTDISPLAY"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5cfd/569A/FF0/54880cef49b8"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_ntc_start">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_NTC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5cfe/569A/FF0/54880cef28b4"/>
+									</pragmas>
+								</Field>
+								<Field name="l_textdisplay">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="L_TEXTDISPLAY"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5cff/569A/FF0/54880cef3c68"/>
+									</pragmas>
+								</Field>
+								<Field name="t_textdisplay">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_TEXTDISPLAY"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d00/569A/FF0/54880cef7542"/>
+									</pragmas>
+								</Field>
+								<Field name="m_modetextdisplay_end">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_MODETEXTDISPLAY"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d01/569A/FF0/54880cef1d03"/>
+									</pragmas>
+								</Field>
+								<Field name="m_leveltextdisplay_end">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_LEVELTEXTDISPLAY"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d02/569A/FF0/54880cef6443"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_ntc_end">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_NTC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d03/569A/FF0/54880cef72a8"/>
+									</pragmas>
+								</Field>
+								<Field name="q_textconfirm">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_TEXTCONFIRM"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d04/569A/FF0/54880cef7bfd"/>
+									</pragmas>
+								</Field>
+								<Field name="q_conftextdisplay">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_CONFTEXTDISPLAY"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d05/569A/FF0/54880cef5f9d"/>
+									</pragmas>
+								</Field>
+								<Field name="q_textreport">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_TEXTREPORT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d06/569A/FF0/54880cef1e50"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_textmessage">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_TEXTMESSAGE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d07/569A/FF0/54880cef2c30"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_c">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_C"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d08/569A/FF0/54880cef5091"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_rbc">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_RBC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d09/569A/FF0/54880cef359b"/>
+									</pragmas>
+								</Field>
+								<Field name="l_text">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="L_TEXT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d0a/569A/FF0/54880cef1b6b"/>
+									</pragmas>
+								</Field>
+								<Field name="x_text">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="xTextArray_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d0b/569A/FF0/54880cef48e7" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Array of type X_TEXT</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5cf6/569A/FF0/54880cef54db" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 72: 7.4.2.23 / Special implementation, see comments</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P71_AdhesionFactor_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/22a68/10D9/1AD4/54bd0b8128d9"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5cc3/569A/FF0/54880cef32d6"/>
+									</pragmas>
+								</Field>
+								<Field name="q_scale">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SCALE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/fa62/569A/FF0/548822bb1597"/>
+									</pragmas>
+								</Field>
+								<Field name="d_adhesion">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_ADHESION"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5cc4/569A/FF0/54880cef2630"/>
+									</pragmas>
+								</Field>
+								<Field name="l_adhesion">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="L_ADHESION"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5cc5/569A/FF0/54880cef4cd4"/>
+									</pragmas>
+								</Field>
+								<Field name="m_adhesion">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_ADHESION"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5cc6/569A/FF0/54880ceff3e"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5cc1/569A/FF0/54880cef74ca" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 71: 7.4.2.22</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P70_RouteSuitabilityData_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/fa47/569A/FF0/5488218f2c88"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5cae/569A/FF0/54880cef31ff"/>
+									</pragmas>
+								</Field>
+								<Field name="q_scale">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SCALE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/fa01/569A/FF0/548820de31da"/>
+									</pragmas>
+								</Field>
+								<Field name="q_trackinit">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_TRACKINIT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5caf/569A/FF0/54880cef506f"/>
+									</pragmas>
+								</Field>
+								<Field name="d_trackinit">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_TRACKINIT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5cb0/569A/FF0/54880cef3c74"/>
+									</pragmas>
+								</Field>
+								<Field name="d_suitability">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_SUITABILITY"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/fa0b/569A/FF0/548821016691"/>
+									</pragmas>
+								</Field>
+								<Field name="q_suitability">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SUITABILITY"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/fa0c/569A/FF0/548821085880"/>
+									</pragmas>
+								</Field>
+								<Field name="m_linegauge">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_LINEGAUGE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/fa0d/569A/FF0/5488210e1e64"/>
+									</pragmas>
+								</Field>
+								<Field name="m_axleloadcat">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_AXLELOADCAT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/fa0e/569A/FF0/548821446e0f"/>
+									</pragmas>
+								</Field>
+								<Field name="m_voltage">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_VOLTAGE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/fa0f/569A/FF0/5488214b7db5"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_ctraction">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_CTRACTION"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/fa10/569A/FF0/548821586ac4"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5cac/569A/FF0/54880cef344b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 70: 7.4.2.21</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P69_TrackConditionStationPlatform_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f9c2/569A/FF0/54881f434c78"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5c99/569A/FF0/54880cef10c7"/>
+									</pragmas>
+								</Field>
+								<Field name="q_scale">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SCALE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f9b4/569A/FF0/54881ef76915"/>
+									</pragmas>
+								</Field>
+								<Field name="q_trackinit">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_TRACKINIT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5c9a/569A/FF0/54880cef2f33"/>
+									</pragmas>
+								</Field>
+								<Field name="d_trackinit">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_TRACKINIT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5c9b/569A/FF0/54880cef62a7"/>
+									</pragmas>
+								</Field>
+								<Field name="d_trackcond">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_TRACKCOND"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f9be/569A/FF0/54881f20608d"/>
+									</pragmas>
+								</Field>
+								<Field name="l_trackcond">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="L_TRACKCOND"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f9bf/569A/FF0/54881f2c494b"/>
+									</pragmas>
+								</Field>
+								<Field name="m_platform">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_PLATFORM"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f9c0/569A/FF0/54881f3351ce"/>
+									</pragmas>
+								</Field>
+								<Field name="q_platform">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_PLATFORM"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f9c1/569A/FF0/54881f3a1c3d"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5c97/569A/FF0/54880cef36e6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 69: 7.4.2.20.1</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P68_TrackCondition_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f9ab/569A/FF0/54881ec643ba"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5c84/569A/FF0/54880cef710a"/>
+									</pragmas>
+								</Field>
+								<Field name="q_scale">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SCALE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f971/569A/FF0/54881da022f"/>
+									</pragmas>
+								</Field>
+								<Field name="q_trackinit">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_TRACKINIT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5c85/569A/FF0/54880cef515"/>
+									</pragmas>
+								</Field>
+								<Field name="d_trackinit">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_TRACKINIT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5c86/569A/FF0/54880cef180d"/>
+									</pragmas>
+								</Field>
+								<Field name="d_trackcond">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_TRACKCOND"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f97b/569A/FF0/54881db85b1c"/>
+									</pragmas>
+								</Field>
+								<Field name="l_trackcond">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="L_TRACKCOND"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f985/569A/FF0/54881dc110a6"/>
+									</pragmas>
+								</Field>
+								<Field name="m_trackcond">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_TRACKCOND"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f986/569A/FF0/54881dcd185d"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5c82/569A/FF0/54880cef599c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 68: 7.4.2.20</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P66_TemporarySpeedRestrictionRevocation_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/22a5f/10D9/1AD4/54bd0b6e6563"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5c71/569A/FF0/54880cef70ed"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_tsr">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_TSR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5c72/569A/FF0/54880cef6cdd"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5c6f/569A/FF0/54880cef48d4" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 66: 7.4.2.18</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P65_TemporarySpeedRestriction_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/22a56/10D9/1AD4/54bd0b622201"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5c5e/569A/FF0/54880cef4385"/>
+									</pragmas>
+								</Field>
+								<Field name="q_scale">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SCALE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f967/569A/FF0/54881d586de7"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_tsr">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_TSR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5c5f/569A/FF0/54880cef2e96"/>
+									</pragmas>
+								</Field>
+								<Field name="d_tsr">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_TSR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5c60/569A/FF0/54880cef3cd4"/>
+									</pragmas>
+								</Field>
+								<Field name="l_tsr">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="L_TSR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5c61/569A/FF0/54880cef39fb"/>
+									</pragmas>
+								</Field>
+								<Field name="q_front">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_FRONT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5c62/569A/FF0/54880cef4854"/>
+									</pragmas>
+								</Field>
+								<Field name="v_tsr">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="V_TSR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5c63/569A/FF0/54880cef538d"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5c5c/569A/FF0/54880cef3f71" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 65: 7.4.2.17</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P64_InhibitionOfRevocableTSRsFromBalisesInL23_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5c48/569A/FF0/54880cef412c"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5c46/569A/FF0/54880cef6c7e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 64: 7.4.2.16.1</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P57_MovementAuthorityRequestParameters_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/22a4d/10D9/1AD4/54bd0b5537a"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5c12/569A/FF0/54880cef7fe"/>
+									</pragmas>
+								</Field>
+								<Field name="t_mar">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_MAR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5c13/569A/FF0/54880cefcd5"/>
+									</pragmas>
+								</Field>
+								<Field name="t_timeoutrqst">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_TIMEOUTRQST"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5c14/569A/FF0/54880cef665d"/>
+									</pragmas>
+								</Field>
+								<Field name="t_cycrqst">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_CYCRQST"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5c15/569A/FF0/54880cef1ace"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5c10/569A/FF0/54880cefa8d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 57: 7.4.2.14</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P52_PermittedBrakingDistanceInformation_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f8fe/569A/FF0/54881ab242d"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5bfd/569A/FF0/54880cef49ed"/>
+									</pragmas>
+								</Field>
+								<Field name="q_scale">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SCALE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f919/569A/FF0/54881b1e1f49"/>
+									</pragmas>
+								</Field>
+								<Field name="q_trackinit">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_TRACKINIT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5bfe/569A/FF0/54880cef74e2"/>
+									</pragmas>
+								</Field>
+								<Field name="d_trackinit">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_TRACKINIT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5bff/569A/FF0/54880cef217b"/>
+									</pragmas>
+								</Field>
+								<Field name="d_pbd">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_PBD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f8da/569A/FF0/54881a6d6823"/>
+									</pragmas>
+								</Field>
+								<Field name="q_gdir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_GDIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f8e1/569A/FF0/54881a76593f"/>
+									</pragmas>
+								</Field>
+								<Field name="g_pbdsr">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="G_PBDSR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f8e8/569A/FF0/54881a7c11dd"/>
+									</pragmas>
+								</Field>
+								<Field name="q_pbdsr">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_PBDSR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f8ef/569A/FF0/54881a83c1f"/>
+									</pragmas>
+								</Field>
+								<Field name="d_pbdsr">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_PBDSR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f8f6/569A/FF0/54881a8b7bba"/>
+									</pragmas>
+								</Field>
+								<Field name="l_pbdsr">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="L_PBDSR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f8fd/569A/FF0/54881a954008"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5bfb/569A/FF0/54880cef5786" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 52: 7.4.2.13.1</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P51_AxleLoadSpeedProfile_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f890/569A/FF0/548819612738"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5be8/569A/FF0/54880cef6f0"/>
+									</pragmas>
+								</Field>
+								<Field name="q_scale">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SCALE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f923/569A/FF0/54881b3442d5"/>
+									</pragmas>
+								</Field>
+								<Field name="q_trackinit">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_TRACKINIT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5be9/569A/FF0/54880cef7b1b"/>
+									</pragmas>
+								</Field>
+								<Field name="d_trackinit">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_TRACKINIT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5bea/569A/FF0/54880cef5f18"/>
+									</pragmas>
+								</Field>
+								<Field name="d_axleload">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_AXLELOAD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f897/569A/FF0/5488196b1869"/>
+									</pragmas>
+								</Field>
+								<Field name="l_axleload">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="L_AXLELOAD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f89e/569A/FF0/548819706ba9"/>
+									</pragmas>
+								</Field>
+								<Field name="q_front">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_FRONT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f8a5/569A/FF0/548819766316"/>
+									</pragmas>
+								</Field>
+								<Field name="axleloadArray">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="axleloadArray_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f8ac/569A/FF0/5488197c6b9c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Inline-array for N_ITER / variable N_ITER (k) = m</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5be6/569A/FF0/54880cef59a9" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 51: 7.4.2.13 / Special implementation, see comments</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P49_ListOfBalisesForSHArea_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f87c/569A/FF0/5488188b3019"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5bd5/569A/FF0/54880ceff9"/>
+									</pragmas>
+								</Field>
+								<Field name="q_newcountry">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_NEWCOUNTRY"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f855/569A/FF0/548817e83741"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_c">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_C"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f856/569A/FF0/548817f04897"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_bg">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_BG"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f857/569A/FF0/548817f47948"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5bd3/569A/FF0/54880cef4c0f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 49: 7.4.2.12</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P46_ConditionalLevelTransitionOrder_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/22a44/10D9/1AD4/54bd0b376840"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5bc6/569A/FF0/54880cef742"/>
+									</pragmas>
+								</Field>
+								<Field name="m_leveltr">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_LEVELTR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f82f/569A/FF0/548817553872"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_ntc">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_NTC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f830/569A/FF0/5488175928ce"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5bc4/569A/FF0/54880ceff03" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 46: 7.4.2.11.2</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P45_RadioNetworkRegistration_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/22a3b/10D9/1AD4/54bd0b0a3585"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5bb7/569A/FF0/54880cef7e90"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_mn">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_MN"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5bb8/569A/FF0/54880cef4fbd"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5bb5/569A/FF0/54880cef6b45" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 45: 7.4.2.11.1</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P44_DataUsedByApplicationsOutsideTheERTMSETCSSystem_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/22a32/10D9/1AD4/54bd0aa43aa5"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5ba6/569A/FF0/54880cef6194"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_xuser">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_XUSER"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5ba7/569A/FF0/54880cef22cb"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_ntc">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_NTC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5ba8/569A/FF0/54880cef658e"/>
+									</pragmas>
+								</Field>
+								<Field name="Other_data_depending_on__NID_XUSER">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5ba9/569A/FF0/54880cef5e41" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>TODO</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5ba4/569A/FF0/54880cef72ae" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 44: 7.4.2.11</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P42_SessionManagement_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/22a29/10D9/1AD4/54bd0a931345"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b90/569A/FF0/54880cef7525"/>
+									</pragmas>
+								</Field>
+								<Field name="q_rbc">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_RBC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b91/569A/FF0/54880cef3795"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_c">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_C"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b92/569A/FF0/54880cef7ede"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_rbc">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_RBC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b93/569A/FF0/54880cef38e2"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_radio">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_RADIO"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b94/569A/FF0/54880cef682c"/>
+									</pragmas>
+								</Field>
+								<Field name="q_sleepsession">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SLEEPSESSION"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b95/569A/FF0/54880cef5b7f"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5b8e/569A/FF0/54880cef7d56" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 42: 7.4.2.10</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P41_LevelTransitionOrder_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5ea3/569A/FF0/548814f67586"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b78/569A/FF0/54880cef30c9"/>
+									</pragmas>
+								</Field>
+								<Field name="q_scale">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SCALE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5e96/569A/FF0/548814a5307c"/>
+									</pragmas>
+								</Field>
+								<Field name="d_leveltr">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_LEVELTR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b79/569A/FF0/54880cef2dd6"/>
+									</pragmas>
+								</Field>
+								<Field name="m_leveltr">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_LEVELTR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5ea0/569A/FF0/548814d2343d"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_ntc">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_NTC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5ea1/569A/FF0/548814d81d28"/>
+									</pragmas>
+								</Field>
+								<Field name="l_ackleveltr">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="L_ACKLEVELTR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5ea2/569A/FF0/548814dd2692"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5b76/569A/FF0/54880cef2367" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 41: 7.4.2.9</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P40_TrackConditionChangeOfAllowedCurrentConsumption_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/22a20/10D9/1AD4/54bd0a6d5ab7"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b66/569A/FF0/54880cef241"/>
+									</pragmas>
+								</Field>
+								<Field name="q_scale">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SCALE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5e8c/569A/FF0/54881468693e"/>
+									</pragmas>
+								</Field>
+								<Field name="d_current">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_CURRENT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b67/569A/FF0/54880cef768c"/>
+									</pragmas>
+								</Field>
+								<Field name="m_current">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_CURRENT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b68/569A/FF0/54880cef24f7"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5b64/569A/FF0/54880cef23a0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 40: 7.4.2.8.1</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P3_NationalValues_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/22a17/10D9/1AD4/54bd0a5a3bb4"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b34/569A/FF0/54880cef182c"/>
+									</pragmas>
+								</Field>
+								<Field name="d_validnv">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_VALIDNV"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b35/569A/FF0/54880cefe35"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_cArray">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="nidCArray_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b36/569A/FF0/54880cefc1b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Inline-Array of N_ITER-iteration, N_ITER variable k</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="v_nvshunt">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="V_NVSHUNT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b37/569A/FF0/54880cef6d1b"/>
+									</pragmas>
+								</Field>
+								<Field name="v_nvstff">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="V_NVSTFF"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b38/569A/FF0/54880cef9f0"/>
+									</pragmas>
+								</Field>
+								<Field name="v_nvonsight">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="V_NVONSIGHT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b39/569A/FF0/54880cef441f"/>
+									</pragmas>
+								</Field>
+								<Field name="v_nvlimsuperv">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="V_NVLIMSUPERV"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b3a/569A/FF0/54880cef32fb"/>
+									</pragmas>
+								</Field>
+								<Field name="v_nvunfit">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="V_NVUNFIT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b3b/569A/FF0/54880cef5fde"/>
+									</pragmas>
+								</Field>
+								<Field name="v_nvrel">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="V_NVREL"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b3c/569A/FF0/54880cef37c2"/>
+									</pragmas>
+								</Field>
+								<Field name="d_nvroll">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_NVROLL"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b3d/569A/FF0/54880cef739c"/>
+									</pragmas>
+								</Field>
+								<Field name="q_nvsbtsmperm">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_NVSBTSMPERM"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b3e/569A/FF0/54880cef17ed"/>
+									</pragmas>
+								</Field>
+								<Field name="q_nvemrrls">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_NVEMRRLS"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b3f/569A/FF0/54880cef7c0e"/>
+									</pragmas>
+								</Field>
+								<Field name="q_nvguiperm">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_NVGUIPERM"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b40/569A/FF0/54880cef125e"/>
+									</pragmas>
+								</Field>
+								<Field name="q_nvsbfbperm">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_NVSBFBPERM"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b41/569A/FF0/54880cef2588"/>
+									</pragmas>
+								</Field>
+								<Field name="q_nvinhsmicperm">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_NVINHSMICPERM"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b42/569A/FF0/54880cef4f2a"/>
+									</pragmas>
+								</Field>
+								<Field name="v_nvallowovtrp">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="V_NVALLOWOVTRP"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b43/569A/FF0/54880cef3894"/>
+									</pragmas>
+								</Field>
+								<Field name="v_nvsupovtrp">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="V_NVSUPOVTRP"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b44/569A/FF0/54880cef5a58"/>
+									</pragmas>
+								</Field>
+								<Field name="d_nvovtrp">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_NVOVTRP"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b45/569A/FF0/54880cef6835"/>
+									</pragmas>
+								</Field>
+								<Field name="t_nvovtrp">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_NVOVTRP"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b46/569A/FF0/54880cef7d8c"/>
+									</pragmas>
+								</Field>
+								<Field name="d_nvpotrp">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_NVPOTRP"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b47/569A/FF0/54880cef776f"/>
+									</pragmas>
+								</Field>
+								<Field name="m_nvcontact">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_NVCONTACT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b48/569A/FF0/54880cef3803"/>
+									</pragmas>
+								</Field>
+								<Field name="t_nvcontact">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_NVCONTACT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b49/569A/FF0/54880cef17be"/>
+									</pragmas>
+								</Field>
+								<Field name="m_nvderun">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_NVDERUN"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b4a/569A/FF0/54880cef4f95"/>
+									</pragmas>
+								</Field>
+								<Field name="d_nvstff">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_NVSTFF"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b4b/569A/FF0/54880cef30a9"/>
+									</pragmas>
+								</Field>
+								<Field name="q_nvdriver_adhes">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_NVDRIVER_ADHES"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b4c/569A/FF0/54880cefa92"/>
+									</pragmas>
+								</Field>
+								<Field name="a_nvmaxredadh1">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="A_NVMAXREDADH1"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b4d/569A/FF0/54880cef98"/>
+									</pragmas>
+								</Field>
+								<Field name="a_nvmaxredadh2">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="A_NVMAXREDADH2"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b4e/569A/FF0/54880cef61b3"/>
+									</pragmas>
+								</Field>
+								<Field name="a_nvmaxredadh3">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="A_NVMAXREDADH3"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b4f/569A/FF0/54880cef498a"/>
+									</pragmas>
+								</Field>
+								<Field name="q_nvlocacc">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_NVLOCACC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b50/569A/FF0/54880cef327d"/>
+									</pragmas>
+								</Field>
+								<Field name="m_nvavadh">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_NVAVADH"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b51/569A/FF0/54880cef106a"/>
+									</pragmas>
+								</Field>
+								<Field name="m_nvebcl">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_NVEBCL"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b52/569A/FF0/54880cef7dc2"/>
+									</pragmas>
+								</Field>
+								<Field name="q_nvkint">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_NVKINT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b53/569A/FF0/54880cef6c0d"/>
+									</pragmas>
+								</Field>
+								<Field name="nvkvintsetArray">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="nvkvintsetArray_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b54/569A/FF0/54880cef5b27" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Inline-Array of N_ITER-iteration, N_ITER variable n</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="nvkrintArray">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="nvkrintArray_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b55/569A/FF0/54880cef91f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Inline-Array of N_ITER-iteration, N_ITER variable l</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="m_nvktint">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_NVKTINT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5b56/569A/FF0/54880cef51d3"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5b32/569A/FF0/54880cef75f5" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 3: 7.4.2.1.1 / Special implementation, see comments</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P39_TrackConditionChangeOfTractionSystem_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/22a0e/10D9/1AD4/54bd0a4568c3"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5ae1/569A/FF0/54880cef3451"/>
+									</pragmas>
+								</Field>
+								<Field name="q_scale">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SCALE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5e43/569A/FF0/548813273141"/>
+									</pragmas>
+								</Field>
+								<Field name="d_traction">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_TRACTION"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5ae2/569A/FF0/54880cef925"/>
+									</pragmas>
+								</Field>
+								<Field name="m_voltage">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_VOLTAGE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5ae3/569A/FF0/54880cef49a5"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_ctraction">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_CTRACTION"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5ae4/569A/FF0/54880cef141b"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5adf/569A/FF0/54880cef71cb" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 39: 7.4.2.8</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P27_InternationalStaticSpeedProfile_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/22a05/10D9/1AD4/54bd0a2e3eb2"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5aca/569A/FF0/54880cef3007"/>
+									</pragmas>
+								</Field>
+								<Field name="q_scale">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SCALE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5de5/569A/FF0/548810fded9"/>
+									</pragmas>
+								</Field>
+								<Field name="d_static">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_STATIC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5acb/569A/FF0/54880cef4b41"/>
+									</pragmas>
+								</Field>
+								<Field name="v_static">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="V_STATIC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5acc/569A/FF0/54880cef3f01"/>
+									</pragmas>
+								</Field>
+								<Field name="q_front">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_FRONT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5acd/569A/FF0/54880cef2ea9"/>
+									</pragmas>
+								</Field>
+								<Field name="diffArray">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="DiffArray_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5ace/569A/FF0/54880cef6d68" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Iterations are stored inline in arrays. N_ITER variable n</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="SSPArray">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="SSPArray_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5acf/569A/FF0/54880cef7cb9" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Iterations are stored inline in arrays. N_ITER variable k</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5ac8/569A/FF0/54880cef60f2" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 27: 7.4.2.7 / Special implementation, see comments</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P255_EndOfInformation_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/229fc/10D9/1AD4/54bd0a2320d5"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_packet">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_PACKET"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5ab4/569A/FF0/54880cef55ee"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5ab3/569A/FF0/54880cef4fa6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 255: 7.4.4.1</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P21_GradientProfile_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5db8/569A/FF0/54880e1b5931"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5aaa/569A/FF0/54880cef43e3"/>
+									</pragmas>
+								</Field>
+								<Field name="q_scale">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SCALE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d8d/569A/FF0/54880dc22266"/>
+									</pragmas>
+								</Field>
+								<Field name="d_gradient">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_GRADIENT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d97/569A/FF0/54880dd65ead"/>
+									</pragmas>
+								</Field>
+								<Field name="q_gdir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_GDIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5da1/569A/FF0/54880de4e67"/>
+									</pragmas>
+								</Field>
+								<Field name="g_a">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="G_A"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5dab/569A/FF0/54880dfd4049"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5aa8/569A/FF0/54880cef5975" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 21: 7.4.2.6</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P140_TrainRunningNumberFromRBC_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/229f3/10D9/1AD4/54bd0a0531a9"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a9b/569A/FF0/54880cef6151"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_operational">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_OPERATIONAL"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a9c/569A/FF0/54880cef11ed"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5a99/569A/FF0/54880cef4f5c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 140: 7.4.2.36</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P139_ReversingSupervisionInformation_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/229ea/10D9/1AD4/54bd09fa3b80"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a8b/569A/FF0/54880cef2675"/>
+									</pragmas>
+								</Field>
+								<Field name="q_scale">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SCALE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5e39/569A/FF0/548812e350a2"/>
+									</pragmas>
+								</Field>
+								<Field name="d_reverse">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_REVERSE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a8c/569A/FF0/54880cef900"/>
+									</pragmas>
+								</Field>
+								<Field name="v_reverse">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="V_REVERSE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a8d/569A/FF0/54880cef69dc"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5a89/569A/FF0/54880cef4885" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 139: 7.4.2.35</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P138_ReversingAreaInformation_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/229e1/10D9/1AD4/54bd09ee3477"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a79/569A/FF0/54880cef4e8f"/>
+									</pragmas>
+								</Field>
+								<Field name="q_scale">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SCALE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5e2f/569A/FF0/548812bc2046"/>
+									</pragmas>
+								</Field>
+								<Field name="d_startreverse">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_STARTREVERSE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a7a/569A/FF0/54880cef4df4"/>
+									</pragmas>
+								</Field>
+								<Field name="l_reversearea">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="L_REVERSEAREA"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a7b/569A/FF0/54880cef4418"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5a77/569A/FF0/54880cef38a9" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 138: 7.4.2.34</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P137_StopIfInStaffResponsible_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/229d8/10D9/1AD4/54bd09d45587"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a68/569A/FF0/54880cefd8b"/>
+									</pragmas>
+								</Field>
+								<Field name="q_srstop">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SRSTOP"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a69/569A/FF0/54880cef7444"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5a66/569A/FF0/54880cef4781" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 137: 7.4.2.33</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P131_RBCTransitionOrder_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/229c6/10D9/1AD4/54bd09c81ff4"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a55/569A/FF0/54880cef25a5"/>
+									</pragmas>
+								</Field>
+								<Field name="q_scale">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SCALE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5e25/569A/FF0/548812835cc8"/>
+									</pragmas>
+								</Field>
+								<Field name="d_rbctr">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_RBCTR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a56/569A/FF0/54880cef578c"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_c">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_C"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a57/569A/FF0/54880cef7f81"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_rbc">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_RBC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a58/569A/FF0/54880cef7695"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_radio">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_RADIO"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a59/569A/FF0/54880cefcae"/>
+									</pragmas>
+								</Field>
+								<Field name="q_sleepsession">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SLEEPSESSION"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5a5a/569A/FF0/54880cef3fd8"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5a53/569A/FF0/54880cef272b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 131: 7.4.2.27</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P21_GradientProfiles_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="P21_GradientProfile_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cNIterMax"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5dc2/569A/FF0/54880f243049" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 21 iterations</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="SSPArray_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="SSP_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cNIterMax"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5e24/569A/FF0/5488115c6f83" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>N_ITER-helper-type</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="SSP_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5e19/569A/FF0/5488115c63ae"/>
+									</pragmas>
+								</Field>
+								<Field name="d_static">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_STATIC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5e1a/569A/FF0/5488115c1dec"/>
+									</pragmas>
+								</Field>
+								<Field name="v_static">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="V_STATIC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5e1b/569A/FF0/5488115c1832"/>
+									</pragmas>
+								</Field>
+								<Field name="q_front">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_FRONT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5e1c/569A/FF0/5488115c214f"/>
+									</pragmas>
+								</Field>
+								<Field name="diffArray">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="DiffArray_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5e1d/569A/FF0/5488115c558" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Iterations are stored inline in arrays. Variable N_ITER(k) = m</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5e18/569A/FF0/5488115c704" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>N_ITER-helper-type</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="DiffArray_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="Diff_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cNIterMax"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5e09/569A/FF0/5488115c3372" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>N_ITER-helper-type</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="Diff_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5dfe/569A/FF0/5488115c2e1a"/>
+									</pragmas>
+								</Field>
+								<Field name="q_diff">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIFF"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5dff/569A/FF0/5488115c3299"/>
+									</pragmas>
+								</Field>
+								<Field name="nc_cddiff">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NC_CDDIFF"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5e00/569A/FF0/5488115cf82"/>
+									</pragmas>
+								</Field>
+								<Field name="nc_diff">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NC_DIFF"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5e01/569A/FF0/5488115c27c6"/>
+									</pragmas>
+								</Field>
+								<Field name="v_diff">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="V_DIFF"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5e02/569A/FF0/5488115c4770"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5dfd/569A/FF0/5488115c33a7" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>N_ITER-helper-type</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="nidCArray_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="nidC_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cNIterMax"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5e5e/569A/FF0/5488136f402d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>N_ITER-helper-type</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="nidC_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5e56/569A/FF0/5488136f4b20"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_c">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_C"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5e57/569A/FF0/5488136fc54"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5e55/569A/FF0/5488136f2564" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>N_ITER-helper-type</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="nvkvintsetArray_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="nvkvintset_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cNIterMax"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5e8b/569A/FF0/548813a945d0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>N_ITER-helper-type</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="nvkvintset_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5e80/569A/FF0/548813a938f6"/>
+									</pragmas>
+								</Field>
+								<Field name="q_nvkvintset">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_NVKVINTSET"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5e81/569A/FF0/548813a9462c"/>
+									</pragmas>
+								</Field>
+								<Field name="a_nvp12">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="A_NVP12"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5e82/569A/FF0/548813a923f6"/>
+									</pragmas>
+								</Field>
+								<Field name="a_nvp23">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="A_NVP23"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5e83/569A/FF0/548813a93a05"/>
+									</pragmas>
+								</Field>
+								<Field name="nvkintArray">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="nvkvintArray_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5e84/569A/FF0/548813a96a86" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Only if Q_NVKVINTSET = 1</comment>
+											<comment>Valid between V_NVKVINT(n) and V_NVKVINT(n+1)</comment>
+											<comment>Gives the correction factor if maximum emergency brake deceleration is higher than A_NVP23 / N_ITER(k) variable: m</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5e7f/569A/FF0/548813a950eb" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>N_ITER-helper-type</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="nvkrintArray_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="nvkrint_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cNIterMax"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5e73/569A/FF0/548813a923cf" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>N_ITER-helper-type</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="nvkrint_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5e6a/569A/FF0/548813a956c"/>
+									</pragmas>
+								</Field>
+								<Field name="l_nvkrint">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="L_NVKRINT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5e6b/569A/FF0/548813a941b6"/>
+									</pragmas>
+								</Field>
+								<Field name="m_nvkrint">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_NVKRINT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5e6c/569A/FF0/548813a921b9"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5e69/569A/FF0/548813a956a0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>N_ITER-helper-type</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P41_LevelTransistionOrders_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="P41_LevelTransitionOrder_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cNIterMax"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5ec7/569A/FF0/5488151c26da" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 41 iterations</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P46_ConditionalLevelTransitionOrders_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="P46_ConditionalLevelTransitionOrder_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cNIterMax"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/f843/569A/FF0/54881788c1b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 46 iterations</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P49_ListOfBalisesForSHAreas_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="P49_ListOfBalisesForSHArea_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cNIterMax"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/f873/569A/FF0/548818396ef7" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 49 iterations</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="axleloadArray_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="axleload_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<ConstValue value="3"/>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/f8c1/569A/FF0/548819955cb9" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Subset 040 4.3.2.1.1 p)</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="axleload_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f8b8/569A/FF0/5488199560e4"/>
+									</pragmas>
+								</Field>
+								<Field name="m_axleloadcat">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_AXLELOADCAT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f8b9/569A/FF0/548819952251"/>
+									</pragmas>
+								</Field>
+								<Field name="v_axleload">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="V_AXLELOAD"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/f8ba/569A/FF0/54881995fbc"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/f8b7/569A/FF0/548819954d65" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>N_ITER-helper-type</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P51_AxleLoadSpeedProfiles_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="P51_AxleLoadSpeedProfile_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cNIterMaxAxleloadSpeedProfile"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/f8c2/569A/FF0/54881a051711" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 51 iterations / Dimensioning: Subset 040 4.3.2.1.1 o)</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P52_PermittedBrakingDistanceInformations_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="P52_PermittedBrakingDistanceInformation_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cNIterMaxPermittedBrakingDistanceInformation"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/f907/569A/FF0/54881aca2a1a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 52 iterations / Dimensioning: Subset 040 4.3.2.1.1 s)</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P68_TrackConditions_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="P68_TrackCondition_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cNIterMaxTrackConditions"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/f999/569A/FF0/54881ead6317" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 68 iterations / Dimensioning: Subset 040 4.3.2.1.1 l)</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P69_TrackConditionStationPlatforms_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="P69_TrackConditionStationPlatform_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cNIterMaxTrackConditionStationPlatform"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/f9ef/569A/FF0/5488209c4906" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 69 / Dimensioning: Subset 040 4.3.2.1.1 t)</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P70_RouteSuitabilityDatas_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="P70_RouteSuitabilityData_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<ConstValue value="2"/>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/fa50/569A/FF0/548821a34c36" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number  70 / Dimensioning: Subset 040 4.3.2.1.1 m)</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P79_GeographicalPositionInformations_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="P79_GeographicalPositionInformation_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cNIterMax"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/fabd/569A/FF0/548823a73720" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 79 iterations</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P80_ModeProfiles_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="P80_ModeProfile_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cNIterMaxModeProfiles"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/fb26/569A/FF0/5488259455a0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 80 iterations / Dimensioning: Subset 040 4.3.2.1.1 c)</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="nvkvintArray_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="nvkvint_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cNIterMax"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5d21/6FD7/165C/54882fd2215e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>N_ITER-helper-type</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="nvkvint_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d17/6FD7/165C/54882fd28e9"/>
+									</pragmas>
+								</Field>
+								<Field name="v_nvkvint">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="V_NVKVINT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d18/6FD7/165C/54882fd2282c"/>
+									</pragmas>
+								</Field>
+								<Field name="m_nvkvint12">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_NVKVINT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d19/6FD7/165C/54882fd25613" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Valid between V_NVKVINT(n) and V_NVKVINT(n+1)</comment>
+											<comment>If Q_NVKVINTSET = 1, gives the correction factor if maximum emergency brake deceleration is lower than A_NVP12</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="m_nvkvint23">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_NVKVINT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d1a/6FD7/165C/54882fd2327c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Only if Q_NVKVINTSET = 1</comment>
+											<comment>Valid between V_NVKVINT(n) and V_NVKVINT(n+1)</comment>
+											<comment>Gives the correction factor if maximum emergency brake deceleration is higher than A_NVP23</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5d16/6FD7/165C/54882fd26331" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>N_ITER-helper-type</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="xTextArray_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="xText_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<ConstValue value="255"/>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5d43/6FD7/165C/54882fff28da" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Iterations of X_TEXT</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="xText_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d33/6FD7/165C/54882fff68a1"/>
+									</pragmas>
+								</Field>
+								<Field name="x_text">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="X_TEXT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5d34/6FD7/165C/54882fff7740"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5d32/6FD7/165C/54882fff6c74" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>N_ITER helper type</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P15_Level23MovementAuthority_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/c957/7202/4D4/54908ab2606f"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/c960/7202/4D4/54908abe8dd"/>
+									</pragmas>
+								</Field>
+								<Field name="q_scale">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SCALE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/c973/7202/4D4/54908b24627f"/>
+									</pragmas>
+								</Field>
+								<Field name="v_loa">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="V_LOA"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/c97d/7202/4D4/54908b3420ca"/>
+									</pragmas>
+								</Field>
+								<Field name="t_loa">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_LOA"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/c987/7202/4D4/54908b3d4909"/>
+									</pragmas>
+								</Field>
+								<Field name="l_section">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="L_SECTION"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/c991/7202/4D4/54908b451f9"/>
+									</pragmas>
+								</Field>
+								<Field name="q_sectiontimer_k">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SECTIONTIMER"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/ca29/7202/4D4/5490974fcb5"/>
+									</pragmas>
+								</Field>
+								<Field name="t_sectiontimer_k">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_SECTIONTIMER"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/ca2a/7202/4D4/54909766432a"/>
+									</pragmas>
+								</Field>
+								<Field name="d_sectiontimerstoploc_k">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_SECTIONTIMERSTOPLOC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/ca2b/7202/4D4/5490976d468a"/>
+									</pragmas>
+								</Field>
+								<Field name="l_endsection">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="L_ENDSECTION"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/c992/7202/4D4/54908b5f1845"/>
+									</pragmas>
+								</Field>
+								<Field name="q_sectiontimer">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SECTIONTIMER"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/c99c/7202/4D4/54908b69710c"/>
+									</pragmas>
+								</Field>
+								<Field name="t_sectiontimer">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_SECTIONTIMER"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/c99d/7202/4D4/54908b7425b0"/>
+									</pragmas>
+								</Field>
+								<Field name="d_sectiontimerstoploc">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_SECTIONTIMERSTOPLOC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/c99e/7202/4D4/54908b7d422a"/>
+									</pragmas>
+								</Field>
+								<Field name="q_endtimer">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_ENDTIMER"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/c99f/7202/4D4/54908b896cfd"/>
+									</pragmas>
+								</Field>
+								<Field name="t_endtimer">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_ENDTIMER"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/c9a0/7202/4D4/54908b8d1d72"/>
+									</pragmas>
+								</Field>
+								<Field name="d_endtimerstartloc">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_ENDTIMERSTARTLOC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/c9a1/7202/4D4/54908b9e2439"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dangerpoint">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DANGERPOINT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/c9a2/7202/4D4/54908bb06a1"/>
+									</pragmas>
+								</Field>
+								<Field name="d_dp">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_DP"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/c9a3/7202/4D4/54908bb77da1"/>
+									</pragmas>
+								</Field>
+								<Field name="v_releasedp">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="V_RELEASEDP"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/c9a4/7202/4D4/54908bb976ad"/>
+									</pragmas>
+								</Field>
+								<Field name="q_overlap">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_OVERLAP"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/c9a5/7202/4D4/54908bc0753"/>
+									</pragmas>
+								</Field>
+								<Field name="d_startol">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_STARTOL"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/c9a6/7202/4D4/54908bd56033"/>
+									</pragmas>
+								</Field>
+								<Field name="t_ol">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_OL"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/c9a7/7202/4D4/54908bde7a8a"/>
+									</pragmas>
+								</Field>
+								<Field name="d_ol">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_OL"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/c9a8/7202/4D4/54908be32c4f"/>
+									</pragmas>
+								</Field>
+								<Field name="v_releaseol">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="V_RELEASEOL"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/c9a9/7202/4D4/54908be7599"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/c956/7202/4D4/549089797423" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 15: 7.4.2.4</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P15_Level23MovementAuthorities_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="P15_Level23MovementAuthority_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cNIterMaxMA"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/ca50/7202/4D4/5490996450ba" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 15 iterations / Dimensioning: Subset 040 4.3.2.1.1 a)</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P65_TemporarySpeedRestrictions_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="P65_TemporarySpeedRestriction_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cNIterMaxTSR"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/3339a/25CF/CD0/549172c96784" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 65 iterations / Dimensioning: 10 = maximal number of packets in one message according to Subset 040 4.3.2.1.1 e)</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P58_PositionReportParameters_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/9d99/438C/464/55350e567d89" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>the packet is valid</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="nid_packet">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_PACKET"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/29b1e/1EC1/C08/54d33638b22" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Packet ID</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/29b1f/1EC1/C08/54d3363857a0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Validity direction of transmitted data</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="l_packet">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="L_PACKET"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/29b20/1EC1/C08/54d3363866b4" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Packet length</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="q_scale">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SCALE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/29b21/1EC1/C08/54d336385f7f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Qualifier for the distance scale</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="t_cycloc">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_CYCLOC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/29b22/1EC1/C08/54d3363837f5" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Time Interval between two position reports sent by the train</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="d_cycloc">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_CYCLOC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/29b23/1EC1/C08/54d3363873f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Distance between two position reports from the train</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="m_loc">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="M_LOC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/29b24/1EC1/C08/54d336386bcc" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Special location/moment where the train has to report its position</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="n_iter">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="N_ITER"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/29b25/1EC1/C08/54d336387194" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Number of iterations of a data set following this variable in a packet</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="iterPacket58List">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="IterPacket58List_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/29b26/1EC1/C08/54d336385e0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>List of pairs of distances and locations</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/29b1d/1EC1/C08/54d336385088" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Position Report Parameters</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="IterPacket58List_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="IterPacket58_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cIterPacket58"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/29b05/1EC1/C08/54d336381286"/>
+					</pragmas>
+				</Type>
+				<Type name="IterPacket58_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="d_loc">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_LOC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/29afd/1EC1/C08/54d3363841df" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Incremental distance between locations where the train has to report its position (7.5.1.11)</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="q_lgtloc">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_LGTLOC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/29afe/1EC1/C08/54d336386dc4" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<comment>Qualifier for the specified report location (7.5.1.113)</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/29afc/1EC1/C08/54d33638691e"/>
+					</pragmas>
+				</Type>
+				<Type name="P66_TemporarySpeedRestrictionRevocations_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="P66_TemporarySpeedRestrictionRevocation_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cNIterMaxTSR"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/141ba/475B/21C8/54ef1de66c0"/>
+					</pragmas>
+				</Type>
+				<Type name="P12_Level1MovementAuthority_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13e9c/3FFB/13E0/55755be37032"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13e9d/3FFB/13E0/55755be359ba"/>
+									</pragmas>
+								</Field>
+								<Field name="q_scale">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SCALE"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13e9e/3FFB/13E0/55755be3622c"/>
+									</pragmas>
+								</Field>
+								<Field name="v_main">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="V_MAIN"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13ecd/3FFB/13E0/55755d6b3041"/>
+									</pragmas>
+								</Field>
+								<Field name="v_loa">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="V_LOA"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13e9f/3FFB/13E0/55755be326e8"/>
+									</pragmas>
+								</Field>
+								<Field name="t_loa">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_LOA"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13ea0/3FFB/13E0/55755be376e9"/>
+									</pragmas>
+								</Field>
+								<Field name="l_section">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="L_SECTION"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13ea1/3FFB/13E0/55755be342f5"/>
+									</pragmas>
+								</Field>
+								<Field name="q_sectiontimer_k">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SECTIONTIMER"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13ea2/3FFB/13E0/55755be32697"/>
+									</pragmas>
+								</Field>
+								<Field name="t_sectiontimer_k">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_SECTIONTIMER"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13ea3/3FFB/13E0/55755be37091"/>
+									</pragmas>
+								</Field>
+								<Field name="d_sectiontimerstoploc_k">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_SECTIONTIMERSTOPLOC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13ea4/3FFB/13E0/55755be3f73"/>
+									</pragmas>
+								</Field>
+								<Field name="l_endsection">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="L_ENDSECTION"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13ea5/3FFB/13E0/55755be36a0d"/>
+									</pragmas>
+								</Field>
+								<Field name="q_sectiontimer">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_SECTIONTIMER"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13ea6/3FFB/13E0/55755be36b6d"/>
+									</pragmas>
+								</Field>
+								<Field name="t_sectiontimer">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_SECTIONTIMER"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13ea7/3FFB/13E0/55755be34ef4"/>
+									</pragmas>
+								</Field>
+								<Field name="d_sectiontimerstoploc">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_SECTIONTIMERSTOPLOC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13ea8/3FFB/13E0/55755be35bd6"/>
+									</pragmas>
+								</Field>
+								<Field name="q_endtimer">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_ENDTIMER"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13ea9/3FFB/13E0/55755be3381"/>
+									</pragmas>
+								</Field>
+								<Field name="t_endtimer">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_ENDTIMER"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13eaa/3FFB/13E0/55755be3380"/>
+									</pragmas>
+								</Field>
+								<Field name="d_endtimerstartloc">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_ENDTIMERSTARTLOC"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13eab/3FFB/13E0/55755be338b1"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dangerpoint">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DANGERPOINT"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13eac/3FFB/13E0/55755be36b05"/>
+									</pragmas>
+								</Field>
+								<Field name="d_dp">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_DP"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13ead/3FFB/13E0/55755be34a04"/>
+									</pragmas>
+								</Field>
+								<Field name="v_releasedp">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="V_RELEASEDP"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13eae/3FFB/13E0/55755be34808"/>
+									</pragmas>
+								</Field>
+								<Field name="q_overlap">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_OVERLAP"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13eaf/3FFB/13E0/55755be3462a"/>
+									</pragmas>
+								</Field>
+								<Field name="d_startol">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_STARTOL"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13eb0/3FFB/13E0/55755be347a9"/>
+									</pragmas>
+								</Field>
+								<Field name="t_ol">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="T_OL"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13eb1/3FFB/13E0/55755be3622d"/>
+									</pragmas>
+								</Field>
+								<Field name="d_ol">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="D_OL"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13eb2/3FFB/13E0/55755be33d8c"/>
+									</pragmas>
+								</Field>
+								<Field name="v_releaseol">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="V_RELEASEOL"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13eb3/3FFB/13E0/55755be352d9"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13e9b/3FFB/13E0/55755be3320d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 12: 7.4.2.3</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P12_Level1MovementAuthorities_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="P12_Level1MovementAuthority_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cNIterMaxMA"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13eba/3FFB/13E0/55755bf33a42" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 12 iterations / Dimensioning: Subset 040 4.3.2.1.1 a)</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P135_StopShuntingOnDeskOpening_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13f8b/3FFB/13E0/557560dd6efd"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13f8c/3FFB/13E0/557560dd6ba6"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13f8a/3FFB/13E0/557560dd39ad" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 135 7.4.2.32</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P63_BaliseInSRAuthority_T">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="valid">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13f9c/3FFB/13E0/557563114812"/>
+									</pragmas>
+								</Field>
+								<Field name="q_dir">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_DIR"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13f96/3FFB/13E0/557562553f53"/>
+									</pragmas>
+								</Field>
+								<Field name="q_newcountry">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="Q_NEWCOUNTRY"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13efe/2EC8/14D8/55756d911339"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_c">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_C"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13f9d/3FFB/13E0/5575632523bd"/>
+									</pragmas>
+								</Field>
+								<Field name="nid_bg">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="NID_BG"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/13fa7/3FFB/13E0/5575633914ad"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13f95/3FFB/13E0/5575625516b6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<comment>Packet number 63: 7.4.2.16</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="P63_ListofBalisesinSRAuthority_T">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="P63_BaliseInSRAuthority_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="cNIterMax"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/13ef3/2EC8/14D8/55756d543db4"/>
+					</pragmas>
+				</Type>
+			</declarations>
+			<pragmas>
+				<ed:Package oid="!ed/5a3c/569A/FF0/54880be83c85" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<diagrams>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/5a3d/569A/FF0/54880be85d10" blockKind="constants"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/5a3e/569A/FF0/54880be8645e" blockKind="types" columnsSize="0, 333, 214, 300"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/5a3f/569A/FF0/54880be82c58" blockKind="sensors"/>
+					</diagrams>
+				</ed:Package>
+			</pragmas>
+		</Package>
+	</declarations>
+</File>

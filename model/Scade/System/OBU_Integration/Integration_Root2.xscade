@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="node" name="Integration_Root">
+	<data>
+		<!-- () = F3_Measure_Train_Movement(); -->
+		<Equation>
+			<right>
+				<!-- F3_Measure_Train_Movement() -->
+				<CallExpression>
+					<operator>
+						<OpCall name="1">
+							<operator>
+								<OperatorRef name="F3_Measure_Train_Movement"/>
+							</operator>
+						</OpCall>
+					</operator>
+					<pragmas>
+						<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<references>
+								<OperatorRef path="F3_Measure_Train_Movement" refOid="!ed/186d3/1AE7/E88/54c9582e34e3"/>
+							</references>
+						</ed:CallExpression>
+					</pragmas>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/186e0/1AE7/E88/54c958e55564"/>
+			</pragmas>
+		</Equation>
+		<!-- () = F5_Manage_JRU(); -->
+		<Equation>
+			<right>
+				<!-- F5_Manage_JRU() -->
+				<CallExpression>
+					<operator>
+						<OpCall name="1">
+							<operator>
+								<OperatorRef name="F5_Manage_JRU"/>
+							</operator>
+						</OpCall>
+					</operator>
+					<pragmas>
+						<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<references>
+								<OperatorRef path="F5_Manage_JRU" refOid="!ed/186d5/1AE7/E88/54c9587f504e"/>
+							</references>
+						</ed:CallExpression>
+					</pragmas>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/186e5/1AE7/E88/54c958f11589"/>
+			</pragmas>
+		</Equation>
+		<!-- () = F8_DMI(); -->
+		<Equation>
+			<right>
+				<!-- F8_DMI() -->
+				<CallExpression>
+					<operator>
+						<OpCall name="1">
+							<operator>
+								<OperatorRef name="F8_DMI"/>
+							</operator>
+						</OpCall>
+					</operator>
+					<pragmas>
+						<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<references>
+								<OperatorRef path="F8_DMI" refOid="!ed/186ea/1AE7/E88/54c9592427e9"/>
+							</references>
+						</ed:CallExpression>
+					</pragmas>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/186ec/1AE7/E88/54c959385610"/>
+			</pragmas>
+		</Equation>
+		<!-- () = F4_Radio_Communication(); -->
+		<Equation>
+			<right>
+				<!-- F4_Radio_Communication() -->
+				<CallExpression>
+					<operator>
+						<OpCall name="1">
+							<operator>
+								<OperatorRef name="F4_Radio_Communication"/>
+							</operator>
+						</OpCall>
+					</operator>
+					<pragmas>
+						<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<references>
+								<OperatorRef path="F4_Radio_Communication" refOid="!ed/157489/1AE7/E88/54c960b74201"/>
+							</references>
+						</ed:CallExpression>
+					</pragmas>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/15748b/1AE7/E88/54c961063f3b"/>
+			</pragmas>
+		</Equation>
+		<!-- () = Runtime::F1_Receive_Information_from_Trackside(); -->
+		<Equation>
+			<right>
+				<!-- Runtime::F1_Receive_Information_from_Trackside() -->
+				<CallExpression>
+					<operator>
+						<OpCall name="1">
+							<operator>
+								<OperatorRef name="Runtime::F1_Receive_Information_from_Trackside"/>
+							</operator>
+						</OpCall>
+					</operator>
+					<pragmas>
+						<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<references>
+								<OperatorRef path="Runtime::F1_Receive_Information_from_Trackside" refOid="!ed/157458/1AE7/E88/54c95cac62b1"/>
+							</references>
+						</ed:CallExpression>
+					</pragmas>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/32e672/1AE7/E88/54c96528eb7"/>
+			</pragmas>
+		</Equation>
+		<!-- () = Runtime::API_in(); -->
+		<Equation>
+			<right>
+				<!-- Runtime::API_in() -->
+				<CallExpression>
+					<operator>
+						<OpCall name="1">
+							<operator>
+								<OperatorRef name="Runtime::API_in"/>
+							</operator>
+						</OpCall>
+					</operator>
+					<pragmas>
+						<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<references>
+								<OperatorRef path="Runtime::API_in" refOid="!ed/4adbf9/1AE7/E88/54cb3202439a"/>
+							</references>
+						</ed:CallExpression>
+					</pragmas>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/4adbfd/1AE7/E88/54cb32151b9"/>
+			</pragmas>
+		</Equation>
+		<!-- () = Runtime::API_out(); -->
+		<Equation>
+			<right>
+				<!-- Runtime::API_out() -->
+				<CallExpression>
+					<operator>
+						<OpCall name="1">
+							<operator>
+								<OperatorRef name="Runtime::API_out"/>
+							</operator>
+						</OpCall>
+					</operator>
+					<pragmas>
+						<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<references>
+								<OperatorRef path="Runtime::API_out" refOid="!ed/4adbfb/1AE7/E88/54cb320c294a"/>
+							</references>
+						</ed:CallExpression>
+					</pragmas>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/4adc02/1AE7/E88/54cb32235e37"/>
+			</pragmas>
+		</Equation>
+	</data>
+	<pragmas>
+		<ed:Operator oid="!ed/186d9/1AE7/E88/54c958ba2a60" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+			<diagrams>
+				<NetDiagram name="diagram_Integration_Root_1" landscape="true" format="A4 (210 297)" oid="!ed/186da/1AE7/E88/54c958ba76da">
+					<presentationElements>
+						<EquationGE presentable="!ed/186e0/1AE7/E88/54c958e55564">
+							<position>
+								<Point x="1588" y="8343"/>
+							</position>
+							<size>
+								<Size width="4355" height="2662"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/186e5/1AE7/E88/54c958f11589">
+							<position>
+								<Point x="21960" y="7020"/>
+							</position>
+							<size>
+								<Size width="5007" height="1427"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/186ec/1AE7/E88/54c959385610">
+							<position>
+								<Point x="11289" y="953"/>
+							</position>
+							<size>
+								<Size width="4867" height="1409"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/15748b/1AE7/E88/54c961063f3b">
+							<position>
+								<Point x="11501" y="11483"/>
+							</position>
+							<size>
+								<Size width="4338" height="2044"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/32e672/1AE7/E88/54c96528eb7">
+							<position>
+								<Point x="1605" y="4974"/>
+							</position>
+							<size>
+								<Size width="4373" height="2803"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/4adbfd/1AE7/E88/54cb32151b9">
+							<position>
+								<Point x="8079" y="4833"/>
+							</position>
+							<size>
+								<Size width="1286" height="6313"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/4adc02/1AE7/E88/54cb32235e37">
+							<position>
+								<Point x="18292" y="4921"/>
+							</position>
+							<size>
+								<Size width="1303" height="6242"/>
+							</size>
+						</EquationGE>
+					</presentationElements>
+				</NetDiagram>
+			</diagrams>
+		</ed:Operator>
+	</pragmas>
+</Operator>

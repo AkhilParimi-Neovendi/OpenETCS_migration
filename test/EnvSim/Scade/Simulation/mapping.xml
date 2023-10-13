@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--$********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
+** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/test/EnvSim/Scade/Simulation/config.txt
+** Generation date: 2023-10-09T16:07:18
+*************************************************************$-->
+<mapping>
+  <config>
+    <option name="use_types" value="#off#"/>
+    <option name="imported_root_package" value="#off#"/>
+    <option name="root_package" value="#off#"/>
+    <option name="xml_basename" value="kcg_xml_filter_out.scade"/>
+    <option name="state_vector" value="#off#"/>
+    <option name="static" value="#off#"/>
+    <option name="separate_io_all" value="#off#"/>
+    <option name="no_separate_io" value="#off#"/>
+    <option name="separate_io" value="#off#"/>
+    <option name="warn_error" value="#off#"/>
+    <option name="short_circuit" value="#off#"/>
+    <option name="wrap_c_ops" value="#off#"/>
+    <option name="input_file"
+        value="C:/DBC/OpenETCS/modeling-Scade65Migration/test/EnvSim/Scade/Simulation/scade_model_without_unused.scade"/>
+    <option name="probes" value="#on#"/>
+    <option name="no_observe" value="#off#"/>
+    <option name="observe" value="#off#"/>
+    <option name="debug" value="#on#"/>
+    <option name="user_config" value="./user_macros.h"/>
+    <option name="input_threshold" value="#off#"/>
+    <option name="header" value="#off#"/>
+    <option name="significance_length" value="31"/>
+    <option name="name_length" value="200"/>
+    <option name="globals_prefix" value="#off#"/>
+    <option name="keep_asserts" value="#off#"/>
+    <option name="global_root_context" value="#off#"/>
+    <option name="expall" value="#off#"/>
+    <option name="noexp" value="#off#"/>
+    <option name="exp" value="#off#"/>
+    <option name="target_dir" value="C:/DBC/OpenETCS/modeling-Scade65Migration/test/EnvSim/Scade/Simulation"/>
+    <option name="target" value="C"/>
+    <option name="root" value="EnvSim::Internal::ScriptedTrackTest"/>
+    <option name="auth" value="#off#"/>
+  </config>
+  <model>
+    <array id="1" baseType="50" size="500"/>
+    <struct id="2">
+      <field id="3" name="nid_packet" type="58"/>
+      <field id="4" name="q_dir" type="59"/>
+      <field id="5" name="valid" type="45"/>
+      <field id="6" name="startAddress" type="50"/>
+      <field id="7" name="endAddress" type="50"/>
+    </struct>
+    <struct id="8">
+      <field id="9" name="Header" type="84"/>
+      <field id="10" name="Messages" type="89"/>
+    </struct>
+    <struct id="11">
+      <field id="12" name="q_updown" type="50"/>
+      <field id="13" name="m_version" type="50"/>
+      <field id="14" name="q_media" type="50"/>
+      <field id="15" name="n_pig" type="50"/>
+      <field id="16" name="n_total" type="50"/>
+      <field id="17" name="m_dup" type="50"/>
+      <field id="18" name="m_mcount" type="50"/>
+      <field id="19" name="nid_c" type="50"/>
+      <field id="20" name="nid_bg" type="50"/>
+      <field id="21" name="q_link" type="50"/>
+    </struct>
+    <struct id="22">
+      <field id="23" name="radioDevice" type="50"/>
+      <field id="24" name="receivedSystemTime" type="50"/>
+      <field id="25" name="nid_message" type="50"/>
+      <field id="26" name="t_train" type="50"/>
+      <field id="27" name="m_ack" type="50"/>
+      <field id="28" name="nid_lrbg" type="50"/>
+      <field id="29" name="t_train_reference" type="50"/>
+      <field id="30" name="nid_em" type="50"/>
+      <field id="31" name="q_scale" type="50"/>
+      <field id="32" name="d_sr" type="50"/>
+      <field id="33" name="t_sh_rqst" type="50"/>
+      <field id="34" name="d_ref" type="50"/>
+      <field id="35" name="q_dir" type="50"/>
+      <field id="36" name="d_emergencystop" type="50"/>
+      <field id="37" name="m_version" type="50"/>
+    </struct>
+    <struct id="38">
+      <field id="39" name="Header" type="82"/>
+      <field id="40" name="Messages" type="89"/>
+    </struct>
+    <struct id="41">
+      <field id="42" name="PacketHeaders" type="90"/>
+      <field id="43" name="PacketData" type="92"/>
+    </struct>
+    <array id="44" baseType="91" size="30"/>
+    <predefType id="45" name="bool"/>
+    <predefType id="46" name="char"/>
+    <predefType id="47" name="int8"/>
+    <predefType id="48" name="int16"/>
+    <predefType id="49" name="int32"/>
+    <predefType id="50" name="int64"/>
+    <predefType id="51" name="uint8"/>
+    <predefType id="52" name="uint16"/>
+    <predefType id="53" name="uint32"/>
+    <predefType id="54" name="uint64"/>
+    <predefType id="55" name="float32"/>
+    <predefType id="56" name="float64"/>
+    <predefType id="57" name="size"/>
+    <type id="58" name="NID_PACKET" imported="false" type="50"/>
+    <enum id="59" name="Q_DIR">
+      <value id="60" name="Q_DIR_Reverse" default="false"/>
+      <value id="61" name="Q_DIR_Nominal" default="false"/>
+      <value id="62" name="Q_DIR_Both_directions" default="false"/>
+    </enum>
+    <package id="63" name="EnvSim">
+      <operator id="64" name="ScriptedTrack" imported="true" root="false" expanded="false">
+        <input id="65" name="actualTrainPos" clock="false" type="56"/>
+        <input id="66" name="radioTrainPos" clock="false" type="56"/>
+        <output id="67" name="baliseMessage" clock="false" type="81"/>
+        <output id="68" name="radioMessage" clock="false" type="83"/>
+      </operator>
+      <package id="69" name="Internal">
+        <operator id="70" name="ScriptedTrackTest" imported="false" root="true" expanded="false">
+          <input id="71" name="actualTrainPos" clock="false" type="56"/>
+          <input id="72" name="radioTrainPos" clock="false" type="56"/>
+          <output id="73" name="radioMessage" clock="false" type="83"/>
+          <output id="74" name="baliseMessage" clock="false" type="81"/>
+          <local id="75" name="_L2" clock="false" type="81"/>
+          <local id="76" name="_L1" clock="false" type="83"/>
+          <local id="77" name="_L3" clock="false" type="56"/>
+          <local id="78" name="_L4" clock="false" type="56"/>
+          <instance id="79" name="1" op="64" expanded="false"/>
+        </operator>
+      </package>
+    </package>
+    <package id="80" name="TM">
+      <type id="81" name="CompressedBaliseMessage" imported="false" type="38"/>
+      <type id="82" name="BaliseTelegramHeader_int_T" imported="false" type="11"/>
+      <type id="83" name="CompressedRadioMessage" imported="false" type="8"/>
+      <type id="84" name="Radio_TrackTrain_Header_T" imported="false" type="22"/>
+    </package>
+    <package id="85" name="Common_Types_Pkg">
+      <constant id="86" name="cMetadataArraySize" imported="false" type="50"/>
+      <constant id="87" name="cDIM_MaxRMessages" imported="false" type="50"/>
+      <constant id="88" name="cDIM_MaxDataElementsInRMessage" imported="false" type="50"/>
+      <type id="89" name="CompressedPackets_T" imported="false" type="41"/>
+      <type id="90" name="Metadata_T" imported="false" type="44"/>
+      <type id="91" name="MetadataElement_T" imported="false" type="2"/>
+      <type id="92" name="CompressedPacketData_T" imported="false" type="1"/>
+    </package>
+  </model>
+  <generated>
+    <c>
+      <file id="93" name="ScriptedTrackTest_EnvSim_Internal.h">
+        <function id="94" name="ScriptedTrackTest_init_EnvSim_Internal">
+          <parameter id="95" name="outC" type="101" pointer="true"/>
+        </function>
+        <function id="96" name="ScriptedTrackTest_reset_EnvSim_Internal">
+          <parameter id="97" name="outC" type="101" pointer="true"/>
+        </function>
+        <function id="98" name="ScriptedTrackTest_EnvSim_Internal">
+          <parameter id="99" name="inC" type="108" pointer="true"/>
+          <parameter id="100" name="outC" type="101" pointer="true"/>
+        </function>
+        <struct id="101" name="outC_ScriptedTrackTest_EnvSim_Internal">
+          <field id="102" name="radioMessage" type="152" pointer="false"/>
+          <field id="103" name="baliseMessage" type="171" pointer="false"/>
+          <field id="104" name="_L2" type="171" pointer="false"/>
+          <field id="105" name="_L1" type="152" pointer="false"/>
+          <field id="106" name="_L3" type="233" pointer="false"/>
+          <field id="107" name="_L4" type="233" pointer="false"/>
+        </struct>
+        <struct id="108" name="inC_ScriptedTrackTest_EnvSim_Internal">
+          <field id="109" name="actualTrainPos" type="233" pointer="false"/>
+          <field id="110" name="radioTrainPos" type="233" pointer="false"/>
+        </struct>
+      </file>
+      <file id="111" name="kcg_types.h">
+        <ifdef id="112" name="kcg_use_CompressedPacketData_T_Common_Types_Pkg">
+          <function id="113" name="kcg_comp_CompressedPacketData_T_Common_Types_Pkg" returnType="235">
+            <parameter id="142" name="kcg_c1" type="195" pointer="true"/>
+            <parameter id="143" name="kcg_c2" type="195" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="116" name="kcg_use_Metadata_T_Common_Types_Pkg">
+          <function id="117" name="kcg_comp_Metadata_T_Common_Types_Pkg" returnType="235">
+            <parameter id="142" name="kcg_c1" type="188" pointer="true"/>
+            <parameter id="143" name="kcg_c2" type="188" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="120" name="kcg_use_MetadataElement_T_Common_Types_Pkg">
+          <function id="121" name="kcg_comp_MetadataElement_T_Common_Types_Pkg" returnType="235">
+            <parameter id="142" name="kcg_c1" type="189" pointer="true"/>
+            <parameter id="143" name="kcg_c2" type="189" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="124" name="kcg_use_CompressedBaliseMessage_TM">
+          <function id="125" name="kcg_comp_CompressedBaliseMessage_TM" returnType="235">
+            <parameter id="142" name="kcg_c1" type="171" pointer="true"/>
+            <parameter id="143" name="kcg_c2" type="171" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="128" name="kcg_use_CompressedRadioMessage_TM">
+          <function id="129" name="kcg_comp_CompressedRadioMessage_TM" returnType="235">
+            <parameter id="142" name="kcg_c1" type="152" pointer="true"/>
+            <parameter id="143" name="kcg_c2" type="152" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="132" name="kcg_use_CompressedPackets_T_Common_Types_Pkg">
+          <function id="133" name="kcg_comp_CompressedPackets_T_Common_Types_Pkg" returnType="235">
+            <parameter id="142" name="kcg_c1" type="185" pointer="true"/>
+            <parameter id="143" name="kcg_c2" type="185" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="136" name="kcg_use_BaliseTelegramHeader_int_T_TM">
+          <function id="137" name="kcg_comp_BaliseTelegramHeader_int_T_TM" returnType="235">
+            <parameter id="142" name="kcg_c1" type="174" pointer="true"/>
+            <parameter id="143" name="kcg_c2" type="174" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="140" name="kcg_use_Radio_TrackTrain_Header_T_TM">
+          <function id="141" name="kcg_comp_Radio_TrackTrain_Header_T_TM" returnType="235">
+            <parameter id="142" name="kcg_c1" type="155" pointer="true"/>
+            <parameter id="143" name="kcg_c2" type="155" pointer="true"/>
+          </function>
+        </ifdef>
+        <macro id="144" name="kcg_copy_CompressedPacketData_T_Common_Types_Pkg"/>
+        <macro id="145" name="kcg_copy_Metadata_T_Common_Types_Pkg"/>
+        <macro id="146" name="kcg_copy_MetadataElement_T_Common_Types_Pkg"/>
+        <macro id="147" name="kcg_copy_CompressedBaliseMessage_TM"/>
+        <macro id="148" name="kcg_copy_CompressedRadioMessage_TM"/>
+        <macro id="149" name="kcg_copy_CompressedPackets_T_Common_Types_Pkg"/>
+        <macro id="150" name="kcg_copy_BaliseTelegramHeader_int_T_TM"/>
+        <macro id="151" name="kcg_copy_Radio_TrackTrain_Header_T_TM"/>
+        <struct id="152" name="CompressedRadioMessage_TM" tagName="kcg_tag_CompressedRadioMessage_TM">
+          <field id="153" name="Header" type="155" pointer="false"/>
+          <field id="154" name="Messages" type="185" pointer="false"/>
+        </struct>
+        <struct id="155" name="Radio_TrackTrain_Header_T_TM" tagName="kcg_tag_Radio_TrackTrain_Header_T_TM">
+          <field id="156" name="radioDevice" type="227" pointer="false"/>
+          <field id="157" name="receivedSystemTime" type="227" pointer="false"/>
+          <field id="158" name="nid_message" type="227" pointer="false"/>
+          <field id="159" name="t_train" type="227" pointer="false"/>
+          <field id="160" name="m_ack" type="227" pointer="false"/>
+          <field id="161" name="nid_lrbg" type="227" pointer="false"/>
+          <field id="162" name="t_train_reference" type="227" pointer="false"/>
+          <field id="163" name="nid_em" type="227" pointer="false"/>
+          <field id="164" name="q_scale" type="227" pointer="false"/>
+          <field id="165" name="d_sr" type="227" pointer="false"/>
+          <field id="166" name="t_sh_rqst" type="227" pointer="false"/>
+          <field id="167" name="d_ref" type="227" pointer="false"/>
+          <field id="168" name="q_dir" type="227" pointer="false"/>
+          <field id="169" name="d_emergencystop" type="227" pointer="false"/>
+          <field id="170" name="m_version" type="227" pointer="false"/>
+        </struct>
+        <struct id="171" name="CompressedBaliseMessage_TM" tagName="kcg_tag_CompressedBaliseMessage_TM">
+          <field id="172" name="Header" type="174" pointer="false"/>
+          <field id="173" name="Messages" type="185" pointer="false"/>
+        </struct>
+        <struct id="174" name="BaliseTelegramHeader_int_T_TM" tagName="kcg_tag_BaliseTelegramHeader_int_T_TM">
+          <field id="175" name="q_updown" type="227" pointer="false"/>
+          <field id="176" name="m_version" type="227" pointer="false"/>
+          <field id="177" name="q_media" type="227" pointer="false"/>
+          <field id="178" name="n_pig" type="227" pointer="false"/>
+          <field id="179" name="n_total" type="227" pointer="false"/>
+          <field id="180" name="m_dup" type="227" pointer="false"/>
+          <field id="181" name="m_mcount" type="227" pointer="false"/>
+          <field id="182" name="nid_c" type="227" pointer="false"/>
+          <field id="183" name="nid_bg" type="227" pointer="false"/>
+          <field id="184" name="q_link" type="227" pointer="false"/>
+        </struct>
+        <struct id="185" name="CompressedPackets_T_Common_Types_Pkg" tagName="kcg_tag_CompressedPackets_T_Common_Types_Pkg">
+          <field id="186" name="PacketHeaders" type="188" pointer="false"/>
+          <field id="187" name="PacketData" type="195" pointer="false"/>
+        </struct>
+        <array id="188" name="Metadata_T_Common_Types_Pkg" baseType="189" size="30"/>
+        <struct id="189" name="MetadataElement_T_Common_Types_Pkg" tagName="kcg_tag_MetadataElement_T_Common_Types_Pkg">
+          <field id="190" name="nid_packet" type="196" pointer="false"/>
+          <field id="191" name="q_dir" type="197" pointer="false"/>
+          <field id="192" name="valid" type="235" pointer="false"/>
+          <field id="193" name="startAddress" type="227" pointer="false"/>
+          <field id="194" name="endAddress" type="227" pointer="false"/>
+        </struct>
+        <array id="195" name="CompressedPacketData_T_Common_Types_Pkg" baseType="227" size="500"/>
+        <typedef id="196" name="NID_PACKET" aliasType="227"/>
+        <enum id="197" name="Q_DIR" tagName="kcg_tag_Q_DIR">
+          <value id="198" name="Q_DIR_Reverse"/>
+          <value id="199" name="Q_DIR_Nominal"/>
+          <value id="200" name="Q_DIR_Both_directions"/>
+        </enum>
+        <macro id="201" name="kcg_assign_array"/>
+        <macro id="202" name="kcg_assign_struct"/>
+        <macro id="203" name="kcg_lnot_uint8"/>
+        <macro id="204" name="kcg_lnot_uint16"/>
+        <macro id="205" name="kcg_lnot_uint32"/>
+        <macro id="206" name="kcg_lnot_uint64"/>
+        <macro id="207" name="kcg_lsl_uint8"/>
+        <macro id="208" name="kcg_lsl_uint16"/>
+        <macro id="209" name="kcg_lsl_uint32"/>
+        <macro id="210" name="kcg_lsl_uint64"/>
+        <macro id="211" name="kcg_true"/>
+        <macro id="212" name="kcg_false"/>
+        <macro id="213" name="kcg_lit_int8"/>
+        <macro id="214" name="kcg_lit_int16"/>
+        <macro id="215" name="kcg_lit_int32"/>
+        <macro id="216" name="kcg_lit_int64"/>
+        <macro id="217" name="kcg_lit_uint8"/>
+        <macro id="218" name="kcg_lit_uint16"/>
+        <macro id="219" name="kcg_lit_uint32"/>
+        <macro id="220" name="kcg_lit_uint64"/>
+        <macro id="221" name="kcg_lit_size"/>
+        <macro id="222" name="kcg_lit_float64"/>
+        <macro id="223" name="kcg_lit_float32"/>
+        <predefType id="224" name="kcg_int8"/>
+        <predefType id="225" name="kcg_int16"/>
+        <predefType id="226" name="kcg_int32"/>
+        <predefType id="227" name="kcg_int64"/>
+        <predefType id="228" name="kcg_uint8"/>
+        <predefType id="229" name="kcg_uint16"/>
+        <predefType id="230" name="kcg_uint32"/>
+        <predefType id="231" name="kcg_uint64"/>
+        <predefType id="232" name="kcg_size"/>
+        <predefType id="233" name="kcg_float64"/>
+        <predefType id="234" name="kcg_float32"/>
+        <predefType id="235" name="kcg_bool"/>
+        <predefType id="236" name="kcg_char"/>
+        <macro id="237" name="KCG_MAPW_CPY"/>
+      </file>
+      <file id="238" name="kcg_consts.h">
+        <macro id="239" name="cDIM_MaxRMessages_Common_Types_Pkg" type="227"/>
+        <macro id="240" name="cMetadataArraySize_Common_Types_Pkg" type="227"/>
+        <macro id="241" name="cDIM_MaxDataElementsInRMessage_Common_Types_Pkg" type="227"/>
+      </file>
+      <file id="242" name="kcg_sensors.h"/>
+      <file id="243" name="kcg_imported_functions.h">
+        <function id="244" name="ScriptedTrack_EnvSim">
+          <parameter id="245" name="actualTrainPos" type="233" pointer="false"/>
+          <parameter id="246" name="radioTrainPos" type="233" pointer="false"/>
+          <parameter id="247" name="baliseMessage" type="171" pointer="true"/>
+          <parameter id="248" name="radioMessage" type="152" pointer="true"/>
+        </function>
+      </file>
+    </c>
+    <map srcId="233" dstId="222" role="wrapped-lit"/>
+    <map srcId="234" dstId="223" role="wrapped-lit"/>
+    <map srcId="232" dstId="221" role="wrapped-lit"/>
+    <map srcId="231" dstId="220" role="wrapped-lit"/>
+    <map srcId="231" dstId="206" role="wrapped-lnot"/>
+    <map srcId="231" dstId="210" role="wrapped-lsl"/>
+    <map srcId="230" dstId="219" role="wrapped-lit"/>
+    <map srcId="230" dstId="205" role="wrapped-lnot"/>
+    <map srcId="230" dstId="209" role="wrapped-lsl"/>
+    <map srcId="229" dstId="218" role="wrapped-lit"/>
+    <map srcId="229" dstId="204" role="wrapped-lnot"/>
+    <map srcId="229" dstId="208" role="wrapped-lsl"/>
+    <map srcId="228" dstId="217" role="wrapped-lit"/>
+    <map srcId="228" dstId="203" role="wrapped-lnot"/>
+    <map srcId="228" dstId="207" role="wrapped-lsl"/>
+    <map srcId="227" dstId="216" role="wrapped-lit"/>
+    <map srcId="226" dstId="215" role="wrapped-lit"/>
+    <map srcId="225" dstId="214" role="wrapped-lit"/>
+    <map srcId="224" dstId="213" role="wrapped-lit"/>
+    <map srcId="195" dstId="112" role="type-use"/>
+    <map srcId="195" dstId="113" role="type-comparison"/>
+    <map srcId="195" dstId="144" role="type-copy"/>
+    <map srcId="189" dstId="120" role="type-use"/>
+    <map srcId="189" dstId="121" role="type-comparison"/>
+    <map srcId="189" dstId="146" role="type-copy"/>
+    <map srcId="188" dstId="116" role="type-use"/>
+    <map srcId="188" dstId="117" role="type-comparison"/>
+    <map srcId="188" dstId="145" role="type-copy"/>
+    <map srcId="171" dstId="124" role="type-use"/>
+    <map srcId="171" dstId="125" role="type-comparison"/>
+    <map srcId="171" dstId="147" role="type-copy"/>
+    <map srcId="152" dstId="128" role="type-use"/>
+    <map srcId="152" dstId="129" role="type-comparison"/>
+    <map srcId="152" dstId="148" role="type-copy"/>
+    <map srcId="185" dstId="132" role="type-use"/>
+    <map srcId="185" dstId="133" role="type-comparison"/>
+    <map srcId="185" dstId="149" role="type-copy"/>
+    <map srcId="174" dstId="136" role="type-use"/>
+    <map srcId="174" dstId="137" role="type-comparison"/>
+    <map srcId="174" dstId="150" role="type-copy"/>
+    <map srcId="155" dstId="140" role="type-use"/>
+    <map srcId="155" dstId="141" role="type-comparison"/>
+    <map srcId="155" dstId="151" role="type-copy"/>
+  </generated>
+  <map modelId="62" generatedId="200"/>
+  <map modelId="61" generatedId="199"/>
+  <map modelId="60" generatedId="198"/>
+  <map modelId="70" generatedId="95" role="context-parameter"/>
+  <map modelId="70" generatedId="94" role="init-method"/>
+  <map modelId="70" generatedId="97" role="context-parameter"/>
+  <map modelId="70" generatedId="96" role="reset-method"/>
+  <map modelId="70" generatedId="99" role="input-struct-parameter"/>
+  <map modelId="72" generatedId="110"/>
+  <map modelId="71" generatedId="109"/>
+  <map modelId="70" generatedId="108" role="input-struct-type"/>
+  <map modelId="70" generatedId="100" role="context-parameter"/>
+  <map modelId="78" generatedId="107"/>
+  <map modelId="77" generatedId="106"/>
+  <map modelId="76" generatedId="105"/>
+  <map modelId="75" generatedId="104"/>
+  <map modelId="74" generatedId="103"/>
+  <map modelId="73" generatedId="102"/>
+  <map modelId="70" generatedId="101" role="context-type"/>
+  <map modelId="70" generatedId="93" role="interface-file"/>
+  <map modelId="70" generatedId="98" role="cycle-method"/>
+  <map modelId="68" generatedId="248"/>
+  <map modelId="67" generatedId="247"/>
+  <map modelId="66" generatedId="246"/>
+  <map modelId="65" generatedId="245"/>
+  <map modelId="64" generatedId="244" role="cycle-method"/>
+  <map modelId="88" generatedId="241"/>
+  <map modelId="86" generatedId="240"/>
+  <map modelId="87" generatedId="239"/>
+  <map modelId="59" generatedId="197"/>
+  <map modelId="58" generatedId="196"/>
+  <map modelId="92" generatedId="195"/>
+  <map modelId="1" generatedId="195"/>
+  <map modelId="7" generatedId="194"/>
+  <map modelId="6" generatedId="193"/>
+  <map modelId="5" generatedId="192"/>
+  <map modelId="4" generatedId="191"/>
+  <map modelId="3" generatedId="190"/>
+  <map modelId="91" generatedId="189"/>
+  <map modelId="2" generatedId="189"/>
+  <map modelId="90" generatedId="188"/>
+  <map modelId="44" generatedId="188"/>
+  <map modelId="40" generatedId="173"/>
+  <map modelId="39" generatedId="172"/>
+  <map modelId="81" generatedId="171"/>
+  <map modelId="38" generatedId="171"/>
+  <map modelId="10" generatedId="154"/>
+  <map modelId="9" generatedId="153"/>
+  <map modelId="83" generatedId="152"/>
+  <map modelId="8" generatedId="152"/>
+  <map modelId="43" generatedId="187"/>
+  <map modelId="42" generatedId="186"/>
+  <map modelId="89" generatedId="185"/>
+  <map modelId="41" generatedId="185"/>
+  <map modelId="21" generatedId="184"/>
+  <map modelId="20" generatedId="183"/>
+  <map modelId="19" generatedId="182"/>
+  <map modelId="18" generatedId="181"/>
+  <map modelId="17" generatedId="180"/>
+  <map modelId="16" generatedId="179"/>
+  <map modelId="15" generatedId="178"/>
+  <map modelId="14" generatedId="177"/>
+  <map modelId="13" generatedId="176"/>
+  <map modelId="12" generatedId="175"/>
+  <map modelId="82" generatedId="174"/>
+  <map modelId="11" generatedId="174"/>
+  <map modelId="37" generatedId="170"/>
+  <map modelId="36" generatedId="169"/>
+  <map modelId="35" generatedId="168"/>
+  <map modelId="34" generatedId="167"/>
+  <map modelId="33" generatedId="166"/>
+  <map modelId="32" generatedId="165"/>
+  <map modelId="31" generatedId="164"/>
+  <map modelId="30" generatedId="163"/>
+  <map modelId="29" generatedId="162"/>
+  <map modelId="28" generatedId="161"/>
+  <map modelId="27" generatedId="160"/>
+  <map modelId="26" generatedId="159"/>
+  <map modelId="25" generatedId="158"/>
+  <map modelId="24" generatedId="157"/>
+  <map modelId="23" generatedId="156"/>
+  <map modelId="84" generatedId="155"/>
+  <map modelId="22" generatedId="155"/>
+  <map modelId="46" generatedId="236"/>
+  <map modelId="45" generatedId="235"/>
+  <map modelId="56" generatedId="233"/>
+  <map modelId="55" generatedId="234"/>
+  <map modelId="57" generatedId="232"/>
+  <map modelId="54" generatedId="231"/>
+  <map modelId="53" generatedId="230"/>
+  <map modelId="52" generatedId="229"/>
+  <map modelId="51" generatedId="228"/>
+  <map modelId="50" generatedId="227"/>
+  <map modelId="49" generatedId="226"/>
+  <map modelId="48" generatedId="225"/>
+  <map modelId="47" generatedId="224"/>
+</mapping>
+<!--$********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
+** mapping.xml
+** Generation date: 2023-10-09T16:07:18
+*************************************************************$-->

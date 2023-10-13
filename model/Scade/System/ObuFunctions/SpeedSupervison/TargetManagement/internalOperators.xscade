@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" name="internalOperators">
+	<declarations>
+		<Operator name="calcMATargets" href="calcMATargets.xscade"/>
+		<Operator name="extractTargetsFromMRSPInt" href="extractTargetsFromMRSPInt.xscade"/>
+		<Operator name="extractTargetsFromMRSP" href="extractTargetsFromMRSP.xscade"/>
+		<Operator name="removeOverpassedMRSPint" href="removeOverpassedMRSPint.xscade"/>
+		<Operator name="removeOverpassedMRSP" href="removeOverpassedMRSP.xscade"/>
+	</declarations>
+	<pragmas>
+		<ed:Package oid="!ed/afb73/600D/1E78/54f0a0f01089" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+			<diagrams>
+				<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/afb74/600D/1E78/54f0a0f05d3a" blockKind="constants"/>
+				<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/afb75/600D/1E78/54f0a0f02000" blockKind="types"/>
+				<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/afb76/600D/1E78/54f0a0f032d1" blockKind="sensors"/>
+			</diagrams>
+		</ed:Package>
+	</pragmas>
+</Package>
