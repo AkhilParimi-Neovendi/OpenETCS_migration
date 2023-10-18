@@ -1,0 +1,3 @@
+-target_dir "C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/EnvSim_KCG" -target C -static -name_length 100 -significance_length 100 -user_config "./user_macros.h" -debug 
+-root Testbench_EnvSim::ROOT_Simulation
+"C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/EnvSim_KCG/scade_model_without_unused.scade"

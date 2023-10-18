@@ -1,0 +1,9 @@
+$************** ANSYS(R) SCADE Suite(R) - SCADETOC - Version 2022 R2 (build 20220513T211013) **************
+** Generation date: 2023-10-13T16:06:09
+** Command: scade -code "C:\DBC\OpenETCS\modeling-Scade65Migration\model\Scade\System\OBU_PreIntegrations\Testbench_Integration\Testbench_Integration.etp" -root Testbench_Integration::ROOT_Integration -conf SimuWithoutDebug -sim
+*************************************************************$
+*** System Error (PERROR): Errors occur during execution of: "C:\Program Files\ANSYS Inc\v222\SCADE\SCADE\bin\kcg662.exe"  -config "C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/SimuWithoutDebug/config.txt".
+$************** ANSYS(R) SCADE Suite(R) - SCADETOC - Version 2022 R2 (build 20220513T211013) **************
+** Generation date: 2023-10-13T16:07:17
+** sc2c.log
+*************************************************************$

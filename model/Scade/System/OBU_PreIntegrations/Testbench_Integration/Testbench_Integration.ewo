@@ -5,7 +5,7 @@
 "C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\Radio\\RCM_Types\\RCM_Types.etp"="KCG" 
 "C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\Radio\\MoRC\\MoRC.etp"="Simulation" 
 "C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\ETCS_Messaging\\TrackMessages\\TrackMessages.etp"="KCG" 
-"C:\\DBC\\OpenETCS\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\Testbench_Integration\\Testbench_Integration.etp"="testsim" 
+"C:\\DBC\\OpenETCS\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\Testbench_Integration\\Testbench_Integration.etp"="EnvSim_KCG" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Metrics and Rules Checker]
 
@@ -13,7 +13,7 @@
 "C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\Radio\\RCM_Types\\RCM_Types.etp"="KCG" 
 "C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\Radio\\MoRC\\MoRC.etp"="KCG" 
 "C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\ETCS_Messaging\\TrackMessages\\TrackMessages.etp"="KCG" 
-"C:\\DBC\\OpenETCS\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\Testbench_Integration\\Testbench_Integration.etp"="Simulation" 
+"C:\\DBC\\OpenETCS\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\Testbench_Integration\\Testbench_Integration.etp"="testsim" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Reporter]
 
@@ -29,7 +29,7 @@
 "C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\Radio\\RCM_Types\\RCM_Types.etp"="KCG" 
 "C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\Radio\\MoRC\\MoRC.etp"="KCG" 
 "C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\ETCS_Messaging\\TrackMessages\\TrackMessages.etp"="KCG" 
-"C:\\DBC\\OpenETCS\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\Testbench_Integration\\Testbench_Integration.etp"="Simulation" 
+"C:\\DBC\\OpenETCS\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\Testbench_Integration\\Testbench_Integration.etp"="testsim" 
 
 [STUDIO\Workspace]
 
@@ -53,3 +53,7 @@
 [SCADE\Generator\Tool]
 
 "PragmaTarget"="C" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Test Tool]
+
+"C:\\DBC\\OpenETCS\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\Testbench_Integration\\Testbench_Integration.etp"="Simulation" 

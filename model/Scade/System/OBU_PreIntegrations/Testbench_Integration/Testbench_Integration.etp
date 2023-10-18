@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="675" defaultConfiguration="21">
+<Project id="1" oid_count="685" defaultConfiguration="21">
 	<props>
 		<Prop id="10" name="@STUDIO:PRODUCT">
 			<value>SC</value>
@@ -257,16 +257,16 @@
 			<configuration>21</configuration>
 		</Prop>
 		<Prop id="122" name="@GENERATOR:OBSERVED_NODES">
-			<value>Procedures::Procedure_Train_Trip</value>
-			<value>Procedures::Procedure_Start_L1_L2_L3</value>
-			<value>Procedures::Procedure_Train_Reversing</value>
 			<value>Procedures::Procedure_StartOfMission</value>
-			<value>Procedures::Procedure_SH_Ordered_By_Track</value>
-			<value>Procedures::Procedure_OnSight</value>
-			<value>Procedures::Procedure_With_Mode_Profile</value>
 			<value>Procedures::Procedure_SH_Initiated_By_Driver</value>
+			<value>Procedures::Procedure_Start_L1_L2_L3</value>
 			<value>Procedures::Procedure_LimitedSupervision</value>
+			<value>Procedures::Procedure_With_Mode_Profile</value>
+			<value>Procedures::Procedure_OnSight</value>
+			<value>Procedures::Procedure_Train_Trip</value>
+			<value>Procedures::Procedure_Train_Reversing</value>
 			<value>Procedures::SH_Initiated_By_Driver_On</value>
+			<value>Procedures::Procedure_SH_Ordered_By_Track</value>
 			<configuration>21</configuration>
 		</Prop>
 		<Prop id="124" name="@GENERATOR:NOT_OBSERVED_NODES">
@@ -2008,7 +2008,7 @@
 			<configuration>21</configuration>
 		</Prop>
 		<Prop id="114" name="@GENERATOR:OBSERVE_MODE">
-			<value>5</value>
+			<value>4</value>
 			<configuration>21</configuration>
 		</Prop>
 		<Prop id="199" name="@GENERATOR:OBSERVED_NODES">
@@ -4131,10 +4131,6 @@
 			<value>..\..\OBU_for_ITEA-Review\PositionSimulation\RBL_Settings.rgfx</value>
 			<configuration>217</configuration>
 		</Prop>
-		<Prop id="226" name="@GENERATOR:EXPAND_MODE">
-			<value>2</value>
-			<configuration>217</configuration>
-		</Prop>
 		<Prop id="227" name="@GENERATOR:OBSERVE_MODE">
 			<value>4</value>
 			<configuration>217</configuration>
@@ -5681,11 +5677,6 @@
 			<value>true</value>
 			<configuration>217</configuration>
 		</Prop>
-		<Prop id="234" name="@GENERATOR:DISPLAY_ENABLED_PANELS">
-			<value>..\..\DMI_Control\SCADE Display\DMI.sgfx,Co-simulation</value>
-			<value>..\DebugPanel\MainScreen.rgfx,Co-simulation</value>
-			<configuration>217</configuration>
-		</Prop>
 		<Prop id="236" name="@GENERATOR:OPTLEVEL">
 			<value>3</value>
 			<configuration>217</configuration>
@@ -5984,10 +5975,6 @@
 		<Prop id="337" name="@GENERATOR:GENERATOR">
 			<value>C QUAL661</value>
 			<configuration>323</configuration>
-		</Prop>
-		<Prop id="338" name="@GENERATOR:DEBUG">
-			<value>true</value>
-			<configuration>21</configuration>
 		</Prop>
 		<Prop id="340" name="@GENERATOR:ROOTNODE">
 			<value>Testbench_Integration::ROOT_Integration</value>
@@ -13162,10 +13149,6 @@
 			<value>true</value>
 			<configuration>650</configuration>
 		</Prop>
-		<Prop id="654" name="@GENERATOR:DEBUG">
-			<value>true</value>
-			<configuration>650</configuration>
-		</Prop>
 		<Prop id="655" name="@GENERATOR:DISPLAY_DISABLED_PANELS">
 			<value>..\DebugPanel\MainScreen.rgfx</value>
 			<value>..\..\DMI_Control\SCADE Display\DMI.sgfx</value>
@@ -13173,7 +13156,7 @@
 			<configuration>650</configuration>
 		</Prop>
 		<Prop id="656" name="@GENERATOR:OBSERVE_MODE">
-			<value>5</value>
+			<value>4</value>
 			<configuration>650</configuration>
 		</Prop>
 		<Prop id="657" name="@GENERATOR:STATE_VECTOR">
@@ -14914,19 +14897,6 @@
 			<value>TargetLimits_Pkg::d_P_LX</value>
 			<configuration>650</configuration>
 		</Prop>
-		<Prop id="659" name="@GENERATOR:OBSERVED_NODES">
-			<value>Procedures::Procedure_Train_Trip</value>
-			<value>Procedures::Procedure_Start_L1_L2_L3</value>
-			<value>Procedures::Procedure_Train_Reversing</value>
-			<value>Procedures::Procedure_StartOfMission</value>
-			<value>Procedures::Procedure_SH_Ordered_By_Track</value>
-			<value>Procedures::Procedure_OnSight</value>
-			<value>Procedures::Procedure_With_Mode_Profile</value>
-			<value>Procedures::Procedure_SH_Initiated_By_Driver</value>
-			<value>Procedures::Procedure_LimitedSupervision</value>
-			<value>Procedures::SH_Initiated_By_Driver_On</value>
-			<configuration>650</configuration>
-		</Prop>
 		<Prop id="660" name="@GENERATOR:SIGNIFICANCE_LENGTH">
 			<value>300</value>
 			<configuration>650</configuration>
@@ -14976,6 +14946,51 @@
 		<Prop id="675" name="@GENERATOR:STATIC">
 			<value>true</value>
 			<configuration>650</configuration>
+		</Prop>
+		<Prop id="679" name="@STUDIO:TOOLCONF">
+			<value>Test Tool</value>
+			<value>21</value>
+			<value>198</value>
+			<value>217</value>
+			<value>243</value>
+			<value>260</value>
+			<value>272</value>
+			<value>284</value>
+			<value>323</value>
+			<value>341</value>
+			<value>395</value>
+			<value>480</value>
+			<value>498</value>
+			<value>513</value>
+			<value>531</value>
+			<value>554</value>
+			<value>573</value>
+			<value>592</value>
+			<value>622</value>
+			<value>650</value>
+		</Prop>
+		<Prop id="680" name="@GENERATOR:OBSERVED_NODES">
+			<value>D_behavior</value>
+			<value>EVC</value>
+			<configuration>650</configuration>
+		</Prop>
+		<Prop id="681" name="@GENERATOR:DISPLAY_DISABLED_PANELS">
+			<value>..\DebugPanel\MainScreen.rgfx</value>
+			<value>..\..\DMI_Control\SCADE Display\DMI.sgfx</value>
+			<value>..\DebugPanel\graphical_panel.rgfx</value>
+			<configuration>217</configuration>
+		</Prop>
+		<Prop id="682" name="@GENERATOR:SKIP_COMMENTED">
+			<value>true</value>
+			<configuration>217</configuration>
+		</Prop>
+		<Prop id="683" name="@SIMULATOR:CPU_TYPE">
+			<value>win64</value>
+			<configuration>217</configuration>
+		</Prop>
+		<Prop id="685" name="@GENERATOR:DEBUG">
+			<value>true</value>
+			<configuration>573</configuration>
 		</Prop>
 	</props>
 	<roots>
