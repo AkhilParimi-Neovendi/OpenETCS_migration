@@ -59,21 +59,21 @@ typedef struct {
   DMI_Level_Data_T_DMI_Messages_Bothways_Pkg /* _L28/ */ _L28;
   DMI_to_EVC_Message_T_API_DMI_Pkg /* _L29/ */ _L29;
   DMI_to_EVC_Message_int_T_API_DMI_Pkg /* _L31/ */ _L31;
-  array_int64_4 /* _L33/ */ _L33;
-  array_int64_261 /* _L34/ */ _L34;
-  array_int64_3 /* _L36/ */ _L36;
-  array_int64_11 /* _L37/ */ _L37;
-  array_int64_3 /* _L38/ */ _L38;
-  array_int64_2 /* _L39/ */ _L39;
-  array_int64_4 /* _L40/ */ _L40;
-  array_int64_3 /* _L41/ */ _L41;
-  array_int64_9 /* _L42/ */ _L42;
-  array_int64_3 /* _L43/ */ _L43;
-  array_int64_3 /* _L44/ */ _L44;
-  array_int64_4 /* _L45/ */ _L45;
-  kcg_int64 /* _L49/ */ _L49;
+  array_int32_4 /* _L33/ */ _L33;
+  array_int32_261 /* _L34/ */ _L34;
+  array_int32_3 /* _L36/ */ _L36;
+  array_int32_11 /* _L37/ */ _L37;
+  array_int32_3 /* _L38/ */ _L38;
+  array_int32_2 /* _L39/ */ _L39;
+  array_int32_4 /* _L40/ */ _L40;
+  array_int32_3 /* _L41/ */ _L41;
+  array_int32_9 /* _L42/ */ _L42;
+  array_int32_3 /* _L43/ */ _L43;
+  array_int32_3 /* _L44/ */ _L44;
+  array_int32_4 /* _L45/ */ _L45;
+  kcg_int32 /* _L49/ */ _L49;
   kcg_bool /* _L48/ */ _L48;
-  kcg_int64 /* _L47/ */ _L47;
+  kcg_int32 /* _L47/ */ _L47;
 } outC_CAST_int_to_DMI_to_EVC_Messages;
 
 /* ===========  node initialization and cycle functions  =========== */

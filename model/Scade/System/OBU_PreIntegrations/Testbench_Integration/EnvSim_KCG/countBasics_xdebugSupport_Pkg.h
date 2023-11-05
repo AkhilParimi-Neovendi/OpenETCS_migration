@@ -15,7 +15,7 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   kcg_bool /* continue/ */ _1_continue;
-  kcg_int64 /* count/ */ count;
+  kcg_int32 /* count/ */ count;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
@@ -24,13 +24,13 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   MetadataElement_T_Common_Types_Pkg /* _L1/ */ _L1;
   kcg_bool /* _L2/ */ _L2;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L6/ */ _L6;
-  kcg_int64 /* _L7/ */ _L7;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L6/ */ _L6;
+  kcg_int32 /* _L7/ */ _L7;
   NID_PACKET /* _L8/ */ _L8;
-  kcg_int64 /* _L9/ */ _L9;
+  kcg_int32 /* _L9/ */ _L9;
   kcg_bool /* _L10/ */ _L10;
 } outC_countBasics_xdebugSupport_Pkg;
 
@@ -38,7 +38,7 @@ typedef struct {
 /* xdebugSupport_Pkg::countBasics/ */
 extern void countBasics_xdebugSupport_Pkg(
   /* accu/ */
-  kcg_int64 accu,
+  kcg_int32 accu,
   /* element/ */
   MetadataElement_T_Common_Types_Pkg *element,
   outC_countBasics_xdebugSupport_Pkg *outC);

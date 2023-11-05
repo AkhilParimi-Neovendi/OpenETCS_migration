@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _DigitSpeedManager_DMI_Control_Pkg_Sub_func_Speed_H_
 #define _DigitSpeedManager_DMI_Control_Pkg_Sub_func_Speed_H_
@@ -15,10 +15,10 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_float64 /* SpeedDigitOne/ */ SpeedDigitOne;
-  kcg_float64 /* SpeedDigitTwo/ */ SpeedDigitTwo;
-  kcg_float64 /* SpeedDigitThree/ */ SpeedDigitThree;
-  kcg_float64 /* TrainSpeed/ */ TrainSpeed;
+  kcg_float32 /* SpeedDigitOne/ */ SpeedDigitOne;
+  kcg_float32 /* SpeedDigitTwo/ */ SpeedDigitTwo;
+  kcg_float32 /* SpeedDigitThree/ */ SpeedDigitThree;
+  kcg_float32 /* TrainSpeed/ */ TrainSpeed;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -27,15 +27,15 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   DMI_Dynamic_T_DMI_Messages_EVC_to_DMI_Pkg /* _L1/ */ _L1;
-  kcg_float64 /* _L8/ */ _L8;
-  kcg_float64 /* _L9/ */ _L9;
-  kcg_float64 /* _L10/ */ _L10;
+  kcg_float32 /* _L8/ */ _L8;
+  kcg_float32 /* _L9/ */ _L9;
+  kcg_float32 /* _L10/ */ _L10;
   V_internal_Type_Obu_BasicTypes_Pkg /* _L14/ */ _L14;
-  kcg_float64 /* _L15/ */ _L15;
-  kcg_int64 /* _L16/ */ _L16;
+  kcg_float32 /* _L15/ */ _L15;
+  kcg_int32 /* _L16/ */ _L16;
   kcg_bool /* _L17/ */ _L17;
-  kcg_int64 /* _L18/ */ _L18;
-  kcg_int64 /* _L19/ */ _L19;
+  kcg_int32 /* _L18/ */ _L18;
+  kcg_int32 /* _L19/ */ _L19;
 } outC_DigitSpeedManager_DMI_Control_Pkg_Sub_func_Speed;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -60,6 +60,6 @@ extern void DigitSpeedManager_init_DMI_Control_Pkg_Sub_func_Speed(
 #endif /* _DigitSpeedManager_DMI_Control_Pkg_Sub_func_Speed_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** DigitSpeedManager_DMI_Control_Pkg_Sub_func_Speed.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

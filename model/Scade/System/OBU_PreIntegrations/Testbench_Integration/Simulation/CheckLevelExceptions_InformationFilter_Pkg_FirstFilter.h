@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _CheckLevelExceptions_InformationFilter_Pkg_FirstFilter_H_
 #define _CheckLevelExceptions_InformationFilter_Pkg_FirstFilter_H_
@@ -81,7 +81,7 @@ typedef struct {
   kcg_bool /* _L25/ */ _L25;
   kcg_bool /* _L26/ */ _L26;
   kcg_bool /* _L27/ */ _L27;
-  kcg_int64 /* _L28/ */ _L28;
+  kcg_int32 /* _L28/ */ _L28;
   kcg_bool /* _L29/ */ _L29;
   kcg_bool /* _L31/ */ _L31;
   kcg_bool /* _L30/ */ _L30;
@@ -127,7 +127,7 @@ typedef struct {
   kcg_bool /* _L118/ */ _L118;
   kcg_bool /* _L117/ */ _L117;
   kcg_bool /* _L119/ */ _L119;
-  kcg_int64 /* _L120/ */ _L120;
+  kcg_int32 /* _L120/ */ _L120;
   kcg_bool /* _L121/ */ _L121;
   kcg_bool /* _L122/ */ _L122;
   kcg_bool /* _L123/ */ _L123;
@@ -174,7 +174,7 @@ extern void CheckLevelExceptions_InformationFilter_Pkg_FirstFilter(
   /* inEmergencyBrakeActive/ */
   kcg_bool inEmergencyBrakeActive,
   /* inLastAckTextMessageId/ */
-  kcg_int64 inLastAckTextMessageId,
+  kcg_int32 inLastAckTextMessageId,
   /* inPendingNTCTransition/ */
   kcg_bool inPendingNTCTransition,
   /* inSPPAndGradientOnBoard/ */
@@ -198,6 +198,6 @@ extern void CheckLevelExceptions_init_InformationFilter_Pkg_FirstFilter(
 #endif /* _CheckLevelExceptions_InformationFilter_Pkg_FirstFilter_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CheckLevelExceptions_InformationFilter_Pkg_FirstFilter.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _CAST_int_to_DMI_trackCondition_DATA_Variables_H_
 #define _CAST_int_to_DMI_trackCondition_DATA_Variables_H_
@@ -25,10 +25,10 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   DMI_trackCondition_int_array_T /* _L11/ */ _L11;
   DMI_trackCondition_T_DMI_Types_Pkg /* _L12/ */ _L12;
-  kcg_int64 /* _L13/ */ _L13;
+  kcg_int32 /* _L13/ */ _L13;
   DMI_trackConditionArray_T_DMI_Types_Pkg /* _L14/ */ _L14;
-  array_int64_32 /* _L15/ */ _L15;
-  array_int64_32 /* _L16/ */ _L16;
+  array_int32_32 /* _L15/ */ _L15;
+  array_int32_32 /* _L16/ */ _L16;
 } outC_CAST_int_to_DMI_trackCondition_DATA_Variables;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -53,6 +53,6 @@ extern void CAST_int_to_DMI_trackCondition_init_DATA_Variables(
 #endif /* _CAST_int_to_DMI_trackCondition_DATA_Variables_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_int_to_DMI_trackCondition_DATA_Variables.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

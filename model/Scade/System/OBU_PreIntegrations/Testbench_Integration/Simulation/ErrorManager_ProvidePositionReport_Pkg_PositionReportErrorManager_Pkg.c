@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -74,7 +74,7 @@ void ErrorManager_ProvidePositionReport_Pkg_PositionReportErrorManager_Pkg(
   kcg_copy_ErrorMessage_T_ProvidePositionReport_Pkg(&outC->_L50[6], &outC->_L35);
   kcg_copy_ErrorMessage_T_ProvidePositionReport_Pkg(&outC->_L50[7], &outC->_L29);
   kcg_copy_ErrorMessage_T_ProvidePositionReport_Pkg(&outC->_L50[8], &outC->_L34);
-  kcg_copy__35_array(&outC->errorVector, &outC->_L50);
+  kcg_copy__34_array(&outC->errorVector, &outC->_L50);
 }
 
 #ifndef KCG_USER_DEFINED_INIT
@@ -144,6 +144,6 @@ void ErrorManager_reset_ProvidePositionReport_Pkg_PositionReportErrorManager_Pkg
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ErrorManager_ProvidePositionReport_Pkg_PositionReportErrorManager_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

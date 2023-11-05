@@ -26,7 +26,7 @@ typedef struct {
   Q_LGTLOC /* _L5/ */ _L5;
   D_LOC /* _L4/ */ _L4;
   kcg_bool /* _L3/ */ _L3;
-  kcg_int64 /* _L20/ */ _L20;
+  kcg_int32 /* _L20/ */ _L20;
   P058_section_enum_T_TM /* _L21/ */ _L21;
 } outC_C_P058_to_legacy_loop_TM_conversions;
 
@@ -34,7 +34,7 @@ typedef struct {
 /* TM_conversions::C_P058_to_legacy_loop/ */
 extern void C_P058_to_legacy_loop_TM_conversions(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* P058_in/ */
   P058_OBU_sectionlist_enum_T_TM *P058_in,
   outC_C_P058_to_legacy_loop_TM_conversions *outC);

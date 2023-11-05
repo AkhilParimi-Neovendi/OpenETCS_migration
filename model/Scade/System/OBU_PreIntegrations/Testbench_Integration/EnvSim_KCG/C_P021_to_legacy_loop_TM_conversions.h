@@ -23,7 +23,7 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   P021_OBU_sectionlist_enum_T_TM /* _L1/ */ _L1;
   P21_GradientProfile_T_Packet_Types_Pkg /* _L2/ */ _L2;
-  kcg_int64 /* _L20/ */ _L20;
+  kcg_int32 /* _L20/ */ _L20;
   P021_section_enum_T_TM /* _L21/ */ _L21;
   P021_OBU_T_TM /* _L132/ */ _L132;
   Q_DIR /* _L133/ */ _L133;
@@ -38,7 +38,7 @@ typedef struct {
 /* TM_conversions::C_P021_to_legacy_loop/ */
 extern void C_P021_to_legacy_loop_TM_conversions(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* P021_in/ */
   P021_OBU_T_TM *P021_in,
   /* P021_section_in/ */

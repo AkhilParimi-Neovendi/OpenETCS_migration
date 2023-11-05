@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _nextGen_MsgHdr136_radioOutput_Pkg_H_
 #define _nextGen_MsgHdr136_radioOutput_Pkg_H_
@@ -23,7 +23,7 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   Radio_TrainTrack_Header_T_Radio_Types_Pkg /* _L1/ */ _L1;
   M_136_T_TM_radio_messages /* _L2/ */ _L2;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L12/ */ _L12;
   kcg_bool /* _L13/ */ _L13;
   NID_MESSAGE /* _L14/ */ _L14;
   T_TRAIN /* _L15/ */ _L15;
@@ -52,6 +52,6 @@ extern void nextGen_MsgHdr136_init_radioOutput_Pkg(
 #endif /* _nextGen_MsgHdr136_radioOutput_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** nextGen_MsgHdr136_radioOutput_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

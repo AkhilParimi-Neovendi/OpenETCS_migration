@@ -30,16 +30,16 @@ typedef struct {
   Q_GDIR /* IfBlock1:else:then:_L3/ */ _L3_then_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L5/ */ _L5_then_else_IfBlock1;
   kcg_bool /* error/ */ error;
-  kcg_int64 /* q_gdir_in/ */ q_gdir_in;
+  kcg_int32 /* q_gdir_in/ */ q_gdir_in;
   kcg_bool /* _L13/ */ _L13;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L12/ */ _L12;
 } outC_CAST_Int_to_Q_GDIR_TM_conversions;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* TM_conversions::CAST_Int_to_Q_GDIR/ */
 extern void CAST_Int_to_Q_GDIR_TM_conversions(
   /* q_gdir_int/ */
-  kcg_int64 q_gdir_int,
+  kcg_int32 q_gdir_int,
   outC_CAST_Int_to_Q_GDIR_TM_conversions *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

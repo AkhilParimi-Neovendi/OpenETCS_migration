@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -35,12 +35,12 @@ void Position_In_Ack_Area_init_Acknowledgement(
 {
   outC->_L12 = kcg_true;
   outC->_L11 = kcg_true;
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
   outC->_L9 = kcg_true;
   outC->Position_In_Ack_Area = kcg_true;
 }
@@ -58,6 +58,6 @@ void Position_In_Ack_Area_reset_Acknowledgement(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Position_In_Ack_Area_Acknowledgement.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

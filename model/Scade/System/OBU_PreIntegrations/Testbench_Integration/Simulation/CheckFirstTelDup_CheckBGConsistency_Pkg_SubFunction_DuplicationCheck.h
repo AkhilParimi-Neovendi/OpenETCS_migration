@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _CheckFirstTelDup_CheckBGConsistency_Pkg_SubFunction_DuplicationCheck_H_
 #define _CheckFirstTelDup_CheckBGConsistency_Pkg_SubFunction_DuplicationCheck_H_
@@ -28,14 +28,14 @@ typedef struct {
   N_TOTAL /* _L23/ */ _L23;
   TelegramHeader_T_BG_Types_Pkg /* _L22/ */ _L22;
   N_PIG /* _L21/ */ _L21;
-  kcg_int64 /* _L20/ */ _L20;
+  kcg_int32 /* _L20/ */ _L20;
   kcg_bool /* _L19/ */ _L19;
-  kcg_int64 /* _L18/ */ _L18;
+  kcg_int32 /* _L18/ */ _L18;
   kcg_bool /* _L17/ */ _L17;
   kcg_bool /* _L16/ */ _L16;
-  kcg_int64 /* _L15/ */ _L15;
-  kcg_int64 /* _L24/ */ _L24;
-  kcg_int64 /* _L25/ */ _L25;
+  kcg_int32 /* _L15/ */ _L15;
+  kcg_int32 /* _L24/ */ _L24;
+  kcg_int32 /* _L25/ */ _L25;
   M_DUP /* _L26/ */ _L26;
   M_DUP /* _L28/ */ _L28;
   M_DUP /* _L29/ */ _L29;
@@ -68,6 +68,6 @@ extern void CheckFirstTelDup_init_CheckBGConsistency_Pkg_SubFunction_Duplication
 #endif /* _CheckFirstTelDup_CheckBGConsistency_Pkg_SubFunction_DuplicationCheck_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CheckFirstTelDup_CheckBGConsistency_Pkg_SubFunction_DuplicationCheck.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

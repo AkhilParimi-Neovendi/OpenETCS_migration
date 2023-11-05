@@ -17,7 +17,7 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   kcg_bool /* goOn/ */ goOn;
-  kcg_int64 /* m/ */ m;
+  kcg_int32 /* m/ */ m;
   V_internal_Type_Obu_BasicTypes_Pkg /* v/ */ v;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */

@@ -14,23 +14,23 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* nid_packet/ */ nid_packet;
+  kcg_int32 /* nid_packet/ */ nid_packet;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L1/ */ _L1;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L4/ */ _L4;
 } outC_T_extract_nid_packet_from_metadata_selector_TM;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* TM::T_extract_nid_packet_from_metadata_selector/ */
 extern void T_extract_nid_packet_from_metadata_selector_TM(
   /* Metadata_in/ */
-  kcg_int64 Metadata_in,
+  kcg_int32 Metadata_in,
   outC_T_extract_nid_packet_from_metadata_selector_TM *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

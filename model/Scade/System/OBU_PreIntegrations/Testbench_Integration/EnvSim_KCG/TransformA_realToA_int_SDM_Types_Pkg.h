@@ -22,9 +22,9 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   A_internal_real_Type_SDM_Types_Pkg /* _L1/ */ _L1;
-  kcg_float64 /* _L3/ */ _L3;
-  kcg_float64 /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_float32 /* _L3/ */ _L3;
+  kcg_float32 /* _L4/ */ _L4;
+  kcg_int32 /* _L5/ */ _L5;
 } outC_TransformA_realToA_int_SDM_Types_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

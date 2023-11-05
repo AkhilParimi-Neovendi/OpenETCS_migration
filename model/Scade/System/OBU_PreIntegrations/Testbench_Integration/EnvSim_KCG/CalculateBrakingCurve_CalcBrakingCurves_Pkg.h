@@ -31,9 +31,9 @@ typedef struct {
   kcg_bool every;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L9/ */ _L9;
+  kcg_int32 /* _L9/ */ _L9;
   _10_array /* _L11/ */ _L11;
-  array_float64_113 /* _L12/ */ _L12;
+  array_float32_113 /* _L12/ */ _L12;
   ASafe_T_CalcBrakingCurves_types /* _L13/ */ _L13;
   L_internal_real_Type_SDM_Types_Pkg /* _L15/ */ _L15;
   BCAccumulator_type_CalcBrakingCurves_Pkg /* _L19/ */ _L19;

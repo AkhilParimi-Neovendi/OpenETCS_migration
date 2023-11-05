@@ -28,12 +28,12 @@ typedef struct {
   TelegramHeader_T_BG_Types_Pkg /* _L1/ */ _L1;
   N_TOTAL /* _L2/ */ _L2;
   N_PIG /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L5/ */ _L5;
   kcg_bool /* _L6/ */ _L6;
   kcg_bool /* _L7/ */ _L7;
   kcg_bool /* _L8/ */ _L8;
-  kcg_int64 /* _L9/ */ _L9;
+  kcg_int32 /* _L9/ */ _L9;
 } outC_CheckFirstTelNotDup_CheckBGConsistency_Pkg_SubFunction_DuplicationCheck;
 
 /* ===========  node initialization and cycle functions  =========== */

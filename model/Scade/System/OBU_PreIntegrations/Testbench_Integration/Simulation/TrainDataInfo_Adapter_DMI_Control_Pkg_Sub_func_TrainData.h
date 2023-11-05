@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _TrainDataInfo_Adapter_DMI_Control_Pkg_Sub_func_TrainData_H_
 #define _TrainDataInfo_Adapter_DMI_Control_Pkg_Sub_func_TrainData_H_
@@ -18,13 +18,13 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* TrainCategoryIndex/ */ TrainCategoryIndex;
-  kcg_int64 /* AxleLoadIndex/ */ AxleLoadIndex;
-  kcg_float64 /* TrainLenght/ */ TrainLenght;
-  kcg_float64 /* MaxSpeed/ */ MaxSpeed;
-  kcg_int64 /* LoadingGougeIndex/ */ LoadingGougeIndex;
-  kcg_int64 /* AirtightIndex/ */ AirtightIndex;
-  kcg_float64 /* BrakePerc/ */ BrakePerc;
+  kcg_int32 /* TrainCategoryIndex/ */ TrainCategoryIndex;
+  kcg_int32 /* AxleLoadIndex/ */ AxleLoadIndex;
+  kcg_float32 /* TrainLenght/ */ TrainLenght;
+  kcg_float32 /* MaxSpeed/ */ MaxSpeed;
+  kcg_int32 /* LoadingGougeIndex/ */ LoadingGougeIndex;
+  kcg_int32 /* AirtightIndex/ */ AirtightIndex;
+  kcg_float32 /* BrakePerc/ */ BrakePerc;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -45,13 +45,13 @@ typedef struct {
   M_AXLELOADCAT /* _L8/ */ _L8;
   M_AIRTIGHT /* _L9/ */ _L9;
   M_LOADINGGAUGE /* _L10/ */ _L10;
-  kcg_int64 /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
-  kcg_float64 /* _L13/ */ _L13;
-  kcg_float64 /* _L14/ */ _L14;
-  kcg_int64 /* _L15/ */ _L15;
-  kcg_int64 /* _L16/ */ _L16;
-  kcg_float64 /* _L17/ */ _L17;
+  kcg_int32 /* _L11/ */ _L11;
+  kcg_int32 /* _L12/ */ _L12;
+  kcg_float32 /* _L13/ */ _L13;
+  kcg_float32 /* _L14/ */ _L14;
+  kcg_int32 /* _L15/ */ _L15;
+  kcg_int32 /* _L16/ */ _L16;
+  kcg_float32 /* _L17/ */ _L17;
 } outC_TrainDataInfo_Adapter_DMI_Control_Pkg_Sub_func_TrainData;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -76,6 +76,6 @@ extern void TrainDataInfo_Adapter_init_DMI_Control_Pkg_Sub_func_TrainData(
 #endif /* _TrainDataInfo_Adapter_DMI_Control_Pkg_Sub_func_TrainData_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** TrainDataInfo_Adapter_DMI_Control_Pkg_Sub_func_TrainData.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

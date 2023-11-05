@@ -14,29 +14,29 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* element/ */ element;
+  kcg_int32 /* element/ */ element;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   P005_sections_array_flat_T_TM /* _L2/ */ _L2;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L6/ */ _L6;
 } outC_C_P005_extract_el_section_TM_lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* TM_lib_internal::C_P005_extract_el_section/ */
 extern void C_P005_extract_el_section_TM_lib_internal(
   /* offset/ */
-  kcg_int64 offset,
+  kcg_int32 offset,
   /* flat/ */
   P005_sections_array_flat_T_TM *flat,
   /* modulo/ */
-  kcg_int64 modulo,
+  kcg_int32 modulo,
   outC_C_P005_extract_el_section_TM_lib_internal *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

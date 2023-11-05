@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _ConvertP011_RBC_Model_Pkg_TrainTrackMsgConversion_H_
 #define _ConvertP011_RBC_Model_Pkg_TrainTrackMsgConversion_H_
@@ -38,8 +38,8 @@ typedef struct {
   N_ITER /* _L3/ */ _L3;
   P011_ntc_list_TM_TrainToTrack /* _L2/ */ _L2;
   PT11_ValidatedTrainData_T_Packet_TrainTypes_Pkg /* _L17/ */ _L17;
-  kcg_int64 /* _L18/ */ _L18;
-  kcg_int64 /* _L19/ */ _L19;
+  kcg_int32 /* _L18/ */ _L18;
+  kcg_int32 /* _L19/ */ _L19;
   aTractionIdentity_T_Packet_TrainTypes_Pkg /* _L20/ */ _L20;
   aNID_NTC_T_Packet_TrainTypes_Pkg /* _L21/ */ _L21;
 } outC_ConvertP011_RBC_Model_Pkg_TrainTrackMsgConversion;
@@ -66,6 +66,6 @@ extern void ConvertP011_init_RBC_Model_Pkg_TrainTrackMsgConversion(
 #endif /* _ConvertP011_RBC_Model_Pkg_TrainTrackMsgConversion_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ConvertP011_RBC_Model_Pkg_TrainTrackMsgConversion.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

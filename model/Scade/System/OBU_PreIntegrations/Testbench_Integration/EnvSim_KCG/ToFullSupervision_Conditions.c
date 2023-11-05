@@ -118,11 +118,11 @@ void ToFullSupervision_init_Conditions(outC_ToFullSupervision_Conditions *outC)
   outC->_L414 = Profile_OS_Level_And_Mode_Types_Pkg;
   outC->_L413 = kcg_true;
   outC->_L408 = kcg_true;
-  outC->_L406.Distance = kcg_lit_int64(0);
+  outC->_L406.Distance = kcg_lit_int32(0);
   outC->_L406.Mode = Profile_OS_Level_And_Mode_Types_Pkg;
-  outC->_L406.Speed = kcg_lit_int64(0);
-  outC->_L406.Length = kcg_lit_int64(0);
-  outC->_L406.Length_Ack = kcg_lit_int64(0);
+  outC->_L406.Speed = kcg_lit_int32(0);
+  outC->_L406.Length = kcg_lit_int32(0);
+  outC->_L406.Length_Ack = kcg_lit_int32(0);
   outC->_L404 = kcg_true;
   outC->_L391 = kcg_true;
   outC->_L387 = kcg_true;

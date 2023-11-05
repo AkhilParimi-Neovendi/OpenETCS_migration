@@ -29,7 +29,7 @@ typedef struct {
   NID_ENGINE /* _L6/ */ _L6;
   outPackets_T_Common_Types_Pkg /* _L7/ */ _L7;
   Q_MARQSTREASON /* _L8/ */ _L8;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   Q_EMERGENCYSTOP /* _L11/ */ _L11;
   T_TRAIN /* _L12/ */ _L12;
 } outC_genMsgToRBC_MoRC_Pck_Coder_Pkg;

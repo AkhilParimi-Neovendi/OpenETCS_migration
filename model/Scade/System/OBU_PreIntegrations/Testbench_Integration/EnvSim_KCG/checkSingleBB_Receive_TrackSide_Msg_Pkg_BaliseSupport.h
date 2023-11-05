@@ -24,9 +24,9 @@ typedef struct {
   BGCollector_T_Receive_TrackSide_Msg_Pkg /* _L2/ */ _L2;
   BGCollector_T_Receive_TrackSide_Msg_Pkg /* _L3/ */ _L3;
   kcg_bool /* _L14/ */ _L14;
-  kcg_int64 /* _L15/ */ _L15;
+  kcg_int32 /* _L15/ */ _L15;
   kcg_bool /* _L16/ */ _L16;
-  kcg_int64 /* _L17/ */ _L17;
+  kcg_int32 /* _L17/ */ _L17;
   Telegram_T_BG_Types_Pkg /* _L18/ */ _L18;
   kcg_bool /* _L19/ */ _L19;
   kcg_bool /* _L20/ */ _L20;
@@ -38,8 +38,8 @@ typedef struct {
   NID_BG /* _L27/ */ _L27;
   centerOfBalisePosition_T_BG_Types_Pkg /* _L26/ */ _L26;
   centerOfBalisePosition_T_BG_Types_Pkg /* _L25/ */ _L25;
-  kcg_int64 /* _L24/ */ _L24;
-  kcg_int64 /* _L23/ */ _L23;
+  kcg_int32 /* _L24/ */ _L24;
+  kcg_int32 /* _L23/ */ _L23;
 } outC_checkSingleBB_Receive_TrackSide_Msg_Pkg_BaliseSupport;
 
 /* ===========  node initialization and cycle functions  =========== */

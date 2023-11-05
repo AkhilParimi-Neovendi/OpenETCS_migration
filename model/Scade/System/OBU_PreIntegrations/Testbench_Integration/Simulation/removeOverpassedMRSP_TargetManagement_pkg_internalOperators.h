@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _removeOverpassedMRSP_TargetManagement_pkg_internalOperators_H_
 #define _removeOverpassedMRSP_TargetManagement_pkg_internalOperators_H_
@@ -26,10 +26,10 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   L_internal_real_Type_SDM_Types_Pkg /* _L3/ */ _L3;
   Target_list_MRSP_real_T_TargetManagement_types /* _L4/ */ _L4;
-  kcg_int64 /* _L6/ */ _L6;
-  array_float64_110 /* _L7/ */ _L7;
+  kcg_int32 /* _L6/ */ _L6;
+  array_float32_110 /* _L7/ */ _L7;
   kcg_bool /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   L_internal_real_Type_SDM_Types_Pkg /* _L19/ */ _L19;
   kcg_bool /* _L14/ */ _L14;
   kcg_bool /* _L12/ */ _L12;
@@ -63,6 +63,6 @@ extern void removeOverpassedMRSP_init_TargetManagement_pkg_internalOperators(
 #endif /* _removeOverpassedMRSP_TargetManagement_pkg_internalOperators_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** removeOverpassedMRSP_TargetManagement_pkg_internalOperators.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

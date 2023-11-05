@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _Write_int_to_DMI_EVC_Coded_Train_Data_DATA_Packets_EVC_to_DMI_H_
 #define _Write_int_to_DMI_EVC_Coded_Train_Data_DATA_Packets_EVC_to_DMI_H_
@@ -27,9 +27,9 @@ typedef struct {
   DMI_EVC_Coded_Train_Data_int_array_T_DATA /* _L22/ */ _L22;
   DMI_EVC_Coded_Train_Data_T_DMI_Messages_EVC_to_DMI_Pkg /* _L23/ */ _L23;
   DMI_EVC_Coded_Train_Data_T_DMI_Messages_EVC_to_DMI_Pkg /* _L24/ */ _L24;
-  kcg_int64 /* _L27/ */ _L27;
+  kcg_int32 /* _L27/ */ _L27;
   kcg_bool /* _L26/ */ _L26;
-  kcg_int64 /* _L25/ */ _L25;
+  kcg_int32 /* _L25/ */ _L25;
 } outC_Write_int_to_DMI_EVC_Coded_Train_Data_DATA_Packets_EVC_to_DMI;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -54,6 +54,6 @@ extern void Write_int_to_DMI_EVC_Coded_Train_Data_init_DATA_Packets_EVC_to_DMI(
 #endif /* _Write_int_to_DMI_EVC_Coded_Train_Data_DATA_Packets_EVC_to_DMI_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Write_int_to_DMI_EVC_Coded_Train_Data_DATA_Packets_EVC_to_DMI.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

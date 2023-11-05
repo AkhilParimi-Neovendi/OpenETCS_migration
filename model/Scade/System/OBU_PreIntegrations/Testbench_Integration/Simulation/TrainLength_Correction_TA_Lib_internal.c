@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -14,7 +14,7 @@ void TrainLength_Correction_TA_Lib_internal(
   /* train_length/ */
   L_internal_Type_Obu_BasicTypes_Pkg train_length,
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* v_static/ */
   V_internal_Type_Obu_BasicTypes_Pkg v_static,
   /* distance/ */
@@ -22,13 +22,13 @@ void TrainLength_Correction_TA_Lib_internal(
   outC_TrainLength_Correction_TA_Lib_internal *outC)
 {
   outC->_L10 = v_static;
-  outC->_L14 = kcg_lit_int64(635);
+  outC->_L14 = kcg_lit_int32(635);
   outC->_L16 = outC->_L14 != outC->_L10;
-  outC->_L7 = kcg_lit_int64(1);
+  outC->_L7 = kcg_lit_int32(1);
   outC->_L3 = i;
   outC->_L6 = outC->_L3 - outC->_L7;
   kcg_copy_StaticSpeedProfile_t_TrackAtlasTypes(&outC->_L1, Static_Speed_Profile);
-  if ((kcg_lit_int64(0) <= outC->_L6) & (outC->_L6 < kcg_lit_int64(50))) {
+  if ((kcg_lit_int32(0) <= outC->_L6) & (outC->_L6 < kcg_lit_int32(50))) {
     kcg_copy_StaticSpeedSection_t_TrackAtlasTypes(
       &outC->_L5,
       &outC->_L1[outC->_L6]);
@@ -62,30 +62,30 @@ void TrainLength_Correction_init_TA_Lib_internal(
 
   outC->_L16 = kcg_true;
   outC->_L15 = kcg_true;
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L12 = kcg_lit_int64(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L12 = kcg_lit_int32(0);
   outC->_L11 = kcg_true;
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
   outC->_L5.valid = kcg_true;
-  outC->_L5.d_static_abs = kcg_lit_int64(0);
-  outC->_L5.d_static_LRBG = kcg_lit_int64(0);
+  outC->_L5.d_static_abs = kcg_lit_int32(0);
+  outC->_L5.d_static_LRBG = kcg_lit_int32(0);
   outC->_L5.q_train_length_corr = kcg_true;
-  outC->_L5.v_static = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L5.v_static = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
   for (idx = 0; idx < 50; idx++) {
     outC->_L1[idx].valid = kcg_true;
-    outC->_L1[idx].d_static_abs = kcg_lit_int64(0);
-    outC->_L1[idx].d_static_LRBG = kcg_lit_int64(0);
+    outC->_L1[idx].d_static_abs = kcg_lit_int32(0);
+    outC->_L1[idx].d_static_LRBG = kcg_lit_int32(0);
     outC->_L1[idx].q_train_length_corr = kcg_true;
-    outC->_L1[idx].v_static = kcg_lit_int64(0);
+    outC->_L1[idx].v_static = kcg_lit_int32(0);
   }
-  outC->corrected_distance = kcg_lit_int64(0);
+  outC->corrected_distance = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -101,6 +101,6 @@ void TrainLength_Correction_reset_TA_Lib_internal(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** TrainLength_Correction_TA_Lib_internal.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

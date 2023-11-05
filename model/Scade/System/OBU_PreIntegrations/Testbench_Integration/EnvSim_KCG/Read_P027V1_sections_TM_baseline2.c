@@ -10,13 +10,13 @@
 /* TM_baseline2::Read_P027V1_sections/ */
 void Read_P027V1_sections_TM_baseline2(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* Message_IN/ */
   CompressedPackets_T_Common_Types_Pkg *Message_IN,
   /* n_iter_outer/ */
-  kcg_int64 n_iter_outer,
+  kcg_int32 n_iter_outer,
   /* meta_sections/ */
-  kcg_int64 meta_sections,
+  kcg_int32 meta_sections,
   outC_Read_P027V1_sections_TM_baseline2 *outC)
 {
   static kcg_bool noname;
@@ -73,49 +73,49 @@ void Read_P027V1_sections_init_TM_baseline2(
 
   outC->_L181 = kcg_true;
   outC->_L180 = kcg_true;
-  outC->_L179 = kcg_lit_int64(0);
-  outC->_L171 = kcg_lit_int64(0);
-  outC->_L173.nid_packet = kcg_lit_int64(0);
+  outC->_L179 = kcg_lit_int32(0);
+  outC->_L171 = kcg_lit_int32(0);
+  outC->_L173.nid_packet = kcg_lit_int32(0);
   outC->_L173.q_dir = Q_DIR_Reverse;
   outC->_L173.valid = kcg_true;
-  outC->_L173.startAddress = kcg_lit_int64(0);
-  outC->_L173.endAddress = kcg_lit_int64(0);
+  outC->_L173.startAddress = kcg_lit_int32(0);
+  outC->_L173.endAddress = kcg_lit_int32(0);
   for (idx = 0; idx < 500; idx++) {
-    outC->_L172[idx] = kcg_lit_int64(0);
+    outC->_L172[idx] = kcg_lit_int32(0);
   }
-  outC->_L174 = kcg_lit_int64(0);
+  outC->_L174 = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 30; idx1++) {
-    outC->_L175.PacketHeaders[idx1].nid_packet = kcg_lit_int64(0);
+    outC->_L175.PacketHeaders[idx1].nid_packet = kcg_lit_int32(0);
     outC->_L175.PacketHeaders[idx1].q_dir = Q_DIR_Reverse;
     outC->_L175.PacketHeaders[idx1].valid = kcg_true;
-    outC->_L175.PacketHeaders[idx1].startAddress = kcg_lit_int64(0);
-    outC->_L175.PacketHeaders[idx1].endAddress = kcg_lit_int64(0);
+    outC->_L175.PacketHeaders[idx1].startAddress = kcg_lit_int32(0);
+    outC->_L175.PacketHeaders[idx1].endAddress = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 500; idx2++) {
-    outC->_L175.PacketData[idx2] = kcg_lit_int64(0);
+    outC->_L175.PacketData[idx2] = kcg_lit_int32(0);
   }
-  outC->_L176 = kcg_lit_int64(0);
+  outC->_L176 = kcg_lit_int32(0);
   outC->_L177.valid = kcg_true;
-  outC->_L177.d_static = kcg_lit_int64(0);
-  outC->_L177.v_static = kcg_lit_int64(0);
+  outC->_L177.d_static = kcg_lit_int32(0);
+  outC->_L177.v_static = kcg_lit_int32(0);
   outC->_L177.q_front =
     Q_FRONT_Train_length_delay_on_validity_end_point_of_profile_element;
-  outC->_L177.n_iter = kcg_lit_int64(0);
+  outC->_L177.n_iter = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 32; idx3++) {
     outC->_L177.SECTIONS_q_diff[idx3].valid = kcg_true;
-    outC->_L177.SECTIONS_q_diff[idx3].nc_diff = kcg_lit_int64(0);
-    outC->_L177.SECTIONS_q_diff[idx3].v_diff = kcg_lit_int64(0);
+    outC->_L177.SECTIONS_q_diff[idx3].nc_diff = kcg_lit_int32(0);
+    outC->_L177.SECTIONS_q_diff[idx3].v_diff = kcg_lit_int32(0);
   }
   outC->P027V1_OBU_section_out.valid = kcg_true;
-  outC->P027V1_OBU_section_out.d_static = kcg_lit_int64(0);
-  outC->P027V1_OBU_section_out.v_static = kcg_lit_int64(0);
+  outC->P027V1_OBU_section_out.d_static = kcg_lit_int32(0);
+  outC->P027V1_OBU_section_out.v_static = kcg_lit_int32(0);
   outC->P027V1_OBU_section_out.q_front =
     Q_FRONT_Train_length_delay_on_validity_end_point_of_profile_element;
-  outC->P027V1_OBU_section_out.n_iter = kcg_lit_int64(0);
+  outC->P027V1_OBU_section_out.n_iter = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 32; idx4++) {
     outC->P027V1_OBU_section_out.SECTIONS_q_diff[idx4].valid = kcg_true;
-    outC->P027V1_OBU_section_out.SECTIONS_q_diff[idx4].nc_diff = kcg_lit_int64(0);
-    outC->P027V1_OBU_section_out.SECTIONS_q_diff[idx4].v_diff = kcg_lit_int64(0);
+    outC->P027V1_OBU_section_out.SECTIONS_q_diff[idx4].nc_diff = kcg_lit_int32(0);
+    outC->P027V1_OBU_section_out.SECTIONS_q_diff[idx4].v_diff = kcg_lit_int32(0);
   }
   outC->cont = kcg_true;
   /* _L177=(TM_conversions_baseline2::C_P027V1_compr_onboard_sections_level2#1)/ */

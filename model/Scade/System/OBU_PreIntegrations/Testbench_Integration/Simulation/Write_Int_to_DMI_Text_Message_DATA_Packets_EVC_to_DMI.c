@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -17,7 +17,7 @@ void Write_Int_to_DMI_Text_Message_DATA_Packets_EVC_to_DMI(
 
   kcg_copy_DMI_Text_Message_int_array_T_DATA(&outC->_L20, dmi_text_message_int);
   outC->_L39 = outC->_L20[0];
-  outC->_L37 = kcg_lit_int64(1);
+  outC->_L37 = kcg_lit_int32(1);
   outC->_L38 = outC->_L37 == outC->_L39;
   outC->every = outC->_L38;
   if (outC->every) {
@@ -56,37 +56,37 @@ void Write_Int_to_DMI_Text_Message_init_DATA_Packets_EVC_to_DMI(
   static kcg_size idx3;
 
   outC->_L40.valid = kcg_true;
-  outC->_L40.system_clock = kcg_lit_int64(0);
-  outC->_L40.textMessage_ID = kcg_lit_int64(0);
+  outC->_L40.system_clock = kcg_lit_int32(0);
+  outC->_L40.textMessage_ID = kcg_lit_int32(0);
   outC->_L40.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L40.l_text = kcg_lit_int64(0);
+  outC->_L40.l_text = kcg_lit_int32(0);
   for (idx = 0; idx < 255; idx++) {
     outC->_L40.x_text[idx] = ' ';
   }
   outC->_L40.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L40.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
-  outC->_L37 = kcg_lit_int64(0);
+  outC->_L37 = kcg_lit_int32(0);
   outC->_L38 = kcg_true;
-  outC->_L39 = kcg_lit_int64(0);
+  outC->_L39 = kcg_lit_int32(0);
   outC->_L36.valid = kcg_true;
-  outC->_L36.system_clock = kcg_lit_int64(0);
-  outC->_L36.textMessage_ID = kcg_lit_int64(0);
+  outC->_L36.system_clock = kcg_lit_int32(0);
+  outC->_L36.textMessage_ID = kcg_lit_int32(0);
   outC->_L36.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L36.l_text = kcg_lit_int64(0);
+  outC->_L36.l_text = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 255; idx1++) {
     outC->_L36.x_text[idx1] = ' ';
   }
   outC->_L36.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L36.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   for (idx2 = 0; idx2 < 262; idx2++) {
-    outC->_L20[idx2] = kcg_lit_int64(0);
+    outC->_L20[idx2] = kcg_lit_int32(0);
   }
   outC->every = kcg_true;
   outC->dmi_text_message_ct.valid = kcg_true;
-  outC->dmi_text_message_ct.system_clock = kcg_lit_int64(0);
-  outC->dmi_text_message_ct.textMessage_ID = kcg_lit_int64(0);
+  outC->dmi_text_message_ct.system_clock = kcg_lit_int32(0);
+  outC->dmi_text_message_ct.textMessage_ID = kcg_lit_int32(0);
   outC->dmi_text_message_ct.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->dmi_text_message_ct.l_text = kcg_lit_int64(0);
+  outC->dmi_text_message_ct.l_text = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 255; idx3++) {
     outC->dmi_text_message_ct.x_text[idx3] = ' ';
   }
@@ -114,6 +114,6 @@ void Write_Int_to_DMI_Text_Message_reset_DATA_Packets_EVC_to_DMI(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Write_Int_to_DMI_Text_Message_DATA_Packets_EVC_to_DMI.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

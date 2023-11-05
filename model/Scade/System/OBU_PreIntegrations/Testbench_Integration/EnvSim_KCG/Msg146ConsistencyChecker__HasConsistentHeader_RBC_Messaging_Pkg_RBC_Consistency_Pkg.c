@@ -34,15 +34,15 @@ void Msg146ConsistencyChecker__HasConsistentHeader_init_RBC_Messaging_Pkg_RBC_Co
   outC->_L1 = Q_MARQSTREASON_Start_selected_by_driver;
   outC->_L4 = Q_MARQSTREASON_Start_selected_by_driver;
   outC->_L5.present = kcg_true;
-  outC->_L5.nid_message = kcg_lit_int64(0);
-  outC->_L5.t_train = kcg_lit_int64(0);
-  outC->_L5.nid_engine = kcg_lit_int64(0);
+  outC->_L5.nid_message = kcg_lit_int32(0);
+  outC->_L5.t_train = kcg_lit_int32(0);
+  outC->_L5.nid_engine = kcg_lit_int32(0);
   outC->_L5.xQ_MARQSTREASON = Q_MARQSTREASON_Start_selected_by_driver;
-  outC->_L5.xT_TRAIN = kcg_lit_int64(0);
-  outC->_L5.xNID_EM = kcg_lit_int64(0);
+  outC->_L5.xT_TRAIN = kcg_lit_int32(0);
+  outC->_L5.xNID_EM = kcg_lit_int32(0);
   outC->_L5.xQ_EMERGENCYSTOP =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
-  outC->_L5.xNID_TEXTMESSAGE = kcg_lit_int64(0);
+  outC->_L5.xNID_TEXTMESSAGE = kcg_lit_int32(0);
   outC->_L6 = kcg_true;
   outC->outIsConsistent = kcg_true;
   /* _L1=(RBC_Messaging_Pkg::RBC_RadioTrainTrack_Pkg::RadioTrainTrackHeader__Get_Q_MARQSTREASON#1)/ */

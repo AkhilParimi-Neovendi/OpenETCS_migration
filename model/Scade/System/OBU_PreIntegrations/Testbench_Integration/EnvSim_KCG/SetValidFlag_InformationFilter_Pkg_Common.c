@@ -36,27 +36,27 @@ void SetValidFlag_init_InformationFilter_Pkg_Common(
   outC_SetValidFlag_InformationFilter_Pkg_Common *outC)
 {
   outC->_L9 = kcg_true;
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
   outC->_L6 = kcg_true;
   outC->_L5 = Q_DIR_Reverse;
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3.nid_packet = kcg_lit_int64(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3.nid_packet = kcg_lit_int32(0);
   outC->_L3.q_dir = Q_DIR_Reverse;
   outC->_L3.valid = kcg_true;
-  outC->_L3.startAddress = kcg_lit_int64(0);
-  outC->_L3.endAddress = kcg_lit_int64(0);
+  outC->_L3.startAddress = kcg_lit_int32(0);
+  outC->_L3.endAddress = kcg_lit_int32(0);
   outC->_L1 = kcg_true;
-  outC->_L2.nid_packet = kcg_lit_int64(0);
+  outC->_L2.nid_packet = kcg_lit_int32(0);
   outC->_L2.q_dir = Q_DIR_Reverse;
   outC->_L2.valid = kcg_true;
-  outC->_L2.startAddress = kcg_lit_int64(0);
-  outC->_L2.endAddress = kcg_lit_int64(0);
-  outC->outPacket.nid_packet = kcg_lit_int64(0);
+  outC->_L2.startAddress = kcg_lit_int32(0);
+  outC->_L2.endAddress = kcg_lit_int32(0);
+  outC->outPacket.nid_packet = kcg_lit_int32(0);
   outC->outPacket.q_dir = Q_DIR_Reverse;
   outC->outPacket.valid = kcg_true;
-  outC->outPacket.startAddress = kcg_lit_int64(0);
-  outC->outPacket.endAddress = kcg_lit_int64(0);
+  outC->outPacket.startAddress = kcg_lit_int32(0);
+  outC->outPacket.endAddress = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

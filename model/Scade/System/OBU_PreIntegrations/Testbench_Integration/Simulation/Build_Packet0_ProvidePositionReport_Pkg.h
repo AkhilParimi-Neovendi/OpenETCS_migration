@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _Build_Packet0_ProvidePositionReport_Pkg_H_
 #define _Build_Packet0_ProvidePositionReport_Pkg_H_
@@ -44,14 +44,14 @@ typedef struct {
   NID_BG /* _L25/ */ _L25;
   NID_NTC /* _L24/ */ _L24;
   L_DOUBTUNDER /* _L23/ */ _L23;
-  kcg_int64 /* _L22/ */ _L22;
+  kcg_int32 /* _L22/ */ _L22;
   ModeLevel2PositionReport_T_ProvidePositionReport_Pkg /* _L21/ */ _L21;
   M_MODE /* _L20/ */ _L20;
   Q_SCALE /* _L19/ */ _L19;
   positionedBGs_T_TrainPosition_Types_Pck /* _L18/ */ _L18;
   positionedBG_T_TrainPosition_Types_Pck /* _L16/ */ _L16;
   L_TRAININT /* _L14/ */ _L14;
-  kcg_int64 /* _L15/ */ _L15;
+  kcg_int32 /* _L15/ */ _L15;
   Q_LENGTH /* _L13/ */ _L13;
   Q_DLRBG /* _L12/ */ _L12;
   Position_Report_TrainToTrack /* _L11/ */ _L11;
@@ -61,13 +61,13 @@ typedef struct {
   trainProperties_T_TrainPosition_Types_Pck /* _L7/ */ _L7;
   L_DOUBTOVER /* _L6/ */ _L6;
   OdometrySpeeds_T_Obu_BasicTypes_Pkg /* _L4/ */ _L4;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   V_odometry_Type_Obu_BasicTypes_Pkg /* _L2/ */ _L2;
   Q_DIRTRAIN /* _L1/ */ _L1;
-  kcg_int64 /* _L35/ */ _L35;
-  kcg_int64 /* _L36/ */ _L36;
-  kcg_int64 /* _L37/ */ _L37;
-  kcg_int64 /* _L38/ */ _L38;
+  kcg_int32 /* _L35/ */ _L35;
+  kcg_int32 /* _L36/ */ _L36;
+  kcg_int32 /* _L37/ */ _L37;
+  kcg_int32 /* _L38/ */ _L38;
   NID_C /* _L39/ */ _L39;
   NID_LRBG /* _L40/ */ _L40;
   V_TRAIN /* _L41/ */ _L41;
@@ -121,6 +121,6 @@ extern void kcg_load_SV_Build_Packet0_ProvidePositionReport_Pkg(
 #endif /* _Build_Packet0_ProvidePositionReport_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Build_Packet0_ProvidePositionReport_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

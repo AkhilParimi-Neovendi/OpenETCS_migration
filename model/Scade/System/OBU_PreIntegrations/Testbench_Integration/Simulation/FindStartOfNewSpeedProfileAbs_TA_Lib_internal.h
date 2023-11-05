@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _FindStartOfNewSpeedProfileAbs_TA_Lib_internal_H_
 #define _FindStartOfNewSpeedProfileAbs_TA_Lib_internal_H_
@@ -15,7 +15,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* relevant_section/ */ relevant_section;
+  kcg_int32 /* relevant_section/ */ relevant_section;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -26,11 +26,11 @@ typedef struct {
   StaticSpeedProfile_t_TrackAtlasTypes /* _L1/ */ _L1;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L2/ */ _L2;
   StaticSpeedProfile_t_TrackAtlasTypes /* _L93/ */ _L93;
-  kcg_int64 /* _L94/ */ _L94;
+  kcg_int32 /* _L94/ */ _L94;
   kcg_bool /* _L96/ */ _L96;
   _3_array /* _L98/ */ _L98;
-  kcg_int64 /* _L99/ */ _L99;
-  kcg_int64 /* _L100/ */ _L100;
+  kcg_int32 /* _L99/ */ _L99;
+  kcg_int32 /* _L100/ */ _L100;
   M_TrainTrack_compressed_packets_T_TM_radio_messages /* _L198/ */ _L198;
 } outC_FindStartOfNewSpeedProfileAbs_TA_Lib_internal;
 
@@ -58,6 +58,6 @@ extern void FindStartOfNewSpeedProfileAbs_init_TA_Lib_internal(
 #endif /* _FindStartOfNewSpeedProfileAbs_TA_Lib_internal_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** FindStartOfNewSpeedProfileAbs_TA_Lib_internal.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

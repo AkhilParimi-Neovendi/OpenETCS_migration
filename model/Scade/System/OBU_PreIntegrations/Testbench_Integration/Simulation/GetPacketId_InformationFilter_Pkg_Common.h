@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _GetPacketId_InformationFilter_Pkg_Common_H_
 #define _GetPacketId_InformationFilter_Pkg_Common_H_
@@ -15,7 +15,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* outPacketId/ */ outPacketId;
+  kcg_int32 /* outPacketId/ */ outPacketId;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -24,11 +24,11 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   MetadataElement_T_Common_Types_Pkg /* _L1/ */ _L1;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   NID_PACKET /* _L6/ */ _L6;
   kcg_bool /* _L7/ */ _L7;
-  kcg_int64 /* _L8/ */ _L8;
-  kcg_int64 /* _L9/ */ _L9;
+  kcg_int32 /* _L8/ */ _L8;
+  kcg_int32 /* _L9/ */ _L9;
 } outC_GetPacketId_InformationFilter_Pkg_Common;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -53,6 +53,6 @@ extern void GetPacketId_init_InformationFilter_Pkg_Common(
 #endif /* _GetPacketId_InformationFilter_Pkg_Common_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** GetPacketId_InformationFilter_Pkg_Common.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

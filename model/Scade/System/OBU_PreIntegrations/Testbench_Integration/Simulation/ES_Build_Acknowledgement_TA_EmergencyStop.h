@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _ES_Build_Acknowledgement_TA_EmergencyStop_H_
 #define _ES_Build_Acknowledgement_TA_EmergencyStop_H_
@@ -28,7 +28,7 @@ typedef struct {
   kcg_bool /* _L7/ */ _L7;
   Radio_TrainTrack_Header_T_TM_transitional /* _L8/ */ _L8;
   kcg_bool /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   trainProperties_T_TrainPosition_Types_Pck /* _L11/ */ _L11;
   NID_ENGINE /* _L12/ */ _L12;
   Q_EMERGENCYSTOP /* _L13/ */ _L13;
@@ -90,6 +90,6 @@ extern void ES_Build_Acknowledgement_init_TA_EmergencyStop(
 #endif /* _ES_Build_Acknowledgement_TA_EmergencyStop_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ES_Build_Acknowledgement_TA_EmergencyStop.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

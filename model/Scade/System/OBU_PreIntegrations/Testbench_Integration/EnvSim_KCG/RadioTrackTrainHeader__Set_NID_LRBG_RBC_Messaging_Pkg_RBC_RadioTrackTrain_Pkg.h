@@ -22,7 +22,7 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   Radio_TrackTrain_Header_T_TM /* _L1/ */ _L1;
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L2/ */ _L2;
   Radio_TrackTrain_Header_T_TM /* _L3/ */ _L3;
 } outC_RadioTrackTrainHeader__Set_NID_LRBG_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg;
 
@@ -32,7 +32,7 @@ extern void RadioTrackTrainHeader__Set_NID_LRBG_RBC_Messaging_Pkg_RBC_RadioTrack
   /* inRadioTrackTrainHeader/ */
   Radio_TrackTrain_Header_T_TM *inRadioTrackTrainHeader,
   /* in_NID_LRBG/ */
-  kcg_int64 in_NID_LRBG,
+  kcg_int32 in_NID_LRBG,
   outC_RadioTrackTrainHeader__Set_NID_LRBG_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg *outC);
 
 extern void RadioTrackTrainHeader__Set_NID_LRBG_reset_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg(

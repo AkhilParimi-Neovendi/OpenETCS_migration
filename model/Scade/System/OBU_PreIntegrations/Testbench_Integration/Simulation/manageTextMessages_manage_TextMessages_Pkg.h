@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _manageTextMessages_manage_TextMessages_Pkg_H_
 #define _manageTextMessages_manage_TextMessages_Pkg_H_
@@ -76,7 +76,7 @@ typedef struct {
   DMI_Text_Message_T_DMI_Messages_EVC_to_DMI_Pkg /* _L16/ */ _L16;
   DMI_TXT_MSGList_status_T_DMI_Types_Pkg /* _L14/ */ _L14;
   DMI_Text_Message_T_DMI_Messages_EVC_to_DMI_Pkg /* _L18/ */ _L18;
-  kcg_int64 /* _L20/ */ _L20;
+  kcg_int32 /* _L20/ */ _L20;
   DMI_context_TXT_MSG_T_DMI_Types_Pkg /* _L22/ */ _L22;
   M_MODE /* _L24/ */ _L24;
   Q_TEXTREPORT /* _L26/ */ _L26;
@@ -124,6 +124,6 @@ extern void manageTextMessages_init_manage_TextMessages_Pkg(
 #endif /* _manageTextMessages_manage_TextMessages_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** manageTextMessages_manage_TextMessages_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

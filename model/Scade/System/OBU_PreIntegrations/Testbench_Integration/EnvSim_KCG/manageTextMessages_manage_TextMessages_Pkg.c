@@ -331,7 +331,7 @@ void manageTextMessages_manage_TextMessages_Pkg(
       &outC->textMessageToSend,
       &_1_textMessageToSend_partial);
   }
-  outC->_L20 = kcg_lit_int64(111);
+  outC->_L20 = kcg_lit_int32(111);
   outC->_L17 = inSystemTime;
   kcg_copy_DMI_TXT_MSGList_status_T_DMI_Types_Pkg(&outC->_L14, inStatusList);
   kcg_copy_DMI_Text_Message_T_DMI_Messages_EVC_to_DMI_Pkg(
@@ -400,29 +400,29 @@ void manageTextMessages_init_manage_TextMessages_Pkg(
   outC->_L46.LevelNeedsAck = kcg_true;
   outC->_L45 = M_LEVEL_Level_0;
   outC->_L44.level = M_LEVEL_Level_0;
-  outC->_L44.position = kcg_lit_int64(0);
+  outC->_L44.position = kcg_lit_int32(0);
   outC->_L44.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L44.immediateAck = kcg_true;
-  outC->_L44.AckLength = kcg_lit_int64(0);
+  outC->_L44.AckLength = kcg_lit_int32(0);
   outC->_L43.is_set = kcg_true;
   outC->_L43.transition.level = M_LEVEL_Level_0;
-  outC->_L43.transition.position = kcg_lit_int64(0);
+  outC->_L43.transition.position = kcg_lit_int32(0);
   outC->_L43.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L43.transition.immediateAck = kcg_true;
-  outC->_L43.transition.AckLength = kcg_lit_int64(0);
-  outC->_L43.LRBG = kcg_lit_int64(0);
-  outC->_L43.referenceLocation = kcg_lit_int64(0);
+  outC->_L43.transition.AckLength = kcg_lit_int32(0);
+  outC->_L43.LRBG = kcg_lit_int32(0);
+  outC->_L43.referenceLocation = kcg_lit_int32(0);
   outC->_L42.LevelTransition.is_set = kcg_true;
   outC->_L42.LevelTransition.transition.level = M_LEVEL_Level_0;
-  outC->_L42.LevelTransition.transition.position = kcg_lit_int64(0);
+  outC->_L42.LevelTransition.transition.position = kcg_lit_int32(0);
   outC->_L42.LevelTransition.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L42.LevelTransition.transition.immediateAck = kcg_true;
-  outC->_L42.LevelTransition.transition.AckLength = kcg_lit_int64(0);
-  outC->_L42.LevelTransition.LRBG = kcg_lit_int64(0);
-  outC->_L42.LevelTransition.referenceLocation = kcg_lit_int64(0);
+  outC->_L42.LevelTransition.transition.AckLength = kcg_lit_int32(0);
+  outC->_L42.LevelTransition.LRBG = kcg_lit_int32(0);
+  outC->_L42.LevelTransition.referenceLocation = kcg_lit_int32(0);
   outC->_L42.IsAvailableForUse = kcg_true;
   outC->_L40 = M_LEVEL_Level_0;
   outC->_L38.valid = kcg_true;
@@ -432,12 +432,12 @@ void manageTextMessages_init_manage_TextMessages_Pkg(
   outC->_L37 = kcg_true;
   for (idx = 0; idx < 31; idx++) {
     outC->_L34[idx].valid = kcg_true;
-    outC->_L34[idx].dmi_textMessageID = kcg_lit_int64(0);
-    outC->_L34[idx].timeStamp = kcg_lit_int64(0);
+    outC->_L34[idx].dmi_textMessageID = kcg_lit_int32(0);
+    outC->_L34[idx].timeStamp = kcg_lit_int32(0);
     outC->_L34[idx].textReport =
       Q_TEXTREPORT_No_driver_acknowledgement_report_required;
     outC->_L34[idx].context = con_undefined_DMI_Types_Pkg;
-    outC->_L34[idx].nid_textmessage = kcg_lit_int64(0);
+    outC->_L34[idx].nid_textmessage = kcg_lit_int32(0);
     outC->_L34[idx].whichLevel = M_LEVEL_Level_0;
     outC->_L34[idx].whichMode = M_MODE_Full_Supervision;
   }
@@ -446,12 +446,12 @@ void manageTextMessages_init_manage_TextMessages_Pkg(
   outC->_L26 = Q_TEXTREPORT_No_driver_acknowledgement_report_required;
   outC->_L24 = M_MODE_Full_Supervision;
   outC->_L22 = con_undefined_DMI_Types_Pkg;
-  outC->_L20 = kcg_lit_int64(0);
+  outC->_L20 = kcg_lit_int32(0);
   outC->_L18.valid = kcg_true;
-  outC->_L18.system_clock = kcg_lit_int64(0);
-  outC->_L18.textMessage_ID = kcg_lit_int64(0);
+  outC->_L18.system_clock = kcg_lit_int32(0);
+  outC->_L18.textMessage_ID = kcg_lit_int32(0);
   outC->_L18.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L18.l_text = kcg_lit_int64(0);
+  outC->_L18.l_text = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 255; idx1++) {
     outC->_L18.x_text[idx1] = ' ';
   }
@@ -459,20 +459,20 @@ void manageTextMessages_init_manage_TextMessages_Pkg(
   outC->_L18.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   for (idx2 = 0; idx2 < 31; idx2++) {
     outC->_L14[idx2].valid = kcg_true;
-    outC->_L14[idx2].dmi_textMessageID = kcg_lit_int64(0);
-    outC->_L14[idx2].timeStamp = kcg_lit_int64(0);
+    outC->_L14[idx2].dmi_textMessageID = kcg_lit_int32(0);
+    outC->_L14[idx2].timeStamp = kcg_lit_int32(0);
     outC->_L14[idx2].textReport =
       Q_TEXTREPORT_No_driver_acknowledgement_report_required;
     outC->_L14[idx2].context = con_undefined_DMI_Types_Pkg;
-    outC->_L14[idx2].nid_textmessage = kcg_lit_int64(0);
+    outC->_L14[idx2].nid_textmessage = kcg_lit_int32(0);
     outC->_L14[idx2].whichLevel = M_LEVEL_Level_0;
     outC->_L14[idx2].whichMode = M_MODE_Full_Supervision;
   }
   outC->_L16.valid = kcg_true;
-  outC->_L16.system_clock = kcg_lit_int64(0);
-  outC->_L16.textMessage_ID = kcg_lit_int64(0);
+  outC->_L16.system_clock = kcg_lit_int32(0);
+  outC->_L16.textMessage_ID = kcg_lit_int32(0);
   outC->_L16.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L16.l_text = kcg_lit_int64(0);
+  outC->_L16.l_text = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 255; idx3++) {
     outC->_L16.x_text[idx3] = ' ';
   }
@@ -480,16 +480,16 @@ void manageTextMessages_init_manage_TextMessages_Pkg(
   outC->_L16.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   for (idx4 = 0; idx4 < 31; idx4++) {
     outC->_L15[idx4].valid = kcg_true;
-    outC->_L15[idx4].dmi_textMessageID = kcg_lit_int64(0);
-    outC->_L15[idx4].timeStamp = kcg_lit_int64(0);
+    outC->_L15[idx4].dmi_textMessageID = kcg_lit_int32(0);
+    outC->_L15[idx4].timeStamp = kcg_lit_int32(0);
     outC->_L15[idx4].textReport =
       Q_TEXTREPORT_No_driver_acknowledgement_report_required;
     outC->_L15[idx4].context = con_undefined_DMI_Types_Pkg;
-    outC->_L15[idx4].nid_textmessage = kcg_lit_int64(0);
+    outC->_L15[idx4].nid_textmessage = kcg_lit_int32(0);
     outC->_L15[idx4].whichLevel = M_LEVEL_Level_0;
     outC->_L15[idx4].whichMode = M_MODE_Full_Supervision;
   }
-  outC->_L17 = kcg_lit_int64(0);
+  outC->_L17 = kcg_lit_int32(0);
   outC->_L13 = kcg_true;
   outC->_L9 = kcg_true;
   outC->_L8 = kcg_true;
@@ -501,10 +501,10 @@ void manageTextMessages_init_manage_TextMessages_Pkg(
   outC->modeChange = kcg_true;
   outC->levelNeedsAck = kcg_true;
   outC->textMessageToSend.valid = kcg_true;
-  outC->textMessageToSend.system_clock = kcg_lit_int64(0);
-  outC->textMessageToSend.textMessage_ID = kcg_lit_int64(0);
+  outC->textMessageToSend.system_clock = kcg_lit_int32(0);
+  outC->textMessageToSend.textMessage_ID = kcg_lit_int32(0);
   outC->textMessageToSend.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->textMessageToSend.l_text = kcg_lit_int64(0);
+  outC->textMessageToSend.l_text = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 255; idx5++) {
     outC->textMessageToSend.x_text[idx5] = ' ';
   }
@@ -522,10 +522,10 @@ void manageTextMessages_init_manage_TextMessages_Pkg(
   outC->_L14_then_else_IfBlock1 = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L13_then_else_IfBlock1 = kcg_true;
   outC->_L11_then_else_IfBlock1.valid = kcg_true;
-  outC->_L11_then_else_IfBlock1.system_clock = kcg_lit_int64(0);
-  outC->_L11_then_else_IfBlock1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L11_then_else_IfBlock1.system_clock = kcg_lit_int32(0);
+  outC->_L11_then_else_IfBlock1.textMessage_ID = kcg_lit_int32(0);
   outC->_L11_then_else_IfBlock1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L11_then_else_IfBlock1.l_text = kcg_lit_int64(0);
+  outC->_L11_then_else_IfBlock1.l_text = kcg_lit_int32(0);
   for (idx6 = 0; idx6 < 255; idx6++) {
     outC->_L11_then_else_IfBlock1.x_text[idx6] = ' ';
   }
@@ -534,10 +534,10 @@ void manageTextMessages_init_manage_TextMessages_Pkg(
     Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L10_then_else_IfBlock1 = con_undefined_DMI_Types_Pkg;
   outC->_L9_then_else_IfBlock1.valid = kcg_true;
-  outC->_L9_then_else_IfBlock1.system_clock = kcg_lit_int64(0);
-  outC->_L9_then_else_IfBlock1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L9_then_else_IfBlock1.system_clock = kcg_lit_int32(0);
+  outC->_L9_then_else_IfBlock1.textMessage_ID = kcg_lit_int32(0);
   outC->_L9_then_else_IfBlock1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L9_then_else_IfBlock1.l_text = kcg_lit_int64(0);
+  outC->_L9_then_else_IfBlock1.l_text = kcg_lit_int32(0);
   for (idx7 = 0; idx7 < 255; idx7++) {
     outC->_L9_then_else_IfBlock1.x_text[idx7] = ' ';
   }
@@ -545,10 +545,10 @@ void manageTextMessages_init_manage_TextMessages_Pkg(
   outC->_L9_then_else_IfBlock1.q_textConfirm =
     Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L8_then_else_IfBlock1.valid = kcg_true;
-  outC->_L8_then_else_IfBlock1.system_clock = kcg_lit_int64(0);
-  outC->_L8_then_else_IfBlock1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L8_then_else_IfBlock1.system_clock = kcg_lit_int32(0);
+  outC->_L8_then_else_IfBlock1.textMessage_ID = kcg_lit_int32(0);
   outC->_L8_then_else_IfBlock1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L8_then_else_IfBlock1.l_text = kcg_lit_int64(0);
+  outC->_L8_then_else_IfBlock1.l_text = kcg_lit_int32(0);
   for (idx8 = 0; idx8 < 255; idx8++) {
     outC->_L8_then_else_IfBlock1.x_text[idx8] = ' ';
   }
@@ -556,10 +556,10 @@ void manageTextMessages_init_manage_TextMessages_Pkg(
   outC->_L8_then_else_IfBlock1.q_textConfirm =
     Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L7_then_else_IfBlock1.valid = kcg_true;
-  outC->_L7_then_else_IfBlock1.system_clock = kcg_lit_int64(0);
-  outC->_L7_then_else_IfBlock1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L7_then_else_IfBlock1.system_clock = kcg_lit_int32(0);
+  outC->_L7_then_else_IfBlock1.textMessage_ID = kcg_lit_int32(0);
   outC->_L7_then_else_IfBlock1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L7_then_else_IfBlock1.l_text = kcg_lit_int64(0);
+  outC->_L7_then_else_IfBlock1.l_text = kcg_lit_int32(0);
   for (idx9 = 0; idx9 < 255; idx9++) {
     outC->_L7_then_else_IfBlock1.x_text[idx9] = ' ';
   }
@@ -567,10 +567,10 @@ void manageTextMessages_init_manage_TextMessages_Pkg(
   outC->_L7_then_else_IfBlock1.q_textConfirm =
     Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L6_then_else_IfBlock1.valid = kcg_true;
-  outC->_L6_then_else_IfBlock1.system_clock = kcg_lit_int64(0);
-  outC->_L6_then_else_IfBlock1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L6_then_else_IfBlock1.system_clock = kcg_lit_int32(0);
+  outC->_L6_then_else_IfBlock1.textMessage_ID = kcg_lit_int32(0);
   outC->_L6_then_else_IfBlock1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L6_then_else_IfBlock1.l_text = kcg_lit_int64(0);
+  outC->_L6_then_else_IfBlock1.l_text = kcg_lit_int32(0);
   for (idx10 = 0; idx10 < 255; idx10++) {
     outC->_L6_then_else_IfBlock1.x_text[idx10] = ' ';
   }
@@ -578,10 +578,10 @@ void manageTextMessages_init_manage_TextMessages_Pkg(
   outC->_L6_then_else_IfBlock1.q_textConfirm =
     Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L5_then_else_IfBlock1.valid = kcg_true;
-  outC->_L5_then_else_IfBlock1.system_clock = kcg_lit_int64(0);
-  outC->_L5_then_else_IfBlock1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L5_then_else_IfBlock1.system_clock = kcg_lit_int32(0);
+  outC->_L5_then_else_IfBlock1.textMessage_ID = kcg_lit_int32(0);
   outC->_L5_then_else_IfBlock1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L5_then_else_IfBlock1.l_text = kcg_lit_int64(0);
+  outC->_L5_then_else_IfBlock1.l_text = kcg_lit_int32(0);
   for (idx11 = 0; idx11 < 255; idx11++) {
     outC->_L5_then_else_IfBlock1.x_text[idx11] = ' ';
   }
@@ -589,10 +589,10 @@ void manageTextMessages_init_manage_TextMessages_Pkg(
   outC->_L5_then_else_IfBlock1.q_textConfirm =
     Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L4_then_else_IfBlock1.valid = kcg_true;
-  outC->_L4_then_else_IfBlock1.system_clock = kcg_lit_int64(0);
-  outC->_L4_then_else_IfBlock1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L4_then_else_IfBlock1.system_clock = kcg_lit_int32(0);
+  outC->_L4_then_else_IfBlock1.textMessage_ID = kcg_lit_int32(0);
   outC->_L4_then_else_IfBlock1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L4_then_else_IfBlock1.l_text = kcg_lit_int64(0);
+  outC->_L4_then_else_IfBlock1.l_text = kcg_lit_int32(0);
   for (idx12 = 0; idx12 < 255; idx12++) {
     outC->_L4_then_else_IfBlock1.x_text[idx12] = ' ';
   }
@@ -601,10 +601,10 @@ void manageTextMessages_init_manage_TextMessages_Pkg(
     Q_TEXTCONFIRM_No_confirmation_required;
   outC->else_clock_else_IfBlock1 = kcg_true;
   outC->_L2_else_else_else_IfBlock1.valid = kcg_true;
-  outC->_L2_else_else_else_IfBlock1.system_clock = kcg_lit_int64(0);
-  outC->_L2_else_else_else_IfBlock1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L2_else_else_else_IfBlock1.system_clock = kcg_lit_int32(0);
+  outC->_L2_else_else_else_IfBlock1.textMessage_ID = kcg_lit_int32(0);
   outC->_L2_else_else_else_IfBlock1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L2_else_else_else_IfBlock1.l_text = kcg_lit_int64(0);
+  outC->_L2_else_else_else_IfBlock1.l_text = kcg_lit_int32(0);
   for (idx13 = 0; idx13 < 255; idx13++) {
     outC->_L2_else_else_else_IfBlock1.x_text[idx13] = ' ';
   }
@@ -614,10 +614,10 @@ void manageTextMessages_init_manage_TextMessages_Pkg(
     Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L3_else_else_else_IfBlock1 = con_undefined_DMI_Types_Pkg;
   outC->_L1_then_else_else_IfBlock1.valid = kcg_true;
-  outC->_L1_then_else_else_IfBlock1.system_clock = kcg_lit_int64(0);
-  outC->_L1_then_else_else_IfBlock1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L1_then_else_else_IfBlock1.system_clock = kcg_lit_int32(0);
+  outC->_L1_then_else_else_IfBlock1.textMessage_ID = kcg_lit_int32(0);
   outC->_L1_then_else_else_IfBlock1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L1_then_else_else_IfBlock1.l_text = kcg_lit_int64(0);
+  outC->_L1_then_else_else_IfBlock1.l_text = kcg_lit_int32(0);
   for (idx14 = 0; idx14 < 255; idx14++) {
     outC->_L1_then_else_else_IfBlock1.x_text[idx14] = ' ';
   }
@@ -628,10 +628,10 @@ void manageTextMessages_init_manage_TextMessages_Pkg(
   outC->_L2_then_else_else_IfBlock1 = con_undefined_DMI_Types_Pkg;
   outC->else_clock_IfBlock1 = kcg_true;
   outC->_L1_then_IfBlock1.valid = kcg_true;
-  outC->_L1_then_IfBlock1.system_clock = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1.system_clock = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock1.textMessage_ID = kcg_lit_int32(0);
   outC->_L1_then_IfBlock1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L1_then_IfBlock1.l_text = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1.l_text = kcg_lit_int32(0);
   for (idx15 = 0; idx15 < 255; idx15++) {
     outC->_L1_then_IfBlock1.x_text[idx15] = ' ';
   }
@@ -639,70 +639,70 @@ void manageTextMessages_init_manage_TextMessages_Pkg(
   outC->_L1_then_IfBlock1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L6_then_IfBlock1 = M_MODE_Full_Supervision;
   outC->_L7_then_IfBlock1.valid = kcg_true;
-  outC->_L7_then_IfBlock1.system_clock = kcg_lit_int64(0);
-  outC->_L7_then_IfBlock1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L7_then_IfBlock1.system_clock = kcg_lit_int32(0);
+  outC->_L7_then_IfBlock1.textMessage_ID = kcg_lit_int32(0);
   outC->_L7_then_IfBlock1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L7_then_IfBlock1.l_text = kcg_lit_int64(0);
+  outC->_L7_then_IfBlock1.l_text = kcg_lit_int32(0);
   for (idx16 = 0; idx16 < 255; idx16++) {
     outC->_L7_then_IfBlock1.x_text[idx16] = ' ';
   }
   outC->_L7_then_IfBlock1.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L7_then_IfBlock1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L9_then_IfBlock1.valid = kcg_true;
-  outC->_L9_then_IfBlock1.system_clock = kcg_lit_int64(0);
-  outC->_L9_then_IfBlock1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L9_then_IfBlock1.system_clock = kcg_lit_int32(0);
+  outC->_L9_then_IfBlock1.textMessage_ID = kcg_lit_int32(0);
   outC->_L9_then_IfBlock1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L9_then_IfBlock1.l_text = kcg_lit_int64(0);
+  outC->_L9_then_IfBlock1.l_text = kcg_lit_int32(0);
   for (idx17 = 0; idx17 < 255; idx17++) {
     outC->_L9_then_IfBlock1.x_text[idx17] = ' ';
   }
   outC->_L9_then_IfBlock1.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L9_then_IfBlock1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L10_then_IfBlock1.valid = kcg_true;
-  outC->_L10_then_IfBlock1.system_clock = kcg_lit_int64(0);
-  outC->_L10_then_IfBlock1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L10_then_IfBlock1.system_clock = kcg_lit_int32(0);
+  outC->_L10_then_IfBlock1.textMessage_ID = kcg_lit_int32(0);
   outC->_L10_then_IfBlock1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L10_then_IfBlock1.l_text = kcg_lit_int64(0);
+  outC->_L10_then_IfBlock1.l_text = kcg_lit_int32(0);
   for (idx18 = 0; idx18 < 255; idx18++) {
     outC->_L10_then_IfBlock1.x_text[idx18] = ' ';
   }
   outC->_L10_then_IfBlock1.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L10_then_IfBlock1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L11_then_IfBlock1.valid = kcg_true;
-  outC->_L11_then_IfBlock1.system_clock = kcg_lit_int64(0);
-  outC->_L11_then_IfBlock1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L11_then_IfBlock1.system_clock = kcg_lit_int32(0);
+  outC->_L11_then_IfBlock1.textMessage_ID = kcg_lit_int32(0);
   outC->_L11_then_IfBlock1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L11_then_IfBlock1.l_text = kcg_lit_int64(0);
+  outC->_L11_then_IfBlock1.l_text = kcg_lit_int32(0);
   for (idx19 = 0; idx19 < 255; idx19++) {
     outC->_L11_then_IfBlock1.x_text[idx19] = ' ';
   }
   outC->_L11_then_IfBlock1.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L11_then_IfBlock1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L12_then_IfBlock1.valid = kcg_true;
-  outC->_L12_then_IfBlock1.system_clock = kcg_lit_int64(0);
-  outC->_L12_then_IfBlock1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L12_then_IfBlock1.system_clock = kcg_lit_int32(0);
+  outC->_L12_then_IfBlock1.textMessage_ID = kcg_lit_int32(0);
   outC->_L12_then_IfBlock1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L12_then_IfBlock1.l_text = kcg_lit_int64(0);
+  outC->_L12_then_IfBlock1.l_text = kcg_lit_int32(0);
   for (idx20 = 0; idx20 < 255; idx20++) {
     outC->_L12_then_IfBlock1.x_text[idx20] = ' ';
   }
   outC->_L12_then_IfBlock1.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L12_then_IfBlock1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L13_then_IfBlock1.valid = kcg_true;
-  outC->_L13_then_IfBlock1.system_clock = kcg_lit_int64(0);
-  outC->_L13_then_IfBlock1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L13_then_IfBlock1.system_clock = kcg_lit_int32(0);
+  outC->_L13_then_IfBlock1.textMessage_ID = kcg_lit_int32(0);
   outC->_L13_then_IfBlock1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L13_then_IfBlock1.l_text = kcg_lit_int64(0);
+  outC->_L13_then_IfBlock1.l_text = kcg_lit_int32(0);
   for (idx21 = 0; idx21 < 255; idx21++) {
     outC->_L13_then_IfBlock1.x_text[idx21] = ' ';
   }
   outC->_L13_then_IfBlock1.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L13_then_IfBlock1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L14_then_IfBlock1.valid = kcg_true;
-  outC->_L14_then_IfBlock1.system_clock = kcg_lit_int64(0);
-  outC->_L14_then_IfBlock1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L14_then_IfBlock1.system_clock = kcg_lit_int32(0);
+  outC->_L14_then_IfBlock1.textMessage_ID = kcg_lit_int32(0);
   outC->_L14_then_IfBlock1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L14_then_IfBlock1.l_text = kcg_lit_int64(0);
+  outC->_L14_then_IfBlock1.l_text = kcg_lit_int32(0);
   for (idx22 = 0; idx22 < 255; idx22++) {
     outC->_L14_then_IfBlock1.x_text[idx22] = ' ';
   }
@@ -710,10 +710,10 @@ void manageTextMessages_init_manage_TextMessages_Pkg(
   outC->_L14_then_IfBlock1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L16_then_IfBlock1 = con_undefined_DMI_Types_Pkg;
   outC->_L17_then_IfBlock1.valid = kcg_true;
-  outC->_L17_then_IfBlock1.system_clock = kcg_lit_int64(0);
-  outC->_L17_then_IfBlock1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L17_then_IfBlock1.system_clock = kcg_lit_int32(0);
+  outC->_L17_then_IfBlock1.textMessage_ID = kcg_lit_int32(0);
   outC->_L17_then_IfBlock1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L17_then_IfBlock1.l_text = kcg_lit_int64(0);
+  outC->_L17_then_IfBlock1.l_text = kcg_lit_int32(0);
   for (idx23 = 0; idx23 < 255; idx23++) {
     outC->_L17_then_IfBlock1.x_text[idx23] = ' ';
   }
@@ -725,20 +725,20 @@ void manageTextMessages_init_manage_TextMessages_Pkg(
   outC->_L18_then_IfBlock1.LevelNeedsAck = kcg_true;
   for (idx24 = 0; idx24 < 31; idx24++) {
     outC->outStatusList[idx24].valid = kcg_true;
-    outC->outStatusList[idx24].dmi_textMessageID = kcg_lit_int64(0);
-    outC->outStatusList[idx24].timeStamp = kcg_lit_int64(0);
+    outC->outStatusList[idx24].dmi_textMessageID = kcg_lit_int32(0);
+    outC->outStatusList[idx24].timeStamp = kcg_lit_int32(0);
     outC->outStatusList[idx24].textReport =
       Q_TEXTREPORT_No_driver_acknowledgement_report_required;
     outC->outStatusList[idx24].context = con_undefined_DMI_Types_Pkg;
-    outC->outStatusList[idx24].nid_textmessage = kcg_lit_int64(0);
+    outC->outStatusList[idx24].nid_textmessage = kcg_lit_int32(0);
     outC->outStatusList[idx24].whichLevel = M_LEVEL_Level_0;
     outC->outStatusList[idx24].whichMode = M_MODE_Full_Supervision;
   }
   outC->dmi_textMessage.valid = kcg_true;
-  outC->dmi_textMessage.system_clock = kcg_lit_int64(0);
-  outC->dmi_textMessage.textMessage_ID = kcg_lit_int64(0);
+  outC->dmi_textMessage.system_clock = kcg_lit_int32(0);
+  outC->dmi_textMessage.textMessage_ID = kcg_lit_int32(0);
   outC->dmi_textMessage.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->dmi_textMessage.l_text = kcg_lit_int64(0);
+  outC->dmi_textMessage.l_text = kcg_lit_int32(0);
   for (idx25 = 0; idx25 < 255; idx25++) {
     outC->dmi_textMessage.x_text[idx25] = ' ';
   }

@@ -21,7 +21,7 @@ typedef enum SmpType_t {
     SmpUint8,
     SmpUint16,
     SmpUint32,
-    SmpUint64, 
+    SmpUint32, 
     SmpFloat32,
     SmpFloat64,
     SmpChar,

@@ -47,7 +47,7 @@ typedef struct {
   Telegram_T_BG_Types_Pkg /* IfBlock4:else:_L6/ */ _L6_else_IfBlock4;
   centerOfBalisePosition_T_BG_Types_Pkg /* IfBlock4:else:_L7/ */ _L7_else_IfBlock4;
   centerOfBalisePosition_T_BG_Types_Pkg /* IfBlock2:then:_L48/ */ _L48_then_IfBlock2;
-  kcg_int64 /* IfBlock2:then:_L46/ */ _L46_then_IfBlock2;
+  kcg_int32 /* IfBlock2:then:_L46/ */ _L46_then_IfBlock2;
   BGCollector_T_Receive_TrackSide_Msg_Pkg /* IfBlock2:then:_L45/ */ _L45_then_IfBlock2;
   TelegramArray_T_BG_Types_Pkg /* IfBlock2:then:_L41/ */ _L41_then_IfBlock2;
   TelegramArray_T_BG_Types_Pkg /* IfBlock2:then:_L29/ */ _L29_then_IfBlock2;
@@ -56,7 +56,7 @@ typedef struct {
   BG_Message_T_BG_Types_Pkg /* IfBlock2:then:_L7/ */ _L7_then_IfBlock2;
   TelegramArray_T_BG_Types_Pkg /* IfBlock2:else:_L12/ */ _L12_else_IfBlock2;
   centerOfBalisePosition_T_BG_Types_Pkg /* IfBlock2:else:_L11/ */ _L11_else_IfBlock2;
-  kcg_int64 /* IfBlock2:else:_L6/ */ _L6_else_IfBlock2;
+  kcg_int32 /* IfBlock2:else:_L6/ */ _L6_else_IfBlock2;
   BG_Message_T_BG_Types_Pkg /* IfBlock2:else:_L3/ */ _L3_else_IfBlock2;
   kcg_bool /* IfBlock2:else:_L1/ */ _L1_else_IfBlock2;
   TelegramArray_T_BG_Types_Pkg /* IfBlock2:else:IfBlock3:else:_L1/ */ _L1_else_IfBlock3_else_IfBlock2;

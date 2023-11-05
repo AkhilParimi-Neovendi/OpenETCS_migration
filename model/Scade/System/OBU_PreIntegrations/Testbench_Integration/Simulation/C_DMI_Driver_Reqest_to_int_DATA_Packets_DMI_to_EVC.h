@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _C_DMI_Driver_Reqest_to_int_DATA_Packets_DMI_to_EVC_H_
 #define _C_DMI_Driver_Reqest_to_int_DATA_Packets_DMI_to_EVC_H_
@@ -27,9 +27,9 @@ typedef struct {
   T_internal_Type_Obu_BasicTypes_Pkg /* _L3/ */ _L3;
   DMI_Request_T_DMI_Types_Pkg /* _L2/ */ _L2;
   DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg /* _L13/ */ _L13;
-  kcg_int64 /* _L15/ */ _L15;
-  array_int64_3 /* _L16/ */ _L16;
-  kcg_int64 /* _L21/ */ _L21;
+  kcg_int32 /* _L15/ */ _L15;
+  array_int32_3 /* _L16/ */ _L16;
+  kcg_int32 /* _L21/ */ _L21;
 } outC_C_DMI_Driver_Reqest_to_int_DATA_Packets_DMI_to_EVC;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -54,6 +54,6 @@ extern void C_DMI_Driver_Reqest_to_int_init_DATA_Packets_DMI_to_EVC(
 #endif /* _C_DMI_Driver_Reqest_to_int_DATA_Packets_DMI_to_EVC_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_DMI_Driver_Reqest_to_int_DATA_Packets_DMI_to_EVC.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

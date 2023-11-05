@@ -14,7 +14,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* scaledValue/ */ scaledValue;
+  kcg_int32 /* scaledValue/ */ scaledValue;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
@@ -22,14 +22,14 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   Q_SCALE /* _L1/ */ _L1;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L6/ */ _L6;
   Location_T_Obu_BasicTypes_Pkg /* _L7/ */ _L7;
   Location_T_Obu_BasicTypes_Pkg /* _L8/ */ _L8;
   Location_T_Obu_BasicTypes_Pkg /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
-  kcg_int64 /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L10/ */ _L10;
+  kcg_int32 /* _L11/ */ _L11;
+  kcg_int32 /* _L12/ */ _L12;
 } outC_scaleInternalType_ProvidePositionReport_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -38,7 +38,7 @@ extern void scaleInternalType_ProvidePositionReport_Pkg(
   /* scale/ */
   Q_SCALE scale,
   /* internalValue/ */
-  kcg_int64 internalValue,
+  kcg_int32 internalValue,
   outC_scaleInternalType_ProvidePositionReport_Pkg *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

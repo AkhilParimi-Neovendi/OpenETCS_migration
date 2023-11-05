@@ -38,7 +38,7 @@ void C_M154_to_header_TM_RBC_conversions(
     outC->_L4,
     &outC->Context_CAST_NID_MESSAGE_to_int_1);
   outC->_L20 = outC->Context_CAST_NID_MESSAGE_to_int_1.nid_message_int;
-  outC->_L19 = kcg_lit_int64(0);
+  outC->_L19 = kcg_lit_int32(0);
   outC->_L3 = outC->_L1.valid;
   outC->_L2.valid = outC->_L3;
   outC->_L2.nid_message = outC->_L20;
@@ -57,37 +57,37 @@ void C_M154_to_header_TM_RBC_conversions(
 void C_M154_to_header_init_TM_RBC_conversions(
   outC_C_M154_to_header_TM_RBC_conversions *outC)
 {
-  outC->_L20 = kcg_lit_int64(0);
-  outC->_L21 = kcg_lit_int64(0);
-  outC->_L22 = kcg_lit_int64(0);
-  outC->_L23 = kcg_lit_int64(0);
-  outC->_L19 = kcg_lit_int64(0);
+  outC->_L20 = kcg_lit_int32(0);
+  outC->_L21 = kcg_lit_int32(0);
+  outC->_L22 = kcg_lit_int32(0);
+  outC->_L23 = kcg_lit_int32(0);
+  outC->_L19 = kcg_lit_int32(0);
   outC->_L3 = kcg_true;
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
   outC->_L2.valid = kcg_true;
-  outC->_L2.nid_message = kcg_lit_int64(0);
-  outC->_L2.l_message = kcg_lit_int64(0);
-  outC->_L2.t_train = kcg_lit_int64(0);
-  outC->_L2.nid_engine = kcg_lit_int64(0);
-  outC->_L2.field1 = kcg_lit_int64(0);
-  outC->_L2.field2 = kcg_lit_int64(0);
-  outC->_L2.field3 = kcg_lit_int64(0);
+  outC->_L2.nid_message = kcg_lit_int32(0);
+  outC->_L2.l_message = kcg_lit_int32(0);
+  outC->_L2.t_train = kcg_lit_int32(0);
+  outC->_L2.nid_engine = kcg_lit_int32(0);
+  outC->_L2.field1 = kcg_lit_int32(0);
+  outC->_L2.field2 = kcg_lit_int32(0);
+  outC->_L2.field3 = kcg_lit_int32(0);
   outC->_L1.valid = kcg_true;
-  outC->_L1.nid_message = kcg_lit_int64(0);
-  outC->_L1.l_message = kcg_lit_int64(0);
-  outC->_L1.t_train = kcg_lit_int64(0);
-  outC->_L1.nid_engine = kcg_lit_int64(0);
+  outC->_L1.nid_message = kcg_lit_int32(0);
+  outC->_L1.l_message = kcg_lit_int32(0);
+  outC->_L1.t_train = kcg_lit_int32(0);
+  outC->_L1.nid_engine = kcg_lit_int32(0);
   outC->Message_Header_Out.valid = kcg_true;
-  outC->Message_Header_Out.nid_message = kcg_lit_int64(0);
-  outC->Message_Header_Out.l_message = kcg_lit_int64(0);
-  outC->Message_Header_Out.t_train = kcg_lit_int64(0);
-  outC->Message_Header_Out.nid_engine = kcg_lit_int64(0);
-  outC->Message_Header_Out.field1 = kcg_lit_int64(0);
-  outC->Message_Header_Out.field2 = kcg_lit_int64(0);
-  outC->Message_Header_Out.field3 = kcg_lit_int64(0);
+  outC->Message_Header_Out.nid_message = kcg_lit_int32(0);
+  outC->Message_Header_Out.l_message = kcg_lit_int32(0);
+  outC->Message_Header_Out.t_train = kcg_lit_int32(0);
+  outC->Message_Header_Out.nid_engine = kcg_lit_int32(0);
+  outC->Message_Header_Out.field1 = kcg_lit_int32(0);
+  outC->Message_Header_Out.field2 = kcg_lit_int32(0);
+  outC->Message_Header_Out.field3 = kcg_lit_int32(0);
   /* _L20=(TM_conversions::CAST_NID_MESSAGE_to_int#1)/ */
   CAST_NID_MESSAGE_to_int_init_TM_conversions(
     &outC->Context_CAST_NID_MESSAGE_to_int_1);

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _positionedBGs_ids_equal_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_
 #define _positionedBGs_ids_equal_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_
@@ -59,6 +59,6 @@ extern void positionedBGs_ids_equal_init_CalculateTrainPosition_Pkg_BG_utilities
 #endif /* _positionedBGs_ids_equal_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** positionedBGs_ids_equal_CalculateTrainPosition_Pkg_BG_utilities_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

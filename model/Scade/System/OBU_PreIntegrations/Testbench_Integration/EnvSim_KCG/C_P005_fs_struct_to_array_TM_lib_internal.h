@@ -22,14 +22,14 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   P005_section_int_T_TM /* _L1/ */ _L1;
-  array_int64_7 /* _L2/ */ _L2;
-  kcg_int64 /* _L6/ */ _L6;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L12/ */ _L12;
-  kcg_int64 /* _L11/ */ _L11;
-  kcg_int64 /* _L10/ */ _L10;
+  array_int32_7 /* _L2/ */ _L2;
+  kcg_int32 /* _L6/ */ _L6;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L12/ */ _L12;
+  kcg_int32 /* _L11/ */ _L11;
+  kcg_int32 /* _L10/ */ _L10;
 } outC_C_P005_fs_struct_to_array_TM_lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */

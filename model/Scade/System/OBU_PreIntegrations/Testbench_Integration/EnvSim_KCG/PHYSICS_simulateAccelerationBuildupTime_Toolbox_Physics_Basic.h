@@ -14,30 +14,30 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_float64 /* acceleration/ */ acceleration;
+  kcg_float32 /* acceleration/ */ acceleration;
   /* -----------------------  no local probes  ----------------------- */
   /* ----------------------- local memories  ------------------------- */
   kcg_bool init;
-  kcg_float64 /* currentAcceleration/ */ currentAcceleration;
+  kcg_float32 /* currentAcceleration/ */ currentAcceleration;
   /* -------------------- no sub nodes' contexts  -------------------- */
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_float64 /* _L1/ */ _L1;
-  kcg_float64 /* _L2/ */ _L2;
-  kcg_float64 /* _L3/ */ _L3;
-  kcg_float64 /* _L5/ */ _L5;
-  kcg_float64 /* _L6/ */ _L6;
-  kcg_float64 /* _L7/ */ _L7;
-  kcg_float64 /* _L8/ */ _L8;
-  kcg_float64 /* _L9/ */ _L9;
+  kcg_float32 /* _L1/ */ _L1;
+  kcg_float32 /* _L2/ */ _L2;
+  kcg_float32 /* _L3/ */ _L3;
+  kcg_float32 /* _L5/ */ _L5;
+  kcg_float32 /* _L6/ */ _L6;
+  kcg_float32 /* _L7/ */ _L7;
+  kcg_float32 /* _L8/ */ _L8;
+  kcg_float32 /* _L9/ */ _L9;
 } outC_PHYSICS_simulateAccelerationBuildupTime_Toolbox_Physics_Basic;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* Toolbox::Physics::Basic::PHYSICS_simulateAccelerationBuildupTime/ */
 extern void PHYSICS_simulateAccelerationBuildupTime_Toolbox_Physics_Basic(
   /* requestedAcceleration/ */
-  kcg_float64 requestedAcceleration,
+  kcg_float32 requestedAcceleration,
   outC_PHYSICS_simulateAccelerationBuildupTime_Toolbox_Physics_Basic *outC);
 
 extern void PHYSICS_simulateAccelerationBuildupTime_reset_Toolbox_Physics_Basic(

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -18,15 +18,15 @@ void packet_11_trainData_pkg(
   /* _L61=(RadioSupport_Pkg::vIntern2Extern#1)/ */
   vIntern2Extern_RadioSupport_Pkg(outC->_L19, &outC->Context_vIntern2Extern_1);
   outC->_L61 = outC->Context_vIntern2Extern_1.v_SRS;
-  outC->_L60 = kcg_lit_int64(100);
+  outC->_L60 = kcg_lit_int32(100);
   outC->_L18 = outC->_L15.trainLength;
   outC->_L59 = outC->_L18 / outC->_L60;
   outC->_L58 = cp011_ValidatedTrainData_ids;
-  outC->_L57 = kcg_lit_int64(0);
-  outC->_L49 = kcg_lit_int64(1);
+  outC->_L57 = kcg_lit_int32(0);
+  outC->_L49 = kcg_lit_int32(1);
   outC->_L26 = outC->_L15.numberNationalSystems;
   outC->_L50 = outC->_L26 - outC->_L49;
-  outC->_L44 = kcg_lit_int64(1);
+  outC->_L44 = kcg_lit_int32(1);
   outC->_L42 = outC->_L15.numberTractionSystems;
   outC->_L43 = outC->_L42 - outC->_L44;
   outC->_L41 = outC->_L15.trainCategory;
@@ -74,103 +74,103 @@ void packet_11_init_trainData_pkg(outC_packet_11_trainData_pkg *outC)
   static kcg_size idx6;
   static kcg_size idx7;
 
-  outC->_L61 = kcg_lit_int64(0);
-  outC->_L60 = kcg_lit_int64(0);
-  outC->_L59 = kcg_lit_int64(0);
-  outC->_L58 = kcg_lit_int64(0);
-  outC->_L57 = kcg_lit_int64(0);
-  outC->_L49 = kcg_lit_int64(0);
-  outC->_L50 = kcg_lit_int64(0);
-  outC->_L44 = kcg_lit_int64(0);
-  outC->_L43 = kcg_lit_int64(0);
-  outC->_L42 = kcg_lit_int64(0);
+  outC->_L61 = kcg_lit_int32(0);
+  outC->_L60 = kcg_lit_int32(0);
+  outC->_L59 = kcg_lit_int32(0);
+  outC->_L58 = kcg_lit_int32(0);
+  outC->_L57 = kcg_lit_int32(0);
+  outC->_L49 = kcg_lit_int32(0);
+  outC->_L50 = kcg_lit_int32(0);
+  outC->_L44 = kcg_lit_int32(0);
+  outC->_L43 = kcg_lit_int32(0);
+  outC->_L42 = kcg_lit_int32(0);
   outC->_L41 =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->_L40 = NC_CDTRAIN_Cant_Deficiency_80_mm;
   for (idx = 0; idx < 5; idx++) {
-    outC->_L27[idx] = kcg_lit_int64(0);
+    outC->_L27[idx] = kcg_lit_int32(0);
   }
-  outC->_L26 = kcg_lit_int64(0);
+  outC->_L26 = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 4; idx1++) {
     outC->_L25[idx1].m_voltage = M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->_L25[idx1].nid_ctraction = kcg_lit_int64(0);
+    outC->_L25[idx1].nid_ctraction = kcg_lit_int32(0);
   }
-  outC->_L23 = kcg_lit_int64(0);
+  outC->_L23 = kcg_lit_int32(0);
   outC->_L22 = M_AIRTIGHT_Not_fitted;
   outC->_L21 = M_AXLELOADCAT_A;
   outC->_L20 =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
-  outC->_L19 = kcg_lit_int64(0);
-  outC->_L18 = kcg_lit_int64(0);
+  outC->_L19 = kcg_lit_int32(0);
+  outC->_L18 = kcg_lit_int32(0);
   outC->_L15.valid = kcg_true;
   outC->_L15.acknowledgedByDriver = kcg_true;
   outC->_L15.trainCategory =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->_L15.cantDeficientcy = NC_CDTRAIN_Cant_Deficiency_80_mm;
-  outC->_L15.trainLength = kcg_lit_int64(0);
-  outC->_L15.brakePerctage = kcg_lit_int64(0);
-  outC->_L15.maxTrainSpeed = kcg_lit_int64(0);
+  outC->_L15.trainLength = kcg_lit_int32(0);
+  outC->_L15.brakePerctage = kcg_lit_int32(0);
+  outC->_L15.maxTrainSpeed = kcg_lit_int32(0);
   outC->_L15.loadingGauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L15.axleLoadCategory = M_AXLELOADCAT_A;
   outC->_L15.airtightSystem = M_AIRTIGHT_Not_fitted;
-  outC->_L15.axleNumber = kcg_lit_int64(0);
-  outC->_L15.numberNationalSystems = kcg_lit_int64(0);
+  outC->_L15.axleNumber = kcg_lit_int32(0);
+  outC->_L15.numberNationalSystems = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 5; idx2++) {
-    outC->_L15.nationSystems[idx2] = kcg_lit_int64(0);
+    outC->_L15.nationSystems[idx2] = kcg_lit_int32(0);
   }
-  outC->_L15.numberTractionSystems = kcg_lit_int64(0);
+  outC->_L15.numberTractionSystems = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 4; idx3++) {
     outC->_L15.tractionSystem[idx3].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->_L15.tractionSystem[idx3].nid_ctraction = kcg_lit_int64(0);
+    outC->_L15.tractionSystem[idx3].nid_ctraction = kcg_lit_int32(0);
   }
   outC->_L14 = kcg_true;
   outC->_L12.valid = kcg_true;
-  outC->_L12.nid_packet = kcg_lit_int64(0);
-  outC->_L12.l_packet = kcg_lit_int64(0);
+  outC->_L12.nid_packet = kcg_lit_int32(0);
+  outC->_L12.l_packet = kcg_lit_int32(0);
   outC->_L12.nc_cdtrain = NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L12.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->_L12.l_train = kcg_lit_int64(0);
-  outC->_L12.v_maxtrain = kcg_lit_int64(0);
+  outC->_L12.l_train = kcg_lit_int32(0);
+  outC->_L12.v_maxtrain = kcg_lit_int32(0);
   outC->_L12.m_loadinggauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L12.m_axleloadcat = M_AXLELOADCAT_A;
   outC->_L12.m_airtight = M_AIRTIGHT_Not_fitted;
-  outC->_L12.n_axle = kcg_lit_int64(0);
-  outC->_L12.n_iter_voltage = kcg_lit_int64(0);
+  outC->_L12.n_axle = kcg_lit_int32(0);
+  outC->_L12.n_iter_voltage = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 4; idx4++) {
     outC->_L12.voltage_list[idx4].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->_L12.voltage_list[idx4].nid_ctraction = kcg_lit_int64(0);
+    outC->_L12.voltage_list[idx4].nid_ctraction = kcg_lit_int32(0);
   }
-  outC->_L12.n_iter_nid_ntc = kcg_lit_int64(0);
+  outC->_L12.n_iter_nid_ntc = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 5; idx5++) {
-    outC->_L12.nid_ntc_list[idx5] = kcg_lit_int64(0);
+    outC->_L12.nid_ntc_list[idx5] = kcg_lit_int32(0);
   }
   outC->p11.valid = kcg_true;
-  outC->p11.nid_packet = kcg_lit_int64(0);
-  outC->p11.l_packet = kcg_lit_int64(0);
+  outC->p11.nid_packet = kcg_lit_int32(0);
+  outC->p11.l_packet = kcg_lit_int32(0);
   outC->p11.nc_cdtrain = NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->p11.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->p11.l_train = kcg_lit_int64(0);
-  outC->p11.v_maxtrain = kcg_lit_int64(0);
+  outC->p11.l_train = kcg_lit_int32(0);
+  outC->p11.v_maxtrain = kcg_lit_int32(0);
   outC->p11.m_loadinggauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->p11.m_axleloadcat = M_AXLELOADCAT_A;
   outC->p11.m_airtight = M_AIRTIGHT_Not_fitted;
-  outC->p11.n_axle = kcg_lit_int64(0);
-  outC->p11.n_iter_voltage = kcg_lit_int64(0);
+  outC->p11.n_axle = kcg_lit_int32(0);
+  outC->p11.n_iter_voltage = kcg_lit_int32(0);
   for (idx6 = 0; idx6 < 4; idx6++) {
     outC->p11.voltage_list[idx6].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->p11.voltage_list[idx6].nid_ctraction = kcg_lit_int64(0);
+    outC->p11.voltage_list[idx6].nid_ctraction = kcg_lit_int32(0);
   }
-  outC->p11.n_iter_nid_ntc = kcg_lit_int64(0);
+  outC->p11.n_iter_nid_ntc = kcg_lit_int32(0);
   for (idx7 = 0; idx7 < 5; idx7++) {
-    outC->p11.nid_ntc_list[idx7] = kcg_lit_int64(0);
+    outC->p11.nid_ntc_list[idx7] = kcg_lit_int32(0);
   }
   /* _L61=(RadioSupport_Pkg::vIntern2Extern#1)/ */
   vIntern2Extern_init_RadioSupport_Pkg(&outC->Context_vIntern2Extern_1);
@@ -190,6 +190,6 @@ void packet_11_reset_trainData_pkg(outC_packet_11_trainData_pkg *outC)
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** packet_11_trainData_pkg.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

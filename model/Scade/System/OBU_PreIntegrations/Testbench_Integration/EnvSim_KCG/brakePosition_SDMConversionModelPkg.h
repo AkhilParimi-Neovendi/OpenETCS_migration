@@ -26,28 +26,28 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_float64 /* @1/Ma_Output/ */ Ma_Output_Max_2_float64;
-  kcg_float64 /* @1/I2/ */ I2_Max_2_float64;
-  kcg_float64 /* @1/I1/ */ I1_Max_2_float64;
-  kcg_float64 /* @1/_L4/ */ _L4_Max_2_float64;
-  kcg_bool /* @1/_L3/ */ _L3_Max_2_float64;
-  kcg_float64 /* @1/_L2/ */ _L2_Max_2_float64;
-  kcg_float64 /* @1/_L1/ */ _L1_Max_2_float64;
+  kcg_float32 /* @1/Ma_Output/ */ Ma_Output_Max_2_float32;
+  kcg_float32 /* @1/I2/ */ I2_Max_2_float32;
+  kcg_float32 /* @1/I1/ */ I1_Max_2_float32;
+  kcg_float32 /* @1/_L4/ */ _L4_Max_2_float32;
+  kcg_bool /* @1/_L3/ */ _L3_Max_2_float32;
+  kcg_float32 /* @1/_L2/ */ _L2_Max_2_float32;
+  kcg_float32 /* @1/_L1/ */ _L1_Max_2_float32;
   T_internal_real_Type_SDM_Types_Pkg /* _L10/ */ _L10;
   t_Brake_t_SDMModelPkg /* _L14/ */ _L14;
-  kcg_float64 /* _L16/ */ _L16;
-  kcg_float64 /* _L17/ */ _L17;
-  kcg_float64 /* _L18/ */ _L18;
-  kcg_float64 /* _L19/ */ _L19;
-  kcg_float64 /* _L20/ */ _L20;
-  kcg_float64 /* _L21/ */ _L21;
+  kcg_float32 /* _L16/ */ _L16;
+  kcg_float32 /* _L17/ */ _L17;
+  kcg_float32 /* _L18/ */ _L18;
+  kcg_float32 /* _L19/ */ _L19;
+  kcg_float32 /* _L20/ */ _L20;
+  kcg_float32 /* _L21/ */ _L21;
   coeff_BrakeBasic_t_SDMConversionModelPkg /* _L23/ */ _L23;
   kcg_bool /* _L27/ */ _L27;
-  kcg_float64 /* _L28/ */ _L28;
+  kcg_float32 /* _L28/ */ _L28;
   coeff_BrakeBasic_t_SDMConversionModelPkg /* _L29/ */ _L29;
   coeff_BrakeBasic_t_SDMConversionModelPkg /* _L31/ */ _L31;
   coeff_BrakeBasic_t_SDMConversionModelPkg /* _L33/ */ _L33;
-  kcg_float64 /* _L34/ */ _L34;
+  kcg_float32 /* _L34/ */ _L34;
   T_internal_real_Type_SDM_Types_Pkg /* _L36/ */ _L36;
   coeff_BrakeBasic_t_SDMConversionModelPkg /* _L37/ */ _L37;
   coeff_BrakeBasic_t_SDMConversionModelPkg /* _L38/ */ _L38;

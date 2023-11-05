@@ -27,7 +27,7 @@ typedef struct {
   kcg_bool /* _L7/ */ _L7;
   NC_TRAIN /* _L8/ */ _L8;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   V_internal_Type_Obu_BasicTypes_Pkg /* _L11/ */ _L11;
   M_AXLELOADCAT /* _L12/ */ _L12;
   M_AIRTIGHT /* _L13/ */ _L13;

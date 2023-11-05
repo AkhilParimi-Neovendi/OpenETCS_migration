@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -17,7 +17,7 @@ void DetermineNewIndices_SDM_GradientAcceleration_Pkg(
 {
   kcg_copy_ACC_SDM_GradientAcceleration_Pkg(&outC->_L11, Accu);
   outC->_L3 = outC->_L11.frontIndex;
-  outC->_L6 = kcg_lit_int64(1);
+  outC->_L6 = kcg_lit_int32(1);
   outC->_L5 = outC->_L3 + outC->_L6;
   outC->_L2 = IncFrontIdx;
   /* _L9= */
@@ -46,25 +46,25 @@ void DetermineNewIndices_init_SDM_GradientAcceleration_Pkg(
 {
   static kcg_size idx;
 
-  outC->_L11.frontPos = kcg_lit_float64(0.0);
-  outC->_L11.frontIndex = kcg_lit_int64(0);
-  outC->_L11.rearPos = kcg_lit_float64(0.0);
-  outC->_L11.rearIndex = kcg_lit_int64(0);
+  outC->_L11.frontPos = kcg_lit_float32(0.0);
+  outC->_L11.frontIndex = kcg_lit_int32(0);
+  outC->_L11.rearPos = kcg_lit_float32(0.0);
+  outC->_L11.rearIndex = kcg_lit_int32(0);
   for (idx = 0; idx < 100; idx++) {
-    outC->_L11.compensatedGradientProfile[idx].location = kcg_lit_float64(0.0);
-    outC->_L11.compensatedGradientProfile[idx].gradient = kcg_lit_float64(0.0);
+    outC->_L11.compensatedGradientProfile[idx].location = kcg_lit_float32(0.0);
+    outC->_L11.compensatedGradientProfile[idx].gradient = kcg_lit_float32(0.0);
     outC->_L11.compensatedGradientProfile[idx].valid = kcg_true;
   }
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L2 = kcg_true;
-  outC->rearIndex = kcg_lit_int64(0);
-  outC->frontIndex = kcg_lit_int64(0);
+  outC->rearIndex = kcg_lit_int32(0);
+  outC->frontIndex = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -80,6 +80,6 @@ void DetermineNewIndices_reset_SDM_GradientAcceleration_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** DetermineNewIndices_SDM_GradientAcceleration_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

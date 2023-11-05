@@ -23,9 +23,9 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   NID_C /* _L1/ */ _L1;
   NID_BG /* _L2/ */ _L2;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L5/ */ _L5;
 } outC_convert2LRBG_ProvidePositionReport_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

@@ -19,10 +19,10 @@ kcg_bool kcg_comp_array_bool_8(array_bool_8 *kcg_c1, array_bool_8 *kcg_c2)
 }
 #endif /* kcg_use_array_bool_8 */
 
-#ifdef kcg_use_array_int64_891
-kcg_bool kcg_comp_array_int64_891(
-  array_int64_891 *kcg_c1,
-  array_int64_891 *kcg_c2)
+#ifdef kcg_use_array_int32_891
+kcg_bool kcg_comp_array_int32_891(
+  array_int32_891 *kcg_c1,
+  array_int32_891 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -33,7 +33,7 @@ kcg_bool kcg_comp_array_int64_891(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_891 */
+#endif /* kcg_use_array_int32_891 */
 
 #ifdef kcg_use_array
 kcg_bool kcg_comp_array(array *kcg_c1, array *kcg_c2)
@@ -65,10 +65,10 @@ kcg_bool kcg_comp__2_array(_2_array *kcg_c1, _2_array *kcg_c2)
 }
 #endif /* kcg_use__2_array */
 
-#ifdef kcg_use_array_int64_888
-kcg_bool kcg_comp_array_int64_888(
-  array_int64_888 *kcg_c1,
-  array_int64_888 *kcg_c2)
+#ifdef kcg_use_array_int32_888
+kcg_bool kcg_comp_array_int32_888(
+  array_int32_888 *kcg_c1,
+  array_int32_888 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -79,7 +79,7 @@ kcg_bool kcg_comp_array_int64_888(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_888 */
+#endif /* kcg_use_array_int32_888 */
 
 #ifdef kcg_use_GradientProfile_real_compensated_t_SDM_GradientAcceleration_types
 kcg_bool kcg_comp_GradientProfile_real_compensated_t_SDM_GradientAcceleration_types(
@@ -119,8 +119,8 @@ kcg_bool kcg_comp_A_gradient_t_SDM_GradientAcceleration_types(
 }
 #endif /* kcg_use_A_gradient_t_SDM_GradientAcceleration_types */
 
-#ifdef kcg_use_array_int64_64
-kcg_bool kcg_comp_array_int64_64(array_int64_64 *kcg_c1, array_int64_64 *kcg_c2)
+#ifdef kcg_use_array_int32_64
+kcg_bool kcg_comp_array_int32_64(array_int32_64 *kcg_c1, array_int32_64 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -131,7 +131,7 @@ kcg_bool kcg_comp_array_int64_64(array_int64_64 *kcg_c1, array_int64_64 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_64 */
+#endif /* kcg_use_array_int32_64 */
 
 #ifdef kcg_use__3_array
 kcg_bool kcg_comp__3_array(_3_array *kcg_c1, _3_array *kcg_c2)
@@ -200,10 +200,10 @@ kcg_bool kcg_comp_M_TrainTrackRadioOutputBuffer_t_TM_lib_internal(
 }
 #endif /* kcg_use_M_TrainTrackRadioOutputBuffer_t_TM_lib_internal */
 
-#ifdef kcg_use_array_int64_894
-kcg_bool kcg_comp_array_int64_894(
-  array_int64_894 *kcg_c1,
-  array_int64_894 *kcg_c2)
+#ifdef kcg_use_array_int32_894
+kcg_bool kcg_comp_array_int32_894(
+  array_int32_894 *kcg_c1,
+  array_int32_894 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -214,7 +214,7 @@ kcg_bool kcg_comp_array_int64_894(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_894 */
+#endif /* kcg_use_array_int32_894 */
 
 #ifdef kcg_use__6_array
 kcg_bool kcg_comp__6_array(_6_array *kcg_c1, _6_array *kcg_c2)
@@ -230,8 +230,8 @@ kcg_bool kcg_comp__6_array(_6_array *kcg_c1, _6_array *kcg_c2)
 }
 #endif /* kcg_use__6_array */
 
-#ifdef kcg_use_array_int64_70
-kcg_bool kcg_comp_array_int64_70(array_int64_70 *kcg_c1, array_int64_70 *kcg_c2)
+#ifdef kcg_use_array_int32_70
+kcg_bool kcg_comp_array_int32_70(array_int32_70 *kcg_c1, array_int32_70 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -242,12 +242,12 @@ kcg_bool kcg_comp_array_int64_70(array_int64_70 *kcg_c1, array_int64_70 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_70 */
+#endif /* kcg_use_array_int32_70 */
 
-#ifdef kcg_use_array_int64_396
-kcg_bool kcg_comp_array_int64_396(
-  array_int64_396 *kcg_c1,
-  array_int64_396 *kcg_c2)
+#ifdef kcg_use_array_int32_396
+kcg_bool kcg_comp_array_int32_396(
+  array_int32_396 *kcg_c1,
+  array_int32_396 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -258,7 +258,7 @@ kcg_bool kcg_comp_array_int64_396(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_396 */
+#endif /* kcg_use_array_int32_396 */
 
 #ifdef kcg_use_DMI_EVC_Level_Data_int_array_T_DATA
 kcg_bool kcg_comp_DMI_EVC_Level_Data_int_array_T_DATA(
@@ -310,10 +310,10 @@ kcg_bool kcg_comp_MovementAuthoritySectionlist_t_TrackAtlasTypes(
 }
 #endif /* kcg_use_MovementAuthoritySectionlist_t_TrackAtlasTypes */
 
-#ifdef kcg_use_array_int64_150
-kcg_bool kcg_comp_array_int64_150(
-  array_int64_150 *kcg_c1,
-  array_int64_150 *kcg_c2)
+#ifdef kcg_use_array_int32_150
+kcg_bool kcg_comp_array_int32_150(
+  array_int32_150 *kcg_c1,
+  array_int32_150 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -324,7 +324,7 @@ kcg_bool kcg_comp_array_int64_150(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_150 */
+#endif /* kcg_use_array_int32_150 */
 
 #ifdef kcg_use__8_array
 kcg_bool kcg_comp__8_array(_8_array *kcg_c1, _8_array *kcg_c2)
@@ -410,10 +410,10 @@ kcg_bool kcg_comp__9_array(_9_array *kcg_c1, _9_array *kcg_c2)
 }
 #endif /* kcg_use__9_array */
 
-#ifdef kcg_use_array_int64_494
-kcg_bool kcg_comp_array_int64_494(
-  array_int64_494 *kcg_c1,
-  array_int64_494 *kcg_c2)
+#ifdef kcg_use_array_int32_494
+kcg_bool kcg_comp_array_int32_494(
+  array_int32_494 *kcg_c1,
+  array_int32_494 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -424,7 +424,7 @@ kcg_bool kcg_comp_array_int64_494(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_494 */
+#endif /* kcg_use_array_int32_494 */
 
 #ifdef kcg_use_DMI_Track_Description_int_array_T
 kcg_bool kcg_comp_DMI_Track_Description_int_array_T(
@@ -442,10 +442,10 @@ kcg_bool kcg_comp_DMI_Track_Description_int_array_T(
 }
 #endif /* kcg_use_DMI_Track_Description_int_array_T */
 
-#ifdef kcg_use_array_int64_491
-kcg_bool kcg_comp_array_int64_491(
-  array_int64_491 *kcg_c1,
-  array_int64_491 *kcg_c2)
+#ifdef kcg_use_array_int32_491
+kcg_bool kcg_comp_array_int32_491(
+  array_int32_491 *kcg_c1,
+  array_int32_491 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -456,7 +456,7 @@ kcg_bool kcg_comp_array_int64_491(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_491 */
+#endif /* kcg_use_array_int32_491 */
 
 #ifdef kcg_use_array_bool_30
 kcg_bool kcg_comp_array_bool_30(array_bool_30 *kcg_c1, array_bool_30 *kcg_c2)
@@ -486,23 +486,23 @@ kcg_bool kcg_comp_array_bool_7(array_bool_7 *kcg_c1, array_bool_7 *kcg_c2)
 }
 #endif /* kcg_use_array_bool_7 */
 
-#ifdef kcg_use_array_float64_100_13
-kcg_bool kcg_comp_array_float64_100_13(
-  array_float64_100_13 *kcg_c1,
-  array_float64_100_13 *kcg_c2)
+#ifdef kcg_use_array_float32_100_13
+kcg_bool kcg_comp_array_float32_100_13(
+  array_float32_100_13 *kcg_c1,
+  array_float32_100_13 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
 
   kcg_equ = kcg_true;
   for (kcg_ci = 0; kcg_ci < 13; kcg_ci++) {
-    kcg_equ = kcg_equ & kcg_comp_array_float64_100(
+    kcg_equ = kcg_equ & kcg_comp_array_float32_100(
         &(*kcg_c1)[kcg_ci],
         &(*kcg_c2)[kcg_ci]);
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_float64_100_13 */
+#endif /* kcg_use_array_float32_100_13 */
 
 #ifdef kcg_use_P011_voltage_sectionlist_array_T_TM_TrainToTrack
 kcg_bool kcg_comp_P011_voltage_sectionlist_array_T_TM_TrainToTrack(
@@ -522,8 +522,8 @@ kcg_bool kcg_comp_P011_voltage_sectionlist_array_T_TM_TrainToTrack(
 }
 #endif /* kcg_use_P011_voltage_sectionlist_array_T_TM_TrainToTrack */
 
-#ifdef kcg_use_array_int64_2
-kcg_bool kcg_comp_array_int64_2(array_int64_2 *kcg_c1, array_int64_2 *kcg_c2)
+#ifdef kcg_use_array_int32_2
+kcg_bool kcg_comp_array_int32_2(array_int32_2 *kcg_c1, array_int32_2 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -534,7 +534,7 @@ kcg_bool kcg_comp_array_int64_2(array_int64_2 *kcg_c1, array_int64_2 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_2 */
+#endif /* kcg_use_array_int32_2 */
 
 #ifdef kcg_use__10_array
 kcg_bool kcg_comp__10_array(_10_array *kcg_c1, _10_array *kcg_c2)
@@ -566,8 +566,8 @@ kcg_bool kcg_comp_array_bool_110(array_bool_110 *kcg_c1, array_bool_110 *kcg_c2)
 }
 #endif /* kcg_use_array_bool_110 */
 
-#ifdef kcg_use_array_int64_8
-kcg_bool kcg_comp_array_int64_8(array_int64_8 *kcg_c1, array_int64_8 *kcg_c2)
+#ifdef kcg_use_array_int32_8
+kcg_bool kcg_comp_array_int32_8(array_int32_8 *kcg_c1, array_int32_8 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -578,7 +578,7 @@ kcg_bool kcg_comp_array_int64_8(array_int64_8 *kcg_c1, array_int64_8 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_8 */
+#endif /* kcg_use_array_int32_8 */
 
 #ifdef kcg_use__11_array
 kcg_bool kcg_comp__11_array(_11_array *kcg_c1, _11_array *kcg_c2)
@@ -642,8 +642,8 @@ kcg_bool kcg_comp__12_array(_12_array *kcg_c1, _12_array *kcg_c2)
 }
 #endif /* kcg_use__12_array */
 
-#ifdef kcg_use_array_int64_5
-kcg_bool kcg_comp_array_int64_5(array_int64_5 *kcg_c1, array_int64_5 *kcg_c2)
+#ifdef kcg_use_array_int32_5
+kcg_bool kcg_comp_array_int32_5(array_int32_5 *kcg_c1, array_int32_5 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -654,7 +654,7 @@ kcg_bool kcg_comp_array_int64_5(array_int64_5 *kcg_c1, array_int64_5 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_5 */
+#endif /* kcg_use_array_int32_5 */
 
 #ifdef kcg_use_CompressedPacketData_T_Common_Types_Pkg
 kcg_bool kcg_comp_CompressedPacketData_T_Common_Types_Pkg(
@@ -704,28 +704,28 @@ kcg_bool kcg_comp__14_array(_14_array *kcg_c1, _14_array *kcg_c2)
 }
 #endif /* kcg_use__14_array */
 
-#ifdef kcg_use_array_int64_3_33_231
-kcg_bool kcg_comp_array_int64_3_33_231(
-  array_int64_3_33_231 *kcg_c1,
-  array_int64_3_33_231 *kcg_c2)
+#ifdef kcg_use_array_int32_3_33_231
+kcg_bool kcg_comp_array_int32_3_33_231(
+  array_int32_3_33_231 *kcg_c1,
+  array_int32_3_33_231 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
 
   kcg_equ = kcg_true;
   for (kcg_ci = 0; kcg_ci < 231; kcg_ci++) {
-    kcg_equ = kcg_equ & kcg_comp_array_int64_3_33(
+    kcg_equ = kcg_equ & kcg_comp_array_int32_3_33(
         &(*kcg_c1)[kcg_ci],
         &(*kcg_c2)[kcg_ci]);
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_3_33_231 */
+#endif /* kcg_use_array_int32_3_33_231 */
 
-#ifdef kcg_use_array_int64_7_33_231
-kcg_bool kcg_comp_array_int64_7_33_231(
-  array_int64_7_33_231 *kcg_c1,
-  array_int64_7_33_231 *kcg_c2)
+#ifdef kcg_use_array_int32_7_33_231
+kcg_bool kcg_comp_array_int32_7_33_231(
+  array_int32_7_33_231 *kcg_c1,
+  array_int32_7_33_231 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -738,7 +738,7 @@ kcg_bool kcg_comp_array_int64_7_33_231(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_7_33_231 */
+#endif /* kcg_use_array_int32_7_33_231 */
 
 #ifdef kcg_use__15_array
 kcg_bool kcg_comp__15_array(_15_array *kcg_c1, _15_array *kcg_c2)
@@ -756,8 +756,8 @@ kcg_bool kcg_comp__15_array(_15_array *kcg_c1, _15_array *kcg_c2)
 }
 #endif /* kcg_use__15_array */
 
-#ifdef kcg_use_array_int64_97
-kcg_bool kcg_comp_array_int64_97(array_int64_97 *kcg_c1, array_int64_97 *kcg_c2)
+#ifdef kcg_use_array_int32_97
+kcg_bool kcg_comp_array_int32_97(array_int32_97 *kcg_c1, array_int32_97 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -768,10 +768,10 @@ kcg_bool kcg_comp_array_int64_97(array_int64_97 *kcg_c1, array_int64_97 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_97 */
+#endif /* kcg_use_array_int32_97 */
 
-#ifdef kcg_use_array_int64_11
-kcg_bool kcg_comp_array_int64_11(array_int64_11 *kcg_c1, array_int64_11 *kcg_c2)
+#ifdef kcg_use_array_int32_11
+kcg_bool kcg_comp_array_int32_11(array_int32_11 *kcg_c1, array_int32_11 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -782,12 +782,12 @@ kcg_bool kcg_comp_array_int64_11(array_int64_11 *kcg_c1, array_int64_11 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_11 */
+#endif /* kcg_use_array_int32_11 */
 
-#ifdef kcg_use_array_int64_432
-kcg_bool kcg_comp_array_int64_432(
-  array_int64_432 *kcg_c1,
-  array_int64_432 *kcg_c2)
+#ifdef kcg_use_array_int32_432
+kcg_bool kcg_comp_array_int32_432(
+  array_int32_432 *kcg_c1,
+  array_int32_432 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -798,12 +798,12 @@ kcg_bool kcg_comp_array_int64_432(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_432 */
+#endif /* kcg_use_array_int32_432 */
 
-#ifdef kcg_use_array_int64_260
-kcg_bool kcg_comp_array_int64_260(
-  array_int64_260 *kcg_c1,
-  array_int64_260 *kcg_c2)
+#ifdef kcg_use_array_int32_260
+kcg_bool kcg_comp_array_int32_260(
+  array_int32_260 *kcg_c1,
+  array_int32_260 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -814,7 +814,7 @@ kcg_bool kcg_comp_array_int64_260(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_260 */
+#endif /* kcg_use_array_int32_260 */
 
 #ifdef kcg_use__16_array
 kcg_bool kcg_comp__16_array(_16_array *kcg_c1, _16_array *kcg_c2)
@@ -830,8 +830,8 @@ kcg_bool kcg_comp__16_array(_16_array *kcg_c1, _16_array *kcg_c2)
 }
 #endif /* kcg_use__16_array */
 
-#ifdef kcg_use_array_int64_17
-kcg_bool kcg_comp_array_int64_17(array_int64_17 *kcg_c1, array_int64_17 *kcg_c2)
+#ifdef kcg_use_array_int32_17
+kcg_bool kcg_comp_array_int32_17(array_int32_17 *kcg_c1, array_int32_17 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -842,7 +842,7 @@ kcg_bool kcg_comp_array_int64_17(array_int64_17 *kcg_c1, array_int64_17 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_17 */
+#endif /* kcg_use_array_int32_17 */
 
 #ifdef kcg_use__17_array
 kcg_bool kcg_comp__17_array(_17_array *kcg_c1, _17_array *kcg_c2)
@@ -944,10 +944,10 @@ kcg_bool kcg_comp_P80_ModeProfiles_T_Packet_Types_Pkg(
 }
 #endif /* kcg_use_P80_ModeProfiles_T_Packet_Types_Pkg */
 
-#ifdef kcg_use_array_int64_2_33_99
-kcg_bool kcg_comp_array_int64_2_33_99(
-  array_int64_2_33_99 *kcg_c1,
-  array_int64_2_33_99 *kcg_c2)
+#ifdef kcg_use_array_int32_2_33_99
+kcg_bool kcg_comp_array_int32_2_33_99(
+  array_int32_2_33_99 *kcg_c1,
+  array_int32_2_33_99 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -960,30 +960,30 @@ kcg_bool kcg_comp_array_int64_2_33_99(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_2_33_99 */
+#endif /* kcg_use_array_int32_2_33_99 */
 
-#ifdef kcg_use_array_int64_3_33_99
-kcg_bool kcg_comp_array_int64_3_33_99(
-  array_int64_3_33_99 *kcg_c1,
-  array_int64_3_33_99 *kcg_c2)
+#ifdef kcg_use_array_int32_3_33_99
+kcg_bool kcg_comp_array_int32_3_33_99(
+  array_int32_3_33_99 *kcg_c1,
+  array_int32_3_33_99 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
 
   kcg_equ = kcg_true;
   for (kcg_ci = 0; kcg_ci < 99; kcg_ci++) {
-    kcg_equ = kcg_equ & kcg_comp_array_int64_3_33(
+    kcg_equ = kcg_equ & kcg_comp_array_int32_3_33(
         &(*kcg_c1)[kcg_ci],
         &(*kcg_c2)[kcg_ci]);
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_3_33_99 */
+#endif /* kcg_use_array_int32_3_33_99 */
 
-#ifdef kcg_use_array_int64_100
-kcg_bool kcg_comp_array_int64_100(
-  array_int64_100 *kcg_c1,
-  array_int64_100 *kcg_c2)
+#ifdef kcg_use_array_int32_100
+kcg_bool kcg_comp_array_int32_100(
+  array_int32_100 *kcg_c1,
+  array_int32_100 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -994,7 +994,7 @@ kcg_bool kcg_comp_array_int64_100(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_100 */
+#endif /* kcg_use_array_int32_100 */
 
 #ifdef kcg_use_array_bool_6
 kcg_bool kcg_comp_array_bool_6(array_bool_6 *kcg_c1, array_bool_6 *kcg_c2)
@@ -1010,8 +1010,8 @@ kcg_bool kcg_comp_array_bool_6(array_bool_6 *kcg_c1, array_bool_6 *kcg_c2)
 }
 #endif /* kcg_use_array_bool_6 */
 
-#ifdef kcg_use_array_int64_14
-kcg_bool kcg_comp_array_int64_14(array_int64_14 *kcg_c1, array_int64_14 *kcg_c2)
+#ifdef kcg_use_array_int32_14
+kcg_bool kcg_comp_array_int32_14(array_int32_14 *kcg_c1, array_int32_14 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -1022,12 +1022,12 @@ kcg_bool kcg_comp_array_int64_14(array_int64_14 *kcg_c1, array_int64_14 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_14 */
+#endif /* kcg_use_array_int32_14 */
 
-#ifdef kcg_use_array_float64_1
-kcg_bool kcg_comp_array_float64_1(
-  array_float64_1 *kcg_c1,
-  array_float64_1 *kcg_c2)
+#ifdef kcg_use_array_float32_1
+kcg_bool kcg_comp_array_float32_1(
+  array_float32_1 *kcg_c1,
+  array_float32_1 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -1038,10 +1038,10 @@ kcg_bool kcg_comp_array_float64_1(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_float64_1 */
+#endif /* kcg_use_array_float32_1 */
 
-#ifdef kcg_use_array_int64_23
-kcg_bool kcg_comp_array_int64_23(array_int64_23 *kcg_c1, array_int64_23 *kcg_c2)
+#ifdef kcg_use_array_int32_23
+kcg_bool kcg_comp_array_int32_23(array_int32_23 *kcg_c1, array_int32_23 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -1052,7 +1052,7 @@ kcg_bool kcg_comp_array_int64_23(array_int64_23 *kcg_c1, array_int64_23 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_23 */
+#endif /* kcg_use_array_int32_23 */
 
 #ifdef kcg_use__20_array
 kcg_bool kcg_comp__20_array(_20_array *kcg_c1, _20_array *kcg_c2)
@@ -1068,8 +1068,8 @@ kcg_bool kcg_comp__20_array(_20_array *kcg_c1, _20_array *kcg_c2)
 }
 #endif /* kcg_use__20_array */
 
-#ifdef kcg_use_array_int64_20
-kcg_bool kcg_comp_array_int64_20(array_int64_20 *kcg_c1, array_int64_20 *kcg_c2)
+#ifdef kcg_use_array_int32_20
+kcg_bool kcg_comp_array_int32_20(array_int32_20 *kcg_c1, array_int32_20 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -1080,7 +1080,7 @@ kcg_bool kcg_comp_array_int64_20(array_int64_20 *kcg_c1, array_int64_20 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_20 */
+#endif /* kcg_use_array_int32_20 */
 
 #ifdef kcg_use__21_array
 kcg_bool kcg_comp__21_array(_21_array *kcg_c1, _21_array *kcg_c2)
@@ -1271,10 +1271,10 @@ kcg_bool kcg_comp__24_array(_24_array *kcg_c1, _24_array *kcg_c2)
 }
 #endif /* kcg_use__24_array */
 
-#ifdef kcg_use_array_float64_10
-kcg_bool kcg_comp_array_float64_10(
-  array_float64_10 *kcg_c1,
-  array_float64_10 *kcg_c2)
+#ifdef kcg_use_array_float32_10
+kcg_bool kcg_comp_array_float32_10(
+  array_float32_10 *kcg_c1,
+  array_float32_10 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -1285,12 +1285,12 @@ kcg_bool kcg_comp_array_float64_10(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_float64_10 */
+#endif /* kcg_use_array_float32_10 */
 
-#ifdef kcg_use_array_int64_444
-kcg_bool kcg_comp_array_int64_444(
-  array_int64_444 *kcg_c1,
-  array_int64_444 *kcg_c2)
+#ifdef kcg_use_array_int32_444
+kcg_bool kcg_comp_array_int32_444(
+  array_int32_444 *kcg_c1,
+  array_int32_444 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -1301,10 +1301,10 @@ kcg_bool kcg_comp_array_int64_444(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_444 */
+#endif /* kcg_use_array_int32_444 */
 
-#ifdef kcg_use_array_int64_32
-kcg_bool kcg_comp_array_int64_32(array_int64_32 *kcg_c1, array_int64_32 *kcg_c2)
+#ifdef kcg_use_array_int32_32
+kcg_bool kcg_comp_array_int32_32(array_int32_32 *kcg_c1, array_int32_32 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -1315,7 +1315,7 @@ kcg_bool kcg_comp_array_int64_32(array_int64_32 *kcg_c1, array_int64_32 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_32 */
+#endif /* kcg_use_array_int32_32 */
 
 #ifdef kcg_use__25_array
 kcg_bool kcg_comp__25_array(_25_array *kcg_c1, _25_array *kcg_c2)
@@ -1457,23 +1457,23 @@ kcg_bool kcg_comp_MRSP_Profile_t_TrackAtlasTypes(
 }
 #endif /* kcg_use_MRSP_Profile_t_TrackAtlasTypes */
 
-#ifdef kcg_use_array_int64_128_32
-kcg_bool kcg_comp_array_int64_128_32(
-  array_int64_128_32 *kcg_c1,
-  array_int64_128_32 *kcg_c2)
+#ifdef kcg_use_array_int32_128_32
+kcg_bool kcg_comp_array_int32_128_32(
+  array_int32_128_32 *kcg_c1,
+  array_int32_128_32 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
 
   kcg_equ = kcg_true;
   for (kcg_ci = 0; kcg_ci < 32; kcg_ci++) {
-    kcg_equ = kcg_equ & kcg_comp_array_int64_128(
+    kcg_equ = kcg_equ & kcg_comp_array_int32_128(
         &(*kcg_c1)[kcg_ci],
         &(*kcg_c2)[kcg_ci]);
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_128_32 */
+#endif /* kcg_use_array_int32_128_32 */
 
 #ifdef kcg_use_P080_sections_array_flat_T_TM
 kcg_bool kcg_comp_P080_sections_array_flat_T_TM(
@@ -1507,10 +1507,10 @@ kcg_bool kcg_comp__27_array(_27_array *kcg_c1, _27_array *kcg_c2)
 }
 #endif /* kcg_use__27_array */
 
-#ifdef kcg_use_array_float64_13
-kcg_bool kcg_comp_array_float64_13(
-  array_float64_13 *kcg_c1,
-  array_float64_13 *kcg_c2)
+#ifdef kcg_use_array_float32_13
+kcg_bool kcg_comp_array_float32_13(
+  array_float32_13 *kcg_c1,
+  array_float32_13 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -1521,7 +1521,7 @@ kcg_bool kcg_comp_array_float64_13(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_float64_13 */
+#endif /* kcg_use_array_float32_13 */
 
 #ifdef kcg_use_array_bool_5
 kcg_bool kcg_comp_array_bool_5(array_bool_5 *kcg_c1, array_bool_5 *kcg_c2)
@@ -1667,10 +1667,10 @@ kcg_bool kcg_comp__34_array(_34_array *kcg_c1, _34_array *kcg_c2)
 }
 #endif /* kcg_use__34_array */
 
-#ifdef kcg_use_array_int64_32_32
-kcg_bool kcg_comp_array_int64_32_32(
-  array_int64_32_32 *kcg_c1,
-  array_int64_32_32 *kcg_c2)
+#ifdef kcg_use_array_int32_32_32
+kcg_bool kcg_comp_array_int32_32_32(
+  array_int32_32_32 *kcg_c1,
+  array_int32_32_32 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -1683,7 +1683,7 @@ kcg_bool kcg_comp_array_int64_32_32(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_32_32 */
+#endif /* kcg_use_array_int32_32_32 */
 
 #ifdef kcg_use__35_array
 kcg_bool kcg_comp__35_array(_35_array *kcg_c1, _35_array *kcg_c2)
@@ -1719,8 +1719,8 @@ kcg_bool kcg_comp_aNID_RADIO_T_Packet_TrainTypes_Pkg(
 }
 #endif /* kcg_use_aNID_RADIO_T_Packet_TrainTypes_Pkg */
 
-#ifdef kcg_use_array_int64_41
-kcg_bool kcg_comp_array_int64_41(array_int64_41 *kcg_c1, array_int64_41 *kcg_c2)
+#ifdef kcg_use_array_int32_41
+kcg_bool kcg_comp_array_int32_41(array_int32_41 *kcg_c1, array_int32_41 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -1731,25 +1731,25 @@ kcg_bool kcg_comp_array_int64_41(array_int64_41 *kcg_c1, array_int64_41 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_41 */
+#endif /* kcg_use_array_int32_41 */
 
-#ifdef kcg_use_array_int64_2_32_32
-kcg_bool kcg_comp_array_int64_2_32_32(
-  array_int64_2_32_32 *kcg_c1,
-  array_int64_2_32_32 *kcg_c2)
+#ifdef kcg_use_array_int32_2_32_32
+kcg_bool kcg_comp_array_int32_2_32_32(
+  array_int32_2_32_32 *kcg_c1,
+  array_int32_2_32_32 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
 
   kcg_equ = kcg_true;
   for (kcg_ci = 0; kcg_ci < 32; kcg_ci++) {
-    kcg_equ = kcg_equ & kcg_comp_array_int64_2_32(
+    kcg_equ = kcg_equ & kcg_comp_array_int32_2_32(
         &(*kcg_c1)[kcg_ci],
         &(*kcg_c2)[kcg_ci]);
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_2_32_32 */
+#endif /* kcg_use_array_int32_2_32_32 */
 
 #ifdef kcg_use_M_TrainTrack_compressed_packets_T_TM_radio_messages
 kcg_bool kcg_comp_M_TrainTrack_compressed_packets_T_TM_radio_messages(
@@ -1797,10 +1797,10 @@ kcg_bool kcg_comp_array_bool_256(array_bool_256 *kcg_c1, array_bool_256 *kcg_c2)
 }
 #endif /* kcg_use_array_bool_256 */
 
-#ifdef kcg_use_array_int64_302
-kcg_bool kcg_comp_array_int64_302(
-  array_int64_302 *kcg_c1,
-  array_int64_302 *kcg_c2)
+#ifdef kcg_use_array_int32_302
+kcg_bool kcg_comp_array_int32_302(
+  array_int32_302 *kcg_c1,
+  array_int32_302 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -1811,10 +1811,10 @@ kcg_bool kcg_comp_array_int64_302(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_302 */
+#endif /* kcg_use_array_int32_302 */
 
-#ifdef kcg_use_array_int64_56
-kcg_bool kcg_comp_array_int64_56(array_int64_56 *kcg_c1, array_int64_56 *kcg_c2)
+#ifdef kcg_use_array_int32_56
+kcg_bool kcg_comp_array_int32_56(array_int32_56 *kcg_c1, array_int32_56 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -1825,7 +1825,7 @@ kcg_bool kcg_comp_array_int64_56(array_int64_56 *kcg_c1, array_int64_56 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_56 */
+#endif /* kcg_use_array_int32_56 */
 
 #ifdef kcg_use__36_array
 kcg_bool kcg_comp__36_array(_36_array *kcg_c1, _36_array *kcg_c2)
@@ -1843,10 +1843,10 @@ kcg_bool kcg_comp__36_array(_36_array *kcg_c1, _36_array *kcg_c2)
 }
 #endif /* kcg_use__36_array */
 
-#ifdef kcg_use_array_float64_114
-kcg_bool kcg_comp_array_float64_114(
-  array_float64_114 *kcg_c1,
-  array_float64_114 *kcg_c2)
+#ifdef kcg_use_array_float32_114
+kcg_bool kcg_comp_array_float32_114(
+  array_float32_114 *kcg_c1,
+  array_float32_114 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -1857,7 +1857,7 @@ kcg_bool kcg_comp_array_float64_114(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_float64_114 */
+#endif /* kcg_use_array_float32_114 */
 
 #ifdef kcg_use__37_array
 kcg_bool kcg_comp__37_array(_37_array *kcg_c1, _37_array *kcg_c2)
@@ -2001,10 +2001,10 @@ kcg_bool kcg_comp_array_bool_4(array_bool_4 *kcg_c1, array_bool_4 *kcg_c2)
 }
 #endif /* kcg_use_array_bool_4 */
 
-#ifdef kcg_use_array_int64_975
-kcg_bool kcg_comp_array_int64_975(
-  array_int64_975 *kcg_c1,
-  array_int64_975 *kcg_c2)
+#ifdef kcg_use_array_int32_975
+kcg_bool kcg_comp_array_int32_975(
+  array_int32_975 *kcg_c1,
+  array_int32_975 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -2015,7 +2015,7 @@ kcg_bool kcg_comp_array_int64_975(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_975 */
+#endif /* kcg_use_array_int32_975 */
 
 #ifdef kcg_use__44_array
 kcg_bool kcg_comp__44_array(_44_array *kcg_c1, _44_array *kcg_c2)
@@ -2031,8 +2031,8 @@ kcg_bool kcg_comp__44_array(_44_array *kcg_c1, _44_array *kcg_c2)
 }
 #endif /* kcg_use__44_array */
 
-#ifdef kcg_use_array_int64_65
-kcg_bool kcg_comp_array_int64_65(array_int64_65 *kcg_c1, array_int64_65 *kcg_c2)
+#ifdef kcg_use_array_int32_65
+kcg_bool kcg_comp_array_int32_65(array_int32_65 *kcg_c1, array_int32_65 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -2043,12 +2043,12 @@ kcg_bool kcg_comp_array_int64_65(array_int64_65 *kcg_c1, array_int64_65 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_65 */
+#endif /* kcg_use_array_int32_65 */
 
-#ifdef kcg_use_array_int64_400
-kcg_bool kcg_comp_array_int64_400(
-  array_int64_400 *kcg_c1,
-  array_int64_400 *kcg_c2)
+#ifdef kcg_use_array_int32_400
+kcg_bool kcg_comp_array_int32_400(
+  array_int32_400 *kcg_c1,
+  array_int32_400 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -2059,7 +2059,7 @@ kcg_bool kcg_comp_array_int64_400(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_400 */
+#endif /* kcg_use_array_int32_400 */
 
 #ifdef kcg_use__45_array
 kcg_bool kcg_comp__45_array(_45_array *kcg_c1, _45_array *kcg_c2)
@@ -2075,10 +2075,10 @@ kcg_bool kcg_comp__45_array(_45_array *kcg_c1, _45_array *kcg_c2)
 }
 #endif /* kcg_use__45_array */
 
-#ifdef kcg_use_array_int64_978
-kcg_bool kcg_comp_array_int64_978(
-  array_int64_978 *kcg_c1,
-  array_int64_978 *kcg_c2)
+#ifdef kcg_use_array_int32_978
+kcg_bool kcg_comp_array_int32_978(
+  array_int32_978 *kcg_c1,
+  array_int32_978 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -2089,30 +2089,30 @@ kcg_bool kcg_comp_array_int64_978(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_978 */
+#endif /* kcg_use_array_int32_978 */
 
-#ifdef kcg_use_array_int64_2_32_64
-kcg_bool kcg_comp_array_int64_2_32_64(
-  array_int64_2_32_64 *kcg_c1,
-  array_int64_2_32_64 *kcg_c2)
+#ifdef kcg_use_array_int32_2_32_64
+kcg_bool kcg_comp_array_int32_2_32_64(
+  array_int32_2_32_64 *kcg_c1,
+  array_int32_2_32_64 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
 
   kcg_equ = kcg_true;
   for (kcg_ci = 0; kcg_ci < 64; kcg_ci++) {
-    kcg_equ = kcg_equ & kcg_comp_array_int64_2_32(
+    kcg_equ = kcg_equ & kcg_comp_array_int32_2_32(
         &(*kcg_c1)[kcg_ci],
         &(*kcg_c2)[kcg_ci]);
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_2_32_64 */
+#endif /* kcg_use_array_int32_2_32_64 */
 
-#ifdef kcg_use_array_int64_987
-kcg_bool kcg_comp_array_int64_987(
-  array_int64_987 *kcg_c1,
-  array_int64_987 *kcg_c2)
+#ifdef kcg_use_array_int32_987
+kcg_bool kcg_comp_array_int32_987(
+  array_int32_987 *kcg_c1,
+  array_int32_987 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -2123,10 +2123,10 @@ kcg_bool kcg_comp_array_int64_987(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_987 */
+#endif /* kcg_use_array_int32_987 */
 
-#ifdef kcg_use_array_int64_68
-kcg_bool kcg_comp_array_int64_68(array_int64_68 *kcg_c1, array_int64_68 *kcg_c2)
+#ifdef kcg_use_array_int32_68
+kcg_bool kcg_comp_array_int32_68(array_int32_68 *kcg_c1, array_int32_68 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -2137,7 +2137,7 @@ kcg_bool kcg_comp_array_int64_68(array_int64_68 *kcg_c1, array_int64_68 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_68 */
+#endif /* kcg_use_array_int32_68 */
 
 #ifdef kcg_use__46_array
 kcg_bool kcg_comp__46_array(_46_array *kcg_c1, _46_array *kcg_c2)
@@ -2169,10 +2169,10 @@ kcg_bool kcg_comp__47_array(_47_array *kcg_c1, _47_array *kcg_c2)
 }
 #endif /* kcg_use__47_array */
 
-#ifdef kcg_use_array_int64_8_4
-kcg_bool kcg_comp_array_int64_8_4(
-  array_int64_8_4 *kcg_c1,
-  array_int64_8_4 *kcg_c2)
+#ifdef kcg_use_array_int32_8_4
+kcg_bool kcg_comp_array_int32_8_4(
+  array_int32_8_4 *kcg_c1,
+  array_int32_8_4 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -2186,12 +2186,12 @@ kcg_bool kcg_comp_array_int64_8_4(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_8_4 */
+#endif /* kcg_use_array_int32_8_4 */
 
-#ifdef kcg_use_array_int64_95_33
-kcg_bool kcg_comp_array_int64_95_33(
-  array_int64_95_33 *kcg_c1,
-  array_int64_95_33 *kcg_c2)
+#ifdef kcg_use_array_int32_95_33
+kcg_bool kcg_comp_array_int32_95_33(
+  array_int32_95_33 *kcg_c1,
+  array_int32_95_33 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -2204,7 +2204,7 @@ kcg_bool kcg_comp_array_int64_95_33(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_95_33 */
+#endif /* kcg_use_array_int32_95_33 */
 
 #ifdef kcg_use__48_array
 kcg_bool kcg_comp__48_array(_48_array *kcg_c1, _48_array *kcg_c2)
@@ -2236,10 +2236,10 @@ kcg_bool kcg_comp__49_array(_49_array *kcg_c1, _49_array *kcg_c2)
 }
 #endif /* kcg_use__49_array */
 
-#ifdef kcg_use_array_int64_990
-kcg_bool kcg_comp_array_int64_990(
-  array_int64_990 *kcg_c1,
-  array_int64_990 *kcg_c2)
+#ifdef kcg_use_array_int32_990
+kcg_bool kcg_comp_array_int32_990(
+  array_int32_990 *kcg_c1,
+  array_int32_990 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -2250,12 +2250,12 @@ kcg_bool kcg_comp_array_int64_990(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_990 */
+#endif /* kcg_use_array_int32_990 */
 
-#ifdef kcg_use_array_int64_492
-kcg_bool kcg_comp_array_int64_492(
-  array_int64_492 *kcg_c1,
-  array_int64_492 *kcg_c2)
+#ifdef kcg_use_array_int32_492
+kcg_bool kcg_comp_array_int32_492(
+  array_int32_492 *kcg_c1,
+  array_int32_492 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -2266,7 +2266,7 @@ kcg_bool kcg_comp_array_int64_492(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_492 */
+#endif /* kcg_use_array_int32_492 */
 
 #ifdef kcg_use_StaticSpeedProfile_t_TrackAtlasTypes
 kcg_bool kcg_comp_StaticSpeedProfile_t_TrackAtlasTypes(
@@ -2318,8 +2318,8 @@ kcg_bool kcg_comp__50_array(_50_array *kcg_c1, _50_array *kcg_c2)
 }
 #endif /* kcg_use__50_array */
 
-#ifdef kcg_use_array_int64_3
-kcg_bool kcg_comp_array_int64_3(array_int64_3 *kcg_c1, array_int64_3 *kcg_c2)
+#ifdef kcg_use_array_int32_3
+kcg_bool kcg_comp_array_int32_3(array_int32_3 *kcg_c1, array_int32_3 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -2330,7 +2330,7 @@ kcg_bool kcg_comp_array_int64_3(array_int64_3 *kcg_c1, array_int64_3 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_3 */
+#endif /* kcg_use_array_int32_3 */
 
 #ifdef kcg_use_DMI_TEXT_INT_Array_T_DATA
 kcg_bool kcg_comp_DMI_TEXT_INT_Array_T_DATA(
@@ -2348,8 +2348,8 @@ kcg_bool kcg_comp_DMI_TEXT_INT_Array_T_DATA(
 }
 #endif /* kcg_use_DMI_TEXT_INT_Array_T_DATA */
 
-#ifdef kcg_use_array_int64_9
-kcg_bool kcg_comp_array_int64_9(array_int64_9 *kcg_c1, array_int64_9 *kcg_c2)
+#ifdef kcg_use_array_int32_9
+kcg_bool kcg_comp_array_int32_9(array_int32_9 *kcg_c1, array_int32_9 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -2360,12 +2360,12 @@ kcg_bool kcg_comp_array_int64_9(array_int64_9 *kcg_c1, array_int64_9 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_9 */
+#endif /* kcg_use_array_int32_9 */
 
-#ifdef kcg_use_array_int64_261
-kcg_bool kcg_comp_array_int64_261(
-  array_int64_261 *kcg_c1,
-  array_int64_261 *kcg_c2)
+#ifdef kcg_use_array_int32_261
+kcg_bool kcg_comp_array_int32_261(
+  array_int32_261 *kcg_c1,
+  array_int32_261 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -2376,7 +2376,7 @@ kcg_bool kcg_comp_array_int64_261(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_261 */
+#endif /* kcg_use_array_int32_261 */
 
 #ifdef kcg_use_EVC_to_DMI_Message_int_T_API_DMI_Pkg
 kcg_bool kcg_comp_EVC_to_DMI_Message_int_T_API_DMI_Pkg(
@@ -2553,8 +2553,8 @@ kcg_bool kcg_comp_LinkedBGs_T_BG_Types_Pkg(
 }
 #endif /* kcg_use_LinkedBGs_T_BG_Types_Pkg */
 
-#ifdef kcg_use_array_int64_6
-kcg_bool kcg_comp_array_int64_6(array_int64_6 *kcg_c1, array_int64_6 *kcg_c2)
+#ifdef kcg_use_array_int32_6
+kcg_bool kcg_comp_array_int32_6(array_int32_6 *kcg_c1, array_int32_6 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -2565,7 +2565,7 @@ kcg_bool kcg_comp_array_int64_6(array_int64_6 *kcg_c1, array_int64_6 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_6 */
+#endif /* kcg_use_array_int32_6 */
 
 #ifdef kcg_use_MyArray_SDM_Commands_Pkg
 kcg_bool kcg_comp_MyArray_SDM_Commands_Pkg(
@@ -2583,8 +2583,8 @@ kcg_bool kcg_comp_MyArray_SDM_Commands_Pkg(
 }
 #endif /* kcg_use_MyArray_SDM_Commands_Pkg */
 
-#ifdef kcg_use_array_int64_15
-kcg_bool kcg_comp_array_int64_15(array_int64_15 *kcg_c1, array_int64_15 *kcg_c2)
+#ifdef kcg_use_array_int32_15
+kcg_bool kcg_comp_array_int32_15(array_int32_15 *kcg_c1, array_int32_15 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -2595,7 +2595,7 @@ kcg_bool kcg_comp_array_int64_15(array_int64_15 *kcg_c1, array_int64_15 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_15 */
+#endif /* kcg_use_array_int32_15 */
 
 #ifdef kcg_use__53_array
 kcg_bool kcg_comp__53_array(_53_array *kcg_c1, _53_array *kcg_c2)
@@ -2611,10 +2611,10 @@ kcg_bool kcg_comp__53_array(_53_array *kcg_c1, _53_array *kcg_c2)
 }
 #endif /* kcg_use__53_array */
 
-#ifdef kcg_use_array_int64_350
-kcg_bool kcg_comp_array_int64_350(
-  array_int64_350 *kcg_c1,
-  array_int64_350 *kcg_c2)
+#ifdef kcg_use_array_int32_350
+kcg_bool kcg_comp_array_int32_350(
+  array_int32_350 *kcg_c1,
+  array_int32_350 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -2625,7 +2625,7 @@ kcg_bool kcg_comp_array_int64_350(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_350 */
+#endif /* kcg_use_array_int32_350 */
 
 #ifdef kcg_use_P005_sections_array_flat_T_TM
 kcg_bool kcg_comp_P005_sections_array_flat_T_TM(
@@ -2643,10 +2643,10 @@ kcg_bool kcg_comp_P005_sections_array_flat_T_TM(
 }
 #endif /* kcg_use_P005_sections_array_flat_T_TM */
 
-#ifdef kcg_use_array_int64_104
-kcg_bool kcg_comp_array_int64_104(
-  array_int64_104 *kcg_c1,
-  array_int64_104 *kcg_c2)
+#ifdef kcg_use_array_int32_104
+kcg_bool kcg_comp_array_int32_104(
+  array_int32_104 *kcg_c1,
+  array_int32_104 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -2657,12 +2657,12 @@ kcg_bool kcg_comp_array_int64_104(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_104 */
+#endif /* kcg_use_array_int32_104 */
 
-#ifdef kcg_use_array_int64_430
-kcg_bool kcg_comp_array_int64_430(
-  array_int64_430 *kcg_c1,
-  array_int64_430 *kcg_c2)
+#ifdef kcg_use_array_int32_430
+kcg_bool kcg_comp_array_int32_430(
+  array_int32_430 *kcg_c1,
+  array_int32_430 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -2673,7 +2673,7 @@ kcg_bool kcg_comp_array_int64_430(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_430 */
+#endif /* kcg_use_array_int32_430 */
 
 #ifdef kcg_use__54_array
 kcg_bool kcg_comp__54_array(_54_array *kcg_c1, _54_array *kcg_c2)
@@ -2691,8 +2691,8 @@ kcg_bool kcg_comp__54_array(_54_array *kcg_c1, _54_array *kcg_c2)
 }
 #endif /* kcg_use__54_array */
 
-#ifdef kcg_use_array_int64_18
-kcg_bool kcg_comp_array_int64_18(array_int64_18 *kcg_c1, array_int64_18 *kcg_c2)
+#ifdef kcg_use_array_int32_18
+kcg_bool kcg_comp_array_int32_18(array_int32_18 *kcg_c1, array_int32_18 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -2703,7 +2703,7 @@ kcg_bool kcg_comp_array_int64_18(array_int64_18 *kcg_c1, array_int64_18 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_18 */
+#endif /* kcg_use_array_int32_18 */
 
 #ifdef kcg_use__55_array
 kcg_bool kcg_comp__55_array(_55_array *kcg_c1, _55_array *kcg_c2)
@@ -2753,8 +2753,8 @@ kcg_bool kcg_comp__56_array(_56_array *kcg_c1, _56_array *kcg_c2)
 }
 #endif /* kcg_use__56_array */
 
-#ifdef kcg_use_array_int64_24
-kcg_bool kcg_comp_array_int64_24(array_int64_24 *kcg_c1, array_int64_24 *kcg_c2)
+#ifdef kcg_use_array_int32_24
+kcg_bool kcg_comp_array_int32_24(array_int32_24 *kcg_c1, array_int32_24 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -2765,10 +2765,10 @@ kcg_bool kcg_comp_array_int64_24(array_int64_24 *kcg_c1, array_int64_24 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_24 */
+#endif /* kcg_use_array_int32_24 */
 
-#ifdef kcg_use_array_int64_21
-kcg_bool kcg_comp_array_int64_21(array_int64_21 *kcg_c1, array_int64_21 *kcg_c2)
+#ifdef kcg_use_array_int32_21
+kcg_bool kcg_comp_array_int32_21(array_int32_21 *kcg_c1, array_int32_21 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -2779,12 +2779,12 @@ kcg_bool kcg_comp_array_int64_21(array_int64_21 *kcg_c1, array_int64_21 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_21 */
+#endif /* kcg_use_array_int32_21 */
 
-#ifdef kcg_use_array_float64_8
-kcg_bool kcg_comp_array_float64_8(
-  array_float64_8 *kcg_c1,
-  array_float64_8 *kcg_c2)
+#ifdef kcg_use_array_float32_8
+kcg_bool kcg_comp_array_float32_8(
+  array_float32_8 *kcg_c1,
+  array_float32_8 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -2795,10 +2795,10 @@ kcg_bool kcg_comp_array_float64_8(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_float64_8 */
+#endif /* kcg_use_array_float32_8 */
 
-#ifdef kcg_use_array_int64_30
-kcg_bool kcg_comp_array_int64_30(array_int64_30 *kcg_c1, array_int64_30 *kcg_c2)
+#ifdef kcg_use_array_int32_30
+kcg_bool kcg_comp_array_int32_30(array_int32_30 *kcg_c1, array_int32_30 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -2809,12 +2809,12 @@ kcg_bool kcg_comp_array_int64_30(array_int64_30 *kcg_c1, array_int64_30 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_30 */
+#endif /* kcg_use_array_int32_30 */
 
-#ifdef kcg_use_array_int64_110
-kcg_bool kcg_comp_array_int64_110(
-  array_int64_110 *kcg_c1,
-  array_int64_110 *kcg_c2)
+#ifdef kcg_use_array_int32_110
+kcg_bool kcg_comp_array_int32_110(
+  array_int32_110 *kcg_c1,
+  array_int32_110 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -2825,7 +2825,7 @@ kcg_bool kcg_comp_array_int64_110(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_110 */
+#endif /* kcg_use_array_int32_110 */
 
 #ifdef kcg_use__57_array
 kcg_bool kcg_comp__57_array(_57_array *kcg_c1, _57_array *kcg_c2)
@@ -2843,26 +2843,26 @@ kcg_bool kcg_comp__57_array(_57_array *kcg_c1, _57_array *kcg_c2)
 }
 #endif /* kcg_use__57_array */
 
-#ifdef kcg_use_array_float64_100_1
-kcg_bool kcg_comp_array_float64_100_1(
-  array_float64_100_1 *kcg_c1,
-  array_float64_100_1 *kcg_c2)
+#ifdef kcg_use_array_float32_100_1
+kcg_bool kcg_comp_array_float32_100_1(
+  array_float32_100_1 *kcg_c1,
+  array_float32_100_1 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
 
   kcg_equ = kcg_true;
   for (kcg_ci = 0; kcg_ci < 1; kcg_ci++) {
-    kcg_equ = kcg_equ & kcg_comp_array_float64_100(
+    kcg_equ = kcg_equ & kcg_comp_array_float32_100(
         &(*kcg_c1)[kcg_ci],
         &(*kcg_c2)[kcg_ci]);
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_float64_100_1 */
+#endif /* kcg_use_array_float32_100_1 */
 
-#ifdef kcg_use_array_int64_33
-kcg_bool kcg_comp_array_int64_33(array_int64_33 *kcg_c1, array_int64_33 *kcg_c2)
+#ifdef kcg_use_array_int32_33
+kcg_bool kcg_comp_array_int32_33(array_int32_33 *kcg_c1, array_int32_33 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -2873,7 +2873,7 @@ kcg_bool kcg_comp_array_int64_33(array_int64_33 *kcg_c1, array_int64_33 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_33 */
+#endif /* kcg_use_array_int32_33 */
 
 #ifdef kcg_use_P046_trackide_sectionlist_T_TM
 kcg_bool kcg_comp_P046_trackide_sectionlist_T_TM(
@@ -3165,8 +3165,8 @@ kcg_bool kcg_comp_DMI_trackConditionArray_T_DMI_Types_Pkg(
 }
 #endif /* kcg_use_DMI_trackConditionArray_T_DMI_Types_Pkg */
 
-#ifdef kcg_use_array_int64_42
-kcg_bool kcg_comp_array_int64_42(array_int64_42 *kcg_c1, array_int64_42 *kcg_c2)
+#ifdef kcg_use_array_int32_42
+kcg_bool kcg_comp_array_int32_42(array_int32_42 *kcg_c1, array_int32_42 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -3177,7 +3177,7 @@ kcg_bool kcg_comp_array_int64_42(array_int64_42 *kcg_c1, array_int64_42 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_42 */
+#endif /* kcg_use_array_int32_42 */
 
 #ifdef kcg_use_P046_OBU_sectionlist_array_T_TM
 kcg_bool kcg_comp_P046_OBU_sectionlist_array_T_TM(
@@ -3197,10 +3197,10 @@ kcg_bool kcg_comp_P046_OBU_sectionlist_array_T_TM(
 }
 #endif /* kcg_use_P046_OBU_sectionlist_array_T_TM */
 
-#ifdef kcg_use_array_float64_100
-kcg_bool kcg_comp_array_float64_100(
-  array_float64_100 *kcg_c1,
-  array_float64_100 *kcg_c2)
+#ifdef kcg_use_array_float32_100
+kcg_bool kcg_comp_array_float32_100(
+  array_float32_100 *kcg_c1,
+  array_float32_100 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -3211,7 +3211,7 @@ kcg_bool kcg_comp_array_float64_100(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_float64_100 */
+#endif /* kcg_use_array_float32_100 */
 
 #ifdef kcg_use_ASafeSpeedDefinition_T_CalcBrakingCurves_types
 kcg_bool kcg_comp_ASafeSpeedDefinition_T_CalcBrakingCurves_types(
@@ -3245,23 +3245,23 @@ kcg_bool kcg_comp__66_array(_66_array *kcg_c1, _66_array *kcg_c2)
 }
 #endif /* kcg_use__66_array */
 
-#ifdef kcg_use_array_int64_99_33
-kcg_bool kcg_comp_array_int64_99_33(
-  array_int64_99_33 *kcg_c1,
-  array_int64_99_33 *kcg_c2)
+#ifdef kcg_use_array_int32_99_33
+kcg_bool kcg_comp_array_int32_99_33(
+  array_int32_99_33 *kcg_c1,
+  array_int32_99_33 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
 
   kcg_equ = kcg_true;
   for (kcg_ci = 0; kcg_ci < 33; kcg_ci++) {
-    kcg_equ = kcg_equ & kcg_comp_array_int64_99(
+    kcg_equ = kcg_equ & kcg_comp_array_int32_99(
         &(*kcg_c1)[kcg_ci],
         &(*kcg_c2)[kcg_ci]);
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_99_33 */
+#endif /* kcg_use_array_int32_99_33 */
 
 #ifdef kcg_use_array_bool_1
 kcg_bool kcg_comp_array_bool_1(array_bool_1 *kcg_c1, array_bool_1 *kcg_c2)
@@ -3277,10 +3277,10 @@ kcg_bool kcg_comp_array_bool_1(array_bool_1 *kcg_c1, array_bool_1 *kcg_c2)
 }
 #endif /* kcg_use_array_bool_1 */
 
-#ifdef kcg_use_array_int64_131
-kcg_bool kcg_comp_array_int64_131(
-  array_int64_131 *kcg_c1,
-  array_int64_131 *kcg_c2)
+#ifdef kcg_use_array_int32_131
+kcg_bool kcg_comp_array_int32_131(
+  array_int32_131 *kcg_c1,
+  array_int32_131 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -3291,12 +3291,12 @@ kcg_bool kcg_comp_array_int64_131(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_131 */
+#endif /* kcg_use_array_int32_131 */
 
-#ifdef kcg_use_array_int64_4_32_128
-kcg_bool kcg_comp_array_int64_4_32_128(
-  array_int64_4_32_128 *kcg_c1,
-  array_int64_4_32_128 *kcg_c2)
+#ifdef kcg_use_array_int32_4_32_128
+kcg_bool kcg_comp_array_int32_4_32_128(
+  array_int32_4_32_128 *kcg_c1,
+  array_int32_4_32_128 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -3309,12 +3309,12 @@ kcg_bool kcg_comp_array_int64_4_32_128(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_4_32_128 */
+#endif /* kcg_use_array_int32_4_32_128 */
 
-#ifdef kcg_use_array_int64_500_500
-kcg_bool kcg_comp_array_int64_500_500(
-  array_int64_500_500 *kcg_c1,
-  array_int64_500_500 *kcg_c2)
+#ifdef kcg_use_array_int32_500_500
+kcg_bool kcg_comp_array_int32_500_500(
+  array_int32_500_500 *kcg_c1,
+  array_int32_500_500 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -3327,12 +3327,12 @@ kcg_bool kcg_comp_array_int64_500_500(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_500_500 */
+#endif /* kcg_use_array_int32_500_500 */
 
-#ifdef kcg_use_array_int64_128
-kcg_bool kcg_comp_array_int64_128(
-  array_int64_128 *kcg_c1,
-  array_int64_128 *kcg_c2)
+#ifdef kcg_use_array_int32_128
+kcg_bool kcg_comp_array_int32_128(
+  array_int32_128 *kcg_c1,
+  array_int32_128 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -3343,12 +3343,12 @@ kcg_bool kcg_comp_array_int64_128(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_128 */
+#endif /* kcg_use_array_int32_128 */
 
-#ifdef kcg_use_array_int64_961
-kcg_bool kcg_comp_array_int64_961(
-  array_int64_961 *kcg_c1,
-  array_int64_961 *kcg_c2)
+#ifdef kcg_use_array_int32_961
+kcg_bool kcg_comp_array_int32_961(
+  array_int32_961 *kcg_c1,
+  array_int32_961 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -3359,7 +3359,7 @@ kcg_bool kcg_comp_array_int64_961(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_961 */
+#endif /* kcg_use_array_int32_961 */
 
 #ifdef kcg_use__67_array
 kcg_bool kcg_comp__67_array(_67_array *kcg_c1, _67_array *kcg_c2)
@@ -3447,26 +3447,26 @@ kcg_bool kcg_comp_RadioTrackTrainMessageQueueEntries_T(
 }
 #endif /* kcg_use_RadioTrackTrainMessageQueueEntries_T */
 
-#ifdef kcg_use_array_int64_3_33
-kcg_bool kcg_comp_array_int64_3_33(
-  array_int64_3_33 *kcg_c1,
-  array_int64_3_33 *kcg_c2)
+#ifdef kcg_use_array_int32_3_33
+kcg_bool kcg_comp_array_int32_3_33(
+  array_int32_3_33 *kcg_c1,
+  array_int32_3_33 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
 
   kcg_equ = kcg_true;
   for (kcg_ci = 0; kcg_ci < 33; kcg_ci++) {
-    kcg_equ = kcg_equ & kcg_comp_array_int64_3(
+    kcg_equ = kcg_equ & kcg_comp_array_int32_3(
         &(*kcg_c1)[kcg_ci],
         &(*kcg_c2)[kcg_ci]);
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_3_33 */
+#endif /* kcg_use_array_int32_3_33 */
 
-#ifdef kcg_use_array_int64_48
-kcg_bool kcg_comp_array_int64_48(array_int64_48 *kcg_c1, array_int64_48 *kcg_c2)
+#ifdef kcg_use_array_int32_48
+kcg_bool kcg_comp_array_int32_48(array_int32_48 *kcg_c1, array_int32_48 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -3477,7 +3477,7 @@ kcg_bool kcg_comp_array_int64_48(array_int64_48 *kcg_c1, array_int64_48 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_48 */
+#endif /* kcg_use_array_int32_48 */
 
 #ifdef kcg_use_DMI_TXT_MSGList_status_T_DMI_Types_Pkg
 kcg_bool kcg_comp_DMI_TXT_MSGList_status_T_DMI_Types_Pkg(
@@ -3497,10 +3497,10 @@ kcg_bool kcg_comp_DMI_TXT_MSGList_status_T_DMI_Types_Pkg(
 }
 #endif /* kcg_use_DMI_TXT_MSGList_status_T_DMI_Types_Pkg */
 
-#ifdef kcg_use_array_int64_964
-kcg_bool kcg_comp_array_int64_964(
-  array_int64_964 *kcg_c1,
-  array_int64_964 *kcg_c2)
+#ifdef kcg_use_array_int32_964
+kcg_bool kcg_comp_array_int32_964(
+  array_int32_964 *kcg_c1,
+  array_int32_964 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -3511,7 +3511,7 @@ kcg_bool kcg_comp_array_int64_964(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_964 */
+#endif /* kcg_use_array_int32_964 */
 
 #ifdef kcg_use_driverIdentifier_T_DMI_Messages_Bothways_Pkg
 kcg_bool kcg_comp_driverIdentifier_T_DMI_Messages_Bothways_Pkg(
@@ -3559,10 +3559,10 @@ kcg_bool kcg_comp__69_array(_69_array *kcg_c1, _69_array *kcg_c2)
 }
 #endif /* kcg_use__69_array */
 
-#ifdef kcg_use_array_int64_395
-kcg_bool kcg_comp_array_int64_395(
-  array_int64_395 *kcg_c1,
-  array_int64_395 *kcg_c2)
+#ifdef kcg_use_array_int32_395
+kcg_bool kcg_comp_array_int32_395(
+  array_int32_395 *kcg_c1,
+  array_int32_395 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -3573,7 +3573,7 @@ kcg_bool kcg_comp_array_int64_395(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_395 */
+#endif /* kcg_use_array_int32_395 */
 
 #ifdef kcg_use_P046_sections_array_flat_T_TM
 kcg_bool kcg_comp_P046_sections_array_flat_T_TM(
@@ -3591,10 +3591,10 @@ kcg_bool kcg_comp_P046_sections_array_flat_T_TM(
 }
 #endif /* kcg_use_P046_sections_array_flat_T_TM */
 
-#ifdef kcg_use_array_float64_50
-kcg_bool kcg_comp_array_float64_50(
-  array_float64_50 *kcg_c1,
-  array_float64_50 *kcg_c2)
+#ifdef kcg_use_array_float32_50
+kcg_bool kcg_comp_array_float32_50(
+  array_float32_50 *kcg_c1,
+  array_float32_50 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -3605,25 +3605,25 @@ kcg_bool kcg_comp_array_float64_50(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_float64_50 */
+#endif /* kcg_use_array_float32_50 */
 
-#ifdef kcg_use_array_float64_100_8
-kcg_bool kcg_comp_array_float64_100_8(
-  array_float64_100_8 *kcg_c1,
-  array_float64_100_8 *kcg_c2)
+#ifdef kcg_use_array_float32_100_8
+kcg_bool kcg_comp_array_float32_100_8(
+  array_float32_100_8 *kcg_c1,
+  array_float32_100_8 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
 
   kcg_equ = kcg_true;
   for (kcg_ci = 0; kcg_ci < 8; kcg_ci++) {
-    kcg_equ = kcg_equ & kcg_comp_array_float64_100(
+    kcg_equ = kcg_equ & kcg_comp_array_float32_100(
         &(*kcg_c1)[kcg_ci],
         &(*kcg_c2)[kcg_ci]);
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_float64_100_8 */
+#endif /* kcg_use_array_float32_100_8 */
 
 #ifdef kcg_use_ParabolaCurveValid_T_CalcBrakingCurves_types
 kcg_bool kcg_comp_ParabolaCurveValid_T_CalcBrakingCurves_types(
@@ -3641,8 +3641,8 @@ kcg_bool kcg_comp_ParabolaCurveValid_T_CalcBrakingCurves_types(
 }
 #endif /* kcg_use_ParabolaCurveValid_T_CalcBrakingCurves_types */
 
-#ifdef kcg_use_array_int64_72
-kcg_bool kcg_comp_array_int64_72(array_int64_72 *kcg_c1, array_int64_72 *kcg_c2)
+#ifdef kcg_use_array_int32_72
+kcg_bool kcg_comp_array_int32_72(array_int32_72 *kcg_c1, array_int32_72 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -3653,7 +3653,7 @@ kcg_bool kcg_comp_array_int64_72(array_int64_72 *kcg_c1, array_int64_72 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_72 */
+#endif /* kcg_use_array_int32_72 */
 
 #ifdef kcg_use__70_array
 kcg_bool kcg_comp__70_array(_70_array *kcg_c1, _70_array *kcg_c2)
@@ -3671,23 +3671,23 @@ kcg_bool kcg_comp__70_array(_70_array *kcg_c1, _70_array *kcg_c2)
 }
 #endif /* kcg_use__70_array */
 
-#ifdef kcg_use_array_int64_2_32
-kcg_bool kcg_comp_array_int64_2_32(
-  array_int64_2_32 *kcg_c1,
-  array_int64_2_32 *kcg_c2)
+#ifdef kcg_use_array_int32_2_32
+kcg_bool kcg_comp_array_int32_2_32(
+  array_int32_2_32 *kcg_c1,
+  array_int32_2_32 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
 
   kcg_equ = kcg_true;
   for (kcg_ci = 0; kcg_ci < 32; kcg_ci++) {
-    kcg_equ = kcg_equ & kcg_comp_array_int64_2(
+    kcg_equ = kcg_equ & kcg_comp_array_int32_2(
         &(*kcg_c1)[kcg_ci],
         &(*kcg_c2)[kcg_ci]);
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_2_32 */
+#endif /* kcg_use_array_int32_2_32 */
 
 #ifdef kcg_use_positionedBGs_T_TrainPosition_Types_Pck
 kcg_bool kcg_comp_positionedBGs_T_TrainPosition_Types_Pck(
@@ -3739,10 +3739,10 @@ kcg_bool kcg_comp__72_array(_72_array *kcg_c1, _72_array *kcg_c2)
 }
 #endif /* kcg_use__72_array */
 
-#ifdef kcg_use_array_int64_198_33
-kcg_bool kcg_comp_array_int64_198_33(
-  array_int64_198_33 *kcg_c1,
-  array_int64_198_33 *kcg_c2)
+#ifdef kcg_use_array_int32_198_33
+kcg_bool kcg_comp_array_int32_198_33(
+  array_int32_198_33 *kcg_c1,
+  array_int32_198_33 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -3755,7 +3755,7 @@ kcg_bool kcg_comp_array_int64_198_33(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_198_33 */
+#endif /* kcg_use_array_int32_198_33 */
 
 #ifdef kcg_use__73_array
 kcg_bool kcg_comp__73_array(_73_array *kcg_c1, _73_array *kcg_c2)
@@ -3817,10 +3817,10 @@ kcg_bool kcg_comp_P044_other_data_TM_TrainToTrack(
 }
 #endif /* kcg_use_P044_other_data_TM_TrainToTrack */
 
-#ifdef kcg_use_array_int64_496
-kcg_bool kcg_comp_array_int64_496(
-  array_int64_496 *kcg_c1,
-  array_int64_496 *kcg_c2)
+#ifdef kcg_use_array_int32_496
+kcg_bool kcg_comp_array_int32_496(
+  array_int32_496 *kcg_c1,
+  array_int32_496 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -3831,7 +3831,7 @@ kcg_bool kcg_comp_array_int64_496(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_496 */
+#endif /* kcg_use_array_int32_496 */
 
 #ifdef kcg_use__76_array
 kcg_bool kcg_comp__76_array(_76_array *kcg_c1, _76_array *kcg_c2)
@@ -3849,10 +3849,10 @@ kcg_bool kcg_comp__76_array(_76_array *kcg_c1, _76_array *kcg_c2)
 }
 #endif /* kcg_use__76_array */
 
-#ifdef kcg_use_array_int64_2_4_8
-kcg_bool kcg_comp_array_int64_2_4_8(
-  array_int64_2_4_8 *kcg_c1,
-  array_int64_2_4_8 *kcg_c2)
+#ifdef kcg_use_array_int32_2_4_8
+kcg_bool kcg_comp_array_int32_2_4_8(
+  array_int32_2_4_8 *kcg_c1,
+  array_int32_2_4_8 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -3866,7 +3866,7 @@ kcg_bool kcg_comp_array_int64_2_4_8(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_2_4_8 */
+#endif /* kcg_use_array_int32_2_4_8 */
 
 #ifdef kcg_use__77_array
 kcg_bool kcg_comp__77_array(_77_array *kcg_c1, _77_array *kcg_c2)
@@ -3914,8 +3914,8 @@ kcg_bool kcg_comp__79_array(_79_array *kcg_c1, _79_array *kcg_c2)
 }
 #endif /* kcg_use__79_array */
 
-#ifdef kcg_use_array_int64_4
-kcg_bool kcg_comp_array_int64_4(array_int64_4 *kcg_c1, array_int64_4 *kcg_c2)
+#ifdef kcg_use_array_int32_4
+kcg_bool kcg_comp_array_int32_4(array_int32_4 *kcg_c1, array_int32_4 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -3926,12 +3926,12 @@ kcg_bool kcg_comp_array_int64_4(array_int64_4 *kcg_c1, array_int64_4 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_4 */
+#endif /* kcg_use_array_int32_4 */
 
-#ifdef kcg_use_array_int64_499
-kcg_bool kcg_comp_array_int64_499(
-  array_int64_499 *kcg_c1,
-  array_int64_499 *kcg_c2)
+#ifdef kcg_use_array_int32_499
+kcg_bool kcg_comp_array_int32_499(
+  array_int32_499 *kcg_c1,
+  array_int32_499 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -3942,7 +3942,7 @@ kcg_bool kcg_comp_array_int64_499(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_499 */
+#endif /* kcg_use_array_int32_499 */
 
 #ifdef kcg_use__80_array
 kcg_bool kcg_comp__80_array(_80_array *kcg_c1, _80_array *kcg_c2)
@@ -4014,8 +4014,8 @@ kcg_bool kcg_comp_GradientProfile_for_DMI_t_TrackAtlasTypes(
 }
 #endif /* kcg_use_GradientProfile_for_DMI_t_TrackAtlasTypes */
 
-#ifdef kcg_use_array_int64_10
-kcg_bool kcg_comp_array_int64_10(array_int64_10 *kcg_c1, array_int64_10 *kcg_c2)
+#ifdef kcg_use_array_int32_10
+kcg_bool kcg_comp_array_int32_10(array_int32_10 *kcg_c1, array_int32_10 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -4026,7 +4026,7 @@ kcg_bool kcg_comp_array_int64_10(array_int64_10 *kcg_c1, array_int64_10 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_10 */
+#endif /* kcg_use_array_int32_10 */
 
 #ifdef kcg_use_array_bool_113
 kcg_bool kcg_comp_array_bool_113(array_bool_113 *kcg_c1, array_bool_113 *kcg_c2)
@@ -4090,8 +4090,8 @@ kcg_bool kcg_comp__83_array(_83_array *kcg_c1, _83_array *kcg_c2)
 }
 #endif /* kcg_use__83_array */
 
-#ifdef kcg_use_array_int64_7
-kcg_bool kcg_comp_array_int64_7(array_int64_7 *kcg_c1, array_int64_7 *kcg_c2)
+#ifdef kcg_use_array_int32_7
+kcg_bool kcg_comp_array_int32_7(array_int32_7 *kcg_c1, array_int32_7 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -4102,7 +4102,7 @@ kcg_bool kcg_comp_array_int64_7(array_int64_7 *kcg_c1, array_int64_7 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_7 */
+#endif /* kcg_use_array_int32_7 */
 
 #ifdef kcg_use_nvkvintsetArray_T_Packet_Types_Pkg
 kcg_bool kcg_comp_nvkvintsetArray_T_Packet_Types_Pkg(
@@ -4212,10 +4212,10 @@ kcg_bool kcg_comp_DiffArray_T_Packet_Types_Pkg(
 }
 #endif /* kcg_use_DiffArray_T_Packet_Types_Pkg */
 
-#ifdef kcg_use_array_int64_428
-kcg_bool kcg_comp_array_int64_428(
-  array_int64_428 *kcg_c1,
-  array_int64_428 *kcg_c2)
+#ifdef kcg_use_array_int32_428
+kcg_bool kcg_comp_array_int32_428(
+  array_int32_428 *kcg_c1,
+  array_int32_428 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -4226,7 +4226,7 @@ kcg_bool kcg_comp_array_int64_428(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_428 */
+#endif /* kcg_use_array_int32_428 */
 
 #ifdef kcg_use__84_array
 kcg_bool kcg_comp__84_array(_84_array *kcg_c1, _84_array *kcg_c2)
@@ -4276,8 +4276,8 @@ kcg_bool kcg_comp__85_array(_85_array *kcg_c1, _85_array *kcg_c2)
 }
 #endif /* kcg_use__85_array */
 
-#ifdef kcg_use_array_int64_99
-kcg_bool kcg_comp_array_int64_99(array_int64_99 *kcg_c1, array_int64_99 *kcg_c2)
+#ifdef kcg_use_array_int32_99
+kcg_bool kcg_comp_array_int32_99(array_int32_99 *kcg_c1, array_int32_99 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -4288,10 +4288,10 @@ kcg_bool kcg_comp_array_int64_99(array_int64_99 *kcg_c1, array_int64_99 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_99 */
+#endif /* kcg_use_array_int32_99 */
 
-#ifdef kcg_use_array_int64_13
-kcg_bool kcg_comp_array_int64_13(array_int64_13 *kcg_c1, array_int64_13 *kcg_c2)
+#ifdef kcg_use_array_int32_13
+kcg_bool kcg_comp_array_int32_13(array_int32_13 *kcg_c1, array_int32_13 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -4302,10 +4302,10 @@ kcg_bool kcg_comp_array_int64_13(array_int64_13 *kcg_c1, array_int64_13 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_13 */
+#endif /* kcg_use_array_int32_13 */
 
-#ifdef kcg_use_array_int64_22
-kcg_bool kcg_comp_array_int64_22(array_int64_22 *kcg_c1, array_int64_22 *kcg_c2)
+#ifdef kcg_use_array_int32_22
+kcg_bool kcg_comp_array_int32_22(array_int32_22 *kcg_c1, array_int32_22 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -4316,12 +4316,12 @@ kcg_bool kcg_comp_array_int64_22(array_int64_22 *kcg_c1, array_int64_22 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_22 */
+#endif /* kcg_use_array_int32_22 */
 
-#ifdef kcg_use_array_int64_105
-kcg_bool kcg_comp_array_int64_105(
-  array_int64_105 *kcg_c1,
-  array_int64_105 *kcg_c2)
+#ifdef kcg_use_array_int32_105
+kcg_bool kcg_comp_array_int32_105(
+  array_int32_105 *kcg_c1,
+  array_int32_105 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -4332,7 +4332,7 @@ kcg_bool kcg_comp_array_int64_105(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_105 */
+#endif /* kcg_use_array_int32_105 */
 
 #ifdef kcg_use_P005_OBU_sectionlist_array_T_TM
 kcg_bool kcg_comp_P005_OBU_sectionlist_array_T_TM(
@@ -4418,10 +4418,10 @@ kcg_bool kcg_comp_IterPacket58List_T_Packet_Types_Pkg(
 }
 #endif /* kcg_use_IterPacket58List_T_Packet_Types_Pkg */
 
-#ifdef kcg_use_array_float64_3
-kcg_bool kcg_comp_array_float64_3(
-  array_float64_3 *kcg_c1,
-  array_float64_3 *kcg_c2)
+#ifdef kcg_use_array_float32_3
+kcg_bool kcg_comp_array_float32_3(
+  array_float32_3 *kcg_c1,
+  array_float32_3 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -4432,7 +4432,7 @@ kcg_bool kcg_comp_array_float64_3(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_float64_3 */
+#endif /* kcg_use_array_float32_3 */
 
 #ifdef kcg_use__89_array
 kcg_bool kcg_comp__89_array(_89_array *kcg_c1, _89_array *kcg_c2)
@@ -4450,8 +4450,8 @@ kcg_bool kcg_comp__89_array(_89_array *kcg_c1, _89_array *kcg_c2)
 }
 #endif /* kcg_use__89_array */
 
-#ifdef kcg_use_array_int64_25
-kcg_bool kcg_comp_array_int64_25(array_int64_25 *kcg_c1, array_int64_25 *kcg_c2)
+#ifdef kcg_use_array_int32_25
+kcg_bool kcg_comp_array_int32_25(array_int32_25 *kcg_c1, array_int32_25 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -4462,7 +4462,7 @@ kcg_bool kcg_comp_array_int64_25(array_int64_25 *kcg_c1, array_int64_25 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_25 */
+#endif /* kcg_use_array_int32_25 */
 
 #ifdef kcg_use__90_array
 kcg_bool kcg_comp__90_array(_90_array *kcg_c1, _90_array *kcg_c2)
@@ -4478,8 +4478,8 @@ kcg_bool kcg_comp__90_array(_90_array *kcg_c1, _90_array *kcg_c2)
 }
 #endif /* kcg_use__90_array */
 
-#ifdef kcg_use_array_int64_31
-kcg_bool kcg_comp_array_int64_31(array_int64_31 *kcg_c1, array_int64_31 *kcg_c2)
+#ifdef kcg_use_array_int32_31
+kcg_bool kcg_comp_array_int32_31(array_int32_31 *kcg_c1, array_int32_31 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -4490,7 +4490,7 @@ kcg_bool kcg_comp_array_int64_31(array_int64_31 *kcg_c1, array_int64_31 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_31 */
+#endif /* kcg_use_array_int32_31 */
 
 #ifdef kcg_use__91_array
 kcg_bool kcg_comp__91_array(_91_array *kcg_c1, _91_array *kcg_c2)
@@ -4508,10 +4508,10 @@ kcg_bool kcg_comp__91_array(_91_array *kcg_c1, _91_array *kcg_c2)
 }
 #endif /* kcg_use__91_array */
 
-#ifdef kcg_use_array_float64_6
-kcg_bool kcg_comp_array_float64_6(
-  array_float64_6 *kcg_c1,
-  array_float64_6 *kcg_c2)
+#ifdef kcg_use_array_float32_6
+kcg_bool kcg_comp_array_float32_6(
+  array_float32_6 *kcg_c1,
+  array_float32_6 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -4522,12 +4522,12 @@ kcg_bool kcg_comp_array_float64_6(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_float64_6 */
+#endif /* kcg_use_array_float32_6 */
 
-#ifdef kcg_use_array_int64_114
-kcg_bool kcg_comp_array_int64_114(
-  array_int64_114 *kcg_c1,
-  array_int64_114 *kcg_c2)
+#ifdef kcg_use_array_int32_114
+kcg_bool kcg_comp_array_int32_114(
+  array_int32_114 *kcg_c1,
+  array_int32_114 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -4538,12 +4538,12 @@ kcg_bool kcg_comp_array_int64_114(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_114 */
+#endif /* kcg_use_array_int32_114 */
 
-#ifdef kcg_use_array_int64_66_33
-kcg_bool kcg_comp_array_int64_66_33(
-  array_int64_66_33 *kcg_c1,
-  array_int64_66_33 *kcg_c2)
+#ifdef kcg_use_array_int32_66_33
+kcg_bool kcg_comp_array_int32_66_33(
+  array_int32_66_33 *kcg_c1,
+  array_int32_66_33 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -4556,10 +4556,10 @@ kcg_bool kcg_comp_array_int64_66_33(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_66_33 */
+#endif /* kcg_use_array_int32_66_33 */
 
-#ifdef kcg_use_array_int64_28
-kcg_bool kcg_comp_array_int64_28(array_int64_28 *kcg_c1, array_int64_28 *kcg_c2)
+#ifdef kcg_use_array_int32_28
+kcg_bool kcg_comp_array_int32_28(array_int32_28 *kcg_c1, array_int32_28 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -4570,7 +4570,7 @@ kcg_bool kcg_comp_array_int64_28(array_int64_28 *kcg_c1, array_int64_28 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_28 */
+#endif /* kcg_use_array_int32_28 */
 
 #ifdef kcg_use__92_array
 kcg_bool kcg_comp__92_array(_92_array *kcg_c1, _92_array *kcg_c2)
@@ -4604,23 +4604,23 @@ kcg_bool kcg_comp__93_array(_93_array *kcg_c1, _93_array *kcg_c2)
 }
 #endif /* kcg_use__93_array */
 
-#ifdef kcg_use_array_int64_64_32
-kcg_bool kcg_comp_array_int64_64_32(
-  array_int64_64_32 *kcg_c1,
-  array_int64_64_32 *kcg_c2)
+#ifdef kcg_use_array_int32_64_32
+kcg_bool kcg_comp_array_int32_64_32(
+  array_int32_64_32 *kcg_c1,
+  array_int32_64_32 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
 
   kcg_equ = kcg_true;
   for (kcg_ci = 0; kcg_ci < 32; kcg_ci++) {
-    kcg_equ = kcg_equ & kcg_comp_array_int64_64(
+    kcg_equ = kcg_equ & kcg_comp_array_int32_64(
         &(*kcg_c1)[kcg_ci],
         &(*kcg_c2)[kcg_ci]);
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_64_32 */
+#endif /* kcg_use_array_int32_64_32 */
 
 #ifdef kcg_use__94_array
 kcg_bool kcg_comp__94_array(_94_array *kcg_c1, _94_array *kcg_c2)
@@ -4638,8 +4638,8 @@ kcg_bool kcg_comp__94_array(_94_array *kcg_c1, _94_array *kcg_c2)
 }
 #endif /* kcg_use__94_array */
 
-#ifdef kcg_use_array_int64_40
-kcg_bool kcg_comp_array_int64_40(array_int64_40 *kcg_c1, array_int64_40 *kcg_c2)
+#ifdef kcg_use_array_int32_40
+kcg_bool kcg_comp_array_int32_40(array_int32_40 *kcg_c1, array_int32_40 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -4650,7 +4650,7 @@ kcg_bool kcg_comp_array_int64_40(array_int64_40 *kcg_c1, array_int64_40 *kcg_c2)
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_40 */
+#endif /* kcg_use_array_int32_40 */
 
 #ifdef kcg_use__95_array
 kcg_bool kcg_comp__95_array(_95_array *kcg_c1, _95_array *kcg_c2)
@@ -4668,41 +4668,41 @@ kcg_bool kcg_comp__95_array(_95_array *kcg_c1, _95_array *kcg_c2)
 }
 #endif /* kcg_use__95_array */
 
-#ifdef kcg_use_array_float64_100_6
-kcg_bool kcg_comp_array_float64_100_6(
-  array_float64_100_6 *kcg_c1,
-  array_float64_100_6 *kcg_c2)
+#ifdef kcg_use_array_float32_100_6
+kcg_bool kcg_comp_array_float32_100_6(
+  array_float32_100_6 *kcg_c1,
+  array_float32_100_6 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
 
   kcg_equ = kcg_true;
   for (kcg_ci = 0; kcg_ci < 6; kcg_ci++) {
-    kcg_equ = kcg_equ & kcg_comp_array_float64_100(
+    kcg_equ = kcg_equ & kcg_comp_array_float32_100(
         &(*kcg_c1)[kcg_ci],
         &(*kcg_c2)[kcg_ci]);
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_float64_100_6 */
+#endif /* kcg_use_array_float32_100_6 */
 
-#ifdef kcg_use_array_int64_6_221
-kcg_bool kcg_comp_array_int64_6_221(
-  array_int64_6_221 *kcg_c1,
-  array_int64_6_221 *kcg_c2)
+#ifdef kcg_use_array_int32_6_221
+kcg_bool kcg_comp_array_int32_6_221(
+  array_int32_6_221 *kcg_c1,
+  array_int32_6_221 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
 
   kcg_equ = kcg_true;
   for (kcg_ci = 0; kcg_ci < 221; kcg_ci++) {
-    kcg_equ = kcg_equ & kcg_comp_array_int64_6(
+    kcg_equ = kcg_equ & kcg_comp_array_int32_6(
         &(*kcg_c1)[kcg_ci],
         &(*kcg_c2)[kcg_ci]);
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_6_221 */
+#endif /* kcg_use_array_int32_6_221 */
 
 #ifdef kcg_use__96_array
 kcg_bool kcg_comp__96_array(_96_array *kcg_c1, _96_array *kcg_c2)
@@ -4721,10 +4721,10 @@ kcg_bool kcg_comp__96_array(_96_array *kcg_c1, _96_array *kcg_c2)
 }
 #endif /* kcg_use__96_array */
 
-#ifdef kcg_use_array_int64_627
-kcg_bool kcg_comp_array_int64_627(
-  array_int64_627 *kcg_c1,
-  array_int64_627 *kcg_c2)
+#ifdef kcg_use_array_int32_627
+kcg_bool kcg_comp_array_int32_627(
+  array_int32_627 *kcg_c1,
+  array_int32_627 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -4735,7 +4735,7 @@ kcg_bool kcg_comp_array_int64_627(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_627 */
+#endif /* kcg_use_array_int32_627 */
 
 #ifdef kcg_use_ASafe_Data_T_CalcBrakingCurves_types
 kcg_bool kcg_comp_ASafe_Data_T_CalcBrakingCurves_types(
@@ -4771,10 +4771,10 @@ kcg_bool kcg_comp__97_array(_97_array *kcg_c1, _97_array *kcg_c2)
 }
 #endif /* kcg_use__97_array */
 
-#ifdef kcg_use_array_int64_129
-kcg_bool kcg_comp_array_int64_129(
-  array_int64_129 *kcg_c1,
-  array_int64_129 *kcg_c2)
+#ifdef kcg_use_array_int32_129
+kcg_bool kcg_comp_array_int32_129(
+  array_int32_129 *kcg_c1,
+  array_int32_129 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -4785,7 +4785,7 @@ kcg_bool kcg_comp_array_int64_129(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_129 */
+#endif /* kcg_use_array_int32_129 */
 
 #ifdef kcg_use_array_bool_100
 kcg_bool kcg_comp_array_bool_100(array_bool_100 *kcg_c1, array_bool_100 *kcg_c2)
@@ -4801,10 +4801,10 @@ kcg_bool kcg_comp_array_bool_100(array_bool_100 *kcg_c1, array_bool_100 *kcg_c2)
 }
 #endif /* kcg_use_array_bool_100 */
 
-#ifdef kcg_use_array_float64_113
-kcg_bool kcg_comp_array_float64_113(
-  array_float64_113 *kcg_c1,
-  array_float64_113 *kcg_c2)
+#ifdef kcg_use_array_float32_113
+kcg_bool kcg_comp_array_float32_113(
+  array_float32_113 *kcg_c1,
+  array_float32_113 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -4815,12 +4815,12 @@ kcg_bool kcg_comp_array_float64_113(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_float64_113 */
+#endif /* kcg_use_array_float32_113 */
 
-#ifdef kcg_use_array_int64_221
-kcg_bool kcg_comp_array_int64_221(
-  array_int64_221 *kcg_c1,
-  array_int64_221 *kcg_c2)
+#ifdef kcg_use_array_int32_221
+kcg_bool kcg_comp_array_int32_221(
+  array_int32_221 *kcg_c1,
+  array_int32_221 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -4831,7 +4831,7 @@ kcg_bool kcg_comp_array_int64_221(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_int64_221 */
+#endif /* kcg_use_array_int32_221 */
 
 #ifdef kcg_use__98_array
 kcg_bool kcg_comp__98_array(_98_array *kcg_c1, _98_array *kcg_c2)
@@ -4881,10 +4881,10 @@ kcg_bool kcg_comp__100_array(_100_array *kcg_c1, _100_array *kcg_c2)
 }
 #endif /* kcg_use__100_array */
 
-#ifdef kcg_use_array_float64_110
-kcg_bool kcg_comp_array_float64_110(
-  array_float64_110 *kcg_c1,
-  array_float64_110 *kcg_c2)
+#ifdef kcg_use_array_float32_110
+kcg_bool kcg_comp_array_float32_110(
+  array_float32_110 *kcg_c1,
+  array_float32_110 *kcg_c2)
 {
   static kcg_bool kcg_equ;
   static kcg_size kcg_ci;
@@ -4895,7 +4895,7 @@ kcg_bool kcg_comp_array_float64_110(
   }
   return kcg_equ;
 }
-#endif /* kcg_use_array_float64_110 */
+#endif /* kcg_use_array_float32_110 */
 
 #ifdef kcg_use__101_array
 kcg_bool kcg_comp__101_array(_101_array *kcg_c1, _101_array *kcg_c2)

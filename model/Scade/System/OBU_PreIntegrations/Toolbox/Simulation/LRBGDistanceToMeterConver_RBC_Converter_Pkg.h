@@ -14,7 +14,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_float64 /* outDistanceToLRBGInMeters/ */ outDistanceToLRBGInMeters;
+  kcg_float32 /* outDistanceToLRBGInMeters/ */ outDistanceToLRBGInMeters;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
@@ -22,16 +22,16 @@ typedef struct {
   Q_SCALE /* WhenBlock1: */ WhenBlock1_clock;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_float64 /* WhenBlock1:Q_SCALE_1_m_scale:_L2/ */ _L2_Q_SCALE_1_m_scale_WhenBlock1;
+  kcg_float32 /* WhenBlock1:Q_SCALE_1_m_scale:_L2/ */ _L2_Q_SCALE_1_m_scale_WhenBlock1;
   D_LRBG /* WhenBlock1:Q_SCALE_1_m_scale:_L1/ */ _L1_Q_SCALE_1_m_scale_WhenBlock1;
-  kcg_float64 /* WhenBlock1:Q_SCALE_10_cm_scale:_L4/ */ _L4_Q_SCALE_10_cm_scale_WhenBlock1;
-  kcg_float64 /* WhenBlock1:Q_SCALE_10_cm_scale:_L3/ */ _L3_Q_SCALE_10_cm_scale_WhenBlock1;
-  kcg_float64 /* WhenBlock1:Q_SCALE_10_cm_scale:_L2/ */ _L2_Q_SCALE_10_cm_scale_WhenBlock1;
+  kcg_float32 /* WhenBlock1:Q_SCALE_10_cm_scale:_L4/ */ _L4_Q_SCALE_10_cm_scale_WhenBlock1;
+  kcg_float32 /* WhenBlock1:Q_SCALE_10_cm_scale:_L3/ */ _L3_Q_SCALE_10_cm_scale_WhenBlock1;
+  kcg_float32 /* WhenBlock1:Q_SCALE_10_cm_scale:_L2/ */ _L2_Q_SCALE_10_cm_scale_WhenBlock1;
   D_LRBG /* WhenBlock1:Q_SCALE_10_cm_scale:_L1/ */ _L1_Q_SCALE_10_cm_scale_WhenBlock1;
-  kcg_float64 /* WhenBlock1:Q_SCALE_10_m_scale:_L3/ */ _L3_Q_SCALE_10_m_scale_WhenBlock1;
-  kcg_float64 /* WhenBlock1:Q_SCALE_10_m_scale:_L4/ */ _L4_Q_SCALE_10_m_scale_WhenBlock1;
+  kcg_float32 /* WhenBlock1:Q_SCALE_10_m_scale:_L3/ */ _L3_Q_SCALE_10_m_scale_WhenBlock1;
+  kcg_float32 /* WhenBlock1:Q_SCALE_10_m_scale:_L4/ */ _L4_Q_SCALE_10_m_scale_WhenBlock1;
   D_LRBG /* WhenBlock1:Q_SCALE_10_m_scale:_L5/ */ _L5_Q_SCALE_10_m_scale_WhenBlock1;
-  kcg_float64 /* WhenBlock1:Q_SCALE_10_m_scale:_L6/ */ _L6_Q_SCALE_10_m_scale_WhenBlock1;
+  kcg_float32 /* WhenBlock1:Q_SCALE_10_m_scale:_L6/ */ _L6_Q_SCALE_10_m_scale_WhenBlock1;
 } outC_LRBGDistanceToMeterConver_RBC_Converter_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

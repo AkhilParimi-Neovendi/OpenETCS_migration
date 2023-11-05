@@ -29,11 +29,11 @@ void RadioTrainTrackPacket003__init_RBC_Messaging_Pkg_RBC_RadioTrainTrack_Pkg_RB
 
   outC->_L2 = kcg_true;
   outC->_L1.valid = kcg_true;
-  outC->_L1.number = kcg_lit_int64(0);
+  outC->_L1.number = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 1; idx1++) {
     outC->_L1.aNID_RADIO[idx1].valid = kcg_true;
     for (idx = 0; idx < 15; idx++) {
-      outC->_L1.aNID_RADIO[idx1].telephoneNumber[idx] = kcg_lit_int64(0);
+      outC->_L1.aNID_RADIO[idx1].telephoneNumber[idx] = kcg_lit_int32(0);
     }
   }
   outC->outIsValid = kcg_true;

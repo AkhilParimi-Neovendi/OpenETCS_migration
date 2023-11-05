@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _frontendToLRBG_CalculateTrainPosition_Pkg_Pos_Pkg_H_
 #define _frontendToLRBG_CalculateTrainPosition_Pkg_Pos_Pkg_H_
@@ -30,7 +30,7 @@ typedef struct {
   Q_DLRBG /* IfBlock1:then:_L6/ */ _L6_then_IfBlock1;
   Q_DLRBG /* IfBlock1:then:_L5/ */ _L5_then_IfBlock1;
   Q_DLRBG /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L3/ */ _L3_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L3/ */ _L3_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L2/ */ _L2_then_IfBlock1;
   L_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
   Q_DLRBG /* IfBlock1:else:else:_L1/ */ _L1_else_else_IfBlock1;
@@ -38,7 +38,7 @@ typedef struct {
   Q_DLRBG /* IfBlock1:else:then:_L9/ */ _L9_then_else_IfBlock1;
   Q_DLRBG /* IfBlock1:else:then:_L8/ */ _L8_then_else_IfBlock1;
   Q_DLRBG /* IfBlock1:else:then:_L7/ */ _L7_then_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L6/ */ _L6_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L6/ */ _L6_then_else_IfBlock1;
   L_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:else:then:_L5/ */ _L5_then_else_IfBlock1;
   L_internal_Type_Obu_BasicTypes_Pkg /* estimated_d_LRBGToFrontend/ */ estimated_d_LRBGToFrontend;
   Q_DIRLRBG /* trainOrientationToLRBG/ */ trainOrientationToLRBG;
@@ -87,6 +87,6 @@ extern void frontendToLRBG_init_CalculateTrainPosition_Pkg_Pos_Pkg(
 #endif /* _frontendToLRBG_CalculateTrainPosition_Pkg_Pos_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** frontendToLRBG_CalculateTrainPosition_Pkg_Pos_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

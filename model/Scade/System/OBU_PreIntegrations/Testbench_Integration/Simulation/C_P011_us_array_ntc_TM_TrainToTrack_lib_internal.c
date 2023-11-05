@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,7 +10,7 @@
 /* TM_TrainToTrack_lib_internal::C_P011_us_array_ntc/ */
 void C_P011_us_array_ntc_TM_TrainToTrack_lib_internal(
   /* flat/ */
-  kcg_int64 flat,
+  kcg_int32 flat,
   outC_C_P011_us_array_ntc_TM_TrainToTrack_lib_internal *outC)
 {
   outC->_L1 = flat;
@@ -26,9 +26,9 @@ void C_P011_us_array_ntc_TM_TrainToTrack_lib_internal(
 void C_P011_us_array_ntc_init_TM_TrainToTrack_lib_internal(
   outC_C_P011_us_array_ntc_TM_TrainToTrack_lib_internal *outC)
 {
-  outC->_L34 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->sections = kcg_lit_int64(0);
+  outC->_L34 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->sections = kcg_lit_int32(0);
   /* _L34=(TM_conversions::CAST_Int_to_NID_NTC#1)/ */
   CAST_Int_to_NID_NTC_init_TM_conversions(&outC->Context_CAST_Int_to_NID_NTC_1);
 }
@@ -49,6 +49,6 @@ void C_P011_us_array_ntc_reset_TM_TrainToTrack_lib_internal(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P011_us_array_ntc_TM_TrainToTrack_lib_internal.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

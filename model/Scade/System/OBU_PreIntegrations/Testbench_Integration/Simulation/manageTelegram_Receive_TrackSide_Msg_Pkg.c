@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -107,68 +107,68 @@ void manageTelegram_init_Receive_TrackSide_Msg_Pkg(
   outC->_L67 = kcg_true;
   outC->_L66.badBaliseFlag = kcg_true;
   outC->_L66.BGMessageSent = kcg_true;
-  outC->_L66.C_ID = kcg_lit_int64(0);
-  outC->_L66.BG_ID = kcg_lit_int64(0);
+  outC->_L66.C_ID = kcg_lit_int32(0);
+  outC->_L66.BG_ID = kcg_lit_int32(0);
   outC->_L66.balisePosition.odometerOfBaliseDetection.valid = kcg_true;
-  outC->_L66.balisePosition.odometerOfBaliseDetection.timestamp = kcg_lit_int64(
+  outC->_L66.balisePosition.odometerOfBaliseDetection.timestamp = kcg_lit_int32(
       0);
   outC->_L66.balisePosition.odometerOfBaliseDetection.odo.o_nominal =
-    kcg_lit_int64(0);
-  outC->_L66.balisePosition.odometerOfBaliseDetection.odo.o_min = kcg_lit_int64(
+    kcg_lit_int32(0);
+  outC->_L66.balisePosition.odometerOfBaliseDetection.odo.o_min = kcg_lit_int32(
       0);
-  outC->_L66.balisePosition.odometerOfBaliseDetection.odo.o_max = kcg_lit_int64(
+  outC->_L66.balisePosition.odometerOfBaliseDetection.odo.o_max = kcg_lit_int32(
       0);
   outC->_L66.balisePosition.odometerOfBaliseDetection.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L66.balisePosition.odometerOfBaliseDetection.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L66.balisePosition.odometerOfBaliseDetection.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L66.balisePosition.odometerOfBaliseDetection.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L66.balisePosition.odometerOfBaliseDetection.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L66.balisePosition.odometerOfBaliseDetection.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L66.balisePosition.odometerOfBaliseDetection.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L66.balisePosition.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L66.balisePosition.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L66.balisePosition.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L66.positionFirstContact.odometerOfBaliseDetection.valid = kcg_true;
   outC->_L66.positionFirstContact.odometerOfBaliseDetection.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L66.positionFirstContact.odometerOfBaliseDetection.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L66.positionFirstContact.odometerOfBaliseDetection.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L66.positionFirstContact.odometerOfBaliseDetection.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L66.positionFirstContact.odometerOfBaliseDetection.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L66.positionFirstContact.odometerOfBaliseDetection.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L66.positionFirstContact.odometerOfBaliseDetection.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L66.positionFirstContact.odometerOfBaliseDetection.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L66.positionFirstContact.odometerOfBaliseDetection.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L66.positionFirstContact.odometerOfBaliseDetection.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L66.positionFirstContact.odometerOfBaliseDetection.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L66.positionFirstContact.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L66.positionFirstContact.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L66.positionFirstContact.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
-  outC->_L66.collectedTelegrams = kcg_lit_int64(0);
-  outC->_L66.totalTelegrams = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L66.collectedTelegrams = kcg_lit_int32(0);
+  outC->_L66.totalTelegrams = kcg_lit_int32(0);
   outC->_L65 = kcg_true;
   for (idx2 = 0; idx2 < 8; idx2++) {
     outC->_L64[idx2].valid = kcg_true;
@@ -180,85 +180,85 @@ void manageTelegram_init_Receive_TrackSide_Msg_Pkg(
     outC->_L64[idx2].telegramheader.n_pig = N_PIG_I_am_the_1st;
     outC->_L64[idx2].telegramheader.n_total = N_TOTAL_1_balise_in_the_group;
     outC->_L64[idx2].telegramheader.m_dup = M_DUP_No_duplicates;
-    outC->_L64[idx2].telegramheader.m_mcount = kcg_lit_int64(0);
-    outC->_L64[idx2].telegramheader.nid_c = kcg_lit_int64(0);
-    outC->_L64[idx2].telegramheader.nid_bg = kcg_lit_int64(0);
+    outC->_L64[idx2].telegramheader.m_mcount = kcg_lit_int32(0);
+    outC->_L64[idx2].telegramheader.nid_c = kcg_lit_int32(0);
+    outC->_L64[idx2].telegramheader.nid_bg = kcg_lit_int32(0);
     outC->_L64[idx2].telegramheader.q_link = Q_LINK_Unlinked;
     for (idx = 0; idx < 30; idx++) {
-      outC->_L64[idx2].packets.PacketHeaders[idx].nid_packet = kcg_lit_int64(0);
+      outC->_L64[idx2].packets.PacketHeaders[idx].nid_packet = kcg_lit_int32(0);
       outC->_L64[idx2].packets.PacketHeaders[idx].q_dir = Q_DIR_Reverse;
       outC->_L64[idx2].packets.PacketHeaders[idx].valid = kcg_true;
-      outC->_L64[idx2].packets.PacketHeaders[idx].startAddress = kcg_lit_int64(0);
-      outC->_L64[idx2].packets.PacketHeaders[idx].endAddress = kcg_lit_int64(0);
+      outC->_L64[idx2].packets.PacketHeaders[idx].startAddress = kcg_lit_int32(0);
+      outC->_L64[idx2].packets.PacketHeaders[idx].endAddress = kcg_lit_int32(0);
     }
     for (idx1 = 0; idx1 < 500; idx1++) {
-      outC->_L64[idx2].packets.PacketData[idx1] = kcg_lit_int64(0);
+      outC->_L64[idx2].packets.PacketData[idx1] = kcg_lit_int32(0);
     }
   }
   outC->_L63.badBaliseFlag = kcg_true;
   outC->_L63.BGMessageSent = kcg_true;
-  outC->_L63.C_ID = kcg_lit_int64(0);
-  outC->_L63.BG_ID = kcg_lit_int64(0);
+  outC->_L63.C_ID = kcg_lit_int32(0);
+  outC->_L63.BG_ID = kcg_lit_int32(0);
   outC->_L63.balisePosition.odometerOfBaliseDetection.valid = kcg_true;
-  outC->_L63.balisePosition.odometerOfBaliseDetection.timestamp = kcg_lit_int64(
+  outC->_L63.balisePosition.odometerOfBaliseDetection.timestamp = kcg_lit_int32(
       0);
   outC->_L63.balisePosition.odometerOfBaliseDetection.odo.o_nominal =
-    kcg_lit_int64(0);
-  outC->_L63.balisePosition.odometerOfBaliseDetection.odo.o_min = kcg_lit_int64(
+    kcg_lit_int32(0);
+  outC->_L63.balisePosition.odometerOfBaliseDetection.odo.o_min = kcg_lit_int32(
       0);
-  outC->_L63.balisePosition.odometerOfBaliseDetection.odo.o_max = kcg_lit_int64(
+  outC->_L63.balisePosition.odometerOfBaliseDetection.odo.o_max = kcg_lit_int32(
       0);
   outC->_L63.balisePosition.odometerOfBaliseDetection.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L63.balisePosition.odometerOfBaliseDetection.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L63.balisePosition.odometerOfBaliseDetection.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L63.balisePosition.odometerOfBaliseDetection.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L63.balisePosition.odometerOfBaliseDetection.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L63.balisePosition.odometerOfBaliseDetection.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L63.balisePosition.odometerOfBaliseDetection.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L63.balisePosition.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L63.balisePosition.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L63.balisePosition.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L63.positionFirstContact.odometerOfBaliseDetection.valid = kcg_true;
   outC->_L63.positionFirstContact.odometerOfBaliseDetection.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L63.positionFirstContact.odometerOfBaliseDetection.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L63.positionFirstContact.odometerOfBaliseDetection.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L63.positionFirstContact.odometerOfBaliseDetection.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L63.positionFirstContact.odometerOfBaliseDetection.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L63.positionFirstContact.odometerOfBaliseDetection.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L63.positionFirstContact.odometerOfBaliseDetection.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L63.positionFirstContact.odometerOfBaliseDetection.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L63.positionFirstContact.odometerOfBaliseDetection.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L63.positionFirstContact.odometerOfBaliseDetection.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L63.positionFirstContact.odometerOfBaliseDetection.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L63.positionFirstContact.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L63.positionFirstContact.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L63.positionFirstContact.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
-  outC->_L63.collectedTelegrams = kcg_lit_int64(0);
-  outC->_L63.totalTelegrams = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L63.collectedTelegrams = kcg_lit_int32(0);
+  outC->_L63.totalTelegrams = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 8; idx5++) {
     outC->_L60[idx5].valid = kcg_true;
     outC->_L60[idx5].checkResult = kcg_true;
@@ -269,19 +269,19 @@ void manageTelegram_init_Receive_TrackSide_Msg_Pkg(
     outC->_L60[idx5].telegramheader.n_pig = N_PIG_I_am_the_1st;
     outC->_L60[idx5].telegramheader.n_total = N_TOTAL_1_balise_in_the_group;
     outC->_L60[idx5].telegramheader.m_dup = M_DUP_No_duplicates;
-    outC->_L60[idx5].telegramheader.m_mcount = kcg_lit_int64(0);
-    outC->_L60[idx5].telegramheader.nid_c = kcg_lit_int64(0);
-    outC->_L60[idx5].telegramheader.nid_bg = kcg_lit_int64(0);
+    outC->_L60[idx5].telegramheader.m_mcount = kcg_lit_int32(0);
+    outC->_L60[idx5].telegramheader.nid_c = kcg_lit_int32(0);
+    outC->_L60[idx5].telegramheader.nid_bg = kcg_lit_int32(0);
     outC->_L60[idx5].telegramheader.q_link = Q_LINK_Unlinked;
     for (idx3 = 0; idx3 < 30; idx3++) {
-      outC->_L60[idx5].packets.PacketHeaders[idx3].nid_packet = kcg_lit_int64(0);
+      outC->_L60[idx5].packets.PacketHeaders[idx3].nid_packet = kcg_lit_int32(0);
       outC->_L60[idx5].packets.PacketHeaders[idx3].q_dir = Q_DIR_Reverse;
       outC->_L60[idx5].packets.PacketHeaders[idx3].valid = kcg_true;
-      outC->_L60[idx5].packets.PacketHeaders[idx3].startAddress = kcg_lit_int64(0);
-      outC->_L60[idx5].packets.PacketHeaders[idx3].endAddress = kcg_lit_int64(0);
+      outC->_L60[idx5].packets.PacketHeaders[idx3].startAddress = kcg_lit_int32(0);
+      outC->_L60[idx5].packets.PacketHeaders[idx3].endAddress = kcg_lit_int32(0);
     }
     for (idx4 = 0; idx4 < 500; idx4++) {
-      outC->_L60[idx5].packets.PacketData[idx4] = kcg_lit_int64(0);
+      outC->_L60[idx5].packets.PacketData[idx4] = kcg_lit_int32(0);
     }
   }
   for (idx8 = 0; idx8 < 8; idx8++) {
@@ -294,166 +294,166 @@ void manageTelegram_init_Receive_TrackSide_Msg_Pkg(
     outC->_L58[idx8].telegramheader.n_pig = N_PIG_I_am_the_1st;
     outC->_L58[idx8].telegramheader.n_total = N_TOTAL_1_balise_in_the_group;
     outC->_L58[idx8].telegramheader.m_dup = M_DUP_No_duplicates;
-    outC->_L58[idx8].telegramheader.m_mcount = kcg_lit_int64(0);
-    outC->_L58[idx8].telegramheader.nid_c = kcg_lit_int64(0);
-    outC->_L58[idx8].telegramheader.nid_bg = kcg_lit_int64(0);
+    outC->_L58[idx8].telegramheader.m_mcount = kcg_lit_int32(0);
+    outC->_L58[idx8].telegramheader.nid_c = kcg_lit_int32(0);
+    outC->_L58[idx8].telegramheader.nid_bg = kcg_lit_int32(0);
     outC->_L58[idx8].telegramheader.q_link = Q_LINK_Unlinked;
     for (idx6 = 0; idx6 < 30; idx6++) {
-      outC->_L58[idx8].packets.PacketHeaders[idx6].nid_packet = kcg_lit_int64(0);
+      outC->_L58[idx8].packets.PacketHeaders[idx6].nid_packet = kcg_lit_int32(0);
       outC->_L58[idx8].packets.PacketHeaders[idx6].q_dir = Q_DIR_Reverse;
       outC->_L58[idx8].packets.PacketHeaders[idx6].valid = kcg_true;
-      outC->_L58[idx8].packets.PacketHeaders[idx6].startAddress = kcg_lit_int64(0);
-      outC->_L58[idx8].packets.PacketHeaders[idx6].endAddress = kcg_lit_int64(0);
+      outC->_L58[idx8].packets.PacketHeaders[idx6].startAddress = kcg_lit_int32(0);
+      outC->_L58[idx8].packets.PacketHeaders[idx6].endAddress = kcg_lit_int32(0);
     }
     for (idx7 = 0; idx7 < 500; idx7++) {
-      outC->_L58[idx8].packets.PacketData[idx7] = kcg_lit_int64(0);
+      outC->_L58[idx8].packets.PacketData[idx7] = kcg_lit_int32(0);
     }
   }
   outC->_L53 = kcg_true;
   outC->_L54.badBaliseFlag = kcg_true;
   outC->_L54.BGMessageSent = kcg_true;
-  outC->_L54.C_ID = kcg_lit_int64(0);
-  outC->_L54.BG_ID = kcg_lit_int64(0);
+  outC->_L54.C_ID = kcg_lit_int32(0);
+  outC->_L54.BG_ID = kcg_lit_int32(0);
   outC->_L54.balisePosition.odometerOfBaliseDetection.valid = kcg_true;
-  outC->_L54.balisePosition.odometerOfBaliseDetection.timestamp = kcg_lit_int64(
+  outC->_L54.balisePosition.odometerOfBaliseDetection.timestamp = kcg_lit_int32(
       0);
   outC->_L54.balisePosition.odometerOfBaliseDetection.odo.o_nominal =
-    kcg_lit_int64(0);
-  outC->_L54.balisePosition.odometerOfBaliseDetection.odo.o_min = kcg_lit_int64(
+    kcg_lit_int32(0);
+  outC->_L54.balisePosition.odometerOfBaliseDetection.odo.o_min = kcg_lit_int32(
       0);
-  outC->_L54.balisePosition.odometerOfBaliseDetection.odo.o_max = kcg_lit_int64(
+  outC->_L54.balisePosition.odometerOfBaliseDetection.odo.o_max = kcg_lit_int32(
       0);
   outC->_L54.balisePosition.odometerOfBaliseDetection.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54.balisePosition.odometerOfBaliseDetection.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54.balisePosition.odometerOfBaliseDetection.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54.balisePosition.odometerOfBaliseDetection.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54.balisePosition.odometerOfBaliseDetection.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54.balisePosition.odometerOfBaliseDetection.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L54.balisePosition.odometerOfBaliseDetection.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L54.balisePosition.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54.balisePosition.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54.balisePosition.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54.positionFirstContact.odometerOfBaliseDetection.valid = kcg_true;
   outC->_L54.positionFirstContact.odometerOfBaliseDetection.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54.positionFirstContact.odometerOfBaliseDetection.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54.positionFirstContact.odometerOfBaliseDetection.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54.positionFirstContact.odometerOfBaliseDetection.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54.positionFirstContact.odometerOfBaliseDetection.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54.positionFirstContact.odometerOfBaliseDetection.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54.positionFirstContact.odometerOfBaliseDetection.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54.positionFirstContact.odometerOfBaliseDetection.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54.positionFirstContact.odometerOfBaliseDetection.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54.positionFirstContact.odometerOfBaliseDetection.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L54.positionFirstContact.odometerOfBaliseDetection.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L54.positionFirstContact.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54.positionFirstContact.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54.positionFirstContact.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
-  outC->_L54.collectedTelegrams = kcg_lit_int64(0);
-  outC->_L54.totalTelegrams = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L54.collectedTelegrams = kcg_lit_int32(0);
+  outC->_L54.totalTelegrams = kcg_lit_int32(0);
   outC->_L51.badBaliseFlag = kcg_true;
   outC->_L51.BGMessageSent = kcg_true;
-  outC->_L51.C_ID = kcg_lit_int64(0);
-  outC->_L51.BG_ID = kcg_lit_int64(0);
+  outC->_L51.C_ID = kcg_lit_int32(0);
+  outC->_L51.BG_ID = kcg_lit_int32(0);
   outC->_L51.balisePosition.odometerOfBaliseDetection.valid = kcg_true;
-  outC->_L51.balisePosition.odometerOfBaliseDetection.timestamp = kcg_lit_int64(
+  outC->_L51.balisePosition.odometerOfBaliseDetection.timestamp = kcg_lit_int32(
       0);
   outC->_L51.balisePosition.odometerOfBaliseDetection.odo.o_nominal =
-    kcg_lit_int64(0);
-  outC->_L51.balisePosition.odometerOfBaliseDetection.odo.o_min = kcg_lit_int64(
+    kcg_lit_int32(0);
+  outC->_L51.balisePosition.odometerOfBaliseDetection.odo.o_min = kcg_lit_int32(
       0);
-  outC->_L51.balisePosition.odometerOfBaliseDetection.odo.o_max = kcg_lit_int64(
+  outC->_L51.balisePosition.odometerOfBaliseDetection.odo.o_max = kcg_lit_int32(
       0);
   outC->_L51.balisePosition.odometerOfBaliseDetection.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L51.balisePosition.odometerOfBaliseDetection.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L51.balisePosition.odometerOfBaliseDetection.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L51.balisePosition.odometerOfBaliseDetection.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L51.balisePosition.odometerOfBaliseDetection.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L51.balisePosition.odometerOfBaliseDetection.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L51.balisePosition.odometerOfBaliseDetection.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L51.balisePosition.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L51.balisePosition.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L51.balisePosition.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L51.positionFirstContact.odometerOfBaliseDetection.valid = kcg_true;
   outC->_L51.positionFirstContact.odometerOfBaliseDetection.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L51.positionFirstContact.odometerOfBaliseDetection.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L51.positionFirstContact.odometerOfBaliseDetection.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L51.positionFirstContact.odometerOfBaliseDetection.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L51.positionFirstContact.odometerOfBaliseDetection.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L51.positionFirstContact.odometerOfBaliseDetection.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L51.positionFirstContact.odometerOfBaliseDetection.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L51.positionFirstContact.odometerOfBaliseDetection.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L51.positionFirstContact.odometerOfBaliseDetection.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L51.positionFirstContact.odometerOfBaliseDetection.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L51.positionFirstContact.odometerOfBaliseDetection.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L51.positionFirstContact.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L51.positionFirstContact.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L51.positionFirstContact.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
-  outC->_L51.collectedTelegrams = kcg_lit_int64(0);
-  outC->_L51.totalTelegrams = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L51.collectedTelegrams = kcg_lit_int32(0);
+  outC->_L51.totalTelegrams = kcg_lit_int32(0);
   outC->_L47.odometerOfBaliseDetection.valid = kcg_true;
-  outC->_L47.odometerOfBaliseDetection.timestamp = kcg_lit_int64(0);
-  outC->_L47.odometerOfBaliseDetection.odo.o_nominal = kcg_lit_int64(0);
-  outC->_L47.odometerOfBaliseDetection.odo.o_min = kcg_lit_int64(0);
-  outC->_L47.odometerOfBaliseDetection.odo.o_max = kcg_lit_int64(0);
-  outC->_L47.odometerOfBaliseDetection.speed.v_safeNominal = kcg_lit_int64(0);
-  outC->_L47.odometerOfBaliseDetection.speed.v_rawNominal = kcg_lit_int64(0);
-  outC->_L47.odometerOfBaliseDetection.speed.v_lower = kcg_lit_int64(0);
-  outC->_L47.odometerOfBaliseDetection.speed.v_upper = kcg_lit_int64(0);
-  outC->_L47.odometerOfBaliseDetection.acceleration = kcg_lit_int64(0);
+  outC->_L47.odometerOfBaliseDetection.timestamp = kcg_lit_int32(0);
+  outC->_L47.odometerOfBaliseDetection.odo.o_nominal = kcg_lit_int32(0);
+  outC->_L47.odometerOfBaliseDetection.odo.o_min = kcg_lit_int32(0);
+  outC->_L47.odometerOfBaliseDetection.odo.o_max = kcg_lit_int32(0);
+  outC->_L47.odometerOfBaliseDetection.speed.v_safeNominal = kcg_lit_int32(0);
+  outC->_L47.odometerOfBaliseDetection.speed.v_rawNominal = kcg_lit_int32(0);
+  outC->_L47.odometerOfBaliseDetection.speed.v_lower = kcg_lit_int32(0);
+  outC->_L47.odometerOfBaliseDetection.speed.v_upper = kcg_lit_int32(0);
+  outC->_L47.odometerOfBaliseDetection.acceleration = kcg_lit_int32(0);
   outC->_L47.odometerOfBaliseDetection.motionState = noMotion_Obu_BasicTypes_Pkg;
   outC->_L47.odometerOfBaliseDetection.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
-  outC->_L47.BG_centerDetectionInaccuraccuracies.nominal = kcg_lit_int64(0);
-  outC->_L47.BG_centerDetectionInaccuraccuracies.d_min = kcg_lit_int64(0);
-  outC->_L47.BG_centerDetectionInaccuraccuracies.d_max = kcg_lit_int64(0);
+  outC->_L47.BG_centerDetectionInaccuraccuracies.nominal = kcg_lit_int32(0);
+  outC->_L47.BG_centerDetectionInaccuraccuracies.d_min = kcg_lit_int32(0);
+  outC->_L47.BG_centerDetectionInaccuraccuracies.d_max = kcg_lit_int32(0);
   outC->_L10 = kcg_true;
   outC->_L11 = kcg_true;
   outC->_L6.valid = kcg_true;
@@ -465,19 +465,19 @@ void manageTelegram_init_Receive_TrackSide_Msg_Pkg(
   outC->_L6.telegramheader.n_pig = N_PIG_I_am_the_1st;
   outC->_L6.telegramheader.n_total = N_TOTAL_1_balise_in_the_group;
   outC->_L6.telegramheader.m_dup = M_DUP_No_duplicates;
-  outC->_L6.telegramheader.m_mcount = kcg_lit_int64(0);
-  outC->_L6.telegramheader.nid_c = kcg_lit_int64(0);
-  outC->_L6.telegramheader.nid_bg = kcg_lit_int64(0);
+  outC->_L6.telegramheader.m_mcount = kcg_lit_int32(0);
+  outC->_L6.telegramheader.nid_c = kcg_lit_int32(0);
+  outC->_L6.telegramheader.nid_bg = kcg_lit_int32(0);
   outC->_L6.telegramheader.q_link = Q_LINK_Unlinked;
   for (idx9 = 0; idx9 < 30; idx9++) {
-    outC->_L6.packets.PacketHeaders[idx9].nid_packet = kcg_lit_int64(0);
+    outC->_L6.packets.PacketHeaders[idx9].nid_packet = kcg_lit_int32(0);
     outC->_L6.packets.PacketHeaders[idx9].q_dir = Q_DIR_Reverse;
     outC->_L6.packets.PacketHeaders[idx9].valid = kcg_true;
-    outC->_L6.packets.PacketHeaders[idx9].startAddress = kcg_lit_int64(0);
-    outC->_L6.packets.PacketHeaders[idx9].endAddress = kcg_lit_int64(0);
+    outC->_L6.packets.PacketHeaders[idx9].startAddress = kcg_lit_int32(0);
+    outC->_L6.packets.PacketHeaders[idx9].endAddress = kcg_lit_int32(0);
   }
   for (idx10 = 0; idx10 < 500; idx10++) {
-    outC->_L6.packets.PacketData[idx10] = kcg_lit_int64(0);
+    outC->_L6.packets.PacketData[idx10] = kcg_lit_int32(0);
   }
   outC->needsReplace = kcg_true;
   outC->isNotReceivedAlready = kcg_true;
@@ -494,90 +494,90 @@ void manageTelegram_init_Receive_TrackSide_Msg_Pkg(
     outC->outTelegramArray[idx13].telegramheader.n_total =
       N_TOTAL_1_balise_in_the_group;
     outC->outTelegramArray[idx13].telegramheader.m_dup = M_DUP_No_duplicates;
-    outC->outTelegramArray[idx13].telegramheader.m_mcount = kcg_lit_int64(0);
-    outC->outTelegramArray[idx13].telegramheader.nid_c = kcg_lit_int64(0);
-    outC->outTelegramArray[idx13].telegramheader.nid_bg = kcg_lit_int64(0);
+    outC->outTelegramArray[idx13].telegramheader.m_mcount = kcg_lit_int32(0);
+    outC->outTelegramArray[idx13].telegramheader.nid_c = kcg_lit_int32(0);
+    outC->outTelegramArray[idx13].telegramheader.nid_bg = kcg_lit_int32(0);
     outC->outTelegramArray[idx13].telegramheader.q_link = Q_LINK_Unlinked;
     for (idx11 = 0; idx11 < 30; idx11++) {
       outC->outTelegramArray[idx13].packets.PacketHeaders[idx11].nid_packet =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->outTelegramArray[idx13].packets.PacketHeaders[idx11].q_dir =
         Q_DIR_Reverse;
       outC->outTelegramArray[idx13].packets.PacketHeaders[idx11].valid = kcg_true;
       outC->outTelegramArray[idx13].packets.PacketHeaders[idx11].startAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->outTelegramArray[idx13].packets.PacketHeaders[idx11].endAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
     for (idx12 = 0; idx12 < 500; idx12++) {
-      outC->outTelegramArray[idx13].packets.PacketData[idx12] = kcg_lit_int64(0);
+      outC->outTelegramArray[idx13].packets.PacketData[idx12] = kcg_lit_int32(0);
     }
   }
   outC->outCollector.badBaliseFlag = kcg_true;
   outC->outCollector.BGMessageSent = kcg_true;
-  outC->outCollector.C_ID = kcg_lit_int64(0);
-  outC->outCollector.BG_ID = kcg_lit_int64(0);
+  outC->outCollector.C_ID = kcg_lit_int32(0);
+  outC->outCollector.BG_ID = kcg_lit_int32(0);
   outC->outCollector.balisePosition.odometerOfBaliseDetection.valid = kcg_true;
   outC->outCollector.balisePosition.odometerOfBaliseDetection.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outCollector.balisePosition.odometerOfBaliseDetection.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outCollector.balisePosition.odometerOfBaliseDetection.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outCollector.balisePosition.odometerOfBaliseDetection.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outCollector.balisePosition.odometerOfBaliseDetection.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outCollector.balisePosition.odometerOfBaliseDetection.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outCollector.balisePosition.odometerOfBaliseDetection.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outCollector.balisePosition.odometerOfBaliseDetection.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outCollector.balisePosition.odometerOfBaliseDetection.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outCollector.balisePosition.odometerOfBaliseDetection.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->outCollector.balisePosition.odometerOfBaliseDetection.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->outCollector.balisePosition.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outCollector.balisePosition.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outCollector.balisePosition.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outCollector.positionFirstContact.odometerOfBaliseDetection.valid =
     kcg_true;
   outC->outCollector.positionFirstContact.odometerOfBaliseDetection.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outCollector.positionFirstContact.odometerOfBaliseDetection.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outCollector.positionFirstContact.odometerOfBaliseDetection.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outCollector.positionFirstContact.odometerOfBaliseDetection.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outCollector.positionFirstContact.odometerOfBaliseDetection.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outCollector.positionFirstContact.odometerOfBaliseDetection.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outCollector.positionFirstContact.odometerOfBaliseDetection.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outCollector.positionFirstContact.odometerOfBaliseDetection.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outCollector.positionFirstContact.odometerOfBaliseDetection.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outCollector.positionFirstContact.odometerOfBaliseDetection.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->outCollector.positionFirstContact.odometerOfBaliseDetection.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->outCollector.positionFirstContact.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outCollector.positionFirstContact.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outCollector.positionFirstContact.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
-  outC->outCollector.collectedTelegrams = kcg_lit_int64(0);
-  outC->outCollector.totalTelegrams = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->outCollector.collectedTelegrams = kcg_lit_int32(0);
+  outC->outCollector.totalTelegrams = kcg_lit_int32(0);
   outC->outBGisChangedEarly = kcg_true;
   outC->outBGisComplete = kcg_true;
   /* _L54=(Receive_TrackSide_Msg_Pkg::addTelegram#4)/ */
@@ -607,6 +607,6 @@ void manageTelegram_reset_Receive_TrackSide_Msg_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** manageTelegram_Receive_TrackSide_Msg_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

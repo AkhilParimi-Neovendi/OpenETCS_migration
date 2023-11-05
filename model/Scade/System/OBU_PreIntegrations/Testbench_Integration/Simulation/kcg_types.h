@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _KCG_TYPES_H_
 #define _KCG_TYPES_H_
@@ -2046,11 +2046,11 @@ typedef enum kcg_tag_SSM_ST_SESSION_ESTABLISHED_SM_SESSION_ESTABLISHED_CONTROLLE
 typedef enum kcg_tag_SSM_TR_PROCESS_VALIDATED_TRAIN_DATA_SM_PROCESS_VALIDATED_TRAIN_DATA_SESSION_ESTABLISHED_SM_SESSION_ESTABLISHED_CONTROLLER_SM {
   SSM_TR_no_trans_PROCESS_VALIDATED_TRAIN_DATA_SM_PROCESS_VALIDATED_TRAIN_DATA_SESSION_ESTABLISHED_SM_SESSION_ESTABLISHED_CONTROLLER_SM,
   SSM_TR_START_PROCESS_VALIDATED_TRAIN_DATA_1_START_PROCESS_VALIDATED_TRAIN_DATA_SM_PROCESS_VALIDATED_TRAIN_DATA_SESSION_ESTABLISHED_SM_SESSION_ESTABLISHED_CONTROLLER_SM,
-  SSM_TR_TRY_PROCESS_ACKNOWLEDGEMENT_TRY_PROCESS_ACKNOWLEDGEMENT_1_TRY_PROCESS_ACKNOWLEDGEMENT_PROCESS_VALIDATED_TRAIN_DATA_SM_PROCESS_VALIDATED_TRAIN_DATA_SESSION_ESTABLISHED_SM_SESSION_ESTABLISHED_CONTROLLER_SM,
-  SSM_TR_TRY_PROCESS_ACKNOWLEDGEMENT_AWAIT_ACKNOWLEDGEMENT_2_TRY_PROCESS_ACKNOWLEDGEMENT_PROCESS_VALIDATED_TRAIN_DATA_SM_PROCESS_VALIDATED_TRAIN_DATA_SESSION_ESTABLISHED_SM_SESSION_ESTABLISHED_CONTROLLER_SM,
+  SSM_TR_TRY_PROCESS_ACKNOWLEDGEMENT_TRY_PROCESS_ACKNOWLEDGEMENT_1_TRY_PROCESS_ACKNOWLEDGEMENT_PROCESS_VALIDATED_TRAIN_DATA_SM_PROCESS_VALIDATED_TRAIN_DATA_SESSION_ESTABLISHED_SM_SESSION_ESTABLISHED_CON,
+  SSM_TR_TRY_PROCESS_ACKNOWLEDGEMENT_AWAIT_ACKNOWLEDGEMENT_2_TRY_PROCESS_ACKNOWLEDGEMENT_PROCESS_VALIDATED_TRAIN_DATA_SM_PROCESS_VALIDATED_TRAIN_DATA_SESSION_ESTABLISHED_SM_SESSION_ESTABLISHED_CONTROLLE,
   SSM_TR_AWAIT_ACKNOWLEDGEMENT_TRY_PROCESS_ACKNOWLEDGEMENT_1_AWAIT_ACKNOWLEDGEMENT_PROCESS_VALIDATED_TRAIN_DATA_SM_PROCESS_VALIDATED_TRAIN_DATA_SESSION_ESTABLISHED_SM_SESSION_ESTABLISHED_CONTROLLER_SM,
-  SSM_TR_PROCESS_VALIDATED_TRAIN_DATA_TRY_PROCESS_ACKNOWLEDGEMENT_1_PROCESS_VALIDATED_TRAIN_DATA_PROCESS_VALIDATED_TRAIN_DATA_SM_PROCESS_VALIDATED_TRAIN_DATA_SESSION_ESTABLISHED_SM_SESSION_ESTABLISHED_CONTROLLER_SM,
-  SSM_TR_PROCESS_VALIDATED_TRAIN_DATA_AWAIT_ACKNOWLEDGEMENT_2_PROCESS_VALIDATED_TRAIN_DATA_PROCESS_VALIDATED_TRAIN_DATA_SM_PROCESS_VALIDATED_TRAIN_DATA_SESSION_ESTABLISHED_SM_SESSION_ESTABLISHED_CONTROLLER_SM
+  SSM_TR_PROCESS_VALIDATED_TRAIN_DATA_TRY_PROCESS_ACKNOWLEDGEMENT_1_PROCESS_VALIDATED_TRAIN_DATA_PROCESS_VALIDATED_TRAIN_DATA_SM_PROCESS_VALIDATED_TRAIN_DATA_SESSION_ESTABLISHED_SM_SESSION_ESTABLISHED_C,
+  SSM_TR_PROCESS_VALIDATED_TRAIN_DATA_AWAIT_ACKNOWLEDGEMENT_2_PROCESS_VALIDATED_TRAIN_DATA_PROCESS_VALIDATED_TRAIN_DATA_SM_PROCESS_VALIDATED_TRAIN_DATA_SESSION_ESTABLISHED_SM_SESSION_ESTABLISHED_CONTROL
 } SSM_TR_PROCESS_VALIDATED_TRAIN_DATA_SM_PROCESS_VALIDATED_TRAIN_DATA_SESSION_ESTABLISHED_SM_SESSION_ESTABLISHED_CONTROLLER_SM;
 /* RBC_Model_Pkg::RBC__ProcessController/CONTROLLER_SM:SESSION_ESTABLISHED:SESSION_ESTABLISHED_SM:PROCESS_VALIDATED_TRAIN_DATA:PROCESS_VALIDATED_TRAIN_DATA_SM: */
 typedef enum kcg_tag_SSM_ST_PROCESS_VALIDATED_TRAIN_DATA_SM_PROCESS_VALIDATED_TRAIN_DATA_SESSION_ESTABLISHED_SM_SESSION_ESTABLISHED_CONTROLLER_SM {
@@ -2063,10 +2063,10 @@ typedef enum kcg_tag_SSM_ST_PROCESS_VALIDATED_TRAIN_DATA_SM_PROCESS_VALIDATED_TR
 typedef enum kcg_tag_SSM_TR_SEND_MA_AMD_POS_REP_PARAMS_SM_SEND_MA_AND_POS_REP_PARAMS_SESSION_ESTABLISHED_SM_SESSION_ESTABLISHED_CONTROLLER_SM {
   SSM_TR_no_trans_SEND_MA_AMD_POS_REP_PARAMS_SM_SEND_MA_AND_POS_REP_PARAMS_SESSION_ESTABLISHED_SM_SESSION_ESTABLISHED_CONTROLLER_SM,
   SSM_TR_START_SEND_MA_AND_POS_REP_PARAMS_1_START_SEND_MA_AMD_POS_REP_PARAMS_SM_SEND_MA_AND_POS_REP_PARAMS_SESSION_ESTABLISHED_SM_SESSION_ESTABLISHED_CONTROLLER_SM,
-  SSM_TR_SEND_MA_AND_POS_REP_PARAMS_TRY_PROCESS_ACKNOWLEDGMENT_1_SEND_MA_AND_POS_REP_PARAMS_SEND_MA_AMD_POS_REP_PARAMS_SM_SEND_MA_AND_POS_REP_PARAMS_SESSION_ESTABLISHED_SM_SESSION_ESTABLISHED_CONTROLLER_SM,
+  SSM_TR_SEND_MA_AND_POS_REP_PARAMS_TRY_PROCESS_ACKNOWLEDGMENT_1_SEND_MA_AND_POS_REP_PARAMS_SEND_MA_AMD_POS_REP_PARAMS_SM_SEND_MA_AND_POS_REP_PARAMS_SESSION_ESTABLISHED_SM_SESSION_ESTABLISHED_CONTROLLER,
   SSM_TR_SEND_MA_AND_POS_REP_PARAMS_AWAIT_ACKNOWLEDGMENT_2_SEND_MA_AND_POS_REP_PARAMS_SEND_MA_AMD_POS_REP_PARAMS_SM_SEND_MA_AND_POS_REP_PARAMS_SESSION_ESTABLISHED_SM_SESSION_ESTABLISHED_CONTROLLER_SM,
   SSM_TR_AWAIT_ACKNOWLEDGMENT_TRY_PROCESS_ACKNOWLEDGMENT_1_AWAIT_ACKNOWLEDGMENT_SEND_MA_AMD_POS_REP_PARAMS_SM_SEND_MA_AND_POS_REP_PARAMS_SESSION_ESTABLISHED_SM_SESSION_ESTABLISHED_CONTROLLER_SM,
-  SSM_TR_TRY_PROCESS_ACKNOWLEDGMENT_TRY_PROCESS_ACKNOWLEDGMENT_1_TRY_PROCESS_ACKNOWLEDGMENT_SEND_MA_AMD_POS_REP_PARAMS_SM_SEND_MA_AND_POS_REP_PARAMS_SESSION_ESTABLISHED_SM_SESSION_ESTABLISHED_CONTROLLER_SM,
+  SSM_TR_TRY_PROCESS_ACKNOWLEDGMENT_TRY_PROCESS_ACKNOWLEDGMENT_1_TRY_PROCESS_ACKNOWLEDGMENT_SEND_MA_AMD_POS_REP_PARAMS_SM_SEND_MA_AND_POS_REP_PARAMS_SESSION_ESTABLISHED_SM_SESSION_ESTABLISHED_CONTROLLER,
   SSM_TR_TRY_PROCESS_ACKNOWLEDGMENT_AWAIT_ACKNOWLEDGMENT_2_TRY_PROCESS_ACKNOWLEDGMENT_SEND_MA_AMD_POS_REP_PARAMS_SM_SEND_MA_AND_POS_REP_PARAMS_SESSION_ESTABLISHED_SM_SESSION_ESTABLISHED_CONTROLLER_SM
 } SSM_TR_SEND_MA_AMD_POS_REP_PARAMS_SM_SEND_MA_AND_POS_REP_PARAMS_SESSION_ESTABLISHED_SM_SESSION_ESTABLISHED_CONTROLLER_SM;
 /* RBC_Model_Pkg::RBC__ProcessController/CONTROLLER_SM:SESSION_ESTABLISHED:SESSION_ESTABLISHED_SM:SEND_MA_AND_POS_REP_PARAMS:SEND_MA_AMD_POS_REP_PARAMS_SM: */
@@ -2357,17 +2357,9 @@ typedef enum kcg_tag_SSM_ST_WindowsSM_MainMenu_RequestSM_CommunicationActive_Han
 /* ProvidePositionReport_Pkg::BG_Orientation_T/ */
 typedef Q_DIRLRBG BG_Orientation_T_ProvidePositionReport_Pkg;
 
-typedef M_LEVEL _98_array[30];
+typedef Q_DIR _102_array[3];
 
-typedef ModeDecisionTableActionKind_DataDictionary_Pkg _94_array[17];
-
-typedef Q_DIR _92_array[33];
-
-typedef Q_SCALE _89_array[33];
-
-typedef Q_DIR _73_array[3];
-
-typedef Q_SCALE _72_array[3];
+typedef Q_SCALE _98_array[3];
 
 /* Array_DMI_Q_Text/,
    DMI_Control_Pkg::Sub_func::TextMessages::AckMsgManager/IfBlock1:then: */
@@ -2377,33 +2369,41 @@ typedef DMI_Q_TEXT_DMI_Types_Pkg Array_DMI_Q_Text[27];
    DMI_Control_Pkg::Sub_func::EntryRequest::WindowReqToMask/ */
 typedef DMI_List_Entry_Request_T_DMI_Types_Pkg Array_DMI_List_Entry_Request[15];
 
-typedef Q_SCALE _59_array[50];
+typedef Q_SCALE _81_array[50];
 
-typedef M_MODE _57_array[30];
+typedef M_MODE _78_array[30];
 
-typedef LevelDecisionTableActionKind_DataDictionary_Pkg _52_array[5];
+typedef LevelDecisionTableActionKind_DataDictionary_Pkg _73_array[5];
 
 /* DataDictionary_Pkg::LevelDecisionTableType/ */
-typedef _52_array LevelDecisionTableType_DataDictionary_Pkg[256];
+typedef _73_array LevelDecisionTableType_DataDictionary_Pkg[256];
 
-typedef NC_TRAIN _49_array[7];
+typedef NC_TRAIN _69_array[7];
 
-typedef Q_DIRTRAIN _45_array[30];
+typedef Q_DIRTRAIN _60_array[30];
+
+typedef N_PIG _51_array[8];
+
+typedef M_LEVEL _50_array[7];
+
+typedef Q_SCALE _41_array[10];
+
+typedef Q_DIR _40_array[7];
+
+typedef MsgSource_T_Common_Types_Pkg _35_array[30];
+
+typedef Q_SCALE _28_array[7];
+
+typedef M_LEVEL _18_array[30];
+
+typedef ModeDecisionTableActionKind_DataDictionary_Pkg _10_array[17];
 
 /* DataDictionary_Pkg::ModeDecisionTableType/ */
-typedef _94_array ModeDecisionTableType_DataDictionary_Pkg[256];
+typedef _10_array ModeDecisionTableType_DataDictionary_Pkg[256];
 
-typedef N_PIG _20_array[8];
+typedef Q_DIR _9_array[33];
 
-typedef M_LEVEL _18_array[7];
-
-typedef Q_SCALE _10_array[10];
-
-typedef Q_DIR _8_array[7];
-
-typedef MsgSource_T_Common_Types_Pkg _6_array[30];
-
-typedef Q_SCALE _5_array[7];
+typedef Q_SCALE _7_array[33];
 
 typedef kcg_char array_char_30[30];
 
@@ -2449,14 +2449,12 @@ typedef struct kcg_tag_T_AcknoledgementRequest_Level_And_Mode_Types_Pkg {
 
 typedef kcg_bool array_bool_32[32];
 
-/* TIU_Types_Pkg::Type_I_train_commands_T/ */
-typedef struct kcg_tag_Type_I_train_commands_T_TIU_Types_Pkg {
+/* TIU_Types_Pkg::Brake_command_T/ */
+typedef struct kcg_tag_Brake_command_T_TIU_Types_Pkg {
   kcg_bool valid;
-  M_pantograph_command_T_TIU_Types_Pkg m_pantograph_cm;
-  M_airtightness_command_T_TIU_Types_Pkg m_airtightness_cm;
-  M_mainpowerswitch_command_T_TIU_Types_Pkg m_mainpowerswitch_cm;
-  M_traction_cutoff_command_T_TIU_Types_Pkg m_traction_cutoff_cm;
-} Type_I_train_commands_T_TIU_Types_Pkg;
+  M_brake_signal_command_T_TIU_Types_Pkg m_servicebrake_cm;
+  M_brake_signal_command_T_TIU_Types_Pkg m_emergencybrake_cm;
+} Brake_command_T_TIU_Types_Pkg;
 
 /* trainData_Types_pkg::trainData_Events_T/ */
 typedef struct kcg_tag_trainData_Events_T_trainData_Types_pkg {
@@ -2468,24 +2466,16 @@ typedef struct kcg_tag_trainData_Events_T_trainData_Types_pkg {
   kcg_bool MoRCreadyFlag;
 } trainData_Events_T_trainData_Types_pkg;
 
+/* Packet_Types_Pkg::P137_StopIfInStaffResponsible_T/ */
+typedef struct kcg_tag_P137_StopIfInStaffResponsible_T_Packet_Types_Pkg {
+  kcg_bool valid;
+  Q_DIR q_dir;
+  Q_SRSTOP q_srstop;
+} P137_StopIfInStaffResponsible_T_Packet_Types_Pkg;
+
 typedef kcg_bool array_bool_10[10];
 
 typedef kcg_bool array_bool_113[113];
-
-/* ProvidePositionReport_Pkg::ErrorMessage_T/ */
-typedef struct kcg_tag_ErrorMessage_T_ProvidePositionReport_Pkg {
-  kcg_bool present;
-  M_ERROR errorType;
-} ErrorMessage_T_ProvidePositionReport_Pkg;
-
-typedef ErrorMessage_T_ProvidePositionReport_Pkg _35_array[9];
-
-/* TIU_Types_Pkg::Brake_command_T/ */
-typedef struct kcg_tag_Brake_command_T_TIU_Types_Pkg {
-  kcg_bool valid;
-  M_brake_signal_command_T_TIU_Types_Pkg m_servicebrake_cm;
-  M_brake_signal_command_T_TIU_Types_Pkg m_emergencybrake_cm;
-} Brake_command_T_TIU_Types_Pkg;
 
 /* TIU_Types_Pkg::Mode_control_and_train_status_T/ */
 typedef struct kcg_tag_Mode_control_and_train_status_T_TIU_Types_Pkg {
@@ -2638,17 +2628,17 @@ typedef struct kcg_tag_TSM_triggerCond_T_SDM_Commands_Pkg {
   kcg_bool t14;
 } TSM_triggerCond_T_SDM_Commands_Pkg;
 
-/* CalcBrakingCurves_Pkg::internalOperators::popLeadingArc/,
-   CalcBrakingCurves_types::ParabolaCurveValid_T/,
-   CalcBrakingCurves_types::makeEmptyParabolaCurve/ */
-typedef kcg_bool ParabolaCurveValid_T_CalcBrakingCurves_types[114];
-
 /* DMI_Types_Pkg::DMI_DriverAck_T/ */
 typedef struct kcg_tag_DMI_DriverAck_T_DMI_Types_Pkg {
   kcg_bool valid;
   M_MODE whichMode;
   kcg_bool acknowledgement;
 } DMI_DriverAck_T_DMI_Types_Pkg;
+
+/* CalcBrakingCurves_Pkg::internalOperators::popLeadingArc/,
+   CalcBrakingCurves_types::ParabolaCurveValid_T/,
+   CalcBrakingCurves_types::makeEmptyParabolaCurve/ */
+typedef kcg_bool ParabolaCurveValid_T_CalcBrakingCurves_types[114];
 
 /* Level_And_Mode_Types_Pkg::T_Data_From_Speed_Supervision/ */
 typedef struct kcg_tag_T_Data_From_Speed_Supervision_Level_And_Mode_Types_Pkg {
@@ -2660,7 +2650,26 @@ typedef struct kcg_tag_T_Data_From_Speed_Supervision_Level_And_Mode_Types_Pkg {
   kcg_bool Train_Speed_Under_Overide_Limit;
 } T_Data_From_Speed_Supervision_Level_And_Mode_Types_Pkg;
 
+typedef struct kcg_tag_struct_488860 {
+  kcg_bool valid;
+  Q_DIR q_dir;
+} struct_488860;
+
+/* TM::P135_OBU_T/ */
+typedef struct_488860 P135_OBU_T_TM;
+
+/* Packet_Types_Pkg::P135_StopShuntingOnDeskOpening_T/ */
+typedef struct_488860 P135_StopShuntingOnDeskOpening_T_Packet_Types_Pkg;
+
 typedef kcg_bool array_bool_12[12];
+
+/* TIU_Types_Pkg::Brake_inhibition_command_T/ */
+typedef struct kcg_tag_Brake_inhibition_command_T_TIU_Types_Pkg {
+  kcg_bool valid;
+  M_brake_inhibit_command_T_TIU_Types_Pkg m_regenerativebrake_cm;
+  M_eddy_current_brake_inhibition_T_TIU_Types_Pkg m_eddycurrentbrake_cm;
+  M_brake_inhibit_command_T_TIU_Types_Pkg m_magneticshoebrake_cm;
+} Brake_inhibition_command_T_TIU_Types_Pkg;
 
 typedef kcg_bool array_bool_1[1];
 
@@ -2680,25 +2689,12 @@ typedef struct kcg_tag_ModeLevel2PositionReport_T_ProvidePositionReport_Pkg {
   kcg_bool levelTransitionBorderPassed;
 } ModeLevel2PositionReport_T_ProvidePositionReport_Pkg;
 
-/* TIU_Types_Pkg::Isolation_Status_T/ */
-typedef struct kcg_tag_Isolation_Status_T_TIU_Types_Pkg {
-  kcg_bool valid;
-  M_Isolation_status_T_TIU_Types_Pkg isolation_status;
-} Isolation_Status_T_TIU_Types_Pkg;
-
 /* TIU_Types_Pkg::TIU_commandStatus_T/ */
 typedef struct kcg_tag_TIU_commandStatus_T_TIU_Types_Pkg {
   kcg_bool valid;
   kcg_bool emergencyBrakeActive;
   kcg_bool isolationStatus;
 } TIU_commandStatus_T_TIU_Types_Pkg;
-
-/* Packet_Types_Pkg::P137_StopIfInStaffResponsible_T/ */
-typedef struct kcg_tag_P137_StopIfInStaffResponsible_T_Packet_Types_Pkg {
-  kcg_bool valid;
-  Q_DIR q_dir;
-  Q_SRSTOP q_srstop;
-} P137_StopIfInStaffResponsible_T_Packet_Types_Pkg;
 
 /* ProvidePositionReport_Pkg::RBC_Communication_T/ */
 typedef struct kcg_tag_RBC_Communication_T_ProvidePositionReport_Pkg {
@@ -2735,6 +2731,12 @@ typedef struct kcg_tag_TSM_revokeCond_T_SDM_Commands_Pkg {
 /* SDM_Commands_Pkg::CalcTriggerCondForTSM/, SDM_Commands_Pkg::MyArray/ */
 typedef kcg_bool MyArray_SDM_Commands_Pkg[14];
 
+/* RCM_Session_Types_Pkg::safeRadioConnectionIndication_T/ */
+typedef struct kcg_tag_safeRadioConnectionIndication_T_RCM_Session_Types_Pkg {
+  kcg_bool valid;
+  safeRadioConnnectionIndicator_T_RCM_Session_Types_Pkg indicator;
+} safeRadioConnectionIndication_T_RCM_Session_Types_Pkg;
+
 /* TIU_Types_Pkg::Brake_status_T/ */
 typedef struct kcg_tag_Brake_status_T_TIU_Types_Pkg {
   kcg_bool valid;
@@ -2745,6 +2747,13 @@ typedef struct kcg_tag_Brake_status_T_TIU_Types_Pkg {
   M_brake_status_T_TIU_Types_Pkg m_additionalbrake_st;
 } Brake_status_T_TIU_Types_Pkg;
 
+/* TM_baseline2::P027V1_OBU_body_enum_T/ */
+typedef struct kcg_tag_P027V1_OBU_body_enum_T_TM_baseline2 {
+  kcg_bool valid;
+  Q_DIR q_dir;
+  Q_SCALE q_scale;
+} P027V1_OBU_body_enum_T_TM_baseline2;
+
 /* Level_And_Mode_Types_Pkg::T_ERTMS_capabilities/ */
 typedef struct kcg_tag_T_ERTMS_capabilities_Level_And_Mode_Types_Pkg {
   kcg_bool NTC;
@@ -2754,18 +2763,18 @@ typedef struct kcg_tag_T_ERTMS_capabilities_Level_And_Mode_Types_Pkg {
   kcg_bool L3;
 } T_ERTMS_capabilities_Level_And_Mode_Types_Pkg;
 
-typedef T_ERTMS_capabilities_Level_And_Mode_Types_Pkg _87_array[7];
+typedef T_ERTMS_capabilities_Level_And_Mode_Types_Pkg _89_array[7];
 
-typedef struct kcg_tag_struct_487566 {
+typedef struct kcg_tag_struct_487538 {
   kcg_bool trackAheadFree;
   kcg_bool driverSelectsStart;
-} struct_487566;
+} struct_487538;
 
 /* TA_MA_Request::Driver2MAR_T/ */
-typedef struct_487566 Driver2MAR_T_TA_MA_Request;
+typedef struct_487538 Driver2MAR_T_TA_MA_Request;
 
 /* MA_Request::Driver2MAR_T/ */
-typedef struct_487566 Driver2MAR_T_MA_Request;
+typedef struct_487538 Driver2MAR_T_MA_Request;
 
 /* Level_And_Mode_Types_Pkg::T_Data_From_Track_MASSPGradient_Available/ */
 typedef struct kcg_tag_T_Data_From_Track_MASSPGradient_Available_Level_And_Mode_Types_Pkg {
@@ -2775,7 +2784,19 @@ typedef struct kcg_tag_T_Data_From_Track_MASSPGradient_Available_Level_And_Mode_
   kcg_bool P27_received;
 } T_Data_From_Track_MASSPGradient_Available_Level_And_Mode_Types_Pkg;
 
+/* Packet_TrainTypes_Pkg::PT4_ErrorReporting_T/ */
+typedef struct kcg_tag_PT4_ErrorReporting_T_Packet_TrainTypes_Pkg {
+  kcg_bool valid;
+  M_ERROR m_error;
+} PT4_ErrorReporting_T_Packet_TrainTypes_Pkg;
+
 typedef kcg_bool array_bool_15[15];
+
+/* TIU_Types_Pkg::Isolation_Status_T/ */
+typedef struct kcg_tag_Isolation_Status_T_TIU_Types_Pkg {
+  kcg_bool valid;
+  M_Isolation_status_T_TIU_Types_Pkg isolation_status;
+} Isolation_Status_T_TIU_Types_Pkg;
 
 typedef kcg_bool array_bool_4[4];
 
@@ -2792,6 +2813,14 @@ typedef struct kcg_tag_T_Data_From_STM_Level_And_Mode_Types_Pkg {
   kcg_bool Interface_To_National_System;
   kcg_bool National_trip_Order;
 } T_Data_From_STM_Level_And_Mode_Types_Pkg;
+
+/* TIU_Types_Pkg::TIU_trainStatus_T/ */
+typedef struct kcg_tag_TIU_trainStatus_T_TIU_Types_Pkg {
+  kcg_bool valid;
+  kcg_bool deskOpen;
+  cab_ID_T_TIU_Types_Pkg ownCab;
+  cab_ID_T_TIU_Types_Pkg activeCab;
+} TIU_trainStatus_T_TIU_Types_Pkg;
 
 typedef kcg_bool array_bool_256[256];
 
@@ -2823,25 +2852,20 @@ typedef kcg_bool array_bool_5[5];
 
 typedef kcg_bool array_bool_6[6];
 
-/* TIU_Types_Pkg::Brake_inhibition_command_T/ */
-typedef struct kcg_tag_Brake_inhibition_command_T_TIU_Types_Pkg {
+/* TIU_Types_Pkg::Type_I_train_commands_T/ */
+typedef struct kcg_tag_Type_I_train_commands_T_TIU_Types_Pkg {
   kcg_bool valid;
-  M_brake_inhibit_command_T_TIU_Types_Pkg m_regenerativebrake_cm;
-  M_eddy_current_brake_inhibition_T_TIU_Types_Pkg m_eddycurrentbrake_cm;
-  M_brake_inhibit_command_T_TIU_Types_Pkg m_magneticshoebrake_cm;
-} Brake_inhibition_command_T_TIU_Types_Pkg;
+  M_pantograph_command_T_TIU_Types_Pkg m_pantograph_cm;
+  M_airtightness_command_T_TIU_Types_Pkg m_airtightness_cm;
+  M_mainpowerswitch_command_T_TIU_Types_Pkg m_mainpowerswitch_cm;
+  M_traction_cutoff_command_T_TIU_Types_Pkg m_traction_cutoff_cm;
+} Type_I_train_commands_T_TIU_Types_Pkg;
 
 /* ProvidePositionReport_Pkg::LocationBasedEvents_T/ */
 typedef struct kcg_tag_LocationBasedEvents_T_ProvidePositionReport_Pkg {
   kcg_bool minSafeRearEndPassed;
   kcg_bool maxSafeFrontEndPassed;
 } LocationBasedEvents_T_ProvidePositionReport_Pkg;
-
-/* Packet_TrainTypes_Pkg::PT4_ErrorReporting_T/ */
-typedef struct kcg_tag_PT4_ErrorReporting_T_Packet_TrainTypes_Pkg {
-  kcg_bool valid;
-  M_ERROR m_error;
-} PT4_ErrorReporting_T_Packet_TrainTypes_Pkg;
 
 typedef kcg_bool array_bool_41[41];
 
@@ -2857,46 +2881,35 @@ typedef kcg_bool array_bool_7[7];
    InformationFilter_Pkg::ThirdFilter::ThirdFilter/,
    TM_lib_internal::RECV_LookupPacket/,
    ValidateDataDirectionGeneral_Pkg::validateDataDirection_General/,
-   digital::BoolVect2Int64/,
+   digital::BoolVect2Int32/,
    digital::Int2BoolVect/ */
 typedef kcg_bool DMI_Available_Menu_int_T_DATA[30];
 
-/* RCM_Session_Types_Pkg::safeRadioConnectionIndication_T/ */
-typedef struct kcg_tag_safeRadioConnectionIndication_T_RCM_Session_Types_Pkg {
-  kcg_bool valid;
-  safeRadioConnnectionIndicator_T_RCM_Session_Types_Pkg indicator;
-} safeRadioConnectionIndication_T_RCM_Session_Types_Pkg;
+/* ProvidePositionReport_Pkg::ErrorMessage_T/ */
+typedef struct kcg_tag_ErrorMessage_T_ProvidePositionReport_Pkg {
+  kcg_bool present;
+  M_ERROR errorType;
+} ErrorMessage_T_ProvidePositionReport_Pkg;
 
-/* TM_baseline2::P027V1_OBU_body_enum_T/ */
-typedef struct kcg_tag_P027V1_OBU_body_enum_T_TM_baseline2 {
-  kcg_bool valid;
-  Q_DIR q_dir;
-  Q_SCALE q_scale;
-} P027V1_OBU_body_enum_T_TM_baseline2;
-
-/* TIU_Types_Pkg::TIU_trainStatus_T/ */
-typedef struct kcg_tag_TIU_trainStatus_T_TIU_Types_Pkg {
-  kcg_bool valid;
-  kcg_bool deskOpen;
-  cab_ID_T_TIU_Types_Pkg ownCab;
-  cab_ID_T_TIU_Types_Pkg activeCab;
-} TIU_trainStatus_T_TIU_Types_Pkg;
-
-typedef struct kcg_tag_struct_484599 {
-  kcg_bool valid;
-  Q_DIR q_dir;
-} struct_484599;
-
-/* TM::P135_OBU_T/ */
-typedef struct_484599 P135_OBU_T_TM;
-
-/* Packet_Types_Pkg::P135_StopShuntingOnDeskOpening_T/ */
-typedef struct_484599 P135_StopShuntingOnDeskOpening_T_Packet_Types_Pkg;
+typedef ErrorMessage_T_ProvidePositionReport_Pkg _34_array[9];
 
 typedef kcg_bool array_bool_8[8];
 
 /* SDM_Types_Pkg::T_internal_real_Type/ */
-typedef kcg_float64 T_internal_real_Type_SDM_Types_Pkg;
+typedef kcg_float32 T_internal_real_Type_SDM_Types_Pkg;
+
+/* SDMConversionModelPkg::brakeBuildUp/,
+   SDMConversionModelPkg::brakePosition/,
+   SDMModelPkg::t_BrakeVt_t/ */
+typedef T_internal_real_Type_SDM_Types_Pkg t_BrakeVt_t_SDMModelPkg[2];
+
+/* SDMModelPkg::t_Brake_t/ */
+typedef struct kcg_tag_t_Brake_t_SDMModelPkg {
+  t_BrakeVt_t_SDMModelPkg emergency;
+  t_BrakeVt_t_SDMModelPkg service;
+} t_Brake_t_SDMModelPkg;
+
+typedef t_Brake_t_SDMModelPkg _27_array[110];
 
 /* TargetLimits_Pkg::T_trac_t/ */
 typedef struct kcg_tag_T_trac_t_TargetLimits_Pkg {
@@ -2911,29 +2924,16 @@ typedef struct kcg_tag_T_trac_t_TargetLimits_Pkg {
 
 typedef T_trac_t_TargetLimits_Pkg _107_array[110];
 
-typedef T_trac_t_TargetLimits_Pkg _9_array[10];
-
-/* SDMConversionModelPkg::brakeBuildUp/,
-   SDMConversionModelPkg::brakePosition/,
-   SDMModelPkg::t_BrakeVt_t/ */
-typedef T_internal_real_Type_SDM_Types_Pkg t_BrakeVt_t_SDMModelPkg[2];
-
-/* SDMModelPkg::t_Brake_t/ */
-typedef struct kcg_tag_t_Brake_t_SDMModelPkg {
-  t_BrakeVt_t_SDMModelPkg emergency;
-  t_BrakeVt_t_SDMModelPkg service;
-} t_Brake_t_SDMModelPkg;
-
-typedef t_Brake_t_SDMModelPkg _29_array[110];
+typedef T_trac_t_TargetLimits_Pkg _6_array[10];
 
 /* SDM_Types_Pkg::A_internal_real_Type/ */
-typedef kcg_float64 A_internal_real_Type_SDM_Types_Pkg;
+typedef kcg_float32 A_internal_real_Type_SDM_Types_Pkg;
 
 /* SDM_GradientAcceleration_types::Gradient_real_t/ */
-typedef kcg_float64 Gradient_real_t_SDM_GradientAcceleration_types;
+typedef kcg_float32 Gradient_real_t_SDM_GradientAcceleration_types;
 
 /* SDM_Types_Pkg::V_internal_real_Type/ */
-typedef kcg_float64 V_internal_real_Type_SDM_Types_Pkg;
+typedef kcg_float32 V_internal_real_Type_SDM_Types_Pkg;
 
 /* CalcBrakingCurves_Pkg::Step_Function_operators::getSpeedStepFromSpeed/,
    CalcBrakingCurves_types::ASafeSpeedDefinition_T/,
@@ -2942,7 +2942,9 @@ typedef kcg_float64 V_internal_real_Type_SDM_Types_Pkg;
 typedef V_internal_real_Type_SDM_Types_Pkg ASafeSpeedDefinition_T_CalcBrakingCurves_types[14];
 
 /* SDM_Types_Pkg::L_internal_real_Type/ */
-typedef kcg_float64 L_internal_real_Type_SDM_Types_Pkg;
+typedef kcg_float32 L_internal_real_Type_SDM_Types_Pkg;
+
+typedef L_internal_real_Type_SDM_Types_Pkg array_float32_50[50];
 
 /* TargetManagement_types::MRSP_internal_section_T/ */
 typedef struct kcg_tag_MRSP_internal_section_T_TargetManagement_types {
@@ -2955,7 +2957,7 @@ typedef struct kcg_tag_MRSP_internal_section_T_TargetManagement_types {
    TargetManagement_types::MRSP_internal_T/ */
 typedef MRSP_internal_section_T_TargetManagement_types MRSP_internal_T_TargetManagement_types[110];
 
-typedef MRSP_internal_T_TargetManagement_types _91_array[110];
+typedef MRSP_internal_T_TargetManagement_types _92_array[110];
 
 /* SDM_GradientAcceleration_types::Gradient_section_real_t/ */
 typedef struct kcg_tag_Gradient_section_real_t_SDM_GradientAcceleration_types {
@@ -2990,14 +2992,17 @@ typedef A_gradient_element_t_SDM_GradientAcceleration_types A_gradient_t_SDM_Gra
 
 typedef A_gradient_t_SDM_GradientAcceleration_types _104_array[14];
 
-typedef L_internal_real_Type_SDM_Types_Pkg array_float64_50[50];
+/* TargetLimits_Pkg::bec_t/ */
+typedef struct kcg_tag_bec_t_TargetLimits_Pkg {
+  V_internal_real_Type_SDM_Types_Pkg v;
+  L_internal_real_Type_SDM_Types_Pkg d;
+} bec_t_TargetLimits_Pkg;
 
-/* CalcBrakingCurves_types::ParabolaArc_T/ */
-typedef struct kcg_tag_ParabolaArc_T_CalcBrakingCurves_types {
-  L_internal_real_Type_SDM_Types_Pkg distance;
-  V_internal_real_Type_SDM_Types_Pkg speed;
-  A_internal_real_Type_SDM_Types_Pkg acceleration;
-} ParabolaArc_T_CalcBrakingCurves_types;
+/* TargetManagement_types::EOA_real_T/ */
+typedef struct kcg_tag_EOA_real_T_TargetManagement_types {
+  L_internal_real_Type_SDM_Types_Pkg Location;
+  V_internal_real_Type_SDM_Types_Pkg TargetSpeed;
+} EOA_real_T_TargetManagement_types;
 
 /* TargetManagement_types::Target_real_T/ */
 typedef struct kcg_tag_Target_real_T_TargetManagement_types {
@@ -3006,9 +3011,9 @@ typedef struct kcg_tag_Target_real_T_TargetManagement_types {
   V_internal_real_Type_SDM_Types_Pkg speed;
 } Target_real_T_TargetManagement_types;
 
-typedef Target_real_T_TargetManagement_types _69_array[109];
+typedef Target_real_T_TargetManagement_types _70_array[109];
 
-typedef Target_real_T_TargetManagement_types _34_array[1];
+typedef Target_real_T_TargetManagement_types _33_array[1];
 
 /* TargetManagement_pkg::internalOperators::extractTargetsFromMRSP/,
    TargetManagement_pkg::internalOperators::removeOverpassedMRSPint/,
@@ -3022,12 +3027,6 @@ typedef struct kcg_tag_TargetCollection_T_TargetManagement_types {
   Target_real_T_TargetManagement_types EOA_target;
   Target_real_T_TargetManagement_types SvL_LoA_target;
 } TargetCollection_T_TargetManagement_types;
-
-/* TargetManagement_types::EOA_real_T/ */
-typedef struct kcg_tag_EOA_real_T_TargetManagement_types {
-  L_internal_real_Type_SDM_Types_Pkg Location;
-  V_internal_real_Type_SDM_Types_Pkg TargetSpeed;
-} EOA_real_T_TargetManagement_types;
 
 /* TargetManagement_types::MA_section_real_T/ */
 typedef struct kcg_tag_MA_section_real_T_TargetManagement_types {
@@ -3043,11 +3042,12 @@ typedef struct kcg_tag_MA_section_real_T_TargetManagement_types {
   MA_Level_t_TrackAtlasTypes level;
 } MA_section_real_T_TargetManagement_types;
 
-/* TargetLimits_Pkg::bec_t/ */
-typedef struct kcg_tag_bec_t_TargetLimits_Pkg {
-  V_internal_real_Type_SDM_Types_Pkg v;
-  L_internal_real_Type_SDM_Types_Pkg d;
-} bec_t_TargetLimits_Pkg;
+/* CalcBrakingCurves_types::ParabolaArc_T/ */
+typedef struct kcg_tag_ParabolaArc_T_CalcBrakingCurves_types {
+  L_internal_real_Type_SDM_Types_Pkg distance;
+  V_internal_real_Type_SDM_Types_Pkg speed;
+  A_internal_real_Type_SDM_Types_Pkg acceleration;
+} ParabolaArc_T_CalcBrakingCurves_types;
 
 /* SDM_Types_Pkg::TrainLocations_real_T/ */
 typedef struct kcg_tag_TrainLocations_real_T_SDM_Types_Pkg {
@@ -3060,7 +3060,7 @@ typedef struct kcg_tag_TrainLocations_real_T_SDM_Types_Pkg {
 } TrainLocations_real_T_SDM_Types_Pkg;
 
 /* M_NVKRINT/ */
-typedef kcg_float64 M_NVKRINT;
+typedef kcg_float32 M_NVKRINT;
 
 /* Packet_Types_Pkg::nvkrint_T/ */
 typedef struct kcg_tag_nvkrint_T_Packet_Types_Pkg {
@@ -3073,66 +3073,38 @@ typedef struct kcg_tag_nvkrint_T_Packet_Types_Pkg {
 typedef nvkrint_T_Packet_Types_Pkg nvkrintArray_T_Packet_Types_Pkg[7];
 
 /* M_NVKVINT/ */
-typedef kcg_float64 M_NVKVINT;
+typedef kcg_float32 M_NVKVINT;
 
 /* A_NVP23/ */
-typedef kcg_float64 A_NVP23;
+typedef kcg_float32 A_NVP23;
 
 /* A_NVP12/ */
-typedef kcg_float64 A_NVP12;
+typedef kcg_float32 A_NVP12;
 
 /* M_NVKTINT/ */
-typedef kcg_float64 M_NVKTINT;
+typedef kcg_float32 M_NVKTINT;
 
 /* M_NVAVADH/ */
-typedef kcg_float64 M_NVAVADH;
+typedef kcg_float32 M_NVAVADH;
 
 /* A_NVMAXREDADH3/ */
-typedef kcg_float64 A_NVMAXREDADH3;
+typedef kcg_float32 A_NVMAXREDADH3;
 
 /* A_NVMAXREDADH2/ */
-typedef kcg_float64 A_NVMAXREDADH2;
+typedef kcg_float32 A_NVMAXREDADH2;
 
 /* A_NVMAXREDADH1/ */
-typedef kcg_float64 A_NVMAXREDADH1;
+typedef kcg_float32 A_NVMAXREDADH1;
 
-typedef kcg_float64 array_float64_110[110];
+typedef kcg_float32 array_float32_32[32];
 
-typedef kcg_float64 array_float64_113[113];
-
-/* Toolbox::odometryFactors_T/ */
-typedef struct kcg_tag_odometryFactors_T_Toolbox {
-  kcg_float64 o_nominal;
-  kcg_float64 o_min;
-  kcg_float64 o_max;
-} odometryFactors_T_Toolbox;
-
-typedef kcg_float64 array_float64_12[12];
-
-typedef kcg_float64 array_float64_6[6];
-
-/* tScale/ */
-typedef kcg_float64 tScale[9];
-
-typedef tScale array_float64_9_6[6];
-
-typedef kcg_float64 array_float64_3[3];
-
-/* SDMConversionModelPkg::coeff_BrakeBasic_t/ */
-typedef array_float64_3 coeff_BrakeBasic_t_SDMConversionModelPkg;
-
-/* TargetLimits_Pkg::TractionDeltaTriple/ */
-typedef array_float64_3 TractionDeltaTriple_TargetLimits_Pkg;
-
-typedef kcg_float64 array_float64_32[32];
-
-typedef kcg_float64 array_float64_100[100];
+typedef kcg_float32 array_float32_100[100];
 
 /* CalcBrakingCurves_types::ASafeDistanceDefinition_T/ */
-typedef array_float64_100 ASafeDistanceDefinition_T_CalcBrakingCurves_types;
+typedef array_float32_100 ASafeDistanceDefinition_T_CalcBrakingCurves_types;
 
 /* CalcBrakingCurves_types::ASafeRow_T/ */
-typedef array_float64_100 ASafeRow_T_CalcBrakingCurves_types;
+typedef array_float32_100 ASafeRow_T_CalcBrakingCurves_types;
 
 /* CalcBrakingCurves_types::ASafe_Data_T/,
    SDMConversionModelPkg::InflateABrakeSafe/,
@@ -3147,34 +3119,34 @@ typedef struct kcg_tag_ASafe_T_CalcBrakingCurves_types {
   ASafe_Data_T_CalcBrakingCurves_types data;
 } ASafe_T_CalcBrakingCurves_types;
 
-typedef ASafe_T_CalcBrakingCurves_types _28_array[110];
+typedef ASafe_T_CalcBrakingCurves_types _26_array[110];
 
-typedef ASafe_T_CalcBrakingCurves_types _12_array[113];
+typedef ASafe_T_CalcBrakingCurves_types _11_array[113];
 
-typedef array_float64_100 array_float64_100_6[6];
+typedef array_float32_100 array_float32_100_6[6];
 
-typedef array_float64_100 array_float64_100_8[8];
+typedef array_float32_100 array_float32_100_8[8];
 
-typedef array_float64_100 array_float64_100_1[1];
+typedef array_float32_100 array_float32_100_1[1];
 
-typedef array_float64_100 array_float64_100_13[13];
+typedef array_float32_100 array_float32_100_13[13];
 
-typedef kcg_float64 array_float64_5[5];
+typedef kcg_float32 array_float32_5[5];
 
-typedef array_float64_5 array_float64_5_5[5];
+typedef array_float32_5 array_float32_5_5[5];
 
-typedef kcg_float64 array_float64_8[8];
+typedef kcg_float32 array_float32_8[8];
 
-typedef kcg_float64 array_float64_114[114];
+typedef kcg_float32 array_float32_114[114];
 
 /* CalcBrakingCurves_types::ParabolaCurveAccelerations_T/ */
-typedef array_float64_114 ParabolaCurveAccelerations_T_CalcBrakingCurves_types;
+typedef array_float32_114 ParabolaCurveAccelerations_T_CalcBrakingCurves_types;
 
 /* CalcBrakingCurves_types::ParabolaCurveSpeeds_T/ */
-typedef array_float64_114 ParabolaCurveSpeeds_T_CalcBrakingCurves_types;
+typedef array_float32_114 ParabolaCurveSpeeds_T_CalcBrakingCurves_types;
 
 /* CalcBrakingCurves_types::ParabolaCurveDistances_T/ */
-typedef array_float64_114 ParabolaCurveDistances_T_CalcBrakingCurves_types;
+typedef array_float32_114 ParabolaCurveDistances_T_CalcBrakingCurves_types;
 
 /* CalcBrakingCurves_types::ParabolaCurve_T/ */
 typedef struct kcg_tag_ParabolaCurve_T_CalcBrakingCurves_types {
@@ -3201,26 +3173,39 @@ typedef struct kcg_tag_CurveCollection_T_CalcBrakingCurves_types {
   kcg_bool GUI_curve_enabled;
 } CurveCollection_T_CalcBrakingCurves_types;
 
-typedef kcg_float64 array_float64_13[13];
+typedef struct kcg_tag_struct_488170 {
+  kcg_bool valid;
+  L_NVKRINT l_nvkrint_l;
+  kcg_float32 m_nvkrint_l;
+} struct_488170;
 
-/* DMI_Control_Pkg::Sub_func::GP/ */
-typedef struct kcg_tag_GP_DMI_Control_Pkg_Sub_func {
-  kcg_bool visable;
-  kcg_float64 start_gp;
-  kcg_float64 end_gp;
-} GP_DMI_Control_Pkg_Sub_func;
+/* TM::P003_OBU_l_section_enum_T/ */
+typedef struct_488170 P003_OBU_l_section_enum_T_TM;
 
-typedef kcg_float64 array_float64_10[10];
+/* TM_baseline2::P203V1_OBU_l_section_enum_T/ */
+typedef struct_488170 P203V1_OBU_l_section_enum_T_TM_baseline2;
+
+typedef struct_488170 _65_array[32];
+
+/* TM::P003_OBU_l_sectionlist_enum_T/ */
+typedef _65_array P003_OBU_l_sectionlist_enum_T_TM;
+
+/* TM_baseline2::P203V1_OBU_l_sectionlist_enum_T/ */
+typedef _65_array P203V1_OBU_l_sectionlist_enum_T_TM_baseline2;
+
+typedef kcg_float32 array_float32_13[13];
+
+typedef kcg_float32 array_float32_10[10];
 
 /* tPASP_Array/ */
-typedef array_float64_10 tPASP_Array;
+typedef array_float32_10 tPASP_Array;
 
-typedef array_float64_10 array_float64_10_10[10];
+typedef array_float32_10 array_float32_10_10[10];
 
 /* DMI_Control_Pkg::DMI_Controller/CabinSM:DeskIsOpen:HandshakeSM:CommunicationActive:,
    DMI_Control_Pkg::Sub_func::PlanningArea::Area_D/,
    tSpeedPoints/ */
-typedef array_float64_10 tSpeedPoints[2];
+typedef array_float32_10 tSpeedPoints[2];
 
 /* DMI_Control_Pkg::DMI_Controller/,
    DMI_Control_Pkg::DMI_Controller/CabinSM:DeskIsOpen:HandshakeSM:CommunicationActive:,
@@ -3235,66 +3220,84 @@ typedef array_float64_10 tSpeedPoints[2];
    Testbench_Integration::ROOT_Integration/,
    Toolbox::DMI/,
    tPASPOutput_Array/ */
-typedef kcg_float64 tPASPOutput_Array[4];
+typedef kcg_float32 tPASPOutput_Array[4];
 
-typedef kcg_float64 array_float64_1[1];
+typedef kcg_float32 array_float32_1[1];
 
-typedef struct kcg_tag_struct_484617 {
-  kcg_bool valid;
-  L_NVKRINT l_nvkrint_l;
-  kcg_float64 m_nvkrint_l;
-} struct_484617;
+/* DMI_Control_Pkg::Sub_func::GP/ */
+typedef struct kcg_tag_GP_DMI_Control_Pkg_Sub_func {
+  kcg_bool visable;
+  kcg_float32 start_gp;
+  kcg_float32 end_gp;
+} GP_DMI_Control_Pkg_Sub_func;
 
-/* TM::P003_OBU_l_section_enum_T/ */
-typedef struct_484617 P003_OBU_l_section_enum_T_TM;
+typedef kcg_float32 array_float32_110[110];
 
-/* TM_baseline2::P203V1_OBU_l_section_enum_T/ */
-typedef struct_484617 P203V1_OBU_l_section_enum_T_TM_baseline2;
+typedef kcg_float32 array_float32_113[113];
 
-typedef struct_484617 _65_array[32];
+typedef kcg_float32 array_float32_12[12];
 
-/* TM::P003_OBU_l_sectionlist_enum_T/ */
-typedef _65_array P003_OBU_l_sectionlist_enum_T_TM;
+/* Toolbox::odometryFactors_T/ */
+typedef struct kcg_tag_odometryFactors_T_Toolbox {
+  kcg_float32 o_nominal;
+  kcg_float32 o_min;
+  kcg_float32 o_max;
+} odometryFactors_T_Toolbox;
 
-/* TM_baseline2::P203V1_OBU_l_sectionlist_enum_T/ */
-typedef _65_array P203V1_OBU_l_sectionlist_enum_T_TM_baseline2;
+typedef kcg_float32 array_float32_6[6];
 
-typedef struct kcg_tag_struct_487049 {
+/* tScale/ */
+typedef kcg_float32 tScale[9];
+
+typedef tScale array_float32_9_6[6];
+
+typedef kcg_float32 array_float32_3[3];
+
+/* SDMConversionModelPkg::coeff_BrakeBasic_t/ */
+typedef array_float32_3 coeff_BrakeBasic_t_SDMConversionModelPkg;
+
+/* TargetLimits_Pkg::TractionDeltaTriple/ */
+typedef array_float32_3 TractionDeltaTriple_TargetLimits_Pkg;
+
+typedef struct kcg_tag_struct_486841 {
   kcg_size idx;
   array_bool_4 items;
-} struct_487049;
+} struct_486841;
 
-typedef struct kcg_tag_struct_485102 {
+typedef struct kcg_tag_struct_485091 {
   kcg_size idx;
   array_bool_5 items;
-} struct_485102;
+} struct_485091;
+
+/* NID_RADIO/ */
+typedef kcg_int64 NID_RADIO;
 
 /* L_TAFDISPLAY/ */
-typedef kcg_int64 L_TAFDISPLAY;
+typedef kcg_int32 L_TAFDISPLAY;
 
 /* D_TAFDISPLAY/ */
-typedef kcg_int64 D_TAFDISPLAY;
+typedef kcg_int32 D_TAFDISPLAY;
 
 /* Toolbox::OdometrySpeed_T/ */
-typedef kcg_int64 OdometrySpeed_T_Toolbox;
+typedef kcg_int32 OdometrySpeed_T_Toolbox;
 
 /* MoRC_Pck::time_Type/ */
-typedef kcg_int64 time_Type_MoRC_Pck;
+typedef kcg_int32 time_Type_MoRC_Pck;
 
 /* TM::nid_packet_meta/ */
-typedef kcg_int64 nid_packet_meta_TM;
+typedef kcg_int32 nid_packet_meta_TM;
 
 /* D_RBCTR/ */
-typedef kcg_int64 D_RBCTR;
+typedef kcg_int32 D_RBCTR;
 
 /* T_CYCRQST/ */
-typedef kcg_int64 T_CYCRQST;
+typedef kcg_int32 T_CYCRQST;
 
 /* T_TIMEOUTRQST/ */
-typedef kcg_int64 T_TIMEOUTRQST;
+typedef kcg_int32 T_TIMEOUTRQST;
 
 /* T_MAR/ */
-typedef kcg_int64 T_MAR;
+typedef kcg_int32 T_MAR;
 
 /* MAReqParams_T/ */
 typedef struct kcg_tag_MAReqParams_T {
@@ -3314,31 +3317,31 @@ typedef struct kcg_tag_P57_MovementAuthorityRequestParameters_T_Packet_Types_Pkg
 } P57_MovementAuthorityRequestParameters_T_Packet_Types_Pkg;
 
 /* TA_MRSP_new::SSP_s_section_t/ */
-typedef kcg_int64 SSP_s_section_t_TA_MRSP_new;
+typedef kcg_int32 SSP_s_section_t_TA_MRSP_new;
 
 /* TA_MRSP_new::SSP_t_section_t/ */
-typedef kcg_int64 SSP_t_section_t_TA_MRSP_new;
+typedef kcg_int32 SSP_t_section_t_TA_MRSP_new;
 
 /* TA_MRSP::SSP_s_section_t/ */
-typedef kcg_int64 SSP_s_section_t_TA_MRSP;
+typedef kcg_int32 SSP_s_section_t_TA_MRSP;
 
 /* TA_MRSP::SSP_t_section_t/ */
-typedef kcg_int64 SSP_t_section_t_TA_MRSP;
+typedef kcg_int32 SSP_t_section_t_TA_MRSP;
 
 /* V_MAXTRAIN/ */
-typedef kcg_int64 V_MAXTRAIN;
+typedef kcg_int32 V_MAXTRAIN;
 
 /* V_TSR/ */
-typedef kcg_int64 V_TSR;
+typedef kcg_int32 V_TSR;
 
 /* L_TSR/ */
-typedef kcg_int64 L_TSR;
+typedef kcg_int32 L_TSR;
 
 /* D_TSR/ */
-typedef kcg_int64 D_TSR;
+typedef kcg_int32 D_TSR;
 
 /* NID_TSR/ */
-typedef kcg_int64 NID_TSR;
+typedef kcg_int32 NID_TSR;
 
 /* TM::P065_OBU_T/ */
 typedef struct kcg_tag_P065_OBU_T_TM {
@@ -3353,45 +3356,34 @@ typedef struct kcg_tag_P065_OBU_T_TM {
 } P065_OBU_T_TM;
 
 /* D_LRBG/ */
-typedef kcg_int64 D_LRBG;
+typedef kcg_int32 D_LRBG;
 
 /* NID_PRVLRBG/ */
-typedef kcg_int64 NID_PRVLRBG;
+typedef kcg_int32 NID_PRVLRBG;
 
 /* NID_XUSER/ */
-typedef kcg_int64 NID_XUSER;
+typedef kcg_int32 NID_XUSER;
 
 /* L_MESSAGE/ */
-typedef kcg_int64 L_MESSAGE;
+typedef kcg_int32 L_MESSAGE;
 
 /* V_TRAIN/ */
-typedef kcg_int64 V_TRAIN;
+typedef kcg_int32 V_TRAIN;
 
 /* L_DOUBTUNDER/ */
-typedef kcg_int64 L_DOUBTUNDER;
+typedef kcg_int32 L_DOUBTUNDER;
 
 /* L_TRAININT/ */
-typedef kcg_int64 L_TRAININT;
+typedef kcg_int32 L_TRAININT;
 
 /* L_DOUBTOVER/ */
-typedef kcg_int64 L_DOUBTOVER;
+typedef kcg_int32 L_DOUBTOVER;
 
 /* ProvidePositionReport_Pkg::SystemTime_T/ */
-typedef kcg_int64 SystemTime_T_ProvidePositionReport_Pkg;
+typedef kcg_int32 SystemTime_T_ProvidePositionReport_Pkg;
 
 /* D_LOC/ */
-typedef kcg_int64 D_LOC;
-
-/* Packet_Types_Pkg::IterPacket58_T/ */
-typedef struct kcg_tag_IterPacket58_T_Packet_Types_Pkg {
-  D_LOC d_loc;
-  Q_LGTLOC q_lgtloc;
-} IterPacket58_T_Packet_Types_Pkg;
-
-/* Packet_Types_Pkg::IterPacket58List_T/, TM_conversions::C_P058_to_legacy_t/ */
-typedef IterPacket58_T_Packet_Types_Pkg IterPacket58List_T_Packet_Types_Pkg[2];
-
-typedef IterPacket58_T_Packet_Types_Pkg _68_array[32];
+typedef kcg_int32 D_LOC;
 
 /* TM::P058_section_enum_T/ */
 typedef struct kcg_tag_P058_section_enum_T_TM {
@@ -3404,19 +3396,30 @@ typedef struct kcg_tag_P058_section_enum_T_TM {
    TM_lib_internal::C_P058_unflatten_sections/ */
 typedef P058_section_enum_T_TM P058_OBU_sectionlist_enum_T_TM[32];
 
-typedef P058_OBU_sectionlist_enum_T_TM _100_array[2];
+typedef P058_OBU_sectionlist_enum_T_TM _99_array[2];
+
+/* Packet_Types_Pkg::IterPacket58_T/ */
+typedef struct kcg_tag_IterPacket58_T_Packet_Types_Pkg {
+  D_LOC d_loc;
+  Q_LGTLOC q_lgtloc;
+} IterPacket58_T_Packet_Types_Pkg;
+
+/* Packet_Types_Pkg::IterPacket58List_T/, TM_conversions::C_P058_to_legacy_t/ */
+typedef IterPacket58_T_Packet_Types_Pkg IterPacket58List_T_Packet_Types_Pkg[2];
+
+typedef IterPacket58_T_Packet_Types_Pkg _68_array[32];
 
 /* D_CYCLOC/ */
-typedef kcg_int64 D_CYCLOC;
+typedef kcg_int32 D_CYCLOC;
 
 /* T_CYCLOC/ */
-typedef kcg_int64 T_CYCLOC;
+typedef kcg_int32 T_CYCLOC;
 
 /* N_AXLE/ */
-typedef kcg_int64 N_AXLE;
+typedef kcg_int32 N_AXLE;
 
 /* NID_LTRBG/ */
-typedef kcg_int64 NID_LTRBG;
+typedef kcg_int32 NID_LTRBG;
 
 /* Packet_TrainTypes_Pkg::PT9_Level23_TransitionInformation_T/ */
 typedef struct kcg_tag_PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg {
@@ -3425,61 +3428,61 @@ typedef struct kcg_tag_PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg
 } PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg;
 
 /* SDM_Types_Pkg::Percentage_T/ */
-typedef kcg_int64 Percentage_T_SDM_Types_Pkg;
+typedef kcg_int32 Percentage_T_SDM_Types_Pkg;
 
 /* DATA::Area_group_INT_T/ */
-typedef kcg_int64 Area_group_INT_T_DATA;
+typedef kcg_int32 Area_group_INT_T_DATA;
 
 /* DATA::Icon_group_INT_T/ */
-typedef kcg_int64 Icon_group_INT_T_DATA;
+typedef kcg_int32 Icon_group_INT_T_DATA;
 
 /* DATA::DMI_m_icon_flashing_freq_INT_T/ */
-typedef kcg_int64 DMI_m_icon_flashing_freq_INT_T_DATA;
+typedef kcg_int32 DMI_m_icon_flashing_freq_INT_T_DATA;
 
 /* DATA::Icon_control_flag_INT_T/ */
-typedef kcg_int64 Icon_control_flag_INT_T_DATA;
+typedef kcg_int32 Icon_control_flag_INT_T_DATA;
 
 /* DATA::DMI_loadingGauge_INT_T/ */
-typedef kcg_int64 DMI_loadingGauge_INT_T_DATA;
+typedef kcg_int32 DMI_loadingGauge_INT_T_DATA;
 
 /* DATA::DMI_airtightSystem_INT_T/ */
-typedef kcg_int64 DMI_airtightSystem_INT_T_DATA;
+typedef kcg_int32 DMI_airtightSystem_INT_T_DATA;
 
 /* DATA::DMI_vMax_id_INT_T/ */
-typedef kcg_int64 DMI_vMax_id_INT_T_DATA;
+typedef kcg_int32 DMI_vMax_id_INT_T_DATA;
 
 /* DATA::DMI_brakeModel_id_INT_T/ */
-typedef kcg_int64 DMI_brakeModel_id_INT_T_DATA;
+typedef kcg_int32 DMI_brakeModel_id_INT_T_DATA;
 
 /* DATA::DMI_train_length_INT_T/ */
-typedef kcg_int64 DMI_train_length_INT_T_DATA;
+typedef kcg_int32 DMI_train_length_INT_T_DATA;
 
 /* DATA::DMI_train_id_INT_T/ */
-typedef kcg_int64 DMI_train_id_INT_T_DATA;
+typedef kcg_int32 DMI_train_id_INT_T_DATA;
 
 /* DATA::DMI_List_Entry_Request_INT_T/ */
-typedef kcg_int64 DMI_List_Entry_Request_INT_T_DATA;
+typedef kcg_int32 DMI_List_Entry_Request_INT_T_DATA;
 
 /* DATA::DMI_Available_Menu_INT_T/ */
-typedef kcg_int64 DMI_Available_Menu_INT_T_DATA;
+typedef kcg_int32 DMI_Available_Menu_INT_T_DATA;
 
 /* DATA::connectionStatusRadioUnit_INT_T/ */
-typedef kcg_int64 connectionStatusRadioUnit_INT_T_DATA;
+typedef kcg_int32 connectionStatusRadioUnit_INT_T_DATA;
 
 /* DATA::M_SUPERVISION_STATUS_INT_T/ */
-typedef kcg_int64 M_SUPERVISION_STATUS_INT_T_DATA;
+typedef kcg_int32 M_SUPERVISION_STATUS_INT_T_DATA;
 
 /* DATA::M_SupervisionDisplay_INT_T/ */
-typedef kcg_int64 M_SupervisionDisplay_INT_T_DATA;
+typedef kcg_int32 M_SupervisionDisplay_INT_T_DATA;
 
 /* NID_TEXTMESSAGE/ */
-typedef kcg_int64 NID_TEXTMESSAGE;
+typedef kcg_int32 NID_TEXTMESSAGE;
 
 /* DMI_Types_Pkg::M_BRAKEPERCT/ */
-typedef kcg_int64 M_BRAKEPERCT_DMI_Types_Pkg;
+typedef kcg_int32 M_BRAKEPERCT_DMI_Types_Pkg;
 
 /* D_TRACKCOND/ */
-typedef kcg_int64 D_TRACKCOND;
+typedef kcg_int32 D_TRACKCOND;
 
 /* DMI_Types_Pkg::DMI_trackConditionElement_T/ */
 typedef struct kcg_tag_DMI_trackConditionElement_T_DMI_Types_Pkg {
@@ -3492,22 +3495,22 @@ typedef struct kcg_tag_DMI_trackConditionElement_T_DMI_Types_Pkg {
 typedef DMI_trackConditionElement_T_DMI_Types_Pkg DMI_trackConditionArray_T_DMI_Types_Pkg[32];
 
 /* Obu_BasicTypes_Pkg::G_internal_Type/ */
-typedef kcg_int64 G_internal_Type_Obu_BasicTypes_Pkg;
+typedef kcg_int32 G_internal_Type_Obu_BasicTypes_Pkg;
 
 /* DMI_Types_Pkg::DMI_TextMessage_ID_T/ */
-typedef kcg_int64 DMI_TextMessage_ID_T_DMI_Types_Pkg;
+typedef kcg_int32 DMI_TextMessage_ID_T_DMI_Types_Pkg;
 
 /* L_TEXT/ */
-typedef kcg_int64 L_TEXT;
+typedef kcg_int32 L_TEXT;
 
 /* Obu_BasicTypes_Pkg::BCD_T/ */
-typedef kcg_int64 BCD_T_Obu_BasicTypes_Pkg;
+typedef kcg_int32 BCD_T_Obu_BasicTypes_Pkg;
 
 /* L_PACKET/ */
-typedef kcg_int64 L_PACKET;
+typedef kcg_int32 L_PACKET;
 
 /* N_ITER/ */
-typedef kcg_int64 N_ITER;
+typedef kcg_int32 N_ITER;
 
 /* PosRepParams_T/ */
 typedef struct kcg_tag_PosRepParams_T {
@@ -3533,7 +3536,7 @@ typedef struct kcg_tag_P058_OBU_T_TM {
 } P058_OBU_T_TM;
 
 /* V_NVKVINT/ */
-typedef kcg_int64 V_NVKVINT;
+typedef kcg_int32 V_NVKVINT;
 
 /* Packet_Types_Pkg::nvkvint_T/ */
 typedef struct kcg_tag_nvkvint_T_Packet_Types_Pkg {
@@ -3559,66 +3562,58 @@ typedef struct kcg_tag_nvkvintset_T_Packet_Types_Pkg {
 typedef nvkvintset_T_Packet_Types_Pkg nvkvintsetArray_T_Packet_Types_Pkg[7];
 
 /* D_NVSTFF/ */
-typedef kcg_int64 D_NVSTFF;
+typedef kcg_int32 D_NVSTFF;
 
 /* D_NVPOTRP/ */
-typedef kcg_int64 D_NVPOTRP;
+typedef kcg_int32 D_NVPOTRP;
 
 /* T_NVOVTRP/ */
-typedef kcg_int64 T_NVOVTRP;
+typedef kcg_int32 T_NVOVTRP;
 
 /* D_NVOVTRP/ */
-typedef kcg_int64 D_NVOVTRP;
+typedef kcg_int32 D_NVOVTRP;
 
 /* V_NVSUPOVTRP/ */
-typedef kcg_int64 V_NVSUPOVTRP;
+typedef kcg_int32 V_NVSUPOVTRP;
 
 /* V_NVALLOWOVTRP/ */
-typedef kcg_int64 V_NVALLOWOVTRP;
+typedef kcg_int32 V_NVALLOWOVTRP;
 
 /* D_NVROLL/ */
-typedef kcg_int64 D_NVROLL;
+typedef kcg_int32 D_NVROLL;
 
 /* V_NVREL/ */
-typedef kcg_int64 V_NVREL;
+typedef kcg_int32 V_NVREL;
 
 /* V_NVUNFIT/ */
-typedef kcg_int64 V_NVUNFIT;
+typedef kcg_int32 V_NVUNFIT;
 
 /* V_NVLIMSUPERV/ */
-typedef kcg_int64 V_NVLIMSUPERV;
+typedef kcg_int32 V_NVLIMSUPERV;
 
 /* V_NVONSIGHT/ */
-typedef kcg_int64 V_NVONSIGHT;
+typedef kcg_int32 V_NVONSIGHT;
 
 /* V_NVSTFF/ */
-typedef kcg_int64 V_NVSTFF;
+typedef kcg_int32 V_NVSTFF;
 
 /* V_NVSHUNT/ */
-typedef kcg_int64 V_NVSHUNT;
+typedef kcg_int32 V_NVSHUNT;
 
 /* D_VALIDNV/ */
-typedef kcg_int64 D_VALIDNV;
+typedef kcg_int32 D_VALIDNV;
 
 /* M_POSITION/ */
-typedef kcg_int64 M_POSITION;
+typedef kcg_int32 M_POSITION;
 
 /* NID_CTRACTION/ */
-typedef kcg_int64 NID_CTRACTION;
+typedef kcg_int32 NID_CTRACTION;
 
 /* Obu_BasicTypes_Pkg::Speed_T/ */
-typedef kcg_int64 Speed_T_Obu_BasicTypes_Pkg;
+typedef kcg_int32 Speed_T_Obu_BasicTypes_Pkg;
 
 /* NID_PACKET/ */
-typedef kcg_int64 NID_PACKET;
-
-/* TM_TrainToTrack::P004/ */
-typedef struct kcg_tag_P004_TM_TrainToTrack {
-  kcg_bool valid;
-  NID_PACKET nid_packet;
-  L_PACKET l_packet;
-  M_ERROR m_error;
-} P004_TM_TrainToTrack;
+typedef kcg_int32 NID_PACKET;
 
 /* Packet_Types_Pkg::P58_PositionReportParameters_T/ */
 typedef struct kcg_tag_P58_PositionReportParameters_T_Packet_Types_Pkg {
@@ -3634,6 +3629,14 @@ typedef struct kcg_tag_P58_PositionReportParameters_T_Packet_Types_Pkg {
   IterPacket58List_T_Packet_Types_Pkg iterPacket58List;
 } P58_PositionReportParameters_T_Packet_Types_Pkg;
 
+/* TM_TrainToTrack::P004/ */
+typedef struct kcg_tag_P004_TM_TrainToTrack {
+  kcg_bool valid;
+  NID_PACKET nid_packet;
+  L_PACKET l_packet;
+  M_ERROR m_error;
+} P004_TM_TrainToTrack;
+
 /* TM_TrainToTrack::P009/ */
 typedef struct kcg_tag_P009_TM_TrainToTrack {
   kcg_bool valid;
@@ -3643,19 +3646,19 @@ typedef struct kcg_tag_P009_TM_TrainToTrack {
 } P009_TM_TrainToTrack;
 
 /* T_NVCONTACT/ */
-typedef kcg_int64 T_NVCONTACT;
+typedef kcg_int32 T_NVCONTACT;
 
 /* L_ACKMAMODE/ */
-typedef kcg_int64 L_ACKMAMODE;
+typedef kcg_int32 L_ACKMAMODE;
 
 /* L_MAMODE/ */
-typedef kcg_int64 L_MAMODE;
+typedef kcg_int32 L_MAMODE;
 
 /* V_MAMODE/ */
-typedef kcg_int64 V_MAMODE;
+typedef kcg_int32 V_MAMODE;
 
 /* D_MAMODE/ */
-typedef kcg_int64 D_MAMODE;
+typedef kcg_int32 D_MAMODE;
 
 /* TM::P080_section_enum_T/ */
 typedef struct kcg_tag_P080_section_enum_T_TM {
@@ -3682,7 +3685,7 @@ typedef struct kcg_tag_P080_OBU_T_TM {
   P080_OBU_sectionlist_enum_T_TM sections;
 } P080_OBU_T_TM;
 
-typedef P080_section_enum_T_TM _23_array[3];
+typedef P080_section_enum_T_TM _21_array[3];
 
 /* Packet_Types_Pkg::P80_ModeProfile_T/ */
 typedef struct kcg_tag_P80_ModeProfile_T_Packet_Types_Pkg {
@@ -3702,10 +3705,10 @@ typedef struct kcg_tag_P80_ModeProfile_T_Packet_Types_Pkg {
 typedef P80_ModeProfile_T_Packet_Types_Pkg P80_ModeProfiles_T_Packet_Types_Pkg[3];
 
 /* G_A/ */
-typedef kcg_int64 G_A;
+typedef kcg_int32 G_A;
 
 /* D_GRADIENT/ */
-typedef kcg_int64 D_GRADIENT;
+typedef kcg_int32 D_GRADIENT;
 
 /* TM::P021_section_enum_T/ */
 typedef struct kcg_tag_P021_section_enum_T_TM {
@@ -3729,11 +3732,11 @@ typedef struct kcg_tag_P021_OBU_T_TM {
   P021_OBU_sectionlist_enum_T_TM sections;
 } P021_OBU_T_TM;
 
-typedef P021_OBU_T_TM _86_array[7];
+typedef P021_OBU_T_TM _88_array[7];
 
-typedef P021_OBU_sectionlist_enum_T_TM _48_array[7];
+typedef P021_OBU_sectionlist_enum_T_TM _49_array[7];
 
-typedef P021_OBU_sectionlist_enum_T_TM _16_array[50];
+typedef P021_OBU_sectionlist_enum_T_TM _15_array[50];
 
 /* Packet_Types_Pkg::P21_GradientProfile_T/ */
 typedef struct kcg_tag_P21_GradientProfile_T_Packet_Types_Pkg {
@@ -3750,61 +3753,61 @@ typedef struct kcg_tag_P21_GradientProfile_T_Packet_Types_Pkg {
 typedef P21_GradientProfile_T_Packet_Types_Pkg P21_GradientProfiles_T_Packet_Types_Pkg[7];
 
 /* V_REVERSE/ */
-typedef kcg_int64 V_REVERSE;
+typedef kcg_int32 V_REVERSE;
 
 /* D_REVERSE/ */
-typedef kcg_int64 D_REVERSE;
+typedef kcg_int32 D_REVERSE;
 
 /* L_REVERSEAREA/ */
-typedef kcg_int64 L_REVERSEAREA;
+typedef kcg_int32 L_REVERSEAREA;
 
 /* D_STARTREVERSE/ */
-typedef kcg_int64 D_STARTREVERSE;
+typedef kcg_int32 D_STARTREVERSE;
 
 /* V_RELEASEOL/ */
-typedef kcg_int64 V_RELEASEOL;
+typedef kcg_int32 V_RELEASEOL;
 
 /* T_OL/ */
-typedef kcg_int64 T_OL;
+typedef kcg_int32 T_OL;
 
 /* D_STARTOL/ */
-typedef kcg_int64 D_STARTOL;
+typedef kcg_int32 D_STARTOL;
 
 /* V_RELEASEDP/ */
-typedef kcg_int64 V_RELEASEDP;
+typedef kcg_int32 V_RELEASEDP;
 
 /* D_ENDTIMERSTARTLOC/ */
-typedef kcg_int64 D_ENDTIMERSTARTLOC;
+typedef kcg_int32 D_ENDTIMERSTARTLOC;
 
 /* L_ENDSECTION/ */
-typedef kcg_int64 L_ENDSECTION;
+typedef kcg_int32 L_ENDSECTION;
 
 /* V_MAIN/ */
-typedef kcg_int64 V_MAIN;
+typedef kcg_int32 V_MAIN;
 
 /* T_LOA/ */
-typedef kcg_int64 T_LOA;
+typedef kcg_int32 T_LOA;
 
 /* D_SECTIONTIMERSTOPLOC/ */
-typedef kcg_int64 D_SECTIONTIMERSTOPLOC;
+typedef kcg_int32 D_SECTIONTIMERSTOPLOC;
 
 /* T_SECTIONTIMER/ */
-typedef kcg_int64 T_SECTIONTIMER;
+typedef kcg_int32 T_SECTIONTIMER;
 
 /* L_SECTION/ */
-typedef kcg_int64 L_SECTION;
+typedef kcg_int32 L_SECTION;
 
 /* T_ENDTIMER/ */
-typedef kcg_int64 T_ENDTIMER;
+typedef kcg_int32 T_ENDTIMER;
 
 /* V_LOA/ */
-typedef kcg_int64 V_LOA;
+typedef kcg_int32 V_LOA;
 
 /* D_OL/ */
-typedef kcg_int64 D_OL;
+typedef kcg_int32 D_OL;
 
 /* D_DP/ */
-typedef kcg_int64 D_DP;
+typedef kcg_int32 D_DP;
 
 /* Packet_Types_Pkg::P12_Level1MovementAuthority_T/ */
 typedef struct kcg_tag_P12_Level1MovementAuthority_T_Packet_Types_Pkg {
@@ -3871,27 +3874,16 @@ typedef struct kcg_tag_P15_Level23MovementAuthority_T_Packet_Types_Pkg {
 typedef P15_Level23MovementAuthority_T_Packet_Types_Pkg P15_Level23MovementAuthorities_T_Packet_Types_Pkg[5];
 
 /* D_LEVELTR/ */
-typedef kcg_int64 D_LEVELTR;
+typedef kcg_int32 D_LEVELTR;
 
 /* L_ACKLEVELTR/ */
-typedef kcg_int64 L_ACKLEVELTR;
+typedef kcg_int32 L_ACKLEVELTR;
 
 /* V_DIFF/ */
-typedef kcg_int64 V_DIFF;
+typedef kcg_int32 V_DIFF;
 
 /* NC_DIFF/ */
-typedef kcg_int64 NC_DIFF;
-
-/* TM_baseline2::P027V1_section_enum_qdiff_T/ */
-typedef struct kcg_tag_P027V1_section_enum_qdiff_T_TM_baseline2 {
-  kcg_bool valid;
-  NC_DIFF nc_diff;
-  V_DIFF v_diff;
-} P027V1_section_enum_qdiff_T_TM_baseline2;
-
-/* TM_baseline2::P027V1_OBU_sectionlist_enum_qdiff_T/,
-   TM_lib_internal::C_P027V1_unflatten_sections_qdiff/ */
-typedef P027V1_section_enum_qdiff_T_TM_baseline2 P027V1_OBU_sectionlist_enum_qdiff_T_TM_baseline2[32];
+typedef kcg_int32 NC_DIFF;
 
 /* Packet_Types_Pkg::Diff_T/ */
 typedef struct kcg_tag_Diff_T_Packet_Types_Pkg {
@@ -3905,11 +3897,22 @@ typedef struct kcg_tag_Diff_T_Packet_Types_Pkg {
 /* Packet_Types_Pkg::DiffArray_T/ */
 typedef Diff_T_Packet_Types_Pkg DiffArray_T_Packet_Types_Pkg[7];
 
+/* TM_baseline2::P027V1_section_enum_qdiff_T/ */
+typedef struct kcg_tag_P027V1_section_enum_qdiff_T_TM_baseline2 {
+  kcg_bool valid;
+  NC_DIFF nc_diff;
+  V_DIFF v_diff;
+} P027V1_section_enum_qdiff_T_TM_baseline2;
+
+/* TM_baseline2::P027V1_OBU_sectionlist_enum_qdiff_T/,
+   TM_lib_internal::C_P027V1_unflatten_sections_qdiff/ */
+typedef P027V1_section_enum_qdiff_T_TM_baseline2 P027V1_OBU_sectionlist_enum_qdiff_T_TM_baseline2[32];
+
 /* V_STATIC/ */
-typedef kcg_int64 V_STATIC;
+typedef kcg_int32 V_STATIC;
 
 /* D_STATIC/ */
-typedef kcg_int64 D_STATIC;
+typedef kcg_int32 D_STATIC;
 
 /* Packet_Types_Pkg::SSP_T/ */
 typedef struct kcg_tag_SSP_T_Packet_Types_Pkg {
@@ -3956,10 +3959,10 @@ typedef struct kcg_tag_P027V1_OBU_T_TM_baseline2 {
   P027V1_OBU_sectionlist_enum_T_TM_baseline2 sections;
 } P027V1_OBU_T_TM_baseline2;
 
-typedef P027V1_OBU_sectionlist_enum_T_TM_baseline2 _17_array[50];
+typedef P027V1_OBU_sectionlist_enum_T_TM_baseline2 _16_array[50];
 
 /* DMI_Types_Pkg::NID_STM/ */
-typedef kcg_int64 NID_STM_DMI_Types_Pkg;
+typedef kcg_int32 NID_STM_DMI_Types_Pkg;
 
 /* DMI_Types_Pkg::DMI_level_T/ */
 typedef struct kcg_tag_DMI_level_T_DMI_Types_Pkg {
@@ -3972,28 +3975,7 @@ typedef struct kcg_tag_DMI_level_T_DMI_Types_Pkg {
 typedef DMI_level_T_DMI_Types_Pkg DMI_level_array_T_DMI_Types_Pkg[32];
 
 /* NID_NTC/ */
-typedef kcg_int64 NID_NTC;
-
-/* BG_Types_Pkg::TrainToTrackStatus_T/ */
-typedef struct kcg_tag_TrainToTrackStatus_T_BG_Types_Pkg {
-  NID_NTC nid_ntc;
-  Q_LENGTH q_length;
-} TrainToTrackStatus_T_BG_Types_Pkg;
-
-/* Packet_Types_Pkg::P41_LevelTransitionOrder_T/ */
-typedef struct kcg_tag_P41_LevelTransitionOrder_T_Packet_Types_Pkg {
-  kcg_bool valid;
-  Q_DIR q_dir;
-  Q_SCALE q_scale;
-  D_LEVELTR d_leveltr;
-  M_LEVELTR m_leveltr;
-  NID_NTC nid_ntc;
-  L_ACKLEVELTR l_ackleveltr;
-} P41_LevelTransitionOrder_T_Packet_Types_Pkg;
-
-/* Packet_Types_Pkg::P41_LevelTransistionOrders_T/,
-   TM_conversions::C_P041_to_legacy_t/ */
-typedef P41_LevelTransitionOrder_T_Packet_Types_Pkg P41_LevelTransistionOrders_T_Packet_Types_Pkg[7];
+typedef kcg_int32 NID_NTC;
 
 /* TM::P046_section_enum_T/ */
 typedef struct kcg_tag_P046_section_enum_T_TM {
@@ -4014,31 +3996,28 @@ typedef struct kcg_tag_P046_OBU_T_TM {
   P046_OBU_sectionlist_enum_T_TM sections;
 } P046_OBU_T_TM;
 
-typedef P046_OBU_sectionlist_enum_T_TM _46_array[7];
+typedef P046_OBU_sectionlist_enum_T_TM _47_array[7];
 
-/* TM::P041_section_enum_T/ */
-typedef struct kcg_tag_P041_section_enum_T_TM {
-  kcg_bool valid;
-  M_LEVELTR m_leveltr;
-  NID_NTC nid_ntc;
-  L_ACKLEVELTR l_ackleveltr;
-} P041_section_enum_T_TM;
-
-/* TM::P041_OBU_sectionlist_enum_T/,
-   TM_lib_internal::C_P041_unflatten_sections/ */
-typedef P041_section_enum_T_TM P041_OBU_sectionlist_enum_T_TM[33];
-
-typedef P041_OBU_sectionlist_enum_T_TM _47_array[7];
-
-/* TM::P041_OBU_T/ */
-typedef struct kcg_tag_P041_OBU_T_TM {
+/* Packet_Types_Pkg::P41_LevelTransitionOrder_T/ */
+typedef struct kcg_tag_P41_LevelTransitionOrder_T_Packet_Types_Pkg {
   kcg_bool valid;
   Q_DIR q_dir;
   Q_SCALE q_scale;
   D_LEVELTR d_leveltr;
-  N_ITER n_iter;
-  P041_OBU_sectionlist_enum_T_TM sections;
-} P041_OBU_T_TM;
+  M_LEVELTR m_leveltr;
+  NID_NTC nid_ntc;
+  L_ACKLEVELTR l_ackleveltr;
+} P41_LevelTransitionOrder_T_Packet_Types_Pkg;
+
+/* Packet_Types_Pkg::P41_LevelTransistionOrders_T/,
+   TM_conversions::C_P041_to_legacy_t/ */
+typedef P41_LevelTransitionOrder_T_Packet_Types_Pkg P41_LevelTransistionOrders_T_Packet_Types_Pkg[7];
+
+/* BG_Types_Pkg::TrainToTrackStatus_T/ */
+typedef struct kcg_tag_TrainToTrackStatus_T_BG_Types_Pkg {
+  NID_NTC nid_ntc;
+  Q_LENGTH q_length;
+} TrainToTrackStatus_T_BG_Types_Pkg;
 
 /* Packet_Types_Pkg::P46_ConditionalLevelTransitionOrder_T/ */
 typedef struct kcg_tag_P46_ConditionalLevelTransitionOrder_T_Packet_Types_Pkg {
@@ -4052,23 +4031,38 @@ typedef struct kcg_tag_P46_ConditionalLevelTransitionOrder_T_Packet_Types_Pkg {
    TM_conversions::C_P046_to_legacy_t/ */
 typedef P46_ConditionalLevelTransitionOrder_T_Packet_Types_Pkg P46_ConditionalLevelTransitionOrders_T_Packet_Types_Pkg[7];
 
+/* TM::P041_section_enum_T/ */
+typedef struct kcg_tag_P041_section_enum_T_TM {
+  kcg_bool valid;
+  M_LEVELTR m_leveltr;
+  NID_NTC nid_ntc;
+  L_ACKLEVELTR l_ackleveltr;
+} P041_section_enum_T_TM;
+
+/* TM::P041_OBU_sectionlist_enum_T/,
+   TM_lib_internal::C_P041_unflatten_sections/ */
+typedef P041_section_enum_T_TM P041_OBU_sectionlist_enum_T_TM[33];
+
+typedef P041_OBU_sectionlist_enum_T_TM _48_array[7];
+
+/* TM::P041_OBU_T/ */
+typedef struct kcg_tag_P041_OBU_T_TM {
+  kcg_bool valid;
+  Q_DIR q_dir;
+  Q_SCALE q_scale;
+  D_LEVELTR d_leveltr;
+  N_ITER n_iter;
+  P041_OBU_sectionlist_enum_T_TM sections;
+} P041_OBU_T_TM;
+
 /* L_TRAIN/ */
-typedef kcg_int64 L_TRAIN;
+typedef kcg_int32 L_TRAIN;
 
 /* NID_ENGINE/ */
-typedef kcg_int64 NID_ENGINE;
+typedef kcg_int32 NID_ENGINE;
 
 /* Obu_BasicTypes_Pkg::Location_T/ */
-typedef kcg_int64 Location_T_Obu_BasicTypes_Pkg;
-
-/* Level_And_Mode_Types_Pkg::T_Reversing_Data/ */
-typedef struct kcg_tag_T_Reversing_Data_Level_And_Mode_Types_Pkg {
-  kcg_bool Available;
-  Location_T_Obu_BasicTypes_Pkg Dist_Start;
-  Location_T_Obu_BasicTypes_Pkg Length;
-  Location_T_Obu_BasicTypes_Pkg Dist_Run;
-  Speed_T_Obu_BasicTypes_Pkg Speed;
-} T_Reversing_Data_Level_And_Mode_Types_Pkg;
+typedef kcg_int32 Location_T_Obu_BasicTypes_Pkg;
 
 /* Level_And_Mode_Types_Pkg::T_Mode_Profile/ */
 typedef struct kcg_tag_T_Mode_Profile_Level_And_Mode_Types_Pkg {
@@ -4082,6 +4076,15 @@ typedef struct kcg_tag_T_Mode_Profile_Level_And_Mode_Types_Pkg {
 /* InputManagement::Input_Modes/,
    Level_And_Mode_Types_Pkg::T_Mode_Profile_Table/ */
 typedef T_Mode_Profile_Level_And_Mode_Types_Pkg T_Mode_Profile_Table_Level_And_Mode_Types_Pkg[3];
+
+/* Level_And_Mode_Types_Pkg::T_Reversing_Data/ */
+typedef struct kcg_tag_T_Reversing_Data_Level_And_Mode_Types_Pkg {
+  kcg_bool Available;
+  Location_T_Obu_BasicTypes_Pkg Dist_Start;
+  Location_T_Obu_BasicTypes_Pkg Length;
+  Location_T_Obu_BasicTypes_Pkg Dist_Run;
+  Speed_T_Obu_BasicTypes_Pkg Speed;
+} T_Reversing_Data_Level_And_Mode_Types_Pkg;
 
 /* Level_And_Mode_Types_Pkg::T_Data_From_Track_To_Mode/ */
 typedef struct kcg_tag_T_Data_From_Track_To_Mode_Level_And_Mode_Types_Pkg {
@@ -4108,16 +4111,16 @@ typedef struct kcg_tag_T_LevelTansitionInfo_Level_And_Mode_Types_Pkg {
 } T_LevelTansitionInfo_Level_And_Mode_Types_Pkg;
 
 /* D_EMERGENCYSTOP/ */
-typedef kcg_int64 D_EMERGENCYSTOP;
+typedef kcg_int32 D_EMERGENCYSTOP;
 
 /* D_REF/ */
-typedef kcg_int64 D_REF;
+typedef kcg_int32 D_REF;
 
 /* D_SR/ */
-typedef kcg_int64 D_SR;
+typedef kcg_int32 D_SR;
 
 /* NID_EM/ */
-typedef kcg_int64 NID_EM;
+typedef kcg_int32 NID_EM;
 
 /* TA_EmergencyStop::NID_EM_Store::NID_EM_Store_Add/,
    TA_EmergencyStop::NID_EM_Store::NID_EM_Store_Item_T/,
@@ -4127,10 +4130,13 @@ typedef struct kcg_tag_NID_EM_Store_Item_T_TA_EmergencyStop_NID_EM_Store {
   kcg_bool valid;
 } NID_EM_Store_Item_T_TA_EmergencyStop_NID_EM_Store;
 
-typedef NID_EM_Store_Item_T_TA_EmergencyStop_NID_EM_Store _53_array[8];
+typedef NID_EM_Store_Item_T_TA_EmergencyStop_NID_EM_Store _54_array[8];
 
 /* T_TRAIN/ */
-typedef kcg_int64 T_TRAIN;
+typedef kcg_int32 T_TRAIN;
+
+/* Clock_T/ */
+typedef struct kcg_tag_Clock_T { T_TRAIN m_Value; } Clock_T;
 
 /* trainData_Types_pkg::trainDataStatus_T/ */
 typedef struct kcg_tag_trainDataStatus_T_trainData_Types_pkg {
@@ -4143,11 +4149,8 @@ typedef struct kcg_tag_trainDataStatus_T_trainData_Types_pkg {
   T_TRAIN timeStampValidateToRBC;
 } trainDataStatus_T_trainData_Types_pkg;
 
-/* Clock_T/ */
-typedef struct kcg_tag_Clock_T { T_TRAIN m_Value; } Clock_T;
-
 /* NID_MESSAGE/ */
-typedef kcg_int64 NID_MESSAGE;
+typedef kcg_int32 NID_MESSAGE;
 
 /* TM_radio_messages::M_147_T/ */
 typedef struct kcg_tag_M_147_T_TM_radio_messages {
@@ -4181,22 +4184,19 @@ typedef struct kcg_tag_M_132_T_TM_radio_messages {
 } M_132_T_TM_radio_messages;
 
 /* NID_RBC/ */
-typedef kcg_int64 NID_RBC;
+typedef kcg_int32 NID_RBC;
 
 /* BG_Types_Pkg::NID_ERRORBG/ */
-typedef kcg_int64 NID_ERRORBG_BG_Types_Pkg;
-
-/* NID_RADIO/ */
-typedef kcg_int64 NID_RADIO;
+typedef kcg_int32 NID_ERRORBG_BG_Types_Pkg;
 
 /* Q_LOCACC/ */
-typedef kcg_int64 Q_LOCACC;
+typedef kcg_int32 Q_LOCACC;
 
 /* D_LINK/ */
-typedef kcg_int64 D_LINK;
+typedef kcg_int32 D_LINK;
 
 /* NID_LRBG/ */
-typedef kcg_int64 NID_LRBG;
+typedef kcg_int32 NID_LRBG;
 
 /* TM_radio_messages::M_045_T/ */
 typedef struct kcg_tag_M_045_T_TM_radio_messages {
@@ -4348,10 +4348,10 @@ typedef struct kcg_tag_M_034_T_TM_radio_messages {
 } M_034_T_TM_radio_messages;
 
 /* Obu_BasicTypes_Pkg::A_internal_Type/ */
-typedef kcg_int64 A_internal_Type_Obu_BasicTypes_Pkg;
+typedef kcg_int32 A_internal_Type_Obu_BasicTypes_Pkg;
 
 /* Obu_BasicTypes_Pkg::V_odometry_Type/ */
-typedef kcg_int64 V_odometry_Type_Obu_BasicTypes_Pkg;
+typedef kcg_int32 V_odometry_Type_Obu_BasicTypes_Pkg;
 
 /* SDM_Types_Pkg::Speeds_T/ */
 typedef struct kcg_tag_Speeds_T_SDM_Types_Pkg {
@@ -4381,7 +4381,7 @@ typedef struct kcg_tag_OdometrySpeeds_T_Obu_BasicTypes_Pkg {
 } OdometrySpeeds_T_Obu_BasicTypes_Pkg;
 
 /* Q_NVLOCACC/ */
-typedef kcg_int64 Q_NVLOCACC;
+typedef kcg_int32 Q_NVLOCACC;
 
 /* TM_baseline2::P003_permanent_data_T/ */
 typedef struct kcg_tag_P003_permanent_data_T_TM_baseline2 {
@@ -4390,25 +4390,13 @@ typedef struct kcg_tag_P003_permanent_data_T_TM_baseline2 {
 } P003_permanent_data_T_TM_baseline2;
 
 /* M_MCOUNT/ */
-typedef kcg_int64 M_MCOUNT;
+typedef kcg_int32 M_MCOUNT;
 
 /* NID_BG/ */
-typedef kcg_int64 NID_BG;
+typedef kcg_int32 NID_BG;
 
 /* NID_C/ */
-typedef kcg_int64 NID_C;
-
-/* Packet_Types_Pkg::P63_BaliseInSRAuthority_T/ */
-typedef struct kcg_tag_P63_BaliseInSRAuthority_T_Packet_Types_Pkg {
-  kcg_bool valid;
-  Q_DIR q_dir;
-  Q_NEWCOUNTRY q_newcountry;
-  NID_C nid_c;
-  NID_BG nid_bg;
-} P63_BaliseInSRAuthority_T_Packet_Types_Pkg;
-
-/* Packet_Types_Pkg::P63_ListofBalisesinSRAuthority_T/ */
-typedef P63_BaliseInSRAuthority_T_Packet_Types_Pkg P63_ListofBalisesinSRAuthority_T_Packet_Types_Pkg[7];
+typedef kcg_int32 NID_C;
 
 /* Packet_Types_Pkg::P42_SessionManagement_T/ */
 typedef struct kcg_tag_P42_SessionManagement_T_Packet_Types_Pkg {
@@ -4528,6 +4516,18 @@ typedef struct kcg_tag_probesBalises_T_xdebugSupport_Pkg {
   MSG_Errors_T_Common_Types_Pkg errors;
 } probesBalises_T_xdebugSupport_Pkg;
 
+/* Packet_Types_Pkg::P63_BaliseInSRAuthority_T/ */
+typedef struct kcg_tag_P63_BaliseInSRAuthority_T_Packet_Types_Pkg {
+  kcg_bool valid;
+  Q_DIR q_dir;
+  Q_NEWCOUNTRY q_newcountry;
+  NID_C nid_c;
+  NID_BG nid_bg;
+} P63_BaliseInSRAuthority_T_Packet_Types_Pkg;
+
+/* Packet_Types_Pkg::P63_ListofBalisesinSRAuthority_T/ */
+typedef P63_BaliseInSRAuthority_T_Packet_Types_Pkg P63_ListofBalisesinSRAuthority_T_Packet_Types_Pkg[7];
+
 /* DMI_Types_Pkg::nationValuesForDMI_T/ */
 typedef struct kcg_tag_nationValuesForDMI_T_DMI_Types_Pkg {
   kcg_bool valid;
@@ -4545,39 +4545,9 @@ typedef struct kcg_tag_sessionStatus_T_RCM_Session_Types_Pkg {
 } sessionStatus_T_RCM_Session_Types_Pkg;
 
 /* Obu_BasicTypes_Pkg::L_internal_Type/ */
-typedef kcg_int64 L_internal_Type_Obu_BasicTypes_Pkg;
+typedef kcg_int32 L_internal_Type_Obu_BasicTypes_Pkg;
 
-/* Obu_BasicTypes_Pkg::LocWithInAcc_T/ */
-typedef struct kcg_tag_LocWithInAcc_T_Obu_BasicTypes_Pkg {
-  L_internal_Type_Obu_BasicTypes_Pkg nominal;
-  L_internal_Type_Obu_BasicTypes_Pkg d_min;
-  L_internal_Type_Obu_BasicTypes_Pkg d_max;
-} LocWithInAcc_T_Obu_BasicTypes_Pkg;
-
-/* TrainPosition_Types_Pck::infoFromLinking_T/ */
-typedef struct kcg_tag_infoFromLinking_T_TrainPosition_Types_Pck {
-  kcg_bool valid;
-  NID_BG nid_bg_fromLinkingBG;
-  NID_C nid_c_fromLinkingBG;
-  LocWithInAcc_T_Obu_BasicTypes_Pkg expectedLocation;
-  LocWithInAcc_T_Obu_BasicTypes_Pkg d_link;
-  LinkedBG_T_BG_Types_Pkg linkingInfo;
-} infoFromLinking_T_TrainPosition_Types_Pck;
-
-typedef LocWithInAcc_T_Obu_BasicTypes_Pkg _24_array[41];
-
-/* ProvidePositionReport_Pkg::ReportedBG_T/ */
-typedef struct kcg_tag_ReportedBG_T_ProvidePositionReport_Pkg {
-  kcg_bool valid;
-  NID_BG nidBG;
-  LocWithInAcc_T_Obu_BasicTypes_Pkg location;
-} ReportedBG_T_ProvidePositionReport_Pkg;
-
-/* ProvidePositionReport_Pkg::AddBGToFIFO/,
-   ProvidePositionReport_Pkg::BG_hasBeenReported/,
-   ProvidePositionReport_Pkg::ProvidePositionReport/,
-   ProvidePositionReport_Pkg::ReportedBGList_T/ */
-typedef ReportedBG_T_ProvidePositionReport_Pkg ReportedBGList_T_ProvidePositionReport_Pkg[8];
+typedef L_internal_Type_Obu_BasicTypes_Pkg array_int32_110[110];
 
 /* EVC_MEM_Support_Pkg::dataCollectionForLevelTransition_T/ */
 typedef struct kcg_tag_dataCollectionForLevelTransition_T_EVC_MEM_Support_Pkg {
@@ -4644,7 +4614,19 @@ typedef struct kcg_tag_SDM_Commands_T_SDM_Types_Pkg {
   kcg_bool ebCmd;
 } SDM_Commands_T_SDM_Types_Pkg;
 
-typedef L_internal_Type_Obu_BasicTypes_Pkg array_int64_110[110];
+/* TrackAtlasTypes::Gradient_section_t/ */
+typedef struct kcg_tag_Gradient_section_t_TrackAtlasTypes {
+  kcg_bool valid;
+  L_internal_Type_Obu_BasicTypes_Pkg Loc_Absolute;
+  L_internal_Type_Obu_BasicTypes_Pkg Loc_LRBG;
+  G_internal_Type_Obu_BasicTypes_Pkg Gradient;
+  L_internal_Type_Obu_BasicTypes_Pkg L_Gradient;
+} Gradient_section_t_TrackAtlasTypes;
+
+/* TrackAtlasTypes::GradientProfile_t/ */
+typedef Gradient_section_t_TrackAtlasTypes GradientProfile_t_TrackAtlasTypes[50];
+
+typedef GradientProfile_t_TrackAtlasTypes _2_array[50];
 
 /* Obu_BasicTypes_Pkg::OdometryLocations_T/ */
 typedef struct kcg_tag_OdometryLocations_T_Obu_BasicTypes_Pkg {
@@ -4653,7 +4635,39 @@ typedef struct kcg_tag_OdometryLocations_T_Obu_BasicTypes_Pkg {
   L_internal_Type_Obu_BasicTypes_Pkg o_max;
 } OdometryLocations_T_Obu_BasicTypes_Pkg;
 
-typedef OdometryLocations_T_Obu_BasicTypes_Pkg _70_array[8];
+typedef OdometryLocations_T_Obu_BasicTypes_Pkg _71_array[8];
+
+/* Obu_BasicTypes_Pkg::LocWithInAcc_T/ */
+typedef struct kcg_tag_LocWithInAcc_T_Obu_BasicTypes_Pkg {
+  L_internal_Type_Obu_BasicTypes_Pkg nominal;
+  L_internal_Type_Obu_BasicTypes_Pkg d_min;
+  L_internal_Type_Obu_BasicTypes_Pkg d_max;
+} LocWithInAcc_T_Obu_BasicTypes_Pkg;
+
+/* TrainPosition_Types_Pck::infoFromLinking_T/ */
+typedef struct kcg_tag_infoFromLinking_T_TrainPosition_Types_Pck {
+  kcg_bool valid;
+  NID_BG nid_bg_fromLinkingBG;
+  NID_C nid_c_fromLinkingBG;
+  LocWithInAcc_T_Obu_BasicTypes_Pkg expectedLocation;
+  LocWithInAcc_T_Obu_BasicTypes_Pkg d_link;
+  LinkedBG_T_BG_Types_Pkg linkingInfo;
+} infoFromLinking_T_TrainPosition_Types_Pck;
+
+typedef LocWithInAcc_T_Obu_BasicTypes_Pkg _22_array[41];
+
+/* ProvidePositionReport_Pkg::ReportedBG_T/ */
+typedef struct kcg_tag_ReportedBG_T_ProvidePositionReport_Pkg {
+  kcg_bool valid;
+  NID_BG nidBG;
+  LocWithInAcc_T_Obu_BasicTypes_Pkg location;
+} ReportedBG_T_ProvidePositionReport_Pkg;
+
+/* ProvidePositionReport_Pkg::AddBGToFIFO/,
+   ProvidePositionReport_Pkg::BG_hasBeenReported/,
+   ProvidePositionReport_Pkg::ProvidePositionReport/,
+   ProvidePositionReport_Pkg::ReportedBGList_T/ */
+typedef ReportedBG_T_ProvidePositionReport_Pkg ReportedBGList_T_ProvidePositionReport_Pkg[8];
 
 /* Level_And_Mode_Types_Pkg::T_LevelTransition/ */
 typedef struct kcg_tag_T_LevelTransition_Level_And_Mode_Types_Pkg {
@@ -4681,36 +4695,8 @@ typedef struct kcg_tag_T_AnnouncedLevel_Level_And_Mode_Types_Pkg {
   kcg_bool IsAvailableForUse;
 } T_AnnouncedLevel_Level_And_Mode_Types_Pkg;
 
-/* TrackAtlasTypes::Gradient_section_t/ */
-typedef struct kcg_tag_Gradient_section_t_TrackAtlasTypes {
-  kcg_bool valid;
-  L_internal_Type_Obu_BasicTypes_Pkg Loc_Absolute;
-  L_internal_Type_Obu_BasicTypes_Pkg Loc_LRBG;
-  G_internal_Type_Obu_BasicTypes_Pkg Gradient;
-  L_internal_Type_Obu_BasicTypes_Pkg L_Gradient;
-} Gradient_section_t_TrackAtlasTypes;
-
-/* TrackAtlasTypes::GradientProfile_t/ */
-typedef Gradient_section_t_TrackAtlasTypes GradientProfile_t_TrackAtlasTypes[50];
-
-typedef GradientProfile_t_TrackAtlasTypes _2_array[50];
-
 /* Obu_BasicTypes_Pkg::V_internal_Type/ */
-typedef kcg_int64 V_internal_Type_Obu_BasicTypes_Pkg;
-
-/* DMI_Types_Pkg::speedSupervisionForDMI_T/ */
-typedef struct kcg_tag_speedSupervisionForDMI_T_DMI_Types_Pkg {
-  kcg_bool valid;
-  V_internal_Type_Obu_BasicTypes_Pkg targetSpeed;
-  V_internal_Type_Obu_BasicTypes_Pkg permittedSpeed;
-  V_internal_Type_Obu_BasicTypes_Pkg releaseSpeed;
-  L_internal_Type_Obu_BasicTypes_Pkg locationBrakeTarget;
-  L_internal_Type_Obu_BasicTypes_Pkg location_brake_curve_starting_point;
-  V_internal_Type_Obu_BasicTypes_Pkg interventionSpeed;
-  M_SUPERVISION_STATUS_DMI_Types_Pkg sup_status;
-  M_SupervisionDisplay_T_DMI_Types_Pkg supervisionDisplay;
-  L_internal_Type_Obu_BasicTypes_Pkg distanceIndicationPoint;
-} speedSupervisionForDMI_T_DMI_Types_Pkg;
+typedef kcg_int32 V_internal_Type_Obu_BasicTypes_Pkg;
 
 /* TrackAtlasTypes::StaticSpeedSection_t/ */
 typedef struct kcg_tag_StaticSpeedSection_t_TrackAtlasTypes {
@@ -4728,12 +4714,19 @@ typedef StaticSpeedProfile_t_TrackAtlasTypes _77_array[110];
 
 typedef StaticSpeedProfile_t_TrackAtlasTypes _3_array[50];
 
-/* TrackAtlasTypes::DP_or_OL_t/ */
-typedef struct kcg_tag_DP_or_OL_t_TrackAtlasTypes {
-  L_internal_Type_Obu_BasicTypes_Pkg d_DP_or_OL;
-  V_internal_Type_Obu_BasicTypes_Pkg v_release;
-  kcg_bool calc_v_release_onboard;
-} DP_or_OL_t_TrackAtlasTypes;
+/* DMI_Types_Pkg::speedSupervisionForDMI_T/ */
+typedef struct kcg_tag_speedSupervisionForDMI_T_DMI_Types_Pkg {
+  kcg_bool valid;
+  V_internal_Type_Obu_BasicTypes_Pkg targetSpeed;
+  V_internal_Type_Obu_BasicTypes_Pkg permittedSpeed;
+  V_internal_Type_Obu_BasicTypes_Pkg releaseSpeed;
+  L_internal_Type_Obu_BasicTypes_Pkg locationBrakeTarget;
+  L_internal_Type_Obu_BasicTypes_Pkg location_brake_curve_starting_point;
+  V_internal_Type_Obu_BasicTypes_Pkg interventionSpeed;
+  M_SUPERVISION_STATUS_DMI_Types_Pkg sup_status;
+  M_SupervisionDisplay_T_DMI_Types_Pkg supervisionDisplay;
+  L_internal_Type_Obu_BasicTypes_Pkg distanceIndicationPoint;
+} speedSupervisionForDMI_T_DMI_Types_Pkg;
 
 /* DMI_Types_Pkg::movementAuthorityForDMI_T/ */
 typedef struct kcg_tag_movementAuthorityForDMI_T_DMI_Types_Pkg {
@@ -4741,6 +4734,13 @@ typedef struct kcg_tag_movementAuthorityForDMI_T_DMI_Types_Pkg {
   L_internal_Type_Obu_BasicTypes_Pkg location_LOA;
   V_internal_Type_Obu_BasicTypes_Pkg v_LOA;
 } movementAuthorityForDMI_T_DMI_Types_Pkg;
+
+/* TrackAtlasTypes::DP_or_OL_t/ */
+typedef struct kcg_tag_DP_or_OL_t_TrackAtlasTypes {
+  L_internal_Type_Obu_BasicTypes_Pkg d_DP_or_OL;
+  V_internal_Type_Obu_BasicTypes_Pkg v_release;
+  kcg_bool calc_v_release_onboard;
+} DP_or_OL_t_TrackAtlasTypes;
 
 /* TargetManagement_types::Target_T/ */
 typedef struct kcg_tag_Target_T_TargetManagement_types {
@@ -4751,17 +4751,10 @@ typedef struct kcg_tag_Target_T_TargetManagement_types {
 } Target_T_TargetManagement_types;
 
 /* DMI_Types_Pkg::BCD/ */
-typedef kcg_int64 BCD_DMI_Types_Pkg;
+typedef kcg_int32 BCD_DMI_Types_Pkg;
 
 /* NID_MN/ */
-typedef kcg_int64 NID_MN;
-
-/* API_RadioCommunication_Pkg::RadioManagement_T/ */
-typedef struct kcg_tag_RadioManagement_T_API_RadioCommunication_Pkg {
-  kcg_bool valid;
-  cmdRadioUnit_T_API_RadioCommunication_Pkg cmd;
-  NID_MN networkID;
-} RadioManagement_T_API_RadioCommunication_Pkg;
+typedef kcg_int32 NID_MN;
 
 /* Packet_Types_Pkg::P45_RadioNetworkRegistration_T/ */
 typedef struct kcg_tag_P45_RadioNetworkRegistration_T_Packet_Types_Pkg {
@@ -4777,14 +4770,15 @@ typedef struct kcg_tag_radioNetWorkIDs_T_MoRC_Pck {
   P45_RadioNetworkRegistration_T_Packet_Types_Pkg ID_fromDriver;
 } radioNetWorkIDs_T_MoRC_Pck;
 
-/* NID_OPERATIONAL/ */
-typedef kcg_int64 NID_OPERATIONAL;
-
-/* Packet_TrainTypes_Pkg::PT5_TrainRunningNumber/ */
-typedef struct kcg_tag_PT5_TrainRunningNumber_Packet_TrainTypes_Pkg {
+/* API_RadioCommunication_Pkg::RadioManagement_T/ */
+typedef struct kcg_tag_RadioManagement_T_API_RadioCommunication_Pkg {
   kcg_bool valid;
-  NID_OPERATIONAL TrainRunningNumber;
-} PT5_TrainRunningNumber_Packet_TrainTypes_Pkg;
+  cmdRadioUnit_T_API_RadioCommunication_Pkg cmd;
+  NID_MN networkID;
+} RadioManagement_T_API_RadioCommunication_Pkg;
+
+/* NID_OPERATIONAL/ */
+typedef kcg_int32 NID_OPERATIONAL;
 
 /* TrainPosition_Types_Pck::trainProperties_T/ */
 typedef struct kcg_tag_trainProperties_T_TrainPosition_Types_Pck {
@@ -4799,7 +4793,7 @@ typedef struct kcg_tag_trainProperties_T_TrainPosition_Types_Pck {
 
 typedef trainProperties_T_TrainPosition_Types_Pck _74_array[41];
 
-typedef trainProperties_T_TrainPosition_Types_Pck _54_array[33];
+typedef trainProperties_T_TrainPosition_Types_Pck _55_array[33];
 
 /* TM_TrainToTrack::P005/ */
 typedef struct kcg_tag_P005_TM_TrainToTrack {
@@ -4809,8 +4803,14 @@ typedef struct kcg_tag_P005_TM_TrainToTrack {
   NID_OPERATIONAL nid_opeartional;
 } P005_TM_TrainToTrack;
 
+/* Packet_TrainTypes_Pkg::PT5_TrainRunningNumber/ */
+typedef struct kcg_tag_PT5_TrainRunningNumber_Packet_TrainTypes_Pkg {
+  kcg_bool valid;
+  NID_OPERATIONAL TrainRunningNumber;
+} PT5_TrainRunningNumber_Packet_TrainTypes_Pkg;
+
 /* Obu_BasicTypes_Pkg::T_internal_Type/ */
-typedef kcg_int64 T_internal_Type_Obu_BasicTypes_Pkg;
+typedef kcg_int32 T_internal_Type_Obu_BasicTypes_Pkg;
 
 /* DMI_Messages_Bothways_Pkg::DMI_Driver_Identifier_T/ */
 typedef struct kcg_tag_DMI_Driver_Identifier_T_DMI_Messages_Bothways_Pkg {
@@ -4819,11 +4819,12 @@ typedef struct kcg_tag_DMI_Driver_Identifier_T_DMI_Messages_Bothways_Pkg {
   driverIdentifier_T_DMI_Messages_Bothways_Pkg driverIdentifier;
 } DMI_Driver_Identifier_T_DMI_Messages_Bothways_Pkg;
 
-/* DMI_Messages_DMI_to_EVC_Pkg::DMI_Radio_Net_Data_T/ */
-typedef struct kcg_tag_DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg {
+/* DMI_Messages_DMI_to_EVC_Pkg::DMI_Driver_Request_T/ */
+typedef struct kcg_tag_DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg {
   kcg_bool valid;
   T_internal_Type_Obu_BasicTypes_Pkg systemTime;
-} DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg;
+  DMI_Request_T_DMI_Types_Pkg m_request;
+} DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg;
 
 /* Obu_BasicTypes_Pkg::odometry_T/ */
 typedef struct kcg_tag_odometry_T_Obu_BasicTypes_Pkg {
@@ -4923,19 +4924,19 @@ typedef struct kcg_tag_MsgStructure {
   DMI_Text_Message_T_DMI_Messages_EVC_to_DMI_Pkg dmi_msg;
 } MsgStructure;
 
-typedef MsgStructure _95_array[10];
+typedef MsgStructure _94_array[10];
 
-typedef _95_array _83_array[10];
+typedef _94_array _85_array[10];
 
-typedef MsgStructure _80_array[5];
+typedef MsgStructure _82_array[5];
 
 typedef MsgStructure _37_array[1];
 
 typedef MsgStructure _36_array[9];
 
-typedef MsgStructure _15_array[4];
+typedef MsgStructure _14_array[4];
 
-typedef DMI_Text_Message_T_DMI_Messages_EVC_to_DMI_Pkg _7_array[10];
+typedef DMI_Text_Message_T_DMI_Messages_EVC_to_DMI_Pkg _5_array[10];
 
 /* DMI_Messages_EVC_to_DMI_Pkg::DMI_Identifier_Request_T/ */
 typedef struct kcg_tag_DMI_Identifier_Request_T_DMI_Messages_EVC_to_DMI_Pkg {
@@ -5006,40 +5007,12 @@ typedef struct kcg_tag_DMI_Dynamic_T_DMI_Messages_EVC_to_DMI_Pkg {
   L_internal_Type_Obu_BasicTypes_Pkg distanceIndicationPoint;
 } DMI_Dynamic_T_DMI_Messages_EVC_to_DMI_Pkg;
 
-/* DMI_Messages_EVC_to_DMI_Pkg::DMI_System_Version_T/ */
-typedef struct kcg_tag_DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg {
+/* DMI_Messages_EVC_to_DMI_Pkg::DMI_Display_Control_T/ */
+typedef struct kcg_tag_DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg {
   kcg_bool valid;
+  kcg_bool cab_is_active;
   T_internal_Type_Obu_BasicTypes_Pkg system_clock;
-  M_VERSION system_version;
-} DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg;
-
-/* DMI_Messages_Bothways_Pkg::DMI_Adhesion_Factor_Data_T/ */
-typedef struct kcg_tag_DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg {
-  kcg_bool valid;
-  T_internal_Type_Obu_BasicTypes_Pkg systemTime;
-  M_ADHESION adhesionFactor;
-} DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg;
-
-/* DMI_Messages_DMI_to_EVC_Pkg::DMI_Train_Data_Ack_T/ */
-typedef struct kcg_tag_DMI_Train_Data_Ack_T_DMI_Messages_DMI_to_EVC_Pkg {
-  kcg_bool valid;
-  T_internal_Type_Obu_BasicTypes_Pkg systemTime;
-  kcg_bool acknowledged;
-} DMI_Train_Data_Ack_T_DMI_Messages_DMI_to_EVC_Pkg;
-
-/* DMI_Messages_EVC_to_DMI_Pkg::DMI_Entry_Request_T/ */
-typedef struct kcg_tag_DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg {
-  kcg_bool valid;
-  T_internal_Type_Obu_BasicTypes_Pkg system_clock;
-  DMI_List_Entry_Request_T_DMI_Types_Pkg entry_request;
-} DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg;
-
-/* DMI_Messages_Bothways_Pkg::DMI_Train_Running_Number_T/ */
-typedef struct kcg_tag_DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg {
-  kcg_bool valid;
-  T_internal_Type_Obu_BasicTypes_Pkg systemTime;
-  NID_OPERATIONAL trainRunningNumber;
-} DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg;
+} DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg;
 
 /* DMI_Messages_EVC_to_DMI_Pkg::DMI_EVC_Radio_Net_Data_T/ */
 typedef struct kcg_tag_DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg {
@@ -5048,11 +5021,18 @@ typedef struct kcg_tag_DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg {
   NID_MN nid_mn;
 } DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg;
 
-/* TrackAtlasTypes::Endtimer_t/ */
-typedef struct kcg_tag_Endtimer_t_TrackAtlasTypes {
-  T_internal_Type_Obu_BasicTypes_Pkg t_endtimer;
-  L_internal_Type_Obu_BasicTypes_Pkg d_endtimerstoploc;
-} Endtimer_t_TrackAtlasTypes;
+/* DMI_Messages_DMI_to_EVC_Pkg::DMI_Train_Data_Ack_T/ */
+typedef struct kcg_tag_DMI_Train_Data_Ack_T_DMI_Messages_DMI_to_EVC_Pkg {
+  kcg_bool valid;
+  T_internal_Type_Obu_BasicTypes_Pkg systemTime;
+  kcg_bool acknowledged;
+} DMI_Train_Data_Ack_T_DMI_Messages_DMI_to_EVC_Pkg;
+
+/* DMI_Messages_DMI_to_EVC_Pkg::DMI_Radio_Net_Data_T/ */
+typedef struct kcg_tag_DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg {
+  kcg_bool valid;
+  T_internal_Type_Obu_BasicTypes_Pkg systemTime;
+} DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg;
 
 /* DMI_Messages_DMI_to_EVC_Pkg::DMI_Text_Message_Ack_T/ */
 typedef struct kcg_tag_DMI_Text_Message_Ack_T_DMI_Messages_DMI_to_EVC_Pkg {
@@ -5061,6 +5041,13 @@ typedef struct kcg_tag_DMI_Text_Message_Ack_T_DMI_Messages_DMI_to_EVC_Pkg {
   DMI_TextMessage_ID_T_DMI_Types_Pkg textMessage_ID;
   kcg_bool acknowledged;
 } DMI_Text_Message_Ack_T_DMI_Messages_DMI_to_EVC_Pkg;
+
+/* DMI_Messages_EVC_to_DMI_Pkg::DMI_Entry_Request_T/ */
+typedef struct kcg_tag_DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg {
+  kcg_bool valid;
+  T_internal_Type_Obu_BasicTypes_Pkg system_clock;
+  DMI_List_Entry_Request_T_DMI_Types_Pkg entry_request;
+} DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg;
 
 /* TrackAtlasTypes::MovementAuthoritySection_t/ */
 typedef struct kcg_tag_MovementAuthoritySection_t_TrackAtlasTypes {
@@ -5075,26 +5062,7 @@ typedef struct kcg_tag_MovementAuthoritySection_t_TrackAtlasTypes {
 /* TrackAtlasTypes::MovementAuthoritySectionlist_t/ */
 typedef MovementAuthoritySection_t_TrackAtlasTypes MovementAuthoritySectionlist_t_TrackAtlasTypes[10];
 
-typedef MovementAuthoritySectionlist_t_TrackAtlasTypes _84_array[10];
-
-/* TrackAtlasTypes::MovementAuthority_t/ */
-typedef struct kcg_tag_MovementAuthority_t_TrackAtlasTypes {
-  kcg_bool valid;
-  MA_Level_t_TrackAtlasTypes Level;
-  Q_DIR q_dir;
-  V_internal_Type_Obu_BasicTypes_Pkg v_main;
-  V_internal_Type_Obu_BasicTypes_Pkg v_loa;
-  kcg_bool t_loa_unlimited;
-  T_internal_Type_Obu_BasicTypes_Pkg t_loa;
-  N_ITER n_iter;
-  MovementAuthoritySectionlist_t_TrackAtlasTypes sections;
-  kcg_bool q_dangerpoint;
-  DP_or_OL_t_TrackAtlasTypes dangerpoint;
-  kcg_bool q_overlap;
-  DP_or_OL_t_TrackAtlasTypes overlap;
-  kcg_bool q_endtimer;
-  Endtimer_t_TrackAtlasTypes endtimer_t;
-} MovementAuthority_t_TrackAtlasTypes;
+typedef MovementAuthoritySectionlist_t_TrackAtlasTypes _86_array[10];
 
 /* TA_MA_new::AccuDistanceProfileMA/ */
 typedef struct kcg_tag_AccuDistanceProfileMA_TA_MA_new {
@@ -5121,19 +5089,51 @@ typedef struct kcg_tag_DMI_Menu_Request_T_DMI_Messages_EVC_to_DMI_Pkg {
   DMI_Available_Menu_T_DMI_Types_Pkg available_menu;
 } DMI_Menu_Request_T_DMI_Messages_EVC_to_DMI_Pkg;
 
-/* DMI_Messages_DMI_to_EVC_Pkg::DMI_Driver_Request_T/ */
-typedef struct kcg_tag_DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg {
+/* DMI_Messages_EVC_to_DMI_Pkg::DMI_System_Version_T/ */
+typedef struct kcg_tag_DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg {
+  kcg_bool valid;
+  T_internal_Type_Obu_BasicTypes_Pkg system_clock;
+  M_VERSION system_version;
+} DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg;
+
+/* DMI_Messages_Bothways_Pkg::DMI_Adhesion_Factor_Data_T/ */
+typedef struct kcg_tag_DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg {
   kcg_bool valid;
   T_internal_Type_Obu_BasicTypes_Pkg systemTime;
-  DMI_Request_T_DMI_Types_Pkg m_request;
-} DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg;
+  M_ADHESION adhesionFactor;
+} DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg;
 
-/* DMI_Messages_EVC_to_DMI_Pkg::DMI_Display_Control_T/ */
-typedef struct kcg_tag_DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg {
+/* TrackAtlasTypes::Endtimer_t/ */
+typedef struct kcg_tag_Endtimer_t_TrackAtlasTypes {
+  T_internal_Type_Obu_BasicTypes_Pkg t_endtimer;
+  L_internal_Type_Obu_BasicTypes_Pkg d_endtimerstoploc;
+} Endtimer_t_TrackAtlasTypes;
+
+/* TrackAtlasTypes::MovementAuthority_t/ */
+typedef struct kcg_tag_MovementAuthority_t_TrackAtlasTypes {
   kcg_bool valid;
-  kcg_bool cab_is_active;
-  T_internal_Type_Obu_BasicTypes_Pkg system_clock;
-} DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg;
+  MA_Level_t_TrackAtlasTypes Level;
+  Q_DIR q_dir;
+  V_internal_Type_Obu_BasicTypes_Pkg v_main;
+  V_internal_Type_Obu_BasicTypes_Pkg v_loa;
+  kcg_bool t_loa_unlimited;
+  T_internal_Type_Obu_BasicTypes_Pkg t_loa;
+  N_ITER n_iter;
+  MovementAuthoritySectionlist_t_TrackAtlasTypes sections;
+  kcg_bool q_dangerpoint;
+  DP_or_OL_t_TrackAtlasTypes dangerpoint;
+  kcg_bool q_overlap;
+  DP_or_OL_t_TrackAtlasTypes overlap;
+  kcg_bool q_endtimer;
+  Endtimer_t_TrackAtlasTypes endtimer_t;
+} MovementAuthority_t_TrackAtlasTypes;
+
+/* DMI_Messages_Bothways_Pkg::DMI_Train_Running_Number_T/ */
+typedef struct kcg_tag_DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg {
+  kcg_bool valid;
+  T_internal_Type_Obu_BasicTypes_Pkg systemTime;
+  NID_OPERATIONAL trainRunningNumber;
+} DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg;
 
 /* DMI_Messages_Bothways_Pkg::DMI_Level_Data_T/ */
 typedef struct kcg_tag_DMI_Level_Data_T_DMI_Messages_Bothways_Pkg {
@@ -5143,7 +5143,7 @@ typedef struct kcg_tag_DMI_Level_Data_T_DMI_Messages_Bothways_Pkg {
 } DMI_Level_Data_T_DMI_Messages_Bothways_Pkg;
 
 /* TIU_Types_Pkg::NID_ctraction_T/ */
-typedef kcg_int64 NID_ctraction_T_TIU_Types_Pkg;
+typedef kcg_int32 NID_ctraction_T_TIU_Types_Pkg;
 
 /* TIU_Types_Pkg::M_voltage_T/ */
 typedef struct kcg_tag_M_voltage_T_TIU_Types_Pkg {
@@ -5151,45 +5151,144 @@ typedef struct kcg_tag_M_voltage_T_TIU_Types_Pkg {
   NID_ctraction_T_TIU_Types_Pkg NID_ctraction;
 } M_voltage_T_TIU_Types_Pkg;
 
-typedef kcg_int64 array_int64_301[301];
+typedef kcg_int32 array_int32_72[72];
 
-typedef kcg_int64 array_int64_304[304];
+/* TIU_Types_Pkg::M_current_T/ */
+typedef struct kcg_tag_M_current_T_TIU_Types_Pkg {
+  kcg_bool no_restriction;
+  kcg_int32 restriction;
+} M_current_T_TIU_Types_Pkg;
 
-typedef kcg_int64 array_int64_221[221];
+/* TargetManagement_pkg::extractTargetsMRSPACC/ */
+typedef struct kcg_tag_extractTargetsMRSPACC_TargetManagement_pkg {
+  Target_list_MRSP_real_T_TargetManagement_types targetList;
+  kcg_int32 lastInsertedTargetIndex;
+} extractTargetsMRSPACC_TargetManagement_pkg;
 
-typedef kcg_int64 array_int64_129[129];
+/* TM::P046_sections_array_flat_T/, TM_conversions::C_P046_compr_onboard/ */
+typedef kcg_int32 P046_sections_array_flat_T_TM[66];
 
-/* DATA::DMI_speedProfile_int_array_T/ */
-typedef array_int64_129 DMI_speedProfile_int_array_T_DATA;
+typedef P046_sections_array_flat_T_TM array_int32_66_33[33];
 
-/* DMI_gradientProfile_int_arrayT/ */
-typedef array_int64_129 DMI_gradientProfile_int_arrayT;
+typedef struct kcg_tag_struct_494407 {
+  kcg_bool valid;
+  kcg_int32 nid_message;
+  kcg_int32 l_message;
+  kcg_int32 t_train;
+  kcg_int32 nid_engine;
+} struct_494407;
+
+/* TM_radio_messages::M_155_T/ */
+typedef struct_494407 M_155_T_TM_radio_messages;
+
+/* TM_radio_messages::M_156_T/ */
+typedef struct_494407 M_156_T_TM_radio_messages;
+
+/* TM_radio_messages::M_159_T/ */
+typedef struct_494407 M_159_T_TM_radio_messages;
+
+/* TM_radio_messages::M_154_T/ */
+typedef struct_494407 M_154_T_TM_radio_messages;
+
+/* TM_radio_messages::M_129_T/ */
+typedef struct_494407 M_129_T_TM_radio_messages;
+
+/* TM_radio_messages::M_136_T/ */
+typedef struct_494407 M_136_T_TM_radio_messages;
 
 /* SDM_GradientAcceleration_Pkg::ACC/ */
 typedef struct kcg_tag_ACC_SDM_GradientAcceleration_Pkg {
   L_internal_real_Type_SDM_Types_Pkg frontPos;
-  kcg_int64 frontIndex;
+  kcg_int32 frontIndex;
   L_internal_real_Type_SDM_Types_Pkg rearPos;
-  kcg_int64 rearIndex;
+  kcg_int32 rearIndex;
   GradientProfile_real_compensated_t_SDM_GradientAcceleration_types compensatedGradientProfile;
 } ACC_SDM_GradientAcceleration_Pkg;
 
-typedef kcg_int64 array_int64_627[627];
+typedef kcg_int32 array_int32_395[395];
 
-typedef struct kcg_tag_struct_494268 {
+typedef kcg_int32 array_int32_964[964];
+
+typedef kcg_int32 array_int32_48[48];
+
+typedef struct kcg_tag_struct_493943 {
+  M_VOLTAGE m_voltage;
+  kcg_int32 nid_ctraction;
+} struct_493943;
+
+/* TM_TrainToTrack::P011_voltage/ */
+typedef struct_493943 P011_voltage_TM_TrainToTrack;
+
+/* Packet_TrainTypes_Pkg::sTractionIdentity_T/ */
+typedef struct_493943 sTractionIdentity_T_Packet_TrainTypes_Pkg;
+
+typedef struct_493943 _13_array[4];
+
+/* TM_TrainToTrack::P011_voltage_list/ */
+typedef _13_array P011_voltage_list_TM_TrainToTrack;
+
+/* Packet_TrainTypes_Pkg::aTractionIdentity_T/ */
+typedef _13_array aTractionIdentity_T_Packet_TrainTypes_Pkg;
+
+/* Common_Types_Pkg::MetadataElement_T/ */
+typedef struct kcg_tag_MetadataElement_T_Common_Types_Pkg {
+  NID_PACKET nid_packet;
+  Q_DIR q_dir;
   kcg_bool valid;
-  kcg_int64 Loc_Abs;
-  kcg_int64 Loc_LRBG;
-  kcg_int64 MRS;
-} struct_494268;
+  kcg_int32 startAddress;
+  kcg_int32 endAddress;
+} MetadataElement_T_Common_Types_Pkg;
+
+typedef MetadataElement_T_Common_Types_Pkg _90_array[29];
+
+/* Common_Types_Pkg::Metadata_T/,
+   InformationFilter_Pkg::FirstFilter::FirstFilter/,
+   InformationFilter_Pkg::SecondFilter::DetermineBufferMessage/,
+   InformationFilter_Pkg::ThirdFilter::ThirdFilter/,
+   ValidateDataDirectionGeneral_Pkg::validateDataDirection_General/ */
+typedef MetadataElement_T_Common_Types_Pkg Metadata_T_Common_Types_Pkg[30];
+
+typedef Metadata_T_Common_Types_Pkg _53_array[30];
+
+typedef kcg_int32 array_int32_961[961];
+
+typedef kcg_int32 array_int32_128[128];
+
+/* TM::P015_sections_array_flat_T/ */
+typedef array_int32_128 P015_sections_array_flat_T_TM;
+
+/* TM::P012_sections_array_flat_T/ */
+typedef array_int32_128 P012_sections_array_flat_T_TM;
+
+typedef array_int32_128 array_int32_128_32[32];
+
+/* CalculateTrainPosition_Pkg::BG_relocation_Pkg::linkedBG_index_T/ */
+typedef struct kcg_tag_linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg {
+  kcg_int32 previousLinkedBG_idx;
+  kcg_int32 currentIndex;
+  kcg_int32 subsequentLinkedBG_idx;
+} linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg;
+
+/* CalculateTrainPosition_Pkg::BG_relocation_Pkg::findLinkedBGs/,
+   CalculateTrainPosition_Pkg::BG_relocation_Pkg::linkedBGs_indices_T/ */
+typedef linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg linkedBGs_indices_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg[41];
+
+typedef kcg_int32 array_int32_131[131];
+
+typedef struct kcg_tag_struct_493703 {
+  kcg_bool valid;
+  kcg_int32 Loc_Abs;
+  kcg_int32 Loc_LRBG;
+  kcg_int32 MRS;
+} struct_493703;
 
 /* TrackAtlasTypes::MRSP_section_t/ */
-typedef struct_494268 MRSP_section_t_TrackAtlasTypes;
+typedef struct_493703 MRSP_section_t_TrackAtlasTypes;
 
 /* TA_Export::MRSP_to_DMI/, TrackAtlasTypes::MRSP_Profile_t/ */
 typedef MRSP_section_t_TrackAtlasTypes MRSP_Profile_t_TrackAtlasTypes[110];
 
-typedef MRSP_Profile_t_TrackAtlasTypes _90_array[110];
+typedef MRSP_Profile_t_TrackAtlasTypes _91_array[110];
 
 /* TrackAtlasTypes::DataForSupervision_nextGen_t/ */
 typedef struct kcg_tag_DataForSupervision_nextGen_t_TrackAtlasTypes {
@@ -5202,7 +5301,7 @@ typedef struct kcg_tag_DataForSupervision_nextGen_t_TrackAtlasTypes {
 } DataForSupervision_nextGen_t_TrackAtlasTypes;
 
 /* DMI_Types_Pkg::DMI_speedProfileElement_T/ */
-typedef struct_494268 DMI_speedProfileElement_T_DMI_Types_Pkg;
+typedef struct_493703 DMI_speedProfileElement_T_DMI_Types_Pkg;
 
 /* DATA::Variables::CAST_int_t_DMI_speedProfile/,
    DMI_Types_Pkg::DMI_SpeedProfileArray_T/,
@@ -5215,219 +5314,173 @@ typedef struct kcg_tag_DMI_speedProfile_T_DMI_Types_Pkg {
   DMI_SpeedProfileArray_T_DMI_Types_Pkg speedProfiles;
 } DMI_speedProfile_T_DMI_Types_Pkg;
 
-typedef kcg_int64 array_int64_292[292];
+/* TM::P015_section_int_T/ */
+typedef struct kcg_tag_P015_section_int_T_TM {
+  kcg_int32 L_SECTION;
+  kcg_int32 Q_SECTIONTIMER;
+  kcg_int32 T_SECTIONTIMER;
+  kcg_int32 D_SECTIONTIMERSTOPLOC;
+} P015_section_int_T_TM;
 
-typedef kcg_int64 array_int64_40[40];
+typedef P015_section_int_T_TM _61_array[32];
 
-/* RCM_Types_Pkg::mobileRegistrationCmd_T/ */
-typedef struct kcg_tag_mobileRegistrationCmd_T_RCM_Types_Pkg {
+/* TM::P015_OBU_sectionlist_int_T/ */
+typedef _61_array P015_OBU_sectionlist_int_T_TM;
+
+/* TM::P015_trackide_sectionlist_T/ */
+typedef _61_array P015_trackide_sectionlist_T_TM;
+
+typedef kcg_int32 array_int32_42[42];
+
+typedef kcg_int32 array_int32_285[285];
+
+typedef kcg_int32 array_int32_33[33];
+
+typedef kcg_int32 array_int32_30[30];
+
+typedef struct kcg_tag_struct_493052 {
   kcg_bool valid;
-  kcg_int64 mobileDeviceNo;
-  mobileRegistrationAction_T_RCM_Types_Pkg action;
-  NID_MN network_id;
-} mobileRegistrationCmd_T_RCM_Types_Pkg;
+  kcg_int32 nid_c;
+} struct_493052;
 
-typedef kcg_int64 array_int64_289[289];
+/* TM_baseline2::P003V1_section_enum_T/ */
+typedef struct_493052 P003V1_section_enum_T_TM_baseline2;
 
-/* TM::P045_trackside_int_T/ */
-typedef struct kcg_tag_P045_trackside_int_T_TM {
+typedef P003V1_section_enum_T_TM_baseline2 _32_array[1];
+
+/* TM::P003_OBU_nid_c_section_enum_T/ */
+typedef struct_493052 P003_OBU_nid_c_section_enum_T_TM;
+
+/* Packet_Types_Pkg::nidC_T/ */
+typedef struct_493052 nidC_T_Packet_Types_Pkg;
+
+/* Packet_Types_Pkg::nidCArray_T/ */
+typedef nidC_T_Packet_Types_Pkg nidCArray_T_Packet_Types_Pkg[7];
+
+/* Packet_Types_Pkg::P3_NationalValues_T/ */
+typedef struct kcg_tag_P3_NationalValues_T_Packet_Types_Pkg {
   kcg_bool valid;
-  kcg_int64 NID_PACKET;
-  kcg_int64 Q_DIR;
-  kcg_int64 L_PACKET;
-  kcg_int64 NID_MN;
-} P045_trackside_int_T_TM;
+  Q_DIR q_dir;
+  D_VALIDNV d_validnv;
+  nidCArray_T_Packet_Types_Pkg nid_cArray;
+  V_NVSHUNT v_nvshunt;
+  V_NVSTFF v_nvstff;
+  V_NVONSIGHT v_nvonsight;
+  V_NVLIMSUPERV v_nvlimsuperv;
+  V_NVUNFIT v_nvunfit;
+  V_NVREL v_nvrel;
+  D_NVROLL d_nvroll;
+  Q_NVSBTSMPERM q_nvsbtsmperm;
+  Q_NVEMRRLS q_nvemrrls;
+  Q_NVGUIPERM q_nvguiperm;
+  Q_NVSBFBPERM q_nvsbfbperm;
+  Q_NVINHSMICPERM q_nvinhsmicperm;
+  V_NVALLOWOVTRP v_nvallowovtrp;
+  V_NVSUPOVTRP v_nvsupovtrp;
+  D_NVOVTRP d_nvovtrp;
+  T_NVOVTRP t_nvovtrp;
+  D_NVPOTRP d_nvpotrp;
+  M_NVCONTACT m_nvcontact;
+  T_NVCONTACT t_nvcontact;
+  M_NVDERUN m_nvderun;
+  D_NVSTFF d_nvstff;
+  Q_NVDRIVER_ADHES q_nvdriver_adhes;
+  A_NVMAXREDADH1 a_nvmaxredadh1;
+  A_NVMAXREDADH2 a_nvmaxredadh2;
+  A_NVMAXREDADH3 a_nvmaxredadh3;
+  Q_NVLOCACC q_nvlocacc;
+  M_NVAVADH m_nvavadh;
+  M_NVEBCL m_nvebcl;
+  Q_NVKINT q_nvkint;
+  nvkvintsetArray_T_Packet_Types_Pkg nvkvintsetArray;
+  nvkrintArray_T_Packet_Types_Pkg nvkrintArray;
+  M_NVKTINT m_nvktint;
+} P3_NationalValues_T_Packet_Types_Pkg;
 
-typedef kcg_int64 array_int64_280[280];
+typedef struct_493052 _101_array[31];
 
-typedef kcg_int64 array_int64_28[28];
+typedef struct_493052 _64_array[32];
 
-typedef kcg_int64 array_int64_114[114];
+/* TM_baseline2::P003V1_sectionlist_enum_T/ */
+typedef _64_array P003V1_sectionlist_enum_T_TM_baseline2;
 
-typedef kcg_int64 array_int64_283[283];
-
-typedef kcg_int64 array_int64_31[31];
-
-typedef kcg_int64 array_int64_25[25];
-
-/* TM_TrainToTrack::P011_TrainTrack_int/ */
-typedef array_int64_25 P011_TrainTrack_int_TM_TrainToTrack;
-
-/* TM_TrainToTrack::P044_TrainTrack_int/ */
-typedef array_int64_25 P044_TrainTrack_int_TM_TrainToTrack;
-
-typedef kcg_int64 array_int64_105[105];
-
-typedef kcg_int64 array_int64_22[22];
-
-typedef kcg_int64 array_int64_13[13];
-
-/* SDMConversionModelPkg::v_MergedSteps_t/ */
-typedef array_int64_13 v_MergedSteps_t_SDMConversionModelPkg;
-
-/* SDMConversionModelPkg::a_MergedSteps_t/ */
-typedef array_int64_13 a_MergedSteps_t_SDMConversionModelPkg;
-
-/* SDMConversionModelPkg::av_MergedMap_t/ */
-typedef struct kcg_tag_av_MergedMap_t_SDMConversionModelPkg {
-  a_MergedSteps_t_SDMConversionModelPkg a;
-  v_MergedSteps_t_SDMConversionModelPkg v;
-} av_MergedMap_t_SDMConversionModelPkg;
-
-typedef kcg_int64 array_int64_99[99];
-
-/* TM::P021_sections_array_flat_T/ */
-typedef array_int64_99 P021_sections_array_flat_T_TM;
-
-/* TM::P041_sections_array_flat_T/ */
-typedef array_int64_99 P041_sections_array_flat_T_TM;
-
-typedef array_int64_99 array_int64_99_33[33];
-
-typedef kcg_int64 array_int64_428[428];
-
-typedef kcg_int64 array_int64_7[7];
-
-/* TM::P005_section_array_T/ */
-typedef array_int64_7 P005_section_array_T_TM;
-
-/* TM::P005_OBU_sectionlist_array_T/,
-   TM_lib_internal::C_P005_flatten_sections/ */
-typedef P005_section_array_T_TM P005_OBU_sectionlist_array_T_TM[33];
-
-typedef P005_OBU_sectionlist_array_T_TM array_int64_7_33_231[231];
-
-/* TM::Array07/ */
-typedef array_int64_7 Array07_TM;
-
-/* SDMConversionModelPkg::v_KvSteps_t/ */
-typedef array_int64_7 v_KvSteps_t_SDMConversionModelPkg;
-
-/* SDMConversionModelPkg::m_KvSteps_t/ */
-typedef array_int64_7 m_KvSteps_t_SDMConversionModelPkg;
-
-/* SDMConversionModelPkg::mv_Map_t/ */
-typedef struct kcg_tag_mv_Map_t_SDMConversionModelPkg {
-  m_KvSteps_t_SDMConversionModelPkg m;
-  v_KvSteps_t_SDMConversionModelPkg v;
-} mv_Map_t_SDMConversionModelPkg;
-
-typedef mv_Map_t_SDMConversionModelPkg _76_array[13];
-
-/* DATA::DMI_Text_Message_int_array_T/,
-   DATA::Packets::EVC_to_DMI::CAST_DMI_Text_Message_to_int1/,
-   Messages::CAST_int_to_EVC_to_DMI/ */
-typedef kcg_int64 DMI_Text_Message_int_array_T_DATA[262];
-
-typedef kcg_int64 array_int64_10[10];
-
-typedef struct kcg_tag_struct_493287 {
-  kcg_int64 now;
-  kcg_int64 distance;
-} struct_493287;
-
-/* TIU_Types_Pkg::D_test_trackinit_T/ */
-typedef struct_493287 D_test_trackinit_T_TIU_Types_Pkg;
-
-/* TIU_Types_Pkg::L_test_trackcond_T/ */
-typedef struct_493287 L_test_trackcond_T_TIU_Types_Pkg;
-
-/* TIU_Types_Pkg::D_test_trackcond_T/ */
-typedef struct_493287 D_test_trackcond_T_TIU_Types_Pkg;
-
-/* TIU_Types_Pkg::nothing_to_resume_profile_follow_T/ */
-typedef struct kcg_tag_nothing_to_resume_profile_follow_T_TIU_Types_Pkg {
-  D_test_trackcond_T_TIU_Types_Pkg d_test_trackcond;
-  L_test_trackcond_T_TIU_Types_Pkg l_test_trackcond;
-  M_trackcond_T_TIU_Types_Pkg m_trackcond;
-} nothing_to_resume_profile_follow_T_TIU_Types_Pkg;
-
-/* TIU_Types_Pkg::Type_I_train_and_brake_inhibition_with_distance_commands_T/ */
-typedef struct kcg_tag_Type_I_train_and_brake_inhibition_with_distance_commands_T_TIU_Types_Pkg {
+/* TM_baseline2::P003V1_OBU_T/ */
+typedef struct kcg_tag_P003V1_OBU_T_TM_baseline2 {
   kcg_bool valid;
-  nothing_to_resume_profile_follow_T_TIU_Types_Pkg nothing_to_resume_profile_follow;
-  D_test_trackinit_T_TIU_Types_Pkg empty_profile_initial_state_to_be_resumed;
-} Type_I_train_and_brake_inhibition_with_distance_commands_T_TIU_Types_Pkg;
+  Q_DIR q_dir;
+  Q_SCALE q_scale;
+  D_VALIDNV d_validnv;
+  N_ITER n_iter;
+  P003V1_sectionlist_enum_T_TM_baseline2 SECTIONS;
+  V_NVSHUNT v_nvshunt;
+  V_NVSTFF v_nvstff;
+  V_NVONSIGHT v_nvonsight;
+  V_NVUNFIT v_nvunfit;
+  V_NVREL v_nvrel;
+  D_NVROLL d_nvroll;
+  Q_NVSBTSMPERM q_nvsbtsmperm;
+  Q_NVEMRRLS q_nvemrrls;
+  V_NVALLOWOVTRP v_nvallowovtrp;
+  V_NVSUPOVTRP v_nvsopovtrp;
+  D_NVOVTRP d_nvovtrp;
+  T_NVOVTRP t_nvovtrp;
+  D_NVPOTRP d_nvpotrp;
+  M_NVCONTACT m_nvcontact;
+  T_NVCONTACT t_nvcontact;
+  M_NVDERUN m_nvderun;
+  D_NVSTFF d_nvstff;
+  Q_NVDRIVER_ADHES q_nvdriver_adhes;
+} P003V1_OBU_T_TM_baseline2;
 
-/* TIU_Types_Pkg::D_test_current_T/ */
-typedef struct_493287 D_test_current_T_TIU_Types_Pkg;
+/* TM::P003_OBU_nid_c_sectionlist_enum_T/ */
+typedef _64_array P003_OBU_nid_c_sectionlist_enum_T_TM;
 
-/* TIU_Types_Pkg::D_test_traction_T/ */
-typedef struct_493287 D_test_traction_T_TIU_Types_Pkg;
-
-/* TIU_Types_Pkg::Change_traction_system_T/ */
-typedef struct kcg_tag_Change_traction_system_T_TIU_Types_Pkg {
+typedef struct kcg_tag_struct_493006 {
   kcg_bool valid;
-  D_test_traction_T_TIU_Types_Pkg d_test_traction;
-  M_voltage_T_TIU_Types_Pkg m_voltage;
-} Change_traction_system_T_TIU_Types_Pkg;
+  Q_DIR q_dir;
+  Q_SCALE q_scale;
+  kcg_int32 d_reverse;
+  kcg_int32 v_reverse;
+} struct_493006;
 
-/* TIU_Types_Pkg::D_test_distance_T/ */
-typedef struct_493287 D_test_distance_T_TIU_Types_Pkg;
+/* TM::P139_OBU_T/ */
+typedef struct_493006 P139_OBU_T_TM;
 
-typedef kcg_int64 array_int64_499[499];
+/* Packet_Types_Pkg::P139_ReversingSupervisionInformation_T/ */
+typedef struct_493006 P139_ReversingSupervisionInformation_T_Packet_Types_Pkg;
 
-typedef kcg_int64 array_int64_4[4];
+typedef kcg_int32 array_int32_21[21];
 
-/* TM::P015_section_array_T/ */
-typedef array_int64_4 P015_section_array_T_TM;
+typedef kcg_int32 array_int32_24[24];
 
-/* TM::P015_OBU_sectionlist_array_T/,
-   TM_lib_internal::C_P015_flatten_sections/ */
-typedef P015_section_array_T_TM P015_OBU_sectionlist_array_T_TM[32];
+/* TM::Array24/ */
+typedef array_int32_24 Array24_TM;
 
-typedef P015_OBU_sectionlist_array_T_TM array_int64_4_32_128[128];
+/* DATA::DMI_Dynamic_int_array_T/ */
+typedef array_int32_24 DMI_Dynamic_int_array_T_DATA;
 
-/* TM::Array04/ */
-typedef array_int64_4 Array04_TM;
+typedef kcg_int32 array_int32_18[18];
 
-/* DATA::DMI_Text_Message_Ack_int_array_T/ */
-typedef array_int64_4 DMI_Text_Message_Ack_int_array_T_DATA;
+/* TA_EmergencyStop::NID_EM_Store::Manage_NID_EM_Store/IfBlock1:else:then:,
+   TA_EmergencyStop::NID_EM_Store::Manage_NID_EM_Store/IfBlock1:then:,
+   TA_EmergencyStop::NID_EM_Store::NID_EM_STORE_Acc_T/,
+   TA_EmergencyStop::NID_EM_Store::NID_EM_Store_Add/,
+   TA_EmergencyStop::NID_EM_Store::NID_EM_Store_Find/,
+   TA_EmergencyStop::NID_EM_Store::NID_EM_Store_Remove/ */
+typedef struct kcg_tag_NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store {
+  kcg_bool handled;
+  NID_EM nid_em;
+  kcg_int32 nfree;
+} NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store;
 
-/* DATA::DMI_Status_int_array_T/ */
-typedef array_int64_4 DMI_Status_int_array_T_DATA;
+typedef kcg_int32 array_int32_430[430];
 
-/* DATA::DMI_Level_Data_int_array_T/ */
-typedef array_int64_4 DMI_Level_Data_int_array_T_DATA;
+typedef kcg_int32 array_int32_104[104];
 
-/* DMI_Messages_DMI_to_EVC_Pkg::DMI_Icon_Ack_T/ */
-typedef struct kcg_tag_DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg {
-  kcg_bool valid;
-  T_internal_Type_Obu_BasicTypes_Pkg systemTime;
-  kcg_int64 DMI_nid_icon_identifier;
-} DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg;
+/* TM::P005_sections_array_flat_T/, TM_conversions::C_P005_compr_onboard/ */
+typedef kcg_int32 P005_sections_array_flat_T_TM[95];
 
-typedef kcg_int64 array_int64_496[496];
-
-/* DATA::Packets::DMI_to_EVC::C_DMI_identifier_to_int/,
-   DATA::Packets::EVC_to_DMI::CAST_DMI_Identifier_Request_to_int1/,
-   DATA::Variables::CAST_DMI_LevelList_to_int/,
-   DATA::Variables::CAST_DMI_gradientProfile_to_int/,
-   DATA::Variables::CAST_DMI_speedProfile_to_int/,
-   DATA::Variables::CAST_DMI_trackCondition_to_int/,
-   DMI_Control_Pkg::Sub_func::TextMessages::AckMsgManager/IfBlock1:then:,
-   Messages::CAST_DMI_to_EVC_to_int/,
-   Messages::CAST_EVC_to_DMI_to_int/,
-   TM_TrainToTrack::C_P011_train_compr/,
-   TM_TrainToTrack::P044_other_data/,
-   TM_conversions::C_P005_compr_onboard/,
-   TM_conversions::C_P005_tracksim_compr/,
-   TM_conversions::C_P015_tracksim_compr/,
-   TM_conversions::C_P021_tracksim_compr/,
-   TM_conversions::C_P041_tracksim_compr/,
-   TM_conversions::C_P046_tracksim_compr/,
-   TM_conversions::C_P080_compr_onboard/,
-   TM_conversions::C_P255_tracksim_compr/ */
-typedef kcg_int64 P044_other_data_TM_TrainToTrack[1];
-
-/* TM_TrainToTrack::P044/ */
-typedef struct kcg_tag_P044_TM_TrainToTrack {
-  kcg_bool valid;
-  NID_PACKET nid_packet;
-  L_PACKET l_packet;
-  NID_XUSER nid_xuser;
-  P044_other_data_TM_TrainToTrack external_data;
-} P044_TM_TrainToTrack;
+typedef P005_sections_array_flat_T_TM array_int32_95_33[33];
 
 /* TrainPosition_Types_Pck::positionedBG_T/ */
 typedef struct kcg_tag_positionedBG_T_TrainPosition_Types_Pck {
@@ -5436,7 +5489,7 @@ typedef struct kcg_tag_positionedBG_T_TrainPosition_Types_Pck {
   NID_BG nid_bg;
   Q_LINK q_link;
   LocWithInAcc_T_Obu_BasicTypes_Pkg location;
-  kcg_int64 seqNoOnTrack;
+  kcg_int32 seqNoOnTrack;
   infoFromLinking_T_TrainPosition_Types_Pck infoFromLinking;
   passedBG_T_BG_Types_Pkg infoFromPassing;
   kcg_bool missed;
@@ -5486,7 +5539,7 @@ typedef struct kcg_tag_T_Data_From_Localisation_Level_And_Mode_Types_Pkg {
   kcg_bool Train_Standstill;
 } T_Data_From_Localisation_Level_And_Mode_Types_Pkg;
 
-typedef trainPosition_T_TrainPosition_Types_Pck _27_array[30];
+typedef trainPosition_T_TrainPosition_Types_Pck _25_array[30];
 
 /* TrainPosition_Types_Pck::trainPositionInfo_T/ */
 typedef struct kcg_tag_trainPositionInfo_T_TrainPosition_Types_Pck {
@@ -5516,7 +5569,7 @@ typedef struct kcg_tag_trainPositionInfo_T_TrainPosition_Types_Pck {
    TrainPosition_Types_Pck::positionedBGs_T/ */
 typedef positionedBG_T_TrainPosition_Types_Pck positionedBGs_T_TrainPosition_Types_Pck[41];
 
-typedef positionedBGs_T_TrainPosition_Types_Pck _71_array[41];
+typedef positionedBGs_T_TrainPosition_Types_Pck _72_array[41];
 
 /* CalculateTrainPosition_Pkg::positionedBGs_w_overrun_T/ */
 typedef struct kcg_tag_positionedBGs_w_overrun_T_CalculateTrainPosition_Pkg {
@@ -5537,22 +5590,22 @@ typedef struct kcg_tag_refBGs_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg {
    TrainPosition_Types_Pck::linkedBGs_asPositionedBGs_T/ */
 typedef positionedBG_T_TrainPosition_Types_Pck linkedBGs_asPositionedBGs_T_TrainPosition_Types_Pck[33];
 
-typedef positionedBG_T_TrainPosition_Types_Pck _43_array[1];
+typedef positionedBG_T_TrainPosition_Types_Pck _45_array[1];
 
-typedef positionedBG_T_TrainPosition_Types_Pck _40_array[40];
+typedef positionedBG_T_TrainPosition_Types_Pck _42_array[40];
 
-typedef positionedBG_T_TrainPosition_Types_Pck _25_array[8];
+typedef positionedBG_T_TrainPosition_Types_Pck _23_array[8];
 
 /* TM_radio_messages::M_TrainTrack_MessageHd_T/ */
 typedef struct kcg_tag_M_TrainTrack_MessageHd_T_TM_radio_messages {
   kcg_bool valid;
-  kcg_int64 nid_message;
-  kcg_int64 l_message;
-  kcg_int64 t_train;
-  kcg_int64 nid_engine;
-  kcg_int64 field1;
-  kcg_int64 field2;
-  kcg_int64 field3;
+  kcg_int32 nid_message;
+  kcg_int32 l_message;
+  kcg_int32 t_train;
+  kcg_int32 nid_engine;
+  kcg_int32 field1;
+  kcg_int32 field2;
+  kcg_int32 field3;
 } M_TrainTrack_MessageHd_T_TM_radio_messages;
 
 /* DMI_Messages_EVC_to_DMI_Pkg::DMI_Icons_T/ */
@@ -5560,12 +5613,12 @@ typedef struct kcg_tag_DMI_Icons_T_DMI_Messages_EVC_to_DMI_Pkg {
   kcg_bool valid;
   T_internal_Type_Obu_BasicTypes_Pkg system_clock;
   Icon_control_flag_T_DMI_Types_Pkg DMI_m_icon_control_flag;
-  kcg_float64 DMI_m_icon_flashing_freq;
+  kcg_float32 DMI_m_icon_flashing_freq;
   Icon_group_T_DMI_Types_Pkg DMI_nid_icon_group;
-  kcg_int64 DMI_nid_icon_rank;
+  kcg_int32 DMI_nid_icon_rank;
   Area_group_T_DMI_Types_Pkg DMI_nid_area_group;
-  kcg_int64 DMI_nid_area_rank;
-  kcg_int64 DMI_nid_icon_identifier;
+  kcg_int32 DMI_nid_area_rank;
+  kcg_int32 DMI_nid_icon_identifier;
 } DMI_Icons_T_DMI_Messages_EVC_to_DMI_Pkg;
 
 /* Common_Types_Pkg::filterRelatedEvents_T/ */
@@ -5574,7 +5627,7 @@ typedef struct kcg_tag_filterRelatedEvents_T_Common_Types_Pkg {
   kcg_bool pendingL12L3Transition;
   kcg_bool pendingAckOfTrainDataFromRBC;
   kcg_bool emergencyStopAccepted;
-  kcg_int64 lastAckTextMessageId;
+  kcg_int32 lastAckTextMessageId;
   kcg_bool pendingNTCTransition;
   kcg_bool SPPAndGradientOnBoard;
   kcg_bool MACoverNotFullLength;
@@ -5583,14 +5636,14 @@ typedef struct kcg_tag_filterRelatedEvents_T_Common_Types_Pkg {
 /* TargetLimits_Pkg::TargetIteratorAkku/ */
 typedef struct kcg_tag_TargetIteratorAkku_TargetLimits_Pkg {
   L_internal_real_Type_SDM_Types_Pkg SBI2;
-  kcg_int64 index;
+  kcg_int32 index;
   TargetType_T_TargetManagement_types ttype;
   bec_t_TargetLimits_Pkg bec;
   V_internal_real_Type_SDM_Types_Pkg V_est;
   T_trac_t_TargetLimits_Pkg T;
   V_internal_real_Type_SDM_Types_Pkg V_ura;
   V_internal_real_Type_SDM_Types_Pkg V_P_MRDT_ebd;
-  kcg_int64 V_P_MRDT_index;
+  kcg_int32 V_P_MRDT_index;
 } TargetIteratorAkku_TargetLimits_Pkg;
 
 /* Receive_TrackSide_Msg_Pkg::BGCollector_T/ */
@@ -5601,44 +5654,44 @@ typedef struct kcg_tag_BGCollector_T_Receive_TrackSide_Msg_Pkg {
   NID_BG BG_ID;
   centerOfBalisePosition_T_BG_Types_Pkg balisePosition;
   centerOfBalisePosition_T_BG_Types_Pkg positionFirstContact;
-  kcg_int64 collectedTelegrams;
-  kcg_int64 totalTelegrams;
+  kcg_int32 collectedTelegrams;
+  kcg_int32 totalTelegrams;
 } BGCollector_T_Receive_TrackSide_Msg_Pkg;
 
-typedef struct kcg_tag_struct_492262 {
+typedef struct kcg_tag_struct_492005 {
   kcg_bool present;
-  kcg_int64 nid_message;
-  kcg_int64 t_train;
-  kcg_int64 nid_engine;
+  kcg_int32 nid_message;
+  kcg_int32 t_train;
+  kcg_int32 nid_engine;
   Q_MARQSTREASON xQ_MARQSTREASON;
-  kcg_int64 xT_TRAIN;
-  kcg_int64 xNID_EM;
+  kcg_int32 xT_TRAIN;
+  kcg_int32 xNID_EM;
   Q_EMERGENCYSTOP xQ_EMERGENCYSTOP;
-  kcg_int64 xNID_TEXTMESSAGE;
-} struct_492262;
+  kcg_int32 xNID_TEXTMESSAGE;
+} struct_492005;
 
 /* TM_transitional::Radio_TrainTrack_Header_T/ */
-typedef struct_492262 Radio_TrainTrack_Header_T_TM_transitional;
+typedef struct_492005 Radio_TrainTrack_Header_T_TM_transitional;
 
 /* Radio_Types_Pkg::Radio_TrainTrack_Header_T/ */
-typedef struct_492262 Radio_TrainTrack_Header_T_Radio_Types_Pkg;
+typedef struct_492005 Radio_TrainTrack_Header_T_Radio_Types_Pkg;
 
-typedef struct kcg_tag_struct_492127 {
+typedef struct kcg_tag_struct_491870 {
   kcg_bool valid;
   Q_DIR q_dir;
   Q_SCALE q_scale;
-  kcg_int64 d_rbctr;
-  kcg_int64 nid_c;
-  kcg_int64 nid_rbc;
+  kcg_int32 d_rbctr;
+  kcg_int32 nid_c;
+  kcg_int32 nid_rbc;
   kcg_int64 nid_radio;
   Q_SLEEPSESSION q_sleepsession;
-} struct_492127;
+} struct_491870;
 
 /* TM::P131_OBU_T/ */
-typedef struct_492127 P131_OBU_T_TM;
+typedef struct_491870 P131_OBU_T_TM;
 
 /* Packet_Types_Pkg::P131_RBCTransitionOrder_T/ */
-typedef struct_492127 P131_RBCTransitionOrder_T_Packet_Types_Pkg;
+typedef struct_491870 P131_RBCTransitionOrder_T_Packet_Types_Pkg;
 
 /* Handover_Pkg::p131_q_rbcTransitionOrder_T/ */
 typedef struct kcg_tag_p131_q_rbcTransitionOrder_T_Handover_Pkg {
@@ -5654,31 +5707,31 @@ typedef struct kcg_tag_p131_q_rbcTransitionOrder_T_Handover_Pkg {
 /* TM::P042_trackside_int_T/ */
 typedef struct kcg_tag_P042_trackside_int_T_TM {
   kcg_bool valid;
-  kcg_int64 NID_PACKET;
-  kcg_int64 Q_DIR;
-  kcg_int64 L_PACKET;
-  kcg_int64 Q_RBC;
-  kcg_int64 NID_C;
-  kcg_int64 NID_RBC;
-  kcg_int64 NID_RADIO;
-  kcg_int64 Q_SLEEPSESSION;
+  kcg_int32 NID_PACKET;
+  kcg_int32 Q_DIR;
+  kcg_int32 L_PACKET;
+  kcg_int32 Q_RBC;
+  kcg_int32 NID_C;
+  kcg_int32 NID_RBC;
+  kcg_int32 NID_RADIO;
+  kcg_int32 Q_SLEEPSESSION;
 } P042_trackside_int_T_TM;
 
 /* TM::P005_section_int_T/ */
 typedef struct kcg_tag_P005_section_int_T_TM {
-  kcg_int64 D_LINK;
-  kcg_int64 Q_NEWCOUNTRY;
-  kcg_int64 NID_C;
-  kcg_int64 NID_BG;
-  kcg_int64 Q_LINKORIENTATION;
-  kcg_int64 Q_LINKREACTION;
-  kcg_int64 Q_LOCACC;
+  kcg_int32 D_LINK;
+  kcg_int32 Q_NEWCOUNTRY;
+  kcg_int32 NID_C;
+  kcg_int32 NID_BG;
+  kcg_int32 Q_LINKORIENTATION;
+  kcg_int32 Q_LINKREACTION;
+  kcg_int32 Q_LOCACC;
 } P005_section_int_T_TM;
 
 /* TM::P005_OBU_sectionlist_int_T/, TM_conversions::C_P005_tracksim_compr/ */
 typedef P005_section_int_T_TM P005_OBU_sectionlist_int_T_TM[33];
 
-typedef P005_section_int_T_TM _42_array[1];
+typedef P005_section_int_T_TM _44_array[1];
 
 /* TM::P005_trackide_sectionlist_T/ */
 typedef P005_section_int_T_TM P005_trackide_sectionlist_T_TM[32];
@@ -5686,135 +5739,153 @@ typedef P005_section_int_T_TM P005_trackide_sectionlist_T_TM[32];
 /* TM::P057_trackside_int_T/ */
 typedef struct kcg_tag_P057_trackside_int_T_TM {
   kcg_bool valid;
-  kcg_int64 NID_PACKET;
-  kcg_int64 Q_DIR;
-  kcg_int64 L_PACKET;
-  kcg_int64 T_MAR;
-  kcg_int64 T_TIMEOUTRQST;
-  kcg_int64 T_CYCRQST;
+  kcg_int32 NID_PACKET;
+  kcg_int32 Q_DIR;
+  kcg_int32 L_PACKET;
+  kcg_int32 T_MAR;
+  kcg_int32 T_TIMEOUTRQST;
+  kcg_int32 T_CYCRQST;
 } P057_trackside_int_T_TM;
 
 /* TM_radio_messages::M_032_int_T/ */
 typedef struct kcg_tag_M_032_int_T_TM_radio_messages {
   kcg_bool valid;
-  kcg_int64 nid_message;
-  kcg_int64 l_message;
-  kcg_int64 t_train;
-  kcg_int64 m_ack;
-  kcg_int64 nid_lrbg;
-  kcg_int64 m_version;
+  kcg_int32 nid_message;
+  kcg_int32 l_message;
+  kcg_int32 t_train;
+  kcg_int32 m_ack;
+  kcg_int32 nid_lrbg;
+  kcg_int32 m_version;
 } M_032_int_T_TM_radio_messages;
 
 /* TM_radio_messages::M_008_int_T/ */
 typedef struct kcg_tag_M_008_int_T_TM_radio_messages {
   kcg_bool valid;
-  kcg_int64 nid_message;
-  kcg_int64 l_message;
-  kcg_int64 t_train;
-  kcg_int64 m_ack;
-  kcg_int64 nid_lrbg;
-  kcg_int64 t_train_received;
+  kcg_int32 nid_message;
+  kcg_int32 l_message;
+  kcg_int32 t_train;
+  kcg_int32 m_ack;
+  kcg_int32 nid_lrbg;
+  kcg_int32 t_train_received;
 } M_008_int_T_TM_radio_messages;
 
-typedef struct kcg_tag_struct_491925 {
+typedef struct kcg_tag_struct_491668 {
   kcg_bool valid;
-  kcg_int64 nid_message;
-  kcg_int64 l_message;
-  kcg_int64 t_train;
+  kcg_int32 nid_message;
+  kcg_int32 l_message;
+  kcg_int32 t_train;
   M_ACK m_ack;
-  kcg_int64 nid_lrbg;
-  kcg_int64 t_train_SH_request;
-} struct_491925;
+  kcg_int32 nid_lrbg;
+  kcg_int32 t_train_SH_request;
+} struct_491668;
 
 /* TM_radio_messages::M_028_T/ */
-typedef struct_491925 M_028_T_TM_radio_messages;
+typedef struct_491668 M_028_T_TM_radio_messages;
 
 /* TM_radio_messages::M_027_T/ */
-typedef struct_491925 M_027_T_TM_radio_messages;
+typedef struct_491668 M_027_T_TM_radio_messages;
 
-typedef struct kcg_tag_struct_491898 {
+typedef struct kcg_tag_struct_491641 {
   kcg_bool valid;
-  kcg_int64 nid_message;
-  kcg_int64 l_message;
-  kcg_int64 t_train;
+  kcg_int32 nid_message;
+  kcg_int32 l_message;
+  kcg_int32 t_train;
   M_ACK m_ack;
-  kcg_int64 nid_lrbg;
-  kcg_int64 nid_em;
-} struct_491898;
+  kcg_int32 nid_lrbg;
+  kcg_int32 nid_em;
+} struct_491641;
 
 /* TM_radio_messages::M_016_T/ */
-typedef struct_491898 M_016_T_TM_radio_messages;
+typedef struct_491641 M_016_T_TM_radio_messages;
 
 /* TM_radio_messages::M_018_T/ */
-typedef struct_491898 M_018_T_TM_radio_messages;
+typedef struct_491641 M_018_T_TM_radio_messages;
 
-/* CalculateTrainPosition_Pkg::BG_relocation_Pkg::linkedBG_index_T/ */
-typedef struct kcg_tag_linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg {
-  kcg_int64 previousLinkedBG_idx;
-  kcg_int64 currentIndex;
-  kcg_int64 subsequentLinkedBG_idx;
-} linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg;
+typedef kcg_int32 array_int32_350[350];
 
-/* CalculateTrainPosition_Pkg::BG_relocation_Pkg::findLinkedBGs/,
-   CalculateTrainPosition_Pkg::BG_relocation_Pkg::linkedBGs_indices_T/ */
-typedef linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg linkedBGs_indices_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg[41];
+typedef kcg_int32 array_int32_12[12];
 
-typedef struct kcg_tag_struct_491791 {
-  kcg_int64 NID_C;
-  kcg_int64 NID_BG;
-  kcg_int64 Pos;
-  OrBG_TM Or_BG;
-  OrLine_TM Or_Line;
-} struct_491791;
+/* TM::P021_section_int_T/ */
+typedef struct kcg_tag_P021_section_int_T_TM {
+  kcg_int32 D_GRADIENT;
+  kcg_int32 Q_GDIR;
+  kcg_int32 G_A;
+} P021_section_int_T_TM;
 
-/* Basics::BaliseGroupData/ */
-typedef struct_491791 BaliseGroupData_Basics;
+/* TM::P021_trackide_sectionlist_T/ */
+typedef P021_section_int_T_TM P021_trackide_sectionlist_T_TM[32];
 
-/* TM::BaliseGroupData/ */
-typedef struct_491791 BaliseGroupData_TM;
+typedef P021_section_int_T_TM _31_array[1];
 
-typedef struct kcg_tag_struct_491646 {
-  kcg_int64 radioDevice;
-  kcg_int64 receivedSystemTime;
-  kcg_int64 nid_message;
-  kcg_int64 t_train;
+/* TM::P021_OBU_sectionlist_int_T/, TM_conversions::C_P021_tracksim_compr/ */
+typedef P021_section_int_T_TM P021_OBU_sectionlist_int_T_TM[33];
+
+typedef kcg_int32 array_int32_15[15];
+
+/* TM::Array15/ */
+typedef array_int32_15 Array15_TM;
+
+/* Packet_TrainTypes_Pkg::telephoneNumber_T/ */
+typedef array_int32_15 telephoneNumber_T_Packet_TrainTypes_Pkg;
+
+/* Packet_TrainTypes_Pkg::sNID_RADIO_T/ */
+typedef struct kcg_tag_sNID_RADIO_T_Packet_TrainTypes_Pkg {
+  kcg_bool valid;
+  telephoneNumber_T_Packet_TrainTypes_Pkg telephoneNumber;
+} sNID_RADIO_T_Packet_TrainTypes_Pkg;
+
+/* Packet_TrainTypes_Pkg::aNID_RADIO_T/ */
+typedef sNID_RADIO_T_Packet_TrainTypes_Pkg aNID_RADIO_T_Packet_TrainTypes_Pkg[1];
+
+/* Packet_TrainTypes_Pkg::PT3_OnboardTelephoneNumbers_T/ */
+typedef struct kcg_tag_PT3_OnboardTelephoneNumbers_T_Packet_TrainTypes_Pkg {
+  kcg_bool valid;
+  kcg_int32 number;
+  aNID_RADIO_T_Packet_TrainTypes_Pkg aNID_RADIO;
+} PT3_OnboardTelephoneNumbers_T_Packet_TrainTypes_Pkg;
+
+typedef struct kcg_tag_struct_491368 {
+  kcg_int32 radioDevice;
+  kcg_int32 receivedSystemTime;
+  kcg_int32 nid_message;
+  kcg_int32 t_train;
   M_ACK m_ack;
-  kcg_int64 nid_lrbg;
-  kcg_int64 t_train_reference;
-  kcg_int64 nid_em;
+  kcg_int32 nid_lrbg;
+  kcg_int32 t_train_reference;
+  kcg_int32 nid_em;
   Q_SCALE q_scale;
-  kcg_int64 d_sr;
-  kcg_int64 t_sh_rqst;
-  kcg_int64 d_ref;
+  kcg_int32 d_sr;
+  kcg_int32 t_sh_rqst;
+  kcg_int32 d_ref;
   Q_DIR q_dir;
-  kcg_int64 d_emergencystop;
+  kcg_int32 d_emergencystop;
   M_VERSION m_version;
-} struct_491646;
+} struct_491368;
 
 /* TM_transitional::Radio_TrackTrain_Header_T/ */
-typedef struct_491646 Radio_TrackTrain_Header_T_TM_transitional;
+typedef struct_491368 Radio_TrackTrain_Header_T_TM_transitional;
 
 /* Radio_Types_Pkg::Radio_TrackTrain_Header_T/ */
-typedef struct_491646 Radio_TrackTrain_Header_T_Radio_Types_Pkg;
+typedef struct_491368 Radio_TrackTrain_Header_T_Radio_Types_Pkg;
 
 /* TrainToTrack::Position_Report/ */
 typedef struct kcg_tag_Position_Report_TrainToTrack {
-  kcg_int64 NID_PACKET;
-  kcg_int64 L_PACKET;
+  kcg_int32 NID_PACKET;
+  kcg_int32 L_PACKET;
   Q_SCALE qscale;
-  kcg_int64 NID_LRBG;
-  kcg_int64 D_LRBG;
+  kcg_int32 NID_LRBG;
+  kcg_int32 D_LRBG;
   Q_DIRLRBG dirlrbg;
   Q_DLRBG dlrbg;
-  kcg_int64 L_DOUBTOVER;
-  kcg_int64 L_DOUBTUNDER;
+  kcg_int32 L_DOUBTOVER;
+  kcg_int32 L_DOUBTUNDER;
   Q_LENGTH length;
-  kcg_int64 L_TRAININT;
-  kcg_int64 V_TRAIN;
+  kcg_int32 L_TRAININT;
+  kcg_int32 V_TRAIN;
   Q_DIRTRAIN dirtrain;
   M_MODE mode;
   M_LEVEL level;
-  kcg_int64 NID_NTC;
+  kcg_int32 NID_NTC;
 } Position_Report_TrainToTrack;
 
 /* Packet_TrainTypes_Pkg::PT0_PositionReport_T/ */
@@ -5825,23 +5896,23 @@ typedef struct kcg_tag_PT0_PositionReport_T_Packet_TrainTypes_Pkg {
 
 /* TrainToTrack::Position_Report_based_on_two_balise_groups/ */
 typedef struct kcg_tag_Position_Report_based_on_two_balise_groups_TrainToTrack {
-  kcg_int64 NID_PACKET;
-  kcg_int64 L_PACKET;
+  kcg_int32 NID_PACKET;
+  kcg_int32 L_PACKET;
   Q_SCALE qscale;
-  kcg_int64 NID_LRBG;
-  kcg_int64 NID_PRVLRBG;
-  kcg_int64 D_LRBG;
+  kcg_int32 NID_LRBG;
+  kcg_int32 NID_PRVLRBG;
+  kcg_int32 D_LRBG;
   Q_DIRLRBG dirlrbg;
   Q_DLRBG dlrbg;
-  kcg_int64 L_DOUBTOVER;
-  kcg_int64 L_DOUBTUNDER;
+  kcg_int32 L_DOUBTOVER;
+  kcg_int32 L_DOUBTUNDER;
   Q_LENGTH length;
-  kcg_int64 L_TRAININT;
-  kcg_int64 V_TRAIN;
+  kcg_int32 L_TRAININT;
+  kcg_int32 V_TRAIN;
   Q_DIRTRAIN dirtrain;
   M_MODE mode;
   M_LEVEL level;
-  kcg_int64 NID_NTC;
+  kcg_int32 NID_NTC;
 } Position_Report_based_on_two_balise_groups_TrainToTrack;
 
 /* Packet_TrainTypes_Pkg::PT1_PositionReport_2BG_T/ */
@@ -5850,202 +5921,382 @@ typedef struct kcg_tag_PT1_PositionReport_2BG_T_Packet_TrainTypes_Pkg {
   Position_Report_based_on_two_balise_groups_TrainToTrack packet1;
 } PT1_PositionReport_2BG_T_Packet_TrainTypes_Pkg;
 
+/* RCM_Session_Types_Pkg::morc_configData_T/ */
+typedef struct kcg_tag_morc_configData_T_RCM_Session_Types_Pkg {
+  P45_RadioNetworkRegistration_T_Packet_Types_Pkg radioNetworkID_Default;
+  NID_RADIO nid_radio_shortNumberStoredOnboard;
+  kcg_int32 noOfRetriesOfSendingTerminationMessage;
+  T_internal_Type_Obu_BasicTypes_Pkg maxWaitingTimeForAckMessageReceived;
+  T_internal_Type_Obu_BasicTypes_Pkg maxWaitingTimeUntilTerminationOrderReceived;
+  kcg_int32 noOfRetriesUntilTerminationOrderIsReceived;
+  T_internal_Type_Obu_BasicTypes_Pkg connectionStatusTimerInterval;
+  PT3_OnboardTelephoneNumbers_T_Packet_TrainTypes_Pkg onboardPhoneNumbers;
+  NID_ENGINE nid_engine;
+  T_internal_Type_Obu_BasicTypes_Pkg maxTimeToMaintainCommSession;
+  kcg_int32 noOfTriesToEstablishASafeRadioConnection;
+} morc_configData_T_RCM_Session_Types_Pkg;
+
 /* TM::Radio_TrackTrain_Header_T/ */
 typedef struct kcg_tag_Radio_TrackTrain_Header_T_TM {
-  kcg_int64 radioDevice;
-  kcg_int64 receivedSystemTime;
-  kcg_int64 nid_message;
-  kcg_int64 t_train;
-  kcg_int64 m_ack;
-  kcg_int64 nid_lrbg;
-  kcg_int64 t_train_reference;
-  kcg_int64 nid_em;
-  kcg_int64 q_scale;
-  kcg_int64 d_sr;
-  kcg_int64 t_sh_rqst;
-  kcg_int64 d_ref;
-  kcg_int64 q_dir;
-  kcg_int64 d_emergencystop;
-  kcg_int64 m_version;
+  kcg_int32 radioDevice;
+  kcg_int32 receivedSystemTime;
+  kcg_int32 nid_message;
+  kcg_int32 t_train;
+  kcg_int32 m_ack;
+  kcg_int32 nid_lrbg;
+  kcg_int32 t_train_reference;
+  kcg_int32 nid_em;
+  kcg_int32 q_scale;
+  kcg_int32 d_sr;
+  kcg_int32 t_sh_rqst;
+  kcg_int32 d_ref;
+  kcg_int32 q_dir;
+  kcg_int32 d_emergencystop;
+  kcg_int32 m_version;
 } Radio_TrackTrain_Header_T_TM;
 
 /* TM::BaliseTelegramHeader_int_T/ */
 typedef struct kcg_tag_BaliseTelegramHeader_int_T_TM {
-  kcg_int64 q_updown;
-  kcg_int64 m_version;
-  kcg_int64 q_media;
-  kcg_int64 n_pig;
-  kcg_int64 n_total;
-  kcg_int64 m_dup;
-  kcg_int64 m_mcount;
-  kcg_int64 nid_c;
-  kcg_int64 nid_bg;
-  kcg_int64 q_link;
+  kcg_int32 q_updown;
+  kcg_int32 m_version;
+  kcg_int32 q_media;
+  kcg_int32 n_pig;
+  kcg_int32 n_total;
+  kcg_int32 m_dup;
+  kcg_int32 m_mcount;
+  kcg_int32 nid_c;
+  kcg_int32 nid_bg;
+  kcg_int32 q_link;
 } BaliseTelegramHeader_int_T_TM;
 
 /* TM::P005_trackside_int_T/ */
 typedef struct kcg_tag_P005_trackside_int_T_TM {
   kcg_bool valid;
-  kcg_int64 NID_PACKET;
-  kcg_int64 Q_DIR;
-  kcg_int64 L_PACKET;
-  kcg_int64 Q_SCALE;
-  kcg_int64 D_LINK;
-  kcg_int64 Q_NEWCOUNTRY;
-  kcg_int64 NID_C;
-  kcg_int64 NID_BG;
-  kcg_int64 Q_LINKORIENTATION;
-  kcg_int64 Q_LINKREACTION;
-  kcg_int64 Q_LOCACC;
-  kcg_int64 N_ITER;
+  kcg_int32 NID_PACKET;
+  kcg_int32 Q_DIR;
+  kcg_int32 L_PACKET;
+  kcg_int32 Q_SCALE;
+  kcg_int32 D_LINK;
+  kcg_int32 Q_NEWCOUNTRY;
+  kcg_int32 NID_C;
+  kcg_int32 NID_BG;
+  kcg_int32 Q_LINKORIENTATION;
+  kcg_int32 Q_LINKREACTION;
+  kcg_int32 Q_LOCACC;
+  kcg_int32 N_ITER;
   P005_trackide_sectionlist_T_TM SECTIONS;
 } P005_trackside_int_T_TM;
+
+/* TM::P021_trackside_int_T/ */
+typedef struct kcg_tag_P021_trackside_int_T_TM {
+  kcg_bool valid;
+  kcg_int32 NID_PACKET;
+  kcg_int32 Q_DIR;
+  kcg_int32 L_PACKET;
+  kcg_int32 Q_SCALE;
+  kcg_int32 D_GRADIENT;
+  kcg_int32 Q_GDIR;
+  kcg_int32 G_A;
+  kcg_int32 N_ITER;
+  P021_trackide_sectionlist_T_TM SECTIONS;
+} P021_trackside_int_T_TM;
+
+/* TM::P015_trackside_int_T/ */
+typedef struct kcg_tag_P015_trackside_int_T_TM {
+  kcg_bool valid;
+  kcg_int32 NID_PACKET;
+  kcg_int32 Q_DIR;
+  kcg_int32 L_PACKET;
+  kcg_int32 Q_SCALE;
+  kcg_int32 V_LOA;
+  kcg_int32 T_LOA;
+  kcg_int32 N_ITER;
+  P015_trackide_sectionlist_T_TM SECTIONS;
+  kcg_int32 L_ENDSECTION;
+  kcg_int32 Q_SECTIONTIMER;
+  kcg_int32 T_SECTIONTIMER;
+  kcg_int32 D_SECTIONTIMERSTOPLOC;
+  kcg_int32 Q_ENDTIMER;
+  kcg_int32 T_ENDTIMER;
+  kcg_int32 D_ENDTIMERSTARTLOC;
+  kcg_int32 Q_DANGERPOINT;
+  kcg_int32 D_DP;
+  kcg_int32 V_RELEASEDP;
+  kcg_int32 Q_OVERLAP;
+  kcg_int32 D_STARTOL;
+  kcg_int32 T_OL;
+  kcg_int32 D_OL;
+  kcg_int32 V_RELEASEOL;
+} P015_trackside_int_T_TM;
 
 /* TM_radio_messages::M_TrackTrain_Radio_T/ */
 typedef struct kcg_tag_M_TrackTrain_Radio_T_TM_radio_messages {
   kcg_bool valid;
-  kcg_int64 nid_message;
-  kcg_int64 l_message;
-  kcg_int64 t_train;
-  kcg_int64 field1;
-  kcg_int64 field2;
-  kcg_int64 field3;
-  kcg_int64 field4;
-  kcg_int64 field5;
-  kcg_int64 field6;
-  kcg_int64 field7;
-  kcg_int64 field8;
+  kcg_int32 nid_message;
+  kcg_int32 l_message;
+  kcg_int32 t_train;
+  kcg_int32 field1;
+  kcg_int32 field2;
+  kcg_int32 field3;
+  kcg_int32 field4;
+  kcg_int32 field5;
+  kcg_int32 field6;
+  kcg_int32 field7;
+  kcg_int32 field8;
 } M_TrackTrain_Radio_T_TM_radio_messages;
 
 /* TM_radio_messages::M_015_int_T/ */
 typedef struct kcg_tag_M_015_int_T_TM_radio_messages {
   kcg_bool valid;
-  kcg_int64 nid_message;
-  kcg_int64 l_message;
-  kcg_int64 t_train;
-  kcg_int64 m_ack;
-  kcg_int64 nid_lrbg;
-  kcg_int64 nid_em;
-  kcg_int64 q_scale;
-  kcg_int64 d_ref;
-  kcg_int64 q_dir;
-  kcg_int64 d_emergencystop;
+  kcg_int32 nid_message;
+  kcg_int32 l_message;
+  kcg_int32 t_train;
+  kcg_int32 m_ack;
+  kcg_int32 nid_lrbg;
+  kcg_int32 nid_em;
+  kcg_int32 q_scale;
+  kcg_int32 d_ref;
+  kcg_int32 q_dir;
+  kcg_int32 d_emergencystop;
 } M_015_int_T_TM_radio_messages;
 
 /* TM::P065_trackside_int_T/ */
 typedef struct kcg_tag_P065_trackside_int_T_TM {
   kcg_bool valid;
-  kcg_int64 NID_PACKET;
-  kcg_int64 Q_DIR;
-  kcg_int64 L_PACKET;
-  kcg_int64 Q_SCALE;
-  kcg_int64 NID_TSR;
-  kcg_int64 D_TSR;
-  kcg_int64 L_TSR;
-  kcg_int64 Q_FRONT;
-  kcg_int64 V_TSR;
+  kcg_int32 NID_PACKET;
+  kcg_int32 Q_DIR;
+  kcg_int32 L_PACKET;
+  kcg_int32 Q_SCALE;
+  kcg_int32 NID_TSR;
+  kcg_int32 D_TSR;
+  kcg_int32 L_TSR;
+  kcg_int32 Q_FRONT;
+  kcg_int32 V_TSR;
 } P065_trackside_int_T_TM;
 
-typedef kcg_int64 array_int64_72[72];
+typedef kcg_int32 array_int32_6[6];
 
-typedef struct kcg_tag_struct_489524 {
-  M_VOLTAGE m_voltage;
-  kcg_int64 nid_ctraction;
-} struct_489524;
+/* TM::Array06/ */
+typedef array_int32_6 Array06_TM;
 
-/* TM_TrainToTrack::P011_voltage/ */
-typedef struct_489524 P011_voltage_TM_TrainToTrack;
+/* SDMConversionModelPkg::v_BrakeSteps_t/ */
+typedef array_int32_6 v_BrakeSteps_t_SDMConversionModelPkg;
 
-/* Packet_TrainTypes_Pkg::sTractionIdentity_T/ */
-typedef struct_489524 sTractionIdentity_T_Packet_TrainTypes_Pkg;
+/* SDMConversionModelPkg::a_BrakeSteps_t/ */
+typedef array_int32_6 a_BrakeSteps_t_SDMConversionModelPkg;
 
-typedef struct_489524 _14_array[4];
+/* SDMConversionModelPkg::av_Map_t/ */
+typedef struct kcg_tag_av_Map_t_SDMConversionModelPkg {
+  a_BrakeSteps_t_SDMConversionModelPkg a;
+  v_BrakeSteps_t_SDMConversionModelPkg v;
+} av_Map_t_SDMConversionModelPkg;
 
-/* TM_TrainToTrack::P011_voltage_list/ */
-typedef _14_array P011_voltage_list_TM_TrainToTrack;
+typedef av_Map_t_SDMConversionModelPkg _75_array[13];
 
-/* Packet_TrainTypes_Pkg::aTractionIdentity_T/ */
-typedef _14_array aTractionIdentity_T_Packet_TrainTypes_Pkg;
+/* SDMConversionModelPkg::a_Brake_t/ */
+typedef struct kcg_tag_a_Brake_t_SDMConversionModelPkg {
+  av_Map_t_SDMConversionModelPkg emergency;
+  av_Map_t_SDMConversionModelPkg service;
+} a_Brake_t_SDMConversionModelPkg;
 
-/* TM::P046_sections_array_flat_T/, TM_conversions::C_P046_compr_onboard/ */
-typedef kcg_int64 P046_sections_array_flat_T_TM[66];
+typedef array_int32_6 array_int32_6_221[221];
 
-typedef P046_sections_array_flat_T_TM array_int64_66_33[33];
+/* InfraLib::TrainPosRaw_T/ */
+typedef struct kcg_tag_TrainPosRaw_T_InfraLib {
+  kcg_float32 TrainPos_in;
+  kcg_int32 OffsetTotal;
+  kcg_float32 TrainPosCalibrated;
+} TrainPosRaw_T_InfraLib;
 
-typedef kcg_int64 array_int64_395[395];
+typedef kcg_int32 array_int32_261[261];
+
+/* DATA::DMI_Identifier_int_array_T/ */
+typedef array_int32_261 DMI_Identifier_int_array_T_DATA;
+
+/* DATA::DMI_Identifier_Request_int_array_T/ */
+typedef array_int32_261 DMI_Identifier_Request_int_array_T_DATA;
+
+/* API_DMI_Pkg::EVC_to_DMI_Message_int_T/, Messages::CAST_EVC_to_DMI_to_int/ */
+typedef kcg_int32 EVC_to_DMI_Message_int_T_API_DMI_Pkg[999];
+
+typedef kcg_int32 array_int32_9[9];
+
+/* TM::Array09/ */
+typedef array_int32_9 Array09_TM;
+
+/* DATA::DriverIdentifier_INT_T/ */
+typedef array_int32_9 DriverIdentifier_INT_T_DATA;
+
+/* DATA::DMI_Icons_int_array_T/ */
+typedef array_int32_9 DMI_Icons_int_array_T_DATA;
+
+/* DATA::DMI_Train_Data_int_array_T/ */
+typedef array_int32_9 DMI_Train_Data_int_array_T_DATA;
+
+/* DATA::DMI_EVC_Coded_Train_Data_int_array_T/ */
+typedef array_int32_9 DMI_EVC_Coded_Train_Data_int_array_T_DATA;
+
+/* DATA::DMI_TEXT_INT_Array_T/,
+   DATA::Packets::DMI_to_EVC::C_int_to_DMI_identifier/,
+   DATA::Packets::EVC_to_DMI::CAST_Int_to_DMI_Text_Message1/,
+   DATA::Packets::EVC_to_DMI::CAST_int_to_DMI_Identifier_Request1/,
+   DATA::Variables::CAST_DMI_TEXT_to_int/ */
+typedef kcg_int32 DMI_TEXT_INT_Array_T_DATA[255];
+
+typedef struct kcg_tag_struct_489123 {
+  kcg_bool valid;
+  kcg_int32 v_nvkvint_k_m;
+  kcg_float32 m_nvkvint_km_12;
+  kcg_float32 m_nvkvint_km_23;
+} struct_489123;
+
+/* TM::P003_OBU_k_m_section_enum_T/ */
+typedef struct_489123 P003_OBU_k_m_section_enum_T_TM;
+
+/* TM_baseline2::P203V1_OBU_k_m_section_enum_T/ */
+typedef struct_489123 P203V1_OBU_k_m_section_enum_T_TM_baseline2;
+
+typedef struct_489123 _66_array[32];
+
+/* TM::P003_OBU_k_m_sectionlist_enum_T/ */
+typedef _66_array P003_OBU_k_m_sectionlist_enum_T_TM;
+
+/* TM_baseline2::P203V1_OBU_k_m_sectionlist_enum_T/ */
+typedef _66_array P203V1_OBU_k_m_sectionlist_enum_T_TM_baseline2;
+
+typedef struct kcg_tag_struct_492256 {
+  kcg_bool valid;
+  Q_NVKVINTSET q_nvkvintset_k;
+  kcg_float32 a_nvp12_k;
+  kcg_float32 a_nvp23_k;
+  kcg_int32 v_nvkvint_k;
+  kcg_float32 m_nvkvint_k_12;
+  kcg_float32 m_nvkvint_k_23;
+  kcg_int32 n_iter_k_m;
+  _66_array n_iter_k_m_list;
+} struct_492256;
+
+/* TM::P003_OBU_k_section_enum_T/ */
+typedef struct_492256 P003_OBU_k_section_enum_T_TM;
+
+/* TM_baseline2::P203V1_OBU_k_section_enum_T/ */
+typedef struct_492256 P203V1_OBU_k_section_enum_T_TM_baseline2;
+
+typedef struct_492256 _8_array[32];
+
+/* TM::P003_OBU_k_sectionlist_enum_T/ */
+typedef _8_array P003_OBU_k_sectionlist_enum_T_TM;
+
+/* TM_baseline2::P203V1_OBU_k_sectionlist_enum_T/ */
+typedef _8_array P203V1_OBU_k_sectionlist_enum_T_TM_baseline2;
+
+typedef kcg_int32 array_int32_3[3];
+
+/* TM::P041_section_array_T/ */
+typedef array_int32_3 P041_section_array_T_TM;
+
+/* TM_TrainToTrack::Array03/ */
+typedef array_int32_3 Array03_TM_TrainToTrack;
+
+/* TM::P021_section_array_T/ */
+typedef array_int32_3 P021_section_array_T_TM;
+
+/* TM_TrainToTrack::P009_TrainTrack_int/ */
+typedef array_int32_3 P009_TrainTrack_int_TM_TrainToTrack;
+
+/* TM_TrainToTrack::P005_TrainTrack_int/ */
+typedef array_int32_3 P005_TrainTrack_int_TM_TrainToTrack;
+
+/* TM_TrainToTrack::P004_TrainTrack_int/ */
+typedef array_int32_3 P004_TrainTrack_int_TM_TrainToTrack;
+
+/* TM::Array03/ */
+typedef array_int32_3 Array03_TM;
+
+/* DATA::DMI_Icon_Ack_int_array_T/ */
+typedef array_int32_3 DMI_Icon_Ack_int_array_T_DATA;
+
+/* DATA::DMI_Train_Data_Ack_int_array_T/ */
+typedef array_int32_3 DMI_Train_Data_Ack_int_array_T_DATA;
+
+/* DATA::DMI_Driver_Request_int_array_T/ */
+typedef array_int32_3 DMI_Driver_Request_int_array_T_DATA;
+
+/* DATA::DMI_Adhesion_Factor_Data_int_array_T/ */
+typedef array_int32_3 DMI_Adhesion_Factor_Data_int_array_T_DATA;
+
+/* DATA::DMI_Train_Running_Number_int_array_T/ */
+typedef array_int32_3 DMI_Train_Running_Number_int_array_T_DATA;
+
+/* DATA::DMI_EVC_Radio_Net_Data_int_array_T/ */
+typedef array_int32_3 DMI_EVC_Radio_Net_Data_int_array_T_DATA;
+
+/* DATA::DMI_Display_Control_int_array_T/ */
+typedef array_int32_3 DMI_Display_Control_int_array_T_DATA;
+
+/* DATA::DMI_System_Version_int_array_T/ */
+typedef array_int32_3 DMI_System_Version_int_array_T_DATA;
+
+/* DATA::DMI_Entry_Request_int_array_T/ */
+typedef array_int32_3 DMI_Entry_Request_int_array_T_DATA;
+
+/* DATA::DMI_Menu_Request_int_array_T/ */
+typedef array_int32_3 DMI_Menu_Request_int_array_T_DATA;
+
+typedef array_int32_3 array_int32_3_33[33];
+
+/* TM::P041_OBU_sectionlist_array_T/ */
+typedef array_int32_3_33 P041_OBU_sectionlist_array_T_TM;
+
+/* TM::P021_OBU_sectionlist_array_T/ */
+typedef array_int32_3_33 P021_OBU_sectionlist_array_T_TM;
+
+typedef array_int32_3_33 array_int32_3_33_99[99];
+
+typedef array_int32_3_33 array_int32_3_33_231[231];
+
+/* RCM_Types_Pkg::mobileRegistrationCmd_T/ */
+typedef struct kcg_tag_mobileRegistrationCmd_T_RCM_Types_Pkg {
+  kcg_bool valid;
+  kcg_int32 mobileDeviceNo;
+  mobileRegistrationAction_T_RCM_Types_Pkg action;
+  NID_MN network_id;
+} mobileRegistrationCmd_T_RCM_Types_Pkg;
 
 /* CalcBrakingCurves_Pkg::BCAccumulator_type/ */
 typedef struct kcg_tag_BCAccumulator_type_CalcBrakingCurves_Pkg {
   L_internal_real_Type_SDM_Types_Pkg distance;
   V_internal_real_Type_SDM_Types_Pkg speed;
-  kcg_int64 distanceIndex;
-  kcg_int64 speedIndex;
+  kcg_int32 distanceIndex;
+  kcg_int32 speedIndex;
   ParabolaCurve_T_CalcBrakingCurves_types BC;
 } BCAccumulator_type_CalcBrakingCurves_Pkg;
 
+typedef kcg_int32 array_int32_492[492];
+
 /* TA_Export::MRSP_reduction_acc/ */
 typedef struct kcg_tag_MRSP_reduction_acc_TA_Export {
-  kcg_int64 write_index;
+  kcg_int32 write_index;
   MRSP_Profile_t_TrackAtlasTypes MRSP;
 } MRSP_reduction_acc_TA_Export;
 
-/* TargetManagement_pkg::extractTargetsMRSPACC/ */
-typedef struct kcg_tag_extractTargetsMRSPACC_TargetManagement_pkg {
-  Target_list_MRSP_real_T_TargetManagement_types targetList;
-  kcg_int64 lastInsertedTargetIndex;
-} extractTargetsMRSPACC_TargetManagement_pkg;
+typedef kcg_int32 array_int32_990[990];
 
-/* TM::P015_section_int_T/ */
-typedef struct kcg_tag_P015_section_int_T_TM {
-  kcg_int64 L_SECTION;
-  kcg_int64 Q_SECTIONTIMER;
-  kcg_int64 T_SECTIONTIMER;
-  kcg_int64 D_SECTIONTIMERSTOPLOC;
-} P015_section_int_T_TM;
-
-typedef P015_section_int_T_TM _61_array[32];
-
-/* TM::P015_OBU_sectionlist_int_T/ */
-typedef _61_array P015_OBU_sectionlist_int_T_TM;
-
-/* TM::P015_trackide_sectionlist_T/ */
-typedef _61_array P015_trackide_sectionlist_T_TM;
-
-/* TM::P015_trackside_int_T/ */
-typedef struct kcg_tag_P015_trackside_int_T_TM {
+/* DMI_Messages_DMI_to_EVC_Pkg::DMI_Status_T/ */
+typedef struct kcg_tag_DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg {
   kcg_bool valid;
-  kcg_int64 NID_PACKET;
-  kcg_int64 Q_DIR;
-  kcg_int64 L_PACKET;
-  kcg_int64 Q_SCALE;
-  kcg_int64 V_LOA;
-  kcg_int64 T_LOA;
-  kcg_int64 N_ITER;
-  P015_trackide_sectionlist_T_TM SECTIONS;
-  kcg_int64 L_ENDSECTION;
-  kcg_int64 Q_SECTIONTIMER;
-  kcg_int64 T_SECTIONTIMER;
-  kcg_int64 D_SECTIONTIMERSTOPLOC;
-  kcg_int64 Q_ENDTIMER;
-  kcg_int64 T_ENDTIMER;
-  kcg_int64 D_ENDTIMERSTARTLOC;
-  kcg_int64 Q_DANGERPOINT;
-  kcg_int64 D_DP;
-  kcg_int64 V_RELEASEDP;
-  kcg_int64 Q_OVERLAP;
-  kcg_int64 D_STARTOL;
-  kcg_int64 T_OL;
-  kcg_int64 D_OL;
-  kcg_int64 V_RELEASEOL;
-} P015_trackside_int_T_TM;
+  T_internal_Type_Obu_BasicTypes_Pkg systemTime;
+  DMI_StatusSet_T_DMI_Types_Pkg statusSet;
+  kcg_int32 nAlive;
+} DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg;
 
-typedef kcg_int64 array_int64_964[964];
+typedef kcg_int32 array_int32_68[68];
 
-typedef kcg_int64 array_int64_48[48];
+typedef kcg_int32 array_int32_987[987];
 
 /* DMI_Types_Pkg::DMI_LevelList_T/ */
 typedef struct kcg_tag_DMI_LevelList_T_DMI_Types_Pkg {
-  kcg_int64 number;
+  kcg_int32 number;
   DMI_level_array_T_DMI_Types_Pkg levelList;
 } DMI_LevelList_T_DMI_Types_Pkg;
 
@@ -6066,809 +6317,89 @@ typedef struct kcg_tag_DMI_EVC_Level_Data_T_DMI_Messages_EVC_to_DMI_Pkg {
 
 /* DMI_Types_Pkg::DMI_trackCondition_T/ */
 typedef struct kcg_tag_DMI_trackCondition_T_DMI_Types_Pkg {
-  kcg_int64 nIter;
+  kcg_int32 nIter;
   DMI_trackConditionArray_T_DMI_Types_Pkg trackCondition;
 } DMI_trackCondition_T_DMI_Types_Pkg;
 
-typedef kcg_int64 array_int64_961[961];
+typedef kcg_int32 array_int32_978[978];
 
-typedef kcg_int64 array_int64_128[128];
+typedef struct kcg_tag_struct_488685 {
+  kcg_int32 now;
+  kcg_int32 distance;
+} struct_488685;
 
-/* TM::P015_sections_array_flat_T/ */
-typedef array_int64_128 P015_sections_array_flat_T_TM;
+/* TIU_Types_Pkg::D_test_trackinit_T/ */
+typedef struct_488685 D_test_trackinit_T_TIU_Types_Pkg;
 
-/* TM::P012_sections_array_flat_T/ */
-typedef array_int64_128 P012_sections_array_flat_T_TM;
+/* TIU_Types_Pkg::L_test_trackcond_T/ */
+typedef struct_488685 L_test_trackcond_T_TIU_Types_Pkg;
 
-typedef array_int64_128 array_int64_128_32[32];
+/* TIU_Types_Pkg::D_test_trackcond_T/ */
+typedef struct_488685 D_test_trackcond_T_TIU_Types_Pkg;
 
-/* TM::P046_section_int_T/ */
-typedef struct kcg_tag_P046_section_int_T_TM {
-  kcg_int64 M_LEVELTR;
-  kcg_int64 NID_NTC;
-} P046_section_int_T_TM;
+/* TIU_Types_Pkg::nothing_to_resume_profile_follow_T/ */
+typedef struct kcg_tag_nothing_to_resume_profile_follow_T_TIU_Types_Pkg {
+  D_test_trackcond_T_TIU_Types_Pkg d_test_trackcond;
+  L_test_trackcond_T_TIU_Types_Pkg l_test_trackcond;
+  M_trackcond_T_TIU_Types_Pkg m_trackcond;
+} nothing_to_resume_profile_follow_T_TIU_Types_Pkg;
 
-/* TM::P046_trackide_sectionlist_T/ */
-typedef P046_section_int_T_TM P046_trackide_sectionlist_T_TM[32];
-
-/* TM::P046_trackside_int_T/ */
-typedef struct kcg_tag_P046_trackside_int_T_TM {
+/* TIU_Types_Pkg::Type_I_train_and_brake_inhibition_with_distance_commands_T/ */
+typedef struct kcg_tag_Type_I_train_and_brake_inhibition_with_distance_commands_T_TIU_Types_Pkg {
   kcg_bool valid;
-  kcg_int64 NID_PACKET;
-  kcg_int64 Q_DIR;
-  kcg_int64 L_PACKET;
-  kcg_int64 M_LEVELTR;
-  kcg_int64 NID_NTC;
-  kcg_int64 N_ITER;
-  P046_trackide_sectionlist_T_TM SECTIONS;
-} P046_trackside_int_T_TM;
+  nothing_to_resume_profile_follow_T_TIU_Types_Pkg nothing_to_resume_profile_follow;
+  D_test_trackinit_T_TIU_Types_Pkg empty_profile_initial_state_to_be_resumed;
+} Type_I_train_and_brake_inhibition_with_distance_commands_T_TIU_Types_Pkg;
 
-typedef P046_section_int_T_TM _30_array[1];
+/* TIU_Types_Pkg::D_test_current_T/ */
+typedef struct_488685 D_test_current_T_TIU_Types_Pkg;
 
-/* TM::P046_OBU_sectionlist_int_T/, TM_conversions::C_P046_tracksim_compr/ */
-typedef P046_section_int_T_TM P046_OBU_sectionlist_int_T_TM[33];
-
-typedef kcg_int64 array_int64_131[131];
-
-/* TIU_Types_Pkg::Passenger_door_control_info_T/ */
-typedef struct kcg_tag_Passenger_door_control_info_T_TIU_Types_Pkg {
+/* TIU_Types_Pkg::Change_of_allowed_current_consumption_T/ */
+typedef struct kcg_tag_Change_of_allowed_current_consumption_T_TIU_Types_Pkg {
   kcg_bool valid;
-  kcg_int64 door_control_info;
-} Passenger_door_control_info_T_TIU_Types_Pkg;
+  D_test_current_T_TIU_Types_Pkg d_test_current;
+  M_current_T_TIU_Types_Pkg m_current;
+} Change_of_allowed_current_consumption_T_TIU_Types_Pkg;
 
-/* TM::P021_section_int_T/ */
-typedef struct kcg_tag_P021_section_int_T_TM {
-  kcg_int64 D_GRADIENT;
-  kcg_int64 Q_GDIR;
-  kcg_int64 G_A;
-} P021_section_int_T_TM;
+/* TIU_Types_Pkg::D_test_traction_T/ */
+typedef struct_488685 D_test_traction_T_TIU_Types_Pkg;
 
-/* TM::P021_trackide_sectionlist_T/ */
-typedef P021_section_int_T_TM P021_trackide_sectionlist_T_TM[32];
-
-/* TM::P021_trackside_int_T/ */
-typedef struct kcg_tag_P021_trackside_int_T_TM {
+/* TIU_Types_Pkg::Change_traction_system_T/ */
+typedef struct kcg_tag_Change_traction_system_T_TIU_Types_Pkg {
   kcg_bool valid;
-  kcg_int64 NID_PACKET;
-  kcg_int64 Q_DIR;
-  kcg_int64 L_PACKET;
-  kcg_int64 Q_SCALE;
-  kcg_int64 D_GRADIENT;
-  kcg_int64 Q_GDIR;
-  kcg_int64 G_A;
-  kcg_int64 N_ITER;
-  P021_trackide_sectionlist_T_TM SECTIONS;
-} P021_trackside_int_T_TM;
+  D_test_traction_T_TIU_Types_Pkg d_test_traction;
+  M_voltage_T_TIU_Types_Pkg m_voltage;
+} Change_traction_system_T_TIU_Types_Pkg;
 
-typedef P021_section_int_T_TM _32_array[1];
+/* TIU_Types_Pkg::D_test_distance_T/ */
+typedef struct_488685 D_test_distance_T_TIU_Types_Pkg;
 
-/* TM::P021_OBU_sectionlist_int_T/, TM_conversions::C_P021_tracksim_compr/ */
-typedef P021_section_int_T_TM P021_OBU_sectionlist_int_T_TM[33];
+typedef kcg_int32 array_int32_400[400];
 
-typedef struct kcg_tag_struct_488833 {
-  kcg_bool valid;
-  Q_DIR q_dir;
-  Q_SCALE q_scale;
-  kcg_int64 d_reverse;
-  kcg_int64 v_reverse;
-} struct_488833;
+typedef kcg_int32 array_int32_65[65];
 
-/* TM::P139_OBU_T/ */
-typedef struct_488833 P139_OBU_T_TM;
+/* DATA::DMI_LevelList_int_array_T/ */
+typedef array_int32_65 DMI_LevelList_int_array_T_DATA;
 
-/* Packet_Types_Pkg::P139_ReversingSupervisionInformation_T/ */
-typedef struct_488833 P139_ReversingSupervisionInformation_T_Packet_Types_Pkg;
+/* DMI_trackCondition_int_array_T/ */
+typedef array_int32_65 DMI_trackCondition_int_array_T;
 
-typedef kcg_int64 array_int64_42[42];
+typedef kcg_int32 array_int32_975[975];
 
-typedef kcg_int64 array_int64_285[285];
+/* API_DMI_Pkg::DMI_to_EVC_Message_int_T/, Messages::CAST_DMI_to_EVC_to_int/ */
+typedef kcg_int32 DMI_to_EVC_Message_int_T_API_DMI_Pkg[311];
 
 /* RCM_Types_Pkg::mobileConnectionCmd_T/ */
 typedef struct kcg_tag_mobileConnectionCmd_T_RCM_Types_Pkg {
   kcg_bool valid;
-  kcg_int64 mobileDeviceNo;
+  kcg_int32 mobileDeviceNo;
   mobileConnetionAction_T_RCM_Types_Pkg action;
   NID_RADIO nid_radio;
 } mobileConnectionCmd_T_RCM_Types_Pkg;
 
-typedef kcg_int64 array_int64_33[33];
+typedef kcg_int32 array_int32_56[56];
 
-typedef struct kcg_tag_struct_488418 {
-  kcg_bool valid;
-  Q_DIR q_dir;
-  Q_SCALE q_scale;
-  kcg_int64 d_startreverse;
-  kcg_int64 l_reversearea;
-} struct_488418;
-
-/* TM::P138_OBU_T/ */
-typedef struct_488418 P138_OBU_T_TM;
-
-/* Packet_Types_Pkg::P138_ReversingAreaInformation_T/ */
-typedef struct_488418 P138_ReversingAreaInformation_T_Packet_Types_Pkg;
-
-/* Level_And_Mode_Types_Pkg::T_Data_From_Track_Packet/ */
-typedef struct kcg_tag_T_Data_From_Track_Packet_Level_And_Mode_Types_Pkg {
-  P12_Level1MovementAuthorities_T_Packet_Types_Pkg P_12;
-  P135_StopShuntingOnDeskOpening_T_Packet_Types_Pkg P_135;
-  P137_StopIfInStaffResponsible_T_Packet_Types_Pkg P_137;
-  P138_ReversingAreaInformation_T_Packet_Types_Pkg P_138;
-  P139_ReversingSupervisionInformation_T_Packet_Types_Pkg P_139;
-  P15_Level23MovementAuthorities_T_Packet_Types_Pkg P_15;
-  P21_GradientProfiles_T_Packet_Types_Pkg P_21;
-  P27_InternationalStaticSpeedProfile_T_Packet_Types_Pkg P_27;
-  P41_LevelTransistionOrders_T_Packet_Types_Pkg P_41;
-  P46_ConditionalLevelTransitionOrders_T_Packet_Types_Pkg P_46;
-  P63_ListofBalisesinSRAuthority_T_Packet_Types_Pkg P_63;
-  P80_ModeProfiles_T_Packet_Types_Pkg P_80;
-  NID_LRBG LRBG;
-  Location_T_Obu_BasicTypes_Pkg referenceLocation;
-} T_Data_From_Track_Packet_Level_And_Mode_Types_Pkg;
-
-/* TrackAtlasTypes::DataForModeAndLevel_t/ */
-typedef struct kcg_tag_DataForModeAndLevel_t_TrackAtlasTypes {
-  T_Data_From_Track_Packet_Level_And_Mode_Types_Pkg train_packets;
-  T_Data_From_Track_Mess_Level_And_Mode_Types_Pkg train_messages;
-  kcg_bool p12;
-  kcg_bool p15;
-  kcg_bool p21;
-  kcg_bool p27;
-} DataForModeAndLevel_t_TrackAtlasTypes;
-
-typedef struct kcg_tag_struct_488406 {
-  kcg_int64 target;
-  kcg_int64 speed;
-} struct_488406;
-
-/* TA_MRSP_new::SSP_section_t/ */
-typedef struct_488406 SSP_section_t_TA_MRSP_new;
-
-/* TA_MRSP::SSP_section_t/ */
-typedef struct_488406 SSP_section_t_TA_MRSP;
-
-typedef struct_488406 _85_array[50];
-
-/* TA_MRSP_new::SSP_cat_t/ */
-typedef _85_array SSP_cat_t_TA_MRSP_new;
-
-/* TA_MRSP::SSP_cat_t/ */
-typedef _85_array SSP_cat_t_TA_MRSP;
-
-typedef _85_array _81_array[11];
-
-/* TA_MRSP_new::SSP_matrix_t/ */
-typedef _81_array SSP_matrix_t_TA_MRSP_new;
-
-/* TA_MRSP::SSP_matrix_t/ */
-typedef _81_array SSP_matrix_t_TA_MRSP;
-
-typedef kcg_int64 array_int64_30[30];
-
-/* TA_EmergencyStop::NID_EM_Store::Manage_NID_EM_Store/IfBlock1:else:then:,
-   TA_EmergencyStop::NID_EM_Store::Manage_NID_EM_Store/IfBlock1:then:,
-   TA_EmergencyStop::NID_EM_Store::NID_EM_STORE_Acc_T/,
-   TA_EmergencyStop::NID_EM_Store::NID_EM_Store_Add/,
-   TA_EmergencyStop::NID_EM_Store::NID_EM_Store_Find/,
-   TA_EmergencyStop::NID_EM_Store::NID_EM_Store_Remove/ */
-typedef struct kcg_tag_NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store {
-  kcg_bool handled;
-  NID_EM nid_em;
-  kcg_int64 nfree;
-} NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store;
-
-typedef kcg_int64 array_int64_21[21];
-
-/* Common_Types_Pkg::RBC_Id_T/ */
-typedef struct kcg_tag_RBC_Id_T_Common_Types_Pkg {
-  kcg_bool valid;
-  NID_C nid_c;
-  NID_RBC rbc_id;
-  kcg_int64 device_id;
-} RBC_Id_T_Common_Types_Pkg;
-
-/* Common_Types_Pkg::radioManagementMessage_T/ */
-typedef struct kcg_tag_radioManagementMessage_T_Common_Types_Pkg {
-  kcg_bool valid;
-  MsgSource_T_Common_Types_Pkg messageSource;
-  Radio_TrackTrain_Header_T_Radio_Types_Pkg Radio_Common_Header;
-  P42_SessionManagement_T_Packet_Types_Pkg p42;
-  P45_RadioNetworkRegistration_T_Packet_Types_Pkg p45;
-  RBC_Id_T_Common_Types_Pkg sendingRBC;
-} radioManagementMessage_T_Common_Types_Pkg;
-
-/* RCM_MsgTypes_Pkg::m39_AckOfTerminationOfACommunicationSession_T/ */
-typedef struct kcg_tag_m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg {
-  kcg_bool valid;
-  MsgSource_T_Common_Types_Pkg msgSrc;
-  RBC_Id_T_Common_Types_Pkg origin;
-  NID_LRBG lrbg;
-} m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg;
-
-/* RCM_MsgTypes_Pkg::p42_sessionManagement_T/ */
-typedef struct kcg_tag_p42_sessionManagement_T_RCM_MsgTypes_Pkg {
-  kcg_bool valid;
-  MsgSource_T_Common_Types_Pkg msgSrc;
-  Q_DIR q_dir;
-  Q_RBC q_rbc;
-  NID_C nid_c;
-  NID_RBC nid_RBC;
-  NID_RADIO nid_radio;
-  Q_SLEEPSESSION q_sleepsession;
-  RBC_Id_T_Common_Types_Pkg origin;
-} p42_sessionManagement_T_RCM_MsgTypes_Pkg;
-
-/* API_Msg_Pkg::API_RadioMsgHeader_T/ */
-typedef struct kcg_tag_API_RadioMsgHeader_T_API_Msg_Pkg {
-  kcg_bool present;
-  kcg_bool apiConsistencyError;
-  Radio_TrackTrain_Header_T_Radio_Types_Pkg Radio_Common_Header;
-  RadioMetadata_T_Common_Types_Pkg Radio_MetaData;
-  RBC_Id_T_Common_Types_Pkg sendingRBC_Id;
-} API_RadioMsgHeader_T_API_Msg_Pkg;
-
-/* RCM_MsgTypes_Pkg::p45_radioNetworkRegistration_T/ */
-typedef struct kcg_tag_p45_radioNetworkRegistration_T_RCM_MsgTypes_Pkg {
-  kcg_bool valid;
-  MsgSource_T_Common_Types_Pkg msgSrc;
-  Q_DIR q_dir;
-  NID_MN nid_mn;
-  RBC_Id_T_Common_Types_Pkg origin;
-} p45_radioNetworkRegistration_T_RCM_MsgTypes_Pkg;
-
-/* RCM_MsgTypes_Pkg::m32_RBC_RIU_SystemVersion_T/ */
-typedef struct kcg_tag_m32_RBC_RIU_SystemVersion_T_RCM_MsgTypes_Pkg {
-  kcg_bool valid;
-  MsgSource_T_Common_Types_Pkg msgSrc;
-  kcg_bool versionSupported;
-  RBC_Id_T_Common_Types_Pkg origin;
-  M_VERSION m_version;
-} m32_RBC_RIU_SystemVersion_T_RCM_MsgTypes_Pkg;
-
-/* RCM_MsgTypes_Pkg::m38_initiationOfACommunicationSession_T/ */
-typedef struct kcg_tag_m38_initiationOfACommunicationSession_T_RCM_MsgTypes_Pkg {
-  kcg_bool valid;
-  MsgSource_T_Common_Types_Pkg msgSrc;
-  RBC_Id_T_Common_Types_Pkg origin;
-} m38_initiationOfACommunicationSession_T_RCM_MsgTypes_Pkg;
-
-/* RCM_Session_Types_Pkg::sessionCmd_T/ */
-typedef struct kcg_tag_sessionCmd_T_RCM_Session_Types_Pkg {
-  kcg_bool valid;
-  kcg_bool initiatedByOBU;
-  kcg_bool initiatedByRBC;
-  Q_RBC q_rbc;
-  NID_C nid_c;
-  NID_RBC nid_rbc;
-  NID_RADIO nid_radio;
-  RBC_Id_T_Common_Types_Pkg origin;
-  m38_initiationOfACommunicationSession_T_RCM_MsgTypes_Pkg m38;
-  p42_sessionManagement_T_RCM_MsgTypes_Pkg p42;
-} sessionCmd_T_RCM_Session_Types_Pkg;
-
-typedef kcg_int64 array_int64_24[24];
-
-/* TM::Array24/ */
-typedef array_int64_24 Array24_TM;
-
-/* DATA::DMI_Dynamic_int_array_T/ */
-typedef array_int64_24 DMI_Dynamic_int_array_T_DATA;
-
-/* TIU_Types_Pkg::Brake_pressure_value_T/ */
-typedef struct kcg_tag_Brake_pressure_value_T_TIU_Types_Pkg {
-  kcg_bool valid;
-  kcg_int64 pressure;
-} Brake_pressure_value_T_TIU_Types_Pkg;
-
-typedef kcg_int64 array_int64_18[18];
-
-typedef kcg_int64 array_int64_430[430];
-
-typedef kcg_int64 array_int64_104[104];
-
-/* TM::P005_sections_array_flat_T/, TM_conversions::C_P005_compr_onboard/ */
-typedef kcg_int64 P005_sections_array_flat_T_TM[95];
-
-typedef P005_sections_array_flat_T_TM array_int64_95_33[33];
-
-/* RCM_Types_Pkg::mobileRegistrationContext_T/ */
-typedef struct kcg_tag_mobileRegistrationContext_T_RCM_Types_Pkg {
-  kcg_bool valid;
-  kcg_int64 mobileDeviceNo;
-  mobileHealthStatus_T_RCM_Types_Pkg healthStatus;
-  mobileRegistrationStatus_T_RCM_Types_Pkg status;
-  NID_MN nid_mn;
-} mobileRegistrationContext_T_RCM_Types_Pkg;
-
-/* TM::P041_section_int_T/ */
-typedef struct kcg_tag_P041_section_int_T_TM {
-  kcg_int64 M_LEVELTR;
-  kcg_int64 NID_NTC;
-  kcg_int64 L_ACKLEVELTR;
-} P041_section_int_T_TM;
-
-/* TM::P041_trackide_sectionlist_T/ */
-typedef P041_section_int_T_TM P041_trackide_sectionlist_T_TM[32];
-
-/* TM::P041_trackside_int_T/ */
-typedef struct kcg_tag_P041_trackside_int_T_TM {
-  kcg_bool valid;
-  kcg_int64 NID_PACKET;
-  kcg_int64 Q_DIR;
-  kcg_int64 L_PACKET;
-  kcg_int64 Q_SCALE;
-  kcg_int64 D_LEVELTR;
-  kcg_int64 M_LEVELTR;
-  kcg_int64 NID_NTC;
-  kcg_int64 L_ACKLEVELTR;
-  kcg_int64 N_ITER;
-  P041_trackide_sectionlist_T_TM SECTIONS;
-} P041_trackside_int_T_TM;
-
-typedef P041_section_int_T_TM _31_array[1];
-
-/* TM::P041_OBU_sectionlist_int_T/, TM_conversions::C_P041_tracksim_compr/ */
-typedef P041_section_int_T_TM P041_OBU_sectionlist_int_T_TM[33];
-
-typedef kcg_int64 array_int64_350[350];
-
-typedef kcg_int64 array_int64_12[12];
-
-typedef kcg_int64 array_int64_15[15];
-
-/* TM::Array15/ */
-typedef array_int64_15 Array15_TM;
-
-/* Packet_TrainTypes_Pkg::telephoneNumber_T/ */
-typedef array_int64_15 telephoneNumber_T_Packet_TrainTypes_Pkg;
-
-/* Packet_TrainTypes_Pkg::sNID_RADIO_T/ */
-typedef struct kcg_tag_sNID_RADIO_T_Packet_TrainTypes_Pkg {
-  kcg_bool valid;
-  telephoneNumber_T_Packet_TrainTypes_Pkg telephoneNumber;
-} sNID_RADIO_T_Packet_TrainTypes_Pkg;
-
-/* Packet_TrainTypes_Pkg::aNID_RADIO_T/ */
-typedef sNID_RADIO_T_Packet_TrainTypes_Pkg aNID_RADIO_T_Packet_TrainTypes_Pkg[1];
-
-/* Packet_TrainTypes_Pkg::PT3_OnboardTelephoneNumbers_T/ */
-typedef struct kcg_tag_PT3_OnboardTelephoneNumbers_T_Packet_TrainTypes_Pkg {
-  kcg_bool valid;
-  kcg_int64 number;
-  aNID_RADIO_T_Packet_TrainTypes_Pkg aNID_RADIO;
-} PT3_OnboardTelephoneNumbers_T_Packet_TrainTypes_Pkg;
-
-/* RCM_Session_Types_Pkg::morc_configData_T/ */
-typedef struct kcg_tag_morc_configData_T_RCM_Session_Types_Pkg {
-  P45_RadioNetworkRegistration_T_Packet_Types_Pkg radioNetworkID_Default;
-  NID_RADIO nid_radio_shortNumberStoredOnboard;
-  kcg_int64 noOfRetriesOfSendingTerminationMessage;
-  T_internal_Type_Obu_BasicTypes_Pkg maxWaitingTimeForAckMessageReceived;
-  T_internal_Type_Obu_BasicTypes_Pkg maxWaitingTimeUntilTerminationOrderReceived;
-  kcg_int64 noOfRetriesUntilTerminationOrderIsReceived;
-  T_internal_Type_Obu_BasicTypes_Pkg connectionStatusTimerInterval;
-  PT3_OnboardTelephoneNumbers_T_Packet_TrainTypes_Pkg onboardPhoneNumbers;
-  NID_ENGINE nid_engine;
-  T_internal_Type_Obu_BasicTypes_Pkg maxTimeToMaintainCommSession;
-  kcg_int64 noOfTriesToEstablishASafeRadioConnection;
-} morc_configData_T_RCM_Session_Types_Pkg;
-
-typedef kcg_int64 array_int64_6[6];
-
-/* TM::Array06/ */
-typedef array_int64_6 Array06_TM;
-
-/* SDMConversionModelPkg::v_BrakeSteps_t/ */
-typedef array_int64_6 v_BrakeSteps_t_SDMConversionModelPkg;
-
-/* SDMConversionModelPkg::a_BrakeSteps_t/ */
-typedef array_int64_6 a_BrakeSteps_t_SDMConversionModelPkg;
-
-/* SDMConversionModelPkg::av_Map_t/ */
-typedef struct kcg_tag_av_Map_t_SDMConversionModelPkg {
-  a_BrakeSteps_t_SDMConversionModelPkg a;
-  v_BrakeSteps_t_SDMConversionModelPkg v;
-} av_Map_t_SDMConversionModelPkg;
-
-typedef av_Map_t_SDMConversionModelPkg _75_array[13];
-
-/* SDMConversionModelPkg::a_Brake_t/ */
-typedef struct kcg_tag_a_Brake_t_SDMConversionModelPkg {
-  av_Map_t_SDMConversionModelPkg emergency;
-  av_Map_t_SDMConversionModelPkg service;
-} a_Brake_t_SDMConversionModelPkg;
-
-typedef array_int64_6 array_int64_6_221[221];
-
-/* DMI_Messages_DMI_to_EVC_Pkg::DMI_Status_T/ */
-typedef struct kcg_tag_DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg {
-  kcg_bool valid;
-  T_internal_Type_Obu_BasicTypes_Pkg systemTime;
-  DMI_StatusSet_T_DMI_Types_Pkg statusSet;
-  kcg_int64 nAlive;
-} DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg;
-
-/* API_DMI_Pkg::DMI_to_EVC_Message_T/ */
-typedef struct kcg_tag_DMI_to_EVC_Message_T_API_DMI_Pkg {
-  kcg_bool present;
-  DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg status;
-  DMI_Identifier_T_DMI_Messages_DMI_to_EVC_Pkg identifier;
-  DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg driverRequest;
-  DMI_Driver_Identifier_T_DMI_Messages_Bothways_Pkg driverIdentifier;
-  DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg trainRunningNumber;
-  DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg radioNetData;
-  DMI_Text_Message_Ack_T_DMI_Messages_DMI_to_EVC_Pkg textMessageAck;
-  DMI_Train_Data_Ack_T_DMI_Messages_DMI_to_EVC_Pkg trainDataAck;
-  DMI_Train_Data_T_DMI_Messages_Bothways_Pkg trainData;
-  DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg adhesionFactor;
-  DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg iconAck;
-  DMI_Level_Data_T_DMI_Messages_Bothways_Pkg selectedLevel;
-} DMI_to_EVC_Message_T_API_DMI_Pkg;
-
-/* API_DMI_Pkg::EVC_to_DMI_Message_int_T/, Messages::CAST_EVC_to_DMI_to_int/ */
-typedef kcg_int64 EVC_to_DMI_Message_int_T_API_DMI_Pkg[999];
-
-typedef kcg_int64 array_int64_261[261];
-
-/* DATA::DMI_Identifier_int_array_T/ */
-typedef array_int64_261 DMI_Identifier_int_array_T_DATA;
-
-/* DATA::DMI_Identifier_Request_int_array_T/ */
-typedef array_int64_261 DMI_Identifier_Request_int_array_T_DATA;
-
-typedef struct kcg_tag_struct_487754 {
-  kcg_bool valid;
-  kcg_int64 l_section;
-  Q_SECTIONTIMER q_sectiontimer;
-  kcg_int64 t_sectiontimer;
-  kcg_int64 d_sectiontimerstoploc;
-} struct_487754;
-
-/* TM::P012_section_enum_T/ */
-typedef struct_487754 P012_section_enum_T_TM;
-
-/* TM::P015_section_enum_T/ */
-typedef struct_487754 P015_section_enum_T_TM;
-
-/* TM::P015_OBU_sectionlist_enum_T/,
-   TM_lib_internal::C_P012_unflatten_sections/,
-   TM_lib_internal::C_P015_unflatten_sections/ */
-typedef P015_section_enum_T_TM P015_OBU_sectionlist_enum_T_TM[32];
-
-typedef P015_OBU_sectionlist_enum_T_TM _101_array[10];
-
-/* TM::P012_OBU_T/ */
-typedef struct kcg_tag_P012_OBU_T_TM {
-  kcg_bool valid;
-  Q_DIR q_dir;
-  Q_SCALE q_scale;
-  V_MAIN v_main;
-  V_LOA v_loa;
-  T_LOA t_loa;
-  N_ITER n_iter;
-  P015_OBU_sectionlist_enum_T_TM sections;
-  L_ENDSECTION l_endsection;
-  Q_SECTIONTIMER q_sectiontimer;
-  T_SECTIONTIMER t_sectiontimer;
-  D_SECTIONTIMERSTOPLOC d_sectiontimerstoploc;
-  Q_ENDTIMER q_endtimer;
-  T_ENDTIMER t_endtimer;
-  D_ENDTIMERSTARTLOC d_endtimerstartloc;
-  Q_DANGERPOINT q_dangerpoint;
-  D_DP d_dp;
-  V_RELEASEDP v_releasedp;
-  Q_OVERLAP q_overlap;
-  D_STARTOL d_startol;
-  T_OL t_ol;
-  D_OL d_ol;
-  V_RELEASEOL v_releaseol;
-} P012_OBU_T_TM;
-
-/* TM::P015_OBU_T/ */
-typedef struct kcg_tag_P015_OBU_T_TM {
-  kcg_bool valid;
-  Q_DIR q_dir;
-  Q_SCALE q_scale;
-  V_LOA v_loa;
-  T_LOA t_loa;
-  N_ITER n_iter;
-  P015_OBU_sectionlist_enum_T_TM sections;
-  L_ENDSECTION l_endsection;
-  Q_SECTIONTIMER q_sectiontimer;
-  T_SECTIONTIMER t_sectiontimer;
-  D_SECTIONTIMERSTOPLOC d_sectiontimerstoploc;
-  Q_ENDTIMER q_endtimer;
-  T_ENDTIMER t_endtimer;
-  D_ENDTIMERSTARTLOC d_endtimerstartloc;
-  Q_DANGERPOINT q_dangerpoint;
-  D_DP d_dp;
-  V_RELEASEDP v_releasedp;
-  Q_OVERLAP q_overlap;
-  D_STARTOL d_startol;
-  T_OL t_ol;
-  D_OL d_ol;
-  V_RELEASEOL v_releaseol;
-} P015_OBU_T_TM;
-
-typedef P015_OBU_T_TM _110_array[5];
-
-typedef P015_OBU_sectionlist_enum_T_TM _60_array[5];
-
-typedef kcg_int64 array_int64_9[9];
-
-/* TM::Array09/ */
-typedef array_int64_9 Array09_TM;
-
-/* DATA::DriverIdentifier_INT_T/ */
-typedef array_int64_9 DriverIdentifier_INT_T_DATA;
-
-/* DATA::DMI_Icons_int_array_T/ */
-typedef array_int64_9 DMI_Icons_int_array_T_DATA;
-
-/* DATA::DMI_Train_Data_int_array_T/ */
-typedef array_int64_9 DMI_Train_Data_int_array_T_DATA;
-
-/* DATA::DMI_EVC_Coded_Train_Data_int_array_T/ */
-typedef array_int64_9 DMI_EVC_Coded_Train_Data_int_array_T_DATA;
-
-/* DATA::DMI_TEXT_INT_Array_T/,
-   DATA::Packets::DMI_to_EVC::C_int_to_DMI_identifier/,
-   DATA::Packets::EVC_to_DMI::CAST_Int_to_DMI_Text_Message1/,
-   DATA::Packets::EVC_to_DMI::CAST_int_to_DMI_Identifier_Request1/,
-   DATA::Variables::CAST_DMI_TEXT_to_int/ */
-typedef kcg_int64 DMI_TEXT_INT_Array_T_DATA[255];
-
-typedef kcg_int64 array_int64_3[3];
-
-/* TM::P041_section_array_T/ */
-typedef array_int64_3 P041_section_array_T_TM;
-
-/* TM_TrainToTrack::Array03/ */
-typedef array_int64_3 Array03_TM_TrainToTrack;
-
-/* TM::P021_section_array_T/ */
-typedef array_int64_3 P021_section_array_T_TM;
-
-/* TM_TrainToTrack::P009_TrainTrack_int/ */
-typedef array_int64_3 P009_TrainTrack_int_TM_TrainToTrack;
-
-/* TM_TrainToTrack::P005_TrainTrack_int/ */
-typedef array_int64_3 P005_TrainTrack_int_TM_TrainToTrack;
-
-/* TM_TrainToTrack::P004_TrainTrack_int/ */
-typedef array_int64_3 P004_TrainTrack_int_TM_TrainToTrack;
-
-/* TM::Array03/ */
-typedef array_int64_3 Array03_TM;
-
-/* DATA::DMI_Icon_Ack_int_array_T/ */
-typedef array_int64_3 DMI_Icon_Ack_int_array_T_DATA;
-
-/* DATA::DMI_Train_Data_Ack_int_array_T/ */
-typedef array_int64_3 DMI_Train_Data_Ack_int_array_T_DATA;
-
-/* DATA::DMI_Driver_Request_int_array_T/ */
-typedef array_int64_3 DMI_Driver_Request_int_array_T_DATA;
-
-/* DATA::DMI_Adhesion_Factor_Data_int_array_T/ */
-typedef array_int64_3 DMI_Adhesion_Factor_Data_int_array_T_DATA;
-
-/* DATA::DMI_Train_Running_Number_int_array_T/ */
-typedef array_int64_3 DMI_Train_Running_Number_int_array_T_DATA;
-
-/* DATA::DMI_EVC_Radio_Net_Data_int_array_T/ */
-typedef array_int64_3 DMI_EVC_Radio_Net_Data_int_array_T_DATA;
-
-/* DATA::DMI_Display_Control_int_array_T/ */
-typedef array_int64_3 DMI_Display_Control_int_array_T_DATA;
-
-/* DATA::DMI_System_Version_int_array_T/ */
-typedef array_int64_3 DMI_System_Version_int_array_T_DATA;
-
-/* DATA::DMI_Entry_Request_int_array_T/ */
-typedef array_int64_3 DMI_Entry_Request_int_array_T_DATA;
-
-/* DATA::DMI_Menu_Request_int_array_T/ */
-typedef array_int64_3 DMI_Menu_Request_int_array_T_DATA;
-
-typedef array_int64_3 array_int64_3_33[33];
-
-/* TM::P041_OBU_sectionlist_array_T/ */
-typedef array_int64_3_33 P041_OBU_sectionlist_array_T_TM;
-
-/* TM::P021_OBU_sectionlist_array_T/ */
-typedef array_int64_3_33 P021_OBU_sectionlist_array_T_TM;
-
-typedef array_int64_3_33 array_int64_3_33_99[99];
-
-typedef array_int64_3_33 array_int64_3_33_231[231];
-
-typedef kcg_int64 array_int64_492[492];
-
-/* TM::P255_trackside_int_T/ */
-typedef struct kcg_tag_P255_trackside_int_T_TM {
-  kcg_bool valid;
-  kcg_int64 NID_PACKET;
-} P255_trackside_int_T_TM;
-
-typedef kcg_int64 array_int64_990[990];
-
-/* TA_EmergencyStop::NID_EM_Store::NID_EM_Store_T/ */
-typedef struct kcg_tag_NID_EM_Store_T_TA_EmergencyStop_NID_EM_Store {
-  kcg_int64 nfree;
-  _53_array items;
-} NID_EM_Store_T_TA_EmergencyStop_NID_EM_Store;
-
-typedef struct kcg_tag_struct_487387 {
-  kcg_bool valid;
-  kcg_int64 nid_message;
-  kcg_int64 l_message;
-  kcg_int64 t_train;
-  kcg_int64 nid_engine;
-} struct_487387;
-
-/* TM_radio_messages::M_155_T/ */
-typedef struct_487387 M_155_T_TM_radio_messages;
-
-/* TM_radio_messages::M_156_T/ */
-typedef struct_487387 M_156_T_TM_radio_messages;
-
-/* TM_radio_messages::M_159_T/ */
-typedef struct_487387 M_159_T_TM_radio_messages;
-
-/* TM_radio_messages::M_154_T/ */
-typedef struct_487387 M_154_T_TM_radio_messages;
-
-/* TM_radio_messages::M_129_T/ */
-typedef struct_487387 M_129_T_TM_radio_messages;
-
-/* TM_radio_messages::M_136_T/ */
-typedef struct_487387 M_136_T_TM_radio_messages;
-
-typedef kcg_int64 array_int64_68[68];
-
-typedef kcg_int64 array_int64_987[987];
-
-/* TM::P058_section_int_T/ */
-typedef struct kcg_tag_P058_section_int_T_TM {
-  kcg_int64 D_LOC;
-  kcg_int64 Q_LGTLOC;
-} P058_section_int_T_TM;
-
-typedef P058_section_int_T_TM _63_array[32];
-
-/* TM::P058_OBU_sectionlist_int_T/ */
-typedef _63_array P058_OBU_sectionlist_int_T_TM;
-
-/* TM::P058_trackide_sectionlist_T/ */
-typedef _63_array P058_trackide_sectionlist_T_TM;
-
-/* TM::P058_trackside_int_T/ */
-typedef struct kcg_tag_P058_trackside_int_T_TM {
-  kcg_bool valid;
-  kcg_int64 NID_PACKET;
-  kcg_int64 Q_DIR;
-  kcg_int64 L_PACKET;
-  kcg_int64 Q_SCALE;
-  kcg_int64 T_CYCLOC;
-  kcg_int64 D_CYCLOC;
-  kcg_int64 M_LOC;
-  kcg_int64 N_ITER;
-  P058_trackide_sectionlist_T_TM SECTIONS;
-} P058_trackside_int_T_TM;
-
-typedef kcg_int64 array_int64_978[978];
-
-typedef kcg_int64 array_int64_400[400];
-
-/* CalculateTrainPosition_Pkg::BG_utilities_Pkg::BG_find_T/ */
-typedef struct kcg_tag_BG_find_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg {
-  kcg_int64 index;
-  kcg_int64 noOfFoundBGs;
-  kcg_bool BGFound;
-} BG_find_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg;
-
-typedef kcg_int64 array_int64_65[65];
-
-/* DATA::DMI_LevelList_int_array_T/ */
-typedef array_int64_65 DMI_LevelList_int_array_T_DATA;
-
-/* DMI_trackCondition_int_array_T/ */
-typedef array_int64_65 DMI_trackCondition_int_array_T;
-
-typedef struct kcg_tag_struct_487196 {
-  kcg_bool valid;
-  kcg_int64 begin_section;
-  kcg_int64 end_section;
-  kcg_int64 gradient;
-} struct_487196;
-
-/* TrackAtlasTypes::GradientProfile_for_DMI_section_t/ */
-typedef struct_487196 GradientProfile_for_DMI_section_t_TrackAtlasTypes;
-
-/* TA_Export::GradientProfile_to_DMI/,
-   TrackAtlasTypes::GradientProfile_for_DMI_t/ */
-typedef GradientProfile_for_DMI_section_t_TrackAtlasTypes GradientProfile_for_DMI_t_TrackAtlasTypes[50];
-
-/* TrackAtlasTypes::DataForDMI_t/ */
-typedef struct kcg_tag_DataForDMI_t_TrackAtlasTypes {
-  GradientProfile_for_DMI_t_TrackAtlasTypes GradientProfile;
-  kcg_bool Gradient_profile_updated;
-  MRSP_Profile_t_TrackAtlasTypes MRSP;
-  kcg_bool MRSP_updated;
-} DataForDMI_t_TrackAtlasTypes;
-
-/* DMI_Types_Pkg::DMI_gradientProfileElement_T/ */
-typedef struct_487196 DMI_gradientProfileElement_T_DMI_Types_Pkg;
-
-/* DATA::Variables::CAST_int_to_DMI_gradientProfile/,
-   DMI_Types_Pkg::DMI_gradientProfileArray_T/,
-   manage_DMI_Output_Pkg::copyTrackDescription/ */
-typedef DMI_gradientProfileElement_T_DMI_Types_Pkg DMI_gradientProfileArray_T_DMI_Types_Pkg[32];
-
-/* DMI_Types_Pkg::DMI_gradientProfile_T/ */
-typedef struct kcg_tag_DMI_gradientProfile_T_DMI_Types_Pkg {
-  kcg_bool profileChanged;
-  DMI_gradientProfileArray_T_DMI_Types_Pkg gradientProfiles;
-} DMI_gradientProfile_T_DMI_Types_Pkg;
-
-/* DMI_Messages_EVC_to_DMI_Pkg::DMI_Track_Description_T/ */
-typedef struct kcg_tag_DMI_Track_Description_T_DMI_Messages_EVC_to_DMI_Pkg {
-  kcg_bool valid;
-  T_internal_Type_Obu_BasicTypes_Pkg system_clock;
-  DMI_speedProfile_T_DMI_Types_Pkg speedProfiles;
-  DMI_gradientProfile_T_DMI_Types_Pkg gradientProfiles;
-  DMI_trackCondition_T_DMI_Types_Pkg trackConditions;
-} DMI_Track_Description_T_DMI_Messages_EVC_to_DMI_Pkg;
-
-/* DMI_Types_Pkg::DMI_train_length_T/ */
-typedef struct kcg_tag_DMI_train_length_T_DMI_Types_Pkg {
-  kcg_int64 number;
-  BCD_DMI_Types_Pkg dig1;
-  BCD_DMI_Types_Pkg dig2;
-  BCD_DMI_Types_Pkg dig3;
-  BCD_DMI_Types_Pkg dig4;
-} DMI_train_length_T_DMI_Types_Pkg;
-
-/* RBC_Diagnostic_Pkg::DiagMsg_T/ */
-typedef struct kcg_tag_DiagMsg_T_RBC_Diagnostic_Pkg {
-  kcg_bool valid;
-  kcg_int64 count;
-  T_TRAIN timestamp;
-  DiagMsgType_E_RBC_Diagnostic_Pkg diagType;
-  DiagMsgSrc_E_RBC_Diagnostic_Pkg diagSrc;
-  DiagMsgText_E_RBC_Diagnostic_Pkg diagText;
-} DiagMsg_T_RBC_Diagnostic_Pkg;
-
-typedef DiagMsg_T_RBC_Diagnostic_Pkg _56_array[16];
-
-typedef kcg_int64 array_int64_975[975];
-
-/* API_DMI_Pkg::DMI_to_EVC_Message_int_T/, Messages::CAST_DMI_to_EVC_to_int/ */
-typedef kcg_int64 DMI_to_EVC_Message_int_T_API_DMI_Pkg[311];
-
-/* Common_Types_Pkg::MetadataElement_T/ */
-typedef struct kcg_tag_MetadataElement_T_Common_Types_Pkg {
-  NID_PACKET nid_packet;
-  Q_DIR q_dir;
-  kcg_bool valid;
-  kcg_int64 startAddress;
-  kcg_int64 endAddress;
-} MetadataElement_T_Common_Types_Pkg;
-
-typedef MetadataElement_T_Common_Types_Pkg _88_array[29];
-
-/* Common_Types_Pkg::Metadata_T/,
-   InformationFilter_Pkg::FirstFilter::FirstFilter/,
-   InformationFilter_Pkg::SecondFilter::DetermineBufferMessage/,
-   InformationFilter_Pkg::ThirdFilter::ThirdFilter/,
-   ValidateDataDirectionGeneral_Pkg::validateDataDirection_General/ */
-typedef MetadataElement_T_Common_Types_Pkg Metadata_T_Common_Types_Pkg[30];
-
-typedef Metadata_T_Common_Types_Pkg _51_array[30];
-
-typedef kcg_int64 array_int64_56[56];
-
-typedef kcg_int64 array_int64_302[302];
+typedef kcg_int32 array_int32_302[302];
 
 /* SDM_GradientAcceleration_Pkg::internalCycle/,
    TA_Export::GradientProfile_to_DMI/,
@@ -6893,7 +6424,7 @@ typedef kcg_int64 array_int64_302[302];
    TM_radio_messages::Send_M155/,
    TM_radio_messages::Send_M156/,
    TM_radio_messages::Send_M159/ */
-typedef kcg_int64 M_TrainTrack_compressed_packets_T_TM_radio_messages[50];
+typedef kcg_int32 M_TrainTrack_compressed_packets_T_TM_radio_messages[50];
 
 /* TM_radio_messages::M_TrainTrack_Message_T/ */
 typedef struct kcg_tag_M_TrainTrack_Message_T_TM_radio_messages {
@@ -6901,33 +6432,33 @@ typedef struct kcg_tag_M_TrainTrack_Message_T_TM_radio_messages {
   M_TrainTrack_compressed_packets_T_TM_radio_messages OptionalPackets;
 } M_TrainTrack_Message_T_TM_radio_messages;
 
-typedef M_TrainTrack_Message_T_TM_radio_messages _97_array[95];
+typedef M_TrainTrack_Message_T_TM_radio_messages _96_array[95];
 
-typedef M_TrainTrack_Message_T_TM_radio_messages _96_array[2];
+typedef M_TrainTrack_Message_T_TM_radio_messages _95_array[2];
 
-typedef M_TrainTrack_Message_T_TM_radio_messages _82_array[5];
+typedef M_TrainTrack_Message_T_TM_radio_messages _84_array[5];
 
 /* TM_TrainTrack_Bus::M_TrainTrackMessageBus_t/ */
-typedef _82_array M_TrainTrackMessageBus_t_TM_TrainTrack_Bus;
+typedef _84_array M_TrainTrackMessageBus_t_TM_TrainTrack_Bus;
 
 /* TM_lib_internal::M_TrainTrackMessage_buffer_t/ */
-typedef _82_array M_TrainTrackMessage_buffer_t_TM_lib_internal;
+typedef _84_array M_TrainTrackMessage_buffer_t_TM_lib_internal;
 
-typedef _82_array _21_array[5];
+typedef _84_array _19_array[5];
 
-typedef M_TrainTrack_Message_T_TM_radio_messages _78_array[98];
+typedef M_TrainTrack_Message_T_TM_radio_messages _79_array[98];
 
 typedef M_TrainTrack_Message_T_TM_radio_messages _58_array[96];
 
-typedef M_TrainTrack_Message_T_TM_radio_messages _55_array[3];
+typedef M_TrainTrack_Message_T_TM_radio_messages _56_array[3];
 
-typedef M_TrainTrack_Message_T_TM_radio_messages _50_array[99];
+typedef M_TrainTrack_Message_T_TM_radio_messages _52_array[99];
 
 typedef M_TrainTrack_Message_T_TM_radio_messages _39_array[1];
 
-typedef M_TrainTrack_Message_T_TM_radio_messages _19_array[4];
+typedef M_TrainTrack_Message_T_TM_radio_messages _17_array[4];
 
-typedef M_TrainTrack_Message_T_TM_radio_messages _13_array[97];
+typedef M_TrainTrack_Message_T_TM_radio_messages _12_array[97];
 
 /* TM_lib_internal::BufferOutput_read_write1/,
    TM_lib_internal::BufferOutput_read_write2/,
@@ -6942,872 +6473,134 @@ typedef M_TrainTrack_Message_T_TM_radio_messages _13_array[97];
    TM_lib_internal::M_TrainTrackRadioOutputBuffer_t/ */
 typedef M_TrainTrack_Message_T_TM_radio_messages M_TrainTrackRadioOutputBuffer_t_TM_lib_internal[100];
 
-typedef kcg_int64 array_int64_41[41];
+typedef kcg_int32 array_int32_41[41];
 
-/* DMI_Types_Pkg::DMI_train_id_T/ */
-typedef struct kcg_tag_DMI_train_id_T_DMI_Types_Pkg {
-  kcg_int64 number;
-  BCD_DMI_Types_Pkg dig1;
-  BCD_DMI_Types_Pkg dig2;
-  BCD_DMI_Types_Pkg dig3;
-  BCD_DMI_Types_Pkg dig4;
-  BCD_DMI_Types_Pkg dig5;
-} DMI_train_id_T_DMI_Types_Pkg;
-
-/* Handover_Pkg::connection_ids_T/ */
-typedef struct kcg_tag_connection_ids_T_Handover_Pkg {
+typedef struct kcg_tag_struct_488194 {
   kcg_bool valid;
-  kcg_int64 mobileDeviceNo;
-  NID_C nid_c;
-  NID_RBC nid_RBC;
-  NID_RADIO nid_radio;
-  NID_MN nid_mn;
-} connection_ids_T_Handover_Pkg;
+  kcg_int32 begin_section;
+  kcg_int32 end_section;
+  kcg_int32 gradient;
+} struct_488194;
 
-/* CalculateTrainPosition_Pkg::BG_utilities_Pkg::BG_counters_T/ */
-typedef struct kcg_tag_BG_counters_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg {
-  kcg_int64 unlinkedBGsCount;
-  kcg_int64 linkedBGsCount;
-  kcg_int64 totalBGsCount;
-  kcg_int64 passedUnlinkedBGsCount;
-  kcg_int64 passedLinkedBGsCount;
-  kcg_int64 passedTotalBGsCount;
-} BG_counters_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg;
+/* TrackAtlasTypes::GradientProfile_for_DMI_section_t/ */
+typedef struct_488194 GradientProfile_for_DMI_section_t_TrackAtlasTypes;
 
-typedef struct kcg_tag_struct_486733 {
+/* TA_Export::GradientProfile_to_DMI/,
+   TrackAtlasTypes::GradientProfile_for_DMI_t/ */
+typedef GradientProfile_for_DMI_section_t_TrackAtlasTypes GradientProfile_for_DMI_t_TrackAtlasTypes[50];
+
+/* TrackAtlasTypes::DataForDMI_t/ */
+typedef struct kcg_tag_DataForDMI_t_TrackAtlasTypes {
+  GradientProfile_for_DMI_t_TrackAtlasTypes GradientProfile;
+  kcg_bool Gradient_profile_updated;
+  MRSP_Profile_t_TrackAtlasTypes MRSP;
+  kcg_bool MRSP_updated;
+} DataForDMI_t_TrackAtlasTypes;
+
+/* DMI_Types_Pkg::DMI_gradientProfileElement_T/ */
+typedef struct_488194 DMI_gradientProfileElement_T_DMI_Types_Pkg;
+
+/* DATA::Variables::CAST_int_to_DMI_gradientProfile/,
+   DMI_Types_Pkg::DMI_gradientProfileArray_T/,
+   manage_DMI_Output_Pkg::copyTrackDescription/ */
+typedef DMI_gradientProfileElement_T_DMI_Types_Pkg DMI_gradientProfileArray_T_DMI_Types_Pkg[32];
+
+/* DMI_Types_Pkg::DMI_gradientProfile_T/ */
+typedef struct kcg_tag_DMI_gradientProfile_T_DMI_Types_Pkg {
+  kcg_bool profileChanged;
+  DMI_gradientProfileArray_T_DMI_Types_Pkg gradientProfiles;
+} DMI_gradientProfile_T_DMI_Types_Pkg;
+
+/* DMI_Messages_EVC_to_DMI_Pkg::DMI_Track_Description_T/ */
+typedef struct kcg_tag_DMI_Track_Description_T_DMI_Messages_EVC_to_DMI_Pkg {
   kcg_bool valid;
-  kcg_int64 nid_message;
-  kcg_int64 l_message;
-  kcg_int64 t_train;
-  kcg_int64 m_ack;
-  kcg_int64 nid_lrbg;
-} struct_486733;
-
-/* TM_radio_messages::M_024_int_T/ */
-typedef struct_486733 M_024_int_T_TM_radio_messages;
-
-/* TM_radio_messages::M_003_int_T/ */
-typedef struct_486733 M_003_int_T_TM_radio_messages;
-
-typedef struct kcg_tag_struct_486660 {
-  kcg_bool valid;
-  kcg_int64 nid_message;
-  kcg_int64 l_message;
-  kcg_int64 t_train;
-  M_ACK m_ack;
-  kcg_int64 nid_lrbg;
-} struct_486660;
-
-/* TM_radio_messages::M_038_T/ */
-typedef struct_486660 M_038_T_TM_radio_messages;
-
-/* TM_radio_messages::M_039_T/ */
-typedef struct_486660 M_039_T_TM_radio_messages;
-
-/* TM_radio_messages::M_040_T/ */
-typedef struct_486660 M_040_T_TM_radio_messages;
-
-/* TM_radio_messages::M_041_T/ */
-typedef struct_486660 M_041_T_TM_radio_messages;
-
-/* TM_radio_messages::M_043_T/ */
-typedef struct_486660 M_043_T_TM_radio_messages;
-
-/* TM_radio_messages::M_003_T/ */
-typedef struct_486660 M_003_T_TM_radio_messages;
-
-/* TM_radio_messages::M_006_T/ */
-typedef struct_486660 M_006_T_TM_radio_messages;
-
-/* TM_radio_messages::M_009_T/ */
-typedef struct_486660 M_009_T_TM_radio_messages;
-
-/* TM_radio_messages::M_024_T/ */
-typedef struct_486660 M_024_T_TM_radio_messages;
-
-/* RCM_Types_Pkg::mobileConnectionContext_T/ */
-typedef struct kcg_tag_mobileConnectionContext_T_RCM_Types_Pkg {
-  kcg_bool valid;
-  kcg_int64 mobileDeviceNo;
-  mobileConnectionStatus_T_RCM_Types_Pkg status;
-  NID_RADIO nid_radio;
-  kcg_bool settingUpConnectionHasFailed;
-  kcg_bool connectionLost;
-  kcg_bool isInRadioHole;
-} mobileConnectionContext_T_RCM_Types_Pkg;
-
-/* RCM_Session_Types_Pkg::morcStatus_T/ */
-typedef struct kcg_tag_morcStatus_T_RCM_Session_Types_Pkg {
-  mobileRegistrationContext_T_RCM_Types_Pkg registration;
-  mobileConnectionContext_T_RCM_Types_Pkg connection;
-  sessionStatus_T_RCM_Session_Types_Pkg session;
-} morcStatus_T_RCM_Session_Types_Pkg;
-
-/* TIU_Types_Pkg::M_current_T/ */
-typedef struct kcg_tag_M_current_T_TIU_Types_Pkg {
-  kcg_bool no_restriction;
-  kcg_int64 restriction;
-} M_current_T_TIU_Types_Pkg;
-
-/* TIU_Types_Pkg::Change_of_allowed_current_consumption_T/ */
-typedef struct kcg_tag_Change_of_allowed_current_consumption_T_TIU_Types_Pkg {
-  kcg_bool valid;
-  D_test_current_T_TIU_Types_Pkg d_test_current;
-  M_current_T_TIU_Types_Pkg m_current;
-} Change_of_allowed_current_consumption_T_TIU_Types_Pkg;
-
-/* TIU_Types_Pkg::Message_EVC_to_Train_Interface_T/ */
-typedef struct kcg_tag_Message_EVC_to_Train_Interface_T_TIU_Types_Pkg {
-  Isolation_Status_T_TIU_Types_Pkg isolation_status;
-  Brake_command_T_TIU_Types_Pkg brake_command;
-  Brake_inhibition_command_T_TIU_Types_Pkg brake_inhibition;
-  Type_I_train_commands_T_TIU_Types_Pkg type_I_train_commands;
-  Change_traction_system_T_TIU_Types_Pkg change_traction_system;
-  Passenger_door_control_info_T_TIU_Types_Pkg passenger_door_control_info;
-  Change_of_allowed_current_consumption_T_TIU_Types_Pkg change_of_allowed_current_consumption;
-} Message_EVC_to_Train_Interface_T_TIU_Types_Pkg;
-
-/* API_TIU_Pkg::TIU_Output_msg/ */
-typedef struct kcg_tag_TIU_Output_msg_API_TIU_Pkg {
-  kcg_bool valid;
-  Message_EVC_to_Train_Interface_T_TIU_Types_Pkg info;
-} TIU_Output_msg_API_TIU_Pkg;
+  T_internal_Type_Obu_BasicTypes_Pkg system_clock;
+  DMI_speedProfile_T_DMI_Types_Pkg speedProfiles;
+  DMI_gradientProfile_T_DMI_Types_Pkg gradientProfiles;
+  DMI_trackCondition_T_DMI_Types_Pkg trackConditions;
+} DMI_Track_Description_T_DMI_Messages_EVC_to_DMI_Pkg;
 
 /* TM::P080_sections_array_flat_T/, TM_conversions::C_P080_compr_onboard/ */
-typedef kcg_int64 P080_sections_array_flat_T_TM[198];
+typedef kcg_int32 P080_sections_array_flat_T_TM[198];
 
-typedef P080_sections_array_flat_T_TM array_int64_198_33[33];
+typedef P080_sections_array_flat_T_TM array_int32_198_33[33];
 
-typedef kcg_int64 array_int64_32[32];
+/* TM::P045_trackside_int_T/ */
+typedef struct kcg_tag_P045_trackside_int_T_TM {
+  kcg_bool valid;
+  kcg_int32 NID_PACKET;
+  kcg_int32 Q_DIR;
+  kcg_int32 L_PACKET;
+  kcg_int32 NID_MN;
+} P045_trackside_int_T_TM;
+
+typedef kcg_int32 array_int32_32[32];
 
 /* TM_baseline2::P003V1_trackide_sectionlist_T/ */
-typedef array_int64_32 P003V1_trackide_sectionlist_T_TM_baseline2;
+typedef array_int32_32 P003V1_trackide_sectionlist_T_TM_baseline2;
 
 /* TM_baseline2::P003V1_trackside_int_T/ */
 typedef struct kcg_tag_P003V1_trackside_int_T_TM_baseline2 {
   kcg_bool valid;
-  kcg_int64 NID_PACKET;
-  kcg_int64 Q_DIR;
-  kcg_int64 L_PACKET;
-  kcg_int64 Q_SCALE;
-  kcg_int64 D_VALIDNV;
-  kcg_int64 N_ITER;
+  kcg_int32 NID_PACKET;
+  kcg_int32 Q_DIR;
+  kcg_int32 L_PACKET;
+  kcg_int32 Q_SCALE;
+  kcg_int32 D_VALIDNV;
+  kcg_int32 N_ITER;
   P003V1_trackide_sectionlist_T_TM_baseline2 SECTIONS;
-  kcg_int64 V_NVSHUNT;
-  kcg_int64 V_NVSTFF;
-  kcg_int64 V_NVONSIGHT;
-  kcg_int64 V_NVUNFIT;
-  kcg_int64 V_NVREL;
-  kcg_int64 D_NVROLL;
-  kcg_int64 Q_NVSRBKTRG;
-  kcg_int64 Q_NVEMRRLS;
-  kcg_int64 V_NVALLOWOVTRP;
-  kcg_int64 V_NVSUPOVTRP;
-  kcg_int64 D_NVOVTRP;
-  kcg_int64 T_NVOVTRP;
-  kcg_int64 D_NVPOTRP;
-  kcg_int64 M_NVCONTACT;
-  kcg_int64 T_NVCONTACT;
-  kcg_int64 M_NVDERUN;
-  kcg_int64 D_NVSTFF;
-  kcg_int64 Q_NVDRIVER_ADHES;
+  kcg_int32 V_NVSHUNT;
+  kcg_int32 V_NVSTFF;
+  kcg_int32 V_NVONSIGHT;
+  kcg_int32 V_NVUNFIT;
+  kcg_int32 V_NVREL;
+  kcg_int32 D_NVROLL;
+  kcg_int32 Q_NVSRBKTRG;
+  kcg_int32 Q_NVEMRRLS;
+  kcg_int32 V_NVALLOWOVTRP;
+  kcg_int32 V_NVSUPOVTRP;
+  kcg_int32 D_NVOVTRP;
+  kcg_int32 T_NVOVTRP;
+  kcg_int32 D_NVPOTRP;
+  kcg_int32 M_NVCONTACT;
+  kcg_int32 T_NVCONTACT;
+  kcg_int32 M_NVDERUN;
+  kcg_int32 D_NVSTFF;
+  kcg_int32 Q_NVDRIVER_ADHES;
 } P003V1_trackside_int_T_TM_baseline2;
 
 /* TM_baseline2::P003V1_OBU_sectionlist_int_T/ */
-typedef array_int64_32 P003V1_OBU_sectionlist_int_T_TM_baseline2;
+typedef array_int32_32 P003V1_OBU_sectionlist_int_T_TM_baseline2;
 
-typedef P003V1_OBU_sectionlist_int_T_TM_baseline2 array_int64_32_32[32];
+typedef P003V1_OBU_sectionlist_int_T_TM_baseline2 array_int32_32_32[32];
 
 /* SDMConversionModelPkg::LKrIntLookUp_t/ */
-typedef array_int64_32 LKrIntLookUp_t_SDMConversionModelPkg;
+typedef array_int32_32 LKrIntLookUp_t_SDMConversionModelPkg;
 
-typedef kcg_int64 array_int64_444[444];
+typedef kcg_int32 array_int32_444[444];
 
-typedef struct kcg_tag_struct_486081 {
+typedef kcg_int32 array_int32_20[20];
+
+/* TIU_Types_Pkg::Brake_pressure_value_T/ */
+typedef struct kcg_tag_Brake_pressure_value_T_TIU_Types_Pkg {
   kcg_bool valid;
-  kcg_int64 v_nvkvint_k_m;
-  kcg_float64 m_nvkvint_km_12;
-  kcg_float64 m_nvkvint_km_23;
-} struct_486081;
+  kcg_int32 pressure;
+} Brake_pressure_value_T_TIU_Types_Pkg;
 
-/* TM::P003_OBU_k_m_section_enum_T/ */
-typedef struct_486081 P003_OBU_k_m_section_enum_T_TM;
-
-/* TM_baseline2::P203V1_OBU_k_m_section_enum_T/ */
-typedef struct_486081 P203V1_OBU_k_m_section_enum_T_TM_baseline2;
-
-typedef struct_486081 _66_array[32];
-
-/* TM::P003_OBU_k_m_sectionlist_enum_T/ */
-typedef _66_array P003_OBU_k_m_sectionlist_enum_T_TM;
-
-/* TM_baseline2::P203V1_OBU_k_m_sectionlist_enum_T/ */
-typedef _66_array P203V1_OBU_k_m_sectionlist_enum_T_TM_baseline2;
-
-typedef struct kcg_tag_struct_492513 {
+typedef struct kcg_tag_struct_487594 {
   kcg_bool valid;
-  Q_NVKVINTSET q_nvkvintset_k;
-  kcg_float64 a_nvp12_k;
-  kcg_float64 a_nvp23_k;
-  kcg_int64 v_nvkvint_k;
-  kcg_float64 m_nvkvint_k_12;
-  kcg_float64 m_nvkvint_k_23;
-  kcg_int64 n_iter_k_m;
-  _66_array n_iter_k_m_list;
-} struct_492513;
-
-/* TM::P003_OBU_k_section_enum_T/ */
-typedef struct_492513 P003_OBU_k_section_enum_T_TM;
-
-/* TM_baseline2::P203V1_OBU_k_section_enum_T/ */
-typedef struct_492513 P203V1_OBU_k_section_enum_T_TM_baseline2;
-
-typedef struct_492513 _11_array[32];
-
-/* TM::P003_OBU_k_sectionlist_enum_T/ */
-typedef _11_array P003_OBU_k_sectionlist_enum_T_TM;
-
-/* TM_baseline2::P203V1_OBU_k_sectionlist_enum_T/ */
-typedef _11_array P203V1_OBU_k_sectionlist_enum_T_TM_baseline2;
-
-typedef kcg_int64 array_int64_20[20];
-
-typedef kcg_int64 array_int64_23[23];
-
-typedef kcg_int64 array_int64_266[266];
-
-typedef kcg_int64 array_int64_14[14];
-
-typedef kcg_int64 array_int64_100[100];
-
-typedef kcg_int64 array_int64_269[269];
-
-typedef kcg_int64 array_int64_17[17];
-
-/* TM_TrainToTrack::P000_TrainTrack_int/ */
-typedef array_int64_17 P000_TrainTrack_int_TM_TrainToTrack;
-
-/* TM_TrainToTrack::P001_TrainTrack_int/ */
-typedef array_int64_17 P001_TrainTrack_int_TM_TrainToTrack;
-
-typedef kcg_int64 array_int64_260[260];
-
-typedef kcg_int64 array_int64_432[432];
-
-typedef kcg_int64 array_int64_11[11];
-
-/* TM_TrainToTrack::Array11/ */
-typedef array_int64_11 Array11_TM_TrainToTrack;
-
-/* DATA::DMI_Driver_Identifier_int_array_T/ */
-typedef array_int64_11 DMI_Driver_Identifier_int_array_T_DATA;
-
-/* TM::P137_trackside_int_T/ */
-typedef struct kcg_tag_P137_trackside_int_T_TM {
-  kcg_bool valid;
-  kcg_int64 NID_PACKET;
-  kcg_int64 Q_DIR;
-  kcg_int64 L_PACKET;
-  kcg_int64 Q_SRSTOP;
-} P137_trackside_int_T_TM;
-
-typedef kcg_int64 array_int64_97[97];
-
-/* CheckBGConsistency_Pkg::SubFunction::MergFunction::MergAllPackets/IfBlock1:else:else:then:,
-   Common_Types_Pkg::CompressedPacketData_T/,
-   TM::Read_P005/,
-   TM::Read_P012/,
-   TM::Read_P015/,
-   TM::Read_P021/,
-   TM::Read_P041/,
-   TM::Read_P042/,
-   TM::Read_P045/,
-   TM::Read_P046/,
-   TM::Read_P057/,
-   TM::Read_P058/,
-   TM::Read_P065/,
-   TM::Read_P080/,
-   TM::Read_P131/,
-   TM::Read_P135/,
-   TM::Read_P137/,
-   TM::Read_P138/,
-   TM::Read_P139/,
-   TM_baseline2::Read_P003V1/,
-   TM_baseline2::Read_P027V1/,
-   TM_baseline2::Read_P027V1_sections/,
-   TM_conversions::C_P005_tracksim_compr/,
-   TM_conversions::C_P015_tracksim_compr/,
-   TM_conversions::C_P021_tracksim_compr/,
-   TM_conversions::C_P041_tracksim_compr/,
-   TM_conversions::C_P042_tracksim_compr/,
-   TM_conversions::C_P045_tracksim_compr/,
-   TM_conversions::C_P046_tracksim_compr/,
-   TM_conversions::C_P057_tracksim_compr/,
-   TM_conversions::C_P058_tracksim_compr/,
-   TM_conversions::C_P065_tracksim_compr/,
-   TM_conversions::C_P137_tracksim_compr/,
-   TM_conversions::C_P255_tracksim_compr/,
-   TM_conversions_baseline2::C_P003V1_tracksim_compr/,
-   TM_conversions_baseline2::C_P027V1_tracksim_compr_body/,
-   TM_conversions_baseline2::C_P027V1_tracksim_compr_one_section/,
-   TM_lib_internal::RECV_ReadPacketKernel/,
-   TM_lib_internal::RECV_ReadPackets/,
-   TM_lib_internal::SEND_MessageData/ */
-typedef kcg_int64 CompressedPacketData_T_Common_Types_Pkg[500];
-
-/* Common_Types_Pkg::CompressedPackets_T/ */
-typedef struct kcg_tag_CompressedPackets_T_Common_Types_Pkg {
-  Metadata_T_Common_Types_Pkg PacketHeaders;
-  CompressedPacketData_T_Common_Types_Pkg PacketData;
-} CompressedPackets_T_Common_Types_Pkg;
-
-/* Radio_Types_Pkg::RadioMessage_T/ */
-typedef struct kcg_tag_RadioMessage_T_Radio_Types_Pkg {
-  kcg_bool present;
-  kcg_bool consistencyError;
-  Radio_TrackTrain_Header_T_Radio_Types_Pkg header;
-  RadioMetadata_T_Common_Types_Pkg radioMetadata;
-  CompressedPackets_T_Common_Types_Pkg packets;
-  RBC_Id_T_Common_Types_Pkg sendingRBC;
-} RadioMessage_T_Radio_Types_Pkg;
-
-/* API_Msg_Pkg::API_TrackSideInput_T/ */
-typedef struct kcg_tag_API_TrackSideInput_T_API_Msg_Pkg {
-  kcg_bool valid;
-  T_internal_Type_Obu_BasicTypes_Pkg systemTimeMsgReceived;
-  MsgSource_T_Common_Types_Pkg msg_type;
-  API_TelegramHeader_T_API_Msg_Pkg btm_msg;
-  API_RadioMsgHeader_T_API_Msg_Pkg rtm_msg;
-  CompressedPackets_T_Common_Types_Pkg packets;
-} API_TrackSideInput_T_API_Msg_Pkg;
-
-typedef API_TrackSideInput_T_API_Msg_Pkg _109_array[5];
-
-typedef struct kcg_tag_struct_493015 {
-  kcg_bool valid;
-  MsgSource_T_Common_Types_Pkg source;
-  RadioMetadata_T_Common_Types_Pkg radioMetadata;
-  BG_Header_T_BG_Types_Pkg BG_Common_Header;
-  struct_491646 Radio_Common_Header;
-  CompressedPackets_T_Common_Types_Pkg packets;
-  RBC_Id_T_Common_Types_Pkg sendingRBC;
-} struct_493015;
-
-/* RCM_MsgTypes_Pkg::msgFromTrack_T/ */
-typedef struct_493015 msgFromTrack_T_RCM_MsgTypes_Pkg;
-
-/* Common_Types_Pkg::ReceivedMessage_T/ */
-typedef struct_493015 ReceivedMessage_T_Common_Types_Pkg;
-
-/* InformationFilter_Pkg::TransitionBuffer_T/,
-   InformationFilter_Pkg::TransitionBuffer_read_write/,
-   InformationFilter_Pkg::TransitionBuffer_write_only/ */
-typedef ReceivedMessage_T_Common_Types_Pkg TransitionBuffer_T_InformationFilter_Pkg[3];
-
-typedef struct_493015 _79_array[2];
-
-typedef struct_493015 _44_array[1];
-
-/* BG_Types_Pkg::Telegram_T/ */
-typedef struct kcg_tag_Telegram_T_BG_Types_Pkg {
-  kcg_bool valid;
-  kcg_bool checkResult;
-  TelegramHeader_T_BG_Types_Pkg telegramheader;
-  CompressedPackets_T_Common_Types_Pkg packets;
-} Telegram_T_BG_Types_Pkg;
-
-typedef Telegram_T_BG_Types_Pkg _111_array[7];
-
-/* BG_Types_Pkg::TelegramArray_T/,
-   Receive_TrackSide_Msg_Pkg::addTelegram/IfBlock1:else:,
-   Receive_TrackSide_Msg_Pkg::addTelegram/IfBlock1:then: */
-typedef Telegram_T_BG_Types_Pkg TelegramArray_T_BG_Types_Pkg[8];
-
-/* BG_Types_Pkg::BG_Message_T/ */
-typedef struct kcg_tag_BG_Message_T_BG_Types_Pkg {
-  kcg_bool present;
-  TelegramArray_T_BG_Types_Pkg Telegrams;
-  kcg_int64 numberBalises;
-  centerOfBalisePosition_T_BG_Types_Pkg centerOfBalisePosition;
-} BG_Message_T_BG_Types_Pkg;
-
-/* Common_Types_Pkg::TrackSide_ForCheck_T/ */
-typedef struct kcg_tag_TrackSide_ForCheck_T_Common_Types_Pkg {
-  kcg_bool valid;
-  T_internal_Type_Obu_BasicTypes_Pkg systemTime;
-  MsgSource_T_Common_Types_Pkg msg_type;
-  BG_Message_T_BG_Types_Pkg telegramHeaders;
-  RadioMessage_T_Radio_Types_Pkg radio_Msg;
-} TrackSide_ForCheck_T_Common_Types_Pkg;
-
-/* Receive_TrackSide_Msg_Pkg::TelegramStore_T/ */
-typedef struct kcg_tag_TelegramStore_T_Receive_TrackSide_Msg_Pkg {
-  kcg_bool valid;
-  Telegram_T_BG_Types_Pkg telegram;
-  centerOfBalisePosition_T_BG_Types_Pkg position;
-} TelegramStore_T_Receive_TrackSide_Msg_Pkg;
-
-/* InfraLib::R_data_internal_T/ */
-typedef struct kcg_tag_R_data_internal_T_InfraLib {
-  M_TrackTrain_Radio_T_TM_radio_messages message;
-  CompressedPackets_T_Common_Types_Pkg packets;
-  kcg_int64 trigger;
-  kcg_bool message_sent;
-} R_data_internal_T_InfraLib;
-
-typedef CompressedPackets_T_Common_Types_Pkg _26_array[33];
-
-/* InfraLib::B_data_internal_T/ */
-typedef struct kcg_tag_B_data_internal_T_InfraLib {
-  BaliseTelegramHeader_int_T_TM header;
-  CompressedPackets_T_Common_Types_Pkg packets;
-  kcg_int64 engineering_BG_location;
-  kcg_float64 TrainPos;
-  kcg_int64 pig_nom_0;
-  kcg_bool balise_passed;
-} B_data_internal_T_InfraLib;
-
-/* TM::CompressedRadioMessage/ */
-typedef struct kcg_tag_CompressedRadioMessage_TM {
-  Radio_TrackTrain_Header_T_TM Header;
-  CompressedPackets_T_Common_Types_Pkg Messages;
-} CompressedRadioMessage_TM;
-
-/* RadioTrackTrainMessageQueueEntry_T/ */
-typedef struct kcg_tag_RadioTrackTrainMessageQueueEntry_T {
-  kcg_bool m_IsValid;
-  CompressedRadioMessage_TM m_Entry;
-} RadioTrackTrainMessageQueueEntry_T;
-
-/* RBC_Collections_Pkg::RadioTrackTrainMessageQueue__Take/IfBlock1:else:else:,
-   RBC_Collections_Pkg::RadioTrackTrainMessageQueue__Take/IfBlock1:then:,
-   RBC_Collections_Pkg::RadioTrackTrainMessageQueue__TryPut/IfBlock1:then:,
-   RadioTrackTrainMessageQueueEntries_T/ */
-typedef RadioTrackTrainMessageQueueEntry_T RadioTrackTrainMessageQueueEntries_T[8];
-
-/* RadioTrackTrainMessageQueue_T/ */
-typedef struct kcg_tag_RadioTrackTrainMessageQueue_T {
-  RadioTrackTrainMessageQueueEntries_T m_Entries;
-} RadioTrackTrainMessageQueue_T;
-
-typedef RadioTrackTrainMessageQueueEntry_T _38_array[1];
-
-typedef RadioTrackTrainMessageQueueEntry_T array[7];
-
-/* TM::CompressedBaliseMessage/ */
-typedef struct kcg_tag_CompressedBaliseMessage_TM {
-  BaliseTelegramHeader_int_T_TM Header;
-  CompressedPackets_T_Common_Types_Pkg Messages;
-} CompressedBaliseMessage_TM;
-
-typedef CompressedPacketData_T_Common_Types_Pkg array_int64_500_500[500];
-
-/* InfraLib::TrainPosRaw_T/ */
-typedef struct kcg_tag_TrainPosRaw_T_InfraLib {
-  kcg_float64 TrainPos_in;
-  kcg_int64 OffsetTotal;
-  kcg_float64 TrainPosCalibrated;
-} TrainPosRaw_T_InfraLib;
-
-/* InfraLib::TrackSectionData_T/ */
-typedef struct kcg_tag_TrackSectionData_T_InfraLib {
-  TrainPosRaw_T_InfraLib TrainPosRaw;
-  CompressedBaliseMessage_TM BG_Message;
-} TrackSectionData_T_InfraLib;
-
-typedef kcg_int64 array_int64_5[5];
-
-/* V5/ */
-typedef array_int64_5 V5;
-
-/* TM_TrainToTrack::P003_nid_radio_list_int_t/ */
-typedef array_int64_5 P003_nid_radio_list_int_t_TM_TrainToTrack;
-
-/* TM_TrainToTrack::P011_ntc_list_array_T/ */
-typedef array_int64_5 P011_ntc_list_array_T_TM_TrainToTrack;
-
-/* TM_TrainToTrack::P011_ntc_list/ */
-typedef array_int64_5 P011_ntc_list_TM_TrainToTrack;
-
-/* TM_TrainToTrack::P011/ */
-typedef struct kcg_tag_P011_TM_TrainToTrack {
-  kcg_bool valid;
-  NID_PACKET nid_packet;
-  L_PACKET l_packet;
-  NC_CDTRAIN nc_cdtrain;
-  NC_TRAIN nc_train;
-  L_TRAIN l_train;
-  V_MAXTRAIN v_maxtrain;
-  M_LOADINGGAUGE m_loadinggauge;
-  M_AXLELOADCAT m_axleloadcat;
-  M_AIRTIGHT m_airtight;
-  N_AXLE n_axle;
-  N_ITER n_iter_voltage;
-  P011_voltage_list_TM_TrainToTrack voltage_list;
-  N_ITER n_iter_nid_ntc;
-  P011_ntc_list_TM_TrainToTrack nid_ntc_list;
-} P011_TM_TrainToTrack;
-
-/* TM::Array05/ */
-typedef array_int64_5 Array05_TM;
-
-/* TM_TrainToTrack::P003_nid_radio_list_t/ */
-typedef array_int64_5 P003_nid_radio_list_t_TM_TrainToTrack;
-
-/* TM_TrainToTrack::P003/ */
-typedef struct kcg_tag_P003_TM_TrainToTrack {
-  kcg_bool valid;
-  NID_PACKET nid_packet;
-  L_PACKET l_packet;
-  N_ITER n_iter;
-  P003_nid_radio_list_t_TM_TrainToTrack nid_radio;
-} P003_TM_TrainToTrack;
-
-/* Packet_TrainTypes_Pkg::aNID_NTC_T/ */
-typedef array_int64_5 aNID_NTC_T_Packet_TrainTypes_Pkg;
-
-/* TIU_Types_Pkg::trainData_T/ */
-typedef struct kcg_tag_trainData_T_TIU_Types_Pkg {
-  kcg_bool valid;
-  kcg_bool acknowledgedByDriver;
-  NC_TRAIN trainCategory;
-  NC_CDTRAIN cantDeficientcy;
-  L_internal_Type_Obu_BasicTypes_Pkg trainLength;
-  kcg_int64 brakePerctage;
-  V_internal_Type_Obu_BasicTypes_Pkg maxTrainSpeed;
-  M_LOADINGGAUGE loadingGauge;
-  M_AXLELOADCAT axleLoadCategory;
-  M_AIRTIGHT airtightSystem;
-  kcg_int64 axleNumber;
-  kcg_int64 numberNationalSystems;
-  aNID_NTC_T_Packet_TrainTypes_Pkg nationSystems;
-  kcg_int64 numberTractionSystems;
-  aTractionIdentity_T_Packet_TrainTypes_Pkg tractionSystem;
-} trainData_T_TIU_Types_Pkg;
-
-/* TIU_Types_Pkg::Message_Train_Interface_to_EVC_T/ */
-typedef struct kcg_tag_Message_Train_Interface_to_EVC_T_TIU_Types_Pkg {
-  Mode_control_and_train_status_T_TIU_Types_Pkg train_status;
-  Brake_status_T_TIU_Types_Pkg brake_status;
-  Brake_pressure_value_T_TIU_Types_Pkg brake_pressure;
-  M_train_data_entry_type_T_TIU_Types_Pkg train_data_entry_type;
-  trainData_T_TIU_Types_Pkg train_data_info;
-  Type_I_train_and_brake_inhibition_with_distance_commands_T_TIU_Types_Pkg type_I_train_and_brake_inhibition;
-} Message_Train_Interface_to_EVC_T_TIU_Types_Pkg;
-
-/* API_TIU_Pkg::TIU_Input_msg/ */
-typedef struct kcg_tag_TIU_Input_msg_API_TIU_Pkg {
-  kcg_bool valid;
-  Message_Train_Interface_to_EVC_T_TIU_Types_Pkg info;
-} TIU_Input_msg_API_TIU_Pkg;
-
-typedef trainData_T_TIU_Types_Pkg _99_array[100];
-
-/* Packet_TrainTypes_Pkg::PT11_ValidatedTrainData_T/ */
-typedef struct kcg_tag_PT11_ValidatedTrainData_T_Packet_TrainTypes_Pkg {
-  kcg_bool valid;
-  NC_CDTRAIN nc_cdtrain;
-  NC_TRAIN nc_train;
-  L_internal_Type_Obu_BasicTypes_Pkg l_train;
-  V_internal_Type_Obu_BasicTypes_Pkg v_maxtrain;
-  M_LOADINGGAUGE m_loadinggoage;
-  M_AXLELOADCAT m_axleloadcat;
-  M_AIRTIGHT m_airtight;
-  N_AXLE n_axle;
-  kcg_int64 nIter_tractionIdentity;
-  aTractionIdentity_T_Packet_TrainTypes_Pkg tractionIdentity;
-  kcg_int64 nIter_ntc;
-  aNID_NTC_T_Packet_TrainTypes_Pkg nid_ntc;
-} PT11_ValidatedTrainData_T_Packet_TrainTypes_Pkg;
-
-/* Common_Types_Pkg::outPackets_T/ */
-typedef struct kcg_tag_outPackets_T_Common_Types_Pkg {
-  PT0_PositionReport_T_Packet_TrainTypes_Pkg p0;
-  PT1_PositionReport_2BG_T_Packet_TrainTypes_Pkg p1;
-  PT3_OnboardTelephoneNumbers_T_Packet_TrainTypes_Pkg p3;
-  PT4_ErrorReporting_T_Packet_TrainTypes_Pkg p4;
-  PT5_TrainRunningNumber_Packet_TrainTypes_Pkg p5;
-  PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg p9;
-  PT11_ValidatedTrainData_T_Packet_TrainTypes_Pkg p11;
-} outPackets_T_Common_Types_Pkg;
-
-typedef struct kcg_tag_struct_485794 {
-  kcg_bool present;
-  struct_492262 header;
-  outPackets_T_Common_Types_Pkg packets;
-} struct_485794;
-
-/* RCM_MsgTypes_Pkg::msgToTrack_T/ */
-typedef struct_485794 msgToTrack_T_RCM_MsgTypes_Pkg;
-
-/* TM_transitional::Radio_TrainTrack_Message_T/ */
-typedef struct_485794 Radio_TrainTrack_Message_T_TM_transitional;
-
-/* Radio_Types_Pkg::Radio_TrainTrack_Message_T/ */
-typedef struct_485794 Radio_TrainTrack_Message_T_Radio_Types_Pkg;
-
-/* TrainData_T/ */
-typedef struct kcg_tag_TrainData_T {
-  NID_ENGINE nid_engine;
-  kcg_int64 m_NumberOfOnboardPhoneNumbers;
-  aNID_RADIO_T_Packet_TrainTypes_Pkg m_OnboardPhoneNumbers;
-  T_TRAIN t_train_ref;
-  NC_CDTRAIN nc_cdtrain;
-  NC_TRAIN nc_train;
-  L_TRAIN l_train;
-  V_MAXTRAIN v_maxtrain;
-  M_LOADINGGAUGE m_loadinggauge;
-  M_AXLELOADCAT m_axleloadcat;
-  M_AIRTIGHT m_airtight;
-  N_AXLE n_axle;
-  aTractionIdentity_T_Packet_TrainTypes_Pkg m_TractionIdentities;
-  aNID_NTC_T_Packet_TrainTypes_Pkg m_NationalSystemIdentities;
-  NID_OPERATIONAL nid_operational;
-} TrainData_T;
-
-/* SessionManagement_T/ */
-typedef struct kcg_tag_SessionManagement_T {
-  TrainData_T m_TrainData;
-  PosData_T m_PosData;
-} SessionManagement_T;
-
-/* RBC_DataBus_Pkg::RBC_Data_T/ */
-typedef struct kcg_tag_RBC_Data_T_RBC_DataBus_Pkg {
-  SessionManagement_T session;
-  DynamicConfig_T config;
-  _56_array diagnostic;
-  RadioTrackTrainMessageQueue_T messageQueue;
-  Clock_T clockk;
-  CompressedRadioMessage_TM lastSentTrackTrainMessage;
-} RBC_Data_T_RBC_DataBus_Pkg;
-
-typedef kcg_int64 array_int64_8[8];
-
-/* TM_TrainToTrack::P003_TrainTrack_int/ */
-typedef array_int64_8 P003_TrainTrack_int_TM_TrainToTrack;
-
-/* TM_TrainToTrack::P011_voltage_sections_array_flat_t/ */
-typedef array_int64_8 P011_voltage_sections_array_flat_t_TM_TrainToTrack;
-
-typedef P011_voltage_sections_array_flat_t_TM_TrainToTrack array_int64_8_4[4];
-
-/* TM::Array08/ */
-typedef array_int64_8 Array08_TM;
-
-typedef struct kcg_tag_struct_485264 {
-  kcg_int64 number;
-  kcg_int64 dig1;
-  kcg_int64 dig2;
-  kcg_int64 dig3;
-} struct_485264;
-
-/* DMI_Types_Pkg::DMI_loadingGauge_T/ */
-typedef struct_485264 DMI_loadingGauge_T_DMI_Types_Pkg;
-
-/* DMI_Types_Pkg::DMI_airtightSystem_T/ */
-typedef struct_485264 DMI_airtightSystem_T_DMI_Types_Pkg;
-
-/* DMI_Types_Pkg::DMI_vMax_id_T/ */
-typedef struct_485264 DMI_vMax_id_T_DMI_Types_Pkg;
-
-/* DMI_Types_Pkg::DMI_brakeModel_id_T/ */
-typedef struct_485264 DMI_brakeModel_id_T_DMI_Types_Pkg;
-
-/* DMI_Messages_EVC_to_DMI_Pkg::DMI_EVC_Coded_Train_Data_T/ */
-typedef struct kcg_tag_DMI_EVC_Coded_Train_Data_T_DMI_Messages_EVC_to_DMI_Pkg {
-  kcg_bool valid;
-  T_internal_Type_Obu_BasicTypes_Pkg system_clock;
-  DMI_train_id_T_DMI_Types_Pkg trainID;
-  DMI_train_length_T_DMI_Types_Pkg trainLength;
-  DMI_brakeModel_id_T_DMI_Types_Pkg brakeModel;
-  DMI_vMax_id_T_DMI_Types_Pkg vmax;
-  M_AXLELOADCAT mAxleLoad;
-  DMI_airtightSystem_T_DMI_Types_Pkg airTightSystem;
-  DMI_loadingGauge_T_DMI_Types_Pkg mLoadingGauge;
-} DMI_EVC_Coded_Train_Data_T_DMI_Messages_EVC_to_DMI_Pkg;
-
-/* API_DMI_Pkg::EVC_to_DMI_Message_T/ */
-typedef struct kcg_tag_EVC_to_DMI_Message_T_API_DMI_Pkg {
-  kcg_bool present;
-  DMI_Dynamic_T_DMI_Messages_EVC_to_DMI_Pkg dynamic;
-  DMI_Menu_Request_T_DMI_Messages_EVC_to_DMI_Pkg menu_request;
-  DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg entry_request;
-  DMI_EVC_Coded_Train_Data_T_DMI_Messages_EVC_to_DMI_Pkg evc_coded_train_data;
-  DMI_Text_Message_T_DMI_Messages_EVC_to_DMI_Pkg textMessage;
-  DMI_Track_Description_T_DMI_Messages_EVC_to_DMI_Pkg trackDescription;
-  DMI_Identifier_Request_T_DMI_Messages_EVC_to_DMI_Pkg identifierRequest;
-  DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg systemVersion;
-  DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg displayControl;
-  DMI_EVC_Level_Data_T_DMI_Messages_EVC_to_DMI_Pkg EVC_levelData;
-  DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg EVC_radioNetData;
-  DMI_Driver_Identifier_T_DMI_Messages_Bothways_Pkg driverIdentifier;
-  DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg trainRunningNumber;
-  DMI_Train_Data_T_DMI_Messages_Bothways_Pkg trainData;
-  DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg adhesionFactor;
-  DMI_Icons_T_DMI_Messages_EVC_to_DMI_Pkg iconRequest;
-} EVC_to_DMI_Message_T_API_DMI_Pkg;
-
-typedef kcg_int64 array_int64_2[2];
-
-/* TM::P046_section_array_T/ */
-typedef array_int64_2 P046_section_array_T_TM;
-
-/* TM::P046_OBU_sectionlist_array_T/,
-   TM_lib_internal::C_P046_flatten_sections/ */
-typedef P046_section_array_T_TM P046_OBU_sectionlist_array_T_TM[33];
-
-typedef P046_OBU_sectionlist_array_T_TM array_int64_2_33_99[99];
-
-/* TM_baseline2::P027V1_section_array_qdiff_T/ */
-typedef array_int64_2 P027V1_section_array_qdiff_T_TM_baseline2;
-
-/* TM::P058_section_array_T/ */
-typedef array_int64_2 P058_section_array_T_TM;
-
-/* TM_TrainToTrack::P011_voltage_section_array_T/ */
-typedef array_int64_2 P011_voltage_section_array_T_TM_TrainToTrack;
-
-/* TM_TrainToTrack::P011_voltage_sectionlist_array_T/,
-   TM_TrainToTrack_lib_internal::C_P011_flatten_sections_voltage/ */
-typedef P011_voltage_section_array_T_TM_TrainToTrack P011_voltage_sectionlist_array_T_TM_TrainToTrack[4];
-
-typedef P011_voltage_sectionlist_array_T_TM_TrainToTrack array_int64_2_4_8[8];
-
-/* DATA::DMI_Radio_Net_Data_int_array_T/ */
-typedef array_int64_2 DMI_Radio_Net_Data_int_array_T_DATA;
-
-typedef array_int64_2 array_int64_2_32[32];
-
-/* TM_baseline2::P027V1_OBU_sectionlist_array_qdiff_T/ */
-typedef array_int64_2_32 P027V1_OBU_sectionlist_array_qdiff_T_TM_baseline2;
-
-/* TM::P058_OBU_sectionlist_array_T/ */
-typedef array_int64_2_32 P058_OBU_sectionlist_array_T_TM;
-
-typedef array_int64_2_32 array_int64_2_32_64[64];
-
-typedef array_int64_2_32 array_int64_2_32_32[32];
-
-typedef kcg_int64 array_int64_491[491];
-
-/* DATA::Packets::EVC_to_DMI::CAST_DMI_Track_Description_to_int/,
-   DMI_Track_Description_int_array_T/,
-   Messages::CAST_int_to_EVC_to_DMI/ */
-typedef kcg_int64 DMI_Track_Description_int_array_T[325];
-
-typedef kcg_int64 array_int64_494[494];
-
-typedef struct kcg_tag_struct_485072 {
-  kcg_bool valid;
-  kcg_int64 nid_c;
-} struct_485072;
-
-/* TM_baseline2::P003V1_section_enum_T/ */
-typedef struct_485072 P003V1_section_enum_T_TM_baseline2;
-
-typedef P003V1_section_enum_T_TM_baseline2 _33_array[1];
-
-/* TM::P003_OBU_nid_c_section_enum_T/ */
-typedef struct_485072 P003_OBU_nid_c_section_enum_T_TM;
-
-/* Packet_Types_Pkg::nidC_T/ */
-typedef struct_485072 nidC_T_Packet_Types_Pkg;
-
-/* Packet_Types_Pkg::nidCArray_T/ */
-typedef nidC_T_Packet_Types_Pkg nidCArray_T_Packet_Types_Pkg[7];
-
-/* Packet_Types_Pkg::P3_NationalValues_T/ */
-typedef struct kcg_tag_P3_NationalValues_T_Packet_Types_Pkg {
-  kcg_bool valid;
-  Q_DIR q_dir;
-  D_VALIDNV d_validnv;
-  nidCArray_T_Packet_Types_Pkg nid_cArray;
-  V_NVSHUNT v_nvshunt;
-  V_NVSTFF v_nvstff;
-  V_NVONSIGHT v_nvonsight;
-  V_NVLIMSUPERV v_nvlimsuperv;
-  V_NVUNFIT v_nvunfit;
-  V_NVREL v_nvrel;
-  D_NVROLL d_nvroll;
-  Q_NVSBTSMPERM q_nvsbtsmperm;
-  Q_NVEMRRLS q_nvemrrls;
-  Q_NVGUIPERM q_nvguiperm;
-  Q_NVSBFBPERM q_nvsbfbperm;
-  Q_NVINHSMICPERM q_nvinhsmicperm;
-  V_NVALLOWOVTRP v_nvallowovtrp;
-  V_NVSUPOVTRP v_nvsupovtrp;
-  D_NVOVTRP d_nvovtrp;
-  T_NVOVTRP t_nvovtrp;
-  D_NVPOTRP d_nvpotrp;
-  M_NVCONTACT m_nvcontact;
-  T_NVCONTACT t_nvcontact;
-  M_NVDERUN m_nvderun;
-  D_NVSTFF d_nvstff;
-  Q_NVDRIVER_ADHES q_nvdriver_adhes;
-  A_NVMAXREDADH1 a_nvmaxredadh1;
-  A_NVMAXREDADH2 a_nvmaxredadh2;
-  A_NVMAXREDADH3 a_nvmaxredadh3;
-  Q_NVLOCACC q_nvlocacc;
-  M_NVAVADH m_nvavadh;
-  M_NVEBCL m_nvebcl;
-  Q_NVKINT q_nvkint;
-  nvkvintsetArray_T_Packet_Types_Pkg nvkvintsetArray;
-  nvkrintArray_T_Packet_Types_Pkg nvkrintArray;
-  M_NVKTINT m_nvktint;
-} P3_NationalValues_T_Packet_Types_Pkg;
-
-typedef struct_485072 _102_array[31];
-
-typedef struct_485072 _64_array[32];
-
-/* TM_baseline2::P003V1_sectionlist_enum_T/ */
-typedef _64_array P003V1_sectionlist_enum_T_TM_baseline2;
-
-/* TM_baseline2::P003V1_OBU_T/ */
-typedef struct kcg_tag_P003V1_OBU_T_TM_baseline2 {
-  kcg_bool valid;
-  Q_DIR q_dir;
-  Q_SCALE q_scale;
-  D_VALIDNV d_validnv;
-  N_ITER n_iter;
-  P003V1_sectionlist_enum_T_TM_baseline2 SECTIONS;
-  V_NVSHUNT v_nvshunt;
-  V_NVSTFF v_nvstff;
-  V_NVONSIGHT v_nvonsight;
-  V_NVUNFIT v_nvunfit;
-  V_NVREL v_nvrel;
-  D_NVROLL d_nvroll;
-  Q_NVSBTSMPERM q_nvsbtsmperm;
-  Q_NVEMRRLS q_nvemrrls;
-  V_NVALLOWOVTRP v_nvallowovtrp;
-  V_NVSUPOVTRP v_nvsopovtrp;
-  D_NVOVTRP d_nvovtrp;
-  T_NVOVTRP t_nvovtrp;
-  D_NVPOTRP d_nvpotrp;
-  M_NVCONTACT m_nvcontact;
-  T_NVCONTACT t_nvcontact;
-  M_NVDERUN m_nvderun;
-  D_NVSTFF d_nvstff;
-  Q_NVDRIVER_ADHES q_nvdriver_adhes;
-} P003V1_OBU_T_TM_baseline2;
-
-/* TM::P003_OBU_nid_c_sectionlist_enum_T/ */
-typedef _64_array P003_OBU_nid_c_sectionlist_enum_T_TM;
-
-typedef struct kcg_tag_struct_485021 {
-  kcg_bool valid;
-  kcg_int64 v_nvkvint_n;
-  kcg_float64 m_nvkvint_n_12;
-  kcg_float64 m_nvkvint_n_23;
-} struct_485021;
+  kcg_int32 v_nvkvint_n;
+  kcg_float32 m_nvkvint_n_12;
+  kcg_float32 m_nvkvint_n_23;
+} struct_487594;
 
 /* TM::P003_OBU_n_section_enum_T/ */
-typedef struct_485021 P003_OBU_n_section_enum_T_TM;
+typedef struct_487594 P003_OBU_n_section_enum_T_TM;
 
 /* TM_baseline2::P203V1_OBU_n_section_enum_T/ */
-typedef struct_485021 P203V1_OBU_n_section_enum_T_TM_baseline2;
+typedef struct_487594 P203V1_OBU_n_section_enum_T_TM_baseline2;
 
-typedef struct_485021 _67_array[32];
+typedef struct_487594 _67_array[32];
 
 /* TM::P003_OBU_n_sectionlist_enum_T/ */
 typedef _67_array P003_OBU_n_sectionlist_enum_T_TM;
@@ -7868,7 +6661,7 @@ typedef struct kcg_tag_P003_OBU_T_TM {
   M_NVKTINT m_nvktint;
 } P003_OBU_T_TM;
 
-typedef P003_OBU_T_TM _22_array[3];
+typedef P003_OBU_T_TM _20_array[3];
 
 /* TM_baseline2::P203V1_OBU_n_sectionlist_enum_T/ */
 typedef _67_array P203V1_OBU_n_sectionlist_enum_T_TM_baseline2;
@@ -7905,35 +6698,555 @@ typedef struct kcg_tag_P203V1_OBU_T_TM_baseline2 {
   M_NVKTINT m_nvktint;
 } P203V1_OBU_T_TM_baseline2;
 
-typedef kcg_int64 array_int64_150[150];
+typedef kcg_int32 array_int32_23[23];
 
-/* DATA::DMI_EVC_Level_Data_int_array_T/,
-   DATA::Packets::EVC_to_DMI::CAST_DMI_EVC_Level_Data_to_int1/,
+typedef kcg_int32 array_int32_266[266];
+
+typedef kcg_int32 array_int32_14[14];
+
+typedef kcg_int32 array_int32_100[100];
+
+typedef kcg_int32 array_int32_269[269];
+
+typedef struct kcg_tag_struct_487461 {
+  kcg_bool valid;
+  kcg_int32 l_section;
+  Q_SECTIONTIMER q_sectiontimer;
+  kcg_int32 t_sectiontimer;
+  kcg_int32 d_sectiontimerstoploc;
+} struct_487461;
+
+/* TM::P012_section_enum_T/ */
+typedef struct_487461 P012_section_enum_T_TM;
+
+/* TM::P015_section_enum_T/ */
+typedef struct_487461 P015_section_enum_T_TM;
+
+/* TM::P015_OBU_sectionlist_enum_T/,
+   TM_lib_internal::C_P012_unflatten_sections/,
+   TM_lib_internal::C_P015_unflatten_sections/ */
+typedef P015_section_enum_T_TM P015_OBU_sectionlist_enum_T_TM[32];
+
+typedef P015_OBU_sectionlist_enum_T_TM _100_array[10];
+
+/* TM::P012_OBU_T/ */
+typedef struct kcg_tag_P012_OBU_T_TM {
+  kcg_bool valid;
+  Q_DIR q_dir;
+  Q_SCALE q_scale;
+  V_MAIN v_main;
+  V_LOA v_loa;
+  T_LOA t_loa;
+  N_ITER n_iter;
+  P015_OBU_sectionlist_enum_T_TM sections;
+  L_ENDSECTION l_endsection;
+  Q_SECTIONTIMER q_sectiontimer;
+  T_SECTIONTIMER t_sectiontimer;
+  D_SECTIONTIMERSTOPLOC d_sectiontimerstoploc;
+  Q_ENDTIMER q_endtimer;
+  T_ENDTIMER t_endtimer;
+  D_ENDTIMERSTARTLOC d_endtimerstartloc;
+  Q_DANGERPOINT q_dangerpoint;
+  D_DP d_dp;
+  V_RELEASEDP v_releasedp;
+  Q_OVERLAP q_overlap;
+  D_STARTOL d_startol;
+  T_OL t_ol;
+  D_OL d_ol;
+  V_RELEASEOL v_releaseol;
+} P012_OBU_T_TM;
+
+/* TM::P015_OBU_T/ */
+typedef struct kcg_tag_P015_OBU_T_TM {
+  kcg_bool valid;
+  Q_DIR q_dir;
+  Q_SCALE q_scale;
+  V_LOA v_loa;
+  T_LOA t_loa;
+  N_ITER n_iter;
+  P015_OBU_sectionlist_enum_T_TM sections;
+  L_ENDSECTION l_endsection;
+  Q_SECTIONTIMER q_sectiontimer;
+  T_SECTIONTIMER t_sectiontimer;
+  D_SECTIONTIMERSTOPLOC d_sectiontimerstoploc;
+  Q_ENDTIMER q_endtimer;
+  T_ENDTIMER t_endtimer;
+  D_ENDTIMERSTARTLOC d_endtimerstartloc;
+  Q_DANGERPOINT q_dangerpoint;
+  D_DP d_dp;
+  V_RELEASEDP v_releasedp;
+  Q_OVERLAP q_overlap;
+  D_STARTOL d_startol;
+  T_OL t_ol;
+  D_OL d_ol;
+  V_RELEASEOL v_releaseol;
+} P015_OBU_T_TM;
+
+typedef P015_OBU_T_TM _110_array[5];
+
+typedef P015_OBU_sectionlist_enum_T_TM _59_array[5];
+
+typedef kcg_int32 array_int32_17[17];
+
+/* TM_TrainToTrack::P000_TrainTrack_int/ */
+typedef array_int32_17 P000_TrainTrack_int_TM_TrainToTrack;
+
+/* TM_TrainToTrack::P001_TrainTrack_int/ */
+typedef array_int32_17 P001_TrainTrack_int_TM_TrainToTrack;
+
+typedef kcg_int32 array_int32_260[260];
+
+typedef kcg_int32 array_int32_432[432];
+
+typedef kcg_int32 array_int32_11[11];
+
+/* TM_TrainToTrack::Array11/ */
+typedef array_int32_11 Array11_TM_TrainToTrack;
+
+/* DATA::DMI_Driver_Identifier_int_array_T/ */
+typedef array_int32_11 DMI_Driver_Identifier_int_array_T_DATA;
+
+typedef struct kcg_tag_struct_487344 {
+  kcg_int32 target;
+  kcg_int32 speed;
+} struct_487344;
+
+/* TA_MRSP_new::SSP_section_t/ */
+typedef struct_487344 SSP_section_t_TA_MRSP_new;
+
+/* TA_MRSP::SSP_section_t/ */
+typedef struct_487344 SSP_section_t_TA_MRSP;
+
+typedef struct_487344 _87_array[50];
+
+/* TA_MRSP_new::SSP_cat_t/ */
+typedef _87_array SSP_cat_t_TA_MRSP_new;
+
+/* TA_MRSP::SSP_cat_t/ */
+typedef _87_array SSP_cat_t_TA_MRSP;
+
+typedef _87_array _83_array[11];
+
+/* TA_MRSP_new::SSP_matrix_t/ */
+typedef _83_array SSP_matrix_t_TA_MRSP_new;
+
+/* TA_MRSP::SSP_matrix_t/ */
+typedef _83_array SSP_matrix_t_TA_MRSP;
+
+/* TA_EmergencyStop::NID_EM_Store::NID_EM_Store_T/ */
+typedef struct kcg_tag_NID_EM_Store_T_TA_EmergencyStop_NID_EM_Store {
+  kcg_int32 nfree;
+  _54_array items;
+} NID_EM_Store_T_TA_EmergencyStop_NID_EM_Store;
+
+typedef kcg_int32 array_int32_97[97];
+
+/* CheckBGConsistency_Pkg::SubFunction::MergFunction::MergAllPackets/IfBlock1:else:else:then:,
+   Common_Types_Pkg::CompressedPacketData_T/,
+   TM::Read_P005/,
+   TM::Read_P012/,
+   TM::Read_P015/,
+   TM::Read_P021/,
+   TM::Read_P041/,
+   TM::Read_P042/,
+   TM::Read_P045/,
+   TM::Read_P046/,
+   TM::Read_P057/,
+   TM::Read_P058/,
+   TM::Read_P065/,
+   TM::Read_P080/,
+   TM::Read_P131/,
+   TM::Read_P135/,
+   TM::Read_P137/,
+   TM::Read_P138/,
+   TM::Read_P139/,
+   TM_baseline2::Read_P003V1/,
+   TM_baseline2::Read_P027V1/,
+   TM_baseline2::Read_P027V1_sections/,
+   TM_conversions::C_P005_tracksim_compr/,
+   TM_conversions::C_P015_tracksim_compr/,
+   TM_conversions::C_P021_tracksim_compr/,
+   TM_conversions::C_P041_tracksim_compr/,
+   TM_conversions::C_P042_tracksim_compr/,
+   TM_conversions::C_P045_tracksim_compr/,
+   TM_conversions::C_P046_tracksim_compr/,
+   TM_conversions::C_P057_tracksim_compr/,
+   TM_conversions::C_P058_tracksim_compr/,
+   TM_conversions::C_P065_tracksim_compr/,
+   TM_conversions::C_P137_tracksim_compr/,
+   TM_conversions::C_P255_tracksim_compr/,
+   TM_conversions_baseline2::C_P003V1_tracksim_compr/,
+   TM_conversions_baseline2::C_P027V1_tracksim_compr_body/,
+   TM_conversions_baseline2::C_P027V1_tracksim_compr_one_section/,
+   TM_lib_internal::RECV_ReadPacketKernel/,
+   TM_lib_internal::RECV_ReadPackets/,
+   TM_lib_internal::SEND_MessageData/ */
+typedef kcg_int32 CompressedPacketData_T_Common_Types_Pkg[500];
+
+/* Common_Types_Pkg::CompressedPackets_T/ */
+typedef struct kcg_tag_CompressedPackets_T_Common_Types_Pkg {
+  Metadata_T_Common_Types_Pkg PacketHeaders;
+  CompressedPacketData_T_Common_Types_Pkg PacketData;
+} CompressedPackets_T_Common_Types_Pkg;
+
+/* BG_Types_Pkg::Telegram_T/ */
+typedef struct kcg_tag_Telegram_T_BG_Types_Pkg {
+  kcg_bool valid;
+  kcg_bool checkResult;
+  TelegramHeader_T_BG_Types_Pkg telegramheader;
+  CompressedPackets_T_Common_Types_Pkg packets;
+} Telegram_T_BG_Types_Pkg;
+
+typedef Telegram_T_BG_Types_Pkg _111_array[7];
+
+/* BG_Types_Pkg::TelegramArray_T/,
+   Receive_TrackSide_Msg_Pkg::addTelegram/IfBlock1:else:,
+   Receive_TrackSide_Msg_Pkg::addTelegram/IfBlock1:then: */
+typedef Telegram_T_BG_Types_Pkg TelegramArray_T_BG_Types_Pkg[8];
+
+/* BG_Types_Pkg::BG_Message_T/ */
+typedef struct kcg_tag_BG_Message_T_BG_Types_Pkg {
+  kcg_bool present;
+  TelegramArray_T_BG_Types_Pkg Telegrams;
+  kcg_int32 numberBalises;
+  centerOfBalisePosition_T_BG_Types_Pkg centerOfBalisePosition;
+} BG_Message_T_BG_Types_Pkg;
+
+/* Receive_TrackSide_Msg_Pkg::TelegramStore_T/ */
+typedef struct kcg_tag_TelegramStore_T_Receive_TrackSide_Msg_Pkg {
+  kcg_bool valid;
+  Telegram_T_BG_Types_Pkg telegram;
+  centerOfBalisePosition_T_BG_Types_Pkg position;
+} TelegramStore_T_Receive_TrackSide_Msg_Pkg;
+
+typedef CompressedPackets_T_Common_Types_Pkg _24_array[33];
+
+/* TM::CompressedRadioMessage/ */
+typedef struct kcg_tag_CompressedRadioMessage_TM {
+  Radio_TrackTrain_Header_T_TM Header;
+  CompressedPackets_T_Common_Types_Pkg Messages;
+} CompressedRadioMessage_TM;
+
+/* RadioTrackTrainMessageQueueEntry_T/ */
+typedef struct kcg_tag_RadioTrackTrainMessageQueueEntry_T {
+  kcg_bool m_IsValid;
+  CompressedRadioMessage_TM m_Entry;
+} RadioTrackTrainMessageQueueEntry_T;
+
+/* RBC_Collections_Pkg::RadioTrackTrainMessageQueue__Take/IfBlock1:else:else:,
+   RBC_Collections_Pkg::RadioTrackTrainMessageQueue__Take/IfBlock1:then:,
+   RBC_Collections_Pkg::RadioTrackTrainMessageQueue__TryPut/IfBlock1:then:,
+   RadioTrackTrainMessageQueueEntries_T/ */
+typedef RadioTrackTrainMessageQueueEntry_T RadioTrackTrainMessageQueueEntries_T[8];
+
+/* RadioTrackTrainMessageQueue_T/ */
+typedef struct kcg_tag_RadioTrackTrainMessageQueue_T {
+  RadioTrackTrainMessageQueueEntries_T m_Entries;
+} RadioTrackTrainMessageQueue_T;
+
+typedef RadioTrackTrainMessageQueueEntry_T _38_array[1];
+
+typedef RadioTrackTrainMessageQueueEntry_T array[7];
+
+/* TM::CompressedBaliseMessage/ */
+typedef struct kcg_tag_CompressedBaliseMessage_TM {
+  BaliseTelegramHeader_int_T_TM Header;
+  CompressedPackets_T_Common_Types_Pkg Messages;
+} CompressedBaliseMessage_TM;
+
+/* InfraLib::TrackSectionData_T/ */
+typedef struct kcg_tag_TrackSectionData_T_InfraLib {
+  TrainPosRaw_T_InfraLib TrainPosRaw;
+  CompressedBaliseMessage_TM BG_Message;
+} TrackSectionData_T_InfraLib;
+
+typedef CompressedPacketData_T_Common_Types_Pkg array_int32_500_500[500];
+
+typedef kcg_int32 array_int32_5[5];
+
+/* V5/ */
+typedef array_int32_5 V5;
+
+/* TM_TrainToTrack::P003_nid_radio_list_int_t/ */
+typedef array_int32_5 P003_nid_radio_list_int_t_TM_TrainToTrack;
+
+/* TM_TrainToTrack::P011_ntc_list_array_T/ */
+typedef array_int32_5 P011_ntc_list_array_T_TM_TrainToTrack;
+
+/* TM_TrainToTrack::P011_ntc_list/ */
+typedef array_int32_5 P011_ntc_list_TM_TrainToTrack;
+
+/* TM_TrainToTrack::P011/ */
+typedef struct kcg_tag_P011_TM_TrainToTrack {
+  kcg_bool valid;
+  NID_PACKET nid_packet;
+  L_PACKET l_packet;
+  NC_CDTRAIN nc_cdtrain;
+  NC_TRAIN nc_train;
+  L_TRAIN l_train;
+  V_MAXTRAIN v_maxtrain;
+  M_LOADINGGAUGE m_loadinggauge;
+  M_AXLELOADCAT m_axleloadcat;
+  M_AIRTIGHT m_airtight;
+  N_AXLE n_axle;
+  N_ITER n_iter_voltage;
+  P011_voltage_list_TM_TrainToTrack voltage_list;
+  N_ITER n_iter_nid_ntc;
+  P011_ntc_list_TM_TrainToTrack nid_ntc_list;
+} P011_TM_TrainToTrack;
+
+/* TM::Array05/ */
+typedef array_int32_5 Array05_TM;
+
+/* TM_TrainToTrack::P003_nid_radio_list_t/ */
+typedef array_int32_5 P003_nid_radio_list_t_TM_TrainToTrack;
+
+/* TM_TrainToTrack::P003/ */
+typedef struct kcg_tag_P003_TM_TrainToTrack {
+  kcg_bool valid;
+  NID_PACKET nid_packet;
+  L_PACKET l_packet;
+  N_ITER n_iter;
+  P003_nid_radio_list_t_TM_TrainToTrack nid_radio;
+} P003_TM_TrainToTrack;
+
+/* Packet_TrainTypes_Pkg::aNID_NTC_T/ */
+typedef array_int32_5 aNID_NTC_T_Packet_TrainTypes_Pkg;
+
+/* TIU_Types_Pkg::trainData_T/ */
+typedef struct kcg_tag_trainData_T_TIU_Types_Pkg {
+  kcg_bool valid;
+  kcg_bool acknowledgedByDriver;
+  NC_TRAIN trainCategory;
+  NC_CDTRAIN cantDeficientcy;
+  L_internal_Type_Obu_BasicTypes_Pkg trainLength;
+  kcg_int32 brakePerctage;
+  V_internal_Type_Obu_BasicTypes_Pkg maxTrainSpeed;
+  M_LOADINGGAUGE loadingGauge;
+  M_AXLELOADCAT axleLoadCategory;
+  M_AIRTIGHT airtightSystem;
+  kcg_int32 axleNumber;
+  kcg_int32 numberNationalSystems;
+  aNID_NTC_T_Packet_TrainTypes_Pkg nationSystems;
+  kcg_int32 numberTractionSystems;
+  aTractionIdentity_T_Packet_TrainTypes_Pkg tractionSystem;
+} trainData_T_TIU_Types_Pkg;
+
+/* TIU_Types_Pkg::Message_Train_Interface_to_EVC_T/ */
+typedef struct kcg_tag_Message_Train_Interface_to_EVC_T_TIU_Types_Pkg {
+  Mode_control_and_train_status_T_TIU_Types_Pkg train_status;
+  Brake_status_T_TIU_Types_Pkg brake_status;
+  Brake_pressure_value_T_TIU_Types_Pkg brake_pressure;
+  M_train_data_entry_type_T_TIU_Types_Pkg train_data_entry_type;
+  trainData_T_TIU_Types_Pkg train_data_info;
+  Type_I_train_and_brake_inhibition_with_distance_commands_T_TIU_Types_Pkg type_I_train_and_brake_inhibition;
+} Message_Train_Interface_to_EVC_T_TIU_Types_Pkg;
+
+/* API_TIU_Pkg::TIU_Input_msg/ */
+typedef struct kcg_tag_TIU_Input_msg_API_TIU_Pkg {
+  kcg_bool valid;
+  Message_Train_Interface_to_EVC_T_TIU_Types_Pkg info;
+} TIU_Input_msg_API_TIU_Pkg;
+
+typedef trainData_T_TIU_Types_Pkg _97_array[100];
+
+/* Packet_TrainTypes_Pkg::PT11_ValidatedTrainData_T/ */
+typedef struct kcg_tag_PT11_ValidatedTrainData_T_Packet_TrainTypes_Pkg {
+  kcg_bool valid;
+  NC_CDTRAIN nc_cdtrain;
+  NC_TRAIN nc_train;
+  L_internal_Type_Obu_BasicTypes_Pkg l_train;
+  V_internal_Type_Obu_BasicTypes_Pkg v_maxtrain;
+  M_LOADINGGAUGE m_loadinggoage;
+  M_AXLELOADCAT m_axleloadcat;
+  M_AIRTIGHT m_airtight;
+  N_AXLE n_axle;
+  kcg_int32 nIter_tractionIdentity;
+  aTractionIdentity_T_Packet_TrainTypes_Pkg tractionIdentity;
+  kcg_int32 nIter_ntc;
+  aNID_NTC_T_Packet_TrainTypes_Pkg nid_ntc;
+} PT11_ValidatedTrainData_T_Packet_TrainTypes_Pkg;
+
+/* Common_Types_Pkg::outPackets_T/ */
+typedef struct kcg_tag_outPackets_T_Common_Types_Pkg {
+  PT0_PositionReport_T_Packet_TrainTypes_Pkg p0;
+  PT1_PositionReport_2BG_T_Packet_TrainTypes_Pkg p1;
+  PT3_OnboardTelephoneNumbers_T_Packet_TrainTypes_Pkg p3;
+  PT4_ErrorReporting_T_Packet_TrainTypes_Pkg p4;
+  PT5_TrainRunningNumber_Packet_TrainTypes_Pkg p5;
+  PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg p9;
+  PT11_ValidatedTrainData_T_Packet_TrainTypes_Pkg p11;
+} outPackets_T_Common_Types_Pkg;
+
+typedef struct kcg_tag_struct_485689 {
+  kcg_bool present;
+  struct_492005 header;
+  outPackets_T_Common_Types_Pkg packets;
+} struct_485689;
+
+/* RCM_MsgTypes_Pkg::msgToTrack_T/ */
+typedef struct_485689 msgToTrack_T_RCM_MsgTypes_Pkg;
+
+/* TM_transitional::Radio_TrainTrack_Message_T/ */
+typedef struct_485689 Radio_TrainTrack_Message_T_TM_transitional;
+
+/* Radio_Types_Pkg::Radio_TrainTrack_Message_T/ */
+typedef struct_485689 Radio_TrainTrack_Message_T_Radio_Types_Pkg;
+
+/* TrainData_T/ */
+typedef struct kcg_tag_TrainData_T {
+  NID_ENGINE nid_engine;
+  kcg_int32 m_NumberOfOnboardPhoneNumbers;
+  aNID_RADIO_T_Packet_TrainTypes_Pkg m_OnboardPhoneNumbers;
+  T_TRAIN t_train_ref;
+  NC_CDTRAIN nc_cdtrain;
+  NC_TRAIN nc_train;
+  L_TRAIN l_train;
+  V_MAXTRAIN v_maxtrain;
+  M_LOADINGGAUGE m_loadinggauge;
+  M_AXLELOADCAT m_axleloadcat;
+  M_AIRTIGHT m_airtight;
+  N_AXLE n_axle;
+  aTractionIdentity_T_Packet_TrainTypes_Pkg m_TractionIdentities;
+  aNID_NTC_T_Packet_TrainTypes_Pkg m_NationalSystemIdentities;
+  NID_OPERATIONAL nid_operational;
+} TrainData_T;
+
+/* SessionManagement_T/ */
+typedef struct kcg_tag_SessionManagement_T {
+  TrainData_T m_TrainData;
+  PosData_T m_PosData;
+} SessionManagement_T;
+
+/* InfraLib::R_data_internal_T/ */
+typedef struct kcg_tag_R_data_internal_T_InfraLib {
+  M_TrackTrain_Radio_T_TM_radio_messages message;
+  CompressedPackets_T_Common_Types_Pkg packets;
+  kcg_int32 trigger;
+  kcg_bool message_sent;
+} R_data_internal_T_InfraLib;
+
+typedef kcg_int32 array_int32_8[8];
+
+/* TM_TrainToTrack::P003_TrainTrack_int/ */
+typedef array_int32_8 P003_TrainTrack_int_TM_TrainToTrack;
+
+/* TM_TrainToTrack::P011_voltage_sections_array_flat_t/ */
+typedef array_int32_8 P011_voltage_sections_array_flat_t_TM_TrainToTrack;
+
+typedef P011_voltage_sections_array_flat_t_TM_TrainToTrack array_int32_8_4[4];
+
+/* TM::Array08/ */
+typedef array_int32_8 Array08_TM;
+
+/* TIU_Types_Pkg::Passenger_door_control_info_T/ */
+typedef struct kcg_tag_Passenger_door_control_info_T_TIU_Types_Pkg {
+  kcg_bool valid;
+  kcg_int32 door_control_info;
+} Passenger_door_control_info_T_TIU_Types_Pkg;
+
+/* TIU_Types_Pkg::Message_EVC_to_Train_Interface_T/ */
+typedef struct kcg_tag_Message_EVC_to_Train_Interface_T_TIU_Types_Pkg {
+  Isolation_Status_T_TIU_Types_Pkg isolation_status;
+  Brake_command_T_TIU_Types_Pkg brake_command;
+  Brake_inhibition_command_T_TIU_Types_Pkg brake_inhibition;
+  Type_I_train_commands_T_TIU_Types_Pkg type_I_train_commands;
+  Change_traction_system_T_TIU_Types_Pkg change_traction_system;
+  Passenger_door_control_info_T_TIU_Types_Pkg passenger_door_control_info;
+  Change_of_allowed_current_consumption_T_TIU_Types_Pkg change_of_allowed_current_consumption;
+} Message_EVC_to_Train_Interface_T_TIU_Types_Pkg;
+
+/* API_TIU_Pkg::TIU_Output_msg/ */
+typedef struct kcg_tag_TIU_Output_msg_API_TIU_Pkg {
+  kcg_bool valid;
+  Message_EVC_to_Train_Interface_T_TIU_Types_Pkg info;
+} TIU_Output_msg_API_TIU_Pkg;
+
+/* CalculateTrainPosition_Pkg::BG_utilities_Pkg::BG_find_T/ */
+typedef struct kcg_tag_BG_find_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg {
+  kcg_int32 index;
+  kcg_int32 noOfFoundBGs;
+  kcg_bool BGFound;
+} BG_find_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg;
+
+/* RBC_Diagnostic_Pkg::DiagMsg_T/ */
+typedef struct kcg_tag_DiagMsg_T_RBC_Diagnostic_Pkg {
+  kcg_bool valid;
+  kcg_int32 count;
+  T_TRAIN timestamp;
+  DiagMsgType_E_RBC_Diagnostic_Pkg diagType;
+  DiagMsgSrc_E_RBC_Diagnostic_Pkg diagSrc;
+  DiagMsgText_E_RBC_Diagnostic_Pkg diagText;
+} DiagMsg_T_RBC_Diagnostic_Pkg;
+
+typedef DiagMsg_T_RBC_Diagnostic_Pkg _57_array[16];
+
+/* RBC_DataBus_Pkg::RBC_Data_T/ */
+typedef struct kcg_tag_RBC_Data_T_RBC_DataBus_Pkg {
+  SessionManagement_T session;
+  DynamicConfig_T config;
+  _57_array diagnostic;
+  RadioTrackTrainMessageQueue_T messageQueue;
+  Clock_T clockk;
+  CompressedRadioMessage_TM lastSentTrackTrainMessage;
+} RBC_Data_T_RBC_DataBus_Pkg;
+
+typedef kcg_int32 array_int32_2[2];
+
+/* TM::P046_section_array_T/ */
+typedef array_int32_2 P046_section_array_T_TM;
+
+/* TM::P046_OBU_sectionlist_array_T/,
+   TM_lib_internal::C_P046_flatten_sections/ */
+typedef P046_section_array_T_TM P046_OBU_sectionlist_array_T_TM[33];
+
+typedef P046_OBU_sectionlist_array_T_TM array_int32_2_33_99[99];
+
+/* TM_baseline2::P027V1_section_array_qdiff_T/ */
+typedef array_int32_2 P027V1_section_array_qdiff_T_TM_baseline2;
+
+/* TM::P058_section_array_T/ */
+typedef array_int32_2 P058_section_array_T_TM;
+
+/* TM_TrainToTrack::P011_voltage_section_array_T/ */
+typedef array_int32_2 P011_voltage_section_array_T_TM_TrainToTrack;
+
+/* TM_TrainToTrack::P011_voltage_sectionlist_array_T/,
+   TM_TrainToTrack_lib_internal::C_P011_flatten_sections_voltage/ */
+typedef P011_voltage_section_array_T_TM_TrainToTrack P011_voltage_sectionlist_array_T_TM_TrainToTrack[4];
+
+typedef P011_voltage_sectionlist_array_T_TM_TrainToTrack array_int32_2_4_8[8];
+
+/* DATA::DMI_Radio_Net_Data_int_array_T/ */
+typedef array_int32_2 DMI_Radio_Net_Data_int_array_T_DATA;
+
+typedef array_int32_2 array_int32_2_32[32];
+
+/* TM_baseline2::P027V1_OBU_sectionlist_array_qdiff_T/ */
+typedef array_int32_2_32 P027V1_OBU_sectionlist_array_qdiff_T_TM_baseline2;
+
+/* TM::P058_OBU_sectionlist_array_T/ */
+typedef array_int32_2_32 P058_OBU_sectionlist_array_T_TM;
+
+typedef array_int32_2_32 array_int32_2_32_64[64];
+
+typedef array_int32_2_32 array_int32_2_32_32[32];
+
+typedef kcg_int32 array_int32_491[491];
+
+/* DATA::Packets::EVC_to_DMI::CAST_DMI_Track_Description_to_int/,
+   DMI_Track_Description_int_array_T/,
    Messages::CAST_int_to_EVC_to_DMI/ */
-typedef kcg_int64 DMI_EVC_Level_Data_int_array_T_DATA[67];
+typedef kcg_int32 DMI_Track_Description_int_array_T[325];
 
-typedef kcg_int64 array_int64_396[396];
+typedef kcg_int32 array_int32_494[494];
 
-typedef kcg_int64 array_int64_70[70];
-
-typedef kcg_int64 array_int64_894[894];
-
-typedef kcg_int64 array_int64_64[64];
-
-/* TM::P058_sections_array_flat_T/ */
-typedef array_int64_64 P058_sections_array_flat_T_TM;
-
-/* TM_baseline2::P027V1_sections_array_flat_qdiff_T/ */
-typedef array_int64_64 P027V1_sections_array_flat_qdiff_T_TM_baseline2;
-
-typedef array_int64_64 array_int64_64_32[32];
-
-typedef kcg_int64 array_int64_307[307];
+typedef kcg_int32 array_int32_150[150];
 
 /* TM_baseline2::P027V1_section_int_qdiff_T/ */
 typedef struct kcg_tag_P027V1_section_int_qdiff_T_TM_baseline2 {
-  kcg_int64 NC_DIFF;
-  kcg_int64 V_DIFF;
+  kcg_int32 NC_DIFF;
+  kcg_int32 V_DIFF;
 } P027V1_section_int_qdiff_T_TM_baseline2;
 
 typedef P027V1_section_int_qdiff_T_TM_baseline2 _62_array[32];
@@ -7946,10 +7259,10 @@ typedef _62_array P027V1_trackside_qdifflist_T_TM_baseline2;
 
 /* TM_baseline2::P027V1_section_int_T/ */
 typedef struct kcg_tag_P027V1_section_int_T_TM_baseline2 {
-  kcg_int64 D_STATIC;
-  kcg_int64 V_STATIC;
-  kcg_int64 Q_FRONT;
-  kcg_int64 N_ITER;
+  kcg_int32 D_STATIC;
+  kcg_int32 V_STATIC;
+  kcg_int32 Q_FRONT;
+  kcg_int32 N_ITER;
   P027V1_trackside_qdifflist_T_TM_baseline2 SECTIONS_q_diff;
 } P027V1_section_int_T_TM_baseline2;
 
@@ -7957,7 +7270,7 @@ typedef struct kcg_tag_P027V1_section_int_T_TM_baseline2 {
    TM_conversions_baseline2::C_P027V1_tracksim_compr_body/ */
 typedef P027V1_section_int_T_TM_baseline2 P027V1_OBU_sectionlist_int_T_TM_baseline2[33];
 
-typedef P027V1_section_int_T_TM_baseline2 _41_array[1];
+typedef P027V1_section_int_T_TM_baseline2 _43_array[1];
 
 /* TM_baseline2::P027V1_trackside_sectionlist_T/ */
 typedef P027V1_section_int_T_TM_baseline2 P027V1_trackside_sectionlist_T_TM_baseline2[32];
@@ -7965,54 +7278,725 @@ typedef P027V1_section_int_T_TM_baseline2 P027V1_trackside_sectionlist_T_TM_base
 /* TM_baseline2::P027V1_trackside_int_T/ */
 typedef struct kcg_tag_P027V1_trackside_int_T_TM_baseline2 {
   kcg_bool valid;
-  kcg_int64 NID_PACKET;
-  kcg_int64 Q_DIR;
-  kcg_int64 L_PACKET;
-  kcg_int64 Q_SCALE;
-  kcg_int64 D_STATIC;
-  kcg_int64 V_STATIC;
-  kcg_int64 Q_FRONT;
-  kcg_int64 N_ITER_n;
+  kcg_int32 NID_PACKET;
+  kcg_int32 Q_DIR;
+  kcg_int32 L_PACKET;
+  kcg_int32 Q_SCALE;
+  kcg_int32 D_STATIC;
+  kcg_int32 V_STATIC;
+  kcg_int32 Q_FRONT;
+  kcg_int32 N_ITER_n;
   P027V1_trackside_qdifflist_T_TM_baseline2 SECTIONS_q_diff;
-  kcg_int64 N_ITER_k;
+  kcg_int32 N_ITER_k;
   P027V1_trackside_sectionlist_T_TM_baseline2 SECTIONS_SSP;
 } P027V1_trackside_int_T_TM_baseline2;
 
-typedef kcg_int64 array_int64_888[888];
+/* DATA::DMI_EVC_Level_Data_int_array_T/,
+   DATA::Packets::EVC_to_DMI::CAST_DMI_EVC_Level_Data_to_int1/,
+   Messages::CAST_int_to_EVC_to_DMI/ */
+typedef kcg_int32 DMI_EVC_Level_Data_int_array_T_DATA[67];
 
-typedef kcg_int64 array_int64_891[891];
+typedef kcg_int32 array_int32_396[396];
 
-typedef kcg_int32 array_int32_32[32];
+typedef kcg_int32 array_int32_70[70];
+
+typedef kcg_int32 array_int32_894[894];
+
+/* DMI_Types_Pkg::DMI_train_id_T/ */
+typedef struct kcg_tag_DMI_train_id_T_DMI_Types_Pkg {
+  kcg_int32 number;
+  BCD_DMI_Types_Pkg dig1;
+  BCD_DMI_Types_Pkg dig2;
+  BCD_DMI_Types_Pkg dig3;
+  BCD_DMI_Types_Pkg dig4;
+  BCD_DMI_Types_Pkg dig5;
+} DMI_train_id_T_DMI_Types_Pkg;
+
+/* Handover_Pkg::connection_ids_T/ */
+typedef struct kcg_tag_connection_ids_T_Handover_Pkg {
+  kcg_bool valid;
+  kcg_int32 mobileDeviceNo;
+  NID_C nid_c;
+  NID_RBC nid_RBC;
+  NID_RADIO nid_radio;
+  NID_MN nid_mn;
+} connection_ids_T_Handover_Pkg;
+
+typedef kcg_int32 array_int32_64[64];
+
+/* TM::P058_sections_array_flat_T/ */
+typedef array_int32_64 P058_sections_array_flat_T_TM;
+
+/* TM_baseline2::P027V1_sections_array_flat_qdiff_T/ */
+typedef array_int32_64 P027V1_sections_array_flat_qdiff_T_TM_baseline2;
+
+typedef array_int32_64 array_int32_64_32[32];
+
+/* CalculateTrainPosition_Pkg::BG_utilities_Pkg::BG_counters_T/ */
+typedef struct kcg_tag_BG_counters_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg {
+  kcg_int32 unlinkedBGsCount;
+  kcg_int32 linkedBGsCount;
+  kcg_int32 totalBGsCount;
+  kcg_int32 passedUnlinkedBGsCount;
+  kcg_int32 passedLinkedBGsCount;
+  kcg_int32 passedTotalBGsCount;
+} BG_counters_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg;
+
+typedef struct kcg_tag_struct_486490 {
+  kcg_bool valid;
+  kcg_int32 nid_message;
+  kcg_int32 l_message;
+  kcg_int32 t_train;
+  kcg_int32 m_ack;
+  kcg_int32 nid_lrbg;
+} struct_486490;
+
+/* TM_radio_messages::M_024_int_T/ */
+typedef struct_486490 M_024_int_T_TM_radio_messages;
+
+/* TM_radio_messages::M_003_int_T/ */
+typedef struct_486490 M_003_int_T_TM_radio_messages;
+
+typedef struct kcg_tag_struct_486417 {
+  kcg_bool valid;
+  kcg_int32 nid_message;
+  kcg_int32 l_message;
+  kcg_int32 t_train;
+  M_ACK m_ack;
+  kcg_int32 nid_lrbg;
+} struct_486417;
+
+/* TM_radio_messages::M_038_T/ */
+typedef struct_486417 M_038_T_TM_radio_messages;
+
+/* TM_radio_messages::M_039_T/ */
+typedef struct_486417 M_039_T_TM_radio_messages;
+
+/* TM_radio_messages::M_040_T/ */
+typedef struct_486417 M_040_T_TM_radio_messages;
+
+/* TM_radio_messages::M_041_T/ */
+typedef struct_486417 M_041_T_TM_radio_messages;
+
+/* TM_radio_messages::M_043_T/ */
+typedef struct_486417 M_043_T_TM_radio_messages;
+
+/* TM_radio_messages::M_003_T/ */
+typedef struct_486417 M_003_T_TM_radio_messages;
+
+/* TM_radio_messages::M_006_T/ */
+typedef struct_486417 M_006_T_TM_radio_messages;
+
+/* TM_radio_messages::M_009_T/ */
+typedef struct_486417 M_009_T_TM_radio_messages;
+
+/* TM_radio_messages::M_024_T/ */
+typedef struct_486417 M_024_T_TM_radio_messages;
+
+typedef kcg_int32 array_int32_307[307];
+
+/* RCM_Types_Pkg::mobileConnectionContext_T/ */
+typedef struct kcg_tag_mobileConnectionContext_T_RCM_Types_Pkg {
+  kcg_bool valid;
+  kcg_int32 mobileDeviceNo;
+  mobileConnectionStatus_T_RCM_Types_Pkg status;
+  NID_RADIO nid_radio;
+  kcg_bool settingUpConnectionHasFailed;
+  kcg_bool connectionLost;
+  kcg_bool isInRadioHole;
+} mobileConnectionContext_T_RCM_Types_Pkg;
+
+typedef kcg_int32 array_int32_888[888];
+
+typedef kcg_int32 array_int32_891[891];
+
+/* DMI_Types_Pkg::DMI_train_length_T/ */
+typedef struct kcg_tag_DMI_train_length_T_DMI_Types_Pkg {
+  kcg_int32 number;
+  BCD_DMI_Types_Pkg dig1;
+  BCD_DMI_Types_Pkg dig2;
+  BCD_DMI_Types_Pkg dig3;
+  BCD_DMI_Types_Pkg dig4;
+} DMI_train_length_T_DMI_Types_Pkg;
+
+typedef kcg_int32 array_int32_301[301];
+
+typedef struct kcg_tag_struct_486242 {
+  kcg_int32 number;
+  kcg_int32 dig1;
+  kcg_int32 dig2;
+  kcg_int32 dig3;
+} struct_486242;
+
+/* DMI_Types_Pkg::DMI_loadingGauge_T/ */
+typedef struct_486242 DMI_loadingGauge_T_DMI_Types_Pkg;
+
+/* DMI_Types_Pkg::DMI_airtightSystem_T/ */
+typedef struct_486242 DMI_airtightSystem_T_DMI_Types_Pkg;
+
+/* DMI_Types_Pkg::DMI_vMax_id_T/ */
+typedef struct_486242 DMI_vMax_id_T_DMI_Types_Pkg;
+
+/* DMI_Types_Pkg::DMI_brakeModel_id_T/ */
+typedef struct_486242 DMI_brakeModel_id_T_DMI_Types_Pkg;
+
+/* DMI_Messages_EVC_to_DMI_Pkg::DMI_EVC_Coded_Train_Data_T/ */
+typedef struct kcg_tag_DMI_EVC_Coded_Train_Data_T_DMI_Messages_EVC_to_DMI_Pkg {
+  kcg_bool valid;
+  T_internal_Type_Obu_BasicTypes_Pkg system_clock;
+  DMI_train_id_T_DMI_Types_Pkg trainID;
+  DMI_train_length_T_DMI_Types_Pkg trainLength;
+  DMI_brakeModel_id_T_DMI_Types_Pkg brakeModel;
+  DMI_vMax_id_T_DMI_Types_Pkg vmax;
+  M_AXLELOADCAT mAxleLoad;
+  DMI_airtightSystem_T_DMI_Types_Pkg airTightSystem;
+  DMI_loadingGauge_T_DMI_Types_Pkg mLoadingGauge;
+} DMI_EVC_Coded_Train_Data_T_DMI_Messages_EVC_to_DMI_Pkg;
+
+/* API_DMI_Pkg::EVC_to_DMI_Message_T/ */
+typedef struct kcg_tag_EVC_to_DMI_Message_T_API_DMI_Pkg {
+  kcg_bool present;
+  DMI_Dynamic_T_DMI_Messages_EVC_to_DMI_Pkg dynamic;
+  DMI_Menu_Request_T_DMI_Messages_EVC_to_DMI_Pkg menu_request;
+  DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg entry_request;
+  DMI_EVC_Coded_Train_Data_T_DMI_Messages_EVC_to_DMI_Pkg evc_coded_train_data;
+  DMI_Text_Message_T_DMI_Messages_EVC_to_DMI_Pkg textMessage;
+  DMI_Track_Description_T_DMI_Messages_EVC_to_DMI_Pkg trackDescription;
+  DMI_Identifier_Request_T_DMI_Messages_EVC_to_DMI_Pkg identifierRequest;
+  DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg systemVersion;
+  DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg displayControl;
+  DMI_EVC_Level_Data_T_DMI_Messages_EVC_to_DMI_Pkg EVC_levelData;
+  DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg EVC_radioNetData;
+  DMI_Driver_Identifier_T_DMI_Messages_Bothways_Pkg driverIdentifier;
+  DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg trainRunningNumber;
+  DMI_Train_Data_T_DMI_Messages_Bothways_Pkg trainData;
+  DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg adhesionFactor;
+  DMI_Icons_T_DMI_Messages_EVC_to_DMI_Pkg iconRequest;
+} EVC_to_DMI_Message_T_API_DMI_Pkg;
+
+typedef kcg_int32 array_int32_304[304];
+
+typedef kcg_int32 array_int32_221[221];
+
+/* TM::P137_trackside_int_T/ */
+typedef struct kcg_tag_P137_trackside_int_T_TM {
+  kcg_bool valid;
+  kcg_int32 NID_PACKET;
+  kcg_int32 Q_DIR;
+  kcg_int32 L_PACKET;
+  kcg_int32 Q_SRSTOP;
+} P137_trackside_int_T_TM;
+
+typedef kcg_int32 array_int32_129[129];
+
+/* DATA::DMI_speedProfile_int_array_T/ */
+typedef array_int32_129 DMI_speedProfile_int_array_T_DATA;
+
+/* DMI_gradientProfile_int_arrayT/ */
+typedef array_int32_129 DMI_gradientProfile_int_arrayT;
+
+/* TM::P046_section_int_T/ */
+typedef struct kcg_tag_P046_section_int_T_TM {
+  kcg_int32 M_LEVELTR;
+  kcg_int32 NID_NTC;
+} P046_section_int_T_TM;
+
+/* TM::P046_trackide_sectionlist_T/ */
+typedef P046_section_int_T_TM P046_trackide_sectionlist_T_TM[32];
+
+/* TM::P046_trackside_int_T/ */
+typedef struct kcg_tag_P046_trackside_int_T_TM {
+  kcg_bool valid;
+  kcg_int32 NID_PACKET;
+  kcg_int32 Q_DIR;
+  kcg_int32 L_PACKET;
+  kcg_int32 M_LEVELTR;
+  kcg_int32 NID_NTC;
+  kcg_int32 N_ITER;
+  P046_trackide_sectionlist_T_TM SECTIONS;
+} P046_trackside_int_T_TM;
+
+typedef P046_section_int_T_TM _29_array[1];
+
+/* TM::P046_OBU_sectionlist_int_T/, TM_conversions::C_P046_tracksim_compr/ */
+typedef P046_section_int_T_TM P046_OBU_sectionlist_int_T_TM[33];
+
+typedef kcg_int32 array_int32_627[627];
+
+/* TM::P058_section_int_T/ */
+typedef struct kcg_tag_P058_section_int_T_TM {
+  kcg_int32 D_LOC;
+  kcg_int32 Q_LGTLOC;
+} P058_section_int_T_TM;
+
+typedef P058_section_int_T_TM _63_array[32];
+
+/* TM::P058_OBU_sectionlist_int_T/ */
+typedef _63_array P058_OBU_sectionlist_int_T_TM;
+
+/* TM::P058_trackide_sectionlist_T/ */
+typedef _63_array P058_trackide_sectionlist_T_TM;
+
+/* TM::P058_trackside_int_T/ */
+typedef struct kcg_tag_P058_trackside_int_T_TM {
+  kcg_bool valid;
+  kcg_int32 NID_PACKET;
+  kcg_int32 Q_DIR;
+  kcg_int32 L_PACKET;
+  kcg_int32 Q_SCALE;
+  kcg_int32 T_CYCLOC;
+  kcg_int32 D_CYCLOC;
+  kcg_int32 M_LOC;
+  kcg_int32 N_ITER;
+  P058_trackide_sectionlist_T_TM SECTIONS;
+} P058_trackside_int_T_TM;
+
+/* InfraLib::B_data_internal_T/ */
+typedef struct kcg_tag_B_data_internal_T_InfraLib {
+  BaliseTelegramHeader_int_T_TM header;
+  CompressedPackets_T_Common_Types_Pkg packets;
+  kcg_int32 engineering_BG_location;
+  kcg_float32 TrainPos;
+  kcg_int32 pig_nom_0;
+  kcg_bool balise_passed;
+} B_data_internal_T_InfraLib;
+
+typedef kcg_int32 array_int32_292[292];
+
+typedef kcg_int32 array_int32_40[40];
+
+typedef kcg_int32 array_int32_289[289];
+
+typedef kcg_int32 array_int32_280[280];
+
+typedef kcg_int32 array_int32_28[28];
+
+/* TM::P255_trackside_int_T/ */
+typedef struct kcg_tag_P255_trackside_int_T_TM {
+  kcg_bool valid;
+  kcg_int32 NID_PACKET;
+} P255_trackside_int_T_TM;
+
+typedef kcg_int32 array_int32_114[114];
+
+typedef kcg_int32 array_int32_283[283];
+
+typedef kcg_int32 array_int32_31[31];
+
+/* DMI_Messages_DMI_to_EVC_Pkg::DMI_Icon_Ack_T/ */
+typedef struct kcg_tag_DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg {
+  kcg_bool valid;
+  T_internal_Type_Obu_BasicTypes_Pkg systemTime;
+  kcg_int32 DMI_nid_icon_identifier;
+} DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg;
+
+/* API_DMI_Pkg::DMI_to_EVC_Message_T/ */
+typedef struct kcg_tag_DMI_to_EVC_Message_T_API_DMI_Pkg {
+  kcg_bool present;
+  DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg status;
+  DMI_Identifier_T_DMI_Messages_DMI_to_EVC_Pkg identifier;
+  DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg driverRequest;
+  DMI_Driver_Identifier_T_DMI_Messages_Bothways_Pkg driverIdentifier;
+  DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg trainRunningNumber;
+  DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg radioNetData;
+  DMI_Text_Message_Ack_T_DMI_Messages_DMI_to_EVC_Pkg textMessageAck;
+  DMI_Train_Data_Ack_T_DMI_Messages_DMI_to_EVC_Pkg trainDataAck;
+  DMI_Train_Data_T_DMI_Messages_Bothways_Pkg trainData;
+  DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg adhesionFactor;
+  DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg iconAck;
+  DMI_Level_Data_T_DMI_Messages_Bothways_Pkg selectedLevel;
+} DMI_to_EVC_Message_T_API_DMI_Pkg;
+
+typedef kcg_int32 array_int32_25[25];
+
+/* TM_TrainToTrack::P011_TrainTrack_int/ */
+typedef array_int32_25 P011_TrainTrack_int_TM_TrainToTrack;
+
+/* TM_TrainToTrack::P044_TrainTrack_int/ */
+typedef array_int32_25 P044_TrainTrack_int_TM_TrainToTrack;
+
+typedef kcg_int32 array_int32_105[105];
+
+typedef kcg_int32 array_int32_22[22];
+
+/* Common_Types_Pkg::RBC_Id_T/ */
+typedef struct kcg_tag_RBC_Id_T_Common_Types_Pkg {
+  kcg_bool valid;
+  NID_C nid_c;
+  NID_RBC rbc_id;
+  kcg_int32 device_id;
+} RBC_Id_T_Common_Types_Pkg;
+
+/* Common_Types_Pkg::radioManagementMessage_T/ */
+typedef struct kcg_tag_radioManagementMessage_T_Common_Types_Pkg {
+  kcg_bool valid;
+  MsgSource_T_Common_Types_Pkg messageSource;
+  Radio_TrackTrain_Header_T_Radio_Types_Pkg Radio_Common_Header;
+  P42_SessionManagement_T_Packet_Types_Pkg p42;
+  P45_RadioNetworkRegistration_T_Packet_Types_Pkg p45;
+  RBC_Id_T_Common_Types_Pkg sendingRBC;
+} radioManagementMessage_T_Common_Types_Pkg;
+
+/* Radio_Types_Pkg::RadioMessage_T/ */
+typedef struct kcg_tag_RadioMessage_T_Radio_Types_Pkg {
+  kcg_bool present;
+  kcg_bool consistencyError;
+  Radio_TrackTrain_Header_T_Radio_Types_Pkg header;
+  RadioMetadata_T_Common_Types_Pkg radioMetadata;
+  CompressedPackets_T_Common_Types_Pkg packets;
+  RBC_Id_T_Common_Types_Pkg sendingRBC;
+} RadioMessage_T_Radio_Types_Pkg;
+
+/* Common_Types_Pkg::TrackSide_ForCheck_T/ */
+typedef struct kcg_tag_TrackSide_ForCheck_T_Common_Types_Pkg {
+  kcg_bool valid;
+  T_internal_Type_Obu_BasicTypes_Pkg systemTime;
+  MsgSource_T_Common_Types_Pkg msg_type;
+  BG_Message_T_BG_Types_Pkg telegramHeaders;
+  RadioMessage_T_Radio_Types_Pkg radio_Msg;
+} TrackSide_ForCheck_T_Common_Types_Pkg;
+
+typedef struct kcg_tag_struct_492780 {
+  kcg_bool valid;
+  MsgSource_T_Common_Types_Pkg source;
+  RadioMetadata_T_Common_Types_Pkg radioMetadata;
+  BG_Header_T_BG_Types_Pkg BG_Common_Header;
+  struct_491368 Radio_Common_Header;
+  CompressedPackets_T_Common_Types_Pkg packets;
+  RBC_Id_T_Common_Types_Pkg sendingRBC;
+} struct_492780;
+
+/* RCM_MsgTypes_Pkg::msgFromTrack_T/ */
+typedef struct_492780 msgFromTrack_T_RCM_MsgTypes_Pkg;
+
+/* Common_Types_Pkg::ReceivedMessage_T/ */
+typedef struct_492780 ReceivedMessage_T_Common_Types_Pkg;
+
+/* InformationFilter_Pkg::TransitionBuffer_T/,
+   InformationFilter_Pkg::TransitionBuffer_read_write/,
+   InformationFilter_Pkg::TransitionBuffer_write_only/ */
+typedef ReceivedMessage_T_Common_Types_Pkg TransitionBuffer_T_InformationFilter_Pkg[3];
+
+typedef struct_492780 _80_array[2];
+
+typedef struct_492780 _46_array[1];
+
+/* RCM_MsgTypes_Pkg::p42_sessionManagement_T/ */
+typedef struct kcg_tag_p42_sessionManagement_T_RCM_MsgTypes_Pkg {
+  kcg_bool valid;
+  MsgSource_T_Common_Types_Pkg msgSrc;
+  Q_DIR q_dir;
+  Q_RBC q_rbc;
+  NID_C nid_c;
+  NID_RBC nid_RBC;
+  NID_RADIO nid_radio;
+  Q_SLEEPSESSION q_sleepsession;
+  RBC_Id_T_Common_Types_Pkg origin;
+} p42_sessionManagement_T_RCM_MsgTypes_Pkg;
+
+/* API_Msg_Pkg::API_RadioMsgHeader_T/ */
+typedef struct kcg_tag_API_RadioMsgHeader_T_API_Msg_Pkg {
+  kcg_bool present;
+  kcg_bool apiConsistencyError;
+  Radio_TrackTrain_Header_T_Radio_Types_Pkg Radio_Common_Header;
+  RadioMetadata_T_Common_Types_Pkg Radio_MetaData;
+  RBC_Id_T_Common_Types_Pkg sendingRBC_Id;
+} API_RadioMsgHeader_T_API_Msg_Pkg;
+
+/* API_Msg_Pkg::API_TrackSideInput_T/ */
+typedef struct kcg_tag_API_TrackSideInput_T_API_Msg_Pkg {
+  kcg_bool valid;
+  T_internal_Type_Obu_BasicTypes_Pkg systemTimeMsgReceived;
+  MsgSource_T_Common_Types_Pkg msg_type;
+  API_TelegramHeader_T_API_Msg_Pkg btm_msg;
+  API_RadioMsgHeader_T_API_Msg_Pkg rtm_msg;
+  CompressedPackets_T_Common_Types_Pkg packets;
+} API_TrackSideInput_T_API_Msg_Pkg;
+
+typedef API_TrackSideInput_T_API_Msg_Pkg _109_array[5];
+
+/* RCM_MsgTypes_Pkg::p45_radioNetworkRegistration_T/ */
+typedef struct kcg_tag_p45_radioNetworkRegistration_T_RCM_MsgTypes_Pkg {
+  kcg_bool valid;
+  MsgSource_T_Common_Types_Pkg msgSrc;
+  Q_DIR q_dir;
+  NID_MN nid_mn;
+  RBC_Id_T_Common_Types_Pkg origin;
+} p45_radioNetworkRegistration_T_RCM_MsgTypes_Pkg;
+
+/* RCM_MsgTypes_Pkg::m38_initiationOfACommunicationSession_T/ */
+typedef struct kcg_tag_m38_initiationOfACommunicationSession_T_RCM_MsgTypes_Pkg {
+  kcg_bool valid;
+  MsgSource_T_Common_Types_Pkg msgSrc;
+  RBC_Id_T_Common_Types_Pkg origin;
+} m38_initiationOfACommunicationSession_T_RCM_MsgTypes_Pkg;
+
+/* RCM_Session_Types_Pkg::sessionCmd_T/ */
+typedef struct kcg_tag_sessionCmd_T_RCM_Session_Types_Pkg {
+  kcg_bool valid;
+  kcg_bool initiatedByOBU;
+  kcg_bool initiatedByRBC;
+  Q_RBC q_rbc;
+  NID_C nid_c;
+  NID_RBC nid_rbc;
+  NID_RADIO nid_radio;
+  RBC_Id_T_Common_Types_Pkg origin;
+  m38_initiationOfACommunicationSession_T_RCM_MsgTypes_Pkg m38;
+  p42_sessionManagement_T_RCM_MsgTypes_Pkg p42;
+} sessionCmd_T_RCM_Session_Types_Pkg;
+
+/* RCM_MsgTypes_Pkg::m32_RBC_RIU_SystemVersion_T/ */
+typedef struct kcg_tag_m32_RBC_RIU_SystemVersion_T_RCM_MsgTypes_Pkg {
+  kcg_bool valid;
+  MsgSource_T_Common_Types_Pkg msgSrc;
+  kcg_bool versionSupported;
+  RBC_Id_T_Common_Types_Pkg origin;
+  M_VERSION m_version;
+} m32_RBC_RIU_SystemVersion_T_RCM_MsgTypes_Pkg;
+
+/* RCM_MsgTypes_Pkg::m39_AckOfTerminationOfACommunicationSession_T/ */
+typedef struct kcg_tag_m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg {
+  kcg_bool valid;
+  MsgSource_T_Common_Types_Pkg msgSrc;
+  RBC_Id_T_Common_Types_Pkg origin;
+  NID_LRBG lrbg;
+} m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg;
+
+typedef kcg_int32 array_int32_13[13];
+
+/* SDMConversionModelPkg::v_MergedSteps_t/ */
+typedef array_int32_13 v_MergedSteps_t_SDMConversionModelPkg;
+
+/* SDMConversionModelPkg::a_MergedSteps_t/ */
+typedef array_int32_13 a_MergedSteps_t_SDMConversionModelPkg;
+
+/* SDMConversionModelPkg::av_MergedMap_t/ */
+typedef struct kcg_tag_av_MergedMap_t_SDMConversionModelPkg {
+  a_MergedSteps_t_SDMConversionModelPkg a;
+  v_MergedSteps_t_SDMConversionModelPkg v;
+} av_MergedMap_t_SDMConversionModelPkg;
+
+/* RCM_Types_Pkg::mobileRegistrationContext_T/ */
+typedef struct kcg_tag_mobileRegistrationContext_T_RCM_Types_Pkg {
+  kcg_bool valid;
+  kcg_int32 mobileDeviceNo;
+  mobileHealthStatus_T_RCM_Types_Pkg healthStatus;
+  mobileRegistrationStatus_T_RCM_Types_Pkg status;
+  NID_MN nid_mn;
+} mobileRegistrationContext_T_RCM_Types_Pkg;
+
+/* RCM_Session_Types_Pkg::morcStatus_T/ */
+typedef struct kcg_tag_morcStatus_T_RCM_Session_Types_Pkg {
+  mobileRegistrationContext_T_RCM_Types_Pkg registration;
+  mobileConnectionContext_T_RCM_Types_Pkg connection;
+  sessionStatus_T_RCM_Session_Types_Pkg session;
+} morcStatus_T_RCM_Session_Types_Pkg;
+
+typedef kcg_int32 array_int32_99[99];
+
+/* TM::P021_sections_array_flat_T/ */
+typedef array_int32_99 P021_sections_array_flat_T_TM;
+
+/* TM::P041_sections_array_flat_T/ */
+typedef array_int32_99 P041_sections_array_flat_T_TM;
+
+typedef array_int32_99 array_int32_99_33[33];
+
+typedef kcg_int32 array_int32_428[428];
+
+typedef kcg_int32 array_int32_7[7];
+
+/* TM::P005_section_array_T/ */
+typedef array_int32_7 P005_section_array_T_TM;
+
+/* TM::P005_OBU_sectionlist_array_T/,
+   TM_lib_internal::C_P005_flatten_sections/ */
+typedef P005_section_array_T_TM P005_OBU_sectionlist_array_T_TM[33];
+
+typedef P005_OBU_sectionlist_array_T_TM array_int32_7_33_231[231];
+
+/* TM::Array07/ */
+typedef array_int32_7 Array07_TM;
+
+/* SDMConversionModelPkg::v_KvSteps_t/ */
+typedef array_int32_7 v_KvSteps_t_SDMConversionModelPkg;
+
+/* SDMConversionModelPkg::m_KvSteps_t/ */
+typedef array_int32_7 m_KvSteps_t_SDMConversionModelPkg;
+
+/* SDMConversionModelPkg::mv_Map_t/ */
+typedef struct kcg_tag_mv_Map_t_SDMConversionModelPkg {
+  m_KvSteps_t_SDMConversionModelPkg m;
+  v_KvSteps_t_SDMConversionModelPkg v;
+} mv_Map_t_SDMConversionModelPkg;
+
+typedef mv_Map_t_SDMConversionModelPkg _76_array[13];
+
+typedef struct kcg_tag_struct_485097 {
+  kcg_int32 NID_C;
+  kcg_int32 NID_BG;
+  kcg_int32 Pos;
+  OrBG_TM Or_BG;
+  OrLine_TM Or_Line;
+} struct_485097;
+
+/* Basics::BaliseGroupData/ */
+typedef struct_485097 BaliseGroupData_Basics;
+
+/* TM::BaliseGroupData/ */
+typedef struct_485097 BaliseGroupData_TM;
+
+/* DATA::DMI_Text_Message_int_array_T/,
+   DATA::Packets::EVC_to_DMI::CAST_DMI_Text_Message_to_int1/,
+   Messages::CAST_int_to_EVC_to_DMI/ */
+typedef kcg_int32 DMI_Text_Message_int_array_T_DATA[262];
+
+/* TM::P041_section_int_T/ */
+typedef struct kcg_tag_P041_section_int_T_TM {
+  kcg_int32 M_LEVELTR;
+  kcg_int32 NID_NTC;
+  kcg_int32 L_ACKLEVELTR;
+} P041_section_int_T_TM;
+
+/* TM::P041_trackide_sectionlist_T/ */
+typedef P041_section_int_T_TM P041_trackide_sectionlist_T_TM[32];
+
+/* TM::P041_trackside_int_T/ */
+typedef struct kcg_tag_P041_trackside_int_T_TM {
+  kcg_bool valid;
+  kcg_int32 NID_PACKET;
+  kcg_int32 Q_DIR;
+  kcg_int32 L_PACKET;
+  kcg_int32 Q_SCALE;
+  kcg_int32 D_LEVELTR;
+  kcg_int32 M_LEVELTR;
+  kcg_int32 NID_NTC;
+  kcg_int32 L_ACKLEVELTR;
+  kcg_int32 N_ITER;
+  P041_trackide_sectionlist_T_TM SECTIONS;
+} P041_trackside_int_T_TM;
+
+typedef P041_section_int_T_TM _30_array[1];
+
+/* TM::P041_OBU_sectionlist_int_T/, TM_conversions::C_P041_tracksim_compr/ */
+typedef P041_section_int_T_TM P041_OBU_sectionlist_int_T_TM[33];
+
+typedef struct kcg_tag_struct_485030 {
+  kcg_bool valid;
+  Q_DIR q_dir;
+  Q_SCALE q_scale;
+  kcg_int32 d_startreverse;
+  kcg_int32 l_reversearea;
+} struct_485030;
+
+/* TM::P138_OBU_T/ */
+typedef struct_485030 P138_OBU_T_TM;
+
+/* Packet_Types_Pkg::P138_ReversingAreaInformation_T/ */
+typedef struct_485030 P138_ReversingAreaInformation_T_Packet_Types_Pkg;
+
+/* Level_And_Mode_Types_Pkg::T_Data_From_Track_Packet/ */
+typedef struct kcg_tag_T_Data_From_Track_Packet_Level_And_Mode_Types_Pkg {
+  P12_Level1MovementAuthorities_T_Packet_Types_Pkg P_12;
+  P135_StopShuntingOnDeskOpening_T_Packet_Types_Pkg P_135;
+  P137_StopIfInStaffResponsible_T_Packet_Types_Pkg P_137;
+  P138_ReversingAreaInformation_T_Packet_Types_Pkg P_138;
+  P139_ReversingSupervisionInformation_T_Packet_Types_Pkg P_139;
+  P15_Level23MovementAuthorities_T_Packet_Types_Pkg P_15;
+  P21_GradientProfiles_T_Packet_Types_Pkg P_21;
+  P27_InternationalStaticSpeedProfile_T_Packet_Types_Pkg P_27;
+  P41_LevelTransistionOrders_T_Packet_Types_Pkg P_41;
+  P46_ConditionalLevelTransitionOrders_T_Packet_Types_Pkg P_46;
+  P63_ListofBalisesinSRAuthority_T_Packet_Types_Pkg P_63;
+  P80_ModeProfiles_T_Packet_Types_Pkg P_80;
+  NID_LRBG LRBG;
+  Location_T_Obu_BasicTypes_Pkg referenceLocation;
+} T_Data_From_Track_Packet_Level_And_Mode_Types_Pkg;
+
+/* TrackAtlasTypes::DataForModeAndLevel_t/ */
+typedef struct kcg_tag_DataForModeAndLevel_t_TrackAtlasTypes {
+  T_Data_From_Track_Packet_Level_And_Mode_Types_Pkg train_packets;
+  T_Data_From_Track_Mess_Level_And_Mode_Types_Pkg train_messages;
+  kcg_bool p12;
+  kcg_bool p15;
+  kcg_bool p21;
+  kcg_bool p27;
+} DataForModeAndLevel_t_TrackAtlasTypes;
 
 typedef kcg_int32 array_int32_10[10];
 
+typedef kcg_int32 array_int32_499[499];
+
 typedef kcg_int32 array_int32_4[4];
 
-#ifndef kcg_copy_OdometrySpeeds_T_Obu_BasicTypes_Pkg
-#define kcg_copy_OdometrySpeeds_T_Obu_BasicTypes_Pkg(kcg_C1, kcg_C2)          \
+/* TM::P015_section_array_T/ */
+typedef array_int32_4 P015_section_array_T_TM;
+
+/* TM::P015_OBU_sectionlist_array_T/,
+   TM_lib_internal::C_P015_flatten_sections/ */
+typedef P015_section_array_T_TM P015_OBU_sectionlist_array_T_TM[32];
+
+typedef P015_OBU_sectionlist_array_T_TM array_int32_4_32_128[128];
+
+/* TM::Array04/ */
+typedef array_int32_4 Array04_TM;
+
+/* DATA::DMI_Text_Message_Ack_int_array_T/ */
+typedef array_int32_4 DMI_Text_Message_Ack_int_array_T_DATA;
+
+/* DATA::DMI_Status_int_array_T/ */
+typedef array_int32_4 DMI_Status_int_array_T_DATA;
+
+/* DATA::DMI_Level_Data_int_array_T/ */
+typedef array_int32_4 DMI_Level_Data_int_array_T_DATA;
+
+typedef kcg_int32 array_int32_496[496];
+
+/* DATA::Packets::DMI_to_EVC::C_DMI_identifier_to_int/,
+   DATA::Packets::EVC_to_DMI::CAST_DMI_Identifier_Request_to_int1/,
+   DATA::Variables::CAST_DMI_LevelList_to_int/,
+   DATA::Variables::CAST_DMI_gradientProfile_to_int/,
+   DATA::Variables::CAST_DMI_speedProfile_to_int/,
+   DATA::Variables::CAST_DMI_trackCondition_to_int/,
+   DMI_Control_Pkg::Sub_func::TextMessages::AckMsgManager/IfBlock1:then:,
+   Messages::CAST_DMI_to_EVC_to_int/,
+   Messages::CAST_EVC_to_DMI_to_int/,
+   TM_TrainToTrack::C_P011_train_compr/,
+   TM_TrainToTrack::P044_other_data/,
+   TM_conversions::C_P005_compr_onboard/,
+   TM_conversions::C_P005_tracksim_compr/,
+   TM_conversions::C_P015_tracksim_compr/,
+   TM_conversions::C_P021_tracksim_compr/,
+   TM_conversions::C_P041_tracksim_compr/,
+   TM_conversions::C_P046_tracksim_compr/,
+   TM_conversions::C_P080_compr_onboard/,
+   TM_conversions::C_P255_tracksim_compr/ */
+typedef kcg_int32 P044_other_data_TM_TrainToTrack[1];
+
+/* TM_TrainToTrack::P044/ */
+typedef struct kcg_tag_P044_TM_TrainToTrack {
+  kcg_bool valid;
+  NID_PACKET nid_packet;
+  L_PACKET l_packet;
+  NID_XUSER nid_xuser;
+  P044_other_data_TM_TrainToTrack external_data;
+} P044_TM_TrainToTrack;
+
+#ifndef kcg_copy_m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg
+#define kcg_copy_m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg(kcg_C1, kcg_C2)\
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (OdometrySpeeds_T_Obu_BasicTypes_Pkg)))
-#endif /* kcg_copy_OdometrySpeeds_T_Obu_BasicTypes_Pkg */
+      sizeof (m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg)))
+#endif /* kcg_copy_m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg */
 
-#ifndef kcg_copy_struct_484599
-#define kcg_copy_struct_484599(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_484599)))
-#endif /* kcg_copy_struct_484599 */
-
-#ifndef kcg_copy_struct_484617
-#define kcg_copy_struct_484617(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_484617)))
-#endif /* kcg_copy_struct_484617 */
-
-#ifndef kcg_copy_P027V1_section_int_qdiff_T_TM_baseline2
-#define kcg_copy_P027V1_section_int_qdiff_T_TM_baseline2(kcg_C1, kcg_C2)      \
+#ifndef kcg_copy_TrainLocations_real_T_SDM_Types_Pkg
+#define kcg_copy_TrainLocations_real_T_SDM_Types_Pkg(kcg_C1, kcg_C2)          \
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (P027V1_section_int_qdiff_T_TM_baseline2)))
-#endif /* kcg_copy_P027V1_section_int_qdiff_T_TM_baseline2 */
+      sizeof (TrainLocations_real_T_SDM_Types_Pkg)))
+#endif /* kcg_copy_TrainLocations_real_T_SDM_Types_Pkg */
 
 #ifndef kcg_copy_P005_OBU_T_TM
 #define kcg_copy_P005_OBU_T_TM(kcg_C1, kcg_C2)                                \
@@ -8044,22 +8028,6 @@ typedef kcg_int32 array_int32_4[4];
       (kcg_C2),                                                               \
       sizeof (DataForSupervision_nextGen_t_TrackAtlasTypes)))
 #endif /* kcg_copy_DataForSupervision_nextGen_t_TrackAtlasTypes */
-
-#ifndef kcg_copy_TrainLocations_real_T_SDM_Types_Pkg
-#define kcg_copy_TrainLocations_real_T_SDM_Types_Pkg(kcg_C1, kcg_C2)          \
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (TrainLocations_real_T_SDM_Types_Pkg)))
-#endif /* kcg_copy_TrainLocations_real_T_SDM_Types_Pkg */
-
-#ifndef kcg_copy_TIU_trainStatus_T_TIU_Types_Pkg
-#define kcg_copy_TIU_trainStatus_T_TIU_Types_Pkg(kcg_C1, kcg_C2)              \
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (TIU_trainStatus_T_TIU_Types_Pkg)))
-#endif /* kcg_copy_TIU_trainStatus_T_TIU_Types_Pkg */
 
 #ifndef kcg_copy_ReportedBG_T_ProvidePositionReport_Pkg
 #define kcg_copy_ReportedBG_T_ProvidePositionReport_Pkg(kcg_C1, kcg_C2)       \
@@ -8130,62 +8098,64 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (sessionStatus_T_RCM_Session_Types_Pkg)))
 #endif /* kcg_copy_sessionStatus_T_RCM_Session_Types_Pkg */
 
-#ifndef kcg_copy_P027V1_OBU_body_enum_T_TM_baseline2
-#define kcg_copy_P027V1_OBU_body_enum_T_TM_baseline2(kcg_C1, kcg_C2)          \
+#ifndef kcg_copy_P003_permanent_data_T_TM_baseline2
+#define kcg_copy_P003_permanent_data_T_TM_baseline2(kcg_C1, kcg_C2)           \
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (P027V1_OBU_body_enum_T_TM_baseline2)))
-#endif /* kcg_copy_P027V1_OBU_body_enum_T_TM_baseline2 */
+      sizeof (P003_permanent_data_T_TM_baseline2)))
+#endif /* kcg_copy_P003_permanent_data_T_TM_baseline2 */
 
-#ifndef kcg_copy_safeRadioConnectionIndication_T_RCM_Session_Types_Pkg
-#define kcg_copy_safeRadioConnectionIndication_T_RCM_Session_Types_Pkg(kcg_C1, kcg_C2)\
+#ifndef kcg_copy_P041_section_enum_T_TM
+#define kcg_copy_P041_section_enum_T_TM(kcg_C1, kcg_C2)                       \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P041_section_enum_T_TM)))
+#endif /* kcg_copy_P041_section_enum_T_TM */
+
+#ifndef kcg_copy_M_voltage_T_TIU_Types_Pkg
+#define kcg_copy_M_voltage_T_TIU_Types_Pkg(kcg_C1, kcg_C2)                    \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (M_voltage_T_TIU_Types_Pkg)))
+#endif /* kcg_copy_M_voltage_T_TIU_Types_Pkg */
+
+#ifndef kcg_copy_DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg
+#define kcg_copy_DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg(kcg_C1, kcg_C2)\
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (safeRadioConnectionIndication_T_RCM_Session_Types_Pkg)))
-#endif /* kcg_copy_safeRadioConnectionIndication_T_RCM_Session_Types_Pkg */
+      sizeof (DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg)))
+#endif /* kcg_copy_DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg */
 
-#ifndef kcg_copy_Clock_T
-#define kcg_copy_Clock_T(kcg_C1, kcg_C2)                                      \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (Clock_T)))
-#endif /* kcg_copy_Clock_T */
+#ifndef kcg_copy_Endtimer_t_TrackAtlasTypes
+#define kcg_copy_Endtimer_t_TrackAtlasTypes(kcg_C1, kcg_C2)                   \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (Endtimer_t_TrackAtlasTypes)))
+#endif /* kcg_copy_Endtimer_t_TrackAtlasTypes */
 
-#ifndef kcg_copy_AccuDistanceProfileMA_TA_MA_new
-#define kcg_copy_AccuDistanceProfileMA_TA_MA_new(kcg_C1, kcg_C2)              \
+#ifndef kcg_copy_struct_485030
+#define kcg_copy_struct_485030(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_485030)))
+#endif /* kcg_copy_struct_485030 */
+
+#ifndef kcg_copy_ErrorMessage_T_ProvidePositionReport_Pkg
+#define kcg_copy_ErrorMessage_T_ProvidePositionReport_Pkg(kcg_C1, kcg_C2)     \
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (AccuDistanceProfileMA_TA_MA_new)))
-#endif /* kcg_copy_AccuDistanceProfileMA_TA_MA_new */
+      sizeof (ErrorMessage_T_ProvidePositionReport_Pkg)))
+#endif /* kcg_copy_ErrorMessage_T_ProvidePositionReport_Pkg */
 
-#ifndef kcg_copy_struct_485021
-#define kcg_copy_struct_485021(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_485021)))
-#endif /* kcg_copy_struct_485021 */
+#ifndef kcg_copy_P041_section_int_T_TM
+#define kcg_copy_P041_section_int_T_TM(kcg_C1, kcg_C2)                        \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P041_section_int_T_TM)))
+#endif /* kcg_copy_P041_section_int_T_TM */
 
-#ifndef kcg_copy_struct_485072
-#define kcg_copy_struct_485072(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_485072)))
-#endif /* kcg_copy_struct_485072 */
+#ifndef kcg_copy_struct_485091
+#define kcg_copy_struct_485091(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_485091)))
+#endif /* kcg_copy_struct_485091 */
 
-#ifndef kcg_copy_Gradient_section_t_TrackAtlasTypes
-#define kcg_copy_Gradient_section_t_TrackAtlasTypes(kcg_C1, kcg_C2)           \
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (Gradient_section_t_TrackAtlasTypes)))
-#endif /* kcg_copy_Gradient_section_t_TrackAtlasTypes */
-
-#ifndef kcg_copy_struct_485102
-#define kcg_copy_struct_485102(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_485102)))
-#endif /* kcg_copy_struct_485102 */
-
-#ifndef kcg_copy_t_Brake_t_SDMModelPkg
-#define kcg_copy_t_Brake_t_SDMModelPkg(kcg_C1, kcg_C2)                        \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (t_Brake_t_SDMModelPkg)))
-#endif /* kcg_copy_t_Brake_t_SDMModelPkg */
+#ifndef kcg_copy_struct_485097
+#define kcg_copy_struct_485097(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_485097)))
+#endif /* kcg_copy_struct_485097 */
 
 #ifndef kcg_copy_T_LevelTransition_Level_And_Mode_Types_Pkg
 #define kcg_copy_T_LevelTransition_Level_And_Mode_Types_Pkg(kcg_C1, kcg_C2)   \
@@ -8195,39 +8165,63 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (T_LevelTransition_Level_And_Mode_Types_Pkg)))
 #endif /* kcg_copy_T_LevelTransition_Level_And_Mode_Types_Pkg */
 
-#ifndef kcg_copy_bec_t_TargetLimits_Pkg
-#define kcg_copy_bec_t_TargetLimits_Pkg(kcg_C1, kcg_C2)                       \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (bec_t_TargetLimits_Pkg)))
-#endif /* kcg_copy_bec_t_TargetLimits_Pkg */
-
-#ifndef kcg_copy_P57_MovementAuthorityRequestParameters_T_Packet_Types_Pkg
-#define kcg_copy_P57_MovementAuthorityRequestParameters_T_Packet_Types_Pkg(kcg_C1, kcg_C2)\
+#ifndef kcg_copy_P027V1_section_enum_qdiff_T_TM_baseline2
+#define kcg_copy_P027V1_section_enum_qdiff_T_TM_baseline2(kcg_C1, kcg_C2)     \
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (P57_MovementAuthorityRequestParameters_T_Packet_Types_Pkg)))
-#endif /* kcg_copy_P57_MovementAuthorityRequestParameters_T_Packet_Types_Pkg */
+      sizeof (P027V1_section_enum_qdiff_T_TM_baseline2)))
+#endif /* kcg_copy_P027V1_section_enum_qdiff_T_TM_baseline2 */
 
-#ifndef kcg_copy_DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg
-#define kcg_copy_DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg(kcg_C1, kcg_C2)\
+#ifndef kcg_copy_IterPacket58_T_Packet_Types_Pkg
+#define kcg_copy_IterPacket58_T_Packet_Types_Pkg(kcg_C1, kcg_C2)              \
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg)))
-#endif /* kcg_copy_DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg */
+      sizeof (IterPacket58_T_Packet_Types_Pkg)))
+#endif /* kcg_copy_IterPacket58_T_Packet_Types_Pkg */
 
-#ifndef kcg_copy_struct_485264
-#define kcg_copy_struct_485264(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_485264)))
-#endif /* kcg_copy_struct_485264 */
+#ifndef kcg_copy_t_Brake_t_SDMModelPkg
+#define kcg_copy_t_Brake_t_SDMModelPkg(kcg_C1, kcg_C2)                        \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (t_Brake_t_SDMModelPkg)))
+#endif /* kcg_copy_t_Brake_t_SDMModelPkg */
 
-#ifndef kcg_copy_P46_ConditionalLevelTransitionOrder_T_Packet_Types_Pkg
-#define kcg_copy_P46_ConditionalLevelTransitionOrder_T_Packet_Types_Pkg(kcg_C1, kcg_C2)\
+#ifndef kcg_copy_mobileRegistrationContext_T_RCM_Types_Pkg
+#define kcg_copy_mobileRegistrationContext_T_RCM_Types_Pkg(kcg_C1, kcg_C2)    \
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (P46_ConditionalLevelTransitionOrder_T_Packet_Types_Pkg)))
-#endif /* kcg_copy_P46_ConditionalLevelTransitionOrder_T_Packet_Types_Pkg */
+      sizeof (mobileRegistrationContext_T_RCM_Types_Pkg)))
+#endif /* kcg_copy_mobileRegistrationContext_T_RCM_Types_Pkg */
+
+#ifndef kcg_copy_LocWithInAcc_T_Obu_BasicTypes_Pkg
+#define kcg_copy_LocWithInAcc_T_Obu_BasicTypes_Pkg(kcg_C1, kcg_C2)            \
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (LocWithInAcc_T_Obu_BasicTypes_Pkg)))
+#endif /* kcg_copy_LocWithInAcc_T_Obu_BasicTypes_Pkg */
+
+#ifndef kcg_copy_m32_RBC_RIU_SystemVersion_T_RCM_MsgTypes_Pkg
+#define kcg_copy_m32_RBC_RIU_SystemVersion_T_RCM_MsgTypes_Pkg(kcg_C1, kcg_C2) \
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (m32_RBC_RIU_SystemVersion_T_RCM_MsgTypes_Pkg)))
+#endif /* kcg_copy_m32_RBC_RIU_SystemVersion_T_RCM_MsgTypes_Pkg */
+
+#ifndef kcg_copy_DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg
+#define kcg_copy_DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg(kcg_C1, kcg_C2)\
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg)))
+#endif /* kcg_copy_DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg */
+
+#ifndef kcg_copy_RBC_Id_T_Common_Types_Pkg
+#define kcg_copy_RBC_Id_T_Common_Types_Pkg(kcg_C1, kcg_C2)                    \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (RBC_Id_T_Common_Types_Pkg)))
+#endif /* kcg_copy_RBC_Id_T_Common_Types_Pkg */
 
 #ifndef kcg_copy_centerOfBalisePosition_T_BG_Types_Pkg
 #define kcg_copy_centerOfBalisePosition_T_BG_Types_Pkg(kcg_C1, kcg_C2)        \
@@ -8236,6 +8230,14 @@ typedef kcg_int32 array_int32_4[4];
       (kcg_C2),                                                               \
       sizeof (centerOfBalisePosition_T_BG_Types_Pkg)))
 #endif /* kcg_copy_centerOfBalisePosition_T_BG_Types_Pkg */
+
+#ifndef kcg_copy_OdometrySpeeds_T_Obu_BasicTypes_Pkg
+#define kcg_copy_OdometrySpeeds_T_Obu_BasicTypes_Pkg(kcg_C1, kcg_C2)          \
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (OdometrySpeeds_T_Obu_BasicTypes_Pkg)))
+#endif /* kcg_copy_OdometrySpeeds_T_Obu_BasicTypes_Pkg */
 
 #ifndef kcg_copy_TrackSectionData_T_InfraLib
 #define kcg_copy_TrackSectionData_T_InfraLib(kcg_C1, kcg_C2)                  \
@@ -8250,26 +8252,13 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (RadioTrackTrainMessageQueueEntry_T)))
 #endif /* kcg_copy_RadioTrackTrainMessageQueueEntry_T */
 
-#ifndef kcg_copy_PT4_ErrorReporting_T_Packet_TrainTypes_Pkg
-#define kcg_copy_PT4_ErrorReporting_T_Packet_TrainTypes_Pkg(kcg_C1, kcg_C2)   \
+#ifndef kcg_copy_nothing_to_resume_profile_follow_T_TIU_Types_Pkg
+#define kcg_copy_nothing_to_resume_profile_follow_T_TIU_Types_Pkg(kcg_C1, kcg_C2)\
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (PT4_ErrorReporting_T_Packet_TrainTypes_Pkg)))
-#endif /* kcg_copy_PT4_ErrorReporting_T_Packet_TrainTypes_Pkg */
-
-#ifndef kcg_copy_T_LevelTansitionInfo_Level_And_Mode_Types_Pkg
-#define kcg_copy_T_LevelTansitionInfo_Level_And_Mode_Types_Pkg(kcg_C1, kcg_C2)\
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (T_LevelTansitionInfo_Level_And_Mode_Types_Pkg)))
-#endif /* kcg_copy_T_LevelTansitionInfo_Level_And_Mode_Types_Pkg */
-
-#ifndef kcg_copy_TrainPosRaw_T_InfraLib
-#define kcg_copy_TrainPosRaw_T_InfraLib(kcg_C1, kcg_C2)                       \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (TrainPosRaw_T_InfraLib)))
-#endif /* kcg_copy_TrainPosRaw_T_InfraLib */
+      sizeof (nothing_to_resume_profile_follow_T_TIU_Types_Pkg)))
+#endif /* kcg_copy_nothing_to_resume_profile_follow_T_TIU_Types_Pkg */
 
 #ifndef kcg_copy_CompressedBaliseMessage_TM
 #define kcg_copy_CompressedBaliseMessage_TM(kcg_C1, kcg_C2)                   \
@@ -8281,6 +8270,14 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (CompressedRadioMessage_TM)))
 #endif /* kcg_copy_CompressedRadioMessage_TM */
 
+#ifndef kcg_copy_DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg
+#define kcg_copy_DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg(kcg_C1, kcg_C2)   \
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg)))
+#endif /* kcg_copy_DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg */
+
 #ifndef kcg_copy_a_Brake_t_SDMConversionModelPkg
 #define kcg_copy_a_Brake_t_SDMConversionModelPkg(kcg_C1, kcg_C2)              \
   (kcg_assign_struct(                                                         \
@@ -8288,14 +8285,6 @@ typedef kcg_int32 array_int32_4[4];
       (kcg_C2),                                                               \
       sizeof (a_Brake_t_SDMConversionModelPkg)))
 #endif /* kcg_copy_a_Brake_t_SDMConversionModelPkg */
-
-#ifndef kcg_copy_DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg
-#define kcg_copy_DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg(kcg_C1, kcg_C2)\
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg)))
-#endif /* kcg_copy_DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg */
 
 #ifndef kcg_copy_LocationBasedEvents_T_ProvidePositionReport_Pkg
 #define kcg_copy_LocationBasedEvents_T_ProvidePositionReport_Pkg(kcg_C1, kcg_C2)\
@@ -8305,10 +8294,13 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (LocationBasedEvents_T_ProvidePositionReport_Pkg)))
 #endif /* kcg_copy_LocationBasedEvents_T_ProvidePositionReport_Pkg */
 
-#ifndef kcg_copy_P137_trackside_int_T_TM
-#define kcg_copy_P137_trackside_int_T_TM(kcg_C1, kcg_C2)                      \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P137_trackside_int_T_TM)))
-#endif /* kcg_copy_P137_trackside_int_T_TM */
+#ifndef kcg_copy_DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg
+#define kcg_copy_DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg(kcg_C1, kcg_C2)\
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg)))
+#endif /* kcg_copy_DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg */
 
 #ifndef kcg_copy_m38_initiationOfACommunicationSession_T_RCM_MsgTypes_Pkg
 #define kcg_copy_m38_initiationOfACommunicationSession_T_RCM_MsgTypes_Pkg(kcg_C1, kcg_C2)\
@@ -8318,10 +8310,10 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (m38_initiationOfACommunicationSession_T_RCM_MsgTypes_Pkg)))
 #endif /* kcg_copy_m38_initiationOfACommunicationSession_T_RCM_MsgTypes_Pkg */
 
-#ifndef kcg_copy_struct_485794
-#define kcg_copy_struct_485794(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_485794)))
-#endif /* kcg_copy_struct_485794 */
+#ifndef kcg_copy_struct_485689
+#define kcg_copy_struct_485689(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_485689)))
+#endif /* kcg_copy_struct_485689 */
 
 #ifndef kcg_copy_morcStatus_T_RCM_Session_Types_Pkg
 #define kcg_copy_morcStatus_T_RCM_Session_Types_Pkg(kcg_C1, kcg_C2)           \
@@ -8339,23 +8331,62 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (DMI_Menu_Request_T_DMI_Messages_EVC_to_DMI_Pkg)))
 #endif /* kcg_copy_DMI_Menu_Request_T_DMI_Messages_EVC_to_DMI_Pkg */
 
-#ifndef kcg_copy_Brake_inhibition_command_T_TIU_Types_Pkg
-#define kcg_copy_Brake_inhibition_command_T_TIU_Types_Pkg(kcg_C1, kcg_C2)     \
+#ifndef kcg_copy_ParabolaArc_T_CalcBrakingCurves_types
+#define kcg_copy_ParabolaArc_T_CalcBrakingCurves_types(kcg_C1, kcg_C2)        \
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (Brake_inhibition_command_T_TIU_Types_Pkg)))
-#endif /* kcg_copy_Brake_inhibition_command_T_TIU_Types_Pkg */
+      sizeof (ParabolaArc_T_CalcBrakingCurves_types)))
+#endif /* kcg_copy_ParabolaArc_T_CalcBrakingCurves_types */
+
+#ifndef kcg_copy_P255_trackside_int_T_TM
+#define kcg_copy_P255_trackside_int_T_TM(kcg_C1, kcg_C2)                      \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P255_trackside_int_T_TM)))
+#endif /* kcg_copy_P255_trackside_int_T_TM */
+
+#ifndef kcg_copy_Type_I_train_commands_T_TIU_Types_Pkg
+#define kcg_copy_Type_I_train_commands_T_TIU_Types_Pkg(kcg_C1, kcg_C2)        \
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (Type_I_train_commands_T_TIU_Types_Pkg)))
+#endif /* kcg_copy_Type_I_train_commands_T_TIU_Types_Pkg */
+
+#ifndef kcg_copy_odometryFactors_T_Toolbox
+#define kcg_copy_odometryFactors_T_Toolbox(kcg_C1, kcg_C2)                    \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (odometryFactors_T_Toolbox)))
+#endif /* kcg_copy_odometryFactors_T_Toolbox */
+
+#ifndef kcg_copy_NID_EM_Store_Item_T_TA_EmergencyStop_NID_EM_Store
+#define kcg_copy_NID_EM_Store_Item_T_TA_EmergencyStop_NID_EM_Store(kcg_C1, kcg_C2)\
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (NID_EM_Store_Item_T_TA_EmergencyStop_NID_EM_Store)))
+#endif /* kcg_copy_NID_EM_Store_Item_T_TA_EmergencyStop_NID_EM_Store */
+
+#ifndef kcg_copy_P009_TM_TrainToTrack
+#define kcg_copy_P009_TM_TrainToTrack(kcg_C1, kcg_C2)                         \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P009_TM_TrainToTrack)))
+#endif /* kcg_copy_P009_TM_TrainToTrack */
 
 #ifndef kcg_copy_M_132_T_TM_radio_messages
 #define kcg_copy_M_132_T_TM_radio_messages(kcg_C1, kcg_C2)                    \
   (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (M_132_T_TM_radio_messages)))
 #endif /* kcg_copy_M_132_T_TM_radio_messages */
 
-#ifndef kcg_copy_P005_TM_TrainToTrack
-#define kcg_copy_P005_TM_TrainToTrack(kcg_C1, kcg_C2)                         \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P005_TM_TrainToTrack)))
-#endif /* kcg_copy_P005_TM_TrainToTrack */
+#ifndef kcg_copy_P46_ConditionalLevelTransitionOrder_T_Packet_Types_Pkg
+#define kcg_copy_P46_ConditionalLevelTransitionOrder_T_Packet_Types_Pkg(kcg_C1, kcg_C2)\
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (P46_ConditionalLevelTransitionOrder_T_Packet_Types_Pkg)))
+#endif /* kcg_copy_P46_ConditionalLevelTransitionOrder_T_Packet_Types_Pkg */
+
+#ifndef kcg_copy_DMI_level_T_DMI_Types_Pkg
+#define kcg_copy_DMI_level_T_DMI_Types_Pkg(kcg_C1, kcg_C2)                    \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (DMI_level_T_DMI_Types_Pkg)))
+#endif /* kcg_copy_DMI_level_T_DMI_Types_Pkg */
 
 #ifndef kcg_copy_T_Data_From_Track_To_Level_Level_And_Mode_Types_Pkg
 #define kcg_copy_T_Data_From_Track_To_Level_Level_And_Mode_Types_Pkg(kcg_C1, kcg_C2)\
@@ -8375,15 +8406,15 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (MsgStructure)))
 #endif /* kcg_copy_MsgStructure */
 
+#ifndef kcg_copy_P058_section_int_T_TM
+#define kcg_copy_P058_section_int_T_TM(kcg_C1, kcg_C2)                        \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P058_section_int_T_TM)))
+#endif /* kcg_copy_P058_section_int_T_TM */
+
 #ifndef kcg_copy_SessionManagement_T
 #define kcg_copy_SessionManagement_T(kcg_C1, kcg_C2)                          \
   (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (SessionManagement_T)))
 #endif /* kcg_copy_SessionManagement_T */
-
-#ifndef kcg_copy_struct_486081
-#define kcg_copy_struct_486081(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_486081)))
-#endif /* kcg_copy_struct_486081 */
 
 #ifndef kcg_copy_TIU_Input_msg_API_TIU_Pkg
 #define kcg_copy_TIU_Input_msg_API_TIU_Pkg(kcg_C1, kcg_C2)                    \
@@ -8411,20 +8442,28 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (PT0_PositionReport_T_Packet_TrainTypes_Pkg)))
 #endif /* kcg_copy_PT0_PositionReport_T_Packet_TrainTypes_Pkg */
 
-#ifndef kcg_copy_MAReqParams_T
-#define kcg_copy_MAReqParams_T(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (MAReqParams_T)))
-#endif /* kcg_copy_MAReqParams_T */
+#ifndef kcg_copy_P046_section_int_T_TM
+#define kcg_copy_P046_section_int_T_TM(kcg_C1, kcg_C2)                        \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P046_section_int_T_TM)))
+#endif /* kcg_copy_P046_section_int_T_TM */
 
-#ifndef kcg_copy_M_current_T_TIU_Types_Pkg
-#define kcg_copy_M_current_T_TIU_Types_Pkg(kcg_C1, kcg_C2)                    \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (M_current_T_TIU_Types_Pkg)))
-#endif /* kcg_copy_M_current_T_TIU_Types_Pkg */
+#ifndef kcg_copy_P137_trackside_int_T_TM
+#define kcg_copy_P137_trackside_int_T_TM(kcg_C1, kcg_C2)                      \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P137_trackside_int_T_TM)))
+#endif /* kcg_copy_P137_trackside_int_T_TM */
 
-#ifndef kcg_copy_GP_DMI_Control_Pkg_Sub_func
-#define kcg_copy_GP_DMI_Control_Pkg_Sub_func(kcg_C1, kcg_C2)                  \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (GP_DMI_Control_Pkg_Sub_func)))
-#endif /* kcg_copy_GP_DMI_Control_Pkg_Sub_func */
+#ifndef kcg_copy_struct_486242
+#define kcg_copy_struct_486242(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_486242)))
+#endif /* kcg_copy_struct_486242 */
+
+#ifndef kcg_copy_DMI_train_length_T_DMI_Types_Pkg
+#define kcg_copy_DMI_train_length_T_DMI_Types_Pkg(kcg_C1, kcg_C2)             \
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (DMI_train_length_T_DMI_Types_Pkg)))
+#endif /* kcg_copy_DMI_train_length_T_DMI_Types_Pkg */
 
 #ifndef kcg_copy_DMI_DriverRequest_T_DMI_Types_Pkg
 #define kcg_copy_DMI_DriverRequest_T_DMI_Types_Pkg(kcg_C1, kcg_C2)            \
@@ -8442,15 +8481,15 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (mobileConnectionContext_T_RCM_Types_Pkg)))
 #endif /* kcg_copy_mobileConnectionContext_T_RCM_Types_Pkg */
 
-#ifndef kcg_copy_struct_486660
-#define kcg_copy_struct_486660(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_486660)))
-#endif /* kcg_copy_struct_486660 */
+#ifndef kcg_copy_struct_486417
+#define kcg_copy_struct_486417(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_486417)))
+#endif /* kcg_copy_struct_486417 */
 
-#ifndef kcg_copy_struct_486733
-#define kcg_copy_struct_486733(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_486733)))
-#endif /* kcg_copy_struct_486733 */
+#ifndef kcg_copy_struct_486490
+#define kcg_copy_struct_486490(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_486490)))
+#endif /* kcg_copy_struct_486490 */
 
 #ifndef kcg_copy_BG_counters_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg
 #define kcg_copy_BG_counters_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg(kcg_C1, kcg_C2)\
@@ -8499,13 +8538,13 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (DMI_train_id_T_DMI_Types_Pkg)))
 #endif /* kcg_copy_DMI_train_id_T_DMI_Types_Pkg */
 
-#ifndef kcg_copy_EOA_real_T_TargetManagement_types
-#define kcg_copy_EOA_real_T_TargetManagement_types(kcg_C1, kcg_C2)            \
+#ifndef kcg_copy_DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg
+#define kcg_copy_DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg(kcg_C1, kcg_C2)\
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (EOA_real_T_TargetManagement_types)))
-#endif /* kcg_copy_EOA_real_T_TargetManagement_types */
+      sizeof (DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg)))
+#endif /* kcg_copy_DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg */
 
 #ifndef kcg_copy_av_Map_t_SDMConversionModelPkg
 #define kcg_copy_av_Map_t_SDMConversionModelPkg(kcg_C1, kcg_C2)               \
@@ -8517,34 +8556,60 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (DMI_To_Modes_T_DMI_Types_Pkg)))
 #endif /* kcg_copy_DMI_To_Modes_T_DMI_Types_Pkg */
 
-#ifndef kcg_copy_DMI_trackConditionElement_T_DMI_Types_Pkg
-#define kcg_copy_DMI_trackConditionElement_T_DMI_Types_Pkg(kcg_C1, kcg_C2)    \
+#ifndef kcg_copy_nvkvint_T_Packet_Types_Pkg
+#define kcg_copy_nvkvint_T_Packet_Types_Pkg(kcg_C1, kcg_C2)                   \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (nvkvint_T_Packet_Types_Pkg)))
+#endif /* kcg_copy_nvkvint_T_Packet_Types_Pkg */
+
+#ifndef kcg_copy_P021_section_enum_T_TM
+#define kcg_copy_P021_section_enum_T_TM(kcg_C1, kcg_C2)                       \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P021_section_enum_T_TM)))
+#endif /* kcg_copy_P021_section_enum_T_TM */
+
+#ifndef kcg_copy_P57_MovementAuthorityRequestParameters_T_Packet_Types_Pkg
+#define kcg_copy_P57_MovementAuthorityRequestParameters_T_Packet_Types_Pkg(kcg_C1, kcg_C2)\
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (DMI_trackConditionElement_T_DMI_Types_Pkg)))
-#endif /* kcg_copy_DMI_trackConditionElement_T_DMI_Types_Pkg */
+      sizeof (P57_MovementAuthorityRequestParameters_T_Packet_Types_Pkg)))
+#endif /* kcg_copy_P57_MovementAuthorityRequestParameters_T_Packet_Types_Pkg */
 
-#ifndef kcg_copy_MetadataElement_T_Common_Types_Pkg
-#define kcg_copy_MetadataElement_T_Common_Types_Pkg(kcg_C1, kcg_C2)           \
+#ifndef kcg_copy_P027V1_section_int_qdiff_T_TM_baseline2
+#define kcg_copy_P027V1_section_int_qdiff_T_TM_baseline2(kcg_C1, kcg_C2)      \
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (MetadataElement_T_Common_Types_Pkg)))
-#endif /* kcg_copy_MetadataElement_T_Common_Types_Pkg */
+      sizeof (P027V1_section_int_qdiff_T_TM_baseline2)))
+#endif /* kcg_copy_P027V1_section_int_qdiff_T_TM_baseline2 */
 
-#ifndef kcg_copy_T_Mode_Profile_Level_And_Mode_Types_Pkg
-#define kcg_copy_T_Mode_Profile_Level_And_Mode_Types_Pkg(kcg_C1, kcg_C2)      \
+#ifndef kcg_copy_PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg
+#define kcg_copy_PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg(kcg_C1, kcg_C2)\
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (T_Mode_Profile_Level_And_Mode_Types_Pkg)))
-#endif /* kcg_copy_T_Mode_Profile_Level_And_Mode_Types_Pkg */
+      sizeof (PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg)))
+#endif /* kcg_copy_PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg */
 
-#ifndef kcg_copy_struct_487049
-#define kcg_copy_struct_487049(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_487049)))
-#endif /* kcg_copy_struct_487049 */
+#ifndef kcg_copy_TIU_trainStatus_T_TIU_Types_Pkg
+#define kcg_copy_TIU_trainStatus_T_TIU_Types_Pkg(kcg_C1, kcg_C2)              \
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (TIU_trainStatus_T_TIU_Types_Pkg)))
+#endif /* kcg_copy_TIU_trainStatus_T_TIU_Types_Pkg */
+
+#ifndef kcg_copy_struct_486841
+#define kcg_copy_struct_486841(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_486841)))
+#endif /* kcg_copy_struct_486841 */
+
+#ifndef kcg_copy_T_LevelTansitionInfo_Level_And_Mode_Types_Pkg
+#define kcg_copy_T_LevelTansitionInfo_Level_And_Mode_Types_Pkg(kcg_C1, kcg_C2)\
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (T_LevelTansitionInfo_Level_And_Mode_Types_Pkg)))
+#endif /* kcg_copy_T_LevelTansitionInfo_Level_And_Mode_Types_Pkg */
 
 #ifndef kcg_copy_mv_Map_t_SDMConversionModelPkg
 #define kcg_copy_mv_Map_t_SDMConversionModelPkg(kcg_C1, kcg_C2)               \
@@ -8559,13 +8624,13 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (T_Data_From_STM_Level_And_Mode_Types_Pkg)))
 #endif /* kcg_copy_T_Data_From_STM_Level_And_Mode_Types_Pkg */
 
-#ifndef kcg_copy_OdometryLocations_T_Obu_BasicTypes_Pkg
-#define kcg_copy_OdometryLocations_T_Obu_BasicTypes_Pkg(kcg_C1, kcg_C2)       \
+#ifndef kcg_copy_PT5_TrainRunningNumber_Packet_TrainTypes_Pkg
+#define kcg_copy_PT5_TrainRunningNumber_Packet_TrainTypes_Pkg(kcg_C1, kcg_C2) \
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (OdometryLocations_T_Obu_BasicTypes_Pkg)))
-#endif /* kcg_copy_OdometryLocations_T_Obu_BasicTypes_Pkg */
+      sizeof (PT5_TrainRunningNumber_Packet_TrainTypes_Pkg)))
+#endif /* kcg_copy_PT5_TrainRunningNumber_Packet_TrainTypes_Pkg */
 
 #ifndef kcg_copy_nationValuesForDMI_T_DMI_Types_Pkg
 #define kcg_copy_nationValuesForDMI_T_DMI_Types_Pkg(kcg_C1, kcg_C2)           \
@@ -8585,18 +8650,29 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (DiagMsg_T_RBC_Diagnostic_Pkg)))
 #endif /* kcg_copy_DiagMsg_T_RBC_Diagnostic_Pkg */
 
-#ifndef kcg_copy_DMI_train_length_T_DMI_Types_Pkg
-#define kcg_copy_DMI_train_length_T_DMI_Types_Pkg(kcg_C1, kcg_C2)             \
+#ifndef kcg_copy_Isolation_Status_T_TIU_Types_Pkg
+#define kcg_copy_Isolation_Status_T_TIU_Types_Pkg(kcg_C1, kcg_C2)             \
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (DMI_train_length_T_DMI_Types_Pkg)))
-#endif /* kcg_copy_DMI_train_length_T_DMI_Types_Pkg */
+      sizeof (Isolation_Status_T_TIU_Types_Pkg)))
+#endif /* kcg_copy_Isolation_Status_T_TIU_Types_Pkg */
 
-#ifndef kcg_copy_struct_487196
-#define kcg_copy_struct_487196(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_487196)))
-#endif /* kcg_copy_struct_487196 */
+#ifndef kcg_copy_BG_find_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg
+#define kcg_copy_BG_find_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg(kcg_C1, kcg_C2)\
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (BG_find_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg)))
+#endif /* kcg_copy_BG_find_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg */
+
+#ifndef kcg_copy_Passenger_door_control_info_T_TIU_Types_Pkg
+#define kcg_copy_Passenger_door_control_info_T_TIU_Types_Pkg(kcg_C1, kcg_C2)  \
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (Passenger_door_control_info_T_TIU_Types_Pkg)))
+#endif /* kcg_copy_Passenger_door_control_info_T_TIU_Types_Pkg */
 
 #ifndef kcg_copy_P046_OBU_T_TM
 #define kcg_copy_P046_OBU_T_TM(kcg_C1, kcg_C2)                                \
@@ -8616,13 +8692,13 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (ParabolaCurve_T_CalcBrakingCurves_types)))
 #endif /* kcg_copy_ParabolaCurve_T_CalcBrakingCurves_types */
 
-#ifndef kcg_copy_BG_find_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg
-#define kcg_copy_BG_find_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg(kcg_C1, kcg_C2)\
+#ifndef kcg_copy_TrainToTrackStatus_T_BG_Types_Pkg
+#define kcg_copy_TrainToTrackStatus_T_BG_Types_Pkg(kcg_C1, kcg_C2)            \
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (BG_find_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg)))
-#endif /* kcg_copy_BG_find_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg */
+      sizeof (TrainToTrackStatus_T_BG_Types_Pkg)))
+#endif /* kcg_copy_TrainToTrackStatus_T_BG_Types_Pkg */
 
 #ifndef kcg_copy_Target_T_TargetManagement_types
 #define kcg_copy_Target_T_TargetManagement_types(kcg_C1, kcg_C2)              \
@@ -8632,25 +8708,15 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (Target_T_TargetManagement_types)))
 #endif /* kcg_copy_Target_T_TargetManagement_types */
 
+#ifndef kcg_copy_GP_DMI_Control_Pkg_Sub_func
+#define kcg_copy_GP_DMI_Control_Pkg_Sub_func(kcg_C1, kcg_C2)                  \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (GP_DMI_Control_Pkg_Sub_func)))
+#endif /* kcg_copy_GP_DMI_Control_Pkg_Sub_func */
+
 #ifndef kcg_copy_R_data_internal_T_InfraLib
 #define kcg_copy_R_data_internal_T_InfraLib(kcg_C1, kcg_C2)                   \
   (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (R_data_internal_T_InfraLib)))
 #endif /* kcg_copy_R_data_internal_T_InfraLib */
-
-#ifndef kcg_copy_P058_section_int_T_TM
-#define kcg_copy_P058_section_int_T_TM(kcg_C1, kcg_C2)                        \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P058_section_int_T_TM)))
-#endif /* kcg_copy_P058_section_int_T_TM */
-
-#ifndef kcg_copy_P021_section_enum_T_TM
-#define kcg_copy_P021_section_enum_T_TM(kcg_C1, kcg_C2)                       \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P021_section_enum_T_TM)))
-#endif /* kcg_copy_P021_section_enum_T_TM */
-
-#ifndef kcg_copy_struct_487387
-#define kcg_copy_struct_487387(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_487387)))
-#endif /* kcg_copy_struct_487387 */
 
 #ifndef kcg_copy_NID_EM_Store_T_TA_EmergencyStop_NID_EM_Store
 #define kcg_copy_NID_EM_Store_T_TA_EmergencyStop_NID_EM_Store(kcg_C1, kcg_C2) \
@@ -8659,6 +8725,19 @@ typedef kcg_int32 array_int32_4[4];
       (kcg_C2),                                                               \
       sizeof (NID_EM_Store_T_TA_EmergencyStop_NID_EM_Store)))
 #endif /* kcg_copy_NID_EM_Store_T_TA_EmergencyStop_NID_EM_Store */
+
+#ifndef kcg_copy_struct_487344
+#define kcg_copy_struct_487344(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_487344)))
+#endif /* kcg_copy_struct_487344 */
+
+#ifndef kcg_copy_PT4_ErrorReporting_T_Packet_TrainTypes_Pkg
+#define kcg_copy_PT4_ErrorReporting_T_Packet_TrainTypes_Pkg(kcg_C1, kcg_C2)   \
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (PT4_ErrorReporting_T_Packet_TrainTypes_Pkg)))
+#endif /* kcg_copy_PT4_ErrorReporting_T_Packet_TrainTypes_Pkg */
 
 #ifndef kcg_copy_BG_Message_T_BG_Types_Pkg
 #define kcg_copy_BG_Message_T_BG_Types_Pkg(kcg_C1, kcg_C2)                    \
@@ -8686,10 +8765,10 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (DMI_Text_Message_Ack_T_DMI_Messages_DMI_to_EVC_Pkg)))
 #endif /* kcg_copy_DMI_Text_Message_Ack_T_DMI_Messages_DMI_to_EVC_Pkg */
 
-#ifndef kcg_copy_P255_trackside_int_T_TM
-#define kcg_copy_P255_trackside_int_T_TM(kcg_C1, kcg_C2)                      \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P255_trackside_int_T_TM)))
-#endif /* kcg_copy_P255_trackside_int_T_TM */
+#ifndef kcg_copy_struct_487461
+#define kcg_copy_struct_487461(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_487461)))
+#endif /* kcg_copy_struct_487461 */
 
 #ifndef kcg_copy_T_Data_From_Track_MASSPGradient_Available_Level_And_Mode_Types_Pkg
 #define kcg_copy_T_Data_From_Track_MASSPGradient_Available_Level_And_Mode_Types_Pkg(kcg_C1, kcg_C2)\
@@ -8699,15 +8778,10 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (T_Data_From_Track_MASSPGradient_Available_Level_And_Mode_Types_Pkg)))
 #endif /* kcg_copy_T_Data_From_Track_MASSPGradient_Available_Level_And_Mode_Types_Pkg */
 
-#ifndef kcg_copy_Endtimer_t_TrackAtlasTypes
-#define kcg_copy_Endtimer_t_TrackAtlasTypes(kcg_C1, kcg_C2)                   \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (Endtimer_t_TrackAtlasTypes)))
-#endif /* kcg_copy_Endtimer_t_TrackAtlasTypes */
-
-#ifndef kcg_copy_struct_487566
-#define kcg_copy_struct_487566(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_487566)))
-#endif /* kcg_copy_struct_487566 */
+#ifndef kcg_copy_struct_487538
+#define kcg_copy_struct_487538(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_487538)))
+#endif /* kcg_copy_struct_487538 */
 
 #ifndef kcg_copy_T_ERTMS_capabilities_Level_And_Mode_Types_Pkg
 #define kcg_copy_T_ERTMS_capabilities_Level_And_Mode_Types_Pkg(kcg_C1, kcg_C2)\
@@ -8717,23 +8791,52 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (T_ERTMS_capabilities_Level_And_Mode_Types_Pkg)))
 #endif /* kcg_copy_T_ERTMS_capabilities_Level_And_Mode_Types_Pkg */
 
+#ifndef kcg_copy_P027V1_OBU_body_enum_T_TM_baseline2
+#define kcg_copy_P027V1_OBU_body_enum_T_TM_baseline2(kcg_C1, kcg_C2)          \
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (P027V1_OBU_body_enum_T_TM_baseline2)))
+#endif /* kcg_copy_P027V1_OBU_body_enum_T_TM_baseline2 */
+
+#ifndef kcg_copy_AccuDistanceProfileMA_TA_MA_new
+#define kcg_copy_AccuDistanceProfileMA_TA_MA_new(kcg_C1, kcg_C2)              \
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (AccuDistanceProfileMA_TA_MA_new)))
+#endif /* kcg_copy_AccuDistanceProfileMA_TA_MA_new */
+
+#ifndef kcg_copy_struct_487594
+#define kcg_copy_struct_487594(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_487594)))
+#endif /* kcg_copy_struct_487594 */
+
 #ifndef kcg_copy_Brake_status_T_TIU_Types_Pkg
 #define kcg_copy_Brake_status_T_TIU_Types_Pkg(kcg_C1, kcg_C2)                 \
   (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (Brake_status_T_TIU_Types_Pkg)))
 #endif /* kcg_copy_Brake_status_T_TIU_Types_Pkg */
 
-#ifndef kcg_copy_struct_487754
-#define kcg_copy_struct_487754(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_487754)))
-#endif /* kcg_copy_struct_487754 */
-
-#ifndef kcg_copy_DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg
-#define kcg_copy_DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg(kcg_C1, kcg_C2)     \
+#ifndef kcg_copy_safeRadioConnectionIndication_T_RCM_Session_Types_Pkg
+#define kcg_copy_safeRadioConnectionIndication_T_RCM_Session_Types_Pkg(kcg_C1, kcg_C2)\
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg)))
-#endif /* kcg_copy_DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg */
+      sizeof (safeRadioConnectionIndication_T_RCM_Session_Types_Pkg)))
+#endif /* kcg_copy_safeRadioConnectionIndication_T_RCM_Session_Types_Pkg */
+
+#ifndef kcg_copy_Brake_pressure_value_T_TIU_Types_Pkg
+#define kcg_copy_Brake_pressure_value_T_TIU_Types_Pkg(kcg_C1, kcg_C2)         \
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (Brake_pressure_value_T_TIU_Types_Pkg)))
+#endif /* kcg_copy_Brake_pressure_value_T_TIU_Types_Pkg */
+
+#ifndef kcg_copy_Diff_T_Packet_Types_Pkg
+#define kcg_copy_Diff_T_Packet_Types_Pkg(kcg_C1, kcg_C2)                      \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (Diff_T_Packet_Types_Pkg)))
+#endif /* kcg_copy_Diff_T_Packet_Types_Pkg */
 
 #ifndef kcg_copy_positionedBGs_w_overrun_T_CalculateTrainPosition_Pkg
 #define kcg_copy_positionedBGs_w_overrun_T_CalculateTrainPosition_Pkg(kcg_C1, kcg_C2)\
@@ -8751,13 +8854,13 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (T_Data_From_F2_functions_Level_And_Mode_Types_Pkg)))
 #endif /* kcg_copy_T_Data_From_F2_functions_Level_And_Mode_Types_Pkg */
 
-#ifndef kcg_copy_movementAuthorityForDMI_T_DMI_Types_Pkg
-#define kcg_copy_movementAuthorityForDMI_T_DMI_Types_Pkg(kcg_C1, kcg_C2)      \
+#ifndef kcg_copy_RadioManagement_T_API_RadioCommunication_Pkg
+#define kcg_copy_RadioManagement_T_API_RadioCommunication_Pkg(kcg_C1, kcg_C2) \
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (movementAuthorityForDMI_T_DMI_Types_Pkg)))
-#endif /* kcg_copy_movementAuthorityForDMI_T_DMI_Types_Pkg */
+      sizeof (RadioManagement_T_API_RadioCommunication_Pkg)))
+#endif /* kcg_copy_RadioManagement_T_API_RadioCommunication_Pkg */
 
 #ifndef kcg_copy_TSM_revokeCond_T_SDM_Commands_Pkg
 #define kcg_copy_TSM_revokeCond_T_SDM_Commands_Pkg(kcg_C1, kcg_C2)            \
@@ -8767,14 +8870,6 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (TSM_revokeCond_T_SDM_Commands_Pkg)))
 #endif /* kcg_copy_TSM_revokeCond_T_SDM_Commands_Pkg */
 
-#ifndef kcg_copy_DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg
-#define kcg_copy_DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg(kcg_C1, kcg_C2)\
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg)))
-#endif /* kcg_copy_DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg */
-
 #ifndef kcg_copy_T_Mode_Level_Level_And_Mode_Types_Pkg
 #define kcg_copy_T_Mode_Level_Level_And_Mode_Types_Pkg(kcg_C1, kcg_C2)        \
   (kcg_assign_struct(                                                         \
@@ -8783,42 +8878,18 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (T_Mode_Level_Level_And_Mode_Types_Pkg)))
 #endif /* kcg_copy_T_Mode_Level_Level_And_Mode_Types_Pkg */
 
-#ifndef kcg_copy_P041_section_int_T_TM
-#define kcg_copy_P041_section_int_T_TM(kcg_C1, kcg_C2)                        \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P041_section_int_T_TM)))
-#endif /* kcg_copy_P041_section_int_T_TM */
-
-#ifndef kcg_copy_P45_RadioNetworkRegistration_T_Packet_Types_Pkg
-#define kcg_copy_P45_RadioNetworkRegistration_T_Packet_Types_Pkg(kcg_C1, kcg_C2)\
+#ifndef kcg_copy_P63_BaliseInSRAuthority_T_Packet_Types_Pkg
+#define kcg_copy_P63_BaliseInSRAuthority_T_Packet_Types_Pkg(kcg_C1, kcg_C2)   \
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (P45_RadioNetworkRegistration_T_Packet_Types_Pkg)))
-#endif /* kcg_copy_P45_RadioNetworkRegistration_T_Packet_Types_Pkg */
+      sizeof (P63_BaliseInSRAuthority_T_Packet_Types_Pkg)))
+#endif /* kcg_copy_P63_BaliseInSRAuthority_T_Packet_Types_Pkg */
 
-#ifndef kcg_copy_DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg
-#define kcg_copy_DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg(kcg_C1, kcg_C2)\
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg)))
-#endif /* kcg_copy_DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg */
-
-#ifndef kcg_copy_mobileRegistrationContext_T_RCM_Types_Pkg
-#define kcg_copy_mobileRegistrationContext_T_RCM_Types_Pkg(kcg_C1, kcg_C2)    \
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (mobileRegistrationContext_T_RCM_Types_Pkg)))
-#endif /* kcg_copy_mobileRegistrationContext_T_RCM_Types_Pkg */
-
-#ifndef kcg_copy_DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg
-#define kcg_copy_DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg(kcg_C1, kcg_C2)\
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg)))
-#endif /* kcg_copy_DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg */
+#ifndef kcg_copy_P045_trackside_int_T_TM
+#define kcg_copy_P045_trackside_int_T_TM(kcg_C1, kcg_C2)                      \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P045_trackside_int_T_TM)))
+#endif /* kcg_copy_P045_trackside_int_T_TM */
 
 #ifndef kcg_copy_T_Data_From_Track_Mess_Level_And_Mode_Types_Pkg
 #define kcg_copy_T_Data_From_Track_Mess_Level_And_Mode_Types_Pkg(kcg_C1, kcg_C2)\
@@ -8827,6 +8898,19 @@ typedef kcg_int32 array_int32_4[4];
       (kcg_C2),                                                               \
       sizeof (T_Data_From_Track_Mess_Level_And_Mode_Types_Pkg)))
 #endif /* kcg_copy_T_Data_From_Track_Mess_Level_And_Mode_Types_Pkg */
+
+#ifndef kcg_copy_DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg
+#define kcg_copy_DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg(kcg_C1, kcg_C2)\
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg)))
+#endif /* kcg_copy_DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg */
+
+#ifndef kcg_copy_DP_or_OL_t_TrackAtlasTypes
+#define kcg_copy_DP_or_OL_t_TrackAtlasTypes(kcg_C1, kcg_C2)                   \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (DP_or_OL_t_TrackAtlasTypes)))
+#endif /* kcg_copy_DP_or_OL_t_TrackAtlasTypes */
 
 #ifndef kcg_copy_DynamicConfig_T
 #define kcg_copy_DynamicConfig_T(kcg_C1, kcg_C2)                              \
@@ -8849,23 +8933,15 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (TargetCollection_T_TargetManagement_types)))
 #endif /* kcg_copy_TargetCollection_T_TargetManagement_types */
 
-#ifndef kcg_copy_DP_or_OL_t_TrackAtlasTypes
-#define kcg_copy_DP_or_OL_t_TrackAtlasTypes(kcg_C1, kcg_C2)                   \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (DP_or_OL_t_TrackAtlasTypes)))
-#endif /* kcg_copy_DP_or_OL_t_TrackAtlasTypes */
+#ifndef kcg_copy_struct_488170
+#define kcg_copy_struct_488170(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_488170)))
+#endif /* kcg_copy_struct_488170 */
 
-#ifndef kcg_copy_P041_section_enum_T_TM
-#define kcg_copy_P041_section_enum_T_TM(kcg_C1, kcg_C2)                       \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P041_section_enum_T_TM)))
-#endif /* kcg_copy_P041_section_enum_T_TM */
-
-#ifndef kcg_copy_Brake_pressure_value_T_TIU_Types_Pkg
-#define kcg_copy_Brake_pressure_value_T_TIU_Types_Pkg(kcg_C1, kcg_C2)         \
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (Brake_pressure_value_T_TIU_Types_Pkg)))
-#endif /* kcg_copy_Brake_pressure_value_T_TIU_Types_Pkg */
+#ifndef kcg_copy_struct_488194
+#define kcg_copy_struct_488194(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_488194)))
+#endif /* kcg_copy_struct_488194 */
 
 #ifndef kcg_copy_CurveCollection_T_CalcBrakingCurves_types
 #define kcg_copy_CurveCollection_T_CalcBrakingCurves_types(kcg_C1, kcg_C2)    \
@@ -8874,11 +8950,6 @@ typedef kcg_int32 array_int32_4[4];
       (kcg_C2),                                                               \
       sizeof (CurveCollection_T_CalcBrakingCurves_types)))
 #endif /* kcg_copy_CurveCollection_T_CalcBrakingCurves_types */
-
-#ifndef kcg_copy_RBC_Id_T_Common_Types_Pkg
-#define kcg_copy_RBC_Id_T_Common_Types_Pkg(kcg_C1, kcg_C2)                    \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (RBC_Id_T_Common_Types_Pkg)))
-#endif /* kcg_copy_RBC_Id_T_Common_Types_Pkg */
 
 #ifndef kcg_copy_DataForModeAndLevel_t_TrackAtlasTypes
 #define kcg_copy_DataForModeAndLevel_t_TrackAtlasTypes(kcg_C1, kcg_C2)        \
@@ -8896,14 +8967,6 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (RBC_Communication_T_ProvidePositionReport_Pkg)))
 #endif /* kcg_copy_RBC_Communication_T_ProvidePositionReport_Pkg */
 
-#ifndef kcg_copy_P137_StopIfInStaffResponsible_T_Packet_Types_Pkg
-#define kcg_copy_P137_StopIfInStaffResponsible_T_Packet_Types_Pkg(kcg_C1, kcg_C2)\
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (P137_StopIfInStaffResponsible_T_Packet_Types_Pkg)))
-#endif /* kcg_copy_P137_StopIfInStaffResponsible_T_Packet_Types_Pkg */
-
 #ifndef kcg_copy_DMI_Train_Data_Ack_T_DMI_Messages_DMI_to_EVC_Pkg
 #define kcg_copy_DMI_Train_Data_Ack_T_DMI_Messages_DMI_to_EVC_Pkg(kcg_C1, kcg_C2)\
   (kcg_assign_struct(                                                         \
@@ -8911,19 +8974,6 @@ typedef kcg_int32 array_int32_4[4];
       (kcg_C2),                                                               \
       sizeof (DMI_Train_Data_Ack_T_DMI_Messages_DMI_to_EVC_Pkg)))
 #endif /* kcg_copy_DMI_Train_Data_Ack_T_DMI_Messages_DMI_to_EVC_Pkg */
-
-#ifndef kcg_copy_P058_section_enum_T_TM
-#define kcg_copy_P058_section_enum_T_TM(kcg_C1, kcg_C2)                       \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P058_section_enum_T_TM)))
-#endif /* kcg_copy_P058_section_enum_T_TM */
-
-#ifndef kcg_copy_NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store
-#define kcg_copy_NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store(kcg_C1, kcg_C2)\
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store)))
-#endif /* kcg_copy_NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store */
 
 #ifndef kcg_copy_TIU_commandStatus_T_TIU_Types_Pkg
 #define kcg_copy_TIU_commandStatus_T_TIU_Types_Pkg(kcg_C1, kcg_C2)            \
@@ -8933,24 +8983,6 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (TIU_commandStatus_T_TIU_Types_Pkg)))
 #endif /* kcg_copy_TIU_commandStatus_T_TIU_Types_Pkg */
 
-#ifndef kcg_copy_DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg
-#define kcg_copy_DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg(kcg_C1, kcg_C2)\
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg)))
-#endif /* kcg_copy_DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg */
-
-#ifndef kcg_copy_struct_488406
-#define kcg_copy_struct_488406(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_488406)))
-#endif /* kcg_copy_struct_488406 */
-
-#ifndef kcg_copy_struct_488418
-#define kcg_copy_struct_488418(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_488418)))
-#endif /* kcg_copy_struct_488418 */
-
 #ifndef kcg_copy_M_TrainTrack_Message_T_TM_radio_messages
 #define kcg_copy_M_TrainTrack_Message_T_TM_radio_messages(kcg_C1, kcg_C2)     \
   (kcg_assign_struct(                                                         \
@@ -8959,13 +8991,13 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (M_TrainTrack_Message_T_TM_radio_messages)))
 #endif /* kcg_copy_M_TrainTrack_Message_T_TM_radio_messages */
 
-#ifndef kcg_copy_IterPacket58_T_Packet_Types_Pkg
-#define kcg_copy_IterPacket58_T_Packet_Types_Pkg(kcg_C1, kcg_C2)              \
+#ifndef kcg_copy_DMI_trackConditionElement_T_DMI_Types_Pkg
+#define kcg_copy_DMI_trackConditionElement_T_DMI_Types_Pkg(kcg_C1, kcg_C2)    \
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (IterPacket58_T_Packet_Types_Pkg)))
-#endif /* kcg_copy_IterPacket58_T_Packet_Types_Pkg */
+      sizeof (DMI_trackConditionElement_T_DMI_Types_Pkg)))
+#endif /* kcg_copy_DMI_trackConditionElement_T_DMI_Types_Pkg */
 
 #ifndef kcg_copy_T_AnnouncedLevel_Level_And_Mode_Types_Pkg
 #define kcg_copy_T_AnnouncedLevel_Level_And_Mode_Types_Pkg(kcg_C1, kcg_C2)    \
@@ -8975,29 +9007,13 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (T_AnnouncedLevel_Level_And_Mode_Types_Pkg)))
 #endif /* kcg_copy_T_AnnouncedLevel_Level_And_Mode_Types_Pkg */
 
-#ifndef kcg_copy_Target_real_T_TargetManagement_types
-#define kcg_copy_Target_real_T_TargetManagement_types(kcg_C1, kcg_C2)         \
+#ifndef kcg_copy_OdometryLocations_T_Obu_BasicTypes_Pkg
+#define kcg_copy_OdometryLocations_T_Obu_BasicTypes_Pkg(kcg_C1, kcg_C2)       \
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (Target_real_T_TargetManagement_types)))
-#endif /* kcg_copy_Target_real_T_TargetManagement_types */
-
-#ifndef kcg_copy_Isolation_Status_T_TIU_Types_Pkg
-#define kcg_copy_Isolation_Status_T_TIU_Types_Pkg(kcg_C1, kcg_C2)             \
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (Isolation_Status_T_TIU_Types_Pkg)))
-#endif /* kcg_copy_Isolation_Status_T_TIU_Types_Pkg */
-
-#ifndef kcg_copy_NID_EM_Store_Item_T_TA_EmergencyStop_NID_EM_Store
-#define kcg_copy_NID_EM_Store_Item_T_TA_EmergencyStop_NID_EM_Store(kcg_C1, kcg_C2)\
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (NID_EM_Store_Item_T_TA_EmergencyStop_NID_EM_Store)))
-#endif /* kcg_copy_NID_EM_Store_Item_T_TA_EmergencyStop_NID_EM_Store */
+      sizeof (OdometryLocations_T_Obu_BasicTypes_Pkg)))
+#endif /* kcg_copy_OdometryLocations_T_Obu_BasicTypes_Pkg */
 
 #ifndef kcg_copy_mobileConnectionCmd_T_RCM_Types_Pkg
 #define kcg_copy_mobileConnectionCmd_T_RCM_Types_Pkg(kcg_C1, kcg_C2)          \
@@ -9007,22 +9023,6 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (mobileConnectionCmd_T_RCM_Types_Pkg)))
 #endif /* kcg_copy_mobileConnectionCmd_T_RCM_Types_Pkg */
 
-#ifndef kcg_copy_DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg
-#define kcg_copy_DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg(kcg_C1, kcg_C2)\
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg)))
-#endif /* kcg_copy_DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg */
-
-#ifndef kcg_copy_ParabolaArc_T_CalcBrakingCurves_types
-#define kcg_copy_ParabolaArc_T_CalcBrakingCurves_types(kcg_C1, kcg_C2)        \
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (ParabolaArc_T_CalcBrakingCurves_types)))
-#endif /* kcg_copy_ParabolaArc_T_CalcBrakingCurves_types */
-
 #ifndef kcg_copy_ModeLevel2PositionReport_T_ProvidePositionReport_Pkg
 #define kcg_copy_ModeLevel2PositionReport_T_ProvidePositionReport_Pkg(kcg_C1, kcg_C2)\
   (kcg_assign_struct(                                                         \
@@ -9030,11 +9030,6 @@ typedef kcg_int32 array_int32_4[4];
       (kcg_C2),                                                               \
       sizeof (ModeLevel2PositionReport_T_ProvidePositionReport_Pkg)))
 #endif /* kcg_copy_ModeLevel2PositionReport_T_ProvidePositionReport_Pkg */
-
-#ifndef kcg_copy_struct_488833
-#define kcg_copy_struct_488833(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_488833)))
-#endif /* kcg_copy_struct_488833 */
 
 #ifndef kcg_copy_trainData_Trigger_T_trainData_Types_pkg
 #define kcg_copy_trainData_Trigger_T_trainData_Types_pkg(kcg_C1, kcg_C2)      \
@@ -9044,41 +9039,47 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (trainData_Trigger_T_trainData_Types_pkg)))
 #endif /* kcg_copy_trainData_Trigger_T_trainData_Types_pkg */
 
-#ifndef kcg_copy_P021_section_int_T_TM
-#define kcg_copy_P021_section_int_T_TM(kcg_C1, kcg_C2)                        \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P021_section_int_T_TM)))
-#endif /* kcg_copy_P021_section_int_T_TM */
-
-#ifndef kcg_copy_Passenger_door_control_info_T_TIU_Types_Pkg
-#define kcg_copy_Passenger_door_control_info_T_TIU_Types_Pkg(kcg_C1, kcg_C2)  \
+#ifndef kcg_copy_DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg
+#define kcg_copy_DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg(kcg_C1, kcg_C2)\
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (Passenger_door_control_info_T_TIU_Types_Pkg)))
-#endif /* kcg_copy_Passenger_door_control_info_T_TIU_Types_Pkg */
+      sizeof (DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg)))
+#endif /* kcg_copy_DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg */
 
-#ifndef kcg_copy_P009_TM_TrainToTrack
-#define kcg_copy_P009_TM_TrainToTrack(kcg_C1, kcg_C2)                         \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P009_TM_TrainToTrack)))
-#endif /* kcg_copy_P009_TM_TrainToTrack */
+#ifndef kcg_copy_P004_TM_TrainToTrack
+#define kcg_copy_P004_TM_TrainToTrack(kcg_C1, kcg_C2)                         \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P004_TM_TrainToTrack)))
+#endif /* kcg_copy_P004_TM_TrainToTrack */
 
-#ifndef kcg_copy_P046_section_int_T_TM
-#define kcg_copy_P046_section_int_T_TM(kcg_C1, kcg_C2)                        \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P046_section_int_T_TM)))
-#endif /* kcg_copy_P046_section_int_T_TM */
-
-#ifndef kcg_copy_StaticSpeedSection_t_TrackAtlasTypes
-#define kcg_copy_StaticSpeedSection_t_TrackAtlasTypes(kcg_C1, kcg_C2)         \
+#ifndef kcg_copy_P45_RadioNetworkRegistration_T_Packet_Types_Pkg
+#define kcg_copy_P45_RadioNetworkRegistration_T_Packet_Types_Pkg(kcg_C1, kcg_C2)\
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (StaticSpeedSection_t_TrackAtlasTypes)))
-#endif /* kcg_copy_StaticSpeedSection_t_TrackAtlasTypes */
+      sizeof (P45_RadioNetworkRegistration_T_Packet_Types_Pkg)))
+#endif /* kcg_copy_P45_RadioNetworkRegistration_T_Packet_Types_Pkg */
 
-#ifndef kcg_copy_DMI_level_T_DMI_Types_Pkg
-#define kcg_copy_DMI_level_T_DMI_Types_Pkg(kcg_C1, kcg_C2)                    \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (DMI_level_T_DMI_Types_Pkg)))
-#endif /* kcg_copy_DMI_level_T_DMI_Types_Pkg */
+#ifndef kcg_copy_Brake_inhibition_command_T_TIU_Types_Pkg
+#define kcg_copy_Brake_inhibition_command_T_TIU_Types_Pkg(kcg_C1, kcg_C2)     \
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (Brake_inhibition_command_T_TIU_Types_Pkg)))
+#endif /* kcg_copy_Brake_inhibition_command_T_TIU_Types_Pkg */
+
+#ifndef kcg_copy_struct_488685
+#define kcg_copy_struct_488685(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_488685)))
+#endif /* kcg_copy_struct_488685 */
+
+#ifndef kcg_copy_Gradient_section_t_TrackAtlasTypes
+#define kcg_copy_Gradient_section_t_TrackAtlasTypes(kcg_C1, kcg_C2)           \
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (Gradient_section_t_TrackAtlasTypes)))
+#endif /* kcg_copy_Gradient_section_t_TrackAtlasTypes */
 
 #ifndef kcg_copy_DMI_trackCondition_T_DMI_Types_Pkg
 #define kcg_copy_DMI_trackCondition_T_DMI_Types_Pkg(kcg_C1, kcg_C2)           \
@@ -9117,34 +9118,23 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (av_MergedMap_t_SDMConversionModelPkg)))
 #endif /* kcg_copy_av_MergedMap_t_SDMConversionModelPkg */
 
-#ifndef kcg_copy_nothing_to_resume_profile_follow_T_TIU_Types_Pkg
-#define kcg_copy_nothing_to_resume_profile_follow_T_TIU_Types_Pkg(kcg_C1, kcg_C2)\
+#ifndef kcg_copy_P005_TM_TrainToTrack
+#define kcg_copy_P005_TM_TrainToTrack(kcg_C1, kcg_C2)                         \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P005_TM_TrainToTrack)))
+#endif /* kcg_copy_P005_TM_TrainToTrack */
+
+#ifndef kcg_copy_DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg
+#define kcg_copy_DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg(kcg_C1, kcg_C2)     \
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (nothing_to_resume_profile_follow_T_TIU_Types_Pkg)))
-#endif /* kcg_copy_nothing_to_resume_profile_follow_T_TIU_Types_Pkg */
+      sizeof (DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg)))
+#endif /* kcg_copy_DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg */
 
-#ifndef kcg_copy_P015_section_int_T_TM
-#define kcg_copy_P015_section_int_T_TM(kcg_C1, kcg_C2)                        \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P015_section_int_T_TM)))
-#endif /* kcg_copy_P015_section_int_T_TM */
-
-#ifndef kcg_copy_m32_RBC_RIU_SystemVersion_T_RCM_MsgTypes_Pkg
-#define kcg_copy_m32_RBC_RIU_SystemVersion_T_RCM_MsgTypes_Pkg(kcg_C1, kcg_C2) \
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (m32_RBC_RIU_SystemVersion_T_RCM_MsgTypes_Pkg)))
-#endif /* kcg_copy_m32_RBC_RIU_SystemVersion_T_RCM_MsgTypes_Pkg */
-
-#ifndef kcg_copy_extractTargetsMRSPACC_TargetManagement_pkg
-#define kcg_copy_extractTargetsMRSPACC_TargetManagement_pkg(kcg_C1, kcg_C2)   \
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (extractTargetsMRSPACC_TargetManagement_pkg)))
-#endif /* kcg_copy_extractTargetsMRSPACC_TargetManagement_pkg */
+#ifndef kcg_copy_struct_488860
+#define kcg_copy_struct_488860(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_488860)))
+#endif /* kcg_copy_struct_488860 */
 
 #ifndef kcg_copy_MRSP_reduction_acc_TA_Export
 #define kcg_copy_MRSP_reduction_acc_TA_Export(kcg_C1, kcg_C2)                 \
@@ -9171,19 +9161,6 @@ typedef kcg_int32 array_int32_4[4];
       (kcg_C2),                                                               \
       sizeof (refBGs_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg)))
 #endif /* kcg_copy_refBGs_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg */
-
-#ifndef kcg_copy_T_Reversing_Data_Level_And_Mode_Types_Pkg
-#define kcg_copy_T_Reversing_Data_Level_And_Mode_Types_Pkg(kcg_C1, kcg_C2)    \
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (T_Reversing_Data_Level_And_Mode_Types_Pkg)))
-#endif /* kcg_copy_T_Reversing_Data_Level_And_Mode_Types_Pkg */
-
-#ifndef kcg_copy_nvkvint_T_Packet_Types_Pkg
-#define kcg_copy_nvkvint_T_Packet_Types_Pkg(kcg_C1, kcg_C2)                   \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (nvkvint_T_Packet_Types_Pkg)))
-#endif /* kcg_copy_nvkvint_T_Packet_Types_Pkg */
 
 #ifndef kcg_copy_API_RadioMsgHeader_T_API_Msg_Pkg
 #define kcg_copy_API_RadioMsgHeader_T_API_Msg_Pkg(kcg_C1, kcg_C2)             \
@@ -9225,10 +9202,21 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (DMI_Track_Description_T_DMI_Messages_EVC_to_DMI_Pkg)))
 #endif /* kcg_copy_DMI_Track_Description_T_DMI_Messages_EVC_to_DMI_Pkg */
 
-#ifndef kcg_copy_P046_section_enum_T_TM
-#define kcg_copy_P046_section_enum_T_TM(kcg_C1, kcg_C2)                       \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P046_section_enum_T_TM)))
-#endif /* kcg_copy_P046_section_enum_T_TM */
+#ifndef kcg_copy_DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg
+#define kcg_copy_DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg(kcg_C1, kcg_C2)\
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg)))
+#endif /* kcg_copy_DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg */
+
+#ifndef kcg_copy_mobileRegistrationCmd_T_RCM_Types_Pkg
+#define kcg_copy_mobileRegistrationCmd_T_RCM_Types_Pkg(kcg_C1, kcg_C2)        \
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (mobileRegistrationCmd_T_RCM_Types_Pkg)))
+#endif /* kcg_copy_mobileRegistrationCmd_T_RCM_Types_Pkg */
 
 #ifndef kcg_copy_T_Data_From_Speed_Supervision_Level_And_Mode_Types_Pkg
 #define kcg_copy_T_Data_From_Speed_Supervision_Level_And_Mode_Types_Pkg(kcg_C1, kcg_C2)\
@@ -9238,23 +9226,33 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (T_Data_From_Speed_Supervision_Level_And_Mode_Types_Pkg)))
 #endif /* kcg_copy_T_Data_From_Speed_Supervision_Level_And_Mode_Types_Pkg */
 
-#ifndef kcg_copy_struct_489524
-#define kcg_copy_struct_489524(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_489524)))
-#endif /* kcg_copy_struct_489524 */
+#ifndef kcg_copy_movementAuthorityForDMI_T_DMI_Types_Pkg
+#define kcg_copy_movementAuthorityForDMI_T_DMI_Types_Pkg(kcg_C1, kcg_C2)      \
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (movementAuthorityForDMI_T_DMI_Types_Pkg)))
+#endif /* kcg_copy_movementAuthorityForDMI_T_DMI_Types_Pkg */
+
+#ifndef kcg_copy_struct_489123
+#define kcg_copy_struct_489123(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_489123)))
+#endif /* kcg_copy_struct_489123 */
 
 #ifndef kcg_copy_DMI_DriverAck_T_DMI_Types_Pkg
 #define kcg_copy_DMI_DriverAck_T_DMI_Types_Pkg(kcg_C1, kcg_C2)                \
   (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (DMI_DriverAck_T_DMI_Types_Pkg)))
 #endif /* kcg_copy_DMI_DriverAck_T_DMI_Types_Pkg */
 
-#ifndef kcg_copy_RadioManagement_T_API_RadioCommunication_Pkg
-#define kcg_copy_RadioManagement_T_API_RadioCommunication_Pkg(kcg_C1, kcg_C2) \
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (RadioManagement_T_API_RadioCommunication_Pkg)))
-#endif /* kcg_copy_RadioManagement_T_API_RadioCommunication_Pkg */
+#ifndef kcg_copy_TrainPosRaw_T_InfraLib
+#define kcg_copy_TrainPosRaw_T_InfraLib(kcg_C1, kcg_C2)                       \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (TrainPosRaw_T_InfraLib)))
+#endif /* kcg_copy_TrainPosRaw_T_InfraLib */
+
+#ifndef kcg_copy_nvkrint_T_Packet_Types_Pkg
+#define kcg_copy_nvkrint_T_Packet_Types_Pkg(kcg_C1, kcg_C2)                   \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (nvkrint_T_Packet_Types_Pkg)))
+#endif /* kcg_copy_nvkrint_T_Packet_Types_Pkg */
 
 #ifndef kcg_copy_P065_trackside_int_T_TM
 #define kcg_copy_P065_trackside_int_T_TM(kcg_C1, kcg_C2)                      \
@@ -9591,10 +9589,10 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (trainPosition_T_TrainPosition_Types_Pck)))
 #endif /* kcg_copy_trainPosition_T_TrainPosition_Types_Pck */
 
-#ifndef kcg_copy_struct_491646
-#define kcg_copy_struct_491646(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_491646)))
-#endif /* kcg_copy_struct_491646 */
+#ifndef kcg_copy_struct_491368
+#define kcg_copy_struct_491368(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_491368)))
+#endif /* kcg_copy_struct_491368 */
 
 #ifndef kcg_copy_LinkedBG_T_BG_Types_Pkg
 #define kcg_copy_LinkedBG_T_BG_Types_Pkg(kcg_C1, kcg_C2)                      \
@@ -9614,18 +9612,18 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (T_Data_To_BG_Management_Level_And_Mode_Types_Pkg)))
 #endif /* kcg_copy_T_Data_To_BG_Management_Level_And_Mode_Types_Pkg */
 
-#ifndef kcg_copy_struct_491791
-#define kcg_copy_struct_491791(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_491791)))
-#endif /* kcg_copy_struct_491791 */
+#ifndef kcg_copy_P021_section_int_T_TM
+#define kcg_copy_P021_section_int_T_TM(kcg_C1, kcg_C2)                        \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P021_section_int_T_TM)))
+#endif /* kcg_copy_P021_section_int_T_TM */
 
-#ifndef kcg_copy_linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg
-#define kcg_copy_linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg(kcg_C1, kcg_C2)\
+#ifndef kcg_copy_StaticSpeedSection_t_TrackAtlasTypes
+#define kcg_copy_StaticSpeedSection_t_TrackAtlasTypes(kcg_C1, kcg_C2)         \
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg)))
-#endif /* kcg_copy_linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg */
+      sizeof (StaticSpeedSection_t_TrackAtlasTypes)))
+#endif /* kcg_copy_StaticSpeedSection_t_TrackAtlasTypes */
 
 #ifndef kcg_copy_sNID_RADIO_T_Packet_TrainTypes_Pkg
 #define kcg_copy_sNID_RADIO_T_Packet_TrainTypes_Pkg(kcg_C1, kcg_C2)           \
@@ -9650,15 +9648,15 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (M_008_T_TM_radio_messages)))
 #endif /* kcg_copy_M_008_T_TM_radio_messages */
 
-#ifndef kcg_copy_struct_491898
-#define kcg_copy_struct_491898(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_491898)))
-#endif /* kcg_copy_struct_491898 */
+#ifndef kcg_copy_struct_491641
+#define kcg_copy_struct_491641(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_491641)))
+#endif /* kcg_copy_struct_491641 */
 
-#ifndef kcg_copy_struct_491925
-#define kcg_copy_struct_491925(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_491925)))
-#endif /* kcg_copy_struct_491925 */
+#ifndef kcg_copy_struct_491668
+#define kcg_copy_struct_491668(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_491668)))
+#endif /* kcg_copy_struct_491668 */
 
 #ifndef kcg_copy_M_008_int_T_TM_radio_messages
 #define kcg_copy_M_008_int_T_TM_radio_messages(kcg_C1, kcg_C2)                \
@@ -9711,10 +9709,10 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P042_trackside_int_T_TM)))
 #endif /* kcg_copy_P042_trackside_int_T_TM */
 
-#ifndef kcg_copy_struct_492127
-#define kcg_copy_struct_492127(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_492127)))
-#endif /* kcg_copy_struct_492127 */
+#ifndef kcg_copy_struct_491870
+#define kcg_copy_struct_491870(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_491870)))
+#endif /* kcg_copy_struct_491870 */
 
 #ifndef kcg_copy_trainDataStatus_T_trainData_Types_pkg
 #define kcg_copy_trainDataStatus_T_trainData_Types_pkg(kcg_C1, kcg_C2)        \
@@ -9747,10 +9745,10 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P058_OBU_T_TM)))
 #endif /* kcg_copy_P058_OBU_T_TM */
 
-#ifndef kcg_copy_struct_492262
-#define kcg_copy_struct_492262(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_492262)))
-#endif /* kcg_copy_struct_492262 */
+#ifndef kcg_copy_struct_492005
+#define kcg_copy_struct_492005(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_492005)))
+#endif /* kcg_copy_struct_492005 */
 
 #ifndef kcg_copy_BGCollector_T_Receive_TrackSide_Msg_Pkg
 #define kcg_copy_BGCollector_T_Receive_TrackSide_Msg_Pkg(kcg_C1, kcg_C2)      \
@@ -9829,10 +9827,10 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (DMI_Text_Message_T_DMI_Messages_EVC_to_DMI_Pkg)))
 #endif /* kcg_copy_DMI_Text_Message_T_DMI_Messages_EVC_to_DMI_Pkg */
 
-#ifndef kcg_copy_struct_492513
-#define kcg_copy_struct_492513(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_492513)))
-#endif /* kcg_copy_struct_492513 */
+#ifndef kcg_copy_struct_492256
+#define kcg_copy_struct_492256(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_492256)))
+#endif /* kcg_copy_struct_492256 */
 
 #ifndef kcg_copy_M_TrainTrack_MessageHd_T_TM_radio_messages
 #define kcg_copy_M_TrainTrack_MessageHd_T_TM_radio_messages(kcg_C1, kcg_C2)   \
@@ -9957,14 +9955,6 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (odometry_T_Obu_BasicTypes_Pkg)))
 #endif /* kcg_copy_odometry_T_Obu_BasicTypes_Pkg */
 
-#ifndef kcg_copy_DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg
-#define kcg_copy_DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg(kcg_C1, kcg_C2)   \
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg)))
-#endif /* kcg_copy_DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg */
-
 #ifndef kcg_copy_p131_q_rbcTransitionOrder_T_Handover_Pkg
 #define kcg_copy_p131_q_rbcTransitionOrder_T_Handover_Pkg(kcg_C1, kcg_C2)     \
   (kcg_assign_struct(                                                         \
@@ -9973,15 +9963,23 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (p131_q_rbcTransitionOrder_T_Handover_Pkg)))
 #endif /* kcg_copy_p131_q_rbcTransitionOrder_T_Handover_Pkg */
 
+#ifndef kcg_copy_NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store
+#define kcg_copy_NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store(kcg_C1, kcg_C2)\
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store)))
+#endif /* kcg_copy_NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store */
+
 #ifndef kcg_copy_outPackets_T_Common_Types_Pkg
 #define kcg_copy_outPackets_T_Common_Types_Pkg(kcg_C1, kcg_C2)                \
   (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (outPackets_T_Common_Types_Pkg)))
 #endif /* kcg_copy_outPackets_T_Common_Types_Pkg */
 
-#ifndef kcg_copy_struct_493015
-#define kcg_copy_struct_493015(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_493015)))
-#endif /* kcg_copy_struct_493015 */
+#ifndef kcg_copy_struct_492780
+#define kcg_copy_struct_492780(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_492780)))
+#endif /* kcg_copy_struct_492780 */
 
 #ifndef kcg_copy_Message_EVC_to_Train_Interface_T_TIU_Types_Pkg
 #define kcg_copy_Message_EVC_to_Train_Interface_T_TIU_Types_Pkg(kcg_C1, kcg_C2)\
@@ -9999,31 +9997,10 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (trainProperties_T_TrainPosition_Types_Pck)))
 #endif /* kcg_copy_trainProperties_T_TrainPosition_Types_Pck */
 
-#ifndef kcg_copy_PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg
-#define kcg_copy_PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg(kcg_C1, kcg_C2)\
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg)))
-#endif /* kcg_copy_PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg */
-
 #ifndef kcg_copy_PosRepParams_T
 #define kcg_copy_PosRepParams_T(kcg_C1, kcg_C2)                               \
   (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (PosRepParams_T)))
 #endif /* kcg_copy_PosRepParams_T */
-
-#ifndef kcg_copy_DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg
-#define kcg_copy_DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg(kcg_C1, kcg_C2)\
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg)))
-#endif /* kcg_copy_DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg */
-
-#ifndef kcg_copy_Brake_command_T_TIU_Types_Pkg
-#define kcg_copy_Brake_command_T_TIU_Types_Pkg(kcg_C1, kcg_C2)                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (Brake_command_T_TIU_Types_Pkg)))
-#endif /* kcg_copy_Brake_command_T_TIU_Types_Pkg */
 
 #ifndef kcg_copy_T_Data_From_Localisation_Level_And_Mode_Types_Pkg
 #define kcg_copy_T_Data_From_Localisation_Level_And_Mode_Types_Pkg(kcg_C1, kcg_C2)\
@@ -10033,39 +10010,62 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (T_Data_From_Localisation_Level_And_Mode_Types_Pkg)))
 #endif /* kcg_copy_T_Data_From_Localisation_Level_And_Mode_Types_Pkg */
 
-#ifndef kcg_copy_ErrorMessage_T_ProvidePositionReport_Pkg
-#define kcg_copy_ErrorMessage_T_ProvidePositionReport_Pkg(kcg_C1, kcg_C2)     \
+#ifndef kcg_copy_Target_real_T_TargetManagement_types
+#define kcg_copy_Target_real_T_TargetManagement_types(kcg_C1, kcg_C2)         \
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (ErrorMessage_T_ProvidePositionReport_Pkg)))
-#endif /* kcg_copy_ErrorMessage_T_ProvidePositionReport_Pkg */
+      sizeof (Target_real_T_TargetManagement_types)))
+#endif /* kcg_copy_Target_real_T_TargetManagement_types */
 
-#ifndef kcg_copy_struct_493287
-#define kcg_copy_struct_493287(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_493287)))
-#endif /* kcg_copy_struct_493287 */
+#ifndef kcg_copy_struct_493006
+#define kcg_copy_struct_493006(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_493006)))
+#endif /* kcg_copy_struct_493006 */
 
-#ifndef kcg_copy_M_voltage_T_TIU_Types_Pkg
-#define kcg_copy_M_voltage_T_TIU_Types_Pkg(kcg_C1, kcg_C2)                    \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (M_voltage_T_TIU_Types_Pkg)))
-#endif /* kcg_copy_M_voltage_T_TIU_Types_Pkg */
+#ifndef kcg_copy_struct_493052
+#define kcg_copy_struct_493052(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_493052)))
+#endif /* kcg_copy_struct_493052 */
 
-#ifndef kcg_copy_P003_permanent_data_T_TM_baseline2
-#define kcg_copy_P003_permanent_data_T_TM_baseline2(kcg_C1, kcg_C2)           \
+#ifndef kcg_copy_MAReqParams_T
+#define kcg_copy_MAReqParams_T(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (MAReqParams_T)))
+#endif /* kcg_copy_MAReqParams_T */
+
+#ifndef kcg_copy_T_Reversing_Data_Level_And_Mode_Types_Pkg
+#define kcg_copy_T_Reversing_Data_Level_And_Mode_Types_Pkg(kcg_C1, kcg_C2)    \
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (P003_permanent_data_T_TM_baseline2)))
-#endif /* kcg_copy_P003_permanent_data_T_TM_baseline2 */
+      sizeof (T_Reversing_Data_Level_And_Mode_Types_Pkg)))
+#endif /* kcg_copy_T_Reversing_Data_Level_And_Mode_Types_Pkg */
 
-#ifndef kcg_copy_TrainToTrackStatus_T_BG_Types_Pkg
-#define kcg_copy_TrainToTrackStatus_T_BG_Types_Pkg(kcg_C1, kcg_C2)            \
+#ifndef kcg_copy_DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg
+#define kcg_copy_DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg(kcg_C1, kcg_C2)\
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (TrainToTrackStatus_T_BG_Types_Pkg)))
-#endif /* kcg_copy_TrainToTrackStatus_T_BG_Types_Pkg */
+      sizeof (DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg)))
+#endif /* kcg_copy_DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg */
+
+#ifndef kcg_copy_P137_StopIfInStaffResponsible_T_Packet_Types_Pkg
+#define kcg_copy_P137_StopIfInStaffResponsible_T_Packet_Types_Pkg(kcg_C1, kcg_C2)\
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (P137_StopIfInStaffResponsible_T_Packet_Types_Pkg)))
+#endif /* kcg_copy_P137_StopIfInStaffResponsible_T_Packet_Types_Pkg */
+
+#ifndef kcg_copy_P058_section_enum_T_TM
+#define kcg_copy_P058_section_enum_T_TM(kcg_C1, kcg_C2)                       \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P058_section_enum_T_TM)))
+#endif /* kcg_copy_P058_section_enum_T_TM */
+
+#ifndef kcg_copy_P015_section_int_T_TM
+#define kcg_copy_P015_section_int_T_TM(kcg_C1, kcg_C2)                        \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P015_section_int_T_TM)))
+#endif /* kcg_copy_P015_section_int_T_TM */
 
 #ifndef kcg_copy_trainData_Events_T_trainData_Types_pkg
 #define kcg_copy_trainData_Events_T_trainData_Types_pkg(kcg_C1, kcg_C2)       \
@@ -10075,6 +10075,16 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (trainData_Events_T_trainData_Types_pkg)))
 #endif /* kcg_copy_trainData_Events_T_trainData_Types_pkg */
 
+#ifndef kcg_copy_struct_493703
+#define kcg_copy_struct_493703(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_493703)))
+#endif /* kcg_copy_struct_493703 */
+
+#ifndef kcg_copy_P046_section_enum_T_TM
+#define kcg_copy_P046_section_enum_T_TM(kcg_C1, kcg_C2)                       \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P046_section_enum_T_TM)))
+#endif /* kcg_copy_P046_section_enum_T_TM */
+
 #ifndef kcg_copy_CompressedPackets_T_Common_Types_Pkg
 #define kcg_copy_CompressedPackets_T_Common_Types_Pkg(kcg_C1, kcg_C2)         \
   (kcg_assign_struct(                                                         \
@@ -10083,26 +10093,21 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (CompressedPackets_T_Common_Types_Pkg)))
 #endif /* kcg_copy_CompressedPackets_T_Common_Types_Pkg */
 
-#ifndef kcg_copy_LocWithInAcc_T_Obu_BasicTypes_Pkg
-#define kcg_copy_LocWithInAcc_T_Obu_BasicTypes_Pkg(kcg_C1, kcg_C2)            \
+#ifndef kcg_copy_EOA_real_T_TargetManagement_types
+#define kcg_copy_EOA_real_T_TargetManagement_types(kcg_C1, kcg_C2)            \
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (LocWithInAcc_T_Obu_BasicTypes_Pkg)))
-#endif /* kcg_copy_LocWithInAcc_T_Obu_BasicTypes_Pkg */
+      sizeof (EOA_real_T_TargetManagement_types)))
+#endif /* kcg_copy_EOA_real_T_TargetManagement_types */
 
-#ifndef kcg_copy_m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg
-#define kcg_copy_m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg(kcg_C1, kcg_C2)\
+#ifndef kcg_copy_linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg
+#define kcg_copy_linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg(kcg_C1, kcg_C2)\
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg)))
-#endif /* kcg_copy_m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg */
-
-#ifndef kcg_copy_Diff_T_Packet_Types_Pkg
-#define kcg_copy_Diff_T_Packet_Types_Pkg(kcg_C1, kcg_C2)                      \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (Diff_T_Packet_Types_Pkg)))
-#endif /* kcg_copy_Diff_T_Packet_Types_Pkg */
+      sizeof (linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg)))
+#endif /* kcg_copy_linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg */
 
 #ifndef kcg_copy_PT3_OnboardTelephoneNumbers_T_Packet_TrainTypes_Pkg
 #define kcg_copy_PT3_OnboardTelephoneNumbers_T_Packet_TrainTypes_Pkg(kcg_C1, kcg_C2)\
@@ -10112,13 +10117,41 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (PT3_OnboardTelephoneNumbers_T_Packet_TrainTypes_Pkg)))
 #endif /* kcg_copy_PT3_OnboardTelephoneNumbers_T_Packet_TrainTypes_Pkg */
 
-#ifndef kcg_copy_Type_I_train_commands_T_TIU_Types_Pkg
-#define kcg_copy_Type_I_train_commands_T_TIU_Types_Pkg(kcg_C1, kcg_C2)        \
+#ifndef kcg_copy_bec_t_TargetLimits_Pkg
+#define kcg_copy_bec_t_TargetLimits_Pkg(kcg_C1, kcg_C2)                       \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (bec_t_TargetLimits_Pkg)))
+#endif /* kcg_copy_bec_t_TargetLimits_Pkg */
+
+#ifndef kcg_copy_MetadataElement_T_Common_Types_Pkg
+#define kcg_copy_MetadataElement_T_Common_Types_Pkg(kcg_C1, kcg_C2)           \
   (kcg_assign_struct(                                                         \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (Type_I_train_commands_T_TIU_Types_Pkg)))
-#endif /* kcg_copy_Type_I_train_commands_T_TIU_Types_Pkg */
+      sizeof (MetadataElement_T_Common_Types_Pkg)))
+#endif /* kcg_copy_MetadataElement_T_Common_Types_Pkg */
+
+#ifndef kcg_copy_T_Mode_Profile_Level_And_Mode_Types_Pkg
+#define kcg_copy_T_Mode_Profile_Level_And_Mode_Types_Pkg(kcg_C1, kcg_C2)      \
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (T_Mode_Profile_Level_And_Mode_Types_Pkg)))
+#endif /* kcg_copy_T_Mode_Profile_Level_And_Mode_Types_Pkg */
+
+#ifndef kcg_copy_Clock_T
+#define kcg_copy_Clock_T(kcg_C1, kcg_C2)                                      \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (Clock_T)))
+#endif /* kcg_copy_Clock_T */
+
+#ifndef kcg_copy_struct_493943
+#define kcg_copy_struct_493943(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_493943)))
+#endif /* kcg_copy_struct_493943 */
+
+#ifndef kcg_copy_Brake_command_T_TIU_Types_Pkg
+#define kcg_copy_Brake_command_T_TIU_Types_Pkg(kcg_C1, kcg_C2)                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (Brake_command_T_TIU_Types_Pkg)))
+#endif /* kcg_copy_Brake_command_T_TIU_Types_Pkg */
 
 #ifndef kcg_copy_DMI_Driver_Identifier_T_DMI_Messages_Bothways_Pkg
 #define kcg_copy_DMI_Driver_Identifier_T_DMI_Messages_Bothways_Pkg(kcg_C1, kcg_C2)\
@@ -10127,19 +10160,6 @@ typedef kcg_int32 array_int32_4[4];
       (kcg_C2),                                                               \
       sizeof (DMI_Driver_Identifier_T_DMI_Messages_Bothways_Pkg)))
 #endif /* kcg_copy_DMI_Driver_Identifier_T_DMI_Messages_Bothways_Pkg */
-
-#ifndef kcg_copy_P63_BaliseInSRAuthority_T_Packet_Types_Pkg
-#define kcg_copy_P63_BaliseInSRAuthority_T_Packet_Types_Pkg(kcg_C1, kcg_C2)   \
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (P63_BaliseInSRAuthority_T_Packet_Types_Pkg)))
-#endif /* kcg_copy_P63_BaliseInSRAuthority_T_Packet_Types_Pkg */
-
-#ifndef kcg_copy_P045_trackside_int_T_TM
-#define kcg_copy_P045_trackside_int_T_TM(kcg_C1, kcg_C2)                      \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P045_trackside_int_T_TM)))
-#endif /* kcg_copy_P045_trackside_int_T_TM */
 
 #ifndef kcg_copy_ASafe_T_CalcBrakingCurves_types
 #define kcg_copy_ASafe_T_CalcBrakingCurves_types(kcg_C1, kcg_C2)              \
@@ -10153,19 +10173,6 @@ typedef kcg_int32 array_int32_4[4];
 #define kcg_copy_DataForDMI_t_TrackAtlasTypes(kcg_C1, kcg_C2)                 \
   (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (DataForDMI_t_TrackAtlasTypes)))
 #endif /* kcg_copy_DataForDMI_t_TrackAtlasTypes */
-
-#ifndef kcg_copy_mobileRegistrationCmd_T_RCM_Types_Pkg
-#define kcg_copy_mobileRegistrationCmd_T_RCM_Types_Pkg(kcg_C1, kcg_C2)        \
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (mobileRegistrationCmd_T_RCM_Types_Pkg)))
-#endif /* kcg_copy_mobileRegistrationCmd_T_RCM_Types_Pkg */
-
-#ifndef kcg_copy_odometryFactors_T_Toolbox
-#define kcg_copy_odometryFactors_T_Toolbox(kcg_C1, kcg_C2)                    \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (odometryFactors_T_Toolbox)))
-#endif /* kcg_copy_odometryFactors_T_Toolbox */
 
 #ifndef kcg_copy_T_AcknoledgementRequest_Level_And_Mode_Types_Pkg
 #define kcg_copy_T_AcknoledgementRequest_Level_And_Mode_Types_Pkg(kcg_C1, kcg_C2)\
@@ -10199,19 +10206,6 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (MRSP_internal_section_T_TargetManagement_types)))
 #endif /* kcg_copy_MRSP_internal_section_T_TargetManagement_types */
 
-#ifndef kcg_copy_P027V1_section_enum_qdiff_T_TM_baseline2
-#define kcg_copy_P027V1_section_enum_qdiff_T_TM_baseline2(kcg_C1, kcg_C2)     \
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (P027V1_section_enum_qdiff_T_TM_baseline2)))
-#endif /* kcg_copy_P027V1_section_enum_qdiff_T_TM_baseline2 */
-
-#ifndef kcg_copy_struct_494268
-#define kcg_copy_struct_494268(kcg_C1, kcg_C2)                                \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_494268)))
-#endif /* kcg_copy_struct_494268 */
-
 #ifndef kcg_copy_P027V1_section_int_T_TM_baseline2
 #define kcg_copy_P027V1_section_int_T_TM_baseline2(kcg_C1, kcg_C2)            \
   (kcg_assign_struct(                                                         \
@@ -10219,11 +10213,6 @@ typedef kcg_int32 array_int32_4[4];
       (kcg_C2),                                                               \
       sizeof (P027V1_section_int_T_TM_baseline2)))
 #endif /* kcg_copy_P027V1_section_int_T_TM_baseline2 */
-
-#ifndef kcg_copy_nvkrint_T_Packet_Types_Pkg
-#define kcg_copy_nvkrint_T_Packet_Types_Pkg(kcg_C1, kcg_C2)                   \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (nvkrint_T_Packet_Types_Pkg)))
-#endif /* kcg_copy_nvkrint_T_Packet_Types_Pkg */
 
 #ifndef kcg_copy_P044_TM_TrainToTrack
 #define kcg_copy_P044_TM_TrainToTrack(kcg_C1, kcg_C2)                         \
@@ -10262,6 +10251,11 @@ typedef kcg_int32 array_int32_4[4];
 #define kcg_copy_RBC_Data_T_RBC_DataBus_Pkg(kcg_C1, kcg_C2)                   \
   (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (RBC_Data_T_RBC_DataBus_Pkg)))
 #endif /* kcg_copy_RBC_Data_T_RBC_DataBus_Pkg */
+
+#ifndef kcg_copy_struct_494407
+#define kcg_copy_struct_494407(kcg_C1, kcg_C2)                                \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (struct_494407)))
+#endif /* kcg_copy_struct_494407 */
 
 #ifndef kcg_copy_API_TrackSideInput_T_API_Msg_Pkg
 #define kcg_copy_API_TrackSideInput_T_API_Msg_Pkg(kcg_C1, kcg_C2)             \
@@ -10308,48 +10302,43 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (dmiOutputs_T_manage_DMI_Output_Pkg)))
 #endif /* kcg_copy_dmiOutputs_T_manage_DMI_Output_Pkg */
 
+#ifndef kcg_copy_extractTargetsMRSPACC_TargetManagement_pkg
+#define kcg_copy_extractTargetsMRSPACC_TargetManagement_pkg(kcg_C1, kcg_C2)   \
+  (kcg_assign_struct(                                                         \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (extractTargetsMRSPACC_TargetManagement_pkg)))
+#endif /* kcg_copy_extractTargetsMRSPACC_TargetManagement_pkg */
+
+#ifndef kcg_copy_M_current_T_TIU_Types_Pkg
+#define kcg_copy_M_current_T_TIU_Types_Pkg(kcg_C1, kcg_C2)                    \
+  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (M_current_T_TIU_Types_Pkg)))
+#endif /* kcg_copy_M_current_T_TIU_Types_Pkg */
+
 #ifndef kcg_copy_passedBG_T_BG_Types_Pkg
 #define kcg_copy_passedBG_T_BG_Types_Pkg(kcg_C1, kcg_C2)                      \
   (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (passedBG_T_BG_Types_Pkg)))
 #endif /* kcg_copy_passedBG_T_BG_Types_Pkg */
-
-#ifndef kcg_copy_P004_TM_TrainToTrack
-#define kcg_copy_P004_TM_TrainToTrack(kcg_C1, kcg_C2)                         \
-  (kcg_assign_struct((kcg_C1), (kcg_C2), sizeof (P004_TM_TrainToTrack)))
-#endif /* kcg_copy_P004_TM_TrainToTrack */
-
-#ifndef kcg_copy_PT5_TrainRunningNumber_Packet_TrainTypes_Pkg
-#define kcg_copy_PT5_TrainRunningNumber_Packet_TrainTypes_Pkg(kcg_C1, kcg_C2) \
-  (kcg_assign_struct(                                                         \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (PT5_TrainRunningNumber_Packet_TrainTypes_Pkg)))
-#endif /* kcg_copy_PT5_TrainRunningNumber_Packet_TrainTypes_Pkg */
 
 #ifndef kcg_copy_array_bool_8
 #define kcg_copy_array_bool_8(kcg_C1, kcg_C2)                                 \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_8)))
 #endif /* kcg_copy_array_bool_8 */
 
-#ifndef kcg_copy_array_int64_891
-#define kcg_copy_array_int64_891(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_891)))
-#endif /* kcg_copy_array_int64_891 */
-
 #ifndef kcg_copy_array
 #define kcg_copy_array(kcg_C1, kcg_C2)                                        \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array)))
 #endif /* kcg_copy_array */
 
-#ifndef kcg_copy_array_int64_888
-#define kcg_copy_array_int64_888(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_888)))
-#endif /* kcg_copy_array_int64_888 */
+#ifndef kcg_copy_P044_other_data_TM_TrainToTrack
+#define kcg_copy_P044_other_data_TM_TrainToTrack(kcg_C1, kcg_C2)              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (P044_other_data_TM_TrainToTrack)))
+#endif /* kcg_copy_P044_other_data_TM_TrainToTrack */
 
-#ifndef kcg_copy_array_int64_307
-#define kcg_copy_array_int64_307(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_307)))
-#endif /* kcg_copy_array_int64_307 */
+#ifndef kcg_copy_array_int32_496
+#define kcg_copy_array_int32_496(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_496)))
+#endif /* kcg_copy_array_int32_496 */
 
 #ifndef kcg_copy_GradientProfile_real_compensated_t_SDM_GradientAcceleration_types
 #define kcg_copy_GradientProfile_real_compensated_t_SDM_GradientAcceleration_types(kcg_C1, kcg_C2)\
@@ -10367,11 +10356,6 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (A_gradient_t_SDM_GradientAcceleration_types)))
 #endif /* kcg_copy_A_gradient_t_SDM_GradientAcceleration_types */
 
-#ifndef kcg_copy_array_int64_64
-#define kcg_copy_array_int64_64(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_64)))
-#endif /* kcg_copy_array_int64_64 */
-
 #ifndef kcg_copy__2_array
 #define kcg_copy__2_array(kcg_C1, kcg_C2)                                     \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_2_array)))
@@ -10387,11 +10371,6 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_4_array)))
 #endif /* kcg_copy__4_array */
 
-#ifndef kcg_copy__5_array
-#define kcg_copy__5_array(kcg_C1, kcg_C2)                                     \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_5_array)))
-#endif /* kcg_copy__5_array */
-
 #ifndef kcg_copy_M_TrainTrackRadioOutputBuffer_t_TM_lib_internal
 #define kcg_copy_M_TrainTrackRadioOutputBuffer_t_TM_lib_internal(kcg_C1, kcg_C2)\
   (kcg_assign_array(                                                          \
@@ -10400,53 +10379,25 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (M_TrainTrackRadioOutputBuffer_t_TM_lib_internal)))
 #endif /* kcg_copy_M_TrainTrackRadioOutputBuffer_t_TM_lib_internal */
 
-#ifndef kcg_copy_array_int64_894
-#define kcg_copy_array_int64_894(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_894)))
-#endif /* kcg_copy_array_int64_894 */
-
-#ifndef kcg_copy_array_int64_70
-#define kcg_copy_array_int64_70(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_70)))
-#endif /* kcg_copy_array_int64_70 */
-
-#ifndef kcg_copy_array_int64_396
-#define kcg_copy_array_int64_396(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_396)))
-#endif /* kcg_copy_array_int64_396 */
-
-#ifndef kcg_copy__6_array
-#define kcg_copy__6_array(kcg_C1, kcg_C2)                                     \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_6_array)))
-#endif /* kcg_copy__6_array */
-
 #ifndef kcg_copy_array_int32_4
 #define kcg_copy_array_int32_4(kcg_C1, kcg_C2)                                \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_4)))
 #endif /* kcg_copy_array_int32_4 */
 
-#ifndef kcg_copy_DMI_EVC_Level_Data_int_array_T_DATA
-#define kcg_copy_DMI_EVC_Level_Data_int_array_T_DATA(kcg_C1, kcg_C2)          \
-  (kcg_assign_array(                                                          \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (DMI_EVC_Level_Data_int_array_T_DATA)))
-#endif /* kcg_copy_DMI_EVC_Level_Data_int_array_T_DATA */
+#ifndef kcg_copy_array_int32_499
+#define kcg_copy_array_int32_499(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_499)))
+#endif /* kcg_copy_array_int32_499 */
 
-#ifndef kcg_copy__7_array
-#define kcg_copy__7_array(kcg_C1, kcg_C2)                                     \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_7_array)))
-#endif /* kcg_copy__7_array */
+#ifndef kcg_copy__5_array
+#define kcg_copy__5_array(kcg_C1, kcg_C2)                                     \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_5_array)))
+#endif /* kcg_copy__5_array */
 
-#ifndef kcg_copy__8_array
-#define kcg_copy__8_array(kcg_C1, kcg_C2)                                     \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_8_array)))
-#endif /* kcg_copy__8_array */
-
-#ifndef kcg_copy__9_array
-#define kcg_copy__9_array(kcg_C1, kcg_C2)                                     \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_9_array)))
-#endif /* kcg_copy__9_array */
+#ifndef kcg_copy__6_array
+#define kcg_copy__6_array(kcg_C1, kcg_C2)                                     \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_6_array)))
+#endif /* kcg_copy__6_array */
 
 #ifndef kcg_copy_MovementAuthoritySectionlist_t_TrackAtlasTypes
 #define kcg_copy_MovementAuthoritySectionlist_t_TrackAtlasTypes(kcg_C1, kcg_C2)\
@@ -10456,15 +10407,10 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (MovementAuthoritySectionlist_t_TrackAtlasTypes)))
 #endif /* kcg_copy_MovementAuthoritySectionlist_t_TrackAtlasTypes */
 
-#ifndef kcg_copy_array_int64_150
-#define kcg_copy_array_int64_150(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_150)))
-#endif /* kcg_copy_array_int64_150 */
-
-#ifndef kcg_copy__10_array
-#define kcg_copy__10_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_10_array)))
-#endif /* kcg_copy__10_array */
+#ifndef kcg_copy__7_array
+#define kcg_copy__7_array(kcg_C1, kcg_C2)                                     \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_7_array)))
+#endif /* kcg_copy__7_array */
 
 #ifndef kcg_copy_array_int32_10
 #define kcg_copy_array_int32_10(kcg_C1, kcg_C2)                               \
@@ -10489,43 +10435,58 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (P015_OBU_sectionlist_enum_T_TM)))
 #endif /* kcg_copy_P015_OBU_sectionlist_enum_T_TM */
 
-#ifndef kcg_copy__11_array
-#define kcg_copy__11_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_11_array)))
-#endif /* kcg_copy__11_array */
+#ifndef kcg_copy__8_array
+#define kcg_copy__8_array(kcg_C1, kcg_C2)                                     \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_8_array)))
+#endif /* kcg_copy__8_array */
 
-#ifndef kcg_copy_array_int64_494
-#define kcg_copy_array_int64_494(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_494)))
-#endif /* kcg_copy_array_int64_494 */
-
-#ifndef kcg_copy_DMI_Track_Description_int_array_T
-#define kcg_copy_DMI_Track_Description_int_array_T(kcg_C1, kcg_C2)            \
+#ifndef kcg_copy_DMI_Text_Message_int_array_T_DATA
+#define kcg_copy_DMI_Text_Message_int_array_T_DATA(kcg_C1, kcg_C2)            \
   (kcg_assign_array(                                                          \
       (kcg_C1),                                                               \
       (kcg_C2),                                                               \
-      sizeof (DMI_Track_Description_int_array_T)))
-#endif /* kcg_copy_DMI_Track_Description_int_array_T */
+      sizeof (DMI_Text_Message_int_array_T_DATA)))
+#endif /* kcg_copy_DMI_Text_Message_int_array_T_DATA */
 
-#ifndef kcg_copy_array_int64_491
-#define kcg_copy_array_int64_491(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_491)))
-#endif /* kcg_copy_array_int64_491 */
+#ifndef kcg_copy_array_int32_7
+#define kcg_copy_array_int32_7(kcg_C1, kcg_C2)                                \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_7)))
+#endif /* kcg_copy_array_int32_7 */
+
+#ifndef kcg_copy_array_int32_428
+#define kcg_copy_array_int32_428(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_428)))
+#endif /* kcg_copy_array_int32_428 */
 
 #ifndef kcg_copy_DMI_Available_Menu_int_T_DATA
 #define kcg_copy_DMI_Available_Menu_int_T_DATA(kcg_C1, kcg_C2)                \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (DMI_Available_Menu_int_T_DATA)))
 #endif /* kcg_copy_DMI_Available_Menu_int_T_DATA */
 
+#ifndef kcg_copy__9_array
+#define kcg_copy__9_array(kcg_C1, kcg_C2)                                     \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_9_array)))
+#endif /* kcg_copy__9_array */
+
+#ifndef kcg_copy_array_int32_99
+#define kcg_copy_array_int32_99(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_99)))
+#endif /* kcg_copy_array_int32_99 */
+
 #ifndef kcg_copy_array_bool_7
 #define kcg_copy_array_bool_7(kcg_C1, kcg_C2)                                 \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_7)))
 #endif /* kcg_copy_array_bool_7 */
 
-#ifndef kcg_copy_array_float64_100_13
-#define kcg_copy_array_float64_100_13(kcg_C1, kcg_C2)                         \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float64_100_13)))
-#endif /* kcg_copy_array_float64_100_13 */
+#ifndef kcg_copy_array_float32_100_13
+#define kcg_copy_array_float32_100_13(kcg_C1, kcg_C2)                         \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float32_100_13)))
+#endif /* kcg_copy_array_float32_100_13 */
+
+#ifndef kcg_copy_array_int32_13
+#define kcg_copy_array_int32_13(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_13)))
+#endif /* kcg_copy_array_int32_13 */
 
 #ifndef kcg_copy_P011_voltage_sectionlist_array_T_TM_TrainToTrack
 #define kcg_copy_P011_voltage_sectionlist_array_T_TM_TrainToTrack(kcg_C1, kcg_C2)\
@@ -10535,63 +10496,70 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (P011_voltage_sectionlist_array_T_TM_TrainToTrack)))
 #endif /* kcg_copy_P011_voltage_sectionlist_array_T_TM_TrainToTrack */
 
-#ifndef kcg_copy_array_int64_2
-#define kcg_copy_array_int64_2(kcg_C1, kcg_C2)                                \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_2)))
-#endif /* kcg_copy_array_int64_2 */
+#ifndef kcg_copy__10_array
+#define kcg_copy__10_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_10_array)))
+#endif /* kcg_copy__10_array */
 
-#ifndef kcg_copy__12_array
-#define kcg_copy__12_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_12_array)))
-#endif /* kcg_copy__12_array */
+#ifndef kcg_copy_array_int32_22
+#define kcg_copy_array_int32_22(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_22)))
+#endif /* kcg_copy_array_int32_22 */
+
+#ifndef kcg_copy_array_int32_105
+#define kcg_copy_array_int32_105(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_105)))
+#endif /* kcg_copy_array_int32_105 */
+
+#ifndef kcg_copy__11_array
+#define kcg_copy__11_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_11_array)))
+#endif /* kcg_copy__11_array */
 
 #ifndef kcg_copy_array_bool_110
 #define kcg_copy_array_bool_110(kcg_C1, kcg_C2)                               \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_110)))
 #endif /* kcg_copy_array_bool_110 */
 
-#ifndef kcg_copy_array_int64_8
-#define kcg_copy_array_int64_8(kcg_C1, kcg_C2)                                \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_8)))
-#endif /* kcg_copy_array_int64_8 */
-
-#ifndef kcg_copy__13_array
-#define kcg_copy__13_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_13_array)))
-#endif /* kcg_copy__13_array */
+#ifndef kcg_copy__12_array
+#define kcg_copy__12_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_12_array)))
+#endif /* kcg_copy__12_array */
 
 #ifndef kcg_copy_array_bool_41
 #define kcg_copy_array_bool_41(kcg_C1, kcg_C2)                                \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_41)))
 #endif /* kcg_copy_array_bool_41 */
 
+#ifndef kcg_copy_array_float32_3
+#define kcg_copy_array_float32_3(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float32_3)))
+#endif /* kcg_copy_array_float32_3 */
+
 #ifndef kcg_copy_DMI_TEXT_DMI_Types_Pkg
 #define kcg_copy_DMI_TEXT_DMI_Types_Pkg(kcg_C1, kcg_C2)                       \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (DMI_TEXT_DMI_Types_Pkg)))
 #endif /* kcg_copy_DMI_TEXT_DMI_Types_Pkg */
 
-#ifndef kcg_copy__14_array
-#define kcg_copy__14_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_14_array)))
-#endif /* kcg_copy__14_array */
+#ifndef kcg_copy__13_array
+#define kcg_copy__13_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_13_array)))
+#endif /* kcg_copy__13_array */
 
-#ifndef kcg_copy_array_int64_5
-#define kcg_copy_array_int64_5(kcg_C1, kcg_C2)                                \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_5)))
-#endif /* kcg_copy_array_int64_5 */
+#ifndef kcg_copy_array_int32_25
+#define kcg_copy_array_int32_25(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_25)))
+#endif /* kcg_copy_array_int32_25 */
 
 #ifndef kcg_copy_array_char_30_5
 #define kcg_copy_array_char_30_5(kcg_C1, kcg_C2)                              \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_char_30_5)))
 #endif /* kcg_copy_array_char_30_5 */
 
-#ifndef kcg_copy_CompressedPacketData_T_Common_Types_Pkg
-#define kcg_copy_CompressedPacketData_T_Common_Types_Pkg(kcg_C1, kcg_C2)      \
-  (kcg_assign_array(                                                          \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (CompressedPacketData_T_Common_Types_Pkg)))
-#endif /* kcg_copy_CompressedPacketData_T_Common_Types_Pkg */
+#ifndef kcg_copy__14_array
+#define kcg_copy__14_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_14_array)))
+#endif /* kcg_copy__14_array */
 
 #ifndef kcg_copy__15_array
 #define kcg_copy__15_array(kcg_C1, kcg_C2)                                    \
@@ -10603,85 +10571,85 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_16_array)))
 #endif /* kcg_copy__16_array */
 
+#ifndef kcg_copy_array_int32_3_33_231
+#define kcg_copy_array_int32_3_33_231(kcg_C1, kcg_C2)                         \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_3_33_231)))
+#endif /* kcg_copy_array_int32_3_33_231 */
+
+#ifndef kcg_copy_array_int32_7_33_231
+#define kcg_copy_array_int32_7_33_231(kcg_C1, kcg_C2)                         \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_7_33_231)))
+#endif /* kcg_copy_array_int32_7_33_231 */
+
 #ifndef kcg_copy__17_array
 #define kcg_copy__17_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_17_array)))
 #endif /* kcg_copy__17_array */
+
+#ifndef kcg_copy_tScale
+#define kcg_copy_tScale(kcg_C1, kcg_C2)                                       \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (tScale)))
+#endif /* kcg_copy_tScale */
 
 #ifndef kcg_copy__18_array
 #define kcg_copy__18_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_18_array)))
 #endif /* kcg_copy__18_array */
 
-#ifndef kcg_copy_array_int64_3_33_231
-#define kcg_copy_array_int64_3_33_231(kcg_C1, kcg_C2)                         \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_3_33_231)))
-#endif /* kcg_copy_array_int64_3_33_231 */
+#ifndef kcg_copy_array_int32_31
+#define kcg_copy_array_int32_31(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_31)))
+#endif /* kcg_copy_array_int32_31 */
 
-#ifndef kcg_copy_array_int64_7_33_231
-#define kcg_copy_array_int64_7_33_231(kcg_C1, kcg_C2)                         \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_7_33_231)))
-#endif /* kcg_copy_array_int64_7_33_231 */
+#ifndef kcg_copy_array_int32_283
+#define kcg_copy_array_int32_283(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_283)))
+#endif /* kcg_copy_array_int32_283 */
+
+#ifndef kcg_copy_array_int32_114
+#define kcg_copy_array_int32_114(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_114)))
+#endif /* kcg_copy_array_int32_114 */
+
+#ifndef kcg_copy_array_float32_6
+#define kcg_copy_array_float32_6(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float32_6)))
+#endif /* kcg_copy_array_float32_6 */
+
+#ifndef kcg_copy_array_float32_5_5
+#define kcg_copy_array_float32_5_5(kcg_C1, kcg_C2)                            \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float32_5_5)))
+#endif /* kcg_copy_array_float32_5_5 */
+
+#ifndef kcg_copy_array_int32_28
+#define kcg_copy_array_int32_28(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_28)))
+#endif /* kcg_copy_array_int32_28 */
+
+#ifndef kcg_copy_array_int32_280
+#define kcg_copy_array_int32_280(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_280)))
+#endif /* kcg_copy_array_int32_280 */
 
 #ifndef kcg_copy__19_array
 #define kcg_copy__19_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_19_array)))
 #endif /* kcg_copy__19_array */
 
-#ifndef kcg_copy_array_int64_97
-#define kcg_copy_array_int64_97(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_97)))
-#endif /* kcg_copy_array_int64_97 */
+#ifndef kcg_copy_array_char_30_5_5
+#define kcg_copy_array_char_30_5_5(kcg_C1, kcg_C2)                            \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_char_30_5_5)))
+#endif /* kcg_copy_array_char_30_5_5 */
 
 #ifndef kcg_copy__20_array
 #define kcg_copy__20_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_20_array)))
 #endif /* kcg_copy__20_array */
 
-#ifndef kcg_copy_array_int64_11
-#define kcg_copy_array_int64_11(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_11)))
-#endif /* kcg_copy_array_int64_11 */
-
-#ifndef kcg_copy_array_int64_432
-#define kcg_copy_array_int64_432(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_432)))
-#endif /* kcg_copy_array_int64_432 */
-
-#ifndef kcg_copy_array_float64_5_5
-#define kcg_copy_array_float64_5_5(kcg_C1, kcg_C2)                            \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float64_5_5)))
-#endif /* kcg_copy_array_float64_5_5 */
-
-#ifndef kcg_copy_array_int64_260
-#define kcg_copy_array_int64_260(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_260)))
-#endif /* kcg_copy_array_int64_260 */
-
 #ifndef kcg_copy__21_array
 #define kcg_copy__21_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_21_array)))
 #endif /* kcg_copy__21_array */
-
-#ifndef kcg_copy_array_int64_17
-#define kcg_copy_array_int64_17(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_17)))
-#endif /* kcg_copy_array_int64_17 */
-
-#ifndef kcg_copy_array_char_30_5_5
-#define kcg_copy_array_char_30_5_5(kcg_C1, kcg_C2)                            \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_char_30_5_5)))
-#endif /* kcg_copy_array_char_30_5_5 */
-
-#ifndef kcg_copy__22_array
-#define kcg_copy__22_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_22_array)))
-#endif /* kcg_copy__22_array */
-
-#ifndef kcg_copy__23_array
-#define kcg_copy__23_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_23_array)))
-#endif /* kcg_copy__23_array */
 
 #ifndef kcg_copy_TransitionBuffer_T_InformationFilter_Pkg
 #define kcg_copy_TransitionBuffer_T_InformationFilter_Pkg(kcg_C1, kcg_C2)     \
@@ -10707,70 +10675,50 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (P80_ModeProfiles_T_Packet_Types_Pkg)))
 #endif /* kcg_copy_P80_ModeProfiles_T_Packet_Types_Pkg */
 
-#ifndef kcg_copy_array_int64_269
-#define kcg_copy_array_int64_269(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_269)))
-#endif /* kcg_copy_array_int64_269 */
+#ifndef kcg_copy_array_int32_289
+#define kcg_copy_array_int32_289(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_289)))
+#endif /* kcg_copy_array_int32_289 */
 
 #ifndef kcg_copy_array_char_243
 #define kcg_copy_array_char_243(kcg_C1, kcg_C2)                               \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_char_243)))
 #endif /* kcg_copy_array_char_243 */
 
-#ifndef kcg_copy_array_int64_2_33_99
-#define kcg_copy_array_int64_2_33_99(kcg_C1, kcg_C2)                          \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_2_33_99)))
-#endif /* kcg_copy_array_int64_2_33_99 */
+#ifndef kcg_copy_array_float32_12
+#define kcg_copy_array_float32_12(kcg_C1, kcg_C2)                             \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float32_12)))
+#endif /* kcg_copy_array_float32_12 */
 
-#ifndef kcg_copy_array_int64_3_33_99
-#define kcg_copy_array_int64_3_33_99(kcg_C1, kcg_C2)                          \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_3_33_99)))
-#endif /* kcg_copy_array_int64_3_33_99 */
+#ifndef kcg_copy_array_int32_2_33_99
+#define kcg_copy_array_int32_2_33_99(kcg_C1, kcg_C2)                          \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_2_33_99)))
+#endif /* kcg_copy_array_int32_2_33_99 */
 
-#ifndef kcg_copy_array_int64_100
-#define kcg_copy_array_int64_100(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_100)))
-#endif /* kcg_copy_array_int64_100 */
+#ifndef kcg_copy_array_int32_3_33_99
+#define kcg_copy_array_int32_3_33_99(kcg_C1, kcg_C2)                          \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_3_33_99)))
+#endif /* kcg_copy_array_int32_3_33_99 */
 
 #ifndef kcg_copy_array_bool_6
 #define kcg_copy_array_bool_6(kcg_C1, kcg_C2)                                 \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_6)))
 #endif /* kcg_copy_array_bool_6 */
 
-#ifndef kcg_copy_array_int64_14
-#define kcg_copy_array_int64_14(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_14)))
-#endif /* kcg_copy_array_int64_14 */
+#ifndef kcg_copy_array_int32_40
+#define kcg_copy_array_int32_40(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_40)))
+#endif /* kcg_copy_array_int32_40 */
 
-#ifndef kcg_copy_array_float64_1
-#define kcg_copy_array_float64_1(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float64_1)))
-#endif /* kcg_copy_array_float64_1 */
+#ifndef kcg_copy_array_int32_292
+#define kcg_copy_array_int32_292(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_292)))
+#endif /* kcg_copy_array_int32_292 */
 
-#ifndef kcg_copy_array_int64_266
-#define kcg_copy_array_int64_266(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_266)))
-#endif /* kcg_copy_array_int64_266 */
-
-#ifndef kcg_copy_array_int64_23
-#define kcg_copy_array_int64_23(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_23)))
-#endif /* kcg_copy_array_int64_23 */
-
-#ifndef kcg_copy_array_int64_20
-#define kcg_copy_array_int64_20(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_20)))
-#endif /* kcg_copy_array_int64_20 */
-
-#ifndef kcg_copy__24_array
-#define kcg_copy__24_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_24_array)))
-#endif /* kcg_copy__24_array */
-
-#ifndef kcg_copy_tPASPOutput_Array
-#define kcg_copy_tPASPOutput_Array(kcg_C1, kcg_C2)                            \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (tPASPOutput_Array)))
-#endif /* kcg_copy_tPASPOutput_Array */
+#ifndef kcg_copy__22_array
+#define kcg_copy__22_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_22_array)))
+#endif /* kcg_copy__22_array */
 
 #ifndef kcg_copy_linkedBGs_indices_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg
 #define kcg_copy_linkedBGs_indices_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg(kcg_C1, kcg_C2)\
@@ -10779,6 +10727,11 @@ typedef kcg_int32 array_int32_4[4];
       (kcg_C2),                                                               \
       sizeof (linkedBGs_indices_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg)))
 #endif /* kcg_copy_linkedBGs_indices_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg */
+
+#ifndef kcg_copy_array_int32_627
+#define kcg_copy_array_int32_627(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_627)))
+#endif /* kcg_copy_array_int32_627 */
 
 #ifndef kcg_copy_P046_OBU_sectionlist_int_T_TM
 #define kcg_copy_P046_OBU_sectionlist_int_T_TM(kcg_C1, kcg_C2)                \
@@ -10810,55 +10763,60 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (P041_OBU_sectionlist_enum_T_TM)))
 #endif /* kcg_copy_P041_OBU_sectionlist_enum_T_TM */
 
+#ifndef kcg_copy_array_int32_129
+#define kcg_copy_array_int32_129(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_129)))
+#endif /* kcg_copy_array_int32_129 */
+
+#ifndef kcg_copy__23_array
+#define kcg_copy__23_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_23_array)))
+#endif /* kcg_copy__23_array */
+
+#ifndef kcg_copy__24_array
+#define kcg_copy__24_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_24_array)))
+#endif /* kcg_copy__24_array */
+
+#ifndef kcg_copy_array_float32_9_6
+#define kcg_copy_array_float32_9_6(kcg_C1, kcg_C2)                            \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float32_9_6)))
+#endif /* kcg_copy_array_float32_9_6 */
+
+#ifndef kcg_copy_array_float32_113
+#define kcg_copy_array_float32_113(kcg_C1, kcg_C2)                            \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float32_113)))
+#endif /* kcg_copy_array_float32_113 */
+
+#ifndef kcg_copy_array_int32_221
+#define kcg_copy_array_int32_221(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_221)))
+#endif /* kcg_copy_array_int32_221 */
+
 #ifndef kcg_copy__25_array
 #define kcg_copy__25_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_25_array)))
 #endif /* kcg_copy__25_array */
-
-#ifndef kcg_copy__26_array
-#define kcg_copy__26_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_26_array)))
-#endif /* kcg_copy__26_array */
-
-#ifndef kcg_copy_array_float64_10
-#define kcg_copy_array_float64_10(kcg_C1, kcg_C2)                             \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float64_10)))
-#endif /* kcg_copy_array_float64_10 */
-
-#ifndef kcg_copy_array_int64_444
-#define kcg_copy_array_int64_444(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_444)))
-#endif /* kcg_copy_array_int64_444 */
-
-#ifndef kcg_copy_array_float64_9_6
-#define kcg_copy_array_float64_9_6(kcg_C1, kcg_C2)                            \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float64_9_6)))
-#endif /* kcg_copy_array_float64_9_6 */
-
-#ifndef kcg_copy_array_int64_32
-#define kcg_copy_array_int64_32(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_32)))
-#endif /* kcg_copy_array_int64_32 */
-
-#ifndef kcg_copy__27_array
-#define kcg_copy__27_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_27_array)))
-#endif /* kcg_copy__27_array */
 
 #ifndef kcg_copy_Metadata_T_Common_Types_Pkg
 #define kcg_copy_Metadata_T_Common_Types_Pkg(kcg_C1, kcg_C2)                  \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (Metadata_T_Common_Types_Pkg)))
 #endif /* kcg_copy_Metadata_T_Common_Types_Pkg */
 
+#ifndef kcg_copy_array_int32_304
+#define kcg_copy_array_int32_304(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_304)))
+#endif /* kcg_copy_array_int32_304 */
+
 #ifndef kcg_copy_array_bool_256_46_30
 #define kcg_copy_array_bool_256_46_30(kcg_C1, kcg_C2)                         \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_256_46_30)))
 #endif /* kcg_copy_array_bool_256_46_30 */
 
-#ifndef kcg_copy__28_array
-#define kcg_copy__28_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_28_array)))
-#endif /* kcg_copy__28_array */
+#ifndef kcg_copy__26_array
+#define kcg_copy__26_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_26_array)))
+#endif /* kcg_copy__26_array */
 
 #ifndef kcg_copy_ParabolaCurve_list_MRSP_T_CalcBrakingCurves_types
 #define kcg_copy_ParabolaCurve_list_MRSP_T_CalcBrakingCurves_types(kcg_C1, kcg_C2)\
@@ -10889,30 +10847,45 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (MRSP_Profile_t_TrackAtlasTypes)))
 #endif /* kcg_copy_MRSP_Profile_t_TrackAtlasTypes */
 
-#ifndef kcg_copy_array_int64_128_32
-#define kcg_copy_array_int64_128_32(kcg_C1, kcg_C2)                           \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_128_32)))
-#endif /* kcg_copy_array_int64_128_32 */
+#ifndef kcg_copy_array_int32_128_32
+#define kcg_copy_array_int32_128_32(kcg_C1, kcg_C2)                           \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_128_32)))
+#endif /* kcg_copy_array_int32_128_32 */
 
-#ifndef kcg_copy_P080_sections_array_flat_T_TM
-#define kcg_copy_P080_sections_array_flat_T_TM(kcg_C1, kcg_C2)                \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (P080_sections_array_flat_T_TM)))
-#endif /* kcg_copy_P080_sections_array_flat_T_TM */
+#ifndef kcg_copy_array_float32_110
+#define kcg_copy_array_float32_110(kcg_C1, kcg_C2)                            \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float32_110)))
+#endif /* kcg_copy_array_float32_110 */
 
-#ifndef kcg_copy__29_array
-#define kcg_copy__29_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_29_array)))
-#endif /* kcg_copy__29_array */
+#ifndef kcg_copy_array_int32_301
+#define kcg_copy_array_int32_301(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_301)))
+#endif /* kcg_copy_array_int32_301 */
 
-#ifndef kcg_copy_array_float64_13
-#define kcg_copy_array_float64_13(kcg_C1, kcg_C2)                             \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float64_13)))
-#endif /* kcg_copy_array_float64_13 */
+#ifndef kcg_copy__27_array
+#define kcg_copy__27_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_27_array)))
+#endif /* kcg_copy__27_array */
+
+#ifndef kcg_copy__28_array
+#define kcg_copy__28_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_28_array)))
+#endif /* kcg_copy__28_array */
+
+#ifndef kcg_copy_array_int32_891
+#define kcg_copy_array_int32_891(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_891)))
+#endif /* kcg_copy_array_int32_891 */
 
 #ifndef kcg_copy_array_bool_5
 #define kcg_copy_array_bool_5(kcg_C1, kcg_C2)                                 \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_5)))
 #endif /* kcg_copy_array_bool_5 */
+
+#ifndef kcg_copy__29_array
+#define kcg_copy__29_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_29_array)))
+#endif /* kcg_copy__29_array */
 
 #ifndef kcg_copy__30_array
 #define kcg_copy__30_array(kcg_C1, kcg_C2)                                    \
@@ -10939,10 +10912,10 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_34_array)))
 #endif /* kcg_copy__34_array */
 
-#ifndef kcg_copy__35_array
-#define kcg_copy__35_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_35_array)))
-#endif /* kcg_copy__35_array */
+#ifndef kcg_copy_array_int32_888
+#define kcg_copy_array_int32_888(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_888)))
+#endif /* kcg_copy_array_int32_888 */
 
 #ifndef kcg_copy_MetadataTruthtable_T1_CheckEuroradioMessage
 #define kcg_copy_MetadataTruthtable_T1_CheckEuroradioMessage(kcg_C1, kcg_C2)  \
@@ -10952,10 +10925,25 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (MetadataTruthtable_T1_CheckEuroradioMessage)))
 #endif /* kcg_copy_MetadataTruthtable_T1_CheckEuroradioMessage */
 
+#ifndef kcg_copy_array_int32_307
+#define kcg_copy_array_int32_307(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_307)))
+#endif /* kcg_copy_array_int32_307 */
+
+#ifndef kcg_copy__35_array
+#define kcg_copy__35_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_35_array)))
+#endif /* kcg_copy__35_array */
+
 #ifndef kcg_copy__36_array
 #define kcg_copy__36_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_36_array)))
 #endif /* kcg_copy__36_array */
+
+#ifndef kcg_copy_array_int32_64
+#define kcg_copy_array_int32_64(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_64)))
+#endif /* kcg_copy_array_int32_64 */
 
 #ifndef kcg_copy__37_array
 #define kcg_copy__37_array(kcg_C1, kcg_C2)                                    \
@@ -10967,10 +10955,10 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_38_array)))
 #endif /* kcg_copy__38_array */
 
-#ifndef kcg_copy_array_int64_32_32
-#define kcg_copy_array_int64_32_32(kcg_C1, kcg_C2)                            \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_32_32)))
-#endif /* kcg_copy_array_int64_32_32 */
+#ifndef kcg_copy_array_int32_32_32
+#define kcg_copy_array_int32_32_32(kcg_C1, kcg_C2)                            \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_32_32)))
+#endif /* kcg_copy_array_int32_32_32 */
 
 #ifndef kcg_copy__39_array
 #define kcg_copy__39_array(kcg_C1, kcg_C2)                                    \
@@ -10985,23 +10973,35 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (aNID_RADIO_T_Packet_TrainTypes_Pkg)))
 #endif /* kcg_copy_aNID_RADIO_T_Packet_TrainTypes_Pkg */
 
-#ifndef kcg_copy_array_int64_41
-#define kcg_copy_array_int64_41(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_41)))
-#endif /* kcg_copy_array_int64_41 */
+#ifndef kcg_copy__40_array
+#define kcg_copy__40_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_40_array)))
+#endif /* kcg_copy__40_array */
 
-#ifndef kcg_copy_array_int64_2_32_32
-#define kcg_copy_array_int64_2_32_32(kcg_C1, kcg_C2)                          \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_2_32_32)))
-#endif /* kcg_copy_array_int64_2_32_32 */
+#ifndef kcg_copy__41_array
+#define kcg_copy__41_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_41_array)))
+#endif /* kcg_copy__41_array */
 
-#ifndef kcg_copy_M_TrainTrack_compressed_packets_T_TM_radio_messages
-#define kcg_copy_M_TrainTrack_compressed_packets_T_TM_radio_messages(kcg_C1, kcg_C2)\
-  (kcg_assign_array(                                                          \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (M_TrainTrack_compressed_packets_T_TM_radio_messages)))
-#endif /* kcg_copy_M_TrainTrack_compressed_packets_T_TM_radio_messages */
+#ifndef kcg_copy_array_int32_894
+#define kcg_copy_array_int32_894(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_894)))
+#endif /* kcg_copy_array_int32_894 */
+
+#ifndef kcg_copy_array_int32_2_32_32
+#define kcg_copy_array_int32_2_32_32(kcg_C1, kcg_C2)                          \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_2_32_32)))
+#endif /* kcg_copy_array_int32_2_32_32 */
+
+#ifndef kcg_copy_array_int32_70
+#define kcg_copy_array_int32_70(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_70)))
+#endif /* kcg_copy_array_int32_70 */
+
+#ifndef kcg_copy_array_int32_396
+#define kcg_copy_array_int32_396(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_396)))
+#endif /* kcg_copy_array_int32_396 */
 
 #ifndef kcg_copy_ModeDecisionTableType_DataDictionary_Pkg
 #define kcg_copy_ModeDecisionTableType_DataDictionary_Pkg(kcg_C1, kcg_C2)     \
@@ -11016,35 +11016,41 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_256)))
 #endif /* kcg_copy_array_bool_256 */
 
-#ifndef kcg_copy_array_int64_302
-#define kcg_copy_array_int64_302(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_302)))
-#endif /* kcg_copy_array_int64_302 */
+#ifndef kcg_copy_DMI_EVC_Level_Data_int_array_T_DATA
+#define kcg_copy_DMI_EVC_Level_Data_int_array_T_DATA(kcg_C1, kcg_C2)          \
+  (kcg_assign_array(                                                          \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (DMI_EVC_Level_Data_int_array_T_DATA)))
+#endif /* kcg_copy_DMI_EVC_Level_Data_int_array_T_DATA */
 
-#ifndef kcg_copy_array_int64_56
-#define kcg_copy_array_int64_56(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_56)))
-#endif /* kcg_copy_array_int64_56 */
-
-#ifndef kcg_copy__40_array
-#define kcg_copy__40_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_40_array)))
-#endif /* kcg_copy__40_array */
-
-#ifndef kcg_copy_array_float64_114
-#define kcg_copy_array_float64_114(kcg_C1, kcg_C2)                            \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float64_114)))
-#endif /* kcg_copy_array_float64_114 */
-
-#ifndef kcg_copy__41_array
-#define kcg_copy__41_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_41_array)))
-#endif /* kcg_copy__41_array */
+#ifndef kcg_copy_array_int32_150
+#define kcg_copy_array_int32_150(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_150)))
+#endif /* kcg_copy_array_int32_150 */
 
 #ifndef kcg_copy__42_array
 #define kcg_copy__42_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_42_array)))
 #endif /* kcg_copy__42_array */
+
+#ifndef kcg_copy_array_int32_494
+#define kcg_copy_array_int32_494(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_494)))
+#endif /* kcg_copy_array_int32_494 */
+
+#ifndef kcg_copy_DMI_Track_Description_int_array_T
+#define kcg_copy_DMI_Track_Description_int_array_T(kcg_C1, kcg_C2)            \
+  (kcg_assign_array(                                                          \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (DMI_Track_Description_int_array_T)))
+#endif /* kcg_copy_DMI_Track_Description_int_array_T */
+
+#ifndef kcg_copy_array_int32_491
+#define kcg_copy_array_int32_491(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_491)))
+#endif /* kcg_copy_array_int32_491 */
 
 #ifndef kcg_copy__43_array
 #define kcg_copy__43_array(kcg_C1, kcg_C2)                                    \
@@ -11061,14 +11067,6 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_45_array)))
 #endif /* kcg_copy__45_array */
 
-#ifndef kcg_copy_DMI_to_EVC_Message_int_T_API_DMI_Pkg
-#define kcg_copy_DMI_to_EVC_Message_int_T_API_DMI_Pkg(kcg_C1, kcg_C2)         \
-  (kcg_assign_array(                                                          \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (DMI_to_EVC_Message_int_T_API_DMI_Pkg)))
-#endif /* kcg_copy_DMI_to_EVC_Message_int_T_API_DMI_Pkg */
-
 #ifndef kcg_copy__46_array
 #define kcg_copy__46_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_46_array)))
@@ -11084,90 +11082,108 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_48_array)))
 #endif /* kcg_copy__48_array */
 
-#ifndef kcg_copy_array_bool_4
-#define kcg_copy_array_bool_4(kcg_C1, kcg_C2)                                 \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_4)))
-#endif /* kcg_copy_array_bool_4 */
-
-#ifndef kcg_copy_array_int64_975
-#define kcg_copy_array_int64_975(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_975)))
-#endif /* kcg_copy_array_int64_975 */
-
-#ifndef kcg_copy_array_int64_65
-#define kcg_copy_array_int64_65(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_65)))
-#endif /* kcg_copy_array_int64_65 */
-
 #ifndef kcg_copy__49_array
 #define kcg_copy__49_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_49_array)))
 #endif /* kcg_copy__49_array */
 
-#ifndef kcg_copy_array_int64_400
-#define kcg_copy_array_int64_400(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_400)))
-#endif /* kcg_copy_array_int64_400 */
+#ifndef kcg_copy_array_bool_4
+#define kcg_copy_array_bool_4(kcg_C1, kcg_C2)                                 \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_4)))
+#endif /* kcg_copy_array_bool_4 */
 
-#ifndef kcg_copy_array_int64_978
-#define kcg_copy_array_int64_978(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_978)))
-#endif /* kcg_copy_array_int64_978 */
-
-#ifndef kcg_copy_array_int64_2_32_64
-#define kcg_copy_array_int64_2_32_64(kcg_C1, kcg_C2)                          \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_2_32_64)))
-#endif /* kcg_copy_array_int64_2_32_64 */
-
-#ifndef kcg_copy_array_int64_987
-#define kcg_copy_array_int64_987(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_987)))
-#endif /* kcg_copy_array_int64_987 */
-
-#ifndef kcg_copy_array_int64_68
-#define kcg_copy_array_int64_68(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_68)))
-#endif /* kcg_copy_array_int64_68 */
-
-#ifndef kcg_copy_array_bool_15
-#define kcg_copy_array_bool_15(kcg_C1, kcg_C2)                                \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_15)))
-#endif /* kcg_copy_array_bool_15 */
+#ifndef kcg_copy_array_int32_2
+#define kcg_copy_array_int32_2(kcg_C1, kcg_C2)                                \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_2)))
+#endif /* kcg_copy_array_int32_2 */
 
 #ifndef kcg_copy__50_array
 #define kcg_copy__50_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_50_array)))
 #endif /* kcg_copy__50_array */
 
-#ifndef kcg_copy_array_char_12
-#define kcg_copy_array_char_12(kcg_C1, kcg_C2)                                \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_char_12)))
-#endif /* kcg_copy_array_char_12 */
-
-#ifndef kcg_copy_array_int64_8_4
-#define kcg_copy_array_int64_8_4(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_8_4)))
-#endif /* kcg_copy_array_int64_8_4 */
-
-#ifndef kcg_copy_array_int64_95_33
-#define kcg_copy_array_int64_95_33(kcg_C1, kcg_C2)                            \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_95_33)))
-#endif /* kcg_copy_array_int64_95_33 */
+#ifndef kcg_copy_array_int32_8
+#define kcg_copy_array_int32_8(kcg_C1, kcg_C2)                                \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_8)))
+#endif /* kcg_copy_array_int32_8 */
 
 #ifndef kcg_copy__51_array
 #define kcg_copy__51_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_51_array)))
 #endif /* kcg_copy__51_array */
 
-#ifndef kcg_copy_array_int64_990
-#define kcg_copy_array_int64_990(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_990)))
-#endif /* kcg_copy_array_int64_990 */
+#ifndef kcg_copy_array_int32_2_32_64
+#define kcg_copy_array_int32_2_32_64(kcg_C1, kcg_C2)                          \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_2_32_64)))
+#endif /* kcg_copy_array_int32_2_32_64 */
 
-#ifndef kcg_copy_array_int64_492
-#define kcg_copy_array_int64_492(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_492)))
-#endif /* kcg_copy_array_int64_492 */
+#ifndef kcg_copy_array_int32_5
+#define kcg_copy_array_int32_5(kcg_C1, kcg_C2)                                \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_5)))
+#endif /* kcg_copy_array_int32_5 */
+
+#ifndef kcg_copy_CompressedPacketData_T_Common_Types_Pkg
+#define kcg_copy_CompressedPacketData_T_Common_Types_Pkg(kcg_C1, kcg_C2)      \
+  (kcg_assign_array(                                                          \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (CompressedPacketData_T_Common_Types_Pkg)))
+#endif /* kcg_copy_CompressedPacketData_T_Common_Types_Pkg */
+
+#ifndef kcg_copy_array_bool_15
+#define kcg_copy_array_bool_15(kcg_C1, kcg_C2)                                \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_15)))
+#endif /* kcg_copy_array_bool_15 */
+
+#ifndef kcg_copy__52_array
+#define kcg_copy__52_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_52_array)))
+#endif /* kcg_copy__52_array */
+
+#ifndef kcg_copy_array_char_12
+#define kcg_copy_array_char_12(kcg_C1, kcg_C2)                                \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_char_12)))
+#endif /* kcg_copy_array_char_12 */
+
+#ifndef kcg_copy_array_int32_97
+#define kcg_copy_array_int32_97(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_97)))
+#endif /* kcg_copy_array_int32_97 */
+
+#ifndef kcg_copy_array_int32_8_4
+#define kcg_copy_array_int32_8_4(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_8_4)))
+#endif /* kcg_copy_array_int32_8_4 */
+
+#ifndef kcg_copy_array_int32_95_33
+#define kcg_copy_array_int32_95_33(kcg_C1, kcg_C2)                            \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_95_33)))
+#endif /* kcg_copy_array_int32_95_33 */
+
+#ifndef kcg_copy_array_int32_11
+#define kcg_copy_array_int32_11(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_11)))
+#endif /* kcg_copy_array_int32_11 */
+
+#ifndef kcg_copy_array_int32_432
+#define kcg_copy_array_int32_432(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_432)))
+#endif /* kcg_copy_array_int32_432 */
+
+#ifndef kcg_copy__53_array
+#define kcg_copy__53_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_53_array)))
+#endif /* kcg_copy__53_array */
+
+#ifndef kcg_copy_array_int32_260
+#define kcg_copy_array_int32_260(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_260)))
+#endif /* kcg_copy_array_int32_260 */
+
+#ifndef kcg_copy_array_int32_17
+#define kcg_copy_array_int32_17(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_17)))
+#endif /* kcg_copy_array_int32_17 */
 
 #ifndef kcg_copy_StaticSpeedProfile_t_TrackAtlasTypes
 #define kcg_copy_StaticSpeedProfile_t_TrackAtlasTypes(kcg_C1, kcg_C2)         \
@@ -11185,48 +11201,55 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (GradientProfile_t_TrackAtlasTypes)))
 #endif /* kcg_copy_GradientProfile_t_TrackAtlasTypes */
 
-#ifndef kcg_copy_array_int64_3
-#define kcg_copy_array_int64_3(kcg_C1, kcg_C2)                                \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_3)))
-#endif /* kcg_copy_array_int64_3 */
+#ifndef kcg_copy_array_int32_269
+#define kcg_copy_array_int32_269(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_269)))
+#endif /* kcg_copy_array_int32_269 */
 
-#ifndef kcg_copy__52_array
-#define kcg_copy__52_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_52_array)))
-#endif /* kcg_copy__52_array */
+#ifndef kcg_copy_array_int32_100
+#define kcg_copy_array_int32_100(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_100)))
+#endif /* kcg_copy_array_int32_100 */
 
-#ifndef kcg_copy_DMI_TEXT_INT_Array_T_DATA
-#define kcg_copy_DMI_TEXT_INT_Array_T_DATA(kcg_C1, kcg_C2)                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (DMI_TEXT_INT_Array_T_DATA)))
-#endif /* kcg_copy_DMI_TEXT_INT_Array_T_DATA */
+#ifndef kcg_copy_array_int32_14
+#define kcg_copy_array_int32_14(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_14)))
+#endif /* kcg_copy_array_int32_14 */
 
-#ifndef kcg_copy_array_int64_9
-#define kcg_copy_array_int64_9(kcg_C1, kcg_C2)                                \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_9)))
-#endif /* kcg_copy_array_int64_9 */
+#ifndef kcg_copy_array_float32_1
+#define kcg_copy_array_float32_1(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float32_1)))
+#endif /* kcg_copy_array_float32_1 */
 
-#ifndef kcg_copy_array_int64_261
-#define kcg_copy_array_int64_261(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_261)))
-#endif /* kcg_copy_array_int64_261 */
+#ifndef kcg_copy_array_int32_266
+#define kcg_copy_array_int32_266(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_266)))
+#endif /* kcg_copy_array_int32_266 */
 
-#ifndef kcg_copy_EVC_to_DMI_Message_int_T_API_DMI_Pkg
-#define kcg_copy_EVC_to_DMI_Message_int_T_API_DMI_Pkg(kcg_C1, kcg_C2)         \
-  (kcg_assign_array(                                                          \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (EVC_to_DMI_Message_int_T_API_DMI_Pkg)))
-#endif /* kcg_copy_EVC_to_DMI_Message_int_T_API_DMI_Pkg */
+#ifndef kcg_copy_array_int32_23
+#define kcg_copy_array_int32_23(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_23)))
+#endif /* kcg_copy_array_int32_23 */
 
-#ifndef kcg_copy__53_array
-#define kcg_copy__53_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_53_array)))
-#endif /* kcg_copy__53_array */
+#ifndef kcg_copy_array_int32_20
+#define kcg_copy_array_int32_20(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_20)))
+#endif /* kcg_copy_array_int32_20 */
+
+#ifndef kcg_copy_tPASPOutput_Array
+#define kcg_copy_tPASPOutput_Array(kcg_C1, kcg_C2)                            \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (tPASPOutput_Array)))
+#endif /* kcg_copy_tPASPOutput_Array */
 
 #ifndef kcg_copy__54_array
 #define kcg_copy__54_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_54_array)))
 #endif /* kcg_copy__54_array */
+
+#ifndef kcg_copy__55_array
+#define kcg_copy__55_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_55_array)))
+#endif /* kcg_copy__55_array */
 
 #ifndef kcg_copy_P027V1_OBU_sectionlist_int_T_TM_baseline2
 #define kcg_copy_P027V1_OBU_sectionlist_int_T_TM_baseline2(kcg_C1, kcg_C2)    \
@@ -11272,130 +11295,88 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (LinkedBGs_T_BG_Types_Pkg)))
 #endif /* kcg_copy_LinkedBGs_T_BG_Types_Pkg */
 
-#ifndef kcg_copy_array_int64_6
-#define kcg_copy_array_int64_6(kcg_C1, kcg_C2)                                \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_6)))
-#endif /* kcg_copy_array_int64_6 */
-
 #ifndef kcg_copy_MyArray_SDM_Commands_Pkg
 #define kcg_copy_MyArray_SDM_Commands_Pkg(kcg_C1, kcg_C2)                     \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (MyArray_SDM_Commands_Pkg)))
 #endif /* kcg_copy_MyArray_SDM_Commands_Pkg */
 
-#ifndef kcg_copy_array_int64_15
-#define kcg_copy_array_int64_15(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_15)))
-#endif /* kcg_copy_array_int64_15 */
+#ifndef kcg_copy_array_float32_10
+#define kcg_copy_array_float32_10(kcg_C1, kcg_C2)                             \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float32_10)))
+#endif /* kcg_copy_array_float32_10 */
+
+#ifndef kcg_copy_array_int32_444
+#define kcg_copy_array_int32_444(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_444)))
+#endif /* kcg_copy_array_int32_444 */
 
 #ifndef kcg_copy_array_int32_32
 #define kcg_copy_array_int32_32(kcg_C1, kcg_C2)                               \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_32)))
 #endif /* kcg_copy_array_int32_32 */
 
-#ifndef kcg_copy_array_int64_12
-#define kcg_copy_array_int64_12(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_12)))
-#endif /* kcg_copy_array_int64_12 */
-
-#ifndef kcg_copy_array_int64_350
-#define kcg_copy_array_int64_350(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_350)))
-#endif /* kcg_copy_array_int64_350 */
-
-#ifndef kcg_copy_P005_sections_array_flat_T_TM
-#define kcg_copy_P005_sections_array_flat_T_TM(kcg_C1, kcg_C2)                \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (P005_sections_array_flat_T_TM)))
-#endif /* kcg_copy_P005_sections_array_flat_T_TM */
-
-#ifndef kcg_copy_array_int64_104
-#define kcg_copy_array_int64_104(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_104)))
-#endif /* kcg_copy_array_int64_104 */
-
-#ifndef kcg_copy_array_int64_430
-#define kcg_copy_array_int64_430(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_430)))
-#endif /* kcg_copy_array_int64_430 */
-
-#ifndef kcg_copy__55_array
-#define kcg_copy__55_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_55_array)))
-#endif /* kcg_copy__55_array */
-
-#ifndef kcg_copy_array_int64_18
-#define kcg_copy_array_int64_18(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_18)))
-#endif /* kcg_copy_array_int64_18 */
+#ifndef kcg_copy_P080_sections_array_flat_T_TM
+#define kcg_copy_P080_sections_array_flat_T_TM(kcg_C1, kcg_C2)                \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (P080_sections_array_flat_T_TM)))
+#endif /* kcg_copy_P080_sections_array_flat_T_TM */
 
 #ifndef kcg_copy__56_array
 #define kcg_copy__56_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_56_array)))
 #endif /* kcg_copy__56_array */
 
+#ifndef kcg_copy_array_float32_13
+#define kcg_copy_array_float32_13(kcg_C1, kcg_C2)                             \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float32_13)))
+#endif /* kcg_copy_array_float32_13 */
+
 #ifndef kcg_copy__57_array
 #define kcg_copy__57_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_57_array)))
 #endif /* kcg_copy__57_array */
-
-#ifndef kcg_copy_t_BrakeVt_t_SDMModelPkg
-#define kcg_copy_t_BrakeVt_t_SDMModelPkg(kcg_C1, kcg_C2)                      \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (t_BrakeVt_t_SDMModelPkg)))
-#endif /* kcg_copy_t_BrakeVt_t_SDMModelPkg */
 
 #ifndef kcg_copy__58_array
 #define kcg_copy__58_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_58_array)))
 #endif /* kcg_copy__58_array */
 
-#ifndef kcg_copy_array_int64_24
-#define kcg_copy_array_int64_24(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_24)))
-#endif /* kcg_copy_array_int64_24 */
+#ifndef kcg_copy_array_int32_41
+#define kcg_copy_array_int32_41(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_41)))
+#endif /* kcg_copy_array_int32_41 */
 
-#ifndef kcg_copy_array_int64_21
-#define kcg_copy_array_int64_21(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_21)))
-#endif /* kcg_copy_array_int64_21 */
+#ifndef kcg_copy_M_TrainTrack_compressed_packets_T_TM_radio_messages
+#define kcg_copy_M_TrainTrack_compressed_packets_T_TM_radio_messages(kcg_C1, kcg_C2)\
+  (kcg_assign_array(                                                          \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (M_TrainTrack_compressed_packets_T_TM_radio_messages)))
+#endif /* kcg_copy_M_TrainTrack_compressed_packets_T_TM_radio_messages */
+
+#ifndef kcg_copy_array_int32_302
+#define kcg_copy_array_int32_302(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_302)))
+#endif /* kcg_copy_array_int32_302 */
 
 #ifndef kcg_copy__59_array
 #define kcg_copy__59_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_59_array)))
 #endif /* kcg_copy__59_array */
 
-#ifndef kcg_copy_array_float64_8
-#define kcg_copy_array_float64_8(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float64_8)))
-#endif /* kcg_copy_array_float64_8 */
+#ifndef kcg_copy_array_int32_56
+#define kcg_copy_array_int32_56(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_56)))
+#endif /* kcg_copy_array_int32_56 */
 
-#ifndef kcg_copy_array_int64_30
-#define kcg_copy_array_int64_30(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_30)))
-#endif /* kcg_copy_array_int64_30 */
-
-#ifndef kcg_copy_array_float64_5
-#define kcg_copy_array_float64_5(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float64_5)))
-#endif /* kcg_copy_array_float64_5 */
-
-#ifndef kcg_copy_array_int64_110
-#define kcg_copy_array_int64_110(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_110)))
-#endif /* kcg_copy_array_int64_110 */
+#ifndef kcg_copy_array_float32_100_1
+#define kcg_copy_array_float32_100_1(kcg_C1, kcg_C2)                          \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float32_100_1)))
+#endif /* kcg_copy_array_float32_100_1 */
 
 #ifndef kcg_copy__60_array
 #define kcg_copy__60_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_60_array)))
 #endif /* kcg_copy__60_array */
-
-#ifndef kcg_copy_array_float64_100_1
-#define kcg_copy_array_float64_100_1(kcg_C1, kcg_C2)                          \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float64_100_1)))
-#endif /* kcg_copy_array_float64_100_1 */
-
-#ifndef kcg_copy_array_int64_33
-#define kcg_copy_array_int64_33(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_33)))
-#endif /* kcg_copy_array_int64_33 */
 
 #ifndef kcg_copy_P046_trackide_sectionlist_T_TM
 #define kcg_copy_P046_trackide_sectionlist_T_TM(kcg_C1, kcg_C2)               \
@@ -11426,6 +11407,11 @@ typedef kcg_int32 array_int32_4[4];
 #define kcg_copy__63_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_63_array)))
 #endif /* kcg_copy__63_array */
+
+#ifndef kcg_copy_array_float32_114
+#define kcg_copy_array_float32_114(kcg_C1, kcg_C2)                            \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float32_114)))
+#endif /* kcg_copy_array_float32_114 */
 
 #ifndef kcg_copy_P058_OBU_sectionlist_enum_T_TM
 #define kcg_copy_P058_OBU_sectionlist_enum_T_TM(kcg_C1, kcg_C2)               \
@@ -11481,16 +11467,6 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (DMI_level_array_T_DMI_Types_Pkg)))
 #endif /* kcg_copy_DMI_level_array_T_DMI_Types_Pkg */
 
-#ifndef kcg_copy_array_int64_285
-#define kcg_copy_array_int64_285(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_285)))
-#endif /* kcg_copy_array_int64_285 */
-
-#ifndef kcg_copy_Array_DMI_List_Entry_Request
-#define kcg_copy_Array_DMI_List_Entry_Request(kcg_C1, kcg_C2)                 \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (Array_DMI_List_Entry_Request)))
-#endif /* kcg_copy_Array_DMI_List_Entry_Request */
-
 #ifndef kcg_copy__68_array
 #define kcg_copy__68_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_68_array)))
@@ -11504,73 +11480,68 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (DMI_trackConditionArray_T_DMI_Types_Pkg)))
 #endif /* kcg_copy_DMI_trackConditionArray_T_DMI_Types_Pkg */
 
-#ifndef kcg_copy_array_int64_42
-#define kcg_copy_array_int64_42(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_42)))
-#endif /* kcg_copy_array_int64_42 */
-
 #ifndef kcg_copy_P046_OBU_sectionlist_array_T_TM
 #define kcg_copy_P046_OBU_sectionlist_array_T_TM(kcg_C1, kcg_C2)              \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (P046_OBU_sectionlist_array_T_TM)))
 #endif /* kcg_copy_P046_OBU_sectionlist_array_T_TM */
-
-#ifndef kcg_copy_array_float64_100
-#define kcg_copy_array_float64_100(kcg_C1, kcg_C2)                            \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float64_100)))
-#endif /* kcg_copy_array_float64_100 */
-
-#ifndef kcg_copy_ASafeSpeedDefinition_T_CalcBrakingCurves_types
-#define kcg_copy_ASafeSpeedDefinition_T_CalcBrakingCurves_types(kcg_C1, kcg_C2)\
-  (kcg_assign_array(                                                          \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (ASafeSpeedDefinition_T_CalcBrakingCurves_types)))
-#endif /* kcg_copy_ASafeSpeedDefinition_T_CalcBrakingCurves_types */
 
 #ifndef kcg_copy__69_array
 #define kcg_copy__69_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_69_array)))
 #endif /* kcg_copy__69_array */
 
-#ifndef kcg_copy_array_int64_99_33
-#define kcg_copy_array_int64_99_33(kcg_C1, kcg_C2)                            \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_99_33)))
-#endif /* kcg_copy_array_int64_99_33 */
+#ifndef kcg_copy_DMI_to_EVC_Message_int_T_API_DMI_Pkg
+#define kcg_copy_DMI_to_EVC_Message_int_T_API_DMI_Pkg(kcg_C1, kcg_C2)         \
+  (kcg_assign_array(                                                          \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (DMI_to_EVC_Message_int_T_API_DMI_Pkg)))
+#endif /* kcg_copy_DMI_to_EVC_Message_int_T_API_DMI_Pkg */
+
+#ifndef kcg_copy__70_array
+#define kcg_copy__70_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_70_array)))
+#endif /* kcg_copy__70_array */
+
+#ifndef kcg_copy_array_int32_975
+#define kcg_copy_array_int32_975(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_975)))
+#endif /* kcg_copy_array_int32_975 */
+
+#ifndef kcg_copy_array_int32_99_33
+#define kcg_copy_array_int32_99_33(kcg_C1, kcg_C2)                            \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_99_33)))
+#endif /* kcg_copy_array_int32_99_33 */
 
 #ifndef kcg_copy_array_bool_1
 #define kcg_copy_array_bool_1(kcg_C1, kcg_C2)                                 \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_1)))
 #endif /* kcg_copy_array_bool_1 */
 
-#ifndef kcg_copy_array_int64_131
-#define kcg_copy_array_int64_131(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_131)))
-#endif /* kcg_copy_array_int64_131 */
+#ifndef kcg_copy_array_int32_4_32_128
+#define kcg_copy_array_int32_4_32_128(kcg_C1, kcg_C2)                         \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_4_32_128)))
+#endif /* kcg_copy_array_int32_4_32_128 */
 
-#ifndef kcg_copy_array_int64_4_32_128
-#define kcg_copy_array_int64_4_32_128(kcg_C1, kcg_C2)                         \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_4_32_128)))
-#endif /* kcg_copy_array_int64_4_32_128 */
+#ifndef kcg_copy_array_int32_65
+#define kcg_copy_array_int32_65(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_65)))
+#endif /* kcg_copy_array_int32_65 */
 
-#ifndef kcg_copy_array_int64_500_500
-#define kcg_copy_array_int64_500_500(kcg_C1, kcg_C2)                          \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_500_500)))
-#endif /* kcg_copy_array_int64_500_500 */
+#ifndef kcg_copy_array_int32_500_500
+#define kcg_copy_array_int32_500_500(kcg_C1, kcg_C2)                          \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_500_500)))
+#endif /* kcg_copy_array_int32_500_500 */
 
-#ifndef kcg_copy_array_int64_128
-#define kcg_copy_array_int64_128(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_128)))
-#endif /* kcg_copy_array_int64_128 */
+#ifndef kcg_copy_array_int32_400
+#define kcg_copy_array_int32_400(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_400)))
+#endif /* kcg_copy_array_int32_400 */
 
-#ifndef kcg_copy_array_int64_961
-#define kcg_copy_array_int64_961(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_961)))
-#endif /* kcg_copy_array_int64_961 */
-
-#ifndef kcg_copy__70_array
-#define kcg_copy__70_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_70_array)))
-#endif /* kcg_copy__70_array */
+#ifndef kcg_copy__71_array
+#define kcg_copy__71_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_71_array)))
+#endif /* kcg_copy__71_array */
 
 #ifndef kcg_copy_ReportedBGList_T_ProvidePositionReport_Pkg
 #define kcg_copy_ReportedBGList_T_ProvidePositionReport_Pkg(kcg_C1, kcg_C2)   \
@@ -11585,10 +11556,15 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (TelegramArray_T_BG_Types_Pkg)))
 #endif /* kcg_copy_TelegramArray_T_BG_Types_Pkg */
 
-#ifndef kcg_copy__71_array
-#define kcg_copy__71_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_71_array)))
-#endif /* kcg_copy__71_array */
+#ifndef kcg_copy__72_array
+#define kcg_copy__72_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_72_array)))
+#endif /* kcg_copy__72_array */
+
+#ifndef kcg_copy_array_int32_978
+#define kcg_copy_array_int32_978(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_978)))
+#endif /* kcg_copy_array_int32_978 */
 
 #ifndef kcg_copy_RadioTrackTrainMessageQueueEntries_T
 #define kcg_copy_RadioTrackTrainMessageQueueEntries_T(kcg_C1, kcg_C2)         \
@@ -11598,15 +11574,20 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (RadioTrackTrainMessageQueueEntries_T)))
 #endif /* kcg_copy_RadioTrackTrainMessageQueueEntries_T */
 
-#ifndef kcg_copy_array_int64_3_33
-#define kcg_copy_array_int64_3_33(kcg_C1, kcg_C2)                             \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_3_33)))
-#endif /* kcg_copy_array_int64_3_33 */
+#ifndef kcg_copy_array_int32_3_33
+#define kcg_copy_array_int32_3_33(kcg_C1, kcg_C2)                             \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_3_33)))
+#endif /* kcg_copy_array_int32_3_33 */
 
-#ifndef kcg_copy_array_int64_48
-#define kcg_copy_array_int64_48(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_48)))
-#endif /* kcg_copy_array_int64_48 */
+#ifndef kcg_copy_array_int32_987
+#define kcg_copy_array_int32_987(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_987)))
+#endif /* kcg_copy_array_int32_987 */
+
+#ifndef kcg_copy_array_int32_68
+#define kcg_copy_array_int32_68(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_68)))
+#endif /* kcg_copy_array_int32_68 */
 
 #ifndef kcg_copy_DMI_TXT_MSGList_status_T_DMI_Types_Pkg
 #define kcg_copy_DMI_TXT_MSGList_status_T_DMI_Types_Pkg(kcg_C1, kcg_C2)       \
@@ -11621,11 +11602,6 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_12)))
 #endif /* kcg_copy_array_bool_12 */
 
-#ifndef kcg_copy_array_int64_964
-#define kcg_copy_array_int64_964(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_964)))
-#endif /* kcg_copy_array_int64_964 */
-
 #ifndef kcg_copy_driverIdentifier_T_DMI_Messages_Bothways_Pkg
 #define kcg_copy_driverIdentifier_T_DMI_Messages_Bothways_Pkg(kcg_C1, kcg_C2) \
   (kcg_assign_array(                                                          \
@@ -11634,10 +11610,10 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (driverIdentifier_T_DMI_Messages_Bothways_Pkg)))
 #endif /* kcg_copy_driverIdentifier_T_DMI_Messages_Bothways_Pkg */
 
-#ifndef kcg_copy_array_float64_32
-#define kcg_copy_array_float64_32(kcg_C1, kcg_C2)                             \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float64_32)))
-#endif /* kcg_copy_array_float64_32 */
+#ifndef kcg_copy_array_int32_990
+#define kcg_copy_array_int32_990(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_990)))
+#endif /* kcg_copy_array_int32_990 */
 
 #ifndef kcg_copy_LevelDecisionTableType_DataDictionary_Pkg
 #define kcg_copy_LevelDecisionTableType_DataDictionary_Pkg(kcg_C1, kcg_C2)    \
@@ -11647,40 +11623,35 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (LevelDecisionTableType_DataDictionary_Pkg)))
 #endif /* kcg_copy_LevelDecisionTableType_DataDictionary_Pkg */
 
-#ifndef kcg_copy_Array_DMI_Q_Text
-#define kcg_copy_Array_DMI_Q_Text(kcg_C1, kcg_C2)                             \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (Array_DMI_Q_Text)))
-#endif /* kcg_copy_Array_DMI_Q_Text */
-
-#ifndef kcg_copy__72_array
-#define kcg_copy__72_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_72_array)))
-#endif /* kcg_copy__72_array */
-
-#ifndef kcg_copy_array_int64_395
-#define kcg_copy_array_int64_395(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_395)))
-#endif /* kcg_copy_array_int64_395 */
-
-#ifndef kcg_copy_P046_sections_array_flat_T_TM
-#define kcg_copy_P046_sections_array_flat_T_TM(kcg_C1, kcg_C2)                \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (P046_sections_array_flat_T_TM)))
-#endif /* kcg_copy_P046_sections_array_flat_T_TM */
-
 #ifndef kcg_copy__73_array
 #define kcg_copy__73_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_73_array)))
 #endif /* kcg_copy__73_array */
 
-#ifndef kcg_copy_array_float64_50
-#define kcg_copy_array_float64_50(kcg_C1, kcg_C2)                             \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float64_50)))
-#endif /* kcg_copy_array_float64_50 */
+#ifndef kcg_copy_array_int32_492
+#define kcg_copy_array_int32_492(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_492)))
+#endif /* kcg_copy_array_int32_492 */
 
-#ifndef kcg_copy_array_float64_100_8
-#define kcg_copy_array_float64_100_8(kcg_C1, kcg_C2)                          \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float64_100_8)))
-#endif /* kcg_copy_array_float64_100_8 */
+#ifndef kcg_copy_array_int32_3
+#define kcg_copy_array_int32_3(kcg_C1, kcg_C2)                                \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_3)))
+#endif /* kcg_copy_array_int32_3 */
+
+#ifndef kcg_copy_DMI_TEXT_INT_Array_T_DATA
+#define kcg_copy_DMI_TEXT_INT_Array_T_DATA(kcg_C1, kcg_C2)                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (DMI_TEXT_INT_Array_T_DATA)))
+#endif /* kcg_copy_DMI_TEXT_INT_Array_T_DATA */
+
+#ifndef kcg_copy_array_float32_100_8
+#define kcg_copy_array_float32_100_8(kcg_C1, kcg_C2)                          \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float32_100_8)))
+#endif /* kcg_copy_array_float32_100_8 */
+
+#ifndef kcg_copy_array_int32_9
+#define kcg_copy_array_int32_9(kcg_C1, kcg_C2)                                \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_9)))
+#endif /* kcg_copy_array_int32_9 */
 
 #ifndef kcg_copy_ParabolaCurveValid_T_CalcBrakingCurves_types
 #define kcg_copy_ParabolaCurveValid_T_CalcBrakingCurves_types(kcg_C1, kcg_C2) \
@@ -11690,20 +11661,23 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (ParabolaCurveValid_T_CalcBrakingCurves_types)))
 #endif /* kcg_copy_ParabolaCurveValid_T_CalcBrakingCurves_types */
 
-#ifndef kcg_copy_array_int64_72
-#define kcg_copy_array_int64_72(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_72)))
-#endif /* kcg_copy_array_int64_72 */
-
 #ifndef kcg_copy__74_array
 #define kcg_copy__74_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_74_array)))
 #endif /* kcg_copy__74_array */
 
-#ifndef kcg_copy_array_int64_2_32
-#define kcg_copy_array_int64_2_32(kcg_C1, kcg_C2)                             \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_2_32)))
-#endif /* kcg_copy_array_int64_2_32 */
+#ifndef kcg_copy_array_int32_2_32
+#define kcg_copy_array_int32_2_32(kcg_C1, kcg_C2)                             \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_2_32)))
+#endif /* kcg_copy_array_int32_2_32 */
+
+#ifndef kcg_copy_EVC_to_DMI_Message_int_T_API_DMI_Pkg
+#define kcg_copy_EVC_to_DMI_Message_int_T_API_DMI_Pkg(kcg_C1, kcg_C2)         \
+  (kcg_assign_array(                                                          \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (EVC_to_DMI_Message_int_T_API_DMI_Pkg)))
+#endif /* kcg_copy_EVC_to_DMI_Message_int_T_API_DMI_Pkg */
 
 #ifndef kcg_copy_positionedBGs_T_TrainPosition_Types_Pck
 #define kcg_copy_positionedBGs_T_TrainPosition_Types_Pck(kcg_C1, kcg_C2)      \
@@ -11712,6 +11686,16 @@ typedef kcg_int32 array_int32_4[4];
       (kcg_C2),                                                               \
       sizeof (positionedBGs_T_TrainPosition_Types_Pck)))
 #endif /* kcg_copy_positionedBGs_T_TrainPosition_Types_Pck */
+
+#ifndef kcg_copy_array_int32_261
+#define kcg_copy_array_int32_261(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_261)))
+#endif /* kcg_copy_array_int32_261 */
+
+#ifndef kcg_copy_array_int32_6
+#define kcg_copy_array_int32_6(kcg_C1, kcg_C2)                                \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_6)))
+#endif /* kcg_copy_array_int32_6 */
 
 #ifndef kcg_copy__75_array
 #define kcg_copy__75_array(kcg_C1, kcg_C2)                                    \
@@ -11723,50 +11707,70 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_76_array)))
 #endif /* kcg_copy__76_array */
 
-#ifndef kcg_copy_array_int64_198_33
-#define kcg_copy_array_int64_198_33(kcg_C1, kcg_C2)                           \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_198_33)))
-#endif /* kcg_copy_array_int64_198_33 */
+#ifndef kcg_copy_array_int32_198_33
+#define kcg_copy_array_int32_198_33(kcg_C1, kcg_C2)                           \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_198_33)))
+#endif /* kcg_copy_array_int32_198_33 */
+
+#ifndef kcg_copy_array_int32_15
+#define kcg_copy_array_int32_15(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_15)))
+#endif /* kcg_copy_array_int32_15 */
 
 #ifndef kcg_copy__77_array
 #define kcg_copy__77_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_77_array)))
 #endif /* kcg_copy__77_array */
 
-#ifndef kcg_copy_P044_other_data_TM_TrainToTrack
-#define kcg_copy_P044_other_data_TM_TrainToTrack(kcg_C1, kcg_C2)              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (P044_other_data_TM_TrainToTrack)))
-#endif /* kcg_copy_P044_other_data_TM_TrainToTrack */
+#ifndef kcg_copy_array_int32_12
+#define kcg_copy_array_int32_12(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_12)))
+#endif /* kcg_copy_array_int32_12 */
 
-#ifndef kcg_copy_array_int64_496
-#define kcg_copy_array_int64_496(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_496)))
-#endif /* kcg_copy_array_int64_496 */
+#ifndef kcg_copy_array_int32_350
+#define kcg_copy_array_int32_350(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_350)))
+#endif /* kcg_copy_array_int32_350 */
+
+#ifndef kcg_copy_P005_sections_array_flat_T_TM
+#define kcg_copy_P005_sections_array_flat_T_TM(kcg_C1, kcg_C2)                \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (P005_sections_array_flat_T_TM)))
+#endif /* kcg_copy_P005_sections_array_flat_T_TM */
 
 #ifndef kcg_copy__78_array
 #define kcg_copy__78_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_78_array)))
 #endif /* kcg_copy__78_array */
 
-#ifndef kcg_copy_array_int64_2_4_8
-#define kcg_copy_array_int64_2_4_8(kcg_C1, kcg_C2)                            \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_2_4_8)))
-#endif /* kcg_copy_array_int64_2_4_8 */
-
 #ifndef kcg_copy__79_array
 #define kcg_copy__79_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_79_array)))
 #endif /* kcg_copy__79_array */
+
+#ifndef kcg_copy_array_int32_2_4_8
+#define kcg_copy_array_int32_2_4_8(kcg_C1, kcg_C2)                            \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_2_4_8)))
+#endif /* kcg_copy_array_int32_2_4_8 */
 
 #ifndef kcg_copy__80_array
 #define kcg_copy__80_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_80_array)))
 #endif /* kcg_copy__80_array */
 
-#ifndef kcg_copy_tSpeedPoints
-#define kcg_copy_tSpeedPoints(kcg_C1, kcg_C2)                                 \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (tSpeedPoints)))
-#endif /* kcg_copy_tSpeedPoints */
+#ifndef kcg_copy_array_int32_104
+#define kcg_copy_array_int32_104(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_104)))
+#endif /* kcg_copy_array_int32_104 */
+
+#ifndef kcg_copy_array_int32_430
+#define kcg_copy_array_int32_430(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_430)))
+#endif /* kcg_copy_array_int32_430 */
+
+#ifndef kcg_copy_array_int32_18
+#define kcg_copy_array_int32_18(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_18)))
+#endif /* kcg_copy_array_int32_18 */
 
 #ifndef kcg_copy__81_array
 #define kcg_copy__81_array(kcg_C1, kcg_C2)                                    \
@@ -11778,20 +11782,10 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_82_array)))
 #endif /* kcg_copy__82_array */
 
-#ifndef kcg_copy_array_int64_4
-#define kcg_copy_array_int64_4(kcg_C1, kcg_C2)                                \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_4)))
-#endif /* kcg_copy_array_int64_4 */
-
-#ifndef kcg_copy_array_int64_499
-#define kcg_copy_array_int64_499(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_499)))
-#endif /* kcg_copy_array_int64_499 */
-
-#ifndef kcg_copy_array_float64_10_10
-#define kcg_copy_array_float64_10_10(kcg_C1, kcg_C2)                          \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float64_10_10)))
-#endif /* kcg_copy_array_float64_10_10 */
+#ifndef kcg_copy_tSpeedPoints
+#define kcg_copy_tSpeedPoints(kcg_C1, kcg_C2)                                 \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (tSpeedPoints)))
+#endif /* kcg_copy_tSpeedPoints */
 
 #ifndef kcg_copy__83_array
 #define kcg_copy__83_array(kcg_C1, kcg_C2)                                    \
@@ -11803,10 +11797,45 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_84_array)))
 #endif /* kcg_copy__84_array */
 
+#ifndef kcg_copy_t_BrakeVt_t_SDMModelPkg
+#define kcg_copy_t_BrakeVt_t_SDMModelPkg(kcg_C1, kcg_C2)                      \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (t_BrakeVt_t_SDMModelPkg)))
+#endif /* kcg_copy_t_BrakeVt_t_SDMModelPkg */
+
+#ifndef kcg_copy_array_int32_24
+#define kcg_copy_array_int32_24(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_24)))
+#endif /* kcg_copy_array_int32_24 */
+
+#ifndef kcg_copy_array_float32_10_10
+#define kcg_copy_array_float32_10_10(kcg_C1, kcg_C2)                          \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float32_10_10)))
+#endif /* kcg_copy_array_float32_10_10 */
+
+#ifndef kcg_copy_array_int32_21
+#define kcg_copy_array_int32_21(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_21)))
+#endif /* kcg_copy_array_int32_21 */
+
 #ifndef kcg_copy__85_array
 #define kcg_copy__85_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_85_array)))
 #endif /* kcg_copy__85_array */
+
+#ifndef kcg_copy__86_array
+#define kcg_copy__86_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_86_array)))
+#endif /* kcg_copy__86_array */
+
+#ifndef kcg_copy_array_float32_8
+#define kcg_copy_array_float32_8(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float32_8)))
+#endif /* kcg_copy_array_float32_8 */
+
+#ifndef kcg_copy__87_array
+#define kcg_copy__87_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_87_array)))
+#endif /* kcg_copy__87_array */
 
 #ifndef kcg_copy_GradientProfile_real_t_SDM_GradientAcceleration_types
 #define kcg_copy_GradientProfile_real_t_SDM_GradientAcceleration_types(kcg_C1, kcg_C2)\
@@ -11829,33 +11858,30 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_113)))
 #endif /* kcg_copy_array_bool_113 */
 
-#ifndef kcg_copy_array_int64_10
-#define kcg_copy_array_int64_10(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_10)))
-#endif /* kcg_copy_array_int64_10 */
+#ifndef kcg_copy_array_int32_30
+#define kcg_copy_array_int32_30(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_30)))
+#endif /* kcg_copy_array_int32_30 */
 
-#ifndef kcg_copy_DMI_Text_Message_int_array_T_DATA
-#define kcg_copy_DMI_Text_Message_int_array_T_DATA(kcg_C1, kcg_C2)            \
-  (kcg_assign_array(                                                          \
-      (kcg_C1),                                                               \
-      (kcg_C2),                                                               \
-      sizeof (DMI_Text_Message_int_array_T_DATA)))
-#endif /* kcg_copy_DMI_Text_Message_int_array_T_DATA */
+#ifndef kcg_copy_array_float32_5
+#define kcg_copy_array_float32_5(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float32_5)))
+#endif /* kcg_copy_array_float32_5 */
 
-#ifndef kcg_copy__86_array
-#define kcg_copy__86_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_86_array)))
-#endif /* kcg_copy__86_array */
+#ifndef kcg_copy__88_array
+#define kcg_copy__88_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_88_array)))
+#endif /* kcg_copy__88_array */
 
-#ifndef kcg_copy__87_array
-#define kcg_copy__87_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_87_array)))
-#endif /* kcg_copy__87_array */
+#ifndef kcg_copy__89_array
+#define kcg_copy__89_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_89_array)))
+#endif /* kcg_copy__89_array */
 
-#ifndef kcg_copy_array_int64_7
-#define kcg_copy_array_int64_7(kcg_C1, kcg_C2)                                \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_7)))
-#endif /* kcg_copy_array_int64_7 */
+#ifndef kcg_copy_Array_DMI_List_Entry_Request
+#define kcg_copy_Array_DMI_List_Entry_Request(kcg_C1, kcg_C2)                 \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (Array_DMI_List_Entry_Request)))
+#endif /* kcg_copy_Array_DMI_List_Entry_Request */
 
 #ifndef kcg_copy_nvkvintsetArray_T_Packet_Types_Pkg
 #define kcg_copy_nvkvintsetArray_T_Packet_Types_Pkg(kcg_C1, kcg_C2)           \
@@ -11899,15 +11925,15 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (DiffArray_T_Packet_Types_Pkg)))
 #endif /* kcg_copy_DiffArray_T_Packet_Types_Pkg */
 
-#ifndef kcg_copy_array_int64_428
-#define kcg_copy_array_int64_428(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_428)))
-#endif /* kcg_copy_array_int64_428 */
+#ifndef kcg_copy_array_int32_110
+#define kcg_copy_array_int32_110(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_110)))
+#endif /* kcg_copy_array_int32_110 */
 
-#ifndef kcg_copy__88_array
-#define kcg_copy__88_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_88_array)))
-#endif /* kcg_copy__88_array */
+#ifndef kcg_copy__90_array
+#define kcg_copy__90_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_90_array)))
+#endif /* kcg_copy__90_array */
 
 #ifndef kcg_copy_array_bool_10
 #define kcg_copy_array_bool_10(kcg_C1, kcg_C2)                                \
@@ -11924,40 +11950,25 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (P015_OBU_sectionlist_array_T_TM)))
 #endif /* kcg_copy_P015_OBU_sectionlist_array_T_TM */
 
-#ifndef kcg_copy__89_array
-#define kcg_copy__89_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_89_array)))
-#endif /* kcg_copy__89_array */
+#ifndef kcg_copy_array_int32_33
+#define kcg_copy_array_int32_33(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_33)))
+#endif /* kcg_copy_array_int32_33 */
 
-#ifndef kcg_copy_array_int64_99
-#define kcg_copy_array_int64_99(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_99)))
-#endif /* kcg_copy_array_int64_99 */
+#ifndef kcg_copy_array_int32_285
+#define kcg_copy_array_int32_285(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_285)))
+#endif /* kcg_copy_array_int32_285 */
 
-#ifndef kcg_copy_array_int64_13
-#define kcg_copy_array_int64_13(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_13)))
-#endif /* kcg_copy_array_int64_13 */
-
-#ifndef kcg_copy_array_int64_22
-#define kcg_copy_array_int64_22(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_22)))
-#endif /* kcg_copy_array_int64_22 */
-
-#ifndef kcg_copy_array_int64_105
-#define kcg_copy_array_int64_105(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_105)))
-#endif /* kcg_copy_array_int64_105 */
+#ifndef kcg_copy_array_int32_42
+#define kcg_copy_array_int32_42(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_42)))
+#endif /* kcg_copy_array_int32_42 */
 
 #ifndef kcg_copy_P005_OBU_sectionlist_array_T_TM
 #define kcg_copy_P005_OBU_sectionlist_array_T_TM(kcg_C1, kcg_C2)              \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (P005_OBU_sectionlist_array_T_TM)))
 #endif /* kcg_copy_P005_OBU_sectionlist_array_T_TM */
-
-#ifndef kcg_copy__90_array
-#define kcg_copy__90_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_90_array)))
-#endif /* kcg_copy__90_array */
 
 #ifndef kcg_copy__91_array
 #define kcg_copy__91_array(kcg_C1, kcg_C2)                                    \
@@ -11969,10 +11980,23 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_92_array)))
 #endif /* kcg_copy__92_array */
 
+#ifndef kcg_copy_array_float32_100
+#define kcg_copy_array_float32_100(kcg_C1, kcg_C2)                            \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float32_100)))
+#endif /* kcg_copy_array_float32_100 */
+
 #ifndef kcg_copy__93_array
 #define kcg_copy__93_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_93_array)))
 #endif /* kcg_copy__93_array */
+
+#ifndef kcg_copy_ASafeSpeedDefinition_T_CalcBrakingCurves_types
+#define kcg_copy_ASafeSpeedDefinition_T_CalcBrakingCurves_types(kcg_C1, kcg_C2)\
+  (kcg_assign_array(                                                          \
+      (kcg_C1),                                                               \
+      (kcg_C2),                                                               \
+      sizeof (ASafeSpeedDefinition_T_CalcBrakingCurves_types)))
+#endif /* kcg_copy_ASafeSpeedDefinition_T_CalcBrakingCurves_types */
 
 #ifndef kcg_copy_IterPacket58List_T_Packet_Types_Pkg
 #define kcg_copy_IterPacket58List_T_Packet_Types_Pkg(kcg_C1, kcg_C2)          \
@@ -11981,6 +12005,11 @@ typedef kcg_int32 array_int32_4[4];
       (kcg_C2),                                                               \
       sizeof (IterPacket58List_T_Packet_Types_Pkg)))
 #endif /* kcg_copy_IterPacket58List_T_Packet_Types_Pkg */
+
+#ifndef kcg_copy_array_int32_131
+#define kcg_copy_array_int32_131(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_131)))
+#endif /* kcg_copy_array_int32_131 */
 
 #ifndef kcg_copy__94_array
 #define kcg_copy__94_array(kcg_C1, kcg_C2)                                    \
@@ -11992,140 +12021,105 @@ typedef kcg_int32 array_int32_4[4];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_95_array)))
 #endif /* kcg_copy__95_array */
 
-#ifndef kcg_copy_array_float64_3
-#define kcg_copy_array_float64_3(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float64_3)))
-#endif /* kcg_copy_array_float64_3 */
+#ifndef kcg_copy_array_int32_128
+#define kcg_copy_array_int32_128(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_128)))
+#endif /* kcg_copy_array_int32_128 */
+
+#ifndef kcg_copy_array_int32_961
+#define kcg_copy_array_int32_961(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_961)))
+#endif /* kcg_copy_array_int32_961 */
 
 #ifndef kcg_copy__96_array
 #define kcg_copy__96_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_96_array)))
 #endif /* kcg_copy__96_array */
 
-#ifndef kcg_copy_array_int64_25
-#define kcg_copy_array_int64_25(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_25)))
-#endif /* kcg_copy_array_int64_25 */
+#ifndef kcg_copy_array_int32_66_33
+#define kcg_copy_array_int32_66_33(kcg_C1, kcg_C2)                            \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_66_33)))
+#endif /* kcg_copy_array_int32_66_33 */
 
-#ifndef kcg_copy_tScale
-#define kcg_copy_tScale(kcg_C1, kcg_C2)                                       \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (tScale)))
-#endif /* kcg_copy_tScale */
-
-#ifndef kcg_copy_array_int64_31
-#define kcg_copy_array_int64_31(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_31)))
-#endif /* kcg_copy_array_int64_31 */
-
-#ifndef kcg_copy__97_array
-#define kcg_copy__97_array(kcg_C1, kcg_C2)                                    \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_97_array)))
-#endif /* kcg_copy__97_array */
-
-#ifndef kcg_copy_array_int64_283
-#define kcg_copy_array_int64_283(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_283)))
-#endif /* kcg_copy_array_int64_283 */
-
-#ifndef kcg_copy_array_int64_114
-#define kcg_copy_array_int64_114(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_114)))
-#endif /* kcg_copy_array_int64_114 */
-
-#ifndef kcg_copy_array_float64_6
-#define kcg_copy_array_float64_6(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float64_6)))
-#endif /* kcg_copy_array_float64_6 */
-
-#ifndef kcg_copy_array_int64_66_33
-#define kcg_copy_array_int64_66_33(kcg_C1, kcg_C2)                            \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_66_33)))
-#endif /* kcg_copy_array_int64_66_33 */
-
-#ifndef kcg_copy_array_int64_28
-#define kcg_copy_array_int64_28(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_28)))
-#endif /* kcg_copy_array_int64_28 */
-
-#ifndef kcg_copy_array_int64_280
-#define kcg_copy_array_int64_280(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_280)))
-#endif /* kcg_copy_array_int64_280 */
+#ifndef kcg_copy_array_int32_48
+#define kcg_copy_array_int32_48(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_48)))
+#endif /* kcg_copy_array_int32_48 */
 
 #ifndef kcg_copy_array_bool_32
 #define kcg_copy_array_bool_32(kcg_C1, kcg_C2)                                \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_32)))
 #endif /* kcg_copy_array_bool_32 */
 
+#ifndef kcg_copy_array_int32_964
+#define kcg_copy_array_int32_964(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_964)))
+#endif /* kcg_copy_array_int32_964 */
+
+#ifndef kcg_copy_Array_DMI_Q_Text
+#define kcg_copy_Array_DMI_Q_Text(kcg_C1, kcg_C2)                             \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (Array_DMI_Q_Text)))
+#endif /* kcg_copy_Array_DMI_Q_Text */
+
+#ifndef kcg_copy__97_array
+#define kcg_copy__97_array(kcg_C1, kcg_C2)                                    \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_97_array)))
+#endif /* kcg_copy__97_array */
+
+#ifndef kcg_copy_array_float32_32
+#define kcg_copy_array_float32_32(kcg_C1, kcg_C2)                             \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float32_32)))
+#endif /* kcg_copy_array_float32_32 */
+
 #ifndef kcg_copy__98_array
 #define kcg_copy__98_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_98_array)))
 #endif /* kcg_copy__98_array */
-
-#ifndef kcg_copy_array_int64_289
-#define kcg_copy_array_int64_289(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_289)))
-#endif /* kcg_copy_array_int64_289 */
-
-#ifndef kcg_copy_array_float64_12
-#define kcg_copy_array_float64_12(kcg_C1, kcg_C2)                             \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float64_12)))
-#endif /* kcg_copy_array_float64_12 */
 
 #ifndef kcg_copy__99_array
 #define kcg_copy__99_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_99_array)))
 #endif /* kcg_copy__99_array */
 
+#ifndef kcg_copy_array_int32_64_32
+#define kcg_copy_array_int32_64_32(kcg_C1, kcg_C2)                            \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_64_32)))
+#endif /* kcg_copy_array_int32_64_32 */
+
 #ifndef kcg_copy__100_array
 #define kcg_copy__100_array(kcg_C1, kcg_C2)                                   \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_100_array)))
 #endif /* kcg_copy__100_array */
-
-#ifndef kcg_copy_array_int64_64_32
-#define kcg_copy_array_int64_64_32(kcg_C1, kcg_C2)                            \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_64_32)))
-#endif /* kcg_copy_array_int64_64_32 */
 
 #ifndef kcg_copy__101_array
 #define kcg_copy__101_array(kcg_C1, kcg_C2)                                   \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_101_array)))
 #endif /* kcg_copy__101_array */
 
-#ifndef kcg_copy_array_int64_40
-#define kcg_copy_array_int64_40(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_40)))
-#endif /* kcg_copy_array_int64_40 */
+#ifndef kcg_copy_array_float32_100_6
+#define kcg_copy_array_float32_100_6(kcg_C1, kcg_C2)                          \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float32_100_6)))
+#endif /* kcg_copy_array_float32_100_6 */
+
+#ifndef kcg_copy_array_int32_6_221
+#define kcg_copy_array_int32_6_221(kcg_C1, kcg_C2)                            \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_6_221)))
+#endif /* kcg_copy_array_int32_6_221 */
 
 #ifndef kcg_copy__102_array
 #define kcg_copy__102_array(kcg_C1, kcg_C2)                                   \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_102_array)))
 #endif /* kcg_copy__102_array */
 
-#ifndef kcg_copy_array_float64_100_6
-#define kcg_copy_array_float64_100_6(kcg_C1, kcg_C2)                          \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float64_100_6)))
-#endif /* kcg_copy_array_float64_100_6 */
-
-#ifndef kcg_copy_array_int64_6_221
-#define kcg_copy_array_int64_6_221(kcg_C1, kcg_C2)                            \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_6_221)))
-#endif /* kcg_copy_array_int64_6_221 */
-
-#ifndef kcg_copy_array_int64_292
-#define kcg_copy_array_int64_292(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_292)))
-#endif /* kcg_copy_array_int64_292 */
+#ifndef kcg_copy_array_int32_395
+#define kcg_copy_array_int32_395(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_395)))
+#endif /* kcg_copy_array_int32_395 */
 
 #ifndef kcg_copy__103_array
 #define kcg_copy__103_array(kcg_C1, kcg_C2)                                   \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_103_array)))
 #endif /* kcg_copy__103_array */
-
-#ifndef kcg_copy_array_int64_627
-#define kcg_copy_array_int64_627(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_627)))
-#endif /* kcg_copy_array_int64_627 */
 
 #ifndef kcg_copy_ASafe_Data_T_CalcBrakingCurves_types
 #define kcg_copy_ASafe_Data_T_CalcBrakingCurves_types(kcg_C1, kcg_C2)         \
@@ -12135,35 +12129,30 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (ASafe_Data_T_CalcBrakingCurves_types)))
 #endif /* kcg_copy_ASafe_Data_T_CalcBrakingCurves_types */
 
+#ifndef kcg_copy_P046_sections_array_flat_T_TM
+#define kcg_copy_P046_sections_array_flat_T_TM(kcg_C1, kcg_C2)                \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (P046_sections_array_flat_T_TM)))
+#endif /* kcg_copy_P046_sections_array_flat_T_TM */
+
 #ifndef kcg_copy__104_array
 #define kcg_copy__104_array(kcg_C1, kcg_C2)                                   \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_104_array)))
 #endif /* kcg_copy__104_array */
 
-#ifndef kcg_copy_array_int64_129
-#define kcg_copy_array_int64_129(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_129)))
-#endif /* kcg_copy_array_int64_129 */
+#ifndef kcg_copy_array_float32_50
+#define kcg_copy_array_float32_50(kcg_C1, kcg_C2)                             \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float32_50)))
+#endif /* kcg_copy_array_float32_50 */
+
+#ifndef kcg_copy_array_int32_72
+#define kcg_copy_array_int32_72(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_72)))
+#endif /* kcg_copy_array_int32_72 */
 
 #ifndef kcg_copy_array_bool_100
 #define kcg_copy_array_bool_100(kcg_C1, kcg_C2)                               \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_100)))
 #endif /* kcg_copy_array_bool_100 */
-
-#ifndef kcg_copy_array_float64_113
-#define kcg_copy_array_float64_113(kcg_C1, kcg_C2)                            \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float64_113)))
-#endif /* kcg_copy_array_float64_113 */
-
-#ifndef kcg_copy_array_int64_221
-#define kcg_copy_array_int64_221(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_221)))
-#endif /* kcg_copy_array_int64_221 */
-
-#ifndef kcg_copy_array_int64_304
-#define kcg_copy_array_int64_304(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_304)))
-#endif /* kcg_copy_array_int64_304 */
 
 #ifndef kcg_copy__105_array
 #define kcg_copy__105_array(kcg_C1, kcg_C2)                                   \
@@ -12179,11 +12168,6 @@ typedef kcg_int32 array_int32_4[4];
 #define kcg_copy__107_array(kcg_C1, kcg_C2)                                   \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_107_array)))
 #endif /* kcg_copy__107_array */
-
-#ifndef kcg_copy_array_float64_110
-#define kcg_copy_array_float64_110(kcg_C1, kcg_C2)                            \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_float64_110)))
-#endif /* kcg_copy_array_float64_110 */
 
 #ifndef kcg_copy__108_array
 #define kcg_copy__108_array(kcg_C1, kcg_C2)                                   \
@@ -12252,41 +12236,21 @@ typedef kcg_int32 array_int32_4[4];
       sizeof (P46_ConditionalLevelTransitionOrders_T_Packet_Types_Pkg)))
 #endif /* kcg_copy_P46_ConditionalLevelTransitionOrders_T_Packet_Types_Pkg */
 
-#ifndef kcg_copy_array_int64_301
-#define kcg_copy_array_int64_301(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_301)))
-#endif /* kcg_copy_array_int64_301 */
+#ifdef kcg_use_m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg
+#ifndef kcg_comp_m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg
+extern kcg_bool kcg_comp_m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg(
+  m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg *kcg_c1,
+  m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg *kcg_c2);
+#endif /* kcg_comp_m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg */
+#endif /* kcg_use_m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg */
 
-#ifndef kcg_comp_OdometrySpeeds_T_Obu_BasicTypes_Pkg
-extern kcg_bool kcg_comp_OdometrySpeeds_T_Obu_BasicTypes_Pkg(
-  OdometrySpeeds_T_Obu_BasicTypes_Pkg *kcg_c1,
-  OdometrySpeeds_T_Obu_BasicTypes_Pkg *kcg_c2);
-#define kcg_use_OdometrySpeeds_T_Obu_BasicTypes_Pkg
-#endif /* kcg_comp_OdometrySpeeds_T_Obu_BasicTypes_Pkg */
-
-#ifdef kcg_use_struct_484599
-#ifndef kcg_comp_struct_484599
-extern kcg_bool kcg_comp_struct_484599(
-  struct_484599 *kcg_c1,
-  struct_484599 *kcg_c2);
-#endif /* kcg_comp_struct_484599 */
-#endif /* kcg_use_struct_484599 */
-
-#ifdef kcg_use_struct_484617
-#ifndef kcg_comp_struct_484617
-extern kcg_bool kcg_comp_struct_484617(
-  struct_484617 *kcg_c1,
-  struct_484617 *kcg_c2);
-#endif /* kcg_comp_struct_484617 */
-#endif /* kcg_use_struct_484617 */
-
-#ifdef kcg_use_P027V1_section_int_qdiff_T_TM_baseline2
-#ifndef kcg_comp_P027V1_section_int_qdiff_T_TM_baseline2
-extern kcg_bool kcg_comp_P027V1_section_int_qdiff_T_TM_baseline2(
-  P027V1_section_int_qdiff_T_TM_baseline2 *kcg_c1,
-  P027V1_section_int_qdiff_T_TM_baseline2 *kcg_c2);
-#endif /* kcg_comp_P027V1_section_int_qdiff_T_TM_baseline2 */
-#endif /* kcg_use_P027V1_section_int_qdiff_T_TM_baseline2 */
+#ifdef kcg_use_TrainLocations_real_T_SDM_Types_Pkg
+#ifndef kcg_comp_TrainLocations_real_T_SDM_Types_Pkg
+extern kcg_bool kcg_comp_TrainLocations_real_T_SDM_Types_Pkg(
+  TrainLocations_real_T_SDM_Types_Pkg *kcg_c1,
+  TrainLocations_real_T_SDM_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_TrainLocations_real_T_SDM_Types_Pkg */
+#endif /* kcg_use_TrainLocations_real_T_SDM_Types_Pkg */
 
 #ifdef kcg_use_P005_OBU_T_TM
 #ifndef kcg_comp_P005_OBU_T_TM
@@ -12327,22 +12291,6 @@ extern kcg_bool kcg_comp_DataForSupervision_nextGen_t_TrackAtlasTypes(
   DataForSupervision_nextGen_t_TrackAtlasTypes *kcg_c2);
 #endif /* kcg_comp_DataForSupervision_nextGen_t_TrackAtlasTypes */
 #endif /* kcg_use_DataForSupervision_nextGen_t_TrackAtlasTypes */
-
-#ifdef kcg_use_TrainLocations_real_T_SDM_Types_Pkg
-#ifndef kcg_comp_TrainLocations_real_T_SDM_Types_Pkg
-extern kcg_bool kcg_comp_TrainLocations_real_T_SDM_Types_Pkg(
-  TrainLocations_real_T_SDM_Types_Pkg *kcg_c1,
-  TrainLocations_real_T_SDM_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_TrainLocations_real_T_SDM_Types_Pkg */
-#endif /* kcg_use_TrainLocations_real_T_SDM_Types_Pkg */
-
-#ifdef kcg_use_TIU_trainStatus_T_TIU_Types_Pkg
-#ifndef kcg_comp_TIU_trainStatus_T_TIU_Types_Pkg
-extern kcg_bool kcg_comp_TIU_trainStatus_T_TIU_Types_Pkg(
-  TIU_trainStatus_T_TIU_Types_Pkg *kcg_c1,
-  TIU_trainStatus_T_TIU_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_TIU_trainStatus_T_TIU_Types_Pkg */
-#endif /* kcg_use_TIU_trainStatus_T_TIU_Types_Pkg */
 
 #ifdef kcg_use_ReportedBG_T_ProvidePositionReport_Pkg
 #ifndef kcg_comp_ReportedBG_T_ProvidePositionReport_Pkg
@@ -12415,75 +12363,85 @@ extern kcg_bool kcg_comp_sessionStatus_T_RCM_Session_Types_Pkg(
 #define kcg_use_sessionStatus_T_RCM_Session_Types_Pkg
 #endif /* kcg_comp_sessionStatus_T_RCM_Session_Types_Pkg */
 
-#ifdef kcg_use_P027V1_OBU_body_enum_T_TM_baseline2
-#ifndef kcg_comp_P027V1_OBU_body_enum_T_TM_baseline2
-extern kcg_bool kcg_comp_P027V1_OBU_body_enum_T_TM_baseline2(
-  P027V1_OBU_body_enum_T_TM_baseline2 *kcg_c1,
-  P027V1_OBU_body_enum_T_TM_baseline2 *kcg_c2);
-#endif /* kcg_comp_P027V1_OBU_body_enum_T_TM_baseline2 */
-#endif /* kcg_use_P027V1_OBU_body_enum_T_TM_baseline2 */
+#ifdef kcg_use_P003_permanent_data_T_TM_baseline2
+#ifndef kcg_comp_P003_permanent_data_T_TM_baseline2
+extern kcg_bool kcg_comp_P003_permanent_data_T_TM_baseline2(
+  P003_permanent_data_T_TM_baseline2 *kcg_c1,
+  P003_permanent_data_T_TM_baseline2 *kcg_c2);
+#endif /* kcg_comp_P003_permanent_data_T_TM_baseline2 */
+#endif /* kcg_use_P003_permanent_data_T_TM_baseline2 */
 
-#ifdef kcg_use_safeRadioConnectionIndication_T_RCM_Session_Types_Pkg
-#ifndef kcg_comp_safeRadioConnectionIndication_T_RCM_Session_Types_Pkg
-extern kcg_bool kcg_comp_safeRadioConnectionIndication_T_RCM_Session_Types_Pkg(
-  safeRadioConnectionIndication_T_RCM_Session_Types_Pkg *kcg_c1,
-  safeRadioConnectionIndication_T_RCM_Session_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_safeRadioConnectionIndication_T_RCM_Session_Types_Pkg */
-#endif /* kcg_use_safeRadioConnectionIndication_T_RCM_Session_Types_Pkg */
+#ifdef kcg_use_P041_section_enum_T_TM
+#ifndef kcg_comp_P041_section_enum_T_TM
+extern kcg_bool kcg_comp_P041_section_enum_T_TM(
+  P041_section_enum_T_TM *kcg_c1,
+  P041_section_enum_T_TM *kcg_c2);
+#endif /* kcg_comp_P041_section_enum_T_TM */
+#endif /* kcg_use_P041_section_enum_T_TM */
 
-#ifdef kcg_use_Clock_T
-#ifndef kcg_comp_Clock_T
-extern kcg_bool kcg_comp_Clock_T(Clock_T *kcg_c1, Clock_T *kcg_c2);
-#endif /* kcg_comp_Clock_T */
-#endif /* kcg_use_Clock_T */
+#ifdef kcg_use_M_voltage_T_TIU_Types_Pkg
+#ifndef kcg_comp_M_voltage_T_TIU_Types_Pkg
+extern kcg_bool kcg_comp_M_voltage_T_TIU_Types_Pkg(
+  M_voltage_T_TIU_Types_Pkg *kcg_c1,
+  M_voltage_T_TIU_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_M_voltage_T_TIU_Types_Pkg */
+#endif /* kcg_use_M_voltage_T_TIU_Types_Pkg */
 
-#ifdef kcg_use_AccuDistanceProfileMA_TA_MA_new
-#ifndef kcg_comp_AccuDistanceProfileMA_TA_MA_new
-extern kcg_bool kcg_comp_AccuDistanceProfileMA_TA_MA_new(
-  AccuDistanceProfileMA_TA_MA_new *kcg_c1,
-  AccuDistanceProfileMA_TA_MA_new *kcg_c2);
-#endif /* kcg_comp_AccuDistanceProfileMA_TA_MA_new */
-#endif /* kcg_use_AccuDistanceProfileMA_TA_MA_new */
+#ifdef kcg_use_DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg
+#ifndef kcg_comp_DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg
+extern kcg_bool kcg_comp_DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg(
+  DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg *kcg_c1,
+  DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg *kcg_c2);
+#endif /* kcg_comp_DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg */
+#endif /* kcg_use_DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg */
 
-#ifdef kcg_use_struct_485021
-#ifndef kcg_comp_struct_485021
-extern kcg_bool kcg_comp_struct_485021(
-  struct_485021 *kcg_c1,
-  struct_485021 *kcg_c2);
-#endif /* kcg_comp_struct_485021 */
-#endif /* kcg_use_struct_485021 */
+#ifdef kcg_use_Endtimer_t_TrackAtlasTypes
+#ifndef kcg_comp_Endtimer_t_TrackAtlasTypes
+extern kcg_bool kcg_comp_Endtimer_t_TrackAtlasTypes(
+  Endtimer_t_TrackAtlasTypes *kcg_c1,
+  Endtimer_t_TrackAtlasTypes *kcg_c2);
+#endif /* kcg_comp_Endtimer_t_TrackAtlasTypes */
+#endif /* kcg_use_Endtimer_t_TrackAtlasTypes */
 
-#ifdef kcg_use_struct_485072
-#ifndef kcg_comp_struct_485072
-extern kcg_bool kcg_comp_struct_485072(
-  struct_485072 *kcg_c1,
-  struct_485072 *kcg_c2);
-#endif /* kcg_comp_struct_485072 */
-#endif /* kcg_use_struct_485072 */
+#ifdef kcg_use_struct_485030
+#ifndef kcg_comp_struct_485030
+extern kcg_bool kcg_comp_struct_485030(
+  struct_485030 *kcg_c1,
+  struct_485030 *kcg_c2);
+#endif /* kcg_comp_struct_485030 */
+#endif /* kcg_use_struct_485030 */
 
-#ifdef kcg_use_Gradient_section_t_TrackAtlasTypes
-#ifndef kcg_comp_Gradient_section_t_TrackAtlasTypes
-extern kcg_bool kcg_comp_Gradient_section_t_TrackAtlasTypes(
-  Gradient_section_t_TrackAtlasTypes *kcg_c1,
-  Gradient_section_t_TrackAtlasTypes *kcg_c2);
-#endif /* kcg_comp_Gradient_section_t_TrackAtlasTypes */
-#endif /* kcg_use_Gradient_section_t_TrackAtlasTypes */
+#ifdef kcg_use_ErrorMessage_T_ProvidePositionReport_Pkg
+#ifndef kcg_comp_ErrorMessage_T_ProvidePositionReport_Pkg
+extern kcg_bool kcg_comp_ErrorMessage_T_ProvidePositionReport_Pkg(
+  ErrorMessage_T_ProvidePositionReport_Pkg *kcg_c1,
+  ErrorMessage_T_ProvidePositionReport_Pkg *kcg_c2);
+#endif /* kcg_comp_ErrorMessage_T_ProvidePositionReport_Pkg */
+#endif /* kcg_use_ErrorMessage_T_ProvidePositionReport_Pkg */
 
-#ifdef kcg_use_struct_485102
-#ifndef kcg_comp_struct_485102
-extern kcg_bool kcg_comp_struct_485102(
-  struct_485102 *kcg_c1,
-  struct_485102 *kcg_c2);
-#endif /* kcg_comp_struct_485102 */
-#endif /* kcg_use_struct_485102 */
+#ifdef kcg_use_P041_section_int_T_TM
+#ifndef kcg_comp_P041_section_int_T_TM
+extern kcg_bool kcg_comp_P041_section_int_T_TM(
+  P041_section_int_T_TM *kcg_c1,
+  P041_section_int_T_TM *kcg_c2);
+#endif /* kcg_comp_P041_section_int_T_TM */
+#endif /* kcg_use_P041_section_int_T_TM */
 
-#ifdef kcg_use_t_Brake_t_SDMModelPkg
-#ifndef kcg_comp_t_Brake_t_SDMModelPkg
-extern kcg_bool kcg_comp_t_Brake_t_SDMModelPkg(
-  t_Brake_t_SDMModelPkg *kcg_c1,
-  t_Brake_t_SDMModelPkg *kcg_c2);
-#endif /* kcg_comp_t_Brake_t_SDMModelPkg */
-#endif /* kcg_use_t_Brake_t_SDMModelPkg */
+#ifdef kcg_use_struct_485091
+#ifndef kcg_comp_struct_485091
+extern kcg_bool kcg_comp_struct_485091(
+  struct_485091 *kcg_c1,
+  struct_485091 *kcg_c2);
+#endif /* kcg_comp_struct_485091 */
+#endif /* kcg_use_struct_485091 */
+
+#ifdef kcg_use_struct_485097
+#ifndef kcg_comp_struct_485097
+extern kcg_bool kcg_comp_struct_485097(
+  struct_485097 *kcg_c1,
+  struct_485097 *kcg_c2);
+#endif /* kcg_comp_struct_485097 */
+#endif /* kcg_use_struct_485097 */
 
 #ifdef kcg_use_T_LevelTransition_Level_And_Mode_Types_Pkg
 #ifndef kcg_comp_T_LevelTransition_Level_And_Mode_Types_Pkg
@@ -12493,45 +12451,66 @@ extern kcg_bool kcg_comp_T_LevelTransition_Level_And_Mode_Types_Pkg(
 #endif /* kcg_comp_T_LevelTransition_Level_And_Mode_Types_Pkg */
 #endif /* kcg_use_T_LevelTransition_Level_And_Mode_Types_Pkg */
 
-#ifdef kcg_use_bec_t_TargetLimits_Pkg
-#ifndef kcg_comp_bec_t_TargetLimits_Pkg
-extern kcg_bool kcg_comp_bec_t_TargetLimits_Pkg(
-  bec_t_TargetLimits_Pkg *kcg_c1,
-  bec_t_TargetLimits_Pkg *kcg_c2);
-#endif /* kcg_comp_bec_t_TargetLimits_Pkg */
-#endif /* kcg_use_bec_t_TargetLimits_Pkg */
+#ifdef kcg_use_P027V1_section_enum_qdiff_T_TM_baseline2
+#ifndef kcg_comp_P027V1_section_enum_qdiff_T_TM_baseline2
+extern kcg_bool kcg_comp_P027V1_section_enum_qdiff_T_TM_baseline2(
+  P027V1_section_enum_qdiff_T_TM_baseline2 *kcg_c1,
+  P027V1_section_enum_qdiff_T_TM_baseline2 *kcg_c2);
+#endif /* kcg_comp_P027V1_section_enum_qdiff_T_TM_baseline2 */
+#endif /* kcg_use_P027V1_section_enum_qdiff_T_TM_baseline2 */
 
-#ifdef kcg_use_P57_MovementAuthorityRequestParameters_T_Packet_Types_Pkg
-#ifndef kcg_comp_P57_MovementAuthorityRequestParameters_T_Packet_Types_Pkg
-extern kcg_bool kcg_comp_P57_MovementAuthorityRequestParameters_T_Packet_Types_Pkg(
-  P57_MovementAuthorityRequestParameters_T_Packet_Types_Pkg *kcg_c1,
-  P57_MovementAuthorityRequestParameters_T_Packet_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_P57_MovementAuthorityRequestParameters_T_Packet_Types_Pkg */
-#endif /* kcg_use_P57_MovementAuthorityRequestParameters_T_Packet_Types_Pkg */
+#ifdef kcg_use_IterPacket58_T_Packet_Types_Pkg
+#ifndef kcg_comp_IterPacket58_T_Packet_Types_Pkg
+extern kcg_bool kcg_comp_IterPacket58_T_Packet_Types_Pkg(
+  IterPacket58_T_Packet_Types_Pkg *kcg_c1,
+  IterPacket58_T_Packet_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_IterPacket58_T_Packet_Types_Pkg */
+#endif /* kcg_use_IterPacket58_T_Packet_Types_Pkg */
 
-#ifdef kcg_use_DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg
-#ifndef kcg_comp_DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg
-extern kcg_bool kcg_comp_DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg(
-  DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg *kcg_c1,
-  DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg *kcg_c2);
-#endif /* kcg_comp_DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg */
-#endif /* kcg_use_DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg */
+#ifdef kcg_use_t_Brake_t_SDMModelPkg
+#ifndef kcg_comp_t_Brake_t_SDMModelPkg
+extern kcg_bool kcg_comp_t_Brake_t_SDMModelPkg(
+  t_Brake_t_SDMModelPkg *kcg_c1,
+  t_Brake_t_SDMModelPkg *kcg_c2);
+#endif /* kcg_comp_t_Brake_t_SDMModelPkg */
+#endif /* kcg_use_t_Brake_t_SDMModelPkg */
 
-#ifdef kcg_use_struct_485264
-#ifndef kcg_comp_struct_485264
-extern kcg_bool kcg_comp_struct_485264(
-  struct_485264 *kcg_c1,
-  struct_485264 *kcg_c2);
-#endif /* kcg_comp_struct_485264 */
-#endif /* kcg_use_struct_485264 */
+#ifndef kcg_comp_mobileRegistrationContext_T_RCM_Types_Pkg
+extern kcg_bool kcg_comp_mobileRegistrationContext_T_RCM_Types_Pkg(
+  mobileRegistrationContext_T_RCM_Types_Pkg *kcg_c1,
+  mobileRegistrationContext_T_RCM_Types_Pkg *kcg_c2);
+#define kcg_use_mobileRegistrationContext_T_RCM_Types_Pkg
+#endif /* kcg_comp_mobileRegistrationContext_T_RCM_Types_Pkg */
 
-#ifdef kcg_use_P46_ConditionalLevelTransitionOrder_T_Packet_Types_Pkg
-#ifndef kcg_comp_P46_ConditionalLevelTransitionOrder_T_Packet_Types_Pkg
-extern kcg_bool kcg_comp_P46_ConditionalLevelTransitionOrder_T_Packet_Types_Pkg(
-  P46_ConditionalLevelTransitionOrder_T_Packet_Types_Pkg *kcg_c1,
-  P46_ConditionalLevelTransitionOrder_T_Packet_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_P46_ConditionalLevelTransitionOrder_T_Packet_Types_Pkg */
-#endif /* kcg_use_P46_ConditionalLevelTransitionOrder_T_Packet_Types_Pkg */
+#ifndef kcg_comp_LocWithInAcc_T_Obu_BasicTypes_Pkg
+extern kcg_bool kcg_comp_LocWithInAcc_T_Obu_BasicTypes_Pkg(
+  LocWithInAcc_T_Obu_BasicTypes_Pkg *kcg_c1,
+  LocWithInAcc_T_Obu_BasicTypes_Pkg *kcg_c2);
+#define kcg_use_LocWithInAcc_T_Obu_BasicTypes_Pkg
+#endif /* kcg_comp_LocWithInAcc_T_Obu_BasicTypes_Pkg */
+
+#ifdef kcg_use_m32_RBC_RIU_SystemVersion_T_RCM_MsgTypes_Pkg
+#ifndef kcg_comp_m32_RBC_RIU_SystemVersion_T_RCM_MsgTypes_Pkg
+extern kcg_bool kcg_comp_m32_RBC_RIU_SystemVersion_T_RCM_MsgTypes_Pkg(
+  m32_RBC_RIU_SystemVersion_T_RCM_MsgTypes_Pkg *kcg_c1,
+  m32_RBC_RIU_SystemVersion_T_RCM_MsgTypes_Pkg *kcg_c2);
+#endif /* kcg_comp_m32_RBC_RIU_SystemVersion_T_RCM_MsgTypes_Pkg */
+#endif /* kcg_use_m32_RBC_RIU_SystemVersion_T_RCM_MsgTypes_Pkg */
+
+#ifdef kcg_use_DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg
+#ifndef kcg_comp_DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg
+extern kcg_bool kcg_comp_DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg(
+  DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg *kcg_c1,
+  DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg *kcg_c2);
+#endif /* kcg_comp_DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg */
+#endif /* kcg_use_DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg */
+
+#ifndef kcg_comp_RBC_Id_T_Common_Types_Pkg
+extern kcg_bool kcg_comp_RBC_Id_T_Common_Types_Pkg(
+  RBC_Id_T_Common_Types_Pkg *kcg_c1,
+  RBC_Id_T_Common_Types_Pkg *kcg_c2);
+#define kcg_use_RBC_Id_T_Common_Types_Pkg
+#endif /* kcg_comp_RBC_Id_T_Common_Types_Pkg */
 
 #ifdef kcg_use_centerOfBalisePosition_T_BG_Types_Pkg
 #ifndef kcg_comp_centerOfBalisePosition_T_BG_Types_Pkg
@@ -12540,6 +12519,13 @@ extern kcg_bool kcg_comp_centerOfBalisePosition_T_BG_Types_Pkg(
   centerOfBalisePosition_T_BG_Types_Pkg *kcg_c2);
 #endif /* kcg_comp_centerOfBalisePosition_T_BG_Types_Pkg */
 #endif /* kcg_use_centerOfBalisePosition_T_BG_Types_Pkg */
+
+#ifndef kcg_comp_OdometrySpeeds_T_Obu_BasicTypes_Pkg
+extern kcg_bool kcg_comp_OdometrySpeeds_T_Obu_BasicTypes_Pkg(
+  OdometrySpeeds_T_Obu_BasicTypes_Pkg *kcg_c1,
+  OdometrySpeeds_T_Obu_BasicTypes_Pkg *kcg_c2);
+#define kcg_use_OdometrySpeeds_T_Obu_BasicTypes_Pkg
+#endif /* kcg_comp_OdometrySpeeds_T_Obu_BasicTypes_Pkg */
 
 #ifdef kcg_use_TrackSectionData_T_InfraLib
 #ifndef kcg_comp_TrackSectionData_T_InfraLib
@@ -12557,29 +12543,13 @@ extern kcg_bool kcg_comp_RadioTrackTrainMessageQueueEntry_T(
 #endif /* kcg_comp_RadioTrackTrainMessageQueueEntry_T */
 #endif /* kcg_use_RadioTrackTrainMessageQueueEntry_T */
 
-#ifdef kcg_use_PT4_ErrorReporting_T_Packet_TrainTypes_Pkg
-#ifndef kcg_comp_PT4_ErrorReporting_T_Packet_TrainTypes_Pkg
-extern kcg_bool kcg_comp_PT4_ErrorReporting_T_Packet_TrainTypes_Pkg(
-  PT4_ErrorReporting_T_Packet_TrainTypes_Pkg *kcg_c1,
-  PT4_ErrorReporting_T_Packet_TrainTypes_Pkg *kcg_c2);
-#endif /* kcg_comp_PT4_ErrorReporting_T_Packet_TrainTypes_Pkg */
-#endif /* kcg_use_PT4_ErrorReporting_T_Packet_TrainTypes_Pkg */
-
-#ifdef kcg_use_T_LevelTansitionInfo_Level_And_Mode_Types_Pkg
-#ifndef kcg_comp_T_LevelTansitionInfo_Level_And_Mode_Types_Pkg
-extern kcg_bool kcg_comp_T_LevelTansitionInfo_Level_And_Mode_Types_Pkg(
-  T_LevelTansitionInfo_Level_And_Mode_Types_Pkg *kcg_c1,
-  T_LevelTansitionInfo_Level_And_Mode_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_T_LevelTansitionInfo_Level_And_Mode_Types_Pkg */
-#endif /* kcg_use_T_LevelTansitionInfo_Level_And_Mode_Types_Pkg */
-
-#ifdef kcg_use_TrainPosRaw_T_InfraLib
-#ifndef kcg_comp_TrainPosRaw_T_InfraLib
-extern kcg_bool kcg_comp_TrainPosRaw_T_InfraLib(
-  TrainPosRaw_T_InfraLib *kcg_c1,
-  TrainPosRaw_T_InfraLib *kcg_c2);
-#endif /* kcg_comp_TrainPosRaw_T_InfraLib */
-#endif /* kcg_use_TrainPosRaw_T_InfraLib */
+#ifdef kcg_use_nothing_to_resume_profile_follow_T_TIU_Types_Pkg
+#ifndef kcg_comp_nothing_to_resume_profile_follow_T_TIU_Types_Pkg
+extern kcg_bool kcg_comp_nothing_to_resume_profile_follow_T_TIU_Types_Pkg(
+  nothing_to_resume_profile_follow_T_TIU_Types_Pkg *kcg_c1,
+  nothing_to_resume_profile_follow_T_TIU_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_nothing_to_resume_profile_follow_T_TIU_Types_Pkg */
+#endif /* kcg_use_nothing_to_resume_profile_follow_T_TIU_Types_Pkg */
 
 #ifdef kcg_use_CompressedBaliseMessage_TM
 #ifndef kcg_comp_CompressedBaliseMessage_TM
@@ -12597,6 +12567,14 @@ extern kcg_bool kcg_comp_CompressedRadioMessage_TM(
 #endif /* kcg_comp_CompressedRadioMessage_TM */
 #endif /* kcg_use_CompressedRadioMessage_TM */
 
+#ifdef kcg_use_DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg
+#ifndef kcg_comp_DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg
+extern kcg_bool kcg_comp_DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg(
+  DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg *kcg_c1,
+  DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg *kcg_c2);
+#endif /* kcg_comp_DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg */
+#endif /* kcg_use_DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg */
+
 #ifdef kcg_use_a_Brake_t_SDMConversionModelPkg
 #ifndef kcg_comp_a_Brake_t_SDMConversionModelPkg
 extern kcg_bool kcg_comp_a_Brake_t_SDMConversionModelPkg(
@@ -12604,14 +12582,6 @@ extern kcg_bool kcg_comp_a_Brake_t_SDMConversionModelPkg(
   a_Brake_t_SDMConversionModelPkg *kcg_c2);
 #endif /* kcg_comp_a_Brake_t_SDMConversionModelPkg */
 #endif /* kcg_use_a_Brake_t_SDMConversionModelPkg */
-
-#ifdef kcg_use_DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg
-#ifndef kcg_comp_DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg
-extern kcg_bool kcg_comp_DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg(
-  DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg *kcg_c1,
-  DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg *kcg_c2);
-#endif /* kcg_comp_DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg */
-#endif /* kcg_use_DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg */
 
 #ifdef kcg_use_LocationBasedEvents_T_ProvidePositionReport_Pkg
 #ifndef kcg_comp_LocationBasedEvents_T_ProvidePositionReport_Pkg
@@ -12621,13 +12591,13 @@ extern kcg_bool kcg_comp_LocationBasedEvents_T_ProvidePositionReport_Pkg(
 #endif /* kcg_comp_LocationBasedEvents_T_ProvidePositionReport_Pkg */
 #endif /* kcg_use_LocationBasedEvents_T_ProvidePositionReport_Pkg */
 
-#ifdef kcg_use_P137_trackside_int_T_TM
-#ifndef kcg_comp_P137_trackside_int_T_TM
-extern kcg_bool kcg_comp_P137_trackside_int_T_TM(
-  P137_trackside_int_T_TM *kcg_c1,
-  P137_trackside_int_T_TM *kcg_c2);
-#endif /* kcg_comp_P137_trackside_int_T_TM */
-#endif /* kcg_use_P137_trackside_int_T_TM */
+#ifdef kcg_use_DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg
+#ifndef kcg_comp_DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg
+extern kcg_bool kcg_comp_DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg(
+  DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg *kcg_c1,
+  DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg *kcg_c2);
+#endif /* kcg_comp_DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg */
+#endif /* kcg_use_DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg */
 
 #ifdef kcg_use_m38_initiationOfACommunicationSession_T_RCM_MsgTypes_Pkg
 #ifndef kcg_comp_m38_initiationOfACommunicationSession_T_RCM_MsgTypes_Pkg
@@ -12637,13 +12607,13 @@ extern kcg_bool kcg_comp_m38_initiationOfACommunicationSession_T_RCM_MsgTypes_Pk
 #endif /* kcg_comp_m38_initiationOfACommunicationSession_T_RCM_MsgTypes_Pkg */
 #endif /* kcg_use_m38_initiationOfACommunicationSession_T_RCM_MsgTypes_Pkg */
 
-#ifdef kcg_use_struct_485794
-#ifndef kcg_comp_struct_485794
-extern kcg_bool kcg_comp_struct_485794(
-  struct_485794 *kcg_c1,
-  struct_485794 *kcg_c2);
-#endif /* kcg_comp_struct_485794 */
-#endif /* kcg_use_struct_485794 */
+#ifdef kcg_use_struct_485689
+#ifndef kcg_comp_struct_485689
+extern kcg_bool kcg_comp_struct_485689(
+  struct_485689 *kcg_c1,
+  struct_485689 *kcg_c2);
+#endif /* kcg_comp_struct_485689 */
+#endif /* kcg_use_struct_485689 */
 
 #ifdef kcg_use_morcStatus_T_RCM_Session_Types_Pkg
 #ifndef kcg_comp_morcStatus_T_RCM_Session_Types_Pkg
@@ -12661,13 +12631,53 @@ extern kcg_bool kcg_comp_DMI_Menu_Request_T_DMI_Messages_EVC_to_DMI_Pkg(
 #endif /* kcg_comp_DMI_Menu_Request_T_DMI_Messages_EVC_to_DMI_Pkg */
 #endif /* kcg_use_DMI_Menu_Request_T_DMI_Messages_EVC_to_DMI_Pkg */
 
-#ifdef kcg_use_Brake_inhibition_command_T_TIU_Types_Pkg
-#ifndef kcg_comp_Brake_inhibition_command_T_TIU_Types_Pkg
-extern kcg_bool kcg_comp_Brake_inhibition_command_T_TIU_Types_Pkg(
-  Brake_inhibition_command_T_TIU_Types_Pkg *kcg_c1,
-  Brake_inhibition_command_T_TIU_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_Brake_inhibition_command_T_TIU_Types_Pkg */
-#endif /* kcg_use_Brake_inhibition_command_T_TIU_Types_Pkg */
+#ifdef kcg_use_ParabolaArc_T_CalcBrakingCurves_types
+#ifndef kcg_comp_ParabolaArc_T_CalcBrakingCurves_types
+extern kcg_bool kcg_comp_ParabolaArc_T_CalcBrakingCurves_types(
+  ParabolaArc_T_CalcBrakingCurves_types *kcg_c1,
+  ParabolaArc_T_CalcBrakingCurves_types *kcg_c2);
+#endif /* kcg_comp_ParabolaArc_T_CalcBrakingCurves_types */
+#endif /* kcg_use_ParabolaArc_T_CalcBrakingCurves_types */
+
+#ifdef kcg_use_P255_trackside_int_T_TM
+#ifndef kcg_comp_P255_trackside_int_T_TM
+extern kcg_bool kcg_comp_P255_trackside_int_T_TM(
+  P255_trackside_int_T_TM *kcg_c1,
+  P255_trackside_int_T_TM *kcg_c2);
+#endif /* kcg_comp_P255_trackside_int_T_TM */
+#endif /* kcg_use_P255_trackside_int_T_TM */
+
+#ifdef kcg_use_Type_I_train_commands_T_TIU_Types_Pkg
+#ifndef kcg_comp_Type_I_train_commands_T_TIU_Types_Pkg
+extern kcg_bool kcg_comp_Type_I_train_commands_T_TIU_Types_Pkg(
+  Type_I_train_commands_T_TIU_Types_Pkg *kcg_c1,
+  Type_I_train_commands_T_TIU_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_Type_I_train_commands_T_TIU_Types_Pkg */
+#endif /* kcg_use_Type_I_train_commands_T_TIU_Types_Pkg */
+
+#ifdef kcg_use_odometryFactors_T_Toolbox
+#ifndef kcg_comp_odometryFactors_T_Toolbox
+extern kcg_bool kcg_comp_odometryFactors_T_Toolbox(
+  odometryFactors_T_Toolbox *kcg_c1,
+  odometryFactors_T_Toolbox *kcg_c2);
+#endif /* kcg_comp_odometryFactors_T_Toolbox */
+#endif /* kcg_use_odometryFactors_T_Toolbox */
+
+#ifdef kcg_use_NID_EM_Store_Item_T_TA_EmergencyStop_NID_EM_Store
+#ifndef kcg_comp_NID_EM_Store_Item_T_TA_EmergencyStop_NID_EM_Store
+extern kcg_bool kcg_comp_NID_EM_Store_Item_T_TA_EmergencyStop_NID_EM_Store(
+  NID_EM_Store_Item_T_TA_EmergencyStop_NID_EM_Store *kcg_c1,
+  NID_EM_Store_Item_T_TA_EmergencyStop_NID_EM_Store *kcg_c2);
+#endif /* kcg_comp_NID_EM_Store_Item_T_TA_EmergencyStop_NID_EM_Store */
+#endif /* kcg_use_NID_EM_Store_Item_T_TA_EmergencyStop_NID_EM_Store */
+
+#ifdef kcg_use_P009_TM_TrainToTrack
+#ifndef kcg_comp_P009_TM_TrainToTrack
+extern kcg_bool kcg_comp_P009_TM_TrainToTrack(
+  P009_TM_TrainToTrack *kcg_c1,
+  P009_TM_TrainToTrack *kcg_c2);
+#endif /* kcg_comp_P009_TM_TrainToTrack */
+#endif /* kcg_use_P009_TM_TrainToTrack */
 
 #ifdef kcg_use_M_132_T_TM_radio_messages
 #ifndef kcg_comp_M_132_T_TM_radio_messages
@@ -12677,13 +12687,21 @@ extern kcg_bool kcg_comp_M_132_T_TM_radio_messages(
 #endif /* kcg_comp_M_132_T_TM_radio_messages */
 #endif /* kcg_use_M_132_T_TM_radio_messages */
 
-#ifdef kcg_use_P005_TM_TrainToTrack
-#ifndef kcg_comp_P005_TM_TrainToTrack
-extern kcg_bool kcg_comp_P005_TM_TrainToTrack(
-  P005_TM_TrainToTrack *kcg_c1,
-  P005_TM_TrainToTrack *kcg_c2);
-#endif /* kcg_comp_P005_TM_TrainToTrack */
-#endif /* kcg_use_P005_TM_TrainToTrack */
+#ifdef kcg_use_P46_ConditionalLevelTransitionOrder_T_Packet_Types_Pkg
+#ifndef kcg_comp_P46_ConditionalLevelTransitionOrder_T_Packet_Types_Pkg
+extern kcg_bool kcg_comp_P46_ConditionalLevelTransitionOrder_T_Packet_Types_Pkg(
+  P46_ConditionalLevelTransitionOrder_T_Packet_Types_Pkg *kcg_c1,
+  P46_ConditionalLevelTransitionOrder_T_Packet_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_P46_ConditionalLevelTransitionOrder_T_Packet_Types_Pkg */
+#endif /* kcg_use_P46_ConditionalLevelTransitionOrder_T_Packet_Types_Pkg */
+
+#ifdef kcg_use_DMI_level_T_DMI_Types_Pkg
+#ifndef kcg_comp_DMI_level_T_DMI_Types_Pkg
+extern kcg_bool kcg_comp_DMI_level_T_DMI_Types_Pkg(
+  DMI_level_T_DMI_Types_Pkg *kcg_c1,
+  DMI_level_T_DMI_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_DMI_level_T_DMI_Types_Pkg */
+#endif /* kcg_use_DMI_level_T_DMI_Types_Pkg */
 
 #ifdef kcg_use_T_Data_From_Track_To_Level_Level_And_Mode_Types_Pkg
 #ifndef kcg_comp_T_Data_From_Track_To_Level_Level_And_Mode_Types_Pkg
@@ -12708,6 +12726,14 @@ extern kcg_bool kcg_comp_MsgStructure(
 #define kcg_use_MsgStructure
 #endif /* kcg_comp_MsgStructure */
 
+#ifdef kcg_use_P058_section_int_T_TM
+#ifndef kcg_comp_P058_section_int_T_TM
+extern kcg_bool kcg_comp_P058_section_int_T_TM(
+  P058_section_int_T_TM *kcg_c1,
+  P058_section_int_T_TM *kcg_c2);
+#endif /* kcg_comp_P058_section_int_T_TM */
+#endif /* kcg_use_P058_section_int_T_TM */
+
 #ifdef kcg_use_SessionManagement_T
 #ifndef kcg_comp_SessionManagement_T
 extern kcg_bool kcg_comp_SessionManagement_T(
@@ -12715,14 +12741,6 @@ extern kcg_bool kcg_comp_SessionManagement_T(
   SessionManagement_T *kcg_c2);
 #endif /* kcg_comp_SessionManagement_T */
 #endif /* kcg_use_SessionManagement_T */
-
-#ifdef kcg_use_struct_486081
-#ifndef kcg_comp_struct_486081
-extern kcg_bool kcg_comp_struct_486081(
-  struct_486081 *kcg_c1,
-  struct_486081 *kcg_c2);
-#endif /* kcg_comp_struct_486081 */
-#endif /* kcg_use_struct_486081 */
 
 #ifdef kcg_use_TIU_Input_msg_API_TIU_Pkg
 #ifndef kcg_comp_TIU_Input_msg_API_TIU_Pkg
@@ -12756,29 +12774,37 @@ extern kcg_bool kcg_comp_PT0_PositionReport_T_Packet_TrainTypes_Pkg(
 #endif /* kcg_comp_PT0_PositionReport_T_Packet_TrainTypes_Pkg */
 #endif /* kcg_use_PT0_PositionReport_T_Packet_TrainTypes_Pkg */
 
-#ifdef kcg_use_MAReqParams_T
-#ifndef kcg_comp_MAReqParams_T
-extern kcg_bool kcg_comp_MAReqParams_T(
-  MAReqParams_T *kcg_c1,
-  MAReqParams_T *kcg_c2);
-#endif /* kcg_comp_MAReqParams_T */
-#endif /* kcg_use_MAReqParams_T */
+#ifdef kcg_use_P046_section_int_T_TM
+#ifndef kcg_comp_P046_section_int_T_TM
+extern kcg_bool kcg_comp_P046_section_int_T_TM(
+  P046_section_int_T_TM *kcg_c1,
+  P046_section_int_T_TM *kcg_c2);
+#endif /* kcg_comp_P046_section_int_T_TM */
+#endif /* kcg_use_P046_section_int_T_TM */
 
-#ifdef kcg_use_M_current_T_TIU_Types_Pkg
-#ifndef kcg_comp_M_current_T_TIU_Types_Pkg
-extern kcg_bool kcg_comp_M_current_T_TIU_Types_Pkg(
-  M_current_T_TIU_Types_Pkg *kcg_c1,
-  M_current_T_TIU_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_M_current_T_TIU_Types_Pkg */
-#endif /* kcg_use_M_current_T_TIU_Types_Pkg */
+#ifdef kcg_use_P137_trackside_int_T_TM
+#ifndef kcg_comp_P137_trackside_int_T_TM
+extern kcg_bool kcg_comp_P137_trackside_int_T_TM(
+  P137_trackside_int_T_TM *kcg_c1,
+  P137_trackside_int_T_TM *kcg_c2);
+#endif /* kcg_comp_P137_trackside_int_T_TM */
+#endif /* kcg_use_P137_trackside_int_T_TM */
 
-#ifdef kcg_use_GP_DMI_Control_Pkg_Sub_func
-#ifndef kcg_comp_GP_DMI_Control_Pkg_Sub_func
-extern kcg_bool kcg_comp_GP_DMI_Control_Pkg_Sub_func(
-  GP_DMI_Control_Pkg_Sub_func *kcg_c1,
-  GP_DMI_Control_Pkg_Sub_func *kcg_c2);
-#endif /* kcg_comp_GP_DMI_Control_Pkg_Sub_func */
-#endif /* kcg_use_GP_DMI_Control_Pkg_Sub_func */
+#ifdef kcg_use_struct_486242
+#ifndef kcg_comp_struct_486242
+extern kcg_bool kcg_comp_struct_486242(
+  struct_486242 *kcg_c1,
+  struct_486242 *kcg_c2);
+#endif /* kcg_comp_struct_486242 */
+#endif /* kcg_use_struct_486242 */
+
+#ifdef kcg_use_DMI_train_length_T_DMI_Types_Pkg
+#ifndef kcg_comp_DMI_train_length_T_DMI_Types_Pkg
+extern kcg_bool kcg_comp_DMI_train_length_T_DMI_Types_Pkg(
+  DMI_train_length_T_DMI_Types_Pkg *kcg_c1,
+  DMI_train_length_T_DMI_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_DMI_train_length_T_DMI_Types_Pkg */
+#endif /* kcg_use_DMI_train_length_T_DMI_Types_Pkg */
 
 #ifdef kcg_use_DMI_DriverRequest_T_DMI_Types_Pkg
 #ifndef kcg_comp_DMI_DriverRequest_T_DMI_Types_Pkg
@@ -12795,21 +12821,21 @@ extern kcg_bool kcg_comp_mobileConnectionContext_T_RCM_Types_Pkg(
 #define kcg_use_mobileConnectionContext_T_RCM_Types_Pkg
 #endif /* kcg_comp_mobileConnectionContext_T_RCM_Types_Pkg */
 
-#ifdef kcg_use_struct_486660
-#ifndef kcg_comp_struct_486660
-extern kcg_bool kcg_comp_struct_486660(
-  struct_486660 *kcg_c1,
-  struct_486660 *kcg_c2);
-#endif /* kcg_comp_struct_486660 */
-#endif /* kcg_use_struct_486660 */
+#ifdef kcg_use_struct_486417
+#ifndef kcg_comp_struct_486417
+extern kcg_bool kcg_comp_struct_486417(
+  struct_486417 *kcg_c1,
+  struct_486417 *kcg_c2);
+#endif /* kcg_comp_struct_486417 */
+#endif /* kcg_use_struct_486417 */
 
-#ifdef kcg_use_struct_486733
-#ifndef kcg_comp_struct_486733
-extern kcg_bool kcg_comp_struct_486733(
-  struct_486733 *kcg_c1,
-  struct_486733 *kcg_c2);
-#endif /* kcg_comp_struct_486733 */
-#endif /* kcg_use_struct_486733 */
+#ifdef kcg_use_struct_486490
+#ifndef kcg_comp_struct_486490
+extern kcg_bool kcg_comp_struct_486490(
+  struct_486490 *kcg_c1,
+  struct_486490 *kcg_c2);
+#endif /* kcg_comp_struct_486490 */
+#endif /* kcg_use_struct_486490 */
 
 #ifdef kcg_use_BG_counters_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg
 #ifndef kcg_comp_BG_counters_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg
@@ -12867,13 +12893,13 @@ extern kcg_bool kcg_comp_DMI_train_id_T_DMI_Types_Pkg(
 #endif /* kcg_comp_DMI_train_id_T_DMI_Types_Pkg */
 #endif /* kcg_use_DMI_train_id_T_DMI_Types_Pkg */
 
-#ifdef kcg_use_EOA_real_T_TargetManagement_types
-#ifndef kcg_comp_EOA_real_T_TargetManagement_types
-extern kcg_bool kcg_comp_EOA_real_T_TargetManagement_types(
-  EOA_real_T_TargetManagement_types *kcg_c1,
-  EOA_real_T_TargetManagement_types *kcg_c2);
-#endif /* kcg_comp_EOA_real_T_TargetManagement_types */
-#endif /* kcg_use_EOA_real_T_TargetManagement_types */
+#ifdef kcg_use_DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg
+#ifndef kcg_comp_DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg
+extern kcg_bool kcg_comp_DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg(
+  DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg *kcg_c1,
+  DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg *kcg_c2);
+#endif /* kcg_comp_DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg */
+#endif /* kcg_use_DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg */
 
 #ifdef kcg_use_av_Map_t_SDMConversionModelPkg
 #ifndef kcg_comp_av_Map_t_SDMConversionModelPkg
@@ -12891,36 +12917,69 @@ extern kcg_bool kcg_comp_DMI_To_Modes_T_DMI_Types_Pkg(
 #endif /* kcg_comp_DMI_To_Modes_T_DMI_Types_Pkg */
 #endif /* kcg_use_DMI_To_Modes_T_DMI_Types_Pkg */
 
-#ifdef kcg_use_DMI_trackConditionElement_T_DMI_Types_Pkg
-#ifndef kcg_comp_DMI_trackConditionElement_T_DMI_Types_Pkg
-extern kcg_bool kcg_comp_DMI_trackConditionElement_T_DMI_Types_Pkg(
-  DMI_trackConditionElement_T_DMI_Types_Pkg *kcg_c1,
-  DMI_trackConditionElement_T_DMI_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_DMI_trackConditionElement_T_DMI_Types_Pkg */
-#endif /* kcg_use_DMI_trackConditionElement_T_DMI_Types_Pkg */
+#ifdef kcg_use_nvkvint_T_Packet_Types_Pkg
+#ifndef kcg_comp_nvkvint_T_Packet_Types_Pkg
+extern kcg_bool kcg_comp_nvkvint_T_Packet_Types_Pkg(
+  nvkvint_T_Packet_Types_Pkg *kcg_c1,
+  nvkvint_T_Packet_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_nvkvint_T_Packet_Types_Pkg */
+#endif /* kcg_use_nvkvint_T_Packet_Types_Pkg */
 
-#ifndef kcg_comp_MetadataElement_T_Common_Types_Pkg
-extern kcg_bool kcg_comp_MetadataElement_T_Common_Types_Pkg(
-  MetadataElement_T_Common_Types_Pkg *kcg_c1,
-  MetadataElement_T_Common_Types_Pkg *kcg_c2);
-#define kcg_use_MetadataElement_T_Common_Types_Pkg
-#endif /* kcg_comp_MetadataElement_T_Common_Types_Pkg */
+#ifdef kcg_use_P021_section_enum_T_TM
+#ifndef kcg_comp_P021_section_enum_T_TM
+extern kcg_bool kcg_comp_P021_section_enum_T_TM(
+  P021_section_enum_T_TM *kcg_c1,
+  P021_section_enum_T_TM *kcg_c2);
+#endif /* kcg_comp_P021_section_enum_T_TM */
+#endif /* kcg_use_P021_section_enum_T_TM */
 
-#ifdef kcg_use_T_Mode_Profile_Level_And_Mode_Types_Pkg
-#ifndef kcg_comp_T_Mode_Profile_Level_And_Mode_Types_Pkg
-extern kcg_bool kcg_comp_T_Mode_Profile_Level_And_Mode_Types_Pkg(
-  T_Mode_Profile_Level_And_Mode_Types_Pkg *kcg_c1,
-  T_Mode_Profile_Level_And_Mode_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_T_Mode_Profile_Level_And_Mode_Types_Pkg */
-#endif /* kcg_use_T_Mode_Profile_Level_And_Mode_Types_Pkg */
+#ifdef kcg_use_P57_MovementAuthorityRequestParameters_T_Packet_Types_Pkg
+#ifndef kcg_comp_P57_MovementAuthorityRequestParameters_T_Packet_Types_Pkg
+extern kcg_bool kcg_comp_P57_MovementAuthorityRequestParameters_T_Packet_Types_Pkg(
+  P57_MovementAuthorityRequestParameters_T_Packet_Types_Pkg *kcg_c1,
+  P57_MovementAuthorityRequestParameters_T_Packet_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_P57_MovementAuthorityRequestParameters_T_Packet_Types_Pkg */
+#endif /* kcg_use_P57_MovementAuthorityRequestParameters_T_Packet_Types_Pkg */
 
-#ifdef kcg_use_struct_487049
-#ifndef kcg_comp_struct_487049
-extern kcg_bool kcg_comp_struct_487049(
-  struct_487049 *kcg_c1,
-  struct_487049 *kcg_c2);
-#endif /* kcg_comp_struct_487049 */
-#endif /* kcg_use_struct_487049 */
+#ifdef kcg_use_P027V1_section_int_qdiff_T_TM_baseline2
+#ifndef kcg_comp_P027V1_section_int_qdiff_T_TM_baseline2
+extern kcg_bool kcg_comp_P027V1_section_int_qdiff_T_TM_baseline2(
+  P027V1_section_int_qdiff_T_TM_baseline2 *kcg_c1,
+  P027V1_section_int_qdiff_T_TM_baseline2 *kcg_c2);
+#endif /* kcg_comp_P027V1_section_int_qdiff_T_TM_baseline2 */
+#endif /* kcg_use_P027V1_section_int_qdiff_T_TM_baseline2 */
+
+#ifdef kcg_use_PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg
+#ifndef kcg_comp_PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg
+extern kcg_bool kcg_comp_PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg(
+  PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg *kcg_c1,
+  PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg *kcg_c2);
+#endif /* kcg_comp_PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg */
+#endif /* kcg_use_PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg */
+
+#ifdef kcg_use_TIU_trainStatus_T_TIU_Types_Pkg
+#ifndef kcg_comp_TIU_trainStatus_T_TIU_Types_Pkg
+extern kcg_bool kcg_comp_TIU_trainStatus_T_TIU_Types_Pkg(
+  TIU_trainStatus_T_TIU_Types_Pkg *kcg_c1,
+  TIU_trainStatus_T_TIU_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_TIU_trainStatus_T_TIU_Types_Pkg */
+#endif /* kcg_use_TIU_trainStatus_T_TIU_Types_Pkg */
+
+#ifdef kcg_use_struct_486841
+#ifndef kcg_comp_struct_486841
+extern kcg_bool kcg_comp_struct_486841(
+  struct_486841 *kcg_c1,
+  struct_486841 *kcg_c2);
+#endif /* kcg_comp_struct_486841 */
+#endif /* kcg_use_struct_486841 */
+
+#ifdef kcg_use_T_LevelTansitionInfo_Level_And_Mode_Types_Pkg
+#ifndef kcg_comp_T_LevelTansitionInfo_Level_And_Mode_Types_Pkg
+extern kcg_bool kcg_comp_T_LevelTansitionInfo_Level_And_Mode_Types_Pkg(
+  T_LevelTansitionInfo_Level_And_Mode_Types_Pkg *kcg_c1,
+  T_LevelTansitionInfo_Level_And_Mode_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_T_LevelTansitionInfo_Level_And_Mode_Types_Pkg */
+#endif /* kcg_use_T_LevelTansitionInfo_Level_And_Mode_Types_Pkg */
 
 #ifdef kcg_use_mv_Map_t_SDMConversionModelPkg
 #ifndef kcg_comp_mv_Map_t_SDMConversionModelPkg
@@ -12938,12 +12997,13 @@ extern kcg_bool kcg_comp_T_Data_From_STM_Level_And_Mode_Types_Pkg(
 #endif /* kcg_comp_T_Data_From_STM_Level_And_Mode_Types_Pkg */
 #endif /* kcg_use_T_Data_From_STM_Level_And_Mode_Types_Pkg */
 
-#ifndef kcg_comp_OdometryLocations_T_Obu_BasicTypes_Pkg
-extern kcg_bool kcg_comp_OdometryLocations_T_Obu_BasicTypes_Pkg(
-  OdometryLocations_T_Obu_BasicTypes_Pkg *kcg_c1,
-  OdometryLocations_T_Obu_BasicTypes_Pkg *kcg_c2);
-#define kcg_use_OdometryLocations_T_Obu_BasicTypes_Pkg
-#endif /* kcg_comp_OdometryLocations_T_Obu_BasicTypes_Pkg */
+#ifdef kcg_use_PT5_TrainRunningNumber_Packet_TrainTypes_Pkg
+#ifndef kcg_comp_PT5_TrainRunningNumber_Packet_TrainTypes_Pkg
+extern kcg_bool kcg_comp_PT5_TrainRunningNumber_Packet_TrainTypes_Pkg(
+  PT5_TrainRunningNumber_Packet_TrainTypes_Pkg *kcg_c1,
+  PT5_TrainRunningNumber_Packet_TrainTypes_Pkg *kcg_c2);
+#endif /* kcg_comp_PT5_TrainRunningNumber_Packet_TrainTypes_Pkg */
+#endif /* kcg_use_PT5_TrainRunningNumber_Packet_TrainTypes_Pkg */
 
 #ifdef kcg_use_nationValuesForDMI_T_DMI_Types_Pkg
 #ifndef kcg_comp_nationValuesForDMI_T_DMI_Types_Pkg
@@ -12969,21 +13029,29 @@ extern kcg_bool kcg_comp_DiagMsg_T_RBC_Diagnostic_Pkg(
 #endif /* kcg_comp_DiagMsg_T_RBC_Diagnostic_Pkg */
 #endif /* kcg_use_DiagMsg_T_RBC_Diagnostic_Pkg */
 
-#ifdef kcg_use_DMI_train_length_T_DMI_Types_Pkg
-#ifndef kcg_comp_DMI_train_length_T_DMI_Types_Pkg
-extern kcg_bool kcg_comp_DMI_train_length_T_DMI_Types_Pkg(
-  DMI_train_length_T_DMI_Types_Pkg *kcg_c1,
-  DMI_train_length_T_DMI_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_DMI_train_length_T_DMI_Types_Pkg */
-#endif /* kcg_use_DMI_train_length_T_DMI_Types_Pkg */
+#ifdef kcg_use_Isolation_Status_T_TIU_Types_Pkg
+#ifndef kcg_comp_Isolation_Status_T_TIU_Types_Pkg
+extern kcg_bool kcg_comp_Isolation_Status_T_TIU_Types_Pkg(
+  Isolation_Status_T_TIU_Types_Pkg *kcg_c1,
+  Isolation_Status_T_TIU_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_Isolation_Status_T_TIU_Types_Pkg */
+#endif /* kcg_use_Isolation_Status_T_TIU_Types_Pkg */
 
-#ifdef kcg_use_struct_487196
-#ifndef kcg_comp_struct_487196
-extern kcg_bool kcg_comp_struct_487196(
-  struct_487196 *kcg_c1,
-  struct_487196 *kcg_c2);
-#endif /* kcg_comp_struct_487196 */
-#endif /* kcg_use_struct_487196 */
+#ifdef kcg_use_BG_find_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg
+#ifndef kcg_comp_BG_find_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg
+extern kcg_bool kcg_comp_BG_find_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg(
+  BG_find_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg *kcg_c1,
+  BG_find_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg *kcg_c2);
+#endif /* kcg_comp_BG_find_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg */
+#endif /* kcg_use_BG_find_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg */
+
+#ifdef kcg_use_Passenger_door_control_info_T_TIU_Types_Pkg
+#ifndef kcg_comp_Passenger_door_control_info_T_TIU_Types_Pkg
+extern kcg_bool kcg_comp_Passenger_door_control_info_T_TIU_Types_Pkg(
+  Passenger_door_control_info_T_TIU_Types_Pkg *kcg_c1,
+  Passenger_door_control_info_T_TIU_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_Passenger_door_control_info_T_TIU_Types_Pkg */
+#endif /* kcg_use_Passenger_door_control_info_T_TIU_Types_Pkg */
 
 #ifdef kcg_use_P046_OBU_T_TM
 #ifndef kcg_comp_P046_OBU_T_TM
@@ -13009,13 +13077,13 @@ extern kcg_bool kcg_comp_ParabolaCurve_T_CalcBrakingCurves_types(
 #endif /* kcg_comp_ParabolaCurve_T_CalcBrakingCurves_types */
 #endif /* kcg_use_ParabolaCurve_T_CalcBrakingCurves_types */
 
-#ifdef kcg_use_BG_find_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg
-#ifndef kcg_comp_BG_find_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg
-extern kcg_bool kcg_comp_BG_find_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg(
-  BG_find_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg *kcg_c1,
-  BG_find_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg *kcg_c2);
-#endif /* kcg_comp_BG_find_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg */
-#endif /* kcg_use_BG_find_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg */
+#ifdef kcg_use_TrainToTrackStatus_T_BG_Types_Pkg
+#ifndef kcg_comp_TrainToTrackStatus_T_BG_Types_Pkg
+extern kcg_bool kcg_comp_TrainToTrackStatus_T_BG_Types_Pkg(
+  TrainToTrackStatus_T_BG_Types_Pkg *kcg_c1,
+  TrainToTrackStatus_T_BG_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_TrainToTrackStatus_T_BG_Types_Pkg */
+#endif /* kcg_use_TrainToTrackStatus_T_BG_Types_Pkg */
 
 #ifdef kcg_use_Target_T_TargetManagement_types
 #ifndef kcg_comp_Target_T_TargetManagement_types
@@ -13025,6 +13093,14 @@ extern kcg_bool kcg_comp_Target_T_TargetManagement_types(
 #endif /* kcg_comp_Target_T_TargetManagement_types */
 #endif /* kcg_use_Target_T_TargetManagement_types */
 
+#ifdef kcg_use_GP_DMI_Control_Pkg_Sub_func
+#ifndef kcg_comp_GP_DMI_Control_Pkg_Sub_func
+extern kcg_bool kcg_comp_GP_DMI_Control_Pkg_Sub_func(
+  GP_DMI_Control_Pkg_Sub_func *kcg_c1,
+  GP_DMI_Control_Pkg_Sub_func *kcg_c2);
+#endif /* kcg_comp_GP_DMI_Control_Pkg_Sub_func */
+#endif /* kcg_use_GP_DMI_Control_Pkg_Sub_func */
+
 #ifdef kcg_use_R_data_internal_T_InfraLib
 #ifndef kcg_comp_R_data_internal_T_InfraLib
 extern kcg_bool kcg_comp_R_data_internal_T_InfraLib(
@@ -13033,30 +13109,6 @@ extern kcg_bool kcg_comp_R_data_internal_T_InfraLib(
 #endif /* kcg_comp_R_data_internal_T_InfraLib */
 #endif /* kcg_use_R_data_internal_T_InfraLib */
 
-#ifdef kcg_use_P058_section_int_T_TM
-#ifndef kcg_comp_P058_section_int_T_TM
-extern kcg_bool kcg_comp_P058_section_int_T_TM(
-  P058_section_int_T_TM *kcg_c1,
-  P058_section_int_T_TM *kcg_c2);
-#endif /* kcg_comp_P058_section_int_T_TM */
-#endif /* kcg_use_P058_section_int_T_TM */
-
-#ifdef kcg_use_P021_section_enum_T_TM
-#ifndef kcg_comp_P021_section_enum_T_TM
-extern kcg_bool kcg_comp_P021_section_enum_T_TM(
-  P021_section_enum_T_TM *kcg_c1,
-  P021_section_enum_T_TM *kcg_c2);
-#endif /* kcg_comp_P021_section_enum_T_TM */
-#endif /* kcg_use_P021_section_enum_T_TM */
-
-#ifdef kcg_use_struct_487387
-#ifndef kcg_comp_struct_487387
-extern kcg_bool kcg_comp_struct_487387(
-  struct_487387 *kcg_c1,
-  struct_487387 *kcg_c2);
-#endif /* kcg_comp_struct_487387 */
-#endif /* kcg_use_struct_487387 */
-
 #ifdef kcg_use_NID_EM_Store_T_TA_EmergencyStop_NID_EM_Store
 #ifndef kcg_comp_NID_EM_Store_T_TA_EmergencyStop_NID_EM_Store
 extern kcg_bool kcg_comp_NID_EM_Store_T_TA_EmergencyStop_NID_EM_Store(
@@ -13064,6 +13116,22 @@ extern kcg_bool kcg_comp_NID_EM_Store_T_TA_EmergencyStop_NID_EM_Store(
   NID_EM_Store_T_TA_EmergencyStop_NID_EM_Store *kcg_c2);
 #endif /* kcg_comp_NID_EM_Store_T_TA_EmergencyStop_NID_EM_Store */
 #endif /* kcg_use_NID_EM_Store_T_TA_EmergencyStop_NID_EM_Store */
+
+#ifdef kcg_use_struct_487344
+#ifndef kcg_comp_struct_487344
+extern kcg_bool kcg_comp_struct_487344(
+  struct_487344 *kcg_c1,
+  struct_487344 *kcg_c2);
+#endif /* kcg_comp_struct_487344 */
+#endif /* kcg_use_struct_487344 */
+
+#ifdef kcg_use_PT4_ErrorReporting_T_Packet_TrainTypes_Pkg
+#ifndef kcg_comp_PT4_ErrorReporting_T_Packet_TrainTypes_Pkg
+extern kcg_bool kcg_comp_PT4_ErrorReporting_T_Packet_TrainTypes_Pkg(
+  PT4_ErrorReporting_T_Packet_TrainTypes_Pkg *kcg_c1,
+  PT4_ErrorReporting_T_Packet_TrainTypes_Pkg *kcg_c2);
+#endif /* kcg_comp_PT4_ErrorReporting_T_Packet_TrainTypes_Pkg */
+#endif /* kcg_use_PT4_ErrorReporting_T_Packet_TrainTypes_Pkg */
 
 #ifdef kcg_use_BG_Message_T_BG_Types_Pkg
 #ifndef kcg_comp_BG_Message_T_BG_Types_Pkg
@@ -13097,13 +13165,13 @@ extern kcg_bool kcg_comp_DMI_Text_Message_Ack_T_DMI_Messages_DMI_to_EVC_Pkg(
 #endif /* kcg_comp_DMI_Text_Message_Ack_T_DMI_Messages_DMI_to_EVC_Pkg */
 #endif /* kcg_use_DMI_Text_Message_Ack_T_DMI_Messages_DMI_to_EVC_Pkg */
 
-#ifdef kcg_use_P255_trackside_int_T_TM
-#ifndef kcg_comp_P255_trackside_int_T_TM
-extern kcg_bool kcg_comp_P255_trackside_int_T_TM(
-  P255_trackside_int_T_TM *kcg_c1,
-  P255_trackside_int_T_TM *kcg_c2);
-#endif /* kcg_comp_P255_trackside_int_T_TM */
-#endif /* kcg_use_P255_trackside_int_T_TM */
+#ifdef kcg_use_struct_487461
+#ifndef kcg_comp_struct_487461
+extern kcg_bool kcg_comp_struct_487461(
+  struct_487461 *kcg_c1,
+  struct_487461 *kcg_c2);
+#endif /* kcg_comp_struct_487461 */
+#endif /* kcg_use_struct_487461 */
 
 #ifdef kcg_use_T_Data_From_Track_MASSPGradient_Available_Level_And_Mode_Types_Pkg
 #ifndef kcg_comp_T_Data_From_Track_MASSPGradient_Available_Level_And_Mode_Types_Pkg
@@ -13113,21 +13181,13 @@ extern kcg_bool kcg_comp_T_Data_From_Track_MASSPGradient_Available_Level_And_Mod
 #endif /* kcg_comp_T_Data_From_Track_MASSPGradient_Available_Level_And_Mode_Types_Pkg */
 #endif /* kcg_use_T_Data_From_Track_MASSPGradient_Available_Level_And_Mode_Types_Pkg */
 
-#ifdef kcg_use_Endtimer_t_TrackAtlasTypes
-#ifndef kcg_comp_Endtimer_t_TrackAtlasTypes
-extern kcg_bool kcg_comp_Endtimer_t_TrackAtlasTypes(
-  Endtimer_t_TrackAtlasTypes *kcg_c1,
-  Endtimer_t_TrackAtlasTypes *kcg_c2);
-#endif /* kcg_comp_Endtimer_t_TrackAtlasTypes */
-#endif /* kcg_use_Endtimer_t_TrackAtlasTypes */
-
-#ifdef kcg_use_struct_487566
-#ifndef kcg_comp_struct_487566
-extern kcg_bool kcg_comp_struct_487566(
-  struct_487566 *kcg_c1,
-  struct_487566 *kcg_c2);
-#endif /* kcg_comp_struct_487566 */
-#endif /* kcg_use_struct_487566 */
+#ifdef kcg_use_struct_487538
+#ifndef kcg_comp_struct_487538
+extern kcg_bool kcg_comp_struct_487538(
+  struct_487538 *kcg_c1,
+  struct_487538 *kcg_c2);
+#endif /* kcg_comp_struct_487538 */
+#endif /* kcg_use_struct_487538 */
 
 #ifdef kcg_use_T_ERTMS_capabilities_Level_And_Mode_Types_Pkg
 #ifndef kcg_comp_T_ERTMS_capabilities_Level_And_Mode_Types_Pkg
@@ -13137,6 +13197,30 @@ extern kcg_bool kcg_comp_T_ERTMS_capabilities_Level_And_Mode_Types_Pkg(
 #endif /* kcg_comp_T_ERTMS_capabilities_Level_And_Mode_Types_Pkg */
 #endif /* kcg_use_T_ERTMS_capabilities_Level_And_Mode_Types_Pkg */
 
+#ifdef kcg_use_P027V1_OBU_body_enum_T_TM_baseline2
+#ifndef kcg_comp_P027V1_OBU_body_enum_T_TM_baseline2
+extern kcg_bool kcg_comp_P027V1_OBU_body_enum_T_TM_baseline2(
+  P027V1_OBU_body_enum_T_TM_baseline2 *kcg_c1,
+  P027V1_OBU_body_enum_T_TM_baseline2 *kcg_c2);
+#endif /* kcg_comp_P027V1_OBU_body_enum_T_TM_baseline2 */
+#endif /* kcg_use_P027V1_OBU_body_enum_T_TM_baseline2 */
+
+#ifdef kcg_use_AccuDistanceProfileMA_TA_MA_new
+#ifndef kcg_comp_AccuDistanceProfileMA_TA_MA_new
+extern kcg_bool kcg_comp_AccuDistanceProfileMA_TA_MA_new(
+  AccuDistanceProfileMA_TA_MA_new *kcg_c1,
+  AccuDistanceProfileMA_TA_MA_new *kcg_c2);
+#endif /* kcg_comp_AccuDistanceProfileMA_TA_MA_new */
+#endif /* kcg_use_AccuDistanceProfileMA_TA_MA_new */
+
+#ifdef kcg_use_struct_487594
+#ifndef kcg_comp_struct_487594
+extern kcg_bool kcg_comp_struct_487594(
+  struct_487594 *kcg_c1,
+  struct_487594 *kcg_c2);
+#endif /* kcg_comp_struct_487594 */
+#endif /* kcg_use_struct_487594 */
+
 #ifdef kcg_use_Brake_status_T_TIU_Types_Pkg
 #ifndef kcg_comp_Brake_status_T_TIU_Types_Pkg
 extern kcg_bool kcg_comp_Brake_status_T_TIU_Types_Pkg(
@@ -13145,21 +13229,29 @@ extern kcg_bool kcg_comp_Brake_status_T_TIU_Types_Pkg(
 #endif /* kcg_comp_Brake_status_T_TIU_Types_Pkg */
 #endif /* kcg_use_Brake_status_T_TIU_Types_Pkg */
 
-#ifdef kcg_use_struct_487754
-#ifndef kcg_comp_struct_487754
-extern kcg_bool kcg_comp_struct_487754(
-  struct_487754 *kcg_c1,
-  struct_487754 *kcg_c2);
-#endif /* kcg_comp_struct_487754 */
-#endif /* kcg_use_struct_487754 */
+#ifdef kcg_use_safeRadioConnectionIndication_T_RCM_Session_Types_Pkg
+#ifndef kcg_comp_safeRadioConnectionIndication_T_RCM_Session_Types_Pkg
+extern kcg_bool kcg_comp_safeRadioConnectionIndication_T_RCM_Session_Types_Pkg(
+  safeRadioConnectionIndication_T_RCM_Session_Types_Pkg *kcg_c1,
+  safeRadioConnectionIndication_T_RCM_Session_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_safeRadioConnectionIndication_T_RCM_Session_Types_Pkg */
+#endif /* kcg_use_safeRadioConnectionIndication_T_RCM_Session_Types_Pkg */
 
-#ifdef kcg_use_DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg
-#ifndef kcg_comp_DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg
-extern kcg_bool kcg_comp_DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg(
-  DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg *kcg_c1,
-  DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg *kcg_c2);
-#endif /* kcg_comp_DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg */
-#endif /* kcg_use_DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg */
+#ifdef kcg_use_Brake_pressure_value_T_TIU_Types_Pkg
+#ifndef kcg_comp_Brake_pressure_value_T_TIU_Types_Pkg
+extern kcg_bool kcg_comp_Brake_pressure_value_T_TIU_Types_Pkg(
+  Brake_pressure_value_T_TIU_Types_Pkg *kcg_c1,
+  Brake_pressure_value_T_TIU_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_Brake_pressure_value_T_TIU_Types_Pkg */
+#endif /* kcg_use_Brake_pressure_value_T_TIU_Types_Pkg */
+
+#ifdef kcg_use_Diff_T_Packet_Types_Pkg
+#ifndef kcg_comp_Diff_T_Packet_Types_Pkg
+extern kcg_bool kcg_comp_Diff_T_Packet_Types_Pkg(
+  Diff_T_Packet_Types_Pkg *kcg_c1,
+  Diff_T_Packet_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_Diff_T_Packet_Types_Pkg */
+#endif /* kcg_use_Diff_T_Packet_Types_Pkg */
 
 #ifdef kcg_use_positionedBGs_w_overrun_T_CalculateTrainPosition_Pkg
 #ifndef kcg_comp_positionedBGs_w_overrun_T_CalculateTrainPosition_Pkg
@@ -13177,13 +13269,13 @@ extern kcg_bool kcg_comp_T_Data_From_F2_functions_Level_And_Mode_Types_Pkg(
 #endif /* kcg_comp_T_Data_From_F2_functions_Level_And_Mode_Types_Pkg */
 #endif /* kcg_use_T_Data_From_F2_functions_Level_And_Mode_Types_Pkg */
 
-#ifdef kcg_use_movementAuthorityForDMI_T_DMI_Types_Pkg
-#ifndef kcg_comp_movementAuthorityForDMI_T_DMI_Types_Pkg
-extern kcg_bool kcg_comp_movementAuthorityForDMI_T_DMI_Types_Pkg(
-  movementAuthorityForDMI_T_DMI_Types_Pkg *kcg_c1,
-  movementAuthorityForDMI_T_DMI_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_movementAuthorityForDMI_T_DMI_Types_Pkg */
-#endif /* kcg_use_movementAuthorityForDMI_T_DMI_Types_Pkg */
+#ifdef kcg_use_RadioManagement_T_API_RadioCommunication_Pkg
+#ifndef kcg_comp_RadioManagement_T_API_RadioCommunication_Pkg
+extern kcg_bool kcg_comp_RadioManagement_T_API_RadioCommunication_Pkg(
+  RadioManagement_T_API_RadioCommunication_Pkg *kcg_c1,
+  RadioManagement_T_API_RadioCommunication_Pkg *kcg_c2);
+#endif /* kcg_comp_RadioManagement_T_API_RadioCommunication_Pkg */
+#endif /* kcg_use_RadioManagement_T_API_RadioCommunication_Pkg */
 
 #ifdef kcg_use_TSM_revokeCond_T_SDM_Commands_Pkg
 #ifndef kcg_comp_TSM_revokeCond_T_SDM_Commands_Pkg
@@ -13193,14 +13285,6 @@ extern kcg_bool kcg_comp_TSM_revokeCond_T_SDM_Commands_Pkg(
 #endif /* kcg_comp_TSM_revokeCond_T_SDM_Commands_Pkg */
 #endif /* kcg_use_TSM_revokeCond_T_SDM_Commands_Pkg */
 
-#ifdef kcg_use_DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg
-#ifndef kcg_comp_DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg
-extern kcg_bool kcg_comp_DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg(
-  DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg *kcg_c1,
-  DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg *kcg_c2);
-#endif /* kcg_comp_DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg */
-#endif /* kcg_use_DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg */
-
 #ifdef kcg_use_T_Mode_Level_Level_And_Mode_Types_Pkg
 #ifndef kcg_comp_T_Mode_Level_Level_And_Mode_Types_Pkg
 extern kcg_bool kcg_comp_T_Mode_Level_Level_And_Mode_Types_Pkg(
@@ -13209,44 +13293,21 @@ extern kcg_bool kcg_comp_T_Mode_Level_Level_And_Mode_Types_Pkg(
 #endif /* kcg_comp_T_Mode_Level_Level_And_Mode_Types_Pkg */
 #endif /* kcg_use_T_Mode_Level_Level_And_Mode_Types_Pkg */
 
-#ifdef kcg_use_P041_section_int_T_TM
-#ifndef kcg_comp_P041_section_int_T_TM
-extern kcg_bool kcg_comp_P041_section_int_T_TM(
-  P041_section_int_T_TM *kcg_c1,
-  P041_section_int_T_TM *kcg_c2);
-#endif /* kcg_comp_P041_section_int_T_TM */
-#endif /* kcg_use_P041_section_int_T_TM */
+#ifdef kcg_use_P63_BaliseInSRAuthority_T_Packet_Types_Pkg
+#ifndef kcg_comp_P63_BaliseInSRAuthority_T_Packet_Types_Pkg
+extern kcg_bool kcg_comp_P63_BaliseInSRAuthority_T_Packet_Types_Pkg(
+  P63_BaliseInSRAuthority_T_Packet_Types_Pkg *kcg_c1,
+  P63_BaliseInSRAuthority_T_Packet_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_P63_BaliseInSRAuthority_T_Packet_Types_Pkg */
+#endif /* kcg_use_P63_BaliseInSRAuthority_T_Packet_Types_Pkg */
 
-#ifdef kcg_use_P45_RadioNetworkRegistration_T_Packet_Types_Pkg
-#ifndef kcg_comp_P45_RadioNetworkRegistration_T_Packet_Types_Pkg
-extern kcg_bool kcg_comp_P45_RadioNetworkRegistration_T_Packet_Types_Pkg(
-  P45_RadioNetworkRegistration_T_Packet_Types_Pkg *kcg_c1,
-  P45_RadioNetworkRegistration_T_Packet_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_P45_RadioNetworkRegistration_T_Packet_Types_Pkg */
-#endif /* kcg_use_P45_RadioNetworkRegistration_T_Packet_Types_Pkg */
-
-#ifdef kcg_use_DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg
-#ifndef kcg_comp_DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg
-extern kcg_bool kcg_comp_DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg(
-  DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg *kcg_c1,
-  DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg *kcg_c2);
-#endif /* kcg_comp_DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg */
-#endif /* kcg_use_DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg */
-
-#ifndef kcg_comp_mobileRegistrationContext_T_RCM_Types_Pkg
-extern kcg_bool kcg_comp_mobileRegistrationContext_T_RCM_Types_Pkg(
-  mobileRegistrationContext_T_RCM_Types_Pkg *kcg_c1,
-  mobileRegistrationContext_T_RCM_Types_Pkg *kcg_c2);
-#define kcg_use_mobileRegistrationContext_T_RCM_Types_Pkg
-#endif /* kcg_comp_mobileRegistrationContext_T_RCM_Types_Pkg */
-
-#ifdef kcg_use_DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg
-#ifndef kcg_comp_DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg
-extern kcg_bool kcg_comp_DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg(
-  DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg *kcg_c1,
-  DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg *kcg_c2);
-#endif /* kcg_comp_DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg */
-#endif /* kcg_use_DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg */
+#ifdef kcg_use_P045_trackside_int_T_TM
+#ifndef kcg_comp_P045_trackside_int_T_TM
+extern kcg_bool kcg_comp_P045_trackside_int_T_TM(
+  P045_trackside_int_T_TM *kcg_c1,
+  P045_trackside_int_T_TM *kcg_c2);
+#endif /* kcg_comp_P045_trackside_int_T_TM */
+#endif /* kcg_use_P045_trackside_int_T_TM */
 
 #ifdef kcg_use_T_Data_From_Track_Mess_Level_And_Mode_Types_Pkg
 #ifndef kcg_comp_T_Data_From_Track_Mess_Level_And_Mode_Types_Pkg
@@ -13255,6 +13316,22 @@ extern kcg_bool kcg_comp_T_Data_From_Track_Mess_Level_And_Mode_Types_Pkg(
   T_Data_From_Track_Mess_Level_And_Mode_Types_Pkg *kcg_c2);
 #endif /* kcg_comp_T_Data_From_Track_Mess_Level_And_Mode_Types_Pkg */
 #endif /* kcg_use_T_Data_From_Track_Mess_Level_And_Mode_Types_Pkg */
+
+#ifdef kcg_use_DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg
+#ifndef kcg_comp_DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg
+extern kcg_bool kcg_comp_DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg(
+  DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg *kcg_c1,
+  DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg *kcg_c2);
+#endif /* kcg_comp_DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg */
+#endif /* kcg_use_DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg */
+
+#ifdef kcg_use_DP_or_OL_t_TrackAtlasTypes
+#ifndef kcg_comp_DP_or_OL_t_TrackAtlasTypes
+extern kcg_bool kcg_comp_DP_or_OL_t_TrackAtlasTypes(
+  DP_or_OL_t_TrackAtlasTypes *kcg_c1,
+  DP_or_OL_t_TrackAtlasTypes *kcg_c2);
+#endif /* kcg_comp_DP_or_OL_t_TrackAtlasTypes */
+#endif /* kcg_use_DP_or_OL_t_TrackAtlasTypes */
 
 #ifdef kcg_use_DynamicConfig_T
 #ifndef kcg_comp_DynamicConfig_T
@@ -13280,29 +13357,21 @@ extern kcg_bool kcg_comp_TargetCollection_T_TargetManagement_types(
 #endif /* kcg_comp_TargetCollection_T_TargetManagement_types */
 #endif /* kcg_use_TargetCollection_T_TargetManagement_types */
 
-#ifdef kcg_use_DP_or_OL_t_TrackAtlasTypes
-#ifndef kcg_comp_DP_or_OL_t_TrackAtlasTypes
-extern kcg_bool kcg_comp_DP_or_OL_t_TrackAtlasTypes(
-  DP_or_OL_t_TrackAtlasTypes *kcg_c1,
-  DP_or_OL_t_TrackAtlasTypes *kcg_c2);
-#endif /* kcg_comp_DP_or_OL_t_TrackAtlasTypes */
-#endif /* kcg_use_DP_or_OL_t_TrackAtlasTypes */
+#ifdef kcg_use_struct_488170
+#ifndef kcg_comp_struct_488170
+extern kcg_bool kcg_comp_struct_488170(
+  struct_488170 *kcg_c1,
+  struct_488170 *kcg_c2);
+#endif /* kcg_comp_struct_488170 */
+#endif /* kcg_use_struct_488170 */
 
-#ifdef kcg_use_P041_section_enum_T_TM
-#ifndef kcg_comp_P041_section_enum_T_TM
-extern kcg_bool kcg_comp_P041_section_enum_T_TM(
-  P041_section_enum_T_TM *kcg_c1,
-  P041_section_enum_T_TM *kcg_c2);
-#endif /* kcg_comp_P041_section_enum_T_TM */
-#endif /* kcg_use_P041_section_enum_T_TM */
-
-#ifdef kcg_use_Brake_pressure_value_T_TIU_Types_Pkg
-#ifndef kcg_comp_Brake_pressure_value_T_TIU_Types_Pkg
-extern kcg_bool kcg_comp_Brake_pressure_value_T_TIU_Types_Pkg(
-  Brake_pressure_value_T_TIU_Types_Pkg *kcg_c1,
-  Brake_pressure_value_T_TIU_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_Brake_pressure_value_T_TIU_Types_Pkg */
-#endif /* kcg_use_Brake_pressure_value_T_TIU_Types_Pkg */
+#ifdef kcg_use_struct_488194
+#ifndef kcg_comp_struct_488194
+extern kcg_bool kcg_comp_struct_488194(
+  struct_488194 *kcg_c1,
+  struct_488194 *kcg_c2);
+#endif /* kcg_comp_struct_488194 */
+#endif /* kcg_use_struct_488194 */
 
 #ifdef kcg_use_CurveCollection_T_CalcBrakingCurves_types
 #ifndef kcg_comp_CurveCollection_T_CalcBrakingCurves_types
@@ -13311,13 +13380,6 @@ extern kcg_bool kcg_comp_CurveCollection_T_CalcBrakingCurves_types(
   CurveCollection_T_CalcBrakingCurves_types *kcg_c2);
 #endif /* kcg_comp_CurveCollection_T_CalcBrakingCurves_types */
 #endif /* kcg_use_CurveCollection_T_CalcBrakingCurves_types */
-
-#ifndef kcg_comp_RBC_Id_T_Common_Types_Pkg
-extern kcg_bool kcg_comp_RBC_Id_T_Common_Types_Pkg(
-  RBC_Id_T_Common_Types_Pkg *kcg_c1,
-  RBC_Id_T_Common_Types_Pkg *kcg_c2);
-#define kcg_use_RBC_Id_T_Common_Types_Pkg
-#endif /* kcg_comp_RBC_Id_T_Common_Types_Pkg */
 
 #ifdef kcg_use_DataForModeAndLevel_t_TrackAtlasTypes
 #ifndef kcg_comp_DataForModeAndLevel_t_TrackAtlasTypes
@@ -13335,14 +13397,6 @@ extern kcg_bool kcg_comp_RBC_Communication_T_ProvidePositionReport_Pkg(
 #endif /* kcg_comp_RBC_Communication_T_ProvidePositionReport_Pkg */
 #endif /* kcg_use_RBC_Communication_T_ProvidePositionReport_Pkg */
 
-#ifdef kcg_use_P137_StopIfInStaffResponsible_T_Packet_Types_Pkg
-#ifndef kcg_comp_P137_StopIfInStaffResponsible_T_Packet_Types_Pkg
-extern kcg_bool kcg_comp_P137_StopIfInStaffResponsible_T_Packet_Types_Pkg(
-  P137_StopIfInStaffResponsible_T_Packet_Types_Pkg *kcg_c1,
-  P137_StopIfInStaffResponsible_T_Packet_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_P137_StopIfInStaffResponsible_T_Packet_Types_Pkg */
-#endif /* kcg_use_P137_StopIfInStaffResponsible_T_Packet_Types_Pkg */
-
 #ifdef kcg_use_DMI_Train_Data_Ack_T_DMI_Messages_DMI_to_EVC_Pkg
 #ifndef kcg_comp_DMI_Train_Data_Ack_T_DMI_Messages_DMI_to_EVC_Pkg
 extern kcg_bool kcg_comp_DMI_Train_Data_Ack_T_DMI_Messages_DMI_to_EVC_Pkg(
@@ -13350,22 +13404,6 @@ extern kcg_bool kcg_comp_DMI_Train_Data_Ack_T_DMI_Messages_DMI_to_EVC_Pkg(
   DMI_Train_Data_Ack_T_DMI_Messages_DMI_to_EVC_Pkg *kcg_c2);
 #endif /* kcg_comp_DMI_Train_Data_Ack_T_DMI_Messages_DMI_to_EVC_Pkg */
 #endif /* kcg_use_DMI_Train_Data_Ack_T_DMI_Messages_DMI_to_EVC_Pkg */
-
-#ifdef kcg_use_P058_section_enum_T_TM
-#ifndef kcg_comp_P058_section_enum_T_TM
-extern kcg_bool kcg_comp_P058_section_enum_T_TM(
-  P058_section_enum_T_TM *kcg_c1,
-  P058_section_enum_T_TM *kcg_c2);
-#endif /* kcg_comp_P058_section_enum_T_TM */
-#endif /* kcg_use_P058_section_enum_T_TM */
-
-#ifdef kcg_use_NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store
-#ifndef kcg_comp_NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store
-extern kcg_bool kcg_comp_NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store(
-  NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store *kcg_c1,
-  NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store *kcg_c2);
-#endif /* kcg_comp_NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store */
-#endif /* kcg_use_NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store */
 
 #ifdef kcg_use_TIU_commandStatus_T_TIU_Types_Pkg
 #ifndef kcg_comp_TIU_commandStatus_T_TIU_Types_Pkg
@@ -13375,30 +13413,6 @@ extern kcg_bool kcg_comp_TIU_commandStatus_T_TIU_Types_Pkg(
 #endif /* kcg_comp_TIU_commandStatus_T_TIU_Types_Pkg */
 #endif /* kcg_use_TIU_commandStatus_T_TIU_Types_Pkg */
 
-#ifdef kcg_use_DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg
-#ifndef kcg_comp_DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg
-extern kcg_bool kcg_comp_DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg(
-  DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg *kcg_c1,
-  DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg *kcg_c2);
-#endif /* kcg_comp_DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg */
-#endif /* kcg_use_DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg */
-
-#ifdef kcg_use_struct_488406
-#ifndef kcg_comp_struct_488406
-extern kcg_bool kcg_comp_struct_488406(
-  struct_488406 *kcg_c1,
-  struct_488406 *kcg_c2);
-#endif /* kcg_comp_struct_488406 */
-#endif /* kcg_use_struct_488406 */
-
-#ifdef kcg_use_struct_488418
-#ifndef kcg_comp_struct_488418
-extern kcg_bool kcg_comp_struct_488418(
-  struct_488418 *kcg_c1,
-  struct_488418 *kcg_c2);
-#endif /* kcg_comp_struct_488418 */
-#endif /* kcg_use_struct_488418 */
-
 #ifdef kcg_use_M_TrainTrack_Message_T_TM_radio_messages
 #ifndef kcg_comp_M_TrainTrack_Message_T_TM_radio_messages
 extern kcg_bool kcg_comp_M_TrainTrack_Message_T_TM_radio_messages(
@@ -13407,13 +13421,13 @@ extern kcg_bool kcg_comp_M_TrainTrack_Message_T_TM_radio_messages(
 #endif /* kcg_comp_M_TrainTrack_Message_T_TM_radio_messages */
 #endif /* kcg_use_M_TrainTrack_Message_T_TM_radio_messages */
 
-#ifdef kcg_use_IterPacket58_T_Packet_Types_Pkg
-#ifndef kcg_comp_IterPacket58_T_Packet_Types_Pkg
-extern kcg_bool kcg_comp_IterPacket58_T_Packet_Types_Pkg(
-  IterPacket58_T_Packet_Types_Pkg *kcg_c1,
-  IterPacket58_T_Packet_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_IterPacket58_T_Packet_Types_Pkg */
-#endif /* kcg_use_IterPacket58_T_Packet_Types_Pkg */
+#ifdef kcg_use_DMI_trackConditionElement_T_DMI_Types_Pkg
+#ifndef kcg_comp_DMI_trackConditionElement_T_DMI_Types_Pkg
+extern kcg_bool kcg_comp_DMI_trackConditionElement_T_DMI_Types_Pkg(
+  DMI_trackConditionElement_T_DMI_Types_Pkg *kcg_c1,
+  DMI_trackConditionElement_T_DMI_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_DMI_trackConditionElement_T_DMI_Types_Pkg */
+#endif /* kcg_use_DMI_trackConditionElement_T_DMI_Types_Pkg */
 
 #ifdef kcg_use_T_AnnouncedLevel_Level_And_Mode_Types_Pkg
 #ifndef kcg_comp_T_AnnouncedLevel_Level_And_Mode_Types_Pkg
@@ -13423,29 +13437,12 @@ extern kcg_bool kcg_comp_T_AnnouncedLevel_Level_And_Mode_Types_Pkg(
 #endif /* kcg_comp_T_AnnouncedLevel_Level_And_Mode_Types_Pkg */
 #endif /* kcg_use_T_AnnouncedLevel_Level_And_Mode_Types_Pkg */
 
-#ifdef kcg_use_Target_real_T_TargetManagement_types
-#ifndef kcg_comp_Target_real_T_TargetManagement_types
-extern kcg_bool kcg_comp_Target_real_T_TargetManagement_types(
-  Target_real_T_TargetManagement_types *kcg_c1,
-  Target_real_T_TargetManagement_types *kcg_c2);
-#endif /* kcg_comp_Target_real_T_TargetManagement_types */
-#endif /* kcg_use_Target_real_T_TargetManagement_types */
-
-#ifdef kcg_use_Isolation_Status_T_TIU_Types_Pkg
-#ifndef kcg_comp_Isolation_Status_T_TIU_Types_Pkg
-extern kcg_bool kcg_comp_Isolation_Status_T_TIU_Types_Pkg(
-  Isolation_Status_T_TIU_Types_Pkg *kcg_c1,
-  Isolation_Status_T_TIU_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_Isolation_Status_T_TIU_Types_Pkg */
-#endif /* kcg_use_Isolation_Status_T_TIU_Types_Pkg */
-
-#ifdef kcg_use_NID_EM_Store_Item_T_TA_EmergencyStop_NID_EM_Store
-#ifndef kcg_comp_NID_EM_Store_Item_T_TA_EmergencyStop_NID_EM_Store
-extern kcg_bool kcg_comp_NID_EM_Store_Item_T_TA_EmergencyStop_NID_EM_Store(
-  NID_EM_Store_Item_T_TA_EmergencyStop_NID_EM_Store *kcg_c1,
-  NID_EM_Store_Item_T_TA_EmergencyStop_NID_EM_Store *kcg_c2);
-#endif /* kcg_comp_NID_EM_Store_Item_T_TA_EmergencyStop_NID_EM_Store */
-#endif /* kcg_use_NID_EM_Store_Item_T_TA_EmergencyStop_NID_EM_Store */
+#ifndef kcg_comp_OdometryLocations_T_Obu_BasicTypes_Pkg
+extern kcg_bool kcg_comp_OdometryLocations_T_Obu_BasicTypes_Pkg(
+  OdometryLocations_T_Obu_BasicTypes_Pkg *kcg_c1,
+  OdometryLocations_T_Obu_BasicTypes_Pkg *kcg_c2);
+#define kcg_use_OdometryLocations_T_Obu_BasicTypes_Pkg
+#endif /* kcg_comp_OdometryLocations_T_Obu_BasicTypes_Pkg */
 
 #ifdef kcg_use_mobileConnectionCmd_T_RCM_Types_Pkg
 #ifndef kcg_comp_mobileConnectionCmd_T_RCM_Types_Pkg
@@ -13455,22 +13452,6 @@ extern kcg_bool kcg_comp_mobileConnectionCmd_T_RCM_Types_Pkg(
 #endif /* kcg_comp_mobileConnectionCmd_T_RCM_Types_Pkg */
 #endif /* kcg_use_mobileConnectionCmd_T_RCM_Types_Pkg */
 
-#ifdef kcg_use_DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg
-#ifndef kcg_comp_DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg
-extern kcg_bool kcg_comp_DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg(
-  DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg *kcg_c1,
-  DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg *kcg_c2);
-#endif /* kcg_comp_DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg */
-#endif /* kcg_use_DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg */
-
-#ifdef kcg_use_ParabolaArc_T_CalcBrakingCurves_types
-#ifndef kcg_comp_ParabolaArc_T_CalcBrakingCurves_types
-extern kcg_bool kcg_comp_ParabolaArc_T_CalcBrakingCurves_types(
-  ParabolaArc_T_CalcBrakingCurves_types *kcg_c1,
-  ParabolaArc_T_CalcBrakingCurves_types *kcg_c2);
-#endif /* kcg_comp_ParabolaArc_T_CalcBrakingCurves_types */
-#endif /* kcg_use_ParabolaArc_T_CalcBrakingCurves_types */
-
 #ifdef kcg_use_ModeLevel2PositionReport_T_ProvidePositionReport_Pkg
 #ifndef kcg_comp_ModeLevel2PositionReport_T_ProvidePositionReport_Pkg
 extern kcg_bool kcg_comp_ModeLevel2PositionReport_T_ProvidePositionReport_Pkg(
@@ -13478,14 +13459,6 @@ extern kcg_bool kcg_comp_ModeLevel2PositionReport_T_ProvidePositionReport_Pkg(
   ModeLevel2PositionReport_T_ProvidePositionReport_Pkg *kcg_c2);
 #endif /* kcg_comp_ModeLevel2PositionReport_T_ProvidePositionReport_Pkg */
 #endif /* kcg_use_ModeLevel2PositionReport_T_ProvidePositionReport_Pkg */
-
-#ifdef kcg_use_struct_488833
-#ifndef kcg_comp_struct_488833
-extern kcg_bool kcg_comp_struct_488833(
-  struct_488833 *kcg_c1,
-  struct_488833 *kcg_c2);
-#endif /* kcg_comp_struct_488833 */
-#endif /* kcg_use_struct_488833 */
 
 #ifdef kcg_use_trainData_Trigger_T_trainData_Types_pkg
 #ifndef kcg_comp_trainData_Trigger_T_trainData_Types_pkg
@@ -13495,53 +13468,53 @@ extern kcg_bool kcg_comp_trainData_Trigger_T_trainData_Types_pkg(
 #endif /* kcg_comp_trainData_Trigger_T_trainData_Types_pkg */
 #endif /* kcg_use_trainData_Trigger_T_trainData_Types_pkg */
 
-#ifdef kcg_use_P021_section_int_T_TM
-#ifndef kcg_comp_P021_section_int_T_TM
-extern kcg_bool kcg_comp_P021_section_int_T_TM(
-  P021_section_int_T_TM *kcg_c1,
-  P021_section_int_T_TM *kcg_c2);
-#endif /* kcg_comp_P021_section_int_T_TM */
-#endif /* kcg_use_P021_section_int_T_TM */
+#ifdef kcg_use_DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg
+#ifndef kcg_comp_DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg
+extern kcg_bool kcg_comp_DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg(
+  DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg *kcg_c1,
+  DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg *kcg_c2);
+#endif /* kcg_comp_DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg */
+#endif /* kcg_use_DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg */
 
-#ifdef kcg_use_Passenger_door_control_info_T_TIU_Types_Pkg
-#ifndef kcg_comp_Passenger_door_control_info_T_TIU_Types_Pkg
-extern kcg_bool kcg_comp_Passenger_door_control_info_T_TIU_Types_Pkg(
-  Passenger_door_control_info_T_TIU_Types_Pkg *kcg_c1,
-  Passenger_door_control_info_T_TIU_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_Passenger_door_control_info_T_TIU_Types_Pkg */
-#endif /* kcg_use_Passenger_door_control_info_T_TIU_Types_Pkg */
+#ifdef kcg_use_P004_TM_TrainToTrack
+#ifndef kcg_comp_P004_TM_TrainToTrack
+extern kcg_bool kcg_comp_P004_TM_TrainToTrack(
+  P004_TM_TrainToTrack *kcg_c1,
+  P004_TM_TrainToTrack *kcg_c2);
+#endif /* kcg_comp_P004_TM_TrainToTrack */
+#endif /* kcg_use_P004_TM_TrainToTrack */
 
-#ifdef kcg_use_P009_TM_TrainToTrack
-#ifndef kcg_comp_P009_TM_TrainToTrack
-extern kcg_bool kcg_comp_P009_TM_TrainToTrack(
-  P009_TM_TrainToTrack *kcg_c1,
-  P009_TM_TrainToTrack *kcg_c2);
-#endif /* kcg_comp_P009_TM_TrainToTrack */
-#endif /* kcg_use_P009_TM_TrainToTrack */
+#ifdef kcg_use_P45_RadioNetworkRegistration_T_Packet_Types_Pkg
+#ifndef kcg_comp_P45_RadioNetworkRegistration_T_Packet_Types_Pkg
+extern kcg_bool kcg_comp_P45_RadioNetworkRegistration_T_Packet_Types_Pkg(
+  P45_RadioNetworkRegistration_T_Packet_Types_Pkg *kcg_c1,
+  P45_RadioNetworkRegistration_T_Packet_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_P45_RadioNetworkRegistration_T_Packet_Types_Pkg */
+#endif /* kcg_use_P45_RadioNetworkRegistration_T_Packet_Types_Pkg */
 
-#ifdef kcg_use_P046_section_int_T_TM
-#ifndef kcg_comp_P046_section_int_T_TM
-extern kcg_bool kcg_comp_P046_section_int_T_TM(
-  P046_section_int_T_TM *kcg_c1,
-  P046_section_int_T_TM *kcg_c2);
-#endif /* kcg_comp_P046_section_int_T_TM */
-#endif /* kcg_use_P046_section_int_T_TM */
+#ifdef kcg_use_Brake_inhibition_command_T_TIU_Types_Pkg
+#ifndef kcg_comp_Brake_inhibition_command_T_TIU_Types_Pkg
+extern kcg_bool kcg_comp_Brake_inhibition_command_T_TIU_Types_Pkg(
+  Brake_inhibition_command_T_TIU_Types_Pkg *kcg_c1,
+  Brake_inhibition_command_T_TIU_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_Brake_inhibition_command_T_TIU_Types_Pkg */
+#endif /* kcg_use_Brake_inhibition_command_T_TIU_Types_Pkg */
 
-#ifdef kcg_use_StaticSpeedSection_t_TrackAtlasTypes
-#ifndef kcg_comp_StaticSpeedSection_t_TrackAtlasTypes
-extern kcg_bool kcg_comp_StaticSpeedSection_t_TrackAtlasTypes(
-  StaticSpeedSection_t_TrackAtlasTypes *kcg_c1,
-  StaticSpeedSection_t_TrackAtlasTypes *kcg_c2);
-#endif /* kcg_comp_StaticSpeedSection_t_TrackAtlasTypes */
-#endif /* kcg_use_StaticSpeedSection_t_TrackAtlasTypes */
+#ifdef kcg_use_struct_488685
+#ifndef kcg_comp_struct_488685
+extern kcg_bool kcg_comp_struct_488685(
+  struct_488685 *kcg_c1,
+  struct_488685 *kcg_c2);
+#endif /* kcg_comp_struct_488685 */
+#endif /* kcg_use_struct_488685 */
 
-#ifdef kcg_use_DMI_level_T_DMI_Types_Pkg
-#ifndef kcg_comp_DMI_level_T_DMI_Types_Pkg
-extern kcg_bool kcg_comp_DMI_level_T_DMI_Types_Pkg(
-  DMI_level_T_DMI_Types_Pkg *kcg_c1,
-  DMI_level_T_DMI_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_DMI_level_T_DMI_Types_Pkg */
-#endif /* kcg_use_DMI_level_T_DMI_Types_Pkg */
+#ifdef kcg_use_Gradient_section_t_TrackAtlasTypes
+#ifndef kcg_comp_Gradient_section_t_TrackAtlasTypes
+extern kcg_bool kcg_comp_Gradient_section_t_TrackAtlasTypes(
+  Gradient_section_t_TrackAtlasTypes *kcg_c1,
+  Gradient_section_t_TrackAtlasTypes *kcg_c2);
+#endif /* kcg_comp_Gradient_section_t_TrackAtlasTypes */
+#endif /* kcg_use_Gradient_section_t_TrackAtlasTypes */
 
 #ifdef kcg_use_DMI_trackCondition_T_DMI_Types_Pkg
 #ifndef kcg_comp_DMI_trackCondition_T_DMI_Types_Pkg
@@ -13583,37 +13556,29 @@ extern kcg_bool kcg_comp_av_MergedMap_t_SDMConversionModelPkg(
 #endif /* kcg_comp_av_MergedMap_t_SDMConversionModelPkg */
 #endif /* kcg_use_av_MergedMap_t_SDMConversionModelPkg */
 
-#ifdef kcg_use_nothing_to_resume_profile_follow_T_TIU_Types_Pkg
-#ifndef kcg_comp_nothing_to_resume_profile_follow_T_TIU_Types_Pkg
-extern kcg_bool kcg_comp_nothing_to_resume_profile_follow_T_TIU_Types_Pkg(
-  nothing_to_resume_profile_follow_T_TIU_Types_Pkg *kcg_c1,
-  nothing_to_resume_profile_follow_T_TIU_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_nothing_to_resume_profile_follow_T_TIU_Types_Pkg */
-#endif /* kcg_use_nothing_to_resume_profile_follow_T_TIU_Types_Pkg */
+#ifdef kcg_use_P005_TM_TrainToTrack
+#ifndef kcg_comp_P005_TM_TrainToTrack
+extern kcg_bool kcg_comp_P005_TM_TrainToTrack(
+  P005_TM_TrainToTrack *kcg_c1,
+  P005_TM_TrainToTrack *kcg_c2);
+#endif /* kcg_comp_P005_TM_TrainToTrack */
+#endif /* kcg_use_P005_TM_TrainToTrack */
 
-#ifdef kcg_use_P015_section_int_T_TM
-#ifndef kcg_comp_P015_section_int_T_TM
-extern kcg_bool kcg_comp_P015_section_int_T_TM(
-  P015_section_int_T_TM *kcg_c1,
-  P015_section_int_T_TM *kcg_c2);
-#endif /* kcg_comp_P015_section_int_T_TM */
-#endif /* kcg_use_P015_section_int_T_TM */
+#ifdef kcg_use_DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg
+#ifndef kcg_comp_DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg
+extern kcg_bool kcg_comp_DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg(
+  DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg *kcg_c1,
+  DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg *kcg_c2);
+#endif /* kcg_comp_DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg */
+#endif /* kcg_use_DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg */
 
-#ifdef kcg_use_m32_RBC_RIU_SystemVersion_T_RCM_MsgTypes_Pkg
-#ifndef kcg_comp_m32_RBC_RIU_SystemVersion_T_RCM_MsgTypes_Pkg
-extern kcg_bool kcg_comp_m32_RBC_RIU_SystemVersion_T_RCM_MsgTypes_Pkg(
-  m32_RBC_RIU_SystemVersion_T_RCM_MsgTypes_Pkg *kcg_c1,
-  m32_RBC_RIU_SystemVersion_T_RCM_MsgTypes_Pkg *kcg_c2);
-#endif /* kcg_comp_m32_RBC_RIU_SystemVersion_T_RCM_MsgTypes_Pkg */
-#endif /* kcg_use_m32_RBC_RIU_SystemVersion_T_RCM_MsgTypes_Pkg */
-
-#ifdef kcg_use_extractTargetsMRSPACC_TargetManagement_pkg
-#ifndef kcg_comp_extractTargetsMRSPACC_TargetManagement_pkg
-extern kcg_bool kcg_comp_extractTargetsMRSPACC_TargetManagement_pkg(
-  extractTargetsMRSPACC_TargetManagement_pkg *kcg_c1,
-  extractTargetsMRSPACC_TargetManagement_pkg *kcg_c2);
-#endif /* kcg_comp_extractTargetsMRSPACC_TargetManagement_pkg */
-#endif /* kcg_use_extractTargetsMRSPACC_TargetManagement_pkg */
+#ifdef kcg_use_struct_488860
+#ifndef kcg_comp_struct_488860
+extern kcg_bool kcg_comp_struct_488860(
+  struct_488860 *kcg_c1,
+  struct_488860 *kcg_c2);
+#endif /* kcg_comp_struct_488860 */
+#endif /* kcg_use_struct_488860 */
 
 #ifdef kcg_use_MRSP_reduction_acc_TA_Export
 #ifndef kcg_comp_MRSP_reduction_acc_TA_Export
@@ -13646,22 +13611,6 @@ extern kcg_bool kcg_comp_refBGs_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg(
   refBGs_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg *kcg_c2);
 #endif /* kcg_comp_refBGs_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg */
 #endif /* kcg_use_refBGs_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg */
-
-#ifdef kcg_use_T_Reversing_Data_Level_And_Mode_Types_Pkg
-#ifndef kcg_comp_T_Reversing_Data_Level_And_Mode_Types_Pkg
-extern kcg_bool kcg_comp_T_Reversing_Data_Level_And_Mode_Types_Pkg(
-  T_Reversing_Data_Level_And_Mode_Types_Pkg *kcg_c1,
-  T_Reversing_Data_Level_And_Mode_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_T_Reversing_Data_Level_And_Mode_Types_Pkg */
-#endif /* kcg_use_T_Reversing_Data_Level_And_Mode_Types_Pkg */
-
-#ifdef kcg_use_nvkvint_T_Packet_Types_Pkg
-#ifndef kcg_comp_nvkvint_T_Packet_Types_Pkg
-extern kcg_bool kcg_comp_nvkvint_T_Packet_Types_Pkg(
-  nvkvint_T_Packet_Types_Pkg *kcg_c1,
-  nvkvint_T_Packet_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_nvkvint_T_Packet_Types_Pkg */
-#endif /* kcg_use_nvkvint_T_Packet_Types_Pkg */
 
 #ifdef kcg_use_API_RadioMsgHeader_T_API_Msg_Pkg
 #ifndef kcg_comp_API_RadioMsgHeader_T_API_Msg_Pkg
@@ -13703,13 +13652,21 @@ extern kcg_bool kcg_comp_DMI_Track_Description_T_DMI_Messages_EVC_to_DMI_Pkg(
 #endif /* kcg_comp_DMI_Track_Description_T_DMI_Messages_EVC_to_DMI_Pkg */
 #endif /* kcg_use_DMI_Track_Description_T_DMI_Messages_EVC_to_DMI_Pkg */
 
-#ifdef kcg_use_P046_section_enum_T_TM
-#ifndef kcg_comp_P046_section_enum_T_TM
-extern kcg_bool kcg_comp_P046_section_enum_T_TM(
-  P046_section_enum_T_TM *kcg_c1,
-  P046_section_enum_T_TM *kcg_c2);
-#endif /* kcg_comp_P046_section_enum_T_TM */
-#endif /* kcg_use_P046_section_enum_T_TM */
+#ifdef kcg_use_DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg
+#ifndef kcg_comp_DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg
+extern kcg_bool kcg_comp_DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg(
+  DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg *kcg_c1,
+  DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg *kcg_c2);
+#endif /* kcg_comp_DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg */
+#endif /* kcg_use_DMI_Display_Control_T_DMI_Messages_EVC_to_DMI_Pkg */
+
+#ifdef kcg_use_mobileRegistrationCmd_T_RCM_Types_Pkg
+#ifndef kcg_comp_mobileRegistrationCmd_T_RCM_Types_Pkg
+extern kcg_bool kcg_comp_mobileRegistrationCmd_T_RCM_Types_Pkg(
+  mobileRegistrationCmd_T_RCM_Types_Pkg *kcg_c1,
+  mobileRegistrationCmd_T_RCM_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_mobileRegistrationCmd_T_RCM_Types_Pkg */
+#endif /* kcg_use_mobileRegistrationCmd_T_RCM_Types_Pkg */
 
 #ifdef kcg_use_T_Data_From_Speed_Supervision_Level_And_Mode_Types_Pkg
 #ifndef kcg_comp_T_Data_From_Speed_Supervision_Level_And_Mode_Types_Pkg
@@ -13719,13 +13676,21 @@ extern kcg_bool kcg_comp_T_Data_From_Speed_Supervision_Level_And_Mode_Types_Pkg(
 #endif /* kcg_comp_T_Data_From_Speed_Supervision_Level_And_Mode_Types_Pkg */
 #endif /* kcg_use_T_Data_From_Speed_Supervision_Level_And_Mode_Types_Pkg */
 
-#ifdef kcg_use_struct_489524
-#ifndef kcg_comp_struct_489524
-extern kcg_bool kcg_comp_struct_489524(
-  struct_489524 *kcg_c1,
-  struct_489524 *kcg_c2);
-#endif /* kcg_comp_struct_489524 */
-#endif /* kcg_use_struct_489524 */
+#ifdef kcg_use_movementAuthorityForDMI_T_DMI_Types_Pkg
+#ifndef kcg_comp_movementAuthorityForDMI_T_DMI_Types_Pkg
+extern kcg_bool kcg_comp_movementAuthorityForDMI_T_DMI_Types_Pkg(
+  movementAuthorityForDMI_T_DMI_Types_Pkg *kcg_c1,
+  movementAuthorityForDMI_T_DMI_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_movementAuthorityForDMI_T_DMI_Types_Pkg */
+#endif /* kcg_use_movementAuthorityForDMI_T_DMI_Types_Pkg */
+
+#ifdef kcg_use_struct_489123
+#ifndef kcg_comp_struct_489123
+extern kcg_bool kcg_comp_struct_489123(
+  struct_489123 *kcg_c1,
+  struct_489123 *kcg_c2);
+#endif /* kcg_comp_struct_489123 */
+#endif /* kcg_use_struct_489123 */
 
 #ifdef kcg_use_DMI_DriverAck_T_DMI_Types_Pkg
 #ifndef kcg_comp_DMI_DriverAck_T_DMI_Types_Pkg
@@ -13735,13 +13700,21 @@ extern kcg_bool kcg_comp_DMI_DriverAck_T_DMI_Types_Pkg(
 #endif /* kcg_comp_DMI_DriverAck_T_DMI_Types_Pkg */
 #endif /* kcg_use_DMI_DriverAck_T_DMI_Types_Pkg */
 
-#ifdef kcg_use_RadioManagement_T_API_RadioCommunication_Pkg
-#ifndef kcg_comp_RadioManagement_T_API_RadioCommunication_Pkg
-extern kcg_bool kcg_comp_RadioManagement_T_API_RadioCommunication_Pkg(
-  RadioManagement_T_API_RadioCommunication_Pkg *kcg_c1,
-  RadioManagement_T_API_RadioCommunication_Pkg *kcg_c2);
-#endif /* kcg_comp_RadioManagement_T_API_RadioCommunication_Pkg */
-#endif /* kcg_use_RadioManagement_T_API_RadioCommunication_Pkg */
+#ifdef kcg_use_TrainPosRaw_T_InfraLib
+#ifndef kcg_comp_TrainPosRaw_T_InfraLib
+extern kcg_bool kcg_comp_TrainPosRaw_T_InfraLib(
+  TrainPosRaw_T_InfraLib *kcg_c1,
+  TrainPosRaw_T_InfraLib *kcg_c2);
+#endif /* kcg_comp_TrainPosRaw_T_InfraLib */
+#endif /* kcg_use_TrainPosRaw_T_InfraLib */
+
+#ifdef kcg_use_nvkrint_T_Packet_Types_Pkg
+#ifndef kcg_comp_nvkrint_T_Packet_Types_Pkg
+extern kcg_bool kcg_comp_nvkrint_T_Packet_Types_Pkg(
+  nvkrint_T_Packet_Types_Pkg *kcg_c1,
+  nvkrint_T_Packet_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_nvkrint_T_Packet_Types_Pkg */
+#endif /* kcg_use_nvkrint_T_Packet_Types_Pkg */
 
 #ifdef kcg_use_P065_trackside_int_T_TM
 #ifndef kcg_comp_P065_trackside_int_T_TM
@@ -14154,12 +14127,12 @@ extern kcg_bool kcg_comp_trainPosition_T_TrainPosition_Types_Pck(
 #endif /* kcg_comp_trainPosition_T_TrainPosition_Types_Pck */
 #endif /* kcg_use_trainPosition_T_TrainPosition_Types_Pck */
 
-#ifndef kcg_comp_struct_491646
-extern kcg_bool kcg_comp_struct_491646(
-  struct_491646 *kcg_c1,
-  struct_491646 *kcg_c2);
-#define kcg_use_struct_491646
-#endif /* kcg_comp_struct_491646 */
+#ifndef kcg_comp_struct_491368
+extern kcg_bool kcg_comp_struct_491368(
+  struct_491368 *kcg_c1,
+  struct_491368 *kcg_c2);
+#define kcg_use_struct_491368
+#endif /* kcg_comp_struct_491368 */
 
 #ifndef kcg_comp_LinkedBG_T_BG_Types_Pkg
 extern kcg_bool kcg_comp_LinkedBG_T_BG_Types_Pkg(
@@ -14183,21 +14156,21 @@ extern kcg_bool kcg_comp_T_Data_To_BG_Management_Level_And_Mode_Types_Pkg(
 #endif /* kcg_comp_T_Data_To_BG_Management_Level_And_Mode_Types_Pkg */
 #endif /* kcg_use_T_Data_To_BG_Management_Level_And_Mode_Types_Pkg */
 
-#ifdef kcg_use_struct_491791
-#ifndef kcg_comp_struct_491791
-extern kcg_bool kcg_comp_struct_491791(
-  struct_491791 *kcg_c1,
-  struct_491791 *kcg_c2);
-#endif /* kcg_comp_struct_491791 */
-#endif /* kcg_use_struct_491791 */
+#ifdef kcg_use_P021_section_int_T_TM
+#ifndef kcg_comp_P021_section_int_T_TM
+extern kcg_bool kcg_comp_P021_section_int_T_TM(
+  P021_section_int_T_TM *kcg_c1,
+  P021_section_int_T_TM *kcg_c2);
+#endif /* kcg_comp_P021_section_int_T_TM */
+#endif /* kcg_use_P021_section_int_T_TM */
 
-#ifdef kcg_use_linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg
-#ifndef kcg_comp_linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg
-extern kcg_bool kcg_comp_linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg(
-  linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg *kcg_c1,
-  linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg *kcg_c2);
-#endif /* kcg_comp_linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg */
-#endif /* kcg_use_linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg */
+#ifdef kcg_use_StaticSpeedSection_t_TrackAtlasTypes
+#ifndef kcg_comp_StaticSpeedSection_t_TrackAtlasTypes
+extern kcg_bool kcg_comp_StaticSpeedSection_t_TrackAtlasTypes(
+  StaticSpeedSection_t_TrackAtlasTypes *kcg_c1,
+  StaticSpeedSection_t_TrackAtlasTypes *kcg_c2);
+#endif /* kcg_comp_StaticSpeedSection_t_TrackAtlasTypes */
+#endif /* kcg_use_StaticSpeedSection_t_TrackAtlasTypes */
 
 #ifdef kcg_use_sNID_RADIO_T_Packet_TrainTypes_Pkg
 #ifndef kcg_comp_sNID_RADIO_T_Packet_TrainTypes_Pkg
@@ -14231,21 +14204,21 @@ extern kcg_bool kcg_comp_M_008_T_TM_radio_messages(
 #endif /* kcg_comp_M_008_T_TM_radio_messages */
 #endif /* kcg_use_M_008_T_TM_radio_messages */
 
-#ifdef kcg_use_struct_491898
-#ifndef kcg_comp_struct_491898
-extern kcg_bool kcg_comp_struct_491898(
-  struct_491898 *kcg_c1,
-  struct_491898 *kcg_c2);
-#endif /* kcg_comp_struct_491898 */
-#endif /* kcg_use_struct_491898 */
+#ifdef kcg_use_struct_491641
+#ifndef kcg_comp_struct_491641
+extern kcg_bool kcg_comp_struct_491641(
+  struct_491641 *kcg_c1,
+  struct_491641 *kcg_c2);
+#endif /* kcg_comp_struct_491641 */
+#endif /* kcg_use_struct_491641 */
 
-#ifdef kcg_use_struct_491925
-#ifndef kcg_comp_struct_491925
-extern kcg_bool kcg_comp_struct_491925(
-  struct_491925 *kcg_c1,
-  struct_491925 *kcg_c2);
-#endif /* kcg_comp_struct_491925 */
-#endif /* kcg_use_struct_491925 */
+#ifdef kcg_use_struct_491668
+#ifndef kcg_comp_struct_491668
+extern kcg_bool kcg_comp_struct_491668(
+  struct_491668 *kcg_c1,
+  struct_491668 *kcg_c2);
+#endif /* kcg_comp_struct_491668 */
+#endif /* kcg_use_struct_491668 */
 
 #ifdef kcg_use_M_008_int_T_TM_radio_messages
 #ifndef kcg_comp_M_008_int_T_TM_radio_messages
@@ -14319,13 +14292,13 @@ extern kcg_bool kcg_comp_P042_trackside_int_T_TM(
 #endif /* kcg_comp_P042_trackside_int_T_TM */
 #endif /* kcg_use_P042_trackside_int_T_TM */
 
-#ifdef kcg_use_struct_492127
-#ifndef kcg_comp_struct_492127
-extern kcg_bool kcg_comp_struct_492127(
-  struct_492127 *kcg_c1,
-  struct_492127 *kcg_c2);
-#endif /* kcg_comp_struct_492127 */
-#endif /* kcg_use_struct_492127 */
+#ifdef kcg_use_struct_491870
+#ifndef kcg_comp_struct_491870
+extern kcg_bool kcg_comp_struct_491870(
+  struct_491870 *kcg_c1,
+  struct_491870 *kcg_c2);
+#endif /* kcg_comp_struct_491870 */
+#endif /* kcg_use_struct_491870 */
 
 #ifdef kcg_use_trainDataStatus_T_trainData_Types_pkg
 #ifndef kcg_comp_trainDataStatus_T_trainData_Types_pkg
@@ -14367,13 +14340,13 @@ extern kcg_bool kcg_comp_P058_OBU_T_TM(
 #endif /* kcg_comp_P058_OBU_T_TM */
 #endif /* kcg_use_P058_OBU_T_TM */
 
-#ifdef kcg_use_struct_492262
-#ifndef kcg_comp_struct_492262
-extern kcg_bool kcg_comp_struct_492262(
-  struct_492262 *kcg_c1,
-  struct_492262 *kcg_c2);
-#endif /* kcg_comp_struct_492262 */
-#endif /* kcg_use_struct_492262 */
+#ifdef kcg_use_struct_492005
+#ifndef kcg_comp_struct_492005
+extern kcg_bool kcg_comp_struct_492005(
+  struct_492005 *kcg_c1,
+  struct_492005 *kcg_c2);
+#endif /* kcg_comp_struct_492005 */
+#endif /* kcg_use_struct_492005 */
 
 #ifdef kcg_use_BGCollector_T_Receive_TrackSide_Msg_Pkg
 #ifndef kcg_comp_BGCollector_T_Receive_TrackSide_Msg_Pkg
@@ -14453,13 +14426,13 @@ extern kcg_bool kcg_comp_DMI_Text_Message_T_DMI_Messages_EVC_to_DMI_Pkg(
 #define kcg_use_DMI_Text_Message_T_DMI_Messages_EVC_to_DMI_Pkg
 #endif /* kcg_comp_DMI_Text_Message_T_DMI_Messages_EVC_to_DMI_Pkg */
 
-#ifdef kcg_use_struct_492513
-#ifndef kcg_comp_struct_492513
-extern kcg_bool kcg_comp_struct_492513(
-  struct_492513 *kcg_c1,
-  struct_492513 *kcg_c2);
-#endif /* kcg_comp_struct_492513 */
-#endif /* kcg_use_struct_492513 */
+#ifdef kcg_use_struct_492256
+#ifndef kcg_comp_struct_492256
+extern kcg_bool kcg_comp_struct_492256(
+  struct_492256 *kcg_c1,
+  struct_492256 *kcg_c2);
+#endif /* kcg_comp_struct_492256 */
+#endif /* kcg_use_struct_492256 */
 
 #ifdef kcg_use_M_TrainTrack_MessageHd_T_TM_radio_messages
 #ifndef kcg_comp_M_TrainTrack_MessageHd_T_TM_radio_messages
@@ -14603,14 +14576,6 @@ extern kcg_bool kcg_comp_odometry_T_Obu_BasicTypes_Pkg(
 #define kcg_use_odometry_T_Obu_BasicTypes_Pkg
 #endif /* kcg_comp_odometry_T_Obu_BasicTypes_Pkg */
 
-#ifdef kcg_use_DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg
-#ifndef kcg_comp_DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg
-extern kcg_bool kcg_comp_DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg(
-  DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg *kcg_c1,
-  DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg *kcg_c2);
-#endif /* kcg_comp_DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg */
-#endif /* kcg_use_DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg */
-
 #ifdef kcg_use_p131_q_rbcTransitionOrder_T_Handover_Pkg
 #ifndef kcg_comp_p131_q_rbcTransitionOrder_T_Handover_Pkg
 extern kcg_bool kcg_comp_p131_q_rbcTransitionOrder_T_Handover_Pkg(
@@ -14618,6 +14583,14 @@ extern kcg_bool kcg_comp_p131_q_rbcTransitionOrder_T_Handover_Pkg(
   p131_q_rbcTransitionOrder_T_Handover_Pkg *kcg_c2);
 #endif /* kcg_comp_p131_q_rbcTransitionOrder_T_Handover_Pkg */
 #endif /* kcg_use_p131_q_rbcTransitionOrder_T_Handover_Pkg */
+
+#ifdef kcg_use_NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store
+#ifndef kcg_comp_NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store
+extern kcg_bool kcg_comp_NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store(
+  NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store *kcg_c1,
+  NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store *kcg_c2);
+#endif /* kcg_comp_NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store */
+#endif /* kcg_use_NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store */
 
 #ifdef kcg_use_outPackets_T_Common_Types_Pkg
 #ifndef kcg_comp_outPackets_T_Common_Types_Pkg
@@ -14627,12 +14600,12 @@ extern kcg_bool kcg_comp_outPackets_T_Common_Types_Pkg(
 #endif /* kcg_comp_outPackets_T_Common_Types_Pkg */
 #endif /* kcg_use_outPackets_T_Common_Types_Pkg */
 
-#ifndef kcg_comp_struct_493015
-extern kcg_bool kcg_comp_struct_493015(
-  struct_493015 *kcg_c1,
-  struct_493015 *kcg_c2);
-#define kcg_use_struct_493015
-#endif /* kcg_comp_struct_493015 */
+#ifndef kcg_comp_struct_492780
+extern kcg_bool kcg_comp_struct_492780(
+  struct_492780 *kcg_c1,
+  struct_492780 *kcg_c2);
+#define kcg_use_struct_492780
+#endif /* kcg_comp_struct_492780 */
 
 #ifdef kcg_use_Message_EVC_to_Train_Interface_T_TIU_Types_Pkg
 #ifndef kcg_comp_Message_EVC_to_Train_Interface_T_TIU_Types_Pkg
@@ -14650,14 +14623,6 @@ extern kcg_bool kcg_comp_trainProperties_T_TrainPosition_Types_Pck(
 #endif /* kcg_comp_trainProperties_T_TrainPosition_Types_Pck */
 #endif /* kcg_use_trainProperties_T_TrainPosition_Types_Pck */
 
-#ifdef kcg_use_PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg
-#ifndef kcg_comp_PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg
-extern kcg_bool kcg_comp_PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg(
-  PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg *kcg_c1,
-  PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg *kcg_c2);
-#endif /* kcg_comp_PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg */
-#endif /* kcg_use_PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg */
-
 #ifdef kcg_use_PosRepParams_T
 #ifndef kcg_comp_PosRepParams_T
 extern kcg_bool kcg_comp_PosRepParams_T(
@@ -14665,21 +14630,6 @@ extern kcg_bool kcg_comp_PosRepParams_T(
   PosRepParams_T *kcg_c2);
 #endif /* kcg_comp_PosRepParams_T */
 #endif /* kcg_use_PosRepParams_T */
-
-#ifdef kcg_use_DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg
-#ifndef kcg_comp_DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg
-extern kcg_bool kcg_comp_DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg(
-  DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg *kcg_c1,
-  DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg *kcg_c2);
-#endif /* kcg_comp_DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg */
-#endif /* kcg_use_DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg */
-
-#ifndef kcg_comp_Brake_command_T_TIU_Types_Pkg
-extern kcg_bool kcg_comp_Brake_command_T_TIU_Types_Pkg(
-  Brake_command_T_TIU_Types_Pkg *kcg_c1,
-  Brake_command_T_TIU_Types_Pkg *kcg_c2);
-#define kcg_use_Brake_command_T_TIU_Types_Pkg
-#endif /* kcg_comp_Brake_command_T_TIU_Types_Pkg */
 
 #ifdef kcg_use_T_Data_From_Localisation_Level_And_Mode_Types_Pkg
 #ifndef kcg_comp_T_Data_From_Localisation_Level_And_Mode_Types_Pkg
@@ -14689,45 +14639,77 @@ extern kcg_bool kcg_comp_T_Data_From_Localisation_Level_And_Mode_Types_Pkg(
 #endif /* kcg_comp_T_Data_From_Localisation_Level_And_Mode_Types_Pkg */
 #endif /* kcg_use_T_Data_From_Localisation_Level_And_Mode_Types_Pkg */
 
-#ifdef kcg_use_ErrorMessage_T_ProvidePositionReport_Pkg
-#ifndef kcg_comp_ErrorMessage_T_ProvidePositionReport_Pkg
-extern kcg_bool kcg_comp_ErrorMessage_T_ProvidePositionReport_Pkg(
-  ErrorMessage_T_ProvidePositionReport_Pkg *kcg_c1,
-  ErrorMessage_T_ProvidePositionReport_Pkg *kcg_c2);
-#endif /* kcg_comp_ErrorMessage_T_ProvidePositionReport_Pkg */
-#endif /* kcg_use_ErrorMessage_T_ProvidePositionReport_Pkg */
+#ifdef kcg_use_Target_real_T_TargetManagement_types
+#ifndef kcg_comp_Target_real_T_TargetManagement_types
+extern kcg_bool kcg_comp_Target_real_T_TargetManagement_types(
+  Target_real_T_TargetManagement_types *kcg_c1,
+  Target_real_T_TargetManagement_types *kcg_c2);
+#endif /* kcg_comp_Target_real_T_TargetManagement_types */
+#endif /* kcg_use_Target_real_T_TargetManagement_types */
 
-#ifdef kcg_use_struct_493287
-#ifndef kcg_comp_struct_493287
-extern kcg_bool kcg_comp_struct_493287(
-  struct_493287 *kcg_c1,
-  struct_493287 *kcg_c2);
-#endif /* kcg_comp_struct_493287 */
-#endif /* kcg_use_struct_493287 */
+#ifdef kcg_use_struct_493006
+#ifndef kcg_comp_struct_493006
+extern kcg_bool kcg_comp_struct_493006(
+  struct_493006 *kcg_c1,
+  struct_493006 *kcg_c2);
+#endif /* kcg_comp_struct_493006 */
+#endif /* kcg_use_struct_493006 */
 
-#ifdef kcg_use_M_voltage_T_TIU_Types_Pkg
-#ifndef kcg_comp_M_voltage_T_TIU_Types_Pkg
-extern kcg_bool kcg_comp_M_voltage_T_TIU_Types_Pkg(
-  M_voltage_T_TIU_Types_Pkg *kcg_c1,
-  M_voltage_T_TIU_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_M_voltage_T_TIU_Types_Pkg */
-#endif /* kcg_use_M_voltage_T_TIU_Types_Pkg */
+#ifdef kcg_use_struct_493052
+#ifndef kcg_comp_struct_493052
+extern kcg_bool kcg_comp_struct_493052(
+  struct_493052 *kcg_c1,
+  struct_493052 *kcg_c2);
+#endif /* kcg_comp_struct_493052 */
+#endif /* kcg_use_struct_493052 */
 
-#ifdef kcg_use_P003_permanent_data_T_TM_baseline2
-#ifndef kcg_comp_P003_permanent_data_T_TM_baseline2
-extern kcg_bool kcg_comp_P003_permanent_data_T_TM_baseline2(
-  P003_permanent_data_T_TM_baseline2 *kcg_c1,
-  P003_permanent_data_T_TM_baseline2 *kcg_c2);
-#endif /* kcg_comp_P003_permanent_data_T_TM_baseline2 */
-#endif /* kcg_use_P003_permanent_data_T_TM_baseline2 */
+#ifdef kcg_use_MAReqParams_T
+#ifndef kcg_comp_MAReqParams_T
+extern kcg_bool kcg_comp_MAReqParams_T(
+  MAReqParams_T *kcg_c1,
+  MAReqParams_T *kcg_c2);
+#endif /* kcg_comp_MAReqParams_T */
+#endif /* kcg_use_MAReqParams_T */
 
-#ifdef kcg_use_TrainToTrackStatus_T_BG_Types_Pkg
-#ifndef kcg_comp_TrainToTrackStatus_T_BG_Types_Pkg
-extern kcg_bool kcg_comp_TrainToTrackStatus_T_BG_Types_Pkg(
-  TrainToTrackStatus_T_BG_Types_Pkg *kcg_c1,
-  TrainToTrackStatus_T_BG_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_TrainToTrackStatus_T_BG_Types_Pkg */
-#endif /* kcg_use_TrainToTrackStatus_T_BG_Types_Pkg */
+#ifdef kcg_use_T_Reversing_Data_Level_And_Mode_Types_Pkg
+#ifndef kcg_comp_T_Reversing_Data_Level_And_Mode_Types_Pkg
+extern kcg_bool kcg_comp_T_Reversing_Data_Level_And_Mode_Types_Pkg(
+  T_Reversing_Data_Level_And_Mode_Types_Pkg *kcg_c1,
+  T_Reversing_Data_Level_And_Mode_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_T_Reversing_Data_Level_And_Mode_Types_Pkg */
+#endif /* kcg_use_T_Reversing_Data_Level_And_Mode_Types_Pkg */
+
+#ifdef kcg_use_DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg
+#ifndef kcg_comp_DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg
+extern kcg_bool kcg_comp_DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg(
+  DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg *kcg_c1,
+  DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg *kcg_c2);
+#endif /* kcg_comp_DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg */
+#endif /* kcg_use_DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg */
+
+#ifdef kcg_use_P137_StopIfInStaffResponsible_T_Packet_Types_Pkg
+#ifndef kcg_comp_P137_StopIfInStaffResponsible_T_Packet_Types_Pkg
+extern kcg_bool kcg_comp_P137_StopIfInStaffResponsible_T_Packet_Types_Pkg(
+  P137_StopIfInStaffResponsible_T_Packet_Types_Pkg *kcg_c1,
+  P137_StopIfInStaffResponsible_T_Packet_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_P137_StopIfInStaffResponsible_T_Packet_Types_Pkg */
+#endif /* kcg_use_P137_StopIfInStaffResponsible_T_Packet_Types_Pkg */
+
+#ifdef kcg_use_P058_section_enum_T_TM
+#ifndef kcg_comp_P058_section_enum_T_TM
+extern kcg_bool kcg_comp_P058_section_enum_T_TM(
+  P058_section_enum_T_TM *kcg_c1,
+  P058_section_enum_T_TM *kcg_c2);
+#endif /* kcg_comp_P058_section_enum_T_TM */
+#endif /* kcg_use_P058_section_enum_T_TM */
+
+#ifdef kcg_use_P015_section_int_T_TM
+#ifndef kcg_comp_P015_section_int_T_TM
+extern kcg_bool kcg_comp_P015_section_int_T_TM(
+  P015_section_int_T_TM *kcg_c1,
+  P015_section_int_T_TM *kcg_c2);
+#endif /* kcg_comp_P015_section_int_T_TM */
+#endif /* kcg_use_P015_section_int_T_TM */
 
 #ifdef kcg_use_trainData_Events_T_trainData_Types_pkg
 #ifndef kcg_comp_trainData_Events_T_trainData_Types_pkg
@@ -14737,6 +14719,22 @@ extern kcg_bool kcg_comp_trainData_Events_T_trainData_Types_pkg(
 #endif /* kcg_comp_trainData_Events_T_trainData_Types_pkg */
 #endif /* kcg_use_trainData_Events_T_trainData_Types_pkg */
 
+#ifdef kcg_use_struct_493703
+#ifndef kcg_comp_struct_493703
+extern kcg_bool kcg_comp_struct_493703(
+  struct_493703 *kcg_c1,
+  struct_493703 *kcg_c2);
+#endif /* kcg_comp_struct_493703 */
+#endif /* kcg_use_struct_493703 */
+
+#ifdef kcg_use_P046_section_enum_T_TM
+#ifndef kcg_comp_P046_section_enum_T_TM
+extern kcg_bool kcg_comp_P046_section_enum_T_TM(
+  P046_section_enum_T_TM *kcg_c1,
+  P046_section_enum_T_TM *kcg_c2);
+#endif /* kcg_comp_P046_section_enum_T_TM */
+#endif /* kcg_use_P046_section_enum_T_TM */
+
 #ifndef kcg_comp_CompressedPackets_T_Common_Types_Pkg
 extern kcg_bool kcg_comp_CompressedPackets_T_Common_Types_Pkg(
   CompressedPackets_T_Common_Types_Pkg *kcg_c1,
@@ -14744,28 +14742,21 @@ extern kcg_bool kcg_comp_CompressedPackets_T_Common_Types_Pkg(
 #define kcg_use_CompressedPackets_T_Common_Types_Pkg
 #endif /* kcg_comp_CompressedPackets_T_Common_Types_Pkg */
 
-#ifndef kcg_comp_LocWithInAcc_T_Obu_BasicTypes_Pkg
-extern kcg_bool kcg_comp_LocWithInAcc_T_Obu_BasicTypes_Pkg(
-  LocWithInAcc_T_Obu_BasicTypes_Pkg *kcg_c1,
-  LocWithInAcc_T_Obu_BasicTypes_Pkg *kcg_c2);
-#define kcg_use_LocWithInAcc_T_Obu_BasicTypes_Pkg
-#endif /* kcg_comp_LocWithInAcc_T_Obu_BasicTypes_Pkg */
+#ifdef kcg_use_EOA_real_T_TargetManagement_types
+#ifndef kcg_comp_EOA_real_T_TargetManagement_types
+extern kcg_bool kcg_comp_EOA_real_T_TargetManagement_types(
+  EOA_real_T_TargetManagement_types *kcg_c1,
+  EOA_real_T_TargetManagement_types *kcg_c2);
+#endif /* kcg_comp_EOA_real_T_TargetManagement_types */
+#endif /* kcg_use_EOA_real_T_TargetManagement_types */
 
-#ifdef kcg_use_m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg
-#ifndef kcg_comp_m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg
-extern kcg_bool kcg_comp_m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg(
-  m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg *kcg_c1,
-  m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg *kcg_c2);
-#endif /* kcg_comp_m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg */
-#endif /* kcg_use_m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg */
-
-#ifdef kcg_use_Diff_T_Packet_Types_Pkg
-#ifndef kcg_comp_Diff_T_Packet_Types_Pkg
-extern kcg_bool kcg_comp_Diff_T_Packet_Types_Pkg(
-  Diff_T_Packet_Types_Pkg *kcg_c1,
-  Diff_T_Packet_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_Diff_T_Packet_Types_Pkg */
-#endif /* kcg_use_Diff_T_Packet_Types_Pkg */
+#ifdef kcg_use_linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg
+#ifndef kcg_comp_linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg
+extern kcg_bool kcg_comp_linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg(
+  linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg *kcg_c1,
+  linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg *kcg_c2);
+#endif /* kcg_comp_linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg */
+#endif /* kcg_use_linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg */
 
 #ifdef kcg_use_PT3_OnboardTelephoneNumbers_T_Packet_TrainTypes_Pkg
 #ifndef kcg_comp_PT3_OnboardTelephoneNumbers_T_Packet_TrainTypes_Pkg
@@ -14775,13 +14766,49 @@ extern kcg_bool kcg_comp_PT3_OnboardTelephoneNumbers_T_Packet_TrainTypes_Pkg(
 #endif /* kcg_comp_PT3_OnboardTelephoneNumbers_T_Packet_TrainTypes_Pkg */
 #endif /* kcg_use_PT3_OnboardTelephoneNumbers_T_Packet_TrainTypes_Pkg */
 
-#ifdef kcg_use_Type_I_train_commands_T_TIU_Types_Pkg
-#ifndef kcg_comp_Type_I_train_commands_T_TIU_Types_Pkg
-extern kcg_bool kcg_comp_Type_I_train_commands_T_TIU_Types_Pkg(
-  Type_I_train_commands_T_TIU_Types_Pkg *kcg_c1,
-  Type_I_train_commands_T_TIU_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_Type_I_train_commands_T_TIU_Types_Pkg */
-#endif /* kcg_use_Type_I_train_commands_T_TIU_Types_Pkg */
+#ifdef kcg_use_bec_t_TargetLimits_Pkg
+#ifndef kcg_comp_bec_t_TargetLimits_Pkg
+extern kcg_bool kcg_comp_bec_t_TargetLimits_Pkg(
+  bec_t_TargetLimits_Pkg *kcg_c1,
+  bec_t_TargetLimits_Pkg *kcg_c2);
+#endif /* kcg_comp_bec_t_TargetLimits_Pkg */
+#endif /* kcg_use_bec_t_TargetLimits_Pkg */
+
+#ifndef kcg_comp_MetadataElement_T_Common_Types_Pkg
+extern kcg_bool kcg_comp_MetadataElement_T_Common_Types_Pkg(
+  MetadataElement_T_Common_Types_Pkg *kcg_c1,
+  MetadataElement_T_Common_Types_Pkg *kcg_c2);
+#define kcg_use_MetadataElement_T_Common_Types_Pkg
+#endif /* kcg_comp_MetadataElement_T_Common_Types_Pkg */
+
+#ifdef kcg_use_T_Mode_Profile_Level_And_Mode_Types_Pkg
+#ifndef kcg_comp_T_Mode_Profile_Level_And_Mode_Types_Pkg
+extern kcg_bool kcg_comp_T_Mode_Profile_Level_And_Mode_Types_Pkg(
+  T_Mode_Profile_Level_And_Mode_Types_Pkg *kcg_c1,
+  T_Mode_Profile_Level_And_Mode_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_T_Mode_Profile_Level_And_Mode_Types_Pkg */
+#endif /* kcg_use_T_Mode_Profile_Level_And_Mode_Types_Pkg */
+
+#ifdef kcg_use_Clock_T
+#ifndef kcg_comp_Clock_T
+extern kcg_bool kcg_comp_Clock_T(Clock_T *kcg_c1, Clock_T *kcg_c2);
+#endif /* kcg_comp_Clock_T */
+#endif /* kcg_use_Clock_T */
+
+#ifdef kcg_use_struct_493943
+#ifndef kcg_comp_struct_493943
+extern kcg_bool kcg_comp_struct_493943(
+  struct_493943 *kcg_c1,
+  struct_493943 *kcg_c2);
+#endif /* kcg_comp_struct_493943 */
+#endif /* kcg_use_struct_493943 */
+
+#ifndef kcg_comp_Brake_command_T_TIU_Types_Pkg
+extern kcg_bool kcg_comp_Brake_command_T_TIU_Types_Pkg(
+  Brake_command_T_TIU_Types_Pkg *kcg_c1,
+  Brake_command_T_TIU_Types_Pkg *kcg_c2);
+#define kcg_use_Brake_command_T_TIU_Types_Pkg
+#endif /* kcg_comp_Brake_command_T_TIU_Types_Pkg */
 
 #ifdef kcg_use_DMI_Driver_Identifier_T_DMI_Messages_Bothways_Pkg
 #ifndef kcg_comp_DMI_Driver_Identifier_T_DMI_Messages_Bothways_Pkg
@@ -14790,22 +14817,6 @@ extern kcg_bool kcg_comp_DMI_Driver_Identifier_T_DMI_Messages_Bothways_Pkg(
   DMI_Driver_Identifier_T_DMI_Messages_Bothways_Pkg *kcg_c2);
 #endif /* kcg_comp_DMI_Driver_Identifier_T_DMI_Messages_Bothways_Pkg */
 #endif /* kcg_use_DMI_Driver_Identifier_T_DMI_Messages_Bothways_Pkg */
-
-#ifdef kcg_use_P63_BaliseInSRAuthority_T_Packet_Types_Pkg
-#ifndef kcg_comp_P63_BaliseInSRAuthority_T_Packet_Types_Pkg
-extern kcg_bool kcg_comp_P63_BaliseInSRAuthority_T_Packet_Types_Pkg(
-  P63_BaliseInSRAuthority_T_Packet_Types_Pkg *kcg_c1,
-  P63_BaliseInSRAuthority_T_Packet_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_P63_BaliseInSRAuthority_T_Packet_Types_Pkg */
-#endif /* kcg_use_P63_BaliseInSRAuthority_T_Packet_Types_Pkg */
-
-#ifdef kcg_use_P045_trackside_int_T_TM
-#ifndef kcg_comp_P045_trackside_int_T_TM
-extern kcg_bool kcg_comp_P045_trackside_int_T_TM(
-  P045_trackside_int_T_TM *kcg_c1,
-  P045_trackside_int_T_TM *kcg_c2);
-#endif /* kcg_comp_P045_trackside_int_T_TM */
-#endif /* kcg_use_P045_trackside_int_T_TM */
 
 #ifdef kcg_use_ASafe_T_CalcBrakingCurves_types
 #ifndef kcg_comp_ASafe_T_CalcBrakingCurves_types
@@ -14822,22 +14833,6 @@ extern kcg_bool kcg_comp_DataForDMI_t_TrackAtlasTypes(
   DataForDMI_t_TrackAtlasTypes *kcg_c2);
 #endif /* kcg_comp_DataForDMI_t_TrackAtlasTypes */
 #endif /* kcg_use_DataForDMI_t_TrackAtlasTypes */
-
-#ifdef kcg_use_mobileRegistrationCmd_T_RCM_Types_Pkg
-#ifndef kcg_comp_mobileRegistrationCmd_T_RCM_Types_Pkg
-extern kcg_bool kcg_comp_mobileRegistrationCmd_T_RCM_Types_Pkg(
-  mobileRegistrationCmd_T_RCM_Types_Pkg *kcg_c1,
-  mobileRegistrationCmd_T_RCM_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_mobileRegistrationCmd_T_RCM_Types_Pkg */
-#endif /* kcg_use_mobileRegistrationCmd_T_RCM_Types_Pkg */
-
-#ifdef kcg_use_odometryFactors_T_Toolbox
-#ifndef kcg_comp_odometryFactors_T_Toolbox
-extern kcg_bool kcg_comp_odometryFactors_T_Toolbox(
-  odometryFactors_T_Toolbox *kcg_c1,
-  odometryFactors_T_Toolbox *kcg_c2);
-#endif /* kcg_comp_odometryFactors_T_Toolbox */
-#endif /* kcg_use_odometryFactors_T_Toolbox */
 
 #ifdef kcg_use_T_AcknoledgementRequest_Level_And_Mode_Types_Pkg
 #ifndef kcg_comp_T_AcknoledgementRequest_Level_And_Mode_Types_Pkg
@@ -14871,22 +14866,6 @@ extern kcg_bool kcg_comp_MRSP_internal_section_T_TargetManagement_types(
 #endif /* kcg_comp_MRSP_internal_section_T_TargetManagement_types */
 #endif /* kcg_use_MRSP_internal_section_T_TargetManagement_types */
 
-#ifdef kcg_use_P027V1_section_enum_qdiff_T_TM_baseline2
-#ifndef kcg_comp_P027V1_section_enum_qdiff_T_TM_baseline2
-extern kcg_bool kcg_comp_P027V1_section_enum_qdiff_T_TM_baseline2(
-  P027V1_section_enum_qdiff_T_TM_baseline2 *kcg_c1,
-  P027V1_section_enum_qdiff_T_TM_baseline2 *kcg_c2);
-#endif /* kcg_comp_P027V1_section_enum_qdiff_T_TM_baseline2 */
-#endif /* kcg_use_P027V1_section_enum_qdiff_T_TM_baseline2 */
-
-#ifdef kcg_use_struct_494268
-#ifndef kcg_comp_struct_494268
-extern kcg_bool kcg_comp_struct_494268(
-  struct_494268 *kcg_c1,
-  struct_494268 *kcg_c2);
-#endif /* kcg_comp_struct_494268 */
-#endif /* kcg_use_struct_494268 */
-
 #ifdef kcg_use_P027V1_section_int_T_TM_baseline2
 #ifndef kcg_comp_P027V1_section_int_T_TM_baseline2
 extern kcg_bool kcg_comp_P027V1_section_int_T_TM_baseline2(
@@ -14894,14 +14873,6 @@ extern kcg_bool kcg_comp_P027V1_section_int_T_TM_baseline2(
   P027V1_section_int_T_TM_baseline2 *kcg_c2);
 #endif /* kcg_comp_P027V1_section_int_T_TM_baseline2 */
 #endif /* kcg_use_P027V1_section_int_T_TM_baseline2 */
-
-#ifdef kcg_use_nvkrint_T_Packet_Types_Pkg
-#ifndef kcg_comp_nvkrint_T_Packet_Types_Pkg
-extern kcg_bool kcg_comp_nvkrint_T_Packet_Types_Pkg(
-  nvkrint_T_Packet_Types_Pkg *kcg_c1,
-  nvkrint_T_Packet_Types_Pkg *kcg_c2);
-#endif /* kcg_comp_nvkrint_T_Packet_Types_Pkg */
-#endif /* kcg_use_nvkrint_T_Packet_Types_Pkg */
 
 #ifdef kcg_use_P044_TM_TrainToTrack
 #ifndef kcg_comp_P044_TM_TrainToTrack
@@ -14959,6 +14930,14 @@ extern kcg_bool kcg_comp_RBC_Data_T_RBC_DataBus_Pkg(
 #endif /* kcg_comp_RBC_Data_T_RBC_DataBus_Pkg */
 #endif /* kcg_use_RBC_Data_T_RBC_DataBus_Pkg */
 
+#ifdef kcg_use_struct_494407
+#ifndef kcg_comp_struct_494407
+extern kcg_bool kcg_comp_struct_494407(
+  struct_494407 *kcg_c1,
+  struct_494407 *kcg_c2);
+#endif /* kcg_comp_struct_494407 */
+#endif /* kcg_use_struct_494407 */
+
 #ifdef kcg_use_API_TrackSideInput_T_API_Msg_Pkg
 #ifndef kcg_comp_API_TrackSideInput_T_API_Msg_Pkg
 extern kcg_bool kcg_comp_API_TrackSideInput_T_API_Msg_Pkg(
@@ -15006,28 +14985,28 @@ extern kcg_bool kcg_comp_dmiOutputs_T_manage_DMI_Output_Pkg(
 #endif /* kcg_comp_dmiOutputs_T_manage_DMI_Output_Pkg */
 #endif /* kcg_use_dmiOutputs_T_manage_DMI_Output_Pkg */
 
+#ifdef kcg_use_extractTargetsMRSPACC_TargetManagement_pkg
+#ifndef kcg_comp_extractTargetsMRSPACC_TargetManagement_pkg
+extern kcg_bool kcg_comp_extractTargetsMRSPACC_TargetManagement_pkg(
+  extractTargetsMRSPACC_TargetManagement_pkg *kcg_c1,
+  extractTargetsMRSPACC_TargetManagement_pkg *kcg_c2);
+#endif /* kcg_comp_extractTargetsMRSPACC_TargetManagement_pkg */
+#endif /* kcg_use_extractTargetsMRSPACC_TargetManagement_pkg */
+
+#ifdef kcg_use_M_current_T_TIU_Types_Pkg
+#ifndef kcg_comp_M_current_T_TIU_Types_Pkg
+extern kcg_bool kcg_comp_M_current_T_TIU_Types_Pkg(
+  M_current_T_TIU_Types_Pkg *kcg_c1,
+  M_current_T_TIU_Types_Pkg *kcg_c2);
+#endif /* kcg_comp_M_current_T_TIU_Types_Pkg */
+#endif /* kcg_use_M_current_T_TIU_Types_Pkg */
+
 #ifndef kcg_comp_passedBG_T_BG_Types_Pkg
 extern kcg_bool kcg_comp_passedBG_T_BG_Types_Pkg(
   passedBG_T_BG_Types_Pkg *kcg_c1,
   passedBG_T_BG_Types_Pkg *kcg_c2);
 #define kcg_use_passedBG_T_BG_Types_Pkg
 #endif /* kcg_comp_passedBG_T_BG_Types_Pkg */
-
-#ifdef kcg_use_P004_TM_TrainToTrack
-#ifndef kcg_comp_P004_TM_TrainToTrack
-extern kcg_bool kcg_comp_P004_TM_TrainToTrack(
-  P004_TM_TrainToTrack *kcg_c1,
-  P004_TM_TrainToTrack *kcg_c2);
-#endif /* kcg_comp_P004_TM_TrainToTrack */
-#endif /* kcg_use_P004_TM_TrainToTrack */
-
-#ifdef kcg_use_PT5_TrainRunningNumber_Packet_TrainTypes_Pkg
-#ifndef kcg_comp_PT5_TrainRunningNumber_Packet_TrainTypes_Pkg
-extern kcg_bool kcg_comp_PT5_TrainRunningNumber_Packet_TrainTypes_Pkg(
-  PT5_TrainRunningNumber_Packet_TrainTypes_Pkg *kcg_c1,
-  PT5_TrainRunningNumber_Packet_TrainTypes_Pkg *kcg_c2);
-#endif /* kcg_comp_PT5_TrainRunningNumber_Packet_TrainTypes_Pkg */
-#endif /* kcg_use_PT5_TrainRunningNumber_Packet_TrainTypes_Pkg */
 
 #ifdef kcg_use_array_bool_8
 #ifndef kcg_comp_array_bool_8
@@ -15037,35 +15016,27 @@ extern kcg_bool kcg_comp_array_bool_8(
 #endif /* kcg_comp_array_bool_8 */
 #endif /* kcg_use_array_bool_8 */
 
-#ifdef kcg_use_array_int64_891
-#ifndef kcg_comp_array_int64_891
-extern kcg_bool kcg_comp_array_int64_891(
-  array_int64_891 *kcg_c1,
-  array_int64_891 *kcg_c2);
-#endif /* kcg_comp_array_int64_891 */
-#endif /* kcg_use_array_int64_891 */
-
 #ifdef kcg_use_array
 #ifndef kcg_comp_array
 extern kcg_bool kcg_comp_array(array *kcg_c1, array *kcg_c2);
 #endif /* kcg_comp_array */
 #endif /* kcg_use_array */
 
-#ifdef kcg_use_array_int64_888
-#ifndef kcg_comp_array_int64_888
-extern kcg_bool kcg_comp_array_int64_888(
-  array_int64_888 *kcg_c1,
-  array_int64_888 *kcg_c2);
-#endif /* kcg_comp_array_int64_888 */
-#endif /* kcg_use_array_int64_888 */
+#ifdef kcg_use_P044_other_data_TM_TrainToTrack
+#ifndef kcg_comp_P044_other_data_TM_TrainToTrack
+extern kcg_bool kcg_comp_P044_other_data_TM_TrainToTrack(
+  P044_other_data_TM_TrainToTrack *kcg_c1,
+  P044_other_data_TM_TrainToTrack *kcg_c2);
+#endif /* kcg_comp_P044_other_data_TM_TrainToTrack */
+#endif /* kcg_use_P044_other_data_TM_TrainToTrack */
 
-#ifdef kcg_use_array_int64_307
-#ifndef kcg_comp_array_int64_307
-extern kcg_bool kcg_comp_array_int64_307(
-  array_int64_307 *kcg_c1,
-  array_int64_307 *kcg_c2);
-#endif /* kcg_comp_array_int64_307 */
-#endif /* kcg_use_array_int64_307 */
+#ifdef kcg_use_array_int32_496
+#ifndef kcg_comp_array_int32_496
+extern kcg_bool kcg_comp_array_int32_496(
+  array_int32_496 *kcg_c1,
+  array_int32_496 *kcg_c2);
+#endif /* kcg_comp_array_int32_496 */
+#endif /* kcg_use_array_int32_496 */
 
 #ifdef kcg_use_GradientProfile_real_compensated_t_SDM_GradientAcceleration_types
 #ifndef kcg_comp_GradientProfile_real_compensated_t_SDM_GradientAcceleration_types
@@ -15082,14 +15053,6 @@ extern kcg_bool kcg_comp_A_gradient_t_SDM_GradientAcceleration_types(
   A_gradient_t_SDM_GradientAcceleration_types *kcg_c2);
 #endif /* kcg_comp_A_gradient_t_SDM_GradientAcceleration_types */
 #endif /* kcg_use_A_gradient_t_SDM_GradientAcceleration_types */
-
-#ifdef kcg_use_array_int64_64
-#ifndef kcg_comp_array_int64_64
-extern kcg_bool kcg_comp_array_int64_64(
-  array_int64_64 *kcg_c1,
-  array_int64_64 *kcg_c2);
-#endif /* kcg_comp_array_int64_64 */
-#endif /* kcg_use_array_int64_64 */
 
 #ifdef kcg_use__2_array
 #ifndef kcg_comp__2_array
@@ -15109,12 +15072,6 @@ extern kcg_bool kcg_comp__4_array(_4_array *kcg_c1, _4_array *kcg_c2);
 #endif /* kcg_comp__4_array */
 #endif /* kcg_use__4_array */
 
-#ifdef kcg_use__5_array
-#ifndef kcg_comp__5_array
-extern kcg_bool kcg_comp__5_array(_5_array *kcg_c1, _5_array *kcg_c2);
-#endif /* kcg_comp__5_array */
-#endif /* kcg_use__5_array */
-
 #ifdef kcg_use_M_TrainTrackRadioOutputBuffer_t_TM_lib_internal
 #ifndef kcg_comp_M_TrainTrackRadioOutputBuffer_t_TM_lib_internal
 extern kcg_bool kcg_comp_M_TrainTrackRadioOutputBuffer_t_TM_lib_internal(
@@ -15122,36 +15079,6 @@ extern kcg_bool kcg_comp_M_TrainTrackRadioOutputBuffer_t_TM_lib_internal(
   M_TrainTrackRadioOutputBuffer_t_TM_lib_internal *kcg_c2);
 #endif /* kcg_comp_M_TrainTrackRadioOutputBuffer_t_TM_lib_internal */
 #endif /* kcg_use_M_TrainTrackRadioOutputBuffer_t_TM_lib_internal */
-
-#ifdef kcg_use_array_int64_894
-#ifndef kcg_comp_array_int64_894
-extern kcg_bool kcg_comp_array_int64_894(
-  array_int64_894 *kcg_c1,
-  array_int64_894 *kcg_c2);
-#endif /* kcg_comp_array_int64_894 */
-#endif /* kcg_use_array_int64_894 */
-
-#ifdef kcg_use_array_int64_70
-#ifndef kcg_comp_array_int64_70
-extern kcg_bool kcg_comp_array_int64_70(
-  array_int64_70 *kcg_c1,
-  array_int64_70 *kcg_c2);
-#endif /* kcg_comp_array_int64_70 */
-#endif /* kcg_use_array_int64_70 */
-
-#ifdef kcg_use_array_int64_396
-#ifndef kcg_comp_array_int64_396
-extern kcg_bool kcg_comp_array_int64_396(
-  array_int64_396 *kcg_c1,
-  array_int64_396 *kcg_c2);
-#endif /* kcg_comp_array_int64_396 */
-#endif /* kcg_use_array_int64_396 */
-
-#ifdef kcg_use__6_array
-#ifndef kcg_comp__6_array
-extern kcg_bool kcg_comp__6_array(_6_array *kcg_c1, _6_array *kcg_c2);
-#endif /* kcg_comp__6_array */
-#endif /* kcg_use__6_array */
 
 #ifdef kcg_use_array_int32_4
 #ifndef kcg_comp_array_int32_4
@@ -15161,31 +15088,25 @@ extern kcg_bool kcg_comp_array_int32_4(
 #endif /* kcg_comp_array_int32_4 */
 #endif /* kcg_use_array_int32_4 */
 
-#ifdef kcg_use_DMI_EVC_Level_Data_int_array_T_DATA
-#ifndef kcg_comp_DMI_EVC_Level_Data_int_array_T_DATA
-extern kcg_bool kcg_comp_DMI_EVC_Level_Data_int_array_T_DATA(
-  DMI_EVC_Level_Data_int_array_T_DATA *kcg_c1,
-  DMI_EVC_Level_Data_int_array_T_DATA *kcg_c2);
-#endif /* kcg_comp_DMI_EVC_Level_Data_int_array_T_DATA */
-#endif /* kcg_use_DMI_EVC_Level_Data_int_array_T_DATA */
+#ifdef kcg_use_array_int32_499
+#ifndef kcg_comp_array_int32_499
+extern kcg_bool kcg_comp_array_int32_499(
+  array_int32_499 *kcg_c1,
+  array_int32_499 *kcg_c2);
+#endif /* kcg_comp_array_int32_499 */
+#endif /* kcg_use_array_int32_499 */
 
-#ifdef kcg_use__7_array
-#ifndef kcg_comp__7_array
-extern kcg_bool kcg_comp__7_array(_7_array *kcg_c1, _7_array *kcg_c2);
-#endif /* kcg_comp__7_array */
-#endif /* kcg_use__7_array */
+#ifdef kcg_use__5_array
+#ifndef kcg_comp__5_array
+extern kcg_bool kcg_comp__5_array(_5_array *kcg_c1, _5_array *kcg_c2);
+#endif /* kcg_comp__5_array */
+#endif /* kcg_use__5_array */
 
-#ifdef kcg_use__8_array
-#ifndef kcg_comp__8_array
-extern kcg_bool kcg_comp__8_array(_8_array *kcg_c1, _8_array *kcg_c2);
-#endif /* kcg_comp__8_array */
-#endif /* kcg_use__8_array */
-
-#ifdef kcg_use__9_array
-#ifndef kcg_comp__9_array
-extern kcg_bool kcg_comp__9_array(_9_array *kcg_c1, _9_array *kcg_c2);
-#endif /* kcg_comp__9_array */
-#endif /* kcg_use__9_array */
+#ifdef kcg_use__6_array
+#ifndef kcg_comp__6_array
+extern kcg_bool kcg_comp__6_array(_6_array *kcg_c1, _6_array *kcg_c2);
+#endif /* kcg_comp__6_array */
+#endif /* kcg_use__6_array */
 
 #ifdef kcg_use_MovementAuthoritySectionlist_t_TrackAtlasTypes
 #ifndef kcg_comp_MovementAuthoritySectionlist_t_TrackAtlasTypes
@@ -15195,19 +15116,11 @@ extern kcg_bool kcg_comp_MovementAuthoritySectionlist_t_TrackAtlasTypes(
 #endif /* kcg_comp_MovementAuthoritySectionlist_t_TrackAtlasTypes */
 #endif /* kcg_use_MovementAuthoritySectionlist_t_TrackAtlasTypes */
 
-#ifdef kcg_use_array_int64_150
-#ifndef kcg_comp_array_int64_150
-extern kcg_bool kcg_comp_array_int64_150(
-  array_int64_150 *kcg_c1,
-  array_int64_150 *kcg_c2);
-#endif /* kcg_comp_array_int64_150 */
-#endif /* kcg_use_array_int64_150 */
-
-#ifdef kcg_use__10_array
-#ifndef kcg_comp__10_array
-extern kcg_bool kcg_comp__10_array(_10_array *kcg_c1, _10_array *kcg_c2);
-#endif /* kcg_comp__10_array */
-#endif /* kcg_use__10_array */
+#ifdef kcg_use__7_array
+#ifndef kcg_comp__7_array
+extern kcg_bool kcg_comp__7_array(_7_array *kcg_c1, _7_array *kcg_c2);
+#endif /* kcg_comp__7_array */
+#endif /* kcg_use__7_array */
 
 #ifdef kcg_use_array_int32_10
 #ifndef kcg_comp_array_int32_10
@@ -15241,35 +15154,35 @@ extern kcg_bool kcg_comp_P015_OBU_sectionlist_enum_T_TM(
 #endif /* kcg_comp_P015_OBU_sectionlist_enum_T_TM */
 #endif /* kcg_use_P015_OBU_sectionlist_enum_T_TM */
 
-#ifdef kcg_use__11_array
-#ifndef kcg_comp__11_array
-extern kcg_bool kcg_comp__11_array(_11_array *kcg_c1, _11_array *kcg_c2);
-#endif /* kcg_comp__11_array */
-#endif /* kcg_use__11_array */
+#ifdef kcg_use__8_array
+#ifndef kcg_comp__8_array
+extern kcg_bool kcg_comp__8_array(_8_array *kcg_c1, _8_array *kcg_c2);
+#endif /* kcg_comp__8_array */
+#endif /* kcg_use__8_array */
 
-#ifdef kcg_use_array_int64_494
-#ifndef kcg_comp_array_int64_494
-extern kcg_bool kcg_comp_array_int64_494(
-  array_int64_494 *kcg_c1,
-  array_int64_494 *kcg_c2);
-#endif /* kcg_comp_array_int64_494 */
-#endif /* kcg_use_array_int64_494 */
+#ifdef kcg_use_DMI_Text_Message_int_array_T_DATA
+#ifndef kcg_comp_DMI_Text_Message_int_array_T_DATA
+extern kcg_bool kcg_comp_DMI_Text_Message_int_array_T_DATA(
+  DMI_Text_Message_int_array_T_DATA *kcg_c1,
+  DMI_Text_Message_int_array_T_DATA *kcg_c2);
+#endif /* kcg_comp_DMI_Text_Message_int_array_T_DATA */
+#endif /* kcg_use_DMI_Text_Message_int_array_T_DATA */
 
-#ifdef kcg_use_DMI_Track_Description_int_array_T
-#ifndef kcg_comp_DMI_Track_Description_int_array_T
-extern kcg_bool kcg_comp_DMI_Track_Description_int_array_T(
-  DMI_Track_Description_int_array_T *kcg_c1,
-  DMI_Track_Description_int_array_T *kcg_c2);
-#endif /* kcg_comp_DMI_Track_Description_int_array_T */
-#endif /* kcg_use_DMI_Track_Description_int_array_T */
+#ifdef kcg_use_array_int32_7
+#ifndef kcg_comp_array_int32_7
+extern kcg_bool kcg_comp_array_int32_7(
+  array_int32_7 *kcg_c1,
+  array_int32_7 *kcg_c2);
+#endif /* kcg_comp_array_int32_7 */
+#endif /* kcg_use_array_int32_7 */
 
-#ifdef kcg_use_array_int64_491
-#ifndef kcg_comp_array_int64_491
-extern kcg_bool kcg_comp_array_int64_491(
-  array_int64_491 *kcg_c1,
-  array_int64_491 *kcg_c2);
-#endif /* kcg_comp_array_int64_491 */
-#endif /* kcg_use_array_int64_491 */
+#ifdef kcg_use_array_int32_428
+#ifndef kcg_comp_array_int32_428
+extern kcg_bool kcg_comp_array_int32_428(
+  array_int32_428 *kcg_c1,
+  array_int32_428 *kcg_c2);
+#endif /* kcg_comp_array_int32_428 */
+#endif /* kcg_use_array_int32_428 */
 
 #ifdef kcg_use_DMI_Available_Menu_int_T_DATA
 #ifndef kcg_comp_DMI_Available_Menu_int_T_DATA
@@ -15279,6 +15192,20 @@ extern kcg_bool kcg_comp_DMI_Available_Menu_int_T_DATA(
 #endif /* kcg_comp_DMI_Available_Menu_int_T_DATA */
 #endif /* kcg_use_DMI_Available_Menu_int_T_DATA */
 
+#ifdef kcg_use__9_array
+#ifndef kcg_comp__9_array
+extern kcg_bool kcg_comp__9_array(_9_array *kcg_c1, _9_array *kcg_c2);
+#endif /* kcg_comp__9_array */
+#endif /* kcg_use__9_array */
+
+#ifdef kcg_use_array_int32_99
+#ifndef kcg_comp_array_int32_99
+extern kcg_bool kcg_comp_array_int32_99(
+  array_int32_99 *kcg_c1,
+  array_int32_99 *kcg_c2);
+#endif /* kcg_comp_array_int32_99 */
+#endif /* kcg_use_array_int32_99 */
+
 #ifdef kcg_use_array_bool_7
 #ifndef kcg_comp_array_bool_7
 extern kcg_bool kcg_comp_array_bool_7(
@@ -15287,13 +15214,21 @@ extern kcg_bool kcg_comp_array_bool_7(
 #endif /* kcg_comp_array_bool_7 */
 #endif /* kcg_use_array_bool_7 */
 
-#ifdef kcg_use_array_float64_100_13
-#ifndef kcg_comp_array_float64_100_13
-extern kcg_bool kcg_comp_array_float64_100_13(
-  array_float64_100_13 *kcg_c1,
-  array_float64_100_13 *kcg_c2);
-#endif /* kcg_comp_array_float64_100_13 */
-#endif /* kcg_use_array_float64_100_13 */
+#ifdef kcg_use_array_float32_100_13
+#ifndef kcg_comp_array_float32_100_13
+extern kcg_bool kcg_comp_array_float32_100_13(
+  array_float32_100_13 *kcg_c1,
+  array_float32_100_13 *kcg_c2);
+#endif /* kcg_comp_array_float32_100_13 */
+#endif /* kcg_use_array_float32_100_13 */
+
+#ifdef kcg_use_array_int32_13
+#ifndef kcg_comp_array_int32_13
+extern kcg_bool kcg_comp_array_int32_13(
+  array_int32_13 *kcg_c1,
+  array_int32_13 *kcg_c2);
+#endif /* kcg_comp_array_int32_13 */
+#endif /* kcg_use_array_int32_13 */
 
 #ifdef kcg_use_P011_voltage_sectionlist_array_T_TM_TrainToTrack
 #ifndef kcg_comp_P011_voltage_sectionlist_array_T_TM_TrainToTrack
@@ -15303,19 +15238,33 @@ extern kcg_bool kcg_comp_P011_voltage_sectionlist_array_T_TM_TrainToTrack(
 #endif /* kcg_comp_P011_voltage_sectionlist_array_T_TM_TrainToTrack */
 #endif /* kcg_use_P011_voltage_sectionlist_array_T_TM_TrainToTrack */
 
-#ifdef kcg_use_array_int64_2
-#ifndef kcg_comp_array_int64_2
-extern kcg_bool kcg_comp_array_int64_2(
-  array_int64_2 *kcg_c1,
-  array_int64_2 *kcg_c2);
-#endif /* kcg_comp_array_int64_2 */
-#endif /* kcg_use_array_int64_2 */
+#ifdef kcg_use__10_array
+#ifndef kcg_comp__10_array
+extern kcg_bool kcg_comp__10_array(_10_array *kcg_c1, _10_array *kcg_c2);
+#endif /* kcg_comp__10_array */
+#endif /* kcg_use__10_array */
 
-#ifdef kcg_use__12_array
-#ifndef kcg_comp__12_array
-extern kcg_bool kcg_comp__12_array(_12_array *kcg_c1, _12_array *kcg_c2);
-#endif /* kcg_comp__12_array */
-#endif /* kcg_use__12_array */
+#ifdef kcg_use_array_int32_22
+#ifndef kcg_comp_array_int32_22
+extern kcg_bool kcg_comp_array_int32_22(
+  array_int32_22 *kcg_c1,
+  array_int32_22 *kcg_c2);
+#endif /* kcg_comp_array_int32_22 */
+#endif /* kcg_use_array_int32_22 */
+
+#ifdef kcg_use_array_int32_105
+#ifndef kcg_comp_array_int32_105
+extern kcg_bool kcg_comp_array_int32_105(
+  array_int32_105 *kcg_c1,
+  array_int32_105 *kcg_c2);
+#endif /* kcg_comp_array_int32_105 */
+#endif /* kcg_use_array_int32_105 */
+
+#ifdef kcg_use__11_array
+#ifndef kcg_comp__11_array
+extern kcg_bool kcg_comp__11_array(_11_array *kcg_c1, _11_array *kcg_c2);
+#endif /* kcg_comp__11_array */
+#endif /* kcg_use__11_array */
 
 #ifdef kcg_use_array_bool_110
 #ifndef kcg_comp_array_bool_110
@@ -15325,19 +15274,11 @@ extern kcg_bool kcg_comp_array_bool_110(
 #endif /* kcg_comp_array_bool_110 */
 #endif /* kcg_use_array_bool_110 */
 
-#ifdef kcg_use_array_int64_8
-#ifndef kcg_comp_array_int64_8
-extern kcg_bool kcg_comp_array_int64_8(
-  array_int64_8 *kcg_c1,
-  array_int64_8 *kcg_c2);
-#endif /* kcg_comp_array_int64_8 */
-#endif /* kcg_use_array_int64_8 */
-
-#ifdef kcg_use__13_array
-#ifndef kcg_comp__13_array
-extern kcg_bool kcg_comp__13_array(_13_array *kcg_c1, _13_array *kcg_c2);
-#endif /* kcg_comp__13_array */
-#endif /* kcg_use__13_array */
+#ifdef kcg_use__12_array
+#ifndef kcg_comp__12_array
+extern kcg_bool kcg_comp__12_array(_12_array *kcg_c1, _12_array *kcg_c2);
+#endif /* kcg_comp__12_array */
+#endif /* kcg_use__12_array */
 
 #ifdef kcg_use_array_bool_41
 #ifndef kcg_comp_array_bool_41
@@ -15347,6 +15288,14 @@ extern kcg_bool kcg_comp_array_bool_41(
 #endif /* kcg_comp_array_bool_41 */
 #endif /* kcg_use_array_bool_41 */
 
+#ifdef kcg_use_array_float32_3
+#ifndef kcg_comp_array_float32_3
+extern kcg_bool kcg_comp_array_float32_3(
+  array_float32_3 *kcg_c1,
+  array_float32_3 *kcg_c2);
+#endif /* kcg_comp_array_float32_3 */
+#endif /* kcg_use_array_float32_3 */
+
 #ifndef kcg_comp_DMI_TEXT_DMI_Types_Pkg
 extern kcg_bool kcg_comp_DMI_TEXT_DMI_Types_Pkg(
   DMI_TEXT_DMI_Types_Pkg *kcg_c1,
@@ -15354,19 +15303,19 @@ extern kcg_bool kcg_comp_DMI_TEXT_DMI_Types_Pkg(
 #define kcg_use_DMI_TEXT_DMI_Types_Pkg
 #endif /* kcg_comp_DMI_TEXT_DMI_Types_Pkg */
 
-#ifdef kcg_use__14_array
-#ifndef kcg_comp__14_array
-extern kcg_bool kcg_comp__14_array(_14_array *kcg_c1, _14_array *kcg_c2);
-#endif /* kcg_comp__14_array */
-#endif /* kcg_use__14_array */
+#ifdef kcg_use__13_array
+#ifndef kcg_comp__13_array
+extern kcg_bool kcg_comp__13_array(_13_array *kcg_c1, _13_array *kcg_c2);
+#endif /* kcg_comp__13_array */
+#endif /* kcg_use__13_array */
 
-#ifdef kcg_use_array_int64_5
-#ifndef kcg_comp_array_int64_5
-extern kcg_bool kcg_comp_array_int64_5(
-  array_int64_5 *kcg_c1,
-  array_int64_5 *kcg_c2);
-#endif /* kcg_comp_array_int64_5 */
-#endif /* kcg_use_array_int64_5 */
+#ifdef kcg_use_array_int32_25
+#ifndef kcg_comp_array_int32_25
+extern kcg_bool kcg_comp_array_int32_25(
+  array_int32_25 *kcg_c1,
+  array_int32_25 *kcg_c2);
+#endif /* kcg_comp_array_int32_25 */
+#endif /* kcg_use_array_int32_25 */
 
 #ifdef kcg_use_array_char_30_5
 #ifndef kcg_comp_array_char_30_5
@@ -15376,12 +15325,11 @@ extern kcg_bool kcg_comp_array_char_30_5(
 #endif /* kcg_comp_array_char_30_5 */
 #endif /* kcg_use_array_char_30_5 */
 
-#ifndef kcg_comp_CompressedPacketData_T_Common_Types_Pkg
-extern kcg_bool kcg_comp_CompressedPacketData_T_Common_Types_Pkg(
-  CompressedPacketData_T_Common_Types_Pkg *kcg_c1,
-  CompressedPacketData_T_Common_Types_Pkg *kcg_c2);
-#define kcg_use_CompressedPacketData_T_Common_Types_Pkg
-#endif /* kcg_comp_CompressedPacketData_T_Common_Types_Pkg */
+#ifdef kcg_use__14_array
+#ifndef kcg_comp__14_array
+extern kcg_bool kcg_comp__14_array(_14_array *kcg_c1, _14_array *kcg_c2);
+#endif /* kcg_comp__14_array */
+#endif /* kcg_use__14_array */
 
 #ifdef kcg_use__15_array
 #ifndef kcg_comp__15_array
@@ -15395,11 +15343,33 @@ extern kcg_bool kcg_comp__16_array(_16_array *kcg_c1, _16_array *kcg_c2);
 #endif /* kcg_comp__16_array */
 #endif /* kcg_use__16_array */
 
+#ifdef kcg_use_array_int32_3_33_231
+#ifndef kcg_comp_array_int32_3_33_231
+extern kcg_bool kcg_comp_array_int32_3_33_231(
+  array_int32_3_33_231 *kcg_c1,
+  array_int32_3_33_231 *kcg_c2);
+#endif /* kcg_comp_array_int32_3_33_231 */
+#endif /* kcg_use_array_int32_3_33_231 */
+
+#ifdef kcg_use_array_int32_7_33_231
+#ifndef kcg_comp_array_int32_7_33_231
+extern kcg_bool kcg_comp_array_int32_7_33_231(
+  array_int32_7_33_231 *kcg_c1,
+  array_int32_7_33_231 *kcg_c2);
+#endif /* kcg_comp_array_int32_7_33_231 */
+#endif /* kcg_use_array_int32_7_33_231 */
+
 #ifdef kcg_use__17_array
 #ifndef kcg_comp__17_array
 extern kcg_bool kcg_comp__17_array(_17_array *kcg_c1, _17_array *kcg_c2);
 #endif /* kcg_comp__17_array */
 #endif /* kcg_use__17_array */
+
+#ifdef kcg_use_tScale
+#ifndef kcg_comp_tScale
+extern kcg_bool kcg_comp_tScale(tScale *kcg_c1, tScale *kcg_c2);
+#endif /* kcg_comp_tScale */
+#endif /* kcg_use_tScale */
 
 #ifdef kcg_use__18_array
 #ifndef kcg_comp__18_array
@@ -15407,87 +15377,67 @@ extern kcg_bool kcg_comp__18_array(_18_array *kcg_c1, _18_array *kcg_c2);
 #endif /* kcg_comp__18_array */
 #endif /* kcg_use__18_array */
 
-#ifdef kcg_use_array_int64_3_33_231
-#ifndef kcg_comp_array_int64_3_33_231
-extern kcg_bool kcg_comp_array_int64_3_33_231(
-  array_int64_3_33_231 *kcg_c1,
-  array_int64_3_33_231 *kcg_c2);
-#endif /* kcg_comp_array_int64_3_33_231 */
-#endif /* kcg_use_array_int64_3_33_231 */
+#ifdef kcg_use_array_int32_31
+#ifndef kcg_comp_array_int32_31
+extern kcg_bool kcg_comp_array_int32_31(
+  array_int32_31 *kcg_c1,
+  array_int32_31 *kcg_c2);
+#endif /* kcg_comp_array_int32_31 */
+#endif /* kcg_use_array_int32_31 */
 
-#ifdef kcg_use_array_int64_7_33_231
-#ifndef kcg_comp_array_int64_7_33_231
-extern kcg_bool kcg_comp_array_int64_7_33_231(
-  array_int64_7_33_231 *kcg_c1,
-  array_int64_7_33_231 *kcg_c2);
-#endif /* kcg_comp_array_int64_7_33_231 */
-#endif /* kcg_use_array_int64_7_33_231 */
+#ifdef kcg_use_array_int32_283
+#ifndef kcg_comp_array_int32_283
+extern kcg_bool kcg_comp_array_int32_283(
+  array_int32_283 *kcg_c1,
+  array_int32_283 *kcg_c2);
+#endif /* kcg_comp_array_int32_283 */
+#endif /* kcg_use_array_int32_283 */
+
+#ifdef kcg_use_array_int32_114
+#ifndef kcg_comp_array_int32_114
+extern kcg_bool kcg_comp_array_int32_114(
+  array_int32_114 *kcg_c1,
+  array_int32_114 *kcg_c2);
+#endif /* kcg_comp_array_int32_114 */
+#endif /* kcg_use_array_int32_114 */
+
+#ifdef kcg_use_array_float32_6
+#ifndef kcg_comp_array_float32_6
+extern kcg_bool kcg_comp_array_float32_6(
+  array_float32_6 *kcg_c1,
+  array_float32_6 *kcg_c2);
+#endif /* kcg_comp_array_float32_6 */
+#endif /* kcg_use_array_float32_6 */
+
+#ifdef kcg_use_array_float32_5_5
+#ifndef kcg_comp_array_float32_5_5
+extern kcg_bool kcg_comp_array_float32_5_5(
+  array_float32_5_5 *kcg_c1,
+  array_float32_5_5 *kcg_c2);
+#endif /* kcg_comp_array_float32_5_5 */
+#endif /* kcg_use_array_float32_5_5 */
+
+#ifdef kcg_use_array_int32_28
+#ifndef kcg_comp_array_int32_28
+extern kcg_bool kcg_comp_array_int32_28(
+  array_int32_28 *kcg_c1,
+  array_int32_28 *kcg_c2);
+#endif /* kcg_comp_array_int32_28 */
+#endif /* kcg_use_array_int32_28 */
+
+#ifdef kcg_use_array_int32_280
+#ifndef kcg_comp_array_int32_280
+extern kcg_bool kcg_comp_array_int32_280(
+  array_int32_280 *kcg_c1,
+  array_int32_280 *kcg_c2);
+#endif /* kcg_comp_array_int32_280 */
+#endif /* kcg_use_array_int32_280 */
 
 #ifdef kcg_use__19_array
 #ifndef kcg_comp__19_array
 extern kcg_bool kcg_comp__19_array(_19_array *kcg_c1, _19_array *kcg_c2);
 #endif /* kcg_comp__19_array */
 #endif /* kcg_use__19_array */
-
-#ifdef kcg_use_array_int64_97
-#ifndef kcg_comp_array_int64_97
-extern kcg_bool kcg_comp_array_int64_97(
-  array_int64_97 *kcg_c1,
-  array_int64_97 *kcg_c2);
-#endif /* kcg_comp_array_int64_97 */
-#endif /* kcg_use_array_int64_97 */
-
-#ifdef kcg_use__20_array
-#ifndef kcg_comp__20_array
-extern kcg_bool kcg_comp__20_array(_20_array *kcg_c1, _20_array *kcg_c2);
-#endif /* kcg_comp__20_array */
-#endif /* kcg_use__20_array */
-
-#ifdef kcg_use_array_int64_11
-#ifndef kcg_comp_array_int64_11
-extern kcg_bool kcg_comp_array_int64_11(
-  array_int64_11 *kcg_c1,
-  array_int64_11 *kcg_c2);
-#endif /* kcg_comp_array_int64_11 */
-#endif /* kcg_use_array_int64_11 */
-
-#ifdef kcg_use_array_int64_432
-#ifndef kcg_comp_array_int64_432
-extern kcg_bool kcg_comp_array_int64_432(
-  array_int64_432 *kcg_c1,
-  array_int64_432 *kcg_c2);
-#endif /* kcg_comp_array_int64_432 */
-#endif /* kcg_use_array_int64_432 */
-
-#ifdef kcg_use_array_float64_5_5
-#ifndef kcg_comp_array_float64_5_5
-extern kcg_bool kcg_comp_array_float64_5_5(
-  array_float64_5_5 *kcg_c1,
-  array_float64_5_5 *kcg_c2);
-#endif /* kcg_comp_array_float64_5_5 */
-#endif /* kcg_use_array_float64_5_5 */
-
-#ifdef kcg_use_array_int64_260
-#ifndef kcg_comp_array_int64_260
-extern kcg_bool kcg_comp_array_int64_260(
-  array_int64_260 *kcg_c1,
-  array_int64_260 *kcg_c2);
-#endif /* kcg_comp_array_int64_260 */
-#endif /* kcg_use_array_int64_260 */
-
-#ifdef kcg_use__21_array
-#ifndef kcg_comp__21_array
-extern kcg_bool kcg_comp__21_array(_21_array *kcg_c1, _21_array *kcg_c2);
-#endif /* kcg_comp__21_array */
-#endif /* kcg_use__21_array */
-
-#ifdef kcg_use_array_int64_17
-#ifndef kcg_comp_array_int64_17
-extern kcg_bool kcg_comp_array_int64_17(
-  array_int64_17 *kcg_c1,
-  array_int64_17 *kcg_c2);
-#endif /* kcg_comp_array_int64_17 */
-#endif /* kcg_use_array_int64_17 */
 
 #ifdef kcg_use_array_char_30_5_5
 #ifndef kcg_comp_array_char_30_5_5
@@ -15497,17 +15447,17 @@ extern kcg_bool kcg_comp_array_char_30_5_5(
 #endif /* kcg_comp_array_char_30_5_5 */
 #endif /* kcg_use_array_char_30_5_5 */
 
-#ifdef kcg_use__22_array
-#ifndef kcg_comp__22_array
-extern kcg_bool kcg_comp__22_array(_22_array *kcg_c1, _22_array *kcg_c2);
-#endif /* kcg_comp__22_array */
-#endif /* kcg_use__22_array */
+#ifdef kcg_use__20_array
+#ifndef kcg_comp__20_array
+extern kcg_bool kcg_comp__20_array(_20_array *kcg_c1, _20_array *kcg_c2);
+#endif /* kcg_comp__20_array */
+#endif /* kcg_use__20_array */
 
-#ifdef kcg_use__23_array
-#ifndef kcg_comp__23_array
-extern kcg_bool kcg_comp__23_array(_23_array *kcg_c1, _23_array *kcg_c2);
-#endif /* kcg_comp__23_array */
-#endif /* kcg_use__23_array */
+#ifdef kcg_use__21_array
+#ifndef kcg_comp__21_array
+extern kcg_bool kcg_comp__21_array(_21_array *kcg_c1, _21_array *kcg_c2);
+#endif /* kcg_comp__21_array */
+#endif /* kcg_use__21_array */
 
 #ifdef kcg_use_TransitionBuffer_T_InformationFilter_Pkg
 #ifndef kcg_comp_TransitionBuffer_T_InformationFilter_Pkg
@@ -15533,13 +15483,13 @@ extern kcg_bool kcg_comp_P80_ModeProfiles_T_Packet_Types_Pkg(
 #endif /* kcg_comp_P80_ModeProfiles_T_Packet_Types_Pkg */
 #endif /* kcg_use_P80_ModeProfiles_T_Packet_Types_Pkg */
 
-#ifdef kcg_use_array_int64_269
-#ifndef kcg_comp_array_int64_269
-extern kcg_bool kcg_comp_array_int64_269(
-  array_int64_269 *kcg_c1,
-  array_int64_269 *kcg_c2);
-#endif /* kcg_comp_array_int64_269 */
-#endif /* kcg_use_array_int64_269 */
+#ifdef kcg_use_array_int32_289
+#ifndef kcg_comp_array_int32_289
+extern kcg_bool kcg_comp_array_int32_289(
+  array_int32_289 *kcg_c1,
+  array_int32_289 *kcg_c2);
+#endif /* kcg_comp_array_int32_289 */
+#endif /* kcg_use_array_int32_289 */
 
 #ifdef kcg_use_array_char_243
 #ifndef kcg_comp_array_char_243
@@ -15549,29 +15499,29 @@ extern kcg_bool kcg_comp_array_char_243(
 #endif /* kcg_comp_array_char_243 */
 #endif /* kcg_use_array_char_243 */
 
-#ifdef kcg_use_array_int64_2_33_99
-#ifndef kcg_comp_array_int64_2_33_99
-extern kcg_bool kcg_comp_array_int64_2_33_99(
-  array_int64_2_33_99 *kcg_c1,
-  array_int64_2_33_99 *kcg_c2);
-#endif /* kcg_comp_array_int64_2_33_99 */
-#endif /* kcg_use_array_int64_2_33_99 */
+#ifdef kcg_use_array_float32_12
+#ifndef kcg_comp_array_float32_12
+extern kcg_bool kcg_comp_array_float32_12(
+  array_float32_12 *kcg_c1,
+  array_float32_12 *kcg_c2);
+#endif /* kcg_comp_array_float32_12 */
+#endif /* kcg_use_array_float32_12 */
 
-#ifdef kcg_use_array_int64_3_33_99
-#ifndef kcg_comp_array_int64_3_33_99
-extern kcg_bool kcg_comp_array_int64_3_33_99(
-  array_int64_3_33_99 *kcg_c1,
-  array_int64_3_33_99 *kcg_c2);
-#endif /* kcg_comp_array_int64_3_33_99 */
-#endif /* kcg_use_array_int64_3_33_99 */
+#ifdef kcg_use_array_int32_2_33_99
+#ifndef kcg_comp_array_int32_2_33_99
+extern kcg_bool kcg_comp_array_int32_2_33_99(
+  array_int32_2_33_99 *kcg_c1,
+  array_int32_2_33_99 *kcg_c2);
+#endif /* kcg_comp_array_int32_2_33_99 */
+#endif /* kcg_use_array_int32_2_33_99 */
 
-#ifdef kcg_use_array_int64_100
-#ifndef kcg_comp_array_int64_100
-extern kcg_bool kcg_comp_array_int64_100(
-  array_int64_100 *kcg_c1,
-  array_int64_100 *kcg_c2);
-#endif /* kcg_comp_array_int64_100 */
-#endif /* kcg_use_array_int64_100 */
+#ifdef kcg_use_array_int32_3_33_99
+#ifndef kcg_comp_array_int32_3_33_99
+extern kcg_bool kcg_comp_array_int32_3_33_99(
+  array_int32_3_33_99 *kcg_c1,
+  array_int32_3_33_99 *kcg_c2);
+#endif /* kcg_comp_array_int32_3_33_99 */
+#endif /* kcg_use_array_int32_3_33_99 */
 
 #ifdef kcg_use_array_bool_6
 #ifndef kcg_comp_array_bool_6
@@ -15581,59 +15531,27 @@ extern kcg_bool kcg_comp_array_bool_6(
 #endif /* kcg_comp_array_bool_6 */
 #endif /* kcg_use_array_bool_6 */
 
-#ifdef kcg_use_array_int64_14
-#ifndef kcg_comp_array_int64_14
-extern kcg_bool kcg_comp_array_int64_14(
-  array_int64_14 *kcg_c1,
-  array_int64_14 *kcg_c2);
-#endif /* kcg_comp_array_int64_14 */
-#endif /* kcg_use_array_int64_14 */
+#ifdef kcg_use_array_int32_40
+#ifndef kcg_comp_array_int32_40
+extern kcg_bool kcg_comp_array_int32_40(
+  array_int32_40 *kcg_c1,
+  array_int32_40 *kcg_c2);
+#endif /* kcg_comp_array_int32_40 */
+#endif /* kcg_use_array_int32_40 */
 
-#ifdef kcg_use_array_float64_1
-#ifndef kcg_comp_array_float64_1
-extern kcg_bool kcg_comp_array_float64_1(
-  array_float64_1 *kcg_c1,
-  array_float64_1 *kcg_c2);
-#endif /* kcg_comp_array_float64_1 */
-#endif /* kcg_use_array_float64_1 */
+#ifdef kcg_use_array_int32_292
+#ifndef kcg_comp_array_int32_292
+extern kcg_bool kcg_comp_array_int32_292(
+  array_int32_292 *kcg_c1,
+  array_int32_292 *kcg_c2);
+#endif /* kcg_comp_array_int32_292 */
+#endif /* kcg_use_array_int32_292 */
 
-#ifdef kcg_use_array_int64_266
-#ifndef kcg_comp_array_int64_266
-extern kcg_bool kcg_comp_array_int64_266(
-  array_int64_266 *kcg_c1,
-  array_int64_266 *kcg_c2);
-#endif /* kcg_comp_array_int64_266 */
-#endif /* kcg_use_array_int64_266 */
-
-#ifdef kcg_use_array_int64_23
-#ifndef kcg_comp_array_int64_23
-extern kcg_bool kcg_comp_array_int64_23(
-  array_int64_23 *kcg_c1,
-  array_int64_23 *kcg_c2);
-#endif /* kcg_comp_array_int64_23 */
-#endif /* kcg_use_array_int64_23 */
-
-#ifdef kcg_use_array_int64_20
-#ifndef kcg_comp_array_int64_20
-extern kcg_bool kcg_comp_array_int64_20(
-  array_int64_20 *kcg_c1,
-  array_int64_20 *kcg_c2);
-#endif /* kcg_comp_array_int64_20 */
-#endif /* kcg_use_array_int64_20 */
-
-#ifdef kcg_use__24_array
-#ifndef kcg_comp__24_array
-extern kcg_bool kcg_comp__24_array(_24_array *kcg_c1, _24_array *kcg_c2);
-#endif /* kcg_comp__24_array */
-#endif /* kcg_use__24_array */
-
-#ifdef kcg_use_tPASPOutput_Array
-#ifndef kcg_comp_tPASPOutput_Array
-extern kcg_bool kcg_comp_tPASPOutput_Array(
-  tPASPOutput_Array *kcg_c1,
-  tPASPOutput_Array *kcg_c2);
-#endif /* kcg_comp_tPASPOutput_Array */
-#endif /* kcg_use_tPASPOutput_Array */
+#ifdef kcg_use__22_array
+#ifndef kcg_comp__22_array
+extern kcg_bool kcg_comp__22_array(_22_array *kcg_c1, _22_array *kcg_c2);
+#endif /* kcg_comp__22_array */
+#endif /* kcg_use__22_array */
 
 #ifdef kcg_use_linkedBGs_indices_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg
 #ifndef kcg_comp_linkedBGs_indices_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg
@@ -15642,6 +15560,14 @@ extern kcg_bool kcg_comp_linkedBGs_indices_T_CalculateTrainPosition_Pkg_BG_reloc
   linkedBGs_indices_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg *kcg_c2);
 #endif /* kcg_comp_linkedBGs_indices_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg */
 #endif /* kcg_use_linkedBGs_indices_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg */
+
+#ifdef kcg_use_array_int32_627
+#ifndef kcg_comp_array_int32_627
+extern kcg_bool kcg_comp_array_int32_627(
+  array_int32_627 *kcg_c1,
+  array_int32_627 *kcg_c2);
+#endif /* kcg_comp_array_int32_627 */
+#endif /* kcg_use_array_int32_627 */
 
 #ifdef kcg_use_P046_OBU_sectionlist_int_T_TM
 #ifndef kcg_comp_P046_OBU_sectionlist_int_T_TM
@@ -15691,55 +15617,55 @@ extern kcg_bool kcg_comp_P041_OBU_sectionlist_enum_T_TM(
 #endif /* kcg_comp_P041_OBU_sectionlist_enum_T_TM */
 #endif /* kcg_use_P041_OBU_sectionlist_enum_T_TM */
 
+#ifdef kcg_use_array_int32_129
+#ifndef kcg_comp_array_int32_129
+extern kcg_bool kcg_comp_array_int32_129(
+  array_int32_129 *kcg_c1,
+  array_int32_129 *kcg_c2);
+#endif /* kcg_comp_array_int32_129 */
+#endif /* kcg_use_array_int32_129 */
+
+#ifdef kcg_use__23_array
+#ifndef kcg_comp__23_array
+extern kcg_bool kcg_comp__23_array(_23_array *kcg_c1, _23_array *kcg_c2);
+#endif /* kcg_comp__23_array */
+#endif /* kcg_use__23_array */
+
+#ifdef kcg_use__24_array
+#ifndef kcg_comp__24_array
+extern kcg_bool kcg_comp__24_array(_24_array *kcg_c1, _24_array *kcg_c2);
+#endif /* kcg_comp__24_array */
+#endif /* kcg_use__24_array */
+
+#ifdef kcg_use_array_float32_9_6
+#ifndef kcg_comp_array_float32_9_6
+extern kcg_bool kcg_comp_array_float32_9_6(
+  array_float32_9_6 *kcg_c1,
+  array_float32_9_6 *kcg_c2);
+#endif /* kcg_comp_array_float32_9_6 */
+#endif /* kcg_use_array_float32_9_6 */
+
+#ifdef kcg_use_array_float32_113
+#ifndef kcg_comp_array_float32_113
+extern kcg_bool kcg_comp_array_float32_113(
+  array_float32_113 *kcg_c1,
+  array_float32_113 *kcg_c2);
+#endif /* kcg_comp_array_float32_113 */
+#endif /* kcg_use_array_float32_113 */
+
+#ifdef kcg_use_array_int32_221
+#ifndef kcg_comp_array_int32_221
+extern kcg_bool kcg_comp_array_int32_221(
+  array_int32_221 *kcg_c1,
+  array_int32_221 *kcg_c2);
+#endif /* kcg_comp_array_int32_221 */
+#endif /* kcg_use_array_int32_221 */
+
 #ifdef kcg_use__25_array
 #ifndef kcg_comp__25_array
 extern kcg_bool kcg_comp__25_array(_25_array *kcg_c1, _25_array *kcg_c2);
 #endif /* kcg_comp__25_array */
 #endif /* kcg_use__25_array */
-
-#ifdef kcg_use__26_array
-#ifndef kcg_comp__26_array
-extern kcg_bool kcg_comp__26_array(_26_array *kcg_c1, _26_array *kcg_c2);
-#endif /* kcg_comp__26_array */
-#endif /* kcg_use__26_array */
-
-#ifdef kcg_use_array_float64_10
-#ifndef kcg_comp_array_float64_10
-extern kcg_bool kcg_comp_array_float64_10(
-  array_float64_10 *kcg_c1,
-  array_float64_10 *kcg_c2);
-#endif /* kcg_comp_array_float64_10 */
-#endif /* kcg_use_array_float64_10 */
-
-#ifdef kcg_use_array_int64_444
-#ifndef kcg_comp_array_int64_444
-extern kcg_bool kcg_comp_array_int64_444(
-  array_int64_444 *kcg_c1,
-  array_int64_444 *kcg_c2);
-#endif /* kcg_comp_array_int64_444 */
-#endif /* kcg_use_array_int64_444 */
-
-#ifdef kcg_use_array_float64_9_6
-#ifndef kcg_comp_array_float64_9_6
-extern kcg_bool kcg_comp_array_float64_9_6(
-  array_float64_9_6 *kcg_c1,
-  array_float64_9_6 *kcg_c2);
-#endif /* kcg_comp_array_float64_9_6 */
-#endif /* kcg_use_array_float64_9_6 */
-
-#ifdef kcg_use_array_int64_32
-#ifndef kcg_comp_array_int64_32
-extern kcg_bool kcg_comp_array_int64_32(
-  array_int64_32 *kcg_c1,
-  array_int64_32 *kcg_c2);
-#endif /* kcg_comp_array_int64_32 */
-#endif /* kcg_use_array_int64_32 */
-
-#ifdef kcg_use__27_array
-#ifndef kcg_comp__27_array
-extern kcg_bool kcg_comp__27_array(_27_array *kcg_c1, _27_array *kcg_c2);
-#endif /* kcg_comp__27_array */
-#endif /* kcg_use__27_array */
 
 #ifndef kcg_comp_Metadata_T_Common_Types_Pkg
 extern kcg_bool kcg_comp_Metadata_T_Common_Types_Pkg(
@@ -15747,6 +15673,14 @@ extern kcg_bool kcg_comp_Metadata_T_Common_Types_Pkg(
   Metadata_T_Common_Types_Pkg *kcg_c2);
 #define kcg_use_Metadata_T_Common_Types_Pkg
 #endif /* kcg_comp_Metadata_T_Common_Types_Pkg */
+
+#ifdef kcg_use_array_int32_304
+#ifndef kcg_comp_array_int32_304
+extern kcg_bool kcg_comp_array_int32_304(
+  array_int32_304 *kcg_c1,
+  array_int32_304 *kcg_c2);
+#endif /* kcg_comp_array_int32_304 */
+#endif /* kcg_use_array_int32_304 */
 
 #ifdef kcg_use_array_bool_256_46_30
 #ifndef kcg_comp_array_bool_256_46_30
@@ -15756,11 +15690,11 @@ extern kcg_bool kcg_comp_array_bool_256_46_30(
 #endif /* kcg_comp_array_bool_256_46_30 */
 #endif /* kcg_use_array_bool_256_46_30 */
 
-#ifdef kcg_use__28_array
-#ifndef kcg_comp__28_array
-extern kcg_bool kcg_comp__28_array(_28_array *kcg_c1, _28_array *kcg_c2);
-#endif /* kcg_comp__28_array */
-#endif /* kcg_use__28_array */
+#ifdef kcg_use__26_array
+#ifndef kcg_comp__26_array
+extern kcg_bool kcg_comp__26_array(_26_array *kcg_c1, _26_array *kcg_c2);
+#endif /* kcg_comp__26_array */
+#endif /* kcg_use__26_array */
 
 #ifdef kcg_use_ParabolaCurve_list_MRSP_T_CalcBrakingCurves_types
 #ifndef kcg_comp_ParabolaCurve_list_MRSP_T_CalcBrakingCurves_types
@@ -15794,35 +15728,49 @@ extern kcg_bool kcg_comp_MRSP_Profile_t_TrackAtlasTypes(
 #endif /* kcg_comp_MRSP_Profile_t_TrackAtlasTypes */
 #endif /* kcg_use_MRSP_Profile_t_TrackAtlasTypes */
 
-#ifdef kcg_use_array_int64_128_32
-#ifndef kcg_comp_array_int64_128_32
-extern kcg_bool kcg_comp_array_int64_128_32(
-  array_int64_128_32 *kcg_c1,
-  array_int64_128_32 *kcg_c2);
-#endif /* kcg_comp_array_int64_128_32 */
-#endif /* kcg_use_array_int64_128_32 */
+#ifdef kcg_use_array_int32_128_32
+#ifndef kcg_comp_array_int32_128_32
+extern kcg_bool kcg_comp_array_int32_128_32(
+  array_int32_128_32 *kcg_c1,
+  array_int32_128_32 *kcg_c2);
+#endif /* kcg_comp_array_int32_128_32 */
+#endif /* kcg_use_array_int32_128_32 */
 
-#ifdef kcg_use_P080_sections_array_flat_T_TM
-#ifndef kcg_comp_P080_sections_array_flat_T_TM
-extern kcg_bool kcg_comp_P080_sections_array_flat_T_TM(
-  P080_sections_array_flat_T_TM *kcg_c1,
-  P080_sections_array_flat_T_TM *kcg_c2);
-#endif /* kcg_comp_P080_sections_array_flat_T_TM */
-#endif /* kcg_use_P080_sections_array_flat_T_TM */
+#ifdef kcg_use_array_float32_110
+#ifndef kcg_comp_array_float32_110
+extern kcg_bool kcg_comp_array_float32_110(
+  array_float32_110 *kcg_c1,
+  array_float32_110 *kcg_c2);
+#endif /* kcg_comp_array_float32_110 */
+#endif /* kcg_use_array_float32_110 */
 
-#ifdef kcg_use__29_array
-#ifndef kcg_comp__29_array
-extern kcg_bool kcg_comp__29_array(_29_array *kcg_c1, _29_array *kcg_c2);
-#endif /* kcg_comp__29_array */
-#endif /* kcg_use__29_array */
+#ifdef kcg_use_array_int32_301
+#ifndef kcg_comp_array_int32_301
+extern kcg_bool kcg_comp_array_int32_301(
+  array_int32_301 *kcg_c1,
+  array_int32_301 *kcg_c2);
+#endif /* kcg_comp_array_int32_301 */
+#endif /* kcg_use_array_int32_301 */
 
-#ifdef kcg_use_array_float64_13
-#ifndef kcg_comp_array_float64_13
-extern kcg_bool kcg_comp_array_float64_13(
-  array_float64_13 *kcg_c1,
-  array_float64_13 *kcg_c2);
-#endif /* kcg_comp_array_float64_13 */
-#endif /* kcg_use_array_float64_13 */
+#ifdef kcg_use__27_array
+#ifndef kcg_comp__27_array
+extern kcg_bool kcg_comp__27_array(_27_array *kcg_c1, _27_array *kcg_c2);
+#endif /* kcg_comp__27_array */
+#endif /* kcg_use__27_array */
+
+#ifdef kcg_use__28_array
+#ifndef kcg_comp__28_array
+extern kcg_bool kcg_comp__28_array(_28_array *kcg_c1, _28_array *kcg_c2);
+#endif /* kcg_comp__28_array */
+#endif /* kcg_use__28_array */
+
+#ifdef kcg_use_array_int32_891
+#ifndef kcg_comp_array_int32_891
+extern kcg_bool kcg_comp_array_int32_891(
+  array_int32_891 *kcg_c1,
+  array_int32_891 *kcg_c2);
+#endif /* kcg_comp_array_int32_891 */
+#endif /* kcg_use_array_int32_891 */
 
 #ifdef kcg_use_array_bool_5
 #ifndef kcg_comp_array_bool_5
@@ -15831,6 +15779,12 @@ extern kcg_bool kcg_comp_array_bool_5(
   array_bool_5 *kcg_c2);
 #endif /* kcg_comp_array_bool_5 */
 #endif /* kcg_use_array_bool_5 */
+
+#ifdef kcg_use__29_array
+#ifndef kcg_comp__29_array
+extern kcg_bool kcg_comp__29_array(_29_array *kcg_c1, _29_array *kcg_c2);
+#endif /* kcg_comp__29_array */
+#endif /* kcg_use__29_array */
 
 #ifdef kcg_use__30_array
 #ifndef kcg_comp__30_array
@@ -15862,11 +15816,13 @@ extern kcg_bool kcg_comp__34_array(_34_array *kcg_c1, _34_array *kcg_c2);
 #endif /* kcg_comp__34_array */
 #endif /* kcg_use__34_array */
 
-#ifdef kcg_use__35_array
-#ifndef kcg_comp__35_array
-extern kcg_bool kcg_comp__35_array(_35_array *kcg_c1, _35_array *kcg_c2);
-#endif /* kcg_comp__35_array */
-#endif /* kcg_use__35_array */
+#ifdef kcg_use_array_int32_888
+#ifndef kcg_comp_array_int32_888
+extern kcg_bool kcg_comp_array_int32_888(
+  array_int32_888 *kcg_c1,
+  array_int32_888 *kcg_c2);
+#endif /* kcg_comp_array_int32_888 */
+#endif /* kcg_use_array_int32_888 */
 
 #ifdef kcg_use_MetadataTruthtable_T1_CheckEuroradioMessage
 #ifndef kcg_comp_MetadataTruthtable_T1_CheckEuroradioMessage
@@ -15876,11 +15832,33 @@ extern kcg_bool kcg_comp_MetadataTruthtable_T1_CheckEuroradioMessage(
 #endif /* kcg_comp_MetadataTruthtable_T1_CheckEuroradioMessage */
 #endif /* kcg_use_MetadataTruthtable_T1_CheckEuroradioMessage */
 
+#ifdef kcg_use_array_int32_307
+#ifndef kcg_comp_array_int32_307
+extern kcg_bool kcg_comp_array_int32_307(
+  array_int32_307 *kcg_c1,
+  array_int32_307 *kcg_c2);
+#endif /* kcg_comp_array_int32_307 */
+#endif /* kcg_use_array_int32_307 */
+
+#ifdef kcg_use__35_array
+#ifndef kcg_comp__35_array
+extern kcg_bool kcg_comp__35_array(_35_array *kcg_c1, _35_array *kcg_c2);
+#endif /* kcg_comp__35_array */
+#endif /* kcg_use__35_array */
+
 #ifdef kcg_use__36_array
 #ifndef kcg_comp__36_array
 extern kcg_bool kcg_comp__36_array(_36_array *kcg_c1, _36_array *kcg_c2);
 #endif /* kcg_comp__36_array */
 #endif /* kcg_use__36_array */
+
+#ifdef kcg_use_array_int32_64
+#ifndef kcg_comp_array_int32_64
+extern kcg_bool kcg_comp_array_int32_64(
+  array_int32_64 *kcg_c1,
+  array_int32_64 *kcg_c2);
+#endif /* kcg_comp_array_int32_64 */
+#endif /* kcg_use_array_int32_64 */
 
 #ifdef kcg_use__37_array
 #ifndef kcg_comp__37_array
@@ -15894,13 +15872,13 @@ extern kcg_bool kcg_comp__38_array(_38_array *kcg_c1, _38_array *kcg_c2);
 #endif /* kcg_comp__38_array */
 #endif /* kcg_use__38_array */
 
-#ifdef kcg_use_array_int64_32_32
-#ifndef kcg_comp_array_int64_32_32
-extern kcg_bool kcg_comp_array_int64_32_32(
-  array_int64_32_32 *kcg_c1,
-  array_int64_32_32 *kcg_c2);
-#endif /* kcg_comp_array_int64_32_32 */
-#endif /* kcg_use_array_int64_32_32 */
+#ifdef kcg_use_array_int32_32_32
+#ifndef kcg_comp_array_int32_32_32
+extern kcg_bool kcg_comp_array_int32_32_32(
+  array_int32_32_32 *kcg_c1,
+  array_int32_32_32 *kcg_c2);
+#endif /* kcg_comp_array_int32_32_32 */
+#endif /* kcg_use_array_int32_32_32 */
 
 #ifdef kcg_use__39_array
 #ifndef kcg_comp__39_array
@@ -15916,29 +15894,49 @@ extern kcg_bool kcg_comp_aNID_RADIO_T_Packet_TrainTypes_Pkg(
 #endif /* kcg_comp_aNID_RADIO_T_Packet_TrainTypes_Pkg */
 #endif /* kcg_use_aNID_RADIO_T_Packet_TrainTypes_Pkg */
 
-#ifdef kcg_use_array_int64_41
-#ifndef kcg_comp_array_int64_41
-extern kcg_bool kcg_comp_array_int64_41(
-  array_int64_41 *kcg_c1,
-  array_int64_41 *kcg_c2);
-#endif /* kcg_comp_array_int64_41 */
-#endif /* kcg_use_array_int64_41 */
+#ifdef kcg_use__40_array
+#ifndef kcg_comp__40_array
+extern kcg_bool kcg_comp__40_array(_40_array *kcg_c1, _40_array *kcg_c2);
+#endif /* kcg_comp__40_array */
+#endif /* kcg_use__40_array */
 
-#ifdef kcg_use_array_int64_2_32_32
-#ifndef kcg_comp_array_int64_2_32_32
-extern kcg_bool kcg_comp_array_int64_2_32_32(
-  array_int64_2_32_32 *kcg_c1,
-  array_int64_2_32_32 *kcg_c2);
-#endif /* kcg_comp_array_int64_2_32_32 */
-#endif /* kcg_use_array_int64_2_32_32 */
+#ifdef kcg_use__41_array
+#ifndef kcg_comp__41_array
+extern kcg_bool kcg_comp__41_array(_41_array *kcg_c1, _41_array *kcg_c2);
+#endif /* kcg_comp__41_array */
+#endif /* kcg_use__41_array */
 
-#ifdef kcg_use_M_TrainTrack_compressed_packets_T_TM_radio_messages
-#ifndef kcg_comp_M_TrainTrack_compressed_packets_T_TM_radio_messages
-extern kcg_bool kcg_comp_M_TrainTrack_compressed_packets_T_TM_radio_messages(
-  M_TrainTrack_compressed_packets_T_TM_radio_messages *kcg_c1,
-  M_TrainTrack_compressed_packets_T_TM_radio_messages *kcg_c2);
-#endif /* kcg_comp_M_TrainTrack_compressed_packets_T_TM_radio_messages */
-#endif /* kcg_use_M_TrainTrack_compressed_packets_T_TM_radio_messages */
+#ifdef kcg_use_array_int32_894
+#ifndef kcg_comp_array_int32_894
+extern kcg_bool kcg_comp_array_int32_894(
+  array_int32_894 *kcg_c1,
+  array_int32_894 *kcg_c2);
+#endif /* kcg_comp_array_int32_894 */
+#endif /* kcg_use_array_int32_894 */
+
+#ifdef kcg_use_array_int32_2_32_32
+#ifndef kcg_comp_array_int32_2_32_32
+extern kcg_bool kcg_comp_array_int32_2_32_32(
+  array_int32_2_32_32 *kcg_c1,
+  array_int32_2_32_32 *kcg_c2);
+#endif /* kcg_comp_array_int32_2_32_32 */
+#endif /* kcg_use_array_int32_2_32_32 */
+
+#ifdef kcg_use_array_int32_70
+#ifndef kcg_comp_array_int32_70
+extern kcg_bool kcg_comp_array_int32_70(
+  array_int32_70 *kcg_c1,
+  array_int32_70 *kcg_c2);
+#endif /* kcg_comp_array_int32_70 */
+#endif /* kcg_use_array_int32_70 */
+
+#ifdef kcg_use_array_int32_396
+#ifndef kcg_comp_array_int32_396
+extern kcg_bool kcg_comp_array_int32_396(
+  array_int32_396 *kcg_c1,
+  array_int32_396 *kcg_c2);
+#endif /* kcg_comp_array_int32_396 */
+#endif /* kcg_use_array_int32_396 */
 
 #ifdef kcg_use_ModeDecisionTableType_DataDictionary_Pkg
 #ifndef kcg_comp_ModeDecisionTableType_DataDictionary_Pkg
@@ -15956,47 +15954,51 @@ extern kcg_bool kcg_comp_array_bool_256(
 #endif /* kcg_comp_array_bool_256 */
 #endif /* kcg_use_array_bool_256 */
 
-#ifdef kcg_use_array_int64_302
-#ifndef kcg_comp_array_int64_302
-extern kcg_bool kcg_comp_array_int64_302(
-  array_int64_302 *kcg_c1,
-  array_int64_302 *kcg_c2);
-#endif /* kcg_comp_array_int64_302 */
-#endif /* kcg_use_array_int64_302 */
+#ifdef kcg_use_DMI_EVC_Level_Data_int_array_T_DATA
+#ifndef kcg_comp_DMI_EVC_Level_Data_int_array_T_DATA
+extern kcg_bool kcg_comp_DMI_EVC_Level_Data_int_array_T_DATA(
+  DMI_EVC_Level_Data_int_array_T_DATA *kcg_c1,
+  DMI_EVC_Level_Data_int_array_T_DATA *kcg_c2);
+#endif /* kcg_comp_DMI_EVC_Level_Data_int_array_T_DATA */
+#endif /* kcg_use_DMI_EVC_Level_Data_int_array_T_DATA */
 
-#ifdef kcg_use_array_int64_56
-#ifndef kcg_comp_array_int64_56
-extern kcg_bool kcg_comp_array_int64_56(
-  array_int64_56 *kcg_c1,
-  array_int64_56 *kcg_c2);
-#endif /* kcg_comp_array_int64_56 */
-#endif /* kcg_use_array_int64_56 */
-
-#ifdef kcg_use__40_array
-#ifndef kcg_comp__40_array
-extern kcg_bool kcg_comp__40_array(_40_array *kcg_c1, _40_array *kcg_c2);
-#endif /* kcg_comp__40_array */
-#endif /* kcg_use__40_array */
-
-#ifdef kcg_use_array_float64_114
-#ifndef kcg_comp_array_float64_114
-extern kcg_bool kcg_comp_array_float64_114(
-  array_float64_114 *kcg_c1,
-  array_float64_114 *kcg_c2);
-#endif /* kcg_comp_array_float64_114 */
-#endif /* kcg_use_array_float64_114 */
-
-#ifdef kcg_use__41_array
-#ifndef kcg_comp__41_array
-extern kcg_bool kcg_comp__41_array(_41_array *kcg_c1, _41_array *kcg_c2);
-#endif /* kcg_comp__41_array */
-#endif /* kcg_use__41_array */
+#ifdef kcg_use_array_int32_150
+#ifndef kcg_comp_array_int32_150
+extern kcg_bool kcg_comp_array_int32_150(
+  array_int32_150 *kcg_c1,
+  array_int32_150 *kcg_c2);
+#endif /* kcg_comp_array_int32_150 */
+#endif /* kcg_use_array_int32_150 */
 
 #ifdef kcg_use__42_array
 #ifndef kcg_comp__42_array
 extern kcg_bool kcg_comp__42_array(_42_array *kcg_c1, _42_array *kcg_c2);
 #endif /* kcg_comp__42_array */
 #endif /* kcg_use__42_array */
+
+#ifdef kcg_use_array_int32_494
+#ifndef kcg_comp_array_int32_494
+extern kcg_bool kcg_comp_array_int32_494(
+  array_int32_494 *kcg_c1,
+  array_int32_494 *kcg_c2);
+#endif /* kcg_comp_array_int32_494 */
+#endif /* kcg_use_array_int32_494 */
+
+#ifdef kcg_use_DMI_Track_Description_int_array_T
+#ifndef kcg_comp_DMI_Track_Description_int_array_T
+extern kcg_bool kcg_comp_DMI_Track_Description_int_array_T(
+  DMI_Track_Description_int_array_T *kcg_c1,
+  DMI_Track_Description_int_array_T *kcg_c2);
+#endif /* kcg_comp_DMI_Track_Description_int_array_T */
+#endif /* kcg_use_DMI_Track_Description_int_array_T */
+
+#ifdef kcg_use_array_int32_491
+#ifndef kcg_comp_array_int32_491
+extern kcg_bool kcg_comp_array_int32_491(
+  array_int32_491 *kcg_c1,
+  array_int32_491 *kcg_c2);
+#endif /* kcg_comp_array_int32_491 */
+#endif /* kcg_use_array_int32_491 */
 
 #ifdef kcg_use__43_array
 #ifndef kcg_comp__43_array
@@ -16016,14 +16018,6 @@ extern kcg_bool kcg_comp__45_array(_45_array *kcg_c1, _45_array *kcg_c2);
 #endif /* kcg_comp__45_array */
 #endif /* kcg_use__45_array */
 
-#ifdef kcg_use_DMI_to_EVC_Message_int_T_API_DMI_Pkg
-#ifndef kcg_comp_DMI_to_EVC_Message_int_T_API_DMI_Pkg
-extern kcg_bool kcg_comp_DMI_to_EVC_Message_int_T_API_DMI_Pkg(
-  DMI_to_EVC_Message_int_T_API_DMI_Pkg *kcg_c1,
-  DMI_to_EVC_Message_int_T_API_DMI_Pkg *kcg_c2);
-#endif /* kcg_comp_DMI_to_EVC_Message_int_T_API_DMI_Pkg */
-#endif /* kcg_use_DMI_to_EVC_Message_int_T_API_DMI_Pkg */
-
 #ifdef kcg_use__46_array
 #ifndef kcg_comp__46_array
 extern kcg_bool kcg_comp__46_array(_46_array *kcg_c1, _46_array *kcg_c2);
@@ -16042,6 +16036,12 @@ extern kcg_bool kcg_comp__48_array(_48_array *kcg_c1, _48_array *kcg_c2);
 #endif /* kcg_comp__48_array */
 #endif /* kcg_use__48_array */
 
+#ifdef kcg_use__49_array
+#ifndef kcg_comp__49_array
+extern kcg_bool kcg_comp__49_array(_49_array *kcg_c1, _49_array *kcg_c2);
+#endif /* kcg_comp__49_array */
+#endif /* kcg_use__49_array */
+
 #ifdef kcg_use_array_bool_4
 #ifndef kcg_comp_array_bool_4
 extern kcg_bool kcg_comp_array_bool_4(
@@ -16050,67 +16050,56 @@ extern kcg_bool kcg_comp_array_bool_4(
 #endif /* kcg_comp_array_bool_4 */
 #endif /* kcg_use_array_bool_4 */
 
-#ifdef kcg_use_array_int64_975
-#ifndef kcg_comp_array_int64_975
-extern kcg_bool kcg_comp_array_int64_975(
-  array_int64_975 *kcg_c1,
-  array_int64_975 *kcg_c2);
-#endif /* kcg_comp_array_int64_975 */
-#endif /* kcg_use_array_int64_975 */
+#ifdef kcg_use_array_int32_2
+#ifndef kcg_comp_array_int32_2
+extern kcg_bool kcg_comp_array_int32_2(
+  array_int32_2 *kcg_c1,
+  array_int32_2 *kcg_c2);
+#endif /* kcg_comp_array_int32_2 */
+#endif /* kcg_use_array_int32_2 */
 
-#ifdef kcg_use_array_int64_65
-#ifndef kcg_comp_array_int64_65
-extern kcg_bool kcg_comp_array_int64_65(
-  array_int64_65 *kcg_c1,
-  array_int64_65 *kcg_c2);
-#endif /* kcg_comp_array_int64_65 */
-#endif /* kcg_use_array_int64_65 */
+#ifdef kcg_use__50_array
+#ifndef kcg_comp__50_array
+extern kcg_bool kcg_comp__50_array(_50_array *kcg_c1, _50_array *kcg_c2);
+#endif /* kcg_comp__50_array */
+#endif /* kcg_use__50_array */
 
-#ifdef kcg_use__49_array
-#ifndef kcg_comp__49_array
-extern kcg_bool kcg_comp__49_array(_49_array *kcg_c1, _49_array *kcg_c2);
-#endif /* kcg_comp__49_array */
-#endif /* kcg_use__49_array */
+#ifdef kcg_use_array_int32_8
+#ifndef kcg_comp_array_int32_8
+extern kcg_bool kcg_comp_array_int32_8(
+  array_int32_8 *kcg_c1,
+  array_int32_8 *kcg_c2);
+#endif /* kcg_comp_array_int32_8 */
+#endif /* kcg_use_array_int32_8 */
 
-#ifdef kcg_use_array_int64_400
-#ifndef kcg_comp_array_int64_400
-extern kcg_bool kcg_comp_array_int64_400(
-  array_int64_400 *kcg_c1,
-  array_int64_400 *kcg_c2);
-#endif /* kcg_comp_array_int64_400 */
-#endif /* kcg_use_array_int64_400 */
+#ifdef kcg_use__51_array
+#ifndef kcg_comp__51_array
+extern kcg_bool kcg_comp__51_array(_51_array *kcg_c1, _51_array *kcg_c2);
+#endif /* kcg_comp__51_array */
+#endif /* kcg_use__51_array */
 
-#ifdef kcg_use_array_int64_978
-#ifndef kcg_comp_array_int64_978
-extern kcg_bool kcg_comp_array_int64_978(
-  array_int64_978 *kcg_c1,
-  array_int64_978 *kcg_c2);
-#endif /* kcg_comp_array_int64_978 */
-#endif /* kcg_use_array_int64_978 */
+#ifdef kcg_use_array_int32_2_32_64
+#ifndef kcg_comp_array_int32_2_32_64
+extern kcg_bool kcg_comp_array_int32_2_32_64(
+  array_int32_2_32_64 *kcg_c1,
+  array_int32_2_32_64 *kcg_c2);
+#endif /* kcg_comp_array_int32_2_32_64 */
+#endif /* kcg_use_array_int32_2_32_64 */
 
-#ifdef kcg_use_array_int64_2_32_64
-#ifndef kcg_comp_array_int64_2_32_64
-extern kcg_bool kcg_comp_array_int64_2_32_64(
-  array_int64_2_32_64 *kcg_c1,
-  array_int64_2_32_64 *kcg_c2);
-#endif /* kcg_comp_array_int64_2_32_64 */
-#endif /* kcg_use_array_int64_2_32_64 */
+#ifdef kcg_use_array_int32_5
+#ifndef kcg_comp_array_int32_5
+extern kcg_bool kcg_comp_array_int32_5(
+  array_int32_5 *kcg_c1,
+  array_int32_5 *kcg_c2);
+#endif /* kcg_comp_array_int32_5 */
+#endif /* kcg_use_array_int32_5 */
 
-#ifdef kcg_use_array_int64_987
-#ifndef kcg_comp_array_int64_987
-extern kcg_bool kcg_comp_array_int64_987(
-  array_int64_987 *kcg_c1,
-  array_int64_987 *kcg_c2);
-#endif /* kcg_comp_array_int64_987 */
-#endif /* kcg_use_array_int64_987 */
-
-#ifdef kcg_use_array_int64_68
-#ifndef kcg_comp_array_int64_68
-extern kcg_bool kcg_comp_array_int64_68(
-  array_int64_68 *kcg_c1,
-  array_int64_68 *kcg_c2);
-#endif /* kcg_comp_array_int64_68 */
-#endif /* kcg_use_array_int64_68 */
+#ifndef kcg_comp_CompressedPacketData_T_Common_Types_Pkg
+extern kcg_bool kcg_comp_CompressedPacketData_T_Common_Types_Pkg(
+  CompressedPacketData_T_Common_Types_Pkg *kcg_c1,
+  CompressedPacketData_T_Common_Types_Pkg *kcg_c2);
+#define kcg_use_CompressedPacketData_T_Common_Types_Pkg
+#endif /* kcg_comp_CompressedPacketData_T_Common_Types_Pkg */
 
 #ifndef kcg_comp_array_bool_15
 extern kcg_bool kcg_comp_array_bool_15(
@@ -16119,11 +16108,11 @@ extern kcg_bool kcg_comp_array_bool_15(
 #define kcg_use_array_bool_15
 #endif /* kcg_comp_array_bool_15 */
 
-#ifdef kcg_use__50_array
-#ifndef kcg_comp__50_array
-extern kcg_bool kcg_comp__50_array(_50_array *kcg_c1, _50_array *kcg_c2);
-#endif /* kcg_comp__50_array */
-#endif /* kcg_use__50_array */
+#ifdef kcg_use__52_array
+#ifndef kcg_comp__52_array
+extern kcg_bool kcg_comp__52_array(_52_array *kcg_c1, _52_array *kcg_c2);
+#endif /* kcg_comp__52_array */
+#endif /* kcg_use__52_array */
 
 #ifdef kcg_use_array_char_12
 #ifndef kcg_comp_array_char_12
@@ -16133,43 +16122,67 @@ extern kcg_bool kcg_comp_array_char_12(
 #endif /* kcg_comp_array_char_12 */
 #endif /* kcg_use_array_char_12 */
 
-#ifdef kcg_use_array_int64_8_4
-#ifndef kcg_comp_array_int64_8_4
-extern kcg_bool kcg_comp_array_int64_8_4(
-  array_int64_8_4 *kcg_c1,
-  array_int64_8_4 *kcg_c2);
-#endif /* kcg_comp_array_int64_8_4 */
-#endif /* kcg_use_array_int64_8_4 */
+#ifdef kcg_use_array_int32_97
+#ifndef kcg_comp_array_int32_97
+extern kcg_bool kcg_comp_array_int32_97(
+  array_int32_97 *kcg_c1,
+  array_int32_97 *kcg_c2);
+#endif /* kcg_comp_array_int32_97 */
+#endif /* kcg_use_array_int32_97 */
 
-#ifdef kcg_use_array_int64_95_33
-#ifndef kcg_comp_array_int64_95_33
-extern kcg_bool kcg_comp_array_int64_95_33(
-  array_int64_95_33 *kcg_c1,
-  array_int64_95_33 *kcg_c2);
-#endif /* kcg_comp_array_int64_95_33 */
-#endif /* kcg_use_array_int64_95_33 */
+#ifdef kcg_use_array_int32_8_4
+#ifndef kcg_comp_array_int32_8_4
+extern kcg_bool kcg_comp_array_int32_8_4(
+  array_int32_8_4 *kcg_c1,
+  array_int32_8_4 *kcg_c2);
+#endif /* kcg_comp_array_int32_8_4 */
+#endif /* kcg_use_array_int32_8_4 */
 
-#ifdef kcg_use__51_array
-#ifndef kcg_comp__51_array
-extern kcg_bool kcg_comp__51_array(_51_array *kcg_c1, _51_array *kcg_c2);
-#endif /* kcg_comp__51_array */
-#endif /* kcg_use__51_array */
+#ifdef kcg_use_array_int32_95_33
+#ifndef kcg_comp_array_int32_95_33
+extern kcg_bool kcg_comp_array_int32_95_33(
+  array_int32_95_33 *kcg_c1,
+  array_int32_95_33 *kcg_c2);
+#endif /* kcg_comp_array_int32_95_33 */
+#endif /* kcg_use_array_int32_95_33 */
 
-#ifdef kcg_use_array_int64_990
-#ifndef kcg_comp_array_int64_990
-extern kcg_bool kcg_comp_array_int64_990(
-  array_int64_990 *kcg_c1,
-  array_int64_990 *kcg_c2);
-#endif /* kcg_comp_array_int64_990 */
-#endif /* kcg_use_array_int64_990 */
+#ifdef kcg_use_array_int32_11
+#ifndef kcg_comp_array_int32_11
+extern kcg_bool kcg_comp_array_int32_11(
+  array_int32_11 *kcg_c1,
+  array_int32_11 *kcg_c2);
+#endif /* kcg_comp_array_int32_11 */
+#endif /* kcg_use_array_int32_11 */
 
-#ifdef kcg_use_array_int64_492
-#ifndef kcg_comp_array_int64_492
-extern kcg_bool kcg_comp_array_int64_492(
-  array_int64_492 *kcg_c1,
-  array_int64_492 *kcg_c2);
-#endif /* kcg_comp_array_int64_492 */
-#endif /* kcg_use_array_int64_492 */
+#ifdef kcg_use_array_int32_432
+#ifndef kcg_comp_array_int32_432
+extern kcg_bool kcg_comp_array_int32_432(
+  array_int32_432 *kcg_c1,
+  array_int32_432 *kcg_c2);
+#endif /* kcg_comp_array_int32_432 */
+#endif /* kcg_use_array_int32_432 */
+
+#ifdef kcg_use__53_array
+#ifndef kcg_comp__53_array
+extern kcg_bool kcg_comp__53_array(_53_array *kcg_c1, _53_array *kcg_c2);
+#endif /* kcg_comp__53_array */
+#endif /* kcg_use__53_array */
+
+#ifdef kcg_use_array_int32_260
+#ifndef kcg_comp_array_int32_260
+extern kcg_bool kcg_comp_array_int32_260(
+  array_int32_260 *kcg_c1,
+  array_int32_260 *kcg_c2);
+#endif /* kcg_comp_array_int32_260 */
+#endif /* kcg_use_array_int32_260 */
+
+#ifdef kcg_use_array_int32_17
+#ifndef kcg_comp_array_int32_17
+extern kcg_bool kcg_comp_array_int32_17(
+  array_int32_17 *kcg_c1,
+  array_int32_17 *kcg_c2);
+#endif /* kcg_comp_array_int32_17 */
+#endif /* kcg_use_array_int32_17 */
 
 #ifdef kcg_use_StaticSpeedProfile_t_TrackAtlasTypes
 #ifndef kcg_comp_StaticSpeedProfile_t_TrackAtlasTypes
@@ -16187,63 +16200,81 @@ extern kcg_bool kcg_comp_GradientProfile_t_TrackAtlasTypes(
 #endif /* kcg_comp_GradientProfile_t_TrackAtlasTypes */
 #endif /* kcg_use_GradientProfile_t_TrackAtlasTypes */
 
-#ifdef kcg_use_array_int64_3
-#ifndef kcg_comp_array_int64_3
-extern kcg_bool kcg_comp_array_int64_3(
-  array_int64_3 *kcg_c1,
-  array_int64_3 *kcg_c2);
-#endif /* kcg_comp_array_int64_3 */
-#endif /* kcg_use_array_int64_3 */
+#ifdef kcg_use_array_int32_269
+#ifndef kcg_comp_array_int32_269
+extern kcg_bool kcg_comp_array_int32_269(
+  array_int32_269 *kcg_c1,
+  array_int32_269 *kcg_c2);
+#endif /* kcg_comp_array_int32_269 */
+#endif /* kcg_use_array_int32_269 */
 
-#ifdef kcg_use__52_array
-#ifndef kcg_comp__52_array
-extern kcg_bool kcg_comp__52_array(_52_array *kcg_c1, _52_array *kcg_c2);
-#endif /* kcg_comp__52_array */
-#endif /* kcg_use__52_array */
+#ifdef kcg_use_array_int32_100
+#ifndef kcg_comp_array_int32_100
+extern kcg_bool kcg_comp_array_int32_100(
+  array_int32_100 *kcg_c1,
+  array_int32_100 *kcg_c2);
+#endif /* kcg_comp_array_int32_100 */
+#endif /* kcg_use_array_int32_100 */
 
-#ifdef kcg_use_DMI_TEXT_INT_Array_T_DATA
-#ifndef kcg_comp_DMI_TEXT_INT_Array_T_DATA
-extern kcg_bool kcg_comp_DMI_TEXT_INT_Array_T_DATA(
-  DMI_TEXT_INT_Array_T_DATA *kcg_c1,
-  DMI_TEXT_INT_Array_T_DATA *kcg_c2);
-#endif /* kcg_comp_DMI_TEXT_INT_Array_T_DATA */
-#endif /* kcg_use_DMI_TEXT_INT_Array_T_DATA */
+#ifdef kcg_use_array_int32_14
+#ifndef kcg_comp_array_int32_14
+extern kcg_bool kcg_comp_array_int32_14(
+  array_int32_14 *kcg_c1,
+  array_int32_14 *kcg_c2);
+#endif /* kcg_comp_array_int32_14 */
+#endif /* kcg_use_array_int32_14 */
 
-#ifdef kcg_use_array_int64_9
-#ifndef kcg_comp_array_int64_9
-extern kcg_bool kcg_comp_array_int64_9(
-  array_int64_9 *kcg_c1,
-  array_int64_9 *kcg_c2);
-#endif /* kcg_comp_array_int64_9 */
-#endif /* kcg_use_array_int64_9 */
+#ifdef kcg_use_array_float32_1
+#ifndef kcg_comp_array_float32_1
+extern kcg_bool kcg_comp_array_float32_1(
+  array_float32_1 *kcg_c1,
+  array_float32_1 *kcg_c2);
+#endif /* kcg_comp_array_float32_1 */
+#endif /* kcg_use_array_float32_1 */
 
-#ifdef kcg_use_array_int64_261
-#ifndef kcg_comp_array_int64_261
-extern kcg_bool kcg_comp_array_int64_261(
-  array_int64_261 *kcg_c1,
-  array_int64_261 *kcg_c2);
-#endif /* kcg_comp_array_int64_261 */
-#endif /* kcg_use_array_int64_261 */
+#ifdef kcg_use_array_int32_266
+#ifndef kcg_comp_array_int32_266
+extern kcg_bool kcg_comp_array_int32_266(
+  array_int32_266 *kcg_c1,
+  array_int32_266 *kcg_c2);
+#endif /* kcg_comp_array_int32_266 */
+#endif /* kcg_use_array_int32_266 */
 
-#ifdef kcg_use_EVC_to_DMI_Message_int_T_API_DMI_Pkg
-#ifndef kcg_comp_EVC_to_DMI_Message_int_T_API_DMI_Pkg
-extern kcg_bool kcg_comp_EVC_to_DMI_Message_int_T_API_DMI_Pkg(
-  EVC_to_DMI_Message_int_T_API_DMI_Pkg *kcg_c1,
-  EVC_to_DMI_Message_int_T_API_DMI_Pkg *kcg_c2);
-#endif /* kcg_comp_EVC_to_DMI_Message_int_T_API_DMI_Pkg */
-#endif /* kcg_use_EVC_to_DMI_Message_int_T_API_DMI_Pkg */
+#ifdef kcg_use_array_int32_23
+#ifndef kcg_comp_array_int32_23
+extern kcg_bool kcg_comp_array_int32_23(
+  array_int32_23 *kcg_c1,
+  array_int32_23 *kcg_c2);
+#endif /* kcg_comp_array_int32_23 */
+#endif /* kcg_use_array_int32_23 */
 
-#ifdef kcg_use__53_array
-#ifndef kcg_comp__53_array
-extern kcg_bool kcg_comp__53_array(_53_array *kcg_c1, _53_array *kcg_c2);
-#endif /* kcg_comp__53_array */
-#endif /* kcg_use__53_array */
+#ifdef kcg_use_array_int32_20
+#ifndef kcg_comp_array_int32_20
+extern kcg_bool kcg_comp_array_int32_20(
+  array_int32_20 *kcg_c1,
+  array_int32_20 *kcg_c2);
+#endif /* kcg_comp_array_int32_20 */
+#endif /* kcg_use_array_int32_20 */
+
+#ifdef kcg_use_tPASPOutput_Array
+#ifndef kcg_comp_tPASPOutput_Array
+extern kcg_bool kcg_comp_tPASPOutput_Array(
+  tPASPOutput_Array *kcg_c1,
+  tPASPOutput_Array *kcg_c2);
+#endif /* kcg_comp_tPASPOutput_Array */
+#endif /* kcg_use_tPASPOutput_Array */
 
 #ifdef kcg_use__54_array
 #ifndef kcg_comp__54_array
 extern kcg_bool kcg_comp__54_array(_54_array *kcg_c1, _54_array *kcg_c2);
 #endif /* kcg_comp__54_array */
 #endif /* kcg_use__54_array */
+
+#ifdef kcg_use__55_array
+#ifndef kcg_comp__55_array
+extern kcg_bool kcg_comp__55_array(_55_array *kcg_c1, _55_array *kcg_c2);
+#endif /* kcg_comp__55_array */
+#endif /* kcg_use__55_array */
 
 #ifdef kcg_use_P027V1_OBU_sectionlist_int_T_TM_baseline2
 #ifndef kcg_comp_P027V1_OBU_sectionlist_int_T_TM_baseline2
@@ -16300,14 +16331,6 @@ extern kcg_bool kcg_comp_LinkedBGs_T_BG_Types_Pkg(
 #define kcg_use_LinkedBGs_T_BG_Types_Pkg
 #endif /* kcg_comp_LinkedBGs_T_BG_Types_Pkg */
 
-#ifdef kcg_use_array_int64_6
-#ifndef kcg_comp_array_int64_6
-extern kcg_bool kcg_comp_array_int64_6(
-  array_int64_6 *kcg_c1,
-  array_int64_6 *kcg_c2);
-#endif /* kcg_comp_array_int64_6 */
-#endif /* kcg_use_array_int64_6 */
-
 #ifdef kcg_use_MyArray_SDM_Commands_Pkg
 #ifndef kcg_comp_MyArray_SDM_Commands_Pkg
 extern kcg_bool kcg_comp_MyArray_SDM_Commands_Pkg(
@@ -16316,13 +16339,21 @@ extern kcg_bool kcg_comp_MyArray_SDM_Commands_Pkg(
 #endif /* kcg_comp_MyArray_SDM_Commands_Pkg */
 #endif /* kcg_use_MyArray_SDM_Commands_Pkg */
 
-#ifdef kcg_use_array_int64_15
-#ifndef kcg_comp_array_int64_15
-extern kcg_bool kcg_comp_array_int64_15(
-  array_int64_15 *kcg_c1,
-  array_int64_15 *kcg_c2);
-#endif /* kcg_comp_array_int64_15 */
-#endif /* kcg_use_array_int64_15 */
+#ifdef kcg_use_array_float32_10
+#ifndef kcg_comp_array_float32_10
+extern kcg_bool kcg_comp_array_float32_10(
+  array_float32_10 *kcg_c1,
+  array_float32_10 *kcg_c2);
+#endif /* kcg_comp_array_float32_10 */
+#endif /* kcg_use_array_float32_10 */
+
+#ifdef kcg_use_array_int32_444
+#ifndef kcg_comp_array_int32_444
+extern kcg_bool kcg_comp_array_int32_444(
+  array_int32_444 *kcg_c1,
+  array_int32_444 *kcg_c2);
+#endif /* kcg_comp_array_int32_444 */
+#endif /* kcg_use_array_int32_444 */
 
 #ifdef kcg_use_array_int32_32
 #ifndef kcg_comp_array_int32_32
@@ -16332,59 +16363,13 @@ extern kcg_bool kcg_comp_array_int32_32(
 #endif /* kcg_comp_array_int32_32 */
 #endif /* kcg_use_array_int32_32 */
 
-#ifdef kcg_use_array_int64_12
-#ifndef kcg_comp_array_int64_12
-extern kcg_bool kcg_comp_array_int64_12(
-  array_int64_12 *kcg_c1,
-  array_int64_12 *kcg_c2);
-#endif /* kcg_comp_array_int64_12 */
-#endif /* kcg_use_array_int64_12 */
-
-#ifdef kcg_use_array_int64_350
-#ifndef kcg_comp_array_int64_350
-extern kcg_bool kcg_comp_array_int64_350(
-  array_int64_350 *kcg_c1,
-  array_int64_350 *kcg_c2);
-#endif /* kcg_comp_array_int64_350 */
-#endif /* kcg_use_array_int64_350 */
-
-#ifdef kcg_use_P005_sections_array_flat_T_TM
-#ifndef kcg_comp_P005_sections_array_flat_T_TM
-extern kcg_bool kcg_comp_P005_sections_array_flat_T_TM(
-  P005_sections_array_flat_T_TM *kcg_c1,
-  P005_sections_array_flat_T_TM *kcg_c2);
-#endif /* kcg_comp_P005_sections_array_flat_T_TM */
-#endif /* kcg_use_P005_sections_array_flat_T_TM */
-
-#ifdef kcg_use_array_int64_104
-#ifndef kcg_comp_array_int64_104
-extern kcg_bool kcg_comp_array_int64_104(
-  array_int64_104 *kcg_c1,
-  array_int64_104 *kcg_c2);
-#endif /* kcg_comp_array_int64_104 */
-#endif /* kcg_use_array_int64_104 */
-
-#ifdef kcg_use_array_int64_430
-#ifndef kcg_comp_array_int64_430
-extern kcg_bool kcg_comp_array_int64_430(
-  array_int64_430 *kcg_c1,
-  array_int64_430 *kcg_c2);
-#endif /* kcg_comp_array_int64_430 */
-#endif /* kcg_use_array_int64_430 */
-
-#ifdef kcg_use__55_array
-#ifndef kcg_comp__55_array
-extern kcg_bool kcg_comp__55_array(_55_array *kcg_c1, _55_array *kcg_c2);
-#endif /* kcg_comp__55_array */
-#endif /* kcg_use__55_array */
-
-#ifdef kcg_use_array_int64_18
-#ifndef kcg_comp_array_int64_18
-extern kcg_bool kcg_comp_array_int64_18(
-  array_int64_18 *kcg_c1,
-  array_int64_18 *kcg_c2);
-#endif /* kcg_comp_array_int64_18 */
-#endif /* kcg_use_array_int64_18 */
+#ifdef kcg_use_P080_sections_array_flat_T_TM
+#ifndef kcg_comp_P080_sections_array_flat_T_TM
+extern kcg_bool kcg_comp_P080_sections_array_flat_T_TM(
+  P080_sections_array_flat_T_TM *kcg_c1,
+  P080_sections_array_flat_T_TM *kcg_c2);
+#endif /* kcg_comp_P080_sections_array_flat_T_TM */
+#endif /* kcg_use_P080_sections_array_flat_T_TM */
 
 #ifdef kcg_use__56_array
 #ifndef kcg_comp__56_array
@@ -16392,19 +16377,19 @@ extern kcg_bool kcg_comp__56_array(_56_array *kcg_c1, _56_array *kcg_c2);
 #endif /* kcg_comp__56_array */
 #endif /* kcg_use__56_array */
 
+#ifdef kcg_use_array_float32_13
+#ifndef kcg_comp_array_float32_13
+extern kcg_bool kcg_comp_array_float32_13(
+  array_float32_13 *kcg_c1,
+  array_float32_13 *kcg_c2);
+#endif /* kcg_comp_array_float32_13 */
+#endif /* kcg_use_array_float32_13 */
+
 #ifdef kcg_use__57_array
 #ifndef kcg_comp__57_array
 extern kcg_bool kcg_comp__57_array(_57_array *kcg_c1, _57_array *kcg_c2);
 #endif /* kcg_comp__57_array */
 #endif /* kcg_use__57_array */
-
-#ifdef kcg_use_t_BrakeVt_t_SDMModelPkg
-#ifndef kcg_comp_t_BrakeVt_t_SDMModelPkg
-extern kcg_bool kcg_comp_t_BrakeVt_t_SDMModelPkg(
-  t_BrakeVt_t_SDMModelPkg *kcg_c1,
-  t_BrakeVt_t_SDMModelPkg *kcg_c2);
-#endif /* kcg_comp_t_BrakeVt_t_SDMModelPkg */
-#endif /* kcg_use_t_BrakeVt_t_SDMModelPkg */
 
 #ifdef kcg_use__58_array
 #ifndef kcg_comp__58_array
@@ -16412,21 +16397,29 @@ extern kcg_bool kcg_comp__58_array(_58_array *kcg_c1, _58_array *kcg_c2);
 #endif /* kcg_comp__58_array */
 #endif /* kcg_use__58_array */
 
-#ifdef kcg_use_array_int64_24
-#ifndef kcg_comp_array_int64_24
-extern kcg_bool kcg_comp_array_int64_24(
-  array_int64_24 *kcg_c1,
-  array_int64_24 *kcg_c2);
-#endif /* kcg_comp_array_int64_24 */
-#endif /* kcg_use_array_int64_24 */
+#ifdef kcg_use_array_int32_41
+#ifndef kcg_comp_array_int32_41
+extern kcg_bool kcg_comp_array_int32_41(
+  array_int32_41 *kcg_c1,
+  array_int32_41 *kcg_c2);
+#endif /* kcg_comp_array_int32_41 */
+#endif /* kcg_use_array_int32_41 */
 
-#ifdef kcg_use_array_int64_21
-#ifndef kcg_comp_array_int64_21
-extern kcg_bool kcg_comp_array_int64_21(
-  array_int64_21 *kcg_c1,
-  array_int64_21 *kcg_c2);
-#endif /* kcg_comp_array_int64_21 */
-#endif /* kcg_use_array_int64_21 */
+#ifdef kcg_use_M_TrainTrack_compressed_packets_T_TM_radio_messages
+#ifndef kcg_comp_M_TrainTrack_compressed_packets_T_TM_radio_messages
+extern kcg_bool kcg_comp_M_TrainTrack_compressed_packets_T_TM_radio_messages(
+  M_TrainTrack_compressed_packets_T_TM_radio_messages *kcg_c1,
+  M_TrainTrack_compressed_packets_T_TM_radio_messages *kcg_c2);
+#endif /* kcg_comp_M_TrainTrack_compressed_packets_T_TM_radio_messages */
+#endif /* kcg_use_M_TrainTrack_compressed_packets_T_TM_radio_messages */
+
+#ifdef kcg_use_array_int32_302
+#ifndef kcg_comp_array_int32_302
+extern kcg_bool kcg_comp_array_int32_302(
+  array_int32_302 *kcg_c1,
+  array_int32_302 *kcg_c2);
+#endif /* kcg_comp_array_int32_302 */
+#endif /* kcg_use_array_int32_302 */
 
 #ifdef kcg_use__59_array
 #ifndef kcg_comp__59_array
@@ -16434,59 +16427,27 @@ extern kcg_bool kcg_comp__59_array(_59_array *kcg_c1, _59_array *kcg_c2);
 #endif /* kcg_comp__59_array */
 #endif /* kcg_use__59_array */
 
-#ifdef kcg_use_array_float64_8
-#ifndef kcg_comp_array_float64_8
-extern kcg_bool kcg_comp_array_float64_8(
-  array_float64_8 *kcg_c1,
-  array_float64_8 *kcg_c2);
-#endif /* kcg_comp_array_float64_8 */
-#endif /* kcg_use_array_float64_8 */
+#ifdef kcg_use_array_int32_56
+#ifndef kcg_comp_array_int32_56
+extern kcg_bool kcg_comp_array_int32_56(
+  array_int32_56 *kcg_c1,
+  array_int32_56 *kcg_c2);
+#endif /* kcg_comp_array_int32_56 */
+#endif /* kcg_use_array_int32_56 */
 
-#ifdef kcg_use_array_int64_30
-#ifndef kcg_comp_array_int64_30
-extern kcg_bool kcg_comp_array_int64_30(
-  array_int64_30 *kcg_c1,
-  array_int64_30 *kcg_c2);
-#endif /* kcg_comp_array_int64_30 */
-#endif /* kcg_use_array_int64_30 */
-
-#ifdef kcg_use_array_float64_5
-#ifndef kcg_comp_array_float64_5
-extern kcg_bool kcg_comp_array_float64_5(
-  array_float64_5 *kcg_c1,
-  array_float64_5 *kcg_c2);
-#endif /* kcg_comp_array_float64_5 */
-#endif /* kcg_use_array_float64_5 */
-
-#ifdef kcg_use_array_int64_110
-#ifndef kcg_comp_array_int64_110
-extern kcg_bool kcg_comp_array_int64_110(
-  array_int64_110 *kcg_c1,
-  array_int64_110 *kcg_c2);
-#endif /* kcg_comp_array_int64_110 */
-#endif /* kcg_use_array_int64_110 */
+#ifdef kcg_use_array_float32_100_1
+#ifndef kcg_comp_array_float32_100_1
+extern kcg_bool kcg_comp_array_float32_100_1(
+  array_float32_100_1 *kcg_c1,
+  array_float32_100_1 *kcg_c2);
+#endif /* kcg_comp_array_float32_100_1 */
+#endif /* kcg_use_array_float32_100_1 */
 
 #ifdef kcg_use__60_array
 #ifndef kcg_comp__60_array
 extern kcg_bool kcg_comp__60_array(_60_array *kcg_c1, _60_array *kcg_c2);
 #endif /* kcg_comp__60_array */
 #endif /* kcg_use__60_array */
-
-#ifdef kcg_use_array_float64_100_1
-#ifndef kcg_comp_array_float64_100_1
-extern kcg_bool kcg_comp_array_float64_100_1(
-  array_float64_100_1 *kcg_c1,
-  array_float64_100_1 *kcg_c2);
-#endif /* kcg_comp_array_float64_100_1 */
-#endif /* kcg_use_array_float64_100_1 */
-
-#ifdef kcg_use_array_int64_33
-#ifndef kcg_comp_array_int64_33
-extern kcg_bool kcg_comp_array_int64_33(
-  array_int64_33 *kcg_c1,
-  array_int64_33 *kcg_c2);
-#endif /* kcg_comp_array_int64_33 */
-#endif /* kcg_use_array_int64_33 */
 
 #ifdef kcg_use_P046_trackide_sectionlist_T_TM
 #ifndef kcg_comp_P046_trackide_sectionlist_T_TM
@@ -16529,6 +16490,14 @@ extern kcg_bool kcg_comp__62_array(_62_array *kcg_c1, _62_array *kcg_c2);
 extern kcg_bool kcg_comp__63_array(_63_array *kcg_c1, _63_array *kcg_c2);
 #endif /* kcg_comp__63_array */
 #endif /* kcg_use__63_array */
+
+#ifdef kcg_use_array_float32_114
+#ifndef kcg_comp_array_float32_114
+extern kcg_bool kcg_comp_array_float32_114(
+  array_float32_114 *kcg_c1,
+  array_float32_114 *kcg_c2);
+#endif /* kcg_comp_array_float32_114 */
+#endif /* kcg_use_array_float32_114 */
 
 #ifdef kcg_use_P058_OBU_sectionlist_enum_T_TM
 #ifndef kcg_comp_P058_OBU_sectionlist_enum_T_TM
@@ -16594,22 +16563,6 @@ extern kcg_bool kcg_comp_DMI_level_array_T_DMI_Types_Pkg(
 #endif /* kcg_comp_DMI_level_array_T_DMI_Types_Pkg */
 #endif /* kcg_use_DMI_level_array_T_DMI_Types_Pkg */
 
-#ifdef kcg_use_array_int64_285
-#ifndef kcg_comp_array_int64_285
-extern kcg_bool kcg_comp_array_int64_285(
-  array_int64_285 *kcg_c1,
-  array_int64_285 *kcg_c2);
-#endif /* kcg_comp_array_int64_285 */
-#endif /* kcg_use_array_int64_285 */
-
-#ifdef kcg_use_Array_DMI_List_Entry_Request
-#ifndef kcg_comp_Array_DMI_List_Entry_Request
-extern kcg_bool kcg_comp_Array_DMI_List_Entry_Request(
-  Array_DMI_List_Entry_Request *kcg_c1,
-  Array_DMI_List_Entry_Request *kcg_c2);
-#endif /* kcg_comp_Array_DMI_List_Entry_Request */
-#endif /* kcg_use_Array_DMI_List_Entry_Request */
-
 #ifdef kcg_use__68_array
 #ifndef kcg_comp__68_array
 extern kcg_bool kcg_comp__68_array(_68_array *kcg_c1, _68_array *kcg_c2);
@@ -16624,14 +16577,6 @@ extern kcg_bool kcg_comp_DMI_trackConditionArray_T_DMI_Types_Pkg(
 #endif /* kcg_comp_DMI_trackConditionArray_T_DMI_Types_Pkg */
 #endif /* kcg_use_DMI_trackConditionArray_T_DMI_Types_Pkg */
 
-#ifdef kcg_use_array_int64_42
-#ifndef kcg_comp_array_int64_42
-extern kcg_bool kcg_comp_array_int64_42(
-  array_int64_42 *kcg_c1,
-  array_int64_42 *kcg_c2);
-#endif /* kcg_comp_array_int64_42 */
-#endif /* kcg_use_array_int64_42 */
-
 #ifdef kcg_use_P046_OBU_sectionlist_array_T_TM
 #ifndef kcg_comp_P046_OBU_sectionlist_array_T_TM
 extern kcg_bool kcg_comp_P046_OBU_sectionlist_array_T_TM(
@@ -16640,35 +16585,41 @@ extern kcg_bool kcg_comp_P046_OBU_sectionlist_array_T_TM(
 #endif /* kcg_comp_P046_OBU_sectionlist_array_T_TM */
 #endif /* kcg_use_P046_OBU_sectionlist_array_T_TM */
 
-#ifdef kcg_use_array_float64_100
-#ifndef kcg_comp_array_float64_100
-extern kcg_bool kcg_comp_array_float64_100(
-  array_float64_100 *kcg_c1,
-  array_float64_100 *kcg_c2);
-#endif /* kcg_comp_array_float64_100 */
-#endif /* kcg_use_array_float64_100 */
-
-#ifdef kcg_use_ASafeSpeedDefinition_T_CalcBrakingCurves_types
-#ifndef kcg_comp_ASafeSpeedDefinition_T_CalcBrakingCurves_types
-extern kcg_bool kcg_comp_ASafeSpeedDefinition_T_CalcBrakingCurves_types(
-  ASafeSpeedDefinition_T_CalcBrakingCurves_types *kcg_c1,
-  ASafeSpeedDefinition_T_CalcBrakingCurves_types *kcg_c2);
-#endif /* kcg_comp_ASafeSpeedDefinition_T_CalcBrakingCurves_types */
-#endif /* kcg_use_ASafeSpeedDefinition_T_CalcBrakingCurves_types */
-
 #ifdef kcg_use__69_array
 #ifndef kcg_comp__69_array
 extern kcg_bool kcg_comp__69_array(_69_array *kcg_c1, _69_array *kcg_c2);
 #endif /* kcg_comp__69_array */
 #endif /* kcg_use__69_array */
 
-#ifdef kcg_use_array_int64_99_33
-#ifndef kcg_comp_array_int64_99_33
-extern kcg_bool kcg_comp_array_int64_99_33(
-  array_int64_99_33 *kcg_c1,
-  array_int64_99_33 *kcg_c2);
-#endif /* kcg_comp_array_int64_99_33 */
-#endif /* kcg_use_array_int64_99_33 */
+#ifdef kcg_use_DMI_to_EVC_Message_int_T_API_DMI_Pkg
+#ifndef kcg_comp_DMI_to_EVC_Message_int_T_API_DMI_Pkg
+extern kcg_bool kcg_comp_DMI_to_EVC_Message_int_T_API_DMI_Pkg(
+  DMI_to_EVC_Message_int_T_API_DMI_Pkg *kcg_c1,
+  DMI_to_EVC_Message_int_T_API_DMI_Pkg *kcg_c2);
+#endif /* kcg_comp_DMI_to_EVC_Message_int_T_API_DMI_Pkg */
+#endif /* kcg_use_DMI_to_EVC_Message_int_T_API_DMI_Pkg */
+
+#ifdef kcg_use__70_array
+#ifndef kcg_comp__70_array
+extern kcg_bool kcg_comp__70_array(_70_array *kcg_c1, _70_array *kcg_c2);
+#endif /* kcg_comp__70_array */
+#endif /* kcg_use__70_array */
+
+#ifdef kcg_use_array_int32_975
+#ifndef kcg_comp_array_int32_975
+extern kcg_bool kcg_comp_array_int32_975(
+  array_int32_975 *kcg_c1,
+  array_int32_975 *kcg_c2);
+#endif /* kcg_comp_array_int32_975 */
+#endif /* kcg_use_array_int32_975 */
+
+#ifdef kcg_use_array_int32_99_33
+#ifndef kcg_comp_array_int32_99_33
+extern kcg_bool kcg_comp_array_int32_99_33(
+  array_int32_99_33 *kcg_c1,
+  array_int32_99_33 *kcg_c2);
+#endif /* kcg_comp_array_int32_99_33 */
+#endif /* kcg_use_array_int32_99_33 */
 
 #ifdef kcg_use_array_bool_1
 #ifndef kcg_comp_array_bool_1
@@ -16678,51 +16629,43 @@ extern kcg_bool kcg_comp_array_bool_1(
 #endif /* kcg_comp_array_bool_1 */
 #endif /* kcg_use_array_bool_1 */
 
-#ifdef kcg_use_array_int64_131
-#ifndef kcg_comp_array_int64_131
-extern kcg_bool kcg_comp_array_int64_131(
-  array_int64_131 *kcg_c1,
-  array_int64_131 *kcg_c2);
-#endif /* kcg_comp_array_int64_131 */
-#endif /* kcg_use_array_int64_131 */
+#ifdef kcg_use_array_int32_4_32_128
+#ifndef kcg_comp_array_int32_4_32_128
+extern kcg_bool kcg_comp_array_int32_4_32_128(
+  array_int32_4_32_128 *kcg_c1,
+  array_int32_4_32_128 *kcg_c2);
+#endif /* kcg_comp_array_int32_4_32_128 */
+#endif /* kcg_use_array_int32_4_32_128 */
 
-#ifdef kcg_use_array_int64_4_32_128
-#ifndef kcg_comp_array_int64_4_32_128
-extern kcg_bool kcg_comp_array_int64_4_32_128(
-  array_int64_4_32_128 *kcg_c1,
-  array_int64_4_32_128 *kcg_c2);
-#endif /* kcg_comp_array_int64_4_32_128 */
-#endif /* kcg_use_array_int64_4_32_128 */
+#ifdef kcg_use_array_int32_65
+#ifndef kcg_comp_array_int32_65
+extern kcg_bool kcg_comp_array_int32_65(
+  array_int32_65 *kcg_c1,
+  array_int32_65 *kcg_c2);
+#endif /* kcg_comp_array_int32_65 */
+#endif /* kcg_use_array_int32_65 */
 
-#ifdef kcg_use_array_int64_500_500
-#ifndef kcg_comp_array_int64_500_500
-extern kcg_bool kcg_comp_array_int64_500_500(
-  array_int64_500_500 *kcg_c1,
-  array_int64_500_500 *kcg_c2);
-#endif /* kcg_comp_array_int64_500_500 */
-#endif /* kcg_use_array_int64_500_500 */
+#ifdef kcg_use_array_int32_500_500
+#ifndef kcg_comp_array_int32_500_500
+extern kcg_bool kcg_comp_array_int32_500_500(
+  array_int32_500_500 *kcg_c1,
+  array_int32_500_500 *kcg_c2);
+#endif /* kcg_comp_array_int32_500_500 */
+#endif /* kcg_use_array_int32_500_500 */
 
-#ifdef kcg_use_array_int64_128
-#ifndef kcg_comp_array_int64_128
-extern kcg_bool kcg_comp_array_int64_128(
-  array_int64_128 *kcg_c1,
-  array_int64_128 *kcg_c2);
-#endif /* kcg_comp_array_int64_128 */
-#endif /* kcg_use_array_int64_128 */
+#ifdef kcg_use_array_int32_400
+#ifndef kcg_comp_array_int32_400
+extern kcg_bool kcg_comp_array_int32_400(
+  array_int32_400 *kcg_c1,
+  array_int32_400 *kcg_c2);
+#endif /* kcg_comp_array_int32_400 */
+#endif /* kcg_use_array_int32_400 */
 
-#ifdef kcg_use_array_int64_961
-#ifndef kcg_comp_array_int64_961
-extern kcg_bool kcg_comp_array_int64_961(
-  array_int64_961 *kcg_c1,
-  array_int64_961 *kcg_c2);
-#endif /* kcg_comp_array_int64_961 */
-#endif /* kcg_use_array_int64_961 */
-
-#ifdef kcg_use__70_array
-#ifndef kcg_comp__70_array
-extern kcg_bool kcg_comp__70_array(_70_array *kcg_c1, _70_array *kcg_c2);
-#endif /* kcg_comp__70_array */
-#endif /* kcg_use__70_array */
+#ifdef kcg_use__71_array
+#ifndef kcg_comp__71_array
+extern kcg_bool kcg_comp__71_array(_71_array *kcg_c1, _71_array *kcg_c2);
+#endif /* kcg_comp__71_array */
+#endif /* kcg_use__71_array */
 
 #ifdef kcg_use_ReportedBGList_T_ProvidePositionReport_Pkg
 #ifndef kcg_comp_ReportedBGList_T_ProvidePositionReport_Pkg
@@ -16740,11 +16683,19 @@ extern kcg_bool kcg_comp_TelegramArray_T_BG_Types_Pkg(
 #endif /* kcg_comp_TelegramArray_T_BG_Types_Pkg */
 #endif /* kcg_use_TelegramArray_T_BG_Types_Pkg */
 
-#ifdef kcg_use__71_array
-#ifndef kcg_comp__71_array
-extern kcg_bool kcg_comp__71_array(_71_array *kcg_c1, _71_array *kcg_c2);
-#endif /* kcg_comp__71_array */
-#endif /* kcg_use__71_array */
+#ifdef kcg_use__72_array
+#ifndef kcg_comp__72_array
+extern kcg_bool kcg_comp__72_array(_72_array *kcg_c1, _72_array *kcg_c2);
+#endif /* kcg_comp__72_array */
+#endif /* kcg_use__72_array */
+
+#ifdef kcg_use_array_int32_978
+#ifndef kcg_comp_array_int32_978
+extern kcg_bool kcg_comp_array_int32_978(
+  array_int32_978 *kcg_c1,
+  array_int32_978 *kcg_c2);
+#endif /* kcg_comp_array_int32_978 */
+#endif /* kcg_use_array_int32_978 */
 
 #ifdef kcg_use_RadioTrackTrainMessageQueueEntries_T
 #ifndef kcg_comp_RadioTrackTrainMessageQueueEntries_T
@@ -16754,21 +16705,29 @@ extern kcg_bool kcg_comp_RadioTrackTrainMessageQueueEntries_T(
 #endif /* kcg_comp_RadioTrackTrainMessageQueueEntries_T */
 #endif /* kcg_use_RadioTrackTrainMessageQueueEntries_T */
 
-#ifdef kcg_use_array_int64_3_33
-#ifndef kcg_comp_array_int64_3_33
-extern kcg_bool kcg_comp_array_int64_3_33(
-  array_int64_3_33 *kcg_c1,
-  array_int64_3_33 *kcg_c2);
-#endif /* kcg_comp_array_int64_3_33 */
-#endif /* kcg_use_array_int64_3_33 */
+#ifdef kcg_use_array_int32_3_33
+#ifndef kcg_comp_array_int32_3_33
+extern kcg_bool kcg_comp_array_int32_3_33(
+  array_int32_3_33 *kcg_c1,
+  array_int32_3_33 *kcg_c2);
+#endif /* kcg_comp_array_int32_3_33 */
+#endif /* kcg_use_array_int32_3_33 */
 
-#ifdef kcg_use_array_int64_48
-#ifndef kcg_comp_array_int64_48
-extern kcg_bool kcg_comp_array_int64_48(
-  array_int64_48 *kcg_c1,
-  array_int64_48 *kcg_c2);
-#endif /* kcg_comp_array_int64_48 */
-#endif /* kcg_use_array_int64_48 */
+#ifdef kcg_use_array_int32_987
+#ifndef kcg_comp_array_int32_987
+extern kcg_bool kcg_comp_array_int32_987(
+  array_int32_987 *kcg_c1,
+  array_int32_987 *kcg_c2);
+#endif /* kcg_comp_array_int32_987 */
+#endif /* kcg_use_array_int32_987 */
+
+#ifdef kcg_use_array_int32_68
+#ifndef kcg_comp_array_int32_68
+extern kcg_bool kcg_comp_array_int32_68(
+  array_int32_68 *kcg_c1,
+  array_int32_68 *kcg_c2);
+#endif /* kcg_comp_array_int32_68 */
+#endif /* kcg_use_array_int32_68 */
 
 #ifdef kcg_use_DMI_TXT_MSGList_status_T_DMI_Types_Pkg
 #ifndef kcg_comp_DMI_TXT_MSGList_status_T_DMI_Types_Pkg
@@ -16786,14 +16745,6 @@ extern kcg_bool kcg_comp_array_bool_12(
 #endif /* kcg_comp_array_bool_12 */
 #endif /* kcg_use_array_bool_12 */
 
-#ifdef kcg_use_array_int64_964
-#ifndef kcg_comp_array_int64_964
-extern kcg_bool kcg_comp_array_int64_964(
-  array_int64_964 *kcg_c1,
-  array_int64_964 *kcg_c2);
-#endif /* kcg_comp_array_int64_964 */
-#endif /* kcg_use_array_int64_964 */
-
 #ifdef kcg_use_driverIdentifier_T_DMI_Messages_Bothways_Pkg
 #ifndef kcg_comp_driverIdentifier_T_DMI_Messages_Bothways_Pkg
 extern kcg_bool kcg_comp_driverIdentifier_T_DMI_Messages_Bothways_Pkg(
@@ -16802,13 +16753,13 @@ extern kcg_bool kcg_comp_driverIdentifier_T_DMI_Messages_Bothways_Pkg(
 #endif /* kcg_comp_driverIdentifier_T_DMI_Messages_Bothways_Pkg */
 #endif /* kcg_use_driverIdentifier_T_DMI_Messages_Bothways_Pkg */
 
-#ifdef kcg_use_array_float64_32
-#ifndef kcg_comp_array_float64_32
-extern kcg_bool kcg_comp_array_float64_32(
-  array_float64_32 *kcg_c1,
-  array_float64_32 *kcg_c2);
-#endif /* kcg_comp_array_float64_32 */
-#endif /* kcg_use_array_float64_32 */
+#ifdef kcg_use_array_int32_990
+#ifndef kcg_comp_array_int32_990
+extern kcg_bool kcg_comp_array_int32_990(
+  array_int32_990 *kcg_c1,
+  array_int32_990 *kcg_c2);
+#endif /* kcg_comp_array_int32_990 */
+#endif /* kcg_use_array_int32_990 */
 
 #ifdef kcg_use_LevelDecisionTableType_DataDictionary_Pkg
 #ifndef kcg_comp_LevelDecisionTableType_DataDictionary_Pkg
@@ -16818,57 +16769,51 @@ extern kcg_bool kcg_comp_LevelDecisionTableType_DataDictionary_Pkg(
 #endif /* kcg_comp_LevelDecisionTableType_DataDictionary_Pkg */
 #endif /* kcg_use_LevelDecisionTableType_DataDictionary_Pkg */
 
-#ifdef kcg_use_Array_DMI_Q_Text
-#ifndef kcg_comp_Array_DMI_Q_Text
-extern kcg_bool kcg_comp_Array_DMI_Q_Text(
-  Array_DMI_Q_Text *kcg_c1,
-  Array_DMI_Q_Text *kcg_c2);
-#endif /* kcg_comp_Array_DMI_Q_Text */
-#endif /* kcg_use_Array_DMI_Q_Text */
-
-#ifdef kcg_use__72_array
-#ifndef kcg_comp__72_array
-extern kcg_bool kcg_comp__72_array(_72_array *kcg_c1, _72_array *kcg_c2);
-#endif /* kcg_comp__72_array */
-#endif /* kcg_use__72_array */
-
-#ifdef kcg_use_array_int64_395
-#ifndef kcg_comp_array_int64_395
-extern kcg_bool kcg_comp_array_int64_395(
-  array_int64_395 *kcg_c1,
-  array_int64_395 *kcg_c2);
-#endif /* kcg_comp_array_int64_395 */
-#endif /* kcg_use_array_int64_395 */
-
-#ifdef kcg_use_P046_sections_array_flat_T_TM
-#ifndef kcg_comp_P046_sections_array_flat_T_TM
-extern kcg_bool kcg_comp_P046_sections_array_flat_T_TM(
-  P046_sections_array_flat_T_TM *kcg_c1,
-  P046_sections_array_flat_T_TM *kcg_c2);
-#endif /* kcg_comp_P046_sections_array_flat_T_TM */
-#endif /* kcg_use_P046_sections_array_flat_T_TM */
-
 #ifdef kcg_use__73_array
 #ifndef kcg_comp__73_array
 extern kcg_bool kcg_comp__73_array(_73_array *kcg_c1, _73_array *kcg_c2);
 #endif /* kcg_comp__73_array */
 #endif /* kcg_use__73_array */
 
-#ifdef kcg_use_array_float64_50
-#ifndef kcg_comp_array_float64_50
-extern kcg_bool kcg_comp_array_float64_50(
-  array_float64_50 *kcg_c1,
-  array_float64_50 *kcg_c2);
-#endif /* kcg_comp_array_float64_50 */
-#endif /* kcg_use_array_float64_50 */
+#ifdef kcg_use_array_int32_492
+#ifndef kcg_comp_array_int32_492
+extern kcg_bool kcg_comp_array_int32_492(
+  array_int32_492 *kcg_c1,
+  array_int32_492 *kcg_c2);
+#endif /* kcg_comp_array_int32_492 */
+#endif /* kcg_use_array_int32_492 */
 
-#ifdef kcg_use_array_float64_100_8
-#ifndef kcg_comp_array_float64_100_8
-extern kcg_bool kcg_comp_array_float64_100_8(
-  array_float64_100_8 *kcg_c1,
-  array_float64_100_8 *kcg_c2);
-#endif /* kcg_comp_array_float64_100_8 */
-#endif /* kcg_use_array_float64_100_8 */
+#ifdef kcg_use_array_int32_3
+#ifndef kcg_comp_array_int32_3
+extern kcg_bool kcg_comp_array_int32_3(
+  array_int32_3 *kcg_c1,
+  array_int32_3 *kcg_c2);
+#endif /* kcg_comp_array_int32_3 */
+#endif /* kcg_use_array_int32_3 */
+
+#ifdef kcg_use_DMI_TEXT_INT_Array_T_DATA
+#ifndef kcg_comp_DMI_TEXT_INT_Array_T_DATA
+extern kcg_bool kcg_comp_DMI_TEXT_INT_Array_T_DATA(
+  DMI_TEXT_INT_Array_T_DATA *kcg_c1,
+  DMI_TEXT_INT_Array_T_DATA *kcg_c2);
+#endif /* kcg_comp_DMI_TEXT_INT_Array_T_DATA */
+#endif /* kcg_use_DMI_TEXT_INT_Array_T_DATA */
+
+#ifdef kcg_use_array_float32_100_8
+#ifndef kcg_comp_array_float32_100_8
+extern kcg_bool kcg_comp_array_float32_100_8(
+  array_float32_100_8 *kcg_c1,
+  array_float32_100_8 *kcg_c2);
+#endif /* kcg_comp_array_float32_100_8 */
+#endif /* kcg_use_array_float32_100_8 */
+
+#ifdef kcg_use_array_int32_9
+#ifndef kcg_comp_array_int32_9
+extern kcg_bool kcg_comp_array_int32_9(
+  array_int32_9 *kcg_c1,
+  array_int32_9 *kcg_c2);
+#endif /* kcg_comp_array_int32_9 */
+#endif /* kcg_use_array_int32_9 */
 
 #ifdef kcg_use_ParabolaCurveValid_T_CalcBrakingCurves_types
 #ifndef kcg_comp_ParabolaCurveValid_T_CalcBrakingCurves_types
@@ -16878,27 +16823,27 @@ extern kcg_bool kcg_comp_ParabolaCurveValid_T_CalcBrakingCurves_types(
 #endif /* kcg_comp_ParabolaCurveValid_T_CalcBrakingCurves_types */
 #endif /* kcg_use_ParabolaCurveValid_T_CalcBrakingCurves_types */
 
-#ifdef kcg_use_array_int64_72
-#ifndef kcg_comp_array_int64_72
-extern kcg_bool kcg_comp_array_int64_72(
-  array_int64_72 *kcg_c1,
-  array_int64_72 *kcg_c2);
-#endif /* kcg_comp_array_int64_72 */
-#endif /* kcg_use_array_int64_72 */
-
 #ifdef kcg_use__74_array
 #ifndef kcg_comp__74_array
 extern kcg_bool kcg_comp__74_array(_74_array *kcg_c1, _74_array *kcg_c2);
 #endif /* kcg_comp__74_array */
 #endif /* kcg_use__74_array */
 
-#ifdef kcg_use_array_int64_2_32
-#ifndef kcg_comp_array_int64_2_32
-extern kcg_bool kcg_comp_array_int64_2_32(
-  array_int64_2_32 *kcg_c1,
-  array_int64_2_32 *kcg_c2);
-#endif /* kcg_comp_array_int64_2_32 */
-#endif /* kcg_use_array_int64_2_32 */
+#ifdef kcg_use_array_int32_2_32
+#ifndef kcg_comp_array_int32_2_32
+extern kcg_bool kcg_comp_array_int32_2_32(
+  array_int32_2_32 *kcg_c1,
+  array_int32_2_32 *kcg_c2);
+#endif /* kcg_comp_array_int32_2_32 */
+#endif /* kcg_use_array_int32_2_32 */
+
+#ifdef kcg_use_EVC_to_DMI_Message_int_T_API_DMI_Pkg
+#ifndef kcg_comp_EVC_to_DMI_Message_int_T_API_DMI_Pkg
+extern kcg_bool kcg_comp_EVC_to_DMI_Message_int_T_API_DMI_Pkg(
+  EVC_to_DMI_Message_int_T_API_DMI_Pkg *kcg_c1,
+  EVC_to_DMI_Message_int_T_API_DMI_Pkg *kcg_c2);
+#endif /* kcg_comp_EVC_to_DMI_Message_int_T_API_DMI_Pkg */
+#endif /* kcg_use_EVC_to_DMI_Message_int_T_API_DMI_Pkg */
 
 #ifdef kcg_use_positionedBGs_T_TrainPosition_Types_Pck
 #ifndef kcg_comp_positionedBGs_T_TrainPosition_Types_Pck
@@ -16907,6 +16852,22 @@ extern kcg_bool kcg_comp_positionedBGs_T_TrainPosition_Types_Pck(
   positionedBGs_T_TrainPosition_Types_Pck *kcg_c2);
 #endif /* kcg_comp_positionedBGs_T_TrainPosition_Types_Pck */
 #endif /* kcg_use_positionedBGs_T_TrainPosition_Types_Pck */
+
+#ifdef kcg_use_array_int32_261
+#ifndef kcg_comp_array_int32_261
+extern kcg_bool kcg_comp_array_int32_261(
+  array_int32_261 *kcg_c1,
+  array_int32_261 *kcg_c2);
+#endif /* kcg_comp_array_int32_261 */
+#endif /* kcg_use_array_int32_261 */
+
+#ifdef kcg_use_array_int32_6
+#ifndef kcg_comp_array_int32_6
+extern kcg_bool kcg_comp_array_int32_6(
+  array_int32_6 *kcg_c1,
+  array_int32_6 *kcg_c2);
+#endif /* kcg_comp_array_int32_6 */
+#endif /* kcg_use_array_int32_6 */
 
 #ifdef kcg_use__75_array
 #ifndef kcg_comp__75_array
@@ -16920,13 +16881,21 @@ extern kcg_bool kcg_comp__76_array(_76_array *kcg_c1, _76_array *kcg_c2);
 #endif /* kcg_comp__76_array */
 #endif /* kcg_use__76_array */
 
-#ifdef kcg_use_array_int64_198_33
-#ifndef kcg_comp_array_int64_198_33
-extern kcg_bool kcg_comp_array_int64_198_33(
-  array_int64_198_33 *kcg_c1,
-  array_int64_198_33 *kcg_c2);
-#endif /* kcg_comp_array_int64_198_33 */
-#endif /* kcg_use_array_int64_198_33 */
+#ifdef kcg_use_array_int32_198_33
+#ifndef kcg_comp_array_int32_198_33
+extern kcg_bool kcg_comp_array_int32_198_33(
+  array_int32_198_33 *kcg_c1,
+  array_int32_198_33 *kcg_c2);
+#endif /* kcg_comp_array_int32_198_33 */
+#endif /* kcg_use_array_int32_198_33 */
+
+#ifdef kcg_use_array_int32_15
+#ifndef kcg_comp_array_int32_15
+extern kcg_bool kcg_comp_array_int32_15(
+  array_int32_15 *kcg_c1,
+  array_int32_15 *kcg_c2);
+#endif /* kcg_comp_array_int32_15 */
+#endif /* kcg_use_array_int32_15 */
 
 #ifdef kcg_use__77_array
 #ifndef kcg_comp__77_array
@@ -16934,21 +16903,29 @@ extern kcg_bool kcg_comp__77_array(_77_array *kcg_c1, _77_array *kcg_c2);
 #endif /* kcg_comp__77_array */
 #endif /* kcg_use__77_array */
 
-#ifdef kcg_use_P044_other_data_TM_TrainToTrack
-#ifndef kcg_comp_P044_other_data_TM_TrainToTrack
-extern kcg_bool kcg_comp_P044_other_data_TM_TrainToTrack(
-  P044_other_data_TM_TrainToTrack *kcg_c1,
-  P044_other_data_TM_TrainToTrack *kcg_c2);
-#endif /* kcg_comp_P044_other_data_TM_TrainToTrack */
-#endif /* kcg_use_P044_other_data_TM_TrainToTrack */
+#ifdef kcg_use_array_int32_12
+#ifndef kcg_comp_array_int32_12
+extern kcg_bool kcg_comp_array_int32_12(
+  array_int32_12 *kcg_c1,
+  array_int32_12 *kcg_c2);
+#endif /* kcg_comp_array_int32_12 */
+#endif /* kcg_use_array_int32_12 */
 
-#ifdef kcg_use_array_int64_496
-#ifndef kcg_comp_array_int64_496
-extern kcg_bool kcg_comp_array_int64_496(
-  array_int64_496 *kcg_c1,
-  array_int64_496 *kcg_c2);
-#endif /* kcg_comp_array_int64_496 */
-#endif /* kcg_use_array_int64_496 */
+#ifdef kcg_use_array_int32_350
+#ifndef kcg_comp_array_int32_350
+extern kcg_bool kcg_comp_array_int32_350(
+  array_int32_350 *kcg_c1,
+  array_int32_350 *kcg_c2);
+#endif /* kcg_comp_array_int32_350 */
+#endif /* kcg_use_array_int32_350 */
+
+#ifdef kcg_use_P005_sections_array_flat_T_TM
+#ifndef kcg_comp_P005_sections_array_flat_T_TM
+extern kcg_bool kcg_comp_P005_sections_array_flat_T_TM(
+  P005_sections_array_flat_T_TM *kcg_c1,
+  P005_sections_array_flat_T_TM *kcg_c2);
+#endif /* kcg_comp_P005_sections_array_flat_T_TM */
+#endif /* kcg_use_P005_sections_array_flat_T_TM */
 
 #ifdef kcg_use__78_array
 #ifndef kcg_comp__78_array
@@ -16956,19 +16933,19 @@ extern kcg_bool kcg_comp__78_array(_78_array *kcg_c1, _78_array *kcg_c2);
 #endif /* kcg_comp__78_array */
 #endif /* kcg_use__78_array */
 
-#ifdef kcg_use_array_int64_2_4_8
-#ifndef kcg_comp_array_int64_2_4_8
-extern kcg_bool kcg_comp_array_int64_2_4_8(
-  array_int64_2_4_8 *kcg_c1,
-  array_int64_2_4_8 *kcg_c2);
-#endif /* kcg_comp_array_int64_2_4_8 */
-#endif /* kcg_use_array_int64_2_4_8 */
-
 #ifdef kcg_use__79_array
 #ifndef kcg_comp__79_array
 extern kcg_bool kcg_comp__79_array(_79_array *kcg_c1, _79_array *kcg_c2);
 #endif /* kcg_comp__79_array */
 #endif /* kcg_use__79_array */
+
+#ifdef kcg_use_array_int32_2_4_8
+#ifndef kcg_comp_array_int32_2_4_8
+extern kcg_bool kcg_comp_array_int32_2_4_8(
+  array_int32_2_4_8 *kcg_c1,
+  array_int32_2_4_8 *kcg_c2);
+#endif /* kcg_comp_array_int32_2_4_8 */
+#endif /* kcg_use_array_int32_2_4_8 */
 
 #ifdef kcg_use__80_array
 #ifndef kcg_comp__80_array
@@ -16976,13 +16953,29 @@ extern kcg_bool kcg_comp__80_array(_80_array *kcg_c1, _80_array *kcg_c2);
 #endif /* kcg_comp__80_array */
 #endif /* kcg_use__80_array */
 
-#ifdef kcg_use_tSpeedPoints
-#ifndef kcg_comp_tSpeedPoints
-extern kcg_bool kcg_comp_tSpeedPoints(
-  tSpeedPoints *kcg_c1,
-  tSpeedPoints *kcg_c2);
-#endif /* kcg_comp_tSpeedPoints */
-#endif /* kcg_use_tSpeedPoints */
+#ifdef kcg_use_array_int32_104
+#ifndef kcg_comp_array_int32_104
+extern kcg_bool kcg_comp_array_int32_104(
+  array_int32_104 *kcg_c1,
+  array_int32_104 *kcg_c2);
+#endif /* kcg_comp_array_int32_104 */
+#endif /* kcg_use_array_int32_104 */
+
+#ifdef kcg_use_array_int32_430
+#ifndef kcg_comp_array_int32_430
+extern kcg_bool kcg_comp_array_int32_430(
+  array_int32_430 *kcg_c1,
+  array_int32_430 *kcg_c2);
+#endif /* kcg_comp_array_int32_430 */
+#endif /* kcg_use_array_int32_430 */
+
+#ifdef kcg_use_array_int32_18
+#ifndef kcg_comp_array_int32_18
+extern kcg_bool kcg_comp_array_int32_18(
+  array_int32_18 *kcg_c1,
+  array_int32_18 *kcg_c2);
+#endif /* kcg_comp_array_int32_18 */
+#endif /* kcg_use_array_int32_18 */
 
 #ifdef kcg_use__81_array
 #ifndef kcg_comp__81_array
@@ -16996,29 +16989,13 @@ extern kcg_bool kcg_comp__82_array(_82_array *kcg_c1, _82_array *kcg_c2);
 #endif /* kcg_comp__82_array */
 #endif /* kcg_use__82_array */
 
-#ifdef kcg_use_array_int64_4
-#ifndef kcg_comp_array_int64_4
-extern kcg_bool kcg_comp_array_int64_4(
-  array_int64_4 *kcg_c1,
-  array_int64_4 *kcg_c2);
-#endif /* kcg_comp_array_int64_4 */
-#endif /* kcg_use_array_int64_4 */
-
-#ifdef kcg_use_array_int64_499
-#ifndef kcg_comp_array_int64_499
-extern kcg_bool kcg_comp_array_int64_499(
-  array_int64_499 *kcg_c1,
-  array_int64_499 *kcg_c2);
-#endif /* kcg_comp_array_int64_499 */
-#endif /* kcg_use_array_int64_499 */
-
-#ifdef kcg_use_array_float64_10_10
-#ifndef kcg_comp_array_float64_10_10
-extern kcg_bool kcg_comp_array_float64_10_10(
-  array_float64_10_10 *kcg_c1,
-  array_float64_10_10 *kcg_c2);
-#endif /* kcg_comp_array_float64_10_10 */
-#endif /* kcg_use_array_float64_10_10 */
+#ifdef kcg_use_tSpeedPoints
+#ifndef kcg_comp_tSpeedPoints
+extern kcg_bool kcg_comp_tSpeedPoints(
+  tSpeedPoints *kcg_c1,
+  tSpeedPoints *kcg_c2);
+#endif /* kcg_comp_tSpeedPoints */
+#endif /* kcg_use_tSpeedPoints */
 
 #ifdef kcg_use__83_array
 #ifndef kcg_comp__83_array
@@ -17032,11 +17009,63 @@ extern kcg_bool kcg_comp__84_array(_84_array *kcg_c1, _84_array *kcg_c2);
 #endif /* kcg_comp__84_array */
 #endif /* kcg_use__84_array */
 
+#ifdef kcg_use_t_BrakeVt_t_SDMModelPkg
+#ifndef kcg_comp_t_BrakeVt_t_SDMModelPkg
+extern kcg_bool kcg_comp_t_BrakeVt_t_SDMModelPkg(
+  t_BrakeVt_t_SDMModelPkg *kcg_c1,
+  t_BrakeVt_t_SDMModelPkg *kcg_c2);
+#endif /* kcg_comp_t_BrakeVt_t_SDMModelPkg */
+#endif /* kcg_use_t_BrakeVt_t_SDMModelPkg */
+
+#ifdef kcg_use_array_int32_24
+#ifndef kcg_comp_array_int32_24
+extern kcg_bool kcg_comp_array_int32_24(
+  array_int32_24 *kcg_c1,
+  array_int32_24 *kcg_c2);
+#endif /* kcg_comp_array_int32_24 */
+#endif /* kcg_use_array_int32_24 */
+
+#ifdef kcg_use_array_float32_10_10
+#ifndef kcg_comp_array_float32_10_10
+extern kcg_bool kcg_comp_array_float32_10_10(
+  array_float32_10_10 *kcg_c1,
+  array_float32_10_10 *kcg_c2);
+#endif /* kcg_comp_array_float32_10_10 */
+#endif /* kcg_use_array_float32_10_10 */
+
+#ifdef kcg_use_array_int32_21
+#ifndef kcg_comp_array_int32_21
+extern kcg_bool kcg_comp_array_int32_21(
+  array_int32_21 *kcg_c1,
+  array_int32_21 *kcg_c2);
+#endif /* kcg_comp_array_int32_21 */
+#endif /* kcg_use_array_int32_21 */
+
 #ifdef kcg_use__85_array
 #ifndef kcg_comp__85_array
 extern kcg_bool kcg_comp__85_array(_85_array *kcg_c1, _85_array *kcg_c2);
 #endif /* kcg_comp__85_array */
 #endif /* kcg_use__85_array */
+
+#ifdef kcg_use__86_array
+#ifndef kcg_comp__86_array
+extern kcg_bool kcg_comp__86_array(_86_array *kcg_c1, _86_array *kcg_c2);
+#endif /* kcg_comp__86_array */
+#endif /* kcg_use__86_array */
+
+#ifdef kcg_use_array_float32_8
+#ifndef kcg_comp_array_float32_8
+extern kcg_bool kcg_comp_array_float32_8(
+  array_float32_8 *kcg_c1,
+  array_float32_8 *kcg_c2);
+#endif /* kcg_comp_array_float32_8 */
+#endif /* kcg_use_array_float32_8 */
+
+#ifdef kcg_use__87_array
+#ifndef kcg_comp__87_array
+extern kcg_bool kcg_comp__87_array(_87_array *kcg_c1, _87_array *kcg_c2);
+#endif /* kcg_comp__87_array */
+#endif /* kcg_use__87_array */
 
 #ifdef kcg_use_GradientProfile_real_t_SDM_GradientAcceleration_types
 #ifndef kcg_comp_GradientProfile_real_t_SDM_GradientAcceleration_types
@@ -17062,41 +17091,41 @@ extern kcg_bool kcg_comp_array_bool_113(
 #endif /* kcg_comp_array_bool_113 */
 #endif /* kcg_use_array_bool_113 */
 
-#ifdef kcg_use_array_int64_10
-#ifndef kcg_comp_array_int64_10
-extern kcg_bool kcg_comp_array_int64_10(
-  array_int64_10 *kcg_c1,
-  array_int64_10 *kcg_c2);
-#endif /* kcg_comp_array_int64_10 */
-#endif /* kcg_use_array_int64_10 */
+#ifdef kcg_use_array_int32_30
+#ifndef kcg_comp_array_int32_30
+extern kcg_bool kcg_comp_array_int32_30(
+  array_int32_30 *kcg_c1,
+  array_int32_30 *kcg_c2);
+#endif /* kcg_comp_array_int32_30 */
+#endif /* kcg_use_array_int32_30 */
 
-#ifdef kcg_use_DMI_Text_Message_int_array_T_DATA
-#ifndef kcg_comp_DMI_Text_Message_int_array_T_DATA
-extern kcg_bool kcg_comp_DMI_Text_Message_int_array_T_DATA(
-  DMI_Text_Message_int_array_T_DATA *kcg_c1,
-  DMI_Text_Message_int_array_T_DATA *kcg_c2);
-#endif /* kcg_comp_DMI_Text_Message_int_array_T_DATA */
-#endif /* kcg_use_DMI_Text_Message_int_array_T_DATA */
+#ifdef kcg_use_array_float32_5
+#ifndef kcg_comp_array_float32_5
+extern kcg_bool kcg_comp_array_float32_5(
+  array_float32_5 *kcg_c1,
+  array_float32_5 *kcg_c2);
+#endif /* kcg_comp_array_float32_5 */
+#endif /* kcg_use_array_float32_5 */
 
-#ifdef kcg_use__86_array
-#ifndef kcg_comp__86_array
-extern kcg_bool kcg_comp__86_array(_86_array *kcg_c1, _86_array *kcg_c2);
-#endif /* kcg_comp__86_array */
-#endif /* kcg_use__86_array */
+#ifdef kcg_use__88_array
+#ifndef kcg_comp__88_array
+extern kcg_bool kcg_comp__88_array(_88_array *kcg_c1, _88_array *kcg_c2);
+#endif /* kcg_comp__88_array */
+#endif /* kcg_use__88_array */
 
-#ifdef kcg_use__87_array
-#ifndef kcg_comp__87_array
-extern kcg_bool kcg_comp__87_array(_87_array *kcg_c1, _87_array *kcg_c2);
-#endif /* kcg_comp__87_array */
-#endif /* kcg_use__87_array */
+#ifdef kcg_use__89_array
+#ifndef kcg_comp__89_array
+extern kcg_bool kcg_comp__89_array(_89_array *kcg_c1, _89_array *kcg_c2);
+#endif /* kcg_comp__89_array */
+#endif /* kcg_use__89_array */
 
-#ifdef kcg_use_array_int64_7
-#ifndef kcg_comp_array_int64_7
-extern kcg_bool kcg_comp_array_int64_7(
-  array_int64_7 *kcg_c1,
-  array_int64_7 *kcg_c2);
-#endif /* kcg_comp_array_int64_7 */
-#endif /* kcg_use_array_int64_7 */
+#ifdef kcg_use_Array_DMI_List_Entry_Request
+#ifndef kcg_comp_Array_DMI_List_Entry_Request
+extern kcg_bool kcg_comp_Array_DMI_List_Entry_Request(
+  Array_DMI_List_Entry_Request *kcg_c1,
+  Array_DMI_List_Entry_Request *kcg_c2);
+#endif /* kcg_comp_Array_DMI_List_Entry_Request */
+#endif /* kcg_use_Array_DMI_List_Entry_Request */
 
 #ifdef kcg_use_nvkvintsetArray_T_Packet_Types_Pkg
 #ifndef kcg_comp_nvkvintsetArray_T_Packet_Types_Pkg
@@ -17146,19 +17175,19 @@ extern kcg_bool kcg_comp_DiffArray_T_Packet_Types_Pkg(
 #endif /* kcg_comp_DiffArray_T_Packet_Types_Pkg */
 #endif /* kcg_use_DiffArray_T_Packet_Types_Pkg */
 
-#ifdef kcg_use_array_int64_428
-#ifndef kcg_comp_array_int64_428
-extern kcg_bool kcg_comp_array_int64_428(
-  array_int64_428 *kcg_c1,
-  array_int64_428 *kcg_c2);
-#endif /* kcg_comp_array_int64_428 */
-#endif /* kcg_use_array_int64_428 */
+#ifdef kcg_use_array_int32_110
+#ifndef kcg_comp_array_int32_110
+extern kcg_bool kcg_comp_array_int32_110(
+  array_int32_110 *kcg_c1,
+  array_int32_110 *kcg_c2);
+#endif /* kcg_comp_array_int32_110 */
+#endif /* kcg_use_array_int32_110 */
 
-#ifdef kcg_use__88_array
-#ifndef kcg_comp__88_array
-extern kcg_bool kcg_comp__88_array(_88_array *kcg_c1, _88_array *kcg_c2);
-#endif /* kcg_comp__88_array */
-#endif /* kcg_use__88_array */
+#ifdef kcg_use__90_array
+#ifndef kcg_comp__90_array
+extern kcg_bool kcg_comp__90_array(_90_array *kcg_c1, _90_array *kcg_c2);
+#endif /* kcg_comp__90_array */
+#endif /* kcg_use__90_array */
 
 #ifdef kcg_use_array_bool_10
 #ifndef kcg_comp_array_bool_10
@@ -17183,43 +17212,29 @@ extern kcg_bool kcg_comp_P015_OBU_sectionlist_array_T_TM(
 #endif /* kcg_comp_P015_OBU_sectionlist_array_T_TM */
 #endif /* kcg_use_P015_OBU_sectionlist_array_T_TM */
 
-#ifdef kcg_use__89_array
-#ifndef kcg_comp__89_array
-extern kcg_bool kcg_comp__89_array(_89_array *kcg_c1, _89_array *kcg_c2);
-#endif /* kcg_comp__89_array */
-#endif /* kcg_use__89_array */
+#ifdef kcg_use_array_int32_33
+#ifndef kcg_comp_array_int32_33
+extern kcg_bool kcg_comp_array_int32_33(
+  array_int32_33 *kcg_c1,
+  array_int32_33 *kcg_c2);
+#endif /* kcg_comp_array_int32_33 */
+#endif /* kcg_use_array_int32_33 */
 
-#ifdef kcg_use_array_int64_99
-#ifndef kcg_comp_array_int64_99
-extern kcg_bool kcg_comp_array_int64_99(
-  array_int64_99 *kcg_c1,
-  array_int64_99 *kcg_c2);
-#endif /* kcg_comp_array_int64_99 */
-#endif /* kcg_use_array_int64_99 */
+#ifdef kcg_use_array_int32_285
+#ifndef kcg_comp_array_int32_285
+extern kcg_bool kcg_comp_array_int32_285(
+  array_int32_285 *kcg_c1,
+  array_int32_285 *kcg_c2);
+#endif /* kcg_comp_array_int32_285 */
+#endif /* kcg_use_array_int32_285 */
 
-#ifdef kcg_use_array_int64_13
-#ifndef kcg_comp_array_int64_13
-extern kcg_bool kcg_comp_array_int64_13(
-  array_int64_13 *kcg_c1,
-  array_int64_13 *kcg_c2);
-#endif /* kcg_comp_array_int64_13 */
-#endif /* kcg_use_array_int64_13 */
-
-#ifdef kcg_use_array_int64_22
-#ifndef kcg_comp_array_int64_22
-extern kcg_bool kcg_comp_array_int64_22(
-  array_int64_22 *kcg_c1,
-  array_int64_22 *kcg_c2);
-#endif /* kcg_comp_array_int64_22 */
-#endif /* kcg_use_array_int64_22 */
-
-#ifdef kcg_use_array_int64_105
-#ifndef kcg_comp_array_int64_105
-extern kcg_bool kcg_comp_array_int64_105(
-  array_int64_105 *kcg_c1,
-  array_int64_105 *kcg_c2);
-#endif /* kcg_comp_array_int64_105 */
-#endif /* kcg_use_array_int64_105 */
+#ifdef kcg_use_array_int32_42
+#ifndef kcg_comp_array_int32_42
+extern kcg_bool kcg_comp_array_int32_42(
+  array_int32_42 *kcg_c1,
+  array_int32_42 *kcg_c2);
+#endif /* kcg_comp_array_int32_42 */
+#endif /* kcg_use_array_int32_42 */
 
 #ifdef kcg_use_P005_OBU_sectionlist_array_T_TM
 #ifndef kcg_comp_P005_OBU_sectionlist_array_T_TM
@@ -17228,12 +17243,6 @@ extern kcg_bool kcg_comp_P005_OBU_sectionlist_array_T_TM(
   P005_OBU_sectionlist_array_T_TM *kcg_c2);
 #endif /* kcg_comp_P005_OBU_sectionlist_array_T_TM */
 #endif /* kcg_use_P005_OBU_sectionlist_array_T_TM */
-
-#ifdef kcg_use__90_array
-#ifndef kcg_comp__90_array
-extern kcg_bool kcg_comp__90_array(_90_array *kcg_c1, _90_array *kcg_c2);
-#endif /* kcg_comp__90_array */
-#endif /* kcg_use__90_array */
 
 #ifdef kcg_use__91_array
 #ifndef kcg_comp__91_array
@@ -17247,11 +17256,27 @@ extern kcg_bool kcg_comp__92_array(_92_array *kcg_c1, _92_array *kcg_c2);
 #endif /* kcg_comp__92_array */
 #endif /* kcg_use__92_array */
 
+#ifdef kcg_use_array_float32_100
+#ifndef kcg_comp_array_float32_100
+extern kcg_bool kcg_comp_array_float32_100(
+  array_float32_100 *kcg_c1,
+  array_float32_100 *kcg_c2);
+#endif /* kcg_comp_array_float32_100 */
+#endif /* kcg_use_array_float32_100 */
+
 #ifdef kcg_use__93_array
 #ifndef kcg_comp__93_array
 extern kcg_bool kcg_comp__93_array(_93_array *kcg_c1, _93_array *kcg_c2);
 #endif /* kcg_comp__93_array */
 #endif /* kcg_use__93_array */
+
+#ifdef kcg_use_ASafeSpeedDefinition_T_CalcBrakingCurves_types
+#ifndef kcg_comp_ASafeSpeedDefinition_T_CalcBrakingCurves_types
+extern kcg_bool kcg_comp_ASafeSpeedDefinition_T_CalcBrakingCurves_types(
+  ASafeSpeedDefinition_T_CalcBrakingCurves_types *kcg_c1,
+  ASafeSpeedDefinition_T_CalcBrakingCurves_types *kcg_c2);
+#endif /* kcg_comp_ASafeSpeedDefinition_T_CalcBrakingCurves_types */
+#endif /* kcg_use_ASafeSpeedDefinition_T_CalcBrakingCurves_types */
 
 #ifdef kcg_use_IterPacket58List_T_Packet_Types_Pkg
 #ifndef kcg_comp_IterPacket58List_T_Packet_Types_Pkg
@@ -17260,6 +17285,14 @@ extern kcg_bool kcg_comp_IterPacket58List_T_Packet_Types_Pkg(
   IterPacket58List_T_Packet_Types_Pkg *kcg_c2);
 #endif /* kcg_comp_IterPacket58List_T_Packet_Types_Pkg */
 #endif /* kcg_use_IterPacket58List_T_Packet_Types_Pkg */
+
+#ifdef kcg_use_array_int32_131
+#ifndef kcg_comp_array_int32_131
+extern kcg_bool kcg_comp_array_int32_131(
+  array_int32_131 *kcg_c1,
+  array_int32_131 *kcg_c2);
+#endif /* kcg_comp_array_int32_131 */
+#endif /* kcg_use_array_int32_131 */
 
 #ifdef kcg_use__94_array
 #ifndef kcg_comp__94_array
@@ -17273,13 +17306,21 @@ extern kcg_bool kcg_comp__95_array(_95_array *kcg_c1, _95_array *kcg_c2);
 #endif /* kcg_comp__95_array */
 #endif /* kcg_use__95_array */
 
-#ifdef kcg_use_array_float64_3
-#ifndef kcg_comp_array_float64_3
-extern kcg_bool kcg_comp_array_float64_3(
-  array_float64_3 *kcg_c1,
-  array_float64_3 *kcg_c2);
-#endif /* kcg_comp_array_float64_3 */
-#endif /* kcg_use_array_float64_3 */
+#ifdef kcg_use_array_int32_128
+#ifndef kcg_comp_array_int32_128
+extern kcg_bool kcg_comp_array_int32_128(
+  array_int32_128 *kcg_c1,
+  array_int32_128 *kcg_c2);
+#endif /* kcg_comp_array_int32_128 */
+#endif /* kcg_use_array_int32_128 */
+
+#ifdef kcg_use_array_int32_961
+#ifndef kcg_comp_array_int32_961
+extern kcg_bool kcg_comp_array_int32_961(
+  array_int32_961 *kcg_c1,
+  array_int32_961 *kcg_c2);
+#endif /* kcg_comp_array_int32_961 */
+#endif /* kcg_use_array_int32_961 */
 
 #ifdef kcg_use__96_array
 #ifndef kcg_comp__96_array
@@ -17287,81 +17328,21 @@ extern kcg_bool kcg_comp__96_array(_96_array *kcg_c1, _96_array *kcg_c2);
 #endif /* kcg_comp__96_array */
 #endif /* kcg_use__96_array */
 
-#ifdef kcg_use_array_int64_25
-#ifndef kcg_comp_array_int64_25
-extern kcg_bool kcg_comp_array_int64_25(
-  array_int64_25 *kcg_c1,
-  array_int64_25 *kcg_c2);
-#endif /* kcg_comp_array_int64_25 */
-#endif /* kcg_use_array_int64_25 */
+#ifdef kcg_use_array_int32_66_33
+#ifndef kcg_comp_array_int32_66_33
+extern kcg_bool kcg_comp_array_int32_66_33(
+  array_int32_66_33 *kcg_c1,
+  array_int32_66_33 *kcg_c2);
+#endif /* kcg_comp_array_int32_66_33 */
+#endif /* kcg_use_array_int32_66_33 */
 
-#ifdef kcg_use_tScale
-#ifndef kcg_comp_tScale
-extern kcg_bool kcg_comp_tScale(tScale *kcg_c1, tScale *kcg_c2);
-#endif /* kcg_comp_tScale */
-#endif /* kcg_use_tScale */
-
-#ifdef kcg_use_array_int64_31
-#ifndef kcg_comp_array_int64_31
-extern kcg_bool kcg_comp_array_int64_31(
-  array_int64_31 *kcg_c1,
-  array_int64_31 *kcg_c2);
-#endif /* kcg_comp_array_int64_31 */
-#endif /* kcg_use_array_int64_31 */
-
-#ifdef kcg_use__97_array
-#ifndef kcg_comp__97_array
-extern kcg_bool kcg_comp__97_array(_97_array *kcg_c1, _97_array *kcg_c2);
-#endif /* kcg_comp__97_array */
-#endif /* kcg_use__97_array */
-
-#ifdef kcg_use_array_int64_283
-#ifndef kcg_comp_array_int64_283
-extern kcg_bool kcg_comp_array_int64_283(
-  array_int64_283 *kcg_c1,
-  array_int64_283 *kcg_c2);
-#endif /* kcg_comp_array_int64_283 */
-#endif /* kcg_use_array_int64_283 */
-
-#ifdef kcg_use_array_int64_114
-#ifndef kcg_comp_array_int64_114
-extern kcg_bool kcg_comp_array_int64_114(
-  array_int64_114 *kcg_c1,
-  array_int64_114 *kcg_c2);
-#endif /* kcg_comp_array_int64_114 */
-#endif /* kcg_use_array_int64_114 */
-
-#ifdef kcg_use_array_float64_6
-#ifndef kcg_comp_array_float64_6
-extern kcg_bool kcg_comp_array_float64_6(
-  array_float64_6 *kcg_c1,
-  array_float64_6 *kcg_c2);
-#endif /* kcg_comp_array_float64_6 */
-#endif /* kcg_use_array_float64_6 */
-
-#ifdef kcg_use_array_int64_66_33
-#ifndef kcg_comp_array_int64_66_33
-extern kcg_bool kcg_comp_array_int64_66_33(
-  array_int64_66_33 *kcg_c1,
-  array_int64_66_33 *kcg_c2);
-#endif /* kcg_comp_array_int64_66_33 */
-#endif /* kcg_use_array_int64_66_33 */
-
-#ifdef kcg_use_array_int64_28
-#ifndef kcg_comp_array_int64_28
-extern kcg_bool kcg_comp_array_int64_28(
-  array_int64_28 *kcg_c1,
-  array_int64_28 *kcg_c2);
-#endif /* kcg_comp_array_int64_28 */
-#endif /* kcg_use_array_int64_28 */
-
-#ifdef kcg_use_array_int64_280
-#ifndef kcg_comp_array_int64_280
-extern kcg_bool kcg_comp_array_int64_280(
-  array_int64_280 *kcg_c1,
-  array_int64_280 *kcg_c2);
-#endif /* kcg_comp_array_int64_280 */
-#endif /* kcg_use_array_int64_280 */
+#ifdef kcg_use_array_int32_48
+#ifndef kcg_comp_array_int32_48
+extern kcg_bool kcg_comp_array_int32_48(
+  array_int32_48 *kcg_c1,
+  array_int32_48 *kcg_c2);
+#endif /* kcg_comp_array_int32_48 */
+#endif /* kcg_use_array_int32_48 */
 
 #ifdef kcg_use_array_bool_32
 #ifndef kcg_comp_array_bool_32
@@ -17371,27 +17352,41 @@ extern kcg_bool kcg_comp_array_bool_32(
 #endif /* kcg_comp_array_bool_32 */
 #endif /* kcg_use_array_bool_32 */
 
+#ifdef kcg_use_array_int32_964
+#ifndef kcg_comp_array_int32_964
+extern kcg_bool kcg_comp_array_int32_964(
+  array_int32_964 *kcg_c1,
+  array_int32_964 *kcg_c2);
+#endif /* kcg_comp_array_int32_964 */
+#endif /* kcg_use_array_int32_964 */
+
+#ifdef kcg_use_Array_DMI_Q_Text
+#ifndef kcg_comp_Array_DMI_Q_Text
+extern kcg_bool kcg_comp_Array_DMI_Q_Text(
+  Array_DMI_Q_Text *kcg_c1,
+  Array_DMI_Q_Text *kcg_c2);
+#endif /* kcg_comp_Array_DMI_Q_Text */
+#endif /* kcg_use_Array_DMI_Q_Text */
+
+#ifdef kcg_use__97_array
+#ifndef kcg_comp__97_array
+extern kcg_bool kcg_comp__97_array(_97_array *kcg_c1, _97_array *kcg_c2);
+#endif /* kcg_comp__97_array */
+#endif /* kcg_use__97_array */
+
+#ifdef kcg_use_array_float32_32
+#ifndef kcg_comp_array_float32_32
+extern kcg_bool kcg_comp_array_float32_32(
+  array_float32_32 *kcg_c1,
+  array_float32_32 *kcg_c2);
+#endif /* kcg_comp_array_float32_32 */
+#endif /* kcg_use_array_float32_32 */
+
 #ifdef kcg_use__98_array
 #ifndef kcg_comp__98_array
 extern kcg_bool kcg_comp__98_array(_98_array *kcg_c1, _98_array *kcg_c2);
 #endif /* kcg_comp__98_array */
 #endif /* kcg_use__98_array */
-
-#ifdef kcg_use_array_int64_289
-#ifndef kcg_comp_array_int64_289
-extern kcg_bool kcg_comp_array_int64_289(
-  array_int64_289 *kcg_c1,
-  array_int64_289 *kcg_c2);
-#endif /* kcg_comp_array_int64_289 */
-#endif /* kcg_use_array_int64_289 */
-
-#ifdef kcg_use_array_float64_12
-#ifndef kcg_comp_array_float64_12
-extern kcg_bool kcg_comp_array_float64_12(
-  array_float64_12 *kcg_c1,
-  array_float64_12 *kcg_c2);
-#endif /* kcg_comp_array_float64_12 */
-#endif /* kcg_use_array_float64_12 */
 
 #ifdef kcg_use__99_array
 #ifndef kcg_comp__99_array
@@ -17399,19 +17394,19 @@ extern kcg_bool kcg_comp__99_array(_99_array *kcg_c1, _99_array *kcg_c2);
 #endif /* kcg_comp__99_array */
 #endif /* kcg_use__99_array */
 
+#ifdef kcg_use_array_int32_64_32
+#ifndef kcg_comp_array_int32_64_32
+extern kcg_bool kcg_comp_array_int32_64_32(
+  array_int32_64_32 *kcg_c1,
+  array_int32_64_32 *kcg_c2);
+#endif /* kcg_comp_array_int32_64_32 */
+#endif /* kcg_use_array_int32_64_32 */
+
 #ifdef kcg_use__100_array
 #ifndef kcg_comp__100_array
 extern kcg_bool kcg_comp__100_array(_100_array *kcg_c1, _100_array *kcg_c2);
 #endif /* kcg_comp__100_array */
 #endif /* kcg_use__100_array */
-
-#ifdef kcg_use_array_int64_64_32
-#ifndef kcg_comp_array_int64_64_32
-extern kcg_bool kcg_comp_array_int64_64_32(
-  array_int64_64_32 *kcg_c1,
-  array_int64_64_32 *kcg_c2);
-#endif /* kcg_comp_array_int64_64_32 */
-#endif /* kcg_use_array_int64_64_32 */
 
 #ifdef kcg_use__101_array
 #ifndef kcg_comp__101_array
@@ -17419,13 +17414,21 @@ extern kcg_bool kcg_comp__101_array(_101_array *kcg_c1, _101_array *kcg_c2);
 #endif /* kcg_comp__101_array */
 #endif /* kcg_use__101_array */
 
-#ifdef kcg_use_array_int64_40
-#ifndef kcg_comp_array_int64_40
-extern kcg_bool kcg_comp_array_int64_40(
-  array_int64_40 *kcg_c1,
-  array_int64_40 *kcg_c2);
-#endif /* kcg_comp_array_int64_40 */
-#endif /* kcg_use_array_int64_40 */
+#ifdef kcg_use_array_float32_100_6
+#ifndef kcg_comp_array_float32_100_6
+extern kcg_bool kcg_comp_array_float32_100_6(
+  array_float32_100_6 *kcg_c1,
+  array_float32_100_6 *kcg_c2);
+#endif /* kcg_comp_array_float32_100_6 */
+#endif /* kcg_use_array_float32_100_6 */
+
+#ifdef kcg_use_array_int32_6_221
+#ifndef kcg_comp_array_int32_6_221
+extern kcg_bool kcg_comp_array_int32_6_221(
+  array_int32_6_221 *kcg_c1,
+  array_int32_6_221 *kcg_c2);
+#endif /* kcg_comp_array_int32_6_221 */
+#endif /* kcg_use_array_int32_6_221 */
 
 #ifdef kcg_use__102_array
 #ifndef kcg_comp__102_array
@@ -17433,43 +17436,19 @@ extern kcg_bool kcg_comp__102_array(_102_array *kcg_c1, _102_array *kcg_c2);
 #endif /* kcg_comp__102_array */
 #endif /* kcg_use__102_array */
 
-#ifdef kcg_use_array_float64_100_6
-#ifndef kcg_comp_array_float64_100_6
-extern kcg_bool kcg_comp_array_float64_100_6(
-  array_float64_100_6 *kcg_c1,
-  array_float64_100_6 *kcg_c2);
-#endif /* kcg_comp_array_float64_100_6 */
-#endif /* kcg_use_array_float64_100_6 */
-
-#ifdef kcg_use_array_int64_6_221
-#ifndef kcg_comp_array_int64_6_221
-extern kcg_bool kcg_comp_array_int64_6_221(
-  array_int64_6_221 *kcg_c1,
-  array_int64_6_221 *kcg_c2);
-#endif /* kcg_comp_array_int64_6_221 */
-#endif /* kcg_use_array_int64_6_221 */
-
-#ifdef kcg_use_array_int64_292
-#ifndef kcg_comp_array_int64_292
-extern kcg_bool kcg_comp_array_int64_292(
-  array_int64_292 *kcg_c1,
-  array_int64_292 *kcg_c2);
-#endif /* kcg_comp_array_int64_292 */
-#endif /* kcg_use_array_int64_292 */
+#ifdef kcg_use_array_int32_395
+#ifndef kcg_comp_array_int32_395
+extern kcg_bool kcg_comp_array_int32_395(
+  array_int32_395 *kcg_c1,
+  array_int32_395 *kcg_c2);
+#endif /* kcg_comp_array_int32_395 */
+#endif /* kcg_use_array_int32_395 */
 
 #ifdef kcg_use__103_array
 #ifndef kcg_comp__103_array
 extern kcg_bool kcg_comp__103_array(_103_array *kcg_c1, _103_array *kcg_c2);
 #endif /* kcg_comp__103_array */
 #endif /* kcg_use__103_array */
-
-#ifdef kcg_use_array_int64_627
-#ifndef kcg_comp_array_int64_627
-extern kcg_bool kcg_comp_array_int64_627(
-  array_int64_627 *kcg_c1,
-  array_int64_627 *kcg_c2);
-#endif /* kcg_comp_array_int64_627 */
-#endif /* kcg_use_array_int64_627 */
 
 #ifdef kcg_use_ASafe_Data_T_CalcBrakingCurves_types
 #ifndef kcg_comp_ASafe_Data_T_CalcBrakingCurves_types
@@ -17479,19 +17458,35 @@ extern kcg_bool kcg_comp_ASafe_Data_T_CalcBrakingCurves_types(
 #endif /* kcg_comp_ASafe_Data_T_CalcBrakingCurves_types */
 #endif /* kcg_use_ASafe_Data_T_CalcBrakingCurves_types */
 
+#ifdef kcg_use_P046_sections_array_flat_T_TM
+#ifndef kcg_comp_P046_sections_array_flat_T_TM
+extern kcg_bool kcg_comp_P046_sections_array_flat_T_TM(
+  P046_sections_array_flat_T_TM *kcg_c1,
+  P046_sections_array_flat_T_TM *kcg_c2);
+#endif /* kcg_comp_P046_sections_array_flat_T_TM */
+#endif /* kcg_use_P046_sections_array_flat_T_TM */
+
 #ifdef kcg_use__104_array
 #ifndef kcg_comp__104_array
 extern kcg_bool kcg_comp__104_array(_104_array *kcg_c1, _104_array *kcg_c2);
 #endif /* kcg_comp__104_array */
 #endif /* kcg_use__104_array */
 
-#ifdef kcg_use_array_int64_129
-#ifndef kcg_comp_array_int64_129
-extern kcg_bool kcg_comp_array_int64_129(
-  array_int64_129 *kcg_c1,
-  array_int64_129 *kcg_c2);
-#endif /* kcg_comp_array_int64_129 */
-#endif /* kcg_use_array_int64_129 */
+#ifdef kcg_use_array_float32_50
+#ifndef kcg_comp_array_float32_50
+extern kcg_bool kcg_comp_array_float32_50(
+  array_float32_50 *kcg_c1,
+  array_float32_50 *kcg_c2);
+#endif /* kcg_comp_array_float32_50 */
+#endif /* kcg_use_array_float32_50 */
+
+#ifdef kcg_use_array_int32_72
+#ifndef kcg_comp_array_int32_72
+extern kcg_bool kcg_comp_array_int32_72(
+  array_int32_72 *kcg_c1,
+  array_int32_72 *kcg_c2);
+#endif /* kcg_comp_array_int32_72 */
+#endif /* kcg_use_array_int32_72 */
 
 #ifdef kcg_use_array_bool_100
 #ifndef kcg_comp_array_bool_100
@@ -17500,30 +17495,6 @@ extern kcg_bool kcg_comp_array_bool_100(
   array_bool_100 *kcg_c2);
 #endif /* kcg_comp_array_bool_100 */
 #endif /* kcg_use_array_bool_100 */
-
-#ifdef kcg_use_array_float64_113
-#ifndef kcg_comp_array_float64_113
-extern kcg_bool kcg_comp_array_float64_113(
-  array_float64_113 *kcg_c1,
-  array_float64_113 *kcg_c2);
-#endif /* kcg_comp_array_float64_113 */
-#endif /* kcg_use_array_float64_113 */
-
-#ifdef kcg_use_array_int64_221
-#ifndef kcg_comp_array_int64_221
-extern kcg_bool kcg_comp_array_int64_221(
-  array_int64_221 *kcg_c1,
-  array_int64_221 *kcg_c2);
-#endif /* kcg_comp_array_int64_221 */
-#endif /* kcg_use_array_int64_221 */
-
-#ifdef kcg_use_array_int64_304
-#ifndef kcg_comp_array_int64_304
-extern kcg_bool kcg_comp_array_int64_304(
-  array_int64_304 *kcg_c1,
-  array_int64_304 *kcg_c2);
-#endif /* kcg_comp_array_int64_304 */
-#endif /* kcg_use_array_int64_304 */
 
 #ifdef kcg_use__105_array
 #ifndef kcg_comp__105_array
@@ -17542,14 +17513,6 @@ extern kcg_bool kcg_comp__106_array(_106_array *kcg_c1, _106_array *kcg_c2);
 extern kcg_bool kcg_comp__107_array(_107_array *kcg_c1, _107_array *kcg_c2);
 #endif /* kcg_comp__107_array */
 #endif /* kcg_use__107_array */
-
-#ifdef kcg_use_array_float64_110
-#ifndef kcg_comp_array_float64_110
-extern kcg_bool kcg_comp_array_float64_110(
-  array_float64_110 *kcg_c1,
-  array_float64_110 *kcg_c2);
-#endif /* kcg_comp_array_float64_110 */
-#endif /* kcg_use_array_float64_110 */
 
 #ifdef kcg_use__108_array
 #ifndef kcg_comp__108_array
@@ -17631,109 +17594,101 @@ extern kcg_bool kcg_comp_P46_ConditionalLevelTransitionOrders_T_Packet_Types_Pkg
 #endif /* kcg_comp_P46_ConditionalLevelTransitionOrders_T_Packet_Types_Pkg */
 #endif /* kcg_use_P46_ConditionalLevelTransitionOrders_T_Packet_Types_Pkg */
 
-#ifdef kcg_use_array_int64_301
-#ifndef kcg_comp_array_int64_301
-extern kcg_bool kcg_comp_array_int64_301(
-  array_int64_301 *kcg_c1,
-  array_int64_301 *kcg_c2);
-#endif /* kcg_comp_array_int64_301 */
-#endif /* kcg_use_array_int64_301 */
+#define kcg_comp_D_test_distance_T_TIU_Types_Pkg kcg_comp_struct_488685
 
-#define kcg_comp_D_test_distance_T_TIU_Types_Pkg kcg_comp_struct_493287
+#define kcg_copy_D_test_distance_T_TIU_Types_Pkg kcg_copy_struct_488685
 
-#define kcg_copy_D_test_distance_T_TIU_Types_Pkg kcg_copy_struct_493287
+#define kcg_comp_D_test_traction_T_TIU_Types_Pkg kcg_comp_struct_488685
 
-#define kcg_comp_D_test_traction_T_TIU_Types_Pkg kcg_comp_struct_493287
+#define kcg_copy_D_test_traction_T_TIU_Types_Pkg kcg_copy_struct_488685
 
-#define kcg_copy_D_test_traction_T_TIU_Types_Pkg kcg_copy_struct_493287
+#define kcg_comp_D_test_current_T_TIU_Types_Pkg kcg_comp_struct_488685
 
-#define kcg_comp_D_test_current_T_TIU_Types_Pkg kcg_comp_struct_493287
+#define kcg_copy_D_test_current_T_TIU_Types_Pkg kcg_copy_struct_488685
 
-#define kcg_copy_D_test_current_T_TIU_Types_Pkg kcg_copy_struct_493287
+#define kcg_comp_DMI_brakeModel_id_T_DMI_Types_Pkg kcg_comp_struct_486242
 
-#define kcg_comp_DMI_brakeModel_id_T_DMI_Types_Pkg kcg_comp_struct_485264
+#define kcg_copy_DMI_brakeModel_id_T_DMI_Types_Pkg kcg_copy_struct_486242
 
-#define kcg_copy_DMI_brakeModel_id_T_DMI_Types_Pkg kcg_copy_struct_485264
+#define kcg_comp_DMI_vMax_id_T_DMI_Types_Pkg kcg_comp_struct_486242
 
-#define kcg_comp_DMI_vMax_id_T_DMI_Types_Pkg kcg_comp_struct_485264
+#define kcg_copy_DMI_vMax_id_T_DMI_Types_Pkg kcg_copy_struct_486242
 
-#define kcg_copy_DMI_vMax_id_T_DMI_Types_Pkg kcg_copy_struct_485264
+#define kcg_comp_DMI_airtightSystem_T_DMI_Types_Pkg kcg_comp_struct_486242
 
-#define kcg_comp_DMI_airtightSystem_T_DMI_Types_Pkg kcg_comp_struct_485264
+#define kcg_copy_DMI_airtightSystem_T_DMI_Types_Pkg kcg_copy_struct_486242
 
-#define kcg_copy_DMI_airtightSystem_T_DMI_Types_Pkg kcg_copy_struct_485264
+#define kcg_comp_DMI_loadingGauge_T_DMI_Types_Pkg kcg_comp_struct_486242
 
-#define kcg_comp_DMI_loadingGauge_T_DMI_Types_Pkg kcg_comp_struct_485264
-
-#define kcg_copy_DMI_loadingGauge_T_DMI_Types_Pkg kcg_copy_struct_485264
+#define kcg_copy_DMI_loadingGauge_T_DMI_Types_Pkg kcg_copy_struct_486242
 
 #define kcg_comp_Radio_TrackTrain_Header_T_Radio_Types_Pkg                    \
-  kcg_comp_struct_491646
+  kcg_comp_struct_491368
 
 #define kcg_copy_Radio_TrackTrain_Header_T_Radio_Types_Pkg                    \
-  kcg_copy_struct_491646
+  kcg_copy_struct_491368
 
 #define kcg_comp_P135_StopShuntingOnDeskOpening_T_Packet_Types_Pkg            \
-  kcg_comp_struct_484599
+  kcg_comp_struct_488860
 
 #define kcg_copy_P135_StopShuntingOnDeskOpening_T_Packet_Types_Pkg            \
-  kcg_copy_struct_484599
+  kcg_copy_struct_488860
 
 #define kcg_comp_P138_ReversingAreaInformation_T_Packet_Types_Pkg             \
-  kcg_comp_struct_488418
+  kcg_comp_struct_485030
 
 #define kcg_copy_P138_ReversingAreaInformation_T_Packet_Types_Pkg             \
-  kcg_copy_struct_488418
+  kcg_copy_struct_485030
 
 #define kcg_comp_P139_ReversingSupervisionInformation_T_Packet_Types_Pkg      \
-  kcg_comp_struct_488833
+  kcg_comp_struct_493006
 
 #define kcg_copy_P139_ReversingSupervisionInformation_T_Packet_Types_Pkg      \
-  kcg_copy_struct_488833
+  kcg_copy_struct_493006
 
-#define kcg_comp_aNID_NTC_T_Packet_TrainTypes_Pkg kcg_comp_array_int64_5
+#define kcg_comp_aNID_NTC_T_Packet_TrainTypes_Pkg kcg_comp_array_int32_5
 
-#define kcg_copy_aNID_NTC_T_Packet_TrainTypes_Pkg kcg_copy_array_int64_5
+#define kcg_copy_aNID_NTC_T_Packet_TrainTypes_Pkg kcg_copy_array_int32_5
 
 #define kcg_comp_sTractionIdentity_T_Packet_TrainTypes_Pkg                    \
-  kcg_comp_struct_489524
+  kcg_comp_struct_493943
 
 #define kcg_copy_sTractionIdentity_T_Packet_TrainTypes_Pkg                    \
-  kcg_copy_struct_489524
+  kcg_copy_struct_493943
 
-#define kcg_comp_aTractionIdentity_T_Packet_TrainTypes_Pkg kcg_comp__14_array
+#define kcg_comp_aTractionIdentity_T_Packet_TrainTypes_Pkg kcg_comp__13_array
 
-#define kcg_copy_aTractionIdentity_T_Packet_TrainTypes_Pkg kcg_copy__14_array
+#define kcg_copy_aTractionIdentity_T_Packet_TrainTypes_Pkg kcg_copy__13_array
 
-#define kcg_comp_D_test_trackcond_T_TIU_Types_Pkg kcg_comp_struct_493287
+#define kcg_comp_D_test_trackcond_T_TIU_Types_Pkg kcg_comp_struct_488685
 
-#define kcg_copy_D_test_trackcond_T_TIU_Types_Pkg kcg_copy_struct_493287
+#define kcg_copy_D_test_trackcond_T_TIU_Types_Pkg kcg_copy_struct_488685
 
-#define kcg_comp_L_test_trackcond_T_TIU_Types_Pkg kcg_comp_struct_493287
+#define kcg_comp_L_test_trackcond_T_TIU_Types_Pkg kcg_comp_struct_488685
 
-#define kcg_copy_L_test_trackcond_T_TIU_Types_Pkg kcg_copy_struct_493287
+#define kcg_copy_L_test_trackcond_T_TIU_Types_Pkg kcg_copy_struct_488685
 
-#define kcg_comp_D_test_trackinit_T_TIU_Types_Pkg kcg_comp_struct_493287
+#define kcg_comp_D_test_trackinit_T_TIU_Types_Pkg kcg_comp_struct_488685
 
-#define kcg_copy_D_test_trackinit_T_TIU_Types_Pkg kcg_copy_struct_493287
+#define kcg_copy_D_test_trackinit_T_TIU_Types_Pkg kcg_copy_struct_488685
 
-#define kcg_comp_nidC_T_Packet_Types_Pkg kcg_comp_struct_485072
+#define kcg_comp_nidC_T_Packet_Types_Pkg kcg_comp_struct_493052
 
-#define kcg_copy_nidC_T_Packet_Types_Pkg kcg_copy_struct_485072
+#define kcg_copy_nidC_T_Packet_Types_Pkg kcg_copy_struct_493052
 
-#define kcg_comp_P203V1_OBU_n_section_enum_T_TM_baseline2 kcg_comp_struct_485021
+#define kcg_comp_P203V1_OBU_n_section_enum_T_TM_baseline2 kcg_comp_struct_487594
 
-#define kcg_copy_P203V1_OBU_n_section_enum_T_TM_baseline2 kcg_copy_struct_485021
+#define kcg_copy_P203V1_OBU_n_section_enum_T_TM_baseline2 kcg_copy_struct_487594
 
 #define kcg_comp_P203V1_OBU_n_sectionlist_enum_T_TM_baseline2 kcg_comp__67_array
 
 #define kcg_copy_P203V1_OBU_n_sectionlist_enum_T_TM_baseline2 kcg_copy__67_array
 
 #define kcg_comp_P203V1_OBU_k_m_section_enum_T_TM_baseline2                   \
-  kcg_comp_struct_486081
+  kcg_comp_struct_489123
 
 #define kcg_copy_P203V1_OBU_k_m_section_enum_T_TM_baseline2                   \
-  kcg_copy_struct_486081
+  kcg_copy_struct_489123
 
 #define kcg_comp_P203V1_OBU_k_m_sectionlist_enum_T_TM_baseline2               \
   kcg_comp__66_array
@@ -17741,551 +17696,551 @@ extern kcg_bool kcg_comp_array_int64_301(
 #define kcg_copy_P203V1_OBU_k_m_sectionlist_enum_T_TM_baseline2               \
   kcg_copy__66_array
 
-#define kcg_comp_P203V1_OBU_k_section_enum_T_TM_baseline2 kcg_comp_struct_492513
+#define kcg_comp_P203V1_OBU_k_section_enum_T_TM_baseline2 kcg_comp_struct_492256
 
-#define kcg_copy_P203V1_OBU_k_section_enum_T_TM_baseline2 kcg_copy_struct_492513
+#define kcg_copy_P203V1_OBU_k_section_enum_T_TM_baseline2 kcg_copy_struct_492256
 
-#define kcg_comp_P203V1_OBU_k_sectionlist_enum_T_TM_baseline2 kcg_comp__11_array
+#define kcg_comp_P203V1_OBU_k_sectionlist_enum_T_TM_baseline2 kcg_comp__8_array
 
-#define kcg_copy_P203V1_OBU_k_sectionlist_enum_T_TM_baseline2 kcg_copy__11_array
+#define kcg_copy_P203V1_OBU_k_sectionlist_enum_T_TM_baseline2 kcg_copy__8_array
 
-#define kcg_comp_P203V1_OBU_l_section_enum_T_TM_baseline2 kcg_comp_struct_484617
+#define kcg_comp_P203V1_OBU_l_section_enum_T_TM_baseline2 kcg_comp_struct_488170
 
-#define kcg_copy_P203V1_OBU_l_section_enum_T_TM_baseline2 kcg_copy_struct_484617
+#define kcg_copy_P203V1_OBU_l_section_enum_T_TM_baseline2 kcg_copy_struct_488170
 
 #define kcg_comp_P203V1_OBU_l_sectionlist_enum_T_TM_baseline2 kcg_comp__65_array
 
 #define kcg_copy_P203V1_OBU_l_sectionlist_enum_T_TM_baseline2 kcg_copy__65_array
 
-#define kcg_comp_P003_nid_radio_list_t_TM_TrainToTrack kcg_comp_array_int64_5
+#define kcg_comp_P003_nid_radio_list_t_TM_TrainToTrack kcg_comp_array_int32_5
 
-#define kcg_copy_P003_nid_radio_list_t_TM_TrainToTrack kcg_copy_array_int64_5
+#define kcg_copy_P003_nid_radio_list_t_TM_TrainToTrack kcg_copy_array_int32_5
 
-#define kcg_comp_telephoneNumber_T_Packet_TrainTypes_Pkg kcg_comp_array_int64_15
+#define kcg_comp_telephoneNumber_T_Packet_TrainTypes_Pkg kcg_comp_array_int32_15
 
-#define kcg_copy_telephoneNumber_T_Packet_TrainTypes_Pkg kcg_copy_array_int64_15
+#define kcg_copy_telephoneNumber_T_Packet_TrainTypes_Pkg kcg_copy_array_int32_15
 
-#define kcg_comp_DMI_speedProfileElement_T_DMI_Types_Pkg kcg_comp_struct_494268
+#define kcg_comp_DMI_speedProfileElement_T_DMI_Types_Pkg kcg_comp_struct_493703
 
-#define kcg_copy_DMI_speedProfileElement_T_DMI_Types_Pkg kcg_copy_struct_494268
+#define kcg_copy_DMI_speedProfileElement_T_DMI_Types_Pkg kcg_copy_struct_493703
 
 #define kcg_comp_DMI_gradientProfileElement_T_DMI_Types_Pkg                   \
-  kcg_comp_struct_487196
+  kcg_comp_struct_488194
 
 #define kcg_copy_DMI_gradientProfileElement_T_DMI_Types_Pkg                   \
-  kcg_copy_struct_487196
+  kcg_copy_struct_488194
 
-#define kcg_comp_MRSP_section_t_TrackAtlasTypes kcg_comp_struct_494268
+#define kcg_comp_MRSP_section_t_TrackAtlasTypes kcg_comp_struct_493703
 
-#define kcg_copy_MRSP_section_t_TrackAtlasTypes kcg_copy_struct_494268
+#define kcg_copy_MRSP_section_t_TrackAtlasTypes kcg_copy_struct_493703
 
 #define kcg_comp_GradientProfile_for_DMI_section_t_TrackAtlasTypes            \
-  kcg_comp_struct_487196
+  kcg_comp_struct_488194
 
 #define kcg_copy_GradientProfile_for_DMI_section_t_TrackAtlasTypes            \
-  kcg_copy_struct_487196
+  kcg_copy_struct_488194
 
-#define kcg_comp_DMI_Dynamic_int_array_T_DATA kcg_comp_array_int64_24
+#define kcg_comp_DMI_Dynamic_int_array_T_DATA kcg_comp_array_int32_24
 
-#define kcg_copy_DMI_Dynamic_int_array_T_DATA kcg_copy_array_int64_24
+#define kcg_copy_DMI_Dynamic_int_array_T_DATA kcg_copy_array_int32_24
 
-#define kcg_comp_DMI_Menu_Request_int_array_T_DATA kcg_comp_array_int64_3
+#define kcg_comp_DMI_Menu_Request_int_array_T_DATA kcg_comp_array_int32_3
 
-#define kcg_copy_DMI_Menu_Request_int_array_T_DATA kcg_copy_array_int64_3
+#define kcg_copy_DMI_Menu_Request_int_array_T_DATA kcg_copy_array_int32_3
 
-#define kcg_comp_DMI_Entry_Request_int_array_T_DATA kcg_comp_array_int64_3
+#define kcg_comp_DMI_Entry_Request_int_array_T_DATA kcg_comp_array_int32_3
 
-#define kcg_copy_DMI_Entry_Request_int_array_T_DATA kcg_copy_array_int64_3
+#define kcg_copy_DMI_Entry_Request_int_array_T_DATA kcg_copy_array_int32_3
 
 #define kcg_comp_DMI_EVC_Coded_Train_Data_int_array_T_DATA                    \
-  kcg_comp_array_int64_9
+  kcg_comp_array_int32_9
 
 #define kcg_copy_DMI_EVC_Coded_Train_Data_int_array_T_DATA                    \
-  kcg_copy_array_int64_9
+  kcg_copy_array_int32_9
 
 #define kcg_comp_DMI_Identifier_Request_int_array_T_DATA                      \
-  kcg_comp_array_int64_261
+  kcg_comp_array_int32_261
 
 #define kcg_copy_DMI_Identifier_Request_int_array_T_DATA                      \
-  kcg_copy_array_int64_261
+  kcg_copy_array_int32_261
 
-#define kcg_comp_DMI_System_Version_int_array_T_DATA kcg_comp_array_int64_3
+#define kcg_comp_DMI_System_Version_int_array_T_DATA kcg_comp_array_int32_3
 
-#define kcg_copy_DMI_System_Version_int_array_T_DATA kcg_copy_array_int64_3
+#define kcg_copy_DMI_System_Version_int_array_T_DATA kcg_copy_array_int32_3
 
-#define kcg_comp_DMI_Display_Control_int_array_T_DATA kcg_comp_array_int64_3
+#define kcg_comp_DMI_Display_Control_int_array_T_DATA kcg_comp_array_int32_3
 
-#define kcg_copy_DMI_Display_Control_int_array_T_DATA kcg_copy_array_int64_3
+#define kcg_copy_DMI_Display_Control_int_array_T_DATA kcg_copy_array_int32_3
 
-#define kcg_comp_DMI_EVC_Radio_Net_Data_int_array_T_DATA kcg_comp_array_int64_3
+#define kcg_comp_DMI_EVC_Radio_Net_Data_int_array_T_DATA kcg_comp_array_int32_3
 
-#define kcg_copy_DMI_EVC_Radio_Net_Data_int_array_T_DATA kcg_copy_array_int64_3
+#define kcg_copy_DMI_EVC_Radio_Net_Data_int_array_T_DATA kcg_copy_array_int32_3
 
 #define kcg_comp_DMI_Train_Running_Number_int_array_T_DATA                    \
-  kcg_comp_array_int64_3
+  kcg_comp_array_int32_3
 
 #define kcg_copy_DMI_Train_Running_Number_int_array_T_DATA                    \
-  kcg_copy_array_int64_3
+  kcg_copy_array_int32_3
 
-#define kcg_comp_DMI_Train_Data_int_array_T_DATA kcg_comp_array_int64_9
+#define kcg_comp_DMI_Train_Data_int_array_T_DATA kcg_comp_array_int32_9
 
-#define kcg_copy_DMI_Train_Data_int_array_T_DATA kcg_copy_array_int64_9
+#define kcg_copy_DMI_Train_Data_int_array_T_DATA kcg_copy_array_int32_9
 
 #define kcg_comp_DMI_Adhesion_Factor_Data_int_array_T_DATA                    \
-  kcg_comp_array_int64_3
+  kcg_comp_array_int32_3
 
 #define kcg_copy_DMI_Adhesion_Factor_Data_int_array_T_DATA                    \
-  kcg_copy_array_int64_3
+  kcg_copy_array_int32_3
 
-#define kcg_comp_DMI_Icons_int_array_T_DATA kcg_comp_array_int64_9
+#define kcg_comp_DMI_Icons_int_array_T_DATA kcg_comp_array_int32_9
 
-#define kcg_copy_DMI_Icons_int_array_T_DATA kcg_copy_array_int64_9
+#define kcg_copy_DMI_Icons_int_array_T_DATA kcg_copy_array_int32_9
 
-#define kcg_comp_DMI_Driver_Identifier_int_array_T_DATA kcg_comp_array_int64_11
+#define kcg_comp_DMI_Driver_Identifier_int_array_T_DATA kcg_comp_array_int32_11
 
-#define kcg_copy_DMI_Driver_Identifier_int_array_T_DATA kcg_copy_array_int64_11
+#define kcg_copy_DMI_Driver_Identifier_int_array_T_DATA kcg_copy_array_int32_11
 
-#define kcg_comp_DMI_trackCondition_int_array_T kcg_comp_array_int64_65
+#define kcg_comp_DMI_trackCondition_int_array_T kcg_comp_array_int32_65
 
-#define kcg_copy_DMI_trackCondition_int_array_T kcg_copy_array_int64_65
+#define kcg_copy_DMI_trackCondition_int_array_T kcg_copy_array_int32_65
 
-#define kcg_comp_DMI_gradientProfile_int_arrayT kcg_comp_array_int64_129
+#define kcg_comp_DMI_gradientProfile_int_arrayT kcg_comp_array_int32_129
 
-#define kcg_copy_DMI_gradientProfile_int_arrayT kcg_copy_array_int64_129
+#define kcg_copy_DMI_gradientProfile_int_arrayT kcg_copy_array_int32_129
 
-#define kcg_comp_DMI_speedProfile_int_array_T_DATA kcg_comp_array_int64_129
+#define kcg_comp_DMI_speedProfile_int_array_T_DATA kcg_comp_array_int32_129
 
-#define kcg_copy_DMI_speedProfile_int_array_T_DATA kcg_copy_array_int64_129
+#define kcg_copy_DMI_speedProfile_int_array_T_DATA kcg_copy_array_int32_129
 
-#define kcg_comp_DMI_LevelList_int_array_T_DATA kcg_comp_array_int64_65
+#define kcg_comp_DMI_LevelList_int_array_T_DATA kcg_comp_array_int32_65
 
-#define kcg_copy_DMI_LevelList_int_array_T_DATA kcg_copy_array_int64_65
+#define kcg_copy_DMI_LevelList_int_array_T_DATA kcg_copy_array_int32_65
 
-#define kcg_comp_DriverIdentifier_INT_T_DATA kcg_comp_array_int64_9
+#define kcg_comp_DriverIdentifier_INT_T_DATA kcg_comp_array_int32_9
 
-#define kcg_copy_DriverIdentifier_INT_T_DATA kcg_copy_array_int64_9
+#define kcg_copy_DriverIdentifier_INT_T_DATA kcg_copy_array_int32_9
 
-#define kcg_comp_ReceivedMessage_T_Common_Types_Pkg kcg_comp_struct_493015
+#define kcg_comp_ReceivedMessage_T_Common_Types_Pkg kcg_comp_struct_492780
 
-#define kcg_copy_ReceivedMessage_T_Common_Types_Pkg kcg_copy_struct_493015
+#define kcg_copy_ReceivedMessage_T_Common_Types_Pkg kcg_copy_struct_492780
 
 #define kcg_comp_ParabolaCurveDistances_T_CalcBrakingCurves_types             \
-  kcg_comp_array_float64_114
+  kcg_comp_array_float32_114
 
 #define kcg_copy_ParabolaCurveDistances_T_CalcBrakingCurves_types             \
-  kcg_copy_array_float64_114
+  kcg_copy_array_float32_114
 
 #define kcg_comp_ParabolaCurveSpeeds_T_CalcBrakingCurves_types                \
-  kcg_comp_array_float64_114
+  kcg_comp_array_float32_114
 
 #define kcg_copy_ParabolaCurveSpeeds_T_CalcBrakingCurves_types                \
-  kcg_copy_array_float64_114
+  kcg_copy_array_float32_114
 
 #define kcg_comp_ParabolaCurveAccelerations_T_CalcBrakingCurves_types         \
-  kcg_comp_array_float64_114
+  kcg_comp_array_float32_114
 
 #define kcg_copy_ParabolaCurveAccelerations_T_CalcBrakingCurves_types         \
-  kcg_copy_array_float64_114
+  kcg_copy_array_float32_114
 
-#define kcg_comp_ASafeRow_T_CalcBrakingCurves_types kcg_comp_array_float64_100
+#define kcg_comp_ASafeRow_T_CalcBrakingCurves_types kcg_comp_array_float32_100
 
-#define kcg_copy_ASafeRow_T_CalcBrakingCurves_types kcg_copy_array_float64_100
+#define kcg_copy_ASafeRow_T_CalcBrakingCurves_types kcg_copy_array_float32_100
 
 #define kcg_comp_ASafeDistanceDefinition_T_CalcBrakingCurves_types            \
-  kcg_comp_array_float64_100
+  kcg_comp_array_float32_100
 
 #define kcg_copy_ASafeDistanceDefinition_T_CalcBrakingCurves_types            \
-  kcg_copy_array_float64_100
+  kcg_copy_array_float32_100
 
-#define kcg_comp_TractionDeltaTriple_TargetLimits_Pkg kcg_comp_array_float64_3
+#define kcg_comp_TractionDeltaTriple_TargetLimits_Pkg kcg_comp_array_float32_3
 
-#define kcg_copy_TractionDeltaTriple_TargetLimits_Pkg kcg_copy_array_float64_3
+#define kcg_copy_TractionDeltaTriple_TargetLimits_Pkg kcg_copy_array_float32_3
 
-#define kcg_comp_a_MergedSteps_t_SDMConversionModelPkg kcg_comp_array_int64_13
+#define kcg_comp_a_MergedSteps_t_SDMConversionModelPkg kcg_comp_array_int32_13
 
-#define kcg_copy_a_MergedSteps_t_SDMConversionModelPkg kcg_copy_array_int64_13
+#define kcg_copy_a_MergedSteps_t_SDMConversionModelPkg kcg_copy_array_int32_13
 
-#define kcg_comp_v_MergedSteps_t_SDMConversionModelPkg kcg_comp_array_int64_13
+#define kcg_comp_v_MergedSteps_t_SDMConversionModelPkg kcg_comp_array_int32_13
 
-#define kcg_copy_v_MergedSteps_t_SDMConversionModelPkg kcg_copy_array_int64_13
+#define kcg_copy_v_MergedSteps_t_SDMConversionModelPkg kcg_copy_array_int32_13
 
-#define kcg_comp_a_BrakeSteps_t_SDMConversionModelPkg kcg_comp_array_int64_6
+#define kcg_comp_a_BrakeSteps_t_SDMConversionModelPkg kcg_comp_array_int32_6
 
-#define kcg_copy_a_BrakeSteps_t_SDMConversionModelPkg kcg_copy_array_int64_6
+#define kcg_copy_a_BrakeSteps_t_SDMConversionModelPkg kcg_copy_array_int32_6
 
-#define kcg_comp_v_BrakeSteps_t_SDMConversionModelPkg kcg_comp_array_int64_6
+#define kcg_comp_v_BrakeSteps_t_SDMConversionModelPkg kcg_comp_array_int32_6
 
-#define kcg_copy_v_BrakeSteps_t_SDMConversionModelPkg kcg_copy_array_int64_6
+#define kcg_copy_v_BrakeSteps_t_SDMConversionModelPkg kcg_copy_array_int32_6
 
 #define kcg_comp_coeff_BrakeBasic_t_SDMConversionModelPkg                     \
-  kcg_comp_array_float64_3
+  kcg_comp_array_float32_3
 
 #define kcg_copy_coeff_BrakeBasic_t_SDMConversionModelPkg                     \
-  kcg_copy_array_float64_3
+  kcg_copy_array_float32_3
 
-#define kcg_comp_LKrIntLookUp_t_SDMConversionModelPkg kcg_comp_array_int64_32
+#define kcg_comp_LKrIntLookUp_t_SDMConversionModelPkg kcg_comp_array_int32_32
 
-#define kcg_copy_LKrIntLookUp_t_SDMConversionModelPkg kcg_copy_array_int64_32
+#define kcg_copy_LKrIntLookUp_t_SDMConversionModelPkg kcg_copy_array_int32_32
 
-#define kcg_comp_m_KvSteps_t_SDMConversionModelPkg kcg_comp_array_int64_7
+#define kcg_comp_m_KvSteps_t_SDMConversionModelPkg kcg_comp_array_int32_7
 
-#define kcg_copy_m_KvSteps_t_SDMConversionModelPkg kcg_copy_array_int64_7
+#define kcg_copy_m_KvSteps_t_SDMConversionModelPkg kcg_copy_array_int32_7
 
-#define kcg_comp_v_KvSteps_t_SDMConversionModelPkg kcg_comp_array_int64_7
+#define kcg_comp_v_KvSteps_t_SDMConversionModelPkg kcg_comp_array_int32_7
 
-#define kcg_copy_v_KvSteps_t_SDMConversionModelPkg kcg_copy_array_int64_7
+#define kcg_copy_v_KvSteps_t_SDMConversionModelPkg kcg_copy_array_int32_7
 
-#define kcg_comp_DMI_Level_Data_int_array_T_DATA kcg_comp_array_int64_4
+#define kcg_comp_DMI_Level_Data_int_array_T_DATA kcg_comp_array_int32_4
 
-#define kcg_copy_DMI_Level_Data_int_array_T_DATA kcg_copy_array_int64_4
+#define kcg_copy_DMI_Level_Data_int_array_T_DATA kcg_copy_array_int32_4
 
-#define kcg_comp_DMI_Status_int_array_T_DATA kcg_comp_array_int64_4
+#define kcg_comp_DMI_Status_int_array_T_DATA kcg_comp_array_int32_4
 
-#define kcg_copy_DMI_Status_int_array_T_DATA kcg_copy_array_int64_4
+#define kcg_copy_DMI_Status_int_array_T_DATA kcg_copy_array_int32_4
 
-#define kcg_comp_DMI_Identifier_int_array_T_DATA kcg_comp_array_int64_261
+#define kcg_comp_DMI_Identifier_int_array_T_DATA kcg_comp_array_int32_261
 
-#define kcg_copy_DMI_Identifier_int_array_T_DATA kcg_copy_array_int64_261
+#define kcg_copy_DMI_Identifier_int_array_T_DATA kcg_copy_array_int32_261
 
-#define kcg_comp_DMI_Driver_Request_int_array_T_DATA kcg_comp_array_int64_3
+#define kcg_comp_DMI_Driver_Request_int_array_T_DATA kcg_comp_array_int32_3
 
-#define kcg_copy_DMI_Driver_Request_int_array_T_DATA kcg_copy_array_int64_3
+#define kcg_copy_DMI_Driver_Request_int_array_T_DATA kcg_copy_array_int32_3
 
-#define kcg_comp_DMI_Radio_Net_Data_int_array_T_DATA kcg_comp_array_int64_2
+#define kcg_comp_DMI_Radio_Net_Data_int_array_T_DATA kcg_comp_array_int32_2
 
-#define kcg_copy_DMI_Radio_Net_Data_int_array_T_DATA kcg_copy_array_int64_2
+#define kcg_copy_DMI_Radio_Net_Data_int_array_T_DATA kcg_copy_array_int32_2
 
-#define kcg_comp_DMI_Text_Message_Ack_int_array_T_DATA kcg_comp_array_int64_4
+#define kcg_comp_DMI_Text_Message_Ack_int_array_T_DATA kcg_comp_array_int32_4
 
-#define kcg_copy_DMI_Text_Message_Ack_int_array_T_DATA kcg_copy_array_int64_4
+#define kcg_copy_DMI_Text_Message_Ack_int_array_T_DATA kcg_copy_array_int32_4
 
-#define kcg_comp_DMI_Train_Data_Ack_int_array_T_DATA kcg_comp_array_int64_3
+#define kcg_comp_DMI_Train_Data_Ack_int_array_T_DATA kcg_comp_array_int32_3
 
-#define kcg_copy_DMI_Train_Data_Ack_int_array_T_DATA kcg_copy_array_int64_3
+#define kcg_copy_DMI_Train_Data_Ack_int_array_T_DATA kcg_copy_array_int32_3
 
-#define kcg_comp_DMI_Icon_Ack_int_array_T_DATA kcg_comp_array_int64_3
+#define kcg_comp_DMI_Icon_Ack_int_array_T_DATA kcg_comp_array_int32_3
 
-#define kcg_copy_DMI_Icon_Ack_int_array_T_DATA kcg_copy_array_int64_3
+#define kcg_copy_DMI_Icon_Ack_int_array_T_DATA kcg_copy_array_int32_3
 
-#define kcg_comp_Driver2MAR_T_MA_Request kcg_comp_struct_487566
+#define kcg_comp_Driver2MAR_T_MA_Request kcg_comp_struct_487538
 
-#define kcg_copy_Driver2MAR_T_MA_Request kcg_copy_struct_487566
+#define kcg_copy_Driver2MAR_T_MA_Request kcg_copy_struct_487538
 
-#define kcg_comp_P015_section_enum_T_TM kcg_comp_struct_487754
+#define kcg_comp_P015_section_enum_T_TM kcg_comp_struct_487461
 
-#define kcg_copy_P015_section_enum_T_TM kcg_copy_struct_487754
+#define kcg_copy_P015_section_enum_T_TM kcg_copy_struct_487461
 
-#define kcg_comp_P041_sections_array_flat_T_TM kcg_comp_array_int64_99
+#define kcg_comp_P041_sections_array_flat_T_TM kcg_comp_array_int32_99
 
-#define kcg_copy_P041_sections_array_flat_T_TM kcg_copy_array_int64_99
+#define kcg_copy_P041_sections_array_flat_T_TM kcg_copy_array_int32_99
 
-#define kcg_comp_Array07_TM kcg_comp_array_int64_7
+#define kcg_comp_Array07_TM kcg_comp_array_int32_7
 
-#define kcg_copy_Array07_TM kcg_copy_array_int64_7
+#define kcg_copy_Array07_TM kcg_copy_array_int32_7
 
-#define kcg_comp_Array15_TM kcg_comp_array_int64_15
+#define kcg_comp_Array15_TM kcg_comp_array_int32_15
 
-#define kcg_copy_Array15_TM kcg_copy_array_int64_15
+#define kcg_copy_Array15_TM kcg_copy_array_int32_15
 
-#define kcg_comp_P012_sections_array_flat_T_TM kcg_comp_array_int64_128
+#define kcg_comp_P012_sections_array_flat_T_TM kcg_comp_array_int32_128
 
-#define kcg_copy_P012_sections_array_flat_T_TM kcg_copy_array_int64_128
+#define kcg_copy_P012_sections_array_flat_T_TM kcg_copy_array_int32_128
 
-#define kcg_comp_P012_section_enum_T_TM kcg_comp_struct_487754
+#define kcg_comp_P012_section_enum_T_TM kcg_comp_struct_487461
 
-#define kcg_copy_P012_section_enum_T_TM kcg_copy_struct_487754
+#define kcg_copy_P012_section_enum_T_TM kcg_copy_struct_487461
 
-#define kcg_comp_Array06_TM kcg_comp_array_int64_6
+#define kcg_comp_Array06_TM kcg_comp_array_int32_6
 
-#define kcg_copy_Array06_TM kcg_copy_array_int64_6
+#define kcg_copy_Array06_TM kcg_copy_array_int32_6
 
-#define kcg_comp_P015_sections_array_flat_T_TM kcg_comp_array_int64_128
+#define kcg_comp_P015_sections_array_flat_T_TM kcg_comp_array_int32_128
 
-#define kcg_copy_P015_sections_array_flat_T_TM kcg_copy_array_int64_128
+#define kcg_copy_P015_sections_array_flat_T_TM kcg_copy_array_int32_128
 
-#define kcg_comp_Array05_TM kcg_comp_array_int64_5
+#define kcg_comp_Array05_TM kcg_comp_array_int32_5
 
-#define kcg_copy_Array05_TM kcg_copy_array_int64_5
+#define kcg_copy_Array05_TM kcg_copy_array_int32_5
 
-#define kcg_comp_P021_sections_array_flat_T_TM kcg_comp_array_int64_99
+#define kcg_comp_P021_sections_array_flat_T_TM kcg_comp_array_int32_99
 
-#define kcg_copy_P021_sections_array_flat_T_TM kcg_copy_array_int64_99
+#define kcg_copy_P021_sections_array_flat_T_TM kcg_copy_array_int32_99
 
-#define kcg_comp_Array03_TM kcg_comp_array_int64_3
+#define kcg_comp_Array03_TM kcg_comp_array_int32_3
 
-#define kcg_copy_Array03_TM kcg_copy_array_int64_3
+#define kcg_copy_Array03_TM kcg_copy_array_int32_3
 
 #define kcg_comp_P027V1_sections_array_flat_qdiff_T_TM_baseline2              \
-  kcg_comp_array_int64_64
+  kcg_comp_array_int32_64
 
 #define kcg_copy_P027V1_sections_array_flat_qdiff_T_TM_baseline2              \
-  kcg_copy_array_int64_64
+  kcg_copy_array_int32_64
 
-#define kcg_comp_P003_OBU_nid_c_section_enum_T_TM kcg_comp_struct_485072
+#define kcg_comp_P003_OBU_nid_c_section_enum_T_TM kcg_comp_struct_493052
 
-#define kcg_copy_P003_OBU_nid_c_section_enum_T_TM kcg_copy_struct_485072
+#define kcg_copy_P003_OBU_nid_c_section_enum_T_TM kcg_copy_struct_493052
 
 #define kcg_comp_P003_OBU_nid_c_sectionlist_enum_T_TM kcg_comp__64_array
 
 #define kcg_copy_P003_OBU_nid_c_sectionlist_enum_T_TM kcg_copy__64_array
 
-#define kcg_comp_P003_OBU_n_section_enum_T_TM kcg_comp_struct_485021
+#define kcg_comp_P003_OBU_n_section_enum_T_TM kcg_comp_struct_487594
 
-#define kcg_copy_P003_OBU_n_section_enum_T_TM kcg_copy_struct_485021
+#define kcg_copy_P003_OBU_n_section_enum_T_TM kcg_copy_struct_487594
 
 #define kcg_comp_P003_OBU_n_sectionlist_enum_T_TM kcg_comp__67_array
 
 #define kcg_copy_P003_OBU_n_sectionlist_enum_T_TM kcg_copy__67_array
 
-#define kcg_comp_P003_OBU_k_m_section_enum_T_TM kcg_comp_struct_486081
+#define kcg_comp_P003_OBU_k_m_section_enum_T_TM kcg_comp_struct_489123
 
-#define kcg_copy_P003_OBU_k_m_section_enum_T_TM kcg_copy_struct_486081
+#define kcg_copy_P003_OBU_k_m_section_enum_T_TM kcg_copy_struct_489123
 
 #define kcg_comp_P003_OBU_k_m_sectionlist_enum_T_TM kcg_comp__66_array
 
 #define kcg_copy_P003_OBU_k_m_sectionlist_enum_T_TM kcg_copy__66_array
 
-#define kcg_comp_P003_OBU_k_section_enum_T_TM kcg_comp_struct_492513
+#define kcg_comp_P003_OBU_k_section_enum_T_TM kcg_comp_struct_492256
 
-#define kcg_copy_P003_OBU_k_section_enum_T_TM kcg_copy_struct_492513
+#define kcg_copy_P003_OBU_k_section_enum_T_TM kcg_copy_struct_492256
 
-#define kcg_comp_P003_OBU_k_sectionlist_enum_T_TM kcg_comp__11_array
+#define kcg_comp_P003_OBU_k_sectionlist_enum_T_TM kcg_comp__8_array
 
-#define kcg_copy_P003_OBU_k_sectionlist_enum_T_TM kcg_copy__11_array
+#define kcg_copy_P003_OBU_k_sectionlist_enum_T_TM kcg_copy__8_array
 
-#define kcg_comp_P003_OBU_l_section_enum_T_TM kcg_comp_struct_484617
+#define kcg_comp_P003_OBU_l_section_enum_T_TM kcg_comp_struct_488170
 
-#define kcg_copy_P003_OBU_l_section_enum_T_TM kcg_copy_struct_484617
+#define kcg_copy_P003_OBU_l_section_enum_T_TM kcg_copy_struct_488170
 
 #define kcg_comp_P003_OBU_l_sectionlist_enum_T_TM kcg_comp__65_array
 
 #define kcg_copy_P003_OBU_l_sectionlist_enum_T_TM kcg_copy__65_array
 
 #define kcg_comp_Radio_TrainTrack_Header_T_Radio_Types_Pkg                    \
-  kcg_comp_struct_492262
+  kcg_comp_struct_492005
 
 #define kcg_copy_Radio_TrainTrack_Header_T_Radio_Types_Pkg                    \
-  kcg_copy_struct_492262
+  kcg_copy_struct_492005
 
 #define kcg_comp_Radio_TrainTrack_Message_T_Radio_Types_Pkg                   \
-  kcg_comp_struct_485794
+  kcg_comp_struct_485689
 
 #define kcg_copy_Radio_TrainTrack_Message_T_Radio_Types_Pkg                   \
-  kcg_copy_struct_485794
+  kcg_copy_struct_485689
 
-#define kcg_comp_Array08_TM kcg_comp_array_int64_8
+#define kcg_comp_Array08_TM kcg_comp_array_int32_8
 
-#define kcg_copy_Array08_TM kcg_copy_array_int64_8
+#define kcg_copy_Array08_TM kcg_copy_array_int32_8
 
-#define kcg_comp_P058_sections_array_flat_T_TM kcg_comp_array_int64_64
+#define kcg_comp_P058_sections_array_flat_T_TM kcg_comp_array_int32_64
 
-#define kcg_copy_P058_sections_array_flat_T_TM kcg_copy_array_int64_64
+#define kcg_copy_P058_sections_array_flat_T_TM kcg_copy_array_int32_64
 
-#define kcg_comp_M_136_T_TM_radio_messages kcg_comp_struct_487387
+#define kcg_comp_M_136_T_TM_radio_messages kcg_comp_struct_494407
 
-#define kcg_copy_M_136_T_TM_radio_messages kcg_copy_struct_487387
+#define kcg_copy_M_136_T_TM_radio_messages kcg_copy_struct_494407
 
-#define kcg_comp_M_TrainTrackMessage_buffer_t_TM_lib_internal kcg_comp__82_array
+#define kcg_comp_M_TrainTrackMessage_buffer_t_TM_lib_internal kcg_comp__84_array
 
-#define kcg_copy_M_TrainTrackMessage_buffer_t_TM_lib_internal kcg_copy__82_array
+#define kcg_copy_M_TrainTrackMessage_buffer_t_TM_lib_internal kcg_copy__84_array
 
-#define kcg_comp_M_TrainTrackMessageBus_t_TM_TrainTrack_Bus kcg_comp__82_array
+#define kcg_comp_M_TrainTrackMessageBus_t_TM_TrainTrack_Bus kcg_comp__84_array
 
-#define kcg_copy_M_TrainTrackMessageBus_t_TM_TrainTrack_Bus kcg_copy__82_array
+#define kcg_copy_M_TrainTrackMessageBus_t_TM_TrainTrack_Bus kcg_copy__84_array
 
-#define kcg_comp_P004_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int64_3
+#define kcg_comp_P004_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int32_3
 
-#define kcg_copy_P004_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int64_3
+#define kcg_copy_P004_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int32_3
 
-#define kcg_comp_P005_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int64_3
+#define kcg_comp_P005_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int32_3
 
-#define kcg_copy_P005_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int64_3
+#define kcg_copy_P005_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int32_3
 
-#define kcg_comp_P044_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int64_25
+#define kcg_comp_P044_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int32_25
 
-#define kcg_copy_P044_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int64_25
+#define kcg_copy_P044_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int32_25
 
-#define kcg_comp_P001_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int64_17
+#define kcg_comp_P001_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int32_17
 
-#define kcg_copy_P001_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int64_17
+#define kcg_copy_P001_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int32_17
 
-#define kcg_comp_P000_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int64_17
+#define kcg_comp_P000_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int32_17
 
-#define kcg_copy_P000_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int64_17
+#define kcg_copy_P000_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int32_17
 
-#define kcg_comp_P135_OBU_T_TM kcg_comp_struct_484599
+#define kcg_comp_P135_OBU_T_TM kcg_comp_struct_488860
 
-#define kcg_copy_P135_OBU_T_TM kcg_copy_struct_484599
+#define kcg_copy_P135_OBU_T_TM kcg_copy_struct_488860
 
-#define kcg_comp_P138_OBU_T_TM kcg_comp_struct_488418
+#define kcg_comp_P138_OBU_T_TM kcg_comp_struct_485030
 
-#define kcg_copy_P138_OBU_T_TM kcg_copy_struct_488418
+#define kcg_copy_P138_OBU_T_TM kcg_copy_struct_485030
 
-#define kcg_comp_P139_OBU_T_TM kcg_comp_struct_488833
+#define kcg_comp_P139_OBU_T_TM kcg_comp_struct_493006
 
-#define kcg_copy_P139_OBU_T_TM kcg_copy_struct_488833
+#define kcg_copy_P139_OBU_T_TM kcg_copy_struct_493006
 
-#define kcg_comp_Array04_TM kcg_comp_array_int64_4
+#define kcg_comp_Array04_TM kcg_comp_array_int32_4
 
-#define kcg_copy_Array04_TM kcg_copy_array_int64_4
+#define kcg_copy_Array04_TM kcg_copy_array_int32_4
 
-#define kcg_comp_Array09_TM kcg_comp_array_int64_9
+#define kcg_comp_Array09_TM kcg_comp_array_int32_9
 
-#define kcg_copy_Array09_TM kcg_copy_array_int64_9
+#define kcg_copy_Array09_TM kcg_copy_array_int32_9
 
-#define kcg_comp_M_129_T_TM_radio_messages kcg_comp_struct_487387
+#define kcg_comp_M_129_T_TM_radio_messages kcg_comp_struct_494407
 
-#define kcg_copy_M_129_T_TM_radio_messages kcg_copy_struct_487387
+#define kcg_copy_M_129_T_TM_radio_messages kcg_copy_struct_494407
 
-#define kcg_comp_P011_voltage_TM_TrainToTrack kcg_comp_struct_489524
+#define kcg_comp_P011_voltage_TM_TrainToTrack kcg_comp_struct_493943
 
-#define kcg_copy_P011_voltage_TM_TrainToTrack kcg_copy_struct_489524
+#define kcg_copy_P011_voltage_TM_TrainToTrack kcg_copy_struct_493943
 
-#define kcg_comp_P011_voltage_list_TM_TrainToTrack kcg_comp__14_array
+#define kcg_comp_P011_voltage_list_TM_TrainToTrack kcg_comp__13_array
 
-#define kcg_copy_P011_voltage_list_TM_TrainToTrack kcg_copy__14_array
+#define kcg_copy_P011_voltage_list_TM_TrainToTrack kcg_copy__13_array
 
-#define kcg_comp_P011_ntc_list_TM_TrainToTrack kcg_comp_array_int64_5
+#define kcg_comp_P011_ntc_list_TM_TrainToTrack kcg_comp_array_int32_5
 
-#define kcg_copy_P011_ntc_list_TM_TrainToTrack kcg_copy_array_int64_5
+#define kcg_copy_P011_ntc_list_TM_TrainToTrack kcg_copy_array_int32_5
 
-#define kcg_comp_P011_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int64_25
+#define kcg_comp_P011_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int32_25
 
-#define kcg_copy_P011_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int64_25
+#define kcg_copy_P011_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int32_25
 
 #define kcg_comp_P011_voltage_sections_array_flat_t_TM_TrainToTrack           \
-  kcg_comp_array_int64_8
+  kcg_comp_array_int32_8
 
 #define kcg_copy_P011_voltage_sections_array_flat_t_TM_TrainToTrack           \
-  kcg_copy_array_int64_8
+  kcg_copy_array_int32_8
 
-#define kcg_comp_P011_ntc_list_array_T_TM_TrainToTrack kcg_comp_array_int64_5
+#define kcg_comp_P011_ntc_list_array_T_TM_TrainToTrack kcg_comp_array_int32_5
 
-#define kcg_copy_P011_ntc_list_array_T_TM_TrainToTrack kcg_copy_array_int64_5
+#define kcg_copy_P011_ntc_list_array_T_TM_TrainToTrack kcg_copy_array_int32_5
 
 #define kcg_comp_P011_voltage_section_array_T_TM_TrainToTrack                 \
-  kcg_comp_array_int64_2
+  kcg_comp_array_int32_2
 
 #define kcg_copy_P011_voltage_section_array_T_TM_TrainToTrack                 \
-  kcg_copy_array_int64_2
+  kcg_copy_array_int32_2
 
-#define kcg_comp_P003V1_section_enum_T_TM_baseline2 kcg_comp_struct_485072
+#define kcg_comp_P003V1_section_enum_T_TM_baseline2 kcg_comp_struct_493052
 
-#define kcg_copy_P003V1_section_enum_T_TM_baseline2 kcg_copy_struct_485072
+#define kcg_copy_P003V1_section_enum_T_TM_baseline2 kcg_copy_struct_493052
 
 #define kcg_comp_P003V1_sectionlist_enum_T_TM_baseline2 kcg_comp__64_array
 
 #define kcg_copy_P003V1_sectionlist_enum_T_TM_baseline2 kcg_copy__64_array
 
-#define kcg_comp_SSP_section_t_TA_MRSP kcg_comp_struct_488406
+#define kcg_comp_SSP_section_t_TA_MRSP kcg_comp_struct_487344
 
-#define kcg_copy_SSP_section_t_TA_MRSP kcg_copy_struct_488406
+#define kcg_copy_SSP_section_t_TA_MRSP kcg_copy_struct_487344
 
-#define kcg_comp_SSP_cat_t_TA_MRSP kcg_comp__85_array
+#define kcg_comp_SSP_cat_t_TA_MRSP kcg_comp__87_array
 
-#define kcg_copy_SSP_cat_t_TA_MRSP kcg_copy__85_array
+#define kcg_copy_SSP_cat_t_TA_MRSP kcg_copy__87_array
 
-#define kcg_comp_SSP_matrix_t_TA_MRSP kcg_comp__81_array
+#define kcg_comp_SSP_matrix_t_TA_MRSP kcg_comp__83_array
 
-#define kcg_copy_SSP_matrix_t_TA_MRSP kcg_copy__81_array
+#define kcg_copy_SSP_matrix_t_TA_MRSP kcg_copy__83_array
 
-#define kcg_comp_SSP_section_t_TA_MRSP_new kcg_comp_struct_488406
+#define kcg_comp_SSP_section_t_TA_MRSP_new kcg_comp_struct_487344
 
-#define kcg_copy_SSP_section_t_TA_MRSP_new kcg_copy_struct_488406
+#define kcg_copy_SSP_section_t_TA_MRSP_new kcg_copy_struct_487344
 
-#define kcg_comp_SSP_cat_t_TA_MRSP_new kcg_comp__85_array
+#define kcg_comp_SSP_cat_t_TA_MRSP_new kcg_comp__87_array
 
-#define kcg_copy_SSP_cat_t_TA_MRSP_new kcg_copy__85_array
+#define kcg_copy_SSP_cat_t_TA_MRSP_new kcg_copy__87_array
 
-#define kcg_comp_SSP_matrix_t_TA_MRSP_new kcg_comp__81_array
+#define kcg_comp_SSP_matrix_t_TA_MRSP_new kcg_comp__83_array
 
-#define kcg_copy_SSP_matrix_t_TA_MRSP_new kcg_copy__81_array
+#define kcg_copy_SSP_matrix_t_TA_MRSP_new kcg_copy__83_array
 
-#define kcg_comp_Array24_TM kcg_comp_array_int64_24
+#define kcg_comp_Array24_TM kcg_comp_array_int32_24
 
-#define kcg_copy_Array24_TM kcg_copy_array_int64_24
+#define kcg_copy_Array24_TM kcg_copy_array_int32_24
 
 #define kcg_comp_P003V1_OBU_sectionlist_int_T_TM_baseline2                    \
-  kcg_comp_array_int64_32
+  kcg_comp_array_int32_32
 
 #define kcg_copy_P003V1_OBU_sectionlist_int_T_TM_baseline2                    \
-  kcg_copy_array_int64_32
+  kcg_copy_array_int32_32
 
 #define kcg_comp_Radio_TrainTrack_Header_T_TM_transitional                    \
-  kcg_comp_struct_492262
+  kcg_comp_struct_492005
 
 #define kcg_copy_Radio_TrainTrack_Header_T_TM_transitional                    \
-  kcg_copy_struct_492262
+  kcg_copy_struct_492005
 
 #define kcg_comp_Radio_TrainTrack_Message_T_TM_transitional                   \
-  kcg_comp_struct_485794
+  kcg_comp_struct_485689
 
 #define kcg_copy_Radio_TrainTrack_Message_T_TM_transitional                   \
-  kcg_copy_struct_485794
+  kcg_copy_struct_485689
 
-#define kcg_comp_Driver2MAR_T_TA_MA_Request kcg_comp_struct_487566
+#define kcg_comp_Driver2MAR_T_TA_MA_Request kcg_comp_struct_487538
 
-#define kcg_copy_Driver2MAR_T_TA_MA_Request kcg_copy_struct_487566
+#define kcg_copy_Driver2MAR_T_TA_MA_Request kcg_copy_struct_487538
 
-#define kcg_comp_P009_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int64_3
+#define kcg_comp_P009_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int32_3
 
-#define kcg_copy_P009_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int64_3
+#define kcg_copy_P009_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int32_3
 
 #define kcg_comp_P131_RBCTransitionOrder_T_Packet_Types_Pkg                   \
-  kcg_comp_struct_492127
+  kcg_comp_struct_491870
 
 #define kcg_copy_P131_RBCTransitionOrder_T_Packet_Types_Pkg                   \
-  kcg_copy_struct_492127
+  kcg_copy_struct_491870
 
-#define kcg_comp_msgFromTrack_T_RCM_MsgTypes_Pkg kcg_comp_struct_493015
+#define kcg_comp_msgFromTrack_T_RCM_MsgTypes_Pkg kcg_comp_struct_492780
 
-#define kcg_copy_msgFromTrack_T_RCM_MsgTypes_Pkg kcg_copy_struct_493015
+#define kcg_copy_msgFromTrack_T_RCM_MsgTypes_Pkg kcg_copy_struct_492780
 
-#define kcg_comp_P131_OBU_T_TM kcg_comp_struct_492127
+#define kcg_comp_P131_OBU_T_TM kcg_comp_struct_491870
 
-#define kcg_copy_P131_OBU_T_TM kcg_copy_struct_492127
+#define kcg_copy_P131_OBU_T_TM kcg_copy_struct_491870
 
-#define kcg_comp_M_154_T_TM_radio_messages kcg_comp_struct_487387
+#define kcg_comp_M_154_T_TM_radio_messages kcg_comp_struct_494407
 
-#define kcg_copy_M_154_T_TM_radio_messages kcg_copy_struct_487387
+#define kcg_copy_M_154_T_TM_radio_messages kcg_copy_struct_494407
 
-#define kcg_comp_M_159_T_TM_radio_messages kcg_comp_struct_487387
+#define kcg_comp_M_159_T_TM_radio_messages kcg_comp_struct_494407
 
-#define kcg_copy_M_159_T_TM_radio_messages kcg_copy_struct_487387
+#define kcg_copy_M_159_T_TM_radio_messages kcg_copy_struct_494407
 
-#define kcg_comp_M_156_T_TM_radio_messages kcg_comp_struct_487387
+#define kcg_comp_M_156_T_TM_radio_messages kcg_comp_struct_494407
 
-#define kcg_copy_M_156_T_TM_radio_messages kcg_copy_struct_487387
+#define kcg_copy_M_156_T_TM_radio_messages kcg_copy_struct_494407
 
-#define kcg_comp_M_155_T_TM_radio_messages kcg_comp_struct_487387
+#define kcg_comp_M_155_T_TM_radio_messages kcg_comp_struct_494407
 
-#define kcg_copy_M_155_T_TM_radio_messages kcg_copy_struct_487387
+#define kcg_copy_M_155_T_TM_radio_messages kcg_copy_struct_494407
 
-#define kcg_comp_P003_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int64_8
+#define kcg_comp_P003_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int32_8
 
-#define kcg_copy_P003_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int64_8
+#define kcg_copy_P003_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int32_8
 
 #define kcg_comp_P003_nid_radio_list_int_t_TM_TrainToTrack                    \
-  kcg_comp_array_int64_5
+  kcg_comp_array_int32_5
 
 #define kcg_copy_P003_nid_radio_list_int_t_TM_TrainToTrack                    \
-  kcg_copy_array_int64_5
+  kcg_copy_array_int32_5
 
-#define kcg_comp_msgToTrack_T_RCM_MsgTypes_Pkg kcg_comp_struct_485794
+#define kcg_comp_msgToTrack_T_RCM_MsgTypes_Pkg kcg_comp_struct_485689
 
-#define kcg_copy_msgToTrack_T_RCM_MsgTypes_Pkg kcg_copy_struct_485794
+#define kcg_copy_msgToTrack_T_RCM_MsgTypes_Pkg kcg_copy_struct_485689
 
 #define kcg_comp_Radio_TrackTrain_Header_T_TM_transitional                    \
-  kcg_comp_struct_491646
+  kcg_comp_struct_491368
 
 #define kcg_copy_Radio_TrackTrain_Header_T_TM_transitional                    \
-  kcg_copy_struct_491646
+  kcg_copy_struct_491368
 
 #define kcg_comp_P003V1_trackide_sectionlist_T_TM_baseline2                   \
-  kcg_comp_array_int64_32
+  kcg_comp_array_int32_32
 
 #define kcg_copy_P003V1_trackide_sectionlist_T_TM_baseline2                   \
-  kcg_copy_array_int64_32
+  kcg_copy_array_int32_32
 
 #define kcg_comp_P058_trackide_sectionlist_T_TM kcg_comp__63_array
 
@@ -18299,49 +18254,49 @@ extern kcg_bool kcg_comp_array_int64_301(
 
 #define kcg_copy_P015_trackide_sectionlist_T_TM kcg_copy__61_array
 
-#define kcg_comp_P005_section_array_T_TM kcg_comp_array_int64_7
+#define kcg_comp_P005_section_array_T_TM kcg_comp_array_int32_7
 
-#define kcg_copy_P005_section_array_T_TM kcg_copy_array_int64_7
+#define kcg_copy_P005_section_array_T_TM kcg_copy_array_int32_7
 
-#define kcg_comp_P015_section_array_T_TM kcg_comp_array_int64_4
+#define kcg_comp_P015_section_array_T_TM kcg_comp_array_int32_4
 
-#define kcg_copy_P015_section_array_T_TM kcg_copy_array_int64_4
+#define kcg_copy_P015_section_array_T_TM kcg_copy_array_int32_4
 
 #define kcg_comp_P015_OBU_sectionlist_int_T_TM kcg_comp__61_array
 
 #define kcg_copy_P015_OBU_sectionlist_int_T_TM kcg_copy__61_array
 
-#define kcg_comp_P021_section_array_T_TM kcg_comp_array_int64_3
+#define kcg_comp_P021_section_array_T_TM kcg_comp_array_int32_3
 
-#define kcg_copy_P021_section_array_T_TM kcg_copy_array_int64_3
+#define kcg_copy_P021_section_array_T_TM kcg_copy_array_int32_3
 
-#define kcg_comp_P021_OBU_sectionlist_array_T_TM kcg_comp_array_int64_3_33
+#define kcg_comp_P021_OBU_sectionlist_array_T_TM kcg_comp_array_int32_3_33
 
-#define kcg_copy_P021_OBU_sectionlist_array_T_TM kcg_copy_array_int64_3_33
+#define kcg_copy_P021_OBU_sectionlist_array_T_TM kcg_copy_array_int32_3_33
 
-#define kcg_comp_P058_section_array_T_TM kcg_comp_array_int64_2
+#define kcg_comp_P058_section_array_T_TM kcg_comp_array_int32_2
 
-#define kcg_copy_P058_section_array_T_TM kcg_copy_array_int64_2
+#define kcg_copy_P058_section_array_T_TM kcg_copy_array_int32_2
 
 #define kcg_comp_P058_OBU_sectionlist_int_T_TM kcg_comp__63_array
 
 #define kcg_copy_P058_OBU_sectionlist_int_T_TM kcg_copy__63_array
 
-#define kcg_comp_P058_OBU_sectionlist_array_T_TM kcg_comp_array_int64_2_32
+#define kcg_comp_P058_OBU_sectionlist_array_T_TM kcg_comp_array_int32_2_32
 
-#define kcg_copy_P058_OBU_sectionlist_array_T_TM kcg_copy_array_int64_2_32
+#define kcg_copy_P058_OBU_sectionlist_array_T_TM kcg_copy_array_int32_2_32
 
 #define kcg_comp_P027V1_section_array_qdiff_T_TM_baseline2                    \
-  kcg_comp_array_int64_2
+  kcg_comp_array_int32_2
 
 #define kcg_copy_P027V1_section_array_qdiff_T_TM_baseline2                    \
-  kcg_copy_array_int64_2
+  kcg_copy_array_int32_2
 
 #define kcg_comp_P027V1_OBU_sectionlist_array_qdiff_T_TM_baseline2            \
-  kcg_comp_array_int64_2_32
+  kcg_comp_array_int32_2_32
 
 #define kcg_copy_P027V1_OBU_sectionlist_array_qdiff_T_TM_baseline2            \
-  kcg_copy_array_int64_2_32
+  kcg_copy_array_int32_2_32
 
 #define kcg_comp_P027V1_OBU_sectionlist_int_qdiff_T_TM_baseline2              \
   kcg_comp__62_array
@@ -18349,105 +18304,105 @@ extern kcg_bool kcg_comp_array_int64_301(
 #define kcg_copy_P027V1_OBU_sectionlist_int_qdiff_T_TM_baseline2              \
   kcg_copy__62_array
 
-#define kcg_comp_Array11_TM_TrainToTrack kcg_comp_array_int64_11
+#define kcg_comp_Array11_TM_TrainToTrack kcg_comp_array_int32_11
 
-#define kcg_copy_Array11_TM_TrainToTrack kcg_copy_array_int64_11
+#define kcg_copy_Array11_TM_TrainToTrack kcg_copy_array_int32_11
 
-#define kcg_comp_Array03_TM_TrainToTrack kcg_comp_array_int64_3
+#define kcg_comp_Array03_TM_TrainToTrack kcg_comp_array_int32_3
 
-#define kcg_copy_Array03_TM_TrainToTrack kcg_copy_array_int64_3
+#define kcg_copy_Array03_TM_TrainToTrack kcg_copy_array_int32_3
 
-#define kcg_comp_M_003_int_T_TM_radio_messages kcg_comp_struct_486733
+#define kcg_comp_M_003_int_T_TM_radio_messages kcg_comp_struct_486490
 
-#define kcg_copy_M_003_int_T_TM_radio_messages kcg_copy_struct_486733
+#define kcg_copy_M_003_int_T_TM_radio_messages kcg_copy_struct_486490
 
-#define kcg_comp_BaliseGroupData_TM kcg_comp_struct_491791
+#define kcg_comp_BaliseGroupData_TM kcg_comp_struct_485097
 
-#define kcg_copy_BaliseGroupData_TM kcg_copy_struct_491791
+#define kcg_copy_BaliseGroupData_TM kcg_copy_struct_485097
 
-#define kcg_comp_P041_section_array_T_TM kcg_comp_array_int64_3
+#define kcg_comp_P041_section_array_T_TM kcg_comp_array_int32_3
 
-#define kcg_copy_P041_section_array_T_TM kcg_copy_array_int64_3
+#define kcg_copy_P041_section_array_T_TM kcg_copy_array_int32_3
 
-#define kcg_comp_P041_OBU_sectionlist_array_T_TM kcg_comp_array_int64_3_33
+#define kcg_comp_P041_OBU_sectionlist_array_T_TM kcg_comp_array_int32_3_33
 
-#define kcg_copy_P041_OBU_sectionlist_array_T_TM kcg_copy_array_int64_3_33
+#define kcg_copy_P041_OBU_sectionlist_array_T_TM kcg_copy_array_int32_3_33
 
-#define kcg_comp_BaliseGroupData_Basics kcg_comp_struct_491791
+#define kcg_comp_BaliseGroupData_Basics kcg_comp_struct_485097
 
-#define kcg_copy_BaliseGroupData_Basics kcg_copy_struct_491791
+#define kcg_copy_BaliseGroupData_Basics kcg_copy_struct_485097
 
-#define kcg_comp_P046_section_array_T_TM kcg_comp_array_int64_2
+#define kcg_comp_P046_section_array_T_TM kcg_comp_array_int32_2
 
-#define kcg_copy_P046_section_array_T_TM kcg_copy_array_int64_2
+#define kcg_copy_P046_section_array_T_TM kcg_copy_array_int32_2
 
-#define kcg_comp_M_024_int_T_TM_radio_messages kcg_comp_struct_486733
+#define kcg_comp_M_024_int_T_TM_radio_messages kcg_comp_struct_486490
 
-#define kcg_copy_M_024_int_T_TM_radio_messages kcg_copy_struct_486733
+#define kcg_copy_M_024_int_T_TM_radio_messages kcg_copy_struct_486490
 
-#define kcg_comp_M_027_T_TM_radio_messages kcg_comp_struct_491925
+#define kcg_comp_M_027_T_TM_radio_messages kcg_comp_struct_491668
 
-#define kcg_copy_M_027_T_TM_radio_messages kcg_copy_struct_491925
+#define kcg_copy_M_027_T_TM_radio_messages kcg_copy_struct_491668
 
-#define kcg_comp_M_024_T_TM_radio_messages kcg_comp_struct_486660
+#define kcg_comp_M_024_T_TM_radio_messages kcg_comp_struct_486417
 
-#define kcg_copy_M_024_T_TM_radio_messages kcg_copy_struct_486660
+#define kcg_copy_M_024_T_TM_radio_messages kcg_copy_struct_486417
 
-#define kcg_comp_M_018_T_TM_radio_messages kcg_comp_struct_491898
+#define kcg_comp_M_018_T_TM_radio_messages kcg_comp_struct_491641
 
-#define kcg_copy_M_018_T_TM_radio_messages kcg_copy_struct_491898
+#define kcg_copy_M_018_T_TM_radio_messages kcg_copy_struct_491641
 
-#define kcg_comp_M_016_T_TM_radio_messages kcg_comp_struct_491898
+#define kcg_comp_M_016_T_TM_radio_messages kcg_comp_struct_491641
 
-#define kcg_copy_M_016_T_TM_radio_messages kcg_copy_struct_491898
+#define kcg_copy_M_016_T_TM_radio_messages kcg_copy_struct_491641
 
-#define kcg_comp_M_009_T_TM_radio_messages kcg_comp_struct_486660
+#define kcg_comp_M_009_T_TM_radio_messages kcg_comp_struct_486417
 
-#define kcg_copy_M_009_T_TM_radio_messages kcg_copy_struct_486660
+#define kcg_copy_M_009_T_TM_radio_messages kcg_copy_struct_486417
 
-#define kcg_comp_M_006_T_TM_radio_messages kcg_comp_struct_486660
+#define kcg_comp_M_006_T_TM_radio_messages kcg_comp_struct_486417
 
-#define kcg_copy_M_006_T_TM_radio_messages kcg_copy_struct_486660
+#define kcg_copy_M_006_T_TM_radio_messages kcg_copy_struct_486417
 
-#define kcg_comp_M_003_T_TM_radio_messages kcg_comp_struct_486660
+#define kcg_comp_M_003_T_TM_radio_messages kcg_comp_struct_486417
 
-#define kcg_copy_M_003_T_TM_radio_messages kcg_copy_struct_486660
+#define kcg_copy_M_003_T_TM_radio_messages kcg_copy_struct_486417
 
-#define kcg_comp_M_043_T_TM_radio_messages kcg_comp_struct_486660
+#define kcg_comp_M_043_T_TM_radio_messages kcg_comp_struct_486417
 
-#define kcg_copy_M_043_T_TM_radio_messages kcg_copy_struct_486660
+#define kcg_copy_M_043_T_TM_radio_messages kcg_copy_struct_486417
 
-#define kcg_comp_M_041_T_TM_radio_messages kcg_comp_struct_486660
+#define kcg_comp_M_041_T_TM_radio_messages kcg_comp_struct_486417
 
-#define kcg_copy_M_041_T_TM_radio_messages kcg_copy_struct_486660
+#define kcg_copy_M_041_T_TM_radio_messages kcg_copy_struct_486417
 
-#define kcg_comp_M_040_T_TM_radio_messages kcg_comp_struct_486660
+#define kcg_comp_M_040_T_TM_radio_messages kcg_comp_struct_486417
 
-#define kcg_copy_M_040_T_TM_radio_messages kcg_copy_struct_486660
+#define kcg_copy_M_040_T_TM_radio_messages kcg_copy_struct_486417
 
-#define kcg_comp_M_039_T_TM_radio_messages kcg_comp_struct_486660
+#define kcg_comp_M_039_T_TM_radio_messages kcg_comp_struct_486417
 
-#define kcg_copy_M_039_T_TM_radio_messages kcg_copy_struct_486660
+#define kcg_copy_M_039_T_TM_radio_messages kcg_copy_struct_486417
 
-#define kcg_comp_M_038_T_TM_radio_messages kcg_comp_struct_486660
+#define kcg_comp_M_038_T_TM_radio_messages kcg_comp_struct_486417
 
-#define kcg_copy_M_038_T_TM_radio_messages kcg_copy_struct_486660
+#define kcg_copy_M_038_T_TM_radio_messages kcg_copy_struct_486417
 
-#define kcg_comp_M_028_T_TM_radio_messages kcg_comp_struct_491925
+#define kcg_comp_M_028_T_TM_radio_messages kcg_comp_struct_491668
 
-#define kcg_copy_M_028_T_TM_radio_messages kcg_copy_struct_491925
+#define kcg_copy_M_028_T_TM_radio_messages kcg_copy_struct_491668
 
-#define kcg_comp_tPASP_Array kcg_comp_array_float64_10
+#define kcg_comp_tPASP_Array kcg_comp_array_float32_10
 
-#define kcg_copy_tPASP_Array kcg_copy_array_float64_10
+#define kcg_copy_tPASP_Array kcg_copy_array_float32_10
 
-#define kcg_comp_V5 kcg_comp_array_int64_5
+#define kcg_comp_V5 kcg_comp_array_int32_5
 
-#define kcg_copy_V5 kcg_copy_array_int64_5
+#define kcg_copy_V5 kcg_copy_array_int32_5
 
 #endif /* _KCG_TYPES_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** kcg_types.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

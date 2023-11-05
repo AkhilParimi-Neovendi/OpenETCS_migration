@@ -15,7 +15,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* int_out/ */ int_out;
+  kcg_int32 /* int_out/ */ int_out;
   kcg_bool /* error/ */ error;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
@@ -24,17 +24,17 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   kcg_bool /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L5/ */ _L5;
 } outC_BCD_to_Int_Utilities;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* Utilities::BCD_to_Int/ */
 extern void BCD_to_Int_Utilities(
   /* bcd_in/ */
-  kcg_int64 bcd_in,
+  kcg_int32 bcd_in,
   outC_BCD_to_Int_Utilities *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

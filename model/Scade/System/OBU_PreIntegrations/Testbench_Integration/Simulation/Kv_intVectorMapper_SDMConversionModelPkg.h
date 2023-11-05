@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _Kv_intVectorMapper_SDMConversionModelPkg_H_
 #define _Kv_intVectorMapper_SDMConversionModelPkg_H_
@@ -25,13 +25,13 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   av_Map_t_SDMConversionModelPkg /* _L1/ */ _L1;
   mv_Map_t_SDMConversionModelPkg /* _L2/ */ _L2;
-  array_int64_13 /* _L13/ */ _L13;
-  array_int64_2 /* _L12/ */ _L12;
+  array_int32_13 /* _L13/ */ _L13;
+  array_int32_2 /* _L12/ */ _L12;
   _76_array /* _L14/ */ _L14;
   _75_array /* _L16/ */ _L16;
-  array_int64_2 /* _L17/ */ _L17;
-  kcg_int64 /* _L18/ */ _L18;
-  array_int64_13 /* _L19/ */ _L19;
+  array_int32_2 /* _L17/ */ _L17;
+  kcg_int32 /* _L18/ */ _L18;
+  array_int32_13 /* _L19/ */ _L19;
   av_MergedMap_t_SDMConversionModelPkg /* _L26/ */ _L26;
 } outC_Kv_intVectorMapper_SDMConversionModelPkg;
 
@@ -59,6 +59,6 @@ extern void Kv_intVectorMapper_init_SDMConversionModelPkg(
 #endif /* _Kv_intVectorMapper_SDMConversionModelPkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Kv_intVectorMapper_SDMConversionModelPkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

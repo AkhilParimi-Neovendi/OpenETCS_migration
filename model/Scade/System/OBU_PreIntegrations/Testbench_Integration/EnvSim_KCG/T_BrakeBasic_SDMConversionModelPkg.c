@@ -17,7 +17,7 @@ void T_BrakeBasic_SDMConversionModelPkg(
 {
   kcg_copy_coeff_BrakeBasic_t_SDMConversionModelPkg(&outC->_L1, coeff);
   outC->_L7 = outC->_L1[2];
-  outC->_L14 = kcg_lit_float64(100.0);
+  outC->_L14 = kcg_lit_float32(100.0);
   outC->_L12 = trainLength;
   outC->_L13 = outC->_L12 / outC->_L14;
   outC->_L17 = outC->_L13 * outC->_L13 * outC->_L7;
@@ -34,19 +34,19 @@ void T_BrakeBasic_init_SDMConversionModelPkg(
 {
   static kcg_size idx;
 
-  outC->_L17 = kcg_lit_float64(0.0);
-  outC->_L16 = kcg_lit_float64(0.0);
-  outC->_L15 = kcg_lit_float64(0.0);
-  outC->_L14 = kcg_lit_float64(0.0);
-  outC->_L13 = kcg_lit_float64(0.0);
-  outC->_L12 = kcg_lit_float64(0.0);
-  outC->_L5 = kcg_lit_float64(0.0);
-  outC->_L6 = kcg_lit_float64(0.0);
-  outC->_L7 = kcg_lit_float64(0.0);
+  outC->_L17 = kcg_lit_float32(0.0);
+  outC->_L16 = kcg_lit_float32(0.0);
+  outC->_L15 = kcg_lit_float32(0.0);
+  outC->_L14 = kcg_lit_float32(0.0);
+  outC->_L13 = kcg_lit_float32(0.0);
+  outC->_L12 = kcg_lit_float32(0.0);
+  outC->_L5 = kcg_lit_float32(0.0);
+  outC->_L6 = kcg_lit_float32(0.0);
+  outC->_L7 = kcg_lit_float32(0.0);
   for (idx = 0; idx < 3; idx++) {
-    outC->_L1[idx] = kcg_lit_float64(0.0);
+    outC->_L1[idx] = kcg_lit_float32(0.0);
   }
-  outC->T_BB = kcg_lit_float64(0.0);
+  outC->T_BB = kcg_lit_float32(0.0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _TargetManagement_TargetManagement_pkg_H_
 #define _TargetManagement_TargetManagement_pkg_H_
@@ -47,7 +47,7 @@ typedef struct {
   TrainLocations_real_T_SDM_Types_Pkg /* _L89/ */ _L89;
   MA_section_real_T_TargetManagement_types /* _L97/ */ _L97;
   extractTargetsMRSPACC_TargetManagement_pkg /* _L98/ */ _L98;
-  kcg_int64 /* _L99/ */ _L99;
+  kcg_int32 /* _L99/ */ _L99;
   Target_list_MRSP_real_T_TargetManagement_types /* _L107/ */ _L107;
   Target_list_MRSP_real_T_TargetManagement_types /* _L121/ */ _L121;
   Target_real_T_TargetManagement_types /* _L14/ */ _L14;
@@ -102,6 +102,6 @@ extern void kcg_load_SV_TargetManagement_TargetManagement_pkg(
 #endif /* _TargetManagement_TargetManagement_pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** TargetManagement_TargetManagement_pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

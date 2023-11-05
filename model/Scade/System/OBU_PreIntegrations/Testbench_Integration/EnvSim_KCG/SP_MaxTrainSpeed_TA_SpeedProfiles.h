@@ -21,7 +21,7 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   SSP_cat_t_TA_MRSP /* _L2/ */ _L2;
   kcg_bool /* _L3/ */ _L3;
 } outC_SP_MaxTrainSpeed_TA_SpeedProfiles;
@@ -32,7 +32,7 @@ extern void SP_MaxTrainSpeed_TA_SpeedProfiles(
   /* reset/ */
   kcg_bool reset,
   /* TrainDataIn/ */
-  kcg_int64 TrainDataIn,
+  kcg_int32 TrainDataIn,
   outC_SP_MaxTrainSpeed_TA_SpeedProfiles *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

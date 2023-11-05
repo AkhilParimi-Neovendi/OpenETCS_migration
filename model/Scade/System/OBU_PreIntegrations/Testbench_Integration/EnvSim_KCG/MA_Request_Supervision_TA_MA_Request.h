@@ -54,14 +54,14 @@ typedef struct {
   kcg_bool /* _L23/ */ _L23;
   MovementAuthority_t_TrackAtlasTypes /* _L24/ */ _L24;
   T_TIMEOUTRQST /* _L30/ */ _L30;
-  kcg_int64 /* _L38/ */ _L38;
+  kcg_int32 /* _L38/ */ _L38;
   kcg_bool /* _L40/ */ _L40;
   T_MAR /* _L41/ */ _L41;
-  kcg_int64 /* _L43/ */ _L43;
+  kcg_int32 /* _L43/ */ _L43;
   kcg_bool /* _L46/ */ _L46;
   kcg_bool /* _L48/ */ _L48;
   T_CYCRQST /* _L49/ */ _L49;
-  kcg_int64 /* _L51/ */ _L51;
+  kcg_int32 /* _L51/ */ _L51;
   kcg_bool /* _L55/ */ _L55;
   kcg_bool /* _L59/ */ _L59;
   kcg_bool /* _L60/ */ _L60;
@@ -89,7 +89,7 @@ typedef struct {
   M_LEVEL /* _L88/ */ _L88;
   kcg_bool /* _L91/ */ _L91;
   kcg_bool /* _L93/ */ _L93;
-  kcg_int64 /* _L94/ */ _L94;
+  kcg_int32 /* _L94/ */ _L94;
   kcg_bool /* _L95/ */ _L95;
 } outC_MA_Request_Supervision_TA_MA_Request;
 

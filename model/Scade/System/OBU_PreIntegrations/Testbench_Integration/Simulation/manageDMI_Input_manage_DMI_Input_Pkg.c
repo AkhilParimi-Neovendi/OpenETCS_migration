@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -133,7 +133,7 @@ void manageDMI_Input_manage_DMI_Input_Pkg(
   kcg_copy_DMI_EVC_status_T_DMI_Types_Pkg(
     &last_DMI_Status_inEVC,
     &outC->DMI_Status_inEVC);
-  outC->_L20 = kcg_lit_int64(1);
+  outC->_L20 = kcg_lit_int32(1);
   kcg_copy_DMI_to_EVC_Message_int_T_API_DMI_Pkg(&outC->_L1, fromDMI);
   outC->_L19 = outC->_L1[0];
   outC->_L18 = outC->_L20 == outC->_L19;
@@ -613,11 +613,11 @@ void manageDMI_Input_init_manage_DMI_Input_Pkg(
   static kcg_size idx17;
   static kcg_size idx18;
 
-  outC->_L20 = kcg_lit_int64(0);
-  outC->_L19 = kcg_lit_int64(0);
+  outC->_L20 = kcg_lit_int32(0);
+  outC->_L19 = kcg_lit_int32(0);
   outC->_L18 = kcg_true;
   outC->_L16.valid = kcg_true;
-  outC->_L16.systemTime = kcg_lit_int64(0);
+  outC->_L16.systemTime = kcg_lit_int32(0);
   outC->_L16.m_request = Start_of_mission_DMI_Types_Pkg;
   outC->_L15 = kcg_true;
   outC->_L14.DMI_Active = kcg_true;
@@ -629,50 +629,50 @@ void manageDMI_Input_init_manage_DMI_Input_Pkg(
   outC->_L14.DMI_TrainDataValidated = kcg_true;
   outC->_L14.DMI_StartReceived = kcg_true;
   outC->_L14.DMI_Identifier.valid = kcg_true;
-  outC->_L14.DMI_Identifier.systemTime = kcg_lit_int64(0);
+  outC->_L14.DMI_Identifier.systemTime = kcg_lit_int32(0);
   outC->_L14.DMI_Identifier.DMI_Identifier = DMI_1_DMI_Types_Pkg;
   outC->_L14.DMI_Identifier.Cabin_Identifier = cabin_A_DMI_Types_Pkg;
-  outC->_L14.DMI_Identifier.l_name = kcg_lit_int64(0);
+  outC->_L14.DMI_Identifier.l_name = kcg_lit_int32(0);
   for (idx = 0; idx < 255; idx++) {
     outC->_L14.DMI_Identifier.DMI_name[idx] = ' ';
   }
   outC->_L14.DMI_Identifier.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx1 = 0; idx1 < 311; idx1++) {
-    outC->_L1[idx1] = kcg_lit_int64(0);
+    outC->_L1[idx1] = kcg_lit_int32(0);
   }
   outC->driverRequest.valid = kcg_true;
-  outC->driverRequest.systemTime = kcg_lit_int64(0);
+  outC->driverRequest.systemTime = kcg_lit_int32(0);
   outC->driverRequest.m_request = Start_of_mission_DMI_Types_Pkg;
   outC->icon_Ack.valid = kcg_true;
-  outC->icon_Ack.systemTime = kcg_lit_int64(0);
-  outC->icon_Ack.DMI_nid_icon_identifier = kcg_lit_int64(0);
+  outC->icon_Ack.systemTime = kcg_lit_int32(0);
+  outC->icon_Ack.DMI_nid_icon_identifier = kcg_lit_int32(0);
   outC->textMessage_Ack.valid = kcg_true;
-  outC->textMessage_Ack.systemTime = kcg_lit_int64(0);
-  outC->textMessage_Ack.textMessage_ID = kcg_lit_int64(0);
+  outC->textMessage_Ack.systemTime = kcg_lit_int32(0);
+  outC->textMessage_Ack.textMessage_ID = kcg_lit_int32(0);
   outC->textMessage_Ack.acknowledged = kcg_true;
   outC->sndValidationRequested = kcg_true;
   outC->inputPresent = kcg_true;
   outC->IfBlock1_clock = kcg_true;
   outC->_L11_then_else_IfBlock1.trackAheadFree = kcg_true;
   outC->_L11_then_else_IfBlock1.driverSelectsStart = kcg_true;
-  outC->_L10_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L10_then_else_IfBlock1 = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 31; idx2++) {
     outC->_L9_then_else_IfBlock1[idx2].valid = kcg_true;
-    outC->_L9_then_else_IfBlock1[idx2].dmi_textMessageID = kcg_lit_int64(0);
-    outC->_L9_then_else_IfBlock1[idx2].timeStamp = kcg_lit_int64(0);
+    outC->_L9_then_else_IfBlock1[idx2].dmi_textMessageID = kcg_lit_int32(0);
+    outC->_L9_then_else_IfBlock1[idx2].timeStamp = kcg_lit_int32(0);
     outC->_L9_then_else_IfBlock1[idx2].textReport =
       Q_TEXTREPORT_No_driver_acknowledgement_report_required;
     outC->_L9_then_else_IfBlock1[idx2].context = con_undefined_DMI_Types_Pkg;
-    outC->_L9_then_else_IfBlock1[idx2].nid_textmessage = kcg_lit_int64(0);
+    outC->_L9_then_else_IfBlock1[idx2].nid_textmessage = kcg_lit_int32(0);
     outC->_L9_then_else_IfBlock1[idx2].whichLevel = M_LEVEL_Level_0;
     outC->_L9_then_else_IfBlock1[idx2].whichMode = M_MODE_Full_Supervision;
   }
   outC->_L8_then_else_IfBlock1.valid = kcg_true;
-  outC->_L8_then_else_IfBlock1.systemTime = kcg_lit_int64(0);
-  outC->_L8_then_else_IfBlock1.DMI_nid_icon_identifier = kcg_lit_int64(0);
+  outC->_L8_then_else_IfBlock1.systemTime = kcg_lit_int32(0);
+  outC->_L8_then_else_IfBlock1.DMI_nid_icon_identifier = kcg_lit_int32(0);
   outC->_L7_then_else_IfBlock1.valid = kcg_true;
-  outC->_L7_then_else_IfBlock1.systemTime = kcg_lit_int64(0);
+  outC->_L7_then_else_IfBlock1.systemTime = kcg_lit_int32(0);
   outC->_L7_then_else_IfBlock1.m_request = Start_of_mission_DMI_Types_Pkg;
   outC->_L5_then_else_IfBlock1.DMI_Active = kcg_true;
   outC->_L5_then_else_IfBlock1.DMI_Error = kcg_true;
@@ -683,12 +683,12 @@ void manageDMI_Input_init_manage_DMI_Input_Pkg(
   outC->_L5_then_else_IfBlock1.DMI_TrainDataValidated = kcg_true;
   outC->_L5_then_else_IfBlock1.DMI_StartReceived = kcg_true;
   outC->_L5_then_else_IfBlock1.DMI_Identifier.valid = kcg_true;
-  outC->_L5_then_else_IfBlock1.DMI_Identifier.systemTime = kcg_lit_int64(0);
+  outC->_L5_then_else_IfBlock1.DMI_Identifier.systemTime = kcg_lit_int32(0);
   outC->_L5_then_else_IfBlock1.DMI_Identifier.DMI_Identifier =
     DMI_1_DMI_Types_Pkg;
   outC->_L5_then_else_IfBlock1.DMI_Identifier.Cabin_Identifier =
     cabin_A_DMI_Types_Pkg;
-  outC->_L5_then_else_IfBlock1.DMI_Identifier.l_name = kcg_lit_int64(0);
+  outC->_L5_then_else_IfBlock1.DMI_Identifier.l_name = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 255; idx3++) {
     outC->_L5_then_else_IfBlock1.DMI_Identifier.DMI_name[idx3] = ' ';
   }
@@ -696,21 +696,21 @@ void manageDMI_Input_init_manage_DMI_Input_Pkg(
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L8_else_else_IfBlock1.trackAheadFree = kcg_true;
   outC->_L8_else_else_IfBlock1.driverSelectsStart = kcg_true;
-  outC->_L7_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L7_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L5_else_else_IfBlock1.valid = kcg_true;
-  outC->_L5_else_else_IfBlock1.systemTime = kcg_lit_int64(0);
-  outC->_L5_else_else_IfBlock1.DMI_nid_icon_identifier = kcg_lit_int64(0);
+  outC->_L5_else_else_IfBlock1.systemTime = kcg_lit_int32(0);
+  outC->_L5_else_else_IfBlock1.DMI_nid_icon_identifier = kcg_lit_int32(0);
   outC->_L6_else_else_IfBlock1.valid = kcg_true;
-  outC->_L6_else_else_IfBlock1.systemTime = kcg_lit_int64(0);
+  outC->_L6_else_else_IfBlock1.systemTime = kcg_lit_int32(0);
   outC->_L6_else_else_IfBlock1.m_request = Start_of_mission_DMI_Types_Pkg;
   for (idx4 = 0; idx4 < 31; idx4++) {
     outC->_L4_else_else_IfBlock1[idx4].valid = kcg_true;
-    outC->_L4_else_else_IfBlock1[idx4].dmi_textMessageID = kcg_lit_int64(0);
-    outC->_L4_else_else_IfBlock1[idx4].timeStamp = kcg_lit_int64(0);
+    outC->_L4_else_else_IfBlock1[idx4].dmi_textMessageID = kcg_lit_int32(0);
+    outC->_L4_else_else_IfBlock1[idx4].timeStamp = kcg_lit_int32(0);
     outC->_L4_else_else_IfBlock1[idx4].textReport =
       Q_TEXTREPORT_No_driver_acknowledgement_report_required;
     outC->_L4_else_else_IfBlock1[idx4].context = con_undefined_DMI_Types_Pkg;
-    outC->_L4_else_else_IfBlock1[idx4].nid_textmessage = kcg_lit_int64(0);
+    outC->_L4_else_else_IfBlock1[idx4].nid_textmessage = kcg_lit_int32(0);
     outC->_L4_else_else_IfBlock1[idx4].whichLevel = M_LEVEL_Level_0;
     outC->_L4_else_else_IfBlock1[idx4].whichMode = M_MODE_Full_Supervision;
   }
@@ -723,12 +723,12 @@ void manageDMI_Input_init_manage_DMI_Input_Pkg(
   outC->_L3_else_else_IfBlock1.DMI_TrainDataValidated = kcg_true;
   outC->_L3_else_else_IfBlock1.DMI_StartReceived = kcg_true;
   outC->_L3_else_else_IfBlock1.DMI_Identifier.valid = kcg_true;
-  outC->_L3_else_else_IfBlock1.DMI_Identifier.systemTime = kcg_lit_int64(0);
+  outC->_L3_else_else_IfBlock1.DMI_Identifier.systemTime = kcg_lit_int32(0);
   outC->_L3_else_else_IfBlock1.DMI_Identifier.DMI_Identifier =
     DMI_1_DMI_Types_Pkg;
   outC->_L3_else_else_IfBlock1.DMI_Identifier.Cabin_Identifier =
     cabin_A_DMI_Types_Pkg;
-  outC->_L3_else_else_IfBlock1.DMI_Identifier.l_name = kcg_lit_int64(0);
+  outC->_L3_else_else_IfBlock1.DMI_Identifier.l_name = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 255; idx5++) {
     outC->_L3_else_else_IfBlock1.DMI_Identifier.DMI_name[idx5] = ' ';
   }
@@ -737,52 +737,52 @@ void manageDMI_Input_init_manage_DMI_Input_Pkg(
   outC->else_clock_IfBlock1 = kcg_true;
   outC->_L1_then_IfBlock1 = kcg_true;
   outC->_L2_then_IfBlock1.valid = kcg_true;
-  outC->_L2_then_IfBlock1.systemTime = kcg_lit_int64(0);
+  outC->_L2_then_IfBlock1.systemTime = kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.statusSet = Running_state_DMI_Types_Pkg;
-  outC->_L2_then_IfBlock1.nAlive = kcg_lit_int64(0);
+  outC->_L2_then_IfBlock1.nAlive = kcg_lit_int32(0);
   outC->_L3_then_IfBlock1.valid = kcg_true;
-  outC->_L3_then_IfBlock1.systemTime = kcg_lit_int64(0);
+  outC->_L3_then_IfBlock1.systemTime = kcg_lit_int32(0);
   outC->_L3_then_IfBlock1.DMI_Identifier = DMI_1_DMI_Types_Pkg;
   outC->_L3_then_IfBlock1.Cabin_Identifier = cabin_A_DMI_Types_Pkg;
-  outC->_L3_then_IfBlock1.l_name = kcg_lit_int64(0);
+  outC->_L3_then_IfBlock1.l_name = kcg_lit_int32(0);
   for (idx6 = 0; idx6 < 255; idx6++) {
     outC->_L3_then_IfBlock1.DMI_name[idx6] = ' ';
   }
   outC->_L3_then_IfBlock1.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L4_then_IfBlock1.valid = kcg_true;
-  outC->_L4_then_IfBlock1.systemTime = kcg_lit_int64(0);
+  outC->_L4_then_IfBlock1.systemTime = kcg_lit_int32(0);
   outC->_L4_then_IfBlock1.m_request = Start_of_mission_DMI_Types_Pkg;
   outC->_L5_then_IfBlock1.valid = kcg_true;
-  outC->_L5_then_IfBlock1.systemTime = kcg_lit_int64(0);
+  outC->_L5_then_IfBlock1.systemTime = kcg_lit_int32(0);
   for (idx7 = 0; idx7 < 9; idx7++) {
     outC->_L5_then_IfBlock1.driverIdentifier[idx7] = ' ';
   }
   outC->_L6_then_IfBlock1.valid = kcg_true;
-  outC->_L6_then_IfBlock1.systemTime = kcg_lit_int64(0);
-  outC->_L6_then_IfBlock1.trainRunningNumber = kcg_lit_int64(0);
+  outC->_L6_then_IfBlock1.systemTime = kcg_lit_int32(0);
+  outC->_L6_then_IfBlock1.trainRunningNumber = kcg_lit_int32(0);
   outC->_L7_then_IfBlock1.valid = kcg_true;
-  outC->_L7_then_IfBlock1.systemTime = kcg_lit_int64(0);
+  outC->_L7_then_IfBlock1.systemTime = kcg_lit_int32(0);
   outC->_L8_then_IfBlock1.valid = kcg_true;
-  outC->_L8_then_IfBlock1.systemTime = kcg_lit_int64(0);
-  outC->_L8_then_IfBlock1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L8_then_IfBlock1.systemTime = kcg_lit_int32(0);
+  outC->_L8_then_IfBlock1.textMessage_ID = kcg_lit_int32(0);
   outC->_L8_then_IfBlock1.acknowledged = kcg_true;
   outC->_L9_then_IfBlock1.valid = kcg_true;
-  outC->_L9_then_IfBlock1.systemTime = kcg_lit_int64(0);
+  outC->_L9_then_IfBlock1.systemTime = kcg_lit_int32(0);
   outC->_L9_then_IfBlock1.acknowledged = kcg_true;
   outC->_L10_then_IfBlock1.valid = kcg_true;
-  outC->_L10_then_IfBlock1.systemTime = kcg_lit_int64(0);
+  outC->_L10_then_IfBlock1.systemTime = kcg_lit_int32(0);
   outC->_L10_then_IfBlock1.trainCategory =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->_L10_then_IfBlock1.l_train = kcg_lit_int64(0);
-  outC->_L10_then_IfBlock1.m_brakeperct = kcg_lit_int64(0);
-  outC->_L10_then_IfBlock1.v_maxTrain = kcg_lit_int64(0);
+  outC->_L10_then_IfBlock1.l_train = kcg_lit_int32(0);
+  outC->_L10_then_IfBlock1.m_brakeperct = kcg_lit_int32(0);
+  outC->_L10_then_IfBlock1.v_maxTrain = kcg_lit_int32(0);
   outC->_L10_then_IfBlock1.m_axleLoad = M_AXLELOADCAT_A;
   outC->_L10_then_IfBlock1.m_airTight = M_AIRTIGHT_Not_fitted;
   outC->_L10_then_IfBlock1.m_loadingGauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   for (idx8 = 0; idx8 < 311; idx8++) {
-    outC->_L11_then_IfBlock1[idx8] = kcg_lit_int64(0);
+    outC->_L11_then_IfBlock1[idx8] = kcg_lit_int32(0);
   }
   outC->_L12_then_IfBlock1.DMI_Active = kcg_true;
   outC->_L12_then_IfBlock1.DMI_Error = kcg_true;
@@ -793,18 +793,18 @@ void manageDMI_Input_init_manage_DMI_Input_Pkg(
   outC->_L12_then_IfBlock1.DMI_TrainDataValidated = kcg_true;
   outC->_L12_then_IfBlock1.DMI_StartReceived = kcg_true;
   outC->_L12_then_IfBlock1.DMI_Identifier.valid = kcg_true;
-  outC->_L12_then_IfBlock1.DMI_Identifier.systemTime = kcg_lit_int64(0);
+  outC->_L12_then_IfBlock1.DMI_Identifier.systemTime = kcg_lit_int32(0);
   outC->_L12_then_IfBlock1.DMI_Identifier.DMI_Identifier = DMI_1_DMI_Types_Pkg;
   outC->_L12_then_IfBlock1.DMI_Identifier.Cabin_Identifier =
     cabin_A_DMI_Types_Pkg;
-  outC->_L12_then_IfBlock1.DMI_Identifier.l_name = kcg_lit_int64(0);
+  outC->_L12_then_IfBlock1.DMI_Identifier.l_name = kcg_lit_int32(0);
   for (idx9 = 0; idx9 < 255; idx9++) {
     outC->_L12_then_IfBlock1.DMI_Identifier.DMI_name[idx9] = ' ';
   }
   outC->_L12_then_IfBlock1.DMI_Identifier.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L19_then_IfBlock1.valid = kcg_true;
-  outC->_L19_then_IfBlock1.systemTime = kcg_lit_int64(0);
+  outC->_L19_then_IfBlock1.systemTime = kcg_lit_int32(0);
   outC->_L19_then_IfBlock1.adhesionFactor = M_ADHESION_Slippery_rail;
   outC->_L21_then_IfBlock1.DMI_Active = kcg_true;
   outC->_L21_then_IfBlock1.DMI_Error = kcg_true;
@@ -815,19 +815,19 @@ void manageDMI_Input_init_manage_DMI_Input_Pkg(
   outC->_L21_then_IfBlock1.DMI_TrainDataValidated = kcg_true;
   outC->_L21_then_IfBlock1.DMI_StartReceived = kcg_true;
   outC->_L21_then_IfBlock1.DMI_Identifier.valid = kcg_true;
-  outC->_L21_then_IfBlock1.DMI_Identifier.systemTime = kcg_lit_int64(0);
+  outC->_L21_then_IfBlock1.DMI_Identifier.systemTime = kcg_lit_int32(0);
   outC->_L21_then_IfBlock1.DMI_Identifier.DMI_Identifier = DMI_1_DMI_Types_Pkg;
   outC->_L21_then_IfBlock1.DMI_Identifier.Cabin_Identifier =
     cabin_A_DMI_Types_Pkg;
-  outC->_L21_then_IfBlock1.DMI_Identifier.l_name = kcg_lit_int64(0);
+  outC->_L21_then_IfBlock1.DMI_Identifier.l_name = kcg_lit_int32(0);
   for (idx10 = 0; idx10 < 255; idx10++) {
     outC->_L21_then_IfBlock1.DMI_Identifier.DMI_name[idx10] = ' ';
   }
   outC->_L21_then_IfBlock1.DMI_Identifier.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L30_then_IfBlock1.valid = kcg_true;
-  outC->_L30_then_IfBlock1.systemTime = kcg_lit_int64(0);
-  outC->_L30_then_IfBlock1.DMI_nid_icon_identifier = kcg_lit_int64(0);
+  outC->_L30_then_IfBlock1.systemTime = kcg_lit_int32(0);
+  outC->_L30_then_IfBlock1.DMI_nid_icon_identifier = kcg_lit_int32(0);
   outC->_L32_then_IfBlock1.valid = kcg_true;
   outC->_L32_then_IfBlock1.DriverAck.valid = kcg_true;
   outC->_L32_then_IfBlock1.DriverAck.whichMode = M_MODE_Full_Supervision;
@@ -842,144 +842,144 @@ void manageDMI_Input_init_manage_DMI_Input_Pkg(
   outC->_L32_then_IfBlock1.LevelAck = kcg_true;
   outC->_L33_then_IfBlock1 = kcg_true;
   outC->_L36_then_IfBlock1.valid = kcg_true;
-  outC->_L36_then_IfBlock1.systemTime = kcg_lit_int64(0);
+  outC->_L36_then_IfBlock1.systemTime = kcg_lit_int32(0);
   outC->_L36_then_IfBlock1.level.level = M_LEVEL_Level_0;
-  outC->_L36_then_IfBlock1.level.nid_stm = kcg_lit_int64(0);
+  outC->_L36_then_IfBlock1.level.nid_stm = kcg_lit_int32(0);
   outC->_L37_then_IfBlock1.is_set = kcg_true;
   outC->_L37_then_IfBlock1.transition.level = M_LEVEL_Level_0;
-  outC->_L37_then_IfBlock1.transition.position = kcg_lit_int64(0);
+  outC->_L37_then_IfBlock1.transition.position = kcg_lit_int32(0);
   outC->_L37_then_IfBlock1.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L37_then_IfBlock1.transition.immediateAck = kcg_true;
-  outC->_L37_then_IfBlock1.transition.AckLength = kcg_lit_int64(0);
-  outC->_L37_then_IfBlock1.LRBG = kcg_lit_int64(0);
-  outC->_L37_then_IfBlock1.referenceLocation = kcg_lit_int64(0);
+  outC->_L37_then_IfBlock1.transition.AckLength = kcg_lit_int32(0);
+  outC->_L37_then_IfBlock1.LRBG = kcg_lit_int32(0);
+  outC->_L37_then_IfBlock1.referenceLocation = kcg_lit_int32(0);
   for (idx11 = 0; idx11 < 31; idx11++) {
     outC->_L38_then_IfBlock1[idx11].valid = kcg_true;
-    outC->_L38_then_IfBlock1[idx11].dmi_textMessageID = kcg_lit_int64(0);
-    outC->_L38_then_IfBlock1[idx11].timeStamp = kcg_lit_int64(0);
+    outC->_L38_then_IfBlock1[idx11].dmi_textMessageID = kcg_lit_int32(0);
+    outC->_L38_then_IfBlock1[idx11].timeStamp = kcg_lit_int32(0);
     outC->_L38_then_IfBlock1[idx11].textReport =
       Q_TEXTREPORT_No_driver_acknowledgement_report_required;
     outC->_L38_then_IfBlock1[idx11].context = con_undefined_DMI_Types_Pkg;
-    outC->_L38_then_IfBlock1[idx11].nid_textmessage = kcg_lit_int64(0);
+    outC->_L38_then_IfBlock1[idx11].nid_textmessage = kcg_lit_int32(0);
     outC->_L38_then_IfBlock1[idx11].whichLevel = M_LEVEL_Level_0;
     outC->_L38_then_IfBlock1[idx11].whichMode = M_MODE_Full_Supervision;
   }
   outC->_L41_then_IfBlock1.valid = kcg_true;
-  outC->_L41_then_IfBlock1.systemTime = kcg_lit_int64(0);
+  outC->_L41_then_IfBlock1.systemTime = kcg_lit_int32(0);
   outC->_L41_then_IfBlock1.m_request = Start_of_mission_DMI_Types_Pkg;
   outC->_L42_then_IfBlock1.valid = kcg_true;
-  outC->_L42_then_IfBlock1.systemTime = kcg_lit_int64(0);
-  outC->_L42_then_IfBlock1.DMI_nid_icon_identifier = kcg_lit_int64(0);
+  outC->_L42_then_IfBlock1.systemTime = kcg_lit_int32(0);
+  outC->_L42_then_IfBlock1.DMI_nid_icon_identifier = kcg_lit_int32(0);
   outC->_L43_then_IfBlock1.valid = kcg_true;
-  outC->_L43_then_IfBlock1.systemTime = kcg_lit_int64(0);
-  outC->_L43_then_IfBlock1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L43_then_IfBlock1.systemTime = kcg_lit_int32(0);
+  outC->_L43_then_IfBlock1.textMessage_ID = kcg_lit_int32(0);
   outC->_L43_then_IfBlock1.acknowledged = kcg_true;
   for (idx12 = 0; idx12 < 31; idx12++) {
     outC->_L44_then_IfBlock1[idx12].valid = kcg_true;
-    outC->_L44_then_IfBlock1[idx12].dmi_textMessageID = kcg_lit_int64(0);
-    outC->_L44_then_IfBlock1[idx12].timeStamp = kcg_lit_int64(0);
+    outC->_L44_then_IfBlock1[idx12].dmi_textMessageID = kcg_lit_int32(0);
+    outC->_L44_then_IfBlock1[idx12].timeStamp = kcg_lit_int32(0);
     outC->_L44_then_IfBlock1[idx12].textReport =
       Q_TEXTREPORT_No_driver_acknowledgement_report_required;
     outC->_L44_then_IfBlock1[idx12].context = con_undefined_DMI_Types_Pkg;
-    outC->_L44_then_IfBlock1[idx12].nid_textmessage = kcg_lit_int64(0);
+    outC->_L44_then_IfBlock1[idx12].nid_textmessage = kcg_lit_int32(0);
     outC->_L44_then_IfBlock1[idx12].whichLevel = M_LEVEL_Level_0;
     outC->_L44_then_IfBlock1[idx12].whichMode = M_MODE_Full_Supervision;
   }
-  outC->_L45_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L45_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L47_then_IfBlock1 = kcg_true;
-  outC->_L50_then_IfBlock1 = kcg_lit_int64(0);
-  outC->_L51_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L50_then_IfBlock1 = kcg_lit_int32(0);
+  outC->_L51_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L52_then_IfBlock1.trackAheadFree = kcg_true;
   outC->_L52_then_IfBlock1.driverSelectsStart = kcg_true;
   outC->_L53_then_IfBlock1.valid = kcg_true;
-  outC->_L53_then_IfBlock1.systemTime = kcg_lit_int64(0);
+  outC->_L53_then_IfBlock1.systemTime = kcg_lit_int32(0);
   outC->_L53_then_IfBlock1.m_request = Start_of_mission_DMI_Types_Pkg;
   outC->_L54_then_IfBlock1.present = kcg_true;
   outC->_L54_then_IfBlock1.status.valid = kcg_true;
-  outC->_L54_then_IfBlock1.status.systemTime = kcg_lit_int64(0);
+  outC->_L54_then_IfBlock1.status.systemTime = kcg_lit_int32(0);
   outC->_L54_then_IfBlock1.status.statusSet = Running_state_DMI_Types_Pkg;
-  outC->_L54_then_IfBlock1.status.nAlive = kcg_lit_int64(0);
+  outC->_L54_then_IfBlock1.status.nAlive = kcg_lit_int32(0);
   outC->_L54_then_IfBlock1.identifier.valid = kcg_true;
-  outC->_L54_then_IfBlock1.identifier.systemTime = kcg_lit_int64(0);
+  outC->_L54_then_IfBlock1.identifier.systemTime = kcg_lit_int32(0);
   outC->_L54_then_IfBlock1.identifier.DMI_Identifier = DMI_1_DMI_Types_Pkg;
   outC->_L54_then_IfBlock1.identifier.Cabin_Identifier = cabin_A_DMI_Types_Pkg;
-  outC->_L54_then_IfBlock1.identifier.l_name = kcg_lit_int64(0);
+  outC->_L54_then_IfBlock1.identifier.l_name = kcg_lit_int32(0);
   for (idx13 = 0; idx13 < 255; idx13++) {
     outC->_L54_then_IfBlock1.identifier.DMI_name[idx13] = ' ';
   }
   outC->_L54_then_IfBlock1.identifier.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L54_then_IfBlock1.driverRequest.valid = kcg_true;
-  outC->_L54_then_IfBlock1.driverRequest.systemTime = kcg_lit_int64(0);
+  outC->_L54_then_IfBlock1.driverRequest.systemTime = kcg_lit_int32(0);
   outC->_L54_then_IfBlock1.driverRequest.m_request =
     Start_of_mission_DMI_Types_Pkg;
   outC->_L54_then_IfBlock1.driverIdentifier.valid = kcg_true;
-  outC->_L54_then_IfBlock1.driverIdentifier.systemTime = kcg_lit_int64(0);
+  outC->_L54_then_IfBlock1.driverIdentifier.systemTime = kcg_lit_int32(0);
   for (idx14 = 0; idx14 < 9; idx14++) {
     outC->_L54_then_IfBlock1.driverIdentifier.driverIdentifier[idx14] = ' ';
   }
   outC->_L54_then_IfBlock1.trainRunningNumber.valid = kcg_true;
-  outC->_L54_then_IfBlock1.trainRunningNumber.systemTime = kcg_lit_int64(0);
+  outC->_L54_then_IfBlock1.trainRunningNumber.systemTime = kcg_lit_int32(0);
   outC->_L54_then_IfBlock1.trainRunningNumber.trainRunningNumber =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_then_IfBlock1.radioNetData.valid = kcg_true;
-  outC->_L54_then_IfBlock1.radioNetData.systemTime = kcg_lit_int64(0);
+  outC->_L54_then_IfBlock1.radioNetData.systemTime = kcg_lit_int32(0);
   outC->_L54_then_IfBlock1.textMessageAck.valid = kcg_true;
-  outC->_L54_then_IfBlock1.textMessageAck.systemTime = kcg_lit_int64(0);
-  outC->_L54_then_IfBlock1.textMessageAck.textMessage_ID = kcg_lit_int64(0);
+  outC->_L54_then_IfBlock1.textMessageAck.systemTime = kcg_lit_int32(0);
+  outC->_L54_then_IfBlock1.textMessageAck.textMessage_ID = kcg_lit_int32(0);
   outC->_L54_then_IfBlock1.textMessageAck.acknowledged = kcg_true;
   outC->_L54_then_IfBlock1.trainDataAck.valid = kcg_true;
-  outC->_L54_then_IfBlock1.trainDataAck.systemTime = kcg_lit_int64(0);
+  outC->_L54_then_IfBlock1.trainDataAck.systemTime = kcg_lit_int32(0);
   outC->_L54_then_IfBlock1.trainDataAck.acknowledged = kcg_true;
   outC->_L54_then_IfBlock1.trainData.valid = kcg_true;
-  outC->_L54_then_IfBlock1.trainData.systemTime = kcg_lit_int64(0);
+  outC->_L54_then_IfBlock1.trainData.systemTime = kcg_lit_int32(0);
   outC->_L54_then_IfBlock1.trainData.trainCategory =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->_L54_then_IfBlock1.trainData.l_train = kcg_lit_int64(0);
-  outC->_L54_then_IfBlock1.trainData.m_brakeperct = kcg_lit_int64(0);
-  outC->_L54_then_IfBlock1.trainData.v_maxTrain = kcg_lit_int64(0);
+  outC->_L54_then_IfBlock1.trainData.l_train = kcg_lit_int32(0);
+  outC->_L54_then_IfBlock1.trainData.m_brakeperct = kcg_lit_int32(0);
+  outC->_L54_then_IfBlock1.trainData.v_maxTrain = kcg_lit_int32(0);
   outC->_L54_then_IfBlock1.trainData.m_axleLoad = M_AXLELOADCAT_A;
   outC->_L54_then_IfBlock1.trainData.m_airTight = M_AIRTIGHT_Not_fitted;
   outC->_L54_then_IfBlock1.trainData.m_loadingGauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L54_then_IfBlock1.adhesionFactor.valid = kcg_true;
-  outC->_L54_then_IfBlock1.adhesionFactor.systemTime = kcg_lit_int64(0);
+  outC->_L54_then_IfBlock1.adhesionFactor.systemTime = kcg_lit_int32(0);
   outC->_L54_then_IfBlock1.adhesionFactor.adhesionFactor =
     M_ADHESION_Slippery_rail;
   outC->_L54_then_IfBlock1.iconAck.valid = kcg_true;
-  outC->_L54_then_IfBlock1.iconAck.systemTime = kcg_lit_int64(0);
-  outC->_L54_then_IfBlock1.iconAck.DMI_nid_icon_identifier = kcg_lit_int64(0);
+  outC->_L54_then_IfBlock1.iconAck.systemTime = kcg_lit_int32(0);
+  outC->_L54_then_IfBlock1.iconAck.DMI_nid_icon_identifier = kcg_lit_int32(0);
   outC->_L54_then_IfBlock1.selectedLevel.valid = kcg_true;
-  outC->_L54_then_IfBlock1.selectedLevel.systemTime = kcg_lit_int64(0);
+  outC->_L54_then_IfBlock1.selectedLevel.systemTime = kcg_lit_int32(0);
   outC->_L54_then_IfBlock1.selectedLevel.level.level = M_LEVEL_Level_0;
-  outC->_L54_then_IfBlock1.selectedLevel.level.nid_stm = kcg_lit_int64(0);
+  outC->_L54_then_IfBlock1.selectedLevel.level.nid_stm = kcg_lit_int32(0);
   outC->outForMA.trackAheadFree = kcg_true;
   outC->outForMA.driverSelectsStart = kcg_true;
-  outC->updatedNTC = kcg_lit_int64(0);
+  outC->updatedNTC = kcg_lit_int32(0);
   outC->outDriverRequest.valid = kcg_true;
-  outC->outDriverRequest.systemTime = kcg_lit_int64(0);
+  outC->outDriverRequest.systemTime = kcg_lit_int32(0);
   outC->outDriverRequest.m_request = Start_of_mission_DMI_Types_Pkg;
   for (idx15 = 0; idx15 < 31; idx15++) {
     outC->outStatusList[idx15].valid = kcg_true;
-    outC->outStatusList[idx15].dmi_textMessageID = kcg_lit_int64(0);
-    outC->outStatusList[idx15].timeStamp = kcg_lit_int64(0);
+    outC->outStatusList[idx15].dmi_textMessageID = kcg_lit_int32(0);
+    outC->outStatusList[idx15].timeStamp = kcg_lit_int32(0);
     outC->outStatusList[idx15].textReport =
       Q_TEXTREPORT_No_driver_acknowledgement_report_required;
     outC->outStatusList[idx15].context = con_undefined_DMI_Types_Pkg;
-    outC->outStatusList[idx15].nid_textmessage = kcg_lit_int64(0);
+    outC->outStatusList[idx15].nid_textmessage = kcg_lit_int32(0);
     outC->outStatusList[idx15].whichLevel = M_LEVEL_Level_0;
     outC->outStatusList[idx15].whichMode = M_MODE_Full_Supervision;
   }
   outC->ML_levelTransition.is_set = kcg_true;
   outC->ML_levelTransition.transition.level = M_LEVEL_Level_0;
-  outC->ML_levelTransition.transition.position = kcg_lit_int64(0);
+  outC->ML_levelTransition.transition.position = kcg_lit_int32(0);
   outC->ML_levelTransition.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->ML_levelTransition.transition.immediateAck = kcg_true;
-  outC->ML_levelTransition.transition.AckLength = kcg_lit_int64(0);
-  outC->ML_levelTransition.LRBG = kcg_lit_int64(0);
-  outC->ML_levelTransition.referenceLocation = kcg_lit_int64(0);
+  outC->ML_levelTransition.transition.AckLength = kcg_lit_int32(0);
+  outC->ML_levelTransition.LRBG = kcg_lit_int32(0);
+  outC->ML_levelTransition.referenceLocation = kcg_lit_int32(0);
   outC->forModesAndLevel.valid = kcg_true;
   outC->forModesAndLevel.DriverAck.valid = kcg_true;
   outC->forModesAndLevel.DriverAck.whichMode = M_MODE_Full_Supervision;
@@ -993,41 +993,41 @@ void manageDMI_Input_init_manage_DMI_Input_Pkg(
   outC->forModesAndLevel.DriverRequest.ETCS_Isolated = kcg_true;
   outC->forModesAndLevel.LevelAck = kcg_true;
   outC->fromDMI_AdhesionFactor.valid = kcg_true;
-  outC->fromDMI_AdhesionFactor.systemTime = kcg_lit_int64(0);
+  outC->fromDMI_AdhesionFactor.systemTime = kcg_lit_int32(0);
   outC->fromDMI_AdhesionFactor.adhesionFactor = M_ADHESION_Slippery_rail;
   outC->fromDMI_TrainDataAck.valid = kcg_true;
-  outC->fromDMI_TrainDataAck.systemTime = kcg_lit_int64(0);
+  outC->fromDMI_TrainDataAck.systemTime = kcg_lit_int32(0);
   outC->fromDMI_TrainDataAck.acknowledged = kcg_true;
   outC->fromDMI_TrainData.valid = kcg_true;
-  outC->fromDMI_TrainData.systemTime = kcg_lit_int64(0);
+  outC->fromDMI_TrainData.systemTime = kcg_lit_int32(0);
   outC->fromDMI_TrainData.trainCategory =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->fromDMI_TrainData.l_train = kcg_lit_int64(0);
-  outC->fromDMI_TrainData.m_brakeperct = kcg_lit_int64(0);
-  outC->fromDMI_TrainData.v_maxTrain = kcg_lit_int64(0);
+  outC->fromDMI_TrainData.l_train = kcg_lit_int32(0);
+  outC->fromDMI_TrainData.m_brakeperct = kcg_lit_int32(0);
+  outC->fromDMI_TrainData.v_maxTrain = kcg_lit_int32(0);
   outC->fromDMI_TrainData.m_axleLoad = M_AXLELOADCAT_A;
   outC->fromDMI_TrainData.m_airTight = M_AIRTIGHT_Not_fitted;
   outC->fromDMI_TrainData.m_loadingGauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->fromDMI_Icon_Ack.valid = kcg_true;
-  outC->fromDMI_Icon_Ack.systemTime = kcg_lit_int64(0);
-  outC->fromDMI_Icon_Ack.DMI_nid_icon_identifier = kcg_lit_int64(0);
+  outC->fromDMI_Icon_Ack.systemTime = kcg_lit_int32(0);
+  outC->fromDMI_Icon_Ack.DMI_nid_icon_identifier = kcg_lit_int32(0);
   outC->fromDMI_RadioNetData.valid = kcg_true;
-  outC->fromDMI_RadioNetData.systemTime = kcg_lit_int64(0);
+  outC->fromDMI_RadioNetData.systemTime = kcg_lit_int32(0);
   outC->fromDMI_TrainRunningNumber.valid = kcg_true;
-  outC->fromDMI_TrainRunningNumber.systemTime = kcg_lit_int64(0);
-  outC->fromDMI_TrainRunningNumber.trainRunningNumber = kcg_lit_int64(0);
+  outC->fromDMI_TrainRunningNumber.systemTime = kcg_lit_int32(0);
+  outC->fromDMI_TrainRunningNumber.trainRunningNumber = kcg_lit_int32(0);
   outC->fromDMI_DriverIdentifier.valid = kcg_true;
-  outC->fromDMI_DriverIdentifier.systemTime = kcg_lit_int64(0);
+  outC->fromDMI_DriverIdentifier.systemTime = kcg_lit_int32(0);
   for (idx16 = 0; idx16 < 9; idx16++) {
     outC->fromDMI_DriverIdentifier.driverIdentifier[idx16] = ' ';
   }
   outC->outUpdateLevelsDMI = kcg_true;
   outC->fromDMI_Identifier.valid = kcg_true;
-  outC->fromDMI_Identifier.systemTime = kcg_lit_int64(0);
+  outC->fromDMI_Identifier.systemTime = kcg_lit_int32(0);
   outC->fromDMI_Identifier.DMI_Identifier = DMI_1_DMI_Types_Pkg;
   outC->fromDMI_Identifier.Cabin_Identifier = cabin_A_DMI_Types_Pkg;
-  outC->fromDMI_Identifier.l_name = kcg_lit_int64(0);
+  outC->fromDMI_Identifier.l_name = kcg_lit_int32(0);
   for (idx17 = 0; idx17 < 255; idx17++) {
     outC->fromDMI_Identifier.DMI_name[idx17] = ' ';
   }
@@ -1042,10 +1042,10 @@ void manageDMI_Input_init_manage_DMI_Input_Pkg(
   outC->currentDMIStatus.DMI_TrainDataValidated = kcg_true;
   outC->currentDMIStatus.DMI_StartReceived = kcg_true;
   outC->currentDMIStatus.DMI_Identifier.valid = kcg_true;
-  outC->currentDMIStatus.DMI_Identifier.systemTime = kcg_lit_int64(0);
+  outC->currentDMIStatus.DMI_Identifier.systemTime = kcg_lit_int32(0);
   outC->currentDMIStatus.DMI_Identifier.DMI_Identifier = DMI_1_DMI_Types_Pkg;
   outC->currentDMIStatus.DMI_Identifier.Cabin_Identifier = cabin_A_DMI_Types_Pkg;
-  outC->currentDMIStatus.DMI_Identifier.l_name = kcg_lit_int64(0);
+  outC->currentDMIStatus.DMI_Identifier.l_name = kcg_lit_int32(0);
   for (idx18 = 0; idx18 < 255; idx18++) {
     outC->currentDMIStatus.DMI_Identifier.DMI_name[idx18] = ' ';
   }
@@ -1117,6 +1117,6 @@ void kcg_load_SV_manageDMI_Input_manage_DMI_Input_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** manageDMI_Input_manage_DMI_Input_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

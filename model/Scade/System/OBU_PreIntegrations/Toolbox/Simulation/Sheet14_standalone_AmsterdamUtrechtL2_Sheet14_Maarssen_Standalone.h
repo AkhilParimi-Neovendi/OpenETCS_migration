@@ -70,10 +70,10 @@ typedef struct {
   M_TrackTrain_Radio_T_TM_radio_messages /* _L17/ */ _L17;
   CompressedPackets_T_Common_Types_Pkg /* _L18/ */ _L18;
   kcg_bool /* _L19/ */ _L19;
-  kcg_int64 /* _L20/ */ _L20;
+  kcg_int32 /* _L20/ */ _L20;
   TrackSectionData_T_InfraLib /* _L23/ */ _L23;
   R_data_internal_T_InfraLib /* _L24/ */ _L24;
-  kcg_float64 /* _L25/ */ _L25;
+  kcg_float32 /* _L25/ */ _L25;
   TrackSectionData_T_InfraLib /* _L26/ */ _L26;
   R_data_internal_T_InfraLib /* _L27/ */ _L27;
   TrackSectionData_T_InfraLib /* _L28/ */ _L28;
@@ -83,9 +83,9 @@ typedef struct {
 /* AmsterdamUtrechtL2::Sheet14_Maarssen_Standalone::Sheet14_standalone/ */
 extern void Sheet14_standalone_AmsterdamUtrechtL2_Sheet14_Maarssen_Standalone(
   /* TrainPos_in/ */
-  kcg_float64 TrainPos_in,
+  kcg_float32 TrainPos_in,
   /* Trigger_in/ */
-  kcg_int64 Trigger_in,
+  kcg_int32 Trigger_in,
   outC_Sheet14_standalone_AmsterdamUtrechtL2_Sheet14_Maarssen_Standalone *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

@@ -24,19 +24,19 @@ void PosRepParams__CountIncrem_init_RBC_Config_Pkg(
 {
   kcg_size idx;
 
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
   outC->_L1.q_dir = Q_DIR_Reverse;
   outC->_L1.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L1.t_cycloc = kcg_lit_int64(0);
-  outC->_L1.d_cycloc = kcg_lit_int64(0);
+  outC->_L1.t_cycloc = kcg_lit_int32(0);
+  outC->_L1.d_cycloc = kcg_lit_int32(0);
   outC->_L1.m_loc = M_LOC_Now;
-  outC->_L1.m_NumberOfIncrementalDistancesAndQualifiers = kcg_lit_int64(0);
+  outC->_L1.m_NumberOfIncrementalDistancesAndQualifiers = kcg_lit_int32(0);
   for (idx = 0; idx < 32; idx++) {
-    outC->_L1.m_IncrementalDistancesAndQualifiers[idx].d_loc = kcg_lit_int64(0);
+    outC->_L1.m_IncrementalDistancesAndQualifiers[idx].d_loc = kcg_lit_int32(0);
     outC->_L1.m_IncrementalDistancesAndQualifiers[idx].q_lgtloc =
       Q_LGTLOC_Min_safe_rear_end;
   }
-  outC->outNumberOfIncrementalDistancesAndQualifiers = kcg_lit_int64(0);
+  outC->outNumberOfIncrementalDistancesAndQualifiers = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

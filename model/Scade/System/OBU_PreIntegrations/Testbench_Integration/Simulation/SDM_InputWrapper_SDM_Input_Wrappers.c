@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -37,7 +37,7 @@ void SDM_InputWrapper_SDM_Input_Wrappers(
   }
   kcg_copy_trainProperties_T_TrainPosition_Types_Pck(&outC->_L280, trainProps);
   outC->_L279 = outC->_L280.d_baliseAntenna_2_frontend.nominal;
-  outC->_L281 = kcg_lit_int64(0);
+  outC->_L281 = kcg_lit_int32(0);
   kcg_copy_DataForSupervision_nextGen_t_TrackAtlasTypes(
     &outC->_L284,
     dataFromTrackAtlas);
@@ -90,7 +90,7 @@ void SDM_InputWrapper_SDM_Input_Wrappers(
     }
     kcg_copy_MA_section_real_T_TargetManagement_types(&outC->_L255, &tmp);
   }
-  outC->_L249 = kcg_lit_int64(2);
+  outC->_L249 = kcg_lit_int32(2);
   kcg_copy_trainPosition_T_TrainPosition_Types_Pck(&outC->_L237, TrainPosition);
   kcg_copy_positionedBG_T_TrainPosition_Types_Pck(
     &outC->_L238,
@@ -186,211 +186,211 @@ void SDM_InputWrapper_init_SDM_Input_Wrappers(
   static kcg_size idx19;
 
   outC->_L289.valid = kcg_true;
-  outC->_L289.v_main = kcg_lit_float64(0.0);
-  outC->_L289.EOA.Location = kcg_lit_float64(0.0);
-  outC->_L289.EOA.TargetSpeed = kcg_lit_float64(0.0);
+  outC->_L289.v_main = kcg_lit_float32(0.0);
+  outC->_L289.EOA.Location = kcg_lit_float32(0.0);
+  outC->_L289.EOA.TargetSpeed = kcg_lit_float32(0.0);
   outC->_L289.DP_valid = kcg_true;
-  outC->_L289.DangerPoint = kcg_lit_float64(0.0);
+  outC->_L289.DangerPoint = kcg_lit_float32(0.0);
   outC->_L289.OL_valid = kcg_true;
-  outC->_L289.Overlap = kcg_lit_float64(0.0);
+  outC->_L289.Overlap = kcg_lit_float32(0.0);
   outC->_L289.q_calculate_release = kcg_true;
-  outC->_L289.ReleaseSpeed = kcg_lit_float64(0.0);
+  outC->_L289.ReleaseSpeed = kcg_lit_float32(0.0);
   outC->_L289.level = MA_L1_TrackAtlasTypes;
   outC->_L284.freshMA = kcg_true;
   outC->_L284.MA.valid = kcg_true;
   outC->_L284.MA.Level = MA_L1_TrackAtlasTypes;
   outC->_L284.MA.q_dir = Q_DIR_Reverse;
-  outC->_L284.MA.v_main = kcg_lit_int64(0);
-  outC->_L284.MA.v_loa = kcg_lit_int64(0);
+  outC->_L284.MA.v_main = kcg_lit_int32(0);
+  outC->_L284.MA.v_loa = kcg_lit_int32(0);
   outC->_L284.MA.t_loa_unlimited = kcg_true;
-  outC->_L284.MA.t_loa = kcg_lit_int64(0);
-  outC->_L284.MA.n_iter = kcg_lit_int64(0);
+  outC->_L284.MA.t_loa = kcg_lit_int32(0);
+  outC->_L284.MA.n_iter = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 10; idx2++) {
     outC->_L284.MA.sections[idx2].valid = kcg_true;
     outC->_L284.MA.sections[idx2].q_endsection = kcg_true;
-    outC->_L284.MA.sections[idx2].l_section = kcg_lit_int64(0);
+    outC->_L284.MA.sections[idx2].l_section = kcg_lit_int32(0);
     outC->_L284.MA.sections[idx2].q_sectiontimer = kcg_true;
-    outC->_L284.MA.sections[idx2].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L284.MA.sections[idx2].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L284.MA.sections[idx2].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L284.MA.sections[idx2].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
   outC->_L284.MA.q_dangerpoint = kcg_true;
-  outC->_L284.MA.dangerpoint.d_DP_or_OL = kcg_lit_int64(0);
-  outC->_L284.MA.dangerpoint.v_release = kcg_lit_int64(0);
+  outC->_L284.MA.dangerpoint.d_DP_or_OL = kcg_lit_int32(0);
+  outC->_L284.MA.dangerpoint.v_release = kcg_lit_int32(0);
   outC->_L284.MA.dangerpoint.calc_v_release_onboard = kcg_true;
   outC->_L284.MA.q_overlap = kcg_true;
-  outC->_L284.MA.overlap.d_DP_or_OL = kcg_lit_int64(0);
-  outC->_L284.MA.overlap.v_release = kcg_lit_int64(0);
+  outC->_L284.MA.overlap.d_DP_or_OL = kcg_lit_int32(0);
+  outC->_L284.MA.overlap.v_release = kcg_lit_int32(0);
   outC->_L284.MA.overlap.calc_v_release_onboard = kcg_true;
   outC->_L284.MA.q_endtimer = kcg_true;
-  outC->_L284.MA.endtimer_t.t_endtimer = kcg_lit_int64(0);
-  outC->_L284.MA.endtimer_t.d_endtimerstoploc = kcg_lit_int64(0);
+  outC->_L284.MA.endtimer_t.t_endtimer = kcg_lit_int32(0);
+  outC->_L284.MA.endtimer_t.d_endtimerstoploc = kcg_lit_int32(0);
   outC->_L284.freshGradientProfile = kcg_true;
   for (idx3 = 0; idx3 < 50; idx3++) {
     outC->_L284.GradientProfile[idx3].valid = kcg_true;
-    outC->_L284.GradientProfile[idx3].Loc_Absolute = kcg_lit_int64(0);
-    outC->_L284.GradientProfile[idx3].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L284.GradientProfile[idx3].Gradient = kcg_lit_int64(0);
-    outC->_L284.GradientProfile[idx3].L_Gradient = kcg_lit_int64(0);
+    outC->_L284.GradientProfile[idx3].Loc_Absolute = kcg_lit_int32(0);
+    outC->_L284.GradientProfile[idx3].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L284.GradientProfile[idx3].Gradient = kcg_lit_int32(0);
+    outC->_L284.GradientProfile[idx3].L_Gradient = kcg_lit_int32(0);
   }
   outC->_L284.freshMRSP = kcg_true;
   for (idx4 = 0; idx4 < 110; idx4++) {
     outC->_L284.MRSP[idx4].valid = kcg_true;
-    outC->_L284.MRSP[idx4].Loc_Abs = kcg_lit_int64(0);
-    outC->_L284.MRSP[idx4].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L284.MRSP[idx4].MRS = kcg_lit_int64(0);
+    outC->_L284.MRSP[idx4].Loc_Abs = kcg_lit_int32(0);
+    outC->_L284.MRSP[idx4].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L284.MRSP[idx4].MRS = kcg_lit_int32(0);
   }
   outC->_L282 = MA_L1_TrackAtlasTypes;
-  outC->_L281 = kcg_lit_int64(0);
-  outC->_L279 = kcg_lit_int64(0);
-  outC->_L280.nid_engine = kcg_lit_int64(0);
-  outC->_L280.nid_operational = kcg_lit_int64(0);
-  outC->_L280.l_train = kcg_lit_int64(0);
-  outC->_L280.d_baliseAntenna_2_frontend.nominal = kcg_lit_int64(0);
-  outC->_L280.d_baliseAntenna_2_frontend.d_min = kcg_lit_int64(0);
-  outC->_L280.d_baliseAntenna_2_frontend.d_max = kcg_lit_int64(0);
-  outC->_L280.d_frontend_2_rearend.nominal = kcg_lit_int64(0);
-  outC->_L280.d_frontend_2_rearend.d_min = kcg_lit_int64(0);
-  outC->_L280.d_frontend_2_rearend.d_max = kcg_lit_int64(0);
-  outC->_L280.locationAccuracy_DefaultValue.nominal = kcg_lit_int64(0);
-  outC->_L280.locationAccuracy_DefaultValue.d_min = kcg_lit_int64(0);
-  outC->_L280.locationAccuracy_DefaultValue.d_max = kcg_lit_int64(0);
-  outC->_L280.centerDetectionAcc_DefaultValue.nominal = kcg_lit_int64(0);
-  outC->_L280.centerDetectionAcc_DefaultValue.d_min = kcg_lit_int64(0);
-  outC->_L280.centerDetectionAcc_DefaultValue.d_max = kcg_lit_int64(0);
-  outC->_L271 = kcg_lit_int64(0);
+  outC->_L281 = kcg_lit_int32(0);
+  outC->_L279 = kcg_lit_int32(0);
+  outC->_L280.nid_engine = kcg_lit_int32(0);
+  outC->_L280.nid_operational = kcg_lit_int32(0);
+  outC->_L280.l_train = kcg_lit_int32(0);
+  outC->_L280.d_baliseAntenna_2_frontend.nominal = kcg_lit_int32(0);
+  outC->_L280.d_baliseAntenna_2_frontend.d_min = kcg_lit_int32(0);
+  outC->_L280.d_baliseAntenna_2_frontend.d_max = kcg_lit_int32(0);
+  outC->_L280.d_frontend_2_rearend.nominal = kcg_lit_int32(0);
+  outC->_L280.d_frontend_2_rearend.d_min = kcg_lit_int32(0);
+  outC->_L280.d_frontend_2_rearend.d_max = kcg_lit_int32(0);
+  outC->_L280.locationAccuracy_DefaultValue.nominal = kcg_lit_int32(0);
+  outC->_L280.locationAccuracy_DefaultValue.d_min = kcg_lit_int32(0);
+  outC->_L280.locationAccuracy_DefaultValue.d_max = kcg_lit_int32(0);
+  outC->_L280.centerDetectionAcc_DefaultValue.nominal = kcg_lit_int32(0);
+  outC->_L280.centerDetectionAcc_DefaultValue.d_min = kcg_lit_int32(0);
+  outC->_L280.centerDetectionAcc_DefaultValue.d_max = kcg_lit_int32(0);
+  outC->_L271 = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 50; idx5++) {
-    outC->_L269[idx5].location = kcg_lit_float64(0.0);
-    outC->_L269[idx5].gradient = kcg_lit_float64(0.0);
+    outC->_L269[idx5].location = kcg_lit_float32(0.0);
+    outC->_L269[idx5].gradient = kcg_lit_float32(0.0);
     outC->_L269[idx5].valid = kcg_true;
   }
   outC->_L268.freshMA = kcg_true;
   outC->_L268.MA.valid = kcg_true;
   outC->_L268.MA.Level = MA_L1_TrackAtlasTypes;
   outC->_L268.MA.q_dir = Q_DIR_Reverse;
-  outC->_L268.MA.v_main = kcg_lit_int64(0);
-  outC->_L268.MA.v_loa = kcg_lit_int64(0);
+  outC->_L268.MA.v_main = kcg_lit_int32(0);
+  outC->_L268.MA.v_loa = kcg_lit_int32(0);
   outC->_L268.MA.t_loa_unlimited = kcg_true;
-  outC->_L268.MA.t_loa = kcg_lit_int64(0);
-  outC->_L268.MA.n_iter = kcg_lit_int64(0);
+  outC->_L268.MA.t_loa = kcg_lit_int32(0);
+  outC->_L268.MA.n_iter = kcg_lit_int32(0);
   for (idx6 = 0; idx6 < 10; idx6++) {
     outC->_L268.MA.sections[idx6].valid = kcg_true;
     outC->_L268.MA.sections[idx6].q_endsection = kcg_true;
-    outC->_L268.MA.sections[idx6].l_section = kcg_lit_int64(0);
+    outC->_L268.MA.sections[idx6].l_section = kcg_lit_int32(0);
     outC->_L268.MA.sections[idx6].q_sectiontimer = kcg_true;
-    outC->_L268.MA.sections[idx6].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L268.MA.sections[idx6].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L268.MA.sections[idx6].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L268.MA.sections[idx6].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
   outC->_L268.MA.q_dangerpoint = kcg_true;
-  outC->_L268.MA.dangerpoint.d_DP_or_OL = kcg_lit_int64(0);
-  outC->_L268.MA.dangerpoint.v_release = kcg_lit_int64(0);
+  outC->_L268.MA.dangerpoint.d_DP_or_OL = kcg_lit_int32(0);
+  outC->_L268.MA.dangerpoint.v_release = kcg_lit_int32(0);
   outC->_L268.MA.dangerpoint.calc_v_release_onboard = kcg_true;
   outC->_L268.MA.q_overlap = kcg_true;
-  outC->_L268.MA.overlap.d_DP_or_OL = kcg_lit_int64(0);
-  outC->_L268.MA.overlap.v_release = kcg_lit_int64(0);
+  outC->_L268.MA.overlap.d_DP_or_OL = kcg_lit_int32(0);
+  outC->_L268.MA.overlap.v_release = kcg_lit_int32(0);
   outC->_L268.MA.overlap.calc_v_release_onboard = kcg_true;
   outC->_L268.MA.q_endtimer = kcg_true;
-  outC->_L268.MA.endtimer_t.t_endtimer = kcg_lit_int64(0);
-  outC->_L268.MA.endtimer_t.d_endtimerstoploc = kcg_lit_int64(0);
+  outC->_L268.MA.endtimer_t.t_endtimer = kcg_lit_int32(0);
+  outC->_L268.MA.endtimer_t.d_endtimerstoploc = kcg_lit_int32(0);
   outC->_L268.freshGradientProfile = kcg_true;
   for (idx7 = 0; idx7 < 50; idx7++) {
     outC->_L268.GradientProfile[idx7].valid = kcg_true;
-    outC->_L268.GradientProfile[idx7].Loc_Absolute = kcg_lit_int64(0);
-    outC->_L268.GradientProfile[idx7].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L268.GradientProfile[idx7].Gradient = kcg_lit_int64(0);
-    outC->_L268.GradientProfile[idx7].L_Gradient = kcg_lit_int64(0);
+    outC->_L268.GradientProfile[idx7].Loc_Absolute = kcg_lit_int32(0);
+    outC->_L268.GradientProfile[idx7].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L268.GradientProfile[idx7].Gradient = kcg_lit_int32(0);
+    outC->_L268.GradientProfile[idx7].L_Gradient = kcg_lit_int32(0);
   }
   outC->_L268.freshMRSP = kcg_true;
   for (idx8 = 0; idx8 < 110; idx8++) {
     outC->_L268.MRSP[idx8].valid = kcg_true;
-    outC->_L268.MRSP[idx8].Loc_Abs = kcg_lit_int64(0);
-    outC->_L268.MRSP[idx8].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L268.MRSP[idx8].MRS = kcg_lit_int64(0);
+    outC->_L268.MRSP[idx8].Loc_Abs = kcg_lit_int32(0);
+    outC->_L268.MRSP[idx8].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L268.MRSP[idx8].MRS = kcg_lit_int32(0);
   }
   for (idx9 = 0; idx9 < 110; idx9++) {
     outC->_L267[idx9].valid = kcg_true;
-    outC->_L267[idx9].Loc_Abs = kcg_lit_int64(0);
-    outC->_L267[idx9].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L267[idx9].MRS = kcg_lit_int64(0);
+    outC->_L267[idx9].Loc_Abs = kcg_lit_int32(0);
+    outC->_L267[idx9].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L267[idx9].MRS = kcg_lit_int32(0);
   }
   outC->_L266 = kcg_true;
   for (idx10 = 0; idx10 < 50; idx10++) {
     outC->_L265[idx10].valid = kcg_true;
-    outC->_L265[idx10].Loc_Absolute = kcg_lit_int64(0);
-    outC->_L265[idx10].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L265[idx10].Gradient = kcg_lit_int64(0);
-    outC->_L265[idx10].L_Gradient = kcg_lit_int64(0);
+    outC->_L265[idx10].Loc_Absolute = kcg_lit_int32(0);
+    outC->_L265[idx10].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L265[idx10].Gradient = kcg_lit_int32(0);
+    outC->_L265[idx10].L_Gradient = kcg_lit_int32(0);
   }
   outC->_L264 = kcg_true;
   outC->_L263.valid = kcg_true;
   outC->_L263.Level = MA_L1_TrackAtlasTypes;
   outC->_L263.q_dir = Q_DIR_Reverse;
-  outC->_L263.v_main = kcg_lit_int64(0);
-  outC->_L263.v_loa = kcg_lit_int64(0);
+  outC->_L263.v_main = kcg_lit_int32(0);
+  outC->_L263.v_loa = kcg_lit_int32(0);
   outC->_L263.t_loa_unlimited = kcg_true;
-  outC->_L263.t_loa = kcg_lit_int64(0);
-  outC->_L263.n_iter = kcg_lit_int64(0);
+  outC->_L263.t_loa = kcg_lit_int32(0);
+  outC->_L263.n_iter = kcg_lit_int32(0);
   for (idx11 = 0; idx11 < 10; idx11++) {
     outC->_L263.sections[idx11].valid = kcg_true;
     outC->_L263.sections[idx11].q_endsection = kcg_true;
-    outC->_L263.sections[idx11].l_section = kcg_lit_int64(0);
+    outC->_L263.sections[idx11].l_section = kcg_lit_int32(0);
     outC->_L263.sections[idx11].q_sectiontimer = kcg_true;
-    outC->_L263.sections[idx11].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L263.sections[idx11].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L263.sections[idx11].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L263.sections[idx11].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
   outC->_L263.q_dangerpoint = kcg_true;
-  outC->_L263.dangerpoint.d_DP_or_OL = kcg_lit_int64(0);
-  outC->_L263.dangerpoint.v_release = kcg_lit_int64(0);
+  outC->_L263.dangerpoint.d_DP_or_OL = kcg_lit_int32(0);
+  outC->_L263.dangerpoint.v_release = kcg_lit_int32(0);
   outC->_L263.dangerpoint.calc_v_release_onboard = kcg_true;
   outC->_L263.q_overlap = kcg_true;
-  outC->_L263.overlap.d_DP_or_OL = kcg_lit_int64(0);
-  outC->_L263.overlap.v_release = kcg_lit_int64(0);
+  outC->_L263.overlap.d_DP_or_OL = kcg_lit_int32(0);
+  outC->_L263.overlap.v_release = kcg_lit_int32(0);
   outC->_L263.overlap.calc_v_release_onboard = kcg_true;
   outC->_L263.q_endtimer = kcg_true;
-  outC->_L263.endtimer_t.t_endtimer = kcg_lit_int64(0);
-  outC->_L263.endtimer_t.d_endtimerstoploc = kcg_lit_int64(0);
+  outC->_L263.endtimer_t.t_endtimer = kcg_lit_int32(0);
+  outC->_L263.endtimer_t.d_endtimerstoploc = kcg_lit_int32(0);
   outC->_L262 = kcg_true;
-  outC->_L250 = kcg_lit_float64(0.0);
-  outC->_L249 = kcg_lit_int64(0);
-  outC->_L248 = kcg_lit_int64(0);
-  outC->_L247 = kcg_lit_int64(0);
-  outC->_L246 = kcg_lit_int64(0);
-  outC->_L245 = kcg_lit_int64(0);
-  outC->_L241 = kcg_lit_float64(0.0);
-  outC->_L240 = kcg_lit_int64(0);
-  outC->_L239.nominal = kcg_lit_int64(0);
-  outC->_L239.d_min = kcg_lit_int64(0);
-  outC->_L239.d_max = kcg_lit_int64(0);
+  outC->_L250 = kcg_lit_float32(0.0);
+  outC->_L249 = kcg_lit_int32(0);
+  outC->_L248 = kcg_lit_int32(0);
+  outC->_L247 = kcg_lit_int32(0);
+  outC->_L246 = kcg_lit_int32(0);
+  outC->_L245 = kcg_lit_int32(0);
+  outC->_L241 = kcg_lit_float32(0.0);
+  outC->_L240 = kcg_lit_int32(0);
+  outC->_L239.nominal = kcg_lit_int32(0);
+  outC->_L239.d_min = kcg_lit_int32(0);
+  outC->_L239.d_max = kcg_lit_int32(0);
   outC->_L238.valid = kcg_true;
-  outC->_L238.nid_c = kcg_lit_int64(0);
-  outC->_L238.nid_bg = kcg_lit_int64(0);
+  outC->_L238.nid_c = kcg_lit_int32(0);
+  outC->_L238.nid_bg = kcg_lit_int32(0);
   outC->_L238.q_link = Q_LINK_Unlinked;
-  outC->_L238.location.nominal = kcg_lit_int64(0);
-  outC->_L238.location.d_min = kcg_lit_int64(0);
-  outC->_L238.location.d_max = kcg_lit_int64(0);
-  outC->_L238.seqNoOnTrack = kcg_lit_int64(0);
+  outC->_L238.location.nominal = kcg_lit_int32(0);
+  outC->_L238.location.d_min = kcg_lit_int32(0);
+  outC->_L238.location.d_max = kcg_lit_int32(0);
+  outC->_L238.seqNoOnTrack = kcg_lit_int32(0);
   outC->_L238.infoFromLinking.valid = kcg_true;
-  outC->_L238.infoFromLinking.nid_bg_fromLinkingBG = kcg_lit_int64(0);
-  outC->_L238.infoFromLinking.nid_c_fromLinkingBG = kcg_lit_int64(0);
-  outC->_L238.infoFromLinking.expectedLocation.nominal = kcg_lit_int64(0);
-  outC->_L238.infoFromLinking.expectedLocation.d_min = kcg_lit_int64(0);
-  outC->_L238.infoFromLinking.expectedLocation.d_max = kcg_lit_int64(0);
-  outC->_L238.infoFromLinking.d_link.nominal = kcg_lit_int64(0);
-  outC->_L238.infoFromLinking.d_link.d_min = kcg_lit_int64(0);
-  outC->_L238.infoFromLinking.d_link.d_max = kcg_lit_int64(0);
+  outC->_L238.infoFromLinking.nid_bg_fromLinkingBG = kcg_lit_int32(0);
+  outC->_L238.infoFromLinking.nid_c_fromLinkingBG = kcg_lit_int32(0);
+  outC->_L238.infoFromLinking.expectedLocation.nominal = kcg_lit_int32(0);
+  outC->_L238.infoFromLinking.expectedLocation.d_min = kcg_lit_int32(0);
+  outC->_L238.infoFromLinking.expectedLocation.d_max = kcg_lit_int32(0);
+  outC->_L238.infoFromLinking.d_link.nominal = kcg_lit_int32(0);
+  outC->_L238.infoFromLinking.d_link.d_min = kcg_lit_int32(0);
+  outC->_L238.infoFromLinking.d_link.d_max = kcg_lit_int32(0);
   outC->_L238.infoFromLinking.linkingInfo.valid = kcg_true;
-  outC->_L238.infoFromLinking.linkingInfo.nid_LRBG = kcg_lit_int64(0);
+  outC->_L238.infoFromLinking.linkingInfo.nid_LRBG = kcg_lit_int32(0);
   outC->_L238.infoFromLinking.linkingInfo.q_dir = Q_DIR_Reverse;
   outC->_L238.infoFromLinking.linkingInfo.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L238.infoFromLinking.linkingInfo.d_link = kcg_lit_int64(0);
+  outC->_L238.infoFromLinking.linkingInfo.d_link = kcg_lit_int32(0);
   outC->_L238.infoFromLinking.linkingInfo.q_newcountry =
     Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-  outC->_L238.infoFromLinking.linkingInfo.nid_c = kcg_lit_int64(0);
-  outC->_L238.infoFromLinking.linkingInfo.nid_bg = kcg_lit_int64(0);
+  outC->_L238.infoFromLinking.linkingInfo.nid_c = kcg_lit_int32(0);
+  outC->_L238.infoFromLinking.linkingInfo.nid_bg = kcg_lit_int32(0);
   outC->_L238.infoFromLinking.linkingInfo.q_linkorientation =
     Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction;
   outC->_L238.infoFromLinking.linkingInfo.q_linkreaction =
     Q_LINKREACTION_Train_trip;
-  outC->_L238.infoFromLinking.linkingInfo.q_locacc = kcg_lit_int64(0);
+  outC->_L238.infoFromLinking.linkingInfo.q_locacc = kcg_lit_int32(0);
   outC->_L238.infoFromPassing.valid = kcg_true;
   outC->_L238.infoFromPassing.BG_Header.valid = kcg_true;
   outC->_L238.infoFromPassing.BG_Header.q_updown = Q_UPDOWN_Down_link_telegram;
@@ -398,37 +398,37 @@ void SDM_InputWrapper_init_SDM_Input_Wrappers(
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L238.infoFromPassing.BG_Header.q_media = Q_MEDIA_Balise;
   outC->_L238.infoFromPassing.BG_Header.n_total = N_TOTAL_1_balise_in_the_group;
-  outC->_L238.infoFromPassing.BG_Header.m_mcount = kcg_lit_int64(0);
-  outC->_L238.infoFromPassing.BG_Header.nid_c = kcg_lit_int64(0);
-  outC->_L238.infoFromPassing.BG_Header.nid_bg = kcg_lit_int64(0);
+  outC->_L238.infoFromPassing.BG_Header.m_mcount = kcg_lit_int32(0);
+  outC->_L238.infoFromPassing.BG_Header.nid_c = kcg_lit_int32(0);
+  outC->_L238.infoFromPassing.BG_Header.nid_bg = kcg_lit_int32(0);
   outC->_L238.infoFromPassing.BG_Header.q_link = Q_LINK_Unlinked;
   outC->_L238.infoFromPassing.BG_Header.bgPosition.valid = kcg_true;
-  outC->_L238.infoFromPassing.BG_Header.bgPosition.timestamp = kcg_lit_int64(0);
+  outC->_L238.infoFromPassing.BG_Header.bgPosition.timestamp = kcg_lit_int32(0);
   outC->_L238.infoFromPassing.BG_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
-  outC->_L238.infoFromPassing.BG_Header.bgPosition.odo.o_min = kcg_lit_int64(0);
-  outC->_L238.infoFromPassing.BG_Header.bgPosition.odo.o_max = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L238.infoFromPassing.BG_Header.bgPosition.odo.o_min = kcg_lit_int32(0);
+  outC->_L238.infoFromPassing.BG_Header.bgPosition.odo.o_max = kcg_lit_int32(0);
   outC->_L238.infoFromPassing.BG_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L238.infoFromPassing.BG_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L238.infoFromPassing.BG_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L238.infoFromPassing.BG_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
-  outC->_L238.infoFromPassing.BG_Header.bgPosition.acceleration = kcg_lit_int64(
+    kcg_lit_int32(0);
+  outC->_L238.infoFromPassing.BG_Header.bgPosition.acceleration = kcg_lit_int32(
       0);
   outC->_L238.infoFromPassing.BG_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L238.infoFromPassing.BG_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L238.infoFromPassing.BG_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L238.infoFromPassing.BG_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L238.infoFromPassing.BG_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
-  outC->_L238.infoFromPassing.BG_Header.q_nvlocacc = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L238.infoFromPassing.BG_Header.q_nvlocacc = kcg_lit_int32(0);
   outC->_L238.infoFromPassing.BG_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L238.infoFromPassing.BG_Header.trainOrientationToBG = Q_DIRLRBG_Reverse;
@@ -436,62 +436,62 @@ void SDM_InputWrapper_init_SDM_Input_Wrappers(
     Q_DIRTRAIN_Reverse;
   for (idx12 = 0; idx12 < 33; idx12++) {
     outC->_L238.infoFromPassing.linkedBGs[idx12].valid = kcg_true;
-    outC->_L238.infoFromPassing.linkedBGs[idx12].nid_LRBG = kcg_lit_int64(0);
+    outC->_L238.infoFromPassing.linkedBGs[idx12].nid_LRBG = kcg_lit_int32(0);
     outC->_L238.infoFromPassing.linkedBGs[idx12].q_dir = Q_DIR_Reverse;
     outC->_L238.infoFromPassing.linkedBGs[idx12].q_scale = Q_SCALE_10_cm_scale;
-    outC->_L238.infoFromPassing.linkedBGs[idx12].d_link = kcg_lit_int64(0);
+    outC->_L238.infoFromPassing.linkedBGs[idx12].d_link = kcg_lit_int32(0);
     outC->_L238.infoFromPassing.linkedBGs[idx12].q_newcountry =
       Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-    outC->_L238.infoFromPassing.linkedBGs[idx12].nid_c = kcg_lit_int64(0);
-    outC->_L238.infoFromPassing.linkedBGs[idx12].nid_bg = kcg_lit_int64(0);
+    outC->_L238.infoFromPassing.linkedBGs[idx12].nid_c = kcg_lit_int32(0);
+    outC->_L238.infoFromPassing.linkedBGs[idx12].nid_bg = kcg_lit_int32(0);
     outC->_L238.infoFromPassing.linkedBGs[idx12].q_linkorientation =
       Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction;
     outC->_L238.infoFromPassing.linkedBGs[idx12].q_linkreaction =
       Q_LINKREACTION_Train_trip;
-    outC->_L238.infoFromPassing.linkedBGs[idx12].q_locacc = kcg_lit_int64(0);
+    outC->_L238.infoFromPassing.linkedBGs[idx12].q_locacc = kcg_lit_int32(0);
   }
   outC->_L238.missed = kcg_true;
   outC->_L237.valid = kcg_true;
-  outC->_L237.timestamp = kcg_lit_int64(0);
+  outC->_L237.timestamp = kcg_lit_int32(0);
   outC->_L237.trainPositionIsUnknown = kcg_true;
   outC->_L237.noCoordinateSystemHasBeenAssigned = kcg_true;
-  outC->_L237.trainPosition.nominal = kcg_lit_int64(0);
-  outC->_L237.trainPosition.d_min = kcg_lit_int64(0);
-  outC->_L237.trainPosition.d_max = kcg_lit_int64(0);
-  outC->_L237.estimatedFrontEndPosition = kcg_lit_int64(0);
-  outC->_L237.minSafeFrontEndPosition = kcg_lit_int64(0);
-  outC->_L237.maxSafeFrontEndPostion = kcg_lit_int64(0);
+  outC->_L237.trainPosition.nominal = kcg_lit_int32(0);
+  outC->_L237.trainPosition.d_min = kcg_lit_int32(0);
+  outC->_L237.trainPosition.d_max = kcg_lit_int32(0);
+  outC->_L237.estimatedFrontEndPosition = kcg_lit_int32(0);
+  outC->_L237.minSafeFrontEndPosition = kcg_lit_int32(0);
+  outC->_L237.maxSafeFrontEndPostion = kcg_lit_int32(0);
   outC->_L237.LRBG.valid = kcg_true;
-  outC->_L237.LRBG.nid_c = kcg_lit_int64(0);
-  outC->_L237.LRBG.nid_bg = kcg_lit_int64(0);
+  outC->_L237.LRBG.nid_c = kcg_lit_int32(0);
+  outC->_L237.LRBG.nid_bg = kcg_lit_int32(0);
   outC->_L237.LRBG.q_link = Q_LINK_Unlinked;
-  outC->_L237.LRBG.location.nominal = kcg_lit_int64(0);
-  outC->_L237.LRBG.location.d_min = kcg_lit_int64(0);
-  outC->_L237.LRBG.location.d_max = kcg_lit_int64(0);
-  outC->_L237.LRBG.seqNoOnTrack = kcg_lit_int64(0);
+  outC->_L237.LRBG.location.nominal = kcg_lit_int32(0);
+  outC->_L237.LRBG.location.d_min = kcg_lit_int32(0);
+  outC->_L237.LRBG.location.d_max = kcg_lit_int32(0);
+  outC->_L237.LRBG.seqNoOnTrack = kcg_lit_int32(0);
   outC->_L237.LRBG.infoFromLinking.valid = kcg_true;
-  outC->_L237.LRBG.infoFromLinking.nid_bg_fromLinkingBG = kcg_lit_int64(0);
-  outC->_L237.LRBG.infoFromLinking.nid_c_fromLinkingBG = kcg_lit_int64(0);
-  outC->_L237.LRBG.infoFromLinking.expectedLocation.nominal = kcg_lit_int64(0);
-  outC->_L237.LRBG.infoFromLinking.expectedLocation.d_min = kcg_lit_int64(0);
-  outC->_L237.LRBG.infoFromLinking.expectedLocation.d_max = kcg_lit_int64(0);
-  outC->_L237.LRBG.infoFromLinking.d_link.nominal = kcg_lit_int64(0);
-  outC->_L237.LRBG.infoFromLinking.d_link.d_min = kcg_lit_int64(0);
-  outC->_L237.LRBG.infoFromLinking.d_link.d_max = kcg_lit_int64(0);
+  outC->_L237.LRBG.infoFromLinking.nid_bg_fromLinkingBG = kcg_lit_int32(0);
+  outC->_L237.LRBG.infoFromLinking.nid_c_fromLinkingBG = kcg_lit_int32(0);
+  outC->_L237.LRBG.infoFromLinking.expectedLocation.nominal = kcg_lit_int32(0);
+  outC->_L237.LRBG.infoFromLinking.expectedLocation.d_min = kcg_lit_int32(0);
+  outC->_L237.LRBG.infoFromLinking.expectedLocation.d_max = kcg_lit_int32(0);
+  outC->_L237.LRBG.infoFromLinking.d_link.nominal = kcg_lit_int32(0);
+  outC->_L237.LRBG.infoFromLinking.d_link.d_min = kcg_lit_int32(0);
+  outC->_L237.LRBG.infoFromLinking.d_link.d_max = kcg_lit_int32(0);
   outC->_L237.LRBG.infoFromLinking.linkingInfo.valid = kcg_true;
-  outC->_L237.LRBG.infoFromLinking.linkingInfo.nid_LRBG = kcg_lit_int64(0);
+  outC->_L237.LRBG.infoFromLinking.linkingInfo.nid_LRBG = kcg_lit_int32(0);
   outC->_L237.LRBG.infoFromLinking.linkingInfo.q_dir = Q_DIR_Reverse;
   outC->_L237.LRBG.infoFromLinking.linkingInfo.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L237.LRBG.infoFromLinking.linkingInfo.d_link = kcg_lit_int64(0);
+  outC->_L237.LRBG.infoFromLinking.linkingInfo.d_link = kcg_lit_int32(0);
   outC->_L237.LRBG.infoFromLinking.linkingInfo.q_newcountry =
     Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-  outC->_L237.LRBG.infoFromLinking.linkingInfo.nid_c = kcg_lit_int64(0);
-  outC->_L237.LRBG.infoFromLinking.linkingInfo.nid_bg = kcg_lit_int64(0);
+  outC->_L237.LRBG.infoFromLinking.linkingInfo.nid_c = kcg_lit_int32(0);
+  outC->_L237.LRBG.infoFromLinking.linkingInfo.nid_bg = kcg_lit_int32(0);
   outC->_L237.LRBG.infoFromLinking.linkingInfo.q_linkorientation =
     Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction;
   outC->_L237.LRBG.infoFromLinking.linkingInfo.q_linkreaction =
     Q_LINKREACTION_Train_trip;
-  outC->_L237.LRBG.infoFromLinking.linkingInfo.q_locacc = kcg_lit_int64(0);
+  outC->_L237.LRBG.infoFromLinking.linkingInfo.q_locacc = kcg_lit_int32(0);
   outC->_L237.LRBG.infoFromPassing.valid = kcg_true;
   outC->_L237.LRBG.infoFromPassing.BG_Header.valid = kcg_true;
   outC->_L237.LRBG.infoFromPassing.BG_Header.q_updown =
@@ -501,40 +501,40 @@ void SDM_InputWrapper_init_SDM_Input_Wrappers(
   outC->_L237.LRBG.infoFromPassing.BG_Header.q_media = Q_MEDIA_Balise;
   outC->_L237.LRBG.infoFromPassing.BG_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
-  outC->_L237.LRBG.infoFromPassing.BG_Header.m_mcount = kcg_lit_int64(0);
-  outC->_L237.LRBG.infoFromPassing.BG_Header.nid_c = kcg_lit_int64(0);
-  outC->_L237.LRBG.infoFromPassing.BG_Header.nid_bg = kcg_lit_int64(0);
+  outC->_L237.LRBG.infoFromPassing.BG_Header.m_mcount = kcg_lit_int32(0);
+  outC->_L237.LRBG.infoFromPassing.BG_Header.nid_c = kcg_lit_int32(0);
+  outC->_L237.LRBG.infoFromPassing.BG_Header.nid_bg = kcg_lit_int32(0);
   outC->_L237.LRBG.infoFromPassing.BG_Header.q_link = Q_LINK_Unlinked;
   outC->_L237.LRBG.infoFromPassing.BG_Header.bgPosition.valid = kcg_true;
   outC->_L237.LRBG.infoFromPassing.BG_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L237.LRBG.infoFromPassing.BG_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L237.LRBG.infoFromPassing.BG_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L237.LRBG.infoFromPassing.BG_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L237.LRBG.infoFromPassing.BG_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L237.LRBG.infoFromPassing.BG_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L237.LRBG.infoFromPassing.BG_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L237.LRBG.infoFromPassing.BG_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L237.LRBG.infoFromPassing.BG_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L237.LRBG.infoFromPassing.BG_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L237.LRBG.infoFromPassing.BG_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L237.LRBG.infoFromPassing.BG_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L237.LRBG.infoFromPassing.BG_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L237.LRBG.infoFromPassing.BG_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
-  outC->_L237.LRBG.infoFromPassing.BG_Header.q_nvlocacc = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L237.LRBG.infoFromPassing.BG_Header.q_nvlocacc = kcg_lit_int32(0);
   outC->_L237.LRBG.infoFromPassing.BG_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L237.LRBG.infoFromPassing.BG_Header.trainOrientationToBG =
@@ -543,52 +543,52 @@ void SDM_InputWrapper_init_SDM_Input_Wrappers(
     Q_DIRTRAIN_Reverse;
   for (idx13 = 0; idx13 < 33; idx13++) {
     outC->_L237.LRBG.infoFromPassing.linkedBGs[idx13].valid = kcg_true;
-    outC->_L237.LRBG.infoFromPassing.linkedBGs[idx13].nid_LRBG = kcg_lit_int64(0);
+    outC->_L237.LRBG.infoFromPassing.linkedBGs[idx13].nid_LRBG = kcg_lit_int32(0);
     outC->_L237.LRBG.infoFromPassing.linkedBGs[idx13].q_dir = Q_DIR_Reverse;
     outC->_L237.LRBG.infoFromPassing.linkedBGs[idx13].q_scale = Q_SCALE_10_cm_scale;
-    outC->_L237.LRBG.infoFromPassing.linkedBGs[idx13].d_link = kcg_lit_int64(0);
+    outC->_L237.LRBG.infoFromPassing.linkedBGs[idx13].d_link = kcg_lit_int32(0);
     outC->_L237.LRBG.infoFromPassing.linkedBGs[idx13].q_newcountry =
       Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-    outC->_L237.LRBG.infoFromPassing.linkedBGs[idx13].nid_c = kcg_lit_int64(0);
-    outC->_L237.LRBG.infoFromPassing.linkedBGs[idx13].nid_bg = kcg_lit_int64(0);
+    outC->_L237.LRBG.infoFromPassing.linkedBGs[idx13].nid_c = kcg_lit_int32(0);
+    outC->_L237.LRBG.infoFromPassing.linkedBGs[idx13].nid_bg = kcg_lit_int32(0);
     outC->_L237.LRBG.infoFromPassing.linkedBGs[idx13].q_linkorientation =
       Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction;
     outC->_L237.LRBG.infoFromPassing.linkedBGs[idx13].q_linkreaction =
       Q_LINKREACTION_Train_trip;
-    outC->_L237.LRBG.infoFromPassing.linkedBGs[idx13].q_locacc = kcg_lit_int64(0);
+    outC->_L237.LRBG.infoFromPassing.linkedBGs[idx13].q_locacc = kcg_lit_int32(0);
   }
   outC->_L237.LRBG.missed = kcg_true;
   outC->_L237.prvLRBG.valid = kcg_true;
-  outC->_L237.prvLRBG.nid_c = kcg_lit_int64(0);
-  outC->_L237.prvLRBG.nid_bg = kcg_lit_int64(0);
+  outC->_L237.prvLRBG.nid_c = kcg_lit_int32(0);
+  outC->_L237.prvLRBG.nid_bg = kcg_lit_int32(0);
   outC->_L237.prvLRBG.q_link = Q_LINK_Unlinked;
-  outC->_L237.prvLRBG.location.nominal = kcg_lit_int64(0);
-  outC->_L237.prvLRBG.location.d_min = kcg_lit_int64(0);
-  outC->_L237.prvLRBG.location.d_max = kcg_lit_int64(0);
-  outC->_L237.prvLRBG.seqNoOnTrack = kcg_lit_int64(0);
+  outC->_L237.prvLRBG.location.nominal = kcg_lit_int32(0);
+  outC->_L237.prvLRBG.location.d_min = kcg_lit_int32(0);
+  outC->_L237.prvLRBG.location.d_max = kcg_lit_int32(0);
+  outC->_L237.prvLRBG.seqNoOnTrack = kcg_lit_int32(0);
   outC->_L237.prvLRBG.infoFromLinking.valid = kcg_true;
-  outC->_L237.prvLRBG.infoFromLinking.nid_bg_fromLinkingBG = kcg_lit_int64(0);
-  outC->_L237.prvLRBG.infoFromLinking.nid_c_fromLinkingBG = kcg_lit_int64(0);
-  outC->_L237.prvLRBG.infoFromLinking.expectedLocation.nominal = kcg_lit_int64(0);
-  outC->_L237.prvLRBG.infoFromLinking.expectedLocation.d_min = kcg_lit_int64(0);
-  outC->_L237.prvLRBG.infoFromLinking.expectedLocation.d_max = kcg_lit_int64(0);
-  outC->_L237.prvLRBG.infoFromLinking.d_link.nominal = kcg_lit_int64(0);
-  outC->_L237.prvLRBG.infoFromLinking.d_link.d_min = kcg_lit_int64(0);
-  outC->_L237.prvLRBG.infoFromLinking.d_link.d_max = kcg_lit_int64(0);
+  outC->_L237.prvLRBG.infoFromLinking.nid_bg_fromLinkingBG = kcg_lit_int32(0);
+  outC->_L237.prvLRBG.infoFromLinking.nid_c_fromLinkingBG = kcg_lit_int32(0);
+  outC->_L237.prvLRBG.infoFromLinking.expectedLocation.nominal = kcg_lit_int32(0);
+  outC->_L237.prvLRBG.infoFromLinking.expectedLocation.d_min = kcg_lit_int32(0);
+  outC->_L237.prvLRBG.infoFromLinking.expectedLocation.d_max = kcg_lit_int32(0);
+  outC->_L237.prvLRBG.infoFromLinking.d_link.nominal = kcg_lit_int32(0);
+  outC->_L237.prvLRBG.infoFromLinking.d_link.d_min = kcg_lit_int32(0);
+  outC->_L237.prvLRBG.infoFromLinking.d_link.d_max = kcg_lit_int32(0);
   outC->_L237.prvLRBG.infoFromLinking.linkingInfo.valid = kcg_true;
-  outC->_L237.prvLRBG.infoFromLinking.linkingInfo.nid_LRBG = kcg_lit_int64(0);
+  outC->_L237.prvLRBG.infoFromLinking.linkingInfo.nid_LRBG = kcg_lit_int32(0);
   outC->_L237.prvLRBG.infoFromLinking.linkingInfo.q_dir = Q_DIR_Reverse;
   outC->_L237.prvLRBG.infoFromLinking.linkingInfo.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L237.prvLRBG.infoFromLinking.linkingInfo.d_link = kcg_lit_int64(0);
+  outC->_L237.prvLRBG.infoFromLinking.linkingInfo.d_link = kcg_lit_int32(0);
   outC->_L237.prvLRBG.infoFromLinking.linkingInfo.q_newcountry =
     Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-  outC->_L237.prvLRBG.infoFromLinking.linkingInfo.nid_c = kcg_lit_int64(0);
-  outC->_L237.prvLRBG.infoFromLinking.linkingInfo.nid_bg = kcg_lit_int64(0);
+  outC->_L237.prvLRBG.infoFromLinking.linkingInfo.nid_c = kcg_lit_int32(0);
+  outC->_L237.prvLRBG.infoFromLinking.linkingInfo.nid_bg = kcg_lit_int32(0);
   outC->_L237.prvLRBG.infoFromLinking.linkingInfo.q_linkorientation =
     Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction;
   outC->_L237.prvLRBG.infoFromLinking.linkingInfo.q_linkreaction =
     Q_LINKREACTION_Train_trip;
-  outC->_L237.prvLRBG.infoFromLinking.linkingInfo.q_locacc = kcg_lit_int64(0);
+  outC->_L237.prvLRBG.infoFromLinking.linkingInfo.q_locacc = kcg_lit_int32(0);
   outC->_L237.prvLRBG.infoFromPassing.valid = kcg_true;
   outC->_L237.prvLRBG.infoFromPassing.BG_Header.valid = kcg_true;
   outC->_L237.prvLRBG.infoFromPassing.BG_Header.q_updown =
@@ -598,40 +598,40 @@ void SDM_InputWrapper_init_SDM_Input_Wrappers(
   outC->_L237.prvLRBG.infoFromPassing.BG_Header.q_media = Q_MEDIA_Balise;
   outC->_L237.prvLRBG.infoFromPassing.BG_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
-  outC->_L237.prvLRBG.infoFromPassing.BG_Header.m_mcount = kcg_lit_int64(0);
-  outC->_L237.prvLRBG.infoFromPassing.BG_Header.nid_c = kcg_lit_int64(0);
-  outC->_L237.prvLRBG.infoFromPassing.BG_Header.nid_bg = kcg_lit_int64(0);
+  outC->_L237.prvLRBG.infoFromPassing.BG_Header.m_mcount = kcg_lit_int32(0);
+  outC->_L237.prvLRBG.infoFromPassing.BG_Header.nid_c = kcg_lit_int32(0);
+  outC->_L237.prvLRBG.infoFromPassing.BG_Header.nid_bg = kcg_lit_int32(0);
   outC->_L237.prvLRBG.infoFromPassing.BG_Header.q_link = Q_LINK_Unlinked;
   outC->_L237.prvLRBG.infoFromPassing.BG_Header.bgPosition.valid = kcg_true;
   outC->_L237.prvLRBG.infoFromPassing.BG_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L237.prvLRBG.infoFromPassing.BG_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L237.prvLRBG.infoFromPassing.BG_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L237.prvLRBG.infoFromPassing.BG_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L237.prvLRBG.infoFromPassing.BG_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L237.prvLRBG.infoFromPassing.BG_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L237.prvLRBG.infoFromPassing.BG_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L237.prvLRBG.infoFromPassing.BG_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L237.prvLRBG.infoFromPassing.BG_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L237.prvLRBG.infoFromPassing.BG_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L237.prvLRBG.infoFromPassing.BG_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L237.prvLRBG.infoFromPassing.BG_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L237.prvLRBG.infoFromPassing.BG_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L237.prvLRBG.infoFromPassing.BG_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
-  outC->_L237.prvLRBG.infoFromPassing.BG_Header.q_nvlocacc = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L237.prvLRBG.infoFromPassing.BG_Header.q_nvlocacc = kcg_lit_int32(0);
   outC->_L237.prvLRBG.infoFromPassing.BG_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L237.prvLRBG.infoFromPassing.BG_Header.trainOrientationToBG =
@@ -641,92 +641,92 @@ void SDM_InputWrapper_init_SDM_Input_Wrappers(
   for (idx14 = 0; idx14 < 33; idx14++) {
     outC->_L237.prvLRBG.infoFromPassing.linkedBGs[idx14].valid = kcg_true;
     outC->_L237.prvLRBG.infoFromPassing.linkedBGs[idx14].nid_LRBG =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L237.prvLRBG.infoFromPassing.linkedBGs[idx14].q_dir = Q_DIR_Reverse;
     outC->_L237.prvLRBG.infoFromPassing.linkedBGs[idx14].q_scale =
       Q_SCALE_10_cm_scale;
-    outC->_L237.prvLRBG.infoFromPassing.linkedBGs[idx14].d_link = kcg_lit_int64(0);
+    outC->_L237.prvLRBG.infoFromPassing.linkedBGs[idx14].d_link = kcg_lit_int32(0);
     outC->_L237.prvLRBG.infoFromPassing.linkedBGs[idx14].q_newcountry =
       Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-    outC->_L237.prvLRBG.infoFromPassing.linkedBGs[idx14].nid_c = kcg_lit_int64(0);
-    outC->_L237.prvLRBG.infoFromPassing.linkedBGs[idx14].nid_bg = kcg_lit_int64(0);
+    outC->_L237.prvLRBG.infoFromPassing.linkedBGs[idx14].nid_c = kcg_lit_int32(0);
+    outC->_L237.prvLRBG.infoFromPassing.linkedBGs[idx14].nid_bg = kcg_lit_int32(0);
     outC->_L237.prvLRBG.infoFromPassing.linkedBGs[idx14].q_linkorientation =
       Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction;
     outC->_L237.prvLRBG.infoFromPassing.linkedBGs[idx14].q_linkreaction =
       Q_LINKREACTION_Train_trip;
     outC->_L237.prvLRBG.infoFromPassing.linkedBGs[idx14].q_locacc =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L237.prvLRBG.missed = kcg_true;
   outC->_L237.nominalOrReverseToLRBG = Q_DLRBG_Reverse;
   outC->_L237.trainOrientationToLRBG = Q_DIRLRBG_Reverse;
   outC->_L237.trainRunningDirectionToLRBG = Q_DIRTRAIN_Reverse;
   outC->_L237.linkingIsUsedOnboard = kcg_true;
-  outC->_L237.estimatedRearEndPosition = kcg_lit_int64(0);
-  outC->_L237.minSafeRearEndPosition = kcg_lit_int64(0);
-  outC->_L237.maxSafeRearEndPosition = kcg_lit_int64(0);
+  outC->_L237.estimatedRearEndPosition = kcg_lit_int32(0);
+  outC->_L237.minSafeRearEndPosition = kcg_lit_int32(0);
+  outC->_L237.maxSafeRearEndPosition = kcg_lit_int32(0);
   for (idx15 = 0; idx15 < 110; idx15++) {
-    outC->_L167[idx15].Loc_Abs = kcg_lit_float64(0.0);
-    outC->_L167[idx15].MRS = kcg_lit_float64(0.0);
+    outC->_L167[idx15].Loc_Abs = kcg_lit_float32(0.0);
+    outC->_L167[idx15].MRS = kcg_lit_float32(0.0);
     outC->_L167[idx15].valid = kcg_true;
   }
   outC->_L151.trainPositionIsValid = kcg_true;
-  outC->_L151.d_est_frontendPos = kcg_lit_float64(0.0);
-  outC->_L151.d_minSafeFrontEndPos = kcg_lit_float64(0.0);
-  outC->_L151.d_maxSafeFrontEndPos = kcg_lit_float64(0.0);
-  outC->_L151.d_LRBG = kcg_lit_float64(0.0);
-  outC->_L151.d_accLRBG = kcg_lit_float64(0.0);
-  outC->_L109 = kcg_lit_int64(0);
-  outC->_L110 = kcg_lit_float64(0.0);
-  outC->_L105 = kcg_lit_float64(0.0);
-  outC->_L106 = kcg_lit_int64(0);
-  outC->_L96 = kcg_lit_float64(0.0);
+  outC->_L151.d_est_frontendPos = kcg_lit_float32(0.0);
+  outC->_L151.d_minSafeFrontEndPos = kcg_lit_float32(0.0);
+  outC->_L151.d_maxSafeFrontEndPos = kcg_lit_float32(0.0);
+  outC->_L151.d_LRBG = kcg_lit_float32(0.0);
+  outC->_L151.d_accLRBG = kcg_lit_float32(0.0);
+  outC->_L109 = kcg_lit_int32(0);
+  outC->_L110 = kcg_lit_float32(0.0);
+  outC->_L105 = kcg_lit_float32(0.0);
+  outC->_L106 = kcg_lit_int32(0);
+  outC->_L96 = kcg_lit_float32(0.0);
   outC->_L95 = kcg_true;
   outC->_L94 = kcg_true;
   outC->_L77 = kcg_true;
-  outC->_L75 = kcg_lit_int64(0);
+  outC->_L75 = kcg_lit_int32(0);
   outC->_L74 = kcg_true;
   outC->_L5.valid = kcg_true;
-  outC->_L5.timestamp = kcg_lit_int64(0);
+  outC->_L5.timestamp = kcg_lit_int32(0);
   outC->_L5.trainPositionIsUnknown = kcg_true;
   outC->_L5.noCoordinateSystemHasBeenAssigned = kcg_true;
-  outC->_L5.trainPosition.nominal = kcg_lit_int64(0);
-  outC->_L5.trainPosition.d_min = kcg_lit_int64(0);
-  outC->_L5.trainPosition.d_max = kcg_lit_int64(0);
-  outC->_L5.estimatedFrontEndPosition = kcg_lit_int64(0);
-  outC->_L5.minSafeFrontEndPosition = kcg_lit_int64(0);
-  outC->_L5.maxSafeFrontEndPostion = kcg_lit_int64(0);
+  outC->_L5.trainPosition.nominal = kcg_lit_int32(0);
+  outC->_L5.trainPosition.d_min = kcg_lit_int32(0);
+  outC->_L5.trainPosition.d_max = kcg_lit_int32(0);
+  outC->_L5.estimatedFrontEndPosition = kcg_lit_int32(0);
+  outC->_L5.minSafeFrontEndPosition = kcg_lit_int32(0);
+  outC->_L5.maxSafeFrontEndPostion = kcg_lit_int32(0);
   outC->_L5.LRBG.valid = kcg_true;
-  outC->_L5.LRBG.nid_c = kcg_lit_int64(0);
-  outC->_L5.LRBG.nid_bg = kcg_lit_int64(0);
+  outC->_L5.LRBG.nid_c = kcg_lit_int32(0);
+  outC->_L5.LRBG.nid_bg = kcg_lit_int32(0);
   outC->_L5.LRBG.q_link = Q_LINK_Unlinked;
-  outC->_L5.LRBG.location.nominal = kcg_lit_int64(0);
-  outC->_L5.LRBG.location.d_min = kcg_lit_int64(0);
-  outC->_L5.LRBG.location.d_max = kcg_lit_int64(0);
-  outC->_L5.LRBG.seqNoOnTrack = kcg_lit_int64(0);
+  outC->_L5.LRBG.location.nominal = kcg_lit_int32(0);
+  outC->_L5.LRBG.location.d_min = kcg_lit_int32(0);
+  outC->_L5.LRBG.location.d_max = kcg_lit_int32(0);
+  outC->_L5.LRBG.seqNoOnTrack = kcg_lit_int32(0);
   outC->_L5.LRBG.infoFromLinking.valid = kcg_true;
-  outC->_L5.LRBG.infoFromLinking.nid_bg_fromLinkingBG = kcg_lit_int64(0);
-  outC->_L5.LRBG.infoFromLinking.nid_c_fromLinkingBG = kcg_lit_int64(0);
-  outC->_L5.LRBG.infoFromLinking.expectedLocation.nominal = kcg_lit_int64(0);
-  outC->_L5.LRBG.infoFromLinking.expectedLocation.d_min = kcg_lit_int64(0);
-  outC->_L5.LRBG.infoFromLinking.expectedLocation.d_max = kcg_lit_int64(0);
-  outC->_L5.LRBG.infoFromLinking.d_link.nominal = kcg_lit_int64(0);
-  outC->_L5.LRBG.infoFromLinking.d_link.d_min = kcg_lit_int64(0);
-  outC->_L5.LRBG.infoFromLinking.d_link.d_max = kcg_lit_int64(0);
+  outC->_L5.LRBG.infoFromLinking.nid_bg_fromLinkingBG = kcg_lit_int32(0);
+  outC->_L5.LRBG.infoFromLinking.nid_c_fromLinkingBG = kcg_lit_int32(0);
+  outC->_L5.LRBG.infoFromLinking.expectedLocation.nominal = kcg_lit_int32(0);
+  outC->_L5.LRBG.infoFromLinking.expectedLocation.d_min = kcg_lit_int32(0);
+  outC->_L5.LRBG.infoFromLinking.expectedLocation.d_max = kcg_lit_int32(0);
+  outC->_L5.LRBG.infoFromLinking.d_link.nominal = kcg_lit_int32(0);
+  outC->_L5.LRBG.infoFromLinking.d_link.d_min = kcg_lit_int32(0);
+  outC->_L5.LRBG.infoFromLinking.d_link.d_max = kcg_lit_int32(0);
   outC->_L5.LRBG.infoFromLinking.linkingInfo.valid = kcg_true;
-  outC->_L5.LRBG.infoFromLinking.linkingInfo.nid_LRBG = kcg_lit_int64(0);
+  outC->_L5.LRBG.infoFromLinking.linkingInfo.nid_LRBG = kcg_lit_int32(0);
   outC->_L5.LRBG.infoFromLinking.linkingInfo.q_dir = Q_DIR_Reverse;
   outC->_L5.LRBG.infoFromLinking.linkingInfo.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L5.LRBG.infoFromLinking.linkingInfo.d_link = kcg_lit_int64(0);
+  outC->_L5.LRBG.infoFromLinking.linkingInfo.d_link = kcg_lit_int32(0);
   outC->_L5.LRBG.infoFromLinking.linkingInfo.q_newcountry =
     Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-  outC->_L5.LRBG.infoFromLinking.linkingInfo.nid_c = kcg_lit_int64(0);
-  outC->_L5.LRBG.infoFromLinking.linkingInfo.nid_bg = kcg_lit_int64(0);
+  outC->_L5.LRBG.infoFromLinking.linkingInfo.nid_c = kcg_lit_int32(0);
+  outC->_L5.LRBG.infoFromLinking.linkingInfo.nid_bg = kcg_lit_int32(0);
   outC->_L5.LRBG.infoFromLinking.linkingInfo.q_linkorientation =
     Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction;
   outC->_L5.LRBG.infoFromLinking.linkingInfo.q_linkreaction =
     Q_LINKREACTION_Train_trip;
-  outC->_L5.LRBG.infoFromLinking.linkingInfo.q_locacc = kcg_lit_int64(0);
+  outC->_L5.LRBG.infoFromLinking.linkingInfo.q_locacc = kcg_lit_int32(0);
   outC->_L5.LRBG.infoFromPassing.valid = kcg_true;
   outC->_L5.LRBG.infoFromPassing.BG_Header.valid = kcg_true;
   outC->_L5.LRBG.infoFromPassing.BG_Header.q_updown = Q_UPDOWN_Down_link_telegram;
@@ -735,40 +735,40 @@ void SDM_InputWrapper_init_SDM_Input_Wrappers(
   outC->_L5.LRBG.infoFromPassing.BG_Header.q_media = Q_MEDIA_Balise;
   outC->_L5.LRBG.infoFromPassing.BG_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
-  outC->_L5.LRBG.infoFromPassing.BG_Header.m_mcount = kcg_lit_int64(0);
-  outC->_L5.LRBG.infoFromPassing.BG_Header.nid_c = kcg_lit_int64(0);
-  outC->_L5.LRBG.infoFromPassing.BG_Header.nid_bg = kcg_lit_int64(0);
+  outC->_L5.LRBG.infoFromPassing.BG_Header.m_mcount = kcg_lit_int32(0);
+  outC->_L5.LRBG.infoFromPassing.BG_Header.nid_c = kcg_lit_int32(0);
+  outC->_L5.LRBG.infoFromPassing.BG_Header.nid_bg = kcg_lit_int32(0);
   outC->_L5.LRBG.infoFromPassing.BG_Header.q_link = Q_LINK_Unlinked;
   outC->_L5.LRBG.infoFromPassing.BG_Header.bgPosition.valid = kcg_true;
-  outC->_L5.LRBG.infoFromPassing.BG_Header.bgPosition.timestamp = kcg_lit_int64(
+  outC->_L5.LRBG.infoFromPassing.BG_Header.bgPosition.timestamp = kcg_lit_int32(
       0);
   outC->_L5.LRBG.infoFromPassing.BG_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
-  outC->_L5.LRBG.infoFromPassing.BG_Header.bgPosition.odo.o_min = kcg_lit_int64(
+    kcg_lit_int32(0);
+  outC->_L5.LRBG.infoFromPassing.BG_Header.bgPosition.odo.o_min = kcg_lit_int32(
       0);
-  outC->_L5.LRBG.infoFromPassing.BG_Header.bgPosition.odo.o_max = kcg_lit_int64(
+  outC->_L5.LRBG.infoFromPassing.BG_Header.bgPosition.odo.o_max = kcg_lit_int32(
       0);
   outC->_L5.LRBG.infoFromPassing.BG_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5.LRBG.infoFromPassing.BG_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5.LRBG.infoFromPassing.BG_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5.LRBG.infoFromPassing.BG_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5.LRBG.infoFromPassing.BG_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5.LRBG.infoFromPassing.BG_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L5.LRBG.infoFromPassing.BG_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L5.LRBG.infoFromPassing.BG_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5.LRBG.infoFromPassing.BG_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5.LRBG.infoFromPassing.BG_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
-  outC->_L5.LRBG.infoFromPassing.BG_Header.q_nvlocacc = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L5.LRBG.infoFromPassing.BG_Header.q_nvlocacc = kcg_lit_int32(0);
   outC->_L5.LRBG.infoFromPassing.BG_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L5.LRBG.infoFromPassing.BG_Header.trainOrientationToBG =
@@ -777,52 +777,52 @@ void SDM_InputWrapper_init_SDM_Input_Wrappers(
     Q_DIRTRAIN_Reverse;
   for (idx16 = 0; idx16 < 33; idx16++) {
     outC->_L5.LRBG.infoFromPassing.linkedBGs[idx16].valid = kcg_true;
-    outC->_L5.LRBG.infoFromPassing.linkedBGs[idx16].nid_LRBG = kcg_lit_int64(0);
+    outC->_L5.LRBG.infoFromPassing.linkedBGs[idx16].nid_LRBG = kcg_lit_int32(0);
     outC->_L5.LRBG.infoFromPassing.linkedBGs[idx16].q_dir = Q_DIR_Reverse;
     outC->_L5.LRBG.infoFromPassing.linkedBGs[idx16].q_scale = Q_SCALE_10_cm_scale;
-    outC->_L5.LRBG.infoFromPassing.linkedBGs[idx16].d_link = kcg_lit_int64(0);
+    outC->_L5.LRBG.infoFromPassing.linkedBGs[idx16].d_link = kcg_lit_int32(0);
     outC->_L5.LRBG.infoFromPassing.linkedBGs[idx16].q_newcountry =
       Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-    outC->_L5.LRBG.infoFromPassing.linkedBGs[idx16].nid_c = kcg_lit_int64(0);
-    outC->_L5.LRBG.infoFromPassing.linkedBGs[idx16].nid_bg = kcg_lit_int64(0);
+    outC->_L5.LRBG.infoFromPassing.linkedBGs[idx16].nid_c = kcg_lit_int32(0);
+    outC->_L5.LRBG.infoFromPassing.linkedBGs[idx16].nid_bg = kcg_lit_int32(0);
     outC->_L5.LRBG.infoFromPassing.linkedBGs[idx16].q_linkorientation =
       Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction;
     outC->_L5.LRBG.infoFromPassing.linkedBGs[idx16].q_linkreaction =
       Q_LINKREACTION_Train_trip;
-    outC->_L5.LRBG.infoFromPassing.linkedBGs[idx16].q_locacc = kcg_lit_int64(0);
+    outC->_L5.LRBG.infoFromPassing.linkedBGs[idx16].q_locacc = kcg_lit_int32(0);
   }
   outC->_L5.LRBG.missed = kcg_true;
   outC->_L5.prvLRBG.valid = kcg_true;
-  outC->_L5.prvLRBG.nid_c = kcg_lit_int64(0);
-  outC->_L5.prvLRBG.nid_bg = kcg_lit_int64(0);
+  outC->_L5.prvLRBG.nid_c = kcg_lit_int32(0);
+  outC->_L5.prvLRBG.nid_bg = kcg_lit_int32(0);
   outC->_L5.prvLRBG.q_link = Q_LINK_Unlinked;
-  outC->_L5.prvLRBG.location.nominal = kcg_lit_int64(0);
-  outC->_L5.prvLRBG.location.d_min = kcg_lit_int64(0);
-  outC->_L5.prvLRBG.location.d_max = kcg_lit_int64(0);
-  outC->_L5.prvLRBG.seqNoOnTrack = kcg_lit_int64(0);
+  outC->_L5.prvLRBG.location.nominal = kcg_lit_int32(0);
+  outC->_L5.prvLRBG.location.d_min = kcg_lit_int32(0);
+  outC->_L5.prvLRBG.location.d_max = kcg_lit_int32(0);
+  outC->_L5.prvLRBG.seqNoOnTrack = kcg_lit_int32(0);
   outC->_L5.prvLRBG.infoFromLinking.valid = kcg_true;
-  outC->_L5.prvLRBG.infoFromLinking.nid_bg_fromLinkingBG = kcg_lit_int64(0);
-  outC->_L5.prvLRBG.infoFromLinking.nid_c_fromLinkingBG = kcg_lit_int64(0);
-  outC->_L5.prvLRBG.infoFromLinking.expectedLocation.nominal = kcg_lit_int64(0);
-  outC->_L5.prvLRBG.infoFromLinking.expectedLocation.d_min = kcg_lit_int64(0);
-  outC->_L5.prvLRBG.infoFromLinking.expectedLocation.d_max = kcg_lit_int64(0);
-  outC->_L5.prvLRBG.infoFromLinking.d_link.nominal = kcg_lit_int64(0);
-  outC->_L5.prvLRBG.infoFromLinking.d_link.d_min = kcg_lit_int64(0);
-  outC->_L5.prvLRBG.infoFromLinking.d_link.d_max = kcg_lit_int64(0);
+  outC->_L5.prvLRBG.infoFromLinking.nid_bg_fromLinkingBG = kcg_lit_int32(0);
+  outC->_L5.prvLRBG.infoFromLinking.nid_c_fromLinkingBG = kcg_lit_int32(0);
+  outC->_L5.prvLRBG.infoFromLinking.expectedLocation.nominal = kcg_lit_int32(0);
+  outC->_L5.prvLRBG.infoFromLinking.expectedLocation.d_min = kcg_lit_int32(0);
+  outC->_L5.prvLRBG.infoFromLinking.expectedLocation.d_max = kcg_lit_int32(0);
+  outC->_L5.prvLRBG.infoFromLinking.d_link.nominal = kcg_lit_int32(0);
+  outC->_L5.prvLRBG.infoFromLinking.d_link.d_min = kcg_lit_int32(0);
+  outC->_L5.prvLRBG.infoFromLinking.d_link.d_max = kcg_lit_int32(0);
   outC->_L5.prvLRBG.infoFromLinking.linkingInfo.valid = kcg_true;
-  outC->_L5.prvLRBG.infoFromLinking.linkingInfo.nid_LRBG = kcg_lit_int64(0);
+  outC->_L5.prvLRBG.infoFromLinking.linkingInfo.nid_LRBG = kcg_lit_int32(0);
   outC->_L5.prvLRBG.infoFromLinking.linkingInfo.q_dir = Q_DIR_Reverse;
   outC->_L5.prvLRBG.infoFromLinking.linkingInfo.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L5.prvLRBG.infoFromLinking.linkingInfo.d_link = kcg_lit_int64(0);
+  outC->_L5.prvLRBG.infoFromLinking.linkingInfo.d_link = kcg_lit_int32(0);
   outC->_L5.prvLRBG.infoFromLinking.linkingInfo.q_newcountry =
     Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-  outC->_L5.prvLRBG.infoFromLinking.linkingInfo.nid_c = kcg_lit_int64(0);
-  outC->_L5.prvLRBG.infoFromLinking.linkingInfo.nid_bg = kcg_lit_int64(0);
+  outC->_L5.prvLRBG.infoFromLinking.linkingInfo.nid_c = kcg_lit_int32(0);
+  outC->_L5.prvLRBG.infoFromLinking.linkingInfo.nid_bg = kcg_lit_int32(0);
   outC->_L5.prvLRBG.infoFromLinking.linkingInfo.q_linkorientation =
     Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction;
   outC->_L5.prvLRBG.infoFromLinking.linkingInfo.q_linkreaction =
     Q_LINKREACTION_Train_trip;
-  outC->_L5.prvLRBG.infoFromLinking.linkingInfo.q_locacc = kcg_lit_int64(0);
+  outC->_L5.prvLRBG.infoFromLinking.linkingInfo.q_locacc = kcg_lit_int32(0);
   outC->_L5.prvLRBG.infoFromPassing.valid = kcg_true;
   outC->_L5.prvLRBG.infoFromPassing.BG_Header.valid = kcg_true;
   outC->_L5.prvLRBG.infoFromPassing.BG_Header.q_updown =
@@ -832,40 +832,40 @@ void SDM_InputWrapper_init_SDM_Input_Wrappers(
   outC->_L5.prvLRBG.infoFromPassing.BG_Header.q_media = Q_MEDIA_Balise;
   outC->_L5.prvLRBG.infoFromPassing.BG_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
-  outC->_L5.prvLRBG.infoFromPassing.BG_Header.m_mcount = kcg_lit_int64(0);
-  outC->_L5.prvLRBG.infoFromPassing.BG_Header.nid_c = kcg_lit_int64(0);
-  outC->_L5.prvLRBG.infoFromPassing.BG_Header.nid_bg = kcg_lit_int64(0);
+  outC->_L5.prvLRBG.infoFromPassing.BG_Header.m_mcount = kcg_lit_int32(0);
+  outC->_L5.prvLRBG.infoFromPassing.BG_Header.nid_c = kcg_lit_int32(0);
+  outC->_L5.prvLRBG.infoFromPassing.BG_Header.nid_bg = kcg_lit_int32(0);
   outC->_L5.prvLRBG.infoFromPassing.BG_Header.q_link = Q_LINK_Unlinked;
   outC->_L5.prvLRBG.infoFromPassing.BG_Header.bgPosition.valid = kcg_true;
   outC->_L5.prvLRBG.infoFromPassing.BG_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5.prvLRBG.infoFromPassing.BG_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5.prvLRBG.infoFromPassing.BG_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5.prvLRBG.infoFromPassing.BG_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5.prvLRBG.infoFromPassing.BG_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5.prvLRBG.infoFromPassing.BG_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5.prvLRBG.infoFromPassing.BG_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5.prvLRBG.infoFromPassing.BG_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5.prvLRBG.infoFromPassing.BG_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5.prvLRBG.infoFromPassing.BG_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L5.prvLRBG.infoFromPassing.BG_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L5.prvLRBG.infoFromPassing.BG_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5.prvLRBG.infoFromPassing.BG_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5.prvLRBG.infoFromPassing.BG_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
-  outC->_L5.prvLRBG.infoFromPassing.BG_Header.q_nvlocacc = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L5.prvLRBG.infoFromPassing.BG_Header.q_nvlocacc = kcg_lit_int32(0);
   outC->_L5.prvLRBG.infoFromPassing.BG_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L5.prvLRBG.infoFromPassing.BG_Header.trainOrientationToBG =
@@ -874,71 +874,71 @@ void SDM_InputWrapper_init_SDM_Input_Wrappers(
     Q_DIRTRAIN_Reverse;
   for (idx17 = 0; idx17 < 33; idx17++) {
     outC->_L5.prvLRBG.infoFromPassing.linkedBGs[idx17].valid = kcg_true;
-    outC->_L5.prvLRBG.infoFromPassing.linkedBGs[idx17].nid_LRBG = kcg_lit_int64(0);
+    outC->_L5.prvLRBG.infoFromPassing.linkedBGs[idx17].nid_LRBG = kcg_lit_int32(0);
     outC->_L5.prvLRBG.infoFromPassing.linkedBGs[idx17].q_dir = Q_DIR_Reverse;
     outC->_L5.prvLRBG.infoFromPassing.linkedBGs[idx17].q_scale =
       Q_SCALE_10_cm_scale;
-    outC->_L5.prvLRBG.infoFromPassing.linkedBGs[idx17].d_link = kcg_lit_int64(0);
+    outC->_L5.prvLRBG.infoFromPassing.linkedBGs[idx17].d_link = kcg_lit_int32(0);
     outC->_L5.prvLRBG.infoFromPassing.linkedBGs[idx17].q_newcountry =
       Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-    outC->_L5.prvLRBG.infoFromPassing.linkedBGs[idx17].nid_c = kcg_lit_int64(0);
-    outC->_L5.prvLRBG.infoFromPassing.linkedBGs[idx17].nid_bg = kcg_lit_int64(0);
+    outC->_L5.prvLRBG.infoFromPassing.linkedBGs[idx17].nid_c = kcg_lit_int32(0);
+    outC->_L5.prvLRBG.infoFromPassing.linkedBGs[idx17].nid_bg = kcg_lit_int32(0);
     outC->_L5.prvLRBG.infoFromPassing.linkedBGs[idx17].q_linkorientation =
       Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction;
     outC->_L5.prvLRBG.infoFromPassing.linkedBGs[idx17].q_linkreaction =
       Q_LINKREACTION_Train_trip;
-    outC->_L5.prvLRBG.infoFromPassing.linkedBGs[idx17].q_locacc = kcg_lit_int64(0);
+    outC->_L5.prvLRBG.infoFromPassing.linkedBGs[idx17].q_locacc = kcg_lit_int32(0);
   }
   outC->_L5.prvLRBG.missed = kcg_true;
   outC->_L5.nominalOrReverseToLRBG = Q_DLRBG_Reverse;
   outC->_L5.trainOrientationToLRBG = Q_DIRLRBG_Reverse;
   outC->_L5.trainRunningDirectionToLRBG = Q_DIRTRAIN_Reverse;
   outC->_L5.linkingIsUsedOnboard = kcg_true;
-  outC->_L5.estimatedRearEndPosition = kcg_lit_int64(0);
-  outC->_L5.minSafeRearEndPosition = kcg_lit_int64(0);
-  outC->_L5.maxSafeRearEndPosition = kcg_lit_int64(0);
+  outC->_L5.estimatedRearEndPosition = kcg_lit_int32(0);
+  outC->_L5.minSafeRearEndPosition = kcg_lit_int32(0);
+  outC->_L5.maxSafeRearEndPosition = kcg_lit_int32(0);
   outC->every = kcg_true;
   outC->_L255.valid = kcg_true;
-  outC->_L255.v_main = kcg_lit_float64(0.0);
-  outC->_L255.EOA.Location = kcg_lit_float64(0.0);
-  outC->_L255.EOA.TargetSpeed = kcg_lit_float64(0.0);
+  outC->_L255.v_main = kcg_lit_float32(0.0);
+  outC->_L255.EOA.Location = kcg_lit_float32(0.0);
+  outC->_L255.EOA.TargetSpeed = kcg_lit_float32(0.0);
   outC->_L255.DP_valid = kcg_true;
-  outC->_L255.DangerPoint = kcg_lit_float64(0.0);
+  outC->_L255.DangerPoint = kcg_lit_float32(0.0);
   outC->_L255.OL_valid = kcg_true;
-  outC->_L255.Overlap = kcg_lit_float64(0.0);
+  outC->_L255.Overlap = kcg_lit_float32(0.0);
   outC->_L255.q_calculate_release = kcg_true;
-  outC->_L255.ReleaseSpeed = kcg_lit_float64(0.0);
+  outC->_L255.ReleaseSpeed = kcg_lit_float32(0.0);
   outC->_L255.level = MA_L1_TrackAtlasTypes;
   outC->init = kcg_true;
-  outC->offsetAntennaL1 = kcg_lit_int64(0);
+  outC->offsetAntennaL1 = kcg_lit_int32(0);
   outC->gp_update_out = kcg_true;
   for (idx18 = 0; idx18 < 50; idx18++) {
-    outC->gp_out[idx18].location = kcg_lit_float64(0.0);
-    outC->gp_out[idx18].gradient = kcg_lit_float64(0.0);
+    outC->gp_out[idx18].location = kcg_lit_float32(0.0);
+    outC->gp_out[idx18].gradient = kcg_lit_float32(0.0);
     outC->gp_out[idx18].valid = kcg_true;
   }
   outC->trainLocations.trainPositionIsValid = kcg_true;
-  outC->trainLocations.d_est_frontendPos = kcg_lit_float64(0.0);
-  outC->trainLocations.d_minSafeFrontEndPos = kcg_lit_float64(0.0);
-  outC->trainLocations.d_maxSafeFrontEndPos = kcg_lit_float64(0.0);
-  outC->trainLocations.d_LRBG = kcg_lit_float64(0.0);
-  outC->trainLocations.d_accLRBG = kcg_lit_float64(0.0);
+  outC->trainLocations.d_est_frontendPos = kcg_lit_float32(0.0);
+  outC->trainLocations.d_minSafeFrontEndPos = kcg_lit_float32(0.0);
+  outC->trainLocations.d_maxSafeFrontEndPos = kcg_lit_float32(0.0);
+  outC->trainLocations.d_LRBG = kcg_lit_float32(0.0);
+  outC->trainLocations.d_accLRBG = kcg_lit_float32(0.0);
   outC->ma_update_out = kcg_true;
   outC->ma_out.valid = kcg_true;
-  outC->ma_out.v_main = kcg_lit_float64(0.0);
-  outC->ma_out.EOA.Location = kcg_lit_float64(0.0);
-  outC->ma_out.EOA.TargetSpeed = kcg_lit_float64(0.0);
+  outC->ma_out.v_main = kcg_lit_float32(0.0);
+  outC->ma_out.EOA.Location = kcg_lit_float32(0.0);
+  outC->ma_out.EOA.TargetSpeed = kcg_lit_float32(0.0);
   outC->ma_out.DP_valid = kcg_true;
-  outC->ma_out.DangerPoint = kcg_lit_float64(0.0);
+  outC->ma_out.DangerPoint = kcg_lit_float32(0.0);
   outC->ma_out.OL_valid = kcg_true;
-  outC->ma_out.Overlap = kcg_lit_float64(0.0);
+  outC->ma_out.Overlap = kcg_lit_float32(0.0);
   outC->ma_out.q_calculate_release = kcg_true;
-  outC->ma_out.ReleaseSpeed = kcg_lit_float64(0.0);
+  outC->ma_out.ReleaseSpeed = kcg_lit_float32(0.0);
   outC->ma_out.level = MA_L1_TrackAtlasTypes;
   outC->mrsp_update_out = kcg_true;
   for (idx19 = 0; idx19 < 110; idx19++) {
-    outC->mrsp_out[idx19].Loc_Abs = kcg_lit_float64(0.0);
-    outC->mrsp_out[idx19].MRS = kcg_lit_float64(0.0);
+    outC->mrsp_out[idx19].Loc_Abs = kcg_lit_float32(0.0);
+    outC->mrsp_out[idx19].MRS = kcg_lit_float32(0.0);
     outC->mrsp_out[idx19].valid = kcg_true;
   }
   /* _L110=(SDM_Types_Pkg::TransformL_intToL_real#11)/ */
@@ -1039,6 +1039,6 @@ void kcg_load_SV_SDM_InputWrapper_SDM_Input_Wrappers(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** SDM_InputWrapper_SDM_Input_Wrappers.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

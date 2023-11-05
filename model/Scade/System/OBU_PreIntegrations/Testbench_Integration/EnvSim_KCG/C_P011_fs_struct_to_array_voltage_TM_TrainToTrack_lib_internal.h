@@ -26,11 +26,11 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   P011_voltage_TM_TrainToTrack /* _L1/ */ _L1;
-  array_int64_2 /* _L2/ */ _L2;
+  array_int32_2 /* _L2/ */ _L2;
   NID_CTRACTION /* _L4/ */ _L4;
   M_VOLTAGE /* _L3/ */ _L3;
-  kcg_int64 /* _L13/ */ _L13;
-  kcg_int64 /* _L14/ */ _L14;
+  kcg_int32 /* _L13/ */ _L13;
+  kcg_int32 /* _L14/ */ _L14;
 } outC_C_P011_fs_struct_to_array_voltage_TM_TrainToTrack_lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */

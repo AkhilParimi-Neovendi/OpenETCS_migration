@@ -17,28 +17,28 @@ void calcAccFromGradient_SDM_GradientAcceleration_Pkg(
 {
   static trainData_T_TIU_Types_Pkg noname;
 
-  outC->_L37 = kcg_lit_int64(50);
-  outC->B_InRangeInIn_1_int64 = outC->_L37;
-  outC->_L36 = kcg_lit_int64(1);
-  outC->A_InRangeInIn_1_int64 = outC->_L36;
-  outC->A1_InRangeInIn_1_int64 = outC->A_InRangeInIn_1_int64 <=
-    outC->B_InRangeInIn_1_int64;
-  outC->_L13_InRangeInIn_1_int64 = outC->B_InRangeInIn_1_int64;
-  outC->_L40 = kcg_lit_int64(0);
-  outC->IRII_Input_InRangeInIn_1_int64 = outC->_L40;
-  outC->_L8_InRangeInIn_1_int64 = outC->IRII_Input_InRangeInIn_1_int64;
-  outC->_L12_InRangeInIn_1_int64 = outC->_L13_InRangeInIn_1_int64 >=
-    outC->_L8_InRangeInIn_1_int64;
-  outC->_L10_InRangeInIn_1_int64 = outC->A_InRangeInIn_1_int64;
-  outC->_L4_InRangeInIn_1_int64 = outC->_L8_InRangeInIn_1_int64 >=
-    outC->_L10_InRangeInIn_1_int64;
-  outC->_L2_InRangeInIn_1_int64 = outC->_L12_InRangeInIn_1_int64 &
-    outC->_L4_InRangeInIn_1_int64;
-  outC->IRII_Output_InRangeInIn_1_int64 = outC->_L2_InRangeInIn_1_int64;
-  outC->_L20 = kcg_lit_int64(10);
+  outC->_L37 = kcg_lit_int32(50);
+  outC->B_InRangeInIn_1_int32 = outC->_L37;
+  outC->_L36 = kcg_lit_int32(1);
+  outC->A_InRangeInIn_1_int32 = outC->_L36;
+  outC->A1_InRangeInIn_1_int32 = outC->A_InRangeInIn_1_int32 <=
+    outC->B_InRangeInIn_1_int32;
+  outC->_L13_InRangeInIn_1_int32 = outC->B_InRangeInIn_1_int32;
+  outC->_L40 = kcg_lit_int32(0);
+  outC->IRII_Input_InRangeInIn_1_int32 = outC->_L40;
+  outC->_L8_InRangeInIn_1_int32 = outC->IRII_Input_InRangeInIn_1_int32;
+  outC->_L12_InRangeInIn_1_int32 = outC->_L13_InRangeInIn_1_int32 >=
+    outC->_L8_InRangeInIn_1_int32;
+  outC->_L10_InRangeInIn_1_int32 = outC->A_InRangeInIn_1_int32;
+  outC->_L4_InRangeInIn_1_int32 = outC->_L8_InRangeInIn_1_int32 >=
+    outC->_L10_InRangeInIn_1_int32;
+  outC->_L2_InRangeInIn_1_int32 = outC->_L12_InRangeInIn_1_int32 &
+    outC->_L4_InRangeInIn_1_int32;
+  outC->IRII_Output_InRangeInIn_1_int32 = outC->_L2_InRangeInIn_1_int32;
+  outC->_L20 = kcg_lit_int32(10);
   outC->_L32 = M_rotating_max_SDM_Types_Pkg;
   outC->_L33 = M_rotating_min_SDM_Types_Pkg;
-  outC->_L6 = kcg_lit_float64(0.0);
+  outC->_L6 = kcg_lit_float32(0.0);
   kcg_copy_Gradient_section_real_t_SDM_GradientAcceleration_types(
     &outC->_L7,
     GradientSection);
@@ -51,7 +51,7 @@ void calcAccFromGradient_SDM_GradientAcceleration_Pkg(
   else {
     outC->_L4 = outC->_L32;
   }
-  outC->_L35 = outC->IRII_Output_InRangeInIn_1_int64;
+  outC->_L35 = outC->IRII_Output_InRangeInIn_1_int32;
   /* _L34= */
   if (outC->_L35) {
     outC->_L34 = outC->_L40;
@@ -60,9 +60,9 @@ void calcAccFromGradient_SDM_GradientAcceleration_Pkg(
     outC->_L34 = outC->_L4;
   }
   outC->_L16 = outC->_L34 * outC->_L20;
-  outC->_L15 = kcg_lit_int64(1000);
+  outC->_L15 = kcg_lit_int32(1000);
   outC->_L14 = outC->_L15 + outC->_L16;
-  outC->_L41 = /* _L41= */(kcg_float64) outC->_L14;
+  outC->_L41 = /* _L41= */(kcg_float32) outC->_L14;
   kcg_copy_trainData_T_TIU_Types_Pkg(&outC->_L38, trainData);
   kcg_copy_trainData_T_TIU_Types_Pkg(&noname, &outC->_L38);
   outC->_L30 = A_gravity_SDM_Types_Pkg;
@@ -93,73 +93,73 @@ void calcAccFromGradient_init_SDM_GradientAcceleration_Pkg(
   static kcg_size idx;
   static kcg_size idx1;
 
-  outC->_L41 = kcg_lit_float64(0.0);
-  outC->_L40 = kcg_lit_int64(0);
+  outC->_L41 = kcg_lit_float32(0.0);
+  outC->_L40 = kcg_lit_int32(0);
   outC->_L38.valid = kcg_true;
   outC->_L38.acknowledgedByDriver = kcg_true;
   outC->_L38.trainCategory =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->_L38.cantDeficientcy = NC_CDTRAIN_Cant_Deficiency_80_mm;
-  outC->_L38.trainLength = kcg_lit_int64(0);
-  outC->_L38.brakePerctage = kcg_lit_int64(0);
-  outC->_L38.maxTrainSpeed = kcg_lit_int64(0);
+  outC->_L38.trainLength = kcg_lit_int32(0);
+  outC->_L38.brakePerctage = kcg_lit_int32(0);
+  outC->_L38.maxTrainSpeed = kcg_lit_int32(0);
   outC->_L38.loadingGauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L38.axleLoadCategory = M_AXLELOADCAT_A;
   outC->_L38.airtightSystem = M_AIRTIGHT_Not_fitted;
-  outC->_L38.axleNumber = kcg_lit_int64(0);
-  outC->_L38.numberNationalSystems = kcg_lit_int64(0);
+  outC->_L38.axleNumber = kcg_lit_int32(0);
+  outC->_L38.numberNationalSystems = kcg_lit_int32(0);
   for (idx = 0; idx < 5; idx++) {
-    outC->_L38.nationSystems[idx] = kcg_lit_int64(0);
+    outC->_L38.nationSystems[idx] = kcg_lit_int32(0);
   }
-  outC->_L38.numberTractionSystems = kcg_lit_int64(0);
+  outC->_L38.numberTractionSystems = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 4; idx1++) {
     outC->_L38.tractionSystem[idx1].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->_L38.tractionSystem[idx1].nid_ctraction = kcg_lit_int64(0);
+    outC->_L38.tractionSystem[idx1].nid_ctraction = kcg_lit_int32(0);
   }
-  outC->_L37 = kcg_lit_int64(0);
-  outC->_L36 = kcg_lit_int64(0);
+  outC->_L37 = kcg_lit_int32(0);
+  outC->_L36 = kcg_lit_int32(0);
   outC->_L35 = kcg_true;
-  outC->_L34 = kcg_lit_int64(0);
-  outC->_L33 = kcg_lit_int64(0);
-  outC->_L32 = kcg_lit_int64(0);
-  outC->_L31 = kcg_lit_float64(0.0);
-  outC->_L30 = kcg_lit_int64(0);
+  outC->_L34 = kcg_lit_int32(0);
+  outC->_L33 = kcg_lit_int32(0);
+  outC->_L32 = kcg_lit_int32(0);
+  outC->_L31 = kcg_lit_float32(0.0);
+  outC->_L30 = kcg_lit_int32(0);
   outC->_L28 = kcg_true;
-  outC->_L27 = kcg_lit_float64(0.0);
-  outC->_L26.location = kcg_lit_float64(0.0);
-  outC->_L26.gradient = kcg_lit_float64(0.0);
+  outC->_L27 = kcg_lit_float32(0.0);
+  outC->_L26.location = kcg_lit_float32(0.0);
+  outC->_L26.gradient = kcg_lit_float32(0.0);
   outC->_L26.valid = kcg_true;
-  outC->_L25.position = kcg_lit_float64(0.0);
-  outC->_L25.gradient_acceleration = kcg_lit_float64(0.0);
+  outC->_L25.position = kcg_lit_float32(0.0);
+  outC->_L25.gradient_acceleration = kcg_lit_float32(0.0);
   outC->_L25.valid = kcg_true;
-  outC->_L24 = kcg_lit_float64(0.0);
-  outC->_L20 = kcg_lit_int64(0);
-  outC->_L16 = kcg_lit_int64(0);
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L15 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_float64(0.0);
-  outC->_L9 = kcg_lit_float64(0.0);
-  outC->_L7.location = kcg_lit_float64(0.0);
-  outC->_L7.gradient = kcg_lit_float64(0.0);
+  outC->_L24 = kcg_lit_float32(0.0);
+  outC->_L20 = kcg_lit_int32(0);
+  outC->_L16 = kcg_lit_int32(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L15 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_float32(0.0);
+  outC->_L9 = kcg_lit_float32(0.0);
+  outC->_L7.location = kcg_lit_float32(0.0);
+  outC->_L7.gradient = kcg_lit_float32(0.0);
   outC->_L7.valid = kcg_true;
-  outC->_L6 = kcg_lit_float64(0.0);
+  outC->_L6 = kcg_lit_float32(0.0);
   outC->_L5 = kcg_true;
-  outC->_L4 = kcg_lit_int64(0);
-  outC->A1_InRangeInIn_1_int64 = kcg_true;
-  outC->_L10_InRangeInIn_1_int64 = kcg_lit_int64(0);
-  outC->_L12_InRangeInIn_1_int64 = kcg_true;
-  outC->_L13_InRangeInIn_1_int64 = kcg_lit_int64(0);
-  outC->_L2_InRangeInIn_1_int64 = kcg_true;
-  outC->_L4_InRangeInIn_1_int64 = kcg_true;
-  outC->_L8_InRangeInIn_1_int64 = kcg_lit_int64(0);
-  outC->IRII_Input_InRangeInIn_1_int64 = kcg_lit_int64(0);
-  outC->A_InRangeInIn_1_int64 = kcg_lit_int64(0);
-  outC->B_InRangeInIn_1_int64 = kcg_lit_int64(0);
-  outC->IRII_Output_InRangeInIn_1_int64 = kcg_true;
-  outC->A_gradient_section.position = kcg_lit_float64(0.0);
-  outC->A_gradient_section.gradient_acceleration = kcg_lit_float64(0.0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->A1_InRangeInIn_1_int32 = kcg_true;
+  outC->_L10_InRangeInIn_1_int32 = kcg_lit_int32(0);
+  outC->_L12_InRangeInIn_1_int32 = kcg_true;
+  outC->_L13_InRangeInIn_1_int32 = kcg_lit_int32(0);
+  outC->_L2_InRangeInIn_1_int32 = kcg_true;
+  outC->_L4_InRangeInIn_1_int32 = kcg_true;
+  outC->_L8_InRangeInIn_1_int32 = kcg_lit_int32(0);
+  outC->IRII_Input_InRangeInIn_1_int32 = kcg_lit_int32(0);
+  outC->A_InRangeInIn_1_int32 = kcg_lit_int32(0);
+  outC->B_InRangeInIn_1_int32 = kcg_lit_int32(0);
+  outC->IRII_Output_InRangeInIn_1_int32 = kcg_true;
+  outC->A_gradient_section.position = kcg_lit_float32(0.0);
+  outC->A_gradient_section.gradient_acceleration = kcg_lit_float32(0.0);
   outC->A_gradient_section.valid = kcg_true;
   /* _L31=(SDM_Types_Pkg::TransformA_intToA_real#1)/ */
   TransformA_intToA_real_init_SDM_Types_Pkg(

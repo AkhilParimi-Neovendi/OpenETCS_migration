@@ -10,7 +10,7 @@
 /* SDM_GradientAcceleration_Pkg::MoveTrainPosition/ */
 void MoveTrainPosition_SDM_GradientAcceleration_Pkg(
   /* distanceStep/ */
-  kcg_float64 distanceStep,
+  kcg_float32 distanceStep,
   /* Accu/ */
   ACC_SDM_GradientAcceleration_Pkg *Accu,
   outC_MoveTrainPosition_SDM_GradientAcceleration_Pkg *outC)
@@ -33,31 +33,31 @@ void MoveTrainPosition_init_SDM_GradientAcceleration_Pkg(
   static kcg_size idx;
   static kcg_size idx1;
 
-  outC->_L8.frontPos = kcg_lit_float64(0.0);
-  outC->_L8.frontIndex = kcg_lit_int64(0);
-  outC->_L8.rearPos = kcg_lit_float64(0.0);
-  outC->_L8.rearIndex = kcg_lit_int64(0);
+  outC->_L8.frontPos = kcg_lit_float32(0.0);
+  outC->_L8.frontIndex = kcg_lit_int32(0);
+  outC->_L8.rearPos = kcg_lit_float32(0.0);
+  outC->_L8.rearIndex = kcg_lit_int32(0);
   for (idx = 0; idx < 100; idx++) {
-    outC->_L8.compensatedGradientProfile[idx].location = kcg_lit_float64(0.0);
-    outC->_L8.compensatedGradientProfile[idx].gradient = kcg_lit_float64(0.0);
+    outC->_L8.compensatedGradientProfile[idx].location = kcg_lit_float32(0.0);
+    outC->_L8.compensatedGradientProfile[idx].gradient = kcg_lit_float32(0.0);
     outC->_L8.compensatedGradientProfile[idx].valid = kcg_true;
   }
-  outC->_L7 = kcg_lit_float64(0.0);
-  outC->_L6 = kcg_lit_float64(0.0);
-  outC->_L5 = kcg_lit_float64(0.0);
-  outC->_L4 = kcg_lit_float64(0.0);
-  outC->_L1 = kcg_lit_float64(0.0);
-  outC->_L3.frontPos = kcg_lit_float64(0.0);
-  outC->_L3.frontIndex = kcg_lit_int64(0);
-  outC->_L3.rearPos = kcg_lit_float64(0.0);
-  outC->_L3.rearIndex = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_float32(0.0);
+  outC->_L6 = kcg_lit_float32(0.0);
+  outC->_L5 = kcg_lit_float32(0.0);
+  outC->_L4 = kcg_lit_float32(0.0);
+  outC->_L1 = kcg_lit_float32(0.0);
+  outC->_L3.frontPos = kcg_lit_float32(0.0);
+  outC->_L3.frontIndex = kcg_lit_int32(0);
+  outC->_L3.rearPos = kcg_lit_float32(0.0);
+  outC->_L3.rearIndex = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 100; idx1++) {
-    outC->_L3.compensatedGradientProfile[idx1].location = kcg_lit_float64(0.0);
-    outC->_L3.compensatedGradientProfile[idx1].gradient = kcg_lit_float64(0.0);
+    outC->_L3.compensatedGradientProfile[idx1].location = kcg_lit_float32(0.0);
+    outC->_L3.compensatedGradientProfile[idx1].gradient = kcg_lit_float32(0.0);
     outC->_L3.compensatedGradientProfile[idx1].valid = kcg_true;
   }
-  outC->newRear = kcg_lit_float64(0.0);
-  outC->newFront = kcg_lit_float64(0.0);
+  outC->newRear = kcg_lit_float32(0.0);
+  outC->newFront = kcg_lit_float32(0.0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

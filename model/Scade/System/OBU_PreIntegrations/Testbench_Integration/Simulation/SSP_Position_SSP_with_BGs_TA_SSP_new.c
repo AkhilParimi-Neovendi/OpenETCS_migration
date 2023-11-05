@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -110,88 +110,88 @@ void SSP_Position_SSP_with_BGs_init_TA_SSP_new(
   static kcg_size idx9;
   static kcg_size idx10;
 
-  outC->_L33 = kcg_lit_int64(0);
+  outC->_L33 = kcg_lit_int32(0);
   for (idx = 0; idx < 50; idx++) {
     outC->_L30[idx].valid = kcg_true;
-    outC->_L30[idx].d_static_abs = kcg_lit_int64(0);
-    outC->_L30[idx].d_static_LRBG = kcg_lit_int64(0);
+    outC->_L30[idx].d_static_abs = kcg_lit_int32(0);
+    outC->_L30[idx].d_static_LRBG = kcg_lit_int32(0);
     outC->_L30[idx].q_train_length_corr = kcg_true;
-    outC->_L30[idx].v_static = kcg_lit_int64(0);
+    outC->_L30[idx].v_static = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 50; idx1++) {
     outC->_L29[idx1].valid = kcg_true;
-    outC->_L29[idx1].d_static_abs = kcg_lit_int64(0);
-    outC->_L29[idx1].d_static_LRBG = kcg_lit_int64(0);
+    outC->_L29[idx1].d_static_abs = kcg_lit_int32(0);
+    outC->_L29[idx1].d_static_LRBG = kcg_lit_int32(0);
     outC->_L29[idx1].q_train_length_corr = kcg_true;
-    outC->_L29[idx1].v_static = kcg_lit_int64(0);
+    outC->_L29[idx1].v_static = kcg_lit_int32(0);
   }
   outC->_L28 = kcg_true;
   for (idx2 = 0; idx2 < 50; idx2++) {
     outC->_L23[idx2].valid = kcg_true;
-    outC->_L23[idx2].d_static_abs = kcg_lit_int64(0);
-    outC->_L23[idx2].d_static_LRBG = kcg_lit_int64(0);
+    outC->_L23[idx2].d_static_abs = kcg_lit_int32(0);
+    outC->_L23[idx2].d_static_LRBG = kcg_lit_int32(0);
     outC->_L23[idx2].q_train_length_corr = kcg_true;
-    outC->_L23[idx2].v_static = kcg_lit_int64(0);
+    outC->_L23[idx2].v_static = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 50; idx3++) {
     outC->_L22[idx3].valid = kcg_true;
-    outC->_L22[idx3].d_static_abs = kcg_lit_int64(0);
-    outC->_L22[idx3].d_static_LRBG = kcg_lit_int64(0);
+    outC->_L22[idx3].d_static_abs = kcg_lit_int32(0);
+    outC->_L22[idx3].d_static_LRBG = kcg_lit_int32(0);
     outC->_L22[idx3].q_train_length_corr = kcg_true;
-    outC->_L22[idx3].v_static = kcg_lit_int64(0);
+    outC->_L22[idx3].v_static = kcg_lit_int32(0);
   }
   for (idx4 = 0; idx4 < 50; idx4++) {
     outC->_L18[idx4].valid = kcg_true;
-    outC->_L18[idx4].d_static_abs = kcg_lit_int64(0);
-    outC->_L18[idx4].d_static_LRBG = kcg_lit_int64(0);
+    outC->_L18[idx4].d_static_abs = kcg_lit_int32(0);
+    outC->_L18[idx4].d_static_LRBG = kcg_lit_int32(0);
     outC->_L18[idx4].q_train_length_corr = kcg_true;
-    outC->_L18[idx4].v_static = kcg_lit_int64(0);
+    outC->_L18[idx4].v_static = kcg_lit_int32(0);
   }
   for (idx5 = 0; idx5 < 50; idx5++) {
     outC->_L16[idx5].valid = kcg_true;
-    outC->_L16[idx5].d_static_abs = kcg_lit_int64(0);
-    outC->_L16[idx5].d_static_LRBG = kcg_lit_int64(0);
+    outC->_L16[idx5].d_static_abs = kcg_lit_int32(0);
+    outC->_L16[idx5].d_static_LRBG = kcg_lit_int32(0);
     outC->_L16[idx5].q_train_length_corr = kcg_true;
-    outC->_L16[idx5].v_static = kcg_lit_int64(0);
+    outC->_L16[idx5].v_static = kcg_lit_int32(0);
   }
   outC->_L15 = kcg_true;
   for (idx6 = 0; idx6 < 50; idx6++) {
     outC->_L6[idx6].valid = kcg_true;
-    outC->_L6[idx6].d_static_abs = kcg_lit_int64(0);
-    outC->_L6[idx6].d_static_LRBG = kcg_lit_int64(0);
+    outC->_L6[idx6].d_static_abs = kcg_lit_int32(0);
+    outC->_L6[idx6].d_static_LRBG = kcg_lit_int32(0);
     outC->_L6[idx6].q_train_length_corr = kcg_true;
-    outC->_L6[idx6].v_static = kcg_lit_int64(0);
+    outC->_L6[idx6].v_static = kcg_lit_int32(0);
   }
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
   for (idx7 = 0; idx7 < 50; idx7++) {
     outC->_L5[idx7].valid = kcg_true;
-    outC->_L5[idx7].d_static_abs = kcg_lit_int64(0);
-    outC->_L5[idx7].d_static_LRBG = kcg_lit_int64(0);
+    outC->_L5[idx7].d_static_abs = kcg_lit_int32(0);
+    outC->_L5[idx7].d_static_LRBG = kcg_lit_int32(0);
     outC->_L5[idx7].q_train_length_corr = kcg_true;
-    outC->_L5[idx7].v_static = kcg_lit_int64(0);
+    outC->_L5[idx7].v_static = kcg_lit_int32(0);
   }
   for (idx8 = 0; idx8 < 50; idx8++) {
     outC->_L4[idx8].valid = kcg_true;
-    outC->_L4[idx8].d_static_abs = kcg_lit_int64(0);
-    outC->_L4[idx8].d_static_LRBG = kcg_lit_int64(0);
+    outC->_L4[idx8].d_static_abs = kcg_lit_int32(0);
+    outC->_L4[idx8].d_static_LRBG = kcg_lit_int32(0);
     outC->_L4[idx8].q_train_length_corr = kcg_true;
-    outC->_L4[idx8].v_static = kcg_lit_int64(0);
+    outC->_L4[idx8].v_static = kcg_lit_int32(0);
   }
   for (idx9 = 0; idx9 < 50; idx9++) {
     outC->ProfileLoopOut[idx9].valid = kcg_true;
-    outC->ProfileLoopOut[idx9].d_static_abs = kcg_lit_int64(0);
-    outC->ProfileLoopOut[idx9].d_static_LRBG = kcg_lit_int64(0);
+    outC->ProfileLoopOut[idx9].d_static_abs = kcg_lit_int32(0);
+    outC->ProfileLoopOut[idx9].d_static_LRBG = kcg_lit_int32(0);
     outC->ProfileLoopOut[idx9].q_train_length_corr = kcg_true;
-    outC->ProfileLoopOut[idx9].v_static = kcg_lit_int64(0);
+    outC->ProfileLoopOut[idx9].v_static = kcg_lit_int32(0);
   }
   outC->available = kcg_true;
   for (idx10 = 0; idx10 < 50; idx10++) {
     outC->ProfileOut[idx10].valid = kcg_true;
-    outC->ProfileOut[idx10].d_static_abs = kcg_lit_int64(0);
-    outC->ProfileOut[idx10].d_static_LRBG = kcg_lit_int64(0);
+    outC->ProfileOut[idx10].d_static_abs = kcg_lit_int32(0);
+    outC->ProfileOut[idx10].d_static_LRBG = kcg_lit_int32(0);
     outC->ProfileOut[idx10].q_train_length_corr = kcg_true;
-    outC->ProfileOut[idx10].v_static = kcg_lit_int64(0);
+    outC->ProfileOut[idx10].v_static = kcg_lit_int32(0);
   }
   /* _L29=(TA_SSP_new::SSP_Correct_StartSection#1)/ */
   SSP_Correct_StartSection_init_TA_SSP_new(
@@ -244,6 +244,6 @@ void SSP_Position_SSP_with_BGs_reset_TA_SSP_new(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** SSP_Position_SSP_with_BGs_TA_SSP_new.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

@@ -12,10 +12,10 @@ static inC_ScriptedTrackTest_EnvSim_Internal inputs_ctx_execute;
 outC_ScriptedTrackTest_EnvSim_Internal outputs_ctx;
 
 static void _SCSIM_RestoreInterface(void) {
-    init_kcg_float64(&inputs_ctx.actualTrainPos);
-    init_kcg_float64(&inputs_ctx_execute.actualTrainPos);
-    init_kcg_float64(&inputs_ctx.radioTrainPos);
-    init_kcg_float64(&inputs_ctx_execute.radioTrainPos);
+    init_kcg_float32(&inputs_ctx.actualTrainPos);
+    init_kcg_float32(&inputs_ctx_execute.actualTrainPos);
+    init_kcg_float32(&inputs_ctx.radioTrainPos);
+    init_kcg_float32(&inputs_ctx_execute.radioTrainPos);
     memset((void*)&outputs_ctx, 0, sizeof(outputs_ctx));
 }
 

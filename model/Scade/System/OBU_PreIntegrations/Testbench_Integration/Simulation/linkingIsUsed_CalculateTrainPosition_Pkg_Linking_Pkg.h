@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _linkingIsUsed_CalculateTrainPosition_Pkg_Linking_Pkg_H_
 #define _linkingIsUsed_CalculateTrainPosition_Pkg_Linking_Pkg_H_
@@ -23,10 +23,10 @@ typedef struct {
   kcg_bool init;
   kcg_bool /* _L8/ */ _L8;
   kcg_bool /* _L7/ */ _L7;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L6/ */ _L6;
   kcg_bool /* _L11/ */ _L11;
   kcg_bool /* _L10/ */ _L10;
-  kcg_int64 /* _L9/ */ _L9;
+  kcg_int32 /* _L9/ */ _L9;
   /* ---------------------  sub nodes' contexts  --------------------- */
   outC_positionDerivedFromPassedBG_CalculateTrainPosition_Pkg_BG_utilities_Pkg /* _L28=(CalculateTrainPosition_Pkg::BG_utilities_Pkg::positionDerivedFromPassedBG#1)/ */ Context_positionDerivedFromPassedBG_1;
   outC_indexOfLastBG_CalculateTrainPosition_Pkg_BG_utilities_Pkg /* _L9=(CalculateTrainPosition_Pkg::BG_utilities_Pkg::indexOfLastBG#1)/ */ Context_indexOfLastBG_1;
@@ -44,9 +44,9 @@ typedef struct {
   kcg_bool /* _L18/ */ _L18;
   kcg_bool /* _L19/ */ _L19;
   kcg_bool /* _L22/ */ _L22;
-  kcg_int64 /* _L21/ */ _L21;
+  kcg_int32 /* _L21/ */ _L21;
   kcg_bool /* _L24/ */ _L24;
-  kcg_int64 /* _L23/ */ _L23;
+  kcg_int32 /* _L23/ */ _L23;
   kcg_bool /* _L26/ */ _L26;
   kcg_bool /* _L27/ */ _L27;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L28/ */ _L28;
@@ -54,9 +54,9 @@ typedef struct {
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L30/ */ _L30;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L33/ */ _L33;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L34/ */ _L34;
-  kcg_int64 /* _L37/ */ _L37;
+  kcg_int32 /* _L37/ */ _L37;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L40/ */ _L40;
-  kcg_int64 /* _L39/ */ _L39;
+  kcg_int32 /* _L39/ */ _L39;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L38/ */ _L38;
   kcg_bool /* _L41/ */ _L41;
   kcg_bool /* _L46/ */ _L46;
@@ -88,10 +88,10 @@ extern void linkingIsUsed_init_CalculateTrainPosition_Pkg_Linking_Pkg(
 typedef struct {
   /* --------------------- no memorised outputs  --------------------- */
   /* ----------------------- local memories  ------------------------- */
-  kcg_int64 /* _L9/ */ Context__L9;
+  kcg_int32 /* _L9/ */ Context__L9;
   kcg_bool /* _L10/ */ Context__L10;
   kcg_bool /* _L11/ */ Context__L11;
-  kcg_int64 /* _L6/ */ Context__L6;
+  kcg_int32 /* _L6/ */ Context__L6;
   kcg_bool /* _L7/ */ Context__L7;
   kcg_bool /* _L8/ */ Context__L8;
   kcg_bool Context_init;
@@ -111,6 +111,6 @@ extern void kcg_load_SV_linkingIsUsed_CalculateTrainPosition_Pkg_Linking_Pkg(
 #endif /* _linkingIsUsed_CalculateTrainPosition_Pkg_Linking_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** linkingIsUsed_CalculateTrainPosition_Pkg_Linking_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

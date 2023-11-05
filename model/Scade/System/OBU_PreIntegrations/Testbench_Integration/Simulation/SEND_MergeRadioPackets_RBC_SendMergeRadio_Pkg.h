@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _SEND_MergeRadioPackets_RBC_SendMergeRadio_Pkg_H_
 #define _SEND_MergeRadioPackets_RBC_SendMergeRadio_Pkg_H_
@@ -141,6 +141,6 @@ extern void SEND_MergeRadioPackets_init_RBC_SendMergeRadio_Pkg(
 #endif /* _SEND_MergeRadioPackets_RBC_SendMergeRadio_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** SEND_MergeRadioPackets_RBC_SendMergeRadio_Pkg.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _CheckMVersion_CheckBGConsistency_Pkg_SubFunction_H_
 #define _CheckMVersion_CheckBGConsistency_Pkg_SubFunction_H_
@@ -27,8 +27,8 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   M_VERSION /* _L1/ */ _L1;
   M_VERSION /* _L2/ */ _L2;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L4/ */ _L4;
   kcg_bool /* _L5/ */ _L5;
   kcg_bool /* _L7/ */ _L7;
 } outC_CheckMVersion_CheckBGConsistency_Pkg_SubFunction;
@@ -57,6 +57,6 @@ extern void CheckMVersion_init_CheckBGConsistency_Pkg_SubFunction(
 #endif /* _CheckMVersion_CheckBGConsistency_Pkg_SubFunction_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CheckMVersion_CheckBGConsistency_Pkg_SubFunction.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _iterateASafeData_SDMModelPkg_H_
 #define _iterateASafeData_SDMModelPkg_H_
@@ -25,9 +25,9 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   ASafeRow_T_CalcBrakingCurves_types /* _L1/ */ _L1;
   A_gradient_t_SDM_GradientAcceleration_types /* _L2/ */ _L2;
-  array_float64_100 /* _L4/ */ _L4;
+  array_float32_100 /* _L4/ */ _L4;
   A_internal_real_Type_SDM_Types_Pkg /* _L5/ */ _L5;
-  kcg_float64 /* _L7/ */ _L7;
+  kcg_float32 /* _L7/ */ _L7;
 } outC_iterateASafeData_SDMModelPkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -54,6 +54,6 @@ extern void iterateASafeData_init_SDMModelPkg(
 #endif /* _iterateASafeData_SDMModelPkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** iterateASafeData_SDMModelPkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

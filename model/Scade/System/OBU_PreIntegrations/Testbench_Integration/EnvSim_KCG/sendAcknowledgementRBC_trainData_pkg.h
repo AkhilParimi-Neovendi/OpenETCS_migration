@@ -34,7 +34,7 @@ typedef struct {
   T_TRAIN /* _L34/ */ _L34;
   T_TRAIN /* _L36/ */ _L36;
   T_TRAIN /* _L37/ */ _L37;
-  kcg_int64 /* _L38/ */ _L38;
+  kcg_int32 /* _L38/ */ _L38;
   trainDataStatus_T_trainData_Types_pkg /* _L43/ */ _L43;
   kcg_bool /* _L42/ */ _L42;
   trainDataStatus_T_trainData_Types_pkg /* _L41/ */ _L41;

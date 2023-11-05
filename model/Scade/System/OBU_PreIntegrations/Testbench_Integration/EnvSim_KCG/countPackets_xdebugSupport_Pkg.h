@@ -15,7 +15,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* count/ */ count;
+  kcg_int32 /* count/ */ count;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -25,13 +25,13 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   API_TrackSideInput_T_API_Msg_Pkg /* _L1/ */ _L1;
   Metadata_T_Common_Types_Pkg /* _L2/ */ _L2;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L6/ */ _L6;
   kcg_bool /* _L7/ */ _L7;
   CompressedPackets_T_Common_Types_Pkg /* _L10/ */ _L10;
-  kcg_int64 /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L11/ */ _L11;
+  kcg_int32 /* _L12/ */ _L12;
 } outC_countPackets_xdebugSupport_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

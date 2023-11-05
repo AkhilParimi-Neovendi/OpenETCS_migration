@@ -30,8 +30,8 @@ void ConvertP011_RBC_Model_Pkg_TrainTrackMsgConversion(
     &outC->_L20,
     (aTractionIdentity_T_Packet_TrainTypes_Pkg *)
       &cEMPTY_TRACTION_IDENTITY_RBC_Model_Pkg_TrainTrackMsgConversion);
-  outC->_L19 = kcg_lit_int64(0);
-  outC->_L18 = kcg_lit_int64(0);
+  outC->_L19 = kcg_lit_int32(0);
+  outC->_L18 = kcg_lit_int32(0);
   kcg_copy_P011_TM_TrainToTrack(&outC->_L1, newP011);
   kcg_copy_P011_ntc_list_TM_TrainToTrack(&outC->_L2, &outC->_L1.nid_ntc_list);
   kcg_copy_P011_ntc_list_TM_TrainToTrack(&_7_noname, &outC->_L2);
@@ -92,100 +92,100 @@ void ConvertP011_init_RBC_Model_Pkg_TrainTrackMsgConversion(
   static kcg_size idx9;
 
   for (idx = 0; idx < 5; idx++) {
-    outC->_L21[idx] = kcg_lit_int64(0);
+    outC->_L21[idx] = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 4; idx1++) {
     outC->_L20[idx1].m_voltage = M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->_L20[idx1].nid_ctraction = kcg_lit_int64(0);
+    outC->_L20[idx1].nid_ctraction = kcg_lit_int32(0);
   }
-  outC->_L19 = kcg_lit_int64(0);
-  outC->_L18 = kcg_lit_int64(0);
+  outC->_L19 = kcg_lit_int32(0);
+  outC->_L18 = kcg_lit_int32(0);
   outC->_L17.valid = kcg_true;
   outC->_L17.nc_cdtrain = NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L17.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->_L17.l_train = kcg_lit_int64(0);
-  outC->_L17.v_maxtrain = kcg_lit_int64(0);
+  outC->_L17.l_train = kcg_lit_int32(0);
+  outC->_L17.v_maxtrain = kcg_lit_int32(0);
   outC->_L17.m_loadinggoage =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L17.m_axleloadcat = M_AXLELOADCAT_A;
   outC->_L17.m_airtight = M_AIRTIGHT_Not_fitted;
-  outC->_L17.n_axle = kcg_lit_int64(0);
-  outC->_L17.nIter_tractionIdentity = kcg_lit_int64(0);
+  outC->_L17.n_axle = kcg_lit_int32(0);
+  outC->_L17.nIter_tractionIdentity = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 4; idx2++) {
     outC->_L17.tractionIdentity[idx2].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->_L17.tractionIdentity[idx2].nid_ctraction = kcg_lit_int64(0);
+    outC->_L17.tractionIdentity[idx2].nid_ctraction = kcg_lit_int32(0);
   }
-  outC->_L17.nIter_ntc = kcg_lit_int64(0);
+  outC->_L17.nIter_ntc = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 5; idx3++) {
-    outC->_L17.nid_ntc[idx3] = kcg_lit_int64(0);
+    outC->_L17.nid_ntc[idx3] = kcg_lit_int32(0);
   }
   for (idx4 = 0; idx4 < 5; idx4++) {
-    outC->_L2[idx4] = kcg_lit_int64(0);
+    outC->_L2[idx4] = kcg_lit_int32(0);
   }
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 4; idx5++) {
     outC->_L4[idx5].m_voltage = M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->_L4[idx5].nid_ctraction = kcg_lit_int64(0);
+    outC->_L4[idx5].nid_ctraction = kcg_lit_int32(0);
   }
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
   outC->_L7 = M_AIRTIGHT_Not_fitted;
   outC->_L8 = M_AXLELOADCAT_A;
   outC->_L9 =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
   outC->_L12 =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->_L13 = NC_CDTRAIN_Cant_Deficiency_80_mm;
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L15 = kcg_lit_int64(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L15 = kcg_lit_int32(0);
   outC->_L16 = kcg_true;
   outC->_L1.valid = kcg_true;
-  outC->_L1.nid_packet = kcg_lit_int64(0);
-  outC->_L1.l_packet = kcg_lit_int64(0);
+  outC->_L1.nid_packet = kcg_lit_int32(0);
+  outC->_L1.l_packet = kcg_lit_int32(0);
   outC->_L1.nc_cdtrain = NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L1.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->_L1.l_train = kcg_lit_int64(0);
-  outC->_L1.v_maxtrain = kcg_lit_int64(0);
+  outC->_L1.l_train = kcg_lit_int32(0);
+  outC->_L1.v_maxtrain = kcg_lit_int32(0);
   outC->_L1.m_loadinggauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L1.m_axleloadcat = M_AXLELOADCAT_A;
   outC->_L1.m_airtight = M_AIRTIGHT_Not_fitted;
-  outC->_L1.n_axle = kcg_lit_int64(0);
-  outC->_L1.n_iter_voltage = kcg_lit_int64(0);
+  outC->_L1.n_axle = kcg_lit_int32(0);
+  outC->_L1.n_iter_voltage = kcg_lit_int32(0);
   for (idx6 = 0; idx6 < 4; idx6++) {
     outC->_L1.voltage_list[idx6].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->_L1.voltage_list[idx6].nid_ctraction = kcg_lit_int64(0);
+    outC->_L1.voltage_list[idx6].nid_ctraction = kcg_lit_int32(0);
   }
-  outC->_L1.n_iter_nid_ntc = kcg_lit_int64(0);
+  outC->_L1.n_iter_nid_ntc = kcg_lit_int32(0);
   for (idx7 = 0; idx7 < 5; idx7++) {
-    outC->_L1.nid_ntc_list[idx7] = kcg_lit_int64(0);
+    outC->_L1.nid_ntc_list[idx7] = kcg_lit_int32(0);
   }
   outC->oldP011.valid = kcg_true;
   outC->oldP011.nc_cdtrain = NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->oldP011.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->oldP011.l_train = kcg_lit_int64(0);
-  outC->oldP011.v_maxtrain = kcg_lit_int64(0);
+  outC->oldP011.l_train = kcg_lit_int32(0);
+  outC->oldP011.v_maxtrain = kcg_lit_int32(0);
   outC->oldP011.m_loadinggoage =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->oldP011.m_axleloadcat = M_AXLELOADCAT_A;
   outC->oldP011.m_airtight = M_AIRTIGHT_Not_fitted;
-  outC->oldP011.n_axle = kcg_lit_int64(0);
-  outC->oldP011.nIter_tractionIdentity = kcg_lit_int64(0);
+  outC->oldP011.n_axle = kcg_lit_int32(0);
+  outC->oldP011.nIter_tractionIdentity = kcg_lit_int32(0);
   for (idx8 = 0; idx8 < 4; idx8++) {
     outC->oldP011.tractionIdentity[idx8].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->oldP011.tractionIdentity[idx8].nid_ctraction = kcg_lit_int64(0);
+    outC->oldP011.tractionIdentity[idx8].nid_ctraction = kcg_lit_int32(0);
   }
-  outC->oldP011.nIter_ntc = kcg_lit_int64(0);
+  outC->oldP011.nIter_ntc = kcg_lit_int32(0);
   for (idx9 = 0; idx9 < 5; idx9++) {
-    outC->oldP011.nid_ntc[idx9] = kcg_lit_int64(0);
+    outC->oldP011.nid_ntc[idx9] = kcg_lit_int32(0);
   }
 }
 #endif /* KCG_USER_DEFINED_INIT */

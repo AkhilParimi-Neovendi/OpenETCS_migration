@@ -28,8 +28,8 @@ typedef struct {
   BGCollector_T_Receive_TrackSide_Msg_Pkg /* IfBlock1:else:_L20/ */ _L20_else_IfBlock1;
   Telegram_T_BG_Types_Pkg /* IfBlock1:else:_L19/ */ _L19_else_IfBlock1;
   kcg_bool /* isDefined/ */ isDefined;
-  kcg_int64 /* _L2/ */ _L2;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L2/ */ _L2;
+  kcg_int32 /* _L4/ */ _L4;
   kcg_bool /* _L6/ */ _L6;
   BGCollector_T_Receive_TrackSide_Msg_Pkg /* _L8/ */ _L8;
 } outC_checkInit_Receive_TrackSide_Msg_Pkg;

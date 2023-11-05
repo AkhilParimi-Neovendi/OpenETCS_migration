@@ -42,16 +42,16 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   BaliseTelegramHeader_int_T_TM /* _L1/ */ _L1;
-  kcg_int64 /* _L11/ */ _L11;
-  kcg_int64 /* _L10/ */ _L10;
-  kcg_int64 /* _L9/ */ _L9;
-  kcg_int64 /* _L8/ */ _L8;
-  kcg_int64 /* _L7/ */ _L7;
-  kcg_int64 /* _L6/ */ _L6;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L11/ */ _L11;
+  kcg_int32 /* _L10/ */ _L10;
+  kcg_int32 /* _L9/ */ _L9;
+  kcg_int32 /* _L8/ */ _L8;
+  kcg_int32 /* _L7/ */ _L7;
+  kcg_int32 /* _L6/ */ _L6;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L2/ */ _L2;
   TelegramHeader_T_BG_Types_Pkg /* _L22/ */ _L22;
   Q_UPDOWN /* _L23/ */ _L23;
   M_VERSION /* _L24/ */ _L24;

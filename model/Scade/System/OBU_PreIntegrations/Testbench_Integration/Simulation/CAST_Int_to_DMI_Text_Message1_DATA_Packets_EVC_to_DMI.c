@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -36,7 +36,7 @@ void CAST_Int_to_DMI_Text_Message1_DATA_Packets_EVC_to_DMI(
     outC->_L31,
     &outC->Context_CAST_Int_to_Q_TEXTCLASS_1);
   outC->_L33 = outC->Context_CAST_Int_to_Q_TEXTCLASS_1.q_textclass;
-  kcg_copy_array_int64_5(&outC->_L21, (array_int64_5 *) &outC->_L20[0]);
+  kcg_copy_array_int32_5(&outC->_L21, (array_int32_5 *) &outC->_L20[0]);
   outC->_L23 = outC->_L21[3];
   /* _L29=(DATA::Variables::CAST_int_to_DMI_Q_TEXT#1)/ */
   CAST_int_to_DMI_Q_TEXT_DATA_Variables(
@@ -77,41 +77,41 @@ void CAST_Int_to_DMI_Text_Message1_init_DATA_Packets_EVC_to_DMI(
   for (idx = 0; idx < 255; idx++) {
     outC->_L35[idx] = ' ';
   }
-  outC->_L25 = kcg_lit_int64(0);
-  outC->_L24 = kcg_lit_int64(0);
-  outC->_L23 = kcg_lit_int64(0);
-  outC->_L22 = kcg_lit_int64(0);
+  outC->_L25 = kcg_lit_int32(0);
+  outC->_L24 = kcg_lit_int32(0);
+  outC->_L23 = kcg_lit_int32(0);
+  outC->_L22 = kcg_lit_int32(0);
   outC->_L34 = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L33 = Q_TEXTCLASS_Auxiliary_Information;
-  outC->_L32 = kcg_lit_int64(0);
-  outC->_L31 = kcg_lit_int64(0);
+  outC->_L32 = kcg_lit_int32(0);
+  outC->_L31 = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 255; idx1++) {
-    outC->_L30[idx1] = kcg_lit_int64(0);
+    outC->_L30[idx1] = kcg_lit_int32(0);
   }
   outC->_L29 = balise_read_error_DMI_Types_Pkg;
   outC->_L27 = kcg_true;
-  outC->_L26 = kcg_lit_int64(0);
+  outC->_L26 = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 5; idx2++) {
-    outC->_L21[idx2] = kcg_lit_int64(0);
+    outC->_L21[idx2] = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 262; idx3++) {
-    outC->_L20[idx3] = kcg_lit_int64(0);
+    outC->_L20[idx3] = kcg_lit_int32(0);
   }
   outC->_L19.valid = kcg_true;
-  outC->_L19.system_clock = kcg_lit_int64(0);
-  outC->_L19.textMessage_ID = kcg_lit_int64(0);
+  outC->_L19.system_clock = kcg_lit_int32(0);
+  outC->_L19.textMessage_ID = kcg_lit_int32(0);
   outC->_L19.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L19.l_text = kcg_lit_int64(0);
+  outC->_L19.l_text = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 255; idx4++) {
     outC->_L19.x_text[idx4] = ' ';
   }
   outC->_L19.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L19.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->dmi_text_message_ct.valid = kcg_true;
-  outC->dmi_text_message_ct.system_clock = kcg_lit_int64(0);
-  outC->dmi_text_message_ct.textMessage_ID = kcg_lit_int64(0);
+  outC->dmi_text_message_ct.system_clock = kcg_lit_int32(0);
+  outC->dmi_text_message_ct.textMessage_ID = kcg_lit_int32(0);
   outC->dmi_text_message_ct.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->dmi_text_message_ct.l_text = kcg_lit_int64(0);
+  outC->dmi_text_message_ct.l_text = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 255; idx5++) {
     outC->dmi_text_message_ct.x_text[idx5] = ' ';
   }
@@ -161,6 +161,6 @@ void CAST_Int_to_DMI_Text_Message1_reset_DATA_Packets_EVC_to_DMI(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_Int_to_DMI_Text_Message1_DATA_Packets_EVC_to_DMI.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

@@ -24,7 +24,7 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   Telegram_T_BG_Types_Pkg /* _L1/ */ _L1;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   kcg_bool /* _L4/ */ _L4;
   TelegramArray_T_BG_Types_Pkg /* _L5/ */ _L5;
   Telegram_T_BG_Types_Pkg /* _L6/ */ _L6;

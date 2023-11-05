@@ -50,14 +50,14 @@ void validate_q_sleepsession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L1.msgSrc = msrc_undefined_Common_Types_Pkg;
   outC->_L1.q_dir = Q_DIR_Reverse;
   outC->_L1.q_rbc = Q_RBC_Terminate_communication_session;
-  outC->_L1.nid_c = kcg_lit_int64(0);
-  outC->_L1.nid_RBC = kcg_lit_int64(0);
-  outC->_L1.nid_radio = kcg_lit_int64(0);
+  outC->_L1.nid_c = kcg_lit_int32(0);
+  outC->_L1.nid_RBC = kcg_lit_int32(0);
+  outC->_L1.nid_radio = kcg_lit_int32(0);
   outC->_L1.q_sleepsession = Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L1.origin.valid = kcg_true;
-  outC->_L1.origin.nid_c = kcg_lit_int64(0);
-  outC->_L1.origin.rbc_id = kcg_lit_int64(0);
-  outC->_L1.origin.device_id = kcg_lit_int64(0);
+  outC->_L1.origin.nid_c = kcg_lit_int32(0);
+  outC->_L1.origin.rbc_id = kcg_lit_int32(0);
+  outC->_L1.origin.device_id = kcg_lit_int32(0);
   outC->_L2 = M_MODE_Full_Supervision;
   outC->execute = kcg_true;
 }

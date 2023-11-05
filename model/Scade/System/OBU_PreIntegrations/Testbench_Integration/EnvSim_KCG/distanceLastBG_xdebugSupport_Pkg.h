@@ -14,7 +14,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_float64 /* distance/ */ distance;
+  kcg_float32 /* distance/ */ distance;
   NID_BG /* lastBG/ */ lastBG;
   /* -----------------------  no local probes  ----------------------- */
   /* ----------------------- local memories  ------------------------- */
@@ -25,17 +25,17 @@ typedef struct {
   kcg_bool /* IfBlock1: */ IfBlock1_clock;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_float64 /* IfBlock1:then:_L9/ */ _L9_then_IfBlock1;
+  kcg_float32 /* IfBlock1:then:_L9/ */ _L9_then_IfBlock1;
   L_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:then:_L8/ */ _L8_then_IfBlock1;
   OdometryLocations_T_Obu_BasicTypes_Pkg /* IfBlock1:then:_L7/ */ _L7_then_IfBlock1;
   odometry_T_Obu_BasicTypes_Pkg /* IfBlock1:then:_L6/ */ _L6_then_IfBlock1;
   NID_BG /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
   BG_Header_T_BG_Types_Pkg /* IfBlock1:then:_L3/ */ _L3_then_IfBlock1;
   ReceivedMessage_T_Common_Types_Pkg /* IfBlock1:then:_L2/ */ _L2_then_IfBlock1;
-  kcg_float64 /* IfBlock1:else:_L10/ */ _L10_else_IfBlock1;
-  kcg_float64 /* IfBlock1:else:_L9/ */ _L9_else_IfBlock1;
-  kcg_float64 /* IfBlock1:else:_L8/ */ _L8_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:_L7/ */ _L7_else_IfBlock1;
+  kcg_float32 /* IfBlock1:else:_L10/ */ _L10_else_IfBlock1;
+  kcg_float32 /* IfBlock1:else:_L9/ */ _L9_else_IfBlock1;
+  kcg_float32 /* IfBlock1:else:_L8/ */ _L8_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:_L7/ */ _L7_else_IfBlock1;
   L_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:else:_L4/ */ _L4_else_IfBlock1;
   OdometryLocations_T_Obu_BasicTypes_Pkg /* IfBlock1:else:_L5/ */ _L5_else_IfBlock1;
   odometry_T_Obu_BasicTypes_Pkg /* IfBlock1:else:_L6/ */ _L6_else_IfBlock1;

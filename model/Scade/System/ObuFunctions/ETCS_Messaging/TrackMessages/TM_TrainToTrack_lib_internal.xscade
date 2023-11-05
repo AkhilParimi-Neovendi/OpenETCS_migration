@@ -176,7 +176,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="int64"/>
+								<TypeRef name="int32"/>
 							</type>
 						</NamedType>
 					</type>
@@ -236,7 +236,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="int64"/>
+												<TypeRef name="int32"/>
 											</type>
 										</NamedType>
 									</type>
@@ -322,7 +322,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="int64"/>
+												<TypeRef name="int32"/>
 											</type>
 										</NamedType>
 									</type>
@@ -436,18 +436,18 @@
 										</EquationGE>
 										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/fd8fe/4644/B20/55ac856f5cfc" dstEquation="!ed/fd901/4644/B20/55ac856f6a7c">
 											<positions>
-												<Point x="10530" y="5398"/>
-												<Point x="13520" y="5398"/>
-												<Point x="13520" y="5398"/>
-												<Point x="16536" y="5398"/>
+												<Point x="10520" y="5398"/>
+												<Point x="13526" y="5398"/>
+												<Point x="13526" y="5398"/>
+												<Point x="16531" y="5398"/>
 											</positions>
 										</Edge>
 										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/fd8ff/4644/B20/55ac856f534e" dstEquation="!ed/fd8fe/4644/B20/55ac856f5cfc">
 											<positions>
-												<Point x="2778" y="5398"/>
-												<Point x="4207" y="5398"/>
-												<Point x="4207" y="5398"/>
-												<Point x="5662" y="5398"/>
+												<Point x="2773" y="5398"/>
+												<Point x="4212" y="5398"/>
+												<Point x="4212" y="5398"/>
+												<Point x="5652" y="5398"/>
 											</positions>
 										</Edge>
 										<EquationGE presentable="!ed/fd8fe/4644/B20/55ac856f5cfc">
@@ -475,7 +475,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="NID_RADIO"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -489,7 +489,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -503,7 +503,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="NID_RADIO"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -515,12 +515,24 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="NID_RADIO"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
 							<pragmas>
 								<ed:Variable oid="!ed/fdae8/4644/B20/55ac8789786c"/>
+							</pragmas>
+						</Variable>
+						<Variable name="_L15">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="int64"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Variable oid="!ed/ff492a/6FA8/6C5C/6544fcda1137"/>
 							</pragmas>
 						</Variable>
 					</locals>
@@ -557,13 +569,13 @@
 								<ed:Equation oid="!ed/fd97a/4644/B20/55ac856f5b25"/>
 							</pragmas>
 						</Equation>
-						<!-- _L13 = TM_conversions::CAST_Int_to_NID_RADIO(_L1); -->
+						<!-- _L13 = TM_conversions::CAST_Int_to_NID_RADIO(_L15); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L13"/>
 							</lefts>
 							<right>
-								<!-- TM_conversions::CAST_Int_to_NID_RADIO(_L1) -->
+								<!-- TM_conversions::CAST_Int_to_NID_RADIO(_L15) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="1">
@@ -575,7 +587,7 @@
 									<callParameters>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="_L1"/>
+												<ConstVarRef name="_L15"/>
 											</path>
 										</IdExpression>
 									</callParameters>
@@ -593,6 +605,30 @@
 							</right>
 							<pragmas>
 								<ed:Equation oid="!ed/fdae7/4644/B20/55ac87896b7"/>
+							</pragmas>
+						</Equation>
+						<!-- _L15 = (_L1 : int64); -->
+						<Equation>
+							<lefts>
+								<VariableRef name="_L15"/>
+							</lefts>
+							<right>
+								<!-- (_L1 : int64) -->
+								<NumericCastOp name="2">
+									<type>
+										<TypeRef name="int64"/>
+									</type>
+									<flow>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="_L1"/>
+											</path>
+										</IdExpression>
+									</flow>
+								</NumericCastOp>
+							</right>
+							<pragmas>
+								<ed:Equation oid="!ed/ff4929/6FA8/6C5C/6544fcda5af7"/>
 							</pragmas>
 						</Equation>
 					</data>
@@ -627,18 +663,34 @@
 										</EquationGE>
 										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/fdae7/4644/B20/55ac87896b7" dstEquation="!ed/fd97a/4644/B20/55ac856f5b25">
 											<positions>
-												<Point x="9657" y="4789"/>
-												<Point x="11086" y="4789"/>
-												<Point x="11086" y="4789"/>
-												<Point x="12515" y="4789"/>
+												<Point x="9673" y="4784"/>
+												<Point x="11091" y="4784"/>
+												<Point x="11091" y="4784"/>
+												<Point x="12510" y="4784"/>
 											</positions>
 										</Edge>
-										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/fd979/4644/B20/55ac856f1689" dstEquation="!ed/fdae7/4644/B20/55ac87896b7">
+										<EquationGE presentable="!ed/ff4929/6FA8/6C5C/6544fcda5af7">
+											<position>
+												<Point x="2434" y="4276"/>
+											</position>
+											<size>
+												<Size width="1016" height="1016"/>
+											</size>
+										</EquationGE>
+										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/ff4929/6FA8/6C5C/6544fcda5af7" dstEquation="!ed/fdae7/4644/B20/55ac87896b7">
 											<positions>
-												<Point x="1402" y="4789"/>
-												<Point x="3307" y="4789"/>
-												<Point x="3307" y="4789"/>
-												<Point x="5239" y="4789"/>
+												<Point x="3450" y="4784"/>
+												<Point x="4339" y="4784"/>
+												<Point x="4339" y="4784"/>
+												<Point x="5228" y="4784"/>
+											</positions>
+										</Edge>
+										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/fd979/4644/B20/55ac856f1689" dstEquation="!ed/ff4929/6FA8/6C5C/6544fcda5af7">
+											<positions>
+												<Point x="1397" y="4784"/>
+												<Point x="1905" y="4784"/>
+												<Point x="1905" y="4784"/>
+												<Point x="2434" y="4784"/>
 											</positions>
 										</Edge>
 									</presentationElements>
@@ -695,7 +747,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="int64"/>
+												<TypeRef name="int32"/>
 											</type>
 										</NamedType>
 									</type>
@@ -736,7 +788,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -748,7 +800,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1049,7 +1101,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1113,7 +1165,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1125,7 +1177,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1137,7 +1189,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1161,7 +1213,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1185,7 +1237,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1197,7 +1249,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -2035,7 +2087,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -2061,7 +2113,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -2241,7 +2293,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="int64"/>
+												<TypeRef name="int32"/>
 											</type>
 										</NamedType>
 									</type>
@@ -2436,7 +2488,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="NID_RADIO"/>
+												<TypeRef name="int32"/>
 											</type>
 										</NamedType>
 									</type>
@@ -2550,26 +2602,26 @@
 										</EquationGE>
 										<EquationGE presentable="!ed/39c28b/4AB4/E3C/5613fe556732">
 											<position>
-												<Point x="5662" y="3731"/>
+												<Point x="6498" y="3725"/>
 											</position>
 											<size>
 												<Size width="4868" height="3307"/>
 											</size>
 										</EquationGE>
-										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/39c28b/4AB4/E3C/5613fe556732" dstEquation="!ed/39c28a/4AB4/E3C/5613fe5535db">
-											<positions>
-												<Point x="10530" y="5398"/>
-												<Point x="13520" y="5398"/>
-												<Point x="13520" y="5398"/>
-												<Point x="16536" y="5398"/>
-											</positions>
-										</Edge>
 										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/39c289/4AB4/E3C/5613fe55eeb" dstEquation="!ed/39c28b/4AB4/E3C/5613fe556732">
 											<positions>
-												<Point x="2778" y="5398"/>
-												<Point x="4207" y="5398"/>
-												<Point x="4207" y="5398"/>
-												<Point x="5662" y="5398"/>
+												<Point x="2773" y="5398"/>
+												<Point x="4212" y="5398"/>
+												<Point x="4212" y="5376"/>
+												<Point x="6498" y="5376"/>
+											</positions>
+										</Edge>
+										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/39c28b/4AB4/E3C/5613fe556732" dstEquation="!ed/39c28a/4AB4/E3C/5613fe5535db">
+											<positions>
+												<Point x="11367" y="5376"/>
+												<Point x="13526" y="5376"/>
+												<Point x="13526" y="5376"/>
+												<Point x="16531" y="5376"/>
 											</positions>
 										</Edge>
 									</presentationElements>
@@ -2589,7 +2641,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -2603,7 +2655,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="NID_RADIO"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -2617,7 +2669,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -2635,6 +2687,30 @@
 							</type>
 							<pragmas>
 								<ed:Variable oid="!ed/39c2a7/4AB4/E3C/5613fe7735df"/>
+							</pragmas>
+						</Variable>
+						<Variable name="_L15">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="int32"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Variable oid="!ed/ff4987/6FA8/6C5C/6544fea84157"/>
+							</pragmas>
+						</Variable>
+						<Variable name="_L16">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="int64"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Variable oid="!ed/ff4a49/6FA8/6C5C/654504cd3bd3"/>
 							</pragmas>
 						</Variable>
 					</locals>
@@ -2655,7 +2731,7 @@
 								<ed:Equation oid="!ed/39c2a2/4AB4/E3C/5613fe7760a4"/>
 							</pragmas>
 						</Equation>
-						<!-- section_arrays = _L13; -->
+						<!-- section_arrays = _L15; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="section_arrays"/>
@@ -2663,7 +2739,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="_L13"/>
+										<ConstVarRef name="_L15"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -2671,13 +2747,13 @@
 								<ed:Equation oid="!ed/39c2a3/4AB4/E3C/5613fe77308e"/>
 							</pragmas>
 						</Equation>
-						<!-- _L13 = TM_conversions::CAST_NID_RADIO_to_int(_L1); -->
+						<!-- _L13 = TM_conversions::CAST_NID_RADIO_to_int(_L16); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L13"/>
 							</lefts>
 							<right>
-								<!-- TM_conversions::CAST_NID_RADIO_to_int(_L1) -->
+								<!-- TM_conversions::CAST_NID_RADIO_to_int(_L16) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="1">
@@ -2689,7 +2765,7 @@
 									<callParameters>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="_L1"/>
+												<ConstVarRef name="_L16"/>
 											</path>
 										</IdExpression>
 									</callParameters>
@@ -2707,6 +2783,54 @@
 							</right>
 							<pragmas>
 								<ed:Equation oid="!ed/39c2a4/4AB4/E3C/5613fe77417f"/>
+							</pragmas>
+						</Equation>
+						<!-- _L15 = (_L13 : int32); -->
+						<Equation>
+							<lefts>
+								<VariableRef name="_L15"/>
+							</lefts>
+							<right>
+								<!-- (_L13 : int32) -->
+								<NumericCastOp name="2">
+									<type>
+										<TypeRef name="int32"/>
+									</type>
+									<flow>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="_L13"/>
+											</path>
+										</IdExpression>
+									</flow>
+								</NumericCastOp>
+							</right>
+							<pragmas>
+								<ed:Equation oid="!ed/ff4986/6FA8/6C5C/6544fea8f5a"/>
+							</pragmas>
+						</Equation>
+						<!-- _L16 = (_L1 : int64); -->
+						<Equation>
+							<lefts>
+								<VariableRef name="_L16"/>
+							</lefts>
+							<right>
+								<!-- (_L1 : int64) -->
+								<NumericCastOp name="3">
+									<type>
+										<TypeRef name="int64"/>
+									</type>
+									<flow>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="_L1"/>
+											</path>
+										</IdExpression>
+									</flow>
+								</NumericCastOp>
+							</right>
+							<pragmas>
+								<ed:Equation oid="!ed/ff4a48/6FA8/6C5C/654504cde46"/>
 							</pragmas>
 						</Equation>
 					</data>
@@ -2739,20 +2863,52 @@
 												<Size width="4434" height="1418"/>
 											</size>
 										</EquationGE>
-										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/39c2a4/4AB4/E3C/5613fe77417f" dstEquation="!ed/39c2a3/4AB4/E3C/5613fe77308e">
+										<EquationGE presentable="!ed/ff4986/6FA8/6C5C/6544fea8f5a">
+											<position>
+												<Point x="10647" y="4276"/>
+											</position>
+											<size>
+												<Size width="1016" height="1016"/>
+											</size>
+										</EquationGE>
+										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/39c2a4/4AB4/E3C/5613fe77417f" dstEquation="!ed/ff4986/6FA8/6C5C/6544fea8f5a">
 											<positions>
-												<Point x="9657" y="4789"/>
-												<Point x="11086" y="4789"/>
-												<Point x="11086" y="4789"/>
-												<Point x="12515" y="4789"/>
+												<Point x="9673" y="4784"/>
+												<Point x="10160" y="4784"/>
+												<Point x="10160" y="4784"/>
+												<Point x="10647" y="4784"/>
 											</positions>
 										</Edge>
-										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/39c2a2/4AB4/E3C/5613fe7760a4" dstEquation="!ed/39c2a4/4AB4/E3C/5613fe77417f">
+										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/ff4986/6FA8/6C5C/6544fea8f5a" dstEquation="!ed/39c2a3/4AB4/E3C/5613fe77308e">
 											<positions>
-												<Point x="1402" y="4789"/>
-												<Point x="3307" y="4789"/>
-												<Point x="3307" y="4789"/>
-												<Point x="5239" y="4789"/>
+												<Point x="11663" y="4784"/>
+												<Point x="12086" y="4784"/>
+												<Point x="12086" y="4784"/>
+												<Point x="12510" y="4784"/>
+											</positions>
+										</Edge>
+										<EquationGE presentable="!ed/ff4a48/6FA8/6C5C/654504cde46">
+											<position>
+												<Point x="3069" y="4276"/>
+											</position>
+											<size>
+												<Size width="1016" height="1016"/>
+											</size>
+										</EquationGE>
+										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/ff4a48/6FA8/6C5C/654504cde46" dstEquation="!ed/39c2a4/4AB4/E3C/5613fe77417f">
+											<positions>
+												<Point x="4085" y="4784"/>
+												<Point x="4636" y="4784"/>
+												<Point x="4636" y="4784"/>
+												<Point x="5228" y="4784"/>
+											</positions>
+										</Edge>
+										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/39c2a2/4AB4/E3C/5613fe7760a4" dstEquation="!ed/ff4a48/6FA8/6C5C/654504cde46">
+											<positions>
+												<Point x="1397" y="4784"/>
+												<Point x="3006" y="4784"/>
+												<Point x="3006" y="4784"/>
+												<Point x="3069" y="4784"/>
 											</positions>
 										</Edge>
 									</presentationElements>
@@ -2853,7 +3009,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -2877,7 +3033,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -2891,7 +3047,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="int64"/>
+												<TypeRef name="int32"/>
 											</type>
 										</NamedType>
 									</type>
@@ -3256,7 +3412,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -3268,7 +3424,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -3332,7 +3488,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -3356,7 +3512,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -3368,7 +3524,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -3380,7 +3536,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -3392,7 +3548,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -3404,7 +3560,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -4024,7 +4180,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -4048,7 +4204,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -4062,7 +4218,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -4076,7 +4232,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -4100,7 +4256,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -4112,7 +4268,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -4124,7 +4280,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -4558,7 +4714,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -4586,7 +4742,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>

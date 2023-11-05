@@ -83,61 +83,61 @@ void d_RSM_start_init_TargetLimits_Pkg(outC_d_RSM_start_TargetLimits_Pkg *outC)
   static kcg_size idx6;
   static kcg_size idx7;
 
-  outC->_L26.Traction = kcg_lit_float64(0.0);
-  outC->_L26.berem = kcg_lit_float64(0.0);
-  outC->_L26.bs = kcg_lit_float64(0.0);
-  outC->_L26.bs1 = kcg_lit_float64(0.0);
-  outC->_L26.bs2 = kcg_lit_float64(0.0);
+  outC->_L26.Traction = kcg_lit_float32(0.0);
+  outC->_L26.berem = kcg_lit_float32(0.0);
+  outC->_L26.bs = kcg_lit_float32(0.0);
+  outC->_L26.bs1 = kcg_lit_float32(0.0);
+  outC->_L26.bs2 = kcg_lit_float32(0.0);
   outC->_L26.inhComp = kcg_true;
-  outC->_L26.indication = kcg_lit_float64(0.0);
+  outC->_L26.indication = kcg_lit_float32(0.0);
   outC->_L24 = kcg_true;
-  outC->_L22 = kcg_lit_float64(0.0);
-  outC->_L21 = kcg_lit_float64(0.0);
-  outC->_L20 = kcg_lit_float64(0.0);
-  outC->_L19 = kcg_lit_float64(0.0);
-  outC->_L18 = kcg_lit_float64(0.0);
-  outC->_L16 = kcg_lit_float64(0.0);
-  outC->_L14 = kcg_lit_float64(0.0);
+  outC->_L22 = kcg_lit_float32(0.0);
+  outC->_L21 = kcg_lit_float32(0.0);
+  outC->_L20 = kcg_lit_float32(0.0);
+  outC->_L19 = kcg_lit_float32(0.0);
+  outC->_L18 = kcg_lit_float32(0.0);
+  outC->_L16 = kcg_lit_float32(0.0);
+  outC->_L14 = kcg_lit_float32(0.0);
   for (idx = 0; idx < 114; idx++) {
-    outC->_L13.distances[idx] = kcg_lit_float64(0.0);
+    outC->_L13.distances[idx] = kcg_lit_float32(0.0);
   }
   for (idx1 = 0; idx1 < 114; idx1++) {
-    outC->_L13.speeds[idx1] = kcg_lit_float64(0.0);
+    outC->_L13.speeds[idx1] = kcg_lit_float32(0.0);
   }
   for (idx2 = 0; idx2 < 114; idx2++) {
-    outC->_L13.accelerations[idx2] = kcg_lit_float64(0.0);
+    outC->_L13.accelerations[idx2] = kcg_lit_float32(0.0);
   }
   for (idx3 = 0; idx3 < 114; idx3++) {
     outC->_L13.valid[idx3] = kcg_true;
   }
   outC->_L11 = kcg_true;
-  outC->_L12 = kcg_lit_float64(0.0);
+  outC->_L12 = kcg_lit_float32(0.0);
   outC->_L5 = kcg_true;
-  outC->_L7 = kcg_lit_float64(0.0);
-  outC->_L8.Traction = kcg_lit_float64(0.0);
-  outC->_L8.berem = kcg_lit_float64(0.0);
-  outC->_L8.bs = kcg_lit_float64(0.0);
-  outC->_L8.bs1 = kcg_lit_float64(0.0);
-  outC->_L8.bs2 = kcg_lit_float64(0.0);
+  outC->_L7 = kcg_lit_float32(0.0);
+  outC->_L8.Traction = kcg_lit_float32(0.0);
+  outC->_L8.berem = kcg_lit_float32(0.0);
+  outC->_L8.bs = kcg_lit_float32(0.0);
+  outC->_L8.bs1 = kcg_lit_float32(0.0);
+  outC->_L8.bs2 = kcg_lit_float32(0.0);
   outC->_L8.inhComp = kcg_true;
-  outC->_L8.indication = kcg_lit_float64(0.0);
+  outC->_L8.indication = kcg_lit_float32(0.0);
   for (idx4 = 0; idx4 < 114; idx4++) {
-    outC->_L10.distances[idx4] = kcg_lit_float64(0.0);
+    outC->_L10.distances[idx4] = kcg_lit_float32(0.0);
   }
   for (idx5 = 0; idx5 < 114; idx5++) {
-    outC->_L10.speeds[idx5] = kcg_lit_float64(0.0);
+    outC->_L10.speeds[idx5] = kcg_lit_float32(0.0);
   }
   for (idx6 = 0; idx6 < 114; idx6++) {
-    outC->_L10.accelerations[idx6] = kcg_lit_float64(0.0);
+    outC->_L10.accelerations[idx6] = kcg_lit_float32(0.0);
   }
   for (idx7 = 0; idx7 < 114; idx7++) {
     outC->_L10.valid[idx7] = kcg_true;
   }
   outC->valid_SBI1 = kcg_true;
   outC->valid_SBI2 = kcg_true;
-  outC->D_SBI1 = kcg_lit_float64(0.0);
-  outC->D_SBI2 = kcg_lit_float64(0.0);
-  outC->D_FLOI = kcg_lit_float64(0.0);
+  outC->D_SBI1 = kcg_lit_float32(0.0);
+  outC->D_SBI2 = kcg_lit_float32(0.0);
+  outC->D_FLOI = kcg_lit_float32(0.0);
   /* _L24=(TargetLimits_Pkg::isLEValid#1)/ */
   isLEValid_init_TargetLimits_Pkg(&outC->Context_isLEValid_1);
   /* _L22=(TargetLimits_Pkg::d_EBI_non_est#2)/ */

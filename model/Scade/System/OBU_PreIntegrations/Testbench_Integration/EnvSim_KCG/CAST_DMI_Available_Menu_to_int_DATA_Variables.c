@@ -86,7 +86,7 @@ void CAST_DMI_Available_Menu_to_int_init_DATA_Variables(
 {
   static kcg_size idx;
 
-  outC->_L37 = kcg_lit_int64(0);
+  outC->_L37 = kcg_lit_int32(0);
   for (idx = 0; idx < 30; idx++) {
     outC->_L33[idx] = kcg_true;
   }
@@ -150,7 +150,7 @@ void CAST_DMI_Available_Menu_to_int_init_DATA_Variables(
   outC->_L1.Fix_train_data_entry = kcg_true;
   outC->_L1.Menu_button_Set_VBC = kcg_true;
   outC->_L1.Menu_button_Remove_VBC = kcg_true;
-  outC->dmi_available_menu_int = kcg_lit_int64(0);
+  outC->dmi_available_menu_int = kcg_lit_int32(0);
   /* _L37=(digital::BoolVect2Int64#1)/ */
   BoolVect2Int64_init_digital_30(&outC->Context_BoolVect2Int64_1);
 }

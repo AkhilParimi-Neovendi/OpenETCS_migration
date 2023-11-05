@@ -20,7 +20,7 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* MessageBus_out/ */ MessageBus_out;
-  kcg_int64 /* t_train_assigned/ */ t_train_assigned;
+  kcg_int32 /* t_train_assigned/ */ t_train_assigned;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -35,7 +35,7 @@ typedef struct {
   M_VERSION /* _L6/ */ _L6;
   M_154_T_TM_radio_messages /* _L2/ */ _L2;
   M_TrainTrack_MessageHd_T_TM_radio_messages /* _L1/ */ _L1;
-  kcg_int64 /* _L8/ */ _L8;
+  kcg_int32 /* _L8/ */ _L8;
   M_TrainTrack_compressed_packets_T_TM_radio_messages /* _L7/ */ _L7;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L14/ */ _L14;
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* _L12/ */ _L12;
@@ -43,9 +43,9 @@ typedef struct {
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* _L10/ */ _L10;
   M_TrainTrack_Message_T_TM_radio_messages /* _L13/ */ _L13;
   kcg_bool /* _L18/ */ _L18;
-  kcg_int64 /* _L17/ */ _L17;
+  kcg_int32 /* _L17/ */ _L17;
   kcg_bool /* _L16/ */ _L16;
-  kcg_int64 /* _L19/ */ _L19;
+  kcg_int32 /* _L19/ */ _L19;
 } outC_Send_M154_TM_radio_messages;
 
 /* ===========  node initialization and cycle functions  =========== */

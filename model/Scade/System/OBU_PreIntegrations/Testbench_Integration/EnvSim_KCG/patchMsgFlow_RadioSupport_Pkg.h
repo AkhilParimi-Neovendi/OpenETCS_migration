@@ -34,14 +34,14 @@ typedef struct {
   kcg_bool /* _L6/ */ _L6;
   M_LEVEL /* _L5/ */ _L5;
   M_LEVEL /* _L4/ */ _L4;
-  kcg_int64 /* _L13/ */ _L13;
+  kcg_int32 /* _L13/ */ _L13;
   NID_MESSAGE /* _L14/ */ _L14;
   NID_MESSAGE /* _L15/ */ _L15;
   kcg_bool /* _L16/ */ _L16;
   kcg_bool /* _L17/ */ _L17;
   kcg_bool /* _L18/ */ _L18;
   M_TrainTrack_Message_T_TM_radio_messages /* _L19/ */ _L19;
-  kcg_int64 /* _L28/ */ _L28;
+  kcg_int32 /* _L28/ */ _L28;
   M_TrainTrack_Message_T_TM_radio_messages /* _L27/ */ _L27;
   kcg_bool /* _L26/ */ _L26;
   kcg_bool /* _L25/ */ _L25;

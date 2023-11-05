@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _flagsFromMessages_InformationFilter_Pkg_H_
 #define _flagsFromMessages_InformationFilter_Pkg_H_
@@ -54,7 +54,7 @@ typedef struct {
   M_LEVELTR /* IfBlock1:then:_L19/ */ _L19_then_IfBlock1;
   M_LEVELTR /* IfBlock1:then:_L20/ */ _L20_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L21/ */ _L21_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L23/ */ _L23_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L23/ */ _L23_then_IfBlock1;
   P041_OBU_sectionlist_enum_T_TM /* IfBlock1:then:_L25/ */ _L25_then_IfBlock1;
   kcg_bool /* IfBlock1:else:else:_L10/ */ _L10_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:_L11/ */ _L11_else_else_IfBlock1;
@@ -173,6 +173,6 @@ extern void kcg_load_SV_flagsFromMessages_InformationFilter_Pkg(
 #endif /* _flagsFromMessages_InformationFilter_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** flagsFromMessages_InformationFilter_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

@@ -19,7 +19,7 @@ void GP_Merge_New_P21_to_Profile_TA_Gradient_new(
   static kcg_size idx1;
   static GradientProfile_t_TrackAtlasTypes acc;
   static kcg_size idx2;
-  static kcg_int64 op_call;
+  static kcg_int32 op_call;
 
   kcg_copy_GradientProfile_t_TrackAtlasTypes(
     &outC->_L45,
@@ -43,7 +43,7 @@ void GP_Merge_New_P21_to_Profile_TA_Gradient_new(
     outC->_L1 = op_call;
   }
   else {
-    outC->_L1 = kcg_lit_int64(0);
+    outC->_L1 = kcg_lit_int32(0);
   }
   /* _L9/ */
   for (idx1 = 0; idx1 < 50; idx1++) {
@@ -55,7 +55,7 @@ void GP_Merge_New_P21_to_Profile_TA_Gradient_new(
     kcg_copy_GradientProfile_t_TrackAtlasTypes(&acc, &outC->_L14);
     /* _L14=(TA_Gradient_new::GP_Merge_New_P21_to_Profile_loop#1)/ */
     GP_Merge_New_P21_to_Profile_loop_TA_Gradient_new(
-      /* _L14= */(kcg_int64) idx2,
+      /* _L14= */(kcg_int32) idx2,
       &acc,
       outC->_L9[idx2],
       &outC->_L47[idx2],
@@ -86,44 +86,44 @@ void GP_Merge_New_P21_to_Profile_init_TA_Gradient_new(
   for (idx2 = 0; idx2 < 50; idx2++) {
     for (idx1 = 0; idx1 < 50; idx1++) {
       outC->_L47[idx2][idx1].valid = kcg_true;
-      outC->_L47[idx2][idx1].Loc_Absolute = kcg_lit_int64(0);
-      outC->_L47[idx2][idx1].Loc_LRBG = kcg_lit_int64(0);
-      outC->_L47[idx2][idx1].Gradient = kcg_lit_int64(0);
-      outC->_L47[idx2][idx1].L_Gradient = kcg_lit_int64(0);
+      outC->_L47[idx2][idx1].Loc_Absolute = kcg_lit_int32(0);
+      outC->_L47[idx2][idx1].Loc_LRBG = kcg_lit_int32(0);
+      outC->_L47[idx2][idx1].Gradient = kcg_lit_int32(0);
+      outC->_L47[idx2][idx1].L_Gradient = kcg_lit_int32(0);
     }
   }
   for (idx3 = 0; idx3 < 50; idx3++) {
     outC->_L45[idx3].valid = kcg_true;
-    outC->_L45[idx3].Loc_Absolute = kcg_lit_int64(0);
-    outC->_L45[idx3].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L45[idx3].Gradient = kcg_lit_int64(0);
-    outC->_L45[idx3].L_Gradient = kcg_lit_int64(0);
+    outC->_L45[idx3].Loc_Absolute = kcg_lit_int32(0);
+    outC->_L45[idx3].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L45[idx3].Gradient = kcg_lit_int32(0);
+    outC->_L45[idx3].L_Gradient = kcg_lit_int32(0);
   }
   for (idx4 = 0; idx4 < 50; idx4++) {
     outC->_L14[idx4].valid = kcg_true;
-    outC->_L14[idx4].Loc_Absolute = kcg_lit_int64(0);
-    outC->_L14[idx4].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L14[idx4].Gradient = kcg_lit_int64(0);
-    outC->_L14[idx4].L_Gradient = kcg_lit_int64(0);
+    outC->_L14[idx4].Loc_Absolute = kcg_lit_int32(0);
+    outC->_L14[idx4].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L14[idx4].Gradient = kcg_lit_int32(0);
+    outC->_L14[idx4].L_Gradient = kcg_lit_int32(0);
   }
   for (idx5 = 0; idx5 < 50; idx5++) {
-    outC->_L9[idx5] = kcg_lit_int64(0);
+    outC->_L9[idx5] = kcg_lit_int32(0);
   }
   for (idx6 = 0; idx6 < 50; idx6++) {
     outC->_L5[idx6].valid = kcg_true;
-    outC->_L5[idx6].Loc_Absolute = kcg_lit_int64(0);
-    outC->_L5[idx6].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L5[idx6].Gradient = kcg_lit_int64(0);
-    outC->_L5[idx6].L_Gradient = kcg_lit_int64(0);
+    outC->_L5[idx6].Loc_Absolute = kcg_lit_int32(0);
+    outC->_L5[idx6].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L5[idx6].Gradient = kcg_lit_int32(0);
+    outC->_L5[idx6].L_Gradient = kcg_lit_int32(0);
   }
-  outC->_L1 = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
   outC->every = kcg_true;
   for (idx7 = 0; idx7 < 50; idx7++) {
     outC->GradientdProfile_out[idx7].valid = kcg_true;
-    outC->GradientdProfile_out[idx7].Loc_Absolute = kcg_lit_int64(0);
-    outC->GradientdProfile_out[idx7].Loc_LRBG = kcg_lit_int64(0);
-    outC->GradientdProfile_out[idx7].Gradient = kcg_lit_int64(0);
-    outC->GradientdProfile_out[idx7].L_Gradient = kcg_lit_int64(0);
+    outC->GradientdProfile_out[idx7].Loc_Absolute = kcg_lit_int32(0);
+    outC->GradientdProfile_out[idx7].Loc_LRBG = kcg_lit_int32(0);
+    outC->GradientdProfile_out[idx7].Gradient = kcg_lit_int32(0);
+    outC->GradientdProfile_out[idx7].L_Gradient = kcg_lit_int32(0);
   }
   for (idx = 0; idx < 50; idx++) {
     /* _L14=(TA_Gradient_new::GP_Merge_New_P21_to_Profile_loop#1)/ */

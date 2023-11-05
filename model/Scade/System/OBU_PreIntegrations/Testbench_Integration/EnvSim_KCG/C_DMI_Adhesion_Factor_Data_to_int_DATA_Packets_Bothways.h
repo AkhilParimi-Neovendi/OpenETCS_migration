@@ -25,13 +25,13 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  array_int64_3 /* _L2/ */ _L2;
+  array_int32_3 /* _L2/ */ _L2;
   kcg_bool /* _L5/ */ _L5;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L4/ */ _L4;
   M_ADHESION /* _L3/ */ _L3;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L6/ */ _L6;
   DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg /* _L14/ */ _L14;
-  kcg_int64 /* _L19/ */ _L19;
+  kcg_int32 /* _L19/ */ _L19;
 } outC_C_DMI_Adhesion_Factor_Data_to_int_DATA_Packets_Bothways;
 
 /* ===========  node initialization and cycle functions  =========== */

@@ -10,15 +10,15 @@
 /* Utilities::Real_to_Int/ */
 void Real_to_Int_Utilities(
   /* real_in/ */
-  kcg_float64 real_in,
+  kcg_float32 real_in,
   /* resolution_factor_in/ */
-  kcg_float64 resolution_factor_in,
+  kcg_float32 resolution_factor_in,
   /* unit_factor_in/ */
-  kcg_float64 unit_factor_in,
+  kcg_float32 unit_factor_in,
   /* max_value/ */
-  kcg_int64 max_value,
+  kcg_int32 max_value,
   /* min_value/ */
-  kcg_int64 min_value,
+  kcg_int32 min_value,
   outC_Real_to_Int_Utilities *outC)
 {
   static kcg_bool noname;
@@ -30,7 +30,7 @@ void Real_to_Int_Utilities(
   outC->_L1 = real_in;
   outC->_L3 = outC->_L1 * outC->_L2;
   outC->_L4 = outC->_L3 / outC->_L5;
-  outC->_L6 = /* _L6= */(kcg_int64) outC->_L4;
+  outC->_L6 = /* _L6= */(kcg_int32) outC->_L4;
   outC->_L11 = outC->_L6 > outC->_L8;
   _1_noname = outC->_L11;
   outC->_L10 = min_value;
@@ -43,16 +43,16 @@ void Real_to_Int_Utilities(
 void Real_to_Int_init_Utilities(outC_Real_to_Int_Utilities *outC)
 {
   outC->_L11 = kcg_true;
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L10 = kcg_lit_int32(0);
   outC->_L9 = kcg_true;
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_float64(0.0);
-  outC->_L4 = kcg_lit_float64(0.0);
-  outC->_L3 = kcg_lit_float64(0.0);
-  outC->_L2 = kcg_lit_float64(0.0);
-  outC->_L1 = kcg_lit_float64(0.0);
-  outC->int_out = kcg_lit_int64(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_float32(0.0);
+  outC->_L4 = kcg_lit_float32(0.0);
+  outC->_L3 = kcg_lit_float32(0.0);
+  outC->_L2 = kcg_lit_float32(0.0);
+  outC->_L1 = kcg_lit_float32(0.0);
+  outC->int_out = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

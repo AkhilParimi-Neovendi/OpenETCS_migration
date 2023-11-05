@@ -14,221 +14,221 @@ void CAST_DMI_Q_TEXT_to_int_DATA_Variables(
   outC_CAST_DMI_Q_TEXT_to_int_DATA_Variables *outC)
 {
   /* q_text_int/ */
-  static kcg_int64 q_text_int_partial;
+  static kcg_int32 q_text_int_partial;
   /* error/ */
   static kcg_bool error_partial;
   /* q_text_int/ */
-  static kcg_int64 _1_q_text_int_partial;
+  static kcg_int32 _1_q_text_int_partial;
   /* error/ */
   static kcg_bool _2_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _3_q_text_int_partial;
+  static kcg_int32 _3_q_text_int_partial;
   /* error/ */
   static kcg_bool _4_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _5_q_text_int_partial;
+  static kcg_int32 _5_q_text_int_partial;
   /* error/ */
   static kcg_bool _6_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _7_q_text_int_partial;
+  static kcg_int32 _7_q_text_int_partial;
   /* error/ */
   static kcg_bool _8_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _9_q_text_int_partial;
+  static kcg_int32 _9_q_text_int_partial;
   /* error/ */
   static kcg_bool _10_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _11_q_text_int_partial;
+  static kcg_int32 _11_q_text_int_partial;
   /* error/ */
   static kcg_bool _12_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _13_q_text_int_partial;
+  static kcg_int32 _13_q_text_int_partial;
   /* error/ */
   static kcg_bool _14_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _15_q_text_int_partial;
+  static kcg_int32 _15_q_text_int_partial;
   /* error/ */
   static kcg_bool _16_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _17_q_text_int_partial;
+  static kcg_int32 _17_q_text_int_partial;
   /* error/ */
   static kcg_bool _18_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _19_q_text_int_partial;
+  static kcg_int32 _19_q_text_int_partial;
   /* error/ */
   static kcg_bool _20_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _21_q_text_int_partial;
+  static kcg_int32 _21_q_text_int_partial;
   /* error/ */
   static kcg_bool _22_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _23_q_text_int_partial;
+  static kcg_int32 _23_q_text_int_partial;
   /* error/ */
   static kcg_bool _24_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _25_q_text_int_partial;
+  static kcg_int32 _25_q_text_int_partial;
   /* error/ */
   static kcg_bool _26_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _27_q_text_int_partial;
+  static kcg_int32 _27_q_text_int_partial;
   /* error/ */
   static kcg_bool _28_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _29_q_text_int_partial;
+  static kcg_int32 _29_q_text_int_partial;
   /* error/ */
   static kcg_bool _30_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _31_q_text_int_partial;
+  static kcg_int32 _31_q_text_int_partial;
   /* error/ */
   static kcg_bool _32_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _33_q_text_int_partial;
+  static kcg_int32 _33_q_text_int_partial;
   /* error/ */
   static kcg_bool _34_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _35_q_text_int_partial;
+  static kcg_int32 _35_q_text_int_partial;
   /* error/ */
   static kcg_bool _36_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _37_q_text_int_partial;
+  static kcg_int32 _37_q_text_int_partial;
   /* error/ */
   static kcg_bool _38_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _39_q_text_int_partial;
+  static kcg_int32 _39_q_text_int_partial;
   /* error/ */
   static kcg_bool _40_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _41_q_text_int_partial;
+  static kcg_int32 _41_q_text_int_partial;
   /* error/ */
   static kcg_bool _42_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _43_q_text_int_partial;
+  static kcg_int32 _43_q_text_int_partial;
   /* error/ */
   static kcg_bool _44_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _45_q_text_int_partial;
+  static kcg_int32 _45_q_text_int_partial;
   /* error/ */
   static kcg_bool _46_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _47_q_text_int_partial;
+  static kcg_int32 _47_q_text_int_partial;
   /* error/ */
   static kcg_bool _48_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _49_q_text_int_partial;
+  static kcg_int32 _49_q_text_int_partial;
   /* error/ */
   static kcg_bool _50_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _51_q_text_int_partial;
+  static kcg_int32 _51_q_text_int_partial;
   /* error/ */
   static kcg_bool _52_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _53_q_text_int_partial;
+  static kcg_int32 _53_q_text_int_partial;
   /* error/ */
   static kcg_bool _54_error_partial;
   /* error/ */
   static kcg_bool _55_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _56_q_text_int_partial;
+  static kcg_int32 _56_q_text_int_partial;
   /* error/ */
   static kcg_bool _57_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _58_q_text_int_partial;
+  static kcg_int32 _58_q_text_int_partial;
   /* error/ */
   static kcg_bool _59_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _60_q_text_int_partial;
+  static kcg_int32 _60_q_text_int_partial;
   /* error/ */
   static kcg_bool _61_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _62_q_text_int_partial;
+  static kcg_int32 _62_q_text_int_partial;
   /* error/ */
   static kcg_bool _63_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _64_q_text_int_partial;
+  static kcg_int32 _64_q_text_int_partial;
   /* error/ */
   static kcg_bool _65_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _66_q_text_int_partial;
+  static kcg_int32 _66_q_text_int_partial;
   /* error/ */
   static kcg_bool _67_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _68_q_text_int_partial;
+  static kcg_int32 _68_q_text_int_partial;
   /* error/ */
   static kcg_bool _69_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _70_q_text_int_partial;
+  static kcg_int32 _70_q_text_int_partial;
   /* error/ */
   static kcg_bool _71_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _72_q_text_int_partial;
+  static kcg_int32 _72_q_text_int_partial;
   /* error/ */
   static kcg_bool _73_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _74_q_text_int_partial;
+  static kcg_int32 _74_q_text_int_partial;
   /* error/ */
   static kcg_bool _75_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _76_q_text_int_partial;
+  static kcg_int32 _76_q_text_int_partial;
   /* error/ */
   static kcg_bool _77_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _78_q_text_int_partial;
+  static kcg_int32 _78_q_text_int_partial;
   /* error/ */
   static kcg_bool _79_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _80_q_text_int_partial;
+  static kcg_int32 _80_q_text_int_partial;
   /* error/ */
   static kcg_bool _81_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _82_q_text_int_partial;
+  static kcg_int32 _82_q_text_int_partial;
   /* error/ */
   static kcg_bool _83_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _84_q_text_int_partial;
+  static kcg_int32 _84_q_text_int_partial;
   /* error/ */
   static kcg_bool _85_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _86_q_text_int_partial;
+  static kcg_int32 _86_q_text_int_partial;
   /* error/ */
   static kcg_bool _87_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _88_q_text_int_partial;
+  static kcg_int32 _88_q_text_int_partial;
   /* error/ */
   static kcg_bool _89_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _90_q_text_int_partial;
+  static kcg_int32 _90_q_text_int_partial;
   /* error/ */
   static kcg_bool _91_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _92_q_text_int_partial;
+  static kcg_int32 _92_q_text_int_partial;
   /* error/ */
   static kcg_bool _93_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _94_q_text_int_partial;
+  static kcg_int32 _94_q_text_int_partial;
   /* error/ */
   static kcg_bool _95_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _96_q_text_int_partial;
+  static kcg_int32 _96_q_text_int_partial;
   /* error/ */
   static kcg_bool _97_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _98_q_text_int_partial;
+  static kcg_int32 _98_q_text_int_partial;
   /* error/ */
   static kcg_bool _99_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _100_q_text_int_partial;
+  static kcg_int32 _100_q_text_int_partial;
   /* error/ */
   static kcg_bool _101_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _102_q_text_int_partial;
+  static kcg_int32 _102_q_text_int_partial;
   /* error/ */
   static kcg_bool _103_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _104_q_text_int_partial;
+  static kcg_int32 _104_q_text_int_partial;
   /* error/ */
   static kcg_bool _105_error_partial;
   /* q_text_int/ */
-  static kcg_int64 _106_q_text_int_partial;
+  static kcg_int32 _106_q_text_int_partial;
   static kcg_bool noname;
 
   outC->IfBlock1_clock = q_text_ct == ENUM_DMI_Q_TEXT_acknowledgment;
@@ -867,143 +867,143 @@ void CAST_DMI_Q_TEXT_to_int_init_DATA_Variables(
   outC->error = kcg_true;
   outC->IfBlock1_clock = kcg_true;
   outC->_L2_then_else_IfBlock1 = kcg_true;
-  outC->_L1_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_IfBlock1 = kcg_true;
   outC->_L2_then_else_else_else_IfBlock1 = kcg_true;
-  outC->_L1_then_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_else_else_IfBlock1 = kcg_true;
   outC->_L2_then_else_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L1_then_else_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_else_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L1_then_else_else_else_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_else_else_else_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L2_then_else_else_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L3_then_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L1_then_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L2_then_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L1_then_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L2_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L1_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L2_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBloc =
     kcg_true;
   outC->_L1_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBloc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBl =
     kcg_true;
   outC->_L221_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else =
     kcg_true;
   outC->_L120_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_7_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_e =
     kcg_true;
   outC->_L219_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else =
     kcg_true;
   outC->_L118_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_6_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_e =
     kcg_true;
   outC->_L217_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else =
     kcg_true;
   outC->_L116_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_5_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_e =
     kcg_true;
   outC->_L215_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else =
     kcg_true;
   outC->_L114_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_4_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_e =
     kcg_true;
   outC->_L1_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_e =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_e =
     kcg_true;
   outC->_L113_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L212_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else =
     kcg_true;
   outC->_3_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_e =
     kcg_true;
   outC->_L111_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L210_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else =
     kcg_true;
   outC->_2_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_e =
     kcg_true;
   outC->_L19_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_ =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L28_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_ =
     kcg_true;
   outC->_1_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_e =
     kcg_true;
   outC->_L1_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_e =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_e =
     kcg_true;
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else =
     kcg_true;
   outC->_L1_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_I =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_I =
     kcg_true;
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L1_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L1_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L1_then_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L1_then_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->else_clock_else_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L1_then_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->else_clock_else_else_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L1_then_else_else_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_else_else_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->else_clock_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L1_then_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_IfBlock1 = kcg_true;
   outC->else_clock_else_else_IfBlock1 = kcg_true;
-  outC->_L1_then_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L2_then_else_else_IfBlock1 = kcg_true;
   outC->else_clock_IfBlock1 = kcg_true;
-  outC->_L1_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L3_then_IfBlock1 = kcg_true;
-  outC->q_text_int = kcg_lit_int64(0);
+  outC->q_text_int = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

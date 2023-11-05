@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -13,12 +13,12 @@ void RBC_SymbolsToIndex_DMI_Control_Pkg_Sub_func(
   connectionStatusRadioUnit_T_API_RadioCommunication_Pkg connectionEstabilished,
   outC_RBC_SymbolsToIndex_DMI_Control_Pkg_Sub_func *outC)
 {
-  outC->_L12 = kcg_lit_int64(4);
+  outC->_L12 = kcg_lit_int32(4);
   outC->_L11 = kcg_false;
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(3);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(3);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
   outC->_L1 = connectionEstabilished;
   /* _L6= */
   switch (outC->_L1) {
@@ -52,19 +52,19 @@ void RBC_SymbolsToIndex_DMI_Control_Pkg_Sub_func(
 void RBC_SymbolsToIndex_init_DMI_Control_Pkg_Sub_func(
   outC_RBC_SymbolsToIndex_DMI_Control_Pkg_Sub_func *outC)
 {
-  outC->_L12 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
   outC->_L11 = kcg_true;
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L10 = kcg_lit_int32(0);
   outC->_L9 = kcg_true;
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L8 = kcg_lit_int32(0);
   outC->_L7 = kcg_true;
-  outC->_L6 = kcg_lit_int64(0);
+  outC->_L6 = kcg_lit_int32(0);
   outC->_L5 = kcg_true;
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L1 = conn_unknown_API_RadioCommunication_Pkg;
   outC->visibility = kcg_true;
-  outC->symbol = kcg_lit_int64(0);
+  outC->symbol = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -80,6 +80,6 @@ void RBC_SymbolsToIndex_reset_DMI_Control_Pkg_Sub_func(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** RBC_SymbolsToIndex_DMI_Control_Pkg_Sub_func.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

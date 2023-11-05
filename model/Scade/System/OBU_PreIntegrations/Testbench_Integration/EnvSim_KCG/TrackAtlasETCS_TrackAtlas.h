@@ -132,7 +132,7 @@ typedef struct {
   FromTIU_t_TrackAtlasTypes /* _L123/ */ _L123;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L30/ */ _L30;
   MRSP_Profile_t_TrackAtlasTypes /* _L119/ */ _L119;
-  kcg_int64 /* _L118/ */ _L118;
+  kcg_int32 /* _L118/ */ _L118;
   MRSP_Profile_t_TrackAtlasTypes /* _L129/ */ _L129;
   MRSP_Profile_t_TrackAtlasTypes /* _L131/ */ _L131;
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* _L134/ */ _L134;

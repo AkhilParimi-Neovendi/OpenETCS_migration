@@ -28,7 +28,7 @@ typedef struct {
   linkedBGs_indices_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg /* _L2/ */ _L2;
   positionedBGs_T_TrainPosition_Types_Pck /* _L3/ */ _L3;
   positionedBGs_T_TrainPosition_Types_Pck /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L6/ */ _L6;
   _68_array /* _L8/ */ _L8;
   kcg_bool /* _L12/ */ _L12;
 } outC_improveUnlinkedBGLocations_CalculateTrainPosition_Pkg_BG_relocation_Pkg;

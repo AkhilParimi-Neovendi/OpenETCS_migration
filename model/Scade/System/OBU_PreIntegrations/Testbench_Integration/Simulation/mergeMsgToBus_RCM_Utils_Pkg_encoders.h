@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _mergeMsgToBus_RCM_Utils_Pkg_encoders_H_
 #define _mergeMsgToBus_RCM_Utils_Pkg_encoders_H_
@@ -17,7 +17,7 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* messageBus_out/ */ messageBus_out;
-  kcg_int64 /* t_train_assigned/ */ t_train_assigned;
+  kcg_int32 /* t_train_assigned/ */ t_train_assigned;
   /* -----------------------  no local probes  ----------------------- */
   /* ----------------------- local memories  ------------------------- */
   _120_SSM_ST_SM1 /* SM1: */ SM1_state_nxt;
@@ -37,10 +37,10 @@ typedef struct {
   _120_SSM_ST_SM1 /* SM1: */ SM1_state_act;
   _121_SSM_TR_SM1 /* SM1: */ SM1_fired_strong;
   _121_SSM_TR_SM1 /* SM1: */ SM1_fired;
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L2/ */ _L2;
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* _L1/ */ _L1;
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* _L3/ */ _L3;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   kcg_bool /* _L4/ */ _L4;
   M_TrainTrack_Message_T_TM_radio_messages /* _L6/ */ _L6;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L7/ */ _L7;
@@ -96,6 +96,6 @@ extern void kcg_load_SV_mergeMsgToBus_RCM_Utils_Pkg_encoders(
 #endif /* _mergeMsgToBus_RCM_Utils_Pkg_encoders_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** mergeMsgToBus_RCM_Utils_Pkg_encoders.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

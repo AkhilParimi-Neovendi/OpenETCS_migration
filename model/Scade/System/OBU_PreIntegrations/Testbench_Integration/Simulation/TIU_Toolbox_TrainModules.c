@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -18,7 +18,7 @@ void TIU_Toolbox_TrainModules(
   /* tractionSwitchedOn/ */
   kcg_bool tractionSwitchedOn,
   /* brakeAccelerationPercentage/ */
-  kcg_int64 brakeAccelerationPercentage,
+  kcg_int32 brakeAccelerationPercentage,
   outC_TIU_Toolbox_TrainModules *outC)
 {
   /* powerOn/ */
@@ -135,7 +135,7 @@ void TIU_Toolbox_TrainModules(
     &outC->_L74,
     (Brake_status_T_TIU_Types_Pkg *) &cEmptyBrakeStatus_Toolbox);
   outC->_L76 = kcg_true;
-  outC->_L78 = kcg_lit_int64(6000);
+  outC->_L78 = kcg_lit_int32(6000);
   outC->_L79 = brakeAccelerationPercentage;
   outC->_L77 = outC->_L79 * outC->_L78;
   outC->_L75.valid = outC->_L76;
@@ -198,23 +198,23 @@ void TIU_init_Toolbox_TrainModules(outC_TIU_Toolbox_TrainModules *outC)
   outC->_L96.trainCategory =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->_L96.cantDeficientcy = NC_CDTRAIN_Cant_Deficiency_80_mm;
-  outC->_L96.trainLength = kcg_lit_int64(0);
-  outC->_L96.brakePerctage = kcg_lit_int64(0);
-  outC->_L96.maxTrainSpeed = kcg_lit_int64(0);
+  outC->_L96.trainLength = kcg_lit_int32(0);
+  outC->_L96.brakePerctage = kcg_lit_int32(0);
+  outC->_L96.maxTrainSpeed = kcg_lit_int32(0);
   outC->_L96.loadingGauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L96.axleLoadCategory = M_AXLELOADCAT_A;
   outC->_L96.airtightSystem = M_AIRTIGHT_Not_fitted;
-  outC->_L96.axleNumber = kcg_lit_int64(0);
-  outC->_L96.numberNationalSystems = kcg_lit_int64(0);
+  outC->_L96.axleNumber = kcg_lit_int32(0);
+  outC->_L96.numberNationalSystems = kcg_lit_int32(0);
   for (idx = 0; idx < 5; idx++) {
-    outC->_L96.nationSystems[idx] = kcg_lit_int64(0);
+    outC->_L96.nationSystems[idx] = kcg_lit_int32(0);
   }
-  outC->_L96.numberTractionSystems = kcg_lit_int64(0);
+  outC->_L96.numberTractionSystems = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 4; idx1++) {
     outC->_L96.tractionSystem[idx1].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->_L96.tractionSystem[idx1].nid_ctraction = kcg_lit_int64(0);
+    outC->_L96.tractionSystem[idx1].nid_ctraction = kcg_lit_int32(0);
   }
   outC->_L95 = kcg_true;
   outC->_L94 = kcg_true;
@@ -229,24 +229,24 @@ void TIU_init_Toolbox_TrainModules(outC_TIU_Toolbox_TrainModules *outC)
   outC->_L81 = kcg_true;
   outC->_L80.valid = kcg_true;
   outC->_L80.nothing_to_resume_profile_follow.d_test_trackcond.now =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L80.nothing_to_resume_profile_follow.d_test_trackcond.distance =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L80.nothing_to_resume_profile_follow.l_test_trackcond.now =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L80.nothing_to_resume_profile_follow.l_test_trackcond.distance =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L80.nothing_to_resume_profile_follow.m_trackcond =
     non_stopping_area_TIU_Types_Pkg;
-  outC->_L80.empty_profile_initial_state_to_be_resumed.now = kcg_lit_int64(0);
-  outC->_L80.empty_profile_initial_state_to_be_resumed.distance = kcg_lit_int64(
+  outC->_L80.empty_profile_initial_state_to_be_resumed.now = kcg_lit_int32(0);
+  outC->_L80.empty_profile_initial_state_to_be_resumed.distance = kcg_lit_int32(
       0);
-  outC->_L79 = kcg_lit_int64(0);
-  outC->_L78 = kcg_lit_int64(0);
-  outC->_L77 = kcg_lit_int64(0);
+  outC->_L79 = kcg_lit_int32(0);
+  outC->_L78 = kcg_lit_int32(0);
+  outC->_L77 = kcg_lit_int32(0);
   outC->_L76 = kcg_true;
   outC->_L75.valid = kcg_true;
-  outC->_L75.pressure = kcg_lit_int64(0);
+  outC->_L75.pressure = kcg_lit_int32(0);
   outC->_L74.valid = kcg_true;
   outC->_L74.m_regenerativebrake_st = brake_status_not_defined_TIU_Types_Pkg;
   outC->_L74.m_eddycurrentbrake_st = brake_status_not_defined_TIU_Types_Pkg;
@@ -301,25 +301,25 @@ void TIU_init_Toolbox_TrainModules(outC_TIU_Toolbox_TrainModules *outC)
   outC->_L58.info.type_I_train_commands.m_traction_cutoff_cm =
     traction_cutoff_command_not_defined_TIU_Types_Pkg;
   outC->_L58.info.change_traction_system.valid = kcg_true;
-  outC->_L58.info.change_traction_system.d_test_traction.now = kcg_lit_int64(0);
+  outC->_L58.info.change_traction_system.d_test_traction.now = kcg_lit_int32(0);
   outC->_L58.info.change_traction_system.d_test_traction.distance =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L58.info.change_traction_system.m_voltage.voltage_type =
     line_not_fitted_with_any_traction_system_TIU_Types_Pkg;
   outC->_L58.info.change_traction_system.m_voltage.NID_ctraction =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L58.info.passenger_door_control_info.valid = kcg_true;
-  outC->_L58.info.passenger_door_control_info.door_control_info = kcg_lit_int64(
+  outC->_L58.info.passenger_door_control_info.door_control_info = kcg_lit_int32(
       0);
   outC->_L58.info.change_of_allowed_current_consumption.valid = kcg_true;
   outC->_L58.info.change_of_allowed_current_consumption.d_test_current.now =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L58.info.change_of_allowed_current_consumption.d_test_current.distance =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L58.info.change_of_allowed_current_consumption.m_current.no_restriction =
     kcg_true;
   outC->_L58.info.change_of_allowed_current_consumption.m_current.restriction =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L57 = kcg_true;
   outC->_L56.valid = kcg_true;
   outC->_L56.m_servicebrake_cm = brake_signal_command_not_defined_TIU_Types_Pkg;
@@ -357,7 +357,7 @@ void TIU_init_Toolbox_TrainModules(outC_TIU_Toolbox_TrainModules *outC)
   outC->_L27.info.brake_status.m_additionalbrake_st =
     brake_status_not_defined_TIU_Types_Pkg;
   outC->_L27.info.brake_pressure.valid = kcg_true;
-  outC->_L27.info.brake_pressure.pressure = kcg_lit_int64(0);
+  outC->_L27.info.brake_pressure.pressure = kcg_lit_int32(0);
   outC->_L27.info.train_data_entry_type = fixed_entry_type_TIU_Types_Pkg;
   outC->_L27.info.train_data_info.valid = kcg_true;
   outC->_L27.info.train_data_info.acknowledgedByDriver = kcg_true;
@@ -365,40 +365,40 @@ void TIU_init_Toolbox_TrainModules(outC_TIU_Toolbox_TrainModules *outC)
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->_L27.info.train_data_info.cantDeficientcy =
     NC_CDTRAIN_Cant_Deficiency_80_mm;
-  outC->_L27.info.train_data_info.trainLength = kcg_lit_int64(0);
-  outC->_L27.info.train_data_info.brakePerctage = kcg_lit_int64(0);
-  outC->_L27.info.train_data_info.maxTrainSpeed = kcg_lit_int64(0);
+  outC->_L27.info.train_data_info.trainLength = kcg_lit_int32(0);
+  outC->_L27.info.train_data_info.brakePerctage = kcg_lit_int32(0);
+  outC->_L27.info.train_data_info.maxTrainSpeed = kcg_lit_int32(0);
   outC->_L27.info.train_data_info.loadingGauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L27.info.train_data_info.axleLoadCategory = M_AXLELOADCAT_A;
   outC->_L27.info.train_data_info.airtightSystem = M_AIRTIGHT_Not_fitted;
-  outC->_L27.info.train_data_info.axleNumber = kcg_lit_int64(0);
-  outC->_L27.info.train_data_info.numberNationalSystems = kcg_lit_int64(0);
+  outC->_L27.info.train_data_info.axleNumber = kcg_lit_int32(0);
+  outC->_L27.info.train_data_info.numberNationalSystems = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 5; idx2++) {
-    outC->_L27.info.train_data_info.nationSystems[idx2] = kcg_lit_int64(0);
+    outC->_L27.info.train_data_info.nationSystems[idx2] = kcg_lit_int32(0);
   }
-  outC->_L27.info.train_data_info.numberTractionSystems = kcg_lit_int64(0);
+  outC->_L27.info.train_data_info.numberTractionSystems = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 4; idx3++) {
     outC->_L27.info.train_data_info.tractionSystem[idx3].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
     outC->_L27.info.train_data_info.tractionSystem[idx3].nid_ctraction =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L27.info.type_I_train_and_brake_inhibition.valid = kcg_true;
   outC->_L27.info.type_I_train_and_brake_inhibition.nothing_to_resume_profile_follow.d_test_trackcond.now =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27.info.type_I_train_and_brake_inhibition.nothing_to_resume_profile_follow.d_test_trackcond.distance =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27.info.type_I_train_and_brake_inhibition.nothing_to_resume_profile_follow.l_test_trackcond.now =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27.info.type_I_train_and_brake_inhibition.nothing_to_resume_profile_follow.l_test_trackcond.distance =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27.info.type_I_train_and_brake_inhibition.nothing_to_resume_profile_follow.m_trackcond =
     non_stopping_area_TIU_Types_Pkg;
   outC->_L27.info.type_I_train_and_brake_inhibition.empty_profile_initial_state_to_be_resumed.now =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27.info.type_I_train_and_brake_inhibition.empty_profile_initial_state_to_be_resumed.distance =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L28.train_status.valid = kcg_true;
   outC->_L28.train_status.m_sleeping_st = signal_active_TIU_Types_Pkg;
   outC->_L28.train_status.m_passiveshunting_st =
@@ -423,47 +423,47 @@ void TIU_init_Toolbox_TrainModules(outC_TIU_Toolbox_TrainModules *outC)
   outC->_L28.brake_status.m_additionalbrake_st =
     brake_status_not_defined_TIU_Types_Pkg;
   outC->_L28.brake_pressure.valid = kcg_true;
-  outC->_L28.brake_pressure.pressure = kcg_lit_int64(0);
+  outC->_L28.brake_pressure.pressure = kcg_lit_int32(0);
   outC->_L28.train_data_entry_type = fixed_entry_type_TIU_Types_Pkg;
   outC->_L28.train_data_info.valid = kcg_true;
   outC->_L28.train_data_info.acknowledgedByDriver = kcg_true;
   outC->_L28.train_data_info.trainCategory =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->_L28.train_data_info.cantDeficientcy = NC_CDTRAIN_Cant_Deficiency_80_mm;
-  outC->_L28.train_data_info.trainLength = kcg_lit_int64(0);
-  outC->_L28.train_data_info.brakePerctage = kcg_lit_int64(0);
-  outC->_L28.train_data_info.maxTrainSpeed = kcg_lit_int64(0);
+  outC->_L28.train_data_info.trainLength = kcg_lit_int32(0);
+  outC->_L28.train_data_info.brakePerctage = kcg_lit_int32(0);
+  outC->_L28.train_data_info.maxTrainSpeed = kcg_lit_int32(0);
   outC->_L28.train_data_info.loadingGauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L28.train_data_info.axleLoadCategory = M_AXLELOADCAT_A;
   outC->_L28.train_data_info.airtightSystem = M_AIRTIGHT_Not_fitted;
-  outC->_L28.train_data_info.axleNumber = kcg_lit_int64(0);
-  outC->_L28.train_data_info.numberNationalSystems = kcg_lit_int64(0);
+  outC->_L28.train_data_info.axleNumber = kcg_lit_int32(0);
+  outC->_L28.train_data_info.numberNationalSystems = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 5; idx4++) {
-    outC->_L28.train_data_info.nationSystems[idx4] = kcg_lit_int64(0);
+    outC->_L28.train_data_info.nationSystems[idx4] = kcg_lit_int32(0);
   }
-  outC->_L28.train_data_info.numberTractionSystems = kcg_lit_int64(0);
+  outC->_L28.train_data_info.numberTractionSystems = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 4; idx5++) {
     outC->_L28.train_data_info.tractionSystem[idx5].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
     outC->_L28.train_data_info.tractionSystem[idx5].nid_ctraction =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L28.type_I_train_and_brake_inhibition.valid = kcg_true;
   outC->_L28.type_I_train_and_brake_inhibition.nothing_to_resume_profile_follow.d_test_trackcond.now =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L28.type_I_train_and_brake_inhibition.nothing_to_resume_profile_follow.d_test_trackcond.distance =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L28.type_I_train_and_brake_inhibition.nothing_to_resume_profile_follow.l_test_trackcond.now =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L28.type_I_train_and_brake_inhibition.nothing_to_resume_profile_follow.l_test_trackcond.distance =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L28.type_I_train_and_brake_inhibition.nothing_to_resume_profile_follow.m_trackcond =
     non_stopping_area_TIU_Types_Pkg;
   outC->_L28.type_I_train_and_brake_inhibition.empty_profile_initial_state_to_be_resumed.now =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L28.type_I_train_and_brake_inhibition.empty_profile_initial_state_to_be_resumed.distance =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15.isolation_status.valid = kcg_true;
   outC->_L15.isolation_status.isolation_status =
     on_board_equipment_is_isolated_TIU_Types_Pkg;
@@ -489,22 +489,22 @@ void TIU_init_Toolbox_TrainModules(outC_TIU_Toolbox_TrainModules *outC)
   outC->_L15.type_I_train_commands.m_traction_cutoff_cm =
     traction_cutoff_command_not_defined_TIU_Types_Pkg;
   outC->_L15.change_traction_system.valid = kcg_true;
-  outC->_L15.change_traction_system.d_test_traction.now = kcg_lit_int64(0);
-  outC->_L15.change_traction_system.d_test_traction.distance = kcg_lit_int64(0);
+  outC->_L15.change_traction_system.d_test_traction.now = kcg_lit_int32(0);
+  outC->_L15.change_traction_system.d_test_traction.distance = kcg_lit_int32(0);
   outC->_L15.change_traction_system.m_voltage.voltage_type =
     line_not_fitted_with_any_traction_system_TIU_Types_Pkg;
-  outC->_L15.change_traction_system.m_voltage.NID_ctraction = kcg_lit_int64(0);
+  outC->_L15.change_traction_system.m_voltage.NID_ctraction = kcg_lit_int32(0);
   outC->_L15.passenger_door_control_info.valid = kcg_true;
-  outC->_L15.passenger_door_control_info.door_control_info = kcg_lit_int64(0);
+  outC->_L15.passenger_door_control_info.door_control_info = kcg_lit_int32(0);
   outC->_L15.change_of_allowed_current_consumption.valid = kcg_true;
   outC->_L15.change_of_allowed_current_consumption.d_test_current.now =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15.change_of_allowed_current_consumption.d_test_current.distance =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15.change_of_allowed_current_consumption.m_current.no_restriction =
     kcg_true;
   outC->_L15.change_of_allowed_current_consumption.m_current.restriction =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14 = kcg_true;
   outC->tractionCutOff_To_Environment = kcg_true;
   outC->emergencyBrakeActivated_To_Environment = kcg_true;
@@ -536,7 +536,7 @@ void TIU_init_Toolbox_TrainModules(outC_TIU_Toolbox_TrainModules *outC)
   outC->output_To_EVC.info.brake_status.m_additionalbrake_st =
     brake_status_not_defined_TIU_Types_Pkg;
   outC->output_To_EVC.info.brake_pressure.valid = kcg_true;
-  outC->output_To_EVC.info.brake_pressure.pressure = kcg_lit_int64(0);
+  outC->output_To_EVC.info.brake_pressure.pressure = kcg_lit_int32(0);
   outC->output_To_EVC.info.train_data_entry_type = fixed_entry_type_TIU_Types_Pkg;
   outC->output_To_EVC.info.train_data_info.valid = kcg_true;
   outC->output_To_EVC.info.train_data_info.acknowledgedByDriver = kcg_true;
@@ -544,42 +544,42 @@ void TIU_init_Toolbox_TrainModules(outC_TIU_Toolbox_TrainModules *outC)
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->output_To_EVC.info.train_data_info.cantDeficientcy =
     NC_CDTRAIN_Cant_Deficiency_80_mm;
-  outC->output_To_EVC.info.train_data_info.trainLength = kcg_lit_int64(0);
-  outC->output_To_EVC.info.train_data_info.brakePerctage = kcg_lit_int64(0);
-  outC->output_To_EVC.info.train_data_info.maxTrainSpeed = kcg_lit_int64(0);
+  outC->output_To_EVC.info.train_data_info.trainLength = kcg_lit_int32(0);
+  outC->output_To_EVC.info.train_data_info.brakePerctage = kcg_lit_int32(0);
+  outC->output_To_EVC.info.train_data_info.maxTrainSpeed = kcg_lit_int32(0);
   outC->output_To_EVC.info.train_data_info.loadingGauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->output_To_EVC.info.train_data_info.axleLoadCategory = M_AXLELOADCAT_A;
   outC->output_To_EVC.info.train_data_info.airtightSystem = M_AIRTIGHT_Not_fitted;
-  outC->output_To_EVC.info.train_data_info.axleNumber = kcg_lit_int64(0);
+  outC->output_To_EVC.info.train_data_info.axleNumber = kcg_lit_int32(0);
   outC->output_To_EVC.info.train_data_info.numberNationalSystems =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx6 = 0; idx6 < 5; idx6++) {
-    outC->output_To_EVC.info.train_data_info.nationSystems[idx6] = kcg_lit_int64(0);
+    outC->output_To_EVC.info.train_data_info.nationSystems[idx6] = kcg_lit_int32(0);
   }
   outC->output_To_EVC.info.train_data_info.numberTractionSystems =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx7 = 0; idx7 < 4; idx7++) {
     outC->output_To_EVC.info.train_data_info.tractionSystem[idx7].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
     outC->output_To_EVC.info.train_data_info.tractionSystem[idx7].nid_ctraction =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->output_To_EVC.info.type_I_train_and_brake_inhibition.valid = kcg_true;
   outC->output_To_EVC.info.type_I_train_and_brake_inhibition.nothing_to_resume_profile_follow.d_test_trackcond.now =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->output_To_EVC.info.type_I_train_and_brake_inhibition.nothing_to_resume_profile_follow.d_test_trackcond.distance =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->output_To_EVC.info.type_I_train_and_brake_inhibition.nothing_to_resume_profile_follow.l_test_trackcond.now =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->output_To_EVC.info.type_I_train_and_brake_inhibition.nothing_to_resume_profile_follow.l_test_trackcond.distance =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->output_To_EVC.info.type_I_train_and_brake_inhibition.nothing_to_resume_profile_follow.m_trackcond =
     non_stopping_area_TIU_Types_Pkg;
   outC->output_To_EVC.info.type_I_train_and_brake_inhibition.empty_profile_initial_state_to_be_resumed.now =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->output_To_EVC.info.type_I_train_and_brake_inhibition.empty_profile_initial_state_to_be_resumed.distance =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->serviceBrakeCommandTmp = cEmptyBrakeSignalCommand_Toolbox;
   outC->emergencyBrakeCommandTmp = cEmptyBrakeSignalCommand_Toolbox;
   outC->cutoffCommand = apply_traction_cutoff_TIU_Types_Pkg;
@@ -623,6 +623,6 @@ void kcg_load_SV_TIU_Toolbox_TrainModules(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** TIU_Toolbox_TrainModules.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

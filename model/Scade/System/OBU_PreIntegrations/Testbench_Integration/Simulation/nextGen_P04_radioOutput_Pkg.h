@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _nextGen_P04_radioOutput_Pkg_H_
 #define _nextGen_P04_radioOutput_Pkg_H_
@@ -23,10 +23,10 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   PT4_ErrorReporting_T_Packet_TrainTypes_Pkg /* _L1/ */ _L1;
   P004_TM_TrainToTrack /* _L2/ */ _L2;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L12/ */ _L12;
   kcg_bool /* _L34/ */ _L34;
   M_ERROR /* _L33/ */ _L33;
-  kcg_int64 /* _L38/ */ _L38;
+  kcg_int32 /* _L38/ */ _L38;
 } outC_nextGen_P04_radioOutput_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -51,6 +51,6 @@ extern void nextGen_P04_init_radioOutput_Pkg(
 #endif /* _nextGen_P04_radioOutput_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** nextGen_P04_radioOutput_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

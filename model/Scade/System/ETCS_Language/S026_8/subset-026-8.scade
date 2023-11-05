@@ -21,7 +21,7 @@ THEREFORE, NO LIABILITY WILL BE GIVEN FOR SUCH AND ANY OTHER KIND OF USE.
 =============================================================================
 
 Changelog:
-2023-05-15 Scade 6.4 to Scade 6.5 migration: real -> float64 ad int -> int64
+2023-05-15 Scade 6.4 to Scade 6.5 migration: real -> float32 ad int -> int32
 */
 
 package Radio_TrainToTrack
@@ -33,12 +33,12 @@ type Validated_Train_Data_OptionalPackets = enum {
 
 type
 Validated_Train_Data = { -- Radio Message Number = 129 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	NID_ENGINE : int64 ,
-	PADDING0 : int64 ,
-	Validated_Train_Data_OptionalPackets : int64
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	NID_ENGINE : int32 ,
+	PADDING0 : int32 ,
+	Validated_Train_Data_OptionalPackets : int32
 };
 
 type Request_for_Shunting_OptionalPackets = enum { 
@@ -48,12 +48,12 @@ type Request_for_Shunting_OptionalPackets = enum {
 
 type
 Request_for_Shunting = { -- Radio Message Number = 130 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	NID_ENGINE : int64 ,
-	PADDING1 : int64 ,
-	Request_for_Shunting_OptionalPackets : int64
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	NID_ENGINE : int32 ,
+	PADDING1 : int32 ,
+	Request_for_Shunting_OptionalPackets : int32
 };
 
 type MA_Request_OptionalPackets = enum { 
@@ -64,13 +64,13 @@ type MA_Request_OptionalPackets = enum {
 
 type
 MA_Request = { -- Radio Message Number = 132 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	NID_ENGINE : int64 ,
-	Q_MARQSTREASON : int64 ,
-	PADDING2 : int64 ,
-	MA_Request_OptionalPackets : int64
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	NID_ENGINE : int32 ,
+	Q_MARQSTREASON : int32 ,
+	PADDING2 : int32 ,
+	MA_Request_OptionalPackets : int32
 };
 
 type Train_Position_Report_OptionalPackets = enum { 
@@ -83,12 +83,12 @@ type Train_Position_Report_OptionalPackets = enum {
 
 type
 Train_Position_Report = { -- Radio Message Number = 136 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	NID_ENGINE : int64 ,
-	PADDING3 : int64 ,
-	Train_Position_Report_OptionalPackets : int64
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	NID_ENGINE : int32 ,
+	PADDING3 : int32 ,
+	Train_Position_Report_OptionalPackets : int32
 };
 
 type Request_to_shorten_MA_is_granted_OptionalPackets = enum { 
@@ -98,12 +98,12 @@ type Request_to_shorten_MA_is_granted_OptionalPackets = enum {
 
 type
 Request_to_shorten_MA_is_granted = { -- Radio Message Number = 137 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	NID_ENGINE : int64 ,
-	PADDING4 : int64 ,
-	Request_to_shorten_MA_is_granted_OptionalPackets : int64
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	NID_ENGINE : int32 ,
+	PADDING4 : int32 ,
+	Request_to_shorten_MA_is_granted_OptionalPackets : int32
 };
 
 type Request_to_shorten_MA_is_rejected_OptionalPackets = enum { 
@@ -113,20 +113,20 @@ type Request_to_shorten_MA_is_rejected_OptionalPackets = enum {
 
 type
 Request_to_shorten_MA_is_rejected = { -- Radio Message Number = 138 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	NID_ENGINE : int64 ,
-	PADDING5 : int64 ,
-	Request_to_shorten_MA_is_rejected_OptionalPackets : int64
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	NID_ENGINE : int32 ,
+	PADDING5 : int32 ,
+	Request_to_shorten_MA_is_rejected_OptionalPackets : int32
 };
 
 type
 Acknowledgement = { -- Radio Message Number = 146 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	NID_ENGINE : int64 
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	NID_ENGINE : int32 
 };
 
 type Acknowledgement_of_Emergency_Stop_OptionalPackets = enum { 
@@ -136,13 +136,13 @@ type Acknowledgement_of_Emergency_Stop_OptionalPackets = enum {
 
 type
 Acknowledgement_of_Emergency_Stop = { -- Radio Message Number = 147 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	NID_ENGINE : int64 ,
-	NID_EM : int64 ,
-	Q_EMERGENCYSTOP : int64 ,
-	Acknowledgement_of_Emergency_Stop_OptionalPackets : int64
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	NID_ENGINE : int32 ,
+	NID_EM : int32 ,
+	Q_EMERGENCYSTOP : int32 ,
+	Acknowledgement_of_Emergency_Stop_OptionalPackets : int32
 };
 
 type Track_Ahead_Free_Granted_OptionalPackets = enum { 
@@ -152,12 +152,12 @@ type Track_Ahead_Free_Granted_OptionalPackets = enum {
 
 type
 Track_Ahead_Free_Granted = { -- Radio Message Number = 149 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	NID_ENGINE : int64 ,
-	PADDING6 : int64 ,
-	Track_Ahead_Free_Granted_OptionalPackets : int64
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	NID_ENGINE : int32 ,
+	PADDING6 : int32 ,
+	Track_Ahead_Free_Granted_OptionalPackets : int32
 };
 
 type End_of_Mission_OptionalPackets = enum { 
@@ -167,12 +167,12 @@ type End_of_Mission_OptionalPackets = enum {
 
 type
 End_of_Mission = { -- Radio Message Number = 150 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	NID_ENGINE : int64 ,
-	PADDING7 : int64 ,
-	End_of_Mission_OptionalPackets : int64
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	NID_ENGINE : int32 ,
+	PADDING7 : int32 ,
+	End_of_Mission_OptionalPackets : int32
 };
 
 type Radio_infill_request_OptionalPackets = enum { 
@@ -182,39 +182,39 @@ type Radio_infill_request_OptionalPackets = enum {
 
 type
 Radio_infill_request = { -- Radio Message Number = 153 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	NID_ENGINE : int64 ,
-	NID_C : int64 ,
-	NID_BG : int64 ,
-	Q_INFILL : int64 ,
-	PADDING8 : int64 ,
-	Radio_infill_request_OptionalPackets : int64
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	NID_ENGINE : int32 ,
+	NID_C : int32 ,
+	NID_BG : int32 ,
+	Q_INFILL : int32 ,
+	PADDING8 : int32 ,
+	Radio_infill_request_OptionalPackets : int32
 };
 
 type
 No_compatible_version_supported = { -- Radio Message Number = 154 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	NID_ENGINE : int64 
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	NID_ENGINE : int32 
 };
 
 type
 Initiation_of_a_communication_session = { -- Radio Message Number = 155 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	NID_ENGINE : int64 
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	NID_ENGINE : int32 
 };
 
 type
 Termination_of_a_communication_session = { -- Radio Message Number = 156 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	NID_ENGINE : int64 
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	NID_ENGINE : int32 
 };
 
 type SoM_Position_Report_OptionalPackets = enum { 
@@ -227,13 +227,13 @@ type SoM_Position_Report_OptionalPackets = enum {
 
 type
 SoM_Position_Report = { -- Radio Message Number = 157 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	NID_ENGINE : int64 ,
-	Q_STATUS : int64 ,
-	PADDING9 : int64 ,
-	SoM_Position_Report_OptionalPackets : int64
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	NID_ENGINE : int32 ,
+	Q_STATUS : int32 ,
+	PADDING9 : int32 ,
+	SoM_Position_Report_OptionalPackets : int32
 };
 
 type Text_message_acknowledged_by_driver_OptionalPackets = enum { 
@@ -243,13 +243,13 @@ type Text_message_acknowledged_by_driver_OptionalPackets = enum {
 
 type
 Text_message_acknowledged_by_driver = { -- Radio Message Number = 158 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	NID_ENGINE : int64 ,
-	NID_TEXTMESSAGE : int64 ,
-	PADDING10 : int64 ,
-	Text_message_acknowledged_by_driver_OptionalPackets : int64
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	NID_ENGINE : int32 ,
+	NID_TEXTMESSAGE : int32 ,
+	PADDING10 : int32 ,
+	Text_message_acknowledged_by_driver_OptionalPackets : int32
 };
 
 type Session_Established_OptionalPackets = enum { 
@@ -258,12 +258,12 @@ type Session_Established_OptionalPackets = enum {
 
 type
 Session_Established = { -- Radio Message Number = 159 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	NID_ENGINE : int64 ,
-	PADDING11 : int64 ,
-	Session_Established_OptionalPackets : int64
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	NID_ENGINE : int32 ,
+	PADDING11 : int32 ,
+	Session_Established_OptionalPackets : int32
 };
 
 
@@ -275,15 +275,15 @@ type SR_Authorisation_OptionalPackets = enum {
 
 type
 SR_Authorisation = { -- Radio Message Number = 2 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	M_ACK : int64 ,
-	NID_LRBG : int64 ,
-	Q_SCALE : int64 ,
-	D_SR : int64 ,
-	PADDING12 : int64 ,
-	SR_Authorisation_OptionalPackets : int64
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	M_ACK : int32 ,
+	NID_LRBG : int32 ,
+	Q_SCALE : int32 ,
+	D_SR : int32 ,
+	PADDING12 : int32 ,
+	SR_Authorisation_OptionalPackets : int32
 };
 
 type Movement_Authority_OptionalPackets = enum { 
@@ -323,32 +323,32 @@ type Movement_Authority_OptionalPackets = enum {
 
 type
 Movement_Authority = { -- Radio Message Number = 3 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	M_ACK : int64 ,
-	NID_LRBG : int64 ,
-	PADDING13 : int64 ,
-	Movement_Authority_OptionalPackets : int64
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	M_ACK : int32 ,
+	NID_LRBG : int32 ,
+	PADDING13 : int32 ,
+	Movement_Authority_OptionalPackets : int32
 };
 
 type
 Recognition_of_exit_from_TRIP_mode = { -- Radio Message Number = 6 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	M_ACK : int64 ,
-	NID_LRBG : int64 
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	M_ACK : int32 ,
+	NID_LRBG : int32 
 };
 
 type
 Acknowledgement_of_Train_Data = { -- Radio Message Number = 8 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN0 : int64 ,
-	M_ACK : int64 ,
-	NID_LRBG : int64 ,
-	T_TRAIN1 : int64 
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN0 : int32 ,
+	M_ACK : int32 ,
+	NID_LRBG : int32 ,
+	T_TRAIN1 : int32 
 };
 
 type Request_to_Shorten_MA_OptionalPackets = enum { 
@@ -358,47 +358,47 @@ type Request_to_Shorten_MA_OptionalPackets = enum {
 
 type
 Request_to_Shorten_MA = { -- Radio Message Number = 9 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	M_ACK : int64 ,
-	NID_LRBG : int64 ,
-	PADDING14 : int64 ,
-	Request_to_Shorten_MA_OptionalPackets : int64
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	M_ACK : int32 ,
+	NID_LRBG : int32 ,
+	PADDING14 : int32 ,
+	Request_to_Shorten_MA_OptionalPackets : int32
 };
 
 type
 Conditional_Emergency_Stop = { -- Radio Message Number = 15 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	M_ACK : int64 ,
-	NID_LRBG : int64 ,
-	NID_EM : int64 ,
-	Q_SCALE : int64 ,
-	D_REF : int64 ,
-	Q_DIR : int64 ,
-	D_EMERGENCYSTOP : int64 
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	M_ACK : int32 ,
+	NID_LRBG : int32 ,
+	NID_EM : int32 ,
+	Q_SCALE : int32 ,
+	D_REF : int32 ,
+	Q_DIR : int32 ,
+	D_EMERGENCYSTOP : int32 
 };
 
 type
 Unconditional_Emergency_Stop = { -- Radio Message Number = 16 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	M_ACK : int64 ,
-	NID_LRBG : int64 ,
-	NID_EM : int64 
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	M_ACK : int32 ,
+	NID_LRBG : int32 ,
+	NID_EM : int32 
 };
 
 type
 Revocation_of_Emergency_Stop = { -- Radio Message Number = 18 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	M_ACK : int64 ,
-	NID_LRBG : int64 ,
-	NID_EM : int64 
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	M_ACK : int32 ,
+	NID_LRBG : int32 ,
+	NID_EM : int32 
 };
 
 type General_message_OptionalPackets = enum { 
@@ -437,23 +437,23 @@ type General_message_OptionalPackets = enum {
 
 type
 General_message = { -- Radio Message Number = 24 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	M_ACK : int64 ,
-	NID_LRBG : int64 ,
-	PADDING15 : int64 ,
-	General_message_OptionalPackets : int64
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	M_ACK : int32 ,
+	NID_LRBG : int32 ,
+	PADDING15 : int32 ,
+	General_message_OptionalPackets : int32
 };
 
 type
 SH_Refused = { -- Radio Message Number = 27 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN0 : int64 ,
-	M_ACK : int64 ,
-	NID_LRBG : int64 ,
-	T_TRAIN1 : int64 
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN0 : int32 ,
+	M_ACK : int32 ,
+	NID_LRBG : int32 ,
+	T_TRAIN1 : int32 
 };
 
 type SH_Authorised_OptionalPackets = enum { 
@@ -464,24 +464,24 @@ type SH_Authorised_OptionalPackets = enum {
 
 type
 SH_Authorised = { -- Radio Message Number = 28 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN0 : int64 ,
-	M_ACK : int64 ,
-	NID_LRBG : int64 ,
-	T_TRAIN1 : int64 ,
-	PADDING16 : int64 ,
-	SH_Authorised_OptionalPackets : int64
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN0 : int32 ,
+	M_ACK : int32 ,
+	NID_LRBG : int32 ,
+	T_TRAIN1 : int32 ,
+	PADDING16 : int32 ,
+	SH_Authorised_OptionalPackets : int32
 };
 
 type
 RBC_or_RIU_System_Version = { -- Radio Message Number = 32 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	M_ACK : int64 ,
-	NID_LRBG : int64 ,
-	M_VERSION : int64 
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	M_ACK : int32 ,
+	NID_LRBG : int32 ,
+	M_VERSION : int32 
 };
 
 type MA_with_Shifted_Location_Reference_OptionalPackets = enum { 
@@ -521,29 +521,29 @@ type MA_with_Shifted_Location_Reference_OptionalPackets = enum {
 
 type
 MA_with_Shifted_Location_Reference = { -- Radio Message Number = 33 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	M_ACK : int64 ,
-	NID_LRBG : int64 ,
-	Q_SCALE : int64 ,
-	D_REF : int64 ,
-	PADDING17 : int64 ,
-	MA_with_Shifted_Location_Reference_OptionalPackets : int64
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	M_ACK : int32 ,
+	NID_LRBG : int32 ,
+	Q_SCALE : int32 ,
+	D_REF : int32 ,
+	PADDING17 : int32 ,
+	MA_with_Shifted_Location_Reference_OptionalPackets : int32
 };
 
 type
 Track_Ahead_Free_Request = { -- Radio Message Number = 34 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	M_ACK : int64 ,
-	NID_LRBG : int64 ,
-	Q_SCALE : int64 ,
-	D_REF : int64 ,
-	Q_DIR : int64 ,
-	D_TAFDISPLAY : int64 ,
-	L_TAFDISPLAY : int64 
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	M_ACK : int32 ,
+	NID_LRBG : int32 ,
+	Q_SCALE : int32 ,
+	D_REF : int32 ,
+	Q_DIR : int32 ,
+	D_TAFDISPLAY : int32 ,
+	L_TAFDISPLAY : int32 
 };
 
 type Infill_MA_OptionalPackets = enum { 
@@ -572,68 +572,68 @@ type Infill_MA_OptionalPackets = enum {
 
 type
 Infill_MA = { -- Radio Message Number = 37 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	M_ACK : int64 ,
-	NID_LRBG : int64 ,
-	PADDING18 : int64 ,
-	Infill_MA_OptionalPackets : int64
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	M_ACK : int32 ,
+	NID_LRBG : int32 ,
+	PADDING18 : int32 ,
+	Infill_MA_OptionalPackets : int32
 };
 
 type
 Initiation_of_a_communication_session = { -- Radio Message Number = 38 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	M_ACK : int64 ,
-	NID_LRBG : int64 
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	M_ACK : int32 ,
+	NID_LRBG : int32 
 };
 
 type
 Acknowledgement_of_termination_of_a_communication_session = { -- Radio Message Number = 39 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	M_ACK : int64 ,
-	NID_LRBG : int64 
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	M_ACK : int32 ,
+	NID_LRBG : int32 
 };
 
 type
 Train_Rejected = { -- Radio Message Number = 40 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	M_ACK : int64 ,
-	NID_LRBG : int64 
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	M_ACK : int32 ,
+	NID_LRBG : int32 
 };
 
 type
 Train_Accepted = { -- Radio Message Number = 41 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	M_ACK : int64 ,
-	NID_LRBG : int64 
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	M_ACK : int32 ,
+	NID_LRBG : int32 
 };
 
 type
 SoM_position_report_confirmed_by_RBC = { -- Radio Message Number = 43 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	M_ACK : int64 ,
-	NID_LRBG : int64 
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	M_ACK : int32 ,
+	NID_LRBG : int32 
 };
 
 type
 Assignment_of_coordinate_system = { -- Radio Message Number = 45 
-	NID_MESSAGE : int64 ,
-	L_MESSAGE : int64 ,
-	T_TRAIN : int64 ,
-	M_ACK : int64 ,
-	NID_LRBG : int64 ,
-	Q_ORIENTATION : int64 
+	NID_MESSAGE : int32 ,
+	L_MESSAGE : int32 ,
+	T_TRAIN : int32 ,
+	M_ACK : int32 ,
+	NID_LRBG : int32 ,
+	Q_ORIENTATION : int32 
 };
 
 

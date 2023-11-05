@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -13,7 +13,7 @@ void GetPacketId_InformationFilter_Pkg_Common(
   MetadataElement_T_Common_Types_Pkg *inPacket,
   outC_GetPacketId_InformationFilter_Pkg_Common *outC)
 {
-  outC->_L9 = kcg_lit_int64(255);
+  outC->_L9 = kcg_lit_int32(255);
   kcg_copy_MetadataElement_T_Common_Types_Pkg(&outC->_L1, inPacket);
   outC->_L6 = outC->_L1.nid_packet;
   /* _L5=(TM::T_extract_nid_packet_from_metadata_selector#1)/ */
@@ -37,17 +37,17 @@ void GetPacketId_InformationFilter_Pkg_Common(
 void GetPacketId_init_InformationFilter_Pkg_Common(
   outC_GetPacketId_InformationFilter_Pkg_Common *outC)
 {
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
   outC->_L7 = kcg_true;
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L1.nid_packet = kcg_lit_int64(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L1.nid_packet = kcg_lit_int32(0);
   outC->_L1.q_dir = Q_DIR_Reverse;
   outC->_L1.valid = kcg_true;
-  outC->_L1.startAddress = kcg_lit_int64(0);
-  outC->_L1.endAddress = kcg_lit_int64(0);
-  outC->outPacketId = kcg_lit_int64(0);
+  outC->_L1.startAddress = kcg_lit_int32(0);
+  outC->_L1.endAddress = kcg_lit_int32(0);
+  outC->outPacketId = kcg_lit_int32(0);
   /* _L5=(TM::T_extract_nid_packet_from_metadata_selector#1)/ */
   T_extract_nid_packet_from_metadata_selector_init_TM(
     &outC->Context_T_extract_nid_packet_from_metadata_selector_1);
@@ -69,6 +69,6 @@ void GetPacketId_reset_InformationFilter_Pkg_Common(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** GetPacketId_InformationFilter_Pkg_Common.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

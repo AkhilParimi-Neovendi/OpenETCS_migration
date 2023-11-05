@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _Manage_TrackSideInformation_Integration_Manage_TrackSideInformation_Integration_Pkg_H_
 #define _Manage_TrackSideInformation_Integration_Manage_TrackSideInformation_Integration_Pkg_H_
@@ -28,10 +28,10 @@ typedef struct {
   MSG_Errors_T_Common_Types_Pkg /* outCheckErrors/ */ outCheckErrors;
   T_Data_From_Track_MASSPGradient_Available_Level_And_Mode_Types_Pkg /* IF_toML/ */ IF_toML;
   /* -----------------------   local probes  ------------------------- */
-  kcg_float64 /* positionM/ */ positionM;
+  kcg_float32 /* positionM/ */ positionM;
   kcg_bool /* debug_ErrorMSG/ */ debug_ErrorMSG;
   kcg_bool /* errorBG/ */ errorBG;
-  kcg_int64 /* countPackets/ */ countPackets;
+  kcg_int32 /* countPackets/ */ countPackets;
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
   outC_checkOnErrors_xdebugSupport_Pkg /* _L185=(xdebugSupport_Pkg::checkOnErrors#1)/ */ Context_checkOnErrors_1;
@@ -116,18 +116,18 @@ typedef struct {
   filterRelatedEvents_T_Common_Types_Pkg /* _L159/ */ _L159;
   NID_C /* _L161/ */ _L161;
   NID_ERRORBG_BG_Types_Pkg /* _L160/ */ _L160;
-  kcg_int64 /* _L162/ */ _L162;
-  kcg_int64 /* _L163/ */ _L163;
+  kcg_int32 /* _L162/ */ _L162;
+  kcg_int32 /* _L163/ */ _L163;
   API_TrackSideInput_T_API_Msg_Pkg /* _L164/ */ _L164;
   odometry_T_Obu_BasicTypes_Pkg /* _L169/ */ _L169;
   OdometryLocations_T_Obu_BasicTypes_Pkg /* _L170/ */ _L170;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L171/ */ _L171;
-  kcg_float64 /* _L172/ */ _L172;
-  kcg_float64 /* _L173/ */ _L173;
-  kcg_float64 /* _L174/ */ _L174;
+  kcg_float32 /* _L172/ */ _L172;
+  kcg_float32 /* _L173/ */ _L173;
+  kcg_float32 /* _L174/ */ _L174;
   kcg_bool /* _L186/ */ _L186;
   kcg_bool /* _L185/ */ _L185;
-  kcg_int64 /* _L187/ */ _L187;
+  kcg_int32 /* _L187/ */ _L187;
   MSG_Errors_T_Common_Types_Pkg /* _L192/ */ _L192;
   positionedBG_T_TrainPosition_Types_Pck /* _L193/ */ _L193;
   kcg_bool /* _L194/ */ _L194;
@@ -135,7 +135,7 @@ typedef struct {
   kcg_bool /* _L197/ */ _L197;
   morcStatus_T_RCM_Session_Types_Pkg /* _L212/ */ _L212;
   morcStatus_T_RCM_Session_Types_Pkg /* _L215/ */ _L215;
-  kcg_int64 /* _L211/ */ _L211;
+  kcg_int32 /* _L211/ */ _L211;
   T_Data_From_Track_MASSPGradient_Available_Level_And_Mode_Types_Pkg /* _L216/ */ _L216;
 } outC_Manage_TrackSideInformation_Integration_Manage_TrackSideInformation_Integration_Pkg;
 
@@ -210,6 +210,6 @@ extern void kcg_load_SV_Manage_TrackSideInformation_Integration_Manage_TrackSide
 #endif /* _Manage_TrackSideInformation_Integration_Manage_TrackSideInformation_Integration_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Manage_TrackSideInformation_Integration_Manage_TrackSideInformation_Integration_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

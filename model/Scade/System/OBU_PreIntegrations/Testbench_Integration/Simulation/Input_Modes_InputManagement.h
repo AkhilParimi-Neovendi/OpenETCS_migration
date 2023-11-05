@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _Input_Modes_InputManagement_H_
 #define _Input_Modes_InputManagement_H_
@@ -46,7 +46,7 @@ typedef struct {
   kcg_bool /* _L91/ */ _L91;
   kcg_bool /* _L90/ */ _L90;
   P12_Level1MovementAuthorities_T_Packet_Types_Pkg /* _L89/ */ _L89;
-  kcg_int64 /* _L88/ */ _L88;
+  kcg_int32 /* _L88/ */ _L88;
   V_MAIN /* _L87/ */ _L87;
   kcg_bool /* _L86/ */ _L86;
   P12_Level1MovementAuthority_T_Packet_Types_Pkg /* _L85/ */ _L85;
@@ -74,7 +74,7 @@ typedef struct {
   P80_ModeProfiles_T_Packet_Types_Pkg /* _L104/ */ _L104;
   NID_LRBG /* _L103/ */ _L103;
   Location_T_Obu_BasicTypes_Pkg /* _L102/ */ _L102;
-  array_int64_3 /* _L118/ */ _L118;
+  array_int32_3 /* _L118/ */ _L118;
   Location_T_Obu_BasicTypes_Pkg /* _L119/ */ _L119;
   Location_T_Obu_BasicTypes_Pkg /* _L120/ */ _L120;
 } outC_Input_Modes_InputManagement;
@@ -101,6 +101,6 @@ extern void Input_Modes_init_InputManagement(
 #endif /* _Input_Modes_InputManagement_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Input_Modes_InputManagement.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

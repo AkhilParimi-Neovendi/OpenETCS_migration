@@ -54,20 +54,20 @@ void Write_DMI_Driver_Identifier_to_int_init_DATA_Packets_Bothways(
   static kcg_size idx3;
 
   for (idx = 0; idx < 11; idx++) {
-    outC->_L21[idx] = kcg_lit_int64(0);
+    outC->_L21[idx] = kcg_lit_int32(0);
   }
   outC->_L22 = kcg_true;
   for (idx1 = 0; idx1 < 11; idx1++) {
-    outC->_L23[idx1] = kcg_lit_int64(0);
+    outC->_L23[idx1] = kcg_lit_int32(0);
   }
   outC->_L13.valid = kcg_true;
-  outC->_L13.systemTime = kcg_lit_int64(0);
+  outC->_L13.systemTime = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 9; idx2++) {
     outC->_L13.driverIdentifier[idx2] = ' ';
   }
   outC->every = kcg_true;
   for (idx3 = 0; idx3 < 11; idx3++) {
-    outC->dmi_driver_identifier_int[idx3] = kcg_lit_int64(0);
+    outC->dmi_driver_identifier_int[idx3] = kcg_lit_int32(0);
   }
   /* _L23=(DATA::Packets::Bothways::C_DMI_Driver_Identifier_to_int#1)/ */
   C_DMI_Driver_Identifier_to_int_init_DATA_Packets_Bothways(

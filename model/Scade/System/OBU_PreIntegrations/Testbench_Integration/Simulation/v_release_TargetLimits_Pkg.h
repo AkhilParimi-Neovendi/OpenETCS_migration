@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _v_release_TargetLimits_Pkg_H_
 #define _v_release_TargetLimits_Pkg_H_
@@ -28,12 +28,12 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   V_internal_real_Type_SDM_Types_Pkg /* _L9/ */ _L9;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L12/ */ _L12;
   _93_array /* _L14/ */ _L14;
-  array_float64_10 /* _L15/ */ _L15;
-  array_float64_10 /* _L16/ */ _L16;
-  array_float64_10 /* _L17/ */ _L17;
-  _9_array /* _L19/ */ _L19;
+  array_float32_10 /* _L15/ */ _L15;
+  array_float32_10 /* _L16/ */ _L16;
+  array_float32_10 /* _L17/ */ _L17;
+  _6_array /* _L19/ */ _L19;
   L_internal_real_Type_SDM_Types_Pkg /* _L21/ */ _L21;
   V_internal_real_Type_SDM_Types_Pkg /* _L23/ */ _L23;
   V_internal_real_Type_SDM_Types_Pkg /* _L24/ */ _L24;
@@ -42,7 +42,7 @@ typedef struct {
   T_trac_t_TargetLimits_Pkg /* _L28/ */ _L28;
   L_internal_real_Type_SDM_Types_Pkg /* _L33/ */ _L33;
   kcg_bool /* _L46/ */ _L46;
-  kcg_float64 /* _L47/ */ _L47;
+  kcg_float32 /* _L47/ */ _L47;
   V_internal_real_Type_SDM_Types_Pkg /* _L55/ */ _L55;
   kcg_bool /* _L57/ */ _L57;
   kcg_bool /* _L58/ */ _L58;
@@ -89,6 +89,6 @@ extern void v_release_init_TargetLimits_Pkg(
 #endif /* _v_release_TargetLimits_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** v_release_TargetLimits_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

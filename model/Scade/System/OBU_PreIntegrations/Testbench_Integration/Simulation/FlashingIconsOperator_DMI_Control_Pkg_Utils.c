@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -14,11 +14,11 @@ void FlashingIconsOperator_DMI_Control_Pkg_Utils(
   /* Input5/ */
   kcg_bool Input5,
   /* Input6/ */
-  kcg_float64 Input6,
+  kcg_float32 Input6,
   /* SystemTime/ */
   T_internal_Type_Obu_BasicTypes_Pkg SystemTime,
   /* Input7/ */
-  kcg_float64 Input7,
+  kcg_float32 Input7,
   outC_FlashingIconsOperator_DMI_Control_Pkg_Utils *outC)
 {
   static kcg_bool tmp;
@@ -27,13 +27,13 @@ void FlashingIconsOperator_DMI_Control_Pkg_Utils(
   static kcg_bool _2_op_call;
   static kcg_bool noname;
 
-  outC->_L10 = kcg_lit_float64(0.0);
+  outC->_L10 = kcg_lit_float32(0.0);
   outC->_L7 = Input7;
   outC->_L14 = outC->_L7 != outC->_L10;
   outC->every = outC->_L14;
   outC->_L6 = SystemTime;
   outC->_L5 = Input6;
-  outC->_L11 = /* _L11= */(kcg_int64) outC->_L5;
+  outC->_L11 = /* _L11= */(kcg_int32) outC->_L5;
   if (outC->every) {
     /* _L12=(DMI_Control_Pkg::Utils::FlashingOperator#1)/ */
     FlashingOperator_DMI_Control_Pkg_Utils(
@@ -79,15 +79,15 @@ void FlashingIconsOperator_init_DMI_Control_Pkg_Utils(
   outC_FlashingIconsOperator_DMI_Control_Pkg_Utils *outC)
 {
   outC->_L14 = kcg_true;
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_float64(0.0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_float32(0.0);
   outC->_L9 = kcg_true;
   outC->_L8 = kcg_true;
   outC->_L2 = kcg_true;
   outC->_L4 = kcg_true;
-  outC->_L5 = kcg_lit_float64(0.0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_float64(0.0);
+  outC->_L5 = kcg_lit_float32(0.0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_float32(0.0);
   outC->every = kcg_true;
   outC->_L13 = kcg_true;
   outC->_L12 = kcg_true;
@@ -139,6 +139,6 @@ void kcg_load_SV_FlashingIconsOperator_DMI_Control_Pkg_Utils(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** FlashingIconsOperator_DMI_Control_Pkg_Utils.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

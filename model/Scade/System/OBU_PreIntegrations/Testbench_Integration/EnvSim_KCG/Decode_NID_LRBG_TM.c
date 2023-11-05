@@ -13,7 +13,7 @@ void Decode_NID_LRBG_TM(
   NID_LRBG NID_LRBG_in,
   outC_Decode_NID_LRBG_TM *outC)
 {
-  outC->_L2 = kcg_lit_int64(100000);
+  outC->_L2 = kcg_lit_int32(100000);
   outC->_L1 = NID_LRBG_in;
   outC->_L4 = outC->_L1 % outC->_L2;
   outC->_L3 = outC->_L1 / outC->_L2;
@@ -24,12 +24,12 @@ void Decode_NID_LRBG_TM(
 #ifndef KCG_USER_DEFINED_INIT
 void Decode_NID_LRBG_init_TM(outC_Decode_NID_LRBG_TM *outC)
 {
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->NID_BG_out = kcg_lit_int64(0);
-  outC->NID_C_out = kcg_lit_int64(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->NID_BG_out = kcg_lit_int32(0);
+  outC->NID_C_out = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

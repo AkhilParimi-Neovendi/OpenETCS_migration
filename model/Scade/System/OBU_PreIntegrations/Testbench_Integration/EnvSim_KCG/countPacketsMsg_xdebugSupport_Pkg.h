@@ -15,7 +15,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* count/ */ count;
+  kcg_int32 /* count/ */ count;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -24,9 +24,9 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   Metadata_T_Common_Types_Pkg /* _L2/ */ _L2;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L6/ */ _L6;
   kcg_bool /* _L7/ */ _L7;
   CompressedPackets_T_Common_Types_Pkg /* _L10/ */ _L10;
   ReceivedMessage_T_Common_Types_Pkg /* _L13/ */ _L13;

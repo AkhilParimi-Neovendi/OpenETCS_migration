@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -118,11 +118,11 @@ void ToFullSupervision_init_Conditions(outC_ToFullSupervision_Conditions *outC)
   outC->_L414 = Profile_OS_Level_And_Mode_Types_Pkg;
   outC->_L413 = kcg_true;
   outC->_L408 = kcg_true;
-  outC->_L406.Distance = kcg_lit_int64(0);
+  outC->_L406.Distance = kcg_lit_int32(0);
   outC->_L406.Mode = Profile_OS_Level_And_Mode_Types_Pkg;
-  outC->_L406.Speed = kcg_lit_int64(0);
-  outC->_L406.Length = kcg_lit_int64(0);
-  outC->_L406.Length_Ack = kcg_lit_int64(0);
+  outC->_L406.Speed = kcg_lit_int32(0);
+  outC->_L406.Length = kcg_lit_int32(0);
+  outC->_L406.Length_Ack = kcg_lit_int32(0);
   outC->_L404 = kcg_true;
   outC->_L391 = kcg_true;
   outC->_L387 = kcg_true;
@@ -176,6 +176,6 @@ void kcg_load_SV_ToFullSupervision_Conditions(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ToFullSupervision_Conditions.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

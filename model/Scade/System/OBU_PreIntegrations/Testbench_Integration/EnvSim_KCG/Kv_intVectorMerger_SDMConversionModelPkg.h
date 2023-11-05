@@ -14,7 +14,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  array_int64_2 /* indices_out/ */ indices_out;
+  array_int32_2 /* indices_out/ */ indices_out;
   A_internal_Type_Obu_BasicTypes_Pkg /* a/ */ a;
   V_internal_Type_Obu_BasicTypes_Pkg /* v/ */ v;
   /* -----------------------  no local probes  ----------------------- */
@@ -23,60 +23,60 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* @1/Ma_Output/ */ Ma_Output_Max_1_int64;
-  kcg_int64 /* @1/I2/ */ I2_Max_1_int64;
-  kcg_int64 /* @1/I1/ */ I1_Max_1_int64;
-  kcg_int64 /* @1/_L4/ */ _L4_Max_1_int64;
-  kcg_bool /* @1/_L3/ */ _L3_Max_1_int64;
-  kcg_int64 /* @1/_L2/ */ _L2_Max_1_int64;
-  kcg_int64 /* @1/_L1/ */ _L1_Max_1_int64;
-  array_int64_2 /* _L1/ */ _L1;
+  kcg_int32 /* @1/Ma_Output/ */ Ma_Output_Max_1_int32;
+  kcg_int32 /* @1/I2/ */ I2_Max_1_int32;
+  kcg_int32 /* @1/I1/ */ I1_Max_1_int32;
+  kcg_int32 /* @1/_L4/ */ _L4_Max_1_int32;
+  kcg_bool /* @1/_L3/ */ _L3_Max_1_int32;
+  kcg_int32 /* @1/_L2/ */ _L2_Max_1_int32;
+  kcg_int32 /* @1/_L1/ */ _L1_Max_1_int32;
+  array_int32_2 /* _L1/ */ _L1;
   mv_Map_t_SDMConversionModelPkg /* _L2/ */ _L2;
   av_Map_t_SDMConversionModelPkg /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
-  array_int64_2 /* _L6/ */ _L6;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L5/ */ _L5;
+  array_int32_2 /* _L6/ */ _L6;
   a_BrakeSteps_t_SDMConversionModelPkg /* _L7/ */ _L7;
   m_KvSteps_t_SDMConversionModelPkg /* _L8/ */ _L8;
   A_internal_Type_Obu_BasicTypes_Pkg /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
-  kcg_int64 /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
-  kcg_int64 /* _L13/ */ _L13;
-  kcg_int64 /* _L23/ */ _L23;
-  kcg_int64 /* _L22/ */ _L22;
-  array_int64_2 /* _L21/ */ _L21;
+  kcg_int32 /* _L10/ */ _L10;
+  kcg_int32 /* _L11/ */ _L11;
+  kcg_int32 /* _L12/ */ _L12;
+  kcg_int32 /* _L13/ */ _L13;
+  kcg_int32 /* _L23/ */ _L23;
+  kcg_int32 /* _L22/ */ _L22;
+  array_int32_2 /* _L21/ */ _L21;
   av_Map_t_SDMConversionModelPkg /* _L20/ */ _L20;
-  array_int64_2 /* _L19/ */ _L19;
-  kcg_int64 /* _L18/ */ _L18;
+  array_int32_2 /* _L19/ */ _L19;
+  kcg_int32 /* _L18/ */ _L18;
   v_KvSteps_t_SDMConversionModelPkg /* _L17/ */ _L17;
   mv_Map_t_SDMConversionModelPkg /* _L16/ */ _L16;
   v_BrakeSteps_t_SDMConversionModelPkg /* _L15/ */ _L15;
-  kcg_int64 /* _L14/ */ _L14;
-  kcg_int64 /* _L24/ */ _L24;
-  kcg_int64 /* _L25/ */ _L25;
-  kcg_int64 /* _L26/ */ _L26;
+  kcg_int32 /* _L14/ */ _L14;
+  kcg_int32 /* _L24/ */ _L24;
+  kcg_int32 /* _L25/ */ _L25;
+  kcg_int32 /* _L26/ */ _L26;
   kcg_bool /* _L27/ */ _L27;
-  array_int64_2 /* _L28/ */ _L28;
-  kcg_int64 /* _L29/ */ _L29;
+  array_int32_2 /* _L28/ */ _L28;
+  kcg_int32 /* _L29/ */ _L29;
   kcg_bool /* _L30/ */ _L30;
-  kcg_int64 /* _L31/ */ _L31;
-  array_int64_2 /* _L51/ */ _L51;
-  kcg_int64 /* _L50/ */ _L50;
+  kcg_int32 /* _L31/ */ _L31;
+  array_int32_2 /* _L51/ */ _L51;
+  kcg_int32 /* _L50/ */ _L50;
   v_BrakeSteps_t_SDMConversionModelPkg /* _L49/ */ _L49;
-  kcg_int64 /* _L48/ */ _L48;
-  array_int64_2 /* _L47/ */ _L47;
+  kcg_int32 /* _L48/ */ _L48;
+  array_int32_2 /* _L47/ */ _L47;
   mv_Map_t_SDMConversionModelPkg /* _L46/ */ _L46;
-  kcg_int64 /* _L45/ */ _L45;
-  kcg_int64 /* _L44/ */ _L44;
+  kcg_int32 /* _L45/ */ _L45;
+  kcg_int32 /* _L44/ */ _L44;
   av_Map_t_SDMConversionModelPkg /* _L43/ */ _L43;
   v_KvSteps_t_SDMConversionModelPkg /* _L42/ */ _L42;
-  kcg_int64 /* _L54/ */ _L54;
+  kcg_int32 /* _L54/ */ _L54;
   kcg_bool /* _L55/ */ _L55;
   kcg_bool /* _L56/ */ _L56;
-  kcg_int64 /* _L57/ */ _L57;
+  kcg_int32 /* _L57/ */ _L57;
   kcg_bool /* _L58/ */ _L58;
-  kcg_int64 /* _L60/ */ _L60;
+  kcg_int32 /* _L60/ */ _L60;
   kcg_bool /* _L59/ */ _L59;
   kcg_bool /* _L64/ */ _L64;
   kcg_bool /* _L66/ */ _L66;
@@ -88,7 +88,7 @@ typedef struct {
 /* SDMConversionModelPkg::Kv_intVectorMerger/ */
 extern void Kv_intVectorMerger_SDMConversionModelPkg(
   /* indices_in/ */
-  array_int64_2 *indices_in,
+  array_int32_2 *indices_in,
   /* Kv/ */
   mv_Map_t_SDMConversionModelPkg *Kv,
   /* Abrake/ */

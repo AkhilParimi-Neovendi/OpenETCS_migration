@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -53,18 +53,18 @@ void Write_DMI_Train_Data_Ack_to_int_init_DATA_Packets_DMI_to_EVC(
   static kcg_size idx2;
 
   for (idx = 0; idx < 3; idx++) {
-    outC->_L23[idx] = kcg_lit_int64(0);
+    outC->_L23[idx] = kcg_lit_int32(0);
   }
   outC->_L22 = kcg_true;
   for (idx1 = 0; idx1 < 3; idx1++) {
-    outC->_L21[idx1] = kcg_lit_int64(0);
+    outC->_L21[idx1] = kcg_lit_int32(0);
   }
   outC->_L16.valid = kcg_true;
-  outC->_L16.systemTime = kcg_lit_int64(0);
+  outC->_L16.systemTime = kcg_lit_int32(0);
   outC->_L16.acknowledged = kcg_true;
   outC->every = kcg_true;
   for (idx2 = 0; idx2 < 3; idx2++) {
-    outC->dmi_train_data_ack_int[idx2] = kcg_lit_int64(0);
+    outC->dmi_train_data_ack_int[idx2] = kcg_lit_int32(0);
   }
   /* _L21=(DATA::Packets::DMI_to_EVC::C_DMI_Train_Data_Ack_to_int#1)/ */
   C_DMI_Train_Data_Ack_to_int_init_DATA_Packets_DMI_to_EVC(
@@ -87,6 +87,6 @@ void Write_DMI_Train_Data_Ack_to_int_reset_DATA_Packets_DMI_to_EVC(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Write_DMI_Train_Data_Ack_to_int_DATA_Packets_DMI_to_EVC.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

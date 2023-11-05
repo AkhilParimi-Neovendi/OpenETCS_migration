@@ -15,7 +15,7 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   M_TrainTrackRadioOutputBuffer_t_TM_lib_internal /* Buffer_Out/ */ Buffer_Out;
-  kcg_int64 /* Stacksize_new/ */ Stacksize_new;
+  kcg_int32 /* Stacksize_new/ */ Stacksize_new;
   M_TrainTrack_Message_T_TM_radio_messages /* Message_out/ */ Message_out;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
@@ -23,22 +23,22 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* index/ */ index;
+  kcg_int32 /* index/ */ index;
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* _L23/ */ _L23;
   M_TrainTrack_Message_T_TM_radio_messages /* _L21/ */ _L21;
-  kcg_int64 /* _L15/ */ _L15;
-  kcg_int64 /* _L14/ */ _L14;
+  kcg_int32 /* _L15/ */ _L15;
+  kcg_int32 /* _L14/ */ _L14;
   M_TrainTrackRadioOutputBuffer_t_TM_lib_internal /* _L12/ */ _L12;
   _56_array /* _L24/ */ _L24;
   M_TrainTrackRadioOutputBuffer_t_TM_lib_internal /* _L25/ */ _L25;
-  kcg_int64 /* _L27/ */ _L27;
-  kcg_int64 /* _L28/ */ _L28;
+  kcg_int32 /* _L27/ */ _L27;
+  kcg_int32 /* _L28/ */ _L28;
   _15_array /* _L29/ */ _L29;
-  kcg_int64 /* _L31/ */ _L31;
-  kcg_int64 /* _L32/ */ _L32;
-  kcg_int64 /* _L33/ */ _L33;
+  kcg_int32 /* _L31/ */ _L31;
+  kcg_int32 /* _L32/ */ _L32;
+  kcg_int32 /* _L33/ */ _L33;
   kcg_bool /* _L34/ */ _L34;
-  kcg_int64 /* _L35/ */ _L35;
+  kcg_int32 /* _L35/ */ _L35;
   _54_array /* _L36/ */ _L36;
   M_TrainTrack_Message_T_TM_radio_messages /* _L37/ */ _L37;
   M_TrainTrack_Message_T_TM_radio_messages /* _L38/ */ _L38;
@@ -54,7 +54,7 @@ extern void BufferOutput_read_write4_TM_lib_internal(
   /* Buffer_In/ */
   M_TrainTrackRadioOutputBuffer_t_TM_lib_internal *Buffer_In,
   /* Stacksize_old/ */
-  kcg_int64 Stacksize_old,
+  kcg_int32 Stacksize_old,
   /* Message_In/ */
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus *Message_In,
   outC_BufferOutput_read_write4_TM_lib_internal *outC);

@@ -58,23 +58,23 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   M_TrainTrack_compressed_packets_T_TM_radio_messages /* Det_if_P003:then:_L3/ */ _L3_then_Det_if_P003;
   P003_TM_TrainToTrack /* Det_if_P003:then:_L2/ */ _L2_then_Det_if_P003;
-  array_int64_8 /* Det_if_P003:then:_L1/ */ _L1_then_Det_if_P003;
+  array_int32_8 /* Det_if_P003:then:_L1/ */ _L1_then_Det_if_P003;
   P003_TM_TrainToTrack /* Det_if_P003:else:_L1/ */ _L1_else_Det_if_P003;
   M_TrainTrack_compressed_packets_T_TM_radio_messages /* Det_if_P005:then:_L3/ */ _L3_then_Det_if_P005;
   P005_TM_TrainToTrack /* Det_if_P005:then:_L2/ */ _L2_then_Det_if_P005;
-  array_int64_3 /* Det_if_P005:then:_L1/ */ _L1_then_Det_if_P005;
+  array_int32_3 /* Det_if_P005:then:_L1/ */ _L1_then_Det_if_P005;
   P005_TM_TrainToTrack /* Det_if_P005:else:_L1/ */ _L1_else_Det_if_P005;
   M_TrainTrack_compressed_packets_T_TM_radio_messages /* Det_if_P004:then:_L3/ */ _L3_then_Det_if_P004;
   P004_TM_TrainToTrack /* Det_if_P004:then:_L2/ */ _L2_then_Det_if_P004;
-  array_int64_3 /* Det_if_P004:then:_L1/ */ _L1_then_Det_if_P004;
+  array_int32_3 /* Det_if_P004:then:_L1/ */ _L1_then_Det_if_P004;
   P004_TM_TrainToTrack /* Det_if_P004:else:_L1/ */ _L1_else_Det_if_P004;
   M_TrainTrack_compressed_packets_T_TM_radio_messages /* Det_if_P009:then:_L3/ */ _L3_then_Det_if_P009;
   P009_TM_TrainToTrack /* Det_if_P009:then:_L2/ */ _L2_then_Det_if_P009;
-  array_int64_3 /* Det_if_P009:then:_L1/ */ _L1_then_Det_if_P009;
+  array_int32_3 /* Det_if_P009:then:_L1/ */ _L1_then_Det_if_P009;
   P009_TM_TrainToTrack /* Det_if_P009:else:_L1/ */ _L1_else_Det_if_P009;
   M_TrainTrack_compressed_packets_T_TM_radio_messages /* Det_if_P011:then:_L3/ */ _L3_then_Det_if_P011;
   P011_TM_TrainToTrack /* Det_if_P011:then:_L2/ */ _L2_then_Det_if_P011;
-  array_int64_25 /* Det_if_P011:then:_L1/ */ _L1_then_Det_if_P011;
+  array_int32_25 /* Det_if_P011:then:_L1/ */ _L1_then_Det_if_P011;
   P011_TM_TrainToTrack /* Det_if_P011:else:_L1/ */ _L1_else_Det_if_P011;
   P000_TM_TrainToTrack /* Det_if_P0_or_P1:then:_L3/ */ _L3_then_Det_if_P0_or_P1;
   P000_TrainTrack_int_TM_TrainToTrack /* Det_if_P0_or_P1:then:_L2/ */ _L2_then_Det_if_P0_or_P1;
@@ -85,7 +85,7 @@ typedef struct {
   P001_TM_TrainToTrack /* Det_if_P0_or_P1:else:then:_L3/ */ _L3_then_else_Det_if_P0_or_P1;
   P000_TM_TrainToTrack /* Det_if_P0_or_P1:else:then:_L5/ */ _L5_then_else_Det_if_P0_or_P1;
   P000_TrainTrack_int_TM_TrainToTrack /* P0_or_P1/ */ P0_or_P1;
-  kcg_int64 /* nid_packet/ */ nid_packet;
+  kcg_int32 /* nid_packet/ */ nid_packet;
   P000_TM_TrainToTrack /* P000/ */ P000;
   P001_TM_TrainToTrack /* P001/ */ P001;
   P011_TM_TrainToTrack /* P011/ */ P011;
@@ -95,8 +95,8 @@ typedef struct {
   P003_TM_TrainToTrack /* P003/ */ P003;
   kcg_bool /* hasPosReport/ */ hasPosReport;
   M_TrainTrack_compressed_packets_T_TM_radio_messages /* _L1/ */ _L1;
-  array_int64_17 /* _L4/ */ _L4;
-  kcg_int64 /* _L3/ */ _L3;
+  array_int32_17 /* _L4/ */ _L4;
+  kcg_int32 /* _L3/ */ _L3;
   P000_TM_TrainToTrack /* _L7/ */ _L7;
   P001_TM_TrainToTrack /* _L8/ */ _L8;
   P011_TM_TrainToTrack /* _L13/ */ _L13;
@@ -119,7 +119,7 @@ typedef struct {
 /* RBC_Model_Pkg::TrainTrackMsgConversion::ConvertPackets/ */
 extern void ConvertPackets_RBC_Model_Pkg_TrainTrackMsgConversion(
   /* nid_message/ */
-  kcg_int64 nid_message,
+  kcg_int32 nid_message,
   /* newPackets/ */
   M_TrainTrack_compressed_packets_T_TM_radio_messages *newPackets,
   outC_ConvertPackets_RBC_Model_Pkg_TrainTrackMsgConversion *outC);

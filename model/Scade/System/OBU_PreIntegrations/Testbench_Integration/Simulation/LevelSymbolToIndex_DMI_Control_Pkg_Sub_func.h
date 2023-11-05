@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _LevelSymbolToIndex_DMI_Control_Pkg_Sub_func_H_
 #define _LevelSymbolToIndex_DMI_Control_Pkg_Sub_func_H_
@@ -15,7 +15,7 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   kcg_bool /* Visibility/ */ Visibility;
-  kcg_int64 /* LevelSymbol/ */ LevelSymbol;
+  kcg_int32 /* LevelSymbol/ */ LevelSymbol;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
@@ -23,12 +23,12 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   M_LEVEL /* _L1/ */ _L1;
-  kcg_int64 /* _L10/ */ _L10;
-  kcg_int64 /* _L12/ */ _L12;
-  kcg_int64 /* _L13/ */ _L13;
-  kcg_int64 /* _L14/ */ _L14;
-  kcg_int64 /* _L17/ */ _L17;
-  kcg_int64 /* _L25/ */ _L25;
+  kcg_int32 /* _L10/ */ _L10;
+  kcg_int32 /* _L12/ */ _L12;
+  kcg_int32 /* _L13/ */ _L13;
+  kcg_int32 /* _L14/ */ _L14;
+  kcg_int32 /* _L17/ */ _L17;
+  kcg_int32 /* _L25/ */ _L25;
   kcg_bool /* _L26/ */ _L26;
 } outC_LevelSymbolToIndex_DMI_Control_Pkg_Sub_func;
 
@@ -54,6 +54,6 @@ extern void LevelSymbolToIndex_init_DMI_Control_Pkg_Sub_func(
 #endif /* _LevelSymbolToIndex_DMI_Control_Pkg_Sub_func_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** LevelSymbolToIndex_DMI_Control_Pkg_Sub_func.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

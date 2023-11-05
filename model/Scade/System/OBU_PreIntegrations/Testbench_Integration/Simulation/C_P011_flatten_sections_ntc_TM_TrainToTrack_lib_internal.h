@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _C_P011_flatten_sections_ntc_TM_TrainToTrack_lib_internal_H_
 #define _C_P011_flatten_sections_ntc_TM_TrainToTrack_lib_internal_H_
@@ -24,7 +24,7 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   P011_ntc_list_TM_TrainToTrack /* _L75/ */ _L75;
-  array_int64_5 /* _L74/ */ _L74;
+  array_int32_5 /* _L74/ */ _L74;
 } outC_C_P011_flatten_sections_ntc_TM_TrainToTrack_lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -49,6 +49,6 @@ extern void C_P011_flatten_sections_ntc_init_TM_TrainToTrack_lib_internal(
 #endif /* _C_P011_flatten_sections_ntc_TM_TrainToTrack_lib_internal_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P011_flatten_sections_ntc_TM_TrainToTrack_lib_internal.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

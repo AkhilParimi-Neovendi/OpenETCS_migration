@@ -111,7 +111,7 @@ void receiveRequestsModesAndLevel_init_manage_DMI_Input_Pkg(
   outC->_L12.DriverRequest.ETCS_Isolated = kcg_true;
   outC->_L12.LevelAck = kcg_true;
   outC->_L11.valid = kcg_true;
-  outC->_L11.systemTime = kcg_lit_int64(0);
+  outC->_L11.systemTime = kcg_lit_int32(0);
   outC->_L11.m_request = Start_of_mission_DMI_Types_Pkg;
   outC->_L10 = kcg_true;
   outC->_L9.valid = kcg_true;
@@ -122,29 +122,29 @@ void receiveRequestsModesAndLevel_init_manage_DMI_Input_Pkg(
   outC->_L9.Req_Start = kcg_true;
   outC->_L9.ETCS_Isolated = kcg_true;
   outC->_L8.valid = kcg_true;
-  outC->_L8.systemTime = kcg_lit_int64(0);
-  outC->_L8.textMessage_ID = kcg_lit_int64(0);
+  outC->_L8.systemTime = kcg_lit_int32(0);
+  outC->_L8.textMessage_ID = kcg_lit_int32(0);
   outC->_L8.acknowledged = kcg_true;
   for (idx = 0; idx < 31; idx++) {
     outC->_L7[idx].valid = kcg_true;
-    outC->_L7[idx].dmi_textMessageID = kcg_lit_int64(0);
-    outC->_L7[idx].timeStamp = kcg_lit_int64(0);
+    outC->_L7[idx].dmi_textMessageID = kcg_lit_int32(0);
+    outC->_L7[idx].timeStamp = kcg_lit_int32(0);
     outC->_L7[idx].textReport =
       Q_TEXTREPORT_No_driver_acknowledgement_report_required;
     outC->_L7[idx].context = con_undefined_DMI_Types_Pkg;
-    outC->_L7[idx].nid_textmessage = kcg_lit_int64(0);
+    outC->_L7[idx].nid_textmessage = kcg_lit_int32(0);
     outC->_L7[idx].whichLevel = M_LEVEL_Level_0;
     outC->_L7[idx].whichMode = M_MODE_Full_Supervision;
   }
-  outC->_L6 = kcg_lit_int64(0);
+  outC->_L6 = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 31; idx1++) {
     outC->_L4[idx1].valid = kcg_true;
-    outC->_L4[idx1].dmi_textMessageID = kcg_lit_int64(0);
-    outC->_L4[idx1].timeStamp = kcg_lit_int64(0);
+    outC->_L4[idx1].dmi_textMessageID = kcg_lit_int32(0);
+    outC->_L4[idx1].timeStamp = kcg_lit_int32(0);
     outC->_L4[idx1].textReport =
       Q_TEXTREPORT_No_driver_acknowledgement_report_required;
     outC->_L4[idx1].context = con_undefined_DMI_Types_Pkg;
-    outC->_L4[idx1].nid_textmessage = kcg_lit_int64(0);
+    outC->_L4[idx1].nid_textmessage = kcg_lit_int32(0);
     outC->_L4[idx1].whichLevel = M_LEVEL_Level_0;
     outC->_L4[idx1].whichMode = M_MODE_Full_Supervision;
   }
@@ -161,17 +161,17 @@ void receiveRequestsModesAndLevel_init_manage_DMI_Input_Pkg(
   outC->_L5.DriverRequest.ETCS_Isolated = kcg_true;
   outC->_L5.LevelAck = kcg_true;
   outC->_L2.valid = kcg_true;
-  outC->_L2.systemTime = kcg_lit_int64(0);
-  outC->_L2.DMI_nid_icon_identifier = kcg_lit_int64(0);
+  outC->_L2.systemTime = kcg_lit_int32(0);
+  outC->_L2.DMI_nid_icon_identifier = kcg_lit_int32(0);
   outC->outDriverRequestToLevels = kcg_true;
   for (idx2 = 0; idx2 < 31; idx2++) {
     outC->outStatusList[idx2].valid = kcg_true;
-    outC->outStatusList[idx2].dmi_textMessageID = kcg_lit_int64(0);
-    outC->outStatusList[idx2].timeStamp = kcg_lit_int64(0);
+    outC->outStatusList[idx2].dmi_textMessageID = kcg_lit_int32(0);
+    outC->outStatusList[idx2].timeStamp = kcg_lit_int32(0);
     outC->outStatusList[idx2].textReport =
       Q_TEXTREPORT_No_driver_acknowledgement_report_required;
     outC->outStatusList[idx2].context = con_undefined_DMI_Types_Pkg;
-    outC->outStatusList[idx2].nid_textmessage = kcg_lit_int64(0);
+    outC->outStatusList[idx2].nid_textmessage = kcg_lit_int32(0);
     outC->outStatusList[idx2].whichLevel = M_LEVEL_Level_0;
     outC->outStatusList[idx2].whichMode = M_MODE_Full_Supervision;
   }

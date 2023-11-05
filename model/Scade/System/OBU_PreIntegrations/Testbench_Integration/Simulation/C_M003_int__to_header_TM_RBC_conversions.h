@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _C_M003_int__to_header_TM_RBC_conversions_H_
 #define _C_M003_int__to_header_TM_RBC_conversions_H_
@@ -23,13 +23,13 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   M_003_int_T_TM_radio_messages /* _L1/ */ _L1;
   M_TrackTrain_Radio_T_TM_radio_messages /* _L2/ */ _L2;
-  kcg_int64 /* _L8/ */ _L8;
-  kcg_int64 /* _L7/ */ _L7;
-  kcg_int64 /* _L6/ */ _L6;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L8/ */ _L8;
+  kcg_int32 /* _L7/ */ _L7;
+  kcg_int32 /* _L6/ */ _L6;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L4/ */ _L4;
   kcg_bool /* _L3/ */ _L3;
-  kcg_int64 /* _L19/ */ _L19;
+  kcg_int32 /* _L19/ */ _L19;
 } outC_C_M003_int__to_header_TM_RBC_conversions;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -54,6 +54,6 @@ extern void C_M003_int__to_header_init_TM_RBC_conversions(
 #endif /* _C_M003_int__to_header_TM_RBC_conversions_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_M003_int__to_header_TM_RBC_conversions.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

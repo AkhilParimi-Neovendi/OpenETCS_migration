@@ -46,7 +46,7 @@ typedef struct {
   kcg_bool /* _L91/ */ _L91;
   kcg_bool /* _L90/ */ _L90;
   P12_Level1MovementAuthorities_T_Packet_Types_Pkg /* _L89/ */ _L89;
-  kcg_int64 /* _L88/ */ _L88;
+  kcg_int32 /* _L88/ */ _L88;
   V_MAIN /* _L87/ */ _L87;
   kcg_bool /* _L86/ */ _L86;
   P12_Level1MovementAuthority_T_Packet_Types_Pkg /* _L85/ */ _L85;
@@ -74,7 +74,7 @@ typedef struct {
   P80_ModeProfiles_T_Packet_Types_Pkg /* _L104/ */ _L104;
   NID_LRBG /* _L103/ */ _L103;
   Location_T_Obu_BasicTypes_Pkg /* _L102/ */ _L102;
-  array_int64_3 /* _L118/ */ _L118;
+  array_int32_3 /* _L118/ */ _L118;
   Location_T_Obu_BasicTypes_Pkg /* _L119/ */ _L119;
   Location_T_Obu_BasicTypes_Pkg /* _L120/ */ _L120;
 } outC_Input_Modes_InputManagement;

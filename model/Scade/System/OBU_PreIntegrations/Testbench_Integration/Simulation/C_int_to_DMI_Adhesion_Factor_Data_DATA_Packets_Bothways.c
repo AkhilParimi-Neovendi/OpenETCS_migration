@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -43,17 +43,17 @@ void C_int_to_DMI_Adhesion_Factor_Data_init_DATA_Packets_Bothways(
 
   outC->_L10 = kcg_true;
   for (idx = 0; idx < 3; idx++) {
-    outC->_L8[idx] = kcg_lit_int64(0);
+    outC->_L8[idx] = kcg_lit_int32(0);
   }
   outC->_L6 = M_ADHESION_Slippery_rail;
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L2.valid = kcg_true;
-  outC->_L2.systemTime = kcg_lit_int64(0);
+  outC->_L2.systemTime = kcg_lit_int32(0);
   outC->_L2.adhesionFactor = M_ADHESION_Slippery_rail;
   outC->dmi_adhesion_factor_data_ct.valid = kcg_true;
-  outC->dmi_adhesion_factor_data_ct.systemTime = kcg_lit_int64(0);
+  outC->dmi_adhesion_factor_data_ct.systemTime = kcg_lit_int32(0);
   outC->dmi_adhesion_factor_data_ct.adhesionFactor = M_ADHESION_Slippery_rail;
   /* _L6=(TM_conversions::CAST_Int_to_M_ADHESION#1)/ */
   CAST_Int_to_M_ADHESION_init_TM_conversions(
@@ -80,6 +80,6 @@ void C_int_to_DMI_Adhesion_Factor_Data_reset_DATA_Packets_Bothways(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_int_to_DMI_Adhesion_Factor_Data_DATA_Packets_Bothways.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

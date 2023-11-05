@@ -25,9 +25,9 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   ASafeRow_T_CalcBrakingCurves_types /* _L1/ */ _L1;
   A_gradient_t_SDM_GradientAcceleration_types /* _L2/ */ _L2;
-  array_float64_100 /* _L4/ */ _L4;
+  array_float32_100 /* _L4/ */ _L4;
   A_internal_real_Type_SDM_Types_Pkg /* _L5/ */ _L5;
-  kcg_float64 /* _L7/ */ _L7;
+  kcg_float32 /* _L7/ */ _L7;
 } outC_iterateASafeData_SDMModelPkg;
 
 /* ===========  node initialization and cycle functions  =========== */

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -68,7 +68,7 @@ void C_int_to_DMI_Train_Data_init_DATA_Packets_Bothways(
 
   outC->_L19 = kcg_true;
   for (idx = 0; idx < 9; idx++) {
-    outC->_L18[idx] = kcg_lit_int64(0);
+    outC->_L18[idx] = kcg_lit_int32(0);
   }
   outC->_L16 =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
@@ -76,33 +76,33 @@ void C_int_to_DMI_Train_Data_init_DATA_Packets_Bothways(
   outC->_L14 = M_AXLELOADCAT_A;
   outC->_L13 =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L2.valid = kcg_true;
-  outC->_L2.systemTime = kcg_lit_int64(0);
+  outC->_L2.systemTime = kcg_lit_int32(0);
   outC->_L2.trainCategory =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->_L2.l_train = kcg_lit_int64(0);
-  outC->_L2.m_brakeperct = kcg_lit_int64(0);
-  outC->_L2.v_maxTrain = kcg_lit_int64(0);
+  outC->_L2.l_train = kcg_lit_int32(0);
+  outC->_L2.m_brakeperct = kcg_lit_int32(0);
+  outC->_L2.v_maxTrain = kcg_lit_int32(0);
   outC->_L2.m_axleLoad = M_AXLELOADCAT_A;
   outC->_L2.m_airTight = M_AIRTIGHT_Not_fitted;
   outC->_L2.m_loadingGauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->dmi_train_data_ct.valid = kcg_true;
-  outC->dmi_train_data_ct.systemTime = kcg_lit_int64(0);
+  outC->dmi_train_data_ct.systemTime = kcg_lit_int32(0);
   outC->dmi_train_data_ct.trainCategory =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->dmi_train_data_ct.l_train = kcg_lit_int64(0);
-  outC->dmi_train_data_ct.m_brakeperct = kcg_lit_int64(0);
-  outC->dmi_train_data_ct.v_maxTrain = kcg_lit_int64(0);
+  outC->dmi_train_data_ct.l_train = kcg_lit_int32(0);
+  outC->dmi_train_data_ct.m_brakeperct = kcg_lit_int32(0);
+  outC->dmi_train_data_ct.v_maxTrain = kcg_lit_int32(0);
   outC->dmi_train_data_ct.m_axleLoad = M_AXLELOADCAT_A;
   outC->dmi_train_data_ct.m_airTight = M_AIRTIGHT_Not_fitted;
   outC->dmi_train_data_ct.m_loadingGauge =
@@ -150,6 +150,6 @@ void C_int_to_DMI_Train_Data_reset_DATA_Packets_Bothways(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_int_to_DMI_Train_Data_DATA_Packets_Bothways.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

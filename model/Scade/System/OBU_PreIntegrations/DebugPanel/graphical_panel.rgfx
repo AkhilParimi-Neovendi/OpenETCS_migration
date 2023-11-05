@@ -4,15 +4,15 @@
 
 <specification>
     <IDE>
-        <project path="MainScreen.etp"/>
-        <ratio horizontal="1" vertical="1"/>
+        <project path="MainScreen.etp" />
+        <ratio horizontal="1" vertical="1" />
     </IDE>
     <symbology>
-        <dimension height="256" width="256"/>
+        <dimension height="256" width="256" />
     </symbology>
     <children>
         <layer oid="89b90629-f305-46b5-8309-d6136ae47457">
-            <pathFromRoot value=""/>
+            <pathFromRoot value="" />
             <declaration>
                 <inputs>
                     <input name="evcRunning" oid="be094cec-7bdd-4c2c-9478-6c52dd79ea69" type="bool">
@@ -35,11 +35,11 @@
                 <id>
                     <init>1</init>
                 </id>
-                <ratio horizontal="1" vertical="1"/>
+                <ratio horizontal="1" vertical="1" />
             </properties>
             <children>
                 <bitmap oid="cdb1f6ff-10c0-4800-8acb-0e8a60b6d151">
-                    <pathFromRoot value="0"/>
+                    <pathFromRoot value="0" />
                     <properties name="bitmap">
                         <visible>
                             <init>true</init>
@@ -58,7 +58,7 @@
                     </properties>
                 </bitmap>
                 <bitmap oid="031082c4-f3fb-42f6-9f80-1bdb3d36b9e3">
-                    <pathFromRoot value="1"/>
+                    <pathFromRoot value="1" />
                     <properties name="bitmap">
                         <visible>
                             <init>true</init>
@@ -80,6 +80,5 @@
         </layer>
     </children>
 </specification>
-
 <!-- crc32 : 1032943909 -->
 

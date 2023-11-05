@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -12,7 +12,7 @@ void scaleInternalType_ProvidePositionReport_Pkg(
   /* scale/ */
   Q_SCALE scale,
   /* internalValue/ */
-  kcg_int64 internalValue,
+  kcg_int32 internalValue,
   outC_scaleInternalType_ProvidePositionReport_Pkg *outC)
 {
   outC->_L12 = internalValue;
@@ -45,16 +45,16 @@ void scaleInternalType_ProvidePositionReport_Pkg(
 void scaleInternalType_init_ProvidePositionReport_Pkg(
   outC_scaleInternalType_ProvidePositionReport_Pkg *outC)
 {
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L1 = Q_SCALE_10_cm_scale;
-  outC->scaledValue = kcg_lit_int64(0);
+  outC->scaledValue = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -70,6 +70,6 @@ void scaleInternalType_reset_ProvidePositionReport_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** scaleInternalType_ProvidePositionReport_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

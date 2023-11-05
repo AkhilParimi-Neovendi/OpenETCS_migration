@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _CAST_int_to_DMI_Dynamic1_DATA_Packets_EVC_to_DMI_H_
 #define _CAST_int_to_DMI_Dynamic1_DATA_Packets_EVC_to_DMI_H_
@@ -36,29 +36,29 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L24/ */ _L24;
-  kcg_int64 /* _L23/ */ _L23;
-  kcg_int64 /* _L22/ */ _L22;
-  kcg_int64 /* _L21/ */ _L21;
-  kcg_int64 /* _L20/ */ _L20;
-  kcg_int64 /* _L19/ */ _L19;
-  kcg_int64 /* _L18/ */ _L18;
-  kcg_int64 /* _L17/ */ _L17;
-  kcg_int64 /* _L16/ */ _L16;
-  kcg_int64 /* _L15/ */ _L15;
-  kcg_int64 /* _L14/ */ _L14;
-  kcg_int64 /* _L13/ */ _L13;
-  kcg_int64 /* _L12/ */ _L12;
-  kcg_int64 /* _L11/ */ _L11;
-  kcg_int64 /* _L10/ */ _L10;
-  kcg_int64 /* _L9/ */ _L9;
-  kcg_int64 /* _L8/ */ _L8;
-  kcg_int64 /* _L7/ */ _L7;
-  kcg_int64 /* _L6/ */ _L6;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L24/ */ _L24;
+  kcg_int32 /* _L23/ */ _L23;
+  kcg_int32 /* _L22/ */ _L22;
+  kcg_int32 /* _L21/ */ _L21;
+  kcg_int32 /* _L20/ */ _L20;
+  kcg_int32 /* _L19/ */ _L19;
+  kcg_int32 /* _L18/ */ _L18;
+  kcg_int32 /* _L17/ */ _L17;
+  kcg_int32 /* _L16/ */ _L16;
+  kcg_int32 /* _L15/ */ _L15;
+  kcg_int32 /* _L14/ */ _L14;
+  kcg_int32 /* _L13/ */ _L13;
+  kcg_int32 /* _L12/ */ _L12;
+  kcg_int32 /* _L11/ */ _L11;
+  kcg_int32 /* _L10/ */ _L10;
+  kcg_int32 /* _L9/ */ _L9;
+  kcg_int32 /* _L8/ */ _L8;
+  kcg_int32 /* _L7/ */ _L7;
+  kcg_int32 /* _L6/ */ _L6;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L2/ */ _L2;
   kcg_bool /* _L25/ */ _L25;
   M_MODE /* _L26/ */ _L26;
   NID_C /* _L28/ */ _L28;
@@ -67,7 +67,7 @@ typedef struct {
   M_SUPERVISION_STATUS_DMI_Types_Pkg /* _L31/ */ _L31;
   DMI_Dynamic_T_DMI_Messages_EVC_to_DMI_Pkg /* _L33/ */ _L33;
   DMI_Dynamic_int_array_T_DATA /* _L38/ */ _L38;
-  kcg_int64 /* _L39/ */ _L39;
+  kcg_int32 /* _L39/ */ _L39;
   connectionStatusRadioUnit_T_API_RadioCommunication_Pkg /* _L41/ */ _L41;
   DMI_level_T_DMI_Types_Pkg /* _L43/ */ _L43;
 } outC_CAST_int_to_DMI_Dynamic1_DATA_Packets_EVC_to_DMI;
@@ -94,6 +94,6 @@ extern void CAST_int_to_DMI_Dynamic1_init_DATA_Packets_EVC_to_DMI(
 #endif /* _CAST_int_to_DMI_Dynamic1_DATA_Packets_EVC_to_DMI_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_int_to_DMI_Dynamic1_DATA_Packets_EVC_to_DMI.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

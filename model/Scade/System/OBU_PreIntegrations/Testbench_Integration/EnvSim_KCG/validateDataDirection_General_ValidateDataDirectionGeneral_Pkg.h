@@ -70,7 +70,7 @@ typedef struct {
   Q_DIRTRAIN /* _L50/ */ _L50;
   kcg_bool /* _L51/ */ _L51;
   NID_MESSAGE /* _L52/ */ _L52;
-  kcg_int64 /* _L53/ */ _L53;
+  kcg_int32 /* _L53/ */ _L53;
   kcg_bool /* _L54/ */ _L54;
   kcg_bool /* _L55/ */ _L55;
   MsgSource_T_Common_Types_Pkg /* _L56/ */ _L56;
@@ -87,7 +87,7 @@ typedef struct {
   MsgSource_T_Common_Types_Pkg /* _L70/ */ _L70;
   kcg_bool /* _L73/ */ _L73;
   NID_MESSAGE /* _L76/ */ _L76;
-  kcg_int64 /* _L75/ */ _L75;
+  kcg_int32 /* _L75/ */ _L75;
   kcg_bool /* _L74/ */ _L74;
   kcg_bool /* _L77/ */ _L77;
   kcg_bool /* _L78/ */ _L78;

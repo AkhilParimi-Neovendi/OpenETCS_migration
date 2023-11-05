@@ -57,12 +57,12 @@ typedef struct {
   kcg_bool /* _L192/ */ _L192;
   MovementAuthoritySectionlist_t_TrackAtlasTypes /* _L191/ */ _L191;
   MovementAuthority_t_TrackAtlasTypes /* _L193/ */ _L193;
-  kcg_int64 /* _L199/ */ _L199;
+  kcg_int32 /* _L199/ */ _L199;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L200/ */ _L200;
-  kcg_int64 /* _L201/ */ _L201;
+  kcg_int32 /* _L201/ */ _L201;
   kcg_bool /* _L202/ */ _L202;
   kcg_bool /* _L204/ */ _L204;
-  kcg_int64 /* _L205/ */ _L205;
+  kcg_int32 /* _L205/ */ _L205;
 } outC_ConvertMA_SDM_Input_Wrappers;
 
 /* ===========  node initialization and cycle functions  =========== */

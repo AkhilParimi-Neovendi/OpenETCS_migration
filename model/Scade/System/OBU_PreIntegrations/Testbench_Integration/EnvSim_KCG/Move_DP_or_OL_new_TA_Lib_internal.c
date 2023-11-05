@@ -30,17 +30,17 @@ void Move_DP_or_OL_new_TA_Lib_internal(
 void Move_DP_or_OL_new_init_TA_Lib_internal(
   outC_Move_DP_or_OL_new_TA_Lib_internal *outC)
 {
-  outC->_L142 = kcg_lit_int64(0);
-  outC->_L130 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L9.d_DP_or_OL = kcg_lit_int64(0);
-  outC->_L9.v_release = kcg_lit_int64(0);
+  outC->_L142 = kcg_lit_int32(0);
+  outC->_L130 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L9.d_DP_or_OL = kcg_lit_int32(0);
+  outC->_L9.v_release = kcg_lit_int32(0);
   outC->_L9.calc_v_release_onboard = kcg_true;
-  outC->_L2.d_DP_or_OL = kcg_lit_int64(0);
-  outC->_L2.v_release = kcg_lit_int64(0);
+  outC->_L2.d_DP_or_OL = kcg_lit_int32(0);
+  outC->_L2.v_release = kcg_lit_int32(0);
   outC->_L2.calc_v_release_onboard = kcg_true;
-  outC->DP_or_OL_out.d_DP_or_OL = kcg_lit_int64(0);
-  outC->DP_or_OL_out.v_release = kcg_lit_int64(0);
+  outC->DP_or_OL_out.d_DP_or_OL = kcg_lit_int32(0);
+  outC->DP_or_OL_out.v_release = kcg_lit_int32(0);
   outC->DP_or_OL_out.calc_v_release_onboard = kcg_true;
 }
 #endif /* KCG_USER_DEFINED_INIT */

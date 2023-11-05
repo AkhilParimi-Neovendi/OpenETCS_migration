@@ -26,20 +26,20 @@ typedef unsigned char kcg_bool;
 typedef float kcg_float32;
 #endif /* kcg_float32 */
 
-#ifndef kcg_float64
-#define kcg_float64 kcg_float64
-typedef double kcg_float64;
-#endif /* kcg_float64 */
+#ifndef kcg_float32
+#define kcg_float32 kcg_float32
+typedef double kcg_float32;
+#endif /* kcg_float32 */
 
 #ifndef kcg_size
 #define kcg_size kcg_size
 typedef ptrdiff_t kcg_size;
 #endif /* kcg_size */
 
-#ifndef kcg_uint64
-#define kcg_uint64 kcg_uint64
-typedef unsigned long long kcg_uint64;
-#endif /* kcg_uint64 */
+#ifndef kcg_uint32
+#define kcg_uint32 kcg_uint32
+typedef unsigned long long kcg_uint32;
+#endif /* kcg_uint32 */
 
 #ifndef kcg_uint32
 #define kcg_uint32 kcg_uint32
@@ -56,10 +56,10 @@ typedef unsigned short kcg_uint16;
 typedef unsigned char kcg_uint8;
 #endif /* kcg_uint8 */
 
-#ifndef kcg_int64
-#define kcg_int64 kcg_int64
-typedef signed long long kcg_int64;
-#endif /* kcg_int64 */
+#ifndef kcg_int32
+#define kcg_int32 kcg_int32
+typedef signed long long kcg_int32;
+#endif /* kcg_int32 */
 
 #ifndef kcg_int32
 #define kcg_int32 kcg_int32
@@ -80,17 +80,17 @@ typedef signed char kcg_int8;
 #define kcg_lit_float32(kcg_C1) ((kcg_float32) (kcg_C1))
 #endif /* kcg_lit_float32 */
 
-#ifndef kcg_lit_float64
-#define kcg_lit_float64(kcg_C1) ((kcg_float64) (kcg_C1))
-#endif /* kcg_lit_float64 */
+#ifndef kcg_lit_float32
+#define kcg_lit_float32(kcg_C1) ((kcg_float32) (kcg_C1))
+#endif /* kcg_lit_float32 */
 
 #ifndef kcg_lit_size
 #define kcg_lit_size(kcg_C1) ((kcg_size) (kcg_C1))
 #endif /* kcg_lit_size */
 
-#ifndef kcg_lit_uint64
-#define kcg_lit_uint64(kcg_C1) ((kcg_uint64) (kcg_C1))
-#endif /* kcg_lit_uint64 */
+#ifndef kcg_lit_uint32
+#define kcg_lit_uint32(kcg_C1) ((kcg_uint32) (kcg_C1))
+#endif /* kcg_lit_uint32 */
 
 #ifndef kcg_lit_uint32
 #define kcg_lit_uint32(kcg_C1) ((kcg_uint32) (kcg_C1))
@@ -104,9 +104,9 @@ typedef signed char kcg_int8;
 #define kcg_lit_uint8(kcg_C1) ((kcg_uint8) (kcg_C1))
 #endif /* kcg_lit_uint8 */
 
-#ifndef kcg_lit_int64
-#define kcg_lit_int64(kcg_C1) ((kcg_int64) (kcg_C1))
-#endif /* kcg_lit_int64 */
+#ifndef kcg_lit_int32
+#define kcg_lit_int32(kcg_C1) ((kcg_int32) (kcg_C1))
+#endif /* kcg_lit_int32 */
 
 #ifndef kcg_lit_int32
 #define kcg_lit_int32(kcg_C1) ((kcg_int32) (kcg_C1))
@@ -128,10 +128,10 @@ typedef signed char kcg_int8;
 #define kcg_true ((kcg_bool) 1)
 #endif /* kcg_true */
 
-#ifndef kcg_lsl_uint64
-#define kcg_lsl_uint64(kcg_C1, kcg_C2)                                        \
-  ((kcg_uint64) ((kcg_C1) << (kcg_C2)) & 0xffffffffffffffff)
-#endif /* kcg_lsl_uint64 */
+#ifndef kcg_lsl_uint32
+#define kcg_lsl_uint32(kcg_C1, kcg_C2)                                        \
+  ((kcg_uint32) ((kcg_C1) << (kcg_C2)) & 0xffffffffffffffff)
+#endif /* kcg_lsl_uint32 */
 
 #ifndef kcg_lsl_uint32
 #define kcg_lsl_uint32(kcg_C1, kcg_C2)                                        \
@@ -148,9 +148,9 @@ typedef signed char kcg_int8;
   ((kcg_uint8) ((kcg_C1) << (kcg_C2)) & 0xff)
 #endif /* kcg_lsl_uint8 */
 
-#ifndef kcg_lnot_uint64
-#define kcg_lnot_uint64(kcg_C1) ((kcg_C1) ^ 0xffffffffffffffff)
-#endif /* kcg_lnot_uint64 */
+#ifndef kcg_lnot_uint32
+#define kcg_lnot_uint32(kcg_C1) ((kcg_C1) ^ 0xffffffffffffffff)
+#endif /* kcg_lnot_uint32 */
 
 #ifndef kcg_lnot_uint32
 #define kcg_lnot_uint32(kcg_C1) ((kcg_C1) ^ 0xffffffff)
@@ -183,18 +183,18 @@ typedef enum kcg_tag_Q_DIR {
   Q_DIR_Both_directions
 } Q_DIR;
 /* NID_PACKET/ */
-typedef kcg_int64 NID_PACKET;
+typedef kcg_int32 NID_PACKET;
 
 /* Common_Types_Pkg::CompressedPacketData_T/ */
-typedef kcg_int64 CompressedPacketData_T_Common_Types_Pkg[500];
+typedef kcg_int32 CompressedPacketData_T_Common_Types_Pkg[500];
 
 /* Common_Types_Pkg::MetadataElement_T/ */
 typedef struct kcg_tag_MetadataElement_T_Common_Types_Pkg {
   NID_PACKET nid_packet;
   Q_DIR q_dir;
   kcg_bool valid;
-  kcg_int64 startAddress;
-  kcg_int64 endAddress;
+  kcg_int32 startAddress;
+  kcg_int32 endAddress;
 } MetadataElement_T_Common_Types_Pkg;
 
 /* Common_Types_Pkg::Metadata_T/ */
@@ -208,16 +208,16 @@ typedef struct kcg_tag_CompressedPackets_T_Common_Types_Pkg {
 
 /* TM::BaliseTelegramHeader_int_T/ */
 typedef struct kcg_tag_BaliseTelegramHeader_int_T_TM {
-  kcg_int64 q_updown;
-  kcg_int64 m_version;
-  kcg_int64 q_media;
-  kcg_int64 n_pig;
-  kcg_int64 n_total;
-  kcg_int64 m_dup;
-  kcg_int64 m_mcount;
-  kcg_int64 nid_c;
-  kcg_int64 nid_bg;
-  kcg_int64 q_link;
+  kcg_int32 q_updown;
+  kcg_int32 m_version;
+  kcg_int32 q_media;
+  kcg_int32 n_pig;
+  kcg_int32 n_total;
+  kcg_int32 m_dup;
+  kcg_int32 m_mcount;
+  kcg_int32 nid_c;
+  kcg_int32 nid_bg;
+  kcg_int32 q_link;
 } BaliseTelegramHeader_int_T_TM;
 
 /* TM::CompressedBaliseMessage/ */
@@ -228,21 +228,21 @@ typedef struct kcg_tag_CompressedBaliseMessage_TM {
 
 /* TM::Radio_TrackTrain_Header_T/ */
 typedef struct kcg_tag_Radio_TrackTrain_Header_T_TM {
-  kcg_int64 radioDevice;
-  kcg_int64 receivedSystemTime;
-  kcg_int64 nid_message;
-  kcg_int64 t_train;
-  kcg_int64 m_ack;
-  kcg_int64 nid_lrbg;
-  kcg_int64 t_train_reference;
-  kcg_int64 nid_em;
-  kcg_int64 q_scale;
-  kcg_int64 d_sr;
-  kcg_int64 t_sh_rqst;
-  kcg_int64 d_ref;
-  kcg_int64 q_dir;
-  kcg_int64 d_emergencystop;
-  kcg_int64 m_version;
+  kcg_int32 radioDevice;
+  kcg_int32 receivedSystemTime;
+  kcg_int32 nid_message;
+  kcg_int32 t_train;
+  kcg_int32 m_ack;
+  kcg_int32 nid_lrbg;
+  kcg_int32 t_train_reference;
+  kcg_int32 nid_em;
+  kcg_int32 q_scale;
+  kcg_int32 d_sr;
+  kcg_int32 t_sh_rqst;
+  kcg_int32 d_ref;
+  kcg_int32 q_dir;
+  kcg_int32 d_emergencystop;
+  kcg_int32 m_version;
 } Radio_TrackTrain_Header_T_TM;
 
 /* TM::CompressedRadioMessage/ */

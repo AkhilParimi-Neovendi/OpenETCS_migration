@@ -22,7 +22,7 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   TrainData_T /* _L1/ */ _L1;
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L2/ */ _L2;
   TrainData_T /* _L3/ */ _L3;
 } outC_TrainData__SetNumberOfOnb_RBC_Session_Pkg;
 
@@ -32,7 +32,7 @@ extern void TrainData__SetNumberOfOnb_RBC_Session_Pkg(
   /* inTrainData/ */
   TrainData_T *inTrainData,
   /* inNumberOfOnboardPhoneNumbers/ */
-  kcg_int64 inNumberOfOnboardPhoneNumbers,
+  kcg_int32 inNumberOfOnboardPhoneNumbers,
   outC_TrainData__SetNumberOfOnb_RBC_Session_Pkg *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

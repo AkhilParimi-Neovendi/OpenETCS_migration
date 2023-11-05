@@ -40,17 +40,17 @@ void SelectEndSection_init_SDM_Input_Wrappers(
   outC->_L12 = kcg_true;
   outC->_L11 = kcg_true;
   outC->_L10 = kcg_true;
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L4 = kcg_true;
   outC->_L2.valid = kcg_true;
   outC->_L2.q_endsection = kcg_true;
-  outC->_L2.l_section = kcg_lit_int64(0);
+  outC->_L2.l_section = kcg_lit_int32(0);
   outC->_L2.q_sectiontimer = kcg_true;
-  outC->_L2.t_sectiontimer = kcg_lit_int64(0);
-  outC->_L2.d_sectiontimerstoploc = kcg_lit_int64(0);
-  outC->eoa = kcg_lit_int64(0);
+  outC->_L2.t_sectiontimer = kcg_lit_int32(0);
+  outC->_L2.d_sectiontimerstoploc = kcg_lit_int32(0);
+  outC->eoa = kcg_lit_int32(0);
   outC->go_on = kcg_true;
 }
 #endif /* KCG_USER_DEFINED_INIT */

@@ -19,7 +19,7 @@ void NID_EM_Store_Add_TA_EmergencyStop_NID_EM_Store(
   outC->_L11.valid = kcg_true;
   outC->_L10.handled = kcg_true;
   outC->_L10.nid_em = (*inAcc).nid_em;
-  outC->_L10.nfree = (*inAcc).nfree - kcg_lit_int64(1);
+  outC->_L10.nfree = (*inAcc).nfree - kcg_lit_int32(1);
   kcg_copy_NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store(&outC->_L8, inAcc);
   outC->_L7 = (!(*inAcc).handled) & (!(*inEntry).valid);
   /* _L3= */
@@ -57,27 +57,27 @@ void NID_EM_Store_Add_TA_EmergencyStop_NID_EM_Store(
 void NID_EM_Store_Add_init_TA_EmergencyStop_NID_EM_Store(
   outC_NID_EM_Store_Add_TA_EmergencyStop_NID_EM_Store *outC)
 {
-  outC->_L11.nid_em = kcg_lit_int64(0);
+  outC->_L11.nid_em = kcg_lit_int32(0);
   outC->_L11.valid = kcg_true;
   outC->_L10.handled = kcg_true;
-  outC->_L10.nid_em = kcg_lit_int64(0);
-  outC->_L10.nfree = kcg_lit_int64(0);
+  outC->_L10.nid_em = kcg_lit_int32(0);
+  outC->_L10.nfree = kcg_lit_int32(0);
   outC->_L9.handled = kcg_true;
-  outC->_L9.nid_em = kcg_lit_int64(0);
-  outC->_L9.nfree = kcg_lit_int64(0);
+  outC->_L9.nid_em = kcg_lit_int32(0);
+  outC->_L9.nfree = kcg_lit_int32(0);
   outC->_L8.handled = kcg_true;
-  outC->_L8.nid_em = kcg_lit_int64(0);
-  outC->_L8.nfree = kcg_lit_int64(0);
+  outC->_L8.nid_em = kcg_lit_int32(0);
+  outC->_L8.nfree = kcg_lit_int32(0);
   outC->_L7 = kcg_true;
-  outC->_L3.nid_em = kcg_lit_int64(0);
+  outC->_L3.nid_em = kcg_lit_int32(0);
   outC->_L3.valid = kcg_true;
-  outC->_L1.nid_em = kcg_lit_int64(0);
+  outC->_L1.nid_em = kcg_lit_int32(0);
   outC->_L1.valid = kcg_true;
-  outC->outEntry.nid_em = kcg_lit_int64(0);
+  outC->outEntry.nid_em = kcg_lit_int32(0);
   outC->outEntry.valid = kcg_true;
   outC->outAcc.handled = kcg_true;
-  outC->outAcc.nid_em = kcg_lit_int64(0);
-  outC->outAcc.nfree = kcg_lit_int64(0);
+  outC->outAcc.nid_em = kcg_lit_int32(0);
+  outC->outAcc.nfree = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

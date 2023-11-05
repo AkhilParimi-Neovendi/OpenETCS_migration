@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,49 +10,49 @@
 /* DMI_Control_Pkg::Sub_func::TextMessages::MergeMessagesToPlain_iteration/ */
 void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
   /* index/ */
-  kcg_int64 index,
+  kcg_int32 index,
   /* acc/ */
   array_char_30_5 *acc,
   /* DefaultMsgQueue/ */
   array_char_30_5 *DefaultMsgQueue,
   /* num1/ */
-  kcg_int64 num1,
+  kcg_int32 num1,
   /* MsgQueue2/ */
   array_char_30_5 *MsgQueue2,
   /* num2/ */
-  kcg_int64 num2,
+  kcg_int32 num2,
   /* MsgQueue3/ */
   array_char_30_5 *MsgQueue3,
   /* num3/ */
-  kcg_int64 num3,
+  kcg_int32 num3,
   /* MsgQueue4/ */
   array_char_30_5 *MsgQueue4,
   /* num4/ */
-  kcg_int64 num4,
+  kcg_int32 num4,
   /* MsgQueue5/ */
   array_char_30_5 *MsgQueue5,
   /* num5/ */
-  kcg_int64 num5,
+  kcg_int32 num5,
   /* MsgQueue6/ */
   array_char_30_5 *MsgQueue6,
   /* num6/ */
-  kcg_int64 num6,
+  kcg_int32 num6,
   /* MsgQueue7/ */
   array_char_30_5 *MsgQueue7,
   /* num7/ */
-  kcg_int64 num7,
+  kcg_int32 num7,
   /* MsgQueue8/ */
   array_char_30_5 *MsgQueue8,
   /* num8/ */
-  kcg_int64 num8,
+  kcg_int32 num8,
   /* MsgQueue9/ */
   array_char_30_5 *MsgQueue9,
   /* num9/ */
-  kcg_int64 num9,
+  kcg_int32 num9,
   /* MsgQueue10/ */
   array_char_30_5 *MsgQueue10,
   /* scrollLevel/ */
-  kcg_int64 scrollLevel,
+  kcg_int32 scrollLevel,
   outC_MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages *outC)
 {
   outC->_L554 = scrollLevel;
@@ -113,7 +113,7 @@ void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
   outC->_L517 = index;
   outC->_L519 = outC->_L517 + outC->_L518;
   kcg_copy_array_char_30_5(&outC->_L515, DefaultMsgQueue);
-  if ((kcg_lit_int64(0) <= outC->_L519) & (outC->_L519 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L519) & (outC->_L519 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L516, &outC->_L515[outC->_L519]);
   }
   else {
@@ -122,7 +122,7 @@ void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
   outC->_L514 = index;
   kcg_copy_array_char_30_5(&outC->_L91, acc);
   kcg_copy_array_char_30_5(&outC->_L513, &outC->_L91);
-  if ((kcg_lit_int64(0) <= outC->_L514) & (outC->_L514 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L514) & (outC->_L514 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L513[outC->_L514], &outC->_L516);
   }
   outC->_L511 = scrollLevel;
@@ -145,7 +145,7 @@ void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
   outC->_L498 = outC->_L489 + outC->_L505 + outC->_L496 + outC->_L497 +
     outC->_L493 + outC->_L502 + outC->_L492 + outC->_L499 + outC->_L507;
   outC->_L494 = outC->_L555 - outC->_L498;
-  if ((kcg_lit_int64(0) <= outC->_L494) & (outC->_L494 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L494) & (outC->_L494 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L503, &outC->_L506[outC->_L494]);
   }
   else {
@@ -153,7 +153,7 @@ void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
   }
   kcg_copy_array_char_30_5(&outC->_L500, acc);
   kcg_copy_array_char_30_5(&outC->_L490, &outC->_L500);
-  if ((kcg_lit_int64(0) <= outC->_L504) & (outC->_L504 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L504) & (outC->_L504 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L490[outC->_L504], &outC->_L503);
   }
   kcg_copy_array_char_30_5(&outC->_L488, MsgQueue9);
@@ -171,7 +171,7 @@ void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
   outC->_L478 = outC->_L472 + outC->_L481 + outC->_L486 + outC->_L484 +
     outC->_L477 + outC->_L476 + outC->_L479 + outC->_L487;
   outC->_L473 = outC->_L553 - outC->_L478;
-  if ((kcg_lit_int64(0) <= outC->_L473) & (outC->_L473 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L473) & (outC->_L473 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L485, &outC->_L488[outC->_L473]);
   }
   else {
@@ -180,7 +180,7 @@ void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
   outC->_L482 = index;
   kcg_copy_array_char_30_5(&outC->_L474, acc);
   kcg_copy_array_char_30_5(&outC->_L475, &outC->_L474);
-  if ((kcg_lit_int64(0) <= outC->_L482) & (outC->_L482 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L482) & (outC->_L482 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L475[outC->_L482], &outC->_L485);
   }
   outC->_L470 = num8;
@@ -198,7 +198,7 @@ void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
   kcg_copy_array_char_30(
     &outC->_L461,
     (array_char_30 *) &cPlainText_single_DMI_Control_Pkg);
-  if ((kcg_lit_int64(0) <= outC->_L464) & (outC->_L464 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L464) & (outC->_L464 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L458, &outC->_L469[outC->_L464]);
   }
   else {
@@ -227,7 +227,7 @@ void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
   kcg_copy_array_char_30(
     &outC->_L449,
     (array_char_30 *) &cPlainText_single_DMI_Control_Pkg);
-  if ((kcg_lit_int64(0) <= outC->_L451) & (outC->_L451 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L451) & (outC->_L451 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L445, &outC->_L452[outC->_L451]);
   }
   else {
@@ -235,7 +235,7 @@ void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
   }
   kcg_copy_array_char_30_5(&outC->_L439, acc);
   kcg_copy_array_char_30_5(&outC->_L440, &outC->_L439);
-  if ((kcg_lit_int64(0) <= outC->_L450) & (outC->_L450 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L450) & (outC->_L450 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L440[outC->_L450], &outC->_L445);
   }
   outC->_L436 = num7;
@@ -252,7 +252,7 @@ void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
   outC->_L428 = outC->_L422 + outC->_L425 + outC->_L431 + outC->_L424 +
     outC->_L432 + outC->_L435 + outC->_L436;
   outC->_L421 = outC->_L547 - outC->_L428;
-  if ((kcg_lit_int64(0) <= outC->_L421) & (outC->_L421 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L421) & (outC->_L421 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L423, &outC->_L434[outC->_L421]);
   }
   else {
@@ -279,7 +279,7 @@ void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
   outC->_L416 = outC->_L413 + outC->_L408 + outC->_L405 + outC->_L411 +
     outC->_L407 + outC->_L420;
   outC->_L412 = outC->_L545 - outC->_L416;
-  if ((kcg_lit_int64(0) <= outC->_L412) & (outC->_L412 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L412) & (outC->_L412 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L418, &outC->_L419[outC->_L412]);
   }
   else {
@@ -288,7 +288,7 @@ void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
   outC->_L415 = index;
   kcg_copy_array_char_30_5(&outC->_L410, acc);
   kcg_copy_array_char_30_5(&outC->_L414, &outC->_L410);
-  if ((kcg_lit_int64(0) <= outC->_L415) & (outC->_L415 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L415) & (outC->_L415 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L414[outC->_L415], &outC->_L418);
   }
   outC->_L404 = num6;
@@ -304,7 +304,7 @@ void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
   outC->_L397 = outC->_L394 + outC->_L402 + outC->_L395 + outC->_L400 +
     outC->_L393 + outC->_L404;
   outC->_L396 = outC->_L543 - outC->_L397;
-  if ((kcg_lit_int64(0) <= outC->_L396) & (outC->_L396 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L396) & (outC->_L396 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L399, &outC->_L403[outC->_L396]);
   }
   else {
@@ -330,7 +330,7 @@ void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
   outC->_L384 = outC->_L380 + outC->_L385 + outC->_L379 + outC->_L378 +
     outC->_L389;
   outC->_L382 = outC->_L541 - outC->_L384;
-  if ((kcg_lit_int64(0) <= outC->_L382) & (outC->_L382 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L382) & (outC->_L382 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L386, &outC->_L388[outC->_L382]);
   }
   else {
@@ -339,7 +339,7 @@ void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
   outC->_L383 = index;
   kcg_copy_array_char_30_5(&outC->_L377, acc);
   kcg_copy_array_char_30_5(&outC->_L387, &outC->_L377);
-  if ((kcg_lit_int64(0) <= outC->_L383) & (outC->_L383 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L383) & (outC->_L383 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L387[outC->_L383], &outC->_L386);
   }
   kcg_copy_array_char_30_5(&outC->_L374, MsgQueue4);
@@ -356,7 +356,7 @@ void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
   outC->_L366 = outC->_L369 + outC->_L363 + outC->_L361 + outC->_L368 +
     outC->_L372;
   outC->_L360 = outC->_L539 - outC->_L366;
-  if ((kcg_lit_int64(0) <= outC->_L360) & (outC->_L360 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L360) & (outC->_L360 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L365, &outC->_L371[outC->_L360]);
   }
   else {
@@ -380,7 +380,7 @@ void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
   outC->_L348 = num2;
   outC->_L354 = outC->_L357 + outC->_L348 + outC->_L353 + outC->_L358;
   outC->_L350 = outC->_L536 - outC->_L354;
-  if ((kcg_lit_int64(0) <= outC->_L350) & (outC->_L350 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L350) & (outC->_L350 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L349, &outC->_L373[outC->_L350]);
   }
   else {
@@ -388,7 +388,7 @@ void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
   }
   kcg_copy_array_char_30_5(&outC->_L351, acc);
   kcg_copy_array_char_30_5(&outC->_L352, &outC->_L351);
-  if ((kcg_lit_int64(0) <= outC->_L356) & (outC->_L356 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L356) & (outC->_L356 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L352[outC->_L356], &outC->_L349);
   }
   outC->_L345 = num4;
@@ -401,7 +401,7 @@ void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
   outC->_L340 = num1;
   outC->_L337 = outC->_L340 + outC->_L343 + outC->_L341 + outC->_L345;
   outC->_L334 = outC->_L534 - outC->_L337;
-  if ((kcg_lit_int64(0) <= outC->_L334) & (outC->_L334 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L334) & (outC->_L334 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L335, &outC->_L344[outC->_L334]);
   }
   else {
@@ -432,7 +432,7 @@ void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
     &outC->_L305,
     (array_char_30 *) &cPlainText_single_DMI_Control_Pkg);
   outC->_L300 = outC->_L532 - outC->_L308;
-  if ((kcg_lit_int64(0) <= outC->_L300) & (outC->_L300 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L300) & (outC->_L300 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L304, &outC->_L374[outC->_L300]);
   }
   else {
@@ -441,14 +441,14 @@ void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
   outC->_L302 = index;
   kcg_copy_array_char_30_5(&outC->_L301, acc);
   kcg_copy_array_char_30_5(&outC->_L307, &outC->_L301);
-  if ((kcg_lit_int64(0) <= outC->_L302) & (outC->_L302 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L302) & (outC->_L302 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L307[outC->_L302], &outC->_L304);
   }
   kcg_copy_array_char_30_5(&outC->_L297, MsgQueue4);
   kcg_copy_array_char_30(
     &outC->_L293,
     (array_char_30 *) &cPlainText_single_DMI_Control_Pkg);
-  if ((kcg_lit_int64(0) <= outC->_L327) & (outC->_L327 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L327) & (outC->_L327 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L295, &outC->_L297[outC->_L327]);
   }
   else {
@@ -474,21 +474,21 @@ void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
   outC->_L272 = outC->_L270 + outC->_L271;
   outC->_L104 = outC->_L528 - outC->_L272;
   kcg_copy_array_char_30_5(&outC->_L269, MsgQueue3);
-  if ((kcg_lit_int64(0) <= outC->_L104) & (outC->_L104 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L104) & (outC->_L104 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L98, &outC->_L269[outC->_L104]);
   }
   else {
     kcg_copy_array_char_30(&outC->_L98, &outC->_L162);
   }
   kcg_copy_array_char_30_5(&outC->_L286, &outC->_L287);
-  if ((kcg_lit_int64(0) <= outC->_L288) & (outC->_L288 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L288) & (outC->_L288 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L286[outC->_L288], &outC->_L98);
   }
   kcg_copy_array_char_30_5(&outC->_L285, MsgQueue3);
   kcg_copy_array_char_30(
     &outC->_L281,
     (array_char_30 *) &cPlainText_single_DMI_Control_Pkg);
-  if ((kcg_lit_int64(0) <= outC->_L314) & (outC->_L314 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L314) & (outC->_L314 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L283, &outC->_L285[outC->_L314]);
   }
   else {
@@ -506,7 +506,7 @@ void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
     &outC->_L277,
     (array_char_30 *) &cPlainText_single_DMI_Control_Pkg);
   kcg_copy_array_char_30_5(&outC->_L274, MsgQueue2);
-  if ((kcg_lit_int64(0) <= outC->_L290) & (outC->_L290 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L290) & (outC->_L290 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L275, &outC->_L274[outC->_L290]);
   }
   else {
@@ -519,7 +519,7 @@ void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
   outC->_L238 = num1;
   outC->_L239 = outC->_L524 - outC->_L238;
   kcg_copy_array_char_30_5(&outC->_L229, MsgQueue2);
-  if ((kcg_lit_int64(0) <= outC->_L239) & (outC->_L239 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L239) & (outC->_L239 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L225, &outC->_L229[outC->_L239]);
   }
   else {
@@ -528,7 +528,7 @@ void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
   outC->_L182 = index;
   kcg_copy_array_char_30_5(&outC->_L177, acc);
   kcg_copy_array_char_30_5(&outC->_L185, &outC->_L177);
-  if ((kcg_lit_int64(0) <= outC->_L182) & (outC->_L182 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L182) & (outC->_L182 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L185[outC->_L182], &outC->_L225);
   }
   /* _L273= */
@@ -542,7 +542,7 @@ void MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages(
     &outC->_L161,
     (array_char_30 *) &cPlainText_single_DMI_Control_Pkg);
   kcg_copy_array_char_30_5(&outC->_L144, DefaultMsgQueue);
-  if ((kcg_lit_int64(0) <= outC->_L512) & (outC->_L512 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L512) & (outC->_L512 < kcg_lit_int32(5))) {
     kcg_copy_array_char_30(&outC->_L86, &outC->_L144[outC->_L512]);
   }
   else {
@@ -700,46 +700,46 @@ void MergeMessagesToPlain_iteration_init_DMI_Control_Pkg_Sub_func_TextMessages(
   static kcg_size idx134;
   static kcg_size idx135;
 
-  outC->_L555 = kcg_lit_int64(0);
-  outC->_L554 = kcg_lit_int64(0);
-  outC->_L553 = kcg_lit_int64(0);
-  outC->_L552 = kcg_lit_int64(0);
-  outC->_L551 = kcg_lit_int64(0);
-  outC->_L550 = kcg_lit_int64(0);
-  outC->_L549 = kcg_lit_int64(0);
-  outC->_L548 = kcg_lit_int64(0);
-  outC->_L547 = kcg_lit_int64(0);
-  outC->_L546 = kcg_lit_int64(0);
-  outC->_L545 = kcg_lit_int64(0);
-  outC->_L544 = kcg_lit_int64(0);
-  outC->_L543 = kcg_lit_int64(0);
-  outC->_L542 = kcg_lit_int64(0);
-  outC->_L541 = kcg_lit_int64(0);
-  outC->_L540 = kcg_lit_int64(0);
-  outC->_L539 = kcg_lit_int64(0);
-  outC->_L537 = kcg_lit_int64(0);
-  outC->_L536 = kcg_lit_int64(0);
-  outC->_L535 = kcg_lit_int64(0);
-  outC->_L534 = kcg_lit_int64(0);
-  outC->_L533 = kcg_lit_int64(0);
-  outC->_L532 = kcg_lit_int64(0);
-  outC->_L531 = kcg_lit_int64(0);
-  outC->_L530 = kcg_lit_int64(0);
-  outC->_L529 = kcg_lit_int64(0);
-  outC->_L528 = kcg_lit_int64(0);
-  outC->_L527 = kcg_lit_int64(0);
-  outC->_L526 = kcg_lit_int64(0);
-  outC->_L525 = kcg_lit_int64(0);
-  outC->_L524 = kcg_lit_int64(0);
-  outC->_L523 = kcg_lit_int64(0);
-  outC->_L522 = kcg_lit_int64(0);
-  outC->_L521 = kcg_lit_int64(0);
+  outC->_L555 = kcg_lit_int32(0);
+  outC->_L554 = kcg_lit_int32(0);
+  outC->_L553 = kcg_lit_int32(0);
+  outC->_L552 = kcg_lit_int32(0);
+  outC->_L551 = kcg_lit_int32(0);
+  outC->_L550 = kcg_lit_int32(0);
+  outC->_L549 = kcg_lit_int32(0);
+  outC->_L548 = kcg_lit_int32(0);
+  outC->_L547 = kcg_lit_int32(0);
+  outC->_L546 = kcg_lit_int32(0);
+  outC->_L545 = kcg_lit_int32(0);
+  outC->_L544 = kcg_lit_int32(0);
+  outC->_L543 = kcg_lit_int32(0);
+  outC->_L542 = kcg_lit_int32(0);
+  outC->_L541 = kcg_lit_int32(0);
+  outC->_L540 = kcg_lit_int32(0);
+  outC->_L539 = kcg_lit_int32(0);
+  outC->_L537 = kcg_lit_int32(0);
+  outC->_L536 = kcg_lit_int32(0);
+  outC->_L535 = kcg_lit_int32(0);
+  outC->_L534 = kcg_lit_int32(0);
+  outC->_L533 = kcg_lit_int32(0);
+  outC->_L532 = kcg_lit_int32(0);
+  outC->_L531 = kcg_lit_int32(0);
+  outC->_L530 = kcg_lit_int32(0);
+  outC->_L529 = kcg_lit_int32(0);
+  outC->_L528 = kcg_lit_int32(0);
+  outC->_L527 = kcg_lit_int32(0);
+  outC->_L526 = kcg_lit_int32(0);
+  outC->_L525 = kcg_lit_int32(0);
+  outC->_L524 = kcg_lit_int32(0);
+  outC->_L523 = kcg_lit_int32(0);
+  outC->_L522 = kcg_lit_int32(0);
+  outC->_L521 = kcg_lit_int32(0);
   for (idx = 0; idx < 30; idx++) {
     outC->_L520[idx] = ' ';
   }
-  outC->_L519 = kcg_lit_int64(0);
-  outC->_L518 = kcg_lit_int64(0);
-  outC->_L517 = kcg_lit_int64(0);
+  outC->_L519 = kcg_lit_int32(0);
+  outC->_L518 = kcg_lit_int32(0);
+  outC->_L517 = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 30; idx1++) {
     outC->_L516[idx1] = ' ';
   }
@@ -748,21 +748,21 @@ void MergeMessagesToPlain_iteration_init_DMI_Control_Pkg_Sub_func_TextMessages(
       outC->_L515[idx3][idx2] = ' ';
     }
   }
-  outC->_L514 = kcg_lit_int64(0);
+  outC->_L514 = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 5; idx5++) {
     for (idx4 = 0; idx4 < 30; idx4++) {
       outC->_L513[idx5][idx4] = ' ';
     }
   }
-  outC->_L512 = kcg_lit_int64(0);
-  outC->_L511 = kcg_lit_int64(0);
-  outC->_L507 = kcg_lit_int64(0);
+  outC->_L512 = kcg_lit_int32(0);
+  outC->_L511 = kcg_lit_int32(0);
+  outC->_L507 = kcg_lit_int32(0);
   for (idx7 = 0; idx7 < 5; idx7++) {
     for (idx6 = 0; idx6 < 30; idx6++) {
       outC->_L506[idx7][idx6] = ' ';
     }
   }
-  outC->_L489 = kcg_lit_int64(0);
+  outC->_L489 = kcg_lit_int32(0);
   for (idx9 = 0; idx9 < 5; idx9++) {
     for (idx8 = 0; idx8 < 30; idx8++) {
       outC->_L490[idx9][idx8] = ' ';
@@ -771,33 +771,33 @@ void MergeMessagesToPlain_iteration_init_DMI_Control_Pkg_Sub_func_TextMessages(
   for (idx10 = 0; idx10 < 30; idx10++) {
     outC->_L491[idx10] = ' ';
   }
-  outC->_L492 = kcg_lit_int64(0);
-  outC->_L493 = kcg_lit_int64(0);
-  outC->_L494 = kcg_lit_int64(0);
-  outC->_L495 = kcg_lit_int64(0);
-  outC->_L496 = kcg_lit_int64(0);
-  outC->_L497 = kcg_lit_int64(0);
-  outC->_L498 = kcg_lit_int64(0);
-  outC->_L499 = kcg_lit_int64(0);
+  outC->_L492 = kcg_lit_int32(0);
+  outC->_L493 = kcg_lit_int32(0);
+  outC->_L494 = kcg_lit_int32(0);
+  outC->_L495 = kcg_lit_int32(0);
+  outC->_L496 = kcg_lit_int32(0);
+  outC->_L497 = kcg_lit_int32(0);
+  outC->_L498 = kcg_lit_int32(0);
+  outC->_L499 = kcg_lit_int32(0);
   for (idx12 = 0; idx12 < 5; idx12++) {
     for (idx11 = 0; idx11 < 30; idx11++) {
       outC->_L500[idx12][idx11] = ' ';
     }
   }
-  outC->_L502 = kcg_lit_int64(0);
+  outC->_L502 = kcg_lit_int32(0);
   for (idx13 = 0; idx13 < 30; idx13++) {
     outC->_L503[idx13] = ' ';
   }
-  outC->_L504 = kcg_lit_int64(0);
-  outC->_L505 = kcg_lit_int64(0);
+  outC->_L504 = kcg_lit_int32(0);
+  outC->_L505 = kcg_lit_int32(0);
   for (idx15 = 0; idx15 < 5; idx15++) {
     for (idx14 = 0; idx14 < 30; idx14++) {
       outC->_L488[idx15][idx14] = ' ';
     }
   }
-  outC->_L487 = kcg_lit_int64(0);
-  outC->_L472 = kcg_lit_int64(0);
-  outC->_L473 = kcg_lit_int64(0);
+  outC->_L487 = kcg_lit_int32(0);
+  outC->_L472 = kcg_lit_int32(0);
+  outC->_L473 = kcg_lit_int32(0);
   for (idx17 = 0; idx17 < 5; idx17++) {
     for (idx16 = 0; idx16 < 30; idx16++) {
       outC->_L474[idx17][idx16] = ' ';
@@ -808,57 +808,57 @@ void MergeMessagesToPlain_iteration_init_DMI_Control_Pkg_Sub_func_TextMessages(
       outC->_L475[idx19][idx18] = ' ';
     }
   }
-  outC->_L476 = kcg_lit_int64(0);
-  outC->_L477 = kcg_lit_int64(0);
-  outC->_L478 = kcg_lit_int64(0);
-  outC->_L479 = kcg_lit_int64(0);
-  outC->_L480 = kcg_lit_int64(0);
-  outC->_L481 = kcg_lit_int64(0);
-  outC->_L482 = kcg_lit_int64(0);
+  outC->_L476 = kcg_lit_int32(0);
+  outC->_L477 = kcg_lit_int32(0);
+  outC->_L478 = kcg_lit_int32(0);
+  outC->_L479 = kcg_lit_int32(0);
+  outC->_L480 = kcg_lit_int32(0);
+  outC->_L481 = kcg_lit_int32(0);
+  outC->_L482 = kcg_lit_int32(0);
   for (idx20 = 0; idx20 < 30; idx20++) {
     outC->_L483[idx20] = ' ';
   }
-  outC->_L484 = kcg_lit_int64(0);
+  outC->_L484 = kcg_lit_int32(0);
   for (idx21 = 0; idx21 < 30; idx21++) {
     outC->_L485[idx21] = ' ';
   }
-  outC->_L486 = kcg_lit_int64(0);
-  outC->_L470 = kcg_lit_int64(0);
+  outC->_L486 = kcg_lit_int32(0);
+  outC->_L470 = kcg_lit_int32(0);
   for (idx23 = 0; idx23 < 5; idx23++) {
     for (idx22 = 0; idx22 < 30; idx22++) {
       outC->_L469[idx23][idx22] = ' ';
     }
   }
-  outC->_L455 = kcg_lit_int64(0);
-  outC->_L456 = kcg_lit_int64(0);
-  outC->_L457 = kcg_lit_int64(0);
+  outC->_L455 = kcg_lit_int32(0);
+  outC->_L456 = kcg_lit_int32(0);
+  outC->_L457 = kcg_lit_int32(0);
   for (idx24 = 0; idx24 < 30; idx24++) {
     outC->_L458[idx24] = ' ';
   }
-  outC->_L459 = kcg_lit_int64(0);
+  outC->_L459 = kcg_lit_int32(0);
   outC->_L460 = kcg_true;
   for (idx25 = 0; idx25 < 30; idx25++) {
     outC->_L461[idx25] = ' ';
   }
-  outC->_L462 = kcg_lit_int64(0);
-  outC->_L464 = kcg_lit_int64(0);
-  outC->_L465 = kcg_lit_int64(0);
-  outC->_L466 = kcg_lit_int64(0);
-  outC->_L467 = kcg_lit_int64(0);
-  outC->_L468 = kcg_lit_int64(0);
+  outC->_L462 = kcg_lit_int32(0);
+  outC->_L464 = kcg_lit_int32(0);
+  outC->_L465 = kcg_lit_int32(0);
+  outC->_L466 = kcg_lit_int32(0);
+  outC->_L467 = kcg_lit_int32(0);
+  outC->_L468 = kcg_lit_int32(0);
   for (idx27 = 0; idx27 < 5; idx27++) {
     for (idx26 = 0; idx26 < 30; idx26++) {
       outC->_L454[idx27][idx26] = ' ';
     }
   }
-  outC->_L453 = kcg_lit_int64(0);
+  outC->_L453 = kcg_lit_int32(0);
   for (idx29 = 0; idx29 < 5; idx29++) {
     for (idx28 = 0; idx28 < 30; idx28++) {
       outC->_L452[idx29][idx28] = ' ';
     }
   }
-  outC->_L437 = kcg_lit_int64(0);
-  outC->_L438 = kcg_lit_int64(0);
+  outC->_L437 = kcg_lit_int32(0);
+  outC->_L438 = kcg_lit_int32(0);
   for (idx31 = 0; idx31 < 5; idx31++) {
     for (idx30 = 0; idx30 < 30; idx30++) {
       outC->_L439[idx31][idx30] = ' ';
@@ -869,22 +869,22 @@ void MergeMessagesToPlain_iteration_init_DMI_Control_Pkg_Sub_func_TextMessages(
       outC->_L440[idx33][idx32] = ' ';
     }
   }
-  outC->_L441 = kcg_lit_int64(0);
-  outC->_L442 = kcg_lit_int64(0);
-  outC->_L443 = kcg_lit_int64(0);
+  outC->_L441 = kcg_lit_int32(0);
+  outC->_L442 = kcg_lit_int32(0);
+  outC->_L443 = kcg_lit_int32(0);
   for (idx34 = 0; idx34 < 30; idx34++) {
     outC->_L445[idx34] = ' ';
   }
-  outC->_L446 = kcg_lit_int64(0);
-  outC->_L447 = kcg_lit_int64(0);
-  outC->_L448 = kcg_lit_int64(0);
+  outC->_L446 = kcg_lit_int32(0);
+  outC->_L447 = kcg_lit_int32(0);
+  outC->_L448 = kcg_lit_int32(0);
   for (idx35 = 0; idx35 < 30; idx35++) {
     outC->_L449[idx35] = ' ';
   }
-  outC->_L450 = kcg_lit_int64(0);
-  outC->_L451 = kcg_lit_int64(0);
-  outC->_L436 = kcg_lit_int64(0);
-  outC->_L435 = kcg_lit_int64(0);
+  outC->_L450 = kcg_lit_int32(0);
+  outC->_L451 = kcg_lit_int32(0);
+  outC->_L436 = kcg_lit_int32(0);
+  outC->_L435 = kcg_lit_int32(0);
   for (idx37 = 0; idx37 < 5; idx37++) {
     for (idx36 = 0; idx36 < 30; idx36++) {
       outC->_L434[idx37][idx36] = ' ';
@@ -895,30 +895,30 @@ void MergeMessagesToPlain_iteration_init_DMI_Control_Pkg_Sub_func_TextMessages(
       outC->_L433[idx39][idx38] = ' ';
     }
   }
-  outC->_L421 = kcg_lit_int64(0);
-  outC->_L422 = kcg_lit_int64(0);
+  outC->_L421 = kcg_lit_int32(0);
+  outC->_L422 = kcg_lit_int32(0);
   for (idx40 = 0; idx40 < 30; idx40++) {
     outC->_L423[idx40] = ' ';
   }
-  outC->_L424 = kcg_lit_int64(0);
-  outC->_L425 = kcg_lit_int64(0);
+  outC->_L424 = kcg_lit_int32(0);
+  outC->_L425 = kcg_lit_int32(0);
   for (idx41 = 0; idx41 < 30; idx41++) {
     outC->_L427[idx41] = ' ';
   }
-  outC->_L428 = kcg_lit_int64(0);
-  outC->_L429 = kcg_lit_int64(0);
+  outC->_L428 = kcg_lit_int32(0);
+  outC->_L429 = kcg_lit_int32(0);
   outC->_L430 = kcg_true;
-  outC->_L431 = kcg_lit_int64(0);
-  outC->_L432 = kcg_lit_int64(0);
-  outC->_L420 = kcg_lit_int64(0);
+  outC->_L431 = kcg_lit_int32(0);
+  outC->_L432 = kcg_lit_int32(0);
+  outC->_L420 = kcg_lit_int32(0);
   for (idx43 = 0; idx43 < 5; idx43++) {
     for (idx42 = 0; idx42 < 30; idx42++) {
       outC->_L419[idx43][idx42] = ' ';
     }
   }
-  outC->_L405 = kcg_lit_int64(0);
-  outC->_L407 = kcg_lit_int64(0);
-  outC->_L408 = kcg_lit_int64(0);
+  outC->_L405 = kcg_lit_int32(0);
+  outC->_L407 = kcg_lit_int32(0);
+  outC->_L408 = kcg_lit_int32(0);
   for (idx44 = 0; idx44 < 30; idx44++) {
     outC->_L409[idx44] = ' ';
   }
@@ -927,47 +927,47 @@ void MergeMessagesToPlain_iteration_init_DMI_Control_Pkg_Sub_func_TextMessages(
       outC->_L410[idx46][idx45] = ' ';
     }
   }
-  outC->_L411 = kcg_lit_int64(0);
-  outC->_L412 = kcg_lit_int64(0);
-  outC->_L413 = kcg_lit_int64(0);
+  outC->_L411 = kcg_lit_int32(0);
+  outC->_L412 = kcg_lit_int32(0);
+  outC->_L413 = kcg_lit_int32(0);
   for (idx48 = 0; idx48 < 5; idx48++) {
     for (idx47 = 0; idx47 < 30; idx47++) {
       outC->_L414[idx48][idx47] = ' ';
     }
   }
-  outC->_L415 = kcg_lit_int64(0);
-  outC->_L416 = kcg_lit_int64(0);
-  outC->_L417 = kcg_lit_int64(0);
+  outC->_L415 = kcg_lit_int32(0);
+  outC->_L416 = kcg_lit_int32(0);
+  outC->_L417 = kcg_lit_int32(0);
   for (idx49 = 0; idx49 < 30; idx49++) {
     outC->_L418[idx49] = ' ';
   }
-  outC->_L404 = kcg_lit_int64(0);
+  outC->_L404 = kcg_lit_int32(0);
   for (idx51 = 0; idx51 < 5; idx51++) {
     for (idx50 = 0; idx50 < 30; idx50++) {
       outC->_L403[idx51][idx50] = ' ';
     }
   }
-  outC->_L391 = kcg_lit_int64(0);
+  outC->_L391 = kcg_lit_int32(0);
   outC->_L392 = kcg_true;
-  outC->_L393 = kcg_lit_int64(0);
-  outC->_L394 = kcg_lit_int64(0);
-  outC->_L395 = kcg_lit_int64(0);
-  outC->_L396 = kcg_lit_int64(0);
-  outC->_L397 = kcg_lit_int64(0);
+  outC->_L393 = kcg_lit_int32(0);
+  outC->_L394 = kcg_lit_int32(0);
+  outC->_L395 = kcg_lit_int32(0);
+  outC->_L396 = kcg_lit_int32(0);
+  outC->_L397 = kcg_lit_int32(0);
   for (idx52 = 0; idx52 < 30; idx52++) {
     outC->_L398[idx52] = ' ';
   }
   for (idx53 = 0; idx53 < 30; idx53++) {
     outC->_L399[idx53] = ' ';
   }
-  outC->_L400 = kcg_lit_int64(0);
-  outC->_L402 = kcg_lit_int64(0);
+  outC->_L400 = kcg_lit_int32(0);
+  outC->_L402 = kcg_lit_int32(0);
   for (idx55 = 0; idx55 < 5; idx55++) {
     for (idx54 = 0; idx54 < 30; idx54++) {
       outC->_L390[idx55][idx54] = ' ';
     }
   }
-  outC->_L389 = kcg_lit_int64(0);
+  outC->_L389 = kcg_lit_int32(0);
   for (idx57 = 0; idx57 < 5; idx57++) {
     for (idx56 = 0; idx56 < 30; idx56++) {
       outC->_L388[idx57][idx56] = ' ';
@@ -981,14 +981,14 @@ void MergeMessagesToPlain_iteration_init_DMI_Control_Pkg_Sub_func_TextMessages(
       outC->_L377[idx60][idx59] = ' ';
     }
   }
-  outC->_L378 = kcg_lit_int64(0);
-  outC->_L379 = kcg_lit_int64(0);
-  outC->_L380 = kcg_lit_int64(0);
-  outC->_L381 = kcg_lit_int64(0);
-  outC->_L382 = kcg_lit_int64(0);
-  outC->_L383 = kcg_lit_int64(0);
-  outC->_L384 = kcg_lit_int64(0);
-  outC->_L385 = kcg_lit_int64(0);
+  outC->_L378 = kcg_lit_int32(0);
+  outC->_L379 = kcg_lit_int32(0);
+  outC->_L380 = kcg_lit_int32(0);
+  outC->_L381 = kcg_lit_int32(0);
+  outC->_L382 = kcg_lit_int32(0);
+  outC->_L383 = kcg_lit_int32(0);
+  outC->_L384 = kcg_lit_int32(0);
+  outC->_L385 = kcg_lit_int32(0);
   for (idx61 = 0; idx61 < 30; idx61++) {
     outC->_L386[idx61] = ' ';
   }
@@ -1007,23 +1007,23 @@ void MergeMessagesToPlain_iteration_init_DMI_Control_Pkg_Sub_func_TextMessages(
       outC->_L373[idx67][idx66] = ' ';
     }
   }
-  outC->_L372 = kcg_lit_int64(0);
+  outC->_L372 = kcg_lit_int32(0);
   for (idx69 = 0; idx69 < 5; idx69++) {
     for (idx68 = 0; idx68 < 30; idx68++) {
       outC->_L371[idx69][idx68] = ' ';
     }
   }
-  outC->_L360 = kcg_lit_int64(0);
-  outC->_L361 = kcg_lit_int64(0);
-  outC->_L363 = kcg_lit_int64(0);
+  outC->_L360 = kcg_lit_int32(0);
+  outC->_L361 = kcg_lit_int32(0);
+  outC->_L363 = kcg_lit_int32(0);
   outC->_L364 = kcg_true;
   for (idx70 = 0; idx70 < 30; idx70++) {
     outC->_L365[idx70] = ' ';
   }
-  outC->_L366 = kcg_lit_int64(0);
-  outC->_L367 = kcg_lit_int64(0);
-  outC->_L368 = kcg_lit_int64(0);
-  outC->_L369 = kcg_lit_int64(0);
+  outC->_L366 = kcg_lit_int32(0);
+  outC->_L367 = kcg_lit_int32(0);
+  outC->_L368 = kcg_lit_int32(0);
+  outC->_L369 = kcg_lit_int32(0);
   for (idx71 = 0; idx71 < 30; idx71++) {
     outC->_L370[idx71] = ' ';
   }
@@ -1032,13 +1032,13 @@ void MergeMessagesToPlain_iteration_init_DMI_Control_Pkg_Sub_func_TextMessages(
       outC->_L359[idx73][idx72] = ' ';
     }
   }
-  outC->_L358 = kcg_lit_int64(0);
-  outC->_L346 = kcg_lit_int64(0);
-  outC->_L348 = kcg_lit_int64(0);
+  outC->_L358 = kcg_lit_int32(0);
+  outC->_L346 = kcg_lit_int32(0);
+  outC->_L348 = kcg_lit_int32(0);
   for (idx74 = 0; idx74 < 30; idx74++) {
     outC->_L349[idx74] = ' ';
   }
-  outC->_L350 = kcg_lit_int64(0);
+  outC->_L350 = kcg_lit_int32(0);
   for (idx76 = 0; idx76 < 5; idx76++) {
     for (idx75 = 0; idx75 < 30; idx75++) {
       outC->_L351[idx76][idx75] = ' ';
@@ -1049,29 +1049,29 @@ void MergeMessagesToPlain_iteration_init_DMI_Control_Pkg_Sub_func_TextMessages(
       outC->_L352[idx78][idx77] = ' ';
     }
   }
-  outC->_L353 = kcg_lit_int64(0);
-  outC->_L354 = kcg_lit_int64(0);
+  outC->_L353 = kcg_lit_int32(0);
+  outC->_L354 = kcg_lit_int32(0);
   for (idx79 = 0; idx79 < 30; idx79++) {
     outC->_L355[idx79] = ' ';
   }
-  outC->_L356 = kcg_lit_int64(0);
-  outC->_L357 = kcg_lit_int64(0);
-  outC->_L345 = kcg_lit_int64(0);
+  outC->_L356 = kcg_lit_int32(0);
+  outC->_L357 = kcg_lit_int32(0);
+  outC->_L345 = kcg_lit_int32(0);
   for (idx81 = 0; idx81 < 5; idx81++) {
     for (idx80 = 0; idx80 < 30; idx80++) {
       outC->_L344[idx81][idx80] = ' ';
     }
   }
-  outC->_L343 = kcg_lit_int64(0);
-  outC->_L334 = kcg_lit_int64(0);
+  outC->_L343 = kcg_lit_int32(0);
+  outC->_L334 = kcg_lit_int32(0);
   for (idx82 = 0; idx82 < 30; idx82++) {
     outC->_L335[idx82] = ' ';
   }
   outC->_L336 = kcg_true;
-  outC->_L337 = kcg_lit_int64(0);
-  outC->_L339 = kcg_lit_int64(0);
-  outC->_L340 = kcg_lit_int64(0);
-  outC->_L341 = kcg_lit_int64(0);
+  outC->_L337 = kcg_lit_int32(0);
+  outC->_L339 = kcg_lit_int32(0);
+  outC->_L340 = kcg_lit_int32(0);
+  outC->_L341 = kcg_lit_int32(0);
   for (idx83 = 0; idx83 < 30; idx83++) {
     outC->_L342[idx83] = ' ';
   }
@@ -1080,28 +1080,28 @@ void MergeMessagesToPlain_iteration_init_DMI_Control_Pkg_Sub_func_TextMessages(
       outC->_L333[idx85][idx84] = ' ';
     }
   }
-  outC->_L327 = kcg_lit_int64(0);
-  outC->_L328 = kcg_lit_int64(0);
-  outC->_L329 = kcg_lit_int64(0);
-  outC->_L330 = kcg_lit_int64(0);
-  outC->_L331 = kcg_lit_int64(0);
-  outC->_L332 = kcg_lit_int64(0);
-  outC->_L310 = kcg_lit_int64(0);
-  outC->_L311 = kcg_lit_int64(0);
-  outC->_L312 = kcg_lit_int64(0);
-  outC->_L313 = kcg_lit_int64(0);
-  outC->_L314 = kcg_lit_int64(0);
-  outC->_L309 = kcg_lit_int64(0);
-  outC->_L298 = kcg_lit_int64(0);
-  outC->_L299 = kcg_lit_int64(0);
-  outC->_L300 = kcg_lit_int64(0);
+  outC->_L327 = kcg_lit_int32(0);
+  outC->_L328 = kcg_lit_int32(0);
+  outC->_L329 = kcg_lit_int32(0);
+  outC->_L330 = kcg_lit_int32(0);
+  outC->_L331 = kcg_lit_int32(0);
+  outC->_L332 = kcg_lit_int32(0);
+  outC->_L310 = kcg_lit_int32(0);
+  outC->_L311 = kcg_lit_int32(0);
+  outC->_L312 = kcg_lit_int32(0);
+  outC->_L313 = kcg_lit_int32(0);
+  outC->_L314 = kcg_lit_int32(0);
+  outC->_L309 = kcg_lit_int32(0);
+  outC->_L298 = kcg_lit_int32(0);
+  outC->_L299 = kcg_lit_int32(0);
+  outC->_L300 = kcg_lit_int32(0);
   for (idx87 = 0; idx87 < 5; idx87++) {
     for (idx86 = 0; idx86 < 30; idx86++) {
       outC->_L301[idx87][idx86] = ' ';
     }
   }
-  outC->_L302 = kcg_lit_int64(0);
-  outC->_L303 = kcg_lit_int64(0);
+  outC->_L302 = kcg_lit_int32(0);
+  outC->_L303 = kcg_lit_int32(0);
   for (idx88 = 0; idx88 < 30; idx88++) {
     outC->_L304[idx88] = ' ';
   }
@@ -1113,7 +1113,7 @@ void MergeMessagesToPlain_iteration_init_DMI_Control_Pkg_Sub_func_TextMessages(
       outC->_L307[idx91][idx90] = ' ';
     }
   }
-  outC->_L308 = kcg_lit_int64(0);
+  outC->_L308 = kcg_lit_int32(0);
   for (idx93 = 0; idx93 < 5; idx93++) {
     for (idx92 = 0; idx92 < 30; idx92++) {
       outC->_L297[idx93][idx92] = ' ';
@@ -1131,10 +1131,10 @@ void MergeMessagesToPlain_iteration_init_DMI_Control_Pkg_Sub_func_TextMessages(
   for (idx97 = 0; idx97 < 30; idx97++) {
     outC->_L295[idx97] = ' ';
   }
-  outC->_L289 = kcg_lit_int64(0);
-  outC->_L290 = kcg_lit_int64(0);
-  outC->_L291 = kcg_lit_int64(0);
-  outC->_L288 = kcg_lit_int64(0);
+  outC->_L289 = kcg_lit_int32(0);
+  outC->_L290 = kcg_lit_int32(0);
+  outC->_L291 = kcg_lit_int32(0);
+  outC->_L288 = kcg_lit_int32(0);
   for (idx99 = 0; idx99 < 5; idx99++) {
     for (idx98 = 0; idx98 < 30; idx98++) {
       outC->_L287[idx99][idx98] = ' ';
@@ -1179,9 +1179,9 @@ void MergeMessagesToPlain_iteration_init_DMI_Control_Pkg_Sub_func_TextMessages(
       outC->_L273[idx113][idx112] = ' ';
     }
   }
-  outC->_L272 = kcg_lit_int64(0);
-  outC->_L271 = kcg_lit_int64(0);
-  outC->_L270 = kcg_lit_int64(0);
+  outC->_L272 = kcg_lit_int32(0);
+  outC->_L271 = kcg_lit_int32(0);
+  outC->_L270 = kcg_lit_int32(0);
   for (idx115 = 0; idx115 < 5; idx115++) {
     for (idx114 = 0; idx114 < 30; idx114++) {
       outC->_L269[idx115][idx114] = ' ';
@@ -1193,15 +1193,15 @@ void MergeMessagesToPlain_iteration_init_DMI_Control_Pkg_Sub_func_TextMessages(
   for (idx117 = 0; idx117 < 30; idx117++) {
     outC->_L180[idx117] = ' ';
   }
-  outC->_L237 = kcg_lit_int64(0);
-  outC->_L238 = kcg_lit_int64(0);
-  outC->_L239 = kcg_lit_int64(0);
+  outC->_L237 = kcg_lit_int32(0);
+  outC->_L238 = kcg_lit_int32(0);
+  outC->_L239 = kcg_lit_int32(0);
   for (idx119 = 0; idx119 < 5; idx119++) {
     for (idx118 = 0; idx118 < 30; idx118++) {
       outC->_L177[idx119][idx118] = ' ';
     }
   }
-  outC->_L182 = kcg_lit_int64(0);
+  outC->_L182 = kcg_lit_int32(0);
   for (idx121 = 0; idx121 < 5; idx121++) {
     for (idx120 = 0; idx120 < 30; idx120++) {
       outC->_L185[idx121][idx120] = ' ';
@@ -1218,7 +1218,7 @@ void MergeMessagesToPlain_iteration_init_DMI_Control_Pkg_Sub_func_TextMessages(
   for (idx125 = 0; idx125 < 30; idx125++) {
     outC->_L161[idx125] = ' ';
   }
-  outC->_L87 = kcg_lit_int64(0);
+  outC->_L87 = kcg_lit_int32(0);
   for (idx126 = 0; idx126 < 30; idx126++) {
     outC->_L86[idx126] = ' ';
   }
@@ -1227,8 +1227,8 @@ void MergeMessagesToPlain_iteration_init_DMI_Control_Pkg_Sub_func_TextMessages(
       outC->_L144[idx128][idx127] = ' ';
     }
   }
-  outC->_L104 = kcg_lit_int64(0);
-  outC->_L103 = kcg_lit_int64(0);
+  outC->_L104 = kcg_lit_int32(0);
+  outC->_L103 = kcg_lit_int32(0);
   for (idx129 = 0; idx129 < 30; idx129++) {
     outC->_L98[idx129] = ' ';
   }
@@ -1261,6 +1261,6 @@ void MergeMessagesToPlain_iteration_reset_DMI_Control_Pkg_Sub_func_TextMessages(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** MergeMessagesToPlain_iteration_DMI_Control_Pkg_Sub_func_TextMessages.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

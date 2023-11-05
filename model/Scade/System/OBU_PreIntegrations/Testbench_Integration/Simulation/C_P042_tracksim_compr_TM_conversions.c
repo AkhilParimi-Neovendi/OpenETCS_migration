@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -112,13 +112,13 @@ void C_P042_tracksim_compr_TM_conversions(
   T_Build_Metadata_Packet_ID_TM_lib_internal(
     outC->_L387,
     outC->_L215,
-    kcg_lit_int64(0),
-    kcg_lit_int64(42),
+    kcg_lit_int32(0),
+    kcg_lit_int32(42),
     INT_M_VERSION_2_0_TM,
     &outC->Context_T_Build_Metadata_Packet_ID_1);
   outC->_L393 = outC->Context_T_Build_Metadata_Packet_ID_1.nid_packet_meta;
   outC->_L388 = DIM_MaxElementsPacket042_TM;
-  outC->_L336 = kcg_lit_int64(0);
+  outC->_L336 = kcg_lit_int32(0);
   /* _L209/ */
   for (idx = 0; idx < 492; idx++) {
     outC->_L209[idx] = outC->_L336;
@@ -137,13 +137,13 @@ void C_P042_tracksim_compr_TM_conversions(
   outC->_L373[5] = outC->_L391;
   outC->_L373[6] = outC->_L390;
   outC->_L373[7] = outC->_L389;
-  kcg_copy_array_int64_8(&outC->_L383[0], &outC->_L373);
-  kcg_copy_array_int64_492(&outC->_L383[8], &outC->_L209);
+  kcg_copy_array_int32_8(&outC->_L383[0], &outC->_L373);
+  kcg_copy_array_int32_492(&outC->_L383[8], &outC->_L209);
   outC->_L356 = outC->q_dir_CAST_Int_to_Q_DIR_1;
   outC->_L214 = outC->_L1.valid;
-  outC->_L213 = kcg_lit_int64(1);
+  outC->_L213 = kcg_lit_int32(1);
   outC->_L212 = outC->_L388 - outC->_L213;
-  outC->_L206 = kcg_lit_int64(0);
+  outC->_L206 = kcg_lit_int32(0);
   outC->_L204.nid_packet = outC->_L393;
   outC->_L204.q_dir = outC->_L356;
   outC->_L204.valid = outC->_L214;
@@ -164,45 +164,45 @@ void C_P042_tracksim_compr_init_TM_conversions(
   static kcg_size idx2;
   static kcg_size idx3;
 
-  outC->_L393 = kcg_lit_int64(0);
-  outC->_L389 = kcg_lit_int64(0);
-  outC->_L390 = kcg_lit_int64(0);
-  outC->_L391 = kcg_lit_int64(0);
-  outC->_L392 = kcg_lit_int64(0);
-  outC->_L388 = kcg_lit_int64(0);
-  outC->_L387 = kcg_lit_int64(0);
+  outC->_L393 = kcg_lit_int32(0);
+  outC->_L389 = kcg_lit_int32(0);
+  outC->_L390 = kcg_lit_int32(0);
+  outC->_L391 = kcg_lit_int32(0);
+  outC->_L392 = kcg_lit_int32(0);
+  outC->_L388 = kcg_lit_int32(0);
+  outC->_L387 = kcg_lit_int32(0);
   for (idx = 0; idx < 500; idx++) {
-    outC->_L383[idx] = kcg_lit_int64(0);
+    outC->_L383[idx] = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 8; idx1++) {
-    outC->_L373[idx1] = kcg_lit_int64(0);
+    outC->_L373[idx1] = kcg_lit_int32(0);
   }
   outC->_L356 = Q_DIR_Reverse;
   outC->_L214 = kcg_true;
-  outC->_L215 = kcg_lit_int64(0);
-  outC->_L216 = kcg_lit_int64(0);
-  outC->_L217 = kcg_lit_int64(0);
-  outC->_L336 = kcg_lit_int64(0);
-  outC->_L213 = kcg_lit_int64(0);
-  outC->_L212 = kcg_lit_int64(0);
+  outC->_L215 = kcg_lit_int32(0);
+  outC->_L216 = kcg_lit_int32(0);
+  outC->_L217 = kcg_lit_int32(0);
+  outC->_L336 = kcg_lit_int32(0);
+  outC->_L213 = kcg_lit_int32(0);
+  outC->_L212 = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 492; idx2++) {
-    outC->_L209[idx2] = kcg_lit_int64(0);
+    outC->_L209[idx2] = kcg_lit_int32(0);
   }
-  outC->_L206 = kcg_lit_int64(0);
-  outC->_L204.nid_packet = kcg_lit_int64(0);
+  outC->_L206 = kcg_lit_int32(0);
+  outC->_L204.nid_packet = kcg_lit_int32(0);
   outC->_L204.q_dir = Q_DIR_Reverse;
   outC->_L204.valid = kcg_true;
-  outC->_L204.startAddress = kcg_lit_int64(0);
-  outC->_L204.endAddress = kcg_lit_int64(0);
+  outC->_L204.startAddress = kcg_lit_int32(0);
+  outC->_L204.endAddress = kcg_lit_int32(0);
   outC->_L1.valid = kcg_true;
-  outC->_L1.NID_PACKET = kcg_lit_int64(0);
-  outC->_L1.Q_DIR = kcg_lit_int64(0);
-  outC->_L1.L_PACKET = kcg_lit_int64(0);
-  outC->_L1.Q_RBC = kcg_lit_int64(0);
-  outC->_L1.NID_C = kcg_lit_int64(0);
-  outC->_L1.NID_RBC = kcg_lit_int64(0);
-  outC->_L1.NID_RADIO = kcg_lit_int64(0);
-  outC->_L1.Q_SLEEPSESSION = kcg_lit_int64(0);
+  outC->_L1.NID_PACKET = kcg_lit_int32(0);
+  outC->_L1.Q_DIR = kcg_lit_int32(0);
+  outC->_L1.L_PACKET = kcg_lit_int32(0);
+  outC->_L1.Q_RBC = kcg_lit_int32(0);
+  outC->_L1.NID_C = kcg_lit_int32(0);
+  outC->_L1.NID_RBC = kcg_lit_int32(0);
+  outC->_L1.NID_RADIO = kcg_lit_int32(0);
+  outC->_L1.Q_SLEEPSESSION = kcg_lit_int32(0);
   outC->_L5_CAST_Int_to_Q_DIR_1_then_IfBlock1 = kcg_true;
   outC->_L4_CAST_Int_to_Q_DIR_1_then_IfBlock1 = Q_DIR_Reverse;
   outC->else_clock_CAST_Int_to_Q_DIR_1_IfBlock1 = kcg_true;
@@ -215,19 +215,19 @@ void C_P042_tracksim_compr_init_TM_conversions(
   outC->_L5_CAST_Int_to_Q_DIR_1_then_else_IfBlock1 = kcg_true;
   outC->IfBlock1_clock_CAST_Int_to_Q_DIR_1 = kcg_true;
   outC->error_CAST_Int_to_Q_DIR_1 = kcg_true;
-  outC->q_dir_in_CAST_Int_to_Q_DIR_1 = kcg_lit_int64(0);
+  outC->q_dir_in_CAST_Int_to_Q_DIR_1 = kcg_lit_int32(0);
   outC->_L13_CAST_Int_to_Q_DIR_1 = kcg_true;
-  outC->_L12_CAST_Int_to_Q_DIR_1 = kcg_lit_int64(0);
-  outC->q_dir_int_CAST_Int_to_Q_DIR_1 = kcg_lit_int64(0);
+  outC->_L12_CAST_Int_to_Q_DIR_1 = kcg_lit_int32(0);
+  outC->q_dir_int_CAST_Int_to_Q_DIR_1 = kcg_lit_int32(0);
   outC->q_dir_CAST_Int_to_Q_DIR_1 = Q_DIR_Reverse;
   for (idx3 = 0; idx3 < 500; idx3++) {
-    outC->P042_compressed[idx3] = kcg_lit_int64(0);
+    outC->P042_compressed[idx3] = kcg_lit_int32(0);
   }
-  outC->Header.nid_packet = kcg_lit_int64(0);
+  outC->Header.nid_packet = kcg_lit_int32(0);
   outC->Header.q_dir = Q_DIR_Reverse;
   outC->Header.valid = kcg_true;
-  outC->Header.startAddress = kcg_lit_int64(0);
-  outC->Header.endAddress = kcg_lit_int64(0);
+  outC->Header.startAddress = kcg_lit_int32(0);
+  outC->Header.endAddress = kcg_lit_int32(0);
   /* _L393=(TM_lib_internal::T_Build_Metadata_Packet_ID#1)/ */
   T_Build_Metadata_Packet_ID_init_TM_lib_internal(
     &outC->Context_T_Build_Metadata_Packet_ID_1);
@@ -250,6 +250,6 @@ void C_P042_tracksim_compr_reset_TM_conversions(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P042_tracksim_compr_TM_conversions.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

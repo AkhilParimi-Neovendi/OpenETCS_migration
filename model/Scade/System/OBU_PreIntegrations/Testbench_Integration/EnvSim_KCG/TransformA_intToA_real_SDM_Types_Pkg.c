@@ -13,9 +13,9 @@ void TransformA_intToA_real_SDM_Types_Pkg(
   A_internal_Type_Obu_BasicTypes_Pkg acc_int,
   outC_TransformA_intToA_real_SDM_Types_Pkg *outC)
 {
-  outC->_L4 = kcg_lit_float64(100.0);
+  outC->_L4 = kcg_lit_float32(100.0);
   outC->_L1 = acc_int;
-  outC->_L2 = /* _L2= */(kcg_float64) outC->_L1;
+  outC->_L2 = /* _L2= */(kcg_float32) outC->_L1;
   outC->_L3 = outC->_L2 / outC->_L4;
   outC->acc_real = outC->_L3;
 }
@@ -24,11 +24,11 @@ void TransformA_intToA_real_SDM_Types_Pkg(
 void TransformA_intToA_real_init_SDM_Types_Pkg(
   outC_TransformA_intToA_real_SDM_Types_Pkg *outC)
 {
-  outC->_L4 = kcg_lit_float64(0.0);
-  outC->_L3 = kcg_lit_float64(0.0);
-  outC->_L2 = kcg_lit_float64(0.0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->acc_real = kcg_lit_float64(0.0);
+  outC->_L4 = kcg_lit_float32(0.0);
+  outC->_L3 = kcg_lit_float32(0.0);
+  outC->_L2 = kcg_lit_float32(0.0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->acc_real = kcg_lit_float32(0.0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

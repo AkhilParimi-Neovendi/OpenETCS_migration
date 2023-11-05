@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -115,90 +115,90 @@ void CAST_int_to_DMI_Dynamic1_init_DATA_Packets_EVC_to_DMI(
   static kcg_size idx;
 
   outC->_L43.level = M_LEVEL_Level_0;
-  outC->_L43.nid_stm = kcg_lit_int64(0);
+  outC->_L43.nid_stm = kcg_lit_int32(0);
   outC->_L41 = conn_unknown_API_RadioCommunication_Pkg;
-  outC->_L39 = kcg_lit_int64(0);
+  outC->_L39 = kcg_lit_int32(0);
   for (idx = 0; idx < 24; idx++) {
-    outC->_L38[idx] = kcg_lit_int64(0);
+    outC->_L38[idx] = kcg_lit_int32(0);
   }
   outC->_L33.valid = kcg_true;
-  outC->_L33.system_clock = kcg_lit_int64(0);
-  outC->_L33.v_train = kcg_lit_int64(0);
-  outC->_L33.location_front_train = kcg_lit_int64(0);
-  outC->_L33.location_brake_target = kcg_lit_int64(0);
-  outC->_L33.v_target = kcg_lit_int64(0);
-  outC->_L33.v_permitted = kcg_lit_int64(0);
-  outC->_L33.v_release = kcg_lit_int64(0);
-  outC->_L33.location_brake_curve_starting_point = kcg_lit_int64(0);
-  outC->_L33.v_intervention = kcg_lit_int64(0);
+  outC->_L33.system_clock = kcg_lit_int32(0);
+  outC->_L33.v_train = kcg_lit_int32(0);
+  outC->_L33.location_front_train = kcg_lit_int32(0);
+  outC->_L33.location_brake_target = kcg_lit_int32(0);
+  outC->_L33.v_target = kcg_lit_int32(0);
+  outC->_L33.v_permitted = kcg_lit_int32(0);
+  outC->_L33.v_release = kcg_lit_int32(0);
+  outC->_L33.location_brake_curve_starting_point = kcg_lit_int32(0);
+  outC->_L33.v_intervention = kcg_lit_int32(0);
   outC->_L33.mode = M_MODE_Full_Supervision;
   outC->_L33.level.level = M_LEVEL_Level_0;
-  outC->_L33.level.nid_stm = kcg_lit_int64(0);
-  outC->_L33.nid_c = kcg_lit_int64(0);
+  outC->_L33.level.nid_stm = kcg_lit_int32(0);
+  outC->_L33.nid_c = kcg_lit_int32(0);
   outC->_L33.nid_c_valid = kcg_true;
   outC->_L33.m_warning = supDis_normal_DMI_Types_Pkg;
   outC->_L33.sup_status = CSM_DMI_Types_Pkg;
-  outC->_L33.location_LOA = kcg_lit_int64(0);
-  outC->_L33.v_LOA = kcg_lit_int64(0);
-  outC->_L33.location_KP_Balise_Track = kcg_lit_int64(0);
-  outC->_L33.distance_KP_Balise = kcg_lit_int64(0);
-  outC->_L33.distance_to_TSA = kcg_lit_int64(0);
+  outC->_L33.location_LOA = kcg_lit_int32(0);
+  outC->_L33.v_LOA = kcg_lit_int32(0);
+  outC->_L33.location_KP_Balise_Track = kcg_lit_int32(0);
+  outC->_L33.distance_KP_Balise = kcg_lit_int32(0);
+  outC->_L33.distance_to_TSA = kcg_lit_int32(0);
   outC->_L33.radioConnectionStatus = conn_unknown_API_RadioCommunication_Pkg;
-  outC->_L33.distanceIndicationPoint = kcg_lit_int64(0);
+  outC->_L33.distanceIndicationPoint = kcg_lit_int32(0);
   outC->_L31 = CSM_DMI_Types_Pkg;
   outC->_L30 = kcg_true;
   outC->_L29 = supDis_normal_DMI_Types_Pkg;
-  outC->_L28 = kcg_lit_int64(0);
+  outC->_L28 = kcg_lit_int32(0);
   outC->_L26 = M_MODE_Full_Supervision;
   outC->_L25 = kcg_true;
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L15 = kcg_lit_int64(0);
-  outC->_L16 = kcg_lit_int64(0);
-  outC->_L17 = kcg_lit_int64(0);
-  outC->_L18 = kcg_lit_int64(0);
-  outC->_L19 = kcg_lit_int64(0);
-  outC->_L20 = kcg_lit_int64(0);
-  outC->_L21 = kcg_lit_int64(0);
-  outC->_L22 = kcg_lit_int64(0);
-  outC->_L23 = kcg_lit_int64(0);
-  outC->_L24 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L15 = kcg_lit_int32(0);
+  outC->_L16 = kcg_lit_int32(0);
+  outC->_L17 = kcg_lit_int32(0);
+  outC->_L18 = kcg_lit_int32(0);
+  outC->_L19 = kcg_lit_int32(0);
+  outC->_L20 = kcg_lit_int32(0);
+  outC->_L21 = kcg_lit_int32(0);
+  outC->_L22 = kcg_lit_int32(0);
+  outC->_L23 = kcg_lit_int32(0);
+  outC->_L24 = kcg_lit_int32(0);
   outC->dmi_dynamic_ct.valid = kcg_true;
-  outC->dmi_dynamic_ct.system_clock = kcg_lit_int64(0);
-  outC->dmi_dynamic_ct.v_train = kcg_lit_int64(0);
-  outC->dmi_dynamic_ct.location_front_train = kcg_lit_int64(0);
-  outC->dmi_dynamic_ct.location_brake_target = kcg_lit_int64(0);
-  outC->dmi_dynamic_ct.v_target = kcg_lit_int64(0);
-  outC->dmi_dynamic_ct.v_permitted = kcg_lit_int64(0);
-  outC->dmi_dynamic_ct.v_release = kcg_lit_int64(0);
-  outC->dmi_dynamic_ct.location_brake_curve_starting_point = kcg_lit_int64(0);
-  outC->dmi_dynamic_ct.v_intervention = kcg_lit_int64(0);
+  outC->dmi_dynamic_ct.system_clock = kcg_lit_int32(0);
+  outC->dmi_dynamic_ct.v_train = kcg_lit_int32(0);
+  outC->dmi_dynamic_ct.location_front_train = kcg_lit_int32(0);
+  outC->dmi_dynamic_ct.location_brake_target = kcg_lit_int32(0);
+  outC->dmi_dynamic_ct.v_target = kcg_lit_int32(0);
+  outC->dmi_dynamic_ct.v_permitted = kcg_lit_int32(0);
+  outC->dmi_dynamic_ct.v_release = kcg_lit_int32(0);
+  outC->dmi_dynamic_ct.location_brake_curve_starting_point = kcg_lit_int32(0);
+  outC->dmi_dynamic_ct.v_intervention = kcg_lit_int32(0);
   outC->dmi_dynamic_ct.mode = M_MODE_Full_Supervision;
   outC->dmi_dynamic_ct.level.level = M_LEVEL_Level_0;
-  outC->dmi_dynamic_ct.level.nid_stm = kcg_lit_int64(0);
-  outC->dmi_dynamic_ct.nid_c = kcg_lit_int64(0);
+  outC->dmi_dynamic_ct.level.nid_stm = kcg_lit_int32(0);
+  outC->dmi_dynamic_ct.nid_c = kcg_lit_int32(0);
   outC->dmi_dynamic_ct.nid_c_valid = kcg_true;
   outC->dmi_dynamic_ct.m_warning = supDis_normal_DMI_Types_Pkg;
   outC->dmi_dynamic_ct.sup_status = CSM_DMI_Types_Pkg;
-  outC->dmi_dynamic_ct.location_LOA = kcg_lit_int64(0);
-  outC->dmi_dynamic_ct.v_LOA = kcg_lit_int64(0);
-  outC->dmi_dynamic_ct.location_KP_Balise_Track = kcg_lit_int64(0);
-  outC->dmi_dynamic_ct.distance_KP_Balise = kcg_lit_int64(0);
-  outC->dmi_dynamic_ct.distance_to_TSA = kcg_lit_int64(0);
+  outC->dmi_dynamic_ct.location_LOA = kcg_lit_int32(0);
+  outC->dmi_dynamic_ct.v_LOA = kcg_lit_int32(0);
+  outC->dmi_dynamic_ct.location_KP_Balise_Track = kcg_lit_int32(0);
+  outC->dmi_dynamic_ct.distance_KP_Balise = kcg_lit_int32(0);
+  outC->dmi_dynamic_ct.distance_to_TSA = kcg_lit_int32(0);
   outC->dmi_dynamic_ct.radioConnectionStatus =
     conn_unknown_API_RadioCommunication_Pkg;
-  outC->dmi_dynamic_ct.distanceIndicationPoint = kcg_lit_int64(0);
+  outC->dmi_dynamic_ct.distanceIndicationPoint = kcg_lit_int32(0);
   /* _L41=(DATA::Variables::CAST_int_to_connectionStatusRadioUnit#1)/ */
   CAST_int_to_connectionStatusRadioUnit_init_DATA_Variables(
     &outC->Context_CAST_int_to_connectionStatusRadioUnit_1);
@@ -254,6 +254,6 @@ void CAST_int_to_DMI_Dynamic1_reset_DATA_Packets_EVC_to_DMI(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_int_to_DMI_Dynamic1_DATA_Packets_EVC_to_DMI.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

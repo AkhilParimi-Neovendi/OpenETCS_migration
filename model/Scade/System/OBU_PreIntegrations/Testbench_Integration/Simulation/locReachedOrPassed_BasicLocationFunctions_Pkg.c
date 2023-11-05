@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -64,28 +64,28 @@ void locReachedOrPassed_BasicLocationFunctions_Pkg(
 void locReachedOrPassed_init_BasicLocationFunctions_Pkg(
   outC_locReachedOrPassed_BasicLocationFunctions_Pkg *outC)
 {
-  outC->_L52 = kcg_lit_int64(0);
-  outC->_L51 = kcg_lit_int64(0);
+  outC->_L52 = kcg_lit_int32(0);
+  outC->_L51 = kcg_lit_int32(0);
   outC->_L50 = kcg_true;
   outC->_L48 = kcg_true;
   outC->_L47 = kcg_true;
-  outC->_L41 = kcg_lit_int64(0);
-  outC->_L42 = kcg_lit_int64(0);
-  outC->_L43 = kcg_lit_int64(0);
-  outC->_L40.nominal = kcg_lit_int64(0);
-  outC->_L40.d_min = kcg_lit_int64(0);
-  outC->_L40.d_max = kcg_lit_int64(0);
+  outC->_L41 = kcg_lit_int32(0);
+  outC->_L42 = kcg_lit_int32(0);
+  outC->_L43 = kcg_lit_int32(0);
+  outC->_L40.nominal = kcg_lit_int32(0);
+  outC->_L40.d_min = kcg_lit_int32(0);
+  outC->_L40.d_max = kcg_lit_int32(0);
   outC->_L39 = kcg_true;
   outC->_L38 = kcg_true;
-  outC->_L37.nominal = kcg_lit_int64(0);
-  outC->_L37.d_min = kcg_lit_int64(0);
-  outC->_L37.d_max = kcg_lit_int64(0);
-  outC->_L36.nominal = kcg_lit_int64(0);
-  outC->_L36.d_min = kcg_lit_int64(0);
-  outC->_L36.d_max = kcg_lit_int64(0);
-  outC->_L34.nominal = kcg_lit_int64(0);
-  outC->_L34.d_min = kcg_lit_int64(0);
-  outC->_L34.d_max = kcg_lit_int64(0);
+  outC->_L37.nominal = kcg_lit_int32(0);
+  outC->_L37.d_min = kcg_lit_int32(0);
+  outC->_L37.d_max = kcg_lit_int32(0);
+  outC->_L36.nominal = kcg_lit_int32(0);
+  outC->_L36.d_min = kcg_lit_int32(0);
+  outC->_L36.d_max = kcg_lit_int32(0);
+  outC->_L34.nominal = kcg_lit_int32(0);
+  outC->_L34.d_min = kcg_lit_int32(0);
+  outC->_L34.d_max = kcg_lit_int32(0);
   outC->_L35 = kcg_true;
   outC->hit = kcg_true;
   /* _L39=(digital::RisingEdge#1)/ */
@@ -158,6 +158,6 @@ void kcg_load_SV_locReachedOrPassed_BasicLocationFunctions_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** locReachedOrPassed_BasicLocationFunctions_Pkg.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

@@ -14,7 +14,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* d_lrbg_int/ */ d_lrbg_int;
+  kcg_int32 /* d_lrbg_int/ */ d_lrbg_int;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
@@ -24,8 +24,8 @@ typedef struct {
   D_LRBG /* _L1/ */ _L1;
   kcg_bool /* _L9/ */ _L9;
   kcg_bool /* _L8/ */ _L8;
-  kcg_int64 /* _L7/ */ _L7;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L7/ */ _L7;
+  kcg_int32 /* _L6/ */ _L6;
 } outC_CAST_D_LRBG_to_int_TM_conversions;
 
 /* ===========  node initialization and cycle functions  =========== */

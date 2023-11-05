@@ -58,9 +58,9 @@ typedef struct {
   Brake_status_T_TIU_Types_Pkg /* _L74/ */ _L74;
   Brake_pressure_value_T_TIU_Types_Pkg /* _L75/ */ _L75;
   kcg_bool /* _L76/ */ _L76;
-  kcg_int64 /* _L77/ */ _L77;
-  kcg_int64 /* _L78/ */ _L78;
-  kcg_int64 /* _L79/ */ _L79;
+  kcg_int32 /* _L77/ */ _L77;
+  kcg_int32 /* _L78/ */ _L78;
+  kcg_int32 /* _L79/ */ _L79;
   Type_I_train_and_brake_inhibition_with_distance_commands_T_TIU_Types_Pkg /* _L80/ */ _L80;
   kcg_bool /* _L81/ */ _L81;
   kcg_bool /* _L82/ */ _L82;
@@ -103,7 +103,7 @@ extern void TIU_Toolbox_TrainModules(
   /* tractionSwitchedOn/ */
   kcg_bool tractionSwitchedOn,
   /* brakeAccelerationPercentage/ */
-  kcg_int64 brakeAccelerationPercentage,
+  kcg_int32 brakeAccelerationPercentage,
   outC_TIU_Toolbox_TrainModules *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

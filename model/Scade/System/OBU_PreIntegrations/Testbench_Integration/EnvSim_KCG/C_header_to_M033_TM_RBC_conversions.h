@@ -37,11 +37,11 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   Q_SCALE /* @1/q_scale/ */ q_scale_CAST_Int_to_Q_SCALE_1;
-  kcg_int64 /* @1/q_scale_int/ */ q_scale_int_CAST_Int_to_Q_SCALE_1;
+  kcg_int32 /* @1/q_scale_int/ */ q_scale_int_CAST_Int_to_Q_SCALE_1;
   kcg_bool /* @1/_L4/ */ _L4_CAST_Int_to_Q_SCALE_1;
-  kcg_int64 /* @1/_L2/ */ _L2_CAST_Int_to_Q_SCALE_1;
+  kcg_int32 /* @1/_L2/ */ _L2_CAST_Int_to_Q_SCALE_1;
   kcg_bool /* @1/error/ */ error_CAST_Int_to_Q_SCALE_1;
-  kcg_int64 /* @1/q_scale_in/ */ q_scale_in_CAST_Int_to_Q_SCALE_1;
+  kcg_int32 /* @1/q_scale_in/ */ q_scale_in_CAST_Int_to_Q_SCALE_1;
   kcg_bool /* @1/IfBlock1:else:then:_L3/ */ _L3_CAST_Int_to_Q_SCALE_1_then_else_IfBlock1;
   Q_SCALE /* @1/IfBlock1:else:then:_L1/ */ _L1_CAST_Int_to_Q_SCALE_1_then_else_IfBlock1;
   kcg_bool /* @1/IfBlock1:else:else:else:_L2/ */ _L2_CAST_Int_to_Q_SCALE_1_else_else_else_IfBlock1;
@@ -51,17 +51,17 @@ typedef struct {
   Q_SCALE /* @1/IfBlock1:then:_L2/ */ _L2_CAST_Int_to_Q_SCALE_1_then_IfBlock1;
   kcg_bool /* @1/IfBlock1:then:_L3/ */ _L3_CAST_Int_to_Q_SCALE_1_then_IfBlock1;
   M_TrackTrain_Radio_T_TM_radio_messages /* _L1/ */ _L1;
-  kcg_int64 /* _L13/ */ _L13;
-  kcg_int64 /* _L12/ */ _L12;
-  kcg_int64 /* _L11/ */ _L11;
-  kcg_int64 /* _L10/ */ _L10;
-  kcg_int64 /* _L9/ */ _L9;
-  kcg_int64 /* _L8/ */ _L8;
-  kcg_int64 /* _L7/ */ _L7;
-  kcg_int64 /* _L6/ */ _L6;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L13/ */ _L13;
+  kcg_int32 /* _L12/ */ _L12;
+  kcg_int32 /* _L11/ */ _L11;
+  kcg_int32 /* _L10/ */ _L10;
+  kcg_int32 /* _L9/ */ _L9;
+  kcg_int32 /* _L8/ */ _L8;
+  kcg_int32 /* _L7/ */ _L7;
+  kcg_int32 /* _L6/ */ _L6;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L3/ */ _L3;
   kcg_bool /* _L2/ */ _L2;
   M_033_T_TM_radio_messages /* _L26/ */ _L26;
   M_ACK /* _L27/ */ _L27;

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _Amsterdam_Utrecht_modular_US_Integration_November_H_
 #define _Amsterdam_Utrecht_modular_US_Integration_November_H_
@@ -34,8 +34,8 @@ typedef struct {
   CompressedBaliseMessage_TM /* _L17/ */ _L17;
   TelegramHeader_T_BG_Types_Pkg /* _L16/ */ _L16;
   CompressedPackets_T_Common_Types_Pkg /* _L15/ */ _L15;
-  kcg_float64 /* _L21/ */ _L21;
-  kcg_int64 /* _L22/ */ _L22;
+  kcg_float32 /* _L21/ */ _L21;
+  kcg_int32 /* _L22/ */ _L22;
   TrackType_US_Integration_November /* _L23/ */ _L23;
 } outC_Amsterdam_Utrecht_modular_US_Integration_November;
 
@@ -43,9 +43,9 @@ typedef struct {
 /* US_Integration_November::Amsterdam_Utrecht_modular/ */
 extern void Amsterdam_Utrecht_modular_US_Integration_November(
   /* TrainPos/ */
-  kcg_float64 TrainPos,
+  kcg_float32 TrainPos,
   /* Trigger_in/ */
-  kcg_int64 Trigger_in,
+  kcg_int32 Trigger_in,
   /* SelectTrack/ */
   TrackType_US_Integration_November SelectTrack,
   outC_Amsterdam_Utrecht_modular_US_Integration_November *outC);
@@ -65,6 +65,6 @@ extern void Amsterdam_Utrecht_modular_init_US_Integration_November(
 #endif /* _Amsterdam_Utrecht_modular_US_Integration_November_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Amsterdam_Utrecht_modular_US_Integration_November.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

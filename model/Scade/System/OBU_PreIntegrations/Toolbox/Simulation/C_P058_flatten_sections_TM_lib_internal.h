@@ -27,9 +27,9 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   P058_sections_array_flat_T_TM /* _L76/ */ _L76;
   P058_OBU_sectionlist_int_T_TM /* _L75/ */ _L75;
-  array_int64_2_32 /* _L74/ */ _L74;
+  array_int32_2_32 /* _L74/ */ _L74;
   P058_sections_array_flat_T_TM /* _L78/ */ _L78;
-  array_int64_2_32_64 /* _L80/ */ _L80;
+  array_int32_2_32_64 /* _L80/ */ _L80;
 } outC_C_P058_flatten_sections_TM_lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */

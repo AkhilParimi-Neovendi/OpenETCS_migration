@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -68,11 +68,11 @@ void sendVersion_init_manage_DMI_Output_Pkg(
   outC->_L14 = kcg_true;
   outC->_L13 = kcg_true;
   outC->_L11.valid = kcg_true;
-  outC->_L11.system_clock = kcg_lit_int64(0);
+  outC->_L11.system_clock = kcg_lit_int32(0);
   outC->_L11.system_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L10.valid = kcg_true;
-  outC->_L10.system_clock = kcg_lit_int64(0);
+  outC->_L10.system_clock = kcg_lit_int32(0);
   outC->_L10.system_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L9 = kcg_true;
@@ -80,10 +80,10 @@ void sendVersion_init_manage_DMI_Output_Pkg(
   outC->_L7 = kcg_true;
   outC->_L5 = kcg_true;
   outC->_L4.valid = kcg_true;
-  outC->_L4.system_clock = kcg_lit_int64(0);
+  outC->_L4.system_clock = kcg_lit_int32(0);
   outC->_L4.system_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L2.DMI_Active = kcg_true;
   outC->_L2.DMI_Error = kcg_true;
   outC->_L2.DMI_DriverIdValidated = kcg_true;
@@ -93,10 +93,10 @@ void sendVersion_init_manage_DMI_Output_Pkg(
   outC->_L2.DMI_TrainDataValidated = kcg_true;
   outC->_L2.DMI_StartReceived = kcg_true;
   outC->_L2.DMI_Identifier.valid = kcg_true;
-  outC->_L2.DMI_Identifier.systemTime = kcg_lit_int64(0);
+  outC->_L2.DMI_Identifier.systemTime = kcg_lit_int32(0);
   outC->_L2.DMI_Identifier.DMI_Identifier = DMI_1_DMI_Types_Pkg;
   outC->_L2.DMI_Identifier.Cabin_Identifier = cabin_A_DMI_Types_Pkg;
-  outC->_L2.DMI_Identifier.l_name = kcg_lit_int64(0);
+  outC->_L2.DMI_Identifier.l_name = kcg_lit_int32(0);
   for (idx = 0; idx < 255; idx++) {
     outC->_L2.DMI_Identifier.DMI_name[idx] = ' ';
   }
@@ -106,7 +106,7 @@ void sendVersion_init_manage_DMI_Output_Pkg(
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->sendPkg = kcg_true;
   outC->VersionPkg.valid = kcg_true;
-  outC->VersionPkg.system_clock = kcg_lit_int64(0);
+  outC->VersionPkg.system_clock = kcg_lit_int32(0);
   outC->VersionPkg.system_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->versionSent = kcg_false;
@@ -141,6 +141,6 @@ void kcg_load_SV_sendVersion_manage_DMI_Output_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** sendVersion_manage_DMI_Output_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

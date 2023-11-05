@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _convert2LRBG_ProvidePositionReport_Pkg_H_
 #define _convert2LRBG_ProvidePositionReport_Pkg_H_
@@ -23,9 +23,9 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   NID_C /* _L1/ */ _L1;
   NID_BG /* _L2/ */ _L2;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L5/ */ _L5;
 } outC_convert2LRBG_ProvidePositionReport_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -52,6 +52,6 @@ extern void convert2LRBG_init_ProvidePositionReport_Pkg(
 #endif /* _convert2LRBG_ProvidePositionReport_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** convert2LRBG_ProvidePositionReport_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

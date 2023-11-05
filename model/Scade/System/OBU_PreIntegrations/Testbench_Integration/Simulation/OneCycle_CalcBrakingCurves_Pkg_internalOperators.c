@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -14,9 +14,9 @@ void OneCycle_CalcBrakingCurves_Pkg_internalOperators(
   /* currentSpeed/ */
   V_internal_real_Type_SDM_Types_Pkg currentSpeed,
   /* currentDistanceIndex/ */
-  kcg_int64 currentDistanceIndex,
+  kcg_int32 currentDistanceIndex,
   /* currentSpeedIndex/ */
-  kcg_int64 currentSpeedIndex,
+  kcg_int32 currentSpeedIndex,
   /* backwardCalculation/ */
   kcg_bool backwardCalculation,
   /* inAsafe/ */
@@ -49,7 +49,7 @@ void OneCycle_CalcBrakingCurves_Pkg_internalOperators(
     &outC->Context_nextIndex_1);
   outC->_L88 = outC->Context_nextIndex_1.nextIndex;
   outC->_L65 = currentSpeedIndex;
-  outC->_L38 = kcg_lit_float64(0.0);
+  outC->_L38 = kcg_lit_float32(0.0);
   kcg_copy_ASafeSpeedDefinition_T_CalcBrakingCurves_types(
     &outC->_L11,
     &outC->_L9.speed_definition);
@@ -59,14 +59,14 @@ void OneCycle_CalcBrakingCurves_Pkg_internalOperators(
   kcg_copy_ASafeSpeedDefinition_T_CalcBrakingCurves_types(
     &outC->_L39,
     &outC->AsafeSpeeds);
-  if ((kcg_lit_int64(0) <= outC->_L88) & (outC->_L88 < kcg_lit_int64(14))) {
+  if ((kcg_lit_int32(0) <= outC->_L88) & (outC->_L88 < kcg_lit_int32(14))) {
     outC->_L34 = outC->_L39[outC->_L88];
   }
   else {
     outC->_L34 = outC->_L38;
   }
   outC->_L26 = currentDistance;
-  outC->_L32 = kcg_lit_float64(0.0);
+  outC->_L32 = kcg_lit_float32(0.0);
   outC->_L84 = backwardCalculation;
   outC->_L102 = !outC->_L84;
   outC->_L27 = currentDistanceIndex;
@@ -87,7 +87,7 @@ void OneCycle_CalcBrakingCurves_Pkg_internalOperators(
   kcg_copy_ASafeDistanceDefinition_T_CalcBrakingCurves_types(
     &outC->_L25,
     &outC->AsafeDistances);
-  if ((kcg_lit_int64(0) <= outC->_L87) & (outC->_L87 < kcg_lit_int64(100))) {
+  if ((kcg_lit_int32(0) <= outC->_L87) & (outC->_L87 < kcg_lit_int32(100))) {
     outC->_L30 = outC->_L25[outC->_L87];
   }
   else {
@@ -199,113 +199,113 @@ void OneCycle_init_CalcBrakingCurves_Pkg_internalOperators(
   static kcg_size idx16;
   static kcg_size idx17;
 
-  outC->_L106 = kcg_lit_float64(0.0);
-  outC->_L105 = kcg_lit_int64(0);
-  outC->_L104 = kcg_lit_int64(0);
-  outC->_L103 = kcg_lit_int64(0);
+  outC->_L106 = kcg_lit_float32(0.0);
+  outC->_L105 = kcg_lit_int32(0);
+  outC->_L104 = kcg_lit_int32(0);
+  outC->_L103 = kcg_lit_int32(0);
   outC->_L102 = kcg_true;
-  outC->_L100 = kcg_lit_int64(0);
+  outC->_L100 = kcg_lit_int32(0);
   outC->_L99 = kcg_true;
   outC->_L98 = kcg_true;
   outC->_L89 = kcg_true;
-  outC->_L88 = kcg_lit_int64(0);
-  outC->_L87 = kcg_lit_int64(0);
+  outC->_L88 = kcg_lit_int32(0);
+  outC->_L87 = kcg_lit_int32(0);
   outC->_L84 = kcg_true;
-  outC->_L82 = kcg_lit_int64(0);
-  outC->_L81 = kcg_lit_float64(0.0);
-  outC->_L80 = kcg_lit_int64(0);
-  outC->_L79 = kcg_lit_int64(0);
-  outC->_L75 = kcg_lit_float64(0.0);
+  outC->_L82 = kcg_lit_int32(0);
+  outC->_L81 = kcg_lit_float32(0.0);
+  outC->_L80 = kcg_lit_int32(0);
+  outC->_L79 = kcg_lit_int32(0);
+  outC->_L75 = kcg_lit_float32(0.0);
   for (idx1 = 0; idx1 < 14; idx1++) {
     for (idx = 0; idx < 100; idx++) {
-      outC->_L76[idx1][idx] = kcg_lit_float64(0.0);
+      outC->_L76[idx1][idx] = kcg_lit_float32(0.0);
     }
   }
-  outC->_L38 = kcg_lit_float64(0.0);
+  outC->_L38 = kcg_lit_float32(0.0);
   outC->_L66 = kcg_true;
-  outC->_L67 = kcg_lit_int64(0);
-  outC->_L65 = kcg_lit_int64(0);
+  outC->_L67 = kcg_lit_int32(0);
+  outC->_L65 = kcg_lit_int32(0);
   outC->_L63 = kcg_true;
-  outC->_L64 = kcg_lit_int64(0);
-  outC->_L61 = kcg_lit_float64(0.0);
-  outC->_L60 = kcg_lit_float64(0.0);
-  outC->_L59 = kcg_lit_float64(0.0);
-  outC->_L58 = kcg_lit_float64(0.0);
-  outC->_L56.distance = kcg_lit_float64(0.0);
-  outC->_L56.speed = kcg_lit_float64(0.0);
-  outC->_L56.acceleration = kcg_lit_float64(0.0);
+  outC->_L64 = kcg_lit_int32(0);
+  outC->_L61 = kcg_lit_float32(0.0);
+  outC->_L60 = kcg_lit_float32(0.0);
+  outC->_L59 = kcg_lit_float32(0.0);
+  outC->_L58 = kcg_lit_float32(0.0);
+  outC->_L56.distance = kcg_lit_float32(0.0);
+  outC->_L56.speed = kcg_lit_float32(0.0);
+  outC->_L56.acceleration = kcg_lit_float32(0.0);
   outC->_L54 = kcg_true;
-  outC->_L55 = kcg_lit_float64(0.0);
-  outC->_L52 = kcg_lit_float64(0.0);
+  outC->_L55 = kcg_lit_float32(0.0);
+  outC->_L52 = kcg_lit_float32(0.0);
   outC->_L53 = kcg_true;
   outC->_L40 = kcg_true;
   for (idx2 = 0; idx2 < 14; idx2++) {
-    outC->_L39[idx2] = kcg_lit_float64(0.0);
+    outC->_L39[idx2] = kcg_lit_float32(0.0);
   }
-  outC->_L35 = kcg_lit_int64(0);
-  outC->_L34 = kcg_lit_float64(0.0);
-  outC->_L32 = kcg_lit_float64(0.0);
-  outC->_L31 = kcg_lit_float64(0.0);
-  outC->_L30 = kcg_lit_float64(0.0);
-  outC->_L27 = kcg_lit_int64(0);
-  outC->_L26 = kcg_lit_float64(0.0);
+  outC->_L35 = kcg_lit_int32(0);
+  outC->_L34 = kcg_lit_float32(0.0);
+  outC->_L32 = kcg_lit_float32(0.0);
+  outC->_L31 = kcg_lit_float32(0.0);
+  outC->_L30 = kcg_lit_float32(0.0);
+  outC->_L27 = kcg_lit_int32(0);
+  outC->_L26 = kcg_lit_float32(0.0);
   for (idx3 = 0; idx3 < 100; idx3++) {
-    outC->_L25[idx3] = kcg_lit_float64(0.0);
+    outC->_L25[idx3] = kcg_lit_float32(0.0);
   }
   for (idx5 = 0; idx5 < 14; idx5++) {
     for (idx4 = 0; idx4 < 100; idx4++) {
-      outC->_L24[idx5][idx4] = kcg_lit_float64(0.0);
+      outC->_L24[idx5][idx4] = kcg_lit_float32(0.0);
     }
   }
-  outC->_L22 = kcg_lit_int64(0);
-  outC->_L21 = kcg_lit_int64(0);
-  outC->_L17 = kcg_lit_float64(0.0);
+  outC->_L22 = kcg_lit_int32(0);
+  outC->_L21 = kcg_lit_int32(0);
+  outC->_L17 = kcg_lit_float32(0.0);
   for (idx6 = 0; idx6 < 14; idx6++) {
-    outC->_L11[idx6] = kcg_lit_float64(0.0);
+    outC->_L11[idx6] = kcg_lit_float32(0.0);
   }
   for (idx8 = 0; idx8 < 14; idx8++) {
     for (idx7 = 0; idx7 < 100; idx7++) {
-      outC->_L12[idx8][idx7] = kcg_lit_float64(0.0);
+      outC->_L12[idx8][idx7] = kcg_lit_float32(0.0);
     }
   }
   for (idx9 = 0; idx9 < 100; idx9++) {
-    outC->_L13[idx9] = kcg_lit_float64(0.0);
+    outC->_L13[idx9] = kcg_lit_float32(0.0);
   }
   for (idx10 = 0; idx10 < 100; idx10++) {
-    outC->_L9.distance_definition[idx10] = kcg_lit_float64(0.0);
+    outC->_L9.distance_definition[idx10] = kcg_lit_float32(0.0);
   }
   for (idx11 = 0; idx11 < 14; idx11++) {
-    outC->_L9.speed_definition[idx11] = kcg_lit_float64(0.0);
+    outC->_L9.speed_definition[idx11] = kcg_lit_float32(0.0);
   }
   for (idx13 = 0; idx13 < 14; idx13++) {
     for (idx12 = 0; idx12 < 100; idx12++) {
-      outC->_L9.data[idx13][idx12] = kcg_lit_float64(0.0);
+      outC->_L9.data[idx13][idx12] = kcg_lit_float32(0.0);
     }
   }
-  outC->_L1 = kcg_lit_float64(0.0);
-  outC->newSpeedIndexInt = kcg_lit_int64(0);
-  outC->newDistanceIndexInt = kcg_lit_int64(0);
-  outC->newAcceleration = kcg_lit_float64(0.0);
+  outC->_L1 = kcg_lit_float32(0.0);
+  outC->newSpeedIndexInt = kcg_lit_int32(0);
+  outC->newDistanceIndexInt = kcg_lit_int32(0);
+  outC->newAcceleration = kcg_lit_float32(0.0);
   outC->newSpeedValid = kcg_true;
   for (idx15 = 0; idx15 < 14; idx15++) {
     for (idx14 = 0; idx14 < 100; idx14++) {
-      outC->AsafeData[idx15][idx14] = kcg_lit_float64(0.0);
+      outC->AsafeData[idx15][idx14] = kcg_lit_float32(0.0);
     }
   }
   for (idx16 = 0; idx16 < 14; idx16++) {
-    outC->AsafeSpeeds[idx16] = kcg_lit_float64(0.0);
+    outC->AsafeSpeeds[idx16] = kcg_lit_float32(0.0);
   }
   for (idx17 = 0; idx17 < 100; idx17++) {
-    outC->AsafeDistances[idx17] = kcg_lit_float64(0.0);
+    outC->AsafeDistances[idx17] = kcg_lit_float32(0.0);
   }
-  outC->currAcceleration = kcg_lit_float64(0.0);
-  outC->newArc.distance = kcg_lit_float64(0.0);
-  outC->newArc.speed = kcg_lit_float64(0.0);
-  outC->newArc.acceleration = kcg_lit_float64(0.0);
-  outC->newSpeedIndex = kcg_lit_int64(0);
-  outC->newDistanceIndex = kcg_lit_int64(0);
-  outC->newSpeed = kcg_lit_float64(0.0);
-  outC->newDistance = kcg_lit_float64(0.0);
+  outC->currAcceleration = kcg_lit_float32(0.0);
+  outC->newArc.distance = kcg_lit_float32(0.0);
+  outC->newArc.speed = kcg_lit_float32(0.0);
+  outC->newArc.acceleration = kcg_lit_float32(0.0);
+  outC->newSpeedIndex = kcg_lit_int32(0);
+  outC->newDistanceIndex = kcg_lit_int32(0);
+  outC->newSpeed = kcg_lit_float32(0.0);
+  outC->newDistance = kcg_lit_float32(0.0);
   /* _L58=(CalcBrakingCurves_Pkg::internalOperators::FormularNewPosition#1)/ */
   FormularNewPosition_init_CalcBrakingCurves_Pkg_internalOperators(
     &outC->Context_FormularNewPosition_1);
@@ -357,6 +357,6 @@ void OneCycle_reset_CalcBrakingCurves_Pkg_internalOperators(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** OneCycle_CalcBrakingCurves_Pkg_internalOperators.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

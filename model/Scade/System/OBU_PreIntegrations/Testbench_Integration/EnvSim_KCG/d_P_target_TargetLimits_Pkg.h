@@ -28,8 +28,8 @@ typedef struct {
   V_internal_real_Type_SDM_Types_Pkg /* _L5/ */ _L5;
   kcg_bool /* _L4/ */ _L4;
   T_internal_real_Type_SDM_Types_Pkg /* _L9/ */ _L9;
-  kcg_float64 /* _L11/ */ _L11;
-  kcg_float64 /* _L12/ */ _L12;
+  kcg_float32 /* _L11/ */ _L11;
+  kcg_float32 /* _L12/ */ _L12;
   L_internal_real_Type_SDM_Types_Pkg /* _L13/ */ _L13;
   T_trac_t_TargetLimits_Pkg /* _L14/ */ _L14;
 } outC_d_P_target_TargetLimits_Pkg;

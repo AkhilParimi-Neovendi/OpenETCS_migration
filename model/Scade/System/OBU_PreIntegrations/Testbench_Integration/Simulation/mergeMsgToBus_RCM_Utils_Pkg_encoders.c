@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -21,7 +21,7 @@ void mergeMsgToBus_RCM_Utils_Pkg_encoders(
   T_internal_Type_Obu_BasicTypes_Pkg t_train_global,
   outC_mergeMsgToBus_RCM_Utils_Pkg_encoders *outC)
 {
-  static kcg_int64 op_call;
+  static kcg_int32 op_call;
   static M_TrainTrackMessageBus_t_TM_TrainTrack_Bus _1_op_call;
   /* SM1: */
   static _120_SSM_ST_SM1 SM1_state_nxt_partial;
@@ -253,59 +253,59 @@ void mergeMsgToBus_init_RCM_Utils_Pkg_encoders(
 
   for (idx1 = 0; idx1 < 5; idx1++) {
     outC->_L12[idx1].Message.valid = kcg_true;
-    outC->_L12[idx1].Message.nid_message = kcg_lit_int64(0);
-    outC->_L12[idx1].Message.l_message = kcg_lit_int64(0);
-    outC->_L12[idx1].Message.t_train = kcg_lit_int64(0);
-    outC->_L12[idx1].Message.nid_engine = kcg_lit_int64(0);
-    outC->_L12[idx1].Message.field1 = kcg_lit_int64(0);
-    outC->_L12[idx1].Message.field2 = kcg_lit_int64(0);
-    outC->_L12[idx1].Message.field3 = kcg_lit_int64(0);
+    outC->_L12[idx1].Message.nid_message = kcg_lit_int32(0);
+    outC->_L12[idx1].Message.l_message = kcg_lit_int32(0);
+    outC->_L12[idx1].Message.t_train = kcg_lit_int32(0);
+    outC->_L12[idx1].Message.nid_engine = kcg_lit_int32(0);
+    outC->_L12[idx1].Message.field1 = kcg_lit_int32(0);
+    outC->_L12[idx1].Message.field2 = kcg_lit_int32(0);
+    outC->_L12[idx1].Message.field3 = kcg_lit_int32(0);
     for (idx = 0; idx < 50; idx++) {
-      outC->_L12[idx1].OptionalPackets[idx] = kcg_lit_int64(0);
+      outC->_L12[idx1].OptionalPackets[idx] = kcg_lit_int32(0);
     }
   }
   outC->_L9 = kcg_true;
-  outC->_L7 = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(0);
   outC->_L6.Message.valid = kcg_true;
-  outC->_L6.Message.nid_message = kcg_lit_int64(0);
-  outC->_L6.Message.l_message = kcg_lit_int64(0);
-  outC->_L6.Message.t_train = kcg_lit_int64(0);
-  outC->_L6.Message.nid_engine = kcg_lit_int64(0);
-  outC->_L6.Message.field1 = kcg_lit_int64(0);
-  outC->_L6.Message.field2 = kcg_lit_int64(0);
-  outC->_L6.Message.field3 = kcg_lit_int64(0);
+  outC->_L6.Message.nid_message = kcg_lit_int32(0);
+  outC->_L6.Message.l_message = kcg_lit_int32(0);
+  outC->_L6.Message.t_train = kcg_lit_int32(0);
+  outC->_L6.Message.nid_engine = kcg_lit_int32(0);
+  outC->_L6.Message.field1 = kcg_lit_int32(0);
+  outC->_L6.Message.field2 = kcg_lit_int32(0);
+  outC->_L6.Message.field3 = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 50; idx2++) {
-    outC->_L6.OptionalPackets[idx2] = kcg_lit_int64(0);
+    outC->_L6.OptionalPackets[idx2] = kcg_lit_int32(0);
   }
   outC->_L4 = kcg_true;
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 5; idx4++) {
     outC->_L3[idx4].Message.valid = kcg_true;
-    outC->_L3[idx4].Message.nid_message = kcg_lit_int64(0);
-    outC->_L3[idx4].Message.l_message = kcg_lit_int64(0);
-    outC->_L3[idx4].Message.t_train = kcg_lit_int64(0);
-    outC->_L3[idx4].Message.nid_engine = kcg_lit_int64(0);
-    outC->_L3[idx4].Message.field1 = kcg_lit_int64(0);
-    outC->_L3[idx4].Message.field2 = kcg_lit_int64(0);
-    outC->_L3[idx4].Message.field3 = kcg_lit_int64(0);
+    outC->_L3[idx4].Message.nid_message = kcg_lit_int32(0);
+    outC->_L3[idx4].Message.l_message = kcg_lit_int32(0);
+    outC->_L3[idx4].Message.t_train = kcg_lit_int32(0);
+    outC->_L3[idx4].Message.nid_engine = kcg_lit_int32(0);
+    outC->_L3[idx4].Message.field1 = kcg_lit_int32(0);
+    outC->_L3[idx4].Message.field2 = kcg_lit_int32(0);
+    outC->_L3[idx4].Message.field3 = kcg_lit_int32(0);
     for (idx3 = 0; idx3 < 50; idx3++) {
-      outC->_L3[idx4].OptionalPackets[idx3] = kcg_lit_int64(0);
+      outC->_L3[idx4].OptionalPackets[idx3] = kcg_lit_int32(0);
     }
   }
   for (idx6 = 0; idx6 < 5; idx6++) {
     outC->_L1[idx6].Message.valid = kcg_true;
-    outC->_L1[idx6].Message.nid_message = kcg_lit_int64(0);
-    outC->_L1[idx6].Message.l_message = kcg_lit_int64(0);
-    outC->_L1[idx6].Message.t_train = kcg_lit_int64(0);
-    outC->_L1[idx6].Message.nid_engine = kcg_lit_int64(0);
-    outC->_L1[idx6].Message.field1 = kcg_lit_int64(0);
-    outC->_L1[idx6].Message.field2 = kcg_lit_int64(0);
-    outC->_L1[idx6].Message.field3 = kcg_lit_int64(0);
+    outC->_L1[idx6].Message.nid_message = kcg_lit_int32(0);
+    outC->_L1[idx6].Message.l_message = kcg_lit_int32(0);
+    outC->_L1[idx6].Message.t_train = kcg_lit_int32(0);
+    outC->_L1[idx6].Message.nid_engine = kcg_lit_int32(0);
+    outC->_L1[idx6].Message.field1 = kcg_lit_int32(0);
+    outC->_L1[idx6].Message.field2 = kcg_lit_int32(0);
+    outC->_L1[idx6].Message.field3 = kcg_lit_int32(0);
     for (idx5 = 0; idx5 < 50; idx5++) {
-      outC->_L1[idx6].OptionalPackets[idx5] = kcg_lit_int64(0);
+      outC->_L1[idx6].OptionalPackets[idx5] = kcg_lit_int32(0);
     }
   }
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
   outC->SM1_fired = _161_SSM_TR_no_trans_SM1;
   outC->SM1_fired_strong = _161_SSM_TR_no_trans_SM1;
   outC->SM1_state_act = SSM_st_notRequested_SM1;
@@ -314,18 +314,18 @@ void mergeMsgToBus_init_RCM_Utils_Pkg_encoders(
   outC->every = kcg_true;
   outC->tr_1_clock_requested_SM1 = kcg_true;
   outC->tr_1_clock_notRequested_SM1 = kcg_true;
-  outC->t_train_assigned = kcg_lit_int64(0);
+  outC->t_train_assigned = kcg_lit_int32(0);
   for (idx8 = 0; idx8 < 5; idx8++) {
     outC->messageBus_out[idx8].Message.valid = kcg_true;
-    outC->messageBus_out[idx8].Message.nid_message = kcg_lit_int64(0);
-    outC->messageBus_out[idx8].Message.l_message = kcg_lit_int64(0);
-    outC->messageBus_out[idx8].Message.t_train = kcg_lit_int64(0);
-    outC->messageBus_out[idx8].Message.nid_engine = kcg_lit_int64(0);
-    outC->messageBus_out[idx8].Message.field1 = kcg_lit_int64(0);
-    outC->messageBus_out[idx8].Message.field2 = kcg_lit_int64(0);
-    outC->messageBus_out[idx8].Message.field3 = kcg_lit_int64(0);
+    outC->messageBus_out[idx8].Message.nid_message = kcg_lit_int32(0);
+    outC->messageBus_out[idx8].Message.l_message = kcg_lit_int32(0);
+    outC->messageBus_out[idx8].Message.t_train = kcg_lit_int32(0);
+    outC->messageBus_out[idx8].Message.nid_engine = kcg_lit_int32(0);
+    outC->messageBus_out[idx8].Message.field1 = kcg_lit_int32(0);
+    outC->messageBus_out[idx8].Message.field2 = kcg_lit_int32(0);
+    outC->messageBus_out[idx8].Message.field3 = kcg_lit_int32(0);
     for (idx7 = 0; idx7 < 50; idx7++) {
-      outC->messageBus_out[idx8].OptionalPackets[idx7] = kcg_lit_int64(0);
+      outC->messageBus_out[idx8].OptionalPackets[idx7] = kcg_lit_int32(0);
     }
   }
   /* _L1=(TM_TrainTrack_Bus::MergeMessageToBus#1)/ */
@@ -376,6 +376,6 @@ void kcg_load_SV_mergeMsgToBus_RCM_Utils_Pkg_encoders(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** mergeMsgToBus_RCM_Utils_Pkg_encoders.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

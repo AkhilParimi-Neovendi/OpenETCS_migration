@@ -464,7 +464,7 @@ void safeRadioConnectionIndication_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L92.valid = kcg_true;
   outC->_L92.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L92.action = mca_nop_RCM_Types_Pkg;
-  outC->_L92.nid_radio = kcg_lit_int64(0);
+  outC->_L92.nid_radio = kcg_lit_int32(0);
   outC->_L91 = kcg_true;
   outC->_L90 = kcg_true;
   outC->_L89 = kcg_true;
@@ -481,7 +481,7 @@ void safeRadioConnectionIndication_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L62.valid = kcg_true;
   outC->_L62.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L62.status = mcs_disconnected_RCM_Types_Pkg;
-  outC->_L62.nid_radio = kcg_lit_int64(0);
+  outC->_L62.nid_radio = kcg_lit_int32(0);
   outC->_L62.settingUpConnectionHasFailed = kcg_true;
   outC->_L62.connectionLost = kcg_true;
   outC->_L62.isInRadioHole = kcg_true;

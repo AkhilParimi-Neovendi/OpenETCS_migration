@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _InflateABrakeService_SDMConversionModelPkg_H_
 #define _InflateABrakeService_SDMConversionModelPkg_H_
@@ -31,19 +31,19 @@ typedef struct {
   a_BrakeSteps_t_SDMConversionModelPkg /* _L6/ */ _L6;
   ASafe_T_CalcBrakingCurves_types /* _L11/ */ _L11;
   ASafeSpeedDefinition_T_CalcBrakingCurves_types /* _L12/ */ _L12;
-  array_float64_8 /* _L14/ */ _L14;
-  kcg_float64 /* _L17/ */ _L17;
-  array_float64_100 /* _L16/ */ _L16;
-  array_float64_100_8 /* _L28/ */ _L28;
+  array_float32_8 /* _L14/ */ _L14;
+  kcg_float32 /* _L17/ */ _L17;
+  array_float32_100 /* _L16/ */ _L16;
+  array_float32_100_8 /* _L28/ */ _L28;
   ASafe_Data_T_CalcBrakingCurves_types /* _L25/ */ _L25;
   ASafeRow_T_CalcBrakingCurves_types /* _L30/ */ _L30;
   V_internal_real_Type_SDM_Types_Pkg /* _L31/ */ _L31;
   V_internal_Type_Obu_BasicTypes_Pkg /* _L13/ */ _L13;
   A_internal_Type_Obu_BasicTypes_Pkg /* _L36/ */ _L36;
-  array_float64_100_6 /* _L37/ */ _L37;
-  kcg_int64 /* _L38/ */ _L38;
-  array_float64_6 /* _L39/ */ _L39;
-  kcg_int64 /* _L40/ */ _L40;
+  array_float32_100_6 /* _L37/ */ _L37;
+  kcg_int32 /* _L38/ */ _L38;
+  array_float32_6 /* _L39/ */ _L39;
+  kcg_int32 /* _L40/ */ _L40;
 } outC_InflateABrakeService_SDMConversionModelPkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -68,6 +68,6 @@ extern void InflateABrakeService_init_SDMConversionModelPkg(
 #endif /* _InflateABrakeService_SDMConversionModelPkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** InflateABrakeService_SDMConversionModelPkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

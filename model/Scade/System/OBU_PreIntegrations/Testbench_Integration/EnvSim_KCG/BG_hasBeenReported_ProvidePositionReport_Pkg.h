@@ -25,7 +25,7 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   ReportedBGList_T_ProvidePositionReport_Pkg /* _L9/ */ _L9;
-  array_int64_8 /* _L2/ */ _L2;
+  array_int32_8 /* _L2/ */ _L2;
   NID_BG /* _L1/ */ _L1;
   OdometryLocations_T_Obu_BasicTypes_Pkg /* _L16/ */ _L16;
   _67_array /* _L18/ */ _L18;

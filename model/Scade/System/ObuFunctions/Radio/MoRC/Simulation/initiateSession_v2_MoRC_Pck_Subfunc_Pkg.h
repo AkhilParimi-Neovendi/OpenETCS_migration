@@ -26,9 +26,9 @@ typedef struct {
   kcg_bool /* IfBlock1: */ IfBlock1_clock;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* @1/Output1/ */ Output1_NumericToInt64_1_int32;
+  kcg_int32 /* @1/Output1/ */ Output1_NumericToInt64_1_int32;
   kcg_int32 /* @1/Input1/ */ Input1_NumericToInt64_1_int32;
-  kcg_int64 /* @1/_L2/ */ _L2_NumericToInt64_1_int32;
+  kcg_int32 /* @1/_L2/ */ _L2_NumericToInt64_1_int32;
   kcg_int32 /* @1/_L1/ */ _L1_NumericToInt64_1_int32;
   kcg_bool /* IfBlock1:then:_L18/ */ _L18_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L17/ */ _L17_then_IfBlock1;
@@ -55,7 +55,7 @@ typedef struct {
   kcg_int32 /* IfBlock1:else:else:then:_L12/ */ _L12_then_else_else_IfBlock1;
   RBC_Id_T_Common_Types_Pkg /* IfBlock1:else:else:then:_L8/ */ _L8_then_else_else_IfBlock1;
   m38_initiationOfACommunicationSession_T_RCM_MsgTypes_Pkg /* IfBlock1:else:else:then:_L1/ */ _L1_then_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:else:_L8/ */ _L8_else_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:else:_L8/ */ _L8_else_else_else_IfBlock1;
   kcg_int32 /* IfBlock1:else:else:else:_L7/ */ _L7_else_else_else_IfBlock1;
   RBC_Id_T_Common_Types_Pkg /* IfBlock1:else:else:else:_L6/ */ _L6_else_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:else:_L1/ */ _L1_else_else_else_IfBlock1;

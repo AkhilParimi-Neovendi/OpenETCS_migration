@@ -32,7 +32,7 @@ void CalcBrakingCurves_integration_CalcBrakingCurves_Pkg(
   static ParabolaCurve_T_CalcBrakingCurves_types _8_op_call;
   static kcg_bool _9_op_call;
   static kcg_bool noname;
-  static kcg_int64 _10_noname;
+  static kcg_int32 _10_noname;
   static kcg_bool _11_noname;
   /* MRSPCurves/ */
   static ParabolaCurve_list_MRSP_T_CalcBrakingCurves_types last_MRSPCurves;
@@ -132,7 +132,7 @@ void CalcBrakingCurves_integration_CalcBrakingCurves_Pkg(
       kcg_copy_ParabolaCurve_T_CalcBrakingCurves_types(
         &outC->_L83[idx3],
         &outC->Context_CalculateBrakingCurve_1[idx3].BC);
-      outC->_L72 = /* _L72= */(kcg_int64) (idx3 + 1);
+      outC->_L72 = /* _L72= */(kcg_int32) (idx3 + 1);
       /* _L72= */
       if (!outC->Context_CalculateBrakingCurve_1[idx3].cond) {
         break;
@@ -140,7 +140,7 @@ void CalcBrakingCurves_integration_CalcBrakingCurves_Pkg(
     }
   }
   else {
-    outC->_L72 = kcg_lit_int64(0);
+    outC->_L72 = kcg_lit_int32(0);
   }
 #ifdef KCG_MAPW_CPY
 
@@ -341,37 +341,37 @@ void CalcBrakingCurves_integration_init_CalcBrakingCurves_Pkg(
 
   outC->_L115 = kcg_true;
   for (idx1 = 0; idx1 < 100; idx1++) {
-    outC->_L114.distance_definition[idx1] = kcg_lit_float64(0.0);
+    outC->_L114.distance_definition[idx1] = kcg_lit_float32(0.0);
   }
   for (idx2 = 0; idx2 < 14; idx2++) {
-    outC->_L114.speed_definition[idx2] = kcg_lit_float64(0.0);
+    outC->_L114.speed_definition[idx2] = kcg_lit_float32(0.0);
   }
   for (idx4 = 0; idx4 < 14; idx4++) {
     for (idx3 = 0; idx3 < 100; idx3++) {
-      outC->_L114.data[idx4][idx3] = kcg_lit_float64(0.0);
+      outC->_L114.data[idx4][idx3] = kcg_lit_float32(0.0);
     }
   }
   for (idx5 = 0; idx5 < 114; idx5++) {
-    outC->_L112.distances[idx5] = kcg_lit_float64(0.0);
+    outC->_L112.distances[idx5] = kcg_lit_float32(0.0);
   }
   for (idx6 = 0; idx6 < 114; idx6++) {
-    outC->_L112.speeds[idx6] = kcg_lit_float64(0.0);
+    outC->_L112.speeds[idx6] = kcg_lit_float32(0.0);
   }
   for (idx7 = 0; idx7 < 114; idx7++) {
-    outC->_L112.accelerations[idx7] = kcg_lit_float64(0.0);
+    outC->_L112.accelerations[idx7] = kcg_lit_float32(0.0);
   }
   for (idx8 = 0; idx8 < 114; idx8++) {
     outC->_L112.valid[idx8] = kcg_true;
   }
   for (idx13 = 0; idx13 < 110; idx13++) {
     for (idx9 = 0; idx9 < 114; idx9++) {
-      outC->_L109[idx13].distances[idx9] = kcg_lit_float64(0.0);
+      outC->_L109[idx13].distances[idx9] = kcg_lit_float32(0.0);
     }
     for (idx10 = 0; idx10 < 114; idx10++) {
-      outC->_L109[idx13].speeds[idx10] = kcg_lit_float64(0.0);
+      outC->_L109[idx13].speeds[idx10] = kcg_lit_float32(0.0);
     }
     for (idx11 = 0; idx11 < 114; idx11++) {
-      outC->_L109[idx13].accelerations[idx11] = kcg_lit_float64(0.0);
+      outC->_L109[idx13].accelerations[idx11] = kcg_lit_float32(0.0);
     }
     for (idx12 = 0; idx12 < 114; idx12++) {
       outC->_L109[idx13].valid[idx12] = kcg_true;
@@ -379,13 +379,13 @@ void CalcBrakingCurves_integration_init_CalcBrakingCurves_Pkg(
   }
   for (idx18 = 0; idx18 < 110; idx18++) {
     for (idx14 = 0; idx14 < 114; idx14++) {
-      outC->_L106[idx18].distances[idx14] = kcg_lit_float64(0.0);
+      outC->_L106[idx18].distances[idx14] = kcg_lit_float32(0.0);
     }
     for (idx15 = 0; idx15 < 114; idx15++) {
-      outC->_L106[idx18].speeds[idx15] = kcg_lit_float64(0.0);
+      outC->_L106[idx18].speeds[idx15] = kcg_lit_float32(0.0);
     }
     for (idx16 = 0; idx16 < 114; idx16++) {
-      outC->_L106[idx18].accelerations[idx16] = kcg_lit_float64(0.0);
+      outC->_L106[idx18].accelerations[idx16] = kcg_lit_float32(0.0);
     }
     for (idx17 = 0; idx17 < 114; idx17++) {
       outC->_L106[idx18].valid[idx17] = kcg_true;
@@ -395,13 +395,13 @@ void CalcBrakingCurves_integration_init_CalcBrakingCurves_Pkg(
   outC->_L86 = kcg_true;
   for (idx23 = 0; idx23 < 110; idx23++) {
     for (idx19 = 0; idx19 < 114; idx19++) {
-      outC->_L83[idx23].distances[idx19] = kcg_lit_float64(0.0);
+      outC->_L83[idx23].distances[idx19] = kcg_lit_float32(0.0);
     }
     for (idx20 = 0; idx20 < 114; idx20++) {
-      outC->_L83[idx23].speeds[idx20] = kcg_lit_float64(0.0);
+      outC->_L83[idx23].speeds[idx20] = kcg_lit_float32(0.0);
     }
     for (idx21 = 0; idx21 < 114; idx21++) {
-      outC->_L83[idx23].accelerations[idx21] = kcg_lit_float64(0.0);
+      outC->_L83[idx23].accelerations[idx21] = kcg_lit_float32(0.0);
     }
     for (idx22 = 0; idx22 < 114; idx22++) {
       outC->_L83[idx23].valid[idx22] = kcg_true;
@@ -409,61 +409,61 @@ void CalcBrakingCurves_integration_init_CalcBrakingCurves_Pkg(
   }
   outC->_L78 = kcg_true;
   outC->_L75 = kcg_true;
-  outC->_L72 = kcg_lit_int64(0);
-  outC->_L71 = kcg_lit_float64(0.0);
+  outC->_L72 = kcg_lit_int32(0);
+  outC->_L71 = kcg_lit_float32(0.0);
   outC->_L65.trainPositionIsValid = kcg_true;
-  outC->_L65.d_est_frontendPos = kcg_lit_float64(0.0);
-  outC->_L65.d_minSafeFrontEndPos = kcg_lit_float64(0.0);
-  outC->_L65.d_maxSafeFrontEndPos = kcg_lit_float64(0.0);
-  outC->_L65.d_LRBG = kcg_lit_float64(0.0);
-  outC->_L65.d_accLRBG = kcg_lit_float64(0.0);
+  outC->_L65.d_est_frontendPos = kcg_lit_float32(0.0);
+  outC->_L65.d_minSafeFrontEndPos = kcg_lit_float32(0.0);
+  outC->_L65.d_maxSafeFrontEndPos = kcg_lit_float32(0.0);
+  outC->_L65.d_LRBG = kcg_lit_float32(0.0);
+  outC->_L65.d_accLRBG = kcg_lit_float32(0.0);
   outC->_L60 = kcg_true;
   for (idx28 = 0; idx28 < 110; idx28++) {
     for (idx24 = 0; idx24 < 114; idx24++) {
-      outC->_L58.MRSP_EBD_curves[idx28].distances[idx24] = kcg_lit_float64(0.0);
+      outC->_L58.MRSP_EBD_curves[idx28].distances[idx24] = kcg_lit_float32(0.0);
     }
     for (idx25 = 0; idx25 < 114; idx25++) {
-      outC->_L58.MRSP_EBD_curves[idx28].speeds[idx25] = kcg_lit_float64(0.0);
+      outC->_L58.MRSP_EBD_curves[idx28].speeds[idx25] = kcg_lit_float32(0.0);
     }
     for (idx26 = 0; idx26 < 114; idx26++) {
-      outC->_L58.MRSP_EBD_curves[idx28].accelerations[idx26] = kcg_lit_float64(0.0);
+      outC->_L58.MRSP_EBD_curves[idx28].accelerations[idx26] = kcg_lit_float32(0.0);
     }
     for (idx27 = 0; idx27 < 114; idx27++) {
       outC->_L58.MRSP_EBD_curves[idx28].valid[idx27] = kcg_true;
     }
   }
   for (idx29 = 0; idx29 < 114; idx29++) {
-    outC->_L58.EOA_SBD_curve.distances[idx29] = kcg_lit_float64(0.0);
+    outC->_L58.EOA_SBD_curve.distances[idx29] = kcg_lit_float32(0.0);
   }
   for (idx30 = 0; idx30 < 114; idx30++) {
-    outC->_L58.EOA_SBD_curve.speeds[idx30] = kcg_lit_float64(0.0);
+    outC->_L58.EOA_SBD_curve.speeds[idx30] = kcg_lit_float32(0.0);
   }
   for (idx31 = 0; idx31 < 114; idx31++) {
-    outC->_L58.EOA_SBD_curve.accelerations[idx31] = kcg_lit_float64(0.0);
+    outC->_L58.EOA_SBD_curve.accelerations[idx31] = kcg_lit_float32(0.0);
   }
   for (idx32 = 0; idx32 < 114; idx32++) {
     outC->_L58.EOA_SBD_curve.valid[idx32] = kcg_true;
   }
   for (idx33 = 0; idx33 < 114; idx33++) {
-    outC->_L58.SvL_LoA_EBD_curve.distances[idx33] = kcg_lit_float64(0.0);
+    outC->_L58.SvL_LoA_EBD_curve.distances[idx33] = kcg_lit_float32(0.0);
   }
   for (idx34 = 0; idx34 < 114; idx34++) {
-    outC->_L58.SvL_LoA_EBD_curve.speeds[idx34] = kcg_lit_float64(0.0);
+    outC->_L58.SvL_LoA_EBD_curve.speeds[idx34] = kcg_lit_float32(0.0);
   }
   for (idx35 = 0; idx35 < 114; idx35++) {
-    outC->_L58.SvL_LoA_EBD_curve.accelerations[idx35] = kcg_lit_float64(0.0);
+    outC->_L58.SvL_LoA_EBD_curve.accelerations[idx35] = kcg_lit_float32(0.0);
   }
   for (idx36 = 0; idx36 < 114; idx36++) {
     outC->_L58.SvL_LoA_EBD_curve.valid[idx36] = kcg_true;
   }
   for (idx37 = 0; idx37 < 114; idx37++) {
-    outC->_L58.GUI_curve.distances[idx37] = kcg_lit_float64(0.0);
+    outC->_L58.GUI_curve.distances[idx37] = kcg_lit_float32(0.0);
   }
   for (idx38 = 0; idx38 < 114; idx38++) {
-    outC->_L58.GUI_curve.speeds[idx38] = kcg_lit_float64(0.0);
+    outC->_L58.GUI_curve.speeds[idx38] = kcg_lit_float32(0.0);
   }
   for (idx39 = 0; idx39 < 114; idx39++) {
-    outC->_L58.GUI_curve.accelerations[idx39] = kcg_lit_float64(0.0);
+    outC->_L58.GUI_curve.accelerations[idx39] = kcg_lit_float32(0.0);
   }
   for (idx40 = 0; idx40 < 114; idx40++) {
     outC->_L58.GUI_curve.valid[idx40] = kcg_true;
@@ -472,73 +472,73 @@ void CalcBrakingCurves_integration_init_CalcBrakingCurves_Pkg(
   outC->_L40 = kcg_true;
   for (idx41 = 0; idx41 < 110; idx41++) {
     outC->_L41[idx41].targetType = EoA_TargetManagement_types;
-    outC->_L41[idx41].distance = kcg_lit_float64(0.0);
-    outC->_L41[idx41].speed = kcg_lit_float64(0.0);
+    outC->_L41[idx41].distance = kcg_lit_float32(0.0);
+    outC->_L41[idx41].speed = kcg_lit_float32(0.0);
   }
   outC->_L42.targetType = EoA_TargetManagement_types;
-  outC->_L42.distance = kcg_lit_float64(0.0);
-  outC->_L42.speed = kcg_lit_float64(0.0);
+  outC->_L42.distance = kcg_lit_float32(0.0);
+  outC->_L42.speed = kcg_lit_float32(0.0);
   outC->_L43.targetType = EoA_TargetManagement_types;
-  outC->_L43.distance = kcg_lit_float64(0.0);
-  outC->_L43.speed = kcg_lit_float64(0.0);
+  outC->_L43.distance = kcg_lit_float32(0.0);
+  outC->_L43.speed = kcg_lit_float32(0.0);
   outC->_L35.updatedTargetList = kcg_true;
   for (idx42 = 0; idx42 < 110; idx42++) {
     outC->_L35.MRSP_targetList[idx42].targetType = EoA_TargetManagement_types;
-    outC->_L35.MRSP_targetList[idx42].distance = kcg_lit_float64(0.0);
-    outC->_L35.MRSP_targetList[idx42].speed = kcg_lit_float64(0.0);
+    outC->_L35.MRSP_targetList[idx42].distance = kcg_lit_float32(0.0);
+    outC->_L35.MRSP_targetList[idx42].speed = kcg_lit_float32(0.0);
   }
   outC->_L35.EOA_target.targetType = EoA_TargetManagement_types;
-  outC->_L35.EOA_target.distance = kcg_lit_float64(0.0);
-  outC->_L35.EOA_target.speed = kcg_lit_float64(0.0);
+  outC->_L35.EOA_target.distance = kcg_lit_float32(0.0);
+  outC->_L35.EOA_target.speed = kcg_lit_float32(0.0);
   outC->_L35.SvL_LoA_target.targetType = EoA_TargetManagement_types;
-  outC->_L35.SvL_LoA_target.distance = kcg_lit_float64(0.0);
-  outC->_L35.SvL_LoA_target.speed = kcg_lit_float64(0.0);
+  outC->_L35.SvL_LoA_target.distance = kcg_lit_float32(0.0);
+  outC->_L35.SvL_LoA_target.speed = kcg_lit_float32(0.0);
   for (idx43 = 0; idx43 < 100; idx43++) {
-    outC->_L29.distance_definition[idx43] = kcg_lit_float64(0.0);
+    outC->_L29.distance_definition[idx43] = kcg_lit_float32(0.0);
   }
   for (idx44 = 0; idx44 < 14; idx44++) {
-    outC->_L29.speed_definition[idx44] = kcg_lit_float64(0.0);
+    outC->_L29.speed_definition[idx44] = kcg_lit_float32(0.0);
   }
   for (idx46 = 0; idx46 < 14; idx46++) {
     for (idx45 = 0; idx45 < 100; idx45++) {
-      outC->_L29.data[idx46][idx45] = kcg_lit_float64(0.0);
+      outC->_L29.data[idx46][idx45] = kcg_lit_float32(0.0);
     }
   }
   for (idx47 = 0; idx47 < 110; idx47++) {
-    outC->_L22[idx47] = kcg_lit_float64(0.0);
+    outC->_L22[idx47] = kcg_lit_float32(0.0);
   }
   for (idx52 = 0; idx52 < 110; idx52++) {
     for (idx48 = 0; idx48 < 100; idx48++) {
-      outC->_L6[idx52].distance_definition[idx48] = kcg_lit_float64(0.0);
+      outC->_L6[idx52].distance_definition[idx48] = kcg_lit_float32(0.0);
     }
     for (idx49 = 0; idx49 < 14; idx49++) {
-      outC->_L6[idx52].speed_definition[idx49] = kcg_lit_float64(0.0);
+      outC->_L6[idx52].speed_definition[idx49] = kcg_lit_float32(0.0);
     }
     for (idx51 = 0; idx51 < 14; idx51++) {
       for (idx50 = 0; idx50 < 100; idx50++) {
-        outC->_L6[idx52].data[idx51][idx50] = kcg_lit_float64(0.0);
+        outC->_L6[idx52].data[idx51][idx50] = kcg_lit_float32(0.0);
       }
     }
   }
   for (idx53 = 0; idx53 < 100; idx53++) {
-    outC->_L4.distance_definition[idx53] = kcg_lit_float64(0.0);
+    outC->_L4.distance_definition[idx53] = kcg_lit_float32(0.0);
   }
   for (idx54 = 0; idx54 < 14; idx54++) {
-    outC->_L4.speed_definition[idx54] = kcg_lit_float64(0.0);
+    outC->_L4.speed_definition[idx54] = kcg_lit_float32(0.0);
   }
   for (idx56 = 0; idx56 < 14; idx56++) {
     for (idx55 = 0; idx55 < 100; idx55++) {
-      outC->_L4.data[idx56][idx55] = kcg_lit_float64(0.0);
+      outC->_L4.data[idx56][idx55] = kcg_lit_float32(0.0);
     }
   }
   for (idx57 = 0; idx57 < 114; idx57++) {
-    outC->emptyCurve.distances[idx57] = kcg_lit_float64(0.0);
+    outC->emptyCurve.distances[idx57] = kcg_lit_float32(0.0);
   }
   for (idx58 = 0; idx58 < 114; idx58++) {
-    outC->emptyCurve.speeds[idx58] = kcg_lit_float64(0.0);
+    outC->emptyCurve.speeds[idx58] = kcg_lit_float32(0.0);
   }
   for (idx59 = 0; idx59 < 114; idx59++) {
-    outC->emptyCurve.accelerations[idx59] = kcg_lit_float64(0.0);
+    outC->emptyCurve.accelerations[idx59] = kcg_lit_float32(0.0);
   }
   for (idx60 = 0; idx60 < 114; idx60++) {
     outC->emptyCurve.valid[idx60] = kcg_true;
@@ -547,13 +547,13 @@ void CalcBrakingCurves_integration_init_CalcBrakingCurves_Pkg(
   outC->every1 = kcg_true;
   outC->every = kcg_true;
   for (idx61 = 0; idx61 < 114; idx61++) {
-    outC->_L99.distances[idx61] = kcg_lit_float64(0.0);
+    outC->_L99.distances[idx61] = kcg_lit_float32(0.0);
   }
   for (idx62 = 0; idx62 < 114; idx62++) {
-    outC->_L99.speeds[idx62] = kcg_lit_float64(0.0);
+    outC->_L99.speeds[idx62] = kcg_lit_float32(0.0);
   }
   for (idx63 = 0; idx63 < 114; idx63++) {
-    outC->_L99.accelerations[idx63] = kcg_lit_float64(0.0);
+    outC->_L99.accelerations[idx63] = kcg_lit_float32(0.0);
   }
   for (idx64 = 0; idx64 < 114; idx64++) {
     outC->_L99.valid[idx64] = kcg_true;
@@ -561,26 +561,26 @@ void CalcBrakingCurves_integration_init_CalcBrakingCurves_Pkg(
   outC->_L98 = kcg_true;
   outC->_L79 = kcg_true;
   for (idx65 = 0; idx65 < 114; idx65++) {
-    outC->_L33.distances[idx65] = kcg_lit_float64(0.0);
+    outC->_L33.distances[idx65] = kcg_lit_float32(0.0);
   }
   for (idx66 = 0; idx66 < 114; idx66++) {
-    outC->_L33.speeds[idx66] = kcg_lit_float64(0.0);
+    outC->_L33.speeds[idx66] = kcg_lit_float32(0.0);
   }
   for (idx67 = 0; idx67 < 114; idx67++) {
-    outC->_L33.accelerations[idx67] = kcg_lit_float64(0.0);
+    outC->_L33.accelerations[idx67] = kcg_lit_float32(0.0);
   }
   for (idx68 = 0; idx68 < 114; idx68++) {
     outC->_L33.valid[idx68] = kcg_true;
   }
   for (idx73 = 0; idx73 < 110; idx73++) {
     for (idx69 = 0; idx69 < 114; idx69++) {
-      outC->MRSPCurves[idx73].distances[idx69] = kcg_lit_float64(0.0);
+      outC->MRSPCurves[idx73].distances[idx69] = kcg_lit_float32(0.0);
     }
     for (idx70 = 0; idx70 < 114; idx70++) {
-      outC->MRSPCurves[idx73].speeds[idx70] = kcg_lit_float64(0.0);
+      outC->MRSPCurves[idx73].speeds[idx70] = kcg_lit_float32(0.0);
     }
     for (idx71 = 0; idx71 < 114; idx71++) {
-      outC->MRSPCurves[idx73].accelerations[idx71] = kcg_lit_float64(0.0);
+      outC->MRSPCurves[idx73].accelerations[idx71] = kcg_lit_float32(0.0);
     }
     for (idx72 = 0; idx72 < 114; idx72++) {
       outC->MRSPCurves[idx73].valid[idx72] = kcg_true;
@@ -590,53 +590,53 @@ void CalcBrakingCurves_integration_init_CalcBrakingCurves_Pkg(
   for (idx78 = 0; idx78 < 110; idx78++) {
     for (idx74 = 0; idx74 < 114; idx74++) {
       outC->curveCollection.MRSP_EBD_curves[idx78].distances[idx74] =
-        kcg_lit_float64(0.0);
+        kcg_lit_float32(0.0);
     }
     for (idx75 = 0; idx75 < 114; idx75++) {
       outC->curveCollection.MRSP_EBD_curves[idx78].speeds[idx75] =
-        kcg_lit_float64(0.0);
+        kcg_lit_float32(0.0);
     }
     for (idx76 = 0; idx76 < 114; idx76++) {
       outC->curveCollection.MRSP_EBD_curves[idx78].accelerations[idx76] =
-        kcg_lit_float64(0.0);
+        kcg_lit_float32(0.0);
     }
     for (idx77 = 0; idx77 < 114; idx77++) {
       outC->curveCollection.MRSP_EBD_curves[idx78].valid[idx77] = kcg_true;
     }
   }
   for (idx79 = 0; idx79 < 114; idx79++) {
-    outC->curveCollection.EOA_SBD_curve.distances[idx79] = kcg_lit_float64(0.0);
+    outC->curveCollection.EOA_SBD_curve.distances[idx79] = kcg_lit_float32(0.0);
   }
   for (idx80 = 0; idx80 < 114; idx80++) {
-    outC->curveCollection.EOA_SBD_curve.speeds[idx80] = kcg_lit_float64(0.0);
+    outC->curveCollection.EOA_SBD_curve.speeds[idx80] = kcg_lit_float32(0.0);
   }
   for (idx81 = 0; idx81 < 114; idx81++) {
-    outC->curveCollection.EOA_SBD_curve.accelerations[idx81] = kcg_lit_float64(0.0);
+    outC->curveCollection.EOA_SBD_curve.accelerations[idx81] = kcg_lit_float32(0.0);
   }
   for (idx82 = 0; idx82 < 114; idx82++) {
     outC->curveCollection.EOA_SBD_curve.valid[idx82] = kcg_true;
   }
   for (idx83 = 0; idx83 < 114; idx83++) {
-    outC->curveCollection.SvL_LoA_EBD_curve.distances[idx83] = kcg_lit_float64(0.0);
+    outC->curveCollection.SvL_LoA_EBD_curve.distances[idx83] = kcg_lit_float32(0.0);
   }
   for (idx84 = 0; idx84 < 114; idx84++) {
-    outC->curveCollection.SvL_LoA_EBD_curve.speeds[idx84] = kcg_lit_float64(0.0);
+    outC->curveCollection.SvL_LoA_EBD_curve.speeds[idx84] = kcg_lit_float32(0.0);
   }
   for (idx85 = 0; idx85 < 114; idx85++) {
     outC->curveCollection.SvL_LoA_EBD_curve.accelerations[idx85] =
-      kcg_lit_float64(0.0);
+      kcg_lit_float32(0.0);
   }
   for (idx86 = 0; idx86 < 114; idx86++) {
     outC->curveCollection.SvL_LoA_EBD_curve.valid[idx86] = kcg_true;
   }
   for (idx87 = 0; idx87 < 114; idx87++) {
-    outC->curveCollection.GUI_curve.distances[idx87] = kcg_lit_float64(0.0);
+    outC->curveCollection.GUI_curve.distances[idx87] = kcg_lit_float32(0.0);
   }
   for (idx88 = 0; idx88 < 114; idx88++) {
-    outC->curveCollection.GUI_curve.speeds[idx88] = kcg_lit_float64(0.0);
+    outC->curveCollection.GUI_curve.speeds[idx88] = kcg_lit_float32(0.0);
   }
   for (idx89 = 0; idx89 < 114; idx89++) {
-    outC->curveCollection.GUI_curve.accelerations[idx89] = kcg_lit_float64(0.0);
+    outC->curveCollection.GUI_curve.accelerations[idx89] = kcg_lit_float32(0.0);
   }
   for (idx90 = 0; idx90 < 114; idx90++) {
     outC->curveCollection.GUI_curve.valid[idx90] = kcg_true;

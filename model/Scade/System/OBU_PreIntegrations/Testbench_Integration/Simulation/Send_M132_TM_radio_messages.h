@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _Send_M132_TM_radio_messages_H_
 #define _Send_M132_TM_radio_messages_H_
@@ -23,7 +23,7 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* MessageBus_out/ */ MessageBus_out;
-  kcg_int64 /* t_train_assigned/ */ t_train_assigned;
+  kcg_int32 /* t_train_assigned/ */ t_train_assigned;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -55,15 +55,15 @@ typedef struct {
   M_TrainTrack_Message_T_TM_radio_messages /* _L50/ */ _L50;
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* _L49/ */ _L49;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L46/ */ _L46;
-  array_int64_30 /* _L57/ */ _L57;
+  array_int32_30 /* _L57/ */ _L57;
   M_TrainTrack_compressed_packets_T_TM_radio_messages /* _L56/ */ _L56;
-  array_int64_20 /* _L55/ */ _L55;
-  kcg_int64 /* _L58/ */ _L58;
+  array_int32_20 /* _L55/ */ _L55;
+  kcg_int32 /* _L58/ */ _L58;
   M_TrainTrack_Message_T_TM_radio_messages /* _L47/ */ _L47;
   kcg_bool /* _L59/ */ _L59;
-  kcg_int64 /* _L54/ */ _L54;
+  kcg_int32 /* _L54/ */ _L54;
   kcg_bool /* _L53/ */ _L53;
-  kcg_int64 /* _L60/ */ _L60;
+  kcg_int32 /* _L60/ */ _L60;
 } outC_Send_M132_TM_radio_messages;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -116,6 +116,6 @@ extern void kcg_load_SV_Send_M132_TM_radio_messages(
 #endif /* _Send_M132_TM_radio_messages_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Send_M132_TM_radio_messages.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

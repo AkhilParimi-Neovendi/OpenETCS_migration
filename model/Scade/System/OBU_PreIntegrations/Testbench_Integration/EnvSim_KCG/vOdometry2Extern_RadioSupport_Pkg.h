@@ -22,10 +22,10 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   V_internal_Type_Obu_BasicTypes_Pkg /* _L1/ */ _L1;
-  kcg_int64 /* _L2/ */ _L2;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L2/ */ _L2;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L5/ */ _L5;
 } outC_vOdometry2Extern_RadioSupport_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

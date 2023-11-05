@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -62,45 +62,45 @@ void GP_Postprocessing_init_TA_Gradient_new(
   static kcg_size idx3;
   static kcg_size idx4;
 
-  outC->_L6 = kcg_lit_int64(0);
+  outC->_L6 = kcg_lit_int32(0);
   outC->_L9 = kcg_true;
   for (idx = 0; idx < 50; idx++) {
     outC->_L8[idx].valid = kcg_true;
-    outC->_L8[idx].Loc_Absolute = kcg_lit_int64(0);
-    outC->_L8[idx].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L8[idx].Gradient = kcg_lit_int64(0);
-    outC->_L8[idx].L_Gradient = kcg_lit_int64(0);
+    outC->_L8[idx].Loc_Absolute = kcg_lit_int32(0);
+    outC->_L8[idx].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L8[idx].Gradient = kcg_lit_int32(0);
+    outC->_L8[idx].L_Gradient = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 50; idx1++) {
     outC->_L1[idx1].valid = kcg_true;
-    outC->_L1[idx1].Loc_Absolute = kcg_lit_int64(0);
-    outC->_L1[idx1].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L1[idx1].Gradient = kcg_lit_int64(0);
-    outC->_L1[idx1].L_Gradient = kcg_lit_int64(0);
+    outC->_L1[idx1].Loc_Absolute = kcg_lit_int32(0);
+    outC->_L1[idx1].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L1[idx1].Gradient = kcg_lit_int32(0);
+    outC->_L1[idx1].L_Gradient = kcg_lit_int32(0);
   }
   outC->_L3 = kcg_true;
   for (idx2 = 0; idx2 < 50; idx2++) {
     outC->_L2[idx2].valid = kcg_true;
-    outC->_L2[idx2].Loc_Absolute = kcg_lit_int64(0);
-    outC->_L2[idx2].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L2[idx2].Gradient = kcg_lit_int64(0);
-    outC->_L2[idx2].L_Gradient = kcg_lit_int64(0);
+    outC->_L2[idx2].Loc_Absolute = kcg_lit_int32(0);
+    outC->_L2[idx2].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L2[idx2].Gradient = kcg_lit_int32(0);
+    outC->_L2[idx2].L_Gradient = kcg_lit_int32(0);
   }
-  outC->_L7 = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 50; idx3++) {
     outC->_L4[idx3].valid = kcg_true;
-    outC->_L4[idx3].Loc_Absolute = kcg_lit_int64(0);
-    outC->_L4[idx3].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L4[idx3].Gradient = kcg_lit_int64(0);
-    outC->_L4[idx3].L_Gradient = kcg_lit_int64(0);
+    outC->_L4[idx3].Loc_Absolute = kcg_lit_int32(0);
+    outC->_L4[idx3].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L4[idx3].Gradient = kcg_lit_int32(0);
+    outC->_L4[idx3].L_Gradient = kcg_lit_int32(0);
   }
   outC->init = kcg_true;
   for (idx4 = 0; idx4 < 50; idx4++) {
     outC->GP[idx4].valid = kcg_true;
-    outC->GP[idx4].Loc_Absolute = kcg_lit_int64(0);
-    outC->GP[idx4].Loc_LRBG = kcg_lit_int64(0);
-    outC->GP[idx4].Gradient = kcg_lit_int64(0);
-    outC->GP[idx4].L_Gradient = kcg_lit_int64(0);
+    outC->GP[idx4].Loc_Absolute = kcg_lit_int32(0);
+    outC->GP[idx4].Loc_LRBG = kcg_lit_int32(0);
+    outC->GP[idx4].Gradient = kcg_lit_int32(0);
+    outC->GP[idx4].L_Gradient = kcg_lit_int32(0);
   }
   outC->available = kcg_true;
   /* _L2=(TA_Gradient_new::GP_Position_GP_with_BGs#1)/ */
@@ -142,6 +142,6 @@ void kcg_load_SV_GP_Postprocessing_TA_Gradient_new(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** GP_Postprocessing_TA_Gradient_new.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

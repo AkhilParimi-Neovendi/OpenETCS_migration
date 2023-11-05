@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -53,45 +53,45 @@ void Write_DMI_EVC_Coded_Train_Data_to_int_init_DATA_Packets_EVC_to_DMI(
   static kcg_size idx2;
 
   for (idx = 0; idx < 9; idx++) {
-    outC->_L22[idx] = kcg_lit_int64(0);
+    outC->_L22[idx] = kcg_lit_int32(0);
   }
   outC->_L21 = kcg_true;
   for (idx1 = 0; idx1 < 9; idx1++) {
-    outC->_L20[idx1] = kcg_lit_int64(0);
+    outC->_L20[idx1] = kcg_lit_int32(0);
   }
   outC->_L1.valid = kcg_true;
-  outC->_L1.system_clock = kcg_lit_int64(0);
-  outC->_L1.trainID.number = kcg_lit_int64(0);
-  outC->_L1.trainID.dig1 = kcg_lit_int64(0);
-  outC->_L1.trainID.dig2 = kcg_lit_int64(0);
-  outC->_L1.trainID.dig3 = kcg_lit_int64(0);
-  outC->_L1.trainID.dig4 = kcg_lit_int64(0);
-  outC->_L1.trainID.dig5 = kcg_lit_int64(0);
-  outC->_L1.trainLength.number = kcg_lit_int64(0);
-  outC->_L1.trainLength.dig1 = kcg_lit_int64(0);
-  outC->_L1.trainLength.dig2 = kcg_lit_int64(0);
-  outC->_L1.trainLength.dig3 = kcg_lit_int64(0);
-  outC->_L1.trainLength.dig4 = kcg_lit_int64(0);
-  outC->_L1.brakeModel.number = kcg_lit_int64(0);
-  outC->_L1.brakeModel.dig1 = kcg_lit_int64(0);
-  outC->_L1.brakeModel.dig2 = kcg_lit_int64(0);
-  outC->_L1.brakeModel.dig3 = kcg_lit_int64(0);
-  outC->_L1.vmax.number = kcg_lit_int64(0);
-  outC->_L1.vmax.dig1 = kcg_lit_int64(0);
-  outC->_L1.vmax.dig2 = kcg_lit_int64(0);
-  outC->_L1.vmax.dig3 = kcg_lit_int64(0);
+  outC->_L1.system_clock = kcg_lit_int32(0);
+  outC->_L1.trainID.number = kcg_lit_int32(0);
+  outC->_L1.trainID.dig1 = kcg_lit_int32(0);
+  outC->_L1.trainID.dig2 = kcg_lit_int32(0);
+  outC->_L1.trainID.dig3 = kcg_lit_int32(0);
+  outC->_L1.trainID.dig4 = kcg_lit_int32(0);
+  outC->_L1.trainID.dig5 = kcg_lit_int32(0);
+  outC->_L1.trainLength.number = kcg_lit_int32(0);
+  outC->_L1.trainLength.dig1 = kcg_lit_int32(0);
+  outC->_L1.trainLength.dig2 = kcg_lit_int32(0);
+  outC->_L1.trainLength.dig3 = kcg_lit_int32(0);
+  outC->_L1.trainLength.dig4 = kcg_lit_int32(0);
+  outC->_L1.brakeModel.number = kcg_lit_int32(0);
+  outC->_L1.brakeModel.dig1 = kcg_lit_int32(0);
+  outC->_L1.brakeModel.dig2 = kcg_lit_int32(0);
+  outC->_L1.brakeModel.dig3 = kcg_lit_int32(0);
+  outC->_L1.vmax.number = kcg_lit_int32(0);
+  outC->_L1.vmax.dig1 = kcg_lit_int32(0);
+  outC->_L1.vmax.dig2 = kcg_lit_int32(0);
+  outC->_L1.vmax.dig3 = kcg_lit_int32(0);
   outC->_L1.mAxleLoad = M_AXLELOADCAT_A;
-  outC->_L1.airTightSystem.number = kcg_lit_int64(0);
-  outC->_L1.airTightSystem.dig1 = kcg_lit_int64(0);
-  outC->_L1.airTightSystem.dig2 = kcg_lit_int64(0);
-  outC->_L1.airTightSystem.dig3 = kcg_lit_int64(0);
-  outC->_L1.mLoadingGauge.number = kcg_lit_int64(0);
-  outC->_L1.mLoadingGauge.dig1 = kcg_lit_int64(0);
-  outC->_L1.mLoadingGauge.dig2 = kcg_lit_int64(0);
-  outC->_L1.mLoadingGauge.dig3 = kcg_lit_int64(0);
+  outC->_L1.airTightSystem.number = kcg_lit_int32(0);
+  outC->_L1.airTightSystem.dig1 = kcg_lit_int32(0);
+  outC->_L1.airTightSystem.dig2 = kcg_lit_int32(0);
+  outC->_L1.airTightSystem.dig3 = kcg_lit_int32(0);
+  outC->_L1.mLoadingGauge.number = kcg_lit_int32(0);
+  outC->_L1.mLoadingGauge.dig1 = kcg_lit_int32(0);
+  outC->_L1.mLoadingGauge.dig2 = kcg_lit_int32(0);
+  outC->_L1.mLoadingGauge.dig3 = kcg_lit_int32(0);
   outC->every = kcg_true;
   for (idx2 = 0; idx2 < 9; idx2++) {
-    outC->dmi_evc_coded_train_data_int[idx2] = kcg_lit_int64(0);
+    outC->dmi_evc_coded_train_data_int[idx2] = kcg_lit_int32(0);
   }
   /* _L20=(DATA::Packets::EVC_to_DMI::CAST_DMI_EVC_Coded_Train_Data_to_int1#1)/ */
   CAST_DMI_EVC_Coded_Train_Data_to_int1_init_DATA_Packets_EVC_to_DMI(
@@ -114,6 +114,6 @@ void Write_DMI_EVC_Coded_Train_Data_to_int_reset_DATA_Packets_EVC_to_DMI(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Write_DMI_EVC_Coded_Train_Data_to_int_DATA_Packets_EVC_to_DMI.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

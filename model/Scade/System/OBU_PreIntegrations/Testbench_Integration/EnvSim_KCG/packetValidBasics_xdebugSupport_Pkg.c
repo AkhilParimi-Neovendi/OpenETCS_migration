@@ -19,7 +19,7 @@ void packetValidBasics_xdebugSupport_Pkg(
 {
   static kcg_bool noname;
 
-  outC->_L16 = kcg_lit_int64(0);
+  outC->_L16 = kcg_lit_int32(0);
   kcg_copy_MetadataElement_T_Common_Types_Pkg(&outC->_L1, element);
   outC->_L14 = outC->_L1.nid_packet;
   outC->_L15 = outC->_L14 != outC->_L16;
@@ -46,23 +46,23 @@ void packetValidBasics_xdebugSupport_Pkg(
 void packetValidBasics_init_xdebugSupport_Pkg(
   outC_packetValidBasics_xdebugSupport_Pkg *outC)
 {
-  outC->_L16 = kcg_lit_int64(0);
+  outC->_L16 = kcg_lit_int32(0);
   outC->_L15 = kcg_true;
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
   outC->_L12 = kcg_true;
   outC->_L11 = kcg_true;
   outC->_L10 = kcg_true;
   outC->_L9 = kcg_true;
   outC->_L8 = kcg_true;
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
   outC->_L2 = kcg_true;
-  outC->_L1.nid_packet = kcg_lit_int64(0);
+  outC->_L1.nid_packet = kcg_lit_int32(0);
   outC->_L1.q_dir = Q_DIR_Reverse;
   outC->_L1.valid = kcg_true;
-  outC->_L1.startAddress = kcg_lit_int64(0);
-  outC->_L1.endAddress = kcg_lit_int64(0);
+  outC->_L1.startAddress = kcg_lit_int32(0);
+  outC->_L1.endAddress = kcg_lit_int32(0);
   outC->packtIsValid = kcg_true;
   outC->_1_continue = kcg_true;
   /* _L13=(TM::T_extract_nid_packet_from_metadata_selector#1)/ */

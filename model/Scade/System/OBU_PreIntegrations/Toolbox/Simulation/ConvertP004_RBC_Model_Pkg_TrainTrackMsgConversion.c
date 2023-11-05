@@ -35,12 +35,12 @@ void ConvertP004_init_RBC_Model_Pkg_TrainTrackMsgConversion(
   outC->_L6.valid = kcg_true;
   outC->_L6.m_error = M_ERROR_Balise_group_linking_consistency_error;
   outC->_L2 = M_ERROR_Balise_group_linking_consistency_error;
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->_L5 = kcg_true;
   outC->_L1.valid = kcg_true;
-  outC->_L1.nid_packet = kcg_lit_int64(0);
-  outC->_L1.l_packet = kcg_lit_int64(0);
+  outC->_L1.nid_packet = kcg_lit_int32(0);
+  outC->_L1.l_packet = kcg_lit_int32(0);
   outC->_L1.m_error = M_ERROR_Balise_group_linking_consistency_error;
   outC->oldP004.valid = kcg_true;
   outC->oldP004.m_error = M_ERROR_Balise_group_linking_consistency_error;

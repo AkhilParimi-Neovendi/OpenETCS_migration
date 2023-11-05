@@ -10,9 +10,9 @@
 /* TM_lib_internal::C_P005_us_array/ */
 void C_P005_us_array_TM_lib_internal(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* n_iter_int/ */
-  kcg_int64 n_iter_int,
+  kcg_int32 n_iter_int,
   /* flat/ */
   P005_sections_array_flat_T_TM *flat,
   outC_C_P005_us_array_TM_lib_internal *outC)
@@ -25,28 +25,28 @@ void C_P005_us_array_TM_lib_internal(
   C_P005_extract_el_section_TM_lib_internal(
     outC->_L16,
     &outC->_L1,
-    kcg_lit_int64(3),
+    kcg_lit_int32(3),
     &outC->Context_C_P005_extract_el_section_4);
   outC->_L21 = outC->Context_C_P005_extract_el_section_4.element;
   /* _L22=(TM_lib_internal::C_P005_extract_el_section#5)/ */
   C_P005_extract_el_section_TM_lib_internal(
     outC->_L16,
     &outC->_L1,
-    kcg_lit_int64(4),
+    kcg_lit_int32(4),
     &outC->Context_C_P005_extract_el_section_5);
   outC->_L22 = outC->Context_C_P005_extract_el_section_5.element;
   /* _L23=(TM_lib_internal::C_P005_extract_el_section#6)/ */
   C_P005_extract_el_section_TM_lib_internal(
     outC->_L16,
     &outC->_L1,
-    kcg_lit_int64(5),
+    kcg_lit_int32(5),
     &outC->Context_C_P005_extract_el_section_6);
   outC->_L23 = outC->Context_C_P005_extract_el_section_6.element;
   /* _L24=(TM_lib_internal::C_P005_extract_el_section#7)/ */
   C_P005_extract_el_section_TM_lib_internal(
     outC->_L16,
     &outC->_L1,
-    kcg_lit_int64(6),
+    kcg_lit_int32(6),
     &outC->Context_C_P005_extract_el_section_7);
   outC->_L24 = outC->Context_C_P005_extract_el_section_7.element;
   /* _L27=(TM_conversions::CAST_Int_to_NID_BG#1)/ */
@@ -76,7 +76,7 @@ void C_P005_us_array_TM_lib_internal(
   C_P005_extract_el_section_TM_lib_internal(
     outC->_L16,
     &outC->_L1,
-    kcg_lit_int64(1),
+    kcg_lit_int32(1),
     &outC->Context_C_P005_extract_el_section_2);
   outC->_L19 = outC->Context_C_P005_extract_el_section_2.element;
   /* _L28=(TM_conversions::CAST_Int_to_Q_NEWCOUNTRY#1)/ */
@@ -88,7 +88,7 @@ void C_P005_us_array_TM_lib_internal(
   C_P005_extract_el_section_TM_lib_internal(
     outC->_L16,
     &outC->_L1,
-    kcg_lit_int64(2),
+    kcg_lit_int32(2),
     &outC->Context_C_P005_extract_el_section_3);
   outC->_L20 = outC->Context_C_P005_extract_el_section_3.element;
   /* _L26=(TM_conversions::CAST_Int_to_NID_C#1)/ */
@@ -100,7 +100,7 @@ void C_P005_us_array_TM_lib_internal(
   C_P005_extract_el_section_TM_lib_internal(
     outC->_L16,
     &outC->_L1,
-    kcg_lit_int64(0),
+    kcg_lit_int32(0),
     &outC->Context_C_P005_extract_el_section_1);
   outC->_L15 = outC->Context_C_P005_extract_el_section_1.element;
   /* _L25=(TM_conversions::CAST_Int_to_D_LINK#1)/ */
@@ -126,51 +126,51 @@ void C_P005_us_array_init_TM_lib_internal(
 {
   static kcg_size idx;
 
-  outC->_L21 = kcg_lit_int64(0);
-  outC->_L22 = kcg_lit_int64(0);
-  outC->_L23 = kcg_lit_int64(0);
-  outC->_L24 = kcg_lit_int64(0);
-  outC->_L27 = kcg_lit_int64(0);
+  outC->_L21 = kcg_lit_int32(0);
+  outC->_L22 = kcg_lit_int32(0);
+  outC->_L23 = kcg_lit_int32(0);
+  outC->_L24 = kcg_lit_int32(0);
+  outC->_L27 = kcg_lit_int32(0);
   outC->_L29 =
     Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction;
   outC->_L30 = Q_LINKREACTION_Train_trip;
-  outC->_L31 = kcg_lit_int64(0);
+  outC->_L31 = kcg_lit_int32(0);
   outC->_L33 = kcg_true;
   outC->_L32 = kcg_true;
   outC->_L28 =
     Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-  outC->_L26 = kcg_lit_int64(0);
-  outC->_L25 = kcg_lit_int64(0);
-  outC->_L20 = kcg_lit_int64(0);
-  outC->_L19 = kcg_lit_int64(0);
-  outC->_L18 = kcg_lit_int64(0);
-  outC->_L16 = kcg_lit_int64(0);
-  outC->_L15 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L26 = kcg_lit_int32(0);
+  outC->_L25 = kcg_lit_int32(0);
+  outC->_L20 = kcg_lit_int32(0);
+  outC->_L19 = kcg_lit_int32(0);
+  outC->_L18 = kcg_lit_int32(0);
+  outC->_L16 = kcg_lit_int32(0);
+  outC->_L15 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L4.valid = kcg_true;
-  outC->_L4.d_link = kcg_lit_int64(0);
+  outC->_L4.d_link = kcg_lit_int32(0);
   outC->_L4.q_newcountry =
     Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-  outC->_L4.nid_c = kcg_lit_int64(0);
-  outC->_L4.nid_bg = kcg_lit_int64(0);
+  outC->_L4.nid_c = kcg_lit_int32(0);
+  outC->_L4.nid_bg = kcg_lit_int32(0);
   outC->_L4.q_linkorientation =
     Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction;
   outC->_L4.q_linkreaction = Q_LINKREACTION_Train_trip;
-  outC->_L4.q_locacc = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L4.q_locacc = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   for (idx = 0; idx < 95; idx++) {
-    outC->_L1[idx] = kcg_lit_int64(0);
+    outC->_L1[idx] = kcg_lit_int32(0);
   }
   outC->sections.valid = kcg_true;
-  outC->sections.d_link = kcg_lit_int64(0);
+  outC->sections.d_link = kcg_lit_int32(0);
   outC->sections.q_newcountry =
     Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-  outC->sections.nid_c = kcg_lit_int64(0);
-  outC->sections.nid_bg = kcg_lit_int64(0);
+  outC->sections.nid_c = kcg_lit_int32(0);
+  outC->sections.nid_bg = kcg_lit_int32(0);
   outC->sections.q_linkorientation =
     Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction;
   outC->sections.q_linkreaction = Q_LINKREACTION_Train_trip;
-  outC->sections.q_locacc = kcg_lit_int64(0);
+  outC->sections.q_locacc = kcg_lit_int32(0);
   outC->cont = kcg_true;
   /* _L25=(TM_conversions::CAST_Int_to_D_LINK#1)/ */
   CAST_Int_to_D_LINK_init_TM_conversions(&outC->Context_CAST_Int_to_D_LINK_1);

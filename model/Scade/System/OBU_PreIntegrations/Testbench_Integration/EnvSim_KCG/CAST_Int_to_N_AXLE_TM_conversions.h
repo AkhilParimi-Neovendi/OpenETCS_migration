@@ -21,18 +21,18 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   kcg_bool /* _L12/ */ _L12;
-  kcg_int64 /* _L11/ */ _L11;
+  kcg_int32 /* _L11/ */ _L11;
   kcg_bool /* _L10/ */ _L10;
-  kcg_int64 /* _L9/ */ _L9;
+  kcg_int32 /* _L9/ */ _L9;
 } outC_CAST_Int_to_N_AXLE_TM_conversions;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* TM_conversions::CAST_Int_to_N_AXLE/ */
 extern void CAST_Int_to_N_AXLE_TM_conversions(
   /* n_axlle_in/ */
-  kcg_int64 n_axlle_in,
+  kcg_int32 n_axlle_in,
   outC_CAST_Int_to_N_AXLE_TM_conversions *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

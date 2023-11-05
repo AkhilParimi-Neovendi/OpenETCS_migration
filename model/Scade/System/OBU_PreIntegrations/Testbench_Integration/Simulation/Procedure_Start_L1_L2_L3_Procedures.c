@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -1118,11 +1118,11 @@ void Procedure_Start_L1_L2_L3_init_Procedures(
   outC_Procedure_Start_L1_L2_L3_Procedures *outC)
 {
   outC->_L19 = Profile_OS_Level_And_Mode_Types_Pkg;
-  outC->_L26.Distance = kcg_lit_int64(0);
+  outC->_L26.Distance = kcg_lit_int32(0);
   outC->_L26.Mode = Profile_OS_Level_And_Mode_Types_Pkg;
-  outC->_L26.Speed = kcg_lit_int64(0);
-  outC->_L26.Length = kcg_lit_int64(0);
-  outC->_L26.Length_Ack = kcg_lit_int64(0);
+  outC->_L26.Speed = kcg_lit_int32(0);
+  outC->_L26.Length = kcg_lit_int32(0);
+  outC->_L26.Length_Ack = kcg_lit_int32(0);
   outC->Loc_Mode_Profile = Profile_OS_Level_And_Mode_Types_Pkg;
   outC->SM_Start_L1_L2_L3_fired = SSM_TR_no_trans_SM_Start_L1_L2_L3;
   outC->SM_Start_L1_L2_L3_fired_strong = SSM_TR_no_trans_SM_Start_L1_L2_L3;
@@ -1190,6 +1190,6 @@ void kcg_load_SV_Procedure_Start_L1_L2_L3_Procedures(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Procedure_Start_L1_L2_L3_Procedures.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

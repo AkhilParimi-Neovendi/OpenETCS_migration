@@ -23,14 +23,14 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   M_032_int_T_TM_radio_messages /* _L1/ */ _L1;
   M_TrackTrain_Radio_T_TM_radio_messages /* _L2/ */ _L2;
-  kcg_int64 /* _L8/ */ _L8;
-  kcg_int64 /* _L7/ */ _L7;
-  kcg_int64 /* _L6/ */ _L6;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L8/ */ _L8;
+  kcg_int32 /* _L7/ */ _L7;
+  kcg_int32 /* _L6/ */ _L6;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L4/ */ _L4;
   kcg_bool /* _L3/ */ _L3;
-  kcg_int64 /* _L19/ */ _L19;
-  kcg_int64 /* _L24/ */ _L24;
+  kcg_int32 /* _L19/ */ _L19;
+  kcg_int32 /* _L24/ */ _L24;
 } outC_C_M032_int_to_header_TM_RBC_conversions;
 
 /* ===========  node initialization and cycle functions  =========== */

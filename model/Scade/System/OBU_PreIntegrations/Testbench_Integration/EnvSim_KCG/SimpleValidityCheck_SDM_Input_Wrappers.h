@@ -43,7 +43,7 @@ typedef struct {
   V_odometry_Type_Obu_BasicTypes_Pkg /* _L20/ */ _L20;
   kcg_bool /* _L22/ */ _L22;
   kcg_bool /* _L23/ */ _L23;
-  kcg_int64 /* _L24/ */ _L24;
+  kcg_int32 /* _L24/ */ _L24;
   kcg_bool /* _L25/ */ _L25;
   kcg_bool /* _L26/ */ _L26;
   kcg_bool /* _L27/ */ _L27;

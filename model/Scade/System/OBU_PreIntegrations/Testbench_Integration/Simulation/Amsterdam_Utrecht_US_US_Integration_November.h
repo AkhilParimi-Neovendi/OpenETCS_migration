@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _Amsterdam_Utrecht_US_US_Integration_November_H_
 #define _Amsterdam_Utrecht_US_US_Integration_November_H_
@@ -33,13 +33,13 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   CompressedBaliseMessage_TM /* _L1/ */ _L1;
-  kcg_float64 /* _L2/ */ _L2;
+  kcg_float32 /* _L2/ */ _L2;
   CompressedPackets_T_Common_Types_Pkg /* _L6/ */ _L6;
   BaliseTelegramHeader_int_T_TM /* _L5/ */ _L5;
   TelegramHeader_T_BG_Types_Pkg /* _L7/ */ _L7;
   CompressedPackets_T_Common_Types_Pkg /* _L9/ */ _L9;
   Radio_TrackTrain_Header_T_Radio_Types_Pkg /* _L8/ */ _L8;
-  kcg_int64 /* _L13/ */ _L13;
+  kcg_int32 /* _L13/ */ _L13;
   CompressedRadioMessage_TM /* _L10/ */ _L10;
   TrackType_US_Integration_November /* _L14/ */ _L14;
 } outC_Amsterdam_Utrecht_US_US_Integration_November;
@@ -48,9 +48,9 @@ typedef struct {
 /* US_Integration_November::Amsterdam_Utrecht_US/ */
 extern void Amsterdam_Utrecht_US_US_Integration_November(
   /* TrainPos/ */
-  kcg_float64 TrainPos,
+  kcg_float32 TrainPos,
   /* Trigger_in/ */
-  kcg_int64 Trigger_in,
+  kcg_int32 Trigger_in,
   /* SelectTrack/ */
   TrackType_US_Integration_November SelectTrack,
   outC_Amsterdam_Utrecht_US_US_Integration_November *outC);
@@ -70,6 +70,6 @@ extern void Amsterdam_Utrecht_US_init_US_Integration_November(
 #endif /* _Amsterdam_Utrecht_US_US_Integration_November_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Amsterdam_Utrecht_US_US_Integration_November.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

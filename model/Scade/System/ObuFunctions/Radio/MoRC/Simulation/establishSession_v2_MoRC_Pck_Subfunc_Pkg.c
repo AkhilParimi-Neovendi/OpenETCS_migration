@@ -500,7 +500,7 @@ void establishSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L105.valid = kcg_true;
   outC->_L105.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L105.status = mcs_disconnected_RCM_Types_Pkg;
-  outC->_L105.nid_radio = kcg_lit_int64(0);
+  outC->_L105.nid_radio = kcg_lit_int32(0);
   outC->_L105.settingUpConnectionHasFailed = kcg_true;
   outC->_L105.connectionLost = kcg_true;
   outC->_L105.isInRadioHole = kcg_true;
@@ -517,7 +517,7 @@ void establishSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L1.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L1.nid_c = kcg_lit_int32(0);
   outC->_L1.nid_rbc = kcg_lit_int32(0);
-  outC->_L1.nid_radio = kcg_lit_int64(0);
+  outC->_L1.nid_radio = kcg_lit_int32(0);
   outC->_L1.origin.valid = kcg_true;
   outC->_L1.origin.nid_c = kcg_lit_int32(0);
   outC->_L1.origin.rbc_id = kcg_lit_int32(0);
@@ -534,7 +534,7 @@ void establishSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L1.p42.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L1.p42.nid_c = kcg_lit_int32(0);
   outC->_L1.p42.nid_RBC = kcg_lit_int32(0);
-  outC->_L1.p42.nid_radio = kcg_lit_int64(0);
+  outC->_L1.p42.nid_radio = kcg_lit_int32(0);
   outC->_L1.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L1.p42.origin.valid = kcg_true;
@@ -551,7 +551,7 @@ void establishSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L3_establishingByRBC_SM1.phase = sp_terminated_RCM_Session_Types_Pkg;
   outC->_L3_establishingByRBC_SM1.nid_c = kcg_lit_int32(0);
   outC->_L3_establishingByRBC_SM1.nid_rbc = kcg_lit_int32(0);
-  outC->_L3_establishingByRBC_SM1.nid_radio = kcg_lit_int64(0);
+  outC->_L3_establishingByRBC_SM1.nid_radio = kcg_lit_int32(0);
   outC->_L2_establishingByRBC_SM1 = kcg_true;
   outC->_L4_establishingByRBC_SM1.valid = kcg_true;
   outC->_L4_establishingByRBC_SM1.initiatedByOBU = kcg_true;
@@ -559,7 +559,7 @@ void establishSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L4_establishingByRBC_SM1.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L4_establishingByRBC_SM1.nid_c = kcg_lit_int32(0);
   outC->_L4_establishingByRBC_SM1.nid_rbc = kcg_lit_int32(0);
-  outC->_L4_establishingByRBC_SM1.nid_radio = kcg_lit_int64(0);
+  outC->_L4_establishingByRBC_SM1.nid_radio = kcg_lit_int32(0);
   outC->_L4_establishingByRBC_SM1.origin.valid = kcg_true;
   outC->_L4_establishingByRBC_SM1.origin.nid_c = kcg_lit_int32(0);
   outC->_L4_establishingByRBC_SM1.origin.rbc_id = kcg_lit_int32(0);
@@ -577,7 +577,7 @@ void establishSession_v2_init_MoRC_Pck_Subfunc_Pkg(
     Q_RBC_Terminate_communication_session;
   outC->_L4_establishingByRBC_SM1.p42.nid_c = kcg_lit_int32(0);
   outC->_L4_establishingByRBC_SM1.p42.nid_RBC = kcg_lit_int32(0);
-  outC->_L4_establishingByRBC_SM1.p42.nid_radio = kcg_lit_int64(0);
+  outC->_L4_establishingByRBC_SM1.p42.nid_radio = kcg_lit_int32(0);
   outC->_L4_establishingByRBC_SM1.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L4_establishingByRBC_SM1.p42.origin.valid = kcg_true;
@@ -587,7 +587,7 @@ void establishSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L5_establishingByRBC_SM1.valid = kcg_true;
   outC->_L5_establishingByRBC_SM1.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L5_establishingByRBC_SM1.status = mcs_disconnected_RCM_Types_Pkg;
-  outC->_L5_establishingByRBC_SM1.nid_radio = kcg_lit_int64(0);
+  outC->_L5_establishingByRBC_SM1.nid_radio = kcg_lit_int32(0);
   outC->_L5_establishingByRBC_SM1.settingUpConnectionHasFailed = kcg_true;
   outC->_L5_establishingByRBC_SM1.connectionLost = kcg_true;
   outC->_L5_establishingByRBC_SM1.isInRadioHole = kcg_true;
@@ -599,7 +599,7 @@ void establishSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L8_establishingByRBC_SM1.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L8_establishingByRBC_SM1.nid_c = kcg_lit_int32(0);
   outC->_L8_establishingByRBC_SM1.nid_RBC = kcg_lit_int32(0);
-  outC->_L8_establishingByRBC_SM1.nid_radio = kcg_lit_int64(0);
+  outC->_L8_establishingByRBC_SM1.nid_radio = kcg_lit_int32(0);
   outC->_L8_establishingByRBC_SM1.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L8_establishingByRBC_SM1.origin.valid = kcg_true;
@@ -611,7 +611,7 @@ void establishSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L9_establishingByOBU_SM1.phase = sp_terminated_RCM_Session_Types_Pkg;
   outC->_L9_establishingByOBU_SM1.nid_c = kcg_lit_int32(0);
   outC->_L9_establishingByOBU_SM1.nid_rbc = kcg_lit_int32(0);
-  outC->_L9_establishingByOBU_SM1.nid_radio = kcg_lit_int64(0);
+  outC->_L9_establishingByOBU_SM1.nid_radio = kcg_lit_int32(0);
   outC->_L8_establishingByOBU_SM1 = kcg_true;
   outC->_L7_establishingByOBU_SM1 = kcg_true;
   outC->_L6_establishingByOBU_SM1 = kcg_true;
@@ -624,7 +624,7 @@ void establishSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L2_establishingByOBU_SM1.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L2_establishingByOBU_SM1.nid_c = kcg_lit_int32(0);
   outC->_L2_establishingByOBU_SM1.nid_RBC = kcg_lit_int32(0);
-  outC->_L2_establishingByOBU_SM1.nid_radio = kcg_lit_int64(0);
+  outC->_L2_establishingByOBU_SM1.nid_radio = kcg_lit_int32(0);
   outC->_L2_establishingByOBU_SM1.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L2_establishingByOBU_SM1.origin.valid = kcg_true;
@@ -637,7 +637,7 @@ void establishSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L10_establishingByOBU_SM1.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L10_establishingByOBU_SM1.nid_c = kcg_lit_int32(0);
   outC->_L10_establishingByOBU_SM1.nid_rbc = kcg_lit_int32(0);
-  outC->_L10_establishingByOBU_SM1.nid_radio = kcg_lit_int64(0);
+  outC->_L10_establishingByOBU_SM1.nid_radio = kcg_lit_int32(0);
   outC->_L10_establishingByOBU_SM1.origin.valid = kcg_true;
   outC->_L10_establishingByOBU_SM1.origin.nid_c = kcg_lit_int32(0);
   outC->_L10_establishingByOBU_SM1.origin.rbc_id = kcg_lit_int32(0);
@@ -655,7 +655,7 @@ void establishSession_v2_init_MoRC_Pck_Subfunc_Pkg(
     Q_RBC_Terminate_communication_session;
   outC->_L10_establishingByOBU_SM1.p42.nid_c = kcg_lit_int32(0);
   outC->_L10_establishingByOBU_SM1.p42.nid_RBC = kcg_lit_int32(0);
-  outC->_L10_establishingByOBU_SM1.p42.nid_radio = kcg_lit_int64(0);
+  outC->_L10_establishingByOBU_SM1.p42.nid_radio = kcg_lit_int32(0);
   outC->_L10_establishingByOBU_SM1.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L10_establishingByOBU_SM1.p42.origin.valid = kcg_true;
@@ -674,7 +674,7 @@ void establishSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L12_establishingByOBU_SM1.valid = kcg_true;
   outC->_L12_establishingByOBU_SM1.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L12_establishingByOBU_SM1.status = mcs_disconnected_RCM_Types_Pkg;
-  outC->_L12_establishingByOBU_SM1.nid_radio = kcg_lit_int64(0);
+  outC->_L12_establishingByOBU_SM1.nid_radio = kcg_lit_int32(0);
   outC->_L12_establishingByOBU_SM1.settingUpConnectionHasFailed = kcg_true;
   outC->_L12_establishingByOBU_SM1.connectionLost = kcg_true;
   outC->_L12_establishingByOBU_SM1.isInRadioHole = kcg_true;
@@ -687,7 +687,7 @@ void establishSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L3_idle_SM1.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L3_idle_SM1.nid_c = kcg_lit_int32(0);
   outC->_L3_idle_SM1.nid_RBC = kcg_lit_int32(0);
-  outC->_L3_idle_SM1.nid_radio = kcg_lit_int64(0);
+  outC->_L3_idle_SM1.nid_radio = kcg_lit_int32(0);
   outC->_L3_idle_SM1.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L3_idle_SM1.origin.valid = kcg_true;
@@ -698,18 +698,18 @@ void establishSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L9_idle_SM1.phase = sp_terminated_RCM_Session_Types_Pkg;
   outC->_L9_idle_SM1.nid_c = kcg_lit_int32(0);
   outC->_L9_idle_SM1.nid_rbc = kcg_lit_int32(0);
-  outC->_L9_idle_SM1.nid_radio = kcg_lit_int64(0);
+  outC->_L9_idle_SM1.nid_radio = kcg_lit_int32(0);
   outC->_L11_idle_SM1.valid = kcg_true;
   outC->_L11_idle_SM1.phase = sp_terminated_RCM_Session_Types_Pkg;
   outC->_L11_idle_SM1.nid_c = kcg_lit_int32(0);
   outC->_L11_idle_SM1.nid_rbc = kcg_lit_int32(0);
-  outC->_L11_idle_SM1.nid_radio = kcg_lit_int64(0);
+  outC->_L11_idle_SM1.nid_radio = kcg_lit_int32(0);
   outC->_L12_idle_SM1 = kcg_true;
   outC->sessionStatus.valid = kcg_true;
   outC->sessionStatus.phase = sp_terminated_RCM_Session_Types_Pkg;
   outC->sessionStatus.nid_c = kcg_lit_int32(0);
   outC->sessionStatus.nid_rbc = kcg_lit_int32(0);
-  outC->sessionStatus.nid_radio = kcg_lit_int64(0);
+  outC->sessionStatus.nid_radio = kcg_lit_int32(0);
   outC->established = kcg_true;
   outC->infomDriverNoCompatibleVersionSupported = kcg_true;
   outC->terminateCommunicationSession = kcg_true;
@@ -723,7 +723,7 @@ void establishSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->p42_establishSessionCmd.q_rbc = Q_RBC_Terminate_communication_session;
   outC->p42_establishSessionCmd.nid_c = kcg_lit_int32(0);
   outC->p42_establishSessionCmd.nid_RBC = kcg_lit_int32(0);
-  outC->p42_establishSessionCmd.nid_radio = kcg_lit_int64(0);
+  outC->p42_establishSessionCmd.nid_radio = kcg_lit_int32(0);
   outC->p42_establishSessionCmd.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->p42_establishSessionCmd.origin.valid = kcg_true;

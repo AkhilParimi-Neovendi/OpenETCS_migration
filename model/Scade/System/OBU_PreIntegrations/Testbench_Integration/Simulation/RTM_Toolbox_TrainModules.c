@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -231,7 +231,7 @@ void RTM_Toolbox_TrainModules(
   kcg_copy_mobileHWStatus_Type_MoRC_Pck(
     &last_mobileHWStatus,
     &outC->mobileHWStatus);
-  outC->_L55 = kcg_lit_int64(0);
+  outC->_L55 = kcg_lit_int32(0);
   outC->_L54 = kcg_true;
   outC->_L53.valid = outC->_L54;
   outC->_L53.nid_c = outC->_L55;
@@ -693,7 +693,7 @@ void RTM_Toolbox_TrainModules(
     &outC->_L51,
     &outC->Context_C_Int_TrackTrainMessage_1.Message_Out);
   outC->_L52 = outC->_L51.nid_message;
-  outC->IfBlock1_clock = (*RadioHeader).nid_message == kcg_lit_int64(2);
+  outC->IfBlock1_clock = (*RadioHeader).nid_message == kcg_lit_int32(2);
   /* IfBlock1: */
   if (outC->IfBlock1_clock) {
     outC->_L3_then_IfBlock1 = kcg_true;
@@ -715,7 +715,7 @@ void RTM_Toolbox_TrainModules(
       &radioMetadata_partial);
   }
   else {
-    outC->else_clock_IfBlock1 = (*RadioHeader).nid_message == kcg_lit_int64(3);
+    outC->else_clock_IfBlock1 = (*RadioHeader).nid_message == kcg_lit_int32(3);
     /* IfBlock1:else: */
     if (outC->else_clock_IfBlock1) {
       outC->_L3_then_else_IfBlock1 = kcg_false;
@@ -736,7 +736,7 @@ void RTM_Toolbox_TrainModules(
         &_79_radioMetadata_partial);
     }
     else {
-      outC->else_clock_else_IfBlock1 = (*RadioHeader).nid_message == kcg_lit_int64(6);
+      outC->else_clock_else_IfBlock1 = (*RadioHeader).nid_message == kcg_lit_int32(6);
       /* IfBlock1:else:else: */
       if (outC->else_clock_else_IfBlock1) {
         outC->_L1_then_else_else_IfBlock1 = kcg_false;
@@ -760,7 +760,7 @@ void RTM_Toolbox_TrainModules(
       }
       else {
         outC->else_clock_else_else_IfBlock1 = (*RadioHeader).nid_message ==
-          kcg_lit_int64(8);
+          kcg_lit_int32(8);
         /* IfBlock1:else:else:else: */
         if (outC->else_clock_else_else_IfBlock1) {
           outC->_L3_then_else_else_else_IfBlock1 = kcg_true;
@@ -792,7 +792,7 @@ void RTM_Toolbox_TrainModules(
         }
         else {
           outC->else_clock_else_else_else_IfBlock1 =
-            (*RadioHeader).nid_message == kcg_lit_int64(9);
+            (*RadioHeader).nid_message == kcg_lit_int32(9);
           /* IfBlock1:else:else:else:else: */
           if (outC->else_clock_else_else_else_IfBlock1) {
             outC->_L2_then_else_else_else_else_IfBlock1 = kcg_false;
@@ -823,7 +823,7 @@ void RTM_Toolbox_TrainModules(
           }
           else {
             outC->else_clock_else_else_else_else_IfBlock1 =
-              (*RadioHeader).nid_message == kcg_lit_int64(15);
+              (*RadioHeader).nid_message == kcg_lit_int32(15);
             /* IfBlock1:else:else:else:else:else: */
             if (outC->else_clock_else_else_else_else_IfBlock1) {
               outC->_L3_then_else_else_else_else_else_IfBlock1 = kcg_true;
@@ -855,7 +855,7 @@ void RTM_Toolbox_TrainModules(
             }
             else {
               outC->else_clock_else_else_else_else_else_IfBlock1 =
-                (*RadioHeader).nid_message == kcg_lit_int64(16);
+                (*RadioHeader).nid_message == kcg_lit_int32(16);
               /* IfBlock1:else:else:else:else:else:else: */
               if (outC->else_clock_else_else_else_else_else_IfBlock1) {
                 outC->_L3_then_else_else_else_else_else_else_IfBlock1 = kcg_true;
@@ -887,7 +887,7 @@ void RTM_Toolbox_TrainModules(
               }
               else {
                 outC->else_clock_else_else_else_else_else_else_IfBlock1 =
-                  (*RadioHeader).nid_message == kcg_lit_int64(18);
+                  (*RadioHeader).nid_message == kcg_lit_int32(18);
                 /* IfBlock1:else:else:else:else:else:else:else: */
                 if (outC->else_clock_else_else_else_else_else_else_IfBlock1) {
                   outC->_L3_then_else_else_else_else_else_else_else_IfBlock1 = kcg_false;
@@ -919,7 +919,7 @@ void RTM_Toolbox_TrainModules(
                 }
                 else {
                   outC->else_clock_else_else_else_else_else_else_else_IfBlock1 =
-                    (*RadioHeader).nid_message == kcg_lit_int64(24);
+                    (*RadioHeader).nid_message == kcg_lit_int32(24);
                   /* IfBlock1:else:else:else:else:else:else:else:else: */
                   if (outC->else_clock_else_else_else_else_else_else_else_IfBlock1) {
                     outC->_L2_then_else_else_else_else_else_else_else_else_IfBlock1 = kcg_false;
@@ -950,7 +950,7 @@ void RTM_Toolbox_TrainModules(
                   }
                   else {
                     outC->else_clock_else_else_else_else_else_else_else_else_IfBlock1 =
-                      (*RadioHeader).nid_message == kcg_lit_int64(27);
+                      (*RadioHeader).nid_message == kcg_lit_int32(27);
                     /* IfBlock1:else:else:else:else:else:else:else:else:else: */
                     if (outC->else_clock_else_else_else_else_else_else_else_else_IfBlock1) {
                       outC->_L3_then_else_else_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
@@ -983,7 +983,7 @@ void RTM_Toolbox_TrainModules(
                     }
                     else {
                       outC->else_clock_else_else_else_else_else_else_else_else_else_IfBlock1 =
-                        (*RadioHeader).nid_message == kcg_lit_int64(28);
+                        (*RadioHeader).nid_message == kcg_lit_int32(28);
                       /* IfBlock1:else:else:else:else:else:else:else:else:else:else: */
                       if (outC->else_clock_else_else_else_else_else_else_else_else_else_IfBlock1) {
                         outC->_L1_then_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
@@ -1017,7 +1017,7 @@ void RTM_Toolbox_TrainModules(
                       }
                       else {
                         outC->else_clock_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-                          (*RadioHeader).nid_message == kcg_lit_int64(32);
+                          (*RadioHeader).nid_message == kcg_lit_int32(32);
                         /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else: */
                         if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
                           outC->_L3_then_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
@@ -1051,7 +1051,7 @@ void RTM_Toolbox_TrainModules(
                         }
                         else {
                           outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-                            (*RadioHeader).nid_message == kcg_lit_int64(33);
+                            (*RadioHeader).nid_message == kcg_lit_int32(33);
                           /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else: */
                           if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
                             outC->_L3_then_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
@@ -1085,7 +1085,7 @@ void RTM_Toolbox_TrainModules(
                           }
                           else {
                             outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-                              (*RadioHeader).nid_message == kcg_lit_int64(34);
+                              (*RadioHeader).nid_message == kcg_lit_int32(34);
                             /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else:else: */
                             if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
                               outC->_L2_then_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
@@ -1119,7 +1119,7 @@ void RTM_Toolbox_TrainModules(
                             }
                             else {
                               outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-                                (*RadioHeader).nid_message == kcg_lit_int64(37);
+                                (*RadioHeader).nid_message == kcg_lit_int32(37);
                               /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else:else:else: */
                               if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
                                 outC->_L2_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
@@ -1151,7 +1151,7 @@ void RTM_Toolbox_TrainModules(
                               }
                               else {
                                 outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-                                  (*RadioHeader).nid_message == kcg_lit_int64(38);
+                                  (*RadioHeader).nid_message == kcg_lit_int32(38);
                                 /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else: */
                                 if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
                                   outC->_L2_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
@@ -1183,7 +1183,7 @@ void RTM_Toolbox_TrainModules(
                                 }
                                 else {
                                   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-                                    (*RadioHeader).nid_message == kcg_lit_int64(39);
+                                    (*RadioHeader).nid_message == kcg_lit_int32(39);
                                   /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else: */
                                   if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
                                     outC->_L1_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
@@ -1215,7 +1215,7 @@ void RTM_Toolbox_TrainModules(
                                   }
                                   else {
                                     outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-                                      (*RadioHeader).nid_message == kcg_lit_int64(40);
+                                      (*RadioHeader).nid_message == kcg_lit_int32(40);
                                     /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else: */
                                     if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
                                       outC->_L2_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
@@ -1247,7 +1247,7 @@ void RTM_Toolbox_TrainModules(
                                     }
                                     else {
                                       outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-                                        (*RadioHeader).nid_message == kcg_lit_int64(41);
+                                        (*RadioHeader).nid_message == kcg_lit_int32(41);
                                       /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else: */
                                       if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
                                         outC->_L2_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
@@ -1279,7 +1279,7 @@ void RTM_Toolbox_TrainModules(
                                       }
                                       else {
                                         outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-                                          (*RadioHeader).nid_message == kcg_lit_int64(43);
+                                          (*RadioHeader).nid_message == kcg_lit_int32(43);
                                         /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else: */
                                         if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
                                           outC->_L2_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
@@ -1311,7 +1311,7 @@ void RTM_Toolbox_TrainModules(
                                         }
                                         else {
                                           outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-                                            (*RadioHeader).nid_message == kcg_lit_int64(45);
+                                            (*RadioHeader).nid_message == kcg_lit_int32(45);
                                           /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else: */
                                           if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
                                             outC->_L2_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
@@ -1451,7 +1451,7 @@ void RTM_Toolbox_TrainModules(
   }
   kcg_copy_RadioMetadata_T_Common_Types_Pkg(&outC->_L37, &outC->radioMetadata);
   outC->_L32 = kcg_false;
-  outC->_L31 = kcg_lit_int64(0);
+  outC->_L31 = kcg_lit_int32(0);
   outC->_L30 = outC->_L52 != outC->_L31;
   outC->_L29.present = outC->_L30;
   outC->_L29.apiConsistencyError = outC->_L32;
@@ -1500,27 +1500,27 @@ void RTM_init_Toolbox_TrainModules(outC_RTM_Toolbox_TrainModules *outC)
   static kcg_size idx6;
   static kcg_size idx7;
 
-  outC->_L55 = kcg_lit_int64(0);
+  outC->_L55 = kcg_lit_int32(0);
   outC->_L54 = kcg_true;
   outC->_L53.valid = kcg_true;
-  outC->_L53.nid_c = kcg_lit_int64(0);
-  outC->_L53.rbc_id = kcg_lit_int64(0);
-  outC->_L53.device_id = kcg_lit_int64(0);
-  outC->_L52 = kcg_lit_int64(0);
-  outC->_L51.radioDevice = kcg_lit_int64(0);
-  outC->_L51.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L51.nid_message = kcg_lit_int64(0);
-  outC->_L51.t_train = kcg_lit_int64(0);
+  outC->_L53.nid_c = kcg_lit_int32(0);
+  outC->_L53.rbc_id = kcg_lit_int32(0);
+  outC->_L53.device_id = kcg_lit_int32(0);
+  outC->_L52 = kcg_lit_int32(0);
+  outC->_L51.radioDevice = kcg_lit_int32(0);
+  outC->_L51.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L51.nid_message = kcg_lit_int32(0);
+  outC->_L51.t_train = kcg_lit_int32(0);
   outC->_L51.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L51.nid_lrbg = kcg_lit_int64(0);
-  outC->_L51.t_train_reference = kcg_lit_int64(0);
-  outC->_L51.nid_em = kcg_lit_int64(0);
+  outC->_L51.nid_lrbg = kcg_lit_int32(0);
+  outC->_L51.t_train_reference = kcg_lit_int32(0);
+  outC->_L51.nid_em = kcg_lit_int32(0);
   outC->_L51.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L51.d_sr = kcg_lit_int64(0);
-  outC->_L51.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L51.d_ref = kcg_lit_int64(0);
+  outC->_L51.d_sr = kcg_lit_int32(0);
+  outC->_L51.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L51.d_ref = kcg_lit_int32(0);
   outC->_L51.q_dir = Q_DIR_Reverse;
-  outC->_L51.d_emergencystop = kcg_lit_int64(0);
+  outC->_L51.d_emergencystop = kcg_lit_int32(0);
   outC->_L51.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L37.t_train_reference = kcg_true;
@@ -1533,24 +1533,24 @@ void RTM_init_Toolbox_TrainModules(outC_RTM_Toolbox_TrainModules *outC)
   outC->_L37.d_emergencystop = kcg_true;
   outC->_L37.m_version = kcg_true;
   outC->_L32 = kcg_true;
-  outC->_L31 = kcg_lit_int64(0);
+  outC->_L31 = kcg_lit_int32(0);
   outC->_L30 = kcg_true;
   outC->_L29.present = kcg_true;
   outC->_L29.apiConsistencyError = kcg_true;
-  outC->_L29.Radio_Common_Header.radioDevice = kcg_lit_int64(0);
-  outC->_L29.Radio_Common_Header.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L29.Radio_Common_Header.nid_message = kcg_lit_int64(0);
-  outC->_L29.Radio_Common_Header.t_train = kcg_lit_int64(0);
+  outC->_L29.Radio_Common_Header.radioDevice = kcg_lit_int32(0);
+  outC->_L29.Radio_Common_Header.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L29.Radio_Common_Header.nid_message = kcg_lit_int32(0);
+  outC->_L29.Radio_Common_Header.t_train = kcg_lit_int32(0);
   outC->_L29.Radio_Common_Header.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L29.Radio_Common_Header.nid_lrbg = kcg_lit_int64(0);
-  outC->_L29.Radio_Common_Header.t_train_reference = kcg_lit_int64(0);
-  outC->_L29.Radio_Common_Header.nid_em = kcg_lit_int64(0);
+  outC->_L29.Radio_Common_Header.nid_lrbg = kcg_lit_int32(0);
+  outC->_L29.Radio_Common_Header.t_train_reference = kcg_lit_int32(0);
+  outC->_L29.Radio_Common_Header.nid_em = kcg_lit_int32(0);
   outC->_L29.Radio_Common_Header.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L29.Radio_Common_Header.d_sr = kcg_lit_int64(0);
-  outC->_L29.Radio_Common_Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L29.Radio_Common_Header.d_ref = kcg_lit_int64(0);
+  outC->_L29.Radio_Common_Header.d_sr = kcg_lit_int32(0);
+  outC->_L29.Radio_Common_Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L29.Radio_Common_Header.d_ref = kcg_lit_int32(0);
   outC->_L29.Radio_Common_Header.q_dir = Q_DIR_Reverse;
-  outC->_L29.Radio_Common_Header.d_emergencystop = kcg_lit_int64(0);
+  outC->_L29.Radio_Common_Header.d_emergencystop = kcg_lit_int32(0);
   outC->_L29.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L29.Radio_MetaData.t_train_reference = kcg_true;
@@ -1563,25 +1563,25 @@ void RTM_init_Toolbox_TrainModules(outC_RTM_Toolbox_TrainModules *outC)
   outC->_L29.Radio_MetaData.d_emergencystop = kcg_true;
   outC->_L29.Radio_MetaData.m_version = kcg_true;
   outC->_L29.sendingRBC_Id.valid = kcg_true;
-  outC->_L29.sendingRBC_Id.nid_c = kcg_lit_int64(0);
-  outC->_L29.sendingRBC_Id.rbc_id = kcg_lit_int64(0);
-  outC->_L29.sendingRBC_Id.device_id = kcg_lit_int64(0);
-  outC->_L6.radioDevice = kcg_lit_int64(0);
-  outC->_L6.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L6.nid_message = kcg_lit_int64(0);
-  outC->_L6.t_train = kcg_lit_int64(0);
-  outC->_L6.m_ack = kcg_lit_int64(0);
-  outC->_L6.nid_lrbg = kcg_lit_int64(0);
-  outC->_L6.t_train_reference = kcg_lit_int64(0);
-  outC->_L6.nid_em = kcg_lit_int64(0);
-  outC->_L6.q_scale = kcg_lit_int64(0);
-  outC->_L6.d_sr = kcg_lit_int64(0);
-  outC->_L6.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L6.d_ref = kcg_lit_int64(0);
-  outC->_L6.q_dir = kcg_lit_int64(0);
-  outC->_L6.d_emergencystop = kcg_lit_int64(0);
-  outC->_L6.m_version = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L29.sendingRBC_Id.nid_c = kcg_lit_int32(0);
+  outC->_L29.sendingRBC_Id.rbc_id = kcg_lit_int32(0);
+  outC->_L29.sendingRBC_Id.device_id = kcg_lit_int32(0);
+  outC->_L6.radioDevice = kcg_lit_int32(0);
+  outC->_L6.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L6.nid_message = kcg_lit_int32(0);
+  outC->_L6.t_train = kcg_lit_int32(0);
+  outC->_L6.m_ack = kcg_lit_int32(0);
+  outC->_L6.nid_lrbg = kcg_lit_int32(0);
+  outC->_L6.t_train_reference = kcg_lit_int32(0);
+  outC->_L6.nid_em = kcg_lit_int32(0);
+  outC->_L6.q_scale = kcg_lit_int32(0);
+  outC->_L6.d_sr = kcg_lit_int32(0);
+  outC->_L6.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L6.d_ref = kcg_lit_int32(0);
+  outC->_L6.q_dir = kcg_lit_int32(0);
+  outC->_L6.d_emergencystop = kcg_lit_int32(0);
+  outC->_L6.m_version = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L4 = msrc_undefined_Common_Types_Pkg;
   outC->_L3.present = kcg_true;
   outC->_L3.checkResult = kcg_true;
@@ -1593,51 +1593,51 @@ void RTM_init_Toolbox_TrainModules(outC_RTM_Toolbox_TrainModules *outC)
   outC->_L3.api_header.n_pig = N_PIG_I_am_the_1st;
   outC->_L3.api_header.n_total = N_TOTAL_1_balise_in_the_group;
   outC->_L3.api_header.m_dup = M_DUP_No_duplicates;
-  outC->_L3.api_header.m_mcount = kcg_lit_int64(0);
-  outC->_L3.api_header.nid_c = kcg_lit_int64(0);
-  outC->_L3.api_header.nid_bg = kcg_lit_int64(0);
+  outC->_L3.api_header.m_mcount = kcg_lit_int32(0);
+  outC->_L3.api_header.nid_c = kcg_lit_int32(0);
+  outC->_L3.api_header.nid_bg = kcg_lit_int32(0);
   outC->_L3.api_header.q_link = Q_LINK_Unlinked;
   outC->_L3.centerOfBalisePosition.odometerOfBaliseDetection.valid = kcg_true;
   outC->_L3.centerOfBalisePosition.odometerOfBaliseDetection.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3.centerOfBalisePosition.odometerOfBaliseDetection.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3.centerOfBalisePosition.odometerOfBaliseDetection.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3.centerOfBalisePosition.odometerOfBaliseDetection.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3.centerOfBalisePosition.odometerOfBaliseDetection.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3.centerOfBalisePosition.odometerOfBaliseDetection.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3.centerOfBalisePosition.odometerOfBaliseDetection.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3.centerOfBalisePosition.odometerOfBaliseDetection.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3.centerOfBalisePosition.odometerOfBaliseDetection.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3.centerOfBalisePosition.odometerOfBaliseDetection.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L3.centerOfBalisePosition.odometerOfBaliseDetection.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L3.centerOfBalisePosition.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3.centerOfBalisePosition.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3.centerOfBalisePosition.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx = 0; idx < 30; idx++) {
-    outC->_L2.PacketHeaders[idx].nid_packet = kcg_lit_int64(0);
+    outC->_L2.PacketHeaders[idx].nid_packet = kcg_lit_int32(0);
     outC->_L2.PacketHeaders[idx].q_dir = Q_DIR_Reverse;
     outC->_L2.PacketHeaders[idx].valid = kcg_true;
-    outC->_L2.PacketHeaders[idx].startAddress = kcg_lit_int64(0);
-    outC->_L2.PacketHeaders[idx].endAddress = kcg_lit_int64(0);
+    outC->_L2.PacketHeaders[idx].startAddress = kcg_lit_int32(0);
+    outC->_L2.PacketHeaders[idx].endAddress = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 500; idx1++) {
-    outC->_L2.PacketData[idx1] = kcg_lit_int64(0);
+    outC->_L2.PacketData[idx1] = kcg_lit_int32(0);
   }
   outC->_L1.valid = kcg_true;
-  outC->_L1.systemTimeMsgReceived = kcg_lit_int64(0);
+  outC->_L1.systemTimeMsgReceived = kcg_lit_int32(0);
   outC->_L1.msg_type = msrc_undefined_Common_Types_Pkg;
   outC->_L1.btm_msg.present = kcg_true;
   outC->_L1.btm_msg.checkResult = kcg_true;
@@ -1649,56 +1649,56 @@ void RTM_init_Toolbox_TrainModules(outC_RTM_Toolbox_TrainModules *outC)
   outC->_L1.btm_msg.api_header.n_pig = N_PIG_I_am_the_1st;
   outC->_L1.btm_msg.api_header.n_total = N_TOTAL_1_balise_in_the_group;
   outC->_L1.btm_msg.api_header.m_dup = M_DUP_No_duplicates;
-  outC->_L1.btm_msg.api_header.m_mcount = kcg_lit_int64(0);
-  outC->_L1.btm_msg.api_header.nid_c = kcg_lit_int64(0);
-  outC->_L1.btm_msg.api_header.nid_bg = kcg_lit_int64(0);
+  outC->_L1.btm_msg.api_header.m_mcount = kcg_lit_int32(0);
+  outC->_L1.btm_msg.api_header.nid_c = kcg_lit_int32(0);
+  outC->_L1.btm_msg.api_header.nid_bg = kcg_lit_int32(0);
   outC->_L1.btm_msg.api_header.q_link = Q_LINK_Unlinked;
   outC->_L1.btm_msg.centerOfBalisePosition.odometerOfBaliseDetection.valid =
     kcg_true;
   outC->_L1.btm_msg.centerOfBalisePosition.odometerOfBaliseDetection.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.btm_msg.centerOfBalisePosition.odometerOfBaliseDetection.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.btm_msg.centerOfBalisePosition.odometerOfBaliseDetection.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.btm_msg.centerOfBalisePosition.odometerOfBaliseDetection.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.btm_msg.centerOfBalisePosition.odometerOfBaliseDetection.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.btm_msg.centerOfBalisePosition.odometerOfBaliseDetection.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.btm_msg.centerOfBalisePosition.odometerOfBaliseDetection.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.btm_msg.centerOfBalisePosition.odometerOfBaliseDetection.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.btm_msg.centerOfBalisePosition.odometerOfBaliseDetection.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.btm_msg.centerOfBalisePosition.odometerOfBaliseDetection.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L1.btm_msg.centerOfBalisePosition.odometerOfBaliseDetection.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L1.btm_msg.centerOfBalisePosition.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.btm_msg.centerOfBalisePosition.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.btm_msg.centerOfBalisePosition.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.rtm_msg.present = kcg_true;
   outC->_L1.rtm_msg.apiConsistencyError = kcg_true;
-  outC->_L1.rtm_msg.Radio_Common_Header.radioDevice = kcg_lit_int64(0);
-  outC->_L1.rtm_msg.Radio_Common_Header.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L1.rtm_msg.Radio_Common_Header.nid_message = kcg_lit_int64(0);
-  outC->_L1.rtm_msg.Radio_Common_Header.t_train = kcg_lit_int64(0);
+  outC->_L1.rtm_msg.Radio_Common_Header.radioDevice = kcg_lit_int32(0);
+  outC->_L1.rtm_msg.Radio_Common_Header.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L1.rtm_msg.Radio_Common_Header.nid_message = kcg_lit_int32(0);
+  outC->_L1.rtm_msg.Radio_Common_Header.t_train = kcg_lit_int32(0);
   outC->_L1.rtm_msg.Radio_Common_Header.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L1.rtm_msg.Radio_Common_Header.nid_lrbg = kcg_lit_int64(0);
-  outC->_L1.rtm_msg.Radio_Common_Header.t_train_reference = kcg_lit_int64(0);
-  outC->_L1.rtm_msg.Radio_Common_Header.nid_em = kcg_lit_int64(0);
+  outC->_L1.rtm_msg.Radio_Common_Header.nid_lrbg = kcg_lit_int32(0);
+  outC->_L1.rtm_msg.Radio_Common_Header.t_train_reference = kcg_lit_int32(0);
+  outC->_L1.rtm_msg.Radio_Common_Header.nid_em = kcg_lit_int32(0);
   outC->_L1.rtm_msg.Radio_Common_Header.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L1.rtm_msg.Radio_Common_Header.d_sr = kcg_lit_int64(0);
-  outC->_L1.rtm_msg.Radio_Common_Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L1.rtm_msg.Radio_Common_Header.d_ref = kcg_lit_int64(0);
+  outC->_L1.rtm_msg.Radio_Common_Header.d_sr = kcg_lit_int32(0);
+  outC->_L1.rtm_msg.Radio_Common_Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L1.rtm_msg.Radio_Common_Header.d_ref = kcg_lit_int32(0);
   outC->_L1.rtm_msg.Radio_Common_Header.q_dir = Q_DIR_Reverse;
-  outC->_L1.rtm_msg.Radio_Common_Header.d_emergencystop = kcg_lit_int64(0);
+  outC->_L1.rtm_msg.Radio_Common_Header.d_emergencystop = kcg_lit_int32(0);
   outC->_L1.rtm_msg.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L1.rtm_msg.Radio_MetaData.t_train_reference = kcg_true;
@@ -1711,18 +1711,18 @@ void RTM_init_Toolbox_TrainModules(outC_RTM_Toolbox_TrainModules *outC)
   outC->_L1.rtm_msg.Radio_MetaData.d_emergencystop = kcg_true;
   outC->_L1.rtm_msg.Radio_MetaData.m_version = kcg_true;
   outC->_L1.rtm_msg.sendingRBC_Id.valid = kcg_true;
-  outC->_L1.rtm_msg.sendingRBC_Id.nid_c = kcg_lit_int64(0);
-  outC->_L1.rtm_msg.sendingRBC_Id.rbc_id = kcg_lit_int64(0);
-  outC->_L1.rtm_msg.sendingRBC_Id.device_id = kcg_lit_int64(0);
+  outC->_L1.rtm_msg.sendingRBC_Id.nid_c = kcg_lit_int32(0);
+  outC->_L1.rtm_msg.sendingRBC_Id.rbc_id = kcg_lit_int32(0);
+  outC->_L1.rtm_msg.sendingRBC_Id.device_id = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 30; idx2++) {
-    outC->_L1.packets.PacketHeaders[idx2].nid_packet = kcg_lit_int64(0);
+    outC->_L1.packets.PacketHeaders[idx2].nid_packet = kcg_lit_int32(0);
     outC->_L1.packets.PacketHeaders[idx2].q_dir = Q_DIR_Reverse;
     outC->_L1.packets.PacketHeaders[idx2].valid = kcg_true;
-    outC->_L1.packets.PacketHeaders[idx2].startAddress = kcg_lit_int64(0);
-    outC->_L1.packets.PacketHeaders[idx2].endAddress = kcg_lit_int64(0);
+    outC->_L1.packets.PacketHeaders[idx2].startAddress = kcg_lit_int32(0);
+    outC->_L1.packets.PacketHeaders[idx2].endAddress = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 500; idx3++) {
-    outC->_L1.packets.PacketData[idx3] = kcg_lit_int64(0);
+    outC->_L1.packets.PacketData[idx3] = kcg_lit_int32(0);
   }
   outC->radioMetadata.t_train_reference = kcg_true;
   outC->radioMetadata.nid_em = kcg_true;
@@ -2192,7 +2192,7 @@ void RTM_init_Toolbox_TrainModules(outC_RTM_Toolbox_TrainModules *outC)
     outC->fby_4.items[idx5] = kcg_true;
   }
   outC->TrackMessage.valid = kcg_true;
-  outC->TrackMessage.systemTimeMsgReceived = kcg_lit_int64(0);
+  outC->TrackMessage.systemTimeMsgReceived = kcg_lit_int32(0);
   outC->TrackMessage.msg_type = msrc_undefined_Common_Types_Pkg;
   outC->TrackMessage.btm_msg.present = kcg_true;
   outC->TrackMessage.btm_msg.checkResult = kcg_true;
@@ -2204,60 +2204,60 @@ void RTM_init_Toolbox_TrainModules(outC_RTM_Toolbox_TrainModules *outC)
   outC->TrackMessage.btm_msg.api_header.n_pig = N_PIG_I_am_the_1st;
   outC->TrackMessage.btm_msg.api_header.n_total = N_TOTAL_1_balise_in_the_group;
   outC->TrackMessage.btm_msg.api_header.m_dup = M_DUP_No_duplicates;
-  outC->TrackMessage.btm_msg.api_header.m_mcount = kcg_lit_int64(0);
-  outC->TrackMessage.btm_msg.api_header.nid_c = kcg_lit_int64(0);
-  outC->TrackMessage.btm_msg.api_header.nid_bg = kcg_lit_int64(0);
+  outC->TrackMessage.btm_msg.api_header.m_mcount = kcg_lit_int32(0);
+  outC->TrackMessage.btm_msg.api_header.nid_c = kcg_lit_int32(0);
+  outC->TrackMessage.btm_msg.api_header.nid_bg = kcg_lit_int32(0);
   outC->TrackMessage.btm_msg.api_header.q_link = Q_LINK_Unlinked;
   outC->TrackMessage.btm_msg.centerOfBalisePosition.odometerOfBaliseDetection.valid =
     kcg_true;
   outC->TrackMessage.btm_msg.centerOfBalisePosition.odometerOfBaliseDetection.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->TrackMessage.btm_msg.centerOfBalisePosition.odometerOfBaliseDetection.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->TrackMessage.btm_msg.centerOfBalisePosition.odometerOfBaliseDetection.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->TrackMessage.btm_msg.centerOfBalisePosition.odometerOfBaliseDetection.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->TrackMessage.btm_msg.centerOfBalisePosition.odometerOfBaliseDetection.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->TrackMessage.btm_msg.centerOfBalisePosition.odometerOfBaliseDetection.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->TrackMessage.btm_msg.centerOfBalisePosition.odometerOfBaliseDetection.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->TrackMessage.btm_msg.centerOfBalisePosition.odometerOfBaliseDetection.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->TrackMessage.btm_msg.centerOfBalisePosition.odometerOfBaliseDetection.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->TrackMessage.btm_msg.centerOfBalisePosition.odometerOfBaliseDetection.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->TrackMessage.btm_msg.centerOfBalisePosition.odometerOfBaliseDetection.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->TrackMessage.btm_msg.centerOfBalisePosition.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->TrackMessage.btm_msg.centerOfBalisePosition.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->TrackMessage.btm_msg.centerOfBalisePosition.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->TrackMessage.rtm_msg.present = kcg_true;
   outC->TrackMessage.rtm_msg.apiConsistencyError = kcg_true;
-  outC->TrackMessage.rtm_msg.Radio_Common_Header.radioDevice = kcg_lit_int64(0);
+  outC->TrackMessage.rtm_msg.Radio_Common_Header.radioDevice = kcg_lit_int32(0);
   outC->TrackMessage.rtm_msg.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
-  outC->TrackMessage.rtm_msg.Radio_Common_Header.nid_message = kcg_lit_int64(0);
-  outC->TrackMessage.rtm_msg.Radio_Common_Header.t_train = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->TrackMessage.rtm_msg.Radio_Common_Header.nid_message = kcg_lit_int32(0);
+  outC->TrackMessage.rtm_msg.Radio_Common_Header.t_train = kcg_lit_int32(0);
   outC->TrackMessage.rtm_msg.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
-  outC->TrackMessage.rtm_msg.Radio_Common_Header.nid_lrbg = kcg_lit_int64(0);
+  outC->TrackMessage.rtm_msg.Radio_Common_Header.nid_lrbg = kcg_lit_int32(0);
   outC->TrackMessage.rtm_msg.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
-  outC->TrackMessage.rtm_msg.Radio_Common_Header.nid_em = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->TrackMessage.rtm_msg.Radio_Common_Header.nid_em = kcg_lit_int32(0);
   outC->TrackMessage.rtm_msg.Radio_Common_Header.q_scale = Q_SCALE_10_cm_scale;
-  outC->TrackMessage.rtm_msg.Radio_Common_Header.d_sr = kcg_lit_int64(0);
-  outC->TrackMessage.rtm_msg.Radio_Common_Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->TrackMessage.rtm_msg.Radio_Common_Header.d_ref = kcg_lit_int64(0);
+  outC->TrackMessage.rtm_msg.Radio_Common_Header.d_sr = kcg_lit_int32(0);
+  outC->TrackMessage.rtm_msg.Radio_Common_Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->TrackMessage.rtm_msg.Radio_Common_Header.d_ref = kcg_lit_int32(0);
   outC->TrackMessage.rtm_msg.Radio_Common_Header.q_dir = Q_DIR_Reverse;
   outC->TrackMessage.rtm_msg.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->TrackMessage.rtm_msg.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->TrackMessage.rtm_msg.Radio_MetaData.t_train_reference = kcg_true;
@@ -2270,18 +2270,18 @@ void RTM_init_Toolbox_TrainModules(outC_RTM_Toolbox_TrainModules *outC)
   outC->TrackMessage.rtm_msg.Radio_MetaData.d_emergencystop = kcg_true;
   outC->TrackMessage.rtm_msg.Radio_MetaData.m_version = kcg_true;
   outC->TrackMessage.rtm_msg.sendingRBC_Id.valid = kcg_true;
-  outC->TrackMessage.rtm_msg.sendingRBC_Id.nid_c = kcg_lit_int64(0);
-  outC->TrackMessage.rtm_msg.sendingRBC_Id.rbc_id = kcg_lit_int64(0);
-  outC->TrackMessage.rtm_msg.sendingRBC_Id.device_id = kcg_lit_int64(0);
+  outC->TrackMessage.rtm_msg.sendingRBC_Id.nid_c = kcg_lit_int32(0);
+  outC->TrackMessage.rtm_msg.sendingRBC_Id.rbc_id = kcg_lit_int32(0);
+  outC->TrackMessage.rtm_msg.sendingRBC_Id.device_id = kcg_lit_int32(0);
   for (idx6 = 0; idx6 < 30; idx6++) {
-    outC->TrackMessage.packets.PacketHeaders[idx6].nid_packet = kcg_lit_int64(0);
+    outC->TrackMessage.packets.PacketHeaders[idx6].nid_packet = kcg_lit_int32(0);
     outC->TrackMessage.packets.PacketHeaders[idx6].q_dir = Q_DIR_Reverse;
     outC->TrackMessage.packets.PacketHeaders[idx6].valid = kcg_true;
-    outC->TrackMessage.packets.PacketHeaders[idx6].startAddress = kcg_lit_int64(0);
-    outC->TrackMessage.packets.PacketHeaders[idx6].endAddress = kcg_lit_int64(0);
+    outC->TrackMessage.packets.PacketHeaders[idx6].startAddress = kcg_lit_int32(0);
+    outC->TrackMessage.packets.PacketHeaders[idx6].endAddress = kcg_lit_int32(0);
   }
   for (idx7 = 0; idx7 < 500; idx7++) {
-    outC->TrackMessage.packets.PacketData[idx7] = kcg_lit_int64(0);
+    outC->TrackMessage.packets.PacketData[idx7] = kcg_lit_int32(0);
   }
   /* _L51=(TM_conversions::C_Int_TrackTrainMessage#1)/ */
   C_Int_TrackTrainMessage_init_TM_conversions(
@@ -2337,8 +2337,8 @@ void kcg_save_SV_RTM_Toolbox_TrainModules(
     outC->GSM_R_MobileManagement_state_nxt;
   SV->_1_Context_init = outC->init1;
   SV->Context_init = outC->init;
-  kcg_copy_struct_485102(&SV->Context_fby_3, &outC->fby_3);
-  kcg_copy_struct_485102(&SV->Context_fby_4, &outC->fby_4);
+  kcg_copy_struct_485091(&SV->Context_fby_3, &outC->fby_3);
+  kcg_copy_struct_485091(&SV->Context_fby_4, &outC->fby_4);
 }
 
 void kcg_load_SV_RTM_Toolbox_TrainModules(
@@ -2358,14 +2358,14 @@ void kcg_load_SV_RTM_Toolbox_TrainModules(
     SV->Context_GSM_R_MobileManagement_state_nxt;
   outC->init1 = SV->_1_Context_init;
   outC->init = SV->Context_init;
-  kcg_copy_struct_485102(&outC->fby_3, &SV->Context_fby_3);
-  kcg_copy_struct_485102(&outC->fby_4, &SV->Context_fby_4);
+  kcg_copy_struct_485091(&outC->fby_3, &SV->Context_fby_3);
+  kcg_copy_struct_485091(&outC->fby_4, &SV->Context_fby_4);
 }
 
 
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** RTM_Toolbox_TrainModules.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

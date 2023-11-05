@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _MRSP_limit_to_EOA_TA_Export_H_
 #define _MRSP_limit_to_EOA_TA_Export_H_
@@ -24,7 +24,7 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   MRSP_section_t_TrackAtlasTypes /* MRSP_section0/ */ MRSP_section0;
   MRSP_section_t_TrackAtlasTypes /* MRSP_section1/ */ MRSP_section1;
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   MRSP_Profile_t_TrackAtlasTypes /* _L3/ */ _L3;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L4/ */ _L4;
   kcg_bool /* _L225/ */ _L225;
@@ -45,10 +45,10 @@ typedef struct {
   MRSP_section_t_TrackAtlasTypes /* _L244/ */ _L244;
   MRSP_section_t_TrackAtlasTypes /* _L245/ */ _L245;
   MRSP_section_t_TrackAtlasTypes /* _L249/ */ _L249;
-  kcg_int64 /* _L248/ */ _L248;
+  kcg_int32 /* _L248/ */ _L248;
   MRSP_Profile_t_TrackAtlasTypes /* _L247/ */ _L247;
-  kcg_int64 /* _L250/ */ _L250;
-  kcg_int64 /* _L251/ */ _L251;
+  kcg_int32 /* _L250/ */ _L250;
+  kcg_int32 /* _L251/ */ _L251;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L252/ */ _L252;
   V_internal_Type_Obu_BasicTypes_Pkg /* _L253/ */ _L253;
   kcg_bool /* _L254/ */ _L254;
@@ -61,7 +61,7 @@ typedef struct {
 /* TA_Export::MRSP_limit_to_EOA/ */
 extern void MRSP_limit_to_EOA_TA_Export(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* MRSP/ */
   MRSP_Profile_t_TrackAtlasTypes *MRSP,
   /* EoA/ */
@@ -83,6 +83,6 @@ extern void MRSP_limit_to_EOA_init_TA_Export(
 #endif /* _MRSP_limit_to_EOA_TA_Export_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** MRSP_limit_to_EOA_TA_Export.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

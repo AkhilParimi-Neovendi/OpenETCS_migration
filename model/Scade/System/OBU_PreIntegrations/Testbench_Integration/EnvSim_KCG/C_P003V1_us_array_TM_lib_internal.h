@@ -31,18 +31,18 @@ typedef struct {
   kcg_bool /* _L39/ */ _L39;
   P003V1_section_enum_T_TM_baseline2 /* _L38/ */ _L38;
   P003V1_OBU_sectionlist_int_T_TM_baseline2 /* _L37/ */ _L37;
-  kcg_int64 /* _L36/ */ _L36;
-  kcg_int64 /* _L35/ */ _L35;
-  kcg_int64 /* _L34/ */ _L34;
+  kcg_int32 /* _L36/ */ _L36;
+  kcg_int32 /* _L35/ */ _L35;
+  kcg_int32 /* _L34/ */ _L34;
 } outC_C_P003V1_us_array_TM_lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* TM_lib_internal::C_P003V1_us_array/ */
 extern void C_P003V1_us_array_TM_lib_internal(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* n_iter_int/ */
-  kcg_int64 n_iter_int,
+  kcg_int32 n_iter_int,
   /* flat/ */
   P003V1_OBU_sectionlist_int_T_TM_baseline2 *flat,
   outC_C_P003V1_us_array_TM_lib_internal *outC);

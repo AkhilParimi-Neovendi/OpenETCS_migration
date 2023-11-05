@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -16,8 +16,8 @@ void CAST_NID_ENGINE_to_int_TM_conversions(
   static kcg_bool noname;
   static kcg_bool _1_noname;
 
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(16777215);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(16777215);
   outC->_L1 = nid_ctraction;
   outC->_L9 = outC->_L1 > outC->_L10;
   outC->_L8 = outC->_L1 < outC->_L11;
@@ -30,12 +30,12 @@ void CAST_NID_ENGINE_to_int_TM_conversions(
 void CAST_NID_ENGINE_to_int_init_TM_conversions(
   outC_CAST_NID_ENGINE_to_int_TM_conversions *outC)
 {
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
   outC->_L8 = kcg_true;
   outC->_L9 = kcg_true;
-  outC->_L1 = kcg_lit_int64(0);
-  outC->nid_ctraction_int = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->nid_ctraction_int = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -51,6 +51,6 @@ void CAST_NID_ENGINE_to_int_reset_TM_conversions(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_NID_ENGINE_to_int_TM_conversions.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

@@ -14,23 +14,23 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* Out/ */ Out_30;
+  kcg_int32 /* Out/ */ Out_30;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  array_int64_30 /* @1/_L9/ */ _L9_BoolVect2IntElt_1_int64;
-  array_int64_30 /* @1/_L8/ */ _L8_BoolVect2IntElt_1_int64;
-  array_int64_30 /* @1/_L7/ */ _L7_BoolVect2IntElt_1_int64;
-  array_int64_30 /* @1/_L6/ */ _L6_BoolVect2IntElt_1_int64;
-  array_int64_30 /* @1/_L5/ */ _L5_BoolVect2IntElt_1_int64;
-  array_int64_30 /* @1/_L4/ */ _L4_BoolVect2IntElt_1_int64;
-  array_bool_30 /* @1/_L2/ */ _L2_BoolVect2IntElt_1_int64;
-  array_int64_30 /* @1/_L1/ */ _L1_BoolVect2IntElt_1_int64;
-  kcg_int64 /* _L2/ */ _L2_30;
-  kcg_int64 /* _L3/ */ _L3_30;
+  array_int32_30 /* @1/_L9/ */ _L9_BoolVect2IntElt_1_int32;
+  array_int32_30 /* @1/_L8/ */ _L8_BoolVect2IntElt_1_int32;
+  array_int32_30 /* @1/_L7/ */ _L7_BoolVect2IntElt_1_int32;
+  array_int32_30 /* @1/_L6/ */ _L6_BoolVect2IntElt_1_int32;
+  array_int32_30 /* @1/_L5/ */ _L5_BoolVect2IntElt_1_int32;
+  array_int32_30 /* @1/_L4/ */ _L4_BoolVect2IntElt_1_int32;
+  array_bool_30 /* @1/_L2/ */ _L2_BoolVect2IntElt_1_int32;
+  array_int32_30 /* @1/_L1/ */ _L1_BoolVect2IntElt_1_int32;
+  kcg_int32 /* _L2/ */ _L2_30;
+  kcg_int32 /* _L3/ */ _L3_30;
   array_bool_30 /* _L4/ */ _L4_30;
 } outC_BoolVect2Int64_digital_30;
 

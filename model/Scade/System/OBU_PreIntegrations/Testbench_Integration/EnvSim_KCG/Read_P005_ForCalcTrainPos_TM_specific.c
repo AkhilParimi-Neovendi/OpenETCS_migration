@@ -58,65 +58,65 @@ void Read_P005_ForCalcTrainPos_init_TM_specific(
   static kcg_size idx4;
 
   outC->_L6 = kcg_true;
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
   for (idx = 0; idx < 33; idx++) {
     outC->_L4[idx].valid = kcg_true;
-    outC->_L4[idx].nid_LRBG = kcg_lit_int64(0);
+    outC->_L4[idx].nid_LRBG = kcg_lit_int32(0);
     outC->_L4[idx].q_dir = Q_DIR_Reverse;
     outC->_L4[idx].q_scale = Q_SCALE_10_cm_scale;
-    outC->_L4[idx].d_link = kcg_lit_int64(0);
+    outC->_L4[idx].d_link = kcg_lit_int32(0);
     outC->_L4[idx].q_newcountry =
       Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-    outC->_L4[idx].nid_c = kcg_lit_int64(0);
-    outC->_L4[idx].nid_bg = kcg_lit_int64(0);
+    outC->_L4[idx].nid_c = kcg_lit_int32(0);
+    outC->_L4[idx].nid_bg = kcg_lit_int32(0);
     outC->_L4[idx].q_linkorientation =
       Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction;
     outC->_L4[idx].q_linkreaction = Q_LINKREACTION_Train_trip;
-    outC->_L4[idx].q_locacc = kcg_lit_int64(0);
+    outC->_L4[idx].q_locacc = kcg_lit_int32(0);
   }
   outC->_L3.valid = kcg_true;
   outC->_L3.q_dir = Q_DIR_Reverse;
-  outC->_L3.l_packet = kcg_lit_int64(0);
+  outC->_L3.l_packet = kcg_lit_int32(0);
   outC->_L3.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L3.n_iter = kcg_lit_int64(0);
+  outC->_L3.n_iter = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 33; idx1++) {
     outC->_L3.sections[idx1].valid = kcg_true;
-    outC->_L3.sections[idx1].d_link = kcg_lit_int64(0);
+    outC->_L3.sections[idx1].d_link = kcg_lit_int32(0);
     outC->_L3.sections[idx1].q_newcountry =
       Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-    outC->_L3.sections[idx1].nid_c = kcg_lit_int64(0);
-    outC->_L3.sections[idx1].nid_bg = kcg_lit_int64(0);
+    outC->_L3.sections[idx1].nid_c = kcg_lit_int32(0);
+    outC->_L3.sections[idx1].nid_bg = kcg_lit_int32(0);
     outC->_L3.sections[idx1].q_linkorientation =
       Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction;
     outC->_L3.sections[idx1].q_linkreaction = Q_LINKREACTION_Train_trip;
-    outC->_L3.sections[idx1].q_locacc = kcg_lit_int64(0);
+    outC->_L3.sections[idx1].q_locacc = kcg_lit_int32(0);
   }
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 30; idx2++) {
-    outC->_L1.PacketHeaders[idx2].nid_packet = kcg_lit_int64(0);
+    outC->_L1.PacketHeaders[idx2].nid_packet = kcg_lit_int32(0);
     outC->_L1.PacketHeaders[idx2].q_dir = Q_DIR_Reverse;
     outC->_L1.PacketHeaders[idx2].valid = kcg_true;
-    outC->_L1.PacketHeaders[idx2].startAddress = kcg_lit_int64(0);
-    outC->_L1.PacketHeaders[idx2].endAddress = kcg_lit_int64(0);
+    outC->_L1.PacketHeaders[idx2].startAddress = kcg_lit_int32(0);
+    outC->_L1.PacketHeaders[idx2].endAddress = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 500; idx3++) {
-    outC->_L1.PacketData[idx3] = kcg_lit_int64(0);
+    outC->_L1.PacketData[idx3] = kcg_lit_int32(0);
   }
   outC->every = kcg_true;
   for (idx4 = 0; idx4 < 33; idx4++) {
     outC->LinkedBGsOUT[idx4].valid = kcg_true;
-    outC->LinkedBGsOUT[idx4].nid_LRBG = kcg_lit_int64(0);
+    outC->LinkedBGsOUT[idx4].nid_LRBG = kcg_lit_int32(0);
     outC->LinkedBGsOUT[idx4].q_dir = Q_DIR_Reverse;
     outC->LinkedBGsOUT[idx4].q_scale = Q_SCALE_10_cm_scale;
-    outC->LinkedBGsOUT[idx4].d_link = kcg_lit_int64(0);
+    outC->LinkedBGsOUT[idx4].d_link = kcg_lit_int32(0);
     outC->LinkedBGsOUT[idx4].q_newcountry =
       Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-    outC->LinkedBGsOUT[idx4].nid_c = kcg_lit_int64(0);
-    outC->LinkedBGsOUT[idx4].nid_bg = kcg_lit_int64(0);
+    outC->LinkedBGsOUT[idx4].nid_c = kcg_lit_int32(0);
+    outC->LinkedBGsOUT[idx4].nid_bg = kcg_lit_int32(0);
     outC->LinkedBGsOUT[idx4].q_linkorientation =
       Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction;
     outC->LinkedBGsOUT[idx4].q_linkreaction = Q_LINKREACTION_Train_trip;
-    outC->LinkedBGsOUT[idx4].q_locacc = kcg_lit_int64(0);
+    outC->LinkedBGsOUT[idx4].q_locacc = kcg_lit_int32(0);
   }
   /* _L4=(TM_conversions::C_P005_ForCalcTrainPos#1)/ */
   C_P005_ForCalcTrainPos_init_TM_conversions(

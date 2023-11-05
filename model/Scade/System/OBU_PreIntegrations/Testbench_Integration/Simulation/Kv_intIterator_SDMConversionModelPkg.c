@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -65,24 +65,24 @@ void Kv_intIterator_SDMConversionModelPkg(
 void Kv_intIterator_init_SDMConversionModelPkg(
   outC_Kv_intIterator_SDMConversionModelPkg *outC)
 {
-  outC->_L18 = kcg_lit_int64(0);
-  outC->_L17 = kcg_lit_int64(0);
-  outC->_L16 = kcg_lit_int64(0);
+  outC->_L18 = kcg_lit_int32(0);
+  outC->_L17 = kcg_lit_int32(0);
+  outC->_L16 = kcg_lit_int32(0);
   outC->_L12 = kcg_true;
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L14 = kcg_lit_float64(0.0);
-  outC->_L15 = kcg_lit_float64(0.0);
-  outC->_L6 = kcg_lit_int64(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L14 = kcg_lit_float32(0.0);
+  outC->_L15 = kcg_lit_float32(0.0);
+  outC->_L6 = kcg_lit_int32(0);
   outC->_L5 = kcg_true;
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
   outC->_L1.valid = kcg_true;
-  outC->_L1.v_nvkvint = kcg_lit_int64(0);
-  outC->_L1.m_nvkvint12 = kcg_lit_float64(0.0);
-  outC->_L1.m_nvkvint23 = kcg_lit_float64(0.0);
-  outC->v = kcg_lit_int64(0);
-  outC->m = kcg_lit_int64(0);
+  outC->_L1.v_nvkvint = kcg_lit_int32(0);
+  outC->_L1.m_nvkvint12 = kcg_lit_float32(0.0);
+  outC->_L1.m_nvkvint23 = kcg_lit_float32(0.0);
+  outC->v = kcg_lit_int32(0);
+  outC->m = kcg_lit_int32(0);
   outC->goOn = kcg_true;
   /* _L16=(SDMConversionModelPkg::interpolateMfromA#2)/ */
   interpolateMfromA_init_SDMConversionModelPkg(
@@ -117,6 +117,6 @@ void Kv_intIterator_reset_SDMConversionModelPkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Kv_intIterator_SDMConversionModelPkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

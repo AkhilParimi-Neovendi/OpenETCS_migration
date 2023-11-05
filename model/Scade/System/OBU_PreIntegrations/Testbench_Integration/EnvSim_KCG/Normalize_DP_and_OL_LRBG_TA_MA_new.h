@@ -28,11 +28,11 @@ typedef struct {
   L_internal_Type_Obu_BasicTypes_Pkg /* _L64/ */ _L64;
   V_internal_Type_Obu_BasicTypes_Pkg /* _L63/ */ _L63;
   kcg_bool /* _L62/ */ _L62;
-  kcg_int64 /* _L65/ */ _L65;
+  kcg_int32 /* _L65/ */ _L65;
   DP_or_OL_t_TrackAtlasTypes /* _L66/ */ _L66;
   MovementAuthority_t_TrackAtlasTypes /* _L74/ */ _L74;
   DP_or_OL_t_TrackAtlasTypes /* _L73/ */ _L73;
-  kcg_int64 /* _L72/ */ _L72;
+  kcg_int32 /* _L72/ */ _L72;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L69/ */ _L69;
   V_internal_Type_Obu_BasicTypes_Pkg /* _L70/ */ _L70;
   kcg_bool /* _L71/ */ _L71;

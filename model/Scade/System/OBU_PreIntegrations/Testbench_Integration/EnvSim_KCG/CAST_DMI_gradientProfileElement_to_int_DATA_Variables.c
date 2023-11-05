@@ -33,19 +33,19 @@ void CAST_DMI_gradientProfileElement_to_int_DATA_Variables(
 void CAST_DMI_gradientProfileElement_to_int_init_DATA_Variables(
   outC_CAST_DMI_gradientProfileElement_to_int_DATA_Variables *outC)
 {
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->_L5 = kcg_true;
   outC->_L1.valid = kcg_true;
-  outC->_L1.begin_section = kcg_lit_int64(0);
-  outC->_L1.end_section = kcg_lit_int64(0);
-  outC->_L1.gradient = kcg_lit_int64(0);
-  outC->gradiant = kcg_lit_int64(0);
-  outC->end_section = kcg_lit_int64(0);
-  outC->start_section = kcg_lit_int64(0);
-  outC->valid = kcg_lit_int64(0);
+  outC->_L1.begin_section = kcg_lit_int32(0);
+  outC->_L1.end_section = kcg_lit_int32(0);
+  outC->_L1.gradient = kcg_lit_int32(0);
+  outC->gradiant = kcg_lit_int32(0);
+  outC->end_section = kcg_lit_int32(0);
+  outC->start_section = kcg_lit_int32(0);
+  outC->valid = kcg_lit_int32(0);
   /* _L6=(Utilities::Bool_to_Int#1)/ */
   Bool_to_Int_init_Utilities(&outC->Context_Bool_to_Int_1);
 }

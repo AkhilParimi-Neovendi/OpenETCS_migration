@@ -180,7 +180,7 @@ void C_P042_compr_onboard_init_TM_conversions(
 
   outC->_L33 = Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L32 = kcg_lit_int32(0);
-  outC->_L31 = kcg_lit_int64(0);
+  outC->_L31 = kcg_lit_int32(0);
   outC->_L30 = kcg_lit_int32(0);
   outC->_L29 = kcg_lit_int32(0);
   outC->_L28 = kcg_lit_int32(0);
@@ -205,7 +205,7 @@ void C_P042_compr_onboard_init_TM_conversions(
   outC->_L10.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L10.nid_c = kcg_lit_int32(0);
   outC->_L10.nid_rbc = kcg_lit_int32(0);
-  outC->_L10.nid_radio = kcg_lit_int64(0);
+  outC->_L10.nid_radio = kcg_lit_int32(0);
   outC->_L10.q_sleepsession = Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L11 = Q_DIR_Reverse;
   outC->_L12 = kcg_lit_int32(0);
@@ -238,7 +238,7 @@ void C_P042_compr_onboard_init_TM_conversions(
   outC->P131_onboard.q_rbc = Q_RBC_Terminate_communication_session;
   outC->P131_onboard.nid_c = kcg_lit_int32(0);
   outC->P131_onboard.nid_rbc = kcg_lit_int32(0);
-  outC->P131_onboard.nid_radio = kcg_lit_int64(0);
+  outC->P131_onboard.nid_radio = kcg_lit_int32(0);
   outC->P131_onboard.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   /* _L4=(TM_conversions::CAST_Int_to_Q_RBC#1)/ */

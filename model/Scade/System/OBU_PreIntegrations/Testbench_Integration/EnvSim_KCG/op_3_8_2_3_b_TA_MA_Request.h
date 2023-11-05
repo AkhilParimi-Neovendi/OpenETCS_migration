@@ -23,9 +23,9 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   MovementAuthority_t_TrackAtlasTypes /* _L1/ */ _L1;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L6/ */ _L6;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L7/ */ _L7;
   kcg_bool /* _L8/ */ _L8;
@@ -38,7 +38,7 @@ typedef struct {
 /* TA_MA_Request::op_3_8_2_3_b/ */
 extern void op_3_8_2_3_b_TA_MA_Request(
   /* t_timeoutrqst/ */
-  kcg_int64 t_timeoutrqst,
+  kcg_int32 t_timeoutrqst,
   /* ma_s/ */
   MovementAuthority_t_TrackAtlasTypes *ma_s,
   outC_op_3_8_2_3_b_TA_MA_Request *outC);

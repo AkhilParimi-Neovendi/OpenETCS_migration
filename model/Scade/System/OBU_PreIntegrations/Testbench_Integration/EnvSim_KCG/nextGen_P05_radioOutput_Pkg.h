@@ -23,10 +23,10 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   PT5_TrainRunningNumber_Packet_TrainTypes_Pkg /* _L1/ */ _L1;
   P005_TM_TrainToTrack /* _L2/ */ _L2;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L12/ */ _L12;
   kcg_bool /* _L34/ */ _L34;
   NID_OPERATIONAL /* _L33/ */ _L33;
-  kcg_int64 /* _L40/ */ _L40;
+  kcg_int32 /* _L40/ */ _L40;
 } outC_nextGen_P05_radioOutput_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

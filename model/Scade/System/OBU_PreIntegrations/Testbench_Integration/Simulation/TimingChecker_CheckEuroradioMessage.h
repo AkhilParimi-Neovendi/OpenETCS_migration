@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _TimingChecker_CheckEuroradioMessage_H_
 #define _TimingChecker_CheckEuroradioMessage_H_
@@ -29,12 +29,12 @@ typedef struct {
   kcg_bool /* IfBlock1: */ IfBlock1_clock;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* IfBlock1:then:_L41/ */ _L41_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L41/ */ _L41_then_IfBlock1;
   T_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:then:_L40/ */ _L40_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L39/ */ _L39_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L38/ */ _L38_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L37/ */ _L37_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L36/ */ _L36_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L36/ */ _L36_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L35/ */ _L35_then_IfBlock1;
   T_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:then:_L34/ */ _L34_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L33/ */ _L33_then_IfBlock1;
@@ -51,9 +51,9 @@ typedef struct {
   T_TRAIN /* IfBlock1:then:_L22/ */ _L22_then_IfBlock1;
   T_TRAIN /* IfBlock1:then:_L17/ */ _L17_then_IfBlock1;
   T_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:then:_L14/ */ _L14_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
   T_TRAIN /* IfBlock1:then:_L5/ */ _L5_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L6/ */ _L6_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L6/ */ _L6_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L7/ */ _L7_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L9/ */ _L9_then_IfBlock1;
   ReceivedMessage_T_Common_Types_Pkg /* IfBlock1:then:_L10/ */ _L10_then_IfBlock1;
@@ -61,7 +61,7 @@ typedef struct {
   kcg_bool /* IfBlock1:then:_L12/ */ _L12_then_IfBlock1;
   T_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:then:_L13/ */ _L13_then_IfBlock1;
   kcg_bool /* IfBlock1:else:else:IfBlock2:then:_L5/ */ _L5_then_IfBlock2_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:IfBlock2:then:_L3/ */ _L3_then_IfBlock2_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:IfBlock2:then:_L3/ */ _L3_then_IfBlock2_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:IfBlock2:then:_L2/ */ _L2_then_IfBlock2_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:IfBlock2:else:_L3/ */ _L3_else_IfBlock2_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:IfBlock2:else:_L2/ */ _L2_else_IfBlock2_else_else_IfBlock1;
@@ -73,7 +73,7 @@ typedef struct {
   mobileConnectionContext_T_RCM_Types_Pkg /* IfBlock1:else:else:_L6/ */ _L6_else_else_IfBlock1;
   mobileConnectionStatus_T_RCM_Types_Pkg /* IfBlock1:else:else:_L7/ */ _L7_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:IfBlock2:then:_L5/ */ _L5_then_IfBlock2_then_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:IfBlock2:then:_L3/ */ _L3_then_IfBlock2_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:IfBlock2:then:_L3/ */ _L3_then_IfBlock2_then_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:IfBlock2:then:_L2/ */ _L2_then_IfBlock2_then_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:IfBlock2:else:_L3/ */ _L3_else_IfBlock2_then_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:IfBlock2:else:_L2/ */ _L2_else_IfBlock2_then_else_IfBlock1;
@@ -138,6 +138,6 @@ extern void kcg_load_SV_TimingChecker_CheckEuroradioMessage(
 #endif /* _TimingChecker_CheckEuroradioMessage_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** TimingChecker_CheckEuroradioMessage.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

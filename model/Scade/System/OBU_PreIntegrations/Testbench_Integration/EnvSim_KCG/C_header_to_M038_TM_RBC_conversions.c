@@ -13,12 +13,12 @@ void C_header_to_M038_TM_RBC_conversions(
   M_TrackTrain_Radio_T_TM_radio_messages *header_in,
   outC_C_header_to_M038_TM_RBC_conversions *outC)
 {
-  static kcg_int64 noname;
-  static kcg_int64 _1_noname;
-  static kcg_int64 _2_noname;
-  static kcg_int64 _3_noname;
-  static kcg_int64 _4_noname;
-  static kcg_int64 _5_noname;
+  static kcg_int32 noname;
+  static kcg_int32 _1_noname;
+  static kcg_int32 _2_noname;
+  static kcg_int32 _3_noname;
+  static kcg_int32 _4_noname;
+  static kcg_int32 _5_noname;
 
   kcg_copy_M_TrackTrain_Radio_T_TM_radio_messages(&outC->_L1, header_in);
   outC->_L5 = outC->_L1.t_train;
@@ -77,47 +77,47 @@ void C_header_to_M038_TM_RBC_conversions(
 void C_header_to_M038_init_TM_RBC_conversions(
   outC_C_header_to_M038_TM_RBC_conversions *outC)
 {
-  outC->_L30 = kcg_lit_int64(0);
-  outC->_L31 = kcg_lit_int64(0);
-  outC->_L32 = kcg_lit_int64(0);
-  outC->_L28 = kcg_lit_int64(0);
+  outC->_L30 = kcg_lit_int32(0);
+  outC->_L31 = kcg_lit_int32(0);
+  outC->_L32 = kcg_lit_int32(0);
+  outC->_L28 = kcg_lit_int32(0);
   outC->_L27 = M_ACK_No_acknowledgement_required;
   outC->_L26.valid = kcg_true;
-  outC->_L26.nid_message = kcg_lit_int64(0);
-  outC->_L26.l_message = kcg_lit_int64(0);
-  outC->_L26.t_train = kcg_lit_int64(0);
+  outC->_L26.nid_message = kcg_lit_int32(0);
+  outC->_L26.l_message = kcg_lit_int32(0);
+  outC->_L26.t_train = kcg_lit_int32(0);
   outC->_L26.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L26.nid_lrbg = kcg_lit_int64(0);
+  outC->_L26.nid_lrbg = kcg_lit_int32(0);
   outC->_L2 = kcg_true;
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
   outC->_L1.valid = kcg_true;
-  outC->_L1.nid_message = kcg_lit_int64(0);
-  outC->_L1.l_message = kcg_lit_int64(0);
-  outC->_L1.t_train = kcg_lit_int64(0);
-  outC->_L1.field1 = kcg_lit_int64(0);
-  outC->_L1.field2 = kcg_lit_int64(0);
-  outC->_L1.field3 = kcg_lit_int64(0);
-  outC->_L1.field4 = kcg_lit_int64(0);
-  outC->_L1.field5 = kcg_lit_int64(0);
-  outC->_L1.field6 = kcg_lit_int64(0);
-  outC->_L1.field7 = kcg_lit_int64(0);
-  outC->_L1.field8 = kcg_lit_int64(0);
+  outC->_L1.nid_message = kcg_lit_int32(0);
+  outC->_L1.l_message = kcg_lit_int32(0);
+  outC->_L1.t_train = kcg_lit_int32(0);
+  outC->_L1.field1 = kcg_lit_int32(0);
+  outC->_L1.field2 = kcg_lit_int32(0);
+  outC->_L1.field3 = kcg_lit_int32(0);
+  outC->_L1.field4 = kcg_lit_int32(0);
+  outC->_L1.field5 = kcg_lit_int32(0);
+  outC->_L1.field6 = kcg_lit_int32(0);
+  outC->_L1.field7 = kcg_lit_int32(0);
+  outC->_L1.field8 = kcg_lit_int32(0);
   outC->message_out.valid = kcg_true;
-  outC->message_out.nid_message = kcg_lit_int64(0);
-  outC->message_out.l_message = kcg_lit_int64(0);
-  outC->message_out.t_train = kcg_lit_int64(0);
+  outC->message_out.nid_message = kcg_lit_int32(0);
+  outC->message_out.l_message = kcg_lit_int32(0);
+  outC->message_out.t_train = kcg_lit_int32(0);
   outC->message_out.m_ack = M_ACK_No_acknowledgement_required;
-  outC->message_out.nid_lrbg = kcg_lit_int64(0);
+  outC->message_out.nid_lrbg = kcg_lit_int32(0);
   /* _L27=(TM_conversions::CAST_Int_to_M_ACK#1)/ */
   CAST_Int_to_M_ACK_init_TM_conversions(&outC->Context_CAST_Int_to_M_ACK_1);
   /* _L28=(TM_conversions::CAST_Int_to_NID_LRBG#1)/ */

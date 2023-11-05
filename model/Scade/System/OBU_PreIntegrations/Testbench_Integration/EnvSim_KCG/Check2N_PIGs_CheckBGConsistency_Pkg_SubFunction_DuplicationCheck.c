@@ -111,22 +111,22 @@ void Check2N_PIGs_CheckBGConsistency_Pkg_SubFunction_DuplicationCheck(
   outC->_L5 = outC->_L4 - outC->_L3;
   /* _L7= */
   switch (outC->_L5) {
-    case kcg_lit_int64(1) :
+    case kcg_lit_int32(1) :
       outC->_L7 = outC->_L15;
       break;
-    case kcg_lit_int64(2) :
+    case kcg_lit_int32(2) :
       outC->_L7 = outC->_L17;
       break;
-    case kcg_lit_int64(3) :
+    case kcg_lit_int32(3) :
       outC->_L7 = outC->_L22;
       break;
-    case kcg_lit_int64(-1) :
+    case kcg_lit_int32(-1) :
       outC->_L7 = outC->_L25;
       break;
-    case kcg_lit_int64(-2) :
+    case kcg_lit_int32(-2) :
       outC->_L7 = outC->_L26;
       break;
-    case kcg_lit_int64(-3) :
+    case kcg_lit_int32(-3) :
       outC->_L7 = outC->_L27;
       break;
     default :
@@ -172,9 +172,9 @@ void Check2N_PIGs_init_CheckBGConsistency_Pkg_SubFunction_DuplicationCheck(
   outC->_L16 = kcg_true;
   outC->_L15 = kcg_true;
   outC->_L7 = kcg_true;
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L2 = N_PIG_I_am_the_1st;
   outC->_L1 = N_PIG_I_am_the_1st;
   outC->valid = kcg_true;

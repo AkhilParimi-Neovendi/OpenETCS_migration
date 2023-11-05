@@ -23,7 +23,7 @@ extern struct SimTypeVTable* pSimimpl_uint16VTable;
 extern struct SimTypeVTable* pSimimpl_int16VTable;
 extern struct SimTypeVTable* pSimimpl_uint32VTable;
 extern struct SimTypeVTable* pSimimpl_int32VTable;
-extern struct SimTypeVTable* pSimimpl_int64VTable;
+extern struct SimTypeVTable* pSimimpl_int32VTable;
 
 
 int MainGetConvInfo(SimConvType nTo, SimConvType nFrom);

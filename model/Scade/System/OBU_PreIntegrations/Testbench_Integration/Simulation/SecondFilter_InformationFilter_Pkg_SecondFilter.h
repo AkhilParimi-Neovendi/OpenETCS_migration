@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _SecondFilter_InformationFilter_Pkg_SecondFilter_H_
 #define _SecondFilter_InformationFilter_Pkg_SecondFilter_H_
@@ -31,7 +31,7 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   ReceivedMessage_T_Common_Types_Pkg /* IfBlock1:then:IfBlock2:else:_L2/ */ _L2_else_IfBlock2_then_IfBlock1;
   ReceivedMessage_T_Common_Types_Pkg /* IfBlock1:then:IfBlock2:else:_L1/ */ _L1_else_IfBlock2_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:IfBlock2:then:IfBlock3:then:_L12/ */ _L12_then_IfBlock3_then_IfBlock2_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:IfBlock2:then:IfBlock3:then:_L12/ */ _L12_then_IfBlock3_then_IfBlock2_then_IfBlock1;
   kcg_bool /* IfBlock1:then:IfBlock2:then:IfBlock3:then:_L11/ */ _L11_then_IfBlock3_then_IfBlock2_then_IfBlock1;
   kcg_bool /* IfBlock1:then:IfBlock2:then:IfBlock3:then:_L10/ */ _L10_then_IfBlock3_then_IfBlock2_then_IfBlock1;
   kcg_bool /* IfBlock1:then:IfBlock2:then:IfBlock3:then:_L9/ */ _L9_then_IfBlock3_then_IfBlock2_then_IfBlock1;
@@ -69,21 +69,21 @@ typedef struct {
   kcg_bool /* IfBlock1:then:IfBlock2:then:_L4/ */ _L4_then_IfBlock2_then_IfBlock1;
   kcg_bool /* IfBlock1:then:IfBlock2:then:_L5/ */ _L5_then_IfBlock2_then_IfBlock1;
   kcg_bool /* IfBlock1:then:IfBlock2:then:_L6/ */ _L6_then_IfBlock2_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:IfBlock2:then:_L7/ */ _L7_then_IfBlock2_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:IfBlock2:then:_L7/ */ _L7_then_IfBlock2_then_IfBlock1;
   ReceivedMessage_T_Common_Types_Pkg /* IfBlock1:else:_L2/ */ _L2_else_IfBlock1;
   ReceivedMessage_T_Common_Types_Pkg /* IfBlock1:else:_L1/ */ _L1_else_IfBlock1;
   kcg_bool /* isFromRBC/ */ isFromRBC;
-  kcg_int64 /* messageId/ */ messageId;
+  kcg_int32 /* messageId/ */ messageId;
   kcg_bool /* isFromSupervisingRBC/ */ isFromSupervisingRBC;
   ReceivedMessage_T_Common_Types_Pkg /* _L14/ */ _L14;
   MsgSource_T_Common_Types_Pkg /* _L24/ */ _L24;
   kcg_bool /* _L25/ */ _L25;
   MsgSource_T_Common_Types_Pkg /* _L26/ */ _L26;
   Radio_TrackTrain_Header_T_Radio_Types_Pkg /* _L27/ */ _L27;
-  kcg_int64 /* _L28/ */ _L28;
+  kcg_int32 /* _L28/ */ _L28;
   NID_MESSAGE /* _L29/ */ _L29;
   kcg_bool /* _L36/ */ _L36;
-  kcg_int64 /* _L37/ */ _L37;
+  kcg_int32 /* _L37/ */ _L37;
 } outC_SecondFilter_InformationFilter_Pkg_SecondFilter;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -94,7 +94,7 @@ extern void SecondFilter_InformationFilter_Pkg_SecondFilter(
   /* inMessageForBuffer/ */
   ReceivedMessage_T_Common_Types_Pkg *inMessageForBuffer,
   /* inSupervisingDevice/ */
-  kcg_int64 inSupervisingDevice,
+  kcg_int32 inSupervisingDevice,
   outC_SecondFilter_InformationFilter_Pkg_SecondFilter *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET
@@ -112,6 +112,6 @@ extern void SecondFilter_init_InformationFilter_Pkg_SecondFilter(
 #endif /* _SecondFilter_InformationFilter_Pkg_SecondFilter_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** SecondFilter_InformationFilter_Pkg_SecondFilter.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

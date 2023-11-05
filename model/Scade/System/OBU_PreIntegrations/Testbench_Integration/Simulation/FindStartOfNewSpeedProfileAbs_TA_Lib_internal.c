@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -17,9 +17,9 @@ void FindStartOfNewSpeedProfileAbs_TA_Lib_internal(
 {
   static kcg_size idx;
   static kcg_size idx1;
-  static kcg_int64 acc;
+  static kcg_int32 acc;
   static kcg_size idx2;
-  static kcg_int64 noname;
+  static kcg_int32 noname;
 
   kcg_copy_StaticSpeedProfile_t_TrackAtlasTypes(&outC->_L1, New_Profile);
   outC->_L2 = outC->_L1[0].d_static_abs;
@@ -27,7 +27,7 @@ void FindStartOfNewSpeedProfileAbs_TA_Lib_internal(
   for (idx = 0; idx < 50; idx++) {
     outC->_L198[idx] = outC->_L2;
   }
-  outC->_L100 = kcg_lit_int64(0);
+  outC->_L100 = kcg_lit_int32(0);
   kcg_copy_StaticSpeedProfile_t_TrackAtlasTypes(&outC->_L93, Profile_in);
   /* _L98/ */
   for (idx1 = 0; idx1 < 50; idx1++) {
@@ -42,14 +42,14 @@ void FindStartOfNewSpeedProfileAbs_TA_Lib_internal(
       acc = outC->_L99;
       /* _L94=(TA_Lib_internal::FindStartOfNewSpeedProfileAbs_LOOP#1)/ */
       FindStartOfNewSpeedProfileAbs_LOOP_TA_Lib_internal(
-        /* _L94= */(kcg_int64) idx2,
+        /* _L94= */(kcg_int32) idx2,
         acc,
         outC->_L198[idx2],
         &outC->_L98[idx2],
         &outC->Context_FindStartOfNewSpeedProfileAbs_LOOP_1[idx2]);
       outC->_L99 =
         outC->Context_FindStartOfNewSpeedProfileAbs_LOOP_1[idx2].relevant_section;
-      outC->_L94 = /* _L94= */(kcg_int64) (idx2 + 1);
+      outC->_L94 = /* _L94= */(kcg_int32) (idx2 + 1);
       /* _L94= */
       if (!outC->Context_FindStartOfNewSpeedProfileAbs_LOOP_1[idx2].cont) {
         break;
@@ -57,7 +57,7 @@ void FindStartOfNewSpeedProfileAbs_TA_Lib_internal(
     }
   }
   else {
-    outC->_L94 = kcg_lit_int64(0);
+    outC->_L94 = kcg_lit_int32(0);
   }
   noname = outC->_L94;
   outC->relevant_section = outC->_L99;
@@ -75,37 +75,37 @@ void FindStartOfNewSpeedProfileAbs_init_TA_Lib_internal(
   static kcg_size idx5;
 
   for (idx1 = 0; idx1 < 50; idx1++) {
-    outC->_L198[idx1] = kcg_lit_int64(0);
+    outC->_L198[idx1] = kcg_lit_int32(0);
   }
-  outC->_L100 = kcg_lit_int64(0);
-  outC->_L99 = kcg_lit_int64(0);
+  outC->_L100 = kcg_lit_int32(0);
+  outC->_L99 = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 50; idx3++) {
     for (idx2 = 0; idx2 < 50; idx2++) {
       outC->_L98[idx3][idx2].valid = kcg_true;
-      outC->_L98[idx3][idx2].d_static_abs = kcg_lit_int64(0);
-      outC->_L98[idx3][idx2].d_static_LRBG = kcg_lit_int64(0);
+      outC->_L98[idx3][idx2].d_static_abs = kcg_lit_int32(0);
+      outC->_L98[idx3][idx2].d_static_LRBG = kcg_lit_int32(0);
       outC->_L98[idx3][idx2].q_train_length_corr = kcg_true;
-      outC->_L98[idx3][idx2].v_static = kcg_lit_int64(0);
+      outC->_L98[idx3][idx2].v_static = kcg_lit_int32(0);
     }
   }
   outC->_L96 = kcg_true;
-  outC->_L94 = kcg_lit_int64(0);
+  outC->_L94 = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 50; idx4++) {
     outC->_L93[idx4].valid = kcg_true;
-    outC->_L93[idx4].d_static_abs = kcg_lit_int64(0);
-    outC->_L93[idx4].d_static_LRBG = kcg_lit_int64(0);
+    outC->_L93[idx4].d_static_abs = kcg_lit_int32(0);
+    outC->_L93[idx4].d_static_LRBG = kcg_lit_int32(0);
     outC->_L93[idx4].q_train_length_corr = kcg_true;
-    outC->_L93[idx4].v_static = kcg_lit_int64(0);
+    outC->_L93[idx4].v_static = kcg_lit_int32(0);
   }
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 50; idx5++) {
     outC->_L1[idx5].valid = kcg_true;
-    outC->_L1[idx5].d_static_abs = kcg_lit_int64(0);
-    outC->_L1[idx5].d_static_LRBG = kcg_lit_int64(0);
+    outC->_L1[idx5].d_static_abs = kcg_lit_int32(0);
+    outC->_L1[idx5].d_static_LRBG = kcg_lit_int32(0);
     outC->_L1[idx5].q_train_length_corr = kcg_true;
-    outC->_L1[idx5].v_static = kcg_lit_int64(0);
+    outC->_L1[idx5].v_static = kcg_lit_int32(0);
   }
-  outC->relevant_section = kcg_lit_int64(0);
+  outC->relevant_section = kcg_lit_int32(0);
   for (idx = 0; idx < 50; idx++) {
     /* _L94=(TA_Lib_internal::FindStartOfNewSpeedProfileAbs_LOOP#1)/ */
     FindStartOfNewSpeedProfileAbs_LOOP_init_TA_Lib_internal(
@@ -133,6 +133,6 @@ void FindStartOfNewSpeedProfileAbs_reset_TA_Lib_internal(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** FindStartOfNewSpeedProfileAbs_TA_Lib_internal.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

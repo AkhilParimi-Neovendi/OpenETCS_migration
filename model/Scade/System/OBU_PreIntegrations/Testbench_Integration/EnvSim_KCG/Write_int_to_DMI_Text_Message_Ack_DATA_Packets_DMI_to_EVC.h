@@ -27,8 +27,8 @@ typedef struct {
   DMI_Text_Message_Ack_int_array_T_DATA /* _L8/ */ _L8;
   DMI_Text_Message_Ack_T_DMI_Messages_DMI_to_EVC_Pkg /* _L12/ */ _L12;
   kcg_bool /* _L15/ */ _L15;
-  kcg_int64 /* _L14/ */ _L14;
-  kcg_int64 /* _L13/ */ _L13;
+  kcg_int32 /* _L14/ */ _L14;
+  kcg_int32 /* _L13/ */ _L13;
   DMI_Text_Message_Ack_T_DMI_Messages_DMI_to_EVC_Pkg /* _L16/ */ _L16;
 } outC_Write_int_to_DMI_Text_Message_Ack_DATA_Packets_DMI_to_EVC;
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -58,13 +58,13 @@ void Kv_intSetIterator_init_SDMConversionModelPkg(
   outC->_L3 = kcg_true;
   outC->_L2.valid = kcg_true;
   outC->_L2.q_nvkvintset = Q_NVKVINTSET_Freight_trains;
-  outC->_L2.a_nvp12 = kcg_lit_float64(0.0);
-  outC->_L2.a_nvp23 = kcg_lit_float64(0.0);
+  outC->_L2.a_nvp12 = kcg_lit_float32(0.0);
+  outC->_L2.a_nvp23 = kcg_lit_float32(0.0);
   for (idx = 0; idx < 7; idx++) {
     outC->_L2.nvkintArray[idx].valid = kcg_true;
-    outC->_L2.nvkintArray[idx].v_nvkvint = kcg_lit_int64(0);
-    outC->_L2.nvkintArray[idx].m_nvkvint12 = kcg_lit_float64(0.0);
-    outC->_L2.nvkintArray[idx].m_nvkvint23 = kcg_lit_float64(0.0);
+    outC->_L2.nvkintArray[idx].v_nvkvint = kcg_lit_int32(0);
+    outC->_L2.nvkintArray[idx].m_nvkvint12 = kcg_lit_float32(0.0);
+    outC->_L2.nvkintArray[idx].m_nvkvint23 = kcg_lit_float32(0.0);
   }
   outC->_L1 = kcg_true;
   outC->akku_out = kcg_true;
@@ -84,6 +84,6 @@ void Kv_intSetIterator_reset_SDMConversionModelPkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Kv_intSetIterator_SDMConversionModelPkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

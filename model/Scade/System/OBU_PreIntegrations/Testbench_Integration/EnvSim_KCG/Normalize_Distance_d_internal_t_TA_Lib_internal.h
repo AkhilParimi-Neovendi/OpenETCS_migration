@@ -23,15 +23,15 @@ typedef struct {
   kcg_bool /* IfBlock1: */ IfBlock1_clock;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* IfBlock1:then:_L3/ */ _L3_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L2/ */ _L2_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L3/ */ _L3_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L2/ */ _L2_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L1/ */ _L1_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L3/ */ _L3_then_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L2/ */ _L2_then_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L1/ */ _L1_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L3/ */ _L3_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L2/ */ _L2_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L3/ */ _L3_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L2/ */ _L2_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L1/ */ _L1_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L3/ */ _L3_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L2/ */ _L2_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L1/ */ _L1_then_else_IfBlock1;
   Q_SCALE /* q_scale_in/ */ q_scale_in;
   Q_SCALE /* _L1/ */ _L1;
 } outC_Normalize_Distance_d_internal_t_TA_Lib_internal;
@@ -42,7 +42,7 @@ extern void Normalize_Distance_d_internal_t_TA_Lib_internal(
   /* q_scale/ */
   Q_SCALE q_scale,
   /* d/ */
-  kcg_int64 d,
+  kcg_int32 d,
   outC_Normalize_Distance_d_internal_t_TA_Lib_internal *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

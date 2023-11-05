@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _Input_Level_Transition_InputManagement_H_
 #define _Input_Level_Transition_InputManagement_H_
@@ -27,8 +27,8 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   T_LevelTransition_PriorityTable_Level_And_Mode_Types_Pkg /* _L124/ */ _L124;
-  array_int64_7 /* _L126/ */ _L126;
-  array_int64_7 /* _L127/ */ _L127;
+  array_int32_7 /* _L126/ */ _L126;
+  array_int32_7 /* _L127/ */ _L127;
   T_LevelTransition_PriorityTable_Level_And_Mode_Types_Pkg /* _L129/ */ _L129;
   NID_LRBG /* _L130/ */ _L130;
   Location_T_Obu_BasicTypes_Pkg /* _L131/ */ _L131;
@@ -59,6 +59,6 @@ extern void Input_Level_Transition_init_InputManagement(
 #endif /* _Input_Level_Transition_InputManagement_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Input_Level_Transition_InputManagement.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

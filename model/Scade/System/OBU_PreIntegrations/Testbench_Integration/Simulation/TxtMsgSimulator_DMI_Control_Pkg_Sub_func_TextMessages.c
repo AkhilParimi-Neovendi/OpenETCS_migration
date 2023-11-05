@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -741,180 +741,180 @@ void TxtMsgSimulator_init_DMI_Control_Pkg_Sub_func_TextMessages(
   outC->SM1_state_act = SSM_st_insert1_SM1;
   outC->SM1_state_sel = SSM_st_insert1_SM1;
   outC->_L1_State9_SM1.valid = kcg_true;
-  outC->_L1_State9_SM1.system_clock = kcg_lit_int64(0);
-  outC->_L1_State9_SM1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L1_State9_SM1.system_clock = kcg_lit_int32(0);
+  outC->_L1_State9_SM1.textMessage_ID = kcg_lit_int32(0);
   outC->_L1_State9_SM1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L1_State9_SM1.l_text = kcg_lit_int64(0);
+  outC->_L1_State9_SM1.l_text = kcg_lit_int32(0);
   for (idx = 0; idx < 255; idx++) {
     outC->_L1_State9_SM1.x_text[idx] = ' ';
   }
   outC->_L1_State9_SM1.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L1_State9_SM1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L1_insert6_SM1.valid = kcg_true;
-  outC->_L1_insert6_SM1.system_clock = kcg_lit_int64(0);
-  outC->_L1_insert6_SM1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L1_insert6_SM1.system_clock = kcg_lit_int32(0);
+  outC->_L1_insert6_SM1.textMessage_ID = kcg_lit_int32(0);
   outC->_L1_insert6_SM1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L1_insert6_SM1.l_text = kcg_lit_int64(0);
+  outC->_L1_insert6_SM1.l_text = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 255; idx1++) {
     outC->_L1_insert6_SM1.x_text[idx1] = ' ';
   }
   outC->_L1_insert6_SM1.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L1_insert6_SM1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L1_State7_SM1.valid = kcg_true;
-  outC->_L1_State7_SM1.system_clock = kcg_lit_int64(0);
-  outC->_L1_State7_SM1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L1_State7_SM1.system_clock = kcg_lit_int32(0);
+  outC->_L1_State7_SM1.textMessage_ID = kcg_lit_int32(0);
   outC->_L1_State7_SM1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L1_State7_SM1.l_text = kcg_lit_int64(0);
+  outC->_L1_State7_SM1.l_text = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 255; idx2++) {
     outC->_L1_State7_SM1.x_text[idx2] = ' ';
   }
   outC->_L1_State7_SM1.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L1_State7_SM1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L1_insert5_SM1.valid = kcg_true;
-  outC->_L1_insert5_SM1.system_clock = kcg_lit_int64(0);
-  outC->_L1_insert5_SM1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L1_insert5_SM1.system_clock = kcg_lit_int32(0);
+  outC->_L1_insert5_SM1.textMessage_ID = kcg_lit_int32(0);
   outC->_L1_insert5_SM1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L1_insert5_SM1.l_text = kcg_lit_int64(0);
+  outC->_L1_insert5_SM1.l_text = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 255; idx3++) {
     outC->_L1_insert5_SM1.x_text[idx3] = ' ';
   }
   outC->_L1_insert5_SM1.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L1_insert5_SM1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L1_State3_SM1.valid = kcg_true;
-  outC->_L1_State3_SM1.system_clock = kcg_lit_int64(0);
-  outC->_L1_State3_SM1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L1_State3_SM1.system_clock = kcg_lit_int32(0);
+  outC->_L1_State3_SM1.textMessage_ID = kcg_lit_int32(0);
   outC->_L1_State3_SM1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L1_State3_SM1.l_text = kcg_lit_int64(0);
+  outC->_L1_State3_SM1.l_text = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 255; idx4++) {
     outC->_L1_State3_SM1.x_text[idx4] = ' ';
   }
   outC->_L1_State3_SM1.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L1_State3_SM1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L1_State5_SM1.valid = kcg_true;
-  outC->_L1_State5_SM1.system_clock = kcg_lit_int64(0);
-  outC->_L1_State5_SM1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L1_State5_SM1.system_clock = kcg_lit_int32(0);
+  outC->_L1_State5_SM1.textMessage_ID = kcg_lit_int32(0);
   outC->_L1_State5_SM1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L1_State5_SM1.l_text = kcg_lit_int64(0);
+  outC->_L1_State5_SM1.l_text = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 255; idx5++) {
     outC->_L1_State5_SM1.x_text[idx5] = ' ';
   }
   outC->_L1_State5_SM1.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L1_State5_SM1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L1_insertAck1_SM1.valid = kcg_true;
-  outC->_L1_insertAck1_SM1.system_clock = kcg_lit_int64(0);
-  outC->_L1_insertAck1_SM1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L1_insertAck1_SM1.system_clock = kcg_lit_int32(0);
+  outC->_L1_insertAck1_SM1.textMessage_ID = kcg_lit_int32(0);
   outC->_L1_insertAck1_SM1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L1_insertAck1_SM1.l_text = kcg_lit_int64(0);
+  outC->_L1_insertAck1_SM1.l_text = kcg_lit_int32(0);
   for (idx6 = 0; idx6 < 255; idx6++) {
     outC->_L1_insertAck1_SM1.x_text[idx6] = ' ';
   }
   outC->_L1_insertAck1_SM1.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L1_insertAck1_SM1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L1_insertAck2_SM1.valid = kcg_true;
-  outC->_L1_insertAck2_SM1.system_clock = kcg_lit_int64(0);
-  outC->_L1_insertAck2_SM1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L1_insertAck2_SM1.system_clock = kcg_lit_int32(0);
+  outC->_L1_insertAck2_SM1.textMessage_ID = kcg_lit_int32(0);
   outC->_L1_insertAck2_SM1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L1_insertAck2_SM1.l_text = kcg_lit_int64(0);
+  outC->_L1_insertAck2_SM1.l_text = kcg_lit_int32(0);
   for (idx7 = 0; idx7 < 255; idx7++) {
     outC->_L1_insertAck2_SM1.x_text[idx7] = ' ';
   }
   outC->_L1_insertAck2_SM1.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L1_insertAck2_SM1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L1_State0_SM1.valid = kcg_true;
-  outC->_L1_State0_SM1.system_clock = kcg_lit_int64(0);
-  outC->_L1_State0_SM1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L1_State0_SM1.system_clock = kcg_lit_int32(0);
+  outC->_L1_State0_SM1.textMessage_ID = kcg_lit_int32(0);
   outC->_L1_State0_SM1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L1_State0_SM1.l_text = kcg_lit_int64(0);
+  outC->_L1_State0_SM1.l_text = kcg_lit_int32(0);
   for (idx8 = 0; idx8 < 255; idx8++) {
     outC->_L1_State0_SM1.x_text[idx8] = ' ';
   }
   outC->_L1_State0_SM1.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L1_State0_SM1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L1_State8_SM1.valid = kcg_true;
-  outC->_L1_State8_SM1.system_clock = kcg_lit_int64(0);
-  outC->_L1_State8_SM1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L1_State8_SM1.system_clock = kcg_lit_int32(0);
+  outC->_L1_State8_SM1.textMessage_ID = kcg_lit_int32(0);
   outC->_L1_State8_SM1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L1_State8_SM1.l_text = kcg_lit_int64(0);
+  outC->_L1_State8_SM1.l_text = kcg_lit_int32(0);
   for (idx9 = 0; idx9 < 255; idx9++) {
     outC->_L1_State8_SM1.x_text[idx9] = ' ';
   }
   outC->_L1_State8_SM1.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L1_State8_SM1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L1_insert4_SM1.valid = kcg_true;
-  outC->_L1_insert4_SM1.system_clock = kcg_lit_int64(0);
-  outC->_L1_insert4_SM1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L1_insert4_SM1.system_clock = kcg_lit_int32(0);
+  outC->_L1_insert4_SM1.textMessage_ID = kcg_lit_int32(0);
   outC->_L1_insert4_SM1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L1_insert4_SM1.l_text = kcg_lit_int64(0);
+  outC->_L1_insert4_SM1.l_text = kcg_lit_int32(0);
   for (idx10 = 0; idx10 < 255; idx10++) {
     outC->_L1_insert4_SM1.x_text[idx10] = ' ';
   }
   outC->_L1_insert4_SM1.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L1_insert4_SM1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L1_State6_SM1.valid = kcg_true;
-  outC->_L1_State6_SM1.system_clock = kcg_lit_int64(0);
-  outC->_L1_State6_SM1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L1_State6_SM1.system_clock = kcg_lit_int32(0);
+  outC->_L1_State6_SM1.textMessage_ID = kcg_lit_int32(0);
   outC->_L1_State6_SM1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L1_State6_SM1.l_text = kcg_lit_int64(0);
+  outC->_L1_State6_SM1.l_text = kcg_lit_int32(0);
   for (idx11 = 0; idx11 < 255; idx11++) {
     outC->_L1_State6_SM1.x_text[idx11] = ' ';
   }
   outC->_L1_State6_SM1.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L1_State6_SM1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L1_insert3_SM1.valid = kcg_true;
-  outC->_L1_insert3_SM1.system_clock = kcg_lit_int64(0);
-  outC->_L1_insert3_SM1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L1_insert3_SM1.system_clock = kcg_lit_int32(0);
+  outC->_L1_insert3_SM1.textMessage_ID = kcg_lit_int32(0);
   outC->_L1_insert3_SM1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L1_insert3_SM1.l_text = kcg_lit_int64(0);
+  outC->_L1_insert3_SM1.l_text = kcg_lit_int32(0);
   for (idx12 = 0; idx12 < 255; idx12++) {
     outC->_L1_insert3_SM1.x_text[idx12] = ' ';
   }
   outC->_L1_insert3_SM1.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L1_insert3_SM1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L1_State4_SM1.valid = kcg_true;
-  outC->_L1_State4_SM1.system_clock = kcg_lit_int64(0);
-  outC->_L1_State4_SM1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L1_State4_SM1.system_clock = kcg_lit_int32(0);
+  outC->_L1_State4_SM1.textMessage_ID = kcg_lit_int32(0);
   outC->_L1_State4_SM1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L1_State4_SM1.l_text = kcg_lit_int64(0);
+  outC->_L1_State4_SM1.l_text = kcg_lit_int32(0);
   for (idx13 = 0; idx13 < 255; idx13++) {
     outC->_L1_State4_SM1.x_text[idx13] = ' ';
   }
   outC->_L1_State4_SM1.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L1_State4_SM1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L1_insert2_SM1.valid = kcg_true;
-  outC->_L1_insert2_SM1.system_clock = kcg_lit_int64(0);
-  outC->_L1_insert2_SM1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L1_insert2_SM1.system_clock = kcg_lit_int32(0);
+  outC->_L1_insert2_SM1.textMessage_ID = kcg_lit_int32(0);
   outC->_L1_insert2_SM1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L1_insert2_SM1.l_text = kcg_lit_int64(0);
+  outC->_L1_insert2_SM1.l_text = kcg_lit_int32(0);
   for (idx14 = 0; idx14 < 255; idx14++) {
     outC->_L1_insert2_SM1.x_text[idx14] = ' ';
   }
   outC->_L1_insert2_SM1.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L1_insert2_SM1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L1_State2_SM1.valid = kcg_true;
-  outC->_L1_State2_SM1.system_clock = kcg_lit_int64(0);
-  outC->_L1_State2_SM1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L1_State2_SM1.system_clock = kcg_lit_int32(0);
+  outC->_L1_State2_SM1.textMessage_ID = kcg_lit_int32(0);
   outC->_L1_State2_SM1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L1_State2_SM1.l_text = kcg_lit_int64(0);
+  outC->_L1_State2_SM1.l_text = kcg_lit_int32(0);
   for (idx15 = 0; idx15 < 255; idx15++) {
     outC->_L1_State2_SM1.x_text[idx15] = ' ';
   }
   outC->_L1_State2_SM1.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L1_State2_SM1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L1_insert1_SM1.valid = kcg_true;
-  outC->_L1_insert1_SM1.system_clock = kcg_lit_int64(0);
-  outC->_L1_insert1_SM1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L1_insert1_SM1.system_clock = kcg_lit_int32(0);
+  outC->_L1_insert1_SM1.textMessage_ID = kcg_lit_int32(0);
   outC->_L1_insert1_SM1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L1_insert1_SM1.l_text = kcg_lit_int64(0);
+  outC->_L1_insert1_SM1.l_text = kcg_lit_int32(0);
   for (idx16 = 0; idx16 < 255; idx16++) {
     outC->_L1_insert1_SM1.x_text[idx16] = ' ';
   }
   outC->_L1_insert1_SM1.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L1_insert1_SM1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->txt.valid = kcg_true;
-  outC->txt.system_clock = kcg_lit_int64(0);
-  outC->txt.textMessage_ID = kcg_lit_int64(0);
+  outC->txt.system_clock = kcg_lit_int32(0);
+  outC->txt.textMessage_ID = kcg_lit_int32(0);
   outC->txt.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->txt.l_text = kcg_lit_int64(0);
+  outC->txt.l_text = kcg_lit_int32(0);
   for (idx17 = 0; idx17 < 255; idx17++) {
     outC->txt.x_text[idx17] = ' ';
   }
@@ -958,6 +958,6 @@ void kcg_load_SV_TxtMsgSimulator_DMI_Control_Pkg_Sub_func_TextMessages(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** TxtMsgSimulator_DMI_Control_Pkg_Sub_func_TextMessages.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -21,8 +21,8 @@ void GradientProfile_to_DMI_loop_TA_Export(
   outC->_L59 = ZERO_TA_Export;
   kcg_copy_Gradient_section_t_TrackAtlasTypes(&outC->_L20, Gradient_section_in);
   outC->_L45 = outC->_L20.Gradient;
-  outC->_L27 = kcg_lit_int64(0);
-  outC->_L25 = kcg_lit_int64(255);
+  outC->_L27 = kcg_lit_int32(0);
+  outC->_L25 = kcg_lit_int32(255);
   outC->_L24 = outC->_L45 == outC->_L25;
   /* _L26= */
   if (outC->_L24) {
@@ -84,41 +84,41 @@ void GradientProfile_to_DMI_loop_TA_Export(
 void GradientProfile_to_DMI_loop_init_TA_Export(
   outC_GradientProfile_to_DMI_loop_TA_Export *outC)
 {
-  outC->_L60 = kcg_lit_int64(0);
-  outC->_L59 = kcg_lit_int64(0);
-  outC->_L58 = kcg_lit_int64(0);
-  outC->_L56 = kcg_lit_int64(0);
-  outC->_L55 = kcg_lit_int64(0);
-  outC->_L54 = kcg_lit_int64(0);
-  outC->_L53 = kcg_lit_int64(0);
+  outC->_L60 = kcg_lit_int32(0);
+  outC->_L59 = kcg_lit_int32(0);
+  outC->_L58 = kcg_lit_int32(0);
+  outC->_L56 = kcg_lit_int32(0);
+  outC->_L55 = kcg_lit_int32(0);
+  outC->_L54 = kcg_lit_int32(0);
+  outC->_L53 = kcg_lit_int32(0);
   outC->_L52 = kcg_true;
-  outC->_L51 = kcg_lit_int64(0);
+  outC->_L51 = kcg_lit_int32(0);
   outC->_L50 = kcg_true;
   outC->_L48 = kcg_true;
-  outC->_L47 = kcg_lit_int64(0);
+  outC->_L47 = kcg_lit_int32(0);
   outC->_L42 = kcg_true;
-  outC->_L43 = kcg_lit_int64(0);
-  outC->_L44 = kcg_lit_int64(0);
-  outC->_L45 = kcg_lit_int64(0);
-  outC->_L46 = kcg_lit_int64(0);
+  outC->_L43 = kcg_lit_int32(0);
+  outC->_L44 = kcg_lit_int32(0);
+  outC->_L45 = kcg_lit_int32(0);
+  outC->_L46 = kcg_lit_int32(0);
   outC->_L40.valid = kcg_true;
-  outC->_L40.begin_section = kcg_lit_int64(0);
-  outC->_L40.end_section = kcg_lit_int64(0);
-  outC->_L40.gradient = kcg_lit_int64(0);
-  outC->_L28 = kcg_lit_int64(0);
-  outC->_L27 = kcg_lit_int64(0);
-  outC->_L26 = kcg_lit_int64(0);
+  outC->_L40.begin_section = kcg_lit_int32(0);
+  outC->_L40.end_section = kcg_lit_int32(0);
+  outC->_L40.gradient = kcg_lit_int32(0);
+  outC->_L28 = kcg_lit_int32(0);
+  outC->_L27 = kcg_lit_int32(0);
+  outC->_L26 = kcg_lit_int32(0);
   outC->_L24 = kcg_true;
-  outC->_L25 = kcg_lit_int64(0);
+  outC->_L25 = kcg_lit_int32(0);
   outC->_L20.valid = kcg_true;
-  outC->_L20.Loc_Absolute = kcg_lit_int64(0);
-  outC->_L20.Loc_LRBG = kcg_lit_int64(0);
-  outC->_L20.Gradient = kcg_lit_int64(0);
-  outC->_L20.L_Gradient = kcg_lit_int64(0);
+  outC->_L20.Loc_Absolute = kcg_lit_int32(0);
+  outC->_L20.Loc_LRBG = kcg_lit_int32(0);
+  outC->_L20.Gradient = kcg_lit_int32(0);
+  outC->_L20.L_Gradient = kcg_lit_int32(0);
   outC->Gradiient_section_for_DMI_out.valid = kcg_true;
-  outC->Gradiient_section_for_DMI_out.begin_section = kcg_lit_int64(0);
-  outC->Gradiient_section_for_DMI_out.end_section = kcg_lit_int64(0);
-  outC->Gradiient_section_for_DMI_out.gradient = kcg_lit_int64(0);
+  outC->Gradiient_section_for_DMI_out.begin_section = kcg_lit_int32(0);
+  outC->Gradiient_section_for_DMI_out.end_section = kcg_lit_int32(0);
+  outC->Gradiient_section_for_DMI_out.gradient = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -134,6 +134,6 @@ void GradientProfile_to_DMI_loop_reset_TA_Export(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** GradientProfile_to_DMI_loop_TA_Export.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

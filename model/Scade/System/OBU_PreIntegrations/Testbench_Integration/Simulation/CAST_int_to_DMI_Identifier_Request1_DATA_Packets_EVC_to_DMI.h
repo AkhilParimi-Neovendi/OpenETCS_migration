@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _CAST_int_to_DMI_Identifier_Request1_DATA_Packets_EVC_to_DMI_H_
 #define _CAST_int_to_DMI_Identifier_Request1_DATA_Packets_EVC_to_DMI_H_
@@ -32,19 +32,19 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   DMI_Identifier_Request_T_DMI_Messages_EVC_to_DMI_Pkg /* _L19/ */ _L19;
   DMI_Identifier_Request_int_array_T_DATA /* _L20/ */ _L20;
-  array_int64_5 /* _L21/ */ _L21;
+  array_int32_5 /* _L21/ */ _L21;
   kcg_bool /* _L22/ */ _L22;
-  kcg_int64 /* _L28/ */ _L28;
-  kcg_int64 /* _L27/ */ _L27;
-  kcg_int64 /* _L26/ */ _L26;
-  kcg_int64 /* _L25/ */ _L25;
-  kcg_int64 /* _L24/ */ _L24;
+  kcg_int32 /* _L28/ */ _L28;
+  kcg_int32 /* _L27/ */ _L27;
+  kcg_int32 /* _L26/ */ _L26;
+  kcg_int32 /* _L25/ */ _L25;
+  kcg_int32 /* _L24/ */ _L24;
   M_VERSION /* _L29/ */ _L29;
   M_VERSION /* _L30/ */ _L30;
   L_TEXT /* _L31/ */ _L31;
   DMI_TEXT_INT_Array_T_DATA /* _L32/ */ _L32;
   DMI_TEXT_DMI_Types_Pkg /* _L33/ */ _L33;
-  kcg_int64 /* _L34/ */ _L34;
+  kcg_int32 /* _L34/ */ _L34;
 } outC_CAST_int_to_DMI_Identifier_Request1_DATA_Packets_EVC_to_DMI;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -69,6 +69,6 @@ extern void CAST_int_to_DMI_Identifier_Request1_init_DATA_Packets_EVC_to_DMI(
 #endif /* _CAST_int_to_DMI_Identifier_Request1_DATA_Packets_EVC_to_DMI_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_int_to_DMI_Identifier_Request1_DATA_Packets_EVC_to_DMI.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

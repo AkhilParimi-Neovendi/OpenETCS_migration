@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _CAST_DMI_Dynamic_to_int1_DATA_Packets_EVC_to_DMI_H_
 #define _CAST_DMI_Dynamic_to_int1_DATA_Packets_EVC_to_DMI_H_
@@ -60,16 +60,16 @@ typedef struct {
   L_internal_Type_Obu_BasicTypes_Pkg /* _L4/ */ _L4;
   connectionStatusRadioUnit_T_API_RadioCommunication_Pkg /* _L3/ */ _L3;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L2/ */ _L2;
-  kcg_int64 /* _L25/ */ _L25;
-  kcg_int64 /* _L26/ */ _L26;
-  kcg_int64 /* _L27/ */ _L27;
-  kcg_int64 /* _L28/ */ _L28;
+  kcg_int32 /* _L25/ */ _L25;
+  kcg_int32 /* _L26/ */ _L26;
+  kcg_int32 /* _L27/ */ _L27;
+  kcg_int32 /* _L28/ */ _L28;
   M_SupervisionDisplay_INT_T_DATA /* _L29/ */ _L29;
-  kcg_int64 /* _L30/ */ _L30;
+  kcg_int32 /* _L30/ */ _L30;
   M_SUPERVISION_STATUS_INT_T_DATA /* _L31/ */ _L31;
   connectionStatusRadioUnit_INT_T_DATA /* _L32/ */ _L32;
-  array_int64_24 /* _L33/ */ _L33;
-  kcg_int64 /* _L36/ */ _L36;
+  array_int32_24 /* _L33/ */ _L33;
+  kcg_int32 /* _L36/ */ _L36;
 } outC_CAST_DMI_Dynamic_to_int1_DATA_Packets_EVC_to_DMI;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -94,6 +94,6 @@ extern void CAST_DMI_Dynamic_to_int1_init_DATA_Packets_EVC_to_DMI(
 #endif /* _CAST_DMI_Dynamic_to_int1_DATA_Packets_EVC_to_DMI_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_DMI_Dynamic_to_int1_DATA_Packets_EVC_to_DMI.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

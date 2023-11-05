@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _changeLevelByDiver_manage_DMI_Input_Pkg_H_
 #define _changeLevelByDiver_manage_DMI_Input_Pkg_H_
@@ -27,7 +27,7 @@ typedef struct {
   T_LevelTransition_Level_And_Mode_Types_Pkg /* _L3/ */ _L3;
   T_LevelTansitionInfo_Level_And_Mode_Types_Pkg /* _L4/ */ _L4;
   M_LEVEL /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L6/ */ _L6;
   T_TransitionType_Level_And_Mode_Types_Pkg /* _L7/ */ _L7;
   T_LevelTansitionInfo_Level_And_Mode_Types_Pkg /* _L8/ */ _L8;
   T_LevelTansitionInfo_Level_And_Mode_Types_Pkg /* _L9/ */ _L9;
@@ -49,10 +49,10 @@ typedef struct {
   NID_STM_DMI_Types_Pkg /* _L26/ */ _L26;
   NID_STM_DMI_Types_Pkg /* _L28/ */ _L28;
   NID_STM_DMI_Types_Pkg /* _L29/ */ _L29;
-  kcg_int64 /* _L41/ */ _L41;
+  kcg_int32 /* _L41/ */ _L41;
   kcg_bool /* _L42/ */ _L42;
-  kcg_int64 /* _L43/ */ _L43;
-  kcg_int64 /* _L49/ */ _L49;
+  kcg_int32 /* _L43/ */ _L43;
+  kcg_int32 /* _L49/ */ _L49;
 } outC_changeLevelByDiver_manage_DMI_Input_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -79,6 +79,6 @@ extern void changeLevelByDiver_init_manage_DMI_Input_Pkg(
 #endif /* _changeLevelByDiver_manage_DMI_Input_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** changeLevelByDiver_manage_DMI_Input_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

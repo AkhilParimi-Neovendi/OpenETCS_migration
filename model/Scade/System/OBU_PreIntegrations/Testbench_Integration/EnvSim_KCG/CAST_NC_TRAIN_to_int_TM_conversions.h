@@ -14,7 +14,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* nc_train_int/ */ nc_train_int;
+  kcg_int32 /* nc_train_int/ */ nc_train_int;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
@@ -26,14 +26,14 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   kcg_bool /* IfBlock1:then:_L5/ */ _L5_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
   kcg_bool /* IfBlock1:else:else:then:_L4/ */ _L4_then_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:then:_L2/ */ _L2_then_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:else:else:_L2/ */ _L2_else_else_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:then:_L2/ */ _L2_then_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:else:else:_L2/ */ _L2_else_else_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:else:else:_L1/ */ _L1_else_else_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:else:then:_L2/ */ _L2_then_else_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:else:then:_L2/ */ _L2_then_else_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:else:then:_L4/ */ _L4_then_else_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L3/ */ _L3_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L3/ */ _L3_then_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L5/ */ _L5_then_else_IfBlock1;
   NC_TRAIN /* nc_train_in/ */ nc_train_in;
   kcg_bool /* error/ */ error;

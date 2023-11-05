@@ -21,7 +21,7 @@ typedef struct {
 /* ===========  node initialization and cycle functions  =========== */
 /* EnvSim::ProbeTracksideInput */
 extern void ProbeTracksideInput_EnvSim(
-  /* EnvSim::ProbeTracksideInput::currentPosition */ kcg_float64 currentPosition,
+  /* EnvSim::ProbeTracksideInput::currentPosition */ kcg_float32 currentPosition,
   /* EnvSim::ProbeTracksideInput::baliseMessage */ CompressedBaliseMessage_TM *baliseMessage,
   /* EnvSim::ProbeTracksideInput::radioMessage */ CompressedRadioMessage_TM *radioMessage,
   /* EnvSim::ProbeTracksideInput::trainMessage */ M_TrainTrack_Message_T_TM_radio_messages *trainMessage,

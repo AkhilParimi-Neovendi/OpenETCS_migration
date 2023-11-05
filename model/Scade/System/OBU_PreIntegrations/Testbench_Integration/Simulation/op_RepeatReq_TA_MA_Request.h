@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _op_RepeatReq_TA_MA_Request_H_
 #define _op_RepeatReq_TA_MA_Request_H_
@@ -26,7 +26,7 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   T_internal_Type_Obu_BasicTypes_Pkg /* _L9/ */ _L9;
   kcg_bool /* _L7/ */ _L7;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   kcg_bool /* _L17/ */ _L17;
   kcg_bool /* _L18/ */ _L18;
   kcg_bool /* _L19/ */ _L19;
@@ -34,9 +34,9 @@ typedef struct {
   T_internal_Type_Obu_BasicTypes_Pkg /* _L21/ */ _L21;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L22/ */ _L22;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L16/ */ _L16;
-  kcg_int64 /* _L27/ */ _L27;
+  kcg_int32 /* _L27/ */ _L27;
   T_CYCLOC /* _L28/ */ _L28;
-  kcg_int64 /* _L29/ */ _L29;
+  kcg_int32 /* _L29/ */ _L29;
 } outC_op_RepeatReq_TA_MA_Request;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -82,6 +82,6 @@ extern void kcg_load_SV_op_RepeatReq_TA_MA_Request(
 #endif /* _op_RepeatReq_TA_MA_Request_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** op_RepeatReq_TA_MA_Request.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

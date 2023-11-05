@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,7 +10,7 @@
 /* DMI_Control_Pkg::Sub_func::Set_DriverID_packet/ */
 void Set_DriverID_packet_DMI_Control_Pkg_Sub_func(
   /* DriverID/ */
-  array_int64_9 *DriverID,
+  array_int32_9 *DriverID,
   /* valid/ */
   kcg_bool valid,
   /* CurrentSystemTime/ */
@@ -21,7 +21,7 @@ void Set_DriverID_packet_DMI_Control_Pkg_Sub_func(
 
   outC->_L2 = valid;
   outC->_L3 = CurrentSystemTime;
-  kcg_copy_array_int64_9(&outC->_L1, DriverID);
+  kcg_copy_array_int32_9(&outC->_L1, DriverID);
   /* _L4= */
   for (idx = 0; idx < 9; idx++) {
     /* _L4=(DMI_Control_Pkg::Utils::ASCII_to_Char_iterator#1)/ */
@@ -51,7 +51,7 @@ void Set_DriverID_packet_init_DMI_Control_Pkg_Sub_func(
   static kcg_size idx4;
 
   outC->_L5.valid = kcg_true;
-  outC->_L5.systemTime = kcg_lit_int64(0);
+  outC->_L5.systemTime = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 9; idx1++) {
     outC->_L5.driverIdentifier[idx1] = ' ';
   }
@@ -59,12 +59,12 @@ void Set_DriverID_packet_init_DMI_Control_Pkg_Sub_func(
     outC->_L4[idx2] = ' ';
   }
   for (idx3 = 0; idx3 < 9; idx3++) {
-    outC->_L1[idx3] = kcg_lit_int64(0);
+    outC->_L1[idx3] = kcg_lit_int32(0);
   }
   outC->_L2 = kcg_true;
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->DMI_DriverID_packet.valid = kcg_true;
-  outC->DMI_DriverID_packet.systemTime = kcg_lit_int64(0);
+  outC->DMI_DriverID_packet.systemTime = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 9; idx4++) {
     outC->DMI_DriverID_packet.driverIdentifier[idx4] = ' ';
   }
@@ -95,6 +95,6 @@ void Set_DriverID_packet_reset_DMI_Control_Pkg_Sub_func(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Set_DriverID_packet_DMI_Control_Pkg_Sub_func.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

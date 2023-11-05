@@ -17,7 +17,7 @@ void Write_int_to_DMI_Status_DATA_Packets_DMI_to_EVC(
 
   kcg_copy_DMI_Status_int_array_T_DATA(&outC->_L2, dmi_status_int);
   outC->_L21 = outC->_L2[0];
-  outC->_L20 = kcg_lit_int64(1);
+  outC->_L20 = kcg_lit_int32(1);
   outC->_L19 = outC->_L20 == outC->_L21;
   outC->every = outC->_L19;
   if (outC->every) {
@@ -51,24 +51,24 @@ void Write_int_to_DMI_Status_init_DATA_Packets_DMI_to_EVC(
   static kcg_size idx;
 
   outC->_L23.valid = kcg_true;
-  outC->_L23.systemTime = kcg_lit_int64(0);
+  outC->_L23.systemTime = kcg_lit_int32(0);
   outC->_L23.statusSet = Running_state_DMI_Types_Pkg;
-  outC->_L23.nAlive = kcg_lit_int64(0);
+  outC->_L23.nAlive = kcg_lit_int32(0);
   outC->_L22.valid = kcg_true;
-  outC->_L22.systemTime = kcg_lit_int64(0);
+  outC->_L22.systemTime = kcg_lit_int32(0);
   outC->_L22.statusSet = Running_state_DMI_Types_Pkg;
-  outC->_L22.nAlive = kcg_lit_int64(0);
+  outC->_L22.nAlive = kcg_lit_int32(0);
   outC->_L19 = kcg_true;
-  outC->_L20 = kcg_lit_int64(0);
-  outC->_L21 = kcg_lit_int64(0);
+  outC->_L20 = kcg_lit_int32(0);
+  outC->_L21 = kcg_lit_int32(0);
   for (idx = 0; idx < 4; idx++) {
-    outC->_L2[idx] = kcg_lit_int64(0);
+    outC->_L2[idx] = kcg_lit_int32(0);
   }
   outC->every = kcg_true;
   outC->dim_status_ct.valid = kcg_true;
-  outC->dim_status_ct.systemTime = kcg_lit_int64(0);
+  outC->dim_status_ct.systemTime = kcg_lit_int32(0);
   outC->dim_status_ct.statusSet = Running_state_DMI_Types_Pkg;
-  outC->dim_status_ct.nAlive = kcg_lit_int64(0);
+  outC->dim_status_ct.nAlive = kcg_lit_int32(0);
   /* _L22=(DATA::Packets::DMI_to_EVC::C_int_to_DMI_Status#1)/ */
   C_int_to_DMI_Status_init_DATA_Packets_DMI_to_EVC(
     &outC->Context_C_int_to_DMI_Status_1);

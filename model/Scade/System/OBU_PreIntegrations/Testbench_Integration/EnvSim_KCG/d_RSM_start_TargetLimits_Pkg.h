@@ -39,10 +39,10 @@ typedef struct {
   kcg_bool /* _L11/ */ _L11;
   ParabolaCurve_T_CalcBrakingCurves_types /* _L13/ */ _L13;
   V_internal_real_Type_SDM_Types_Pkg /* _L14/ */ _L14;
-  kcg_float64 /* _L16/ */ _L16;
+  kcg_float32 /* _L16/ */ _L16;
   L_internal_real_Type_SDM_Types_Pkg /* _L18/ */ _L18;
   L_internal_real_Type_SDM_Types_Pkg /* _L19/ */ _L19;
-  kcg_float64 /* _L20/ */ _L20;
+  kcg_float32 /* _L20/ */ _L20;
   L_internal_real_Type_SDM_Types_Pkg /* _L21/ */ _L21;
   L_internal_real_Type_SDM_Types_Pkg /* _L22/ */ _L22;
   kcg_bool /* _L24/ */ _L24;

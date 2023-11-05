@@ -61,24 +61,24 @@ void RBCSessionRequests_init_OutputToRBC(
   outC->_L19 = M_LEVEL_Level_0;
   outC->_L18 = M_LEVEL_Level_0;
   outC->_L17 = M_LEVEL_Level_0;
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L14 = kcg_lit_int64(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L14 = kcg_lit_int32(0);
   outC->_L15.level = M_LEVEL_Level_0;
-  outC->_L15.position = kcg_lit_int64(0);
+  outC->_L15.position = kcg_lit_int32(0);
   outC->_L15.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L15.immediateAck = kcg_true;
-  outC->_L15.AckLength = kcg_lit_int64(0);
+  outC->_L15.AckLength = kcg_lit_int32(0);
   outC->_L16 = kcg_true;
   outC->_L12.is_set = kcg_true;
   outC->_L12.transition.level = M_LEVEL_Level_0;
-  outC->_L12.transition.position = kcg_lit_int64(0);
+  outC->_L12.transition.position = kcg_lit_int32(0);
   outC->_L12.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L12.transition.immediateAck = kcg_true;
-  outC->_L12.transition.AckLength = kcg_lit_int64(0);
-  outC->_L12.LRBG = kcg_lit_int64(0);
-  outC->_L12.referenceLocation = kcg_lit_int64(0);
+  outC->_L12.transition.AckLength = kcg_lit_int32(0);
+  outC->_L12.LRBG = kcg_lit_int32(0);
+  outC->_L12.referenceLocation = kcg_lit_int32(0);
   outC->_L1 = M_LEVEL_Level_0;
   outC->_L11 = kcg_true;
   outC->_L10 = kcg_true;

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -14,133 +14,133 @@ void CAST_DMI_StatusSet_to_int_DATA_Variables(
   outC_CAST_DMI_StatusSet_to_int_DATA_Variables *outC)
 {
   /* dmi_statusSet_int/ */
-  static kcg_int64 dmi_statusSet_int_partial;
+  static kcg_int32 dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _1_dmi_statusSet_int_partial;
+  static kcg_int32 _1_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _2_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _3_dmi_statusSet_int_partial;
+  static kcg_int32 _3_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _4_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _5_dmi_statusSet_int_partial;
+  static kcg_int32 _5_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _6_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _7_dmi_statusSet_int_partial;
+  static kcg_int32 _7_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _8_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _9_dmi_statusSet_int_partial;
+  static kcg_int32 _9_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _10_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _11_dmi_statusSet_int_partial;
+  static kcg_int32 _11_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _12_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _13_dmi_statusSet_int_partial;
+  static kcg_int32 _13_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _14_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _15_dmi_statusSet_int_partial;
+  static kcg_int32 _15_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _16_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _17_dmi_statusSet_int_partial;
+  static kcg_int32 _17_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _18_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _19_dmi_statusSet_int_partial;
+  static kcg_int32 _19_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _20_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _21_dmi_statusSet_int_partial;
+  static kcg_int32 _21_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _22_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _23_dmi_statusSet_int_partial;
+  static kcg_int32 _23_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _24_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _25_dmi_statusSet_int_partial;
+  static kcg_int32 _25_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _26_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _27_dmi_statusSet_int_partial;
+  static kcg_int32 _27_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _28_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _29_dmi_statusSet_int_partial;
+  static kcg_int32 _29_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _30_error_partial;
   /* error/ */
   static kcg_bool _31_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _32_dmi_statusSet_int_partial;
+  static kcg_int32 _32_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _33_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _34_dmi_statusSet_int_partial;
+  static kcg_int32 _34_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _35_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _36_dmi_statusSet_int_partial;
+  static kcg_int32 _36_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _37_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _38_dmi_statusSet_int_partial;
+  static kcg_int32 _38_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _39_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _40_dmi_statusSet_int_partial;
+  static kcg_int32 _40_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _41_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _42_dmi_statusSet_int_partial;
+  static kcg_int32 _42_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _43_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _44_dmi_statusSet_int_partial;
+  static kcg_int32 _44_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _45_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _46_dmi_statusSet_int_partial;
+  static kcg_int32 _46_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _47_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _48_dmi_statusSet_int_partial;
+  static kcg_int32 _48_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _49_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _50_dmi_statusSet_int_partial;
+  static kcg_int32 _50_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _51_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _52_dmi_statusSet_int_partial;
+  static kcg_int32 _52_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _53_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _54_dmi_statusSet_int_partial;
+  static kcg_int32 _54_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _55_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _56_dmi_statusSet_int_partial;
+  static kcg_int32 _56_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _57_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _58_dmi_statusSet_int_partial;
+  static kcg_int32 _58_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _59_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _60_dmi_statusSet_int_partial;
+  static kcg_int32 _60_dmi_statusSet_int_partial;
   /* error/ */
   static kcg_bool _61_error_partial;
   /* dmi_statusSet_int/ */
-  static kcg_int64 _62_dmi_statusSet_int_partial;
+  static kcg_int32 _62_dmi_statusSet_int_partial;
   static kcg_bool noname;
 
   outC->IfBlock1_clock = dmi_statusSet_ct == ENUM_DMI_StatusSet_T_Running_state;
@@ -521,77 +521,77 @@ void CAST_DMI_StatusSet_to_int_init_DATA_Variables(
   outC->error = kcg_true;
   outC->IfBlock1_clock = kcg_true;
   outC->_L3_then_else_IfBlock1 = kcg_true;
-  outC->_L1_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_IfBlock1 = kcg_true;
   outC->_L2_then_else_else_else_IfBlock1 = kcg_true;
-  outC->_L1_then_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_else_else_IfBlock1 = kcg_true;
   outC->_L3_then_else_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L2_then_else_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L2_then_else_else_else_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L3_then_else_else_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L2_then_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L3_then_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L2_then_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L3_then_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L2_then_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L3_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L2_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L2_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L2_then_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L2_then_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->else_clock_else_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L2_then_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->else_clock_else_else_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L2_then_else_else_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->else_clock_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L2_then_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_IfBlock1 = kcg_true;
   outC->else_clock_else_else_IfBlock1 = kcg_true;
-  outC->_L1_then_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L2_then_else_else_IfBlock1 = kcg_true;
   outC->else_clock_IfBlock1 = kcg_true;
-  outC->_L1_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L3_then_IfBlock1 = kcg_true;
-  outC->dmi_statusSet_int = kcg_lit_int64(0);
+  outC->dmi_statusSet_int = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -607,6 +607,6 @@ void CAST_DMI_StatusSet_to_int_reset_DATA_Variables(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_DMI_StatusSet_to_int_DATA_Variables.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

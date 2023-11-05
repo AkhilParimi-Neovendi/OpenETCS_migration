@@ -51,7 +51,7 @@ typedef struct {
   R_data_internal_T_InfraLib /* _L2/ */ _L2;
   M_TrackTrain_Radio_T_TM_radio_messages /* _L3/ */ _L3;
   CompressedPackets_T_Common_Types_Pkg /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   kcg_bool /* _L6/ */ _L6;
   R_data_internal_T_InfraLib /* _L7/ */ _L7;
   CompressedPackets_T_Common_Types_Pkg /* _L9/ */ _L9;
@@ -76,7 +76,7 @@ extern void Amsterdam_Utrecht_Lijn1_RBC_AmsterdamUtrechtL2_AmsterdamUtrechtTrack
   /* Packets_in/ */
   CompressedPackets_T_Common_Types_Pkg *Packets_in,
   /* Trigger_in/ */
-  kcg_int64 Trigger_in,
+  kcg_int32 Trigger_in,
   /* Message_sent/ */
   kcg_bool Message_sent,
   outC_Amsterdam_Utrecht_Lijn1_RBC_AmsterdamUtrechtL2_AmsterdamUtrechtTrack1 *outC);

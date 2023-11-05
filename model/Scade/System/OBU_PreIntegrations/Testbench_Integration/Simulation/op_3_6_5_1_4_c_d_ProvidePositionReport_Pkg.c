@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -43,7 +43,7 @@ void op_3_6_5_1_4_c_d_init_ProvidePositionReport_Pkg(
   outC->_L11 = kcg_true;
   outC->_L10 = kcg_true;
   outC->_L9 = Q_LENGTH_No_train_integrity_information_available;
-  outC->_L8.nid_ntc = kcg_lit_int64(0);
+  outC->_L8.nid_ntc = kcg_lit_int32(0);
   outC->_L8.q_length = Q_LENGTH_No_train_integrity_information_available;
   outC->_L7 = kcg_true;
   outC->_L6 = Q_LENGTH_No_train_integrity_information_available;
@@ -51,7 +51,7 @@ void op_3_6_5_1_4_c_d_init_ProvidePositionReport_Pkg(
   outC->_L4 = kcg_true;
   outC->_L3 = kcg_true;
   outC->_L2 = Q_LENGTH_No_train_integrity_information_available;
-  outC->_L1.nid_ntc = kcg_lit_int64(0);
+  outC->_L1.nid_ntc = kcg_lit_int32(0);
   outC->_L1.q_length = Q_LENGTH_No_train_integrity_information_available;
   outC->trigger = kcg_true;
   kcg_copy_TrainToTrackStatus_T_BG_Types_Pkg(
@@ -96,6 +96,6 @@ void kcg_load_SV_op_3_6_5_1_4_c_d_ProvidePositionReport_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** op_3_6_5_1_4_c_d_ProvidePositionReport_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

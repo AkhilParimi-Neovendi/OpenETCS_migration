@@ -23,14 +23,14 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   P015_OBU_T_TM /* _L1/ */ _L1;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   kcg_bool /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
-  kcg_int64 /* _L7/ */ _L7;
-  kcg_int64 /* _L8/ */ _L8;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L6/ */ _L6;
+  kcg_int32 /* _L7/ */ _L7;
+  kcg_int32 /* _L8/ */ _L8;
   kcg_bool /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   T_LOA /* _L11/ */ _L11;
 } outC_EVAL_T_LOA_TA_Lib_internal;
 

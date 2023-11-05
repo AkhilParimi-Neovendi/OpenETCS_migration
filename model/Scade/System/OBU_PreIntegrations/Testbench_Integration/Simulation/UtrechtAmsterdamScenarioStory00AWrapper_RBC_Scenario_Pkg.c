@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -78,77 +78,77 @@ void UtrechtAmsterdamScenarioStory00AWrapper_init_RBC_Scenario_Pkg(
   static kcg_size idx2;
   static kcg_size idx3;
 
-  outC->_L15 = kcg_lit_int64(0);
-  outC->_L16 = kcg_lit_int64(0);
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L12 = kcg_lit_float64(0.0);
+  outC->_L15 = kcg_lit_int32(0);
+  outC->_L16 = kcg_lit_int32(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L12 = kcg_lit_float32(0.0);
   outC->_L11 = Q_SCALE_10_cm_scale;
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L8.nid_lrbg = kcg_lit_int64(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L8.nid_lrbg = kcg_lit_int32(0);
   outC->_L8.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L8.d_lrbg = kcg_lit_int64(0);
+  outC->_L8.d_lrbg = kcg_lit_int32(0);
   outC->_L8.q_dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L8.q_dlrbg = Q_DLRBG_Reverse;
-  outC->_L8.l_doubtover = kcg_lit_int64(0);
-  outC->_L8.l_doubtunder = kcg_lit_int64(0);
+  outC->_L8.l_doubtover = kcg_lit_int32(0);
+  outC->_L8.l_doubtunder = kcg_lit_int32(0);
   outC->_L8.q_length = Q_LENGTH_No_train_integrity_information_available;
-  outC->_L8.l_trainint = kcg_lit_int64(0);
-  outC->_L8.v_train = kcg_lit_int64(0);
+  outC->_L8.l_trainint = kcg_lit_int32(0);
+  outC->_L8.v_train = kcg_lit_int32(0);
   outC->_L8.q_dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L8.m_mode = M_MODE_Full_Supervision;
   outC->_L8.m_level = M_LEVEL_Level_0;
-  outC->_L8.nid_ntc = kcg_lit_int64(0);
-  outC->_L8.nid_prvlrbg = kcg_lit_int64(0);
-  outC->_L7.m_Value = kcg_lit_int64(0);
-  outC->_L1.m_TrainData.nid_engine = kcg_lit_int64(0);
-  outC->_L1.m_TrainData.m_NumberOfOnboardPhoneNumbers = kcg_lit_int64(0);
+  outC->_L8.nid_ntc = kcg_lit_int32(0);
+  outC->_L8.nid_prvlrbg = kcg_lit_int32(0);
+  outC->_L7.m_Value = kcg_lit_int32(0);
+  outC->_L1.m_TrainData.nid_engine = kcg_lit_int32(0);
+  outC->_L1.m_TrainData.m_NumberOfOnboardPhoneNumbers = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 1; idx1++) {
     outC->_L1.m_TrainData.m_OnboardPhoneNumbers[idx1].valid = kcg_true;
     for (idx = 0; idx < 15; idx++) {
       outC->_L1.m_TrainData.m_OnboardPhoneNumbers[idx1].telephoneNumber[idx] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
-  outC->_L1.m_TrainData.t_train_ref = kcg_lit_int64(0);
+  outC->_L1.m_TrainData.t_train_ref = kcg_lit_int32(0);
   outC->_L1.m_TrainData.nc_cdtrain = NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L1.m_TrainData.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->_L1.m_TrainData.l_train = kcg_lit_int64(0);
-  outC->_L1.m_TrainData.v_maxtrain = kcg_lit_int64(0);
+  outC->_L1.m_TrainData.l_train = kcg_lit_int32(0);
+  outC->_L1.m_TrainData.v_maxtrain = kcg_lit_int32(0);
   outC->_L1.m_TrainData.m_loadinggauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L1.m_TrainData.m_axleloadcat = M_AXLELOADCAT_A;
   outC->_L1.m_TrainData.m_airtight = M_AIRTIGHT_Not_fitted;
-  outC->_L1.m_TrainData.n_axle = kcg_lit_int64(0);
+  outC->_L1.m_TrainData.n_axle = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 4; idx2++) {
     outC->_L1.m_TrainData.m_TractionIdentities[idx2].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
     outC->_L1.m_TrainData.m_TractionIdentities[idx2].nid_ctraction =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 5; idx3++) {
-    outC->_L1.m_TrainData.m_NationalSystemIdentities[idx3] = kcg_lit_int64(0);
+    outC->_L1.m_TrainData.m_NationalSystemIdentities[idx3] = kcg_lit_int32(0);
   }
-  outC->_L1.m_TrainData.nid_operational = kcg_lit_int64(0);
-  outC->_L1.m_PosData.nid_lrbg = kcg_lit_int64(0);
+  outC->_L1.m_TrainData.nid_operational = kcg_lit_int32(0);
+  outC->_L1.m_PosData.nid_lrbg = kcg_lit_int32(0);
   outC->_L1.m_PosData.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L1.m_PosData.d_lrbg = kcg_lit_int64(0);
+  outC->_L1.m_PosData.d_lrbg = kcg_lit_int32(0);
   outC->_L1.m_PosData.q_dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L1.m_PosData.q_dlrbg = Q_DLRBG_Reverse;
-  outC->_L1.m_PosData.l_doubtover = kcg_lit_int64(0);
-  outC->_L1.m_PosData.l_doubtunder = kcg_lit_int64(0);
+  outC->_L1.m_PosData.l_doubtover = kcg_lit_int32(0);
+  outC->_L1.m_PosData.l_doubtunder = kcg_lit_int32(0);
   outC->_L1.m_PosData.q_length =
     Q_LENGTH_No_train_integrity_information_available;
-  outC->_L1.m_PosData.l_trainint = kcg_lit_int64(0);
-  outC->_L1.m_PosData.v_train = kcg_lit_int64(0);
+  outC->_L1.m_PosData.l_trainint = kcg_lit_int32(0);
+  outC->_L1.m_PosData.v_train = kcg_lit_int32(0);
   outC->_L1.m_PosData.q_dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L1.m_PosData.m_mode = M_MODE_Full_Supervision;
   outC->_L1.m_PosData.m_level = M_LEVEL_Level_0;
-  outC->_L1.m_PosData.nid_ntc = kcg_lit_int64(0);
-  outC->_L1.m_PosData.nid_prvlrbg = kcg_lit_int64(0);
-  outC->outTriggerId = kcg_lit_int64(0);
+  outC->_L1.m_PosData.nid_ntc = kcg_lit_int32(0);
+  outC->_L1.m_PosData.nid_prvlrbg = kcg_lit_int32(0);
+  outC->outTriggerId = kcg_lit_int32(0);
   /* _L13=(RBC_Scenario_Pkg::UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages#1)/ */
   UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_init_RBC_Scenario_Pkg(
     &outC->Context_UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_1);
@@ -227,6 +227,6 @@ void kcg_load_SV_UtrechtAmsterdamScenarioStory00AWrapper_RBC_Scenario_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** UtrechtAmsterdamScenarioStory00AWrapper_RBC_Scenario_Pkg.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

@@ -16,7 +16,7 @@ void C_P011_unflatten_sections_voltage_TM_TrainToTrack_lib_internal(
   static kcg_size idx;
   static kcg_size idx1;
   static kcg_size idx2;
-  static kcg_int64 noname;
+  static kcg_int32 noname;
 
   outC->_L14 = DIM_voltage_list_TM_TrainToTrack;
   /* _L15/ */
@@ -37,14 +37,14 @@ void C_P011_unflatten_sections_voltage_TM_TrainToTrack_lib_internal(
     for (idx2 = 0; idx2 < 4; idx2++) {
       /* _L7=(TM_TrainToTrack_lib_internal::C_P011_us_array_voltage#1)/ */
       C_P011_us_array_voltage_TM_TrainToTrack_lib_internal(
-        /* _L7= */(kcg_int64) idx2,
+        /* _L7= */(kcg_int32) idx2,
         outC->_L15[idx2],
         &outC->_L6[idx2],
         &outC->Context_C_P011_us_array_voltage_1[idx2]);
       kcg_copy_P011_voltage_TM_TrainToTrack(
         &outC->_L9[idx2],
         &outC->Context_C_P011_us_array_voltage_1[idx2].sections);
-      outC->_L7 = /* _L7= */(kcg_int64) (idx2 + 1);
+      outC->_L7 = /* _L7= */(kcg_int32) (idx2 + 1);
       /* _L7= */
       if (!outC->Context_C_P011_us_array_voltage_1[idx2].cont) {
         break;
@@ -52,7 +52,7 @@ void C_P011_unflatten_sections_voltage_TM_TrainToTrack_lib_internal(
     }
   }
   else {
-    outC->_L7 = kcg_lit_int64(0);
+    outC->_L7 = kcg_lit_int32(0);
   }
 #ifdef KCG_MAPW_CPY
 
@@ -81,27 +81,27 @@ void C_P011_unflatten_sections_voltage_init_TM_TrainToTrack_lib_internal(
   static kcg_size idx6;
 
   for (idx1 = 0; idx1 < 4; idx1++) {
-    outC->_L15[idx1] = kcg_lit_int64(0);
+    outC->_L15[idx1] = kcg_lit_int32(0);
   }
-  outC->_L14 = kcg_lit_int64(0);
+  outC->_L14 = kcg_lit_int32(0);
   outC->_L13 = kcg_true;
-  outC->_L7 = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 4; idx2++) {
     outC->_L9[idx2].m_voltage = M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->_L9[idx2].nid_ctraction = kcg_lit_int64(0);
+    outC->_L9[idx2].nid_ctraction = kcg_lit_int32(0);
   }
   for (idx4 = 0; idx4 < 4; idx4++) {
     for (idx3 = 0; idx3 < 8; idx3++) {
-      outC->_L6[idx4][idx3] = kcg_lit_int64(0);
+      outC->_L6[idx4][idx3] = kcg_lit_int32(0);
     }
   }
   for (idx5 = 0; idx5 < 8; idx5++) {
-    outC->_L1[idx5] = kcg_lit_int64(0);
+    outC->_L1[idx5] = kcg_lit_int32(0);
   }
   for (idx6 = 0; idx6 < 4; idx6++) {
     outC->sections[idx6].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->sections[idx6].nid_ctraction = kcg_lit_int64(0);
+    outC->sections[idx6].nid_ctraction = kcg_lit_int32(0);
   }
   for (idx = 0; idx < 4; idx++) {
     /* _L7=(TM_TrainToTrack_lib_internal::C_P011_us_array_voltage#1)/ */

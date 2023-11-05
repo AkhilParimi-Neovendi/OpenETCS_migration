@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _Send_RBC_LRBG_397_D_00169_2_M015_AmsterdamUtrechtL2_Sheet11_BreukelenKeerspoor_RBC_H_
 #define _Send_RBC_LRBG_397_D_00169_2_M015_AmsterdamUtrechtL2_Sheet11_BreukelenKeerspoor_RBC_H_
@@ -26,8 +26,8 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   R_data_internal_T_InfraLib /* _L4/ */ _L4;
   R_data_internal_T_InfraLib /* _L23/ */ _L23;
-  kcg_int64 /* _L26/ */ _L26;
-  kcg_int64 /* _L27/ */ _L27;
+  kcg_int32 /* _L26/ */ _L26;
+  kcg_int32 /* _L27/ */ _L27;
   kcg_bool /* _L52/ */ _L52;
   R_data_internal_T_InfraLib /* _L53/ */ _L53;
 } outC_Send_RBC_LRBG_397_D_00169_2_M015_AmsterdamUtrechtL2_Sheet11_BreukelenKeerspoor_RBC;
@@ -38,7 +38,7 @@ extern void Send_RBC_LRBG_397_D_00169_2_M015_AmsterdamUtrechtL2_Sheet11_Breukele
   /* RadiaDataIn/ */
   R_data_internal_T_InfraLib *RadiaDataIn,
   /* TriggerValue/ */
-  kcg_int64 TriggerValue,
+  kcg_int32 TriggerValue,
   outC_Send_RBC_LRBG_397_D_00169_2_M015_AmsterdamUtrechtL2_Sheet11_BreukelenKeerspoor_RBC *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET
@@ -56,6 +56,6 @@ extern void Send_RBC_LRBG_397_D_00169_2_M015_init_AmsterdamUtrechtL2_Sheet11_Bre
 #endif /* _Send_RBC_LRBG_397_D_00169_2_M015_AmsterdamUtrechtL2_Sheet11_BreukelenKeerspoor_RBC_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Send_RBC_LRBG_397_D_00169_2_M015_AmsterdamUtrechtL2_Sheet11_BreukelenKeerspoor_RBC.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

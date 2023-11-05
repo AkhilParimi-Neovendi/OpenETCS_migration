@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -37,15 +37,15 @@ void LevelAdapter_DMI_Control_Pkg_Utils(
       break;
   }
   outC->_L11 = cLevel_ATB_Index_DMI_Control_Pkg;
-  outC->_L9 = kcg_lit_int64(7);
-  outC->_L4 = kcg_lit_int64(8);
+  outC->_L9 = kcg_lit_int32(7);
+  outC->_L4 = kcg_lit_int32(8);
   outC->_L10 = outC->_L20.nid_stm;
   /* _L6= */
   switch (outC->_L10) {
-    case kcg_lit_int64(1) :
+    case kcg_lit_int32(1) :
       outC->_L6 = outC->_L11;
       break;
-    case kcg_lit_int64(2) :
+    case kcg_lit_int32(2) :
       outC->_L6 = outC->_L9;
       break;
     default :
@@ -70,27 +70,27 @@ void LevelAdapter_init_DMI_Control_Pkg_Utils(
   outC_LevelAdapter_DMI_Control_Pkg_Utils *outC)
 {
   outC->_L21.level = M_LEVEL_Level_0;
-  outC->_L21.nid_stm = kcg_lit_int64(0);
+  outC->_L21.nid_stm = kcg_lit_int32(0);
   outC->_L20.level = M_LEVEL_Level_0;
-  outC->_L20.nid_stm = kcg_lit_int64(0);
+  outC->_L20.nid_stm = kcg_lit_int32(0);
   outC->_L19.level = M_LEVEL_Level_0;
-  outC->_L19.nid_stm = kcg_lit_int64(0);
-  outC->_L18 = kcg_lit_int64(0);
-  outC->_L17 = kcg_lit_int64(0);
-  outC->_L16 = kcg_lit_int64(0);
-  outC->_L15 = kcg_lit_int64(0);
+  outC->_L19.nid_stm = kcg_lit_int32(0);
+  outC->_L18 = kcg_lit_int32(0);
+  outC->_L17 = kcg_lit_int32(0);
+  outC->_L16 = kcg_lit_int32(0);
+  outC->_L15 = kcg_lit_int32(0);
   outC->_L14 = M_LEVEL_Level_0;
   outC->_L13 = M_LEVEL_Level_0;
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
   outC->_L8 = kcg_true;
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
   outC->_L5 = M_LEVEL_Level_0;
-  outC->_L4 = kcg_lit_int64(0);
-  outC->LevelIndex = kcg_lit_int64(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->LevelIndex = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -106,6 +106,6 @@ void LevelAdapter_reset_DMI_Control_Pkg_Utils(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** LevelAdapter_DMI_Control_Pkg_Utils.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

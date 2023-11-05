@@ -26,10 +26,10 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   L_internal_real_Type_SDM_Types_Pkg /* _L3/ */ _L3;
   Target_list_MRSP_real_T_TargetManagement_types /* _L4/ */ _L4;
-  kcg_int64 /* _L6/ */ _L6;
-  array_float64_110 /* _L7/ */ _L7;
+  kcg_int32 /* _L6/ */ _L6;
+  array_float32_110 /* _L7/ */ _L7;
   kcg_bool /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   L_internal_real_Type_SDM_Types_Pkg /* _L19/ */ _L19;
   kcg_bool /* _L14/ */ _L14;
   kcg_bool /* _L12/ */ _L12;

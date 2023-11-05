@@ -22,15 +22,15 @@ typedef struct {
   Q_SCALE /* WhenBlock1: */ WhenBlock1_clock;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* WhenBlock1:Q_SCALE_10_cm_scale:_L1/ */ _L1_Q_SCALE_10_cm_scale_WhenBlock1;
-  kcg_int64 /* WhenBlock1:Q_SCALE_10_cm_scale:_L2/ */ _L2_Q_SCALE_10_cm_scale_WhenBlock1;
+  kcg_int32 /* WhenBlock1:Q_SCALE_10_cm_scale:_L1/ */ _L1_Q_SCALE_10_cm_scale_WhenBlock1;
+  kcg_int32 /* WhenBlock1:Q_SCALE_10_cm_scale:_L2/ */ _L2_Q_SCALE_10_cm_scale_WhenBlock1;
   D_EMERGENCYSTOP /* WhenBlock1:Q_SCALE_10_cm_scale:_L3/ */ _L3_Q_SCALE_10_cm_scale_WhenBlock1;
   D_EMERGENCYSTOP /* WhenBlock1:Q_SCALE_1_m_scale:_L1/ */ _L1_Q_SCALE_1_m_scale_WhenBlock1;
-  kcg_int64 /* WhenBlock1:Q_SCALE_1_m_scale:_L2/ */ _L2_Q_SCALE_1_m_scale_WhenBlock1;
-  kcg_int64 /* WhenBlock1:Q_SCALE_1_m_scale:_L3/ */ _L3_Q_SCALE_1_m_scale_WhenBlock1;
+  kcg_int32 /* WhenBlock1:Q_SCALE_1_m_scale:_L2/ */ _L2_Q_SCALE_1_m_scale_WhenBlock1;
+  kcg_int32 /* WhenBlock1:Q_SCALE_1_m_scale:_L3/ */ _L3_Q_SCALE_1_m_scale_WhenBlock1;
   D_EMERGENCYSTOP /* WhenBlock1:Q_SCALE_10_m_scale:_L1/ */ _L1_Q_SCALE_10_m_scale_WhenBlock1;
-  kcg_int64 /* WhenBlock1:Q_SCALE_10_m_scale:_L2/ */ _L2_Q_SCALE_10_m_scale_WhenBlock1;
-  kcg_int64 /* WhenBlock1:Q_SCALE_10_m_scale:_L3/ */ _L3_Q_SCALE_10_m_scale_WhenBlock1;
+  kcg_int32 /* WhenBlock1:Q_SCALE_10_m_scale:_L2/ */ _L2_Q_SCALE_10_m_scale_WhenBlock1;
+  kcg_int32 /* WhenBlock1:Q_SCALE_10_m_scale:_L3/ */ _L3_Q_SCALE_10_m_scale_WhenBlock1;
 } outC_ES_Normalize_D_EMERGENCYSTOP_TA_EmergencyStop;
 
 /* ===========  node initialization and cycle functions  =========== */

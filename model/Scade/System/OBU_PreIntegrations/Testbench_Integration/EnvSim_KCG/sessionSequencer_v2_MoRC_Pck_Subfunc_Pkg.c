@@ -26,7 +26,7 @@ void sessionSequencer_v2_MoRC_Pck_Subfunc_Pkg(
   /* reset/ */
   kcg_bool reset,
   /* noOfRetriesOfSendingTerminationMessage/ */
-  kcg_int64 noOfRetriesOfSendingTerminationMessage,
+  kcg_int32 noOfRetriesOfSendingTerminationMessage,
   /* maxWaitingTimeForAckMessageReceived/ */
   T_internal_Type_Obu_BasicTypes_Pkg maxWaitingTimeForAckMessageReceived,
   outC_sessionSequencer_v2_MoRC_Pck_Subfunc_Pkg *outC)
@@ -796,51 +796,51 @@ void sessionSequencer_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L1_terminatingSession_Session_SM.valid = kcg_true;
   outC->_L1_terminatingSession_Session_SM.phase =
     sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L1_terminatingSession_Session_SM.nid_c = kcg_lit_int64(0);
-  outC->_L1_terminatingSession_Session_SM.nid_rbc = kcg_lit_int64(0);
-  outC->_L1_terminatingSession_Session_SM.nid_radio = kcg_lit_int64(0);
+  outC->_L1_terminatingSession_Session_SM.nid_c = kcg_lit_int32(0);
+  outC->_L1_terminatingSession_Session_SM.nid_rbc = kcg_lit_int32(0);
+  outC->_L1_terminatingSession_Session_SM.nid_radio = kcg_lit_int32(0);
   outC->_L5_terminatingSession_Session_SM = kcg_true;
   outC->_L6_terminatingSession_Session_SM = kcg_true;
-  outC->_L7_terminatingSession_Session_SM = kcg_lit_int64(0);
+  outC->_L7_terminatingSession_Session_SM = kcg_lit_int32(0);
   outC->_L8_terminatingSession_Session_SM.valid = kcg_true;
   outC->_L8_terminatingSession_Session_SM.msgSrc =
     msrc_undefined_Common_Types_Pkg;
   outC->_L8_terminatingSession_Session_SM.origin.valid = kcg_true;
-  outC->_L8_terminatingSession_Session_SM.origin.nid_c = kcg_lit_int64(0);
-  outC->_L8_terminatingSession_Session_SM.origin.rbc_id = kcg_lit_int64(0);
-  outC->_L8_terminatingSession_Session_SM.origin.device_id = kcg_lit_int64(0);
-  outC->_L8_terminatingSession_Session_SM.lrbg = kcg_lit_int64(0);
+  outC->_L8_terminatingSession_Session_SM.origin.nid_c = kcg_lit_int32(0);
+  outC->_L8_terminatingSession_Session_SM.origin.rbc_id = kcg_lit_int32(0);
+  outC->_L8_terminatingSession_Session_SM.origin.device_id = kcg_lit_int32(0);
+  outC->_L8_terminatingSession_Session_SM.lrbg = kcg_lit_int32(0);
   outC->_L9_terminatingSession_Session_SM.valid = kcg_true;
   outC->_L9_terminatingSession_Session_SM.phase =
     sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L9_terminatingSession_Session_SM.nid_c = kcg_lit_int64(0);
-  outC->_L9_terminatingSession_Session_SM.nid_rbc = kcg_lit_int64(0);
-  outC->_L9_terminatingSession_Session_SM.nid_radio = kcg_lit_int64(0);
-  outC->_L10_terminatingSession_Session_SM = kcg_lit_int64(0);
-  outC->_L11_terminatingSession_Session_SM = kcg_lit_int64(0);
+  outC->_L9_terminatingSession_Session_SM.nid_c = kcg_lit_int32(0);
+  outC->_L9_terminatingSession_Session_SM.nid_rbc = kcg_lit_int32(0);
+  outC->_L9_terminatingSession_Session_SM.nid_radio = kcg_lit_int32(0);
+  outC->_L10_terminatingSession_Session_SM = kcg_lit_int32(0);
+  outC->_L11_terminatingSession_Session_SM = kcg_lit_int32(0);
   outC->_L12_terminatingSession_Session_SM = kcg_true;
   outC->tr_1_clock_maintainingSession_Session_SM = kcg_true;
   outC->_L1_maintainingSession_Session_SM.valid = kcg_true;
   outC->_L1_maintainingSession_Session_SM.phase =
     sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L1_maintainingSession_Session_SM.nid_c = kcg_lit_int64(0);
-  outC->_L1_maintainingSession_Session_SM.nid_rbc = kcg_lit_int64(0);
-  outC->_L1_maintainingSession_Session_SM.nid_radio = kcg_lit_int64(0);
+  outC->_L1_maintainingSession_Session_SM.nid_c = kcg_lit_int32(0);
+  outC->_L1_maintainingSession_Session_SM.nid_rbc = kcg_lit_int32(0);
+  outC->_L1_maintainingSession_Session_SM.nid_radio = kcg_lit_int32(0);
   outC->_L2_maintainingSession_Session_SM.valid = kcg_true;
   outC->_L2_maintainingSession_Session_SM.phase =
     sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L2_maintainingSession_Session_SM.nid_c = kcg_lit_int64(0);
-  outC->_L2_maintainingSession_Session_SM.nid_rbc = kcg_lit_int64(0);
-  outC->_L2_maintainingSession_Session_SM.nid_radio = kcg_lit_int64(0);
+  outC->_L2_maintainingSession_Session_SM.nid_c = kcg_lit_int32(0);
+  outC->_L2_maintainingSession_Session_SM.nid_rbc = kcg_lit_int32(0);
+  outC->_L2_maintainingSession_Session_SM.nid_radio = kcg_lit_int32(0);
   outC->_L3_maintainingSession_Session_SM = kcg_true;
   outC->tr_2_clock_establishingSession_Session_SM = kcg_true;
   outC->tr_1_clock_establishingSession_Session_SM = kcg_true;
   outC->_L8_establishingSession_Session_SM.valid = kcg_true;
   outC->_L8_establishingSession_Session_SM.phase =
     sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L8_establishingSession_Session_SM.nid_c = kcg_lit_int64(0);
-  outC->_L8_establishingSession_Session_SM.nid_rbc = kcg_lit_int64(0);
-  outC->_L8_establishingSession_Session_SM.nid_radio = kcg_lit_int64(0);
+  outC->_L8_establishingSession_Session_SM.nid_c = kcg_lit_int32(0);
+  outC->_L8_establishingSession_Session_SM.nid_rbc = kcg_lit_int32(0);
+  outC->_L8_establishingSession_Session_SM.nid_radio = kcg_lit_int32(0);
   outC->_L7_establishingSession_Session_SM = kcg_true;
   outC->_L6_establishingSession_Session_SM = kcg_true;
   outC->_L5_establishingSession_Session_SM = kcg_true;
@@ -853,34 +853,34 @@ void sessionSequencer_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L1_establishingSession_Session_SM.q_dir = Q_DIR_Reverse;
   outC->_L1_establishingSession_Session_SM.q_rbc =
     Q_RBC_Terminate_communication_session;
-  outC->_L1_establishingSession_Session_SM.nid_c = kcg_lit_int64(0);
-  outC->_L1_establishingSession_Session_SM.nid_RBC = kcg_lit_int64(0);
-  outC->_L1_establishingSession_Session_SM.nid_radio = kcg_lit_int64(0);
+  outC->_L1_establishingSession_Session_SM.nid_c = kcg_lit_int32(0);
+  outC->_L1_establishingSession_Session_SM.nid_RBC = kcg_lit_int32(0);
+  outC->_L1_establishingSession_Session_SM.nid_radio = kcg_lit_int32(0);
   outC->_L1_establishingSession_Session_SM.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L1_establishingSession_Session_SM.origin.valid = kcg_true;
-  outC->_L1_establishingSession_Session_SM.origin.nid_c = kcg_lit_int64(0);
-  outC->_L1_establishingSession_Session_SM.origin.rbc_id = kcg_lit_int64(0);
-  outC->_L1_establishingSession_Session_SM.origin.device_id = kcg_lit_int64(0);
+  outC->_L1_establishingSession_Session_SM.origin.nid_c = kcg_lit_int32(0);
+  outC->_L1_establishingSession_Session_SM.origin.rbc_id = kcg_lit_int32(0);
+  outC->_L1_establishingSession_Session_SM.origin.device_id = kcg_lit_int32(0);
   outC->_L9_establishingSession_Session_SM.valid = kcg_true;
   outC->_L9_establishingSession_Session_SM.initiatedByOBU = kcg_true;
   outC->_L9_establishingSession_Session_SM.initiatedByRBC = kcg_true;
   outC->_L9_establishingSession_Session_SM.q_rbc =
     Q_RBC_Terminate_communication_session;
-  outC->_L9_establishingSession_Session_SM.nid_c = kcg_lit_int64(0);
-  outC->_L9_establishingSession_Session_SM.nid_rbc = kcg_lit_int64(0);
-  outC->_L9_establishingSession_Session_SM.nid_radio = kcg_lit_int64(0);
+  outC->_L9_establishingSession_Session_SM.nid_c = kcg_lit_int32(0);
+  outC->_L9_establishingSession_Session_SM.nid_rbc = kcg_lit_int32(0);
+  outC->_L9_establishingSession_Session_SM.nid_radio = kcg_lit_int32(0);
   outC->_L9_establishingSession_Session_SM.origin.valid = kcg_true;
-  outC->_L9_establishingSession_Session_SM.origin.nid_c = kcg_lit_int64(0);
-  outC->_L9_establishingSession_Session_SM.origin.rbc_id = kcg_lit_int64(0);
-  outC->_L9_establishingSession_Session_SM.origin.device_id = kcg_lit_int64(0);
+  outC->_L9_establishingSession_Session_SM.origin.nid_c = kcg_lit_int32(0);
+  outC->_L9_establishingSession_Session_SM.origin.rbc_id = kcg_lit_int32(0);
+  outC->_L9_establishingSession_Session_SM.origin.device_id = kcg_lit_int32(0);
   outC->_L9_establishingSession_Session_SM.m38.valid = kcg_true;
   outC->_L9_establishingSession_Session_SM.m38.msgSrc =
     msrc_undefined_Common_Types_Pkg;
   outC->_L9_establishingSession_Session_SM.m38.origin.valid = kcg_true;
-  outC->_L9_establishingSession_Session_SM.m38.origin.nid_c = kcg_lit_int64(0);
-  outC->_L9_establishingSession_Session_SM.m38.origin.rbc_id = kcg_lit_int64(0);
-  outC->_L9_establishingSession_Session_SM.m38.origin.device_id = kcg_lit_int64(
+  outC->_L9_establishingSession_Session_SM.m38.origin.nid_c = kcg_lit_int32(0);
+  outC->_L9_establishingSession_Session_SM.m38.origin.rbc_id = kcg_lit_int32(0);
+  outC->_L9_establishingSession_Session_SM.m38.origin.device_id = kcg_lit_int32(
       0);
   outC->_L9_establishingSession_Session_SM.p42.valid = kcg_true;
   outC->_L9_establishingSession_Session_SM.p42.msgSrc =
@@ -888,32 +888,32 @@ void sessionSequencer_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L9_establishingSession_Session_SM.p42.q_dir = Q_DIR_Reverse;
   outC->_L9_establishingSession_Session_SM.p42.q_rbc =
     Q_RBC_Terminate_communication_session;
-  outC->_L9_establishingSession_Session_SM.p42.nid_c = kcg_lit_int64(0);
-  outC->_L9_establishingSession_Session_SM.p42.nid_RBC = kcg_lit_int64(0);
-  outC->_L9_establishingSession_Session_SM.p42.nid_radio = kcg_lit_int64(0);
+  outC->_L9_establishingSession_Session_SM.p42.nid_c = kcg_lit_int32(0);
+  outC->_L9_establishingSession_Session_SM.p42.nid_RBC = kcg_lit_int32(0);
+  outC->_L9_establishingSession_Session_SM.p42.nid_radio = kcg_lit_int32(0);
   outC->_L9_establishingSession_Session_SM.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L9_establishingSession_Session_SM.p42.origin.valid = kcg_true;
-  outC->_L9_establishingSession_Session_SM.p42.origin.nid_c = kcg_lit_int64(0);
-  outC->_L9_establishingSession_Session_SM.p42.origin.rbc_id = kcg_lit_int64(0);
-  outC->_L9_establishingSession_Session_SM.p42.origin.device_id = kcg_lit_int64(
+  outC->_L9_establishingSession_Session_SM.p42.origin.nid_c = kcg_lit_int32(0);
+  outC->_L9_establishingSession_Session_SM.p42.origin.rbc_id = kcg_lit_int32(0);
+  outC->_L9_establishingSession_Session_SM.p42.origin.device_id = kcg_lit_int32(
       0);
   outC->_L10_establishingSession_Session_SM.valid = kcg_true;
   outC->_L10_establishingSession_Session_SM.msgSrc =
     msrc_undefined_Common_Types_Pkg;
   outC->_L10_establishingSession_Session_SM.versionSupported = kcg_true;
   outC->_L10_establishingSession_Session_SM.origin.valid = kcg_true;
-  outC->_L10_establishingSession_Session_SM.origin.nid_c = kcg_lit_int64(0);
-  outC->_L10_establishingSession_Session_SM.origin.rbc_id = kcg_lit_int64(0);
-  outC->_L10_establishingSession_Session_SM.origin.device_id = kcg_lit_int64(0);
+  outC->_L10_establishingSession_Session_SM.origin.nid_c = kcg_lit_int32(0);
+  outC->_L10_establishingSession_Session_SM.origin.rbc_id = kcg_lit_int32(0);
+  outC->_L10_establishingSession_Session_SM.origin.device_id = kcg_lit_int32(0);
   outC->_L10_establishingSession_Session_SM.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L11_establishingSession_Session_SM = kcg_true;
   outC->_L12_establishingSession_Session_SM.valid = kcg_true;
-  outC->_L12_establishingSession_Session_SM.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L12_establishingSession_Session_SM.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L12_establishingSession_Session_SM.status =
     mcs_disconnected_RCM_Types_Pkg;
-  outC->_L12_establishingSession_Session_SM.nid_radio = kcg_lit_int64(0);
+  outC->_L12_establishingSession_Session_SM.nid_radio = kcg_lit_int32(0);
   outC->_L12_establishingSession_Session_SM.settingUpConnectionHasFailed =
     kcg_true;
   outC->_L12_establishingSession_Session_SM.connectionLost = kcg_true;
@@ -924,30 +924,30 @@ void sessionSequencer_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L13_establishingSession_Session_SM.q_dir = Q_DIR_Reverse;
   outC->_L13_establishingSession_Session_SM.q_rbc =
     Q_RBC_Terminate_communication_session;
-  outC->_L13_establishingSession_Session_SM.nid_c = kcg_lit_int64(0);
-  outC->_L13_establishingSession_Session_SM.nid_RBC = kcg_lit_int64(0);
-  outC->_L13_establishingSession_Session_SM.nid_radio = kcg_lit_int64(0);
+  outC->_L13_establishingSession_Session_SM.nid_c = kcg_lit_int32(0);
+  outC->_L13_establishingSession_Session_SM.nid_RBC = kcg_lit_int32(0);
+  outC->_L13_establishingSession_Session_SM.nid_radio = kcg_lit_int32(0);
   outC->_L13_establishingSession_Session_SM.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L13_establishingSession_Session_SM.origin.valid = kcg_true;
-  outC->_L13_establishingSession_Session_SM.origin.nid_c = kcg_lit_int64(0);
-  outC->_L13_establishingSession_Session_SM.origin.rbc_id = kcg_lit_int64(0);
-  outC->_L13_establishingSession_Session_SM.origin.device_id = kcg_lit_int64(0);
+  outC->_L13_establishingSession_Session_SM.origin.nid_c = kcg_lit_int32(0);
+  outC->_L13_establishingSession_Session_SM.origin.rbc_id = kcg_lit_int32(0);
+  outC->_L13_establishingSession_Session_SM.origin.device_id = kcg_lit_int32(0);
   outC->_L14_establishingSession_Session_SM.valid = kcg_true;
   outC->_L14_establishingSession_Session_SM.msgSrc =
     msrc_undefined_Common_Types_Pkg;
   outC->_L14_establishingSession_Session_SM.q_dir = Q_DIR_Reverse;
   outC->_L14_establishingSession_Session_SM.q_rbc =
     Q_RBC_Terminate_communication_session;
-  outC->_L14_establishingSession_Session_SM.nid_c = kcg_lit_int64(0);
-  outC->_L14_establishingSession_Session_SM.nid_RBC = kcg_lit_int64(0);
-  outC->_L14_establishingSession_Session_SM.nid_radio = kcg_lit_int64(0);
+  outC->_L14_establishingSession_Session_SM.nid_c = kcg_lit_int32(0);
+  outC->_L14_establishingSession_Session_SM.nid_RBC = kcg_lit_int32(0);
+  outC->_L14_establishingSession_Session_SM.nid_radio = kcg_lit_int32(0);
   outC->_L14_establishingSession_Session_SM.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L14_establishingSession_Session_SM.origin.valid = kcg_true;
-  outC->_L14_establishingSession_Session_SM.origin.nid_c = kcg_lit_int64(0);
-  outC->_L14_establishingSession_Session_SM.origin.rbc_id = kcg_lit_int64(0);
-  outC->_L14_establishingSession_Session_SM.origin.device_id = kcg_lit_int64(0);
+  outC->_L14_establishingSession_Session_SM.origin.nid_c = kcg_lit_int32(0);
+  outC->_L14_establishingSession_Session_SM.origin.rbc_id = kcg_lit_int32(0);
+  outC->_L14_establishingSession_Session_SM.origin.device_id = kcg_lit_int32(0);
   outC->_L15_establishingSession_Session_SM = kcg_true;
   outC->_L16_establishingSession_Session_SM = kcg_true;
   outC->_L17_establishingSession_Session_SM = kcg_true;
@@ -956,74 +956,74 @@ void sessionSequencer_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L3_sessionTerminated_Session_SM.valid = kcg_true;
   outC->_L3_sessionTerminated_Session_SM.phase =
     sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L3_sessionTerminated_Session_SM.nid_c = kcg_lit_int64(0);
-  outC->_L3_sessionTerminated_Session_SM.nid_rbc = kcg_lit_int64(0);
-  outC->_L3_sessionTerminated_Session_SM.nid_radio = kcg_lit_int64(0);
+  outC->_L3_sessionTerminated_Session_SM.nid_c = kcg_lit_int32(0);
+  outC->_L3_sessionTerminated_Session_SM.nid_rbc = kcg_lit_int32(0);
+  outC->_L3_sessionTerminated_Session_SM.nid_radio = kcg_lit_int32(0);
   outC->_L5_sessionTerminated_Session_SM.valid = kcg_true;
   outC->_L5_sessionTerminated_Session_SM.phase =
     sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L5_sessionTerminated_Session_SM.nid_c = kcg_lit_int64(0);
-  outC->_L5_sessionTerminated_Session_SM.nid_rbc = kcg_lit_int64(0);
-  outC->_L5_sessionTerminated_Session_SM.nid_radio = kcg_lit_int64(0);
+  outC->_L5_sessionTerminated_Session_SM.nid_c = kcg_lit_int32(0);
+  outC->_L5_sessionTerminated_Session_SM.nid_rbc = kcg_lit_int32(0);
+  outC->_L5_sessionTerminated_Session_SM.nid_radio = kcg_lit_int32(0);
   outC->_L6_sessionTerminated_Session_SM = sp_terminated_RCM_Session_Types_Pkg;
   outC->_L7_sessionTerminated_Session_SM.valid = kcg_true;
   outC->_L7_sessionTerminated_Session_SM.initiatedByOBU = kcg_true;
   outC->_L7_sessionTerminated_Session_SM.initiatedByRBC = kcg_true;
   outC->_L7_sessionTerminated_Session_SM.q_rbc =
     Q_RBC_Terminate_communication_session;
-  outC->_L7_sessionTerminated_Session_SM.nid_c = kcg_lit_int64(0);
-  outC->_L7_sessionTerminated_Session_SM.nid_rbc = kcg_lit_int64(0);
-  outC->_L7_sessionTerminated_Session_SM.nid_radio = kcg_lit_int64(0);
+  outC->_L7_sessionTerminated_Session_SM.nid_c = kcg_lit_int32(0);
+  outC->_L7_sessionTerminated_Session_SM.nid_rbc = kcg_lit_int32(0);
+  outC->_L7_sessionTerminated_Session_SM.nid_radio = kcg_lit_int32(0);
   outC->_L7_sessionTerminated_Session_SM.origin.valid = kcg_true;
-  outC->_L7_sessionTerminated_Session_SM.origin.nid_c = kcg_lit_int64(0);
-  outC->_L7_sessionTerminated_Session_SM.origin.rbc_id = kcg_lit_int64(0);
-  outC->_L7_sessionTerminated_Session_SM.origin.device_id = kcg_lit_int64(0);
+  outC->_L7_sessionTerminated_Session_SM.origin.nid_c = kcg_lit_int32(0);
+  outC->_L7_sessionTerminated_Session_SM.origin.rbc_id = kcg_lit_int32(0);
+  outC->_L7_sessionTerminated_Session_SM.origin.device_id = kcg_lit_int32(0);
   outC->_L7_sessionTerminated_Session_SM.m38.valid = kcg_true;
   outC->_L7_sessionTerminated_Session_SM.m38.msgSrc =
     msrc_undefined_Common_Types_Pkg;
   outC->_L7_sessionTerminated_Session_SM.m38.origin.valid = kcg_true;
-  outC->_L7_sessionTerminated_Session_SM.m38.origin.nid_c = kcg_lit_int64(0);
-  outC->_L7_sessionTerminated_Session_SM.m38.origin.rbc_id = kcg_lit_int64(0);
-  outC->_L7_sessionTerminated_Session_SM.m38.origin.device_id = kcg_lit_int64(0);
+  outC->_L7_sessionTerminated_Session_SM.m38.origin.nid_c = kcg_lit_int32(0);
+  outC->_L7_sessionTerminated_Session_SM.m38.origin.rbc_id = kcg_lit_int32(0);
+  outC->_L7_sessionTerminated_Session_SM.m38.origin.device_id = kcg_lit_int32(0);
   outC->_L7_sessionTerminated_Session_SM.p42.valid = kcg_true;
   outC->_L7_sessionTerminated_Session_SM.p42.msgSrc =
     msrc_undefined_Common_Types_Pkg;
   outC->_L7_sessionTerminated_Session_SM.p42.q_dir = Q_DIR_Reverse;
   outC->_L7_sessionTerminated_Session_SM.p42.q_rbc =
     Q_RBC_Terminate_communication_session;
-  outC->_L7_sessionTerminated_Session_SM.p42.nid_c = kcg_lit_int64(0);
-  outC->_L7_sessionTerminated_Session_SM.p42.nid_RBC = kcg_lit_int64(0);
-  outC->_L7_sessionTerminated_Session_SM.p42.nid_radio = kcg_lit_int64(0);
+  outC->_L7_sessionTerminated_Session_SM.p42.nid_c = kcg_lit_int32(0);
+  outC->_L7_sessionTerminated_Session_SM.p42.nid_RBC = kcg_lit_int32(0);
+  outC->_L7_sessionTerminated_Session_SM.p42.nid_radio = kcg_lit_int32(0);
   outC->_L7_sessionTerminated_Session_SM.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L7_sessionTerminated_Session_SM.p42.origin.valid = kcg_true;
-  outC->_L7_sessionTerminated_Session_SM.p42.origin.nid_c = kcg_lit_int64(0);
-  outC->_L7_sessionTerminated_Session_SM.p42.origin.rbc_id = kcg_lit_int64(0);
-  outC->_L7_sessionTerminated_Session_SM.p42.origin.device_id = kcg_lit_int64(0);
+  outC->_L7_sessionTerminated_Session_SM.p42.origin.nid_c = kcg_lit_int32(0);
+  outC->_L7_sessionTerminated_Session_SM.p42.origin.rbc_id = kcg_lit_int32(0);
+  outC->_L7_sessionTerminated_Session_SM.p42.origin.device_id = kcg_lit_int32(0);
   outC->_L8_sessionTerminated_Session_SM.valid = kcg_true;
   outC->_L8_sessionTerminated_Session_SM.phase =
     sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L8_sessionTerminated_Session_SM.nid_c = kcg_lit_int64(0);
-  outC->_L8_sessionTerminated_Session_SM.nid_rbc = kcg_lit_int64(0);
-  outC->_L8_sessionTerminated_Session_SM.nid_radio = kcg_lit_int64(0);
+  outC->_L8_sessionTerminated_Session_SM.nid_c = kcg_lit_int32(0);
+  outC->_L8_sessionTerminated_Session_SM.nid_rbc = kcg_lit_int32(0);
+  outC->_L8_sessionTerminated_Session_SM.nid_radio = kcg_lit_int32(0);
   outC->_L29_sessionTerminated_Session_SM = kcg_true;
-  outC->_L30_sessionTerminated_Session_SM = kcg_lit_int64(0);
-  outC->_L31_sessionTerminated_Session_SM = kcg_lit_int64(0);
-  outC->_L32_sessionTerminated_Session_SM = kcg_lit_int64(0);
+  outC->_L30_sessionTerminated_Session_SM = kcg_lit_int32(0);
+  outC->_L31_sessionTerminated_Session_SM = kcg_lit_int32(0);
+  outC->_L32_sessionTerminated_Session_SM = kcg_lit_int32(0);
   outC->_L34_sessionTerminated_Session_SM = sp_terminated_RCM_Session_Types_Pkg;
   outC->_L35_sessionTerminated_Session_SM.valid = kcg_true;
   outC->_L35_sessionTerminated_Session_SM.phase =
     sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L35_sessionTerminated_Session_SM.nid_c = kcg_lit_int64(0);
-  outC->_L35_sessionTerminated_Session_SM.nid_rbc = kcg_lit_int64(0);
-  outC->_L35_sessionTerminated_Session_SM.nid_radio = kcg_lit_int64(0);
+  outC->_L35_sessionTerminated_Session_SM.nid_c = kcg_lit_int32(0);
+  outC->_L35_sessionTerminated_Session_SM.nid_rbc = kcg_lit_int32(0);
+  outC->_L35_sessionTerminated_Session_SM.nid_radio = kcg_lit_int32(0);
   outC->initializeSession = kcg_true;
   outC->notReady = kcg_true;
   outC->sessionStatus.valid = kcg_true;
   outC->sessionStatus.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->sessionStatus.nid_c = kcg_lit_int64(0);
-  outC->sessionStatus.nid_rbc = kcg_lit_int64(0);
-  outC->sessionStatus.nid_radio = kcg_lit_int64(0);
+  outC->sessionStatus.nid_c = kcg_lit_int32(0);
+  outC->sessionStatus.nid_rbc = kcg_lit_int32(0);
+  outC->sessionStatus.nid_radio = kcg_lit_int32(0);
   outC->requestReleaseOfSafeRadioConnection = kcg_true;
   outC->infomDriverNoCompatibleVersionSupported = kcg_true;
   outC->requestSafeRadioConnectionSetup = kcg_true;
@@ -1035,15 +1035,15 @@ void sessionSequencer_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->p42_SessionManagement_out.msgSrc = msrc_undefined_Common_Types_Pkg;
   outC->p42_SessionManagement_out.q_dir = Q_DIR_Reverse;
   outC->p42_SessionManagement_out.q_rbc = Q_RBC_Terminate_communication_session;
-  outC->p42_SessionManagement_out.nid_c = kcg_lit_int64(0);
-  outC->p42_SessionManagement_out.nid_RBC = kcg_lit_int64(0);
-  outC->p42_SessionManagement_out.nid_radio = kcg_lit_int64(0);
+  outC->p42_SessionManagement_out.nid_c = kcg_lit_int32(0);
+  outC->p42_SessionManagement_out.nid_RBC = kcg_lit_int32(0);
+  outC->p42_SessionManagement_out.nid_radio = kcg_lit_int32(0);
   outC->p42_SessionManagement_out.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->p42_SessionManagement_out.origin.valid = kcg_true;
-  outC->p42_SessionManagement_out.origin.nid_c = kcg_lit_int64(0);
-  outC->p42_SessionManagement_out.origin.rbc_id = kcg_lit_int64(0);
-  outC->p42_SessionManagement_out.origin.device_id = kcg_lit_int64(0);
+  outC->p42_SessionManagement_out.origin.nid_c = kcg_lit_int32(0);
+  outC->p42_SessionManagement_out.origin.rbc_id = kcg_lit_int32(0);
+  outC->p42_SessionManagement_out.origin.device_id = kcg_lit_int32(0);
   /* Session_SM:maintainingSession:_L1=(MoRC_Pck::Subfunc_Pkg::maintainingSession_v2#1)/ */
   maintainingSession_v2_init_MoRC_Pck_Subfunc_Pkg(
     &outC->Context_maintainingSession_v2_1);

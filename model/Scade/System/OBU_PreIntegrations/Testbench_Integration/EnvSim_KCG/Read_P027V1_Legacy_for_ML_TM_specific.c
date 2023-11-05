@@ -64,8 +64,8 @@ void Read_P027V1_Legacy_for_ML_init_TM_specific(
   outC->_L4.valid = kcg_true;
   outC->_L4.q_dir = Q_DIR_Reverse;
   outC->_L4.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L4.d_static = kcg_lit_int64(0);
-  outC->_L4.v_static = kcg_lit_int64(0);
+  outC->_L4.d_static = kcg_lit_int32(0);
+  outC->_L4.v_static = kcg_lit_int32(0);
   outC->_L4.q_front =
     Q_FRONT_Train_length_delay_on_validity_end_point_of_profile_element;
   for (idx = 0; idx < 7; idx++) {
@@ -73,13 +73,13 @@ void Read_P027V1_Legacy_for_ML_init_TM_specific(
     outC->_L4.diffArray[idx].q_diff = Q_DIFF_Cant_Deficiency_specific_category;
     outC->_L4.diffArray[idx].nc_cddiff =
       NC_CDDIFF_Specific_SSP_applicable_to_Cant_Deficiency_80_mm;
-    outC->_L4.diffArray[idx].nc_diff = kcg_lit_int64(0);
-    outC->_L4.diffArray[idx].v_diff = kcg_lit_int64(0);
+    outC->_L4.diffArray[idx].nc_diff = kcg_lit_int32(0);
+    outC->_L4.diffArray[idx].v_diff = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 7; idx2++) {
     outC->_L4.SSPArray[idx2].valid = kcg_true;
-    outC->_L4.SSPArray[idx2].d_static = kcg_lit_int64(0);
-    outC->_L4.SSPArray[idx2].v_static = kcg_lit_int64(0);
+    outC->_L4.SSPArray[idx2].d_static = kcg_lit_int32(0);
+    outC->_L4.SSPArray[idx2].v_static = kcg_lit_int32(0);
     outC->_L4.SSPArray[idx2].q_front =
       Q_FRONT_Train_length_delay_on_validity_end_point_of_profile_element;
     for (idx1 = 0; idx1 < 7; idx1++) {
@@ -88,19 +88,19 @@ void Read_P027V1_Legacy_for_ML_init_TM_specific(
         Q_DIFF_Cant_Deficiency_specific_category;
       outC->_L4.SSPArray[idx2].diffArray[idx1].nc_cddiff =
         NC_CDDIFF_Specific_SSP_applicable_to_Cant_Deficiency_80_mm;
-      outC->_L4.SSPArray[idx2].diffArray[idx1].nc_diff = kcg_lit_int64(0);
-      outC->_L4.SSPArray[idx2].diffArray[idx1].v_diff = kcg_lit_int64(0);
+      outC->_L4.SSPArray[idx2].diffArray[idx1].nc_diff = kcg_lit_int32(0);
+      outC->_L4.SSPArray[idx2].diffArray[idx1].v_diff = kcg_lit_int32(0);
     }
   }
   for (idx3 = 0; idx3 < 30; idx3++) {
-    outC->_L3.PacketHeaders[idx3].nid_packet = kcg_lit_int64(0);
+    outC->_L3.PacketHeaders[idx3].nid_packet = kcg_lit_int32(0);
     outC->_L3.PacketHeaders[idx3].q_dir = Q_DIR_Reverse;
     outC->_L3.PacketHeaders[idx3].valid = kcg_true;
-    outC->_L3.PacketHeaders[idx3].startAddress = kcg_lit_int64(0);
-    outC->_L3.PacketHeaders[idx3].endAddress = kcg_lit_int64(0);
+    outC->_L3.PacketHeaders[idx3].startAddress = kcg_lit_int32(0);
+    outC->_L3.PacketHeaders[idx3].endAddress = kcg_lit_int32(0);
   }
   for (idx4 = 0; idx4 < 500; idx4++) {
-    outC->_L3.PacketData[idx4] = kcg_lit_int64(0);
+    outC->_L3.PacketData[idx4] = kcg_lit_int32(0);
   }
   outC->_L1 = kcg_true;
   outC->_L2.valid = kcg_true;
@@ -108,23 +108,23 @@ void Read_P027V1_Legacy_for_ML_init_TM_specific(
   outC->_L2.q_scale = Q_SCALE_10_cm_scale;
   for (idx6 = 0; idx6 < 33; idx6++) {
     outC->_L2.sections[idx6].valid = kcg_true;
-    outC->_L2.sections[idx6].d_static = kcg_lit_int64(0);
-    outC->_L2.sections[idx6].v_static = kcg_lit_int64(0);
+    outC->_L2.sections[idx6].d_static = kcg_lit_int32(0);
+    outC->_L2.sections[idx6].v_static = kcg_lit_int32(0);
     outC->_L2.sections[idx6].q_front =
       Q_FRONT_Train_length_delay_on_validity_end_point_of_profile_element;
-    outC->_L2.sections[idx6].n_iter = kcg_lit_int64(0);
+    outC->_L2.sections[idx6].n_iter = kcg_lit_int32(0);
     for (idx5 = 0; idx5 < 32; idx5++) {
       outC->_L2.sections[idx6].SECTIONS_q_diff[idx5].valid = kcg_true;
-      outC->_L2.sections[idx6].SECTIONS_q_diff[idx5].nc_diff = kcg_lit_int64(0);
-      outC->_L2.sections[idx6].SECTIONS_q_diff[idx5].v_diff = kcg_lit_int64(0);
+      outC->_L2.sections[idx6].SECTIONS_q_diff[idx5].nc_diff = kcg_lit_int32(0);
+      outC->_L2.sections[idx6].SECTIONS_q_diff[idx5].v_diff = kcg_lit_int32(0);
     }
   }
   outC->every = kcg_true;
   outC->P027_legacy_out.valid = kcg_true;
   outC->P027_legacy_out.q_dir = Q_DIR_Reverse;
   outC->P027_legacy_out.q_scale = Q_SCALE_10_cm_scale;
-  outC->P027_legacy_out.d_static = kcg_lit_int64(0);
-  outC->P027_legacy_out.v_static = kcg_lit_int64(0);
+  outC->P027_legacy_out.d_static = kcg_lit_int32(0);
+  outC->P027_legacy_out.v_static = kcg_lit_int32(0);
   outC->P027_legacy_out.q_front =
     Q_FRONT_Train_length_delay_on_validity_end_point_of_profile_element;
   for (idx7 = 0; idx7 < 7; idx7++) {
@@ -133,13 +133,13 @@ void Read_P027V1_Legacy_for_ML_init_TM_specific(
       Q_DIFF_Cant_Deficiency_specific_category;
     outC->P027_legacy_out.diffArray[idx7].nc_cddiff =
       NC_CDDIFF_Specific_SSP_applicable_to_Cant_Deficiency_80_mm;
-    outC->P027_legacy_out.diffArray[idx7].nc_diff = kcg_lit_int64(0);
-    outC->P027_legacy_out.diffArray[idx7].v_diff = kcg_lit_int64(0);
+    outC->P027_legacy_out.diffArray[idx7].nc_diff = kcg_lit_int32(0);
+    outC->P027_legacy_out.diffArray[idx7].v_diff = kcg_lit_int32(0);
   }
   for (idx9 = 0; idx9 < 7; idx9++) {
     outC->P027_legacy_out.SSPArray[idx9].valid = kcg_true;
-    outC->P027_legacy_out.SSPArray[idx9].d_static = kcg_lit_int64(0);
-    outC->P027_legacy_out.SSPArray[idx9].v_static = kcg_lit_int64(0);
+    outC->P027_legacy_out.SSPArray[idx9].d_static = kcg_lit_int32(0);
+    outC->P027_legacy_out.SSPArray[idx9].v_static = kcg_lit_int32(0);
     outC->P027_legacy_out.SSPArray[idx9].q_front =
       Q_FRONT_Train_length_delay_on_validity_end_point_of_profile_element;
     for (idx8 = 0; idx8 < 7; idx8++) {
@@ -148,8 +148,8 @@ void Read_P027V1_Legacy_for_ML_init_TM_specific(
         Q_DIFF_Cant_Deficiency_specific_category;
       outC->P027_legacy_out.SSPArray[idx9].diffArray[idx8].nc_cddiff =
         NC_CDDIFF_Specific_SSP_applicable_to_Cant_Deficiency_80_mm;
-      outC->P027_legacy_out.SSPArray[idx9].diffArray[idx8].nc_diff = kcg_lit_int64(0);
-      outC->P027_legacy_out.SSPArray[idx9].diffArray[idx8].v_diff = kcg_lit_int64(0);
+      outC->P027_legacy_out.SSPArray[idx9].diffArray[idx8].nc_diff = kcg_lit_int32(0);
+      outC->P027_legacy_out.SSPArray[idx9].diffArray[idx8].v_diff = kcg_lit_int32(0);
     }
   }
   /* _L4=(TM_conversions_baseline2::C_P027V1_legacy_for_ML_export#1)/ */

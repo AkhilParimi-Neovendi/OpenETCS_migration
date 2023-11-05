@@ -43,17 +43,17 @@ void C_int_to_DMI_Adhesion_Factor_Data_init_DATA_Packets_Bothways(
 
   outC->_L10 = kcg_true;
   for (idx = 0; idx < 3; idx++) {
-    outC->_L8[idx] = kcg_lit_int64(0);
+    outC->_L8[idx] = kcg_lit_int32(0);
   }
   outC->_L6 = M_ADHESION_Slippery_rail;
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L2.valid = kcg_true;
-  outC->_L2.systemTime = kcg_lit_int64(0);
+  outC->_L2.systemTime = kcg_lit_int32(0);
   outC->_L2.adhesionFactor = M_ADHESION_Slippery_rail;
   outC->dmi_adhesion_factor_data_ct.valid = kcg_true;
-  outC->dmi_adhesion_factor_data_ct.systemTime = kcg_lit_int64(0);
+  outC->dmi_adhesion_factor_data_ct.systemTime = kcg_lit_int32(0);
   outC->dmi_adhesion_factor_data_ct.adhesionFactor = M_ADHESION_Slippery_rail;
   /* _L6=(TM_conversions::CAST_Int_to_M_ADHESION#1)/ */
   CAST_Int_to_M_ADHESION_init_TM_conversions(

@@ -26,20 +26,20 @@ typedef unsigned char kcg_bool;
 typedef float kcg_float32;
 #endif /* kcg_float32 */
 
-#ifndef kcg_float64
-#define kcg_float64 kcg_float64
-typedef double kcg_float64;
-#endif /* kcg_float64 */
+#ifndef kcg_float32
+#define kcg_float32 kcg_float32
+typedef double kcg_float32;
+#endif /* kcg_float32 */
 
 #ifndef kcg_size
 #define kcg_size kcg_size
 typedef ptrdiff_t kcg_size;
 #endif /* kcg_size */
 
-#ifndef kcg_uint64
-#define kcg_uint64 kcg_uint64
-typedef unsigned long long kcg_uint64;
-#endif /* kcg_uint64 */
+#ifndef kcg_uint32
+#define kcg_uint32 kcg_uint32
+typedef unsigned long long kcg_uint32;
+#endif /* kcg_uint32 */
 
 #ifndef kcg_uint32
 #define kcg_uint32 kcg_uint32
@@ -56,10 +56,10 @@ typedef unsigned short kcg_uint16;
 typedef unsigned char kcg_uint8;
 #endif /* kcg_uint8 */
 
-#ifndef kcg_int64
-#define kcg_int64 kcg_int64
-typedef signed long long kcg_int64;
-#endif /* kcg_int64 */
+#ifndef kcg_int32
+#define kcg_int32 kcg_int32
+typedef signed long long kcg_int32;
+#endif /* kcg_int32 */
 
 #ifndef kcg_int32
 #define kcg_int32 kcg_int32
@@ -80,17 +80,17 @@ typedef signed char kcg_int8;
 #define kcg_lit_float32(kcg_C1) ((kcg_float32) (kcg_C1))
 #endif /* kcg_lit_float32 */
 
-#ifndef kcg_lit_float64
-#define kcg_lit_float64(kcg_C1) ((kcg_float64) (kcg_C1))
-#endif /* kcg_lit_float64 */
+#ifndef kcg_lit_float32
+#define kcg_lit_float32(kcg_C1) ((kcg_float32) (kcg_C1))
+#endif /* kcg_lit_float32 */
 
 #ifndef kcg_lit_size
 #define kcg_lit_size(kcg_C1) ((kcg_size) (kcg_C1))
 #endif /* kcg_lit_size */
 
-#ifndef kcg_lit_uint64
-#define kcg_lit_uint64(kcg_C1) ((kcg_uint64) (kcg_C1))
-#endif /* kcg_lit_uint64 */
+#ifndef kcg_lit_uint32
+#define kcg_lit_uint32(kcg_C1) ((kcg_uint32) (kcg_C1))
+#endif /* kcg_lit_uint32 */
 
 #ifndef kcg_lit_uint32
 #define kcg_lit_uint32(kcg_C1) ((kcg_uint32) (kcg_C1))
@@ -104,9 +104,9 @@ typedef signed char kcg_int8;
 #define kcg_lit_uint8(kcg_C1) ((kcg_uint8) (kcg_C1))
 #endif /* kcg_lit_uint8 */
 
-#ifndef kcg_lit_int64
-#define kcg_lit_int64(kcg_C1) ((kcg_int64) (kcg_C1))
-#endif /* kcg_lit_int64 */
+#ifndef kcg_lit_int32
+#define kcg_lit_int32(kcg_C1) ((kcg_int32) (kcg_C1))
+#endif /* kcg_lit_int32 */
 
 #ifndef kcg_lit_int32
 #define kcg_lit_int32(kcg_C1) ((kcg_int32) (kcg_C1))
@@ -128,10 +128,10 @@ typedef signed char kcg_int8;
 #define kcg_true ((kcg_bool) 1)
 #endif /* kcg_true */
 
-#ifndef kcg_lsl_uint64
-#define kcg_lsl_uint64(kcg_C1, kcg_C2)                                        \
-  ((kcg_uint64) ((kcg_C1) << (kcg_C2)) & 0xffffffffffffffff)
-#endif /* kcg_lsl_uint64 */
+#ifndef kcg_lsl_uint32
+#define kcg_lsl_uint32(kcg_C1, kcg_C2)                                        \
+  ((kcg_uint32) ((kcg_C1) << (kcg_C2)) & 0xffffffffffffffff)
+#endif /* kcg_lsl_uint32 */
 
 #ifndef kcg_lsl_uint32
 #define kcg_lsl_uint32(kcg_C1, kcg_C2)                                        \
@@ -148,9 +148,9 @@ typedef signed char kcg_int8;
   ((kcg_uint8) ((kcg_C1) << (kcg_C2)) & 0xff)
 #endif /* kcg_lsl_uint8 */
 
-#ifndef kcg_lnot_uint64
-#define kcg_lnot_uint64(kcg_C1) ((kcg_C1) ^ 0xffffffffffffffff)
-#endif /* kcg_lnot_uint64 */
+#ifndef kcg_lnot_uint32
+#define kcg_lnot_uint32(kcg_C1) ((kcg_C1) ^ 0xffffffffffffffff)
+#endif /* kcg_lnot_uint32 */
 
 #ifndef kcg_lnot_uint32
 #define kcg_lnot_uint32(kcg_C1) ((kcg_C1) ^ 0xffffffff)
@@ -649,7 +649,7 @@ typedef struct kcg_tag_obuEventsAndPhases_T_RCM_Session_Types_Pkg {
 } obuEventsAndPhases_T_RCM_Session_Types_Pkg;
 
 /* NID_RADIO/ */
-typedef kcg_int64 NID_RADIO;
+typedef kcg_int32 NID_RADIO;
 
 /* D_EMERGENCYSTOP/ */
 typedef kcg_int32 D_EMERGENCYSTOP;

@@ -33,10 +33,10 @@ typedef struct {
   kcg_bool /* _L10/ */ _L10;
   kcg_bool /* _L11/ */ _L11;
   kcg_bool /* _L12/ */ _L12;
-  kcg_int64 /* _L13/ */ _L13;
+  kcg_int32 /* _L13/ */ _L13;
   NID_PACKET /* _L14/ */ _L14;
   kcg_bool /* _L15/ */ _L15;
-  kcg_int64 /* _L16/ */ _L16;
+  kcg_int32 /* _L16/ */ _L16;
 } outC_packetValidBasics_xdebugSupport_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

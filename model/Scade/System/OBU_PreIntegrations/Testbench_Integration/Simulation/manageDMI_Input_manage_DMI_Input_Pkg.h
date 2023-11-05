@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _manageDMI_Input_manage_DMI_Input_Pkg_H_
 #define _manageDMI_Input_manage_DMI_Input_Pkg_H_
@@ -102,8 +102,8 @@ typedef struct {
   kcg_bool /* _L15/ */ _L15;
   DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg /* _L16/ */ _L16;
   kcg_bool /* _L18/ */ _L18;
-  kcg_int64 /* _L19/ */ _L19;
-  kcg_int64 /* _L20/ */ _L20;
+  kcg_int32 /* _L19/ */ _L19;
+  kcg_int32 /* _L20/ */ _L20;
 } outC_manageDMI_Input_manage_DMI_Input_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -152,6 +152,6 @@ extern void kcg_load_SV_manageDMI_Input_manage_DMI_Input_Pkg(
 #endif /* _manageDMI_Input_manage_DMI_Input_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** manageDMI_Input_manage_DMI_Input_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

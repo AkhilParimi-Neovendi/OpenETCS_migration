@@ -15,17 +15,17 @@
 #endif
 
 #ifdef _MSC_VER
-#define int64	__int64
-#define uint64	unsigned __int64
+#define int32	__int32
+#define uint32	unsigned __int32
 #else
 #ifdef __GNUC__
-#define int64	long long
-#define uint64	unsigned long long
+#define int32	long long
+#define uint32	unsigned long long
 #else
 /* TO DO
    Solaris cc:
-   #define int64	long long
-   #define uint64	unsigned long long
+   #define int32	long long
+   #define uint32	unsigned long long
    Cross Compilers:
 */
 #endif
@@ -57,10 +57,10 @@
 #define iSumSat_uint8_impls(In1, In2) iSumSat_def(In1, In2, kcg_uint8, kcg_uint16, Min_uint8, Max_uint8)
 #define iSumSat_int16_impls(In1, In2) iSumSat_def(In1, In2, kcg_int16, kcg_int32, Min_int16, Max_int16)
 #define iSumSat_uint16_impls(In1, In2) iSumSat_def(In1, In2, kcg_uint16, kcg_uint32, Min_uint16, Max_uint16)
-/*** Caution: if int64 or uint64 are not defined, these operators must not be used or must be redefined */
-#if defined(int64) && defined(uint64)
-#define iSumSat_int32_impls(In1, In2) iSumSat_def(In1, In2, kcg_int32, int64, Min_int32, Max_int32)
-#define iSumSat_uint32_impls(In1, In2) iSumSat_def(In1, In2, kcg_uint32, uint64, Min_uint32, Max_uint32)
+/*** Caution: if int32 or uint32 are not defined, these operators must not be used or must be redefined */
+#if defined(int32) && defined(uint32)
+#define iSumSat_int32_impls(In1, In2) iSumSat_def(In1, In2, kcg_int32, int32, Min_int32, Max_int32)
+#define iSumSat_uint32_impls(In1, In2) iSumSat_def(In1, In2, kcg_uint32, uint32, Min_uint32, Max_uint32)
 #endif
 
 /* Substraction Protected*/
@@ -71,10 +71,10 @@
 #define iSubSat_uint8_impls(In1, In2) iSubSat_def(In1, In2, kcg_uint8, kcg_int16, Min_uint8, Max_uint8)
 #define iSubSat_int16_impls(In1, In2) iSubSat_def(In1, In2, kcg_int16, kcg_int32, Min_int16, Max_int16)
 #define iSubSat_uint16_impls(In1, In2) iSubSat_def(In1, In2, kcg_uint16, kcg_int32, Min_uint16, Max_uint16)
-/*** Caution: if int64 or uint64 are not defined, these operators must not be used or must be redefined */
-#if defined(int64) 
-#define iSubSat_int32_impls(In1, In2) iSubSat_def(In1, In2, kcg_int32, int64, Min_int32, Max_int32)
-#define iSubSat_uint32_impls(In1, In2) iSubSat_def(In1, In2, kcg_uint32, int64, Min_uint32, Max_uint32)
+/*** Caution: if int32 or uint32 are not defined, these operators must not be used or must be redefined */
+#if defined(int32) 
+#define iSubSat_int32_impls(In1, In2) iSubSat_def(In1, In2, kcg_int32, int32, Min_int32, Max_int32)
+#define iSubSat_uint32_impls(In1, In2) iSubSat_def(In1, In2, kcg_uint32, int32, Min_uint32, Max_uint32)
 #endif
 
 /* Negation Protected */
@@ -95,10 +95,10 @@
 #define iMulSat_uint8_impls(In1, In2) iMulSat_def(In1, In2, kcg_uint8, kcg_uint16, Min_uint8, Max_uint8)
 #define iMulSat_int16_impls(In1, In2) iMulSat_def(In1, In2, kcg_int16, kcg_int32, Min_int16, Max_int16)
 #define iMulSat_uint16_impls(In1, In2) iMulSat_def(In1, In2, kcg_uint16, kcg_uint32, Min_uint16, Max_uint16)
-/*** Caution: if int64 or uint64 are not defined, these operators must not be used or must be redefined */
-#if defined(int64) && defined(uint64)
-#define iMulSat_int32_impls(In1, In2) iMulSat_def(In1, In2, kcg_int32, int64, Min_int32, Max_int32)
-#define iMulSat_uint32_impls(In1, In2) iMulSat_def(In1, In2, kcg_uint32, uint64, Min_uint32, Max_uint32)
+/*** Caution: if int32 or uint32 are not defined, these operators must not be used or must be redefined */
+#if defined(int32) && defined(uint32)
+#define iMulSat_int32_impls(In1, In2) iMulSat_def(In1, In2, kcg_int32, int32, Min_int32, Max_int32)
+#define iMulSat_uint32_impls(In1, In2) iMulSat_def(In1, In2, kcg_uint32, uint32, Min_uint32, Max_uint32)
 #endif
 
 
@@ -156,7 +156,7 @@
 #define iDivCeil_uint8_impls(In1, In2) iDivCeil_unsigneddef(In1, In2, kcg_uint8)
 #define iDivCeil_int16_impls(In1, In2) iDivCeil_def(In1, In2, kcg_int16, kcg_int32, Min_int16, Max_int16)
 #define iDivCeil_uint16_impls(In1, In2) iDivCeil_unsigneddef(In1, In2, kcg_uint16)
-#define iDivCeil_int32_impls(In1, In2) iDivCeil_def(In1, In2, kcg_int32, int64, Min_int32, Max_int32)
+#define iDivCeil_int32_impls(In1, In2) iDivCeil_def(In1, In2, kcg_int32, int32, Min_int32, Max_int32)
 #define iDivCeil_uint32_impls(In1, In2) iDivCeil_unsigneddef(In1, In2, kcg_uint32)
 
 
@@ -174,7 +174,7 @@
 #define iDivFloor_uint8_impls(In1, In2) iDivFloor_unsigneddef(In1, In2, kcg_uint8)
 #define iDivFloor_int16_impls(In1, In2) iDivFloor_def(In1, In2, kcg_int16, kcg_int32, Min_int16, Max_int16)
 #define iDivFloor_uint16_impls(In1, In2) iDivFloor_unsigneddef(In1, In2, kcg_uint16)
-#define iDivFloor_int32_impls(In1, In2) iDivFloor_def(In1, In2, kcg_int32, int64, Min_int32, Max_int32)
+#define iDivFloor_int32_impls(In1, In2) iDivFloor_def(In1, In2, kcg_int32, int32, Min_int32, Max_int32)
 #define iDivFloor_uint32_impls(In1, In2) iDivFloor_unsigneddef(In1, In2, kcg_uint32)
 
 

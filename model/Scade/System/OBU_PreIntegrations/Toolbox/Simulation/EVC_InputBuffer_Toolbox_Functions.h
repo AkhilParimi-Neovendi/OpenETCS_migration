@@ -25,11 +25,11 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* sizeBTM/ */ sizeBTM;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* sizeBTM/ */ sizeBTM;
+  kcg_int32 /* _L3/ */ _L3;
   kcg_bool /* _L2/ */ _L2;
   API_TrackSideInput_T_API_Msg_Pkg /* _L1/ */ _L1;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L6/ */ _L6;
   kcg_bool /* _L5/ */ _L5;
   API_TrackSideInput_T_API_Msg_Pkg /* _L4/ */ _L4;
   API_TrackSideInput_T_API_Msg_Pkg /* _L7/ */ _L7;
@@ -43,9 +43,9 @@ typedef struct {
   kcg_bool /* _L16/ */ _L16;
   kcg_bool /* _L17/ */ _L17;
   kcg_bool /* _L19/ */ _L19;
-  kcg_int64 /* _L20/ */ _L20;
+  kcg_int32 /* _L20/ */ _L20;
   kcg_bool /* _L21/ */ _L21;
-  kcg_int64 /* _L22/ */ _L22;
+  kcg_int32 /* _L22/ */ _L22;
   kcg_bool /* _L23/ */ _L23;
   kcg_bool /* _L27/ */ _L27;
   kcg_bool /* _L28/ */ _L28;

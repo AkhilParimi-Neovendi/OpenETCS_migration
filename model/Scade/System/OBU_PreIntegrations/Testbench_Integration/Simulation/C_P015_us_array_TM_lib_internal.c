@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,9 +10,9 @@
 /* TM_lib_internal::C_P015_us_array/ */
 void C_P015_us_array_TM_lib_internal(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* n_iter_int/ */
-  kcg_int64 n_iter_int,
+  kcg_int32 n_iter_int,
   /* flat/ */
   P015_sections_array_flat_T_TM *flat,
   outC_C_P015_us_array_TM_lib_internal *outC)
@@ -25,7 +25,7 @@ void C_P015_us_array_TM_lib_internal(
   C_P015_extract_el_section_TM_lib_internal(
     outC->_L16,
     &outC->_L1,
-    kcg_lit_int64(3),
+    kcg_lit_int32(3),
     &outC->Context_C_P015_extract_el_section_4);
   outC->_L21 = outC->Context_C_P015_extract_el_section_4.element;
   /* _L27=(TM_conversions::CAST_Int_to_D_SECTIONTIMERSTOPLOC#2)/ */
@@ -41,7 +41,7 @@ void C_P015_us_array_TM_lib_internal(
   C_P015_extract_el_section_TM_lib_internal(
     outC->_L16,
     &outC->_L1,
-    kcg_lit_int64(1),
+    kcg_lit_int32(1),
     &outC->Context_C_P015_extract_el_section_2);
   outC->_L19 = outC->Context_C_P015_extract_el_section_2.element;
   /* _L28=(TM_conversions::CAST_Int_to_Q_SECTIONTIMER#1)/ */
@@ -53,7 +53,7 @@ void C_P015_us_array_TM_lib_internal(
   C_P015_extract_el_section_TM_lib_internal(
     outC->_L16,
     &outC->_L1,
-    kcg_lit_int64(2),
+    kcg_lit_int32(2),
     &outC->Context_C_P015_extract_el_section_3);
   outC->_L20 = outC->Context_C_P015_extract_el_section_3.element;
   /* _L26=(TM_conversions::CAST_Int_to_T_SECTIONTIMER#1)/ */
@@ -65,7 +65,7 @@ void C_P015_us_array_TM_lib_internal(
   C_P015_extract_el_section_TM_lib_internal(
     outC->_L16,
     &outC->_L1,
-    kcg_lit_int64(0),
+    kcg_lit_int32(0),
     &outC->Context_C_P015_extract_el_section_1);
   outC->_L15 = outC->Context_C_P015_extract_el_section_1.element;
   /* _L25=(TM_conversions::CAST_Int_to_L_SECTION#1)/ */
@@ -88,33 +88,33 @@ void C_P015_us_array_init_TM_lib_internal(
 {
   static kcg_size idx;
 
-  outC->_L21 = kcg_lit_int64(0);
-  outC->_L27 = kcg_lit_int64(0);
+  outC->_L21 = kcg_lit_int32(0);
+  outC->_L27 = kcg_lit_int32(0);
   outC->_L33 = kcg_true;
   outC->_L32 = kcg_true;
   outC->_L28 = Q_SECTIONTIMER_No_Section_Timer_information;
-  outC->_L26 = kcg_lit_int64(0);
-  outC->_L25 = kcg_lit_int64(0);
-  outC->_L20 = kcg_lit_int64(0);
-  outC->_L19 = kcg_lit_int64(0);
-  outC->_L18 = kcg_lit_int64(0);
-  outC->_L16 = kcg_lit_int64(0);
-  outC->_L15 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L26 = kcg_lit_int32(0);
+  outC->_L25 = kcg_lit_int32(0);
+  outC->_L20 = kcg_lit_int32(0);
+  outC->_L19 = kcg_lit_int32(0);
+  outC->_L18 = kcg_lit_int32(0);
+  outC->_L16 = kcg_lit_int32(0);
+  outC->_L15 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L4.valid = kcg_true;
-  outC->_L4.l_section = kcg_lit_int64(0);
+  outC->_L4.l_section = kcg_lit_int32(0);
   outC->_L4.q_sectiontimer = Q_SECTIONTIMER_No_Section_Timer_information;
-  outC->_L4.t_sectiontimer = kcg_lit_int64(0);
-  outC->_L4.d_sectiontimerstoploc = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L4.t_sectiontimer = kcg_lit_int32(0);
+  outC->_L4.d_sectiontimerstoploc = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   for (idx = 0; idx < 128; idx++) {
-    outC->_L1[idx] = kcg_lit_int64(0);
+    outC->_L1[idx] = kcg_lit_int32(0);
   }
   outC->sections.valid = kcg_true;
-  outC->sections.l_section = kcg_lit_int64(0);
+  outC->sections.l_section = kcg_lit_int32(0);
   outC->sections.q_sectiontimer = Q_SECTIONTIMER_No_Section_Timer_information;
-  outC->sections.t_sectiontimer = kcg_lit_int64(0);
-  outC->sections.d_sectiontimerstoploc = kcg_lit_int64(0);
+  outC->sections.t_sectiontimer = kcg_lit_int32(0);
+  outC->sections.d_sectiontimerstoploc = kcg_lit_int32(0);
   outC->cont = kcg_true;
   /* _L25=(TM_conversions::CAST_Int_to_L_SECTION#1)/ */
   CAST_Int_to_L_SECTION_init_TM_conversions(
@@ -179,6 +179,6 @@ void C_P015_us_array_reset_TM_lib_internal(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P015_us_array_TM_lib_internal.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

@@ -55,8 +55,8 @@ typedef struct {
   NID_LRBG /* _L41/ */ _L41;
   NID_LRBG /* _L42/ */ _L42;
   NID_RBC /* _L43/ */ _L43;
-  kcg_int64 /* _L45/ */ _L45;
-  kcg_int64 /* _L46/ */ _L46;
+  kcg_int32 /* _L45/ */ _L45;
+  kcg_int32 /* _L46/ */ _L46;
   CompressedPackets_T_Common_Types_Pkg /* _L47/ */ _L47;
   kcg_bool /* _L48/ */ _L48;
   NID_RADIO /* _L49/ */ _L49;

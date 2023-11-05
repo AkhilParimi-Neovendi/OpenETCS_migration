@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -13,7 +13,7 @@ void CAST_DMI_Text_Message_to_int1_DATA_Packets_EVC_to_DMI(
   DMI_Text_Message_T_DMI_Messages_EVC_to_DMI_Pkg *dmi_text_message_ct,
   outC_CAST_DMI_Text_Message_to_int1_DATA_Packets_EVC_to_DMI *outC)
 {
-  static array_int64_260 tmp;
+  static array_int32_260 tmp;
 
   kcg_copy_DMI_Text_Message_T_DMI_Messages_EVC_to_DMI_Pkg(
     &outC->_L1,
@@ -58,10 +58,10 @@ void CAST_DMI_Text_Message_to_int1_DATA_Packets_EVC_to_DMI(
   outC->_L15[2] = outC->_L7;
   outC->_L15[3] = outC->_L12;
   outC->_L15[4] = outC->_L5;
-  kcg_copy_array_int64_5(&tmp[0], &outC->_L15);
+  kcg_copy_array_int32_5(&tmp[0], &outC->_L15);
   kcg_copy_DMI_TEXT_INT_Array_T_DATA(&tmp[5], &outC->_L11);
-  kcg_copy_array_int64_260(&outC->_L17[0], &tmp);
-  kcg_copy_array_int64_2(&outC->_L17[260], &outC->_L16);
+  kcg_copy_array_int32_260(&outC->_L17[0], &tmp);
+  kcg_copy_array_int32_2(&outC->_L17[260], &outC->_L16);
   kcg_copy_DMI_Text_Message_int_array_T_DATA(
     &outC->dmi_text_message_int,
     &outC->_L17);
@@ -80,43 +80,43 @@ void CAST_DMI_Text_Message_to_int1_init_DATA_Packets_EVC_to_DMI(
   static kcg_size idx6;
 
   for (idx = 0; idx < 262; idx++) {
-    outC->_L17[idx] = kcg_lit_int64(0);
+    outC->_L17[idx] = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 2; idx1++) {
-    outC->_L16[idx1] = kcg_lit_int64(0);
+    outC->_L16[idx1] = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 5; idx2++) {
-    outC->_L15[idx2] = kcg_lit_int64(0);
+    outC->_L15[idx2] = kcg_lit_int32(0);
   }
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L12 = kcg_lit_int64(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L12 = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 255; idx3++) {
-    outC->_L11[idx3] = kcg_lit_int64(0);
+    outC->_L11[idx3] = kcg_lit_int32(0);
   }
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L10 = kcg_lit_int32(0);
   outC->_L2 = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L3 = Q_TEXTCLASS_Auxiliary_Information;
   for (idx4 = 0; idx4 < 255; idx4++) {
     outC->_L4[idx4] = ' ';
   }
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L6 = balise_read_error_DMI_Types_Pkg;
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
   outC->_L9 = kcg_true;
   outC->_L1.valid = kcg_true;
-  outC->_L1.system_clock = kcg_lit_int64(0);
-  outC->_L1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L1.system_clock = kcg_lit_int32(0);
+  outC->_L1.textMessage_ID = kcg_lit_int32(0);
   outC->_L1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L1.l_text = kcg_lit_int64(0);
+  outC->_L1.l_text = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 255; idx5++) {
     outC->_L1.x_text[idx5] = ' ';
   }
   outC->_L1.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   for (idx6 = 0; idx6 < 262; idx6++) {
-    outC->dmi_text_message_int[idx6] = kcg_lit_int64(0);
+    outC->dmi_text_message_int[idx6] = kcg_lit_int32(0);
   }
   /* _L12=(DATA::Variables::CAST_DMI_Q_TEXT_to_int#1)/ */
   CAST_DMI_Q_TEXT_to_int_init_DATA_Variables(
@@ -161,6 +161,6 @@ void CAST_DMI_Text_Message_to_int1_reset_DATA_Packets_EVC_to_DMI(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_DMI_Text_Message_to_int1_DATA_Packets_EVC_to_DMI.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

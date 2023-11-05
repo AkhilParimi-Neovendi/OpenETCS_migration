@@ -60,13 +60,13 @@ typedef struct {
   P058_trackside_int_T_TM /* _L29/ */ _L29;
   T_CYCLOC /* _L30/ */ _L30;
   P058_trackside_int_T_TM /* _L31/ */ _L31;
-  kcg_int64 /* _L32/ */ _L32;
+  kcg_int32 /* _L32/ */ _L32;
   P058_trackside_int_T_TM /* _L33/ */ _L33;
   N_ITER /* _L35/ */ _L35;
-  kcg_int64 /* _L36/ */ _L36;
-  kcg_int64 /* _L37/ */ _L37;
-  kcg_int64 /* _L38/ */ _L38;
-  kcg_int64 /* _L39/ */ _L39;
+  kcg_int32 /* _L36/ */ _L36;
+  kcg_int32 /* _L37/ */ _L37;
+  kcg_int32 /* _L38/ */ _L38;
+  kcg_int32 /* _L39/ */ _L39;
   L_PACKET /* _L40/ */ _L40;
 } outC__125_RadioTrackTrainPacke_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg_RBC_RadioTrackTrainPacket058_Pkg;
 

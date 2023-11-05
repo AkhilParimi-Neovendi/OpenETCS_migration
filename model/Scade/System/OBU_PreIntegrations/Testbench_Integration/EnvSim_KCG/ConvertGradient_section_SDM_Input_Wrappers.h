@@ -31,7 +31,7 @@ typedef struct {
   L_internal_real_Type_SDM_Types_Pkg /* _L7/ */ _L7;
   Gradient_section_t_TrackAtlasTypes /* _L9/ */ _L9;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L10/ */ _L10;
-  kcg_float64 /* _L11/ */ _L11;
+  kcg_float32 /* _L11/ */ _L11;
 } outC_ConvertGradient_section_SDM_Input_Wrappers;
 
 /* ===========  node initialization and cycle functions  =========== */

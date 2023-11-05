@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -67,38 +67,38 @@ void C_DMI_Train_Data_to_int_init_DATA_Packets_Bothways(
   static kcg_size idx;
   static kcg_size idx1;
 
-  outC->_L36 = kcg_lit_int64(0);
+  outC->_L36 = kcg_lit_int32(0);
   outC->_L32 = kcg_true;
-  outC->_L31 = kcg_lit_int64(0);
+  outC->_L31 = kcg_lit_int32(0);
   outC->_L30 =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->_L29 = kcg_lit_int64(0);
-  outC->_L28 = kcg_lit_int64(0);
-  outC->_L27 = kcg_lit_int64(0);
+  outC->_L29 = kcg_lit_int32(0);
+  outC->_L28 = kcg_lit_int32(0);
+  outC->_L27 = kcg_lit_int32(0);
   outC->_L26 = M_AXLELOADCAT_A;
   outC->_L25 = M_AIRTIGHT_Not_fitted;
   outC->_L24 =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L22.valid = kcg_true;
-  outC->_L22.systemTime = kcg_lit_int64(0);
+  outC->_L22.systemTime = kcg_lit_int32(0);
   outC->_L22.trainCategory =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->_L22.l_train = kcg_lit_int64(0);
-  outC->_L22.m_brakeperct = kcg_lit_int64(0);
-  outC->_L22.v_maxTrain = kcg_lit_int64(0);
+  outC->_L22.l_train = kcg_lit_int32(0);
+  outC->_L22.m_brakeperct = kcg_lit_int32(0);
+  outC->_L22.v_maxTrain = kcg_lit_int32(0);
   outC->_L22.m_axleLoad = M_AXLELOADCAT_A;
   outC->_L22.m_airTight = M_AIRTIGHT_Not_fitted;
   outC->_L22.m_loadingGauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
-  outC->_L16 = kcg_lit_int64(0);
-  outC->_L15 = kcg_lit_int64(0);
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
+  outC->_L16 = kcg_lit_int32(0);
+  outC->_L15 = kcg_lit_int32(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
   for (idx = 0; idx < 9; idx++) {
-    outC->_L2[idx] = kcg_lit_int64(0);
+    outC->_L2[idx] = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 9; idx1++) {
-    outC->dmi_train_data_int[idx1] = kcg_lit_int64(0);
+    outC->dmi_train_data_int[idx1] = kcg_lit_int32(0);
   }
   /* _L16=(TM_conversions::CAST_M_LOADINGGAUGE_to_int#1)/ */
   CAST_M_LOADINGGAUGE_to_int_init_TM_conversions(
@@ -143,6 +143,6 @@ void C_DMI_Train_Data_to_int_reset_DATA_Packets_Bothways(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_DMI_Train_Data_to_int_DATA_Packets_Bothways.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

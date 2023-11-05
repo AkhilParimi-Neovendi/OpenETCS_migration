@@ -10,22 +10,22 @@
 /* TM_lib_internal::C_P058_extract_el_section/ */
 void C_P058_extract_el_section_TM_lib_internal(
   /* offset/ */
-  kcg_int64 offset,
+  kcg_int32 offset,
   /* flat/ */
   P058_sections_array_flat_T_TM *flat,
   /* modulo/ */
-  kcg_int64 modulo,
+  kcg_int32 modulo,
   outC_C_P058_extract_el_section_TM_lib_internal *outC)
 {
   outC->_L3 = modulo;
   outC->_L1 = offset;
   outC->_L5 = outC->_L1 + outC->_L3;
   kcg_copy_P058_sections_array_flat_T_TM(&outC->_L2, flat);
-  if ((kcg_lit_int64(0) <= outC->_L5) & (outC->_L5 < kcg_lit_int64(64))) {
+  if ((kcg_lit_int32(0) <= outC->_L5) & (outC->_L5 < kcg_lit_int32(64))) {
     outC->_L6 = outC->_L2[outC->_L5];
   }
   else {
-    outC->_L6 = kcg_lit_int64(0);
+    outC->_L6 = kcg_lit_int32(0);
   }
   outC->element = outC->_L6;
 }
@@ -36,14 +36,14 @@ void C_P058_extract_el_section_init_TM_lib_internal(
 {
   static kcg_size idx;
 
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   for (idx = 0; idx < 64; idx++) {
-    outC->_L2[idx] = kcg_lit_int64(0);
+    outC->_L2[idx] = kcg_lit_int32(0);
   }
-  outC->_L1 = kcg_lit_int64(0);
-  outC->element = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->element = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

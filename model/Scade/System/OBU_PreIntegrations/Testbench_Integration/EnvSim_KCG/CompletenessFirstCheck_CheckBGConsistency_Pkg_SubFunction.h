@@ -19,7 +19,7 @@ typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   kcg_bool /* isComplete/ */ isComplete;
   Telegram_T_BG_Types_Pkg /* lastTelegram/ */ lastTelegram;
-  kcg_int64 /* inDex/ */ inDex;
+  kcg_int32 /* inDex/ */ inDex;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -34,16 +34,16 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   TelegramArray_T_BG_Types_Pkg /* IfBlock1:then:_L43/ */ _L43_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L42/ */ _L42_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L41/ */ _L41_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L42/ */ _L42_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L41/ */ _L41_then_IfBlock1;
   Telegram_T_BG_Types_Pkg /* IfBlock1:then:_L39/ */ _L39_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L37/ */ _L37_then_IfBlock1;
   Telegram_T_BG_Types_Pkg /* IfBlock1:then:_L38/ */ _L38_then_IfBlock1;
   TelegramHeader_T_BG_Types_Pkg /* IfBlock1:then:_L16/ */ _L16_then_IfBlock1;
   Telegram_T_BG_Types_Pkg /* IfBlock1:then:_L36/ */ _L36_then_IfBlock1;
   TelegramArray_T_BG_Types_Pkg /* IfBlock1:then:_L34/ */ _L34_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L33/ */ _L33_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L32/ */ _L32_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L33/ */ _L33_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L32/ */ _L32_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L29/ */ _L29_then_IfBlock1;
   _103_array /* IfBlock1:then:_L26/ */ _L26_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L15/ */ _L15_then_IfBlock1;
@@ -51,7 +51,7 @@ typedef struct {
   kcg_bool /* IfBlock1:then:_L13/ */ _L13_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L8/ */ _L8_then_IfBlock1;
   Telegram_T_BG_Types_Pkg /* IfBlock1:then:_L10/ */ _L10_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L9/ */ _L9_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L9/ */ _L9_then_IfBlock1;
   TelegramArray_T_BG_Types_Pkg /* IfBlock1:then:_L11/ */ _L11_then_IfBlock1;
   Telegram_T_BG_Types_Pkg /* IfBlock1:then:_L12/ */ _L12_then_IfBlock1;
   kcg_bool /* IfBlock1:else:_L1/ */ _L1_else_IfBlock1;

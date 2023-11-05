@@ -29,10 +29,10 @@ typedef struct {
   kcg_bool /* _L5/ */ _L5;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L4/ */ _L4;
   DMI_LevelList_T_DMI_Types_Pkg /* _L3/ */ _L3;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L6/ */ _L6;
   DMI_LevelList_int_array_T_DATA /* _L7/ */ _L7;
   DMI_EVC_Level_Data_T_DMI_Messages_EVC_to_DMI_Pkg /* _L8/ */ _L8;
-  array_int64_2 /* _L9/ */ _L9;
+  array_int32_2 /* _L9/ */ _L9;
 } outC_CAST_DMI_EVC_Level_Data_to_int1_DATA_Packets_EVC_to_DMI;
 
 /* ===========  node initialization and cycle functions  =========== */

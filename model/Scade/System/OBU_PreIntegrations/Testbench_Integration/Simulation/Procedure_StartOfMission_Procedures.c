@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -2148,15 +2148,15 @@ void Procedure_StartOfMission_init_Procedures(
   outC->_L20_Waiting_Driver_Selection_SM_SoM_On_Procedure_On_SM_StartOfMissionProcedure =
     kcg_true;
   outC->_L19_Waiting_Driver_Selection_SM_SoM_On_Procedure_On_SM_StartOfMissionProcedure.Distance =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_Waiting_Driver_Selection_SM_SoM_On_Procedure_On_SM_StartOfMissionProcedure.Mode =
     Profile_OS_Level_And_Mode_Types_Pkg;
   outC->_L19_Waiting_Driver_Selection_SM_SoM_On_Procedure_On_SM_StartOfMissionProcedure.Speed =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_Waiting_Driver_Selection_SM_SoM_On_Procedure_On_SM_StartOfMissionProcedure.Length =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_Waiting_Driver_Selection_SM_SoM_On_Procedure_On_SM_StartOfMissionProcedure.Length_Ack =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L18_Waiting_Driver_Selection_SM_SoM_On_Procedure_On_SM_StartOfMissionProcedure =
     kcg_true;
   outC->_L17_Waiting_Driver_Selection_SM_SoM_On_Procedure_On_SM_StartOfMissionProcedure =
@@ -2317,6 +2317,6 @@ void kcg_load_SV_Procedure_StartOfMission_Procedures(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Procedure_StartOfMission_Procedures.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

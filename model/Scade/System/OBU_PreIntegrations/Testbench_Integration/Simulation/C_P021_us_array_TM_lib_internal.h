@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _C_P021_us_array_TM_lib_internal_H_
 #define _C_P021_us_array_TM_lib_internal_H_
@@ -33,14 +33,14 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   P021_sections_array_flat_T_TM /* _L1/ */ _L1;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   P021_section_enum_T_TM /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L15/ */ _L15;
-  kcg_int64 /* _L16/ */ _L16;
-  kcg_int64 /* _L18/ */ _L18;
-  kcg_int64 /* _L19/ */ _L19;
-  kcg_int64 /* _L20/ */ _L20;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L15/ */ _L15;
+  kcg_int32 /* _L16/ */ _L16;
+  kcg_int32 /* _L18/ */ _L18;
+  kcg_int32 /* _L19/ */ _L19;
+  kcg_int32 /* _L20/ */ _L20;
   D_GRADIENT /* _L25/ */ _L25;
   G_A /* _L26/ */ _L26;
   Q_GDIR /* _L28/ */ _L28;
@@ -52,9 +52,9 @@ typedef struct {
 /* TM_lib_internal::C_P021_us_array/ */
 extern void C_P021_us_array_TM_lib_internal(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* n_iter_int/ */
-  kcg_int64 n_iter_int,
+  kcg_int32 n_iter_int,
   /* flat/ */
   P021_sections_array_flat_T_TM *flat,
   outC_C_P021_us_array_TM_lib_internal *outC);
@@ -74,6 +74,6 @@ extern void C_P021_us_array_init_TM_lib_internal(
 #endif /* _C_P021_us_array_TM_lib_internal_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P021_us_array_TM_lib_internal.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

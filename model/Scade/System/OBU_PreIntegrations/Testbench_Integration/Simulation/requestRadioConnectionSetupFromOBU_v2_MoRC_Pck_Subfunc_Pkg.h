@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _requestRadioConnectionSetupFromOBU_v2_MoRC_Pck_Subfunc_Pkg_H_
 #define _requestRadioConnectionSetupFromOBU_v2_MoRC_Pck_Subfunc_Pkg_H_
@@ -57,7 +57,7 @@ typedef struct {
   p42_sessionManagement_T_RCM_MsgTypes_Pkg /* @1/_L6/ */ _L6_Memory_1_struct;
   p42_sessionManagement_T_RCM_MsgTypes_Pkg /* @1/_L7/ */ _L7_Memory_1_struct;
   kcg_bool /* IfBlock1:then:_L14/ */ _L14_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
   mobileConnectionContext_T_RCM_Types_Pkg /* IfBlock1:then:_L5/ */ _L5_then_IfBlock1;
   NID_RADIO /* IfBlock1:then:_L7/ */ _L7_then_IfBlock1;
   mobileConnetionAction_T_RCM_Types_Pkg /* IfBlock1:then:_L11/ */ _L11_then_IfBlock1;
@@ -65,24 +65,24 @@ typedef struct {
   kcg_bool /* IfBlock1:else:else:then:_L22/ */ _L22_then_else_else_IfBlock1;
   mobileConnetionAction_T_RCM_Types_Pkg /* IfBlock1:else:else:then:_L14/ */ _L14_then_else_else_IfBlock1;
   mobileConnectionContext_T_RCM_Types_Pkg /* IfBlock1:else:else:then:_L15/ */ _L15_then_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:then:_L16/ */ _L16_then_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:then:_L16/ */ _L16_then_else_else_IfBlock1;
   mobileConnectionCmd_T_RCM_Types_Pkg /* IfBlock1:else:else:then:_L19/ */ _L19_then_else_else_IfBlock1;
   NID_RADIO /* IfBlock1:else:else:then:_L21/ */ _L21_then_else_else_IfBlock1;
   mobileConnectionCmd_T_RCM_Types_Pkg /* IfBlock1:else:else:else:else:_L23/ */ _L23_else_else_else_else_IfBlock1;
   NID_RADIO /* IfBlock1:else:else:else:else:_L22/ */ _L22_else_else_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:else:else:_L21/ */ _L21_else_else_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:else:else:_L21/ */ _L21_else_else_else_else_IfBlock1;
   mobileConnectionContext_T_RCM_Types_Pkg /* IfBlock1:else:else:else:else:_L16/ */ _L16_else_else_else_else_IfBlock1;
   mobileConnetionAction_T_RCM_Types_Pkg /* IfBlock1:else:else:else:else:_L15/ */ _L15_else_else_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:else:else:_L24/ */ _L24_else_else_else_else_IfBlock1;
   mobileConnectionContext_T_RCM_Types_Pkg /* IfBlock1:else:else:else:then:_L10/ */ _L10_then_else_else_else_IfBlock1;
   mobileConnectionCmd_T_RCM_Types_Pkg /* IfBlock1:else:else:else:then:_L8/ */ _L8_then_else_else_else_IfBlock1;
   NID_RADIO /* IfBlock1:else:else:else:then:_L7/ */ _L7_then_else_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:else:then:_L6/ */ _L6_then_else_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:else:then:_L6/ */ _L6_then_else_else_else_IfBlock1;
   mobileConnetionAction_T_RCM_Types_Pkg /* IfBlock1:else:else:else:then:_L5/ */ _L5_then_else_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:else:then:_L11/ */ _L11_then_else_else_else_IfBlock1;
   mobileConnectionCmd_T_RCM_Types_Pkg /* IfBlock1:else:then:_L8/ */ _L8_then_else_IfBlock1;
   mobileConnectionContext_T_RCM_Types_Pkg /* IfBlock1:else:then:_L5/ */ _L5_then_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L3/ */ _L3_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L3/ */ _L3_then_else_IfBlock1;
   NID_RADIO /* IfBlock1:else:then:_L2/ */ _L2_then_else_IfBlock1;
   mobileConnetionAction_T_RCM_Types_Pkg /* IfBlock1:else:then:_L1/ */ _L1_then_else_IfBlock1;
   NID_RADIO /* IfBlock1:else:then:_L4/ */ _L4_then_else_IfBlock1;
@@ -187,7 +187,7 @@ typedef struct {
   T_internal_Type_Obu_BasicTypes_Pkg /* _L387/ */ _L387;
   kcg_bool /* _L385/ */ _L385;
   kcg_bool /* _L384/ */ _L384;
-  kcg_int64 /* _L381/ */ _L381;
+  kcg_int32 /* _L381/ */ _L381;
   kcg_bool /* _L380/ */ _L380;
   kcg_bool /* _L399/ */ _L399;
   sessionPhase_T_RCM_Session_Types_Pkg /* _L400/ */ _L400;
@@ -224,7 +224,7 @@ extern void requestRadioConnectionSetupFromOBU_v2_MoRC_Pck_Subfunc_Pkg(
   /* maxTimeToMaintainCommSession/ */
   T_internal_Type_Obu_BasicTypes_Pkg maxTimeToMaintainCommSession,
   /* noOfRetriesToEstablishASafeRadioConnection/ */
-  kcg_int64 noOfRetriesToEstablishASafeRadioConnection,
+  kcg_int32 noOfRetriesToEstablishASafeRadioConnection,
   outC_requestRadioConnectionSetupFromOBU_v2_MoRC_Pck_Subfunc_Pkg *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET
@@ -268,6 +268,6 @@ extern void kcg_load_SV_requestRadioConnectionSetupFromOBU_v2_MoRC_Pck_Subfunc_P
 #endif /* _requestRadioConnectionSetupFromOBU_v2_MoRC_Pck_Subfunc_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** requestRadioConnectionSetupFromOBU_v2_MoRC_Pck_Subfunc_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

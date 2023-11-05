@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _probe_RadioOutput_RadioSupport_Pkg_H_
 #define _probe_RadioOutput_RadioSupport_Pkg_H_
@@ -27,30 +27,30 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* _L1/ */ _L1;
   M_TrainTrack_Message_T_TM_radio_messages /* _L2/ */ _L2;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   M_TrainTrack_Message_T_TM_radio_messages /* _L4/ */ _L4;
   M_TrainTrack_MessageHd_T_TM_radio_messages /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
-  kcg_int64 /* _L11/ */ _L11;
+  kcg_int32 /* _L6/ */ _L6;
+  kcg_int32 /* _L11/ */ _L11;
   M_TrainTrack_Message_T_TM_radio_messages /* _L10/ */ _L10;
-  kcg_int64 /* _L9/ */ _L9;
+  kcg_int32 /* _L9/ */ _L9;
   M_TrainTrack_MessageHd_T_TM_radio_messages /* _L8/ */ _L8;
   M_TrainTrack_Message_T_TM_radio_messages /* _L7/ */ _L7;
-  kcg_int64 /* _L16/ */ _L16;
-  kcg_int64 /* _L15/ */ _L15;
+  kcg_int32 /* _L16/ */ _L16;
+  kcg_int32 /* _L15/ */ _L15;
   M_TrainTrack_MessageHd_T_TM_radio_messages /* _L14/ */ _L14;
   M_TrainTrack_Message_T_TM_radio_messages /* _L13/ */ _L13;
   M_TrainTrack_Message_T_TM_radio_messages /* _L12/ */ _L12;
-  kcg_int64 /* _L26/ */ _L26;
+  kcg_int32 /* _L26/ */ _L26;
   M_TrainTrack_Message_T_TM_radio_messages /* _L25/ */ _L25;
   M_TrainTrack_MessageHd_T_TM_radio_messages /* _L24/ */ _L24;
   M_TrainTrack_Message_T_TM_radio_messages /* _L23/ */ _L23;
-  kcg_int64 /* _L22/ */ _L22;
-  kcg_int64 /* _L31/ */ _L31;
+  kcg_int32 /* _L22/ */ _L22;
+  kcg_int32 /* _L31/ */ _L31;
   M_TrainTrack_Message_T_TM_radio_messages /* _L30/ */ _L30;
   M_TrainTrack_MessageHd_T_TM_radio_messages /* _L29/ */ _L29;
   M_TrainTrack_Message_T_TM_radio_messages /* _L28/ */ _L28;
-  kcg_int64 /* _L27/ */ _L27;
+  kcg_int32 /* _L27/ */ _L27;
 } outC_probe_RadioOutput_RadioSupport_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -75,6 +75,6 @@ extern void probe_RadioOutput_init_RadioSupport_Pkg(
 #endif /* _probe_RadioOutput_RadioSupport_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** probe_RadioOutput_RadioSupport_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

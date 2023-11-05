@@ -15,7 +15,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* outPacketId/ */ outPacketId;
+  kcg_int32 /* outPacketId/ */ outPacketId;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -24,11 +24,11 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   MetadataElement_T_Common_Types_Pkg /* _L1/ */ _L1;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   NID_PACKET /* _L6/ */ _L6;
   kcg_bool /* _L7/ */ _L7;
-  kcg_int64 /* _L8/ */ _L8;
-  kcg_int64 /* _L9/ */ _L9;
+  kcg_int32 /* _L8/ */ _L8;
+  kcg_int32 /* _L9/ */ _L9;
 } outC_GetPacketId_InformationFilter_Pkg_Common;
 
 /* ===========  node initialization and cycle functions  =========== */

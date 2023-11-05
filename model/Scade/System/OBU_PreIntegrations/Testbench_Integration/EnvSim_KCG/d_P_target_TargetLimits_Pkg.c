@@ -43,32 +43,32 @@ void d_P_target_init_TargetLimits_Pkg(outC_d_P_target_TargetLimits_Pkg *outC)
   static kcg_size idx2;
   static kcg_size idx3;
 
-  outC->_L14.Traction = kcg_lit_float64(0.0);
-  outC->_L14.berem = kcg_lit_float64(0.0);
-  outC->_L14.bs = kcg_lit_float64(0.0);
-  outC->_L14.bs1 = kcg_lit_float64(0.0);
-  outC->_L14.bs2 = kcg_lit_float64(0.0);
+  outC->_L14.Traction = kcg_lit_float32(0.0);
+  outC->_L14.berem = kcg_lit_float32(0.0);
+  outC->_L14.bs = kcg_lit_float32(0.0);
+  outC->_L14.bs1 = kcg_lit_float32(0.0);
+  outC->_L14.bs2 = kcg_lit_float32(0.0);
   outC->_L14.inhComp = kcg_true;
-  outC->_L14.indication = kcg_lit_float64(0.0);
-  outC->_L13 = kcg_lit_float64(0.0);
-  outC->_L12 = kcg_lit_float64(0.0);
-  outC->_L11 = kcg_lit_float64(0.0);
-  outC->_L9 = kcg_lit_float64(0.0);
+  outC->_L14.indication = kcg_lit_float32(0.0);
+  outC->_L13 = kcg_lit_float32(0.0);
+  outC->_L12 = kcg_lit_float32(0.0);
+  outC->_L11 = kcg_lit_float32(0.0);
+  outC->_L9 = kcg_lit_float32(0.0);
   outC->_L4 = kcg_true;
-  outC->_L5 = kcg_lit_float64(0.0);
+  outC->_L5 = kcg_lit_float32(0.0);
   for (idx = 0; idx < 114; idx++) {
-    outC->_L6.distances[idx] = kcg_lit_float64(0.0);
+    outC->_L6.distances[idx] = kcg_lit_float32(0.0);
   }
   for (idx1 = 0; idx1 < 114; idx1++) {
-    outC->_L6.speeds[idx1] = kcg_lit_float64(0.0);
+    outC->_L6.speeds[idx1] = kcg_lit_float32(0.0);
   }
   for (idx2 = 0; idx2 < 114; idx2++) {
-    outC->_L6.accelerations[idx2] = kcg_lit_float64(0.0);
+    outC->_L6.accelerations[idx2] = kcg_lit_float32(0.0);
   }
   for (idx3 = 0; idx3 < 114; idx3++) {
     outC->_L6.valid[idx3] = kcg_true;
   }
-  outC->D_P_target = kcg_lit_float64(0.0);
+  outC->D_P_target = kcg_lit_float32(0.0);
   outC->valid = kcg_true;
   /* _L13=(TargetLimits_Pkg::d_EBI_non_est#1)/ */
   d_EBI_non_est_init_TargetLimits_Pkg(&outC->Context_d_EBI_non_est_1);

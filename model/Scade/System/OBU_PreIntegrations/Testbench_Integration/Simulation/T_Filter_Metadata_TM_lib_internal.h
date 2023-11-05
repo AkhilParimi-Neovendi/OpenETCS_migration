@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _T_Filter_Metadata_TM_lib_internal_H_
 #define _T_Filter_Metadata_TM_lib_internal_H_
@@ -27,14 +27,14 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
-  kcg_int64 /* _L2/ */ _L2;
-  kcg_int64 /* _L6/ */ _L6;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L10/ */ _L10;
-  kcg_int64 /* _L8/ */ _L8;
-  kcg_int64 /* _L7/ */ _L7;
+  kcg_int32 /* _L1/ */ _L1;
+  kcg_int32 /* _L2/ */ _L2;
+  kcg_int32 /* _L6/ */ _L6;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L10/ */ _L10;
+  kcg_int32 /* _L8/ */ _L8;
+  kcg_int32 /* _L7/ */ _L7;
   kcg_bool /* _L11/ */ _L11;
   kcg_bool /* _L17/ */ _L17;
   kcg_bool /* _L18/ */ _L18;
@@ -47,9 +47,9 @@ typedef struct {
 /* TM_lib_internal::T_Filter_Metadata/ */
 extern void T_Filter_Metadata_TM_lib_internal(
   /* Metadata_from_track/ */
-  kcg_int64 Metadata_from_track,
+  kcg_int32 Metadata_from_track,
   /* Metadata_looked_for/ */
-  kcg_int64 Metadata_looked_for,
+  kcg_int32 Metadata_looked_for,
   /* F_version/ */
   kcg_bool F_version,
   /* F_id/ */
@@ -71,6 +71,6 @@ extern void T_Filter_Metadata_init_TM_lib_internal(
 #endif /* _T_Filter_Metadata_TM_lib_internal_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** T_Filter_Metadata_TM_lib_internal.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

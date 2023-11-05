@@ -55,7 +55,7 @@ typedef struct {
   kcg_bool /* _L3/ */ _L3;
   kcg_bool /* _L2/ */ _L2;
   array_bool_30 /* _L33/ */ _L33;
-  kcg_int64 /* _L37/ */ _L37;
+  kcg_int32 /* _L37/ */ _L37;
 } outC_CAST_DMI_Available_Menu_to_int_DATA_Variables;
 
 /* ===========  node initialization and cycle functions  =========== */

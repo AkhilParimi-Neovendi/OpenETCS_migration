@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -39,17 +39,17 @@ void iterateASafeRow_SDMModelPkg(
 #ifndef KCG_USER_DEFINED_INIT
 void iterateASafeRow_init_SDMModelPkg(outC_iterateASafeRow_SDMModelPkg *outC)
 {
-  outC->_L7 = kcg_lit_float64(0.0);
-  outC->_L6 = kcg_lit_float64(0.0);
-  outC->_L5 = kcg_lit_float64(0.0);
+  outC->_L7 = kcg_lit_float32(0.0);
+  outC->_L6 = kcg_lit_float32(0.0);
+  outC->_L5 = kcg_lit_float32(0.0);
   outC->_L4 = kcg_true;
-  outC->_L3 = kcg_lit_float64(0.0);
-  outC->_L2.position = kcg_lit_float64(0.0);
-  outC->_L2.gradient_acceleration = kcg_lit_float64(0.0);
+  outC->_L3 = kcg_lit_float32(0.0);
+  outC->_L2.position = kcg_lit_float32(0.0);
+  outC->_L2.gradient_acceleration = kcg_lit_float32(0.0);
   outC->_L2.valid = kcg_true;
-  outC->_L1 = kcg_lit_float64(0.0);
-  outC->A_graded = kcg_lit_float64(0.0);
-  outC->keep_gradient = kcg_lit_float64(0.0);
+  outC->_L1 = kcg_lit_float32(0.0);
+  outC->A_graded = kcg_lit_float32(0.0);
+  outC->keep_gradient = kcg_lit_float32(0.0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -64,6 +64,6 @@ void iterateASafeRow_reset_SDMModelPkg(outC_iterateASafeRow_SDMModelPkg *outC)
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** iterateASafeRow_SDMModelPkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

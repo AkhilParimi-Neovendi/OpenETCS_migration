@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _Normalize_DP_and_OL_LRBG_TA_MA_new_H_
 #define _Normalize_DP_and_OL_LRBG_TA_MA_new_H_
@@ -28,11 +28,11 @@ typedef struct {
   L_internal_Type_Obu_BasicTypes_Pkg /* _L64/ */ _L64;
   V_internal_Type_Obu_BasicTypes_Pkg /* _L63/ */ _L63;
   kcg_bool /* _L62/ */ _L62;
-  kcg_int64 /* _L65/ */ _L65;
+  kcg_int32 /* _L65/ */ _L65;
   DP_or_OL_t_TrackAtlasTypes /* _L66/ */ _L66;
   MovementAuthority_t_TrackAtlasTypes /* _L74/ */ _L74;
   DP_or_OL_t_TrackAtlasTypes /* _L73/ */ _L73;
-  kcg_int64 /* _L72/ */ _L72;
+  kcg_int32 /* _L72/ */ _L72;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L69/ */ _L69;
   V_internal_Type_Obu_BasicTypes_Pkg /* _L70/ */ _L70;
   kcg_bool /* _L71/ */ _L71;
@@ -64,6 +64,6 @@ extern void Normalize_DP_and_OL_LRBG_init_TA_MA_new(
 #endif /* _Normalize_DP_and_OL_LRBG_TA_MA_new_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Normalize_DP_and_OL_LRBG_TA_MA_new.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

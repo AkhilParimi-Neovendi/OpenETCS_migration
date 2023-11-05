@@ -10,10 +10,10 @@
 /* Toolbox::Converters::m_s_To_km_h/ */
 void m_s_To_km_h_Toolbox_Converters(
   /* m_s/ */
-  kcg_float64 m_s,
+  kcg_float32 m_s,
   outC_m_s_To_km_h_Toolbox_Converters *outC)
 {
-  outC->_L3 = kcg_lit_float64(3.6);
+  outC->_L3 = kcg_lit_float32(3.6);
   outC->_L1 = m_s;
   outC->_L2 = outC->_L1 * outC->_L3;
   outC->km_h = outC->_L2;
@@ -23,10 +23,10 @@ void m_s_To_km_h_Toolbox_Converters(
 void m_s_To_km_h_init_Toolbox_Converters(
   outC_m_s_To_km_h_Toolbox_Converters *outC)
 {
-  outC->_L3 = kcg_lit_float64(0.0);
-  outC->_L2 = kcg_lit_float64(0.0);
-  outC->_L1 = kcg_lit_float64(0.0);
-  outC->km_h = kcg_lit_float64(0.0);
+  outC->_L3 = kcg_lit_float32(0.0);
+  outC->_L2 = kcg_lit_float32(0.0);
+  outC->_L1 = kcg_lit_float32(0.0);
+  outC->km_h = kcg_lit_float32(0.0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

@@ -14,7 +14,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* v_maxtrain_int/ */ v_maxtrain_int;
+  kcg_int32 /* v_maxtrain_int/ */ v_maxtrain_int;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
@@ -22,10 +22,10 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   V_MAXTRAIN /* _L1/ */ _L1;
-  kcg_int64 /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
-  kcg_int64 /* _L16/ */ _L16;
-  kcg_int64 /* _L15/ */ _L15;
+  kcg_int32 /* _L11/ */ _L11;
+  kcg_int32 /* _L12/ */ _L12;
+  kcg_int32 /* _L16/ */ _L16;
+  kcg_int32 /* _L15/ */ _L15;
   kcg_bool /* _L14/ */ _L14;
   kcg_bool /* _L13/ */ _L13;
 } outC_CAST_V_MAXTRAIN_to_int_TM_conversions;

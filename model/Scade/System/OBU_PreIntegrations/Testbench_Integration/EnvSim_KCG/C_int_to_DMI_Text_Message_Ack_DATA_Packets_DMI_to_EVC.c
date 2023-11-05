@@ -44,19 +44,19 @@ void C_int_to_DMI_Text_Message_Ack_init_DATA_Packets_DMI_to_EVC(
   outC->_L11 = kcg_true;
   outC->_L9 = kcg_true;
   for (idx = 0; idx < 4; idx++) {
-    outC->_L8[idx] = kcg_lit_int64(0);
+    outC->_L8[idx] = kcg_lit_int32(0);
   }
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
   outC->_L2.valid = kcg_true;
-  outC->_L2.systemTime = kcg_lit_int64(0);
-  outC->_L2.textMessage_ID = kcg_lit_int64(0);
+  outC->_L2.systemTime = kcg_lit_int32(0);
+  outC->_L2.textMessage_ID = kcg_lit_int32(0);
   outC->_L2.acknowledged = kcg_true;
   outC->dmi_text_message_ack_ct.valid = kcg_true;
-  outC->dmi_text_message_ack_ct.systemTime = kcg_lit_int64(0);
-  outC->dmi_text_message_ack_ct.textMessage_ID = kcg_lit_int64(0);
+  outC->dmi_text_message_ack_ct.systemTime = kcg_lit_int32(0);
+  outC->dmi_text_message_ack_ct.textMessage_ID = kcg_lit_int32(0);
   outC->dmi_text_message_ack_ct.acknowledged = kcg_true;
   /* _L9=(Utilities::Int_to_Bool#1)/ */
   Int_to_Bool_init_Utilities(&outC->Context_Int_to_Bool_1);

@@ -54,14 +54,14 @@ void mapEntryForLevel_init_manage_DMI_Output_Pkg(
 {
   outC->_L11 = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   outC->_L10.valid = kcg_true;
-  outC->_L10.system_clock = kcg_lit_int64(0);
+  outC->_L10.system_clock = kcg_lit_int32(0);
   outC->_L10.entry_request = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   outC->_L9.valid = kcg_true;
-  outC->_L9.system_clock = kcg_lit_int64(0);
+  outC->_L9.system_clock = kcg_lit_int32(0);
   outC->_L9.entry_request = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   outC->_L8 = kcg_true;
   outC->_L7.valid = kcg_true;
-  outC->_L7.system_clock = kcg_lit_int64(0);
+  outC->_L7.system_clock = kcg_lit_int32(0);
   outC->_L7.entry_request = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   outC->_L6 = kcg_true;
   outC->_L5 = kcg_true;
@@ -69,10 +69,10 @@ void mapEntryForLevel_init_manage_DMI_Output_Pkg(
   outC->_L3 = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   outC->_L2 = kcg_true;
   outC->_L1.valid = kcg_true;
-  outC->_L1.system_clock = kcg_lit_int64(0);
+  outC->_L1.system_clock = kcg_lit_int32(0);
   outC->_L1.entry_request = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   outC->new_entryRequest.valid = kcg_true;
-  outC->new_entryRequest.system_clock = kcg_lit_int64(0);
+  outC->new_entryRequest.system_clock = kcg_lit_int32(0);
   outC->new_entryRequest.entry_request =
     Enter_revalidate_driver_identifier_DMI_Types_Pkg;
 }

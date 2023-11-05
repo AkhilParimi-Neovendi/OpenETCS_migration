@@ -32,7 +32,7 @@ typedef struct {
   SSM_ST_TrainExitedFromRBCArea_SM /* TrainExitedFromRBCArea_SM: */ TrainExitedFromRBCArea_SM_state_act;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* TrainExitedFromRBCArea_SM:WaitForOrderToTerminateTheSession:_L30/ */ _L30_WaitForOrderToTerminateTheSession_TrainExitedFromRBCArea_SM;
+  kcg_int32 /* TrainExitedFromRBCArea_SM:WaitForOrderToTerminateTheSession:_L30/ */ _L30_WaitForOrderToTerminateTheSession_TrainExitedFromRBCArea_SM;
   T_internal_Type_Obu_BasicTypes_Pkg /* TrainExitedFromRBCArea_SM:WaitForOrderToTerminateTheSession:_L29/ */ _L29_WaitForOrderToTerminateTheSession_TrainExitedFromRBCArea_SM;
   kcg_bool /* TrainExitedFromRBCArea_SM:WaitForOrderToTerminateTheSession:_L28/ */ _L28_WaitForOrderToTerminateTheSession_TrainExitedFromRBCArea_SM;
   time_Type_MoRC_Pck /* TrainExitedFromRBCArea_SM:WaitForOrderToTerminateTheSession:_L27/ */ _L27_WaitForOrderToTerminateTheSession_TrainExitedFromRBCArea_SM;
@@ -114,7 +114,7 @@ extern void initiateTerminatingSession_v2_MoRC_Pck_Subfunc_Pkg(
   /* maxWaitingTimeUntilTerminationOrderReceived/ */
   T_internal_Type_Obu_BasicTypes_Pkg maxWaitingTimeUntilTerminationOrderReceived,
   /* noOfRetriesUntilTerminationOrderIsReceived/ */
-  kcg_int64 noOfRetriesUntilTerminationOrderIsReceived,
+  kcg_int32 noOfRetriesUntilTerminationOrderIsReceived,
   outC_initiateTerminatingSession_v2_MoRC_Pck_Subfunc_Pkg *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

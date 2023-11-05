@@ -26,7 +26,7 @@ typedef struct {
   CompressedBaliseMessage_TM /* _L1/ */ _L1;
   TrackSectionData_T_InfraLib /* _L3/ */ _L3;
   CompressedBaliseMessage_TM /* _L13/ */ _L13;
-  kcg_float64 /* _L14/ */ _L14;
+  kcg_float32 /* _L14/ */ _L14;
   TrackSectionData_T_InfraLib /* _L15/ */ _L15;
 } outC_Balises0001_Amstel_UB_Sig_AmsterdamUtrechtL2_Sheet05_Amstel_Balises;
 

@@ -29,7 +29,7 @@ typedef struct {
   Target_real_T_TargetManagement_types /* _L35/ */ _L35;
   TargetType_T_TargetManagement_types /* _L33/ */ _L33;
   kcg_bool /* _L62/ */ _L62;
-  kcg_float64 /* _L63/ */ _L63;
+  kcg_float32 /* _L63/ */ _L63;
   Target_real_T_TargetManagement_types /* _L64/ */ _L64;
   Target_real_T_TargetManagement_types /* _L65/ */ _L65;
   Target_real_T_TargetManagement_types /* _L66/ */ _L66;

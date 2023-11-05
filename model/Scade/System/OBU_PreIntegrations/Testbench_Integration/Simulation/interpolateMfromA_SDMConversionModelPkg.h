@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _interpolateMfromA_SDMConversionModelPkg_H_
 #define _interpolateMfromA_SDMConversionModelPkg_H_
@@ -25,17 +25,17 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   A_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
   A_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:else:else:_L13/ */ _L13_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L12/ */ _L12_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L11/ */ _L11_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L10/ */ _L10_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L9/ */ _L9_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L12/ */ _L12_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L11/ */ _L11_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L10/ */ _L10_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L9/ */ _L9_else_else_IfBlock1;
   A_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:else:else:_L8/ */ _L8_else_else_IfBlock1;
   A_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:else:else:_L7/ */ _L7_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L6/ */ _L6_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L6/ */ _L6_else_else_IfBlock1;
   A_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:else:else:_L4/ */ _L4_else_else_IfBlock1;
   A_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:else:else:_L5/ */ _L5_else_else_IfBlock1;
   A_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:else:else:_L3/ */ _L3_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L2/ */ _L2_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L2/ */ _L2_else_else_IfBlock1;
   A_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:else:else:_L1/ */ _L1_else_else_IfBlock1;
   A_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:else:then:_L1/ */ _L1_then_else_IfBlock1;
 } outC_interpolateMfromA_SDMConversionModelPkg;
@@ -70,6 +70,6 @@ extern void interpolateMfromA_init_SDMConversionModelPkg(
 #endif /* _interpolateMfromA_SDMConversionModelPkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** interpolateMfromA_SDMConversionModelPkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

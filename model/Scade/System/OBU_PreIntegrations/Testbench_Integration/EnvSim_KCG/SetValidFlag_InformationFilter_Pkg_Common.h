@@ -27,8 +27,8 @@ typedef struct {
   NID_PACKET /* _L4/ */ _L4;
   Q_DIR /* _L5/ */ _L5;
   kcg_bool /* _L6/ */ _L6;
-  kcg_int64 /* _L8/ */ _L8;
-  kcg_int64 /* _L7/ */ _L7;
+  kcg_int32 /* _L8/ */ _L8;
+  kcg_int32 /* _L7/ */ _L7;
   kcg_bool /* _L9/ */ _L9;
 } outC_SetValidFlag_InformationFilter_Pkg_Common;
 

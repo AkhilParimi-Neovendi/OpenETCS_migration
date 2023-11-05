@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _BTM_Toolbox_TrainModules_H_
 #define _BTM_Toolbox_TrainModules_H_
@@ -32,7 +32,7 @@ typedef struct {
   centerOfBalisePosition_T_BG_Types_Pkg /* _L20/ */ _L20;
   NID_C /* _L22/ */ _L22;
   kcg_bool /* _L23/ */ _L23;
-  kcg_int64 /* _L24/ */ _L24;
+  kcg_int32 /* _L24/ */ _L24;
   MsgSource_T_Common_Types_Pkg /* _L25/ */ _L25;
   MsgSource_T_Common_Types_Pkg /* _L26/ */ _L26;
   MsgSource_T_Common_Types_Pkg /* _L27/ */ _L27;
@@ -41,8 +41,8 @@ typedef struct {
   CompressedPackets_T_Common_Types_Pkg /* _L30/ */ _L30;
   API_RadioMsgHeader_T_API_Msg_Pkg /* _L32/ */ _L32;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L33/ */ _L33;
-  kcg_int64 /* _L34/ */ _L34;
-  kcg_int64 /* _L35/ */ _L35;
+  kcg_int32 /* _L34/ */ _L34;
+  kcg_int32 /* _L35/ */ _L35;
 } outC_BTM_Toolbox_TrainModules;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -71,6 +71,6 @@ extern void BTM_init_Toolbox_TrainModules(outC_BTM_Toolbox_TrainModules *outC);
 #endif /* _BTM_Toolbox_TrainModules_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** BTM_Toolbox_TrainModules.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

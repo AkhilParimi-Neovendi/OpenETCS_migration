@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _isSendingNeeded_manage_DMI_Output_Pkg_H_
 #define _isSendingNeeded_manage_DMI_Output_Pkg_H_
@@ -25,9 +25,9 @@ typedef struct {
   T_internal_Type_Obu_BasicTypes_Pkg /* _L1/ */ _L1;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L2/ */ _L2;
   kcg_bool /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   kcg_bool /* _L6/ */ _L6;
-  kcg_int64 /* _L7/ */ _L7;
+  kcg_int32 /* _L7/ */ _L7;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L8/ */ _L8;
   kcg_bool /* _L9/ */ _L9;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L10/ */ _L10;
@@ -78,6 +78,6 @@ extern void kcg_load_SV_isSendingNeeded_manage_DMI_Output_Pkg(
 #endif /* _isSendingNeeded_manage_DMI_Output_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** isSendingNeeded_manage_DMI_Output_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

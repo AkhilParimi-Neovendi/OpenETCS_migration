@@ -14,21 +14,21 @@ void CAST_Q_TEXTCLASS_to_int_TM_conversions(
   outC_CAST_Q_TEXTCLASS_to_int_TM_conversions *outC)
 {
   /* d/ */
-  static kcg_int64 d_partial;
+  static kcg_int32 d_partial;
   /* error/ */
   static kcg_bool error_partial;
   /* d/ */
-  static kcg_int64 _1_d_partial;
+  static kcg_int32 _1_d_partial;
   /* error/ */
   static kcg_bool _2_error_partial;
   /* error/ */
   static kcg_bool _3_error_partial;
   /* d/ */
-  static kcg_int64 _4_d_partial;
+  static kcg_int32 _4_d_partial;
   /* error/ */
   static kcg_bool _5_error_partial;
   /* d/ */
-  static kcg_int64 _6_d_partial;
+  static kcg_int32 _6_d_partial;
   static kcg_bool noname;
 
   outC->_L12 = q_textclass_int;
@@ -81,13 +81,13 @@ void CAST_Q_TEXTCLASS_to_int_init_TM_conversions(
   outC->error = kcg_true;
   outC->IfBlock1_clock = kcg_true;
   outC->_L5_then_else_IfBlock1 = kcg_true;
-  outC->_L3_then_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L1_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L3_then_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L1_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L2_else_else_IfBlock1 = kcg_true;
   outC->else_clock_IfBlock1 = kcg_true;
-  outC->_L4_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L4_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L5_then_IfBlock1 = kcg_true;
-  outC->d = kcg_lit_int64(0);
+  outC->d = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

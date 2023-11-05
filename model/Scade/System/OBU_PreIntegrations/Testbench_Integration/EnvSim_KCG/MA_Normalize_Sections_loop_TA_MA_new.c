@@ -10,7 +10,7 @@
 /* TA_MA_new::MA_Normalize_Sections_loop/ */
 void MA_Normalize_Sections_loop_TA_MA_new(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* ProfileIn/ */
   MovementAuthoritySectionlist_t_TrackAtlasTypes *ProfileIn,
   /* pos_BG/ */
@@ -18,11 +18,11 @@ void MA_Normalize_Sections_loop_TA_MA_new(
   outC_MA_Normalize_Sections_loop_TA_MA_new *outC)
 {
   outC->_L51 = i;
-  outC->_L11 = kcg_lit_int64(0);
+  outC->_L11 = kcg_lit_int32(0);
   outC->_L3 = pos_BG;
   outC->_L1 = i;
   kcg_copy_MovementAuthoritySectionlist_t_TrackAtlasTypes(&outC->_L2, ProfileIn);
-  if ((kcg_lit_int64(0) <= outC->_L1) & (outC->_L1 < kcg_lit_int64(10))) {
+  if ((kcg_lit_int32(0) <= outC->_L1) & (outC->_L1 < kcg_lit_int32(10))) {
     kcg_copy_MovementAuthoritySection_t_TrackAtlasTypes(
       &outC->_L4,
       &outC->_L2[outC->_L1]);
@@ -62,7 +62,7 @@ void MA_Normalize_Sections_loop_TA_MA_new(
   kcg_copy_MovementAuthoritySectionlist_t_TrackAtlasTypes(
     &outC->_L50,
     &outC->_L2);
-  if ((kcg_lit_int64(0) <= outC->_L51) & (outC->_L51 < kcg_lit_int64(10))) {
+  if ((kcg_lit_int32(0) <= outC->_L51) & (outC->_L51 < kcg_lit_int32(10))) {
     kcg_copy_MovementAuthoritySection_t_TrackAtlasTypes(
       &outC->_L50[outC->_L51],
       &outC->_L49);
@@ -80,58 +80,58 @@ void MA_Normalize_Sections_loop_init_TA_MA_new(
   static kcg_size idx1;
   static kcg_size idx2;
 
-  outC->_L52 = kcg_lit_int64(0);
-  outC->_L51 = kcg_lit_int64(0);
+  outC->_L52 = kcg_lit_int32(0);
+  outC->_L51 = kcg_lit_int32(0);
   for (idx = 0; idx < 10; idx++) {
     outC->_L50[idx].valid = kcg_true;
     outC->_L50[idx].q_endsection = kcg_true;
-    outC->_L50[idx].l_section = kcg_lit_int64(0);
+    outC->_L50[idx].l_section = kcg_lit_int32(0);
     outC->_L50[idx].q_sectiontimer = kcg_true;
-    outC->_L50[idx].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L50[idx].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L50[idx].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L50[idx].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
   outC->_L49.valid = kcg_true;
   outC->_L49.q_endsection = kcg_true;
-  outC->_L49.l_section = kcg_lit_int64(0);
+  outC->_L49.l_section = kcg_lit_int32(0);
   outC->_L49.q_sectiontimer = kcg_true;
-  outC->_L49.t_sectiontimer = kcg_lit_int64(0);
-  outC->_L49.d_sectiontimerstoploc = kcg_lit_int64(0);
-  outC->_L47 = kcg_lit_int64(0);
-  outC->_L48 = kcg_lit_int64(0);
-  outC->_L45 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
+  outC->_L49.t_sectiontimer = kcg_lit_int32(0);
+  outC->_L49.d_sectiontimerstoploc = kcg_lit_int32(0);
+  outC->_L47 = kcg_lit_int32(0);
+  outC->_L48 = kcg_lit_int32(0);
+  outC->_L45 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
   outC->_L7.valid = kcg_true;
   outC->_L7.q_endsection = kcg_true;
-  outC->_L7.l_section = kcg_lit_int64(0);
+  outC->_L7.l_section = kcg_lit_int32(0);
   outC->_L7.q_sectiontimer = kcg_true;
-  outC->_L7.t_sectiontimer = kcg_lit_int64(0);
-  outC->_L7.d_sectiontimerstoploc = kcg_lit_int64(0);
+  outC->_L7.t_sectiontimer = kcg_lit_int32(0);
+  outC->_L7.d_sectiontimerstoploc = kcg_lit_int32(0);
   outC->_L5 = kcg_true;
   outC->_L4.valid = kcg_true;
   outC->_L4.q_endsection = kcg_true;
-  outC->_L4.l_section = kcg_lit_int64(0);
+  outC->_L4.l_section = kcg_lit_int32(0);
   outC->_L4.q_sectiontimer = kcg_true;
-  outC->_L4.t_sectiontimer = kcg_lit_int64(0);
-  outC->_L4.d_sectiontimerstoploc = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L4.t_sectiontimer = kcg_lit_int32(0);
+  outC->_L4.d_sectiontimerstoploc = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 10; idx1++) {
     outC->_L2[idx1].valid = kcg_true;
     outC->_L2[idx1].q_endsection = kcg_true;
-    outC->_L2[idx1].l_section = kcg_lit_int64(0);
+    outC->_L2[idx1].l_section = kcg_lit_int32(0);
     outC->_L2[idx1].q_sectiontimer = kcg_true;
-    outC->_L2[idx1].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L2[idx1].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L2[idx1].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L2[idx1].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
-  outC->_L1 = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 10; idx2++) {
     outC->ProfileNormalized_LRBG[idx2].valid = kcg_true;
     outC->ProfileNormalized_LRBG[idx2].q_endsection = kcg_true;
-    outC->ProfileNormalized_LRBG[idx2].l_section = kcg_lit_int64(0);
+    outC->ProfileNormalized_LRBG[idx2].l_section = kcg_lit_int32(0);
     outC->ProfileNormalized_LRBG[idx2].q_sectiontimer = kcg_true;
-    outC->ProfileNormalized_LRBG[idx2].t_sectiontimer = kcg_lit_int64(0);
-    outC->ProfileNormalized_LRBG[idx2].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->ProfileNormalized_LRBG[idx2].t_sectiontimer = kcg_lit_int32(0);
+    outC->ProfileNormalized_LRBG[idx2].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
 }
 #endif /* KCG_USER_DEFINED_INIT */

@@ -38,9 +38,9 @@ typedef struct {
   ASafeSpeedDefinition_T_CalcBrakingCurves_types /* _L6/ */ _L6;
   ASafe_Data_T_CalcBrakingCurves_types /* _L7/ */ _L7;
   V_internal_real_Type_SDM_Types_Pkg /* _L8/ */ _L8;
-  kcg_int64 /* _L9/ */ _L9;
+  kcg_int32 /* _L9/ */ _L9;
   L_internal_real_Type_SDM_Types_Pkg /* _L10/ */ _L10;
-  kcg_int64 /* _L11/ */ _L11;
+  kcg_int32 /* _L11/ */ _L11;
   V_internal_real_Type_SDM_Types_Pkg /* _L17/ */ _L17;
   V_internal_real_Type_SDM_Types_Pkg /* _L19/ */ _L19;
   A_internal_real_Type_SDM_Types_Pkg /* _L20/ */ _L20;

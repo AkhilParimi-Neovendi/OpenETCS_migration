@@ -78,80 +78,80 @@ void Write_P021_init_TM_trackside(outC_Write_P021_TM_trackside *outC)
   kcg_size idx10;
   kcg_size idx11;
 
-  outC->_L43.nid_packet = kcg_lit_int64(0);
+  outC->_L43.nid_packet = kcg_lit_int32(0);
   outC->_L43.q_dir = Q_DIR_Reverse;
   outC->_L43.valid = kcg_true;
-  outC->_L43.startAddress = kcg_lit_int64(0);
-  outC->_L43.endAddress = kcg_lit_int64(0);
+  outC->_L43.startAddress = kcg_lit_int32(0);
+  outC->_L43.endAddress = kcg_lit_int32(0);
   for (idx = 0; idx < 500; idx++) {
-    outC->_L44[idx] = kcg_lit_int64(0);
+    outC->_L44[idx] = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 30; idx1++) {
-    outC->_L41[idx1].nid_packet = kcg_lit_int64(0);
+    outC->_L41[idx1].nid_packet = kcg_lit_int32(0);
     outC->_L41[idx1].q_dir = Q_DIR_Reverse;
     outC->_L41[idx1].valid = kcg_true;
-    outC->_L41[idx1].startAddress = kcg_lit_int64(0);
-    outC->_L41[idx1].endAddress = kcg_lit_int64(0);
+    outC->_L41[idx1].startAddress = kcg_lit_int32(0);
+    outC->_L41[idx1].endAddress = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 500; idx2++) {
-    outC->_L42[idx2] = kcg_lit_int64(0);
+    outC->_L42[idx2] = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 30; idx3++) {
-    outC->_L40.PacketHeaders[idx3].nid_packet = kcg_lit_int64(0);
+    outC->_L40.PacketHeaders[idx3].nid_packet = kcg_lit_int32(0);
     outC->_L40.PacketHeaders[idx3].q_dir = Q_DIR_Reverse;
     outC->_L40.PacketHeaders[idx3].valid = kcg_true;
-    outC->_L40.PacketHeaders[idx3].startAddress = kcg_lit_int64(0);
-    outC->_L40.PacketHeaders[idx3].endAddress = kcg_lit_int64(0);
+    outC->_L40.PacketHeaders[idx3].startAddress = kcg_lit_int32(0);
+    outC->_L40.PacketHeaders[idx3].endAddress = kcg_lit_int32(0);
   }
   for (idx4 = 0; idx4 < 500; idx4++) {
-    outC->_L40.PacketData[idx4] = kcg_lit_int64(0);
+    outC->_L40.PacketData[idx4] = kcg_lit_int32(0);
   }
   for (idx5 = 0; idx5 < 30; idx5++) {
-    outC->_L39.PacketHeaders[idx5].nid_packet = kcg_lit_int64(0);
+    outC->_L39.PacketHeaders[idx5].nid_packet = kcg_lit_int32(0);
     outC->_L39.PacketHeaders[idx5].q_dir = Q_DIR_Reverse;
     outC->_L39.PacketHeaders[idx5].valid = kcg_true;
-    outC->_L39.PacketHeaders[idx5].startAddress = kcg_lit_int64(0);
-    outC->_L39.PacketHeaders[idx5].endAddress = kcg_lit_int64(0);
+    outC->_L39.PacketHeaders[idx5].startAddress = kcg_lit_int32(0);
+    outC->_L39.PacketHeaders[idx5].endAddress = kcg_lit_int32(0);
   }
   for (idx6 = 0; idx6 < 500; idx6++) {
-    outC->_L39.PacketData[idx6] = kcg_lit_int64(0);
+    outC->_L39.PacketData[idx6] = kcg_lit_int32(0);
   }
-  outC->_L22 = kcg_lit_int64(0);
-  outC->_L21 = kcg_lit_int64(0);
+  outC->_L22 = kcg_lit_int32(0);
+  outC->_L21 = kcg_lit_int32(0);
   outC->_L18 = kcg_true;
   for (idx7 = 0; idx7 < 500; idx7++) {
-    outC->_L10[idx7] = kcg_lit_int64(0);
+    outC->_L10[idx7] = kcg_lit_int32(0);
   }
   for (idx8 = 0; idx8 < 30; idx8++) {
-    outC->_L4[idx8].nid_packet = kcg_lit_int64(0);
+    outC->_L4[idx8].nid_packet = kcg_lit_int32(0);
     outC->_L4[idx8].q_dir = Q_DIR_Reverse;
     outC->_L4[idx8].valid = kcg_true;
-    outC->_L4[idx8].startAddress = kcg_lit_int64(0);
-    outC->_L4[idx8].endAddress = kcg_lit_int64(0);
+    outC->_L4[idx8].startAddress = kcg_lit_int32(0);
+    outC->_L4[idx8].endAddress = kcg_lit_int32(0);
   }
   outC->_L1.valid = kcg_true;
-  outC->_L1.NID_PACKET = kcg_lit_int64(0);
-  outC->_L1.Q_DIR = kcg_lit_int64(0);
-  outC->_L1.L_PACKET = kcg_lit_int64(0);
-  outC->_L1.Q_SCALE = kcg_lit_int64(0);
-  outC->_L1.D_GRADIENT = kcg_lit_int64(0);
-  outC->_L1.Q_GDIR = kcg_lit_int64(0);
-  outC->_L1.G_A = kcg_lit_int64(0);
-  outC->_L1.N_ITER = kcg_lit_int64(0);
+  outC->_L1.NID_PACKET = kcg_lit_int32(0);
+  outC->_L1.Q_DIR = kcg_lit_int32(0);
+  outC->_L1.L_PACKET = kcg_lit_int32(0);
+  outC->_L1.Q_SCALE = kcg_lit_int32(0);
+  outC->_L1.D_GRADIENT = kcg_lit_int32(0);
+  outC->_L1.Q_GDIR = kcg_lit_int32(0);
+  outC->_L1.G_A = kcg_lit_int32(0);
+  outC->_L1.N_ITER = kcg_lit_int32(0);
   for (idx9 = 0; idx9 < 32; idx9++) {
-    outC->_L1.SECTIONS[idx9].D_GRADIENT = kcg_lit_int64(0);
-    outC->_L1.SECTIONS[idx9].Q_GDIR = kcg_lit_int64(0);
-    outC->_L1.SECTIONS[idx9].G_A = kcg_lit_int64(0);
+    outC->_L1.SECTIONS[idx9].D_GRADIENT = kcg_lit_int32(0);
+    outC->_L1.SECTIONS[idx9].Q_GDIR = kcg_lit_int32(0);
+    outC->_L1.SECTIONS[idx9].G_A = kcg_lit_int32(0);
   }
   for (idx10 = 0; idx10 < 30; idx10++) {
-    outC->RadioPacketsOut.PacketHeaders[idx10].nid_packet = kcg_lit_int64(0);
+    outC->RadioPacketsOut.PacketHeaders[idx10].nid_packet = kcg_lit_int32(0);
     outC->RadioPacketsOut.PacketHeaders[idx10].q_dir = Q_DIR_Reverse;
     outC->RadioPacketsOut.PacketHeaders[idx10].valid = kcg_true;
-    outC->RadioPacketsOut.PacketHeaders[idx10].startAddress = kcg_lit_int64(0);
-    outC->RadioPacketsOut.PacketHeaders[idx10].endAddress = kcg_lit_int64(0);
+    outC->RadioPacketsOut.PacketHeaders[idx10].startAddress = kcg_lit_int32(0);
+    outC->RadioPacketsOut.PacketHeaders[idx10].endAddress = kcg_lit_int32(0);
   }
   for (idx11 = 0; idx11 < 500; idx11++) {
-    outC->RadioPacketsOut.PacketData[idx11] = kcg_lit_int64(0);
+    outC->RadioPacketsOut.PacketData[idx11] = kcg_lit_int32(0);
   }
   outC->Error = kcg_true;
   /* _L10=(TM_lib_internal::SEND_MessageData#1)/ */

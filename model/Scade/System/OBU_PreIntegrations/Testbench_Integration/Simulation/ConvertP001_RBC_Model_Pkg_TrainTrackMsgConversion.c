@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -108,104 +108,104 @@ void ConvertP001_init_RBC_Model_Pkg_TrainTrackMsgConversion(
   outC_ConvertP001_RBC_Model_Pkg_TrainTrackMsgConversion *outC)
 {
   outC->_L38.valid = kcg_true;
-  outC->_L38.packet1.NID_PACKET = kcg_lit_int64(0);
-  outC->_L38.packet1.L_PACKET = kcg_lit_int64(0);
+  outC->_L38.packet1.NID_PACKET = kcg_lit_int32(0);
+  outC->_L38.packet1.L_PACKET = kcg_lit_int32(0);
   outC->_L38.packet1.qscale = Q_SCALE_10_cm_scale;
-  outC->_L38.packet1.NID_LRBG = kcg_lit_int64(0);
-  outC->_L38.packet1.NID_PRVLRBG = kcg_lit_int64(0);
-  outC->_L38.packet1.D_LRBG = kcg_lit_int64(0);
+  outC->_L38.packet1.NID_LRBG = kcg_lit_int32(0);
+  outC->_L38.packet1.NID_PRVLRBG = kcg_lit_int32(0);
+  outC->_L38.packet1.D_LRBG = kcg_lit_int32(0);
   outC->_L38.packet1.dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L38.packet1.dlrbg = Q_DLRBG_Reverse;
-  outC->_L38.packet1.L_DOUBTOVER = kcg_lit_int64(0);
-  outC->_L38.packet1.L_DOUBTUNDER = kcg_lit_int64(0);
+  outC->_L38.packet1.L_DOUBTOVER = kcg_lit_int32(0);
+  outC->_L38.packet1.L_DOUBTUNDER = kcg_lit_int32(0);
   outC->_L38.packet1.length = Q_LENGTH_No_train_integrity_information_available;
-  outC->_L38.packet1.L_TRAININT = kcg_lit_int64(0);
-  outC->_L38.packet1.V_TRAIN = kcg_lit_int64(0);
+  outC->_L38.packet1.L_TRAININT = kcg_lit_int32(0);
+  outC->_L38.packet1.V_TRAIN = kcg_lit_int32(0);
   outC->_L38.packet1.dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L38.packet1.mode = M_MODE_Full_Supervision;
   outC->_L38.packet1.level = M_LEVEL_Level_0;
-  outC->_L38.packet1.NID_NTC = kcg_lit_int64(0);
-  outC->_L36 = kcg_lit_int64(0);
-  outC->_L35 = kcg_lit_int64(0);
-  outC->_L34 = kcg_lit_int64(0);
-  outC->_L33 = kcg_lit_int64(0);
-  outC->_L31 = kcg_lit_int64(0);
-  outC->_L29 = kcg_lit_int64(0);
-  outC->_L28 = kcg_lit_int64(0);
-  outC->_L25 = kcg_lit_int64(0);
-  outC->_L23 = kcg_lit_int64(0);
-  outC->_L22 = kcg_lit_int64(0);
-  outC->_L20.NID_PACKET = kcg_lit_int64(0);
-  outC->_L20.L_PACKET = kcg_lit_int64(0);
+  outC->_L38.packet1.NID_NTC = kcg_lit_int32(0);
+  outC->_L36 = kcg_lit_int32(0);
+  outC->_L35 = kcg_lit_int32(0);
+  outC->_L34 = kcg_lit_int32(0);
+  outC->_L33 = kcg_lit_int32(0);
+  outC->_L31 = kcg_lit_int32(0);
+  outC->_L29 = kcg_lit_int32(0);
+  outC->_L28 = kcg_lit_int32(0);
+  outC->_L25 = kcg_lit_int32(0);
+  outC->_L23 = kcg_lit_int32(0);
+  outC->_L22 = kcg_lit_int32(0);
+  outC->_L20.NID_PACKET = kcg_lit_int32(0);
+  outC->_L20.L_PACKET = kcg_lit_int32(0);
   outC->_L20.qscale = Q_SCALE_10_cm_scale;
-  outC->_L20.NID_LRBG = kcg_lit_int64(0);
-  outC->_L20.NID_PRVLRBG = kcg_lit_int64(0);
-  outC->_L20.D_LRBG = kcg_lit_int64(0);
+  outC->_L20.NID_LRBG = kcg_lit_int32(0);
+  outC->_L20.NID_PRVLRBG = kcg_lit_int32(0);
+  outC->_L20.D_LRBG = kcg_lit_int32(0);
   outC->_L20.dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L20.dlrbg = Q_DLRBG_Reverse;
-  outC->_L20.L_DOUBTOVER = kcg_lit_int64(0);
-  outC->_L20.L_DOUBTUNDER = kcg_lit_int64(0);
+  outC->_L20.L_DOUBTOVER = kcg_lit_int32(0);
+  outC->_L20.L_DOUBTUNDER = kcg_lit_int32(0);
   outC->_L20.length = Q_LENGTH_No_train_integrity_information_available;
-  outC->_L20.L_TRAININT = kcg_lit_int64(0);
-  outC->_L20.V_TRAIN = kcg_lit_int64(0);
+  outC->_L20.L_TRAININT = kcg_lit_int32(0);
+  outC->_L20.V_TRAIN = kcg_lit_int32(0);
   outC->_L20.dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L20.mode = M_MODE_Full_Supervision;
   outC->_L20.level = M_LEVEL_Level_0;
-  outC->_L20.NID_NTC = kcg_lit_int64(0);
+  outC->_L20.NID_NTC = kcg_lit_int32(0);
   outC->_L2 = M_LEVEL_Level_0;
   outC->_L3 = M_MODE_Full_Supervision;
   outC->_L4 = Q_DIRTRAIN_Reverse;
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
   outC->_L7 = Q_LENGTH_No_train_integrity_information_available;
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
   outC->_L10 = Q_DLRBG_Reverse;
   outC->_L11 = Q_DIRLRBG_Reverse;
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L14 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L14 = kcg_lit_int32(0);
   outC->_L15 = Q_SCALE_10_cm_scale;
-  outC->_L16 = kcg_lit_int64(0);
-  outC->_L17 = kcg_lit_int64(0);
+  outC->_L16 = kcg_lit_int32(0);
+  outC->_L17 = kcg_lit_int32(0);
   outC->_L18 = kcg_true;
   outC->_L1.valid = kcg_true;
-  outC->_L1.nid_packet = kcg_lit_int64(0);
-  outC->_L1.l_packet = kcg_lit_int64(0);
+  outC->_L1.nid_packet = kcg_lit_int32(0);
+  outC->_L1.l_packet = kcg_lit_int32(0);
   outC->_L1.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L1.nid_lrbg = kcg_lit_int64(0);
-  outC->_L1.nid_prvlrbg = kcg_lit_int64(0);
-  outC->_L1.d_lrbg = kcg_lit_int64(0);
+  outC->_L1.nid_lrbg = kcg_lit_int32(0);
+  outC->_L1.nid_prvlrbg = kcg_lit_int32(0);
+  outC->_L1.d_lrbg = kcg_lit_int32(0);
   outC->_L1.q_dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L1.q_dlrbg = Q_DLRBG_Reverse;
-  outC->_L1.l_doubtover = kcg_lit_int64(0);
-  outC->_L1.l_doubtunder = kcg_lit_int64(0);
+  outC->_L1.l_doubtover = kcg_lit_int32(0);
+  outC->_L1.l_doubtunder = kcg_lit_int32(0);
   outC->_L1.q_length = Q_LENGTH_No_train_integrity_information_available;
-  outC->_L1.l_trainint = kcg_lit_int64(0);
-  outC->_L1.v_train = kcg_lit_int64(0);
+  outC->_L1.l_trainint = kcg_lit_int32(0);
+  outC->_L1.v_train = kcg_lit_int32(0);
   outC->_L1.q_dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L1.m_mode = M_MODE_Full_Supervision;
   outC->_L1.m_level = M_LEVEL_Level_0;
-  outC->_L1.nid_ntc = kcg_lit_int64(0);
+  outC->_L1.nid_ntc = kcg_lit_int32(0);
   outC->oldP001.valid = kcg_true;
-  outC->oldP001.packet1.NID_PACKET = kcg_lit_int64(0);
-  outC->oldP001.packet1.L_PACKET = kcg_lit_int64(0);
+  outC->oldP001.packet1.NID_PACKET = kcg_lit_int32(0);
+  outC->oldP001.packet1.L_PACKET = kcg_lit_int32(0);
   outC->oldP001.packet1.qscale = Q_SCALE_10_cm_scale;
-  outC->oldP001.packet1.NID_LRBG = kcg_lit_int64(0);
-  outC->oldP001.packet1.NID_PRVLRBG = kcg_lit_int64(0);
-  outC->oldP001.packet1.D_LRBG = kcg_lit_int64(0);
+  outC->oldP001.packet1.NID_LRBG = kcg_lit_int32(0);
+  outC->oldP001.packet1.NID_PRVLRBG = kcg_lit_int32(0);
+  outC->oldP001.packet1.D_LRBG = kcg_lit_int32(0);
   outC->oldP001.packet1.dirlrbg = Q_DIRLRBG_Reverse;
   outC->oldP001.packet1.dlrbg = Q_DLRBG_Reverse;
-  outC->oldP001.packet1.L_DOUBTOVER = kcg_lit_int64(0);
-  outC->oldP001.packet1.L_DOUBTUNDER = kcg_lit_int64(0);
+  outC->oldP001.packet1.L_DOUBTOVER = kcg_lit_int32(0);
+  outC->oldP001.packet1.L_DOUBTUNDER = kcg_lit_int32(0);
   outC->oldP001.packet1.length =
     Q_LENGTH_No_train_integrity_information_available;
-  outC->oldP001.packet1.L_TRAININT = kcg_lit_int64(0);
-  outC->oldP001.packet1.V_TRAIN = kcg_lit_int64(0);
+  outC->oldP001.packet1.L_TRAININT = kcg_lit_int32(0);
+  outC->oldP001.packet1.V_TRAIN = kcg_lit_int32(0);
   outC->oldP001.packet1.dirtrain = Q_DIRTRAIN_Reverse;
   outC->oldP001.packet1.mode = M_MODE_Full_Supervision;
   outC->oldP001.packet1.level = M_LEVEL_Level_0;
-  outC->oldP001.packet1.NID_NTC = kcg_lit_int64(0);
+  outC->oldP001.packet1.NID_NTC = kcg_lit_int32(0);
   /* _L34=(TM_conversions::CAST_NID_NTC_to_int#2)/ */
   CAST_NID_NTC_to_int_init_TM_conversions(&outC->Context_CAST_NID_NTC_to_int_2);
   /* _L31=(TM_conversions::CAST_V_TRAIN_to_int#1)/ */
@@ -271,6 +271,6 @@ void ConvertP001_reset_RBC_Model_Pkg_TrainTrackMsgConversion(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ConvertP001_RBC_Model_Pkg_TrainTrackMsgConversion.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

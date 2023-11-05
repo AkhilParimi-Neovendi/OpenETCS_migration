@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _CAST_M_SUPERVISION_STATUS_to_int_DATA_Variables_H_
 #define _CAST_M_SUPERVISION_STATUS_to_int_DATA_Variables_H_
@@ -26,18 +26,18 @@ typedef struct {
   kcg_bool /* IfBlock1: */ IfBlock1_clock;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L3/ */ _L3_then_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:then:_L4/ */ _L4_then_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:then:_L4/ */ _L4_then_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:then:_L3/ */ _L3_then_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:else:else:then:_L3/ */ _L3_then_else_else_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:else:else:then:_L3/ */ _L3_then_else_else_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:else:else:then:_L2/ */ _L2_then_else_else_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:else:else:else:_L5/ */ _L5_else_else_else_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:else:else:else:_L5/ */ _L5_else_else_else_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:else:else:else:_L3/ */ _L3_else_else_else_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:else:then:_L2/ */ _L2_then_else_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:else:then:_L3/ */ _L3_then_else_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:else:then:_L3/ */ _L3_then_else_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L2/ */ _L2_then_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L3/ */ _L3_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L3/ */ _L3_then_else_IfBlock1;
   kcg_bool /* error/ */ error;
   kcg_bool /* _L1/ */ _L1;
 } outC_CAST_M_SUPERVISION_STATUS_to_int_DATA_Variables;
@@ -64,6 +64,6 @@ extern void CAST_M_SUPERVISION_STATUS_to_int_init_DATA_Variables(
 #endif /* _CAST_M_SUPERVISION_STATUS_to_int_DATA_Variables_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_M_SUPERVISION_STATUS_to_int_DATA_Variables.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

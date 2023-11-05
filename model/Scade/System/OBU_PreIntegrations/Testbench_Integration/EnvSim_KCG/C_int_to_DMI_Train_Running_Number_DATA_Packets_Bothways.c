@@ -43,18 +43,18 @@ void C_int_to_DMI_Train_Running_Number_init_DATA_Packets_Bothways(
 
   outC->_L9 = kcg_true;
   for (idx = 0; idx < 3; idx++) {
-    outC->_L8[idx] = kcg_lit_int64(0);
+    outC->_L8[idx] = kcg_lit_int32(0);
   }
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L2.valid = kcg_true;
-  outC->_L2.systemTime = kcg_lit_int64(0);
-  outC->_L2.trainRunningNumber = kcg_lit_int64(0);
+  outC->_L2.systemTime = kcg_lit_int32(0);
+  outC->_L2.trainRunningNumber = kcg_lit_int32(0);
   outC->dmi_train_running_number_ct.valid = kcg_true;
-  outC->dmi_train_running_number_ct.systemTime = kcg_lit_int64(0);
-  outC->dmi_train_running_number_ct.trainRunningNumber = kcg_lit_int64(0);
+  outC->dmi_train_running_number_ct.systemTime = kcg_lit_int32(0);
+  outC->dmi_train_running_number_ct.trainRunningNumber = kcg_lit_int32(0);
   /* _L6=(TM_conversions::CAST_Int_to_NID_OPERATIONAL#1)/ */
   CAST_Int_to_NID_OPERATIONAL_init_TM_conversions(
     &outC->Context_CAST_Int_to_NID_OPERATIONAL_1);

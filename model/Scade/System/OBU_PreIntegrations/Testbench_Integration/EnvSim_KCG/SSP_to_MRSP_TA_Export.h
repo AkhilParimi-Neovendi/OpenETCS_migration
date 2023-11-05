@@ -22,12 +22,12 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   StaticSpeedProfile_t_TrackAtlasTypes /* _L3/ */ _L3;
   MRSP_Profile_t_TrackAtlasTypes /* _L4/ */ _L4;
   MRSP_Profile_t_TrackAtlasTypes /* _L5/ */ _L5;
   StaticSpeedSection_t_TrackAtlasTypes /* _L7/ */ _L7;
-  kcg_int64 /* _L8/ */ _L8;
+  kcg_int32 /* _L8/ */ _L8;
   V_internal_Type_Obu_BasicTypes_Pkg /* _L18/ */ _L18;
   kcg_bool /* _L17/ */ _L17;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L16/ */ _L16;
@@ -40,7 +40,7 @@ typedef struct {
 /* TA_Export::SSP_to_MRSP/ */
 extern void SSP_to_MRSP_TA_Export(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* MRSP_init/ */
   MRSP_Profile_t_TrackAtlasTypes *MRSP_init,
   /* SSP/ */

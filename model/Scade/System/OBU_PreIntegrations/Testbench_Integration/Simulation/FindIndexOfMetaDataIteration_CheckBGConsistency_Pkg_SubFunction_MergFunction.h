@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _FindIndexOfMetaDataIteration_CheckBGConsistency_Pkg_SubFunction_MergFunction_H_
 #define _FindIndexOfMetaDataIteration_CheckBGConsistency_Pkg_SubFunction_MergFunction_H_
@@ -15,8 +15,8 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* index/ */ index;
-  kcg_int64 /* endAddress/ */ endAddress;
+  kcg_int32 /* index/ */ index;
+  kcg_int32 /* endAddress/ */ endAddress;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -25,12 +25,12 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   Metadata_T_Common_Types_Pkg /* _L1/ */ _L1;
-  kcg_int64 /* _L7/ */ _L7;
+  kcg_int32 /* _L7/ */ _L7;
   kcg_bool /* _L8/ */ _L8;
   MetadataElement_T_Common_Types_Pkg /* _L12/ */ _L12;
   MetadataElement_T_Common_Types_Pkg /* _L17/ */ _L17;
-  kcg_int64 /* _L18/ */ _L18;
-  _88_array /* _L19/ */ _L19;
+  kcg_int32 /* _L18/ */ _L18;
+  _90_array /* _L19/ */ _L19;
 } outC_FindIndexOfMetaDataIteration_CheckBGConsistency_Pkg_SubFunction_MergFunction;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -55,6 +55,6 @@ extern void FindIndexOfMetaDataIteration_init_CheckBGConsistency_Pkg_SubFunction
 #endif /* _FindIndexOfMetaDataIteration_CheckBGConsistency_Pkg_SubFunction_MergFunction_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** FindIndexOfMetaDataIteration_CheckBGConsistency_Pkg_SubFunction_MergFunction.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _BuildCheckedMessage_CheckBGConsistency_Pkg_SubFunction_H_
 #define _BuildCheckedMessage_CheckBGConsistency_Pkg_SubFunction_H_
@@ -29,7 +29,7 @@ typedef struct {
   ReceivedMessage_T_Common_Types_Pkg /* _L40/ */ _L40;
   kcg_bool /* _L44/ */ _L44;
   TelegramArray_T_BG_Types_Pkg /* _L43/ */ _L43;
-  kcg_int64 /* _L42/ */ _L42;
+  kcg_int32 /* _L42/ */ _L42;
   centerOfBalisePosition_T_BG_Types_Pkg /* _L41/ */ _L41;
   RadioMetadata_T_Common_Types_Pkg /* _L46/ */ _L46;
   BG_Header_T_BG_Types_Pkg /* _L59/ */ _L59;
@@ -67,6 +67,6 @@ extern void BuildCheckedMessage_init_CheckBGConsistency_Pkg_SubFunction(
 #endif /* _BuildCheckedMessage_CheckBGConsistency_Pkg_SubFunction_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** BuildCheckedMessage_CheckBGConsistency_Pkg_SubFunction.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

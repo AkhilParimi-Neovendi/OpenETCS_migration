@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _Master_Procedure_ManageProcedure_Pkg_H_
 #define _Master_Procedure_ManageProcedure_Pkg_H_
@@ -26,8 +26,8 @@ typedef struct {
   kcg_bool /* start_ack_to_TIU/ */ start_ack_to_TIU;
   /* -----------------------  no local probes  ----------------------- */
   /* ----------------------- local memories  ------------------------- */
-  struct_487049 /* _L214= */ fby_2;
-  struct_487049 /* _L212= */ fby_1;
+  struct_486841 /* _L214= */ fby_2;
+  struct_486841 /* _L212= */ fby_1;
   kcg_bool init;
   kcg_bool init1;
   kcg_bool /* SM1:Awakness_of_Train:SM3: */ SM3_reset_nxt_Awakness_of_Train_SM1;
@@ -265,8 +265,8 @@ typedef struct {
   kcg_bool /* SM1:Awakness_of_Train:SM3: */ Context_SM3_reset_nxt;
   kcg_bool _1_Context_init;
   kcg_bool Context_init;
-  struct_487049 /* _L212= */ Context_fby_1;
-  struct_487049 /* _L214= */ Context_fby_2;
+  struct_486841 /* _L212= */ Context_fby_1;
+  struct_486841 /* _L214= */ Context_fby_2;
   /* -----------------------  no local probes  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
   SV_SoM_NTC_SN_SoMProcedure_Pkg Context_SoM_NTC_SN_1;
@@ -285,6 +285,6 @@ extern void kcg_load_SV_Master_Procedure_ManageProcedure_Pkg(
 #endif /* _Master_Procedure_ManageProcedure_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Master_Procedure_ManageProcedure_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

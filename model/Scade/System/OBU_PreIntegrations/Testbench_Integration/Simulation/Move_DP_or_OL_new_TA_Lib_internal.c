@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -30,17 +30,17 @@ void Move_DP_or_OL_new_TA_Lib_internal(
 void Move_DP_or_OL_new_init_TA_Lib_internal(
   outC_Move_DP_or_OL_new_TA_Lib_internal *outC)
 {
-  outC->_L142 = kcg_lit_int64(0);
-  outC->_L130 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L9.d_DP_or_OL = kcg_lit_int64(0);
-  outC->_L9.v_release = kcg_lit_int64(0);
+  outC->_L142 = kcg_lit_int32(0);
+  outC->_L130 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L9.d_DP_or_OL = kcg_lit_int32(0);
+  outC->_L9.v_release = kcg_lit_int32(0);
   outC->_L9.calc_v_release_onboard = kcg_true;
-  outC->_L2.d_DP_or_OL = kcg_lit_int64(0);
-  outC->_L2.v_release = kcg_lit_int64(0);
+  outC->_L2.d_DP_or_OL = kcg_lit_int32(0);
+  outC->_L2.v_release = kcg_lit_int32(0);
   outC->_L2.calc_v_release_onboard = kcg_true;
-  outC->DP_or_OL_out.d_DP_or_OL = kcg_lit_int64(0);
-  outC->DP_or_OL_out.v_release = kcg_lit_int64(0);
+  outC->DP_or_OL_out.d_DP_or_OL = kcg_lit_int32(0);
+  outC->DP_or_OL_out.v_release = kcg_lit_int32(0);
   outC->DP_or_OL_out.calc_v_release_onboard = kcg_true;
 }
 #endif /* KCG_USER_DEFINED_INIT */
@@ -57,6 +57,6 @@ void Move_DP_or_OL_new_reset_TA_Lib_internal(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Move_DP_or_OL_new_TA_Lib_internal.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

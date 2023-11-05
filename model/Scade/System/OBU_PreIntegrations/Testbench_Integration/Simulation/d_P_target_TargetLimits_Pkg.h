@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _d_P_target_TargetLimits_Pkg_H_
 #define _d_P_target_TargetLimits_Pkg_H_
@@ -28,8 +28,8 @@ typedef struct {
   V_internal_real_Type_SDM_Types_Pkg /* _L5/ */ _L5;
   kcg_bool /* _L4/ */ _L4;
   T_internal_real_Type_SDM_Types_Pkg /* _L9/ */ _L9;
-  kcg_float64 /* _L11/ */ _L11;
-  kcg_float64 /* _L12/ */ _L12;
+  kcg_float32 /* _L11/ */ _L11;
+  kcg_float32 /* _L12/ */ _L12;
   L_internal_real_Type_SDM_Types_Pkg /* _L13/ */ _L13;
   T_trac_t_TargetLimits_Pkg /* _L14/ */ _L14;
 } outC_d_P_target_TargetLimits_Pkg;
@@ -60,6 +60,6 @@ extern void d_P_target_init_TargetLimits_Pkg(
 #endif /* _d_P_target_TargetLimits_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** d_P_target_TargetLimits_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

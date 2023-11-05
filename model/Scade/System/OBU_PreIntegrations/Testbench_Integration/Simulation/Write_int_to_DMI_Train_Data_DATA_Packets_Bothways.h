@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _Write_int_to_DMI_Train_Data_DATA_Packets_Bothways_H_
 #define _Write_int_to_DMI_Train_Data_DATA_Packets_Bothways_H_
@@ -27,8 +27,8 @@ typedef struct {
   DMI_Train_Data_int_array_T_DATA /* _L18/ */ _L18;
   DMI_Train_Data_T_DMI_Messages_Bothways_Pkg /* _L20/ */ _L20;
   DMI_Train_Data_T_DMI_Messages_Bothways_Pkg /* _L21/ */ _L21;
-  kcg_int64 /* _L24/ */ _L24;
-  kcg_int64 /* _L23/ */ _L23;
+  kcg_int32 /* _L24/ */ _L24;
+  kcg_int32 /* _L23/ */ _L23;
   kcg_bool /* _L22/ */ _L22;
 } outC_Write_int_to_DMI_Train_Data_DATA_Packets_Bothways;
 
@@ -54,6 +54,6 @@ extern void Write_int_to_DMI_Train_Data_init_DATA_Packets_Bothways(
 #endif /* _Write_int_to_DMI_Train_Data_DATA_Packets_Bothways_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Write_int_to_DMI_Train_Data_DATA_Packets_Bothways.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

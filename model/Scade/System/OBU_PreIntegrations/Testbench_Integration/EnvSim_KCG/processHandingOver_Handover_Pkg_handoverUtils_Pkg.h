@@ -126,8 +126,8 @@ typedef struct {
   msgFromTrack_T_RCM_MsgTypes_Pkg /* _L123/ */ _L123;
   msgFromTrack_T_RCM_MsgTypes_Pkg /* _L124/ */ _L124;
   msgFromTrack_T_RCM_MsgTypes_Pkg /* _L126/ */ _L126;
-  kcg_int64 /* _L127/ */ _L127;
-  kcg_int64 /* _L128/ */ _L128;
+  kcg_int32 /* _L127/ */ _L127;
+  kcg_int32 /* _L128/ */ _L128;
   msgFromTrack_T_RCM_MsgTypes_Pkg /* _L129/ */ _L129;
   msgFromTrack_T_RCM_MsgTypes_Pkg /* _L130/ */ _L130;
   p131_q_rbcTransitionOrder_T_Handover_Pkg /* _L131/ */ _L131;
@@ -140,7 +140,7 @@ typedef struct {
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L169/ */ _L169;
   kcg_bool /* _L174/ */ _L174;
   kcg_bool /* _L173/ */ _L173;
-  kcg_int64 /* _L172/ */ _L172;
+  kcg_int32 /* _L172/ */ _L172;
   NID_BG /* _L176/ */ _L176;
   NID_C /* _L175/ */ _L175;
   positionedBG_T_TrainPosition_Types_Pck /* _L186/ */ _L186;
@@ -151,7 +151,7 @@ typedef struct {
   positionedBG_T_TrainPosition_Types_Pck /* _L191/ */ _L191;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L192/ */ _L192;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L193/ */ _L193;
-  kcg_int64 /* _L195/ */ _L195;
+  kcg_int32 /* _L195/ */ _L195;
   kcg_bool /* _L196/ */ _L196;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L197/ */ _L197;
   p131_q_rbcTransitionOrder_T_Handover_Pkg /* _L200/ */ _L200;

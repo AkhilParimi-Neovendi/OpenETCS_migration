@@ -23,14 +23,14 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_float64 /* _L1/ */ _L1;
+  kcg_float32 /* _L1/ */ _L1;
   V_internal_real_Type_SDM_Types_Pkg /* _L2/ */ _L2;
-  kcg_float64 /* _L5/ */ _L5;
-  kcg_float64 /* _L8/ */ _L8;
-  kcg_float64 /* _L9/ */ _L9;
-  kcg_float64 /* _L10/ */ _L10;
-  kcg_float64 /* _L11/ */ _L11;
-  kcg_float64 /* _L13/ */ _L13;
+  kcg_float32 /* _L5/ */ _L5;
+  kcg_float32 /* _L8/ */ _L8;
+  kcg_float32 /* _L9/ */ _L9;
+  kcg_float32 /* _L10/ */ _L10;
+  kcg_float32 /* _L11/ */ _L11;
+  kcg_float32 /* _L13/ */ _L13;
 } outC_f_41_TargetLimits_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

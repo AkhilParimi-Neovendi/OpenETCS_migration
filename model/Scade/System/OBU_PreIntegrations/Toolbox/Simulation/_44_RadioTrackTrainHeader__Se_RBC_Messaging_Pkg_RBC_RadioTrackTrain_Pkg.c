@@ -12,7 +12,7 @@ void _44_RadioTrackTrainHeader__Se_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg(
   /* inRadioTrackTrainHeader/ */
   Radio_TrackTrain_Header_T_TM *inRadioTrackTrainHeader,
   /* in_D_EMERGENCYSTOP/ */
-  kcg_int64 in_D_EMERGENCYSTOP,
+  kcg_int32 in_D_EMERGENCYSTOP,
   outC__44_RadioTrackTrainHeader__Se_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg *outC)
 {
   outC->_L2 = in_D_EMERGENCYSTOP;
@@ -30,52 +30,52 @@ void _44_RadioTrackTrainHeader__Se_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg(
 void _44_RadioTrackTrainHeader__Se_init_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg(
   outC__44_RadioTrackTrainHeader__Se_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg *outC)
 {
-  outC->_L3.radioDevice = kcg_lit_int64(0);
-  outC->_L3.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L3.nid_message = kcg_lit_int64(0);
-  outC->_L3.t_train = kcg_lit_int64(0);
-  outC->_L3.m_ack = kcg_lit_int64(0);
-  outC->_L3.nid_lrbg = kcg_lit_int64(0);
-  outC->_L3.t_train_reference = kcg_lit_int64(0);
-  outC->_L3.nid_em = kcg_lit_int64(0);
-  outC->_L3.q_scale = kcg_lit_int64(0);
-  outC->_L3.d_sr = kcg_lit_int64(0);
-  outC->_L3.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L3.d_ref = kcg_lit_int64(0);
-  outC->_L3.q_dir = kcg_lit_int64(0);
-  outC->_L3.d_emergencystop = kcg_lit_int64(0);
-  outC->_L3.m_version = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1.radioDevice = kcg_lit_int64(0);
-  outC->_L1.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L1.nid_message = kcg_lit_int64(0);
-  outC->_L1.t_train = kcg_lit_int64(0);
-  outC->_L1.m_ack = kcg_lit_int64(0);
-  outC->_L1.nid_lrbg = kcg_lit_int64(0);
-  outC->_L1.t_train_reference = kcg_lit_int64(0);
-  outC->_L1.nid_em = kcg_lit_int64(0);
-  outC->_L1.q_scale = kcg_lit_int64(0);
-  outC->_L1.d_sr = kcg_lit_int64(0);
-  outC->_L1.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L1.d_ref = kcg_lit_int64(0);
-  outC->_L1.q_dir = kcg_lit_int64(0);
-  outC->_L1.d_emergencystop = kcg_lit_int64(0);
-  outC->_L1.m_version = kcg_lit_int64(0);
-  outC->outRadioTrackTrainHeader.radioDevice = kcg_lit_int64(0);
-  outC->outRadioTrackTrainHeader.receivedSystemTime = kcg_lit_int64(0);
-  outC->outRadioTrackTrainHeader.nid_message = kcg_lit_int64(0);
-  outC->outRadioTrackTrainHeader.t_train = kcg_lit_int64(0);
-  outC->outRadioTrackTrainHeader.m_ack = kcg_lit_int64(0);
-  outC->outRadioTrackTrainHeader.nid_lrbg = kcg_lit_int64(0);
-  outC->outRadioTrackTrainHeader.t_train_reference = kcg_lit_int64(0);
-  outC->outRadioTrackTrainHeader.nid_em = kcg_lit_int64(0);
-  outC->outRadioTrackTrainHeader.q_scale = kcg_lit_int64(0);
-  outC->outRadioTrackTrainHeader.d_sr = kcg_lit_int64(0);
-  outC->outRadioTrackTrainHeader.t_sh_rqst = kcg_lit_int64(0);
-  outC->outRadioTrackTrainHeader.d_ref = kcg_lit_int64(0);
-  outC->outRadioTrackTrainHeader.q_dir = kcg_lit_int64(0);
-  outC->outRadioTrackTrainHeader.d_emergencystop = kcg_lit_int64(0);
-  outC->outRadioTrackTrainHeader.m_version = kcg_lit_int64(0);
+  outC->_L3.radioDevice = kcg_lit_int32(0);
+  outC->_L3.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L3.nid_message = kcg_lit_int32(0);
+  outC->_L3.t_train = kcg_lit_int32(0);
+  outC->_L3.m_ack = kcg_lit_int32(0);
+  outC->_L3.nid_lrbg = kcg_lit_int32(0);
+  outC->_L3.t_train_reference = kcg_lit_int32(0);
+  outC->_L3.nid_em = kcg_lit_int32(0);
+  outC->_L3.q_scale = kcg_lit_int32(0);
+  outC->_L3.d_sr = kcg_lit_int32(0);
+  outC->_L3.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L3.d_ref = kcg_lit_int32(0);
+  outC->_L3.q_dir = kcg_lit_int32(0);
+  outC->_L3.d_emergencystop = kcg_lit_int32(0);
+  outC->_L3.m_version = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1.radioDevice = kcg_lit_int32(0);
+  outC->_L1.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L1.nid_message = kcg_lit_int32(0);
+  outC->_L1.t_train = kcg_lit_int32(0);
+  outC->_L1.m_ack = kcg_lit_int32(0);
+  outC->_L1.nid_lrbg = kcg_lit_int32(0);
+  outC->_L1.t_train_reference = kcg_lit_int32(0);
+  outC->_L1.nid_em = kcg_lit_int32(0);
+  outC->_L1.q_scale = kcg_lit_int32(0);
+  outC->_L1.d_sr = kcg_lit_int32(0);
+  outC->_L1.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L1.d_ref = kcg_lit_int32(0);
+  outC->_L1.q_dir = kcg_lit_int32(0);
+  outC->_L1.d_emergencystop = kcg_lit_int32(0);
+  outC->_L1.m_version = kcg_lit_int32(0);
+  outC->outRadioTrackTrainHeader.radioDevice = kcg_lit_int32(0);
+  outC->outRadioTrackTrainHeader.receivedSystemTime = kcg_lit_int32(0);
+  outC->outRadioTrackTrainHeader.nid_message = kcg_lit_int32(0);
+  outC->outRadioTrackTrainHeader.t_train = kcg_lit_int32(0);
+  outC->outRadioTrackTrainHeader.m_ack = kcg_lit_int32(0);
+  outC->outRadioTrackTrainHeader.nid_lrbg = kcg_lit_int32(0);
+  outC->outRadioTrackTrainHeader.t_train_reference = kcg_lit_int32(0);
+  outC->outRadioTrackTrainHeader.nid_em = kcg_lit_int32(0);
+  outC->outRadioTrackTrainHeader.q_scale = kcg_lit_int32(0);
+  outC->outRadioTrackTrainHeader.d_sr = kcg_lit_int32(0);
+  outC->outRadioTrackTrainHeader.t_sh_rqst = kcg_lit_int32(0);
+  outC->outRadioTrackTrainHeader.d_ref = kcg_lit_int32(0);
+  outC->outRadioTrackTrainHeader.q_dir = kcg_lit_int32(0);
+  outC->outRadioTrackTrainHeader.d_emergencystop = kcg_lit_int32(0);
+  outC->outRadioTrackTrainHeader.m_version = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

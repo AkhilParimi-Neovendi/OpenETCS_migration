@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -370,13 +370,13 @@ void Output_To_DMI_init_OutputManagement(
   outC->_L44 = kcg_true;
   outC->_L43.LevelTransition.is_set = kcg_true;
   outC->_L43.LevelTransition.transition.level = M_LEVEL_Level_0;
-  outC->_L43.LevelTransition.transition.position = kcg_lit_int64(0);
+  outC->_L43.LevelTransition.transition.position = kcg_lit_int32(0);
   outC->_L43.LevelTransition.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L43.LevelTransition.transition.immediateAck = kcg_true;
-  outC->_L43.LevelTransition.transition.AckLength = kcg_lit_int64(0);
-  outC->_L43.LevelTransition.LRBG = kcg_lit_int64(0);
-  outC->_L43.LevelTransition.referenceLocation = kcg_lit_int64(0);
+  outC->_L43.LevelTransition.transition.AckLength = kcg_lit_int32(0);
+  outC->_L43.LevelTransition.LRBG = kcg_lit_int32(0);
+  outC->_L43.LevelTransition.referenceLocation = kcg_lit_int32(0);
   outC->_L43.IsAvailableForUse = kcg_true;
   outC->_L42.valid = kcg_true;
   outC->_L42.whichMode = M_MODE_Full_Supervision;
@@ -385,13 +385,13 @@ void Output_To_DMI_init_OutputManagement(
   outC->_L41 = kcg_true;
   outC->_L40.is_set = kcg_true;
   outC->_L40.transition.level = M_LEVEL_Level_0;
-  outC->_L40.transition.position = kcg_lit_int64(0);
+  outC->_L40.transition.position = kcg_lit_int32(0);
   outC->_L40.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L40.transition.immediateAck = kcg_true;
-  outC->_L40.transition.AckLength = kcg_lit_int64(0);
-  outC->_L40.LRBG = kcg_lit_int64(0);
-  outC->_L40.referenceLocation = kcg_lit_int64(0);
+  outC->_L40.transition.AckLength = kcg_lit_int32(0);
+  outC->_L40.LRBG = kcg_lit_int32(0);
+  outC->_L40.referenceLocation = kcg_lit_int32(0);
   outC->_L39 = kcg_true;
   outC->_L37 = kcg_true;
   outC->_L18.Ack_LS = kcg_true;
@@ -463,13 +463,13 @@ void Output_To_DMI_init_OutputManagement(
   outC->Data_To_DMI_Ack.LevelNeedsAck = kcg_true;
   outC->announcedLevel.LevelTransition.is_set = kcg_true;
   outC->announcedLevel.LevelTransition.transition.level = M_LEVEL_Level_0;
-  outC->announcedLevel.LevelTransition.transition.position = kcg_lit_int64(0);
+  outC->announcedLevel.LevelTransition.transition.position = kcg_lit_int32(0);
   outC->announcedLevel.LevelTransition.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->announcedLevel.LevelTransition.transition.immediateAck = kcg_true;
-  outC->announcedLevel.LevelTransition.transition.AckLength = kcg_lit_int64(0);
-  outC->announcedLevel.LevelTransition.LRBG = kcg_lit_int64(0);
-  outC->announcedLevel.LevelTransition.referenceLocation = kcg_lit_int64(0);
+  outC->announcedLevel.LevelTransition.transition.AckLength = kcg_lit_int32(0);
+  outC->announcedLevel.LevelTransition.LRBG = kcg_lit_int32(0);
+  outC->announcedLevel.LevelTransition.referenceLocation = kcg_lit_int32(0);
   outC->announcedLevel.IsAvailableForUse = kcg_true;
   outC->mem_needsAckFromDriver = kcg_false;
 }
@@ -503,6 +503,6 @@ void kcg_load_SV_Output_To_DMI_OutputManagement(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Output_To_DMI_OutputManagement.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

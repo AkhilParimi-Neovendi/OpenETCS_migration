@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _Dif2Nominal_CheckBGConsistency_Pkg_SubFunction_DuplicationCheck_H_
 #define _Dif2Nominal_CheckBGConsistency_Pkg_SubFunction_DuplicationCheck_H_
@@ -82,6 +82,6 @@ extern void Dif2Nominal_init_CheckBGConsistency_Pkg_SubFunction_DuplicationCheck
 #endif /* _Dif2Nominal_CheckBGConsistency_Pkg_SubFunction_DuplicationCheck_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Dif2Nominal_CheckBGConsistency_Pkg_SubFunction_DuplicationCheck.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

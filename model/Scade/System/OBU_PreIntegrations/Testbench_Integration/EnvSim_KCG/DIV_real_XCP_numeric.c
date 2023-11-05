@@ -10,14 +10,14 @@
 /* XCP_numeric::DIV_real/ */
 void DIV_real_XCP_numeric(
   /* Dividend/ */
-  kcg_float64 Dividend,
+  kcg_float32 Dividend,
   /* Divisor/ */
-  kcg_float64 Divisor,
+  kcg_float32 Divisor,
   /* Default/ */
-  kcg_float64 Default,
+  kcg_float32 Default,
   outC_DIV_real_XCP_numeric *outC)
 {
-  static kcg_float64 op_call;
+  static kcg_float32 op_call;
   static kcg_bool every;
 
   outC->_L6 = ZERO_real_XCP_numeric;
@@ -46,14 +46,14 @@ void DIV_real_init_XCP_numeric(outC_DIV_real_XCP_numeric *outC)
 {
   outC->_L8 = kcg_true;
   outC->_L7 = kcg_true;
-  outC->_L6 = kcg_lit_float64(0.0);
-  outC->_L5 = kcg_lit_float64(0.0);
-  outC->_L4 = kcg_lit_float64(0.0);
-  outC->_L3 = kcg_lit_float64(0.0);
-  outC->_L2 = kcg_lit_float64(0.0);
-  outC->_L1 = kcg_lit_float64(0.0);
+  outC->_L6 = kcg_lit_float32(0.0);
+  outC->_L5 = kcg_lit_float32(0.0);
+  outC->_L4 = kcg_lit_float32(0.0);
+  outC->_L3 = kcg_lit_float32(0.0);
+  outC->_L2 = kcg_lit_float32(0.0);
+  outC->_L1 = kcg_lit_float32(0.0);
   outC->Exception = kcg_true;
-  outC->Result = kcg_lit_float64(0.0);
+  outC->Result = kcg_lit_float32(0.0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

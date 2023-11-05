@@ -14,7 +14,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* l_trainint_int/ */ l_trainint_int;
+  kcg_int32 /* l_trainint_int/ */ l_trainint_int;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
@@ -24,8 +24,8 @@ typedef struct {
   L_TRAININT /* _L1/ */ _L1;
   kcg_bool /* _L9/ */ _L9;
   kcg_bool /* _L8/ */ _L8;
-  kcg_int64 /* _L14/ */ _L14;
-  kcg_int64 /* _L15/ */ _L15;
+  kcg_int32 /* _L14/ */ _L14;
+  kcg_int32 /* _L15/ */ _L15;
 } outC_CAST_L_TRAININT_to_int_TM_conversions;
 
 /* ===========  node initialization and cycle functions  =========== */

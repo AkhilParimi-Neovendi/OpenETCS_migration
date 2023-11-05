@@ -43,7 +43,7 @@ typedef struct {
   L_internal_real_Type_SDM_Types_Pkg /* _L148/ */ _L148;
   Target_real_T_TargetManagement_types /* _L149/ */ _L149;
   L_internal_real_Type_SDM_Types_Pkg /* _L150/ */ _L150;
-  kcg_float64 /* _L151/ */ _L151;
+  kcg_float32 /* _L151/ */ _L151;
 } outC_InitalValues_CalcBrakingCurves_Pkg_internalOperators;
 
 /* ===========  node initialization and cycle functions  =========== */

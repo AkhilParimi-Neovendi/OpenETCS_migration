@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,7 +10,7 @@
 /* DMI_Control_Pkg::Utils::ASCII_to_Char_iterator/ */
 void ASCII_to_Char_iterator_DMI_Control_Pkg_Utils(
   /* ascii/ */
-  kcg_int64 ascii,
+  kcg_int32 ascii,
   outC_ASCII_to_Char_iterator_DMI_Control_Pkg_Utils *outC)
 {
   outC->_L12 = ascii;
@@ -26,31 +26,31 @@ void ASCII_to_Char_iterator_DMI_Control_Pkg_Utils(
   outC->_L5 = '0';
   /* _L7= */
   switch (outC->_L12) {
-    case kcg_lit_int64(49) :
+    case kcg_lit_int32(49) :
       outC->_L7 = outC->_L3;
       break;
-    case kcg_lit_int64(50) :
+    case kcg_lit_int32(50) :
       outC->_L7 = outC->_L4;
       break;
-    case kcg_lit_int64(51) :
+    case kcg_lit_int32(51) :
       outC->_L7 = outC->_L1;
       break;
-    case kcg_lit_int64(52) :
+    case kcg_lit_int32(52) :
       outC->_L7 = outC->_L10;
       break;
-    case kcg_lit_int64(53) :
+    case kcg_lit_int32(53) :
       outC->_L7 = outC->_L9;
       break;
-    case kcg_lit_int64(54) :
+    case kcg_lit_int32(54) :
       outC->_L7 = outC->_L8;
       break;
-    case kcg_lit_int64(55) :
+    case kcg_lit_int32(55) :
       outC->_L7 = outC->_L11;
       break;
-    case kcg_lit_int64(56) :
+    case kcg_lit_int32(56) :
       outC->_L7 = outC->_L6;
       break;
-    case kcg_lit_int64(57) :
+    case kcg_lit_int32(57) :
       outC->_L7 = outC->_L2;
       break;
     default :
@@ -64,7 +64,7 @@ void ASCII_to_Char_iterator_DMI_Control_Pkg_Utils(
 void ASCII_to_Char_iterator_init_DMI_Control_Pkg_Utils(
   outC_ASCII_to_Char_iterator_DMI_Control_Pkg_Utils *outC)
 {
-  outC->_L12 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
   outC->_L1 = ' ';
   outC->_L2 = ' ';
   outC->_L3 = ' ';
@@ -92,6 +92,6 @@ void ASCII_to_Char_iterator_reset_DMI_Control_Pkg_Utils(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ASCII_to_Char_iterator_DMI_Control_Pkg_Utils.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

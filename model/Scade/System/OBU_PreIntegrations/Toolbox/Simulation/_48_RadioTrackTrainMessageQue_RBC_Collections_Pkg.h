@@ -17,7 +17,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* outRemainingCapacity/ */ outRemainingCapacity;
+  kcg_int32 /* outRemainingCapacity/ */ outRemainingCapacity;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -27,31 +27,31 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* index/ */ index;
-  kcg_int64 /* remainingCapacity/ */ remainingCapacity;
+  kcg_int32 /* index/ */ index;
+  kcg_int32 /* remainingCapacity/ */ remainingCapacity;
   _2_RadioTrackTrainMessageQueue_T /* _L1/ */ _L1;
   _3_RadioTrackTrainMessageQueueEntries_T /* _L2/ */ _L2;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   kcg_bool /* _L11/ */ _L11;
-  kcg_int64 /* _L26/ */ _L26;
-  kcg_int64 /* _L27/ */ _L27;
-  kcg_int64 /* _L28/ */ _L28;
+  kcg_int32 /* _L26/ */ _L26;
+  kcg_int32 /* _L27/ */ _L27;
+  kcg_int32 /* _L28/ */ _L28;
   kcg_bool /* _L30/ */ _L30;
-  kcg_int64 /* _L31/ */ _L31;
-  kcg_int64 /* _L32/ */ _L32;
-  kcg_int64 /* _L33/ */ _L33;
-  kcg_int64 /* _L34/ */ _L34;
-  kcg_int64 /* _L35/ */ _L35;
-  kcg_int64 /* _L37/ */ _L37;
-  kcg_int64 /* _L38/ */ _L38;
+  kcg_int32 /* _L31/ */ _L31;
+  kcg_int32 /* _L32/ */ _L32;
+  kcg_int32 /* _L33/ */ _L33;
+  kcg_int32 /* _L34/ */ _L34;
+  kcg_int32 /* _L35/ */ _L35;
+  kcg_int32 /* _L37/ */ _L37;
+  kcg_int32 /* _L38/ */ _L38;
   RadioTrackTrainMessageQueueEntry_T /* _L42/ */ _L42;
   RadioTrackTrainMessageQueueEntry_T /* _L43/ */ _L43;
-  kcg_int64 /* _L44/ */ _L44;
+  kcg_int32 /* _L44/ */ _L44;
   kcg_bool /* _L45/ */ _L45;
-  kcg_int64 /* _L51/ */ _L51;
-  kcg_int64 /* _L52/ */ _L52;
-  kcg_int64 /* _L53/ */ _L53;
-  kcg_int64 /* _L54/ */ _L54;
+  kcg_int32 /* _L51/ */ _L51;
+  kcg_int32 /* _L52/ */ _L52;
+  kcg_int32 /* _L53/ */ _L53;
+  kcg_int32 /* _L54/ */ _L54;
 } outC__48_RadioTrackTrainMessageQue_RBC_Collections_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

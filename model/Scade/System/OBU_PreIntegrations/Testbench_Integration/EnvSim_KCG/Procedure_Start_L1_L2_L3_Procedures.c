@@ -1118,11 +1118,11 @@ void Procedure_Start_L1_L2_L3_init_Procedures(
   outC_Procedure_Start_L1_L2_L3_Procedures *outC)
 {
   outC->_L19 = Profile_OS_Level_And_Mode_Types_Pkg;
-  outC->_L26.Distance = kcg_lit_int64(0);
+  outC->_L26.Distance = kcg_lit_int32(0);
   outC->_L26.Mode = Profile_OS_Level_And_Mode_Types_Pkg;
-  outC->_L26.Speed = kcg_lit_int64(0);
-  outC->_L26.Length = kcg_lit_int64(0);
-  outC->_L26.Length_Ack = kcg_lit_int64(0);
+  outC->_L26.Speed = kcg_lit_int32(0);
+  outC->_L26.Length = kcg_lit_int32(0);
+  outC->_L26.Length_Ack = kcg_lit_int32(0);
   outC->Loc_Mode_Profile = Profile_OS_Level_And_Mode_Types_Pkg;
   outC->SM_Start_L1_L2_L3_fired = SSM_TR_no_trans_SM_Start_L1_L2_L3;
   outC->SM_Start_L1_L2_L3_fired_strong = SSM_TR_no_trans_SM_Start_L1_L2_L3;

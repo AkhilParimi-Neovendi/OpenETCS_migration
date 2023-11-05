@@ -43,9 +43,9 @@ typedef struct {
   NID_BG /* _L61/ */ _L61;
   kcg_bool /* _L62/ */ _L62;
   kcg_bool /* _L63/ */ _L63;
-  kcg_int64 /* _L64/ */ _L64;
+  kcg_int32 /* _L64/ */ _L64;
   kcg_bool /* _L65/ */ _L65;
-  kcg_int64 /* _L66/ */ _L66;
+  kcg_int32 /* _L66/ */ _L66;
   kcg_bool /* _L67/ */ _L67;
   kcg_bool /* _L68/ */ _L68;
   TelegramArray_T_BG_Types_Pkg /* _L69/ */ _L69;

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -51,10 +51,10 @@ void SliceMsg_DMI_Control_Pkg_Sub_func_TextMessages(
   kcg_copy_array_char_30(&outC->_L80[2], &outC->_L75);
   kcg_copy_array_char_30(&outC->_L80[3], &outC->_L77);
   kcg_copy_array_char_30(&outC->_L80[4], &outC->_L6);
-  outC->_L72 = kcg_lit_int64(90);
+  outC->_L72 = kcg_lit_int32(90);
   outC->_L67 = outC->_L71.l_text;
   outC->_L69 = outC->_L67 > outC->_L72;
-  outC->_L65 = kcg_lit_int64(120);
+  outC->_L65 = kcg_lit_int32(120);
   outC->_L68 = outC->_L67 <= outC->_L65;
   outC->_L70 = outC->_L68 & outC->_L69;
   /* _L64= */
@@ -81,10 +81,10 @@ void SliceMsg_DMI_Control_Pkg_Sub_func_TextMessages(
   kcg_copy_array_char_30(&outC->_L63[2], &outC->_L60);
   kcg_copy_array_char_30(&outC->_L63[3], &outC->_L5);
   kcg_copy_array_char_30(&outC->_L63[4], &outC->_L59);
-  outC->_L54 = kcg_lit_int64(90);
+  outC->_L54 = kcg_lit_int32(90);
   outC->_L51 = outC->_L56.l_text;
   outC->_L57 = outC->_L51 > outC->_L54;
-  outC->_L55 = kcg_lit_int64(120);
+  outC->_L55 = kcg_lit_int32(120);
   outC->_L50 = outC->_L51 <= outC->_L55;
   outC->_L52 = outC->_L50 & outC->_L57;
   /* _L49= */
@@ -110,10 +110,10 @@ void SliceMsg_DMI_Control_Pkg_Sub_func_TextMessages(
   kcg_copy_array_char_30(&outC->_L48[2], &outC->_L4);
   kcg_copy_array_char_30(&outC->_L48[3], &outC->_L47);
   kcg_copy_array_char_30(&outC->_L48[4], &outC->_L47);
-  outC->_L39 = kcg_lit_int64(60);
+  outC->_L39 = kcg_lit_int32(60);
   outC->_L36 = outC->_L42.l_text;
   outC->_L43 = outC->_L36 > outC->_L39;
-  outC->_L40 = kcg_lit_int64(90);
+  outC->_L40 = kcg_lit_int32(90);
   outC->_L38 = outC->_L36 <= outC->_L40;
   outC->_L41 = outC->_L38 & outC->_L43;
   /* _L35= */
@@ -138,10 +138,10 @@ void SliceMsg_DMI_Control_Pkg_Sub_func_TextMessages(
   kcg_copy_array_char_30(&outC->_L33[2], &outC->_L34);
   kcg_copy_array_char_30(&outC->_L33[3], &outC->_L34);
   kcg_copy_array_char_30(&outC->_L33[4], &outC->_L34);
-  outC->_L23 = kcg_lit_int64(30);
+  outC->_L23 = kcg_lit_int32(30);
   outC->_L24 = outC->_L19.l_text;
   outC->_L22 = outC->_L24 > outC->_L23;
-  outC->_L26 = kcg_lit_int64(60);
+  outC->_L26 = kcg_lit_int32(60);
   outC->_L25 = outC->_L24 <= outC->_L26;
   outC->_L21 = outC->_L25 & outC->_L22;
   /* _L30= */
@@ -165,10 +165,10 @@ void SliceMsg_DMI_Control_Pkg_Sub_func_TextMessages(
   kcg_copy_array_char_30(&outC->_L28[2], &outC->_L29);
   kcg_copy_array_char_30(&outC->_L28[3], &outC->_L29);
   kcg_copy_array_char_30(&outC->_L28[4], &outC->_L29);
-  outC->_L13 = kcg_lit_int64(0);
+  outC->_L13 = kcg_lit_int32(0);
   outC->_L10 = outC->_L8.l_text;
   outC->_L12 = outC->_L10 > outC->_L13;
-  outC->_L14 = kcg_lit_int64(30);
+  outC->_L14 = kcg_lit_int32(30);
   outC->_L11 = outC->_L10 <= outC->_L14;
   outC->_L15 = outC->_L11 & outC->_L12;
   /* _L16= */
@@ -263,10 +263,10 @@ void SliceMsg_init_DMI_Control_Pkg_Sub_func_TextMessages(
   }
   outC->_L88.present = kcg_true;
   outC->_L88.dmi_msg.valid = kcg_true;
-  outC->_L88.dmi_msg.system_clock = kcg_lit_int64(0);
-  outC->_L88.dmi_msg.textMessage_ID = kcg_lit_int64(0);
+  outC->_L88.dmi_msg.system_clock = kcg_lit_int32(0);
+  outC->_L88.dmi_msg.textMessage_ID = kcg_lit_int32(0);
   outC->_L88.dmi_msg.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L88.dmi_msg.l_text = kcg_lit_int64(0);
+  outC->_L88.dmi_msg.l_text = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 255; idx4++) {
     outC->_L88.dmi_msg.x_text[idx4] = ' ';
   }
@@ -274,10 +274,10 @@ void SliceMsg_init_DMI_Control_Pkg_Sub_func_TextMessages(
   outC->_L88.dmi_msg.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L83.present = kcg_true;
   outC->_L83.dmi_msg.valid = kcg_true;
-  outC->_L83.dmi_msg.system_clock = kcg_lit_int64(0);
-  outC->_L83.dmi_msg.textMessage_ID = kcg_lit_int64(0);
+  outC->_L83.dmi_msg.system_clock = kcg_lit_int32(0);
+  outC->_L83.dmi_msg.textMessage_ID = kcg_lit_int32(0);
   outC->_L83.dmi_msg.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L83.dmi_msg.l_text = kcg_lit_int64(0);
+  outC->_L83.dmi_msg.l_text = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 255; idx5++) {
     outC->_L83.dmi_msg.x_text[idx5] = ' ';
   }
@@ -312,33 +312,33 @@ void SliceMsg_init_DMI_Control_Pkg_Sub_func_TextMessages(
   for (idx15 = 0; idx15 < 255; idx15++) {
     outC->_L73[idx15] = ' ';
   }
-  outC->_L65 = kcg_lit_int64(0);
+  outC->_L65 = kcg_lit_int32(0);
   outC->_L66.present = kcg_true;
   outC->_L66.dmi_msg.valid = kcg_true;
-  outC->_L66.dmi_msg.system_clock = kcg_lit_int64(0);
-  outC->_L66.dmi_msg.textMessage_ID = kcg_lit_int64(0);
+  outC->_L66.dmi_msg.system_clock = kcg_lit_int32(0);
+  outC->_L66.dmi_msg.textMessage_ID = kcg_lit_int32(0);
   outC->_L66.dmi_msg.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L66.dmi_msg.l_text = kcg_lit_int64(0);
+  outC->_L66.dmi_msg.l_text = kcg_lit_int32(0);
   for (idx16 = 0; idx16 < 255; idx16++) {
     outC->_L66.dmi_msg.x_text[idx16] = ' ';
   }
   outC->_L66.dmi_msg.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L66.dmi_msg.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
-  outC->_L67 = kcg_lit_int64(0);
+  outC->_L67 = kcg_lit_int32(0);
   outC->_L68 = kcg_true;
   outC->_L69 = kcg_true;
   outC->_L70 = kcg_true;
   outC->_L71.valid = kcg_true;
-  outC->_L71.system_clock = kcg_lit_int64(0);
-  outC->_L71.textMessage_ID = kcg_lit_int64(0);
+  outC->_L71.system_clock = kcg_lit_int32(0);
+  outC->_L71.textMessage_ID = kcg_lit_int32(0);
   outC->_L71.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L71.l_text = kcg_lit_int64(0);
+  outC->_L71.l_text = kcg_lit_int32(0);
   for (idx17 = 0; idx17 < 255; idx17++) {
     outC->_L71.x_text[idx17] = ' ';
   }
   outC->_L71.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L71.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
-  outC->_L72 = kcg_lit_int64(0);
+  outC->_L72 = kcg_lit_int32(0);
   for (idx19 = 0; idx19 < 5; idx19++) {
     for (idx18 = 0; idx18 < 30; idx18++) {
       outC->_L64[idx19][idx18] = ' ';
@@ -365,26 +365,26 @@ void SliceMsg_init_DMI_Control_Pkg_Sub_func_TextMessages(
     outC->_L58[idx26] = ' ';
   }
   outC->_L50 = kcg_true;
-  outC->_L51 = kcg_lit_int64(0);
+  outC->_L51 = kcg_lit_int32(0);
   outC->_L52 = kcg_true;
   outC->_L53.present = kcg_true;
   outC->_L53.dmi_msg.valid = kcg_true;
-  outC->_L53.dmi_msg.system_clock = kcg_lit_int64(0);
-  outC->_L53.dmi_msg.textMessage_ID = kcg_lit_int64(0);
+  outC->_L53.dmi_msg.system_clock = kcg_lit_int32(0);
+  outC->_L53.dmi_msg.textMessage_ID = kcg_lit_int32(0);
   outC->_L53.dmi_msg.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L53.dmi_msg.l_text = kcg_lit_int64(0);
+  outC->_L53.dmi_msg.l_text = kcg_lit_int32(0);
   for (idx27 = 0; idx27 < 255; idx27++) {
     outC->_L53.dmi_msg.x_text[idx27] = ' ';
   }
   outC->_L53.dmi_msg.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L53.dmi_msg.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
-  outC->_L54 = kcg_lit_int64(0);
-  outC->_L55 = kcg_lit_int64(0);
+  outC->_L54 = kcg_lit_int32(0);
+  outC->_L55 = kcg_lit_int32(0);
   outC->_L56.valid = kcg_true;
-  outC->_L56.system_clock = kcg_lit_int64(0);
-  outC->_L56.textMessage_ID = kcg_lit_int64(0);
+  outC->_L56.system_clock = kcg_lit_int32(0);
+  outC->_L56.textMessage_ID = kcg_lit_int32(0);
   outC->_L56.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L56.l_text = kcg_lit_int64(0);
+  outC->_L56.l_text = kcg_lit_int32(0);
   for (idx28 = 0; idx28 < 255; idx28++) {
     outC->_L56.x_text[idx28] = ' ';
   }
@@ -413,27 +413,27 @@ void SliceMsg_init_DMI_Control_Pkg_Sub_func_TextMessages(
   for (idx36 = 0; idx36 < 255; idx36++) {
     outC->_L44[idx36] = ' ';
   }
-  outC->_L36 = kcg_lit_int64(0);
+  outC->_L36 = kcg_lit_int32(0);
   outC->_L37.present = kcg_true;
   outC->_L37.dmi_msg.valid = kcg_true;
-  outC->_L37.dmi_msg.system_clock = kcg_lit_int64(0);
-  outC->_L37.dmi_msg.textMessage_ID = kcg_lit_int64(0);
+  outC->_L37.dmi_msg.system_clock = kcg_lit_int32(0);
+  outC->_L37.dmi_msg.textMessage_ID = kcg_lit_int32(0);
   outC->_L37.dmi_msg.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L37.dmi_msg.l_text = kcg_lit_int64(0);
+  outC->_L37.dmi_msg.l_text = kcg_lit_int32(0);
   for (idx37 = 0; idx37 < 255; idx37++) {
     outC->_L37.dmi_msg.x_text[idx37] = ' ';
   }
   outC->_L37.dmi_msg.q_textClass = Q_TEXTCLASS_Auxiliary_Information;
   outC->_L37.dmi_msg.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L38 = kcg_true;
-  outC->_L39 = kcg_lit_int64(0);
-  outC->_L40 = kcg_lit_int64(0);
+  outC->_L39 = kcg_lit_int32(0);
+  outC->_L40 = kcg_lit_int32(0);
   outC->_L41 = kcg_true;
   outC->_L42.valid = kcg_true;
-  outC->_L42.system_clock = kcg_lit_int64(0);
-  outC->_L42.textMessage_ID = kcg_lit_int64(0);
+  outC->_L42.system_clock = kcg_lit_int32(0);
+  outC->_L42.textMessage_ID = kcg_lit_int32(0);
   outC->_L42.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L42.l_text = kcg_lit_int64(0);
+  outC->_L42.l_text = kcg_lit_int32(0);
   for (idx38 = 0; idx38 < 255; idx38++) {
     outC->_L42.x_text[idx38] = ' ';
   }
@@ -474,15 +474,15 @@ void SliceMsg_init_DMI_Control_Pkg_Sub_func_TextMessages(
   }
   outC->_L21 = kcg_true;
   outC->_L22 = kcg_true;
-  outC->_L23 = kcg_lit_int64(0);
-  outC->_L24 = kcg_lit_int64(0);
+  outC->_L23 = kcg_lit_int32(0);
+  outC->_L24 = kcg_lit_int32(0);
   outC->_L25 = kcg_true;
-  outC->_L26 = kcg_lit_int64(0);
+  outC->_L26 = kcg_lit_int32(0);
   outC->_L19.valid = kcg_true;
-  outC->_L19.system_clock = kcg_lit_int64(0);
-  outC->_L19.textMessage_ID = kcg_lit_int64(0);
+  outC->_L19.system_clock = kcg_lit_int32(0);
+  outC->_L19.textMessage_ID = kcg_lit_int32(0);
   outC->_L19.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L19.l_text = kcg_lit_int64(0);
+  outC->_L19.l_text = kcg_lit_int32(0);
   for (idx51 = 0; idx51 < 255; idx51++) {
     outC->_L19.x_text[idx51] = ' ';
   }
@@ -490,10 +490,10 @@ void SliceMsg_init_DMI_Control_Pkg_Sub_func_TextMessages(
   outC->_L19.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->_L18.present = kcg_true;
   outC->_L18.dmi_msg.valid = kcg_true;
-  outC->_L18.dmi_msg.system_clock = kcg_lit_int64(0);
-  outC->_L18.dmi_msg.textMessage_ID = kcg_lit_int64(0);
+  outC->_L18.dmi_msg.system_clock = kcg_lit_int32(0);
+  outC->_L18.dmi_msg.textMessage_ID = kcg_lit_int32(0);
   outC->_L18.dmi_msg.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L18.dmi_msg.l_text = kcg_lit_int64(0);
+  outC->_L18.dmi_msg.l_text = kcg_lit_int32(0);
   for (idx52 = 0; idx52 < 255; idx52++) {
     outC->_L18.dmi_msg.x_text[idx52] = ' ';
   }
@@ -505,19 +505,19 @@ void SliceMsg_init_DMI_Control_Pkg_Sub_func_TextMessages(
     }
   }
   outC->_L15 = kcg_true;
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
   outC->_L12 = kcg_true;
   outC->_L11 = kcg_true;
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L10 = kcg_lit_int32(0);
   for (idx55 = 0; idx55 < 255; idx55++) {
     outC->_L9[idx55] = ' ';
   }
   outC->_L8.valid = kcg_true;
-  outC->_L8.system_clock = kcg_lit_int64(0);
-  outC->_L8.textMessage_ID = kcg_lit_int64(0);
+  outC->_L8.system_clock = kcg_lit_int32(0);
+  outC->_L8.textMessage_ID = kcg_lit_int32(0);
   outC->_L8.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L8.l_text = kcg_lit_int64(0);
+  outC->_L8.l_text = kcg_lit_int32(0);
   for (idx56 = 0; idx56 < 255; idx56++) {
     outC->_L8.x_text[idx56] = ' ';
   }
@@ -540,10 +540,10 @@ void SliceMsg_init_DMI_Control_Pkg_Sub_func_TextMessages(
   }
   outC->_L1.present = kcg_true;
   outC->_L1.dmi_msg.valid = kcg_true;
-  outC->_L1.dmi_msg.system_clock = kcg_lit_int64(0);
-  outC->_L1.dmi_msg.textMessage_ID = kcg_lit_int64(0);
+  outC->_L1.dmi_msg.system_clock = kcg_lit_int32(0);
+  outC->_L1.dmi_msg.textMessage_ID = kcg_lit_int32(0);
   outC->_L1.dmi_msg.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L1.dmi_msg.l_text = kcg_lit_int64(0);
+  outC->_L1.dmi_msg.l_text = kcg_lit_int32(0);
   for (idx62 = 0; idx62 < 255; idx62++) {
     outC->_L1.dmi_msg.x_text[idx62] = ' ';
   }
@@ -567,6 +567,6 @@ void SliceMsg_reset_DMI_Control_Pkg_Sub_func_TextMessages(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** SliceMsg_DMI_Control_Pkg_Sub_func_TextMessages.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

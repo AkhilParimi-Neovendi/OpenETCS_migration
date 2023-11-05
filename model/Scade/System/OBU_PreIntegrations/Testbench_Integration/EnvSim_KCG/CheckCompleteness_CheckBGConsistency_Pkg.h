@@ -40,16 +40,16 @@ typedef struct {
   TelegramArray_T_BG_Types_Pkg /* IfBlock1:else:then:_L3/ */ _L3_then_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L1/ */ _L1_then_else_IfBlock1;
   Telegram_T_BG_Types_Pkg /* IfBlock1:else:then:_L2/ */ _L2_then_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L5/ */ _L5_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L5/ */ _L5_then_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L7/ */ _L7_then_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L8/ */ _L8_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L8/ */ _L8_then_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L9/ */ _L9_then_else_IfBlock1;
-  kcg_int64 /* numberOfBalises/ */ numberOfBalises;
-  kcg_int64 /* nTotal/ */ nTotal;
+  kcg_int32 /* numberOfBalises/ */ numberOfBalises;
+  kcg_int32 /* nTotal/ */ nTotal;
   BG_Message_T_BG_Types_Pkg /* _L1/ */ _L1;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   N_TOTAL /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
 } outC_CheckCompleteness_CheckBGConsistency_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

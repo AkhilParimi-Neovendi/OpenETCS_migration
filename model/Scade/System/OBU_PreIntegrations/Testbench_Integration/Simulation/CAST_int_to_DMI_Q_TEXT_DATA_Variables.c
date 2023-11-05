@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,7 +10,7 @@
 /* DATA::Variables::CAST_int_to_DMI_Q_TEXT/ */
 void CAST_int_to_DMI_Q_TEXT_DATA_Variables(
   /* q_text_int/ */
-  kcg_int64 q_text_int,
+  kcg_int32 q_text_int,
   outC_CAST_int_to_DMI_Q_TEXT_DATA_Variables *outC)
 {
   /* q_text_ct/ */
@@ -1022,6 +1022,6 @@ void CAST_int_to_DMI_Q_TEXT_reset_DATA_Variables(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_int_to_DMI_Q_TEXT_DATA_Variables.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

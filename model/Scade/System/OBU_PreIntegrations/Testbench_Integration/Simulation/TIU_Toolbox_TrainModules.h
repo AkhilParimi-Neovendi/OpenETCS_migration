@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _TIU_Toolbox_TrainModules_H_
 #define _TIU_Toolbox_TrainModules_H_
@@ -58,9 +58,9 @@ typedef struct {
   Brake_status_T_TIU_Types_Pkg /* _L74/ */ _L74;
   Brake_pressure_value_T_TIU_Types_Pkg /* _L75/ */ _L75;
   kcg_bool /* _L76/ */ _L76;
-  kcg_int64 /* _L77/ */ _L77;
-  kcg_int64 /* _L78/ */ _L78;
-  kcg_int64 /* _L79/ */ _L79;
+  kcg_int32 /* _L77/ */ _L77;
+  kcg_int32 /* _L78/ */ _L78;
+  kcg_int32 /* _L79/ */ _L79;
   Type_I_train_and_brake_inhibition_with_distance_commands_T_TIU_Types_Pkg /* _L80/ */ _L80;
   kcg_bool /* _L81/ */ _L81;
   kcg_bool /* _L82/ */ _L82;
@@ -103,7 +103,7 @@ extern void TIU_Toolbox_TrainModules(
   /* tractionSwitchedOn/ */
   kcg_bool tractionSwitchedOn,
   /* brakeAccelerationPercentage/ */
-  kcg_int64 brakeAccelerationPercentage,
+  kcg_int32 brakeAccelerationPercentage,
   outC_TIU_Toolbox_TrainModules *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET
@@ -138,6 +138,6 @@ extern void kcg_load_SV_TIU_Toolbox_TrainModules(
 #endif /* _TIU_Toolbox_TrainModules_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** TIU_Toolbox_TrainModules.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

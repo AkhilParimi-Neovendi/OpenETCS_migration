@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _TargetIterator_TargetLimits_Pkg_H_
 #define _TargetIterator_TargetLimits_Pkg_H_
@@ -43,7 +43,7 @@ typedef struct {
   TargetIteratorAkku_TargetLimits_Pkg /* _L35/ */ _L35;
   TargetIteratorAkku_TargetLimits_Pkg /* _L45/ */ _L45;
   TargetIteratorAkku_TargetLimits_Pkg /* _L46/ */ _L46;
-  kcg_int64 /* _L47/ */ _L47;
+  kcg_int32 /* _L47/ */ _L47;
   kcg_bool /* _L49/ */ _L49;
   TargetType_T_TargetManagement_types /* _L50/ */ _L50;
   TargetType_T_TargetManagement_types /* _L54/ */ _L54;
@@ -74,21 +74,21 @@ typedef struct {
   L_internal_real_Type_SDM_Types_Pkg /* _L107/ */ _L107;
   ParabolaCurve_T_CalcBrakingCurves_types /* _L108/ */ _L108;
   kcg_bool /* _L109/ */ _L109;
-  kcg_float64 /* _L111/ */ _L111;
+  kcg_float32 /* _L111/ */ _L111;
   kcg_bool /* _L110/ */ _L110;
   V_internal_real_Type_SDM_Types_Pkg /* _L112/ */ _L112;
-  kcg_int64 /* _L113/ */ _L113;
+  kcg_int32 /* _L113/ */ _L113;
   V_internal_real_Type_SDM_Types_Pkg /* _L115/ */ _L115;
   Target_real_T_TargetManagement_types /* _L114/ */ _L114;
   TargetIteratorAkku_TargetLimits_Pkg /* _L116/ */ _L116;
   kcg_bool /* _L117/ */ _L117;
   kcg_bool /* _L119/ */ _L119;
   kcg_bool /* _L120/ */ _L120;
-  kcg_int64 /* _L121/ */ _L121;
+  kcg_int32 /* _L121/ */ _L121;
   TargetIteratorAkku_TargetLimits_Pkg /* _L122/ */ _L122;
   TargetIteratorAkku_TargetLimits_Pkg /* _L123/ */ _L123;
-  kcg_int64 /* _L124/ */ _L124;
-  kcg_int64 /* _L125/ */ _L125;
+  kcg_int32 /* _L124/ */ _L124;
+  kcg_int32 /* _L125/ */ _L125;
   TargetType_T_TargetManagement_types /* _L126/ */ _L126;
   kcg_bool /* _L127/ */ _L127;
   kcg_bool /* _L128/ */ _L128;
@@ -98,7 +98,7 @@ typedef struct {
 /* TargetLimits_Pkg::TargetIterator/ */
 extern void TargetIterator_TargetLimits_Pkg(
   /* index/ */
-  kcg_int64 index,
+  kcg_int32 index,
   /* Akku_in/ */
   TargetIteratorAkku_TargetLimits_Pkg *Akku_in,
   /* target/ */
@@ -134,6 +134,6 @@ extern void TargetIterator_init_TargetLimits_Pkg(
 #endif /* _TargetIterator_TargetLimits_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** TargetIterator_TargetLimits_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

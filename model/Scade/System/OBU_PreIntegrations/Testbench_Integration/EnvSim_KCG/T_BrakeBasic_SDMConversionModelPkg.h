@@ -26,11 +26,11 @@ typedef struct {
   T_internal_real_Type_SDM_Types_Pkg /* _L6/ */ _L6;
   T_internal_real_Type_SDM_Types_Pkg /* _L5/ */ _L5;
   L_internal_real_Type_SDM_Types_Pkg /* _L12/ */ _L12;
-  kcg_float64 /* _L13/ */ _L13;
-  kcg_float64 /* _L14/ */ _L14;
-  kcg_float64 /* _L15/ */ _L15;
-  kcg_float64 /* _L16/ */ _L16;
-  kcg_float64 /* _L17/ */ _L17;
+  kcg_float32 /* _L13/ */ _L13;
+  kcg_float32 /* _L14/ */ _L14;
+  kcg_float32 /* _L15/ */ _L15;
+  kcg_float32 /* _L16/ */ _L16;
+  kcg_float32 /* _L17/ */ _L17;
 } outC_T_BrakeBasic_SDMConversionModelPkg;
 
 /* ===========  node initialization and cycle functions  =========== */

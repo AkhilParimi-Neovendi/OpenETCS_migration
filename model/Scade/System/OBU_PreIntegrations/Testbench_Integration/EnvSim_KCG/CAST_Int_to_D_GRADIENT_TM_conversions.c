@@ -10,7 +10,7 @@
 /* TM_conversions::CAST_Int_to_D_GRADIENT/ */
 void CAST_Int_to_D_GRADIENT_TM_conversions(
   /* d_gradient_int/ */
-  kcg_int64 d_gradient_int,
+  kcg_int32 d_gradient_int,
   outC_CAST_Int_to_D_GRADIENT_TM_conversions *outC)
 {
   static kcg_bool noname;
@@ -32,10 +32,10 @@ void CAST_Int_to_D_GRADIENT_init_TM_conversions(
 {
   outC->_L6 = kcg_true;
   outC->_L7 = kcg_true;
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->d_gradient = kcg_lit_int64(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->d_gradient = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

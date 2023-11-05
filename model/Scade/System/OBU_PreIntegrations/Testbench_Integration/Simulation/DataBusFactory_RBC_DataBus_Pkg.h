@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _DataBusFactory_RBC_DataBus_Pkg_H_
 #define _DataBusFactory_RBC_DataBus_Pkg_H_
@@ -19,17 +19,17 @@ typedef struct {
   /* -----------------------  no local probes  ----------------------- */
   /* ----------------------- local memories  ------------------------- */
   kcg_bool init;
-  kcg_int64 /* @1/_/v3/ */ v3_times_1_int64;
+  kcg_int32 /* @1/_/v3/ */ v3_times_1_int32;
   /* ---------------------  sub nodes' contexts  --------------------- */
   outC_Clock__Limit_RBC_Time_Pkg /* _L18=(RBC_Time_Pkg::Clock__Limit#1)/ */ Context_Clock__Limit_1;
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_bool /* @1/_/o/ */ o_times_1_int64;
-  kcg_bool /* @1/_/c/ */ c_times_1_int64;
-  kcg_int64 /* @1/_/n/ */ n_times_1_int64;
-  kcg_int64 /* @1/_/v4/ */ v4_times_1_int64;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_bool /* @1/_/o/ */ o_times_1_int32;
+  kcg_bool /* @1/_/c/ */ c_times_1_int32;
+  kcg_int32 /* @1/_/n/ */ n_times_1_int32;
+  kcg_int32 /* @1/_/v4/ */ v4_times_1_int32;
+  kcg_int32 /* _L4/ */ _L4;
   kcg_bool /* _L3/ */ _L3;
   SessionManagement_T /* _L2/ */ _L2;
   kcg_bool /* _L1/ */ _L1;
@@ -38,7 +38,7 @@ typedef struct {
   Clock_T /* _L6/ */ _L6;
   RBC_Data_T_RBC_DataBus_Pkg /* _L8/ */ _L8;
   DynamicConfig_T /* _L10/ */ _L10;
-  _56_array /* _L16/ */ _L16;
+  _57_array /* _L16/ */ _L16;
   SessionManagement_T /* _L15/ */ _L15;
   DynamicConfig_T /* _L14/ */ _L14;
   RadioTrackTrainMessageQueue_T /* _L13/ */ _L13;
@@ -51,8 +51,8 @@ typedef struct {
   RadioTrackTrainMessageQueue_T /* _L24/ */ _L24;
   Clock_T /* _L25/ */ _L25;
   CompressedRadioMessage_TM /* _L26/ */ _L26;
-  _56_array /* _L28/ */ _L28;
-  _56_array /* _L38/ */ _L38;
+  _57_array /* _L28/ */ _L28;
+  _57_array /* _L38/ */ _L38;
 } outC_DataBusFactory_RBC_DataBus_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -78,7 +78,7 @@ extern void DataBusFactory_init_RBC_DataBus_Pkg(
 typedef struct {
   /* --------------------- no memorised outputs  --------------------- */
   /* ----------------------- local memories  ------------------------- */
-  kcg_int64 /* @1/_/v3/ */ Context_v3_times_1;
+  kcg_int32 /* @1/_/v3/ */ Context_v3_times_1;
   kcg_bool Context_init;
   /* -----------------------  no local probes  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -99,6 +99,6 @@ extern void kcg_load_SV_DataBusFactory_RBC_DataBus_Pkg(
 #endif /* _DataBusFactory_RBC_DataBus_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** DataBusFactory_RBC_DataBus_Pkg.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

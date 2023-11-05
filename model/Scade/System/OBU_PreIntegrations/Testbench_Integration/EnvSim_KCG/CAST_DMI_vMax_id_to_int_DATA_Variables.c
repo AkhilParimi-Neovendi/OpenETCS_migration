@@ -17,8 +17,8 @@ void CAST_DMI_vMax_id_to_int_DATA_Variables(
 
   kcg_copy_DMI_vMax_id_T_DMI_Types_Pkg(&outC->_L1, dmi_vmax_id_ct);
   outC->_L7 = outC->_L1.number;
-  outC->_L40 = kcg_lit_int64(3);
-  outC->_L39 = kcg_lit_int64(0);
+  outC->_L40 = kcg_lit_int32(3);
+  outC->_L39 = kcg_lit_int32(0);
   /* _L38=(Utilities::Int_Check#1)/ */
   Int_Check_Utilities(
     outC->_L7,
@@ -45,11 +45,11 @@ void CAST_DMI_vMax_id_to_int_DATA_Variables(
   outC->error = outC->_L37;
   outC->_L41 = outC->error;
   noname = outC->_L41;
-  outC->_L13 = kcg_lit_int64(1000);
+  outC->_L13 = kcg_lit_int32(1000);
   outC->_L12 = outC->_L28 * outC->_L13;
-  outC->_L11 = kcg_lit_int64(100);
+  outC->_L11 = kcg_lit_int32(100);
   outC->_L10 = outC->_L25 * outC->_L11;
-  outC->_L9 = kcg_lit_int64(10);
+  outC->_L9 = kcg_lit_int32(10);
   outC->_L8 = outC->_L23 * outC->_L9;
   outC->_L22 = outC->_L7 + outC->_L8 + outC->_L10 + outC->_L12;
   outC->dmi_vmax_id_int = outC->_L22;
@@ -60,33 +60,33 @@ void CAST_DMI_vMax_id_to_int_init_DATA_Variables(
   outC_CAST_DMI_vMax_id_to_int_DATA_Variables *outC)
 {
   outC->_L41 = kcg_true;
-  outC->_L40 = kcg_lit_int64(0);
-  outC->_L39 = kcg_lit_int64(0);
+  outC->_L40 = kcg_lit_int32(0);
+  outC->_L39 = kcg_lit_int32(0);
   outC->_L38 = kcg_true;
   outC->_L37 = kcg_true;
-  outC->_L28 = kcg_lit_int64(0);
+  outC->_L28 = kcg_lit_int32(0);
   outC->_L29 = kcg_true;
-  outC->_L25 = kcg_lit_int64(0);
+  outC->_L25 = kcg_lit_int32(0);
   outC->_L26 = kcg_true;
-  outC->_L23 = kcg_lit_int64(0);
+  outC->_L23 = kcg_lit_int32(0);
   outC->_L24 = kcg_true;
-  outC->_L22 = kcg_lit_int64(0);
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L1.number = kcg_lit_int64(0);
-  outC->_L1.dig1 = kcg_lit_int64(0);
-  outC->_L1.dig2 = kcg_lit_int64(0);
-  outC->_L1.dig3 = kcg_lit_int64(0);
+  outC->_L22 = kcg_lit_int32(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L1.number = kcg_lit_int32(0);
+  outC->_L1.dig1 = kcg_lit_int32(0);
+  outC->_L1.dig2 = kcg_lit_int32(0);
+  outC->_L1.dig3 = kcg_lit_int32(0);
   outC->error = kcg_true;
-  outC->dmi_vmax_id_int = kcg_lit_int64(0);
+  outC->dmi_vmax_id_int = kcg_lit_int32(0);
   /* _L23=(Utilities::BCD_to_Int#1)/ */
   BCD_to_Int_init_Utilities(&outC->Context_BCD_to_Int_1);
   /* _L25=(Utilities::BCD_to_Int#2)/ */

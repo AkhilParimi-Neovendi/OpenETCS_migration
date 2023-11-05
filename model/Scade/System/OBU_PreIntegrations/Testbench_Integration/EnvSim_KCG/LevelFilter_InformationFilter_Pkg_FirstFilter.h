@@ -28,8 +28,8 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* row/ */ row;
-  kcg_int64 /* column/ */ column;
+  kcg_int32 /* row/ */ row;
+  kcg_int32 /* column/ */ column;
   M_LEVEL /* _L2/ */ _L2;
   LevelDecisionTableActionKind_DataDictionary_Pkg /* _L3/ */ _L3;
   LevelDecisionTableType_DataDictionary_Pkg /* _L4/ */ _L4;
@@ -39,20 +39,20 @@ typedef struct {
   MsgSource_T_Common_Types_Pkg /* _L14/ */ _L14;
   kcg_bool /* _L11/ */ _L11;
   kcg_bool /* _L16/ */ _L16;
-  kcg_int64 /* _L17/ */ _L17;
-  kcg_int64 /* _L18/ */ _L18;
-  kcg_int64 /* _L20/ */ _L20;
-  kcg_int64 /* _L21/ */ _L21;
-  kcg_int64 /* _L22/ */ _L22;
-  kcg_int64 /* _L23/ */ _L23;
-  kcg_int64 /* _L24/ */ _L24;
+  kcg_int32 /* _L17/ */ _L17;
+  kcg_int32 /* _L18/ */ _L18;
+  kcg_int32 /* _L20/ */ _L20;
+  kcg_int32 /* _L21/ */ _L21;
+  kcg_int32 /* _L22/ */ _L22;
+  kcg_int32 /* _L23/ */ _L23;
+  kcg_int32 /* _L24/ */ _L24;
   MsgSource_T_Common_Types_Pkg /* _L25/ */ _L25;
   kcg_bool /* _L28/ */ _L28;
   kcg_bool /* _L29/ */ _L29;
   kcg_bool /* _L30/ */ _L30;
   kcg_bool /* _L31/ */ _L31;
   kcg_bool /* _L32/ */ _L32;
-  kcg_int64 /* _L33/ */ _L33;
+  kcg_int32 /* _L33/ */ _L33;
   kcg_bool /* _L34/ */ _L34;
   kcg_bool /* _L35/ */ _L35;
   kcg_bool /* _L36/ */ _L36;
@@ -70,7 +70,7 @@ extern void LevelFilter_InformationFilter_Pkg_FirstFilter(
   /* inEmergencyStopAccepted/ */
   kcg_bool inEmergencyStopAccepted,
   /* inLastAckTextMessageId/ */
-  kcg_int64 inLastAckTextMessageId,
+  kcg_int32 inLastAckTextMessageId,
   /* inPendingNTCTransition/ */
   kcg_bool inPendingNTCTransition,
   /* inSPPAndGradientOnBoard/ */
@@ -82,7 +82,7 @@ extern void LevelFilter_InformationFilter_Pkg_FirstFilter(
   /* inPacketOrigin/ */
   MsgSource_T_Common_Types_Pkg inPacketOrigin,
   /* inPacketId/ */
-  kcg_int64 inPacketId,
+  kcg_int32 inPacketId,
   outC_LevelFilter_InformationFilter_Pkg_FirstFilter *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

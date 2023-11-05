@@ -14,21 +14,21 @@ void Bool_to_Int_Utilities(
   outC_Bool_to_Int_Utilities *outC)
 {
   /* int_out/ */
-  static kcg_int64 int_out_partial;
+  static kcg_int32 int_out_partial;
   /* errorLocal/ */
   static kcg_bool errorLocal_partial;
   /* int_out/ */
-  static kcg_int64 _1_int_out_partial;
+  static kcg_int32 _1_int_out_partial;
   /* errorLocal/ */
   static kcg_bool _2_errorLocal_partial;
   /* errorLocal/ */
   static kcg_bool _3_errorLocal_partial;
   /* int_out/ */
-  static kcg_int64 _4_int_out_partial;
+  static kcg_int32 _4_int_out_partial;
   /* errorLocal/ */
   static kcg_bool _5_errorLocal_partial;
   /* int_out/ */
-  static kcg_int64 _6_int_out_partial;
+  static kcg_int32 _6_int_out_partial;
   static kcg_bool noname;
 
   outC->IfBlock1_clock = bool_in == kcg_true;
@@ -57,19 +57,19 @@ void Bool_to_Int_Utilities(
   noname = outC->_L1;
   /* IfBlock1: */
   if (outC->IfBlock1_clock) {
-    outC->_L1_then_IfBlock1 = kcg_lit_int64(1);
+    outC->_L1_then_IfBlock1 = kcg_lit_int32(1);
     int_out_partial = outC->_L1_then_IfBlock1;
     outC->int_out = int_out_partial;
   }
   else {
     /* IfBlock1:else: */
     if (outC->else_clock_IfBlock1) {
-      outC->_L1_then_else_IfBlock1 = kcg_lit_int64(0);
+      outC->_L1_then_else_IfBlock1 = kcg_lit_int32(0);
       _6_int_out_partial = outC->_L1_then_else_IfBlock1;
       _1_int_out_partial = _6_int_out_partial;
     }
     else {
-      outC->_L2_else_else_IfBlock1 = kcg_lit_int64(-1);
+      outC->_L2_else_else_IfBlock1 = kcg_lit_int32(-1);
       _4_int_out_partial = outC->_L2_else_else_IfBlock1;
       _1_int_out_partial = _4_int_out_partial;
     }
@@ -83,14 +83,14 @@ void Bool_to_Int_init_Utilities(outC_Bool_to_Int_Utilities *outC)
   outC->_L1 = kcg_true;
   outC->errorLocal = kcg_true;
   outC->IfBlock1_clock = kcg_true;
-  outC->_L1_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L2_then_else_IfBlock1 = kcg_true;
   outC->_L1_else_else_IfBlock1 = kcg_true;
-  outC->_L2_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_IfBlock1 = kcg_true;
-  outC->_L1_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L2_then_IfBlock1 = kcg_true;
-  outC->int_out = kcg_lit_int64(0);
+  outC->int_out = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

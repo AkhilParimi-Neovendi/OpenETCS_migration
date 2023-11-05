@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _Build_MA_request_TA_MA_Request_H_
 #define _Build_MA_request_TA_MA_Request_H_
@@ -34,11 +34,11 @@ typedef struct {
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* _L84/ */ _L84;
   T_TRAIN /* _L85/ */ _L85;
   NID_ENGINE /* _L102/ */ _L102;
-  kcg_int64 /* _L101/ */ _L101;
+  kcg_int32 /* _L101/ */ _L101;
   kcg_bool /* _L100/ */ _L100;
   trainProperties_T_TrainPosition_Types_Pck /* _L99/ */ _L99;
   M_132_T_TM_radio_messages /* _L98/ */ _L98;
-  kcg_int64 /* _L97/ */ _L97;
+  kcg_int32 /* _L97/ */ _L97;
   Q_MARQSTREASON /* _L103/ */ _L103;
   M_VERSION /* _L104/ */ _L104;
   P009_TM_TrainToTrack /* _L105/ */ _L105;
@@ -47,7 +47,7 @@ typedef struct {
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* _L108/ */ _L108;
   P000_TM_TrainToTrack /* _L109/ */ _L109;
   P001_TM_TrainToTrack /* _L110/ */ _L110;
-  kcg_int64 /* _L111/ */ _L111;
+  kcg_int32 /* _L111/ */ _L111;
   Q_MARQSTREASON /* _L114/ */ _L114;
 } outC_Build_MA_request_TA_MA_Request;
 
@@ -99,6 +99,6 @@ extern void kcg_load_SV_Build_MA_request_TA_MA_Request(
 #endif /* _Build_MA_request_TA_MA_Request_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Build_MA_request_TA_MA_Request.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

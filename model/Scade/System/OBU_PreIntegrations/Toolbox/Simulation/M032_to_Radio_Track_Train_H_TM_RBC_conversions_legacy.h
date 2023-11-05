@@ -38,7 +38,7 @@ typedef struct {
   Q_DIR /* _L21/ */ _L21;
   D_EMERGENCYSTOP /* _L22/ */ _L22;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L25/ */ _L25;
-  kcg_int64 /* _L24/ */ _L24;
+  kcg_int32 /* _L24/ */ _L24;
   M_VERSION /* _L26/ */ _L26;
 } outC_M032_to_Radio_Track_Train_H_TM_RBC_conversions_legacy;
 

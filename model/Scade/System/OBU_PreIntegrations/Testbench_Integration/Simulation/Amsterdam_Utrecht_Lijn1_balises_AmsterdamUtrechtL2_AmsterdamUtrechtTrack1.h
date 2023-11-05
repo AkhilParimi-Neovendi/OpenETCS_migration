@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _Amsterdam_Utrecht_Lijn1_balises_AmsterdamUtrechtL2_AmsterdamUtrechtTrack1_H_
 #define _Amsterdam_Utrecht_Lijn1_balises_AmsterdamUtrechtL2_AmsterdamUtrechtTrack1_H_
@@ -67,7 +67,7 @@ typedef struct {
   TrackSectionData_T_InfraLib /* _L13/ */ _L13;
   TrackSectionData_T_InfraLib /* _L14/ */ _L14;
   TrackSectionData_T_InfraLib /* _L15/ */ _L15;
-  kcg_float64 /* _L16/ */ _L16;
+  kcg_float32 /* _L16/ */ _L16;
   CompressedBaliseMessage_TM /* _L17/ */ _L17;
 } outC_Amsterdam_Utrecht_Lijn1_balises_AmsterdamUtrechtL2_AmsterdamUtrechtTrack1;
 
@@ -75,7 +75,7 @@ typedef struct {
 /* AmsterdamUtrechtL2::AmsterdamUtrechtTrack1::Amsterdam_Utrecht_Lijn1_balises/ */
 extern void Amsterdam_Utrecht_Lijn1_balises_AmsterdamUtrechtL2_AmsterdamUtrechtTrack1(
   /* TrainPosSim_in/ */
-  kcg_float64 TrainPosSim_in,
+  kcg_float32 TrainPosSim_in,
   outC_Amsterdam_Utrecht_Lijn1_balises_AmsterdamUtrechtL2_AmsterdamUtrechtTrack1 *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET
@@ -93,6 +93,6 @@ extern void Amsterdam_Utrecht_Lijn1_balises_init_AmsterdamUtrechtL2_AmsterdamUtr
 #endif /* _Amsterdam_Utrecht_Lijn1_balises_AmsterdamUtrechtL2_AmsterdamUtrechtTrack1_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Amsterdam_Utrecht_Lijn1_balises_AmsterdamUtrechtL2_AmsterdamUtrechtTrack1.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

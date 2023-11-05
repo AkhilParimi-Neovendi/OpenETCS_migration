@@ -44,16 +44,16 @@ void C_int_to_DMI_Driver_Reqest_init_DATA_Packets_DMI_to_EVC(
   outC->_L9 = kcg_true;
   outC->_L8 = Start_of_mission_DMI_Types_Pkg;
   outC->_L5.valid = kcg_true;
-  outC->_L5.systemTime = kcg_lit_int64(0);
+  outC->_L5.systemTime = kcg_lit_int32(0);
   outC->_L5.m_request = Start_of_mission_DMI_Types_Pkg;
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
   for (idx = 0; idx < 3; idx++) {
-    outC->_L1[idx] = kcg_lit_int64(0);
+    outC->_L1[idx] = kcg_lit_int32(0);
   }
   outC->dmi_driver_request_ct.valid = kcg_true;
-  outC->dmi_driver_request_ct.systemTime = kcg_lit_int64(0);
+  outC->dmi_driver_request_ct.systemTime = kcg_lit_int32(0);
   outC->dmi_driver_request_ct.m_request = Start_of_mission_DMI_Types_Pkg;
   /* _L8=(DATA::Variables::CAST_int_to_DMI_Request#1)/ */
   CAST_int_to_DMI_Request_init_DATA_Variables(

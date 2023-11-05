@@ -23,7 +23,7 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   P015_OBU_sectionlist_enum_T_TM /* _L1/ */ _L1;
   P15_Level23MovementAuthority_T_Packet_Types_Pkg /* _L2/ */ _L2;
-  kcg_int64 /* _L20/ */ _L20;
+  kcg_int32 /* _L20/ */ _L20;
   P015_section_enum_T_TM /* _L21/ */ _L21;
   kcg_bool /* _L85/ */ _L85;
   L_SECTION /* _L86/ */ _L86;
@@ -53,16 +53,16 @@ typedef struct {
   V_RELEASEOL /* _L154/ */ _L154;
   kcg_bool /* _L155/ */ _L155;
   kcg_bool /* _L156/ */ _L156;
-  kcg_int64 /* _L157/ */ _L157;
+  kcg_int32 /* _L157/ */ _L157;
   kcg_bool /* _L158/ */ _L158;
-  kcg_int64 /* _L159/ */ _L159;
+  kcg_int32 /* _L159/ */ _L159;
 } outC_C_P015_to_legacy_loop_TM_conversions;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* TM_conversions::C_P015_to_legacy_loop/ */
 extern void C_P015_to_legacy_loop_TM_conversions(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* P015_in/ */
   P015_OBU_T_TM *P015_in,
   /* P015_section_in/ */

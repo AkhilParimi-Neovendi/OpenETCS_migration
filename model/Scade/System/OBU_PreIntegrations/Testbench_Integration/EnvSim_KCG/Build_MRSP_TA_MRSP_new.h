@@ -75,7 +75,7 @@ typedef struct {
   StaticSpeedProfile_t_TrackAtlasTypes /* _L26/ */ _L26;
   kcg_bool /* _L27/ */ _L27;
   SSP_cat_t_TA_MRSP_new /* _L29/ */ _L29;
-  kcg_int64 /* _L34/ */ _L34;
+  kcg_int32 /* _L34/ */ _L34;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L22/ */ _L22;
   positionedBGs_T_TrainPosition_Types_Pck /* _L35/ */ _L35;
 } outC_Build_MRSP_TA_MRSP_new;

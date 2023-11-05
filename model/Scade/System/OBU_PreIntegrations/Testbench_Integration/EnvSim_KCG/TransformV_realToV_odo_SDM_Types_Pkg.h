@@ -21,9 +21,9 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_float64 /* _L3/ */ _L3;
-  kcg_int64 /* _L2/ */ _L2;
-  kcg_float64 /* _L1/ */ _L1;
+  kcg_float32 /* _L3/ */ _L3;
+  kcg_int32 /* _L2/ */ _L2;
+  kcg_float32 /* _L1/ */ _L1;
   V_internal_real_Type_SDM_Types_Pkg /* _L4/ */ _L4;
 } outC_TransformV_realToV_odo_SDM_Types_Pkg;
 

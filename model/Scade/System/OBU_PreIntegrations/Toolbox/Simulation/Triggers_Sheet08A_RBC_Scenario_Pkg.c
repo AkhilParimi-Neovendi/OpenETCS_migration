@@ -12,9 +12,9 @@ void Triggers_Sheet08A_RBC_Scenario_Pkg(
   /* inLRBG/ */
   NID_LRBG inLRBG,
   /* inDistanceToLRBG/ */
-  kcg_float64 inDistanceToLRBG,
+  kcg_float32 inDistanceToLRBG,
   /* inTriggerId/ */
-  kcg_int64 inTriggerId,
+  kcg_int32 inTriggerId,
   /* inRBCTime/ */
   T_TRAIN inRBCTime,
   outC_Triggers_Sheet08A_RBC_Scenario_Pkg *outC)
@@ -29,11 +29,11 @@ void Triggers_Sheet08A_RBC_Scenario_Pkg(
     outC->_L2,
     outC->_L3,
     outC->_L4,
-    kcg_lit_int64(374),
-    kcg_lit_float64(173.9),
-    kcg_lit_float64(183.9),
-    kcg_lit_int64(374001789),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(374),
+    kcg_lit_float32(173.9),
+    kcg_lit_float32(183.9),
+    kcg_lit_int32(374001789),
+    kcg_lit_float32(0.0),
     &outC->_2_Context_RadioTrackTrainMessageTrigger__Trigger_1);
   outC->_L5 =
     outC->_2_Context_RadioTrackTrainMessageTrigger__Trigger_1.outTriggerId;
@@ -43,11 +43,11 @@ void Triggers_Sheet08A_RBC_Scenario_Pkg(
     outC->_L2,
     outC->_L5,
     outC->_L4,
-    kcg_lit_int64(375),
-    kcg_lit_float64(49.4),
-    kcg_lit_float64(59.4),
-    kcg_lit_int64(375000544),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(375),
+    kcg_lit_float32(49.4),
+    kcg_lit_float32(59.4),
+    kcg_lit_int32(375000544),
+    kcg_lit_float32(0.0),
     &outC->_1_Context_RadioTrackTrainMessageTrigger__Trigger_2);
   outC->_L6 =
     outC->_1_Context_RadioTrackTrainMessageTrigger__Trigger_2.outTriggerId;
@@ -57,11 +57,11 @@ void Triggers_Sheet08A_RBC_Scenario_Pkg(
     outC->_L2,
     outC->_L6,
     outC->_L4,
-    kcg_lit_int64(376),
-    kcg_lit_float64(286.3),
-    kcg_lit_float64(296.3),
-    kcg_lit_int64(376002913),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(376),
+    kcg_lit_float32(286.3),
+    kcg_lit_float32(296.3),
+    kcg_lit_int32(376002913),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_3);
   outC->_L7 = outC->Context_RadioTrackTrainMessageTrigger__Trigger_3.outTriggerId;
   outC->outTriggerId = outC->_L7;
@@ -71,14 +71,14 @@ void Triggers_Sheet08A_RBC_Scenario_Pkg(
 void Triggers_Sheet08A_init_RBC_Scenario_Pkg(
   outC_Triggers_Sheet08A_RBC_Scenario_Pkg *outC)
 {
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_float64(0.0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->outTriggerId = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_float32(0.0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->outTriggerId = kcg_lit_int32(0);
   /* _L7=(RBC_Scenario_Pkg::RadioTrackTrainMessageTrigger__Trigger#3)/ */
   RadioTrackTrainMessageTri_init_RBC_Scenario_Pkg(
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_3);

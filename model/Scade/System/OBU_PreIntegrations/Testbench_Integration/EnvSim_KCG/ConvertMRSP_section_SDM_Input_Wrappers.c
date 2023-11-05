@@ -44,20 +44,20 @@ void ConvertMRSP_section_init_SDM_Input_Wrappers(
   outC_ConvertMRSP_section_SDM_Input_Wrappers *outC)
 {
   outC->_L9.valid = kcg_true;
-  outC->_L9.Loc_Abs = kcg_lit_int64(0);
-  outC->_L9.Loc_LRBG = kcg_lit_int64(0);
-  outC->_L9.MRS = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_float64(0.0);
-  outC->_L7 = kcg_lit_float64(0.0);
-  outC->_L6.Loc_Abs = kcg_lit_float64(0.0);
-  outC->_L6.MRS = kcg_lit_float64(0.0);
+  outC->_L9.Loc_Abs = kcg_lit_int32(0);
+  outC->_L9.Loc_LRBG = kcg_lit_int32(0);
+  outC->_L9.MRS = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_float32(0.0);
+  outC->_L7 = kcg_lit_float32(0.0);
+  outC->_L6.Loc_Abs = kcg_lit_float32(0.0);
+  outC->_L6.MRS = kcg_lit_float32(0.0);
   outC->_L6.valid = kcg_true;
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L2 = kcg_true;
-  outC->MRSP_section_int.Loc_Abs = kcg_lit_float64(0.0);
-  outC->MRSP_section_int.MRS = kcg_lit_float64(0.0);
+  outC->MRSP_section_int.Loc_Abs = kcg_lit_float32(0.0);
+  outC->MRSP_section_int.MRS = kcg_lit_float32(0.0);
   outC->MRSP_section_int.valid = kcg_true;
   /* _L8=(SDM_Types_Pkg::TransformV_intToV_real#6)/ */
   TransformV_intToV_real_init_SDM_Types_Pkg(

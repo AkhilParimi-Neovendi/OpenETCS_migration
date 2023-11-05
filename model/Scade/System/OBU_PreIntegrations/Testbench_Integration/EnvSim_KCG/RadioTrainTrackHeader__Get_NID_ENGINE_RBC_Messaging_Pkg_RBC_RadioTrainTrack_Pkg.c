@@ -24,18 +24,18 @@ void RadioTrainTrackHeader__Get_NID_ENGINE_RBC_Messaging_Pkg_RBC_RadioTrainTrack
 void RadioTrainTrackHeader__Get_NID_ENGINE_init_RBC_Messaging_Pkg_RBC_RadioTrainTrack_Pkg(
   outC_RadioTrainTrackHeader__Get_NID_ENGINE_RBC_Messaging_Pkg_RBC_RadioTrainTrack_Pkg *outC)
 {
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
   outC->_L1.present = kcg_true;
-  outC->_L1.nid_message = kcg_lit_int64(0);
-  outC->_L1.t_train = kcg_lit_int64(0);
-  outC->_L1.nid_engine = kcg_lit_int64(0);
+  outC->_L1.nid_message = kcg_lit_int32(0);
+  outC->_L1.t_train = kcg_lit_int32(0);
+  outC->_L1.nid_engine = kcg_lit_int32(0);
   outC->_L1.xQ_MARQSTREASON = Q_MARQSTREASON_Start_selected_by_driver;
-  outC->_L1.xT_TRAIN = kcg_lit_int64(0);
-  outC->_L1.xNID_EM = kcg_lit_int64(0);
+  outC->_L1.xT_TRAIN = kcg_lit_int32(0);
+  outC->_L1.xNID_EM = kcg_lit_int32(0);
   outC->_L1.xQ_EMERGENCYSTOP =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
-  outC->_L1.xNID_TEXTMESSAGE = kcg_lit_int64(0);
-  outC->out_NID_ENGINE = kcg_lit_int64(0);
+  outC->_L1.xNID_TEXTMESSAGE = kcg_lit_int32(0);
+  outC->out_NID_ENGINE = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

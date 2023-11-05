@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _CaseLinkingInUse_CheckBGConsistency_Pkg_H_
 #define _CaseLinkingInUse_CheckBGConsistency_Pkg_H_
@@ -45,8 +45,8 @@ typedef struct {
   kcg_bool /* IfBlock1:then:_L13/ */ _L13_then_IfBlock1;
   Q_LINKORIENTATION /* IfBlock1:then:_L12/ */ _L12_then_IfBlock1;
   kcg_bool /* IfBlock1:else:else:_L1/ */ _L1_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L2/ */ _L2_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L3/ */ _L3_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L2/ */ _L2_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L3/ */ _L3_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L49/ */ _L49_then_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L47/ */ _L47_then_else_IfBlock1;
   Q_LINKORIENTATION /* IfBlock1:else:then:_L45/ */ _L45_then_else_IfBlock1;
@@ -55,8 +55,8 @@ typedef struct {
   Telegram_T_BG_Types_Pkg /* IfBlock1:else:then:_L19/ */ _L19_then_else_IfBlock1;
   N_PIG /* IfBlock1:else:then:_L18/ */ _L18_then_else_IfBlock1;
   N_PIG /* IfBlock1:else:then:_L16/ */ _L16_then_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L15/ */ _L15_then_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L14/ */ _L14_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L15/ */ _L15_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L14/ */ _L14_then_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L13/ */ _L13_then_else_IfBlock1;
   Q_LINKORIENTATION /* IfBlock1:else:then:_L52/ */ _L52_then_else_IfBlock1;
   BG_Message_T_BG_Types_Pkg /* IfBlock1:else:then:_L58/ */ _L58_then_else_IfBlock1;
@@ -66,8 +66,8 @@ typedef struct {
   kcg_bool /* isSingle/ */ isSingle;
   kcg_bool /* isAnnounced/ */ isAnnounced;
   Q_LINKORIENTATION /* q_linkorientation_local/ */ q_linkorientation_local;
-  kcg_int64 /* nid_errorBG_local/ */ nid_errorBG_local;
-  kcg_int64 /* nid_c_local/ */ nid_c_local;
+  kcg_int32 /* nid_errorBG_local/ */ nid_errorBG_local;
+  kcg_int32 /* nid_c_local/ */ nid_c_local;
   Telegram_T_BG_Types_Pkg /* _L13/ */ _L13;
   kcg_bool /* _L12/ */ _L12;
   kcg_bool /* _L11/ */ _L11;
@@ -127,6 +127,6 @@ extern void kcg_load_SV_CaseLinkingInUse_CheckBGConsistency_Pkg(
 #endif /* _CaseLinkingInUse_CheckBGConsistency_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CaseLinkingInUse_CheckBGConsistency_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

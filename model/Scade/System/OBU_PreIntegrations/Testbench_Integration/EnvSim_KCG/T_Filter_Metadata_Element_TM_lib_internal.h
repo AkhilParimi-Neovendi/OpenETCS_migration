@@ -22,20 +22,20 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   kcg_bool /* _L6/ */ _L6;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   kcg_bool /* _L4/ */ _L4;
   kcg_bool /* _L3/ */ _L3;
   kcg_bool /* _L2/ */ _L2;
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
 } outC_T_Filter_Metadata_Element_TM_lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* TM_lib_internal::T_Filter_Metadata_Element/ */
 extern void T_Filter_Metadata_Element_TM_lib_internal(
   /* value2/ */
-  kcg_int64 value2,
+  kcg_int32 value2,
   /* value1/ */
-  kcg_int64 value1,
+  kcg_int32 value1,
   /* do_filter/ */
   kcg_bool do_filter,
   outC_T_Filter_Metadata_Element_TM_lib_internal *outC);

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _storeDriverInput_trainData_pkg_H_
 #define _storeDriverInput_trainData_pkg_H_
@@ -25,14 +25,14 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   kcg_bool /* IfBlock1:then:_L34/ */ _L34_then_IfBlock1;
   M_LOADINGGAUGE /* IfBlock1:then:_L16/ */ _L16_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L17/ */ _L17_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L17/ */ _L17_then_IfBlock1;
   M_AIRTIGHT /* IfBlock1:then:_L18/ */ _L18_then_IfBlock1;
   M_AXLELOADCAT /* IfBlock1:then:_L19/ */ _L19_then_IfBlock1;
   NC_CDTRAIN /* IfBlock1:then:_L20/ */ _L20_then_IfBlock1;
   NC_TRAIN /* IfBlock1:then:_L22/ */ _L22_then_IfBlock1;
   aTractionIdentity_T_Packet_TrainTypes_Pkg /* IfBlock1:then:_L23/ */ _L23_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L24/ */ _L24_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L25/ */ _L25_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L24/ */ _L24_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L25/ */ _L25_then_IfBlock1;
   V_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:then:_L26/ */ _L26_then_IfBlock1;
   DMI_Train_Data_T_DMI_Messages_Bothways_Pkg /* IfBlock1:then:_L27/ */ _L27_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L28/ */ _L28_then_IfBlock1;
@@ -87,6 +87,6 @@ extern void storeDriverInput_init_trainData_pkg(
 #endif /* _storeDriverInput_trainData_pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** storeDriverInput_trainData_pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

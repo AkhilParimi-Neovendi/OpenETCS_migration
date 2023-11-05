@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _CheckTelegramHeader_CheckBGConsistency_Pkg_SubFunction_H_
 #define _CheckTelegramHeader_CheckBGConsistency_Pkg_SubFunction_H_
@@ -39,13 +39,13 @@ typedef struct {
   NID_C /* _L36/ */ _L36;
   NID_BG /* _L35/ */ _L35;
   Q_LINK /* _L34/ */ _L34;
-  kcg_int64 /* _L44/ */ _L44;
+  kcg_int32 /* _L44/ */ _L44;
   kcg_bool /* _L45/ */ _L45;
   kcg_bool /* _L46/ */ _L46;
-  kcg_int64 /* _L47/ */ _L47;
-  kcg_int64 /* _L48/ */ _L48;
-  kcg_int64 /* _L49/ */ _L49;
-  kcg_int64 /* _L50/ */ _L50;
+  kcg_int32 /* _L47/ */ _L47;
+  kcg_int32 /* _L48/ */ _L48;
+  kcg_int32 /* _L49/ */ _L49;
+  kcg_int32 /* _L50/ */ _L50;
 } outC_CheckTelegramHeader_CheckBGConsistency_Pkg_SubFunction;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -70,6 +70,6 @@ extern void CheckTelegramHeader_init_CheckBGConsistency_Pkg_SubFunction(
 #endif /* _CheckTelegramHeader_CheckBGConsistency_Pkg_SubFunction_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CheckTelegramHeader_CheckBGConsistency_Pkg_SubFunction.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

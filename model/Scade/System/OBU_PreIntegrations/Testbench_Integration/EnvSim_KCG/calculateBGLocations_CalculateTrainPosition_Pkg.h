@@ -48,7 +48,7 @@ typedef struct {
   kcg_bool /* _L157/ */ _L157;
   positionErrors_T_TrainPosition_Types_Pck /* _L225/ */ _L225;
   passedBG_T_BG_Types_Pkg /* _L301/ */ _L301;
-  kcg_int64 /* _L298/ */ _L298;
+  kcg_int32 /* _L298/ */ _L298;
   positionedBGs_T_TrainPosition_Types_Pck /* _L324/ */ _L324;
   kcg_bool /* _L346/ */ _L346;
   positionedBGs_T_TrainPosition_Types_Pck /* _L347/ */ _L347;
@@ -68,7 +68,7 @@ typedef struct {
   kcg_bool /* _L362/ */ _L362;
   kcg_bool /* _L366/ */ _L366;
   kcg_bool /* _L365/ */ _L365;
-  kcg_int64 /* _L364/ */ _L364;
+  kcg_int32 /* _L364/ */ _L364;
   positionedBG_T_TrainPosition_Types_Pck /* _L367/ */ _L367;
   positionedBG_T_TrainPosition_Types_Pck /* _L369/ */ _L369;
   positionedBG_T_TrainPosition_Types_Pck /* _L372/ */ _L372;

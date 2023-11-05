@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -74,10 +74,10 @@ void CAST_DMI_Available_Menu_to_int_DATA_Variables(
   outC->_L33[27] = outC->_L4;
   outC->_L33[28] = outC->_L3;
   outC->_L33[29] = outC->_L2;
-  /* _L37=(digital::BoolVect2Int64#1)/ */
-  BoolVect2Int64_digital_30(&outC->_L33, &outC->Context_BoolVect2Int64_1);
-  outC->_L37 = outC->Context_BoolVect2Int64_1.Out_30;
-  outC->dmi_available_menu_int = outC->_L37;
+  /* _L39=(digital::BoolVect2Int32#31)/ */
+  BoolVect2Int32_digital_30(&outC->_L33, &outC->Context_BoolVect2Int32_31);
+  outC->_L39 = outC->Context_BoolVect2Int32_31.Out_30;
+  outC->dmi_available_menu_int = outC->_L39;
 }
 
 #ifndef KCG_USER_DEFINED_INIT
@@ -86,7 +86,7 @@ void CAST_DMI_Available_Menu_to_int_init_DATA_Variables(
 {
   static kcg_size idx;
 
-  outC->_L37 = kcg_lit_int64(0);
+  outC->_L39 = kcg_lit_int32(0);
   for (idx = 0; idx < 30; idx++) {
     outC->_L33[idx] = kcg_true;
   }
@@ -150,9 +150,9 @@ void CAST_DMI_Available_Menu_to_int_init_DATA_Variables(
   outC->_L1.Fix_train_data_entry = kcg_true;
   outC->_L1.Menu_button_Set_VBC = kcg_true;
   outC->_L1.Menu_button_Remove_VBC = kcg_true;
-  outC->dmi_available_menu_int = kcg_lit_int64(0);
-  /* _L37=(digital::BoolVect2Int64#1)/ */
-  BoolVect2Int64_init_digital_30(&outC->Context_BoolVect2Int64_1);
+  outC->dmi_available_menu_int = kcg_lit_int32(0);
+  /* _L39=(digital::BoolVect2Int32#31)/ */
+  BoolVect2Int32_init_digital_30(&outC->Context_BoolVect2Int32_31);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -161,8 +161,8 @@ void CAST_DMI_Available_Menu_to_int_init_DATA_Variables(
 void CAST_DMI_Available_Menu_to_int_reset_DATA_Variables(
   outC_CAST_DMI_Available_Menu_to_int_DATA_Variables *outC)
 {
-  /* _L37=(digital::BoolVect2Int64#1)/ */
-  BoolVect2Int64_reset_digital_30(&outC->Context_BoolVect2Int64_1);
+  /* _L39=(digital::BoolVect2Int32#31)/ */
+  BoolVect2Int32_reset_digital_30(&outC->Context_BoolVect2Int32_31);
 }
 #endif /* KCG_NO_EXTERN_CALL_TO_RESET */
 
@@ -170,6 +170,6 @@ void CAST_DMI_Available_Menu_to_int_reset_DATA_Variables(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_DMI_Available_Menu_to_int_DATA_Variables.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

@@ -14,17 +14,17 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* outTriggerId/ */ outTriggerId;
+  kcg_int32 /* outTriggerId/ */ outTriggerId;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L9/ */ _L9;
+  kcg_int32 /* _L9/ */ _L9;
   NID_LRBG /* _L8/ */ _L8;
   T_TRAIN /* _L7/ */ _L7;
-  kcg_float64 /* _L6/ */ _L6;
+  kcg_float32 /* _L6/ */ _L6;
 } outC_Triggers_UserStory16_RBC_Scenario_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -33,9 +33,9 @@ extern void Triggers_UserStory16_RBC_Scenario_Pkg(
   /* inLRBG/ */
   NID_LRBG inLRBG,
   /* inDistanceToLRBG/ */
-  kcg_float64 inDistanceToLRBG,
+  kcg_float32 inDistanceToLRBG,
   /* inTriggerId/ */
-  kcg_int64 inTriggerId,
+  kcg_int32 inTriggerId,
   /* inRBCTime/ */
   T_TRAIN inRBCTime,
   outC_Triggers_UserStory16_RBC_Scenario_Pkg *outC);

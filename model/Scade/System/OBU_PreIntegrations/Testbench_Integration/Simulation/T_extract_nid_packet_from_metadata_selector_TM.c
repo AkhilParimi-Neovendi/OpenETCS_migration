@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,7 +10,7 @@
 /* TM::T_extract_nid_packet_from_metadata_selector/ */
 void T_extract_nid_packet_from_metadata_selector_TM(
   /* Metadata_in/ */
-  kcg_int64 Metadata_in,
+  kcg_int32 Metadata_in,
   outC_T_extract_nid_packet_from_metadata_selector_TM *outC)
 {
   outC->_L3 = DIM_offset_metadata_nid_packet_TM_lib_internal;
@@ -23,10 +23,10 @@ void T_extract_nid_packet_from_metadata_selector_TM(
 void T_extract_nid_packet_from_metadata_selector_init_TM(
   outC_T_extract_nid_packet_from_metadata_selector_TM *outC)
 {
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->nid_packet = kcg_lit_int64(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->nid_packet = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -42,6 +42,6 @@ void T_extract_nid_packet_from_metadata_selector_reset_TM(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** T_extract_nid_packet_from_metadata_selector_TM.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

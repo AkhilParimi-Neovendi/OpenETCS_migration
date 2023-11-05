@@ -69,8 +69,8 @@ void Input_Staff_Responsible_init_InputManagement(
   outC->_L2 = Q_DIR_Reverse;
   outC->_L1 = kcg_true;
   outC->_L4 = kcg_true;
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
   outC->_L7 =
     Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
   outC->_L6 = Q_DIR_Reverse;
@@ -84,8 +84,8 @@ void Input_Staff_Responsible_init_InputManagement(
     outC->_L12[idx].q_dir = Q_DIR_Reverse;
     outC->_L12[idx].q_newcountry =
       Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-    outC->_L12[idx].nid_c = kcg_lit_int64(0);
-    outC->_L12[idx].nid_bg = kcg_lit_int64(0);
+    outC->_L12[idx].nid_c = kcg_lit_int32(0);
+    outC->_L12[idx].nid_bg = kcg_lit_int32(0);
   }
   outC->_L13 = kcg_true;
   outC->_L14 = kcg_true;
@@ -94,8 +94,8 @@ void Input_Staff_Responsible_init_InputManagement(
   outC->_L16.q_dir = Q_DIR_Reverse;
   outC->_L16.q_newcountry =
     Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-  outC->_L16.nid_c = kcg_lit_int64(0);
-  outC->_L16.nid_bg = kcg_lit_int64(0);
+  outC->_L16.nid_c = kcg_lit_int32(0);
+  outC->_L16.nid_bg = kcg_lit_int32(0);
   outC->Stop_if_In_SR = kcg_true;
   outC->List_BG_Related_SR_Empty = kcg_true;
 }

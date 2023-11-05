@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _SSP_Correct_StartSection_TA_SSP_new_H_
 #define _SSP_Correct_StartSection_TA_SSP_new_H_
@@ -25,7 +25,7 @@ typedef struct {
   StaticSpeedSection_t_TrackAtlasTypes /* _L3/ */ _L3;
   StaticSpeedProfile_t_TrackAtlasTypes /* _L5/ */ _L5;
   StaticSpeedSection_t_TrackAtlasTypes /* _L7/ */ _L7;
-  kcg_int64 /* _L8/ */ _L8;
+  kcg_int32 /* _L8/ */ _L8;
 } outC_SSP_Correct_StartSection_TA_SSP_new;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -50,6 +50,6 @@ extern void SSP_Correct_StartSection_init_TA_SSP_new(
 #endif /* _SSP_Correct_StartSection_TA_SSP_new_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** SSP_Correct_StartSection_TA_SSP_new.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

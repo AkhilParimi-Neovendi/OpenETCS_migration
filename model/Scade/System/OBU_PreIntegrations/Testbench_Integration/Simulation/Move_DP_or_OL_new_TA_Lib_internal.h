@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _Move_DP_or_OL_new_TA_Lib_internal_H_
 #define _Move_DP_or_OL_new_TA_Lib_internal_H_
@@ -23,7 +23,7 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   DP_or_OL_t_TrackAtlasTypes /* _L2/ */ _L2;
   DP_or_OL_t_TrackAtlasTypes /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L130/ */ _L130;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L142/ */ _L142;
 } outC_Move_DP_or_OL_new_TA_Lib_internal;
@@ -52,6 +52,6 @@ extern void Move_DP_or_OL_new_init_TA_Lib_internal(
 #endif /* _Move_DP_or_OL_new_TA_Lib_internal_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Move_DP_or_OL_new_TA_Lib_internal.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

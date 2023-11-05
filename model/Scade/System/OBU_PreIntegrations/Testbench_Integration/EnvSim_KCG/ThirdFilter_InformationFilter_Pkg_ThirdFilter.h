@@ -36,7 +36,7 @@ typedef struct {
   RBC_Id_T_Common_Types_Pkg /* sendingRBC/ */ sendingRBC;
   array_bool_30 /* _L10/ */ _L10;
   ReceivedMessage_T_Common_Types_Pkg /* _L11/ */ _L11;
-  array_int64_30 /* _L12/ */ _L12;
+  array_int32_30 /* _L12/ */ _L12;
   Metadata_T_Common_Types_Pkg /* _L13/ */ _L13;
   kcg_bool /* _L18/ */ _L18;
   ReceivedMessage_T_Common_Types_Pkg /* _L22/ */ _L22;

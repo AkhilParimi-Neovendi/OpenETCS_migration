@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _C_P003V1_OBU_P003_OBU_TM_conversions_baseline2_H_
 #define _C_P003V1_OBU_P003_OBU_TM_conversions_baseline2_H_
@@ -24,7 +24,7 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   P003_OBU_T_TM /* _L50/ */ _L50;
-  kcg_int64 /* _L52/ */ _L52;
+  kcg_int32 /* _L52/ */ _L52;
   kcg_bool /* _L53/ */ _L53;
   P003V1_OBU_T_TM_baseline2 /* _L54/ */ _L54;
   Q_DIR /* _L55/ */ _L55;
@@ -107,6 +107,6 @@ extern void C_P003V1_OBU_P003_OBU_init_TM_conversions_baseline2(
 #endif /* _C_P003V1_OBU_P003_OBU_TM_conversions_baseline2_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P003V1_OBU_P003_OBU_TM_conversions_baseline2.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

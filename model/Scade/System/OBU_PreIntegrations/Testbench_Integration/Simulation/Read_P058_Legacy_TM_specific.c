@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -52,53 +52,53 @@ void Read_P058_Legacy_init_TM_specific(outC_Read_P058_Legacy_TM_specific *outC)
   static kcg_size idx4;
 
   outC->_L4.valid = kcg_true;
-  outC->_L4.nid_packet = kcg_lit_int64(0);
+  outC->_L4.nid_packet = kcg_lit_int32(0);
   outC->_L4.q_dir = Q_DIR_Reverse;
-  outC->_L4.l_packet = kcg_lit_int64(0);
+  outC->_L4.l_packet = kcg_lit_int32(0);
   outC->_L4.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L4.t_cycloc = kcg_lit_int64(0);
-  outC->_L4.d_cycloc = kcg_lit_int64(0);
+  outC->_L4.t_cycloc = kcg_lit_int32(0);
+  outC->_L4.d_cycloc = kcg_lit_int32(0);
   outC->_L4.m_loc = M_LOC_Now;
-  outC->_L4.n_iter = kcg_lit_int64(0);
+  outC->_L4.n_iter = kcg_lit_int32(0);
   for (idx = 0; idx < 2; idx++) {
-    outC->_L4.iterPacket58List[idx].d_loc = kcg_lit_int64(0);
+    outC->_L4.iterPacket58List[idx].d_loc = kcg_lit_int32(0);
     outC->_L4.iterPacket58List[idx].q_lgtloc = Q_LGTLOC_Min_safe_rear_end;
   }
   for (idx1 = 0; idx1 < 30; idx1++) {
-    outC->_L3.PacketHeaders[idx1].nid_packet = kcg_lit_int64(0);
+    outC->_L3.PacketHeaders[idx1].nid_packet = kcg_lit_int32(0);
     outC->_L3.PacketHeaders[idx1].q_dir = Q_DIR_Reverse;
     outC->_L3.PacketHeaders[idx1].valid = kcg_true;
-    outC->_L3.PacketHeaders[idx1].startAddress = kcg_lit_int64(0);
-    outC->_L3.PacketHeaders[idx1].endAddress = kcg_lit_int64(0);
+    outC->_L3.PacketHeaders[idx1].startAddress = kcg_lit_int32(0);
+    outC->_L3.PacketHeaders[idx1].endAddress = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 500; idx2++) {
-    outC->_L3.PacketData[idx2] = kcg_lit_int64(0);
+    outC->_L3.PacketData[idx2] = kcg_lit_int32(0);
   }
   outC->_L1 = kcg_true;
   outC->_L2.valid = kcg_true;
   outC->_L2.q_dir = Q_DIR_Reverse;
   outC->_L2.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L2.t_cycloc = kcg_lit_int64(0);
-  outC->_L2.d_cycloc = kcg_lit_int64(0);
+  outC->_L2.t_cycloc = kcg_lit_int32(0);
+  outC->_L2.d_cycloc = kcg_lit_int32(0);
   outC->_L2.m_loc = M_LOC_Now;
-  outC->_L2.n_iter = kcg_lit_int64(0);
+  outC->_L2.n_iter = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 32; idx3++) {
     outC->_L2.sections[idx3].valid = kcg_true;
-    outC->_L2.sections[idx3].d_loc = kcg_lit_int64(0);
+    outC->_L2.sections[idx3].d_loc = kcg_lit_int32(0);
     outC->_L2.sections[idx3].q_lgtloc = Q_LGTLOC_Min_safe_rear_end;
   }
   outC->every = kcg_true;
   outC->P058_legacy_out.valid = kcg_true;
-  outC->P058_legacy_out.nid_packet = kcg_lit_int64(0);
+  outC->P058_legacy_out.nid_packet = kcg_lit_int32(0);
   outC->P058_legacy_out.q_dir = Q_DIR_Reverse;
-  outC->P058_legacy_out.l_packet = kcg_lit_int64(0);
+  outC->P058_legacy_out.l_packet = kcg_lit_int32(0);
   outC->P058_legacy_out.q_scale = Q_SCALE_10_cm_scale;
-  outC->P058_legacy_out.t_cycloc = kcg_lit_int64(0);
-  outC->P058_legacy_out.d_cycloc = kcg_lit_int64(0);
+  outC->P058_legacy_out.t_cycloc = kcg_lit_int32(0);
+  outC->P058_legacy_out.d_cycloc = kcg_lit_int32(0);
   outC->P058_legacy_out.m_loc = M_LOC_Now;
-  outC->P058_legacy_out.n_iter = kcg_lit_int64(0);
+  outC->P058_legacy_out.n_iter = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 2; idx4++) {
-    outC->P058_legacy_out.iterPacket58List[idx4].d_loc = kcg_lit_int64(0);
+    outC->P058_legacy_out.iterPacket58List[idx4].d_loc = kcg_lit_int32(0);
     outC->P058_legacy_out.iterPacket58List[idx4].q_lgtloc =
       Q_LGTLOC_Min_safe_rear_end;
   }
@@ -122,6 +122,6 @@ void Read_P058_Legacy_reset_TM_specific(outC_Read_P058_Legacy_TM_specific *outC)
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Read_P058_Legacy_TM_specific.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

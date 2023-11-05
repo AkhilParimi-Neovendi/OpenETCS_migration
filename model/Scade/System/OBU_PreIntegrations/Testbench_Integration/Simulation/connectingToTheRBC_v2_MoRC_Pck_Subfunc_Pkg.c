@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -153,7 +153,7 @@ void connectingToTheRBC_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC_connectingToTheRBC_v2_MoRC_Pck_Subfunc_Pkg *outC)
 {
   outC->_L394.valid = kcg_true;
-  outC->_L394.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L394.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L394.status = mcs_disconnected_RCM_Types_Pkg;
   outC->_L394.nid_radio = kcg_lit_int64(0);
   outC->_L394.settingUpConnectionHasFailed = kcg_true;
@@ -161,13 +161,13 @@ void connectingToTheRBC_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L394.isInRadioHole = kcg_true;
   outC->_L393 = mca_nop_RCM_Types_Pkg;
   outC->_L392.valid = kcg_true;
-  outC->_L392.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L392.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L392.action = mca_nop_RCM_Types_Pkg;
   outC->_L392.nid_radio = kcg_lit_int64(0);
   outC->_L391 = kcg_lit_int64(0);
-  outC->_L390 = kcg_lit_int64(0);
+  outC->_L390 = kcg_lit_int32(0);
   outC->_L389.valid = kcg_true;
-  outC->_L389.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L389.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L389.status = mcs_disconnected_RCM_Types_Pkg;
   outC->_L389.nid_radio = kcg_lit_int64(0);
   outC->_L389.settingUpConnectionHasFailed = kcg_true;
@@ -179,14 +179,14 @@ void connectingToTheRBC_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L385 = kcg_true;
   outC->_L384 = kcg_true;
   outC->_L383.valid = kcg_true;
-  outC->_L383.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L383.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L383.action = mca_nop_RCM_Types_Pkg;
   outC->_L383.nid_radio = kcg_lit_int64(0);
   outC->_L382 = kcg_true;
   outC->_L381 = kcg_true;
   outC->_L380 = kcg_true;
   outC->_L379.valid = kcg_true;
-  outC->_L379.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L379.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L379.status = mcs_disconnected_RCM_Types_Pkg;
   outC->_L379.nid_radio = kcg_lit_int64(0);
   outC->_L379.settingUpConnectionHasFailed = kcg_true;
@@ -200,7 +200,7 @@ void connectingToTheRBC_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L372 = kcg_true;
   outC->_L371 = kcg_true;
   outC->_L370.valid = kcg_true;
-  outC->_L370.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L370.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L370.action = mca_nop_RCM_Types_Pkg;
   outC->_L370.nid_radio = kcg_lit_int64(0);
   outC->_L368 = kcg_true;
@@ -216,10 +216,10 @@ void connectingToTheRBC_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L357 = mrs_unregistered_RCM_Types_Pkg;
   outC->_L356 = kcg_true;
   outC->_L355.valid = kcg_true;
-  outC->_L355.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L355.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L355.healthStatus = mhs_nok_RCM_Types_Pkg;
   outC->_L355.status = mrs_unregistered_RCM_Types_Pkg;
-  outC->_L355.nid_mn = kcg_lit_int64(0);
+  outC->_L355.nid_mn = kcg_lit_int32(0);
   outC->_L354 = kcg_true;
   outC->action = mca_nop_RCM_Types_Pkg;
   outC->leaveHole = kcg_true;
@@ -237,14 +237,14 @@ void connectingToTheRBC_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L1_then_IfBlock1 = mca_nop_RCM_Types_Pkg;
   outC->rejectOrderToContactRBC_or_RIU = kcg_true;
   outC->connectionStatus.valid = kcg_true;
-  outC->connectionStatus.mobileDeviceNo = kcg_lit_int64(0);
+  outC->connectionStatus.mobileDeviceNo = kcg_lit_int32(0);
   outC->connectionStatus.status = mcs_disconnected_RCM_Types_Pkg;
   outC->connectionStatus.nid_radio = kcg_lit_int64(0);
   outC->connectionStatus.settingUpConnectionHasFailed = kcg_true;
   outC->connectionStatus.connectionLost = kcg_true;
   outC->connectionStatus.isInRadioHole = kcg_true;
   outC->mobileConnectionCmd.valid = kcg_true;
-  outC->mobileConnectionCmd.mobileDeviceNo = kcg_lit_int64(0);
+  outC->mobileConnectionCmd.mobileDeviceNo = kcg_lit_int32(0);
   outC->mobileConnectionCmd.action = mca_nop_RCM_Types_Pkg;
   outC->mobileConnectionCmd.nid_radio = kcg_lit_int64(0);
 }
@@ -262,6 +262,6 @@ void connectingToTheRBC_v2_reset_MoRC_Pck_Subfunc_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** connectingToTheRBC_v2_MoRC_Pck_Subfunc_Pkg.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

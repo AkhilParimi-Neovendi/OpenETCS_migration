@@ -54,17 +54,17 @@ void Write_DMI_Display_Control_to_int_init_DATA_Packets_EVC_to_DMI(
 
   outC->_L10 = kcg_true;
   for (idx = 0; idx < 3; idx++) {
-    outC->_L9[idx] = kcg_lit_int64(0);
+    outC->_L9[idx] = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 3; idx1++) {
-    outC->_L8[idx1] = kcg_lit_int64(0);
+    outC->_L8[idx1] = kcg_lit_int32(0);
   }
   outC->_L1.valid = kcg_true;
   outC->_L1.cab_is_active = kcg_true;
-  outC->_L1.system_clock = kcg_lit_int64(0);
+  outC->_L1.system_clock = kcg_lit_int32(0);
   outC->every = kcg_true;
   for (idx2 = 0; idx2 < 3; idx2++) {
-    outC->dmi_display_control_int[idx2] = kcg_lit_int64(0);
+    outC->dmi_display_control_int[idx2] = kcg_lit_int32(0);
   }
   /* _L8=(DATA::Packets::EVC_to_DMI::CAST_DMI_Display_Control_to_int1#1)/ */
   CAST_DMI_Display_Control_to_int1_init_DATA_Packets_EVC_to_DMI(

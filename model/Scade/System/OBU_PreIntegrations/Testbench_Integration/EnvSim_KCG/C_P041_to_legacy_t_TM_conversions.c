@@ -50,7 +50,7 @@ void C_P041_to_legacy_t_TM_conversions(
   for (idx4 = 0; idx4 < 7; idx4++) {
     /* _L20=(TM_conversions::C_P041_to_legacy_loop#1)/ */
     C_P041_to_legacy_loop_TM_conversions(
-      /* _L20= */(kcg_int64) idx4,
+      /* _L20= */(kcg_int32) idx4,
       outC->_L26[idx4],
       outC->_L25[idx4],
       outC->_L24[idx4],
@@ -87,55 +87,55 @@ void C_P041_to_legacy_t_init_TM_conversions(
     outC->_L25[idx2] = Q_SCALE_10_cm_scale;
   }
   for (idx3 = 0; idx3 < 7; idx3++) {
-    outC->_L24[idx3] = kcg_lit_int64(0);
+    outC->_L24[idx3] = kcg_lit_int32(0);
   }
   for (idx5 = 0; idx5 < 7; idx5++) {
     for (idx4 = 0; idx4 < 33; idx4++) {
       outC->_L23[idx5][idx4].valid = kcg_true;
       outC->_L23[idx5][idx4].m_leveltr = M_LEVELTR_Level_0;
-      outC->_L23[idx5][idx4].nid_ntc = kcg_lit_int64(0);
-      outC->_L23[idx5][idx4].l_ackleveltr = kcg_lit_int64(0);
+      outC->_L23[idx5][idx4].nid_ntc = kcg_lit_int32(0);
+      outC->_L23[idx5][idx4].l_ackleveltr = kcg_lit_int32(0);
     }
   }
   for (idx6 = 0; idx6 < 7; idx6++) {
     outC->_L20[idx6].valid = kcg_true;
     outC->_L20[idx6].q_dir = Q_DIR_Reverse;
     outC->_L20[idx6].q_scale = Q_SCALE_10_cm_scale;
-    outC->_L20[idx6].d_leveltr = kcg_lit_int64(0);
+    outC->_L20[idx6].d_leveltr = kcg_lit_int32(0);
     outC->_L20[idx6].m_leveltr = M_LEVELTR_Level_0;
-    outC->_L20[idx6].nid_ntc = kcg_lit_int64(0);
-    outC->_L20[idx6].l_ackleveltr = kcg_lit_int64(0);
+    outC->_L20[idx6].nid_ntc = kcg_lit_int32(0);
+    outC->_L20[idx6].l_ackleveltr = kcg_lit_int32(0);
   }
   outC->_L3 = kcg_true;
   outC->_L4 = Q_DIR_Reverse;
   outC->_L5 = Q_SCALE_10_cm_scale;
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
   for (idx7 = 0; idx7 < 33; idx7++) {
     outC->_L8[idx7].valid = kcg_true;
     outC->_L8[idx7].m_leveltr = M_LEVELTR_Level_0;
-    outC->_L8[idx7].nid_ntc = kcg_lit_int64(0);
-    outC->_L8[idx7].l_ackleveltr = kcg_lit_int64(0);
+    outC->_L8[idx7].nid_ntc = kcg_lit_int32(0);
+    outC->_L8[idx7].l_ackleveltr = kcg_lit_int32(0);
   }
   outC->_L1.valid = kcg_true;
   outC->_L1.q_dir = Q_DIR_Reverse;
   outC->_L1.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L1.d_leveltr = kcg_lit_int64(0);
-  outC->_L1.n_iter = kcg_lit_int64(0);
+  outC->_L1.d_leveltr = kcg_lit_int32(0);
+  outC->_L1.n_iter = kcg_lit_int32(0);
   for (idx8 = 0; idx8 < 33; idx8++) {
     outC->_L1.sections[idx8].valid = kcg_true;
     outC->_L1.sections[idx8].m_leveltr = M_LEVELTR_Level_0;
-    outC->_L1.sections[idx8].nid_ntc = kcg_lit_int64(0);
-    outC->_L1.sections[idx8].l_ackleveltr = kcg_lit_int64(0);
+    outC->_L1.sections[idx8].nid_ntc = kcg_lit_int32(0);
+    outC->_L1.sections[idx8].l_ackleveltr = kcg_lit_int32(0);
   }
   for (idx9 = 0; idx9 < 7; idx9++) {
     outC->P041_legacy_out[idx9].valid = kcg_true;
     outC->P041_legacy_out[idx9].q_dir = Q_DIR_Reverse;
     outC->P041_legacy_out[idx9].q_scale = Q_SCALE_10_cm_scale;
-    outC->P041_legacy_out[idx9].d_leveltr = kcg_lit_int64(0);
+    outC->P041_legacy_out[idx9].d_leveltr = kcg_lit_int32(0);
     outC->P041_legacy_out[idx9].m_leveltr = M_LEVELTR_Level_0;
-    outC->P041_legacy_out[idx9].nid_ntc = kcg_lit_int64(0);
-    outC->P041_legacy_out[idx9].l_ackleveltr = kcg_lit_int64(0);
+    outC->P041_legacy_out[idx9].nid_ntc = kcg_lit_int32(0);
+    outC->P041_legacy_out[idx9].l_ackleveltr = kcg_lit_int32(0);
   }
   for (idx = 0; idx < 7; idx++) {
     /* _L20=(TM_conversions::C_P041_to_legacy_loop#1)/ */

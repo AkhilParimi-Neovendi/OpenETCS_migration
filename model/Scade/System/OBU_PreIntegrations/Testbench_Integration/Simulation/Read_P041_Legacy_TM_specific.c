@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -55,42 +55,42 @@ void Read_P041_Legacy_init_TM_specific(outC_Read_P041_Legacy_TM_specific *outC)
     outC->_L4[idx].valid = kcg_true;
     outC->_L4[idx].q_dir = Q_DIR_Reverse;
     outC->_L4[idx].q_scale = Q_SCALE_10_cm_scale;
-    outC->_L4[idx].d_leveltr = kcg_lit_int64(0);
+    outC->_L4[idx].d_leveltr = kcg_lit_int32(0);
     outC->_L4[idx].m_leveltr = M_LEVELTR_Level_0;
-    outC->_L4[idx].nid_ntc = kcg_lit_int64(0);
-    outC->_L4[idx].l_ackleveltr = kcg_lit_int64(0);
+    outC->_L4[idx].nid_ntc = kcg_lit_int32(0);
+    outC->_L4[idx].l_ackleveltr = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 30; idx1++) {
-    outC->_L3.PacketHeaders[idx1].nid_packet = kcg_lit_int64(0);
+    outC->_L3.PacketHeaders[idx1].nid_packet = kcg_lit_int32(0);
     outC->_L3.PacketHeaders[idx1].q_dir = Q_DIR_Reverse;
     outC->_L3.PacketHeaders[idx1].valid = kcg_true;
-    outC->_L3.PacketHeaders[idx1].startAddress = kcg_lit_int64(0);
-    outC->_L3.PacketHeaders[idx1].endAddress = kcg_lit_int64(0);
+    outC->_L3.PacketHeaders[idx1].startAddress = kcg_lit_int32(0);
+    outC->_L3.PacketHeaders[idx1].endAddress = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 500; idx2++) {
-    outC->_L3.PacketData[idx2] = kcg_lit_int64(0);
+    outC->_L3.PacketData[idx2] = kcg_lit_int32(0);
   }
   outC->_L1 = kcg_true;
   outC->_L2.valid = kcg_true;
   outC->_L2.q_dir = Q_DIR_Reverse;
   outC->_L2.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L2.d_leveltr = kcg_lit_int64(0);
-  outC->_L2.n_iter = kcg_lit_int64(0);
+  outC->_L2.d_leveltr = kcg_lit_int32(0);
+  outC->_L2.n_iter = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 33; idx3++) {
     outC->_L2.sections[idx3].valid = kcg_true;
     outC->_L2.sections[idx3].m_leveltr = M_LEVELTR_Level_0;
-    outC->_L2.sections[idx3].nid_ntc = kcg_lit_int64(0);
-    outC->_L2.sections[idx3].l_ackleveltr = kcg_lit_int64(0);
+    outC->_L2.sections[idx3].nid_ntc = kcg_lit_int32(0);
+    outC->_L2.sections[idx3].l_ackleveltr = kcg_lit_int32(0);
   }
   outC->every = kcg_true;
   for (idx4 = 0; idx4 < 7; idx4++) {
     outC->P041_legacy_out[idx4].valid = kcg_true;
     outC->P041_legacy_out[idx4].q_dir = Q_DIR_Reverse;
     outC->P041_legacy_out[idx4].q_scale = Q_SCALE_10_cm_scale;
-    outC->P041_legacy_out[idx4].d_leveltr = kcg_lit_int64(0);
+    outC->P041_legacy_out[idx4].d_leveltr = kcg_lit_int32(0);
     outC->P041_legacy_out[idx4].m_leveltr = M_LEVELTR_Level_0;
-    outC->P041_legacy_out[idx4].nid_ntc = kcg_lit_int64(0);
-    outC->P041_legacy_out[idx4].l_ackleveltr = kcg_lit_int64(0);
+    outC->P041_legacy_out[idx4].nid_ntc = kcg_lit_int32(0);
+    outC->P041_legacy_out[idx4].l_ackleveltr = kcg_lit_int32(0);
   }
   /* _L4=(TM_conversions::C_P041_to_legacy_t#1)/ */
   C_P041_to_legacy_t_init_TM_conversions(&outC->Context_C_P041_to_legacy_t_1);
@@ -112,6 +112,6 @@ void Read_P041_Legacy_reset_TM_specific(outC_Read_P041_Legacy_TM_specific *outC)
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Read_P041_Legacy_TM_specific.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

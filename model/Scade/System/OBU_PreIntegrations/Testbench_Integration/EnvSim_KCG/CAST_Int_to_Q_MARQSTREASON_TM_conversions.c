@@ -10,7 +10,7 @@
 /* TM_conversions::CAST_Int_to_Q_MARQSTREASON/ */
 void CAST_Int_to_Q_MARQSTREASON_TM_conversions(
   /* q_marqstreason_int/ */
-  kcg_int64 q_marqstreason_int,
+  kcg_int32 q_marqstreason_int,
   outC_CAST_Int_to_Q_MARQSTREASON_TM_conversions *outC)
 {
   /* q_marqstreason/ */
@@ -175,9 +175,9 @@ void CAST_Int_to_Q_MARQSTREASON_init_TM_conversions(
   outC_CAST_Int_to_Q_MARQSTREASON_TM_conversions *outC)
 {
   outC->_L4 = kcg_true;
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
   outC->error = kcg_true;
-  outC->q_marqstreason_in = kcg_lit_int64(0);
+  outC->q_marqstreason_in = kcg_lit_int32(0);
   outC->IfBlock1_clock = kcg_true;
   outC->_L3_then_else_IfBlock1 = kcg_true;
   outC->_L1_then_else_IfBlock1 = Q_MARQSTREASON_Start_selected_by_driver;

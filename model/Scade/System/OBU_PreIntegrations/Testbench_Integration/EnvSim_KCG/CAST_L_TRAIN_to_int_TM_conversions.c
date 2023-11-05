@@ -30,12 +30,12 @@ void CAST_L_TRAIN_to_int_TM_conversions(
 void CAST_L_TRAIN_to_int_init_TM_conversions(
   outC_CAST_L_TRAIN_to_int_TM_conversions *outC)
 {
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L12 = kcg_lit_int64(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L12 = kcg_lit_int32(0);
   outC->_L8 = kcg_true;
   outC->_L9 = kcg_true;
-  outC->_L1 = kcg_lit_int64(0);
-  outC->l_train_int = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->l_train_int = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

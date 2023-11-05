@@ -41,23 +41,23 @@ void C_int_to_DMI_Status_init_DATA_Packets_DMI_to_EVC(
 {
   static kcg_size idx;
 
-  outC->_L15 = kcg_lit_int64(0);
-  outC->_L16 = kcg_lit_int64(0);
-  outC->_L17 = kcg_lit_int64(0);
-  outC->_L18 = kcg_lit_int64(0);
+  outC->_L15 = kcg_lit_int32(0);
+  outC->_L16 = kcg_lit_int32(0);
+  outC->_L17 = kcg_lit_int32(0);
+  outC->_L18 = kcg_lit_int32(0);
   outC->_L13 = kcg_true;
   outC->_L12 = Running_state_DMI_Types_Pkg;
   for (idx = 0; idx < 4; idx++) {
-    outC->_L2[idx] = kcg_lit_int64(0);
+    outC->_L2[idx] = kcg_lit_int32(0);
   }
   outC->_L1.valid = kcg_true;
-  outC->_L1.systemTime = kcg_lit_int64(0);
+  outC->_L1.systemTime = kcg_lit_int32(0);
   outC->_L1.statusSet = Running_state_DMI_Types_Pkg;
-  outC->_L1.nAlive = kcg_lit_int64(0);
+  outC->_L1.nAlive = kcg_lit_int32(0);
   outC->dim_status_ct.valid = kcg_true;
-  outC->dim_status_ct.systemTime = kcg_lit_int64(0);
+  outC->dim_status_ct.systemTime = kcg_lit_int32(0);
   outC->dim_status_ct.statusSet = Running_state_DMI_Types_Pkg;
-  outC->dim_status_ct.nAlive = kcg_lit_int64(0);
+  outC->dim_status_ct.nAlive = kcg_lit_int32(0);
   /* _L12=(DATA::Variables::CAST_int_to_DMI_StatusSet#1)/ */
   CAST_int_to_DMI_StatusSet_init_DATA_Variables(
     &outC->Context_CAST_int_to_DMI_StatusSet_1);

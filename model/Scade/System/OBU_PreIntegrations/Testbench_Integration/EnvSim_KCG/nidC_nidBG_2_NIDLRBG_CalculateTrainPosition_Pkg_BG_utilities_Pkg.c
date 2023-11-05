@@ -41,18 +41,18 @@ void nidC_nidBG_2_NIDLRBG_CalculateTrainPosition_Pkg_BG_utilities_Pkg(
 void nidC_nidBG_2_NIDLRBG_init_CalculateTrainPosition_Pkg_BG_utilities_Pkg(
   outC_nidC_nidBG_2_NIDLRBG_CalculateTrainPosition_Pkg_BG_utilities_Pkg *outC)
 {
-  outC->_L16 = kcg_lit_int64(0);
-  outC->_L15 = kcg_lit_int64(0);
+  outC->_L16 = kcg_lit_int32(0);
+  outC->_L15 = kcg_lit_int32(0);
   outC->_L13 = kcg_true;
   outC->_L12 = kcg_true;
   outC->_L11 = kcg_true;
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->nidLRBG = kcg_lit_int64(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->nidLRBG = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

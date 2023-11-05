@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -14,21 +14,21 @@ void CAST_DMI_DMI_identifier_to_int_DATA_Variables(
   outC_CAST_DMI_DMI_identifier_to_int_DATA_Variables *outC)
 {
   /* dmi_dmi_identifier_int/ */
-  static kcg_int64 dmi_dmi_identifier_int_partial;
+  static kcg_int32 dmi_dmi_identifier_int_partial;
   /* error/ */
   static kcg_bool error_partial;
   /* dmi_dmi_identifier_int/ */
-  static kcg_int64 _1_dmi_dmi_identifier_int_partial;
+  static kcg_int32 _1_dmi_dmi_identifier_int_partial;
   /* error/ */
   static kcg_bool _2_error_partial;
   /* error/ */
   static kcg_bool _3_error_partial;
   /* dmi_dmi_identifier_int/ */
-  static kcg_int64 _4_dmi_dmi_identifier_int_partial;
+  static kcg_int32 _4_dmi_dmi_identifier_int_partial;
   /* error/ */
   static kcg_bool _5_error_partial;
   /* dmi_dmi_identifier_int/ */
-  static kcg_int64 _6_dmi_dmi_identifier_int_partial;
+  static kcg_int32 _6_dmi_dmi_identifier_int_partial;
   static kcg_bool noname;
 
   outC->IfBlock1_clock = dmi_dmi_identifier_ct == ENUM_DMI_DMI_Identifier_T_DMI_1;
@@ -85,14 +85,14 @@ void CAST_DMI_DMI_identifier_to_int_init_DATA_Variables(
   outC->_L22 = kcg_true;
   outC->error = kcg_true;
   outC->IfBlock1_clock = kcg_true;
-  outC->_L3_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L3_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L1_then_else_IfBlock1 = kcg_true;
-  outC->_L1_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L2_else_else_IfBlock1 = kcg_true;
   outC->else_clock_IfBlock1 = kcg_true;
-  outC->_L1_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L3_then_IfBlock1 = kcg_true;
-  outC->dmi_dmi_identifier_int = kcg_lit_int64(0);
+  outC->dmi_dmi_identifier_int = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -108,6 +108,6 @@ void CAST_DMI_DMI_identifier_to_int_reset_DATA_Variables(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_DMI_DMI_identifier_to_int_DATA_Variables.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

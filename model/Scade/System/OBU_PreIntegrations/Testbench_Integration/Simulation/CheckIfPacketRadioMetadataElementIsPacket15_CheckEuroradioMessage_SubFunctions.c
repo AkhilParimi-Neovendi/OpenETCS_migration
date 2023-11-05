@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -23,7 +23,7 @@ void CheckIfPacketRadioMetadataElementIsPacket15_CheckEuroradioMessage_SubFuncti
     &outC->Context_T_extract_nid_packet_from_metadata_selector_1);
   outC->_L9 =
     outC->Context_T_extract_nid_packet_from_metadata_selector_1.nid_packet;
-  outC->_L4 = kcg_lit_int64(15);
+  outC->_L4 = kcg_lit_int32(15);
   outC->_L3 = outC->_L9 == outC->_L4;
   outC->_L6 = accumulatorInput;
   outC->_L8 = outC->_L6 | outC->_L3;
@@ -34,17 +34,17 @@ void CheckIfPacketRadioMetadataElementIsPacket15_CheckEuroradioMessage_SubFuncti
 void CheckIfPacketRadioMetadataElementIsPacket15_init_CheckEuroradioMessage_SubFunctions(
   outC_CheckIfPacketRadioMetadataElementIsPacket15_CheckEuroradioMessage_SubFunctions *outC)
 {
-  outC->_L9 = kcg_lit_int64(0);
+  outC->_L9 = kcg_lit_int32(0);
   outC->_L8 = kcg_true;
   outC->_L6 = kcg_true;
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->_L3 = kcg_true;
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1.nid_packet = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1.nid_packet = kcg_lit_int32(0);
   outC->_L1.q_dir = Q_DIR_Reverse;
   outC->_L1.valid = kcg_true;
-  outC->_L1.startAddress = kcg_lit_int64(0);
-  outC->_L1.endAddress = kcg_lit_int64(0);
+  outC->_L1.startAddress = kcg_lit_int32(0);
+  outC->_L1.endAddress = kcg_lit_int32(0);
   outC->result = kcg_true;
   /* _L9=(TM::T_extract_nid_packet_from_metadata_selector#1)/ */
   T_extract_nid_packet_from_metadata_selector_init_TM(
@@ -67,6 +67,6 @@ void CheckIfPacketRadioMetadataElementIsPacket15_reset_CheckEuroradioMessage_Sub
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CheckIfPacketRadioMetadataElementIsPacket15_CheckEuroradioMessage_SubFunctions.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

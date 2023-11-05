@@ -31,18 +31,18 @@ typedef struct {
   ParabolaCurveValid_T_CalcBrakingCurves_types /* _L16/ */ _L16;
   array_bool_1 /* _L17/ */ _L17;
   kcg_bool /* _L18/ */ _L18;
-  array_float64_113 /* _L19/ */ _L19;
-  array_float64_114 /* _L22/ */ _L22;
-  array_float64_114 /* _L23/ */ _L23;
-  array_float64_114 /* _L24/ */ _L24;
-  array_float64_113 /* _L25/ */ _L25;
-  array_float64_113 /* _L26/ */ _L26;
-  kcg_float64 /* _L27/ */ _L27;
-  array_float64_1 /* _L28/ */ _L28;
-  array_float64_1 /* _L40/ */ _L40;
-  kcg_float64 /* _L39/ */ _L39;
-  kcg_float64 /* _L42/ */ _L42;
-  array_float64_1 /* _L41/ */ _L41;
+  array_float32_113 /* _L19/ */ _L19;
+  array_float32_114 /* _L22/ */ _L22;
+  array_float32_114 /* _L23/ */ _L23;
+  array_float32_114 /* _L24/ */ _L24;
+  array_float32_113 /* _L25/ */ _L25;
+  array_float32_113 /* _L26/ */ _L26;
+  kcg_float32 /* _L27/ */ _L27;
+  array_float32_1 /* _L28/ */ _L28;
+  array_float32_1 /* _L40/ */ _L40;
+  kcg_float32 /* _L39/ */ _L39;
+  kcg_float32 /* _L42/ */ _L42;
+  array_float32_1 /* _L41/ */ _L41;
 } outC_popLeadingArc_CalcBrakingCurves_Pkg_internalOperators;
 
 /* ===========  node initialization and cycle functions  =========== */

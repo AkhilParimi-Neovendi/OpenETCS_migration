@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _CAST_DMI_EVC_Coded_Train_Data_to_int1_DATA_Packets_EVC_to_DMI_H_
 #define _CAST_DMI_EVC_Coded_Train_Data_to_int1_DATA_Packets_EVC_to_DMI_H_
@@ -47,13 +47,13 @@ typedef struct {
   M_AXLELOADCAT /* _L4/ */ _L4;
   DMI_airtightSystem_T_DMI_Types_Pkg /* _L3/ */ _L3;
   DMI_loadingGauge_T_DMI_Types_Pkg /* _L2/ */ _L2;
-  array_int64_9 /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
+  array_int32_9 /* _L11/ */ _L11;
+  kcg_int32 /* _L12/ */ _L12;
   DMI_train_id_INT_T_DATA /* _L13/ */ _L13;
   DMI_train_length_INT_T_DATA /* _L14/ */ _L14;
   DMI_brakeModel_id_INT_T_DATA /* _L15/ */ _L15;
   DMI_vMax_id_INT_T_DATA /* _L16/ */ _L16;
-  kcg_int64 /* _L17/ */ _L17;
+  kcg_int32 /* _L17/ */ _L17;
   DMI_airtightSystem_INT_T_DATA /* _L18/ */ _L18;
   DMI_loadingGauge_INT_T_DATA /* _L19/ */ _L19;
 } outC_CAST_DMI_EVC_Coded_Train_Data_to_int1_DATA_Packets_EVC_to_DMI;
@@ -80,6 +80,6 @@ extern void CAST_DMI_EVC_Coded_Train_Data_to_int1_init_DATA_Packets_EVC_to_DMI(
 #endif /* _CAST_DMI_EVC_Coded_Train_Data_to_int1_DATA_Packets_EVC_to_DMI_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_DMI_EVC_Coded_Train_Data_to_int1_DATA_Packets_EVC_to_DMI.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

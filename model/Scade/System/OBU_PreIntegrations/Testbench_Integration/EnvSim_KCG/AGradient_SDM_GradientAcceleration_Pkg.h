@@ -36,7 +36,7 @@ typedef struct {
   kcg_bool /* _L15/ */ _L15;
   kcg_bool /* _L16/ */ _L16;
   A_gradient_element_t_SDM_GradientAcceleration_types /* _L17/ */ _L17;
-  kcg_float64 /* _L18/ */ _L18;
+  kcg_float32 /* _L18/ */ _L18;
   kcg_bool /* _L19/ */ _L19;
   A_gradient_t_SDM_GradientAcceleration_types /* _L20/ */ _L20;
   kcg_bool /* _L21/ */ _L21;

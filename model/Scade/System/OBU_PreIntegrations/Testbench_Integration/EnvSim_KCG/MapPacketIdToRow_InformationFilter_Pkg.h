@@ -14,21 +14,21 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* outRow/ */ outRow;
+  kcg_int32 /* outRow/ */ outRow;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
 } outC_MapPacketIdToRow_InformationFilter_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* InformationFilter_Pkg::MapPacketIdToRow/ */
 extern void MapPacketIdToRow_InformationFilter_Pkg(
   /* inPacketId/ */
-  kcg_int64 inPacketId,
+  kcg_int32 inPacketId,
   outC_MapPacketIdToRow_InformationFilter_Pkg *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

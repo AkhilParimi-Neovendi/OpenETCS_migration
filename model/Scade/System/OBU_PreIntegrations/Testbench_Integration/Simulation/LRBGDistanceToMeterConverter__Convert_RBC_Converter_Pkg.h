@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _LRBGDistanceToMeterConverter__Convert_RBC_Converter_Pkg_H_
 #define _LRBGDistanceToMeterConverter__Convert_RBC_Converter_Pkg_H_
@@ -14,7 +14,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_float64 /* outDistanceToLRBGInMeters/ */ outDistanceToLRBGInMeters;
+  kcg_float32 /* outDistanceToLRBGInMeters/ */ outDistanceToLRBGInMeters;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
@@ -22,16 +22,16 @@ typedef struct {
   Q_SCALE /* WhenBlock1: */ WhenBlock1_clock;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_float64 /* WhenBlock1:Q_SCALE_1_m_scale:_L2/ */ _L2_Q_SCALE_1_m_scale_WhenBlock1;
+  kcg_float32 /* WhenBlock1:Q_SCALE_1_m_scale:_L2/ */ _L2_Q_SCALE_1_m_scale_WhenBlock1;
   D_LRBG /* WhenBlock1:Q_SCALE_1_m_scale:_L1/ */ _L1_Q_SCALE_1_m_scale_WhenBlock1;
-  kcg_float64 /* WhenBlock1:Q_SCALE_10_cm_scale:_L4/ */ _L4_Q_SCALE_10_cm_scale_WhenBlock1;
-  kcg_float64 /* WhenBlock1:Q_SCALE_10_cm_scale:_L3/ */ _L3_Q_SCALE_10_cm_scale_WhenBlock1;
-  kcg_float64 /* WhenBlock1:Q_SCALE_10_cm_scale:_L2/ */ _L2_Q_SCALE_10_cm_scale_WhenBlock1;
+  kcg_float32 /* WhenBlock1:Q_SCALE_10_cm_scale:_L4/ */ _L4_Q_SCALE_10_cm_scale_WhenBlock1;
+  kcg_float32 /* WhenBlock1:Q_SCALE_10_cm_scale:_L3/ */ _L3_Q_SCALE_10_cm_scale_WhenBlock1;
+  kcg_float32 /* WhenBlock1:Q_SCALE_10_cm_scale:_L2/ */ _L2_Q_SCALE_10_cm_scale_WhenBlock1;
   D_LRBG /* WhenBlock1:Q_SCALE_10_cm_scale:_L1/ */ _L1_Q_SCALE_10_cm_scale_WhenBlock1;
-  kcg_float64 /* WhenBlock1:Q_SCALE_10_m_scale:_L3/ */ _L3_Q_SCALE_10_m_scale_WhenBlock1;
-  kcg_float64 /* WhenBlock1:Q_SCALE_10_m_scale:_L4/ */ _L4_Q_SCALE_10_m_scale_WhenBlock1;
+  kcg_float32 /* WhenBlock1:Q_SCALE_10_m_scale:_L3/ */ _L3_Q_SCALE_10_m_scale_WhenBlock1;
+  kcg_float32 /* WhenBlock1:Q_SCALE_10_m_scale:_L4/ */ _L4_Q_SCALE_10_m_scale_WhenBlock1;
   D_LRBG /* WhenBlock1:Q_SCALE_10_m_scale:_L5/ */ _L5_Q_SCALE_10_m_scale_WhenBlock1;
-  kcg_float64 /* WhenBlock1:Q_SCALE_10_m_scale:_L6/ */ _L6_Q_SCALE_10_m_scale_WhenBlock1;
+  kcg_float32 /* WhenBlock1:Q_SCALE_10_m_scale:_L6/ */ _L6_Q_SCALE_10_m_scale_WhenBlock1;
 } outC_LRBGDistanceToMeterConverter__Convert_RBC_Converter_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -58,6 +58,6 @@ extern void LRBGDistanceToMeterConverter__Convert_init_RBC_Converter_Pkg(
 #endif /* _LRBGDistanceToMeterConverter__Convert_RBC_Converter_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** LRBGDistanceToMeterConverter__Convert_RBC_Converter_Pkg.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _Kv_intIterator_SDMConversionModelPkg_H_
 #define _Kv_intIterator_SDMConversionModelPkg_H_
@@ -17,7 +17,7 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   kcg_bool /* goOn/ */ goOn;
-  kcg_int64 /* m/ */ m;
+  kcg_int32 /* m/ */ m;
   V_internal_Type_Obu_BasicTypes_Pkg /* v/ */ v;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
@@ -73,6 +73,6 @@ extern void Kv_intIterator_init_SDMConversionModelPkg(
 #endif /* _Kv_intIterator_SDMConversionModelPkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Kv_intIterator_SDMConversionModelPkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

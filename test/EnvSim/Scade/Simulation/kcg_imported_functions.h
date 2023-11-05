@@ -11,9 +11,9 @@
 /* EnvSim::ScriptedTrack/ */
 extern void ScriptedTrack_EnvSim(
   /* actualTrainPos/ */
-  kcg_float64 actualTrainPos,
+  kcg_float32 actualTrainPos,
   /* radioTrainPos/ */
-  kcg_float64 radioTrainPos,
+  kcg_float32 radioTrainPos,
   /* baliseMessage/ */
   CompressedBaliseMessage_TM *baliseMessage,
   /* radioMessage/ */

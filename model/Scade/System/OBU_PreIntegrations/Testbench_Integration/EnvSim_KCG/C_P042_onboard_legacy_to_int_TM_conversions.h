@@ -33,15 +33,15 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L11/ */ _L11;
+  kcg_int32 /* _L11/ */ _L11;
   P042_trackside_int_T_TM /* _L10/ */ _L10;
   P42_SessionManagement_T_Packet_Types_Pkg /* _L9/ */ _L9;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L21/ */ _L21;
-  kcg_int64 /* _L27/ */ _L27;
-  kcg_int64 /* _L29/ */ _L29;
-  kcg_int64 /* _L31/ */ _L31;
-  kcg_int64 /* _L33/ */ _L33;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L21/ */ _L21;
+  kcg_int32 /* _L27/ */ _L27;
+  kcg_int32 /* _L29/ */ _L29;
+  kcg_int32 /* _L31/ */ _L31;
+  kcg_int32 /* _L33/ */ _L33;
   Q_SLEEPSESSION /* _L40/ */ _L40;
   NID_RADIO /* _L39/ */ _L39;
   NID_RBC /* _L38/ */ _L38;
@@ -49,7 +49,7 @@ typedef struct {
   Q_RBC /* _L36/ */ _L36;
   Q_DIR /* _L35/ */ _L35;
   kcg_bool /* _L34/ */ _L34;
-  kcg_int64 /* _L48/ */ _L48;
+  kcg_int32 /* _L48/ */ _L48;
 } outC_C_P042_onboard_legacy_to_int_TM_conversions;
 
 /* ===========  node initialization and cycle functions  =========== */

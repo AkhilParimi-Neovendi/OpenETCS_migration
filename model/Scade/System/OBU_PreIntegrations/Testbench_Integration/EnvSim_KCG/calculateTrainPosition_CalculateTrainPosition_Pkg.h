@@ -95,7 +95,7 @@ typedef struct {
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L329/ */ _L329;
   trainPositionInfo_T_TrainPosition_Types_Pck /* _L327/ */ _L327;
   kcg_bool /* _L322/ */ _L322;
-  kcg_int64 /* _L323/ */ _L323;
+  kcg_int32 /* _L323/ */ _L323;
   positionedBG_T_TrainPosition_Types_Pck /* _L324/ */ _L324;
   kcg_bool /* _L321/ */ _L321;
   passedBG_T_BG_Types_Pkg /* _L331/ */ _L331;

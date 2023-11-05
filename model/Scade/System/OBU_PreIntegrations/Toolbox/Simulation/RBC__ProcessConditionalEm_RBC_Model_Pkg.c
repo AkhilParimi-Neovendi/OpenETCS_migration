@@ -159,7 +159,7 @@ void RBC__ProcessConditionalEm_RBC_Model_Pkg(
   switch (outC->_10_CONDITIONAL_EMERGENCY_STOP_SM_state_sel) {
     case _168_SSM_st_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM :
       tr_3_guard_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM =
-        last_invalidAck & (outC->radioTrainTrackMessageId == kcg_lit_int64(147));
+        last_invalidAck & (outC->radioTrainTrackMessageId == kcg_lit_int32(147));
       tr_2_guard_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM =
         last_validAck;
       break;
@@ -190,7 +190,7 @@ void RBC__ProcessConditionalEm_RBC_Model_Pkg(
   switch (outC->_10_CONDITIONAL_EMERGENCY_STOP_SM_state_sel) {
     case _168_SSM_st_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM :
       tr_1_guard_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM =
-        last_validAck & (outC->radioTrackTrainMessageId == kcg_lit_int64(15));
+        last_validAck & (outC->radioTrackTrainMessageId == kcg_lit_int32(15));
       if (tr_1_guard_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM) {
         _30_CONDITIONAL_EMERGENCY_STOP_SM_state_act_partial =
           SSM_st_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM;
@@ -216,7 +216,7 @@ void RBC__ProcessConditionalEm_RBC_Model_Pkg(
       break;
     case SSM_st_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM :
       tr_1_guard_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM =
-        outC->radioTrainTrackMessageId == kcg_lit_int64(147);
+        outC->radioTrainTrackMessageId == kcg_lit_int32(147);
       if (tr_1_guard_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM) {
         _27_CONDITIONAL_EMERGENCY_STOP_SM_state_act_partial =
           _168_SSM_st_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM;
@@ -230,9 +230,9 @@ void RBC__ProcessConditionalEm_RBC_Model_Pkg(
       break;
     case SSM_st_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM :
       tr_2_guard_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM =
-        outC->radioTrainTrackMessageId != kcg_lit_int64(147);
+        outC->radioTrainTrackMessageId != kcg_lit_int32(147);
       tr_1_guard_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM =
-        outC->radioTrainTrackMessageId == kcg_lit_int64(147);
+        outC->radioTrainTrackMessageId == kcg_lit_int32(147);
       if (tr_1_guard_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM) {
         _24_CONDITIONAL_EMERGENCY_STOP_SM_state_act_partial =
           _168_SSM_st_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM;
@@ -250,7 +250,7 @@ void RBC__ProcessConditionalEm_RBC_Model_Pkg(
       break;
     case SSM_st_IDLE_CONDITIONAL_EMERGENCY_STOP_SM :
       tr_1_guard_IDLE_CONDITIONAL_EMERGENCY_STOP_SM =
-        outC->radioTrackTrainMessageId == kcg_lit_int64(15);
+        outC->radioTrackTrainMessageId == kcg_lit_int32(15);
       if (tr_1_guard_IDLE_CONDITIONAL_EMERGENCY_STOP_SM) {
         _21_CONDITIONAL_EMERGENCY_STOP_SM_state_act_partial =
           SSM_st_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM;
@@ -962,129 +962,129 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   kcg_size idx195;
   kcg_size idx196;
 
-  outC->_L80.m_TrainData.nid_engine = kcg_lit_int64(0);
-  outC->_L80.m_TrainData.m_NumberOfOnboardPhoneNumbers = kcg_lit_int64(0);
+  outC->_L80.m_TrainData.nid_engine = kcg_lit_int32(0);
+  outC->_L80.m_TrainData.m_NumberOfOnboardPhoneNumbers = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 1; idx1++) {
     outC->_L80.m_TrainData.m_OnboardPhoneNumbers[idx1].valid = kcg_true;
     for (idx = 0; idx < 15; idx++) {
       outC->_L80.m_TrainData.m_OnboardPhoneNumbers[idx1].telephoneNumber[idx] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
-  outC->_L80.m_TrainData.t_train_ref = kcg_lit_int64(0);
+  outC->_L80.m_TrainData.t_train_ref = kcg_lit_int32(0);
   outC->_L80.m_TrainData.nc_cdtrain = NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L80.m_TrainData.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->_L80.m_TrainData.l_train = kcg_lit_int64(0);
-  outC->_L80.m_TrainData.v_maxtrain = kcg_lit_int64(0);
+  outC->_L80.m_TrainData.l_train = kcg_lit_int32(0);
+  outC->_L80.m_TrainData.v_maxtrain = kcg_lit_int32(0);
   outC->_L80.m_TrainData.m_loadinggauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L80.m_TrainData.m_axleloadcat = M_AXLELOADCAT_A;
   outC->_L80.m_TrainData.m_airtight = M_AIRTIGHT_Not_fitted;
-  outC->_L80.m_TrainData.n_axle = kcg_lit_int64(0);
+  outC->_L80.m_TrainData.n_axle = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 4; idx2++) {
     outC->_L80.m_TrainData.m_TractionIdentities[idx2].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
     outC->_L80.m_TrainData.m_TractionIdentities[idx2].nid_ctraction =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 5; idx3++) {
-    outC->_L80.m_TrainData.m_NationalSystemIdentities[idx3] = kcg_lit_int64(0);
+    outC->_L80.m_TrainData.m_NationalSystemIdentities[idx3] = kcg_lit_int32(0);
   }
-  outC->_L80.m_TrainData.nid_operational = kcg_lit_int64(0);
-  outC->_L80.m_PosData.nid_lrbg = kcg_lit_int64(0);
+  outC->_L80.m_TrainData.nid_operational = kcg_lit_int32(0);
+  outC->_L80.m_PosData.nid_lrbg = kcg_lit_int32(0);
   outC->_L80.m_PosData.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L80.m_PosData.d_lrbg = kcg_lit_int64(0);
+  outC->_L80.m_PosData.d_lrbg = kcg_lit_int32(0);
   outC->_L80.m_PosData.q_dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L80.m_PosData.q_dlrbg = Q_DLRBG_Reverse;
-  outC->_L80.m_PosData.l_doubtover = kcg_lit_int64(0);
-  outC->_L80.m_PosData.l_doubtunder = kcg_lit_int64(0);
+  outC->_L80.m_PosData.l_doubtover = kcg_lit_int32(0);
+  outC->_L80.m_PosData.l_doubtunder = kcg_lit_int32(0);
   outC->_L80.m_PosData.q_length =
     Q_LENGTH_No_train_integrity_information_available;
-  outC->_L80.m_PosData.l_trainint = kcg_lit_int64(0);
-  outC->_L80.m_PosData.v_train = kcg_lit_int64(0);
+  outC->_L80.m_PosData.l_trainint = kcg_lit_int32(0);
+  outC->_L80.m_PosData.v_train = kcg_lit_int32(0);
   outC->_L80.m_PosData.q_dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L80.m_PosData.m_mode = M_MODE_Full_Supervision;
   outC->_L80.m_PosData.m_level = M_LEVEL_Level_0;
-  outC->_L80.m_PosData.nid_ntc = kcg_lit_int64(0);
-  outC->_L80.m_PosData.nid_prvlrbg = kcg_lit_int64(0);
-  outC->_L79.session.m_TrainData.nid_engine = kcg_lit_int64(0);
-  outC->_L79.session.m_TrainData.m_NumberOfOnboardPhoneNumbers = kcg_lit_int64(0);
+  outC->_L80.m_PosData.nid_ntc = kcg_lit_int32(0);
+  outC->_L80.m_PosData.nid_prvlrbg = kcg_lit_int32(0);
+  outC->_L79.session.m_TrainData.nid_engine = kcg_lit_int32(0);
+  outC->_L79.session.m_TrainData.m_NumberOfOnboardPhoneNumbers = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 1; idx5++) {
     outC->_L79.session.m_TrainData.m_OnboardPhoneNumbers[idx5].valid = kcg_true;
     for (idx4 = 0; idx4 < 15; idx4++) {
       outC->_L79.session.m_TrainData.m_OnboardPhoneNumbers[idx5].telephoneNumber[idx4] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
-  outC->_L79.session.m_TrainData.t_train_ref = kcg_lit_int64(0);
+  outC->_L79.session.m_TrainData.t_train_ref = kcg_lit_int32(0);
   outC->_L79.session.m_TrainData.nc_cdtrain = NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L79.session.m_TrainData.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->_L79.session.m_TrainData.l_train = kcg_lit_int64(0);
-  outC->_L79.session.m_TrainData.v_maxtrain = kcg_lit_int64(0);
+  outC->_L79.session.m_TrainData.l_train = kcg_lit_int32(0);
+  outC->_L79.session.m_TrainData.v_maxtrain = kcg_lit_int32(0);
   outC->_L79.session.m_TrainData.m_loadinggauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L79.session.m_TrainData.m_axleloadcat = M_AXLELOADCAT_A;
   outC->_L79.session.m_TrainData.m_airtight = M_AIRTIGHT_Not_fitted;
-  outC->_L79.session.m_TrainData.n_axle = kcg_lit_int64(0);
+  outC->_L79.session.m_TrainData.n_axle = kcg_lit_int32(0);
   for (idx6 = 0; idx6 < 4; idx6++) {
     outC->_L79.session.m_TrainData.m_TractionIdentities[idx6].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
     outC->_L79.session.m_TrainData.m_TractionIdentities[idx6].nid_ctraction =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx7 = 0; idx7 < 5; idx7++) {
     outC->_L79.session.m_TrainData.m_NationalSystemIdentities[idx7] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
-  outC->_L79.session.m_TrainData.nid_operational = kcg_lit_int64(0);
-  outC->_L79.session.m_PosData.nid_lrbg = kcg_lit_int64(0);
+  outC->_L79.session.m_TrainData.nid_operational = kcg_lit_int32(0);
+  outC->_L79.session.m_PosData.nid_lrbg = kcg_lit_int32(0);
   outC->_L79.session.m_PosData.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L79.session.m_PosData.d_lrbg = kcg_lit_int64(0);
+  outC->_L79.session.m_PosData.d_lrbg = kcg_lit_int32(0);
   outC->_L79.session.m_PosData.q_dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L79.session.m_PosData.q_dlrbg = Q_DLRBG_Reverse;
-  outC->_L79.session.m_PosData.l_doubtover = kcg_lit_int64(0);
-  outC->_L79.session.m_PosData.l_doubtunder = kcg_lit_int64(0);
+  outC->_L79.session.m_PosData.l_doubtover = kcg_lit_int32(0);
+  outC->_L79.session.m_PosData.l_doubtunder = kcg_lit_int32(0);
   outC->_L79.session.m_PosData.q_length =
     Q_LENGTH_No_train_integrity_information_available;
-  outC->_L79.session.m_PosData.l_trainint = kcg_lit_int64(0);
-  outC->_L79.session.m_PosData.v_train = kcg_lit_int64(0);
+  outC->_L79.session.m_PosData.l_trainint = kcg_lit_int32(0);
+  outC->_L79.session.m_PosData.v_train = kcg_lit_int32(0);
   outC->_L79.session.m_PosData.q_dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L79.session.m_PosData.m_mode = M_MODE_Full_Supervision;
   outC->_L79.session.m_PosData.m_level = M_LEVEL_Level_0;
-  outC->_L79.session.m_PosData.nid_ntc = kcg_lit_int64(0);
-  outC->_L79.session.m_PosData.nid_prvlrbg = kcg_lit_int64(0);
+  outC->_L79.session.m_PosData.nid_ntc = kcg_lit_int32(0);
+  outC->_L79.session.m_PosData.nid_prvlrbg = kcg_lit_int32(0);
   outC->_L79.config.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
-  outC->_L79.config.m_NationalParams.nid_c = kcg_lit_int64(0);
-  outC->_L79.config.m_NationalParams.v_nvshunt = kcg_lit_int64(0);
-  outC->_L79.config.m_NationalParams.v_nvstff = kcg_lit_int64(0);
-  outC->_L79.config.m_NationalParams.v_nvonsight = kcg_lit_int64(0);
-  outC->_L79.config.m_NationalParams.v_nvunfit = kcg_lit_int64(0);
-  outC->_L79.config.m_NationalParams.v_nvrel = kcg_lit_int64(0);
-  outC->_L79.config.m_NationalParams.t_nvcontact = kcg_lit_int64(0);
+  outC->_L79.config.m_NationalParams.nid_c = kcg_lit_int32(0);
+  outC->_L79.config.m_NationalParams.v_nvshunt = kcg_lit_int32(0);
+  outC->_L79.config.m_NationalParams.v_nvstff = kcg_lit_int32(0);
+  outC->_L79.config.m_NationalParams.v_nvonsight = kcg_lit_int32(0);
+  outC->_L79.config.m_NationalParams.v_nvunfit = kcg_lit_int32(0);
+  outC->_L79.config.m_NationalParams.v_nvrel = kcg_lit_int32(0);
+  outC->_L79.config.m_NationalParams.t_nvcontact = kcg_lit_int32(0);
   outC->_L79.config.m_MAReqParams.q_dir = Q_DIR_Reverse;
-  outC->_L79.config.m_MAReqParams.t_mar = kcg_lit_int64(0);
-  outC->_L79.config.m_MAReqParams.t_timeoutrqst = kcg_lit_int64(0);
-  outC->_L79.config.m_MAReqParams.t_cycrqst = kcg_lit_int64(0);
+  outC->_L79.config.m_MAReqParams.t_mar = kcg_lit_int32(0);
+  outC->_L79.config.m_MAReqParams.t_timeoutrqst = kcg_lit_int32(0);
+  outC->_L79.config.m_MAReqParams.t_cycrqst = kcg_lit_int32(0);
   outC->_L79.config.m_PosRepParams.q_dir = Q_DIR_Reverse;
   outC->_L79.config.m_PosRepParams.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L79.config.m_PosRepParams.t_cycloc = kcg_lit_int64(0);
-  outC->_L79.config.m_PosRepParams.d_cycloc = kcg_lit_int64(0);
+  outC->_L79.config.m_PosRepParams.t_cycloc = kcg_lit_int32(0);
+  outC->_L79.config.m_PosRepParams.d_cycloc = kcg_lit_int32(0);
   outC->_L79.config.m_PosRepParams.m_loc = M_LOC_Now;
   outC->_L79.config.m_PosRepParams.m_NumberOfIncrementalDistancesAndQualifiers =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx8 = 0; idx8 < 32; idx8++) {
     outC->_L79.config.m_PosRepParams.m_IncrementalDistancesAndQualifiers[idx8].d_loc =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L79.config.m_PosRepParams.m_IncrementalDistancesAndQualifiers[idx8].q_lgtloc =
       Q_LGTLOC_Min_safe_rear_end;
   }
   for (idx9 = 0; idx9 < 16; idx9++) {
     outC->_L79.diagnostic[idx9].valid = kcg_true;
-    outC->_L79.diagnostic[idx9].count = kcg_lit_int64(0);
-    outC->_L79.diagnostic[idx9].timestamp = kcg_lit_int64(0);
+    outC->_L79.diagnostic[idx9].count = kcg_lit_int32(0);
+    outC->_L79.diagnostic[idx9].timestamp = kcg_lit_int32(0);
     outC->_L79.diagnostic[idx9].diagType = DIAG_MSG_TYPE_Empty_RBC_Diagnostic_Pkg;
     outC->_L79.diagnostic[idx9].diagSrc = DIAG_MSG_SRC_Empty_RBC_Diagnostic_Pkg;
     outC->_L79.diagnostic[idx9].diagText = DIAG_MSG_Empty_RBC_Diagnostic_Pkg;
@@ -1092,197 +1092,197 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   for (idx12 = 0; idx12 < 8; idx12++) {
     outC->_L79.messageQueue.m_Entries[idx12].m_IsValid = kcg_true;
     outC->_L79.messageQueue.m_Entries[idx12].m_Entry.Header.radioDevice =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L79.messageQueue.m_Entries[idx12].m_Entry.Header.receivedSystemTime =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L79.messageQueue.m_Entries[idx12].m_Entry.Header.nid_message =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L79.messageQueue.m_Entries[idx12].m_Entry.Header.t_train =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L79.messageQueue.m_Entries[idx12].m_Entry.Header.m_ack =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L79.messageQueue.m_Entries[idx12].m_Entry.Header.nid_lrbg =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L79.messageQueue.m_Entries[idx12].m_Entry.Header.t_train_reference =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L79.messageQueue.m_Entries[idx12].m_Entry.Header.nid_em =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L79.messageQueue.m_Entries[idx12].m_Entry.Header.q_scale =
-      kcg_lit_int64(0);
-    outC->_L79.messageQueue.m_Entries[idx12].m_Entry.Header.d_sr = kcg_lit_int64(0);
+      kcg_lit_int32(0);
+    outC->_L79.messageQueue.m_Entries[idx12].m_Entry.Header.d_sr = kcg_lit_int32(0);
     outC->_L79.messageQueue.m_Entries[idx12].m_Entry.Header.t_sh_rqst =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L79.messageQueue.m_Entries[idx12].m_Entry.Header.d_ref =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L79.messageQueue.m_Entries[idx12].m_Entry.Header.q_dir =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L79.messageQueue.m_Entries[idx12].m_Entry.Header.d_emergencystop =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L79.messageQueue.m_Entries[idx12].m_Entry.Header.m_version =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     for (idx10 = 0; idx10 < 30; idx10++) {
       outC->_L79.messageQueue.m_Entries[idx12].m_Entry.Messages.PacketHeaders[idx10].nid_packet =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L79.messageQueue.m_Entries[idx12].m_Entry.Messages.PacketHeaders[idx10].q_dir =
         Q_DIR_Reverse;
       outC->_L79.messageQueue.m_Entries[idx12].m_Entry.Messages.PacketHeaders[idx10].valid =
         kcg_true;
       outC->_L79.messageQueue.m_Entries[idx12].m_Entry.Messages.PacketHeaders[idx10].startAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L79.messageQueue.m_Entries[idx12].m_Entry.Messages.PacketHeaders[idx10].endAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
     for (idx11 = 0; idx11 < 500; idx11++) {
       outC->_L79.messageQueue.m_Entries[idx12].m_Entry.Messages.PacketData[idx11] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
-  outC->_L79.clockk.m_Value = kcg_lit_int64(0);
-  outC->_L79.lastSentTrackTrainMessage.Header.radioDevice = kcg_lit_int64(0);
+  outC->_L79.clockk.m_Value = kcg_lit_int32(0);
+  outC->_L79.lastSentTrackTrainMessage.Header.radioDevice = kcg_lit_int32(0);
   outC->_L79.lastSentTrackTrainMessage.Header.receivedSystemTime =
-    kcg_lit_int64(0);
-  outC->_L79.lastSentTrackTrainMessage.Header.nid_message = kcg_lit_int64(0);
-  outC->_L79.lastSentTrackTrainMessage.Header.t_train = kcg_lit_int64(0);
-  outC->_L79.lastSentTrackTrainMessage.Header.m_ack = kcg_lit_int64(0);
-  outC->_L79.lastSentTrackTrainMessage.Header.nid_lrbg = kcg_lit_int64(0);
-  outC->_L79.lastSentTrackTrainMessage.Header.t_train_reference = kcg_lit_int64(
+    kcg_lit_int32(0);
+  outC->_L79.lastSentTrackTrainMessage.Header.nid_message = kcg_lit_int32(0);
+  outC->_L79.lastSentTrackTrainMessage.Header.t_train = kcg_lit_int32(0);
+  outC->_L79.lastSentTrackTrainMessage.Header.m_ack = kcg_lit_int32(0);
+  outC->_L79.lastSentTrackTrainMessage.Header.nid_lrbg = kcg_lit_int32(0);
+  outC->_L79.lastSentTrackTrainMessage.Header.t_train_reference = kcg_lit_int32(
       0);
-  outC->_L79.lastSentTrackTrainMessage.Header.nid_em = kcg_lit_int64(0);
-  outC->_L79.lastSentTrackTrainMessage.Header.q_scale = kcg_lit_int64(0);
-  outC->_L79.lastSentTrackTrainMessage.Header.d_sr = kcg_lit_int64(0);
-  outC->_L79.lastSentTrackTrainMessage.Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L79.lastSentTrackTrainMessage.Header.d_ref = kcg_lit_int64(0);
-  outC->_L79.lastSentTrackTrainMessage.Header.q_dir = kcg_lit_int64(0);
-  outC->_L79.lastSentTrackTrainMessage.Header.d_emergencystop = kcg_lit_int64(0);
-  outC->_L79.lastSentTrackTrainMessage.Header.m_version = kcg_lit_int64(0);
+  outC->_L79.lastSentTrackTrainMessage.Header.nid_em = kcg_lit_int32(0);
+  outC->_L79.lastSentTrackTrainMessage.Header.q_scale = kcg_lit_int32(0);
+  outC->_L79.lastSentTrackTrainMessage.Header.d_sr = kcg_lit_int32(0);
+  outC->_L79.lastSentTrackTrainMessage.Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L79.lastSentTrackTrainMessage.Header.d_ref = kcg_lit_int32(0);
+  outC->_L79.lastSentTrackTrainMessage.Header.q_dir = kcg_lit_int32(0);
+  outC->_L79.lastSentTrackTrainMessage.Header.d_emergencystop = kcg_lit_int32(0);
+  outC->_L79.lastSentTrackTrainMessage.Header.m_version = kcg_lit_int32(0);
   for (idx13 = 0; idx13 < 30; idx13++) {
     outC->_L79.lastSentTrackTrainMessage.Messages.PacketHeaders[idx13].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L79.lastSentTrackTrainMessage.Messages.PacketHeaders[idx13].q_dir =
       Q_DIR_Reverse;
     outC->_L79.lastSentTrackTrainMessage.Messages.PacketHeaders[idx13].valid =
       kcg_true;
     outC->_L79.lastSentTrackTrainMessage.Messages.PacketHeaders[idx13].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L79.lastSentTrackTrainMessage.Messages.PacketHeaders[idx13].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx14 = 0; idx14 < 500; idx14++) {
     outC->_L79.lastSentTrackTrainMessage.Messages.PacketData[idx14] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx17 = 0; idx17 < 8; idx17++) {
     outC->_L78.m_Entries[idx17].m_IsValid = kcg_true;
-    outC->_L78.m_Entries[idx17].m_Entry.Header.radioDevice = kcg_lit_int64(0);
+    outC->_L78.m_Entries[idx17].m_Entry.Header.radioDevice = kcg_lit_int32(0);
     outC->_L78.m_Entries[idx17].m_Entry.Header.receivedSystemTime =
-      kcg_lit_int64(0);
-    outC->_L78.m_Entries[idx17].m_Entry.Header.nid_message = kcg_lit_int64(0);
-    outC->_L78.m_Entries[idx17].m_Entry.Header.t_train = kcg_lit_int64(0);
-    outC->_L78.m_Entries[idx17].m_Entry.Header.m_ack = kcg_lit_int64(0);
-    outC->_L78.m_Entries[idx17].m_Entry.Header.nid_lrbg = kcg_lit_int64(0);
-    outC->_L78.m_Entries[idx17].m_Entry.Header.t_train_reference = kcg_lit_int64(0);
-    outC->_L78.m_Entries[idx17].m_Entry.Header.nid_em = kcg_lit_int64(0);
-    outC->_L78.m_Entries[idx17].m_Entry.Header.q_scale = kcg_lit_int64(0);
-    outC->_L78.m_Entries[idx17].m_Entry.Header.d_sr = kcg_lit_int64(0);
-    outC->_L78.m_Entries[idx17].m_Entry.Header.t_sh_rqst = kcg_lit_int64(0);
-    outC->_L78.m_Entries[idx17].m_Entry.Header.d_ref = kcg_lit_int64(0);
-    outC->_L78.m_Entries[idx17].m_Entry.Header.q_dir = kcg_lit_int64(0);
-    outC->_L78.m_Entries[idx17].m_Entry.Header.d_emergencystop = kcg_lit_int64(0);
-    outC->_L78.m_Entries[idx17].m_Entry.Header.m_version = kcg_lit_int64(0);
+      kcg_lit_int32(0);
+    outC->_L78.m_Entries[idx17].m_Entry.Header.nid_message = kcg_lit_int32(0);
+    outC->_L78.m_Entries[idx17].m_Entry.Header.t_train = kcg_lit_int32(0);
+    outC->_L78.m_Entries[idx17].m_Entry.Header.m_ack = kcg_lit_int32(0);
+    outC->_L78.m_Entries[idx17].m_Entry.Header.nid_lrbg = kcg_lit_int32(0);
+    outC->_L78.m_Entries[idx17].m_Entry.Header.t_train_reference = kcg_lit_int32(0);
+    outC->_L78.m_Entries[idx17].m_Entry.Header.nid_em = kcg_lit_int32(0);
+    outC->_L78.m_Entries[idx17].m_Entry.Header.q_scale = kcg_lit_int32(0);
+    outC->_L78.m_Entries[idx17].m_Entry.Header.d_sr = kcg_lit_int32(0);
+    outC->_L78.m_Entries[idx17].m_Entry.Header.t_sh_rqst = kcg_lit_int32(0);
+    outC->_L78.m_Entries[idx17].m_Entry.Header.d_ref = kcg_lit_int32(0);
+    outC->_L78.m_Entries[idx17].m_Entry.Header.q_dir = kcg_lit_int32(0);
+    outC->_L78.m_Entries[idx17].m_Entry.Header.d_emergencystop = kcg_lit_int32(0);
+    outC->_L78.m_Entries[idx17].m_Entry.Header.m_version = kcg_lit_int32(0);
     for (idx15 = 0; idx15 < 30; idx15++) {
       outC->_L78.m_Entries[idx17].m_Entry.Messages.PacketHeaders[idx15].nid_packet =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L78.m_Entries[idx17].m_Entry.Messages.PacketHeaders[idx15].q_dir =
         Q_DIR_Reverse;
       outC->_L78.m_Entries[idx17].m_Entry.Messages.PacketHeaders[idx15].valid =
         kcg_true;
       outC->_L78.m_Entries[idx17].m_Entry.Messages.PacketHeaders[idx15].startAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L78.m_Entries[idx17].m_Entry.Messages.PacketHeaders[idx15].endAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
     for (idx16 = 0; idx16 < 500; idx16++) {
       outC->_L78.m_Entries[idx17].m_Entry.Messages.PacketData[idx16] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
-  outC->_L75.session.m_TrainData.nid_engine = kcg_lit_int64(0);
-  outC->_L75.session.m_TrainData.m_NumberOfOnboardPhoneNumbers = kcg_lit_int64(0);
+  outC->_L75.session.m_TrainData.nid_engine = kcg_lit_int32(0);
+  outC->_L75.session.m_TrainData.m_NumberOfOnboardPhoneNumbers = kcg_lit_int32(0);
   for (idx19 = 0; idx19 < 1; idx19++) {
     outC->_L75.session.m_TrainData.m_OnboardPhoneNumbers[idx19].valid = kcg_true;
     for (idx18 = 0; idx18 < 15; idx18++) {
       outC->_L75.session.m_TrainData.m_OnboardPhoneNumbers[idx19].telephoneNumber[idx18] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
-  outC->_L75.session.m_TrainData.t_train_ref = kcg_lit_int64(0);
+  outC->_L75.session.m_TrainData.t_train_ref = kcg_lit_int32(0);
   outC->_L75.session.m_TrainData.nc_cdtrain = NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L75.session.m_TrainData.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->_L75.session.m_TrainData.l_train = kcg_lit_int64(0);
-  outC->_L75.session.m_TrainData.v_maxtrain = kcg_lit_int64(0);
+  outC->_L75.session.m_TrainData.l_train = kcg_lit_int32(0);
+  outC->_L75.session.m_TrainData.v_maxtrain = kcg_lit_int32(0);
   outC->_L75.session.m_TrainData.m_loadinggauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L75.session.m_TrainData.m_axleloadcat = M_AXLELOADCAT_A;
   outC->_L75.session.m_TrainData.m_airtight = M_AIRTIGHT_Not_fitted;
-  outC->_L75.session.m_TrainData.n_axle = kcg_lit_int64(0);
+  outC->_L75.session.m_TrainData.n_axle = kcg_lit_int32(0);
   for (idx20 = 0; idx20 < 4; idx20++) {
     outC->_L75.session.m_TrainData.m_TractionIdentities[idx20].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
     outC->_L75.session.m_TrainData.m_TractionIdentities[idx20].nid_ctraction =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx21 = 0; idx21 < 5; idx21++) {
     outC->_L75.session.m_TrainData.m_NationalSystemIdentities[idx21] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
-  outC->_L75.session.m_TrainData.nid_operational = kcg_lit_int64(0);
-  outC->_L75.session.m_PosData.nid_lrbg = kcg_lit_int64(0);
+  outC->_L75.session.m_TrainData.nid_operational = kcg_lit_int32(0);
+  outC->_L75.session.m_PosData.nid_lrbg = kcg_lit_int32(0);
   outC->_L75.session.m_PosData.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L75.session.m_PosData.d_lrbg = kcg_lit_int64(0);
+  outC->_L75.session.m_PosData.d_lrbg = kcg_lit_int32(0);
   outC->_L75.session.m_PosData.q_dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L75.session.m_PosData.q_dlrbg = Q_DLRBG_Reverse;
-  outC->_L75.session.m_PosData.l_doubtover = kcg_lit_int64(0);
-  outC->_L75.session.m_PosData.l_doubtunder = kcg_lit_int64(0);
+  outC->_L75.session.m_PosData.l_doubtover = kcg_lit_int32(0);
+  outC->_L75.session.m_PosData.l_doubtunder = kcg_lit_int32(0);
   outC->_L75.session.m_PosData.q_length =
     Q_LENGTH_No_train_integrity_information_available;
-  outC->_L75.session.m_PosData.l_trainint = kcg_lit_int64(0);
-  outC->_L75.session.m_PosData.v_train = kcg_lit_int64(0);
+  outC->_L75.session.m_PosData.l_trainint = kcg_lit_int32(0);
+  outC->_L75.session.m_PosData.v_train = kcg_lit_int32(0);
   outC->_L75.session.m_PosData.q_dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L75.session.m_PosData.m_mode = M_MODE_Full_Supervision;
   outC->_L75.session.m_PosData.m_level = M_LEVEL_Level_0;
-  outC->_L75.session.m_PosData.nid_ntc = kcg_lit_int64(0);
-  outC->_L75.session.m_PosData.nid_prvlrbg = kcg_lit_int64(0);
+  outC->_L75.session.m_PosData.nid_ntc = kcg_lit_int32(0);
+  outC->_L75.session.m_PosData.nid_prvlrbg = kcg_lit_int32(0);
   outC->_L75.config.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
-  outC->_L75.config.m_NationalParams.nid_c = kcg_lit_int64(0);
-  outC->_L75.config.m_NationalParams.v_nvshunt = kcg_lit_int64(0);
-  outC->_L75.config.m_NationalParams.v_nvstff = kcg_lit_int64(0);
-  outC->_L75.config.m_NationalParams.v_nvonsight = kcg_lit_int64(0);
-  outC->_L75.config.m_NationalParams.v_nvunfit = kcg_lit_int64(0);
-  outC->_L75.config.m_NationalParams.v_nvrel = kcg_lit_int64(0);
-  outC->_L75.config.m_NationalParams.t_nvcontact = kcg_lit_int64(0);
+  outC->_L75.config.m_NationalParams.nid_c = kcg_lit_int32(0);
+  outC->_L75.config.m_NationalParams.v_nvshunt = kcg_lit_int32(0);
+  outC->_L75.config.m_NationalParams.v_nvstff = kcg_lit_int32(0);
+  outC->_L75.config.m_NationalParams.v_nvonsight = kcg_lit_int32(0);
+  outC->_L75.config.m_NationalParams.v_nvunfit = kcg_lit_int32(0);
+  outC->_L75.config.m_NationalParams.v_nvrel = kcg_lit_int32(0);
+  outC->_L75.config.m_NationalParams.t_nvcontact = kcg_lit_int32(0);
   outC->_L75.config.m_MAReqParams.q_dir = Q_DIR_Reverse;
-  outC->_L75.config.m_MAReqParams.t_mar = kcg_lit_int64(0);
-  outC->_L75.config.m_MAReqParams.t_timeoutrqst = kcg_lit_int64(0);
-  outC->_L75.config.m_MAReqParams.t_cycrqst = kcg_lit_int64(0);
+  outC->_L75.config.m_MAReqParams.t_mar = kcg_lit_int32(0);
+  outC->_L75.config.m_MAReqParams.t_timeoutrqst = kcg_lit_int32(0);
+  outC->_L75.config.m_MAReqParams.t_cycrqst = kcg_lit_int32(0);
   outC->_L75.config.m_PosRepParams.q_dir = Q_DIR_Reverse;
   outC->_L75.config.m_PosRepParams.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L75.config.m_PosRepParams.t_cycloc = kcg_lit_int64(0);
-  outC->_L75.config.m_PosRepParams.d_cycloc = kcg_lit_int64(0);
+  outC->_L75.config.m_PosRepParams.t_cycloc = kcg_lit_int32(0);
+  outC->_L75.config.m_PosRepParams.d_cycloc = kcg_lit_int32(0);
   outC->_L75.config.m_PosRepParams.m_loc = M_LOC_Now;
   outC->_L75.config.m_PosRepParams.m_NumberOfIncrementalDistancesAndQualifiers =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx22 = 0; idx22 < 32; idx22++) {
     outC->_L75.config.m_PosRepParams.m_IncrementalDistancesAndQualifiers[idx22].d_loc =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L75.config.m_PosRepParams.m_IncrementalDistancesAndQualifiers[idx22].q_lgtloc =
       Q_LGTLOC_Min_safe_rear_end;
   }
   for (idx23 = 0; idx23 < 16; idx23++) {
     outC->_L75.diagnostic[idx23].valid = kcg_true;
-    outC->_L75.diagnostic[idx23].count = kcg_lit_int64(0);
-    outC->_L75.diagnostic[idx23].timestamp = kcg_lit_int64(0);
+    outC->_L75.diagnostic[idx23].count = kcg_lit_int32(0);
+    outC->_L75.diagnostic[idx23].timestamp = kcg_lit_int32(0);
     outC->_L75.diagnostic[idx23].diagType = DIAG_MSG_TYPE_Empty_RBC_Diagnostic_Pkg;
     outC->_L75.diagnostic[idx23].diagSrc = DIAG_MSG_SRC_Empty_RBC_Diagnostic_Pkg;
     outC->_L75.diagnostic[idx23].diagText = DIAG_MSG_Empty_RBC_Diagnostic_Pkg;
@@ -1290,162 +1290,162 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   for (idx26 = 0; idx26 < 8; idx26++) {
     outC->_L75.messageQueue.m_Entries[idx26].m_IsValid = kcg_true;
     outC->_L75.messageQueue.m_Entries[idx26].m_Entry.Header.radioDevice =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L75.messageQueue.m_Entries[idx26].m_Entry.Header.receivedSystemTime =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L75.messageQueue.m_Entries[idx26].m_Entry.Header.nid_message =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L75.messageQueue.m_Entries[idx26].m_Entry.Header.t_train =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L75.messageQueue.m_Entries[idx26].m_Entry.Header.m_ack =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L75.messageQueue.m_Entries[idx26].m_Entry.Header.nid_lrbg =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L75.messageQueue.m_Entries[idx26].m_Entry.Header.t_train_reference =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L75.messageQueue.m_Entries[idx26].m_Entry.Header.nid_em =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L75.messageQueue.m_Entries[idx26].m_Entry.Header.q_scale =
-      kcg_lit_int64(0);
-    outC->_L75.messageQueue.m_Entries[idx26].m_Entry.Header.d_sr = kcg_lit_int64(0);
+      kcg_lit_int32(0);
+    outC->_L75.messageQueue.m_Entries[idx26].m_Entry.Header.d_sr = kcg_lit_int32(0);
     outC->_L75.messageQueue.m_Entries[idx26].m_Entry.Header.t_sh_rqst =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L75.messageQueue.m_Entries[idx26].m_Entry.Header.d_ref =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L75.messageQueue.m_Entries[idx26].m_Entry.Header.q_dir =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L75.messageQueue.m_Entries[idx26].m_Entry.Header.d_emergencystop =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L75.messageQueue.m_Entries[idx26].m_Entry.Header.m_version =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     for (idx24 = 0; idx24 < 30; idx24++) {
       outC->_L75.messageQueue.m_Entries[idx26].m_Entry.Messages.PacketHeaders[idx24].nid_packet =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L75.messageQueue.m_Entries[idx26].m_Entry.Messages.PacketHeaders[idx24].q_dir =
         Q_DIR_Reverse;
       outC->_L75.messageQueue.m_Entries[idx26].m_Entry.Messages.PacketHeaders[idx24].valid =
         kcg_true;
       outC->_L75.messageQueue.m_Entries[idx26].m_Entry.Messages.PacketHeaders[idx24].startAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L75.messageQueue.m_Entries[idx26].m_Entry.Messages.PacketHeaders[idx24].endAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
     for (idx25 = 0; idx25 < 500; idx25++) {
       outC->_L75.messageQueue.m_Entries[idx26].m_Entry.Messages.PacketData[idx25] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
-  outC->_L75.clockk.m_Value = kcg_lit_int64(0);
-  outC->_L75.lastSentTrackTrainMessage.Header.radioDevice = kcg_lit_int64(0);
+  outC->_L75.clockk.m_Value = kcg_lit_int32(0);
+  outC->_L75.lastSentTrackTrainMessage.Header.radioDevice = kcg_lit_int32(0);
   outC->_L75.lastSentTrackTrainMessage.Header.receivedSystemTime =
-    kcg_lit_int64(0);
-  outC->_L75.lastSentTrackTrainMessage.Header.nid_message = kcg_lit_int64(0);
-  outC->_L75.lastSentTrackTrainMessage.Header.t_train = kcg_lit_int64(0);
-  outC->_L75.lastSentTrackTrainMessage.Header.m_ack = kcg_lit_int64(0);
-  outC->_L75.lastSentTrackTrainMessage.Header.nid_lrbg = kcg_lit_int64(0);
-  outC->_L75.lastSentTrackTrainMessage.Header.t_train_reference = kcg_lit_int64(
+    kcg_lit_int32(0);
+  outC->_L75.lastSentTrackTrainMessage.Header.nid_message = kcg_lit_int32(0);
+  outC->_L75.lastSentTrackTrainMessage.Header.t_train = kcg_lit_int32(0);
+  outC->_L75.lastSentTrackTrainMessage.Header.m_ack = kcg_lit_int32(0);
+  outC->_L75.lastSentTrackTrainMessage.Header.nid_lrbg = kcg_lit_int32(0);
+  outC->_L75.lastSentTrackTrainMessage.Header.t_train_reference = kcg_lit_int32(
       0);
-  outC->_L75.lastSentTrackTrainMessage.Header.nid_em = kcg_lit_int64(0);
-  outC->_L75.lastSentTrackTrainMessage.Header.q_scale = kcg_lit_int64(0);
-  outC->_L75.lastSentTrackTrainMessage.Header.d_sr = kcg_lit_int64(0);
-  outC->_L75.lastSentTrackTrainMessage.Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L75.lastSentTrackTrainMessage.Header.d_ref = kcg_lit_int64(0);
-  outC->_L75.lastSentTrackTrainMessage.Header.q_dir = kcg_lit_int64(0);
-  outC->_L75.lastSentTrackTrainMessage.Header.d_emergencystop = kcg_lit_int64(0);
-  outC->_L75.lastSentTrackTrainMessage.Header.m_version = kcg_lit_int64(0);
+  outC->_L75.lastSentTrackTrainMessage.Header.nid_em = kcg_lit_int32(0);
+  outC->_L75.lastSentTrackTrainMessage.Header.q_scale = kcg_lit_int32(0);
+  outC->_L75.lastSentTrackTrainMessage.Header.d_sr = kcg_lit_int32(0);
+  outC->_L75.lastSentTrackTrainMessage.Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L75.lastSentTrackTrainMessage.Header.d_ref = kcg_lit_int32(0);
+  outC->_L75.lastSentTrackTrainMessage.Header.q_dir = kcg_lit_int32(0);
+  outC->_L75.lastSentTrackTrainMessage.Header.d_emergencystop = kcg_lit_int32(0);
+  outC->_L75.lastSentTrackTrainMessage.Header.m_version = kcg_lit_int32(0);
   for (idx27 = 0; idx27 < 30; idx27++) {
     outC->_L75.lastSentTrackTrainMessage.Messages.PacketHeaders[idx27].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L75.lastSentTrackTrainMessage.Messages.PacketHeaders[idx27].q_dir =
       Q_DIR_Reverse;
     outC->_L75.lastSentTrackTrainMessage.Messages.PacketHeaders[idx27].valid =
       kcg_true;
     outC->_L75.lastSentTrackTrainMessage.Messages.PacketHeaders[idx27].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L75.lastSentTrackTrainMessage.Messages.PacketHeaders[idx27].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx28 = 0; idx28 < 500; idx28++) {
     outC->_L75.lastSentTrackTrainMessage.Messages.PacketData[idx28] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
-  outC->_L76.session.m_TrainData.nid_engine = kcg_lit_int64(0);
-  outC->_L76.session.m_TrainData.m_NumberOfOnboardPhoneNumbers = kcg_lit_int64(0);
+  outC->_L76.session.m_TrainData.nid_engine = kcg_lit_int32(0);
+  outC->_L76.session.m_TrainData.m_NumberOfOnboardPhoneNumbers = kcg_lit_int32(0);
   for (idx30 = 0; idx30 < 1; idx30++) {
     outC->_L76.session.m_TrainData.m_OnboardPhoneNumbers[idx30].valid = kcg_true;
     for (idx29 = 0; idx29 < 15; idx29++) {
       outC->_L76.session.m_TrainData.m_OnboardPhoneNumbers[idx30].telephoneNumber[idx29] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
-  outC->_L76.session.m_TrainData.t_train_ref = kcg_lit_int64(0);
+  outC->_L76.session.m_TrainData.t_train_ref = kcg_lit_int32(0);
   outC->_L76.session.m_TrainData.nc_cdtrain = NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L76.session.m_TrainData.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->_L76.session.m_TrainData.l_train = kcg_lit_int64(0);
-  outC->_L76.session.m_TrainData.v_maxtrain = kcg_lit_int64(0);
+  outC->_L76.session.m_TrainData.l_train = kcg_lit_int32(0);
+  outC->_L76.session.m_TrainData.v_maxtrain = kcg_lit_int32(0);
   outC->_L76.session.m_TrainData.m_loadinggauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L76.session.m_TrainData.m_axleloadcat = M_AXLELOADCAT_A;
   outC->_L76.session.m_TrainData.m_airtight = M_AIRTIGHT_Not_fitted;
-  outC->_L76.session.m_TrainData.n_axle = kcg_lit_int64(0);
+  outC->_L76.session.m_TrainData.n_axle = kcg_lit_int32(0);
   for (idx31 = 0; idx31 < 4; idx31++) {
     outC->_L76.session.m_TrainData.m_TractionIdentities[idx31].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
     outC->_L76.session.m_TrainData.m_TractionIdentities[idx31].nid_ctraction =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx32 = 0; idx32 < 5; idx32++) {
     outC->_L76.session.m_TrainData.m_NationalSystemIdentities[idx32] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
-  outC->_L76.session.m_TrainData.nid_operational = kcg_lit_int64(0);
-  outC->_L76.session.m_PosData.nid_lrbg = kcg_lit_int64(0);
+  outC->_L76.session.m_TrainData.nid_operational = kcg_lit_int32(0);
+  outC->_L76.session.m_PosData.nid_lrbg = kcg_lit_int32(0);
   outC->_L76.session.m_PosData.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L76.session.m_PosData.d_lrbg = kcg_lit_int64(0);
+  outC->_L76.session.m_PosData.d_lrbg = kcg_lit_int32(0);
   outC->_L76.session.m_PosData.q_dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L76.session.m_PosData.q_dlrbg = Q_DLRBG_Reverse;
-  outC->_L76.session.m_PosData.l_doubtover = kcg_lit_int64(0);
-  outC->_L76.session.m_PosData.l_doubtunder = kcg_lit_int64(0);
+  outC->_L76.session.m_PosData.l_doubtover = kcg_lit_int32(0);
+  outC->_L76.session.m_PosData.l_doubtunder = kcg_lit_int32(0);
   outC->_L76.session.m_PosData.q_length =
     Q_LENGTH_No_train_integrity_information_available;
-  outC->_L76.session.m_PosData.l_trainint = kcg_lit_int64(0);
-  outC->_L76.session.m_PosData.v_train = kcg_lit_int64(0);
+  outC->_L76.session.m_PosData.l_trainint = kcg_lit_int32(0);
+  outC->_L76.session.m_PosData.v_train = kcg_lit_int32(0);
   outC->_L76.session.m_PosData.q_dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L76.session.m_PosData.m_mode = M_MODE_Full_Supervision;
   outC->_L76.session.m_PosData.m_level = M_LEVEL_Level_0;
-  outC->_L76.session.m_PosData.nid_ntc = kcg_lit_int64(0);
-  outC->_L76.session.m_PosData.nid_prvlrbg = kcg_lit_int64(0);
+  outC->_L76.session.m_PosData.nid_ntc = kcg_lit_int32(0);
+  outC->_L76.session.m_PosData.nid_prvlrbg = kcg_lit_int32(0);
   outC->_L76.config.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
-  outC->_L76.config.m_NationalParams.nid_c = kcg_lit_int64(0);
-  outC->_L76.config.m_NationalParams.v_nvshunt = kcg_lit_int64(0);
-  outC->_L76.config.m_NationalParams.v_nvstff = kcg_lit_int64(0);
-  outC->_L76.config.m_NationalParams.v_nvonsight = kcg_lit_int64(0);
-  outC->_L76.config.m_NationalParams.v_nvunfit = kcg_lit_int64(0);
-  outC->_L76.config.m_NationalParams.v_nvrel = kcg_lit_int64(0);
-  outC->_L76.config.m_NationalParams.t_nvcontact = kcg_lit_int64(0);
+  outC->_L76.config.m_NationalParams.nid_c = kcg_lit_int32(0);
+  outC->_L76.config.m_NationalParams.v_nvshunt = kcg_lit_int32(0);
+  outC->_L76.config.m_NationalParams.v_nvstff = kcg_lit_int32(0);
+  outC->_L76.config.m_NationalParams.v_nvonsight = kcg_lit_int32(0);
+  outC->_L76.config.m_NationalParams.v_nvunfit = kcg_lit_int32(0);
+  outC->_L76.config.m_NationalParams.v_nvrel = kcg_lit_int32(0);
+  outC->_L76.config.m_NationalParams.t_nvcontact = kcg_lit_int32(0);
   outC->_L76.config.m_MAReqParams.q_dir = Q_DIR_Reverse;
-  outC->_L76.config.m_MAReqParams.t_mar = kcg_lit_int64(0);
-  outC->_L76.config.m_MAReqParams.t_timeoutrqst = kcg_lit_int64(0);
-  outC->_L76.config.m_MAReqParams.t_cycrqst = kcg_lit_int64(0);
+  outC->_L76.config.m_MAReqParams.t_mar = kcg_lit_int32(0);
+  outC->_L76.config.m_MAReqParams.t_timeoutrqst = kcg_lit_int32(0);
+  outC->_L76.config.m_MAReqParams.t_cycrqst = kcg_lit_int32(0);
   outC->_L76.config.m_PosRepParams.q_dir = Q_DIR_Reverse;
   outC->_L76.config.m_PosRepParams.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L76.config.m_PosRepParams.t_cycloc = kcg_lit_int64(0);
-  outC->_L76.config.m_PosRepParams.d_cycloc = kcg_lit_int64(0);
+  outC->_L76.config.m_PosRepParams.t_cycloc = kcg_lit_int32(0);
+  outC->_L76.config.m_PosRepParams.d_cycloc = kcg_lit_int32(0);
   outC->_L76.config.m_PosRepParams.m_loc = M_LOC_Now;
   outC->_L76.config.m_PosRepParams.m_NumberOfIncrementalDistancesAndQualifiers =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx33 = 0; idx33 < 32; idx33++) {
     outC->_L76.config.m_PosRepParams.m_IncrementalDistancesAndQualifiers[idx33].d_loc =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L76.config.m_PosRepParams.m_IncrementalDistancesAndQualifiers[idx33].q_lgtloc =
       Q_LGTLOC_Min_safe_rear_end;
   }
   for (idx34 = 0; idx34 < 16; idx34++) {
     outC->_L76.diagnostic[idx34].valid = kcg_true;
-    outC->_L76.diagnostic[idx34].count = kcg_lit_int64(0);
-    outC->_L76.diagnostic[idx34].timestamp = kcg_lit_int64(0);
+    outC->_L76.diagnostic[idx34].count = kcg_lit_int32(0);
+    outC->_L76.diagnostic[idx34].timestamp = kcg_lit_int32(0);
     outC->_L76.diagnostic[idx34].diagType = DIAG_MSG_TYPE_Empty_RBC_Diagnostic_Pkg;
     outC->_L76.diagnostic[idx34].diagSrc = DIAG_MSG_SRC_Empty_RBC_Diagnostic_Pkg;
     outC->_L76.diagnostic[idx34].diagText = DIAG_MSG_Empty_RBC_Diagnostic_Pkg;
@@ -1453,425 +1453,425 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   for (idx37 = 0; idx37 < 8; idx37++) {
     outC->_L76.messageQueue.m_Entries[idx37].m_IsValid = kcg_true;
     outC->_L76.messageQueue.m_Entries[idx37].m_Entry.Header.radioDevice =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L76.messageQueue.m_Entries[idx37].m_Entry.Header.receivedSystemTime =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L76.messageQueue.m_Entries[idx37].m_Entry.Header.nid_message =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L76.messageQueue.m_Entries[idx37].m_Entry.Header.t_train =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L76.messageQueue.m_Entries[idx37].m_Entry.Header.m_ack =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L76.messageQueue.m_Entries[idx37].m_Entry.Header.nid_lrbg =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L76.messageQueue.m_Entries[idx37].m_Entry.Header.t_train_reference =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L76.messageQueue.m_Entries[idx37].m_Entry.Header.nid_em =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L76.messageQueue.m_Entries[idx37].m_Entry.Header.q_scale =
-      kcg_lit_int64(0);
-    outC->_L76.messageQueue.m_Entries[idx37].m_Entry.Header.d_sr = kcg_lit_int64(0);
+      kcg_lit_int32(0);
+    outC->_L76.messageQueue.m_Entries[idx37].m_Entry.Header.d_sr = kcg_lit_int32(0);
     outC->_L76.messageQueue.m_Entries[idx37].m_Entry.Header.t_sh_rqst =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L76.messageQueue.m_Entries[idx37].m_Entry.Header.d_ref =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L76.messageQueue.m_Entries[idx37].m_Entry.Header.q_dir =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L76.messageQueue.m_Entries[idx37].m_Entry.Header.d_emergencystop =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L76.messageQueue.m_Entries[idx37].m_Entry.Header.m_version =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     for (idx35 = 0; idx35 < 30; idx35++) {
       outC->_L76.messageQueue.m_Entries[idx37].m_Entry.Messages.PacketHeaders[idx35].nid_packet =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L76.messageQueue.m_Entries[idx37].m_Entry.Messages.PacketHeaders[idx35].q_dir =
         Q_DIR_Reverse;
       outC->_L76.messageQueue.m_Entries[idx37].m_Entry.Messages.PacketHeaders[idx35].valid =
         kcg_true;
       outC->_L76.messageQueue.m_Entries[idx37].m_Entry.Messages.PacketHeaders[idx35].startAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L76.messageQueue.m_Entries[idx37].m_Entry.Messages.PacketHeaders[idx35].endAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
     for (idx36 = 0; idx36 < 500; idx36++) {
       outC->_L76.messageQueue.m_Entries[idx37].m_Entry.Messages.PacketData[idx36] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
-  outC->_L76.clockk.m_Value = kcg_lit_int64(0);
-  outC->_L76.lastSentTrackTrainMessage.Header.radioDevice = kcg_lit_int64(0);
+  outC->_L76.clockk.m_Value = kcg_lit_int32(0);
+  outC->_L76.lastSentTrackTrainMessage.Header.radioDevice = kcg_lit_int32(0);
   outC->_L76.lastSentTrackTrainMessage.Header.receivedSystemTime =
-    kcg_lit_int64(0);
-  outC->_L76.lastSentTrackTrainMessage.Header.nid_message = kcg_lit_int64(0);
-  outC->_L76.lastSentTrackTrainMessage.Header.t_train = kcg_lit_int64(0);
-  outC->_L76.lastSentTrackTrainMessage.Header.m_ack = kcg_lit_int64(0);
-  outC->_L76.lastSentTrackTrainMessage.Header.nid_lrbg = kcg_lit_int64(0);
-  outC->_L76.lastSentTrackTrainMessage.Header.t_train_reference = kcg_lit_int64(
+    kcg_lit_int32(0);
+  outC->_L76.lastSentTrackTrainMessage.Header.nid_message = kcg_lit_int32(0);
+  outC->_L76.lastSentTrackTrainMessage.Header.t_train = kcg_lit_int32(0);
+  outC->_L76.lastSentTrackTrainMessage.Header.m_ack = kcg_lit_int32(0);
+  outC->_L76.lastSentTrackTrainMessage.Header.nid_lrbg = kcg_lit_int32(0);
+  outC->_L76.lastSentTrackTrainMessage.Header.t_train_reference = kcg_lit_int32(
       0);
-  outC->_L76.lastSentTrackTrainMessage.Header.nid_em = kcg_lit_int64(0);
-  outC->_L76.lastSentTrackTrainMessage.Header.q_scale = kcg_lit_int64(0);
-  outC->_L76.lastSentTrackTrainMessage.Header.d_sr = kcg_lit_int64(0);
-  outC->_L76.lastSentTrackTrainMessage.Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L76.lastSentTrackTrainMessage.Header.d_ref = kcg_lit_int64(0);
-  outC->_L76.lastSentTrackTrainMessage.Header.q_dir = kcg_lit_int64(0);
-  outC->_L76.lastSentTrackTrainMessage.Header.d_emergencystop = kcg_lit_int64(0);
-  outC->_L76.lastSentTrackTrainMessage.Header.m_version = kcg_lit_int64(0);
+  outC->_L76.lastSentTrackTrainMessage.Header.nid_em = kcg_lit_int32(0);
+  outC->_L76.lastSentTrackTrainMessage.Header.q_scale = kcg_lit_int32(0);
+  outC->_L76.lastSentTrackTrainMessage.Header.d_sr = kcg_lit_int32(0);
+  outC->_L76.lastSentTrackTrainMessage.Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L76.lastSentTrackTrainMessage.Header.d_ref = kcg_lit_int32(0);
+  outC->_L76.lastSentTrackTrainMessage.Header.q_dir = kcg_lit_int32(0);
+  outC->_L76.lastSentTrackTrainMessage.Header.d_emergencystop = kcg_lit_int32(0);
+  outC->_L76.lastSentTrackTrainMessage.Header.m_version = kcg_lit_int32(0);
   for (idx38 = 0; idx38 < 30; idx38++) {
     outC->_L76.lastSentTrackTrainMessage.Messages.PacketHeaders[idx38].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L76.lastSentTrackTrainMessage.Messages.PacketHeaders[idx38].q_dir =
       Q_DIR_Reverse;
     outC->_L76.lastSentTrackTrainMessage.Messages.PacketHeaders[idx38].valid =
       kcg_true;
     outC->_L76.lastSentTrackTrainMessage.Messages.PacketHeaders[idx38].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L76.lastSentTrackTrainMessage.Messages.PacketHeaders[idx38].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx39 = 0; idx39 < 500; idx39++) {
     outC->_L76.lastSentTrackTrainMessage.Messages.PacketData[idx39] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L69.present = kcg_true;
   outC->_L69.header.present = kcg_true;
-  outC->_L69.header.nid_message = kcg_lit_int64(0);
-  outC->_L69.header.t_train = kcg_lit_int64(0);
-  outC->_L69.header.nid_engine = kcg_lit_int64(0);
+  outC->_L69.header.nid_message = kcg_lit_int32(0);
+  outC->_L69.header.t_train = kcg_lit_int32(0);
+  outC->_L69.header.nid_engine = kcg_lit_int32(0);
   outC->_L69.header.xQ_MARQSTREASON = Q_MARQSTREASON_Start_selected_by_driver;
-  outC->_L69.header.xT_TRAIN = kcg_lit_int64(0);
-  outC->_L69.header.xNID_EM = kcg_lit_int64(0);
+  outC->_L69.header.xT_TRAIN = kcg_lit_int32(0);
+  outC->_L69.header.xNID_EM = kcg_lit_int32(0);
   outC->_L69.header.xQ_EMERGENCYSTOP =
     _12_Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
-  outC->_L69.header.xNID_TEXTMESSAGE = kcg_lit_int64(0);
+  outC->_L69.header.xNID_TEXTMESSAGE = kcg_lit_int32(0);
   outC->_L69.packets.p0.valid = kcg_true;
-  outC->_L69.packets.p0.packet0.NID_PACKET = kcg_lit_int64(0);
-  outC->_L69.packets.p0.packet0.L_PACKET = kcg_lit_int64(0);
+  outC->_L69.packets.p0.packet0.NID_PACKET = kcg_lit_int32(0);
+  outC->_L69.packets.p0.packet0.L_PACKET = kcg_lit_int32(0);
   outC->_L69.packets.p0.packet0.qscale = Q_SCALE_10_cm_scale;
-  outC->_L69.packets.p0.packet0.NID_LRBG = kcg_lit_int64(0);
-  outC->_L69.packets.p0.packet0.D_LRBG = kcg_lit_int64(0);
+  outC->_L69.packets.p0.packet0.NID_LRBG = kcg_lit_int32(0);
+  outC->_L69.packets.p0.packet0.D_LRBG = kcg_lit_int32(0);
   outC->_L69.packets.p0.packet0.dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L69.packets.p0.packet0.dlrbg = Q_DLRBG_Reverse;
-  outC->_L69.packets.p0.packet0.L_DOUBTOVER = kcg_lit_int64(0);
-  outC->_L69.packets.p0.packet0.L_DOUBTUNDER = kcg_lit_int64(0);
+  outC->_L69.packets.p0.packet0.L_DOUBTOVER = kcg_lit_int32(0);
+  outC->_L69.packets.p0.packet0.L_DOUBTUNDER = kcg_lit_int32(0);
   outC->_L69.packets.p0.packet0.length =
     Q_LENGTH_No_train_integrity_information_available;
-  outC->_L69.packets.p0.packet0.L_TRAININT = kcg_lit_int64(0);
-  outC->_L69.packets.p0.packet0.V_TRAIN = kcg_lit_int64(0);
+  outC->_L69.packets.p0.packet0.L_TRAININT = kcg_lit_int32(0);
+  outC->_L69.packets.p0.packet0.V_TRAIN = kcg_lit_int32(0);
   outC->_L69.packets.p0.packet0.dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L69.packets.p0.packet0.mode = M_MODE_Full_Supervision;
   outC->_L69.packets.p0.packet0.level = M_LEVEL_Level_0;
-  outC->_L69.packets.p0.packet0.NID_NTC = kcg_lit_int64(0);
+  outC->_L69.packets.p0.packet0.NID_NTC = kcg_lit_int32(0);
   outC->_L69.packets.p1.valid = kcg_true;
-  outC->_L69.packets.p1.packet1.NID_PACKET = kcg_lit_int64(0);
-  outC->_L69.packets.p1.packet1.L_PACKET = kcg_lit_int64(0);
+  outC->_L69.packets.p1.packet1.NID_PACKET = kcg_lit_int32(0);
+  outC->_L69.packets.p1.packet1.L_PACKET = kcg_lit_int32(0);
   outC->_L69.packets.p1.packet1.qscale = Q_SCALE_10_cm_scale;
-  outC->_L69.packets.p1.packet1.NID_LRBG = kcg_lit_int64(0);
-  outC->_L69.packets.p1.packet1.NID_PRVLRBG = kcg_lit_int64(0);
-  outC->_L69.packets.p1.packet1.D_LRBG = kcg_lit_int64(0);
+  outC->_L69.packets.p1.packet1.NID_LRBG = kcg_lit_int32(0);
+  outC->_L69.packets.p1.packet1.NID_PRVLRBG = kcg_lit_int32(0);
+  outC->_L69.packets.p1.packet1.D_LRBG = kcg_lit_int32(0);
   outC->_L69.packets.p1.packet1.dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L69.packets.p1.packet1.dlrbg = Q_DLRBG_Reverse;
-  outC->_L69.packets.p1.packet1.L_DOUBTOVER = kcg_lit_int64(0);
-  outC->_L69.packets.p1.packet1.L_DOUBTUNDER = kcg_lit_int64(0);
+  outC->_L69.packets.p1.packet1.L_DOUBTOVER = kcg_lit_int32(0);
+  outC->_L69.packets.p1.packet1.L_DOUBTUNDER = kcg_lit_int32(0);
   outC->_L69.packets.p1.packet1.length =
     Q_LENGTH_No_train_integrity_information_available;
-  outC->_L69.packets.p1.packet1.L_TRAININT = kcg_lit_int64(0);
-  outC->_L69.packets.p1.packet1.V_TRAIN = kcg_lit_int64(0);
+  outC->_L69.packets.p1.packet1.L_TRAININT = kcg_lit_int32(0);
+  outC->_L69.packets.p1.packet1.V_TRAIN = kcg_lit_int32(0);
   outC->_L69.packets.p1.packet1.dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L69.packets.p1.packet1.mode = M_MODE_Full_Supervision;
   outC->_L69.packets.p1.packet1.level = M_LEVEL_Level_0;
-  outC->_L69.packets.p1.packet1.NID_NTC = kcg_lit_int64(0);
+  outC->_L69.packets.p1.packet1.NID_NTC = kcg_lit_int32(0);
   outC->_L69.packets.p3.valid = kcg_true;
-  outC->_L69.packets.p3.number = kcg_lit_int64(0);
+  outC->_L69.packets.p3.number = kcg_lit_int32(0);
   for (idx41 = 0; idx41 < 1; idx41++) {
     outC->_L69.packets.p3.aNID_RADIO[idx41].valid = kcg_true;
     for (idx40 = 0; idx40 < 15; idx40++) {
       outC->_L69.packets.p3.aNID_RADIO[idx41].telephoneNumber[idx40] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->_L69.packets.p4.valid = kcg_true;
   outC->_L69.packets.p4.m_error = M_ERROR_Balise_group_linking_consistency_error;
   outC->_L69.packets.p5.valid = kcg_true;
-  outC->_L69.packets.p5.TrainRunningNumber = kcg_lit_int64(0);
+  outC->_L69.packets.p5.TrainRunningNumber = kcg_lit_int32(0);
   outC->_L69.packets.p9.valid = kcg_true;
-  outC->_L69.packets.p9.transitionInformation = kcg_lit_int64(0);
+  outC->_L69.packets.p9.transitionInformation = kcg_lit_int32(0);
   outC->_L69.packets.p11.valid = kcg_true;
   outC->_L69.packets.p11.nc_cdtrain = NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L69.packets.p11.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->_L69.packets.p11.l_train = kcg_lit_int64(0);
-  outC->_L69.packets.p11.v_maxtrain = kcg_lit_int64(0);
+  outC->_L69.packets.p11.l_train = kcg_lit_int32(0);
+  outC->_L69.packets.p11.v_maxtrain = kcg_lit_int32(0);
   outC->_L69.packets.p11.m_loadinggoage =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L69.packets.p11.m_axleloadcat = M_AXLELOADCAT_A;
   outC->_L69.packets.p11.m_airtight = M_AIRTIGHT_Not_fitted;
-  outC->_L69.packets.p11.n_axle = kcg_lit_int64(0);
-  outC->_L69.packets.p11.nIter_tractionIdentity = kcg_lit_int64(0);
+  outC->_L69.packets.p11.n_axle = kcg_lit_int32(0);
+  outC->_L69.packets.p11.nIter_tractionIdentity = kcg_lit_int32(0);
   for (idx42 = 0; idx42 < 4; idx42++) {
     outC->_L69.packets.p11.tractionIdentity[idx42].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->_L69.packets.p11.tractionIdentity[idx42].nid_ctraction = kcg_lit_int64(0);
+    outC->_L69.packets.p11.tractionIdentity[idx42].nid_ctraction = kcg_lit_int32(0);
   }
-  outC->_L69.packets.p11.nIter_ntc = kcg_lit_int64(0);
+  outC->_L69.packets.p11.nIter_ntc = kcg_lit_int32(0);
   for (idx43 = 0; idx43 < 5; idx43++) {
-    outC->_L69.packets.p11.nid_ntc[idx43] = kcg_lit_int64(0);
+    outC->_L69.packets.p11.nid_ntc[idx43] = kcg_lit_int32(0);
   }
-  outC->_L72.Header.radioDevice = kcg_lit_int64(0);
-  outC->_L72.Header.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L72.Header.nid_message = kcg_lit_int64(0);
-  outC->_L72.Header.t_train = kcg_lit_int64(0);
-  outC->_L72.Header.m_ack = kcg_lit_int64(0);
-  outC->_L72.Header.nid_lrbg = kcg_lit_int64(0);
-  outC->_L72.Header.t_train_reference = kcg_lit_int64(0);
-  outC->_L72.Header.nid_em = kcg_lit_int64(0);
-  outC->_L72.Header.q_scale = kcg_lit_int64(0);
-  outC->_L72.Header.d_sr = kcg_lit_int64(0);
-  outC->_L72.Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L72.Header.d_ref = kcg_lit_int64(0);
-  outC->_L72.Header.q_dir = kcg_lit_int64(0);
-  outC->_L72.Header.d_emergencystop = kcg_lit_int64(0);
-  outC->_L72.Header.m_version = kcg_lit_int64(0);
+  outC->_L72.Header.radioDevice = kcg_lit_int32(0);
+  outC->_L72.Header.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L72.Header.nid_message = kcg_lit_int32(0);
+  outC->_L72.Header.t_train = kcg_lit_int32(0);
+  outC->_L72.Header.m_ack = kcg_lit_int32(0);
+  outC->_L72.Header.nid_lrbg = kcg_lit_int32(0);
+  outC->_L72.Header.t_train_reference = kcg_lit_int32(0);
+  outC->_L72.Header.nid_em = kcg_lit_int32(0);
+  outC->_L72.Header.q_scale = kcg_lit_int32(0);
+  outC->_L72.Header.d_sr = kcg_lit_int32(0);
+  outC->_L72.Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L72.Header.d_ref = kcg_lit_int32(0);
+  outC->_L72.Header.q_dir = kcg_lit_int32(0);
+  outC->_L72.Header.d_emergencystop = kcg_lit_int32(0);
+  outC->_L72.Header.m_version = kcg_lit_int32(0);
   for (idx44 = 0; idx44 < 30; idx44++) {
-    outC->_L72.Messages.PacketHeaders[idx44].nid_packet = kcg_lit_int64(0);
+    outC->_L72.Messages.PacketHeaders[idx44].nid_packet = kcg_lit_int32(0);
     outC->_L72.Messages.PacketHeaders[idx44].q_dir = Q_DIR_Reverse;
     outC->_L72.Messages.PacketHeaders[idx44].valid = kcg_true;
-    outC->_L72.Messages.PacketHeaders[idx44].startAddress = kcg_lit_int64(0);
-    outC->_L72.Messages.PacketHeaders[idx44].endAddress = kcg_lit_int64(0);
+    outC->_L72.Messages.PacketHeaders[idx44].startAddress = kcg_lit_int32(0);
+    outC->_L72.Messages.PacketHeaders[idx44].endAddress = kcg_lit_int32(0);
   }
   for (idx45 = 0; idx45 < 500; idx45++) {
-    outC->_L72.Messages.PacketData[idx45] = kcg_lit_int64(0);
+    outC->_L72.Messages.PacketData[idx45] = kcg_lit_int32(0);
   }
   outC->_L66.present = kcg_true;
-  outC->_L66.nid_message = kcg_lit_int64(0);
-  outC->_L66.t_train = kcg_lit_int64(0);
-  outC->_L66.nid_engine = kcg_lit_int64(0);
+  outC->_L66.nid_message = kcg_lit_int32(0);
+  outC->_L66.t_train = kcg_lit_int32(0);
+  outC->_L66.nid_engine = kcg_lit_int32(0);
   outC->_L66.xQ_MARQSTREASON = Q_MARQSTREASON_Start_selected_by_driver;
-  outC->_L66.xT_TRAIN = kcg_lit_int64(0);
-  outC->_L66.xNID_EM = kcg_lit_int64(0);
+  outC->_L66.xT_TRAIN = kcg_lit_int32(0);
+  outC->_L66.xNID_EM = kcg_lit_int32(0);
   outC->_L66.xQ_EMERGENCYSTOP =
     _12_Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
-  outC->_L66.xNID_TEXTMESSAGE = kcg_lit_int64(0);
-  outC->_L67 = kcg_lit_int64(0);
+  outC->_L66.xNID_TEXTMESSAGE = kcg_lit_int32(0);
+  outC->_L67 = kcg_lit_int32(0);
   outC->_L68.present = kcg_true;
   outC->_L68.header.present = kcg_true;
-  outC->_L68.header.nid_message = kcg_lit_int64(0);
-  outC->_L68.header.t_train = kcg_lit_int64(0);
-  outC->_L68.header.nid_engine = kcg_lit_int64(0);
+  outC->_L68.header.nid_message = kcg_lit_int32(0);
+  outC->_L68.header.t_train = kcg_lit_int32(0);
+  outC->_L68.header.nid_engine = kcg_lit_int32(0);
   outC->_L68.header.xQ_MARQSTREASON = Q_MARQSTREASON_Start_selected_by_driver;
-  outC->_L68.header.xT_TRAIN = kcg_lit_int64(0);
-  outC->_L68.header.xNID_EM = kcg_lit_int64(0);
+  outC->_L68.header.xT_TRAIN = kcg_lit_int32(0);
+  outC->_L68.header.xNID_EM = kcg_lit_int32(0);
   outC->_L68.header.xQ_EMERGENCYSTOP =
     _12_Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
-  outC->_L68.header.xNID_TEXTMESSAGE = kcg_lit_int64(0);
+  outC->_L68.header.xNID_TEXTMESSAGE = kcg_lit_int32(0);
   outC->_L68.packets.p0.valid = kcg_true;
-  outC->_L68.packets.p0.packet0.NID_PACKET = kcg_lit_int64(0);
-  outC->_L68.packets.p0.packet0.L_PACKET = kcg_lit_int64(0);
+  outC->_L68.packets.p0.packet0.NID_PACKET = kcg_lit_int32(0);
+  outC->_L68.packets.p0.packet0.L_PACKET = kcg_lit_int32(0);
   outC->_L68.packets.p0.packet0.qscale = Q_SCALE_10_cm_scale;
-  outC->_L68.packets.p0.packet0.NID_LRBG = kcg_lit_int64(0);
-  outC->_L68.packets.p0.packet0.D_LRBG = kcg_lit_int64(0);
+  outC->_L68.packets.p0.packet0.NID_LRBG = kcg_lit_int32(0);
+  outC->_L68.packets.p0.packet0.D_LRBG = kcg_lit_int32(0);
   outC->_L68.packets.p0.packet0.dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L68.packets.p0.packet0.dlrbg = Q_DLRBG_Reverse;
-  outC->_L68.packets.p0.packet0.L_DOUBTOVER = kcg_lit_int64(0);
-  outC->_L68.packets.p0.packet0.L_DOUBTUNDER = kcg_lit_int64(0);
+  outC->_L68.packets.p0.packet0.L_DOUBTOVER = kcg_lit_int32(0);
+  outC->_L68.packets.p0.packet0.L_DOUBTUNDER = kcg_lit_int32(0);
   outC->_L68.packets.p0.packet0.length =
     Q_LENGTH_No_train_integrity_information_available;
-  outC->_L68.packets.p0.packet0.L_TRAININT = kcg_lit_int64(0);
-  outC->_L68.packets.p0.packet0.V_TRAIN = kcg_lit_int64(0);
+  outC->_L68.packets.p0.packet0.L_TRAININT = kcg_lit_int32(0);
+  outC->_L68.packets.p0.packet0.V_TRAIN = kcg_lit_int32(0);
   outC->_L68.packets.p0.packet0.dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L68.packets.p0.packet0.mode = M_MODE_Full_Supervision;
   outC->_L68.packets.p0.packet0.level = M_LEVEL_Level_0;
-  outC->_L68.packets.p0.packet0.NID_NTC = kcg_lit_int64(0);
+  outC->_L68.packets.p0.packet0.NID_NTC = kcg_lit_int32(0);
   outC->_L68.packets.p1.valid = kcg_true;
-  outC->_L68.packets.p1.packet1.NID_PACKET = kcg_lit_int64(0);
-  outC->_L68.packets.p1.packet1.L_PACKET = kcg_lit_int64(0);
+  outC->_L68.packets.p1.packet1.NID_PACKET = kcg_lit_int32(0);
+  outC->_L68.packets.p1.packet1.L_PACKET = kcg_lit_int32(0);
   outC->_L68.packets.p1.packet1.qscale = Q_SCALE_10_cm_scale;
-  outC->_L68.packets.p1.packet1.NID_LRBG = kcg_lit_int64(0);
-  outC->_L68.packets.p1.packet1.NID_PRVLRBG = kcg_lit_int64(0);
-  outC->_L68.packets.p1.packet1.D_LRBG = kcg_lit_int64(0);
+  outC->_L68.packets.p1.packet1.NID_LRBG = kcg_lit_int32(0);
+  outC->_L68.packets.p1.packet1.NID_PRVLRBG = kcg_lit_int32(0);
+  outC->_L68.packets.p1.packet1.D_LRBG = kcg_lit_int32(0);
   outC->_L68.packets.p1.packet1.dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L68.packets.p1.packet1.dlrbg = Q_DLRBG_Reverse;
-  outC->_L68.packets.p1.packet1.L_DOUBTOVER = kcg_lit_int64(0);
-  outC->_L68.packets.p1.packet1.L_DOUBTUNDER = kcg_lit_int64(0);
+  outC->_L68.packets.p1.packet1.L_DOUBTOVER = kcg_lit_int32(0);
+  outC->_L68.packets.p1.packet1.L_DOUBTUNDER = kcg_lit_int32(0);
   outC->_L68.packets.p1.packet1.length =
     Q_LENGTH_No_train_integrity_information_available;
-  outC->_L68.packets.p1.packet1.L_TRAININT = kcg_lit_int64(0);
-  outC->_L68.packets.p1.packet1.V_TRAIN = kcg_lit_int64(0);
+  outC->_L68.packets.p1.packet1.L_TRAININT = kcg_lit_int32(0);
+  outC->_L68.packets.p1.packet1.V_TRAIN = kcg_lit_int32(0);
   outC->_L68.packets.p1.packet1.dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L68.packets.p1.packet1.mode = M_MODE_Full_Supervision;
   outC->_L68.packets.p1.packet1.level = M_LEVEL_Level_0;
-  outC->_L68.packets.p1.packet1.NID_NTC = kcg_lit_int64(0);
+  outC->_L68.packets.p1.packet1.NID_NTC = kcg_lit_int32(0);
   outC->_L68.packets.p3.valid = kcg_true;
-  outC->_L68.packets.p3.number = kcg_lit_int64(0);
+  outC->_L68.packets.p3.number = kcg_lit_int32(0);
   for (idx47 = 0; idx47 < 1; idx47++) {
     outC->_L68.packets.p3.aNID_RADIO[idx47].valid = kcg_true;
     for (idx46 = 0; idx46 < 15; idx46++) {
       outC->_L68.packets.p3.aNID_RADIO[idx47].telephoneNumber[idx46] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->_L68.packets.p4.valid = kcg_true;
   outC->_L68.packets.p4.m_error = M_ERROR_Balise_group_linking_consistency_error;
   outC->_L68.packets.p5.valid = kcg_true;
-  outC->_L68.packets.p5.TrainRunningNumber = kcg_lit_int64(0);
+  outC->_L68.packets.p5.TrainRunningNumber = kcg_lit_int32(0);
   outC->_L68.packets.p9.valid = kcg_true;
-  outC->_L68.packets.p9.transitionInformation = kcg_lit_int64(0);
+  outC->_L68.packets.p9.transitionInformation = kcg_lit_int32(0);
   outC->_L68.packets.p11.valid = kcg_true;
   outC->_L68.packets.p11.nc_cdtrain = NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L68.packets.p11.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->_L68.packets.p11.l_train = kcg_lit_int64(0);
-  outC->_L68.packets.p11.v_maxtrain = kcg_lit_int64(0);
+  outC->_L68.packets.p11.l_train = kcg_lit_int32(0);
+  outC->_L68.packets.p11.v_maxtrain = kcg_lit_int32(0);
   outC->_L68.packets.p11.m_loadinggoage =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L68.packets.p11.m_axleloadcat = M_AXLELOADCAT_A;
   outC->_L68.packets.p11.m_airtight = M_AIRTIGHT_Not_fitted;
-  outC->_L68.packets.p11.n_axle = kcg_lit_int64(0);
-  outC->_L68.packets.p11.nIter_tractionIdentity = kcg_lit_int64(0);
+  outC->_L68.packets.p11.n_axle = kcg_lit_int32(0);
+  outC->_L68.packets.p11.nIter_tractionIdentity = kcg_lit_int32(0);
   for (idx48 = 0; idx48 < 4; idx48++) {
     outC->_L68.packets.p11.tractionIdentity[idx48].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->_L68.packets.p11.tractionIdentity[idx48].nid_ctraction = kcg_lit_int64(0);
+    outC->_L68.packets.p11.tractionIdentity[idx48].nid_ctraction = kcg_lit_int32(0);
   }
-  outC->_L68.packets.p11.nIter_ntc = kcg_lit_int64(0);
+  outC->_L68.packets.p11.nIter_ntc = kcg_lit_int32(0);
   for (idx49 = 0; idx49 < 5; idx49++) {
-    outC->_L68.packets.p11.nid_ntc[idx49] = kcg_lit_int64(0);
+    outC->_L68.packets.p11.nid_ntc[idx49] = kcg_lit_int32(0);
   }
-  outC->_L63 = kcg_lit_int64(0);
-  outC->_L64.Header.radioDevice = kcg_lit_int64(0);
-  outC->_L64.Header.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L64.Header.nid_message = kcg_lit_int64(0);
-  outC->_L64.Header.t_train = kcg_lit_int64(0);
-  outC->_L64.Header.m_ack = kcg_lit_int64(0);
-  outC->_L64.Header.nid_lrbg = kcg_lit_int64(0);
-  outC->_L64.Header.t_train_reference = kcg_lit_int64(0);
-  outC->_L64.Header.nid_em = kcg_lit_int64(0);
-  outC->_L64.Header.q_scale = kcg_lit_int64(0);
-  outC->_L64.Header.d_sr = kcg_lit_int64(0);
-  outC->_L64.Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L64.Header.d_ref = kcg_lit_int64(0);
-  outC->_L64.Header.q_dir = kcg_lit_int64(0);
-  outC->_L64.Header.d_emergencystop = kcg_lit_int64(0);
-  outC->_L64.Header.m_version = kcg_lit_int64(0);
+  outC->_L63 = kcg_lit_int32(0);
+  outC->_L64.Header.radioDevice = kcg_lit_int32(0);
+  outC->_L64.Header.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L64.Header.nid_message = kcg_lit_int32(0);
+  outC->_L64.Header.t_train = kcg_lit_int32(0);
+  outC->_L64.Header.m_ack = kcg_lit_int32(0);
+  outC->_L64.Header.nid_lrbg = kcg_lit_int32(0);
+  outC->_L64.Header.t_train_reference = kcg_lit_int32(0);
+  outC->_L64.Header.nid_em = kcg_lit_int32(0);
+  outC->_L64.Header.q_scale = kcg_lit_int32(0);
+  outC->_L64.Header.d_sr = kcg_lit_int32(0);
+  outC->_L64.Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L64.Header.d_ref = kcg_lit_int32(0);
+  outC->_L64.Header.q_dir = kcg_lit_int32(0);
+  outC->_L64.Header.d_emergencystop = kcg_lit_int32(0);
+  outC->_L64.Header.m_version = kcg_lit_int32(0);
   for (idx50 = 0; idx50 < 30; idx50++) {
-    outC->_L64.Messages.PacketHeaders[idx50].nid_packet = kcg_lit_int64(0);
+    outC->_L64.Messages.PacketHeaders[idx50].nid_packet = kcg_lit_int32(0);
     outC->_L64.Messages.PacketHeaders[idx50].q_dir = Q_DIR_Reverse;
     outC->_L64.Messages.PacketHeaders[idx50].valid = kcg_true;
-    outC->_L64.Messages.PacketHeaders[idx50].startAddress = kcg_lit_int64(0);
-    outC->_L64.Messages.PacketHeaders[idx50].endAddress = kcg_lit_int64(0);
+    outC->_L64.Messages.PacketHeaders[idx50].startAddress = kcg_lit_int32(0);
+    outC->_L64.Messages.PacketHeaders[idx50].endAddress = kcg_lit_int32(0);
   }
   for (idx51 = 0; idx51 < 500; idx51++) {
-    outC->_L64.Messages.PacketData[idx51] = kcg_lit_int64(0);
+    outC->_L64.Messages.PacketData[idx51] = kcg_lit_int32(0);
   }
-  outC->_L65.radioDevice = kcg_lit_int64(0);
-  outC->_L65.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L65.nid_message = kcg_lit_int64(0);
-  outC->_L65.t_train = kcg_lit_int64(0);
-  outC->_L65.m_ack = kcg_lit_int64(0);
-  outC->_L65.nid_lrbg = kcg_lit_int64(0);
-  outC->_L65.t_train_reference = kcg_lit_int64(0);
-  outC->_L65.nid_em = kcg_lit_int64(0);
-  outC->_L65.q_scale = kcg_lit_int64(0);
-  outC->_L65.d_sr = kcg_lit_int64(0);
-  outC->_L65.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L65.d_ref = kcg_lit_int64(0);
-  outC->_L65.q_dir = kcg_lit_int64(0);
-  outC->_L65.d_emergencystop = kcg_lit_int64(0);
-  outC->_L65.m_version = kcg_lit_int64(0);
-  outC->_L60.Header.radioDevice = kcg_lit_int64(0);
-  outC->_L60.Header.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L60.Header.nid_message = kcg_lit_int64(0);
-  outC->_L60.Header.t_train = kcg_lit_int64(0);
-  outC->_L60.Header.m_ack = kcg_lit_int64(0);
-  outC->_L60.Header.nid_lrbg = kcg_lit_int64(0);
-  outC->_L60.Header.t_train_reference = kcg_lit_int64(0);
-  outC->_L60.Header.nid_em = kcg_lit_int64(0);
-  outC->_L60.Header.q_scale = kcg_lit_int64(0);
-  outC->_L60.Header.d_sr = kcg_lit_int64(0);
-  outC->_L60.Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L60.Header.d_ref = kcg_lit_int64(0);
-  outC->_L60.Header.q_dir = kcg_lit_int64(0);
-  outC->_L60.Header.d_emergencystop = kcg_lit_int64(0);
-  outC->_L60.Header.m_version = kcg_lit_int64(0);
+  outC->_L65.radioDevice = kcg_lit_int32(0);
+  outC->_L65.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L65.nid_message = kcg_lit_int32(0);
+  outC->_L65.t_train = kcg_lit_int32(0);
+  outC->_L65.m_ack = kcg_lit_int32(0);
+  outC->_L65.nid_lrbg = kcg_lit_int32(0);
+  outC->_L65.t_train_reference = kcg_lit_int32(0);
+  outC->_L65.nid_em = kcg_lit_int32(0);
+  outC->_L65.q_scale = kcg_lit_int32(0);
+  outC->_L65.d_sr = kcg_lit_int32(0);
+  outC->_L65.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L65.d_ref = kcg_lit_int32(0);
+  outC->_L65.q_dir = kcg_lit_int32(0);
+  outC->_L65.d_emergencystop = kcg_lit_int32(0);
+  outC->_L65.m_version = kcg_lit_int32(0);
+  outC->_L60.Header.radioDevice = kcg_lit_int32(0);
+  outC->_L60.Header.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L60.Header.nid_message = kcg_lit_int32(0);
+  outC->_L60.Header.t_train = kcg_lit_int32(0);
+  outC->_L60.Header.m_ack = kcg_lit_int32(0);
+  outC->_L60.Header.nid_lrbg = kcg_lit_int32(0);
+  outC->_L60.Header.t_train_reference = kcg_lit_int32(0);
+  outC->_L60.Header.nid_em = kcg_lit_int32(0);
+  outC->_L60.Header.q_scale = kcg_lit_int32(0);
+  outC->_L60.Header.d_sr = kcg_lit_int32(0);
+  outC->_L60.Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L60.Header.d_ref = kcg_lit_int32(0);
+  outC->_L60.Header.q_dir = kcg_lit_int32(0);
+  outC->_L60.Header.d_emergencystop = kcg_lit_int32(0);
+  outC->_L60.Header.m_version = kcg_lit_int32(0);
   for (idx52 = 0; idx52 < 30; idx52++) {
-    outC->_L60.Messages.PacketHeaders[idx52].nid_packet = kcg_lit_int64(0);
+    outC->_L60.Messages.PacketHeaders[idx52].nid_packet = kcg_lit_int32(0);
     outC->_L60.Messages.PacketHeaders[idx52].q_dir = Q_DIR_Reverse;
     outC->_L60.Messages.PacketHeaders[idx52].valid = kcg_true;
-    outC->_L60.Messages.PacketHeaders[idx52].startAddress = kcg_lit_int64(0);
-    outC->_L60.Messages.PacketHeaders[idx52].endAddress = kcg_lit_int64(0);
+    outC->_L60.Messages.PacketHeaders[idx52].startAddress = kcg_lit_int32(0);
+    outC->_L60.Messages.PacketHeaders[idx52].endAddress = kcg_lit_int32(0);
   }
   for (idx53 = 0; idx53 < 500; idx53++) {
-    outC->_L60.Messages.PacketData[idx53] = kcg_lit_int64(0);
+    outC->_L60.Messages.PacketData[idx53] = kcg_lit_int32(0);
   }
   for (idx56 = 0; idx56 < 8; idx56++) {
     outC->messageQueue.m_Entries[idx56].m_IsValid = kcg_true;
     outC->messageQueue.m_Entries[idx56].m_Entry.Header.radioDevice =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->messageQueue.m_Entries[idx56].m_Entry.Header.receivedSystemTime =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->messageQueue.m_Entries[idx56].m_Entry.Header.nid_message =
-      kcg_lit_int64(0);
-    outC->messageQueue.m_Entries[idx56].m_Entry.Header.t_train = kcg_lit_int64(0);
-    outC->messageQueue.m_Entries[idx56].m_Entry.Header.m_ack = kcg_lit_int64(0);
-    outC->messageQueue.m_Entries[idx56].m_Entry.Header.nid_lrbg = kcg_lit_int64(0);
+      kcg_lit_int32(0);
+    outC->messageQueue.m_Entries[idx56].m_Entry.Header.t_train = kcg_lit_int32(0);
+    outC->messageQueue.m_Entries[idx56].m_Entry.Header.m_ack = kcg_lit_int32(0);
+    outC->messageQueue.m_Entries[idx56].m_Entry.Header.nid_lrbg = kcg_lit_int32(0);
     outC->messageQueue.m_Entries[idx56].m_Entry.Header.t_train_reference =
-      kcg_lit_int64(0);
-    outC->messageQueue.m_Entries[idx56].m_Entry.Header.nid_em = kcg_lit_int64(0);
-    outC->messageQueue.m_Entries[idx56].m_Entry.Header.q_scale = kcg_lit_int64(0);
-    outC->messageQueue.m_Entries[idx56].m_Entry.Header.d_sr = kcg_lit_int64(0);
-    outC->messageQueue.m_Entries[idx56].m_Entry.Header.t_sh_rqst = kcg_lit_int64(0);
-    outC->messageQueue.m_Entries[idx56].m_Entry.Header.d_ref = kcg_lit_int64(0);
-    outC->messageQueue.m_Entries[idx56].m_Entry.Header.q_dir = kcg_lit_int64(0);
+      kcg_lit_int32(0);
+    outC->messageQueue.m_Entries[idx56].m_Entry.Header.nid_em = kcg_lit_int32(0);
+    outC->messageQueue.m_Entries[idx56].m_Entry.Header.q_scale = kcg_lit_int32(0);
+    outC->messageQueue.m_Entries[idx56].m_Entry.Header.d_sr = kcg_lit_int32(0);
+    outC->messageQueue.m_Entries[idx56].m_Entry.Header.t_sh_rqst = kcg_lit_int32(0);
+    outC->messageQueue.m_Entries[idx56].m_Entry.Header.d_ref = kcg_lit_int32(0);
+    outC->messageQueue.m_Entries[idx56].m_Entry.Header.q_dir = kcg_lit_int32(0);
     outC->messageQueue.m_Entries[idx56].m_Entry.Header.d_emergencystop =
-      kcg_lit_int64(0);
-    outC->messageQueue.m_Entries[idx56].m_Entry.Header.m_version = kcg_lit_int64(0);
+      kcg_lit_int32(0);
+    outC->messageQueue.m_Entries[idx56].m_Entry.Header.m_version = kcg_lit_int32(0);
     for (idx54 = 0; idx54 < 30; idx54++) {
       outC->messageQueue.m_Entries[idx56].m_Entry.Messages.PacketHeaders[idx54].nid_packet =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->messageQueue.m_Entries[idx56].m_Entry.Messages.PacketHeaders[idx54].q_dir =
         Q_DIR_Reverse;
       outC->messageQueue.m_Entries[idx56].m_Entry.Messages.PacketHeaders[idx54].valid =
         kcg_true;
       outC->messageQueue.m_Entries[idx56].m_Entry.Messages.PacketHeaders[idx54].startAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->messageQueue.m_Entries[idx56].m_Entry.Messages.PacketHeaders[idx54].endAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
     for (idx55 = 0; idx55 < 500; idx55++) {
       outC->messageQueue.m_Entries[idx56].m_Entry.Messages.PacketData[idx55] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
-  outC->radioTrackTrainMessage.Header.radioDevice = kcg_lit_int64(0);
-  outC->radioTrackTrainMessage.Header.receivedSystemTime = kcg_lit_int64(0);
-  outC->radioTrackTrainMessage.Header.nid_message = kcg_lit_int64(0);
-  outC->radioTrackTrainMessage.Header.t_train = kcg_lit_int64(0);
-  outC->radioTrackTrainMessage.Header.m_ack = kcg_lit_int64(0);
-  outC->radioTrackTrainMessage.Header.nid_lrbg = kcg_lit_int64(0);
-  outC->radioTrackTrainMessage.Header.t_train_reference = kcg_lit_int64(0);
-  outC->radioTrackTrainMessage.Header.nid_em = kcg_lit_int64(0);
-  outC->radioTrackTrainMessage.Header.q_scale = kcg_lit_int64(0);
-  outC->radioTrackTrainMessage.Header.d_sr = kcg_lit_int64(0);
-  outC->radioTrackTrainMessage.Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->radioTrackTrainMessage.Header.d_ref = kcg_lit_int64(0);
-  outC->radioTrackTrainMessage.Header.q_dir = kcg_lit_int64(0);
-  outC->radioTrackTrainMessage.Header.d_emergencystop = kcg_lit_int64(0);
-  outC->radioTrackTrainMessage.Header.m_version = kcg_lit_int64(0);
+  outC->radioTrackTrainMessage.Header.radioDevice = kcg_lit_int32(0);
+  outC->radioTrackTrainMessage.Header.receivedSystemTime = kcg_lit_int32(0);
+  outC->radioTrackTrainMessage.Header.nid_message = kcg_lit_int32(0);
+  outC->radioTrackTrainMessage.Header.t_train = kcg_lit_int32(0);
+  outC->radioTrackTrainMessage.Header.m_ack = kcg_lit_int32(0);
+  outC->radioTrackTrainMessage.Header.nid_lrbg = kcg_lit_int32(0);
+  outC->radioTrackTrainMessage.Header.t_train_reference = kcg_lit_int32(0);
+  outC->radioTrackTrainMessage.Header.nid_em = kcg_lit_int32(0);
+  outC->radioTrackTrainMessage.Header.q_scale = kcg_lit_int32(0);
+  outC->radioTrackTrainMessage.Header.d_sr = kcg_lit_int32(0);
+  outC->radioTrackTrainMessage.Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->radioTrackTrainMessage.Header.d_ref = kcg_lit_int32(0);
+  outC->radioTrackTrainMessage.Header.q_dir = kcg_lit_int32(0);
+  outC->radioTrackTrainMessage.Header.d_emergencystop = kcg_lit_int32(0);
+  outC->radioTrackTrainMessage.Header.m_version = kcg_lit_int32(0);
   for (idx57 = 0; idx57 < 30; idx57++) {
     outC->radioTrackTrainMessage.Messages.PacketHeaders[idx57].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->radioTrackTrainMessage.Messages.PacketHeaders[idx57].q_dir =
       Q_DIR_Reverse;
     outC->radioTrackTrainMessage.Messages.PacketHeaders[idx57].valid = kcg_true;
     outC->radioTrackTrainMessage.Messages.PacketHeaders[idx57].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->radioTrackTrainMessage.Messages.PacketHeaders[idx57].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx58 = 0; idx58 < 500; idx58++) {
-    outC->radioTrackTrainMessage.Messages.PacketData[idx58] = kcg_lit_int64(0);
+    outC->radioTrackTrainMessage.Messages.PacketData[idx58] = kcg_lit_int32(0);
   }
-  outC->radioTrackTrainMessageId = kcg_lit_int64(0);
-  outC->radioTrainTrackMessageId = kcg_lit_int64(0);
+  outC->radioTrackTrainMessageId = kcg_lit_int32(0);
+  outC->radioTrainTrackMessageId = kcg_lit_int32(0);
   outC->_11_CONDITIONAL_EMERGENCY_STOP_SM_fired =
     SSM_TR_no_trans_CONDITIONAL_EMERGENCY_STOP_SM;
   outC->CONDITIONAL_EMERGENCY_STOP_SM_fired_strong =
@@ -1881,27 +1881,27 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_10_CONDITIONAL_EMERGENCY_STOP_SM_state_sel =
     SSM_st_IDLE_CONDITIONAL_EMERGENCY_STOP_SM;
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.nid_engine =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_NumberOfOnboardPhoneNumbers =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx60 = 0; idx60 < 1; idx60++) {
     outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_OnboardPhoneNumbers[idx60].valid =
       kcg_true;
     for (idx59 = 0; idx59 < 15; idx59++) {
       outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_OnboardPhoneNumbers[idx60].telephoneNumber[idx59] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.t_train_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.nc_cdtrain =
     NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.l_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.v_maxtrain =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_loadinggauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_axleloadcat =
@@ -1909,39 +1909,39 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_airtight =
     M_AIRTIGHT_Not_fitted;
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.n_axle =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx61 = 0; idx61 < 4; idx61++) {
     outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_TractionIdentities[idx61].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
     outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_TractionIdentities[idx61].nid_ctraction =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx62 = 0; idx62 < 5; idx62++) {
     outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_NationalSystemIdentities[idx62] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.nid_operational =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.d_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.q_dirlrbg =
     Q_DIRLRBG_Reverse;
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.q_dlrbg =
     Q_DLRBG_Reverse;
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.l_doubtover =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.l_doubtunder =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.q_length =
     Q_LENGTH_No_train_integrity_information_available;
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.l_trainint =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.v_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.q_dirtrain =
     Q_DIRTRAIN_Reverse;
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.m_mode =
@@ -1949,31 +1949,31 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.m_level =
     M_LEVEL_Level_0;
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.nid_ntc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L20_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.nid_prvlrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.nid_engine =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_NumberOfOnboardPhoneNumbers =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx64 = 0; idx64 < 1; idx64++) {
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_OnboardPhoneNumbers[idx64].valid =
       kcg_true;
     for (idx63 = 0; idx63 < 15; idx63++) {
       outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_OnboardPhoneNumbers[idx64].telephoneNumber[idx63] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.t_train_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.nc_cdtrain =
     NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.l_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.v_maxtrain =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_loadinggauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_axleloadcat =
@@ -1981,39 +1981,39 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_airtight =
     M_AIRTIGHT_Not_fitted;
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.n_axle =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx65 = 0; idx65 < 4; idx65++) {
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_TractionIdentities[idx65].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_TractionIdentities[idx65].nid_ctraction =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx66 = 0; idx66 < 5; idx66++) {
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_NationalSystemIdentities[idx66] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.nid_operational =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.d_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_dirlrbg =
     Q_DIRLRBG_Reverse;
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_dlrbg =
     Q_DLRBG_Reverse;
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.l_doubtover =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.l_doubtunder =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_length =
     Q_LENGTH_No_train_integrity_information_available;
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.l_trainint =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.v_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_dirtrain =
     Q_DIRTRAIN_Reverse;
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.m_mode =
@@ -2021,48 +2021,48 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.m_level =
     M_LEVEL_Level_0;
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.nid_ntc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.nid_prvlrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvshunt =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvstff =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvonsight =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvunfit =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvrel =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.t_nvcontact =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_MAReqParams.q_dir =
     Q_DIR_Reverse;
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_MAReqParams.t_mar =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_MAReqParams.t_timeoutrqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_MAReqParams.t_cycrqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.q_dir =
     Q_DIR_Reverse;
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.t_cycloc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.d_cycloc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.m_loc =
     M_LOC_Now;
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.m_NumberOfIncrementalDistancesAndQualifiers =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx67 = 0; idx67 < 32; idx67++) {
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.m_IncrementalDistancesAndQualifiers[idx67].d_loc =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.m_IncrementalDistancesAndQualifiers[idx67].q_lgtloc =
       Q_LGTLOC_Min_safe_rear_end;
   }
@@ -2070,9 +2070,9 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx68].valid =
       kcg_true;
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx68].count =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx68].timestamp =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx68].diagType =
       DIAG_MSG_TYPE_Empty_RBC_Diagnostic_Pkg;
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx68].diagSrc =
@@ -2084,118 +2084,118 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx71].m_IsValid =
       kcg_true;
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx71].m_Entry.Header.radioDevice =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx71].m_Entry.Header.receivedSystemTime =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx71].m_Entry.Header.nid_message =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx71].m_Entry.Header.t_train =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx71].m_Entry.Header.m_ack =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx71].m_Entry.Header.nid_lrbg =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx71].m_Entry.Header.t_train_reference =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx71].m_Entry.Header.nid_em =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx71].m_Entry.Header.q_scale =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx71].m_Entry.Header.d_sr =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx71].m_Entry.Header.t_sh_rqst =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx71].m_Entry.Header.d_ref =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx71].m_Entry.Header.q_dir =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx71].m_Entry.Header.d_emergencystop =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx71].m_Entry.Header.m_version =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     for (idx69 = 0; idx69 < 30; idx69++) {
       outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx71].m_Entry.Messages.PacketHeaders[idx69].nid_packet =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx71].m_Entry.Messages.PacketHeaders[idx69].q_dir =
         Q_DIR_Reverse;
       outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx71].m_Entry.Messages.PacketHeaders[idx69].valid =
         kcg_true;
       outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx71].m_Entry.Messages.PacketHeaders[idx69].startAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx71].m_Entry.Messages.PacketHeaders[idx69].endAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
     for (idx70 = 0; idx70 < 500; idx70++) {
       outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx71].m_Entry.Messages.PacketData[idx70] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.clockk.m_Value =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.m_ack =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.q_scale =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.q_dir =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.m_version =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx72 = 0; idx72 < 30; idx72++) {
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx72].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx72].q_dir =
       Q_DIR_Reverse;
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx72].valid =
       kcg_true;
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx72].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx72].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx73 = 0; idx73 < 500; idx73++) {
     outC->_L21_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketData[idx73] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L17_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.present =
     kcg_true;
   outC->_L17_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L17_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L17_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.nid_engine =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L17_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.xQ_MARQSTREASON =
     Q_MARQSTREASON_Start_selected_by_driver;
   outC->_L17_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.xT_TRAIN =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L17_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.xNID_EM =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L17_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.xQ_EMERGENCYSTOP =
     _12_Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
   outC->_L17_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.xNID_TEXTMESSAGE =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L16_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM =
     _12_Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.present =
@@ -2203,47 +2203,47 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.present =
     kcg_true;
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.nid_engine =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.xQ_MARQSTREASON =
     Q_MARQSTREASON_Start_selected_by_driver;
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.xT_TRAIN =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.xNID_EM =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.xQ_EMERGENCYSTOP =
     _12_Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.xNID_TEXTMESSAGE =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.valid =
     kcg_true;
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.NID_PACKET =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.L_PACKET =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.qscale =
     Q_SCALE_10_cm_scale;
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.NID_LRBG =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.D_LRBG =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.dirlrbg =
     Q_DIRLRBG_Reverse;
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.dlrbg =
     Q_DLRBG_Reverse;
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.L_DOUBTOVER =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.L_DOUBTUNDER =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.length =
     Q_LENGTH_No_train_integrity_information_available;
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.L_TRAININT =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.V_TRAIN =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.dirtrain =
     Q_DIRTRAIN_Reverse;
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.mode =
@@ -2251,35 +2251,35 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.level =
     M_LEVEL_Level_0;
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.NID_NTC =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.valid =
     kcg_true;
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.NID_PACKET =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.L_PACKET =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.qscale =
     Q_SCALE_10_cm_scale;
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.NID_LRBG =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.NID_PRVLRBG =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.D_LRBG =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.dirlrbg =
     Q_DIRLRBG_Reverse;
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.dlrbg =
     Q_DLRBG_Reverse;
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.L_DOUBTOVER =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.L_DOUBTUNDER =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.length =
     Q_LENGTH_No_train_integrity_information_available;
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.L_TRAININT =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.V_TRAIN =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.dirtrain =
     Q_DIRTRAIN_Reverse;
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.mode =
@@ -2287,17 +2287,17 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.level =
     M_LEVEL_Level_0;
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.NID_NTC =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p3.valid =
     kcg_true;
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p3.number =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx75 = 0; idx75 < 1; idx75++) {
     outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p3.aNID_RADIO[idx75].valid =
       kcg_true;
     for (idx74 = 0; idx74 < 15; idx74++) {
       outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p3.aNID_RADIO[idx75].telephoneNumber[idx74] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p4.valid =
@@ -2307,11 +2307,11 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p5.valid =
     kcg_true;
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p5.TrainRunningNumber =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p9.valid =
     kcg_true;
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p9.transitionInformation =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.valid =
     kcg_true;
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.nc_cdtrain =
@@ -2319,9 +2319,9 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.l_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.v_maxtrain =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.m_loadinggoage =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.m_axleloadcat =
@@ -2329,41 +2329,41 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.m_airtight =
     M_AIRTIGHT_Not_fitted;
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.n_axle =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.nIter_tractionIdentity =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx76 = 0; idx76 < 4; idx76++) {
     outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.tractionIdentity[idx76].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
     outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.tractionIdentity[idx76].nid_ctraction =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.nIter_ntc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx77 = 0; idx77 < 5; idx77++) {
     outC->_L14_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.nid_ntc[idx77] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L10_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L10_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L10_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.d_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L10_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.q_dirlrbg =
     Q_DIRLRBG_Reverse;
   outC->_L10_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.q_dlrbg =
     Q_DLRBG_Reverse;
   outC->_L10_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.l_doubtover =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L10_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.l_doubtunder =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L10_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.q_length =
     Q_LENGTH_No_train_integrity_information_available;
   outC->_L10_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.l_trainint =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L10_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.v_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L10_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.q_dirtrain =
     Q_DIRTRAIN_Reverse;
   outC->_L10_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_mode =
@@ -2371,29 +2371,29 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L10_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_level =
     M_LEVEL_Level_0;
   outC->_L10_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.nid_ntc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L10_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.nid_prvlrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L11_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.d_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.q_dirlrbg =
     Q_DIRLRBG_Reverse;
   outC->_L11_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.q_dlrbg =
     Q_DLRBG_Reverse;
   outC->_L11_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.l_doubtover =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.l_doubtunder =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.q_length =
     Q_LENGTH_No_train_integrity_information_available;
   outC->_L11_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.l_trainint =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.v_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.q_dirtrain =
     Q_DIRTRAIN_Reverse;
   outC->_L11_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_mode =
@@ -2401,55 +2401,55 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L11_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_level =
     M_LEVEL_Level_0;
   outC->_L11_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.nid_ntc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.nid_prvlrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.present =
     kcg_true;
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.present =
     kcg_true;
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.nid_engine =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.xQ_MARQSTREASON =
     Q_MARQSTREASON_Start_selected_by_driver;
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.xT_TRAIN =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.xNID_EM =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.xQ_EMERGENCYSTOP =
     _12_Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.xNID_TEXTMESSAGE =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.valid =
     kcg_true;
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.NID_PACKET =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.L_PACKET =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.qscale =
     Q_SCALE_10_cm_scale;
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.NID_LRBG =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.D_LRBG =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.dirlrbg =
     Q_DIRLRBG_Reverse;
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.dlrbg =
     Q_DLRBG_Reverse;
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.L_DOUBTOVER =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.L_DOUBTUNDER =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.length =
     Q_LENGTH_No_train_integrity_information_available;
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.L_TRAININT =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.V_TRAIN =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.dirtrain =
     Q_DIRTRAIN_Reverse;
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.mode =
@@ -2457,35 +2457,35 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.level =
     M_LEVEL_Level_0;
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.NID_NTC =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.valid =
     kcg_true;
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.NID_PACKET =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.L_PACKET =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.qscale =
     Q_SCALE_10_cm_scale;
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.NID_LRBG =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.NID_PRVLRBG =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.D_LRBG =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.dirlrbg =
     Q_DIRLRBG_Reverse;
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.dlrbg =
     Q_DLRBG_Reverse;
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.L_DOUBTOVER =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.L_DOUBTUNDER =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.length =
     Q_LENGTH_No_train_integrity_information_available;
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.L_TRAININT =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.V_TRAIN =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.dirtrain =
     Q_DIRTRAIN_Reverse;
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.mode =
@@ -2493,17 +2493,17 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.level =
     M_LEVEL_Level_0;
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.NID_NTC =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p3.valid =
     kcg_true;
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p3.number =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx79 = 0; idx79 < 1; idx79++) {
     outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p3.aNID_RADIO[idx79].valid =
       kcg_true;
     for (idx78 = 0; idx78 < 15; idx78++) {
       outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p3.aNID_RADIO[idx79].telephoneNumber[idx78] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p4.valid =
@@ -2513,11 +2513,11 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p5.valid =
     kcg_true;
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p5.TrainRunningNumber =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p9.valid =
     kcg_true;
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p9.transitionInformation =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.valid =
     kcg_true;
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.nc_cdtrain =
@@ -2525,9 +2525,9 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.l_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.v_maxtrain =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.m_loadinggoage =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.m_axleloadcat =
@@ -2535,43 +2535,43 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.m_airtight =
     M_AIRTIGHT_Not_fitted;
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.n_axle =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.nIter_tractionIdentity =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx80 = 0; idx80 < 4; idx80++) {
     outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.tractionIdentity[idx80].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
     outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.tractionIdentity[idx80].nid_ctraction =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.nIter_ntc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx81 = 0; idx81 < 5; idx81++) {
     outC->_L12_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.nid_ntc[idx81] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.nid_engine =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_NumberOfOnboardPhoneNumbers =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx83 = 0; idx83 < 1; idx83++) {
     outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_OnboardPhoneNumbers[idx83].valid =
       kcg_true;
     for (idx82 = 0; idx82 < 15; idx82++) {
       outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_OnboardPhoneNumbers[idx83].telephoneNumber[idx82] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.t_train_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.nc_cdtrain =
     NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.l_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.v_maxtrain =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_loadinggauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_axleloadcat =
@@ -2579,39 +2579,39 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_airtight =
     M_AIRTIGHT_Not_fitted;
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.n_axle =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx84 = 0; idx84 < 4; idx84++) {
     outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_TractionIdentities[idx84].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
     outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_TractionIdentities[idx84].nid_ctraction =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx85 = 0; idx85 < 5; idx85++) {
     outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_NationalSystemIdentities[idx85] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.nid_operational =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.d_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.q_dirlrbg =
     Q_DIRLRBG_Reverse;
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.q_dlrbg =
     Q_DLRBG_Reverse;
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.l_doubtover =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.l_doubtunder =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.q_length =
     Q_LENGTH_No_train_integrity_information_available;
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.l_trainint =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.v_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.q_dirtrain =
     Q_DIRTRAIN_Reverse;
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.m_mode =
@@ -2619,59 +2619,59 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.m_level =
     M_LEVEL_Level_0;
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.nid_ntc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_then_IfBlock1_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.nid_prvlrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->IfBlock1_clock_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM =
     kcg_true;
   outC->emergencyStopId_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.present =
     kcg_true;
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.present =
     kcg_true;
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.nid_engine =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.xQ_MARQSTREASON =
     Q_MARQSTREASON_Start_selected_by_driver;
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.xT_TRAIN =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.xNID_EM =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.xQ_EMERGENCYSTOP =
     _12_Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.header.xNID_TEXTMESSAGE =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.valid =
     kcg_true;
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.NID_PACKET =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.L_PACKET =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.qscale =
     Q_SCALE_10_cm_scale;
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.NID_LRBG =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.D_LRBG =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.dirlrbg =
     Q_DIRLRBG_Reverse;
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.dlrbg =
     Q_DLRBG_Reverse;
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.L_DOUBTOVER =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.L_DOUBTUNDER =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.length =
     Q_LENGTH_No_train_integrity_information_available;
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.L_TRAININT =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.V_TRAIN =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.dirtrain =
     Q_DIRTRAIN_Reverse;
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.mode =
@@ -2679,35 +2679,35 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.level =
     M_LEVEL_Level_0;
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p0.packet0.NID_NTC =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.valid =
     kcg_true;
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.NID_PACKET =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.L_PACKET =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.qscale =
     Q_SCALE_10_cm_scale;
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.NID_LRBG =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.NID_PRVLRBG =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.D_LRBG =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.dirlrbg =
     Q_DIRLRBG_Reverse;
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.dlrbg =
     Q_DLRBG_Reverse;
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.L_DOUBTOVER =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.L_DOUBTUNDER =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.length =
     Q_LENGTH_No_train_integrity_information_available;
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.L_TRAININT =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.V_TRAIN =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.dirtrain =
     Q_DIRTRAIN_Reverse;
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.mode =
@@ -2715,17 +2715,17 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.level =
     M_LEVEL_Level_0;
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p1.packet1.NID_NTC =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p3.valid =
     kcg_true;
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p3.number =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx87 = 0; idx87 < 1; idx87++) {
     outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p3.aNID_RADIO[idx87].valid =
       kcg_true;
     for (idx86 = 0; idx86 < 15; idx86++) {
       outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p3.aNID_RADIO[idx87].telephoneNumber[idx86] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p4.valid =
@@ -2735,11 +2735,11 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p5.valid =
     kcg_true;
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p5.TrainRunningNumber =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p9.valid =
     kcg_true;
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p9.transitionInformation =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.valid =
     kcg_true;
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.nc_cdtrain =
@@ -2747,9 +2747,9 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.l_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.v_maxtrain =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.m_loadinggoage =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.m_axleloadcat =
@@ -2757,63 +2757,63 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.m_airtight =
     M_AIRTIGHT_Not_fitted;
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.n_axle =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.nIter_tractionIdentity =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx88 = 0; idx88 < 4; idx88++) {
     outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.tractionIdentity[idx88].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
     outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.tractionIdentity[idx88].nid_ctraction =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.nIter_ntc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx89 = 0; idx89 < 5; idx89++) {
     outC->_L25_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.packets.p11.nid_ntc[idx89] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L26_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.present =
     kcg_true;
   outC->_L26_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L26_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L26_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.nid_engine =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L26_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.xQ_MARQSTREASON =
     Q_MARQSTREASON_Start_selected_by_driver;
   outC->_L26_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.xT_TRAIN =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L26_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.xNID_EM =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L26_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.xQ_EMERGENCYSTOP =
     _12_Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
   outC->_L26_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.xNID_TEXTMESSAGE =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.nid_engine =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_NumberOfOnboardPhoneNumbers =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx91 = 0; idx91 < 1; idx91++) {
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_OnboardPhoneNumbers[idx91].valid =
       kcg_true;
     for (idx90 = 0; idx90 < 15; idx90++) {
       outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_OnboardPhoneNumbers[idx91].telephoneNumber[idx90] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.t_train_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.nc_cdtrain =
     NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.l_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.v_maxtrain =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_loadinggauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_axleloadcat =
@@ -2821,39 +2821,39 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_airtight =
     M_AIRTIGHT_Not_fitted;
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.n_axle =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx92 = 0; idx92 < 4; idx92++) {
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_TractionIdentities[idx92].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_TractionIdentities[idx92].nid_ctraction =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx93 = 0; idx93 < 5; idx93++) {
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_NationalSystemIdentities[idx93] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.nid_operational =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.d_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_dirlrbg =
     Q_DIRLRBG_Reverse;
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_dlrbg =
     Q_DLRBG_Reverse;
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.l_doubtover =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.l_doubtunder =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_length =
     Q_LENGTH_No_train_integrity_information_available;
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.l_trainint =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.v_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_dirtrain =
     Q_DIRTRAIN_Reverse;
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.m_mode =
@@ -2861,48 +2861,48 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.m_level =
     M_LEVEL_Level_0;
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.nid_ntc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.nid_prvlrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvshunt =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvstff =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvonsight =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvunfit =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvrel =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.t_nvcontact =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_MAReqParams.q_dir =
     Q_DIR_Reverse;
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_MAReqParams.t_mar =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_MAReqParams.t_timeoutrqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_MAReqParams.t_cycrqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.q_dir =
     Q_DIR_Reverse;
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.t_cycloc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.d_cycloc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.m_loc =
     M_LOC_Now;
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.m_NumberOfIncrementalDistancesAndQualifiers =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx94 = 0; idx94 < 32; idx94++) {
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.m_IncrementalDistancesAndQualifiers[idx94].d_loc =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.m_IncrementalDistancesAndQualifiers[idx94].q_lgtloc =
       Q_LGTLOC_Min_safe_rear_end;
   }
@@ -2910,9 +2910,9 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx95].valid =
       kcg_true;
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx95].count =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx95].timestamp =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx95].diagType =
       DIAG_MSG_TYPE_Empty_RBC_Diagnostic_Pkg;
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx95].diagSrc =
@@ -2924,222 +2924,222 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx98].m_IsValid =
       kcg_true;
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx98].m_Entry.Header.radioDevice =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx98].m_Entry.Header.receivedSystemTime =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx98].m_Entry.Header.nid_message =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx98].m_Entry.Header.t_train =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx98].m_Entry.Header.m_ack =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx98].m_Entry.Header.nid_lrbg =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx98].m_Entry.Header.t_train_reference =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx98].m_Entry.Header.nid_em =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx98].m_Entry.Header.q_scale =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx98].m_Entry.Header.d_sr =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx98].m_Entry.Header.t_sh_rqst =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx98].m_Entry.Header.d_ref =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx98].m_Entry.Header.q_dir =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx98].m_Entry.Header.d_emergencystop =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx98].m_Entry.Header.m_version =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     for (idx96 = 0; idx96 < 30; idx96++) {
       outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx98].m_Entry.Messages.PacketHeaders[idx96].nid_packet =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx98].m_Entry.Messages.PacketHeaders[idx96].q_dir =
         Q_DIR_Reverse;
       outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx98].m_Entry.Messages.PacketHeaders[idx96].valid =
         kcg_true;
       outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx98].m_Entry.Messages.PacketHeaders[idx96].startAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx98].m_Entry.Messages.PacketHeaders[idx96].endAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
     for (idx97 = 0; idx97 < 500; idx97++) {
       outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx98].m_Entry.Messages.PacketData[idx97] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.clockk.m_Value =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.m_ack =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.q_scale =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.q_dir =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.m_version =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx99 = 0; idx99 < 30; idx99++) {
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx99].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx99].q_dir =
       Q_DIR_Reverse;
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx99].valid =
       kcg_true;
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx99].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx99].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx100 = 0; idx100 < 500; idx100++) {
     outC->_L37_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketData[idx100] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx103 = 0; idx103 < 8; idx103++) {
     outC->_L36_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx103].m_IsValid =
       kcg_true;
     outC->_L36_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx103].m_Entry.Header.radioDevice =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L36_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx103].m_Entry.Header.receivedSystemTime =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L36_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx103].m_Entry.Header.nid_message =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L36_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx103].m_Entry.Header.t_train =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L36_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx103].m_Entry.Header.m_ack =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L36_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx103].m_Entry.Header.nid_lrbg =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L36_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx103].m_Entry.Header.t_train_reference =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L36_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx103].m_Entry.Header.nid_em =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L36_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx103].m_Entry.Header.q_scale =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L36_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx103].m_Entry.Header.d_sr =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L36_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx103].m_Entry.Header.t_sh_rqst =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L36_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx103].m_Entry.Header.d_ref =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L36_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx103].m_Entry.Header.q_dir =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L36_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx103].m_Entry.Header.d_emergencystop =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L36_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx103].m_Entry.Header.m_version =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     for (idx101 = 0; idx101 < 30; idx101++) {
       outC->_L36_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx103].m_Entry.Messages.PacketHeaders[idx101].nid_packet =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L36_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx103].m_Entry.Messages.PacketHeaders[idx101].q_dir =
         Q_DIR_Reverse;
       outC->_L36_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx103].m_Entry.Messages.PacketHeaders[idx101].valid =
         kcg_true;
       outC->_L36_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx103].m_Entry.Messages.PacketHeaders[idx101].startAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L36_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx103].m_Entry.Messages.PacketHeaders[idx101].endAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
     for (idx102 = 0; idx102 < 500; idx102++) {
       outC->_L36_TRY_PROCESS_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx103].m_Entry.Messages.PacketData[idx102] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   for (idx106 = 0; idx106 < 8; idx106++) {
     outC->_L5_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx106].m_IsValid =
       kcg_true;
     outC->_L5_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx106].m_Entry.Header.radioDevice =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx106].m_Entry.Header.receivedSystemTime =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx106].m_Entry.Header.nid_message =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx106].m_Entry.Header.t_train =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx106].m_Entry.Header.m_ack =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx106].m_Entry.Header.nid_lrbg =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx106].m_Entry.Header.t_train_reference =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx106].m_Entry.Header.nid_em =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx106].m_Entry.Header.q_scale =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx106].m_Entry.Header.d_sr =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx106].m_Entry.Header.t_sh_rqst =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx106].m_Entry.Header.d_ref =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx106].m_Entry.Header.q_dir =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx106].m_Entry.Header.d_emergencystop =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx106].m_Entry.Header.m_version =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     for (idx104 = 0; idx104 < 30; idx104++) {
       outC->_L5_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx106].m_Entry.Messages.PacketHeaders[idx104].nid_packet =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L5_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx106].m_Entry.Messages.PacketHeaders[idx104].q_dir =
         Q_DIR_Reverse;
       outC->_L5_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx106].m_Entry.Messages.PacketHeaders[idx104].valid =
         kcg_true;
       outC->_L5_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx106].m_Entry.Messages.PacketHeaders[idx104].startAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L5_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx106].m_Entry.Messages.PacketHeaders[idx104].endAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
     for (idx105 = 0; idx105 < 500; idx105++) {
       outC->_L5_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx106].m_Entry.Messages.PacketData[idx105] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.nid_engine =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_NumberOfOnboardPhoneNumbers =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx108 = 0; idx108 < 1; idx108++) {
     outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_OnboardPhoneNumbers[idx108].valid =
       kcg_true;
     for (idx107 = 0; idx107 < 15; idx107++) {
       outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_OnboardPhoneNumbers[idx108].telephoneNumber[idx107] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.t_train_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.nc_cdtrain =
     NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.l_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.v_maxtrain =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_loadinggauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_axleloadcat =
@@ -3147,39 +3147,39 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_airtight =
     M_AIRTIGHT_Not_fitted;
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.n_axle =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx109 = 0; idx109 < 4; idx109++) {
     outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_TractionIdentities[idx109].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
     outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_TractionIdentities[idx109].nid_ctraction =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx110 = 0; idx110 < 5; idx110++) {
     outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_NationalSystemIdentities[idx110] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.nid_operational =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.d_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.q_dirlrbg =
     Q_DIRLRBG_Reverse;
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.q_dlrbg =
     Q_DLRBG_Reverse;
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.l_doubtover =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.l_doubtunder =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.q_length =
     Q_LENGTH_No_train_integrity_information_available;
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.l_trainint =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.v_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.q_dirtrain =
     Q_DIRTRAIN_Reverse;
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.m_mode =
@@ -3187,31 +3187,31 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.m_level =
     M_LEVEL_Level_0;
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.nid_ntc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.nid_prvlrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.nid_engine =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_NumberOfOnboardPhoneNumbers =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx112 = 0; idx112 < 1; idx112++) {
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_OnboardPhoneNumbers[idx112].valid =
       kcg_true;
     for (idx111 = 0; idx111 < 15; idx111++) {
       outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_OnboardPhoneNumbers[idx112].telephoneNumber[idx111] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.t_train_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.nc_cdtrain =
     NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.l_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.v_maxtrain =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_loadinggauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_axleloadcat =
@@ -3219,39 +3219,39 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_airtight =
     M_AIRTIGHT_Not_fitted;
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.n_axle =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx113 = 0; idx113 < 4; idx113++) {
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_TractionIdentities[idx113].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_TractionIdentities[idx113].nid_ctraction =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx114 = 0; idx114 < 5; idx114++) {
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_NationalSystemIdentities[idx114] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.nid_operational =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.d_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_dirlrbg =
     Q_DIRLRBG_Reverse;
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_dlrbg =
     Q_DLRBG_Reverse;
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.l_doubtover =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.l_doubtunder =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_length =
     Q_LENGTH_No_train_integrity_information_available;
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.l_trainint =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.v_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_dirtrain =
     Q_DIRTRAIN_Reverse;
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.m_mode =
@@ -3259,48 +3259,48 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.m_level =
     M_LEVEL_Level_0;
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.nid_ntc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.nid_prvlrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvshunt =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvstff =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvonsight =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvunfit =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvrel =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.t_nvcontact =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_MAReqParams.q_dir =
     Q_DIR_Reverse;
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_MAReqParams.t_mar =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_MAReqParams.t_timeoutrqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_MAReqParams.t_cycrqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.q_dir =
     Q_DIR_Reverse;
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.t_cycloc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.d_cycloc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.m_loc =
     M_LOC_Now;
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.m_NumberOfIncrementalDistancesAndQualifiers =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx115 = 0; idx115 < 32; idx115++) {
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.m_IncrementalDistancesAndQualifiers[idx115].d_loc =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.m_IncrementalDistancesAndQualifiers[idx115].q_lgtloc =
       Q_LGTLOC_Min_safe_rear_end;
   }
@@ -3308,9 +3308,9 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx116].valid =
       kcg_true;
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx116].count =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx116].timestamp =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx116].diagType =
       DIAG_MSG_TYPE_Empty_RBC_Diagnostic_Pkg;
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx116].diagSrc =
@@ -3322,298 +3322,298 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx119].m_IsValid =
       kcg_true;
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx119].m_Entry.Header.radioDevice =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx119].m_Entry.Header.receivedSystemTime =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx119].m_Entry.Header.nid_message =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx119].m_Entry.Header.t_train =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx119].m_Entry.Header.m_ack =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx119].m_Entry.Header.nid_lrbg =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx119].m_Entry.Header.t_train_reference =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx119].m_Entry.Header.nid_em =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx119].m_Entry.Header.q_scale =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx119].m_Entry.Header.d_sr =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx119].m_Entry.Header.t_sh_rqst =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx119].m_Entry.Header.d_ref =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx119].m_Entry.Header.q_dir =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx119].m_Entry.Header.d_emergencystop =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx119].m_Entry.Header.m_version =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     for (idx117 = 0; idx117 < 30; idx117++) {
       outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx119].m_Entry.Messages.PacketHeaders[idx117].nid_packet =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx119].m_Entry.Messages.PacketHeaders[idx117].q_dir =
         Q_DIR_Reverse;
       outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx119].m_Entry.Messages.PacketHeaders[idx117].valid =
         kcg_true;
       outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx119].m_Entry.Messages.PacketHeaders[idx117].startAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx119].m_Entry.Messages.PacketHeaders[idx117].endAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
     for (idx118 = 0; idx118 < 500; idx118++) {
       outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx119].m_Entry.Messages.PacketData[idx118] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.clockk.m_Value =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.m_ack =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.q_scale =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.q_dir =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.m_version =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx120 = 0; idx120 < 30; idx120++) {
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx120].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx120].q_dir =
       Q_DIR_Reverse;
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx120].valid =
       kcg_true;
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx120].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx120].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx121 = 0; idx121 < 500; idx121++) {
     outC->_L3_AWAIT_ACKNOWLEDGEMENT_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketData[idx121] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L52_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L52_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L52_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L52_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L52_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.Header.m_ack =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L52_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L52_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L52_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L52_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.Header.q_scale =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L52_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L52_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L52_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L52_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.Header.q_dir =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L52_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L52_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.Header.m_version =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx122 = 0; idx122 < 30; idx122++) {
     outC->_L52_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.Messages.PacketHeaders[idx122].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L52_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.Messages.PacketHeaders[idx122].q_dir =
       Q_DIR_Reverse;
     outC->_L52_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.Messages.PacketHeaders[idx122].valid =
       kcg_true;
     outC->_L52_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.Messages.PacketHeaders[idx122].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L52_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.Messages.PacketHeaders[idx122].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx123 = 0; idx123 < 500; idx123++) {
     outC->_L52_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.Messages.PacketData[idx123] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L54_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L56_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L56_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L56_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L56_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L56_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_ack =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L56_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L56_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L56_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L56_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.q_scale =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L56_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L56_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L56_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L56_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.q_dir =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L56_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L56_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_version =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L59_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_IsValid =
     kcg_true;
   outC->_L59_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entry.Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L59_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entry.Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L59_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entry.Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L59_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entry.Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L59_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entry.Header.m_ack =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L59_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entry.Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L59_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entry.Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L59_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entry.Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L59_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entry.Header.q_scale =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L59_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entry.Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L59_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entry.Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L59_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entry.Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L59_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entry.Header.q_dir =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L59_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entry.Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L59_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entry.Header.m_version =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx124 = 0; idx124 < 30; idx124++) {
     outC->_L59_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entry.Messages.PacketHeaders[idx124].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L59_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entry.Messages.PacketHeaders[idx124].q_dir =
       Q_DIR_Reverse;
     outC->_L59_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entry.Messages.PacketHeaders[idx124].valid =
       kcg_true;
     outC->_L59_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entry.Messages.PacketHeaders[idx124].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L59_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entry.Messages.PacketHeaders[idx124].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx125 = 0; idx125 < 500; idx125++) {
     outC->_L59_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entry.Messages.PacketData[idx125] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx128 = 0; idx128 < 8; idx128++) {
     outC->_L57_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx128].m_IsValid =
       kcg_true;
     outC->_L57_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx128].m_Entry.Header.radioDevice =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L57_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx128].m_Entry.Header.receivedSystemTime =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L57_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx128].m_Entry.Header.nid_message =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L57_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx128].m_Entry.Header.t_train =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L57_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx128].m_Entry.Header.m_ack =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L57_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx128].m_Entry.Header.nid_lrbg =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L57_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx128].m_Entry.Header.t_train_reference =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L57_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx128].m_Entry.Header.nid_em =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L57_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx128].m_Entry.Header.q_scale =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L57_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx128].m_Entry.Header.d_sr =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L57_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx128].m_Entry.Header.t_sh_rqst =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L57_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx128].m_Entry.Header.d_ref =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L57_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx128].m_Entry.Header.q_dir =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L57_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx128].m_Entry.Header.d_emergencystop =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L57_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx128].m_Entry.Header.m_version =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     for (idx126 = 0; idx126 < 30; idx126++) {
       outC->_L57_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx128].m_Entry.Messages.PacketHeaders[idx126].nid_packet =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L57_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx128].m_Entry.Messages.PacketHeaders[idx126].q_dir =
         Q_DIR_Reverse;
       outC->_L57_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx128].m_Entry.Messages.PacketHeaders[idx126].valid =
         kcg_true;
       outC->_L57_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx128].m_Entry.Messages.PacketHeaders[idx126].startAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L57_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx128].m_Entry.Messages.PacketHeaders[idx126].endAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
     for (idx127 = 0; idx127 < 500; idx127++) {
       outC->_L57_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx128].m_Entry.Messages.PacketData[idx127] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.nid_engine =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_NumberOfOnboardPhoneNumbers =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx130 = 0; idx130 < 1; idx130++) {
     outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_OnboardPhoneNumbers[idx130].valid =
       kcg_true;
     for (idx129 = 0; idx129 < 15; idx129++) {
       outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_OnboardPhoneNumbers[idx130].telephoneNumber[idx129] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.t_train_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.nc_cdtrain =
     NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.l_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.v_maxtrain =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_loadinggauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_axleloadcat =
@@ -3621,39 +3621,39 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_airtight =
     M_AIRTIGHT_Not_fitted;
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.n_axle =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx131 = 0; idx131 < 4; idx131++) {
     outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_TractionIdentities[idx131].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
     outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_TractionIdentities[idx131].nid_ctraction =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx132 = 0; idx132 < 5; idx132++) {
     outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_NationalSystemIdentities[idx132] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.nid_operational =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.d_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.q_dirlrbg =
     Q_DIRLRBG_Reverse;
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.q_dlrbg =
     Q_DLRBG_Reverse;
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.l_doubtover =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.l_doubtunder =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.q_length =
     Q_LENGTH_No_train_integrity_information_available;
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.l_trainint =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.v_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.q_dirtrain =
     Q_DIRTRAIN_Reverse;
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.m_mode =
@@ -3661,81 +3661,81 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.m_level =
     M_LEVEL_Level_0;
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.nid_ntc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L62_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.nid_prvlrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx135 = 0; idx135 < 8; idx135++) {
     outC->_L70_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx135].m_IsValid =
       kcg_true;
     outC->_L70_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx135].m_Entry.Header.radioDevice =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L70_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx135].m_Entry.Header.receivedSystemTime =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L70_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx135].m_Entry.Header.nid_message =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L70_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx135].m_Entry.Header.t_train =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L70_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx135].m_Entry.Header.m_ack =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L70_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx135].m_Entry.Header.nid_lrbg =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L70_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx135].m_Entry.Header.t_train_reference =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L70_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx135].m_Entry.Header.nid_em =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L70_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx135].m_Entry.Header.q_scale =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L70_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx135].m_Entry.Header.d_sr =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L70_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx135].m_Entry.Header.t_sh_rqst =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L70_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx135].m_Entry.Header.d_ref =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L70_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx135].m_Entry.Header.q_dir =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L70_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx135].m_Entry.Header.d_emergencystop =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L70_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx135].m_Entry.Header.m_version =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     for (idx133 = 0; idx133 < 30; idx133++) {
       outC->_L70_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx135].m_Entry.Messages.PacketHeaders[idx133].nid_packet =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L70_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx135].m_Entry.Messages.PacketHeaders[idx133].q_dir =
         Q_DIR_Reverse;
       outC->_L70_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx135].m_Entry.Messages.PacketHeaders[idx133].valid =
         kcg_true;
       outC->_L70_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx135].m_Entry.Messages.PacketHeaders[idx133].startAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L70_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx135].m_Entry.Messages.PacketHeaders[idx133].endAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
     for (idx134 = 0; idx134 < 500; idx134++) {
       outC->_L70_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx135].m_Entry.Messages.PacketData[idx134] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.nid_engine =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_NumberOfOnboardPhoneNumbers =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx137 = 0; idx137 < 1; idx137++) {
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_OnboardPhoneNumbers[idx137].valid =
       kcg_true;
     for (idx136 = 0; idx136 < 15; idx136++) {
       outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_OnboardPhoneNumbers[idx137].telephoneNumber[idx136] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.t_train_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.nc_cdtrain =
     NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.l_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.v_maxtrain =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_loadinggauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_axleloadcat =
@@ -3743,39 +3743,39 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_airtight =
     M_AIRTIGHT_Not_fitted;
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.n_axle =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx138 = 0; idx138 < 4; idx138++) {
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_TractionIdentities[idx138].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_TractionIdentities[idx138].nid_ctraction =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx139 = 0; idx139 < 5; idx139++) {
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_NationalSystemIdentities[idx139] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.nid_operational =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.d_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_dirlrbg =
     Q_DIRLRBG_Reverse;
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_dlrbg =
     Q_DLRBG_Reverse;
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.l_doubtover =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.l_doubtunder =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_length =
     Q_LENGTH_No_train_integrity_information_available;
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.l_trainint =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.v_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_dirtrain =
     Q_DIRTRAIN_Reverse;
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.m_mode =
@@ -3783,48 +3783,48 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.m_level =
     M_LEVEL_Level_0;
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.nid_ntc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.nid_prvlrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvshunt =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvstff =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvonsight =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvunfit =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvrel =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.t_nvcontact =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_MAReqParams.q_dir =
     Q_DIR_Reverse;
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_MAReqParams.t_mar =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_MAReqParams.t_timeoutrqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_MAReqParams.t_cycrqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.q_dir =
     Q_DIR_Reverse;
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.t_cycloc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.d_cycloc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.m_loc =
     M_LOC_Now;
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.m_NumberOfIncrementalDistancesAndQualifiers =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx140 = 0; idx140 < 32; idx140++) {
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.m_IncrementalDistancesAndQualifiers[idx140].d_loc =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.m_IncrementalDistancesAndQualifiers[idx140].q_lgtloc =
       Q_LGTLOC_Min_safe_rear_end;
   }
@@ -3832,9 +3832,9 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx141].valid =
       kcg_true;
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx141].count =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx141].timestamp =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx141].diagType =
       DIAG_MSG_TYPE_Empty_RBC_Diagnostic_Pkg;
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx141].diagSrc =
@@ -3846,122 +3846,122 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx144].m_IsValid =
       kcg_true;
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx144].m_Entry.Header.radioDevice =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx144].m_Entry.Header.receivedSystemTime =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx144].m_Entry.Header.nid_message =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx144].m_Entry.Header.t_train =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx144].m_Entry.Header.m_ack =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx144].m_Entry.Header.nid_lrbg =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx144].m_Entry.Header.t_train_reference =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx144].m_Entry.Header.nid_em =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx144].m_Entry.Header.q_scale =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx144].m_Entry.Header.d_sr =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx144].m_Entry.Header.t_sh_rqst =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx144].m_Entry.Header.d_ref =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx144].m_Entry.Header.q_dir =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx144].m_Entry.Header.d_emergencystop =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx144].m_Entry.Header.m_version =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     for (idx142 = 0; idx142 < 30; idx142++) {
       outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx144].m_Entry.Messages.PacketHeaders[idx142].nid_packet =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx144].m_Entry.Messages.PacketHeaders[idx142].q_dir =
         Q_DIR_Reverse;
       outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx144].m_Entry.Messages.PacketHeaders[idx142].valid =
         kcg_true;
       outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx144].m_Entry.Messages.PacketHeaders[idx142].startAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx144].m_Entry.Messages.PacketHeaders[idx142].endAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
     for (idx143 = 0; idx143 < 500; idx143++) {
       outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx144].m_Entry.Messages.PacketData[idx143] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.clockk.m_Value =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.m_ack =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.q_scale =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.q_dir =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.m_version =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx145 = 0; idx145 < 30; idx145++) {
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx145].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx145].q_dir =
       Q_DIR_Reverse;
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx145].valid =
       kcg_true;
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx145].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx145].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx146 = 0; idx146 < 500; idx146++) {
     outC->_L64_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketData[idx146] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.nid_engine =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_NumberOfOnboardPhoneNumbers =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx148 = 0; idx148 < 1; idx148++) {
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_OnboardPhoneNumbers[idx148].valid =
       kcg_true;
     for (idx147 = 0; idx147 < 15; idx147++) {
       outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_OnboardPhoneNumbers[idx148].telephoneNumber[idx147] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.t_train_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.nc_cdtrain =
     NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.l_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.v_maxtrain =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_loadinggauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_axleloadcat =
@@ -3969,39 +3969,39 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_airtight =
     M_AIRTIGHT_Not_fitted;
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.n_axle =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx149 = 0; idx149 < 4; idx149++) {
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_TractionIdentities[idx149].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_TractionIdentities[idx149].nid_ctraction =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx150 = 0; idx150 < 5; idx150++) {
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_NationalSystemIdentities[idx150] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.nid_operational =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.d_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_dirlrbg =
     Q_DIRLRBG_Reverse;
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_dlrbg =
     Q_DLRBG_Reverse;
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.l_doubtover =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.l_doubtunder =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_length =
     Q_LENGTH_No_train_integrity_information_available;
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.l_trainint =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.v_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_dirtrain =
     Q_DIRTRAIN_Reverse;
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.m_mode =
@@ -4009,48 +4009,48 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.m_level =
     M_LEVEL_Level_0;
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.nid_ntc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.nid_prvlrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvshunt =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvstff =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvonsight =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvunfit =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvrel =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.t_nvcontact =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_MAReqParams.q_dir =
     Q_DIR_Reverse;
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_MAReqParams.t_mar =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_MAReqParams.t_timeoutrqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_MAReqParams.t_cycrqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.q_dir =
     Q_DIR_Reverse;
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.t_cycloc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.d_cycloc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.m_loc =
     M_LOC_Now;
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.m_NumberOfIncrementalDistancesAndQualifiers =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx151 = 0; idx151 < 32; idx151++) {
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.m_IncrementalDistancesAndQualifiers[idx151].d_loc =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.m_IncrementalDistancesAndQualifiers[idx151].q_lgtloc =
       Q_LGTLOC_Min_safe_rear_end;
   }
@@ -4058,9 +4058,9 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx152].valid =
       kcg_true;
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx152].count =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx152].timestamp =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx152].diagType =
       DIAG_MSG_TYPE_Empty_RBC_Diagnostic_Pkg;
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx152].diagSrc =
@@ -4072,122 +4072,122 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx155].m_IsValid =
       kcg_true;
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx155].m_Entry.Header.radioDevice =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx155].m_Entry.Header.receivedSystemTime =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx155].m_Entry.Header.nid_message =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx155].m_Entry.Header.t_train =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx155].m_Entry.Header.m_ack =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx155].m_Entry.Header.nid_lrbg =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx155].m_Entry.Header.t_train_reference =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx155].m_Entry.Header.nid_em =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx155].m_Entry.Header.q_scale =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx155].m_Entry.Header.d_sr =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx155].m_Entry.Header.t_sh_rqst =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx155].m_Entry.Header.d_ref =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx155].m_Entry.Header.q_dir =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx155].m_Entry.Header.d_emergencystop =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx155].m_Entry.Header.m_version =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     for (idx153 = 0; idx153 < 30; idx153++) {
       outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx155].m_Entry.Messages.PacketHeaders[idx153].nid_packet =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx155].m_Entry.Messages.PacketHeaders[idx153].q_dir =
         Q_DIR_Reverse;
       outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx155].m_Entry.Messages.PacketHeaders[idx153].valid =
         kcg_true;
       outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx155].m_Entry.Messages.PacketHeaders[idx153].startAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx155].m_Entry.Messages.PacketHeaders[idx153].endAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
     for (idx154 = 0; idx154 < 500; idx154++) {
       outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx155].m_Entry.Messages.PacketData[idx154] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.clockk.m_Value =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.m_ack =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.q_scale =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.q_dir =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.m_version =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx156 = 0; idx156 < 30; idx156++) {
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx156].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx156].q_dir =
       Q_DIR_Reverse;
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx156].valid =
       kcg_true;
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx156].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx156].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx157 = 0; idx157 < 500; idx157++) {
     outC->_L71_SEND_CONDITIONAL_EMERGENCY_STOP_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketData[idx157] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.nid_engine =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_NumberOfOnboardPhoneNumbers =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx159 = 0; idx159 < 1; idx159++) {
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_OnboardPhoneNumbers[idx159].valid =
       kcg_true;
     for (idx158 = 0; idx158 < 15; idx158++) {
       outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_OnboardPhoneNumbers[idx159].telephoneNumber[idx158] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.t_train_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.nc_cdtrain =
     NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.l_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.v_maxtrain =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_loadinggauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_axleloadcat =
@@ -4195,39 +4195,39 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_airtight =
     M_AIRTIGHT_Not_fitted;
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.n_axle =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx160 = 0; idx160 < 4; idx160++) {
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_TractionIdentities[idx160].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_TractionIdentities[idx160].nid_ctraction =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx161 = 0; idx161 < 5; idx161++) {
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.m_NationalSystemIdentities[idx161] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_TrainData.nid_operational =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.d_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_dirlrbg =
     Q_DIRLRBG_Reverse;
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_dlrbg =
     Q_DLRBG_Reverse;
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.l_doubtover =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.l_doubtunder =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_length =
     Q_LENGTH_No_train_integrity_information_available;
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.l_trainint =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.v_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.q_dirtrain =
     Q_DIRTRAIN_Reverse;
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.m_mode =
@@ -4235,48 +4235,48 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.m_level =
     M_LEVEL_Level_0;
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.nid_ntc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.session.m_PosData.nid_prvlrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.config.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvshunt =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvstff =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvonsight =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvunfit =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.v_nvrel =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.config.m_NationalParams.t_nvcontact =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.config.m_MAReqParams.q_dir =
     Q_DIR_Reverse;
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.config.m_MAReqParams.t_mar =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.config.m_MAReqParams.t_timeoutrqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.config.m_MAReqParams.t_cycrqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.q_dir =
     Q_DIR_Reverse;
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.t_cycloc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.d_cycloc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.m_loc =
     M_LOC_Now;
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.m_NumberOfIncrementalDistancesAndQualifiers =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx162 = 0; idx162 < 32; idx162++) {
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.m_IncrementalDistancesAndQualifiers[idx162].d_loc =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.config.m_PosRepParams.m_IncrementalDistancesAndQualifiers[idx162].q_lgtloc =
       Q_LGTLOC_Min_safe_rear_end;
   }
@@ -4284,9 +4284,9 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx163].valid =
       kcg_true;
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx163].count =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx163].timestamp =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx163].diagType =
       DIAG_MSG_TYPE_Empty_RBC_Diagnostic_Pkg;
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.diagnostic[idx163].diagSrc =
@@ -4298,121 +4298,121 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx166].m_IsValid =
       kcg_true;
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx166].m_Entry.Header.radioDevice =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx166].m_Entry.Header.receivedSystemTime =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx166].m_Entry.Header.nid_message =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx166].m_Entry.Header.t_train =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx166].m_Entry.Header.m_ack =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx166].m_Entry.Header.nid_lrbg =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx166].m_Entry.Header.t_train_reference =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx166].m_Entry.Header.nid_em =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx166].m_Entry.Header.q_scale =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx166].m_Entry.Header.d_sr =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx166].m_Entry.Header.t_sh_rqst =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx166].m_Entry.Header.d_ref =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx166].m_Entry.Header.q_dir =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx166].m_Entry.Header.d_emergencystop =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx166].m_Entry.Header.m_version =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     for (idx164 = 0; idx164 < 30; idx164++) {
       outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx166].m_Entry.Messages.PacketHeaders[idx164].nid_packet =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx166].m_Entry.Messages.PacketHeaders[idx164].q_dir =
         Q_DIR_Reverse;
       outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx166].m_Entry.Messages.PacketHeaders[idx164].valid =
         kcg_true;
       outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx166].m_Entry.Messages.PacketHeaders[idx164].startAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx166].m_Entry.Messages.PacketHeaders[idx164].endAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
     for (idx165 = 0; idx165 < 500; idx165++) {
       outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.messageQueue.m_Entries[idx166].m_Entry.Messages.PacketData[idx165] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
-  outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.clockk.m_Value = kcg_lit_int64(0);
+  outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.clockk.m_Value = kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.m_ack =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.q_scale =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.q_dir =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Header.m_version =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx167 = 0; idx167 < 30; idx167++) {
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx167].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx167].q_dir =
       Q_DIR_Reverse;
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx167].valid =
       kcg_true;
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx167].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketHeaders[idx167].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx168 = 0; idx168 < 500; idx168++) {
     outC->_L3_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.lastSentTrackTrainMessage.Messages.PacketData[idx168] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.nid_engine =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_NumberOfOnboardPhoneNumbers =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx170 = 0; idx170 < 1; idx170++) {
     outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_OnboardPhoneNumbers[idx170].valid =
       kcg_true;
     for (idx169 = 0; idx169 < 15; idx169++) {
       outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_OnboardPhoneNumbers[idx170].telephoneNumber[idx169] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.t_train_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.nc_cdtrain =
     NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.l_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.v_maxtrain =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_loadinggauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_axleloadcat =
@@ -4420,39 +4420,39 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_airtight =
     M_AIRTIGHT_Not_fitted;
   outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.n_axle =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx171 = 0; idx171 < 4; idx171++) {
     outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_TractionIdentities[idx171].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
     outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_TractionIdentities[idx171].nid_ctraction =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx172 = 0; idx172 < 5; idx172++) {
     outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.m_NationalSystemIdentities[idx172] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_TrainData.nid_operational =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.q_scale =
     Q_SCALE_10_cm_scale;
-  outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.d_lrbg = kcg_lit_int64(
+  outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.d_lrbg = kcg_lit_int32(
       0);
   outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.q_dirlrbg =
     Q_DIRLRBG_Reverse;
   outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.q_dlrbg =
     Q_DLRBG_Reverse;
   outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.l_doubtover =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.l_doubtunder =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.q_length =
     Q_LENGTH_No_train_integrity_information_available;
   outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.l_trainint =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.v_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.q_dirtrain =
     Q_DIRTRAIN_Reverse;
   outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.m_mode =
@@ -4460,323 +4460,323 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.m_level =
     M_LEVEL_Level_0;
   outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.nid_ntc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_PosData.nid_prvlrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx175 = 0; idx175 < 8; idx175++) {
     outC->_L5_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx175].m_IsValid =
       kcg_true;
     outC->_L5_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx175].m_Entry.Header.radioDevice =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx175].m_Entry.Header.receivedSystemTime =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx175].m_Entry.Header.nid_message =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx175].m_Entry.Header.t_train =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx175].m_Entry.Header.m_ack =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx175].m_Entry.Header.nid_lrbg =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx175].m_Entry.Header.t_train_reference =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx175].m_Entry.Header.nid_em =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx175].m_Entry.Header.q_scale =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx175].m_Entry.Header.d_sr =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx175].m_Entry.Header.t_sh_rqst =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx175].m_Entry.Header.d_ref =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx175].m_Entry.Header.q_dir =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx175].m_Entry.Header.d_emergencystop =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx175].m_Entry.Header.m_version =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     for (idx173 = 0; idx173 < 30; idx173++) {
       outC->_L5_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx175].m_Entry.Messages.PacketHeaders[idx173].nid_packet =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L5_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx175].m_Entry.Messages.PacketHeaders[idx173].q_dir =
         Q_DIR_Reverse;
       outC->_L5_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx175].m_Entry.Messages.PacketHeaders[idx173].valid =
         kcg_true;
       outC->_L5_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx175].m_Entry.Messages.PacketHeaders[idx173].startAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L5_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx175].m_Entry.Messages.PacketHeaders[idx173].endAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
     for (idx174 = 0; idx174 < 500; idx174++) {
       outC->_L5_IDLE_CONDITIONAL_EMERGENCY_STOP_SM.m_Entries[idx175].m_Entry.Messages.PacketData[idx174] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
-  outC->session.m_TrainData.nid_engine = kcg_lit_int64(0);
-  outC->session.m_TrainData.m_NumberOfOnboardPhoneNumbers = kcg_lit_int64(0);
+  outC->session.m_TrainData.nid_engine = kcg_lit_int32(0);
+  outC->session.m_TrainData.m_NumberOfOnboardPhoneNumbers = kcg_lit_int32(0);
   for (idx177 = 0; idx177 < 1; idx177++) {
     outC->session.m_TrainData.m_OnboardPhoneNumbers[idx177].valid = kcg_true;
     for (idx176 = 0; idx176 < 15; idx176++) {
       outC->session.m_TrainData.m_OnboardPhoneNumbers[idx177].telephoneNumber[idx176] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
-  outC->session.m_TrainData.t_train_ref = kcg_lit_int64(0);
+  outC->session.m_TrainData.t_train_ref = kcg_lit_int32(0);
   outC->session.m_TrainData.nc_cdtrain = NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->session.m_TrainData.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->session.m_TrainData.l_train = kcg_lit_int64(0);
-  outC->session.m_TrainData.v_maxtrain = kcg_lit_int64(0);
+  outC->session.m_TrainData.l_train = kcg_lit_int32(0);
+  outC->session.m_TrainData.v_maxtrain = kcg_lit_int32(0);
   outC->session.m_TrainData.m_loadinggauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->session.m_TrainData.m_axleloadcat = M_AXLELOADCAT_A;
   outC->session.m_TrainData.m_airtight = M_AIRTIGHT_Not_fitted;
-  outC->session.m_TrainData.n_axle = kcg_lit_int64(0);
+  outC->session.m_TrainData.n_axle = kcg_lit_int32(0);
   for (idx178 = 0; idx178 < 4; idx178++) {
     outC->session.m_TrainData.m_TractionIdentities[idx178].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
     outC->session.m_TrainData.m_TractionIdentities[idx178].nid_ctraction =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx179 = 0; idx179 < 5; idx179++) {
-    outC->session.m_TrainData.m_NationalSystemIdentities[idx179] = kcg_lit_int64(0);
+    outC->session.m_TrainData.m_NationalSystemIdentities[idx179] = kcg_lit_int32(0);
   }
-  outC->session.m_TrainData.nid_operational = kcg_lit_int64(0);
-  outC->session.m_PosData.nid_lrbg = kcg_lit_int64(0);
+  outC->session.m_TrainData.nid_operational = kcg_lit_int32(0);
+  outC->session.m_PosData.nid_lrbg = kcg_lit_int32(0);
   outC->session.m_PosData.q_scale = Q_SCALE_10_cm_scale;
-  outC->session.m_PosData.d_lrbg = kcg_lit_int64(0);
+  outC->session.m_PosData.d_lrbg = kcg_lit_int32(0);
   outC->session.m_PosData.q_dirlrbg = Q_DIRLRBG_Reverse;
   outC->session.m_PosData.q_dlrbg = Q_DLRBG_Reverse;
-  outC->session.m_PosData.l_doubtover = kcg_lit_int64(0);
-  outC->session.m_PosData.l_doubtunder = kcg_lit_int64(0);
+  outC->session.m_PosData.l_doubtover = kcg_lit_int32(0);
+  outC->session.m_PosData.l_doubtunder = kcg_lit_int32(0);
   outC->session.m_PosData.q_length =
     Q_LENGTH_No_train_integrity_information_available;
-  outC->session.m_PosData.l_trainint = kcg_lit_int64(0);
-  outC->session.m_PosData.v_train = kcg_lit_int64(0);
+  outC->session.m_PosData.l_trainint = kcg_lit_int32(0);
+  outC->session.m_PosData.v_train = kcg_lit_int32(0);
   outC->session.m_PosData.q_dirtrain = Q_DIRTRAIN_Reverse;
   outC->session.m_PosData.m_mode = M_MODE_Full_Supervision;
   outC->session.m_PosData.m_level = M_LEVEL_Level_0;
-  outC->session.m_PosData.nid_ntc = kcg_lit_int64(0);
-  outC->session.m_PosData.nid_prvlrbg = kcg_lit_int64(0);
-  outC->outTriggeredRadioTrackTrainMessage.Header.radioDevice = kcg_lit_int64(0);
+  outC->session.m_PosData.nid_ntc = kcg_lit_int32(0);
+  outC->session.m_PosData.nid_prvlrbg = kcg_lit_int32(0);
+  outC->outTriggeredRadioTrackTrainMessage.Header.radioDevice = kcg_lit_int32(0);
   outC->outTriggeredRadioTrackTrainMessage.Header.receivedSystemTime =
-    kcg_lit_int64(0);
-  outC->outTriggeredRadioTrackTrainMessage.Header.nid_message = kcg_lit_int64(0);
-  outC->outTriggeredRadioTrackTrainMessage.Header.t_train = kcg_lit_int64(0);
-  outC->outTriggeredRadioTrackTrainMessage.Header.m_ack = kcg_lit_int64(0);
-  outC->outTriggeredRadioTrackTrainMessage.Header.nid_lrbg = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->outTriggeredRadioTrackTrainMessage.Header.nid_message = kcg_lit_int32(0);
+  outC->outTriggeredRadioTrackTrainMessage.Header.t_train = kcg_lit_int32(0);
+  outC->outTriggeredRadioTrackTrainMessage.Header.m_ack = kcg_lit_int32(0);
+  outC->outTriggeredRadioTrackTrainMessage.Header.nid_lrbg = kcg_lit_int32(0);
   outC->outTriggeredRadioTrackTrainMessage.Header.t_train_reference =
-    kcg_lit_int64(0);
-  outC->outTriggeredRadioTrackTrainMessage.Header.nid_em = kcg_lit_int64(0);
-  outC->outTriggeredRadioTrackTrainMessage.Header.q_scale = kcg_lit_int64(0);
-  outC->outTriggeredRadioTrackTrainMessage.Header.d_sr = kcg_lit_int64(0);
-  outC->outTriggeredRadioTrackTrainMessage.Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->outTriggeredRadioTrackTrainMessage.Header.d_ref = kcg_lit_int64(0);
-  outC->outTriggeredRadioTrackTrainMessage.Header.q_dir = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->outTriggeredRadioTrackTrainMessage.Header.nid_em = kcg_lit_int32(0);
+  outC->outTriggeredRadioTrackTrainMessage.Header.q_scale = kcg_lit_int32(0);
+  outC->outTriggeredRadioTrackTrainMessage.Header.d_sr = kcg_lit_int32(0);
+  outC->outTriggeredRadioTrackTrainMessage.Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->outTriggeredRadioTrackTrainMessage.Header.d_ref = kcg_lit_int32(0);
+  outC->outTriggeredRadioTrackTrainMessage.Header.q_dir = kcg_lit_int32(0);
   outC->outTriggeredRadioTrackTrainMessage.Header.d_emergencystop =
-    kcg_lit_int64(0);
-  outC->outTriggeredRadioTrackTrainMessage.Header.m_version = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->outTriggeredRadioTrackTrainMessage.Header.m_version = kcg_lit_int32(0);
   for (idx180 = 0; idx180 < 30; idx180++) {
     outC->outTriggeredRadioTrackTrainMessage.Messages.PacketHeaders[idx180].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->outTriggeredRadioTrackTrainMessage.Messages.PacketHeaders[idx180].q_dir =
       Q_DIR_Reverse;
     outC->outTriggeredRadioTrackTrainMessage.Messages.PacketHeaders[idx180].valid =
       kcg_true;
     outC->outTriggeredRadioTrackTrainMessage.Messages.PacketHeaders[idx180].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->outTriggeredRadioTrackTrainMessage.Messages.PacketHeaders[idx180].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx181 = 0; idx181 < 500; idx181++) {
     outC->outTriggeredRadioTrackTrainMessage.Messages.PacketData[idx181] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->outRadioTrainTrackMessage.present = kcg_true;
   outC->outRadioTrainTrackMessage.header.present = kcg_true;
-  outC->outRadioTrainTrackMessage.header.nid_message = kcg_lit_int64(0);
-  outC->outRadioTrainTrackMessage.header.t_train = kcg_lit_int64(0);
-  outC->outRadioTrainTrackMessage.header.nid_engine = kcg_lit_int64(0);
+  outC->outRadioTrainTrackMessage.header.nid_message = kcg_lit_int32(0);
+  outC->outRadioTrainTrackMessage.header.t_train = kcg_lit_int32(0);
+  outC->outRadioTrainTrackMessage.header.nid_engine = kcg_lit_int32(0);
   outC->outRadioTrainTrackMessage.header.xQ_MARQSTREASON =
     Q_MARQSTREASON_Start_selected_by_driver;
-  outC->outRadioTrainTrackMessage.header.xT_TRAIN = kcg_lit_int64(0);
-  outC->outRadioTrainTrackMessage.header.xNID_EM = kcg_lit_int64(0);
+  outC->outRadioTrainTrackMessage.header.xT_TRAIN = kcg_lit_int32(0);
+  outC->outRadioTrainTrackMessage.header.xNID_EM = kcg_lit_int32(0);
   outC->outRadioTrainTrackMessage.header.xQ_EMERGENCYSTOP =
     _12_Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
-  outC->outRadioTrainTrackMessage.header.xNID_TEXTMESSAGE = kcg_lit_int64(0);
+  outC->outRadioTrainTrackMessage.header.xNID_TEXTMESSAGE = kcg_lit_int32(0);
   outC->outRadioTrainTrackMessage.packets.p0.valid = kcg_true;
-  outC->outRadioTrainTrackMessage.packets.p0.packet0.NID_PACKET = kcg_lit_int64(
+  outC->outRadioTrainTrackMessage.packets.p0.packet0.NID_PACKET = kcg_lit_int32(
       0);
-  outC->outRadioTrainTrackMessage.packets.p0.packet0.L_PACKET = kcg_lit_int64(0);
+  outC->outRadioTrainTrackMessage.packets.p0.packet0.L_PACKET = kcg_lit_int32(0);
   outC->outRadioTrainTrackMessage.packets.p0.packet0.qscale = Q_SCALE_10_cm_scale;
-  outC->outRadioTrainTrackMessage.packets.p0.packet0.NID_LRBG = kcg_lit_int64(0);
-  outC->outRadioTrainTrackMessage.packets.p0.packet0.D_LRBG = kcg_lit_int64(0);
+  outC->outRadioTrainTrackMessage.packets.p0.packet0.NID_LRBG = kcg_lit_int32(0);
+  outC->outRadioTrainTrackMessage.packets.p0.packet0.D_LRBG = kcg_lit_int32(0);
   outC->outRadioTrainTrackMessage.packets.p0.packet0.dirlrbg = Q_DIRLRBG_Reverse;
   outC->outRadioTrainTrackMessage.packets.p0.packet0.dlrbg = Q_DLRBG_Reverse;
   outC->outRadioTrainTrackMessage.packets.p0.packet0.L_DOUBTOVER =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outRadioTrainTrackMessage.packets.p0.packet0.L_DOUBTUNDER =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outRadioTrainTrackMessage.packets.p0.packet0.length =
     Q_LENGTH_No_train_integrity_information_available;
-  outC->outRadioTrainTrackMessage.packets.p0.packet0.L_TRAININT = kcg_lit_int64(
+  outC->outRadioTrainTrackMessage.packets.p0.packet0.L_TRAININT = kcg_lit_int32(
       0);
-  outC->outRadioTrainTrackMessage.packets.p0.packet0.V_TRAIN = kcg_lit_int64(0);
+  outC->outRadioTrainTrackMessage.packets.p0.packet0.V_TRAIN = kcg_lit_int32(0);
   outC->outRadioTrainTrackMessage.packets.p0.packet0.dirtrain =
     Q_DIRTRAIN_Reverse;
   outC->outRadioTrainTrackMessage.packets.p0.packet0.mode =
     M_MODE_Full_Supervision;
   outC->outRadioTrainTrackMessage.packets.p0.packet0.level = M_LEVEL_Level_0;
-  outC->outRadioTrainTrackMessage.packets.p0.packet0.NID_NTC = kcg_lit_int64(0);
+  outC->outRadioTrainTrackMessage.packets.p0.packet0.NID_NTC = kcg_lit_int32(0);
   outC->outRadioTrainTrackMessage.packets.p1.valid = kcg_true;
-  outC->outRadioTrainTrackMessage.packets.p1.packet1.NID_PACKET = kcg_lit_int64(
+  outC->outRadioTrainTrackMessage.packets.p1.packet1.NID_PACKET = kcg_lit_int32(
       0);
-  outC->outRadioTrainTrackMessage.packets.p1.packet1.L_PACKET = kcg_lit_int64(0);
+  outC->outRadioTrainTrackMessage.packets.p1.packet1.L_PACKET = kcg_lit_int32(0);
   outC->outRadioTrainTrackMessage.packets.p1.packet1.qscale = Q_SCALE_10_cm_scale;
-  outC->outRadioTrainTrackMessage.packets.p1.packet1.NID_LRBG = kcg_lit_int64(0);
+  outC->outRadioTrainTrackMessage.packets.p1.packet1.NID_LRBG = kcg_lit_int32(0);
   outC->outRadioTrainTrackMessage.packets.p1.packet1.NID_PRVLRBG =
-    kcg_lit_int64(0);
-  outC->outRadioTrainTrackMessage.packets.p1.packet1.D_LRBG = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->outRadioTrainTrackMessage.packets.p1.packet1.D_LRBG = kcg_lit_int32(0);
   outC->outRadioTrainTrackMessage.packets.p1.packet1.dirlrbg = Q_DIRLRBG_Reverse;
   outC->outRadioTrainTrackMessage.packets.p1.packet1.dlrbg = Q_DLRBG_Reverse;
   outC->outRadioTrainTrackMessage.packets.p1.packet1.L_DOUBTOVER =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outRadioTrainTrackMessage.packets.p1.packet1.L_DOUBTUNDER =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outRadioTrainTrackMessage.packets.p1.packet1.length =
     Q_LENGTH_No_train_integrity_information_available;
-  outC->outRadioTrainTrackMessage.packets.p1.packet1.L_TRAININT = kcg_lit_int64(
+  outC->outRadioTrainTrackMessage.packets.p1.packet1.L_TRAININT = kcg_lit_int32(
       0);
-  outC->outRadioTrainTrackMessage.packets.p1.packet1.V_TRAIN = kcg_lit_int64(0);
+  outC->outRadioTrainTrackMessage.packets.p1.packet1.V_TRAIN = kcg_lit_int32(0);
   outC->outRadioTrainTrackMessage.packets.p1.packet1.dirtrain =
     Q_DIRTRAIN_Reverse;
   outC->outRadioTrainTrackMessage.packets.p1.packet1.mode =
     M_MODE_Full_Supervision;
   outC->outRadioTrainTrackMessage.packets.p1.packet1.level = M_LEVEL_Level_0;
-  outC->outRadioTrainTrackMessage.packets.p1.packet1.NID_NTC = kcg_lit_int64(0);
+  outC->outRadioTrainTrackMessage.packets.p1.packet1.NID_NTC = kcg_lit_int32(0);
   outC->outRadioTrainTrackMessage.packets.p3.valid = kcg_true;
-  outC->outRadioTrainTrackMessage.packets.p3.number = kcg_lit_int64(0);
+  outC->outRadioTrainTrackMessage.packets.p3.number = kcg_lit_int32(0);
   for (idx183 = 0; idx183 < 1; idx183++) {
     outC->outRadioTrainTrackMessage.packets.p3.aNID_RADIO[idx183].valid = kcg_true;
     for (idx182 = 0; idx182 < 15; idx182++) {
       outC->outRadioTrainTrackMessage.packets.p3.aNID_RADIO[idx183].telephoneNumber[idx182] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->outRadioTrainTrackMessage.packets.p4.valid = kcg_true;
   outC->outRadioTrainTrackMessage.packets.p4.m_error =
     M_ERROR_Balise_group_linking_consistency_error;
   outC->outRadioTrainTrackMessage.packets.p5.valid = kcg_true;
-  outC->outRadioTrainTrackMessage.packets.p5.TrainRunningNumber = kcg_lit_int64(
+  outC->outRadioTrainTrackMessage.packets.p5.TrainRunningNumber = kcg_lit_int32(
       0);
   outC->outRadioTrainTrackMessage.packets.p9.valid = kcg_true;
   outC->outRadioTrainTrackMessage.packets.p9.transitionInformation =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outRadioTrainTrackMessage.packets.p11.valid = kcg_true;
   outC->outRadioTrainTrackMessage.packets.p11.nc_cdtrain =
     NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->outRadioTrainTrackMessage.packets.p11.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->outRadioTrainTrackMessage.packets.p11.l_train = kcg_lit_int64(0);
-  outC->outRadioTrainTrackMessage.packets.p11.v_maxtrain = kcg_lit_int64(0);
+  outC->outRadioTrainTrackMessage.packets.p11.l_train = kcg_lit_int32(0);
+  outC->outRadioTrainTrackMessage.packets.p11.v_maxtrain = kcg_lit_int32(0);
   outC->outRadioTrainTrackMessage.packets.p11.m_loadinggoage =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->outRadioTrainTrackMessage.packets.p11.m_axleloadcat = M_AXLELOADCAT_A;
   outC->outRadioTrainTrackMessage.packets.p11.m_airtight = M_AIRTIGHT_Not_fitted;
-  outC->outRadioTrainTrackMessage.packets.p11.n_axle = kcg_lit_int64(0);
+  outC->outRadioTrainTrackMessage.packets.p11.n_axle = kcg_lit_int32(0);
   outC->outRadioTrainTrackMessage.packets.p11.nIter_tractionIdentity =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx184 = 0; idx184 < 4; idx184++) {
     outC->outRadioTrainTrackMessage.packets.p11.tractionIdentity[idx184].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
     outC->outRadioTrainTrackMessage.packets.p11.tractionIdentity[idx184].nid_ctraction =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
-  outC->outRadioTrainTrackMessage.packets.p11.nIter_ntc = kcg_lit_int64(0);
+  outC->outRadioTrainTrackMessage.packets.p11.nIter_ntc = kcg_lit_int32(0);
   for (idx185 = 0; idx185 < 5; idx185++) {
-    outC->outRadioTrainTrackMessage.packets.p11.nid_ntc[idx185] = kcg_lit_int64(0);
+    outC->outRadioTrainTrackMessage.packets.p11.nid_ntc[idx185] = kcg_lit_int32(0);
   }
-  outC->outDataBus.session.m_TrainData.nid_engine = kcg_lit_int64(0);
+  outC->outDataBus.session.m_TrainData.nid_engine = kcg_lit_int32(0);
   outC->outDataBus.session.m_TrainData.m_NumberOfOnboardPhoneNumbers =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx187 = 0; idx187 < 1; idx187++) {
     outC->outDataBus.session.m_TrainData.m_OnboardPhoneNumbers[idx187].valid =
       kcg_true;
     for (idx186 = 0; idx186 < 15; idx186++) {
       outC->outDataBus.session.m_TrainData.m_OnboardPhoneNumbers[idx187].telephoneNumber[idx186] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
-  outC->outDataBus.session.m_TrainData.t_train_ref = kcg_lit_int64(0);
+  outC->outDataBus.session.m_TrainData.t_train_ref = kcg_lit_int32(0);
   outC->outDataBus.session.m_TrainData.nc_cdtrain =
     NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->outDataBus.session.m_TrainData.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->outDataBus.session.m_TrainData.l_train = kcg_lit_int64(0);
-  outC->outDataBus.session.m_TrainData.v_maxtrain = kcg_lit_int64(0);
+  outC->outDataBus.session.m_TrainData.l_train = kcg_lit_int32(0);
+  outC->outDataBus.session.m_TrainData.v_maxtrain = kcg_lit_int32(0);
   outC->outDataBus.session.m_TrainData.m_loadinggauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->outDataBus.session.m_TrainData.m_axleloadcat = M_AXLELOADCAT_A;
   outC->outDataBus.session.m_TrainData.m_airtight = M_AIRTIGHT_Not_fitted;
-  outC->outDataBus.session.m_TrainData.n_axle = kcg_lit_int64(0);
+  outC->outDataBus.session.m_TrainData.n_axle = kcg_lit_int32(0);
   for (idx188 = 0; idx188 < 4; idx188++) {
     outC->outDataBus.session.m_TrainData.m_TractionIdentities[idx188].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
     outC->outDataBus.session.m_TrainData.m_TractionIdentities[idx188].nid_ctraction =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx189 = 0; idx189 < 5; idx189++) {
     outC->outDataBus.session.m_TrainData.m_NationalSystemIdentities[idx189] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
-  outC->outDataBus.session.m_TrainData.nid_operational = kcg_lit_int64(0);
-  outC->outDataBus.session.m_PosData.nid_lrbg = kcg_lit_int64(0);
+  outC->outDataBus.session.m_TrainData.nid_operational = kcg_lit_int32(0);
+  outC->outDataBus.session.m_PosData.nid_lrbg = kcg_lit_int32(0);
   outC->outDataBus.session.m_PosData.q_scale = Q_SCALE_10_cm_scale;
-  outC->outDataBus.session.m_PosData.d_lrbg = kcg_lit_int64(0);
+  outC->outDataBus.session.m_PosData.d_lrbg = kcg_lit_int32(0);
   outC->outDataBus.session.m_PosData.q_dirlrbg = Q_DIRLRBG_Reverse;
   outC->outDataBus.session.m_PosData.q_dlrbg = Q_DLRBG_Reverse;
-  outC->outDataBus.session.m_PosData.l_doubtover = kcg_lit_int64(0);
-  outC->outDataBus.session.m_PosData.l_doubtunder = kcg_lit_int64(0);
+  outC->outDataBus.session.m_PosData.l_doubtover = kcg_lit_int32(0);
+  outC->outDataBus.session.m_PosData.l_doubtunder = kcg_lit_int32(0);
   outC->outDataBus.session.m_PosData.q_length =
     Q_LENGTH_No_train_integrity_information_available;
-  outC->outDataBus.session.m_PosData.l_trainint = kcg_lit_int64(0);
-  outC->outDataBus.session.m_PosData.v_train = kcg_lit_int64(0);
+  outC->outDataBus.session.m_PosData.l_trainint = kcg_lit_int32(0);
+  outC->outDataBus.session.m_PosData.v_train = kcg_lit_int32(0);
   outC->outDataBus.session.m_PosData.q_dirtrain = Q_DIRTRAIN_Reverse;
   outC->outDataBus.session.m_PosData.m_mode = M_MODE_Full_Supervision;
   outC->outDataBus.session.m_PosData.m_level = M_LEVEL_Level_0;
-  outC->outDataBus.session.m_PosData.nid_ntc = kcg_lit_int64(0);
-  outC->outDataBus.session.m_PosData.nid_prvlrbg = kcg_lit_int64(0);
+  outC->outDataBus.session.m_PosData.nid_ntc = kcg_lit_int32(0);
+  outC->outDataBus.session.m_PosData.nid_prvlrbg = kcg_lit_int32(0);
   outC->outDataBus.config.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
-  outC->outDataBus.config.m_NationalParams.nid_c = kcg_lit_int64(0);
-  outC->outDataBus.config.m_NationalParams.v_nvshunt = kcg_lit_int64(0);
-  outC->outDataBus.config.m_NationalParams.v_nvstff = kcg_lit_int64(0);
-  outC->outDataBus.config.m_NationalParams.v_nvonsight = kcg_lit_int64(0);
-  outC->outDataBus.config.m_NationalParams.v_nvunfit = kcg_lit_int64(0);
-  outC->outDataBus.config.m_NationalParams.v_nvrel = kcg_lit_int64(0);
-  outC->outDataBus.config.m_NationalParams.t_nvcontact = kcg_lit_int64(0);
+  outC->outDataBus.config.m_NationalParams.nid_c = kcg_lit_int32(0);
+  outC->outDataBus.config.m_NationalParams.v_nvshunt = kcg_lit_int32(0);
+  outC->outDataBus.config.m_NationalParams.v_nvstff = kcg_lit_int32(0);
+  outC->outDataBus.config.m_NationalParams.v_nvonsight = kcg_lit_int32(0);
+  outC->outDataBus.config.m_NationalParams.v_nvunfit = kcg_lit_int32(0);
+  outC->outDataBus.config.m_NationalParams.v_nvrel = kcg_lit_int32(0);
+  outC->outDataBus.config.m_NationalParams.t_nvcontact = kcg_lit_int32(0);
   outC->outDataBus.config.m_MAReqParams.q_dir = Q_DIR_Reverse;
-  outC->outDataBus.config.m_MAReqParams.t_mar = kcg_lit_int64(0);
-  outC->outDataBus.config.m_MAReqParams.t_timeoutrqst = kcg_lit_int64(0);
-  outC->outDataBus.config.m_MAReqParams.t_cycrqst = kcg_lit_int64(0);
+  outC->outDataBus.config.m_MAReqParams.t_mar = kcg_lit_int32(0);
+  outC->outDataBus.config.m_MAReqParams.t_timeoutrqst = kcg_lit_int32(0);
+  outC->outDataBus.config.m_MAReqParams.t_cycrqst = kcg_lit_int32(0);
   outC->outDataBus.config.m_PosRepParams.q_dir = Q_DIR_Reverse;
   outC->outDataBus.config.m_PosRepParams.q_scale = Q_SCALE_10_cm_scale;
-  outC->outDataBus.config.m_PosRepParams.t_cycloc = kcg_lit_int64(0);
-  outC->outDataBus.config.m_PosRepParams.d_cycloc = kcg_lit_int64(0);
+  outC->outDataBus.config.m_PosRepParams.t_cycloc = kcg_lit_int32(0);
+  outC->outDataBus.config.m_PosRepParams.d_cycloc = kcg_lit_int32(0);
   outC->outDataBus.config.m_PosRepParams.m_loc = M_LOC_Now;
   outC->outDataBus.config.m_PosRepParams.m_NumberOfIncrementalDistancesAndQualifiers =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx190 = 0; idx190 < 32; idx190++) {
     outC->outDataBus.config.m_PosRepParams.m_IncrementalDistancesAndQualifiers[idx190].d_loc =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->outDataBus.config.m_PosRepParams.m_IncrementalDistancesAndQualifiers[idx190].q_lgtloc =
       Q_LGTLOC_Min_safe_rear_end;
   }
   for (idx191 = 0; idx191 < 16; idx191++) {
     outC->outDataBus.diagnostic[idx191].valid = kcg_true;
-    outC->outDataBus.diagnostic[idx191].count = kcg_lit_int64(0);
-    outC->outDataBus.diagnostic[idx191].timestamp = kcg_lit_int64(0);
+    outC->outDataBus.diagnostic[idx191].count = kcg_lit_int32(0);
+    outC->outDataBus.diagnostic[idx191].timestamp = kcg_lit_int32(0);
     outC->outDataBus.diagnostic[idx191].diagType =
       DIAG_MSG_TYPE_Empty_RBC_Diagnostic_Pkg;
     outC->outDataBus.diagnostic[idx191].diagSrc =
@@ -4787,88 +4787,88 @@ void RBC__ProcessConditionalEm_init_RBC_Model_Pkg(
   for (idx194 = 0; idx194 < 8; idx194++) {
     outC->outDataBus.messageQueue.m_Entries[idx194].m_IsValid = kcg_true;
     outC->outDataBus.messageQueue.m_Entries[idx194].m_Entry.Header.radioDevice =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->outDataBus.messageQueue.m_Entries[idx194].m_Entry.Header.receivedSystemTime =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->outDataBus.messageQueue.m_Entries[idx194].m_Entry.Header.nid_message =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->outDataBus.messageQueue.m_Entries[idx194].m_Entry.Header.t_train =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->outDataBus.messageQueue.m_Entries[idx194].m_Entry.Header.m_ack =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->outDataBus.messageQueue.m_Entries[idx194].m_Entry.Header.nid_lrbg =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->outDataBus.messageQueue.m_Entries[idx194].m_Entry.Header.t_train_reference =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->outDataBus.messageQueue.m_Entries[idx194].m_Entry.Header.nid_em =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->outDataBus.messageQueue.m_Entries[idx194].m_Entry.Header.q_scale =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->outDataBus.messageQueue.m_Entries[idx194].m_Entry.Header.d_sr =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->outDataBus.messageQueue.m_Entries[idx194].m_Entry.Header.t_sh_rqst =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->outDataBus.messageQueue.m_Entries[idx194].m_Entry.Header.d_ref =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->outDataBus.messageQueue.m_Entries[idx194].m_Entry.Header.q_dir =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->outDataBus.messageQueue.m_Entries[idx194].m_Entry.Header.d_emergencystop =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->outDataBus.messageQueue.m_Entries[idx194].m_Entry.Header.m_version =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     for (idx192 = 0; idx192 < 30; idx192++) {
       outC->outDataBus.messageQueue.m_Entries[idx194].m_Entry.Messages.PacketHeaders[idx192].nid_packet =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->outDataBus.messageQueue.m_Entries[idx194].m_Entry.Messages.PacketHeaders[idx192].q_dir =
         Q_DIR_Reverse;
       outC->outDataBus.messageQueue.m_Entries[idx194].m_Entry.Messages.PacketHeaders[idx192].valid =
         kcg_true;
       outC->outDataBus.messageQueue.m_Entries[idx194].m_Entry.Messages.PacketHeaders[idx192].startAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->outDataBus.messageQueue.m_Entries[idx194].m_Entry.Messages.PacketHeaders[idx192].endAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
     for (idx193 = 0; idx193 < 500; idx193++) {
       outC->outDataBus.messageQueue.m_Entries[idx194].m_Entry.Messages.PacketData[idx193] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
-  outC->outDataBus.clockk.m_Value = kcg_lit_int64(0);
-  outC->outDataBus.lastSentTrackTrainMessage.Header.radioDevice = kcg_lit_int64(
+  outC->outDataBus.clockk.m_Value = kcg_lit_int32(0);
+  outC->outDataBus.lastSentTrackTrainMessage.Header.radioDevice = kcg_lit_int32(
       0);
   outC->outDataBus.lastSentTrackTrainMessage.Header.receivedSystemTime =
-    kcg_lit_int64(0);
-  outC->outDataBus.lastSentTrackTrainMessage.Header.nid_message = kcg_lit_int64(
+    kcg_lit_int32(0);
+  outC->outDataBus.lastSentTrackTrainMessage.Header.nid_message = kcg_lit_int32(
       0);
-  outC->outDataBus.lastSentTrackTrainMessage.Header.t_train = kcg_lit_int64(0);
-  outC->outDataBus.lastSentTrackTrainMessage.Header.m_ack = kcg_lit_int64(0);
-  outC->outDataBus.lastSentTrackTrainMessage.Header.nid_lrbg = kcg_lit_int64(0);
+  outC->outDataBus.lastSentTrackTrainMessage.Header.t_train = kcg_lit_int32(0);
+  outC->outDataBus.lastSentTrackTrainMessage.Header.m_ack = kcg_lit_int32(0);
+  outC->outDataBus.lastSentTrackTrainMessage.Header.nid_lrbg = kcg_lit_int32(0);
   outC->outDataBus.lastSentTrackTrainMessage.Header.t_train_reference =
-    kcg_lit_int64(0);
-  outC->outDataBus.lastSentTrackTrainMessage.Header.nid_em = kcg_lit_int64(0);
-  outC->outDataBus.lastSentTrackTrainMessage.Header.q_scale = kcg_lit_int64(0);
-  outC->outDataBus.lastSentTrackTrainMessage.Header.d_sr = kcg_lit_int64(0);
-  outC->outDataBus.lastSentTrackTrainMessage.Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->outDataBus.lastSentTrackTrainMessage.Header.d_ref = kcg_lit_int64(0);
-  outC->outDataBus.lastSentTrackTrainMessage.Header.q_dir = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->outDataBus.lastSentTrackTrainMessage.Header.nid_em = kcg_lit_int32(0);
+  outC->outDataBus.lastSentTrackTrainMessage.Header.q_scale = kcg_lit_int32(0);
+  outC->outDataBus.lastSentTrackTrainMessage.Header.d_sr = kcg_lit_int32(0);
+  outC->outDataBus.lastSentTrackTrainMessage.Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->outDataBus.lastSentTrackTrainMessage.Header.d_ref = kcg_lit_int32(0);
+  outC->outDataBus.lastSentTrackTrainMessage.Header.q_dir = kcg_lit_int32(0);
   outC->outDataBus.lastSentTrackTrainMessage.Header.d_emergencystop =
-    kcg_lit_int64(0);
-  outC->outDataBus.lastSentTrackTrainMessage.Header.m_version = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->outDataBus.lastSentTrackTrainMessage.Header.m_version = kcg_lit_int32(0);
   for (idx195 = 0; idx195 < 30; idx195++) {
     outC->outDataBus.lastSentTrackTrainMessage.Messages.PacketHeaders[idx195].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->outDataBus.lastSentTrackTrainMessage.Messages.PacketHeaders[idx195].q_dir =
       Q_DIR_Reverse;
     outC->outDataBus.lastSentTrackTrainMessage.Messages.PacketHeaders[idx195].valid =
       kcg_true;
     outC->outDataBus.lastSentTrackTrainMessage.Messages.PacketHeaders[idx195].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->outDataBus.lastSentTrackTrainMessage.Messages.PacketHeaders[idx195].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx196 = 0; idx196 < 500; idx196++) {
     outC->outDataBus.lastSentTrackTrainMessage.Messages.PacketData[idx196] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   /* CONDITIONAL_EMERGENCY_STOP_SM:SEND_CONDITIONAL_EMERGENCY_STOP:_L54=(RBC_Messaging_Pkg::RBC_RadioTrackTrain_Pkg::RadioTrackTrainHeader__Get_NID_EM#1)/ */
   _101_RadioTrackTrainHeade_init_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg(

@@ -20,8 +20,8 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_float64 /* position/ */ position;
-  kcg_float64 /* velocity/ */ velocity;
+  kcg_float32 /* position/ */ position;
+  kcg_float32 /* velocity/ */ velocity;
   T_internal_Type_Obu_BasicTypes_Pkg /* timestamp/ */ timestamp;
   odometry_T_Obu_BasicTypes_Pkg /* odometry/ */ odometry;
   kcg_bool /* resetOut/ */ resetOut;
@@ -30,8 +30,8 @@ typedef struct {
   kcg_bool init;
   kcg_bool init1;
   kcg_bool /* @1/_L2/ */ _L2_FlipFlopSet_1;
-  kcg_float64 /* SM1:Driving:_L15/ */ _L15_Driving_SM1;
-  kcg_float64 /* SM1:Driving:_L14/ */ _L14_Driving_SM1;
+  kcg_float32 /* SM1:Driving:_L15/ */ _L15_Driving_SM1;
+  kcg_float32 /* SM1:Driving:_L14/ */ _L14_Driving_SM1;
   SSM_ST_SM1 /* SM1: */ SM1_state_nxt;
   kcg_bool /* SM1: */ SM1_reset_act;
   kcg_bool /* SM1: */ SM1_reset_nxt;
@@ -62,62 +62,62 @@ typedef struct {
   kcg_bool /* @1/_L5/ */ _L5_FlipFlopSet_1;
   kcg_bool /* @1/_L4/ */ _L4_FlipFlopSet_1;
   kcg_bool /* @1/_L10/ */ _L10_FlipFlopSet_1;
-  kcg_float64 /* IfBlock1:then:_L2/ */ _L2_then_IfBlock1;
-  kcg_float64 /* IfBlock1:else:else:then:_L1/ */ _L1_then_else_else_IfBlock1;
-  kcg_float64 /* IfBlock1:else:else:else:_L1/ */ _L1_else_else_else_IfBlock1;
-  kcg_float64 /* IfBlock1:else:then:_L1/ */ _L1_then_else_IfBlock1;
-  kcg_float64 /* SM1:Reset:_L4/ */ _L4_Reset_SM1;
-  kcg_float64 /* SM1:Reset:_L2/ */ _L2_Reset_SM1;
-  kcg_float64 /* SM1:Driving:_L37/ */ _L37_Driving_SM1;
-  kcg_int64 /* SM1:Driving:_L35/ */ _L35_Driving_SM1;
-  kcg_float64 /* SM1:Driving:_L33/ */ _L33_Driving_SM1;
-  kcg_float64 /* SM1:Driving:_L34/ */ _L34_Driving_SM1;
-  kcg_float64 /* SM1:Driving:_L32/ */ _L32_Driving_SM1;
+  kcg_float32 /* IfBlock1:then:_L2/ */ _L2_then_IfBlock1;
+  kcg_float32 /* IfBlock1:else:else:then:_L1/ */ _L1_then_else_else_IfBlock1;
+  kcg_float32 /* IfBlock1:else:else:else:_L1/ */ _L1_else_else_else_IfBlock1;
+  kcg_float32 /* IfBlock1:else:then:_L1/ */ _L1_then_else_IfBlock1;
+  kcg_float32 /* SM1:Reset:_L4/ */ _L4_Reset_SM1;
+  kcg_float32 /* SM1:Reset:_L2/ */ _L2_Reset_SM1;
+  kcg_float32 /* SM1:Driving:_L37/ */ _L37_Driving_SM1;
+  kcg_int32 /* SM1:Driving:_L35/ */ _L35_Driving_SM1;
+  kcg_float32 /* SM1:Driving:_L33/ */ _L33_Driving_SM1;
+  kcg_float32 /* SM1:Driving:_L34/ */ _L34_Driving_SM1;
+  kcg_float32 /* SM1:Driving:_L32/ */ _L32_Driving_SM1;
   kcg_bool /* SM1:Driving:_L31/ */ _L31_Driving_SM1;
-  kcg_float64 /* SM1:Driving:_L30/ */ _L30_Driving_SM1;
-  kcg_float64 /* SM1:Driving:_L29/ */ _L29_Driving_SM1;
-  kcg_float64 /* SM1:Driving:_L28/ */ _L28_Driving_SM1;
-  kcg_float64 /* SM1:Driving:_L27/ */ _L27_Driving_SM1;
-  kcg_float64 /* SM1:Driving:_L26/ */ _L26_Driving_SM1;
+  kcg_float32 /* SM1:Driving:_L30/ */ _L30_Driving_SM1;
+  kcg_float32 /* SM1:Driving:_L29/ */ _L29_Driving_SM1;
+  kcg_float32 /* SM1:Driving:_L28/ */ _L28_Driving_SM1;
+  kcg_float32 /* SM1:Driving:_L27/ */ _L27_Driving_SM1;
+  kcg_float32 /* SM1:Driving:_L26/ */ _L26_Driving_SM1;
   kcg_bool /* SM1:Driving:_L25/ */ _L25_Driving_SM1;
-  kcg_float64 /* SM1:Driving:_L21/ */ _L21_Driving_SM1;
-  kcg_float64 /* SM1:Driving:_L20/ */ _L20_Driving_SM1;
-  kcg_float64 /* SM1:Driving:_L19/ */ _L19_Driving_SM1;
-  kcg_float64 /* SM1:Driving:_L18/ */ _L18_Driving_SM1;
-  kcg_float64 /* SM1:Driving:_L16/ */ _L16_Driving_SM1;
-  kcg_float64 /* SM1:Driving:_L8/ */ _L8_Driving_SM1;
-  kcg_float64 /* SM1:Driving:_L6/ */ _L6_Driving_SM1;
+  kcg_float32 /* SM1:Driving:_L21/ */ _L21_Driving_SM1;
+  kcg_float32 /* SM1:Driving:_L20/ */ _L20_Driving_SM1;
+  kcg_float32 /* SM1:Driving:_L19/ */ _L19_Driving_SM1;
+  kcg_float32 /* SM1:Driving:_L18/ */ _L18_Driving_SM1;
+  kcg_float32 /* SM1:Driving:_L16/ */ _L16_Driving_SM1;
+  kcg_float32 /* SM1:Driving:_L8/ */ _L8_Driving_SM1;
+  kcg_float32 /* SM1:Driving:_L6/ */ _L6_Driving_SM1;
   SSM_ST_SM1 /* SM1: */ SM1_state_sel;
   SSM_TR_SM1 /* SM1: */ SM1_fired_strong;
   SSM_TR_SM1 /* SM1: */ SM1_fired;
-  kcg_float64 /* tmpVelocity/ */ tmpVelocity;
-  kcg_float64 /* tmpPosition/ */ tmpPosition;
-  kcg_float64 /* finalAccelerationInPercent/ */ finalAccelerationInPercent;
+  kcg_float32 /* tmpVelocity/ */ tmpVelocity;
+  kcg_float32 /* tmpPosition/ */ tmpPosition;
+  kcg_float32 /* finalAccelerationInPercent/ */ finalAccelerationInPercent;
   kcg_bool /* needZeroPosition/ */ needZeroPosition;
-  kcg_float64 /* tmpAcceleration/ */ tmpAcceleration;
+  kcg_float32 /* tmpAcceleration/ */ tmpAcceleration;
   odometry_T_Obu_BasicTypes_Pkg /* _L5/ */ _L5;
-  kcg_float64 /* _L6/ */ _L6;
-  kcg_float64 /* _L21/ */ _L21;
+  kcg_float32 /* _L6/ */ _L6;
+  kcg_float32 /* _L21/ */ _L21;
   odoMotionDirection_T_Obu_BasicTypes_Pkg /* _L24/ */ _L24;
-  kcg_int64 /* _L25/ */ _L25;
+  kcg_int32 /* _L25/ */ _L25;
   kcg_bool /* _L28/ */ _L28;
-  kcg_float64 /* _L62/ */ _L62;
-  kcg_int64 /* _L64/ */ _L64;
-  kcg_float64 /* _L65/ */ _L65;
-  kcg_float64 /* _L66/ */ _L66;
-  kcg_int64 /* _L67/ */ _L67;
+  kcg_float32 /* _L62/ */ _L62;
+  kcg_int32 /* _L64/ */ _L64;
+  kcg_float32 /* _L65/ */ _L65;
+  kcg_float32 /* _L66/ */ _L66;
+  kcg_int32 /* _L67/ */ _L67;
   kcg_bool /* _L70/ */ _L70;
   kcg_bool /* _L71/ */ _L71;
-  kcg_float64 /* _L72/ */ _L72;
+  kcg_float32 /* _L72/ */ _L72;
   kcg_bool /* _L73/ */ _L73;
-  kcg_float64 /* _L74/ */ _L74;
+  kcg_float32 /* _L74/ */ _L74;
   kcg_bool /* _L75/ */ _L75;
   kcg_bool /* _L76/ */ _L76;
   kcg_bool /* _L77/ */ _L77;
-  kcg_int64 /* _L79/ */ _L79;
-  kcg_float64 /* _L81/ */ _L81;
-  kcg_int64 /* _L83/ */ _L83;
-  kcg_float64 /* _L82/ */ _L82;
+  kcg_int32 /* _L79/ */ _L79;
+  kcg_float32 /* _L81/ */ _L81;
+  kcg_int32 /* _L83/ */ _L83;
+  kcg_float32 /* _L82/ */ _L82;
 } outC_PHYSICS_MovementSimulation_Toolbox_Physics;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -126,7 +126,7 @@ extern void PHYSICS_MovementSimulation_Toolbox_Physics(
   /* reset/ */
   kcg_bool reset,
   /* accelerationInPercent/ */
-  kcg_float64 accelerationInPercent,
+  kcg_float32 accelerationInPercent,
   /* tractionCutOffFromEVC/ */
   kcg_bool tractionCutOffFromEVC,
   /* activateServiceBrakeFromEVC/ */
@@ -134,17 +134,17 @@ extern void PHYSICS_MovementSimulation_Toolbox_Physics(
   /* activateEmergencyBrakeFromEVC/ */
   kcg_bool activateEmergencyBrakeFromEVC,
   /* initialPosition/ */
-  kcg_float64 initialPosition,
+  kcg_float32 initialPosition,
   /* initialVelocity/ */
-  kcg_float64 initialVelocity,
+  kcg_float32 initialVelocity,
   /* timeSinceLastCycle/ */
-  kcg_int64 timeSinceLastCycle,
+  kcg_int32 timeSinceLastCycle,
   /* activateBrakeBuildupTime/ */
   kcg_bool activateBrakeBuildupTime,
   /* activateAirResistance/ */
   kcg_bool activateAirResistance,
   /* maximumAcceleration/ */
-  kcg_float64 maximumAcceleration,
+  kcg_float32 maximumAcceleration,
   outC_PHYSICS_MovementSimulation_Toolbox_Physics *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

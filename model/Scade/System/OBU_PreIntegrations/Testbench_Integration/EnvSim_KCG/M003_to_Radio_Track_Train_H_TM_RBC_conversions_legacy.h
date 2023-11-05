@@ -39,7 +39,7 @@ typedef struct {
   D_EMERGENCYSTOP /* _L22/ */ _L22;
   M_VERSION /* _L23/ */ _L23;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L25/ */ _L25;
-  kcg_int64 /* _L24/ */ _L24;
+  kcg_int32 /* _L24/ */ _L24;
 } outC_M003_to_Radio_Track_Train_H_TM_RBC_conversions_legacy;
 
 /* ===========  node initialization and cycle functions  =========== */

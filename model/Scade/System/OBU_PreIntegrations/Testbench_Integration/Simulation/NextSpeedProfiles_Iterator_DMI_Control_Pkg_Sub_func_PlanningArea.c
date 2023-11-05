@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,9 +10,9 @@
 /* DMI_Control_Pkg::Sub_func::PlanningArea::NextSpeedProfiles_Iterator/ */
 void NextSpeedProfiles_Iterator_DMI_Control_Pkg_Sub_func_PlanningArea(
   /* inTrainPosition/ */
-  kcg_float64 inTrainPosition,
+  kcg_float32 inTrainPosition,
   /* inSpeedProfile_Distance/ */
-  kcg_float64 inSpeedProfile_Distance,
+  kcg_float32 inSpeedProfile_Distance,
   outC_NextSpeedProfiles_Iterator_DMI_Control_Pkg_Sub_func_PlanningArea *outC)
 {
   outC->_L1 = inTrainPosition;
@@ -27,9 +27,9 @@ void NextSpeedProfiles_Iterator_init_DMI_Control_Pkg_Sub_func_PlanningArea(
   outC_NextSpeedProfiles_Iterator_DMI_Control_Pkg_Sub_func_PlanningArea *outC)
 {
   outC->_L3 = kcg_true;
-  outC->_L2 = kcg_lit_float64(0.0);
-  outC->_L1 = kcg_lit_float64(0.0);
-  outC->AccOut = kcg_lit_float64(0.0);
+  outC->_L2 = kcg_lit_float32(0.0);
+  outC->_L1 = kcg_lit_float32(0.0);
+  outC->AccOut = kcg_lit_float32(0.0);
   outC->outFirstIndexOfNextSpeedProfiles = kcg_true;
 }
 #endif /* KCG_USER_DEFINED_INIT */
@@ -46,6 +46,6 @@ void NextSpeedProfiles_Iterator_reset_DMI_Control_Pkg_Sub_func_PlanningArea(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** NextSpeedProfiles_Iterator_DMI_Control_Pkg_Sub_func_PlanningArea.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

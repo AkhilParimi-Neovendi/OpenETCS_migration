@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _Merg2PacketsListArray_CheckBGConsistency_Pkg_SubFunction_MergFunction_H_
 #define _Merg2PacketsListArray_CheckBGConsistency_Pkg_SubFunction_MergFunction_H_
@@ -26,8 +26,8 @@ typedef struct {
   CompressedPacketData_T_Common_Types_Pkg /* _L6/ */ _L6;
   CompressedPacketData_T_Common_Types_Pkg /* _L5/ */ _L5;
   CompressedPacketData_T_Common_Types_Pkg /* _L4/ */ _L4;
-  array_int64_500_500 /* _L3/ */ _L3;
-  array_int64_500_500 /* _L2/ */ _L2;
+  array_int32_500_500 /* _L3/ */ _L3;
+  array_int32_500_500 /* _L2/ */ _L2;
   CompressedPacketData_T_Common_Types_Pkg /* _L1/ */ _L1;
 } outC_Merg2PacketsListArray_CheckBGConsistency_Pkg_SubFunction_MergFunction;
 
@@ -57,6 +57,6 @@ extern void Merg2PacketsListArray_init_CheckBGConsistency_Pkg_SubFunction_MergFu
 #endif /* _Merg2PacketsListArray_CheckBGConsistency_Pkg_SubFunction_MergFunction_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Merg2PacketsListArray_CheckBGConsistency_Pkg_SubFunction_MergFunction.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

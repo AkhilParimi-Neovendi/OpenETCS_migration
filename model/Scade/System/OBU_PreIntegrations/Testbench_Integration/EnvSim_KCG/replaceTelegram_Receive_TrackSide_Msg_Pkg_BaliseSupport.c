@@ -90,19 +90,19 @@ void replaceTelegram_init_Receive_TrackSide_Msg_Pkg_BaliseSupport(
   outC->_L18.telegramheader.n_pig = N_PIG_I_am_the_1st;
   outC->_L18.telegramheader.n_total = N_TOTAL_1_balise_in_the_group;
   outC->_L18.telegramheader.m_dup = M_DUP_No_duplicates;
-  outC->_L18.telegramheader.m_mcount = kcg_lit_int64(0);
-  outC->_L18.telegramheader.nid_c = kcg_lit_int64(0);
-  outC->_L18.telegramheader.nid_bg = kcg_lit_int64(0);
+  outC->_L18.telegramheader.m_mcount = kcg_lit_int32(0);
+  outC->_L18.telegramheader.nid_c = kcg_lit_int32(0);
+  outC->_L18.telegramheader.nid_bg = kcg_lit_int32(0);
   outC->_L18.telegramheader.q_link = Q_LINK_Unlinked;
   for (idx = 0; idx < 30; idx++) {
-    outC->_L18.packets.PacketHeaders[idx].nid_packet = kcg_lit_int64(0);
+    outC->_L18.packets.PacketHeaders[idx].nid_packet = kcg_lit_int32(0);
     outC->_L18.packets.PacketHeaders[idx].q_dir = Q_DIR_Reverse;
     outC->_L18.packets.PacketHeaders[idx].valid = kcg_true;
-    outC->_L18.packets.PacketHeaders[idx].startAddress = kcg_lit_int64(0);
-    outC->_L18.packets.PacketHeaders[idx].endAddress = kcg_lit_int64(0);
+    outC->_L18.packets.PacketHeaders[idx].startAddress = kcg_lit_int32(0);
+    outC->_L18.packets.PacketHeaders[idx].endAddress = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 500; idx1++) {
-    outC->_L18.packets.PacketData[idx1] = kcg_lit_int64(0);
+    outC->_L18.packets.PacketData[idx1] = kcg_lit_int32(0);
   }
   outC->_L17.valid = kcg_true;
   outC->_L17.checkResult = kcg_true;
@@ -113,19 +113,19 @@ void replaceTelegram_init_Receive_TrackSide_Msg_Pkg_BaliseSupport(
   outC->_L17.telegramheader.n_pig = N_PIG_I_am_the_1st;
   outC->_L17.telegramheader.n_total = N_TOTAL_1_balise_in_the_group;
   outC->_L17.telegramheader.m_dup = M_DUP_No_duplicates;
-  outC->_L17.telegramheader.m_mcount = kcg_lit_int64(0);
-  outC->_L17.telegramheader.nid_c = kcg_lit_int64(0);
-  outC->_L17.telegramheader.nid_bg = kcg_lit_int64(0);
+  outC->_L17.telegramheader.m_mcount = kcg_lit_int32(0);
+  outC->_L17.telegramheader.nid_c = kcg_lit_int32(0);
+  outC->_L17.telegramheader.nid_bg = kcg_lit_int32(0);
   outC->_L17.telegramheader.q_link = Q_LINK_Unlinked;
   for (idx2 = 0; idx2 < 30; idx2++) {
-    outC->_L17.packets.PacketHeaders[idx2].nid_packet = kcg_lit_int64(0);
+    outC->_L17.packets.PacketHeaders[idx2].nid_packet = kcg_lit_int32(0);
     outC->_L17.packets.PacketHeaders[idx2].q_dir = Q_DIR_Reverse;
     outC->_L17.packets.PacketHeaders[idx2].valid = kcg_true;
-    outC->_L17.packets.PacketHeaders[idx2].startAddress = kcg_lit_int64(0);
-    outC->_L17.packets.PacketHeaders[idx2].endAddress = kcg_lit_int64(0);
+    outC->_L17.packets.PacketHeaders[idx2].startAddress = kcg_lit_int32(0);
+    outC->_L17.packets.PacketHeaders[idx2].endAddress = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 500; idx3++) {
-    outC->_L17.packets.PacketData[idx3] = kcg_lit_int64(0);
+    outC->_L17.packets.PacketData[idx3] = kcg_lit_int32(0);
   }
   outC->_L16 = kcg_true;
   outC->_L15 = kcg_true;
@@ -147,19 +147,19 @@ void replaceTelegram_init_Receive_TrackSide_Msg_Pkg_BaliseSupport(
   outC->_L4.telegramheader.n_pig = N_PIG_I_am_the_1st;
   outC->_L4.telegramheader.n_total = N_TOTAL_1_balise_in_the_group;
   outC->_L4.telegramheader.m_dup = M_DUP_No_duplicates;
-  outC->_L4.telegramheader.m_mcount = kcg_lit_int64(0);
-  outC->_L4.telegramheader.nid_c = kcg_lit_int64(0);
-  outC->_L4.telegramheader.nid_bg = kcg_lit_int64(0);
+  outC->_L4.telegramheader.m_mcount = kcg_lit_int32(0);
+  outC->_L4.telegramheader.nid_c = kcg_lit_int32(0);
+  outC->_L4.telegramheader.nid_bg = kcg_lit_int32(0);
   outC->_L4.telegramheader.q_link = Q_LINK_Unlinked;
   for (idx4 = 0; idx4 < 30; idx4++) {
-    outC->_L4.packets.PacketHeaders[idx4].nid_packet = kcg_lit_int64(0);
+    outC->_L4.packets.PacketHeaders[idx4].nid_packet = kcg_lit_int32(0);
     outC->_L4.packets.PacketHeaders[idx4].q_dir = Q_DIR_Reverse;
     outC->_L4.packets.PacketHeaders[idx4].valid = kcg_true;
-    outC->_L4.packets.PacketHeaders[idx4].startAddress = kcg_lit_int64(0);
-    outC->_L4.packets.PacketHeaders[idx4].endAddress = kcg_lit_int64(0);
+    outC->_L4.packets.PacketHeaders[idx4].startAddress = kcg_lit_int32(0);
+    outC->_L4.packets.PacketHeaders[idx4].endAddress = kcg_lit_int32(0);
   }
   for (idx5 = 0; idx5 < 500; idx5++) {
-    outC->_L4.packets.PacketData[idx5] = kcg_lit_int64(0);
+    outC->_L4.packets.PacketData[idx5] = kcg_lit_int32(0);
   }
   outC->_L3 = kcg_true;
   outC->_L2.valid = kcg_true;
@@ -171,19 +171,19 @@ void replaceTelegram_init_Receive_TrackSide_Msg_Pkg_BaliseSupport(
   outC->_L2.telegramheader.n_pig = N_PIG_I_am_the_1st;
   outC->_L2.telegramheader.n_total = N_TOTAL_1_balise_in_the_group;
   outC->_L2.telegramheader.m_dup = M_DUP_No_duplicates;
-  outC->_L2.telegramheader.m_mcount = kcg_lit_int64(0);
-  outC->_L2.telegramheader.nid_c = kcg_lit_int64(0);
-  outC->_L2.telegramheader.nid_bg = kcg_lit_int64(0);
+  outC->_L2.telegramheader.m_mcount = kcg_lit_int32(0);
+  outC->_L2.telegramheader.nid_c = kcg_lit_int32(0);
+  outC->_L2.telegramheader.nid_bg = kcg_lit_int32(0);
   outC->_L2.telegramheader.q_link = Q_LINK_Unlinked;
   for (idx6 = 0; idx6 < 30; idx6++) {
-    outC->_L2.packets.PacketHeaders[idx6].nid_packet = kcg_lit_int64(0);
+    outC->_L2.packets.PacketHeaders[idx6].nid_packet = kcg_lit_int32(0);
     outC->_L2.packets.PacketHeaders[idx6].q_dir = Q_DIR_Reverse;
     outC->_L2.packets.PacketHeaders[idx6].valid = kcg_true;
-    outC->_L2.packets.PacketHeaders[idx6].startAddress = kcg_lit_int64(0);
-    outC->_L2.packets.PacketHeaders[idx6].endAddress = kcg_lit_int64(0);
+    outC->_L2.packets.PacketHeaders[idx6].startAddress = kcg_lit_int32(0);
+    outC->_L2.packets.PacketHeaders[idx6].endAddress = kcg_lit_int32(0);
   }
   for (idx7 = 0; idx7 < 500; idx7++) {
-    outC->_L2.packets.PacketData[idx7] = kcg_lit_int64(0);
+    outC->_L2.packets.PacketData[idx7] = kcg_lit_int32(0);
   }
   outC->_L1.valid = kcg_true;
   outC->_L1.checkResult = kcg_true;
@@ -194,19 +194,19 @@ void replaceTelegram_init_Receive_TrackSide_Msg_Pkg_BaliseSupport(
   outC->_L1.telegramheader.n_pig = N_PIG_I_am_the_1st;
   outC->_L1.telegramheader.n_total = N_TOTAL_1_balise_in_the_group;
   outC->_L1.telegramheader.m_dup = M_DUP_No_duplicates;
-  outC->_L1.telegramheader.m_mcount = kcg_lit_int64(0);
-  outC->_L1.telegramheader.nid_c = kcg_lit_int64(0);
-  outC->_L1.telegramheader.nid_bg = kcg_lit_int64(0);
+  outC->_L1.telegramheader.m_mcount = kcg_lit_int32(0);
+  outC->_L1.telegramheader.nid_c = kcg_lit_int32(0);
+  outC->_L1.telegramheader.nid_bg = kcg_lit_int32(0);
   outC->_L1.telegramheader.q_link = Q_LINK_Unlinked;
   for (idx8 = 0; idx8 < 30; idx8++) {
-    outC->_L1.packets.PacketHeaders[idx8].nid_packet = kcg_lit_int64(0);
+    outC->_L1.packets.PacketHeaders[idx8].nid_packet = kcg_lit_int32(0);
     outC->_L1.packets.PacketHeaders[idx8].q_dir = Q_DIR_Reverse;
     outC->_L1.packets.PacketHeaders[idx8].valid = kcg_true;
-    outC->_L1.packets.PacketHeaders[idx8].startAddress = kcg_lit_int64(0);
-    outC->_L1.packets.PacketHeaders[idx8].endAddress = kcg_lit_int64(0);
+    outC->_L1.packets.PacketHeaders[idx8].startAddress = kcg_lit_int32(0);
+    outC->_L1.packets.PacketHeaders[idx8].endAddress = kcg_lit_int32(0);
   }
   for (idx9 = 0; idx9 < 500; idx9++) {
-    outC->_L1.packets.PacketData[idx9] = kcg_lit_int64(0);
+    outC->_L1.packets.PacketData[idx9] = kcg_lit_int32(0);
   }
   outC->doReplace = kcg_true;
   outC->every = kcg_true;
@@ -220,19 +220,19 @@ void replaceTelegram_init_Receive_TrackSide_Msg_Pkg_BaliseSupport(
   outC->outTelegrams.telegramheader.n_pig = N_PIG_I_am_the_1st;
   outC->outTelegrams.telegramheader.n_total = N_TOTAL_1_balise_in_the_group;
   outC->outTelegrams.telegramheader.m_dup = M_DUP_No_duplicates;
-  outC->outTelegrams.telegramheader.m_mcount = kcg_lit_int64(0);
-  outC->outTelegrams.telegramheader.nid_c = kcg_lit_int64(0);
-  outC->outTelegrams.telegramheader.nid_bg = kcg_lit_int64(0);
+  outC->outTelegrams.telegramheader.m_mcount = kcg_lit_int32(0);
+  outC->outTelegrams.telegramheader.nid_c = kcg_lit_int32(0);
+  outC->outTelegrams.telegramheader.nid_bg = kcg_lit_int32(0);
   outC->outTelegrams.telegramheader.q_link = Q_LINK_Unlinked;
   for (idx10 = 0; idx10 < 30; idx10++) {
-    outC->outTelegrams.packets.PacketHeaders[idx10].nid_packet = kcg_lit_int64(0);
+    outC->outTelegrams.packets.PacketHeaders[idx10].nid_packet = kcg_lit_int32(0);
     outC->outTelegrams.packets.PacketHeaders[idx10].q_dir = Q_DIR_Reverse;
     outC->outTelegrams.packets.PacketHeaders[idx10].valid = kcg_true;
-    outC->outTelegrams.packets.PacketHeaders[idx10].startAddress = kcg_lit_int64(0);
-    outC->outTelegrams.packets.PacketHeaders[idx10].endAddress = kcg_lit_int64(0);
+    outC->outTelegrams.packets.PacketHeaders[idx10].startAddress = kcg_lit_int32(0);
+    outC->outTelegrams.packets.PacketHeaders[idx10].endAddress = kcg_lit_int32(0);
   }
   for (idx11 = 0; idx11 < 500; idx11++) {
-    outC->outTelegrams.packets.PacketData[idx11] = kcg_lit_int64(0);
+    outC->outTelegrams.packets.PacketData[idx11] = kcg_lit_int32(0);
   }
   outC->cont = kcg_true;
   /* _L16=(Receive_TrackSide_Msg_Pkg::BaliseSupport::compareTelegrams#1)/ */

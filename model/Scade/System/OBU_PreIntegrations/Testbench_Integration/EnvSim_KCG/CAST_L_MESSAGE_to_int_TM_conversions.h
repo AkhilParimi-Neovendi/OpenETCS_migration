@@ -14,7 +14,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* l_message_int/ */ l_message_int;
+  kcg_int32 /* l_message_int/ */ l_message_int;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
@@ -24,8 +24,8 @@ typedef struct {
   L_MESSAGE /* _L1/ */ _L1;
   kcg_bool /* _L9/ */ _L9;
   kcg_bool /* _L8/ */ _L8;
-  kcg_int64 /* _L12/ */ _L12;
-  kcg_int64 /* _L13/ */ _L13;
+  kcg_int32 /* _L12/ */ _L12;
+  kcg_int32 /* _L13/ */ _L13;
 } outC_CAST_L_MESSAGE_to_int_TM_conversions;
 
 /* ===========  node initialization and cycle functions  =========== */

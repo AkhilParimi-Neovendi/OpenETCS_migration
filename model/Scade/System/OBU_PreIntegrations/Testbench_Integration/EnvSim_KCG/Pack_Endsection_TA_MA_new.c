@@ -32,50 +32,50 @@ void Pack_Endsection_init_TA_MA_new(outC_Pack_Endsection_TA_MA_new *outC)
 {
   static kcg_size idx;
 
-  outC->_L53 = kcg_lit_int64(0);
+  outC->_L53 = kcg_lit_int32(0);
   outC->_L54 = Q_SECTIONTIMER_No_Section_Timer_information;
-  outC->_L52 = kcg_lit_int64(0);
-  outC->_L48 = kcg_lit_int64(0);
+  outC->_L52 = kcg_lit_int32(0);
+  outC->_L48 = kcg_lit_int32(0);
   outC->_L47 = kcg_true;
   outC->_L46.valid = kcg_true;
-  outC->_L46.l_section = kcg_lit_int64(0);
+  outC->_L46.l_section = kcg_lit_int32(0);
   outC->_L46.q_sectiontimer = Q_SECTIONTIMER_No_Section_Timer_information;
-  outC->_L46.t_sectiontimer = kcg_lit_int64(0);
-  outC->_L46.d_sectiontimerstoploc = kcg_lit_int64(0);
+  outC->_L46.t_sectiontimer = kcg_lit_int32(0);
+  outC->_L46.d_sectiontimerstoploc = kcg_lit_int32(0);
   outC->_L1.valid = kcg_true;
   outC->_L1.q_dir = Q_DIR_Reverse;
   outC->_L1.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L1.v_loa = kcg_lit_int64(0);
-  outC->_L1.t_loa = kcg_lit_int64(0);
-  outC->_L1.n_iter = kcg_lit_int64(0);
+  outC->_L1.v_loa = kcg_lit_int32(0);
+  outC->_L1.t_loa = kcg_lit_int32(0);
+  outC->_L1.n_iter = kcg_lit_int32(0);
   for (idx = 0; idx < 32; idx++) {
     outC->_L1.sections[idx].valid = kcg_true;
-    outC->_L1.sections[idx].l_section = kcg_lit_int64(0);
+    outC->_L1.sections[idx].l_section = kcg_lit_int32(0);
     outC->_L1.sections[idx].q_sectiontimer =
       Q_SECTIONTIMER_No_Section_Timer_information;
-    outC->_L1.sections[idx].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L1.sections[idx].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L1.sections[idx].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L1.sections[idx].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
-  outC->_L1.l_endsection = kcg_lit_int64(0);
+  outC->_L1.l_endsection = kcg_lit_int32(0);
   outC->_L1.q_sectiontimer = Q_SECTIONTIMER_No_Section_Timer_information;
-  outC->_L1.t_sectiontimer = kcg_lit_int64(0);
-  outC->_L1.d_sectiontimerstoploc = kcg_lit_int64(0);
+  outC->_L1.t_sectiontimer = kcg_lit_int32(0);
+  outC->_L1.d_sectiontimerstoploc = kcg_lit_int32(0);
   outC->_L1.q_endtimer = Q_ENDTIMER_No_End_section_timer_information;
-  outC->_L1.t_endtimer = kcg_lit_int64(0);
-  outC->_L1.d_endtimerstartloc = kcg_lit_int64(0);
+  outC->_L1.t_endtimer = kcg_lit_int32(0);
+  outC->_L1.d_endtimerstartloc = kcg_lit_int32(0);
   outC->_L1.q_dangerpoint = Q_DANGERPOINT_No_danger_point_information;
-  outC->_L1.d_dp = kcg_lit_int64(0);
-  outC->_L1.v_releasedp = kcg_lit_int64(0);
+  outC->_L1.d_dp = kcg_lit_int32(0);
+  outC->_L1.v_releasedp = kcg_lit_int32(0);
   outC->_L1.q_overlap = Q_OVERLAP_No_overlap_information;
-  outC->_L1.d_startol = kcg_lit_int64(0);
-  outC->_L1.t_ol = kcg_lit_int64(0);
-  outC->_L1.d_ol = kcg_lit_int64(0);
-  outC->_L1.v_releaseol = kcg_lit_int64(0);
+  outC->_L1.d_startol = kcg_lit_int32(0);
+  outC->_L1.t_ol = kcg_lit_int32(0);
+  outC->_L1.d_ol = kcg_lit_int32(0);
+  outC->_L1.v_releaseol = kcg_lit_int32(0);
   outC->endsection.valid = kcg_true;
-  outC->endsection.l_section = kcg_lit_int64(0);
+  outC->endsection.l_section = kcg_lit_int32(0);
   outC->endsection.q_sectiontimer = Q_SECTIONTIMER_No_Section_Timer_information;
-  outC->endsection.t_sectiontimer = kcg_lit_int64(0);
-  outC->endsection.d_sectiontimerstoploc = kcg_lit_int64(0);
+  outC->endsection.t_sectiontimer = kcg_lit_int32(0);
+  outC->endsection.d_sectiontimerstoploc = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

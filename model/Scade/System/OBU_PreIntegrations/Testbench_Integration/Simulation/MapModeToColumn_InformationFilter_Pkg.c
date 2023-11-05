@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -13,23 +13,23 @@ void MapModeToColumn_InformationFilter_Pkg(
   M_MODE inMode,
   outC_MapModeToColumn_InformationFilter_Pkg *outC)
 {
-  outC->_L28 = kcg_lit_int64(16);
-  outC->_L25 = kcg_lit_int64(15);
-  outC->_L24 = kcg_lit_int64(14);
-  outC->_L23 = kcg_lit_int64(13);
-  outC->_L22 = kcg_lit_int64(12);
-  outC->_L21 = kcg_lit_int64(11);
-  outC->_L20 = kcg_lit_int64(10);
-  outC->_L19 = kcg_lit_int64(9);
-  outC->_L18 = kcg_lit_int64(8);
-  outC->_L17 = kcg_lit_int64(7);
-  outC->_L16 = kcg_lit_int64(6);
-  outC->_L15 = kcg_lit_int64(5);
-  outC->_L14 = kcg_lit_int64(4);
-  outC->_L13 = kcg_lit_int64(3);
-  outC->_L12 = kcg_lit_int64(2);
-  outC->_L11 = kcg_lit_int64(1);
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L28 = kcg_lit_int32(16);
+  outC->_L25 = kcg_lit_int32(15);
+  outC->_L24 = kcg_lit_int32(14);
+  outC->_L23 = kcg_lit_int32(13);
+  outC->_L22 = kcg_lit_int32(12);
+  outC->_L21 = kcg_lit_int32(11);
+  outC->_L20 = kcg_lit_int32(10);
+  outC->_L19 = kcg_lit_int32(9);
+  outC->_L18 = kcg_lit_int32(8);
+  outC->_L17 = kcg_lit_int32(7);
+  outC->_L16 = kcg_lit_int32(6);
+  outC->_L15 = kcg_lit_int32(5);
+  outC->_L14 = kcg_lit_int32(4);
+  outC->_L13 = kcg_lit_int32(3);
+  outC->_L12 = kcg_lit_int32(2);
+  outC->_L11 = kcg_lit_int32(1);
+  outC->_L10 = kcg_lit_int32(0);
   outC->_L1 = inMode;
   /* _L2= */
   switch (outC->_L1) {
@@ -95,26 +95,26 @@ void MapModeToColumn_InformationFilter_Pkg(
 void MapModeToColumn_init_InformationFilter_Pkg(
   outC_MapModeToColumn_InformationFilter_Pkg *outC)
 {
-  outC->_L28 = kcg_lit_int64(0);
-  outC->_L25 = kcg_lit_int64(0);
-  outC->_L24 = kcg_lit_int64(0);
-  outC->_L23 = kcg_lit_int64(0);
-  outC->_L22 = kcg_lit_int64(0);
-  outC->_L21 = kcg_lit_int64(0);
-  outC->_L20 = kcg_lit_int64(0);
-  outC->_L19 = kcg_lit_int64(0);
-  outC->_L18 = kcg_lit_int64(0);
-  outC->_L17 = kcg_lit_int64(0);
-  outC->_L16 = kcg_lit_int64(0);
-  outC->_L15 = kcg_lit_int64(0);
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L28 = kcg_lit_int32(0);
+  outC->_L25 = kcg_lit_int32(0);
+  outC->_L24 = kcg_lit_int32(0);
+  outC->_L23 = kcg_lit_int32(0);
+  outC->_L22 = kcg_lit_int32(0);
+  outC->_L21 = kcg_lit_int32(0);
+  outC->_L20 = kcg_lit_int32(0);
+  outC->_L19 = kcg_lit_int32(0);
+  outC->_L18 = kcg_lit_int32(0);
+  outC->_L17 = kcg_lit_int32(0);
+  outC->_L16 = kcg_lit_int32(0);
+  outC->_L15 = kcg_lit_int32(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
   outC->_L1 = M_MODE_Full_Supervision;
-  outC->outColumn = kcg_lit_int64(0);
+  outC->outColumn = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -130,6 +130,6 @@ void MapModeToColumn_reset_InformationFilter_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** MapModeToColumn_InformationFilter_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

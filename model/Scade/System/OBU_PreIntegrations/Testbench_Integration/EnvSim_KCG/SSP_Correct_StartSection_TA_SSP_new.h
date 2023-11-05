@@ -25,7 +25,7 @@ typedef struct {
   StaticSpeedSection_t_TrackAtlasTypes /* _L3/ */ _L3;
   StaticSpeedProfile_t_TrackAtlasTypes /* _L5/ */ _L5;
   StaticSpeedSection_t_TrackAtlasTypes /* _L7/ */ _L7;
-  kcg_int64 /* _L8/ */ _L8;
+  kcg_int32 /* _L8/ */ _L8;
 } outC_SSP_Correct_StartSection_TA_SSP_new;
 
 /* ===========  node initialization and cycle functions  =========== */

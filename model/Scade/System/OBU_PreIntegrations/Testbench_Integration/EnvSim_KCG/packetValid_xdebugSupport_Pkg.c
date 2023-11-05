@@ -18,7 +18,7 @@ void packetValid_xdebugSupport_Pkg(
   static kcg_size idx;
   static kcg_bool acc;
   static kcg_size idx1;
-  static kcg_int64 noname;
+  static kcg_int32 noname;
 
   outC->_L16 = kcg_true;
   outC->_L13 = which_ID;
@@ -41,7 +41,7 @@ void packetValid_xdebugSupport_Pkg(
         outC->_L15[idx1],
         &outC->Context_packetValidBasics_1[idx1]);
       outC->_L3 = outC->Context_packetValidBasics_1[idx1].packtIsValid;
-      outC->_L5 = /* _L5= */(kcg_int64) (idx1 + 1);
+      outC->_L5 = /* _L5= */(kcg_int32) (idx1 + 1);
       /* _L5= */
       if (!outC->Context_packetValidBasics_1[idx1]._1_continue) {
         break;
@@ -49,7 +49,7 @@ void packetValid_xdebugSupport_Pkg(
     }
   }
   else {
-    outC->_L5 = kcg_lit_int64(0);
+    outC->_L5 = kcg_lit_int32(0);
   }
   noname = outC->_L5;
   outC->isValid = outC->_L3;
@@ -65,18 +65,18 @@ void packetValid_init_xdebugSupport_Pkg(
 
   outC->_L16 = kcg_true;
   for (idx1 = 0; idx1 < 30; idx1++) {
-    outC->_L15[idx1] = kcg_lit_int64(0);
+    outC->_L15[idx1] = kcg_lit_int32(0);
   }
-  outC->_L13 = kcg_lit_int64(0);
+  outC->_L13 = kcg_lit_int32(0);
   outC->_L7 = kcg_true;
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L3 = kcg_true;
   for (idx2 = 0; idx2 < 30; idx2++) {
-    outC->_L1[idx2].nid_packet = kcg_lit_int64(0);
+    outC->_L1[idx2].nid_packet = kcg_lit_int32(0);
     outC->_L1[idx2].q_dir = Q_DIR_Reverse;
     outC->_L1[idx2].valid = kcg_true;
-    outC->_L1[idx2].startAddress = kcg_lit_int64(0);
-    outC->_L1[idx2].endAddress = kcg_lit_int64(0);
+    outC->_L1[idx2].startAddress = kcg_lit_int32(0);
+    outC->_L1[idx2].endAddress = kcg_lit_int32(0);
   }
   outC->isValid = kcg_true;
   for (idx = 0; idx < 30; idx++) {

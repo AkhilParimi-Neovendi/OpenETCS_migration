@@ -43,7 +43,7 @@ void op_3_6_5_1_4_c_d_init_ProvidePositionReport_Pkg(
   outC->_L11 = kcg_true;
   outC->_L10 = kcg_true;
   outC->_L9 = Q_LENGTH_No_train_integrity_information_available;
-  outC->_L8.nid_ntc = kcg_lit_int64(0);
+  outC->_L8.nid_ntc = kcg_lit_int32(0);
   outC->_L8.q_length = Q_LENGTH_No_train_integrity_information_available;
   outC->_L7 = kcg_true;
   outC->_L6 = Q_LENGTH_No_train_integrity_information_available;
@@ -51,7 +51,7 @@ void op_3_6_5_1_4_c_d_init_ProvidePositionReport_Pkg(
   outC->_L4 = kcg_true;
   outC->_L3 = kcg_true;
   outC->_L2 = Q_LENGTH_No_train_integrity_information_available;
-  outC->_L1.nid_ntc = kcg_lit_int64(0);
+  outC->_L1.nid_ntc = kcg_lit_int32(0);
   outC->_L1.q_length = Q_LENGTH_No_train_integrity_information_available;
   outC->trigger = kcg_true;
   kcg_copy_TrainToTrackStatus_T_BG_Types_Pkg(

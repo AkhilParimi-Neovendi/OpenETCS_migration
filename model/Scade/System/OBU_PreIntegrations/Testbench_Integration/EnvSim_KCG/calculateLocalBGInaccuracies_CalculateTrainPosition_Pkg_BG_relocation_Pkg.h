@@ -33,11 +33,11 @@ typedef struct {
   Q_SCALE /* _L5/ */ _L5;
   LinkedBG_T_BG_Types_Pkg /* _L6/ */ _L6;
   Q_LOCACC /* _L7/ */ _L7;
-  kcg_int64 /* _L8/ */ _L8;
+  kcg_int32 /* _L8/ */ _L8;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L9/ */ _L9;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L10/ */ _L10;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L12/ */ _L12;
-  kcg_int64 /* _L13/ */ _L13;
+  kcg_int32 /* _L13/ */ _L13;
   Q_SCALE /* _L14/ */ _L14;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L15/ */ _L15;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L16/ */ _L16;

@@ -28,8 +28,8 @@ typedef struct {
   DMI_Level_Data_T_DMI_Messages_Bothways_Pkg /* _L13/ */ _L13;
   DMI_Level_Data_T_DMI_Messages_Bothways_Pkg /* _L14/ */ _L14;
   kcg_bool /* _L17/ */ _L17;
-  kcg_int64 /* _L16/ */ _L16;
-  kcg_int64 /* _L15/ */ _L15;
+  kcg_int32 /* _L16/ */ _L16;
+  kcg_int32 /* _L15/ */ _L15;
 } outC_Write_int_to_DMI_Level_Data_DATA_Packets_Bothways;
 
 /* ===========  node initialization and cycle functions  =========== */

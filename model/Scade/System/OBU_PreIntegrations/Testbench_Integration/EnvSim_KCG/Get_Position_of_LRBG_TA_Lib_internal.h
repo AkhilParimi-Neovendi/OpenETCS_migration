@@ -27,16 +27,16 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   kcg_bool /* _L3/ */ _L3;
   kcg_bool /* _L2/ */ _L2;
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   positionedBGs_T_TrainPosition_Types_Pck /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L6/ */ _L6;
   ReceivedMessage_T_Common_Types_Pkg /* _L7/ */ _L7;
   positionedBG_T_TrainPosition_Types_Pck /* _L8/ */ _L8;
   kcg_bool /* _L9/ */ _L9;
   Q_LINK /* _L10/ */ _L10;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L12/ */ _L12;
   kcg_bool /* _L13/ */ _L13;
   infoFromLinking_T_TrainPosition_Types_Pck /* _L14/ */ _L14;
   passedBG_T_BG_Types_Pkg /* _L15/ */ _L15;

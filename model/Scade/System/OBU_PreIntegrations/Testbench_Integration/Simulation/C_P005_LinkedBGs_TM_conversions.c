@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -71,63 +71,63 @@ void C_P005_LinkedBGs_init_TM_conversions(
     Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
   outC->_L19 =
     Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-  outC->_L18 = kcg_lit_int64(0);
-  outC->_L17 = kcg_lit_int64(0);
+  outC->_L18 = kcg_lit_int32(0);
+  outC->_L17 = kcg_lit_int32(0);
   outC->_L16 =
     Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-  outC->_L15 = kcg_lit_int64(0);
+  outC->_L15 = kcg_lit_int32(0);
   outC->_L7 = kcg_true;
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L8 = kcg_lit_int32(0);
   outC->_L9 =
     Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
   outC->_L12 =
     Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction;
   outC->_L13 = Q_LINKREACTION_Train_trip;
-  outC->_L14 = kcg_lit_int64(0);
+  outC->_L14 = kcg_lit_int32(0);
   outC->_L6.valid = kcg_true;
-  outC->_L6.d_link = kcg_lit_int64(0);
+  outC->_L6.d_link = kcg_lit_int32(0);
   outC->_L6.q_newcountry =
     Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-  outC->_L6.nid_c = kcg_lit_int64(0);
-  outC->_L6.nid_bg = kcg_lit_int64(0);
+  outC->_L6.nid_c = kcg_lit_int32(0);
+  outC->_L6.nid_bg = kcg_lit_int32(0);
   outC->_L6.q_linkorientation =
     Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction;
   outC->_L6.q_linkreaction = Q_LINKREACTION_Train_trip;
-  outC->_L6.q_locacc = kcg_lit_int64(0);
+  outC->_L6.q_locacc = kcg_lit_int32(0);
   outC->_L5 = Q_SCALE_10_cm_scale;
   outC->_L4 = Q_DIR_Reverse;
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L2.valid = kcg_true;
-  outC->_L2.nid_LRBG = kcg_lit_int64(0);
+  outC->_L2.nid_LRBG = kcg_lit_int32(0);
   outC->_L2.q_dir = Q_DIR_Reverse;
   outC->_L2.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L2.d_link = kcg_lit_int64(0);
+  outC->_L2.d_link = kcg_lit_int32(0);
   outC->_L2.q_newcountry =
     Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-  outC->_L2.nid_c = kcg_lit_int64(0);
-  outC->_L2.nid_bg = kcg_lit_int64(0);
+  outC->_L2.nid_c = kcg_lit_int32(0);
+  outC->_L2.nid_bg = kcg_lit_int32(0);
   outC->_L2.q_linkorientation =
     Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction;
   outC->_L2.q_linkreaction = Q_LINKREACTION_Train_trip;
-  outC->_L2.q_locacc = kcg_lit_int64(0);
+  outC->_L2.q_locacc = kcg_lit_int32(0);
   outC->q_newcountry =
     Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-  outC->nid_c = kcg_lit_int64(0);
+  outC->nid_c = kcg_lit_int32(0);
   outC->LinkedBGsOUT.valid = kcg_true;
-  outC->LinkedBGsOUT.nid_LRBG = kcg_lit_int64(0);
+  outC->LinkedBGsOUT.nid_LRBG = kcg_lit_int32(0);
   outC->LinkedBGsOUT.q_dir = Q_DIR_Reverse;
   outC->LinkedBGsOUT.q_scale = Q_SCALE_10_cm_scale;
-  outC->LinkedBGsOUT.d_link = kcg_lit_int64(0);
+  outC->LinkedBGsOUT.d_link = kcg_lit_int32(0);
   outC->LinkedBGsOUT.q_newcountry =
     Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-  outC->LinkedBGsOUT.nid_c = kcg_lit_int64(0);
-  outC->LinkedBGsOUT.nid_bg = kcg_lit_int64(0);
+  outC->LinkedBGsOUT.nid_c = kcg_lit_int32(0);
+  outC->LinkedBGsOUT.nid_bg = kcg_lit_int32(0);
   outC->LinkedBGsOUT.q_linkorientation =
     Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction;
   outC->LinkedBGsOUT.q_linkreaction = Q_LINKREACTION_Train_trip;
-  outC->LinkedBGsOUT.q_locacc = kcg_lit_int64(0);
+  outC->LinkedBGsOUT.q_locacc = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -143,6 +143,6 @@ void C_P005_LinkedBGs_reset_TM_conversions(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P005_LinkedBGs_TM_conversions.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

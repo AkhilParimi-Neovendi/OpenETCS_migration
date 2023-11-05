@@ -36,30 +36,30 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   P012_sections_array_flat_T_TM /* _L1/ */ _L1;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   P012_section_enum_T_TM /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L15/ */ _L15;
-  kcg_int64 /* _L16/ */ _L16;
-  kcg_int64 /* _L18/ */ _L18;
-  kcg_int64 /* _L19/ */ _L19;
-  kcg_int64 /* _L20/ */ _L20;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L15/ */ _L15;
+  kcg_int32 /* _L16/ */ _L16;
+  kcg_int32 /* _L18/ */ _L18;
+  kcg_int32 /* _L19/ */ _L19;
+  kcg_int32 /* _L20/ */ _L20;
   L_SECTION /* _L25/ */ _L25;
   T_SECTIONTIMER /* _L26/ */ _L26;
   Q_SECTIONTIMER /* _L28/ */ _L28;
   kcg_bool /* _L32/ */ _L32;
   kcg_bool /* _L33/ */ _L33;
   D_SECTIONTIMERSTOPLOC /* _L27/ */ _L27;
-  kcg_int64 /* _L21/ */ _L21;
+  kcg_int32 /* _L21/ */ _L21;
 } outC_C_P012_us_array_TM_lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* TM_lib_internal::C_P012_us_array/ */
 extern void C_P012_us_array_TM_lib_internal(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* n_iter_int/ */
-  kcg_int64 n_iter_int,
+  kcg_int32 n_iter_int,
   /* flat/ */
   P012_sections_array_flat_T_TM *flat,
   outC_C_P012_us_array_TM_lib_internal *outC);

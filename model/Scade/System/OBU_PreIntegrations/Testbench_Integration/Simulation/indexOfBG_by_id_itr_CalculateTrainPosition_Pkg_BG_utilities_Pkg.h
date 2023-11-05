@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _indexOfBG_by_id_itr_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_
 #define _indexOfBG_by_id_itr_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_
@@ -16,7 +16,7 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   kcg_bool /* cont/ */ cont;
-  kcg_int64 /* indexOfBG/ */ indexOfBG;
+  kcg_int32 /* indexOfBG/ */ indexOfBG;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -28,18 +28,18 @@ typedef struct {
   positionedBG_T_TrainPosition_Types_Pck /* _L4/ */ _L4;
   kcg_bool /* _L6/ */ _L6;
   kcg_bool /* _L8/ */ _L8;
-  kcg_int64 /* _L11/ */ _L11;
-  kcg_int64 /* _L16/ */ _L16;
-  kcg_int64 /* _L18/ */ _L18;
+  kcg_int32 /* _L11/ */ _L11;
+  kcg_int32 /* _L16/ */ _L16;
+  kcg_int32 /* _L18/ */ _L18;
 } outC_indexOfBG_by_id_itr_CalculateTrainPosition_Pkg_BG_utilities_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* CalculateTrainPosition_Pkg::BG_utilities_Pkg::indexOfBG_by_id_itr/ */
 extern void indexOfBG_by_id_itr_CalculateTrainPosition_Pkg_BG_utilities_Pkg(
   /* iteratorIndex/ */
-  kcg_int64 iteratorIndex,
+  kcg_int32 iteratorIndex,
   /* prevIndex/ */
-  kcg_int64 prevIndex,
+  kcg_int32 prevIndex,
   /* BG/ */
   positionedBG_T_TrainPosition_Types_Pck *BG,
   /* BG_asElementFromBGs/ */
@@ -61,6 +61,6 @@ extern void indexOfBG_by_id_itr_init_CalculateTrainPosition_Pkg_BG_utilities_Pkg
 #endif /* _indexOfBG_by_id_itr_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** indexOfBG_by_id_itr_CalculateTrainPosition_Pkg_BG_utilities_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

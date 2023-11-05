@@ -10,7 +10,7 @@
 /* manage_TextMessages_Pkg::setNew/ */
 void setNew_manage_TextMessages_Pkg(
   /* indexMAPwi/ */
-  kcg_int64 indexMAPwi,
+  kcg_int32 indexMAPwi,
   /* fromStore/ */
   DMI_TXT_MSG_status_T_DMI_Types_Pkg *fromStore,
   /* actualTextMsg/ */
@@ -74,52 +74,52 @@ void setNew_init_manage_TextMessages_Pkg(
   outC->_L3 = kcg_true;
   outC->_L2 = kcg_true;
   outC->_L1.valid = kcg_true;
-  outC->_L1.dmi_textMessageID = kcg_lit_int64(0);
-  outC->_L1.timeStamp = kcg_lit_int64(0);
+  outC->_L1.dmi_textMessageID = kcg_lit_int32(0);
+  outC->_L1.timeStamp = kcg_lit_int32(0);
   outC->_L1.textReport = Q_TEXTREPORT_No_driver_acknowledgement_report_required;
   outC->_L1.context = con_undefined_DMI_Types_Pkg;
-  outC->_L1.nid_textmessage = kcg_lit_int64(0);
+  outC->_L1.nid_textmessage = kcg_lit_int32(0);
   outC->_L1.whichLevel = M_LEVEL_Level_0;
   outC->_L1.whichMode = M_MODE_Full_Supervision;
   outC->takeIt = kcg_true;
   outC->IfBlock1_clock = kcg_true;
   outC->_L1_else_IfBlock1.valid = kcg_true;
-  outC->_L1_else_IfBlock1.dmi_textMessageID = kcg_lit_int64(0);
-  outC->_L1_else_IfBlock1.timeStamp = kcg_lit_int64(0);
+  outC->_L1_else_IfBlock1.dmi_textMessageID = kcg_lit_int32(0);
+  outC->_L1_else_IfBlock1.timeStamp = kcg_lit_int32(0);
   outC->_L1_else_IfBlock1.textReport =
     Q_TEXTREPORT_No_driver_acknowledgement_report_required;
   outC->_L1_else_IfBlock1.context = con_undefined_DMI_Types_Pkg;
-  outC->_L1_else_IfBlock1.nid_textmessage = kcg_lit_int64(0);
+  outC->_L1_else_IfBlock1.nid_textmessage = kcg_lit_int32(0);
   outC->_L1_else_IfBlock1.whichLevel = M_LEVEL_Level_0;
   outC->_L1_else_IfBlock1.whichMode = M_MODE_Full_Supervision;
   outC->_L2_else_IfBlock1 = kcg_true;
   outC->_L1_then_IfBlock1.valid = kcg_true;
-  outC->_L1_then_IfBlock1.dmi_textMessageID = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock1.timeStamp = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1.dmi_textMessageID = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock1.timeStamp = kcg_lit_int32(0);
   outC->_L1_then_IfBlock1.textReport =
     Q_TEXTREPORT_No_driver_acknowledgement_report_required;
   outC->_L1_then_IfBlock1.context = con_undefined_DMI_Types_Pkg;
-  outC->_L1_then_IfBlock1.nid_textmessage = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1.nid_textmessage = kcg_lit_int32(0);
   outC->_L1_then_IfBlock1.whichLevel = M_LEVEL_Level_0;
   outC->_L1_then_IfBlock1.whichMode = M_MODE_Full_Supervision;
   outC->_L2_then_IfBlock1.valid = kcg_true;
-  outC->_L2_then_IfBlock1.dmi_textMessageID = kcg_lit_int64(0);
-  outC->_L2_then_IfBlock1.timeStamp = kcg_lit_int64(0);
+  outC->_L2_then_IfBlock1.dmi_textMessageID = kcg_lit_int32(0);
+  outC->_L2_then_IfBlock1.timeStamp = kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.textReport =
     Q_TEXTREPORT_No_driver_acknowledgement_report_required;
   outC->_L2_then_IfBlock1.context = con_undefined_DMI_Types_Pkg;
-  outC->_L2_then_IfBlock1.nid_textmessage = kcg_lit_int64(0);
+  outC->_L2_then_IfBlock1.nid_textmessage = kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.whichLevel = M_LEVEL_Level_0;
   outC->_L2_then_IfBlock1.whichMode = M_MODE_Full_Supervision;
-  outC->_L4_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L4_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L5_then_IfBlock1 = kcg_true;
   outC->toStore.valid = kcg_true;
-  outC->toStore.dmi_textMessageID = kcg_lit_int64(0);
-  outC->toStore.timeStamp = kcg_lit_int64(0);
+  outC->toStore.dmi_textMessageID = kcg_lit_int32(0);
+  outC->toStore.timeStamp = kcg_lit_int32(0);
   outC->toStore.textReport =
     Q_TEXTREPORT_No_driver_acknowledgement_report_required;
   outC->toStore.context = con_undefined_DMI_Types_Pkg;
-  outC->toStore.nid_textmessage = kcg_lit_int64(0);
+  outC->toStore.nid_textmessage = kcg_lit_int32(0);
   outC->toStore.whichLevel = M_LEVEL_Level_0;
   outC->toStore.whichMode = M_MODE_Full_Supervision;
   outC->_1_continue = kcg_true;

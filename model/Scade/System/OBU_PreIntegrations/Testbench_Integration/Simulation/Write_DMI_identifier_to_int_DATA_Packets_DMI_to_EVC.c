@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -54,17 +54,17 @@ void Write_DMI_identifier_to_int_init_DATA_Packets_DMI_to_EVC(
   static kcg_size idx3;
 
   for (idx = 0; idx < 261; idx++) {
-    outC->_L39[idx] = kcg_lit_int64(0);
+    outC->_L39[idx] = kcg_lit_int32(0);
   }
   outC->_L38 = kcg_true;
   for (idx1 = 0; idx1 < 261; idx1++) {
-    outC->_L37[idx1] = kcg_lit_int64(0);
+    outC->_L37[idx1] = kcg_lit_int32(0);
   }
   outC->_L25.valid = kcg_true;
-  outC->_L25.systemTime = kcg_lit_int64(0);
+  outC->_L25.systemTime = kcg_lit_int32(0);
   outC->_L25.DMI_Identifier = DMI_1_DMI_Types_Pkg;
   outC->_L25.Cabin_Identifier = cabin_A_DMI_Types_Pkg;
-  outC->_L25.l_name = kcg_lit_int64(0);
+  outC->_L25.l_name = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 255; idx2++) {
     outC->_L25.DMI_name[idx2] = ' ';
   }
@@ -72,7 +72,7 @@ void Write_DMI_identifier_to_int_init_DATA_Packets_DMI_to_EVC(
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->every = kcg_true;
   for (idx3 = 0; idx3 < 261; idx3++) {
-    outC->dmi_identifier_int[idx3] = kcg_lit_int64(0);
+    outC->dmi_identifier_int[idx3] = kcg_lit_int32(0);
   }
   /* _L37=(DATA::Packets::DMI_to_EVC::C_DMI_identifier_to_int#1)/ */
   C_DMI_identifier_to_int_init_DATA_Packets_DMI_to_EVC(
@@ -95,6 +95,6 @@ void Write_DMI_identifier_to_int_reset_DATA_Packets_DMI_to_EVC(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Write_DMI_identifier_to_int_DATA_Packets_DMI_to_EVC.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

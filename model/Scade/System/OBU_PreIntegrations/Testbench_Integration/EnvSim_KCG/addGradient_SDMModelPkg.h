@@ -29,10 +29,10 @@ typedef struct {
   ASafe_T_CalcBrakingCurves_types /* _L12/ */ _L12;
   ASafeSpeedDefinition_T_CalcBrakingCurves_types /* _L13/ */ _L13;
   L_internal_real_Type_SDM_Types_Pkg /* _L17/ */ _L17;
-  kcg_float64 /* _L20/ */ _L20;
+  kcg_float32 /* _L20/ */ _L20;
   ASafe_Data_T_CalcBrakingCurves_types /* _L26/ */ _L26;
   ASafe_T_CalcBrakingCurves_types /* _L27/ */ _L27;
-  array_float64_100 /* _L28/ */ _L28;
+  array_float32_100 /* _L28/ */ _L28;
   ASafe_T_CalcBrakingCurves_types /* _L29/ */ _L29;
   _97_array /* _L30/ */ _L30;
   A_gradient_t_SDM_GradientAcceleration_types /* _L31/ */ _L31;

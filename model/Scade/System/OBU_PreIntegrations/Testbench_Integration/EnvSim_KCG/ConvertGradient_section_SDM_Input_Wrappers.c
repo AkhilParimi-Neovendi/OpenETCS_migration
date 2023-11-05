@@ -18,7 +18,7 @@ void ConvertGradient_section_SDM_Input_Wrappers(
 
   kcg_copy_Gradient_section_t_TrackAtlasTypes(&outC->_L9, Gradient_section_ext);
   outC->_L5 = outC->_L9.Gradient;
-  outC->_L11 = /* _L11= */(kcg_float64) outC->_L5;
+  outC->_L11 = /* _L11= */(kcg_float32) outC->_L5;
   outC->_L10 = outC->_L9.L_Gradient;
   _1_noname = outC->_L10;
   outC->_L4 = outC->_L9.Loc_LRBG;
@@ -42,23 +42,23 @@ void ConvertGradient_section_SDM_Input_Wrappers(
 void ConvertGradient_section_init_SDM_Input_Wrappers(
   outC_ConvertGradient_section_SDM_Input_Wrappers *outC)
 {
-  outC->_L11 = kcg_lit_float64(0.0);
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L11 = kcg_lit_float32(0.0);
+  outC->_L10 = kcg_lit_int32(0);
   outC->_L9.valid = kcg_true;
-  outC->_L9.Loc_Absolute = kcg_lit_int64(0);
-  outC->_L9.Loc_LRBG = kcg_lit_int64(0);
-  outC->_L9.Gradient = kcg_lit_int64(0);
-  outC->_L9.L_Gradient = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_float64(0.0);
-  outC->_L6.location = kcg_lit_float64(0.0);
-  outC->_L6.gradient = kcg_lit_float64(0.0);
+  outC->_L9.Loc_Absolute = kcg_lit_int32(0);
+  outC->_L9.Loc_LRBG = kcg_lit_int32(0);
+  outC->_L9.Gradient = kcg_lit_int32(0);
+  outC->_L9.L_Gradient = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_float32(0.0);
+  outC->_L6.location = kcg_lit_float32(0.0);
+  outC->_L6.gradient = kcg_lit_float32(0.0);
   outC->_L6.valid = kcg_true;
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L2 = kcg_true;
-  outC->Gradient_section_int.location = kcg_lit_float64(0.0);
-  outC->Gradient_section_int.gradient = kcg_lit_float64(0.0);
+  outC->Gradient_section_int.location = kcg_lit_float32(0.0);
+  outC->Gradient_section_int.gradient = kcg_lit_float32(0.0);
   outC->Gradient_section_int.valid = kcg_true;
   /* _L7=(SDM_Types_Pkg::TransformL_intToL_real#1)/ */
   TransformL_intToL_real_init_SDM_Types_Pkg(

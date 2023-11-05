@@ -37,8 +37,8 @@ typedef struct {
   kcg_bool /* IfBlock1: */ IfBlock1_clock;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* IfBlock1:then:_L104/ */ _L104_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L103/ */ _L103_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L104/ */ _L104_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L103/ */ _L103_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L102/ */ _L102_then_IfBlock1;
   TrackSide_ForCheck_T_Common_Types_Pkg /* IfBlock1:then:_L99/ */ _L99_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L100/ */ _L100_then_IfBlock1;

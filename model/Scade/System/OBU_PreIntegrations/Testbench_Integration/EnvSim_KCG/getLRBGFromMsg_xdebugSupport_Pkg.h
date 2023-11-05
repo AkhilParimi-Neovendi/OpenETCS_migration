@@ -34,11 +34,11 @@ typedef struct {
   BG_Header_T_BG_Types_Pkg /* _L22/ */ _L22;
   NID_BG /* _L21/ */ _L21;
   NID_C /* _L23/ */ _L23;
-  kcg_int64 /* _L24/ */ _L24;
-  kcg_int64 /* _L25/ */ _L25;
-  kcg_int64 /* _L32/ */ _L32;
-  kcg_int64 /* _L33/ */ _L33;
-  kcg_int64 /* _L34/ */ _L34;
+  kcg_int32 /* _L24/ */ _L24;
+  kcg_int32 /* _L25/ */ _L25;
+  kcg_int32 /* _L32/ */ _L32;
+  kcg_int32 /* _L33/ */ _L33;
+  kcg_int32 /* _L34/ */ _L34;
 } outC_getLRBGFromMsg_xdebugSupport_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

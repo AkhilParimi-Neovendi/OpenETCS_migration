@@ -10,7 +10,7 @@
 /* TM_conversions::CAST_Int_to_N_TOTAL/ */
 void CAST_Int_to_N_TOTAL_TM_conversions(
   /* int_in/ */
-  kcg_int64 int_in,
+  kcg_int32 int_in,
   outC_CAST_Int_to_N_TOTAL_TM_conversions *outC)
 {
   /* n_pig/ */
@@ -256,9 +256,9 @@ void CAST_Int_to_N_TOTAL_init_TM_conversions(
   outC_CAST_Int_to_N_TOTAL_TM_conversions *outC)
 {
   outC->_L4 = kcg_true;
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->error = kcg_true;
-  outC->n_total_in = kcg_lit_int64(0);
+  outC->n_total_in = kcg_lit_int32(0);
   outC->IfBlock1_clock = kcg_true;
   outC->_L3_then_else_IfBlock1 = kcg_true;
   outC->_L1_then_else_IfBlock1 = N_TOTAL_1_balise_in_the_group;

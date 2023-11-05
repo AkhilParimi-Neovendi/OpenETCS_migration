@@ -1,0 +1,35 @@
+*** Type Error (ERR_100): Type mismatch
+  at file C:\Users\AKHILP~1\AppData\Local\Temp\ScadeChecker\29188\checker_file.scade, line 1394, character 3
+  at path Handover_Pkg::radioAdapter_Pkg::mobilesApiProxy_inappropriate/_L56=
+ This expression has type ({valid:bool, packet0:{NID_PACKET:int32,
+ L_PACKET:int32, qscale:enum Q_SCALE/, NID_LRBG:int32, D_LRBG:int32,
+ dirlrbg:enum Q_DIRLRBG/, dlrbg:enum Q_DLRBG/, L_DOUBTOVER:int32,
+ L_DOUBTUNDER:int32, length:enum Q_LENGTH/, L_TRAININT:int32, V_TRAIN:int32,
+ dirtrain:enum Q_DIRTRAIN/, mode:enum M_MODE/, level:enum M_LEVEL/,
+ NID_NTC:int32}}, {valid:bool, packet1:{NID_PACKET:int32, L_PACKET:int32,
+ qscale:enum Q_SCALE/, NID_LRBG:int32, NID_PRVLRBG:int32, D_LRBG:int32,
+ dirlrbg:enum Q_DIRLRBG/, dlrbg:enum Q_DLRBG/, L_DOUBTOVER:int32,
+ L_DOUBTUNDER:int32, length:enum Q_LENGTH/, L_TRAININT:int32, V_TRAIN:int32,
+ dirtrain:enum Q_DIRTRAIN/, mode:enum M_MODE/, level:enum M_LEVEL/,
+ NID_NTC:int32}}, {valid:bool, number:int32, aNID_RADIO:{valid:bool,
+ telephoneNumber:int32^15}^1}, {valid:bool, m_error:enum M_ERROR/}, {valid:bool,
+ TrainRunningNumber:int32}, {valid:bool, transitionInformation:int32},
+ {valid:bool, nc_cdtrain:enum NC_CDTRAIN/, nc_train:enum NC_TRAIN/,
+ l_train:int32, v_maxtrain:int32, m_loadinggoage:enum M_LOADINGGAUGE/,
+ m_axleloadcat:enum M_AXLELOADCAT/, m_airtight:enum M_AIRTIGHT/, n_axle:int32,
+ nIter_tractionIdentity:int32, tractionIdentity:{m_voltage:enum M_VOLTAGE/,
+ nid_ctraction:int32}^4, nIter_ntc:int32, nid_ntc:int32^5})
+ but should have type ({valid:bool, packet0:{NID_PACKET:int32, L_PACKET:int32,
+ qscale:enum Q_SCALE/, NID_LRBG:int32, D_LRBG:int32, dirlrbg:enum Q_DIRLRBG/,
+ dlrbg:enum Q_DLRBG/, L_DOUBTOVER:int32, L_DOUBTUNDER:int32,
+ length:enum Q_LENGTH/, L_TRAININT:int32, V_TRAIN:int32,
+ dirtrain:enum Q_DIRTRAIN/, mode:enum M_MODE/, level:enum M_LEVEL/,
+ NID_NTC:int32}}, {valid:bool, packet1:{NID_PACKET:int32, L_PACKET:int32,
+ qscale:enum Q_SCALE/, NID_LRBG:int32, NID_PRVLRBG:int32, D_LRBG:int32,
+ dirlrbg:enum Q_DIRLRBG/, dlrbg:enum Q_DLRBG/, L_DOUBTOVER:int32,
+ L_DOUBTUNDER:int32, length:enum Q_LENGTH/, L_TRAININT:int32, V_TRAIN:int32,
+ dirtrain:enum Q_DIRTRAIN/, mode:enum M_MODE/, level:enum M_LEVEL/,
+ NID_NTC:int32}}, {valid:bool, number:int32, aNID_RADIO:{valid:bool,
+ telephoneNumber:int32^15}^1}, {valid:bool, m_error:enum M_ERROR/}, {valid:bool,
+ TrainRunningNumber:int32}, {valid:bool, transitionInformation:int32})
+ (arity is 7 instead of 6)

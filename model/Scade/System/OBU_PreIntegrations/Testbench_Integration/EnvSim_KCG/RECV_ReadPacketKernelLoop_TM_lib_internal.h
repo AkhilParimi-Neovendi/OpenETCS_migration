@@ -15,38 +15,38 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   kcg_bool /* Cont/ */ Cont;
-  kcg_int64 /* PacketOut/ */ PacketOut;
+  kcg_int32 /* PacketOut/ */ PacketOut;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L1/ */ _L1;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L4/ */ _L4;
   CompressedPacketData_T_Common_Types_Pkg /* _L9/ */ _L9;
   kcg_bool /* _L18/ */ _L18;
-  kcg_int64 /* _L20/ */ _L20;
-  kcg_int64 /* _L29/ */ _L29;
-  kcg_int64 /* _L30/ */ _L30;
-  kcg_int64 /* _L31/ */ _L31;
-  kcg_int64 /* _L32/ */ _L32;
-  kcg_int64 /* _L33/ */ _L33;
-  kcg_int64 /* _L34/ */ _L34;
+  kcg_int32 /* _L20/ */ _L20;
+  kcg_int32 /* _L29/ */ _L29;
+  kcg_int32 /* _L30/ */ _L30;
+  kcg_int32 /* _L31/ */ _L31;
+  kcg_int32 /* _L32/ */ _L32;
+  kcg_int32 /* _L33/ */ _L33;
+  kcg_int32 /* _L34/ */ _L34;
 } outC_RECV_ReadPacketKernelLoop_TM_lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* TM_lib_internal::RECV_ReadPacketKernelLoop/ */
 extern void RECV_ReadPacketKernelLoop_TM_lib_internal(
   /* Index/ */
-  kcg_int64 Index,
+  kcg_int32 Index,
   /* PacketData/ */
   CompressedPacketData_T_Common_Types_Pkg *PacketData,
   /* AddressStart/ */
-  kcg_int64 AddressStart,
+  kcg_int32 AddressStart,
   /* AddressEnd/ */
-  kcg_int64 AddressEnd,
+  kcg_int32 AddressEnd,
   outC_RECV_ReadPacketKernelLoop_TM_lib_internal *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

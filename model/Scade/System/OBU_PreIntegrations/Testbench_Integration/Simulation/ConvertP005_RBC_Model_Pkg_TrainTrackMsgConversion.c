@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -35,17 +35,17 @@ void ConvertP005_init_RBC_Model_Pkg_TrainTrackMsgConversion(
   outC_ConvertP005_RBC_Model_Pkg_TrainTrackMsgConversion *outC)
 {
   outC->_L7.valid = kcg_true;
-  outC->_L7.TrainRunningNumber = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L7.TrainRunningNumber = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->_L5 = kcg_true;
   outC->_L1.valid = kcg_true;
-  outC->_L1.nid_packet = kcg_lit_int64(0);
-  outC->_L1.l_packet = kcg_lit_int64(0);
-  outC->_L1.nid_opeartional = kcg_lit_int64(0);
+  outC->_L1.nid_packet = kcg_lit_int32(0);
+  outC->_L1.l_packet = kcg_lit_int32(0);
+  outC->_L1.nid_opeartional = kcg_lit_int32(0);
   outC->oldP005.valid = kcg_true;
-  outC->oldP005.TrainRunningNumber = kcg_lit_int64(0);
+  outC->oldP005.TrainRunningNumber = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -61,6 +61,6 @@ void ConvertP005_reset_RBC_Model_Pkg_TrainTrackMsgConversion(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ConvertP005_RBC_Model_Pkg_TrainTrackMsgConversion.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

@@ -16,11 +16,11 @@ void CAST_T_TRAIN_to_int_TM_conversions(
   kcg_bool noname;
   kcg_bool _1_noname;
 
-  outC->_L13 = kcg_lit_int64(5000000);
+  outC->_L13 = kcg_lit_int32(5000000);
   outC->_L1 = t_train;
   outC->_L16 = outC->_L1 > outC->_L13;
   _1_noname = outC->_L16;
-  outC->_L15 = kcg_lit_int64(0);
+  outC->_L15 = kcg_lit_int32(0);
   outC->_L14 = outC->_L1 < outC->_L15;
   noname = outC->_L14;
   outC->t_train_int = outC->_L1;
@@ -30,12 +30,12 @@ void CAST_T_TRAIN_to_int_TM_conversions(
 void CAST_T_TRAIN_to_int_init_TM_conversions(
   outC_CAST_T_TRAIN_to_int_TM_conversions *outC)
 {
-  outC->_L13 = kcg_lit_int64(0);
+  outC->_L13 = kcg_lit_int32(0);
   outC->_L14 = kcg_true;
-  outC->_L15 = kcg_lit_int64(0);
+  outC->_L15 = kcg_lit_int32(0);
   outC->_L16 = kcg_true;
-  outC->_L1 = kcg_lit_int64(0);
-  outC->t_train_int = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->t_train_int = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

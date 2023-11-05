@@ -43,8 +43,8 @@ void checkOnErrors_init_xdebugSupport_Pkg(
   outC->_L12.tNvContactError = kcg_true;
   outC->_L12.otherTimingError = kcg_true;
   outC->_L12.radioMessageConsistencyError = kcg_true;
-  outC->_L12.nid_c = kcg_lit_int64(0);
-  outC->_L12.nid_errorbg = kcg_lit_int64(0);
+  outC->_L12.nid_c = kcg_lit_int32(0);
+  outC->_L12.nid_errorbg = kcg_lit_int32(0);
   outC->_L6 = kcg_true;
   outC->_L5 = kcg_true;
   outC->_L4 = kcg_true;
@@ -57,8 +57,8 @@ void checkOnErrors_init_xdebugSupport_Pkg(
   outC->_L1.tNvContactError = kcg_true;
   outC->_L1.otherTimingError = kcg_true;
   outC->_L1.radioMessageConsistencyError = kcg_true;
-  outC->_L1.nid_c = kcg_lit_int64(0);
-  outC->_L1.nid_errorbg = kcg_lit_int64(0);
+  outC->_L1.nid_c = kcg_lit_int32(0);
+  outC->_L1.nid_errorbg = kcg_lit_int32(0);
   outC->baliseError = kcg_true;
   outC->radioMsgError = kcg_true;
 }

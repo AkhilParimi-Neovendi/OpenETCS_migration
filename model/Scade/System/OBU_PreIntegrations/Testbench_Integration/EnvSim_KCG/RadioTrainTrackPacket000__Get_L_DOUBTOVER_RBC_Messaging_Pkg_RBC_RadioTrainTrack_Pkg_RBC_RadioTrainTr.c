@@ -24,25 +24,25 @@ void RadioTrainTrackPacket000__Get_L_DOUBTOVER_RBC_Messaging_Pkg_RBC_RadioTrainT
 void RadioTrainTrackPacket000__Get_L_DOUBTOVER_init_RBC_Messaging_Pkg_RBC_RadioTrainTrack_Pkg_RBC_RadioTr(
   outC_RadioTrainTrackPacket000__Get_L_DOUBTOVER_RBC_Messaging_Pkg_RBC_RadioTrainTrack_Pkg_RBC_RadioTr *outC)
 {
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
   outC->_L1.valid = kcg_true;
-  outC->_L1.packet0.NID_PACKET = kcg_lit_int64(0);
-  outC->_L1.packet0.L_PACKET = kcg_lit_int64(0);
+  outC->_L1.packet0.NID_PACKET = kcg_lit_int32(0);
+  outC->_L1.packet0.L_PACKET = kcg_lit_int32(0);
   outC->_L1.packet0.qscale = Q_SCALE_10_cm_scale;
-  outC->_L1.packet0.NID_LRBG = kcg_lit_int64(0);
-  outC->_L1.packet0.D_LRBG = kcg_lit_int64(0);
+  outC->_L1.packet0.NID_LRBG = kcg_lit_int32(0);
+  outC->_L1.packet0.D_LRBG = kcg_lit_int32(0);
   outC->_L1.packet0.dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L1.packet0.dlrbg = Q_DLRBG_Reverse;
-  outC->_L1.packet0.L_DOUBTOVER = kcg_lit_int64(0);
-  outC->_L1.packet0.L_DOUBTUNDER = kcg_lit_int64(0);
+  outC->_L1.packet0.L_DOUBTOVER = kcg_lit_int32(0);
+  outC->_L1.packet0.L_DOUBTUNDER = kcg_lit_int32(0);
   outC->_L1.packet0.length = Q_LENGTH_No_train_integrity_information_available;
-  outC->_L1.packet0.L_TRAININT = kcg_lit_int64(0);
-  outC->_L1.packet0.V_TRAIN = kcg_lit_int64(0);
+  outC->_L1.packet0.L_TRAININT = kcg_lit_int32(0);
+  outC->_L1.packet0.V_TRAIN = kcg_lit_int32(0);
   outC->_L1.packet0.dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L1.packet0.mode = M_MODE_Full_Supervision;
   outC->_L1.packet0.level = M_LEVEL_Level_0;
-  outC->_L1.packet0.NID_NTC = kcg_lit_int64(0);
-  outC->out_L_DOUBTOVER = kcg_lit_int64(0);
+  outC->_L1.packet0.NID_NTC = kcg_lit_int32(0);
+  outC->out_L_DOUBTOVER = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

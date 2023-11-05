@@ -28,7 +28,7 @@ void LowerOrHold_TargetLimits_Pkg(
   outC->_L1 = vi;
   outC->_L30 = last_vo;
   outC->_L33 = outC->_L30 < outC->_L1;
-  outC->_L31 = kcg_lit_int64(0);
+  outC->_L31 = kcg_lit_int32(0);
   outC->_L32 = outC->_L36 >= outC->_L31;
   outC->_L28 = outC->_L32 & outC->_L37 & outC->_L33;
   /* _L6= */
@@ -45,16 +45,16 @@ void LowerOrHold_TargetLimits_Pkg(
 void LowerOrHold_init_TargetLimits_Pkg(outC_LowerOrHold_TargetLimits_Pkg *outC)
 {
   outC->_L37 = kcg_true;
-  outC->_L36 = kcg_lit_int64(0);
+  outC->_L36 = kcg_lit_int32(0);
   outC->_L33 = kcg_true;
-  outC->_L30 = kcg_lit_int64(0);
-  outC->_L31 = kcg_lit_int64(0);
+  outC->_L30 = kcg_lit_int32(0);
+  outC->_L31 = kcg_lit_int32(0);
   outC->_L32 = kcg_true;
   outC->_L28 = kcg_true;
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->vo = kcg_lit_int64(-1);
-  outC->mem_vi = kcg_lit_int64(-1);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->vo = kcg_lit_int32(-1);
+  outC->mem_vi = kcg_lit_int32(-1);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -62,8 +62,8 @@ void LowerOrHold_init_TargetLimits_Pkg(outC_LowerOrHold_TargetLimits_Pkg *outC)
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET
 void LowerOrHold_reset_TargetLimits_Pkg(outC_LowerOrHold_TargetLimits_Pkg *outC)
 {
-  outC->vo = kcg_lit_int64(-1);
-  outC->mem_vi = kcg_lit_int64(-1);
+  outC->vo = kcg_lit_int32(-1);
+  outC->mem_vi = kcg_lit_int32(-1);
 }
 #endif /* KCG_NO_EXTERN_CALL_TO_RESET */
 

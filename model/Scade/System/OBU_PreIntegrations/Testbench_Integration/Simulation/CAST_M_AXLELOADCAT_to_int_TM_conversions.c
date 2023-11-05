@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -14,109 +14,109 @@ void CAST_M_AXLELOADCAT_to_int_TM_conversions(
   outC_CAST_M_AXLELOADCAT_to_int_TM_conversions *outC)
 {
   /* m_axleloadcat_int/ */
-  static kcg_int64 m_axleloadcat_int_partial;
+  static kcg_int32 m_axleloadcat_int_partial;
   /* error/ */
   static kcg_bool error_partial;
   /* m_axleloadcat_int/ */
-  static kcg_int64 _1_m_axleloadcat_int_partial;
+  static kcg_int32 _1_m_axleloadcat_int_partial;
   /* error/ */
   static kcg_bool _2_error_partial;
   /* m_axleloadcat_int/ */
-  static kcg_int64 _3_m_axleloadcat_int_partial;
+  static kcg_int32 _3_m_axleloadcat_int_partial;
   /* error/ */
   static kcg_bool _4_error_partial;
   /* m_axleloadcat_int/ */
-  static kcg_int64 _5_m_axleloadcat_int_partial;
+  static kcg_int32 _5_m_axleloadcat_int_partial;
   /* error/ */
   static kcg_bool _6_error_partial;
   /* m_axleloadcat_int/ */
-  static kcg_int64 _7_m_axleloadcat_int_partial;
+  static kcg_int32 _7_m_axleloadcat_int_partial;
   /* error/ */
   static kcg_bool _8_error_partial;
   /* m_axleloadcat_int/ */
-  static kcg_int64 _9_m_axleloadcat_int_partial;
+  static kcg_int32 _9_m_axleloadcat_int_partial;
   /* error/ */
   static kcg_bool _10_error_partial;
   /* m_axleloadcat_int/ */
-  static kcg_int64 _11_m_axleloadcat_int_partial;
+  static kcg_int32 _11_m_axleloadcat_int_partial;
   /* error/ */
   static kcg_bool _12_error_partial;
   /* m_axleloadcat_int/ */
-  static kcg_int64 _13_m_axleloadcat_int_partial;
+  static kcg_int32 _13_m_axleloadcat_int_partial;
   /* error/ */
   static kcg_bool _14_error_partial;
   /* m_axleloadcat_int/ */
-  static kcg_int64 _15_m_axleloadcat_int_partial;
+  static kcg_int32 _15_m_axleloadcat_int_partial;
   /* error/ */
   static kcg_bool _16_error_partial;
   /* m_axleloadcat_int/ */
-  static kcg_int64 _17_m_axleloadcat_int_partial;
+  static kcg_int32 _17_m_axleloadcat_int_partial;
   /* error/ */
   static kcg_bool _18_error_partial;
   /* m_axleloadcat_int/ */
-  static kcg_int64 _19_m_axleloadcat_int_partial;
+  static kcg_int32 _19_m_axleloadcat_int_partial;
   /* error/ */
   static kcg_bool _20_error_partial;
   /* m_axleloadcat_int/ */
-  static kcg_int64 _21_m_axleloadcat_int_partial;
+  static kcg_int32 _21_m_axleloadcat_int_partial;
   /* error/ */
   static kcg_bool _22_error_partial;
   /* m_axleloadcat_int/ */
-  static kcg_int64 _23_m_axleloadcat_int_partial;
+  static kcg_int32 _23_m_axleloadcat_int_partial;
   /* error/ */
   static kcg_bool _24_error_partial;
   /* m_axleloadcat_int/ */
-  static kcg_int64 _25_m_axleloadcat_int_partial;
+  static kcg_int32 _25_m_axleloadcat_int_partial;
   /* error/ */
   static kcg_bool _26_error_partial;
   /* error/ */
   static kcg_bool _27_error_partial;
   /* m_axleloadcat_int/ */
-  static kcg_int64 _28_m_axleloadcat_int_partial;
+  static kcg_int32 _28_m_axleloadcat_int_partial;
   /* error/ */
   static kcg_bool _29_error_partial;
   /* m_axleloadcat_int/ */
-  static kcg_int64 _30_m_axleloadcat_int_partial;
+  static kcg_int32 _30_m_axleloadcat_int_partial;
   /* error/ */
   static kcg_bool _31_error_partial;
   /* m_axleloadcat_int/ */
-  static kcg_int64 _32_m_axleloadcat_int_partial;
+  static kcg_int32 _32_m_axleloadcat_int_partial;
   /* error/ */
   static kcg_bool _33_error_partial;
   /* m_axleloadcat_int/ */
-  static kcg_int64 _34_m_axleloadcat_int_partial;
+  static kcg_int32 _34_m_axleloadcat_int_partial;
   /* error/ */
   static kcg_bool _35_error_partial;
   /* m_axleloadcat_int/ */
-  static kcg_int64 _36_m_axleloadcat_int_partial;
+  static kcg_int32 _36_m_axleloadcat_int_partial;
   /* error/ */
   static kcg_bool _37_error_partial;
   /* m_axleloadcat_int/ */
-  static kcg_int64 _38_m_axleloadcat_int_partial;
+  static kcg_int32 _38_m_axleloadcat_int_partial;
   /* error/ */
   static kcg_bool _39_error_partial;
   /* m_axleloadcat_int/ */
-  static kcg_int64 _40_m_axleloadcat_int_partial;
+  static kcg_int32 _40_m_axleloadcat_int_partial;
   /* error/ */
   static kcg_bool _41_error_partial;
   /* m_axleloadcat_int/ */
-  static kcg_int64 _42_m_axleloadcat_int_partial;
+  static kcg_int32 _42_m_axleloadcat_int_partial;
   /* error/ */
   static kcg_bool _43_error_partial;
   /* m_axleloadcat_int/ */
-  static kcg_int64 _44_m_axleloadcat_int_partial;
+  static kcg_int32 _44_m_axleloadcat_int_partial;
   /* error/ */
   static kcg_bool _45_error_partial;
   /* m_axleloadcat_int/ */
-  static kcg_int64 _46_m_axleloadcat_int_partial;
+  static kcg_int32 _46_m_axleloadcat_int_partial;
   /* error/ */
   static kcg_bool _47_error_partial;
   /* m_axleloadcat_int/ */
-  static kcg_int64 _48_m_axleloadcat_int_partial;
+  static kcg_int32 _48_m_axleloadcat_int_partial;
   /* error/ */
   static kcg_bool _49_error_partial;
   /* m_axleloadcat_int/ */
-  static kcg_int64 _50_m_axleloadcat_int_partial;
+  static kcg_int32 _50_m_axleloadcat_int_partial;
   static kcg_bool noname;
 
   outC->_L4 = m_axleloadcat;
@@ -363,35 +363,35 @@ void CAST_M_AXLELOADCAT_to_int_init_TM_conversions(
   outC->error = kcg_true;
   outC->m_axleloadcat_in = M_AXLELOADCAT_A;
   outC->IfBlock1_clock = kcg_true;
-  outC->_L7_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L7_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L6_then_else_IfBlock1 = kcg_true;
   outC->else_clock_else_IfBlock1 = kcg_true;
   outC->_L1_then_else_else_else_IfBlock1 = kcg_true;
-  outC->_L2_then_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_else_else_IfBlock1 = kcg_true;
-  outC->_L2_then_else_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->else_clock_else_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L1_then_else_else_else_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_else_else_else_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->else_clock_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L2_then_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L1_then_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L2_then_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L2_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L1_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
@@ -399,24 +399,24 @@ void CAST_M_AXLELOADCAT_to_int_init_TM_conversions(
   outC->_L2_then_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L1_then_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L2_then_else_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L1_then_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L2_then_else_else_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L1_then_else_else_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_else_else_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L2_then_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L1_then_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_else_IfBlock1 = kcg_true;
   outC->_L2_then_else_else_IfBlock1 = kcg_true;
-  outC->_L1_then_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_IfBlock1 = kcg_true;
   outC->_L7_then_IfBlock1 = kcg_true;
-  outC->_L8_then_IfBlock1 = kcg_lit_int64(0);
-  outC->m_axleloadcat_int = kcg_lit_int64(0);
+  outC->_L8_then_IfBlock1 = kcg_lit_int32(0);
+  outC->m_axleloadcat_int = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -432,6 +432,6 @@ void CAST_M_AXLELOADCAT_to_int_reset_TM_conversions(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_M_AXLELOADCAT_to_int_TM_conversions.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

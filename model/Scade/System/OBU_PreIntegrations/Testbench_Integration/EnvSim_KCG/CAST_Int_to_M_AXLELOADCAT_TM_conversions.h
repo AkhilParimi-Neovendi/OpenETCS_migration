@@ -62,9 +62,9 @@ typedef struct {
   kcg_bool /* IfBlock1:else:else:else:then:_L1/ */ _L1_then_else_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L6/ */ _L6_then_else_IfBlock1;
   M_AXLELOADCAT /* IfBlock1:else:then:_L7/ */ _L7_then_else_IfBlock1;
-  kcg_int64 /* m_axleloadcat_in/ */ m_axleloadcat_in;
+  kcg_int32 /* m_axleloadcat_in/ */ m_axleloadcat_in;
   kcg_bool /* error/ */ error;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L4/ */ _L4;
   kcg_bool /* _L7/ */ _L7;
 } outC_CAST_Int_to_M_AXLELOADCAT_TM_conversions;
 
@@ -72,7 +72,7 @@ typedef struct {
 /* TM_conversions::CAST_Int_to_M_AXLELOADCAT/ */
 extern void CAST_Int_to_M_AXLELOADCAT_TM_conversions(
   /* int__m_axleloadcatt_in/ */
-  kcg_int64 int__m_axleloadcatt_in,
+  kcg_int32 int__m_axleloadcatt_in,
   outC_CAST_Int_to_M_AXLELOADCAT_TM_conversions *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

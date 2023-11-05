@@ -15,10 +15,10 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* valid/ */ valid;
-  kcg_int64 /* loc_abs/ */ loc_abs;
-  kcg_int64 /* loc_lrbg/ */ loc_lrbg;
-  kcg_int64 /* mrs/ */ mrs;
+  kcg_int32 /* valid/ */ valid;
+  kcg_int32 /* loc_abs/ */ loc_abs;
+  kcg_int32 /* loc_lrbg/ */ loc_lrbg;
+  kcg_int32 /* mrs/ */ mrs;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -31,7 +31,7 @@ typedef struct {
   L_internal_Type_Obu_BasicTypes_Pkg /* _L4/ */ _L4;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L3/ */ _L3;
   V_internal_Type_Obu_BasicTypes_Pkg /* _L2/ */ _L2;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L6/ */ _L6;
 } outC_CAST_DMI_speedProfileElement_to_int_DATA_Variables;
 
 /* ===========  node initialization and cycle functions  =========== */

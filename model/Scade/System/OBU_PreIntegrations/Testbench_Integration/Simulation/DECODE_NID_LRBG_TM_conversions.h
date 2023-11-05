@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _DECODE_NID_LRBG_TM_conversions_H_
 #define _DECODE_NID_LRBG_TM_conversions_H_
@@ -29,9 +29,9 @@ typedef struct {
   NID_LRBG /* _L1/ */ _L1;
   NID_C /* _L2/ */ _L2;
   NID_BG /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L7/ */ _L7;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L7/ */ _L7;
   NID_LRBG /* _L6/ */ _L6;
 } outC_DECODE_NID_LRBG_TM_conversions;
 
@@ -57,6 +57,6 @@ extern void DECODE_NID_LRBG_init_TM_conversions(
 #endif /* _DECODE_NID_LRBG_TM_conversions_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** DECODE_NID_LRBG_TM_conversions.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

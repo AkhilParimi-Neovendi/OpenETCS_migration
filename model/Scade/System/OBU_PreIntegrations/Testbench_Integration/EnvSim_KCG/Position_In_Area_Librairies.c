@@ -33,14 +33,14 @@ void Position_In_Area_Librairies(
 void Position_In_Area_init_Librairies(outC_Position_In_Area_Librairies *outC)
 {
   outC->_L11 = kcg_true;
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
   outC->_L8 = kcg_true;
-  outC->_L6 = kcg_lit_int64(0);
+  outC->_L6 = kcg_lit_int32(0);
   outC->_L5 = kcg_true;
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
   outC->Position_In_Area = kcg_true;
 }
 #endif /* KCG_USER_DEFINED_INIT */

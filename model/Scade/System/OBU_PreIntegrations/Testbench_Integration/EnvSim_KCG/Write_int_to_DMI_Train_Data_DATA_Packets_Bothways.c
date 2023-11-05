@@ -17,7 +17,7 @@ void Write_int_to_DMI_Train_Data_DATA_Packets_Bothways(
 
   kcg_copy_DMI_Train_Data_int_array_T_DATA(&outC->_L18, dmi_train_data_int);
   outC->_L24 = outC->_L18[0];
-  outC->_L23 = kcg_lit_int64(1);
+  outC->_L23 = kcg_lit_int32(1);
   outC->_L22 = outC->_L23 == outC->_L24;
   outC->every = outC->_L22;
   if (outC->every) {
@@ -51,41 +51,41 @@ void Write_int_to_DMI_Train_Data_init_DATA_Packets_Bothways(
   static kcg_size idx;
 
   outC->_L22 = kcg_true;
-  outC->_L23 = kcg_lit_int64(0);
-  outC->_L24 = kcg_lit_int64(0);
+  outC->_L23 = kcg_lit_int32(0);
+  outC->_L24 = kcg_lit_int32(0);
   outC->_L21.valid = kcg_true;
-  outC->_L21.systemTime = kcg_lit_int64(0);
+  outC->_L21.systemTime = kcg_lit_int32(0);
   outC->_L21.trainCategory =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->_L21.l_train = kcg_lit_int64(0);
-  outC->_L21.m_brakeperct = kcg_lit_int64(0);
-  outC->_L21.v_maxTrain = kcg_lit_int64(0);
+  outC->_L21.l_train = kcg_lit_int32(0);
+  outC->_L21.m_brakeperct = kcg_lit_int32(0);
+  outC->_L21.v_maxTrain = kcg_lit_int32(0);
   outC->_L21.m_axleLoad = M_AXLELOADCAT_A;
   outC->_L21.m_airTight = M_AIRTIGHT_Not_fitted;
   outC->_L21.m_loadingGauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L20.valid = kcg_true;
-  outC->_L20.systemTime = kcg_lit_int64(0);
+  outC->_L20.systemTime = kcg_lit_int32(0);
   outC->_L20.trainCategory =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->_L20.l_train = kcg_lit_int64(0);
-  outC->_L20.m_brakeperct = kcg_lit_int64(0);
-  outC->_L20.v_maxTrain = kcg_lit_int64(0);
+  outC->_L20.l_train = kcg_lit_int32(0);
+  outC->_L20.m_brakeperct = kcg_lit_int32(0);
+  outC->_L20.v_maxTrain = kcg_lit_int32(0);
   outC->_L20.m_axleLoad = M_AXLELOADCAT_A;
   outC->_L20.m_airTight = M_AIRTIGHT_Not_fitted;
   outC->_L20.m_loadingGauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   for (idx = 0; idx < 9; idx++) {
-    outC->_L18[idx] = kcg_lit_int64(0);
+    outC->_L18[idx] = kcg_lit_int32(0);
   }
   outC->every = kcg_true;
   outC->dmi_train_data_ct.valid = kcg_true;
-  outC->dmi_train_data_ct.systemTime = kcg_lit_int64(0);
+  outC->dmi_train_data_ct.systemTime = kcg_lit_int32(0);
   outC->dmi_train_data_ct.trainCategory =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->dmi_train_data_ct.l_train = kcg_lit_int64(0);
-  outC->dmi_train_data_ct.m_brakeperct = kcg_lit_int64(0);
-  outC->dmi_train_data_ct.v_maxTrain = kcg_lit_int64(0);
+  outC->dmi_train_data_ct.l_train = kcg_lit_int32(0);
+  outC->dmi_train_data_ct.m_brakeperct = kcg_lit_int32(0);
+  outC->dmi_train_data_ct.v_maxTrain = kcg_lit_int32(0);
   outC->dmi_train_data_ct.m_axleLoad = M_AXLELOADCAT_A;
   outC->dmi_train_data_ct.m_airTight = M_AIRTIGHT_Not_fitted;
   outC->dmi_train_data_ct.m_loadingGauge =

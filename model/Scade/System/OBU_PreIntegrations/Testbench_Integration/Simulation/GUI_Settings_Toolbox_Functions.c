@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,13 +10,13 @@
 /* Toolbox::Functions::GUI_Settings/ */
 void GUI_Settings_Toolbox_Functions(
   /* mode/ */
-  kcg_int64 mode,
+  kcg_int32 mode,
   /* level/ */
-  kcg_int64 level,
+  kcg_int32 level,
   /* mobileHWStatus/ */
-  kcg_int64 mobileHWStatus,
+  kcg_int32 mobileHWStatus,
   /* directionIn/ */
-  kcg_int64 directionIn,
+  kcg_int32 directionIn,
   /* cabStatusIin/ */
   kcg_bool cabStatusIin,
   outC_GUI_Settings_Toolbox_Functions *outC)
@@ -29,16 +29,16 @@ void GUI_Settings_Toolbox_Functions(
   outC->_L54 = mobileHWStatus;
   /* _L55= */
   switch (outC->_L54) {
-    case kcg_lit_int64(1) :
+    case kcg_lit_int32(1) :
       outC->_L55 = outC->_L53;
       break;
-    case kcg_lit_int64(2) :
+    case kcg_lit_int32(2) :
       outC->_L55 = outC->_L50;
       break;
-    case kcg_lit_int64(3) :
+    case kcg_lit_int32(3) :
       outC->_L55 = outC->_L57;
       break;
-    case kcg_lit_int64(4) :
+    case kcg_lit_int32(4) :
       outC->_L55 = outC->_L49;
       break;
     default :
@@ -64,13 +64,13 @@ void GUI_Settings_Toolbox_Functions(
   outC->_L25 = directionIn;
   /* _L26= */
   switch (outC->_L25) {
-    case kcg_lit_int64(1) :
+    case kcg_lit_int32(1) :
       outC->_L26 = outC->_L27;
       break;
-    case kcg_lit_int64(2) :
+    case kcg_lit_int32(2) :
       outC->_L26 = outC->_L29;
       break;
-    case kcg_lit_int64(3) :
+    case kcg_lit_int32(3) :
       outC->_L26 = outC->_L30;
       break;
     default :
@@ -96,16 +96,16 @@ void GUI_Settings_Toolbox_Functions(
   outC->_L19 = mobileHWStatus;
   /* _L18= */
   switch (outC->_L19) {
-    case kcg_lit_int64(0) :
+    case kcg_lit_int32(0) :
       kcg_copy_mobileHWStatus_Type_MoRC_Pck(&outC->_L18, &outC->_L21);
       break;
-    case kcg_lit_int64(1) :
+    case kcg_lit_int32(1) :
       kcg_copy_mobileHWStatus_Type_MoRC_Pck(&outC->_L18, &outC->_L20);
       break;
-    case kcg_lit_int64(2) :
+    case kcg_lit_int32(2) :
       kcg_copy_mobileHWStatus_Type_MoRC_Pck(&outC->_L18, &outC->_L23);
       break;
-    case kcg_lit_int64(3) :
+    case kcg_lit_int32(3) :
       kcg_copy_mobileHWStatus_Type_MoRC_Pck(&outC->_L18, &outC->_L22);
       break;
     default :
@@ -122,19 +122,19 @@ void GUI_Settings_Toolbox_Functions(
   outC->_L11 = level;
   /* _L10= */
   switch (outC->_L11) {
-    case kcg_lit_int64(0) :
+    case kcg_lit_int32(0) :
       outC->_L10 = outC->_L12;
       break;
-    case kcg_lit_int64(1) :
+    case kcg_lit_int32(1) :
       outC->_L10 = outC->_L13;
       break;
-    case kcg_lit_int64(2) :
+    case kcg_lit_int32(2) :
       outC->_L10 = outC->_L14;
       break;
-    case kcg_lit_int64(3) :
+    case kcg_lit_int32(3) :
       outC->_L10 = outC->_L15;
       break;
-    case kcg_lit_int64(4) :
+    case kcg_lit_int32(4) :
       outC->_L10 = outC->_L16;
       break;
     default :
@@ -152,22 +152,22 @@ void GUI_Settings_Toolbox_Functions(
   outC->_L2 = mode;
   /* _L1= */
   switch (outC->_L2) {
-    case kcg_lit_int64(0) :
+    case kcg_lit_int32(0) :
       outC->_L1 = outC->_L3;
       break;
-    case kcg_lit_int64(1) :
+    case kcg_lit_int32(1) :
       outC->_L1 = outC->_L4;
       break;
-    case kcg_lit_int64(2) :
+    case kcg_lit_int32(2) :
       outC->_L1 = outC->_L5;
       break;
-    case kcg_lit_int64(3) :
+    case kcg_lit_int32(3) :
       outC->_L1 = outC->_L6;
       break;
-    case kcg_lit_int64(4) :
+    case kcg_lit_int32(4) :
       outC->_L1 = outC->_L8;
       break;
-    case kcg_lit_int64(5) :
+    case kcg_lit_int32(5) :
       outC->_L1 = outC->_L7;
       break;
     default :
@@ -186,7 +186,7 @@ void GUI_Settings_init_Toolbox_Functions(
   outC->_L50 = conn_unknown_API_RadioCommunication_Pkg;
   outC->_L51 = conn_unknown_API_RadioCommunication_Pkg;
   outC->_L53 = conn_unknown_API_RadioCommunication_Pkg;
-  outC->_L54 = kcg_lit_int64(0);
+  outC->_L54 = kcg_lit_int32(0);
   outC->_L55 = conn_unknown_API_RadioCommunication_Pkg;
   outC->_L41 = cab_signal_status_not_defined_TIU_Types_Pkg;
   outC->_L40 = cab_signal_status_not_defined_TIU_Types_Pkg;
@@ -197,7 +197,7 @@ void GUI_Settings_init_Toolbox_Functions(
   outC->_L28 = direction_controller_in_neutral_TIU_Types_Pkg;
   outC->_L27 = direction_controller_in_neutral_TIU_Types_Pkg;
   outC->_L26 = direction_controller_in_neutral_TIU_Types_Pkg;
-  outC->_L25 = kcg_lit_int64(0);
+  outC->_L25 = kcg_lit_int32(0);
   outC->_L24.valid = kcg_true;
   outC->_L24.connectionStatus = mhwc_notRegistered_MoRC_Pck;
   outC->_L24.settingUpConnectionHasFailed = kcg_true;
@@ -218,7 +218,7 @@ void GUI_Settings_init_Toolbox_Functions(
   outC->_L20.connectionStatus = mhwc_notRegistered_MoRC_Pck;
   outC->_L20.settingUpConnectionHasFailed = kcg_true;
   outC->_L20.connectionLost = kcg_true;
-  outC->_L19 = kcg_lit_int64(0);
+  outC->_L19 = kcg_lit_int32(0);
   outC->_L18.valid = kcg_true;
   outC->_L18.connectionStatus = mhwc_notRegistered_MoRC_Pck;
   outC->_L18.settingUpConnectionHasFailed = kcg_true;
@@ -229,7 +229,7 @@ void GUI_Settings_init_Toolbox_Functions(
   outC->_L14 = M_LEVEL_Level_0;
   outC->_L13 = M_LEVEL_Level_0;
   outC->_L12 = M_LEVEL_Level_0;
-  outC->_L11 = kcg_lit_int64(0);
+  outC->_L11 = kcg_lit_int32(0);
   outC->_L10 = M_LEVEL_Level_0;
   outC->_L9 = M_MODE_Full_Supervision;
   outC->_L8 = M_MODE_Full_Supervision;
@@ -238,7 +238,7 @@ void GUI_Settings_init_Toolbox_Functions(
   outC->_L5 = M_MODE_Full_Supervision;
   outC->_L4 = M_MODE_Full_Supervision;
   outC->_L3 = M_MODE_Full_Supervision;
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
   outC->_L1 = M_MODE_Full_Supervision;
   outC->apiConnectionStatus = conn_unknown_API_RadioCommunication_Pkg;
   outC->cabStatusOut = cab_signal_status_not_defined_TIU_Types_Pkg;
@@ -264,6 +264,6 @@ void GUI_Settings_reset_Toolbox_Functions(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** GUI_Settings_Toolbox_Functions.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

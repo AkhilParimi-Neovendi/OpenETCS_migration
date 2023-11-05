@@ -12,9 +12,9 @@ void Triggers_UserStory13_RBC_Scenario_Pkg(
   /* inLRBG/ */
   NID_LRBG inLRBG,
   /* inDistanceToLRBG/ */
-  kcg_float64 inDistanceToLRBG,
+  kcg_float32 inDistanceToLRBG,
   /* inTriggerId/ */
-  kcg_int64 inTriggerId,
+  kcg_int32 inTriggerId,
   /* inRBCTime/ */
   T_TRAIN inRBCTime,
   outC_Triggers_UserStory13_RBC_Scenario_Pkg *outC)
@@ -29,11 +29,11 @@ void Triggers_UserStory13_RBC_Scenario_Pkg(
     outC->_L3,
     outC->_L4,
     outC->_L5,
-    kcg_lit_int64(359),
-    kcg_lit_float64(25.0),
-    kcg_lit_float64(35.0),
-    kcg_lit_int64(359000300),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(359),
+    kcg_lit_float32(25.0),
+    kcg_lit_float32(35.0),
+    kcg_lit_int32(359000300),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_1);
   outC->_L1 = outC->Context_RadioTrackTrainMessageTrigger__Trigger_1.outTriggerId;
   outC->outTriggerId = outC->_L1;
@@ -43,12 +43,12 @@ void Triggers_UserStory13_RBC_Scenario_Pkg(
 void Triggers_UserStory13_init_RBC_Scenario_Pkg(
   outC_Triggers_UserStory13_RBC_Scenario_Pkg *outC)
 {
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_float64(0.0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->outTriggerId = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_float32(0.0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->outTriggerId = kcg_lit_int32(0);
   /* _L1=(RBC_Scenario_Pkg::RadioTrackTrainMessageTrigger__Trigger#1)/ */
   RadioTrackTrainMessageTri_init_RBC_Scenario_Pkg(
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_1);

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -43,24 +43,24 @@ void add_odo_2_Location_BasicLocationFunctions_Pkg(
 void add_odo_2_Location_init_BasicLocationFunctions_Pkg(
   outC_add_odo_2_Location_BasicLocationFunctions_Pkg *outC)
 {
-  outC->_L5.nominal = kcg_lit_int64(0);
-  outC->_L5.d_min = kcg_lit_int64(0);
-  outC->_L5.d_max = kcg_lit_int64(0);
-  outC->_L4.nominal = kcg_lit_int64(0);
-  outC->_L4.d_min = kcg_lit_int64(0);
-  outC->_L4.d_max = kcg_lit_int64(0);
-  outC->_L3.o_nominal = kcg_lit_int64(0);
-  outC->_L3.o_min = kcg_lit_int64(0);
-  outC->_L3.o_max = kcg_lit_int64(0);
-  outC->_L2.o_nominal = kcg_lit_int64(0);
-  outC->_L2.o_min = kcg_lit_int64(0);
-  outC->_L2.o_max = kcg_lit_int64(0);
-  outC->_L1.nominal = kcg_lit_int64(0);
-  outC->_L1.d_min = kcg_lit_int64(0);
-  outC->_L1.d_max = kcg_lit_int64(0);
-  outC->location.nominal = kcg_lit_int64(0);
-  outC->location.d_min = kcg_lit_int64(0);
-  outC->location.d_max = kcg_lit_int64(0);
+  outC->_L5.nominal = kcg_lit_int32(0);
+  outC->_L5.d_min = kcg_lit_int32(0);
+  outC->_L5.d_max = kcg_lit_int32(0);
+  outC->_L4.nominal = kcg_lit_int32(0);
+  outC->_L4.d_min = kcg_lit_int32(0);
+  outC->_L4.d_max = kcg_lit_int32(0);
+  outC->_L3.o_nominal = kcg_lit_int32(0);
+  outC->_L3.o_min = kcg_lit_int32(0);
+  outC->_L3.o_max = kcg_lit_int32(0);
+  outC->_L2.o_nominal = kcg_lit_int32(0);
+  outC->_L2.o_min = kcg_lit_int32(0);
+  outC->_L2.o_max = kcg_lit_int32(0);
+  outC->_L1.nominal = kcg_lit_int32(0);
+  outC->_L1.d_min = kcg_lit_int32(0);
+  outC->_L1.d_max = kcg_lit_int32(0);
+  outC->location.nominal = kcg_lit_int32(0);
+  outC->location.d_min = kcg_lit_int32(0);
+  outC->location.d_max = kcg_lit_int32(0);
   /* _L5=(BasicLocationFunctions_Pkg::add_2_Distances#1)/ */
   add_2_Distances_init_BasicLocationFunctions_Pkg(
     &outC->Context_add_2_Distances_1);
@@ -88,6 +88,6 @@ void add_odo_2_Location_reset_BasicLocationFunctions_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** add_odo_2_Location_BasicLocationFunctions_Pkg.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

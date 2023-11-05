@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _sessionSequencer_v2_MoRC_Pck_Subfunc_Pkg_H_
 #define _sessionSequencer_v2_MoRC_Pck_Subfunc_Pkg_H_
@@ -82,7 +82,7 @@ typedef struct {
   sessionStatus_T_RCM_Session_Types_Pkg /* Session_SM:maintainingSession:_L1/ */ _L1_maintainingSession_Session_SM;
   kcg_bool /* Session_SM:terminatingSession:_L12/ */ _L12_terminatingSession_Session_SM;
   T_internal_Type_Obu_BasicTypes_Pkg /* Session_SM:terminatingSession:_L11/ */ _L11_terminatingSession_Session_SM;
-  kcg_int64 /* Session_SM:terminatingSession:_L10/ */ _L10_terminatingSession_Session_SM;
+  kcg_int32 /* Session_SM:terminatingSession:_L10/ */ _L10_terminatingSession_Session_SM;
   sessionStatus_T_RCM_Session_Types_Pkg /* Session_SM:terminatingSession:_L9/ */ _L9_terminatingSession_Session_SM;
   m39_AckOfTerminationOfACommunicationSession_T_RCM_MsgTypes_Pkg /* Session_SM:terminatingSession:_L8/ */ _L8_terminatingSession_Session_SM;
   T_internal_Type_Obu_BasicTypes_Pkg /* Session_SM:terminatingSession:_L7/ */ _L7_terminatingSession_Session_SM;
@@ -122,7 +122,7 @@ extern void sessionSequencer_v2_MoRC_Pck_Subfunc_Pkg(
   /* reset/ */
   kcg_bool reset,
   /* noOfRetriesOfSendingTerminationMessage/ */
-  kcg_int64 noOfRetriesOfSendingTerminationMessage,
+  kcg_int32 noOfRetriesOfSendingTerminationMessage,
   /* maxWaitingTimeForAckMessageReceived/ */
   T_internal_Type_Obu_BasicTypes_Pkg maxWaitingTimeForAckMessageReceived,
   outC_sessionSequencer_v2_MoRC_Pck_Subfunc_Pkg *outC);
@@ -166,6 +166,6 @@ extern void kcg_load_SV_sessionSequencer_v2_MoRC_Pck_Subfunc_Pkg(
 #endif /* _sessionSequencer_v2_MoRC_Pck_Subfunc_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** sessionSequencer_v2_MoRC_Pck_Subfunc_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

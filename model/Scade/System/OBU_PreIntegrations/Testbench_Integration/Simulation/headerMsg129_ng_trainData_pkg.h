@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _headerMsg129_ng_trainData_pkg_H_
 #define _headerMsg129_ng_trainData_pkg_H_
@@ -26,7 +26,7 @@ typedef struct {
   M_129_T_TM_radio_messages /* _L17/ */ _L17;
   kcg_bool /* _L18/ */ _L18;
   NID_MESSAGE /* _L19/ */ _L19;
-  kcg_int64 /* _L20/ */ _L20;
+  kcg_int32 /* _L20/ */ _L20;
 } outC_headerMsg129_ng_trainData_pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -53,6 +53,6 @@ extern void headerMsg129_ng_init_trainData_pkg(
 #endif /* _headerMsg129_ng_trainData_pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** headerMsg129_ng_trainData_pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

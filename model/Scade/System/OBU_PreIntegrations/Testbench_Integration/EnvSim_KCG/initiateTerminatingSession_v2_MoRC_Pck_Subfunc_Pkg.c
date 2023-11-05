@@ -24,7 +24,7 @@ void initiateTerminatingSession_v2_MoRC_Pck_Subfunc_Pkg(
   /* maxWaitingTimeUntilTerminationOrderReceived/ */
   T_internal_Type_Obu_BasicTypes_Pkg maxWaitingTimeUntilTerminationOrderReceived,
   /* noOfRetriesUntilTerminationOrderIsReceived/ */
-  kcg_int64 noOfRetriesUntilTerminationOrderIsReceived,
+  kcg_int32 noOfRetriesUntilTerminationOrderIsReceived,
   outC_initiateTerminatingSession_v2_MoRC_Pck_Subfunc_Pkg *outC)
 {
   /* definedNumberOfRepetitionsHasBeenReached/ */
@@ -424,32 +424,32 @@ void initiateTerminatingSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L89 = kcg_true;
   outC->_L88 = kcg_true;
   outC->_L87 = kcg_true;
-  outC->_L86 = kcg_lit_int64(0);
-  outC->_L85 = kcg_lit_int64(0);
-  outC->_L84 = kcg_lit_int64(0);
+  outC->_L86 = kcg_lit_int32(0);
+  outC->_L85 = kcg_lit_int32(0);
+  outC->_L84 = kcg_lit_int32(0);
   outC->_L83 = kcg_true;
   outC->_L82.valid = kcg_true;
   outC->_L82.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L82.nid_c = kcg_lit_int64(0);
-  outC->_L82.nid_rbc = kcg_lit_int64(0);
-  outC->_L82.nid_radio = kcg_lit_int64(0);
-  outC->_L70 = kcg_lit_int64(0);
-  outC->_L71 = kcg_lit_int64(0);
+  outC->_L82.nid_c = kcg_lit_int32(0);
+  outC->_L82.nid_rbc = kcg_lit_int32(0);
+  outC->_L82.nid_radio = kcg_lit_int32(0);
+  outC->_L70 = kcg_lit_int32(0);
+  outC->_L71 = kcg_lit_int32(0);
   outC->_L72.valid = kcg_true;
   outC->_L72.msgSrc = msrc_undefined_Common_Types_Pkg;
   outC->_L72.q_dir = Q_DIR_Reverse;
   outC->_L72.q_rbc = Q_RBC_Terminate_communication_session;
-  outC->_L72.nid_c = kcg_lit_int64(0);
-  outC->_L72.nid_RBC = kcg_lit_int64(0);
-  outC->_L72.nid_radio = kcg_lit_int64(0);
+  outC->_L72.nid_c = kcg_lit_int32(0);
+  outC->_L72.nid_RBC = kcg_lit_int32(0);
+  outC->_L72.nid_radio = kcg_lit_int32(0);
   outC->_L72.q_sleepsession = Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L72.origin.valid = kcg_true;
-  outC->_L72.origin.nid_c = kcg_lit_int64(0);
-  outC->_L72.origin.rbc_id = kcg_lit_int64(0);
-  outC->_L72.origin.device_id = kcg_lit_int64(0);
+  outC->_L72.origin.nid_c = kcg_lit_int32(0);
+  outC->_L72.origin.rbc_id = kcg_lit_int32(0);
+  outC->_L72.origin.device_id = kcg_lit_int32(0);
   outC->_L73 = kcg_true;
   outC->_L74 = M_MODE_Full_Supervision;
-  outC->_L75 = kcg_lit_int64(0);
+  outC->_L75 = kcg_lit_int32(0);
   outC->_L76 = Q_RBC_Terminate_communication_session;
   outC->_L77 = kcg_true;
   outC->_L78 = kcg_true;
@@ -535,13 +535,13 @@ void initiateTerminatingSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L25_WaitForOrderToTerminateTheSession_TrainExitedFromRBCArea_SM =
     kcg_true;
   outC->_L27_WaitForOrderToTerminateTheSession_TrainExitedFromRBCArea_SM =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L28_WaitForOrderToTerminateTheSession_TrainExitedFromRBCArea_SM =
     kcg_true;
   outC->_L29_WaitForOrderToTerminateTheSession_TrainExitedFromRBCArea_SM =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_WaitForOrderToTerminateTheSession_TrainExitedFromRBCArea_SM =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->sendAPositionReport = kcg_true;
   outC->initiateTermination = kcg_true;
   /* TrainExitedFromRBCArea_SM:WaitForOrderToTerminateTheSession:_L25=(MoRC_Pck::Utils::waitAndRepeatTimer#1)/ */

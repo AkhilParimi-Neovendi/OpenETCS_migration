@@ -18,7 +18,7 @@ void splitT_bs_TargetLimits_Pkg(
   outC_splitT_bs_TargetLimits_Pkg *outC)
 {
   outC->_L11 = bs;
-  outC->_L9 = kcg_lit_float64(0.0);
+  outC->_L9 = kcg_lit_float32(0.0);
   outC->_L1 = bs;
   outC->_L2 = isSB_FBAvailable;
   /* _L8= */
@@ -57,17 +57,17 @@ void splitT_bs_TargetLimits_Pkg(
 #ifndef KCG_USER_DEFINED_INIT
 void splitT_bs_init_TargetLimits_Pkg(outC_splitT_bs_TargetLimits_Pkg *outC)
 {
-  outC->_L11 = kcg_lit_float64(0.0);
-  outC->_L10 = kcg_lit_float64(0.0);
-  outC->_L9 = kcg_lit_float64(0.0);
-  outC->_L8 = kcg_lit_float64(0.0);
-  outC->_L7 = kcg_lit_float64(0.0);
-  outC->_L6 = kcg_lit_float64(0.0);
+  outC->_L11 = kcg_lit_float32(0.0);
+  outC->_L10 = kcg_lit_float32(0.0);
+  outC->_L9 = kcg_lit_float32(0.0);
+  outC->_L8 = kcg_lit_float32(0.0);
+  outC->_L7 = kcg_lit_float32(0.0);
+  outC->_L6 = kcg_lit_float32(0.0);
   outC->_L3 = kcg_true;
   outC->_L2 = kcg_true;
-  outC->_L1 = kcg_lit_float64(0.0);
-  outC->bs2 = kcg_lit_float64(0.0);
-  outC->bs1 = kcg_lit_float64(0.0);
+  outC->_L1 = kcg_lit_float32(0.0);
+  outC->bs2 = kcg_lit_float32(0.0);
+  outC->bs1 = kcg_lit_float32(0.0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

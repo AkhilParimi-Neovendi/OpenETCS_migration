@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,7 +10,7 @@
 /* TA_MA_new::MA_Convert_P15_to_DistanceProfile_loop/ */
 void MA_Convert_P15_to_DistanceProfile_loop_TA_MA_new(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* ProfileAccu/ */
   AccuDistanceProfileMA_TA_MA_new *ProfileAccu,
   /* SectionsIn/ */
@@ -23,15 +23,15 @@ void MA_Convert_P15_to_DistanceProfile_loop_TA_MA_new(
 {
   kcg_copy_AccuDistanceProfileMA_TA_MA_new(&outC->_L125, ProfileAccu);
   outC->_L286 = outC->_L125.d_endsection;
-  outC->_L249 = kcg_lit_int64(0);
-  outC->_L261 = kcg_lit_int64(1);
+  outC->_L249 = kcg_lit_int32(0);
+  outC->_L261 = kcg_lit_int32(1);
   outC->_L144 = i;
   outC->_L260 = outC->_L144 - outC->_L261;
   kcg_copy_AccuDistanceProfileMA_TA_MA_new(&outC->_L142, ProfileAccu);
   kcg_copy_MovementAuthoritySectionlist_t_TrackAtlasTypes(
     &outC->_L265,
     &outC->_L142.sections);
-  if ((kcg_lit_int64(0) <= outC->_L260) & (outC->_L260 < kcg_lit_int64(10))) {
+  if ((kcg_lit_int32(0) <= outC->_L260) & (outC->_L260 < kcg_lit_int32(10))) {
     kcg_copy_MovementAuthoritySection_t_TrackAtlasTypes(
       &outC->_L252,
       &outC->_L265[outC->_L260]);
@@ -45,7 +45,7 @@ void MA_Convert_P15_to_DistanceProfile_loop_TA_MA_new(
   outC->_L139 = q_scale;
   outC->_L134 = i;
   kcg_copy_P015_OBU_sectionlist_enum_T_TM(&outC->_L121, SectionsIn);
-  if ((kcg_lit_int64(0) <= outC->_L134) & (outC->_L134 < kcg_lit_int64(32))) {
+  if ((kcg_lit_int32(0) <= outC->_L134) & (outC->_L134 < kcg_lit_int32(32))) {
     kcg_copy_P015_section_enum_T_TM(&outC->_L227, &outC->_L121[outC->_L134]);
   }
   else {
@@ -90,7 +90,7 @@ void MA_Convert_P15_to_DistanceProfile_loop_TA_MA_new(
     &outC->Context_CAST_Q_SECTIONTIMER_to_bool_1);
   outC->_L259 = outC->Context_CAST_Q_SECTIONTIMER_to_bool_1.q_sectiontimer_bool;
   outC->_L264 = outC->_L243 & outC->_L259;
-  outC->_L263 = kcg_lit_int64(0);
+  outC->_L263 = kcg_lit_int32(0);
   outC->_L245 = outC->_L227.t_sectiontimer;
   /* _L262= */
   if (outC->_L243) {
@@ -125,7 +125,7 @@ void MA_Convert_P15_to_DistanceProfile_loop_TA_MA_new(
   kcg_copy_MovementAuthoritySectionlist_t_TrackAtlasTypes(
     &outC->_L133,
     &outC->_L285);
-  if ((kcg_lit_int64(0) <= outC->_L131) & (outC->_L131 < kcg_lit_int64(10))) {
+  if ((kcg_lit_int32(0) <= outC->_L131) & (outC->_L131 < kcg_lit_int32(10))) {
     kcg_copy_MovementAuthoritySection_t_TrackAtlasTypes(
       &outC->_L133[outC->_L131],
       &outC->_L238);
@@ -150,120 +150,120 @@ void MA_Convert_P15_to_DistanceProfile_loop_init_TA_MA_new(
   static kcg_size idx6;
   static kcg_size idx7;
 
-  outC->_L289 = kcg_lit_int64(0);
+  outC->_L289 = kcg_lit_int32(0);
   for (idx = 0; idx < 10; idx++) {
     outC->_L285[idx].valid = kcg_true;
     outC->_L285[idx].q_endsection = kcg_true;
-    outC->_L285[idx].l_section = kcg_lit_int64(0);
+    outC->_L285[idx].l_section = kcg_lit_int32(0);
     outC->_L285[idx].q_sectiontimer = kcg_true;
-    outC->_L285[idx].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L285[idx].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L285[idx].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L285[idx].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
-  outC->_L286 = kcg_lit_int64(0);
-  outC->_L282 = kcg_lit_int64(0);
+  outC->_L286 = kcg_lit_int32(0);
+  outC->_L282 = kcg_lit_int32(0);
   outC->_L281 = kcg_true;
-  outC->_L280 = kcg_lit_int64(0);
-  outC->_L279 = kcg_lit_int64(0);
+  outC->_L280 = kcg_lit_int32(0);
+  outC->_L279 = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 10; idx1++) {
     outC->_L275.sections[idx1].valid = kcg_true;
     outC->_L275.sections[idx1].q_endsection = kcg_true;
-    outC->_L275.sections[idx1].l_section = kcg_lit_int64(0);
+    outC->_L275.sections[idx1].l_section = kcg_lit_int32(0);
     outC->_L275.sections[idx1].q_sectiontimer = kcg_true;
-    outC->_L275.sections[idx1].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L275.sections[idx1].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L275.sections[idx1].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L275.sections[idx1].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
-  outC->_L275.d_endsection = kcg_lit_int64(0);
+  outC->_L275.d_endsection = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 10; idx2++) {
     outC->_L265[idx2].valid = kcg_true;
     outC->_L265[idx2].q_endsection = kcg_true;
-    outC->_L265[idx2].l_section = kcg_lit_int64(0);
+    outC->_L265[idx2].l_section = kcg_lit_int32(0);
     outC->_L265[idx2].q_sectiontimer = kcg_true;
-    outC->_L265[idx2].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L265[idx2].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L265[idx2].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L265[idx2].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
   outC->_L264 = kcg_true;
-  outC->_L263 = kcg_lit_int64(0);
-  outC->_L262 = kcg_lit_int64(0);
-  outC->_L261 = kcg_lit_int64(0);
-  outC->_L260 = kcg_lit_int64(0);
+  outC->_L263 = kcg_lit_int32(0);
+  outC->_L262 = kcg_lit_int32(0);
+  outC->_L261 = kcg_lit_int32(0);
+  outC->_L260 = kcg_lit_int32(0);
   outC->_L259 = kcg_true;
-  outC->_L258 = kcg_lit_int64(0);
-  outC->_L257 = kcg_lit_int64(0);
-  outC->_L255 = kcg_lit_int64(0);
-  outC->_L256 = kcg_lit_int64(0);
+  outC->_L258 = kcg_lit_int32(0);
+  outC->_L257 = kcg_lit_int32(0);
+  outC->_L255 = kcg_lit_int32(0);
+  outC->_L256 = kcg_lit_int32(0);
   outC->_L252.valid = kcg_true;
   outC->_L252.q_endsection = kcg_true;
-  outC->_L252.l_section = kcg_lit_int64(0);
+  outC->_L252.l_section = kcg_lit_int32(0);
   outC->_L252.q_sectiontimer = kcg_true;
-  outC->_L252.t_sectiontimer = kcg_lit_int64(0);
-  outC->_L252.d_sectiontimerstoploc = kcg_lit_int64(0);
-  outC->_L249 = kcg_lit_int64(0);
-  outC->_L248 = kcg_lit_int64(0);
-  outC->_L245 = kcg_lit_int64(0);
+  outC->_L252.t_sectiontimer = kcg_lit_int32(0);
+  outC->_L252.d_sectiontimerstoploc = kcg_lit_int32(0);
+  outC->_L249 = kcg_lit_int32(0);
+  outC->_L248 = kcg_lit_int32(0);
+  outC->_L245 = kcg_lit_int32(0);
   outC->_L244 = Q_SECTIONTIMER_No_Section_Timer_information;
   outC->_L243 = kcg_true;
-  outC->_L242 = kcg_lit_int64(0);
-  outC->_L241 = kcg_lit_int64(0);
-  outC->_L240 = kcg_lit_int64(0);
-  outC->_L239 = kcg_lit_int64(0);
+  outC->_L242 = kcg_lit_int32(0);
+  outC->_L241 = kcg_lit_int32(0);
+  outC->_L240 = kcg_lit_int32(0);
+  outC->_L239 = kcg_lit_int32(0);
   outC->_L238.valid = kcg_true;
   outC->_L238.q_endsection = kcg_true;
-  outC->_L238.l_section = kcg_lit_int64(0);
+  outC->_L238.l_section = kcg_lit_int32(0);
   outC->_L238.q_sectiontimer = kcg_true;
-  outC->_L238.t_sectiontimer = kcg_lit_int64(0);
-  outC->_L238.d_sectiontimerstoploc = kcg_lit_int64(0);
+  outC->_L238.t_sectiontimer = kcg_lit_int32(0);
+  outC->_L238.d_sectiontimerstoploc = kcg_lit_int32(0);
   outC->_L227.valid = kcg_true;
-  outC->_L227.l_section = kcg_lit_int64(0);
+  outC->_L227.l_section = kcg_lit_int32(0);
   outC->_L227.q_sectiontimer = Q_SECTIONTIMER_No_Section_Timer_information;
-  outC->_L227.t_sectiontimer = kcg_lit_int64(0);
-  outC->_L227.d_sectiontimerstoploc = kcg_lit_int64(0);
-  outC->_L144 = kcg_lit_int64(0);
+  outC->_L227.t_sectiontimer = kcg_lit_int32(0);
+  outC->_L227.d_sectiontimerstoploc = kcg_lit_int32(0);
+  outC->_L144 = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 10; idx3++) {
     outC->_L142.sections[idx3].valid = kcg_true;
     outC->_L142.sections[idx3].q_endsection = kcg_true;
-    outC->_L142.sections[idx3].l_section = kcg_lit_int64(0);
+    outC->_L142.sections[idx3].l_section = kcg_lit_int32(0);
     outC->_L142.sections[idx3].q_sectiontimer = kcg_true;
-    outC->_L142.sections[idx3].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L142.sections[idx3].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L142.sections[idx3].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L142.sections[idx3].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
-  outC->_L142.d_endsection = kcg_lit_int64(0);
+  outC->_L142.d_endsection = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 32; idx4++) {
     outC->_L121[idx4].valid = kcg_true;
-    outC->_L121[idx4].l_section = kcg_lit_int64(0);
+    outC->_L121[idx4].l_section = kcg_lit_int32(0);
     outC->_L121[idx4].q_sectiontimer = Q_SECTIONTIMER_No_Section_Timer_information;
-    outC->_L121[idx4].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L121[idx4].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L121[idx4].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L121[idx4].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
   for (idx5 = 0; idx5 < 10; idx5++) {
     outC->_L125.sections[idx5].valid = kcg_true;
     outC->_L125.sections[idx5].q_endsection = kcg_true;
-    outC->_L125.sections[idx5].l_section = kcg_lit_int64(0);
+    outC->_L125.sections[idx5].l_section = kcg_lit_int32(0);
     outC->_L125.sections[idx5].q_sectiontimer = kcg_true;
-    outC->_L125.sections[idx5].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L125.sections[idx5].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L125.sections[idx5].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L125.sections[idx5].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
-  outC->_L125.d_endsection = kcg_lit_int64(0);
-  outC->_L131 = kcg_lit_int64(0);
+  outC->_L125.d_endsection = kcg_lit_int32(0);
+  outC->_L131 = kcg_lit_int32(0);
   for (idx6 = 0; idx6 < 10; idx6++) {
     outC->_L133[idx6].valid = kcg_true;
     outC->_L133[idx6].q_endsection = kcg_true;
-    outC->_L133[idx6].l_section = kcg_lit_int64(0);
+    outC->_L133[idx6].l_section = kcg_lit_int32(0);
     outC->_L133[idx6].q_sectiontimer = kcg_true;
-    outC->_L133[idx6].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L133[idx6].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L133[idx6].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L133[idx6].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
-  outC->_L134 = kcg_lit_int64(0);
+  outC->_L134 = kcg_lit_int32(0);
   outC->_L139 = Q_SCALE_10_cm_scale;
-  outC->section_d = kcg_lit_int64(0);
+  outC->section_d = kcg_lit_int32(0);
   for (idx7 = 0; idx7 < 10; idx7++) {
     outC->SpeedtProfile.sections[idx7].valid = kcg_true;
     outC->SpeedtProfile.sections[idx7].q_endsection = kcg_true;
-    outC->SpeedtProfile.sections[idx7].l_section = kcg_lit_int64(0);
+    outC->SpeedtProfile.sections[idx7].l_section = kcg_lit_int32(0);
     outC->SpeedtProfile.sections[idx7].q_sectiontimer = kcg_true;
-    outC->SpeedtProfile.sections[idx7].t_sectiontimer = kcg_lit_int64(0);
-    outC->SpeedtProfile.sections[idx7].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->SpeedtProfile.sections[idx7].t_sectiontimer = kcg_lit_int32(0);
+    outC->SpeedtProfile.sections[idx7].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
-  outC->SpeedtProfile.d_endsection = kcg_lit_int64(0);
+  outC->SpeedtProfile.d_endsection = kcg_lit_int32(0);
   /* _L242=(TA_Lib_internal::Normalize_Distance_d_internal_t#2)/ */
   Normalize_Distance_d_internal_t_init_TA_Lib_internal(
     &outC->Context_Normalize_Distance_d_internal_t_2);
@@ -297,6 +297,6 @@ void MA_Convert_P15_to_DistanceProfile_loop_reset_TA_MA_new(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** MA_Convert_P15_to_DistanceProfile_loop_TA_MA_new.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

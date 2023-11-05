@@ -25,8 +25,8 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   DMI_Status_int_array_T_DATA /* _L2/ */ _L2;
-  kcg_int64 /* _L21/ */ _L21;
-  kcg_int64 /* _L20/ */ _L20;
+  kcg_int32 /* _L21/ */ _L21;
+  kcg_int32 /* _L20/ */ _L20;
   kcg_bool /* _L19/ */ _L19;
   DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg /* _L22/ */ _L22;
   DMI_Status_T_DMI_Messages_DMI_to_EVC_Pkg /* _L23/ */ _L23;

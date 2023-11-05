@@ -26,8 +26,8 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   DMI_Train_Running_Number_int_array_T_DATA /* _L8/ */ _L8;
   DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg /* _L10/ */ _L10;
-  kcg_int64 /* _L13/ */ _L13;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L13/ */ _L13;
+  kcg_int32 /* _L12/ */ _L12;
   kcg_bool /* _L11/ */ _L11;
   DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg /* _L14/ */ _L14;
 } outC_Write_int_to_DMI_Train_Running_Number_DATA_Packets_Bothways;

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -65,48 +65,48 @@ void Send_P046_init_MessageLibBaseline2(
 
   outC->_L5 = kcg_true;
   for (idx = 0; idx < 30; idx++) {
-    outC->_L7.PacketHeaders[idx].nid_packet = kcg_lit_int64(0);
+    outC->_L7.PacketHeaders[idx].nid_packet = kcg_lit_int32(0);
     outC->_L7.PacketHeaders[idx].q_dir = Q_DIR_Reverse;
     outC->_L7.PacketHeaders[idx].valid = kcg_true;
-    outC->_L7.PacketHeaders[idx].startAddress = kcg_lit_int64(0);
-    outC->_L7.PacketHeaders[idx].endAddress = kcg_lit_int64(0);
+    outC->_L7.PacketHeaders[idx].startAddress = kcg_lit_int32(0);
+    outC->_L7.PacketHeaders[idx].endAddress = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 500; idx1++) {
-    outC->_L7.PacketData[idx1] = kcg_lit_int64(0);
+    outC->_L7.PacketData[idx1] = kcg_lit_int32(0);
   }
   outC->_L6 = kcg_true;
   outC->_L8 = kcg_true;
   outC->_L4.valid = kcg_true;
-  outC->_L4.NID_PACKET = kcg_lit_int64(0);
-  outC->_L4.Q_DIR = kcg_lit_int64(0);
-  outC->_L4.L_PACKET = kcg_lit_int64(0);
-  outC->_L4.M_LEVELTR = kcg_lit_int64(0);
-  outC->_L4.NID_NTC = kcg_lit_int64(0);
-  outC->_L4.N_ITER = kcg_lit_int64(0);
+  outC->_L4.NID_PACKET = kcg_lit_int32(0);
+  outC->_L4.Q_DIR = kcg_lit_int32(0);
+  outC->_L4.L_PACKET = kcg_lit_int32(0);
+  outC->_L4.M_LEVELTR = kcg_lit_int32(0);
+  outC->_L4.NID_NTC = kcg_lit_int32(0);
+  outC->_L4.N_ITER = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 32; idx2++) {
-    outC->_L4.SECTIONS[idx2].M_LEVELTR = kcg_lit_int64(0);
-    outC->_L4.SECTIONS[idx2].NID_NTC = kcg_lit_int64(0);
+    outC->_L4.SECTIONS[idx2].M_LEVELTR = kcg_lit_int32(0);
+    outC->_L4.SECTIONS[idx2].NID_NTC = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 30; idx3++) {
-    outC->_L3.PacketHeaders[idx3].nid_packet = kcg_lit_int64(0);
+    outC->_L3.PacketHeaders[idx3].nid_packet = kcg_lit_int32(0);
     outC->_L3.PacketHeaders[idx3].q_dir = Q_DIR_Reverse;
     outC->_L3.PacketHeaders[idx3].valid = kcg_true;
-    outC->_L3.PacketHeaders[idx3].startAddress = kcg_lit_int64(0);
-    outC->_L3.PacketHeaders[idx3].endAddress = kcg_lit_int64(0);
+    outC->_L3.PacketHeaders[idx3].startAddress = kcg_lit_int32(0);
+    outC->_L3.PacketHeaders[idx3].endAddress = kcg_lit_int32(0);
   }
   for (idx4 = 0; idx4 < 500; idx4++) {
-    outC->_L3.PacketData[idx4] = kcg_lit_int64(0);
+    outC->_L3.PacketData[idx4] = kcg_lit_int32(0);
   }
   outC->every = kcg_true;
   for (idx5 = 0; idx5 < 30; idx5++) {
-    outC->B_data_out.PacketHeaders[idx5].nid_packet = kcg_lit_int64(0);
+    outC->B_data_out.PacketHeaders[idx5].nid_packet = kcg_lit_int32(0);
     outC->B_data_out.PacketHeaders[idx5].q_dir = Q_DIR_Reverse;
     outC->B_data_out.PacketHeaders[idx5].valid = kcg_true;
-    outC->B_data_out.PacketHeaders[idx5].startAddress = kcg_lit_int64(0);
-    outC->B_data_out.PacketHeaders[idx5].endAddress = kcg_lit_int64(0);
+    outC->B_data_out.PacketHeaders[idx5].startAddress = kcg_lit_int32(0);
+    outC->B_data_out.PacketHeaders[idx5].endAddress = kcg_lit_int32(0);
   }
   for (idx6 = 0; idx6 < 500; idx6++) {
-    outC->B_data_out.PacketData[idx6] = kcg_lit_int64(0);
+    outC->B_data_out.PacketData[idx6] = kcg_lit_int32(0);
   }
   /* _L6=(TM_trackside::Write_P046#1)/ */
   Write_P046_init_TM_trackside(&outC->Context_Write_P046_1);
@@ -127,6 +127,6 @@ void Send_P046_reset_MessageLibBaseline2(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Send_P046_MessageLibBaseline2.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

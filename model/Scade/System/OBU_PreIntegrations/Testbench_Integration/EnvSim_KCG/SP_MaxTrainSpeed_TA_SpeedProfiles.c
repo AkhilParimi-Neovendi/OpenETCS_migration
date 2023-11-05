@@ -12,10 +12,10 @@ void SP_MaxTrainSpeed_TA_SpeedProfiles(
   /* reset/ */
   kcg_bool reset,
   /* TrainDataIn/ */
-  kcg_int64 TrainDataIn,
+  kcg_int32 TrainDataIn,
   outC_SP_MaxTrainSpeed_TA_SpeedProfiles *outC)
 {
-  static kcg_int64 noname;
+  static kcg_int32 noname;
   static kcg_bool _1_noname;
 
   outC->_L3 = reset;
@@ -37,13 +37,13 @@ void SP_MaxTrainSpeed_init_TA_SpeedProfiles(
 
   outC->_L3 = kcg_true;
   for (idx = 0; idx < 50; idx++) {
-    outC->_L2[idx].target = kcg_lit_int64(0);
-    outC->_L2[idx].speed = kcg_lit_int64(0);
+    outC->_L2[idx].target = kcg_lit_int32(0);
+    outC->_L2[idx].speed = kcg_lit_int32(0);
   }
-  outC->_L1 = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 50; idx1++) {
-    outC->MaxTrainSpeed[idx1].target = kcg_lit_int64(0);
-    outC->MaxTrainSpeed[idx1].speed = kcg_lit_int64(0);
+    outC->MaxTrainSpeed[idx1].target = kcg_lit_int32(0);
+    outC->MaxTrainSpeed[idx1].speed = kcg_lit_int32(0);
   }
 }
 #endif /* KCG_USER_DEFINED_INIT */

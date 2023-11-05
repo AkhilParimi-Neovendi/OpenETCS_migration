@@ -12,7 +12,7 @@ void Filter_Variable_TM_TrainToTrack(
   /* valid/ */
   kcg_bool valid,
   /* int_in/ */
-  kcg_int64 int_in,
+  kcg_int32 int_in,
   outC_Filter_Variable_TM_TrainToTrack *outC)
 {
   outC->_L3 = INVALID_VARIABLE_TM_TrainToTrack;
@@ -32,11 +32,11 @@ void Filter_Variable_TM_TrainToTrack(
 void Filter_Variable_init_TM_TrainToTrack(
   outC_Filter_Variable_TM_TrainToTrack *outC)
 {
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
   outC->_L1 = kcg_true;
-  outC->int_out = kcg_lit_int64(0);
+  outC->int_out = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

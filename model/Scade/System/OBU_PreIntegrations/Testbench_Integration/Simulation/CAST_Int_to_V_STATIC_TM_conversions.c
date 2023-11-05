@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,21 +10,21 @@
 /* TM_conversions::CAST_Int_to_V_STATIC/ */
 void CAST_Int_to_V_STATIC_TM_conversions(
   /* v_static_int/ */
-  kcg_int64 v_static_int,
+  kcg_int32 v_static_int,
   outC_CAST_Int_to_V_STATIC_TM_conversions *outC)
 {
   static kcg_bool noname;
   static kcg_bool _1_noname;
 
-  outC->_L14 = kcg_lit_int64(127);
+  outC->_L14 = kcg_lit_int32(127);
   outC->_L1 = v_static_int;
   outC->_L16 = outC->_L1 != outC->_L14;
-  outC->_L7 = kcg_lit_int64(120);
+  outC->_L7 = kcg_lit_int32(120);
   outC->_L9 = outC->_L1 > outC->_L7;
   outC->_L17 = outC->_L9 & outC->_L16;
-  outC->_L12 = kcg_lit_int64(5);
+  outC->_L12 = kcg_lit_int32(5);
   outC->_L11 = outC->_L1 * outC->_L12;
-  outC->_L6 = kcg_lit_int64(0);
+  outC->_L6 = kcg_lit_int32(0);
   outC->_L8 = outC->_L1 < outC->_L6;
   _1_noname = outC->_L8;
   noname = outC->_L17;
@@ -37,15 +37,15 @@ void CAST_Int_to_V_STATIC_init_TM_conversions(
 {
   outC->_L17 = kcg_true;
   outC->_L16 = kcg_true;
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
   outC->_L8 = kcg_true;
   outC->_L9 = kcg_true;
-  outC->_L1 = kcg_lit_int64(0);
-  outC->v_static = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->v_static = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -61,6 +61,6 @@ void CAST_Int_to_V_STATIC_reset_TM_conversions(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_Int_to_V_STATIC_TM_conversions.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

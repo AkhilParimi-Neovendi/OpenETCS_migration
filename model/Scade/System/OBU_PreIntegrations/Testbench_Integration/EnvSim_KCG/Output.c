@@ -119,13 +119,13 @@ void Output_init(outC_Output *outC)
   outC->_L44.LevelNeedsAck = kcg_true;
   outC->_L43.LevelTransition.is_set = kcg_true;
   outC->_L43.LevelTransition.transition.level = M_LEVEL_Level_0;
-  outC->_L43.LevelTransition.transition.position = kcg_lit_int64(0);
+  outC->_L43.LevelTransition.transition.position = kcg_lit_int32(0);
   outC->_L43.LevelTransition.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L43.LevelTransition.transition.immediateAck = kcg_true;
-  outC->_L43.LevelTransition.transition.AckLength = kcg_lit_int64(0);
-  outC->_L43.LevelTransition.LRBG = kcg_lit_int64(0);
-  outC->_L43.LevelTransition.referenceLocation = kcg_lit_int64(0);
+  outC->_L43.LevelTransition.transition.AckLength = kcg_lit_int32(0);
+  outC->_L43.LevelTransition.LRBG = kcg_lit_int32(0);
+  outC->_L43.LevelTransition.referenceLocation = kcg_lit_int32(0);
   outC->_L43.IsAvailableForUse = kcg_true;
   outC->_L37 = kcg_true;
   outC->_L36 = kcg_true;
@@ -133,13 +133,13 @@ void Output_init(outC_Output *outC)
   outC->_L33 = kcg_true;
   outC->_L30.is_set = kcg_true;
   outC->_L30.transition.level = M_LEVEL_Level_0;
-  outC->_L30.transition.position = kcg_lit_int64(0);
+  outC->_L30.transition.position = kcg_lit_int32(0);
   outC->_L30.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L30.transition.immediateAck = kcg_true;
-  outC->_L30.transition.AckLength = kcg_lit_int64(0);
-  outC->_L30.LRBG = kcg_lit_int64(0);
-  outC->_L30.referenceLocation = kcg_lit_int64(0);
+  outC->_L30.transition.AckLength = kcg_lit_int32(0);
+  outC->_L30.LRBG = kcg_lit_int32(0);
+  outC->_L30.referenceLocation = kcg_lit_int32(0);
   outC->_L25 = kcg_true;
   outC->_L24 = kcg_true;
   outC->_L23 = kcg_true;
@@ -181,13 +181,13 @@ void Output_init(outC_Output *outC)
   outC->Data_To_DMI_Ack.LevelNeedsAck = kcg_true;
   outC->announcedLevel.LevelTransition.is_set = kcg_true;
   outC->announcedLevel.LevelTransition.transition.level = M_LEVEL_Level_0;
-  outC->announcedLevel.LevelTransition.transition.position = kcg_lit_int64(0);
+  outC->announcedLevel.LevelTransition.transition.position = kcg_lit_int32(0);
   outC->announcedLevel.LevelTransition.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->announcedLevel.LevelTransition.transition.immediateAck = kcg_true;
-  outC->announcedLevel.LevelTransition.transition.AckLength = kcg_lit_int64(0);
-  outC->announcedLevel.LevelTransition.LRBG = kcg_lit_int64(0);
-  outC->announcedLevel.LevelTransition.referenceLocation = kcg_lit_int64(0);
+  outC->announcedLevel.LevelTransition.transition.AckLength = kcg_lit_int32(0);
+  outC->announcedLevel.LevelTransition.LRBG = kcg_lit_int32(0);
+  outC->announcedLevel.LevelTransition.referenceLocation = kcg_lit_int32(0);
   outC->announcedLevel.IsAvailableForUse = kcg_true;
   outC->EB_Requested = kcg_true;
   outC->Service_Brake_Command = kcg_true;

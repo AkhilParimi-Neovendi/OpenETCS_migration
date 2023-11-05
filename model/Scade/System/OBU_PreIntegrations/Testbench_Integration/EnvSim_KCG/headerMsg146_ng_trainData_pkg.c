@@ -17,7 +17,7 @@ void headerMsg146_ng_trainData_pkg(
   T_TRAIN RBC_timeStamp,
   outC_headerMsg146_ng_trainData_pkg *outC)
 {
-  outC->_L22 = kcg_lit_int64(0);
+  outC->_L22 = kcg_lit_int32(0);
   outC->_L21 = co146_Acknowledgement_Id_Pkg;
   outC->_L20 = kcg_true;
   outC->_L18 = t_train;
@@ -36,24 +36,24 @@ void headerMsg146_ng_trainData_pkg(
 void headerMsg146_ng_init_trainData_pkg(
   outC_headerMsg146_ng_trainData_pkg *outC)
 {
-  outC->_L22 = kcg_lit_int64(0);
-  outC->_L21 = kcg_lit_int64(0);
+  outC->_L22 = kcg_lit_int32(0);
+  outC->_L21 = kcg_lit_int32(0);
   outC->_L20 = kcg_true;
   outC->_L19.valid = kcg_true;
-  outC->_L19.nid_message = kcg_lit_int64(0);
-  outC->_L19.l_message = kcg_lit_int64(0);
-  outC->_L19.t_train = kcg_lit_int64(0);
-  outC->_L19.nid_engine = kcg_lit_int64(0);
-  outC->_L19.t_train_req = kcg_lit_int64(0);
-  outC->_L18 = kcg_lit_int64(0);
-  outC->_L16 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
+  outC->_L19.nid_message = kcg_lit_int32(0);
+  outC->_L19.l_message = kcg_lit_int32(0);
+  outC->_L19.t_train = kcg_lit_int32(0);
+  outC->_L19.nid_engine = kcg_lit_int32(0);
+  outC->_L19.t_train_req = kcg_lit_int32(0);
+  outC->_L18 = kcg_lit_int32(0);
+  outC->_L16 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
   outC->header.valid = kcg_true;
-  outC->header.nid_message = kcg_lit_int64(0);
-  outC->header.l_message = kcg_lit_int64(0);
-  outC->header.t_train = kcg_lit_int64(0);
-  outC->header.nid_engine = kcg_lit_int64(0);
-  outC->header.t_train_req = kcg_lit_int64(0);
+  outC->header.nid_message = kcg_lit_int32(0);
+  outC->header.l_message = kcg_lit_int32(0);
+  outC->header.t_train = kcg_lit_int32(0);
+  outC->header.nid_engine = kcg_lit_int32(0);
+  outC->header.t_train_req = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

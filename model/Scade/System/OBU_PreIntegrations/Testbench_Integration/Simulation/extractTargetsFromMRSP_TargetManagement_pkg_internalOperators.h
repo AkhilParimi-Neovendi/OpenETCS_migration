@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _extractTargetsFromMRSP_TargetManagement_pkg_internalOperators_H_
 #define _extractTargetsFromMRSP_TargetManagement_pkg_internalOperators_H_
@@ -24,11 +24,11 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   extractTargetsMRSPACC_TargetManagement_pkg /* _L1/ */ _L1;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   MRSP_internal_T_TargetManagement_types /* _L7/ */ _L7;
   extractTargetsMRSPACC_TargetManagement_pkg /* _L12/ */ _L12;
-  kcg_int64 /* _L13/ */ _L13;
-  _91_array /* _L14/ */ _L14;
+  kcg_int32 /* _L13/ */ _L13;
+  _92_array /* _L14/ */ _L14;
   MRSP_internal_T_TargetManagement_types /* _L21/ */ _L21;
   kcg_bool /* _L22/ */ _L22;
   Target_list_MRSP_real_T_TargetManagement_types /* _L24/ */ _L24;
@@ -56,6 +56,6 @@ extern void extractTargetsFromMRSP_init_TargetManagement_pkg_internalOperators(
 #endif /* _extractTargetsFromMRSP_TargetManagement_pkg_internalOperators_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** extractTargetsFromMRSP_TargetManagement_pkg_internalOperators.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

@@ -131,7 +131,7 @@ extern const p42_sessionManagement_T_RCM_MsgTypes_Pkg cNo_p42_SessionManagement_
 
 /* RCM_MsgTypes_Pkg::cNID_RADIO_useTheShortNumberStoredOnboard/ */
 #define cNID_RADIO_useTheShortNumberStoredOnboard_RCM_MsgTypes_Pkg            \
-  (kcg_lit_int64(4294967295))
+  (kcg_lit_int32(4294967295))
 
 /* RCM_MsgTypes_Pkg::c_nid_RBC_contactLastKnownRBC_/ */
 #define c_nid_RBC_contactLastKnownRBC__RCM_MsgTypes_Pkg (kcg_lit_int32(16383))

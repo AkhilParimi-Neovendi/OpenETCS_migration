@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _getMRSFromMRSP_SDM_Types_Pkg_H_
 #define _getMRSFromMRSP_SDM_Types_Pkg_H_
@@ -22,10 +22,10 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   MRSP_internal_T_TargetManagement_types /* @1/_L91/ */ _L91_searchMRSP_2;
-  array_float64_110 /* @1/_L90/ */ _L90_searchMRSP_2;
+  array_float32_110 /* @1/_L90/ */ _L90_searchMRSP_2;
   array_bool_110 /* @1/_L89/ */ _L89_searchMRSP_2;
   array_bool_110 /* @1/_L88/ */ _L88_searchMRSP_2;
-  array_float64_110 /* @1/_L74/ */ _L74_searchMRSP_2;
+  array_float32_110 /* @1/_L74/ */ _L74_searchMRSP_2;
   MRSP_internal_T_TargetManagement_types /* @1/_L84/ */ _L84_searchMRSP_2;
   array_bool_110 /* @1/_L77/ */ _L77_searchMRSP_2;
   MRSP_internal_T_TargetManagement_types /* @1/_L40/ */ _L40_searchMRSP_2;
@@ -33,7 +33,7 @@ typedef struct {
   MRSP_internal_T_TargetManagement_types /* _L1/ */ _L1;
   L_internal_real_Type_SDM_Types_Pkg /* _L4/ */ _L4;
   MRSP_internal_section_T_TargetManagement_types /* _L5/ */ _L5;
-  array_float64_110 /* _L6/ */ _L6;
+  array_float32_110 /* _L6/ */ _L6;
   MRSP_internal_section_T_TargetManagement_types /* _L8/ */ _L8;
   V_internal_real_Type_SDM_Types_Pkg /* _L9/ */ _L9;
 } outC_getMRSFromMRSP_SDM_Types_Pkg;
@@ -65,6 +65,6 @@ extern void getMRSFromMRSP_init_SDM_Types_Pkg(
 #endif /* _getMRSFromMRSP_SDM_Types_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** getMRSFromMRSP_SDM_Types_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

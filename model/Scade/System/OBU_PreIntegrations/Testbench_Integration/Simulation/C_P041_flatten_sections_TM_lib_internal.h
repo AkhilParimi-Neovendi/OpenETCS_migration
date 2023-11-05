@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _C_P041_flatten_sections_TM_lib_internal_H_
 #define _C_P041_flatten_sections_TM_lib_internal_H_
@@ -27,9 +27,9 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   P041_sections_array_flat_T_TM /* _L76/ */ _L76;
   P041_OBU_sectionlist_int_T_TM /* _L75/ */ _L75;
-  array_int64_3_33 /* _L74/ */ _L74;
+  array_int32_3_33 /* _L74/ */ _L74;
   P041_sections_array_flat_T_TM /* _L78/ */ _L78;
-  array_int64_3_33_99 /* _L80/ */ _L80;
+  array_int32_3_33_99 /* _L80/ */ _L80;
 } outC_C_P041_flatten_sections_TM_lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -54,6 +54,6 @@ extern void C_P041_flatten_sections_init_TM_lib_internal(
 #endif /* _C_P041_flatten_sections_TM_lib_internal_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P041_flatten_sections_TM_lib_internal.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

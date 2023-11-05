@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -13,14 +13,14 @@ void N_PIG2int_CheckBGConsistency_Pkg_SubFunction(
   N_PIG n_pig,
   outC_N_PIG2int_CheckBGConsistency_Pkg_SubFunction *outC)
 {
-  outC->_L3 = kcg_lit_int64(1);
-  outC->_L4 = kcg_lit_int64(2);
-  outC->_L5 = kcg_lit_int64(3);
-  outC->_L6 = kcg_lit_int64(4);
-  outC->_L7 = kcg_lit_int64(5);
-  outC->_L8 = kcg_lit_int64(6);
-  outC->_L9 = kcg_lit_int64(7);
-  outC->_L10 = kcg_lit_int64(8);
+  outC->_L3 = kcg_lit_int32(1);
+  outC->_L4 = kcg_lit_int32(2);
+  outC->_L5 = kcg_lit_int32(3);
+  outC->_L6 = kcg_lit_int32(4);
+  outC->_L7 = kcg_lit_int32(5);
+  outC->_L8 = kcg_lit_int32(6);
+  outC->_L9 = kcg_lit_int32(7);
+  outC->_L10 = kcg_lit_int32(8);
   outC->_L2 = n_pig;
   /* _L1= */
   switch (outC->_L2) {
@@ -59,17 +59,17 @@ void N_PIG2int_CheckBGConsistency_Pkg_SubFunction(
 void N_PIG2int_init_CheckBGConsistency_Pkg_SubFunction(
   outC_N_PIG2int_CheckBGConsistency_Pkg_SubFunction *outC)
 {
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L2 = N_PIG_I_am_the_1st;
-  outC->_L1 = kcg_lit_int64(0);
-  outC->n_pig2int = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->n_pig2int = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -85,6 +85,6 @@ void N_PIG2int_reset_CheckBGConsistency_Pkg_SubFunction(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** N_PIG2int_CheckBGConsistency_Pkg_SubFunction.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

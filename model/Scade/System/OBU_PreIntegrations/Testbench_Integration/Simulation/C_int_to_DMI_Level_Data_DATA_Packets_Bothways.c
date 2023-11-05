@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -44,23 +44,23 @@ void C_int_to_DMI_Level_Data_init_DATA_Packets_Bothways(
   static kcg_size idx;
 
   outC->_L12.level = M_LEVEL_Level_0;
-  outC->_L12.nid_stm = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L12.nid_stm = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
   outC->_L9 = kcg_true;
   for (idx = 0; idx < 4; idx++) {
-    outC->_L8[idx] = kcg_lit_int64(0);
+    outC->_L8[idx] = kcg_lit_int32(0);
   }
   outC->_L5.valid = kcg_true;
-  outC->_L5.systemTime = kcg_lit_int64(0);
+  outC->_L5.systemTime = kcg_lit_int32(0);
   outC->_L5.level.level = M_LEVEL_Level_0;
-  outC->_L5.level.nid_stm = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L5.level.nid_stm = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->dmi_level_data_ct.valid = kcg_true;
-  outC->dmi_level_data_ct.systemTime = kcg_lit_int64(0);
+  outC->dmi_level_data_ct.systemTime = kcg_lit_int32(0);
   outC->dmi_level_data_ct.level.level = M_LEVEL_Level_0;
-  outC->dmi_level_data_ct.level.nid_stm = kcg_lit_int64(0);
+  outC->dmi_level_data_ct.level.nid_stm = kcg_lit_int32(0);
   /* _L9=(Utilities::Int_to_Bool#1)/ */
   Int_to_Bool_init_Utilities(&outC->Context_Int_to_Bool_1);
   /* _L12=(DATA::Variables::CAST_int_to_DMI_level#1)/ */
@@ -86,6 +86,6 @@ void C_int_to_DMI_Level_Data_reset_DATA_Packets_Bothways(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_int_to_DMI_Level_Data_DATA_Packets_Bothways.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _m_s_To_km_h_Toolbox_Converters_H_
 #define _m_s_To_km_h_Toolbox_Converters_H_
@@ -14,23 +14,23 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_float64 /* km_h/ */ km_h;
+  kcg_float32 /* km_h/ */ km_h;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_float64 /* _L1/ */ _L1;
-  kcg_float64 /* _L2/ */ _L2;
-  kcg_float64 /* _L3/ */ _L3;
+  kcg_float32 /* _L1/ */ _L1;
+  kcg_float32 /* _L2/ */ _L2;
+  kcg_float32 /* _L3/ */ _L3;
 } outC_m_s_To_km_h_Toolbox_Converters;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* Toolbox::Converters::m_s_To_km_h/ */
 extern void m_s_To_km_h_Toolbox_Converters(
   /* m_s/ */
-  kcg_float64 m_s,
+  kcg_float32 m_s,
   outC_m_s_To_km_h_Toolbox_Converters *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET
@@ -48,6 +48,6 @@ extern void m_s_To_km_h_init_Toolbox_Converters(
 #endif /* _m_s_To_km_h_Toolbox_Converters_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** m_s_To_km_h_Toolbox_Converters.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

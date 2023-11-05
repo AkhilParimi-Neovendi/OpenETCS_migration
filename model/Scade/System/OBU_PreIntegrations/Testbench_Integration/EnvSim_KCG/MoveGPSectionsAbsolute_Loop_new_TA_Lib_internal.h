@@ -21,18 +21,18 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   GradientProfile_t_TrackAtlasTypes /* _L2/ */ _L2;
   Gradient_section_t_TrackAtlasTypes /* _L6/ */ _L6;
   GradientProfile_t_TrackAtlasTypes /* _L7/ */ _L7;
   Gradient_section_t_TrackAtlasTypes /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L130/ */ _L130;
   kcg_bool /* _L143/ */ _L143;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L254/ */ _L254;
-  kcg_int64 /* _L255/ */ _L255;
+  kcg_int32 /* _L255/ */ _L255;
   Gradient_section_t_TrackAtlasTypes /* _L256/ */ _L256;
-  kcg_int64 /* _L257/ */ _L257;
+  kcg_int32 /* _L257/ */ _L257;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L259/ */ _L259;
 } outC_MoveGPSectionsAbsolute_Loop_new_TA_Lib_internal;
 
@@ -40,7 +40,7 @@ typedef struct {
 /* TA_Lib_internal::MoveGPSectionsAbsolute_Loop_new/ */
 extern void MoveGPSectionsAbsolute_Loop_new_TA_Lib_internal(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* ProfileIn/ */
   GradientProfile_t_TrackAtlasTypes *ProfileIn,
   /* pos_LRBG/ */

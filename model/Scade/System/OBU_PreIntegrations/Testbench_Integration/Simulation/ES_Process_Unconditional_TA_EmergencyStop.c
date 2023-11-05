@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -82,22 +82,22 @@ void ES_Process_Unconditional_init_TA_EmergencyStop(
 
   outC->_L13 = kcg_true;
   outC->IfBlock1_clock = kcg_true;
-  outC->_L1_else_IfBlock1.nfree = kcg_lit_int64(0);
+  outC->_L1_else_IfBlock1.nfree = kcg_lit_int32(0);
   for (idx = 0; idx < 8; idx++) {
-    outC->_L1_else_IfBlock1.items[idx].nid_em = kcg_lit_int64(0);
+    outC->_L1_else_IfBlock1.items[idx].nid_em = kcg_lit_int32(0);
     outC->_L1_else_IfBlock1.items[idx].valid = kcg_true;
   }
   outC->_L5_then_IfBlock1 = kcg_true;
-  outC->_L4_then_IfBlock1 = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock1.nfree = kcg_lit_int64(0);
+  outC->_L4_then_IfBlock1 = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock1.nfree = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 8; idx1++) {
-    outC->_L3_then_IfBlock1.items[idx1].nid_em = kcg_lit_int64(0);
+    outC->_L3_then_IfBlock1.items[idx1].nid_em = kcg_lit_int32(0);
     outC->_L3_then_IfBlock1.items[idx1].valid = kcg_true;
   }
   outC->_L2_then_IfBlock1 = kcg_true;
-  outC->_L1_then_IfBlock1.nfree = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1.nfree = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 8; idx2++) {
-    outC->_L1_then_IfBlock1.items[idx2].nid_em = kcg_lit_int64(0);
+    outC->_L1_then_IfBlock1.items[idx2].nid_em = kcg_lit_int32(0);
     outC->_L1_then_IfBlock1.items[idx2].valid = kcg_true;
   }
   outC->_L6_then_IfBlock1 = kcg_true;
@@ -150,6 +150,6 @@ void kcg_load_SV_ES_Process_Unconditional_TA_EmergencyStop(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ES_Process_Unconditional_TA_EmergencyStop.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

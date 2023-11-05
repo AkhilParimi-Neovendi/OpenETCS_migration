@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -44,22 +44,22 @@ void C_DMI_Level_Data_to_int_init_DATA_Packets_Bothways(
   static kcg_size idx;
   static kcg_size idx1;
 
-  outC->_L20 = kcg_lit_int64(0);
-  outC->_L19 = kcg_lit_int64(0);
+  outC->_L20 = kcg_lit_int32(0);
+  outC->_L19 = kcg_lit_int32(0);
   for (idx = 0; idx < 4; idx++) {
-    outC->_L15[idx] = kcg_lit_int64(0);
+    outC->_L15[idx] = kcg_lit_int32(0);
   }
   outC->_L14.valid = kcg_true;
-  outC->_L14.systemTime = kcg_lit_int64(0);
+  outC->_L14.systemTime = kcg_lit_int32(0);
   outC->_L14.level.level = M_LEVEL_Level_0;
-  outC->_L14.level.nid_stm = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
+  outC->_L14.level.nid_stm = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
   outC->_L2.level = M_LEVEL_Level_0;
-  outC->_L2.nid_stm = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L2.nid_stm = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L4 = kcg_true;
   for (idx1 = 0; idx1 < 4; idx1++) {
-    outC->dmi_level_data_int[idx1] = kcg_lit_int64(0);
+    outC->dmi_level_data_int[idx1] = kcg_lit_int32(0);
   }
   /* _L11=(DATA::Variables::CAST_DMI_level_to_int#1)/ */
   CAST_DMI_level_to_int_init_DATA_Variables(
@@ -86,6 +86,6 @@ void C_DMI_Level_Data_to_int_reset_DATA_Packets_Bothways(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_DMI_Level_Data_to_int_DATA_Packets_Bothways.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

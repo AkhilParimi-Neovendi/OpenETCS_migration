@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -19,7 +19,7 @@ void Write_int_to_DMI_Display_Control_DATA_Packets_EVC_to_DMI(
     &outC->_L15,
     dmi_display_control_int);
   outC->_L17 = outC->_L15[0];
-  outC->_L19 = kcg_lit_int64(1);
+  outC->_L19 = kcg_lit_int32(1);
   outC->_L18 = outC->_L19 == outC->_L17;
   outC->every = outC->_L18;
   if (outC->every) {
@@ -58,20 +58,20 @@ void Write_int_to_DMI_Display_Control_init_DATA_Packets_EVC_to_DMI(
 
   outC->_L20.valid = kcg_true;
   outC->_L20.cab_is_active = kcg_true;
-  outC->_L20.system_clock = kcg_lit_int64(0);
-  outC->_L17 = kcg_lit_int64(0);
+  outC->_L20.system_clock = kcg_lit_int32(0);
+  outC->_L17 = kcg_lit_int32(0);
   outC->_L18 = kcg_true;
-  outC->_L19 = kcg_lit_int64(0);
+  outC->_L19 = kcg_lit_int32(0);
   outC->_L16.valid = kcg_true;
   outC->_L16.cab_is_active = kcg_true;
-  outC->_L16.system_clock = kcg_lit_int64(0);
+  outC->_L16.system_clock = kcg_lit_int32(0);
   for (idx = 0; idx < 3; idx++) {
-    outC->_L15[idx] = kcg_lit_int64(0);
+    outC->_L15[idx] = kcg_lit_int32(0);
   }
   outC->every = kcg_true;
   outC->dmi_display_control_ct.valid = kcg_true;
   outC->dmi_display_control_ct.cab_is_active = kcg_true;
-  outC->dmi_display_control_ct.system_clock = kcg_lit_int64(0);
+  outC->dmi_display_control_ct.system_clock = kcg_lit_int32(0);
   /* _L16=(DATA::Packets::EVC_to_DMI::CAST_int_to_DMI_Display_Control1#1)/ */
   CAST_int_to_DMI_Display_Control1_init_DATA_Packets_EVC_to_DMI(
     &outC->Context_CAST_int_to_DMI_Display_Control1_1);
@@ -93,6 +93,6 @@ void Write_int_to_DMI_Display_Control_reset_DATA_Packets_EVC_to_DMI(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Write_int_to_DMI_Display_Control_DATA_Packets_EVC_to_DMI.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

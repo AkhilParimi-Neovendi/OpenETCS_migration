@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _SetValidFlag_InformationFilter_Pkg_Common_H_
 #define _SetValidFlag_InformationFilter_Pkg_Common_H_
@@ -27,8 +27,8 @@ typedef struct {
   NID_PACKET /* _L4/ */ _L4;
   Q_DIR /* _L5/ */ _L5;
   kcg_bool /* _L6/ */ _L6;
-  kcg_int64 /* _L8/ */ _L8;
-  kcg_int64 /* _L7/ */ _L7;
+  kcg_int32 /* _L8/ */ _L8;
+  kcg_int32 /* _L7/ */ _L7;
   kcg_bool /* _L9/ */ _L9;
 } outC_SetValidFlag_InformationFilter_Pkg_Common;
 
@@ -56,6 +56,6 @@ extern void SetValidFlag_init_InformationFilter_Pkg_Common(
 #endif /* _SetValidFlag_InformationFilter_Pkg_Common_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** SetValidFlag_InformationFilter_Pkg_Common.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

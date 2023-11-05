@@ -40,15 +40,15 @@ typedef struct {
   L_MESSAGE /* _L5/ */ _L5;
   NID_MESSAGE /* _L4/ */ _L4;
   kcg_bool /* _L3/ */ _L3;
-  kcg_int64 /* _L19/ */ _L19;
+  kcg_int32 /* _L19/ */ _L19;
   NID_EM /* _L20/ */ _L20;
-  kcg_int64 /* _L21/ */ _L21;
+  kcg_int32 /* _L21/ */ _L21;
   Q_EMERGENCYSTOP /* _L22/ */ _L22;
-  kcg_int64 /* _L23/ */ _L23;
-  kcg_int64 /* _L27/ */ _L27;
-  kcg_int64 /* _L26/ */ _L26;
-  kcg_int64 /* _L25/ */ _L25;
-  kcg_int64 /* _L24/ */ _L24;
+  kcg_int32 /* _L23/ */ _L23;
+  kcg_int32 /* _L27/ */ _L27;
+  kcg_int32 /* _L26/ */ _L26;
+  kcg_int32 /* _L25/ */ _L25;
+  kcg_int32 /* _L24/ */ _L24;
 } outC_C_M147_to_header_TM_RBC_conversions;
 
 /* ===========  node initialization and cycle functions  =========== */

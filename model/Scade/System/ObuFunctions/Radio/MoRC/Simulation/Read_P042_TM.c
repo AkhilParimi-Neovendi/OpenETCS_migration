@@ -55,7 +55,7 @@ void Read_P042_init_TM(outC_Read_P042_TM *outC)
   outC->_L166.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L166.nid_c = kcg_lit_int32(0);
   outC->_L166.nid_rbc = kcg_lit_int32(0);
-  outC->_L166.nid_radio = kcg_lit_int64(0);
+  outC->_L166.nid_radio = kcg_lit_int32(0);
   outC->_L166.q_sleepsession = Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L30.nid_packet = kcg_lit_int32(0);
   outC->_L30.q_dir = Q_DIR_Reverse;
@@ -80,7 +80,7 @@ void Read_P042_init_TM(outC_Read_P042_TM *outC)
   outC->P042_OBU_out.q_rbc = Q_RBC_Terminate_communication_session;
   outC->P042_OBU_out.nid_c = kcg_lit_int32(0);
   outC->P042_OBU_out.nid_rbc = kcg_lit_int32(0);
-  outC->P042_OBU_out.nid_radio = kcg_lit_int64(0);
+  outC->P042_OBU_out.nid_radio = kcg_lit_int32(0);
   outC->P042_OBU_out.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->received = kcg_true;

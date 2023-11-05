@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -13,8 +13,8 @@ void ButtonMask_to_buttonIndex_iterator_DMI_Control_Pkg_Sub_func_MenuRequest(
   kcg_bool valuein,
   outC_ButtonMask_to_buttonIndex_iterator_DMI_Control_Pkg_Sub_func_MenuRequest *outC)
 {
-  outC->_L5 = kcg_lit_int64(2);
-  outC->_L3 = kcg_lit_int64(1);
+  outC->_L5 = kcg_lit_int32(2);
+  outC->_L3 = kcg_lit_int32(1);
   outC->_L2 = valuein;
   /* _L4= */
   if (outC->_L2) {
@@ -30,11 +30,11 @@ void ButtonMask_to_buttonIndex_iterator_DMI_Control_Pkg_Sub_func_MenuRequest(
 void ButtonMask_to_buttonIndex_iterator_init_DMI_Control_Pkg_Sub_func_MenuRequest(
   outC_ButtonMask_to_buttonIndex_iterator_DMI_Control_Pkg_Sub_func_MenuRequest *outC)
 {
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L2 = kcg_true;
-  outC->valueout = kcg_lit_int64(0);
+  outC->valueout = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -50,6 +50,6 @@ void ButtonMask_to_buttonIndex_iterator_reset_DMI_Control_Pkg_Sub_func_MenuReque
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ButtonMask_to_buttonIndex_iterator_DMI_Control_Pkg_Sub_func_MenuRequest.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

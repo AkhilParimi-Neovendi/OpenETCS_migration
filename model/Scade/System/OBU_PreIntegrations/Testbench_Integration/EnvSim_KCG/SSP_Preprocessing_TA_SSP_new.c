@@ -51,43 +51,43 @@ void SSP_Preprocessing_init_TA_SSP_new(outC_SSP_Preprocessing_TA_SSP_new *outC)
   static kcg_size idx4;
 
   outC->_L21 = kcg_true;
-  outC->_L11 = kcg_lit_int64(0);
+  outC->_L11 = kcg_lit_int32(0);
   for (idx = 0; idx < 50; idx++) {
     outC->_L13[idx].valid = kcg_true;
-    outC->_L13[idx].d_static_abs = kcg_lit_int64(0);
-    outC->_L13[idx].d_static_LRBG = kcg_lit_int64(0);
+    outC->_L13[idx].d_static_abs = kcg_lit_int32(0);
+    outC->_L13[idx].d_static_LRBG = kcg_lit_int32(0);
     outC->_L13[idx].q_train_length_corr = kcg_true;
-    outC->_L13[idx].v_static = kcg_lit_int64(0);
+    outC->_L13[idx].v_static = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 50; idx1++) {
     outC->_L14[idx1].valid = kcg_true;
-    outC->_L14[idx1].d_static_abs = kcg_lit_int64(0);
-    outC->_L14[idx1].d_static_LRBG = kcg_lit_int64(0);
+    outC->_L14[idx1].d_static_abs = kcg_lit_int32(0);
+    outC->_L14[idx1].d_static_LRBG = kcg_lit_int32(0);
     outC->_L14[idx1].q_train_length_corr = kcg_true;
-    outC->_L14[idx1].v_static = kcg_lit_int64(0);
+    outC->_L14[idx1].v_static = kcg_lit_int32(0);
   }
   outC->_L1.valid = kcg_true;
   outC->_L1.q_dir = Q_DIR_Reverse;
   outC->_L1.q_scale = Q_SCALE_10_cm_scale;
   for (idx3 = 0; idx3 < 33; idx3++) {
     outC->_L1.sections[idx3].valid = kcg_true;
-    outC->_L1.sections[idx3].d_static = kcg_lit_int64(0);
-    outC->_L1.sections[idx3].v_static = kcg_lit_int64(0);
+    outC->_L1.sections[idx3].d_static = kcg_lit_int32(0);
+    outC->_L1.sections[idx3].v_static = kcg_lit_int32(0);
     outC->_L1.sections[idx3].q_front =
       Q_FRONT_Train_length_delay_on_validity_end_point_of_profile_element;
-    outC->_L1.sections[idx3].n_iter = kcg_lit_int64(0);
+    outC->_L1.sections[idx3].n_iter = kcg_lit_int32(0);
     for (idx2 = 0; idx2 < 32; idx2++) {
       outC->_L1.sections[idx3].SECTIONS_q_diff[idx2].valid = kcg_true;
-      outC->_L1.sections[idx3].SECTIONS_q_diff[idx2].nc_diff = kcg_lit_int64(0);
-      outC->_L1.sections[idx3].SECTIONS_q_diff[idx2].v_diff = kcg_lit_int64(0);
+      outC->_L1.sections[idx3].SECTIONS_q_diff[idx2].nc_diff = kcg_lit_int32(0);
+      outC->_L1.sections[idx3].SECTIONS_q_diff[idx2].v_diff = kcg_lit_int32(0);
     }
   }
   for (idx4 = 0; idx4 < 50; idx4++) {
     outC->SSP[idx4].valid = kcg_true;
-    outC->SSP[idx4].d_static_abs = kcg_lit_int64(0);
-    outC->SSP[idx4].d_static_LRBG = kcg_lit_int64(0);
+    outC->SSP[idx4].d_static_abs = kcg_lit_int32(0);
+    outC->SSP[idx4].d_static_LRBG = kcg_lit_int32(0);
     outC->SSP[idx4].q_train_length_corr = kcg_true;
-    outC->SSP[idx4].v_static = kcg_lit_int64(0);
+    outC->SSP[idx4].v_static = kcg_lit_int32(0);
   }
   /* _L13=(TA_Lib_internal::MoveSSPSectionsAbsolute_new#1)/ */
   MoveSSPSectionsAbsolute_new_init_TA_Lib_internal(

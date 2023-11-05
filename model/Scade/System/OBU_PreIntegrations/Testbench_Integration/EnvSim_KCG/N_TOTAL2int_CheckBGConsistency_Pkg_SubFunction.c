@@ -13,14 +13,14 @@ void N_TOTAL2int_CheckBGConsistency_Pkg_SubFunction(
   N_TOTAL n_total,
   outC_N_TOTAL2int_CheckBGConsistency_Pkg_SubFunction *outC)
 {
-  outC->_L9 = kcg_lit_int64(1);
-  outC->_L7 = kcg_lit_int64(2);
-  outC->_L2 = kcg_lit_int64(3);
-  outC->_L1 = kcg_lit_int64(4);
-  outC->_L10 = kcg_lit_int64(5);
-  outC->_L4 = kcg_lit_int64(6);
-  outC->_L6 = kcg_lit_int64(7);
-  outC->_L8 = kcg_lit_int64(8);
+  outC->_L9 = kcg_lit_int32(1);
+  outC->_L7 = kcg_lit_int32(2);
+  outC->_L2 = kcg_lit_int32(3);
+  outC->_L1 = kcg_lit_int32(4);
+  outC->_L10 = kcg_lit_int32(5);
+  outC->_L4 = kcg_lit_int32(6);
+  outC->_L6 = kcg_lit_int32(7);
+  outC->_L8 = kcg_lit_int32(8);
   outC->_L11 = n_total;
   /* _L3= */
   switch (outC->_L11) {
@@ -60,16 +60,16 @@ void N_TOTAL2int_init_CheckBGConsistency_Pkg_SubFunction(
   outC_N_TOTAL2int_CheckBGConsistency_Pkg_SubFunction *outC)
 {
   outC->_L11 = N_TOTAL_1_balise_in_the_group;
-  outC->_L1 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->n_total2int = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->n_total2int = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

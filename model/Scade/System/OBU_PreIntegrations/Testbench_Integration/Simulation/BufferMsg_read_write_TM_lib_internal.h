@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _BufferMsg_read_write_TM_lib_internal_H_
 #define _BufferMsg_read_write_TM_lib_internal_H_
@@ -15,7 +15,7 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   M_TrainTrackMessage_buffer_t_TM_lib_internal /* Buffer_Out/ */ Buffer_Out;
-  kcg_int64 /* Stacksize_new/ */ Stacksize_new;
+  kcg_int32 /* Stacksize_new/ */ Stacksize_new;
   M_TrainTrack_Message_T_TM_radio_messages /* Message_out/ */ Message_out;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
@@ -23,24 +23,24 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* index/ */ index;
+  kcg_int32 /* index/ */ index;
   M_TrainTrack_Message_T_TM_radio_messages /* _L23/ */ _L23;
   M_TrainTrack_Message_T_TM_radio_messages /* _L21/ */ _L21;
-  kcg_int64 /* _L15/ */ _L15;
-  kcg_int64 /* _L14/ */ _L14;
+  kcg_int32 /* _L15/ */ _L15;
+  kcg_int32 /* _L14/ */ _L14;
   M_TrainTrackMessage_buffer_t_TM_lib_internal /* _L12/ */ _L12;
-  _19_array /* _L24/ */ _L24;
-  _82_array /* _L25/ */ _L25;
+  _17_array /* _L24/ */ _L24;
+  _84_array /* _L25/ */ _L25;
   _39_array /* _L26/ */ _L26;
   kcg_bool /* _L33/ */ _L33;
-  kcg_int64 /* _L32/ */ _L32;
-  kcg_int64 /* _L31/ */ _L31;
-  kcg_int64 /* _L30/ */ _L30;
-  kcg_int64 /* _L29/ */ _L29;
+  kcg_int32 /* _L32/ */ _L32;
+  kcg_int32 /* _L31/ */ _L31;
+  kcg_int32 /* _L30/ */ _L30;
+  kcg_int32 /* _L29/ */ _L29;
   M_TrainTrack_Message_T_TM_radio_messages /* _L37/ */ _L37;
-  kcg_int64 /* _L38/ */ _L38;
+  kcg_int32 /* _L38/ */ _L38;
   kcg_bool /* _L40/ */ _L40;
-  kcg_int64 /* _L39/ */ _L39;
+  kcg_int32 /* _L39/ */ _L39;
   M_TrainTrack_Message_T_TM_radio_messages /* _L41/ */ _L41;
   M_TrainTrack_Message_T_TM_radio_messages /* _L42/ */ _L42;
 } outC_BufferMsg_read_write_TM_lib_internal;
@@ -51,7 +51,7 @@ extern void BufferMsg_read_write_TM_lib_internal(
   /* Buffer_In/ */
   M_TrainTrackMessage_buffer_t_TM_lib_internal *Buffer_In,
   /* Stacksize_old/ */
-  kcg_int64 Stacksize_old,
+  kcg_int32 Stacksize_old,
   /* Message_In/ */
   M_TrainTrack_Message_T_TM_radio_messages *Message_In,
   outC_BufferMsg_read_write_TM_lib_internal *outC);
@@ -71,6 +71,6 @@ extern void BufferMsg_read_write_init_TM_lib_internal(
 #endif /* _BufferMsg_read_write_TM_lib_internal_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** BufferMsg_read_write_TM_lib_internal.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

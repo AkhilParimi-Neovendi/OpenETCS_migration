@@ -116,8 +116,8 @@ void C_P027V1_tracksim_compr_body_TM_conversions_baseline2(
   T_Build_Metadata_Packet_ID_TM_lib_internal(
     outC->_L387,
     outC->_L215,
-    kcg_lit_int64(100),
-    kcg_lit_int64(27),
+    kcg_lit_int32(100),
+    kcg_lit_int32(27),
     INT_M_VERSION_1_0_TM,
     &outC->_1_Context_T_Build_Metadata_Packet_ID_3);
   outC->_L405 = outC->_1_Context_T_Build_Metadata_Packet_ID_3.nid_packet_meta;
@@ -126,8 +126,8 @@ void C_P027V1_tracksim_compr_body_TM_conversions_baseline2(
   T_Build_Metadata_Packet_ID_TM_lib_internal(
     outC->_L387,
     outC->_L215,
-    kcg_lit_int64(0),
-    kcg_lit_int64(27),
+    kcg_lit_int32(0),
+    kcg_lit_int32(27),
     INT_M_VERSION_1_0_TM,
     &outC->Context_T_Build_Metadata_Packet_ID_1);
   outC->_L403 = outC->Context_T_Build_Metadata_Packet_ID_1.nid_packet_meta;
@@ -135,7 +135,7 @@ void C_P027V1_tracksim_compr_body_TM_conversions_baseline2(
   outC->n_iter_k = outC->_L368;
   outC->_L400 = outC->n_iter_k;
   outC->n_iter_k_out = outC->_L400;
-  outC->_L396 = kcg_lit_int64(6);
+  outC->_L396 = kcg_lit_int32(6);
   kcg_copy_P027V1_trackside_sectionlist_T_TM_baseline2(
     &outC->_L367,
     &outC->_L1.SECTIONS_SSP);
@@ -165,7 +165,7 @@ void C_P027V1_tracksim_compr_body_TM_conversions_baseline2(
     &outC->P027V1_sections,
     &outC->_L385);
   outC->_L391 = outC->n_iter_k;
-  outC->_L336 = kcg_lit_int64(0);
+  outC->_L336 = kcg_lit_int32(0);
   /* _L209/ */
   for (idx1 = 0; idx1 < 494; idx1++) {
     outC->_L209[idx1] = outC->_L336;
@@ -178,12 +178,12 @@ void C_P027V1_tracksim_compr_body_TM_conversions_baseline2(
   outC->_L373[3] = outC->_L217;
   outC->_L373[4] = outC->_L391;
   outC->_L373[5] = outC->_L405;
-  kcg_copy_array_int64_6(&outC->_L383[0], &outC->_L373);
-  kcg_copy_array_int64_494(&outC->_L383[6], &outC->_L209);
+  kcg_copy_array_int32_6(&outC->_L383[0], &outC->_L373);
+  kcg_copy_array_int32_494(&outC->_L383[6], &outC->_L209);
   outC->_L214 = outC->_L1.valid;
-  outC->_L213 = kcg_lit_int64(1);
+  outC->_L213 = kcg_lit_int32(1);
   outC->_L212 = outC->_L396 - outC->_L213;
-  outC->_L206 = kcg_lit_int64(0);
+  outC->_L206 = kcg_lit_int32(0);
   outC->_L204.nid_packet = outC->_L403;
   outC->_L204.q_dir = outC->l_qdir;
   outC->_L204.valid = outC->_L214;
@@ -218,107 +218,107 @@ void C_P027V1_tracksim_compr_body_init_TM_conversions_baseline2(
   kcg_size idx16;
 
   outC->_L406 = Q_DIR_Reverse;
-  outC->_L405 = kcg_lit_int64(0);
-  outC->_L403 = kcg_lit_int64(0);
-  outC->_L400 = kcg_lit_int64(0);
-  outC->_L396 = kcg_lit_int64(0);
-  outC->_L394.D_STATIC = kcg_lit_int64(0);
-  outC->_L394.V_STATIC = kcg_lit_int64(0);
-  outC->_L394.Q_FRONT = kcg_lit_int64(0);
-  outC->_L394.N_ITER = kcg_lit_int64(0);
+  outC->_L405 = kcg_lit_int32(0);
+  outC->_L403 = kcg_lit_int32(0);
+  outC->_L400 = kcg_lit_int32(0);
+  outC->_L396 = kcg_lit_int32(0);
+  outC->_L394.D_STATIC = kcg_lit_int32(0);
+  outC->_L394.V_STATIC = kcg_lit_int32(0);
+  outC->_L394.Q_FRONT = kcg_lit_int32(0);
+  outC->_L394.N_ITER = kcg_lit_int32(0);
   for (idx = 0; idx < 32; idx++) {
-    outC->_L394.SECTIONS_q_diff[idx].NC_DIFF = kcg_lit_int64(0);
-    outC->_L394.SECTIONS_q_diff[idx].V_DIFF = kcg_lit_int64(0);
+    outC->_L394.SECTIONS_q_diff[idx].NC_DIFF = kcg_lit_int32(0);
+    outC->_L394.SECTIONS_q_diff[idx].V_DIFF = kcg_lit_int32(0);
   }
-  outC->_L391 = kcg_lit_int64(0);
-  outC->_L387 = kcg_lit_int64(0);
+  outC->_L391 = kcg_lit_int32(0);
+  outC->_L387 = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 33; idx2++) {
-    outC->_L385[idx2].D_STATIC = kcg_lit_int64(0);
-    outC->_L385[idx2].V_STATIC = kcg_lit_int64(0);
-    outC->_L385[idx2].Q_FRONT = kcg_lit_int64(0);
-    outC->_L385[idx2].N_ITER = kcg_lit_int64(0);
+    outC->_L385[idx2].D_STATIC = kcg_lit_int32(0);
+    outC->_L385[idx2].V_STATIC = kcg_lit_int32(0);
+    outC->_L385[idx2].Q_FRONT = kcg_lit_int32(0);
+    outC->_L385[idx2].N_ITER = kcg_lit_int32(0);
     for (idx1 = 0; idx1 < 32; idx1++) {
-      outC->_L385[idx2].SECTIONS_q_diff[idx1].NC_DIFF = kcg_lit_int64(0);
-      outC->_L385[idx2].SECTIONS_q_diff[idx1].V_DIFF = kcg_lit_int64(0);
+      outC->_L385[idx2].SECTIONS_q_diff[idx1].NC_DIFF = kcg_lit_int32(0);
+      outC->_L385[idx2].SECTIONS_q_diff[idx1].V_DIFF = kcg_lit_int32(0);
     }
   }
   for (idx4 = 0; idx4 < 1; idx4++) {
-    outC->_L386[idx4].D_STATIC = kcg_lit_int64(0);
-    outC->_L386[idx4].V_STATIC = kcg_lit_int64(0);
-    outC->_L386[idx4].Q_FRONT = kcg_lit_int64(0);
-    outC->_L386[idx4].N_ITER = kcg_lit_int64(0);
+    outC->_L386[idx4].D_STATIC = kcg_lit_int32(0);
+    outC->_L386[idx4].V_STATIC = kcg_lit_int32(0);
+    outC->_L386[idx4].Q_FRONT = kcg_lit_int32(0);
+    outC->_L386[idx4].N_ITER = kcg_lit_int32(0);
     for (idx3 = 0; idx3 < 32; idx3++) {
-      outC->_L386[idx4].SECTIONS_q_diff[idx3].NC_DIFF = kcg_lit_int64(0);
-      outC->_L386[idx4].SECTIONS_q_diff[idx3].V_DIFF = kcg_lit_int64(0);
+      outC->_L386[idx4].SECTIONS_q_diff[idx3].NC_DIFF = kcg_lit_int32(0);
+      outC->_L386[idx4].SECTIONS_q_diff[idx3].V_DIFF = kcg_lit_int32(0);
     }
   }
   for (idx5 = 0; idx5 < 500; idx5++) {
-    outC->_L383[idx5] = kcg_lit_int64(0);
+    outC->_L383[idx5] = kcg_lit_int32(0);
   }
   for (idx6 = 0; idx6 < 6; idx6++) {
-    outC->_L373[idx6] = kcg_lit_int64(0);
+    outC->_L373[idx6] = kcg_lit_int32(0);
   }
   for (idx8 = 0; idx8 < 32; idx8++) {
-    outC->_L367[idx8].D_STATIC = kcg_lit_int64(0);
-    outC->_L367[idx8].V_STATIC = kcg_lit_int64(0);
-    outC->_L367[idx8].Q_FRONT = kcg_lit_int64(0);
-    outC->_L367[idx8].N_ITER = kcg_lit_int64(0);
+    outC->_L367[idx8].D_STATIC = kcg_lit_int32(0);
+    outC->_L367[idx8].V_STATIC = kcg_lit_int32(0);
+    outC->_L367[idx8].Q_FRONT = kcg_lit_int32(0);
+    outC->_L367[idx8].N_ITER = kcg_lit_int32(0);
     for (idx7 = 0; idx7 < 32; idx7++) {
-      outC->_L367[idx8].SECTIONS_q_diff[idx7].NC_DIFF = kcg_lit_int64(0);
-      outC->_L367[idx8].SECTIONS_q_diff[idx7].V_DIFF = kcg_lit_int64(0);
+      outC->_L367[idx8].SECTIONS_q_diff[idx7].NC_DIFF = kcg_lit_int32(0);
+      outC->_L367[idx8].SECTIONS_q_diff[idx7].V_DIFF = kcg_lit_int32(0);
     }
   }
-  outC->_L368 = kcg_lit_int64(0);
+  outC->_L368 = kcg_lit_int32(0);
   for (idx9 = 0; idx9 < 32; idx9++) {
-    outC->_L369[idx9].NC_DIFF = kcg_lit_int64(0);
-    outC->_L369[idx9].V_DIFF = kcg_lit_int64(0);
+    outC->_L369[idx9].NC_DIFF = kcg_lit_int32(0);
+    outC->_L369[idx9].V_DIFF = kcg_lit_int32(0);
   }
-  outC->_L370 = kcg_lit_int64(0);
-  outC->_L371 = kcg_lit_int64(0);
+  outC->_L370 = kcg_lit_int32(0);
+  outC->_L371 = kcg_lit_int32(0);
   outC->_L214 = kcg_true;
-  outC->_L215 = kcg_lit_int64(0);
-  outC->_L216 = kcg_lit_int64(0);
-  outC->_L217 = kcg_lit_int64(0);
-  outC->_L218 = kcg_lit_int64(0);
-  outC->_L219 = kcg_lit_int64(0);
-  outC->_L336 = kcg_lit_int64(0);
-  outC->_L213 = kcg_lit_int64(0);
-  outC->_L212 = kcg_lit_int64(0);
+  outC->_L215 = kcg_lit_int32(0);
+  outC->_L216 = kcg_lit_int32(0);
+  outC->_L217 = kcg_lit_int32(0);
+  outC->_L218 = kcg_lit_int32(0);
+  outC->_L219 = kcg_lit_int32(0);
+  outC->_L336 = kcg_lit_int32(0);
+  outC->_L213 = kcg_lit_int32(0);
+  outC->_L212 = kcg_lit_int32(0);
   for (idx10 = 0; idx10 < 494; idx10++) {
-    outC->_L209[idx10] = kcg_lit_int64(0);
+    outC->_L209[idx10] = kcg_lit_int32(0);
   }
-  outC->_L206 = kcg_lit_int64(0);
-  outC->_L204.nid_packet = kcg_lit_int64(0);
+  outC->_L206 = kcg_lit_int32(0);
+  outC->_L204.nid_packet = kcg_lit_int32(0);
   outC->_L204.q_dir = Q_DIR_Reverse;
   outC->_L204.valid = kcg_true;
-  outC->_L204.startAddress = kcg_lit_int64(0);
-  outC->_L204.endAddress = kcg_lit_int64(0);
+  outC->_L204.startAddress = kcg_lit_int32(0);
+  outC->_L204.endAddress = kcg_lit_int32(0);
   outC->_L1.valid = kcg_true;
-  outC->_L1.NID_PACKET = kcg_lit_int64(0);
-  outC->_L1.Q_DIR = kcg_lit_int64(0);
-  outC->_L1.L_PACKET = kcg_lit_int64(0);
-  outC->_L1.Q_SCALE = kcg_lit_int64(0);
-  outC->_L1.D_STATIC = kcg_lit_int64(0);
-  outC->_L1.V_STATIC = kcg_lit_int64(0);
-  outC->_L1.Q_FRONT = kcg_lit_int64(0);
-  outC->_L1.N_ITER_n = kcg_lit_int64(0);
+  outC->_L1.NID_PACKET = kcg_lit_int32(0);
+  outC->_L1.Q_DIR = kcg_lit_int32(0);
+  outC->_L1.L_PACKET = kcg_lit_int32(0);
+  outC->_L1.Q_SCALE = kcg_lit_int32(0);
+  outC->_L1.D_STATIC = kcg_lit_int32(0);
+  outC->_L1.V_STATIC = kcg_lit_int32(0);
+  outC->_L1.Q_FRONT = kcg_lit_int32(0);
+  outC->_L1.N_ITER_n = kcg_lit_int32(0);
   for (idx11 = 0; idx11 < 32; idx11++) {
-    outC->_L1.SECTIONS_q_diff[idx11].NC_DIFF = kcg_lit_int64(0);
-    outC->_L1.SECTIONS_q_diff[idx11].V_DIFF = kcg_lit_int64(0);
+    outC->_L1.SECTIONS_q_diff[idx11].NC_DIFF = kcg_lit_int32(0);
+    outC->_L1.SECTIONS_q_diff[idx11].V_DIFF = kcg_lit_int32(0);
   }
-  outC->_L1.N_ITER_k = kcg_lit_int64(0);
+  outC->_L1.N_ITER_k = kcg_lit_int32(0);
   for (idx13 = 0; idx13 < 32; idx13++) {
-    outC->_L1.SECTIONS_SSP[idx13].D_STATIC = kcg_lit_int64(0);
-    outC->_L1.SECTIONS_SSP[idx13].V_STATIC = kcg_lit_int64(0);
-    outC->_L1.SECTIONS_SSP[idx13].Q_FRONT = kcg_lit_int64(0);
-    outC->_L1.SECTIONS_SSP[idx13].N_ITER = kcg_lit_int64(0);
+    outC->_L1.SECTIONS_SSP[idx13].D_STATIC = kcg_lit_int32(0);
+    outC->_L1.SECTIONS_SSP[idx13].V_STATIC = kcg_lit_int32(0);
+    outC->_L1.SECTIONS_SSP[idx13].Q_FRONT = kcg_lit_int32(0);
+    outC->_L1.SECTIONS_SSP[idx13].N_ITER = kcg_lit_int32(0);
     for (idx12 = 0; idx12 < 32; idx12++) {
-      outC->_L1.SECTIONS_SSP[idx13].SECTIONS_q_diff[idx12].NC_DIFF = kcg_lit_int64(0);
-      outC->_L1.SECTIONS_SSP[idx13].SECTIONS_q_diff[idx12].V_DIFF = kcg_lit_int64(0);
+      outC->_L1.SECTIONS_SSP[idx13].SECTIONS_q_diff[idx12].NC_DIFF = kcg_lit_int32(0);
+      outC->_L1.SECTIONS_SSP[idx13].SECTIONS_q_diff[idx12].V_DIFF = kcg_lit_int32(0);
     }
   }
   outC->l_qdir = Q_DIR_Reverse;
-  outC->n_iter_k = kcg_lit_int64(0);
+  outC->n_iter_k = kcg_lit_int32(0);
   outC->_L5_CAST_Int_to_Q_DIR_1_then_IfBlock1 = kcg_true;
   outC->_L4_CAST_Int_to_Q_DIR_1_then_IfBlock1 = Q_DIR_Reverse;
   outC->_2_else_clock_CAST_Int_to_Q_DIR_1_IfBlock1 = kcg_true;
@@ -331,32 +331,32 @@ void C_P027V1_tracksim_compr_body_init_TM_conversions_baseline2(
   outC->_L5_CAST_Int_to_Q_DIR_1_then_else_IfBlock1 = kcg_true;
   outC->IfBlock1_clock_CAST_Int_to_Q_DIR_1 = kcg_true;
   outC->error_CAST_Int_to_Q_DIR_1 = kcg_true;
-  outC->q_dir_in_CAST_Int_to_Q_DIR_1 = kcg_lit_int64(0);
+  outC->q_dir_in_CAST_Int_to_Q_DIR_1 = kcg_lit_int32(0);
   outC->_L13_CAST_Int_to_Q_DIR_1 = kcg_true;
-  outC->_L12_CAST_Int_to_Q_DIR_1 = kcg_lit_int64(0);
-  outC->q_dir_int_CAST_Int_to_Q_DIR_1 = kcg_lit_int64(0);
+  outC->_L12_CAST_Int_to_Q_DIR_1 = kcg_lit_int32(0);
+  outC->q_dir_int_CAST_Int_to_Q_DIR_1 = kcg_lit_int32(0);
   outC->q_dir_CAST_Int_to_Q_DIR_1 = Q_DIR_Reverse;
   outC->q_dir = Q_DIR_Reverse;
-  outC->meta_first_section = kcg_lit_int64(0);
-  outC->n_iter_k_out = kcg_lit_int64(0);
+  outC->meta_first_section = kcg_lit_int32(0);
+  outC->n_iter_k_out = kcg_lit_int32(0);
   for (idx15 = 0; idx15 < 33; idx15++) {
-    outC->P027V1_sections[idx15].D_STATIC = kcg_lit_int64(0);
-    outC->P027V1_sections[idx15].V_STATIC = kcg_lit_int64(0);
-    outC->P027V1_sections[idx15].Q_FRONT = kcg_lit_int64(0);
-    outC->P027V1_sections[idx15].N_ITER = kcg_lit_int64(0);
+    outC->P027V1_sections[idx15].D_STATIC = kcg_lit_int32(0);
+    outC->P027V1_sections[idx15].V_STATIC = kcg_lit_int32(0);
+    outC->P027V1_sections[idx15].Q_FRONT = kcg_lit_int32(0);
+    outC->P027V1_sections[idx15].N_ITER = kcg_lit_int32(0);
     for (idx14 = 0; idx14 < 32; idx14++) {
-      outC->P027V1_sections[idx15].SECTIONS_q_diff[idx14].NC_DIFF = kcg_lit_int64(0);
-      outC->P027V1_sections[idx15].SECTIONS_q_diff[idx14].V_DIFF = kcg_lit_int64(0);
+      outC->P027V1_sections[idx15].SECTIONS_q_diff[idx14].NC_DIFF = kcg_lit_int32(0);
+      outC->P027V1_sections[idx15].SECTIONS_q_diff[idx14].V_DIFF = kcg_lit_int32(0);
     }
   }
   for (idx16 = 0; idx16 < 500; idx16++) {
-    outC->P027V1_body_compressed[idx16] = kcg_lit_int64(0);
+    outC->P027V1_body_compressed[idx16] = kcg_lit_int32(0);
   }
-  outC->Header.nid_packet = kcg_lit_int64(0);
+  outC->Header.nid_packet = kcg_lit_int32(0);
   outC->Header.q_dir = Q_DIR_Reverse;
   outC->Header.valid = kcg_true;
-  outC->Header.startAddress = kcg_lit_int64(0);
-  outC->Header.endAddress = kcg_lit_int64(0);
+  outC->Header.startAddress = kcg_lit_int32(0);
+  outC->Header.endAddress = kcg_lit_int32(0);
   /* _L403=(TM_lib_internal::T_Build_Metadata_Packet_ID#1)/ */
   T_Build_Metadata_Packet_ID_init_TM_lib_internal(
     &outC->Context_T_Build_Metadata_Packet_ID_1);

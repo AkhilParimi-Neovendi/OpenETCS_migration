@@ -19,7 +19,7 @@ void CAST_Int_to_NID_RADIO_TM_conversions(
   outC->_L1 = nid_radio_int;
   outC->Input1_NumericToInt64_1_int32 = outC->_L1;
   outC->_L1_NumericToInt64_1_int32 = outC->Input1_NumericToInt64_1_int32;
-  outC->_L2_NumericToInt64_1_int32 = /* @1/_L2= */(kcg_int64)
+  outC->_L2_NumericToInt64_1_int32 = /* @1/_L2= */(kcg_int32)
       outC->_L1_NumericToInt64_1_int32;
   outC->Output1_NumericToInt64_1_int32 = outC->_L2_NumericToInt64_1_int32;
   outC->_L6 = outC->Output1_NumericToInt64_1_int32;
@@ -36,17 +36,17 @@ void CAST_Int_to_NID_RADIO_TM_conversions(
 void CAST_Int_to_NID_RADIO_init_TM_conversions(
   outC_CAST_Int_to_NID_RADIO_TM_conversions *outC)
 {
-  outC->_L6 = kcg_lit_int64(0);
+  outC->_L6 = kcg_lit_int32(0);
   outC->_L2 = kcg_true;
   outC->_L3 = kcg_lit_int32(0);
   outC->_L4 = kcg_true;
   outC->_L5 = kcg_lit_int32(0);
   outC->_L1 = kcg_lit_int32(0);
   outC->_L1_NumericToInt64_1_int32 = kcg_lit_int32(0);
-  outC->_L2_NumericToInt64_1_int32 = kcg_lit_int64(0);
+  outC->_L2_NumericToInt64_1_int32 = kcg_lit_int32(0);
   outC->Input1_NumericToInt64_1_int32 = kcg_lit_int32(0);
-  outC->Output1_NumericToInt64_1_int32 = kcg_lit_int64(0);
-  outC->nid_radio = kcg_lit_int64(0);
+  outC->Output1_NumericToInt64_1_int32 = kcg_lit_int32(0);
+  outC->nid_radio = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _M018_to_Radio_Track_Train_H_TM_RBC_conversions_legacy_H_
 #define _M018_to_Radio_Track_Train_H_TM_RBC_conversions_legacy_H_
@@ -38,7 +38,7 @@ typedef struct {
   Q_DIR /* _L21/ */ _L21;
   D_EMERGENCYSTOP /* _L22/ */ _L22;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L25/ */ _L25;
-  kcg_int64 /* _L24/ */ _L24;
+  kcg_int32 /* _L24/ */ _L24;
   NID_EM /* _L26/ */ _L26;
 } outC_M018_to_Radio_Track_Train_H_TM_RBC_conversions_legacy;
 
@@ -64,6 +64,6 @@ extern void M018_to_Radio_Track_Train_H_init_TM_RBC_conversions_legacy(
 #endif /* _M018_to_Radio_Track_Train_H_TM_RBC_conversions_legacy_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** M018_to_Radio_Track_Train_H_TM_RBC_conversions_legacy.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

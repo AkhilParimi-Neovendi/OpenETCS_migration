@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _UtrechtAmsterdamScenarioStory00AWrapper_RBC_Scenario_Pkg_H_
 #define _UtrechtAmsterdamScenarioStory00AWrapper_RBC_Scenario_Pkg_H_
@@ -22,7 +22,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* outTriggerId/ */ outTriggerId;
+  kcg_int32 /* outTriggerId/ */ outTriggerId;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -43,8 +43,8 @@ typedef struct {
   D_LRBG /* _L9/ */ _L9;
   NID_LRBG /* _L10/ */ _L10;
   Q_SCALE /* _L11/ */ _L11;
-  kcg_float64 /* _L12/ */ _L12;
-  kcg_int64 /* _L13/ */ _L13;
+  kcg_float32 /* _L12/ */ _L12;
+  kcg_int32 /* _L13/ */ _L13;
   T_TRAIN /* _L14/ */ _L14;
   NID_BG /* _L16/ */ _L16;
   NID_C /* _L15/ */ _L15;
@@ -90,6 +90,6 @@ extern void kcg_load_SV_UtrechtAmsterdamScenarioStory00AWrapper_RBC_Scenario_Pkg
 #endif /* _UtrechtAmsterdamScenarioStory00AWrapper_RBC_Scenario_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** UtrechtAmsterdamScenarioStory00AWrapper_RBC_Scenario_Pkg.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

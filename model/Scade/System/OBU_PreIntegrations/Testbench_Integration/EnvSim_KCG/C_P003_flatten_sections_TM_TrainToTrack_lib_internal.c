@@ -39,13 +39,13 @@ void C_P003_flatten_sections_init_TM_TrainToTrack_lib_internal(
   static kcg_size idx3;
 
   for (idx1 = 0; idx1 < 5; idx1++) {
-    outC->_L74[idx1] = kcg_lit_int64(0);
+    outC->_L74[idx1] = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 5; idx2++) {
-    outC->_L75[idx2] = kcg_lit_int64(0);
+    outC->_L75[idx2] = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 5; idx3++) {
-    outC->Flattened[idx3] = kcg_lit_int64(0);
+    outC->Flattened[idx3] = kcg_lit_int32(0);
   }
   for (idx = 0; idx < 5; idx++) {
     /* _L74=(TM_TrainToTrack_lib_internal::C_P003_fs_struct_to_array#1)/ */

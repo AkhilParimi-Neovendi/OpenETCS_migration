@@ -112,8 +112,8 @@ void C_P058_tracksim_compr_TM_conversions(
   T_Build_Metadata_Packet_ID_TM_lib_internal(
     outC->_L387,
     outC->_L215,
-    kcg_lit_int64(0),
-    kcg_lit_int64(58),
+    kcg_lit_int32(0),
+    kcg_lit_int32(58),
     INT_M_VERSION_2_0_TM,
     &outC->Context_T_Build_Metadata_Packet_ID_1);
   outC->_L388 = outC->Context_T_Build_Metadata_Packet_ID_1.nid_packet_meta;
@@ -139,29 +139,29 @@ void C_P058_tracksim_compr_TM_conversions(
   outC->_L373[5] = outC->_L219;
   outC->_L373[6] = outC->_L371;
   outC->_L373[7] = outC->_L370;
-  kcg_copy_array_int64_8(&outC->_L384[0], &outC->_L373);
+  kcg_copy_array_int32_8(&outC->_L384[0], &outC->_L373);
   kcg_copy_P058_sections_array_flat_T_TM(&outC->_L384[8], &outC->_L380);
-  outC->_L336 = kcg_lit_int64(0);
+  outC->_L336 = kcg_lit_int32(0);
   /* _L209/ */
   for (idx = 0; idx < 428; idx++) {
     outC->_L209[idx] = outC->_L336;
   }
-  kcg_copy_array_int64_72(&outC->_L383[0], &outC->_L384);
-  kcg_copy_array_int64_428(&outC->_L383[72], &outC->_L209);
+  kcg_copy_array_int32_72(&outC->_L383[0], &outC->_L384);
+  kcg_copy_array_int32_428(&outC->_L383[72], &outC->_L209);
   /* _L379=(TM_lib_internal::T_DeterminePacketSizeInt#1)/ */
   T_DeterminePacketSizeInt_TM_lib_internal(
     outC->_L370,
-    kcg_lit_int64(8),
-    kcg_lit_int64(2),
+    kcg_lit_int32(8),
+    kcg_lit_int32(2),
     &outC->Context_T_DeterminePacketSizeInt_1);
   outC->_L379 = outC->Context_T_DeterminePacketSizeInt_1.p_size;
   outC->p_size = outC->_L379;
   outC->_L378 = outC->p_size;
   outC->_L356 = outC->q_dir_CAST_Int_to_Q_DIR_1;
   outC->_L214 = outC->_L1.valid;
-  outC->_L213 = kcg_lit_int64(1);
+  outC->_L213 = kcg_lit_int32(1);
   outC->_L212 = outC->_L378 - outC->_L213;
-  outC->_L206 = kcg_lit_int64(0);
+  outC->_L206 = kcg_lit_int32(0);
   outC->_L204.nid_packet = outC->_L388;
   outC->_L204.q_dir = outC->_L356;
   outC->_L204.valid = outC->_L214;
@@ -186,61 +186,61 @@ void C_P058_tracksim_compr_init_TM_conversions(
   kcg_size idx6;
   kcg_size idx7;
 
-  outC->_L388 = kcg_lit_int64(0);
-  outC->_L387 = kcg_lit_int64(0);
+  outC->_L388 = kcg_lit_int32(0);
+  outC->_L387 = kcg_lit_int32(0);
   for (idx = 0; idx < 72; idx++) {
-    outC->_L384[idx] = kcg_lit_int64(0);
+    outC->_L384[idx] = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 500; idx1++) {
-    outC->_L383[idx1] = kcg_lit_int64(0);
+    outC->_L383[idx1] = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 64; idx2++) {
-    outC->_L380[idx2] = kcg_lit_int64(0);
+    outC->_L380[idx2] = kcg_lit_int32(0);
   }
-  outC->_L379 = kcg_lit_int64(0);
-  outC->_L378 = kcg_lit_int64(0);
+  outC->_L379 = kcg_lit_int32(0);
+  outC->_L378 = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 8; idx3++) {
-    outC->_L373[idx3] = kcg_lit_int64(0);
+    outC->_L373[idx3] = kcg_lit_int32(0);
   }
   for (idx4 = 0; idx4 < 32; idx4++) {
-    outC->_L369[idx4].D_LOC = kcg_lit_int64(0);
-    outC->_L369[idx4].Q_LGTLOC = kcg_lit_int64(0);
+    outC->_L369[idx4].D_LOC = kcg_lit_int32(0);
+    outC->_L369[idx4].Q_LGTLOC = kcg_lit_int32(0);
   }
-  outC->_L370 = kcg_lit_int64(0);
-  outC->_L371 = kcg_lit_int64(0);
+  outC->_L370 = kcg_lit_int32(0);
+  outC->_L371 = kcg_lit_int32(0);
   outC->_L356 = Q_DIR_Reverse;
   outC->_L214 = kcg_true;
-  outC->_L215 = kcg_lit_int64(0);
-  outC->_L216 = kcg_lit_int64(0);
-  outC->_L217 = kcg_lit_int64(0);
-  outC->_L218 = kcg_lit_int64(0);
-  outC->_L219 = kcg_lit_int64(0);
-  outC->_L336 = kcg_lit_int64(0);
-  outC->_L213 = kcg_lit_int64(0);
-  outC->_L212 = kcg_lit_int64(0);
+  outC->_L215 = kcg_lit_int32(0);
+  outC->_L216 = kcg_lit_int32(0);
+  outC->_L217 = kcg_lit_int32(0);
+  outC->_L218 = kcg_lit_int32(0);
+  outC->_L219 = kcg_lit_int32(0);
+  outC->_L336 = kcg_lit_int32(0);
+  outC->_L213 = kcg_lit_int32(0);
+  outC->_L212 = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 428; idx5++) {
-    outC->_L209[idx5] = kcg_lit_int64(0);
+    outC->_L209[idx5] = kcg_lit_int32(0);
   }
-  outC->_L206 = kcg_lit_int64(0);
-  outC->_L204.nid_packet = kcg_lit_int64(0);
+  outC->_L206 = kcg_lit_int32(0);
+  outC->_L204.nid_packet = kcg_lit_int32(0);
   outC->_L204.q_dir = Q_DIR_Reverse;
   outC->_L204.valid = kcg_true;
-  outC->_L204.startAddress = kcg_lit_int64(0);
-  outC->_L204.endAddress = kcg_lit_int64(0);
+  outC->_L204.startAddress = kcg_lit_int32(0);
+  outC->_L204.endAddress = kcg_lit_int32(0);
   outC->_L1.valid = kcg_true;
-  outC->_L1.NID_PACKET = kcg_lit_int64(0);
-  outC->_L1.Q_DIR = kcg_lit_int64(0);
-  outC->_L1.L_PACKET = kcg_lit_int64(0);
-  outC->_L1.Q_SCALE = kcg_lit_int64(0);
-  outC->_L1.T_CYCLOC = kcg_lit_int64(0);
-  outC->_L1.D_CYCLOC = kcg_lit_int64(0);
-  outC->_L1.M_LOC = kcg_lit_int64(0);
-  outC->_L1.N_ITER = kcg_lit_int64(0);
+  outC->_L1.NID_PACKET = kcg_lit_int32(0);
+  outC->_L1.Q_DIR = kcg_lit_int32(0);
+  outC->_L1.L_PACKET = kcg_lit_int32(0);
+  outC->_L1.Q_SCALE = kcg_lit_int32(0);
+  outC->_L1.T_CYCLOC = kcg_lit_int32(0);
+  outC->_L1.D_CYCLOC = kcg_lit_int32(0);
+  outC->_L1.M_LOC = kcg_lit_int32(0);
+  outC->_L1.N_ITER = kcg_lit_int32(0);
   for (idx6 = 0; idx6 < 32; idx6++) {
-    outC->_L1.SECTIONS[idx6].D_LOC = kcg_lit_int64(0);
-    outC->_L1.SECTIONS[idx6].Q_LGTLOC = kcg_lit_int64(0);
+    outC->_L1.SECTIONS[idx6].D_LOC = kcg_lit_int32(0);
+    outC->_L1.SECTIONS[idx6].Q_LGTLOC = kcg_lit_int32(0);
   }
-  outC->p_size = kcg_lit_int64(0);
+  outC->p_size = kcg_lit_int32(0);
   outC->_L5_CAST_Int_to_Q_DIR_1_then_IfBlock1 = kcg_true;
   outC->_L4_CAST_Int_to_Q_DIR_1_then_IfBlock1 = Q_DIR_Reverse;
   outC->_1_else_clock_CAST_Int_to_Q_DIR_1_IfBlock1 = kcg_true;
@@ -253,19 +253,19 @@ void C_P058_tracksim_compr_init_TM_conversions(
   outC->_L5_CAST_Int_to_Q_DIR_1_then_else_IfBlock1 = kcg_true;
   outC->IfBlock1_clock_CAST_Int_to_Q_DIR_1 = kcg_true;
   outC->error_CAST_Int_to_Q_DIR_1 = kcg_true;
-  outC->q_dir_in_CAST_Int_to_Q_DIR_1 = kcg_lit_int64(0);
+  outC->q_dir_in_CAST_Int_to_Q_DIR_1 = kcg_lit_int32(0);
   outC->_L13_CAST_Int_to_Q_DIR_1 = kcg_true;
-  outC->_L12_CAST_Int_to_Q_DIR_1 = kcg_lit_int64(0);
-  outC->q_dir_int_CAST_Int_to_Q_DIR_1 = kcg_lit_int64(0);
+  outC->_L12_CAST_Int_to_Q_DIR_1 = kcg_lit_int32(0);
+  outC->q_dir_int_CAST_Int_to_Q_DIR_1 = kcg_lit_int32(0);
   outC->q_dir_CAST_Int_to_Q_DIR_1 = Q_DIR_Reverse;
   for (idx7 = 0; idx7 < 500; idx7++) {
-    outC->P005_compressed[idx7] = kcg_lit_int64(0);
+    outC->P005_compressed[idx7] = kcg_lit_int32(0);
   }
-  outC->Header.nid_packet = kcg_lit_int64(0);
+  outC->Header.nid_packet = kcg_lit_int32(0);
   outC->Header.q_dir = Q_DIR_Reverse;
   outC->Header.valid = kcg_true;
-  outC->Header.startAddress = kcg_lit_int64(0);
-  outC->Header.endAddress = kcg_lit_int64(0);
+  outC->Header.startAddress = kcg_lit_int32(0);
+  outC->Header.endAddress = kcg_lit_int32(0);
   /* _L379=(TM_lib_internal::T_DeterminePacketSizeInt#1)/ */
   T_DeterminePacketSizeInt_init_TM_lib_internal(
     &outC->Context_T_DeterminePacketSizeInt_1);

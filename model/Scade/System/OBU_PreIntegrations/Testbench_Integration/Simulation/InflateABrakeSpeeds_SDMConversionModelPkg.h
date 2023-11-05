@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _InflateABrakeSpeeds_SDMConversionModelPkg_H_
 #define _InflateABrakeSpeeds_SDMConversionModelPkg_H_
@@ -27,7 +27,7 @@ typedef struct {
   V_internal_Type_Obu_BasicTypes_Pkg /* _L1/ */ _L1;
   V_internal_real_Type_SDM_Types_Pkg /* _L2/ */ _L2;
   kcg_bool /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   V_internal_Type_Obu_BasicTypes_Pkg /* _L6/ */ _L6;
   V_internal_Type_Obu_BasicTypes_Pkg /* _L7/ */ _L7;
 } outC_InflateABrakeSpeeds_SDMConversionModelPkg;
@@ -56,6 +56,6 @@ extern void InflateABrakeSpeeds_init_SDMConversionModelPkg(
 #endif /* _InflateABrakeSpeeds_SDMConversionModelPkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** InflateABrakeSpeeds_SDMConversionModelPkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

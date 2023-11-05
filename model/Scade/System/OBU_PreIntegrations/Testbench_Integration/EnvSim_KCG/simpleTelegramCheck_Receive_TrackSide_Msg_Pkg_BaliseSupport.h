@@ -26,7 +26,7 @@ typedef struct {
   kcg_bool /* _L2/ */ _L2;
   N_PIG /* _L3/ */ _L3;
   Telegram_T_BG_Types_Pkg /* _L1/ */ _L1;
-  kcg_int64 /* _L8/ */ _L8;
+  kcg_int32 /* _L8/ */ _L8;
   kcg_bool /* _L12/ */ _L12;
   kcg_bool /* _L13/ */ _L13;
   kcg_bool /* _L14/ */ _L14;
@@ -38,7 +38,7 @@ typedef struct {
 /* Receive_TrackSide_Msg_Pkg::BaliseSupport::simpleTelegramCheck/ */
 extern void simpleTelegramCheck_Receive_TrackSide_Msg_Pkg_BaliseSupport(
   /* iteratorIndex/ */
-  kcg_int64 iteratorIndex,
+  kcg_int32 iteratorIndex,
   /* accu/ */
   kcg_bool accu,
   /* telegram/ */

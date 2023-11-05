@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _C_compr_P003_TM_TrainToTrack_H_
 #define _C_compr_P003_TM_TrainToTrack_H_
@@ -39,19 +39,19 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   P003_TrainTrack_int_TM_TrainToTrack /* _L1/ */ _L1;
-  kcg_int64 /* _L69/ */ _L69;
-  kcg_int64 /* _L70/ */ _L70;
-  kcg_int64 /* _L71/ */ _L71;
-  array_int64_3 /* _L94/ */ _L94;
-  kcg_int64 /* _L100/ */ _L100;
-  kcg_int64 /* _L99/ */ _L99;
-  kcg_int64 /* _L98/ */ _L98;
+  kcg_int32 /* _L69/ */ _L69;
+  kcg_int32 /* _L70/ */ _L70;
+  kcg_int32 /* _L71/ */ _L71;
+  array_int32_3 /* _L94/ */ _L94;
+  kcg_int32 /* _L100/ */ _L100;
+  kcg_int32 /* _L99/ */ _L99;
+  kcg_int32 /* _L98/ */ _L98;
   P003_TM_TrainToTrack /* _L103/ */ _L103;
-  array_int64_5 /* _L104/ */ _L104;
+  array_int32_5 /* _L104/ */ _L104;
   kcg_bool /* _L105/ */ _L105;
-  kcg_int64 /* _L106/ */ _L106;
-  kcg_int64 /* _L107/ */ _L107;
-  kcg_int64 /* _L108/ */ _L108;
+  kcg_int32 /* _L106/ */ _L106;
+  kcg_int32 /* _L107/ */ _L107;
+  kcg_int32 /* _L108/ */ _L108;
 } outC_C_compr_P003_TM_TrainToTrack;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -93,6 +93,6 @@ extern void kcg_load_SV_C_compr_P003_TM_TrainToTrack(
 #endif /* _C_compr_P003_TM_TrainToTrack_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_compr_P003_TM_TrainToTrack.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

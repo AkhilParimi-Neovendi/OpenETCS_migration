@@ -26,7 +26,7 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   MRSP_internal_section_T_TargetManagement_types /* _L1/ */ _L1;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   kcg_bool /* _L4/ */ _L4;
   kcg_bool /* _L10/ */ _L10;
   V_internal_real_Type_SDM_Types_Pkg /* _L9/ */ _L9;
@@ -42,22 +42,22 @@ typedef struct {
   _100_array /* _L28/ */ _L28;
   MRSP_internal_section_T_TargetManagement_types /* _L39/ */ _L39;
   kcg_bool /* _L40/ */ _L40;
-  kcg_float64 /* _L41/ */ _L41;
+  kcg_float32 /* _L41/ */ _L41;
   ParabolaCurve_T_CalcBrakingCurves_types /* _L68/ */ _L68;
   ParabolaCurve_T_CalcBrakingCurves_types /* _L69/ */ _L69;
   T_trac_t_TargetLimits_Pkg /* _L70/ */ _L70;
   T_trac_t_TargetLimits_Pkg /* _L71/ */ _L71;
   T_trac_t_TargetLimits_Pkg /* _L72/ */ _L72;
-  kcg_float64 /* _L73/ */ _L73;
+  kcg_float32 /* _L73/ */ _L73;
   T_internal_real_Type_SDM_Types_Pkg /* _L74/ */ _L74;
   T_trac_t_TargetLimits_Pkg /* _L75/ */ _L75;
   T_trac_t_TargetLimits_Pkg /* _L76/ */ _L76;
   kcg_bool /* _L77/ */ _L77;
   T_trac_t_TargetLimits_Pkg /* _L81/ */ _L81;
-  kcg_float64 /* _L83/ */ _L83;
-  kcg_float64 /* _L85/ */ _L85;
+  kcg_float32 /* _L83/ */ _L83;
+  kcg_float32 /* _L85/ */ _L85;
   T_internal_real_Type_SDM_Types_Pkg /* _L84/ */ _L84;
-  kcg_float64 /* _L86/ */ _L86;
+  kcg_float32 /* _L86/ */ _L86;
 } outC_MRSPPreindicationSelector_TargetLimits_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

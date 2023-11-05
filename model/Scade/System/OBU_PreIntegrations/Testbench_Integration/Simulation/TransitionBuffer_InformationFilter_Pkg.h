@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _TransitionBuffer_InformationFilter_Pkg_H_
 #define _TransitionBuffer_InformationFilter_Pkg_H_
@@ -18,10 +18,10 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   ReceivedMessage_T_Common_Types_Pkg /* Out/ */ Out;
-  kcg_int64 /* outStacksize/ */ outStacksize;
+  kcg_int32 /* outStacksize/ */ outStacksize;
   /* -----------------------  no local probes  ----------------------- */
   /* ----------------------- local memories  ------------------------- */
-  kcg_int64 /* stacksize/ */ stacksize;
+  kcg_int32 /* stacksize/ */ stacksize;
   TransitionBuffer_T_InformationFilter_Pkg /* buffer/ */ buffer;
   /* ---------------------  sub nodes' contexts  --------------------- */
   outC_TransitionBuffer_read_only_InformationFilter_Pkg /* IfBlock1:then:_L14=(InformationFilter_Pkg::TransitionBuffer_read_only#2)/ */ Context_TransitionBuffer_read_only_2;
@@ -35,31 +35,31 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   kcg_bool /* IfBlock1:then:_L15/ */ _L15_then_IfBlock1;
   ReceivedMessage_T_Common_Types_Pkg /* IfBlock1:then:_L12/ */ _L12_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L13/ */ _L13_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L13/ */ _L13_then_IfBlock1;
   TransitionBuffer_T_InformationFilter_Pkg /* IfBlock1:then:_L14/ */ _L14_then_IfBlock1;
   ReceivedMessage_T_Common_Types_Pkg /* IfBlock1:then:_L5/ */ _L5_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
   TransitionBuffer_T_InformationFilter_Pkg /* IfBlock1:then:_L2/ */ _L2_then_IfBlock1;
   kcg_bool /* IfBlock1:else:else:then:_L11/ */ _L11_then_else_else_IfBlock1;
   ReceivedMessage_T_Common_Types_Pkg /* IfBlock1:else:else:then:_L8/ */ _L8_then_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:then:_L9/ */ _L9_then_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:then:_L9/ */ _L9_then_else_else_IfBlock1;
   TransitionBuffer_T_InformationFilter_Pkg /* IfBlock1:else:else:then:_L10/ */ _L10_then_else_else_IfBlock1;
   ReceivedMessage_T_Common_Types_Pkg /* IfBlock1:else:else:then:_L4/ */ _L4_then_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:then:_L3/ */ _L3_then_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:then:_L3/ */ _L3_then_else_else_IfBlock1;
   TransitionBuffer_T_InformationFilter_Pkg /* IfBlock1:else:else:then:_L1/ */ _L1_then_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:else:_L11/ */ _L11_else_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:else:_L10/ */ _L10_else_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:else:_L11/ */ _L11_else_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:else:_L10/ */ _L10_else_else_else_IfBlock1;
   TransitionBuffer_T_InformationFilter_Pkg /* IfBlock1:else:else:else:_L9/ */ _L9_else_else_else_IfBlock1;
   TransitionBuffer_T_InformationFilter_Pkg /* IfBlock1:else:else:else:_L7/ */ _L7_else_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:else:_L6/ */ _L6_else_else_else_IfBlock1;
   ReceivedMessage_T_Common_Types_Pkg /* IfBlock1:else:else:else:_L5/ */ _L5_else_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:else:_L4/ */ _L4_else_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:else:_L4/ */ _L4_else_else_else_IfBlock1;
   TransitionBuffer_T_InformationFilter_Pkg /* IfBlock1:else:else:else:_L1/ */ _L1_else_else_else_IfBlock1;
   TransitionBuffer_T_InformationFilter_Pkg /* IfBlock1:else:then:_L1/ */ _L1_then_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L3/ */ _L3_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L3/ */ _L3_then_else_IfBlock1;
   ReceivedMessage_T_Common_Types_Pkg /* IfBlock1:else:then:_L4/ */ _L4_then_else_IfBlock1;
   TransitionBuffer_T_InformationFilter_Pkg /* IfBlock1:else:then:_L10/ */ _L10_then_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L9/ */ _L9_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L9/ */ _L9_then_else_IfBlock1;
   ReceivedMessage_T_Common_Types_Pkg /* IfBlock1:else:then:_L8/ */ _L8_then_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L11/ */ _L11_then_else_IfBlock1;
   kcg_bool /* c_w/ */ c_w;
@@ -73,7 +73,7 @@ typedef struct {
   kcg_bool /* _L3/ */ _L3;
   kcg_bool /* _L2/ */ _L2;
   kcg_bool /* _L1/ */ _L1;
-  kcg_int64 /* _L9/ */ _L9;
+  kcg_int32 /* _L9/ */ _L9;
 } outC_TransitionBuffer_InformationFilter_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -102,7 +102,7 @@ typedef struct {
   /* --------------------- no memorised outputs  --------------------- */
   /* ----------------------- local memories  ------------------------- */
   TransitionBuffer_T_InformationFilter_Pkg /* buffer/ */ Context_buffer;
-  kcg_int64 /* stacksize/ */ Context_stacksize;
+  kcg_int32 /* stacksize/ */ Context_stacksize;
   /* -----------------------  no local probes  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
 } SV_TransitionBuffer_InformationFilter_Pkg;
@@ -119,6 +119,6 @@ extern void kcg_load_SV_TransitionBuffer_InformationFilter_Pkg(
 #endif /* _TransitionBuffer_InformationFilter_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** TransitionBuffer_InformationFilter_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

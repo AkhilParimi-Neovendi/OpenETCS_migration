@@ -10,12 +10,12 @@
 /* Utilities::BCD_to_Int/ */
 void BCD_to_Int_Utilities(
   /* bcd_in/ */
-  kcg_int64 bcd_in,
+  kcg_int32 bcd_in,
   outC_BCD_to_Int_Utilities *outC)
 {
   outC->_L1 = bcd_in;
-  outC->_L4 = kcg_lit_int64(9);
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L4 = kcg_lit_int32(9);
+  outC->_L5 = kcg_lit_int32(0);
   /* _L3=(Utilities::Int_Check#1)/ */
   Int_Check_Utilities(
     outC->_L1,
@@ -30,12 +30,12 @@ void BCD_to_Int_Utilities(
 #ifndef KCG_USER_DEFINED_INIT
 void BCD_to_Int_init_Utilities(outC_BCD_to_Int_Utilities *outC)
 {
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->_L3 = kcg_true;
-  outC->_L1 = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
   outC->error = kcg_true;
-  outC->int_out = kcg_lit_int64(0);
+  outC->int_out = kcg_lit_int32(0);
   /* _L3=(Utilities::Int_Check#1)/ */
   Int_Check_init_Utilities(&outC->Context_Int_Check_1);
 }

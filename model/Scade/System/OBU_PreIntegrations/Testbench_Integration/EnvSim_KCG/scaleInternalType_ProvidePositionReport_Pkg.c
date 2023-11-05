@@ -12,7 +12,7 @@ void scaleInternalType_ProvidePositionReport_Pkg(
   /* scale/ */
   Q_SCALE scale,
   /* internalValue/ */
-  kcg_int64 internalValue,
+  kcg_int32 internalValue,
   outC_scaleInternalType_ProvidePositionReport_Pkg *outC)
 {
   outC->_L12 = internalValue;
@@ -45,16 +45,16 @@ void scaleInternalType_ProvidePositionReport_Pkg(
 void scaleInternalType_init_ProvidePositionReport_Pkg(
   outC_scaleInternalType_ProvidePositionReport_Pkg *outC)
 {
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L1 = Q_SCALE_10_cm_scale;
-  outC->scaledValue = kcg_lit_int64(0);
+  outC->scaledValue = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

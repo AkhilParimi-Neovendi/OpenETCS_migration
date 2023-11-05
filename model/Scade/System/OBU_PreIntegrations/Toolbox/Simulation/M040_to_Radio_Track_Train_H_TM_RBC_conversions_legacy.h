@@ -35,7 +35,7 @@ typedef struct {
   T_TRAIN /* _L19/ */ _L19;
   D_EMERGENCYSTOP /* _L22/ */ _L22;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L25/ */ _L25;
-  kcg_int64 /* _L24/ */ _L24;
+  kcg_int32 /* _L24/ */ _L24;
   M_VERSION /* _L31/ */ _L31;
   D_REF /* _L32/ */ _L32;
   Q_DIR /* _L33/ */ _L33;

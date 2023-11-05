@@ -12,47 +12,47 @@ void nextIndex_CalcBrakingCurves_Pkg_internalOperators(
   /* upwards/ */
   kcg_bool upwards,
   /* currentIndex/ */
-  kcg_int64 currentIndex,
+  kcg_int32 currentIndex,
   /* limit/ */
-  kcg_int64 limit,
+  kcg_int32 limit,
   outC_nextIndex_CalcBrakingCurves_Pkg_internalOperators *outC)
 {
-  outC->_L4 = kcg_lit_int64(0);
-  outC->I2_Max_1_int64 = outC->_L4;
-  outC->_L2_Max_1_int64 = outC->I2_Max_1_int64;
-  outC->_L7 = kcg_lit_int64(1);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->I2_Max_1_int32 = outC->_L4;
+  outC->_L2_Max_1_int32 = outC->I2_Max_1_int32;
+  outC->_L7 = kcg_lit_int32(1);
   outC->_L2 = currentIndex;
   outC->_L6 = outC->_L2 - outC->_L7;
-  outC->I1_Max_1_int64 = outC->_L6;
-  outC->_L1_Max_1_int64 = outC->I1_Max_1_int64;
-  outC->_L3_Max_1_int64 = outC->_L1_Max_1_int64 >= outC->_L2_Max_1_int64;
+  outC->I1_Max_1_int32 = outC->_L6;
+  outC->_L1_Max_1_int32 = outC->I1_Max_1_int32;
+  outC->_L3_Max_1_int32 = outC->_L1_Max_1_int32 >= outC->_L2_Max_1_int32;
   /* @1/_L4= */
-  if (outC->_L3_Max_1_int64) {
-    outC->_L4_Max_1_int64 = outC->_L1_Max_1_int64;
+  if (outC->_L3_Max_1_int32) {
+    outC->_L4_Max_1_int32 = outC->_L1_Max_1_int32;
   }
   else {
-    outC->_L4_Max_1_int64 = outC->_L2_Max_1_int64;
+    outC->_L4_Max_1_int32 = outC->_L2_Max_1_int32;
   }
-  outC->Ma_Output_Max_1_int64 = outC->_L4_Max_1_int64;
-  outC->_L15 = kcg_lit_int64(1);
+  outC->Ma_Output_Max_1_int32 = outC->_L4_Max_1_int32;
+  outC->_L15 = kcg_lit_int32(1);
   outC->_L16 = outC->_L15 + outC->_L2;
-  outC->I2_Min_1_int64 = outC->_L16;
-  outC->_L22_Min_1_int64 = outC->I2_Min_1_int64;
+  outC->I2_Min_1_int32 = outC->_L16;
+  outC->_L22_Min_1_int32 = outC->I2_Min_1_int32;
   outC->_L22 = limit;
   outC->_L21 = outC->_L22 - outC->_L15;
-  outC->I1_Min_1_int64 = outC->_L21;
-  outC->_L21_Min_1_int64 = outC->I1_Min_1_int64;
-  outC->_L25_Min_1_int64 = outC->_L21_Min_1_int64 <= outC->_L22_Min_1_int64;
+  outC->I1_Min_1_int32 = outC->_L21;
+  outC->_L21_Min_1_int32 = outC->I1_Min_1_int32;
+  outC->_L25_Min_1_int32 = outC->_L21_Min_1_int32 <= outC->_L22_Min_1_int32;
   /* @2/_L24= */
-  if (outC->_L25_Min_1_int64) {
-    outC->_L24_Min_1_int64 = outC->_L21_Min_1_int64;
+  if (outC->_L25_Min_1_int32) {
+    outC->_L24_Min_1_int32 = outC->_L21_Min_1_int32;
   }
   else {
-    outC->_L24_Min_1_int64 = outC->_L22_Min_1_int64;
+    outC->_L24_Min_1_int32 = outC->_L22_Min_1_int32;
   }
-  outC->Mi_Output_Min_1_int64 = outC->_L24_Min_1_int64;
-  outC->_L14 = outC->Mi_Output_Min_1_int64;
-  outC->_L5 = outC->Ma_Output_Max_1_int64;
+  outC->Mi_Output_Min_1_int32 = outC->_L24_Min_1_int32;
+  outC->_L14 = outC->Mi_Output_Min_1_int32;
+  outC->_L5 = outC->Ma_Output_Max_1_int32;
   outC->_L1 = upwards;
   /* _L3= */
   if (outC->_L1) {
@@ -68,33 +68,33 @@ void nextIndex_CalcBrakingCurves_Pkg_internalOperators(
 void nextIndex_init_CalcBrakingCurves_Pkg_internalOperators(
   outC_nextIndex_CalcBrakingCurves_Pkg_internalOperators *outC)
 {
-  outC->_L22 = kcg_lit_int64(0);
-  outC->_L21 = kcg_lit_int64(0);
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L15 = kcg_lit_int64(0);
-  outC->_L16 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L22 = kcg_lit_int32(0);
+  outC->_L21 = kcg_lit_int32(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L15 = kcg_lit_int32(0);
+  outC->_L16 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L1 = kcg_true;
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L21_Min_1_int64 = kcg_lit_int64(0);
-  outC->_L22_Min_1_int64 = kcg_lit_int64(0);
-  outC->_L24_Min_1_int64 = kcg_lit_int64(0);
-  outC->_L25_Min_1_int64 = kcg_true;
-  outC->I1_Min_1_int64 = kcg_lit_int64(0);
-  outC->I2_Min_1_int64 = kcg_lit_int64(0);
-  outC->Mi_Output_Min_1_int64 = kcg_lit_int64(0);
-  outC->_L1_Max_1_int64 = kcg_lit_int64(0);
-  outC->_L2_Max_1_int64 = kcg_lit_int64(0);
-  outC->_L3_Max_1_int64 = kcg_true;
-  outC->_L4_Max_1_int64 = kcg_lit_int64(0);
-  outC->I1_Max_1_int64 = kcg_lit_int64(0);
-  outC->I2_Max_1_int64 = kcg_lit_int64(0);
-  outC->Ma_Output_Max_1_int64 = kcg_lit_int64(0);
-  outC->nextIndex = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L21_Min_1_int32 = kcg_lit_int32(0);
+  outC->_L22_Min_1_int32 = kcg_lit_int32(0);
+  outC->_L24_Min_1_int32 = kcg_lit_int32(0);
+  outC->_L25_Min_1_int32 = kcg_true;
+  outC->I1_Min_1_int32 = kcg_lit_int32(0);
+  outC->I2_Min_1_int32 = kcg_lit_int32(0);
+  outC->Mi_Output_Min_1_int32 = kcg_lit_int32(0);
+  outC->_L1_Max_1_int32 = kcg_lit_int32(0);
+  outC->_L2_Max_1_int32 = kcg_lit_int32(0);
+  outC->_L3_Max_1_int32 = kcg_true;
+  outC->_L4_Max_1_int32 = kcg_lit_int32(0);
+  outC->I1_Max_1_int32 = kcg_lit_int32(0);
+  outC->I2_Max_1_int32 = kcg_lit_int32(0);
+  outC->Ma_Output_Max_1_int32 = kcg_lit_int32(0);
+  outC->nextIndex = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

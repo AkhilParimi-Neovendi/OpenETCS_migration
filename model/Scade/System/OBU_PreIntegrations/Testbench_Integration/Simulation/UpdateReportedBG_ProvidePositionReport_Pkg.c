@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -53,41 +53,41 @@ void UpdateReportedBG_ProvidePositionReport_Pkg(
 void UpdateReportedBG_init_ProvidePositionReport_Pkg(
   outC_UpdateReportedBG_ProvidePositionReport_Pkg *outC)
 {
-  outC->_L52.nominal = kcg_lit_int64(0);
-  outC->_L52.d_min = kcg_lit_int64(0);
-  outC->_L52.d_max = kcg_lit_int64(0);
-  outC->_L37 = kcg_lit_int64(0);
-  outC->_L38 = kcg_lit_int64(0);
-  outC->_L39 = kcg_lit_int64(0);
+  outC->_L52.nominal = kcg_lit_int32(0);
+  outC->_L52.d_min = kcg_lit_int32(0);
+  outC->_L52.d_max = kcg_lit_int32(0);
+  outC->_L37 = kcg_lit_int32(0);
+  outC->_L38 = kcg_lit_int32(0);
+  outC->_L39 = kcg_lit_int32(0);
   outC->_L27 = kcg_true;
   outC->_L26 = kcg_true;
   outC->_L25 = kcg_true;
   outC->_L24.valid = kcg_true;
-  outC->_L24.nidBG = kcg_lit_int64(0);
-  outC->_L24.location.nominal = kcg_lit_int64(0);
-  outC->_L24.location.d_min = kcg_lit_int64(0);
-  outC->_L24.location.d_max = kcg_lit_int64(0);
+  outC->_L24.nidBG = kcg_lit_int32(0);
+  outC->_L24.location.nominal = kcg_lit_int32(0);
+  outC->_L24.location.d_min = kcg_lit_int32(0);
+  outC->_L24.location.d_max = kcg_lit_int32(0);
   outC->_L11.valid = kcg_true;
-  outC->_L11.nidBG = kcg_lit_int64(0);
-  outC->_L11.location.nominal = kcg_lit_int64(0);
-  outC->_L11.location.d_min = kcg_lit_int64(0);
-  outC->_L11.location.d_max = kcg_lit_int64(0);
+  outC->_L11.nidBG = kcg_lit_int32(0);
+  outC->_L11.location.nominal = kcg_lit_int32(0);
+  outC->_L11.location.d_min = kcg_lit_int32(0);
+  outC->_L11.location.d_max = kcg_lit_int32(0);
   outC->_L10 = kcg_true;
   outC->_L1.valid = kcg_true;
-  outC->_L1.nidBG = kcg_lit_int64(0);
-  outC->_L1.location.nominal = kcg_lit_int64(0);
-  outC->_L1.location.d_min = kcg_lit_int64(0);
-  outC->_L1.location.d_max = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L9.o_nominal = kcg_lit_int64(0);
-  outC->_L9.o_min = kcg_lit_int64(0);
-  outC->_L9.o_max = kcg_lit_int64(0);
+  outC->_L1.nidBG = kcg_lit_int32(0);
+  outC->_L1.location.nominal = kcg_lit_int32(0);
+  outC->_L1.location.d_min = kcg_lit_int32(0);
+  outC->_L1.location.d_max = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L9.o_nominal = kcg_lit_int32(0);
+  outC->_L9.o_min = kcg_lit_int32(0);
+  outC->_L9.o_max = kcg_lit_int32(0);
   outC->out_reportedBG.valid = kcg_true;
-  outC->out_reportedBG.nidBG = kcg_lit_int64(0);
-  outC->out_reportedBG.location.nominal = kcg_lit_int64(0);
-  outC->out_reportedBG.location.d_min = kcg_lit_int64(0);
-  outC->out_reportedBG.location.d_max = kcg_lit_int64(0);
+  outC->out_reportedBG.nidBG = kcg_lit_int32(0);
+  outC->out_reportedBG.location.nominal = kcg_lit_int32(0);
+  outC->out_reportedBG.location.d_min = kcg_lit_int32(0);
+  outC->out_reportedBG.location.d_max = kcg_lit_int32(0);
   outC->found = kcg_true;
 }
 #endif /* KCG_USER_DEFINED_INIT */
@@ -104,6 +104,6 @@ void UpdateReportedBG_reset_ProvidePositionReport_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** UpdateReportedBG_ProvidePositionReport_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

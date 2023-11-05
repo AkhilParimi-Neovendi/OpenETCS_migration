@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _CheckCompleteness_CheckBGConsistency_Pkg_H_
 #define _CheckCompleteness_CheckBGConsistency_Pkg_H_
@@ -40,16 +40,16 @@ typedef struct {
   TelegramArray_T_BG_Types_Pkg /* IfBlock1:else:then:_L3/ */ _L3_then_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L1/ */ _L1_then_else_IfBlock1;
   Telegram_T_BG_Types_Pkg /* IfBlock1:else:then:_L2/ */ _L2_then_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L5/ */ _L5_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L5/ */ _L5_then_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L7/ */ _L7_then_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L8/ */ _L8_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L8/ */ _L8_then_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L9/ */ _L9_then_else_IfBlock1;
-  kcg_int64 /* numberOfBalises/ */ numberOfBalises;
-  kcg_int64 /* nTotal/ */ nTotal;
+  kcg_int32 /* numberOfBalises/ */ numberOfBalises;
+  kcg_int32 /* nTotal/ */ nTotal;
   BG_Message_T_BG_Types_Pkg /* _L1/ */ _L1;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   N_TOTAL /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
 } outC_CheckCompleteness_CheckBGConsistency_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -74,6 +74,6 @@ extern void CheckCompleteness_init_CheckBGConsistency_Pkg(
 #endif /* _CheckCompleteness_CheckBGConsistency_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CheckCompleteness_CheckBGConsistency_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

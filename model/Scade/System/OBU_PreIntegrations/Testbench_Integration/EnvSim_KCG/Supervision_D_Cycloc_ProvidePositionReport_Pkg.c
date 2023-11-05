@@ -25,7 +25,7 @@ void Supervision_D_Cycloc_ProvidePositionReport_Pkg(
 void Supervision_D_Cycloc_init_ProvidePositionReport_Pkg(
   outC_Supervision_D_Cycloc_ProvidePositionReport_Pkg *outC)
 {
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
   outC->_L1 = kcg_true;
   outC->trigger = kcg_true;
 }

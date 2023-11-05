@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _C_P005_fs_struct_to_array_TM_lib_internal_H_
 #define _C_P005_fs_struct_to_array_TM_lib_internal_H_
@@ -22,14 +22,14 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   P005_section_int_T_TM /* _L1/ */ _L1;
-  array_int64_7 /* _L2/ */ _L2;
-  kcg_int64 /* _L6/ */ _L6;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L12/ */ _L12;
-  kcg_int64 /* _L11/ */ _L11;
-  kcg_int64 /* _L10/ */ _L10;
+  array_int32_7 /* _L2/ */ _L2;
+  kcg_int32 /* _L6/ */ _L6;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L12/ */ _L12;
+  kcg_int32 /* _L11/ */ _L11;
+  kcg_int32 /* _L10/ */ _L10;
 } outC_C_P005_fs_struct_to_array_TM_lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -52,6 +52,6 @@ extern void C_P005_fs_struct_to_array_init_TM_lib_internal(
 #endif /* _C_P005_fs_struct_to_array_TM_lib_internal_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P005_fs_struct_to_array_TM_lib_internal.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

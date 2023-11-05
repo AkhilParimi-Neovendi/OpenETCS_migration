@@ -21,10 +21,10 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L16/ */ _L16;
+  kcg_int32 /* _L16/ */ _L16;
   kcg_bool /* _L15/ */ _L15;
-  kcg_int64 /* _L14/ */ _L14;
-  kcg_int64 /* _L13/ */ _L13;
+  kcg_int32 /* _L14/ */ _L14;
+  kcg_int32 /* _L13/ */ _L13;
   kcg_bool /* _L12/ */ _L12;
 } outC_CAST_Int_to_NC_DIFF_TM_conversions;
 
@@ -32,7 +32,7 @@ typedef struct {
 /* TM_conversions::CAST_Int_to_NC_DIFF/ */
 extern void CAST_Int_to_NC_DIFF_TM_conversions(
   /* nc_diff_int/ */
-  kcg_int64 nc_diff_int,
+  kcg_int32 nc_diff_int,
   outC_CAST_Int_to_NC_DIFF_TM_conversions *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

@@ -25,22 +25,22 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  array_int64_6 /* @1/_L4/ */ _L4_Max_1_int64;
-  array_bool_6 /* @1/_L3/ */ _L3_Max_1_int64;
-  array_int64_6 /* @1/_L2/ */ _L2_Max_1_int64;
-  array_int64_6 /* @1/_L1/ */ _L1_Max_1_int64;
-  kcg_int64 /* _L10/ */ _L10;
+  array_int32_6 /* @1/_L4/ */ _L4_Max_1_int32;
+  array_bool_6 /* @1/_L3/ */ _L3_Max_1_int32;
+  array_int32_6 /* @1/_L2/ */ _L2_Max_1_int32;
+  array_int32_6 /* @1/_L1/ */ _L1_Max_1_int32;
+  kcg_int32 /* _L10/ */ _L10;
   P3_NationalValues_T_Packet_Types_Pkg /* _L11/ */ _L11;
   trainData_T_TIU_Types_Pkg /* _L12/ */ _L12;
   a_Brake_t_SDMConversionModelPkg /* _L13/ */ _L13;
   a_BrakeSteps_t_SDMConversionModelPkg /* _L14/ */ _L14;
-  array_int64_6 /* _L16/ */ _L16;
-  array_int64_6 /* _L17/ */ _L17;
-  kcg_int64 /* _L18/ */ _L18;
-  kcg_int64 /* _L19/ */ _L19;
-  array_int64_6 /* _L23/ */ _L23;
-  array_int64_6 /* _L25/ */ _L25;
-  kcg_int64 /* _L26/ */ _L26;
+  array_int32_6 /* _L16/ */ _L16;
+  array_int32_6 /* _L17/ */ _L17;
+  kcg_int32 /* _L18/ */ _L18;
+  kcg_int32 /* _L19/ */ _L19;
+  array_int32_6 /* _L23/ */ _L23;
+  array_int32_6 /* _L25/ */ _L25;
+  kcg_int32 /* _L26/ */ _L26;
   P3_NationalValues_T_Packet_Types_Pkg /* _L30/ */ _L30;
   av_MergedMap_t_SDMConversionModelPkg /* _L32/ */ _L32;
   trainData_T_TIU_Types_Pkg /* _L34/ */ _L34;

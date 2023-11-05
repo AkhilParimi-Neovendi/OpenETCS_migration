@@ -21,21 +21,21 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_float64 /* _L1/ */ _L1;
+  kcg_float32 /* _L1/ */ _L1;
   CompressedBaliseMessage_TM /* _L4/ */ _L4;
   TrackSectionData_T_InfraLib /* _L8/ */ _L8;
   TrainPosRaw_T_InfraLib /* _L10/ */ _L10;
-  kcg_float64 /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_float32 /* _L11/ */ _L11;
+  kcg_int32 /* _L12/ */ _L12;
 } outC_TrackInit_InfraLib;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* InfraLib::TrackInit/ */
 extern void TrackInit_InfraLib(
   /* TrainPosIn/ */
-  kcg_float64 TrainPosIn,
+  kcg_float32 TrainPosIn,
   /* InitialOffset/ */
-  kcg_int64 InitialOffset,
+  kcg_int32 InitialOffset,
   outC_TrackInit_InfraLib *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _RECV_ReadPackets_TM_lib_internal_H_
 #define _RECV_ReadPackets_TM_lib_internal_H_
@@ -29,11 +29,11 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   MetadataElement_T_Common_Types_Pkg /* _L3/ */ _L3;
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L2/ */ _L2;
   kcg_bool /* _L1/ */ _L1;
   CompressedPacketData_T_Common_Types_Pkg /* _L4/ */ _L4;
   CompressedPacketData_T_Common_Types_Pkg /* _L44/ */ _L44;
-  kcg_int64 /* _L45/ */ _L45;
+  kcg_int32 /* _L45/ */ _L45;
   CompressedPackets_T_Common_Types_Pkg /* _L46/ */ _L46;
   CompressedPacketData_T_Common_Types_Pkg /* _L48/ */ _L48;
   Metadata_T_Common_Types_Pkg /* _L47/ */ _L47;
@@ -47,7 +47,7 @@ extern void RECV_ReadPackets_TM_lib_internal(
   /* Packets/ */
   CompressedPackets_T_Common_Types_Pkg *Packets,
   /* PacketID/ */
-  kcg_int64 PacketID,
+  kcg_int32 PacketID,
   /* F_version/ */
   kcg_bool F_version,
   /* F_id/ */
@@ -69,6 +69,6 @@ extern void RECV_ReadPackets_init_TM_lib_internal(
 #endif /* _RECV_ReadPackets_TM_lib_internal_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** RECV_ReadPackets_TM_lib_internal.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

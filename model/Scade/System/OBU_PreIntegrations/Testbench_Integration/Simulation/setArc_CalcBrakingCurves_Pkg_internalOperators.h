@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _setArc_CalcBrakingCurves_Pkg_internalOperators_H_
 #define _setArc_CalcBrakingCurves_Pkg_internalOperators_H_
@@ -36,7 +36,7 @@ typedef struct {
   ParabolaCurveAccelerations_T_CalcBrakingCurves_types /* _L22/ */ _L22;
   ParabolaCurveSpeeds_T_CalcBrakingCurves_types /* _L23/ */ _L23;
   ParabolaCurveDistances_T_CalcBrakingCurves_types /* _L24/ */ _L24;
-  kcg_int64 /* _L36/ */ _L36;
+  kcg_int32 /* _L36/ */ _L36;
 } outC_setArc_CalcBrakingCurves_Pkg_internalOperators;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -47,7 +47,7 @@ extern void setArc_CalcBrakingCurves_Pkg_internalOperators(
   /* oldBC/ */
   ParabolaCurve_T_CalcBrakingCurves_types *oldBC,
   /* index/ */
-  kcg_int64 index,
+  kcg_int32 index,
   outC_setArc_CalcBrakingCurves_Pkg_internalOperators *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET
@@ -65,6 +65,6 @@ extern void setArc_init_CalcBrakingCurves_Pkg_internalOperators(
 #endif /* _setArc_CalcBrakingCurves_Pkg_internalOperators_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** setArc_CalcBrakingCurves_Pkg_internalOperators.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

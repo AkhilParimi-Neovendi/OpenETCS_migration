@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -43,8 +43,8 @@ void checkOnErrors_init_xdebugSupport_Pkg(
   outC->_L12.tNvContactError = kcg_true;
   outC->_L12.otherTimingError = kcg_true;
   outC->_L12.radioMessageConsistencyError = kcg_true;
-  outC->_L12.nid_c = kcg_lit_int64(0);
-  outC->_L12.nid_errorbg = kcg_lit_int64(0);
+  outC->_L12.nid_c = kcg_lit_int32(0);
+  outC->_L12.nid_errorbg = kcg_lit_int32(0);
   outC->_L6 = kcg_true;
   outC->_L5 = kcg_true;
   outC->_L4 = kcg_true;
@@ -57,8 +57,8 @@ void checkOnErrors_init_xdebugSupport_Pkg(
   outC->_L1.tNvContactError = kcg_true;
   outC->_L1.otherTimingError = kcg_true;
   outC->_L1.radioMessageConsistencyError = kcg_true;
-  outC->_L1.nid_c = kcg_lit_int64(0);
-  outC->_L1.nid_errorbg = kcg_lit_int64(0);
+  outC->_L1.nid_c = kcg_lit_int32(0);
+  outC->_L1.nid_errorbg = kcg_lit_int32(0);
   outC->baliseError = kcg_true;
   outC->radioMsgError = kcg_true;
 }
@@ -76,6 +76,6 @@ void checkOnErrors_reset_xdebugSupport_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** checkOnErrors_xdebugSupport_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

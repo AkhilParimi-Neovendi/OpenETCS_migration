@@ -23,7 +23,7 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   Gradient_real_t_SDM_GradientAcceleration_types /* _L3/ */ _L3;
   ACC_SDM_GradientAcceleration_Pkg /* _L2/ */ _L2;
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   GradientProfile_real_compensated_t_SDM_GradientAcceleration_types /* _L4/ */ _L4;
   GradientProfile_real_compensated_t_SDM_GradientAcceleration_types /* _L5/ */ _L5;
   Gradient_section_real_t_SDM_GradientAcceleration_types /* _L6/ */ _L6;
@@ -38,7 +38,7 @@ extern void addNewSection_SDM_GradientAcceleration_Pkg(
   /* newGradientSection/ */
   Gradient_real_t_SDM_GradientAcceleration_types newGradientSection,
   /* index/ */
-  kcg_int64 index,
+  kcg_int32 index,
   /* Accu/ */
   ACC_SDM_GradientAcceleration_Pkg *Accu,
   outC_addNewSection_SDM_GradientAcceleration_Pkg *outC);

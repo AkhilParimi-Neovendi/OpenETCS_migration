@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -69,64 +69,64 @@ void SendRadioPackets_LRBG_397_D_00382_0_M003_init_AmsterdamUtrechtL2_Sheet11_Br
   static kcg_size idx11;
 
   for (idx = 0; idx < 30; idx++) {
-    outC->_L32.PacketHeaders[idx].nid_packet = kcg_lit_int64(0);
+    outC->_L32.PacketHeaders[idx].nid_packet = kcg_lit_int32(0);
     outC->_L32.PacketHeaders[idx].q_dir = Q_DIR_Reverse;
     outC->_L32.PacketHeaders[idx].valid = kcg_true;
-    outC->_L32.PacketHeaders[idx].startAddress = kcg_lit_int64(0);
-    outC->_L32.PacketHeaders[idx].endAddress = kcg_lit_int64(0);
+    outC->_L32.PacketHeaders[idx].startAddress = kcg_lit_int32(0);
+    outC->_L32.PacketHeaders[idx].endAddress = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 500; idx1++) {
-    outC->_L32.PacketData[idx1] = kcg_lit_int64(0);
+    outC->_L32.PacketData[idx1] = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 30; idx2++) {
-    outC->_L11.PacketHeaders[idx2].nid_packet = kcg_lit_int64(0);
+    outC->_L11.PacketHeaders[idx2].nid_packet = kcg_lit_int32(0);
     outC->_L11.PacketHeaders[idx2].q_dir = Q_DIR_Reverse;
     outC->_L11.PacketHeaders[idx2].valid = kcg_true;
-    outC->_L11.PacketHeaders[idx2].startAddress = kcg_lit_int64(0);
-    outC->_L11.PacketHeaders[idx2].endAddress = kcg_lit_int64(0);
+    outC->_L11.PacketHeaders[idx2].startAddress = kcg_lit_int32(0);
+    outC->_L11.PacketHeaders[idx2].endAddress = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 500; idx3++) {
-    outC->_L11.PacketData[idx3] = kcg_lit_int64(0);
+    outC->_L11.PacketData[idx3] = kcg_lit_int32(0);
   }
   for (idx4 = 0; idx4 < 30; idx4++) {
-    outC->_L4.PacketHeaders[idx4].nid_packet = kcg_lit_int64(0);
+    outC->_L4.PacketHeaders[idx4].nid_packet = kcg_lit_int32(0);
     outC->_L4.PacketHeaders[idx4].q_dir = Q_DIR_Reverse;
     outC->_L4.PacketHeaders[idx4].valid = kcg_true;
-    outC->_L4.PacketHeaders[idx4].startAddress = kcg_lit_int64(0);
-    outC->_L4.PacketHeaders[idx4].endAddress = kcg_lit_int64(0);
+    outC->_L4.PacketHeaders[idx4].startAddress = kcg_lit_int32(0);
+    outC->_L4.PacketHeaders[idx4].endAddress = kcg_lit_int32(0);
   }
   for (idx5 = 0; idx5 < 500; idx5++) {
-    outC->_L4.PacketData[idx5] = kcg_lit_int64(0);
+    outC->_L4.PacketData[idx5] = kcg_lit_int32(0);
   }
   for (idx6 = 0; idx6 < 30; idx6++) {
-    outC->_L3.PacketHeaders[idx6].nid_packet = kcg_lit_int64(0);
+    outC->_L3.PacketHeaders[idx6].nid_packet = kcg_lit_int32(0);
     outC->_L3.PacketHeaders[idx6].q_dir = Q_DIR_Reverse;
     outC->_L3.PacketHeaders[idx6].valid = kcg_true;
-    outC->_L3.PacketHeaders[idx6].startAddress = kcg_lit_int64(0);
-    outC->_L3.PacketHeaders[idx6].endAddress = kcg_lit_int64(0);
+    outC->_L3.PacketHeaders[idx6].startAddress = kcg_lit_int32(0);
+    outC->_L3.PacketHeaders[idx6].endAddress = kcg_lit_int32(0);
   }
   for (idx7 = 0; idx7 < 500; idx7++) {
-    outC->_L3.PacketData[idx7] = kcg_lit_int64(0);
+    outC->_L3.PacketData[idx7] = kcg_lit_int32(0);
   }
   for (idx8 = 0; idx8 < 30; idx8++) {
-    outC->_L2.PacketHeaders[idx8].nid_packet = kcg_lit_int64(0);
+    outC->_L2.PacketHeaders[idx8].nid_packet = kcg_lit_int32(0);
     outC->_L2.PacketHeaders[idx8].q_dir = Q_DIR_Reverse;
     outC->_L2.PacketHeaders[idx8].valid = kcg_true;
-    outC->_L2.PacketHeaders[idx8].startAddress = kcg_lit_int64(0);
-    outC->_L2.PacketHeaders[idx8].endAddress = kcg_lit_int64(0);
+    outC->_L2.PacketHeaders[idx8].startAddress = kcg_lit_int32(0);
+    outC->_L2.PacketHeaders[idx8].endAddress = kcg_lit_int32(0);
   }
   for (idx9 = 0; idx9 < 500; idx9++) {
-    outC->_L2.PacketData[idx9] = kcg_lit_int64(0);
+    outC->_L2.PacketData[idx9] = kcg_lit_int32(0);
   }
   for (idx10 = 0; idx10 < 30; idx10++) {
-    outC->Radio_packets_out.PacketHeaders[idx10].nid_packet = kcg_lit_int64(0);
+    outC->Radio_packets_out.PacketHeaders[idx10].nid_packet = kcg_lit_int32(0);
     outC->Radio_packets_out.PacketHeaders[idx10].q_dir = Q_DIR_Reverse;
     outC->Radio_packets_out.PacketHeaders[idx10].valid = kcg_true;
-    outC->Radio_packets_out.PacketHeaders[idx10].startAddress = kcg_lit_int64(0);
-    outC->Radio_packets_out.PacketHeaders[idx10].endAddress = kcg_lit_int64(0);
+    outC->Radio_packets_out.PacketHeaders[idx10].startAddress = kcg_lit_int32(0);
+    outC->Radio_packets_out.PacketHeaders[idx10].endAddress = kcg_lit_int32(0);
   }
   for (idx11 = 0; idx11 < 500; idx11++) {
-    outC->Radio_packets_out.PacketData[idx11] = kcg_lit_int64(0);
+    outC->Radio_packets_out.PacketData[idx11] = kcg_lit_int32(0);
   }
   /* _L4=(MessageLibBaseline2::Send_P005#1)/ */
   Send_P005_init_MessageLibBaseline2(&outC->Context_Send_P005_1);
@@ -159,6 +159,6 @@ void SendRadioPackets_LRBG_397_D_00382_0_M003_reset_AmsterdamUtrechtL2_Sheet11_B
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** SendRadioPackets_LRBG_397_D_00382_0_M003_AmsterdamUtrechtL2_Sheet11_BreukelenKeerspoor_RBC.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

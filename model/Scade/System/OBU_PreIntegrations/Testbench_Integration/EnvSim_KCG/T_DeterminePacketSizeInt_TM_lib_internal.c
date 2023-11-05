@@ -10,11 +10,11 @@
 /* TM_lib_internal::T_DeterminePacketSizeInt/ */
 void T_DeterminePacketSizeInt_TM_lib_internal(
   /* n_iter/ */
-  kcg_int64 n_iter,
+  kcg_int32 n_iter,
   /* size_body/ */
-  kcg_int64 size_body,
+  kcg_int32 size_body,
   /* size_section/ */
-  kcg_int64 size_section,
+  kcg_int32 size_section,
   outC_T_DeterminePacketSizeInt_TM_lib_internal *outC)
 {
   outC->_L3 = size_section;
@@ -29,12 +29,12 @@ void T_DeterminePacketSizeInt_TM_lib_internal(
 void T_DeterminePacketSizeInt_init_TM_lib_internal(
   outC_T_DeterminePacketSizeInt_TM_lib_internal *outC)
 {
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->p_size = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->p_size = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

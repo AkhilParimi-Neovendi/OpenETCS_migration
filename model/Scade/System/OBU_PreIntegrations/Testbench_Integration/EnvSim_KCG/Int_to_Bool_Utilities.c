@@ -10,7 +10,7 @@
 /* Utilities::Int_to_Bool/ */
 void Int_to_Bool_Utilities(
   /* int_in/ */
-  kcg_int64 int_in,
+  kcg_int32 int_in,
   outC_Int_to_Bool_Utilities *outC)
 {
   /* bool_out/ */
@@ -31,7 +31,7 @@ void Int_to_Bool_Utilities(
   static kcg_bool _6_bool_out_partial;
   static kcg_bool noname;
 
-  outC->IfBlock1_clock = int_in == kcg_lit_int64(0);
+  outC->IfBlock1_clock = int_in == kcg_lit_int32(0);
   /* IfBlock1: */
   if (outC->IfBlock1_clock) {
     outC->_L2_then_IfBlock1 = kcg_false;
@@ -39,7 +39,7 @@ void Int_to_Bool_Utilities(
     outC->err = err_partial;
   }
   else {
-    outC->else_clock_IfBlock1 = int_in == kcg_lit_int64(1);
+    outC->else_clock_IfBlock1 = int_in == kcg_lit_int32(1);
     /* IfBlock1:else: */
     if (outC->else_clock_IfBlock1) {
       outC->_L2_then_else_IfBlock1 = kcg_false;

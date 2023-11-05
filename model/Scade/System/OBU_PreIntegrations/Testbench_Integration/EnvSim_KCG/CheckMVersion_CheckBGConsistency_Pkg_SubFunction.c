@@ -39,8 +39,8 @@ void CheckMVersion_init_CheckBGConsistency_Pkg_SubFunction(
 {
   outC->_L7 = kcg_true;
   outC->_L5 = kcg_true;
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L2 =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L1 =

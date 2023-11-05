@@ -114,7 +114,7 @@ typedef struct {
   passedBG_T_BG_Types_Pkg /* _L264/ */ _L264;
   LinkedBGs_T_BG_Types_Pkg /* _L263/ */ _L263;
   linkedBGs_asPositionedBGs_T_TrainPosition_Types_Pck /* _L265/ */ _L265;
-  kcg_int64 /* _L281/ */ _L281;
+  kcg_int32 /* _L281/ */ _L281;
   trainProperties_T_TrainPosition_Types_Pck /* _L282/ */ _L282;
   passedBG_T_BG_Types_Pkg /* _L283/ */ _L283;
   kcg_bool /* _L284/ */ _L284;
@@ -157,7 +157,7 @@ extern void passedBG_2_positionedBG_CalculateTrainPosition_Pkg(
   /* previouslyPassedLinkedBG/ */
   positionedBG_T_TrainPosition_Types_Pck *previouslyPassedLinkedBG,
   /* passedBGSeqNo/ */
-  kcg_int64 passedBGSeqNo,
+  kcg_int32 passedBGSeqNo,
   /* trainProperties/ */
   trainProperties_T_TrainPosition_Types_Pck *trainProperties,
   outC_passedBG_2_positionedBG_CalculateTrainPosition_Pkg *outC);

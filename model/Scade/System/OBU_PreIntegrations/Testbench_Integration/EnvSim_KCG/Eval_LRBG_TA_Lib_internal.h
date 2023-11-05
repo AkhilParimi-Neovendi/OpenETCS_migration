@@ -16,8 +16,8 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   kcg_bool /* valid/ */ valid;
-  kcg_int64 /* C/ */ C;
-  kcg_int64 /* BG/ */ BG;
+  kcg_int32 /* C/ */ C;
+  kcg_int32 /* BG/ */ BG;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -31,8 +31,8 @@ typedef struct {
   NID_BG /* IfBlock1:then:_L21/ */ _L21_then_IfBlock1;
   BG_Header_T_BG_Types_Pkg /* IfBlock1:then:_L20/ */ _L20_then_IfBlock1;
   ReceivedMessage_T_Common_Types_Pkg /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L1/ */ _L1_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L2/ */ _L2_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L1/ */ _L1_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L2/ */ _L2_else_else_IfBlock1;
   ReceivedMessage_T_Common_Types_Pkg /* IfBlock1:else:then:_L2/ */ _L2_then_else_IfBlock1;
   NID_LRBG /* IfBlock1:else:then:_L1/ */ _L1_then_else_IfBlock1;
   NID_C /* IfBlock1:else:then:_L3/ */ _L3_then_else_IfBlock1;

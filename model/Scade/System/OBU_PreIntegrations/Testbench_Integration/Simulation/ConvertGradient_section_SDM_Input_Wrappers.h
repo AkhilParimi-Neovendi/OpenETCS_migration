@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _ConvertGradient_section_SDM_Input_Wrappers_H_
 #define _ConvertGradient_section_SDM_Input_Wrappers_H_
@@ -31,7 +31,7 @@ typedef struct {
   L_internal_real_Type_SDM_Types_Pkg /* _L7/ */ _L7;
   Gradient_section_t_TrackAtlasTypes /* _L9/ */ _L9;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L10/ */ _L10;
-  kcg_float64 /* _L11/ */ _L11;
+  kcg_float32 /* _L11/ */ _L11;
 } outC_ConvertGradient_section_SDM_Input_Wrappers;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -56,6 +56,6 @@ extern void ConvertGradient_section_init_SDM_Input_Wrappers(
 #endif /* _ConvertGradient_section_SDM_Input_Wrappers_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ConvertGradient_section_SDM_Input_Wrappers.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

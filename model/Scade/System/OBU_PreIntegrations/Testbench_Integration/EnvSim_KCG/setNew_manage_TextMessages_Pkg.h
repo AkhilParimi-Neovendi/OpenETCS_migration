@@ -24,7 +24,7 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   kcg_bool /* IfBlock1:then:_L5/ */ _L5_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
   DMI_TXT_MSG_status_T_DMI_Types_Pkg /* IfBlock1:then:_L2/ */ _L2_then_IfBlock1;
   DMI_TXT_MSG_status_T_DMI_Types_Pkg /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
   kcg_bool /* IfBlock1:else:_L2/ */ _L2_else_IfBlock1;
@@ -39,7 +39,7 @@ typedef struct {
 /* manage_TextMessages_Pkg::setNew/ */
 extern void setNew_manage_TextMessages_Pkg(
   /* indexMAPwi/ */
-  kcg_int64 indexMAPwi,
+  kcg_int32 indexMAPwi,
   /* fromStore/ */
   DMI_TXT_MSG_status_T_DMI_Types_Pkg *fromStore,
   /* actualTextMsg/ */

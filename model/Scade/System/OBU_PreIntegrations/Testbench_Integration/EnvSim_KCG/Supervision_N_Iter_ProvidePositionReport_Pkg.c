@@ -33,10 +33,10 @@ void Supervision_N_Iter_init_ProvidePositionReport_Pkg(
   static kcg_size idx;
 
   for (idx = 0; idx < 2; idx++) {
-    outC->_L3[idx].d_loc = kcg_lit_int64(0);
+    outC->_L3[idx].d_loc = kcg_lit_int32(0);
     outC->_L3[idx].q_lgtloc = Q_LGTLOC_Min_safe_rear_end;
   }
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
   outC->_L1 = kcg_true;
   outC->trigger = kcg_true;
 }

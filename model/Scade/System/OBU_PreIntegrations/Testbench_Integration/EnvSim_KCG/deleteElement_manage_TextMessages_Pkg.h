@@ -34,14 +34,14 @@ typedef struct {
   kcg_bool /* _L4/ */ _L4;
   DMI_TextMessage_ID_T_DMI_Types_Pkg /* _L5/ */ _L5;
   kcg_bool /* _L6/ */ _L6;
-  kcg_int64 /* _L7/ */ _L7;
+  kcg_int32 /* _L7/ */ _L7;
 } outC_deleteElement_manage_TextMessages_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* manage_TextMessages_Pkg::deleteElement/ */
 extern void deleteElement_manage_TextMessages_Pkg(
   /* indexMAPwi/ */
-  kcg_int64 indexMAPwi,
+  kcg_int32 indexMAPwi,
   /* fromStore/ */
   DMI_TXT_MSG_status_T_DMI_Types_Pkg *fromStore,
   /* inMessageID/ */

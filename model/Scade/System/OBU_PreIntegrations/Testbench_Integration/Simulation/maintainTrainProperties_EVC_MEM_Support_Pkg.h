@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _maintainTrainProperties_EVC_MEM_Support_Pkg_H_
 #define _maintainTrainProperties_EVC_MEM_Support_Pkg_H_
@@ -30,8 +30,8 @@ typedef struct {
   trainProperties_T_TrainPosition_Types_Pck /* _L17/ */ _L17;
   trainData_T_TIU_Types_Pkg /* _L18/ */ _L18;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L19/ */ _L19;
-  kcg_int64 /* _L21/ */ _L21;
-  kcg_int64 /* _L22/ */ _L22;
+  kcg_int32 /* _L21/ */ _L21;
+  kcg_int32 /* _L22/ */ _L22;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L23/ */ _L23;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L24/ */ _L24;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L25/ */ _L25;
@@ -67,6 +67,6 @@ extern void maintainTrainProperties_init_EVC_MEM_Support_Pkg(
 #endif /* _maintainTrainProperties_EVC_MEM_Support_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** maintainTrainProperties_EVC_MEM_Support_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

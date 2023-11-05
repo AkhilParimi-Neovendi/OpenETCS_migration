@@ -25,15 +25,15 @@ typedef struct {
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L2/ */ _L2;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L3/ */ _L3;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L17/ */ _L17;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L16/ */ _L16;
-  kcg_int64 /* _L15/ */ _L15;
+  kcg_int32 /* _L15/ */ _L15;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L14/ */ _L14;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L13/ */ _L13;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L22/ */ _L22;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L21/ */ _L21;
-  kcg_int64 /* _L20/ */ _L20;
+  kcg_int32 /* _L20/ */ _L20;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L19/ */ _L19;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L18/ */ _L18;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L23/ */ _L23;

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _Eval_Q_SCALE_TA_MRSP_H_
 #define _Eval_Q_SCALE_TA_MRSP_H_
@@ -22,17 +22,17 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   Q_SCALE /* _L1/ */ _L1;
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L2/ */ _L2;
   Q_SCALE /* _L3/ */ _L3;
   Q_SCALE /* _L4/ */ _L4;
   kcg_bool /* _L6/ */ _L6;
-  kcg_int64 /* _L7/ */ _L7;
-  kcg_int64 /* _L8/ */ _L8;
+  kcg_int32 /* _L7/ */ _L7;
+  kcg_int32 /* _L8/ */ _L8;
   kcg_bool /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
-  kcg_int64 /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
-  kcg_int64 /* _L14/ */ _L14;
+  kcg_int32 /* _L10/ */ _L10;
+  kcg_int32 /* _L11/ */ _L11;
+  kcg_int32 /* _L12/ */ _L12;
+  kcg_int32 /* _L14/ */ _L14;
 } outC_Eval_Q_SCALE_TA_MRSP;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -41,7 +41,7 @@ extern void Eval_Q_SCALE_TA_MRSP(
   /* q_scale_in/ */
   Q_SCALE q_scale_in,
   /* d_in/ */
-  kcg_int64 d_in,
+  kcg_int32 d_in,
   outC_Eval_Q_SCALE_TA_MRSP *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET
@@ -57,6 +57,6 @@ extern void Eval_Q_SCALE_init_TA_MRSP(outC_Eval_Q_SCALE_TA_MRSP *outC);
 #endif /* _Eval_Q_SCALE_TA_MRSP_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Eval_Q_SCALE_TA_MRSP.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

@@ -28,7 +28,7 @@ typedef struct {
   Location_T_Obu_BasicTypes_Pkg /* _L6/ */ _L6;
   kcg_bool /* _L8/ */ _L8;
   Location_T_Obu_BasicTypes_Pkg /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   kcg_bool /* _L11/ */ _L11;
 } outC_Position_In_Area_Librairies;
 

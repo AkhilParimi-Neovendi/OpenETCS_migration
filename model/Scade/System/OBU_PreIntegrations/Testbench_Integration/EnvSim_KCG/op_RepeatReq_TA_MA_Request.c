@@ -52,22 +52,22 @@ void op_RepeatReq_TA_MA_Request(
 #ifndef KCG_USER_DEFINED_INIT
 void op_RepeatReq_init_TA_MA_Request(outC_op_RepeatReq_TA_MA_Request *outC)
 {
-  outC->_L29 = kcg_lit_int64(0);
-  outC->_L28 = kcg_lit_int64(0);
-  outC->_L27 = kcg_lit_int64(0);
-  outC->_L16 = kcg_lit_int64(0);
-  outC->_L22 = kcg_lit_int64(0);
-  outC->_L21 = kcg_lit_int64(0);
-  outC->_L20 = kcg_lit_int64(0);
+  outC->_L29 = kcg_lit_int32(0);
+  outC->_L28 = kcg_lit_int32(0);
+  outC->_L27 = kcg_lit_int32(0);
+  outC->_L16 = kcg_lit_int32(0);
+  outC->_L22 = kcg_lit_int32(0);
+  outC->_L21 = kcg_lit_int32(0);
+  outC->_L20 = kcg_lit_int32(0);
   outC->_L19 = kcg_true;
   outC->_L18 = kcg_true;
   outC->_L17 = kcg_true;
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L7 = kcg_true;
-  outC->_L9 = kcg_lit_int64(0);
+  outC->_L9 = kcg_lit_int32(0);
   outC->exception = kcg_true;
   outC->trigger = kcg_true;
-  outC->lastSystemTime = kcg_lit_int64(0);
+  outC->lastSystemTime = kcg_lit_int32(0);
   outC->mem_setRepeater = kcg_false;
 }
 #endif /* KCG_USER_DEFINED_INIT */
@@ -76,7 +76,7 @@ void op_RepeatReq_init_TA_MA_Request(outC_op_RepeatReq_TA_MA_Request *outC)
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET
 void op_RepeatReq_reset_TA_MA_Request(outC_op_RepeatReq_TA_MA_Request *outC)
 {
-  outC->lastSystemTime = kcg_lit_int64(0);
+  outC->lastSystemTime = kcg_lit_int32(0);
   outC->mem_setRepeater = kcg_false;
 }
 #endif /* KCG_NO_EXTERN_CALL_TO_RESET */

@@ -54,25 +54,25 @@ void scaledDLINK_2_dlink_BasicLocationFunctions_Pkg(
 void scaledDLINK_2_dlink_init_BasicLocationFunctions_Pkg(
   outC_scaledDLINK_2_dlink_BasicLocationFunctions_Pkg *outC)
 {
-  outC->_L25 = kcg_lit_int64(0);
-  outC->_L22.nominal = kcg_lit_int64(0);
-  outC->_L22.d_min = kcg_lit_int64(0);
-  outC->_L22.d_max = kcg_lit_int64(0);
-  outC->_L15 = kcg_lit_int64(0);
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L25 = kcg_lit_int32(0);
+  outC->_L22.nominal = kcg_lit_int32(0);
+  outC->_L22.d_min = kcg_lit_int32(0);
+  outC->_L22.d_max = kcg_lit_int32(0);
+  outC->_L15 = kcg_lit_int32(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
   outC->_L1 = Q_SCALE_10_cm_scale;
-  outC->distance.nominal = kcg_lit_int64(0);
-  outC->distance.d_min = kcg_lit_int64(0);
-  outC->distance.d_max = kcg_lit_int64(0);
+  outC->distance.nominal = kcg_lit_int32(0);
+  outC->distance.d_min = kcg_lit_int32(0);
+  outC->distance.d_max = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

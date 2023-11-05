@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _FindIndexOfMetaData_CheckBGConsistency_Pkg_SubFunction_MergFunction_H_
 #define _FindIndexOfMetaData_CheckBGConsistency_Pkg_SubFunction_MergFunction_H_
@@ -26,14 +26,14 @@ typedef struct {
   NID_PACKET /* _L6/ */ _L6;
   Q_DIR /* _L5/ */ _L5;
   kcg_bool /* _L4/ */ _L4;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L2/ */ _L2;
   MetadataElement_T_Common_Types_Pkg /* _L7/ */ _L7;
   NID_PACKET /* _L8/ */ _L8;
   Q_DIR /* _L9/ */ _L9;
   kcg_bool /* _L10/ */ _L10;
-  kcg_int64 /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L11/ */ _L11;
+  kcg_int32 /* _L12/ */ _L12;
   kcg_bool /* _L13/ */ _L13;
   MetadataElement_T_Common_Types_Pkg /* _L14/ */ _L14;
   kcg_bool /* _L15/ */ _L15;
@@ -66,6 +66,6 @@ extern void FindIndexOfMetaData_init_CheckBGConsistency_Pkg_SubFunction_MergFunc
 #endif /* _FindIndexOfMetaData_CheckBGConsistency_Pkg_SubFunction_MergFunction_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** FindIndexOfMetaData_CheckBGConsistency_Pkg_SubFunction_MergFunction.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

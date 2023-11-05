@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _mobileBusRouter_out_Handover_Pkg_handoverUtils_Pkg_H_
 #define _mobileBusRouter_out_Handover_Pkg_handoverUtils_Pkg_H_
@@ -43,16 +43,16 @@ typedef struct {
   T_TRAIN /* IfBlock1:then:_L24/ */ _L24_then_IfBlock1;
   msgToTrackTriggers_T_RCM_MsgTypes_Pkg /* IfBlock1:then:_L23/ */ _L23_then_IfBlock1;
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* IfBlock1:then:_L22/ */ _L22_then_IfBlock1;
-  kcg_int64 /* IfBlock1:else:_L312/ */ _L312_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:_L312/ */ _L312_else_IfBlock1;
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* IfBlock1:else:_L311/ */ _L311_else_IfBlock1;
   T_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:else:_L308/ */ _L308_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:_L307/ */ _L307_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:_L307/ */ _L307_else_IfBlock1;
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* IfBlock1:else:_L306/ */ _L306_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:_L305/ */ _L305_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:_L305/ */ _L305_else_IfBlock1;
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* IfBlock1:else:_L304/ */ _L304_else_IfBlock1;
   T_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:else:_L299/ */ _L299_else_IfBlock1;
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* IfBlock1:else:_L297/ */ _L297_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:_L298/ */ _L298_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:_L298/ */ _L298_else_IfBlock1;
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* IfBlock1:else:_L296/ */ _L296_else_IfBlock1;
   kcg_bool /* IfBlock1:else:_L294/ */ _L294_else_IfBlock1;
   M_TrainTrack_Message_T_TM_radio_messages /* IfBlock1:else:_L295/ */ _L295_else_IfBlock1;
@@ -162,6 +162,6 @@ extern void kcg_load_SV_mobileBusRouter_out_Handover_Pkg_handoverUtils_Pkg(
 #endif /* _mobileBusRouter_out_Handover_Pkg_handoverUtils_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** mobileBusRouter_out_Handover_Pkg_handoverUtils_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

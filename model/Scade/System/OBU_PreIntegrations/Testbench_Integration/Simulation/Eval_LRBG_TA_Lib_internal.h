@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _Eval_LRBG_TA_Lib_internal_H_
 #define _Eval_LRBG_TA_Lib_internal_H_
@@ -16,8 +16,8 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   kcg_bool /* valid/ */ valid;
-  kcg_int64 /* C/ */ C;
-  kcg_int64 /* BG/ */ BG;
+  kcg_int32 /* C/ */ C;
+  kcg_int32 /* BG/ */ BG;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -31,8 +31,8 @@ typedef struct {
   NID_BG /* IfBlock1:then:_L21/ */ _L21_then_IfBlock1;
   BG_Header_T_BG_Types_Pkg /* IfBlock1:then:_L20/ */ _L20_then_IfBlock1;
   ReceivedMessage_T_Common_Types_Pkg /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L1/ */ _L1_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L2/ */ _L2_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L1/ */ _L1_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L2/ */ _L2_else_else_IfBlock1;
   ReceivedMessage_T_Common_Types_Pkg /* IfBlock1:else:then:_L2/ */ _L2_then_else_IfBlock1;
   NID_LRBG /* IfBlock1:else:then:_L1/ */ _L1_then_else_IfBlock1;
   NID_C /* IfBlock1:else:then:_L3/ */ _L3_then_else_IfBlock1;
@@ -65,6 +65,6 @@ extern void Eval_LRBG_init_TA_Lib_internal(
 #endif /* _Eval_LRBG_TA_Lib_internal_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Eval_LRBG_TA_Lib_internal.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

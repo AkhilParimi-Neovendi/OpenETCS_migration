@@ -47,9 +47,9 @@ typedef struct {
   P057_trackside_int_T_TM /* _L13/ */ _L13;
   Q_DIR /* _L14/ */ _L14;
   P057_trackside_int_T_TM /* _L15/ */ _L15;
-  kcg_int64 /* _L16/ */ _L16;
+  kcg_int32 /* _L16/ */ _L16;
   P057_trackside_int_T_TM /* _L17/ */ _L17;
-  kcg_int64 /* _L18/ */ _L18;
+  kcg_int32 /* _L18/ */ _L18;
 } outC_RadioTrackTrainPacket057__Create_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg_RBC_RadioTrackTrainP;
 
 /* ===========  node initialization and cycle functions  =========== */

@@ -29,7 +29,7 @@ typedef struct {
   P046_OBU_sectionlist_int_T_TM /* _L75/ */ _L75;
   P046_OBU_sectionlist_array_T_TM /* _L74/ */ _L74;
   P046_sections_array_flat_T_TM /* _L78/ */ _L78;
-  array_int64_2_33_99 /* _L80/ */ _L80;
+  array_int32_2_33_99 /* _L80/ */ _L80;
 } outC_C_P046_flatten_sections_TM_lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */

@@ -22,7 +22,7 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L2/ */ _L2;
-  kcg_int64 /* _L9/ */ _L9;
+  kcg_int32 /* _L9/ */ _L9;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L12/ */ _L12;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L13/ */ _L13;
 } outC_ODO_doLocInacc_Toolbox_Functions;

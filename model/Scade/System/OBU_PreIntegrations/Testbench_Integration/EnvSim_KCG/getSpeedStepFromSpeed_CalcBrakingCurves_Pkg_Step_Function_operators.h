@@ -15,25 +15,25 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   V_internal_real_Type_SDM_Types_Pkg /* SpeedStepOut/ */ SpeedStepOut;
-  kcg_int64 /* SpeedStepIndexOut/ */ SpeedStepIndexOut;
+  kcg_int32 /* SpeedStepIndexOut/ */ SpeedStepIndexOut;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  array_int64_14 /* @1/_L86/ */ _L86_SearchIdxFloor_1;
+  array_int32_14 /* @1/_L86/ */ _L86_SearchIdxFloor_1;
   ASafeSpeedDefinition_T_CalcBrakingCurves_types /* @1/_L74/ */ _L74_SearchIdxFloor_1;
-  array_int64_14 /* @1/_L84/ */ _L84_SearchIdxFloor_1;
+  array_int32_14 /* @1/_L84/ */ _L84_SearchIdxFloor_1;
   MyArray_SDM_Commands_Pkg /* @1/_L77/ */ _L77_SearchIdxFloor_1;
   ASafeSpeedDefinition_T_CalcBrakingCurves_types /* @1/_L40/ */ _L40_SearchIdxFloor_1;
-  array_int64_14 /* @1/_L8/ */ _L8_SearchIdxFloor_1;
+  array_int32_14 /* @1/_L8/ */ _L8_SearchIdxFloor_1;
   V_internal_real_Type_SDM_Types_Pkg /* _L5/ */ _L5;
   ASafeSpeedDefinition_T_CalcBrakingCurves_types /* _L3/ */ _L3;
-  kcg_int64 /* _L2/ */ _L2;
-  kcg_float64 /* _L6/ */ _L6;
-  kcg_float64 /* _L7/ */ _L7;
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L2/ */ _L2;
+  kcg_float32 /* _L6/ */ _L6;
+  kcg_float32 /* _L7/ */ _L7;
+  kcg_int32 /* _L1/ */ _L1;
   ASafeSpeedDefinition_T_CalcBrakingCurves_types /* _L8/ */ _L8;
 } outC_getSpeedStepFromSpeed_CalcBrakingCurves_Pkg_Step_Function_operators;
 

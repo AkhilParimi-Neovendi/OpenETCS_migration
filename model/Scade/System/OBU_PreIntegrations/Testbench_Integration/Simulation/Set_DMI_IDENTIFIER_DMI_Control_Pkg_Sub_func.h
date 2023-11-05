@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _Set_DMI_IDENTIFIER_DMI_Control_Pkg_Sub_func_H_
 #define _Set_DMI_IDENTIFIER_DMI_Control_Pkg_Sub_func_H_
@@ -35,7 +35,7 @@ typedef struct {
   DMI_DMI_Identifier_T_DMI_Types_Pkg /* _L36/ */ _L36;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L35/ */ _L35;
   kcg_bool /* _L34/ */ _L34;
-  kcg_int64 /* _L41/ */ _L41;
+  kcg_int32 /* _L41/ */ _L41;
   kcg_bool /* _L42/ */ _L42;
 } outC_Set_DMI_IDENTIFIER_DMI_Control_Pkg_Sub_func;
 
@@ -65,6 +65,6 @@ extern void Set_DMI_IDENTIFIER_init_DMI_Control_Pkg_Sub_func(
 #endif /* _Set_DMI_IDENTIFIER_DMI_Control_Pkg_Sub_func_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Set_DMI_IDENTIFIER_DMI_Control_Pkg_Sub_func.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

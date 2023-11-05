@@ -22,11 +22,11 @@ typedef struct {
   kcg_bool /* IfBlock1: */ IfBlock1_clock;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* IfBlock1:then:_L10/ */ _L10_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L9/ */ _L9_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L10/ */ _L10_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L9/ */ _L9_then_IfBlock1;
   T_NVCONTACT /* IfBlock1:then:_L8/ */ _L8_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L7/ */ _L7_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L6/ */ _L6_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L6/ */ _L6_then_IfBlock1;
   T_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:then:_L5/ */ _L5_then_IfBlock1;
   T_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
   kcg_bool /* IfBlock1:else:_L1/ */ _L1_else_IfBlock1;

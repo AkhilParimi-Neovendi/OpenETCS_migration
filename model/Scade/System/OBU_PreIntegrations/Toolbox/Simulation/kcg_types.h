@@ -26,20 +26,20 @@ typedef unsigned char kcg_bool;
 typedef float kcg_float32;
 #endif /* kcg_float32 */
 
-#ifndef kcg_float64
-#define kcg_float64 kcg_float64
-typedef double kcg_float64;
-#endif /* kcg_float64 */
+#ifndef kcg_float32
+#define kcg_float32 kcg_float32
+typedef double kcg_float32;
+#endif /* kcg_float32 */
 
 #ifndef kcg_size
 #define kcg_size kcg_size
 typedef ptrdiff_t kcg_size;
 #endif /* kcg_size */
 
-#ifndef kcg_uint64
-#define kcg_uint64 kcg_uint64
-typedef unsigned long long kcg_uint64;
-#endif /* kcg_uint64 */
+#ifndef kcg_uint32
+#define kcg_uint32 kcg_uint32
+typedef unsigned long long kcg_uint32;
+#endif /* kcg_uint32 */
 
 #ifndef kcg_uint32
 #define kcg_uint32 kcg_uint32
@@ -56,10 +56,10 @@ typedef unsigned short kcg_uint16;
 typedef unsigned char kcg_uint8;
 #endif /* kcg_uint8 */
 
-#ifndef kcg_int64
-#define kcg_int64 kcg_int64
-typedef signed long long kcg_int64;
-#endif /* kcg_int64 */
+#ifndef kcg_int32
+#define kcg_int32 kcg_int32
+typedef signed long long kcg_int32;
+#endif /* kcg_int32 */
 
 #ifndef kcg_int32
 #define kcg_int32 kcg_int32
@@ -80,17 +80,17 @@ typedef signed char kcg_int8;
 #define kcg_lit_float32(kcg_C1) ((kcg_float32) (kcg_C1))
 #endif /* kcg_lit_float32 */
 
-#ifndef kcg_lit_float64
-#define kcg_lit_float64(kcg_C1) ((kcg_float64) (kcg_C1))
-#endif /* kcg_lit_float64 */
+#ifndef kcg_lit_float32
+#define kcg_lit_float32(kcg_C1) ((kcg_float32) (kcg_C1))
+#endif /* kcg_lit_float32 */
 
 #ifndef kcg_lit_size
 #define kcg_lit_size(kcg_C1) ((kcg_size) (kcg_C1))
 #endif /* kcg_lit_size */
 
-#ifndef kcg_lit_uint64
-#define kcg_lit_uint64(kcg_C1) ((kcg_uint64) (kcg_C1))
-#endif /* kcg_lit_uint64 */
+#ifndef kcg_lit_uint32
+#define kcg_lit_uint32(kcg_C1) ((kcg_uint32) (kcg_C1))
+#endif /* kcg_lit_uint32 */
 
 #ifndef kcg_lit_uint32
 #define kcg_lit_uint32(kcg_C1) ((kcg_uint32) (kcg_C1))
@@ -104,9 +104,9 @@ typedef signed char kcg_int8;
 #define kcg_lit_uint8(kcg_C1) ((kcg_uint8) (kcg_C1))
 #endif /* kcg_lit_uint8 */
 
-#ifndef kcg_lit_int64
-#define kcg_lit_int64(kcg_C1) ((kcg_int64) (kcg_C1))
-#endif /* kcg_lit_int64 */
+#ifndef kcg_lit_int32
+#define kcg_lit_int32(kcg_C1) ((kcg_int32) (kcg_C1))
+#endif /* kcg_lit_int32 */
 
 #ifndef kcg_lit_int32
 #define kcg_lit_int32(kcg_C1) ((kcg_int32) (kcg_C1))
@@ -128,10 +128,10 @@ typedef signed char kcg_int8;
 #define kcg_true ((kcg_bool) 1)
 #endif /* kcg_true */
 
-#ifndef kcg_lsl_uint64
-#define kcg_lsl_uint64(kcg_C1, kcg_C2)                                        \
-  ((kcg_uint64) ((kcg_C1) << (kcg_C2)) & 0xffffffffffffffff)
-#endif /* kcg_lsl_uint64 */
+#ifndef kcg_lsl_uint32
+#define kcg_lsl_uint32(kcg_C1, kcg_C2)                                        \
+  ((kcg_uint32) ((kcg_C1) << (kcg_C2)) & 0xffffffffffffffff)
+#endif /* kcg_lsl_uint32 */
 
 #ifndef kcg_lsl_uint32
 #define kcg_lsl_uint32(kcg_C1, kcg_C2)                                        \
@@ -148,9 +148,9 @@ typedef signed char kcg_int8;
   ((kcg_uint8) ((kcg_C1) << (kcg_C2)) & 0xff)
 #endif /* kcg_lsl_uint8 */
 
-#ifndef kcg_lnot_uint64
-#define kcg_lnot_uint64(kcg_C1) ((kcg_C1) ^ 0xffffffffffffffff)
-#endif /* kcg_lnot_uint64 */
+#ifndef kcg_lnot_uint32
+#define kcg_lnot_uint32(kcg_C1) ((kcg_C1) ^ 0xffffffffffffffff)
+#endif /* kcg_lnot_uint32 */
 
 #ifndef kcg_lnot_uint32
 #define kcg_lnot_uint32(kcg_C1) ((kcg_C1) ^ 0xffffffff)
@@ -918,9 +918,9 @@ typedef struct kcg_tag_mobileHWStatus_Type_MoRC_Pck {
 
 /* Toolbox::odometryFactors_T/ */
 typedef struct kcg_tag_odometryFactors_T_Toolbox {
-  kcg_float64 o_nominal;
-  kcg_float64 o_min;
-  kcg_float64 o_max;
+  kcg_float32 o_nominal;
+  kcg_float32 o_min;
+  kcg_float32 o_max;
 } odometryFactors_T_Toolbox;
 
 typedef struct kcg_tag_struct_149475 {
@@ -929,28 +929,28 @@ typedef struct kcg_tag_struct_149475 {
 } struct_149475;
 
 /* L_TAFDISPLAY/ */
-typedef kcg_int64 L_TAFDISPLAY;
+typedef kcg_int32 L_TAFDISPLAY;
 
 /* D_TAFDISPLAY/ */
-typedef kcg_int64 D_TAFDISPLAY;
+typedef kcg_int32 D_TAFDISPLAY;
 
 /* L_MESSAGE/ */
-typedef kcg_int64 L_MESSAGE;
+typedef kcg_int32 L_MESSAGE;
 
 /* NID_RADIO/ */
-typedef kcg_int64 NID_RADIO;
+typedef kcg_int32 NID_RADIO;
 
 /* L_PACKET/ */
-typedef kcg_int64 L_PACKET;
+typedef kcg_int32 L_PACKET;
 
 /* TM::nid_packet_meta/ */
-typedef kcg_int64 nid_packet_meta_TM;
+typedef kcg_int32 nid_packet_meta_TM;
 
 /* NID_TEXTMESSAGE/ */
-typedef kcg_int64 NID_TEXTMESSAGE;
+typedef kcg_int32 NID_TEXTMESSAGE;
 
 /* NID_LTRBG/ */
-typedef kcg_int64 NID_LTRBG;
+typedef kcg_int32 NID_LTRBG;
 
 /* Packet_TrainTypes_Pkg::PT9_Level23_TransitionInformation_T/ */
 typedef struct kcg_tag_PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg {
@@ -959,13 +959,13 @@ typedef struct kcg_tag_PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg
 } PT9_Level23_TransitionInformation_T_Packet_TrainTypes_Pkg;
 
 /* Obu_BasicTypes_Pkg::Speed_T/ */
-typedef kcg_int64 Speed_T_Obu_BasicTypes_Pkg;
+typedef kcg_int32 Speed_T_Obu_BasicTypes_Pkg;
 
 /* Toolbox::OdometrySpeed_T/ */
-typedef kcg_int64 OdometrySpeed_T_Toolbox;
+typedef kcg_int32 OdometrySpeed_T_Toolbox;
 
 /* NID_MN/ */
-typedef kcg_int64 NID_MN;
+typedef kcg_int32 NID_MN;
 
 /* API_RadioCommunication_Pkg::RadioManagement_T/ */
 typedef struct kcg_tag_RadioManagement_T_API_RadioCommunication_Pkg {
@@ -975,7 +975,7 @@ typedef struct kcg_tag_RadioManagement_T_API_RadioCommunication_Pkg {
 } RadioManagement_T_API_RadioCommunication_Pkg;
 
 /* TIU_Types_Pkg::NID_ctraction_T/ */
-typedef kcg_int64 NID_ctraction_T_TIU_Types_Pkg;
+typedef kcg_int32 NID_ctraction_T_TIU_Types_Pkg;
 
 /* TIU_Types_Pkg::M_voltage_T/ */
 typedef struct kcg_tag_M_voltage_T_TIU_Types_Pkg {
@@ -984,31 +984,31 @@ typedef struct kcg_tag_M_voltage_T_TIU_Types_Pkg {
 } M_voltage_T_TIU_Types_Pkg;
 
 /* Obu_BasicTypes_Pkg::V_internal_Type/ */
-typedef kcg_int64 V_internal_Type_Obu_BasicTypes_Pkg;
+typedef kcg_int32 V_internal_Type_Obu_BasicTypes_Pkg;
 
 /* D_EMERGENCYSTOP/ */
-typedef kcg_int64 D_EMERGENCYSTOP;
+typedef kcg_int32 D_EMERGENCYSTOP;
 
 /* D_REF/ */
-typedef kcg_int64 D_REF;
+typedef kcg_int32 D_REF;
 
 /* D_SR/ */
-typedef kcg_int64 D_SR;
+typedef kcg_int32 D_SR;
 
 /* NID_EM/ */
-typedef kcg_int64 NID_EM;
+typedef kcg_int32 NID_EM;
 
 /* NID_RBC/ */
-typedef kcg_int64 NID_RBC;
+typedef kcg_int32 NID_RBC;
 
 /* M_MCOUNT/ */
-typedef kcg_int64 M_MCOUNT;
+typedef kcg_int32 M_MCOUNT;
 
 /* Obu_BasicTypes_Pkg::A_internal_Type/ */
-typedef kcg_int64 A_internal_Type_Obu_BasicTypes_Pkg;
+typedef kcg_int32 A_internal_Type_Obu_BasicTypes_Pkg;
 
 /* Obu_BasicTypes_Pkg::V_odometry_Type/ */
-typedef kcg_int64 V_odometry_Type_Obu_BasicTypes_Pkg;
+typedef kcg_int32 V_odometry_Type_Obu_BasicTypes_Pkg;
 
 /* Obu_BasicTypes_Pkg::OdometrySpeeds_T/ */
 typedef struct kcg_tag_OdometrySpeeds_T_Obu_BasicTypes_Pkg {
@@ -1019,7 +1019,7 @@ typedef struct kcg_tag_OdometrySpeeds_T_Obu_BasicTypes_Pkg {
 } OdometrySpeeds_T_Obu_BasicTypes_Pkg;
 
 /* Obu_BasicTypes_Pkg::L_internal_Type/ */
-typedef kcg_int64 L_internal_Type_Obu_BasicTypes_Pkg;
+typedef kcg_int32 L_internal_Type_Obu_BasicTypes_Pkg;
 
 /* Obu_BasicTypes_Pkg::LocWithInAcc_T/ */
 typedef struct kcg_tag_LocWithInAcc_T_Obu_BasicTypes_Pkg {
@@ -1036,7 +1036,7 @@ typedef struct kcg_tag_OdometryLocations_T_Obu_BasicTypes_Pkg {
 } OdometryLocations_T_Obu_BasicTypes_Pkg;
 
 /* Obu_BasicTypes_Pkg::T_internal_Type/ */
-typedef kcg_int64 T_internal_Type_Obu_BasicTypes_Pkg;
+typedef kcg_int32 T_internal_Type_Obu_BasicTypes_Pkg;
 
 /* Obu_BasicTypes_Pkg::odometry_T/ */
 typedef struct kcg_tag_odometry_T_Obu_BasicTypes_Pkg {
@@ -1056,28 +1056,28 @@ typedef struct kcg_tag_centerOfBalisePosition_T_BG_Types_Pkg {
 } centerOfBalisePosition_T_BG_Types_Pkg;
 
 /* NID_PRVLRBG/ */
-typedef kcg_int64 NID_PRVLRBG;
+typedef kcg_int32 NID_PRVLRBG;
 
 /* V_TRAIN/ */
-typedef kcg_int64 V_TRAIN;
+typedef kcg_int32 V_TRAIN;
 
 /* L_TRAININT/ */
-typedef kcg_int64 L_TRAININT;
+typedef kcg_int32 L_TRAININT;
 
 /* L_DOUBTUNDER/ */
-typedef kcg_int64 L_DOUBTUNDER;
+typedef kcg_int32 L_DOUBTUNDER;
 
 /* L_DOUBTOVER/ */
-typedef kcg_int64 L_DOUBTOVER;
+typedef kcg_int32 L_DOUBTOVER;
 
 /* D_LRBG/ */
-typedef kcg_int64 D_LRBG;
+typedef kcg_int32 D_LRBG;
 
 /* NID_LRBG/ */
-typedef kcg_int64 NID_LRBG;
+typedef kcg_int32 NID_LRBG;
 
 /* Obu_BasicTypes_Pkg::BCD_T/ */
-typedef kcg_int64 BCD_T_Obu_BasicTypes_Pkg;
+typedef kcg_int32 BCD_T_Obu_BasicTypes_Pkg;
 
 /* Packet_TrainTypes_Pkg::telephoneNumber_T/,
    TM_conversions::C_P015_tracksim_compr/ */
@@ -1093,10 +1093,10 @@ typedef struct kcg_tag_sNID_RADIO_T_Packet_TrainTypes_Pkg {
 typedef sNID_RADIO_T_Packet_TrainTypes_Pkg aNID_RADIO_T_Packet_TrainTypes_Pkg[1];
 
 /* NID_CTRACTION/ */
-typedef kcg_int64 NID_CTRACTION;
+typedef kcg_int32 NID_CTRACTION;
 
 /* NID_NTC/ */
-typedef kcg_int64 NID_NTC;
+typedef kcg_int32 NID_NTC;
 
 /* PosData_T/ */
 typedef struct kcg_tag_PosData_T {
@@ -1118,7 +1118,7 @@ typedef struct kcg_tag_PosData_T {
 } PosData_T;
 
 /* NID_OPERATIONAL/ */
-typedef kcg_int64 NID_OPERATIONAL;
+typedef kcg_int32 NID_OPERATIONAL;
 
 /* Packet_TrainTypes_Pkg::PT5_TrainRunningNumber/ */
 typedef struct kcg_tag_PT5_TrainRunningNumber_Packet_TrainTypes_Pkg {
@@ -1127,25 +1127,25 @@ typedef struct kcg_tag_PT5_TrainRunningNumber_Packet_TrainTypes_Pkg {
 } PT5_TrainRunningNumber_Packet_TrainTypes_Pkg;
 
 /* N_AXLE/ */
-typedef kcg_int64 N_AXLE;
+typedef kcg_int32 N_AXLE;
 
 /* V_MAXTRAIN/ */
-typedef kcg_int64 V_MAXTRAIN;
+typedef kcg_int32 V_MAXTRAIN;
 
 /* L_TRAIN/ */
-typedef kcg_int64 L_TRAIN;
+typedef kcg_int32 L_TRAIN;
 
 /* NID_ENGINE/ */
-typedef kcg_int64 NID_ENGINE;
+typedef kcg_int32 NID_ENGINE;
 
 /* T_TRAIN/ */
-typedef kcg_int64 T_TRAIN;
+typedef kcg_int32 T_TRAIN;
 
 /* Clock_T/ */
 typedef struct kcg_tag_Clock_T { T_TRAIN m_Value; } Clock_T;
 
 /* NID_MESSAGE/ */
-typedef kcg_int64 NID_MESSAGE;
+typedef kcg_int32 NID_MESSAGE;
 
 /* TM_radio_messages::M_045_T/ */
 typedef struct kcg_tag_M_045_T_TM_radio_messages {
@@ -1248,10 +1248,10 @@ typedef struct kcg_tag_M_034_T_TM_radio_messages {
 } M_034_T_TM_radio_messages;
 
 /* NID_BG/ */
-typedef kcg_int64 NID_BG;
+typedef kcg_int32 NID_BG;
 
 /* D_LOC/ */
-typedef kcg_int64 D_LOC;
+typedef kcg_int32 D_LOC;
 
 /* Packet_Types_Pkg::IterPacket58_T/ */
 typedef struct kcg_tag_IterPacket58_T_Packet_Types_Pkg {
@@ -1262,13 +1262,13 @@ typedef struct kcg_tag_IterPacket58_T_Packet_Types_Pkg {
 typedef IterPacket58_T_Packet_Types_Pkg _22_array[32];
 
 /* N_ITER/ */
-typedef kcg_int64 N_ITER;
+typedef kcg_int32 N_ITER;
 
 /* D_CYCLOC/ */
-typedef kcg_int64 D_CYCLOC;
+typedef kcg_int32 D_CYCLOC;
 
 /* T_CYCLOC/ */
-typedef kcg_int64 T_CYCLOC;
+typedef kcg_int32 T_CYCLOC;
 
 /* PosRepParams_T/ */
 typedef struct kcg_tag_PosRepParams_T {
@@ -1282,13 +1282,13 @@ typedef struct kcg_tag_PosRepParams_T {
 } PosRepParams_T;
 
 /* T_CYCRQST/ */
-typedef kcg_int64 T_CYCRQST;
+typedef kcg_int32 T_CYCRQST;
 
 /* T_TIMEOUTRQST/ */
-typedef kcg_int64 T_TIMEOUTRQST;
+typedef kcg_int32 T_TIMEOUTRQST;
 
 /* T_MAR/ */
-typedef kcg_int64 T_MAR;
+typedef kcg_int32 T_MAR;
 
 /* MAReqParams_T/ */
 typedef struct kcg_tag_MAReqParams_T {
@@ -1299,25 +1299,25 @@ typedef struct kcg_tag_MAReqParams_T {
 } MAReqParams_T;
 
 /* T_NVCONTACT/ */
-typedef kcg_int64 T_NVCONTACT;
+typedef kcg_int32 T_NVCONTACT;
 
 /* V_NVREL/ */
-typedef kcg_int64 V_NVREL;
+typedef kcg_int32 V_NVREL;
 
 /* V_NVUNFIT/ */
-typedef kcg_int64 V_NVUNFIT;
+typedef kcg_int32 V_NVUNFIT;
 
 /* V_NVONSIGHT/ */
-typedef kcg_int64 V_NVONSIGHT;
+typedef kcg_int32 V_NVONSIGHT;
 
 /* V_NVSTFF/ */
-typedef kcg_int64 V_NVSTFF;
+typedef kcg_int32 V_NVSTFF;
 
 /* V_NVSHUNT/ */
-typedef kcg_int64 V_NVSHUNT;
+typedef kcg_int32 V_NVSHUNT;
 
 /* NID_C/ */
-typedef kcg_int64 NID_C;
+typedef kcg_int32 NID_C;
 
 /* NationalParams_T/ */
 typedef struct kcg_tag_NationalParams_T {
@@ -1362,7 +1362,7 @@ typedef struct kcg_tag_API_TelegramHeader_T_API_Msg_Pkg {
 } API_TelegramHeader_T_API_Msg_Pkg;
 
 /* NID_PACKET/ */
-typedef kcg_int64 NID_PACKET;
+typedef kcg_int32 NID_PACKET;
 
 /* TM_TrainToTrack::P001/ */
 typedef struct kcg_tag_P001_TM_TrainToTrack {
@@ -1436,65 +1436,65 @@ typedef struct kcg_tag_MetadataElement_T_Common_Types_Pkg {
   NID_PACKET nid_packet;
   Q_DIR q_dir;
   kcg_bool valid;
-  kcg_int64 startAddress;
-  kcg_int64 endAddress;
+  kcg_int32 startAddress;
+  kcg_int32 endAddress;
 } MetadataElement_T_Common_Types_Pkg;
 
 /* Common_Types_Pkg::Metadata_T/ */
 typedef MetadataElement_T_Common_Types_Pkg Metadata_T_Common_Types_Pkg[30];
 
-typedef kcg_int64 array_int64_100[100];
+typedef kcg_int32 array_int32_100[100];
 
-typedef kcg_int64 array_int64_21[21];
+typedef kcg_int32 array_int32_21[21];
 
-typedef kcg_int64 array_int64_24[24];
+typedef kcg_int32 array_int32_24[24];
 
 /* TIU_Types_Pkg::M_current_T/ */
 typedef struct kcg_tag_M_current_T_TIU_Types_Pkg {
   kcg_bool no_restriction;
-  kcg_int64 restriction;
+  kcg_int32 restriction;
 } M_current_T_TIU_Types_Pkg;
 
-typedef kcg_int64 array_int64_68[68];
+typedef kcg_int32 array_int32_68[68];
 
 /* Common_Types_Pkg::RBC_Id_T/ */
 typedef struct kcg_tag_RBC_Id_T_Common_Types_Pkg {
   kcg_bool valid;
   NID_C nid_c;
   NID_RBC rbc_id;
-  kcg_int64 device_id;
+  kcg_int32 device_id;
 } RBC_Id_T_Common_Types_Pkg;
 
 /* TM::P005_section_array_T/, TM_lib_internal::C_P005_fs_struct_to_array/ */
-typedef kcg_int64 P005_section_array_T_TM[7];
+typedef kcg_int32 P005_section_array_T_TM[7];
 
 /* TM::P005_OBU_sectionlist_array_T/,
    TM_lib_internal::C_P005_flatten_sections/ */
 typedef P005_section_array_T_TM P005_OBU_sectionlist_array_T_TM[33];
 
-typedef P005_OBU_sectionlist_array_T_TM array_int64_7_33_231[231];
+typedef P005_OBU_sectionlist_array_T_TM array_int32_7_33_231[231];
 
 /* TM_radio_messages::M_TrainTrack_MessageHd_T/ */
 typedef struct kcg_tag_M_TrainTrack_MessageHd_T_TM_radio_messages {
   kcg_bool valid;
-  kcg_int64 nid_message;
-  kcg_int64 l_message;
-  kcg_int64 t_train;
-  kcg_int64 nid_engine;
-  kcg_int64 field1;
-  kcg_int64 field2;
-  kcg_int64 field3;
+  kcg_int32 nid_message;
+  kcg_int32 l_message;
+  kcg_int32 t_train;
+  kcg_int32 nid_engine;
+  kcg_int32 field1;
+  kcg_int32 field2;
+  kcg_int32 field3;
 } M_TrainTrack_MessageHd_T_TM_radio_messages;
 
 /* TM::P005_section_int_T/ */
 typedef struct kcg_tag_P005_section_int_T_TM {
-  kcg_int64 D_LINK;
-  kcg_int64 Q_NEWCOUNTRY;
-  kcg_int64 NID_C;
-  kcg_int64 NID_BG;
-  kcg_int64 Q_LINKORIENTATION;
-  kcg_int64 Q_LINKREACTION;
-  kcg_int64 Q_LOCACC;
+  kcg_int32 D_LINK;
+  kcg_int32 Q_NEWCOUNTRY;
+  kcg_int32 NID_C;
+  kcg_int32 NID_BG;
+  kcg_int32 Q_LINKORIENTATION;
+  kcg_int32 Q_LINKREACTION;
+  kcg_int32 Q_LOCACC;
 } P005_section_int_T_TM;
 
 typedef P005_section_int_T_TM _31_array[1];
@@ -1508,57 +1508,57 @@ typedef P005_section_int_T_TM P005_trackide_sectionlist_T_TM[32];
 /* TM::P042_trackside_int_T/ */
 typedef struct kcg_tag_P042_trackside_int_T_TM {
   kcg_bool valid;
-  kcg_int64 NID_PACKET;
-  kcg_int64 Q_DIR;
-  kcg_int64 L_PACKET;
-  kcg_int64 Q_RBC;
-  kcg_int64 NID_C;
-  kcg_int64 NID_RBC;
-  kcg_int64 NID_RADIO;
-  kcg_int64 Q_SLEEPSESSION;
+  kcg_int32 NID_PACKET;
+  kcg_int32 Q_DIR;
+  kcg_int32 L_PACKET;
+  kcg_int32 Q_RBC;
+  kcg_int32 NID_C;
+  kcg_int32 NID_RBC;
+  kcg_int32 NID_RADIO;
+  kcg_int32 Q_SLEEPSESSION;
 } P042_trackside_int_T_TM;
 
 /* TM::P057_trackside_int_T/ */
 typedef struct kcg_tag_P057_trackside_int_T_TM {
   kcg_bool valid;
-  kcg_int64 NID_PACKET;
-  kcg_int64 Q_DIR;
-  kcg_int64 L_PACKET;
-  kcg_int64 T_MAR;
-  kcg_int64 T_TIMEOUTRQST;
-  kcg_int64 T_CYCRQST;
+  kcg_int32 NID_PACKET;
+  kcg_int32 Q_DIR;
+  kcg_int32 L_PACKET;
+  kcg_int32 T_MAR;
+  kcg_int32 T_TIMEOUTRQST;
+  kcg_int32 T_CYCRQST;
 } P057_trackside_int_T_TM;
 
 /* TM_radio_messages::M_032_int_T/ */
 typedef struct kcg_tag_M_032_int_T_TM_radio_messages {
   kcg_bool valid;
-  kcg_int64 nid_message;
-  kcg_int64 l_message;
-  kcg_int64 t_train;
-  kcg_int64 m_ack;
-  kcg_int64 nid_lrbg;
-  kcg_int64 m_version;
+  kcg_int32 nid_message;
+  kcg_int32 l_message;
+  kcg_int32 t_train;
+  kcg_int32 m_ack;
+  kcg_int32 nid_lrbg;
+  kcg_int32 m_version;
 } M_032_int_T_TM_radio_messages;
 
 /* TM_radio_messages::M_008_int_T/ */
 typedef struct kcg_tag_M_008_int_T_TM_radio_messages {
   kcg_bool valid;
-  kcg_int64 nid_message;
-  kcg_int64 l_message;
-  kcg_int64 t_train;
-  kcg_int64 m_ack;
-  kcg_int64 nid_lrbg;
-  kcg_int64 t_train_received;
+  kcg_int32 nid_message;
+  kcg_int32 l_message;
+  kcg_int32 t_train;
+  kcg_int32 m_ack;
+  kcg_int32 nid_lrbg;
+  kcg_int32 t_train_received;
 } M_008_int_T_TM_radio_messages;
 
 typedef struct kcg_tag_struct_151390 {
   kcg_bool valid;
-  kcg_int64 nid_message;
-  kcg_int64 l_message;
-  kcg_int64 t_train;
+  kcg_int32 nid_message;
+  kcg_int32 l_message;
+  kcg_int32 t_train;
   M_ACK m_ack;
-  kcg_int64 nid_lrbg;
-  kcg_int64 t_train_SH_request;
+  kcg_int32 nid_lrbg;
+  kcg_int32 t_train_SH_request;
 } struct_151390;
 
 /* TM_radio_messages::M_028_T/ */
@@ -1569,12 +1569,12 @@ typedef struct_151390 M_027_T_TM_radio_messages;
 
 typedef struct kcg_tag_struct_151363 {
   kcg_bool valid;
-  kcg_int64 nid_message;
-  kcg_int64 l_message;
-  kcg_int64 t_train;
+  kcg_int32 nid_message;
+  kcg_int32 l_message;
+  kcg_int32 t_train;
   M_ACK m_ack;
-  kcg_int64 nid_lrbg;
-  kcg_int64 nid_em;
+  kcg_int32 nid_lrbg;
+  kcg_int32 nid_em;
 } struct_151363;
 
 /* TM_radio_messages::M_016_T/ */
@@ -1585,9 +1585,9 @@ typedef struct_151363 M_018_T_TM_radio_messages;
 
 /* TM::P041_section_int_T/ */
 typedef struct kcg_tag_P041_section_int_T_TM {
-  kcg_int64 M_LEVELTR;
-  kcg_int64 NID_NTC;
-  kcg_int64 L_ACKLEVELTR;
+  kcg_int32 M_LEVELTR;
+  kcg_int32 NID_NTC;
+  kcg_int32 L_ACKLEVELTR;
 } P041_section_int_T_TM;
 
 typedef P041_section_int_T_TM _27_array[1];
@@ -1600,48 +1600,48 @@ typedef P041_section_int_T_TM P041_OBU_sectionlist_int_T_TM[33];
 
 /* RBC_Model_Pkg::TrainTrackMsgConversion::ConvertPackets/Det_if_P011:then:,
    TM_TrainToTrack::P011_TrainTrack_int/ */
-typedef kcg_int64 P011_TrainTrack_int_TM_TrainToTrack[25];
+typedef kcg_int32 P011_TrainTrack_int_TM_TrainToTrack[25];
 
-typedef kcg_int64 array_int64_104[104];
+typedef kcg_int32 array_int32_104[104];
 
-typedef kcg_int64 array_int64_499[499];
+typedef kcg_int32 array_int32_499[499];
 
-typedef kcg_int64 array_int64_72[72];
+typedef kcg_int32 array_int32_72[72];
 
 /* TM::Radio_TrackTrain_Header_T/ */
 typedef struct kcg_tag_Radio_TrackTrain_Header_T_TM {
-  kcg_int64 radioDevice;
-  kcg_int64 receivedSystemTime;
-  kcg_int64 nid_message;
-  kcg_int64 t_train;
-  kcg_int64 m_ack;
-  kcg_int64 nid_lrbg;
-  kcg_int64 t_train_reference;
-  kcg_int64 nid_em;
-  kcg_int64 q_scale;
-  kcg_int64 d_sr;
-  kcg_int64 t_sh_rqst;
-  kcg_int64 d_ref;
-  kcg_int64 q_dir;
-  kcg_int64 d_emergencystop;
-  kcg_int64 m_version;
+  kcg_int32 radioDevice;
+  kcg_int32 receivedSystemTime;
+  kcg_int32 nid_message;
+  kcg_int32 t_train;
+  kcg_int32 m_ack;
+  kcg_int32 nid_lrbg;
+  kcg_int32 t_train_reference;
+  kcg_int32 nid_em;
+  kcg_int32 q_scale;
+  kcg_int32 d_sr;
+  kcg_int32 t_sh_rqst;
+  kcg_int32 d_ref;
+  kcg_int32 q_dir;
+  kcg_int32 d_emergencystop;
+  kcg_int32 m_version;
 } Radio_TrackTrain_Header_T_TM;
 
 typedef struct kcg_tag_struct_151014 {
-  kcg_int64 radioDevice;
-  kcg_int64 receivedSystemTime;
-  kcg_int64 nid_message;
-  kcg_int64 t_train;
+  kcg_int32 radioDevice;
+  kcg_int32 receivedSystemTime;
+  kcg_int32 nid_message;
+  kcg_int32 t_train;
   M_ACK m_ack;
-  kcg_int64 nid_lrbg;
-  kcg_int64 t_train_reference;
-  kcg_int64 nid_em;
+  kcg_int32 nid_lrbg;
+  kcg_int32 t_train_reference;
+  kcg_int32 nid_em;
   Q_SCALE q_scale;
-  kcg_int64 d_sr;
-  kcg_int64 t_sh_rqst;
-  kcg_int64 d_ref;
+  kcg_int32 d_sr;
+  kcg_int32 t_sh_rqst;
+  kcg_int32 d_ref;
   Q_DIR q_dir;
-  kcg_int64 d_emergencystop;
+  kcg_int32 d_emergencystop;
   M_VERSION m_version;
 } struct_151014;
 
@@ -1662,36 +1662,36 @@ typedef struct kcg_tag_API_RadioMsgHeader_T_API_Msg_Pkg {
 
 /* TM::BaliseTelegramHeader_int_T/ */
 typedef struct kcg_tag_BaliseTelegramHeader_int_T_TM {
-  kcg_int64 q_updown;
-  kcg_int64 m_version;
-  kcg_int64 q_media;
-  kcg_int64 n_pig;
-  kcg_int64 n_total;
-  kcg_int64 m_dup;
-  kcg_int64 m_mcount;
-  kcg_int64 nid_c;
-  kcg_int64 nid_bg;
-  kcg_int64 q_link;
+  kcg_int32 q_updown;
+  kcg_int32 m_version;
+  kcg_int32 q_media;
+  kcg_int32 n_pig;
+  kcg_int32 n_total;
+  kcg_int32 m_dup;
+  kcg_int32 m_mcount;
+  kcg_int32 nid_c;
+  kcg_int32 nid_bg;
+  kcg_int32 q_link;
 } BaliseTelegramHeader_int_T_TM;
 
 /* TrainToTrack::Position_Report/ */
 typedef struct kcg_tag_Position_Report_TrainToTrack {
-  kcg_int64 NID_PACKET;
-  kcg_int64 L_PACKET;
+  kcg_int32 NID_PACKET;
+  kcg_int32 L_PACKET;
   Q_SCALE qscale;
-  kcg_int64 NID_LRBG;
-  kcg_int64 D_LRBG;
+  kcg_int32 NID_LRBG;
+  kcg_int32 D_LRBG;
   Q_DIRLRBG dirlrbg;
   Q_DLRBG dlrbg;
-  kcg_int64 L_DOUBTOVER;
-  kcg_int64 L_DOUBTUNDER;
+  kcg_int32 L_DOUBTOVER;
+  kcg_int32 L_DOUBTUNDER;
   Q_LENGTH length;
-  kcg_int64 L_TRAININT;
-  kcg_int64 V_TRAIN;
+  kcg_int32 L_TRAININT;
+  kcg_int32 V_TRAIN;
   Q_DIRTRAIN dirtrain;
   M_MODE mode;
   M_LEVEL level;
-  kcg_int64 NID_NTC;
+  kcg_int32 NID_NTC;
 } Position_Report_TrainToTrack;
 
 /* Packet_TrainTypes_Pkg::PT0_PositionReport_T/ */
@@ -1702,23 +1702,23 @@ typedef struct kcg_tag_PT0_PositionReport_T_Packet_TrainTypes_Pkg {
 
 /* TrainToTrack::Position_Report_based_on_two_balise_groups/ */
 typedef struct kcg_tag_Position_Report_based_on_two_balise_groups_TrainToTrack {
-  kcg_int64 NID_PACKET;
-  kcg_int64 L_PACKET;
+  kcg_int32 NID_PACKET;
+  kcg_int32 L_PACKET;
   Q_SCALE qscale;
-  kcg_int64 NID_LRBG;
-  kcg_int64 NID_PRVLRBG;
-  kcg_int64 D_LRBG;
+  kcg_int32 NID_LRBG;
+  kcg_int32 NID_PRVLRBG;
+  kcg_int32 D_LRBG;
   Q_DIRLRBG dirlrbg;
   Q_DLRBG dlrbg;
-  kcg_int64 L_DOUBTOVER;
-  kcg_int64 L_DOUBTUNDER;
+  kcg_int32 L_DOUBTOVER;
+  kcg_int32 L_DOUBTUNDER;
   Q_LENGTH length;
-  kcg_int64 L_TRAININT;
-  kcg_int64 V_TRAIN;
+  kcg_int32 L_TRAININT;
+  kcg_int32 V_TRAIN;
   Q_DIRTRAIN dirtrain;
   M_MODE mode;
   M_LEVEL level;
-  kcg_int64 NID_NTC;
+  kcg_int32 NID_NTC;
 } Position_Report_based_on_two_balise_groups_TrainToTrack;
 
 /* Packet_TrainTypes_Pkg::PT1_PositionReport_2BG_T/ */
@@ -1730,90 +1730,90 @@ typedef struct kcg_tag_PT1_PositionReport_2BG_T_Packet_TrainTypes_Pkg {
 /* TM::P005_trackside_int_T/ */
 typedef struct kcg_tag_P005_trackside_int_T_TM {
   kcg_bool valid;
-  kcg_int64 NID_PACKET;
-  kcg_int64 Q_DIR;
-  kcg_int64 L_PACKET;
-  kcg_int64 Q_SCALE;
-  kcg_int64 D_LINK;
-  kcg_int64 Q_NEWCOUNTRY;
-  kcg_int64 NID_C;
-  kcg_int64 NID_BG;
-  kcg_int64 Q_LINKORIENTATION;
-  kcg_int64 Q_LINKREACTION;
-  kcg_int64 Q_LOCACC;
-  kcg_int64 N_ITER;
+  kcg_int32 NID_PACKET;
+  kcg_int32 Q_DIR;
+  kcg_int32 L_PACKET;
+  kcg_int32 Q_SCALE;
+  kcg_int32 D_LINK;
+  kcg_int32 Q_NEWCOUNTRY;
+  kcg_int32 NID_C;
+  kcg_int32 NID_BG;
+  kcg_int32 Q_LINKORIENTATION;
+  kcg_int32 Q_LINKREACTION;
+  kcg_int32 Q_LOCACC;
+  kcg_int32 N_ITER;
   P005_trackide_sectionlist_T_TM SECTIONS;
 } P005_trackside_int_T_TM;
 
 /* TM_radio_messages::M_TrackTrain_Radio_T/ */
 typedef struct kcg_tag_M_TrackTrain_Radio_T_TM_radio_messages {
   kcg_bool valid;
-  kcg_int64 nid_message;
-  kcg_int64 l_message;
-  kcg_int64 t_train;
-  kcg_int64 field1;
-  kcg_int64 field2;
-  kcg_int64 field3;
-  kcg_int64 field4;
-  kcg_int64 field5;
-  kcg_int64 field6;
-  kcg_int64 field7;
-  kcg_int64 field8;
+  kcg_int32 nid_message;
+  kcg_int32 l_message;
+  kcg_int32 t_train;
+  kcg_int32 field1;
+  kcg_int32 field2;
+  kcg_int32 field3;
+  kcg_int32 field4;
+  kcg_int32 field5;
+  kcg_int32 field6;
+  kcg_int32 field7;
+  kcg_int32 field8;
 } M_TrackTrain_Radio_T_TM_radio_messages;
 
 /* TM_radio_messages::M_015_int_T/ */
 typedef struct kcg_tag_M_015_int_T_TM_radio_messages {
   kcg_bool valid;
-  kcg_int64 nid_message;
-  kcg_int64 l_message;
-  kcg_int64 t_train;
-  kcg_int64 m_ack;
-  kcg_int64 nid_lrbg;
-  kcg_int64 nid_em;
-  kcg_int64 q_scale;
-  kcg_int64 d_ref;
-  kcg_int64 q_dir;
-  kcg_int64 d_emergencystop;
+  kcg_int32 nid_message;
+  kcg_int32 l_message;
+  kcg_int32 t_train;
+  kcg_int32 m_ack;
+  kcg_int32 nid_lrbg;
+  kcg_int32 nid_em;
+  kcg_int32 q_scale;
+  kcg_int32 d_ref;
+  kcg_int32 q_dir;
+  kcg_int32 d_emergencystop;
 } M_015_int_T_TM_radio_messages;
 
 /* TM::P041_trackside_int_T/ */
 typedef struct kcg_tag_P041_trackside_int_T_TM {
   kcg_bool valid;
-  kcg_int64 NID_PACKET;
-  kcg_int64 Q_DIR;
-  kcg_int64 L_PACKET;
-  kcg_int64 Q_SCALE;
-  kcg_int64 D_LEVELTR;
-  kcg_int64 M_LEVELTR;
-  kcg_int64 NID_NTC;
-  kcg_int64 L_ACKLEVELTR;
-  kcg_int64 N_ITER;
+  kcg_int32 NID_PACKET;
+  kcg_int32 Q_DIR;
+  kcg_int32 L_PACKET;
+  kcg_int32 Q_SCALE;
+  kcg_int32 D_LEVELTR;
+  kcg_int32 M_LEVELTR;
+  kcg_int32 NID_NTC;
+  kcg_int32 L_ACKLEVELTR;
+  kcg_int32 N_ITER;
   P041_trackide_sectionlist_T_TM SECTIONS;
 } P041_trackside_int_T_TM;
 
 /* TM::P065_trackside_int_T/ */
 typedef struct kcg_tag_P065_trackside_int_T_TM {
   kcg_bool valid;
-  kcg_int64 NID_PACKET;
-  kcg_int64 Q_DIR;
-  kcg_int64 L_PACKET;
-  kcg_int64 Q_SCALE;
-  kcg_int64 NID_TSR;
-  kcg_int64 D_TSR;
-  kcg_int64 L_TSR;
-  kcg_int64 Q_FRONT;
-  kcg_int64 V_TSR;
+  kcg_int32 NID_PACKET;
+  kcg_int32 Q_DIR;
+  kcg_int32 L_PACKET;
+  kcg_int32 Q_SCALE;
+  kcg_int32 NID_TSR;
+  kcg_int32 D_TSR;
+  kcg_int32 L_TSR;
+  kcg_int32 Q_FRONT;
+  kcg_int32 V_TSR;
 } P065_trackside_int_T_TM;
 
-typedef kcg_int64 array_int64_350[350];
+typedef kcg_int32 array_int32_350[350];
 
 /* TM_TrainToTrack::Array11/, TM_TrainToTrack::C_compr_P011/ */
-typedef kcg_int64 Array11_TM_TrainToTrack[11];
+typedef kcg_int32 Array11_TM_TrainToTrack[11];
 
 /* TM::P058_section_int_T/ */
 typedef struct kcg_tag_P058_section_int_T_TM {
-  kcg_int64 D_LOC;
-  kcg_int64 Q_LGTLOC;
+  kcg_int32 D_LOC;
+  kcg_int32 Q_LGTLOC;
 } P058_section_int_T_TM;
 
 typedef P058_section_int_T_TM _21_array[32];
@@ -1827,22 +1827,22 @@ typedef _21_array P058_trackide_sectionlist_T_TM;
 /* TM::P058_trackside_int_T/ */
 typedef struct kcg_tag_P058_trackside_int_T_TM {
   kcg_bool valid;
-  kcg_int64 NID_PACKET;
-  kcg_int64 Q_DIR;
-  kcg_int64 L_PACKET;
-  kcg_int64 Q_SCALE;
-  kcg_int64 T_CYCLOC;
-  kcg_int64 D_CYCLOC;
-  kcg_int64 M_LOC;
-  kcg_int64 N_ITER;
+  kcg_int32 NID_PACKET;
+  kcg_int32 Q_DIR;
+  kcg_int32 L_PACKET;
+  kcg_int32 Q_SCALE;
+  kcg_int32 T_CYCLOC;
+  kcg_int32 D_CYCLOC;
+  kcg_int32 M_LOC;
+  kcg_int32 N_ITER;
   P058_trackide_sectionlist_T_TM SECTIONS;
 } P058_trackside_int_T_TM;
 
 /* TM::P021_section_int_T/ */
 typedef struct kcg_tag_P021_section_int_T_TM {
-  kcg_int64 D_GRADIENT;
-  kcg_int64 Q_GDIR;
-  kcg_int64 G_A;
+  kcg_int32 D_GRADIENT;
+  kcg_int32 Q_GDIR;
+  kcg_int32 G_A;
 } P021_section_int_T_TM;
 
 typedef P021_section_int_T_TM _28_array[1];
@@ -1853,14 +1853,14 @@ typedef P021_section_int_T_TM P021_trackide_sectionlist_T_TM[32];
 /* TM::P021_trackside_int_T/ */
 typedef struct kcg_tag_P021_trackside_int_T_TM {
   kcg_bool valid;
-  kcg_int64 NID_PACKET;
-  kcg_int64 Q_DIR;
-  kcg_int64 L_PACKET;
-  kcg_int64 Q_SCALE;
-  kcg_int64 D_GRADIENT;
-  kcg_int64 Q_GDIR;
-  kcg_int64 G_A;
-  kcg_int64 N_ITER;
+  kcg_int32 NID_PACKET;
+  kcg_int32 Q_DIR;
+  kcg_int32 L_PACKET;
+  kcg_int32 Q_SCALE;
+  kcg_int32 D_GRADIENT;
+  kcg_int32 Q_GDIR;
+  kcg_int32 G_A;
+  kcg_int32 N_ITER;
   P021_trackide_sectionlist_T_TM SECTIONS;
 } P021_trackside_int_T_TM;
 
@@ -1869,7 +1869,7 @@ typedef P021_section_int_T_TM P021_OBU_sectionlist_int_T_TM[33];
 
 typedef struct kcg_tag_struct_150212 {
   M_VOLTAGE m_voltage;
-  kcg_int64 nid_ctraction;
+  kcg_int32 nid_ctraction;
 } struct_150212;
 
 /* TM_TrainToTrack::P011_voltage/ */
@@ -1886,7 +1886,7 @@ typedef _23_array P011_voltage_list_TM_TrainToTrack;
 /* Packet_TrainTypes_Pkg::aTractionIdentity_T/ */
 typedef _23_array aTractionIdentity_T_Packet_TrainTypes_Pkg;
 
-typedef kcg_int64 array_int64_105[105];
+typedef kcg_int32 array_int32_105[105];
 
 /* Common_Types_Pkg::CompressedPacketData_T/,
    TM_conversions::C_P005_tracksim_compr/,
@@ -1905,9 +1905,9 @@ typedef kcg_int64 array_int64_105[105];
    TM_conversions_baseline2::C_P027V1_tracksim_compr_body/,
    TM_conversions_baseline2::C_P027V1_tracksim_compr_one_section/,
    TM_lib_internal::SEND_MessageData/ */
-typedef kcg_int64 CompressedPacketData_T_Common_Types_Pkg[500];
+typedef kcg_int32 CompressedPacketData_T_Common_Types_Pkg[500];
 
-typedef CompressedPacketData_T_Common_Types_Pkg array_int64_500_500[500];
+typedef CompressedPacketData_T_Common_Types_Pkg array_int32_500_500[500];
 
 /* Common_Types_Pkg::CompressedPackets_T/ */
 typedef struct kcg_tag_CompressedPackets_T_Common_Types_Pkg {
@@ -1919,9 +1919,9 @@ typedef struct kcg_tag_CompressedPackets_T_Common_Types_Pkg {
 typedef struct kcg_tag_B_data_internal_T_InfraLib {
   BaliseTelegramHeader_int_T_TM header;
   CompressedPackets_T_Common_Types_Pkg packets;
-  kcg_int64 engineering_BG_location;
-  kcg_float64 TrainPos;
-  kcg_int64 pig_nom_0;
+  kcg_int32 engineering_BG_location;
+  kcg_float32 TrainPos;
+  kcg_int32 pig_nom_0;
   kcg_bool balise_passed;
 } B_data_internal_T_InfraLib;
 
@@ -1970,29 +1970,29 @@ typedef struct kcg_tag_CompressedBaliseMessage_TM {
   CompressedPackets_T_Common_Types_Pkg Messages;
 } CompressedBaliseMessage_TM;
 
-typedef kcg_int64 array_int64_395[395];
+typedef kcg_int32 array_int32_395[395];
 
-typedef kcg_int64 array_int64_150[150];
+typedef kcg_int32 array_int32_150[150];
 
-typedef kcg_int64 array_int64_428[428];
+typedef kcg_int32 array_int32_428[428];
 
-typedef kcg_int64 array_int64_1[1];
+typedef kcg_int32 array_int32_1[1];
 
-typedef kcg_int64 array_int64_396[396];
+typedef kcg_int32 array_int32_396[396];
 
 /* TM::P045_trackside_int_T/ */
 typedef struct kcg_tag_P045_trackside_int_T_TM {
   kcg_bool valid;
-  kcg_int64 NID_PACKET;
-  kcg_int64 Q_DIR;
-  kcg_int64 L_PACKET;
-  kcg_int64 NID_MN;
+  kcg_int32 NID_PACKET;
+  kcg_int32 Q_DIR;
+  kcg_int32 L_PACKET;
+  kcg_int32 NID_MN;
 } P045_trackside_int_T_TM;
 
 /* TM_baseline2::P027V1_section_int_qdiff_T/ */
 typedef struct kcg_tag_P027V1_section_int_qdiff_T_TM_baseline2 {
-  kcg_int64 NC_DIFF;
-  kcg_int64 V_DIFF;
+  kcg_int32 NC_DIFF;
+  kcg_int32 V_DIFF;
 } P027V1_section_int_qdiff_T_TM_baseline2;
 
 typedef P027V1_section_int_qdiff_T_TM_baseline2 _20_array[32];
@@ -2003,58 +2003,58 @@ typedef _20_array _6_P027V1_OBU_sectionlist_int_qdiff_T_TM_baseline2;
 /* TM_baseline2::P027V1_trackside_qdifflist_T/ */
 typedef _20_array P027V1_trackside_qdifflist_T_TM_baseline2;
 
-typedef kcg_int64 array_int64_2[2];
+typedef kcg_int32 array_int32_2[2];
 
 /* TM::P046_section_array_T/ */
-typedef array_int64_2 P046_section_array_T_TM;
+typedef array_int32_2 P046_section_array_T_TM;
 
 /* TM::P046_OBU_sectionlist_array_T/,
    TM_lib_internal::C_P046_flatten_sections/ */
 typedef P046_section_array_T_TM P046_OBU_sectionlist_array_T_TM[33];
 
-typedef P046_OBU_sectionlist_array_T_TM array_int64_2_33_99[99];
+typedef P046_OBU_sectionlist_array_T_TM array_int32_2_33_99[99];
 
 /* TM::P058_section_array_T/ */
-typedef array_int64_2 P058_section_array_T_TM;
+typedef array_int32_2 P058_section_array_T_TM;
 
 /* TM_baseline2::P027V1_section_array_qdiff_T/ */
-typedef array_int64_2 P027V1_section_array_qdiff_T_TM_baseline2;
+typedef array_int32_2 P027V1_section_array_qdiff_T_TM_baseline2;
 
-typedef array_int64_2 array_int64_2_32[32];
+typedef array_int32_2 array_int32_2_32[32];
 
 /* TM::P058_OBU_sectionlist_array_T/ */
-typedef array_int64_2_32 P058_OBU_sectionlist_array_T_TM;
+typedef array_int32_2_32 P058_OBU_sectionlist_array_T_TM;
 
 /* TM_baseline2::P027V1_OBU_sectionlist_array_qdiff_T/ */
-typedef array_int64_2_32 _7_P027V1_OBU_sectionlist_array_qdiff_T_TM_baseline2;
+typedef array_int32_2_32 _7_P027V1_OBU_sectionlist_array_qdiff_T_TM_baseline2;
 
-typedef array_int64_2_32 array_int64_2_32_32[32];
+typedef array_int32_2_32 array_int32_2_32_32[32];
 
-typedef array_int64_2_32 array_int64_2_32_64[64];
+typedef array_int32_2_32 array_int32_2_32_64[64];
 
-typedef kcg_int64 array_int64_432[432];
+typedef kcg_int32 array_int32_432[432];
 
-typedef kcg_int64 array_int64_400[400];
+typedef kcg_int32 array_int32_400[400];
 
-typedef kcg_int64 array_int64_444[444];
+typedef kcg_int32 array_int32_444[444];
 
 /* TIU_Types_Pkg::Passenger_door_control_info_T/ */
 typedef struct kcg_tag_Passenger_door_control_info_T_TIU_Types_Pkg {
   kcg_bool valid;
-  kcg_int64 door_control_info;
+  kcg_int32 door_control_info;
 } Passenger_door_control_info_T_TIU_Types_Pkg;
 
-typedef kcg_int64 array_int64_17[17];
+typedef kcg_int32 array_int32_17[17];
 
 /* TM_TrainToTrack::P001_TrainTrack_int/ */
-typedef array_int64_17 P001_TrainTrack_int_TM_TrainToTrack;
+typedef array_int32_17 P001_TrainTrack_int_TM_TrainToTrack;
 
 /* TM_TrainToTrack::P000_TrainTrack_int/ */
-typedef array_int64_17 P000_TrainTrack_int_TM_TrainToTrack;
+typedef array_int32_17 P000_TrainTrack_int_TM_TrainToTrack;
 
 typedef struct kcg_tag_struct_149909 {
-  kcg_int64 now;
-  kcg_int64 distance;
+  kcg_int32 now;
+  kcg_int32 distance;
 } struct_149909;
 
 /* TIU_Types_Pkg::D_test_current_T/ */
@@ -2120,93 +2120,93 @@ typedef struct kcg_tag_Type_I_train_and_brake_inhibition_with_distance_commands_
 /* TIU_Types_Pkg::D_test_distance_T/ */
 typedef struct_149909 D_test_distance_T_TIU_Types_Pkg;
 
-typedef kcg_int64 array_int64_491[491];
+typedef kcg_int32 array_int32_491[491];
 
-typedef kcg_int64 array_int64_64[64];
+typedef kcg_int32 array_int32_64[64];
 
 /* TM::P058_sections_array_flat_T/ */
-typedef array_int64_64 P058_sections_array_flat_T_TM;
+typedef array_int32_64 P058_sections_array_flat_T_TM;
 
 /* TM_baseline2::P027V1_sections_array_flat_qdiff_T/ */
-typedef array_int64_64 P027V1_sections_array_flat_qdiff_T_TM_baseline2;
+typedef array_int32_64 P027V1_sections_array_flat_qdiff_T_TM_baseline2;
 
-typedef kcg_int64 array_int64_494[494];
+typedef kcg_int32 array_int32_494[494];
 
 /* TM_baseline2::P003V1_trackide_sectionlist_T/ */
-typedef kcg_int64 P003V1_trackide_sectionlist_T_TM_baseline2[32];
+typedef kcg_int32 P003V1_trackide_sectionlist_T_TM_baseline2[32];
 
 /* TM_baseline2::P003V1_trackside_int_T/ */
 typedef struct kcg_tag_P003V1_trackside_int_T_TM_baseline2 {
   kcg_bool valid;
-  kcg_int64 NID_PACKET;
-  kcg_int64 Q_DIR;
-  kcg_int64 L_PACKET;
-  kcg_int64 Q_SCALE;
-  kcg_int64 D_VALIDNV;
-  kcg_int64 N_ITER;
+  kcg_int32 NID_PACKET;
+  kcg_int32 Q_DIR;
+  kcg_int32 L_PACKET;
+  kcg_int32 Q_SCALE;
+  kcg_int32 D_VALIDNV;
+  kcg_int32 N_ITER;
   P003V1_trackide_sectionlist_T_TM_baseline2 SECTIONS;
-  kcg_int64 V_NVSHUNT;
-  kcg_int64 V_NVSTFF;
-  kcg_int64 V_NVONSIGHT;
-  kcg_int64 V_NVUNFIT;
-  kcg_int64 V_NVREL;
-  kcg_int64 D_NVROLL;
-  kcg_int64 Q_NVSRBKTRG;
-  kcg_int64 Q_NVEMRRLS;
-  kcg_int64 V_NVALLOWOVTRP;
-  kcg_int64 V_NVSUPOVTRP;
-  kcg_int64 D_NVOVTRP;
-  kcg_int64 T_NVOVTRP;
-  kcg_int64 D_NVPOTRP;
-  kcg_int64 M_NVCONTACT;
-  kcg_int64 T_NVCONTACT;
-  kcg_int64 M_NVDERUN;
-  kcg_int64 D_NVSTFF;
-  kcg_int64 Q_NVDRIVER_ADHES;
+  kcg_int32 V_NVSHUNT;
+  kcg_int32 V_NVSTFF;
+  kcg_int32 V_NVONSIGHT;
+  kcg_int32 V_NVUNFIT;
+  kcg_int32 V_NVREL;
+  kcg_int32 D_NVROLL;
+  kcg_int32 Q_NVSRBKTRG;
+  kcg_int32 Q_NVEMRRLS;
+  kcg_int32 V_NVALLOWOVTRP;
+  kcg_int32 V_NVSUPOVTRP;
+  kcg_int32 D_NVOVTRP;
+  kcg_int32 T_NVOVTRP;
+  kcg_int32 D_NVPOTRP;
+  kcg_int32 M_NVCONTACT;
+  kcg_int32 T_NVCONTACT;
+  kcg_int32 M_NVDERUN;
+  kcg_int32 D_NVSTFF;
+  kcg_int32 Q_NVDRIVER_ADHES;
 } P003V1_trackside_int_T_TM_baseline2;
 
 /* TIU_Types_Pkg::Brake_pressure_value_T/ */
 typedef struct kcg_tag_Brake_pressure_value_T_TIU_Types_Pkg {
   kcg_bool valid;
-  kcg_int64 pressure;
+  kcg_int32 pressure;
 } Brake_pressure_value_T_TIU_Types_Pkg;
 
-typedef kcg_int64 array_int64_430[430];
+typedef kcg_int32 array_int32_430[430];
 
-typedef kcg_int64 array_int64_3[3];
+typedef kcg_int32 array_int32_3[3];
 
 /* TM::P041_section_array_T/ */
-typedef array_int64_3 P041_section_array_T_TM;
+typedef array_int32_3 P041_section_array_T_TM;
 
 /* TM_TrainToTrack::Array03/ */
-typedef array_int64_3 Array03_TM_TrainToTrack;
+typedef array_int32_3 Array03_TM_TrainToTrack;
 
 /* TM_TrainToTrack::P005_TrainTrack_int/ */
-typedef array_int64_3 P005_TrainTrack_int_TM_TrainToTrack;
+typedef array_int32_3 P005_TrainTrack_int_TM_TrainToTrack;
 
 /* TM_TrainToTrack::P004_TrainTrack_int/ */
-typedef array_int64_3 P004_TrainTrack_int_TM_TrainToTrack;
+typedef array_int32_3 P004_TrainTrack_int_TM_TrainToTrack;
 
 /* TM_TrainToTrack::P009_TrainTrack_int/ */
-typedef array_int64_3 P009_TrainTrack_int_TM_TrainToTrack;
+typedef array_int32_3 P009_TrainTrack_int_TM_TrainToTrack;
 
 /* TM::P021_section_array_T/ */
-typedef array_int64_3 P021_section_array_T_TM;
+typedef array_int32_3 P021_section_array_T_TM;
 
-typedef array_int64_3 array_int64_3_33[33];
+typedef array_int32_3 array_int32_3_33[33];
 
 /* TM::P041_OBU_sectionlist_array_T/ */
-typedef array_int64_3_33 P041_OBU_sectionlist_array_T_TM;
+typedef array_int32_3_33 P041_OBU_sectionlist_array_T_TM;
 
 /* TM::P021_OBU_sectionlist_array_T/ */
-typedef array_int64_3_33 P021_OBU_sectionlist_array_T_TM;
+typedef array_int32_3_33 P021_OBU_sectionlist_array_T_TM;
 
-typedef array_int64_3_33 array_int64_3_33_99[99];
+typedef array_int32_3_33 array_int32_3_33_99[99];
 
-typedef array_int64_3_33 array_int64_3_33_231[231];
+typedef array_int32_3_33 array_int32_3_33_231[231];
 
 /* TM_radio_messages::M_TrainTrack_compressed_packets_T/ */
-typedef kcg_int64 M_TrainTrack_compressed_packets_T_TM_radio_messages[50];
+typedef kcg_int32 M_TrainTrack_compressed_packets_T_TM_radio_messages[50];
 
 /* TM_radio_messages::M_TrainTrack_Message_T/ */
 typedef struct kcg_tag_M_TrainTrack_Message_T_TM_radio_messages {
@@ -2216,10 +2216,10 @@ typedef struct kcg_tag_M_TrainTrack_Message_T_TM_radio_messages {
 
 /* TM::P015_section_int_T/ */
 typedef struct kcg_tag_P015_section_int_T_TM {
-  kcg_int64 L_SECTION;
-  kcg_int64 Q_SECTIONTIMER;
-  kcg_int64 T_SECTIONTIMER;
-  kcg_int64 D_SECTIONTIMERSTOPLOC;
+  kcg_int32 L_SECTION;
+  kcg_int32 Q_SECTIONTIMER;
+  kcg_int32 T_SECTIONTIMER;
+  kcg_int32 D_SECTIONTIMERSTOPLOC;
 } P015_section_int_T_TM;
 
 typedef P015_section_int_T_TM _19_array[32];
@@ -2233,37 +2233,37 @@ typedef _19_array P015_trackide_sectionlist_T_TM;
 /* TM::P015_trackside_int_T/ */
 typedef struct kcg_tag_P015_trackside_int_T_TM {
   kcg_bool valid;
-  kcg_int64 NID_PACKET;
-  kcg_int64 Q_DIR;
-  kcg_int64 L_PACKET;
-  kcg_int64 Q_SCALE;
-  kcg_int64 V_LOA;
-  kcg_int64 T_LOA;
-  kcg_int64 N_ITER;
+  kcg_int32 NID_PACKET;
+  kcg_int32 Q_DIR;
+  kcg_int32 L_PACKET;
+  kcg_int32 Q_SCALE;
+  kcg_int32 V_LOA;
+  kcg_int32 T_LOA;
+  kcg_int32 N_ITER;
   P015_trackide_sectionlist_T_TM SECTIONS;
-  kcg_int64 L_ENDSECTION;
-  kcg_int64 Q_SECTIONTIMER;
-  kcg_int64 T_SECTIONTIMER;
-  kcg_int64 D_SECTIONTIMERSTOPLOC;
-  kcg_int64 Q_ENDTIMER;
-  kcg_int64 T_ENDTIMER;
-  kcg_int64 D_ENDTIMERSTARTLOC;
-  kcg_int64 Q_DANGERPOINT;
-  kcg_int64 D_DP;
-  kcg_int64 V_RELEASEDP;
-  kcg_int64 Q_OVERLAP;
-  kcg_int64 D_STARTOL;
-  kcg_int64 T_OL;
-  kcg_int64 D_OL;
-  kcg_int64 V_RELEASEOL;
+  kcg_int32 L_ENDSECTION;
+  kcg_int32 Q_SECTIONTIMER;
+  kcg_int32 T_SECTIONTIMER;
+  kcg_int32 D_SECTIONTIMERSTOPLOC;
+  kcg_int32 Q_ENDTIMER;
+  kcg_int32 T_ENDTIMER;
+  kcg_int32 D_ENDTIMERSTARTLOC;
+  kcg_int32 Q_DANGERPOINT;
+  kcg_int32 D_DP;
+  kcg_int32 V_RELEASEDP;
+  kcg_int32 Q_OVERLAP;
+  kcg_int32 D_STARTOL;
+  kcg_int32 T_OL;
+  kcg_int32 D_OL;
+  kcg_int32 V_RELEASEOL;
 } P015_trackside_int_T_TM;
 
-typedef kcg_int64 array_int64_18[18];
+typedef kcg_int32 array_int32_18[18];
 
 typedef struct kcg_tag_struct_149762 {
-  kcg_int64 NID_C;
-  kcg_int64 NID_BG;
-  kcg_int64 Pos;
+  kcg_int32 NID_C;
+  kcg_int32 NID_BG;
+  kcg_int32 Pos;
   OrBG_TM Or_BG;
   OrLine_TM Or_Line;
 } struct_149762;
@@ -2274,9 +2274,9 @@ typedef struct_149762 BaliseGroupData_Basics;
 /* TM::BaliseGroupData/ */
 typedef struct_149762 BaliseGroupData_TM;
 
-typedef kcg_int64 array_int64_492[492];
+typedef kcg_int32 array_int32_492[492];
 
-typedef kcg_int64 array_int64_33[33];
+typedef kcg_int32 array_int32_33[33];
 
 /* TM::P015_section_array_T/,
    TM_TrainToTrack_lib_internal::C_P011_unflatten_sections_voltage/,
@@ -2287,18 +2287,18 @@ typedef kcg_int64 array_int64_33[33];
    TM_conversions::C_P137_tracksim_compr/,
    TM_conversions_baseline2::C_P027V1_tracksim_compr_one_section/,
    TM_lib_internal::C_P015_fs_struct_to_array/ */
-typedef kcg_int64 P015_section_array_T_TM[4];
+typedef kcg_int32 P015_section_array_T_TM[4];
 
 /* TM::P015_OBU_sectionlist_array_T/,
    TM_lib_internal::C_P015_flatten_sections/ */
 typedef P015_section_array_T_TM P015_OBU_sectionlist_array_T_TM[32];
 
-typedef P015_OBU_sectionlist_array_T_TM array_int64_4_32_128[128];
+typedef P015_OBU_sectionlist_array_T_TM array_int32_4_32_128[128];
 
 /* RBC_Diagnostic_Pkg::DiagMsg_T/ */
 typedef struct kcg_tag_DiagMsg_T_RBC_Diagnostic_Pkg {
   kcg_bool valid;
-  kcg_int64 count;
+  kcg_int32 count;
   T_TRAIN timestamp;
   DiagMsgType_E_RBC_Diagnostic_Pkg diagType;
   DiagMsgSrc_E_RBC_Diagnostic_Pkg diagSrc;
@@ -2309,9 +2309,9 @@ typedef DiagMsg_T_RBC_Diagnostic_Pkg _25_array[16];
 
 /* InfraLib::TrainPosRaw_T/ */
 typedef struct kcg_tag_TrainPosRaw_T_InfraLib {
-  kcg_float64 TrainPos_in;
-  kcg_int64 OffsetTotal;
-  kcg_float64 TrainPosCalibrated;
+  kcg_float32 TrainPos_in;
+  kcg_int32 OffsetTotal;
+  kcg_float32 TrainPosCalibrated;
 } TrainPosRaw_T_InfraLib;
 
 /* InfraLib::TrackSectionData_T/ */
@@ -2323,21 +2323,21 @@ typedef struct kcg_tag_TrackSectionData_T_InfraLib {
 /* TM::P137_trackside_int_T/ */
 typedef struct kcg_tag_P137_trackside_int_T_TM {
   kcg_bool valid;
-  kcg_int64 NID_PACKET;
-  kcg_int64 Q_DIR;
-  kcg_int64 L_PACKET;
-  kcg_int64 Q_SRSTOP;
+  kcg_int32 NID_PACKET;
+  kcg_int32 Q_DIR;
+  kcg_int32 L_PACKET;
+  kcg_int32 Q_SRSTOP;
 } P137_trackside_int_T_TM;
 
 /* TM::P005_sections_array_flat_T/ */
-typedef kcg_int64 P005_sections_array_flat_T_TM[95];
+typedef kcg_int32 P005_sections_array_flat_T_TM[95];
 
 /* TM_baseline2::P027V1_section_int_T/ */
 typedef struct kcg_tag_P027V1_section_int_T_TM_baseline2 {
-  kcg_int64 D_STATIC;
-  kcg_int64 V_STATIC;
-  kcg_int64 Q_FRONT;
-  kcg_int64 N_ITER;
+  kcg_int32 D_STATIC;
+  kcg_int32 V_STATIC;
+  kcg_int32 Q_FRONT;
+  kcg_int32 N_ITER;
   P027V1_trackside_qdifflist_T_TM_baseline2 SECTIONS_q_diff;
 } P027V1_section_int_T_TM_baseline2;
 
@@ -2353,30 +2353,30 @@ typedef P027V1_section_int_T_TM_baseline2 P027V1_trackside_sectionlist_T_TM_base
 /* TM_baseline2::P027V1_trackside_int_T/ */
 typedef struct kcg_tag_P027V1_trackside_int_T_TM_baseline2 {
   kcg_bool valid;
-  kcg_int64 NID_PACKET;
-  kcg_int64 Q_DIR;
-  kcg_int64 L_PACKET;
-  kcg_int64 Q_SCALE;
-  kcg_int64 D_STATIC;
-  kcg_int64 V_STATIC;
-  kcg_int64 Q_FRONT;
-  kcg_int64 N_ITER_n;
+  kcg_int32 NID_PACKET;
+  kcg_int32 Q_DIR;
+  kcg_int32 L_PACKET;
+  kcg_int32 Q_SCALE;
+  kcg_int32 D_STATIC;
+  kcg_int32 V_STATIC;
+  kcg_int32 Q_FRONT;
+  kcg_int32 N_ITER_n;
   P027V1_trackside_qdifflist_T_TM_baseline2 SECTIONS_q_diff;
-  kcg_int64 N_ITER_k;
+  kcg_int32 N_ITER_k;
   P027V1_trackside_sectionlist_T_TM_baseline2 SECTIONS_SSP;
 } P027V1_trackside_int_T_TM_baseline2;
 
-typedef kcg_int64 array_int64_22[22];
+typedef kcg_int32 array_int32_22[22];
 
 /* TM::P046_sections_array_flat_T/ */
-typedef kcg_int64 P046_sections_array_flat_T_TM[66];
+typedef kcg_int32 P046_sections_array_flat_T_TM[66];
 
-typedef kcg_int64 array_int64_496[496];
+typedef kcg_int32 array_int32_496[496];
 
 /* TM::P046_section_int_T/ */
 typedef struct kcg_tag_P046_section_int_T_TM {
-  kcg_int64 M_LEVELTR;
-  kcg_int64 NID_NTC;
+  kcg_int32 M_LEVELTR;
+  kcg_int32 NID_NTC;
 } P046_section_int_T_TM;
 
 typedef P046_section_int_T_TM _26_array[1];
@@ -2387,28 +2387,28 @@ typedef P046_section_int_T_TM P046_trackide_sectionlist_T_TM[32];
 /* TM::P046_trackside_int_T/ */
 typedef struct kcg_tag_P046_trackside_int_T_TM {
   kcg_bool valid;
-  kcg_int64 NID_PACKET;
-  kcg_int64 Q_DIR;
-  kcg_int64 L_PACKET;
-  kcg_int64 M_LEVELTR;
-  kcg_int64 NID_NTC;
-  kcg_int64 N_ITER;
+  kcg_int32 NID_PACKET;
+  kcg_int32 Q_DIR;
+  kcg_int32 L_PACKET;
+  kcg_int32 M_LEVELTR;
+  kcg_int32 NID_NTC;
+  kcg_int32 N_ITER;
   P046_trackide_sectionlist_T_TM SECTIONS;
 } P046_trackside_int_T_TM;
 
 /* TM::P046_OBU_sectionlist_int_T/, TM_conversions::C_P046_tracksim_compr/ */
 typedef P046_section_int_T_TM P046_OBU_sectionlist_int_T_TM[33];
 
-typedef kcg_int64 array_int64_5[5];
+typedef kcg_int32 array_int32_5[5];
 
 /* TM_TrainToTrack::P003_nid_radio_list_int_t/ */
-typedef array_int64_5 P003_nid_radio_list_int_t_TM_TrainToTrack;
+typedef array_int32_5 P003_nid_radio_list_int_t_TM_TrainToTrack;
 
 /* TM_TrainToTrack::P011_ntc_list_array_T/ */
-typedef array_int64_5 P011_ntc_list_array_T_TM_TrainToTrack;
+typedef array_int32_5 P011_ntc_list_array_T_TM_TrainToTrack;
 
 /* TM_TrainToTrack::P003_nid_radio_list_t/ */
-typedef array_int64_5 P003_nid_radio_list_t_TM_TrainToTrack;
+typedef array_int32_5 P003_nid_radio_list_t_TM_TrainToTrack;
 
 /* TM_TrainToTrack::P003/ */
 typedef struct kcg_tag_P003_TM_TrainToTrack {
@@ -2420,7 +2420,7 @@ typedef struct kcg_tag_P003_TM_TrainToTrack {
 } P003_TM_TrainToTrack;
 
 /* TM_TrainToTrack::P011_ntc_list/ */
-typedef array_int64_5 P011_ntc_list_TM_TrainToTrack;
+typedef array_int32_5 P011_ntc_list_TM_TrainToTrack;
 
 /* TM_TrainToTrack::P011/ */
 typedef struct kcg_tag_P011_TM_TrainToTrack {
@@ -2442,12 +2442,12 @@ typedef struct kcg_tag_P011_TM_TrainToTrack {
 } P011_TM_TrainToTrack;
 
 /* Packet_TrainTypes_Pkg::aNID_NTC_T/ */
-typedef array_int64_5 aNID_NTC_T_Packet_TrainTypes_Pkg;
+typedef array_int32_5 aNID_NTC_T_Packet_TrainTypes_Pkg;
 
 /* TrainData_T/ */
 typedef struct kcg_tag_TrainData_T {
   NID_ENGINE nid_engine;
-  kcg_int64 m_NumberOfOnboardPhoneNumbers;
+  kcg_int32 m_NumberOfOnboardPhoneNumbers;
   aNID_RADIO_T_Packet_TrainTypes_Pkg m_OnboardPhoneNumbers;
   T_TRAIN t_train_ref;
   NC_CDTRAIN nc_cdtrain;
@@ -2486,15 +2486,15 @@ typedef struct kcg_tag_trainData_T_TIU_Types_Pkg {
   NC_TRAIN trainCategory;
   NC_CDTRAIN cantDeficientcy;
   L_internal_Type_Obu_BasicTypes_Pkg trainLength;
-  kcg_int64 brakePerctage;
+  kcg_int32 brakePerctage;
   V_internal_Type_Obu_BasicTypes_Pkg maxTrainSpeed;
   M_LOADINGGAUGE loadingGauge;
   M_AXLELOADCAT axleLoadCategory;
   M_AIRTIGHT airtightSystem;
-  kcg_int64 axleNumber;
-  kcg_int64 numberNationalSystems;
+  kcg_int32 axleNumber;
+  kcg_int32 numberNationalSystems;
   aNID_NTC_T_Packet_TrainTypes_Pkg nationSystems;
-  kcg_int64 numberTractionSystems;
+  kcg_int32 numberTractionSystems;
   aTractionIdentity_T_Packet_TrainTypes_Pkg tractionSystem;
 } trainData_T_TIU_Types_Pkg;
 
@@ -2525,56 +2525,56 @@ typedef struct kcg_tag_PT11_ValidatedTrainData_T_Packet_TrainTypes_Pkg {
   M_AXLELOADCAT m_axleloadcat;
   M_AIRTIGHT m_airtight;
   N_AXLE n_axle;
-  kcg_int64 nIter_tractionIdentity;
+  kcg_int32 nIter_tractionIdentity;
   aTractionIdentity_T_Packet_TrainTypes_Pkg tractionIdentity;
-  kcg_int64 nIter_ntc;
+  kcg_int32 nIter_ntc;
   aNID_NTC_T_Packet_TrainTypes_Pkg nid_ntc;
 } PT11_ValidatedTrainData_T_Packet_TrainTypes_Pkg;
 
 /* TM::P255_trackside_int_T/ */
 typedef struct kcg_tag_P255_trackside_int_T_TM {
   kcg_bool valid;
-  kcg_int64 NID_PACKET;
+  kcg_int32 NID_PACKET;
 } P255_trackside_int_T_TM;
 
-typedef kcg_int64 array_int64_8[8];
+typedef kcg_int32 array_int32_8[8];
 
 /* TM_TrainToTrack::P003_TrainTrack_int/ */
-typedef array_int64_8 P003_TrainTrack_int_TM_TrainToTrack;
+typedef array_int32_8 P003_TrainTrack_int_TM_TrainToTrack;
 
 /* TM_TrainToTrack::P011_voltage_sections_array_flat_t/ */
-typedef array_int64_8 P011_voltage_sections_array_flat_t_TM_TrainToTrack;
+typedef array_int32_8 P011_voltage_sections_array_flat_t_TM_TrainToTrack;
 
-typedef P011_voltage_sections_array_flat_t_TM_TrainToTrack array_int64_8_4[4];
+typedef P011_voltage_sections_array_flat_t_TM_TrainToTrack array_int32_8_4[4];
 
 /* TM::P015_sections_array_flat_T/ */
-typedef kcg_int64 P015_sections_array_flat_T_TM[128];
+typedef kcg_int32 P015_sections_array_flat_T_TM[128];
 
-typedef kcg_int64 array_int64_99[99];
+typedef kcg_int32 array_int32_99[99];
 
 /* TM::P041_sections_array_flat_T/ */
-typedef array_int64_99 P041_sections_array_flat_T_TM;
+typedef array_int32_99 P041_sections_array_flat_T_TM;
 
 /* TM::P021_sections_array_flat_T/ */
-typedef array_int64_99 P021_sections_array_flat_T_TM;
+typedef array_int32_99 P021_sections_array_flat_T_TM;
 
 /* InfraLib::R_data_internal_T/ */
 typedef struct kcg_tag_R_data_internal_T_InfraLib {
   M_TrackTrain_Radio_T_TM_radio_messages message;
   CompressedPackets_T_Common_Types_Pkg packets;
-  kcg_int64 trigger;
+  kcg_int32 trigger;
   kcg_bool message_sent;
 } R_data_internal_T_InfraLib;
 
-typedef kcg_int64 array_int64_70[70];
+typedef kcg_int32 array_int32_70[70];
 
 typedef struct kcg_tag_struct_149262 {
   kcg_bool valid;
-  kcg_int64 nid_message;
-  kcg_int64 l_message;
-  kcg_int64 t_train;
-  kcg_int64 m_ack;
-  kcg_int64 nid_lrbg;
+  kcg_int32 nid_message;
+  kcg_int32 l_message;
+  kcg_int32 t_train;
+  kcg_int32 m_ack;
+  kcg_int32 nid_lrbg;
 } struct_149262;
 
 /* TM_radio_messages::M_024_int_T/ */
@@ -2585,11 +2585,11 @@ typedef struct_149262 M_003_int_T_TM_radio_messages;
 
 typedef struct kcg_tag_struct_149189 {
   kcg_bool valid;
-  kcg_int64 nid_message;
-  kcg_int64 l_message;
-  kcg_int64 t_train;
+  kcg_int32 nid_message;
+  kcg_int32 l_message;
+  kcg_int32 t_train;
   M_ACK m_ack;
-  kcg_int64 nid_lrbg;
+  kcg_int32 nid_lrbg;
 } struct_149189;
 
 /* TM_radio_messages::M_038_T/ */
@@ -2619,12 +2619,12 @@ typedef struct_149189 M_009_T_TM_radio_messages;
 /* TM_radio_messages::M_024_T/ */
 typedef struct_149189 M_024_T_TM_radio_messages;
 
-typedef kcg_int64 array_int64_6[6];
+typedef kcg_int32 array_int32_6[6];
 
 /* Packet_TrainTypes_Pkg::PT3_OnboardTelephoneNumbers_T/ */
 typedef struct kcg_tag_PT3_OnboardTelephoneNumbers_T_Packet_TrainTypes_Pkg {
   kcg_bool valid;
-  kcg_int64 number;
+  kcg_int32 number;
   aNID_RADIO_T_Packet_TrainTypes_Pkg aNID_RADIO;
 } PT3_OnboardTelephoneNumbers_T_Packet_TrainTypes_Pkg;
 
@@ -2646,9 +2646,9 @@ typedef struct kcg_tag_Radio_TrainTrack_Message_T_Radio_Types_Pkg {
   outPackets_T_Common_Types_Pkg packets;
 } Radio_TrainTrack_Message_T_Radio_Types_Pkg;
 
-typedef kcg_int64 array_int64_9[9];
+typedef kcg_int32 array_int32_9[9];
 
-typedef kcg_int64 array_int64_56[56];
+typedef kcg_int32 array_int32_56[56];
 
 #ifndef kcg_copy_PT5_TrainRunningNumber_Packet_TrainTypes_Pkg
 #define kcg_copy_PT5_TrainRunningNumber_Packet_TrainTypes_Pkg(kcg_C1, kcg_C2) \
@@ -3397,35 +3397,35 @@ typedef kcg_int64 array_int64_56[56];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (P021_OBU_sectionlist_int_T_TM)))
 #endif /* kcg_copy_P021_OBU_sectionlist_int_T_TM */
 
-#ifndef kcg_copy_array_int64_56
-#define kcg_copy_array_int64_56(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_56)))
-#endif /* kcg_copy_array_int64_56 */
+#ifndef kcg_copy_array_int32_56
+#define kcg_copy_array_int32_56(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_56)))
+#endif /* kcg_copy_array_int32_56 */
 
-#ifndef kcg_copy_array_int64_9
-#define kcg_copy_array_int64_9(kcg_C1, kcg_C2)                                \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_9)))
-#endif /* kcg_copy_array_int64_9 */
+#ifndef kcg_copy_array_int32_9
+#define kcg_copy_array_int32_9(kcg_C1, kcg_C2)                                \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_9)))
+#endif /* kcg_copy_array_int32_9 */
 
-#ifndef kcg_copy_array_int64_6
-#define kcg_copy_array_int64_6(kcg_C1, kcg_C2)                                \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_6)))
-#endif /* kcg_copy_array_int64_6 */
+#ifndef kcg_copy_array_int32_6
+#define kcg_copy_array_int32_6(kcg_C1, kcg_C2)                                \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_6)))
+#endif /* kcg_copy_array_int32_6 */
 
-#ifndef kcg_copy_array_int64_70
-#define kcg_copy_array_int64_70(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_70)))
-#endif /* kcg_copy_array_int64_70 */
+#ifndef kcg_copy_array_int32_70
+#define kcg_copy_array_int32_70(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_70)))
+#endif /* kcg_copy_array_int32_70 */
 
-#ifndef kcg_copy_array_int64_2_32_64
-#define kcg_copy_array_int64_2_32_64(kcg_C1, kcg_C2)                          \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_2_32_64)))
-#endif /* kcg_copy_array_int64_2_32_64 */
+#ifndef kcg_copy_array_int32_2_32_64
+#define kcg_copy_array_int32_2_32_64(kcg_C1, kcg_C2)                          \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_2_32_64)))
+#endif /* kcg_copy_array_int32_2_32_64 */
 
-#ifndef kcg_copy_array_int64_2_32
-#define kcg_copy_array_int64_2_32(kcg_C1, kcg_C2)                             \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_2_32)))
-#endif /* kcg_copy_array_int64_2_32 */
+#ifndef kcg_copy_array_int32_2_32
+#define kcg_copy_array_int32_2_32(kcg_C1, kcg_C2)                             \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_2_32)))
+#endif /* kcg_copy_array_int32_2_32 */
 
 #ifndef kcg_copy_P027V1_trackside_sectionlist_T_TM_baseline2
 #define kcg_copy_P027V1_trackside_sectionlist_T_TM_baseline2(kcg_C1, kcg_C2)  \
@@ -3440,40 +3440,40 @@ typedef kcg_int64 array_int64_56[56];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (P005_trackide_sectionlist_T_TM)))
 #endif /* kcg_copy_P005_trackide_sectionlist_T_TM */
 
-#ifndef kcg_copy_array_int64_99
-#define kcg_copy_array_int64_99(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_99)))
-#endif /* kcg_copy_array_int64_99 */
+#ifndef kcg_copy_array_int32_99
+#define kcg_copy_array_int32_99(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_99)))
+#endif /* kcg_copy_array_int32_99 */
 
-#ifndef kcg_copy_array_int64_3_33_231
-#define kcg_copy_array_int64_3_33_231(kcg_C1, kcg_C2)                         \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_3_33_231)))
-#endif /* kcg_copy_array_int64_3_33_231 */
+#ifndef kcg_copy_array_int32_3_33_231
+#define kcg_copy_array_int32_3_33_231(kcg_C1, kcg_C2)                         \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_3_33_231)))
+#endif /* kcg_copy_array_int32_3_33_231 */
 
-#ifndef kcg_copy_array_int64_7_33_231
-#define kcg_copy_array_int64_7_33_231(kcg_C1, kcg_C2)                         \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_7_33_231)))
-#endif /* kcg_copy_array_int64_7_33_231 */
+#ifndef kcg_copy_array_int32_7_33_231
+#define kcg_copy_array_int32_7_33_231(kcg_C1, kcg_C2)                         \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_7_33_231)))
+#endif /* kcg_copy_array_int32_7_33_231 */
 
 #ifndef kcg_copy_P015_sections_array_flat_T_TM
 #define kcg_copy_P015_sections_array_flat_T_TM(kcg_C1, kcg_C2)                \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (P015_sections_array_flat_T_TM)))
 #endif /* kcg_copy_P015_sections_array_flat_T_TM */
 
-#ifndef kcg_copy_array_int64_8
-#define kcg_copy_array_int64_8(kcg_C1, kcg_C2)                                \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_8)))
-#endif /* kcg_copy_array_int64_8 */
+#ifndef kcg_copy_array_int32_8
+#define kcg_copy_array_int32_8(kcg_C1, kcg_C2)                                \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_8)))
+#endif /* kcg_copy_array_int32_8 */
 
-#ifndef kcg_copy_array_int64_5
-#define kcg_copy_array_int64_5(kcg_C1, kcg_C2)                                \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_5)))
-#endif /* kcg_copy_array_int64_5 */
+#ifndef kcg_copy_array_int32_5
+#define kcg_copy_array_int32_5(kcg_C1, kcg_C2)                                \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_5)))
+#endif /* kcg_copy_array_int32_5 */
 
-#ifndef kcg_copy_array_int64_496
-#define kcg_copy_array_int64_496(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_496)))
-#endif /* kcg_copy_array_int64_496 */
+#ifndef kcg_copy_array_int32_496
+#define kcg_copy_array_int32_496(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_496)))
+#endif /* kcg_copy_array_int32_496 */
 
 #ifndef kcg_copy_array
 #define kcg_copy_array(kcg_C1, kcg_C2)                                        \
@@ -3490,15 +3490,15 @@ typedef kcg_int64 array_int64_56[56];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_18_array)))
 #endif /* kcg_copy__18_array */
 
-#ifndef kcg_copy_array_int64_22
-#define kcg_copy_array_int64_22(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_22)))
-#endif /* kcg_copy_array_int64_22 */
+#ifndef kcg_copy_array_int32_22
+#define kcg_copy_array_int32_22(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_22)))
+#endif /* kcg_copy_array_int32_22 */
 
-#ifndef kcg_copy_array_int64_2_32_32
-#define kcg_copy_array_int64_2_32_32(kcg_C1, kcg_C2)                          \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_2_32_32)))
-#endif /* kcg_copy_array_int64_2_32_32 */
+#ifndef kcg_copy_array_int32_2_32_32
+#define kcg_copy_array_int32_2_32_32(kcg_C1, kcg_C2)                          \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_2_32_32)))
+#endif /* kcg_copy_array_int32_2_32_32 */
 
 #ifndef kcg_copy_P046_trackide_sectionlist_T_TM
 #define kcg_copy_P046_trackide_sectionlist_T_TM(kcg_C1, kcg_C2)               \
@@ -3550,25 +3550,25 @@ typedef kcg_int64 array_int64_56[56];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (P015_OBU_sectionlist_array_T_TM)))
 #endif /* kcg_copy_P015_OBU_sectionlist_array_T_TM */
 
-#ifndef kcg_copy_array_int64_33
-#define kcg_copy_array_int64_33(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_33)))
-#endif /* kcg_copy_array_int64_33 */
+#ifndef kcg_copy_array_int32_33
+#define kcg_copy_array_int32_33(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_33)))
+#endif /* kcg_copy_array_int32_33 */
 
 #ifndef kcg_copy_P005_OBU_sectionlist_array_T_TM
 #define kcg_copy_P005_OBU_sectionlist_array_T_TM(kcg_C1, kcg_C2)              \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (P005_OBU_sectionlist_array_T_TM)))
 #endif /* kcg_copy_P005_OBU_sectionlist_array_T_TM */
 
-#ifndef kcg_copy_array_int64_492
-#define kcg_copy_array_int64_492(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_492)))
-#endif /* kcg_copy_array_int64_492 */
+#ifndef kcg_copy_array_int32_492
+#define kcg_copy_array_int32_492(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_492)))
+#endif /* kcg_copy_array_int32_492 */
 
-#ifndef kcg_copy_array_int64_18
-#define kcg_copy_array_int64_18(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_18)))
-#endif /* kcg_copy_array_int64_18 */
+#ifndef kcg_copy_array_int32_18
+#define kcg_copy_array_int32_18(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_18)))
+#endif /* kcg_copy_array_int32_18 */
 
 #ifndef kcg_copy_M_TrainTrack_compressed_packets_T_TM_radio_messages
 #define kcg_copy_M_TrainTrack_compressed_packets_T_TM_radio_messages(kcg_C1, kcg_C2)\
@@ -3578,20 +3578,20 @@ typedef kcg_int64 array_int64_56[56];
       sizeof (M_TrainTrack_compressed_packets_T_TM_radio_messages)))
 #endif /* kcg_copy_M_TrainTrack_compressed_packets_T_TM_radio_messages */
 
-#ifndef kcg_copy_array_int64_3
-#define kcg_copy_array_int64_3(kcg_C1, kcg_C2)                                \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_3)))
-#endif /* kcg_copy_array_int64_3 */
+#ifndef kcg_copy_array_int32_3
+#define kcg_copy_array_int32_3(kcg_C1, kcg_C2)                                \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_3)))
+#endif /* kcg_copy_array_int32_3 */
 
-#ifndef kcg_copy_array_int64_430
-#define kcg_copy_array_int64_430(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_430)))
-#endif /* kcg_copy_array_int64_430 */
+#ifndef kcg_copy_array_int32_430
+#define kcg_copy_array_int32_430(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_430)))
+#endif /* kcg_copy_array_int32_430 */
 
-#ifndef kcg_copy_array_int64_500_500
-#define kcg_copy_array_int64_500_500(kcg_C1, kcg_C2)                          \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_500_500)))
-#endif /* kcg_copy_array_int64_500_500 */
+#ifndef kcg_copy_array_int32_500_500
+#define kcg_copy_array_int32_500_500(kcg_C1, kcg_C2)                          \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_500_500)))
+#endif /* kcg_copy_array_int32_500_500 */
 
 #ifndef kcg_copy_P003V1_trackide_sectionlist_T_TM_baseline2
 #define kcg_copy_P003V1_trackide_sectionlist_T_TM_baseline2(kcg_C1, kcg_C2)   \
@@ -3614,40 +3614,40 @@ typedef kcg_int64 array_int64_56[56];
       sizeof (P027V1_OBU_sectionlist_int_T_TM_baseline2)))
 #endif /* kcg_copy_P027V1_OBU_sectionlist_int_T_TM_baseline2 */
 
-#ifndef kcg_copy_array_int64_494
-#define kcg_copy_array_int64_494(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_494)))
-#endif /* kcg_copy_array_int64_494 */
+#ifndef kcg_copy_array_int32_494
+#define kcg_copy_array_int32_494(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_494)))
+#endif /* kcg_copy_array_int32_494 */
 
-#ifndef kcg_copy_array_int64_64
-#define kcg_copy_array_int64_64(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_64)))
-#endif /* kcg_copy_array_int64_64 */
+#ifndef kcg_copy_array_int32_64
+#define kcg_copy_array_int32_64(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_64)))
+#endif /* kcg_copy_array_int32_64 */
 
-#ifndef kcg_copy_array_int64_491
-#define kcg_copy_array_int64_491(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_491)))
-#endif /* kcg_copy_array_int64_491 */
+#ifndef kcg_copy_array_int32_491
+#define kcg_copy_array_int32_491(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_491)))
+#endif /* kcg_copy_array_int32_491 */
 
-#ifndef kcg_copy_array_int64_17
-#define kcg_copy_array_int64_17(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_17)))
-#endif /* kcg_copy_array_int64_17 */
+#ifndef kcg_copy_array_int32_17
+#define kcg_copy_array_int32_17(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_17)))
+#endif /* kcg_copy_array_int32_17 */
 
-#ifndef kcg_copy_array_int64_4_32_128
-#define kcg_copy_array_int64_4_32_128(kcg_C1, kcg_C2)                         \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_4_32_128)))
-#endif /* kcg_copy_array_int64_4_32_128 */
+#ifndef kcg_copy_array_int32_4_32_128
+#define kcg_copy_array_int32_4_32_128(kcg_C1, kcg_C2)                         \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_4_32_128)))
+#endif /* kcg_copy_array_int32_4_32_128 */
 
-#ifndef kcg_copy_array_int64_444
-#define kcg_copy_array_int64_444(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_444)))
-#endif /* kcg_copy_array_int64_444 */
+#ifndef kcg_copy_array_int32_444
+#define kcg_copy_array_int32_444(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_444)))
+#endif /* kcg_copy_array_int32_444 */
 
-#ifndef kcg_copy_array_int64_400
-#define kcg_copy_array_int64_400(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_400)))
-#endif /* kcg_copy_array_int64_400 */
+#ifndef kcg_copy_array_int32_400
+#define kcg_copy_array_int32_400(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_400)))
+#endif /* kcg_copy_array_int32_400 */
 
 #ifndef kcg_copy_Metadata_T_Common_Types_Pkg
 #define kcg_copy_Metadata_T_Common_Types_Pkg(kcg_C1, kcg_C2)                  \
@@ -3659,45 +3659,45 @@ typedef kcg_int64 array_int64_56[56];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_23_array)))
 #endif /* kcg_copy__23_array */
 
-#ifndef kcg_copy_array_int64_432
-#define kcg_copy_array_int64_432(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_432)))
-#endif /* kcg_copy_array_int64_432 */
+#ifndef kcg_copy_array_int32_432
+#define kcg_copy_array_int32_432(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_432)))
+#endif /* kcg_copy_array_int32_432 */
 
-#ifndef kcg_copy_array_int64_2
-#define kcg_copy_array_int64_2(kcg_C1, kcg_C2)                                \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_2)))
-#endif /* kcg_copy_array_int64_2 */
+#ifndef kcg_copy_array_int32_2
+#define kcg_copy_array_int32_2(kcg_C1, kcg_C2)                                \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_2)))
+#endif /* kcg_copy_array_int32_2 */
 
 #ifndef kcg_copy__24_array
 #define kcg_copy__24_array(kcg_C1, kcg_C2)                                    \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_24_array)))
 #endif /* kcg_copy__24_array */
 
-#ifndef kcg_copy_array_int64_396
-#define kcg_copy_array_int64_396(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_396)))
-#endif /* kcg_copy_array_int64_396 */
+#ifndef kcg_copy_array_int32_396
+#define kcg_copy_array_int32_396(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_396)))
+#endif /* kcg_copy_array_int32_396 */
 
-#ifndef kcg_copy_array_int64_1
-#define kcg_copy_array_int64_1(kcg_C1, kcg_C2)                                \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_1)))
-#endif /* kcg_copy_array_int64_1 */
+#ifndef kcg_copy_array_int32_1
+#define kcg_copy_array_int32_1(kcg_C1, kcg_C2)                                \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_1)))
+#endif /* kcg_copy_array_int32_1 */
 
-#ifndef kcg_copy_array_int64_428
-#define kcg_copy_array_int64_428(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_428)))
-#endif /* kcg_copy_array_int64_428 */
+#ifndef kcg_copy_array_int32_428
+#define kcg_copy_array_int32_428(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_428)))
+#endif /* kcg_copy_array_int32_428 */
 
 #ifndef kcg_copy_array_bool_5
 #define kcg_copy_array_bool_5(kcg_C1, kcg_C2)                                 \
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_bool_5)))
 #endif /* kcg_copy_array_bool_5 */
 
-#ifndef kcg_copy_array_int64_150
-#define kcg_copy_array_int64_150(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_150)))
-#endif /* kcg_copy_array_int64_150 */
+#ifndef kcg_copy_array_int32_150
+#define kcg_copy_array_int32_150(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_150)))
+#endif /* kcg_copy_array_int32_150 */
 
 #ifndef kcg_copy_telephoneNumber_T_Packet_TrainTypes_Pkg
 #define kcg_copy_telephoneNumber_T_Packet_TrainTypes_Pkg(kcg_C1, kcg_C2)      \
@@ -3712,15 +3712,15 @@ typedef kcg_int64 array_int64_56[56];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_25_array)))
 #endif /* kcg_copy__25_array */
 
-#ifndef kcg_copy_array_int64_395
-#define kcg_copy_array_int64_395(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_395)))
-#endif /* kcg_copy_array_int64_395 */
+#ifndef kcg_copy_array_int32_395
+#define kcg_copy_array_int32_395(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_395)))
+#endif /* kcg_copy_array_int32_395 */
 
-#ifndef kcg_copy_array_int64_8_4
-#define kcg_copy_array_int64_8_4(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_8_4)))
-#endif /* kcg_copy_array_int64_8_4 */
+#ifndef kcg_copy_array_int32_8_4
+#define kcg_copy_array_int32_8_4(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_8_4)))
+#endif /* kcg_copy_array_int32_8_4 */
 
 #ifndef kcg_copy_CompressedPacketData_T_Common_Types_Pkg
 #define kcg_copy_CompressedPacketData_T_Common_Types_Pkg(kcg_C1, kcg_C2)      \
@@ -3730,10 +3730,10 @@ typedef kcg_int64 array_int64_56[56];
       sizeof (CompressedPacketData_T_Common_Types_Pkg)))
 #endif /* kcg_copy_CompressedPacketData_T_Common_Types_Pkg */
 
-#ifndef kcg_copy_array_int64_105
-#define kcg_copy_array_int64_105(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_105)))
-#endif /* kcg_copy_array_int64_105 */
+#ifndef kcg_copy_array_int32_105
+#define kcg_copy_array_int32_105(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_105)))
+#endif /* kcg_copy_array_int32_105 */
 
 #ifndef kcg_copy__26_array
 #define kcg_copy__26_array(kcg_C1, kcg_C2)                                    \
@@ -3773,35 +3773,35 @@ typedef kcg_int64 array_int64_56[56];
       sizeof (aNID_RADIO_T_Packet_TrainTypes_Pkg)))
 #endif /* kcg_copy_aNID_RADIO_T_Packet_TrainTypes_Pkg */
 
-#ifndef kcg_copy_array_int64_350
-#define kcg_copy_array_int64_350(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_350)))
-#endif /* kcg_copy_array_int64_350 */
+#ifndef kcg_copy_array_int32_350
+#define kcg_copy_array_int32_350(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_350)))
+#endif /* kcg_copy_array_int32_350 */
 
-#ifndef kcg_copy_array_int64_2_33_99
-#define kcg_copy_array_int64_2_33_99(kcg_C1, kcg_C2)                          \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_2_33_99)))
-#endif /* kcg_copy_array_int64_2_33_99 */
+#ifndef kcg_copy_array_int32_2_33_99
+#define kcg_copy_array_int32_2_33_99(kcg_C1, kcg_C2)                          \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_2_33_99)))
+#endif /* kcg_copy_array_int32_2_33_99 */
 
-#ifndef kcg_copy_array_int64_3_33_99
-#define kcg_copy_array_int64_3_33_99(kcg_C1, kcg_C2)                          \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_3_33_99)))
-#endif /* kcg_copy_array_int64_3_33_99 */
+#ifndef kcg_copy_array_int32_3_33_99
+#define kcg_copy_array_int32_3_33_99(kcg_C1, kcg_C2)                          \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_3_33_99)))
+#endif /* kcg_copy_array_int32_3_33_99 */
 
-#ifndef kcg_copy_array_int64_72
-#define kcg_copy_array_int64_72(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_72)))
-#endif /* kcg_copy_array_int64_72 */
+#ifndef kcg_copy_array_int32_72
+#define kcg_copy_array_int32_72(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_72)))
+#endif /* kcg_copy_array_int32_72 */
 
-#ifndef kcg_copy_array_int64_499
-#define kcg_copy_array_int64_499(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_499)))
-#endif /* kcg_copy_array_int64_499 */
+#ifndef kcg_copy_array_int32_499
+#define kcg_copy_array_int32_499(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_499)))
+#endif /* kcg_copy_array_int32_499 */
 
-#ifndef kcg_copy_array_int64_104
-#define kcg_copy_array_int64_104(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_104)))
-#endif /* kcg_copy_array_int64_104 */
+#ifndef kcg_copy_array_int32_104
+#define kcg_copy_array_int32_104(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_104)))
+#endif /* kcg_copy_array_int32_104 */
 
 #ifndef kcg_copy_P011_TrainTrack_int_TM_TrainToTrack
 #define kcg_copy_P011_TrainTrack_int_TM_TrainToTrack(kcg_C1, kcg_C2)          \
@@ -3811,10 +3811,10 @@ typedef kcg_int64 array_int64_56[56];
       sizeof (P011_TrainTrack_int_TM_TrainToTrack)))
 #endif /* kcg_copy_P011_TrainTrack_int_TM_TrainToTrack */
 
-#ifndef kcg_copy_array_int64_3_33
-#define kcg_copy_array_int64_3_33(kcg_C1, kcg_C2)                             \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_3_33)))
-#endif /* kcg_copy_array_int64_3_33 */
+#ifndef kcg_copy_array_int32_3_33
+#define kcg_copy_array_int32_3_33(kcg_C1, kcg_C2)                             \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_3_33)))
+#endif /* kcg_copy_array_int32_3_33 */
 
 #ifndef kcg_copy_P005_section_array_T_TM
 #define kcg_copy_P005_section_array_T_TM(kcg_C1, kcg_C2)                      \
@@ -3831,10 +3831,10 @@ typedef kcg_int64 array_int64_56[56];
   (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (_31_array)))
 #endif /* kcg_copy__31_array */
 
-#ifndef kcg_copy_array_int64_68
-#define kcg_copy_array_int64_68(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_68)))
-#endif /* kcg_copy_array_int64_68 */
+#ifndef kcg_copy_array_int32_68
+#define kcg_copy_array_int32_68(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_68)))
+#endif /* kcg_copy_array_int32_68 */
 
 #ifndef kcg_copy__3_RadioTrackTrainMessageQueueEntries_T
 #define kcg_copy__3_RadioTrackTrainMessageQueueEntries_T(kcg_C1, kcg_C2)      \
@@ -3844,20 +3844,20 @@ typedef kcg_int64 array_int64_56[56];
       sizeof (_3_RadioTrackTrainMessageQueueEntries_T)))
 #endif /* kcg_copy__3_RadioTrackTrainMessageQueueEntries_T */
 
-#ifndef kcg_copy_array_int64_24
-#define kcg_copy_array_int64_24(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_24)))
-#endif /* kcg_copy_array_int64_24 */
+#ifndef kcg_copy_array_int32_24
+#define kcg_copy_array_int32_24(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_24)))
+#endif /* kcg_copy_array_int32_24 */
 
-#ifndef kcg_copy_array_int64_21
-#define kcg_copy_array_int64_21(kcg_C1, kcg_C2)                               \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_21)))
-#endif /* kcg_copy_array_int64_21 */
+#ifndef kcg_copy_array_int32_21
+#define kcg_copy_array_int32_21(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_21)))
+#endif /* kcg_copy_array_int32_21 */
 
-#ifndef kcg_copy_array_int64_100
-#define kcg_copy_array_int64_100(kcg_C1, kcg_C2)                              \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int64_100)))
-#endif /* kcg_copy_array_int64_100 */
+#ifndef kcg_copy_array_int32_100
+#define kcg_copy_array_int32_100(kcg_C1, kcg_C2)                              \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_int32_100)))
+#endif /* kcg_copy_array_int32_100 */
 
 #ifdef kcg_use_PT5_TrainRunningNumber_Packet_TrainTypes_Pkg
 #ifndef kcg_comp_PT5_TrainRunningNumber_Packet_TrainTypes_Pkg
@@ -4837,53 +4837,53 @@ extern kcg_bool kcg_comp_P021_OBU_sectionlist_int_T_TM(
 #endif /* kcg_comp_P021_OBU_sectionlist_int_T_TM */
 #endif /* kcg_use_P021_OBU_sectionlist_int_T_TM */
 
-#ifdef kcg_use_array_int64_56
-#ifndef kcg_comp_array_int64_56
-extern kcg_bool kcg_comp_array_int64_56(
-  array_int64_56 *kcg_c1,
-  array_int64_56 *kcg_c2);
-#endif /* kcg_comp_array_int64_56 */
-#endif /* kcg_use_array_int64_56 */
+#ifdef kcg_use_array_int32_56
+#ifndef kcg_comp_array_int32_56
+extern kcg_bool kcg_comp_array_int32_56(
+  array_int32_56 *kcg_c1,
+  array_int32_56 *kcg_c2);
+#endif /* kcg_comp_array_int32_56 */
+#endif /* kcg_use_array_int32_56 */
 
-#ifdef kcg_use_array_int64_9
-#ifndef kcg_comp_array_int64_9
-extern kcg_bool kcg_comp_array_int64_9(
-  array_int64_9 *kcg_c1,
-  array_int64_9 *kcg_c2);
-#endif /* kcg_comp_array_int64_9 */
-#endif /* kcg_use_array_int64_9 */
+#ifdef kcg_use_array_int32_9
+#ifndef kcg_comp_array_int32_9
+extern kcg_bool kcg_comp_array_int32_9(
+  array_int32_9 *kcg_c1,
+  array_int32_9 *kcg_c2);
+#endif /* kcg_comp_array_int32_9 */
+#endif /* kcg_use_array_int32_9 */
 
-#ifdef kcg_use_array_int64_6
-#ifndef kcg_comp_array_int64_6
-extern kcg_bool kcg_comp_array_int64_6(
-  array_int64_6 *kcg_c1,
-  array_int64_6 *kcg_c2);
-#endif /* kcg_comp_array_int64_6 */
-#endif /* kcg_use_array_int64_6 */
+#ifdef kcg_use_array_int32_6
+#ifndef kcg_comp_array_int32_6
+extern kcg_bool kcg_comp_array_int32_6(
+  array_int32_6 *kcg_c1,
+  array_int32_6 *kcg_c2);
+#endif /* kcg_comp_array_int32_6 */
+#endif /* kcg_use_array_int32_6 */
 
-#ifdef kcg_use_array_int64_70
-#ifndef kcg_comp_array_int64_70
-extern kcg_bool kcg_comp_array_int64_70(
-  array_int64_70 *kcg_c1,
-  array_int64_70 *kcg_c2);
-#endif /* kcg_comp_array_int64_70 */
-#endif /* kcg_use_array_int64_70 */
+#ifdef kcg_use_array_int32_70
+#ifndef kcg_comp_array_int32_70
+extern kcg_bool kcg_comp_array_int32_70(
+  array_int32_70 *kcg_c1,
+  array_int32_70 *kcg_c2);
+#endif /* kcg_comp_array_int32_70 */
+#endif /* kcg_use_array_int32_70 */
 
-#ifdef kcg_use_array_int64_2_32_64
-#ifndef kcg_comp_array_int64_2_32_64
-extern kcg_bool kcg_comp_array_int64_2_32_64(
-  array_int64_2_32_64 *kcg_c1,
-  array_int64_2_32_64 *kcg_c2);
-#endif /* kcg_comp_array_int64_2_32_64 */
-#endif /* kcg_use_array_int64_2_32_64 */
+#ifdef kcg_use_array_int32_2_32_64
+#ifndef kcg_comp_array_int32_2_32_64
+extern kcg_bool kcg_comp_array_int32_2_32_64(
+  array_int32_2_32_64 *kcg_c1,
+  array_int32_2_32_64 *kcg_c2);
+#endif /* kcg_comp_array_int32_2_32_64 */
+#endif /* kcg_use_array_int32_2_32_64 */
 
-#ifdef kcg_use_array_int64_2_32
-#ifndef kcg_comp_array_int64_2_32
-extern kcg_bool kcg_comp_array_int64_2_32(
-  array_int64_2_32 *kcg_c1,
-  array_int64_2_32 *kcg_c2);
-#endif /* kcg_comp_array_int64_2_32 */
-#endif /* kcg_use_array_int64_2_32 */
+#ifdef kcg_use_array_int32_2_32
+#ifndef kcg_comp_array_int32_2_32
+extern kcg_bool kcg_comp_array_int32_2_32(
+  array_int32_2_32 *kcg_c1,
+  array_int32_2_32 *kcg_c2);
+#endif /* kcg_comp_array_int32_2_32 */
+#endif /* kcg_use_array_int32_2_32 */
 
 #ifdef kcg_use_P027V1_trackside_sectionlist_T_TM_baseline2
 #ifndef kcg_comp_P027V1_trackside_sectionlist_T_TM_baseline2
@@ -4901,29 +4901,29 @@ extern kcg_bool kcg_comp_P005_trackide_sectionlist_T_TM(
 #endif /* kcg_comp_P005_trackide_sectionlist_T_TM */
 #endif /* kcg_use_P005_trackide_sectionlist_T_TM */
 
-#ifdef kcg_use_array_int64_99
-#ifndef kcg_comp_array_int64_99
-extern kcg_bool kcg_comp_array_int64_99(
-  array_int64_99 *kcg_c1,
-  array_int64_99 *kcg_c2);
-#endif /* kcg_comp_array_int64_99 */
-#endif /* kcg_use_array_int64_99 */
+#ifdef kcg_use_array_int32_99
+#ifndef kcg_comp_array_int32_99
+extern kcg_bool kcg_comp_array_int32_99(
+  array_int32_99 *kcg_c1,
+  array_int32_99 *kcg_c2);
+#endif /* kcg_comp_array_int32_99 */
+#endif /* kcg_use_array_int32_99 */
 
-#ifdef kcg_use_array_int64_3_33_231
-#ifndef kcg_comp_array_int64_3_33_231
-extern kcg_bool kcg_comp_array_int64_3_33_231(
-  array_int64_3_33_231 *kcg_c1,
-  array_int64_3_33_231 *kcg_c2);
-#endif /* kcg_comp_array_int64_3_33_231 */
-#endif /* kcg_use_array_int64_3_33_231 */
+#ifdef kcg_use_array_int32_3_33_231
+#ifndef kcg_comp_array_int32_3_33_231
+extern kcg_bool kcg_comp_array_int32_3_33_231(
+  array_int32_3_33_231 *kcg_c1,
+  array_int32_3_33_231 *kcg_c2);
+#endif /* kcg_comp_array_int32_3_33_231 */
+#endif /* kcg_use_array_int32_3_33_231 */
 
-#ifdef kcg_use_array_int64_7_33_231
-#ifndef kcg_comp_array_int64_7_33_231
-extern kcg_bool kcg_comp_array_int64_7_33_231(
-  array_int64_7_33_231 *kcg_c1,
-  array_int64_7_33_231 *kcg_c2);
-#endif /* kcg_comp_array_int64_7_33_231 */
-#endif /* kcg_use_array_int64_7_33_231 */
+#ifdef kcg_use_array_int32_7_33_231
+#ifndef kcg_comp_array_int32_7_33_231
+extern kcg_bool kcg_comp_array_int32_7_33_231(
+  array_int32_7_33_231 *kcg_c1,
+  array_int32_7_33_231 *kcg_c2);
+#endif /* kcg_comp_array_int32_7_33_231 */
+#endif /* kcg_use_array_int32_7_33_231 */
 
 #ifdef kcg_use_P015_sections_array_flat_T_TM
 #ifndef kcg_comp_P015_sections_array_flat_T_TM
@@ -4933,29 +4933,29 @@ extern kcg_bool kcg_comp_P015_sections_array_flat_T_TM(
 #endif /* kcg_comp_P015_sections_array_flat_T_TM */
 #endif /* kcg_use_P015_sections_array_flat_T_TM */
 
-#ifdef kcg_use_array_int64_8
-#ifndef kcg_comp_array_int64_8
-extern kcg_bool kcg_comp_array_int64_8(
-  array_int64_8 *kcg_c1,
-  array_int64_8 *kcg_c2);
-#endif /* kcg_comp_array_int64_8 */
-#endif /* kcg_use_array_int64_8 */
+#ifdef kcg_use_array_int32_8
+#ifndef kcg_comp_array_int32_8
+extern kcg_bool kcg_comp_array_int32_8(
+  array_int32_8 *kcg_c1,
+  array_int32_8 *kcg_c2);
+#endif /* kcg_comp_array_int32_8 */
+#endif /* kcg_use_array_int32_8 */
 
-#ifdef kcg_use_array_int64_5
-#ifndef kcg_comp_array_int64_5
-extern kcg_bool kcg_comp_array_int64_5(
-  array_int64_5 *kcg_c1,
-  array_int64_5 *kcg_c2);
-#endif /* kcg_comp_array_int64_5 */
-#endif /* kcg_use_array_int64_5 */
+#ifdef kcg_use_array_int32_5
+#ifndef kcg_comp_array_int32_5
+extern kcg_bool kcg_comp_array_int32_5(
+  array_int32_5 *kcg_c1,
+  array_int32_5 *kcg_c2);
+#endif /* kcg_comp_array_int32_5 */
+#endif /* kcg_use_array_int32_5 */
 
-#ifdef kcg_use_array_int64_496
-#ifndef kcg_comp_array_int64_496
-extern kcg_bool kcg_comp_array_int64_496(
-  array_int64_496 *kcg_c1,
-  array_int64_496 *kcg_c2);
-#endif /* kcg_comp_array_int64_496 */
-#endif /* kcg_use_array_int64_496 */
+#ifdef kcg_use_array_int32_496
+#ifndef kcg_comp_array_int32_496
+extern kcg_bool kcg_comp_array_int32_496(
+  array_int32_496 *kcg_c1,
+  array_int32_496 *kcg_c2);
+#endif /* kcg_comp_array_int32_496 */
+#endif /* kcg_use_array_int32_496 */
 
 #ifdef kcg_use_array
 #ifndef kcg_comp_array
@@ -4977,21 +4977,21 @@ extern kcg_bool kcg_comp__18_array(_18_array *kcg_c1, _18_array *kcg_c2);
 #endif /* kcg_comp__18_array */
 #endif /* kcg_use__18_array */
 
-#ifdef kcg_use_array_int64_22
-#ifndef kcg_comp_array_int64_22
-extern kcg_bool kcg_comp_array_int64_22(
-  array_int64_22 *kcg_c1,
-  array_int64_22 *kcg_c2);
-#endif /* kcg_comp_array_int64_22 */
-#endif /* kcg_use_array_int64_22 */
+#ifdef kcg_use_array_int32_22
+#ifndef kcg_comp_array_int32_22
+extern kcg_bool kcg_comp_array_int32_22(
+  array_int32_22 *kcg_c1,
+  array_int32_22 *kcg_c2);
+#endif /* kcg_comp_array_int32_22 */
+#endif /* kcg_use_array_int32_22 */
 
-#ifdef kcg_use_array_int64_2_32_32
-#ifndef kcg_comp_array_int64_2_32_32
-extern kcg_bool kcg_comp_array_int64_2_32_32(
-  array_int64_2_32_32 *kcg_c1,
-  array_int64_2_32_32 *kcg_c2);
-#endif /* kcg_comp_array_int64_2_32_32 */
-#endif /* kcg_use_array_int64_2_32_32 */
+#ifdef kcg_use_array_int32_2_32_32
+#ifndef kcg_comp_array_int32_2_32_32
+extern kcg_bool kcg_comp_array_int32_2_32_32(
+  array_int32_2_32_32 *kcg_c1,
+  array_int32_2_32_32 *kcg_c2);
+#endif /* kcg_comp_array_int32_2_32_32 */
+#endif /* kcg_use_array_int32_2_32_32 */
 
 #ifdef kcg_use_P046_trackide_sectionlist_T_TM
 #ifndef kcg_comp_P046_trackide_sectionlist_T_TM
@@ -5065,13 +5065,13 @@ extern kcg_bool kcg_comp_P015_OBU_sectionlist_array_T_TM(
 #endif /* kcg_comp_P015_OBU_sectionlist_array_T_TM */
 #endif /* kcg_use_P015_OBU_sectionlist_array_T_TM */
 
-#ifdef kcg_use_array_int64_33
-#ifndef kcg_comp_array_int64_33
-extern kcg_bool kcg_comp_array_int64_33(
-  array_int64_33 *kcg_c1,
-  array_int64_33 *kcg_c2);
-#endif /* kcg_comp_array_int64_33 */
-#endif /* kcg_use_array_int64_33 */
+#ifdef kcg_use_array_int32_33
+#ifndef kcg_comp_array_int32_33
+extern kcg_bool kcg_comp_array_int32_33(
+  array_int32_33 *kcg_c1,
+  array_int32_33 *kcg_c2);
+#endif /* kcg_comp_array_int32_33 */
+#endif /* kcg_use_array_int32_33 */
 
 #ifdef kcg_use_P005_OBU_sectionlist_array_T_TM
 #ifndef kcg_comp_P005_OBU_sectionlist_array_T_TM
@@ -5081,21 +5081,21 @@ extern kcg_bool kcg_comp_P005_OBU_sectionlist_array_T_TM(
 #endif /* kcg_comp_P005_OBU_sectionlist_array_T_TM */
 #endif /* kcg_use_P005_OBU_sectionlist_array_T_TM */
 
-#ifdef kcg_use_array_int64_492
-#ifndef kcg_comp_array_int64_492
-extern kcg_bool kcg_comp_array_int64_492(
-  array_int64_492 *kcg_c1,
-  array_int64_492 *kcg_c2);
-#endif /* kcg_comp_array_int64_492 */
-#endif /* kcg_use_array_int64_492 */
+#ifdef kcg_use_array_int32_492
+#ifndef kcg_comp_array_int32_492
+extern kcg_bool kcg_comp_array_int32_492(
+  array_int32_492 *kcg_c1,
+  array_int32_492 *kcg_c2);
+#endif /* kcg_comp_array_int32_492 */
+#endif /* kcg_use_array_int32_492 */
 
-#ifdef kcg_use_array_int64_18
-#ifndef kcg_comp_array_int64_18
-extern kcg_bool kcg_comp_array_int64_18(
-  array_int64_18 *kcg_c1,
-  array_int64_18 *kcg_c2);
-#endif /* kcg_comp_array_int64_18 */
-#endif /* kcg_use_array_int64_18 */
+#ifdef kcg_use_array_int32_18
+#ifndef kcg_comp_array_int32_18
+extern kcg_bool kcg_comp_array_int32_18(
+  array_int32_18 *kcg_c1,
+  array_int32_18 *kcg_c2);
+#endif /* kcg_comp_array_int32_18 */
+#endif /* kcg_use_array_int32_18 */
 
 #ifdef kcg_use_M_TrainTrack_compressed_packets_T_TM_radio_messages
 #ifndef kcg_comp_M_TrainTrack_compressed_packets_T_TM_radio_messages
@@ -5105,29 +5105,29 @@ extern kcg_bool kcg_comp_M_TrainTrack_compressed_packets_T_TM_radio_messages(
 #endif /* kcg_comp_M_TrainTrack_compressed_packets_T_TM_radio_messages */
 #endif /* kcg_use_M_TrainTrack_compressed_packets_T_TM_radio_messages */
 
-#ifdef kcg_use_array_int64_3
-#ifndef kcg_comp_array_int64_3
-extern kcg_bool kcg_comp_array_int64_3(
-  array_int64_3 *kcg_c1,
-  array_int64_3 *kcg_c2);
-#endif /* kcg_comp_array_int64_3 */
-#endif /* kcg_use_array_int64_3 */
+#ifdef kcg_use_array_int32_3
+#ifndef kcg_comp_array_int32_3
+extern kcg_bool kcg_comp_array_int32_3(
+  array_int32_3 *kcg_c1,
+  array_int32_3 *kcg_c2);
+#endif /* kcg_comp_array_int32_3 */
+#endif /* kcg_use_array_int32_3 */
 
-#ifdef kcg_use_array_int64_430
-#ifndef kcg_comp_array_int64_430
-extern kcg_bool kcg_comp_array_int64_430(
-  array_int64_430 *kcg_c1,
-  array_int64_430 *kcg_c2);
-#endif /* kcg_comp_array_int64_430 */
-#endif /* kcg_use_array_int64_430 */
+#ifdef kcg_use_array_int32_430
+#ifndef kcg_comp_array_int32_430
+extern kcg_bool kcg_comp_array_int32_430(
+  array_int32_430 *kcg_c1,
+  array_int32_430 *kcg_c2);
+#endif /* kcg_comp_array_int32_430 */
+#endif /* kcg_use_array_int32_430 */
 
-#ifdef kcg_use_array_int64_500_500
-#ifndef kcg_comp_array_int64_500_500
-extern kcg_bool kcg_comp_array_int64_500_500(
-  array_int64_500_500 *kcg_c1,
-  array_int64_500_500 *kcg_c2);
-#endif /* kcg_comp_array_int64_500_500 */
-#endif /* kcg_use_array_int64_500_500 */
+#ifdef kcg_use_array_int32_500_500
+#ifndef kcg_comp_array_int32_500_500
+extern kcg_bool kcg_comp_array_int32_500_500(
+  array_int32_500_500 *kcg_c1,
+  array_int32_500_500 *kcg_c2);
+#endif /* kcg_comp_array_int32_500_500 */
+#endif /* kcg_use_array_int32_500_500 */
 
 #ifdef kcg_use_P003V1_trackide_sectionlist_T_TM_baseline2
 #ifndef kcg_comp_P003V1_trackide_sectionlist_T_TM_baseline2
@@ -5153,61 +5153,61 @@ extern kcg_bool kcg_comp_P027V1_OBU_sectionlist_int_T_TM_baseline2(
 #endif /* kcg_comp_P027V1_OBU_sectionlist_int_T_TM_baseline2 */
 #endif /* kcg_use_P027V1_OBU_sectionlist_int_T_TM_baseline2 */
 
-#ifdef kcg_use_array_int64_494
-#ifndef kcg_comp_array_int64_494
-extern kcg_bool kcg_comp_array_int64_494(
-  array_int64_494 *kcg_c1,
-  array_int64_494 *kcg_c2);
-#endif /* kcg_comp_array_int64_494 */
-#endif /* kcg_use_array_int64_494 */
+#ifdef kcg_use_array_int32_494
+#ifndef kcg_comp_array_int32_494
+extern kcg_bool kcg_comp_array_int32_494(
+  array_int32_494 *kcg_c1,
+  array_int32_494 *kcg_c2);
+#endif /* kcg_comp_array_int32_494 */
+#endif /* kcg_use_array_int32_494 */
 
-#ifdef kcg_use_array_int64_64
-#ifndef kcg_comp_array_int64_64
-extern kcg_bool kcg_comp_array_int64_64(
-  array_int64_64 *kcg_c1,
-  array_int64_64 *kcg_c2);
-#endif /* kcg_comp_array_int64_64 */
-#endif /* kcg_use_array_int64_64 */
+#ifdef kcg_use_array_int32_64
+#ifndef kcg_comp_array_int32_64
+extern kcg_bool kcg_comp_array_int32_64(
+  array_int32_64 *kcg_c1,
+  array_int32_64 *kcg_c2);
+#endif /* kcg_comp_array_int32_64 */
+#endif /* kcg_use_array_int32_64 */
 
-#ifdef kcg_use_array_int64_491
-#ifndef kcg_comp_array_int64_491
-extern kcg_bool kcg_comp_array_int64_491(
-  array_int64_491 *kcg_c1,
-  array_int64_491 *kcg_c2);
-#endif /* kcg_comp_array_int64_491 */
-#endif /* kcg_use_array_int64_491 */
+#ifdef kcg_use_array_int32_491
+#ifndef kcg_comp_array_int32_491
+extern kcg_bool kcg_comp_array_int32_491(
+  array_int32_491 *kcg_c1,
+  array_int32_491 *kcg_c2);
+#endif /* kcg_comp_array_int32_491 */
+#endif /* kcg_use_array_int32_491 */
 
-#ifdef kcg_use_array_int64_17
-#ifndef kcg_comp_array_int64_17
-extern kcg_bool kcg_comp_array_int64_17(
-  array_int64_17 *kcg_c1,
-  array_int64_17 *kcg_c2);
-#endif /* kcg_comp_array_int64_17 */
-#endif /* kcg_use_array_int64_17 */
+#ifdef kcg_use_array_int32_17
+#ifndef kcg_comp_array_int32_17
+extern kcg_bool kcg_comp_array_int32_17(
+  array_int32_17 *kcg_c1,
+  array_int32_17 *kcg_c2);
+#endif /* kcg_comp_array_int32_17 */
+#endif /* kcg_use_array_int32_17 */
 
-#ifdef kcg_use_array_int64_4_32_128
-#ifndef kcg_comp_array_int64_4_32_128
-extern kcg_bool kcg_comp_array_int64_4_32_128(
-  array_int64_4_32_128 *kcg_c1,
-  array_int64_4_32_128 *kcg_c2);
-#endif /* kcg_comp_array_int64_4_32_128 */
-#endif /* kcg_use_array_int64_4_32_128 */
+#ifdef kcg_use_array_int32_4_32_128
+#ifndef kcg_comp_array_int32_4_32_128
+extern kcg_bool kcg_comp_array_int32_4_32_128(
+  array_int32_4_32_128 *kcg_c1,
+  array_int32_4_32_128 *kcg_c2);
+#endif /* kcg_comp_array_int32_4_32_128 */
+#endif /* kcg_use_array_int32_4_32_128 */
 
-#ifdef kcg_use_array_int64_444
-#ifndef kcg_comp_array_int64_444
-extern kcg_bool kcg_comp_array_int64_444(
-  array_int64_444 *kcg_c1,
-  array_int64_444 *kcg_c2);
-#endif /* kcg_comp_array_int64_444 */
-#endif /* kcg_use_array_int64_444 */
+#ifdef kcg_use_array_int32_444
+#ifndef kcg_comp_array_int32_444
+extern kcg_bool kcg_comp_array_int32_444(
+  array_int32_444 *kcg_c1,
+  array_int32_444 *kcg_c2);
+#endif /* kcg_comp_array_int32_444 */
+#endif /* kcg_use_array_int32_444 */
 
-#ifdef kcg_use_array_int64_400
-#ifndef kcg_comp_array_int64_400
-extern kcg_bool kcg_comp_array_int64_400(
-  array_int64_400 *kcg_c1,
-  array_int64_400 *kcg_c2);
-#endif /* kcg_comp_array_int64_400 */
-#endif /* kcg_use_array_int64_400 */
+#ifdef kcg_use_array_int32_400
+#ifndef kcg_comp_array_int32_400
+extern kcg_bool kcg_comp_array_int32_400(
+  array_int32_400 *kcg_c1,
+  array_int32_400 *kcg_c2);
+#endif /* kcg_comp_array_int32_400 */
+#endif /* kcg_use_array_int32_400 */
 
 #ifdef kcg_use_Metadata_T_Common_Types_Pkg
 #ifndef kcg_comp_Metadata_T_Common_Types_Pkg
@@ -5223,21 +5223,21 @@ extern kcg_bool kcg_comp__23_array(_23_array *kcg_c1, _23_array *kcg_c2);
 #endif /* kcg_comp__23_array */
 #endif /* kcg_use__23_array */
 
-#ifdef kcg_use_array_int64_432
-#ifndef kcg_comp_array_int64_432
-extern kcg_bool kcg_comp_array_int64_432(
-  array_int64_432 *kcg_c1,
-  array_int64_432 *kcg_c2);
-#endif /* kcg_comp_array_int64_432 */
-#endif /* kcg_use_array_int64_432 */
+#ifdef kcg_use_array_int32_432
+#ifndef kcg_comp_array_int32_432
+extern kcg_bool kcg_comp_array_int32_432(
+  array_int32_432 *kcg_c1,
+  array_int32_432 *kcg_c2);
+#endif /* kcg_comp_array_int32_432 */
+#endif /* kcg_use_array_int32_432 */
 
-#ifdef kcg_use_array_int64_2
-#ifndef kcg_comp_array_int64_2
-extern kcg_bool kcg_comp_array_int64_2(
-  array_int64_2 *kcg_c1,
-  array_int64_2 *kcg_c2);
-#endif /* kcg_comp_array_int64_2 */
-#endif /* kcg_use_array_int64_2 */
+#ifdef kcg_use_array_int32_2
+#ifndef kcg_comp_array_int32_2
+extern kcg_bool kcg_comp_array_int32_2(
+  array_int32_2 *kcg_c1,
+  array_int32_2 *kcg_c2);
+#endif /* kcg_comp_array_int32_2 */
+#endif /* kcg_use_array_int32_2 */
 
 #ifdef kcg_use__24_array
 #ifndef kcg_comp__24_array
@@ -5245,29 +5245,29 @@ extern kcg_bool kcg_comp__24_array(_24_array *kcg_c1, _24_array *kcg_c2);
 #endif /* kcg_comp__24_array */
 #endif /* kcg_use__24_array */
 
-#ifdef kcg_use_array_int64_396
-#ifndef kcg_comp_array_int64_396
-extern kcg_bool kcg_comp_array_int64_396(
-  array_int64_396 *kcg_c1,
-  array_int64_396 *kcg_c2);
-#endif /* kcg_comp_array_int64_396 */
-#endif /* kcg_use_array_int64_396 */
+#ifdef kcg_use_array_int32_396
+#ifndef kcg_comp_array_int32_396
+extern kcg_bool kcg_comp_array_int32_396(
+  array_int32_396 *kcg_c1,
+  array_int32_396 *kcg_c2);
+#endif /* kcg_comp_array_int32_396 */
+#endif /* kcg_use_array_int32_396 */
 
-#ifdef kcg_use_array_int64_1
-#ifndef kcg_comp_array_int64_1
-extern kcg_bool kcg_comp_array_int64_1(
-  array_int64_1 *kcg_c1,
-  array_int64_1 *kcg_c2);
-#endif /* kcg_comp_array_int64_1 */
-#endif /* kcg_use_array_int64_1 */
+#ifdef kcg_use_array_int32_1
+#ifndef kcg_comp_array_int32_1
+extern kcg_bool kcg_comp_array_int32_1(
+  array_int32_1 *kcg_c1,
+  array_int32_1 *kcg_c2);
+#endif /* kcg_comp_array_int32_1 */
+#endif /* kcg_use_array_int32_1 */
 
-#ifdef kcg_use_array_int64_428
-#ifndef kcg_comp_array_int64_428
-extern kcg_bool kcg_comp_array_int64_428(
-  array_int64_428 *kcg_c1,
-  array_int64_428 *kcg_c2);
-#endif /* kcg_comp_array_int64_428 */
-#endif /* kcg_use_array_int64_428 */
+#ifdef kcg_use_array_int32_428
+#ifndef kcg_comp_array_int32_428
+extern kcg_bool kcg_comp_array_int32_428(
+  array_int32_428 *kcg_c1,
+  array_int32_428 *kcg_c2);
+#endif /* kcg_comp_array_int32_428 */
+#endif /* kcg_use_array_int32_428 */
 
 #ifdef kcg_use_array_bool_5
 #ifndef kcg_comp_array_bool_5
@@ -5277,13 +5277,13 @@ extern kcg_bool kcg_comp_array_bool_5(
 #endif /* kcg_comp_array_bool_5 */
 #endif /* kcg_use_array_bool_5 */
 
-#ifdef kcg_use_array_int64_150
-#ifndef kcg_comp_array_int64_150
-extern kcg_bool kcg_comp_array_int64_150(
-  array_int64_150 *kcg_c1,
-  array_int64_150 *kcg_c2);
-#endif /* kcg_comp_array_int64_150 */
-#endif /* kcg_use_array_int64_150 */
+#ifdef kcg_use_array_int32_150
+#ifndef kcg_comp_array_int32_150
+extern kcg_bool kcg_comp_array_int32_150(
+  array_int32_150 *kcg_c1,
+  array_int32_150 *kcg_c2);
+#endif /* kcg_comp_array_int32_150 */
+#endif /* kcg_use_array_int32_150 */
 
 #ifdef kcg_use_telephoneNumber_T_Packet_TrainTypes_Pkg
 #ifndef kcg_comp_telephoneNumber_T_Packet_TrainTypes_Pkg
@@ -5299,21 +5299,21 @@ extern kcg_bool kcg_comp__25_array(_25_array *kcg_c1, _25_array *kcg_c2);
 #endif /* kcg_comp__25_array */
 #endif /* kcg_use__25_array */
 
-#ifdef kcg_use_array_int64_395
-#ifndef kcg_comp_array_int64_395
-extern kcg_bool kcg_comp_array_int64_395(
-  array_int64_395 *kcg_c1,
-  array_int64_395 *kcg_c2);
-#endif /* kcg_comp_array_int64_395 */
-#endif /* kcg_use_array_int64_395 */
+#ifdef kcg_use_array_int32_395
+#ifndef kcg_comp_array_int32_395
+extern kcg_bool kcg_comp_array_int32_395(
+  array_int32_395 *kcg_c1,
+  array_int32_395 *kcg_c2);
+#endif /* kcg_comp_array_int32_395 */
+#endif /* kcg_use_array_int32_395 */
 
-#ifdef kcg_use_array_int64_8_4
-#ifndef kcg_comp_array_int64_8_4
-extern kcg_bool kcg_comp_array_int64_8_4(
-  array_int64_8_4 *kcg_c1,
-  array_int64_8_4 *kcg_c2);
-#endif /* kcg_comp_array_int64_8_4 */
-#endif /* kcg_use_array_int64_8_4 */
+#ifdef kcg_use_array_int32_8_4
+#ifndef kcg_comp_array_int32_8_4
+extern kcg_bool kcg_comp_array_int32_8_4(
+  array_int32_8_4 *kcg_c1,
+  array_int32_8_4 *kcg_c2);
+#endif /* kcg_comp_array_int32_8_4 */
+#endif /* kcg_use_array_int32_8_4 */
 
 #ifdef kcg_use_CompressedPacketData_T_Common_Types_Pkg
 #ifndef kcg_comp_CompressedPacketData_T_Common_Types_Pkg
@@ -5323,13 +5323,13 @@ extern kcg_bool kcg_comp_CompressedPacketData_T_Common_Types_Pkg(
 #endif /* kcg_comp_CompressedPacketData_T_Common_Types_Pkg */
 #endif /* kcg_use_CompressedPacketData_T_Common_Types_Pkg */
 
-#ifdef kcg_use_array_int64_105
-#ifndef kcg_comp_array_int64_105
-extern kcg_bool kcg_comp_array_int64_105(
-  array_int64_105 *kcg_c1,
-  array_int64_105 *kcg_c2);
-#endif /* kcg_comp_array_int64_105 */
-#endif /* kcg_use_array_int64_105 */
+#ifdef kcg_use_array_int32_105
+#ifndef kcg_comp_array_int32_105
+extern kcg_bool kcg_comp_array_int32_105(
+  array_int32_105 *kcg_c1,
+  array_int32_105 *kcg_c2);
+#endif /* kcg_comp_array_int32_105 */
+#endif /* kcg_use_array_int32_105 */
 
 #ifdef kcg_use__26_array
 #ifndef kcg_comp__26_array
@@ -5379,53 +5379,53 @@ extern kcg_bool kcg_comp_aNID_RADIO_T_Packet_TrainTypes_Pkg(
 #endif /* kcg_comp_aNID_RADIO_T_Packet_TrainTypes_Pkg */
 #endif /* kcg_use_aNID_RADIO_T_Packet_TrainTypes_Pkg */
 
-#ifdef kcg_use_array_int64_350
-#ifndef kcg_comp_array_int64_350
-extern kcg_bool kcg_comp_array_int64_350(
-  array_int64_350 *kcg_c1,
-  array_int64_350 *kcg_c2);
-#endif /* kcg_comp_array_int64_350 */
-#endif /* kcg_use_array_int64_350 */
+#ifdef kcg_use_array_int32_350
+#ifndef kcg_comp_array_int32_350
+extern kcg_bool kcg_comp_array_int32_350(
+  array_int32_350 *kcg_c1,
+  array_int32_350 *kcg_c2);
+#endif /* kcg_comp_array_int32_350 */
+#endif /* kcg_use_array_int32_350 */
 
-#ifdef kcg_use_array_int64_2_33_99
-#ifndef kcg_comp_array_int64_2_33_99
-extern kcg_bool kcg_comp_array_int64_2_33_99(
-  array_int64_2_33_99 *kcg_c1,
-  array_int64_2_33_99 *kcg_c2);
-#endif /* kcg_comp_array_int64_2_33_99 */
-#endif /* kcg_use_array_int64_2_33_99 */
+#ifdef kcg_use_array_int32_2_33_99
+#ifndef kcg_comp_array_int32_2_33_99
+extern kcg_bool kcg_comp_array_int32_2_33_99(
+  array_int32_2_33_99 *kcg_c1,
+  array_int32_2_33_99 *kcg_c2);
+#endif /* kcg_comp_array_int32_2_33_99 */
+#endif /* kcg_use_array_int32_2_33_99 */
 
-#ifdef kcg_use_array_int64_3_33_99
-#ifndef kcg_comp_array_int64_3_33_99
-extern kcg_bool kcg_comp_array_int64_3_33_99(
-  array_int64_3_33_99 *kcg_c1,
-  array_int64_3_33_99 *kcg_c2);
-#endif /* kcg_comp_array_int64_3_33_99 */
-#endif /* kcg_use_array_int64_3_33_99 */
+#ifdef kcg_use_array_int32_3_33_99
+#ifndef kcg_comp_array_int32_3_33_99
+extern kcg_bool kcg_comp_array_int32_3_33_99(
+  array_int32_3_33_99 *kcg_c1,
+  array_int32_3_33_99 *kcg_c2);
+#endif /* kcg_comp_array_int32_3_33_99 */
+#endif /* kcg_use_array_int32_3_33_99 */
 
-#ifdef kcg_use_array_int64_72
-#ifndef kcg_comp_array_int64_72
-extern kcg_bool kcg_comp_array_int64_72(
-  array_int64_72 *kcg_c1,
-  array_int64_72 *kcg_c2);
-#endif /* kcg_comp_array_int64_72 */
-#endif /* kcg_use_array_int64_72 */
+#ifdef kcg_use_array_int32_72
+#ifndef kcg_comp_array_int32_72
+extern kcg_bool kcg_comp_array_int32_72(
+  array_int32_72 *kcg_c1,
+  array_int32_72 *kcg_c2);
+#endif /* kcg_comp_array_int32_72 */
+#endif /* kcg_use_array_int32_72 */
 
-#ifdef kcg_use_array_int64_499
-#ifndef kcg_comp_array_int64_499
-extern kcg_bool kcg_comp_array_int64_499(
-  array_int64_499 *kcg_c1,
-  array_int64_499 *kcg_c2);
-#endif /* kcg_comp_array_int64_499 */
-#endif /* kcg_use_array_int64_499 */
+#ifdef kcg_use_array_int32_499
+#ifndef kcg_comp_array_int32_499
+extern kcg_bool kcg_comp_array_int32_499(
+  array_int32_499 *kcg_c1,
+  array_int32_499 *kcg_c2);
+#endif /* kcg_comp_array_int32_499 */
+#endif /* kcg_use_array_int32_499 */
 
-#ifdef kcg_use_array_int64_104
-#ifndef kcg_comp_array_int64_104
-extern kcg_bool kcg_comp_array_int64_104(
-  array_int64_104 *kcg_c1,
-  array_int64_104 *kcg_c2);
-#endif /* kcg_comp_array_int64_104 */
-#endif /* kcg_use_array_int64_104 */
+#ifdef kcg_use_array_int32_104
+#ifndef kcg_comp_array_int32_104
+extern kcg_bool kcg_comp_array_int32_104(
+  array_int32_104 *kcg_c1,
+  array_int32_104 *kcg_c2);
+#endif /* kcg_comp_array_int32_104 */
+#endif /* kcg_use_array_int32_104 */
 
 #ifdef kcg_use_P011_TrainTrack_int_TM_TrainToTrack
 #ifndef kcg_comp_P011_TrainTrack_int_TM_TrainToTrack
@@ -5435,13 +5435,13 @@ extern kcg_bool kcg_comp_P011_TrainTrack_int_TM_TrainToTrack(
 #endif /* kcg_comp_P011_TrainTrack_int_TM_TrainToTrack */
 #endif /* kcg_use_P011_TrainTrack_int_TM_TrainToTrack */
 
-#ifdef kcg_use_array_int64_3_33
-#ifndef kcg_comp_array_int64_3_33
-extern kcg_bool kcg_comp_array_int64_3_33(
-  array_int64_3_33 *kcg_c1,
-  array_int64_3_33 *kcg_c2);
-#endif /* kcg_comp_array_int64_3_33 */
-#endif /* kcg_use_array_int64_3_33 */
+#ifdef kcg_use_array_int32_3_33
+#ifndef kcg_comp_array_int32_3_33
+extern kcg_bool kcg_comp_array_int32_3_33(
+  array_int32_3_33 *kcg_c1,
+  array_int32_3_33 *kcg_c2);
+#endif /* kcg_comp_array_int32_3_33 */
+#endif /* kcg_use_array_int32_3_33 */
 
 #ifdef kcg_use_P005_section_array_T_TM
 #ifndef kcg_comp_P005_section_array_T_TM
@@ -5463,13 +5463,13 @@ extern kcg_bool kcg_comp__31_array(_31_array *kcg_c1, _31_array *kcg_c2);
 #endif /* kcg_comp__31_array */
 #endif /* kcg_use__31_array */
 
-#ifdef kcg_use_array_int64_68
-#ifndef kcg_comp_array_int64_68
-extern kcg_bool kcg_comp_array_int64_68(
-  array_int64_68 *kcg_c1,
-  array_int64_68 *kcg_c2);
-#endif /* kcg_comp_array_int64_68 */
-#endif /* kcg_use_array_int64_68 */
+#ifdef kcg_use_array_int32_68
+#ifndef kcg_comp_array_int32_68
+extern kcg_bool kcg_comp_array_int32_68(
+  array_int32_68 *kcg_c1,
+  array_int32_68 *kcg_c2);
+#endif /* kcg_comp_array_int32_68 */
+#endif /* kcg_use_array_int32_68 */
 
 #ifdef kcg_use__3_RadioTrackTrainMessageQueueEntries_T
 #ifndef kcg_comp__3_RadioTrackTrainMessageQueueEntries_T
@@ -5479,33 +5479,33 @@ extern kcg_bool kcg_comp__3_RadioTrackTrainMessageQueueEntries_T(
 #endif /* kcg_comp__3_RadioTrackTrainMessageQueueEntries_T */
 #endif /* kcg_use__3_RadioTrackTrainMessageQueueEntries_T */
 
-#ifdef kcg_use_array_int64_24
-#ifndef kcg_comp_array_int64_24
-extern kcg_bool kcg_comp_array_int64_24(
-  array_int64_24 *kcg_c1,
-  array_int64_24 *kcg_c2);
-#endif /* kcg_comp_array_int64_24 */
-#endif /* kcg_use_array_int64_24 */
+#ifdef kcg_use_array_int32_24
+#ifndef kcg_comp_array_int32_24
+extern kcg_bool kcg_comp_array_int32_24(
+  array_int32_24 *kcg_c1,
+  array_int32_24 *kcg_c2);
+#endif /* kcg_comp_array_int32_24 */
+#endif /* kcg_use_array_int32_24 */
 
-#ifdef kcg_use_array_int64_21
-#ifndef kcg_comp_array_int64_21
-extern kcg_bool kcg_comp_array_int64_21(
-  array_int64_21 *kcg_c1,
-  array_int64_21 *kcg_c2);
-#endif /* kcg_comp_array_int64_21 */
-#endif /* kcg_use_array_int64_21 */
+#ifdef kcg_use_array_int32_21
+#ifndef kcg_comp_array_int32_21
+extern kcg_bool kcg_comp_array_int32_21(
+  array_int32_21 *kcg_c1,
+  array_int32_21 *kcg_c2);
+#endif /* kcg_comp_array_int32_21 */
+#endif /* kcg_use_array_int32_21 */
 
-#ifdef kcg_use_array_int64_100
-#ifndef kcg_comp_array_int64_100
-extern kcg_bool kcg_comp_array_int64_100(
-  array_int64_100 *kcg_c1,
-  array_int64_100 *kcg_c2);
-#endif /* kcg_comp_array_int64_100 */
-#endif /* kcg_use_array_int64_100 */
+#ifdef kcg_use_array_int32_100
+#ifndef kcg_comp_array_int32_100
+extern kcg_bool kcg_comp_array_int32_100(
+  array_int32_100 *kcg_c1,
+  array_int32_100 *kcg_c2);
+#endif /* kcg_comp_array_int32_100 */
+#endif /* kcg_use_array_int32_100 */
 
-#define kcg_comp_aNID_NTC_T_Packet_TrainTypes_Pkg kcg_comp_array_int64_5
+#define kcg_comp_aNID_NTC_T_Packet_TrainTypes_Pkg kcg_comp_array_int32_5
 
-#define kcg_copy_aNID_NTC_T_Packet_TrainTypes_Pkg kcg_copy_array_int64_5
+#define kcg_copy_aNID_NTC_T_Packet_TrainTypes_Pkg kcg_copy_array_int32_5
 
 #define kcg_comp_sTractionIdentity_T_Packet_TrainTypes_Pkg                    \
   kcg_comp_struct_150212
@@ -5566,16 +5566,16 @@ extern kcg_bool kcg_comp_array_int64_100(
 #define kcg_copy_P015_trackide_sectionlist_T_TM kcg_copy__19_array
 
 #define kcg_comp_P027V1_sections_array_flat_qdiff_T_TM_baseline2              \
-  kcg_comp_array_int64_64
+  kcg_comp_array_int32_64
 
 #define kcg_copy_P027V1_sections_array_flat_qdiff_T_TM_baseline2              \
-  kcg_copy_array_int64_64
+  kcg_copy_array_int32_64
 
 #define kcg_comp_P027V1_section_array_qdiff_T_TM_baseline2                    \
-  kcg_comp_array_int64_2
+  kcg_comp_array_int32_2
 
 #define kcg_copy_P027V1_section_array_qdiff_T_TM_baseline2                    \
-  kcg_copy_array_int64_2
+  kcg_copy_array_int32_2
 
 #define kcg_comp__6_P027V1_OBU_sectionlist_int_qdiff_T_TM_baseline2           \
   kcg_comp__20_array
@@ -5584,42 +5584,42 @@ extern kcg_bool kcg_comp_array_int64_100(
   kcg_copy__20_array
 
 #define kcg_comp__7_P027V1_OBU_sectionlist_array_qdiff_T_TM_baseline2         \
-  kcg_comp_array_int64_2_32
+  kcg_comp_array_int32_2_32
 
 #define kcg_copy__7_P027V1_OBU_sectionlist_array_qdiff_T_TM_baseline2         \
-  kcg_copy_array_int64_2_32
+  kcg_copy_array_int32_2_32
 
 #define kcg_comp_P015_OBU_sectionlist_int_T_TM kcg_comp__19_array
 
 #define kcg_copy_P015_OBU_sectionlist_int_T_TM kcg_copy__19_array
 
-#define kcg_comp_P021_sections_array_flat_T_TM kcg_comp_array_int64_99
+#define kcg_comp_P021_sections_array_flat_T_TM kcg_comp_array_int32_99
 
-#define kcg_copy_P021_sections_array_flat_T_TM kcg_copy_array_int64_99
+#define kcg_copy_P021_sections_array_flat_T_TM kcg_copy_array_int32_99
 
-#define kcg_comp_P021_section_array_T_TM kcg_comp_array_int64_3
+#define kcg_comp_P021_section_array_T_TM kcg_comp_array_int32_3
 
-#define kcg_copy_P021_section_array_T_TM kcg_copy_array_int64_3
+#define kcg_copy_P021_section_array_T_TM kcg_copy_array_int32_3
 
-#define kcg_comp_P021_OBU_sectionlist_array_T_TM kcg_comp_array_int64_3_33
+#define kcg_comp_P021_OBU_sectionlist_array_T_TM kcg_comp_array_int32_3_33
 
-#define kcg_copy_P021_OBU_sectionlist_array_T_TM kcg_copy_array_int64_3_33
+#define kcg_copy_P021_OBU_sectionlist_array_T_TM kcg_copy_array_int32_3_33
 
-#define kcg_comp_P058_sections_array_flat_T_TM kcg_comp_array_int64_64
+#define kcg_comp_P058_sections_array_flat_T_TM kcg_comp_array_int32_64
 
-#define kcg_copy_P058_sections_array_flat_T_TM kcg_copy_array_int64_64
+#define kcg_copy_P058_sections_array_flat_T_TM kcg_copy_array_int32_64
 
-#define kcg_comp_P058_section_array_T_TM kcg_comp_array_int64_2
+#define kcg_comp_P058_section_array_T_TM kcg_comp_array_int32_2
 
-#define kcg_copy_P058_section_array_T_TM kcg_copy_array_int64_2
+#define kcg_copy_P058_section_array_T_TM kcg_copy_array_int32_2
 
 #define kcg_comp_P058_OBU_sectionlist_int_T_TM kcg_comp__21_array
 
 #define kcg_copy_P058_OBU_sectionlist_int_T_TM kcg_copy__21_array
 
-#define kcg_comp_P058_OBU_sectionlist_array_T_TM kcg_comp_array_int64_2_32
+#define kcg_comp_P058_OBU_sectionlist_array_T_TM kcg_comp_array_int32_2_32
 
-#define kcg_copy_P058_OBU_sectionlist_array_T_TM kcg_copy_array_int64_2_32
+#define kcg_copy_P058_OBU_sectionlist_array_T_TM kcg_copy_array_int32_2_32
 
 #define kcg_comp_P011_voltage_TM_TrainToTrack kcg_comp_struct_150212
 
@@ -5629,57 +5629,57 @@ extern kcg_bool kcg_comp_array_int64_100(
 
 #define kcg_copy_P011_voltage_list_TM_TrainToTrack kcg_copy__23_array
 
-#define kcg_comp_P011_ntc_list_TM_TrainToTrack kcg_comp_array_int64_5
+#define kcg_comp_P011_ntc_list_TM_TrainToTrack kcg_comp_array_int32_5
 
-#define kcg_copy_P011_ntc_list_TM_TrainToTrack kcg_copy_array_int64_5
+#define kcg_copy_P011_ntc_list_TM_TrainToTrack kcg_copy_array_int32_5
 
-#define kcg_comp_P003_nid_radio_list_t_TM_TrainToTrack kcg_comp_array_int64_5
+#define kcg_comp_P003_nid_radio_list_t_TM_TrainToTrack kcg_comp_array_int32_5
 
-#define kcg_copy_P003_nid_radio_list_t_TM_TrainToTrack kcg_copy_array_int64_5
+#define kcg_copy_P003_nid_radio_list_t_TM_TrainToTrack kcg_copy_array_int32_5
 
-#define kcg_comp_P000_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int64_17
+#define kcg_comp_P000_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int32_17
 
-#define kcg_copy_P000_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int64_17
+#define kcg_copy_P000_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int32_17
 
-#define kcg_comp_P001_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int64_17
+#define kcg_comp_P001_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int32_17
 
-#define kcg_copy_P001_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int64_17
+#define kcg_copy_P001_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int32_17
 
-#define kcg_comp_P011_ntc_list_array_T_TM_TrainToTrack kcg_comp_array_int64_5
+#define kcg_comp_P011_ntc_list_array_T_TM_TrainToTrack kcg_comp_array_int32_5
 
-#define kcg_copy_P011_ntc_list_array_T_TM_TrainToTrack kcg_copy_array_int64_5
+#define kcg_copy_P011_ntc_list_array_T_TM_TrainToTrack kcg_copy_array_int32_5
 
 #define kcg_comp_P011_voltage_sections_array_flat_t_TM_TrainToTrack           \
-  kcg_comp_array_int64_8
+  kcg_comp_array_int32_8
 
 #define kcg_copy_P011_voltage_sections_array_flat_t_TM_TrainToTrack           \
-  kcg_copy_array_int64_8
+  kcg_copy_array_int32_8
 
-#define kcg_comp_P009_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int64_3
+#define kcg_comp_P009_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int32_3
 
-#define kcg_copy_P009_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int64_3
+#define kcg_copy_P009_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int32_3
 
-#define kcg_comp_P004_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int64_3
+#define kcg_comp_P004_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int32_3
 
-#define kcg_copy_P004_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int64_3
+#define kcg_copy_P004_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int32_3
 
-#define kcg_comp_P005_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int64_3
+#define kcg_comp_P005_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int32_3
 
-#define kcg_copy_P005_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int64_3
+#define kcg_copy_P005_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int32_3
 
 #define kcg_comp_P003_nid_radio_list_int_t_TM_TrainToTrack                    \
-  kcg_comp_array_int64_5
+  kcg_comp_array_int32_5
 
 #define kcg_copy_P003_nid_radio_list_int_t_TM_TrainToTrack                    \
-  kcg_copy_array_int64_5
+  kcg_copy_array_int32_5
 
-#define kcg_comp_Array03_TM_TrainToTrack kcg_comp_array_int64_3
+#define kcg_comp_Array03_TM_TrainToTrack kcg_comp_array_int32_3
 
-#define kcg_copy_Array03_TM_TrainToTrack kcg_copy_array_int64_3
+#define kcg_copy_Array03_TM_TrainToTrack kcg_copy_array_int32_3
 
-#define kcg_comp_P003_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int64_8
+#define kcg_comp_P003_TrainTrack_int_TM_TrainToTrack kcg_comp_array_int32_8
 
-#define kcg_copy_P003_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int64_8
+#define kcg_copy_P003_TrainTrack_int_TM_TrainToTrack kcg_copy_array_int32_8
 
 #define kcg_comp_M_003_int_T_TM_radio_messages kcg_comp_struct_149262
 
@@ -5689,25 +5689,25 @@ extern kcg_bool kcg_comp_array_int64_100(
 
 #define kcg_copy_BaliseGroupData_TM kcg_copy_struct_149762
 
-#define kcg_comp_P041_sections_array_flat_T_TM kcg_comp_array_int64_99
+#define kcg_comp_P041_sections_array_flat_T_TM kcg_comp_array_int32_99
 
-#define kcg_copy_P041_sections_array_flat_T_TM kcg_copy_array_int64_99
+#define kcg_copy_P041_sections_array_flat_T_TM kcg_copy_array_int32_99
 
-#define kcg_comp_P041_section_array_T_TM kcg_comp_array_int64_3
+#define kcg_comp_P041_section_array_T_TM kcg_comp_array_int32_3
 
-#define kcg_copy_P041_section_array_T_TM kcg_copy_array_int64_3
+#define kcg_copy_P041_section_array_T_TM kcg_copy_array_int32_3
 
-#define kcg_comp_P041_OBU_sectionlist_array_T_TM kcg_comp_array_int64_3_33
+#define kcg_comp_P041_OBU_sectionlist_array_T_TM kcg_comp_array_int32_3_33
 
-#define kcg_copy_P041_OBU_sectionlist_array_T_TM kcg_copy_array_int64_3_33
+#define kcg_copy_P041_OBU_sectionlist_array_T_TM kcg_copy_array_int32_3_33
 
 #define kcg_comp_BaliseGroupData_Basics kcg_comp_struct_149762
 
 #define kcg_copy_BaliseGroupData_Basics kcg_copy_struct_149762
 
-#define kcg_comp_P046_section_array_T_TM kcg_comp_array_int64_2
+#define kcg_comp_P046_section_array_T_TM kcg_comp_array_int32_2
 
-#define kcg_copy_P046_section_array_T_TM kcg_copy_array_int64_2
+#define kcg_copy_P046_section_array_T_TM kcg_copy_array_int32_2
 
 #define kcg_comp_M_024_int_T_TM_radio_messages kcg_comp_struct_149262
 

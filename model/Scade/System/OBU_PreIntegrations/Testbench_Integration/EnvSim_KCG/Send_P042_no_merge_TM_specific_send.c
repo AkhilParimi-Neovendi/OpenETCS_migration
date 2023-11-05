@@ -50,51 +50,51 @@ void Send_P042_no_merge_init_TM_specific_send(
   static kcg_size idx5;
 
   for (idx = 0; idx < 30; idx++) {
-    outC->_L6.PacketHeaders[idx].nid_packet = kcg_lit_int64(0);
+    outC->_L6.PacketHeaders[idx].nid_packet = kcg_lit_int32(0);
     outC->_L6.PacketHeaders[idx].q_dir = Q_DIR_Reverse;
     outC->_L6.PacketHeaders[idx].valid = kcg_true;
-    outC->_L6.PacketHeaders[idx].startAddress = kcg_lit_int64(0);
-    outC->_L6.PacketHeaders[idx].endAddress = kcg_lit_int64(0);
+    outC->_L6.PacketHeaders[idx].startAddress = kcg_lit_int32(0);
+    outC->_L6.PacketHeaders[idx].endAddress = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 500; idx1++) {
-    outC->_L6.PacketData[idx1] = kcg_lit_int64(0);
+    outC->_L6.PacketData[idx1] = kcg_lit_int32(0);
   }
   outC->_L5.valid = kcg_true;
-  outC->_L5.NID_PACKET = kcg_lit_int64(0);
-  outC->_L5.Q_DIR = kcg_lit_int64(0);
-  outC->_L5.L_PACKET = kcg_lit_int64(0);
-  outC->_L5.Q_RBC = kcg_lit_int64(0);
-  outC->_L5.NID_C = kcg_lit_int64(0);
-  outC->_L5.NID_RBC = kcg_lit_int64(0);
-  outC->_L5.NID_RADIO = kcg_lit_int64(0);
-  outC->_L5.Q_SLEEPSESSION = kcg_lit_int64(0);
+  outC->_L5.NID_PACKET = kcg_lit_int32(0);
+  outC->_L5.Q_DIR = kcg_lit_int32(0);
+  outC->_L5.L_PACKET = kcg_lit_int32(0);
+  outC->_L5.Q_RBC = kcg_lit_int32(0);
+  outC->_L5.NID_C = kcg_lit_int32(0);
+  outC->_L5.NID_RBC = kcg_lit_int32(0);
+  outC->_L5.NID_RADIO = kcg_lit_int32(0);
+  outC->_L5.Q_SLEEPSESSION = kcg_lit_int32(0);
   outC->_L3.valid = kcg_true;
   outC->_L3.q_dir = Q_DIR_Reverse;
   outC->_L3.q_rbc = Q_RBC_Terminate_communication_session;
-  outC->_L3.nid_c = kcg_lit_int64(0);
-  outC->_L3.nid_rbc = kcg_lit_int64(0);
-  outC->_L3.nid_radio = kcg_lit_int64(0);
+  outC->_L3.nid_c = kcg_lit_int32(0);
+  outC->_L3.nid_rbc = kcg_lit_int32(0);
+  outC->_L3.nid_radio = kcg_lit_int32(0);
   outC->_L3.q_sleepsession = Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L1 = kcg_true;
   for (idx2 = 0; idx2 < 30; idx2++) {
-    outC->_L2.PacketHeaders[idx2].nid_packet = kcg_lit_int64(0);
+    outC->_L2.PacketHeaders[idx2].nid_packet = kcg_lit_int32(0);
     outC->_L2.PacketHeaders[idx2].q_dir = Q_DIR_Reverse;
     outC->_L2.PacketHeaders[idx2].valid = kcg_true;
-    outC->_L2.PacketHeaders[idx2].startAddress = kcg_lit_int64(0);
-    outC->_L2.PacketHeaders[idx2].endAddress = kcg_lit_int64(0);
+    outC->_L2.PacketHeaders[idx2].startAddress = kcg_lit_int32(0);
+    outC->_L2.PacketHeaders[idx2].endAddress = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 500; idx3++) {
-    outC->_L2.PacketData[idx3] = kcg_lit_int64(0);
+    outC->_L2.PacketData[idx3] = kcg_lit_int32(0);
   }
   for (idx4 = 0; idx4 < 30; idx4++) {
-    outC->RadioPacketsOut.PacketHeaders[idx4].nid_packet = kcg_lit_int64(0);
+    outC->RadioPacketsOut.PacketHeaders[idx4].nid_packet = kcg_lit_int32(0);
     outC->RadioPacketsOut.PacketHeaders[idx4].q_dir = Q_DIR_Reverse;
     outC->RadioPacketsOut.PacketHeaders[idx4].valid = kcg_true;
-    outC->RadioPacketsOut.PacketHeaders[idx4].startAddress = kcg_lit_int64(0);
-    outC->RadioPacketsOut.PacketHeaders[idx4].endAddress = kcg_lit_int64(0);
+    outC->RadioPacketsOut.PacketHeaders[idx4].startAddress = kcg_lit_int32(0);
+    outC->RadioPacketsOut.PacketHeaders[idx4].endAddress = kcg_lit_int32(0);
   }
   for (idx5 = 0; idx5 < 500; idx5++) {
-    outC->RadioPacketsOut.PacketData[idx5] = kcg_lit_int64(0);
+    outC->RadioPacketsOut.PacketData[idx5] = kcg_lit_int32(0);
   }
   /* _L1=(TM_trackside::Write_P042#1)/ */
   Write_P042_init_TM_trackside(&outC->Context_Write_P042_1);

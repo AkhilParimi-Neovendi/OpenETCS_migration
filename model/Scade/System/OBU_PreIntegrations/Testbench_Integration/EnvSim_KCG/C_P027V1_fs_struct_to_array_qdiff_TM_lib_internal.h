@@ -22,9 +22,9 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   P027V1_section_int_qdiff_T_TM_baseline2 /* _L1/ */ _L1;
-  array_int64_2 /* _L2/ */ _L2;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L3/ */ _L3;
+  array_int32_2 /* _L2/ */ _L2;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L3/ */ _L3;
 } outC_C_P027V1_fs_struct_to_array_qdiff_TM_lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */

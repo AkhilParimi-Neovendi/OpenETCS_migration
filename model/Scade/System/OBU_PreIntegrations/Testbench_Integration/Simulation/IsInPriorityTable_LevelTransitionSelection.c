@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -49,21 +49,21 @@ void IsInPriorityTable_init_LevelTransitionSelection(
   outC->_L12 = M_LEVEL_Level_0;
   outC->_L1.is_set = kcg_true;
   outC->_L1.transition.level = M_LEVEL_Level_0;
-  outC->_L1.transition.position = kcg_lit_int64(0);
+  outC->_L1.transition.position = kcg_lit_int32(0);
   outC->_L1.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L1.transition.immediateAck = kcg_true;
-  outC->_L1.transition.AckLength = kcg_lit_int64(0);
-  outC->_L1.LRBG = kcg_lit_int64(0);
-  outC->_L1.referenceLocation = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L1.transition.AckLength = kcg_lit_int32(0);
+  outC->_L1.LRBG = kcg_lit_int32(0);
+  outC->_L1.referenceLocation = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->_L3.level = M_LEVEL_Level_0;
-  outC->_L3.position = kcg_lit_int64(0);
+  outC->_L3.position = kcg_lit_int32(0);
   outC->_L3.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L3.immediateAck = kcg_true;
-  outC->_L3.AckLength = kcg_lit_int64(0);
+  outC->_L3.AckLength = kcg_lit_int32(0);
   outC->_L2 = kcg_true;
   outC->_L6 = M_LEVEL_Level_0;
   outC->_L10 = kcg_true;
@@ -84,6 +84,6 @@ void IsInPriorityTable_reset_LevelTransitionSelection(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** IsInPriorityTable_LevelTransitionSelection.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

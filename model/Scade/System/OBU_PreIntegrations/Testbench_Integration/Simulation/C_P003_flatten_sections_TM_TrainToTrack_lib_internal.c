@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -39,13 +39,13 @@ void C_P003_flatten_sections_init_TM_TrainToTrack_lib_internal(
   static kcg_size idx3;
 
   for (idx1 = 0; idx1 < 5; idx1++) {
-    outC->_L74[idx1] = kcg_lit_int64(0);
+    outC->_L74[idx1] = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 5; idx2++) {
-    outC->_L75[idx2] = kcg_lit_int64(0);
+    outC->_L75[idx2] = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 5; idx3++) {
-    outC->Flattened[idx3] = kcg_lit_int64(0);
+    outC->Flattened[idx3] = kcg_lit_int32(0);
   }
   for (idx = 0; idx < 5; idx++) {
     /* _L74=(TM_TrainToTrack_lib_internal::C_P003_fs_struct_to_array#1)/ */
@@ -74,6 +74,6 @@ void C_P003_flatten_sections_reset_TM_TrainToTrack_lib_internal(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P003_flatten_sections_TM_TrainToTrack_lib_internal.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

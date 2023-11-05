@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -15,10 +15,10 @@ void LengthLargerThanLKr_SDMConversionModelPkg(
   L_NVKRINT LnvKrInt,
   outC_LengthLargerThanLKr_SDMConversionModelPkg *outC)
 {
-  outC->_L83 = kcg_lit_int64(100);
-  kcg_copy_array_int64_32(
+  outC->_L83 = kcg_lit_int32(100);
+  kcg_copy_array_int32_32(
     &outC->_L7,
-    (array_int64_32 *) &cLKrIntLookUp_SDMConversionModelPkg);
+    (array_int32_32 *) &cLKrIntLookUp_SDMConversionModelPkg);
   outC->_L50 = outC->_L7[0];
   outC->_L51 = outC->_L7[1];
   outC->_L52 = outC->_L7[2];
@@ -166,47 +166,47 @@ void LengthLargerThanLKr_init_SDMConversionModelPkg(
 {
   static kcg_size idx;
 
-  outC->_L83 = kcg_lit_int64(0);
-  outC->_L82 = kcg_lit_int64(0);
-  outC->_L50 = kcg_lit_int64(0);
-  outC->_L51 = kcg_lit_int64(0);
-  outC->_L52 = kcg_lit_int64(0);
-  outC->_L53 = kcg_lit_int64(0);
-  outC->_L54 = kcg_lit_int64(0);
-  outC->_L55 = kcg_lit_int64(0);
-  outC->_L56 = kcg_lit_int64(0);
-  outC->_L57 = kcg_lit_int64(0);
-  outC->_L58 = kcg_lit_int64(0);
-  outC->_L59 = kcg_lit_int64(0);
-  outC->_L60 = kcg_lit_int64(0);
-  outC->_L61 = kcg_lit_int64(0);
-  outC->_L62 = kcg_lit_int64(0);
-  outC->_L63 = kcg_lit_int64(0);
-  outC->_L64 = kcg_lit_int64(0);
-  outC->_L65 = kcg_lit_int64(0);
-  outC->_L66 = kcg_lit_int64(0);
-  outC->_L67 = kcg_lit_int64(0);
-  outC->_L68 = kcg_lit_int64(0);
-  outC->_L69 = kcg_lit_int64(0);
-  outC->_L70 = kcg_lit_int64(0);
-  outC->_L71 = kcg_lit_int64(0);
-  outC->_L72 = kcg_lit_int64(0);
-  outC->_L73 = kcg_lit_int64(0);
-  outC->_L74 = kcg_lit_int64(0);
-  outC->_L75 = kcg_lit_int64(0);
-  outC->_L76 = kcg_lit_int64(0);
-  outC->_L77 = kcg_lit_int64(0);
-  outC->_L78 = kcg_lit_int64(0);
-  outC->_L79 = kcg_lit_int64(0);
-  outC->_L80 = kcg_lit_int64(0);
-  outC->_L81 = kcg_lit_int64(0);
+  outC->_L83 = kcg_lit_int32(0);
+  outC->_L82 = kcg_lit_int32(0);
+  outC->_L50 = kcg_lit_int32(0);
+  outC->_L51 = kcg_lit_int32(0);
+  outC->_L52 = kcg_lit_int32(0);
+  outC->_L53 = kcg_lit_int32(0);
+  outC->_L54 = kcg_lit_int32(0);
+  outC->_L55 = kcg_lit_int32(0);
+  outC->_L56 = kcg_lit_int32(0);
+  outC->_L57 = kcg_lit_int32(0);
+  outC->_L58 = kcg_lit_int32(0);
+  outC->_L59 = kcg_lit_int32(0);
+  outC->_L60 = kcg_lit_int32(0);
+  outC->_L61 = kcg_lit_int32(0);
+  outC->_L62 = kcg_lit_int32(0);
+  outC->_L63 = kcg_lit_int32(0);
+  outC->_L64 = kcg_lit_int32(0);
+  outC->_L65 = kcg_lit_int32(0);
+  outC->_L66 = kcg_lit_int32(0);
+  outC->_L67 = kcg_lit_int32(0);
+  outC->_L68 = kcg_lit_int32(0);
+  outC->_L69 = kcg_lit_int32(0);
+  outC->_L70 = kcg_lit_int32(0);
+  outC->_L71 = kcg_lit_int32(0);
+  outC->_L72 = kcg_lit_int32(0);
+  outC->_L73 = kcg_lit_int32(0);
+  outC->_L74 = kcg_lit_int32(0);
+  outC->_L75 = kcg_lit_int32(0);
+  outC->_L76 = kcg_lit_int32(0);
+  outC->_L77 = kcg_lit_int32(0);
+  outC->_L78 = kcg_lit_int32(0);
+  outC->_L79 = kcg_lit_int32(0);
+  outC->_L80 = kcg_lit_int32(0);
+  outC->_L81 = kcg_lit_int32(0);
   for (idx = 0; idx < 32; idx++) {
-    outC->_L7[idx] = kcg_lit_int64(0);
+    outC->_L7[idx] = kcg_lit_int32(0);
   }
   outC->_L4 = kcg_true;
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L2 = L_NVKRINT_0m;
-  outC->_L1 = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
   outC->isLarger = kcg_true;
 }
 #endif /* KCG_USER_DEFINED_INIT */
@@ -223,6 +223,6 @@ void LengthLargerThanLKr_reset_SDMConversionModelPkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** LengthLargerThanLKr_SDMConversionModelPkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

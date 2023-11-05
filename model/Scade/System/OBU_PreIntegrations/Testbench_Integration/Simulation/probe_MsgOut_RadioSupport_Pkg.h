@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _probe_MsgOut_RadioSupport_Pkg_H_
 #define _probe_MsgOut_RadioSupport_Pkg_H_
@@ -26,17 +26,17 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   kcg_bool /* IfBlock1:then:_L14/ */ _L14_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L11/ */ _L11_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L11/ */ _L11_then_IfBlock1;
   T_TRAIN /* IfBlock1:then:_L12/ */ _L12_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L13/ */ _L13_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L13/ */ _L13_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L10/ */ _L10_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L8/ */ _L8_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L8/ */ _L8_then_IfBlock1;
   NID_MESSAGE /* IfBlock1:then:_L9/ */ _L9_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L7/ */ _L7_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L6/ */ _L6_then_IfBlock1;
   NID_MESSAGE /* IfBlock1:then:_L5/ */ _L5_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
   M_TrainTrack_Message_T_TM_radio_messages /* IfBlock1:then:_L2/ */ _L2_then_IfBlock1;
   M_TrainTrack_MessageHd_T_TM_radio_messages /* IfBlock1:then:_L3/ */ _L3_then_IfBlock1;
   NID_MESSAGE /* IfBlock1:else:_L2/ */ _L2_else_IfBlock1;
@@ -91,6 +91,6 @@ extern void kcg_load_SV_probe_MsgOut_RadioSupport_Pkg(
 #endif /* _probe_MsgOut_RadioSupport_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** probe_MsgOut_RadioSupport_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

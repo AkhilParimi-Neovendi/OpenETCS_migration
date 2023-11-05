@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -100,106 +100,106 @@ void CAST_int_to_DMI_EVC_Coded_Train_Data1_init_DATA_Packets_EVC_to_DMI(
   static kcg_size idx;
 
   for (idx = 0; idx < 9; idx++) {
-    outC->_L22[idx] = kcg_lit_int64(0);
+    outC->_L22[idx] = kcg_lit_int32(0);
   }
-  outC->_L19.number = kcg_lit_int64(0);
-  outC->_L19.dig1 = kcg_lit_int64(0);
-  outC->_L19.dig2 = kcg_lit_int64(0);
-  outC->_L19.dig3 = kcg_lit_int64(0);
-  outC->_L18.number = kcg_lit_int64(0);
-  outC->_L18.dig1 = kcg_lit_int64(0);
-  outC->_L18.dig2 = kcg_lit_int64(0);
-  outC->_L18.dig3 = kcg_lit_int64(0);
+  outC->_L19.number = kcg_lit_int32(0);
+  outC->_L19.dig1 = kcg_lit_int32(0);
+  outC->_L19.dig2 = kcg_lit_int32(0);
+  outC->_L19.dig3 = kcg_lit_int32(0);
+  outC->_L18.number = kcg_lit_int32(0);
+  outC->_L18.dig1 = kcg_lit_int32(0);
+  outC->_L18.dig2 = kcg_lit_int32(0);
+  outC->_L18.dig3 = kcg_lit_int32(0);
   outC->_L17 = M_AXLELOADCAT_A;
-  outC->_L16.number = kcg_lit_int64(0);
-  outC->_L16.dig1 = kcg_lit_int64(0);
-  outC->_L16.dig2 = kcg_lit_int64(0);
-  outC->_L16.dig3 = kcg_lit_int64(0);
-  outC->_L15.number = kcg_lit_int64(0);
-  outC->_L15.dig1 = kcg_lit_int64(0);
-  outC->_L15.dig2 = kcg_lit_int64(0);
-  outC->_L15.dig3 = kcg_lit_int64(0);
-  outC->_L14.number = kcg_lit_int64(0);
-  outC->_L14.dig1 = kcg_lit_int64(0);
-  outC->_L14.dig2 = kcg_lit_int64(0);
-  outC->_L14.dig3 = kcg_lit_int64(0);
-  outC->_L14.dig4 = kcg_lit_int64(0);
-  outC->_L13.number = kcg_lit_int64(0);
-  outC->_L13.dig1 = kcg_lit_int64(0);
-  outC->_L13.dig2 = kcg_lit_int64(0);
-  outC->_L13.dig3 = kcg_lit_int64(0);
-  outC->_L13.dig4 = kcg_lit_int64(0);
-  outC->_L13.dig5 = kcg_lit_int64(0);
+  outC->_L16.number = kcg_lit_int32(0);
+  outC->_L16.dig1 = kcg_lit_int32(0);
+  outC->_L16.dig2 = kcg_lit_int32(0);
+  outC->_L16.dig3 = kcg_lit_int32(0);
+  outC->_L15.number = kcg_lit_int32(0);
+  outC->_L15.dig1 = kcg_lit_int32(0);
+  outC->_L15.dig2 = kcg_lit_int32(0);
+  outC->_L15.dig3 = kcg_lit_int32(0);
+  outC->_L14.number = kcg_lit_int32(0);
+  outC->_L14.dig1 = kcg_lit_int32(0);
+  outC->_L14.dig2 = kcg_lit_int32(0);
+  outC->_L14.dig3 = kcg_lit_int32(0);
+  outC->_L14.dig4 = kcg_lit_int32(0);
+  outC->_L13.number = kcg_lit_int32(0);
+  outC->_L13.dig1 = kcg_lit_int32(0);
+  outC->_L13.dig2 = kcg_lit_int32(0);
+  outC->_L13.dig3 = kcg_lit_int32(0);
+  outC->_L13.dig4 = kcg_lit_int32(0);
+  outC->_L13.dig5 = kcg_lit_int32(0);
   outC->_L12 = kcg_true;
   outC->_L11.valid = kcg_true;
-  outC->_L11.system_clock = kcg_lit_int64(0);
-  outC->_L11.trainID.number = kcg_lit_int64(0);
-  outC->_L11.trainID.dig1 = kcg_lit_int64(0);
-  outC->_L11.trainID.dig2 = kcg_lit_int64(0);
-  outC->_L11.trainID.dig3 = kcg_lit_int64(0);
-  outC->_L11.trainID.dig4 = kcg_lit_int64(0);
-  outC->_L11.trainID.dig5 = kcg_lit_int64(0);
-  outC->_L11.trainLength.number = kcg_lit_int64(0);
-  outC->_L11.trainLength.dig1 = kcg_lit_int64(0);
-  outC->_L11.trainLength.dig2 = kcg_lit_int64(0);
-  outC->_L11.trainLength.dig3 = kcg_lit_int64(0);
-  outC->_L11.trainLength.dig4 = kcg_lit_int64(0);
-  outC->_L11.brakeModel.number = kcg_lit_int64(0);
-  outC->_L11.brakeModel.dig1 = kcg_lit_int64(0);
-  outC->_L11.brakeModel.dig2 = kcg_lit_int64(0);
-  outC->_L11.brakeModel.dig3 = kcg_lit_int64(0);
-  outC->_L11.vmax.number = kcg_lit_int64(0);
-  outC->_L11.vmax.dig1 = kcg_lit_int64(0);
-  outC->_L11.vmax.dig2 = kcg_lit_int64(0);
-  outC->_L11.vmax.dig3 = kcg_lit_int64(0);
+  outC->_L11.system_clock = kcg_lit_int32(0);
+  outC->_L11.trainID.number = kcg_lit_int32(0);
+  outC->_L11.trainID.dig1 = kcg_lit_int32(0);
+  outC->_L11.trainID.dig2 = kcg_lit_int32(0);
+  outC->_L11.trainID.dig3 = kcg_lit_int32(0);
+  outC->_L11.trainID.dig4 = kcg_lit_int32(0);
+  outC->_L11.trainID.dig5 = kcg_lit_int32(0);
+  outC->_L11.trainLength.number = kcg_lit_int32(0);
+  outC->_L11.trainLength.dig1 = kcg_lit_int32(0);
+  outC->_L11.trainLength.dig2 = kcg_lit_int32(0);
+  outC->_L11.trainLength.dig3 = kcg_lit_int32(0);
+  outC->_L11.trainLength.dig4 = kcg_lit_int32(0);
+  outC->_L11.brakeModel.number = kcg_lit_int32(0);
+  outC->_L11.brakeModel.dig1 = kcg_lit_int32(0);
+  outC->_L11.brakeModel.dig2 = kcg_lit_int32(0);
+  outC->_L11.brakeModel.dig3 = kcg_lit_int32(0);
+  outC->_L11.vmax.number = kcg_lit_int32(0);
+  outC->_L11.vmax.dig1 = kcg_lit_int32(0);
+  outC->_L11.vmax.dig2 = kcg_lit_int32(0);
+  outC->_L11.vmax.dig3 = kcg_lit_int32(0);
   outC->_L11.mAxleLoad = M_AXLELOADCAT_A;
-  outC->_L11.airTightSystem.number = kcg_lit_int64(0);
-  outC->_L11.airTightSystem.dig1 = kcg_lit_int64(0);
-  outC->_L11.airTightSystem.dig2 = kcg_lit_int64(0);
-  outC->_L11.airTightSystem.dig3 = kcg_lit_int64(0);
-  outC->_L11.mLoadingGauge.number = kcg_lit_int64(0);
-  outC->_L11.mLoadingGauge.dig1 = kcg_lit_int64(0);
-  outC->_L11.mLoadingGauge.dig2 = kcg_lit_int64(0);
-  outC->_L11.mLoadingGauge.dig3 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L11.airTightSystem.number = kcg_lit_int32(0);
+  outC->_L11.airTightSystem.dig1 = kcg_lit_int32(0);
+  outC->_L11.airTightSystem.dig2 = kcg_lit_int32(0);
+  outC->_L11.airTightSystem.dig3 = kcg_lit_int32(0);
+  outC->_L11.mLoadingGauge.number = kcg_lit_int32(0);
+  outC->_L11.mLoadingGauge.dig1 = kcg_lit_int32(0);
+  outC->_L11.mLoadingGauge.dig2 = kcg_lit_int32(0);
+  outC->_L11.mLoadingGauge.dig3 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
   outC->dmi_evc_coded_train_data_ct.valid = kcg_true;
-  outC->dmi_evc_coded_train_data_ct.system_clock = kcg_lit_int64(0);
-  outC->dmi_evc_coded_train_data_ct.trainID.number = kcg_lit_int64(0);
-  outC->dmi_evc_coded_train_data_ct.trainID.dig1 = kcg_lit_int64(0);
-  outC->dmi_evc_coded_train_data_ct.trainID.dig2 = kcg_lit_int64(0);
-  outC->dmi_evc_coded_train_data_ct.trainID.dig3 = kcg_lit_int64(0);
-  outC->dmi_evc_coded_train_data_ct.trainID.dig4 = kcg_lit_int64(0);
-  outC->dmi_evc_coded_train_data_ct.trainID.dig5 = kcg_lit_int64(0);
-  outC->dmi_evc_coded_train_data_ct.trainLength.number = kcg_lit_int64(0);
-  outC->dmi_evc_coded_train_data_ct.trainLength.dig1 = kcg_lit_int64(0);
-  outC->dmi_evc_coded_train_data_ct.trainLength.dig2 = kcg_lit_int64(0);
-  outC->dmi_evc_coded_train_data_ct.trainLength.dig3 = kcg_lit_int64(0);
-  outC->dmi_evc_coded_train_data_ct.trainLength.dig4 = kcg_lit_int64(0);
-  outC->dmi_evc_coded_train_data_ct.brakeModel.number = kcg_lit_int64(0);
-  outC->dmi_evc_coded_train_data_ct.brakeModel.dig1 = kcg_lit_int64(0);
-  outC->dmi_evc_coded_train_data_ct.brakeModel.dig2 = kcg_lit_int64(0);
-  outC->dmi_evc_coded_train_data_ct.brakeModel.dig3 = kcg_lit_int64(0);
-  outC->dmi_evc_coded_train_data_ct.vmax.number = kcg_lit_int64(0);
-  outC->dmi_evc_coded_train_data_ct.vmax.dig1 = kcg_lit_int64(0);
-  outC->dmi_evc_coded_train_data_ct.vmax.dig2 = kcg_lit_int64(0);
-  outC->dmi_evc_coded_train_data_ct.vmax.dig3 = kcg_lit_int64(0);
+  outC->dmi_evc_coded_train_data_ct.system_clock = kcg_lit_int32(0);
+  outC->dmi_evc_coded_train_data_ct.trainID.number = kcg_lit_int32(0);
+  outC->dmi_evc_coded_train_data_ct.trainID.dig1 = kcg_lit_int32(0);
+  outC->dmi_evc_coded_train_data_ct.trainID.dig2 = kcg_lit_int32(0);
+  outC->dmi_evc_coded_train_data_ct.trainID.dig3 = kcg_lit_int32(0);
+  outC->dmi_evc_coded_train_data_ct.trainID.dig4 = kcg_lit_int32(0);
+  outC->dmi_evc_coded_train_data_ct.trainID.dig5 = kcg_lit_int32(0);
+  outC->dmi_evc_coded_train_data_ct.trainLength.number = kcg_lit_int32(0);
+  outC->dmi_evc_coded_train_data_ct.trainLength.dig1 = kcg_lit_int32(0);
+  outC->dmi_evc_coded_train_data_ct.trainLength.dig2 = kcg_lit_int32(0);
+  outC->dmi_evc_coded_train_data_ct.trainLength.dig3 = kcg_lit_int32(0);
+  outC->dmi_evc_coded_train_data_ct.trainLength.dig4 = kcg_lit_int32(0);
+  outC->dmi_evc_coded_train_data_ct.brakeModel.number = kcg_lit_int32(0);
+  outC->dmi_evc_coded_train_data_ct.brakeModel.dig1 = kcg_lit_int32(0);
+  outC->dmi_evc_coded_train_data_ct.brakeModel.dig2 = kcg_lit_int32(0);
+  outC->dmi_evc_coded_train_data_ct.brakeModel.dig3 = kcg_lit_int32(0);
+  outC->dmi_evc_coded_train_data_ct.vmax.number = kcg_lit_int32(0);
+  outC->dmi_evc_coded_train_data_ct.vmax.dig1 = kcg_lit_int32(0);
+  outC->dmi_evc_coded_train_data_ct.vmax.dig2 = kcg_lit_int32(0);
+  outC->dmi_evc_coded_train_data_ct.vmax.dig3 = kcg_lit_int32(0);
   outC->dmi_evc_coded_train_data_ct.mAxleLoad = M_AXLELOADCAT_A;
-  outC->dmi_evc_coded_train_data_ct.airTightSystem.number = kcg_lit_int64(0);
-  outC->dmi_evc_coded_train_data_ct.airTightSystem.dig1 = kcg_lit_int64(0);
-  outC->dmi_evc_coded_train_data_ct.airTightSystem.dig2 = kcg_lit_int64(0);
-  outC->dmi_evc_coded_train_data_ct.airTightSystem.dig3 = kcg_lit_int64(0);
-  outC->dmi_evc_coded_train_data_ct.mLoadingGauge.number = kcg_lit_int64(0);
-  outC->dmi_evc_coded_train_data_ct.mLoadingGauge.dig1 = kcg_lit_int64(0);
-  outC->dmi_evc_coded_train_data_ct.mLoadingGauge.dig2 = kcg_lit_int64(0);
-  outC->dmi_evc_coded_train_data_ct.mLoadingGauge.dig3 = kcg_lit_int64(0);
+  outC->dmi_evc_coded_train_data_ct.airTightSystem.number = kcg_lit_int32(0);
+  outC->dmi_evc_coded_train_data_ct.airTightSystem.dig1 = kcg_lit_int32(0);
+  outC->dmi_evc_coded_train_data_ct.airTightSystem.dig2 = kcg_lit_int32(0);
+  outC->dmi_evc_coded_train_data_ct.airTightSystem.dig3 = kcg_lit_int32(0);
+  outC->dmi_evc_coded_train_data_ct.mLoadingGauge.number = kcg_lit_int32(0);
+  outC->dmi_evc_coded_train_data_ct.mLoadingGauge.dig1 = kcg_lit_int32(0);
+  outC->dmi_evc_coded_train_data_ct.mLoadingGauge.dig2 = kcg_lit_int32(0);
+  outC->dmi_evc_coded_train_data_ct.mLoadingGauge.dig3 = kcg_lit_int32(0);
   /* _L12=(Utilities::Int_to_Bool#1)/ */
   Int_to_Bool_init_Utilities(&outC->Context_Int_to_Bool_1);
   /* _L13=(DATA::Variables::CAST_int_to_DMI_train_id#1)/ */
@@ -261,6 +261,6 @@ void CAST_int_to_DMI_EVC_Coded_Train_Data1_reset_DATA_Packets_EVC_to_DMI(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_int_to_DMI_EVC_Coded_Train_Data1_DATA_Packets_EVC_to_DMI.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

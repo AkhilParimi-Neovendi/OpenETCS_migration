@@ -14,39 +14,39 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_float64 /* TrainPosCalibrated/ */ TrainPosCalibrated;
+  kcg_float32 /* TrainPosCalibrated/ */ TrainPosCalibrated;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L15/ */ _L15;
+  kcg_int32 /* _L15/ */ _L15;
   kcg_bool /* _L18/ */ _L18;
-  kcg_int64 /* _L19/ */ _L19;
-  kcg_int64 /* _L22/ */ _L22;
-  kcg_int64 /* _L21/ */ _L21;
-  kcg_int64 /* _L20/ */ _L20;
-  kcg_float64 /* _L26/ */ _L26;
-  kcg_float64 /* _L25/ */ _L25;
-  kcg_float64 /* _L24/ */ _L24;
-  kcg_float64 /* _L23/ */ _L23;
-  kcg_int64 /* _L28/ */ _L28;
+  kcg_int32 /* _L19/ */ _L19;
+  kcg_int32 /* _L22/ */ _L22;
+  kcg_int32 /* _L21/ */ _L21;
+  kcg_int32 /* _L20/ */ _L20;
+  kcg_float32 /* _L26/ */ _L26;
+  kcg_float32 /* _L25/ */ _L25;
+  kcg_float32 /* _L24/ */ _L24;
+  kcg_float32 /* _L23/ */ _L23;
+  kcg_int32 /* _L28/ */ _L28;
   TrackSectionData_T_InfraLib /* _L27/ */ _L27;
   TrainPosRaw_T_InfraLib /* _L29/ */ _L29;
-  kcg_int64 /* _L30/ */ _L30;
-  kcg_float64 /* _L31/ */ _L31;
-  kcg_float64 /* _L33/ */ _L33;
-  kcg_float64 /* _L32/ */ _L32;
+  kcg_int32 /* _L30/ */ _L30;
+  kcg_float32 /* _L31/ */ _L31;
+  kcg_float32 /* _L33/ */ _L33;
+  kcg_float32 /* _L32/ */ _L32;
 } outC_TrackDiscontinuity_CalcTr_InfraLib;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* InfraLib::TrackDiscontinuity_CalcTrainPos/ */
 extern void TrackDiscontinuity_CalcTr_InfraLib(
   /* DeltaIn/ */
-  kcg_int64 DeltaIn,
+  kcg_int32 DeltaIn,
   /* StartSection/ */
-  kcg_int64 StartSection,
+  kcg_int32 StartSection,
   /* SectionDataIn/ */
   TrackSectionData_T_InfraLib *SectionDataIn,
   outC_TrackDiscontinuity_CalcTr_InfraLib *outC);

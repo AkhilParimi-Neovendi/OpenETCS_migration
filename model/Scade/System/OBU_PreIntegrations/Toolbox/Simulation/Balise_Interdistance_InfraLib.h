@@ -14,36 +14,36 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_float64 /* distance_BB/ */ distance_BB;
+  kcg_float32 /* distance_BB/ */ distance_BB;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* @1/A_Output/ */ A_Output_Abs_1_int64;
-  kcg_int64 /* @1/A_Input/ */ A_Input_Abs_1_int64;
-  kcg_int64 /* @1/_L8/ */ _L8_Abs_1_int64;
-  kcg_int64 /* @1/_L5/ */ _L5_Abs_1_int64;
-  kcg_int64 /* @1/_L3/ */ _L3_Abs_1_int64;
-  kcg_int64 /* @1/_L2/ */ _L2_Abs_1_int64;
-  kcg_bool /* @1/_L1/ */ _L1_Abs_1_int64;
-  kcg_float64 /* _L3/ */ _L3;
-  kcg_int64 /* _L6/ */ _L6;
-  kcg_int64 /* _L10/ */ _L10;
-  kcg_int64 /* _L11/ */ _L11;
-  kcg_float64 /* _L12/ */ _L12;
-  kcg_int64 /* _L13/ */ _L13;
-  kcg_float64 /* _L14/ */ _L14;
+  kcg_int32 /* @1/A_Output/ */ A_Output_Abs_1_int32;
+  kcg_int32 /* @1/A_Input/ */ A_Input_Abs_1_int32;
+  kcg_int32 /* @1/_L8/ */ _L8_Abs_1_int32;
+  kcg_int32 /* @1/_L5/ */ _L5_Abs_1_int32;
+  kcg_int32 /* @1/_L3/ */ _L3_Abs_1_int32;
+  kcg_int32 /* @1/_L2/ */ _L2_Abs_1_int32;
+  kcg_bool /* @1/_L1/ */ _L1_Abs_1_int32;
+  kcg_float32 /* _L3/ */ _L3;
+  kcg_int32 /* _L6/ */ _L6;
+  kcg_int32 /* _L10/ */ _L10;
+  kcg_int32 /* _L11/ */ _L11;
+  kcg_float32 /* _L12/ */ _L12;
+  kcg_int32 /* _L13/ */ _L13;
+  kcg_float32 /* _L14/ */ _L14;
 } outC_Balise_Interdistance_InfraLib;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* InfraLib::Balise_Interdistance/ */
 extern void Balise_Interdistance_InfraLib(
   /* pig0/ */
-  kcg_int64 pig0,
+  kcg_int32 pig0,
   /* n_pig/ */
-  kcg_int64 n_pig,
+  kcg_int32 n_pig,
   outC_Balise_Interdistance_InfraLib *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

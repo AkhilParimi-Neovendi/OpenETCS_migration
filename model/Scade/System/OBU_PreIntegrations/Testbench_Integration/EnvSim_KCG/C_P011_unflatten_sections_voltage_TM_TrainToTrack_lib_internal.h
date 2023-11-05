@@ -24,12 +24,12 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   P011_voltage_sections_array_flat_t_TM_TrainToTrack /* _L1/ */ _L1;
-  array_int64_8_4 /* _L6/ */ _L6;
+  array_int32_8_4 /* _L6/ */ _L6;
   _12_array /* _L9/ */ _L9;
-  kcg_int64 /* _L7/ */ _L7;
+  kcg_int32 /* _L7/ */ _L7;
   kcg_bool /* _L13/ */ _L13;
-  kcg_int64 /* _L14/ */ _L14;
-  array_int64_4 /* _L15/ */ _L15;
+  kcg_int32 /* _L14/ */ _L14;
+  array_int32_4 /* _L15/ */ _L15;
 } outC_C_P011_unflatten_sections_voltage_TM_TrainToTrack_lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */

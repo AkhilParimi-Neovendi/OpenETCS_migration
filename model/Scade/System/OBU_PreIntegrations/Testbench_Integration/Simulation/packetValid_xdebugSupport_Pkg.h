@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _packetValid_xdebugSupport_Pkg_H_
 #define _packetValid_xdebugSupport_Pkg_H_
@@ -25,10 +25,10 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   Metadata_T_Common_Types_Pkg /* _L1/ */ _L1;
   kcg_bool /* _L3/ */ _L3;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   kcg_bool /* _L7/ */ _L7;
   NID_PACKET /* _L13/ */ _L13;
-  array_int64_30 /* _L15/ */ _L15;
+  array_int32_30 /* _L15/ */ _L15;
   kcg_bool /* _L16/ */ _L16;
 } outC_packetValid_xdebugSupport_Pkg;
 
@@ -56,6 +56,6 @@ extern void packetValid_init_xdebugSupport_Pkg(
 #endif /* _packetValid_xdebugSupport_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** packetValid_xdebugSupport_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

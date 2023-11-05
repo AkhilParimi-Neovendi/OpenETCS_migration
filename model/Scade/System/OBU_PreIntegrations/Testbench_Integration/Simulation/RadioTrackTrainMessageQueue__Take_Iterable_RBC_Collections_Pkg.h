@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _RadioTrackTrainMessageQueue__Take_Iterable_RBC_Collections_Pkg_H_
 #define _RadioTrackTrainMessageQueue__Take_Iterable_RBC_Collections_Pkg_H_
@@ -16,7 +16,7 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   kcg_bool /* outContinueIteration/ */ outContinueIteration;
-  kcg_int64 /* outAccumulator/ */ outAccumulator;
+  kcg_int32 /* outAccumulator/ */ outAccumulator;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -24,8 +24,8 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L1/ */ _L1;
+  kcg_int32 /* _L2/ */ _L2;
   kcg_bool /* _L4/ */ _L4;
   kcg_bool /* _L5/ */ _L5;
   kcg_bool /* _L6/ */ _L6;
@@ -37,9 +37,9 @@ typedef struct {
 /* RBC_Collections_Pkg::RadioTrackTrainMessageQueue__Take_Iterable/ */
 extern void RadioTrackTrainMessageQueue__Take_Iterable_RBC_Collections_Pkg(
   /* inIndex/ */
-  kcg_int64 inIndex,
+  kcg_int32 inIndex,
   /* inAccumulator/ */
-  kcg_int64 inAccumulator,
+  kcg_int32 inAccumulator,
   /* inRadioTrackTrainMessageQueueEntry/ */
   RadioTrackTrainMessageQueueEntry_T *inRadioTrackTrainMessageQueueEntry,
   outC_RadioTrackTrainMessageQueue__Take_Iterable_RBC_Collections_Pkg *outC);
@@ -59,6 +59,6 @@ extern void RadioTrackTrainMessageQueue__Take_Iterable_init_RBC_Collections_Pkg(
 #endif /* _RadioTrackTrainMessageQueue__Take_Iterable_RBC_Collections_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** RadioTrackTrainMessageQueue__Take_Iterable_RBC_Collections_Pkg.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

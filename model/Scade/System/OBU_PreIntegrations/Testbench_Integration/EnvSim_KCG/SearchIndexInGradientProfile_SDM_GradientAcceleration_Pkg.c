@@ -17,14 +17,14 @@ void SearchIndexInGradientProfile_SDM_GradientAcceleration_Pkg(
 {
   static kcg_size idx;
   static kcg_size idx1;
-  static kcg_int64 acc;
+  static kcg_int32 acc;
   static kcg_size idx2;
-  static kcg_int64 noname;
+  static kcg_int32 noname;
 
   kcg_copy_GradientProfile_real_t_SDM_GradientAcceleration_types(
     &outC->_L10,
     GradientProfile);
-  outC->_L7 = kcg_lit_int64(-1);
+  outC->_L7 = kcg_lit_int32(-1);
   outC->_L2 = position;
   /* _L8/ */
   for (idx = 0; idx < 50; idx++) {
@@ -51,14 +51,14 @@ void SearchIndexInGradientProfile_SDM_GradientAcceleration_Pkg(
       acc = outC->_L4;
       /* _L3=(SDM_GradientAcceleration_Pkg::SearchIndexInGradientprofileInternal#1)/ */
       SearchIndexInGradientprofileInternal_SDM_GradientAcceleration_Pkg(
-        /* _L3= */(kcg_int64) idx2,
+        /* _L3= */(kcg_int32) idx2,
         acc,
         outC->_L8[idx2],
         &outC->_L9[idx2],
         &outC->Context_SearchIndexInGradientprofileInternal_1[idx2]);
       outC->_L4 =
         outC->Context_SearchIndexInGradientprofileInternal_1[idx2].indexOfPositionOut;
-      outC->_L3 = /* _L3= */(kcg_int64) (idx2 + 1);
+      outC->_L3 = /* _L3= */(kcg_int32) (idx2 + 1);
       /* _L3= */
       if (!outC->Context_SearchIndexInGradientprofileInternal_1[idx2].cond) {
         break;
@@ -66,7 +66,7 @@ void SearchIndexInGradientProfile_SDM_GradientAcceleration_Pkg(
     }
   }
   else {
-    outC->_L3 = kcg_lit_int64(0);
+    outC->_L3 = kcg_lit_int32(0);
   }
   noname = outC->_L3;
   outC->index = outC->_L4;
@@ -84,34 +84,34 @@ void SearchIndexInGradientProfile_init_SDM_GradientAcceleration_Pkg(
   static kcg_size idx5;
 
   for (idx1 = 0; idx1 < 50; idx1++) {
-    outC->_L10[idx1].location = kcg_lit_float64(0.0);
-    outC->_L10[idx1].gradient = kcg_lit_float64(0.0);
+    outC->_L10[idx1].location = kcg_lit_float32(0.0);
+    outC->_L10[idx1].gradient = kcg_lit_float32(0.0);
     outC->_L10[idx1].valid = kcg_true;
   }
   for (idx3 = 0; idx3 < 50; idx3++) {
     for (idx2 = 0; idx2 < 50; idx2++) {
-      outC->_L9[idx3][idx2].location = kcg_lit_float64(0.0);
-      outC->_L9[idx3][idx2].gradient = kcg_lit_float64(0.0);
+      outC->_L9[idx3][idx2].location = kcg_lit_float32(0.0);
+      outC->_L9[idx3][idx2].gradient = kcg_lit_float32(0.0);
       outC->_L9[idx3][idx2].valid = kcg_true;
     }
   }
   for (idx4 = 0; idx4 < 50; idx4++) {
-    outC->_L8[idx4] = kcg_lit_float64(0.0);
+    outC->_L8[idx4] = kcg_lit_float32(0.0);
   }
-  outC->_L7 = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(0);
   outC->_L6 = kcg_true;
-  outC->_L5.location = kcg_lit_float64(0.0);
-  outC->_L5.gradient = kcg_lit_float64(0.0);
+  outC->_L5.location = kcg_lit_float32(0.0);
+  outC->_L5.gradient = kcg_lit_float32(0.0);
   outC->_L5.valid = kcg_true;
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 50; idx5++) {
-    outC->_L1[idx5].location = kcg_lit_float64(0.0);
-    outC->_L1[idx5].gradient = kcg_lit_float64(0.0);
+    outC->_L1[idx5].location = kcg_lit_float32(0.0);
+    outC->_L1[idx5].gradient = kcg_lit_float32(0.0);
     outC->_L1[idx5].valid = kcg_true;
   }
-  outC->_L2 = kcg_lit_float64(0.0);
-  outC->index = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_float32(0.0);
+  outC->index = kcg_lit_int32(0);
   for (idx = 0; idx < 50; idx++) {
     /* _L3=(SDM_GradientAcceleration_Pkg::SearchIndexInGradientprofileInternal#1)/ */
     SearchIndexInGradientprofileInternal_init_SDM_GradientAcceleration_Pkg(

@@ -33,13 +33,13 @@ void CAST_DMI_TEXT_to_int_init_DATA_Variables(
   static kcg_size idx2;
 
   for (idx = 0; idx < 255; idx++) {
-    outC->_L6[idx] = kcg_lit_int64(0);
+    outC->_L6[idx] = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 255; idx1++) {
     outC->_L4[idx1] = ' ';
   }
   for (idx2 = 0; idx2 < 255; idx2++) {
-    outC->dmi_text_int_array_out[idx2] = kcg_lit_int64(0);
+    outC->dmi_text_int_array_out[idx2] = kcg_lit_int32(0);
   }
 }
 #endif /* KCG_USER_DEFINED_INIT */

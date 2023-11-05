@@ -30,8 +30,8 @@ typedef struct {
   kcg_bool /* IfBlock1:else:then:_L6/ */ _L6_then_else_IfBlock1;
   M_NVDERUN /* IfBlock1:else:then:_L7/ */ _L7_then_else_IfBlock1;
   kcg_bool /* error/ */ error;
-  kcg_int64 /* m_nvderun_in/ */ m_nvderun_in;
-  kcg_int64 /* _L21/ */ _L21;
+  kcg_int32 /* m_nvderun_in/ */ m_nvderun_in;
+  kcg_int32 /* _L21/ */ _L21;
   kcg_bool /* _L20/ */ _L20;
 } outC_CAST_Int_to_M_NVDERUN_TM_conversions;
 
@@ -39,7 +39,7 @@ typedef struct {
 /* TM_conversions::CAST_Int_to_M_NVDERUN/ */
 extern void CAST_Int_to_M_NVDERUN_TM_conversions(
   /* m_nvderun_int/ */
-  kcg_int64 m_nvderun_int,
+  kcg_int32 m_nvderun_int,
   outC_CAST_Int_to_M_NVDERUN_TM_conversions *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

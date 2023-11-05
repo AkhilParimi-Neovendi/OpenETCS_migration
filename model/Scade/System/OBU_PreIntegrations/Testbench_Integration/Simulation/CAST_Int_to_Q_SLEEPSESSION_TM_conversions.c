@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,7 +10,7 @@
 /* TM_conversions::CAST_Int_to_Q_SLEEPSESSION/ */
 void CAST_Int_to_Q_SLEEPSESSION_TM_conversions(
   /* q_sleepsession_int/ */
-  kcg_int64 q_sleepsession_int,
+  kcg_int32 q_sleepsession_int,
   outC_CAST_Int_to_Q_SLEEPSESSION_TM_conversions *outC)
 {
   /* q_sleepsession/ */
@@ -75,9 +75,9 @@ void CAST_Int_to_Q_SLEEPSESSION_TM_conversions(
 void CAST_Int_to_Q_SLEEPSESSION_init_TM_conversions(
   outC_CAST_Int_to_Q_SLEEPSESSION_TM_conversions *outC)
 {
-  outC->_L12 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
   outC->_L13 = kcg_true;
-  outC->q_sleepsession_in = kcg_lit_int64(0);
+  outC->q_sleepsession_in = kcg_lit_int32(0);
   outC->error = kcg_true;
   outC->IfBlock1_clock = kcg_true;
   outC->_L5_then_else_IfBlock1 = kcg_true;
@@ -105,6 +105,6 @@ void CAST_Int_to_Q_SLEEPSESSION_reset_TM_conversions(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_Int_to_Q_SLEEPSESSION_TM_conversions.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

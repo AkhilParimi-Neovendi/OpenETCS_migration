@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _RECV_ReadPacketKernel_TM_lib_internal_H_
 #define _RECV_ReadPacketKernel_TM_lib_internal_H_
@@ -29,10 +29,10 @@ typedef struct {
   CompressedPacketData_T_Common_Types_Pkg /* _L7/ */ _L7;
   kcg_bool /* _L8/ */ _L8;
   CompressedPacketData_T_Common_Types_Pkg /* _L10/ */ _L10;
-  array_int64_500_500 /* _L18/ */ _L18;
-  kcg_int64 /* _L22/ */ _L22;
-  kcg_int64 /* _L24/ */ _L24;
-  kcg_int64 /* _L23/ */ _L23;
+  array_int32_500_500 /* _L18/ */ _L18;
+  kcg_int32 /* _L22/ */ _L22;
+  kcg_int32 /* _L24/ */ _L24;
+  kcg_int32 /* _L23/ */ _L23;
 } outC_RECV_ReadPacketKernel_TM_lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -59,6 +59,6 @@ extern void RECV_ReadPacketKernel_init_TM_lib_internal(
 #endif /* _RECV_ReadPacketKernel_TM_lib_internal_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** RECV_ReadPacketKernel_TM_lib_internal.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

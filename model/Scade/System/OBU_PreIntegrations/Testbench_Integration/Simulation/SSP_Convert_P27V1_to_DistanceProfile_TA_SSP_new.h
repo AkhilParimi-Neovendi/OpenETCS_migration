@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _SSP_Convert_P27V1_to_DistanceProfile_TA_SSP_new_H_
 #define _SSP_Convert_P27V1_to_DistanceProfile_TA_SSP_new_H_
@@ -27,8 +27,8 @@ typedef struct {
   P027V1_OBU_sectionlist_enum_T_TM_baseline2 /* _L71/ */ _L71;
   Q_SCALE /* _L65/ */ _L65;
   P027V1_OBU_T_TM_baseline2 /* _L63/ */ _L63;
-  _17_array /* _L74/ */ _L74;
-  _59_array /* _L76/ */ _L76;
+  _16_array /* _L74/ */ _L74;
+  _81_array /* _L76/ */ _L76;
   StaticSpeedProfile_t_TrackAtlasTypes /* _L77/ */ _L77;
   StaticSpeedProfile_t_TrackAtlasTypes /* _L83/ */ _L83;
 } outC_SSP_Convert_P27V1_to_DistanceProfile_TA_SSP_new;
@@ -55,6 +55,6 @@ extern void SSP_Convert_P27V1_to_DistanceProfile_init_TA_SSP_new(
 #endif /* _SSP_Convert_P27V1_to_DistanceProfile_TA_SSP_new_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** SSP_Convert_P27V1_to_DistanceProfile_TA_SSP_new.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

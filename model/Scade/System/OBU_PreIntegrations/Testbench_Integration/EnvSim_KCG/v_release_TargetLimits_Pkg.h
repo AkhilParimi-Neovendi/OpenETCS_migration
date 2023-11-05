@@ -28,11 +28,11 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   V_internal_real_Type_SDM_Types_Pkg /* _L9/ */ _L9;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L12/ */ _L12;
   _88_array /* _L14/ */ _L14;
-  array_float64_10 /* _L15/ */ _L15;
-  array_float64_10 /* _L16/ */ _L16;
-  array_float64_10 /* _L17/ */ _L17;
+  array_float32_10 /* _L15/ */ _L15;
+  array_float32_10 /* _L16/ */ _L16;
+  array_float32_10 /* _L17/ */ _L17;
   _7_array /* _L19/ */ _L19;
   L_internal_real_Type_SDM_Types_Pkg /* _L21/ */ _L21;
   V_internal_real_Type_SDM_Types_Pkg /* _L23/ */ _L23;
@@ -42,7 +42,7 @@ typedef struct {
   T_trac_t_TargetLimits_Pkg /* _L28/ */ _L28;
   L_internal_real_Type_SDM_Types_Pkg /* _L33/ */ _L33;
   kcg_bool /* _L46/ */ _L46;
-  kcg_float64 /* _L47/ */ _L47;
+  kcg_float32 /* _L47/ */ _L47;
   V_internal_real_Type_SDM_Types_Pkg /* _L55/ */ _L55;
   kcg_bool /* _L57/ */ _L57;
   kcg_bool /* _L58/ */ _L58;

@@ -10,23 +10,23 @@
 /* TM_conversions::CAST_Int_to_V_RELEASEOL/ */
 void CAST_Int_to_V_RELEASEOL_TM_conversions(
   /* v_releaseol_int/ */
-  kcg_int64 v_releaseol_int,
+  kcg_int32 v_releaseol_int,
   outC_CAST_Int_to_V_RELEASEOL_TM_conversions *outC)
 {
   static kcg_bool noname;
   static kcg_bool _1_noname;
 
-  outC->_L14 = kcg_lit_int64(127);
+  outC->_L14 = kcg_lit_int32(127);
   outC->_L1 = v_releaseol_int;
   outC->_L16 = outC->_L1 != outC->_L14;
-  outC->_L13 = kcg_lit_int64(126);
+  outC->_L13 = kcg_lit_int32(126);
   outC->_L15 = outC->_L1 != outC->_L13;
-  outC->_L7 = kcg_lit_int64(120);
+  outC->_L7 = kcg_lit_int32(120);
   outC->_L9 = outC->_L1 > outC->_L7;
   outC->_L17 = outC->_L9 & outC->_L15 & outC->_L16;
-  outC->_L12 = kcg_lit_int64(5);
+  outC->_L12 = kcg_lit_int32(5);
   outC->_L11 = outC->_L1 * outC->_L12;
-  outC->_L6 = kcg_lit_int64(0);
+  outC->_L6 = kcg_lit_int32(0);
   outC->_L8 = outC->_L1 < outC->_L6;
   _1_noname = outC->_L8;
   noname = outC->_L17;
@@ -40,16 +40,16 @@ void CAST_Int_to_V_RELEASEOL_init_TM_conversions(
   outC->_L17 = kcg_true;
   outC->_L16 = kcg_true;
   outC->_L15 = kcg_true;
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
   outC->_L8 = kcg_true;
   outC->_L9 = kcg_true;
-  outC->_L1 = kcg_lit_int64(0);
-  outC->v_releaseol = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->v_releaseol = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

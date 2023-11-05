@@ -10,14 +10,14 @@
 /* TM_conversions::CAST_Int_to_NID_C/ */
 void CAST_Int_to_NID_C_TM_conversions(
   /* nid_c_int/ */
-  kcg_int64 nid_c_int,
+  kcg_int32 nid_c_int,
   outC_CAST_Int_to_NID_C_TM_conversions *outC)
 {
   static kcg_bool noname;
   static kcg_bool _1_noname;
 
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(1023);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(1023);
   outC->_L1 = nid_c_int;
   outC->_L9 = outC->_L1 > outC->_L10;
   outC->_L8 = outC->_L1 < outC->_L11;
@@ -30,12 +30,12 @@ void CAST_Int_to_NID_C_TM_conversions(
 void CAST_Int_to_NID_C_init_TM_conversions(
   outC_CAST_Int_to_NID_C_TM_conversions *outC)
 {
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
   outC->_L8 = kcg_true;
   outC->_L9 = kcg_true;
-  outC->_L1 = kcg_lit_int64(0);
-  outC->nid_c = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->nid_c = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

@@ -24,7 +24,7 @@ typedef struct {
   EOA_real_T_TargetManagement_types /* _L39/ */ _L39;
   MA_section_real_T_TargetManagement_types /* _L114/ */ _L114;
   kcg_bool /* _L195/ */ _L195;
-  kcg_float64 /* _L196/ */ _L196;
+  kcg_float32 /* _L196/ */ _L196;
   MA_Level_t_TrackAtlasTypes /* _L197/ */ _L197;
 } outC_defaultMA_SDM_Input_Wrappers;
 

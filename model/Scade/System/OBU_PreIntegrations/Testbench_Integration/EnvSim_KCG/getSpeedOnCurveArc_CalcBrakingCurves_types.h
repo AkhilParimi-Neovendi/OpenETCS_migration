@@ -27,12 +27,12 @@ typedef struct {
   V_internal_real_Type_SDM_Types_Pkg /* _L2/ */ _L2;
   A_internal_real_Type_SDM_Types_Pkg /* _L3/ */ _L3;
   L_internal_real_Type_SDM_Types_Pkg /* _L5/ */ _L5;
-  kcg_float64 /* _L6/ */ _L6;
-  kcg_float64 /* _L7/ */ _L7;
-  kcg_float64 /* _L8/ */ _L8;
-  kcg_float64 /* _L9/ */ _L9;
-  kcg_float64 /* _L10/ */ _L10;
-  kcg_float64 /* _L11/ */ _L11;
+  kcg_float32 /* _L6/ */ _L6;
+  kcg_float32 /* _L7/ */ _L7;
+  kcg_float32 /* _L8/ */ _L8;
+  kcg_float32 /* _L9/ */ _L9;
+  kcg_float32 /* _L10/ */ _L10;
+  kcg_float32 /* _L11/ */ _L11;
 } outC_getSpeedOnCurveArc_CalcBrakingCurves_types;
 
 /* ===========  node initialization and cycle functions  =========== */

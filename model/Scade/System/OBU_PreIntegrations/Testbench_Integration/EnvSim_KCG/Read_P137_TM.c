@@ -17,7 +17,7 @@ void Read_P137_TM(
   /* _L5=(TM_lib_internal::RECV_ReadPackets#1)/ */
   RECV_ReadPackets_TM_lib_internal(
     &outC->_L6,
-    kcg_lit_int64(137032000),
+    kcg_lit_int32(137032000),
     kcg_false,
     kcg_false,
     &outC->Context_RECV_ReadPackets_1);
@@ -53,23 +53,23 @@ void Read_P137_init_TM(outC_Read_P137_TM *outC)
   outC->_L166.valid = kcg_true;
   outC->_L166.q_dir = Q_DIR_Reverse;
   outC->_L166.q_srstop = Q_SRSTOP_Stop_if_in_SR_mode;
-  outC->_L30.nid_packet = kcg_lit_int64(0);
+  outC->_L30.nid_packet = kcg_lit_int32(0);
   outC->_L30.q_dir = Q_DIR_Reverse;
   outC->_L30.valid = kcg_true;
-  outC->_L30.startAddress = kcg_lit_int64(0);
-  outC->_L30.endAddress = kcg_lit_int64(0);
+  outC->_L30.startAddress = kcg_lit_int32(0);
+  outC->_L30.endAddress = kcg_lit_int32(0);
   for (idx = 0; idx < 30; idx++) {
-    outC->_L6.PacketHeaders[idx].nid_packet = kcg_lit_int64(0);
+    outC->_L6.PacketHeaders[idx].nid_packet = kcg_lit_int32(0);
     outC->_L6.PacketHeaders[idx].q_dir = Q_DIR_Reverse;
     outC->_L6.PacketHeaders[idx].valid = kcg_true;
-    outC->_L6.PacketHeaders[idx].startAddress = kcg_lit_int64(0);
-    outC->_L6.PacketHeaders[idx].endAddress = kcg_lit_int64(0);
+    outC->_L6.PacketHeaders[idx].startAddress = kcg_lit_int32(0);
+    outC->_L6.PacketHeaders[idx].endAddress = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 500; idx1++) {
-    outC->_L6.PacketData[idx1] = kcg_lit_int64(0);
+    outC->_L6.PacketData[idx1] = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 500; idx2++) {
-    outC->_L5[idx2] = kcg_lit_int64(0);
+    outC->_L5[idx2] = kcg_lit_int32(0);
   }
   outC->P137_OBU_out.valid = kcg_true;
   outC->P137_OBU_out.q_dir = Q_DIR_Reverse;

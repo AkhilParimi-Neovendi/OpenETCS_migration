@@ -28,52 +28,52 @@ void PosData__Set_L_TRAININT_RBC_Session_Pkg(
 void PosData__Set_L_TRAININT_init_RBC_Session_Pkg(
   outC_PosData__Set_L_TRAININT_RBC_Session_Pkg *outC)
 {
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L2.nid_lrbg = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L2.nid_lrbg = kcg_lit_int32(0);
   outC->_L2.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L2.d_lrbg = kcg_lit_int64(0);
+  outC->_L2.d_lrbg = kcg_lit_int32(0);
   outC->_L2.q_dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L2.q_dlrbg = Q_DLRBG_Reverse;
-  outC->_L2.l_doubtover = kcg_lit_int64(0);
-  outC->_L2.l_doubtunder = kcg_lit_int64(0);
+  outC->_L2.l_doubtover = kcg_lit_int32(0);
+  outC->_L2.l_doubtunder = kcg_lit_int32(0);
   outC->_L2.q_length = Q_LENGTH_No_train_integrity_information_available;
-  outC->_L2.l_trainint = kcg_lit_int64(0);
-  outC->_L2.v_train = kcg_lit_int64(0);
+  outC->_L2.l_trainint = kcg_lit_int32(0);
+  outC->_L2.v_train = kcg_lit_int32(0);
   outC->_L2.q_dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L2.m_mode = M_MODE_Full_Supervision;
   outC->_L2.m_level = M_LEVEL_Level_0;
-  outC->_L2.nid_ntc = kcg_lit_int64(0);
-  outC->_L2.nid_prvlrbg = kcg_lit_int64(0);
-  outC->_L1.nid_lrbg = kcg_lit_int64(0);
+  outC->_L2.nid_ntc = kcg_lit_int32(0);
+  outC->_L2.nid_prvlrbg = kcg_lit_int32(0);
+  outC->_L1.nid_lrbg = kcg_lit_int32(0);
   outC->_L1.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L1.d_lrbg = kcg_lit_int64(0);
+  outC->_L1.d_lrbg = kcg_lit_int32(0);
   outC->_L1.q_dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L1.q_dlrbg = Q_DLRBG_Reverse;
-  outC->_L1.l_doubtover = kcg_lit_int64(0);
-  outC->_L1.l_doubtunder = kcg_lit_int64(0);
+  outC->_L1.l_doubtover = kcg_lit_int32(0);
+  outC->_L1.l_doubtunder = kcg_lit_int32(0);
   outC->_L1.q_length = Q_LENGTH_No_train_integrity_information_available;
-  outC->_L1.l_trainint = kcg_lit_int64(0);
-  outC->_L1.v_train = kcg_lit_int64(0);
+  outC->_L1.l_trainint = kcg_lit_int32(0);
+  outC->_L1.v_train = kcg_lit_int32(0);
   outC->_L1.q_dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L1.m_mode = M_MODE_Full_Supervision;
   outC->_L1.m_level = M_LEVEL_Level_0;
-  outC->_L1.nid_ntc = kcg_lit_int64(0);
-  outC->_L1.nid_prvlrbg = kcg_lit_int64(0);
-  outC->outPosData.nid_lrbg = kcg_lit_int64(0);
+  outC->_L1.nid_ntc = kcg_lit_int32(0);
+  outC->_L1.nid_prvlrbg = kcg_lit_int32(0);
+  outC->outPosData.nid_lrbg = kcg_lit_int32(0);
   outC->outPosData.q_scale = Q_SCALE_10_cm_scale;
-  outC->outPosData.d_lrbg = kcg_lit_int64(0);
+  outC->outPosData.d_lrbg = kcg_lit_int32(0);
   outC->outPosData.q_dirlrbg = Q_DIRLRBG_Reverse;
   outC->outPosData.q_dlrbg = Q_DLRBG_Reverse;
-  outC->outPosData.l_doubtover = kcg_lit_int64(0);
-  outC->outPosData.l_doubtunder = kcg_lit_int64(0);
+  outC->outPosData.l_doubtover = kcg_lit_int32(0);
+  outC->outPosData.l_doubtunder = kcg_lit_int32(0);
   outC->outPosData.q_length = Q_LENGTH_No_train_integrity_information_available;
-  outC->outPosData.l_trainint = kcg_lit_int64(0);
-  outC->outPosData.v_train = kcg_lit_int64(0);
+  outC->outPosData.l_trainint = kcg_lit_int32(0);
+  outC->outPosData.v_train = kcg_lit_int32(0);
   outC->outPosData.q_dirtrain = Q_DIRTRAIN_Reverse;
   outC->outPosData.m_mode = M_MODE_Full_Supervision;
   outC->outPosData.m_level = M_LEVEL_Level_0;
-  outC->outPosData.nid_ntc = kcg_lit_int64(0);
-  outC->outPosData.nid_prvlrbg = kcg_lit_int64(0);
+  outC->outPosData.nid_ntc = kcg_lit_int32(0);
+  outC->outPosData.nid_prvlrbg = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

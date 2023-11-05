@@ -60,16 +60,16 @@ typedef struct {
   L_internal_Type_Obu_BasicTypes_Pkg /* _L4/ */ _L4;
   connectionStatusRadioUnit_T_API_RadioCommunication_Pkg /* _L3/ */ _L3;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L2/ */ _L2;
-  kcg_int64 /* _L25/ */ _L25;
-  kcg_int64 /* _L26/ */ _L26;
-  kcg_int64 /* _L27/ */ _L27;
-  kcg_int64 /* _L28/ */ _L28;
+  kcg_int32 /* _L25/ */ _L25;
+  kcg_int32 /* _L26/ */ _L26;
+  kcg_int32 /* _L27/ */ _L27;
+  kcg_int32 /* _L28/ */ _L28;
   M_SupervisionDisplay_INT_T_DATA /* _L29/ */ _L29;
-  kcg_int64 /* _L30/ */ _L30;
+  kcg_int32 /* _L30/ */ _L30;
   M_SUPERVISION_STATUS_INT_T_DATA /* _L31/ */ _L31;
   connectionStatusRadioUnit_INT_T_DATA /* _L32/ */ _L32;
-  array_int64_24 /* _L33/ */ _L33;
-  kcg_int64 /* _L36/ */ _L36;
+  array_int32_24 /* _L33/ */ _L33;
+  kcg_int32 /* _L36/ */ _L36;
 } outC_CAST_DMI_Dynamic_to_int1_DATA_Packets_EVC_to_DMI;
 
 /* ===========  node initialization and cycle functions  =========== */

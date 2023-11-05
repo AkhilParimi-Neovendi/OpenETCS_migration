@@ -10,29 +10,29 @@
 /* SDMConversionModelPkg::brakePercentLookUp/ */
 void brakePercentLookUp_SDMConversionModelPkg(
   /* lambda0/ */
-  kcg_int64 lambda0,
+  kcg_int32 lambda0,
   outC_brakePercentLookUp_SDMConversionModelPkg *outC)
 {
-  outC->_L114 = kcg_lit_int64(0);
-  kcg_copy_array_int64_6_221(
+  outC->_L114 = kcg_lit_int32(0);
+  kcg_copy_array_int32_6_221(
     &outC->_L67,
-    (array_int64_6_221 *) &cBrakePercentALookup_SDMConversionModelPkg);
-  kcg_copy_array_int64_6(&outC->_L74, &outC->_L67[0]);
+    (array_int32_6_221 *) &cBrakePercentALookup_SDMConversionModelPkg);
+  kcg_copy_array_int32_6(&outC->_L74, &outC->_L67[0]);
   outC->_L77 = cBrakePercentStepsMin_SDMConversionModelPkg;
   outC->_L1 = lambda0;
   outC->_L76 = outC->_L1 - outC->_L77;
-  if ((kcg_lit_int64(0) <= outC->_L76) & (outC->_L76 < kcg_lit_int64(221))) {
-    kcg_copy_array_int64_6(&outC->_L68, &outC->_L67[outC->_L76]);
+  if ((kcg_lit_int32(0) <= outC->_L76) & (outC->_L76 < kcg_lit_int32(221))) {
+    kcg_copy_array_int32_6(&outC->_L68, &outC->_L67[outC->_L76]);
   }
   else {
-    kcg_copy_array_int64_6(&outC->_L68, &outC->_L74);
+    kcg_copy_array_int32_6(&outC->_L68, &outC->_L74);
   }
-  outC->_L116 = kcg_lit_int64(0);
-  kcg_copy_array_int64_221(
+  outC->_L116 = kcg_lit_int32(0);
+  kcg_copy_array_int32_221(
     &outC->_L79,
-    (array_int64_221 *) &cBrakePercentSpeedLookup_SDMConversionModelPkg);
+    (array_int32_221 *) &cBrakePercentSpeedLookup_SDMConversionModelPkg);
   outC->_L81 = outC->_L79[0];
-  if ((kcg_lit_int64(0) <= outC->_L76) & (outC->_L76 < kcg_lit_int64(221))) {
+  if ((kcg_lit_int32(0) <= outC->_L76) & (outC->_L76 < kcg_lit_int32(221))) {
     outC->_L80 = outC->_L79[outC->_L76];
   }
   else {
@@ -40,9 +40,9 @@ void brakePercentLookUp_SDMConversionModelPkg(
   }
   outC->V_lim = outC->_L80;
   outC->_L117 = outC->V_lim;
-  kcg_copy_array_int64_4(
+  kcg_copy_array_int32_4(
     &outC->_L78,
-    (array_int64_4 *) &cBrakePercentV_lim_SDMConversionModelPkg);
+    (array_int32_4 *) &cBrakePercentV_lim_SDMConversionModelPkg);
   outC->_L100 = outC->_L78[3];
   outC->_L89 = outC->V_lim;
   outC->_L113 = outC->_L89 <= outC->_L100;
@@ -149,65 +149,65 @@ void brakePercentLookUp_init_SDMConversionModelPkg(
   static kcg_size idx9;
   static kcg_size idx10;
 
-  outC->_L114 = kcg_lit_int64(0);
+  outC->_L114 = kcg_lit_int32(0);
   for (idx = 0; idx < 6; idx++) {
-    outC->_L127[idx] = kcg_lit_int64(0);
+    outC->_L127[idx] = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 6; idx1++) {
-    outC->_L120.a[idx1] = kcg_lit_int64(0);
+    outC->_L120.a[idx1] = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 6; idx2++) {
-    outC->_L120.v[idx2] = kcg_lit_int64(0);
+    outC->_L120.v[idx2] = kcg_lit_int32(0);
   }
-  outC->_L117 = kcg_lit_int64(0);
-  outC->_L116 = kcg_lit_int64(0);
+  outC->_L117 = kcg_lit_int32(0);
+  outC->_L116 = kcg_lit_int32(0);
   outC->_L113 = kcg_true;
-  outC->_L112 = kcg_lit_int64(0);
-  outC->_L111 = kcg_lit_int64(0);
-  outC->_L110 = kcg_lit_int64(0);
-  outC->_L109 = kcg_lit_int64(0);
-  outC->_L108 = kcg_lit_int64(0);
-  outC->_L107 = kcg_lit_int64(0);
-  outC->_L106 = kcg_lit_int64(0);
-  outC->_L105 = kcg_lit_int64(0);
-  outC->_L104 = kcg_lit_int64(0);
+  outC->_L112 = kcg_lit_int32(0);
+  outC->_L111 = kcg_lit_int32(0);
+  outC->_L110 = kcg_lit_int32(0);
+  outC->_L109 = kcg_lit_int32(0);
+  outC->_L108 = kcg_lit_int32(0);
+  outC->_L107 = kcg_lit_int32(0);
+  outC->_L106 = kcg_lit_int32(0);
+  outC->_L105 = kcg_lit_int32(0);
+  outC->_L104 = kcg_lit_int32(0);
   outC->_L102 = kcg_true;
   outC->_L101 = kcg_true;
-  outC->_L100 = kcg_lit_int64(0);
-  outC->_L99 = kcg_lit_int64(0);
-  outC->_L98 = kcg_lit_int64(0);
-  outC->_L97 = kcg_lit_int64(0);
+  outC->_L100 = kcg_lit_int32(0);
+  outC->_L99 = kcg_lit_int32(0);
+  outC->_L98 = kcg_lit_int32(0);
+  outC->_L97 = kcg_lit_int32(0);
   outC->_L96 = kcg_true;
-  outC->_L91 = kcg_lit_int64(0);
-  outC->_L89 = kcg_lit_int64(0);
-  outC->_L81 = kcg_lit_int64(0);
-  outC->_L80 = kcg_lit_int64(0);
+  outC->_L91 = kcg_lit_int32(0);
+  outC->_L89 = kcg_lit_int32(0);
+  outC->_L81 = kcg_lit_int32(0);
+  outC->_L80 = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 221; idx3++) {
-    outC->_L79[idx3] = kcg_lit_int64(0);
+    outC->_L79[idx3] = kcg_lit_int32(0);
   }
   for (idx4 = 0; idx4 < 4; idx4++) {
-    outC->_L78[idx4] = kcg_lit_int64(0);
+    outC->_L78[idx4] = kcg_lit_int32(0);
   }
-  outC->_L77 = kcg_lit_int64(0);
-  outC->_L76 = kcg_lit_int64(0);
+  outC->_L77 = kcg_lit_int32(0);
+  outC->_L76 = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 6; idx5++) {
-    outC->_L74[idx5] = kcg_lit_int64(0);
+    outC->_L74[idx5] = kcg_lit_int32(0);
   }
   for (idx6 = 0; idx6 < 6; idx6++) {
-    outC->_L68[idx6] = kcg_lit_int64(0);
+    outC->_L68[idx6] = kcg_lit_int32(0);
   }
   for (idx8 = 0; idx8 < 221; idx8++) {
     for (idx7 = 0; idx7 < 6; idx7++) {
-      outC->_L67[idx8][idx7] = kcg_lit_int64(0);
+      outC->_L67[idx8][idx7] = kcg_lit_int32(0);
     }
   }
-  outC->_L1 = kcg_lit_int64(0);
-  outC->V_lim = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->V_lim = kcg_lit_int32(0);
   for (idx9 = 0; idx9 < 6; idx9++) {
-    outC->av.a[idx9] = kcg_lit_int64(0);
+    outC->av.a[idx9] = kcg_lit_int32(0);
   }
   for (idx10 = 0; idx10 < 6; idx10++) {
-    outC->av.v[idx10] = kcg_lit_int64(0);
+    outC->av.v[idx10] = kcg_lit_int32(0);
   }
 }
 #endif /* KCG_USER_DEFINED_INIT */

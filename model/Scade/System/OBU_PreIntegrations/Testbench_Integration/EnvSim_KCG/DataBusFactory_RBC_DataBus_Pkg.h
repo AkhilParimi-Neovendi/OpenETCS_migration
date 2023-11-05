@@ -19,17 +19,17 @@ typedef struct {
   /* -----------------------  no local probes  ----------------------- */
   /* ----------------------- local memories  ------------------------- */
   kcg_bool init;
-  kcg_int64 /* @1/_/v3/ */ v3_times_1_int64;
+  kcg_int32 /* @1/_/v3/ */ v3_times_1_int32;
   /* ---------------------  sub nodes' contexts  --------------------- */
   outC_Clock__Limit_RBC_Time_Pkg /* _L18=(RBC_Time_Pkg::Clock__Limit#1)/ */ Context_Clock__Limit_1;
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_bool /* @1/_/o/ */ o_times_1_int64;
-  kcg_bool /* @1/_/c/ */ c_times_1_int64;
-  kcg_int64 /* @1/_/n/ */ n_times_1_int64;
-  kcg_int64 /* @1/_/v4/ */ v4_times_1_int64;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_bool /* @1/_/o/ */ o_times_1_int32;
+  kcg_bool /* @1/_/c/ */ c_times_1_int32;
+  kcg_int32 /* @1/_/n/ */ n_times_1_int32;
+  kcg_int32 /* @1/_/v4/ */ v4_times_1_int32;
+  kcg_int32 /* _L4/ */ _L4;
   kcg_bool /* _L3/ */ _L3;
   SessionManagement_T /* _L2/ */ _L2;
   kcg_bool /* _L1/ */ _L1;

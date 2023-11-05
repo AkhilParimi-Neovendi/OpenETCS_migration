@@ -10,7 +10,7 @@
 /* TM_conversions::C_P058_to_legacy_loop/ */
 void C_P058_to_legacy_loop_TM_conversions(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* P058_in/ */
   P058_OBU_sectionlist_enum_T_TM *P058_in,
   outC_C_P058_to_legacy_loop_TM_conversions *outC)
@@ -19,7 +19,7 @@ void C_P058_to_legacy_loop_TM_conversions(
 
   outC->_L20 = i;
   kcg_copy_P058_OBU_sectionlist_enum_T_TM(&outC->_L1, P058_in);
-  if ((kcg_lit_int64(0) <= outC->_L20) & (outC->_L20 < kcg_lit_int64(32))) {
+  if ((kcg_lit_int32(0) <= outC->_L20) & (outC->_L20 < kcg_lit_int32(32))) {
     kcg_copy_P058_section_enum_T_TM(&outC->_L21, &outC->_L1[outC->_L20]);
   }
   else {
@@ -45,20 +45,20 @@ void C_P058_to_legacy_loop_init_TM_conversions(
   static kcg_size idx;
 
   outC->_L21.valid = kcg_true;
-  outC->_L21.d_loc = kcg_lit_int64(0);
+  outC->_L21.d_loc = kcg_lit_int32(0);
   outC->_L21.q_lgtloc = Q_LGTLOC_Min_safe_rear_end;
-  outC->_L20 = kcg_lit_int64(0);
+  outC->_L20 = kcg_lit_int32(0);
   outC->_L3 = kcg_true;
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->_L5 = Q_LGTLOC_Min_safe_rear_end;
-  outC->_L2.d_loc = kcg_lit_int64(0);
+  outC->_L2.d_loc = kcg_lit_int32(0);
   outC->_L2.q_lgtloc = Q_LGTLOC_Min_safe_rear_end;
   for (idx = 0; idx < 32; idx++) {
     outC->_L1[idx].valid = kcg_true;
-    outC->_L1[idx].d_loc = kcg_lit_int64(0);
+    outC->_L1[idx].d_loc = kcg_lit_int32(0);
     outC->_L1[idx].q_lgtloc = Q_LGTLOC_Min_safe_rear_end;
   }
-  outC->P058_legacy_iter_out.d_loc = kcg_lit_int64(0);
+  outC->P058_legacy_iter_out.d_loc = kcg_lit_int32(0);
   outC->P058_legacy_iter_out.q_lgtloc = Q_LGTLOC_Min_safe_rear_end;
 }
 #endif /* KCG_USER_DEFINED_INIT */

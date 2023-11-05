@@ -26,8 +26,8 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   DMI_Identifier_int_array_T_DATA /* _L1/ */ _L1;
   DMI_Identifier_T_DMI_Messages_DMI_to_EVC_Pkg /* _L277/ */ _L277;
-  kcg_int64 /* _L280/ */ _L280;
-  kcg_int64 /* _L279/ */ _L279;
+  kcg_int32 /* _L280/ */ _L280;
+  kcg_int32 /* _L279/ */ _L279;
   kcg_bool /* _L278/ */ _L278;
   DMI_Identifier_T_DMI_Messages_DMI_to_EVC_Pkg /* _L281/ */ _L281;
 } outC_Write_int_to_DMI_identifier_DATA_Packets_DMI_to_EVC;

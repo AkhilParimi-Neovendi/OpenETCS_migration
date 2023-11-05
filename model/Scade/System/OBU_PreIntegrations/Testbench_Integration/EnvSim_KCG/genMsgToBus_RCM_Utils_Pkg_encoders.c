@@ -27,36 +27,36 @@ void genMsgToBus_RCM_Utils_Pkg_encoders(
 {
   /* msgBus_out/ */
   static M_TrainTrackMessageBus_t_TM_TrainTrack_Bus msgBus_out_partial;
-  static kcg_int64 noname;
+  static kcg_int32 noname;
   /* msgBus_out/ */
   static M_TrainTrackMessageBus_t_TM_TrainTrack_Bus _1_msgBus_out_partial;
   /* msgBus_out/ */
   static M_TrainTrackMessageBus_t_TM_TrainTrack_Bus _2_msgBus_out_partial;
-  static kcg_int64 _3_noname;
+  static kcg_int32 _3_noname;
   /* msgBus_out/ */
   static M_TrainTrackMessageBus_t_TM_TrainTrack_Bus _4_msgBus_out_partial;
   /* msgBus_out/ */
   static M_TrainTrackMessageBus_t_TM_TrainTrack_Bus _5_msgBus_out_partial;
-  static kcg_int64 _6_noname;
+  static kcg_int32 _6_noname;
   /* msgBus_out/ */
   static M_TrainTrackMessageBus_t_TM_TrainTrack_Bus _7_msgBus_out_partial;
   /* msgBus_out/ */
   static M_TrainTrackMessageBus_t_TM_TrainTrack_Bus _8_msgBus_out_partial;
-  static kcg_int64 _9_noname;
+  static kcg_int32 _9_noname;
   /* msgBus_out/ */
   static M_TrainTrackMessageBus_t_TM_TrainTrack_Bus _10_msgBus_out_partial;
 
-  outC->_L6_Mean_1_int64 = kcg_lit_int64(2);
+  outC->_L6_Mean_1_int32 = kcg_lit_int32(2);
   outC->_L9 = t_train;
-  outC->I2_Mean_1_int64 = outC->_L9;
-  outC->_L2_Mean_1_int64 = outC->I2_Mean_1_int64;
+  outC->I2_Mean_1_int32 = outC->_L9;
+  outC->_L2_Mean_1_int32 = outC->I2_Mean_1_int32;
   outC->_L6 = t_train_global;
-  outC->I1_Mean_1_int64 = outC->_L6;
-  outC->_L1_Mean_1_int64 = outC->I1_Mean_1_int64;
-  outC->_L4_Mean_1_int64 = outC->_L1_Mean_1_int64 + outC->_L2_Mean_1_int64;
-  outC->_L3_Mean_1_int64 = outC->_L4_Mean_1_int64 / outC->_L6_Mean_1_int64;
-  outC->Me_output_Mean_1_int64 = outC->_L3_Mean_1_int64;
-  outC->_L10 = outC->Me_output_Mean_1_int64;
+  outC->I1_Mean_1_int32 = outC->_L6;
+  outC->_L1_Mean_1_int32 = outC->I1_Mean_1_int32;
+  outC->_L4_Mean_1_int32 = outC->_L1_Mean_1_int32 + outC->_L2_Mean_1_int32;
+  outC->_L3_Mean_1_int32 = outC->_L4_Mean_1_int32 / outC->_L6_Mean_1_int32;
+  outC->Me_output_Mean_1_int32 = outC->_L3_Mean_1_int32;
+  outC->_L10 = outC->Me_output_Mean_1_int32;
   outC->_L11 = outC->_L10;
   outC->t_train_global_l = outC->_L11;
   kcg_copy_msgToTrackTriggers_T_RCM_MsgTypes_Pkg(&outC->_L1, msgToTrackTriggers);
@@ -77,7 +77,7 @@ void genMsgToBus_RCM_Utils_Pkg_encoders(
       msgBus_in);
     outC->_L9_then_IfBlock1 = kcg_true;
     outC->_L8_then_IfBlock1 = co155_Initiation_of_a_communication_session_Id_Pkg;
-    outC->_L10_then_IfBlock1 = kcg_lit_int64(0);
+    outC->_L10_then_IfBlock1 = kcg_lit_int32(0);
     outC->_L7_then_IfBlock1 = t_train;
     outC->_L5_then_IfBlock1 = nid_engine;
     outC->_L14_then_IfBlock1.valid = outC->_L9_then_IfBlock1;
@@ -116,7 +116,7 @@ void genMsgToBus_RCM_Utils_Pkg_encoders(
       outC->_L5_then_else_IfBlock1 = kcg_true;
       outC->_L4_then_else_IfBlock1 =
         co156_Termination_of_a_communication_session_Id_Pkg;
-      outC->_L6_then_else_IfBlock1 = kcg_lit_int64(0);
+      outC->_L6_then_else_IfBlock1 = kcg_lit_int32(0);
       outC->_L3_then_else_IfBlock1 = t_train;
       outC->_L1_then_else_IfBlock1 = nid_engine;
       outC->_L10_then_else_IfBlock1.valid = outC->_L5_then_else_IfBlock1;
@@ -154,7 +154,7 @@ void genMsgToBus_RCM_Utils_Pkg_encoders(
           msgBus_in);
         outC->_L10_then_else_else_IfBlock1 = kcg_true;
         outC->_L1_then_else_else_IfBlock1 = co159_Session_established_Id_Pkg;
-        outC->_L16_then_else_else_IfBlock1 = kcg_lit_int64(0);
+        outC->_L16_then_else_else_IfBlock1 = kcg_lit_int32(0);
         outC->_L11_then_else_else_IfBlock1 = t_train;
         outC->_L9_then_else_else_IfBlock1 = nid_engine;
         outC->_L25_then_else_else_IfBlock1.valid = outC->_L10_then_else_else_IfBlock1;
@@ -200,7 +200,7 @@ void genMsgToBus_RCM_Utils_Pkg_encoders(
           outC->_L5_then_else_else_else_IfBlock1 = kcg_true;
           outC->_L6_then_else_else_else_IfBlock1 =
             co154_No_Compatible_Version_Support_Id_Pkg;
-          outC->_L7_then_else_else_else_IfBlock1 = kcg_lit_int64(0);
+          outC->_L7_then_else_else_else_IfBlock1 = kcg_lit_int32(0);
           outC->_L2_then_else_else_else_IfBlock1 = t_train;
           outC->_L4_then_else_else_else_IfBlock1 = nid_engine;
           outC->_L12_then_else_else_else_IfBlock1.valid =
@@ -285,10 +285,10 @@ void genMsgToBus_init_RCM_Utils_Pkg_encoders(
   static kcg_size idx19;
   static kcg_size idx20;
 
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
   outC->_L2 = kcg_true;
   outC->_L3 = kcg_true;
   outC->_L4 = kcg_true;
@@ -297,231 +297,231 @@ void genMsgToBus_init_RCM_Utils_Pkg_encoders(
   outC->_L1.m156_terminationOfACommunicationSession = kcg_true;
   outC->_L1.m159_sessionEstablished = kcg_true;
   outC->_L1.m154_noCompatibleVersionSupported = kcg_true;
-  outC->t_train_global_l = kcg_lit_int64(0);
+  outC->t_train_global_l = kcg_lit_int32(0);
   outC->m154_noCompatibleVersionSupported = kcg_true;
   outC->m155_initiationOfACommunicationSession = kcg_true;
   outC->m156_terminationOfACommunicationSession = kcg_true;
   outC->m159_sessionEstablished = kcg_true;
   outC->IfBlock1_clock = kcg_true;
-  outC->_L13_then_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L12_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L13_then_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L12_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L11_then_else_IfBlock1 =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L10_then_else_IfBlock1.valid = kcg_true;
-  outC->_L10_then_else_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L10_then_else_IfBlock1.l_message = kcg_lit_int64(0);
-  outC->_L10_then_else_IfBlock1.t_train = kcg_lit_int64(0);
-  outC->_L10_then_else_IfBlock1.nid_engine = kcg_lit_int64(0);
+  outC->_L10_then_else_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L10_then_else_IfBlock1.l_message = kcg_lit_int32(0);
+  outC->_L10_then_else_IfBlock1.t_train = kcg_lit_int32(0);
+  outC->_L10_then_else_IfBlock1.nid_engine = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 5; idx1++) {
     outC->_L9_then_else_IfBlock1[idx1].Message.valid = kcg_true;
-    outC->_L9_then_else_IfBlock1[idx1].Message.nid_message = kcg_lit_int64(0);
-    outC->_L9_then_else_IfBlock1[idx1].Message.l_message = kcg_lit_int64(0);
-    outC->_L9_then_else_IfBlock1[idx1].Message.t_train = kcg_lit_int64(0);
-    outC->_L9_then_else_IfBlock1[idx1].Message.nid_engine = kcg_lit_int64(0);
-    outC->_L9_then_else_IfBlock1[idx1].Message.field1 = kcg_lit_int64(0);
-    outC->_L9_then_else_IfBlock1[idx1].Message.field2 = kcg_lit_int64(0);
-    outC->_L9_then_else_IfBlock1[idx1].Message.field3 = kcg_lit_int64(0);
+    outC->_L9_then_else_IfBlock1[idx1].Message.nid_message = kcg_lit_int32(0);
+    outC->_L9_then_else_IfBlock1[idx1].Message.l_message = kcg_lit_int32(0);
+    outC->_L9_then_else_IfBlock1[idx1].Message.t_train = kcg_lit_int32(0);
+    outC->_L9_then_else_IfBlock1[idx1].Message.nid_engine = kcg_lit_int32(0);
+    outC->_L9_then_else_IfBlock1[idx1].Message.field1 = kcg_lit_int32(0);
+    outC->_L9_then_else_IfBlock1[idx1].Message.field2 = kcg_lit_int32(0);
+    outC->_L9_then_else_IfBlock1[idx1].Message.field3 = kcg_lit_int32(0);
     for (idx = 0; idx < 50; idx++) {
-      outC->_L9_then_else_IfBlock1[idx1].OptionalPackets[idx] = kcg_lit_int64(0);
+      outC->_L9_then_else_IfBlock1[idx1].OptionalPackets[idx] = kcg_lit_int32(0);
     }
   }
   for (idx3 = 0; idx3 < 5; idx3++) {
     outC->_L7_then_else_IfBlock1[idx3].Message.valid = kcg_true;
-    outC->_L7_then_else_IfBlock1[idx3].Message.nid_message = kcg_lit_int64(0);
-    outC->_L7_then_else_IfBlock1[idx3].Message.l_message = kcg_lit_int64(0);
-    outC->_L7_then_else_IfBlock1[idx3].Message.t_train = kcg_lit_int64(0);
-    outC->_L7_then_else_IfBlock1[idx3].Message.nid_engine = kcg_lit_int64(0);
-    outC->_L7_then_else_IfBlock1[idx3].Message.field1 = kcg_lit_int64(0);
-    outC->_L7_then_else_IfBlock1[idx3].Message.field2 = kcg_lit_int64(0);
-    outC->_L7_then_else_IfBlock1[idx3].Message.field3 = kcg_lit_int64(0);
+    outC->_L7_then_else_IfBlock1[idx3].Message.nid_message = kcg_lit_int32(0);
+    outC->_L7_then_else_IfBlock1[idx3].Message.l_message = kcg_lit_int32(0);
+    outC->_L7_then_else_IfBlock1[idx3].Message.t_train = kcg_lit_int32(0);
+    outC->_L7_then_else_IfBlock1[idx3].Message.nid_engine = kcg_lit_int32(0);
+    outC->_L7_then_else_IfBlock1[idx3].Message.field1 = kcg_lit_int32(0);
+    outC->_L7_then_else_IfBlock1[idx3].Message.field2 = kcg_lit_int32(0);
+    outC->_L7_then_else_IfBlock1[idx3].Message.field3 = kcg_lit_int32(0);
     for (idx2 = 0; idx2 < 50; idx2++) {
-      outC->_L7_then_else_IfBlock1[idx3].OptionalPackets[idx2] = kcg_lit_int64(0);
+      outC->_L7_then_else_IfBlock1[idx3].OptionalPackets[idx2] = kcg_lit_int32(0);
     }
   }
-  outC->_L6_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L6_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L5_then_else_IfBlock1 = kcg_true;
-  outC->_L1_then_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L3_then_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L4_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L3_then_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L4_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_IfBlock1 = kcg_true;
-  outC->_L14_then_else_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L13_then_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L14_then_else_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L13_then_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L12_then_else_else_else_IfBlock1.valid = kcg_true;
-  outC->_L12_then_else_else_else_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L12_then_else_else_else_IfBlock1.l_message = kcg_lit_int64(0);
-  outC->_L12_then_else_else_else_IfBlock1.t_train = kcg_lit_int64(0);
-  outC->_L12_then_else_else_else_IfBlock1.nid_engine = kcg_lit_int64(0);
+  outC->_L12_then_else_else_else_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L12_then_else_else_else_IfBlock1.l_message = kcg_lit_int32(0);
+  outC->_L12_then_else_else_else_IfBlock1.t_train = kcg_lit_int32(0);
+  outC->_L12_then_else_else_else_IfBlock1.nid_engine = kcg_lit_int32(0);
   outC->_L11_then_else_else_else_IfBlock1 =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx5 = 0; idx5 < 5; idx5++) {
     outC->_L10_then_else_else_else_IfBlock1[idx5].Message.valid = kcg_true;
     outC->_L10_then_else_else_else_IfBlock1[idx5].Message.nid_message =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L10_then_else_else_else_IfBlock1[idx5].Message.l_message =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L10_then_else_else_else_IfBlock1[idx5].Message.t_train =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L10_then_else_else_else_IfBlock1[idx5].Message.nid_engine =
-      kcg_lit_int64(0);
-    outC->_L10_then_else_else_else_IfBlock1[idx5].Message.field1 = kcg_lit_int64(0);
-    outC->_L10_then_else_else_else_IfBlock1[idx5].Message.field2 = kcg_lit_int64(0);
-    outC->_L10_then_else_else_else_IfBlock1[idx5].Message.field3 = kcg_lit_int64(0);
+      kcg_lit_int32(0);
+    outC->_L10_then_else_else_else_IfBlock1[idx5].Message.field1 = kcg_lit_int32(0);
+    outC->_L10_then_else_else_else_IfBlock1[idx5].Message.field2 = kcg_lit_int32(0);
+    outC->_L10_then_else_else_else_IfBlock1[idx5].Message.field3 = kcg_lit_int32(0);
     for (idx4 = 0; idx4 < 50; idx4++) {
       outC->_L10_then_else_else_else_IfBlock1[idx5].OptionalPackets[idx4] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   for (idx7 = 0; idx7 < 5; idx7++) {
     outC->_L8_then_else_else_else_IfBlock1[idx7].Message.valid = kcg_true;
     outC->_L8_then_else_else_else_IfBlock1[idx7].Message.nid_message =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L8_then_else_else_else_IfBlock1[idx7].Message.l_message =
-      kcg_lit_int64(0);
-    outC->_L8_then_else_else_else_IfBlock1[idx7].Message.t_train = kcg_lit_int64(0);
+      kcg_lit_int32(0);
+    outC->_L8_then_else_else_else_IfBlock1[idx7].Message.t_train = kcg_lit_int32(0);
     outC->_L8_then_else_else_else_IfBlock1[idx7].Message.nid_engine =
-      kcg_lit_int64(0);
-    outC->_L8_then_else_else_else_IfBlock1[idx7].Message.field1 = kcg_lit_int64(0);
-    outC->_L8_then_else_else_else_IfBlock1[idx7].Message.field2 = kcg_lit_int64(0);
-    outC->_L8_then_else_else_else_IfBlock1[idx7].Message.field3 = kcg_lit_int64(0);
+      kcg_lit_int32(0);
+    outC->_L8_then_else_else_else_IfBlock1[idx7].Message.field1 = kcg_lit_int32(0);
+    outC->_L8_then_else_else_else_IfBlock1[idx7].Message.field2 = kcg_lit_int32(0);
+    outC->_L8_then_else_else_else_IfBlock1[idx7].Message.field3 = kcg_lit_int32(0);
     for (idx6 = 0; idx6 < 50; idx6++) {
       outC->_L8_then_else_else_else_IfBlock1[idx7].OptionalPackets[idx6] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
-  outC->_L7_then_else_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L6_then_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L7_then_else_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L6_then_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L5_then_else_else_else_IfBlock1 = kcg_true;
-  outC->_L2_then_else_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L4_then_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L4_then_else_else_else_IfBlock1 = kcg_lit_int32(0);
   for (idx9 = 0; idx9 < 5; idx9++) {
     outC->_L2_else_else_else_else_IfBlock1[idx9].Message.valid = kcg_true;
     outC->_L2_else_else_else_else_IfBlock1[idx9].Message.nid_message =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L2_else_else_else_else_IfBlock1[idx9].Message.l_message =
-      kcg_lit_int64(0);
-    outC->_L2_else_else_else_else_IfBlock1[idx9].Message.t_train = kcg_lit_int64(0);
+      kcg_lit_int32(0);
+    outC->_L2_else_else_else_else_IfBlock1[idx9].Message.t_train = kcg_lit_int32(0);
     outC->_L2_else_else_else_else_IfBlock1[idx9].Message.nid_engine =
-      kcg_lit_int64(0);
-    outC->_L2_else_else_else_else_IfBlock1[idx9].Message.field1 = kcg_lit_int64(0);
-    outC->_L2_else_else_else_else_IfBlock1[idx9].Message.field2 = kcg_lit_int64(0);
-    outC->_L2_else_else_else_else_IfBlock1[idx9].Message.field3 = kcg_lit_int64(0);
+      kcg_lit_int32(0);
+    outC->_L2_else_else_else_else_IfBlock1[idx9].Message.field1 = kcg_lit_int32(0);
+    outC->_L2_else_else_else_else_IfBlock1[idx9].Message.field2 = kcg_lit_int32(0);
+    outC->_L2_else_else_else_else_IfBlock1[idx9].Message.field3 = kcg_lit_int32(0);
     for (idx8 = 0; idx8 < 50; idx8++) {
       outC->_L2_else_else_else_else_IfBlock1[idx9].OptionalPackets[idx8] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->else_clock_else_else_IfBlock1 = kcg_true;
   for (idx11 = 0; idx11 < 5; idx11++) {
     outC->_L17_then_else_else_IfBlock1[idx11].Message.valid = kcg_true;
     outC->_L17_then_else_else_IfBlock1[idx11].Message.nid_message =
-      kcg_lit_int64(0);
-    outC->_L17_then_else_else_IfBlock1[idx11].Message.l_message = kcg_lit_int64(0);
-    outC->_L17_then_else_else_IfBlock1[idx11].Message.t_train = kcg_lit_int64(0);
-    outC->_L17_then_else_else_IfBlock1[idx11].Message.nid_engine = kcg_lit_int64(0);
-    outC->_L17_then_else_else_IfBlock1[idx11].Message.field1 = kcg_lit_int64(0);
-    outC->_L17_then_else_else_IfBlock1[idx11].Message.field2 = kcg_lit_int64(0);
-    outC->_L17_then_else_else_IfBlock1[idx11].Message.field3 = kcg_lit_int64(0);
+      kcg_lit_int32(0);
+    outC->_L17_then_else_else_IfBlock1[idx11].Message.l_message = kcg_lit_int32(0);
+    outC->_L17_then_else_else_IfBlock1[idx11].Message.t_train = kcg_lit_int32(0);
+    outC->_L17_then_else_else_IfBlock1[idx11].Message.nid_engine = kcg_lit_int32(0);
+    outC->_L17_then_else_else_IfBlock1[idx11].Message.field1 = kcg_lit_int32(0);
+    outC->_L17_then_else_else_IfBlock1[idx11].Message.field2 = kcg_lit_int32(0);
+    outC->_L17_then_else_else_IfBlock1[idx11].Message.field3 = kcg_lit_int32(0);
     for (idx10 = 0; idx10 < 50; idx10++) {
       outC->_L17_then_else_else_IfBlock1[idx11].OptionalPackets[idx10] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   for (idx13 = 0; idx13 < 5; idx13++) {
     outC->_L19_then_else_else_IfBlock1[idx13].Message.valid = kcg_true;
     outC->_L19_then_else_else_IfBlock1[idx13].Message.nid_message =
-      kcg_lit_int64(0);
-    outC->_L19_then_else_else_IfBlock1[idx13].Message.l_message = kcg_lit_int64(0);
-    outC->_L19_then_else_else_IfBlock1[idx13].Message.t_train = kcg_lit_int64(0);
-    outC->_L19_then_else_else_IfBlock1[idx13].Message.nid_engine = kcg_lit_int64(0);
-    outC->_L19_then_else_else_IfBlock1[idx13].Message.field1 = kcg_lit_int64(0);
-    outC->_L19_then_else_else_IfBlock1[idx13].Message.field2 = kcg_lit_int64(0);
-    outC->_L19_then_else_else_IfBlock1[idx13].Message.field3 = kcg_lit_int64(0);
+      kcg_lit_int32(0);
+    outC->_L19_then_else_else_IfBlock1[idx13].Message.l_message = kcg_lit_int32(0);
+    outC->_L19_then_else_else_IfBlock1[idx13].Message.t_train = kcg_lit_int32(0);
+    outC->_L19_then_else_else_IfBlock1[idx13].Message.nid_engine = kcg_lit_int32(0);
+    outC->_L19_then_else_else_IfBlock1[idx13].Message.field1 = kcg_lit_int32(0);
+    outC->_L19_then_else_else_IfBlock1[idx13].Message.field2 = kcg_lit_int32(0);
+    outC->_L19_then_else_else_IfBlock1[idx13].Message.field3 = kcg_lit_int32(0);
     for (idx12 = 0; idx12 < 50; idx12++) {
       outC->_L19_then_else_else_IfBlock1[idx13].OptionalPackets[idx12] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
   outC->_L25_then_else_else_IfBlock1.valid = kcg_true;
-  outC->_L25_then_else_else_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L25_then_else_else_IfBlock1.l_message = kcg_lit_int64(0);
-  outC->_L25_then_else_else_IfBlock1.t_train = kcg_lit_int64(0);
-  outC->_L25_then_else_else_IfBlock1.nid_engine = kcg_lit_int64(0);
+  outC->_L25_then_else_else_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L25_then_else_else_IfBlock1.l_message = kcg_lit_int32(0);
+  outC->_L25_then_else_else_IfBlock1.t_train = kcg_lit_int32(0);
+  outC->_L25_then_else_else_IfBlock1.nid_engine = kcg_lit_int32(0);
   outC->_L27_then_else_else_IfBlock1.valid = kcg_true;
-  outC->_L27_then_else_else_IfBlock1.nid_packet = kcg_lit_int64(0);
-  outC->_L27_then_else_else_IfBlock1.l_packet = kcg_lit_int64(0);
-  outC->_L27_then_else_else_IfBlock1.n_iter = kcg_lit_int64(0);
+  outC->_L27_then_else_else_IfBlock1.nid_packet = kcg_lit_int32(0);
+  outC->_L27_then_else_else_IfBlock1.l_packet = kcg_lit_int32(0);
+  outC->_L27_then_else_else_IfBlock1.n_iter = kcg_lit_int32(0);
   for (idx14 = 0; idx14 < 5; idx14++) {
-    outC->_L27_then_else_else_IfBlock1.nid_radio[idx14] = kcg_lit_int64(0);
+    outC->_L27_then_else_else_IfBlock1.nid_radio[idx14] = kcg_lit_int32(0);
   }
-  outC->_L1_then_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L9_then_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L9_then_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L10_then_else_else_IfBlock1 = kcg_true;
-  outC->_L11_then_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L16_then_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L11_then_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L16_then_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L28_then_else_else_IfBlock1 =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
-  outC->_L29_then_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L30_then_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L29_then_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L30_then_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_IfBlock1 = kcg_true;
-  outC->_L8_then_IfBlock1 = kcg_lit_int64(0);
-  outC->_L7_then_IfBlock1 = kcg_lit_int64(0);
-  outC->_L5_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L8_then_IfBlock1 = kcg_lit_int32(0);
+  outC->_L7_then_IfBlock1 = kcg_lit_int32(0);
+  outC->_L5_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L9_then_IfBlock1 = kcg_true;
-  outC->_L10_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L10_then_IfBlock1 = kcg_lit_int32(0);
   for (idx16 = 0; idx16 < 5; idx16++) {
     outC->_L11_then_IfBlock1[idx16].Message.valid = kcg_true;
-    outC->_L11_then_IfBlock1[idx16].Message.nid_message = kcg_lit_int64(0);
-    outC->_L11_then_IfBlock1[idx16].Message.l_message = kcg_lit_int64(0);
-    outC->_L11_then_IfBlock1[idx16].Message.t_train = kcg_lit_int64(0);
-    outC->_L11_then_IfBlock1[idx16].Message.nid_engine = kcg_lit_int64(0);
-    outC->_L11_then_IfBlock1[idx16].Message.field1 = kcg_lit_int64(0);
-    outC->_L11_then_IfBlock1[idx16].Message.field2 = kcg_lit_int64(0);
-    outC->_L11_then_IfBlock1[idx16].Message.field3 = kcg_lit_int64(0);
+    outC->_L11_then_IfBlock1[idx16].Message.nid_message = kcg_lit_int32(0);
+    outC->_L11_then_IfBlock1[idx16].Message.l_message = kcg_lit_int32(0);
+    outC->_L11_then_IfBlock1[idx16].Message.t_train = kcg_lit_int32(0);
+    outC->_L11_then_IfBlock1[idx16].Message.nid_engine = kcg_lit_int32(0);
+    outC->_L11_then_IfBlock1[idx16].Message.field1 = kcg_lit_int32(0);
+    outC->_L11_then_IfBlock1[idx16].Message.field2 = kcg_lit_int32(0);
+    outC->_L11_then_IfBlock1[idx16].Message.field3 = kcg_lit_int32(0);
     for (idx15 = 0; idx15 < 50; idx15++) {
-      outC->_L11_then_IfBlock1[idx16].OptionalPackets[idx15] = kcg_lit_int64(0);
+      outC->_L11_then_IfBlock1[idx16].OptionalPackets[idx15] = kcg_lit_int32(0);
     }
   }
   for (idx18 = 0; idx18 < 5; idx18++) {
     outC->_L13_then_IfBlock1[idx18].Message.valid = kcg_true;
-    outC->_L13_then_IfBlock1[idx18].Message.nid_message = kcg_lit_int64(0);
-    outC->_L13_then_IfBlock1[idx18].Message.l_message = kcg_lit_int64(0);
-    outC->_L13_then_IfBlock1[idx18].Message.t_train = kcg_lit_int64(0);
-    outC->_L13_then_IfBlock1[idx18].Message.nid_engine = kcg_lit_int64(0);
-    outC->_L13_then_IfBlock1[idx18].Message.field1 = kcg_lit_int64(0);
-    outC->_L13_then_IfBlock1[idx18].Message.field2 = kcg_lit_int64(0);
-    outC->_L13_then_IfBlock1[idx18].Message.field3 = kcg_lit_int64(0);
+    outC->_L13_then_IfBlock1[idx18].Message.nid_message = kcg_lit_int32(0);
+    outC->_L13_then_IfBlock1[idx18].Message.l_message = kcg_lit_int32(0);
+    outC->_L13_then_IfBlock1[idx18].Message.t_train = kcg_lit_int32(0);
+    outC->_L13_then_IfBlock1[idx18].Message.nid_engine = kcg_lit_int32(0);
+    outC->_L13_then_IfBlock1[idx18].Message.field1 = kcg_lit_int32(0);
+    outC->_L13_then_IfBlock1[idx18].Message.field2 = kcg_lit_int32(0);
+    outC->_L13_then_IfBlock1[idx18].Message.field3 = kcg_lit_int32(0);
     for (idx17 = 0; idx17 < 50; idx17++) {
-      outC->_L13_then_IfBlock1[idx18].OptionalPackets[idx17] = kcg_lit_int64(0);
+      outC->_L13_then_IfBlock1[idx18].OptionalPackets[idx17] = kcg_lit_int32(0);
     }
   }
   outC->_L14_then_IfBlock1.valid = kcg_true;
-  outC->_L14_then_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L14_then_IfBlock1.l_message = kcg_lit_int64(0);
-  outC->_L14_then_IfBlock1.t_train = kcg_lit_int64(0);
-  outC->_L14_then_IfBlock1.nid_engine = kcg_lit_int64(0);
+  outC->_L14_then_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L14_then_IfBlock1.l_message = kcg_lit_int32(0);
+  outC->_L14_then_IfBlock1.t_train = kcg_lit_int32(0);
+  outC->_L14_then_IfBlock1.nid_engine = kcg_lit_int32(0);
   outC->_L15_then_IfBlock1 =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
-  outC->_L16_then_IfBlock1 = kcg_lit_int64(0);
-  outC->_L17_then_IfBlock1 = kcg_lit_int64(0);
-  outC->_L1_Mean_1_int64 = kcg_lit_int64(0);
-  outC->_L2_Mean_1_int64 = kcg_lit_int64(0);
-  outC->_L3_Mean_1_int64 = kcg_lit_int64(0);
-  outC->_L4_Mean_1_int64 = kcg_lit_int64(0);
-  outC->_L6_Mean_1_int64 = kcg_lit_int64(0);
-  outC->I1_Mean_1_int64 = kcg_lit_int64(0);
-  outC->I2_Mean_1_int64 = kcg_lit_int64(0);
-  outC->Me_output_Mean_1_int64 = kcg_lit_int64(0);
+  outC->_L16_then_IfBlock1 = kcg_lit_int32(0);
+  outC->_L17_then_IfBlock1 = kcg_lit_int32(0);
+  outC->_L1_Mean_1_int32 = kcg_lit_int32(0);
+  outC->_L2_Mean_1_int32 = kcg_lit_int32(0);
+  outC->_L3_Mean_1_int32 = kcg_lit_int32(0);
+  outC->_L4_Mean_1_int32 = kcg_lit_int32(0);
+  outC->_L6_Mean_1_int32 = kcg_lit_int32(0);
+  outC->I1_Mean_1_int32 = kcg_lit_int32(0);
+  outC->I2_Mean_1_int32 = kcg_lit_int32(0);
+  outC->Me_output_Mean_1_int32 = kcg_lit_int32(0);
   for (idx20 = 0; idx20 < 5; idx20++) {
     outC->msgBus_out[idx20].Message.valid = kcg_true;
-    outC->msgBus_out[idx20].Message.nid_message = kcg_lit_int64(0);
-    outC->msgBus_out[idx20].Message.l_message = kcg_lit_int64(0);
-    outC->msgBus_out[idx20].Message.t_train = kcg_lit_int64(0);
-    outC->msgBus_out[idx20].Message.nid_engine = kcg_lit_int64(0);
-    outC->msgBus_out[idx20].Message.field1 = kcg_lit_int64(0);
-    outC->msgBus_out[idx20].Message.field2 = kcg_lit_int64(0);
-    outC->msgBus_out[idx20].Message.field3 = kcg_lit_int64(0);
+    outC->msgBus_out[idx20].Message.nid_message = kcg_lit_int32(0);
+    outC->msgBus_out[idx20].Message.l_message = kcg_lit_int32(0);
+    outC->msgBus_out[idx20].Message.t_train = kcg_lit_int32(0);
+    outC->msgBus_out[idx20].Message.nid_engine = kcg_lit_int32(0);
+    outC->msgBus_out[idx20].Message.field1 = kcg_lit_int32(0);
+    outC->msgBus_out[idx20].Message.field2 = kcg_lit_int32(0);
+    outC->msgBus_out[idx20].Message.field3 = kcg_lit_int32(0);
     for (idx19 = 0; idx19 < 50; idx19++) {
-      outC->msgBus_out[idx20].OptionalPackets[idx19] = kcg_lit_int64(0);
+      outC->msgBus_out[idx20].OptionalPackets[idx19] = kcg_lit_int32(0);
     }
   }
   /* IfBlock1:then:_L11=(TM_radio_messages::Send_M155#1)/ */

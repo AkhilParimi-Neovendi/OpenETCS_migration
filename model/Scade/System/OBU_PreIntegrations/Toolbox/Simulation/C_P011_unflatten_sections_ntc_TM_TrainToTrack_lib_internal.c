@@ -37,13 +37,13 @@ void C_P011_unflatten_sections_ntc_init_TM_TrainToTrack_lib_internal(
   kcg_size idx3;
 
   for (idx1 = 0; idx1 < 5; idx1++) {
-    outC->_L9[idx1] = kcg_lit_int64(0);
+    outC->_L9[idx1] = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 5; idx2++) {
-    outC->_L1[idx2] = kcg_lit_int64(0);
+    outC->_L1[idx2] = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 5; idx3++) {
-    outC->sections[idx3] = kcg_lit_int64(0);
+    outC->sections[idx3] = kcg_lit_int32(0);
   }
   for (idx = 0; idx < 5; idx++) {
     /* _L9=(TM_TrainToTrack_lib_internal::C_P011_us_array_ntc#1)/ */

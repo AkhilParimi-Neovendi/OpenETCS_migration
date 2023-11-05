@@ -79,7 +79,7 @@ typedef struct {
 /* DATA::Variables::CAST_int_to_DMI_StatusSet/ */
 extern void CAST_int_to_DMI_StatusSet_DATA_Variables(
   /* dmi_statusSet_int/ */
-  kcg_int64 dmi_statusSet_int,
+  kcg_int32 dmi_statusSet_int,
   outC_CAST_int_to_DMI_StatusSet_DATA_Variables *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

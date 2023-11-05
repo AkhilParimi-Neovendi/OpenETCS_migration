@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _MergeTime_DMI_Control_Pkg_Sub_func_TextMessages_H_
 #define _MergeTime_DMI_Control_Pkg_Sub_func_TextMessages_H_
@@ -15,7 +15,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  array_float64_10 /* OutQueue/ */ OutQueue;
+  array_float32_10 /* OutQueue/ */ OutQueue;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -23,24 +23,24 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  array_float64_10_10 /* _L14/ */ _L14;
-  array_float64_10 /* _L13/ */ _L13;
-  array_float64_10 /* _L12/ */ _L12;
-  kcg_int64 /* _L11/ */ _L11;
-  array_float64_10_10 /* _L10/ */ _L10;
-  array_float64_10 /* _L9/ */ _L9;
-  array_int64_10 /* _L8/ */ _L8;
+  array_float32_10_10 /* _L14/ */ _L14;
+  array_float32_10 /* _L13/ */ _L13;
+  array_float32_10 /* _L12/ */ _L12;
+  kcg_int32 /* _L11/ */ _L11;
+  array_float32_10_10 /* _L10/ */ _L10;
+  array_float32_10 /* _L9/ */ _L9;
+  array_int32_10 /* _L8/ */ _L8;
 } outC_MergeTime_DMI_Control_Pkg_Sub_func_TextMessages;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* DMI_Control_Pkg::Sub_func::TextMessages::MergeTime/ */
 extern void MergeTime_DMI_Control_Pkg_Sub_func_TextMessages(
   /* num/ */
-  kcg_int64 num,
+  kcg_int32 num,
   /* AuxTimeiArray/ */
-  array_float64_10 *AuxTimeiArray,
+  array_float32_10 *AuxTimeiArray,
   /* impTimeArray/ */
-  array_float64_10 *impTimeArray,
+  array_float32_10 *impTimeArray,
   outC_MergeTime_DMI_Control_Pkg_Sub_func_TextMessages *outC);
 
 extern void MergeTime_reset_DMI_Control_Pkg_Sub_func_TextMessages(
@@ -56,6 +56,6 @@ extern void MergeTime_init_DMI_Control_Pkg_Sub_func_TextMessages(
 #endif /* _MergeTime_DMI_Control_Pkg_Sub_func_TextMessages_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** MergeTime_DMI_Control_Pkg_Sub_func_TextMessages.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

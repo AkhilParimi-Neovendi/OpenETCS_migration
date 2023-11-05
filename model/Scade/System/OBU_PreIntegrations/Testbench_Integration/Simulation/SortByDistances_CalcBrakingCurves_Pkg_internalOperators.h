@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _SortByDistances_CalcBrakingCurves_Pkg_internalOperators_H_
 #define _SortByDistances_CalcBrakingCurves_Pkg_internalOperators_H_
@@ -33,7 +33,7 @@ typedef struct {
   ParabolaCurveAccelerations_T_CalcBrakingCurves_types /* _L9/ */ _L9;
   ParabolaCurve_T_CalcBrakingCurves_types /* _L18/ */ _L18;
   ParabolaCurve_T_CalcBrakingCurves_types /* _L19/ */ _L19;
-  kcg_int64 /* _L21/ */ _L21;
+  kcg_int32 /* _L21/ */ _L21;
   kcg_bool /* _L22/ */ _L22;
   ParabolaCurveValid_T_CalcBrakingCurves_types /* _L23/ */ _L23;
 } outC_SortByDistances_CalcBrakingCurves_Pkg_internalOperators;
@@ -60,6 +60,6 @@ extern void SortByDistances_init_CalcBrakingCurves_Pkg_internalOperators(
 #endif /* _SortByDistances_CalcBrakingCurves_Pkg_internalOperators_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** SortByDistances_CalcBrakingCurves_Pkg_internalOperators.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

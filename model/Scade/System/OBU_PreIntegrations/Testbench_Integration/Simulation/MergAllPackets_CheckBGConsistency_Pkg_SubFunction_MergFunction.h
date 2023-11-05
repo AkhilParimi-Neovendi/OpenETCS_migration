@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _MergAllPackets_CheckBGConsistency_Pkg_SubFunction_MergFunction_H_
 #define _MergAllPackets_CheckBGConsistency_Pkg_SubFunction_MergFunction_H_
@@ -44,10 +44,10 @@ typedef struct {
   CompressedPacketData_T_Common_Types_Pkg /* IfBlock1:else:else:then:_L17/ */ _L17_then_else_else_IfBlock1;
   CompressedPacketData_T_Common_Types_Pkg /* IfBlock1:else:else:then:_L16/ */ _L16_then_else_else_IfBlock1;
   Telegram_T_BG_Types_Pkg /* IfBlock1:else:else:then:_L15/ */ _L15_then_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:then:_L14/ */ _L14_then_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:then:_L13/ */ _L13_then_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:then:_L11/ */ _L11_then_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:then:_L12/ */ _L12_then_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:then:_L14/ */ _L14_then_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:then:_L13/ */ _L13_then_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:then:_L11/ */ _L11_then_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:then:_L12/ */ _L12_then_else_else_IfBlock1;
   Metadata_T_Common_Types_Pkg /* IfBlock1:else:else:then:_L10/ */ _L10_then_else_else_IfBlock1;
   CompressedPacketData_T_Common_Types_Pkg /* IfBlock1:else:else:then:_L9/ */ _L9_then_else_else_IfBlock1;
   Metadata_T_Common_Types_Pkg /* IfBlock1:else:else:then:_L8/ */ _L8_then_else_else_IfBlock1;
@@ -61,7 +61,7 @@ typedef struct {
   CompressedPacketData_T_Common_Types_Pkg /* IfBlock1:else:then:_L2/ */ _L2_then_else_IfBlock1;
   M_DUP /* mDup1/ */ mDup1;
   M_DUP /* mDup2/ */ mDup2;
-  kcg_int64 /* diff/ */ diff;
+  kcg_int32 /* diff/ */ diff;
   kcg_bool /* nominal/ */ nominal;
   kcg_bool /* revers/ */ revers;
   Metadata_T_Common_Types_Pkg /* metadata/ */ metadata;
@@ -83,15 +83,15 @@ typedef struct {
   M_DUP /* _L41/ */ _L41;
   Telegram_T_BG_Types_Pkg /* _L68/ */ _L68;
   M_DUP /* _L67/ */ _L67;
-  kcg_int64 /* _L66/ */ _L66;
+  kcg_int32 /* _L66/ */ _L66;
   M_DUP /* _L65/ */ _L65;
   N_PIG /* _L64/ */ _L64;
   TelegramHeader_T_BG_Types_Pkg /* _L63/ */ _L63;
   TelegramHeader_T_BG_Types_Pkg /* _L62/ */ _L62;
-  kcg_int64 /* _L61/ */ _L61;
+  kcg_int32 /* _L61/ */ _L61;
   Telegram_T_BG_Types_Pkg /* _L60/ */ _L60;
   N_PIG /* _L59/ */ _L59;
-  kcg_int64 /* _L58/ */ _L58;
+  kcg_int32 /* _L58/ */ _L58;
   Metadata_T_Common_Types_Pkg /* _L72/ */ _L72;
   Telegram_T_BG_Types_Pkg /* _L71/ */ _L71;
   CompressedPackets_T_Common_Types_Pkg /* _L70/ */ _L70;
@@ -123,6 +123,6 @@ extern void MergAllPackets_init_CheckBGConsistency_Pkg_SubFunction_MergFunction(
 #endif /* _MergAllPackets_CheckBGConsistency_Pkg_SubFunction_MergFunction_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** MergAllPackets_CheckBGConsistency_Pkg_SubFunction_MergFunction.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

@@ -14,29 +14,29 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* element/ */ element;
+  kcg_int32 /* element/ */ element;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   P011_voltage_sections_array_flat_t_TM_TrainToTrack /* _L2/ */ _L2;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L6/ */ _L6;
 } outC_C_P011_extract_el_section_TM_TrainToTrack_lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* TM_TrainToTrack_lib_internal::C_P011_extract_el_section_voltage/ */
 extern void C_P011_extract_el_section_TM_TrainToTrack_lib_internal(
   /* offset/ */
-  kcg_int64 offset,
+  kcg_int32 offset,
   /* flat/ */
   P011_voltage_sections_array_flat_t_TM_TrainToTrack *flat,
   /* modulo/ */
-  kcg_int64 modulo,
+  kcg_int32 modulo,
   outC_C_P011_extract_el_section_TM_TrainToTrack_lib_internal *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

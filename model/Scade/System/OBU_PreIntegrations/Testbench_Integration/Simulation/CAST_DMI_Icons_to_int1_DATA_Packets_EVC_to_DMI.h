@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _CAST_DMI_Icons_to_int1_DATA_Packets_EVC_to_DMI_H_
 #define _CAST_DMI_Icons_to_int1_DATA_Packets_EVC_to_DMI_H_
@@ -34,14 +34,14 @@ typedef struct {
   kcg_bool /* _L10/ */ _L10;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L9/ */ _L9;
   Icon_control_flag_T_DMI_Types_Pkg /* _L8/ */ _L8;
-  kcg_float64 /* _L7/ */ _L7;
+  kcg_float32 /* _L7/ */ _L7;
   Icon_group_T_DMI_Types_Pkg /* _L6/ */ _L6;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   Area_group_T_DMI_Types_Pkg /* _L4/ */ _L4;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L2/ */ _L2;
-  array_int64_9 /* _L11/ */ _L11;
-  kcg_int64 /* _L22/ */ _L22;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L2/ */ _L2;
+  array_int32_9 /* _L11/ */ _L11;
+  kcg_int32 /* _L22/ */ _L22;
   Icon_control_flag_INT_T_DATA /* _L23/ */ _L23;
   DMI_m_icon_flashing_freq_INT_T_DATA /* _L24/ */ _L24;
   Icon_group_INT_T_DATA /* _L25/ */ _L25;
@@ -71,6 +71,6 @@ extern void CAST_DMI_Icons_to_int1_init_DATA_Packets_EVC_to_DMI(
 #endif /* _CAST_DMI_Icons_to_int1_DATA_Packets_EVC_to_DMI_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_DMI_Icons_to_int1_DATA_Packets_EVC_to_DMI.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

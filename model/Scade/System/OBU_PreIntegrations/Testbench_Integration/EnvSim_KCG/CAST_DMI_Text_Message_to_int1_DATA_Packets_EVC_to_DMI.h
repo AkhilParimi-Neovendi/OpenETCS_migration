@@ -40,13 +40,13 @@ typedef struct {
   DMI_TEXT_DMI_Types_Pkg /* _L4/ */ _L4;
   Q_TEXTCLASS /* _L3/ */ _L3;
   Q_TEXTCONFIRM /* _L2/ */ _L2;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   DMI_TEXT_INT_Array_T_DATA /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
-  kcg_int64 /* _L13/ */ _L13;
-  kcg_int64 /* _L14/ */ _L14;
-  array_int64_5 /* _L15/ */ _L15;
-  array_int64_2 /* _L16/ */ _L16;
+  kcg_int32 /* _L12/ */ _L12;
+  kcg_int32 /* _L13/ */ _L13;
+  kcg_int32 /* _L14/ */ _L14;
+  array_int32_5 /* _L15/ */ _L15;
+  array_int32_2 /* _L16/ */ _L16;
   DMI_Text_Message_int_array_T_DATA /* _L17/ */ _L17;
 } outC_CAST_DMI_Text_Message_to_int1_DATA_Packets_EVC_to_DMI;
 

@@ -25,13 +25,13 @@ typedef struct {
   G_A /* _L2/ */ _L2;
   Q_GDIR /* _L3/ */ _L3;
   kcg_bool /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
-  kcg_int64 /* _L7/ */ _L7;
-  kcg_int64 /* _L8/ */ _L8;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L6/ */ _L6;
+  kcg_int32 /* _L7/ */ _L7;
+  kcg_int32 /* _L8/ */ _L8;
   kcg_bool /* _L10/ */ _L10;
-  kcg_int64 /* _L11/ */ _L11;
-  kcg_int64 /* _L13/ */ _L13;
+  kcg_int32 /* _L11/ */ _L11;
+  kcg_int32 /* _L13/ */ _L13;
 } outC_EVAL_Q_GDIR_TA_Lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */

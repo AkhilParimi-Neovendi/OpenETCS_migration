@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,7 +10,7 @@
 /* TA_MA_new::Get_EOA_loop/ */
 void Get_EOA_loop_TA_MA_new(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* acc/ */
   L_internal_Type_Obu_BasicTypes_Pkg acc,
   /* MA_sections/ */
@@ -24,7 +24,7 @@ void Get_EOA_loop_TA_MA_new(
   kcg_copy_MovementAuthoritySectionlist_t_TrackAtlasTypes(
     &outC->_L3,
     MA_sections);
-  if ((kcg_lit_int64(0) <= outC->_L1) & (outC->_L1 < kcg_lit_int64(10))) {
+  if ((kcg_lit_int32(0) <= outC->_L1) & (outC->_L1 < kcg_lit_int32(10))) {
     kcg_copy_MovementAuthoritySection_t_TrackAtlasTypes(
       &outC->_L34,
       &outC->_L3[outC->_L1]);
@@ -57,30 +57,30 @@ void Get_EOA_loop_init_TA_MA_new(outC_Get_EOA_loop_TA_MA_new *outC)
 {
   static kcg_size idx;
 
-  outC->_L42 = kcg_lit_int64(0);
-  outC->_L41 = kcg_lit_int64(0);
+  outC->_L42 = kcg_lit_int32(0);
+  outC->_L41 = kcg_lit_int32(0);
   outC->_L40 = kcg_true;
   outC->_L39 = kcg_true;
-  outC->_L38 = kcg_lit_int64(0);
+  outC->_L38 = kcg_lit_int32(0);
   outC->_L37 = kcg_true;
   outC->_L35 = kcg_true;
   outC->_L34.valid = kcg_true;
   outC->_L34.q_endsection = kcg_true;
-  outC->_L34.l_section = kcg_lit_int64(0);
+  outC->_L34.l_section = kcg_lit_int32(0);
   outC->_L34.q_sectiontimer = kcg_true;
-  outC->_L34.t_sectiontimer = kcg_lit_int64(0);
-  outC->_L34.d_sectiontimerstoploc = kcg_lit_int64(0);
+  outC->_L34.t_sectiontimer = kcg_lit_int32(0);
+  outC->_L34.d_sectiontimerstoploc = kcg_lit_int32(0);
   for (idx = 0; idx < 10; idx++) {
     outC->_L3[idx].valid = kcg_true;
     outC->_L3[idx].q_endsection = kcg_true;
-    outC->_L3[idx].l_section = kcg_lit_int64(0);
+    outC->_L3[idx].l_section = kcg_lit_int32(0);
     outC->_L3[idx].q_sectiontimer = kcg_true;
-    outC->_L3[idx].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L3[idx].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L3[idx].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L3[idx].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->currentEOA = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->currentEOA = kcg_lit_int32(0);
   outC->cont = kcg_true;
 }
 #endif /* KCG_USER_DEFINED_INIT */
@@ -96,6 +96,6 @@ void Get_EOA_loop_reset_TA_MA_new(outC_Get_EOA_loop_TA_MA_new *outC)
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Get_EOA_loop_TA_MA_new.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

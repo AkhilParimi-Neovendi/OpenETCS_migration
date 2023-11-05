@@ -48,37 +48,37 @@ void d_SBI2_init_TargetLimits_Pkg(outC_d_SBI2_TargetLimits_Pkg *outC)
   static kcg_size idx2;
   static kcg_size idx3;
 
-  outC->_L94 = kcg_lit_float64(0.0);
-  outC->_L92 = kcg_lit_float64(0.0);
-  outC->_L93 = kcg_lit_float64(0.0);
-  outC->_L89 = kcg_lit_float64(0.0);
-  outC->_L86 = kcg_lit_float64(0.0);
-  outC->_L87.Traction = kcg_lit_float64(0.0);
-  outC->_L87.berem = kcg_lit_float64(0.0);
-  outC->_L87.bs = kcg_lit_float64(0.0);
-  outC->_L87.bs1 = kcg_lit_float64(0.0);
-  outC->_L87.bs2 = kcg_lit_float64(0.0);
+  outC->_L94 = kcg_lit_float32(0.0);
+  outC->_L92 = kcg_lit_float32(0.0);
+  outC->_L93 = kcg_lit_float32(0.0);
+  outC->_L89 = kcg_lit_float32(0.0);
+  outC->_L86 = kcg_lit_float32(0.0);
+  outC->_L87.Traction = kcg_lit_float32(0.0);
+  outC->_L87.berem = kcg_lit_float32(0.0);
+  outC->_L87.bs = kcg_lit_float32(0.0);
+  outC->_L87.bs1 = kcg_lit_float32(0.0);
+  outC->_L87.bs2 = kcg_lit_float32(0.0);
   outC->_L87.inhComp = kcg_true;
-  outC->_L87.indication = kcg_lit_float64(0.0);
-  outC->_L88 = kcg_lit_float64(0.0);
-  outC->_L85 = kcg_lit_float64(0.0);
-  outC->_L83.v = kcg_lit_float64(0.0);
-  outC->_L83.d = kcg_lit_float64(0.0);
+  outC->_L87.indication = kcg_lit_float32(0.0);
+  outC->_L88 = kcg_lit_float32(0.0);
+  outC->_L85 = kcg_lit_float32(0.0);
+  outC->_L83.v = kcg_lit_float32(0.0);
+  outC->_L83.d = kcg_lit_float32(0.0);
   outC->_L82 = kcg_true;
-  outC->_L70 = kcg_lit_float64(0.0);
+  outC->_L70 = kcg_lit_float32(0.0);
   for (idx = 0; idx < 114; idx++) {
-    outC->_L71.distances[idx] = kcg_lit_float64(0.0);
+    outC->_L71.distances[idx] = kcg_lit_float32(0.0);
   }
   for (idx1 = 0; idx1 < 114; idx1++) {
-    outC->_L71.speeds[idx1] = kcg_lit_float64(0.0);
+    outC->_L71.speeds[idx1] = kcg_lit_float32(0.0);
   }
   for (idx2 = 0; idx2 < 114; idx2++) {
-    outC->_L71.accelerations[idx2] = kcg_lit_float64(0.0);
+    outC->_L71.accelerations[idx2] = kcg_lit_float32(0.0);
   }
   for (idx3 = 0; idx3 < 114; idx3++) {
     outC->_L71.valid[idx3] = kcg_true;
   }
-  outC->D_SBI2 = kcg_lit_float64(0.0);
+  outC->D_SBI2 = kcg_lit_float32(0.0);
   outC->valid = kcg_true;
   /* _L82=(CalcBrakingCurves_types::getLocationOnCurve#1)/ */
   getLocationOnCurve_init_CalcBrakingCurves_types(

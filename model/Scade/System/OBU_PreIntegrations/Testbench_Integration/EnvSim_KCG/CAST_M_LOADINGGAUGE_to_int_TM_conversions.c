@@ -14,45 +14,45 @@ void CAST_M_LOADINGGAUGE_to_int_TM_conversions(
   outC_CAST_M_LOADINGGAUGE_to_int_TM_conversions *outC)
 {
   /* m_loadinggauge_int/ */
-  static kcg_int64 m_loadinggauge_int_partial;
+  static kcg_int32 m_loadinggauge_int_partial;
   /* error/ */
   static kcg_bool error_partial;
   /* m_loadinggauge_int/ */
-  static kcg_int64 _1_m_loadinggauge_int_partial;
+  static kcg_int32 _1_m_loadinggauge_int_partial;
   /* error/ */
   static kcg_bool _2_error_partial;
   /* m_loadinggauge_int/ */
-  static kcg_int64 _3_m_loadinggauge_int_partial;
+  static kcg_int32 _3_m_loadinggauge_int_partial;
   /* error/ */
   static kcg_bool _4_error_partial;
   /* m_loadinggauge_int/ */
-  static kcg_int64 _5_m_loadinggauge_int_partial;
+  static kcg_int32 _5_m_loadinggauge_int_partial;
   /* error/ */
   static kcg_bool _6_error_partial;
   /* m_loadinggauge_int/ */
-  static kcg_int64 _7_m_loadinggauge_int_partial;
+  static kcg_int32 _7_m_loadinggauge_int_partial;
   /* error/ */
   static kcg_bool _8_error_partial;
   /* m_loadinggauge_int/ */
-  static kcg_int64 _9_m_loadinggauge_int_partial;
+  static kcg_int32 _9_m_loadinggauge_int_partial;
   /* error/ */
   static kcg_bool _10_error_partial;
   /* error/ */
   static kcg_bool _11_error_partial;
   /* m_loadinggauge_int/ */
-  static kcg_int64 _12_m_loadinggauge_int_partial;
+  static kcg_int32 _12_m_loadinggauge_int_partial;
   /* error/ */
   static kcg_bool _13_error_partial;
   /* m_loadinggauge_int/ */
-  static kcg_int64 _14_m_loadinggauge_int_partial;
+  static kcg_int32 _14_m_loadinggauge_int_partial;
   /* error/ */
   static kcg_bool _15_error_partial;
   /* m_loadinggauge_int/ */
-  static kcg_int64 _16_m_loadinggauge_int_partial;
+  static kcg_int32 _16_m_loadinggauge_int_partial;
   /* error/ */
   static kcg_bool _17_error_partial;
   /* m_loadinggauge_int/ */
-  static kcg_int64 _18_m_loadinggauge_int_partial;
+  static kcg_int32 _18_m_loadinggauge_int_partial;
   static kcg_bool noname;
 
   outC->_L4 = m_loadinggauge;
@@ -153,23 +153,23 @@ void CAST_M_LOADINGGAUGE_to_int_init_TM_conversions(
   outC->m_loadinggauge_in =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->IfBlock1_clock = kcg_true;
-  outC->_L7_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L7_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L6_then_else_IfBlock1 = kcg_true;
   outC->else_clock_else_IfBlock1 = kcg_true;
   outC->_L1_then_else_else_else_IfBlock1 = kcg_true;
-  outC->_L2_then_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_else_else_IfBlock1 = kcg_true;
   outC->_L2_else_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L1_else_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_else_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_IfBlock1 = kcg_true;
   outC->else_clock_else_else_IfBlock1 = kcg_true;
   outC->_L2_then_else_else_IfBlock1 = kcg_true;
-  outC->_L1_then_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_IfBlock1 = kcg_true;
   outC->_L7_then_IfBlock1 = kcg_true;
-  outC->_L8_then_IfBlock1 = kcg_lit_int64(0);
-  outC->m_loadinggauge_int = kcg_lit_int64(0);
+  outC->_L8_then_IfBlock1 = kcg_lit_int32(0);
+  outC->m_loadinggauge_int = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

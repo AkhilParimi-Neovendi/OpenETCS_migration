@@ -16,7 +16,7 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   kcg_bool /* outContinueIteration/ */ outContinueIteration;
-  kcg_int64 /* outAccumulator/ */ outAccumulator;
+  kcg_int32 /* outAccumulator/ */ outAccumulator;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -24,8 +24,8 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L1/ */ _L1;
+  kcg_int32 /* _L2/ */ _L2;
   kcg_bool /* _L4/ */ _L4;
   kcg_bool /* _L5/ */ _L5;
   kcg_bool /* _L6/ */ _L6;
@@ -37,9 +37,9 @@ typedef struct {
 /* RBC_Collections_Pkg::RadioTrackTrainMessageQueue__Take_Iterable/ */
 extern void _146_RadioTrackTrainMessa_RBC_Collections_Pkg(
   /* inIndex/ */
-  kcg_int64 inIndex,
+  kcg_int32 inIndex,
   /* inAccumulator/ */
-  kcg_int64 inAccumulator,
+  kcg_int32 inAccumulator,
   /* inRadioTrackTrainMessageQueueEntry/ */
   RadioTrackTrainMessageQueueEntry_T *inRadioTrackTrainMessageQueueEntry,
   outC__146_RadioTrackTrainMessa_RBC_Collections_Pkg *outC);

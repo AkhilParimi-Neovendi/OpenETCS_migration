@@ -21,15 +21,15 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* @1/Mi_Output/ */ Mi_Output_Min_1_int64;
-  kcg_int64 /* @1/I2/ */ I2_Min_1_int64;
-  kcg_int64 /* @1/I1/ */ I1_Min_1_int64;
-  kcg_bool /* @1/_L25/ */ _L25_Min_1_int64;
-  kcg_int64 /* @1/_L24/ */ _L24_Min_1_int64;
-  kcg_int64 /* @1/_L22/ */ _L22_Min_1_int64;
-  kcg_int64 /* @1/_L21/ */ _L21_Min_1_int64;
+  kcg_int32 /* @1/Mi_Output/ */ Mi_Output_Min_1_int32;
+  kcg_int32 /* @1/I2/ */ I2_Min_1_int32;
+  kcg_int32 /* @1/I1/ */ I1_Min_1_int32;
+  kcg_bool /* @1/_L25/ */ _L25_Min_1_int32;
+  kcg_int32 /* @1/_L24/ */ _L24_Min_1_int32;
+  kcg_int32 /* @1/_L22/ */ _L22_Min_1_int32;
+  kcg_int32 /* @1/_L21/ */ _L21_Min_1_int32;
   kcg_bool /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   kcg_bool /* _L27/ */ _L27;
   trainPosition_T_TrainPosition_Types_Pck /* _L29/ */ _L29;
   Location_T_Obu_BasicTypes_Pkg /* _L30/ */ _L30;
@@ -40,7 +40,7 @@ typedef struct {
   L_internal_Type_Obu_BasicTypes_Pkg /* _L43/ */ _L43;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L44/ */ _L44;
   kcg_bool /* _L45/ */ _L45;
-  kcg_int64 /* _L46/ */ _L46;
+  kcg_int32 /* _L46/ */ _L46;
 } outC_CommandTripBraking_SDM_Commands_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

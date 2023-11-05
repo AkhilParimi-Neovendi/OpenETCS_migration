@@ -70,18 +70,18 @@ void C_P015_compr_onboard_TM_conversions(
   /* @4/q_dir/ */
   static Q_DIR _22_q_dir_partial_CAST_Int_to_Q_DIR_2;
   static MetadataElement_T_Common_Types_Pkg noname;
-  static kcg_int64 _23_noname;
+  static kcg_int32 _23_noname;
 
-  outC->_L5_CAST_Int_to_NID_PACKET_2 = kcg_lit_int64(0);
+  outC->_L5_CAST_Int_to_NID_PACKET_2 = kcg_lit_int32(0);
   kcg_copy_CompressedPacketData_T_Common_Types_Pkg(&outC->_L93, PacketData);
-  kcg_copy_array_int64_6(&outC->_L125, (array_int64_6 *) &outC->_L93[0]);
+  kcg_copy_array_int32_6(&outC->_L125, (array_int32_6 *) &outC->_L93[0]);
   outC->_L96 = outC->_L125[0];
   outC->nid_packet_int_CAST_Int_to_NID_PACKET_2 = outC->_L96;
   outC->_L1_CAST_Int_to_NID_PACKET_2 =
     outC->nid_packet_int_CAST_Int_to_NID_PACKET_2;
   outC->_L4_CAST_Int_to_NID_PACKET_2 = outC->_L1_CAST_Int_to_NID_PACKET_2 <
     outC->_L5_CAST_Int_to_NID_PACKET_2;
-  outC->_L3_CAST_Int_to_NID_PACKET_2 = kcg_lit_int64(256);
+  outC->_L3_CAST_Int_to_NID_PACKET_2 = kcg_lit_int32(256);
   outC->_L2_CAST_Int_to_NID_PACKET_2 = outC->_L1_CAST_Int_to_NID_PACKET_2 >
     outC->_L3_CAST_Int_to_NID_PACKET_2;
   noname_CAST_Int_to_NID_PACKET_2 = outC->_L2_CAST_Int_to_NID_PACKET_2;
@@ -173,14 +173,14 @@ void C_P015_compr_onboard_TM_conversions(
     }
     outC->q_scale_CAST_Int_to_Q_SCALE_2 = _9_q_scale_partial_CAST_Int_to_Q_SCALE_2;
   }
-  outC->_L11_CAST_Int_to_N_ITER_3 = kcg_lit_int64(0);
+  outC->_L11_CAST_Int_to_N_ITER_3 = kcg_lit_int32(0);
   outC->_L139 = outC->_L93[21];
   outC->n_iter_int_CAST_Int_to_N_ITER_3 = outC->_L139;
   outC->_L1_CAST_Int_to_N_ITER_3 = outC->n_iter_int_CAST_Int_to_N_ITER_3;
   outC->_L10_CAST_Int_to_N_ITER_3 = outC->_L1_CAST_Int_to_N_ITER_3 <
     outC->_L11_CAST_Int_to_N_ITER_3;
   noname_CAST_Int_to_N_ITER_3 = outC->_L10_CAST_Int_to_N_ITER_3;
-  outC->_L9_CAST_Int_to_N_ITER_3 = kcg_lit_int64(31);
+  outC->_L9_CAST_Int_to_N_ITER_3 = kcg_lit_int32(31);
   outC->_L12_CAST_Int_to_N_ITER_3 = outC->_L1_CAST_Int_to_N_ITER_3 >
     outC->_L9_CAST_Int_to_N_ITER_3;
   _12_noname_CAST_Int_to_N_ITER_3 = outC->_L12_CAST_Int_to_N_ITER_3;
@@ -251,7 +251,7 @@ void C_P015_compr_onboard_TM_conversions(
   }
   outC->_L13_CAST_Int_to_Q_DIR_2 = outC->error_CAST_Int_to_Q_DIR_2;
   noname_CAST_Int_to_Q_DIR_2 = outC->_L13_CAST_Int_to_Q_DIR_2;
-  kcg_copy_array_int64_15(&outC->_L138, (array_int64_15 *) &outC->_L93[6]);
+  kcg_copy_array_int32_15(&outC->_L138, (array_int32_15 *) &outC->_L93[6]);
   outC->_L106 = outC->_L138[2];
   /* _L143=(TM_conversions::CAST_Int_to_T_SECTIONTIMER#1)/ */
   CAST_Int_to_T_SECTIONTIMER_TM_conversions(
@@ -259,12 +259,12 @@ void C_P015_compr_onboard_TM_conversions(
     &outC->Context_CAST_Int_to_T_SECTIONTIMER_1);
   outC->_L143 = outC->Context_CAST_Int_to_T_SECTIONTIMER_1.t_sectiontimer;
   outC->_L128 = outC->nid_packet_CAST_Int_to_NID_PACKET_2;
-  outC->_L124 = kcg_lit_int64(15);
+  outC->_L124 = kcg_lit_int32(15);
   outC->_L132 = outC->_L124 == outC->_L128;
   outC->nid_packet_ok = outC->_L132;
   outC->_L140 = outC->nid_packet_ok;
   outC->_L135 = outC->n_iter_CAST_Int_to_N_ITER_3;
-  kcg_copy_array_int64_128(&outC->_L120, (array_int64_128 *) &outC->_L93[22]);
+  kcg_copy_array_int32_128(&outC->_L120, (array_int32_128 *) &outC->_L93[22]);
   /* _L102=(TM_lib_internal::C_P015_unflatten_sections#1)/ */
   C_P015_unflatten_sections_TM_lib_internal(
     outC->_L140,
@@ -420,123 +420,123 @@ void C_P015_compr_onboard_init_TM_conversions(
   static kcg_size idx7;
   static kcg_size idx8;
 
-  outC->_L143 = kcg_lit_int64(0);
-  outC->_L142 = kcg_lit_int64(0);
+  outC->_L143 = kcg_lit_int32(0);
+  outC->_L142 = kcg_lit_int32(0);
   for (idx = 0; idx < 32; idx++) {
     outC->_L141[idx].valid = kcg_true;
-    outC->_L141[idx].l_section = kcg_lit_int64(0);
+    outC->_L141[idx].l_section = kcg_lit_int32(0);
     outC->_L141[idx].q_sectiontimer = Q_SECTIONTIMER_No_Section_Timer_information;
-    outC->_L141[idx].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L141[idx].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L141[idx].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L141[idx].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
   outC->_L140 = kcg_true;
-  outC->_L89.nid_packet = kcg_lit_int64(0);
+  outC->_L89.nid_packet = kcg_lit_int32(0);
   outC->_L89.q_dir = Q_DIR_Reverse;
   outC->_L89.valid = kcg_true;
-  outC->_L89.startAddress = kcg_lit_int64(0);
-  outC->_L89.endAddress = kcg_lit_int64(0);
-  outC->_L90 = kcg_lit_int64(0);
-  outC->_L91 = kcg_lit_int64(0);
-  outC->_L92 = kcg_lit_int64(0);
+  outC->_L89.startAddress = kcg_lit_int32(0);
+  outC->_L89.endAddress = kcg_lit_int32(0);
+  outC->_L90 = kcg_lit_int32(0);
+  outC->_L91 = kcg_lit_int32(0);
+  outC->_L92 = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 500; idx1++) {
-    outC->_L93[idx1] = kcg_lit_int64(0);
+    outC->_L93[idx1] = kcg_lit_int32(0);
   }
-  outC->_L94 = kcg_lit_int64(0);
-  outC->_L95 = kcg_lit_int64(0);
-  outC->_L101 = kcg_lit_int64(0);
-  outC->_L100 = kcg_lit_int64(0);
-  outC->_L99 = kcg_lit_int64(0);
-  outC->_L98 = kcg_lit_int64(0);
-  outC->_L97 = kcg_lit_int64(0);
-  outC->_L96 = kcg_lit_int64(0);
+  outC->_L94 = kcg_lit_int32(0);
+  outC->_L95 = kcg_lit_int32(0);
+  outC->_L101 = kcg_lit_int32(0);
+  outC->_L100 = kcg_lit_int32(0);
+  outC->_L99 = kcg_lit_int32(0);
+  outC->_L98 = kcg_lit_int32(0);
+  outC->_L97 = kcg_lit_int32(0);
+  outC->_L96 = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 32; idx2++) {
     outC->_L102[idx2].valid = kcg_true;
-    outC->_L102[idx2].l_section = kcg_lit_int64(0);
+    outC->_L102[idx2].l_section = kcg_lit_int32(0);
     outC->_L102[idx2].q_sectiontimer = Q_SECTIONTIMER_No_Section_Timer_information;
-    outC->_L102[idx2].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L102[idx2].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L102[idx2].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L102[idx2].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
   outC->_L103 = Q_OVERLAP_No_overlap_information;
-  outC->_L117 = kcg_lit_int64(0);
-  outC->_L116 = kcg_lit_int64(0);
-  outC->_L115 = kcg_lit_int64(0);
-  outC->_L114 = kcg_lit_int64(0);
-  outC->_L113 = kcg_lit_int64(0);
-  outC->_L112 = kcg_lit_int64(0);
-  outC->_L111 = kcg_lit_int64(0);
-  outC->_L110 = kcg_lit_int64(0);
-  outC->_L109 = kcg_lit_int64(0);
-  outC->_L108 = kcg_lit_int64(0);
-  outC->_L107 = kcg_lit_int64(0);
-  outC->_L106 = kcg_lit_int64(0);
-  outC->_L105 = kcg_lit_int64(0);
-  outC->_L104 = kcg_lit_int64(0);
+  outC->_L117 = kcg_lit_int32(0);
+  outC->_L116 = kcg_lit_int32(0);
+  outC->_L115 = kcg_lit_int32(0);
+  outC->_L114 = kcg_lit_int32(0);
+  outC->_L113 = kcg_lit_int32(0);
+  outC->_L112 = kcg_lit_int32(0);
+  outC->_L111 = kcg_lit_int32(0);
+  outC->_L110 = kcg_lit_int32(0);
+  outC->_L109 = kcg_lit_int32(0);
+  outC->_L108 = kcg_lit_int32(0);
+  outC->_L107 = kcg_lit_int32(0);
+  outC->_L106 = kcg_lit_int32(0);
+  outC->_L105 = kcg_lit_int32(0);
+  outC->_L104 = kcg_lit_int32(0);
   outC->_L118 = Q_SECTIONTIMER_No_Section_Timer_information;
   outC->_L119 = Q_DANGERPOINT_No_danger_point_information;
   for (idx3 = 0; idx3 < 128; idx3++) {
-    outC->_L120[idx3] = kcg_lit_int64(0);
+    outC->_L120[idx3] = kcg_lit_int32(0);
   }
-  outC->_L121 = kcg_lit_int64(0);
+  outC->_L121 = kcg_lit_int32(0);
   outC->_L122.valid = kcg_true;
   outC->_L122.q_dir = Q_DIR_Reverse;
   outC->_L122.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L122.v_loa = kcg_lit_int64(0);
-  outC->_L122.t_loa = kcg_lit_int64(0);
-  outC->_L122.n_iter = kcg_lit_int64(0);
+  outC->_L122.v_loa = kcg_lit_int32(0);
+  outC->_L122.t_loa = kcg_lit_int32(0);
+  outC->_L122.n_iter = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 32; idx4++) {
     outC->_L122.sections[idx4].valid = kcg_true;
-    outC->_L122.sections[idx4].l_section = kcg_lit_int64(0);
+    outC->_L122.sections[idx4].l_section = kcg_lit_int32(0);
     outC->_L122.sections[idx4].q_sectiontimer =
       Q_SECTIONTIMER_No_Section_Timer_information;
-    outC->_L122.sections[idx4].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L122.sections[idx4].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L122.sections[idx4].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L122.sections[idx4].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
-  outC->_L122.l_endsection = kcg_lit_int64(0);
+  outC->_L122.l_endsection = kcg_lit_int32(0);
   outC->_L122.q_sectiontimer = Q_SECTIONTIMER_No_Section_Timer_information;
-  outC->_L122.t_sectiontimer = kcg_lit_int64(0);
-  outC->_L122.d_sectiontimerstoploc = kcg_lit_int64(0);
+  outC->_L122.t_sectiontimer = kcg_lit_int32(0);
+  outC->_L122.d_sectiontimerstoploc = kcg_lit_int32(0);
   outC->_L122.q_endtimer = Q_ENDTIMER_No_End_section_timer_information;
-  outC->_L122.t_endtimer = kcg_lit_int64(0);
-  outC->_L122.d_endtimerstartloc = kcg_lit_int64(0);
+  outC->_L122.t_endtimer = kcg_lit_int32(0);
+  outC->_L122.d_endtimerstartloc = kcg_lit_int32(0);
   outC->_L122.q_dangerpoint = Q_DANGERPOINT_No_danger_point_information;
-  outC->_L122.d_dp = kcg_lit_int64(0);
-  outC->_L122.v_releasedp = kcg_lit_int64(0);
+  outC->_L122.d_dp = kcg_lit_int32(0);
+  outC->_L122.v_releasedp = kcg_lit_int32(0);
   outC->_L122.q_overlap = Q_OVERLAP_No_overlap_information;
-  outC->_L122.d_startol = kcg_lit_int64(0);
-  outC->_L122.t_ol = kcg_lit_int64(0);
-  outC->_L122.d_ol = kcg_lit_int64(0);
-  outC->_L122.v_releaseol = kcg_lit_int64(0);
-  outC->_L123 = kcg_lit_int64(0);
-  outC->_L124 = kcg_lit_int64(0);
+  outC->_L122.d_startol = kcg_lit_int32(0);
+  outC->_L122.t_ol = kcg_lit_int32(0);
+  outC->_L122.d_ol = kcg_lit_int32(0);
+  outC->_L122.v_releaseol = kcg_lit_int32(0);
+  outC->_L123 = kcg_lit_int32(0);
+  outC->_L124 = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 6; idx5++) {
-    outC->_L125[idx5] = kcg_lit_int64(0);
+    outC->_L125[idx5] = kcg_lit_int32(0);
   }
   outC->_L126 = Q_ENDTIMER_No_End_section_timer_information;
-  outC->_L127 = kcg_lit_int64(0);
-  outC->_L128 = kcg_lit_int64(0);
-  outC->_L129 = kcg_lit_int64(0);
+  outC->_L127 = kcg_lit_int32(0);
+  outC->_L128 = kcg_lit_int32(0);
+  outC->_L129 = kcg_lit_int32(0);
   outC->_L130 = Q_SCALE_10_cm_scale;
-  outC->_L131 = kcg_lit_int64(0);
+  outC->_L131 = kcg_lit_int32(0);
   outC->_L132 = kcg_true;
-  outC->_L133 = kcg_lit_int64(0);
-  outC->_L134 = kcg_lit_int64(0);
-  outC->_L135 = kcg_lit_int64(0);
+  outC->_L133 = kcg_lit_int32(0);
+  outC->_L134 = kcg_lit_int32(0);
+  outC->_L135 = kcg_lit_int32(0);
   outC->_L136 = Q_DIR_Reverse;
-  outC->_L137 = kcg_lit_int64(0);
+  outC->_L137 = kcg_lit_int32(0);
   for (idx6 = 0; idx6 < 15; idx6++) {
-    outC->_L138[idx6] = kcg_lit_int64(0);
+    outC->_L138[idx6] = kcg_lit_int32(0);
   }
-  outC->_L139 = kcg_lit_int64(0);
+  outC->_L139 = kcg_lit_int32(0);
   for (idx7 = 0; idx7 < 32; idx7++) {
     outC->sections[idx7].valid = kcg_true;
-    outC->sections[idx7].l_section = kcg_lit_int64(0);
+    outC->sections[idx7].l_section = kcg_lit_int32(0);
     outC->sections[idx7].q_sectiontimer =
       Q_SECTIONTIMER_No_Section_Timer_information;
-    outC->sections[idx7].t_sectiontimer = kcg_lit_int64(0);
-    outC->sections[idx7].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->sections[idx7].t_sectiontimer = kcg_lit_int32(0);
+    outC->sections[idx7].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
   outC->nid_packet_ok = kcg_true;
-  outC->n_iter = kcg_lit_int64(0);
+  outC->n_iter = kcg_lit_int32(0);
   outC->_L5_CAST_Int_to_Q_DIR_2_then_IfBlock1 = kcg_true;
   outC->_L4_CAST_Int_to_Q_DIR_2_then_IfBlock1 = Q_DIR_Reverse;
   outC->else_clock_CAST_Int_to_Q_DIR_2_IfBlock1 = kcg_true;
@@ -549,18 +549,18 @@ void C_P015_compr_onboard_init_TM_conversions(
   outC->_L5_CAST_Int_to_Q_DIR_2_then_else_IfBlock1 = kcg_true;
   outC->IfBlock1_clock_CAST_Int_to_Q_DIR_2 = kcg_true;
   outC->error_CAST_Int_to_Q_DIR_2 = kcg_true;
-  outC->q_dir_in_CAST_Int_to_Q_DIR_2 = kcg_lit_int64(0);
+  outC->q_dir_in_CAST_Int_to_Q_DIR_2 = kcg_lit_int32(0);
   outC->_L13_CAST_Int_to_Q_DIR_2 = kcg_true;
-  outC->_L12_CAST_Int_to_Q_DIR_2 = kcg_lit_int64(0);
-  outC->q_dir_int_CAST_Int_to_Q_DIR_2 = kcg_lit_int64(0);
+  outC->_L12_CAST_Int_to_Q_DIR_2 = kcg_lit_int32(0);
+  outC->q_dir_int_CAST_Int_to_Q_DIR_2 = kcg_lit_int32(0);
   outC->q_dir_CAST_Int_to_Q_DIR_2 = Q_DIR_Reverse;
-  outC->_L1_CAST_Int_to_N_ITER_3 = kcg_lit_int64(0);
+  outC->_L1_CAST_Int_to_N_ITER_3 = kcg_lit_int32(0);
   outC->_L12_CAST_Int_to_N_ITER_3 = kcg_true;
-  outC->_L11_CAST_Int_to_N_ITER_3 = kcg_lit_int64(0);
+  outC->_L11_CAST_Int_to_N_ITER_3 = kcg_lit_int32(0);
   outC->_L10_CAST_Int_to_N_ITER_3 = kcg_true;
-  outC->_L9_CAST_Int_to_N_ITER_3 = kcg_lit_int64(0);
-  outC->n_iter_int_CAST_Int_to_N_ITER_3 = kcg_lit_int64(0);
-  outC->n_iter_CAST_Int_to_N_ITER_3 = kcg_lit_int64(0);
+  outC->_L9_CAST_Int_to_N_ITER_3 = kcg_lit_int32(0);
+  outC->n_iter_int_CAST_Int_to_N_ITER_3 = kcg_lit_int32(0);
+  outC->n_iter_CAST_Int_to_N_ITER_3 = kcg_lit_int32(0);
   outC->_L3_CAST_Int_to_Q_SCALE_2_then_IfBlock1 = kcg_true;
   outC->_L2_CAST_Int_to_Q_SCALE_2_then_IfBlock1 = Q_SCALE_10_cm_scale;
   outC->else_clock_CAST_Int_to_Q_SCALE_2_IfBlock1 = kcg_true;
@@ -572,48 +572,48 @@ void C_P015_compr_onboard_init_TM_conversions(
   outC->_L1_CAST_Int_to_Q_SCALE_2_then_else_IfBlock1 = Q_SCALE_10_cm_scale;
   outC->_L3_CAST_Int_to_Q_SCALE_2_then_else_IfBlock1 = kcg_true;
   outC->IfBlock1_clock_CAST_Int_to_Q_SCALE_2 = kcg_true;
-  outC->q_scale_in_CAST_Int_to_Q_SCALE_2 = kcg_lit_int64(0);
+  outC->q_scale_in_CAST_Int_to_Q_SCALE_2 = kcg_lit_int32(0);
   outC->error_CAST_Int_to_Q_SCALE_2 = kcg_true;
-  outC->_L2_CAST_Int_to_Q_SCALE_2 = kcg_lit_int64(0);
+  outC->_L2_CAST_Int_to_Q_SCALE_2 = kcg_lit_int32(0);
   outC->_L4_CAST_Int_to_Q_SCALE_2 = kcg_true;
-  outC->q_scale_int_CAST_Int_to_Q_SCALE_2 = kcg_lit_int64(0);
+  outC->q_scale_int_CAST_Int_to_Q_SCALE_2 = kcg_lit_int32(0);
   outC->q_scale_CAST_Int_to_Q_SCALE_2 = Q_SCALE_10_cm_scale;
-  outC->_L1_CAST_Int_to_NID_PACKET_2 = kcg_lit_int64(0);
-  outC->_L5_CAST_Int_to_NID_PACKET_2 = kcg_lit_int64(0);
+  outC->_L1_CAST_Int_to_NID_PACKET_2 = kcg_lit_int32(0);
+  outC->_L5_CAST_Int_to_NID_PACKET_2 = kcg_lit_int32(0);
   outC->_L4_CAST_Int_to_NID_PACKET_2 = kcg_true;
-  outC->_L3_CAST_Int_to_NID_PACKET_2 = kcg_lit_int64(0);
+  outC->_L3_CAST_Int_to_NID_PACKET_2 = kcg_lit_int32(0);
   outC->_L2_CAST_Int_to_NID_PACKET_2 = kcg_true;
-  outC->nid_packet_int_CAST_Int_to_NID_PACKET_2 = kcg_lit_int64(0);
-  outC->nid_packet_CAST_Int_to_NID_PACKET_2 = kcg_lit_int64(0);
+  outC->nid_packet_int_CAST_Int_to_NID_PACKET_2 = kcg_lit_int32(0);
+  outC->nid_packet_CAST_Int_to_NID_PACKET_2 = kcg_lit_int32(0);
   outC->P015_onboard.valid = kcg_true;
   outC->P015_onboard.q_dir = Q_DIR_Reverse;
   outC->P015_onboard.q_scale = Q_SCALE_10_cm_scale;
-  outC->P015_onboard.v_loa = kcg_lit_int64(0);
-  outC->P015_onboard.t_loa = kcg_lit_int64(0);
-  outC->P015_onboard.n_iter = kcg_lit_int64(0);
+  outC->P015_onboard.v_loa = kcg_lit_int32(0);
+  outC->P015_onboard.t_loa = kcg_lit_int32(0);
+  outC->P015_onboard.n_iter = kcg_lit_int32(0);
   for (idx8 = 0; idx8 < 32; idx8++) {
     outC->P015_onboard.sections[idx8].valid = kcg_true;
-    outC->P015_onboard.sections[idx8].l_section = kcg_lit_int64(0);
+    outC->P015_onboard.sections[idx8].l_section = kcg_lit_int32(0);
     outC->P015_onboard.sections[idx8].q_sectiontimer =
       Q_SECTIONTIMER_No_Section_Timer_information;
-    outC->P015_onboard.sections[idx8].t_sectiontimer = kcg_lit_int64(0);
-    outC->P015_onboard.sections[idx8].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->P015_onboard.sections[idx8].t_sectiontimer = kcg_lit_int32(0);
+    outC->P015_onboard.sections[idx8].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
-  outC->P015_onboard.l_endsection = kcg_lit_int64(0);
+  outC->P015_onboard.l_endsection = kcg_lit_int32(0);
   outC->P015_onboard.q_sectiontimer = Q_SECTIONTIMER_No_Section_Timer_information;
-  outC->P015_onboard.t_sectiontimer = kcg_lit_int64(0);
-  outC->P015_onboard.d_sectiontimerstoploc = kcg_lit_int64(0);
+  outC->P015_onboard.t_sectiontimer = kcg_lit_int32(0);
+  outC->P015_onboard.d_sectiontimerstoploc = kcg_lit_int32(0);
   outC->P015_onboard.q_endtimer = Q_ENDTIMER_No_End_section_timer_information;
-  outC->P015_onboard.t_endtimer = kcg_lit_int64(0);
-  outC->P015_onboard.d_endtimerstartloc = kcg_lit_int64(0);
+  outC->P015_onboard.t_endtimer = kcg_lit_int32(0);
+  outC->P015_onboard.d_endtimerstartloc = kcg_lit_int32(0);
   outC->P015_onboard.q_dangerpoint = Q_DANGERPOINT_No_danger_point_information;
-  outC->P015_onboard.d_dp = kcg_lit_int64(0);
-  outC->P015_onboard.v_releasedp = kcg_lit_int64(0);
+  outC->P015_onboard.d_dp = kcg_lit_int32(0);
+  outC->P015_onboard.v_releasedp = kcg_lit_int32(0);
   outC->P015_onboard.q_overlap = Q_OVERLAP_No_overlap_information;
-  outC->P015_onboard.d_startol = kcg_lit_int64(0);
-  outC->P015_onboard.t_ol = kcg_lit_int64(0);
-  outC->P015_onboard.d_ol = kcg_lit_int64(0);
-  outC->P015_onboard.v_releaseol = kcg_lit_int64(0);
+  outC->P015_onboard.d_startol = kcg_lit_int32(0);
+  outC->P015_onboard.t_ol = kcg_lit_int32(0);
+  outC->P015_onboard.d_ol = kcg_lit_int32(0);
+  outC->P015_onboard.v_releaseol = kcg_lit_int32(0);
   /* _L91=(TM_conversions::CAST_Int_to_D_OL#2)/ */
   CAST_Int_to_D_OL_init_TM_conversions(&outC->Context_CAST_Int_to_D_OL_2);
   /* _L103=(TM_conversions::CAST_Int_to_Q_OVERLAP#2)/ */

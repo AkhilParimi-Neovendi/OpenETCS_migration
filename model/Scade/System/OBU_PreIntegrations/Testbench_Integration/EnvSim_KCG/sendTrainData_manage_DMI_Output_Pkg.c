@@ -50,19 +50,19 @@ void sendTrainData_init_manage_DMI_Output_Pkg(
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L13 = M_AIRTIGHT_Not_fitted;
   outC->_L12 = M_AXLELOADCAT_A;
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
   outC->_L8 =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->_L7 = kcg_true;
   outC->_L6.valid = kcg_true;
-  outC->_L6.systemTime = kcg_lit_int64(0);
+  outC->_L6.systemTime = kcg_lit_int32(0);
   outC->_L6.trainCategory =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->_L6.l_train = kcg_lit_int64(0);
-  outC->_L6.m_brakeperct = kcg_lit_int64(0);
-  outC->_L6.v_maxTrain = kcg_lit_int64(0);
+  outC->_L6.l_train = kcg_lit_int32(0);
+  outC->_L6.m_brakeperct = kcg_lit_int32(0);
+  outC->_L6.v_maxTrain = kcg_lit_int32(0);
   outC->_L6.m_axleLoad = M_AXLELOADCAT_A;
   outC->_L6.m_airTight = M_AIRTIGHT_Not_fitted;
   outC->_L6.m_loadingGauge =
@@ -72,32 +72,32 @@ void sendTrainData_init_manage_DMI_Output_Pkg(
   outC->_L5.trainCategory =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->_L5.cantDeficientcy = NC_CDTRAIN_Cant_Deficiency_80_mm;
-  outC->_L5.trainLength = kcg_lit_int64(0);
-  outC->_L5.brakePerctage = kcg_lit_int64(0);
-  outC->_L5.maxTrainSpeed = kcg_lit_int64(0);
+  outC->_L5.trainLength = kcg_lit_int32(0);
+  outC->_L5.brakePerctage = kcg_lit_int32(0);
+  outC->_L5.maxTrainSpeed = kcg_lit_int32(0);
   outC->_L5.loadingGauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L5.axleLoadCategory = M_AXLELOADCAT_A;
   outC->_L5.airtightSystem = M_AIRTIGHT_Not_fitted;
-  outC->_L5.axleNumber = kcg_lit_int64(0);
-  outC->_L5.numberNationalSystems = kcg_lit_int64(0);
+  outC->_L5.axleNumber = kcg_lit_int32(0);
+  outC->_L5.numberNationalSystems = kcg_lit_int32(0);
   for (idx = 0; idx < 5; idx++) {
-    outC->_L5.nationSystems[idx] = kcg_lit_int64(0);
+    outC->_L5.nationSystems[idx] = kcg_lit_int32(0);
   }
-  outC->_L5.numberTractionSystems = kcg_lit_int64(0);
+  outC->_L5.numberTractionSystems = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 4; idx1++) {
     outC->_L5.tractionSystem[idx1].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->_L5.tractionSystem[idx1].nid_ctraction = kcg_lit_int64(0);
+    outC->_L5.tractionSystem[idx1].nid_ctraction = kcg_lit_int32(0);
   }
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->trainData_ForDMI.valid = kcg_true;
-  outC->trainData_ForDMI.systemTime = kcg_lit_int64(0);
+  outC->trainData_ForDMI.systemTime = kcg_lit_int32(0);
   outC->trainData_ForDMI.trainCategory =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->trainData_ForDMI.l_train = kcg_lit_int64(0);
-  outC->trainData_ForDMI.m_brakeperct = kcg_lit_int64(0);
-  outC->trainData_ForDMI.v_maxTrain = kcg_lit_int64(0);
+  outC->trainData_ForDMI.l_train = kcg_lit_int32(0);
+  outC->trainData_ForDMI.m_brakeperct = kcg_lit_int32(0);
+  outC->trainData_ForDMI.v_maxTrain = kcg_lit_int32(0);
   outC->trainData_ForDMI.m_axleLoad = M_AXLELOADCAT_A;
   outC->trainData_ForDMI.m_airTight = M_AIRTIGHT_Not_fitted;
   outC->trainData_ForDMI.m_loadingGauge =

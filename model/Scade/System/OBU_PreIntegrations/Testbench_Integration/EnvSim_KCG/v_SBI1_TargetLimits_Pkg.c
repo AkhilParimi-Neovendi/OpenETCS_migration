@@ -73,7 +73,7 @@ void v_SBI1_TargetLimits_Pkg(
   }
   else {
     outC->_L4 = kcg_false;
-    outC->_L5 = kcg_lit_float64(0.0);
+    outC->_L5 = kcg_lit_float32(0.0);
   }
   if (outC->every) {
     outC->_L19 = _3_op_call;
@@ -81,7 +81,7 @@ void v_SBI1_TargetLimits_Pkg(
   }
   else {
     outC->_L19 = kcg_false;
-    outC->_L20 = kcg_lit_float64(0.0);
+    outC->_L20 = kcg_lit_float32(0.0);
   }
   /* _L16=(TargetLimits_Pkg::selectLEValid#1)/ */
   selectLEValid_TargetLimits_Pkg(
@@ -110,58 +110,58 @@ void v_SBI1_init_TargetLimits_Pkg(outC_v_SBI1_TargetLimits_Pkg *outC)
   static kcg_size idx6;
   static kcg_size idx7;
 
-  outC->_L23 = kcg_lit_float64(0.0);
+  outC->_L23 = kcg_lit_float32(0.0);
   for (idx = 0; idx < 114; idx++) {
-    outC->_L22.distances[idx] = kcg_lit_float64(0.0);
+    outC->_L22.distances[idx] = kcg_lit_float32(0.0);
   }
   for (idx1 = 0; idx1 < 114; idx1++) {
-    outC->_L22.speeds[idx1] = kcg_lit_float64(0.0);
+    outC->_L22.speeds[idx1] = kcg_lit_float32(0.0);
   }
   for (idx2 = 0; idx2 < 114; idx2++) {
-    outC->_L22.accelerations[idx2] = kcg_lit_float64(0.0);
+    outC->_L22.accelerations[idx2] = kcg_lit_float32(0.0);
   }
   for (idx3 = 0; idx3 < 114; idx3++) {
     outC->_L22.valid[idx3] = kcg_true;
   }
   outC->_L21 = kcg_true;
-  outC->_L20 = kcg_lit_float64(0.0);
+  outC->_L20 = kcg_lit_float32(0.0);
   outC->_L19 = kcg_true;
   outC->_L16 = kcg_true;
   outC->_L17 = kcg_true;
-  outC->_L18 = kcg_lit_float64(0.0);
-  outC->_L15 = kcg_lit_float64(0.0);
-  outC->_L14 = kcg_lit_float64(0.0);
-  outC->_L13 = kcg_lit_float64(0.0);
+  outC->_L18 = kcg_lit_float32(0.0);
+  outC->_L15 = kcg_lit_float32(0.0);
+  outC->_L14 = kcg_lit_float32(0.0);
+  outC->_L13 = kcg_lit_float32(0.0);
   outC->_L4 = kcg_true;
-  outC->_L5 = kcg_lit_float64(0.0);
+  outC->_L5 = kcg_lit_float32(0.0);
   outC->_L12 = kcg_true;
-  outC->_L9 = kcg_lit_float64(0.0);
-  outC->_L8 = kcg_lit_float64(0.0);
-  outC->_L7 = kcg_lit_float64(0.0);
+  outC->_L9 = kcg_lit_float32(0.0);
+  outC->_L8 = kcg_lit_float32(0.0);
+  outC->_L7 = kcg_lit_float32(0.0);
   for (idx4 = 0; idx4 < 114; idx4++) {
-    outC->_L6.distances[idx4] = kcg_lit_float64(0.0);
+    outC->_L6.distances[idx4] = kcg_lit_float32(0.0);
   }
   for (idx5 = 0; idx5 < 114; idx5++) {
-    outC->_L6.speeds[idx5] = kcg_lit_float64(0.0);
+    outC->_L6.speeds[idx5] = kcg_lit_float32(0.0);
   }
   for (idx6 = 0; idx6 < 114; idx6++) {
-    outC->_L6.accelerations[idx6] = kcg_lit_float64(0.0);
+    outC->_L6.accelerations[idx6] = kcg_lit_float32(0.0);
   }
   for (idx7 = 0; idx7 < 114; idx7++) {
     outC->_L6.valid[idx7] = kcg_true;
   }
-  outC->_L3.Traction = kcg_lit_float64(0.0);
-  outC->_L3.berem = kcg_lit_float64(0.0);
-  outC->_L3.bs = kcg_lit_float64(0.0);
-  outC->_L3.bs1 = kcg_lit_float64(0.0);
-  outC->_L3.bs2 = kcg_lit_float64(0.0);
+  outC->_L3.Traction = kcg_lit_float32(0.0);
+  outC->_L3.berem = kcg_lit_float32(0.0);
+  outC->_L3.bs = kcg_lit_float32(0.0);
+  outC->_L3.bs1 = kcg_lit_float32(0.0);
+  outC->_L3.bs2 = kcg_lit_float32(0.0);
   outC->_L3.inhComp = kcg_true;
-  outC->_L3.indication = kcg_lit_float64(0.0);
-  outC->_L2 = kcg_lit_float64(0.0);
-  outC->_L1 = kcg_lit_float64(0.0);
+  outC->_L3.indication = kcg_lit_float32(0.0);
+  outC->_L2 = kcg_lit_float32(0.0);
+  outC->_L1 = kcg_lit_float32(0.0);
   outC->every1 = kcg_true;
   outC->every = kcg_true;
-  outC->V_SBI1 = kcg_lit_float64(0.0);
+  outC->V_SBI1 = kcg_lit_float32(0.0);
   outC->valid = kcg_true;
   /* _L16=(TargetLimits_Pkg::selectLEValid#1)/ */
   selectLEValid_init_TargetLimits_Pkg(&outC->Context_selectLEValid_1);

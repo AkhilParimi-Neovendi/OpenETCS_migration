@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,7 +10,7 @@
 /* TM_conversions::CAST_Int_to_M_NVCONTACT/ */
 void CAST_Int_to_M_NVCONTACT_TM_conversions(
   /* int_in/ */
-  kcg_int64 int_in,
+  kcg_int32 int_in,
   outC_CAST_Int_to_M_NVCONTACT_TM_conversions *outC)
 {
   /* m_nvcontact/ */
@@ -114,9 +114,9 @@ void CAST_Int_to_M_NVCONTACT_init_TM_conversions(
   outC_CAST_Int_to_M_NVCONTACT_TM_conversions *outC)
 {
   outC->_L3 = kcg_true;
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
   outC->error = kcg_true;
-  outC->m_nvcontact_in = kcg_lit_int64(0);
+  outC->m_nvcontact_in = kcg_lit_int32(0);
   outC->IfBlock1_clock = kcg_true;
   outC->_L4_then_else_IfBlock1 = kcg_true;
   outC->_L3_then_else_IfBlock1 = M_NVCONTACT_Train_trip;
@@ -144,6 +144,6 @@ void CAST_Int_to_M_NVCONTACT_reset_TM_conversions(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_Int_to_M_NVCONTACT_TM_conversions.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

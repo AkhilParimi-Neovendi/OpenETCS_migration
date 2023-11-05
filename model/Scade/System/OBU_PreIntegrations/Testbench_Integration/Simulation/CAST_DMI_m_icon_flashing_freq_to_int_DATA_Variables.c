@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,13 +10,13 @@
 /* DATA::Variables::CAST_DMI_m_icon_flashing_freq_to_int/ */
 void CAST_DMI_m_icon_flashing_freq_to_int_DATA_Variables(
   /* dmi_m_icon_flashing_freq_ct/ */
-  kcg_float64 dmi_m_icon_flashing_freq_ct,
+  kcg_float32 dmi_m_icon_flashing_freq_ct,
   outC_CAST_DMI_m_icon_flashing_freq_to_int_DATA_Variables *outC)
 {
-  outC->_L6 = kcg_lit_int64(22);
-  outC->_L5 = kcg_lit_float64(0.1);
-  outC->_L4 = kcg_lit_float64(1.0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L6 = kcg_lit_int32(22);
+  outC->_L5 = kcg_lit_float32(0.1);
+  outC->_L4 = kcg_lit_float32(1.0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L1 = dmi_m_icon_flashing_freq_ct;
   /* _L2=(Utilities::Real_to_Int#1)/ */
   Real_to_Int_Utilities(
@@ -34,13 +34,13 @@ void CAST_DMI_m_icon_flashing_freq_to_int_DATA_Variables(
 void CAST_DMI_m_icon_flashing_freq_to_int_init_DATA_Variables(
   outC_CAST_DMI_m_icon_flashing_freq_to_int_DATA_Variables *outC)
 {
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_float64(0.0);
-  outC->_L4 = kcg_lit_float64(0.0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_float64(0.0);
-  outC->dmi_m_icon_flashing_freq_int = kcg_lit_int64(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_float32(0.0);
+  outC->_L4 = kcg_lit_float32(0.0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_float32(0.0);
+  outC->dmi_m_icon_flashing_freq_int = kcg_lit_int32(0);
   /* _L2=(Utilities::Real_to_Int#1)/ */
   Real_to_Int_init_Utilities(&outC->Context_Real_to_Int_1);
 }
@@ -60,6 +60,6 @@ void CAST_DMI_m_icon_flashing_freq_to_int_reset_DATA_Variables(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_DMI_m_icon_flashing_freq_to_int_DATA_Variables.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

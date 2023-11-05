@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -17,7 +17,7 @@ void Read_P046_TM(
   /* _L5=(TM_lib_internal::RECV_ReadPackets#1)/ */
   RECV_ReadPackets_TM_lib_internal(
     &outC->_L6,
-    kcg_lit_int64(46032000),
+    kcg_lit_int32(46032000),
     kcg_false,
     kcg_false,
     &outC->Context_RECV_ReadPackets_1);
@@ -52,37 +52,37 @@ void Read_P046_init_TM(outC_Read_P046_TM *outC)
   outC->_L167 = kcg_true;
   outC->_L166.valid = kcg_true;
   outC->_L166.q_dir = Q_DIR_Reverse;
-  outC->_L166.n_iter = kcg_lit_int64(0);
+  outC->_L166.n_iter = kcg_lit_int32(0);
   for (idx = 0; idx < 33; idx++) {
     outC->_L166.sections[idx].valid = kcg_true;
     outC->_L166.sections[idx].m_leveltr = M_LEVELTR_Level_0;
-    outC->_L166.sections[idx].nid_ntc = kcg_lit_int64(0);
+    outC->_L166.sections[idx].nid_ntc = kcg_lit_int32(0);
   }
-  outC->_L30.nid_packet = kcg_lit_int64(0);
+  outC->_L30.nid_packet = kcg_lit_int32(0);
   outC->_L30.q_dir = Q_DIR_Reverse;
   outC->_L30.valid = kcg_true;
-  outC->_L30.startAddress = kcg_lit_int64(0);
-  outC->_L30.endAddress = kcg_lit_int64(0);
+  outC->_L30.startAddress = kcg_lit_int32(0);
+  outC->_L30.endAddress = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 30; idx1++) {
-    outC->_L6.PacketHeaders[idx1].nid_packet = kcg_lit_int64(0);
+    outC->_L6.PacketHeaders[idx1].nid_packet = kcg_lit_int32(0);
     outC->_L6.PacketHeaders[idx1].q_dir = Q_DIR_Reverse;
     outC->_L6.PacketHeaders[idx1].valid = kcg_true;
-    outC->_L6.PacketHeaders[idx1].startAddress = kcg_lit_int64(0);
-    outC->_L6.PacketHeaders[idx1].endAddress = kcg_lit_int64(0);
+    outC->_L6.PacketHeaders[idx1].startAddress = kcg_lit_int32(0);
+    outC->_L6.PacketHeaders[idx1].endAddress = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 500; idx2++) {
-    outC->_L6.PacketData[idx2] = kcg_lit_int64(0);
+    outC->_L6.PacketData[idx2] = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 500; idx3++) {
-    outC->_L5[idx3] = kcg_lit_int64(0);
+    outC->_L5[idx3] = kcg_lit_int32(0);
   }
   outC->P046_OBU_out.valid = kcg_true;
   outC->P046_OBU_out.q_dir = Q_DIR_Reverse;
-  outC->P046_OBU_out.n_iter = kcg_lit_int64(0);
+  outC->P046_OBU_out.n_iter = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 33; idx4++) {
     outC->P046_OBU_out.sections[idx4].valid = kcg_true;
     outC->P046_OBU_out.sections[idx4].m_leveltr = M_LEVELTR_Level_0;
-    outC->P046_OBU_out.sections[idx4].nid_ntc = kcg_lit_int64(0);
+    outC->P046_OBU_out.sections[idx4].nid_ntc = kcg_lit_int32(0);
   }
   outC->received = kcg_true;
   /* _L166=(TM_conversions::C_P046_compr_onboard#1)/ */
@@ -109,6 +109,6 @@ void Read_P046_reset_TM(outC_Read_P046_TM *outC)
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Read_P046_TM.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

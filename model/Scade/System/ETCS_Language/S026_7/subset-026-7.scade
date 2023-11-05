@@ -20,83 +20,83 @@ THEREFORE, NO LIABILITY WILL BE GIVEN FOR SUCH AND ANY OTHER KIND OF USE.
 
 Changelog:
 2015-10-12 T_TRAIN real -> int
-2023-05-15 Scade 6.4 to Scade 6.5 migration: real -> float64 ad int -> int64
+2023-05-15 Scade 6.4 to Scade 6.5 migration: real -> float32 ad int -> int32
 */
 
-type A_NVMAXREDADH1 = float64	 /* MinVal = 0.0, MaxVal = 3.15 */  ; 
-type A_NVMAXREDADH2 = float64	 /* MinVal = 0.0, MaxVal = 3.15 */  ; 
-type A_NVMAXREDADH3 = float64	 /* MinVal = 0.0, MaxVal = 3.15 */  ; 
-type A_NVP12 = float64	 /* MinVal = 0.0, MaxVal = 3.15 */  ; 
-type A_NVP23 = float64	 /* MinVal = 0.0, MaxVal = 3.15 */  ; 
-type D_ADHESION = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_AXLELOAD = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_CURRENT = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_CYCLOC = int64	 /* MinVal = 0, MaxVal = 32766 */	 -- 1111 1111 = The_train_has_not_to_report_cyclically_its_position 
+type A_NVMAXREDADH1 = float32	 /* MinVal = 0.0, MaxVal = 3.15 */  ; 
+type A_NVMAXREDADH2 = float32	 /* MinVal = 0.0, MaxVal = 3.15 */  ; 
+type A_NVMAXREDADH3 = float32	 /* MinVal = 0.0, MaxVal = 3.15 */  ; 
+type A_NVP12 = float32	 /* MinVal = 0.0, MaxVal = 3.15 */  ; 
+type A_NVP23 = float32	 /* MinVal = 0.0, MaxVal = 3.15 */  ; 
+type D_ADHESION = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_AXLELOAD = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_CURRENT = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_CYCLOC = int32	 /* MinVal = 0, MaxVal = 32766 */	 -- 1111 1111 = The_train_has_not_to_report_cyclically_its_position 
   ; 
-type D_DP = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_EMERGENCYSTOP = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_ENDTIMERSTARTLOC = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_GRADIENT = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_INFILL = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_LEVELTR = int64	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = Now_(The_level_transition_is_performed_upon_receipt_of_the_order) 
+type D_DP = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_EMERGENCYSTOP = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_ENDTIMERSTARTLOC = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_GRADIENT = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_INFILL = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_LEVELTR = int32	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = Now_(The_level_transition_is_performed_upon_receipt_of_the_order) 
   ; 
-type D_LINK = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_LOC = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_LOOP = int64	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = Distance_not_known 
+type D_LINK = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_LOC = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_LOOP = int32	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = Distance_not_known 
   ; 
-type D_LRBG = int64	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = Unknown 
+type D_LRBG = int32	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = Unknown 
   ; 
-type D_LX = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_MAMODE = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_NVOVTRP = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_NVPOTRP = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_NVROLL = int64	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = infinite 
+type D_LX = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_MAMODE = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_NVOVTRP = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_NVPOTRP = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_NVROLL = int32	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = infinite 
   ; 
-type D_NVSTFF = int64	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = infinite 
+type D_NVSTFF = int32	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = infinite 
   ; 
-type D_OL = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_PBD = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_PBDSR = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_POSOFF = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_RBCTR = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_REF = int64	 /* MinVal = -32768, MaxVal = 32767 */  ; 
-type D_REVERSE = int64	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = represents_infinite 
+type D_OL = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_PBD = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_PBDSR = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_POSOFF = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_RBCTR = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_REF = int32	 /* MinVal = -32768, MaxVal = 32767 */  ; 
+type D_REVERSE = int32	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = represents_infinite 
   ; 
-type D_SECTIONTIMERSTOPLOC = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_SR = int64	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = Represents_infinite 
+type D_SECTIONTIMERSTOPLOC = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_SR = int32	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = Represents_infinite 
   ; 
-type D_STARTOL = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_STARTREVERSE = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_STATIC = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_SUITABILITY = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_TAFDISPLAY = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_TEXTDISPLAY = int64	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = The_display_of_the_text_shall_not_be_distance_limited 
+type D_STARTOL = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_STARTREVERSE = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_STATIC = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_SUITABILITY = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_TAFDISPLAY = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_TEXTDISPLAY = int32	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = The_display_of_the_text_shall_not_be_distance_limited 
   ; 
-type D_TRACKINIT = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_TRACKCOND = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_TRACTION = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_TSR = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type D_VALIDNV = int64	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = Now_(National_Values_are_immediately_applicable) 
+type D_TRACKINIT = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_TRACKCOND = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_TRACTION = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_TSR = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type D_VALIDNV = int32	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = Now_(National_Values_are_immediately_applicable) 
   ; 
-type G_A = int64	 /* MinVal = 0, MaxVal = 254 */	 -- 255 = Non_numerical_value_telling_that_the_current_gradient_description_ends_at_D_GRADIENT(n) 
+type G_A = int32	 /* MinVal = 0, MaxVal = 254 */	 -- 255 = Non_numerical_value_telling_that_the_current_gradient_description_ends_at_D_GRADIENT(n) 
   ; 
-type G_PBDSR = int64	 /* MinVal = 0, MaxVal = 255 */  ; 
-type G_TSR = int64	 /* MinVal = 0, MaxVal = 255 */  ; 
-type L_ACKLEVELTR = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type L_ACKMAMODE = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type L_ADHESION = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type L_AXLELOAD = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type L_DOUBTOVER = int64	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = Unknown 
+type G_PBDSR = int32	 /* MinVal = 0, MaxVal = 255 */  ; 
+type G_TSR = int32	 /* MinVal = 0, MaxVal = 255 */  ; 
+type L_ACKLEVELTR = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type L_ACKMAMODE = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type L_ADHESION = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type L_AXLELOAD = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type L_DOUBTOVER = int32	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = Unknown 
   ; 
-type L_DOUBTUNDER = int64	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = Unknown 
+type L_DOUBTUNDER = int32	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = Unknown 
   ; 
-type L_ENDSECTION = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type L_LOOP = int64	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = Length_not_known 
+type L_ENDSECTION = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type L_LOOP = int32	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = Length_not_known 
   ; 
-type L_LX = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type L_MAMODE = int64	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = Infinite_length 
+type L_LX = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type L_MAMODE = int32	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = Infinite_length 
   ; 
-type L_MESSAGE = int64	 /* MinVal = 0, MaxVal = 1023 */  ; 
+type L_MESSAGE = int32	 /* MinVal = 0, MaxVal = 1023 */  ; 
 type L_NVKRINT = enum { 
 	#pragma kcg enum_val 0 #end L_NVKRINT_0m ,
 	#pragma kcg enum_val 1 #end L_NVKRINT_25m ,
@@ -131,19 +131,19 @@ type L_NVKRINT = enum {
 	#pragma kcg enum_val 30 #end L_NVKRINT_2600m ,
 	#pragma kcg enum_val 31 #end L_NVKRINT_2700m 
 }; 
-type L_PACKET = int64	 /* MinVal = 0, MaxVal = 8191 */  ; 
-type L_PBDSR = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type L_REVERSEAREA = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type L_SECTION = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type L_STOPLX = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type L_TAFDISPLAY = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type L_TEXT = int64	 /* MinVal = 0, MaxVal = 255 */  ; 
-type L_TEXTDISPLAY = int64	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = The_display_of_the_text_shall_not_be_distance_limited 
+type L_PACKET = int32	 /* MinVal = 0, MaxVal = 8191 */  ; 
+type L_PBDSR = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type L_REVERSEAREA = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type L_SECTION = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type L_STOPLX = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type L_TAFDISPLAY = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type L_TEXT = int32	 /* MinVal = 0, MaxVal = 255 */  ; 
+type L_TEXTDISPLAY = int32	 /* MinVal = 0, MaxVal = 32766 */	 -- 32767 = The_display_of_the_text_shall_not_be_distance_limited 
   ; 
-type L_TRACKCOND = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type L_TRAIN = int64	 /* MinVal = 0, MaxVal = 4095 */  ; 
-type L_TRAININT = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
-type L_TSR = int64	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type L_TRACKCOND = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type L_TRAIN = int32	 /* MinVal = 0, MaxVal = 4095 */  ; 
+type L_TRAININT = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
+type L_TSR = int32	 /* MinVal = 0, MaxVal = 32767 */  ; 
 type M_ACK = enum { 
 	#pragma kcg enum_val 0 #end M_ACK_No_acknowledgement_required ,
 	#pragma kcg enum_val 1 #end M_ACK_Acknowledgement_required 
@@ -176,7 +176,7 @@ type M_DUP = enum {
 	#pragma kcg enum_val 1 #end M_DUP_This_balise_is_a_duplicate_of_the_next_balise ,
 	#pragma kcg enum_val 2 #end M_DUP_This_balise_is_a_duplicate_of_the_previous_balise 
 }; 
-type M_CURRENT = int64	 /* MinVal = 0, MaxVal = 10000 */	 -- 1023 = No_restriction_for_current_consumption 
+type M_CURRENT = int32	 /* MinVal = 0, MaxVal = 10000 */	 -- 1023 = No_restriction_for_current_consumption 
   ; 
 
 type M_ERROR = enum { 
@@ -235,7 +235,7 @@ type M_MAMODE = enum {
 	#pragma kcg enum_val 1 #end M_MAMODE_Shunting ,
 	#pragma kcg enum_val 2 #end M_MAMODE_Limited_Supervision 
 }; 
-type M_MCOUNT = int64	 /* MinVal = 0, MaxVal = 253 */	 -- 254 = The_telegram_never_fits_any_message_of_the_group 
+type M_MCOUNT = int32	 /* MinVal = 0, MaxVal = 253 */	 -- 254 = The_telegram_never_fits_any_message_of_the_group 
 	 -- 255 = The_telegram_fits_with_all_telegrams_of_the_same_balise_group 
   ; 
 type M_MODE = enum { 
@@ -270,7 +270,7 @@ type M_MODETEXTDISPLAY = enum {
 	#pragma kcg enum_val 14 #end M_MODETEXTDISPLAY_Reversing ,
 	#pragma kcg enum_val 15 #end M_MODETEXTDISPLAY_The_display_of_the_text_shall_not_be_limited_by_the_mode 
 }; 
-type M_NVAVADH = float64	 /* MinVal = 0.0, MaxVal = 1.0 */  ; 
+type M_NVAVADH = float32	 /* MinVal = 0.0, MaxVal = 1.0 */  ; 
 type M_NVCONTACT = enum { 
 	#pragma kcg enum_val 0 #end M_NVCONTACT_Train_trip ,
 	#pragma kcg enum_val 1 #end M_NVCONTACT_Apply_service_brake ,
@@ -292,9 +292,9 @@ type M_NVEBCL = enum {
 	#pragma kcg enum_val 8 #end M_NVEBCL_Confidence_level_99_999999 ,
 	#pragma kcg enum_val 9 #end M_NVEBCL_Confidence_level_99_9999999 
 }; 
-type M_NVKRINT = float64	 /* MinVal = 0.0, MaxVal = 1.5 */  ; 
-type M_NVKTINT = float64	 /* MinVal = 0.0, MaxVal = 1.5 */  ; 
-type M_NVKVINT = float64	 /* MinVal = 0.0, MaxVal = 2.5 */  ; 
+type M_NVKRINT = float32	 /* MinVal = 0.0, MaxVal = 1.5 */  ; 
+type M_NVKTINT = float32	 /* MinVal = 0.0, MaxVal = 1.5 */  ; 
+type M_NVKVINT = float32	 /* MinVal = 0.0, MaxVal = 2.5 */  ; 
 type M_PLATFORM = enum { 
 	#pragma kcg enum_val 0 #end M_PLATFORM_200_mm ,
 	#pragma kcg enum_val 1 #end M_PLATFORM_300380_mm ,
@@ -311,7 +311,7 @@ type M_PLATFORM = enum {
 	#pragma kcg enum_val 12 #end M_PLATFORM_960_mm ,
 	#pragma kcg enum_val 13 #end M_PLATFORM_1100_mm 
 }; 
-type M_POSITION = int64	 /* MinVal = 0, MaxVal = 9999999 */	 -- 16777215 = No_more_geographical_position_calculation_after_this_reference_location 
+type M_POSITION = int32	 /* MinVal = 0, MaxVal = 9999999 */	 -- 16777215 = No_more_geographical_position_calculation_after_this_reference_location 
   ; 
 type M_TRACKCOND = enum { 
 	#pragma kcg enum_val 0 #end M_TRACKCOND_Non_stopping_area_Initial_state_is_stopping_permitted ,
@@ -340,9 +340,9 @@ type M_VERSION = enum {
 	#pragma kcg enum_val 17 #end M_VERSION_Version_1_1_introduced_in_SRS_3_3_0 ,
 	#pragma kcg enum_val 32 #end M_VERSION_Version_2_0_introduced_in_SRS_3_3_0 
 }; 
-type N_AXLE = int64	 /* MinVal = 0, MaxVal = 1022 */	 -- 1023 = Unknown 
+type N_AXLE = int32	 /* MinVal = 0, MaxVal = 1022 */	 -- 1023 = Unknown 
   ; 
-type N_ITER = int64	 /* MinVal = 0, MaxVal = 31 */  ; 
+type N_ITER = int32	 /* MinVal = 0, MaxVal = 31 */  ; 
 type N_PIG = enum { 
 	#pragma kcg enum_val 0 #end N_PIG_I_am_the_1st ,
 	#pragma kcg enum_val 1 #end N_PIG_I_am_the_2nd ,
@@ -389,7 +389,7 @@ type NC_CDTRAIN = enum {
 	#pragma kcg enum_val 9 #end NC_CDTRAIN_Cant_Deficiency_275_mm ,
 	#pragma kcg enum_val 10 #end NC_CDTRAIN_Cant_Deficiency_300_mm 
 }; 
-type NC_DIFF = int64	 /* MinVal = 0, MaxVal = 15 */	 -- 0 = Specific_SSP_applicable_to_Freight_train_braked_in_P_position 
+type NC_DIFF = int32	 /* MinVal = 0, MaxVal = 15 */	 -- 0 = Specific_SSP_applicable_to_Freight_train_braked_in_P_position 
 	 -- 1 = Specific_SSP_applicable_to_Freight_train_braked_in_G_position 
 	 -- 2 = Specific_SSP_applicable_to_Passenger_train 
   ; 
@@ -399,43 +399,43 @@ type NC_TRAIN = enum {
 	#pragma kcg enum_val 2 #end NC_TRAIN_Freight_train_braked_in_G_position ,
 	#pragma kcg enum_val 4 #end NC_TRAIN_Passenger_train 
 }; 
-type NID_BG = int64	 /* MinVal = 0, MaxVal = 16382 */	 -- 16383 = Identity_is_unknown_(only_to_be_used_for_Linking_information) 
+type NID_BG = int32	 /* MinVal = 0, MaxVal = 16382 */	 -- 16383 = Identity_is_unknown_(only_to_be_used_for_Linking_information) 
   ; 
-type NID_C = int64	 /* MinVal = 0, MaxVal = 1023 */  ; 
-type NID_CTRACTION = int64	 /* MinVal = 0, MaxVal = 1023 */  ; 
-type NID_EM = int64  ; 
-type NID_ENGINE = int64  ; 
-type NID_LOOP = int64	 /* MinVal = 0, MaxVal = 16383 */  ; 
-type NID_LRBG = int64	 -- 16777215 = Unknown 
+type NID_C = int32	 /* MinVal = 0, MaxVal = 1023 */  ; 
+type NID_CTRACTION = int32	 /* MinVal = 0, MaxVal = 1023 */  ; 
+type NID_EM = int32  ; 
+type NID_ENGINE = int32  ; 
+type NID_LOOP = int32	 /* MinVal = 0, MaxVal = 16383 */  ; 
+type NID_LRBG = int32	 -- 16777215 = Unknown 
   ; 
-type NID_LTRBG = int64  ; 
-type NID_LX = int64	 /* MinVal = 0, MaxVal = 255 */	 -- 0-126 = Reserved_for_non_RBC_transmission_(balise_loop_or_radio_infill) 
+type NID_LTRBG = int32  ; 
+type NID_LX = int32	 /* MinVal = 0, MaxVal = 255 */	 -- 0-126 = Reserved_for_non_RBC_transmission_(balise_loop_or_radio_infill) 
 	 -- 127-255 = Reserved_for_RBC_transmission 
   ; 
-type NID_MESSAGE = int64	 /* MinVal = 0, MaxVal = 255 */  ; 
-type NID_MN = int64	 /* MinVal = 0, MaxVal = 999999 */	 -- A-E = Not_Used 
+type NID_MESSAGE = int32	 /* MinVal = 0, MaxVal = 255 */  ; 
+type NID_MN = int32	 /* MinVal = 0, MaxVal = 999999 */	 -- A-E = Not_Used 
 	 -- F = Use_value_F_for_digit_to_indicate_no_digit_(if_number_shorter_than_6_digits) 
   ; 
-type NID_OPERATIONAL = int64	 /* MinVal = 0, MaxVal = 99999999 */	 -- F = Use_value_F_for_digit_to_indicate_no_digit_(if_number_shorter_than_8_digits) 
+type NID_OPERATIONAL = int32	 /* MinVal = 0, MaxVal = 99999999 */	 -- F = Use_value_F_for_digit_to_indicate_no_digit_(if_number_shorter_than_8_digits) 
   ; 
-type NID_PACKET = int64	 /* MinVal = 0, MaxVal = 255 */  ; 
-type NID_PRVLRBG = int64	 -- 16777215 = unknown 
+type NID_PACKET = int32	 /* MinVal = 0, MaxVal = 255 */  ; 
+type NID_PRVLRBG = int32	 -- 16777215 = unknown 
   ; 
 type NID_RADIO = int64	 /* MinVal = 0, MaxVal = 9999999999999999 */	 -- A-E = Not_Used 
 	 -- F = Use_value_F_for_digit_to_indicate_no_digit_(if_number_shorter_than_16_digits) 
 	 -- FFFF FFFF FFFF FFFF = Use_the_short_number_stored_onboard 
   ; 
-type NID_RBC = int64	 /* MinVal = 0, MaxVal = 16382 */	 -- 16383 = Contact_last_known_RBC 
+type NID_RBC = int32	 /* MinVal = 0, MaxVal = 16382 */	 -- 16383 = Contact_last_known_RBC 
   ; 
-type NID_RIU = int64	 /* MinVal = 0, MaxVal = 16383 */  ; 
-type NID_NTC = int64  ; 
-type NID_TEXTMESSAGE = int64	 /* MinVal = 0, MaxVal = 255 */  ; 
-type NID_TSR = int64	 /* MinVal = 0, MaxVal = 255 */	 -- 0-126 = Reserved_for_non_RBC_transmission_(balise_loop_or_radio_infill) 
+type NID_RIU = int32	 /* MinVal = 0, MaxVal = 16383 */  ; 
+type NID_NTC = int32  ; 
+type NID_TEXTMESSAGE = int32	 /* MinVal = 0, MaxVal = 255 */  ; 
+type NID_TSR = int32	 /* MinVal = 0, MaxVal = 255 */	 -- 0-126 = Reserved_for_non_RBC_transmission_(balise_loop_or_radio_infill) 
 	 -- 127-254 = Reserved_for_RBC_transmission 
 	 -- 255 = Nonrevocable_speed_restriction_(applicable_for_all_transmission_media) 
   ; 
-type NID_VBCMK = int64	 /* MinVal = 0, MaxVal = 63 */  ; 
-type NID_XUSER = int64	 /* MinVal = 0, MaxVal = 511 */  ; 
+type NID_VBCMK = int32	 /* MinVal = 0, MaxVal = 63 */  ; 
+type NID_XUSER = int32	 /* MinVal = 0, MaxVal = 511 */  ; 
 type Q_ASPECT = enum { 
 	#pragma kcg enum_val 0 #end Q_ASPECT_Stop_if_in_SH_mode ,
 	#pragma kcg enum_val 1 #end Q_ASPECT_Go_if_in_SH_mode 
@@ -509,7 +509,7 @@ type Q_LINK = enum {
 	#pragma kcg enum_val 0 #end Q_LINK_Unlinked ,
 	#pragma kcg enum_val 1 #end Q_LINK_Linked 
 }; 
-type Q_LOCACC = int64	 /* MinVal = 0, MaxVal = 63 */  ; 
+type Q_LOCACC = int32	 /* MinVal = 0, MaxVal = 63 */  ; 
 type Q_LINKORIENTATION = enum { 
 	#pragma kcg enum_val 0 #end Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction ,
 	#pragma kcg enum_val 1 #end Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_nominal_direction 
@@ -574,7 +574,7 @@ type Q_NVKVINTSET = enum {
 	#pragma kcg enum_val 0 #end Q_NVKVINTSET_Freight_trains ,
 	#pragma kcg enum_val 1 #end Q_NVKVINTSET_Conventional_passenger_trains 
 }; 
-type Q_NVLOCACC = int64	 /* MinVal = 0, MaxVal = 63 */  ; 
+type Q_NVLOCACC = int32	 /* MinVal = 0, MaxVal = 63 */  ; 
 type Q_NVSBFBPERM = enum { 
 	#pragma kcg enum_val 0 #end Q_NVSBFBPERM_No ,
 	#pragma kcg enum_val 1 #end Q_NVSBFBPERM_Yes 
@@ -625,7 +625,7 @@ type Q_SRSTOP = enum {
 	#pragma kcg enum_val 0 #end Q_SRSTOP_Stop_if_in_SR_mode ,
 	#pragma kcg enum_val 1 #end Q_SRSTOP_Go_if_in_SR_mode 
 }; 
-type Q_SSCODE = int64	 -- 15 = Code_reserved_for_test_purposes 
+type Q_SSCODE = int32	 -- 15 = Code_reserved_for_test_purposes 
   ; 
 type Q_STATUS = enum { 
 	#pragma kcg enum_val 0 #end Q_STATUS_Invalid ,
@@ -675,418 +675,418 @@ type Q_VBCO = enum {
 	#pragma kcg enum_val 0 #end Q_VBCO_Remove_the_Virtual_Balise_Cover ,
 	#pragma kcg enum_val 1 #end Q_VBCO_Set_the_Virtual_Balise_Cover 
 }; 
-type T_CYCLOC = int64	 /* MinVal = 0, MaxVal = 254 */	 -- 255 = infinite 
+type T_CYCLOC = int32	 /* MinVal = 0, MaxVal = 254 */	 -- 255 = infinite 
   ; 
-type T_CYCRQST = int64	 /* MinVal = 0, MaxVal = 254 */	 -- 255 = No_repetition 
+type T_CYCRQST = int32	 /* MinVal = 0, MaxVal = 254 */	 -- 255 = No_repetition 
   ; 
-type T_ENDTIMER = int64	 /* MinVal = 0, MaxVal = 1022 */	 -- 1023 = infinite 
+type T_ENDTIMER = int32	 /* MinVal = 0, MaxVal = 1022 */	 -- 1023 = infinite 
   ; 
-type T_LOA = int64	 /* MinVal = 0, MaxVal = 1022 */	 -- 1023 = infinite 
+type T_LOA = int32	 /* MinVal = 0, MaxVal = 1022 */	 -- 1023 = infinite 
   ; 
-type T_MAR = int64	 /* MinVal = 0, MaxVal = 254 */	 -- 255 = _No_MA_request_triggering_with_regards_to_this_function 
+type T_MAR = int32	 /* MinVal = 0, MaxVal = 254 */	 -- 255 = _No_MA_request_triggering_with_regards_to_this_function 
   ; 
-type T_NVCONTACT = int64	 /* MinVal = 0, MaxVal = 254 */	 -- 1111 1111 = T_NVCONTACT_infinite 
+type T_NVCONTACT = int32	 /* MinVal = 0, MaxVal = 254 */	 -- 1111 1111 = T_NVCONTACT_infinite 
   ; 
-type T_NVOVTRP = int64	 /* MinVal = 0, MaxVal = 255 */  ; 
-type T_OL = int64	 /* MinVal = 0, MaxVal = 1022 */	 -- 1023 = infinite 
+type T_NVOVTRP = int32	 /* MinVal = 0, MaxVal = 255 */  ; 
+type T_OL = int32	 /* MinVal = 0, MaxVal = 1022 */	 -- 1023 = infinite 
   ; 
-type T_SECTIONTIMER = int64	 /* MinVal = 0, MaxVal = 1022 */	 -- 1023 = infinite 
+type T_SECTIONTIMER = int32	 /* MinVal = 0, MaxVal = 1022 */	 -- 1023 = infinite 
   ; 
-type T_TEXTDISPLAY = int64	 /* MinVal = 0, MaxVal = 1022 */	 -- 1023 = Display_of_text_not_limited_by_time 
+type T_TEXTDISPLAY = int32	 /* MinVal = 0, MaxVal = 1022 */	 -- 1023 = Display_of_text_not_limited_by_time 
   ; 
-type T_TIMEOUTRQST = int64	 /* MinVal = 0, MaxVal = 1022 */	 -- 1023 = _No_MA_request_triggering_with_regards_to_this_function 
+type T_TIMEOUTRQST = int32	 /* MinVal = 0, MaxVal = 1022 */	 -- 1023 = _No_MA_request_triggering_with_regards_to_this_function 
   ; 
-type T_TRAIN = int64	 /* MinVal = 0.0, MaxVal = 42949672.94 */	 -- 4294967295 = Unknown /* Changed by Bernd Hekele (DB) */
+type T_TRAIN = int32	 /* MinVal = 0.0, MaxVal = 42949672.94 */	 -- 4294967295 = Unknown /* Changed by Bernd Hekele (DB) */
   ; 
-type T_VBC = int64	 /* MinVal = 0, MaxVal = 255 */  ; 
-type V_AXLELOAD = int64	 /* MinVal = 0, MaxVal = 600 */  ; 
-type V_DIFF = int64	 /* MinVal = 0, MaxVal = 600 */  ; 
-type V_LOA = int64	 /* MinVal = 0, MaxVal = 600 */  ; 
-type V_LX = int64	 /* MinVal = 0, MaxVal = 600 */  ; 
-type V_MAIN = int64	 /* MinVal = 0, MaxVal = 600 */	 -- 0 = Means_trip_order 
+type T_VBC = int32	 /* MinVal = 0, MaxVal = 255 */  ; 
+type V_AXLELOAD = int32	 /* MinVal = 0, MaxVal = 600 */  ; 
+type V_DIFF = int32	 /* MinVal = 0, MaxVal = 600 */  ; 
+type V_LOA = int32	 /* MinVal = 0, MaxVal = 600 */  ; 
+type V_LX = int32	 /* MinVal = 0, MaxVal = 600 */  ; 
+type V_MAIN = int32	 /* MinVal = 0, MaxVal = 600 */	 -- 0 = Means_trip_order 
   ; 
-type V_MAMODE = int64	 /* MinVal = 0, MaxVal = 600 */	 -- 127 = Use_the_national_speed_value_of_the_required_mode 
+type V_MAMODE = int32	 /* MinVal = 0, MaxVal = 600 */	 -- 127 = Use_the_national_speed_value_of_the_required_mode 
   ; 
-type V_MAXTRAIN = int64	 /* MinVal = 0, MaxVal = 600 */  ; 
-type V_NVALLOWOVTRP = int64	 /* MinVal = 0, MaxVal = 600 */  ; 
-type V_NVKVINT = int64	 /* MinVal = 0, MaxVal = 600 */  ; 
-type V_NVLIMSUPERV = int64	 /* MinVal = 0, MaxVal = 600 */  ; 
-type V_NVONSIGHT = int64	 /* MinVal = 0, MaxVal = 600 */  ; 
-type V_NVSUPOVTRP = int64	 /* MinVal = 0, MaxVal = 600 */  ; 
-type V_NVREL = int64	 /* MinVal = 0, MaxVal = 600 */  ; 
-type V_NVSHUNT = int64	 /* MinVal = 0, MaxVal = 600 */  ; 
-type V_NVSTFF = int64	 /* MinVal = 0, MaxVal = 600 */  ; 
-type V_NVUNFIT = int64	 /* MinVal = 0, MaxVal = 600 */  ; 
-type V_RELEASEDP = int64	 /* MinVal = 0, MaxVal = 600 */	 -- 126 = Use_onboard_calculated_release_speed 
+type V_MAXTRAIN = int32	 /* MinVal = 0, MaxVal = 600 */  ; 
+type V_NVALLOWOVTRP = int32	 /* MinVal = 0, MaxVal = 600 */  ; 
+type V_NVKVINT = int32	 /* MinVal = 0, MaxVal = 600 */  ; 
+type V_NVLIMSUPERV = int32	 /* MinVal = 0, MaxVal = 600 */  ; 
+type V_NVONSIGHT = int32	 /* MinVal = 0, MaxVal = 600 */  ; 
+type V_NVSUPOVTRP = int32	 /* MinVal = 0, MaxVal = 600 */  ; 
+type V_NVREL = int32	 /* MinVal = 0, MaxVal = 600 */  ; 
+type V_NVSHUNT = int32	 /* MinVal = 0, MaxVal = 600 */  ; 
+type V_NVSTFF = int32	 /* MinVal = 0, MaxVal = 600 */  ; 
+type V_NVUNFIT = int32	 /* MinVal = 0, MaxVal = 600 */  ; 
+type V_RELEASEDP = int32	 /* MinVal = 0, MaxVal = 600 */	 -- 126 = Use_onboard_calculated_release_speed 
 	 -- 127 = Use_national_value 
   ; 
-type V_RELEASEOL = int64	 /* MinVal = 0, MaxVal = 600 */	 -- 126 = Use_onboard_calculated_release_speed 
+type V_RELEASEOL = int32	 /* MinVal = 0, MaxVal = 600 */	 -- 126 = Use_onboard_calculated_release_speed 
 	 -- 127 = Use_national_value 
   ; 
-type V_REVERSE = int64	 /* MinVal = 0, MaxVal = 600 */  ; 
-type V_STATIC = int64	 /* MinVal = 0, MaxVal = 600 */	 -- 127 = Non_numerical_value_telling_that_the_static_speed_profile_description_ends_at_D_STATIC(n) 
+type V_REVERSE = int32	 /* MinVal = 0, MaxVal = 600 */  ; 
+type V_STATIC = int32	 /* MinVal = 0, MaxVal = 600 */	 -- 127 = Non_numerical_value_telling_that_the_static_speed_profile_description_ends_at_D_STATIC(n) 
   ; 
-type V_TRAIN = int64	 /* MinVal = 0, MaxVal = 600 */  ; 
-type V_TSR = int64	 /* MinVal = 0, MaxVal = 600 */  ; 
-type X_TEXT = int64  ; 
+type V_TRAIN = int32	 /* MinVal = 0, MaxVal = 600 */  ; 
+type V_TSR = int32	 /* MinVal = 0, MaxVal = 600 */  ; 
+type X_TEXT = int32  ; 
 package TrackToTrain
 
 type
 Virtual_Balise_Cover_marker = { 
-	NID_PACKET : int64 	 /* Packet =   0 */ ,
-	NID_VBCMK : int64 
+	NID_PACKET : int32 	 /* Packet =   0 */ ,
+	NID_VBCMK : int32 
 };
 
 
 type
 System_Version_order = { 
-	NID_PACKET : int64 	 /* Packet =   2 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	M_VERSION : int64 
+	NID_PACKET : int32 	 /* Packet =   2 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	M_VERSION : int32 
 };
 
 
 type Var30 = { 
-	NID_C : int64
+	NID_C : int32
 };
 type AVar30 = Var30 ^33 ;
 type SVar30 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar30
 };
 
 type Var31 = { 
-	V_NVKVINT : int64,
-	M_NVKVINT : float64
+	V_NVKVINT : int32,
+	M_NVKVINT : float32
 };
 type AVar31 = Var31 ^33 ;
 type SVar31 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar31
 };
 
 type Var32 = { 
-	Q_NVKVINTSET : int64,
-	A_NVP12 : float64,
-	A_NVP23 : float64,
-	V_NVKVINT : int64,
-	M_NVKVINT : float64,
+	Q_NVKVINTSET : int32,
+	A_NVP12 : float32,
+	A_NVP23 : float32,
+	V_NVKVINT : int32,
+	M_NVKVINT : float32,
 	Struct51 : SVar33
 };
 type AVar32 = Var32 ^33 ;
 type SVar32 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar32
 };
 
 type Var33 = { 
-	V_NVKVINT : int64,
-	M_NVKVINT : float64
+	V_NVKVINT : int32,
+	M_NVKVINT : float32
 };
 type AVar33 = Var33 ^33 ;
 type SVar33 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar33
 };
 
 type Var34 = { 
-	L_NVKRINT : int64,
-	M_NVKRINT : float64
+	L_NVKRINT : int32,
+	M_NVKRINT : float32
 };
 type AVar34 = Var34 ^33 ;
 type SVar34 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar34
 };
 
 type
 National_Values = { 
-	NID_PACKET : int64 	 /* Packet =   3 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	D_VALIDNV : int64 ,
-	NID_C : int64 ,
+	NID_PACKET : int32 	 /* Packet =   3 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	D_VALIDNV : int32 ,
+	NID_C : int32 ,
 	Struct0 : SVar30,
-	V_NVSHUNT : int64 ,
-	V_NVSTFF : int64 ,
-	V_NVONSIGHT : int64 ,
-	V_NVLIMSUPERV : int64 ,
-	V_NVUNFIT : int64 ,
-	V_NVREL : int64 ,
-	D_NVROLL : int64 ,
-	Q_NVSBTSMPERM : int64 ,
-	Q_NVEMRRLS : int64 ,
-	Q_NVGUIPERM : int64 ,
-	Q_NVSBFBPERM : int64 ,
-	Q_NVINHSMICPERM : int64 ,
-	V_NVALLOWOVTRP : int64 ,
-	V_NVSUPOVTRP : int64 ,
-	D_NVOVTRP : int64 ,
-	T_NVOVTRP : int64 ,
-	D_NVPOTRP : int64 ,
-	M_NVCONTACT : int64 ,
-	T_NVCONTACT : int64 ,
-	M_NVDERUN : int64 ,
-	D_NVSTFF : int64 ,
-	Q_NVDRIVER_ADHES : int64 ,
-	A_NVMAXREDADH1 : float64 ,
-	A_NVMAXREDADH2 : float64 ,
-	A_NVMAXREDADH3 : float64 ,
-	Q_NVLOCACC : int64 ,
-	M_NVAVADH : float64 ,
-	M_NVEBCL : int64 ,
-	Q_NVKINT : int64 ,
-	Q_NVKVINTSET : int64 ,
-	A_NVP12 : float64 ,
-	A_NVP23 : float64 ,
-	V_NVKVINT : int64 ,
-	M_NVKVINT : float64 ,
+	V_NVSHUNT : int32 ,
+	V_NVSTFF : int32 ,
+	V_NVONSIGHT : int32 ,
+	V_NVLIMSUPERV : int32 ,
+	V_NVUNFIT : int32 ,
+	V_NVREL : int32 ,
+	D_NVROLL : int32 ,
+	Q_NVSBTSMPERM : int32 ,
+	Q_NVEMRRLS : int32 ,
+	Q_NVGUIPERM : int32 ,
+	Q_NVSBFBPERM : int32 ,
+	Q_NVINHSMICPERM : int32 ,
+	V_NVALLOWOVTRP : int32 ,
+	V_NVSUPOVTRP : int32 ,
+	D_NVOVTRP : int32 ,
+	T_NVOVTRP : int32 ,
+	D_NVPOTRP : int32 ,
+	M_NVCONTACT : int32 ,
+	T_NVCONTACT : int32 ,
+	M_NVDERUN : int32 ,
+	D_NVSTFF : int32 ,
+	Q_NVDRIVER_ADHES : int32 ,
+	A_NVMAXREDADH1 : float32 ,
+	A_NVMAXREDADH2 : float32 ,
+	A_NVMAXREDADH3 : float32 ,
+	Q_NVLOCACC : int32 ,
+	M_NVAVADH : float32 ,
+	M_NVEBCL : int32 ,
+	Q_NVKINT : int32 ,
+	Q_NVKVINTSET : int32 ,
+	A_NVP12 : float32 ,
+	A_NVP23 : float32 ,
+	V_NVKVINT : int32 ,
+	M_NVKVINT : float32 ,
 	Struct1 : SVar31,
 	Struct2 : SVar32,
-	L_NVKRINT : int64 ,
-	M_NVKRINT : float64 ,
+	L_NVKRINT : int32 ,
+	M_NVKRINT : float32 ,
 	Struct4 : SVar34,
-	M_NVKTINT : float64 
+	M_NVKTINT : float32 
 };
 
 
 type Var50 = { 
-	D_LINK : int64,
-	Q_NEWCOUNTRY : int64,
-	NID_C : int64,
-	NID_BG : int64,
-	Q_LINKORIENTATION : int64,
-	Q_LINKREACTION : int64,
-	Q_LOCACC : int64
+	D_LINK : int32,
+	Q_NEWCOUNTRY : int32,
+	NID_C : int32,
+	NID_BG : int32,
+	Q_LINKORIENTATION : int32,
+	Q_LINKREACTION : int32,
+	Q_LOCACC : int32
 };
 type AVar50 = Var50 ^33 ;
 type SVar50 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar50
 };
 
 type
 Linking = { 
-	NID_PACKET : int64 	 /* Packet =   5 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	D_LINK : int64 ,
-	Q_NEWCOUNTRY : int64 ,
-	NID_C : int64 ,
-	NID_BG : int64 ,
-	Q_LINKORIENTATION : int64 ,
-	Q_LINKREACTION : int64 ,
-	Q_LOCACC : int64 ,
+	NID_PACKET : int32 	 /* Packet =   5 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	D_LINK : int32 ,
+	Q_NEWCOUNTRY : int32 ,
+	NID_C : int32 ,
+	NID_BG : int32 ,
+	Q_LINKORIENTATION : int32 ,
+	Q_LINKREACTION : int32 ,
+	Q_LOCACC : int32 ,
 	Struct5 : SVar50
 };
 
 
 type
 Virtual_Balise_Cover_order = { 
-	NID_PACKET : int64 	 /* Packet =   6 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_VBCO : int64 ,
-	NID_VBCMK : int64 ,
-	NID_C : int64 ,
-	T_VBC : int64 
+	NID_PACKET : int32 	 /* Packet =   6 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_VBCO : int32 ,
+	NID_VBCMK : int32 ,
+	NID_C : int32 ,
+	T_VBC : int32 
 };
 
 
 type Var120 = { 
-	L_SECTION : int64,
-	Q_SECTIONTIMER : int64,
-	T_SECTIONTIMER : int64,
-	D_SECTIONTIMERSTOPLOC : int64
+	L_SECTION : int32,
+	Q_SECTIONTIMER : int32,
+	T_SECTIONTIMER : int32,
+	D_SECTIONTIMERSTOPLOC : int32
 };
 type AVar120 = Var120 ^33 ;
 type SVar120 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar120
 };
 
 type
 Level_1_Movement_Authority = { 
-	NID_PACKET : int64 	 /* Packet =  12 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	V_MAIN : int64 ,
-	V_LOA : int64 ,
-	T_LOA : int64 ,
+	NID_PACKET : int32 	 /* Packet =  12 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	V_MAIN : int32 ,
+	V_LOA : int32 ,
+	T_LOA : int32 ,
 	Struct6 : SVar120,
-	L_ENDSECTION : int64 ,
-	Q_SECTIONTIMER : int64 ,
-	T_SECTIONTIMER : int64 ,
-	D_SECTIONTIMERSTOPLOC : int64 ,
-	Q_ENDTIMER : int64 ,
-	T_ENDTIMER : int64 ,
-	D_ENDTIMERSTARTLOC : int64 ,
-	Q_DANGERPOINT : int64 ,
-	D_DP : int64 ,
-	V_RELEASEDP : int64 ,
-	Q_OVERLAP : int64 ,
-	D_STARTOL : int64 ,
-	T_OL : int64 ,
-	D_OL : int64 ,
-	V_RELEASEOL : int64 
+	L_ENDSECTION : int32 ,
+	Q_SECTIONTIMER : int32 ,
+	T_SECTIONTIMER : int32 ,
+	D_SECTIONTIMERSTOPLOC : int32 ,
+	Q_ENDTIMER : int32 ,
+	T_ENDTIMER : int32 ,
+	D_ENDTIMERSTARTLOC : int32 ,
+	Q_DANGERPOINT : int32 ,
+	D_DP : int32 ,
+	V_RELEASEDP : int32 ,
+	Q_OVERLAP : int32 ,
+	D_STARTOL : int32 ,
+	T_OL : int32 ,
+	D_OL : int32 ,
+	V_RELEASEOL : int32 
 };
 
 
 type Var137 = { 
-	Q_NEWCOUNTRY : int64,
-	NID_C : int64,
-	NID_BG : int64
+	Q_NEWCOUNTRY : int32,
+	NID_C : int32,
+	NID_BG : int32
 };
 
 
 
 type Var130 = { 
-	Q_NEWCOUNTRY : int64,
-	NID_C : int64,
-	NID_BG : int64,
-	D_SR : int64
+	Q_NEWCOUNTRY : int32,
+	NID_C : int32,
+	NID_BG : int32,
+	D_SR : int32
 };
 type AVar130 = Var130 ^33 ;
 type SVar130 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar130
 };
 
 type
 Staff_Responsible_distance_Information_from_loop = { 
-	NID_PACKET : int64 	 /* Packet =  13 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
+	NID_PACKET : int32 	 /* Packet =  13 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
 	Struct9 : Var137,
 	Struct12 : Var137,
-	D_SR : int64 ,
+	D_SR : int32 ,
 	Struct13 : SVar130
 };
 
 
 type Var150 = { 
-	L_SECTION : int64,
-	Q_SECTIONTIMER : int64,
-	T_SECTIONTIMER : int64,
-	D_SECTIONTIMERSTOPLOC : int64
+	L_SECTION : int32,
+	Q_SECTIONTIMER : int32,
+	T_SECTIONTIMER : int32,
+	D_SECTIONTIMERSTOPLOC : int32
 };
 type AVar150 = Var150 ^33 ;
 type SVar150 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar150
 };
 
 type
 Level_23_Movement_Authority = { 
-	NID_PACKET : int64 	 /* Packet =  15 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	V_LOA : int64 ,
-	T_LOA : int64 ,
+	NID_PACKET : int32 	 /* Packet =  15 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	V_LOA : int32 ,
+	T_LOA : int32 ,
 	Struct14 : SVar150,
-	L_ENDSECTION : int64 ,
-	Q_SECTIONTIMER : int64 ,
-	T_SECTIONTIMER : int64 ,
-	D_SECTIONTIMERSTOPLOC : int64 ,
-	Q_ENDTIMER : int64 ,
-	T_ENDTIMER : int64 ,
-	D_ENDTIMERSTARTLOC : int64 ,
-	Q_DANGERPOINT : int64 ,
-	D_DP : int64 ,
-	V_RELEASEDP : int64 ,
-	Q_OVERLAP : int64 ,
-	D_STARTOL : int64 ,
-	T_OL : int64 ,
-	D_OL : int64 ,
-	V_RELEASEOL : int64 
+	L_ENDSECTION : int32 ,
+	Q_SECTIONTIMER : int32 ,
+	T_SECTIONTIMER : int32 ,
+	D_SECTIONTIMERSTOPLOC : int32 ,
+	Q_ENDTIMER : int32 ,
+	T_ENDTIMER : int32 ,
+	D_ENDTIMERSTARTLOC : int32 ,
+	Q_DANGERPOINT : int32 ,
+	D_DP : int32 ,
+	V_RELEASEDP : int32 ,
+	Q_OVERLAP : int32 ,
+	D_STARTOL : int32 ,
+	T_OL : int32 ,
+	D_OL : int32 ,
+	V_RELEASEOL : int32 
 };
 
 
 type
 Repositioning_Information = { 
-	NID_PACKET : int64 	 /* Packet =  16 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	L_SECTION : int64 
+	NID_PACKET : int32 	 /* Packet =  16 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	L_SECTION : int32 
 };
 
 
 type Var210 = { 
-	D_GRADIENT : int64,
-	Q_GDIR : int64,
-	G_A : int64
+	D_GRADIENT : int32,
+	Q_GDIR : int32,
+	G_A : int32
 };
 type AVar210 = Var210 ^33 ;
 type SVar210 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar210
 };
 
 type
 Gradient_Profile = { 
-	NID_PACKET : int64 	 /* Packet =  21 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	D_GRADIENT : int64 ,
-	Q_GDIR : int64 ,
-	G_A : int64 ,
+	NID_PACKET : int32 	 /* Packet =  21 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	D_GRADIENT : int32 ,
+	Q_GDIR : int32 ,
+	G_A : int32 ,
 	Struct15 : SVar210
 };
 
 
 type Var270 = { 
-	Q_DIFF : int64,
-	NC_CDDIFF : int64,
-	NC_DIFF : int64,
-	V_DIFF : int64
+	Q_DIFF : int32,
+	NC_CDDIFF : int32,
+	NC_DIFF : int32,
+	V_DIFF : int32
 };
 type AVar270 = Var270 ^33 ;
 type SVar270 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar270
 };
 
 type Var271 = { 
-	D_STATIC : int64,
-	V_STATIC : int64,
-	Q_FRONT : int64,
+	D_STATIC : int32,
+	V_STATIC : int32,
+	Q_FRONT : int32,
 	Struct62 : SVar272
 };
 type AVar271 = Var271 ^33 ;
 type SVar271 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar271
 };
 
 type Var272 = { 
-	Q_DIFF : int64,
-	NC_CDDIFF : int64,
-	NC_DIFF : int64,
-	V_DIFF : int64
+	Q_DIFF : int32,
+	NC_CDDIFF : int32,
+	NC_DIFF : int32,
+	V_DIFF : int32
 };
 type AVar272 = Var272 ^33 ;
 type SVar272 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar272
 };
 
 type
 International_Static_Speed_Profile = { 
-	NID_PACKET : int64 	 /* Packet =  27 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	D_STATIC : int64 ,
-	V_STATIC : int64 ,
-	Q_FRONT : int64 ,
+	NID_PACKET : int32 	 /* Packet =  27 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	D_STATIC : int32 ,
+	V_STATIC : int32 ,
+	Q_FRONT : int32 ,
 	Struct16 : SVar270,
 	Struct17 : SVar271
 };
@@ -1094,707 +1094,707 @@ International_Static_Speed_Profile = {
 
 type
 Track_Condition_Change_of_traction_system = { 
-	NID_PACKET : int64 	 /* Packet =  39 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	D_TRACTION : int64 ,
-	M_VOLTAGE : int64 ,
-	NID_CTRACTION : int64 
+	NID_PACKET : int32 	 /* Packet =  39 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	D_TRACTION : int32 ,
+	M_VOLTAGE : int32 ,
+	NID_CTRACTION : int32 
 };
 
 
 type
 Track_Condition_Change_of_allowed_current_consumption = { 
-	NID_PACKET : int64 	 /* Packet =  40 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	D_CURRENT : int64 ,
-	M_CURRENT : int64 
+	NID_PACKET : int32 	 /* Packet =  40 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	D_CURRENT : int32 ,
+	M_CURRENT : int32 
 };
 
 
 type Var410 = { 
-	M_LEVELTR : int64,
-	NID_NTC : int64,
-	L_ACKLEVELTR : int64
+	M_LEVELTR : int32,
+	NID_NTC : int32,
+	L_ACKLEVELTR : int32
 };
 type AVar410 = Var410 ^33 ;
 type SVar410 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar410
 };
 
 type
 Level_Transition_Order = { 
-	NID_PACKET : int64 	 /* Packet =  41 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	D_LEVELTR : int64 ,
-	M_LEVELTR : int64 ,
-	NID_NTC : int64 ,
-	L_ACKLEVELTR : int64 ,
+	NID_PACKET : int32 	 /* Packet =  41 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	D_LEVELTR : int32 ,
+	M_LEVELTR : int32 ,
+	NID_NTC : int32 ,
+	L_ACKLEVELTR : int32 ,
 	Struct19 : SVar410
 };
 
 
 type
 Session_Management = { 
-	NID_PACKET : int64 	 /* Packet =  42 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_RBC : int64 ,
-	NID_C : int64 ,
-	NID_RBC : int64 ,
+	NID_PACKET : int32 	 /* Packet =  42 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_RBC : int32 ,
+	NID_C : int32 ,
+	NID_RBC : int32 ,
 	NID_RADIO : int64 ,
-	Q_SLEEPSESSION : int64 
+	Q_SLEEPSESSION : int32 
 };
 
 
 type
 Data_used_by_applications_outside_the_ERTMSETCS_system = { 
-	NID_PACKET : int64 	 /* Packet =  44 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	NID_XUSER : int64 ,
-	NID_NTC : int64 ,
-	Other_data_depending_on__NID_XUSER : int64  
+	NID_PACKET : int32 	 /* Packet =  44 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	NID_XUSER : int32 ,
+	NID_NTC : int32 ,
+	Other_data_depending_on__NID_XUSER : int32  
 };
 
 
 type
 Radio_Network_registration = { 
-	NID_PACKET : int64 	 /* Packet =  45 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	NID_MN : int64 
+	NID_PACKET : int32 	 /* Packet =  45 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	NID_MN : int32 
 };
 
 
 type Var460 = { 
-	M_LEVELTR : int64,
-	NID_NTC : int64
+	M_LEVELTR : int32,
+	NID_NTC : int32
 };
 type AVar460 = Var460 ^33 ;
 type SVar460 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar460
 };
 
 type
 Conditional_Level_Transition_Order = { 
-	NID_PACKET : int64 	 /* Packet =  46 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	M_LEVELTR : int64 ,
-	NID_NTC : int64 ,
+	NID_PACKET : int32 	 /* Packet =  46 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	M_LEVELTR : int32 ,
+	NID_NTC : int32 ,
 	Struct20 : SVar460
 };
 
 
 type Var490 = { 
-	Q_NEWCOUNTRY : int64,
-	NID_C : int64,
-	NID_BG : int64
+	Q_NEWCOUNTRY : int32,
+	NID_C : int32,
+	NID_BG : int32
 };
 type AVar490 = Var490 ^33 ;
 type SVar490 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar490
 };
 
 type
 List_of_balises_for_SH_Area = { 
-	NID_PACKET : int64 	 /* Packet =  49 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
+	NID_PACKET : int32 	 /* Packet =  49 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
 	Struct21 : SVar490
 };
 
 
 type Var510 = { 
-	M_AXLELOADCAT : int64,
-	V_AXLELOAD : int64
+	M_AXLELOADCAT : int32,
+	V_AXLELOAD : int32
 };
 type AVar510 = Var510 ^33 ;
 type SVar510 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar510
 };
 
 type Var511 = { 
-	D_AXLELOAD : int64,
-	L_AXLELOAD : int64,
-	Q_FRONT : int64,
+	D_AXLELOAD : int32,
+	L_AXLELOAD : int32,
+	Q_FRONT : int32,
 	Struct68 : SVar512
 };
 type AVar511 = Var511 ^33 ;
 type SVar511 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar511
 };
 
 type Var512 = { 
-	M_AXLELOADCAT : int64,
-	V_AXLELOAD : int64
+	M_AXLELOADCAT : int32,
+	V_AXLELOAD : int32
 };
 type AVar512 = Var512 ^33 ;
 type SVar512 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar512
 };
 
 type
 Axle_Load_Speed_Profile = { 
-	NID_PACKET : int64 	 /* Packet =  51 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	Q_TRACKINIT : int64 ,
-	D_TRACKINIT : int64 ,
-	D_AXLELOAD : int64 ,
-	L_AXLELOAD : int64 ,
-	Q_FRONT : int64 ,
+	NID_PACKET : int32 	 /* Packet =  51 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	Q_TRACKINIT : int32 ,
+	D_TRACKINIT : int32 ,
+	D_AXLELOAD : int32 ,
+	L_AXLELOAD : int32 ,
+	Q_FRONT : int32 ,
 	Struct22 : SVar510,
 	Struct23 : SVar511
 };
 
 
 type Var520 = { 
-	D_PBD : int64,
-	Q_GDIR : int64,
-	G_PBDSR : int64,
-	Q_PBDSR : int64,
-	D_PBDSR : int64,
-	L_PBDSR : int64
+	D_PBD : int32,
+	Q_GDIR : int32,
+	G_PBDSR : int32,
+	Q_PBDSR : int32,
+	D_PBDSR : int32,
+	L_PBDSR : int32
 };
 type AVar520 = Var520 ^33 ;
 type SVar520 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar520
 };
 
 type
 Permitted_Braking_Distance_Information = { 
-	NID_PACKET : int64 	 /* Packet =  52 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	Q_TRACKINIT : int64 ,
-	D_TRACKINIT : int64 ,
-	D_PBD : int64 ,
-	Q_GDIR : int64 ,
-	G_PBDSR : int64 ,
-	Q_PBDSR : int64 ,
-	D_PBDSR : int64 ,
-	L_PBDSR : int64 ,
+	NID_PACKET : int32 	 /* Packet =  52 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	Q_TRACKINIT : int32 ,
+	D_TRACKINIT : int32 ,
+	D_PBD : int32 ,
+	Q_GDIR : int32 ,
+	G_PBDSR : int32 ,
+	Q_PBDSR : int32 ,
+	D_PBDSR : int32 ,
+	L_PBDSR : int32 ,
 	Struct25 : SVar520
 };
 
 
 type
 Movement_Authority_Request_Parameters = { 
-	NID_PACKET : int64 	 /* Packet =  57 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	T_MAR : int64 ,
-	T_TIMEOUTRQST : int64 ,
-	T_CYCRQST : int64 
+	NID_PACKET : int32 	 /* Packet =  57 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	T_MAR : int32 ,
+	T_TIMEOUTRQST : int32 ,
+	T_CYCRQST : int32 
 };
 
 
 type Var580 = { 
-	D_LOC : int64,
+	D_LOC : int32,
 	q_lgtloc : Q_LGTLOC
 };
 type AVar580 = Var580 ^33 ;
 type SVar580 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar580
 };
 
 type
 Position_Report_Parameters = { 
-	NID_PACKET : int64 	 /* Packet =  58 */ ,
+	NID_PACKET : int32 	 /* Packet =  58 */ ,
 	q_dir : Q_DIR ,
-	L_PACKET : int64 ,
+	L_PACKET : int32 ,
 	q_scale : Q_SCALE ,
-	T_CYCLOC : int64 ,
-	D_CYCLOC : int64 ,
+	T_CYCLOC : int32 ,
+	D_CYCLOC : int32 ,
 	m_loc : M_LOC ,
 	Struct26 : SVar580
 };
 
 
 type Var630 = { 
-	Q_NEWCOUNTRY : int64,
-	NID_C : int64,
-	NID_BG : int64
+	Q_NEWCOUNTRY : int32,
+	NID_C : int32,
+	NID_BG : int32
 };
 type AVar630 = Var630 ^33 ;
 type SVar630 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar630
 };
 
 type
 List_of_Balises_in_SR_Authority = { 
-	NID_PACKET : int64 	 /* Packet =  63 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
+	NID_PACKET : int32 	 /* Packet =  63 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
 	Struct27 : SVar630
 };
 
 
 type
 Inhibition_of_revocable_TSRs_from_balises_in_L23 = { 
-	NID_PACKET : int64 	 /* Packet =  64 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 
+	NID_PACKET : int32 	 /* Packet =  64 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 
 };
 
 
 type
 Temporary_Speed_Restriction = { 
-	NID_PACKET : int64 	 /* Packet =  65 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	NID_TSR : int64 ,
-	D_TSR : int64 ,
-	L_TSR : int64 ,
-	Q_FRONT : int64 ,
-	V_TSR : int64 
+	NID_PACKET : int32 	 /* Packet =  65 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	NID_TSR : int32 ,
+	D_TSR : int32 ,
+	L_TSR : int32 ,
+	Q_FRONT : int32 ,
+	V_TSR : int32 
 };
 
 
 type
 Temporary_Speed_Restriction_Revocation = { 
-	NID_PACKET : int64 	 /* Packet =  66 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	NID_TSR : int64 
+	NID_PACKET : int32 	 /* Packet =  66 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	NID_TSR : int32 
 };
 
 
 type Var670 = { 
-	D_TRACKCOND : int64,
-	L_TRACKCOND : int64
+	D_TRACKCOND : int32,
+	L_TRACKCOND : int32
 };
 type AVar670 = Var670 ^33 ;
 type SVar670 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar670
 };
 
 type
 Track_Condition_Big_Metal_Masses = { 
-	NID_PACKET : int64 	 /* Packet =  67 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	D_TRACKCOND : int64 ,
-	L_TRACKCOND : int64 ,
+	NID_PACKET : int32 	 /* Packet =  67 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	D_TRACKCOND : int32 ,
+	L_TRACKCOND : int32 ,
 	Struct28 : SVar670
 };
 
 
 type Var680 = { 
-	D_TRACKCOND : int64,
-	L_TRACKCOND : int64,
-	M_TRACKCOND : int64
+	D_TRACKCOND : int32,
+	L_TRACKCOND : int32,
+	M_TRACKCOND : int32
 };
 type AVar680 = Var680 ^33 ;
 type SVar680 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar680
 };
 
 type
 Track_Condition = { 
-	NID_PACKET : int64 	 /* Packet =  68 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	Q_TRACKINIT : int64 ,
-	D_TRACKINIT : int64 ,
-	D_TRACKCOND : int64 ,
-	L_TRACKCOND : int64 ,
-	M_TRACKCOND : int64 ,
+	NID_PACKET : int32 	 /* Packet =  68 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	Q_TRACKINIT : int32 ,
+	D_TRACKINIT : int32 ,
+	D_TRACKCOND : int32 ,
+	L_TRACKCOND : int32 ,
+	M_TRACKCOND : int32 ,
 	Struct29 : SVar680
 };
 
 
 type Var690 = { 
-	D_TRACKCOND : int64,
-	L_TRACKCOND : int64,
-	M_PLATFORM : int64,
-	Q_PLATFORM : int64
+	D_TRACKCOND : int32,
+	L_TRACKCOND : int32,
+	M_PLATFORM : int32,
+	Q_PLATFORM : int32
 };
 type AVar690 = Var690 ^33 ;
 type SVar690 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar690
 };
 
 type
 Track_Condition_Station_Platforms = { 
-	NID_PACKET : int64 	 /* Packet =  69 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	Q_TRACKINIT : int64 ,
-	D_TRACKINIT : int64 ,
-	D_TRACKCOND : int64 ,
-	L_TRACKCOND : int64 ,
-	M_PLATFORM : int64 ,
-	Q_PLATFORM : int64 ,
+	NID_PACKET : int32 	 /* Packet =  69 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	Q_TRACKINIT : int32 ,
+	D_TRACKINIT : int32 ,
+	D_TRACKCOND : int32 ,
+	L_TRACKCOND : int32 ,
+	M_PLATFORM : int32 ,
+	Q_PLATFORM : int32 ,
 	Struct30 : SVar690
 };
 
 
 type Var700 = { 
-	D_SUITABILITY : int64,
-	Q_SUITABILITY : int64,
-	M_LINEGAUGE : int64,
-	M_AXLELOADCAT : int64,
-	M_VOLTAGE : int64,
-	NID_CTRACTION : int64
+	D_SUITABILITY : int32,
+	Q_SUITABILITY : int32,
+	M_LINEGAUGE : int32,
+	M_AXLELOADCAT : int32,
+	M_VOLTAGE : int32,
+	NID_CTRACTION : int32
 };
 type AVar700 = Var700 ^33 ;
 type SVar700 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar700
 };
 
 type
 Route_Suitability_Data = { 
-	NID_PACKET : int64 	 /* Packet =  70 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	Q_TRACKINIT : int64 ,
-	D_TRACKINIT : int64 ,
-	D_SUITABILITY : int64 ,
-	Q_SUITABILITY : int64 ,
-	M_LINEGAUGE : int64 ,
-	M_AXLELOADCAT : int64 ,
-	M_VOLTAGE : int64 ,
-	NID_CTRACTION : int64 ,
+	NID_PACKET : int32 	 /* Packet =  70 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	Q_TRACKINIT : int32 ,
+	D_TRACKINIT : int32 ,
+	D_SUITABILITY : int32 ,
+	Q_SUITABILITY : int32 ,
+	M_LINEGAUGE : int32 ,
+	M_AXLELOADCAT : int32 ,
+	M_VOLTAGE : int32 ,
+	NID_CTRACTION : int32 ,
 	Struct31 : SVar700
 };
 
 
 type
 Adhesion_factor = { 
-	NID_PACKET : int64 	 /* Packet =  71 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	D_ADHESION : int64 ,
-	L_ADHESION : int64 ,
-	M_ADHESION : int64 
+	NID_PACKET : int32 	 /* Packet =  71 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	D_ADHESION : int32 ,
+	L_ADHESION : int32 ,
+	M_ADHESION : int32 
 };
 
 
 type Var727 = { 
-	M_MODETEXTDISPLAY : int64,
-	M_LEVELTEXTDISPLAY : int64,
-	NID_NTC : int64
+	M_MODETEXTDISPLAY : int32,
+	M_LEVELTEXTDISPLAY : int32,
+	NID_NTC : int32
 };
 
 
 
 type
 Packet_for_sending_plain_text_messages = { 
-	NID_PACKET : int64 	 /* Packet =  72 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	Q_TEXTCLASS : int64 ,
-	Q_TEXTDISPLAY : int64 ,
-	D_TEXTDISPLAY : int64 ,
+	NID_PACKET : int32 	 /* Packet =  72 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	Q_TEXTCLASS : int32 ,
+	Q_TEXTDISPLAY : int32 ,
+	D_TEXTDISPLAY : int32 ,
 	Struct34 : Var727,
-	L_TEXTDISPLAY : int64 ,
-	T_TEXTDISPLAY : int64 ,
+	L_TEXTDISPLAY : int32 ,
+	T_TEXTDISPLAY : int32 ,
 	Struct37 : Var727,
-	Q_TEXTCONFIRM : int64 ,
-	Q_CONFTEXTDISPLAY : int64 ,
-	Q_TEXTREPORT : int64 ,
-	NID_TEXTMESSAGE : int64 ,
-	NID_C : int64 ,
-	NID_RBC : int64 ,
-	L_TEXT : int64 ,
-	X_TEXT : int64 
+	Q_TEXTCONFIRM : int32 ,
+	Q_CONFTEXTDISPLAY : int32 ,
+	Q_TEXTREPORT : int32 ,
+	NID_TEXTMESSAGE : int32 ,
+	NID_C : int32 ,
+	NID_RBC : int32 ,
+	L_TEXT : int32 ,
+	X_TEXT : int32 
 };
 
 
 type Var767 = { 
-	M_MODETEXTDISPLAY : int64,
-	M_LEVELTEXTDISPLAY : int64,
-	NID_NTC : int64
+	M_MODETEXTDISPLAY : int32,
+	M_LEVELTEXTDISPLAY : int32,
+	NID_NTC : int32
 };
 
 
 
 type
 Packet_for_sending_fixed_text_messages = { 
-	NID_PACKET : int64 	 /* Packet =  76 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	Q_TEXTCLASS : int64 ,
-	Q_TEXTDISPLAY : int64 ,
-	D_TEXTDISPLAY : int64 ,
+	NID_PACKET : int32 	 /* Packet =  76 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	Q_TEXTCLASS : int32 ,
+	Q_TEXTDISPLAY : int32 ,
+	D_TEXTDISPLAY : int32 ,
 	Struct40 : Var767,
-	L_TEXTDISPLAY : int64 ,
-	T_TEXTDISPLAY : int64 ,
+	L_TEXTDISPLAY : int32 ,
+	T_TEXTDISPLAY : int32 ,
 	Struct43 : Var767,
-	Q_TEXTCONFIRM : int64 ,
-	Q_CONFTEXTDISPLAY : int64 ,
-	Q_TEXTREPORT : int64 ,
-	NID_TEXTMESSAGE : int64 ,
-	NID_C : int64 ,
-	NID_RBC : int64 ,
-	Q_TEXT : int64 
+	Q_TEXTCONFIRM : int32 ,
+	Q_CONFTEXTDISPLAY : int32 ,
+	Q_TEXTREPORT : int32 ,
+	NID_TEXTMESSAGE : int32 ,
+	NID_C : int32 ,
+	NID_RBC : int32 ,
+	Q_TEXT : int32 
 };
 
 
 type Var790 = { 
-	Q_NEWCOUNTRY : int64,
-	NID_C : int64,
-	NID_BG : int64,
-	D_POSOFF : int64,
-	Q_MPOSITION : int64,
-	M_POSITION : int64
+	Q_NEWCOUNTRY : int32,
+	NID_C : int32,
+	NID_BG : int32,
+	D_POSOFF : int32,
+	Q_MPOSITION : int32,
+	M_POSITION : int32
 };
 type AVar790 = Var790 ^33 ;
 type SVar790 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar790
 };
 
 type
 Geographical_Position_Information = { 
-	NID_PACKET : int64 	 /* Packet =  79 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	Q_NEWCOUNTRY : int64 ,
-	NID_C : int64 ,
-	NID_BG : int64 ,
-	D_POSOFF : int64 ,
-	Q_MPOSITION : int64 ,
-	M_POSITION : int64 ,
+	NID_PACKET : int32 	 /* Packet =  79 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	Q_NEWCOUNTRY : int32 ,
+	NID_C : int32 ,
+	NID_BG : int32 ,
+	D_POSOFF : int32 ,
+	Q_MPOSITION : int32 ,
+	M_POSITION : int32 ,
 	Struct44 : SVar790
 };
 
 
 type Var800 = { 
-	D_MAMODE : int64,
-	M_MAMODE : int64,
-	V_MAMODE : int64,
-	L_MAMODE : int64,
-	L_ACKMAMODE : int64,
-	Q_MAMODE : int64
+	D_MAMODE : int32,
+	M_MAMODE : int32,
+	V_MAMODE : int32,
+	L_MAMODE : int32,
+	L_ACKMAMODE : int32,
+	Q_MAMODE : int32
 };
 type AVar800 = Var800 ^33 ;
 type SVar800 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar800
 };
 
 type
 Mode_profile = { 
-	NID_PACKET : int64 	 /* Packet =  80 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	D_MAMODE : int64 ,
-	M_MAMODE : int64 ,
-	V_MAMODE : int64 ,
-	L_MAMODE : int64 ,
-	L_ACKMAMODE : int64 ,
-	Q_MAMODE : int64 ,
+	NID_PACKET : int32 	 /* Packet =  80 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	D_MAMODE : int32 ,
+	M_MAMODE : int32 ,
+	V_MAMODE : int32 ,
+	L_MAMODE : int32 ,
+	L_ACKMAMODE : int32 ,
+	Q_MAMODE : int32 ,
 	Struct45 : SVar800
 };
 
 
 type
 Level_Crossing_information = { 
-	NID_PACKET : int64 	 /* Packet =  88 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	NID_LX : int64 ,
-	D_LX : int64 ,
-	L_LX : int64 ,
-	Q_LXSTATUS : int64 ,
-	V_LX : int64 ,
-	Q_STOPLX : int64 ,
-	L_STOPLX : int64 
+	NID_PACKET : int32 	 /* Packet =  88 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	NID_LX : int32 ,
+	D_LX : int32 ,
+	L_LX : int32 ,
+	Q_LXSTATUS : int32 ,
+	V_LX : int32 ,
+	Q_STOPLX : int32 ,
+	L_STOPLX : int32 
 };
 
 
 type
 Track_Ahead_Free_up_to_level_23_transition_location = { 
-	NID_PACKET : int64 	 /* Packet =  90 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_NEWCOUNTRY : int64 ,
-	NID_C : int64 ,
-	NID_BG : int64 
+	NID_PACKET : int32 	 /* Packet =  90 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_NEWCOUNTRY : int32 ,
+	NID_C : int32 ,
+	NID_BG : int32 
 };
 
 
 type
 RBC_transition_order = { 
-	NID_PACKET : int64 	 /* Packet = 131 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	D_RBCTR : int64 ,
-	NID_C : int64 ,
-	NID_RBC : int64 ,
+	NID_PACKET : int32 	 /* Packet = 131 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	D_RBCTR : int32 ,
+	NID_C : int32 ,
+	NID_RBC : int32 ,
 	NID_RADIO : int64 ,
-	Q_SLEEPSESSION : int64 
+	Q_SLEEPSESSION : int32 
 };
 
 
 type
 Danger_for_Shunting_information = { 
-	NID_PACKET : int64 	 /* Packet = 132 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_ASPECT : int64 
+	NID_PACKET : int32 	 /* Packet = 132 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_ASPECT : int32 
 };
 
 
 type
 Radio_infill_area_information = { 
-	NID_PACKET : int64 	 /* Packet = 133 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	Q_RIU : int64 ,
-	NID_C : int64 ,
-	NID_RIU : int64 ,
+	NID_PACKET : int32 	 /* Packet = 133 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	Q_RIU : int32 ,
+	NID_C : int32 ,
+	NID_RIU : int32 ,
 	NID_RADIO : int64 ,
-	D_INFILL : int64 ,
-	NID_BG : int64 
+	D_INFILL : int32 ,
+	NID_BG : int32 
 };
 
 
 type
 EOLM_Packet = { 
-	NID_PACKET : int64 	 /* Packet = 134 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	NID_LOOP : int64 ,
-	D_LOOP : int64 ,
-	L_LOOP : int64 ,
-	Q_LOOPDIR : int64 ,
-	Q_SSCODE : int64 
+	NID_PACKET : int32 	 /* Packet = 134 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	NID_LOOP : int32 ,
+	D_LOOP : int32 ,
+	L_LOOP : int32 ,
+	Q_LOOPDIR : int32 ,
+	Q_SSCODE : int32 
 };
 
 
 type
 Stop_Shunting_on_desk_opening = { 
-	NID_PACKET : int64 	 /* Packet = 135 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 
+	NID_PACKET : int32 	 /* Packet = 135 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 
 };
 
 
 type
 Infill_location_reference = { 
-	NID_PACKET : int64 	 /* Packet = 136 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_NEWCOUNTRY : int64 ,
-	NID_C : int64 ,
-	NID_BG : int64 
+	NID_PACKET : int32 	 /* Packet = 136 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_NEWCOUNTRY : int32 ,
+	NID_C : int32 ,
+	NID_BG : int32 
 };
 
 
 type
 Stop_if_in_Staff_Responsible = { 
-	NID_PACKET : int64 	 /* Packet = 137 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SRSTOP : int64 
+	NID_PACKET : int32 	 /* Packet = 137 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SRSTOP : int32 
 };
 
 
 type
 Reversing_area_information = { 
-	NID_PACKET : int64 	 /* Packet = 138 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	D_STARTREVERSE : int64 ,
-	L_REVERSEAREA : int64 
+	NID_PACKET : int32 	 /* Packet = 138 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	D_STARTREVERSE : int32 ,
+	L_REVERSEAREA : int32 
 };
 
 
 type
 Reversing_supervision_information = { 
-	NID_PACKET : int64 	 /* Packet = 139 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_SCALE : int64 ,
-	D_REVERSE : int64 ,
-	V_REVERSE : int64 
+	NID_PACKET : int32 	 /* Packet = 139 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_SCALE : int32 ,
+	D_REVERSE : int32 ,
+	V_REVERSE : int32 
 };
 
 
 type
 Train_running_number_from_RBC = { 
-	NID_PACKET : int64 	 /* Packet = 140 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	NID_OPERATIONAL : int64 
+	NID_PACKET : int32 	 /* Packet = 140 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	NID_OPERATIONAL : int32 
 };
 
 
 type
 Default_Gradient_for_Temporary_Speed_Restriction = { 
-	NID_PACKET : int64 	 /* Packet = 141 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_GDIR : int64 ,
-	G_TSR : int64 
+	NID_PACKET : int32 	 /* Packet = 141 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_GDIR : int32 ,
+	G_TSR : int32 
 };
 
 
 type
 Session_Management_with_neighbouring_Radio_Infill_Unit = { 
-	NID_PACKET : int64 	 /* Packet = 143 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 ,
-	Q_RIU : int64 ,
-	NID_C : int64 ,
-	NID_RIU : int64 ,
+	NID_PACKET : int32 	 /* Packet = 143 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 ,
+	Q_RIU : int32 ,
+	NID_C : int32 ,
+	NID_RIU : int32 ,
 	NID_RADIO : int64 
 };
 
 
 type
 Inhibition_of_balise_group_message_consistency_reaction = { 
-	NID_PACKET : int64 	 /* Packet = 145 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 
+	NID_PACKET : int32 	 /* Packet = 145 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 
 };
 
 
 type
 Default_balise_or_Loop_or_RIU_information = { 
-	NID_PACKET : int64 	 /* Packet = 254 */ ,
-	Q_DIR : int64 ,
-	L_PACKET : int64 
+	NID_PACKET : int32 	 /* Packet = 254 */ ,
+	Q_DIR : int32 ,
+	L_PACKET : int32 
 };
 
 
@@ -1803,44 +1803,44 @@ package TrainToTrack
 
 type
 Position_Report = { 
-	NID_PACKET : int64 	 /* Packet =   0 */ ,
-	L_PACKET : int64 ,
+	NID_PACKET : int32 	 /* Packet =   0 */ ,
+	L_PACKET : int32 ,
 	qscale : Q_SCALE ,
-	NID_LRBG : int64 ,
-	D_LRBG : int64 ,
+	NID_LRBG : int32 ,
+	D_LRBG : int32 ,
 	dirlrbg : Q_DIRLRBG ,
 	dlrbg: Q_DLRBG ,
-	L_DOUBTOVER : int64 ,
-	L_DOUBTUNDER : int64 ,
+	L_DOUBTOVER : int32 ,
+	L_DOUBTUNDER : int32 ,
 	length : Q_LENGTH ,
-	L_TRAININT : int64 ,
-	V_TRAIN : int64 ,
+	L_TRAININT : int32 ,
+	V_TRAIN : int32 ,
 	dirtrain : Q_DIRTRAIN ,
 	mode: M_MODE ,
 	level : M_LEVEL ,
-	NID_NTC : int64 
+	NID_NTC : int32 
 };
 
 
 type
 Position_Report_based_on_two_balise_groups = { 
-	NID_PACKET : int64 	 /* Packet =   1 */ ,
-	L_PACKET : int64 ,
+	NID_PACKET : int32 	 /* Packet =   1 */ ,
+	L_PACKET : int32 ,
 	qscale : Q_SCALE ,
-	NID_LRBG : int64 ,
-	NID_PRVLRBG : int64 ,
-	D_LRBG : int64 ,
+	NID_LRBG : int32 ,
+	NID_PRVLRBG : int32 ,
+	D_LRBG : int32 ,
 	dirlrbg : Q_DIRLRBG ,
 	dlrbg: Q_DLRBG ,
-	L_DOUBTOVER : int64 ,
-	L_DOUBTUNDER : int64 ,
+	L_DOUBTOVER : int32 ,
+	L_DOUBTUNDER : int32 ,
 	length : Q_LENGTH ,
-	L_TRAININT : int64 ,
-	V_TRAIN : int64 ,
+	L_TRAININT : int32 ,
+	V_TRAIN : int32 ,
 	dirtrain : Q_DIRTRAIN ,
 	mode: M_MODE ,
 	level : M_LEVEL ,
-	NID_NTC : int64 
+	NID_NTC : int32 
 };
 
 
@@ -1849,73 +1849,73 @@ type Var30 = {
 };
 type AVar30 = Var30 ^33 ;
 type SVar30 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar30
 };
 
 type
 Onboard_telephone_numbers = { 
-	NID_PACKET : int64 	 /* Packet =   3 */ ,
-	L_PACKET : int64 ,
+	NID_PACKET : int32 	 /* Packet =   3 */ ,
+	L_PACKET : int32 ,
 	Struct46 : SVar30
 };
 
 
 type
 Error_reporting = { 
-	NID_PACKET : int64 	 /* Packet =   4 */ ,
-	L_PACKET : int64 ,
+	NID_PACKET : int32 	 /* Packet =   4 */ ,
+	L_PACKET : int32 ,
 	error : M_ERROR 
 };
 
 
 type
 Train_running_number = { 
-	NID_PACKET : int64 	 /* Packet =   5 */ ,
-	L_PACKET : int64 ,
-	NID_OPERATIONAL : int64 
+	NID_PACKET : int32 	 /* Packet =   5 */ ,
+	L_PACKET : int32 ,
+	NID_OPERATIONAL : int32 
 };
 
 
 type
 Level_23_transition_information = { 
-	NID_PACKET : int64 	 /* Packet =   9 */ ,
-	L_PACKET : int64 ,
-	NID_LTRBG : int64 
+	NID_PACKET : int32 	 /* Packet =   9 */ ,
+	L_PACKET : int32 ,
+	NID_LTRBG : int32 
 };
 
 
 type Var110 = { 
-	M_VOLTAGE : int64,
-	NID_CTRACTION : int64
+	M_VOLTAGE : int32,
+	NID_CTRACTION : int32
 };
 type AVar110 = Var110 ^33 ;
 type SVar110 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar110
 };
 
 type Var111 = { 
-	NID_NTC : int64
+	NID_NTC : int32
 };
 type AVar111 = Var111 ^33 ;
 type SVar111 = { 
-	 N_ITER : int64,
+	 N_ITER : int32,
 	 Array : AVar111
 };
 
 type
 Validated_train_data = { 
-	NID_PACKET : int64 	 /* Packet =  11 */ ,
-	L_PACKET : int64 ,
-	NC_CDTRAIN : int64 ,
-	NC_TRAIN : int64 ,
-	L_TRAIN : int64 ,
-	V_MAXTRAIN : int64 ,
-	M_LOADINGGAUGE : int64 ,
-	M_AXLELOADCAT : int64 ,
-	M_AIRTIGHT : int64 ,
-	N_AXLE : int64 ,
+	NID_PACKET : int32 	 /* Packet =  11 */ ,
+	L_PACKET : int32 ,
+	NC_CDTRAIN : int32 ,
+	NC_TRAIN : int32 ,
+	L_TRAIN : int32 ,
+	V_MAXTRAIN : int32 ,
+	M_LOADINGGAUGE : int32 ,
+	M_AXLELOADCAT : int32 ,
+	M_AIRTIGHT : int32 ,
+	N_AXLE : int32 ,
 	Struct47 : SVar110,
 	Struct48 : SVar111
 };
@@ -1923,10 +1923,10 @@ Validated_train_data = {
 
 type
 Data_used_by_applications_outside_the_ERTMS_or_ETCS_system = { 
-	NID_PACKET : int64 	 /* Packet =  44 */ ,
-	L_PACKET : int64 ,
-	NID_XUSER : int64 ,
-	Other_data_depending_on__NID_XUSER :  int64
+	NID_PACKET : int32 	 /* Packet =  44 */ ,
+	L_PACKET : int32 ,
+	NID_XUSER : int32 ,
+	Other_data_depending_on__NID_XUSER :  int32
 };
 
 
@@ -1935,7 +1935,7 @@ package BothWays
 
 type
 End_of_Information = { 
-	NID_PACKET : int64 	 /* Packet = 255 */ 
+	NID_PACKET : int32 	 /* Packet = 255 */ 
 };
 
 

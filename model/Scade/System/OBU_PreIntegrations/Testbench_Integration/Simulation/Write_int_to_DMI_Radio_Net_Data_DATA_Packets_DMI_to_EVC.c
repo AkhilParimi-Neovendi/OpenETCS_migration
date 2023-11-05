@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -19,7 +19,7 @@ void Write_int_to_DMI_Radio_Net_Data_DATA_Packets_DMI_to_EVC(
     &outC->_L5,
     dmi_radio_net_data_int);
   outC->_L10 = outC->_L5[0];
-  outC->_L11 = kcg_lit_int64(1);
+  outC->_L11 = kcg_lit_int32(1);
   outC->_L9 = outC->_L11 == outC->_L10;
   outC->every = outC->_L9;
   if (outC->every) {
@@ -55,18 +55,18 @@ void Write_int_to_DMI_Radio_Net_Data_init_DATA_Packets_DMI_to_EVC(
   static kcg_size idx;
 
   outC->_L12.valid = kcg_true;
-  outC->_L12.systemTime = kcg_lit_int64(0);
+  outC->_L12.systemTime = kcg_lit_int32(0);
   outC->_L9 = kcg_true;
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
   outC->_L7.valid = kcg_true;
-  outC->_L7.systemTime = kcg_lit_int64(0);
+  outC->_L7.systemTime = kcg_lit_int32(0);
   for (idx = 0; idx < 2; idx++) {
-    outC->_L5[idx] = kcg_lit_int64(0);
+    outC->_L5[idx] = kcg_lit_int32(0);
   }
   outC->every = kcg_true;
   outC->dmi_radio_net_data_ct.valid = kcg_true;
-  outC->dmi_radio_net_data_ct.systemTime = kcg_lit_int64(0);
+  outC->dmi_radio_net_data_ct.systemTime = kcg_lit_int32(0);
   /* _L7=(DATA::Packets::DMI_to_EVC::C_int_to_DMI_Radio_Net_Data#1)/ */
   C_int_to_DMI_Radio_Net_Data_init_DATA_Packets_DMI_to_EVC(
     &outC->Context_C_int_to_DMI_Radio_Net_Data_1);
@@ -88,6 +88,6 @@ void Write_int_to_DMI_Radio_Net_Data_reset_DATA_Packets_DMI_to_EVC(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Write_int_to_DMI_Radio_Net_Data_DATA_Packets_DMI_to_EVC.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

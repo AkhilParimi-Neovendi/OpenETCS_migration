@@ -15,8 +15,8 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* level_int/ */ level_int;
-  kcg_int64 /* nid_stm_int/ */ nid_stm_int;
+  kcg_int32 /* level_int/ */ level_int;
+  kcg_int32 /* nid_stm_int/ */ nid_stm_int;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -26,7 +26,7 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   M_LEVEL /* _L7/ */ _L7;
   NID_STM_DMI_Types_Pkg /* _L6/ */ _L6;
-  kcg_int64 /* _L8/ */ _L8;
+  kcg_int32 /* _L8/ */ _L8;
   DMI_level_T_DMI_Types_Pkg /* _L14/ */ _L14;
 } outC_CAST_DMI_level_to_int_DATA_Variables;
 

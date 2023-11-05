@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -55,40 +55,40 @@ void sendLevelListPkg_init_manage_DMI_Output_Pkg(
   static kcg_size idx4;
 
   outC->_L17.valid = kcg_true;
-  outC->_L17.system_clock = kcg_lit_int64(0);
-  outC->_L17.levelList.number = kcg_lit_int64(0);
+  outC->_L17.system_clock = kcg_lit_int32(0);
+  outC->_L17.levelList.number = kcg_lit_int32(0);
   for (idx = 0; idx < 32; idx++) {
     outC->_L17.levelList.levelList[idx].level = M_LEVEL_Level_0;
-    outC->_L17.levelList.levelList[idx].nid_stm = kcg_lit_int64(0);
+    outC->_L17.levelList.levelList[idx].nid_stm = kcg_lit_int32(0);
   }
   outC->_L10.valid = kcg_true;
-  outC->_L10.system_clock = kcg_lit_int64(0);
-  outC->_L10.levelList.number = kcg_lit_int64(0);
+  outC->_L10.system_clock = kcg_lit_int32(0);
+  outC->_L10.levelList.number = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 32; idx1++) {
     outC->_L10.levelList.levelList[idx1].level = M_LEVEL_Level_0;
-    outC->_L10.levelList.levelList[idx1].nid_stm = kcg_lit_int64(0);
+    outC->_L10.levelList.levelList[idx1].nid_stm = kcg_lit_int32(0);
   }
   outC->_L9 = kcg_true;
   outC->_L4.valid = kcg_true;
-  outC->_L4.system_clock = kcg_lit_int64(0);
-  outC->_L4.levelList.number = kcg_lit_int64(0);
+  outC->_L4.system_clock = kcg_lit_int32(0);
+  outC->_L4.levelList.number = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 32; idx2++) {
     outC->_L4.levelList.levelList[idx2].level = M_LEVEL_Level_0;
-    outC->_L4.levelList.levelList[idx2].nid_stm = kcg_lit_int64(0);
+    outC->_L4.levelList.levelList[idx2].nid_stm = kcg_lit_int32(0);
   }
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L2 = kcg_true;
-  outC->_L1.number = kcg_lit_int64(0);
+  outC->_L1.number = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 32; idx3++) {
     outC->_L1.levelList[idx3].level = M_LEVEL_Level_0;
-    outC->_L1.levelList[idx3].nid_stm = kcg_lit_int64(0);
+    outC->_L1.levelList[idx3].nid_stm = kcg_lit_int32(0);
   }
   outC->levelDataPkg.valid = kcg_true;
-  outC->levelDataPkg.system_clock = kcg_lit_int64(0);
-  outC->levelDataPkg.levelList.number = kcg_lit_int64(0);
+  outC->levelDataPkg.system_clock = kcg_lit_int32(0);
+  outC->levelDataPkg.levelList.number = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 32; idx4++) {
     outC->levelDataPkg.levelList.levelList[idx4].level = M_LEVEL_Level_0;
-    outC->levelDataPkg.levelList.levelList[idx4].nid_stm = kcg_lit_int64(0);
+    outC->levelDataPkg.levelList.levelList[idx4].nid_stm = kcg_lit_int32(0);
   }
 }
 #endif /* KCG_USER_DEFINED_INIT */
@@ -105,6 +105,6 @@ void sendLevelListPkg_reset_manage_DMI_Output_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** sendLevelListPkg_manage_DMI_Output_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

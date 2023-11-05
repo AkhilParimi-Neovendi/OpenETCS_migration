@@ -26,15 +26,15 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   kcg_bool /* IfBlock2:then:IfBlock1:else:_L1/ */ _L1_else_IfBlock1_then_IfBlock2;
-  kcg_int64 /* IfBlock2:then:IfBlock1:then:_L5/ */ _L5_then_IfBlock1_then_IfBlock2;
+  kcg_int32 /* IfBlock2:then:IfBlock1:then:_L5/ */ _L5_then_IfBlock1_then_IfBlock2;
   kcg_bool /* IfBlock2:then:IfBlock1:then:_L4/ */ _L4_then_IfBlock1_then_IfBlock2;
   NID_MESSAGE /* IfBlock2:then:IfBlock1:then:_L3/ */ _L3_then_IfBlock1_then_IfBlock2;
   MetadataTruthtable_T1_CheckEuroradioMessage /* IfBlock2:then:IfBlock1:then:_L2/ */ _L2_then_IfBlock1_then_IfBlock2;
   kcg_bool /* IfBlock2:then:IfBlock1:then:_L1/ */ _L1_then_IfBlock1_then_IfBlock2;
-  kcg_int64 /* IfBlock2:then:IfBlock1:then:_L7/ */ _L7_then_IfBlock1_then_IfBlock2;
+  kcg_int32 /* IfBlock2:then:IfBlock1:then:_L7/ */ _L7_then_IfBlock1_then_IfBlock2;
   kcg_bool /* IfBlock2:else:_L1/ */ _L1_else_IfBlock2;
   kcg_bool /* present/ */ present;
-  kcg_int64 /* nid_packet/ */ nid_packet;
+  kcg_int32 /* nid_packet/ */ nid_packet;
   kcg_bool /* validTmp/ */ validTmp;
   MetadataElement_T_Common_Types_Pkg /* _L3/ */ _L3;
   NID_PACKET /* _L12/ */ _L12;
@@ -42,7 +42,7 @@ typedef struct {
   kcg_bool /* _L15/ */ _L15;
   kcg_bool /* _L16/ */ _L16;
   kcg_bool /* _L19/ */ _L19;
-  kcg_int64 /* _L20/ */ _L20;
+  kcg_int32 /* _L20/ */ _L20;
 } outC_CheckIfSinglePacketIsAllowedForRadioMessage_CheckEuroradioMessage_SubFunctions;
 
 /* ===========  node initialization and cycle functions  =========== */

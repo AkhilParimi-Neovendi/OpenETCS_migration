@@ -63,10 +63,10 @@ void InputF2Functions_init_Interfaces(outC_InputF2Functions_Interfaces *outC)
   outC->_L25.tNvContactError = kcg_true;
   outC->_L25.otherTimingError = kcg_true;
   outC->_L25.radioMessageConsistencyError = kcg_true;
-  outC->_L25.nid_c = kcg_lit_int64(0);
-  outC->_L25.nid_errorbg = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L14 = kcg_lit_int64(0);
+  outC->_L25.nid_c = kcg_lit_int32(0);
+  outC->_L25.nid_errorbg = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L14 = kcg_lit_int32(0);
   outC->_L15 = kcg_true;
   outC->_L16 = kcg_true;
   outC->_L17 = kcg_true;
@@ -81,8 +81,8 @@ void InputF2Functions_init_Interfaces(outC_InputF2Functions_Interfaces *outC)
   outC->_L1.Common_Errors.tNvContactError = kcg_true;
   outC->_L1.Common_Errors.otherTimingError = kcg_true;
   outC->_L1.Common_Errors.radioMessageConsistencyError = kcg_true;
-  outC->_L1.Common_Errors.nid_c = kcg_lit_int64(0);
-  outC->_L1.Common_Errors.nid_errorbg = kcg_lit_int64(0);
+  outC->_L1.Common_Errors.nid_c = kcg_lit_int32(0);
+  outC->_L1.Common_Errors.nid_errorbg = kcg_lit_int32(0);
   outC->_L1.Failure_Occured = kcg_true;
   outC->_L1.Continue_Shunting_Active = kcg_true;
   outC->_L1.Stop_Shunting_Stored = kcg_true;

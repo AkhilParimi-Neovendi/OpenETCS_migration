@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _CAST_DMI_gradientProfileElement_to_int_DATA_Variables_H_
 #define _CAST_DMI_gradientProfileElement_to_int_DATA_Variables_H_
@@ -15,10 +15,10 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* valid/ */ valid;
-  kcg_int64 /* start_section/ */ start_section;
-  kcg_int64 /* end_section/ */ end_section;
-  kcg_int64 /* gradiant/ */ gradiant;
+  kcg_int32 /* valid/ */ valid;
+  kcg_int32 /* start_section/ */ start_section;
+  kcg_int32 /* end_section/ */ end_section;
+  kcg_int32 /* gradiant/ */ gradiant;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -31,7 +31,7 @@ typedef struct {
   L_internal_Type_Obu_BasicTypes_Pkg /* _L4/ */ _L4;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L3/ */ _L3;
   G_internal_Type_Obu_BasicTypes_Pkg /* _L2/ */ _L2;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L6/ */ _L6;
 } outC_CAST_DMI_gradientProfileElement_to_int_DATA_Variables;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -56,6 +56,6 @@ extern void CAST_DMI_gradientProfileElement_to_int_init_DATA_Variables(
 #endif /* _CAST_DMI_gradientProfileElement_to_int_DATA_Variables_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_DMI_gradientProfileElement_to_int_DATA_Variables.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

@@ -16,7 +16,7 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   kcg_bool /* Busy/ */ Busy;
-  kcg_int64 /* SlotsUsed/ */ SlotsUsed;
+  kcg_int32 /* SlotsUsed/ */ SlotsUsed;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -25,12 +25,12 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* _L1/ */ _L1;
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L2/ */ _L2;
   kcg_bool /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L5/ */ _L5;
   _16_array /* _L6/ */ _L6;
-  kcg_int64 /* _L8/ */ _L8;
+  kcg_int32 /* _L8/ */ _L8;
   kcg_bool /* _L9/ */ _L9;
 } outC_CheckSpace_TM_TrainTrack_Bus;
 

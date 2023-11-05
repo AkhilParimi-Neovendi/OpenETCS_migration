@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _CheckEuroRadioMessage_CheckEuroradioMessage_H_
 #define _CheckEuroRadioMessage_CheckEuroradioMessage_H_
@@ -37,8 +37,8 @@ typedef struct {
   kcg_bool /* IfBlock1: */ IfBlock1_clock;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* IfBlock1:then:_L104/ */ _L104_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L103/ */ _L103_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L104/ */ _L104_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L103/ */ _L103_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L102/ */ _L102_then_IfBlock1;
   TrackSide_ForCheck_T_Common_Types_Pkg /* IfBlock1:then:_L99/ */ _L99_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L100/ */ _L100_then_IfBlock1;
@@ -120,6 +120,6 @@ extern void kcg_load_SV_CheckEuroRadioMessage_CheckEuroradioMessage(
 #endif /* _CheckEuroRadioMessage_CheckEuroradioMessage_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CheckEuroRadioMessage_CheckEuroradioMessage.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

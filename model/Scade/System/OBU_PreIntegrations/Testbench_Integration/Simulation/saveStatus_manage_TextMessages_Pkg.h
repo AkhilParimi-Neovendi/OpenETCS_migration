@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _saveStatus_manage_TextMessages_Pkg_H_
 #define _saveStatus_manage_TextMessages_Pkg_H_
@@ -26,7 +26,7 @@ typedef struct {
   DMI_TXT_MSGList_status_T_DMI_Types_Pkg /* _L1/ */ _L1;
   DMI_TXT_MSG_status_T_DMI_Types_Pkg /* _L2/ */ _L2;
   DMI_TXT_MSGList_status_T_DMI_Types_Pkg /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   DMI_TXT_MSGList_status_T_DMI_Types_Pkg /* _L6/ */ _L6;
   kcg_bool /* _L8/ */ _L8;
   DMI_TXT_MSG_status_T_DMI_Types_Pkg /* _L9/ */ _L9;
@@ -56,6 +56,6 @@ extern void saveStatus_init_manage_TextMessages_Pkg(
 #endif /* _saveStatus_manage_TextMessages_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** saveStatus_manage_TextMessages_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

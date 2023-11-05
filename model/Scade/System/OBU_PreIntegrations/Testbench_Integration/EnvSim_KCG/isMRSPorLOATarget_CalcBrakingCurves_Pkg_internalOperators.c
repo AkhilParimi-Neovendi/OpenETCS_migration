@@ -13,7 +13,7 @@ void isMRSPorLOATarget_CalcBrakingCurves_Pkg_internalOperators(
   Target_real_T_TargetManagement_types *Target,
   outC_isMRSPorLOATarget_CalcBrakingCurves_Pkg_internalOperators *outC)
 {
-  outC->_L9 = kcg_lit_float64(0.0);
+  outC->_L9 = kcg_lit_float32(0.0);
   kcg_copy_Target_real_T_TargetManagement_types(&outC->_L1, Target);
   outC->_L2 = outC->_L1.speed;
   outC->_L8 = outC->_L2 > outC->_L9;
@@ -24,12 +24,12 @@ void isMRSPorLOATarget_CalcBrakingCurves_Pkg_internalOperators(
 void isMRSPorLOATarget_init_CalcBrakingCurves_Pkg_internalOperators(
   outC_isMRSPorLOATarget_CalcBrakingCurves_Pkg_internalOperators *outC)
 {
-  outC->_L9 = kcg_lit_float64(0.0);
+  outC->_L9 = kcg_lit_float32(0.0);
   outC->_L8 = kcg_true;
-  outC->_L2 = kcg_lit_float64(0.0);
+  outC->_L2 = kcg_lit_float32(0.0);
   outC->_L1.targetType = EoA_TargetManagement_types;
-  outC->_L1.distance = kcg_lit_float64(0.0);
-  outC->_L1.speed = kcg_lit_float64(0.0);
+  outC->_L1.distance = kcg_lit_float32(0.0);
+  outC->_L1.speed = kcg_lit_float32(0.0);
   outC->isVnonZero = kcg_true;
 }
 #endif /* KCG_USER_DEFINED_INIT */

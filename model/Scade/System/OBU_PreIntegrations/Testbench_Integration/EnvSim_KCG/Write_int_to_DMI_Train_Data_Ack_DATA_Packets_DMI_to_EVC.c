@@ -19,7 +19,7 @@ void Write_int_to_DMI_Train_Data_Ack_DATA_Packets_DMI_to_EVC(
     &outC->_L8,
     dmi_train_data_ack_int);
   outC->_L13 = outC->_L8[0];
-  outC->_L14 = kcg_lit_int64(1);
+  outC->_L14 = kcg_lit_int32(1);
   outC->_L12 = outC->_L14 == outC->_L13;
   outC->every = outC->_L12;
   if (outC->every) {
@@ -57,20 +57,20 @@ void Write_int_to_DMI_Train_Data_Ack_init_DATA_Packets_DMI_to_EVC(
   static kcg_size idx;
 
   outC->_L16.valid = kcg_true;
-  outC->_L16.systemTime = kcg_lit_int64(0);
+  outC->_L16.systemTime = kcg_lit_int32(0);
   outC->_L16.acknowledged = kcg_true;
   outC->_L15.valid = kcg_true;
-  outC->_L15.systemTime = kcg_lit_int64(0);
+  outC->_L15.systemTime = kcg_lit_int32(0);
   outC->_L15.acknowledged = kcg_true;
   outC->_L12 = kcg_true;
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L14 = kcg_lit_int64(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L14 = kcg_lit_int32(0);
   for (idx = 0; idx < 3; idx++) {
-    outC->_L8[idx] = kcg_lit_int64(0);
+    outC->_L8[idx] = kcg_lit_int32(0);
   }
   outC->every = kcg_true;
   outC->dmi_train_data_ack_ct.valid = kcg_true;
-  outC->dmi_train_data_ack_ct.systemTime = kcg_lit_int64(0);
+  outC->dmi_train_data_ack_ct.systemTime = kcg_lit_int32(0);
   outC->dmi_train_data_ack_ct.acknowledged = kcg_true;
   /* _L15=(DATA::Packets::DMI_to_EVC::C_int_to_DMI_Train_Data_Ack1#1)/ */
   C_int_to_DMI_Train_Data_Ack1_init_DATA_Packets_DMI_to_EVC(

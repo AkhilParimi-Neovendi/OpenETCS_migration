@@ -16,10 +16,10 @@ void CAST_NID_MESSAGE_to_int_TM_conversions(
   kcg_bool noname;
   kcg_bool _1_noname;
 
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L1 = nid_message;
   outC->_L4 = outC->_L1 < outC->_L5;
-  outC->_L3 = kcg_lit_int64(256);
+  outC->_L3 = kcg_lit_int32(256);
   outC->_L2 = outC->_L1 > outC->_L3;
   _1_noname = outC->_L2;
   noname = outC->_L4;
@@ -31,11 +31,11 @@ void CAST_NID_MESSAGE_to_int_init_TM_conversions(
   outC_CAST_NID_MESSAGE_to_int_TM_conversions *outC)
 {
   outC->_L2 = kcg_true;
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L4 = kcg_true;
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->nid_message_int = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->nid_message_int = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

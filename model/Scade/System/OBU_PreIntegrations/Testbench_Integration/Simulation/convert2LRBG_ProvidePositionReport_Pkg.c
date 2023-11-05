@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -17,7 +17,7 @@ void convert2LRBG_ProvidePositionReport_Pkg(
 {
   outC->_L2 = nid_bg;
   outC->_L1 = nid_c;
-  outC->_L4 = kcg_lit_int64(100000);
+  outC->_L4 = kcg_lit_int32(100000);
   outC->_L3 = outC->_L4 * outC->_L1;
   outC->_L5 = outC->_L3 + outC->_L2;
   outC->nid_lrbg = outC->_L5;
@@ -27,12 +27,12 @@ void convert2LRBG_ProvidePositionReport_Pkg(
 void convert2LRBG_init_ProvidePositionReport_Pkg(
   outC_convert2LRBG_ProvidePositionReport_Pkg *outC)
 {
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->nid_lrbg = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->nid_lrbg = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -48,6 +48,6 @@ void convert2LRBG_reset_ProvidePositionReport_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** convert2LRBG_ProvidePositionReport_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

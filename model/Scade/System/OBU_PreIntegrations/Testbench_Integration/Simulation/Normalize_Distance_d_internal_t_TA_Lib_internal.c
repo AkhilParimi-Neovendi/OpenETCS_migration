@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -12,7 +12,7 @@ void Normalize_Distance_d_internal_t_TA_Lib_internal(
   /* q_scale/ */
   Q_SCALE q_scale,
   /* d/ */
-  kcg_int64 d,
+  kcg_int32 d,
   outC_Normalize_Distance_d_internal_t_TA_Lib_internal *outC)
 {
   /* d_internal/ */
@@ -29,7 +29,7 @@ void Normalize_Distance_d_internal_t_TA_Lib_internal(
   outC->IfBlock1_clock = outC->q_scale_in == ENUM_Q_SCALE_10cm_TM_conversions;
   /* IfBlock1: */
   if (outC->IfBlock1_clock) {
-    outC->_L3_then_IfBlock1 = kcg_lit_int64(10);
+    outC->_L3_then_IfBlock1 = kcg_lit_int32(10);
     outC->_L1_then_IfBlock1 = d;
     outC->_L2_then_IfBlock1 = outC->_L1_then_IfBlock1 * outC->_L3_then_IfBlock1;
     d_internal_partial = outC->_L2_then_IfBlock1;
@@ -39,7 +39,7 @@ void Normalize_Distance_d_internal_t_TA_Lib_internal(
     outC->else_clock_IfBlock1 = outC->q_scale_in == ENUM_Q_SCALE_1m_TM_conversions;
     /* IfBlock1:else: */
     if (outC->else_clock_IfBlock1) {
-      outC->_L2_then_else_IfBlock1 = kcg_lit_int64(100);
+      outC->_L2_then_else_IfBlock1 = kcg_lit_int32(100);
       outC->_L1_then_else_IfBlock1 = d;
       outC->_L3_then_else_IfBlock1 = outC->_L1_then_else_IfBlock1 *
         outC->_L2_then_else_IfBlock1;
@@ -47,7 +47,7 @@ void Normalize_Distance_d_internal_t_TA_Lib_internal(
       _1_d_internal_partial = _3_d_internal_partial;
     }
     else {
-      outC->_L1_else_else_IfBlock1 = kcg_lit_int64(1000);
+      outC->_L1_else_else_IfBlock1 = kcg_lit_int32(1000);
       outC->_L2_else_else_IfBlock1 = d;
       outC->_L3_else_else_IfBlock1 = outC->_L2_else_else_IfBlock1 *
         outC->_L1_else_else_IfBlock1;
@@ -65,17 +65,17 @@ void Normalize_Distance_d_internal_t_init_TA_Lib_internal(
   outC->_L1 = Q_SCALE_10_cm_scale;
   outC->q_scale_in = Q_SCALE_10_cm_scale;
   outC->IfBlock1_clock = kcg_true;
-  outC->_L1_then_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L2_then_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L3_then_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L1_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L2_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L3_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L2_then_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L3_then_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L1_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L2_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L3_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_IfBlock1 = kcg_true;
-  outC->_L1_then_IfBlock1 = kcg_lit_int64(0);
-  outC->_L2_then_IfBlock1 = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock1 = kcg_lit_int64(0);
-  outC->d_internal = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1 = kcg_lit_int32(0);
+  outC->_L2_then_IfBlock1 = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock1 = kcg_lit_int32(0);
+  outC->d_internal = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -91,6 +91,6 @@ void Normalize_Distance_d_internal_t_reset_TA_Lib_internal(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Normalize_Distance_d_internal_t_TA_Lib_internal.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

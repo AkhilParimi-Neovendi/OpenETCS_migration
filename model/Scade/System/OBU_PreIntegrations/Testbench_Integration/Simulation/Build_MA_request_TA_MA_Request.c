@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -23,7 +23,7 @@ void Build_MA_request_TA_MA_Request(
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus *bus_in,
   outC_Build_MA_request_TA_MA_Request *outC)
 {
-  static kcg_int64 noname;
+  static kcg_int32 noname;
 
   outC->_L34 = Q_MARQSTREASON_Start_selected_by_driver;
   outC->_L35 = Q_MARQSTREASON_Track_description_deleted;
@@ -39,8 +39,8 @@ void Build_MA_request_TA_MA_Request(
   outC->_L85 = t_train;
   kcg_copy_M_TrainTrackMessageBus_t_TM_TrainTrack_Bus(&outC->_L108, bus_in);
   outC->_L100 = kcg_true;
-  outC->_L97 = kcg_lit_int64(132);
-  outC->_L101 = kcg_lit_int64(0);
+  outC->_L97 = kcg_lit_int32(132);
+  outC->_L101 = kcg_lit_int32(0);
   kcg_copy_trainProperties_T_TrainPosition_Types_Pck(&outC->_L99, trainProps);
   outC->_L102 = outC->_L99.nid_engine;
   outC->_L103 = outC->q_marqrstreason_local;
@@ -98,134 +98,134 @@ void Build_MA_request_init_TA_MA_Request(
   static kcg_size idx5;
 
   outC->_L114 = Q_MARQSTREASON_Start_selected_by_driver;
-  outC->_L111 = kcg_lit_int64(0);
+  outC->_L111 = kcg_lit_int32(0);
   outC->_L110.valid = kcg_true;
-  outC->_L110.nid_packet = kcg_lit_int64(0);
-  outC->_L110.l_packet = kcg_lit_int64(0);
+  outC->_L110.nid_packet = kcg_lit_int32(0);
+  outC->_L110.l_packet = kcg_lit_int32(0);
   outC->_L110.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L110.nid_lrbg = kcg_lit_int64(0);
-  outC->_L110.nid_prvlrbg = kcg_lit_int64(0);
-  outC->_L110.d_lrbg = kcg_lit_int64(0);
+  outC->_L110.nid_lrbg = kcg_lit_int32(0);
+  outC->_L110.nid_prvlrbg = kcg_lit_int32(0);
+  outC->_L110.d_lrbg = kcg_lit_int32(0);
   outC->_L110.q_dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L110.q_dlrbg = Q_DLRBG_Reverse;
-  outC->_L110.l_doubtover = kcg_lit_int64(0);
-  outC->_L110.l_doubtunder = kcg_lit_int64(0);
+  outC->_L110.l_doubtover = kcg_lit_int32(0);
+  outC->_L110.l_doubtunder = kcg_lit_int32(0);
   outC->_L110.q_length = Q_LENGTH_No_train_integrity_information_available;
-  outC->_L110.l_trainint = kcg_lit_int64(0);
-  outC->_L110.v_train = kcg_lit_int64(0);
+  outC->_L110.l_trainint = kcg_lit_int32(0);
+  outC->_L110.v_train = kcg_lit_int32(0);
   outC->_L110.q_dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L110.m_mode = M_MODE_Full_Supervision;
   outC->_L110.m_level = M_LEVEL_Level_0;
-  outC->_L110.nid_ntc = kcg_lit_int64(0);
+  outC->_L110.nid_ntc = kcg_lit_int32(0);
   outC->_L109.valid = kcg_true;
-  outC->_L109.nid_packet = kcg_lit_int64(0);
-  outC->_L109.l_packet = kcg_lit_int64(0);
+  outC->_L109.nid_packet = kcg_lit_int32(0);
+  outC->_L109.l_packet = kcg_lit_int32(0);
   outC->_L109.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L109.nid_lrbg = kcg_lit_int64(0);
-  outC->_L109.d_lrbg = kcg_lit_int64(0);
+  outC->_L109.nid_lrbg = kcg_lit_int32(0);
+  outC->_L109.d_lrbg = kcg_lit_int32(0);
   outC->_L109.q_dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L109.q_dlrbg = Q_DLRBG_Reverse;
-  outC->_L109.l_doubtover = kcg_lit_int64(0);
-  outC->_L109.l_doubtunder = kcg_lit_int64(0);
+  outC->_L109.l_doubtover = kcg_lit_int32(0);
+  outC->_L109.l_doubtunder = kcg_lit_int32(0);
   outC->_L109.q_length = Q_LENGTH_No_train_integrity_information_available;
-  outC->_L109.l_trainint = kcg_lit_int64(0);
-  outC->_L109.v_train = kcg_lit_int64(0);
+  outC->_L109.l_trainint = kcg_lit_int32(0);
+  outC->_L109.v_train = kcg_lit_int32(0);
   outC->_L109.q_dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L109.m_mode = M_MODE_Full_Supervision;
   outC->_L109.m_level = M_LEVEL_Level_0;
-  outC->_L109.nid_ntc = kcg_lit_int64(0);
+  outC->_L109.nid_ntc = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 5; idx1++) {
     outC->_L108[idx1].Message.valid = kcg_true;
-    outC->_L108[idx1].Message.nid_message = kcg_lit_int64(0);
-    outC->_L108[idx1].Message.l_message = kcg_lit_int64(0);
-    outC->_L108[idx1].Message.t_train = kcg_lit_int64(0);
-    outC->_L108[idx1].Message.nid_engine = kcg_lit_int64(0);
-    outC->_L108[idx1].Message.field1 = kcg_lit_int64(0);
-    outC->_L108[idx1].Message.field2 = kcg_lit_int64(0);
-    outC->_L108[idx1].Message.field3 = kcg_lit_int64(0);
+    outC->_L108[idx1].Message.nid_message = kcg_lit_int32(0);
+    outC->_L108[idx1].Message.l_message = kcg_lit_int32(0);
+    outC->_L108[idx1].Message.t_train = kcg_lit_int32(0);
+    outC->_L108[idx1].Message.nid_engine = kcg_lit_int32(0);
+    outC->_L108[idx1].Message.field1 = kcg_lit_int32(0);
+    outC->_L108[idx1].Message.field2 = kcg_lit_int32(0);
+    outC->_L108[idx1].Message.field3 = kcg_lit_int32(0);
     for (idx = 0; idx < 50; idx++) {
-      outC->_L108[idx1].OptionalPackets[idx] = kcg_lit_int64(0);
+      outC->_L108[idx1].OptionalPackets[idx] = kcg_lit_int32(0);
     }
   }
   outC->_L107.valid = kcg_true;
-  outC->_L107.packet1.NID_PACKET = kcg_lit_int64(0);
-  outC->_L107.packet1.L_PACKET = kcg_lit_int64(0);
+  outC->_L107.packet1.NID_PACKET = kcg_lit_int32(0);
+  outC->_L107.packet1.L_PACKET = kcg_lit_int32(0);
   outC->_L107.packet1.qscale = Q_SCALE_10_cm_scale;
-  outC->_L107.packet1.NID_LRBG = kcg_lit_int64(0);
-  outC->_L107.packet1.NID_PRVLRBG = kcg_lit_int64(0);
-  outC->_L107.packet1.D_LRBG = kcg_lit_int64(0);
+  outC->_L107.packet1.NID_LRBG = kcg_lit_int32(0);
+  outC->_L107.packet1.NID_PRVLRBG = kcg_lit_int32(0);
+  outC->_L107.packet1.D_LRBG = kcg_lit_int32(0);
   outC->_L107.packet1.dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L107.packet1.dlrbg = Q_DLRBG_Reverse;
-  outC->_L107.packet1.L_DOUBTOVER = kcg_lit_int64(0);
-  outC->_L107.packet1.L_DOUBTUNDER = kcg_lit_int64(0);
+  outC->_L107.packet1.L_DOUBTOVER = kcg_lit_int32(0);
+  outC->_L107.packet1.L_DOUBTUNDER = kcg_lit_int32(0);
   outC->_L107.packet1.length = Q_LENGTH_No_train_integrity_information_available;
-  outC->_L107.packet1.L_TRAININT = kcg_lit_int64(0);
-  outC->_L107.packet1.V_TRAIN = kcg_lit_int64(0);
+  outC->_L107.packet1.L_TRAININT = kcg_lit_int32(0);
+  outC->_L107.packet1.V_TRAIN = kcg_lit_int32(0);
   outC->_L107.packet1.dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L107.packet1.mode = M_MODE_Full_Supervision;
   outC->_L107.packet1.level = M_LEVEL_Level_0;
-  outC->_L107.packet1.NID_NTC = kcg_lit_int64(0);
+  outC->_L107.packet1.NID_NTC = kcg_lit_int32(0);
   outC->_L106.valid = kcg_true;
-  outC->_L106.packet0.NID_PACKET = kcg_lit_int64(0);
-  outC->_L106.packet0.L_PACKET = kcg_lit_int64(0);
+  outC->_L106.packet0.NID_PACKET = kcg_lit_int32(0);
+  outC->_L106.packet0.L_PACKET = kcg_lit_int32(0);
   outC->_L106.packet0.qscale = Q_SCALE_10_cm_scale;
-  outC->_L106.packet0.NID_LRBG = kcg_lit_int64(0);
-  outC->_L106.packet0.D_LRBG = kcg_lit_int64(0);
+  outC->_L106.packet0.NID_LRBG = kcg_lit_int32(0);
+  outC->_L106.packet0.D_LRBG = kcg_lit_int32(0);
   outC->_L106.packet0.dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L106.packet0.dlrbg = Q_DLRBG_Reverse;
-  outC->_L106.packet0.L_DOUBTOVER = kcg_lit_int64(0);
-  outC->_L106.packet0.L_DOUBTUNDER = kcg_lit_int64(0);
+  outC->_L106.packet0.L_DOUBTOVER = kcg_lit_int32(0);
+  outC->_L106.packet0.L_DOUBTUNDER = kcg_lit_int32(0);
   outC->_L106.packet0.length = Q_LENGTH_No_train_integrity_information_available;
-  outC->_L106.packet0.L_TRAININT = kcg_lit_int64(0);
-  outC->_L106.packet0.V_TRAIN = kcg_lit_int64(0);
+  outC->_L106.packet0.L_TRAININT = kcg_lit_int32(0);
+  outC->_L106.packet0.V_TRAIN = kcg_lit_int32(0);
   outC->_L106.packet0.dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L106.packet0.mode = M_MODE_Full_Supervision;
   outC->_L106.packet0.level = M_LEVEL_Level_0;
-  outC->_L106.packet0.NID_NTC = kcg_lit_int64(0);
+  outC->_L106.packet0.NID_NTC = kcg_lit_int32(0);
   outC->_L105.valid = kcg_true;
-  outC->_L105.nid_packet = kcg_lit_int64(0);
-  outC->_L105.l_packet = kcg_lit_int64(0);
-  outC->_L105.nid_ltrbg = kcg_lit_int64(0);
+  outC->_L105.nid_packet = kcg_lit_int32(0);
+  outC->_L105.l_packet = kcg_lit_int32(0);
+  outC->_L105.nid_ltrbg = kcg_lit_int32(0);
   outC->_L104 =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L103 = Q_MARQSTREASON_Start_selected_by_driver;
-  outC->_L97 = kcg_lit_int64(0);
+  outC->_L97 = kcg_lit_int32(0);
   outC->_L98.valid = kcg_true;
-  outC->_L98.nid_message = kcg_lit_int64(0);
-  outC->_L98.l_message = kcg_lit_int64(0);
-  outC->_L98.t_train = kcg_lit_int64(0);
-  outC->_L98.nid_engine = kcg_lit_int64(0);
+  outC->_L98.nid_message = kcg_lit_int32(0);
+  outC->_L98.l_message = kcg_lit_int32(0);
+  outC->_L98.t_train = kcg_lit_int32(0);
+  outC->_L98.nid_engine = kcg_lit_int32(0);
   outC->_L98.q_marqstreason = Q_MARQSTREASON_Start_selected_by_driver;
-  outC->_L99.nid_engine = kcg_lit_int64(0);
-  outC->_L99.nid_operational = kcg_lit_int64(0);
-  outC->_L99.l_train = kcg_lit_int64(0);
-  outC->_L99.d_baliseAntenna_2_frontend.nominal = kcg_lit_int64(0);
-  outC->_L99.d_baliseAntenna_2_frontend.d_min = kcg_lit_int64(0);
-  outC->_L99.d_baliseAntenna_2_frontend.d_max = kcg_lit_int64(0);
-  outC->_L99.d_frontend_2_rearend.nominal = kcg_lit_int64(0);
-  outC->_L99.d_frontend_2_rearend.d_min = kcg_lit_int64(0);
-  outC->_L99.d_frontend_2_rearend.d_max = kcg_lit_int64(0);
-  outC->_L99.locationAccuracy_DefaultValue.nominal = kcg_lit_int64(0);
-  outC->_L99.locationAccuracy_DefaultValue.d_min = kcg_lit_int64(0);
-  outC->_L99.locationAccuracy_DefaultValue.d_max = kcg_lit_int64(0);
-  outC->_L99.centerDetectionAcc_DefaultValue.nominal = kcg_lit_int64(0);
-  outC->_L99.centerDetectionAcc_DefaultValue.d_min = kcg_lit_int64(0);
-  outC->_L99.centerDetectionAcc_DefaultValue.d_max = kcg_lit_int64(0);
+  outC->_L99.nid_engine = kcg_lit_int32(0);
+  outC->_L99.nid_operational = kcg_lit_int32(0);
+  outC->_L99.l_train = kcg_lit_int32(0);
+  outC->_L99.d_baliseAntenna_2_frontend.nominal = kcg_lit_int32(0);
+  outC->_L99.d_baliseAntenna_2_frontend.d_min = kcg_lit_int32(0);
+  outC->_L99.d_baliseAntenna_2_frontend.d_max = kcg_lit_int32(0);
+  outC->_L99.d_frontend_2_rearend.nominal = kcg_lit_int32(0);
+  outC->_L99.d_frontend_2_rearend.d_min = kcg_lit_int32(0);
+  outC->_L99.d_frontend_2_rearend.d_max = kcg_lit_int32(0);
+  outC->_L99.locationAccuracy_DefaultValue.nominal = kcg_lit_int32(0);
+  outC->_L99.locationAccuracy_DefaultValue.d_min = kcg_lit_int32(0);
+  outC->_L99.locationAccuracy_DefaultValue.d_max = kcg_lit_int32(0);
+  outC->_L99.centerDetectionAcc_DefaultValue.nominal = kcg_lit_int32(0);
+  outC->_L99.centerDetectionAcc_DefaultValue.d_min = kcg_lit_int32(0);
+  outC->_L99.centerDetectionAcc_DefaultValue.d_max = kcg_lit_int32(0);
   outC->_L100 = kcg_true;
-  outC->_L101 = kcg_lit_int64(0);
-  outC->_L102 = kcg_lit_int64(0);
-  outC->_L85 = kcg_lit_int64(0);
+  outC->_L101 = kcg_lit_int32(0);
+  outC->_L102 = kcg_lit_int32(0);
+  outC->_L85 = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 5; idx3++) {
     outC->_L84[idx3].Message.valid = kcg_true;
-    outC->_L84[idx3].Message.nid_message = kcg_lit_int64(0);
-    outC->_L84[idx3].Message.l_message = kcg_lit_int64(0);
-    outC->_L84[idx3].Message.t_train = kcg_lit_int64(0);
-    outC->_L84[idx3].Message.nid_engine = kcg_lit_int64(0);
-    outC->_L84[idx3].Message.field1 = kcg_lit_int64(0);
-    outC->_L84[idx3].Message.field2 = kcg_lit_int64(0);
-    outC->_L84[idx3].Message.field3 = kcg_lit_int64(0);
+    outC->_L84[idx3].Message.nid_message = kcg_lit_int32(0);
+    outC->_L84[idx3].Message.l_message = kcg_lit_int32(0);
+    outC->_L84[idx3].Message.t_train = kcg_lit_int32(0);
+    outC->_L84[idx3].Message.nid_engine = kcg_lit_int32(0);
+    outC->_L84[idx3].Message.field1 = kcg_lit_int32(0);
+    outC->_L84[idx3].Message.field2 = kcg_lit_int32(0);
+    outC->_L84[idx3].Message.field3 = kcg_lit_int32(0);
     for (idx2 = 0; idx2 < 50; idx2++) {
-      outC->_L84[idx3].OptionalPackets[idx2] = kcg_lit_int64(0);
+      outC->_L84[idx3].OptionalPackets[idx2] = kcg_lit_int32(0);
     }
   }
   outC->_L35 = Q_MARQSTREASON_Start_selected_by_driver;
@@ -234,15 +234,15 @@ void Build_MA_request_init_TA_MA_Request(
   outC->q_marqrstreason_local = Q_MARQSTREASON_Start_selected_by_driver;
   for (idx5 = 0; idx5 < 5; idx5++) {
     outC->bus_out[idx5].Message.valid = kcg_true;
-    outC->bus_out[idx5].Message.nid_message = kcg_lit_int64(0);
-    outC->bus_out[idx5].Message.l_message = kcg_lit_int64(0);
-    outC->bus_out[idx5].Message.t_train = kcg_lit_int64(0);
-    outC->bus_out[idx5].Message.nid_engine = kcg_lit_int64(0);
-    outC->bus_out[idx5].Message.field1 = kcg_lit_int64(0);
-    outC->bus_out[idx5].Message.field2 = kcg_lit_int64(0);
-    outC->bus_out[idx5].Message.field3 = kcg_lit_int64(0);
+    outC->bus_out[idx5].Message.nid_message = kcg_lit_int32(0);
+    outC->bus_out[idx5].Message.l_message = kcg_lit_int32(0);
+    outC->bus_out[idx5].Message.t_train = kcg_lit_int32(0);
+    outC->bus_out[idx5].Message.nid_engine = kcg_lit_int32(0);
+    outC->bus_out[idx5].Message.field1 = kcg_lit_int32(0);
+    outC->bus_out[idx5].Message.field2 = kcg_lit_int32(0);
+    outC->bus_out[idx5].Message.field3 = kcg_lit_int32(0);
     for (idx4 = 0; idx4 < 50; idx4++) {
-      outC->bus_out[idx5].OptionalPackets[idx4] = kcg_lit_int64(0);
+      outC->bus_out[idx5].OptionalPackets[idx4] = kcg_lit_int32(0);
     }
   }
   /* _L84=(TM_radio_messages::Send_M132#1)/ */
@@ -295,6 +295,6 @@ void kcg_load_SV_Build_MA_request_TA_MA_Request(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Build_MA_request_TA_MA_Request.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

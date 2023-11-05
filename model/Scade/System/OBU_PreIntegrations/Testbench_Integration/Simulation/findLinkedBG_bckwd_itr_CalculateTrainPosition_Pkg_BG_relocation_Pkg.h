@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _findLinkedBG_bckwd_itr_CalculateTrainPosition_Pkg_BG_relocation_Pkg_H_
 #define _findLinkedBG_bckwd_itr_CalculateTrainPosition_Pkg_BG_relocation_Pkg_H_
@@ -30,11 +30,11 @@ typedef struct {
   kcg_bool /* _L11/ */ _L11;
   linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg /* _L12/ */ _L12;
   linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg /* _L19/ */ _L19;
-  kcg_int64 /* _L20/ */ _L20;
+  kcg_int32 /* _L20/ */ _L20;
   linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg /* _L25/ */ _L25;
-  kcg_int64 /* _L26/ */ _L26;
-  kcg_int64 /* _L27/ */ _L27;
-  kcg_int64 /* _L28/ */ _L28;
+  kcg_int32 /* _L26/ */ _L26;
+  kcg_int32 /* _L27/ */ _L27;
+  kcg_int32 /* _L28/ */ _L28;
 } outC_findLinkedBG_bckwd_itr_CalculateTrainPosition_Pkg_BG_relocation_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -63,6 +63,6 @@ extern void findLinkedBG_bckwd_itr_init_CalculateTrainPosition_Pkg_BG_relocation
 #endif /* _findLinkedBG_bckwd_itr_CalculateTrainPosition_Pkg_BG_relocation_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** findLinkedBG_bckwd_itr_CalculateTrainPosition_Pkg_BG_relocation_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

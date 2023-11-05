@@ -16,7 +16,7 @@ void Encode_NID_PACKET_TM_TrainToTrack(
   outC_Encode_NID_PACKET_TM_TrainToTrack *outC)
 {
   outC->_L13 = nid_meta_p000_TM_radio_messages;
-  outC->_L11 = kcg_lit_int64(0);
+  outC->_L11 = kcg_lit_int32(0);
   outC->_L1 = nid_packet;
   outC->_L10 = outC->_L1 == outC->_L11;
   /* _L9= */
@@ -42,15 +42,15 @@ void Encode_NID_PACKET_TM_TrainToTrack(
 void Encode_NID_PACKET_init_TM_TrainToTrack(
   outC_Encode_NID_PACKET_TM_TrainToTrack *outC)
 {
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
   outC->_L10 = kcg_true;
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
   outC->_L6 = kcg_true;
-  outC->_L1 = kcg_lit_int64(0);
-  outC->meta = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->meta = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

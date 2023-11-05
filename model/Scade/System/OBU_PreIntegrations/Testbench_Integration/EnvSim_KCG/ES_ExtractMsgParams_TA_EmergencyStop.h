@@ -29,7 +29,7 @@ typedef struct {
   Radio_TrackTrain_Header_T_Radio_Types_Pkg /* _L2/ */ _L2;
   NID_EM /* _L3/ */ _L3;
   NID_EM /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   kcg_bool /* _L6/ */ _L6;
   Q_SCALE /* _L7/ */ _L7;
   D_REF /* _L10/ */ _L10;

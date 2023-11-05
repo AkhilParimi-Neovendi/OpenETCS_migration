@@ -14,24 +14,24 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* timestamp/ */ timestamp;
+  kcg_int32 /* timestamp/ */ timestamp;
   /* -----------------------  no local probes  ----------------------- */
   /* ----------------------- local memories  ------------------------- */
   kcg_bool init;
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L2/ */ _L2;
   /* -------------------- no sub nodes' contexts  -------------------- */
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L3/ */ _L3;
 } outC_TRAIN_systemTimeGenerator_Toolbox_Functions;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* Toolbox::Functions::TRAIN_systemTimeGenerator/ */
 extern void TRAIN_systemTimeGenerator_Toolbox_Functions(
   /* deltaTime/ */
-  kcg_int64 deltaTime,
+  kcg_int32 deltaTime,
   outC_TRAIN_systemTimeGenerator_Toolbox_Functions *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

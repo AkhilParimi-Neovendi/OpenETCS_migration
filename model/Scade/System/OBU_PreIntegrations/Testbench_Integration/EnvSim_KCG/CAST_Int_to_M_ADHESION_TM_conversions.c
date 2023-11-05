@@ -10,7 +10,7 @@
 /* TM_conversions::CAST_Int_to_M_ADHESION/ */
 void CAST_Int_to_M_ADHESION_TM_conversions(
   /* m_adhesion_int/ */
-  kcg_int64 m_adhesion_int,
+  kcg_int32 m_adhesion_int,
   outC_CAST_Int_to_M_ADHESION_TM_conversions *outC)
 {
   /* m_adhesion/ */
@@ -76,8 +76,8 @@ void CAST_Int_to_M_ADHESION_init_TM_conversions(
   outC_CAST_Int_to_M_ADHESION_TM_conversions *outC)
 {
   outC->_L34 = kcg_true;
-  outC->_L1 = kcg_lit_int64(0);
-  outC->m_adhesion_in = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->m_adhesion_in = kcg_lit_int32(0);
   outC->error = kcg_true;
   outC->IfBlock1_clock = kcg_true;
   outC->_L7_then_else_IfBlock1 = M_ADHESION_Slippery_rail;

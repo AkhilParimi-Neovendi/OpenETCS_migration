@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -100,12 +100,12 @@ void radioStatusRouter_init_Handover_Pkg_handoverUtils_Pkg(
   outC->IfBlock1_clock = kcg_true;
   outC->_L18_else_IfBlock1 = kcg_true;
   outC->_L34_else_IfBlock1.registration.valid = kcg_true;
-  outC->_L34_else_IfBlock1.registration.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L34_else_IfBlock1.registration.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L34_else_IfBlock1.registration.healthStatus = mhs_nok_RCM_Types_Pkg;
   outC->_L34_else_IfBlock1.registration.status = mrs_unregistered_RCM_Types_Pkg;
-  outC->_L34_else_IfBlock1.registration.nid_mn = kcg_lit_int64(0);
+  outC->_L34_else_IfBlock1.registration.nid_mn = kcg_lit_int32(0);
   outC->_L34_else_IfBlock1.connection.valid = kcg_true;
-  outC->_L34_else_IfBlock1.connection.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L34_else_IfBlock1.connection.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L34_else_IfBlock1.connection.status = mcs_disconnected_RCM_Types_Pkg;
   outC->_L34_else_IfBlock1.connection.nid_radio = kcg_lit_int64(0);
   outC->_L34_else_IfBlock1.connection.settingUpConnectionHasFailed = kcg_true;
@@ -113,16 +113,16 @@ void radioStatusRouter_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L34_else_IfBlock1.connection.isInRadioHole = kcg_true;
   outC->_L34_else_IfBlock1.session.valid = kcg_true;
   outC->_L34_else_IfBlock1.session.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L34_else_IfBlock1.session.nid_c = kcg_lit_int64(0);
-  outC->_L34_else_IfBlock1.session.nid_rbc = kcg_lit_int64(0);
+  outC->_L34_else_IfBlock1.session.nid_c = kcg_lit_int32(0);
+  outC->_L34_else_IfBlock1.session.nid_rbc = kcg_lit_int32(0);
   outC->_L34_else_IfBlock1.session.nid_radio = kcg_lit_int64(0);
   outC->_L35_else_IfBlock1.registration.valid = kcg_true;
-  outC->_L35_else_IfBlock1.registration.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L35_else_IfBlock1.registration.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L35_else_IfBlock1.registration.healthStatus = mhs_nok_RCM_Types_Pkg;
   outC->_L35_else_IfBlock1.registration.status = mrs_unregistered_RCM_Types_Pkg;
-  outC->_L35_else_IfBlock1.registration.nid_mn = kcg_lit_int64(0);
+  outC->_L35_else_IfBlock1.registration.nid_mn = kcg_lit_int32(0);
   outC->_L35_else_IfBlock1.connection.valid = kcg_true;
-  outC->_L35_else_IfBlock1.connection.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L35_else_IfBlock1.connection.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L35_else_IfBlock1.connection.status = mcs_disconnected_RCM_Types_Pkg;
   outC->_L35_else_IfBlock1.connection.nid_radio = kcg_lit_int64(0);
   outC->_L35_else_IfBlock1.connection.settingUpConnectionHasFailed = kcg_true;
@@ -130,16 +130,16 @@ void radioStatusRouter_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L35_else_IfBlock1.connection.isInRadioHole = kcg_true;
   outC->_L35_else_IfBlock1.session.valid = kcg_true;
   outC->_L35_else_IfBlock1.session.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L35_else_IfBlock1.session.nid_c = kcg_lit_int64(0);
-  outC->_L35_else_IfBlock1.session.nid_rbc = kcg_lit_int64(0);
+  outC->_L35_else_IfBlock1.session.nid_c = kcg_lit_int32(0);
+  outC->_L35_else_IfBlock1.session.nid_rbc = kcg_lit_int32(0);
   outC->_L35_else_IfBlock1.session.nid_radio = kcg_lit_int64(0);
   outC->_L39_else_IfBlock1.registration.valid = kcg_true;
-  outC->_L39_else_IfBlock1.registration.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L39_else_IfBlock1.registration.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L39_else_IfBlock1.registration.healthStatus = mhs_nok_RCM_Types_Pkg;
   outC->_L39_else_IfBlock1.registration.status = mrs_unregistered_RCM_Types_Pkg;
-  outC->_L39_else_IfBlock1.registration.nid_mn = kcg_lit_int64(0);
+  outC->_L39_else_IfBlock1.registration.nid_mn = kcg_lit_int32(0);
   outC->_L39_else_IfBlock1.connection.valid = kcg_true;
-  outC->_L39_else_IfBlock1.connection.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L39_else_IfBlock1.connection.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L39_else_IfBlock1.connection.status = mcs_disconnected_RCM_Types_Pkg;
   outC->_L39_else_IfBlock1.connection.nid_radio = kcg_lit_int64(0);
   outC->_L39_else_IfBlock1.connection.settingUpConnectionHasFailed = kcg_true;
@@ -147,16 +147,16 @@ void radioStatusRouter_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L39_else_IfBlock1.connection.isInRadioHole = kcg_true;
   outC->_L39_else_IfBlock1.session.valid = kcg_true;
   outC->_L39_else_IfBlock1.session.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L39_else_IfBlock1.session.nid_c = kcg_lit_int64(0);
-  outC->_L39_else_IfBlock1.session.nid_rbc = kcg_lit_int64(0);
+  outC->_L39_else_IfBlock1.session.nid_c = kcg_lit_int32(0);
+  outC->_L39_else_IfBlock1.session.nid_rbc = kcg_lit_int32(0);
   outC->_L39_else_IfBlock1.session.nid_radio = kcg_lit_int64(0);
   outC->_L40_else_IfBlock1.registration.valid = kcg_true;
-  outC->_L40_else_IfBlock1.registration.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L40_else_IfBlock1.registration.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L40_else_IfBlock1.registration.healthStatus = mhs_nok_RCM_Types_Pkg;
   outC->_L40_else_IfBlock1.registration.status = mrs_unregistered_RCM_Types_Pkg;
-  outC->_L40_else_IfBlock1.registration.nid_mn = kcg_lit_int64(0);
+  outC->_L40_else_IfBlock1.registration.nid_mn = kcg_lit_int32(0);
   outC->_L40_else_IfBlock1.connection.valid = kcg_true;
-  outC->_L40_else_IfBlock1.connection.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L40_else_IfBlock1.connection.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L40_else_IfBlock1.connection.status = mcs_disconnected_RCM_Types_Pkg;
   outC->_L40_else_IfBlock1.connection.nid_radio = kcg_lit_int64(0);
   outC->_L40_else_IfBlock1.connection.settingUpConnectionHasFailed = kcg_true;
@@ -164,16 +164,16 @@ void radioStatusRouter_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L40_else_IfBlock1.connection.isInRadioHole = kcg_true;
   outC->_L40_else_IfBlock1.session.valid = kcg_true;
   outC->_L40_else_IfBlock1.session.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L40_else_IfBlock1.session.nid_c = kcg_lit_int64(0);
-  outC->_L40_else_IfBlock1.session.nid_rbc = kcg_lit_int64(0);
+  outC->_L40_else_IfBlock1.session.nid_c = kcg_lit_int32(0);
+  outC->_L40_else_IfBlock1.session.nid_rbc = kcg_lit_int32(0);
   outC->_L40_else_IfBlock1.session.nid_radio = kcg_lit_int64(0);
   outC->_L11_then_IfBlock1.registration.valid = kcg_true;
-  outC->_L11_then_IfBlock1.registration.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L11_then_IfBlock1.registration.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L11_then_IfBlock1.registration.healthStatus = mhs_nok_RCM_Types_Pkg;
   outC->_L11_then_IfBlock1.registration.status = mrs_unregistered_RCM_Types_Pkg;
-  outC->_L11_then_IfBlock1.registration.nid_mn = kcg_lit_int64(0);
+  outC->_L11_then_IfBlock1.registration.nid_mn = kcg_lit_int32(0);
   outC->_L11_then_IfBlock1.connection.valid = kcg_true;
-  outC->_L11_then_IfBlock1.connection.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L11_then_IfBlock1.connection.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L11_then_IfBlock1.connection.status = mcs_disconnected_RCM_Types_Pkg;
   outC->_L11_then_IfBlock1.connection.nid_radio = kcg_lit_int64(0);
   outC->_L11_then_IfBlock1.connection.settingUpConnectionHasFailed = kcg_true;
@@ -181,19 +181,19 @@ void radioStatusRouter_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L11_then_IfBlock1.connection.isInRadioHole = kcg_true;
   outC->_L11_then_IfBlock1.session.valid = kcg_true;
   outC->_L11_then_IfBlock1.session.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L11_then_IfBlock1.session.nid_c = kcg_lit_int64(0);
-  outC->_L11_then_IfBlock1.session.nid_rbc = kcg_lit_int64(0);
+  outC->_L11_then_IfBlock1.session.nid_c = kcg_lit_int32(0);
+  outC->_L11_then_IfBlock1.session.nid_rbc = kcg_lit_int32(0);
   outC->_L11_then_IfBlock1.session.nid_radio = kcg_lit_int64(0);
   outC->morcStatusFromHandingOverRBC.registration.valid = kcg_true;
   outC->morcStatusFromHandingOverRBC.registration.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->morcStatusFromHandingOverRBC.registration.healthStatus =
     mhs_nok_RCM_Types_Pkg;
   outC->morcStatusFromHandingOverRBC.registration.status =
     mrs_unregistered_RCM_Types_Pkg;
-  outC->morcStatusFromHandingOverRBC.registration.nid_mn = kcg_lit_int64(0);
+  outC->morcStatusFromHandingOverRBC.registration.nid_mn = kcg_lit_int32(0);
   outC->morcStatusFromHandingOverRBC.connection.valid = kcg_true;
-  outC->morcStatusFromHandingOverRBC.connection.mobileDeviceNo = kcg_lit_int64(0);
+  outC->morcStatusFromHandingOverRBC.connection.mobileDeviceNo = kcg_lit_int32(0);
   outC->morcStatusFromHandingOverRBC.connection.status =
     mcs_disconnected_RCM_Types_Pkg;
   outC->morcStatusFromHandingOverRBC.connection.nid_radio = kcg_lit_int64(0);
@@ -204,18 +204,18 @@ void radioStatusRouter_init_Handover_Pkg_handoverUtils_Pkg(
   outC->morcStatusFromHandingOverRBC.session.valid = kcg_true;
   outC->morcStatusFromHandingOverRBC.session.phase =
     sp_terminated_RCM_Session_Types_Pkg;
-  outC->morcStatusFromHandingOverRBC.session.nid_c = kcg_lit_int64(0);
-  outC->morcStatusFromHandingOverRBC.session.nid_rbc = kcg_lit_int64(0);
+  outC->morcStatusFromHandingOverRBC.session.nid_c = kcg_lit_int32(0);
+  outC->morcStatusFromHandingOverRBC.session.nid_rbc = kcg_lit_int32(0);
   outC->morcStatusFromHandingOverRBC.session.nid_radio = kcg_lit_int64(0);
   outC->morcStatusFromAcceptingRBC.registration.valid = kcg_true;
-  outC->morcStatusFromAcceptingRBC.registration.mobileDeviceNo = kcg_lit_int64(0);
+  outC->morcStatusFromAcceptingRBC.registration.mobileDeviceNo = kcg_lit_int32(0);
   outC->morcStatusFromAcceptingRBC.registration.healthStatus =
     mhs_nok_RCM_Types_Pkg;
   outC->morcStatusFromAcceptingRBC.registration.status =
     mrs_unregistered_RCM_Types_Pkg;
-  outC->morcStatusFromAcceptingRBC.registration.nid_mn = kcg_lit_int64(0);
+  outC->morcStatusFromAcceptingRBC.registration.nid_mn = kcg_lit_int32(0);
   outC->morcStatusFromAcceptingRBC.connection.valid = kcg_true;
-  outC->morcStatusFromAcceptingRBC.connection.mobileDeviceNo = kcg_lit_int64(0);
+  outC->morcStatusFromAcceptingRBC.connection.mobileDeviceNo = kcg_lit_int32(0);
   outC->morcStatusFromAcceptingRBC.connection.status =
     mcs_disconnected_RCM_Types_Pkg;
   outC->morcStatusFromAcceptingRBC.connection.nid_radio = kcg_lit_int64(0);
@@ -226,8 +226,8 @@ void radioStatusRouter_init_Handover_Pkg_handoverUtils_Pkg(
   outC->morcStatusFromAcceptingRBC.session.valid = kcg_true;
   outC->morcStatusFromAcceptingRBC.session.phase =
     sp_terminated_RCM_Session_Types_Pkg;
-  outC->morcStatusFromAcceptingRBC.session.nid_c = kcg_lit_int64(0);
-  outC->morcStatusFromAcceptingRBC.session.nid_rbc = kcg_lit_int64(0);
+  outC->morcStatusFromAcceptingRBC.session.nid_c = kcg_lit_int32(0);
+  outC->morcStatusFromAcceptingRBC.session.nid_rbc = kcg_lit_int32(0);
   outC->morcStatusFromAcceptingRBC.session.nid_radio = kcg_lit_int64(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
@@ -244,6 +244,6 @@ void radioStatusRouter_reset_Handover_Pkg_handoverUtils_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** radioStatusRouter_Handover_Pkg_handoverUtils_Pkg.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

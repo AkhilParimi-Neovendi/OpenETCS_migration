@@ -23,17 +23,17 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   StaticSpeedProfile_t_TrackAtlasTypes /* _L1/ */ _L1;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L2/ */ _L2;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L4/ */ _L4;
   StaticSpeedSection_t_TrackAtlasTypes /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
-  kcg_int64 /* _L7/ */ _L7;
+  kcg_int32 /* _L6/ */ _L6;
+  kcg_int32 /* _L7/ */ _L7;
   V_internal_Type_Obu_BasicTypes_Pkg /* _L9/ */ _L9;
   V_internal_Type_Obu_BasicTypes_Pkg /* _L10/ */ _L10;
   kcg_bool /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
-  kcg_int64 /* _L13/ */ _L13;
-  kcg_int64 /* _L14/ */ _L14;
+  kcg_int32 /* _L12/ */ _L12;
+  kcg_int32 /* _L13/ */ _L13;
+  kcg_int32 /* _L14/ */ _L14;
   kcg_bool /* _L15/ */ _L15;
   kcg_bool /* _L16/ */ _L16;
 } outC_TrainLength_Correction_TA_Lib_internal;
@@ -46,7 +46,7 @@ extern void TrainLength_Correction_TA_Lib_internal(
   /* train_length/ */
   L_internal_Type_Obu_BasicTypes_Pkg train_length,
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* v_static/ */
   V_internal_Type_Obu_BasicTypes_Pkg v_static,
   /* distance/ */

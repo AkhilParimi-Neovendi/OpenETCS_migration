@@ -22,10 +22,10 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   ParabolaCurve_T_CalcBrakingCurves_types /* _L13/ */ _L13;
-  array_float64_114 /* _L14/ */ _L14;
+  array_float32_114 /* _L14/ */ _L14;
   ParabolaCurveValid_T_CalcBrakingCurves_types /* _L16/ */ _L16;
   kcg_bool /* _L18/ */ _L18;
-  kcg_float64 /* _L19/ */ _L19;
+  kcg_float32 /* _L19/ */ _L19;
 } outC_makeEmptyParabolaCurve_CalcBrakingCurves_types;
 
 /* ===========  node initialization and cycle functions  =========== */

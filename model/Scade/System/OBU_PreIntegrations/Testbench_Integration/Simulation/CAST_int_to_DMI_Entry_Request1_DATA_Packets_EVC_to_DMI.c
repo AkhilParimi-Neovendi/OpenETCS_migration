@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -42,17 +42,17 @@ void CAST_int_to_DMI_Entry_Request1_init_DATA_Packets_EVC_to_DMI(
 
   outC->_L16 = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   for (idx = 0; idx < 3; idx++) {
-    outC->_L15[idx] = kcg_lit_int64(0);
+    outC->_L15[idx] = kcg_lit_int32(0);
   }
   outC->_L9.valid = kcg_true;
-  outC->_L9.system_clock = kcg_lit_int64(0);
+  outC->_L9.system_clock = kcg_lit_int32(0);
   outC->_L9.entry_request = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
   outC->_L14 = kcg_true;
   outC->dmi_entry_request_ct.valid = kcg_true;
-  outC->dmi_entry_request_ct.system_clock = kcg_lit_int64(0);
+  outC->dmi_entry_request_ct.system_clock = kcg_lit_int32(0);
   outC->dmi_entry_request_ct.entry_request =
     Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   /* _L16=(DATA::Variables::CAST_int_to_DMI_List_Entry_Request#1)/ */
@@ -80,6 +80,6 @@ void CAST_int_to_DMI_Entry_Request1_reset_DATA_Packets_EVC_to_DMI(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_int_to_DMI_Entry_Request1_DATA_Packets_EVC_to_DMI.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

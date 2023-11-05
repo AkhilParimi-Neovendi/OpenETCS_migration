@@ -24,9 +24,9 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* Loc_index/ */ Loc_index;
+  kcg_int32 /* Loc_index/ */ Loc_index;
   T_LevelTransition_Level_And_Mode_Types_Pkg /* _L25/ */ _L25;
-  kcg_int64 /* _L27/ */ _L27;
+  kcg_int32 /* _L27/ */ _L27;
   T_LevelTransition_Level_And_Mode_Types_Pkg /* _L28/ */ _L28;
   T_LevelTransition_PriorityTable_Level_And_Mode_Types_Pkg /* _L29/ */ _L29;
   T_ERTMS_capabilities_Level_And_Mode_Types_Pkg /* _L30/ */ _L30;

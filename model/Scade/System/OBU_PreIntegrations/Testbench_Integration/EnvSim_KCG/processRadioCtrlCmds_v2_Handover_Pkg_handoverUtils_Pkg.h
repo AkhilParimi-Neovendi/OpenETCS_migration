@@ -29,7 +29,7 @@ typedef struct {
   msgFromTrack_T_RCM_MsgTypes_Pkg /* _L218/ */ _L218;
   msgFromTrack_T_RCM_MsgTypes_Pkg /* _L219/ */ _L219;
   morcStatus_T_RCM_Session_Types_Pkg /* _L220/ */ _L220;
-  kcg_int64 /* _L221/ */ _L221;
+  kcg_int32 /* _L221/ */ _L221;
 } outC_processRadioCtrlCmds_v2_Handover_Pkg_handoverUtils_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -44,7 +44,7 @@ extern void processRadioCtrlCmds_v2_Handover_Pkg_handoverUtils_Pkg(
   /* morcStatus/ */
   morcStatus_T_RCM_Session_Types_Pkg *morcStatus,
   /* mobileDeviceNo/ */
-  kcg_int64 mobileDeviceNo,
+  kcg_int32 mobileDeviceNo,
   outC_processRadioCtrlCmds_v2_Handover_Pkg_handoverUtils_Pkg *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

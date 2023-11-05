@@ -47,7 +47,7 @@ typedef struct {
   sessionStatus_T_RCM_Session_Types_Pkg /* @1/_L2/ */ _L2_MemoryBasic_1_struct;
   T_internal_Type_Obu_BasicTypes_Pkg /* SM1:waitForAckTerminationOfCommunicationSessionReceived:_L1/ */ _L1_waitForAckTerminationOfCommunicationSessionReceived_SM1;
   time_Type_MoRC_Pck /* SM1:waitForAckTerminationOfCommunicationSessionReceived:_L2/ */ _L2_waitForAckTerminationOfCommunicationSessionReceived_SM1;
-  kcg_int64 /* SM1:waitForAckTerminationOfCommunicationSessionReceived:_L3/ */ _L3_waitForAckTerminationOfCommunicationSessionReceived_SM1;
+  kcg_int32 /* SM1:waitForAckTerminationOfCommunicationSessionReceived:_L3/ */ _L3_waitForAckTerminationOfCommunicationSessionReceived_SM1;
   kcg_bool /* SM1:waitForAckTerminationOfCommunicationSessionReceived:_L4/ */ _L4_waitForAckTerminationOfCommunicationSessionReceived_SM1;
   kcg_bool /* SM1:waitForAckTerminationOfCommunicationSessionReceived:_L6/ */ _L6_waitForAckTerminationOfCommunicationSessionReceived_SM1;
   kcg_bool /* SM1:waitForAckTerminationOfCommunicationSessionReceived:_L5/ */ _L5_waitForAckTerminationOfCommunicationSessionReceived_SM1;
@@ -89,7 +89,7 @@ extern void terminateSession_v2_MoRC_Pck_Subfunc_Pkg(
   /* reset/ */
   kcg_bool reset,
   /* noOfRetriesOfSendingTerminationMessage/ */
-  kcg_int64 noOfRetriesOfSendingTerminationMessage,
+  kcg_int32 noOfRetriesOfSendingTerminationMessage,
   /* maxWaitingTimeForAckMessageReceived/ */
   T_internal_Type_Obu_BasicTypes_Pkg maxWaitingTimeForAckMessageReceived,
   outC_terminateSession_v2_MoRC_Pck_Subfunc_Pkg *outC);

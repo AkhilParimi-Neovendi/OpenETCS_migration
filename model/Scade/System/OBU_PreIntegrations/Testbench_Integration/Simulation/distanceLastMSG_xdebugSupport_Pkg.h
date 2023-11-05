@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _distanceLastMSG_xdebugSupport_Pkg_H_
 #define _distanceLastMSG_xdebugSupport_Pkg_H_
@@ -15,7 +15,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_float64 /* distance/ */ distance;
+  kcg_float32 /* distance/ */ distance;
   NID_BG /* lastMSG/ */ lastMSG;
   NID_LRBG /* lastLRBG/ */ lastLRBG;
   /* -----------------------  no local probes  ----------------------- */
@@ -32,23 +32,23 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   NID_LRBG /* IfBlock1:then:_L10/ */ _L10_then_IfBlock1;
-  kcg_float64 /* IfBlock1:then:_L9/ */ _L9_then_IfBlock1;
+  kcg_float32 /* IfBlock1:then:_L9/ */ _L9_then_IfBlock1;
   L_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:then:_L8/ */ _L8_then_IfBlock1;
   OdometryLocations_T_Obu_BasicTypes_Pkg /* IfBlock1:then:_L7/ */ _L7_then_IfBlock1;
   odometry_T_Obu_BasicTypes_Pkg /* IfBlock1:then:_L6/ */ _L6_then_IfBlock1;
   NID_MESSAGE /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
   Radio_TrackTrain_Header_T_Radio_Types_Pkg /* IfBlock1:then:_L3/ */ _L3_then_IfBlock1;
   ReceivedMessage_T_Common_Types_Pkg /* IfBlock1:then:_L2/ */ _L2_then_IfBlock1;
-  kcg_float64 /* IfBlock1:else:_L16/ */ _L16_else_IfBlock1;
-  kcg_float64 /* IfBlock1:else:_L15/ */ _L15_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:_L14/ */ _L14_else_IfBlock1;
+  kcg_float32 /* IfBlock1:else:_L16/ */ _L16_else_IfBlock1;
+  kcg_float32 /* IfBlock1:else:_L15/ */ _L15_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:_L14/ */ _L14_else_IfBlock1;
   kcg_bool /* IfBlock1:else:_L13/ */ _L13_else_IfBlock1;
   NID_BG /* IfBlock1:else:_L12/ */ _L12_else_IfBlock1;
   NID_LRBG /* IfBlock1:else:_L11/ */ _L11_else_IfBlock1;
-  kcg_float64 /* IfBlock1:else:_L10/ */ _L10_else_IfBlock1;
-  kcg_float64 /* IfBlock1:else:_L9/ */ _L9_else_IfBlock1;
-  kcg_float64 /* IfBlock1:else:_L8/ */ _L8_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:_L7/ */ _L7_else_IfBlock1;
+  kcg_float32 /* IfBlock1:else:_L10/ */ _L10_else_IfBlock1;
+  kcg_float32 /* IfBlock1:else:_L9/ */ _L9_else_IfBlock1;
+  kcg_float32 /* IfBlock1:else:_L8/ */ _L8_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:_L7/ */ _L7_else_IfBlock1;
   L_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:else:_L4/ */ _L4_else_IfBlock1;
   OdometryLocations_T_Obu_BasicTypes_Pkg /* IfBlock1:else:_L5/ */ _L5_else_IfBlock1;
   odometry_T_Obu_BasicTypes_Pkg /* IfBlock1:else:_L6/ */ _L6_else_IfBlock1;
@@ -69,11 +69,11 @@ typedef struct {
   NID_MESSAGE /* _L13/ */ _L13;
   kcg_bool /* _L14/ */ _L14;
   kcg_bool /* _L15/ */ _L15;
-  kcg_int64 /* _L16/ */ _L16;
+  kcg_int32 /* _L16/ */ _L16;
   kcg_bool /* _L17/ */ _L17;
-  kcg_int64 /* _L18/ */ _L18;
+  kcg_int32 /* _L18/ */ _L18;
   kcg_bool /* _L19/ */ _L19;
-  kcg_int64 /* _L20/ */ _L20;
+  kcg_int32 /* _L20/ */ _L20;
   NID_LRBG /* _L21/ */ _L21;
 } outC_distanceLastMSG_xdebugSupport_Pkg;
 
@@ -101,7 +101,7 @@ extern void distanceLastMSG_init_xdebugSupport_Pkg(
 /* ======================  state vector type  ====================== */
 typedef struct {
   /* ----------------------  memorised outputs  ---------------------- */
-  kcg_float64 /* distance/ */ Context_distance;
+  kcg_float32 /* distance/ */ Context_distance;
   /* ----------------------- local memories  ------------------------- */
   NID_LRBG /* LRBG/ */ Context_LRBG;
   L_internal_Type_Obu_BasicTypes_Pkg /* MSGLocation/ */ Context_MSGLocation;
@@ -123,6 +123,6 @@ extern void kcg_load_SV_distanceLastMSG_xdebugSupport_Pkg(
 #endif /* _distanceLastMSG_xdebugSupport_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** distanceLastMSG_xdebugSupport_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

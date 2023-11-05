@@ -755,7 +755,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L87.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L87.nid_c = kcg_lit_int32(0);
   outC->_L87.nid_RBC = kcg_lit_int32(0);
-  outC->_L87.nid_radio = kcg_lit_int64(0);
+  outC->_L87.nid_radio = kcg_lit_int32(0);
   outC->_L87.q_sleepsession = Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L87.origin.valid = kcg_true;
   outC->_L87.origin.nid_c = kcg_lit_int32(0);
@@ -769,7 +769,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L84.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L84.nid_c = kcg_lit_int32(0);
   outC->_L84.nid_RBC = kcg_lit_int32(0);
-  outC->_L84.nid_radio = kcg_lit_int64(0);
+  outC->_L84.nid_radio = kcg_lit_int32(0);
   outC->_L84.q_sleepsession = Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L84.origin.valid = kcg_true;
   outC->_L84.origin.nid_c = kcg_lit_int32(0);
@@ -781,7 +781,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L80.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L80.nid_c = kcg_lit_int32(0);
   outC->_L80.nid_rbc = kcg_lit_int32(0);
-  outC->_L80.nid_radio = kcg_lit_int64(0);
+  outC->_L80.nid_radio = kcg_lit_int32(0);
   outC->_L80.origin.valid = kcg_true;
   outC->_L80.origin.nid_c = kcg_lit_int32(0);
   outC->_L80.origin.rbc_id = kcg_lit_int32(0);
@@ -798,7 +798,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L80.p42.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L80.p42.nid_c = kcg_lit_int32(0);
   outC->_L80.p42.nid_RBC = kcg_lit_int32(0);
-  outC->_L80.p42.nid_radio = kcg_lit_int64(0);
+  outC->_L80.p42.nid_radio = kcg_lit_int32(0);
   outC->_L80.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L80.p42.origin.valid = kcg_true;
@@ -806,7 +806,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L80.p42.origin.rbc_id = kcg_lit_int32(0);
   outC->_L80.p42.origin.device_id = kcg_lit_int32(0);
   outC->_L79 = kcg_true;
-  outC->_L78 = kcg_lit_int64(0);
+  outC->_L78 = kcg_lit_int32(0);
   outC->_L77 = kcg_lit_int32(0);
   outC->_L76 = kcg_lit_int32(0);
   outC->_L75.valid = kcg_true;
@@ -815,7 +815,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L75.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L75.nid_c = kcg_lit_int32(0);
   outC->_L75.nid_rbc = kcg_lit_int32(0);
-  outC->_L75.nid_radio = kcg_lit_int64(0);
+  outC->_L75.nid_radio = kcg_lit_int32(0);
   outC->_L75.origin.valid = kcg_true;
   outC->_L75.origin.nid_c = kcg_lit_int32(0);
   outC->_L75.origin.rbc_id = kcg_lit_int32(0);
@@ -832,7 +832,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L75.p42.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L75.p42.nid_c = kcg_lit_int32(0);
   outC->_L75.p42.nid_RBC = kcg_lit_int32(0);
-  outC->_L75.p42.nid_radio = kcg_lit_int64(0);
+  outC->_L75.p42.nid_radio = kcg_lit_int32(0);
   outC->_L75.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L75.p42.origin.valid = kcg_true;
@@ -845,7 +845,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L71.phase = sp_terminated_RCM_Session_Types_Pkg;
   outC->_L71.nid_c = kcg_lit_int32(0);
   outC->_L71.nid_rbc = kcg_lit_int32(0);
-  outC->_L71.nid_radio = kcg_lit_int64(0);
+  outC->_L71.nid_radio = kcg_lit_int32(0);
   outC->_L70 = kcg_true;
   outC->_L69 = kcg_true;
   outC->_L68 = kcg_true;
@@ -868,7 +868,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L53.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L52 = kcg_true;
-  outC->_L51 = kcg_lit_int64(0);
+  outC->_L51 = kcg_lit_int32(0);
   outC->_L50 = kcg_true;
   outC->_L49.valid = kcg_true;
   outC->_L49.initiatedByOBU = kcg_true;
@@ -876,7 +876,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L49.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L49.nid_c = kcg_lit_int32(0);
   outC->_L49.nid_rbc = kcg_lit_int32(0);
-  outC->_L49.nid_radio = kcg_lit_int64(0);
+  outC->_L49.nid_radio = kcg_lit_int32(0);
   outC->_L49.origin.valid = kcg_true;
   outC->_L49.origin.nid_c = kcg_lit_int32(0);
   outC->_L49.origin.rbc_id = kcg_lit_int32(0);
@@ -893,7 +893,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L49.p42.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L49.p42.nid_c = kcg_lit_int32(0);
   outC->_L49.p42.nid_RBC = kcg_lit_int32(0);
-  outC->_L49.p42.nid_radio = kcg_lit_int64(0);
+  outC->_L49.p42.nid_radio = kcg_lit_int32(0);
   outC->_L49.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L49.p42.origin.valid = kcg_true;
@@ -906,7 +906,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L48.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L48.nid_c = kcg_lit_int32(0);
   outC->_L48.nid_rbc = kcg_lit_int32(0);
-  outC->_L48.nid_radio = kcg_lit_int64(0);
+  outC->_L48.nid_radio = kcg_lit_int32(0);
   outC->_L48.origin.valid = kcg_true;
   outC->_L48.origin.nid_c = kcg_lit_int32(0);
   outC->_L48.origin.rbc_id = kcg_lit_int32(0);
@@ -923,7 +923,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L48.p42.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L48.p42.nid_c = kcg_lit_int32(0);
   outC->_L48.p42.nid_RBC = kcg_lit_int32(0);
-  outC->_L48.p42.nid_radio = kcg_lit_int64(0);
+  outC->_L48.p42.nid_radio = kcg_lit_int32(0);
   outC->_L48.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L48.p42.origin.valid = kcg_true;
@@ -937,7 +937,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L46.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L46.nid_c = kcg_lit_int32(0);
   outC->_L46.nid_rbc = kcg_lit_int32(0);
-  outC->_L46.nid_radio = kcg_lit_int64(0);
+  outC->_L46.nid_radio = kcg_lit_int32(0);
   outC->_L46.origin.valid = kcg_true;
   outC->_L46.origin.nid_c = kcg_lit_int32(0);
   outC->_L46.origin.rbc_id = kcg_lit_int32(0);
@@ -954,14 +954,14 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L46.p42.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L46.p42.nid_c = kcg_lit_int32(0);
   outC->_L46.p42.nid_RBC = kcg_lit_int32(0);
-  outC->_L46.p42.nid_radio = kcg_lit_int64(0);
+  outC->_L46.p42.nid_radio = kcg_lit_int32(0);
   outC->_L46.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L46.p42.origin.valid = kcg_true;
   outC->_L46.p42.origin.nid_c = kcg_lit_int32(0);
   outC->_L46.p42.origin.rbc_id = kcg_lit_int32(0);
   outC->_L46.p42.origin.device_id = kcg_lit_int32(0);
-  outC->_L45 = kcg_lit_int64(0);
+  outC->_L45 = kcg_lit_int32(0);
   outC->_L44 = kcg_true;
   outC->_L43 = mcs_disconnected_RCM_Types_Pkg;
   outC->_L42 = kcg_true;
@@ -970,7 +970,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L25.valid = kcg_true;
   outC->_L25.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L25.status = mcs_disconnected_RCM_Types_Pkg;
-  outC->_L25.nid_radio = kcg_lit_int64(0);
+  outC->_L25.nid_radio = kcg_lit_int32(0);
   outC->_L25.settingUpConnectionHasFailed = kcg_true;
   outC->_L25.connectionLost = kcg_true;
   outC->_L25.isInRadioHole = kcg_true;
@@ -983,7 +983,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L1.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L1.nid_c = kcg_lit_int32(0);
   outC->_L1.nid_rbc = kcg_lit_int32(0);
-  outC->_L1.nid_radio = kcg_lit_int64(0);
+  outC->_L1.nid_radio = kcg_lit_int32(0);
   outC->_L1.origin.valid = kcg_true;
   outC->_L1.origin.nid_c = kcg_lit_int32(0);
   outC->_L1.origin.rbc_id = kcg_lit_int32(0);
@@ -1000,7 +1000,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L1.p42.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L1.p42.nid_c = kcg_lit_int32(0);
   outC->_L1.p42.nid_RBC = kcg_lit_int32(0);
-  outC->_L1.p42.nid_radio = kcg_lit_int64(0);
+  outC->_L1.p42.nid_radio = kcg_lit_int32(0);
   outC->_L1.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L1.p42.origin.valid = kcg_true;
@@ -1016,7 +1016,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->sessionEstablishCmd_mem.q_rbc = Q_RBC_Terminate_communication_session;
   outC->sessionEstablishCmd_mem.nid_c = kcg_lit_int32(0);
   outC->sessionEstablishCmd_mem.nid_rbc = kcg_lit_int32(0);
-  outC->sessionEstablishCmd_mem.nid_radio = kcg_lit_int64(0);
+  outC->sessionEstablishCmd_mem.nid_radio = kcg_lit_int32(0);
   outC->sessionEstablishCmd_mem.origin.valid = kcg_true;
   outC->sessionEstablishCmd_mem.origin.nid_c = kcg_lit_int32(0);
   outC->sessionEstablishCmd_mem.origin.rbc_id = kcg_lit_int32(0);
@@ -1033,7 +1033,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->sessionEstablishCmd_mem.p42.q_rbc = Q_RBC_Terminate_communication_session;
   outC->sessionEstablishCmd_mem.p42.nid_c = kcg_lit_int32(0);
   outC->sessionEstablishCmd_mem.p42.nid_RBC = kcg_lit_int32(0);
-  outC->sessionEstablishCmd_mem.p42.nid_radio = kcg_lit_int64(0);
+  outC->sessionEstablishCmd_mem.p42.nid_radio = kcg_lit_int32(0);
   outC->sessionEstablishCmd_mem.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->sessionEstablishCmd_mem.p42.origin.valid = kcg_true;
@@ -1070,7 +1070,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L7_Memory_1_struct.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L7_Memory_1_struct.nid_c = kcg_lit_int32(0);
   outC->_L7_Memory_1_struct.nid_rbc = kcg_lit_int32(0);
-  outC->_L7_Memory_1_struct.nid_radio = kcg_lit_int64(0);
+  outC->_L7_Memory_1_struct.nid_radio = kcg_lit_int32(0);
   outC->_L7_Memory_1_struct.origin.valid = kcg_true;
   outC->_L7_Memory_1_struct.origin.nid_c = kcg_lit_int32(0);
   outC->_L7_Memory_1_struct.origin.rbc_id = kcg_lit_int32(0);
@@ -1087,7 +1087,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L7_Memory_1_struct.p42.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L7_Memory_1_struct.p42.nid_c = kcg_lit_int32(0);
   outC->_L7_Memory_1_struct.p42.nid_RBC = kcg_lit_int32(0);
-  outC->_L7_Memory_1_struct.p42.nid_radio = kcg_lit_int64(0);
+  outC->_L7_Memory_1_struct.p42.nid_radio = kcg_lit_int32(0);
   outC->_L7_Memory_1_struct.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L7_Memory_1_struct.p42.origin.valid = kcg_true;
@@ -1100,7 +1100,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L6_Memory_1_struct.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L6_Memory_1_struct.nid_c = kcg_lit_int32(0);
   outC->_L6_Memory_1_struct.nid_rbc = kcg_lit_int32(0);
-  outC->_L6_Memory_1_struct.nid_radio = kcg_lit_int64(0);
+  outC->_L6_Memory_1_struct.nid_radio = kcg_lit_int32(0);
   outC->_L6_Memory_1_struct.origin.valid = kcg_true;
   outC->_L6_Memory_1_struct.origin.nid_c = kcg_lit_int32(0);
   outC->_L6_Memory_1_struct.origin.rbc_id = kcg_lit_int32(0);
@@ -1117,7 +1117,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L6_Memory_1_struct.p42.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L6_Memory_1_struct.p42.nid_c = kcg_lit_int32(0);
   outC->_L6_Memory_1_struct.p42.nid_RBC = kcg_lit_int32(0);
-  outC->_L6_Memory_1_struct.p42.nid_radio = kcg_lit_int64(0);
+  outC->_L6_Memory_1_struct.p42.nid_radio = kcg_lit_int32(0);
   outC->_L6_Memory_1_struct.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L6_Memory_1_struct.p42.origin.valid = kcg_true;
@@ -1130,7 +1130,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L5_Memory_1_struct.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L5_Memory_1_struct.nid_c = kcg_lit_int32(0);
   outC->_L5_Memory_1_struct.nid_rbc = kcg_lit_int32(0);
-  outC->_L5_Memory_1_struct.nid_radio = kcg_lit_int64(0);
+  outC->_L5_Memory_1_struct.nid_radio = kcg_lit_int32(0);
   outC->_L5_Memory_1_struct.origin.valid = kcg_true;
   outC->_L5_Memory_1_struct.origin.nid_c = kcg_lit_int32(0);
   outC->_L5_Memory_1_struct.origin.rbc_id = kcg_lit_int32(0);
@@ -1147,7 +1147,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L5_Memory_1_struct.p42.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L5_Memory_1_struct.p42.nid_c = kcg_lit_int32(0);
   outC->_L5_Memory_1_struct.p42.nid_RBC = kcg_lit_int32(0);
-  outC->_L5_Memory_1_struct.p42.nid_radio = kcg_lit_int64(0);
+  outC->_L5_Memory_1_struct.p42.nid_radio = kcg_lit_int32(0);
   outC->_L5_Memory_1_struct.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L5_Memory_1_struct.p42.origin.valid = kcg_true;
@@ -1161,7 +1161,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L2_Memory_1_struct.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L2_Memory_1_struct.nid_c = kcg_lit_int32(0);
   outC->_L2_Memory_1_struct.nid_rbc = kcg_lit_int32(0);
-  outC->_L2_Memory_1_struct.nid_radio = kcg_lit_int64(0);
+  outC->_L2_Memory_1_struct.nid_radio = kcg_lit_int32(0);
   outC->_L2_Memory_1_struct.origin.valid = kcg_true;
   outC->_L2_Memory_1_struct.origin.nid_c = kcg_lit_int32(0);
   outC->_L2_Memory_1_struct.origin.rbc_id = kcg_lit_int32(0);
@@ -1178,7 +1178,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L2_Memory_1_struct.p42.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L2_Memory_1_struct.p42.nid_c = kcg_lit_int32(0);
   outC->_L2_Memory_1_struct.p42.nid_RBC = kcg_lit_int32(0);
-  outC->_L2_Memory_1_struct.p42.nid_radio = kcg_lit_int64(0);
+  outC->_L2_Memory_1_struct.p42.nid_radio = kcg_lit_int32(0);
   outC->_L2_Memory_1_struct.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L2_Memory_1_struct.p42.origin.valid = kcg_true;
@@ -1192,7 +1192,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L9_Memory_1_struct.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L9_Memory_1_struct.nid_c = kcg_lit_int32(0);
   outC->_L9_Memory_1_struct.nid_rbc = kcg_lit_int32(0);
-  outC->_L9_Memory_1_struct.nid_radio = kcg_lit_int64(0);
+  outC->_L9_Memory_1_struct.nid_radio = kcg_lit_int32(0);
   outC->_L9_Memory_1_struct.origin.valid = kcg_true;
   outC->_L9_Memory_1_struct.origin.nid_c = kcg_lit_int32(0);
   outC->_L9_Memory_1_struct.origin.rbc_id = kcg_lit_int32(0);
@@ -1209,7 +1209,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L9_Memory_1_struct.p42.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L9_Memory_1_struct.p42.nid_c = kcg_lit_int32(0);
   outC->_L9_Memory_1_struct.p42.nid_RBC = kcg_lit_int32(0);
-  outC->_L9_Memory_1_struct.p42.nid_radio = kcg_lit_int64(0);
+  outC->_L9_Memory_1_struct.p42.nid_radio = kcg_lit_int32(0);
   outC->_L9_Memory_1_struct.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L9_Memory_1_struct.p42.origin.valid = kcg_true;
@@ -1222,7 +1222,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->M_Input_Memory_1_struct.q_rbc = Q_RBC_Terminate_communication_session;
   outC->M_Input_Memory_1_struct.nid_c = kcg_lit_int32(0);
   outC->M_Input_Memory_1_struct.nid_rbc = kcg_lit_int32(0);
-  outC->M_Input_Memory_1_struct.nid_radio = kcg_lit_int64(0);
+  outC->M_Input_Memory_1_struct.nid_radio = kcg_lit_int32(0);
   outC->M_Input_Memory_1_struct.origin.valid = kcg_true;
   outC->M_Input_Memory_1_struct.origin.nid_c = kcg_lit_int32(0);
   outC->M_Input_Memory_1_struct.origin.rbc_id = kcg_lit_int32(0);
@@ -1239,7 +1239,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->M_Input_Memory_1_struct.p42.q_rbc = Q_RBC_Terminate_communication_session;
   outC->M_Input_Memory_1_struct.p42.nid_c = kcg_lit_int32(0);
   outC->M_Input_Memory_1_struct.p42.nid_RBC = kcg_lit_int32(0);
-  outC->M_Input_Memory_1_struct.p42.nid_radio = kcg_lit_int64(0);
+  outC->M_Input_Memory_1_struct.p42.nid_radio = kcg_lit_int32(0);
   outC->M_Input_Memory_1_struct.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->M_Input_Memory_1_struct.p42.origin.valid = kcg_true;
@@ -1254,7 +1254,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->InitVal_Memory_1_struct.q_rbc = Q_RBC_Terminate_communication_session;
   outC->InitVal_Memory_1_struct.nid_c = kcg_lit_int32(0);
   outC->InitVal_Memory_1_struct.nid_rbc = kcg_lit_int32(0);
-  outC->InitVal_Memory_1_struct.nid_radio = kcg_lit_int64(0);
+  outC->InitVal_Memory_1_struct.nid_radio = kcg_lit_int32(0);
   outC->InitVal_Memory_1_struct.origin.valid = kcg_true;
   outC->InitVal_Memory_1_struct.origin.nid_c = kcg_lit_int32(0);
   outC->InitVal_Memory_1_struct.origin.rbc_id = kcg_lit_int32(0);
@@ -1271,7 +1271,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->InitVal_Memory_1_struct.p42.q_rbc = Q_RBC_Terminate_communication_session;
   outC->InitVal_Memory_1_struct.p42.nid_c = kcg_lit_int32(0);
   outC->InitVal_Memory_1_struct.p42.nid_RBC = kcg_lit_int32(0);
-  outC->InitVal_Memory_1_struct.p42.nid_radio = kcg_lit_int64(0);
+  outC->InitVal_Memory_1_struct.p42.nid_radio = kcg_lit_int32(0);
   outC->InitVal_Memory_1_struct.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->InitVal_Memory_1_struct.p42.origin.valid = kcg_true;
@@ -1284,7 +1284,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->Out_Memory_1_struct.q_rbc = Q_RBC_Terminate_communication_session;
   outC->Out_Memory_1_struct.nid_c = kcg_lit_int32(0);
   outC->Out_Memory_1_struct.nid_rbc = kcg_lit_int32(0);
-  outC->Out_Memory_1_struct.nid_radio = kcg_lit_int64(0);
+  outC->Out_Memory_1_struct.nid_radio = kcg_lit_int32(0);
   outC->Out_Memory_1_struct.origin.valid = kcg_true;
   outC->Out_Memory_1_struct.origin.nid_c = kcg_lit_int32(0);
   outC->Out_Memory_1_struct.origin.rbc_id = kcg_lit_int32(0);
@@ -1301,7 +1301,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->Out_Memory_1_struct.p42.q_rbc = Q_RBC_Terminate_communication_session;
   outC->Out_Memory_1_struct.p42.nid_c = kcg_lit_int32(0);
   outC->Out_Memory_1_struct.p42.nid_RBC = kcg_lit_int32(0);
-  outC->Out_Memory_1_struct.p42.nid_radio = kcg_lit_int64(0);
+  outC->Out_Memory_1_struct.p42.nid_radio = kcg_lit_int32(0);
   outC->Out_Memory_1_struct.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->Out_Memory_1_struct.p42.origin.valid = kcg_true;
@@ -1314,7 +1314,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L8_Memory_1_struct.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L8_Memory_1_struct.nid_c = kcg_lit_int32(0);
   outC->_L8_Memory_1_struct.nid_rbc = kcg_lit_int32(0);
-  outC->_L8_Memory_1_struct.nid_radio = kcg_lit_int64(0);
+  outC->_L8_Memory_1_struct.nid_radio = kcg_lit_int32(0);
   outC->_L8_Memory_1_struct.origin.valid = kcg_true;
   outC->_L8_Memory_1_struct.origin.nid_c = kcg_lit_int32(0);
   outC->_L8_Memory_1_struct.origin.rbc_id = kcg_lit_int32(0);
@@ -1331,7 +1331,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L8_Memory_1_struct.p42.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L8_Memory_1_struct.p42.nid_c = kcg_lit_int32(0);
   outC->_L8_Memory_1_struct.p42.nid_RBC = kcg_lit_int32(0);
-  outC->_L8_Memory_1_struct.p42.nid_radio = kcg_lit_int64(0);
+  outC->_L8_Memory_1_struct.p42.nid_radio = kcg_lit_int32(0);
   outC->_L8_Memory_1_struct.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L8_Memory_1_struct.p42.origin.valid = kcg_true;
@@ -1343,7 +1343,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->sessionStatus.phase = sp_terminated_RCM_Session_Types_Pkg;
   outC->sessionStatus.nid_c = kcg_lit_int32(0);
   outC->sessionStatus.nid_rbc = kcg_lit_int32(0);
-  outC->sessionStatus.nid_radio = kcg_lit_int64(0);
+  outC->sessionStatus.nid_radio = kcg_lit_int32(0);
   outC->established = kcg_true;
   outC->infomDriverNoCompatibleVersionSupported = kcg_true;
   outC->terminateCommunicationSession = kcg_true;
@@ -1357,7 +1357,7 @@ void establishSessionFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->p42_establishSessionCmd.q_rbc = Q_RBC_Terminate_communication_session;
   outC->p42_establishSessionCmd.nid_c = kcg_lit_int32(0);
   outC->p42_establishSessionCmd.nid_RBC = kcg_lit_int32(0);
-  outC->p42_establishSessionCmd.nid_radio = kcg_lit_int64(0);
+  outC->p42_establishSessionCmd.nid_radio = kcg_lit_int32(0);
   outC->p42_establishSessionCmd.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->p42_establishSessionCmd.origin.valid = kcg_true;

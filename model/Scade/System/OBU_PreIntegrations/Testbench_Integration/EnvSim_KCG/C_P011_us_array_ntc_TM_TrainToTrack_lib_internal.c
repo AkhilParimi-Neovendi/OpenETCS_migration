@@ -10,7 +10,7 @@
 /* TM_TrainToTrack_lib_internal::C_P011_us_array_ntc/ */
 void C_P011_us_array_ntc_TM_TrainToTrack_lib_internal(
   /* flat/ */
-  kcg_int64 flat,
+  kcg_int32 flat,
   outC_C_P011_us_array_ntc_TM_TrainToTrack_lib_internal *outC)
 {
   outC->_L1 = flat;
@@ -26,9 +26,9 @@ void C_P011_us_array_ntc_TM_TrainToTrack_lib_internal(
 void C_P011_us_array_ntc_init_TM_TrainToTrack_lib_internal(
   outC_C_P011_us_array_ntc_TM_TrainToTrack_lib_internal *outC)
 {
-  outC->_L34 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->sections = kcg_lit_int64(0);
+  outC->_L34 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->sections = kcg_lit_int32(0);
   /* _L34=(TM_conversions::CAST_Int_to_NID_NTC#1)/ */
   CAST_Int_to_NID_NTC_init_TM_conversions(&outC->Context_CAST_Int_to_NID_NTC_1);
 }

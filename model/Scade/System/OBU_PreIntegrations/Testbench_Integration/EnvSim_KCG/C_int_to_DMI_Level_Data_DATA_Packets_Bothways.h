@@ -25,13 +25,13 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L2/ */ _L2;
   DMI_Level_Data_T_DMI_Messages_Bothways_Pkg /* _L5/ */ _L5;
   DMI_Level_Data_int_array_T_DATA /* _L8/ */ _L8;
   kcg_bool /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   DMI_level_T_DMI_Types_Pkg /* _L12/ */ _L12;
 } outC_C_int_to_DMI_Level_Data_DATA_Packets_Bothways;
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _removeOverpassedMRSPint_TargetManagement_pkg_internalOperators_H_
 #define _removeOverpassedMRSPint_TargetManagement_pkg_internalOperators_H_
@@ -31,10 +31,10 @@ typedef struct {
   kcg_bool /* _L11/ */ _L11;
   kcg_bool /* _L14/ */ _L14;
   Target_list_MRSP_real_T_TargetManagement_types /* _L15/ */ _L15;
-  _69_array /* _L16/ */ _L16;
+  _70_array /* _L16/ */ _L16;
   Target_list_MRSP_real_T_TargetManagement_types /* _L17/ */ _L17;
   Target_list_MRSP_real_T_TargetManagement_types /* _L19/ */ _L19;
-  _34_array /* _L21/ */ _L21;
+  _33_array /* _L21/ */ _L21;
   Target_real_T_TargetManagement_types /* _L22/ */ _L22;
   kcg_bool /* _L23/ */ _L23;
   TargetType_T_TargetManagement_types /* _L24/ */ _L24;
@@ -64,6 +64,6 @@ extern void removeOverpassedMRSPint_init_TargetManagement_pkg_internalOperators(
 #endif /* _removeOverpassedMRSPint_TargetManagement_pkg_internalOperators_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** removeOverpassedMRSPint_TargetManagement_pkg_internalOperators.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

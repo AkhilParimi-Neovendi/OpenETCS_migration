@@ -39,12 +39,12 @@ typedef struct {
   M_VERSION /* _L13/ */ _L13;
   kcg_bool /* _L14/ */ _L14;
   DMI_TEXT_INT_Array_T_DATA /* _L270/ */ _L270;
-  kcg_int64 /* _L271/ */ _L271;
-  kcg_int64 /* _L272/ */ _L272;
-  kcg_int64 /* _L273/ */ _L273;
-  kcg_int64 /* _L274/ */ _L274;
-  kcg_int64 /* _L275/ */ _L275;
-  kcg_int64 /* _L276/ */ _L276;
+  kcg_int32 /* _L271/ */ _L271;
+  kcg_int32 /* _L272/ */ _L272;
+  kcg_int32 /* _L273/ */ _L273;
+  kcg_int32 /* _L274/ */ _L274;
+  kcg_int32 /* _L275/ */ _L275;
+  kcg_int32 /* _L276/ */ _L276;
 } outC_C_int_to_DMI_identifier_DATA_Packets_DMI_to_EVC;
 
 /* ===========  node initialization and cycle functions  =========== */

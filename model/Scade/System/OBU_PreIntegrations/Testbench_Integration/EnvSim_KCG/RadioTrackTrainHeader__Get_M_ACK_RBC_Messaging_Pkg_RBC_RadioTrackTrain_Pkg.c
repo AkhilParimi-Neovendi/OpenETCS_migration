@@ -28,22 +28,22 @@ void RadioTrackTrainHeader__Get_M_ACK_init_RBC_Messaging_Pkg_RBC_RadioTrackTrain
   outC_RadioTrackTrainHeader__Get_M_ACK_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg *outC)
 {
   outC->_L3 = M_ACK_No_acknowledgement_required;
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1.radioDevice = kcg_lit_int64(0);
-  outC->_L1.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L1.nid_message = kcg_lit_int64(0);
-  outC->_L1.t_train = kcg_lit_int64(0);
-  outC->_L1.m_ack = kcg_lit_int64(0);
-  outC->_L1.nid_lrbg = kcg_lit_int64(0);
-  outC->_L1.t_train_reference = kcg_lit_int64(0);
-  outC->_L1.nid_em = kcg_lit_int64(0);
-  outC->_L1.q_scale = kcg_lit_int64(0);
-  outC->_L1.d_sr = kcg_lit_int64(0);
-  outC->_L1.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L1.d_ref = kcg_lit_int64(0);
-  outC->_L1.q_dir = kcg_lit_int64(0);
-  outC->_L1.d_emergencystop = kcg_lit_int64(0);
-  outC->_L1.m_version = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1.radioDevice = kcg_lit_int32(0);
+  outC->_L1.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L1.nid_message = kcg_lit_int32(0);
+  outC->_L1.t_train = kcg_lit_int32(0);
+  outC->_L1.m_ack = kcg_lit_int32(0);
+  outC->_L1.nid_lrbg = kcg_lit_int32(0);
+  outC->_L1.t_train_reference = kcg_lit_int32(0);
+  outC->_L1.nid_em = kcg_lit_int32(0);
+  outC->_L1.q_scale = kcg_lit_int32(0);
+  outC->_L1.d_sr = kcg_lit_int32(0);
+  outC->_L1.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L1.d_ref = kcg_lit_int32(0);
+  outC->_L1.q_dir = kcg_lit_int32(0);
+  outC->_L1.d_emergencystop = kcg_lit_int32(0);
+  outC->_L1.m_version = kcg_lit_int32(0);
   outC->out_M_ACK = M_ACK_No_acknowledgement_required;
   /* _L3=(TM_conversions::CAST_Int_to_M_ACK#1)/ */
   CAST_Int_to_M_ACK_init_TM_conversions(&outC->Context_CAST_Int_to_M_ACK_1);

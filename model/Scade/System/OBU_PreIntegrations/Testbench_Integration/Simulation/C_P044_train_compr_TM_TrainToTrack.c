@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -32,17 +32,17 @@ void C_P044_train_compr_init_TM_TrainToTrack(
   static kcg_size idx2;
 
   for (idx = 0; idx < 25; idx++) {
-    outC->_L116[idx] = kcg_lit_int64(0);
+    outC->_L116[idx] = kcg_lit_int32(0);
   }
   outC->_L1.valid = kcg_true;
-  outC->_L1.nid_packet = kcg_lit_int64(0);
-  outC->_L1.l_packet = kcg_lit_int64(0);
-  outC->_L1.nid_xuser = kcg_lit_int64(0);
+  outC->_L1.nid_packet = kcg_lit_int32(0);
+  outC->_L1.l_packet = kcg_lit_int32(0);
+  outC->_L1.nid_xuser = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 1; idx1++) {
-    outC->_L1.external_data[idx1] = kcg_lit_int64(0);
+    outC->_L1.external_data[idx1] = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 25; idx2++) {
-    outC->P044_int[idx2] = kcg_lit_int64(0);
+    outC->P044_int[idx2] = kcg_lit_int32(0);
   }
 }
 #endif /* KCG_USER_DEFINED_INIT */
@@ -59,6 +59,6 @@ void C_P044_train_compr_reset_TM_TrainToTrack(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P044_train_compr_TM_TrainToTrack.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

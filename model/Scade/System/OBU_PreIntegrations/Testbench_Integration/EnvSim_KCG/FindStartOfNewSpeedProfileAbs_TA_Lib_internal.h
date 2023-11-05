@@ -15,7 +15,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* relevant_section/ */ relevant_section;
+  kcg_int32 /* relevant_section/ */ relevant_section;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -26,11 +26,11 @@ typedef struct {
   StaticSpeedProfile_t_TrackAtlasTypes /* _L1/ */ _L1;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L2/ */ _L2;
   StaticSpeedProfile_t_TrackAtlasTypes /* _L93/ */ _L93;
-  kcg_int64 /* _L94/ */ _L94;
+  kcg_int32 /* _L94/ */ _L94;
   kcg_bool /* _L96/ */ _L96;
   _4_array /* _L98/ */ _L98;
-  kcg_int64 /* _L99/ */ _L99;
-  kcg_int64 /* _L100/ */ _L100;
+  kcg_int32 /* _L99/ */ _L99;
+  kcg_int32 /* _L100/ */ _L100;
   M_TrainTrack_compressed_packets_T_TM_radio_messages /* _L198/ */ _L198;
 } outC_FindStartOfNewSpeedProfileAbs_TA_Lib_internal;
 

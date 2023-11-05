@@ -15,7 +15,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* outTriggerId/ */ outTriggerId;
+  kcg_int32 /* outTriggerId/ */ outTriggerId;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -26,12 +26,12 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   NID_LRBG /* _L1/ */ _L1;
-  kcg_float64 /* _L2/ */ _L2;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_float32 /* _L2/ */ _L2;
+  kcg_int32 /* _L3/ */ _L3;
   T_TRAIN /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
-  kcg_int64 /* _L7/ */ _L7;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L6/ */ _L6;
+  kcg_int32 /* _L7/ */ _L7;
 } outC_Triggers_Sheet08A_RBC_Scenario_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -40,9 +40,9 @@ extern void Triggers_Sheet08A_RBC_Scenario_Pkg(
   /* inLRBG/ */
   NID_LRBG inLRBG,
   /* inDistanceToLRBG/ */
-  kcg_float64 inDistanceToLRBG,
+  kcg_float32 inDistanceToLRBG,
   /* inTriggerId/ */
-  kcg_int64 inTriggerId,
+  kcg_int32 inTriggerId,
   /* inRBCTime/ */
   T_TRAIN inRBCTime,
   outC_Triggers_Sheet08A_RBC_Scenario_Pkg *outC);

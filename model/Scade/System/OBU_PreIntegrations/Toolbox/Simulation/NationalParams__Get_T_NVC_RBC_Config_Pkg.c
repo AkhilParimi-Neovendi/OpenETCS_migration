@@ -22,15 +22,15 @@ void NationalParams__Get_T_NVC_RBC_Config_Pkg(
 void NationalParams__Get_T_NVC_init_RBC_Config_Pkg(
   outC_NationalParams__Get_T_NVC_RBC_Config_Pkg *outC)
 {
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1.nid_c = kcg_lit_int64(0);
-  outC->_L1.v_nvshunt = kcg_lit_int64(0);
-  outC->_L1.v_nvstff = kcg_lit_int64(0);
-  outC->_L1.v_nvonsight = kcg_lit_int64(0);
-  outC->_L1.v_nvunfit = kcg_lit_int64(0);
-  outC->_L1.v_nvrel = kcg_lit_int64(0);
-  outC->_L1.t_nvcontact = kcg_lit_int64(0);
-  outC->out_T_NVCONTACT = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1.nid_c = kcg_lit_int32(0);
+  outC->_L1.v_nvshunt = kcg_lit_int32(0);
+  outC->_L1.v_nvstff = kcg_lit_int32(0);
+  outC->_L1.v_nvonsight = kcg_lit_int32(0);
+  outC->_L1.v_nvunfit = kcg_lit_int32(0);
+  outC->_L1.v_nvrel = kcg_lit_int32(0);
+  outC->_L1.t_nvcontact = kcg_lit_int32(0);
+  outC->out_T_NVCONTACT = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

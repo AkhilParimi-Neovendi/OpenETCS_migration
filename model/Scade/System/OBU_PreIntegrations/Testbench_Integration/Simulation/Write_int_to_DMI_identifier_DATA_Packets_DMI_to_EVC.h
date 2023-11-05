@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _Write_int_to_DMI_identifier_DATA_Packets_DMI_to_EVC_H_
 #define _Write_int_to_DMI_identifier_DATA_Packets_DMI_to_EVC_H_
@@ -26,8 +26,8 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   DMI_Identifier_int_array_T_DATA /* _L1/ */ _L1;
   DMI_Identifier_T_DMI_Messages_DMI_to_EVC_Pkg /* _L277/ */ _L277;
-  kcg_int64 /* _L280/ */ _L280;
-  kcg_int64 /* _L279/ */ _L279;
+  kcg_int32 /* _L280/ */ _L280;
+  kcg_int32 /* _L279/ */ _L279;
   kcg_bool /* _L278/ */ _L278;
   DMI_Identifier_T_DMI_Messages_DMI_to_EVC_Pkg /* _L281/ */ _L281;
 } outC_Write_int_to_DMI_identifier_DATA_Packets_DMI_to_EVC;
@@ -54,6 +54,6 @@ extern void Write_int_to_DMI_identifier_init_DATA_Packets_DMI_to_EVC(
 #endif /* _Write_int_to_DMI_identifier_DATA_Packets_DMI_to_EVC_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Write_int_to_DMI_identifier_DATA_Packets_DMI_to_EVC.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

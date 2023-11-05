@@ -115,9 +115,9 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   kcg_bool /* modeInterplay:CSM:_L145/ */ _L145_CSM_modeInterplay;
-  kcg_int64 /* modeInterplay:CSM:_L144/ */ _L144_CSM_modeInterplay;
-  kcg_int64 /* modeInterplay:CSM:_L143/ */ _L143_CSM_modeInterplay;
-  kcg_int64 /* modeInterplay:CSM:_L142/ */ _L142_CSM_modeInterplay;
+  kcg_int32 /* modeInterplay:CSM:_L144/ */ _L144_CSM_modeInterplay;
+  kcg_int32 /* modeInterplay:CSM:_L143/ */ _L143_CSM_modeInterplay;
+  kcg_int32 /* modeInterplay:CSM:_L142/ */ _L142_CSM_modeInterplay;
   kcg_bool /* modeInterplay:CSM:_L67/ */ _L67_CSM_modeInterplay;
   SupervisionStatus_T_SDM_Types_Pkg /* modeInterplay:CSM:_L41/ */ _L41_CSM_modeInterplay;
   SupervisionStatus_T_SDM_Types_Pkg /* modeInterplay:CSM:_L45/ */ _L45_CSM_modeInterplay;

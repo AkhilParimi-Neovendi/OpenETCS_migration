@@ -34,11 +34,11 @@ typedef struct {
   L_PACKET /* _L4/ */ _L4;
   NID_PACKET /* _L3/ */ _L3;
   kcg_bool /* _L2/ */ _L2;
-  array_int64_3 /* _L68/ */ _L68;
-  kcg_int64 /* _L69/ */ _L69;
-  kcg_int64 /* _L70/ */ _L70;
-  kcg_int64 /* _L71/ */ _L71;
-  kcg_int64 /* _L89/ */ _L89;
+  array_int32_3 /* _L68/ */ _L68;
+  kcg_int32 /* _L69/ */ _L69;
+  kcg_int32 /* _L70/ */ _L70;
+  kcg_int32 /* _L71/ */ _L71;
+  kcg_int32 /* _L89/ */ _L89;
 } outC_C_P005_train_compr_TM_TrainToTrack;
 
 /* ===========  node initialization and cycle functions  =========== */

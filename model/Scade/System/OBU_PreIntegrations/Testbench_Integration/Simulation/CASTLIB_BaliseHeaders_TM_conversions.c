@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -92,9 +92,9 @@ void CASTLIB_BaliseHeaders_init_TM_conversions(
   outC_CASTLIB_BaliseHeaders_TM_conversions *outC)
 {
   outC->_L32 = Q_LINK_Unlinked;
-  outC->_L31 = kcg_lit_int64(0);
-  outC->_L30 = kcg_lit_int64(0);
-  outC->_L29 = kcg_lit_int64(0);
+  outC->_L31 = kcg_lit_int32(0);
+  outC->_L30 = kcg_lit_int32(0);
+  outC->_L29 = kcg_lit_int32(0);
   outC->_L28 = M_DUP_No_duplicates;
   outC->_L27 = N_TOTAL_1_balise_in_the_group;
   outC->_L26 = N_PIG_I_am_the_1st;
@@ -109,30 +109,30 @@ void CASTLIB_BaliseHeaders_init_TM_conversions(
   outC->_L22.n_pig = N_PIG_I_am_the_1st;
   outC->_L22.n_total = N_TOTAL_1_balise_in_the_group;
   outC->_L22.m_dup = M_DUP_No_duplicates;
-  outC->_L22.m_mcount = kcg_lit_int64(0);
-  outC->_L22.nid_c = kcg_lit_int64(0);
-  outC->_L22.nid_bg = kcg_lit_int64(0);
+  outC->_L22.m_mcount = kcg_lit_int32(0);
+  outC->_L22.nid_c = kcg_lit_int32(0);
+  outC->_L22.nid_bg = kcg_lit_int32(0);
   outC->_L22.q_link = Q_LINK_Unlinked;
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L1.q_updown = kcg_lit_int64(0);
-  outC->_L1.m_version = kcg_lit_int64(0);
-  outC->_L1.q_media = kcg_lit_int64(0);
-  outC->_L1.n_pig = kcg_lit_int64(0);
-  outC->_L1.n_total = kcg_lit_int64(0);
-  outC->_L1.m_dup = kcg_lit_int64(0);
-  outC->_L1.m_mcount = kcg_lit_int64(0);
-  outC->_L1.nid_c = kcg_lit_int64(0);
-  outC->_L1.nid_bg = kcg_lit_int64(0);
-  outC->_L1.q_link = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L1.q_updown = kcg_lit_int32(0);
+  outC->_L1.m_version = kcg_lit_int32(0);
+  outC->_L1.q_media = kcg_lit_int32(0);
+  outC->_L1.n_pig = kcg_lit_int32(0);
+  outC->_L1.n_total = kcg_lit_int32(0);
+  outC->_L1.m_dup = kcg_lit_int32(0);
+  outC->_L1.m_mcount = kcg_lit_int32(0);
+  outC->_L1.nid_c = kcg_lit_int32(0);
+  outC->_L1.nid_bg = kcg_lit_int32(0);
+  outC->_L1.q_link = kcg_lit_int32(0);
   outC->Out.q_updown = Q_UPDOWN_Down_link_telegram;
   outC->Out.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
@@ -140,9 +140,9 @@ void CASTLIB_BaliseHeaders_init_TM_conversions(
   outC->Out.n_pig = N_PIG_I_am_the_1st;
   outC->Out.n_total = N_TOTAL_1_balise_in_the_group;
   outC->Out.m_dup = M_DUP_No_duplicates;
-  outC->Out.m_mcount = kcg_lit_int64(0);
-  outC->Out.nid_c = kcg_lit_int64(0);
-  outC->Out.nid_bg = kcg_lit_int64(0);
+  outC->Out.m_mcount = kcg_lit_int32(0);
+  outC->Out.nid_c = kcg_lit_int32(0);
+  outC->Out.nid_bg = kcg_lit_int32(0);
   outC->Out.q_link = Q_LINK_Unlinked;
   /* _L23=(TM_conversions::CAST_Int_to_Q_UPDOWN#1)/ */
   CAST_Int_to_Q_UPDOWN_init_TM_conversions(
@@ -207,6 +207,6 @@ void CASTLIB_BaliseHeaders_reset_TM_conversions(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CASTLIB_BaliseHeaders_TM_conversions.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

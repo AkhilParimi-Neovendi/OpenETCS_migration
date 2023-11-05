@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _add_2_Distances_BasicLocationFunctions_Pkg_H_
 #define _add_2_Distances_BasicLocationFunctions_Pkg_H_
@@ -25,15 +25,15 @@ typedef struct {
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L2/ */ _L2;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L3/ */ _L3;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L17/ */ _L17;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L16/ */ _L16;
-  kcg_int64 /* _L15/ */ _L15;
+  kcg_int32 /* _L15/ */ _L15;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L14/ */ _L14;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L13/ */ _L13;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L22/ */ _L22;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L21/ */ _L21;
-  kcg_int64 /* _L20/ */ _L20;
+  kcg_int32 /* _L20/ */ _L20;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L19/ */ _L19;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L18/ */ _L18;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L23/ */ _L23;
@@ -63,6 +63,6 @@ extern void add_2_Distances_init_BasicLocationFunctions_Pkg(
 #endif /* _add_2_Distances_BasicLocationFunctions_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** add_2_Distances_BasicLocationFunctions_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _lastAndPrevBG_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_
 #define _lastAndPrevBG_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_
@@ -75,7 +75,7 @@ typedef struct {
   kcg_bool /* _L20/ */ _L20;
   kcg_bool /* _L23/ */ _L23;
   kcg_bool /* _L22/ */ _L22;
-  kcg_int64 /* _L21/ */ _L21;
+  kcg_int32 /* _L21/ */ _L21;
   positionedBGs_T_TrainPosition_Types_Pck /* _L24/ */ _L24;
   kcg_bool /* _L25/ */ _L25;
   positionedBG_T_TrainPosition_Types_Pck /* _L26/ */ _L26;
@@ -148,6 +148,6 @@ extern void kcg_load_SV_lastAndPrevBG_CalculateTrainPosition_Pkg_BG_utilities_Pk
 #endif /* _lastAndPrevBG_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** lastAndPrevBG_CalculateTrainPosition_Pkg_BG_utilities_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

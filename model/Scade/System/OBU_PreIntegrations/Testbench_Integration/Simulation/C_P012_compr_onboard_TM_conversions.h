@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _C_P012_compr_onboard_TM_conversions_H_
 #define _C_P012_compr_onboard_TM_conversions_H_
@@ -66,18 +66,18 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   NID_PACKET /* @1/nid_packet/ */ nid_packet_CAST_Int_to_NID_PACKET_1;
-  kcg_int64 /* @1/nid_packet_int/ */ nid_packet_int_CAST_Int_to_NID_PACKET_1;
+  kcg_int32 /* @1/nid_packet_int/ */ nid_packet_int_CAST_Int_to_NID_PACKET_1;
   kcg_bool /* @1/_L2/ */ _L2_CAST_Int_to_NID_PACKET_1;
-  kcg_int64 /* @1/_L3/ */ _L3_CAST_Int_to_NID_PACKET_1;
+  kcg_int32 /* @1/_L3/ */ _L3_CAST_Int_to_NID_PACKET_1;
   kcg_bool /* @1/_L4/ */ _L4_CAST_Int_to_NID_PACKET_1;
-  kcg_int64 /* @1/_L5/ */ _L5_CAST_Int_to_NID_PACKET_1;
-  kcg_int64 /* @1/_L1/ */ _L1_CAST_Int_to_NID_PACKET_1;
+  kcg_int32 /* @1/_L5/ */ _L5_CAST_Int_to_NID_PACKET_1;
+  kcg_int32 /* @1/_L1/ */ _L1_CAST_Int_to_NID_PACKET_1;
   Q_SCALE /* @2/q_scale/ */ q_scale_CAST_Int_to_Q_SCALE_1;
-  kcg_int64 /* @2/q_scale_int/ */ q_scale_int_CAST_Int_to_Q_SCALE_1;
+  kcg_int32 /* @2/q_scale_int/ */ q_scale_int_CAST_Int_to_Q_SCALE_1;
   kcg_bool /* @2/_L4/ */ _L4_CAST_Int_to_Q_SCALE_1;
-  kcg_int64 /* @2/_L2/ */ _L2_CAST_Int_to_Q_SCALE_1;
+  kcg_int32 /* @2/_L2/ */ _L2_CAST_Int_to_Q_SCALE_1;
   kcg_bool /* @2/error/ */ error_CAST_Int_to_Q_SCALE_1;
-  kcg_int64 /* @2/q_scale_in/ */ q_scale_in_CAST_Int_to_Q_SCALE_1;
+  kcg_int32 /* @2/q_scale_in/ */ q_scale_in_CAST_Int_to_Q_SCALE_1;
   kcg_bool /* @2/IfBlock1:else:then:_L3/ */ _L3_CAST_Int_to_Q_SCALE_1_then_else_IfBlock1;
   Q_SCALE /* @2/IfBlock1:else:then:_L1/ */ _L1_CAST_Int_to_Q_SCALE_1_then_else_IfBlock1;
   kcg_bool /* @2/IfBlock1:else:else:else:_L2/ */ _L2_CAST_Int_to_Q_SCALE_1_else_else_else_IfBlock1;
@@ -87,17 +87,17 @@ typedef struct {
   Q_SCALE /* @2/IfBlock1:then:_L2/ */ _L2_CAST_Int_to_Q_SCALE_1_then_IfBlock1;
   kcg_bool /* @2/IfBlock1:then:_L3/ */ _L3_CAST_Int_to_Q_SCALE_1_then_IfBlock1;
   N_ITER /* @3/n_iter/ */ n_iter_CAST_Int_to_N_ITER_1;
-  kcg_int64 /* @3/n_iter_int/ */ n_iter_int_CAST_Int_to_N_ITER_1;
-  kcg_int64 /* @3/_L9/ */ _L9_CAST_Int_to_N_ITER_1;
+  kcg_int32 /* @3/n_iter_int/ */ n_iter_int_CAST_Int_to_N_ITER_1;
+  kcg_int32 /* @3/_L9/ */ _L9_CAST_Int_to_N_ITER_1;
   kcg_bool /* @3/_L10/ */ _L10_CAST_Int_to_N_ITER_1;
-  kcg_int64 /* @3/_L11/ */ _L11_CAST_Int_to_N_ITER_1;
+  kcg_int32 /* @3/_L11/ */ _L11_CAST_Int_to_N_ITER_1;
   kcg_bool /* @3/_L12/ */ _L12_CAST_Int_to_N_ITER_1;
-  kcg_int64 /* @3/_L1/ */ _L1_CAST_Int_to_N_ITER_1;
+  kcg_int32 /* @3/_L1/ */ _L1_CAST_Int_to_N_ITER_1;
   Q_DIR /* @4/q_dir/ */ q_dir_CAST_Int_to_Q_DIR_1;
-  kcg_int64 /* @4/q_dir_int/ */ q_dir_int_CAST_Int_to_Q_DIR_1;
-  kcg_int64 /* @4/_L12/ */ _L12_CAST_Int_to_Q_DIR_1;
+  kcg_int32 /* @4/q_dir_int/ */ q_dir_int_CAST_Int_to_Q_DIR_1;
+  kcg_int32 /* @4/_L12/ */ _L12_CAST_Int_to_Q_DIR_1;
   kcg_bool /* @4/_L13/ */ _L13_CAST_Int_to_Q_DIR_1;
-  kcg_int64 /* @4/q_dir_in/ */ q_dir_in_CAST_Int_to_Q_DIR_1;
+  kcg_int32 /* @4/q_dir_in/ */ q_dir_in_CAST_Int_to_Q_DIR_1;
   kcg_bool /* @4/error/ */ error_CAST_Int_to_Q_DIR_1;
   kcg_bool /* @4/IfBlock1:else:then:_L5/ */ _L5_CAST_Int_to_Q_DIR_1_then_else_IfBlock1;
   Q_DIR /* @4/IfBlock1:else:then:_L3/ */ _L3_CAST_Int_to_Q_DIR_1_then_else_IfBlock1;
@@ -110,8 +110,8 @@ typedef struct {
   N_ITER /* n_iter/ */ n_iter;
   kcg_bool /* nid_packet_ok/ */ nid_packet_ok;
   P015_OBU_sectionlist_enum_T_TM /* sections/ */ sections;
-  kcg_int64 /* _L139/ */ _L139;
-  array_int64_15 /* _L138/ */ _L138;
+  kcg_int32 /* _L139/ */ _L139;
+  array_int32_15 /* _L138/ */ _L138;
   D_SECTIONTIMERSTOPLOC /* _L137/ */ _L137;
   Q_DIR /* _L136/ */ _L136;
   N_ITER /* _L135/ */ _L135;
@@ -124,35 +124,35 @@ typedef struct {
   NID_PACKET /* _L128/ */ _L128;
   V_RELEASEDP /* _L127/ */ _L127;
   Q_ENDTIMER /* _L126/ */ _L126;
-  array_int64_7 /* _L125/ */ _L125;
-  kcg_int64 /* _L124/ */ _L124;
+  array_int32_7 /* _L125/ */ _L125;
+  kcg_int32 /* _L124/ */ _L124;
   T_OL /* _L123/ */ _L123;
   P012_OBU_T_TM /* _L122/ */ _L122;
   T_LOA /* _L121/ */ _L121;
   Q_DANGERPOINT /* _L119/ */ _L119;
   Q_SECTIONTIMER /* _L118/ */ _L118;
-  kcg_int64 /* _L104/ */ _L104;
-  kcg_int64 /* _L105/ */ _L105;
-  kcg_int64 /* _L106/ */ _L106;
-  kcg_int64 /* _L107/ */ _L107;
-  kcg_int64 /* _L108/ */ _L108;
-  kcg_int64 /* _L109/ */ _L109;
-  kcg_int64 /* _L110/ */ _L110;
-  kcg_int64 /* _L111/ */ _L111;
-  kcg_int64 /* _L112/ */ _L112;
-  kcg_int64 /* _L113/ */ _L113;
-  kcg_int64 /* _L114/ */ _L114;
-  kcg_int64 /* _L115/ */ _L115;
-  kcg_int64 /* _L116/ */ _L116;
-  kcg_int64 /* _L117/ */ _L117;
+  kcg_int32 /* _L104/ */ _L104;
+  kcg_int32 /* _L105/ */ _L105;
+  kcg_int32 /* _L106/ */ _L106;
+  kcg_int32 /* _L107/ */ _L107;
+  kcg_int32 /* _L108/ */ _L108;
+  kcg_int32 /* _L109/ */ _L109;
+  kcg_int32 /* _L110/ */ _L110;
+  kcg_int32 /* _L111/ */ _L111;
+  kcg_int32 /* _L112/ */ _L112;
+  kcg_int32 /* _L113/ */ _L113;
+  kcg_int32 /* _L114/ */ _L114;
+  kcg_int32 /* _L115/ */ _L115;
+  kcg_int32 /* _L116/ */ _L116;
+  kcg_int32 /* _L117/ */ _L117;
   Q_OVERLAP /* _L103/ */ _L103;
   P015_OBU_sectionlist_enum_T_TM /* _L102/ */ _L102;
-  kcg_int64 /* _L96/ */ _L96;
-  kcg_int64 /* _L97/ */ _L97;
-  kcg_int64 /* _L98/ */ _L98;
-  kcg_int64 /* _L99/ */ _L99;
-  kcg_int64 /* _L100/ */ _L100;
-  kcg_int64 /* _L101/ */ _L101;
+  kcg_int32 /* _L96/ */ _L96;
+  kcg_int32 /* _L97/ */ _L97;
+  kcg_int32 /* _L98/ */ _L98;
+  kcg_int32 /* _L99/ */ _L99;
+  kcg_int32 /* _L100/ */ _L100;
+  kcg_int32 /* _L101/ */ _L101;
   N_ITER /* _L95/ */ _L95;
   T_ENDTIMER /* _L94/ */ _L94;
   CompressedPacketData_T_Common_Types_Pkg /* _L93/ */ _L93;
@@ -162,11 +162,11 @@ typedef struct {
   MetadataElement_T_Common_Types_Pkg /* _L89/ */ _L89;
   kcg_bool /* _L140/ */ _L140;
   P015_OBU_sectionlist_enum_T_TM /* _L141/ */ _L141;
-  kcg_int64 /* _L142/ */ _L142;
+  kcg_int32 /* _L142/ */ _L142;
   T_SECTIONTIMER /* _L143/ */ _L143;
-  array_int64_128 /* _L144/ */ _L144;
+  array_int32_128 /* _L144/ */ _L144;
   V_MAIN /* _L145/ */ _L145;
-  kcg_int64 /* _L146/ */ _L146;
+  kcg_int32 /* _L146/ */ _L146;
 } outC_C_P012_compr_onboard_TM_conversions;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -199,6 +199,6 @@ extern void C_P012_compr_onboard_init_TM_conversions(
 #endif /* _C_P012_compr_onboard_TM_conversions_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P012_compr_onboard_TM_conversions.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

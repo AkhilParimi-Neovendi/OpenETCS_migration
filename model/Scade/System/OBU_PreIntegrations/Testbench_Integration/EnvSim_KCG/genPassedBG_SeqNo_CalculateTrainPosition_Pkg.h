@@ -16,7 +16,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* seqNo/ */ seqNo;
+  kcg_int32 /* seqNo/ */ seqNo;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -32,7 +32,7 @@ typedef struct {
   kcg_bool /* _L3/ */ _L3;
   kcg_bool /* _L6/ */ _L6;
   kcg_bool /* _L5/ */ _L5;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L4/ */ _L4;
   positionedBG_T_TrainPosition_Types_Pck /* _L8/ */ _L8;
   kcg_bool /* _L9/ */ _L9;
   kcg_bool /* _L10/ */ _L10;
@@ -44,9 +44,9 @@ typedef struct {
   kcg_bool /* _L16/ */ _L16;
   kcg_bool /* _L17/ */ _L17;
   kcg_bool /* _L18/ */ _L18;
-  kcg_int64 /* _L19/ */ _L19;
-  kcg_int64 /* _L20/ */ _L20;
-  kcg_int64 /* _L21/ */ _L21;
+  kcg_int32 /* _L19/ */ _L19;
+  kcg_int32 /* _L20/ */ _L20;
+  kcg_int32 /* _L21/ */ _L21;
   kcg_bool /* _L22/ */ _L22;
 } outC_genPassedBG_SeqNo_CalculateTrainPosition_Pkg;
 

@@ -388,7 +388,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="float64"/>
+										<TypeRef name="float32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -424,7 +424,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1204,7 +1204,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1216,7 +1216,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1276,7 +1276,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="float64"/>
+										<TypeRef name="float32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1288,7 +1288,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="float64"/>
+										<TypeRef name="float32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1300,7 +1300,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="float64"/>
+										<TypeRef name="float32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1336,7 +1336,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1432,7 +1432,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -3105,16 +3105,16 @@
 								<ed:Equation oid="!ed/5ed1b/483C/1C88/55ba121f6a2f"/>
 							</pragmas>
 						</Equation>
-						<!-- _L172 = (_L171 : float64); -->
+						<!-- _L172 = (_L171 : float32); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L172"/>
 							</lefts>
 							<right>
-								<!-- (_L171 : float64) -->
+								<!-- (_L171 : float32) -->
 								<NumericCastOp name="1">
 									<type>
-										<TypeRef name="float64"/>
+										<TypeRef name="float32"/>
 									</type>
 									<flow>
 										<IdExpression>

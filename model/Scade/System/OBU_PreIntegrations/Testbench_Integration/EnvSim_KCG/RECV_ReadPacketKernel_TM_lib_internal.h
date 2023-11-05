@@ -29,10 +29,10 @@ typedef struct {
   CompressedPacketData_T_Common_Types_Pkg /* _L7/ */ _L7;
   kcg_bool /* _L8/ */ _L8;
   CompressedPacketData_T_Common_Types_Pkg /* _L10/ */ _L10;
-  array_int64_500_500 /* _L18/ */ _L18;
-  kcg_int64 /* _L22/ */ _L22;
-  kcg_int64 /* _L24/ */ _L24;
-  kcg_int64 /* _L23/ */ _L23;
+  array_int32_500_500 /* _L18/ */ _L18;
+  kcg_int32 /* _L22/ */ _L22;
+  kcg_int32 /* _L24/ */ _L24;
+  kcg_int32 /* _L23/ */ _L23;
 } outC_RECV_ReadPacketKernel_TM_lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */

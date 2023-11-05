@@ -14,7 +14,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_float64 /* calculatedAcceleration/ */ calculatedAcceleration;
+  kcg_float32 /* calculatedAcceleration/ */ calculatedAcceleration;
   kcg_bool /* afbActive/ */ afbActive;
   /* -----------------------  no local probes  ----------------------- */
   /* ----------------------- local memories  ------------------------- */
@@ -38,62 +38,62 @@ typedef struct {
   kcg_bool /* @1/_L5/ */ _L5_FlipFlopSet_1;
   kcg_bool /* @1/_L4/ */ _L4_FlipFlopSet_1;
   kcg_bool /* @1/_L10/ */ _L10_FlipFlopSet_1;
-  kcg_float64 /* IfBlock1:then:IfBlock2:else:then:_L16/ */ _L16_then_else_IfBlock2_then_IfBlock1;
-  kcg_float64 /* IfBlock1:then:IfBlock2:else:then:_L15/ */ _L15_then_else_IfBlock2_then_IfBlock1;
-  kcg_float64 /* IfBlock1:then:IfBlock2:else:then:_L3/ */ _L3_then_else_IfBlock2_then_IfBlock1;
-  kcg_float64 /* IfBlock1:then:IfBlock2:else:then:_L5/ */ _L5_then_else_IfBlock2_then_IfBlock1;
-  kcg_float64 /* IfBlock1:then:IfBlock2:else:then:_L6/ */ _L6_then_else_IfBlock2_then_IfBlock1;
-  kcg_float64 /* IfBlock1:then:IfBlock2:else:then:_L7/ */ _L7_then_else_IfBlock2_then_IfBlock1;
+  kcg_float32 /* IfBlock1:then:IfBlock2:else:then:_L16/ */ _L16_then_else_IfBlock2_then_IfBlock1;
+  kcg_float32 /* IfBlock1:then:IfBlock2:else:then:_L15/ */ _L15_then_else_IfBlock2_then_IfBlock1;
+  kcg_float32 /* IfBlock1:then:IfBlock2:else:then:_L3/ */ _L3_then_else_IfBlock2_then_IfBlock1;
+  kcg_float32 /* IfBlock1:then:IfBlock2:else:then:_L5/ */ _L5_then_else_IfBlock2_then_IfBlock1;
+  kcg_float32 /* IfBlock1:then:IfBlock2:else:then:_L6/ */ _L6_then_else_IfBlock2_then_IfBlock1;
+  kcg_float32 /* IfBlock1:then:IfBlock2:else:then:_L7/ */ _L7_then_else_IfBlock2_then_IfBlock1;
   kcg_bool /* IfBlock1:then:IfBlock2:else:then:_L8/ */ _L8_then_else_IfBlock2_then_IfBlock1;
-  kcg_float64 /* IfBlock1:then:IfBlock2:else:then:_L9/ */ _L9_then_else_IfBlock2_then_IfBlock1;
-  kcg_float64 /* IfBlock1:then:IfBlock2:else:then:_L10/ */ _L10_then_else_IfBlock2_then_IfBlock1;
-  kcg_float64 /* IfBlock1:then:IfBlock2:else:then:_L11/ */ _L11_then_else_IfBlock2_then_IfBlock1;
-  kcg_float64 /* IfBlock1:then:IfBlock2:else:then:_L13/ */ _L13_then_else_IfBlock2_then_IfBlock1;
-  kcg_float64 /* IfBlock1:then:IfBlock2:else:then:_L14/ */ _L14_then_else_IfBlock2_then_IfBlock1;
-  kcg_float64 /* IfBlock1:then:IfBlock2:else:else:_L19/ */ _L19_else_else_IfBlock2_then_IfBlock1;
-  kcg_float64 /* IfBlock1:then:IfBlock2:else:else:_L18/ */ _L18_else_else_IfBlock2_then_IfBlock1;
-  kcg_float64 /* IfBlock1:then:IfBlock2:else:else:_L17/ */ _L17_else_else_IfBlock2_then_IfBlock1;
-  kcg_float64 /* IfBlock1:then:IfBlock2:else:else:_L16/ */ _L16_else_else_IfBlock2_then_IfBlock1;
+  kcg_float32 /* IfBlock1:then:IfBlock2:else:then:_L9/ */ _L9_then_else_IfBlock2_then_IfBlock1;
+  kcg_float32 /* IfBlock1:then:IfBlock2:else:then:_L10/ */ _L10_then_else_IfBlock2_then_IfBlock1;
+  kcg_float32 /* IfBlock1:then:IfBlock2:else:then:_L11/ */ _L11_then_else_IfBlock2_then_IfBlock1;
+  kcg_float32 /* IfBlock1:then:IfBlock2:else:then:_L13/ */ _L13_then_else_IfBlock2_then_IfBlock1;
+  kcg_float32 /* IfBlock1:then:IfBlock2:else:then:_L14/ */ _L14_then_else_IfBlock2_then_IfBlock1;
+  kcg_float32 /* IfBlock1:then:IfBlock2:else:else:_L19/ */ _L19_else_else_IfBlock2_then_IfBlock1;
+  kcg_float32 /* IfBlock1:then:IfBlock2:else:else:_L18/ */ _L18_else_else_IfBlock2_then_IfBlock1;
+  kcg_float32 /* IfBlock1:then:IfBlock2:else:else:_L17/ */ _L17_else_else_IfBlock2_then_IfBlock1;
+  kcg_float32 /* IfBlock1:then:IfBlock2:else:else:_L16/ */ _L16_else_else_IfBlock2_then_IfBlock1;
   kcg_bool /* IfBlock1:then:IfBlock2:else:else:_L15/ */ _L15_else_else_IfBlock2_then_IfBlock1;
-  kcg_float64 /* IfBlock1:then:IfBlock2:else:else:_L14/ */ _L14_else_else_IfBlock2_then_IfBlock1;
-  kcg_float64 /* IfBlock1:then:IfBlock2:else:else:_L13/ */ _L13_else_else_IfBlock2_then_IfBlock1;
-  kcg_float64 /* IfBlock1:then:IfBlock2:else:else:_L12/ */ _L12_else_else_IfBlock2_then_IfBlock1;
-  kcg_float64 /* IfBlock1:then:IfBlock2:else:else:_L10/ */ _L10_else_else_IfBlock2_then_IfBlock1;
-  kcg_float64 /* IfBlock1:then:IfBlock2:else:else:_L9/ */ _L9_else_else_IfBlock2_then_IfBlock1;
-  kcg_float64 /* IfBlock1:then:IfBlock2:then:_L1/ */ _L1_then_IfBlock2_then_IfBlock1;
-  kcg_float64 /* IfBlock1:else:_L26/ */ _L26_else_IfBlock1;
-  kcg_float64 /* IfBlock1:else:_L27/ */ _L27_else_IfBlock1;
-  kcg_float64 /* IfBlock1:else:_L19/ */ _L19_else_IfBlock1;
-  kcg_float64 /* IfBlock1:else:_L17/ */ _L17_else_IfBlock1;
-  kcg_float64 /* IfBlock1:else:_L18/ */ _L18_else_IfBlock1;
-  kcg_float64 /* IfBlock1:else:_L16/ */ _L16_else_IfBlock1;
-  kcg_float64 /* IfBlock1:else:_L14/ */ _L14_else_IfBlock1;
+  kcg_float32 /* IfBlock1:then:IfBlock2:else:else:_L14/ */ _L14_else_else_IfBlock2_then_IfBlock1;
+  kcg_float32 /* IfBlock1:then:IfBlock2:else:else:_L13/ */ _L13_else_else_IfBlock2_then_IfBlock1;
+  kcg_float32 /* IfBlock1:then:IfBlock2:else:else:_L12/ */ _L12_else_else_IfBlock2_then_IfBlock1;
+  kcg_float32 /* IfBlock1:then:IfBlock2:else:else:_L10/ */ _L10_else_else_IfBlock2_then_IfBlock1;
+  kcg_float32 /* IfBlock1:then:IfBlock2:else:else:_L9/ */ _L9_else_else_IfBlock2_then_IfBlock1;
+  kcg_float32 /* IfBlock1:then:IfBlock2:then:_L1/ */ _L1_then_IfBlock2_then_IfBlock1;
+  kcg_float32 /* IfBlock1:else:_L26/ */ _L26_else_IfBlock1;
+  kcg_float32 /* IfBlock1:else:_L27/ */ _L27_else_IfBlock1;
+  kcg_float32 /* IfBlock1:else:_L19/ */ _L19_else_IfBlock1;
+  kcg_float32 /* IfBlock1:else:_L17/ */ _L17_else_IfBlock1;
+  kcg_float32 /* IfBlock1:else:_L18/ */ _L18_else_IfBlock1;
+  kcg_float32 /* IfBlock1:else:_L16/ */ _L16_else_IfBlock1;
+  kcg_float32 /* IfBlock1:else:_L14/ */ _L14_else_IfBlock1;
   kcg_bool /* IfBlock1:else:_L13/ */ _L13_else_IfBlock1;
-  kcg_float64 /* IfBlock1:else:_L12/ */ _L12_else_IfBlock1;
-  kcg_float64 /* IfBlock1:else:_L11/ */ _L11_else_IfBlock1;
-  kcg_float64 /* IfBlock1:else:_L10/ */ _L10_else_IfBlock1;
+  kcg_float32 /* IfBlock1:else:_L12/ */ _L12_else_IfBlock1;
+  kcg_float32 /* IfBlock1:else:_L11/ */ _L11_else_IfBlock1;
+  kcg_float32 /* IfBlock1:else:_L10/ */ _L10_else_IfBlock1;
   kcg_bool /* IfBlock1:else:_L9/ */ _L9_else_IfBlock1;
   kcg_bool /* IfBlock1:else:_L6/ */ _L6_else_IfBlock1;
-  kcg_float64 /* realTargetSpeed/ */ realTargetSpeed;
+  kcg_float32 /* realTargetSpeed/ */ realTargetSpeed;
   kcg_bool /* _L1/ */ _L1;
-  kcg_float64 /* _L2/ */ _L2;
-  kcg_float64 /* _L3/ */ _L3;
-  kcg_float64 /* _L4/ */ _L4;
-  kcg_float64 /* _L5/ */ _L5;
-  kcg_float64 /* _L6/ */ _L6;
+  kcg_float32 /* _L2/ */ _L2;
+  kcg_float32 /* _L3/ */ _L3;
+  kcg_float32 /* _L4/ */ _L4;
+  kcg_float32 /* _L5/ */ _L5;
+  kcg_float32 /* _L6/ */ _L6;
 } outC_AFB_Toolbox_Physics;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* Toolbox::Physics::AFB/ */
 extern void AFB_Toolbox_Physics(
   /* targetSpeed/ */
-  kcg_float64 targetSpeed,
+  kcg_float32 targetSpeed,
   /* traction/ */
-  kcg_float64 traction,
+  kcg_float32 traction,
   /* brake/ */
-  kcg_float64 brake,
+  kcg_float32 brake,
   /* currentSpeed/ */
-  kcg_float64 currentSpeed,
+  kcg_float32 currentSpeed,
   outC_AFB_Toolbox_Physics *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

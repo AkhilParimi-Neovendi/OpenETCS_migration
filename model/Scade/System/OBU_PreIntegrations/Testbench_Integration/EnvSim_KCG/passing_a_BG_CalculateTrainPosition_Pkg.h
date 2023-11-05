@@ -39,7 +39,7 @@ typedef struct {
   positionedBG_T_TrainPosition_Types_Pck /* _L5/ */ _L5;
   kcg_bool /* _L6/ */ _L6;
   linkedBGs_asPositionedBGs_T_TrainPosition_Types_Pck /* _L7/ */ _L7;
-  kcg_int64 /* _L9/ */ _L9;
+  kcg_int32 /* _L9/ */ _L9;
   kcg_bool /* _L10/ */ _L10;
   kcg_bool /* _L11/ */ _L11;
   positionedBG_T_TrainPosition_Types_Pck /* _L12/ */ _L12;
@@ -55,7 +55,7 @@ typedef struct {
   kcg_bool /* _L23/ */ _L23;
   positionedBGs_T_TrainPosition_Types_Pck /* _L24/ */ _L24;
   positionedBG_T_TrainPosition_Types_Pck /* _L25/ */ _L25;
-  kcg_int64 /* _L26/ */ _L26;
+  kcg_int32 /* _L26/ */ _L26;
   positionedBGs_T_TrainPosition_Types_Pck /* _L30/ */ _L30;
   trainProperties_T_TrainPosition_Types_Pck /* _L31/ */ _L31;
   kcg_bool /* _L32/ */ _L32;
@@ -71,7 +71,7 @@ extern void passing_a_BG_CalculateTrainPosition_Pkg(
   /* BGs_in/ */
   positionedBGs_T_TrainPosition_Types_Pck *BGs_in,
   /* passedBGSeqNo/ */
-  kcg_int64 passedBGSeqNo,
+  kcg_int32 passedBGSeqNo,
   /* trainProperties/ */
   trainProperties_T_TrainPosition_Types_Pck *trainProperties,
   outC_passing_a_BG_CalculateTrainPosition_Pkg *outC);

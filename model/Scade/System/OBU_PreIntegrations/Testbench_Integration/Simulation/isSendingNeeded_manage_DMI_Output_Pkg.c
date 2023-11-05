@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -21,7 +21,7 @@ void isSendingNeeded_manage_DMI_Output_Pkg(
   last_lastDMI_Update = outC->lastDMI_Update;
   kcg_copy_DMI_EVC_status_T_DMI_Types_Pkg(&outC->_L14, incurrentDMIStatus);
   outC->_L15 = outC->_L14.DMI_Active;
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L1 = last_lastDMI_Update;
   outC->_L4 = outC->_L1 == outC->_L5;
   outC->_L8 = ctimeInterval_manage_DMI_Output_Pkg;
@@ -59,29 +59,29 @@ void isSendingNeeded_init_manage_DMI_Output_Pkg(
   outC->_L14.DMI_TrainDataValidated = kcg_true;
   outC->_L14.DMI_StartReceived = kcg_true;
   outC->_L14.DMI_Identifier.valid = kcg_true;
-  outC->_L14.DMI_Identifier.systemTime = kcg_lit_int64(0);
+  outC->_L14.DMI_Identifier.systemTime = kcg_lit_int32(0);
   outC->_L14.DMI_Identifier.DMI_Identifier = DMI_1_DMI_Types_Pkg;
   outC->_L14.DMI_Identifier.Cabin_Identifier = cabin_A_DMI_Types_Pkg;
-  outC->_L14.DMI_Identifier.l_name = kcg_lit_int64(0);
+  outC->_L14.DMI_Identifier.l_name = kcg_lit_int32(0);
   for (idx = 0; idx < 255; idx++) {
     outC->_L14.DMI_Identifier.DMI_name[idx] = ' ';
   }
   outC->_L14.DMI_Identifier.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L13 = kcg_true;
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
   outC->_L9 = kcg_true;
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
   outC->_L6 = kcg_true;
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L4 = kcg_true;
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
   outC->sendingNeeded = kcg_true;
-  outC->lastDMI_Update = kcg_lit_int64(0);
+  outC->lastDMI_Update = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -90,7 +90,7 @@ void isSendingNeeded_init_manage_DMI_Output_Pkg(
 void isSendingNeeded_reset_manage_DMI_Output_Pkg(
   outC_isSendingNeeded_manage_DMI_Output_Pkg *outC)
 {
-  outC->lastDMI_Update = kcg_lit_int64(0);
+  outC->lastDMI_Update = kcg_lit_int32(0);
 }
 #endif /* KCG_NO_EXTERN_CALL_TO_RESET */
 
@@ -113,6 +113,6 @@ void kcg_load_SV_isSendingNeeded_manage_DMI_Output_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** isSendingNeeded_manage_DMI_Output_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

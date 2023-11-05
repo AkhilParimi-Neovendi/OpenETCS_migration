@@ -54,39 +54,39 @@ void Read_P021_Legacy_init_TM_specific(outC_Read_P021_Legacy_TM_specific *outC)
     outC->_L4[idx].valid = kcg_true;
     outC->_L4[idx].q_dir = Q_DIR_Reverse;
     outC->_L4[idx].q_scale = Q_SCALE_10_cm_scale;
-    outC->_L4[idx].d_gradient = kcg_lit_int64(0);
+    outC->_L4[idx].d_gradient = kcg_lit_int32(0);
     outC->_L4[idx].q_gdir = Q_GDIR_downhill;
-    outC->_L4[idx].g_a = kcg_lit_int64(0);
+    outC->_L4[idx].g_a = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 30; idx1++) {
-    outC->_L3.PacketHeaders[idx1].nid_packet = kcg_lit_int64(0);
+    outC->_L3.PacketHeaders[idx1].nid_packet = kcg_lit_int32(0);
     outC->_L3.PacketHeaders[idx1].q_dir = Q_DIR_Reverse;
     outC->_L3.PacketHeaders[idx1].valid = kcg_true;
-    outC->_L3.PacketHeaders[idx1].startAddress = kcg_lit_int64(0);
-    outC->_L3.PacketHeaders[idx1].endAddress = kcg_lit_int64(0);
+    outC->_L3.PacketHeaders[idx1].startAddress = kcg_lit_int32(0);
+    outC->_L3.PacketHeaders[idx1].endAddress = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 500; idx2++) {
-    outC->_L3.PacketData[idx2] = kcg_lit_int64(0);
+    outC->_L3.PacketData[idx2] = kcg_lit_int32(0);
   }
   outC->_L1 = kcg_true;
   outC->_L2.valid = kcg_true;
   outC->_L2.q_dir = Q_DIR_Reverse;
   outC->_L2.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L2.n_iter = kcg_lit_int64(0);
+  outC->_L2.n_iter = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 33; idx3++) {
     outC->_L2.sections[idx3].valid = kcg_true;
-    outC->_L2.sections[idx3].d_gradient = kcg_lit_int64(0);
+    outC->_L2.sections[idx3].d_gradient = kcg_lit_int32(0);
     outC->_L2.sections[idx3].q_gdir = Q_GDIR_downhill;
-    outC->_L2.sections[idx3].g_a = kcg_lit_int64(0);
+    outC->_L2.sections[idx3].g_a = kcg_lit_int32(0);
   }
   outC->every = kcg_true;
   for (idx4 = 0; idx4 < 7; idx4++) {
     outC->P015_legacy_out[idx4].valid = kcg_true;
     outC->P015_legacy_out[idx4].q_dir = Q_DIR_Reverse;
     outC->P015_legacy_out[idx4].q_scale = Q_SCALE_10_cm_scale;
-    outC->P015_legacy_out[idx4].d_gradient = kcg_lit_int64(0);
+    outC->P015_legacy_out[idx4].d_gradient = kcg_lit_int32(0);
     outC->P015_legacy_out[idx4].q_gdir = Q_GDIR_downhill;
-    outC->P015_legacy_out[idx4].g_a = kcg_lit_int64(0);
+    outC->P015_legacy_out[idx4].g_a = kcg_lit_int32(0);
   }
   /* _L4=(TM_conversions::C_P021_to_legacy_t#1)/ */
   C_P021_to_legacy_t_init_TM_conversions(&outC->Context_C_P021_to_legacy_t_1);

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _ES_ExtractMsgParams_TA_EmergencyStop_H_
 #define _ES_ExtractMsgParams_TA_EmergencyStop_H_
@@ -29,7 +29,7 @@ typedef struct {
   Radio_TrackTrain_Header_T_Radio_Types_Pkg /* _L2/ */ _L2;
   NID_EM /* _L3/ */ _L3;
   NID_EM /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   kcg_bool /* _L6/ */ _L6;
   Q_SCALE /* _L7/ */ _L7;
   D_REF /* _L10/ */ _L10;
@@ -61,6 +61,6 @@ extern void ES_ExtractMsgParams_init_TA_EmergencyStop(
 #endif /* _ES_ExtractMsgParams_TA_EmergencyStop_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ES_ExtractMsgParams_TA_EmergencyStop.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

@@ -18,7 +18,7 @@ void LevelFilter_InformationFilter_Pkg_FirstFilter(
   /* inEmergencyStopAccepted/ */
   kcg_bool inEmergencyStopAccepted,
   /* inLastAckTextMessageId/ */
-  kcg_int64 inLastAckTextMessageId,
+  kcg_int32 inLastAckTextMessageId,
   /* inPendingNTCTransition/ */
   kcg_bool inPendingNTCTransition,
   /* inSPPAndGradientOnBoard/ */
@@ -30,7 +30,7 @@ void LevelFilter_InformationFilter_Pkg_FirstFilter(
   /* inPacketOrigin/ */
   MsgSource_T_Common_Types_Pkg inPacketOrigin,
   /* inPacketId/ */
-  kcg_int64 inPacketId,
+  kcg_int32 inPacketId,
   outC_LevelFilter_InformationFilter_Pkg_FirstFilter *outC)
 {
   outC->_L36 = inMACoverNotFullLength;
@@ -55,8 +55,8 @@ void LevelFilter_InformationFilter_Pkg_FirstFilter(
     &outC->_L4,
     (LevelDecisionTableType_DataDictionary_Pkg *)
       &LevelDecisionTableFromBalise_DataDictionary_Pkg);
-  if ((kcg_lit_int64(0) <= outC->_L20) & (outC->_L20 < kcg_lit_int64(256)) &
-    ((kcg_lit_int64(0) <= outC->_L23) & (outC->_L23 < kcg_lit_int64(5)))) {
+  if ((kcg_lit_int32(0) <= outC->_L20) & (outC->_L20 < kcg_lit_int32(256)) &
+    ((kcg_lit_int32(0) <= outC->_L23) & (outC->_L23 < kcg_lit_int32(5)))) {
     outC->_L3 = outC->_L4[outC->_L20][outC->_L23];
   }
   else {
@@ -68,8 +68,8 @@ void LevelFilter_InformationFilter_Pkg_FirstFilter(
     &outC->_L5,
     (LevelDecisionTableType_DataDictionary_Pkg *)
       &LevelDecisionTableFromRBC_DataDictionary_Pkg);
-  if ((kcg_lit_int64(0) <= outC->_L21) & (outC->_L21 < kcg_lit_int64(256)) &
-    ((kcg_lit_int64(0) <= outC->_L24) & (outC->_L24 < kcg_lit_int64(5)))) {
+  if ((kcg_lit_int32(0) <= outC->_L21) & (outC->_L21 < kcg_lit_int32(256)) &
+    ((kcg_lit_int32(0) <= outC->_L24) & (outC->_L24 < kcg_lit_int32(5)))) {
     outC->_L6 = outC->_L5[outC->_L21][outC->_L24];
   }
   else {
@@ -121,20 +121,20 @@ void LevelFilter_init_InformationFilter_Pkg_FirstFilter(
   outC->_L36 = kcg_true;
   outC->_L35 = kcg_true;
   outC->_L34 = kcg_true;
-  outC->_L33 = kcg_lit_int64(0);
+  outC->_L33 = kcg_lit_int32(0);
   outC->_L32 = kcg_true;
   outC->_L31 = kcg_true;
   outC->_L30 = kcg_true;
   outC->_L29 = kcg_true;
   outC->_L28 = kcg_true;
   outC->_L25 = msrc_undefined_Common_Types_Pkg;
-  outC->_L24 = kcg_lit_int64(0);
-  outC->_L23 = kcg_lit_int64(0);
-  outC->_L22 = kcg_lit_int64(0);
-  outC->_L21 = kcg_lit_int64(0);
-  outC->_L20 = kcg_lit_int64(0);
-  outC->_L18 = kcg_lit_int64(0);
-  outC->_L17 = kcg_lit_int64(0);
+  outC->_L24 = kcg_lit_int32(0);
+  outC->_L23 = kcg_lit_int32(0);
+  outC->_L22 = kcg_lit_int32(0);
+  outC->_L21 = kcg_lit_int32(0);
+  outC->_L20 = kcg_lit_int32(0);
+  outC->_L18 = kcg_lit_int32(0);
+  outC->_L17 = kcg_lit_int32(0);
   outC->_L16 = kcg_true;
   outC->_L11 = kcg_true;
   outC->_L14 = msrc_undefined_Common_Types_Pkg;
@@ -152,8 +152,8 @@ void LevelFilter_init_InformationFilter_Pkg_FirstFilter(
   }
   outC->_L3 = LD_Invalid_DataDictionary_Pkg;
   outC->_L2 = M_LEVEL_Level_0;
-  outC->column = kcg_lit_int64(0);
-  outC->row = kcg_lit_int64(0);
+  outC->column = kcg_lit_int32(0);
+  outC->row = kcg_lit_int32(0);
   outC->outPacketAccept = kcg_true;
   outC->outStoreInTransitionBuffer = kcg_true;
   /* _L16=(InformationFilter_Pkg::FirstFilter::CheckLevelExceptions#1)/ */

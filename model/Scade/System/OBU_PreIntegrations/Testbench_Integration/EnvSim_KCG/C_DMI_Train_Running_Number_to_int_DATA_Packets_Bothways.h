@@ -25,13 +25,13 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  array_int64_3 /* _L2/ */ _L2;
+  array_int32_3 /* _L2/ */ _L2;
   kcg_bool /* _L5/ */ _L5;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L4/ */ _L4;
   NID_OPERATIONAL /* _L3/ */ _L3;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L6/ */ _L6;
   DMI_Train_Running_Number_T_DMI_Messages_Bothways_Pkg /* _L13/ */ _L13;
-  kcg_int64 /* _L17/ */ _L17;
+  kcg_int32 /* _L17/ */ _L17;
 } outC_C_DMI_Train_Running_Number_to_int_DATA_Packets_Bothways;
 
 /* ===========  node initialization and cycle functions  =========== */

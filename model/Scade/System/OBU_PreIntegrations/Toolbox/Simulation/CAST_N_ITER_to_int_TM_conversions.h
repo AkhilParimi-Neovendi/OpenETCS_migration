@@ -14,7 +14,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* n_iter_int/ */ n_iter_int;
+  kcg_int32 /* n_iter_int/ */ n_iter_int;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
@@ -23,9 +23,9 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   N_ITER /* _L1/ */ _L1;
   kcg_bool /* _L12/ */ _L12;
-  kcg_int64 /* _L11/ */ _L11;
+  kcg_int32 /* _L11/ */ _L11;
   kcg_bool /* _L10/ */ _L10;
-  kcg_int64 /* _L9/ */ _L9;
+  kcg_int32 /* _L9/ */ _L9;
 } outC_CAST_N_ITER_to_int_TM_conversions;
 
 /* ===========  node initialization and cycle functions  =========== */

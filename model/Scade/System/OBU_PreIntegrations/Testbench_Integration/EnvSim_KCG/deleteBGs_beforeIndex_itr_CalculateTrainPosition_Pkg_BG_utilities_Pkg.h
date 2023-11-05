@@ -24,12 +24,12 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   positionedBG_T_TrainPosition_Types_Pck /* _L10/ */ _L10;
   kcg_bool /* _L9/ */ _L9;
-  kcg_int64 /* _L8/ */ _L8;
+  kcg_int32 /* _L8/ */ _L8;
   positionedBGs_T_TrainPosition_Types_Pck /* _L7/ */ _L7;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L6/ */ _L6;
   positionedBGs_T_TrainPosition_Types_Pck /* _L5/ */ _L5;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L3/ */ _L3;
   positionedBG_T_TrainPosition_Types_Pck /* _L2/ */ _L2;
 } outC_deleteBGs_beforeIndex_itr_CalculateTrainPosition_Pkg_BG_utilities_Pkg;
 
@@ -37,9 +37,9 @@ typedef struct {
 /* CalculateTrainPosition_Pkg::BG_utilities_Pkg::deleteBGs_beforeIndex_itr/ */
 extern void deleteBGs_beforeIndex_itr_CalculateTrainPosition_Pkg_BG_utilities_Pkg(
   /* iteratorIndex/ */
-  kcg_int64 iteratorIndex,
+  kcg_int32 iteratorIndex,
   /* indexOfBG/ */
-  kcg_int64 indexOfBG,
+  kcg_int32 indexOfBG,
   /* BGs_in/ */
   positionedBGs_T_TrainPosition_Types_Pck *BGs_in,
   outC_deleteBGs_beforeIndex_itr_CalculateTrainPosition_Pkg_BG_utilities_Pkg *outC);

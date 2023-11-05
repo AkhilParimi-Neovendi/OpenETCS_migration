@@ -42,18 +42,18 @@ void Msg154ConsistencyChecker__HasConsistentHeader_init_RBC_Messaging_Pkg_RBC_Co
 {
   outC->_L1 = kcg_true;
   outC->_L2 = kcg_true;
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L4.present = kcg_true;
-  outC->_L4.nid_message = kcg_lit_int64(0);
-  outC->_L4.t_train = kcg_lit_int64(0);
-  outC->_L4.nid_engine = kcg_lit_int64(0);
+  outC->_L4.nid_message = kcg_lit_int32(0);
+  outC->_L4.t_train = kcg_lit_int32(0);
+  outC->_L4.nid_engine = kcg_lit_int32(0);
   outC->_L4.xQ_MARQSTREASON = Q_MARQSTREASON_Start_selected_by_driver;
-  outC->_L4.xT_TRAIN = kcg_lit_int64(0);
-  outC->_L4.xNID_EM = kcg_lit_int64(0);
+  outC->_L4.xT_TRAIN = kcg_lit_int32(0);
+  outC->_L4.xNID_EM = kcg_lit_int32(0);
   outC->_L4.xQ_EMERGENCYSTOP =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
-  outC->_L4.xNID_TEXTMESSAGE = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L4.xNID_TEXTMESSAGE = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L6 = Q_MARQSTREASON_Start_selected_by_driver;
   outC->_L7 = kcg_true;
   outC->_L8 = Q_MARQSTREASON_Start_selected_by_driver;

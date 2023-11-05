@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _checkOdometry_Receive_TrackSide_Msg_Pkg_H_
 #define _checkOdometry_Receive_TrackSide_Msg_Pkg_H_
@@ -37,8 +37,8 @@ typedef struct {
   kcg_bool /* IfBlock1:then:_L16/ */ _L16_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L15/ */ _L15_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L14/ */ _L14_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L13/ */ _L13_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L12/ */ _L12_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L13/ */ _L13_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L12/ */ _L12_then_IfBlock1;
   OdometryLocations_T_Obu_BasicTypes_Pkg /* IfBlock1:then:_L11/ */ _L11_then_IfBlock1;
   BGCollector_T_Receive_TrackSide_Msg_Pkg /* IfBlock1:then:_L9/ */ _L9_then_IfBlock1;
   OdometryLocations_T_Obu_BasicTypes_Pkg /* IfBlock1:then:_L10/ */ _L10_then_IfBlock1;
@@ -52,9 +52,9 @@ typedef struct {
   kcg_bool /* isValid/ */ isValid;
   odometry_T_Obu_BasicTypes_Pkg /* _L11/ */ _L11;
   kcg_bool /* _L12/ */ _L12;
-  kcg_int64 /* _L19/ */ _L19;
+  kcg_int32 /* _L19/ */ _L19;
   kcg_bool /* _L20/ */ _L20;
-  kcg_int64 /* _L21/ */ _L21;
+  kcg_int32 /* _L21/ */ _L21;
   kcg_bool /* _L22/ */ _L22;
   BGCollector_T_Receive_TrackSide_Msg_Pkg /* _L30/ */ _L30;
 } outC_checkOdometry_Receive_TrackSide_Msg_Pkg;
@@ -83,6 +83,6 @@ extern void checkOdometry_init_Receive_TrackSide_Msg_Pkg(
 #endif /* _checkOdometry_Receive_TrackSide_Msg_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** checkOdometry_Receive_TrackSide_Msg_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

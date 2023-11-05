@@ -65,7 +65,7 @@ void TargetManagement_TargetManagement_pkg(
   kcg_copy_Target_list_MRSP_real_T_TargetManagement_types(
     &outC->_L107,
     &last_MRSPTargetList);
-  outC->_L99 = kcg_lit_int64(-1);
+  outC->_L99 = kcg_lit_int32(-1);
   kcg_copy_Target_list_MRSP_real_T_TargetManagement_types(
     &outC->_L98.targetList,
     &outC->_L107);
@@ -149,61 +149,61 @@ void TargetManagement_init_TargetManagement_pkg(
   static kcg_size idx8;
 
   outC->_L14.targetType = EoA_TargetManagement_types;
-  outC->_L14.distance = kcg_lit_float64(0.0);
-  outC->_L14.speed = kcg_lit_float64(0.0);
+  outC->_L14.distance = kcg_lit_float32(0.0);
+  outC->_L14.speed = kcg_lit_float32(0.0);
   for (idx1 = 0; idx1 < 110; idx1++) {
     outC->_L121[idx1].targetType = EoA_TargetManagement_types;
-    outC->_L121[idx1].distance = kcg_lit_float64(0.0);
-    outC->_L121[idx1].speed = kcg_lit_float64(0.0);
+    outC->_L121[idx1].distance = kcg_lit_float32(0.0);
+    outC->_L121[idx1].speed = kcg_lit_float32(0.0);
   }
   for (idx2 = 0; idx2 < 110; idx2++) {
     outC->_L107[idx2].targetType = EoA_TargetManagement_types;
-    outC->_L107[idx2].distance = kcg_lit_float64(0.0);
-    outC->_L107[idx2].speed = kcg_lit_float64(0.0);
+    outC->_L107[idx2].distance = kcg_lit_float32(0.0);
+    outC->_L107[idx2].speed = kcg_lit_float32(0.0);
   }
-  outC->_L99 = kcg_lit_int64(0);
+  outC->_L99 = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 110; idx3++) {
     outC->_L98.targetList[idx3].targetType = EoA_TargetManagement_types;
-    outC->_L98.targetList[idx3].distance = kcg_lit_float64(0.0);
-    outC->_L98.targetList[idx3].speed = kcg_lit_float64(0.0);
+    outC->_L98.targetList[idx3].distance = kcg_lit_float32(0.0);
+    outC->_L98.targetList[idx3].speed = kcg_lit_float32(0.0);
   }
-  outC->_L98.lastInsertedTargetIndex = kcg_lit_int64(0);
+  outC->_L98.lastInsertedTargetIndex = kcg_lit_int32(0);
   outC->_L97.valid = kcg_true;
-  outC->_L97.v_main = kcg_lit_float64(0.0);
-  outC->_L97.EOA.Location = kcg_lit_float64(0.0);
-  outC->_L97.EOA.TargetSpeed = kcg_lit_float64(0.0);
+  outC->_L97.v_main = kcg_lit_float32(0.0);
+  outC->_L97.EOA.Location = kcg_lit_float32(0.0);
+  outC->_L97.EOA.TargetSpeed = kcg_lit_float32(0.0);
   outC->_L97.DP_valid = kcg_true;
-  outC->_L97.DangerPoint = kcg_lit_float64(0.0);
+  outC->_L97.DangerPoint = kcg_lit_float32(0.0);
   outC->_L97.OL_valid = kcg_true;
-  outC->_L97.Overlap = kcg_lit_float64(0.0);
+  outC->_L97.Overlap = kcg_lit_float32(0.0);
   outC->_L97.q_calculate_release = kcg_true;
-  outC->_L97.ReleaseSpeed = kcg_lit_float64(0.0);
+  outC->_L97.ReleaseSpeed = kcg_lit_float32(0.0);
   outC->_L97.level = MA_L1_TrackAtlasTypes;
   outC->_L89.trainPositionIsValid = kcg_true;
-  outC->_L89.d_est_frontendPos = kcg_lit_float64(0.0);
-  outC->_L89.d_minSafeFrontEndPos = kcg_lit_float64(0.0);
-  outC->_L89.d_maxSafeFrontEndPos = kcg_lit_float64(0.0);
-  outC->_L89.d_LRBG = kcg_lit_float64(0.0);
-  outC->_L89.d_accLRBG = kcg_lit_float64(0.0);
-  outC->_L90 = kcg_lit_float64(0.0);
+  outC->_L89.d_est_frontendPos = kcg_lit_float32(0.0);
+  outC->_L89.d_minSafeFrontEndPos = kcg_lit_float32(0.0);
+  outC->_L89.d_maxSafeFrontEndPos = kcg_lit_float32(0.0);
+  outC->_L89.d_LRBG = kcg_lit_float32(0.0);
+  outC->_L89.d_accLRBG = kcg_lit_float32(0.0);
+  outC->_L90 = kcg_lit_float32(0.0);
   for (idx4 = 0; idx4 < 110; idx4++) {
     outC->_L87[idx4].targetType = EoA_TargetManagement_types;
-    outC->_L87[idx4].distance = kcg_lit_float64(0.0);
-    outC->_L87[idx4].speed = kcg_lit_float64(0.0);
+    outC->_L87[idx4].distance = kcg_lit_float32(0.0);
+    outC->_L87[idx4].speed = kcg_lit_float32(0.0);
   }
   outC->_L88 = kcg_true;
   outC->_L79.updatedTargetList = kcg_true;
   for (idx5 = 0; idx5 < 110; idx5++) {
     outC->_L79.MRSP_targetList[idx5].targetType = EoA_TargetManagement_types;
-    outC->_L79.MRSP_targetList[idx5].distance = kcg_lit_float64(0.0);
-    outC->_L79.MRSP_targetList[idx5].speed = kcg_lit_float64(0.0);
+    outC->_L79.MRSP_targetList[idx5].distance = kcg_lit_float32(0.0);
+    outC->_L79.MRSP_targetList[idx5].speed = kcg_lit_float32(0.0);
   }
   outC->_L79.EOA_target.targetType = EoA_TargetManagement_types;
-  outC->_L79.EOA_target.distance = kcg_lit_float64(0.0);
-  outC->_L79.EOA_target.speed = kcg_lit_float64(0.0);
+  outC->_L79.EOA_target.distance = kcg_lit_float32(0.0);
+  outC->_L79.EOA_target.speed = kcg_lit_float32(0.0);
   outC->_L79.SvL_LoA_target.targetType = EoA_TargetManagement_types;
-  outC->_L79.SvL_LoA_target.distance = kcg_lit_float64(0.0);
-  outC->_L79.SvL_LoA_target.speed = kcg_lit_float64(0.0);
+  outC->_L79.SvL_LoA_target.distance = kcg_lit_float32(0.0);
+  outC->_L79.SvL_LoA_target.speed = kcg_lit_float32(0.0);
   outC->_L19 = kcg_true;
   outC->_L17 = kcg_true;
   outC->_L16 = kcg_true;
@@ -211,37 +211,37 @@ void TargetManagement_init_TargetManagement_pkg(
   outC->_L3 = kcg_true;
   for (idx6 = 0; idx6 < 110; idx6++) {
     outC->_L2.targetList[idx6].targetType = EoA_TargetManagement_types;
-    outC->_L2.targetList[idx6].distance = kcg_lit_float64(0.0);
-    outC->_L2.targetList[idx6].speed = kcg_lit_float64(0.0);
+    outC->_L2.targetList[idx6].distance = kcg_lit_float32(0.0);
+    outC->_L2.targetList[idx6].speed = kcg_lit_float32(0.0);
   }
-  outC->_L2.lastInsertedTargetIndex = kcg_lit_int64(0);
+  outC->_L2.lastInsertedTargetIndex = kcg_lit_int32(0);
   for (idx7 = 0; idx7 < 110; idx7++) {
-    outC->_L1[idx7].Loc_Abs = kcg_lit_float64(0.0);
-    outC->_L1[idx7].MRS = kcg_lit_float64(0.0);
+    outC->_L1[idx7].Loc_Abs = kcg_lit_float32(0.0);
+    outC->_L1[idx7].MRS = kcg_lit_float32(0.0);
     outC->_L1[idx7].valid = kcg_true;
   }
   outC->every1 = kcg_true;
   outC->every = kcg_true;
   outC->_L93.targetType = EoA_TargetManagement_types;
-  outC->_L93.distance = kcg_lit_float64(0.0);
-  outC->_L93.speed = kcg_lit_float64(0.0);
+  outC->_L93.distance = kcg_lit_float32(0.0);
+  outC->_L93.speed = kcg_lit_float32(0.0);
   outC->_L12.targetType = EoA_TargetManagement_types;
-  outC->_L12.distance = kcg_lit_float64(0.0);
-  outC->_L12.speed = kcg_lit_float64(0.0);
+  outC->_L12.distance = kcg_lit_float32(0.0);
+  outC->_L12.speed = kcg_lit_float32(0.0);
   outC->init = kcg_true;
   outC->targetCollection.updatedTargetList = kcg_true;
   for (idx8 = 0; idx8 < 110; idx8++) {
     outC->targetCollection.MRSP_targetList[idx8].targetType =
       EoA_TargetManagement_types;
-    outC->targetCollection.MRSP_targetList[idx8].distance = kcg_lit_float64(0.0);
-    outC->targetCollection.MRSP_targetList[idx8].speed = kcg_lit_float64(0.0);
+    outC->targetCollection.MRSP_targetList[idx8].distance = kcg_lit_float32(0.0);
+    outC->targetCollection.MRSP_targetList[idx8].speed = kcg_lit_float32(0.0);
   }
   outC->targetCollection.EOA_target.targetType = EoA_TargetManagement_types;
-  outC->targetCollection.EOA_target.distance = kcg_lit_float64(0.0);
-  outC->targetCollection.EOA_target.speed = kcg_lit_float64(0.0);
+  outC->targetCollection.EOA_target.distance = kcg_lit_float32(0.0);
+  outC->targetCollection.EOA_target.speed = kcg_lit_float32(0.0);
   outC->targetCollection.SvL_LoA_target.targetType = EoA_TargetManagement_types;
-  outC->targetCollection.SvL_LoA_target.distance = kcg_lit_float64(0.0);
-  outC->targetCollection.SvL_LoA_target.speed = kcg_lit_float64(0.0);
+  outC->targetCollection.SvL_LoA_target.distance = kcg_lit_float32(0.0);
+  outC->targetCollection.SvL_LoA_target.speed = kcg_lit_float32(0.0);
   /* _L87=(TargetManagement_pkg::internalOperators::removeOverpassedMRSP#1)/ */
   removeOverpassedMRSP_init_TargetManagement_pkg_internalOperators(
     &outC->Context_removeOverpassedMRSP_1);

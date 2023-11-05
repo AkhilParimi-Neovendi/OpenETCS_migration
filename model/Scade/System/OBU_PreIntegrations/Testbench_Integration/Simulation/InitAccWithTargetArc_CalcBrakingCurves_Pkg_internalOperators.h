@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _InitAccWithTargetArc_CalcBrakingCurves_Pkg_internalOperators_H_
 #define _InitAccWithTargetArc_CalcBrakingCurves_Pkg_internalOperators_H_
@@ -38,9 +38,9 @@ typedef struct {
   ASafeSpeedDefinition_T_CalcBrakingCurves_types /* _L6/ */ _L6;
   ASafe_Data_T_CalcBrakingCurves_types /* _L7/ */ _L7;
   V_internal_real_Type_SDM_Types_Pkg /* _L8/ */ _L8;
-  kcg_int64 /* _L9/ */ _L9;
+  kcg_int32 /* _L9/ */ _L9;
   L_internal_real_Type_SDM_Types_Pkg /* _L10/ */ _L10;
-  kcg_int64 /* _L11/ */ _L11;
+  kcg_int32 /* _L11/ */ _L11;
   V_internal_real_Type_SDM_Types_Pkg /* _L17/ */ _L17;
   V_internal_real_Type_SDM_Types_Pkg /* _L19/ */ _L19;
   A_internal_real_Type_SDM_Types_Pkg /* _L20/ */ _L20;
@@ -81,6 +81,6 @@ extern void InitAccWithTargetArc_init_CalcBrakingCurves_Pkg_internalOperators(
 #endif /* _InitAccWithTargetArc_CalcBrakingCurves_Pkg_internalOperators_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** InitAccWithTargetArc_CalcBrakingCurves_Pkg_internalOperators.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

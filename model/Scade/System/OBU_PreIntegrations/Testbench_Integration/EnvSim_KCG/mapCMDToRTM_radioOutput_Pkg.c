@@ -15,7 +15,7 @@ void mapCMDToRTM_radioOutput_Pkg(
   mobileRegistrationCmd_T_RCM_Types_Pkg *mobileRegistrationCMD,
   outC_mapCMDToRTM_radioOutput_Pkg *outC)
 {
-  outC->_L39 = kcg_lit_int64(0);
+  outC->_L39 = kcg_lit_int32(0);
   kcg_copy_mobileConnectionCmd_T_RCM_Types_Pkg(&outC->_L20, mobileConnectionCMD);
   outC->_L35 = outC->_L20.nid_radio;
   outC->_L37 = outC->_L20.valid;
@@ -61,34 +61,34 @@ void mapCMDToRTM_radioOutput_Pkg(
 #ifndef KCG_USER_DEFINED_INIT
 void mapCMDToRTM_init_radioOutput_Pkg(outC_mapCMDToRTM_radioOutput_Pkg *outC)
 {
-  outC->_L39 = kcg_lit_int64(0);
-  outC->_L38 = kcg_lit_int64(0);
+  outC->_L39 = kcg_lit_int32(0);
+  outC->_L38 = kcg_lit_int32(0);
   outC->_L37 = kcg_true;
-  outC->_L36 = kcg_lit_int64(0);
-  outC->_L35 = kcg_lit_int64(0);
-  outC->_L34 = kcg_lit_int64(0);
+  outC->_L36 = kcg_lit_int32(0);
+  outC->_L35 = kcg_lit_int32(0);
+  outC->_L34 = kcg_lit_int32(0);
   outC->_L33 = kcg_true;
-  outC->_L26 = kcg_lit_int64(0);
-  outC->_L25 = kcg_lit_int64(0);
+  outC->_L26 = kcg_lit_int32(0);
+  outC->_L25 = kcg_lit_int32(0);
   outC->_L24 = kcg_true;
   outC->_L23 = cmdr_not_relevant_API_RadioCommunication_Pkg;
   outC->_L22 = cmdr_not_relevant_API_RadioCommunication_Pkg;
   outC->_L21.valid = kcg_true;
-  outC->_L21.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L21.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L21.action = mra_nop_RCM_Types_Pkg;
-  outC->_L21.network_id = kcg_lit_int64(0);
+  outC->_L21.network_id = kcg_lit_int32(0);
   outC->_L20.valid = kcg_true;
-  outC->_L20.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L20.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L20.action = mca_nop_RCM_Types_Pkg;
-  outC->_L20.nid_radio = kcg_lit_int64(0);
+  outC->_L20.nid_radio = kcg_lit_int32(0);
   outC->_L18.valid = kcg_true;
   outC->_L18.cmd = cmdr_not_relevant_API_RadioCommunication_Pkg;
-  outC->_L18.networkID = kcg_lit_int64(0);
-  outC->outMN = kcg_lit_int64(0);
-  outC->outRadio = kcg_lit_int64(0);
+  outC->_L18.networkID = kcg_lit_int32(0);
+  outC->outMN = kcg_lit_int32(0);
+  outC->outRadio = kcg_lit_int32(0);
   outC->toRTM.valid = kcg_true;
   outC->toRTM.cmd = cmdr_not_relevant_API_RadioCommunication_Pkg;
-  outC->toRTM.networkID = kcg_lit_int64(0);
+  outC->toRTM.networkID = kcg_lit_int32(0);
   /* _L22=(radioOutput_Pkg::mapnewCMD_toCmd#1)/ */
   mapnewCMD_toCmd_init_radioOutput_Pkg(&outC->Context_mapnewCMD_toCmd_1);
 }

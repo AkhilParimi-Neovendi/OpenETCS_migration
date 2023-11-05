@@ -10,7 +10,7 @@
 /* TM_conversions::CAST_Int_to_M_AIRTIGHT/ */
 void CAST_Int_to_M_AIRTIGHT_TM_conversions(
   /* int__m_airtight_in/ */
-  kcg_int64 int__m_airtight_in,
+  kcg_int32 int__m_airtight_in,
   outC_CAST_Int_to_M_AIRTIGHT_TM_conversions *outC)
 {
   /* m_airtight/ */
@@ -75,10 +75,10 @@ void CAST_Int_to_M_AIRTIGHT_TM_conversions(
 void CAST_Int_to_M_AIRTIGHT_init_TM_conversions(
   outC_CAST_Int_to_M_AIRTIGHT_TM_conversions *outC)
 {
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->_L5 = kcg_true;
   outC->error = kcg_true;
-  outC->m_airtight_in = kcg_lit_int64(0);
+  outC->m_airtight_in = kcg_lit_int32(0);
   outC->IfBlock1_clock = kcg_true;
   outC->_L7_then_else_IfBlock1 = M_AIRTIGHT_Not_fitted;
   outC->_L6_then_else_IfBlock1 = kcg_true;

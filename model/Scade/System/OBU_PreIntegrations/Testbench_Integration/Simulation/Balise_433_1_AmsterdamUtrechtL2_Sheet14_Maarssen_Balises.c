@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -14,7 +14,7 @@ void Balise_433_1_AmsterdamUtrechtL2_Sheet14_Maarssen_Balises(
   /* Header/ */
   BaliseTelegramHeader_int_T_TM *Header,
   /* PIG_nom/ */
-  kcg_int64 PIG_nom,
+  kcg_int32 PIG_nom,
   outC_Balise_433_1_AmsterdamUtrechtL2_Sheet14_Maarssen_Balises *outC)
 {
   static B_data_internal_T_InfraLib op_call;
@@ -69,149 +69,149 @@ void Balise_433_1_init_AmsterdamUtrechtL2_Sheet14_Maarssen_Balises(
   static kcg_size idx8;
   static kcg_size idx9;
 
-  outC->_L23.q_updown = kcg_lit_int64(0);
-  outC->_L23.m_version = kcg_lit_int64(0);
-  outC->_L23.q_media = kcg_lit_int64(0);
-  outC->_L23.n_pig = kcg_lit_int64(0);
-  outC->_L23.n_total = kcg_lit_int64(0);
-  outC->_L23.m_dup = kcg_lit_int64(0);
-  outC->_L23.m_mcount = kcg_lit_int64(0);
-  outC->_L23.nid_c = kcg_lit_int64(0);
-  outC->_L23.nid_bg = kcg_lit_int64(0);
-  outC->_L23.q_link = kcg_lit_int64(0);
-  outC->_L21 = kcg_lit_int64(0);
-  outC->_L20 = kcg_lit_int64(0);
-  outC->_L19.q_updown = kcg_lit_int64(0);
-  outC->_L19.m_version = kcg_lit_int64(0);
-  outC->_L19.q_media = kcg_lit_int64(0);
-  outC->_L19.n_pig = kcg_lit_int64(0);
-  outC->_L19.n_total = kcg_lit_int64(0);
-  outC->_L19.m_dup = kcg_lit_int64(0);
-  outC->_L19.m_mcount = kcg_lit_int64(0);
-  outC->_L19.nid_c = kcg_lit_int64(0);
-  outC->_L19.nid_bg = kcg_lit_int64(0);
-  outC->_L19.q_link = kcg_lit_int64(0);
-  outC->_L17.header.q_updown = kcg_lit_int64(0);
-  outC->_L17.header.m_version = kcg_lit_int64(0);
-  outC->_L17.header.q_media = kcg_lit_int64(0);
-  outC->_L17.header.n_pig = kcg_lit_int64(0);
-  outC->_L17.header.n_total = kcg_lit_int64(0);
-  outC->_L17.header.m_dup = kcg_lit_int64(0);
-  outC->_L17.header.m_mcount = kcg_lit_int64(0);
-  outC->_L17.header.nid_c = kcg_lit_int64(0);
-  outC->_L17.header.nid_bg = kcg_lit_int64(0);
-  outC->_L17.header.q_link = kcg_lit_int64(0);
+  outC->_L23.q_updown = kcg_lit_int32(0);
+  outC->_L23.m_version = kcg_lit_int32(0);
+  outC->_L23.q_media = kcg_lit_int32(0);
+  outC->_L23.n_pig = kcg_lit_int32(0);
+  outC->_L23.n_total = kcg_lit_int32(0);
+  outC->_L23.m_dup = kcg_lit_int32(0);
+  outC->_L23.m_mcount = kcg_lit_int32(0);
+  outC->_L23.nid_c = kcg_lit_int32(0);
+  outC->_L23.nid_bg = kcg_lit_int32(0);
+  outC->_L23.q_link = kcg_lit_int32(0);
+  outC->_L21 = kcg_lit_int32(0);
+  outC->_L20 = kcg_lit_int32(0);
+  outC->_L19.q_updown = kcg_lit_int32(0);
+  outC->_L19.m_version = kcg_lit_int32(0);
+  outC->_L19.q_media = kcg_lit_int32(0);
+  outC->_L19.n_pig = kcg_lit_int32(0);
+  outC->_L19.n_total = kcg_lit_int32(0);
+  outC->_L19.m_dup = kcg_lit_int32(0);
+  outC->_L19.m_mcount = kcg_lit_int32(0);
+  outC->_L19.nid_c = kcg_lit_int32(0);
+  outC->_L19.nid_bg = kcg_lit_int32(0);
+  outC->_L19.q_link = kcg_lit_int32(0);
+  outC->_L17.header.q_updown = kcg_lit_int32(0);
+  outC->_L17.header.m_version = kcg_lit_int32(0);
+  outC->_L17.header.q_media = kcg_lit_int32(0);
+  outC->_L17.header.n_pig = kcg_lit_int32(0);
+  outC->_L17.header.n_total = kcg_lit_int32(0);
+  outC->_L17.header.m_dup = kcg_lit_int32(0);
+  outC->_L17.header.m_mcount = kcg_lit_int32(0);
+  outC->_L17.header.nid_c = kcg_lit_int32(0);
+  outC->_L17.header.nid_bg = kcg_lit_int32(0);
+  outC->_L17.header.q_link = kcg_lit_int32(0);
   for (idx = 0; idx < 30; idx++) {
-    outC->_L17.packets.PacketHeaders[idx].nid_packet = kcg_lit_int64(0);
+    outC->_L17.packets.PacketHeaders[idx].nid_packet = kcg_lit_int32(0);
     outC->_L17.packets.PacketHeaders[idx].q_dir = Q_DIR_Reverse;
     outC->_L17.packets.PacketHeaders[idx].valid = kcg_true;
-    outC->_L17.packets.PacketHeaders[idx].startAddress = kcg_lit_int64(0);
-    outC->_L17.packets.PacketHeaders[idx].endAddress = kcg_lit_int64(0);
+    outC->_L17.packets.PacketHeaders[idx].startAddress = kcg_lit_int32(0);
+    outC->_L17.packets.PacketHeaders[idx].endAddress = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 500; idx1++) {
-    outC->_L17.packets.PacketData[idx1] = kcg_lit_int64(0);
+    outC->_L17.packets.PacketData[idx1] = kcg_lit_int32(0);
   }
-  outC->_L17.engineering_BG_location = kcg_lit_int64(0);
-  outC->_L17.TrainPos = kcg_lit_float64(0.0);
-  outC->_L17.pig_nom_0 = kcg_lit_int64(0);
+  outC->_L17.engineering_BG_location = kcg_lit_int32(0);
+  outC->_L17.TrainPos = kcg_lit_float32(0.0);
+  outC->_L17.pig_nom_0 = kcg_lit_int32(0);
   outC->_L17.balise_passed = kcg_true;
-  outC->_L15.header.q_updown = kcg_lit_int64(0);
-  outC->_L15.header.m_version = kcg_lit_int64(0);
-  outC->_L15.header.q_media = kcg_lit_int64(0);
-  outC->_L15.header.n_pig = kcg_lit_int64(0);
-  outC->_L15.header.n_total = kcg_lit_int64(0);
-  outC->_L15.header.m_dup = kcg_lit_int64(0);
-  outC->_L15.header.m_mcount = kcg_lit_int64(0);
-  outC->_L15.header.nid_c = kcg_lit_int64(0);
-  outC->_L15.header.nid_bg = kcg_lit_int64(0);
-  outC->_L15.header.q_link = kcg_lit_int64(0);
+  outC->_L15.header.q_updown = kcg_lit_int32(0);
+  outC->_L15.header.m_version = kcg_lit_int32(0);
+  outC->_L15.header.q_media = kcg_lit_int32(0);
+  outC->_L15.header.n_pig = kcg_lit_int32(0);
+  outC->_L15.header.n_total = kcg_lit_int32(0);
+  outC->_L15.header.m_dup = kcg_lit_int32(0);
+  outC->_L15.header.m_mcount = kcg_lit_int32(0);
+  outC->_L15.header.nid_c = kcg_lit_int32(0);
+  outC->_L15.header.nid_bg = kcg_lit_int32(0);
+  outC->_L15.header.q_link = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 30; idx2++) {
-    outC->_L15.packets.PacketHeaders[idx2].nid_packet = kcg_lit_int64(0);
+    outC->_L15.packets.PacketHeaders[idx2].nid_packet = kcg_lit_int32(0);
     outC->_L15.packets.PacketHeaders[idx2].q_dir = Q_DIR_Reverse;
     outC->_L15.packets.PacketHeaders[idx2].valid = kcg_true;
-    outC->_L15.packets.PacketHeaders[idx2].startAddress = kcg_lit_int64(0);
-    outC->_L15.packets.PacketHeaders[idx2].endAddress = kcg_lit_int64(0);
+    outC->_L15.packets.PacketHeaders[idx2].startAddress = kcg_lit_int32(0);
+    outC->_L15.packets.PacketHeaders[idx2].endAddress = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 500; idx3++) {
-    outC->_L15.packets.PacketData[idx3] = kcg_lit_int64(0);
+    outC->_L15.packets.PacketData[idx3] = kcg_lit_int32(0);
   }
-  outC->_L15.engineering_BG_location = kcg_lit_int64(0);
-  outC->_L15.TrainPos = kcg_lit_float64(0.0);
-  outC->_L15.pig_nom_0 = kcg_lit_int64(0);
+  outC->_L15.engineering_BG_location = kcg_lit_int32(0);
+  outC->_L15.TrainPos = kcg_lit_float32(0.0);
+  outC->_L15.pig_nom_0 = kcg_lit_int32(0);
   outC->_L15.balise_passed = kcg_true;
-  outC->_L5.header.q_updown = kcg_lit_int64(0);
-  outC->_L5.header.m_version = kcg_lit_int64(0);
-  outC->_L5.header.q_media = kcg_lit_int64(0);
-  outC->_L5.header.n_pig = kcg_lit_int64(0);
-  outC->_L5.header.n_total = kcg_lit_int64(0);
-  outC->_L5.header.m_dup = kcg_lit_int64(0);
-  outC->_L5.header.m_mcount = kcg_lit_int64(0);
-  outC->_L5.header.nid_c = kcg_lit_int64(0);
-  outC->_L5.header.nid_bg = kcg_lit_int64(0);
-  outC->_L5.header.q_link = kcg_lit_int64(0);
+  outC->_L5.header.q_updown = kcg_lit_int32(0);
+  outC->_L5.header.m_version = kcg_lit_int32(0);
+  outC->_L5.header.q_media = kcg_lit_int32(0);
+  outC->_L5.header.n_pig = kcg_lit_int32(0);
+  outC->_L5.header.n_total = kcg_lit_int32(0);
+  outC->_L5.header.m_dup = kcg_lit_int32(0);
+  outC->_L5.header.m_mcount = kcg_lit_int32(0);
+  outC->_L5.header.nid_c = kcg_lit_int32(0);
+  outC->_L5.header.nid_bg = kcg_lit_int32(0);
+  outC->_L5.header.q_link = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 30; idx4++) {
-    outC->_L5.packets.PacketHeaders[idx4].nid_packet = kcg_lit_int64(0);
+    outC->_L5.packets.PacketHeaders[idx4].nid_packet = kcg_lit_int32(0);
     outC->_L5.packets.PacketHeaders[idx4].q_dir = Q_DIR_Reverse;
     outC->_L5.packets.PacketHeaders[idx4].valid = kcg_true;
-    outC->_L5.packets.PacketHeaders[idx4].startAddress = kcg_lit_int64(0);
-    outC->_L5.packets.PacketHeaders[idx4].endAddress = kcg_lit_int64(0);
+    outC->_L5.packets.PacketHeaders[idx4].startAddress = kcg_lit_int32(0);
+    outC->_L5.packets.PacketHeaders[idx4].endAddress = kcg_lit_int32(0);
   }
   for (idx5 = 0; idx5 < 500; idx5++) {
-    outC->_L5.packets.PacketData[idx5] = kcg_lit_int64(0);
+    outC->_L5.packets.PacketData[idx5] = kcg_lit_int32(0);
   }
-  outC->_L5.engineering_BG_location = kcg_lit_int64(0);
-  outC->_L5.TrainPos = kcg_lit_float64(0.0);
-  outC->_L5.pig_nom_0 = kcg_lit_int64(0);
+  outC->_L5.engineering_BG_location = kcg_lit_int32(0);
+  outC->_L5.TrainPos = kcg_lit_float32(0.0);
+  outC->_L5.pig_nom_0 = kcg_lit_int32(0);
   outC->_L5.balise_passed = kcg_true;
-  outC->_L4.header.q_updown = kcg_lit_int64(0);
-  outC->_L4.header.m_version = kcg_lit_int64(0);
-  outC->_L4.header.q_media = kcg_lit_int64(0);
-  outC->_L4.header.n_pig = kcg_lit_int64(0);
-  outC->_L4.header.n_total = kcg_lit_int64(0);
-  outC->_L4.header.m_dup = kcg_lit_int64(0);
-  outC->_L4.header.m_mcount = kcg_lit_int64(0);
-  outC->_L4.header.nid_c = kcg_lit_int64(0);
-  outC->_L4.header.nid_bg = kcg_lit_int64(0);
-  outC->_L4.header.q_link = kcg_lit_int64(0);
+  outC->_L4.header.q_updown = kcg_lit_int32(0);
+  outC->_L4.header.m_version = kcg_lit_int32(0);
+  outC->_L4.header.q_media = kcg_lit_int32(0);
+  outC->_L4.header.n_pig = kcg_lit_int32(0);
+  outC->_L4.header.n_total = kcg_lit_int32(0);
+  outC->_L4.header.m_dup = kcg_lit_int32(0);
+  outC->_L4.header.m_mcount = kcg_lit_int32(0);
+  outC->_L4.header.nid_c = kcg_lit_int32(0);
+  outC->_L4.header.nid_bg = kcg_lit_int32(0);
+  outC->_L4.header.q_link = kcg_lit_int32(0);
   for (idx6 = 0; idx6 < 30; idx6++) {
-    outC->_L4.packets.PacketHeaders[idx6].nid_packet = kcg_lit_int64(0);
+    outC->_L4.packets.PacketHeaders[idx6].nid_packet = kcg_lit_int32(0);
     outC->_L4.packets.PacketHeaders[idx6].q_dir = Q_DIR_Reverse;
     outC->_L4.packets.PacketHeaders[idx6].valid = kcg_true;
-    outC->_L4.packets.PacketHeaders[idx6].startAddress = kcg_lit_int64(0);
-    outC->_L4.packets.PacketHeaders[idx6].endAddress = kcg_lit_int64(0);
+    outC->_L4.packets.PacketHeaders[idx6].startAddress = kcg_lit_int32(0);
+    outC->_L4.packets.PacketHeaders[idx6].endAddress = kcg_lit_int32(0);
   }
   for (idx7 = 0; idx7 < 500; idx7++) {
-    outC->_L4.packets.PacketData[idx7] = kcg_lit_int64(0);
+    outC->_L4.packets.PacketData[idx7] = kcg_lit_int32(0);
   }
-  outC->_L4.engineering_BG_location = kcg_lit_int64(0);
-  outC->_L4.TrainPos = kcg_lit_float64(0.0);
-  outC->_L4.pig_nom_0 = kcg_lit_int64(0);
+  outC->_L4.engineering_BG_location = kcg_lit_int32(0);
+  outC->_L4.TrainPos = kcg_lit_float32(0.0);
+  outC->_L4.pig_nom_0 = kcg_lit_int32(0);
   outC->_L4.balise_passed = kcg_true;
   outC->_L2 = kcg_true;
   outC->every = kcg_true;
-  outC->B_data_out.header.q_updown = kcg_lit_int64(0);
-  outC->B_data_out.header.m_version = kcg_lit_int64(0);
-  outC->B_data_out.header.q_media = kcg_lit_int64(0);
-  outC->B_data_out.header.n_pig = kcg_lit_int64(0);
-  outC->B_data_out.header.n_total = kcg_lit_int64(0);
-  outC->B_data_out.header.m_dup = kcg_lit_int64(0);
-  outC->B_data_out.header.m_mcount = kcg_lit_int64(0);
-  outC->B_data_out.header.nid_c = kcg_lit_int64(0);
-  outC->B_data_out.header.nid_bg = kcg_lit_int64(0);
-  outC->B_data_out.header.q_link = kcg_lit_int64(0);
+  outC->B_data_out.header.q_updown = kcg_lit_int32(0);
+  outC->B_data_out.header.m_version = kcg_lit_int32(0);
+  outC->B_data_out.header.q_media = kcg_lit_int32(0);
+  outC->B_data_out.header.n_pig = kcg_lit_int32(0);
+  outC->B_data_out.header.n_total = kcg_lit_int32(0);
+  outC->B_data_out.header.m_dup = kcg_lit_int32(0);
+  outC->B_data_out.header.m_mcount = kcg_lit_int32(0);
+  outC->B_data_out.header.nid_c = kcg_lit_int32(0);
+  outC->B_data_out.header.nid_bg = kcg_lit_int32(0);
+  outC->B_data_out.header.q_link = kcg_lit_int32(0);
   for (idx8 = 0; idx8 < 30; idx8++) {
-    outC->B_data_out.packets.PacketHeaders[idx8].nid_packet = kcg_lit_int64(0);
+    outC->B_data_out.packets.PacketHeaders[idx8].nid_packet = kcg_lit_int32(0);
     outC->B_data_out.packets.PacketHeaders[idx8].q_dir = Q_DIR_Reverse;
     outC->B_data_out.packets.PacketHeaders[idx8].valid = kcg_true;
-    outC->B_data_out.packets.PacketHeaders[idx8].startAddress = kcg_lit_int64(0);
-    outC->B_data_out.packets.PacketHeaders[idx8].endAddress = kcg_lit_int64(0);
+    outC->B_data_out.packets.PacketHeaders[idx8].startAddress = kcg_lit_int32(0);
+    outC->B_data_out.packets.PacketHeaders[idx8].endAddress = kcg_lit_int32(0);
   }
   for (idx9 = 0; idx9 < 500; idx9++) {
-    outC->B_data_out.packets.PacketData[idx9] = kcg_lit_int64(0);
+    outC->B_data_out.packets.PacketData[idx9] = kcg_lit_int32(0);
   }
-  outC->B_data_out.engineering_BG_location = kcg_lit_int64(0);
-  outC->B_data_out.TrainPos = kcg_lit_float64(0.0);
-  outC->B_data_out.pig_nom_0 = kcg_lit_int64(0);
+  outC->B_data_out.engineering_BG_location = kcg_lit_int32(0);
+  outC->B_data_out.TrainPos = kcg_lit_float32(0.0);
+  outC->B_data_out.pig_nom_0 = kcg_lit_int32(0);
   outC->B_data_out.balise_passed = kcg_true;
   /* _L4=(AmsterdamUtrechtL2::Sheet14_Maarssen_Balises::Packets_BG433#1)/ */
   Packets_BG433_init_AmsterdamUtrechtL2_Sheet14_Maarssen_Balises(
@@ -238,6 +238,6 @@ void Balise_433_1_reset_AmsterdamUtrechtL2_Sheet14_Maarssen_Balises(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Balise_433_1_AmsterdamUtrechtL2_Sheet14_Maarssen_Balises.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

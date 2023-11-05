@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -147,23 +147,23 @@ void CAST_M_SUPERVISION_STATUS_to_int_init_DATA_Variables(
   outC->_L1 = kcg_true;
   outC->error = kcg_true;
   outC->IfBlock1_clock = kcg_true;
-  outC->_L3_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L3_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L2_then_else_IfBlock1 = kcg_true;
   outC->else_clock_else_IfBlock1 = kcg_true;
-  outC->_L3_then_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L3_then_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_IfBlock1 = kcg_true;
   outC->else_clock_else_else_else_IfBlock1 = kcg_true;
   outC->_L3_else_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L5_else_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L5_else_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L3_then_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L3_then_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_else_IfBlock1 = kcg_true;
   outC->_L3_then_else_else_IfBlock1 = kcg_true;
-  outC->_L4_then_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L4_then_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_IfBlock1 = kcg_true;
   outC->_L3_then_IfBlock1 = kcg_true;
-  outC->_L4_then_IfBlock1 = kcg_lit_int64(0);
-  outC->m_supervision_status_int = kcg_lit_int64(0);
+  outC->_L4_then_IfBlock1 = kcg_lit_int32(0);
+  outC->m_supervision_status_int = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -179,6 +179,6 @@ void CAST_M_SUPERVISION_STATUS_to_int_reset_DATA_Variables(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_M_SUPERVISION_STATUS_to_int_DATA_Variables.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

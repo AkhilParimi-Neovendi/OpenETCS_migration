@@ -17,7 +17,7 @@ typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   kcg_bool /* isUpper/ */ isUpper;
   kcg_bool /* valid/ */ valid;
-  kcg_float64 /* o/ */ o;
+  kcg_float32 /* o/ */ o;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -26,14 +26,14 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   kcg_bool /* _L1/ */ _L1;
-  kcg_float64 /* _L2/ */ _L2;
-  kcg_float64 /* _L4/ */ _L4;
+  kcg_float32 /* _L2/ */ _L2;
+  kcg_float32 /* _L4/ */ _L4;
   kcg_bool /* _L9/ */ _L9;
-  kcg_float64 /* _L15/ */ _L15;
-  kcg_float64 /* _L14/ */ _L14;
+  kcg_float32 /* _L15/ */ _L15;
+  kcg_float32 /* _L14/ */ _L14;
   kcg_bool /* _L13/ */ _L13;
   kcg_bool /* _L11/ */ _L11;
-  kcg_float64 /* _L12/ */ _L12;
+  kcg_float32 /* _L12/ */ _L12;
   kcg_bool /* _L10/ */ _L10;
   kcg_bool /* _L16/ */ _L16;
 } outC_selectLEValid_TargetLimits_Pkg;
@@ -44,11 +44,11 @@ extern void selectLEValid_TargetLimits_Pkg(
   /* valid1/ */
   kcg_bool valid1,
   /* i1/ */
-  kcg_float64 i1,
+  kcg_float32 i1,
   /* valid2/ */
   kcg_bool valid2,
   /* i2/ */
-  kcg_float64 i2,
+  kcg_float32 i2,
   outC_selectLEValid_TargetLimits_Pkg *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

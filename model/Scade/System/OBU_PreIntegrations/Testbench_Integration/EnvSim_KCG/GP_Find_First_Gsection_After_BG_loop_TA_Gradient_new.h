@@ -15,34 +15,34 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   kcg_bool /* cont/ */ cont;
-  kcg_int64 /* Pointer/ */ Pointer;
+  kcg_int32 /* Pointer/ */ Pointer;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L6/ */ _L6;
   GradientProfile_t_TrackAtlasTypes /* _L7/ */ _L7;
   Gradient_section_t_TrackAtlasTypes /* _L9/ */ _L9;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L10/ */ _L10;
   kcg_bool /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
-  kcg_int64 /* _L13/ */ _L13;
-  kcg_int64 /* _L14/ */ _L14;
+  kcg_int32 /* _L12/ */ _L12;
+  kcg_int32 /* _L13/ */ _L13;
+  kcg_int32 /* _L14/ */ _L14;
   kcg_bool /* _L15/ */ _L15;
-  kcg_int64 /* _L16/ */ _L16;
-  kcg_int64 /* _L17/ */ _L17;
+  kcg_int32 /* _L16/ */ _L16;
+  kcg_int32 /* _L17/ */ _L17;
 } outC_GP_Find_First_Gsection_After_BG_loop_TA_Gradient_new;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* TA_Gradient_new::GP_Find_First_Gsection_After_BG_loop/ */
 extern void GP_Find_First_Gsection_After_BG_loop_TA_Gradient_new(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* Acc/ */
-  kcg_int64 Acc,
+  kcg_int32 Acc,
   /* Profile_in/ */
   GradientProfile_t_TrackAtlasTypes *Profile_in,
   outC_GP_Find_First_Gsection_After_BG_loop_TA_Gradient_new *outC);

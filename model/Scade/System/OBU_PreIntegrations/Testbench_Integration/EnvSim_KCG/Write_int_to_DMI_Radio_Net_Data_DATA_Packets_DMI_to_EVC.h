@@ -26,8 +26,8 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   DMI_Radio_Net_Data_int_array_T_DATA /* _L5/ */ _L5;
   DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg /* _L7/ */ _L7;
-  kcg_int64 /* _L11/ */ _L11;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L11/ */ _L11;
+  kcg_int32 /* _L10/ */ _L10;
   kcg_bool /* _L9/ */ _L9;
   DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg /* _L12/ */ _L12;
 } outC_Write_int_to_DMI_Radio_Net_Data_DATA_Packets_DMI_to_EVC;

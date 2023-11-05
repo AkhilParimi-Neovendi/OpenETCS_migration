@@ -27,7 +27,7 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   Clock_T /* _L1/ */ _L1;
   kcg_bool /* _L9/ */ _L9;
-  kcg_int64 /* _L8/ */ _L8;
+  kcg_int32 /* _L8/ */ _L8;
   Clock_T /* _L7/ */ _L7;
   kcg_bool /* _L6/ */ _L6;
   kcg_bool /* _L5/ */ _L5;

@@ -10,17 +10,17 @@
 /* TM_conversions::CAST_Int_to_N_AXLE/ */
 void CAST_Int_to_N_AXLE_TM_conversions(
   /* n_axlle_in/ */
-  kcg_int64 n_axlle_in,
+  kcg_int32 n_axlle_in,
   outC_CAST_Int_to_N_AXLE_TM_conversions *outC)
 {
   kcg_bool noname;
   kcg_bool _1_noname;
 
-  outC->_L11 = kcg_lit_int64(0);
+  outC->_L11 = kcg_lit_int32(0);
   outC->_L1 = n_axlle_in;
   outC->_L10 = outC->_L1 < outC->_L11;
   _1_noname = outC->_L10;
-  outC->_L9 = kcg_lit_int64(1023);
+  outC->_L9 = kcg_lit_int32(1023);
   outC->_L12 = outC->_L1 > outC->_L9;
   noname = outC->_L12;
   outC->n_axle = outC->_L1;
@@ -30,12 +30,12 @@ void CAST_Int_to_N_AXLE_TM_conversions(
 void CAST_Int_to_N_AXLE_init_TM_conversions(
   outC_CAST_Int_to_N_AXLE_TM_conversions *outC)
 {
-  outC->_L9 = kcg_lit_int64(0);
+  outC->_L9 = kcg_lit_int32(0);
   outC->_L10 = kcg_true;
-  outC->_L11 = kcg_lit_int64(0);
+  outC->_L11 = kcg_lit_int32(0);
   outC->_L12 = kcg_true;
-  outC->_L1 = kcg_lit_int64(0);
-  outC->n_axle = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->n_axle = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

@@ -83,10 +83,10 @@ void detectEvokeBrake_input_from_TIU_API_Pkg(
   last_EB_RevokedByDriver = outC->EB_RevokedByDriver;
   kcg_copy_Brake_pressure_value_T_TIU_Types_Pkg(&outC->_L7, brakeController);
   outC->_L8 = outC->_L7.pressure;
-  outC->_L12 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
   outC->_L11 = outC->_L12 == outC->_L8;
   outC->isMin = outC->_L11;
-  outC->_L10 = kcg_lit_int64(180000);
+  outC->_L10 = kcg_lit_int32(180000);
   outC->_L9 = outC->_L8 >= outC->_L10;
   outC->isMax = outC->_L9;
   outC->_L5 = M_MODE_Post_Trip;
@@ -284,13 +284,13 @@ void detectEvokeBrake_input_from_TIU_API_Pkg(
 void detectEvokeBrake_init_input_from_TIU_API_Pkg(
   outC_detectEvokeBrake_input_from_TIU_API_Pkg *outC)
 {
-  outC->_L12 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
   outC->_L11 = kcg_true;
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L10 = kcg_lit_int32(0);
   outC->_L9 = kcg_true;
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L8 = kcg_lit_int32(0);
   outC->_L7.valid = kcg_true;
-  outC->_L7.pressure = kcg_lit_int64(0);
+  outC->_L7.pressure = kcg_lit_int32(0);
   outC->_L5 = M_MODE_Full_Supervision;
   outC->_L4 = kcg_true;
   outC->_L3 = M_MODE_Full_Supervision;

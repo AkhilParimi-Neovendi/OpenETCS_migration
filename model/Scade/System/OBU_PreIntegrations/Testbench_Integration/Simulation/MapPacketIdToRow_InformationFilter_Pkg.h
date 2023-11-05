@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _MapPacketIdToRow_InformationFilter_Pkg_H_
 #define _MapPacketIdToRow_InformationFilter_Pkg_H_
@@ -14,21 +14,21 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* outRow/ */ outRow;
+  kcg_int32 /* outRow/ */ outRow;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
 } outC_MapPacketIdToRow_InformationFilter_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* InformationFilter_Pkg::MapPacketIdToRow/ */
 extern void MapPacketIdToRow_InformationFilter_Pkg(
   /* inPacketId/ */
-  kcg_int64 inPacketId,
+  kcg_int32 inPacketId,
   outC_MapPacketIdToRow_InformationFilter_Pkg *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET
@@ -46,6 +46,6 @@ extern void MapPacketIdToRow_init_InformationFilter_Pkg(
 #endif /* _MapPacketIdToRow_InformationFilter_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** MapPacketIdToRow_InformationFilter_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

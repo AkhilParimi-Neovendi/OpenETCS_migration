@@ -32,7 +32,7 @@ typedef struct {
   M_TrainTrack_MessageHd_T_TM_radio_messages /* _L11/ */ _L11;
   M_TrainTrack_compressed_packets_T_TM_radio_messages /* _L10/ */ _L10;
   outPackets_T_Common_Types_Pkg /* _L12/ */ _L12;
-  kcg_int64 /* _L13/ */ _L13;
+  kcg_int32 /* _L13/ */ _L13;
 } outC_ToOldRadioTrainTrackMsg_RBC_Model_Pkg_TrainTrackMsgConversion;
 
 /* ===========  node initialization and cycle functions  =========== */

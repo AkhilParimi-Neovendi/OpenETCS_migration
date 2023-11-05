@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -44,16 +44,16 @@ void CompareSectionTimer_init_TA_MA_Request(
   outC->_L9 = kcg_true;
   outC->_L8 = kcg_true;
   outC->_L7 = kcg_true;
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L2.valid = kcg_true;
   outC->_L2.q_endsection = kcg_true;
-  outC->_L2.l_section = kcg_lit_int64(0);
+  outC->_L2.l_section = kcg_lit_int32(0);
   outC->_L2.q_sectiontimer = kcg_true;
-  outC->_L2.t_sectiontimer = kcg_lit_int64(0);
-  outC->_L2.d_sectiontimerstoploc = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->smallestTimer = kcg_lit_int64(0);
+  outC->_L2.t_sectiontimer = kcg_lit_int32(0);
+  outC->_L2.d_sectiontimerstoploc = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->smallestTimer = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -69,6 +69,6 @@ void CompareSectionTimer_reset_TA_MA_Request(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CompareSectionTimer_TA_MA_Request.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

@@ -10,7 +10,7 @@
 /* TM_conversions::CAST_Int_to_M_AXLELOADCAT/ */
 void CAST_Int_to_M_AXLELOADCAT_TM_conversions(
   /* int__m_axleloadcatt_in/ */
-  kcg_int64 int__m_axleloadcatt_in,
+  kcg_int32 int__m_axleloadcatt_in,
   outC_CAST_Int_to_M_AXLELOADCAT_TM_conversions *outC)
 {
   /* m_axleloadcat/ */
@@ -358,9 +358,9 @@ void CAST_Int_to_M_AXLELOADCAT_init_TM_conversions(
   outC_CAST_Int_to_M_AXLELOADCAT_TM_conversions *outC)
 {
   outC->_L7 = kcg_true;
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->error = kcg_true;
-  outC->m_axleloadcat_in = kcg_lit_int64(0);
+  outC->m_axleloadcat_in = kcg_lit_int32(0);
   outC->IfBlock1_clock = kcg_true;
   outC->_L7_then_else_IfBlock1 = M_AXLELOADCAT_A;
   outC->_L6_then_else_IfBlock1 = kcg_true;

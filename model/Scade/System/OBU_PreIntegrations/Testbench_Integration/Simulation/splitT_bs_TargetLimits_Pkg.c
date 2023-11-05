@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -18,7 +18,7 @@ void splitT_bs_TargetLimits_Pkg(
   outC_splitT_bs_TargetLimits_Pkg *outC)
 {
   outC->_L11 = bs;
-  outC->_L9 = kcg_lit_float64(0.0);
+  outC->_L9 = kcg_lit_float32(0.0);
   outC->_L1 = bs;
   outC->_L2 = isSB_FBAvailable;
   /* _L8= */
@@ -57,17 +57,17 @@ void splitT_bs_TargetLimits_Pkg(
 #ifndef KCG_USER_DEFINED_INIT
 void splitT_bs_init_TargetLimits_Pkg(outC_splitT_bs_TargetLimits_Pkg *outC)
 {
-  outC->_L11 = kcg_lit_float64(0.0);
-  outC->_L10 = kcg_lit_float64(0.0);
-  outC->_L9 = kcg_lit_float64(0.0);
-  outC->_L8 = kcg_lit_float64(0.0);
-  outC->_L7 = kcg_lit_float64(0.0);
-  outC->_L6 = kcg_lit_float64(0.0);
+  outC->_L11 = kcg_lit_float32(0.0);
+  outC->_L10 = kcg_lit_float32(0.0);
+  outC->_L9 = kcg_lit_float32(0.0);
+  outC->_L8 = kcg_lit_float32(0.0);
+  outC->_L7 = kcg_lit_float32(0.0);
+  outC->_L6 = kcg_lit_float32(0.0);
   outC->_L3 = kcg_true;
   outC->_L2 = kcg_true;
-  outC->_L1 = kcg_lit_float64(0.0);
-  outC->bs2 = kcg_lit_float64(0.0);
-  outC->bs1 = kcg_lit_float64(0.0);
+  outC->_L1 = kcg_lit_float32(0.0);
+  outC->bs2 = kcg_lit_float32(0.0);
+  outC->bs1 = kcg_lit_float32(0.0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -82,6 +82,6 @@ void splitT_bs_reset_TargetLimits_Pkg(outC_splitT_bs_TargetLimits_Pkg *outC)
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** splitT_bs_TargetLimits_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

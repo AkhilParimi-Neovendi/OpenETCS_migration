@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _CAST_DriverIdentfier_to_int_DATA_Variables_H_
 #define _CAST_DriverIdentfier_to_int_DATA_Variables_H_
@@ -23,7 +23,7 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   driverIdentifier_T_DMI_Messages_Bothways_Pkg /* _L8/ */ _L8;
-  array_int64_9 /* _L10/ */ _L10;
+  array_int32_9 /* _L10/ */ _L10;
 } outC_CAST_DriverIdentfier_to_int_DATA_Variables;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -48,6 +48,6 @@ extern void CAST_DriverIdentfier_to_int_init_DATA_Variables(
 #endif /* _CAST_DriverIdentfier_to_int_DATA_Variables_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_DriverIdentfier_to_int_DATA_Variables.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

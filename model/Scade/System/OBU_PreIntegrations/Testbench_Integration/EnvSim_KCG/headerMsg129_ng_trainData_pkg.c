@@ -15,7 +15,7 @@ void headerMsg129_ng_trainData_pkg(
   T_TRAIN t_train,
   outC_headerMsg129_ng_trainData_pkg *outC)
 {
-  outC->_L20 = kcg_lit_int64(0);
+  outC->_L20 = kcg_lit_int32(0);
   outC->_L19 = co129_Validated_Train_Data_Id_Pkg;
   outC->_L18 = kcg_true;
   outC->_L16 = t_train;
@@ -32,21 +32,21 @@ void headerMsg129_ng_trainData_pkg(
 void headerMsg129_ng_init_trainData_pkg(
   outC_headerMsg129_ng_trainData_pkg *outC)
 {
-  outC->_L20 = kcg_lit_int64(0);
-  outC->_L19 = kcg_lit_int64(0);
+  outC->_L20 = kcg_lit_int32(0);
+  outC->_L19 = kcg_lit_int32(0);
   outC->_L18 = kcg_true;
   outC->_L17.valid = kcg_true;
-  outC->_L17.nid_message = kcg_lit_int64(0);
-  outC->_L17.l_message = kcg_lit_int64(0);
-  outC->_L17.t_train = kcg_lit_int64(0);
-  outC->_L17.nid_engine = kcg_lit_int64(0);
-  outC->_L16 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
+  outC->_L17.nid_message = kcg_lit_int32(0);
+  outC->_L17.l_message = kcg_lit_int32(0);
+  outC->_L17.t_train = kcg_lit_int32(0);
+  outC->_L17.nid_engine = kcg_lit_int32(0);
+  outC->_L16 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
   outC->header.valid = kcg_true;
-  outC->header.nid_message = kcg_lit_int64(0);
-  outC->header.l_message = kcg_lit_int64(0);
-  outC->header.t_train = kcg_lit_int64(0);
-  outC->header.nid_engine = kcg_lit_int64(0);
+  outC->header.nid_message = kcg_lit_int32(0);
+  outC->header.l_message = kcg_lit_int32(0);
+  outC->header.t_train = kcg_lit_int32(0);
+  outC->header.nid_engine = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

@@ -14,7 +14,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* seqNo/ */ seqNo;
+  kcg_int32 /* seqNo/ */ seqNo;
   positionedBG_T_TrainPosition_Types_Pck /* BG_out/ */ BG_out;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
@@ -26,11 +26,11 @@ typedef struct {
   kcg_bool /* _L3/ */ _L3;
   kcg_bool /* _L4/ */ _L4;
   kcg_bool /* _L6/ */ _L6;
-  kcg_int64 /* _L7/ */ _L7;
-  kcg_int64 /* _L8/ */ _L8;
-  kcg_int64 /* _L13/ */ _L13;
-  kcg_int64 /* _L14/ */ _L14;
-  kcg_int64 /* _L15/ */ _L15;
+  kcg_int32 /* _L7/ */ _L7;
+  kcg_int32 /* _L8/ */ _L8;
+  kcg_int32 /* _L13/ */ _L13;
+  kcg_int32 /* _L14/ */ _L14;
+  kcg_int32 /* _L15/ */ _L15;
   positionedBG_T_TrainPosition_Types_Pck /* _L16/ */ _L16;
 } outC_trimSeqNoOnTrack_itr_CalculateTrainPosition_Pkg_BG_utilities_Pkg;
 
@@ -38,7 +38,7 @@ typedef struct {
 /* CalculateTrainPosition_Pkg::BG_utilities_Pkg::trimSeqNoOnTrack_itr/ */
 extern void trimSeqNoOnTrack_itr_CalculateTrainPosition_Pkg_BG_utilities_Pkg(
   /* prevSeqNo/ */
-  kcg_int64 prevSeqNo,
+  kcg_int32 prevSeqNo,
   /* BG_in/ */
   positionedBG_T_TrainPosition_Types_Pck *BG_in,
   outC_trimSeqNoOnTrack_itr_CalculateTrainPosition_Pkg_BG_utilities_Pkg *outC);

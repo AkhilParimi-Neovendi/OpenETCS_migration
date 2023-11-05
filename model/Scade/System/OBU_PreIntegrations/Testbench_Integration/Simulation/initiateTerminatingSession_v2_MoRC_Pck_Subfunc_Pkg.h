@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _initiateTerminatingSession_v2_MoRC_Pck_Subfunc_Pkg_H_
 #define _initiateTerminatingSession_v2_MoRC_Pck_Subfunc_Pkg_H_
@@ -32,7 +32,7 @@ typedef struct {
   SSM_ST_TrainExitedFromRBCArea_SM /* TrainExitedFromRBCArea_SM: */ TrainExitedFromRBCArea_SM_state_act;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* TrainExitedFromRBCArea_SM:WaitForOrderToTerminateTheSession:_L30/ */ _L30_WaitForOrderToTerminateTheSession_TrainExitedFromRBCArea_SM;
+  kcg_int32 /* TrainExitedFromRBCArea_SM:WaitForOrderToTerminateTheSession:_L30/ */ _L30_WaitForOrderToTerminateTheSession_TrainExitedFromRBCArea_SM;
   T_internal_Type_Obu_BasicTypes_Pkg /* TrainExitedFromRBCArea_SM:WaitForOrderToTerminateTheSession:_L29/ */ _L29_WaitForOrderToTerminateTheSession_TrainExitedFromRBCArea_SM;
   kcg_bool /* TrainExitedFromRBCArea_SM:WaitForOrderToTerminateTheSession:_L28/ */ _L28_WaitForOrderToTerminateTheSession_TrainExitedFromRBCArea_SM;
   time_Type_MoRC_Pck /* TrainExitedFromRBCArea_SM:WaitForOrderToTerminateTheSession:_L27/ */ _L27_WaitForOrderToTerminateTheSession_TrainExitedFromRBCArea_SM;
@@ -114,7 +114,7 @@ extern void initiateTerminatingSession_v2_MoRC_Pck_Subfunc_Pkg(
   /* maxWaitingTimeUntilTerminationOrderReceived/ */
   T_internal_Type_Obu_BasicTypes_Pkg maxWaitingTimeUntilTerminationOrderReceived,
   /* noOfRetriesUntilTerminationOrderIsReceived/ */
-  kcg_int64 noOfRetriesUntilTerminationOrderIsReceived,
+  kcg_int32 noOfRetriesUntilTerminationOrderIsReceived,
   outC_initiateTerminatingSession_v2_MoRC_Pck_Subfunc_Pkg *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET
@@ -151,6 +151,6 @@ extern void kcg_load_SV_initiateTerminatingSession_v2_MoRC_Pck_Subfunc_Pkg(
 #endif /* _initiateTerminatingSession_v2_MoRC_Pck_Subfunc_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** initiateTerminatingSession_v2_MoRC_Pck_Subfunc_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

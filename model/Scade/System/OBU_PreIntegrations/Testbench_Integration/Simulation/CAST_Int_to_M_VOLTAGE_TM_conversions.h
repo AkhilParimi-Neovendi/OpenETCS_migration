@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _CAST_Int_to_M_VOLTAGE_TM_conversions_H_
 #define _CAST_Int_to_M_VOLTAGE_TM_conversions_H_
@@ -41,9 +41,9 @@ typedef struct {
   kcg_bool /* IfBlock1:else:else:else:then:_L4/ */ _L4_then_else_else_else_IfBlock1;
   M_VOLTAGE /* IfBlock1:else:then:_L3/ */ _L3_then_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L5/ */ _L5_then_else_IfBlock1;
-  kcg_int64 /* m_voltage_in/ */ m_voltage_in;
+  kcg_int32 /* m_voltage_in/ */ m_voltage_in;
   kcg_bool /* error/ */ error;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L4/ */ _L4;
   kcg_bool /* _L5/ */ _L5;
 } outC_CAST_Int_to_M_VOLTAGE_TM_conversions;
 
@@ -51,7 +51,7 @@ typedef struct {
 /* TM_conversions::CAST_Int_to_M_VOLTAGE/ */
 extern void CAST_Int_to_M_VOLTAGE_TM_conversions(
   /* m_voltage_int/ */
-  kcg_int64 m_voltage_int,
+  kcg_int32 m_voltage_int,
   outC_CAST_Int_to_M_VOLTAGE_TM_conversions *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET
@@ -69,6 +69,6 @@ extern void CAST_Int_to_M_VOLTAGE_init_TM_conversions(
 #endif /* _CAST_Int_to_M_VOLTAGE_TM_conversions_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_Int_to_M_VOLTAGE_TM_conversions.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -105,33 +105,33 @@ void Input_ModeProfiles_InputManagement(
 void Input_ModeProfiles_init_InputManagement(
   outC_Input_ModeProfiles_InputManagement *outC)
 {
-  outC->_L22 = kcg_lit_int64(0);
-  outC->_L21 = kcg_lit_int64(0);
-  outC->_L20 = kcg_lit_int64(0);
-  outC->_L18 = kcg_lit_int64(0);
-  outC->_L17 = kcg_lit_int64(0);
+  outC->_L22 = kcg_lit_int32(0);
+  outC->_L21 = kcg_lit_int32(0);
+  outC->_L20 = kcg_lit_int32(0);
+  outC->_L18 = kcg_lit_int32(0);
+  outC->_L17 = kcg_lit_int32(0);
   outC->_L13 = Q_MAMODE_as_the_EOA;
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
   outC->_L9 = M_MAMODE_On_Sight;
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L8 = kcg_lit_int32(0);
   outC->_L7 = Q_SCALE_10_cm_scale;
   outC->_L6 = Q_DIR_Reverse;
   outC->_L5 = kcg_true;
-  outC->_L14.Distance = kcg_lit_int64(0);
+  outC->_L14.Distance = kcg_lit_int32(0);
   outC->_L14.Mode = Profile_OS_Level_And_Mode_Types_Pkg;
-  outC->_L14.Speed = kcg_lit_int64(0);
-  outC->_L14.Length = kcg_lit_int64(0);
-  outC->_L14.Length_Ack = kcg_lit_int64(0);
+  outC->_L14.Speed = kcg_lit_int32(0);
+  outC->_L14.Length = kcg_lit_int32(0);
+  outC->_L14.Length_Ack = kcg_lit_int32(0);
   outC->_L15.valid = kcg_true;
   outC->_L15.q_dir = Q_DIR_Reverse;
   outC->_L15.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L15.d_mamode = kcg_lit_int64(0);
+  outC->_L15.d_mamode = kcg_lit_int32(0);
   outC->_L15.m_mamode = M_MAMODE_On_Sight;
-  outC->_L15.v_mamode = kcg_lit_int64(0);
-  outC->_L15.l_mamode = kcg_lit_int64(0);
-  outC->_L15.l_ackmamode = kcg_lit_int64(0);
+  outC->_L15.v_mamode = kcg_lit_int32(0);
+  outC->_L15.l_mamode = kcg_lit_int32(0);
+  outC->_L15.l_ackmamode = kcg_lit_int32(0);
   outC->_L15.q_mamode = Q_MAMODE_as_the_EOA;
   outC->_L16 = Profile_OS_Level_And_Mode_Types_Pkg;
   outC->Loc_MAMode = M_MAMODE_On_Sight;
@@ -144,11 +144,11 @@ void Input_ModeProfiles_init_InputManagement(
   outC->_L3_then_IfBlock1 = Profile_OS_Level_And_Mode_Types_Pkg;
   outC->_L2_then_IfBlock1 = Profile_OS_Level_And_Mode_Types_Pkg;
   outC->_L1_then_IfBlock1 = Profile_OS_Level_And_Mode_Types_Pkg;
-  outC->Mode_Profile_On_Borad.Distance = kcg_lit_int64(0);
+  outC->Mode_Profile_On_Borad.Distance = kcg_lit_int32(0);
   outC->Mode_Profile_On_Borad.Mode = Profile_OS_Level_And_Mode_Types_Pkg;
-  outC->Mode_Profile_On_Borad.Speed = kcg_lit_int64(0);
-  outC->Mode_Profile_On_Borad.Length = kcg_lit_int64(0);
-  outC->Mode_Profile_On_Borad.Length_Ack = kcg_lit_int64(0);
+  outC->Mode_Profile_On_Borad.Speed = kcg_lit_int32(0);
+  outC->Mode_Profile_On_Borad.Length = kcg_lit_int32(0);
+  outC->Mode_Profile_On_Borad.Length_Ack = kcg_lit_int32(0);
   /* _L20=(InputManagement::scaledDistance_2_distance#2)/ */
   scaledDistance_2_distance_init_InputManagement(
     &outC->Context_scaledDistance_2_distance_2);
@@ -182,6 +182,6 @@ void Input_ModeProfiles_reset_InputManagement(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Input_ModeProfiles_InputManagement.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

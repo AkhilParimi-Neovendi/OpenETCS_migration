@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _ContinuousTimeoutCheck_CheckEuroradioMessage_H_
 #define _ContinuousTimeoutCheck_CheckEuroradioMessage_H_
@@ -22,11 +22,11 @@ typedef struct {
   kcg_bool /* IfBlock1: */ IfBlock1_clock;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* IfBlock1:then:_L10/ */ _L10_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L9/ */ _L9_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L10/ */ _L10_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L9/ */ _L9_then_IfBlock1;
   T_NVCONTACT /* IfBlock1:then:_L8/ */ _L8_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L7/ */ _L7_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L6/ */ _L6_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L6/ */ _L6_then_IfBlock1;
   T_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:then:_L5/ */ _L5_then_IfBlock1;
   T_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
   kcg_bool /* IfBlock1:else:_L1/ */ _L1_else_IfBlock1;
@@ -70,6 +70,6 @@ extern void ContinuousTimeoutCheck_init_CheckEuroradioMessage(
 #endif /* _ContinuousTimeoutCheck_CheckEuroradioMessage_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ContinuousTimeoutCheck_CheckEuroradioMessage.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

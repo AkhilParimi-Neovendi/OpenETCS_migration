@@ -25,9 +25,9 @@ typedef struct {
   T_internal_Type_Obu_BasicTypes_Pkg /* _L1/ */ _L1;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L2/ */ _L2;
   kcg_bool /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   kcg_bool /* _L6/ */ _L6;
-  kcg_int64 /* _L7/ */ _L7;
+  kcg_int32 /* _L7/ */ _L7;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L8/ */ _L8;
   kcg_bool /* _L9/ */ _L9;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L10/ */ _L10;

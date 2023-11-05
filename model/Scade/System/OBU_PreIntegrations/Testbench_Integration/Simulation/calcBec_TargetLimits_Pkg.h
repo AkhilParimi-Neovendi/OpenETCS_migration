@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _calcBec_TargetLimits_Pkg_H_
 #define _calcBec_TargetLimits_Pkg_H_
@@ -21,36 +21,36 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_float64 /* @1/Ma_Output/ */ Ma_Output_Max_1_float64;
-  kcg_float64 /* @1/I2/ */ I2_Max_1_float64;
-  kcg_float64 /* @1/I1/ */ I1_Max_1_float64;
-  kcg_float64 /* @1/_L4/ */ _L4_Max_1_float64;
-  kcg_bool /* @1/_L3/ */ _L3_Max_1_float64;
-  kcg_float64 /* @1/_L2/ */ _L2_Max_1_float64;
-  kcg_float64 /* @1/_L1/ */ _L1_Max_1_float64;
-  kcg_float64 /* @2/Ma_Output/ */ Ma_Output_Max_2_float64;
-  kcg_float64 /* @2/I2/ */ I2_Max_2_float64;
-  kcg_float64 /* @2/I1/ */ I1_Max_2_float64;
-  kcg_float64 /* @2/_L4/ */ _L4_Max_2_float64;
-  kcg_bool /* @2/_L3/ */ _L3_Max_2_float64;
-  kcg_float64 /* @2/_L2/ */ _L2_Max_2_float64;
-  kcg_float64 /* @2/_L1/ */ _L1_Max_2_float64;
+  kcg_float32 /* @1/Ma_Output/ */ Ma_Output_Max_1_float32;
+  kcg_float32 /* @1/I2/ */ I2_Max_1_float32;
+  kcg_float32 /* @1/I1/ */ I1_Max_1_float32;
+  kcg_float32 /* @1/_L4/ */ _L4_Max_1_float32;
+  kcg_bool /* @1/_L3/ */ _L3_Max_1_float32;
+  kcg_float32 /* @1/_L2/ */ _L2_Max_1_float32;
+  kcg_float32 /* @1/_L1/ */ _L1_Max_1_float32;
+  kcg_float32 /* @2/Ma_Output/ */ Ma_Output_Max_2_float32;
+  kcg_float32 /* @2/I2/ */ I2_Max_2_float32;
+  kcg_float32 /* @2/I1/ */ I1_Max_2_float32;
+  kcg_float32 /* @2/_L4/ */ _L4_Max_2_float32;
+  kcg_bool /* @2/_L3/ */ _L3_Max_2_float32;
+  kcg_float32 /* @2/_L2/ */ _L2_Max_2_float32;
+  kcg_float32 /* @2/_L1/ */ _L1_Max_2_float32;
   V_internal_real_Type_SDM_Types_Pkg /* v_bec/ */ v_bec;
   V_internal_real_Type_SDM_Types_Pkg /* _L23/ */ _L23;
-  kcg_float64 /* _L24/ */ _L24;
+  kcg_float32 /* _L24/ */ _L24;
   V_internal_real_Type_SDM_Types_Pkg /* _L25/ */ _L25;
-  kcg_float64 /* _L28/ */ _L28;
-  kcg_float64 /* _L31/ */ _L31;
-  kcg_float64 /* _L32/ */ _L32;
-  kcg_float64 /* _L33/ */ _L33;
+  kcg_float32 /* _L28/ */ _L28;
+  kcg_float32 /* _L31/ */ _L31;
+  kcg_float32 /* _L32/ */ _L32;
+  kcg_float32 /* _L33/ */ _L33;
   V_internal_real_Type_SDM_Types_Pkg /* _L34/ */ _L34;
   V_internal_real_Type_SDM_Types_Pkg /* _L38/ */ _L38;
-  kcg_float64 /* _L39/ */ _L39;
-  kcg_float64 /* _L44/ */ _L44;
-  kcg_float64 /* _L45/ */ _L45;
+  kcg_float32 /* _L39/ */ _L39;
+  kcg_float32 /* _L44/ */ _L44;
+  kcg_float32 /* _L45/ */ _L45;
   V_internal_real_Type_SDM_Types_Pkg /* _L48/ */ _L48;
-  kcg_float64 /* _L49/ */ _L49;
-  kcg_float64 /* _L51/ */ _L51;
+  kcg_float32 /* _L49/ */ _L49;
+  kcg_float32 /* _L51/ */ _L51;
   T_trac_t_TargetLimits_Pkg /* _L83/ */ _L83;
   V_internal_real_Type_SDM_Types_Pkg /* _L91/ */ _L91;
   V_internal_real_Type_SDM_Types_Pkg /* _L92/ */ _L92;
@@ -97,6 +97,6 @@ extern void calcBec_init_TargetLimits_Pkg(outC_calcBec_TargetLimits_Pkg *outC);
 #endif /* _calcBec_TargetLimits_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** calcBec_TargetLimits_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

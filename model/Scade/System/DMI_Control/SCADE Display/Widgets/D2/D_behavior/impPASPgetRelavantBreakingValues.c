@@ -1,7 +1,9 @@
 #include "kcg_types.h"
 #include "impPASPgetRelavantBreakingValues.h"
- 
-void impPASPgetRelavantBreakingValues_PASP(  
+
+ 
+void impPASPgetRelavantBreakingValues_PASP( 
+ 
 /* PASP::impPASPgetRelavantBreakingValues::CPS */ kcg_float32 CPS,
   /* PASP::impPASPgetRelavantBreakingValues::Distances */ tPASP_Array *Distances,
   /* PASP::impPASPgetRelavantBreakingValues::Speeds */ tPASP_Array *Speeds,
@@ -34,8 +36,10 @@ void impPASPgetRelavantBreakingValues_PASP(
 			(*FilteredDistances[i+1]) = 1337.0;
 		}
 	}
-} 
-    
+}
+ 
+   
+ 
 kcg_int32 utilGetSpeedLevel (kcg_float32 value1, kcg_float32 referenceValue) {
 	if ((int)referenceValue == 0) {
 		return 4;
@@ -52,7 +56,11 @@ kcg_int32 utilGetSpeedLevel (kcg_float32 value1, kcg_float32 referenceValue) {
 		return 1;
 	} else if (0.01 > value1Percent) {
 		return 0;
-	} 
-} 
- 
-  
+	}
+ 
+}
+ 
+
+ 
+ 
+ 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _ErrorManager_ProvidePositionReport_Pkg_PositionReportErrorManager_Pkg_H_
 #define _ErrorManager_ProvidePositionReport_Pkg_PositionReportErrorManager_Pkg_H_
@@ -14,7 +14,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  _35_array /* errorVector/ */ errorVector;
+  _34_array /* errorVector/ */ errorVector;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
@@ -48,7 +48,7 @@ typedef struct {
   kcg_bool /* _L46/ */ _L46;
   kcg_bool /* _L47/ */ _L47;
   kcg_bool /* _L48/ */ _L48;
-  _35_array /* _L50/ */ _L50;
+  _34_array /* _L50/ */ _L50;
 } outC_ErrorManager_ProvidePositionReport_Pkg_PositionReportErrorManager_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -89,6 +89,6 @@ extern void ErrorManager_init_ProvidePositionReport_Pkg_PositionReportErrorManag
 #endif /* _ErrorManager_ProvidePositionReport_Pkg_PositionReportErrorManager_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ErrorManager_ProvidePositionReport_Pkg_PositionReportErrorManager_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

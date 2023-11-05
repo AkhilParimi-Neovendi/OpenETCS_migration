@@ -14,7 +14,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* nid_prvlrbg_in/ */ nid_prvlrbg_in;
+  kcg_int32 /* nid_prvlrbg_in/ */ nid_prvlrbg_in;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
@@ -22,9 +22,9 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   NID_PRVLRBG /* _L1/ */ _L1;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   kcg_bool /* _L4/ */ _L4;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   kcg_bool /* _L2/ */ _L2;
 } outC_CAST_NID_PRVLRBG_to_int_TM_conversions;
 

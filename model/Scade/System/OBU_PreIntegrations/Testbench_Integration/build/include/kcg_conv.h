@@ -85,10 +85,10 @@ int predef_string_to_kcg_int32(const char* str, kcg_int32 *pValue, char **endptr
 int predef_kcg_int32_to_string(kcg_int32 nValue, PFNSTRAPPEND pfnStrAppend, void *pData);
 #endif
 
-#ifdef kcg_int64
-int predef_compare_kcg_int64(int *pResult, kcg_int64 value1, kcg_int64 value2, void *pData);
-int predef_string_to_kcg_int64(const char* str, kcg_int64 *pValue, char **endptr);
-int predef_kcg_int64_to_string(kcg_int64 nValue, PFNSTRAPPEND pfnStrAppend, void *pData);
+#ifdef kcg_int32
+int predef_compare_kcg_int32(int *pResult, kcg_int32 value1, kcg_int32 value2, void *pData);
+int predef_string_to_kcg_int32(const char* str, kcg_int32 *pValue, char **endptr);
+int predef_kcg_int32_to_string(kcg_int32 nValue, PFNSTRAPPEND pfnStrAppend, void *pData);
 #endif
 
 #ifdef kcg_uint8
@@ -109,10 +109,10 @@ int predef_string_to_kcg_uint32(const char* str, kcg_uint32 *pValue, char **endp
 int predef_kcg_uint32_to_string(kcg_uint32 nValue, PFNSTRAPPEND pfnStrAppend, void *pData);
 #endif
 
-#ifdef kcg_uint64
-int predef_compare_kcg_uint64(int *pResult, kcg_uint64 value1, kcg_uint64 value2, void *pData);
-int predef_string_to_kcg_uint64(const char* str, kcg_uint64 *pValue, char **endptr);
-int predef_kcg_uint64_to_string(kcg_uint64 nValue, PFNSTRAPPEND pfnStrAppend, void *pData);
+#ifdef kcg_uint32
+int predef_compare_kcg_uint32(int *pResult, kcg_uint32 value1, kcg_uint32 value2, void *pData);
+int predef_string_to_kcg_uint32(const char* str, kcg_uint32 *pValue, char **endptr);
+int predef_kcg_uint32_to_string(kcg_uint32 nValue, PFNSTRAPPEND pfnStrAppend, void *pData);
 #endif
 
 #ifdef kcg_float32
@@ -121,10 +121,10 @@ int predef_string_to_kcg_float32(const char* str, kcg_float32 *pValue, char **en
 int predef_kcg_float32_to_string(kcg_float32 fValue, const char *realFormat, PFNSTRAPPEND pfnStrAppend, void *pData);
 #endif
 
-#ifdef kcg_float64
-int predef_compare_kcg_float64(int *pResult, kcg_float64 value1, kcg_float64 value2, void *pData);
-int predef_string_to_kcg_float64(const char* str, kcg_float64 *pValue, char **endptr);
-int predef_kcg_float64_to_string(kcg_float64 fValue, const char *realFormat, PFNSTRAPPEND pfnStrAppend, void *pData);
+#ifdef kcg_float32
+int predef_compare_kcg_float32(int *pResult, kcg_float32 value1, kcg_float32 value2, void *pData);
+int predef_string_to_kcg_float32(const char* str, kcg_float32 *pValue, char **endptr);
+int predef_kcg_float32_to_string(kcg_float32 fValue, const char *realFormat, PFNSTRAPPEND pfnStrAppend, void *pData);
 #endif
 
 #ifdef __cplusplus

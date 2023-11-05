@@ -23,26 +23,26 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   PT1_PositionReport_2BG_T_Packet_TrainTypes_Pkg /* _L1/ */ _L1;
   P001_TM_TrainToTrack /* _L2/ */ _L2;
-  kcg_int64 /* _L12/ */ _L12;
-  kcg_int64 /* _L34/ */ _L34;
-  kcg_int64 /* _L33/ */ _L33;
+  kcg_int32 /* _L12/ */ _L12;
+  kcg_int32 /* _L34/ */ _L34;
+  kcg_int32 /* _L33/ */ _L33;
   Q_SCALE /* _L32/ */ _L32;
-  kcg_int64 /* _L31/ */ _L31;
-  kcg_int64 /* _L30/ */ _L30;
-  kcg_int64 /* _L29/ */ _L29;
+  kcg_int32 /* _L31/ */ _L31;
+  kcg_int32 /* _L30/ */ _L30;
+  kcg_int32 /* _L29/ */ _L29;
   Q_DIRLRBG /* _L28/ */ _L28;
   Q_DLRBG /* _L27/ */ _L27;
-  kcg_int64 /* _L26/ */ _L26;
-  kcg_int64 /* _L25/ */ _L25;
+  kcg_int32 /* _L26/ */ _L26;
+  kcg_int32 /* _L25/ */ _L25;
   Q_LENGTH /* _L24/ */ _L24;
-  kcg_int64 /* _L23/ */ _L23;
-  kcg_int64 /* _L22/ */ _L22;
+  kcg_int32 /* _L23/ */ _L23;
+  kcg_int32 /* _L22/ */ _L22;
   Q_DIRTRAIN /* _L21/ */ _L21;
   M_MODE /* _L20/ */ _L20;
   M_LEVEL /* _L19/ */ _L19;
   kcg_bool /* _L35/ */ _L35;
   Position_Report_based_on_two_balise_groups_TrainToTrack /* _L36/ */ _L36;
-  kcg_int64 /* _L37/ */ _L37;
+  kcg_int32 /* _L37/ */ _L37;
 } outC_nextGen_P01_radioOutput_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

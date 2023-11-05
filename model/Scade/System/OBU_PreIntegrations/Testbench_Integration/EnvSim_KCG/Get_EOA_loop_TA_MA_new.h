@@ -22,7 +22,7 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L2/ */ _L2;
   MovementAuthoritySectionlist_t_TrackAtlasTypes /* _L3/ */ _L3;
   MovementAuthoritySection_t_TrackAtlasTypes /* _L34/ */ _L34;
@@ -39,7 +39,7 @@ typedef struct {
 /* TA_MA_new::Get_EOA_loop/ */
 extern void Get_EOA_loop_TA_MA_new(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* acc/ */
   L_internal_Type_Obu_BasicTypes_Pkg acc,
   /* MA_sections/ */

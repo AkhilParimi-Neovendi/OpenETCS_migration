@@ -65,7 +65,7 @@ void dec_p42_init_RCM_Utils_Pkg_decoders(
   outC->_L85.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L85.nid_c = kcg_lit_int32(0);
   outC->_L85.nid_RBC = kcg_lit_int32(0);
-  outC->_L85.nid_radio = kcg_lit_int64(0);
+  outC->_L85.nid_radio = kcg_lit_int32(0);
   outC->_L85.q_sleepsession = Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L85.origin.valid = kcg_true;
   outC->_L85.origin.nid_c = kcg_lit_int32(0);
@@ -76,7 +76,7 @@ void dec_p42_init_RCM_Utils_Pkg_decoders(
   outC->_L39 = Q_RBC_Terminate_communication_session;
   outC->_L40 = kcg_lit_int32(0);
   outC->_L41 = kcg_lit_int32(0);
-  outC->_L42 = kcg_lit_int64(0);
+  outC->_L42 = kcg_lit_int32(0);
   outC->_L43 = Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L28 = kcg_true;
   outC->_L29.valid = kcg_true;
@@ -84,7 +84,7 @@ void dec_p42_init_RCM_Utils_Pkg_decoders(
   outC->_L29.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L29.nid_c = kcg_lit_int32(0);
   outC->_L29.nid_rbc = kcg_lit_int32(0);
-  outC->_L29.nid_radio = kcg_lit_int64(0);
+  outC->_L29.nid_radio = kcg_lit_int32(0);
   outC->_L29.q_sleepsession = Q_SLEEPSESSION_Ignore_session_establishment_order;
   for (idx = 0; idx < 30; idx++) {
     outC->_L27.PacketHeaders[idx].nid_packet = kcg_lit_int32(0);
@@ -179,7 +179,7 @@ void dec_p42_init_RCM_Utils_Pkg_decoders(
   outC->p42_sessionManagement.q_rbc = Q_RBC_Terminate_communication_session;
   outC->p42_sessionManagement.nid_c = kcg_lit_int32(0);
   outC->p42_sessionManagement.nid_RBC = kcg_lit_int32(0);
-  outC->p42_sessionManagement.nid_radio = kcg_lit_int64(0);
+  outC->p42_sessionManagement.nid_radio = kcg_lit_int32(0);
   outC->p42_sessionManagement.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->p42_sessionManagement.origin.valid = kcg_true;

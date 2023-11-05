@@ -1,16 +1,11 @@
 $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-13T15:07:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:39
 *************************************************************$
-*** Monomorphization Warning (WAR_153): No specialized operator found
-  at file C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/scade_model_without_unused.scade, line 1134569, character 14
-  at path DMI_Control_Pkg::Utils::ASCII_to_INTEGER_iterator/_L17=
-*** License Failure (FAIL_22): Missing license
- Cannot find license for KCG 32-bit 6.6.2 (build i4)
-1 warning was found
+No warning was found
 No error was found
-A failure occurred
+No failure occurred
 $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** kcg.log
-** Generation date: 2023-10-13T15:08:06
+** Generation date: 2023-11-05T09:07:06
 *************************************************************$

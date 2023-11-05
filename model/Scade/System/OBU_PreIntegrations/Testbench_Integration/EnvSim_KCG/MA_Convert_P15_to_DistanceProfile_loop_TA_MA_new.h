@@ -26,15 +26,15 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* section_d/ */ section_d;
+  kcg_int32 /* section_d/ */ section_d;
   Q_SCALE /* _L139/ */ _L139;
-  kcg_int64 /* _L134/ */ _L134;
+  kcg_int32 /* _L134/ */ _L134;
   MovementAuthoritySectionlist_t_TrackAtlasTypes /* _L133/ */ _L133;
-  kcg_int64 /* _L131/ */ _L131;
+  kcg_int32 /* _L131/ */ _L131;
   AccuDistanceProfileMA_TA_MA_new /* _L125/ */ _L125;
   P015_OBU_sectionlist_enum_T_TM /* _L121/ */ _L121;
   AccuDistanceProfileMA_TA_MA_new /* _L142/ */ _L142;
-  kcg_int64 /* _L144/ */ _L144;
+  kcg_int32 /* _L144/ */ _L144;
   P015_section_enum_T_TM /* _L227/ */ _L227;
   MovementAuthoritySection_t_TrackAtlasTypes /* _L238/ */ _L238;
   L_SECTION /* _L239/ */ _L239;
@@ -44,35 +44,35 @@ typedef struct {
   kcg_bool /* _L243/ */ _L243;
   Q_SECTIONTIMER /* _L244/ */ _L244;
   T_SECTIONTIMER /* _L245/ */ _L245;
-  kcg_int64 /* _L248/ */ _L248;
-  kcg_int64 /* _L249/ */ _L249;
+  kcg_int32 /* _L248/ */ _L248;
+  kcg_int32 /* _L249/ */ _L249;
   MovementAuthoritySection_t_TrackAtlasTypes /* _L252/ */ _L252;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L256/ */ _L256;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L255/ */ _L255;
-  kcg_int64 /* _L257/ */ _L257;
-  kcg_int64 /* _L258/ */ _L258;
+  kcg_int32 /* _L257/ */ _L257;
+  kcg_int32 /* _L258/ */ _L258;
   kcg_bool /* _L259/ */ _L259;
-  kcg_int64 /* _L260/ */ _L260;
-  kcg_int64 /* _L261/ */ _L261;
+  kcg_int32 /* _L260/ */ _L260;
+  kcg_int32 /* _L261/ */ _L261;
   T_SECTIONTIMER /* _L262/ */ _L262;
-  kcg_int64 /* _L263/ */ _L263;
+  kcg_int32 /* _L263/ */ _L263;
   kcg_bool /* _L264/ */ _L264;
   MovementAuthoritySectionlist_t_TrackAtlasTypes /* _L265/ */ _L265;
   AccuDistanceProfileMA_TA_MA_new /* _L275/ */ _L275;
   N_ITER /* _L279/ */ _L279;
-  kcg_int64 /* _L280/ */ _L280;
+  kcg_int32 /* _L280/ */ _L280;
   kcg_bool /* _L281/ */ _L281;
-  kcg_int64 /* _L282/ */ _L282;
+  kcg_int32 /* _L282/ */ _L282;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L286/ */ _L286;
   MovementAuthoritySectionlist_t_TrackAtlasTypes /* _L285/ */ _L285;
-  kcg_int64 /* _L289/ */ _L289;
+  kcg_int32 /* _L289/ */ _L289;
 } outC_MA_Convert_P15_to_DistanceProfile_loop_TA_MA_new;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* TA_MA_new::MA_Convert_P15_to_DistanceProfile_loop/ */
 extern void MA_Convert_P15_to_DistanceProfile_loop_TA_MA_new(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* ProfileAccu/ */
   AccuDistanceProfileMA_TA_MA_new *ProfileAccu,
   /* SectionsIn/ */

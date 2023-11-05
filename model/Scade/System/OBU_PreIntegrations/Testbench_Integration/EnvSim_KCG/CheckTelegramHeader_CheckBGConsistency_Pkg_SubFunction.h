@@ -39,13 +39,13 @@ typedef struct {
   NID_C /* _L36/ */ _L36;
   NID_BG /* _L35/ */ _L35;
   Q_LINK /* _L34/ */ _L34;
-  kcg_int64 /* _L44/ */ _L44;
+  kcg_int32 /* _L44/ */ _L44;
   kcg_bool /* _L45/ */ _L45;
   kcg_bool /* _L46/ */ _L46;
-  kcg_int64 /* _L47/ */ _L47;
-  kcg_int64 /* _L48/ */ _L48;
-  kcg_int64 /* _L49/ */ _L49;
-  kcg_int64 /* _L50/ */ _L50;
+  kcg_int32 /* _L47/ */ _L47;
+  kcg_int32 /* _L48/ */ _L48;
+  kcg_int32 /* _L49/ */ _L49;
+  kcg_int32 /* _L50/ */ _L50;
 } outC_CheckTelegramHeader_CheckBGConsistency_Pkg_SubFunction;
 
 /* ===========  node initialization and cycle functions  =========== */

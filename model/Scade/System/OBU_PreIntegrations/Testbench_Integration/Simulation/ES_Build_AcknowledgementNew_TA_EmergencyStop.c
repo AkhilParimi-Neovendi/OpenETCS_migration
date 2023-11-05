@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -24,8 +24,8 @@ void ES_Build_AcknowledgementNew_TA_EmergencyStop(
   outC_ES_Build_AcknowledgementNew_TA_EmergencyStop *outC)
 {
   outC->_L9 = kcg_true;
-  outC->_L10 = kcg_lit_int64(147);
-  outC->_L51 = kcg_lit_int64(0);
+  outC->_L10 = kcg_lit_int32(147);
+  outC->_L51 = kcg_lit_int32(0);
   outC->_L5 = t_train;
   kcg_copy_trainProperties_T_TrainPosition_Types_Pck(&outC->_L11, trainProps);
   outC->_L12 = outC->_L11.nid_engine;
@@ -76,13 +76,13 @@ void ES_Build_AcknowledgementNew_TA_EmergencyStop(
 void ES_Build_AcknowledgementNew_init_TA_EmergencyStop(
   outC_ES_Build_AcknowledgementNew_TA_EmergencyStop *outC)
 {
-  outC->_L51 = kcg_lit_int64(0);
+  outC->_L51 = kcg_lit_int32(0);
   outC->_L50.valid = kcg_true;
-  outC->_L50.nid_message = kcg_lit_int64(0);
-  outC->_L50.l_message = kcg_lit_int64(0);
-  outC->_L50.t_train = kcg_lit_int64(0);
-  outC->_L50.nid_engine = kcg_lit_int64(0);
-  outC->_L50.nid_em = kcg_lit_int64(0);
+  outC->_L50.nid_message = kcg_lit_int32(0);
+  outC->_L50.l_message = kcg_lit_int32(0);
+  outC->_L50.t_train = kcg_lit_int32(0);
+  outC->_L50.nid_engine = kcg_lit_int32(0);
+  outC->_L50.nid_em = kcg_lit_int32(0);
   outC->_L50.q_emergencystop =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
   outC->_L43 =
@@ -104,34 +104,34 @@ void ES_Build_AcknowledgementNew_init_TA_EmergencyStop(
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
   outC->_L13 =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L11.nid_engine = kcg_lit_int64(0);
-  outC->_L11.nid_operational = kcg_lit_int64(0);
-  outC->_L11.l_train = kcg_lit_int64(0);
-  outC->_L11.d_baliseAntenna_2_frontend.nominal = kcg_lit_int64(0);
-  outC->_L11.d_baliseAntenna_2_frontend.d_min = kcg_lit_int64(0);
-  outC->_L11.d_baliseAntenna_2_frontend.d_max = kcg_lit_int64(0);
-  outC->_L11.d_frontend_2_rearend.nominal = kcg_lit_int64(0);
-  outC->_L11.d_frontend_2_rearend.d_min = kcg_lit_int64(0);
-  outC->_L11.d_frontend_2_rearend.d_max = kcg_lit_int64(0);
-  outC->_L11.locationAccuracy_DefaultValue.nominal = kcg_lit_int64(0);
-  outC->_L11.locationAccuracy_DefaultValue.d_min = kcg_lit_int64(0);
-  outC->_L11.locationAccuracy_DefaultValue.d_max = kcg_lit_int64(0);
-  outC->_L11.centerDetectionAcc_DefaultValue.nominal = kcg_lit_int64(0);
-  outC->_L11.centerDetectionAcc_DefaultValue.d_min = kcg_lit_int64(0);
-  outC->_L11.centerDetectionAcc_DefaultValue.d_max = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L11.nid_engine = kcg_lit_int32(0);
+  outC->_L11.nid_operational = kcg_lit_int32(0);
+  outC->_L11.l_train = kcg_lit_int32(0);
+  outC->_L11.d_baliseAntenna_2_frontend.nominal = kcg_lit_int32(0);
+  outC->_L11.d_baliseAntenna_2_frontend.d_min = kcg_lit_int32(0);
+  outC->_L11.d_baliseAntenna_2_frontend.d_max = kcg_lit_int32(0);
+  outC->_L11.d_frontend_2_rearend.nominal = kcg_lit_int32(0);
+  outC->_L11.d_frontend_2_rearend.d_min = kcg_lit_int32(0);
+  outC->_L11.d_frontend_2_rearend.d_max = kcg_lit_int32(0);
+  outC->_L11.locationAccuracy_DefaultValue.nominal = kcg_lit_int32(0);
+  outC->_L11.locationAccuracy_DefaultValue.d_min = kcg_lit_int32(0);
+  outC->_L11.locationAccuracy_DefaultValue.d_max = kcg_lit_int32(0);
+  outC->_L11.centerDetectionAcc_DefaultValue.nominal = kcg_lit_int32(0);
+  outC->_L11.centerDetectionAcc_DefaultValue.d_min = kcg_lit_int32(0);
+  outC->_L11.centerDetectionAcc_DefaultValue.d_max = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
   outC->_L9 = kcg_true;
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->q_emergencystop =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
   outC->m147.valid = kcg_true;
-  outC->m147.nid_message = kcg_lit_int64(0);
-  outC->m147.l_message = kcg_lit_int64(0);
-  outC->m147.t_train = kcg_lit_int64(0);
-  outC->m147.nid_engine = kcg_lit_int64(0);
-  outC->m147.nid_em = kcg_lit_int64(0);
+  outC->m147.nid_message = kcg_lit_int32(0);
+  outC->m147.l_message = kcg_lit_int32(0);
+  outC->m147.t_train = kcg_lit_int32(0);
+  outC->m147.nid_engine = kcg_lit_int32(0);
+  outC->m147.nid_em = kcg_lit_int32(0);
   outC->m147.q_emergencystop =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
 }
@@ -149,6 +149,6 @@ void ES_Build_AcknowledgementNew_reset_TA_EmergencyStop(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ES_Build_AcknowledgementNew_TA_EmergencyStop.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

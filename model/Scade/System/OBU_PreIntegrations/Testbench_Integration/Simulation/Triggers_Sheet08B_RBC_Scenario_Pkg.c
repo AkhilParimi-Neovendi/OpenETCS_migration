@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -12,9 +12,9 @@ void Triggers_Sheet08B_RBC_Scenario_Pkg(
   /* inLRBG/ */
   NID_LRBG inLRBG,
   /* inDistanceToLRBG/ */
-  kcg_float64 inDistanceToLRBG,
+  kcg_float32 inDistanceToLRBG,
   /* inTriggerId/ */
-  kcg_int64 inTriggerId,
+  kcg_int32 inTriggerId,
   /* inRBCTime/ */
   T_TRAIN inRBCTime,
   outC_Triggers_Sheet08B_RBC_Scenario_Pkg *outC)
@@ -29,11 +29,11 @@ void Triggers_Sheet08B_RBC_Scenario_Pkg(
     outC->_L2,
     outC->_L3,
     outC->_L4,
-    kcg_lit_int64(380),
-    kcg_lit_float64(186.8),
-    kcg_lit_float64(196.8),
-    kcg_lit_int64(380001918),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(380),
+    kcg_lit_float32(186.8),
+    kcg_lit_float32(196.8),
+    kcg_lit_int32(380001918),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_3);
   outC->_L7 = outC->Context_RadioTrackTrainMessageTrigger__Trigger_3.outTriggerId;
   /* _L8=(RBC_Scenario_Pkg::RadioTrackTrainMessageTrigger__Trigger#4)/ */
@@ -42,11 +42,11 @@ void Triggers_Sheet08B_RBC_Scenario_Pkg(
     outC->_L2,
     outC->_L7,
     outC->_L4,
-    kcg_lit_int64(383),
-    kcg_lit_float64(100.4),
-    kcg_lit_float64(110.4),
-    kcg_lit_int64(383001054),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(383),
+    kcg_lit_float32(100.4),
+    kcg_lit_float32(110.4),
+    kcg_lit_int32(383001054),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_4);
   outC->_L8 = outC->Context_RadioTrackTrainMessageTrigger__Trigger_4.outTriggerId;
   /* _L9=(RBC_Scenario_Pkg::RadioTrackTrainMessageTrigger__Trigger#5)/ */
@@ -55,11 +55,11 @@ void Triggers_Sheet08B_RBC_Scenario_Pkg(
     outC->_L2,
     outC->_L8,
     outC->_L4,
-    kcg_lit_int64(385),
-    kcg_lit_float64(96.1),
-    kcg_lit_float64(106.1),
-    kcg_lit_int64(385001011),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(385),
+    kcg_lit_float32(96.1),
+    kcg_lit_float32(106.1),
+    kcg_lit_int32(385001011),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_5);
   outC->_L9 = outC->Context_RadioTrackTrainMessageTrigger__Trigger_5.outTriggerId;
   /* _L10=(RBC_Scenario_Pkg::RadioTrackTrainMessageTrigger__Trigger#6)/ */
@@ -68,11 +68,11 @@ void Triggers_Sheet08B_RBC_Scenario_Pkg(
     outC->_L2,
     outC->_L9,
     outC->_L4,
-    kcg_lit_int64(387),
-    kcg_lit_float64(297.7),
-    kcg_lit_float64(307.7),
-    kcg_lit_int64(387003027),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(387),
+    kcg_lit_float32(297.7),
+    kcg_lit_float32(307.7),
+    kcg_lit_int32(387003027),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_6);
   outC->_L10 =
     outC->Context_RadioTrackTrainMessageTrigger__Trigger_6.outTriggerId;
@@ -83,15 +83,15 @@ void Triggers_Sheet08B_RBC_Scenario_Pkg(
 void Triggers_Sheet08B_init_RBC_Scenario_Pkg(
   outC_Triggers_Sheet08B_RBC_Scenario_Pkg *outC)
 {
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_float64(0.0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->outTriggerId = kcg_lit_int64(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_float32(0.0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->outTriggerId = kcg_lit_int32(0);
   /* _L10=(RBC_Scenario_Pkg::RadioTrackTrainMessageTrigger__Trigger#6)/ */
   RadioTrackTrainMessageTrigger__Trigger_init_RBC_Scenario_Pkg(
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_6);
@@ -168,6 +168,6 @@ void kcg_load_SV_Triggers_Sheet08B_RBC_Scenario_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Triggers_Sheet08B_RBC_Scenario_Pkg.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

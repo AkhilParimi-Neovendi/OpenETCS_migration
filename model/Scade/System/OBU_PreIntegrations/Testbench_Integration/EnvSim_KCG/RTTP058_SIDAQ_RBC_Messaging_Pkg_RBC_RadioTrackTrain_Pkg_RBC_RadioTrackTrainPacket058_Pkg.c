@@ -48,51 +48,51 @@ void RTTP058_SIDAQ_init_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg_RBC_RadioTrack
   static kcg_size idx5;
 
   outC->_L9.valid = kcg_true;
-  outC->_L9.NID_PACKET = kcg_lit_int64(0);
-  outC->_L9.Q_DIR = kcg_lit_int64(0);
-  outC->_L9.L_PACKET = kcg_lit_int64(0);
-  outC->_L9.Q_SCALE = kcg_lit_int64(0);
-  outC->_L9.T_CYCLOC = kcg_lit_int64(0);
-  outC->_L9.D_CYCLOC = kcg_lit_int64(0);
-  outC->_L9.M_LOC = kcg_lit_int64(0);
-  outC->_L9.N_ITER = kcg_lit_int64(0);
+  outC->_L9.NID_PACKET = kcg_lit_int32(0);
+  outC->_L9.Q_DIR = kcg_lit_int32(0);
+  outC->_L9.L_PACKET = kcg_lit_int32(0);
+  outC->_L9.Q_SCALE = kcg_lit_int32(0);
+  outC->_L9.T_CYCLOC = kcg_lit_int32(0);
+  outC->_L9.D_CYCLOC = kcg_lit_int32(0);
+  outC->_L9.M_LOC = kcg_lit_int32(0);
+  outC->_L9.N_ITER = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 32; idx1++) {
-    outC->_L9.SECTIONS[idx1].D_LOC = kcg_lit_int64(0);
-    outC->_L9.SECTIONS[idx1].Q_LGTLOC = kcg_lit_int64(0);
+    outC->_L9.SECTIONS[idx1].D_LOC = kcg_lit_int32(0);
+    outC->_L9.SECTIONS[idx1].Q_LGTLOC = kcg_lit_int32(0);
   }
   outC->_L8.valid = kcg_true;
-  outC->_L8.NID_PACKET = kcg_lit_int64(0);
-  outC->_L8.Q_DIR = kcg_lit_int64(0);
-  outC->_L8.L_PACKET = kcg_lit_int64(0);
-  outC->_L8.Q_SCALE = kcg_lit_int64(0);
-  outC->_L8.T_CYCLOC = kcg_lit_int64(0);
-  outC->_L8.D_CYCLOC = kcg_lit_int64(0);
-  outC->_L8.M_LOC = kcg_lit_int64(0);
-  outC->_L8.N_ITER = kcg_lit_int64(0);
+  outC->_L8.NID_PACKET = kcg_lit_int32(0);
+  outC->_L8.Q_DIR = kcg_lit_int32(0);
+  outC->_L8.L_PACKET = kcg_lit_int32(0);
+  outC->_L8.Q_SCALE = kcg_lit_int32(0);
+  outC->_L8.T_CYCLOC = kcg_lit_int32(0);
+  outC->_L8.D_CYCLOC = kcg_lit_int32(0);
+  outC->_L8.M_LOC = kcg_lit_int32(0);
+  outC->_L8.N_ITER = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 32; idx2++) {
-    outC->_L8.SECTIONS[idx2].D_LOC = kcg_lit_int64(0);
-    outC->_L8.SECTIONS[idx2].Q_LGTLOC = kcg_lit_int64(0);
+    outC->_L8.SECTIONS[idx2].D_LOC = kcg_lit_int32(0);
+    outC->_L8.SECTIONS[idx2].Q_LGTLOC = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 32; idx3++) {
-    outC->_L4[idx3].D_LOC = kcg_lit_int64(0);
-    outC->_L4[idx3].Q_LGTLOC = kcg_lit_int64(0);
+    outC->_L4[idx3].D_LOC = kcg_lit_int32(0);
+    outC->_L4[idx3].Q_LGTLOC = kcg_lit_int32(0);
   }
   for (idx4 = 0; idx4 < 32; idx4++) {
-    outC->_L1[idx4].d_loc = kcg_lit_int64(0);
+    outC->_L1[idx4].d_loc = kcg_lit_int32(0);
     outC->_L1[idx4].q_lgtloc = Q_LGTLOC_Min_safe_rear_end;
   }
   outC->outRadioTrackTrainPacket.valid = kcg_true;
-  outC->outRadioTrackTrainPacket.NID_PACKET = kcg_lit_int64(0);
-  outC->outRadioTrackTrainPacket.Q_DIR = kcg_lit_int64(0);
-  outC->outRadioTrackTrainPacket.L_PACKET = kcg_lit_int64(0);
-  outC->outRadioTrackTrainPacket.Q_SCALE = kcg_lit_int64(0);
-  outC->outRadioTrackTrainPacket.T_CYCLOC = kcg_lit_int64(0);
-  outC->outRadioTrackTrainPacket.D_CYCLOC = kcg_lit_int64(0);
-  outC->outRadioTrackTrainPacket.M_LOC = kcg_lit_int64(0);
-  outC->outRadioTrackTrainPacket.N_ITER = kcg_lit_int64(0);
+  outC->outRadioTrackTrainPacket.NID_PACKET = kcg_lit_int32(0);
+  outC->outRadioTrackTrainPacket.Q_DIR = kcg_lit_int32(0);
+  outC->outRadioTrackTrainPacket.L_PACKET = kcg_lit_int32(0);
+  outC->outRadioTrackTrainPacket.Q_SCALE = kcg_lit_int32(0);
+  outC->outRadioTrackTrainPacket.T_CYCLOC = kcg_lit_int32(0);
+  outC->outRadioTrackTrainPacket.D_CYCLOC = kcg_lit_int32(0);
+  outC->outRadioTrackTrainPacket.M_LOC = kcg_lit_int32(0);
+  outC->outRadioTrackTrainPacket.N_ITER = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 32; idx5++) {
-    outC->outRadioTrackTrainPacket.SECTIONS[idx5].D_LOC = kcg_lit_int64(0);
-    outC->outRadioTrackTrainPacket.SECTIONS[idx5].Q_LGTLOC = kcg_lit_int64(0);
+    outC->outRadioTrackTrainPacket.SECTIONS[idx5].D_LOC = kcg_lit_int32(0);
+    outC->outRadioTrackTrainPacket.SECTIONS[idx5].Q_LGTLOC = kcg_lit_int32(0);
   }
   for (idx = 0; idx < 32; idx++) {
     /* _L4=(RBC_Messaging_Pkg::RBC_RadioTrackTrain_Pkg::RBC_RadioTrackTrainPacket058_Pkg::RTTP058_SIDAQI#1)/ */

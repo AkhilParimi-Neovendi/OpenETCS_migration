@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -89,18 +89,18 @@ void TIU_OutputIntegration_init_output_to_TIU_API_Pkg(
   outC->_L12.m_traction_cutoff_cm =
     traction_cutoff_command_not_defined_TIU_Types_Pkg;
   outC->_L10.valid = kcg_true;
-  outC->_L10.d_test_current.now = kcg_lit_int64(0);
-  outC->_L10.d_test_current.distance = kcg_lit_int64(0);
+  outC->_L10.d_test_current.now = kcg_lit_int32(0);
+  outC->_L10.d_test_current.distance = kcg_lit_int32(0);
   outC->_L10.m_current.no_restriction = kcg_true;
-  outC->_L10.m_current.restriction = kcg_lit_int64(0);
+  outC->_L10.m_current.restriction = kcg_lit_int32(0);
   outC->_L9.valid = kcg_true;
-  outC->_L9.door_control_info = kcg_lit_int64(0);
+  outC->_L9.door_control_info = kcg_lit_int32(0);
   outC->_L8.valid = kcg_true;
-  outC->_L8.d_test_traction.now = kcg_lit_int64(0);
-  outC->_L8.d_test_traction.distance = kcg_lit_int64(0);
+  outC->_L8.d_test_traction.now = kcg_lit_int32(0);
+  outC->_L8.d_test_traction.distance = kcg_lit_int32(0);
   outC->_L8.m_voltage.voltage_type =
     line_not_fitted_with_any_traction_system_TIU_Types_Pkg;
-  outC->_L8.m_voltage.NID_ctraction = kcg_lit_int64(0);
+  outC->_L8.m_voltage.NID_ctraction = kcg_lit_int32(0);
   outC->_L7.valid = kcg_true;
   outC->_L7.m_pantograph_cm = pantograph_command_not_defined_TIU_Types_Pkg;
   outC->_L7.m_airtightness_cm = airtightness_command_not_defined_TIU_Types_Pkg;
@@ -143,24 +143,24 @@ void TIU_OutputIntegration_init_output_to_TIU_API_Pkg(
   outC->_L1.info.type_I_train_commands.m_traction_cutoff_cm =
     traction_cutoff_command_not_defined_TIU_Types_Pkg;
   outC->_L1.info.change_traction_system.valid = kcg_true;
-  outC->_L1.info.change_traction_system.d_test_traction.now = kcg_lit_int64(0);
+  outC->_L1.info.change_traction_system.d_test_traction.now = kcg_lit_int32(0);
   outC->_L1.info.change_traction_system.d_test_traction.distance =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.info.change_traction_system.m_voltage.voltage_type =
     line_not_fitted_with_any_traction_system_TIU_Types_Pkg;
-  outC->_L1.info.change_traction_system.m_voltage.NID_ctraction = kcg_lit_int64(
+  outC->_L1.info.change_traction_system.m_voltage.NID_ctraction = kcg_lit_int32(
       0);
   outC->_L1.info.passenger_door_control_info.valid = kcg_true;
-  outC->_L1.info.passenger_door_control_info.door_control_info = kcg_lit_int64(0);
+  outC->_L1.info.passenger_door_control_info.door_control_info = kcg_lit_int32(0);
   outC->_L1.info.change_of_allowed_current_consumption.valid = kcg_true;
   outC->_L1.info.change_of_allowed_current_consumption.d_test_current.now =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.info.change_of_allowed_current_consumption.d_test_current.distance =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.info.change_of_allowed_current_consumption.m_current.no_restriction =
     kcg_true;
   outC->_L1.info.change_of_allowed_current_consumption.m_current.restriction =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2.valid = kcg_true;
   outC->_L2.emergencyBrakeActive = kcg_true;
   outC->_L2.isolationStatus = kcg_true;
@@ -194,25 +194,25 @@ void TIU_OutputIntegration_init_output_to_TIU_API_Pkg(
     traction_cutoff_command_not_defined_TIU_Types_Pkg;
   outC->outTIU_to_API.info.change_traction_system.valid = kcg_true;
   outC->outTIU_to_API.info.change_traction_system.d_test_traction.now =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outTIU_to_API.info.change_traction_system.d_test_traction.distance =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outTIU_to_API.info.change_traction_system.m_voltage.voltage_type =
     line_not_fitted_with_any_traction_system_TIU_Types_Pkg;
   outC->outTIU_to_API.info.change_traction_system.m_voltage.NID_ctraction =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outTIU_to_API.info.passenger_door_control_info.valid = kcg_true;
   outC->outTIU_to_API.info.passenger_door_control_info.door_control_info =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outTIU_to_API.info.change_of_allowed_current_consumption.valid = kcg_true;
   outC->outTIU_to_API.info.change_of_allowed_current_consumption.d_test_current.now =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outTIU_to_API.info.change_of_allowed_current_consumption.d_test_current.distance =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outTIU_to_API.info.change_of_allowed_current_consumption.m_current.no_restriction =
     kcg_true;
   outC->outTIU_to_API.info.change_of_allowed_current_consumption.m_current.restriction =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   /* _L1=(output_to_TIU_API_Pkg::manageTIU_output#1)/ */
   manageTIU_output_init_output_to_TIU_API_Pkg(
     &outC->Context_manageTIU_output_1);
@@ -263,6 +263,6 @@ void kcg_load_SV_TIU_OutputIntegration_output_to_TIU_API_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** TIU_OutputIntegration_output_to_TIU_API_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

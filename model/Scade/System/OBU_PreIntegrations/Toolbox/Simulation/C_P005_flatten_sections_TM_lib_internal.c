@@ -42,7 +42,7 @@ void C_P005_flatten_sections_TM_lib_internal(
     kcg_copy_P005_sections_array_flat_T_TM(&acc, &outC->_L78);
     /* _L78=(TM_lib_internal::C_P005_fs_flatten_array#2)/ */
     C_P005_fs_flatten_array_TM_lib_internal(
-      /* _L78= */(kcg_int64) idx2,
+      /* _L78= */(kcg_int32) idx2,
       &acc,
       &outC->_L80[idx2],
       &outC->Context_C_P005_fs_flatten_array_2[idx2]);
@@ -72,32 +72,32 @@ void C_P005_flatten_sections_init_TM_lib_internal(
   for (idx4 = 0; idx4 < 231; idx4++) {
     for (idx3 = 0; idx3 < 33; idx3++) {
       for (idx2 = 0; idx2 < 7; idx2++) {
-        outC->_L80[idx4][idx3][idx2] = kcg_lit_int64(0);
+        outC->_L80[idx4][idx3][idx2] = kcg_lit_int32(0);
       }
     }
   }
   for (idx5 = 0; idx5 < 95; idx5++) {
-    outC->_L78[idx5] = kcg_lit_int64(0);
+    outC->_L78[idx5] = kcg_lit_int32(0);
   }
   for (idx7 = 0; idx7 < 33; idx7++) {
     for (idx6 = 0; idx6 < 7; idx6++) {
-      outC->_L74[idx7][idx6] = kcg_lit_int64(0);
+      outC->_L74[idx7][idx6] = kcg_lit_int32(0);
     }
   }
   for (idx8 = 0; idx8 < 33; idx8++) {
-    outC->_L75[idx8].D_LINK = kcg_lit_int64(0);
-    outC->_L75[idx8].Q_NEWCOUNTRY = kcg_lit_int64(0);
-    outC->_L75[idx8].NID_C = kcg_lit_int64(0);
-    outC->_L75[idx8].NID_BG = kcg_lit_int64(0);
-    outC->_L75[idx8].Q_LINKORIENTATION = kcg_lit_int64(0);
-    outC->_L75[idx8].Q_LINKREACTION = kcg_lit_int64(0);
-    outC->_L75[idx8].Q_LOCACC = kcg_lit_int64(0);
+    outC->_L75[idx8].D_LINK = kcg_lit_int32(0);
+    outC->_L75[idx8].Q_NEWCOUNTRY = kcg_lit_int32(0);
+    outC->_L75[idx8].NID_C = kcg_lit_int32(0);
+    outC->_L75[idx8].NID_BG = kcg_lit_int32(0);
+    outC->_L75[idx8].Q_LINKORIENTATION = kcg_lit_int32(0);
+    outC->_L75[idx8].Q_LINKREACTION = kcg_lit_int32(0);
+    outC->_L75[idx8].Q_LOCACC = kcg_lit_int32(0);
   }
   for (idx9 = 0; idx9 < 95; idx9++) {
-    outC->_L76[idx9] = kcg_lit_int64(0);
+    outC->_L76[idx9] = kcg_lit_int32(0);
   }
   for (idx10 = 0; idx10 < 95; idx10++) {
-    outC->Flattened[idx10] = kcg_lit_int64(0);
+    outC->Flattened[idx10] = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 231; idx1++) {
     /* _L78=(TM_lib_internal::C_P005_fs_flatten_array#2)/ */

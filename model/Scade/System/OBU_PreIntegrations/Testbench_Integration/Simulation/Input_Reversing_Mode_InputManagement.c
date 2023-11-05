@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -72,43 +72,43 @@ void Input_Reversing_Mode_InputManagement(
 void Input_Reversing_Mode_init_InputManagement(
   outC_Input_Reversing_Mode_InputManagement *outC)
 {
-  outC->_L20 = kcg_lit_int64(0);
-  outC->_L19 = kcg_lit_int64(0);
-  outC->_L18 = kcg_lit_int64(0);
-  outC->_L17 = kcg_lit_int64(0);
-  outC->_L16 = kcg_lit_int64(0);
-  outC->_L15 = kcg_lit_int64(0);
+  outC->_L20 = kcg_lit_int32(0);
+  outC->_L19 = kcg_lit_int32(0);
+  outC->_L18 = kcg_lit_int32(0);
+  outC->_L17 = kcg_lit_int32(0);
+  outC->_L16 = kcg_lit_int32(0);
+  outC->_L15 = kcg_lit_int32(0);
   outC->_L1.Available = kcg_true;
-  outC->_L1.Dist_Start = kcg_lit_int64(0);
-  outC->_L1.Length = kcg_lit_int64(0);
-  outC->_L1.Dist_Run = kcg_lit_int64(0);
-  outC->_L1.Speed = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L1.Dist_Start = kcg_lit_int32(0);
+  outC->_L1.Length = kcg_lit_int32(0);
+  outC->_L1.Dist_Run = kcg_lit_int32(0);
+  outC->_L1.Speed = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L4 = Q_SCALE_10_cm_scale;
   outC->_L3 = Q_DIR_Reverse;
   outC->_L2 = kcg_true;
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
   outC->_L9 = Q_SCALE_10_cm_scale;
   outC->_L8 = Q_DIR_Reverse;
   outC->_L7 = kcg_true;
   outC->_L12.valid = kcg_true;
   outC->_L12.q_dir = Q_DIR_Reverse;
   outC->_L12.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L12.d_startreverse = kcg_lit_int64(0);
-  outC->_L12.l_reversearea = kcg_lit_int64(0);
+  outC->_L12.d_startreverse = kcg_lit_int32(0);
+  outC->_L12.l_reversearea = kcg_lit_int32(0);
   outC->_L13.valid = kcg_true;
   outC->_L13.q_dir = Q_DIR_Reverse;
   outC->_L13.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L13.d_reverse = kcg_lit_int64(0);
-  outC->_L13.v_reverse = kcg_lit_int64(0);
+  outC->_L13.d_reverse = kcg_lit_int32(0);
+  outC->_L13.v_reverse = kcg_lit_int32(0);
   outC->_L14 = kcg_true;
   outC->Reversing_Data.Available = kcg_true;
-  outC->Reversing_Data.Dist_Start = kcg_lit_int64(0);
-  outC->Reversing_Data.Length = kcg_lit_int64(0);
-  outC->Reversing_Data.Dist_Run = kcg_lit_int64(0);
-  outC->Reversing_Data.Speed = kcg_lit_int64(0);
+  outC->Reversing_Data.Dist_Start = kcg_lit_int32(0);
+  outC->Reversing_Data.Length = kcg_lit_int32(0);
+  outC->Reversing_Data.Dist_Run = kcg_lit_int32(0);
+  outC->Reversing_Data.Speed = kcg_lit_int32(0);
   /* _L18=(InputManagement::scaledDistance_2_distance#1)/ */
   scaledDistance_2_distance_init_InputManagement(
     &outC->Context_scaledDistance_2_distance_1);
@@ -142,6 +142,6 @@ void Input_Reversing_Mode_reset_InputManagement(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Input_Reversing_Mode_InputManagement.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

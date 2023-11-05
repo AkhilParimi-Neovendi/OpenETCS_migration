@@ -12,7 +12,7 @@ void C_P021_unflatten_sections_TM_lib_internal(
   /* nid_packet_ok/ */
   kcg_bool nid_packet_ok,
   /* n_iter/ */
-  kcg_int64 n_iter,
+  kcg_int32 n_iter,
   /* flat/ */
   P021_sections_array_flat_T_TM *flat,
   outC_C_P021_unflatten_sections_TM_lib_internal *outC)
@@ -20,7 +20,7 @@ void C_P021_unflatten_sections_TM_lib_internal(
   static kcg_size idx;
   static kcg_size idx1;
   static kcg_size idx2;
-  static kcg_int64 noname;
+  static kcg_int32 noname;
 
   outC->_L11 = nid_packet_ok;
   outC->_L3 = n_iter;
@@ -39,14 +39,14 @@ void C_P021_unflatten_sections_TM_lib_internal(
     for (idx2 = 0; idx2 < 33; idx2++) {
       /* _L7=(TM_lib_internal::C_P021_us_array#1)/ */
       C_P021_us_array_TM_lib_internal(
-        /* _L7= */(kcg_int64) idx2,
+        /* _L7= */(kcg_int32) idx2,
         outC->_L5[idx2],
         &outC->_L6[idx2],
         &outC->Context_C_P021_us_array_1[idx2]);
       kcg_copy_P021_section_enum_T_TM(
         &outC->_L9[idx2],
         &outC->Context_C_P021_us_array_1[idx2].sections);
-      outC->_L7 = /* _L7= */(kcg_int64) (idx2 + 1);
+      outC->_L7 = /* _L7= */(kcg_int32) (idx2 + 1);
       /* _L7= */
       if (!outC->Context_C_P021_us_array_1[idx2].cont) {
         break;
@@ -54,7 +54,7 @@ void C_P021_unflatten_sections_TM_lib_internal(
     }
   }
   else {
-    outC->_L7 = kcg_lit_int64(0);
+    outC->_L7 = kcg_lit_int32(0);
   }
 #ifdef KCG_MAPW_CPY
 
@@ -85,28 +85,28 @@ void C_P021_unflatten_sections_init_TM_lib_internal(
   outC->_L11 = kcg_true;
   for (idx1 = 0; idx1 < 33; idx1++) {
     outC->_L9[idx1].valid = kcg_true;
-    outC->_L9[idx1].d_gradient = kcg_lit_int64(0);
+    outC->_L9[idx1].d_gradient = kcg_lit_int32(0);
     outC->_L9[idx1].q_gdir = Q_GDIR_downhill;
-    outC->_L9[idx1].g_a = kcg_lit_int64(0);
+    outC->_L9[idx1].g_a = kcg_lit_int32(0);
   }
-  outC->_L7 = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 33; idx3++) {
     for (idx2 = 0; idx2 < 99; idx2++) {
-      outC->_L6[idx3][idx2] = kcg_lit_int64(0);
+      outC->_L6[idx3][idx2] = kcg_lit_int32(0);
     }
   }
   for (idx4 = 0; idx4 < 33; idx4++) {
-    outC->_L5[idx4] = kcg_lit_int64(0);
+    outC->_L5[idx4] = kcg_lit_int32(0);
   }
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 99; idx5++) {
-    outC->_L1[idx5] = kcg_lit_int64(0);
+    outC->_L1[idx5] = kcg_lit_int32(0);
   }
   for (idx6 = 0; idx6 < 33; idx6++) {
     outC->sections[idx6].valid = kcg_true;
-    outC->sections[idx6].d_gradient = kcg_lit_int64(0);
+    outC->sections[idx6].d_gradient = kcg_lit_int32(0);
     outC->sections[idx6].q_gdir = Q_GDIR_downhill;
-    outC->sections[idx6].g_a = kcg_lit_int64(0);
+    outC->sections[idx6].g_a = kcg_lit_int32(0);
   }
   for (idx = 0; idx < 33; idx++) {
     /* _L7=(TM_lib_internal::C_P021_us_array#1)/ */

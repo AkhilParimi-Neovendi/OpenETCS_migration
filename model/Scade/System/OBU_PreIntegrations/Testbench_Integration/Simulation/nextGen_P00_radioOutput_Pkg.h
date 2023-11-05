@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _nextGen_P00_radioOutput_Pkg_H_
 #define _nextGen_P00_radioOutput_Pkg_H_
@@ -23,23 +23,23 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   PT0_PositionReport_T_Packet_TrainTypes_Pkg /* _L1/ */ _L1;
   P000_TM_TrainToTrack /* _L2/ */ _L2;
-  kcg_int64 /* _L12/ */ _L12;
-  kcg_int64 /* _L34/ */ _L34;
-  kcg_int64 /* _L33/ */ _L33;
+  kcg_int32 /* _L12/ */ _L12;
+  kcg_int32 /* _L34/ */ _L34;
+  kcg_int32 /* _L33/ */ _L33;
   Q_SCALE /* _L32/ */ _L32;
-  kcg_int64 /* _L31/ */ _L31;
-  kcg_int64 /* _L30/ */ _L30;
+  kcg_int32 /* _L31/ */ _L31;
+  kcg_int32 /* _L30/ */ _L30;
   Q_DIRLRBG /* _L29/ */ _L29;
   Q_DLRBG /* _L28/ */ _L28;
-  kcg_int64 /* _L27/ */ _L27;
-  kcg_int64 /* _L26/ */ _L26;
+  kcg_int32 /* _L27/ */ _L27;
+  kcg_int32 /* _L26/ */ _L26;
   Q_LENGTH /* _L25/ */ _L25;
-  kcg_int64 /* _L24/ */ _L24;
-  kcg_int64 /* _L23/ */ _L23;
+  kcg_int32 /* _L24/ */ _L24;
+  kcg_int32 /* _L23/ */ _L23;
   Q_DIRTRAIN /* _L22/ */ _L22;
   M_MODE /* _L21/ */ _L21;
   M_LEVEL /* _L20/ */ _L20;
-  kcg_int64 /* _L19/ */ _L19;
+  kcg_int32 /* _L19/ */ _L19;
   kcg_bool /* _L35/ */ _L35;
   Position_Report_TrainToTrack /* _L36/ */ _L36;
 } outC_nextGen_P00_radioOutput_Pkg;
@@ -66,6 +66,6 @@ extern void nextGen_P00_init_radioOutput_Pkg(
 #endif /* _nextGen_P00_radioOutput_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** nextGen_P00_radioOutput_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

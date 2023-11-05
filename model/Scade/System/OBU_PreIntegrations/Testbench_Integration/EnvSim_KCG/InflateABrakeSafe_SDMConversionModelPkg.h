@@ -27,22 +27,22 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   av_MergedMap_t_SDMConversionModelPkg /* _L1/ */ _L1;
   ASafeSpeedDefinition_T_CalcBrakingCurves_types /* _L15/ */ _L15;
-  array_float64_100 /* _L12/ */ _L12;
+  array_float32_100 /* _L12/ */ _L12;
   ASafe_T_CalcBrakingCurves_types /* _L11/ */ _L11;
-  array_float64_100_1 /* _L10/ */ _L10;
+  array_float32_100_1 /* _L10/ */ _L10;
   V_internal_Type_Obu_BasicTypes_Pkg /* _L9/ */ _L9;
-  array_float64_1 /* _L4/ */ _L4;
-  kcg_float64 /* _L2/ */ _L2;
+  array_float32_1 /* _L4/ */ _L4;
+  kcg_float32 /* _L2/ */ _L2;
   v_MergedSteps_t_SDMConversionModelPkg /* _L25/ */ _L25;
   a_MergedSteps_t_SDMConversionModelPkg /* _L24/ */ _L24;
   ASafe_Data_T_CalcBrakingCurves_types /* _L26/ */ _L26;
-  array_float64_100_13 /* _L31/ */ _L31;
+  array_float32_100_13 /* _L31/ */ _L31;
   ASafeRow_T_CalcBrakingCurves_types /* _L32/ */ _L32;
   V_internal_real_Type_SDM_Types_Pkg /* _L34/ */ _L34;
   A_internal_Type_Obu_BasicTypes_Pkg /* _L35/ */ _L35;
-  kcg_int64 /* _L36/ */ _L36;
-  array_float64_13 /* _L37/ */ _L37;
-  kcg_int64 /* _L38/ */ _L38;
+  kcg_int32 /* _L36/ */ _L36;
+  array_float32_13 /* _L37/ */ _L37;
+  kcg_int32 /* _L38/ */ _L38;
 } outC_InflateABrakeSafe_SDMConversionModelPkg;
 
 /* ===========  node initialization and cycle functions  =========== */

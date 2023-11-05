@@ -10,8 +10,8 @@
 
 /* ========================  input structure  ====================== */
 typedef struct {
-  kcg_float64 /* actualTrainPos/ */ actualTrainPos;
-  kcg_float64 /* radioTrainPos/ */ radioTrainPos;
+  kcg_float32 /* actualTrainPos/ */ actualTrainPos;
+  kcg_float32 /* radioTrainPos/ */ radioTrainPos;
 } inC_ScriptedTrackTest_EnvSim_Internal;
 
 /* =====================  no output structure  ====================== */
@@ -29,8 +29,8 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   CompressedBaliseMessage_TM /* _L2/ */ _L2;
   CompressedRadioMessage_TM /* _L1/ */ _L1;
-  kcg_float64 /* _L3/ */ _L3;
-  kcg_float64 /* _L4/ */ _L4;
+  kcg_float32 /* _L3/ */ _L3;
+  kcg_float32 /* _L4/ */ _L4;
 } outC_ScriptedTrackTest_EnvSim_Internal;
 
 /* ===========  node initialization and cycle functions  =========== */

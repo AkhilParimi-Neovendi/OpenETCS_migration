@@ -89,9 +89,9 @@ typedef struct {
   DMI_Adhesion_Factor_Data_int_array_T_DATA /* _L49/ */ _L49;
   DMI_Icons_int_array_T_DATA /* _L50/ */ _L50;
   DMI_Driver_Identifier_int_array_T_DATA /* _L51/ */ _L51;
-  kcg_int64 /* _L53/ */ _L53;
-  kcg_int64 /* _L54/ */ _L54;
-  kcg_int64 /* _L55/ */ _L55;
+  kcg_int32 /* _L53/ */ _L53;
+  kcg_int32 /* _L54/ */ _L54;
+  kcg_int32 /* _L55/ */ _L55;
 } outC_CAST_EVC_to_DMI_to_int_Messages;
 
 /* ===========  node initialization and cycle functions  =========== */

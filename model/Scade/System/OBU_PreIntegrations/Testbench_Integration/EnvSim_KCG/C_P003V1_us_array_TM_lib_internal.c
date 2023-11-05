@@ -10,9 +10,9 @@
 /* TM_lib_internal::C_P003V1_us_array/ */
 void C_P003V1_us_array_TM_lib_internal(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* n_iter_int/ */
-  kcg_int64 n_iter_int,
+  kcg_int32 n_iter_int,
   /* flat/ */
   P003V1_OBU_sectionlist_int_T_TM_baseline2 *flat,
   outC_C_P003V1_us_array_TM_lib_internal *outC)
@@ -45,19 +45,19 @@ void C_P003V1_us_array_init_TM_lib_internal(
 {
   static kcg_size idx;
 
-  outC->_L34 = kcg_lit_int64(0);
-  outC->_L35 = kcg_lit_int64(0);
-  outC->_L36 = kcg_lit_int64(0);
+  outC->_L34 = kcg_lit_int32(0);
+  outC->_L35 = kcg_lit_int32(0);
+  outC->_L36 = kcg_lit_int32(0);
   for (idx = 0; idx < 32; idx++) {
-    outC->_L37[idx] = kcg_lit_int64(0);
+    outC->_L37[idx] = kcg_lit_int32(0);
   }
   outC->_L38.valid = kcg_true;
-  outC->_L38.nid_c = kcg_lit_int64(0);
+  outC->_L38.nid_c = kcg_lit_int32(0);
   outC->_L39 = kcg_true;
   outC->_L40 = kcg_true;
-  outC->_L41 = kcg_lit_int64(0);
+  outC->_L41 = kcg_lit_int32(0);
   outC->sections.valid = kcg_true;
-  outC->sections.nid_c = kcg_lit_int64(0);
+  outC->sections.nid_c = kcg_lit_int32(0);
   outC->cont = kcg_true;
   /* _L41=(TM_conversions::CAST_Int_to_NID_C#2)/ */
   CAST_Int_to_NID_C_init_TM_conversions(&outC->Context_CAST_Int_to_NID_C_2);

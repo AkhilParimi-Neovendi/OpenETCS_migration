@@ -12,7 +12,7 @@ void ModeFilter_InformationFilter_Pkg_ThirdFilter(
   /* inOperationModus/ */
   M_MODE inOperationModus,
   /* inPacketId/ */
-  kcg_int64 inPacketId,
+  kcg_int32 inPacketId,
   outC_ModeFilter_InformationFilter_Pkg_ThirdFilter *outC)
 {
   outC->_L268 = inPacketId;
@@ -31,8 +31,8 @@ void ModeFilter_InformationFilter_Pkg_ThirdFilter(
     &outC->_L249,
     (ModeDecisionTableType_DataDictionary_Pkg *)
       &ModeDecisionTable_DataDictionary_Pkg);
-  if ((kcg_lit_int64(0) <= outC->_L261) & (outC->_L261 < kcg_lit_int64(256)) &
-    ((kcg_lit_int64(0) <= outC->_L262) & (outC->_L262 < kcg_lit_int64(17)))) {
+  if ((kcg_lit_int32(0) <= outC->_L261) & (outC->_L261 < kcg_lit_int32(256)) &
+    ((kcg_lit_int32(0) <= outC->_L262) & (outC->_L262 < kcg_lit_int32(17)))) {
     outC->_L256 = outC->_L249[outC->_L261][outC->_L262];
   }
   else {
@@ -53,10 +53,10 @@ void ModeFilter_init_InformationFilter_Pkg_ThirdFilter(
   static kcg_size idx;
   static kcg_size idx1;
 
-  outC->_L268 = kcg_lit_int64(0);
+  outC->_L268 = kcg_lit_int32(0);
   outC->_L263 = kcg_true;
-  outC->_L262 = kcg_lit_int64(0);
-  outC->_L261 = kcg_lit_int64(0);
+  outC->_L262 = kcg_lit_int32(0);
+  outC->_L261 = kcg_lit_int32(0);
   outC->_L259 = M_MODE_Full_Supervision;
   outC->_L256 = MD_Invalid_DataDictionary_Pkg;
   for (idx1 = 0; idx1 < 256; idx1++) {

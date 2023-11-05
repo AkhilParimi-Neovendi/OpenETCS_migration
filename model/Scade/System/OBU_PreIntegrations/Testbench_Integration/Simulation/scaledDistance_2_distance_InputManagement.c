@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -12,7 +12,7 @@ void scaledDistance_2_distance_InputManagement(
   /* q_scale/ */
   Q_SCALE q_scale,
   /* d_in/ */
-  kcg_int64 d_in,
+  kcg_int32 d_in,
   outC_scaledDistance_2_distance_InputManagement *outC)
 {
   outC->_L9 = cQ_SCALE_10_m_resolution_TrainPosition_Types_Pck;
@@ -45,16 +45,16 @@ void scaledDistance_2_distance_InputManagement(
 void scaledDistance_2_distance_init_InputManagement(
   outC_scaledDistance_2_distance_InputManagement *outC)
 {
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
   outC->_L1 = Q_SCALE_10_cm_scale;
-  outC->distance = kcg_lit_int64(0);
+  outC->distance = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -70,6 +70,6 @@ void scaledDistance_2_distance_reset_InputManagement(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** scaledDistance_2_distance_InputManagement.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

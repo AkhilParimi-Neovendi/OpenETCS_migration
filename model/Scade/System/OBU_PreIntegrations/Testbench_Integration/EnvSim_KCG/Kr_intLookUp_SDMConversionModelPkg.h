@@ -15,7 +15,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* m_KrInt/ */ m_KrInt;
+  kcg_int32 /* m_KrInt/ */ m_KrInt;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -27,11 +27,11 @@ typedef struct {
   nvkrintArray_T_Packet_Types_Pkg /* _L1/ */ _L1;
   trainData_T_TIU_Types_Pkg /* _L5/ */ _L5;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L4/ */ _L4;
-  kcg_int64 /* _L6/ */ _L6;
-  kcg_int64 /* _L8/ */ _L8;
-  kcg_int64 /* _L9/ */ _L9;
+  kcg_int32 /* _L6/ */ _L6;
+  kcg_int32 /* _L8/ */ _L8;
+  kcg_int32 /* _L9/ */ _L9;
   kcg_bool /* _L10/ */ _L10;
-  array_int64_7 /* _L11/ */ _L11;
+  array_int32_7 /* _L11/ */ _L11;
 } outC_Kr_intLookUp_SDMConversionModelPkg;
 
 /* ===========  node initialization and cycle functions  =========== */

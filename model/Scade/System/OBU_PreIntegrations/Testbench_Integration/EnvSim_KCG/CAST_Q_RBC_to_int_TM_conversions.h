@@ -14,7 +14,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* q_rbc_int/ */ q_rbc_int;
+  kcg_int32 /* q_rbc_int/ */ q_rbc_int;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
@@ -24,10 +24,10 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   kcg_bool /* IfBlock1:then:_L5/ */ _L5_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
   kcg_bool /* IfBlock1:else:else:_L2/ */ _L2_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L1/ */ _L1_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L3/ */ _L3_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L1/ */ _L1_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L3/ */ _L3_then_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L5/ */ _L5_then_else_IfBlock1;
   kcg_bool /* error/ */ error;
   Q_RBC /* q_rbc_in/ */ q_rbc_in;

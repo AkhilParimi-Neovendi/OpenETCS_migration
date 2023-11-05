@@ -16,7 +16,7 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   DMI_TXT_MSGList_status_T_DMI_Types_Pkg /* outStatusList/ */ outStatusList;
-  kcg_int64 /* outIndex/ */ outIndex;
+  kcg_int32 /* outIndex/ */ outIndex;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -24,12 +24,12 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   kcg_bool /* _L4/ */ _L4;
   DMI_TXT_MSGList_status_T_DMI_Types_Pkg /* _L5/ */ _L5;
   DMI_TXT_MSGList_status_T_DMI_Types_Pkg /* _L6/ */ _L6;
   DMI_TextMessage_ID_T_DMI_Types_Pkg /* _L7/ */ _L7;
-  array_int64_31 /* _L9/ */ _L9;
+  array_int32_31 /* _L9/ */ _L9;
   DMI_TXT_MSG_status_T_DMI_Types_Pkg /* _L10/ */ _L10;
 } outC_clearStatus_manage_TextMessages_Pkg;
 

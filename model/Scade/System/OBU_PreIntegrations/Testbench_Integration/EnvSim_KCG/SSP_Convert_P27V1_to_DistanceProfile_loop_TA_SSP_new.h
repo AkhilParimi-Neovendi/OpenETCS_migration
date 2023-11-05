@@ -30,25 +30,25 @@ typedef struct {
   V_STATIC /* _L137/ */ _L137;
   StaticSpeedSection_t_TrackAtlasTypes /* _L136/ */ _L136;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L135/ */ _L135;
-  kcg_int64 /* _L134/ */ _L134;
+  kcg_int32 /* _L134/ */ _L134;
   StaticSpeedProfile_t_TrackAtlasTypes /* _L133/ */ _L133;
-  kcg_int64 /* _L131/ */ _L131;
+  kcg_int32 /* _L131/ */ _L131;
   kcg_bool /* _L130/ */ _L130;
   StaticSpeedProfile_t_TrackAtlasTypes /* _L125/ */ _L125;
   P027V1_section_enum_T_TM_baseline2 /* _L123/ */ _L123;
   P027V1_OBU_sectionlist_enum_T_TM_baseline2 /* _L121/ */ _L121;
   StaticSpeedProfile_t_TrackAtlasTypes /* _L142/ */ _L142;
   StaticSpeedSection_t_TrackAtlasTypes /* _L143/ */ _L143;
-  kcg_int64 /* _L144/ */ _L144;
-  kcg_int64 /* _L145/ */ _L145;
-  kcg_int64 /* _L146/ */ _L146;
+  kcg_int32 /* _L144/ */ _L144;
+  kcg_int32 /* _L145/ */ _L145;
+  kcg_int32 /* _L146/ */ _L146;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L147/ */ _L147;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L148/ */ _L148;
-  kcg_int64 /* _L154/ */ _L154;
-  kcg_int64 /* _L155/ */ _L155;
-  kcg_int64 /* _L156/ */ _L156;
-  kcg_int64 /* _L157/ */ _L157;
-  kcg_int64 /* _L158/ */ _L158;
+  kcg_int32 /* _L154/ */ _L154;
+  kcg_int32 /* _L155/ */ _L155;
+  kcg_int32 /* _L156/ */ _L156;
+  kcg_int32 /* _L157/ */ _L157;
+  kcg_int32 /* _L158/ */ _L158;
   Q_FRONT /* _L159/ */ _L159;
   kcg_bool /* _L160/ */ _L160;
 } outC_SSP_Convert_P27V1_to_DistanceProfile_loop_TA_SSP_new;
@@ -57,7 +57,7 @@ typedef struct {
 /* TA_SSP_new::SSP_Convert_P27V1_to_DistanceProfile_loop/ */
 extern void SSP_Convert_P27V1_to_DistanceProfile_loop_TA_SSP_new(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* ProfileAccu/ */
   StaticSpeedProfile_t_TrackAtlasTypes *ProfileAccu,
   /* SectionIn/ */

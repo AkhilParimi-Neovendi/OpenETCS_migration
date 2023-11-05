@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _LimitToReducedAdhesion_SDMModelPkg_H_
 #define _LimitToReducedAdhesion_SDMModelPkg_H_
@@ -34,7 +34,7 @@ typedef struct {
   kcg_bool /* _L9/ */ _L9;
   ASafe_T_CalcBrakingCurves_types /* _L10/ */ _L10;
   A_internal_Type_Obu_BasicTypes_Pkg /* _L24/ */ _L24;
-  array_int64_14 /* _L23/ */ _L23;
+  array_int32_14 /* _L23/ */ _L23;
   ASafe_Data_T_CalcBrakingCurves_types /* _L30/ */ _L30;
   ASafeSpeedDefinition_T_CalcBrakingCurves_types /* _L29/ */ _L29;
   ASafeDistanceDefinition_T_CalcBrakingCurves_types /* _L28/ */ _L28;
@@ -72,6 +72,6 @@ extern void LimitToReducedAdhesion_init_SDMModelPkg(
 #endif /* _LimitToReducedAdhesion_SDMModelPkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** LimitToReducedAdhesion_SDMModelPkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

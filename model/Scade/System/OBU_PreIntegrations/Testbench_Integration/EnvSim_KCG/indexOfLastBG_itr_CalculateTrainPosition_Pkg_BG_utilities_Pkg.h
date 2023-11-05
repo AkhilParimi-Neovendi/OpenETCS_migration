@@ -15,7 +15,7 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   kcg_bool /* cont/ */ cont;
-  kcg_int64 /* indexOfBG/ */ indexOfBG;
+  kcg_int32 /* indexOfBG/ */ indexOfBG;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
@@ -28,9 +28,9 @@ typedef struct {
   Q_LINK /* _L21/ */ _L21;
   kcg_bool /* _L22/ */ _L22;
   kcg_bool /* _L26/ */ _L26;
-  kcg_int64 /* _L27/ */ _L27;
-  kcg_int64 /* _L28/ */ _L28;
-  kcg_int64 /* _L29/ */ _L29;
+  kcg_int32 /* _L27/ */ _L27;
+  kcg_int32 /* _L28/ */ _L28;
+  kcg_int32 /* _L29/ */ _L29;
   kcg_bool /* _L30/ */ _L30;
   Q_LINK /* _L31/ */ _L31;
   Q_LINK /* _L32/ */ _L32;
@@ -40,9 +40,9 @@ typedef struct {
 /* CalculateTrainPosition_Pkg::BG_utilities_Pkg::indexOfLastBG_itr/ */
 extern void indexOfLastBG_itr_CalculateTrainPosition_Pkg_BG_utilities_Pkg(
   /* iteratorIndex/ */
-  kcg_int64 iteratorIndex,
+  kcg_int32 iteratorIndex,
   /* prevIndex/ */
-  kcg_int64 prevIndex,
+  kcg_int32 prevIndex,
   /* linked/ */
   kcg_bool linked,
   /* BG/ */

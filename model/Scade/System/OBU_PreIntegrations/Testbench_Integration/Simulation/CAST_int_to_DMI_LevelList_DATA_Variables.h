@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _CAST_int_to_DMI_LevelList_DATA_Variables_H_
 #define _CAST_int_to_DMI_LevelList_DATA_Variables_H_
@@ -25,10 +25,10 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   DMI_LevelList_T_DMI_Types_Pkg /* _L4/ */ _L4;
   DMI_LevelList_int_array_T_DATA /* _L10/ */ _L10;
-  kcg_int64 /* _L11/ */ _L11;
+  kcg_int32 /* _L11/ */ _L11;
   DMI_level_array_T_DMI_Types_Pkg /* _L12/ */ _L12;
-  array_int64_32 /* _L13/ */ _L13;
-  array_int64_32 /* _L14/ */ _L14;
+  array_int32_32 /* _L13/ */ _L13;
+  array_int32_32 /* _L14/ */ _L14;
 } outC_CAST_int_to_DMI_LevelList_DATA_Variables;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -53,6 +53,6 @@ extern void CAST_int_to_DMI_LevelList_init_DATA_Variables(
 #endif /* _CAST_int_to_DMI_LevelList_DATA_Variables_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_int_to_DMI_LevelList_DATA_Variables.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

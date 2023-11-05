@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _RadioTrackTrainMessageQueue__GetRemainingCapacity_Iterable_RBC_Collections_Pkg_H_
 #define _RadioTrackTrainMessageQueue__GetRemainingCapacity_Iterable_RBC_Collections_Pkg_H_
@@ -16,7 +16,7 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   kcg_bool /* outContinue/ */ outContinue;
-  kcg_int64 /* outAccumulator/ */ outAccumulator;
+  kcg_int32 /* outAccumulator/ */ outAccumulator;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -29,17 +29,17 @@ typedef struct {
   kcg_bool /* _L13/ */ _L13;
   kcg_bool /* _L24/ */ _L24;
   kcg_bool /* _L25/ */ _L25;
-  kcg_int64 /* _L27/ */ _L27;
-  kcg_int64 /* _L33/ */ _L33;
+  kcg_int32 /* _L27/ */ _L27;
+  kcg_int32 /* _L33/ */ _L33;
 } outC_RadioTrackTrainMessageQueue__GetRemainingCapacity_Iterable_RBC_Collections_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* RBC_Collections_Pkg::RadioTrackTrainMessageQueue__GetRemainingCapacity_Iterable/ */
 extern void RadioTrackTrainMessageQueue__GetRemainingCapacity_Iterable_RBC_Collections_Pkg(
   /* inIndex/ */
-  kcg_int64 inIndex,
+  kcg_int32 inIndex,
   /* inAccumulator/ */
-  kcg_int64 inAccumulator,
+  kcg_int32 inAccumulator,
   /* inRadioTrackTrainMessageQueueEntry/ */
   RadioTrackTrainMessageQueueEntry_T *inRadioTrackTrainMessageQueueEntry,
   outC_RadioTrackTrainMessageQueue__GetRemainingCapacity_Iterable_RBC_Collections_Pkg *outC);
@@ -57,6 +57,6 @@ extern void RadioTrackTrainMessageQueue__GetRemainingCapacity_Iterable_init_RBC_
 #endif /* _RadioTrackTrainMessageQueue__GetRemainingCapacity_Iterable_RBC_Collections_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** RadioTrackTrainMessageQueue__GetRemainingCapacity_Iterable_RBC_Collections_Pkg.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

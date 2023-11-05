@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _packet_11_trainData_pkg_H_
 #define _packet_11_trainData_pkg_H_
@@ -31,21 +31,21 @@ typedef struct {
   M_LOADINGGAUGE /* _L20/ */ _L20;
   M_AXLELOADCAT /* _L21/ */ _L21;
   M_AIRTIGHT /* _L22/ */ _L22;
-  kcg_int64 /* _L23/ */ _L23;
+  kcg_int32 /* _L23/ */ _L23;
   aTractionIdentity_T_Packet_TrainTypes_Pkg /* _L25/ */ _L25;
-  kcg_int64 /* _L26/ */ _L26;
+  kcg_int32 /* _L26/ */ _L26;
   aNID_NTC_T_Packet_TrainTypes_Pkg /* _L27/ */ _L27;
   NC_CDTRAIN /* _L40/ */ _L40;
   NC_TRAIN /* _L41/ */ _L41;
-  kcg_int64 /* _L42/ */ _L42;
-  kcg_int64 /* _L43/ */ _L43;
-  kcg_int64 /* _L44/ */ _L44;
-  kcg_int64 /* _L50/ */ _L50;
-  kcg_int64 /* _L49/ */ _L49;
-  kcg_int64 /* _L57/ */ _L57;
-  kcg_int64 /* _L58/ */ _L58;
-  kcg_int64 /* _L59/ */ _L59;
-  kcg_int64 /* _L60/ */ _L60;
+  kcg_int32 /* _L42/ */ _L42;
+  kcg_int32 /* _L43/ */ _L43;
+  kcg_int32 /* _L44/ */ _L44;
+  kcg_int32 /* _L50/ */ _L50;
+  kcg_int32 /* _L49/ */ _L49;
+  kcg_int32 /* _L57/ */ _L57;
+  kcg_int32 /* _L58/ */ _L58;
+  kcg_int32 /* _L59/ */ _L59;
+  kcg_int32 /* _L60/ */ _L60;
   V_TRAIN /* _L61/ */ _L61;
 } outC_packet_11_trainData_pkg;
 
@@ -69,6 +69,6 @@ extern void packet_11_init_trainData_pkg(outC_packet_11_trainData_pkg *outC);
 #endif /* _packet_11_trainData_pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** packet_11_trainData_pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

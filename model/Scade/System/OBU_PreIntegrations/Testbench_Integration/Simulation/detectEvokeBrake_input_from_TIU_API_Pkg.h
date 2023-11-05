@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _detectEvokeBrake_input_from_TIU_API_Pkg_H_
 #define _detectEvokeBrake_input_from_TIU_API_Pkg_H_
@@ -37,11 +37,11 @@ typedef struct {
   kcg_bool /* _L4/ */ _L4;
   M_MODE /* _L5/ */ _L5;
   Brake_pressure_value_T_TIU_Types_Pkg /* _L7/ */ _L7;
-  kcg_int64 /* _L8/ */ _L8;
+  kcg_int32 /* _L8/ */ _L8;
   kcg_bool /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   kcg_bool /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L12/ */ _L12;
 } outC_detectEvokeBrake_input_from_TIU_API_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -89,6 +89,6 @@ extern void kcg_load_SV_detectEvokeBrake_input_from_TIU_API_Pkg(
 #endif /* _detectEvokeBrake_input_from_TIU_API_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** detectEvokeBrake_input_from_TIU_API_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

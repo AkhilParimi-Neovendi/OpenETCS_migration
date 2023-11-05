@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _Build_Packet1_ProvidePositionReport_Pkg_H_
 #define _Build_Packet1_ProvidePositionReport_Pkg_H_
@@ -45,25 +45,25 @@ typedef struct {
   trainPosition_T_TrainPosition_Types_Pck /* _L35/ */ _L35;
   Position_Report_based_on_two_balise_groups_TrainToTrack /* _L34/ */ _L34;
   Q_DIRTRAIN /* _L33/ */ _L33;
-  kcg_int64 /* _L14/ */ _L14;
-  kcg_int64 /* _L15/ */ _L15;
+  kcg_int32 /* _L14/ */ _L14;
+  kcg_int32 /* _L15/ */ _L15;
   Q_SCALE /* _L16/ */ _L16;
-  kcg_int64 /* _L17/ */ _L17;
-  kcg_int64 /* _L18/ */ _L18;
+  kcg_int32 /* _L17/ */ _L17;
+  kcg_int32 /* _L18/ */ _L18;
   Q_DIRLRBG /* _L19/ */ _L19;
   Q_DLRBG /* _L20/ */ _L20;
-  kcg_int64 /* _L21/ */ _L21;
-  kcg_int64 /* _L22/ */ _L22;
+  kcg_int32 /* _L21/ */ _L21;
+  kcg_int32 /* _L22/ */ _L22;
   Q_LENGTH /* _L23/ */ _L23;
-  kcg_int64 /* _L24/ */ _L24;
-  kcg_int64 /* _L25/ */ _L25;
+  kcg_int32 /* _L24/ */ _L24;
+  kcg_int32 /* _L25/ */ _L25;
   Q_DIRTRAIN /* _L26/ */ _L26;
   M_MODE /* _L27/ */ _L27;
   M_LEVEL /* _L28/ */ _L28;
-  kcg_int64 /* _L29/ */ _L29;
+  kcg_int32 /* _L29/ */ _L29;
   Q_DIRTRAIN /* _L12/ */ _L12;
   Q_DLRBG /* _L7/ */ _L7;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   kcg_bool /* _L4/ */ _L4;
   kcg_bool /* _L5/ */ _L5;
   kcg_bool /* _L6/ */ _L6;
@@ -100,6 +100,6 @@ extern void Build_Packet1_init_ProvidePositionReport_Pkg(
 #endif /* _Build_Packet1_ProvidePositionReport_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Build_Packet1_ProvidePositionReport_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

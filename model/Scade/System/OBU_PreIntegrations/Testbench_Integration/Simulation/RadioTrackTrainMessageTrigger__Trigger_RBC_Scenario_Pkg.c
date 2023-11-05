@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -12,25 +12,25 @@ void RadioTrackTrainMessageTrigger__Trigger_RBC_Scenario_Pkg(
   /* inLRBG/ */
   NID_LRBG inLRBG,
   /* inDistanceToLRBG/ */
-  kcg_float64 inDistanceToLRBG,
+  kcg_float32 inDistanceToLRBG,
   /* inTriggerId/ */
-  kcg_int64 inTriggerId,
+  kcg_int32 inTriggerId,
   /* inRBCTime/ */
   T_TRAIN inRBCTime,
   /* inLRBGTrigger/ */
   NID_LRBG inLRBGTrigger,
   /* inMinDistanceToLRBGTrigger/ */
-  kcg_float64 inMinDistanceToLRBGTrigger,
+  kcg_float32 inMinDistanceToLRBGTrigger,
   /* inMaxDistanceToLRBGTrigger/ */
-  kcg_float64 inMaxDistanceToLRBGTrigger,
+  kcg_float32 inMaxDistanceToLRBGTrigger,
   /* inTriggerIdHidden/ */
-  kcg_int64 inTriggerIdHidden,
+  kcg_int32 inTriggerIdHidden,
   /* inActivatorTimeout/ */
-  kcg_float64 inActivatorTimeout,
+  kcg_float32 inActivatorTimeout,
   outC_RadioTrackTrainMessageTrigger__Trigger_RBC_Scenario_Pkg *outC)
 {
   /* outTriggerId/ */
-  static kcg_int64 outTriggerId_partial;
+  static kcg_int32 outTriggerId_partial;
   /* valid/ */
   static kcg_bool valid_partial;
   /* setReferenceTime/ */
@@ -48,13 +48,13 @@ void RadioTrackTrainMessageTrigger__Trigger_RBC_Scenario_Pkg(
   /* valid/ */
   static kcg_bool _5_valid_partial;
   /* outTriggerId/ */
-  static kcg_int64 _6_outTriggerId_partial;
+  static kcg_int32 _6_outTriggerId_partial;
   /* valid/ */
   static kcg_bool _7_valid_partial;
   /* outTriggerId/ */
-  static kcg_int64 _8_outTriggerId_partial;
+  static kcg_int32 _8_outTriggerId_partial;
   /* outTriggerId/ */
-  static kcg_int64 _9_outTriggerId_partial;
+  static kcg_int32 _9_outTriggerId_partial;
   /* valid/ */
   static kcg_bool _10_valid_partial;
   /* setReferenceTime/ */
@@ -72,11 +72,11 @@ void RadioTrackTrainMessageTrigger__Trigger_RBC_Scenario_Pkg(
   last_setReferenceTime = outC->setReferenceTime;
   last_valid = outC->valid;
   outC->_L5 = inActivatorTimeout;
-  outC->_L6 = /* _L6= */(kcg_int64) outC->_L5;
+  outC->_L6 = /* _L6= */(kcg_int32) outC->_L5;
   outC->activatorTimeout = outC->_L6;
   outC->IfBlock1_clock = (inLRBG == inLRBGTrigger) &
-    (inMinDistanceToLRBGTrigger >= kcg_lit_float64(0.0)) &
-    (inMaxDistanceToLRBGTrigger >= kcg_lit_float64(0.0)) &
+    (inMinDistanceToLRBGTrigger >= kcg_lit_float32(0.0)) &
+    (inMaxDistanceToLRBGTrigger >= kcg_lit_float32(0.0)) &
     (inMaxDistanceToLRBGTrigger > inMinDistanceToLRBGTrigger) &
     (inDistanceToLRBG >= inMinDistanceToLRBGTrigger) & (inDistanceToLRBG <
       inMaxDistanceToLRBGTrigger) & last_valid;
@@ -94,7 +94,7 @@ void RadioTrackTrainMessageTrigger__Trigger_RBC_Scenario_Pkg(
       referenceTime_partial = _1_referenceTime_partial;
     }
     outC->IfBlock3_clock_then_IfBlock1 = (outC->activatorTimeout <=
-        kcg_lit_int64(0)) | ((outC->activatorTimeout > kcg_lit_int64(0)) &
+        kcg_lit_int32(0)) | ((outC->activatorTimeout > kcg_lit_int32(0)) &
         (inRBCTime - referenceTime_partial >= outC->activatorTimeout));
     /* IfBlock1:then:IfBlock3: */
     if (outC->IfBlock3_clock_then_IfBlock1) {
@@ -144,22 +144,22 @@ void RadioTrackTrainMessageTrigger__Trigger_RBC_Scenario_Pkg(
 void RadioTrackTrainMessageTrigger__Trigger_init_RBC_Scenario_Pkg(
   outC_RadioTrackTrainMessageTrigger__Trigger_RBC_Scenario_Pkg *outC)
 {
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_float64(0.0);
-  outC->activatorTimeout = kcg_lit_int64(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_float32(0.0);
+  outC->activatorTimeout = kcg_lit_int32(0);
   outC->IfBlock1_clock = kcg_true;
-  outC->_L2_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L10_then_IfBlock3_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L10_then_IfBlock3_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L17_then_IfBlock3_then_IfBlock1 = kcg_true;
-  outC->_L2_else_IfBlock3_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_else_IfBlock3_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L1_then_IfBlock2_then_IfBlock1 = kcg_true;
-  outC->_L3_then_IfBlock2_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L3_then_IfBlock2_then_IfBlock1 = kcg_lit_int32(0);
   outC->IfBlock3_clock_then_IfBlock1 = kcg_true;
   outC->IfBlock2_clock_then_IfBlock1 = kcg_true;
-  outC->outTriggerId = kcg_lit_int64(0);
+  outC->outTriggerId = kcg_lit_int32(0);
   outC->valid = kcg_true;
   outC->setReferenceTime = kcg_true;
-  outC->referenceTime = kcg_lit_int64(0);
+  outC->referenceTime = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -170,7 +170,7 @@ void RadioTrackTrainMessageTrigger__Trigger_reset_RBC_Scenario_Pkg(
 {
   outC->valid = kcg_true;
   outC->setReferenceTime = kcg_true;
-  outC->referenceTime = kcg_lit_int64(0);
+  outC->referenceTime = kcg_lit_int32(0);
 }
 #endif /* KCG_NO_EXTERN_CALL_TO_RESET */
 
@@ -197,6 +197,6 @@ void kcg_load_SV_RadioTrackTrainMessageTrigger__Trigger_RBC_Scenario_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** RadioTrackTrainMessageTrigger__Trigger_RBC_Scenario_Pkg.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

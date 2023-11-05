@@ -41,18 +41,18 @@ void NID_EM_Store_Find_init_TA_EmergencyStop_NID_EM_Store(
   outC_NID_EM_Store_Find_TA_EmergencyStop_NID_EM_Store *outC)
 {
   outC->_L5.handled = kcg_true;
-  outC->_L5.nid_em = kcg_lit_int64(0);
-  outC->_L5.nfree = kcg_lit_int64(0);
+  outC->_L5.nid_em = kcg_lit_int32(0);
+  outC->_L5.nfree = kcg_lit_int32(0);
   outC->_L4 = kcg_true;
   outC->_L3.handled = kcg_true;
-  outC->_L3.nid_em = kcg_lit_int64(0);
-  outC->_L3.nfree = kcg_lit_int64(0);
+  outC->_L3.nid_em = kcg_lit_int32(0);
+  outC->_L3.nfree = kcg_lit_int32(0);
   outC->_L1.handled = kcg_true;
-  outC->_L1.nid_em = kcg_lit_int64(0);
-  outC->_L1.nfree = kcg_lit_int64(0);
+  outC->_L1.nid_em = kcg_lit_int32(0);
+  outC->_L1.nfree = kcg_lit_int32(0);
   outC->outAcc.handled = kcg_true;
-  outC->outAcc.nid_em = kcg_lit_int64(0);
-  outC->outAcc.nfree = kcg_lit_int64(0);
+  outC->outAcc.nid_em = kcg_lit_int32(0);
+  outC->outAcc.nfree = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

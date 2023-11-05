@@ -104,67 +104,67 @@ void probe_MsgOut_init_RadioSupport_Pkg(
   static kcg_size idx1;
 
   outC->_L48.valid = kcg_true;
-  outC->_L48.nid_message = kcg_lit_int64(0);
-  outC->_L48.l_message = kcg_lit_int64(0);
-  outC->_L48.t_train = kcg_lit_int64(0);
-  outC->_L48.nid_engine = kcg_lit_int64(0);
-  outC->_L48.field1 = kcg_lit_int64(0);
-  outC->_L48.field2 = kcg_lit_int64(0);
-  outC->_L48.field3 = kcg_lit_int64(0);
+  outC->_L48.nid_message = kcg_lit_int32(0);
+  outC->_L48.l_message = kcg_lit_int32(0);
+  outC->_L48.t_train = kcg_lit_int32(0);
+  outC->_L48.nid_engine = kcg_lit_int32(0);
+  outC->_L48.field1 = kcg_lit_int32(0);
+  outC->_L48.field2 = kcg_lit_int32(0);
+  outC->_L48.field3 = kcg_lit_int32(0);
   outC->_L49.Message.valid = kcg_true;
-  outC->_L49.Message.nid_message = kcg_lit_int64(0);
-  outC->_L49.Message.l_message = kcg_lit_int64(0);
-  outC->_L49.Message.t_train = kcg_lit_int64(0);
-  outC->_L49.Message.nid_engine = kcg_lit_int64(0);
-  outC->_L49.Message.field1 = kcg_lit_int64(0);
-  outC->_L49.Message.field2 = kcg_lit_int64(0);
-  outC->_L49.Message.field3 = kcg_lit_int64(0);
+  outC->_L49.Message.nid_message = kcg_lit_int32(0);
+  outC->_L49.Message.l_message = kcg_lit_int32(0);
+  outC->_L49.Message.t_train = kcg_lit_int32(0);
+  outC->_L49.Message.nid_engine = kcg_lit_int32(0);
+  outC->_L49.Message.field1 = kcg_lit_int32(0);
+  outC->_L49.Message.field2 = kcg_lit_int32(0);
+  outC->_L49.Message.field3 = kcg_lit_int32(0);
   for (idx = 0; idx < 50; idx++) {
-    outC->_L49.OptionalPackets[idx] = kcg_lit_int64(0);
+    outC->_L49.OptionalPackets[idx] = kcg_lit_int32(0);
   }
   outC->_L50 = kcg_true;
-  outC->_L47 = kcg_lit_int64(0);
-  outC->_L46 = kcg_lit_int64(0);
+  outC->_L47 = kcg_lit_int32(0);
+  outC->_L46 = kcg_lit_int32(0);
   outC->isRelevant = kcg_true;
   outC->isValid = kcg_true;
   outC->IfBlock1_clock = kcg_true;
-  outC->_L1_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L2_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L2_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L3_then_IfBlock1.valid = kcg_true;
-  outC->_L3_then_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock1.l_message = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock1.t_train = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock1.nid_engine = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock1.field1 = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock1.field2 = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock1.field3 = kcg_lit_int64(0);
+  outC->_L3_then_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock1.l_message = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock1.t_train = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock1.nid_engine = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock1.field1 = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock1.field2 = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock1.field3 = kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.Message.valid = kcg_true;
-  outC->_L2_then_IfBlock1.Message.nid_message = kcg_lit_int64(0);
-  outC->_L2_then_IfBlock1.Message.l_message = kcg_lit_int64(0);
-  outC->_L2_then_IfBlock1.Message.t_train = kcg_lit_int64(0);
-  outC->_L2_then_IfBlock1.Message.nid_engine = kcg_lit_int64(0);
-  outC->_L2_then_IfBlock1.Message.field1 = kcg_lit_int64(0);
-  outC->_L2_then_IfBlock1.Message.field2 = kcg_lit_int64(0);
-  outC->_L2_then_IfBlock1.Message.field3 = kcg_lit_int64(0);
+  outC->_L2_then_IfBlock1.Message.nid_message = kcg_lit_int32(0);
+  outC->_L2_then_IfBlock1.Message.l_message = kcg_lit_int32(0);
+  outC->_L2_then_IfBlock1.Message.t_train = kcg_lit_int32(0);
+  outC->_L2_then_IfBlock1.Message.nid_engine = kcg_lit_int32(0);
+  outC->_L2_then_IfBlock1.Message.field1 = kcg_lit_int32(0);
+  outC->_L2_then_IfBlock1.Message.field2 = kcg_lit_int32(0);
+  outC->_L2_then_IfBlock1.Message.field3 = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 50; idx1++) {
-    outC->_L2_then_IfBlock1.OptionalPackets[idx1] = kcg_lit_int64(0);
+    outC->_L2_then_IfBlock1.OptionalPackets[idx1] = kcg_lit_int32(0);
   }
-  outC->_L1_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L4_then_IfBlock1 = kcg_true;
-  outC->_L5_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L5_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L6_then_IfBlock1 = kcg_true;
   outC->_L7_then_IfBlock1 = kcg_true;
-  outC->_L9_then_IfBlock1 = kcg_lit_int64(0);
-  outC->_L8_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L9_then_IfBlock1 = kcg_lit_int32(0);
+  outC->_L8_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L10_then_IfBlock1 = kcg_true;
-  outC->_L13_then_IfBlock1 = kcg_lit_int64(0);
-  outC->_L12_then_IfBlock1 = kcg_lit_int64(0);
-  outC->_L11_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L13_then_IfBlock1 = kcg_lit_int32(0);
+  outC->_L12_then_IfBlock1 = kcg_lit_int32(0);
+  outC->_L11_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L14_then_IfBlock1 = kcg_true;
-  outC->outTTrain = kcg_lit_int64(0);
-  outC->Msg_0ut = kcg_lit_int64(0);
-  outC->lastMSG = kcg_lit_int64(0);
-  outC->lastTTrain = kcg_lit_int64(0);
+  outC->outTTrain = kcg_lit_int32(0);
+  outC->Msg_0ut = kcg_lit_int32(0);
+  outC->lastMSG = kcg_lit_int32(0);
+  outC->lastTTrain = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -173,8 +173,8 @@ void probe_MsgOut_init_RadioSupport_Pkg(
 void probe_MsgOut_reset_RadioSupport_Pkg(
   outC_probe_MsgOut_RadioSupport_Pkg *outC)
 {
-  outC->lastMSG = kcg_lit_int64(0);
-  outC->lastTTrain = kcg_lit_int64(0);
+  outC->lastMSG = kcg_lit_int32(0);
+  outC->lastTTrain = kcg_lit_int32(0);
 }
 #endif /* KCG_NO_EXTERN_CALL_TO_RESET */
 

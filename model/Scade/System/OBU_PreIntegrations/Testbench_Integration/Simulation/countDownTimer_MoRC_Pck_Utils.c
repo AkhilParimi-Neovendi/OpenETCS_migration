@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -148,8 +148,8 @@ void countDownTimer_MoRC_Pck_Utils(
   switch (outC->TimerStatus_SM_state_act) {
     case SSM_st_Counting_TimerStatus_SM :
       outC->_L1_Counting_TimerStatus_SM = actualTime;
-      outC->Init_MemoryBasic_1_int64 = outC->_L1_Counting_TimerStatus_SM;
-      outC->_L7_MemoryBasic_1_int64 = outC->Init_MemoryBasic_1_int64;
+      outC->Init_MemoryBasic_1_int32 = outC->_L1_Counting_TimerStatus_SM;
+      outC->_L7_MemoryBasic_1_int32 = outC->Init_MemoryBasic_1_int32;
       break;
     default :
       /* this branch is empty */
@@ -197,24 +197,24 @@ void countDownTimer_MoRC_Pck_Utils(
       }
       /* @1/_L6= */
       if (outC->init) {
-        outC->_L6_MemoryBasic_1_int64 = outC->_L7_MemoryBasic_1_int64;
+        outC->_L6_MemoryBasic_1_int32 = outC->_L7_MemoryBasic_1_int32;
       }
       else {
-        outC->_L6_MemoryBasic_1_int64 = outC->_L4_MemoryBasic_1_int64;
+        outC->_L6_MemoryBasic_1_int32 = outC->_L4_MemoryBasic_1_int32;
       }
       outC->_L8_Counting_TimerStatus_SM = kcg_false;
-      outC->Write_MemoryBasic_1_int64 = outC->_L8_Counting_TimerStatus_SM;
-      outC->_L5_MemoryBasic_1_int64 = outC->Write_MemoryBasic_1_int64;
-      outC->BM_Input_MemoryBasic_1_int64 = outC->_L1_Counting_TimerStatus_SM;
-      outC->_L2_MemoryBasic_1_int64 = outC->BM_Input_MemoryBasic_1_int64;
+      outC->Write_MemoryBasic_1_int32 = outC->_L8_Counting_TimerStatus_SM;
+      outC->_L5_MemoryBasic_1_int32 = outC->Write_MemoryBasic_1_int32;
+      outC->BM_Input_MemoryBasic_1_int32 = outC->_L1_Counting_TimerStatus_SM;
+      outC->_L2_MemoryBasic_1_int32 = outC->BM_Input_MemoryBasic_1_int32;
       /* @1/_L4= */
-      if (outC->_L5_MemoryBasic_1_int64) {
-        outC->_L4_MemoryBasic_1_int64 = outC->_L2_MemoryBasic_1_int64;
+      if (outC->_L5_MemoryBasic_1_int32) {
+        outC->_L4_MemoryBasic_1_int32 = outC->_L2_MemoryBasic_1_int32;
       }
       else {
-        outC->_L4_MemoryBasic_1_int64 = outC->_L6_MemoryBasic_1_int64;
+        outC->_L4_MemoryBasic_1_int32 = outC->_L6_MemoryBasic_1_int32;
       }
-      outC->Memorized_MemoryBasic_1_int64 = outC->_L4_MemoryBasic_1_int64;
+      outC->Memorized_MemoryBasic_1_int32 = outC->_L4_MemoryBasic_1_int32;
       break;
     default :
       /* this branch is empty */
@@ -274,7 +274,7 @@ void countDownTimer_MoRC_Pck_Utils(
         tr_2_guard_Counting_TimerStatus_SM = re_start;
         outC->tr_2_clock_Counting_TimerStatus_SM = tr_2_guard_Counting_TimerStatus_SM;
       }
-      outC->_L4_Counting_TimerStatus_SM = outC->Memorized_MemoryBasic_1_int64;
+      outC->_L4_Counting_TimerStatus_SM = outC->Memorized_MemoryBasic_1_int32;
       outC->_L5_Counting_TimerStatus_SM = interval;
       outC->_L6_Counting_TimerStatus_SM = outC->_L1_Counting_TimerStatus_SM -
         outC->_L5_Counting_TimerStatus_SM;
@@ -486,22 +486,22 @@ void countDownTimer_init_MoRC_Pck_Utils(
   outC->tr_2_clock_Counting_TimerStatus_SM = kcg_true;
   outC->tr_3_clock_Counting_TimerStatus_SM = kcg_true;
   outC->Counting_weakb_clock_TimerStatus_SM = kcg_true;
-  outC->_L1_Counting_TimerStatus_SM = kcg_lit_int64(0);
-  outC->_L4_Counting_TimerStatus_SM = kcg_lit_int64(0);
-  outC->_L5_Counting_TimerStatus_SM = kcg_lit_int64(0);
-  outC->_L6_Counting_TimerStatus_SM = kcg_lit_int64(0);
+  outC->_L1_Counting_TimerStatus_SM = kcg_lit_int32(0);
+  outC->_L4_Counting_TimerStatus_SM = kcg_lit_int32(0);
+  outC->_L5_Counting_TimerStatus_SM = kcg_lit_int32(0);
+  outC->_L6_Counting_TimerStatus_SM = kcg_lit_int32(0);
   outC->_L7_Counting_TimerStatus_SM = kcg_true;
   outC->_L8_Counting_TimerStatus_SM = kcg_true;
   outC->_L1_Stopped_TimerStatus_SM = kcg_true;
-  outC->_L2_MemoryBasic_1_int64 = kcg_lit_int64(0);
-  outC->_L5_MemoryBasic_1_int64 = kcg_true;
-  outC->_L6_MemoryBasic_1_int64 = kcg_lit_int64(0);
-  outC->_L7_MemoryBasic_1_int64 = kcg_lit_int64(0);
-  outC->BM_Input_MemoryBasic_1_int64 = kcg_lit_int64(0);
-  outC->Init_MemoryBasic_1_int64 = kcg_lit_int64(0);
-  outC->Write_MemoryBasic_1_int64 = kcg_true;
-  outC->Memorized_MemoryBasic_1_int64 = kcg_lit_int64(0);
-  outC->_L4_MemoryBasic_1_int64 = kcg_lit_int64(0);
+  outC->_L2_MemoryBasic_1_int32 = kcg_lit_int32(0);
+  outC->_L5_MemoryBasic_1_int32 = kcg_true;
+  outC->_L6_MemoryBasic_1_int32 = kcg_lit_int32(0);
+  outC->_L7_MemoryBasic_1_int32 = kcg_lit_int32(0);
+  outC->BM_Input_MemoryBasic_1_int32 = kcg_lit_int32(0);
+  outC->Init_MemoryBasic_1_int32 = kcg_lit_int32(0);
+  outC->Write_MemoryBasic_1_int32 = kcg_true;
+  outC->Memorized_MemoryBasic_1_int32 = kcg_lit_int32(0);
+  outC->_L4_MemoryBasic_1_int32 = kcg_lit_int32(0);
   outC->init = kcg_true;
   outC->started = kcg_true;
   outC->expired = kcg_true;
@@ -529,7 +529,7 @@ void kcg_save_SV_countDownTimer_MoRC_Pck_Utils(
   SV->Context_TimerStatus_SM_reset_nxt = outC->TimerStatus_SM_reset_nxt;
   SV->Context_TimerStatus_SM_reset_act = outC->TimerStatus_SM_reset_act;
   SV->Context_TimerStatus_SM_state_nxt = outC->TimerStatus_SM_state_nxt;
-  SV->Context__L4_MemoryBasic_1 = outC->_L4_MemoryBasic_1_int64;
+  SV->Context__L4_MemoryBasic_1 = outC->_L4_MemoryBasic_1_int32;
   SV->Context_init = outC->init;
 }
 
@@ -540,7 +540,7 @@ void kcg_load_SV_countDownTimer_MoRC_Pck_Utils(
   outC->TimerStatus_SM_reset_nxt = SV->Context_TimerStatus_SM_reset_nxt;
   outC->TimerStatus_SM_reset_act = SV->Context_TimerStatus_SM_reset_act;
   outC->TimerStatus_SM_state_nxt = SV->Context_TimerStatus_SM_state_nxt;
-  outC->_L4_MemoryBasic_1_int64 = SV->Context__L4_MemoryBasic_1;
+  outC->_L4_MemoryBasic_1_int32 = SV->Context__L4_MemoryBasic_1;
   outC->init = SV->Context_init;
 }
 
@@ -551,6 +551,6 @@ void kcg_load_SV_countDownTimer_MoRC_Pck_Utils(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** countDownTimer_MoRC_Pck_Utils.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

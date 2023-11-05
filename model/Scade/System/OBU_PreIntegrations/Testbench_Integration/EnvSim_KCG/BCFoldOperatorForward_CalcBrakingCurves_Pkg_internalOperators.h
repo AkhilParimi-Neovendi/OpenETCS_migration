@@ -29,19 +29,19 @@ typedef struct {
   ParabolaArc_T_CalcBrakingCurves_types /* _L4/ */ _L4;
   L_internal_real_Type_SDM_Types_Pkg /* _L3/ */ _L3;
   V_internal_real_Type_SDM_Types_Pkg /* _L2/ */ _L2;
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   ASafe_T_CalcBrakingCurves_types /* _L6/ */ _L6;
-  kcg_int64 /* _L18/ */ _L18;
+  kcg_int32 /* _L18/ */ _L18;
   kcg_bool /* _L32/ */ _L32;
   V_internal_real_Type_SDM_Types_Pkg /* _L33/ */ _L33;
   BCAccumulator_type_CalcBrakingCurves_Pkg /* _L36/ */ _L36;
   L_internal_real_Type_SDM_Types_Pkg /* _L41/ */ _L41;
   V_internal_real_Type_SDM_Types_Pkg /* _L40/ */ _L40;
-  kcg_int64 /* _L39/ */ _L39;
-  kcg_int64 /* _L38/ */ _L38;
+  kcg_int32 /* _L39/ */ _L39;
+  kcg_int32 /* _L38/ */ _L38;
   ParabolaCurve_T_CalcBrakingCurves_types /* _L37/ */ _L37;
   BCAccumulator_type_CalcBrakingCurves_Pkg /* _L42/ */ _L42;
-  kcg_int64 /* _L58/ */ _L58;
+  kcg_int32 /* _L58/ */ _L58;
   kcg_bool /* _L59/ */ _L59;
   ParabolaCurve_T_CalcBrakingCurves_types /* _L61/ */ _L61;
 } outC_BCFoldOperatorForward_CalcBrakingCurves_Pkg_internalOperators;
@@ -50,7 +50,7 @@ typedef struct {
 /* CalcBrakingCurves_Pkg::internalOperators::BCFoldOperatorForward/ */
 extern void BCFoldOperatorForward_CalcBrakingCurves_Pkg_internalOperators(
   /* Index/ */
-  kcg_int64 Index,
+  kcg_int32 Index,
   /* BC_acc/ */
   BCAccumulator_type_CalcBrakingCurves_Pkg *BC_acc,
   /* Asafe/ */

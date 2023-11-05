@@ -47,7 +47,7 @@ typedef struct {
   L_MAMODE /* _L11/ */ _L11;
   L_ACKMAMODE /* _L12/ */ _L12;
   Q_MAMODE /* _L13/ */ _L13;
-  kcg_int64 /* _L17/ */ _L17;
+  kcg_int32 /* _L17/ */ _L17;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L18/ */ _L18;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L20/ */ _L20;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L21/ */ _L21;

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _Build_Header_ProvidePositionReport_Pkg_H_
 #define _Build_Header_ProvidePositionReport_Pkg_H_
@@ -25,7 +25,7 @@ typedef struct {
   Q_MARQSTREASON /* _L7/ */ _L7;
   trainProperties_T_TrainPosition_Types_Pck /* _L5/ */ _L5;
   T_TRAIN /* _L4/ */ _L4;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   NID_ENGINE /* _L2/ */ _L2;
   kcg_bool /* _L1/ */ _L1;
   NID_EM /* _L9/ */ _L9;
@@ -58,6 +58,6 @@ extern void Build_Header_init_ProvidePositionReport_Pkg(
 #endif /* _Build_Header_ProvidePositionReport_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Build_Header_ProvidePositionReport_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

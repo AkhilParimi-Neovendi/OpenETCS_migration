@@ -820,7 +820,7 @@
 						</ed:Operator>
 					</pragmas>
 				</Operator>
-				<Operator kind="function" name="BoolVect2Uint64">
+				<Operator kind="function" name="BoolVect2Uint32">
 					<sizeParameters>
 						<SizeParameter name="Nbool">
 							<pragmas>
@@ -861,7 +861,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="uint64"/>
+										<TypeRef name="uint32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -875,7 +875,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="uint64"/>
+										<TypeRef name="uint32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -887,7 +887,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="uint64"/>
+										<TypeRef name="uint32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -964,16 +964,16 @@
 								<ed:Equation oid="!ed/568/1017/1980/53c8d86d4f7c"/>
 							</pragmas>
 						</Equation>
-						<!-- _L3 = (0 : uint64); -->
+						<!-- _L3 = (0 : uint32); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L3"/>
 							</lefts>
 							<right>
-								<!-- (0 : uint64) -->
+								<!-- (0 : uint32) -->
 								<NumericCastOp name="3">
 									<type>
-										<TypeRef name="uint64"/>
+										<TypeRef name="uint32"/>
 									</type>
 									<flow>
 										<ConstValue value="0"/>
@@ -1662,7 +1662,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1676,7 +1676,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1688,7 +1688,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1765,16 +1765,16 @@
 								<ed:Equation oid="!ed/5be/1017/1980/53c8d893592e"/>
 							</pragmas>
 						</Equation>
-						<!-- _L3 = (0 : int64); -->
+						<!-- _L3 = (0 : int32); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L3"/>
 							</lefts>
 							<right>
-								<!-- (0 : int64) -->
+								<!-- (0 : int32) -->
 								<NumericCastOp name="2">
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 									<flow>
 										<ConstValue value="0"/>

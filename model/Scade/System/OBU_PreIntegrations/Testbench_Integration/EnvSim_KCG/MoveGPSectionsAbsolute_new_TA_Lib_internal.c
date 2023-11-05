@@ -31,7 +31,7 @@ void MoveGPSectionsAbsolute_new_TA_Lib_internal(
     kcg_copy_GradientProfile_t_TrackAtlasTypes(&acc, &outC->_L4);
     /* _L4=(TA_Lib_internal::MoveGPSectionsAbsolute_Loop_new#1)/ */
     MoveGPSectionsAbsolute_Loop_new_TA_Lib_internal(
-      /* _L4= */(kcg_int64) idx1,
+      /* _L4= */(kcg_int32) idx1,
       &acc,
       outC->_L40[idx1],
       &outC->Context_MoveGPSectionsAbsolute_Loop_new_1[idx1]);
@@ -53,29 +53,29 @@ void MoveGPSectionsAbsolute_new_init_TA_Lib_internal(
   static kcg_size idx4;
 
   for (idx1 = 0; idx1 < 50; idx1++) {
-    outC->_L40[idx1] = kcg_lit_int64(0);
+    outC->_L40[idx1] = kcg_lit_int32(0);
   }
-  outC->_L37 = kcg_lit_int64(0);
+  outC->_L37 = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 50; idx2++) {
     outC->_L4[idx2].valid = kcg_true;
-    outC->_L4[idx2].Loc_Absolute = kcg_lit_int64(0);
-    outC->_L4[idx2].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L4[idx2].Gradient = kcg_lit_int64(0);
-    outC->_L4[idx2].L_Gradient = kcg_lit_int64(0);
+    outC->_L4[idx2].Loc_Absolute = kcg_lit_int32(0);
+    outC->_L4[idx2].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L4[idx2].Gradient = kcg_lit_int32(0);
+    outC->_L4[idx2].L_Gradient = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 50; idx3++) {
     outC->_L2[idx3].valid = kcg_true;
-    outC->_L2[idx3].Loc_Absolute = kcg_lit_int64(0);
-    outC->_L2[idx3].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L2[idx3].Gradient = kcg_lit_int64(0);
-    outC->_L2[idx3].L_Gradient = kcg_lit_int64(0);
+    outC->_L2[idx3].Loc_Absolute = kcg_lit_int32(0);
+    outC->_L2[idx3].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L2[idx3].Gradient = kcg_lit_int32(0);
+    outC->_L2[idx3].L_Gradient = kcg_lit_int32(0);
   }
   for (idx4 = 0; idx4 < 50; idx4++) {
     outC->ProfileOut[idx4].valid = kcg_true;
-    outC->ProfileOut[idx4].Loc_Absolute = kcg_lit_int64(0);
-    outC->ProfileOut[idx4].Loc_LRBG = kcg_lit_int64(0);
-    outC->ProfileOut[idx4].Gradient = kcg_lit_int64(0);
-    outC->ProfileOut[idx4].L_Gradient = kcg_lit_int64(0);
+    outC->ProfileOut[idx4].Loc_Absolute = kcg_lit_int32(0);
+    outC->ProfileOut[idx4].Loc_LRBG = kcg_lit_int32(0);
+    outC->ProfileOut[idx4].Gradient = kcg_lit_int32(0);
+    outC->ProfileOut[idx4].L_Gradient = kcg_lit_int32(0);
   }
   for (idx = 0; idx < 50; idx++) {
     /* _L4=(TA_Lib_internal::MoveGPSectionsAbsolute_Loop_new#1)/ */

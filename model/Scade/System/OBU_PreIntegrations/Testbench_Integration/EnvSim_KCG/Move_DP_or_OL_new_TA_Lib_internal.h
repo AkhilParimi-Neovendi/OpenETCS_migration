@@ -23,7 +23,7 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   DP_or_OL_t_TrackAtlasTypes /* _L2/ */ _L2;
   DP_or_OL_t_TrackAtlasTypes /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L130/ */ _L130;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L142/ */ _L142;
 } outC_Move_DP_or_OL_new_TA_Lib_internal;

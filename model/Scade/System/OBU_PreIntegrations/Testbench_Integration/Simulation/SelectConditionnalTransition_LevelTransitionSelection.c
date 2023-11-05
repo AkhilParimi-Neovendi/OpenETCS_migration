@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -120,36 +120,36 @@ void SelectConditionnalTransition_init_LevelTransitionSelection(
   for (idx2 = 0; idx2 < 7; idx2++) {
     outC->_L2[idx2].is_set = kcg_true;
     outC->_L2[idx2].transition.level = M_LEVEL_Level_0;
-    outC->_L2[idx2].transition.position = kcg_lit_int64(0);
+    outC->_L2[idx2].transition.position = kcg_lit_int32(0);
     outC->_L2[idx2].transition.transitionType =
       M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
     outC->_L2[idx2].transition.immediateAck = kcg_true;
-    outC->_L2[idx2].transition.AckLength = kcg_lit_int64(0);
-    outC->_L2[idx2].LRBG = kcg_lit_int64(0);
-    outC->_L2[idx2].referenceLocation = kcg_lit_int64(0);
+    outC->_L2[idx2].transition.AckLength = kcg_lit_int32(0);
+    outC->_L2[idx2].LRBG = kcg_lit_int32(0);
+    outC->_L2[idx2].referenceLocation = kcg_lit_int32(0);
   }
   outC->_L1 = kcg_true;
   outC->Loc_contain_current_level = kcg_true;
   outC->IfBlock1_clock = kcg_true;
   outC->_L1_else_IfBlock1.is_set = kcg_true;
   outC->_L1_else_IfBlock1.transition.level = M_LEVEL_Level_0;
-  outC->_L1_else_IfBlock1.transition.position = kcg_lit_int64(0);
+  outC->_L1_else_IfBlock1.transition.position = kcg_lit_int32(0);
   outC->_L1_else_IfBlock1.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L1_else_IfBlock1.transition.immediateAck = kcg_true;
-  outC->_L1_else_IfBlock1.transition.AckLength = kcg_lit_int64(0);
-  outC->_L1_else_IfBlock1.LRBG = kcg_lit_int64(0);
-  outC->_L1_else_IfBlock1.referenceLocation = kcg_lit_int64(0);
+  outC->_L1_else_IfBlock1.transition.AckLength = kcg_lit_int32(0);
+  outC->_L1_else_IfBlock1.LRBG = kcg_lit_int32(0);
+  outC->_L1_else_IfBlock1.referenceLocation = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 7; idx3++) {
     outC->_L3_else_IfBlock1[idx3].is_set = kcg_true;
     outC->_L3_else_IfBlock1[idx3].transition.level = M_LEVEL_Level_0;
-    outC->_L3_else_IfBlock1[idx3].transition.position = kcg_lit_int64(0);
+    outC->_L3_else_IfBlock1[idx3].transition.position = kcg_lit_int32(0);
     outC->_L3_else_IfBlock1[idx3].transition.transitionType =
       M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
     outC->_L3_else_IfBlock1[idx3].transition.immediateAck = kcg_true;
-    outC->_L3_else_IfBlock1[idx3].transition.AckLength = kcg_lit_int64(0);
-    outC->_L3_else_IfBlock1[idx3].LRBG = kcg_lit_int64(0);
-    outC->_L3_else_IfBlock1[idx3].referenceLocation = kcg_lit_int64(0);
+    outC->_L3_else_IfBlock1[idx3].transition.AckLength = kcg_lit_int32(0);
+    outC->_L3_else_IfBlock1[idx3].LRBG = kcg_lit_int32(0);
+    outC->_L3_else_IfBlock1[idx3].referenceLocation = kcg_lit_int32(0);
   }
   outC->_L5_else_IfBlock1.NTC = kcg_true;
   outC->_L5_else_IfBlock1.L0 = kcg_true;
@@ -159,32 +159,32 @@ void SelectConditionnalTransition_init_LevelTransitionSelection(
   outC->_L8_else_IfBlock1 = kcg_true;
   outC->_L9_else_IfBlock1.is_set = kcg_true;
   outC->_L9_else_IfBlock1.transition.level = M_LEVEL_Level_0;
-  outC->_L9_else_IfBlock1.transition.position = kcg_lit_int64(0);
+  outC->_L9_else_IfBlock1.transition.position = kcg_lit_int32(0);
   outC->_L9_else_IfBlock1.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L9_else_IfBlock1.transition.immediateAck = kcg_true;
-  outC->_L9_else_IfBlock1.transition.AckLength = kcg_lit_int64(0);
-  outC->_L9_else_IfBlock1.LRBG = kcg_lit_int64(0);
-  outC->_L9_else_IfBlock1.referenceLocation = kcg_lit_int64(0);
+  outC->_L9_else_IfBlock1.transition.AckLength = kcg_lit_int32(0);
+  outC->_L9_else_IfBlock1.LRBG = kcg_lit_int32(0);
+  outC->_L9_else_IfBlock1.referenceLocation = kcg_lit_int32(0);
   outC->_L1_then_IfBlock1.is_set = kcg_true;
   outC->_L1_then_IfBlock1.transition.level = M_LEVEL_Level_0;
-  outC->_L1_then_IfBlock1.transition.position = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1.transition.position = kcg_lit_int32(0);
   outC->_L1_then_IfBlock1.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L1_then_IfBlock1.transition.immediateAck = kcg_true;
-  outC->_L1_then_IfBlock1.transition.AckLength = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock1.LRBG = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock1.referenceLocation = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1.transition.AckLength = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock1.LRBG = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock1.referenceLocation = kcg_lit_int32(0);
   outC->_L3_then_IfBlock1 = kcg_true;
   outC->output_level_transition.is_set = kcg_true;
   outC->output_level_transition.transition.level = M_LEVEL_Level_0;
-  outC->output_level_transition.transition.position = kcg_lit_int64(0);
+  outC->output_level_transition.transition.position = kcg_lit_int32(0);
   outC->output_level_transition.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->output_level_transition.transition.immediateAck = kcg_true;
-  outC->output_level_transition.transition.AckLength = kcg_lit_int64(0);
-  outC->output_level_transition.LRBG = kcg_lit_int64(0);
-  outC->output_level_transition.referenceLocation = kcg_lit_int64(0);
+  outC->output_level_transition.transition.AckLength = kcg_lit_int32(0);
+  outC->output_level_transition.LRBG = kcg_lit_int32(0);
+  outC->output_level_transition.referenceLocation = kcg_lit_int32(0);
   outC->Available_for_use = kcg_true;
   /* IfBlock1:else:_L8=(LevelTransitionSelection::SelectNormalTransition#1)/ */
   SelectNormalTransition_init_LevelTransitionSelection(
@@ -219,6 +219,6 @@ void SelectConditionnalTransition_reset_LevelTransitionSelection(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** SelectConditionnalTransition_LevelTransitionSelection.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

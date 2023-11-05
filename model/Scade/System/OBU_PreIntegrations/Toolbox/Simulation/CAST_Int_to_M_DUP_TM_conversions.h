@@ -32,9 +32,9 @@ typedef struct {
   kcg_bool /* IfBlock1:else:else:else:_L2/ */ _L2_else_else_else_IfBlock1;
   M_DUP /* IfBlock1:else:then:_L5/ */ _L5_then_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L6/ */ _L6_then_else_IfBlock1;
-  kcg_int64 /* m_dup_in/ */ m_dup_in;
+  kcg_int32 /* m_dup_in/ */ m_dup_in;
   kcg_bool /* error/ */ error;
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L2/ */ _L2;
   kcg_bool /* _L3/ */ _L3;
 } outC_CAST_Int_to_M_DUP_TM_conversions;
 
@@ -42,7 +42,7 @@ typedef struct {
 /* TM_conversions::CAST_Int_to_M_DUP/ */
 extern void CAST_Int_to_M_DUP_TM_conversions(
   /* int_in/ */
-  kcg_int64 int_in,
+  kcg_int32 int_in,
   outC_CAST_Int_to_M_DUP_TM_conversions *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

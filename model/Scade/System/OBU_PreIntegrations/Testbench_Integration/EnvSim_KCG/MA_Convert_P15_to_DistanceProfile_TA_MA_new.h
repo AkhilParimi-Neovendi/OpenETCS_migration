@@ -59,7 +59,7 @@ typedef struct {
   MovementAuthoritySectionlist_t_TrackAtlasTypes /* _L161/ */ _L161;
   N_ITER /* _L163/ */ _L163;
   P015_OBU_sectionlist_enum_T_TM /* _L166/ */ _L166;
-  array_int64_10 /* _L167/ */ _L167;
+  array_int32_10 /* _L167/ */ _L167;
   MovementAuthority_t_TrackAtlasTypes /* _L168/ */ _L168;
   MovementAuthority_t_TrackAtlasTypes /* _L169/ */ _L169;
 } outC_MA_Convert_P15_to_DistanceProfile_TA_MA_new;

@@ -25,12 +25,12 @@ typedef struct {
   MovementAuthoritySection_t_TrackAtlasTypes /* _L6/ */ _L6;
   MovementAuthoritySectionlist_t_TrackAtlasTypes /* _L7/ */ _L7;
   MovementAuthoritySection_t_TrackAtlasTypes /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L130/ */ _L130;
   kcg_bool /* _L143/ */ _L143;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L254/ */ _L254;
-  kcg_int64 /* _L255/ */ _L255;
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L255/ */ _L255;
+  kcg_int32 /* _L1/ */ _L1;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L256/ */ _L256;
 } outC_MoveMAAbsolute_Loop_new_TA_Lib_internal;
 
@@ -38,7 +38,7 @@ typedef struct {
 /* TA_Lib_internal::MoveMAAbsolute_Loop_new/ */
 extern void MoveMAAbsolute_Loop_new_TA_Lib_internal(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* ProfileIn/ */
   MovementAuthoritySectionlist_t_TrackAtlasTypes *ProfileIn,
   /* pos_LRBG/ */

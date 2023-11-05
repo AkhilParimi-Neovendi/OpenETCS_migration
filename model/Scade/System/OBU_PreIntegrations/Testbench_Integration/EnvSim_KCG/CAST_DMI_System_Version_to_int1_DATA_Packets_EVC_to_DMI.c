@@ -42,21 +42,21 @@ void CAST_DMI_System_Version_to_int1_init_DATA_Packets_EVC_to_DMI(
   static kcg_size idx;
   static kcg_size idx1;
 
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
   outC->_L3 =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->_L5 = kcg_true;
   for (idx = 0; idx < 3; idx++) {
-    outC->_L2[idx] = kcg_lit_int64(0);
+    outC->_L2[idx] = kcg_lit_int32(0);
   }
   outC->_L1.valid = kcg_true;
-  outC->_L1.system_clock = kcg_lit_int64(0);
+  outC->_L1.system_clock = kcg_lit_int32(0);
   outC->_L1.system_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx1 = 0; idx1 < 3; idx1++) {
-    outC->dmi_system_version_int[idx1] = kcg_lit_int64(0);
+    outC->dmi_system_version_int[idx1] = kcg_lit_int32(0);
   }
   /* _L6=(Utilities::Bool_to_Int#1)/ */
   Bool_to_Int_init_Utilities(&outC->Context_Bool_to_Int_1);

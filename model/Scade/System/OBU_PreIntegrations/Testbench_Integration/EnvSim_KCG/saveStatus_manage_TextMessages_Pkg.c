@@ -17,7 +17,7 @@ void saveStatus_manage_TextMessages_Pkg(
 {
   static kcg_size idx;
   static kcg_size idx1;
-  static kcg_int64 noname;
+  static kcg_int32 noname;
 
   kcg_copy_DMI_TXT_MSGList_status_T_DMI_Types_Pkg(&outC->_L1, inStatusList);
   kcg_copy_DMI_TXT_MSG_status_T_DMI_Types_Pkg(&outC->_L2, inStatusElement);
@@ -35,14 +35,14 @@ void saveStatus_manage_TextMessages_Pkg(
     for (idx1 = 0; idx1 < 31; idx1++) {
       /* _L5=(manage_TextMessages_Pkg::setNew#1)/ */
       setNew_manage_TextMessages_Pkg(
-        /* _L5= */(kcg_int64) idx1,
+        /* _L5= */(kcg_int32) idx1,
         &outC->_L1[idx1],
         &outC->_L6[idx1],
         &outC->Context_setNew_1[idx1]);
       kcg_copy_DMI_TXT_MSG_status_T_DMI_Types_Pkg(
         &outC->_L4[idx1],
         &outC->Context_setNew_1[idx1].toStore);
-      outC->_L5 = /* _L5= */(kcg_int64) (idx1 + 1);
+      outC->_L5 = /* _L5= */(kcg_int32) (idx1 + 1);
       /* _L5= */
       if (!outC->Context_setNew_1[idx1]._1_continue) {
         break;
@@ -50,7 +50,7 @@ void saveStatus_manage_TextMessages_Pkg(
     }
   }
   else {
-    outC->_L5 = kcg_lit_int64(0);
+    outC->_L5 = kcg_lit_int32(0);
   }
 #ifdef KCG_MAPW_CPY
 
@@ -77,64 +77,64 @@ void saveStatus_init_manage_TextMessages_Pkg(
   static kcg_size idx4;
 
   outC->_L9.valid = kcg_true;
-  outC->_L9.dmi_textMessageID = kcg_lit_int64(0);
-  outC->_L9.timeStamp = kcg_lit_int64(0);
+  outC->_L9.dmi_textMessageID = kcg_lit_int32(0);
+  outC->_L9.timeStamp = kcg_lit_int32(0);
   outC->_L9.textReport = Q_TEXTREPORT_No_driver_acknowledgement_report_required;
   outC->_L9.context = con_undefined_DMI_Types_Pkg;
-  outC->_L9.nid_textmessage = kcg_lit_int64(0);
+  outC->_L9.nid_textmessage = kcg_lit_int32(0);
   outC->_L9.whichLevel = M_LEVEL_Level_0;
   outC->_L9.whichMode = M_MODE_Full_Supervision;
   outC->_L8 = kcg_true;
   for (idx1 = 0; idx1 < 31; idx1++) {
     outC->_L6[idx1].valid = kcg_true;
-    outC->_L6[idx1].dmi_textMessageID = kcg_lit_int64(0);
-    outC->_L6[idx1].timeStamp = kcg_lit_int64(0);
+    outC->_L6[idx1].dmi_textMessageID = kcg_lit_int32(0);
+    outC->_L6[idx1].timeStamp = kcg_lit_int32(0);
     outC->_L6[idx1].textReport =
       Q_TEXTREPORT_No_driver_acknowledgement_report_required;
     outC->_L6[idx1].context = con_undefined_DMI_Types_Pkg;
-    outC->_L6[idx1].nid_textmessage = kcg_lit_int64(0);
+    outC->_L6[idx1].nid_textmessage = kcg_lit_int32(0);
     outC->_L6[idx1].whichLevel = M_LEVEL_Level_0;
     outC->_L6[idx1].whichMode = M_MODE_Full_Supervision;
   }
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 31; idx2++) {
     outC->_L4[idx2].valid = kcg_true;
-    outC->_L4[idx2].dmi_textMessageID = kcg_lit_int64(0);
-    outC->_L4[idx2].timeStamp = kcg_lit_int64(0);
+    outC->_L4[idx2].dmi_textMessageID = kcg_lit_int32(0);
+    outC->_L4[idx2].timeStamp = kcg_lit_int32(0);
     outC->_L4[idx2].textReport =
       Q_TEXTREPORT_No_driver_acknowledgement_report_required;
     outC->_L4[idx2].context = con_undefined_DMI_Types_Pkg;
-    outC->_L4[idx2].nid_textmessage = kcg_lit_int64(0);
+    outC->_L4[idx2].nid_textmessage = kcg_lit_int32(0);
     outC->_L4[idx2].whichLevel = M_LEVEL_Level_0;
     outC->_L4[idx2].whichMode = M_MODE_Full_Supervision;
   }
   outC->_L2.valid = kcg_true;
-  outC->_L2.dmi_textMessageID = kcg_lit_int64(0);
-  outC->_L2.timeStamp = kcg_lit_int64(0);
+  outC->_L2.dmi_textMessageID = kcg_lit_int32(0);
+  outC->_L2.timeStamp = kcg_lit_int32(0);
   outC->_L2.textReport = Q_TEXTREPORT_No_driver_acknowledgement_report_required;
   outC->_L2.context = con_undefined_DMI_Types_Pkg;
-  outC->_L2.nid_textmessage = kcg_lit_int64(0);
+  outC->_L2.nid_textmessage = kcg_lit_int32(0);
   outC->_L2.whichLevel = M_LEVEL_Level_0;
   outC->_L2.whichMode = M_MODE_Full_Supervision;
   for (idx3 = 0; idx3 < 31; idx3++) {
     outC->_L1[idx3].valid = kcg_true;
-    outC->_L1[idx3].dmi_textMessageID = kcg_lit_int64(0);
-    outC->_L1[idx3].timeStamp = kcg_lit_int64(0);
+    outC->_L1[idx3].dmi_textMessageID = kcg_lit_int32(0);
+    outC->_L1[idx3].timeStamp = kcg_lit_int32(0);
     outC->_L1[idx3].textReport =
       Q_TEXTREPORT_No_driver_acknowledgement_report_required;
     outC->_L1[idx3].context = con_undefined_DMI_Types_Pkg;
-    outC->_L1[idx3].nid_textmessage = kcg_lit_int64(0);
+    outC->_L1[idx3].nid_textmessage = kcg_lit_int32(0);
     outC->_L1[idx3].whichLevel = M_LEVEL_Level_0;
     outC->_L1[idx3].whichMode = M_MODE_Full_Supervision;
   }
   for (idx4 = 0; idx4 < 31; idx4++) {
     outC->outStatusList[idx4].valid = kcg_true;
-    outC->outStatusList[idx4].dmi_textMessageID = kcg_lit_int64(0);
-    outC->outStatusList[idx4].timeStamp = kcg_lit_int64(0);
+    outC->outStatusList[idx4].dmi_textMessageID = kcg_lit_int32(0);
+    outC->outStatusList[idx4].timeStamp = kcg_lit_int32(0);
     outC->outStatusList[idx4].textReport =
       Q_TEXTREPORT_No_driver_acknowledgement_report_required;
     outC->outStatusList[idx4].context = con_undefined_DMI_Types_Pkg;
-    outC->outStatusList[idx4].nid_textmessage = kcg_lit_int64(0);
+    outC->outStatusList[idx4].nid_textmessage = kcg_lit_int32(0);
     outC->outStatusList[idx4].whichLevel = M_LEVEL_Level_0;
     outC->outStatusList[idx4].whichMode = M_MODE_Full_Supervision;
   }

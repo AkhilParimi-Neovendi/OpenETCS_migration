@@ -14,7 +14,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* m_loc_int/ */ m_loc_int;
+  kcg_int32 /* m_loc_int/ */ m_loc_int;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
@@ -24,14 +24,14 @@ typedef struct {
   kcg_bool /* IfBlock1: */ IfBlock1_clock;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* IfBlock1:then:_L8/ */ _L8_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L8/ */ _L8_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L7/ */ _L7_then_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:then:_L1/ */ _L1_then_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:then:_L1/ */ _L1_then_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:then:_L2/ */ _L2_then_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:else:_L1/ */ _L1_else_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:else:_L2/ */ _L2_else_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:else:_L2/ */ _L2_else_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L6/ */ _L6_then_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L7/ */ _L7_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L7/ */ _L7_then_else_IfBlock1;
   M_LOC /* m_loc_in/ */ m_loc_in;
   kcg_bool /* error/ */ error;
   M_LOC /* _L4/ */ _L4;

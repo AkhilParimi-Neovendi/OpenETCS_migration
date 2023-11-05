@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _WindowReqToMask_DMI_Control_Pkg_Sub_func_EntryRequest_H_
 #define _WindowReqToMask_DMI_Control_Pkg_Sub_func_EntryRequest_H_
@@ -26,15 +26,15 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   DMI_List_Entry_Request_T_DMI_Types_Pkg /* _L1/ */ _L1;
-  kcg_int64 /* _L18/ */ _L18;
-  kcg_int64 /* _L19/ */ _L19;
+  kcg_int32 /* _L18/ */ _L18;
+  kcg_int32 /* _L19/ */ _L19;
   kcg_bool /* _L20/ */ _L20;
-  kcg_int64 /* _L21/ */ _L21;
+  kcg_int32 /* _L21/ */ _L21;
   Array_DMI_List_Entry_Request /* _L22/ */ _L22;
   array_bool_15 /* _L23/ */ _L23;
-  array_int64_15 /* _L24/ */ _L24;
-  kcg_int64 /* _L25/ */ _L25;
-  kcg_int64 /* _L26/ */ _L26;
+  array_int32_15 /* _L24/ */ _L24;
+  kcg_int32 /* _L25/ */ _L25;
+  kcg_int32 /* _L26/ */ _L26;
   Array_DMI_List_Entry_Request /* _L27/ */ _L27;
 } outC_WindowReqToMask_DMI_Control_Pkg_Sub_func_EntryRequest;
 
@@ -60,6 +60,6 @@ extern void WindowReqToMask_init_DMI_Control_Pkg_Sub_func_EntryRequest(
 #endif /* _WindowReqToMask_DMI_Control_Pkg_Sub_func_EntryRequest_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** WindowReqToMask_DMI_Control_Pkg_Sub_func_EntryRequest.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

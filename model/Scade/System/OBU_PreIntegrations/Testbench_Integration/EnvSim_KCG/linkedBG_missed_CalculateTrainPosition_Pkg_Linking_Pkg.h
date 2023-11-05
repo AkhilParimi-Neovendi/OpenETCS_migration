@@ -20,7 +20,7 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   kcg_bool /* missed/ */ missed;
-  kcg_int64 /* indexOfBG/ */ indexOfBG;
+  kcg_int32 /* indexOfBG/ */ indexOfBG;
   positionedBG_T_TrainPosition_Types_Pck /* BG/ */ BG;
   positionedBGs_T_TrainPosition_Types_Pck /* BGs_out/ */ BGs_out;
   /* -----------------------  no local probes  ----------------------- */
@@ -28,7 +28,7 @@ typedef struct {
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* position/ */ mem_position;
   kcg_bool init;
   positionedBG_T_TrainPosition_Types_Pck /* _L3/ */ _L3;
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L2/ */ _L2;
   /* ---------------------  sub nodes' contexts  --------------------- */
   outC_positionedBGs_ids_notEqual_CalculateTrainPosition_Pkg_BG_utilities_Pkg /* _L59=(CalculateTrainPosition_Pkg::BG_utilities_Pkg::positionedBGs_ids_notEqual#1)/ */ Context_positionedBGs_ids_notEqual_1;
   outC_FallingEdge_digital /* _L8=(digital::FallingEdge#1)/ */ Context_FallingEdge_1;
@@ -39,8 +39,8 @@ typedef struct {
   kcg_bool /* IfBlock1: */ IfBlock1_clock;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* IfBlock1:then:_L12/ */ _L12_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L11/ */ _L11_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L12/ */ _L12_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L11/ */ _L11_then_IfBlock1;
   L_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:then:_L10/ */ _L10_then_IfBlock1;
   L_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:then:_L9/ */ _L9_then_IfBlock1;
   L_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:then:_L8/ */ _L8_then_IfBlock1;
@@ -51,13 +51,13 @@ typedef struct {
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* IfBlock1:then:_L2/ */ _L2_then_IfBlock1;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* IfBlock1:else:_L3/ */ _L3_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:_L4/ */ _L4_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:_L4/ */ _L4_else_IfBlock1;
   L_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:else:_L7/ */ _L7_else_IfBlock1;
   L_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:else:_L6/ */ _L6_else_IfBlock1;
   L_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:else:_L5/ */ _L5_else_IfBlock1;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* IfBlock1:else:_L8/ */ _L8_else_IfBlock1;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* IfBlock1:else:_L9/ */ _L9_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:_L10/ */ _L10_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:_L10/ */ _L10_else_IfBlock1;
   L_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:else:_L13/ */ _L13_else_IfBlock1;
   L_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:else:_L12/ */ _L12_else_IfBlock1;
   L_internal_Type_Obu_BasicTypes_Pkg /* IfBlock1:else:_L11/ */ _L11_else_IfBlock1;
@@ -66,7 +66,7 @@ typedef struct {
   kcg_bool /* _L1/ */ _L1;
   positionedBGs_T_TrainPosition_Types_Pck /* _L5/ */ _L5;
   kcg_bool /* _L6/ */ _L6;
-  kcg_int64 /* _L7/ */ _L7;
+  kcg_int32 /* _L7/ */ _L7;
   kcg_bool /* _L8/ */ _L8;
   positionedBG_T_TrainPosition_Types_Pck /* _L10/ */ _L10;
   Q_LINK /* _L11/ */ _L11;
@@ -76,7 +76,7 @@ typedef struct {
   kcg_bool /* _L18/ */ _L18;
   kcg_bool /* _L19/ */ _L19;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L51/ */ _L51;
-  kcg_int64 /* _L57/ */ _L57;
+  kcg_int32 /* _L57/ */ _L57;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L56/ */ _L56;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L55/ */ _L55;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L54/ */ _L54;
@@ -91,7 +91,7 @@ typedef struct {
   positionedBGs_T_TrainPosition_Types_Pck /* _L66/ */ _L66;
   kcg_bool /* _L73/ */ _L73;
   kcg_bool /* _L72/ */ _L72;
-  kcg_int64 /* _L71/ */ _L71;
+  kcg_int32 /* _L71/ */ _L71;
   kcg_bool /* _L74/ */ _L74;
   positionedBG_T_TrainPosition_Types_Pck /* _L75/ */ _L75;
 } outC_linkedBG_missed_CalculateTrainPosition_Pkg_Linking_Pkg;

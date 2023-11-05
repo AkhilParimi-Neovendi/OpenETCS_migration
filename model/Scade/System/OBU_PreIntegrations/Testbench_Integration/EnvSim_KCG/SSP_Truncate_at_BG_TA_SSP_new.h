@@ -26,11 +26,11 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   StaticSpeedProfile_t_TrackAtlasTypes /* _L1/ */ _L1;
-  kcg_int64 /* _L8/ */ _L8;
+  kcg_int32 /* _L8/ */ _L8;
   _4_array /* _L6/ */ _L6;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L10/ */ _L10;
   kcg_bool /* _L11/ */ _L11;
   StaticSpeedProfile_t_TrackAtlasTypes /* _L12/ */ _L12;
   StaticSpeedProfile_t_TrackAtlasTypes /* _L13/ */ _L13;

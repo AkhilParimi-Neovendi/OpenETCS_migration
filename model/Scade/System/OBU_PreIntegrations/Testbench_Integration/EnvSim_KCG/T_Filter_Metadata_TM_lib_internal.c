@@ -10,9 +10,9 @@
 /* TM_lib_internal::T_Filter_Metadata/ */
 void T_Filter_Metadata_TM_lib_internal(
   /* Metadata_from_track/ */
-  kcg_int64 Metadata_from_track,
+  kcg_int32 Metadata_from_track,
   /* Metadata_looked_for/ */
-  kcg_int64 Metadata_looked_for,
+  kcg_int32 Metadata_looked_for,
   /* F_version/ */
   kcg_bool F_version,
   /* F_id/ */
@@ -66,14 +66,14 @@ void T_Filter_Metadata_init_TM_lib_internal(
   outC->_L18 = kcg_true;
   outC->_L17 = kcg_true;
   outC->_L11 = kcg_true;
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
   outC->data_match = kcg_true;
   /* _L20=(TM_lib_internal::T_Filter_Metadata_Element#1)/ */
   T_Filter_Metadata_Element_init_TM_lib_internal(

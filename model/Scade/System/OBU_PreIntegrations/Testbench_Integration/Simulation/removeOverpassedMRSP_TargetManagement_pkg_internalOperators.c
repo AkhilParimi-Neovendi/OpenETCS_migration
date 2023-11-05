@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -27,7 +27,7 @@ void removeOverpassedMRSP_TargetManagement_pkg_internalOperators(
   outC->_L3 = d_max_safe_front;
   outC->_L12 = outC->_L19 <= outC->_L3;
   outC->_L14 = outC->_L21 & outC->_L12;
-  outC->_L10 = kcg_lit_int64(1);
+  outC->_L10 = kcg_lit_int32(1);
   /* _L7/ */
   for (idx = 0; idx < 110; idx++) {
     outC->_L7[idx] = outC->_L3;
@@ -48,7 +48,7 @@ void removeOverpassedMRSP_TargetManagement_pkg_internalOperators(
       kcg_copy_Target_list_MRSP_real_T_TargetManagement_types(
         &outC->_L4,
         &outC->Context_removeOverpassedMRSPint_1[idx1].TargetsReduced);
-      outC->_L6 = /* _L6= */(kcg_int64) (idx1 + 1);
+      outC->_L6 = /* _L6= */(kcg_int32) (idx1 + 1);
       /* _L6= */
       if (!outC->Context_removeOverpassedMRSPint_1[idx1].Cond) {
         break;
@@ -56,7 +56,7 @@ void removeOverpassedMRSP_TargetManagement_pkg_internalOperators(
     }
   }
   else {
-    outC->_L6 = kcg_lit_int64(0);
+    outC->_L6 = kcg_lit_int32(0);
   }
   outC->_L9 = outC->_L6 > outC->_L10;
   kcg_copy_Target_list_MRSP_real_T_TargetManagement_types(
@@ -80,29 +80,29 @@ void removeOverpassedMRSP_init_TargetManagement_pkg_internalOperators(
   outC->_L20 = EoA_TargetManagement_types;
   for (idx1 = 0; idx1 < 110; idx1++) {
     outC->_L11[idx1].targetType = EoA_TargetManagement_types;
-    outC->_L11[idx1].distance = kcg_lit_float64(0.0);
-    outC->_L11[idx1].speed = kcg_lit_float64(0.0);
+    outC->_L11[idx1].distance = kcg_lit_float32(0.0);
+    outC->_L11[idx1].speed = kcg_lit_float32(0.0);
   }
   outC->_L12 = kcg_true;
   outC->_L14 = kcg_true;
-  outC->_L19 = kcg_lit_float64(0.0);
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L19 = kcg_lit_float32(0.0);
+  outC->_L10 = kcg_lit_int32(0);
   outC->_L9 = kcg_true;
   for (idx2 = 0; idx2 < 110; idx2++) {
-    outC->_L7[idx2] = kcg_lit_float64(0.0);
+    outC->_L7[idx2] = kcg_lit_float32(0.0);
   }
-  outC->_L6 = kcg_lit_int64(0);
+  outC->_L6 = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 110; idx3++) {
     outC->_L4[idx3].targetType = EoA_TargetManagement_types;
-    outC->_L4[idx3].distance = kcg_lit_float64(0.0);
-    outC->_L4[idx3].speed = kcg_lit_float64(0.0);
+    outC->_L4[idx3].distance = kcg_lit_float32(0.0);
+    outC->_L4[idx3].speed = kcg_lit_float32(0.0);
   }
-  outC->_L3 = kcg_lit_float64(0.0);
+  outC->_L3 = kcg_lit_float32(0.0);
   outC->updated = kcg_true;
   for (idx4 = 0; idx4 < 110; idx4++) {
     outC->TargetsOut[idx4].targetType = EoA_TargetManagement_types;
-    outC->TargetsOut[idx4].distance = kcg_lit_float64(0.0);
-    outC->TargetsOut[idx4].speed = kcg_lit_float64(0.0);
+    outC->TargetsOut[idx4].distance = kcg_lit_float32(0.0);
+    outC->TargetsOut[idx4].speed = kcg_lit_float32(0.0);
   }
   for (idx = 0; idx < 110; idx++) {
     /* _L6=(TargetManagement_pkg::internalOperators::removeOverpassedMRSPint#1)/ */
@@ -131,6 +131,6 @@ void removeOverpassedMRSP_reset_TargetManagement_pkg_internalOperators(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** removeOverpassedMRSP_TargetManagement_pkg_internalOperators.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

@@ -25,22 +25,22 @@ typedef struct {
   Position_Report_TrainToTrack /* _L3/ */ _L3;
   kcg_bool /* _L2/ */ _L2;
   P000_TM_TrainToTrack /* _L6/ */ _L6;
-  kcg_int64 /* _L38/ */ _L38;
+  kcg_int32 /* _L38/ */ _L38;
   M_LEVEL /* _L37/ */ _L37;
   M_MODE /* _L36/ */ _L36;
   Q_DIRTRAIN /* _L35/ */ _L35;
-  kcg_int64 /* _L34/ */ _L34;
-  kcg_int64 /* _L33/ */ _L33;
+  kcg_int32 /* _L34/ */ _L34;
+  kcg_int32 /* _L33/ */ _L33;
   Q_LENGTH /* _L32/ */ _L32;
-  kcg_int64 /* _L31/ */ _L31;
-  kcg_int64 /* _L30/ */ _L30;
+  kcg_int32 /* _L31/ */ _L31;
+  kcg_int32 /* _L30/ */ _L30;
   Q_DLRBG /* _L29/ */ _L29;
   Q_DIRLRBG /* _L28/ */ _L28;
-  kcg_int64 /* _L27/ */ _L27;
-  kcg_int64 /* _L26/ */ _L26;
+  kcg_int32 /* _L27/ */ _L27;
+  kcg_int32 /* _L26/ */ _L26;
   Q_SCALE /* _L25/ */ _L25;
-  kcg_int64 /* _L24/ */ _L24;
-  kcg_int64 /* _L23/ */ _L23;
+  kcg_int32 /* _L24/ */ _L24;
+  kcg_int32 /* _L23/ */ _L23;
 } outC_C_legacy_P000_TM_conversions_TrainToTrack;
 
 /* ===========  node initialization and cycle functions  =========== */

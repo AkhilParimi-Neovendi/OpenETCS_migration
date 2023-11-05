@@ -22,7 +22,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* outTriggerId/ */ outTriggerId;
+  kcg_int32 /* outTriggerId/ */ outTriggerId;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -43,8 +43,8 @@ typedef struct {
   D_LRBG /* _L9/ */ _L9;
   NID_LRBG /* _L10/ */ _L10;
   Q_SCALE /* _L11/ */ _L11;
-  kcg_float64 /* _L12/ */ _L12;
-  kcg_int64 /* _L13/ */ _L13;
+  kcg_float32 /* _L12/ */ _L12;
+  kcg_int32 /* _L13/ */ _L13;
   T_TRAIN /* _L14/ */ _L14;
   NID_BG /* _L16/ */ _L16;
   NID_C /* _L15/ */ _L15;

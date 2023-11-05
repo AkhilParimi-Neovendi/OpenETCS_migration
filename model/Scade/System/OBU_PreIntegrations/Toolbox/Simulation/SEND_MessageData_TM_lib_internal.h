@@ -24,13 +24,13 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   CompressedPacketData_T_Common_Types_Pkg /* _L1/ */ _L1;
-  kcg_int64 /* _L402/ */ _L402;
+  kcg_int32 /* _L402/ */ _L402;
   kcg_bool /* _L403/ */ _L403;
   CompressedPacketData_T_Common_Types_Pkg /* _L404/ */ _L404;
   CompressedPacketData_T_Common_Types_Pkg /* _L406/ */ _L406;
-  kcg_int64 /* _L407/ */ _L407;
-  kcg_int64 /* _L408/ */ _L408;
-  array_int64_500_500 /* _L413/ */ _L413;
+  kcg_int32 /* _L407/ */ _L407;
+  kcg_int32 /* _L408/ */ _L408;
+  array_int32_500_500 /* _L413/ */ _L413;
   CompressedPacketData_T_Common_Types_Pkg /* _L414/ */ _L414;
   CompressedPacketData_T_Common_Types_Pkg /* _L415/ */ _L415;
 } outC_SEND_MessageData_TM_lib_internal;
@@ -39,9 +39,9 @@ typedef struct {
 /* TM_lib_internal::SEND_MessageData/ */
 extern void SEND_MessageData_TM_lib_internal(
   /* StartAddress/ */
-  kcg_int64 StartAddress,
+  kcg_int32 StartAddress,
   /* EndAddress/ */
-  kcg_int64 EndAddress,
+  kcg_int32 EndAddress,
   /* DataIn/ */
   CompressedPacketData_T_Common_Types_Pkg *DataIn,
   /* DataElementIn/ */

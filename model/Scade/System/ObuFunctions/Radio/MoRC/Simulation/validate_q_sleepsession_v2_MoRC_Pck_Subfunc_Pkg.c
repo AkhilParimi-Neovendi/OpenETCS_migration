@@ -52,7 +52,7 @@ void validate_q_sleepsession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L1.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L1.nid_c = kcg_lit_int32(0);
   outC->_L1.nid_RBC = kcg_lit_int32(0);
-  outC->_L1.nid_radio = kcg_lit_int64(0);
+  outC->_L1.nid_radio = kcg_lit_int32(0);
   outC->_L1.q_sleepsession = Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L1.origin.valid = kcg_true;
   outC->_L1.origin.nid_c = kcg_lit_int32(0);

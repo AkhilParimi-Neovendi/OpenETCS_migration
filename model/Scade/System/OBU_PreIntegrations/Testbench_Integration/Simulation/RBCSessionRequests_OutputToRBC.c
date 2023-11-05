@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -61,24 +61,24 @@ void RBCSessionRequests_init_OutputToRBC(
   outC->_L19 = M_LEVEL_Level_0;
   outC->_L18 = M_LEVEL_Level_0;
   outC->_L17 = M_LEVEL_Level_0;
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L14 = kcg_lit_int64(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L14 = kcg_lit_int32(0);
   outC->_L15.level = M_LEVEL_Level_0;
-  outC->_L15.position = kcg_lit_int64(0);
+  outC->_L15.position = kcg_lit_int32(0);
   outC->_L15.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L15.immediateAck = kcg_true;
-  outC->_L15.AckLength = kcg_lit_int64(0);
+  outC->_L15.AckLength = kcg_lit_int32(0);
   outC->_L16 = kcg_true;
   outC->_L12.is_set = kcg_true;
   outC->_L12.transition.level = M_LEVEL_Level_0;
-  outC->_L12.transition.position = kcg_lit_int64(0);
+  outC->_L12.transition.position = kcg_lit_int32(0);
   outC->_L12.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L12.transition.immediateAck = kcg_true;
-  outC->_L12.transition.AckLength = kcg_lit_int64(0);
-  outC->_L12.LRBG = kcg_lit_int64(0);
-  outC->_L12.referenceLocation = kcg_lit_int64(0);
+  outC->_L12.transition.AckLength = kcg_lit_int32(0);
+  outC->_L12.LRBG = kcg_lit_int32(0);
+  outC->_L12.referenceLocation = kcg_lit_int32(0);
   outC->_L1 = M_LEVEL_Level_0;
   outC->_L11 = kcg_true;
   outC->_L10 = kcg_true;
@@ -106,6 +106,6 @@ void RBCSessionRequests_reset_OutputToRBC(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** RBCSessionRequests_OutputToRBC.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

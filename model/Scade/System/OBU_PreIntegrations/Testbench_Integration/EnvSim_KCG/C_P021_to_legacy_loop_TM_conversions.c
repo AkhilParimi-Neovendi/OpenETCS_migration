@@ -10,7 +10,7 @@
 /* TM_conversions::C_P021_to_legacy_loop/ */
 void C_P021_to_legacy_loop_TM_conversions(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* P021_in/ */
   P021_OBU_T_TM *P021_in,
   /* P021_section_in/ */
@@ -19,7 +19,7 @@ void C_P021_to_legacy_loop_TM_conversions(
 {
   outC->_L20 = i;
   kcg_copy_P021_OBU_sectionlist_enum_T_TM(&outC->_L1, P021_section_in);
-  if ((kcg_lit_int64(0) <= outC->_L20) & (outC->_L20 < kcg_lit_int64(33))) {
+  if ((kcg_lit_int32(0) <= outC->_L20) & (outC->_L20 < kcg_lit_int32(33))) {
     kcg_copy_P021_section_enum_T_TM(&outC->_L21, &outC->_L1[outC->_L20]);
   }
   else {
@@ -53,44 +53,44 @@ void C_P021_to_legacy_loop_init_TM_conversions(
   static kcg_size idx1;
 
   outC->_L166 = kcg_true;
-  outC->_L167 = kcg_lit_int64(0);
+  outC->_L167 = kcg_lit_int32(0);
   outC->_L168 = Q_GDIR_downhill;
-  outC->_L169 = kcg_lit_int64(0);
+  outC->_L169 = kcg_lit_int32(0);
   outC->_L134 = Q_SCALE_10_cm_scale;
   outC->_L133 = Q_DIR_Reverse;
   outC->_L132.valid = kcg_true;
   outC->_L132.q_dir = Q_DIR_Reverse;
   outC->_L132.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L132.n_iter = kcg_lit_int64(0);
+  outC->_L132.n_iter = kcg_lit_int32(0);
   for (idx = 0; idx < 33; idx++) {
     outC->_L132.sections[idx].valid = kcg_true;
-    outC->_L132.sections[idx].d_gradient = kcg_lit_int64(0);
+    outC->_L132.sections[idx].d_gradient = kcg_lit_int32(0);
     outC->_L132.sections[idx].q_gdir = Q_GDIR_downhill;
-    outC->_L132.sections[idx].g_a = kcg_lit_int64(0);
+    outC->_L132.sections[idx].g_a = kcg_lit_int32(0);
   }
   outC->_L21.valid = kcg_true;
-  outC->_L21.d_gradient = kcg_lit_int64(0);
+  outC->_L21.d_gradient = kcg_lit_int32(0);
   outC->_L21.q_gdir = Q_GDIR_downhill;
-  outC->_L21.g_a = kcg_lit_int64(0);
-  outC->_L20 = kcg_lit_int64(0);
+  outC->_L21.g_a = kcg_lit_int32(0);
+  outC->_L20 = kcg_lit_int32(0);
   outC->_L2.valid = kcg_true;
   outC->_L2.q_dir = Q_DIR_Reverse;
   outC->_L2.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L2.d_gradient = kcg_lit_int64(0);
+  outC->_L2.d_gradient = kcg_lit_int32(0);
   outC->_L2.q_gdir = Q_GDIR_downhill;
-  outC->_L2.g_a = kcg_lit_int64(0);
+  outC->_L2.g_a = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 33; idx1++) {
     outC->_L1[idx1].valid = kcg_true;
-    outC->_L1[idx1].d_gradient = kcg_lit_int64(0);
+    outC->_L1[idx1].d_gradient = kcg_lit_int32(0);
     outC->_L1[idx1].q_gdir = Q_GDIR_downhill;
-    outC->_L1[idx1].g_a = kcg_lit_int64(0);
+    outC->_L1[idx1].g_a = kcg_lit_int32(0);
   }
   outC->P015_legacy_out.valid = kcg_true;
   outC->P015_legacy_out.q_dir = Q_DIR_Reverse;
   outC->P015_legacy_out.q_scale = Q_SCALE_10_cm_scale;
-  outC->P015_legacy_out.d_gradient = kcg_lit_int64(0);
+  outC->P015_legacy_out.d_gradient = kcg_lit_int32(0);
   outC->P015_legacy_out.q_gdir = Q_GDIR_downhill;
-  outC->P015_legacy_out.g_a = kcg_lit_int64(0);
+  outC->P015_legacy_out.g_a = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

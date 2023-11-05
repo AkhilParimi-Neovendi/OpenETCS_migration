@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _MEM_locationOfReferenceLRBG_EVC_MEM_Support_Pkg_H_
 #define _MEM_locationOfReferenceLRBG_EVC_MEM_Support_Pkg_H_
@@ -40,7 +40,7 @@ typedef struct {
   kcg_bool /* _L16/ */ _L16;
   Location_T_Obu_BasicTypes_Pkg /* _L17/ */ _L17;
   kcg_bool /* _L18/ */ _L18;
-  kcg_int64 /* _L19/ */ _L19;
+  kcg_int32 /* _L19/ */ _L19;
   trainProperties_T_TrainPosition_Types_Pck /* _L20/ */ _L20;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L21/ */ _L21;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L22/ */ _L22;
@@ -72,6 +72,6 @@ extern void MEM_locationOfReferenceLRBG_init_EVC_MEM_Support_Pkg(
 #endif /* _MEM_locationOfReferenceLRBG_EVC_MEM_Support_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** MEM_locationOfReferenceLRBG_EVC_MEM_Support_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

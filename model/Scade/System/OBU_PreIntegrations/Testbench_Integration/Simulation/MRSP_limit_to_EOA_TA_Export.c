@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,7 +10,7 @@
 /* TA_Export::MRSP_limit_to_EOA/ */
 void MRSP_limit_to_EOA_TA_Export(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* MRSP/ */
   MRSP_Profile_t_TrackAtlasTypes *MRSP,
   /* EoA/ */
@@ -19,7 +19,7 @@ void MRSP_limit_to_EOA_TA_Export(
 {
   outC->_L1 = i;
   kcg_copy_MRSP_Profile_t_TrackAtlasTypes(&outC->_L3, MRSP);
-  if ((kcg_lit_int64(0) <= outC->_L1) & (outC->_L1 < kcg_lit_int64(110))) {
+  if ((kcg_lit_int32(0) <= outC->_L1) & (outC->_L1 < kcg_lit_int32(110))) {
     kcg_copy_MRSP_section_t_TrackAtlasTypes(&outC->_L226, &outC->_L3[outC->_L1]);
   }
   else {
@@ -68,11 +68,11 @@ void MRSP_limit_to_EOA_TA_Export(
     &outC->_L255,
     (MRSP_section_t_TrackAtlasTypes *) &DEFAULT_MRSP_section_TA_Export);
   outC->_L253 = END_OF_SSP_encoding_TA_Export;
-  outC->_L251 = kcg_lit_int64(1);
+  outC->_L251 = kcg_lit_int32(1);
   outC->_L248 = i;
   outC->_L250 = outC->_L248 - outC->_L251;
   kcg_copy_MRSP_Profile_t_TrackAtlasTypes(&outC->_L247, MRSP);
-  if ((kcg_lit_int64(0) <= outC->_L250) & (outC->_L250 < kcg_lit_int64(110))) {
+  if ((kcg_lit_int32(0) <= outC->_L250) & (outC->_L250 < kcg_lit_int32(110))) {
     kcg_copy_MRSP_section_t_TrackAtlasTypes(
       &outC->_L249,
       &outC->_L247[outC->_L250]);
@@ -103,88 +103,88 @@ void MRSP_limit_to_EOA_init_TA_Export(outC_MRSP_limit_to_EOA_TA_Export *outC)
   static kcg_size idx1;
 
   outC->_L257.valid = kcg_true;
-  outC->_L257.Loc_Abs = kcg_lit_int64(0);
-  outC->_L257.Loc_LRBG = kcg_lit_int64(0);
-  outC->_L257.MRS = kcg_lit_int64(0);
+  outC->_L257.Loc_Abs = kcg_lit_int32(0);
+  outC->_L257.Loc_LRBG = kcg_lit_int32(0);
+  outC->_L257.MRS = kcg_lit_int32(0);
   outC->_L256.valid = kcg_true;
-  outC->_L256.Loc_Abs = kcg_lit_int64(0);
-  outC->_L256.Loc_LRBG = kcg_lit_int64(0);
-  outC->_L256.MRS = kcg_lit_int64(0);
+  outC->_L256.Loc_Abs = kcg_lit_int32(0);
+  outC->_L256.Loc_LRBG = kcg_lit_int32(0);
+  outC->_L256.MRS = kcg_lit_int32(0);
   outC->_L255.valid = kcg_true;
-  outC->_L255.Loc_Abs = kcg_lit_int64(0);
-  outC->_L255.Loc_LRBG = kcg_lit_int64(0);
-  outC->_L255.MRS = kcg_lit_int64(0);
+  outC->_L255.Loc_Abs = kcg_lit_int32(0);
+  outC->_L255.Loc_LRBG = kcg_lit_int32(0);
+  outC->_L255.MRS = kcg_lit_int32(0);
   outC->_L254 = kcg_true;
-  outC->_L253 = kcg_lit_int64(0);
-  outC->_L252 = kcg_lit_int64(0);
-  outC->_L251 = kcg_lit_int64(0);
-  outC->_L250 = kcg_lit_int64(0);
+  outC->_L253 = kcg_lit_int32(0);
+  outC->_L252 = kcg_lit_int32(0);
+  outC->_L251 = kcg_lit_int32(0);
+  outC->_L250 = kcg_lit_int32(0);
   for (idx = 0; idx < 110; idx++) {
     outC->_L247[idx].valid = kcg_true;
-    outC->_L247[idx].Loc_Abs = kcg_lit_int64(0);
-    outC->_L247[idx].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L247[idx].MRS = kcg_lit_int64(0);
+    outC->_L247[idx].Loc_Abs = kcg_lit_int32(0);
+    outC->_L247[idx].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L247[idx].MRS = kcg_lit_int32(0);
   }
-  outC->_L248 = kcg_lit_int64(0);
+  outC->_L248 = kcg_lit_int32(0);
   outC->_L249.valid = kcg_true;
-  outC->_L249.Loc_Abs = kcg_lit_int64(0);
-  outC->_L249.Loc_LRBG = kcg_lit_int64(0);
-  outC->_L249.MRS = kcg_lit_int64(0);
+  outC->_L249.Loc_Abs = kcg_lit_int32(0);
+  outC->_L249.Loc_LRBG = kcg_lit_int32(0);
+  outC->_L249.MRS = kcg_lit_int32(0);
   outC->_L245.valid = kcg_true;
-  outC->_L245.Loc_Abs = kcg_lit_int64(0);
-  outC->_L245.Loc_LRBG = kcg_lit_int64(0);
-  outC->_L245.MRS = kcg_lit_int64(0);
+  outC->_L245.Loc_Abs = kcg_lit_int32(0);
+  outC->_L245.Loc_LRBG = kcg_lit_int32(0);
+  outC->_L245.MRS = kcg_lit_int32(0);
   outC->_L244.valid = kcg_true;
-  outC->_L244.Loc_Abs = kcg_lit_int64(0);
-  outC->_L244.Loc_LRBG = kcg_lit_int64(0);
-  outC->_L244.MRS = kcg_lit_int64(0);
-  outC->_L242 = kcg_lit_int64(0);
-  outC->_L241 = kcg_lit_int64(0);
+  outC->_L244.Loc_Abs = kcg_lit_int32(0);
+  outC->_L244.Loc_LRBG = kcg_lit_int32(0);
+  outC->_L244.MRS = kcg_lit_int32(0);
+  outC->_L242 = kcg_lit_int32(0);
+  outC->_L241 = kcg_lit_int32(0);
   outC->_L240 = kcg_true;
   outC->_L239 = kcg_true;
-  outC->_L238 = kcg_lit_int64(0);
-  outC->_L237 = kcg_lit_int64(0);
+  outC->_L238 = kcg_lit_int32(0);
+  outC->_L237 = kcg_lit_int32(0);
   outC->_L236 = kcg_true;
-  outC->_L235 = kcg_lit_int64(0);
+  outC->_L235 = kcg_lit_int32(0);
   outC->_L233.valid = kcg_true;
-  outC->_L233.Loc_Abs = kcg_lit_int64(0);
-  outC->_L233.Loc_LRBG = kcg_lit_int64(0);
-  outC->_L233.MRS = kcg_lit_int64(0);
+  outC->_L233.Loc_Abs = kcg_lit_int32(0);
+  outC->_L233.Loc_LRBG = kcg_lit_int32(0);
+  outC->_L233.MRS = kcg_lit_int32(0);
   outC->_L231.valid = kcg_true;
-  outC->_L231.Loc_Abs = kcg_lit_int64(0);
-  outC->_L231.Loc_LRBG = kcg_lit_int64(0);
-  outC->_L231.MRS = kcg_lit_int64(0);
+  outC->_L231.Loc_Abs = kcg_lit_int32(0);
+  outC->_L231.Loc_LRBG = kcg_lit_int32(0);
+  outC->_L231.MRS = kcg_lit_int32(0);
   outC->_L230.valid = kcg_true;
-  outC->_L230.Loc_Abs = kcg_lit_int64(0);
-  outC->_L230.Loc_LRBG = kcg_lit_int64(0);
-  outC->_L230.MRS = kcg_lit_int64(0);
+  outC->_L230.Loc_Abs = kcg_lit_int32(0);
+  outC->_L230.Loc_LRBG = kcg_lit_int32(0);
+  outC->_L230.MRS = kcg_lit_int32(0);
   outC->_L229 = kcg_true;
-  outC->_L227 = kcg_lit_int64(0);
+  outC->_L227 = kcg_lit_int32(0);
   outC->_L226.valid = kcg_true;
-  outC->_L226.Loc_Abs = kcg_lit_int64(0);
-  outC->_L226.Loc_LRBG = kcg_lit_int64(0);
-  outC->_L226.MRS = kcg_lit_int64(0);
+  outC->_L226.Loc_Abs = kcg_lit_int32(0);
+  outC->_L226.Loc_LRBG = kcg_lit_int32(0);
+  outC->_L226.MRS = kcg_lit_int32(0);
   outC->_L225 = kcg_true;
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L4 = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 110; idx1++) {
     outC->_L3[idx1].valid = kcg_true;
-    outC->_L3[idx1].Loc_Abs = kcg_lit_int64(0);
-    outC->_L3[idx1].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L3[idx1].MRS = kcg_lit_int64(0);
+    outC->_L3[idx1].Loc_Abs = kcg_lit_int32(0);
+    outC->_L3[idx1].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L3[idx1].MRS = kcg_lit_int32(0);
   }
-  outC->_L1 = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
   outC->MRSP_section1.valid = kcg_true;
-  outC->MRSP_section1.Loc_Abs = kcg_lit_int64(0);
-  outC->MRSP_section1.Loc_LRBG = kcg_lit_int64(0);
-  outC->MRSP_section1.MRS = kcg_lit_int64(0);
+  outC->MRSP_section1.Loc_Abs = kcg_lit_int32(0);
+  outC->MRSP_section1.Loc_LRBG = kcg_lit_int32(0);
+  outC->MRSP_section1.MRS = kcg_lit_int32(0);
   outC->MRSP_section0.valid = kcg_true;
-  outC->MRSP_section0.Loc_Abs = kcg_lit_int64(0);
-  outC->MRSP_section0.Loc_LRBG = kcg_lit_int64(0);
-  outC->MRSP_section0.MRS = kcg_lit_int64(0);
+  outC->MRSP_section0.Loc_Abs = kcg_lit_int32(0);
+  outC->MRSP_section0.Loc_LRBG = kcg_lit_int32(0);
+  outC->MRSP_section0.MRS = kcg_lit_int32(0);
   outC->limited.valid = kcg_true;
-  outC->limited.Loc_Abs = kcg_lit_int64(0);
-  outC->limited.Loc_LRBG = kcg_lit_int64(0);
-  outC->limited.MRS = kcg_lit_int64(0);
+  outC->limited.Loc_Abs = kcg_lit_int32(0);
+  outC->limited.Loc_LRBG = kcg_lit_int32(0);
+  outC->limited.MRS = kcg_lit_int32(0);
   outC->cont = kcg_true;
 }
 #endif /* KCG_USER_DEFINED_INIT */
@@ -200,6 +200,6 @@ void MRSP_limit_to_EOA_reset_TA_Export(outC_MRSP_limit_to_EOA_TA_Export *outC)
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** MRSP_limit_to_EOA_TA_Export.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

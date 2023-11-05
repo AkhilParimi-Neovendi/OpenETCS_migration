@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _CAST_DMI_EVC_Level_Data_to_int1_DATA_Packets_EVC_to_DMI_H_
 #define _CAST_DMI_EVC_Level_Data_to_int1_DATA_Packets_EVC_to_DMI_H_
@@ -29,10 +29,10 @@ typedef struct {
   kcg_bool /* _L5/ */ _L5;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L4/ */ _L4;
   DMI_LevelList_T_DMI_Types_Pkg /* _L3/ */ _L3;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L6/ */ _L6;
   DMI_LevelList_int_array_T_DATA /* _L7/ */ _L7;
   DMI_EVC_Level_Data_T_DMI_Messages_EVC_to_DMI_Pkg /* _L8/ */ _L8;
-  array_int64_2 /* _L9/ */ _L9;
+  array_int32_2 /* _L9/ */ _L9;
 } outC_CAST_DMI_EVC_Level_Data_to_int1_DATA_Packets_EVC_to_DMI;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -57,6 +57,6 @@ extern void CAST_DMI_EVC_Level_Data_to_int1_init_DATA_Packets_EVC_to_DMI(
 #endif /* _CAST_DMI_EVC_Level_Data_to_int1_DATA_Packets_EVC_to_DMI_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_DMI_EVC_Level_Data_to_int1_DATA_Packets_EVC_to_DMI.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

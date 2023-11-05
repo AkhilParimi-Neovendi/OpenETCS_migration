@@ -44,18 +44,18 @@ void RTTP058_SIDAQI_init_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg_RBC_RadioTrac
   outC_RTTP058_SIDAQI_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg_RBC_RadioTrackTrainPacket058_Pkg *outC)
 {
   outC->_L9 = Q_LGTLOC_Min_safe_rear_end;
-  outC->_L7.d_loc = kcg_lit_int64(0);
+  outC->_L7.d_loc = kcg_lit_int32(0);
   outC->_L7.q_lgtloc = Q_LGTLOC_Min_safe_rear_end;
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L6.D_LOC = kcg_lit_int64(0);
-  outC->_L6.Q_LGTLOC = kcg_lit_int64(0);
-  outC->_L5.D_LOC = kcg_lit_int64(0);
-  outC->_L5.Q_LGTLOC = kcg_lit_int64(0);
-  outC->_L4.D_LOC = kcg_lit_int64(0);
-  outC->_L4.Q_LGTLOC = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->outIncrementalDistanceAndQualifier.D_LOC = kcg_lit_int64(0);
-  outC->outIncrementalDistanceAndQualifier.Q_LGTLOC = kcg_lit_int64(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L6.D_LOC = kcg_lit_int32(0);
+  outC->_L6.Q_LGTLOC = kcg_lit_int32(0);
+  outC->_L5.D_LOC = kcg_lit_int32(0);
+  outC->_L5.Q_LGTLOC = kcg_lit_int32(0);
+  outC->_L4.D_LOC = kcg_lit_int32(0);
+  outC->_L4.Q_LGTLOC = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->outIncrementalDistanceAndQualifier.D_LOC = kcg_lit_int32(0);
+  outC->outIncrementalDistanceAndQualifier.Q_LGTLOC = kcg_lit_int32(0);
   /* _L3=(TM_conversions::CAST_Q_LGTLOC_to_int#1)/ */
   CAST_Q_LGTLOC_to_int_init_TM_conversions(
     &outC->Context_CAST_Q_LGTLOC_to_int_1);

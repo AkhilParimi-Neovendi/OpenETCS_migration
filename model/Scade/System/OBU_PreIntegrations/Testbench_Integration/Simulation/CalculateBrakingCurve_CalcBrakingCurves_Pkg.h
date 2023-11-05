@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _CalculateBrakingCurve_CalcBrakingCurves_Pkg_H_
 #define _CalculateBrakingCurve_CalcBrakingCurves_Pkg_H_
@@ -31,9 +31,9 @@ typedef struct {
   kcg_bool every;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L9/ */ _L9;
-  _12_array /* _L11/ */ _L11;
-  array_float64_113 /* _L12/ */ _L12;
+  kcg_int32 /* _L9/ */ _L9;
+  _11_array /* _L11/ */ _L11;
+  array_float32_113 /* _L12/ */ _L12;
   ASafe_T_CalcBrakingCurves_types /* _L13/ */ _L13;
   L_internal_real_Type_SDM_Types_Pkg /* _L15/ */ _L15;
   BCAccumulator_type_CalcBrakingCurves_Pkg /* _L19/ */ _L19;
@@ -74,6 +74,6 @@ extern void CalculateBrakingCurve_init_CalcBrakingCurves_Pkg(
 #endif /* _CalculateBrakingCurve_CalcBrakingCurves_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CalculateBrakingCurve_CalcBrakingCurves_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

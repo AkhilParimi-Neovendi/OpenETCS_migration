@@ -29,7 +29,7 @@ typedef struct {
   T_TRAIN /* _L2/ */ _L2;
   Clock_T /* _L3/ */ _L3;
   T_TRAIN /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
 } outC_Clock__Tick_RBC_Time_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

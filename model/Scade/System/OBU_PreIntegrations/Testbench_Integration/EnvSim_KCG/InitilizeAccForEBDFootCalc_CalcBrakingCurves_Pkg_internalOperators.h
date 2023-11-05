@@ -36,12 +36,12 @@ typedef struct {
   ASafe_T_CalcBrakingCurves_types /* _L3/ */ _L3;
   Target_real_T_TargetManagement_types /* _L1/ */ _L1;
   L_internal_real_Type_SDM_Types_Pkg /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   V_internal_real_Type_SDM_Types_Pkg /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L12/ */ _L12;
   L_internal_real_Type_SDM_Types_Pkg /* _L13/ */ _L13;
   V_internal_real_Type_SDM_Types_Pkg /* _L14/ */ _L14;
-  kcg_float64 /* _L15/ */ _L15;
+  kcg_float32 /* _L15/ */ _L15;
   V_odometry_Type_Obu_BasicTypes_Pkg /* _L16/ */ _L16;
   BCAccumulator_type_CalcBrakingCurves_Pkg /* _L17/ */ _L17;
   ASafeDistanceDefinition_T_CalcBrakingCurves_types /* _L18/ */ _L18;

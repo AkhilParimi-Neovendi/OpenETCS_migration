@@ -10,9 +10,9 @@
 /* DATA::Variables::CAST_int_to_DMI_level/ */
 void CAST_int_to_DMI_level_DATA_Variables(
   /* level_int/ */
-  kcg_int64 level_int,
+  kcg_int32 level_int,
   /* nid_stm_int/ */
-  kcg_int64 nid_stm_int,
+  kcg_int32 nid_stm_int,
   outC_CAST_int_to_DMI_level_DATA_Variables *outC)
 {
   outC->_L18 = level_int;
@@ -33,11 +33,11 @@ void CAST_int_to_DMI_level_init_DATA_Variables(
 {
   outC->_L20 = M_LEVEL_Level_0;
   outC->_L19.level = M_LEVEL_Level_0;
-  outC->_L19.nid_stm = kcg_lit_int64(0);
-  outC->_L18 = kcg_lit_int64(0);
-  outC->_L17 = kcg_lit_int64(0);
+  outC->_L19.nid_stm = kcg_lit_int32(0);
+  outC->_L18 = kcg_lit_int32(0);
+  outC->_L17 = kcg_lit_int32(0);
   outC->dmi_level_ct.level = M_LEVEL_Level_0;
-  outC->dmi_level_ct.nid_stm = kcg_lit_int64(0);
+  outC->dmi_level_ct.nid_stm = kcg_lit_int32(0);
   /* _L20=(TM_conversions::CAST_Int_to_M_LEVEL#1)/ */
   CAST_Int_to_M_LEVEL_init_TM_conversions(&outC->Context_CAST_Int_to_M_LEVEL_1);
 }

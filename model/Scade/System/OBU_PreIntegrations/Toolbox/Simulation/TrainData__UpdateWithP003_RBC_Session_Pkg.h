@@ -37,7 +37,7 @@ typedef struct {
   Radio_TrainTrack_Message_T_Radio_Types_Pkg /* _L6/ */ _L6;
   PT3_OnboardTelephoneNumbers_T_Packet_TrainTypes_Pkg /* _L5/ */ _L5;
   TrainData_T /* _L4/ */ _L4;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   aNID_RADIO_T_Packet_TrainTypes_Pkg /* _L2/ */ _L2;
   outPackets_T_Common_Types_Pkg /* _L1/ */ _L1;
   TrainData_T /* _L9/ */ _L9;

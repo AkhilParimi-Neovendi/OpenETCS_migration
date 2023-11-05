@@ -10,7 +10,7 @@
 /* TM_lib_internal::RECV_LookupPacket/ */
 void RECV_LookupPacket_TM_lib_internal(
   /* Message_ID/ */
-  kcg_int64 Message_ID,
+  kcg_int32 Message_ID,
   /* HeadersIN/ */
   Metadata_T_Common_Types_Pkg *HeadersIN,
   /* F_version/ */
@@ -53,7 +53,7 @@ void RECV_LookupPacket_TM_lib_internal(
       kcg_copy_MetadataElement_T_Common_Types_Pkg(&acc, &outC->_L23);
       /* _L4=(TM_lib_internal::RECV_LookupPacketLoop#1)/ */
       RECV_LookupPacketLoop_TM_lib_internal(
-        /* _L4= */(kcg_int64) idx3,
+        /* _L4= */(kcg_int32) idx3,
         &acc,
         &outC->_L1[idx3],
         outC->_L3[idx3],
@@ -63,7 +63,7 @@ void RECV_LookupPacket_TM_lib_internal(
       kcg_copy_MetadataElement_T_Common_Types_Pkg(
         &outC->_L23,
         &outC->Context_RECV_LookupPacketLoop_1[idx3].HeaderFound);
-      outC->_L4 = /* _L4= */(kcg_int64) (idx3 + 1);
+      outC->_L4 = /* _L4= */(kcg_int32) (idx3 + 1);
       /* _L4= */
       if (!outC->Context_RECV_LookupPacketLoop_1[idx3].Cont) {
         break;
@@ -71,7 +71,7 @@ void RECV_LookupPacket_TM_lib_internal(
     }
   }
   else {
-    outC->_L4 = kcg_lit_int64(0);
+    outC->_L4 = kcg_lit_int32(0);
   }
   outC->_L45 = outC->_L23.valid;
   outC->_L24 = outC->_L23.nid_packet;
@@ -98,7 +98,7 @@ void RECV_LookupPacket_TM_lib_internal(
     kcg_copy_MetadataElement_T_Common_Types_Pkg(&outC->_L26, &outC->_L27);
   }
   kcg_copy_MetadataElement_T_Common_Types_Pkg(&outC->HeaderFound, &outC->_L26);
-  outC->_L29 = kcg_lit_int64(1);
+  outC->_L29 = kcg_lit_int32(1);
   outC->_L28 = outC->_L4 - outC->_L29;
   outC->Index = outC->_L28;
   outC->Found = outC->_L44;
@@ -125,51 +125,51 @@ void RECV_LookupPacket_init_TM_lib_internal(
   }
   outC->_L36 = kcg_true;
   outC->_L35 = kcg_true;
-  outC->_L34 = kcg_lit_int64(0);
+  outC->_L34 = kcg_lit_int32(0);
   outC->_L32 = kcg_true;
   outC->_L31 = kcg_true;
   outC->_L30 = kcg_true;
-  outC->_L29 = kcg_lit_int64(0);
-  outC->_L28 = kcg_lit_int64(0);
-  outC->_L27.nid_packet = kcg_lit_int64(0);
+  outC->_L29 = kcg_lit_int32(0);
+  outC->_L28 = kcg_lit_int32(0);
+  outC->_L27.nid_packet = kcg_lit_int32(0);
   outC->_L27.q_dir = Q_DIR_Reverse;
   outC->_L27.valid = kcg_true;
-  outC->_L27.startAddress = kcg_lit_int64(0);
-  outC->_L27.endAddress = kcg_lit_int64(0);
-  outC->_L22.nid_packet = kcg_lit_int64(0);
+  outC->_L27.startAddress = kcg_lit_int32(0);
+  outC->_L27.endAddress = kcg_lit_int32(0);
+  outC->_L22.nid_packet = kcg_lit_int32(0);
   outC->_L22.q_dir = Q_DIR_Reverse;
   outC->_L22.valid = kcg_true;
-  outC->_L22.startAddress = kcg_lit_int64(0);
-  outC->_L22.endAddress = kcg_lit_int64(0);
-  outC->_L26.nid_packet = kcg_lit_int64(0);
+  outC->_L22.startAddress = kcg_lit_int32(0);
+  outC->_L22.endAddress = kcg_lit_int32(0);
+  outC->_L26.nid_packet = kcg_lit_int32(0);
   outC->_L26.q_dir = Q_DIR_Reverse;
   outC->_L26.valid = kcg_true;
-  outC->_L26.startAddress = kcg_lit_int64(0);
-  outC->_L26.endAddress = kcg_lit_int64(0);
-  outC->_L24 = kcg_lit_int64(0);
-  outC->_L23.nid_packet = kcg_lit_int64(0);
+  outC->_L26.startAddress = kcg_lit_int32(0);
+  outC->_L26.endAddress = kcg_lit_int32(0);
+  outC->_L24 = kcg_lit_int32(0);
+  outC->_L23.nid_packet = kcg_lit_int32(0);
   outC->_L23.q_dir = Q_DIR_Reverse;
   outC->_L23.valid = kcg_true;
-  outC->_L23.startAddress = kcg_lit_int64(0);
-  outC->_L23.endAddress = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L23.startAddress = kcg_lit_int32(0);
+  outC->_L23.endAddress = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 30; idx3++) {
-    outC->_L3[idx3] = kcg_lit_int64(0);
+    outC->_L3[idx3] = kcg_lit_int32(0);
   }
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 30; idx4++) {
-    outC->_L1[idx4].nid_packet = kcg_lit_int64(0);
+    outC->_L1[idx4].nid_packet = kcg_lit_int32(0);
     outC->_L1[idx4].q_dir = Q_DIR_Reverse;
     outC->_L1[idx4].valid = kcg_true;
-    outC->_L1[idx4].startAddress = kcg_lit_int64(0);
-    outC->_L1[idx4].endAddress = kcg_lit_int64(0);
+    outC->_L1[idx4].startAddress = kcg_lit_int32(0);
+    outC->_L1[idx4].endAddress = kcg_lit_int32(0);
   }
-  outC->HeaderFound.nid_packet = kcg_lit_int64(0);
+  outC->HeaderFound.nid_packet = kcg_lit_int32(0);
   outC->HeaderFound.q_dir = Q_DIR_Reverse;
   outC->HeaderFound.valid = kcg_true;
-  outC->HeaderFound.startAddress = kcg_lit_int64(0);
-  outC->HeaderFound.endAddress = kcg_lit_int64(0);
-  outC->Index = kcg_lit_int64(0);
+  outC->HeaderFound.startAddress = kcg_lit_int32(0);
+  outC->HeaderFound.endAddress = kcg_lit_int32(0);
+  outC->Index = kcg_lit_int32(0);
   outC->Found = kcg_true;
   /* _L30=(TM_lib_internal::T_Filter_Metadata#1)/ */
   T_Filter_Metadata_init_TM_lib_internal(&outC->Context_T_Filter_Metadata_1);

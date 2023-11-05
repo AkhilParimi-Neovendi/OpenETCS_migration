@@ -44,16 +44,16 @@ void CompareSectionTimer_init_TA_MA_Request(
   outC->_L9 = kcg_true;
   outC->_L8 = kcg_true;
   outC->_L7 = kcg_true;
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L2.valid = kcg_true;
   outC->_L2.q_endsection = kcg_true;
-  outC->_L2.l_section = kcg_lit_int64(0);
+  outC->_L2.l_section = kcg_lit_int32(0);
   outC->_L2.q_sectiontimer = kcg_true;
-  outC->_L2.t_sectiontimer = kcg_lit_int64(0);
-  outC->_L2.d_sectiontimerstoploc = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->smallestTimer = kcg_lit_int64(0);
+  outC->_L2.t_sectiontimer = kcg_lit_int32(0);
+  outC->_L2.d_sectiontimerstoploc = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->smallestTimer = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -271,51 +271,51 @@ void SelectLevelTransition_init_LevelTransitionSelection(
   for (idx = 0; idx < 7; idx++) {
     outC->_L33[idx].is_set = kcg_true;
     outC->_L33[idx].transition.level = M_LEVEL_Level_0;
-    outC->_L33[idx].transition.position = kcg_lit_int64(0);
+    outC->_L33[idx].transition.position = kcg_lit_int32(0);
     outC->_L33[idx].transition.transitionType =
       M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
     outC->_L33[idx].transition.immediateAck = kcg_true;
-    outC->_L33[idx].transition.AckLength = kcg_lit_int64(0);
-    outC->_L33[idx].LRBG = kcg_lit_int64(0);
-    outC->_L33[idx].referenceLocation = kcg_lit_int64(0);
+    outC->_L33[idx].transition.AckLength = kcg_lit_int32(0);
+    outC->_L33[idx].LRBG = kcg_lit_int32(0);
+    outC->_L33[idx].referenceLocation = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 7; idx1++) {
     outC->_L32[idx1].is_set = kcg_true;
     outC->_L32[idx1].transition.level = M_LEVEL_Level_0;
-    outC->_L32[idx1].transition.position = kcg_lit_int64(0);
+    outC->_L32[idx1].transition.position = kcg_lit_int32(0);
     outC->_L32[idx1].transition.transitionType =
       M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
     outC->_L32[idx1].transition.immediateAck = kcg_true;
-    outC->_L32[idx1].transition.AckLength = kcg_lit_int64(0);
-    outC->_L32[idx1].LRBG = kcg_lit_int64(0);
-    outC->_L32[idx1].referenceLocation = kcg_lit_int64(0);
+    outC->_L32[idx1].transition.AckLength = kcg_lit_int32(0);
+    outC->_L32[idx1].LRBG = kcg_lit_int32(0);
+    outC->_L32[idx1].referenceLocation = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 7; idx2++) {
     outC->_L27.level_transition_priority_table[idx2].is_set = kcg_true;
     outC->_L27.level_transition_priority_table[idx2].transition.level =
       M_LEVEL_Level_0;
     outC->_L27.level_transition_priority_table[idx2].transition.position =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L27.level_transition_priority_table[idx2].transition.transitionType =
       M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
     outC->_L27.level_transition_priority_table[idx2].transition.immediateAck =
       kcg_true;
     outC->_L27.level_transition_priority_table[idx2].transition.AckLength =
-      kcg_lit_int64(0);
-    outC->_L27.level_transition_priority_table[idx2].LRBG = kcg_lit_int64(0);
+      kcg_lit_int32(0);
+    outC->_L27.level_transition_priority_table[idx2].LRBG = kcg_lit_int32(0);
     outC->_L27.level_transition_priority_table[idx2].referenceLocation =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 7; idx3++) {
     outC->_L27.conditionnalTransition[idx3].is_set = kcg_true;
     outC->_L27.conditionnalTransition[idx3].transition.level = M_LEVEL_Level_0;
-    outC->_L27.conditionnalTransition[idx3].transition.position = kcg_lit_int64(0);
+    outC->_L27.conditionnalTransition[idx3].transition.position = kcg_lit_int32(0);
     outC->_L27.conditionnalTransition[idx3].transition.transitionType =
       M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
     outC->_L27.conditionnalTransition[idx3].transition.immediateAck = kcg_true;
-    outC->_L27.conditionnalTransition[idx3].transition.AckLength = kcg_lit_int64(0);
-    outC->_L27.conditionnalTransition[idx3].LRBG = kcg_lit_int64(0);
-    outC->_L27.conditionnalTransition[idx3].referenceLocation = kcg_lit_int64(0);
+    outC->_L27.conditionnalTransition[idx3].transition.AckLength = kcg_lit_int32(0);
+    outC->_L27.conditionnalTransition[idx3].LRBG = kcg_lit_int32(0);
+    outC->_L27.conditionnalTransition[idx3].referenceLocation = kcg_lit_int32(0);
   }
   outC->_L27.receivedL2L3MA_track = kcg_true;
   outC->_L27.receivedL1MA_track = kcg_true;
@@ -324,74 +324,74 @@ void SelectLevelTransition_init_LevelTransitionSelection(
   for (idx4 = 0; idx4 < 7; idx4++) {
     outC->_L29[idx4].is_set = kcg_true;
     outC->_L29[idx4].transition.level = M_LEVEL_Level_0;
-    outC->_L29[idx4].transition.position = kcg_lit_int64(0);
+    outC->_L29[idx4].transition.position = kcg_lit_int32(0);
     outC->_L29[idx4].transition.transitionType =
       M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
     outC->_L29[idx4].transition.immediateAck = kcg_true;
-    outC->_L29[idx4].transition.AckLength = kcg_lit_int64(0);
-    outC->_L29[idx4].LRBG = kcg_lit_int64(0);
-    outC->_L29[idx4].referenceLocation = kcg_lit_int64(0);
+    outC->_L29[idx4].transition.AckLength = kcg_lit_int32(0);
+    outC->_L29[idx4].LRBG = kcg_lit_int32(0);
+    outC->_L29[idx4].referenceLocation = kcg_lit_int32(0);
   }
   for (idx5 = 0; idx5 < 7; idx5++) {
     outC->_L28[idx5].is_set = kcg_true;
     outC->_L28[idx5].transition.level = M_LEVEL_Level_0;
-    outC->_L28[idx5].transition.position = kcg_lit_int64(0);
+    outC->_L28[idx5].transition.position = kcg_lit_int32(0);
     outC->_L28[idx5].transition.transitionType =
       M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
     outC->_L28[idx5].transition.immediateAck = kcg_true;
-    outC->_L28[idx5].transition.AckLength = kcg_lit_int64(0);
-    outC->_L28[idx5].LRBG = kcg_lit_int64(0);
-    outC->_L28[idx5].referenceLocation = kcg_lit_int64(0);
+    outC->_L28[idx5].transition.AckLength = kcg_lit_int32(0);
+    outC->_L28[idx5].LRBG = kcg_lit_int32(0);
+    outC->_L28[idx5].referenceLocation = kcg_lit_int32(0);
   }
   outC->_L26 = kcg_true;
   outC->_L25.is_set = kcg_true;
   outC->_L25.transition.level = M_LEVEL_Level_0;
-  outC->_L25.transition.position = kcg_lit_int64(0);
+  outC->_L25.transition.position = kcg_lit_int32(0);
   outC->_L25.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L25.transition.immediateAck = kcg_true;
-  outC->_L25.transition.AckLength = kcg_lit_int64(0);
-  outC->_L25.LRBG = kcg_lit_int64(0);
-  outC->_L25.referenceLocation = kcg_lit_int64(0);
+  outC->_L25.transition.AckLength = kcg_lit_int32(0);
+  outC->_L25.LRBG = kcg_lit_int32(0);
+  outC->_L25.referenceLocation = kcg_lit_int32(0);
   outC->_L24 = kcg_true;
   outC->_L23.is_set = kcg_true;
   outC->_L23.transition.level = M_LEVEL_Level_0;
-  outC->_L23.transition.position = kcg_lit_int64(0);
+  outC->_L23.transition.position = kcg_lit_int32(0);
   outC->_L23.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L23.transition.immediateAck = kcg_true;
-  outC->_L23.transition.AckLength = kcg_lit_int64(0);
-  outC->_L23.LRBG = kcg_lit_int64(0);
-  outC->_L23.referenceLocation = kcg_lit_int64(0);
+  outC->_L23.transition.AckLength = kcg_lit_int32(0);
+  outC->_L23.LRBG = kcg_lit_int32(0);
+  outC->_L23.referenceLocation = kcg_lit_int32(0);
   outC->_L22 = kcg_true;
   outC->_L21 = kcg_true;
   outC->_L18.is_set = kcg_true;
   outC->_L18.transition.level = M_LEVEL_Level_0;
-  outC->_L18.transition.position = kcg_lit_int64(0);
+  outC->_L18.transition.position = kcg_lit_int32(0);
   outC->_L18.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L18.transition.immediateAck = kcg_true;
-  outC->_L18.transition.AckLength = kcg_lit_int64(0);
-  outC->_L18.LRBG = kcg_lit_int64(0);
-  outC->_L18.referenceLocation = kcg_lit_int64(0);
+  outC->_L18.transition.AckLength = kcg_lit_int32(0);
+  outC->_L18.LRBG = kcg_lit_int32(0);
+  outC->_L18.referenceLocation = kcg_lit_int32(0);
   outC->_L17.is_set = kcg_true;
   outC->_L17.transition.level = M_LEVEL_Level_0;
-  outC->_L17.transition.position = kcg_lit_int64(0);
+  outC->_L17.transition.position = kcg_lit_int32(0);
   outC->_L17.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L17.transition.immediateAck = kcg_true;
-  outC->_L17.transition.AckLength = kcg_lit_int64(0);
-  outC->_L17.LRBG = kcg_lit_int64(0);
-  outC->_L17.referenceLocation = kcg_lit_int64(0);
+  outC->_L17.transition.AckLength = kcg_lit_int32(0);
+  outC->_L17.LRBG = kcg_lit_int32(0);
+  outC->_L17.referenceLocation = kcg_lit_int32(0);
   outC->_L16.is_set = kcg_true;
   outC->_L16.transition.level = M_LEVEL_Level_0;
-  outC->_L16.transition.position = kcg_lit_int64(0);
+  outC->_L16.transition.position = kcg_lit_int32(0);
   outC->_L16.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L16.transition.immediateAck = kcg_true;
-  outC->_L16.transition.AckLength = kcg_lit_int64(0);
-  outC->_L16.LRBG = kcg_lit_int64(0);
-  outC->_L16.referenceLocation = kcg_lit_int64(0);
+  outC->_L16.transition.AckLength = kcg_lit_int32(0);
+  outC->_L16.LRBG = kcg_lit_int32(0);
+  outC->_L16.referenceLocation = kcg_lit_int32(0);
   outC->_L12 = kcg_true;
   outC->_L11 = kcg_true;
   outC->_L10 = kcg_true;
@@ -402,107 +402,107 @@ void SelectLevelTransition_init_LevelTransitionSelection(
   outC->_L9.L3 = kcg_true;
   outC->_L8.is_set = kcg_true;
   outC->_L8.transition.level = M_LEVEL_Level_0;
-  outC->_L8.transition.position = kcg_lit_int64(0);
+  outC->_L8.transition.position = kcg_lit_int32(0);
   outC->_L8.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L8.transition.immediateAck = kcg_true;
-  outC->_L8.transition.AckLength = kcg_lit_int64(0);
-  outC->_L8.LRBG = kcg_lit_int64(0);
-  outC->_L8.referenceLocation = kcg_lit_int64(0);
+  outC->_L8.transition.AckLength = kcg_lit_int32(0);
+  outC->_L8.LRBG = kcg_lit_int32(0);
+  outC->_L8.referenceLocation = kcg_lit_int32(0);
   outC->_L7 = kcg_true;
   outC->_L4 = M_LEVEL_Level_0;
   outC->_L3.is_set = kcg_true;
   outC->_L3.transition.level = M_LEVEL_Level_0;
-  outC->_L3.transition.position = kcg_lit_int64(0);
+  outC->_L3.transition.position = kcg_lit_int32(0);
   outC->_L3.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L3.transition.immediateAck = kcg_true;
-  outC->_L3.transition.AckLength = kcg_lit_int64(0);
-  outC->_L3.LRBG = kcg_lit_int64(0);
-  outC->_L3.referenceLocation = kcg_lit_int64(0);
+  outC->_L3.transition.AckLength = kcg_lit_int32(0);
+  outC->_L3.LRBG = kcg_lit_int32(0);
+  outC->_L3.referenceLocation = kcg_lit_int32(0);
   outC->_L2.is_set = kcg_true;
   outC->_L2.transition.level = M_LEVEL_Level_0;
-  outC->_L2.transition.position = kcg_lit_int64(0);
+  outC->_L2.transition.position = kcg_lit_int32(0);
   outC->_L2.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L2.transition.immediateAck = kcg_true;
-  outC->_L2.transition.AckLength = kcg_lit_int64(0);
-  outC->_L2.LRBG = kcg_lit_int64(0);
-  outC->_L2.referenceLocation = kcg_lit_int64(0);
+  outC->_L2.transition.AckLength = kcg_lit_int32(0);
+  outC->_L2.LRBG = kcg_lit_int32(0);
+  outC->_L2.referenceLocation = kcg_lit_int32(0);
   outC->_L1.is_set = kcg_true;
   outC->_L1.transition.level = M_LEVEL_Level_0;
-  outC->_L1.transition.position = kcg_lit_int64(0);
+  outC->_L1.transition.position = kcg_lit_int32(0);
   outC->_L1.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L1.transition.immediateAck = kcg_true;
-  outC->_L1.transition.AckLength = kcg_lit_int64(0);
-  outC->_L1.LRBG = kcg_lit_int64(0);
-  outC->_L1.referenceLocation = kcg_lit_int64(0);
+  outC->_L1.transition.AckLength = kcg_lit_int32(0);
+  outC->_L1.LRBG = kcg_lit_int32(0);
+  outC->_L1.referenceLocation = kcg_lit_int32(0);
   for (idx6 = 0; idx6 < 7; idx6++) {
     outC->Loc_conditionnal_transition_table[idx6].is_set = kcg_true;
     outC->Loc_conditionnal_transition_table[idx6].transition.level =
       M_LEVEL_Level_0;
     outC->Loc_conditionnal_transition_table[idx6].transition.position =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->Loc_conditionnal_transition_table[idx6].transition.transitionType =
       M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
     outC->Loc_conditionnal_transition_table[idx6].transition.immediateAck =
       kcg_true;
     outC->Loc_conditionnal_transition_table[idx6].transition.AckLength =
-      kcg_lit_int64(0);
-    outC->Loc_conditionnal_transition_table[idx6].LRBG = kcg_lit_int64(0);
+      kcg_lit_int32(0);
+    outC->Loc_conditionnal_transition_table[idx6].LRBG = kcg_lit_int32(0);
     outC->Loc_conditionnal_transition_table[idx6].referenceLocation =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx7 = 0; idx7 < 7; idx7++) {
     outC->Loc_normal_transition_table[idx7].is_set = kcg_true;
     outC->Loc_normal_transition_table[idx7].transition.level = M_LEVEL_Level_0;
-    outC->Loc_normal_transition_table[idx7].transition.position = kcg_lit_int64(0);
+    outC->Loc_normal_transition_table[idx7].transition.position = kcg_lit_int32(0);
     outC->Loc_normal_transition_table[idx7].transition.transitionType =
       M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
     outC->Loc_normal_transition_table[idx7].transition.immediateAck = kcg_true;
-    outC->Loc_normal_transition_table[idx7].transition.AckLength = kcg_lit_int64(0);
-    outC->Loc_normal_transition_table[idx7].LRBG = kcg_lit_int64(0);
-    outC->Loc_normal_transition_table[idx7].referenceLocation = kcg_lit_int64(0);
+    outC->Loc_normal_transition_table[idx7].transition.AckLength = kcg_lit_int32(0);
+    outC->Loc_normal_transition_table[idx7].LRBG = kcg_lit_int32(0);
+    outC->Loc_normal_transition_table[idx7].referenceLocation = kcg_lit_int32(0);
   }
   outC->Loc_Conditionnal_Available = kcg_true;
   outC->Loc_Normal_Available = kcg_true;
   outC->last_level_transition.is_set = kcg_true;
   outC->last_level_transition.transition.level = M_LEVEL_Level_0;
-  outC->last_level_transition.transition.position = kcg_lit_int64(0);
+  outC->last_level_transition.transition.position = kcg_lit_int32(0);
   outC->last_level_transition.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->last_level_transition.transition.immediateAck = kcg_true;
-  outC->last_level_transition.transition.AckLength = kcg_lit_int64(0);
-  outC->last_level_transition.LRBG = kcg_lit_int64(0);
-  outC->last_level_transition.referenceLocation = kcg_lit_int64(0);
+  outC->last_level_transition.transition.AckLength = kcg_lit_int32(0);
+  outC->last_level_transition.LRBG = kcg_lit_int32(0);
+  outC->last_level_transition.referenceLocation = kcg_lit_int32(0);
   outC->Loc_Normal.is_set = kcg_true;
   outC->Loc_Normal.transition.level = M_LEVEL_Level_0;
-  outC->Loc_Normal.transition.position = kcg_lit_int64(0);
+  outC->Loc_Normal.transition.position = kcg_lit_int32(0);
   outC->Loc_Normal.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->Loc_Normal.transition.immediateAck = kcg_true;
-  outC->Loc_Normal.transition.AckLength = kcg_lit_int64(0);
-  outC->Loc_Normal.LRBG = kcg_lit_int64(0);
-  outC->Loc_Normal.referenceLocation = kcg_lit_int64(0);
+  outC->Loc_Normal.transition.AckLength = kcg_lit_int32(0);
+  outC->Loc_Normal.LRBG = kcg_lit_int32(0);
+  outC->Loc_Normal.referenceLocation = kcg_lit_int32(0);
   outC->Loc_driver.is_set = kcg_true;
   outC->Loc_driver.transition.level = M_LEVEL_Level_0;
-  outC->Loc_driver.transition.position = kcg_lit_int64(0);
+  outC->Loc_driver.transition.position = kcg_lit_int32(0);
   outC->Loc_driver.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->Loc_driver.transition.immediateAck = kcg_true;
-  outC->Loc_driver.transition.AckLength = kcg_lit_int64(0);
-  outC->Loc_driver.LRBG = kcg_lit_int64(0);
-  outC->Loc_driver.referenceLocation = kcg_lit_int64(0);
+  outC->Loc_driver.transition.AckLength = kcg_lit_int32(0);
+  outC->Loc_driver.LRBG = kcg_lit_int32(0);
+  outC->Loc_driver.referenceLocation = kcg_lit_int32(0);
   outC->Loc_conditionnal.is_set = kcg_true;
   outC->Loc_conditionnal.transition.level = M_LEVEL_Level_0;
-  outC->Loc_conditionnal.transition.position = kcg_lit_int64(0);
+  outC->Loc_conditionnal.transition.position = kcg_lit_int32(0);
   outC->Loc_conditionnal.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->Loc_conditionnal.transition.immediateAck = kcg_true;
-  outC->Loc_conditionnal.transition.AckLength = kcg_lit_int64(0);
-  outC->Loc_conditionnal.LRBG = kcg_lit_int64(0);
-  outC->Loc_conditionnal.referenceLocation = kcg_lit_int64(0);
+  outC->Loc_conditionnal.transition.AckLength = kcg_lit_int32(0);
+  outC->Loc_conditionnal.LRBG = kcg_lit_int32(0);
+  outC->Loc_conditionnal.referenceLocation = kcg_lit_int32(0);
   outC->Loc_normal_set = kcg_true;
   outC->Loc_driver_set = kcg_true;
   outC->Loc_conditionnal_set = kcg_true;
@@ -510,44 +510,44 @@ void SelectLevelTransition_init_LevelTransitionSelection(
   outC->_L3_then_else_IfBlock1 = kcg_true;
   outC->_L2_then_else_IfBlock1.is_set = kcg_true;
   outC->_L2_then_else_IfBlock1.transition.level = M_LEVEL_Level_0;
-  outC->_L2_then_else_IfBlock1.transition.position = kcg_lit_int64(0);
+  outC->_L2_then_else_IfBlock1.transition.position = kcg_lit_int32(0);
   outC->_L2_then_else_IfBlock1.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L2_then_else_IfBlock1.transition.immediateAck = kcg_true;
-  outC->_L2_then_else_IfBlock1.transition.AckLength = kcg_lit_int64(0);
-  outC->_L2_then_else_IfBlock1.LRBG = kcg_lit_int64(0);
-  outC->_L2_then_else_IfBlock1.referenceLocation = kcg_lit_int64(0);
+  outC->_L2_then_else_IfBlock1.transition.AckLength = kcg_lit_int32(0);
+  outC->_L2_then_else_IfBlock1.LRBG = kcg_lit_int32(0);
+  outC->_L2_then_else_IfBlock1.referenceLocation = kcg_lit_int32(0);
   outC->else_clock_else_IfBlock1 = kcg_true;
   outC->_L2_else_else_else_IfBlock1.is_set = kcg_true;
   outC->_L2_else_else_else_IfBlock1.transition.level = M_LEVEL_Level_0;
-  outC->_L2_else_else_else_IfBlock1.transition.position = kcg_lit_int64(0);
+  outC->_L2_else_else_else_IfBlock1.transition.position = kcg_lit_int32(0);
   outC->_L2_else_else_else_IfBlock1.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L2_else_else_else_IfBlock1.transition.immediateAck = kcg_true;
-  outC->_L2_else_else_else_IfBlock1.transition.AckLength = kcg_lit_int64(0);
-  outC->_L2_else_else_else_IfBlock1.LRBG = kcg_lit_int64(0);
-  outC->_L2_else_else_else_IfBlock1.referenceLocation = kcg_lit_int64(0);
+  outC->_L2_else_else_else_IfBlock1.transition.AckLength = kcg_lit_int32(0);
+  outC->_L2_else_else_else_IfBlock1.LRBG = kcg_lit_int32(0);
+  outC->_L2_else_else_else_IfBlock1.referenceLocation = kcg_lit_int32(0);
   outC->_L3_else_else_else_IfBlock1 = kcg_true;
   outC->_L2_then_else_else_IfBlock1.is_set = kcg_true;
   outC->_L2_then_else_else_IfBlock1.transition.level = M_LEVEL_Level_0;
-  outC->_L2_then_else_else_IfBlock1.transition.position = kcg_lit_int64(0);
+  outC->_L2_then_else_else_IfBlock1.transition.position = kcg_lit_int32(0);
   outC->_L2_then_else_else_IfBlock1.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L2_then_else_else_IfBlock1.transition.immediateAck = kcg_true;
-  outC->_L2_then_else_else_IfBlock1.transition.AckLength = kcg_lit_int64(0);
-  outC->_L2_then_else_else_IfBlock1.LRBG = kcg_lit_int64(0);
-  outC->_L2_then_else_else_IfBlock1.referenceLocation = kcg_lit_int64(0);
+  outC->_L2_then_else_else_IfBlock1.transition.AckLength = kcg_lit_int32(0);
+  outC->_L2_then_else_else_IfBlock1.LRBG = kcg_lit_int32(0);
+  outC->_L2_then_else_else_IfBlock1.referenceLocation = kcg_lit_int32(0);
   outC->_L3_then_else_else_IfBlock1 = kcg_true;
   outC->else_clock_IfBlock1 = kcg_true;
   outC->_L2_then_IfBlock1.is_set = kcg_true;
   outC->_L2_then_IfBlock1.transition.level = M_LEVEL_Level_0;
-  outC->_L2_then_IfBlock1.transition.position = kcg_lit_int64(0);
+  outC->_L2_then_IfBlock1.transition.position = kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L2_then_IfBlock1.transition.immediateAck = kcg_true;
-  outC->_L2_then_IfBlock1.transition.AckLength = kcg_lit_int64(0);
-  outC->_L2_then_IfBlock1.LRBG = kcg_lit_int64(0);
-  outC->_L2_then_IfBlock1.referenceLocation = kcg_lit_int64(0);
+  outC->_L2_then_IfBlock1.transition.AckLength = kcg_lit_int32(0);
+  outC->_L2_then_IfBlock1.LRBG = kcg_lit_int32(0);
+  outC->_L2_then_IfBlock1.referenceLocation = kcg_lit_int32(0);
   outC->_L3_then_IfBlock1 = kcg_true;
   /* _L2=(LevelTransitionSelection::SelectDriverCondition#1)/ */
   SelectDriverCondition_init_LevelTransitionSelection(
@@ -613,6 +613,6 @@ void kcg_load_SV_SelectLevelTransition_LevelTransitionSelection(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** SelectLevelTransition_LevelTransitionSelection.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

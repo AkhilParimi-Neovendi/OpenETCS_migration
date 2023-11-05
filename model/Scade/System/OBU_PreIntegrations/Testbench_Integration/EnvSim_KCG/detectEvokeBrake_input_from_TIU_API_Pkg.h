@@ -37,11 +37,11 @@ typedef struct {
   kcg_bool /* _L4/ */ _L4;
   M_MODE /* _L5/ */ _L5;
   Brake_pressure_value_T_TIU_Types_Pkg /* _L7/ */ _L7;
-  kcg_int64 /* _L8/ */ _L8;
+  kcg_int32 /* _L8/ */ _L8;
   kcg_bool /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   kcg_bool /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L12/ */ _L12;
 } outC_detectEvokeBrake_input_from_TIU_API_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

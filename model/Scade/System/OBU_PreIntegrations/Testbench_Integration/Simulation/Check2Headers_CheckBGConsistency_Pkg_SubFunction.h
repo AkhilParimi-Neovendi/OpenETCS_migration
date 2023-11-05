@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _Check2Headers_CheckBGConsistency_Pkg_SubFunction_H_
 #define _Check2Headers_CheckBGConsistency_Pkg_SubFunction_H_
@@ -99,6 +99,6 @@ extern void Check2Headers_init_CheckBGConsistency_Pkg_SubFunction(
 #endif /* _Check2Headers_CheckBGConsistency_Pkg_SubFunction_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Check2Headers_CheckBGConsistency_Pkg_SubFunction.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

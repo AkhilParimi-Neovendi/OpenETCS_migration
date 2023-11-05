@@ -1,12 +1,12 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _CAST_DMI_Available_Menu_to_int_DATA_Variables_H_
 #define _CAST_DMI_Available_Menu_to_int_DATA_Variables_H_
 
 #include "kcg_types.h"
-#include "BoolVect2Int64_digital_30.h"
+#include "BoolVect2Int32_digital_30.h"
 
 /* =====================  no input structure  ====================== */
 
@@ -19,7 +19,7 @@ typedef struct {
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
-  outC_BoolVect2Int64_digital_30 /* _L37=(digital::BoolVect2Int64#1)/ */ Context_BoolVect2Int64_1;
+  outC_BoolVect2Int32_digital_30 /* _L39=(digital::BoolVect2Int32#31)/ */ Context_BoolVect2Int32_31;
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
@@ -55,7 +55,7 @@ typedef struct {
   kcg_bool /* _L3/ */ _L3;
   kcg_bool /* _L2/ */ _L2;
   DMI_Available_Menu_int_T_DATA /* _L33/ */ _L33;
-  kcg_int64 /* _L37/ */ _L37;
+  kcg_int32 /* _L39/ */ _L39;
 } outC_CAST_DMI_Available_Menu_to_int_DATA_Variables;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -80,6 +80,6 @@ extern void CAST_DMI_Available_Menu_to_int_init_DATA_Variables(
 #endif /* _CAST_DMI_Available_Menu_to_int_DATA_Variables_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_DMI_Available_Menu_to_int_DATA_Variables.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

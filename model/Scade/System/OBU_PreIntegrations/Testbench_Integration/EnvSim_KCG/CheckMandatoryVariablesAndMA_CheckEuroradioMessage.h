@@ -181,7 +181,7 @@ typedef struct {
   kcg_bool /* IfBlock1:else:then:_L2/ */ _L2_then_else_IfBlock1;
   RadioMetadata_T_Common_Types_Pkg /* IfBlock1:else:then:_L13/ */ _L13_then_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L14/ */ _L14_then_else_IfBlock1;
-  kcg_int64 /* nid_message/ */ nid_message;
+  kcg_int32 /* nid_message/ */ nid_message;
   RadioMetadata_T_Common_Types_Pkg /* radioMetadata/ */ radioMetadata;
   ReceivedMessage_T_Common_Types_Pkg /* _L1/ */ _L1;
   NID_MESSAGE /* _L2/ */ _L2;

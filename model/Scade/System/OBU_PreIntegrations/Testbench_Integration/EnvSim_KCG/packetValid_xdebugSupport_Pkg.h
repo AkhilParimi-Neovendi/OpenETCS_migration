@@ -25,10 +25,10 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   Metadata_T_Common_Types_Pkg /* _L1/ */ _L1;
   kcg_bool /* _L3/ */ _L3;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   kcg_bool /* _L7/ */ _L7;
   NID_PACKET /* _L13/ */ _L13;
-  array_int64_30 /* _L15/ */ _L15;
+  array_int32_30 /* _L15/ */ _L15;
   kcg_bool /* _L16/ */ _L16;
 } outC_packetValid_xdebugSupport_Pkg;
 

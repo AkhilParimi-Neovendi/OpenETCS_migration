@@ -20,7 +20,7 @@ void CheckLevelExceptions_InformationFilter_Pkg_FirstFilter(
   /* inEmergencyBrakeActive/ */
   kcg_bool inEmergencyBrakeActive,
   /* inLastAckTextMessageId/ */
-  kcg_int64 inLastAckTextMessageId,
+  kcg_int32 inLastAckTextMessageId,
   /* inPendingNTCTransition/ */
   kcg_bool inPendingNTCTransition,
   /* inSPPAndGradientOnBoard/ */
@@ -91,7 +91,7 @@ void CheckLevelExceptions_InformationFilter_Pkg_FirstFilter(
   outC->_L131 = outC->e04b;
   outC->e04m = outC->_L127;
   outC->_L130 = outC->e04m;
-  outC->_L120 = kcg_lit_int64(0);
+  outC->_L120 = kcg_lit_int32(0);
   outC->_L28 = inLastAckTextMessageId;
   /* _L115=(InformationFilter_Pkg::FirstFilter::Exception12RejectIfTextMessageAckPending#1)/ */
   Exception12RejectIfTextMessageAckPending_InformationFilter_Pkg_FirstFilter(
@@ -385,7 +385,7 @@ void CheckLevelExceptions_init_InformationFilter_Pkg_FirstFilter(
   outC->_L123 = kcg_true;
   outC->_L122 = kcg_true;
   outC->_L121 = kcg_true;
-  outC->_L120 = kcg_lit_int64(0);
+  outC->_L120 = kcg_lit_int32(0);
   outC->_L119 = kcg_true;
   outC->_L117 = kcg_true;
   outC->_L118 = kcg_true;
@@ -431,7 +431,7 @@ void CheckLevelExceptions_init_InformationFilter_Pkg_FirstFilter(
   outC->_L30 = kcg_true;
   outC->_L31 = kcg_true;
   outC->_L29 = kcg_true;
-  outC->_L28 = kcg_lit_int64(0);
+  outC->_L28 = kcg_lit_int32(0);
   outC->_L27 = kcg_true;
   outC->_L26 = kcg_true;
   outC->_L25 = kcg_true;

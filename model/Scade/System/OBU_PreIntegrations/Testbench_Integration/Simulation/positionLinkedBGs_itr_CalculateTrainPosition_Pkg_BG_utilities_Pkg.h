@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _positionLinkedBGs_itr_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_
 #define _positionLinkedBGs_itr_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_
@@ -34,7 +34,7 @@ typedef struct {
   positionedBG_T_TrainPosition_Types_Pck /* _L2/ */ _L2;
   LinkedBG_T_BG_Types_Pkg /* _L3/ */ _L3;
   infoFromLinking_T_TrainPosition_Types_Pck /* _L17/ */ _L17;
-  kcg_int64 /* _L16/ */ _L16;
+  kcg_int32 /* _L16/ */ _L16;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L15/ */ _L15;
   Q_LINK /* _L14/ */ _L14;
   NID_BG /* _L13/ */ _L13;
@@ -48,7 +48,7 @@ typedef struct {
   passedBG_T_BG_Types_Pkg /* _L89/ */ _L89;
   LinkedBG_T_BG_Types_Pkg /* _L90/ */ _L90;
   passedBG_T_BG_Types_Pkg /* _L113/ */ _L113;
-  kcg_int64 /* _L114/ */ _L114;
+  kcg_int32 /* _L114/ */ _L114;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L117/ */ _L117;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L119/ */ _L119;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L120/ */ _L120;
@@ -94,6 +94,6 @@ extern void positionLinkedBGs_itr_init_CalculateTrainPosition_Pkg_BG_utilities_P
 #endif /* _positionLinkedBGs_itr_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** positionLinkedBGs_itr_CalculateTrainPosition_Pkg_BG_utilities_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

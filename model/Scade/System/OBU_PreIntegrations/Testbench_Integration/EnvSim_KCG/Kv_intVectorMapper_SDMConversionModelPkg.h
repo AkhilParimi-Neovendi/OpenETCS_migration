@@ -25,13 +25,13 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   av_Map_t_SDMConversionModelPkg /* _L1/ */ _L1;
   mv_Map_t_SDMConversionModelPkg /* _L2/ */ _L2;
-  array_int64_13 /* _L13/ */ _L13;
-  array_int64_2 /* _L12/ */ _L12;
+  array_int32_13 /* _L13/ */ _L13;
+  array_int32_2 /* _L12/ */ _L12;
   _72_array /* _L14/ */ _L14;
   _71_array /* _L16/ */ _L16;
-  array_int64_2 /* _L17/ */ _L17;
-  kcg_int64 /* _L18/ */ _L18;
-  array_int64_13 /* _L19/ */ _L19;
+  array_int32_2 /* _L17/ */ _L17;
+  kcg_int32 /* _L18/ */ _L18;
+  array_int32_13 /* _L19/ */ _L19;
   av_MergedMap_t_SDMConversionModelPkg /* _L26/ */ _L26;
 } outC_Kv_intVectorMapper_SDMConversionModelPkg;
 

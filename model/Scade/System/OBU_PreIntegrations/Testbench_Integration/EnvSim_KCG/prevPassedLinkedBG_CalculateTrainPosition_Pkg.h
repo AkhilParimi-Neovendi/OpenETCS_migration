@@ -33,7 +33,7 @@ typedef struct {
   kcg_bool /* _L55/ */ _L55;
   kcg_bool /* _L62/ */ _L62;
   kcg_bool /* _L61/ */ _L61;
-  kcg_int64 /* _L60/ */ _L60;
+  kcg_int32 /* _L60/ */ _L60;
   positionedBGs_T_TrainPosition_Types_Pck /* _L63/ */ _L63;
   positionedBG_T_TrainPosition_Types_Pck /* _L64/ */ _L64;
   passedBG_T_BG_Types_Pkg /* _L68/ */ _L68;

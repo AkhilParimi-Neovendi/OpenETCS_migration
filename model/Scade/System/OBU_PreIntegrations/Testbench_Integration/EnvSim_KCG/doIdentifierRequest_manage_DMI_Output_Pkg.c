@@ -111,99 +111,99 @@ void doIdentifierRequest_init_manage_DMI_Output_Pkg(
   outC->isStarted = kcg_true;
   outC->IfBlock1_clock = kcg_true;
   outC->_L1_else_IfBlock1.valid = kcg_true;
-  outC->_L1_else_IfBlock1.system_clock = kcg_lit_int64(0);
+  outC->_L1_else_IfBlock1.system_clock = kcg_lit_int32(0);
   outC->_L1_else_IfBlock1.ERTMS_Version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L1_else_IfBlock1.EVC_Version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
-  outC->_L1_else_IfBlock1.l_name = kcg_lit_int64(0);
+  outC->_L1_else_IfBlock1.l_name = kcg_lit_int32(0);
   for (idx = 0; idx < 255; idx++) {
     outC->_L1_else_IfBlock1.x_name[idx] = ' ';
   }
-  outC->_L1_else_IfBlock1.l_extra = kcg_lit_int64(0);
+  outC->_L1_else_IfBlock1.l_extra = kcg_lit_int32(0);
   outC->_L1_then_IfBlock1.valid = kcg_true;
-  outC->_L1_then_IfBlock1.system_clock = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1.system_clock = kcg_lit_int32(0);
   outC->_L1_then_IfBlock1.ERTMS_Version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L1_then_IfBlock1.EVC_Version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
-  outC->_L1_then_IfBlock1.l_name = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1.l_name = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 255; idx1++) {
     outC->_L1_then_IfBlock1.x_name[idx1] = ' ';
   }
-  outC->_L1_then_IfBlock1.l_extra = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1.l_extra = kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.valid = kcg_true;
-  outC->_L2_then_IfBlock1.system_clock = kcg_lit_int64(0);
+  outC->_L2_then_IfBlock1.system_clock = kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.ERTMS_Version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L2_then_IfBlock1.EVC_Version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
-  outC->_L2_then_IfBlock1.l_name = kcg_lit_int64(0);
+  outC->_L2_then_IfBlock1.l_name = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 255; idx2++) {
     outC->_L2_then_IfBlock1.x_name[idx2] = ' ';
   }
-  outC->_L2_then_IfBlock1.l_extra = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_IfBlock1.l_extra = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L4_then_IfBlock1.valid = kcg_true;
-  outC->_L4_then_IfBlock1.system_clock = kcg_lit_int64(0);
+  outC->_L4_then_IfBlock1.system_clock = kcg_lit_int32(0);
   outC->_L4_then_IfBlock1.ERTMS_Version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L4_then_IfBlock1.EVC_Version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
-  outC->_L4_then_IfBlock1.l_name = kcg_lit_int64(0);
+  outC->_L4_then_IfBlock1.l_name = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 255; idx3++) {
     outC->_L4_then_IfBlock1.x_name[idx3] = ' ';
   }
-  outC->_L4_then_IfBlock1.l_extra = kcg_lit_int64(0);
+  outC->_L4_then_IfBlock1.l_extra = kcg_lit_int32(0);
   outC->_L5_then_IfBlock1.valid = kcg_true;
-  outC->_L5_then_IfBlock1.system_clock = kcg_lit_int64(0);
+  outC->_L5_then_IfBlock1.system_clock = kcg_lit_int32(0);
   outC->_L5_then_IfBlock1.ERTMS_Version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L5_then_IfBlock1.EVC_Version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
-  outC->_L5_then_IfBlock1.l_name = kcg_lit_int64(0);
+  outC->_L5_then_IfBlock1.l_name = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 255; idx4++) {
     outC->_L5_then_IfBlock1.x_name[idx4] = ' ';
   }
-  outC->_L5_then_IfBlock1.l_extra = kcg_lit_int64(0);
+  outC->_L5_then_IfBlock1.l_extra = kcg_lit_int32(0);
   outC->_L6_then_IfBlock1 =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L7_then_IfBlock1.valid = kcg_true;
-  outC->_L7_then_IfBlock1.system_clock = kcg_lit_int64(0);
+  outC->_L7_then_IfBlock1.system_clock = kcg_lit_int32(0);
   outC->_L7_then_IfBlock1.ERTMS_Version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L7_then_IfBlock1.EVC_Version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
-  outC->_L7_then_IfBlock1.l_name = kcg_lit_int64(0);
+  outC->_L7_then_IfBlock1.l_name = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 255; idx5++) {
     outC->_L7_then_IfBlock1.x_name[idx5] = ' ';
   }
-  outC->_L7_then_IfBlock1.l_extra = kcg_lit_int64(0);
+  outC->_L7_then_IfBlock1.l_extra = kcg_lit_int32(0);
   outC->_L8_then_IfBlock1 =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L9_then_IfBlock1.valid = kcg_true;
-  outC->_L9_then_IfBlock1.system_clock = kcg_lit_int64(0);
+  outC->_L9_then_IfBlock1.system_clock = kcg_lit_int32(0);
   outC->_L9_then_IfBlock1.ERTMS_Version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L9_then_IfBlock1.EVC_Version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
-  outC->_L9_then_IfBlock1.l_name = kcg_lit_int64(0);
+  outC->_L9_then_IfBlock1.l_name = kcg_lit_int32(0);
   for (idx6 = 0; idx6 < 255; idx6++) {
     outC->_L9_then_IfBlock1.x_name[idx6] = ' ';
   }
-  outC->_L9_then_IfBlock1.l_extra = kcg_lit_int64(0);
+  outC->_L9_then_IfBlock1.l_extra = kcg_lit_int32(0);
   outC->init = kcg_true;
   outC->identifierRequest.valid = kcg_true;
-  outC->identifierRequest.system_clock = kcg_lit_int64(0);
+  outC->identifierRequest.system_clock = kcg_lit_int32(0);
   outC->identifierRequest.ERTMS_Version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->identifierRequest.EVC_Version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
-  outC->identifierRequest.l_name = kcg_lit_int64(0);
+  outC->identifierRequest.l_name = kcg_lit_int32(0);
   for (idx7 = 0; idx7 < 255; idx7++) {
     outC->identifierRequest.x_name[idx7] = ' ';
   }
-  outC->identifierRequest.l_extra = kcg_lit_int64(0);
+  outC->identifierRequest.l_extra = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

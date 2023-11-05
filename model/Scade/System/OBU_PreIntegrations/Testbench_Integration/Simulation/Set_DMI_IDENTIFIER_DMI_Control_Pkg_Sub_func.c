@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -74,33 +74,33 @@ void Set_DMI_IDENTIFIER_init_DMI_Control_Pkg_Sub_func(
   static kcg_size idx6;
 
   outC->_L42 = kcg_true;
-  outC->_L41 = kcg_lit_int64(0);
+  outC->_L41 = kcg_lit_int32(0);
   outC->_L34 = kcg_true;
-  outC->_L35 = kcg_lit_int64(0);
+  outC->_L35 = kcg_lit_int32(0);
   outC->_L36 = DMI_1_DMI_Types_Pkg;
   outC->_L37 = cabin_A_DMI_Types_Pkg;
-  outC->_L38 = kcg_lit_int64(0);
+  outC->_L38 = kcg_lit_int32(0);
   for (idx = 0; idx < 255; idx++) {
     outC->_L39[idx] = ' ';
   }
   outC->_L40 =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L25.valid = kcg_true;
-  outC->_L25.systemTime = kcg_lit_int64(0);
+  outC->_L25.systemTime = kcg_lit_int32(0);
   outC->_L25.DMI_Identifier = DMI_1_DMI_Types_Pkg;
   outC->_L25.Cabin_Identifier = cabin_A_DMI_Types_Pkg;
-  outC->_L25.l_name = kcg_lit_int64(0);
+  outC->_L25.l_name = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 255; idx1++) {
     outC->_L25.DMI_name[idx1] = ' ';
   }
   outC->_L25.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
-  outC->_L24 = kcg_lit_int64(0);
+  outC->_L24 = kcg_lit_int32(0);
   outC->_L23.valid = kcg_true;
-  outC->_L23.systemTime = kcg_lit_int64(0);
+  outC->_L23.systemTime = kcg_lit_int32(0);
   outC->_L23.DMI_Identifier = DMI_1_DMI_Types_Pkg;
   outC->_L23.Cabin_Identifier = cabin_A_DMI_Types_Pkg;
-  outC->_L23.l_name = kcg_lit_int64(0);
+  outC->_L23.l_name = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 255; idx2++) {
     outC->_L23.DMI_name[idx2] = ' ';
   }
@@ -117,10 +117,10 @@ void Set_DMI_IDENTIFIER_init_DMI_Control_Pkg_Sub_func(
     outC->_L4[idx5] = ' ';
   }
   outC->dmi_identifier_packet.valid = kcg_true;
-  outC->dmi_identifier_packet.systemTime = kcg_lit_int64(0);
+  outC->dmi_identifier_packet.systemTime = kcg_lit_int32(0);
   outC->dmi_identifier_packet.DMI_Identifier = DMI_1_DMI_Types_Pkg;
   outC->dmi_identifier_packet.Cabin_Identifier = cabin_A_DMI_Types_Pkg;
-  outC->dmi_identifier_packet.l_name = kcg_lit_int64(0);
+  outC->dmi_identifier_packet.l_name = kcg_lit_int32(0);
   for (idx6 = 0; idx6 < 255; idx6++) {
     outC->dmi_identifier_packet.DMI_name[idx6] = ' ';
   }
@@ -141,6 +141,6 @@ void Set_DMI_IDENTIFIER_reset_DMI_Control_Pkg_Sub_func(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Set_DMI_IDENTIFIER_DMI_Control_Pkg_Sub_func.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

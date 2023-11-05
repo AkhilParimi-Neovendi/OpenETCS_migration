@@ -15,7 +15,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* section_arrays/ */ section_arrays;
+  kcg_int32 /* section_arrays/ */ section_arrays;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -24,7 +24,7 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   NID_NTC /* _L1/ */ _L1;
-  kcg_int64 /* _L13/ */ _L13;
+  kcg_int32 /* _L13/ */ _L13;
 } outC_C_P011_fs_struct_to_array_ntc_TM_TrainToTrack_lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */

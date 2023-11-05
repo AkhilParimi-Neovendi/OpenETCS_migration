@@ -233,7 +233,7 @@ typedef struct {
   kcg_bool /* _L335/ */ _L335;
   mobileRegistrationContext_T_RCM_Types_Pkg /* _L343/ */ _L343;
   mobileRegistrationContext_T_RCM_Types_Pkg /* _L345/ */ _L345;
-  kcg_int64 /* _L346/ */ _L346;
+  kcg_int32 /* _L346/ */ _L346;
   P45_RadioNetworkRegistration_T_Packet_Types_Pkg /* _L347/ */ _L347;
   P45_RadioNetworkRegistration_T_Packet_Types_Pkg /* _L349/ */ _L349;
   sessionPhase_T_RCM_Session_Types_Pkg /* _L353/ */ _L353;

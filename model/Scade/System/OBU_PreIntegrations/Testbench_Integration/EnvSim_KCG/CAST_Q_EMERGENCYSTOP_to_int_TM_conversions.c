@@ -14,37 +14,37 @@ void CAST_Q_EMERGENCYSTOP_to_int_TM_conversions(
   outC_CAST_Q_EMERGENCYSTOP_to_int_TM_conversions *outC)
 {
   /* q_emergencystop_int/ */
-  static kcg_int64 q_emergencystop_int_partial;
+  static kcg_int32 q_emergencystop_int_partial;
   /* error/ */
   static kcg_bool error_partial;
   /* q_emergencystop_int/ */
-  static kcg_int64 _1_q_emergencystop_int_partial;
+  static kcg_int32 _1_q_emergencystop_int_partial;
   /* error/ */
   static kcg_bool _2_error_partial;
   /* q_emergencystop_int/ */
-  static kcg_int64 _3_q_emergencystop_int_partial;
+  static kcg_int32 _3_q_emergencystop_int_partial;
   /* error/ */
   static kcg_bool _4_error_partial;
   /* q_emergencystop_int/ */
-  static kcg_int64 _5_q_emergencystop_int_partial;
+  static kcg_int32 _5_q_emergencystop_int_partial;
   /* error/ */
   static kcg_bool _6_error_partial;
   /* error/ */
   static kcg_bool _7_error_partial;
   /* q_emergencystop_int/ */
-  static kcg_int64 _8_q_emergencystop_int_partial;
+  static kcg_int32 _8_q_emergencystop_int_partial;
   /* error/ */
   static kcg_bool _9_error_partial;
   /* q_emergencystop_int/ */
-  static kcg_int64 _10_q_emergencystop_int_partial;
+  static kcg_int32 _10_q_emergencystop_int_partial;
   /* error/ */
   static kcg_bool _11_error_partial;
   /* q_emergencystop_int/ */
-  static kcg_int64 _12_q_emergencystop_int_partial;
+  static kcg_int32 _12_q_emergencystop_int_partial;
   /* error/ */
   static kcg_bool _13_error_partial;
   /* q_emergencystop_int/ */
-  static kcg_int64 _14_q_emergencystop_int_partial;
+  static kcg_int32 _14_q_emergencystop_int_partial;
   static kcg_bool noname;
 
   outC->_L12 = q_emergencystop;
@@ -134,19 +134,19 @@ void CAST_Q_EMERGENCYSTOP_to_int_init_TM_conversions(
   outC->error = kcg_true;
   outC->IfBlock1_clock = kcg_true;
   outC->_L5_then_else_IfBlock1 = kcg_true;
-  outC->_L3_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L3_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_IfBlock1 = kcg_true;
-  outC->_L1_then_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_IfBlock1 = kcg_true;
   outC->_L1_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L2_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_else_IfBlock1 = kcg_true;
-  outC->_L2_then_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L4_then_else_else_IfBlock1 = kcg_true;
   outC->else_clock_IfBlock1 = kcg_true;
-  outC->_L4_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L4_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L5_then_IfBlock1 = kcg_true;
-  outC->q_emergencystop_int = kcg_lit_int64(0);
+  outC->q_emergencystop_int = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

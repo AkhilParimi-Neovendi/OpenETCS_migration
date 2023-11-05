@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _calcDistances_manage_DMI_Output_Pkg_H_
 #define _calcDistances_manage_DMI_Output_Pkg_H_
@@ -24,10 +24,10 @@ typedef struct {
   kcg_bool /* IfBlock1: */ IfBlock1_clock;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
-  kcg_int64 /* IfBlock1:else:_L1/ */ _L1_else_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
+  kcg_int32 /* IfBlock1:else:_L1/ */ _L1_else_IfBlock1;
   kcg_bool /* doCalc/ */ doCalc;
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   trainPosition_T_TrainPosition_Types_Pck /* _L2/ */ _L2;
   kcg_bool /* _L3/ */ _L3;
   kcg_bool /* _L4/ */ _L4;
@@ -60,6 +60,6 @@ extern void calcDistances_init_manage_DMI_Output_Pkg(
 #endif /* _calcDistances_manage_DMI_Output_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** calcDistances_manage_DMI_Output_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -77,23 +77,23 @@ void interpolateMfromA_init_SDMConversionModelPkg(
   outC_interpolateMfromA_SDMConversionModelPkg *outC)
 {
   outC->IfBlock1_clock = kcg_true;
-  outC->_L1_then_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L1_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L2_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L3_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L5_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L4_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L6_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L7_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L8_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L9_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L10_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L11_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L12_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L13_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L1_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L2_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L3_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L5_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L4_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L6_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L7_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L8_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L9_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L10_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L11_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L12_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L13_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_IfBlock1 = kcg_true;
-  outC->_L1_then_IfBlock1 = kcg_lit_int64(0);
-  outC->m = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1 = kcg_lit_int32(0);
+  outC->m = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -109,6 +109,6 @@ void interpolateMfromA_reset_SDMConversionModelPkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** interpolateMfromA_SDMConversionModelPkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

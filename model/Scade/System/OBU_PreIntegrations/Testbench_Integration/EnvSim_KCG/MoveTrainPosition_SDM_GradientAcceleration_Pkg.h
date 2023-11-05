@@ -14,8 +14,8 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_float64 /* newFront/ */ newFront;
-  kcg_float64 /* newRear/ */ newRear;
+  kcg_float32 /* newFront/ */ newFront;
+  kcg_float32 /* newRear/ */ newRear;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
@@ -23,9 +23,9 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   ACC_SDM_GradientAcceleration_Pkg /* _L3/ */ _L3;
-  kcg_float64 /* _L1/ */ _L1;
-  kcg_float64 /* _L4/ */ _L4;
-  kcg_float64 /* _L5/ */ _L5;
+  kcg_float32 /* _L1/ */ _L1;
+  kcg_float32 /* _L4/ */ _L4;
+  kcg_float32 /* _L5/ */ _L5;
   L_internal_real_Type_SDM_Types_Pkg /* _L6/ */ _L6;
   L_internal_real_Type_SDM_Types_Pkg /* _L7/ */ _L7;
   ACC_SDM_GradientAcceleration_Pkg /* _L8/ */ _L8;
@@ -35,7 +35,7 @@ typedef struct {
 /* SDM_GradientAcceleration_Pkg::MoveTrainPosition/ */
 extern void MoveTrainPosition_SDM_GradientAcceleration_Pkg(
   /* distanceStep/ */
-  kcg_float64 distanceStep,
+  kcg_float32 distanceStep,
   /* Accu/ */
   ACC_SDM_GradientAcceleration_Pkg *Accu,
   outC_MoveTrainPosition_SDM_GradientAcceleration_Pkg *outC);

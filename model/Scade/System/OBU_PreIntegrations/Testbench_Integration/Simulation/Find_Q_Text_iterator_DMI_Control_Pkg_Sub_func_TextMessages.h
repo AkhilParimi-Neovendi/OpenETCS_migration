@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _Find_Q_Text_iterator_DMI_Control_Pkg_Sub_func_TextMessages_H_
 #define _Find_Q_Text_iterator_DMI_Control_Pkg_Sub_func_TextMessages_H_
@@ -22,7 +22,7 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L18/ */ _L18;
+  kcg_int32 /* _L18/ */ _L18;
   kcg_bool /* _L17/ */ _L17;
   DMI_Q_TEXT_DMI_Types_Pkg /* _L16/ */ _L16;
   kcg_bool /* _L15/ */ _L15;
@@ -34,7 +34,7 @@ typedef struct {
 /* DMI_Control_Pkg::Sub_func::TextMessages::Find_Q_Text_iterator/ */
 extern void Find_Q_Text_iterator_DMI_Control_Pkg_Sub_func_TextMessages(
   /* index/ */
-  kcg_int64 index,
+  kcg_int32 index,
   /* acc_in/ */
   kcg_bool acc_in,
   /* q_text_1/ */
@@ -56,6 +56,6 @@ extern void Find_Q_Text_iterator_init_DMI_Control_Pkg_Sub_func_TextMessages(
 #endif /* _Find_Q_Text_iterator_DMI_Control_Pkg_Sub_func_TextMessages_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Find_Q_Text_iterator_DMI_Control_Pkg_Sub_func_TextMessages.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

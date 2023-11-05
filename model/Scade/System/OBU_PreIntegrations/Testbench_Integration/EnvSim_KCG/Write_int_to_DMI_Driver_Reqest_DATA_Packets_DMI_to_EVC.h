@@ -25,9 +25,9 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   DMI_Driver_Request_int_array_T_DATA /* _L1/ */ _L1;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   kcg_bool /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L12/ */ _L12;
   DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg /* _L13/ */ _L13;
   DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg /* _L14/ */ _L14;
 } outC_Write_int_to_DMI_Driver_Reqest_DATA_Packets_DMI_to_EVC;

@@ -29,15 +29,15 @@ typedef struct {
   V_NVONSIGHT /* _L7/ */ _L7;
   V_NVSHUNT /* _L8/ */ _L8;
   kcg_bool /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   V_NVLIMSUPERV /* _L11/ */ _L11;
   V_MAMODE /* _L12/ */ _L12;
-  kcg_int64 /* _L13/ */ _L13;
-  kcg_int64 /* _L14/ */ _L14;
-  kcg_int64 /* _L15/ */ _L15;
-  kcg_int64 /* _L16/ */ _L16;
-  kcg_int64 /* _L17/ */ _L17;
-  kcg_int64 /* _L18/ */ _L18;
+  kcg_int32 /* _L13/ */ _L13;
+  kcg_int32 /* _L14/ */ _L14;
+  kcg_int32 /* _L15/ */ _L15;
+  kcg_int32 /* _L16/ */ _L16;
+  kcg_int32 /* _L17/ */ _L17;
+  kcg_int32 /* _L18/ */ _L18;
 } outC_scaleVelo_EVC_MEM_Support_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

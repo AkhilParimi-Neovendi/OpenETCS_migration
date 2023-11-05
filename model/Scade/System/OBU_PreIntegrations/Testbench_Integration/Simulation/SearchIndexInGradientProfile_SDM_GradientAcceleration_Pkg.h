@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _SearchIndexInGradientProfile_SDM_GradientAcceleration_Pkg_H_
 #define _SearchIndexInGradientProfile_SDM_GradientAcceleration_Pkg_H_
@@ -15,7 +15,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* index/ */ index;
+  kcg_int32 /* index/ */ index;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -25,12 +25,12 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   L_internal_real_Type_SDM_Types_Pkg /* _L2/ */ _L2;
   GradientProfile_real_t_SDM_GradientAcceleration_types /* _L1/ */ _L1;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L4/ */ _L4;
   Gradient_section_real_t_SDM_GradientAcceleration_types /* _L5/ */ _L5;
   kcg_bool /* _L6/ */ _L6;
-  kcg_int64 /* _L7/ */ _L7;
-  array_float64_50 /* _L8/ */ _L8;
+  kcg_int32 /* _L7/ */ _L7;
+  array_float32_50 /* _L8/ */ _L8;
   _4_array /* _L9/ */ _L9;
   GradientProfile_real_t_SDM_GradientAcceleration_types /* _L10/ */ _L10;
 } outC_SearchIndexInGradientProfile_SDM_GradientAcceleration_Pkg;
@@ -59,6 +59,6 @@ extern void SearchIndexInGradientProfile_init_SDM_GradientAcceleration_Pkg(
 #endif /* _SearchIndexInGradientProfile_SDM_GradientAcceleration_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** SearchIndexInGradientProfile_SDM_GradientAcceleration_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

@@ -24,8 +24,8 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   BCAccumulator_type_CalcBrakingCurves_Pkg /* _L6/ */ _L6;
-  kcg_float64 /* _L7/ */ _L7;
-  kcg_int64 /* _L8/ */ _L8;
+  kcg_float32 /* _L7/ */ _L7;
+  kcg_int32 /* _L8/ */ _L8;
   ParabolaCurve_T_CalcBrakingCurves_types /* _L10/ */ _L10;
 } outC_emptyBCAcc_CalcBrakingCurves_Pkg;
 

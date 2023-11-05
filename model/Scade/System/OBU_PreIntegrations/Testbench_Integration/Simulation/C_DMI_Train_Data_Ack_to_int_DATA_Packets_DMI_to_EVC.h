@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _C_DMI_Train_Data_Ack_to_int_DATA_Packets_DMI_to_EVC_H_
 #define _C_DMI_Train_Data_Ack_to_int_DATA_Packets_DMI_to_EVC_H_
@@ -24,13 +24,13 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  array_int64_3 /* _L2/ */ _L2;
+  array_int32_3 /* _L2/ */ _L2;
   kcg_bool /* _L5/ */ _L5;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L4/ */ _L4;
   kcg_bool /* _L3/ */ _L3;
-  kcg_int64 /* _L11/ */ _L11;
+  kcg_int32 /* _L11/ */ _L11;
   DMI_Train_Data_Ack_T_DMI_Messages_DMI_to_EVC_Pkg /* _L16/ */ _L16;
-  kcg_int64 /* _L20/ */ _L20;
+  kcg_int32 /* _L20/ */ _L20;
 } outC_C_DMI_Train_Data_Ack_to_int_DATA_Packets_DMI_to_EVC;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -55,6 +55,6 @@ extern void C_DMI_Train_Data_Ack_to_int_init_DATA_Packets_DMI_to_EVC(
 #endif /* _C_DMI_Train_Data_Ack_to_int_DATA_Packets_DMI_to_EVC_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_DMI_Train_Data_Ack_to_int_DATA_Packets_DMI_to_EVC.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

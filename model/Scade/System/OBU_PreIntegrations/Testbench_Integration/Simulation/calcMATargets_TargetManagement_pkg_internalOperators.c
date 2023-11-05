@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -78,7 +78,7 @@ void calcMATargets_TargetManagement_pkg_internalOperators(
   outC->_L35.targetType = outC->_L91;
   outC->_L35.distance = outC->_L71;
   outC->_L35.speed = outC->_L70;
-  outC->_L63 = kcg_lit_float64(0.0);
+  outC->_L63 = kcg_lit_float32(0.0);
   outC->_L62 = outC->_L68 > outC->_L63;
   /* _L64= */
   if (outC->_L62) {
@@ -109,76 +109,76 @@ void calcMATargets_init_TargetManagement_pkg_internalOperators(
 {
   outC->_L98 = EoA_TargetManagement_types;
   outC->_L95.valid = kcg_true;
-  outC->_L95.v_main = kcg_lit_float64(0.0);
-  outC->_L95.EOA.Location = kcg_lit_float64(0.0);
-  outC->_L95.EOA.TargetSpeed = kcg_lit_float64(0.0);
+  outC->_L95.v_main = kcg_lit_float32(0.0);
+  outC->_L95.EOA.Location = kcg_lit_float32(0.0);
+  outC->_L95.EOA.TargetSpeed = kcg_lit_float32(0.0);
   outC->_L95.DP_valid = kcg_true;
-  outC->_L95.DangerPoint = kcg_lit_float64(0.0);
+  outC->_L95.DangerPoint = kcg_lit_float32(0.0);
   outC->_L95.OL_valid = kcg_true;
-  outC->_L95.Overlap = kcg_lit_float64(0.0);
+  outC->_L95.Overlap = kcg_lit_float32(0.0);
   outC->_L95.q_calculate_release = kcg_true;
-  outC->_L95.ReleaseSpeed = kcg_lit_float64(0.0);
+  outC->_L95.ReleaseSpeed = kcg_lit_float32(0.0);
   outC->_L95.level = MA_L1_TrackAtlasTypes;
   outC->_L96 = kcg_true;
   outC->_L92 = EoA_TargetManagement_types;
   outC->_L91 = EoA_TargetManagement_types;
   outC->_L90 = EoA_TargetManagement_types;
-  outC->_L88 = kcg_lit_float64(0.0);
-  outC->_L86 = kcg_lit_float64(0.0);
-  outC->_L85 = kcg_lit_float64(0.0);
+  outC->_L88 = kcg_lit_float32(0.0);
+  outC->_L86 = kcg_lit_float32(0.0);
+  outC->_L85 = kcg_lit_float32(0.0);
   outC->_L84 = kcg_true;
-  outC->_L83 = kcg_lit_float64(0.0);
+  outC->_L83 = kcg_lit_float32(0.0);
   outC->_L82 = kcg_true;
-  outC->_L81 = kcg_lit_float64(0.0);
-  outC->_L80 = kcg_lit_float64(0.0);
+  outC->_L81 = kcg_lit_float32(0.0);
+  outC->_L80 = kcg_lit_float32(0.0);
   outC->_L79.valid = kcg_true;
-  outC->_L79.v_main = kcg_lit_float64(0.0);
-  outC->_L79.EOA.Location = kcg_lit_float64(0.0);
-  outC->_L79.EOA.TargetSpeed = kcg_lit_float64(0.0);
+  outC->_L79.v_main = kcg_lit_float32(0.0);
+  outC->_L79.EOA.Location = kcg_lit_float32(0.0);
+  outC->_L79.EOA.TargetSpeed = kcg_lit_float32(0.0);
   outC->_L79.DP_valid = kcg_true;
-  outC->_L79.DangerPoint = kcg_lit_float64(0.0);
+  outC->_L79.DangerPoint = kcg_lit_float32(0.0);
   outC->_L79.OL_valid = kcg_true;
-  outC->_L79.Overlap = kcg_lit_float64(0.0);
+  outC->_L79.Overlap = kcg_lit_float32(0.0);
   outC->_L79.q_calculate_release = kcg_true;
-  outC->_L79.ReleaseSpeed = kcg_lit_float64(0.0);
+  outC->_L79.ReleaseSpeed = kcg_lit_float32(0.0);
   outC->_L79.level = MA_L1_TrackAtlasTypes;
-  outC->_L77 = kcg_lit_float64(0.0);
-  outC->_L78 = kcg_lit_float64(0.0);
+  outC->_L77 = kcg_lit_float32(0.0);
+  outC->_L78 = kcg_lit_float32(0.0);
   outC->_L74 = EoA_TargetManagement_types;
   outC->_L73.targetType = EoA_TargetManagement_types;
-  outC->_L73.distance = kcg_lit_float64(0.0);
-  outC->_L73.speed = kcg_lit_float64(0.0);
-  outC->_L71 = kcg_lit_float64(0.0);
-  outC->_L70 = kcg_lit_float64(0.0);
-  outC->_L69 = kcg_lit_float64(0.0);
-  outC->_L68 = kcg_lit_float64(0.0);
+  outC->_L73.distance = kcg_lit_float32(0.0);
+  outC->_L73.speed = kcg_lit_float32(0.0);
+  outC->_L71 = kcg_lit_float32(0.0);
+  outC->_L70 = kcg_lit_float32(0.0);
+  outC->_L69 = kcg_lit_float32(0.0);
+  outC->_L68 = kcg_lit_float32(0.0);
   outC->_L66.targetType = EoA_TargetManagement_types;
-  outC->_L66.distance = kcg_lit_float64(0.0);
-  outC->_L66.speed = kcg_lit_float64(0.0);
+  outC->_L66.distance = kcg_lit_float32(0.0);
+  outC->_L66.speed = kcg_lit_float32(0.0);
   outC->_L65.targetType = EoA_TargetManagement_types;
-  outC->_L65.distance = kcg_lit_float64(0.0);
-  outC->_L65.speed = kcg_lit_float64(0.0);
+  outC->_L65.distance = kcg_lit_float32(0.0);
+  outC->_L65.speed = kcg_lit_float32(0.0);
   outC->_L64.targetType = EoA_TargetManagement_types;
-  outC->_L64.distance = kcg_lit_float64(0.0);
-  outC->_L64.speed = kcg_lit_float64(0.0);
-  outC->_L63 = kcg_lit_float64(0.0);
+  outC->_L64.distance = kcg_lit_float32(0.0);
+  outC->_L64.speed = kcg_lit_float32(0.0);
+  outC->_L63 = kcg_lit_float32(0.0);
   outC->_L62 = kcg_true;
   outC->_L33 = EoA_TargetManagement_types;
   outC->_L35.targetType = EoA_TargetManagement_types;
-  outC->_L35.distance = kcg_lit_float64(0.0);
-  outC->_L35.speed = kcg_lit_float64(0.0);
+  outC->_L35.distance = kcg_lit_float32(0.0);
+  outC->_L35.speed = kcg_lit_float32(0.0);
   outC->_L24 = EoA_TargetManagement_types;
   outC->_L22.targetType = EoA_TargetManagement_types;
-  outC->_L22.distance = kcg_lit_float64(0.0);
-  outC->_L22.speed = kcg_lit_float64(0.0);
-  outC->MA_TargetSpeed = kcg_lit_float64(0.0);
-  outC->MA_TargetLocation = kcg_lit_float64(0.0);
+  outC->_L22.distance = kcg_lit_float32(0.0);
+  outC->_L22.speed = kcg_lit_float32(0.0);
+  outC->MA_TargetSpeed = kcg_lit_float32(0.0);
+  outC->MA_TargetLocation = kcg_lit_float32(0.0);
   outC->SvL_LoA_Target.targetType = EoA_TargetManagement_types;
-  outC->SvL_LoA_Target.distance = kcg_lit_float64(0.0);
-  outC->SvL_LoA_Target.speed = kcg_lit_float64(0.0);
+  outC->SvL_LoA_Target.distance = kcg_lit_float32(0.0);
+  outC->SvL_LoA_Target.speed = kcg_lit_float32(0.0);
   outC->EOA_Target.targetType = EoA_TargetManagement_types;
-  outC->EOA_Target.distance = kcg_lit_float64(0.0);
-  outC->EOA_Target.speed = kcg_lit_float64(0.0);
+  outC->EOA_Target.distance = kcg_lit_float32(0.0);
+  outC->EOA_Target.speed = kcg_lit_float32(0.0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -194,6 +194,6 @@ void calcMATargets_reset_TargetManagement_pkg_internalOperators(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** calcMATargets_TargetManagement_pkg_internalOperators.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,9 +10,9 @@
 /* TM_lib_internal::C_P046_us_array/ */
 void C_P046_us_array_TM_lib_internal(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* n_iter_int/ */
-  kcg_int64 n_iter_int,
+  kcg_int32 n_iter_int,
   /* flat/ */
   P046_sections_array_flat_T_TM *flat,
   outC_C_P046_us_array_TM_lib_internal *outC)
@@ -28,7 +28,7 @@ void C_P046_us_array_TM_lib_internal(
   C_P046_extract_el_section_TM_lib_internal(
     outC->_L16,
     &outC->_L1,
-    kcg_lit_int64(1),
+    kcg_lit_int32(1),
     &outC->Context_C_P046_extract_el_section_2);
   outC->_L19 = outC->Context_C_P046_extract_el_section_2.element;
   /* _L28=(TM_conversions::CAST_Int_to_NID_NTC#1)/ */
@@ -40,7 +40,7 @@ void C_P046_us_array_TM_lib_internal(
   C_P046_extract_el_section_TM_lib_internal(
     outC->_L16,
     &outC->_L1,
-    kcg_lit_int64(0),
+    kcg_lit_int32(0),
     &outC->Context_C_P046_extract_el_section_1);
   outC->_L15 = outC->Context_C_P046_extract_el_section_1.element;
   /* _L25=(TM_conversions::CAST_Int_to_M_LEVELTR#1)/ */
@@ -63,23 +63,23 @@ void C_P046_us_array_init_TM_lib_internal(
 
   outC->_L33 = kcg_true;
   outC->_L32 = kcg_true;
-  outC->_L28 = kcg_lit_int64(0);
+  outC->_L28 = kcg_lit_int32(0);
   outC->_L25 = M_LEVELTR_Level_0;
-  outC->_L19 = kcg_lit_int64(0);
-  outC->_L18 = kcg_lit_int64(0);
-  outC->_L16 = kcg_lit_int64(0);
-  outC->_L15 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L19 = kcg_lit_int32(0);
+  outC->_L18 = kcg_lit_int32(0);
+  outC->_L16 = kcg_lit_int32(0);
+  outC->_L15 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L4.valid = kcg_true;
   outC->_L4.m_leveltr = M_LEVELTR_Level_0;
-  outC->_L4.nid_ntc = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L4.nid_ntc = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   for (idx = 0; idx < 66; idx++) {
-    outC->_L1[idx] = kcg_lit_int64(0);
+    outC->_L1[idx] = kcg_lit_int32(0);
   }
   outC->sections.valid = kcg_true;
   outC->sections.m_leveltr = M_LEVELTR_Level_0;
-  outC->sections.nid_ntc = kcg_lit_int64(0);
+  outC->sections.nid_ntc = kcg_lit_int32(0);
   outC->cont = kcg_true;
   /* _L25=(TM_conversions::CAST_Int_to_M_LEVELTR#1)/ */
   CAST_Int_to_M_LEVELTR_init_TM_conversions(
@@ -119,6 +119,6 @@ void C_P046_us_array_reset_TM_lib_internal(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P046_us_array_TM_lib_internal.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

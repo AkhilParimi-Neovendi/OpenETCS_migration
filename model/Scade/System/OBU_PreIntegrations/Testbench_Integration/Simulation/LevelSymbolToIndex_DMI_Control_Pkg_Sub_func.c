@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -14,11 +14,11 @@ void LevelSymbolToIndex_DMI_Control_Pkg_Sub_func(
   outC_LevelSymbolToIndex_DMI_Control_Pkg_Sub_func *outC)
 {
   outC->_L26 = kcg_true;
-  outC->_L25 = kcg_lit_int64(4);
-  outC->_L12 = kcg_lit_int64(1);
-  outC->_L13 = kcg_lit_int64(3);
-  outC->_L17 = kcg_lit_int64(5);
-  outC->_L14 = kcg_lit_int64(2);
+  outC->_L25 = kcg_lit_int32(4);
+  outC->_L12 = kcg_lit_int32(1);
+  outC->_L13 = kcg_lit_int32(3);
+  outC->_L17 = kcg_lit_int32(5);
+  outC->_L14 = kcg_lit_int32(2);
   outC->_L1 = LevelSymbolPacket;
   /* _L10= */
   switch (outC->_L1) {
@@ -47,14 +47,14 @@ void LevelSymbolToIndex_init_DMI_Control_Pkg_Sub_func(
   outC_LevelSymbolToIndex_DMI_Control_Pkg_Sub_func *outC)
 {
   outC->_L26 = kcg_true;
-  outC->_L25 = kcg_lit_int64(0);
-  outC->_L17 = kcg_lit_int64(0);
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L25 = kcg_lit_int32(0);
+  outC->_L17 = kcg_lit_int32(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
   outC->_L1 = M_LEVEL_Level_0;
-  outC->LevelSymbol = kcg_lit_int64(0);
+  outC->LevelSymbol = kcg_lit_int32(0);
   outC->Visibility = kcg_true;
 }
 #endif /* KCG_USER_DEFINED_INIT */
@@ -71,6 +71,6 @@ void LevelSymbolToIndex_reset_DMI_Control_Pkg_Sub_func(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** LevelSymbolToIndex_DMI_Control_Pkg_Sub_func.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

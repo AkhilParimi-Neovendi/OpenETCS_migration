@@ -30,11 +30,11 @@ typedef struct {
   _86_array /* _L659/ */ _L659;
   MRSP_Profile_t_TrackAtlasTypes /* _L658/ */ _L658;
   MRSP_reduction_acc_TA_Export /* _L665/ */ _L665;
-  kcg_int64 /* _L666/ */ _L666;
+  kcg_int32 /* _L666/ */ _L666;
   kcg_bool /* _L667/ */ _L667;
-  kcg_int64 /* _L669/ */ _L669;
+  kcg_int32 /* _L669/ */ _L669;
   kcg_bool /* _L670/ */ _L670;
-  array_int64_110 /* _L676/ */ _L676;
+  array_int32_110 /* _L676/ */ _L676;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L677/ */ _L677;
   MRSP_Profile_t_TrackAtlasTypes /* _L679/ */ _L679;
   _86_array /* _L680/ */ _L680;

@@ -14,45 +14,45 @@ void CAST_Q_MARQSTREASON_to_int_TM_conversions(
   outC_CAST_Q_MARQSTREASON_to_int_TM_conversions *outC)
 {
   /* q_marqstreason_int/ */
-  static kcg_int64 q_marqstreason_int_partial;
+  static kcg_int32 q_marqstreason_int_partial;
   /* error/ */
   static kcg_bool error_partial;
   /* q_marqstreason_int/ */
-  static kcg_int64 _1_q_marqstreason_int_partial;
+  static kcg_int32 _1_q_marqstreason_int_partial;
   /* error/ */
   static kcg_bool _2_error_partial;
   /* q_marqstreason_int/ */
-  static kcg_int64 _3_q_marqstreason_int_partial;
+  static kcg_int32 _3_q_marqstreason_int_partial;
   /* error/ */
   static kcg_bool _4_error_partial;
   /* q_marqstreason_int/ */
-  static kcg_int64 _5_q_marqstreason_int_partial;
+  static kcg_int32 _5_q_marqstreason_int_partial;
   /* error/ */
   static kcg_bool _6_error_partial;
   /* q_marqstreason_int/ */
-  static kcg_int64 _7_q_marqstreason_int_partial;
+  static kcg_int32 _7_q_marqstreason_int_partial;
   /* error/ */
   static kcg_bool _8_error_partial;
   /* q_marqstreason_int/ */
-  static kcg_int64 _9_q_marqstreason_int_partial;
+  static kcg_int32 _9_q_marqstreason_int_partial;
   /* error/ */
   static kcg_bool _10_error_partial;
   /* error/ */
   static kcg_bool _11_error_partial;
   /* q_marqstreason_int/ */
-  static kcg_int64 _12_q_marqstreason_int_partial;
+  static kcg_int32 _12_q_marqstreason_int_partial;
   /* error/ */
   static kcg_bool _13_error_partial;
   /* q_marqstreason_int/ */
-  static kcg_int64 _14_q_marqstreason_int_partial;
+  static kcg_int32 _14_q_marqstreason_int_partial;
   /* error/ */
   static kcg_bool _15_error_partial;
   /* q_marqstreason_int/ */
-  static kcg_int64 _16_q_marqstreason_int_partial;
+  static kcg_int32 _16_q_marqstreason_int_partial;
   /* error/ */
   static kcg_bool _17_error_partial;
   /* q_marqstreason_int/ */
-  static kcg_int64 _18_q_marqstreason_int_partial;
+  static kcg_int32 _18_q_marqstreason_int_partial;
   static kcg_bool noname;
 
   outC->_L2 = q_marqstreason;
@@ -180,22 +180,22 @@ void CAST_Q_MARQSTREASON_to_int_init_TM_conversions(
   outC->q_marqstreason_in = Q_MARQSTREASON_Start_selected_by_driver;
   outC->IfBlock1_clock = kcg_true;
   outC->_L3_then_else_IfBlock1 = kcg_true;
-  outC->_L1_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_IfBlock1 = kcg_true;
   outC->_L3_then_else_else_else_IfBlock1 = kcg_true;
-  outC->_L2_then_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_else_else_IfBlock1 = kcg_true;
   outC->_L2_else_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L1_else_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_else_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L1_then_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_else_IfBlock1 = kcg_true;
-  outC->_L1_then_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L4_then_else_else_IfBlock1 = kcg_true;
   outC->else_clock_IfBlock1 = kcg_true;
-  outC->_L2_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L3_then_IfBlock1 = kcg_true;
-  outC->q_marqstreason_int = kcg_lit_int64(0);
+  outC->q_marqstreason_int = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

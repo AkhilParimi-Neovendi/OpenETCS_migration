@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _dV_sbi_for_V_SDM_Types_Pkg_H_
 #define _dV_sbi_for_V_SDM_Types_Pkg_H_
@@ -21,36 +21,36 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* @1/Mi_Output/ */ Mi_Output_Min_1_int64;
-  kcg_int64 /* @1/I2/ */ I2_Min_1_int64;
-  kcg_int64 /* @1/I1/ */ I1_Min_1_int64;
-  kcg_bool /* @1/_L25/ */ _L25_Min_1_int64;
-  kcg_int64 /* @1/_L24/ */ _L24_Min_1_int64;
-  kcg_int64 /* @1/_L22/ */ _L22_Min_1_int64;
-  kcg_int64 /* @1/_L21/ */ _L21_Min_1_int64;
+  kcg_int32 /* @1/Mi_Output/ */ Mi_Output_Min_1_int32;
+  kcg_int32 /* @1/I2/ */ I2_Min_1_int32;
+  kcg_int32 /* @1/I1/ */ I1_Min_1_int32;
+  kcg_bool /* @1/_L25/ */ _L25_Min_1_int32;
+  kcg_int32 /* @1/_L24/ */ _L24_Min_1_int32;
+  kcg_int32 /* @1/_L22/ */ _L22_Min_1_int32;
+  kcg_int32 /* @1/_L21/ */ _L21_Min_1_int32;
   V_odometry_Type_Obu_BasicTypes_Pkg /* _L1/ */ _L1;
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L2/ */ _L2;
   V_odometry_Type_Obu_BasicTypes_Pkg /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   kcg_bool /* _L6/ */ _L6;
   V_odometry_Type_Obu_BasicTypes_Pkg /* _L7/ */ _L7;
-  kcg_int64 /* _L8/ */ _L8;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L8/ */ _L8;
+  kcg_int32 /* _L10/ */ _L10;
   V_odometry_Type_Obu_BasicTypes_Pkg /* _L11/ */ _L11;
-  kcg_float64 /* _L12/ */ _L12;
+  kcg_float32 /* _L12/ */ _L12;
   V_odometry_Type_Obu_BasicTypes_Pkg /* _L13/ */ _L13;
   V_odometry_Type_Obu_BasicTypes_Pkg /* _L14/ */ _L14;
-  kcg_int64 /* _L15/ */ _L15;
+  kcg_int32 /* _L15/ */ _L15;
   V_odometry_Type_Obu_BasicTypes_Pkg /* _L16/ */ _L16;
   V_odometry_Type_Obu_BasicTypes_Pkg /* _L17/ */ _L17;
-  kcg_int64 /* _L18/ */ _L18;
+  kcg_int32 /* _L18/ */ _L18;
   V_odometry_Type_Obu_BasicTypes_Pkg /* _L20/ */ _L20;
   V_odometry_Type_Obu_BasicTypes_Pkg /* _L21/ */ _L21;
-  kcg_float64 /* _L22/ */ _L22;
-  kcg_int64 /* _L23/ */ _L23;
-  kcg_float64 /* _L24/ */ _L24;
-  kcg_float64 /* _L25/ */ _L25;
-  kcg_float64 /* _L26/ */ _L26;
+  kcg_float32 /* _L22/ */ _L22;
+  kcg_int32 /* _L23/ */ _L23;
+  kcg_float32 /* _L24/ */ _L24;
+  kcg_float32 /* _L25/ */ _L25;
+  kcg_float32 /* _L26/ */ _L26;
 } outC_dV_sbi_for_V_SDM_Types_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -78,6 +78,6 @@ extern void dV_sbi_for_V_init_SDM_Types_Pkg(
 #endif /* _dV_sbi_for_V_SDM_Types_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** dV_sbi_for_V_SDM_Types_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

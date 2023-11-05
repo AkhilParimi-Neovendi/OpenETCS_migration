@@ -14,7 +14,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* l_doubtunder_int/ */ l_doubtunder_int;
+  kcg_int32 /* l_doubtunder_int/ */ l_doubtunder_int;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
@@ -24,8 +24,8 @@ typedef struct {
   L_DOUBTUNDER /* _L1/ */ _L1;
   kcg_bool /* _L9/ */ _L9;
   kcg_bool /* _L8/ */ _L8;
-  kcg_int64 /* _L10/ */ _L10;
-  kcg_int64 /* _L11/ */ _L11;
+  kcg_int32 /* _L10/ */ _L10;
+  kcg_int32 /* _L11/ */ _L11;
 } outC_CAST_L_DOUBTUNDER_to_int_TM_conversions;
 
 /* ===========  node initialization and cycle functions  =========== */

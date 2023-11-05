@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _terminateSession_v2_MoRC_Pck_Subfunc_Pkg_H_
 #define _terminateSession_v2_MoRC_Pck_Subfunc_Pkg_H_
@@ -47,7 +47,7 @@ typedef struct {
   sessionStatus_T_RCM_Session_Types_Pkg /* @1/_L2/ */ _L2_MemoryBasic_1_struct;
   T_internal_Type_Obu_BasicTypes_Pkg /* SM1:waitForAckTerminationOfCommunicationSessionReceived:_L1/ */ _L1_waitForAckTerminationOfCommunicationSessionReceived_SM1;
   time_Type_MoRC_Pck /* SM1:waitForAckTerminationOfCommunicationSessionReceived:_L2/ */ _L2_waitForAckTerminationOfCommunicationSessionReceived_SM1;
-  kcg_int64 /* SM1:waitForAckTerminationOfCommunicationSessionReceived:_L3/ */ _L3_waitForAckTerminationOfCommunicationSessionReceived_SM1;
+  kcg_int32 /* SM1:waitForAckTerminationOfCommunicationSessionReceived:_L3/ */ _L3_waitForAckTerminationOfCommunicationSessionReceived_SM1;
   kcg_bool /* SM1:waitForAckTerminationOfCommunicationSessionReceived:_L4/ */ _L4_waitForAckTerminationOfCommunicationSessionReceived_SM1;
   kcg_bool /* SM1:waitForAckTerminationOfCommunicationSessionReceived:_L6/ */ _L6_waitForAckTerminationOfCommunicationSessionReceived_SM1;
   kcg_bool /* SM1:waitForAckTerminationOfCommunicationSessionReceived:_L5/ */ _L5_waitForAckTerminationOfCommunicationSessionReceived_SM1;
@@ -89,7 +89,7 @@ extern void terminateSession_v2_MoRC_Pck_Subfunc_Pkg(
   /* reset/ */
   kcg_bool reset,
   /* noOfRetriesOfSendingTerminationMessage/ */
-  kcg_int64 noOfRetriesOfSendingTerminationMessage,
+  kcg_int32 noOfRetriesOfSendingTerminationMessage,
   /* maxWaitingTimeForAckMessageReceived/ */
   T_internal_Type_Obu_BasicTypes_Pkg maxWaitingTimeForAckMessageReceived,
   outC_terminateSession_v2_MoRC_Pck_Subfunc_Pkg *outC);
@@ -131,6 +131,6 @@ extern void kcg_load_SV_terminateSession_v2_MoRC_Pck_Subfunc_Pkg(
 #endif /* _terminateSession_v2_MoRC_Pck_Subfunc_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** terminateSession_v2_MoRC_Pck_Subfunc_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

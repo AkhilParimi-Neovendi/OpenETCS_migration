@@ -66,8 +66,8 @@ typedef struct {
   NID_C /* _L323/ */ _L323;
   NID_LRBG /* _L325/ */ _L325;
   kcg_bool /* _L326/ */ _L326;
-  kcg_int64 /* _L327/ */ _L327;
-  kcg_int64 /* _L328/ */ _L328;
+  kcg_int32 /* _L327/ */ _L327;
+  kcg_int32 /* _L328/ */ _L328;
 } outC_msg_2_passedBG_CalculateTrainPosition_Pkg_msgAdapter_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

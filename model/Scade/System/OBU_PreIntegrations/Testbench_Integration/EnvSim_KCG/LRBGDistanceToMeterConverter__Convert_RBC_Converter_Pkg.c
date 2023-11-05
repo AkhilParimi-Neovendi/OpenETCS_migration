@@ -16,11 +16,11 @@ void LRBGDistanceToMeterConverter__Convert_RBC_Converter_Pkg(
   outC_LRBGDistanceToMeterConverter__Convert_RBC_Converter_Pkg *outC)
 {
   /* outDistanceToLRBGInMeters/ */
-  static kcg_float64 outDistanceToLRBGInMeters_partial;
+  static kcg_float32 outDistanceToLRBGInMeters_partial;
   /* outDistanceToLRBGInMeters/ */
-  static kcg_float64 _1_outDistanceToLRBGInMeters_partial;
+  static kcg_float32 _1_outDistanceToLRBGInMeters_partial;
   /* outDistanceToLRBGInMeters/ */
-  static kcg_float64 _2_outDistanceToLRBGInMeters_partial;
+  static kcg_float32 _2_outDistanceToLRBGInMeters_partial;
 
   outC->WhenBlock1_clock = in_Q_SCALE;
   /* WhenBlock1: */
@@ -28,9 +28,9 @@ void LRBGDistanceToMeterConverter__Convert_RBC_Converter_Pkg(
     case Q_SCALE_10_m_scale :
       outC->_L5_Q_SCALE_10_m_scale_WhenBlock1 = inDistanceToLRBG;
       outC->_L6_Q_SCALE_10_m_scale_WhenBlock1 =
-        /* WhenBlock1:Q_SCALE_10_m_scale:_L6= */(kcg_float64)
+        /* WhenBlock1:Q_SCALE_10_m_scale:_L6= */(kcg_float32)
           outC->_L5_Q_SCALE_10_m_scale_WhenBlock1;
-      outC->_L3_Q_SCALE_10_m_scale_WhenBlock1 = kcg_lit_float64(10.0);
+      outC->_L3_Q_SCALE_10_m_scale_WhenBlock1 = kcg_lit_float32(10.0);
       outC->_L4_Q_SCALE_10_m_scale_WhenBlock1 =
         outC->_L6_Q_SCALE_10_m_scale_WhenBlock1 *
         outC->_L3_Q_SCALE_10_m_scale_WhenBlock1;
@@ -40,16 +40,16 @@ void LRBGDistanceToMeterConverter__Convert_RBC_Converter_Pkg(
     case Q_SCALE_1_m_scale :
       outC->_L1_Q_SCALE_1_m_scale_WhenBlock1 = inDistanceToLRBG;
       outC->_L2_Q_SCALE_1_m_scale_WhenBlock1 =
-        /* WhenBlock1:Q_SCALE_1_m_scale:_L2= */(kcg_float64)
+        /* WhenBlock1:Q_SCALE_1_m_scale:_L2= */(kcg_float32)
           outC->_L1_Q_SCALE_1_m_scale_WhenBlock1;
       outDistanceToLRBGInMeters_partial = outC->_L2_Q_SCALE_1_m_scale_WhenBlock1;
       outC->outDistanceToLRBGInMeters = outDistanceToLRBGInMeters_partial;
       break;
     case Q_SCALE_10_cm_scale :
-      outC->_L4_Q_SCALE_10_cm_scale_WhenBlock1 = kcg_lit_float64(0.1);
+      outC->_L4_Q_SCALE_10_cm_scale_WhenBlock1 = kcg_lit_float32(0.1);
       outC->_L1_Q_SCALE_10_cm_scale_WhenBlock1 = inDistanceToLRBG;
       outC->_L2_Q_SCALE_10_cm_scale_WhenBlock1 =
-        /* WhenBlock1:Q_SCALE_10_cm_scale:_L2= */(kcg_float64)
+        /* WhenBlock1:Q_SCALE_10_cm_scale:_L2= */(kcg_float32)
           outC->_L1_Q_SCALE_10_cm_scale_WhenBlock1;
       outC->_L3_Q_SCALE_10_cm_scale_WhenBlock1 =
         outC->_L2_Q_SCALE_10_cm_scale_WhenBlock1 *
@@ -68,17 +68,17 @@ void LRBGDistanceToMeterConverter__Convert_init_RBC_Converter_Pkg(
   outC_LRBGDistanceToMeterConverter__Convert_RBC_Converter_Pkg *outC)
 {
   outC->WhenBlock1_clock = Q_SCALE_10_cm_scale;
-  outC->_L6_Q_SCALE_10_m_scale_WhenBlock1 = kcg_lit_float64(0.0);
-  outC->_L5_Q_SCALE_10_m_scale_WhenBlock1 = kcg_lit_int64(0);
-  outC->_L4_Q_SCALE_10_m_scale_WhenBlock1 = kcg_lit_float64(0.0);
-  outC->_L3_Q_SCALE_10_m_scale_WhenBlock1 = kcg_lit_float64(0.0);
-  outC->_L1_Q_SCALE_10_cm_scale_WhenBlock1 = kcg_lit_int64(0);
-  outC->_L2_Q_SCALE_10_cm_scale_WhenBlock1 = kcg_lit_float64(0.0);
-  outC->_L3_Q_SCALE_10_cm_scale_WhenBlock1 = kcg_lit_float64(0.0);
-  outC->_L4_Q_SCALE_10_cm_scale_WhenBlock1 = kcg_lit_float64(0.0);
-  outC->_L1_Q_SCALE_1_m_scale_WhenBlock1 = kcg_lit_int64(0);
-  outC->_L2_Q_SCALE_1_m_scale_WhenBlock1 = kcg_lit_float64(0.0);
-  outC->outDistanceToLRBGInMeters = kcg_lit_float64(0.0);
+  outC->_L6_Q_SCALE_10_m_scale_WhenBlock1 = kcg_lit_float32(0.0);
+  outC->_L5_Q_SCALE_10_m_scale_WhenBlock1 = kcg_lit_int32(0);
+  outC->_L4_Q_SCALE_10_m_scale_WhenBlock1 = kcg_lit_float32(0.0);
+  outC->_L3_Q_SCALE_10_m_scale_WhenBlock1 = kcg_lit_float32(0.0);
+  outC->_L1_Q_SCALE_10_cm_scale_WhenBlock1 = kcg_lit_int32(0);
+  outC->_L2_Q_SCALE_10_cm_scale_WhenBlock1 = kcg_lit_float32(0.0);
+  outC->_L3_Q_SCALE_10_cm_scale_WhenBlock1 = kcg_lit_float32(0.0);
+  outC->_L4_Q_SCALE_10_cm_scale_WhenBlock1 = kcg_lit_float32(0.0);
+  outC->_L1_Q_SCALE_1_m_scale_WhenBlock1 = kcg_lit_int32(0);
+  outC->_L2_Q_SCALE_1_m_scale_WhenBlock1 = kcg_lit_float32(0.0);
+  outC->outDistanceToLRBGInMeters = kcg_lit_float32(0.0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

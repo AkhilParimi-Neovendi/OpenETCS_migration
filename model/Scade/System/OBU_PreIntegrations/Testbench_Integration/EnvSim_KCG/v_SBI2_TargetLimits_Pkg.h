@@ -35,15 +35,15 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   V_internal_real_Type_SDM_Types_Pkg /* _L3/ */ _L3;
   L_internal_real_Type_SDM_Types_Pkg /* _L4/ */ _L4;
-  kcg_float64 /* _L5/ */ _L5;
+  kcg_float32 /* _L5/ */ _L5;
   V_internal_real_Type_SDM_Types_Pkg /* _L6/ */ _L6;
   T_trac_t_TargetLimits_Pkg /* _L7/ */ _L7;
-  kcg_float64 /* _L8/ */ _L8;
+  kcg_float32 /* _L8/ */ _L8;
   kcg_bool /* _L11/ */ _L11;
-  kcg_float64 /* _L13/ */ _L13;
+  kcg_float32 /* _L13/ */ _L13;
   V_internal_real_Type_SDM_Types_Pkg /* _L14/ */ _L14;
   bec_t_TargetLimits_Pkg /* _L15/ */ _L15;
-  kcg_float64 /* _L16/ */ _L16;
+  kcg_float32 /* _L16/ */ _L16;
   ParabolaCurve_T_CalcBrakingCurves_types /* _L17/ */ _L17;
   V_internal_real_Type_SDM_Types_Pkg /* _L2/ */ _L2;
   kcg_bool /* _L1/ */ _L1;
@@ -51,11 +51,11 @@ typedef struct {
   L_internal_real_Type_SDM_Types_Pkg /* _L19/ */ _L19;
   ParabolaCurve_T_CalcBrakingCurves_types /* _L20/ */ _L20;
   V_internal_real_Type_SDM_Types_Pkg /* _L21/ */ _L21;
-  kcg_float64 /* _L24/ */ _L24;
+  kcg_float32 /* _L24/ */ _L24;
   L_internal_real_Type_SDM_Types_Pkg /* _L28/ */ _L28;
   V_internal_real_Type_SDM_Types_Pkg /* _L27/ */ _L27;
   T_internal_real_Type_SDM_Types_Pkg /* _L29/ */ _L29;
-  kcg_float64 /* _L30/ */ _L30;
+  kcg_float32 /* _L30/ */ _L30;
   T_internal_real_Type_SDM_Types_Pkg /* _L32/ */ _L32;
   kcg_bool /* _L33/ */ _L33;
   kcg_bool /* _L35/ */ _L35;
@@ -67,7 +67,7 @@ typedef struct {
   L_internal_real_Type_SDM_Types_Pkg /* _L43/ */ _L43;
   kcg_bool /* _L44/ */ _L44;
   kcg_bool /* _L45/ */ _L45;
-  kcg_float64 /* _L49/ */ _L49;
+  kcg_float32 /* _L49/ */ _L49;
   kcg_bool /* _L48/ */ _L48;
   kcg_bool /* _L47/ */ _L47;
   kcg_bool /* _L50/ */ _L50;

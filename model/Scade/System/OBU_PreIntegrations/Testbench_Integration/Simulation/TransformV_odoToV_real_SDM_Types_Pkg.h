@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _TransformV_odoToV_real_SDM_Types_Pkg_H_
 #define _TransformV_odoToV_real_SDM_Types_Pkg_H_
@@ -22,9 +22,9 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   V_odometry_Type_Obu_BasicTypes_Pkg /* _L1/ */ _L1;
-  kcg_float64 /* _L2/ */ _L2;
-  kcg_float64 /* _L3/ */ _L3;
-  kcg_float64 /* _L4/ */ _L4;
+  kcg_float32 /* _L2/ */ _L2;
+  kcg_float32 /* _L3/ */ _L3;
+  kcg_float32 /* _L4/ */ _L4;
 } outC_TransformV_odoToV_real_SDM_Types_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -49,6 +49,6 @@ extern void TransformV_odoToV_real_init_SDM_Types_Pkg(
 #endif /* _TransformV_odoToV_real_SDM_Types_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** TransformV_odoToV_real_SDM_Types_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

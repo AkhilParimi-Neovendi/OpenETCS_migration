@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -12,14 +12,14 @@ void UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_RBC
   /* inLRBG/ */
   NID_LRBG inLRBG,
   /* inDistanceToLRBG/ */
-  kcg_float64 inDistanceToLRBG,
+  kcg_float32 inDistanceToLRBG,
   /* inRBCTime/ */
   T_TRAIN inRBCTime,
   outC_UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_RBC_Scenario_Pkg *outC)
 {
   outC->_L2 = inLRBG;
   outC->_L3 = inDistanceToLRBG;
-  outC->_L38 = kcg_lit_int64(-1);
+  outC->_L38 = kcg_lit_int32(-1);
   outC->_L37 = inRBCTime;
   /* _L1=(RBC_Scenario_Pkg::UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_Amstel#1)/ */
   UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_Amstel_RBC_Scenario_Pkg(
@@ -142,25 +142,25 @@ void UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_RBC
 void UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_init_RBC_Scenario_Pkg(
   outC_UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_RBC_Scenario_Pkg *outC)
 {
-  outC->_L53 = kcg_lit_int64(0);
-  outC->_L52 = kcg_lit_int64(0);
-  outC->_L51 = kcg_lit_int64(0);
-  outC->_L50 = kcg_lit_int64(0);
-  outC->_L47 = kcg_lit_int64(0);
-  outC->_L46 = kcg_lit_int64(0);
-  outC->_L45 = kcg_lit_int64(0);
-  outC->_L44 = kcg_lit_int64(0);
-  outC->_L43 = kcg_lit_int64(0);
-  outC->_L42 = kcg_lit_int64(0);
-  outC->_L40 = kcg_lit_int64(0);
-  outC->_L39 = kcg_lit_int64(0);
-  outC->_L38 = kcg_lit_int64(0);
-  outC->_L37 = kcg_lit_int64(0);
-  outC->_L35 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_float64(0.0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->outTriggerId = kcg_lit_int64(0);
+  outC->_L53 = kcg_lit_int32(0);
+  outC->_L52 = kcg_lit_int32(0);
+  outC->_L51 = kcg_lit_int32(0);
+  outC->_L50 = kcg_lit_int32(0);
+  outC->_L47 = kcg_lit_int32(0);
+  outC->_L46 = kcg_lit_int32(0);
+  outC->_L45 = kcg_lit_int32(0);
+  outC->_L44 = kcg_lit_int32(0);
+  outC->_L43 = kcg_lit_int32(0);
+  outC->_L42 = kcg_lit_int32(0);
+  outC->_L40 = kcg_lit_int32(0);
+  outC->_L39 = kcg_lit_int32(0);
+  outC->_L38 = kcg_lit_int32(0);
+  outC->_L37 = kcg_lit_int32(0);
+  outC->_L35 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_float32(0.0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->outTriggerId = kcg_lit_int32(0);
   /* _L53=(RBC_Scenario_Pkg::Triggers_UserStory16#1)/ */
   Triggers_UserStory16_init_RBC_Scenario_Pkg(
     &outC->Context_Triggers_UserStory16_1);
@@ -323,6 +323,6 @@ void kcg_load_SV_UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrain
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_RBC_Scenario_Pkg.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

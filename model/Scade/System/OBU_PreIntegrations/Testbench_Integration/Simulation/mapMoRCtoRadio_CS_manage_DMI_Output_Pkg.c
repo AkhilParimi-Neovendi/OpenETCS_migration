@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -69,7 +69,7 @@ void mapMoRCtoRadio_CS_init_manage_DMI_Output_Pkg(
   outC->_L15 = conn_unknown_API_RadioCommunication_Pkg;
   outC->_L13 = mcs_disconnected_RCM_Types_Pkg;
   outC->_L12.valid = kcg_true;
-  outC->_L12.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L12.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L12.status = mcs_disconnected_RCM_Types_Pkg;
   outC->_L12.nid_radio = kcg_lit_int64(0);
   outC->_L12.settingUpConnectionHasFailed = kcg_true;
@@ -79,12 +79,12 @@ void mapMoRCtoRadio_CS_init_manage_DMI_Output_Pkg(
   outC->_L8 = conn_unknown_API_RadioCommunication_Pkg;
   outC->_L6 = conn_unknown_API_RadioCommunication_Pkg;
   outC->_L1.registration.valid = kcg_true;
-  outC->_L1.registration.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L1.registration.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L1.registration.healthStatus = mhs_nok_RCM_Types_Pkg;
   outC->_L1.registration.status = mrs_unregistered_RCM_Types_Pkg;
-  outC->_L1.registration.nid_mn = kcg_lit_int64(0);
+  outC->_L1.registration.nid_mn = kcg_lit_int32(0);
   outC->_L1.connection.valid = kcg_true;
-  outC->_L1.connection.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L1.connection.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L1.connection.status = mcs_disconnected_RCM_Types_Pkg;
   outC->_L1.connection.nid_radio = kcg_lit_int64(0);
   outC->_L1.connection.settingUpConnectionHasFailed = kcg_true;
@@ -92,8 +92,8 @@ void mapMoRCtoRadio_CS_init_manage_DMI_Output_Pkg(
   outC->_L1.connection.isInRadioHole = kcg_true;
   outC->_L1.session.valid = kcg_true;
   outC->_L1.session.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L1.session.nid_c = kcg_lit_int64(0);
-  outC->_L1.session.nid_rbc = kcg_lit_int64(0);
+  outC->_L1.session.nid_c = kcg_lit_int32(0);
+  outC->_L1.session.nid_rbc = kcg_lit_int32(0);
   outC->_L1.session.nid_radio = kcg_lit_int64(0);
   outC->outBMI_CS = conn_unknown_API_RadioCommunication_Pkg;
 }
@@ -111,6 +111,6 @@ void mapMoRCtoRadio_CS_reset_manage_DMI_Output_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** mapMoRCtoRadio_CS_manage_DMI_Output_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

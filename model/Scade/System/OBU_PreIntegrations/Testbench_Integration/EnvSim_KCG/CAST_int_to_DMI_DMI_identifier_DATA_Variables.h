@@ -37,7 +37,7 @@ typedef struct {
 /* DATA::Variables::CAST_int_to_DMI_DMI_identifier/ */
 extern void CAST_int_to_DMI_DMI_identifier_DATA_Variables(
   /* dmi_dmi_identifier_int/ */
-  kcg_int64 dmi_dmi_identifier_int,
+  kcg_int32 dmi_dmi_identifier_int,
   outC_CAST_int_to_DMI_DMI_identifier_DATA_Variables *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

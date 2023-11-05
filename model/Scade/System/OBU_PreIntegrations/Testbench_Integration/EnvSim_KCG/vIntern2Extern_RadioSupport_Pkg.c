@@ -13,8 +13,8 @@ void vIntern2Extern_RadioSupport_Pkg(
   V_internal_Type_Obu_BasicTypes_Pkg v_intern,
   outC_vIntern2Extern_RadioSupport_Pkg *outC)
 {
-  outC->_L5 = kcg_lit_int64(5000);
-  outC->_L3 = kcg_lit_int64(36);
+  outC->_L5 = kcg_lit_int32(5000);
+  outC->_L3 = kcg_lit_int32(36);
   outC->_L1 = v_intern;
   outC->_L2 = outC->_L1 * outC->_L3;
   outC->_L4 = outC->_L2 / outC->_L5;
@@ -25,12 +25,12 @@ void vIntern2Extern_RadioSupport_Pkg(
 void vIntern2Extern_init_RadioSupport_Pkg(
   outC_vIntern2Extern_RadioSupport_Pkg *outC)
 {
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->v_SRS = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->v_SRS = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

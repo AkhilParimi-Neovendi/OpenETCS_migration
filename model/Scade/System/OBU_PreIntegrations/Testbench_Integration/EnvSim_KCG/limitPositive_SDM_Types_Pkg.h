@@ -14,30 +14,30 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_float64 /* limited/ */ limited;
+  kcg_float32 /* limited/ */ limited;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_float64 /* @1/Ma_Output/ */ Ma_Output_Max_1_float64;
-  kcg_float64 /* @1/I2/ */ I2_Max_1_float64;
-  kcg_float64 /* @1/I1/ */ I1_Max_1_float64;
-  kcg_float64 /* @1/_L4/ */ _L4_Max_1_float64;
-  kcg_bool /* @1/_L3/ */ _L3_Max_1_float64;
-  kcg_float64 /* @1/_L2/ */ _L2_Max_1_float64;
-  kcg_float64 /* @1/_L1/ */ _L1_Max_1_float64;
-  kcg_float64 /* _L1/ */ _L1;
-  kcg_float64 /* _L2/ */ _L2;
-  kcg_float64 /* _L3/ */ _L3;
+  kcg_float32 /* @1/Ma_Output/ */ Ma_Output_Max_1_float32;
+  kcg_float32 /* @1/I2/ */ I2_Max_1_float32;
+  kcg_float32 /* @1/I1/ */ I1_Max_1_float32;
+  kcg_float32 /* @1/_L4/ */ _L4_Max_1_float32;
+  kcg_bool /* @1/_L3/ */ _L3_Max_1_float32;
+  kcg_float32 /* @1/_L2/ */ _L2_Max_1_float32;
+  kcg_float32 /* @1/_L1/ */ _L1_Max_1_float32;
+  kcg_float32 /* _L1/ */ _L1;
+  kcg_float32 /* _L2/ */ _L2;
+  kcg_float32 /* _L3/ */ _L3;
 } outC_limitPositive_SDM_Types_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* SDM_Types_Pkg::limitPositive/ */
 extern void limitPositive_SDM_Types_Pkg(
   /* in/ */
-  kcg_float64 in,
+  kcg_float32 in,
   outC_limitPositive_SDM_Types_Pkg *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

@@ -740,7 +740,7 @@ void requestRadioConnectionSetupFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L405.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L405.nid_c = kcg_lit_int32(0);
   outC->_L405.nid_RBC = kcg_lit_int32(0);
-  outC->_L405.nid_radio = kcg_lit_int64(0);
+  outC->_L405.nid_radio = kcg_lit_int32(0);
   outC->_L405.q_sleepsession = Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L405.origin.valid = kcg_true;
   outC->_L405.origin.nid_c = kcg_lit_int32(0);
@@ -753,7 +753,7 @@ void requestRadioConnectionSetupFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L403.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L403.nid_c = kcg_lit_int32(0);
   outC->_L403.nid_RBC = kcg_lit_int32(0);
-  outC->_L403.nid_radio = kcg_lit_int64(0);
+  outC->_L403.nid_radio = kcg_lit_int32(0);
   outC->_L403.q_sleepsession = Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L403.origin.valid = kcg_true;
   outC->_L403.origin.nid_c = kcg_lit_int32(0);
@@ -772,7 +772,7 @@ void requestRadioConnectionSetupFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L389.valid = kcg_true;
   outC->_L389.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L389.status = mcs_disconnected_RCM_Types_Pkg;
-  outC->_L389.nid_radio = kcg_lit_int64(0);
+  outC->_L389.nid_radio = kcg_lit_int32(0);
   outC->_L389.settingUpConnectionHasFailed = kcg_true;
   outC->_L389.connectionLost = kcg_true;
   outC->_L389.isInRadioHole = kcg_true;
@@ -809,7 +809,7 @@ void requestRadioConnectionSetupFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L323.phase = sp_terminated_RCM_Session_Types_Pkg;
   outC->_L323.nid_c = kcg_lit_int32(0);
   outC->_L323.nid_rbc = kcg_lit_int32(0);
-  outC->_L323.nid_radio = kcg_lit_int64(0);
+  outC->_L323.nid_radio = kcg_lit_int32(0);
   outC->_L324 = msrc_undefined_Common_Types_Pkg;
   outC->_L325 = kcg_true;
   outC->_L326 = kcg_lit_int32(0);
@@ -837,7 +837,7 @@ void requestRadioConnectionSetupFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L345.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L345.nid_c = kcg_lit_int32(0);
   outC->_L345.nid_RBC = kcg_lit_int32(0);
-  outC->_L345.nid_radio = kcg_lit_int64(0);
+  outC->_L345.nid_radio = kcg_lit_int32(0);
   outC->_L345.q_sleepsession = Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L345.origin.valid = kcg_true;
   outC->_L345.origin.nid_c = kcg_lit_int32(0);
@@ -877,7 +877,7 @@ void requestRadioConnectionSetupFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L209.valid = kcg_true;
   outC->_L209.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L209.status = mcs_disconnected_RCM_Types_Pkg;
-  outC->_L209.nid_radio = kcg_lit_int64(0);
+  outC->_L209.nid_radio = kcg_lit_int32(0);
   outC->_L209.settingUpConnectionHasFailed = kcg_true;
   outC->_L209.connectionLost = kcg_true;
   outC->_L209.isInRadioHole = kcg_true;
@@ -923,7 +923,7 @@ void requestRadioConnectionSetupFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->p42_sessionManagement_mem.q_rbc = Q_RBC_Terminate_communication_session;
   outC->p42_sessionManagement_mem.nid_c = kcg_lit_int32(0);
   outC->p42_sessionManagement_mem.nid_RBC = kcg_lit_int32(0);
-  outC->p42_sessionManagement_mem.nid_radio = kcg_lit_int64(0);
+  outC->p42_sessionManagement_mem.nid_radio = kcg_lit_int32(0);
   outC->p42_sessionManagement_mem.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->p42_sessionManagement_mem.origin.valid = kcg_true;
@@ -961,7 +961,7 @@ void requestRadioConnectionSetupFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L12_then_else_IfBlock1.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L12_then_else_IfBlock1.nid_c = kcg_lit_int32(0);
   outC->_L12_then_else_IfBlock1.nid_RBC = kcg_lit_int32(0);
-  outC->_L12_then_else_IfBlock1.nid_radio = kcg_lit_int64(0);
+  outC->_L12_then_else_IfBlock1.nid_radio = kcg_lit_int32(0);
   outC->_L12_then_else_IfBlock1.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L12_then_else_IfBlock1.origin.valid = kcg_true;
@@ -970,35 +970,35 @@ void requestRadioConnectionSetupFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L12_then_else_IfBlock1.origin.device_id = kcg_lit_int32(0);
   outC->_L11_then_else_IfBlock1 = kcg_true;
   outC->_L10_then_else_IfBlock1 = kcg_true;
-  outC->_L9_then_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L4_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L9_then_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L4_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L1_then_else_IfBlock1 = mca_nop_RCM_Types_Pkg;
-  outC->_L2_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L3_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L5_then_else_IfBlock1.valid = kcg_true;
   outC->_L5_then_else_IfBlock1.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L5_then_else_IfBlock1.status = mcs_disconnected_RCM_Types_Pkg;
-  outC->_L5_then_else_IfBlock1.nid_radio = kcg_lit_int64(0);
+  outC->_L5_then_else_IfBlock1.nid_radio = kcg_lit_int32(0);
   outC->_L5_then_else_IfBlock1.settingUpConnectionHasFailed = kcg_true;
   outC->_L5_then_else_IfBlock1.connectionLost = kcg_true;
   outC->_L5_then_else_IfBlock1.isInRadioHole = kcg_true;
   outC->_L8_then_else_IfBlock1.valid = kcg_true;
   outC->_L8_then_else_IfBlock1.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L8_then_else_IfBlock1.action = mca_nop_RCM_Types_Pkg;
-  outC->_L8_then_else_IfBlock1.nid_radio = kcg_lit_int64(0);
+  outC->_L8_then_else_IfBlock1.nid_radio = kcg_lit_int32(0);
   outC->else_clock_else_IfBlock1 = kcg_true;
   outC->_L11_then_else_else_else_IfBlock1 = kcg_true;
   outC->_L5_then_else_else_else_IfBlock1 = mca_nop_RCM_Types_Pkg;
   outC->_L6_then_else_else_else_IfBlock1 = kcg_lit_int32(0);
-  outC->_L7_then_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L7_then_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L8_then_else_else_else_IfBlock1.valid = kcg_true;
   outC->_L8_then_else_else_else_IfBlock1.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L8_then_else_else_else_IfBlock1.action = mca_nop_RCM_Types_Pkg;
-  outC->_L8_then_else_else_else_IfBlock1.nid_radio = kcg_lit_int64(0);
+  outC->_L8_then_else_else_else_IfBlock1.nid_radio = kcg_lit_int32(0);
   outC->_L10_then_else_else_else_IfBlock1.valid = kcg_true;
   outC->_L10_then_else_else_else_IfBlock1.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L10_then_else_else_else_IfBlock1.status = mcs_disconnected_RCM_Types_Pkg;
-  outC->_L10_then_else_else_else_IfBlock1.nid_radio = kcg_lit_int64(0);
+  outC->_L10_then_else_else_else_IfBlock1.nid_radio = kcg_lit_int32(0);
   outC->_L10_then_else_else_else_IfBlock1.settingUpConnectionHasFailed = kcg_true;
   outC->_L10_then_else_else_else_IfBlock1.connectionLost = kcg_true;
   outC->_L10_then_else_else_else_IfBlock1.isInRadioHole = kcg_true;
@@ -1007,27 +1007,27 @@ void requestRadioConnectionSetupFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L16_else_else_else_else_IfBlock1.valid = kcg_true;
   outC->_L16_else_else_else_else_IfBlock1.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L16_else_else_else_else_IfBlock1.status = mcs_disconnected_RCM_Types_Pkg;
-  outC->_L16_else_else_else_else_IfBlock1.nid_radio = kcg_lit_int64(0);
+  outC->_L16_else_else_else_else_IfBlock1.nid_radio = kcg_lit_int32(0);
   outC->_L16_else_else_else_else_IfBlock1.settingUpConnectionHasFailed = kcg_true;
   outC->_L16_else_else_else_else_IfBlock1.connectionLost = kcg_true;
   outC->_L16_else_else_else_else_IfBlock1.isInRadioHole = kcg_true;
   outC->_L21_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
-  outC->_L22_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L22_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L23_else_else_else_else_IfBlock1.valid = kcg_true;
   outC->_L23_else_else_else_else_IfBlock1.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L23_else_else_else_else_IfBlock1.action = mca_nop_RCM_Types_Pkg;
-  outC->_L23_else_else_else_else_IfBlock1.nid_radio = kcg_lit_int64(0);
+  outC->_L23_else_else_else_else_IfBlock1.nid_radio = kcg_lit_int32(0);
   outC->else_clock_else_else_IfBlock1 = kcg_true;
-  outC->_L21_then_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L21_then_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L19_then_else_else_IfBlock1.valid = kcg_true;
   outC->_L19_then_else_else_IfBlock1.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L19_then_else_else_IfBlock1.action = mca_nop_RCM_Types_Pkg;
-  outC->_L19_then_else_else_IfBlock1.nid_radio = kcg_lit_int64(0);
+  outC->_L19_then_else_else_IfBlock1.nid_radio = kcg_lit_int32(0);
   outC->_L16_then_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L15_then_else_else_IfBlock1.valid = kcg_true;
   outC->_L15_then_else_else_IfBlock1.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L15_then_else_else_IfBlock1.status = mcs_disconnected_RCM_Types_Pkg;
-  outC->_L15_then_else_else_IfBlock1.nid_radio = kcg_lit_int64(0);
+  outC->_L15_then_else_else_IfBlock1.nid_radio = kcg_lit_int32(0);
   outC->_L15_then_else_else_IfBlock1.settingUpConnectionHasFailed = kcg_true;
   outC->_L15_then_else_else_IfBlock1.connectionLost = kcg_true;
   outC->_L15_then_else_else_IfBlock1.isInRadioHole = kcg_true;
@@ -1037,13 +1037,13 @@ void requestRadioConnectionSetupFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L12_then_IfBlock1.valid = kcg_true;
   outC->_L12_then_IfBlock1.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L12_then_IfBlock1.action = mca_nop_RCM_Types_Pkg;
-  outC->_L12_then_IfBlock1.nid_radio = kcg_lit_int64(0);
+  outC->_L12_then_IfBlock1.nid_radio = kcg_lit_int32(0);
   outC->_L11_then_IfBlock1 = mca_nop_RCM_Types_Pkg;
-  outC->_L7_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L7_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L5_then_IfBlock1.valid = kcg_true;
   outC->_L5_then_IfBlock1.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L5_then_IfBlock1.status = mcs_disconnected_RCM_Types_Pkg;
-  outC->_L5_then_IfBlock1.nid_radio = kcg_lit_int64(0);
+  outC->_L5_then_IfBlock1.nid_radio = kcg_lit_int32(0);
   outC->_L5_then_IfBlock1.settingUpConnectionHasFailed = kcg_true;
   outC->_L5_then_IfBlock1.connectionLost = kcg_true;
   outC->_L5_then_IfBlock1.isInRadioHole = kcg_true;
@@ -1055,7 +1055,7 @@ void requestRadioConnectionSetupFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L7_Memory_1_struct.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L7_Memory_1_struct.nid_c = kcg_lit_int32(0);
   outC->_L7_Memory_1_struct.nid_RBC = kcg_lit_int32(0);
-  outC->_L7_Memory_1_struct.nid_radio = kcg_lit_int64(0);
+  outC->_L7_Memory_1_struct.nid_radio = kcg_lit_int32(0);
   outC->_L7_Memory_1_struct.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L7_Memory_1_struct.origin.valid = kcg_true;
@@ -1068,7 +1068,7 @@ void requestRadioConnectionSetupFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L6_Memory_1_struct.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L6_Memory_1_struct.nid_c = kcg_lit_int32(0);
   outC->_L6_Memory_1_struct.nid_RBC = kcg_lit_int32(0);
-  outC->_L6_Memory_1_struct.nid_radio = kcg_lit_int64(0);
+  outC->_L6_Memory_1_struct.nid_radio = kcg_lit_int32(0);
   outC->_L6_Memory_1_struct.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L6_Memory_1_struct.origin.valid = kcg_true;
@@ -1081,7 +1081,7 @@ void requestRadioConnectionSetupFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L5_Memory_1_struct.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L5_Memory_1_struct.nid_c = kcg_lit_int32(0);
   outC->_L5_Memory_1_struct.nid_RBC = kcg_lit_int32(0);
-  outC->_L5_Memory_1_struct.nid_radio = kcg_lit_int64(0);
+  outC->_L5_Memory_1_struct.nid_radio = kcg_lit_int32(0);
   outC->_L5_Memory_1_struct.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L5_Memory_1_struct.origin.valid = kcg_true;
@@ -1095,7 +1095,7 @@ void requestRadioConnectionSetupFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L2_Memory_1_struct.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L2_Memory_1_struct.nid_c = kcg_lit_int32(0);
   outC->_L2_Memory_1_struct.nid_RBC = kcg_lit_int32(0);
-  outC->_L2_Memory_1_struct.nid_radio = kcg_lit_int64(0);
+  outC->_L2_Memory_1_struct.nid_radio = kcg_lit_int32(0);
   outC->_L2_Memory_1_struct.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L2_Memory_1_struct.origin.valid = kcg_true;
@@ -1109,7 +1109,7 @@ void requestRadioConnectionSetupFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L9_Memory_1_struct.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L9_Memory_1_struct.nid_c = kcg_lit_int32(0);
   outC->_L9_Memory_1_struct.nid_RBC = kcg_lit_int32(0);
-  outC->_L9_Memory_1_struct.nid_radio = kcg_lit_int64(0);
+  outC->_L9_Memory_1_struct.nid_radio = kcg_lit_int32(0);
   outC->_L9_Memory_1_struct.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L9_Memory_1_struct.origin.valid = kcg_true;
@@ -1122,7 +1122,7 @@ void requestRadioConnectionSetupFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->M_Input_Memory_1_struct.q_rbc = Q_RBC_Terminate_communication_session;
   outC->M_Input_Memory_1_struct.nid_c = kcg_lit_int32(0);
   outC->M_Input_Memory_1_struct.nid_RBC = kcg_lit_int32(0);
-  outC->M_Input_Memory_1_struct.nid_radio = kcg_lit_int64(0);
+  outC->M_Input_Memory_1_struct.nid_radio = kcg_lit_int32(0);
   outC->M_Input_Memory_1_struct.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->M_Input_Memory_1_struct.origin.valid = kcg_true;
@@ -1137,7 +1137,7 @@ void requestRadioConnectionSetupFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->InitVal_Memory_1_struct.q_rbc = Q_RBC_Terminate_communication_session;
   outC->InitVal_Memory_1_struct.nid_c = kcg_lit_int32(0);
   outC->InitVal_Memory_1_struct.nid_RBC = kcg_lit_int32(0);
-  outC->InitVal_Memory_1_struct.nid_radio = kcg_lit_int64(0);
+  outC->InitVal_Memory_1_struct.nid_radio = kcg_lit_int32(0);
   outC->InitVal_Memory_1_struct.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->InitVal_Memory_1_struct.origin.valid = kcg_true;
@@ -1150,7 +1150,7 @@ void requestRadioConnectionSetupFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->Out_Memory_1_struct.q_rbc = Q_RBC_Terminate_communication_session;
   outC->Out_Memory_1_struct.nid_c = kcg_lit_int32(0);
   outC->Out_Memory_1_struct.nid_RBC = kcg_lit_int32(0);
-  outC->Out_Memory_1_struct.nid_radio = kcg_lit_int64(0);
+  outC->Out_Memory_1_struct.nid_radio = kcg_lit_int32(0);
   outC->Out_Memory_1_struct.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->Out_Memory_1_struct.origin.valid = kcg_true;
@@ -1163,7 +1163,7 @@ void requestRadioConnectionSetupFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L8_Memory_1_struct.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L8_Memory_1_struct.nid_c = kcg_lit_int32(0);
   outC->_L8_Memory_1_struct.nid_RBC = kcg_lit_int32(0);
-  outC->_L8_Memory_1_struct.nid_radio = kcg_lit_int64(0);
+  outC->_L8_Memory_1_struct.nid_radio = kcg_lit_int32(0);
   outC->_L8_Memory_1_struct.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L8_Memory_1_struct.origin.valid = kcg_true;
@@ -1174,7 +1174,7 @@ void requestRadioConnectionSetupFromOBU_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->connectionCmd.valid = kcg_true;
   outC->connectionCmd.mobileDeviceNo = kcg_lit_int32(0);
   outC->connectionCmd.action = mca_nop_RCM_Types_Pkg;
-  outC->connectionCmd.nid_radio = kcg_lit_int64(0);
+  outC->connectionCmd.nid_radio = kcg_lit_int32(0);
   /* _L334=(MoRC_Pck::Subfunc_Pkg::validate_q_sleepsession_v2#2)/ */
   validate_q_sleepsession_v2_init_MoRC_Pck_Subfunc_Pkg(
     &outC->Context_validate_q_sleepsession_v2_2);

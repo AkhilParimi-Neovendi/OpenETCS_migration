@@ -26,10 +26,10 @@ typedef struct {
   MetadataElement_T_Common_Types_Pkg /* _L1/ */ _L1;
   NID_PACKET /* _L2/ */ _L2;
   kcg_bool /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L4/ */ _L4;
   kcg_bool /* _L6/ */ _L6;
   kcg_bool /* _L8/ */ _L8;
-  kcg_int64 /* _L9/ */ _L9;
+  kcg_int32 /* _L9/ */ _L9;
 } outC_CheckIfPacketRadioMetadataElementIsPacket15_CheckEuroradioMessage_SubFunctions;
 
 /* ===========  node initialization and cycle functions  =========== */

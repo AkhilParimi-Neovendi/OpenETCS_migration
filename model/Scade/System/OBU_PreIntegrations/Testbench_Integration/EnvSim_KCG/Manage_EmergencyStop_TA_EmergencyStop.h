@@ -128,7 +128,7 @@ typedef struct {
   T_TRAIN /* _L118/ */ _L118;
   kcg_bool /* _L117/ */ _L117;
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* _L125/ */ _L125;
-  kcg_int64 /* _L126/ */ _L126;
+  kcg_int32 /* _L126/ */ _L126;
 } outC_Manage_EmergencyStop_TA_EmergencyStop;
 
 /* ===========  node initialization and cycle functions  =========== */

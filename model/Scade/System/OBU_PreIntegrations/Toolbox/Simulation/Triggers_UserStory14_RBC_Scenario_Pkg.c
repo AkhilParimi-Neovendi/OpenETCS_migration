@@ -12,15 +12,15 @@ void Triggers_UserStory14_RBC_Scenario_Pkg(
   /* inLRBG/ */
   NID_LRBG inLRBG,
   /* inDistanceToLRBG/ */
-  kcg_float64 inDistanceToLRBG,
+  kcg_float32 inDistanceToLRBG,
   /* inTriggerId/ */
-  kcg_int64 inTriggerId,
+  kcg_int32 inTriggerId,
   /* inRBCTime/ */
   T_TRAIN inRBCTime,
   outC_Triggers_UserStory14_RBC_Scenario_Pkg *outC)
 {
   NID_LRBG noname;
-  kcg_float64 _1_noname;
+  kcg_float32 _1_noname;
   T_TRAIN _2_noname;
 
   outC->_L5 = inRBCTime;
@@ -37,11 +37,11 @@ void Triggers_UserStory14_RBC_Scenario_Pkg(
 void Triggers_UserStory14_init_RBC_Scenario_Pkg(
   outC_Triggers_UserStory14_RBC_Scenario_Pkg *outC)
 {
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_float64(0.0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->outTriggerId = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_float32(0.0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->outTriggerId = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

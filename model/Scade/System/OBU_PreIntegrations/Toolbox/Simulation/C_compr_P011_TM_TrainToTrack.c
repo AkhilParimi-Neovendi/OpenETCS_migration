@@ -24,7 +24,7 @@ void C_compr_P011_TM_TrainToTrack(
   P011_ntc_list_TM_TrainToTrack op_call;
   P011_voltage_list_TM_TrainToTrack _5_op_call;
 
-  outC->_L5_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
+  outC->_L5_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
   kcg_copy_P011_TrainTrack_int_TM_TrainToTrack(&outC->_L1, P011_int);
   kcg_copy_Array11_TM_TrainToTrack(
     &outC->_L127,
@@ -33,7 +33,7 @@ void C_compr_P011_TM_TrainToTrack(
   /* _L150=(TM_TrainToTrack::Decode_NID_PACKET#1)/ */
   Decode_NID_PACKET_TM_TrainToTrack(
     outC->_L139,
-    kcg_lit_int64(11),
+    kcg_lit_int32(11),
     &outC->Context_Decode_NID_PACKET_1);
   outC->_L150 = outC->Context_Decode_NID_PACKET_1.Valid;
   /* _L151=(TM_TrainToTrack::Filter_Variable#1)/ */
@@ -47,14 +47,14 @@ void C_compr_P011_TM_TrainToTrack(
     outC->nid_packet_int_CAST_Int_to_NID_PACKET_1;
   outC->_L4_CAST_Int_to_NID_PACKET_1 = outC->_L1_CAST_Int_to_NID_PACKET_1 <
     outC->_L5_CAST_Int_to_NID_PACKET_1;
-  outC->_L3_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(256);
+  outC->_L3_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(256);
   outC->_L2_CAST_Int_to_NID_PACKET_1 = outC->_L1_CAST_Int_to_NID_PACKET_1 >
     outC->_L3_CAST_Int_to_NID_PACKET_1;
   noname_CAST_Int_to_NID_PACKET_1 = outC->_L2_CAST_Int_to_NID_PACKET_1;
   _1_noname_CAST_Int_to_NID_PACKET_1 = outC->_L4_CAST_Int_to_NID_PACKET_1;
   outC->nid_packet_CAST_Int_to_NID_PACKET_1 = outC->_L1_CAST_Int_to_NID_PACKET_1;
-  outC->_L13_CAST_Int_to_L_PACKET_1 = kcg_lit_int64(8191);
-  outC->_L12_CAST_Int_to_L_PACKET_1 = kcg_lit_int64(0);
+  outC->_L13_CAST_Int_to_L_PACKET_1 = kcg_lit_int32(8191);
+  outC->_L12_CAST_Int_to_L_PACKET_1 = kcg_lit_int32(0);
   outC->_L140 = outC->_L127[1];
   /* _L152=(TM_TrainToTrack::Filter_Variable#2)/ */
   Filter_Variable_TM_TrainToTrack(
@@ -71,7 +71,7 @@ void C_compr_P011_TM_TrainToTrack(
     outC->_L12_CAST_Int_to_L_PACKET_1;
   noname_CAST_Int_to_L_PACKET_1 = outC->_L8_CAST_Int_to_L_PACKET_1;
   _2_noname_CAST_Int_to_L_PACKET_1 = outC->_L9_CAST_Int_to_L_PACKET_1;
-  outC->_L11_CAST_Int_to_N_ITER_1 = kcg_lit_int64(0);
+  outC->_L11_CAST_Int_to_N_ITER_1 = kcg_lit_int32(0);
   outC->_L149 = outC->_L127[10];
   /* _L162=(TM_TrainToTrack::Filter_Variable#12)/ */
   Filter_Variable_TM_TrainToTrack(
@@ -84,12 +84,12 @@ void C_compr_P011_TM_TrainToTrack(
   outC->_L10_CAST_Int_to_N_ITER_1 = outC->_L1_CAST_Int_to_N_ITER_1 <
     outC->_L11_CAST_Int_to_N_ITER_1;
   noname_CAST_Int_to_N_ITER_1 = outC->_L10_CAST_Int_to_N_ITER_1;
-  outC->_L9_CAST_Int_to_N_ITER_1 = kcg_lit_int64(31);
+  outC->_L9_CAST_Int_to_N_ITER_1 = kcg_lit_int32(31);
   outC->_L12_CAST_Int_to_N_ITER_1 = outC->_L1_CAST_Int_to_N_ITER_1 >
     outC->_L9_CAST_Int_to_N_ITER_1;
   _3_noname_CAST_Int_to_N_ITER_1 = outC->_L12_CAST_Int_to_N_ITER_1;
   outC->n_iter_CAST_Int_to_N_ITER_1 = outC->_L1_CAST_Int_to_N_ITER_1;
-  outC->_L11_CAST_Int_to_N_ITER_2 = kcg_lit_int64(0);
+  outC->_L11_CAST_Int_to_N_ITER_2 = kcg_lit_int32(0);
   outC->_L164 = outC->_L1[19];
   /* _L163=(TM_TrainToTrack::Filter_Variable#13)/ */
   Filter_Variable_TM_TrainToTrack(
@@ -102,13 +102,13 @@ void C_compr_P011_TM_TrainToTrack(
   outC->_L10_CAST_Int_to_N_ITER_2 = outC->_L1_CAST_Int_to_N_ITER_2 <
     outC->_L11_CAST_Int_to_N_ITER_2;
   noname_CAST_Int_to_N_ITER_2 = outC->_L10_CAST_Int_to_N_ITER_2;
-  outC->_L9_CAST_Int_to_N_ITER_2 = kcg_lit_int64(31);
+  outC->_L9_CAST_Int_to_N_ITER_2 = kcg_lit_int32(31);
   outC->_L12_CAST_Int_to_N_ITER_2 = outC->_L1_CAST_Int_to_N_ITER_2 >
     outC->_L9_CAST_Int_to_N_ITER_2;
   _4_noname_CAST_Int_to_N_ITER_2 = outC->_L12_CAST_Int_to_N_ITER_2;
   outC->n_iter_CAST_Int_to_N_ITER_2 = outC->_L1_CAST_Int_to_N_ITER_2;
   outC->every2 = outC->_L150;
-  kcg_copy_array_int64_5(&outC->_L166, (array_int64_5 *) &outC->_L1[20]);
+  kcg_copy_array_int32_5(&outC->_L166, (array_int32_5 *) &outC->_L1[20]);
   if (outC->every2) {
     /* _L114=(TM_TrainToTrack_lib_internal::C_P011_unflatten_sections_ntc#1)/ */
     C_P011_unflatten_sections_ntc_TM_TrainToTrack_lib_internal(
@@ -119,7 +119,7 @@ void C_compr_P011_TM_TrainToTrack(
       &outC->_1_Context_C_P011_unflatten_sections_ntc_1.sections);
   }
   outC->every = outC->_L150;
-  kcg_copy_array_int64_8(&outC->_L165, (array_int64_8 *) &outC->_L1[11]);
+  kcg_copy_array_int32_8(&outC->_L165, (array_int32_8 *) &outC->_L1[11]);
   if (outC->every) {
     /* _L113=(TM_TrainToTrack_lib_internal::C_P011_unflatten_sections_voltage#1)/ */
     _149_C_P011_unflatten_sec_TM_TrainToTrack_lib_internal(
@@ -280,137 +280,137 @@ void C_compr_P011_init_TM_TrainToTrack(outC_C_compr_P011_TM_TrainToTrack *outC)
 
   for (idx = 0; idx < 4; idx++) {
     outC->_L113[idx].m_voltage = M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->_L113[idx].nid_ctraction = kcg_lit_int64(0);
+    outC->_L113[idx].nid_ctraction = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 5; idx1++) {
-    outC->_L166[idx1] = kcg_lit_int64(0);
+    outC->_L166[idx1] = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 8; idx2++) {
-    outC->_L165[idx2] = kcg_lit_int64(0);
+    outC->_L165[idx2] = kcg_lit_int32(0);
   }
-  outC->_L164 = kcg_lit_int64(0);
-  outC->_L163 = kcg_lit_int64(0);
-  outC->_L162 = kcg_lit_int64(0);
-  outC->_L161 = kcg_lit_int64(0);
-  outC->_L160 = kcg_lit_int64(0);
-  outC->_L159 = kcg_lit_int64(0);
-  outC->_L158 = kcg_lit_int64(0);
-  outC->_L157 = kcg_lit_int64(0);
-  outC->_L156 = kcg_lit_int64(0);
-  outC->_L154 = kcg_lit_int64(0);
-  outC->_L153 = kcg_lit_int64(0);
-  outC->_L152 = kcg_lit_int64(0);
-  outC->_L151 = kcg_lit_int64(0);
+  outC->_L164 = kcg_lit_int32(0);
+  outC->_L163 = kcg_lit_int32(0);
+  outC->_L162 = kcg_lit_int32(0);
+  outC->_L161 = kcg_lit_int32(0);
+  outC->_L160 = kcg_lit_int32(0);
+  outC->_L159 = kcg_lit_int32(0);
+  outC->_L158 = kcg_lit_int32(0);
+  outC->_L157 = kcg_lit_int32(0);
+  outC->_L156 = kcg_lit_int32(0);
+  outC->_L154 = kcg_lit_int32(0);
+  outC->_L153 = kcg_lit_int32(0);
+  outC->_L152 = kcg_lit_int32(0);
+  outC->_L151 = kcg_lit_int32(0);
   outC->_L150 = kcg_true;
-  outC->_L139 = kcg_lit_int64(0);
-  outC->_L140 = kcg_lit_int64(0);
-  outC->_L141 = kcg_lit_int64(0);
-  outC->_L142 = kcg_lit_int64(0);
-  outC->_L143 = kcg_lit_int64(0);
-  outC->_L144 = kcg_lit_int64(0);
-  outC->_L145 = kcg_lit_int64(0);
-  outC->_L146 = kcg_lit_int64(0);
-  outC->_L147 = kcg_lit_int64(0);
-  outC->_L148 = kcg_lit_int64(0);
-  outC->_L149 = kcg_lit_int64(0);
+  outC->_L139 = kcg_lit_int32(0);
+  outC->_L140 = kcg_lit_int32(0);
+  outC->_L141 = kcg_lit_int32(0);
+  outC->_L142 = kcg_lit_int32(0);
+  outC->_L143 = kcg_lit_int32(0);
+  outC->_L144 = kcg_lit_int32(0);
+  outC->_L145 = kcg_lit_int32(0);
+  outC->_L146 = kcg_lit_int32(0);
+  outC->_L147 = kcg_lit_int32(0);
+  outC->_L148 = kcg_lit_int32(0);
+  outC->_L149 = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 11; idx3++) {
-    outC->_L127[idx3] = kcg_lit_int64(0);
+    outC->_L127[idx3] = kcg_lit_int32(0);
   }
   outC->_L116.valid = kcg_true;
-  outC->_L116.nid_packet = kcg_lit_int64(0);
-  outC->_L116.l_packet = kcg_lit_int64(0);
+  outC->_L116.nid_packet = kcg_lit_int32(0);
+  outC->_L116.l_packet = kcg_lit_int32(0);
   outC->_L116.nc_cdtrain = NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L116.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->_L116.l_train = kcg_lit_int64(0);
-  outC->_L116.v_maxtrain = kcg_lit_int64(0);
+  outC->_L116.l_train = kcg_lit_int32(0);
+  outC->_L116.v_maxtrain = kcg_lit_int32(0);
   outC->_L116.m_loadinggauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L116.m_axleloadcat = M_AXLELOADCAT_A;
   outC->_L116.m_airtight = M_AIRTIGHT_Not_fitted;
-  outC->_L116.n_axle = kcg_lit_int64(0);
-  outC->_L116.n_iter_voltage = kcg_lit_int64(0);
+  outC->_L116.n_axle = kcg_lit_int32(0);
+  outC->_L116.n_iter_voltage = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 4; idx4++) {
     outC->_L116.voltage_list[idx4].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->_L116.voltage_list[idx4].nid_ctraction = kcg_lit_int64(0);
+    outC->_L116.voltage_list[idx4].nid_ctraction = kcg_lit_int32(0);
   }
-  outC->_L116.n_iter_nid_ntc = kcg_lit_int64(0);
+  outC->_L116.n_iter_nid_ntc = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 5; idx5++) {
-    outC->_L116.nid_ntc_list[idx5] = kcg_lit_int64(0);
+    outC->_L116.nid_ntc_list[idx5] = kcg_lit_int32(0);
   }
   for (idx6 = 0; idx6 < 5; idx6++) {
-    outC->_L114[idx6] = kcg_lit_int64(0);
+    outC->_L114[idx6] = kcg_lit_int32(0);
   }
-  outC->_L108 = kcg_lit_int64(0);
-  outC->_L107 = kcg_lit_int64(0);
-  outC->_L106 = kcg_lit_int64(0);
+  outC->_L108 = kcg_lit_int32(0);
+  outC->_L107 = kcg_lit_int32(0);
+  outC->_L106 = kcg_lit_int32(0);
   outC->_L105 = M_AIRTIGHT_Not_fitted;
   outC->_L104 = M_AXLELOADCAT_A;
   outC->_L103 =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
-  outC->_L102 = kcg_lit_int64(0);
-  outC->_L101 = kcg_lit_int64(0);
+  outC->_L102 = kcg_lit_int32(0);
+  outC->_L101 = kcg_lit_int32(0);
   outC->_L100 =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->_L71 = NC_CDTRAIN_Cant_Deficiency_80_mm;
-  outC->_L70 = kcg_lit_int64(0);
-  outC->_L69 = kcg_lit_int64(0);
+  outC->_L70 = kcg_lit_int32(0);
+  outC->_L69 = kcg_lit_int32(0);
   for (idx7 = 0; idx7 < 25; idx7++) {
-    outC->_L1[idx7] = kcg_lit_int64(0);
+    outC->_L1[idx7] = kcg_lit_int32(0);
   }
   outC->every2 = kcg_true;
   outC->every = kcg_true;
-  outC->_L1_CAST_Int_to_N_ITER_2 = kcg_lit_int64(0);
+  outC->_L1_CAST_Int_to_N_ITER_2 = kcg_lit_int32(0);
   outC->_L12_CAST_Int_to_N_ITER_2 = kcg_true;
-  outC->_L11_CAST_Int_to_N_ITER_2 = kcg_lit_int64(0);
+  outC->_L11_CAST_Int_to_N_ITER_2 = kcg_lit_int32(0);
   outC->_L10_CAST_Int_to_N_ITER_2 = kcg_true;
-  outC->_L9_CAST_Int_to_N_ITER_2 = kcg_lit_int64(0);
-  outC->n_iter_int_CAST_Int_to_N_ITER_2 = kcg_lit_int64(0);
-  outC->n_iter_CAST_Int_to_N_ITER_2 = kcg_lit_int64(0);
-  outC->_L1_CAST_Int_to_N_ITER_1 = kcg_lit_int64(0);
+  outC->_L9_CAST_Int_to_N_ITER_2 = kcg_lit_int32(0);
+  outC->n_iter_int_CAST_Int_to_N_ITER_2 = kcg_lit_int32(0);
+  outC->n_iter_CAST_Int_to_N_ITER_2 = kcg_lit_int32(0);
+  outC->_L1_CAST_Int_to_N_ITER_1 = kcg_lit_int32(0);
   outC->_L12_CAST_Int_to_N_ITER_1 = kcg_true;
-  outC->_L11_CAST_Int_to_N_ITER_1 = kcg_lit_int64(0);
+  outC->_L11_CAST_Int_to_N_ITER_1 = kcg_lit_int32(0);
   outC->_L10_CAST_Int_to_N_ITER_1 = kcg_true;
-  outC->_L9_CAST_Int_to_N_ITER_1 = kcg_lit_int64(0);
-  outC->n_iter_int_CAST_Int_to_N_ITER_1 = kcg_lit_int64(0);
-  outC->n_iter_CAST_Int_to_N_ITER_1 = kcg_lit_int64(0);
-  outC->_L1_CAST_Int_to_L_PACKET_1 = kcg_lit_int64(0);
+  outC->_L9_CAST_Int_to_N_ITER_1 = kcg_lit_int32(0);
+  outC->n_iter_int_CAST_Int_to_N_ITER_1 = kcg_lit_int32(0);
+  outC->n_iter_CAST_Int_to_N_ITER_1 = kcg_lit_int32(0);
+  outC->_L1_CAST_Int_to_L_PACKET_1 = kcg_lit_int32(0);
   outC->_L9_CAST_Int_to_L_PACKET_1 = kcg_true;
   outC->_L8_CAST_Int_to_L_PACKET_1 = kcg_true;
-  outC->_L12_CAST_Int_to_L_PACKET_1 = kcg_lit_int64(0);
-  outC->_L13_CAST_Int_to_L_PACKET_1 = kcg_lit_int64(0);
-  outC->l_packet_int_CAST_Int_to_L_PACKET_1 = kcg_lit_int64(0);
-  outC->l_packet_CAST_Int_to_L_PACKET_1 = kcg_lit_int64(0);
-  outC->_L1_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
-  outC->_L5_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
+  outC->_L12_CAST_Int_to_L_PACKET_1 = kcg_lit_int32(0);
+  outC->_L13_CAST_Int_to_L_PACKET_1 = kcg_lit_int32(0);
+  outC->l_packet_int_CAST_Int_to_L_PACKET_1 = kcg_lit_int32(0);
+  outC->l_packet_CAST_Int_to_L_PACKET_1 = kcg_lit_int32(0);
+  outC->_L1_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
+  outC->_L5_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
   outC->_L4_CAST_Int_to_NID_PACKET_1 = kcg_true;
-  outC->_L3_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
+  outC->_L3_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
   outC->_L2_CAST_Int_to_NID_PACKET_1 = kcg_true;
-  outC->nid_packet_int_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
-  outC->nid_packet_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
+  outC->nid_packet_int_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
+  outC->nid_packet_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
   outC->P011_out.valid = kcg_true;
-  outC->P011_out.nid_packet = kcg_lit_int64(0);
-  outC->P011_out.l_packet = kcg_lit_int64(0);
+  outC->P011_out.nid_packet = kcg_lit_int32(0);
+  outC->P011_out.l_packet = kcg_lit_int32(0);
   outC->P011_out.nc_cdtrain = NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->P011_out.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->P011_out.l_train = kcg_lit_int64(0);
-  outC->P011_out.v_maxtrain = kcg_lit_int64(0);
+  outC->P011_out.l_train = kcg_lit_int32(0);
+  outC->P011_out.v_maxtrain = kcg_lit_int32(0);
   outC->P011_out.m_loadinggauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->P011_out.m_axleloadcat = M_AXLELOADCAT_A;
   outC->P011_out.m_airtight = M_AIRTIGHT_Not_fitted;
-  outC->P011_out.n_axle = kcg_lit_int64(0);
-  outC->P011_out.n_iter_voltage = kcg_lit_int64(0);
+  outC->P011_out.n_axle = kcg_lit_int32(0);
+  outC->P011_out.n_iter_voltage = kcg_lit_int32(0);
   for (idx8 = 0; idx8 < 4; idx8++) {
     outC->P011_out.voltage_list[idx8].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->P011_out.voltage_list[idx8].nid_ctraction = kcg_lit_int64(0);
+    outC->P011_out.voltage_list[idx8].nid_ctraction = kcg_lit_int32(0);
   }
-  outC->P011_out.n_iter_nid_ntc = kcg_lit_int64(0);
+  outC->P011_out.n_iter_nid_ntc = kcg_lit_int32(0);
   for (idx9 = 0; idx9 < 5; idx9++) {
-    outC->P011_out.nid_ntc_list[idx9] = kcg_lit_int64(0);
+    outC->P011_out.nid_ntc_list[idx9] = kcg_lit_int32(0);
   }
   /* _L106=(TM_conversions::CAST_Int_to_N_AXLE#1)/ */
   CAST_Int_to_N_AXLE_init_TM_conversions(&outC->Context_CAST_Int_to_N_AXLE_1);

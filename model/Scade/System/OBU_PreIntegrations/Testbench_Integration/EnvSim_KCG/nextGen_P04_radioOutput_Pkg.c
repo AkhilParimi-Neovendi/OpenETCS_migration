@@ -17,7 +17,7 @@ void nextGen_P04_radioOutput_Pkg(
   kcg_copy_PT4_ErrorReporting_T_Packet_TrainTypes_Pkg(&outC->_L1, inP4);
   outC->_L34 = outC->_L1.valid;
   outC->_L33 = outC->_L1.m_error;
-  outC->_L12 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
   outC->_L2.valid = outC->_L34;
   outC->_L2.nid_packet = outC->_L38;
   outC->_L2.l_packet = outC->_L12;
@@ -28,19 +28,19 @@ void nextGen_P04_radioOutput_Pkg(
 #ifndef KCG_USER_DEFINED_INIT
 void nextGen_P04_init_radioOutput_Pkg(outC_nextGen_P04_radioOutput_Pkg *outC)
 {
-  outC->_L38 = kcg_lit_int64(0);
+  outC->_L38 = kcg_lit_int32(0);
   outC->_L33 = M_ERROR_Balise_group_linking_consistency_error;
   outC->_L34 = kcg_true;
-  outC->_L12 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
   outC->_L2.valid = kcg_true;
-  outC->_L2.nid_packet = kcg_lit_int64(0);
-  outC->_L2.l_packet = kcg_lit_int64(0);
+  outC->_L2.nid_packet = kcg_lit_int32(0);
+  outC->_L2.l_packet = kcg_lit_int32(0);
   outC->_L2.m_error = M_ERROR_Balise_group_linking_consistency_error;
   outC->_L1.valid = kcg_true;
   outC->_L1.m_error = M_ERROR_Balise_group_linking_consistency_error;
   outC->outP4.valid = kcg_true;
-  outC->outP4.nid_packet = kcg_lit_int64(0);
-  outC->outP4.l_packet = kcg_lit_int64(0);
+  outC->outP4.nid_packet = kcg_lit_int32(0);
+  outC->outP4.l_packet = kcg_lit_int32(0);
   outC->outP4.m_error = M_ERROR_Balise_group_linking_consistency_error;
 }
 #endif /* KCG_USER_DEFINED_INIT */

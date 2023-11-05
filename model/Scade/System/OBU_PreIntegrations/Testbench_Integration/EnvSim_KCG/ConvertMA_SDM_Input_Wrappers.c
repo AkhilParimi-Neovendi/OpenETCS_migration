@@ -13,12 +13,12 @@ void ConvertMA_SDM_Input_Wrappers(
   MovementAuthority_t_TrackAtlasTypes *Ma_in,
   outC_ConvertMA_SDM_Input_Wrappers *outC)
 {
-  static kcg_int64 acc;
+  static kcg_int32 acc;
   static kcg_size idx;
-  static kcg_int64 noname;
+  static kcg_int32 noname;
 
-  outC->_L205 = kcg_lit_int64(0);
-  outC->_L201 = kcg_lit_int64(0);
+  outC->_L205 = kcg_lit_int32(0);
+  outC->_L201 = kcg_lit_int32(0);
   kcg_copy_MovementAuthority_t_TrackAtlasTypes(&outC->_L193, Ma_in);
   kcg_copy_MovementAuthoritySectionlist_t_TrackAtlasTypes(
     &outC->_L191,
@@ -36,7 +36,7 @@ void ConvertMA_SDM_Input_Wrappers(
         &outC->_L191[idx],
         &outC->Context_SelectEndSection_2[idx]);
       outC->_L200 = outC->Context_SelectEndSection_2[idx].eoa;
-      outC->_L199 = /* _L199= */(kcg_int64) (idx + 1);
+      outC->_L199 = /* _L199= */(kcg_int32) (idx + 1);
       /* _L199= */
       if (!outC->Context_SelectEndSection_2[idx].go_on) {
         break;
@@ -44,7 +44,7 @@ void ConvertMA_SDM_Input_Wrappers(
     }
   }
   else {
-    outC->_L199 = kcg_lit_int64(0);
+    outC->_L199 = kcg_lit_int32(0);
   }
   outC->_L204 = outC->_L200 > outC->_L205;
   kcg_copy_MovementAuthority_t_TrackAtlasTypes(&outC->_L89, Ma_in);
@@ -123,126 +123,126 @@ void ConvertMA_init_SDM_Input_Wrappers(outC_ConvertMA_SDM_Input_Wrappers *outC)
   static kcg_size idx2;
   static kcg_size idx3;
 
-  outC->_L205 = kcg_lit_int64(0);
+  outC->_L205 = kcg_lit_int32(0);
   outC->_L204 = kcg_true;
   outC->_L202 = kcg_true;
-  outC->_L201 = kcg_lit_int64(0);
-  outC->_L200 = kcg_lit_int64(0);
-  outC->_L199 = kcg_lit_int64(0);
+  outC->_L201 = kcg_lit_int32(0);
+  outC->_L200 = kcg_lit_int32(0);
+  outC->_L199 = kcg_lit_int32(0);
   outC->_L193.valid = kcg_true;
   outC->_L193.Level = MA_L1_TrackAtlasTypes;
   outC->_L193.q_dir = Q_DIR_Reverse;
-  outC->_L193.v_main = kcg_lit_int64(0);
-  outC->_L193.v_loa = kcg_lit_int64(0);
+  outC->_L193.v_main = kcg_lit_int32(0);
+  outC->_L193.v_loa = kcg_lit_int32(0);
   outC->_L193.t_loa_unlimited = kcg_true;
-  outC->_L193.t_loa = kcg_lit_int64(0);
-  outC->_L193.n_iter = kcg_lit_int64(0);
+  outC->_L193.t_loa = kcg_lit_int32(0);
+  outC->_L193.n_iter = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 10; idx1++) {
     outC->_L193.sections[idx1].valid = kcg_true;
     outC->_L193.sections[idx1].q_endsection = kcg_true;
-    outC->_L193.sections[idx1].l_section = kcg_lit_int64(0);
+    outC->_L193.sections[idx1].l_section = kcg_lit_int32(0);
     outC->_L193.sections[idx1].q_sectiontimer = kcg_true;
-    outC->_L193.sections[idx1].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L193.sections[idx1].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L193.sections[idx1].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L193.sections[idx1].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
   outC->_L193.q_dangerpoint = kcg_true;
-  outC->_L193.dangerpoint.d_DP_or_OL = kcg_lit_int64(0);
-  outC->_L193.dangerpoint.v_release = kcg_lit_int64(0);
+  outC->_L193.dangerpoint.d_DP_or_OL = kcg_lit_int32(0);
+  outC->_L193.dangerpoint.v_release = kcg_lit_int32(0);
   outC->_L193.dangerpoint.calc_v_release_onboard = kcg_true;
   outC->_L193.q_overlap = kcg_true;
-  outC->_L193.overlap.d_DP_or_OL = kcg_lit_int64(0);
-  outC->_L193.overlap.v_release = kcg_lit_int64(0);
+  outC->_L193.overlap.d_DP_or_OL = kcg_lit_int32(0);
+  outC->_L193.overlap.v_release = kcg_lit_int32(0);
   outC->_L193.overlap.calc_v_release_onboard = kcg_true;
   outC->_L193.q_endtimer = kcg_true;
-  outC->_L193.endtimer_t.t_endtimer = kcg_lit_int64(0);
-  outC->_L193.endtimer_t.d_endtimerstoploc = kcg_lit_int64(0);
+  outC->_L193.endtimer_t.t_endtimer = kcg_lit_int32(0);
+  outC->_L193.endtimer_t.d_endtimerstoploc = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 10; idx2++) {
     outC->_L191[idx2].valid = kcg_true;
     outC->_L191[idx2].q_endsection = kcg_true;
-    outC->_L191[idx2].l_section = kcg_lit_int64(0);
+    outC->_L191[idx2].l_section = kcg_lit_int32(0);
     outC->_L191[idx2].q_sectiontimer = kcg_true;
-    outC->_L191[idx2].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L191[idx2].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L191[idx2].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L191[idx2].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
   outC->_L192 = kcg_true;
-  outC->_L187 = kcg_lit_float64(0.0);
+  outC->_L187 = kcg_lit_float32(0.0);
   outC->_L186 = MA_L1_TrackAtlasTypes;
-  outC->_L134 = kcg_lit_int64(0);
+  outC->_L134 = kcg_lit_int32(0);
   outC->_L133 = kcg_true;
-  outC->_L132.d_DP_or_OL = kcg_lit_int64(0);
-  outC->_L132.v_release = kcg_lit_int64(0);
+  outC->_L132.d_DP_or_OL = kcg_lit_int32(0);
+  outC->_L132.v_release = kcg_lit_int32(0);
   outC->_L132.calc_v_release_onboard = kcg_true;
-  outC->_L131 = kcg_lit_int64(0);
-  outC->_L129.d_DP_or_OL = kcg_lit_int64(0);
-  outC->_L129.v_release = kcg_lit_int64(0);
+  outC->_L131 = kcg_lit_int32(0);
+  outC->_L129.d_DP_or_OL = kcg_lit_int32(0);
+  outC->_L129.v_release = kcg_lit_int32(0);
   outC->_L129.calc_v_release_onboard = kcg_true;
-  outC->_L125 = kcg_lit_int64(0);
+  outC->_L125 = kcg_lit_int32(0);
   outC->_L121 = kcg_true;
-  outC->_L120.d_DP_or_OL = kcg_lit_int64(0);
-  outC->_L120.v_release = kcg_lit_int64(0);
+  outC->_L120.d_DP_or_OL = kcg_lit_int32(0);
+  outC->_L120.v_release = kcg_lit_int32(0);
   outC->_L120.calc_v_release_onboard = kcg_true;
   outC->_L119 = kcg_true;
-  outC->_L118 = kcg_lit_int64(0);
-  outC->_L117.d_DP_or_OL = kcg_lit_int64(0);
-  outC->_L117.v_release = kcg_lit_int64(0);
+  outC->_L118 = kcg_lit_int32(0);
+  outC->_L117.d_DP_or_OL = kcg_lit_int32(0);
+  outC->_L117.v_release = kcg_lit_int32(0);
   outC->_L117.calc_v_release_onboard = kcg_true;
   outC->_L116 = kcg_true;
-  outC->_L115 = kcg_lit_int64(0);
+  outC->_L115 = kcg_lit_int32(0);
   outC->_L114.valid = kcg_true;
-  outC->_L114.v_main = kcg_lit_float64(0.0);
-  outC->_L114.EOA.Location = kcg_lit_float64(0.0);
-  outC->_L114.EOA.TargetSpeed = kcg_lit_float64(0.0);
+  outC->_L114.v_main = kcg_lit_float32(0.0);
+  outC->_L114.EOA.Location = kcg_lit_float32(0.0);
+  outC->_L114.EOA.TargetSpeed = kcg_lit_float32(0.0);
   outC->_L114.DP_valid = kcg_true;
-  outC->_L114.DangerPoint = kcg_lit_float64(0.0);
+  outC->_L114.DangerPoint = kcg_lit_float32(0.0);
   outC->_L114.OL_valid = kcg_true;
-  outC->_L114.Overlap = kcg_lit_float64(0.0);
+  outC->_L114.Overlap = kcg_lit_float32(0.0);
   outC->_L114.q_calculate_release = kcg_true;
-  outC->_L114.ReleaseSpeed = kcg_lit_float64(0.0);
+  outC->_L114.ReleaseSpeed = kcg_lit_float32(0.0);
   outC->_L114.level = MA_L1_TrackAtlasTypes;
   outC->_L89.valid = kcg_true;
   outC->_L89.Level = MA_L1_TrackAtlasTypes;
   outC->_L89.q_dir = Q_DIR_Reverse;
-  outC->_L89.v_main = kcg_lit_int64(0);
-  outC->_L89.v_loa = kcg_lit_int64(0);
+  outC->_L89.v_main = kcg_lit_int32(0);
+  outC->_L89.v_loa = kcg_lit_int32(0);
   outC->_L89.t_loa_unlimited = kcg_true;
-  outC->_L89.t_loa = kcg_lit_int64(0);
-  outC->_L89.n_iter = kcg_lit_int64(0);
+  outC->_L89.t_loa = kcg_lit_int32(0);
+  outC->_L89.n_iter = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 10; idx3++) {
     outC->_L89.sections[idx3].valid = kcg_true;
     outC->_L89.sections[idx3].q_endsection = kcg_true;
-    outC->_L89.sections[idx3].l_section = kcg_lit_int64(0);
+    outC->_L89.sections[idx3].l_section = kcg_lit_int32(0);
     outC->_L89.sections[idx3].q_sectiontimer = kcg_true;
-    outC->_L89.sections[idx3].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L89.sections[idx3].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L89.sections[idx3].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L89.sections[idx3].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
   outC->_L89.q_dangerpoint = kcg_true;
-  outC->_L89.dangerpoint.d_DP_or_OL = kcg_lit_int64(0);
-  outC->_L89.dangerpoint.v_release = kcg_lit_int64(0);
+  outC->_L89.dangerpoint.d_DP_or_OL = kcg_lit_int32(0);
+  outC->_L89.dangerpoint.v_release = kcg_lit_int32(0);
   outC->_L89.dangerpoint.calc_v_release_onboard = kcg_true;
   outC->_L89.q_overlap = kcg_true;
-  outC->_L89.overlap.d_DP_or_OL = kcg_lit_int64(0);
-  outC->_L89.overlap.v_release = kcg_lit_int64(0);
+  outC->_L89.overlap.d_DP_or_OL = kcg_lit_int32(0);
+  outC->_L89.overlap.v_release = kcg_lit_int32(0);
   outC->_L89.overlap.calc_v_release_onboard = kcg_true;
   outC->_L89.q_endtimer = kcg_true;
-  outC->_L89.endtimer_t.t_endtimer = kcg_lit_int64(0);
-  outC->_L89.endtimer_t.d_endtimerstoploc = kcg_lit_int64(0);
-  outC->_L39.Location = kcg_lit_float64(0.0);
-  outC->_L39.TargetSpeed = kcg_lit_float64(0.0);
-  outC->_L25 = kcg_lit_float64(0.0);
-  outC->_L23 = kcg_lit_float64(0.0);
-  outC->_L21 = kcg_lit_float64(0.0);
-  outC->_L20 = kcg_lit_float64(0.0);
-  outC->_L19 = kcg_lit_float64(0.0);
+  outC->_L89.endtimer_t.t_endtimer = kcg_lit_int32(0);
+  outC->_L89.endtimer_t.d_endtimerstoploc = kcg_lit_int32(0);
+  outC->_L39.Location = kcg_lit_float32(0.0);
+  outC->_L39.TargetSpeed = kcg_lit_float32(0.0);
+  outC->_L25 = kcg_lit_float32(0.0);
+  outC->_L23 = kcg_lit_float32(0.0);
+  outC->_L21 = kcg_lit_float32(0.0);
+  outC->_L20 = kcg_lit_float32(0.0);
+  outC->_L19 = kcg_lit_float32(0.0);
   outC->Ma_out.valid = kcg_true;
-  outC->Ma_out.v_main = kcg_lit_float64(0.0);
-  outC->Ma_out.EOA.Location = kcg_lit_float64(0.0);
-  outC->Ma_out.EOA.TargetSpeed = kcg_lit_float64(0.0);
+  outC->Ma_out.v_main = kcg_lit_float32(0.0);
+  outC->Ma_out.EOA.Location = kcg_lit_float32(0.0);
+  outC->Ma_out.EOA.TargetSpeed = kcg_lit_float32(0.0);
   outC->Ma_out.DP_valid = kcg_true;
-  outC->Ma_out.DangerPoint = kcg_lit_float64(0.0);
+  outC->Ma_out.DangerPoint = kcg_lit_float32(0.0);
   outC->Ma_out.OL_valid = kcg_true;
-  outC->Ma_out.Overlap = kcg_lit_float64(0.0);
+  outC->Ma_out.Overlap = kcg_lit_float32(0.0);
   outC->Ma_out.q_calculate_release = kcg_true;
-  outC->Ma_out.ReleaseSpeed = kcg_lit_float64(0.0);
+  outC->Ma_out.ReleaseSpeed = kcg_lit_float32(0.0);
   outC->Ma_out.level = MA_L1_TrackAtlasTypes;
   /* _L20=(SDM_Types_Pkg::TransformV_intToV_real#1)/ */
   TransformV_intToV_real_init_SDM_Types_Pkg(

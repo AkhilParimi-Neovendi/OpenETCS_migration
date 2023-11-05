@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -31,7 +31,7 @@ void C_P021_flatten_sections_TM_lib_internal(
   }
   /* _L80/ */
   for (idx1 = 0; idx1 < 231; idx1++) {
-    kcg_copy_array_int64_3_33(&outC->_L80[idx1], &outC->_L74);
+    kcg_copy_array_int32_3_33(&outC->_L80[idx1], &outC->_L74);
   }
   kcg_copy_P021_sections_array_flat_T_TM(
     &outC->_L76,
@@ -42,7 +42,7 @@ void C_P021_flatten_sections_TM_lib_internal(
     kcg_copy_P021_sections_array_flat_T_TM(&acc, &outC->_L78);
     /* _L78=(TM_lib_internal::C_P021_fs_flatten_array#1)/ */
     C_P021_fs_flatten_array_TM_lib_internal(
-      /* _L78= */(kcg_int64) idx2,
+      /* _L78= */(kcg_int32) idx2,
       &acc,
       &outC->_L80[idx2],
       &outC->Context_C_P021_fs_flatten_array_1[idx2]);
@@ -72,28 +72,28 @@ void C_P021_flatten_sections_init_TM_lib_internal(
   for (idx4 = 0; idx4 < 231; idx4++) {
     for (idx3 = 0; idx3 < 33; idx3++) {
       for (idx2 = 0; idx2 < 3; idx2++) {
-        outC->_L80[idx4][idx3][idx2] = kcg_lit_int64(0);
+        outC->_L80[idx4][idx3][idx2] = kcg_lit_int32(0);
       }
     }
   }
   for (idx5 = 0; idx5 < 99; idx5++) {
-    outC->_L78[idx5] = kcg_lit_int64(0);
+    outC->_L78[idx5] = kcg_lit_int32(0);
   }
   for (idx7 = 0; idx7 < 33; idx7++) {
     for (idx6 = 0; idx6 < 3; idx6++) {
-      outC->_L74[idx7][idx6] = kcg_lit_int64(0);
+      outC->_L74[idx7][idx6] = kcg_lit_int32(0);
     }
   }
   for (idx8 = 0; idx8 < 33; idx8++) {
-    outC->_L75[idx8].D_GRADIENT = kcg_lit_int64(0);
-    outC->_L75[idx8].Q_GDIR = kcg_lit_int64(0);
-    outC->_L75[idx8].G_A = kcg_lit_int64(0);
+    outC->_L75[idx8].D_GRADIENT = kcg_lit_int32(0);
+    outC->_L75[idx8].Q_GDIR = kcg_lit_int32(0);
+    outC->_L75[idx8].G_A = kcg_lit_int32(0);
   }
   for (idx9 = 0; idx9 < 99; idx9++) {
-    outC->_L76[idx9] = kcg_lit_int64(0);
+    outC->_L76[idx9] = kcg_lit_int32(0);
   }
   for (idx10 = 0; idx10 < 99; idx10++) {
-    outC->Flattened[idx10] = kcg_lit_int64(0);
+    outC->Flattened[idx10] = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 231; idx1++) {
     /* _L78=(TM_lib_internal::C_P021_fs_flatten_array#1)/ */
@@ -131,6 +131,6 @@ void C_P021_flatten_sections_reset_TM_lib_internal(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P021_flatten_sections_TM_lib_internal.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

@@ -23,7 +23,7 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   NID_NTC /* _L34/ */ _L34;
 } outC_C_P011_us_array_ntc_TM_TrainToTrack_lib_internal;
 
@@ -31,7 +31,7 @@ typedef struct {
 /* TM_TrainToTrack_lib_internal::C_P011_us_array_ntc/ */
 extern void C_P011_us_array_ntc_TM_TrainToTrack_lib_internal(
   /* flat/ */
-  kcg_int64 flat,
+  kcg_int32 flat,
   outC_C_P011_us_array_ntc_TM_TrainToTrack_lib_internal *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

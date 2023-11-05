@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _Gradient_from_Track_DMI_Control_Pkg_Sub_func_H_
 #define _Gradient_from_Track_DMI_Control_Pkg_Sub_func_H_
@@ -15,9 +15,9 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  array_float64_32 /* Gradient_End/ */ Gradient_End;
-  array_float64_32 /* Gradient_Begin/ */ Gradient_Begin;
-  array_float64_32 /* Gradient_Value/ */ Gradient_Value;
+  array_float32_32 /* Gradient_End/ */ Gradient_End;
+  array_float32_32 /* Gradient_Begin/ */ Gradient_Begin;
+  array_float32_32 /* Gradient_Value/ */ Gradient_Value;
   array_bool_32 /* Gradient_Visible_Flag/ */ Gradient_Visible_Flag;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
@@ -27,10 +27,10 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   DMI_gradientProfileArray_T_DMI_Types_Pkg /* _L12/ */ _L12;
-  kcg_int64 /* _L24/ */ _L24;
-  array_float64_32 /* _L25/ */ _L25;
-  array_float64_32 /* _L26/ */ _L26;
-  array_float64_32 /* _L28/ */ _L28;
+  kcg_int32 /* _L24/ */ _L24;
+  array_float32_32 /* _L25/ */ _L25;
+  array_float32_32 /* _L26/ */ _L26;
+  array_float32_32 /* _L28/ */ _L28;
   kcg_bool /* _L29/ */ _L29;
   array_bool_32 /* _L31/ */ _L31;
 } outC_Gradient_from_Track_DMI_Control_Pkg_Sub_func;
@@ -57,6 +57,6 @@ extern void Gradient_from_Track_init_DMI_Control_Pkg_Sub_func(
 #endif /* _Gradient_from_Track_DMI_Control_Pkg_Sub_func_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Gradient_from_Track_DMI_Control_Pkg_Sub_func.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

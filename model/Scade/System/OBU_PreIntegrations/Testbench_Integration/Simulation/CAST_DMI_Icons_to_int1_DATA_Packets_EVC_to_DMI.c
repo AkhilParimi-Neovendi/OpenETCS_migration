@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -67,33 +67,33 @@ void CAST_DMI_Icons_to_int1_init_DATA_Packets_EVC_to_DMI(
   static kcg_size idx1;
 
   outC->_L27.valid = kcg_true;
-  outC->_L27.system_clock = kcg_lit_int64(0);
+  outC->_L27.system_clock = kcg_lit_int32(0);
   outC->_L27.DMI_m_icon_control_flag = show_icon_in_area_DMI_Types_Pkg;
-  outC->_L27.DMI_m_icon_flashing_freq = kcg_lit_float64(0.0);
+  outC->_L27.DMI_m_icon_flashing_freq = kcg_lit_float32(0.0);
   outC->_L27.DMI_nid_icon_group = level_symbol_DMI_Types_Pkg;
-  outC->_L27.DMI_nid_icon_rank = kcg_lit_int64(0);
+  outC->_L27.DMI_nid_icon_rank = kcg_lit_int32(0);
   outC->_L27.DMI_nid_area_group = A_DMI_Types_Pkg;
-  outC->_L27.DMI_nid_area_rank = kcg_lit_int64(0);
-  outC->_L27.DMI_nid_icon_identifier = kcg_lit_int64(0);
-  outC->_L26 = kcg_lit_int64(0);
-  outC->_L25 = kcg_lit_int64(0);
-  outC->_L24 = kcg_lit_int64(0);
-  outC->_L23 = kcg_lit_int64(0);
-  outC->_L22 = kcg_lit_int64(0);
+  outC->_L27.DMI_nid_area_rank = kcg_lit_int32(0);
+  outC->_L27.DMI_nid_icon_identifier = kcg_lit_int32(0);
+  outC->_L26 = kcg_lit_int32(0);
+  outC->_L25 = kcg_lit_int32(0);
+  outC->_L24 = kcg_lit_int32(0);
+  outC->_L23 = kcg_lit_int32(0);
+  outC->_L22 = kcg_lit_int32(0);
   for (idx = 0; idx < 9; idx++) {
-    outC->_L11[idx] = kcg_lit_int64(0);
+    outC->_L11[idx] = kcg_lit_int32(0);
   }
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L4 = A_DMI_Types_Pkg;
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L6 = level_symbol_DMI_Types_Pkg;
-  outC->_L7 = kcg_lit_float64(0.0);
+  outC->_L7 = kcg_lit_float32(0.0);
   outC->_L8 = show_icon_in_area_DMI_Types_Pkg;
-  outC->_L9 = kcg_lit_int64(0);
+  outC->_L9 = kcg_lit_int32(0);
   outC->_L10 = kcg_true;
   for (idx1 = 0; idx1 < 9; idx1++) {
-    outC->dmi_icons_int[idx1] = kcg_lit_int64(0);
+    outC->dmi_icons_int[idx1] = kcg_lit_int32(0);
   }
   /* _L22=(Utilities::Bool_to_Int#1)/ */
   Bool_to_Int_init_Utilities(&outC->Context_Bool_to_Int_1);
@@ -138,6 +138,6 @@ void CAST_DMI_Icons_to_int1_reset_DATA_Packets_EVC_to_DMI(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_DMI_Icons_to_int1_DATA_Packets_EVC_to_DMI.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

@@ -10,7 +10,7 @@
 /* SDMConversionModelPkg::Kr_intIterator/ */
 void Kr_intIterator_SDMConversionModelPkg(
   /* m_last/ */
-  kcg_int64 m_last,
+  kcg_int32 m_last,
   /* Kr_int/ */
   nvkrint_T_Packet_Types_Pkg *Kr_int,
   /* L/ */
@@ -50,19 +50,19 @@ void Kr_intIterator_SDMConversionModelPkg(
 void Kr_intIterator_init_SDMConversionModelPkg(
   outC_Kr_intIterator_SDMConversionModelPkg *outC)
 {
-  outC->_L16 = kcg_lit_int64(0);
+  outC->_L16 = kcg_lit_int32(0);
   outC->_L12 = kcg_true;
   outC->_L11 = kcg_true;
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
   outC->_L2 = kcg_true;
   outC->_L3 = L_NVKRINT_0m;
-  outC->_L4 = kcg_lit_float64(0.0);
+  outC->_L4 = kcg_lit_float32(0.0);
   outC->_L1.valid = kcg_true;
   outC->_L1.l_nvkrint = L_NVKRINT_0m;
-  outC->_L1.m_nvkrint = kcg_lit_float64(0.0);
-  outC->m_now = kcg_lit_int64(0);
+  outC->_L1.m_nvkrint = kcg_lit_float32(0.0);
+  outC->m_now = kcg_lit_int32(0);
   outC->goOn = kcg_true;
   /* _L11=(SDMConversionModelPkg::LengthLargerThanLKr#1)/ */
   LengthLargerThanLKr_init_SDMConversionModelPkg(

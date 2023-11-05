@@ -29,11 +29,11 @@ typedef struct {
   positionedBGs_T_TrainPosition_Types_Pck /* _L2/ */ _L2;
   NID_LRBG /* _L3/ */ _L3;
   positionedBG_T_TrainPosition_Types_Pck /* _L5/ */ _L5;
-  array_int64_41 /* _L6/ */ _L6;
+  array_int32_41 /* _L6/ */ _L6;
   positionedBG_T_TrainPosition_Types_Pck /* _L8/ */ _L8;
   NID_BG /* _L10/ */ _L10;
   NID_C /* _L9/ */ _L9;
-  array_int64_41 /* _L12/ */ _L12;
+  array_int32_41 /* _L12/ */ _L12;
 } outC_getLRBGForRadioMessage_ValidateDataDirectionGeneral_Pkg_Subfunctions;
 
 /* ===========  node initialization and cycle functions  =========== */

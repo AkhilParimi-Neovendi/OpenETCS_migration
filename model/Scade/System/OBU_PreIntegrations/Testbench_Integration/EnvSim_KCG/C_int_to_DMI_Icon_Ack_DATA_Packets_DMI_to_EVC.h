@@ -24,9 +24,9 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   DMI_Icon_Ack_T_DMI_Messages_DMI_to_EVC_Pkg /* _L2/ */ _L2;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L10/ */ _L10;
   DMI_Icon_Ack_int_array_T_DATA /* _L12/ */ _L12;
   kcg_bool /* _L13/ */ _L13;
 } outC_C_int_to_DMI_Icon_Ack_DATA_Packets_DMI_to_EVC;

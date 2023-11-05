@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -43,10 +43,10 @@ void C_P135_compr_onboard_TM_conversions(
   static kcg_bool noname_CAST_Int_to_NID_PACKET_1;
   static kcg_bool _11_noname_CAST_Int_to_NID_PACKET_1;
   static MetadataElement_T_Common_Types_Pkg noname;
-  static kcg_int64 _12_noname;
+  static kcg_int32 _12_noname;
 
   kcg_copy_CompressedPacketData_T_Common_Types_Pkg(&outC->_L9, PacketData);
-  kcg_copy_array_int64_3(&outC->_L45, (array_int64_3 *) &outC->_L9[0]);
+  kcg_copy_array_int32_3(&outC->_L45, (array_int32_3 *) &outC->_L9[0]);
   outC->_L58 = outC->_L45[1];
   outC->q_dir_int_CAST_Int_to_Q_DIR_1 = outC->_L58;
   outC->_L12_CAST_Int_to_Q_DIR_1 = outC->q_dir_int_CAST_Int_to_Q_DIR_1;
@@ -113,14 +113,14 @@ void C_P135_compr_onboard_TM_conversions(
   }
   outC->_L13_CAST_Int_to_Q_DIR_1 = outC->error_CAST_Int_to_Q_DIR_1;
   noname_CAST_Int_to_Q_DIR_1 = outC->_L13_CAST_Int_to_Q_DIR_1;
-  outC->_L5_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
+  outC->_L5_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
   outC->_L57 = outC->_L45[0];
   outC->nid_packet_int_CAST_Int_to_NID_PACKET_1 = outC->_L57;
   outC->_L1_CAST_Int_to_NID_PACKET_1 =
     outC->nid_packet_int_CAST_Int_to_NID_PACKET_1;
   outC->_L4_CAST_Int_to_NID_PACKET_1 = outC->_L1_CAST_Int_to_NID_PACKET_1 <
     outC->_L5_CAST_Int_to_NID_PACKET_1;
-  outC->_L3_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(256);
+  outC->_L3_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(256);
   outC->_L2_CAST_Int_to_NID_PACKET_1 = outC->_L1_CAST_Int_to_NID_PACKET_1 >
     outC->_L3_CAST_Int_to_NID_PACKET_1;
   noname_CAST_Int_to_NID_PACKET_1 = outC->_L2_CAST_Int_to_NID_PACKET_1;
@@ -128,7 +128,7 @@ void C_P135_compr_onboard_TM_conversions(
   outC->nid_packet_CAST_Int_to_NID_PACKET_1 = outC->_L1_CAST_Int_to_NID_PACKET_1;
   outC->_L59 = outC->_L45[2];
   _12_noname = outC->_L59;
-  outC->_L21 = kcg_lit_int64(135);
+  outC->_L21 = kcg_lit_int32(135);
   outC->_L12 = outC->nid_packet_CAST_Int_to_NID_PACKET_1;
   outC->_L22 = outC->_L12 == outC->_L21;
   kcg_copy_MetadataElement_T_Common_Types_Pkg(&outC->_L20, Metadata_Element);
@@ -146,33 +146,33 @@ void C_P135_compr_onboard_init_TM_conversions(
   static kcg_size idx;
   static kcg_size idx1;
 
-  outC->_L57 = kcg_lit_int64(0);
-  outC->_L58 = kcg_lit_int64(0);
-  outC->_L59 = kcg_lit_int64(0);
+  outC->_L57 = kcg_lit_int32(0);
+  outC->_L58 = kcg_lit_int32(0);
+  outC->_L59 = kcg_lit_int32(0);
   for (idx = 0; idx < 3; idx++) {
-    outC->_L45[idx] = kcg_lit_int64(0);
+    outC->_L45[idx] = kcg_lit_int32(0);
   }
   outC->_L22 = kcg_true;
-  outC->_L21 = kcg_lit_int64(0);
-  outC->_L20.nid_packet = kcg_lit_int64(0);
+  outC->_L21 = kcg_lit_int32(0);
+  outC->_L20.nid_packet = kcg_lit_int32(0);
   outC->_L20.q_dir = Q_DIR_Reverse;
   outC->_L20.valid = kcg_true;
-  outC->_L20.startAddress = kcg_lit_int64(0);
-  outC->_L20.endAddress = kcg_lit_int64(0);
+  outC->_L20.startAddress = kcg_lit_int32(0);
+  outC->_L20.endAddress = kcg_lit_int32(0);
   outC->_L4 = Q_DIR_Reverse;
   for (idx1 = 0; idx1 < 500; idx1++) {
-    outC->_L9[idx1] = kcg_lit_int64(0);
+    outC->_L9[idx1] = kcg_lit_int32(0);
   }
   outC->_L10.valid = kcg_true;
   outC->_L10.q_dir = Q_DIR_Reverse;
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L1_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
-  outC->_L5_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L1_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
+  outC->_L5_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
   outC->_L4_CAST_Int_to_NID_PACKET_1 = kcg_true;
-  outC->_L3_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
+  outC->_L3_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
   outC->_L2_CAST_Int_to_NID_PACKET_1 = kcg_true;
-  outC->nid_packet_int_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
-  outC->nid_packet_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
+  outC->nid_packet_int_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
+  outC->nid_packet_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
   outC->_L5_CAST_Int_to_Q_DIR_1_then_IfBlock1 = kcg_true;
   outC->_L4_CAST_Int_to_Q_DIR_1_then_IfBlock1 = Q_DIR_Reverse;
   outC->else_clock_CAST_Int_to_Q_DIR_1_IfBlock1 = kcg_true;
@@ -185,10 +185,10 @@ void C_P135_compr_onboard_init_TM_conversions(
   outC->_L5_CAST_Int_to_Q_DIR_1_then_else_IfBlock1 = kcg_true;
   outC->IfBlock1_clock_CAST_Int_to_Q_DIR_1 = kcg_true;
   outC->error_CAST_Int_to_Q_DIR_1 = kcg_true;
-  outC->q_dir_in_CAST_Int_to_Q_DIR_1 = kcg_lit_int64(0);
+  outC->q_dir_in_CAST_Int_to_Q_DIR_1 = kcg_lit_int32(0);
   outC->_L13_CAST_Int_to_Q_DIR_1 = kcg_true;
-  outC->_L12_CAST_Int_to_Q_DIR_1 = kcg_lit_int64(0);
-  outC->q_dir_int_CAST_Int_to_Q_DIR_1 = kcg_lit_int64(0);
+  outC->_L12_CAST_Int_to_Q_DIR_1 = kcg_lit_int32(0);
+  outC->q_dir_int_CAST_Int_to_Q_DIR_1 = kcg_lit_int32(0);
   outC->q_dir_CAST_Int_to_Q_DIR_1 = Q_DIR_Reverse;
   outC->P135_onboard.valid = kcg_true;
   outC->P135_onboard.q_dir = Q_DIR_Reverse;
@@ -210,6 +210,6 @@ void C_P135_compr_onboard_reset_TM_conversions(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P135_compr_onboard_TM_conversions.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

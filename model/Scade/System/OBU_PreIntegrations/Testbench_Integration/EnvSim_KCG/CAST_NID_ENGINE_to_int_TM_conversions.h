@@ -14,7 +14,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* nid_ctraction_int/ */ nid_ctraction_int;
+  kcg_int32 /* nid_ctraction_int/ */ nid_ctraction_int;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
@@ -24,8 +24,8 @@ typedef struct {
   NID_CTRACTION /* _L1/ */ _L1;
   kcg_bool /* _L9/ */ _L9;
   kcg_bool /* _L8/ */ _L8;
-  kcg_int64 /* _L10/ */ _L10;
-  kcg_int64 /* _L11/ */ _L11;
+  kcg_int32 /* _L10/ */ _L10;
+  kcg_int32 /* _L11/ */ _L11;
 } outC_CAST_NID_ENGINE_to_int_TM_conversions;
 
 /* ===========  node initialization and cycle functions  =========== */

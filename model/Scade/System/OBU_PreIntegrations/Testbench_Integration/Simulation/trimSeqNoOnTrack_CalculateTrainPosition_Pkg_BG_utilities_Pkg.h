@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _trimSeqNoOnTrack_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_
 #define _trimSeqNoOnTrack_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_
@@ -25,8 +25,8 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   positionedBGs_T_TrainPosition_Types_Pck /* _L1/ */ _L1;
   positionedBGs_T_TrainPosition_Types_Pck /* _L3/ */ _L3;
-  kcg_int64 /* _L2/ */ _L2;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L2/ */ _L2;
+  kcg_int32 /* _L5/ */ _L5;
 } outC_trimSeqNoOnTrack_CalculateTrainPosition_Pkg_BG_utilities_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -51,6 +51,6 @@ extern void trimSeqNoOnTrack_init_CalculateTrainPosition_Pkg_BG_utilities_Pkg(
 #endif /* _trimSeqNoOnTrack_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** trimSeqNoOnTrack_CalculateTrainPosition_Pkg_BG_utilities_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

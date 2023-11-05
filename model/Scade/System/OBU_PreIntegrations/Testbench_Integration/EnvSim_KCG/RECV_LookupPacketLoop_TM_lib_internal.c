@@ -10,13 +10,13 @@
 /* TM_lib_internal::RECV_LookupPacketLoop/ */
 void RECV_LookupPacketLoop_TM_lib_internal(
   /* Index/ */
-  kcg_int64 Index,
+  kcg_int32 Index,
   /* HeaderInit/ */
   MetadataElement_T_Common_Types_Pkg *HeaderInit,
   /* Message_in/ */
   MetadataElement_T_Common_Types_Pkg *Message_in,
   /* ID_in/ */
-  kcg_int64 ID_in,
+  kcg_int32 ID_in,
   /* F_version/ */
   kcg_bool F_version,
   /* F_id/ */
@@ -24,7 +24,7 @@ void RECV_LookupPacketLoop_TM_lib_internal(
   outC_RECV_LookupPacketLoop_TM_lib_internal *outC)
 {
   static MetadataElement_T_Common_Types_Pkg noname;
-  static kcg_int64 _1_noname;
+  static kcg_int32 _1_noname;
 
   outC->_L34 = F_id;
   outC->_L33 = F_version;
@@ -55,25 +55,25 @@ void RECV_LookupPacketLoop_init_TM_lib_internal(
   outC->_L34 = kcg_true;
   outC->_L33 = kcg_true;
   outC->_L32 = kcg_true;
-  outC->_L31 = kcg_lit_int64(0);
-  outC->_L30.nid_packet = kcg_lit_int64(0);
+  outC->_L31 = kcg_lit_int32(0);
+  outC->_L30.nid_packet = kcg_lit_int32(0);
   outC->_L30.q_dir = Q_DIR_Reverse;
   outC->_L30.valid = kcg_true;
-  outC->_L30.startAddress = kcg_lit_int64(0);
-  outC->_L30.endAddress = kcg_lit_int64(0);
+  outC->_L30.startAddress = kcg_lit_int32(0);
+  outC->_L30.endAddress = kcg_lit_int32(0);
   outC->_L29 = kcg_true;
-  outC->_L27 = kcg_lit_int64(0);
-  outC->_L4.nid_packet = kcg_lit_int64(0);
+  outC->_L27 = kcg_lit_int32(0);
+  outC->_L4.nid_packet = kcg_lit_int32(0);
   outC->_L4.q_dir = Q_DIR_Reverse;
   outC->_L4.valid = kcg_true;
-  outC->_L4.startAddress = kcg_lit_int64(0);
-  outC->_L4.endAddress = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->HeaderFound.nid_packet = kcg_lit_int64(0);
+  outC->_L4.startAddress = kcg_lit_int32(0);
+  outC->_L4.endAddress = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->HeaderFound.nid_packet = kcg_lit_int32(0);
   outC->HeaderFound.q_dir = Q_DIR_Reverse;
   outC->HeaderFound.valid = kcg_true;
-  outC->HeaderFound.startAddress = kcg_lit_int64(0);
-  outC->HeaderFound.endAddress = kcg_lit_int64(0);
+  outC->HeaderFound.startAddress = kcg_lit_int32(0);
+  outC->HeaderFound.endAddress = kcg_lit_int32(0);
   outC->Cont = kcg_true;
   /* _L32=(TM_lib_internal::T_Filter_Metadata#1)/ */
   T_Filter_Metadata_init_TM_lib_internal(&outC->Context_T_Filter_Metadata_1);

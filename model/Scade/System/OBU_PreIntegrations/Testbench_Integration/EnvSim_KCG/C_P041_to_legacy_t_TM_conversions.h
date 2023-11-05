@@ -32,7 +32,7 @@ typedef struct {
   kcg_bool /* _L3/ */ _L3;
   P41_LevelTransistionOrders_T_Packet_Types_Pkg /* _L20/ */ _L20;
   _42_array /* _L23/ */ _L23;
-  array_int64_7 /* _L24/ */ _L24;
+  array_int32_7 /* _L24/ */ _L24;
   _48_array /* _L25/ */ _L25;
   _50_array /* _L26/ */ _L26;
 } outC_C_P041_to_legacy_t_TM_conversions;

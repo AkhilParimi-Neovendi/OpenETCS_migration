@@ -12,9 +12,9 @@ void Triggers_Sheet11_RBC_Scenario_Pkg(
   /* inLRBG/ */
   NID_LRBG inLRBG,
   /* inDistanceToLRBG/ */
-  kcg_float64 inDistanceToLRBG,
+  kcg_float32 inDistanceToLRBG,
   /* inTriggerId/ */
-  kcg_int64 inTriggerId,
+  kcg_int32 inTriggerId,
   /* inRBCTime/ */
   T_TRAIN inRBCTime,
   outC_Triggers_Sheet11_RBC_Scenario_Pkg *outC)
@@ -29,11 +29,11 @@ void Triggers_Sheet11_RBC_Scenario_Pkg(
     outC->_L3,
     outC->_L4,
     outC->_L5,
-    kcg_lit_int64(397),
-    kcg_lit_float64(164.2),
-    kcg_lit_float64(174.2),
-    kcg_lit_int64(397001692),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(397),
+    kcg_lit_float32(164.2),
+    kcg_lit_float32(174.2),
+    kcg_lit_int32(397001692),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_1);
   outC->_L1 = outC->Context_RadioTrackTrainMessageTrigger__Trigger_1.outTriggerId;
   /* _L6=(RBC_Scenario_Pkg::RadioTrackTrainMessageTrigger__Trigger#2)/ */
@@ -42,11 +42,11 @@ void Triggers_Sheet11_RBC_Scenario_Pkg(
     outC->_L3,
     outC->_L1,
     outC->_L5,
-    kcg_lit_int64(397),
-    kcg_lit_float64(377.0),
-    kcg_lit_float64(387.0),
-    kcg_lit_int64(397003820),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(397),
+    kcg_lit_float32(377.0),
+    kcg_lit_float32(387.0),
+    kcg_lit_int32(397003820),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_2);
   outC->_L6 = outC->Context_RadioTrackTrainMessageTrigger__Trigger_2.outTriggerId;
   /* _L7=(RBC_Scenario_Pkg::RadioTrackTrainMessageTrigger__Trigger#3)/ */
@@ -55,11 +55,11 @@ void Triggers_Sheet11_RBC_Scenario_Pkg(
     outC->_L3,
     outC->_L6,
     outC->_L5,
-    kcg_lit_int64(400),
-    kcg_lit_float64(101.0),
-    kcg_lit_float64(111.0),
-    kcg_lit_int64(400001060),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(400),
+    kcg_lit_float32(101.0),
+    kcg_lit_float32(111.0),
+    kcg_lit_int32(400001060),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_3);
   outC->_L7 = outC->Context_RadioTrackTrainMessageTrigger__Trigger_3.outTriggerId;
   /* _L8=(RBC_Scenario_Pkg::RadioTrackTrainMessageTrigger__Trigger#4)/ */
@@ -68,11 +68,11 @@ void Triggers_Sheet11_RBC_Scenario_Pkg(
     outC->_L3,
     outC->_L7,
     outC->_L5,
-    kcg_lit_int64(400),
-    kcg_lit_float64(366.2),
-    kcg_lit_float64(376.2),
-    kcg_lit_int64(400003712),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(400),
+    kcg_lit_float32(366.2),
+    kcg_lit_float32(376.2),
+    kcg_lit_int32(400003712),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_4);
   outC->_L8 = outC->Context_RadioTrackTrainMessageTrigger__Trigger_4.outTriggerId;
   /* _L9=(RBC_Scenario_Pkg::RadioTrackTrainMessageTrigger__Trigger#5)/ */
@@ -81,11 +81,11 @@ void Triggers_Sheet11_RBC_Scenario_Pkg(
     outC->_L3,
     outC->_L8,
     outC->_L5,
-    kcg_lit_int64(401),
-    kcg_lit_float64(177.7),
-    kcg_lit_float64(187.7),
-    kcg_lit_int64(401001827),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(401),
+    kcg_lit_float32(177.7),
+    kcg_lit_float32(187.7),
+    kcg_lit_int32(401001827),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_5);
   outC->_L9 = outC->Context_RadioTrackTrainMessageTrigger__Trigger_5.outTriggerId;
   /* _L10=(RBC_Scenario_Pkg::RadioTrackTrainMessageTrigger__Trigger#6)/ */
@@ -94,11 +94,11 @@ void Triggers_Sheet11_RBC_Scenario_Pkg(
     outC->_L3,
     outC->_L9,
     outC->_L5,
-    kcg_lit_int64(402),
-    kcg_lit_float64(58.3),
-    kcg_lit_float64(68.3),
-    kcg_lit_int64(402000633),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(402),
+    kcg_lit_float32(58.3),
+    kcg_lit_float32(68.3),
+    kcg_lit_int32(402000633),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_6);
   outC->_L10 =
     outC->Context_RadioTrackTrainMessageTrigger__Trigger_6.outTriggerId;
@@ -108,11 +108,11 @@ void Triggers_Sheet11_RBC_Scenario_Pkg(
     outC->_L3,
     outC->_L10,
     outC->_L5,
-    kcg_lit_int64(404),
-    kcg_lit_float64(179.4),
-    kcg_lit_float64(189.4),
-    kcg_lit_int64(404001844),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(404),
+    kcg_lit_float32(179.4),
+    kcg_lit_float32(189.4),
+    kcg_lit_int32(404001844),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_7);
   outC->_L11 =
     outC->Context_RadioTrackTrainMessageTrigger__Trigger_7.outTriggerId;
@@ -122,11 +122,11 @@ void Triggers_Sheet11_RBC_Scenario_Pkg(
     outC->_L3,
     outC->_L11,
     outC->_L5,
-    kcg_lit_int64(405),
-    kcg_lit_float64(37.2),
-    kcg_lit_float64(47.2),
-    kcg_lit_int64(405000422),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(405),
+    kcg_lit_float32(37.2),
+    kcg_lit_float32(47.2),
+    kcg_lit_int32(405000422),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_8);
   outC->_L12 =
     outC->Context_RadioTrackTrainMessageTrigger__Trigger_8.outTriggerId;
@@ -136,11 +136,11 @@ void Triggers_Sheet11_RBC_Scenario_Pkg(
     outC->_L3,
     outC->_L12,
     outC->_L5,
-    kcg_lit_int64(407),
-    kcg_lit_float64(162.3),
-    kcg_lit_float64(172.3),
-    kcg_lit_int64(407001673),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(407),
+    kcg_lit_float32(162.3),
+    kcg_lit_float32(172.3),
+    kcg_lit_int32(407001673),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_9);
   outC->_L13 =
     outC->Context_RadioTrackTrainMessageTrigger__Trigger_9.outTriggerId;
@@ -150,11 +150,11 @@ void Triggers_Sheet11_RBC_Scenario_Pkg(
     outC->_L3,
     outC->_L13,
     outC->_L5,
-    kcg_lit_int64(408),
-    kcg_lit_float64(45.9),
-    kcg_lit_float64(55.9),
-    kcg_lit_int64(408000509),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(408),
+    kcg_lit_float32(45.9),
+    kcg_lit_float32(55.9),
+    kcg_lit_int32(408000509),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_10);
   outC->_L14 =
     outC->Context_RadioTrackTrainMessageTrigger__Trigger_10.outTriggerId;
@@ -165,21 +165,21 @@ void Triggers_Sheet11_RBC_Scenario_Pkg(
 void Triggers_Sheet11_init_RBC_Scenario_Pkg(
   outC_Triggers_Sheet11_RBC_Scenario_Pkg *outC)
 {
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_float64(0.0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->outTriggerId = kcg_lit_int64(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_float32(0.0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->outTriggerId = kcg_lit_int32(0);
   /* _L14=(RBC_Scenario_Pkg::RadioTrackTrainMessageTrigger__Trigger#10)/ */
   RadioTrackTrainMessageTrigger__Trigger_init_RBC_Scenario_Pkg(
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_10);

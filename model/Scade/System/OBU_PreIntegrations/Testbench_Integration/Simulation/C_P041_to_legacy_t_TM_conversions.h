@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _C_P041_to_legacy_t_TM_conversions_H_
 #define _C_P041_to_legacy_t_TM_conversions_H_
@@ -31,10 +31,10 @@ typedef struct {
   Q_DIR /* _L4/ */ _L4;
   kcg_bool /* _L3/ */ _L3;
   P41_LevelTransistionOrders_T_Packet_Types_Pkg /* _L20/ */ _L20;
-  _47_array /* _L23/ */ _L23;
-  array_int64_7 /* _L24/ */ _L24;
-  _5_array /* _L25/ */ _L25;
-  _8_array /* _L26/ */ _L26;
+  _48_array /* _L23/ */ _L23;
+  array_int32_7 /* _L24/ */ _L24;
+  _28_array /* _L25/ */ _L25;
+  _40_array /* _L26/ */ _L26;
 } outC_C_P041_to_legacy_t_TM_conversions;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -59,6 +59,6 @@ extern void C_P041_to_legacy_t_init_TM_conversions(
 #endif /* _C_P041_to_legacy_t_TM_conversions_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P041_to_legacy_t_TM_conversions.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

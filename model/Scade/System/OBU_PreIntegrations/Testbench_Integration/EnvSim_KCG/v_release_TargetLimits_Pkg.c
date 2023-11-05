@@ -35,7 +35,7 @@ void v_release_TargetLimits_Pkg(
   static V_internal_real_Type_SDM_Types_Pkg acc;
   static kcg_size idx5;
   static L_internal_real_Type_SDM_Types_Pkg op_call;
-  static kcg_int64 noname;
+  static kcg_int32 noname;
 
   kcg_copy_MA_section_real_T_TargetManagement_types(&outC->_L59, MA);
   outC->_L60 = outC->_L59.q_calculate_release;
@@ -53,7 +53,7 @@ void v_release_TargetLimits_Pkg(
     op_call = outC->Context_d_tripEOA_1.D_tripEOA;
   }
   outC->_L61 = outC->_L59.ReleaseSpeed;
-  outC->_L47 = kcg_lit_float64(0.0);
+  outC->_L47 = kcg_lit_float32(0.0);
   outC->_L23 = V_target;
   kcg_copy_ParabolaCurve_T_CalcBrakingCurves_types(&outC->_L26, EBDcurve);
   /* _L14/ */
@@ -74,7 +74,7 @@ void v_release_TargetLimits_Pkg(
     outC->_L21 = op_call;
   }
   else {
-    outC->_L21 = kcg_lit_float64(0.0);
+    outC->_L21 = kcg_lit_float32(0.0);
   }
   /* _L17/ */
   for (idx3 = 0; idx3 < 10; idx3++) {
@@ -101,7 +101,7 @@ void v_release_TargetLimits_Pkg(
         &outC->_L19[idx5],
         &outC->Context_v_ReleaseOnboardIterator_1[idx5]);
       outC->_L9 = outC->Context_v_ReleaseOnboardIterator_1[idx5].V_release_next;
-      outC->_L12 = /* _L12= */(kcg_int64) (idx5 + 1);
+      outC->_L12 = /* _L12= */(kcg_int32) (idx5 + 1);
       /* _L12= */
       if (!outC->Context_v_ReleaseOnboardIterator_1[idx5].run_condition) {
         break;
@@ -109,7 +109,7 @@ void v_release_TargetLimits_Pkg(
     }
   }
   else {
-    outC->_L12 = kcg_lit_int64(0);
+    outC->_L12 = kcg_lit_int32(0);
   }
   outC->_L46 = outC->_L9 <= outC->_L47;
   outC->_L57 = outC->_L60 & outC->_L46;
@@ -147,94 +147,94 @@ void v_release_init_TargetLimits_Pkg(outC_v_release_TargetLimits_Pkg *outC)
   outC->_L64.isSB_FBAvailable = kcg_true;
   outC->_L64.isSB_CmdAvailable = kcg_true;
   outC->_L64.isTCOAvailable = kcg_true;
-  outC->_L64.T_traction_cut_off = kcg_lit_int64(0);
-  outC->_L64.offsetAntennaL1 = kcg_lit_int64(0);
-  outC->_L64.T_b_limit = kcg_lit_int64(0);
+  outC->_L64.T_traction_cut_off = kcg_lit_int32(0);
+  outC->_L64.offsetAntennaL1 = kcg_lit_int32(0);
+  outC->_L64.T_b_limit = kcg_lit_int32(0);
   outC->_L63.trainPositionIsValid = kcg_true;
-  outC->_L63.d_est_frontendPos = kcg_lit_float64(0.0);
-  outC->_L63.d_minSafeFrontEndPos = kcg_lit_float64(0.0);
-  outC->_L63.d_maxSafeFrontEndPos = kcg_lit_float64(0.0);
-  outC->_L63.d_LRBG = kcg_lit_float64(0.0);
-  outC->_L63.d_accLRBG = kcg_lit_float64(0.0);
-  outC->_L61 = kcg_lit_float64(0.0);
+  outC->_L63.d_est_frontendPos = kcg_lit_float32(0.0);
+  outC->_L63.d_minSafeFrontEndPos = kcg_lit_float32(0.0);
+  outC->_L63.d_maxSafeFrontEndPos = kcg_lit_float32(0.0);
+  outC->_L63.d_LRBG = kcg_lit_float32(0.0);
+  outC->_L63.d_accLRBG = kcg_lit_float32(0.0);
+  outC->_L61 = kcg_lit_float32(0.0);
   outC->_L60 = kcg_true;
   outC->_L59.valid = kcg_true;
-  outC->_L59.v_main = kcg_lit_float64(0.0);
-  outC->_L59.EOA.Location = kcg_lit_float64(0.0);
-  outC->_L59.EOA.TargetSpeed = kcg_lit_float64(0.0);
+  outC->_L59.v_main = kcg_lit_float32(0.0);
+  outC->_L59.EOA.Location = kcg_lit_float32(0.0);
+  outC->_L59.EOA.TargetSpeed = kcg_lit_float32(0.0);
   outC->_L59.DP_valid = kcg_true;
-  outC->_L59.DangerPoint = kcg_lit_float64(0.0);
+  outC->_L59.DangerPoint = kcg_lit_float32(0.0);
   outC->_L59.OL_valid = kcg_true;
-  outC->_L59.Overlap = kcg_lit_float64(0.0);
+  outC->_L59.Overlap = kcg_lit_float32(0.0);
   outC->_L59.q_calculate_release = kcg_true;
-  outC->_L59.ReleaseSpeed = kcg_lit_float64(0.0);
+  outC->_L59.ReleaseSpeed = kcg_lit_float32(0.0);
   outC->_L59.level = MA_L1_TrackAtlasTypes;
   outC->_L58 = kcg_true;
   outC->_L57 = kcg_true;
-  outC->_L55 = kcg_lit_float64(0.0);
-  outC->_L47 = kcg_lit_float64(0.0);
+  outC->_L55 = kcg_lit_float32(0.0);
+  outC->_L47 = kcg_lit_float32(0.0);
   outC->_L46 = kcg_true;
-  outC->_L33 = kcg_lit_float64(0.0);
-  outC->_L28.Traction = kcg_lit_float64(0.0);
-  outC->_L28.berem = kcg_lit_float64(0.0);
-  outC->_L28.bs = kcg_lit_float64(0.0);
-  outC->_L28.bs1 = kcg_lit_float64(0.0);
-  outC->_L28.bs2 = kcg_lit_float64(0.0);
+  outC->_L33 = kcg_lit_float32(0.0);
+  outC->_L28.Traction = kcg_lit_float32(0.0);
+  outC->_L28.berem = kcg_lit_float32(0.0);
+  outC->_L28.bs = kcg_lit_float32(0.0);
+  outC->_L28.bs1 = kcg_lit_float32(0.0);
+  outC->_L28.bs2 = kcg_lit_float32(0.0);
   outC->_L28.inhComp = kcg_true;
-  outC->_L28.indication = kcg_lit_float64(0.0);
+  outC->_L28.indication = kcg_lit_float32(0.0);
   for (idx1 = 0; idx1 < 114; idx1++) {
-    outC->_L26.distances[idx1] = kcg_lit_float64(0.0);
+    outC->_L26.distances[idx1] = kcg_lit_float32(0.0);
   }
   for (idx2 = 0; idx2 < 114; idx2++) {
-    outC->_L26.speeds[idx2] = kcg_lit_float64(0.0);
+    outC->_L26.speeds[idx2] = kcg_lit_float32(0.0);
   }
   for (idx3 = 0; idx3 < 114; idx3++) {
-    outC->_L26.accelerations[idx3] = kcg_lit_float64(0.0);
+    outC->_L26.accelerations[idx3] = kcg_lit_float32(0.0);
   }
   for (idx4 = 0; idx4 < 114; idx4++) {
     outC->_L26.valid[idx4] = kcg_true;
   }
-  outC->_L25 = kcg_lit_float64(0.0);
-  outC->_L24 = kcg_lit_float64(0.0);
-  outC->_L23 = kcg_lit_float64(0.0);
-  outC->_L21 = kcg_lit_float64(0.0);
+  outC->_L25 = kcg_lit_float32(0.0);
+  outC->_L24 = kcg_lit_float32(0.0);
+  outC->_L23 = kcg_lit_float32(0.0);
+  outC->_L21 = kcg_lit_float32(0.0);
   for (idx5 = 0; idx5 < 10; idx5++) {
-    outC->_L19[idx5].Traction = kcg_lit_float64(0.0);
-    outC->_L19[idx5].berem = kcg_lit_float64(0.0);
-    outC->_L19[idx5].bs = kcg_lit_float64(0.0);
-    outC->_L19[idx5].bs1 = kcg_lit_float64(0.0);
-    outC->_L19[idx5].bs2 = kcg_lit_float64(0.0);
+    outC->_L19[idx5].Traction = kcg_lit_float32(0.0);
+    outC->_L19[idx5].berem = kcg_lit_float32(0.0);
+    outC->_L19[idx5].bs = kcg_lit_float32(0.0);
+    outC->_L19[idx5].bs1 = kcg_lit_float32(0.0);
+    outC->_L19[idx5].bs2 = kcg_lit_float32(0.0);
     outC->_L19[idx5].inhComp = kcg_true;
-    outC->_L19[idx5].indication = kcg_lit_float64(0.0);
+    outC->_L19[idx5].indication = kcg_lit_float32(0.0);
   }
   for (idx6 = 0; idx6 < 10; idx6++) {
-    outC->_L17[idx6] = kcg_lit_float64(0.0);
+    outC->_L17[idx6] = kcg_lit_float32(0.0);
   }
   for (idx7 = 0; idx7 < 10; idx7++) {
-    outC->_L16[idx7] = kcg_lit_float64(0.0);
+    outC->_L16[idx7] = kcg_lit_float32(0.0);
   }
   for (idx8 = 0; idx8 < 10; idx8++) {
-    outC->_L15[idx8] = kcg_lit_float64(0.0);
+    outC->_L15[idx8] = kcg_lit_float32(0.0);
   }
   for (idx13 = 0; idx13 < 10; idx13++) {
     for (idx9 = 0; idx9 < 114; idx9++) {
-      outC->_L14[idx13].distances[idx9] = kcg_lit_float64(0.0);
+      outC->_L14[idx13].distances[idx9] = kcg_lit_float32(0.0);
     }
     for (idx10 = 0; idx10 < 114; idx10++) {
-      outC->_L14[idx13].speeds[idx10] = kcg_lit_float64(0.0);
+      outC->_L14[idx13].speeds[idx10] = kcg_lit_float32(0.0);
     }
     for (idx11 = 0; idx11 < 114; idx11++) {
-      outC->_L14[idx13].accelerations[idx11] = kcg_lit_float64(0.0);
+      outC->_L14[idx13].accelerations[idx11] = kcg_lit_float32(0.0);
     }
     for (idx12 = 0; idx12 < 114; idx12++) {
       outC->_L14[idx13].valid[idx12] = kcg_true;
     }
   }
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_float64(0.0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_float32(0.0);
   outC->every = kcg_true;
   outC->valid = kcg_true;
-  outC->V_release = kcg_lit_float64(0.0);
+  outC->V_release = kcg_lit_float32(0.0);
   for (idx = 0; idx < 10; idx++) {
     /* _L12=(TargetLimits_Pkg::v_ReleaseOnboardIterator#1)/ */
     v_ReleaseOnboardIterator_init_TargetLimits_Pkg(

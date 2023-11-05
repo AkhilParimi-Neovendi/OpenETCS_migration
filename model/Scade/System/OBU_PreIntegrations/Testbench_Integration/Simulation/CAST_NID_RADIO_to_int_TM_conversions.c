@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -16,20 +16,22 @@ void CAST_NID_RADIO_to_int_TM_conversions(
   static kcg_bool noname;
   static kcg_bool _1_noname;
 
-  outC->_L5 = kcg_lit_int64(0);
   outC->_L1 = nid_radio;
+  outC->_L6 = outC->_L1;
+  outC->_L5 = kcg_lit_int64(0);
   outC->_L4 = outC->_L1 < outC->_L5;
   outC->_L3 = kcg_lit_int64(500000);
   outC->_L2 = outC->_L1 > outC->_L3;
   _1_noname = outC->_L2;
   noname = outC->_L4;
-  outC->nid_radio_int = outC->_L1;
+  outC->nid_radio_int = outC->_L6;
 }
 
 #ifndef KCG_USER_DEFINED_INIT
 void CAST_NID_RADIO_to_int_init_TM_conversions(
   outC_CAST_NID_RADIO_to_int_TM_conversions *outC)
 {
+  outC->_L6 = kcg_lit_int64(0);
   outC->_L2 = kcg_true;
   outC->_L3 = kcg_lit_int64(0);
   outC->_L4 = kcg_true;
@@ -51,6 +53,6 @@ void CAST_NID_RADIO_to_int_reset_TM_conversions(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_NID_RADIO_to_int_TM_conversions.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

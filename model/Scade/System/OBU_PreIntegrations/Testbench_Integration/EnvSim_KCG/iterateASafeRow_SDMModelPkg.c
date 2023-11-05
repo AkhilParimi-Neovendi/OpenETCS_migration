@@ -39,17 +39,17 @@ void iterateASafeRow_SDMModelPkg(
 #ifndef KCG_USER_DEFINED_INIT
 void iterateASafeRow_init_SDMModelPkg(outC_iterateASafeRow_SDMModelPkg *outC)
 {
-  outC->_L7 = kcg_lit_float64(0.0);
-  outC->_L6 = kcg_lit_float64(0.0);
-  outC->_L5 = kcg_lit_float64(0.0);
+  outC->_L7 = kcg_lit_float32(0.0);
+  outC->_L6 = kcg_lit_float32(0.0);
+  outC->_L5 = kcg_lit_float32(0.0);
   outC->_L4 = kcg_true;
-  outC->_L3 = kcg_lit_float64(0.0);
-  outC->_L2.position = kcg_lit_float64(0.0);
-  outC->_L2.gradient_acceleration = kcg_lit_float64(0.0);
+  outC->_L3 = kcg_lit_float32(0.0);
+  outC->_L2.position = kcg_lit_float32(0.0);
+  outC->_L2.gradient_acceleration = kcg_lit_float32(0.0);
   outC->_L2.valid = kcg_true;
-  outC->_L1 = kcg_lit_float64(0.0);
-  outC->A_graded = kcg_lit_float64(0.0);
-  outC->keep_gradient = kcg_lit_float64(0.0);
+  outC->_L1 = kcg_lit_float32(0.0);
+  outC->A_graded = kcg_lit_float32(0.0);
+  outC->keep_gradient = kcg_lit_float32(0.0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

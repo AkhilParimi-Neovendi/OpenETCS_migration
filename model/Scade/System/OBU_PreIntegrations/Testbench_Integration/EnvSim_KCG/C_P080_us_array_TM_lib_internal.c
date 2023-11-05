@@ -10,9 +10,9 @@
 /* TM_lib_internal::C_P080_us_array/ */
 void C_P080_us_array_TM_lib_internal(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* n_iter_int/ */
-  kcg_int64 n_iter_int,
+  kcg_int32 n_iter_int,
   /* flat/ */
   P080_sections_array_flat_T_TM *flat,
   outC_C_P080_us_array_TM_lib_internal *outC)
@@ -25,21 +25,21 @@ void C_P080_us_array_TM_lib_internal(
   C_P080_extract_el_section_TM_lib_internal(
     outC->_L16,
     &outC->_L1,
-    kcg_lit_int64(3),
+    kcg_lit_int32(3),
     &outC->Context_C_P080_extract_el_section_4);
   outC->_L21 = outC->Context_C_P080_extract_el_section_4.element;
   /* _L22=(TM_lib_internal::C_P080_extract_el_section#5)/ */
   C_P080_extract_el_section_TM_lib_internal(
     outC->_L16,
     &outC->_L1,
-    kcg_lit_int64(4),
+    kcg_lit_int32(4),
     &outC->Context_C_P080_extract_el_section_5);
   outC->_L22 = outC->Context_C_P080_extract_el_section_5.element;
   /* _L23=(TM_lib_internal::C_P080_extract_el_section#6)/ */
   C_P080_extract_el_section_TM_lib_internal(
     outC->_L16,
     &outC->_L1,
-    kcg_lit_int64(5),
+    kcg_lit_int32(5),
     &outC->Context_C_P080_extract_el_section_6);
   outC->_L23 = outC->Context_C_P080_extract_el_section_6.element;
   /* _L27=(TM_conversions::CAST_Int_to_L_MAMODE#1)/ */
@@ -64,7 +64,7 @@ void C_P080_us_array_TM_lib_internal(
   C_P080_extract_el_section_TM_lib_internal(
     outC->_L16,
     &outC->_L1,
-    kcg_lit_int64(1),
+    kcg_lit_int32(1),
     &outC->Context_C_P080_extract_el_section_2);
   outC->_L19 = outC->Context_C_P080_extract_el_section_2.element;
   /* _L28=(TM_conversions::CAST_Int_to_M_MAMODE#1)/ */
@@ -76,7 +76,7 @@ void C_P080_us_array_TM_lib_internal(
   C_P080_extract_el_section_TM_lib_internal(
     outC->_L16,
     &outC->_L1,
-    kcg_lit_int64(2),
+    kcg_lit_int32(2),
     &outC->Context_C_P080_extract_el_section_3);
   outC->_L20 = outC->Context_C_P080_extract_el_section_3.element;
   /* _L26=(TM_conversions::CAST_Int_to_NID_C#1)/ */
@@ -88,7 +88,7 @@ void C_P080_us_array_TM_lib_internal(
   C_P080_extract_el_section_TM_lib_internal(
     outC->_L16,
     &outC->_L1,
-    kcg_lit_int64(0),
+    kcg_lit_int32(0),
     &outC->Context_C_P080_extract_el_section_1);
   outC->_L15 = outC->Context_C_P080_extract_el_section_1.element;
   /* _L25=(TM_conversions::CAST_Int_to_D_MAMODE#1)/ */
@@ -113,40 +113,40 @@ void C_P080_us_array_init_TM_lib_internal(
 {
   static kcg_size idx;
 
-  outC->_L21 = kcg_lit_int64(0);
-  outC->_L22 = kcg_lit_int64(0);
-  outC->_L23 = kcg_lit_int64(0);
-  outC->_L27 = kcg_lit_int64(0);
-  outC->_L29 = kcg_lit_int64(0);
+  outC->_L21 = kcg_lit_int32(0);
+  outC->_L22 = kcg_lit_int32(0);
+  outC->_L23 = kcg_lit_int32(0);
+  outC->_L27 = kcg_lit_int32(0);
+  outC->_L29 = kcg_lit_int32(0);
   outC->_L30 = Q_MAMODE_as_the_EOA;
   outC->_L33 = kcg_true;
   outC->_L32 = kcg_true;
   outC->_L28 = M_MAMODE_On_Sight;
-  outC->_L26 = kcg_lit_int64(0);
-  outC->_L25 = kcg_lit_int64(0);
-  outC->_L20 = kcg_lit_int64(0);
-  outC->_L19 = kcg_lit_int64(0);
-  outC->_L18 = kcg_lit_int64(0);
-  outC->_L16 = kcg_lit_int64(0);
-  outC->_L15 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L26 = kcg_lit_int32(0);
+  outC->_L25 = kcg_lit_int32(0);
+  outC->_L20 = kcg_lit_int32(0);
+  outC->_L19 = kcg_lit_int32(0);
+  outC->_L18 = kcg_lit_int32(0);
+  outC->_L16 = kcg_lit_int32(0);
+  outC->_L15 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L4.valid = kcg_true;
-  outC->_L4.d_mamode = kcg_lit_int64(0);
+  outC->_L4.d_mamode = kcg_lit_int32(0);
   outC->_L4.m_mamode = M_MAMODE_On_Sight;
-  outC->_L4.v_mamode = kcg_lit_int64(0);
-  outC->_L4.l_mamode = kcg_lit_int64(0);
-  outC->_L4.l_ackmamode = kcg_lit_int64(0);
+  outC->_L4.v_mamode = kcg_lit_int32(0);
+  outC->_L4.l_mamode = kcg_lit_int32(0);
+  outC->_L4.l_ackmamode = kcg_lit_int32(0);
   outC->_L4.q_mamode = Q_MAMODE_as_the_EOA;
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
   for (idx = 0; idx < 198; idx++) {
-    outC->_L1[idx] = kcg_lit_int64(0);
+    outC->_L1[idx] = kcg_lit_int32(0);
   }
   outC->sections.valid = kcg_true;
-  outC->sections.d_mamode = kcg_lit_int64(0);
+  outC->sections.d_mamode = kcg_lit_int32(0);
   outC->sections.m_mamode = M_MAMODE_On_Sight;
-  outC->sections.v_mamode = kcg_lit_int64(0);
-  outC->sections.l_mamode = kcg_lit_int64(0);
-  outC->sections.l_ackmamode = kcg_lit_int64(0);
+  outC->sections.v_mamode = kcg_lit_int32(0);
+  outC->sections.l_mamode = kcg_lit_int32(0);
+  outC->sections.l_ackmamode = kcg_lit_int32(0);
   outC->sections.q_mamode = Q_MAMODE_as_the_EOA;
   outC->cont = kcg_true;
   /* _L25=(TM_conversions::CAST_Int_to_D_MAMODE#1)/ */

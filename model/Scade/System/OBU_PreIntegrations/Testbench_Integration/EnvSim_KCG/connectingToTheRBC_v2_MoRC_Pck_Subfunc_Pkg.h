@@ -70,7 +70,7 @@ typedef struct {
   kcg_bool /* _L387/ */ _L387;
   kcg_bool /* _L388/ */ _L388;
   mobileConnectionContext_T_RCM_Types_Pkg /* _L389/ */ _L389;
-  kcg_int64 /* _L390/ */ _L390;
+  kcg_int32 /* _L390/ */ _L390;
   NID_RADIO /* _L391/ */ _L391;
   mobileConnectionCmd_T_RCM_Types_Pkg /* _L392/ */ _L392;
   mobileConnetionAction_T_RCM_Types_Pkg /* _L393/ */ _L393;

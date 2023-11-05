@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _validateDataDirection_General_ValidateDataDirectionGeneral_Pkg_H_
 #define _validateDataDirection_General_ValidateDataDirectionGeneral_Pkg_H_
@@ -34,7 +34,7 @@ typedef struct {
   ReceivedMessage_T_Common_Types_Pkg /* _L1/ */ _L1;
   Metadata_T_Common_Types_Pkg /* _L6/ */ _L6;
   Metadata_T_Common_Types_Pkg /* _L7/ */ _L7;
-  _45_array /* _L8/ */ _L8;
+  _60_array /* _L8/ */ _L8;
   ReceivedMessage_T_Common_Types_Pkg /* _L9/ */ _L9;
   ReceivedMessage_T_Common_Types_Pkg /* _L10/ */ _L10;
   kcg_bool /* _L17/ */ _L17;
@@ -43,7 +43,7 @@ typedef struct {
   BG_Header_T_BG_Types_Pkg /* _L14/ */ _L14;
   Radio_TrackTrain_Header_T_Radio_Types_Pkg /* _L13/ */ _L13;
   CompressedPackets_T_Common_Types_Pkg /* _L12/ */ _L12;
-  _27_array /* _L19/ */ _L19;
+  _25_array /* _L19/ */ _L19;
   Q_DIRTRAIN /* _L24/ */ _L24;
   Q_DIRTRAIN /* _L25/ */ _L25;
   kcg_bool /* _L43/ */ _L43;
@@ -70,7 +70,7 @@ typedef struct {
   Q_DIRTRAIN /* _L50/ */ _L50;
   kcg_bool /* _L51/ */ _L51;
   NID_MESSAGE /* _L52/ */ _L52;
-  kcg_int64 /* _L53/ */ _L53;
+  kcg_int32 /* _L53/ */ _L53;
   kcg_bool /* _L54/ */ _L54;
   kcg_bool /* _L55/ */ _L55;
   MsgSource_T_Common_Types_Pkg /* _L56/ */ _L56;
@@ -87,7 +87,7 @@ typedef struct {
   MsgSource_T_Common_Types_Pkg /* _L70/ */ _L70;
   kcg_bool /* _L73/ */ _L73;
   NID_MESSAGE /* _L76/ */ _L76;
-  kcg_int64 /* _L75/ */ _L75;
+  kcg_int32 /* _L75/ */ _L75;
   kcg_bool /* _L74/ */ _L74;
   kcg_bool /* _L77/ */ _L77;
   kcg_bool /* _L78/ */ _L78;
@@ -138,6 +138,6 @@ extern void validateDataDirection_General_init_ValidateDataDirectionGeneral_Pkg(
 #endif /* _validateDataDirection_General_ValidateDataDirectionGeneral_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** validateDataDirection_General_ValidateDataDirectionGeneral_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

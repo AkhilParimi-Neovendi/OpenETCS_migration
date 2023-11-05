@@ -22,9 +22,9 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   V_odometry_Type_Obu_BasicTypes_Pkg /* _L1/ */ _L1;
-  kcg_float64 /* _L2/ */ _L2;
-  kcg_float64 /* _L3/ */ _L3;
-  kcg_float64 /* _L4/ */ _L4;
+  kcg_float32 /* _L2/ */ _L2;
+  kcg_float32 /* _L3/ */ _L3;
+  kcg_float32 /* _L4/ */ _L4;
 } outC_TransformV_odoToV_real_SDM_Types_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

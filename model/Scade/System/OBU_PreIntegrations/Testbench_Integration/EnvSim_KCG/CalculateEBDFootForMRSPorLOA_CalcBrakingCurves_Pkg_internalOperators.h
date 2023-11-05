@@ -32,11 +32,11 @@ typedef struct {
   ASafe_T_CalcBrakingCurves_types /* _L3/ */ _L3;
   Target_real_T_TargetManagement_types /* _L2/ */ _L2;
   kcg_bool /* _L1/ */ _L1;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L4/ */ _L4;
   BCAccumulator_type_CalcBrakingCurves_Pkg /* _L5/ */ _L5;
   V_internal_real_Type_SDM_Types_Pkg /* _L6/ */ _L6;
   _10_array /* _L7/ */ _L7;
-  array_float64_113 /* _L8/ */ _L8;
+  array_float32_113 /* _L8/ */ _L8;
   ParabolaCurve_T_CalcBrakingCurves_types /* _L9/ */ _L9;
   kcg_bool /* _L10/ */ _L10;
   L_internal_real_Type_SDM_Types_Pkg /* _L11/ */ _L11;

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -17,7 +17,7 @@ void Write_int_to_DMI_Entry_Request_DATA_Packets_EVC_to_DMI(
 
   kcg_copy_DMI_Entry_Request_int_array_T_DATA(&outC->_L15, dmi_entry_request_int);
   outC->_L18 = outC->_L15[0];
-  outC->_L19 = kcg_lit_int64(1);
+  outC->_L19 = kcg_lit_int32(1);
   outC->_L20 = outC->_L19 == outC->_L18;
   outC->every = outC->_L20;
   if (outC->every) {
@@ -53,20 +53,20 @@ void Write_int_to_DMI_Entry_Request_init_DATA_Packets_EVC_to_DMI(
   static kcg_size idx;
 
   outC->_L21.valid = kcg_true;
-  outC->_L21.system_clock = kcg_lit_int64(0);
+  outC->_L21.system_clock = kcg_lit_int32(0);
   outC->_L21.entry_request = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
-  outC->_L18 = kcg_lit_int64(0);
-  outC->_L19 = kcg_lit_int64(0);
+  outC->_L18 = kcg_lit_int32(0);
+  outC->_L19 = kcg_lit_int32(0);
   outC->_L20 = kcg_true;
   outC->_L17.valid = kcg_true;
-  outC->_L17.system_clock = kcg_lit_int64(0);
+  outC->_L17.system_clock = kcg_lit_int32(0);
   outC->_L17.entry_request = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   for (idx = 0; idx < 3; idx++) {
-    outC->_L15[idx] = kcg_lit_int64(0);
+    outC->_L15[idx] = kcg_lit_int32(0);
   }
   outC->every = kcg_true;
   outC->dmi_entry_request_ct.valid = kcg_true;
-  outC->dmi_entry_request_ct.system_clock = kcg_lit_int64(0);
+  outC->dmi_entry_request_ct.system_clock = kcg_lit_int32(0);
   outC->dmi_entry_request_ct.entry_request =
     Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   /* _L17=(DATA::Packets::EVC_to_DMI::CAST_int_to_DMI_Entry_Request1#1)/ */
@@ -90,6 +90,6 @@ void Write_int_to_DMI_Entry_Request_reset_DATA_Packets_EVC_to_DMI(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Write_int_to_DMI_Entry_Request_DATA_Packets_EVC_to_DMI.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

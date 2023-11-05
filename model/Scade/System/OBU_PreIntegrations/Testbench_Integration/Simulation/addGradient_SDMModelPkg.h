@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _addGradient_SDMModelPkg_H_
 #define _addGradient_SDMModelPkg_H_
@@ -29,10 +29,10 @@ typedef struct {
   ASafe_T_CalcBrakingCurves_types /* _L12/ */ _L12;
   ASafeSpeedDefinition_T_CalcBrakingCurves_types /* _L13/ */ _L13;
   L_internal_real_Type_SDM_Types_Pkg /* _L17/ */ _L17;
-  kcg_float64 /* _L20/ */ _L20;
+  kcg_float32 /* _L20/ */ _L20;
   ASafe_Data_T_CalcBrakingCurves_types /* _L26/ */ _L26;
   ASafe_T_CalcBrakingCurves_types /* _L27/ */ _L27;
-  array_float64_100 /* _L28/ */ _L28;
+  array_float32_100 /* _L28/ */ _L28;
   ASafe_T_CalcBrakingCurves_types /* _L29/ */ _L29;
   _104_array /* _L30/ */ _L30;
   A_gradient_t_SDM_GradientAcceleration_types /* _L31/ */ _L31;
@@ -61,6 +61,6 @@ extern void addGradient_init_SDMModelPkg(outC_addGradient_SDMModelPkg *outC);
 #endif /* _addGradient_SDMModelPkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** addGradient_SDMModelPkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

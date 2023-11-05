@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _MRSPPreindicationIterator_TargetLimits_Pkg_H_
 #define _MRSPPreindicationIterator_TargetLimits_Pkg_H_
@@ -46,8 +46,8 @@ typedef struct {
   L_internal_real_Type_SDM_Types_Pkg /* _L19/ */ _L19;
   L_internal_real_Type_SDM_Types_Pkg /* _L22/ */ _L22;
   T_internal_real_Type_SDM_Types_Pkg /* _L25/ */ _L25;
-  kcg_float64 /* _L26/ */ _L26;
-  kcg_float64 /* _L27/ */ _L27;
+  kcg_float32 /* _L26/ */ _L26;
+  kcg_float32 /* _L27/ */ _L27;
   L_internal_real_Type_SDM_Types_Pkg /* _L28/ */ _L28;
   MRSP_internal_section_T_TargetManagement_types /* _L29/ */ _L29;
   kcg_bool /* _L33/ */ _L33;
@@ -65,7 +65,7 @@ typedef struct {
   V_internal_real_Type_SDM_Types_Pkg /* _L51/ */ _L51;
   L_internal_real_Type_SDM_Types_Pkg /* _L52/ */ _L52;
   L_internal_real_Type_SDM_Types_Pkg /* _L53/ */ _L53;
-  kcg_float64 /* _L54/ */ _L54;
+  kcg_float32 /* _L54/ */ _L54;
   L_internal_real_Type_SDM_Types_Pkg /* _L57/ */ _L57;
   kcg_bool /* _L59/ */ _L59;
   kcg_bool /* _L62/ */ _L62;
@@ -92,8 +92,8 @@ typedef struct {
   kcg_bool /* _L102/ */ _L102;
   L_internal_real_Type_SDM_Types_Pkg /* _L103/ */ _L103;
   L_internal_real_Type_SDM_Types_Pkg /* _L104/ */ _L104;
-  kcg_int64 /* _L107/ */ _L107;
-  kcg_int64 /* _L108/ */ _L108;
+  kcg_int32 /* _L107/ */ _L107;
+  kcg_int32 /* _L108/ */ _L108;
   kcg_bool /* _L110/ */ _L110;
   kcg_bool /* _L111/ */ _L111;
   kcg_bool /* _L113/ */ _L113;
@@ -111,7 +111,7 @@ typedef struct {
 /* TargetLimits_Pkg::MRSPPreindicationIterator/ */
 extern void MRSPPreindicationIterator_TargetLimits_Pkg(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* MRSP_preindication_mix/ */
   MRSP_internal_section_T_TargetManagement_types *MRSP_preindication_mix,
   /* MRSP_sect_n/ */
@@ -141,6 +141,6 @@ extern void MRSPPreindicationIterator_init_TargetLimits_Pkg(
 #endif /* _MRSPPreindicationIterator_TargetLimits_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** MRSPPreindicationIterator_TargetLimits_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

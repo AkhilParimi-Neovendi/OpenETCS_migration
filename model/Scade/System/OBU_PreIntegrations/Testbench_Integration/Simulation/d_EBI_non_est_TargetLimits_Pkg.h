@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _d_EBI_non_est_TargetLimits_Pkg_H_
 #define _d_EBI_non_est_TargetLimits_Pkg_H_
@@ -32,13 +32,13 @@ typedef struct {
   L_internal_real_Type_SDM_Types_Pkg /* _L4/ */ _L4;
   ParabolaCurve_T_CalcBrakingCurves_types /* _L2/ */ _L2;
   V_internal_real_Type_SDM_Types_Pkg /* _L5/ */ _L5;
-  kcg_float64 /* _L6/ */ _L6;
-  kcg_float64 /* _L9/ */ _L9;
-  kcg_float64 /* _L10/ */ _L10;
-  kcg_float64 /* _L12/ */ _L12;
+  kcg_float32 /* _L6/ */ _L6;
+  kcg_float32 /* _L9/ */ _L9;
+  kcg_float32 /* _L10/ */ _L10;
+  kcg_float32 /* _L12/ */ _L12;
   T_trac_t_TargetLimits_Pkg /* _L13/ */ _L13;
-  kcg_float64 /* _L15/ */ _L15;
-  kcg_float64 /* _L14/ */ _L14;
+  kcg_float32 /* _L15/ */ _L15;
+  kcg_float32 /* _L14/ */ _L14;
   V_internal_real_Type_SDM_Types_Pkg /* _L16/ */ _L16;
   kcg_bool /* _L19/ */ _L19;
   T_internal_real_Type_SDM_Types_Pkg /* _L29/ */ _L29;
@@ -76,6 +76,6 @@ extern void d_EBI_non_est_init_TargetLimits_Pkg(
 #endif /* _d_EBI_non_est_TargetLimits_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** d_EBI_non_est_TargetLimits_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

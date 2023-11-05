@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _initiateSession_v2_MoRC_Pck_Subfunc_Pkg_H_
 #define _initiateSession_v2_MoRC_Pck_Subfunc_Pkg_H_
@@ -48,10 +48,11 @@ typedef struct {
   kcg_bool /* IfBlock1:else:else:then:_L9/ */ _L9_then_else_else_IfBlock1;
   NID_C /* IfBlock1:else:else:then:_L10/ */ _L10_then_else_else_IfBlock1;
   NID_RBC /* IfBlock1:else:else:then:_L11/ */ _L11_then_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:then:_L12/ */ _L12_then_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:then:_L12/ */ _L12_then_else_else_IfBlock1;
   RBC_Id_T_Common_Types_Pkg /* IfBlock1:else:else:then:_L8/ */ _L8_then_else_else_IfBlock1;
   m38_initiationOfACommunicationSession_T_RCM_MsgTypes_Pkg /* IfBlock1:else:else:then:_L1/ */ _L1_then_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:else:_L7/ */ _L7_else_else_else_IfBlock1;
+  kcg_int64 /* IfBlock1:else:else:else:_L8/ */ _L8_else_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:else:_L7/ */ _L7_else_else_else_IfBlock1;
   RBC_Id_T_Common_Types_Pkg /* IfBlock1:else:else:else:_L6/ */ _L6_else_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:else:_L1/ */ _L1_else_else_else_IfBlock1;
   sessionStatus_T_RCM_Session_Types_Pkg /* IfBlock1:else:then:_L1/ */ _L1_then_else_IfBlock1;
@@ -193,6 +194,6 @@ extern void initiateSession_v2_init_MoRC_Pck_Subfunc_Pkg(
 #endif /* _initiateSession_v2_MoRC_Pck_Subfunc_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** initiateSession_v2_MoRC_Pck_Subfunc_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

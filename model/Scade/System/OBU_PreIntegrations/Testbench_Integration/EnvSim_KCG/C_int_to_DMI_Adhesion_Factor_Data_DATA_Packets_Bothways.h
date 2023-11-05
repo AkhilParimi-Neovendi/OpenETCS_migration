@@ -26,9 +26,9 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg /* _L2/ */ _L2;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L3/ */ _L3;
   M_ADHESION /* _L6/ */ _L6;
   DMI_Adhesion_Factor_Data_int_array_T_DATA /* _L8/ */ _L8;
   kcg_bool /* _L10/ */ _L10;

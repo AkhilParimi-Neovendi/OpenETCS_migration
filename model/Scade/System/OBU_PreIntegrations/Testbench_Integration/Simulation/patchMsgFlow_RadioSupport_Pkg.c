@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -76,26 +76,26 @@ void patchMsgFlow_init_RadioSupport_Pkg(
   static kcg_size idx5;
 
   outC->_L35.Message.valid = kcg_true;
-  outC->_L35.Message.nid_message = kcg_lit_int64(0);
-  outC->_L35.Message.l_message = kcg_lit_int64(0);
-  outC->_L35.Message.t_train = kcg_lit_int64(0);
-  outC->_L35.Message.nid_engine = kcg_lit_int64(0);
-  outC->_L35.Message.field1 = kcg_lit_int64(0);
-  outC->_L35.Message.field2 = kcg_lit_int64(0);
-  outC->_L35.Message.field3 = kcg_lit_int64(0);
+  outC->_L35.Message.nid_message = kcg_lit_int32(0);
+  outC->_L35.Message.l_message = kcg_lit_int32(0);
+  outC->_L35.Message.t_train = kcg_lit_int32(0);
+  outC->_L35.Message.nid_engine = kcg_lit_int32(0);
+  outC->_L35.Message.field1 = kcg_lit_int32(0);
+  outC->_L35.Message.field2 = kcg_lit_int32(0);
+  outC->_L35.Message.field3 = kcg_lit_int32(0);
   for (idx = 0; idx < 50; idx++) {
-    outC->_L35.OptionalPackets[idx] = kcg_lit_int64(0);
+    outC->_L35.OptionalPackets[idx] = kcg_lit_int32(0);
   }
   outC->_L34.Message.valid = kcg_true;
-  outC->_L34.Message.nid_message = kcg_lit_int64(0);
-  outC->_L34.Message.l_message = kcg_lit_int64(0);
-  outC->_L34.Message.t_train = kcg_lit_int64(0);
-  outC->_L34.Message.nid_engine = kcg_lit_int64(0);
-  outC->_L34.Message.field1 = kcg_lit_int64(0);
-  outC->_L34.Message.field2 = kcg_lit_int64(0);
-  outC->_L34.Message.field3 = kcg_lit_int64(0);
+  outC->_L34.Message.nid_message = kcg_lit_int32(0);
+  outC->_L34.Message.l_message = kcg_lit_int32(0);
+  outC->_L34.Message.t_train = kcg_lit_int32(0);
+  outC->_L34.Message.nid_engine = kcg_lit_int32(0);
+  outC->_L34.Message.field1 = kcg_lit_int32(0);
+  outC->_L34.Message.field2 = kcg_lit_int32(0);
+  outC->_L34.Message.field3 = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 50; idx1++) {
-    outC->_L34.OptionalPackets[idx1] = kcg_lit_int64(0);
+    outC->_L34.OptionalPackets[idx1] = kcg_lit_int32(0);
   }
   outC->_L33 = kcg_true;
   outC->_L32 = kcg_true;
@@ -103,44 +103,44 @@ void patchMsgFlow_init_RadioSupport_Pkg(
   outC->_L30 = kcg_true;
   outC->_L21 = kcg_true;
   outC->_L22.valid = kcg_true;
-  outC->_L22.nid_message = kcg_lit_int64(0);
-  outC->_L22.l_message = kcg_lit_int64(0);
-  outC->_L22.t_train = kcg_lit_int64(0);
-  outC->_L22.nid_engine = kcg_lit_int64(0);
-  outC->_L22.field1 = kcg_lit_int64(0);
-  outC->_L22.field2 = kcg_lit_int64(0);
-  outC->_L22.field3 = kcg_lit_int64(0);
+  outC->_L22.nid_message = kcg_lit_int32(0);
+  outC->_L22.l_message = kcg_lit_int32(0);
+  outC->_L22.t_train = kcg_lit_int32(0);
+  outC->_L22.nid_engine = kcg_lit_int32(0);
+  outC->_L22.field1 = kcg_lit_int32(0);
+  outC->_L22.field2 = kcg_lit_int32(0);
+  outC->_L22.field3 = kcg_lit_int32(0);
   outC->_L25 = kcg_true;
   outC->_L26 = kcg_true;
   outC->_L27.Message.valid = kcg_true;
-  outC->_L27.Message.nid_message = kcg_lit_int64(0);
-  outC->_L27.Message.l_message = kcg_lit_int64(0);
-  outC->_L27.Message.t_train = kcg_lit_int64(0);
-  outC->_L27.Message.nid_engine = kcg_lit_int64(0);
-  outC->_L27.Message.field1 = kcg_lit_int64(0);
-  outC->_L27.Message.field2 = kcg_lit_int64(0);
-  outC->_L27.Message.field3 = kcg_lit_int64(0);
+  outC->_L27.Message.nid_message = kcg_lit_int32(0);
+  outC->_L27.Message.l_message = kcg_lit_int32(0);
+  outC->_L27.Message.t_train = kcg_lit_int32(0);
+  outC->_L27.Message.nid_engine = kcg_lit_int32(0);
+  outC->_L27.Message.field1 = kcg_lit_int32(0);
+  outC->_L27.Message.field2 = kcg_lit_int32(0);
+  outC->_L27.Message.field3 = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 50; idx2++) {
-    outC->_L27.OptionalPackets[idx2] = kcg_lit_int64(0);
+    outC->_L27.OptionalPackets[idx2] = kcg_lit_int32(0);
   }
-  outC->_L28 = kcg_lit_int64(0);
+  outC->_L28 = kcg_lit_int32(0);
   outC->_L19.Message.valid = kcg_true;
-  outC->_L19.Message.nid_message = kcg_lit_int64(0);
-  outC->_L19.Message.l_message = kcg_lit_int64(0);
-  outC->_L19.Message.t_train = kcg_lit_int64(0);
-  outC->_L19.Message.nid_engine = kcg_lit_int64(0);
-  outC->_L19.Message.field1 = kcg_lit_int64(0);
-  outC->_L19.Message.field2 = kcg_lit_int64(0);
-  outC->_L19.Message.field3 = kcg_lit_int64(0);
+  outC->_L19.Message.nid_message = kcg_lit_int32(0);
+  outC->_L19.Message.l_message = kcg_lit_int32(0);
+  outC->_L19.Message.t_train = kcg_lit_int32(0);
+  outC->_L19.Message.nid_engine = kcg_lit_int32(0);
+  outC->_L19.Message.field1 = kcg_lit_int32(0);
+  outC->_L19.Message.field2 = kcg_lit_int32(0);
+  outC->_L19.Message.field3 = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 50; idx3++) {
-    outC->_L19.OptionalPackets[idx3] = kcg_lit_int64(0);
+    outC->_L19.OptionalPackets[idx3] = kcg_lit_int32(0);
   }
   outC->_L18 = kcg_true;
   outC->_L17 = kcg_true;
   outC->_L16 = kcg_true;
-  outC->_L15 = kcg_lit_int64(0);
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
+  outC->_L15 = kcg_lit_int32(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
   outC->_L4 = M_LEVEL_Level_0;
   outC->_L5 = M_LEVEL_Level_0;
   outC->_L6 = kcg_true;
@@ -155,36 +155,36 @@ void patchMsgFlow_init_RadioSupport_Pkg(
   outC->_L12.newMode = kcg_true;
   outC->_L3 = kcg_true;
   outC->_L2.valid = kcg_true;
-  outC->_L2.nid_message = kcg_lit_int64(0);
-  outC->_L2.l_message = kcg_lit_int64(0);
-  outC->_L2.t_train = kcg_lit_int64(0);
-  outC->_L2.nid_engine = kcg_lit_int64(0);
-  outC->_L2.field1 = kcg_lit_int64(0);
-  outC->_L2.field2 = kcg_lit_int64(0);
-  outC->_L2.field3 = kcg_lit_int64(0);
+  outC->_L2.nid_message = kcg_lit_int32(0);
+  outC->_L2.l_message = kcg_lit_int32(0);
+  outC->_L2.t_train = kcg_lit_int32(0);
+  outC->_L2.nid_engine = kcg_lit_int32(0);
+  outC->_L2.field1 = kcg_lit_int32(0);
+  outC->_L2.field2 = kcg_lit_int32(0);
+  outC->_L2.field3 = kcg_lit_int32(0);
   outC->_L1.Message.valid = kcg_true;
-  outC->_L1.Message.nid_message = kcg_lit_int64(0);
-  outC->_L1.Message.l_message = kcg_lit_int64(0);
-  outC->_L1.Message.t_train = kcg_lit_int64(0);
-  outC->_L1.Message.nid_engine = kcg_lit_int64(0);
-  outC->_L1.Message.field1 = kcg_lit_int64(0);
-  outC->_L1.Message.field2 = kcg_lit_int64(0);
-  outC->_L1.Message.field3 = kcg_lit_int64(0);
+  outC->_L1.Message.nid_message = kcg_lit_int32(0);
+  outC->_L1.Message.l_message = kcg_lit_int32(0);
+  outC->_L1.Message.t_train = kcg_lit_int32(0);
+  outC->_L1.Message.nid_engine = kcg_lit_int32(0);
+  outC->_L1.Message.field1 = kcg_lit_int32(0);
+  outC->_L1.Message.field2 = kcg_lit_int32(0);
+  outC->_L1.Message.field3 = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 50; idx4++) {
-    outC->_L1.OptionalPackets[idx4] = kcg_lit_int64(0);
+    outC->_L1.OptionalPackets[idx4] = kcg_lit_int32(0);
   }
   outC->reset132 = kcg_true;
   outC->reset136 = kcg_true;
   outC->toRBC.Message.valid = kcg_true;
-  outC->toRBC.Message.nid_message = kcg_lit_int64(0);
-  outC->toRBC.Message.l_message = kcg_lit_int64(0);
-  outC->toRBC.Message.t_train = kcg_lit_int64(0);
-  outC->toRBC.Message.nid_engine = kcg_lit_int64(0);
-  outC->toRBC.Message.field1 = kcg_lit_int64(0);
-  outC->toRBC.Message.field2 = kcg_lit_int64(0);
-  outC->toRBC.Message.field3 = kcg_lit_int64(0);
+  outC->toRBC.Message.nid_message = kcg_lit_int32(0);
+  outC->toRBC.Message.l_message = kcg_lit_int32(0);
+  outC->toRBC.Message.t_train = kcg_lit_int32(0);
+  outC->toRBC.Message.nid_engine = kcg_lit_int32(0);
+  outC->toRBC.Message.field1 = kcg_lit_int32(0);
+  outC->toRBC.Message.field2 = kcg_lit_int32(0);
+  outC->toRBC.Message.field3 = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 50; idx5++) {
-    outC->toRBC.OptionalPackets[idx5] = kcg_lit_int64(0);
+    outC->toRBC.OptionalPackets[idx5] = kcg_lit_int32(0);
   }
 }
 #endif /* KCG_USER_DEFINED_INIT */
@@ -201,6 +201,6 @@ void patchMsgFlow_reset_RadioSupport_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** patchMsgFlow_RadioSupport_Pkg.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

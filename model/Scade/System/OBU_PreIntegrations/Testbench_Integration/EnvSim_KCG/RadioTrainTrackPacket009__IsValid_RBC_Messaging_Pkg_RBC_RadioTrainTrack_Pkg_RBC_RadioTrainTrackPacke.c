@@ -26,7 +26,7 @@ void RadioTrainTrackPacket009__IsValid_init_RBC_Messaging_Pkg_RBC_RadioTrainTrac
 {
   outC->_L2 = kcg_true;
   outC->_L1.valid = kcg_true;
-  outC->_L1.transitionInformation = kcg_lit_int64(0);
+  outC->_L1.transitionInformation = kcg_lit_int32(0);
   outC->outIsValid = kcg_true;
 }
 #endif /* KCG_USER_DEFINED_INIT */

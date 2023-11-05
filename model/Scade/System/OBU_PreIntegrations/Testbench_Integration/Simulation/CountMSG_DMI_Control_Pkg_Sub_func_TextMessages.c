@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -13,8 +13,8 @@ void CountMSG_DMI_Control_Pkg_Sub_func_TextMessages(
   array_char_30_5 *msg,
   outC_CountMSG_DMI_Control_Pkg_Sub_func_TextMessages *outC)
 {
-  outC->_L73 = kcg_lit_int64(0);
-  outC->_L67 = kcg_lit_int64(5);
+  outC->_L73 = kcg_lit_int32(0);
+  outC->_L67 = kcg_lit_int32(5);
   kcg_copy_array_char_30(
     &outC->_L238,
     (array_char_30 *) &cPlainText_single_DMI_Control_Pkg);
@@ -54,7 +54,7 @@ void CountMSG_DMI_Control_Pkg_Sub_func_TextMessages(
   else {
     outC->_L58 = outC->_L73;
   }
-  outC->_L46 = kcg_lit_int64(4);
+  outC->_L46 = kcg_lit_int32(4);
   kcg_copy_array_char_30(
     &outC->_L211,
     (array_char_30 *) &cPlainText_single_DMI_Control_Pkg);
@@ -189,7 +189,7 @@ void CountMSG_DMI_Control_Pkg_Sub_func_TextMessages(
   kcg_copy_array_char_30(&outC->_L78, &outC->_L79[1]);
   outC->_L80 = !kcg_comp_array_char_30(&outC->_L78, &outC->_L77);
   outC->_L81 = outC->_L165 & outC->_L80 & outC->_L92 & outC->_L95 & outC->_L100;
-  outC->_L42 = kcg_lit_int64(3);
+  outC->_L42 = kcg_lit_int32(3);
   /* _L39= */
   if (outC->_L171) {
     outC->_L39 = outC->_L42;
@@ -197,7 +197,7 @@ void CountMSG_DMI_Control_Pkg_Sub_func_TextMessages(
   else {
     outC->_L39 = outC->_L53;
   }
-  outC->_L32 = kcg_lit_int64(2);
+  outC->_L32 = kcg_lit_int32(2);
   /* _L24= */
   if (outC->_L81) {
     outC->_L24 = outC->_L32;
@@ -205,7 +205,7 @@ void CountMSG_DMI_Control_Pkg_Sub_func_TextMessages(
   else {
     outC->_L24 = outC->_L39;
   }
-  outC->_L22 = kcg_lit_int64(1);
+  outC->_L22 = kcg_lit_int32(1);
   /* _L9= */
   if (outC->_L122) {
     outC->_L9 = outC->_L22;
@@ -321,7 +321,7 @@ void CountMSG_init_DMI_Control_Pkg_Sub_func_TextMessages(
   static kcg_size idx98;
   static kcg_size idx99;
 
-  outC->_L53 = kcg_lit_int64(0);
+  outC->_L53 = kcg_lit_int32(0);
   for (idx = 0; idx < 30; idx++) {
     outC->_L250[idx] = ' ';
   }
@@ -622,22 +622,22 @@ void CountMSG_init_DMI_Control_Pkg_Sub_func_TextMessages(
   for (idx97 = 0; idx97 < 30; idx97++) {
     outC->_L74[idx97] = ' ';
   }
-  outC->_L73 = kcg_lit_int64(0);
-  outC->_L58 = kcg_lit_int64(0);
-  outC->_L67 = kcg_lit_int64(0);
-  outC->_L46 = kcg_lit_int64(0);
-  outC->_L39 = kcg_lit_int64(0);
-  outC->_L42 = kcg_lit_int64(0);
-  outC->_L24 = kcg_lit_int64(0);
-  outC->_L32 = kcg_lit_int64(0);
-  outC->_L22 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
+  outC->_L73 = kcg_lit_int32(0);
+  outC->_L58 = kcg_lit_int32(0);
+  outC->_L67 = kcg_lit_int32(0);
+  outC->_L46 = kcg_lit_int32(0);
+  outC->_L39 = kcg_lit_int32(0);
+  outC->_L42 = kcg_lit_int32(0);
+  outC->_L24 = kcg_lit_int32(0);
+  outC->_L32 = kcg_lit_int32(0);
+  outC->_L22 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
   for (idx99 = 0; idx99 < 5; idx99++) {
     for (idx98 = 0; idx98 < 30; idx98++) {
       outC->_L1[idx99][idx98] = ' ';
     }
   }
-  outC->num = kcg_lit_int64(0);
+  outC->num = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -651,6 +651,6 @@ void CountMSG_reset_DMI_Control_Pkg_Sub_func_TextMessages(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CountMSG_DMI_Control_Pkg_Sub_func_TextMessages.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

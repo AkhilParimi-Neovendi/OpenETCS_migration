@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _CalcA_Gradient_SDM_GradientAcceleration_Pkg_H_
 #define _CalcA_Gradient_SDM_GradientAcceleration_Pkg_H_
@@ -32,7 +32,7 @@ typedef struct {
   L_internal_real_Type_SDM_Types_Pkg /* _L5/ */ _L5;
   A_gradient_t_SDM_GradientAcceleration_types /* _L16/ */ _L16;
   trainData_T_TIU_Types_Pkg /* _L17/ */ _L17;
-  _99_array /* _L18/ */ _L18;
+  _97_array /* _L18/ */ _L18;
 } outC_CalcA_Gradient_SDM_GradientAcceleration_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -63,6 +63,6 @@ extern void CalcA_Gradient_init_SDM_GradientAcceleration_Pkg(
 #endif /* _CalcA_Gradient_SDM_GradientAcceleration_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CalcA_Gradient_SDM_GradientAcceleration_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

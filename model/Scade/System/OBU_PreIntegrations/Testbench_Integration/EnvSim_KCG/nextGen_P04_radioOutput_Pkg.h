@@ -23,10 +23,10 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   PT4_ErrorReporting_T_Packet_TrainTypes_Pkg /* _L1/ */ _L1;
   P004_TM_TrainToTrack /* _L2/ */ _L2;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L12/ */ _L12;
   kcg_bool /* _L34/ */ _L34;
   M_ERROR /* _L33/ */ _L33;
-  kcg_int64 /* _L38/ */ _L38;
+  kcg_int32 /* _L38/ */ _L38;
 } outC_nextGen_P04_radioOutput_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

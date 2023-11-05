@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _Normalize_Dangerpoint_TA_MA_new_H_
 #define _Normalize_Dangerpoint_TA_MA_new_H_
@@ -41,7 +41,7 @@ typedef struct {
   V_RELEASEDP /* _L11/ */ _L11;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L12/ */ _L12;
   D_DP /* _L13/ */ _L13;
-  kcg_int64 /* _L14/ */ _L14;
+  kcg_int32 /* _L14/ */ _L14;
   DP_or_OL_t_TrackAtlasTypes /* _L15/ */ _L15;
   DP_or_OL_t_TrackAtlasTypes /* _L16/ */ _L16;
 } outC_Normalize_Dangerpoint_TA_MA_new;
@@ -72,6 +72,6 @@ extern void Normalize_Dangerpoint_init_TA_MA_new(
 #endif /* _Normalize_Dangerpoint_TA_MA_new_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Normalize_Dangerpoint_TA_MA_new.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

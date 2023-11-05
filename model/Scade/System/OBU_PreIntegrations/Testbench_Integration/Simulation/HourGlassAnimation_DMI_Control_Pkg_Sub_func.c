@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -19,9 +19,9 @@ void HourGlassAnimation_DMI_Control_Pkg_Sub_func(
 {
   static kcg_bool noname;
 
-  outC->_L12 = kcg_lit_int64(40);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(10);
+  outC->_L12 = kcg_lit_int32(40);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(10);
   outC->_L1 = start;
   outC->_L2 = stop;
   outC->_L3 = actualtime;
@@ -32,7 +32,7 @@ void HourGlassAnimation_DMI_Control_Pkg_Sub_func(
     outC->_L2,
     outC->_L3,
     outC->_L15,
-    kcg_lit_int64(20),
+    kcg_lit_int32(20),
     &outC->Context_countDownTimer_1);
   outC->_L8 = outC->Context_countDownTimer_1.expired;
   outC->_L9 = outC->Context_countDownTimer_1.started;
@@ -47,8 +47,8 @@ void HourGlassAnimation_DMI_Control_Pkg_Sub_func(
     outC->_L13 = outC->_L5;
   }
   /* _L14=(pwlinear::Counter#1)/ */
-  Counter_pwlinear_int64(outC->_L13, kcg_false, &outC->Context_Counter_1);
-  outC->_L14 = outC->Context_Counter_1.Count_int64;
+  Counter_pwlinear_int32(outC->_L13, kcg_false, &outC->Context_Counter_1);
+  outC->_L14 = outC->Context_Counter_1.Count_int32;
   outC->_L7 = outC->_L14 % outC->_L12;
   outC->Output1 = outC->_L7;
   noname = outC->_L9;
@@ -59,21 +59,21 @@ void HourGlassAnimation_init_DMI_Control_Pkg_Sub_func(
   outC_HourGlassAnimation_DMI_Control_Pkg_Sub_func *outC)
 {
   outC->_L15 = kcg_true;
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
   outC->_L9 = kcg_true;
   outC->_L8 = kcg_true;
-  outC->_L7 = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(0);
   outC->_L6 = kcg_true;
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L1 = kcg_true;
   outC->_L2 = kcg_true;
-  outC->_L3 = kcg_lit_int64(0);
-  outC->Output1 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->Output1 = kcg_lit_int32(0);
   /* _L14=(pwlinear::Counter#1)/ */
-  Counter_init_pwlinear_int64(&outC->Context_Counter_1);
+  Counter_init_pwlinear_int32(&outC->Context_Counter_1);
   /* _L6=(digital::RisingEdge#1)/ */
   RisingEdge_init_digital(&outC->Context_RisingEdge_1);
   /* _L8=(MoRC_Pck::Utils::countDownTimer#1)/ */
@@ -86,7 +86,7 @@ void HourGlassAnimation_reset_DMI_Control_Pkg_Sub_func(
   outC_HourGlassAnimation_DMI_Control_Pkg_Sub_func *outC)
 {
   /* _L14=(pwlinear::Counter#1)/ */
-  Counter_reset_pwlinear_int64(&outC->Context_Counter_1);
+  Counter_reset_pwlinear_int32(&outC->Context_Counter_1);
   /* _L6=(digital::RisingEdge#1)/ */
   RisingEdge_reset_digital(&outC->Context_RisingEdge_1);
   /* _L8=(MoRC_Pck::Utils::countDownTimer#1)/ */
@@ -104,7 +104,7 @@ void kcg_save_SV_HourGlassAnimation_DMI_Control_Pkg_Sub_func(
   kcg_save_SV_RisingEdge_digital(
     &SV->Context_RisingEdge_1,
     &outC->Context_RisingEdge_1);
-  kcg_save_SV_Counter_pwlinear_int64(
+  kcg_save_SV_Counter_pwlinear_int32(
     &SV->Context_Counter_1,
     &outC->Context_Counter_1);
 }
@@ -119,7 +119,7 @@ void kcg_load_SV_HourGlassAnimation_DMI_Control_Pkg_Sub_func(
   kcg_load_SV_RisingEdge_digital(
     &outC->Context_RisingEdge_1,
     &SV->Context_RisingEdge_1);
-  kcg_load_SV_Counter_pwlinear_int64(
+  kcg_load_SV_Counter_pwlinear_int32(
     &outC->Context_Counter_1,
     &SV->Context_Counter_1);
 }
@@ -128,6 +128,6 @@ void kcg_load_SV_HourGlassAnimation_DMI_Control_Pkg_Sub_func(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** HourGlassAnimation_DMI_Control_Pkg_Sub_func.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -36,23 +36,23 @@ void C_P139_to_legacy_t_init_TM_conversions(
   outC->_L3 = kcg_true;
   outC->_L4 = Q_DIR_Reverse;
   outC->_L5 = Q_SCALE_10_cm_scale;
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
   outC->_L2.valid = kcg_true;
   outC->_L2.q_dir = Q_DIR_Reverse;
   outC->_L2.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L2.d_reverse = kcg_lit_int64(0);
-  outC->_L2.v_reverse = kcg_lit_int64(0);
+  outC->_L2.d_reverse = kcg_lit_int32(0);
+  outC->_L2.v_reverse = kcg_lit_int32(0);
   outC->_L1.valid = kcg_true;
   outC->_L1.q_dir = Q_DIR_Reverse;
   outC->_L1.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L1.d_reverse = kcg_lit_int64(0);
-  outC->_L1.v_reverse = kcg_lit_int64(0);
+  outC->_L1.d_reverse = kcg_lit_int32(0);
+  outC->_L1.v_reverse = kcg_lit_int32(0);
   outC->P139_legacy_out.valid = kcg_true;
   outC->P139_legacy_out.q_dir = Q_DIR_Reverse;
   outC->P139_legacy_out.q_scale = Q_SCALE_10_cm_scale;
-  outC->P139_legacy_out.d_reverse = kcg_lit_int64(0);
-  outC->P139_legacy_out.v_reverse = kcg_lit_int64(0);
+  outC->P139_legacy_out.d_reverse = kcg_lit_int32(0);
+  outC->P139_legacy_out.v_reverse = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -68,6 +68,6 @@ void C_P139_to_legacy_t_reset_TM_conversions(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P139_to_legacy_t_TM_conversions.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

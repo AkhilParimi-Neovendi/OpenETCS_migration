@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,9 +10,9 @@
 /* DATA::Variables::Cast_Int_to_DMI_trackConditionElement/ */
 void Cast_Int_to_DMI_trackConditionElement_DATA_Variables(
   /* d_trackcond_int/ */
-  kcg_int64 d_trackcond_int,
+  kcg_int32 d_trackcond_int,
   /* m_trackcond_int/ */
-  kcg_int64 m_trackcond_int,
+  kcg_int32 m_trackcond_int,
   outC_Cast_Int_to_DMI_trackConditionElement_DATA_Variables *outC)
 {
   outC->_L12 = m_trackcond_int;
@@ -38,14 +38,14 @@ void Cast_Int_to_DMI_trackConditionElement_DATA_Variables(
 void Cast_Int_to_DMI_trackConditionElement_init_DATA_Variables(
   outC_Cast_Int_to_DMI_trackConditionElement_DATA_Variables *outC)
 {
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
   outC->_L10 = M_TRACKCOND_Non_stopping_area_Initial_state_is_stopping_permitted;
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L8.d_trackcond = kcg_lit_int64(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L8.d_trackcond = kcg_lit_int32(0);
   outC->_L8.m_trackcond =
     M_TRACKCOND_Non_stopping_area_Initial_state_is_stopping_permitted;
-  outC->dmi_trackConditionElemen_ct.d_trackcond = kcg_lit_int64(0);
+  outC->dmi_trackConditionElemen_ct.d_trackcond = kcg_lit_int32(0);
   outC->dmi_trackConditionElemen_ct.m_trackcond =
     M_TRACKCOND_Non_stopping_area_Initial_state_is_stopping_permitted;
   /* _L9=(TM_conversions::CAST_Int_to_D_TRACKCOND#1)/ */
@@ -75,6 +75,6 @@ void Cast_Int_to_DMI_trackConditionElement_reset_DATA_Variables(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Cast_Int_to_DMI_trackConditionElement_DATA_Variables.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

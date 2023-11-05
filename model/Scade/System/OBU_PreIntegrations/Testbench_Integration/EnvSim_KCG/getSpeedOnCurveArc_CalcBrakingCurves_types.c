@@ -34,20 +34,20 @@ void getSpeedOnCurveArc_CalcBrakingCurves_types(
 void getSpeedOnCurveArc_init_CalcBrakingCurves_types(
   outC_getSpeedOnCurveArc_CalcBrakingCurves_types *outC)
 {
-  outC->_L11 = kcg_lit_float64(0.0);
-  outC->_L10 = kcg_lit_float64(0.0);
-  outC->_L9 = kcg_lit_float64(0.0);
-  outC->_L8 = kcg_lit_float64(0.0);
-  outC->_L7 = kcg_lit_float64(0.0);
-  outC->_L6 = kcg_lit_float64(0.0);
-  outC->_L5 = kcg_lit_float64(0.0);
-  outC->_L3 = kcg_lit_float64(0.0);
-  outC->_L2 = kcg_lit_float64(0.0);
-  outC->_L1 = kcg_lit_float64(0.0);
-  outC->_L4.distance = kcg_lit_float64(0.0);
-  outC->_L4.speed = kcg_lit_float64(0.0);
-  outC->_L4.acceleration = kcg_lit_float64(0.0);
-  outC->speed = kcg_lit_float64(0.0);
+  outC->_L11 = kcg_lit_float32(0.0);
+  outC->_L10 = kcg_lit_float32(0.0);
+  outC->_L9 = kcg_lit_float32(0.0);
+  outC->_L8 = kcg_lit_float32(0.0);
+  outC->_L7 = kcg_lit_float32(0.0);
+  outC->_L6 = kcg_lit_float32(0.0);
+  outC->_L5 = kcg_lit_float32(0.0);
+  outC->_L3 = kcg_lit_float32(0.0);
+  outC->_L2 = kcg_lit_float32(0.0);
+  outC->_L1 = kcg_lit_float32(0.0);
+  outC->_L4.distance = kcg_lit_float32(0.0);
+  outC->_L4.speed = kcg_lit_float32(0.0);
+  outC->_L4.acceleration = kcg_lit_float32(0.0);
+  outC->speed = kcg_lit_float32(0.0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

@@ -36,10 +36,10 @@ void nidBG_nidc_equal_init_CalculateTrainPosition_Pkg_BG_utilities_Pkg(
   outC->_L7 = kcg_true;
   outC->_L6 = kcg_true;
   outC->_L5 = kcg_true;
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
   outC->isEqual = kcg_true;
 }
 #endif /* KCG_USER_DEFINED_INIT */

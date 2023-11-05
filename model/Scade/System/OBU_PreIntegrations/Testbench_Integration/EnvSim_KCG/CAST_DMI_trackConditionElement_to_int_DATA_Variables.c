@@ -36,15 +36,15 @@ void CAST_DMI_trackConditionElement_to_int_DATA_Variables(
 void CAST_DMI_trackConditionElement_to_int_init_DATA_Variables(
   outC_CAST_DMI_trackConditionElement_to_int_DATA_Variables *outC)
 {
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->_L2 = M_TRACKCOND_Non_stopping_area_Initial_state_is_stopping_permitted;
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L1.d_trackcond = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L1.d_trackcond = kcg_lit_int32(0);
   outC->_L1.m_trackcond =
     M_TRACKCOND_Non_stopping_area_Initial_state_is_stopping_permitted;
-  outC->m_trackcond_int = kcg_lit_int64(0);
-  outC->d_trackcond_int = kcg_lit_int64(0);
+  outC->m_trackcond_int = kcg_lit_int32(0);
+  outC->d_trackcond_int = kcg_lit_int32(0);
   /* _L4=(TM_conversions::CAST_D_TRACKCOND_to_int#1)/ */
   CAST_D_TRACKCOND_to_int_init_TM_conversions(
     &outC->Context_CAST_D_TRACKCOND_to_int_1);

@@ -10,7 +10,7 @@
 /* TM_conversions::CAST_Int_to_N_PIG/ */
 void CAST_Int_to_N_PIG_TM_conversions(
   /* n_pig_int/ */
-  kcg_int64 n_pig_int,
+  kcg_int32 n_pig_int,
   outC_CAST_Int_to_N_PIG_TM_conversions *outC)
 {
   /* n_pig/ */
@@ -255,9 +255,9 @@ void CAST_Int_to_N_PIG_init_TM_conversions(
   outC_CAST_Int_to_N_PIG_TM_conversions *outC)
 {
   outC->_L4 = kcg_true;
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
   outC->error = kcg_true;
-  outC->n_pig_in = kcg_lit_int64(0);
+  outC->n_pig_in = kcg_lit_int32(0);
   outC->IfBlock1_clock = kcg_true;
   outC->_L3_then_else_IfBlock1 = kcg_true;
   outC->_L1_then_else_IfBlock1 = N_PIG_I_am_the_1st;

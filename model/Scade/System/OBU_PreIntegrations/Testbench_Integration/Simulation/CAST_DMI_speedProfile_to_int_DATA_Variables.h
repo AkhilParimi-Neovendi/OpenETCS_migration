@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _CAST_DMI_speedProfile_to_int_DATA_Variables_H_
 #define _CAST_DMI_speedProfile_to_int_DATA_Variables_H_
@@ -28,13 +28,13 @@ typedef struct {
   DMI_speedProfile_T_DMI_Types_Pkg /* _L1/ */ _L1;
   kcg_bool /* _L3/ */ _L3;
   DMI_SpeedProfileArray_T_DMI_Types_Pkg /* _L2/ */ _L2;
-  kcg_int64 /* _L4/ */ _L4;
-  array_int64_32 /* _L8/ */ _L8;
-  array_int64_32 /* _L7/ */ _L7;
-  array_int64_32 /* _L6/ */ _L6;
-  array_int64_32 /* _L5/ */ _L5;
+  kcg_int32 /* _L4/ */ _L4;
+  array_int32_32 /* _L8/ */ _L8;
+  array_int32_32 /* _L7/ */ _L7;
+  array_int32_32 /* _L6/ */ _L6;
+  array_int32_32 /* _L5/ */ _L5;
   P044_other_data_TM_TrainToTrack /* _L9/ */ _L9;
-  array_int64_129 /* _L10/ */ _L10;
+  array_int32_129 /* _L10/ */ _L10;
 } outC_CAST_DMI_speedProfile_to_int_DATA_Variables;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -59,6 +59,6 @@ extern void CAST_DMI_speedProfile_to_int_init_DATA_Variables(
 #endif /* _CAST_DMI_speedProfile_to_int_DATA_Variables_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_DMI_speedProfile_to_int_DATA_Variables.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

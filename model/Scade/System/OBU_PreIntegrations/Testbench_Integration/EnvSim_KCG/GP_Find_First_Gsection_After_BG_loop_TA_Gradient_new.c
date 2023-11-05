@@ -10,19 +10,19 @@
 /* TA_Gradient_new::GP_Find_First_Gsection_After_BG_loop/ */
 void GP_Find_First_Gsection_After_BG_loop_TA_Gradient_new(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* Acc/ */
-  kcg_int64 Acc,
+  kcg_int32 Acc,
   /* Profile_in/ */
   GradientProfile_t_TrackAtlasTypes *Profile_in,
   outC_GP_Find_First_Gsection_After_BG_loop_TA_Gradient_new *outC)
 {
-  static kcg_int64 noname;
+  static kcg_int32 noname;
 
-  outC->_L14 = kcg_lit_int64(1);
+  outC->_L14 = kcg_lit_int32(1);
   outC->_L5 = i;
   outC->_L13 = outC->_L5 - outC->_L14;
-  outC->_L16 = kcg_lit_int64(0);
+  outC->_L16 = kcg_lit_int32(0);
   outC->_L15 = outC->_L13 < outC->_L16;
   /* _L17= */
   if (outC->_L15) {
@@ -31,9 +31,9 @@ void GP_Find_First_Gsection_After_BG_loop_TA_Gradient_new(
   else {
     outC->_L17 = outC->_L13;
   }
-  outC->_L12 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
   kcg_copy_GradientProfile_t_TrackAtlasTypes(&outC->_L7, Profile_in);
-  if ((kcg_lit_int64(0) <= outC->_L5) & (outC->_L5 < kcg_lit_int64(50))) {
+  if ((kcg_lit_int32(0) <= outC->_L5) & (outC->_L5 < kcg_lit_int32(50))) {
     kcg_copy_Gradient_section_t_TrackAtlasTypes(&outC->_L9, &outC->_L7[outC->_L5]);
   }
   else {
@@ -55,29 +55,29 @@ void GP_Find_First_Gsection_After_BG_loop_init_TA_Gradient_new(
 {
   static kcg_size idx;
 
-  outC->_L17 = kcg_lit_int64(0);
-  outC->_L16 = kcg_lit_int64(0);
+  outC->_L17 = kcg_lit_int32(0);
+  outC->_L16 = kcg_lit_int32(0);
   outC->_L15 = kcg_true;
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L12 = kcg_lit_int64(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L12 = kcg_lit_int32(0);
   outC->_L11 = kcg_true;
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L10 = kcg_lit_int32(0);
   outC->_L9.valid = kcg_true;
-  outC->_L9.Loc_Absolute = kcg_lit_int64(0);
-  outC->_L9.Loc_LRBG = kcg_lit_int64(0);
-  outC->_L9.Gradient = kcg_lit_int64(0);
-  outC->_L9.L_Gradient = kcg_lit_int64(0);
+  outC->_L9.Loc_Absolute = kcg_lit_int32(0);
+  outC->_L9.Loc_LRBG = kcg_lit_int32(0);
+  outC->_L9.Gradient = kcg_lit_int32(0);
+  outC->_L9.L_Gradient = kcg_lit_int32(0);
   for (idx = 0; idx < 50; idx++) {
     outC->_L7[idx].valid = kcg_true;
-    outC->_L7[idx].Loc_Absolute = kcg_lit_int64(0);
-    outC->_L7[idx].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L7[idx].Gradient = kcg_lit_int64(0);
-    outC->_L7[idx].L_Gradient = kcg_lit_int64(0);
+    outC->_L7[idx].Loc_Absolute = kcg_lit_int32(0);
+    outC->_L7[idx].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L7[idx].Gradient = kcg_lit_int32(0);
+    outC->_L7[idx].L_Gradient = kcg_lit_int32(0);
   }
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->Pointer = kcg_lit_int64(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->Pointer = kcg_lit_int32(0);
   outC->cont = kcg_true;
 }
 #endif /* KCG_USER_DEFINED_INIT */

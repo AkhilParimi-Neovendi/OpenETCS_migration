@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -32,7 +32,7 @@ void maintainTrainProperties_EVC_MEM_Support_Pkg(
   kcg_copy_LocWithInAcc_T_Obu_BasicTypes_Pkg(
     &outC->_L23,
     (LocWithInAcc_T_Obu_BasicTypes_Pkg *) &cCenterDetectionAccuracyDefault);
-  outC->_L22 = kcg_lit_int64(100);
+  outC->_L22 = kcg_lit_int32(100);
   kcg_copy_trainData_T_TIU_Types_Pkg(&outC->_L18, trainData);
   outC->_L19 = outC->_L18.trainLength;
   outC->_L21 = outC->_L19 / outC->_L22;
@@ -79,106 +79,106 @@ void maintainTrainProperties_init_EVC_MEM_Support_Pkg(
   static kcg_size idx;
   static kcg_size idx1;
 
-  outC->_L27 = kcg_lit_int64(0);
-  outC->_L26.nominal = kcg_lit_int64(0);
-  outC->_L26.d_min = kcg_lit_int64(0);
-  outC->_L26.d_max = kcg_lit_int64(0);
-  outC->_L25.nominal = kcg_lit_int64(0);
-  outC->_L25.d_min = kcg_lit_int64(0);
-  outC->_L25.d_max = kcg_lit_int64(0);
-  outC->_L24.nominal = kcg_lit_int64(0);
-  outC->_L24.d_min = kcg_lit_int64(0);
-  outC->_L24.d_max = kcg_lit_int64(0);
-  outC->_L23.nominal = kcg_lit_int64(0);
-  outC->_L23.d_min = kcg_lit_int64(0);
-  outC->_L23.d_max = kcg_lit_int64(0);
-  outC->_L22 = kcg_lit_int64(0);
-  outC->_L21 = kcg_lit_int64(0);
-  outC->_L19 = kcg_lit_int64(0);
+  outC->_L27 = kcg_lit_int32(0);
+  outC->_L26.nominal = kcg_lit_int32(0);
+  outC->_L26.d_min = kcg_lit_int32(0);
+  outC->_L26.d_max = kcg_lit_int32(0);
+  outC->_L25.nominal = kcg_lit_int32(0);
+  outC->_L25.d_min = kcg_lit_int32(0);
+  outC->_L25.d_max = kcg_lit_int32(0);
+  outC->_L24.nominal = kcg_lit_int32(0);
+  outC->_L24.d_min = kcg_lit_int32(0);
+  outC->_L24.d_max = kcg_lit_int32(0);
+  outC->_L23.nominal = kcg_lit_int32(0);
+  outC->_L23.d_min = kcg_lit_int32(0);
+  outC->_L23.d_max = kcg_lit_int32(0);
+  outC->_L22 = kcg_lit_int32(0);
+  outC->_L21 = kcg_lit_int32(0);
+  outC->_L19 = kcg_lit_int32(0);
   outC->_L18.valid = kcg_true;
   outC->_L18.acknowledgedByDriver = kcg_true;
   outC->_L18.trainCategory =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->_L18.cantDeficientcy = NC_CDTRAIN_Cant_Deficiency_80_mm;
-  outC->_L18.trainLength = kcg_lit_int64(0);
-  outC->_L18.brakePerctage = kcg_lit_int64(0);
-  outC->_L18.maxTrainSpeed = kcg_lit_int64(0);
+  outC->_L18.trainLength = kcg_lit_int32(0);
+  outC->_L18.brakePerctage = kcg_lit_int32(0);
+  outC->_L18.maxTrainSpeed = kcg_lit_int32(0);
   outC->_L18.loadingGauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L18.axleLoadCategory = M_AXLELOADCAT_A;
   outC->_L18.airtightSystem = M_AIRTIGHT_Not_fitted;
-  outC->_L18.axleNumber = kcg_lit_int64(0);
-  outC->_L18.numberNationalSystems = kcg_lit_int64(0);
+  outC->_L18.axleNumber = kcg_lit_int32(0);
+  outC->_L18.numberNationalSystems = kcg_lit_int32(0);
   for (idx = 0; idx < 5; idx++) {
-    outC->_L18.nationSystems[idx] = kcg_lit_int64(0);
+    outC->_L18.nationSystems[idx] = kcg_lit_int32(0);
   }
-  outC->_L18.numberTractionSystems = kcg_lit_int64(0);
+  outC->_L18.numberTractionSystems = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 4; idx1++) {
     outC->_L18.tractionSystem[idx1].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->_L18.tractionSystem[idx1].nid_ctraction = kcg_lit_int64(0);
+    outC->_L18.tractionSystem[idx1].nid_ctraction = kcg_lit_int32(0);
   }
-  outC->_L17.nid_engine = kcg_lit_int64(0);
-  outC->_L17.nid_operational = kcg_lit_int64(0);
-  outC->_L17.l_train = kcg_lit_int64(0);
-  outC->_L17.d_baliseAntenna_2_frontend.nominal = kcg_lit_int64(0);
-  outC->_L17.d_baliseAntenna_2_frontend.d_min = kcg_lit_int64(0);
-  outC->_L17.d_baliseAntenna_2_frontend.d_max = kcg_lit_int64(0);
-  outC->_L17.d_frontend_2_rearend.nominal = kcg_lit_int64(0);
-  outC->_L17.d_frontend_2_rearend.d_min = kcg_lit_int64(0);
-  outC->_L17.d_frontend_2_rearend.d_max = kcg_lit_int64(0);
-  outC->_L17.locationAccuracy_DefaultValue.nominal = kcg_lit_int64(0);
-  outC->_L17.locationAccuracy_DefaultValue.d_min = kcg_lit_int64(0);
-  outC->_L17.locationAccuracy_DefaultValue.d_max = kcg_lit_int64(0);
-  outC->_L17.centerDetectionAcc_DefaultValue.nominal = kcg_lit_int64(0);
-  outC->_L17.centerDetectionAcc_DefaultValue.d_min = kcg_lit_int64(0);
-  outC->_L17.centerDetectionAcc_DefaultValue.d_max = kcg_lit_int64(0);
-  outC->_L16 = kcg_lit_int64(0);
-  outC->_L15.nid_engine = kcg_lit_int64(0);
-  outC->_L15.nid_operational = kcg_lit_int64(0);
-  outC->_L15.l_train = kcg_lit_int64(0);
-  outC->_L15.d_baliseAntenna_2_frontend.nominal = kcg_lit_int64(0);
-  outC->_L15.d_baliseAntenna_2_frontend.d_min = kcg_lit_int64(0);
-  outC->_L15.d_baliseAntenna_2_frontend.d_max = kcg_lit_int64(0);
-  outC->_L15.d_frontend_2_rearend.nominal = kcg_lit_int64(0);
-  outC->_L15.d_frontend_2_rearend.d_min = kcg_lit_int64(0);
-  outC->_L15.d_frontend_2_rearend.d_max = kcg_lit_int64(0);
-  outC->_L15.locationAccuracy_DefaultValue.nominal = kcg_lit_int64(0);
-  outC->_L15.locationAccuracy_DefaultValue.d_min = kcg_lit_int64(0);
-  outC->_L15.locationAccuracy_DefaultValue.d_max = kcg_lit_int64(0);
-  outC->_L15.centerDetectionAcc_DefaultValue.nominal = kcg_lit_int64(0);
-  outC->_L15.centerDetectionAcc_DefaultValue.d_min = kcg_lit_int64(0);
-  outC->_L15.centerDetectionAcc_DefaultValue.d_max = kcg_lit_int64(0);
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
+  outC->_L17.nid_engine = kcg_lit_int32(0);
+  outC->_L17.nid_operational = kcg_lit_int32(0);
+  outC->_L17.l_train = kcg_lit_int32(0);
+  outC->_L17.d_baliseAntenna_2_frontend.nominal = kcg_lit_int32(0);
+  outC->_L17.d_baliseAntenna_2_frontend.d_min = kcg_lit_int32(0);
+  outC->_L17.d_baliseAntenna_2_frontend.d_max = kcg_lit_int32(0);
+  outC->_L17.d_frontend_2_rearend.nominal = kcg_lit_int32(0);
+  outC->_L17.d_frontend_2_rearend.d_min = kcg_lit_int32(0);
+  outC->_L17.d_frontend_2_rearend.d_max = kcg_lit_int32(0);
+  outC->_L17.locationAccuracy_DefaultValue.nominal = kcg_lit_int32(0);
+  outC->_L17.locationAccuracy_DefaultValue.d_min = kcg_lit_int32(0);
+  outC->_L17.locationAccuracy_DefaultValue.d_max = kcg_lit_int32(0);
+  outC->_L17.centerDetectionAcc_DefaultValue.nominal = kcg_lit_int32(0);
+  outC->_L17.centerDetectionAcc_DefaultValue.d_min = kcg_lit_int32(0);
+  outC->_L17.centerDetectionAcc_DefaultValue.d_max = kcg_lit_int32(0);
+  outC->_L16 = kcg_lit_int32(0);
+  outC->_L15.nid_engine = kcg_lit_int32(0);
+  outC->_L15.nid_operational = kcg_lit_int32(0);
+  outC->_L15.l_train = kcg_lit_int32(0);
+  outC->_L15.d_baliseAntenna_2_frontend.nominal = kcg_lit_int32(0);
+  outC->_L15.d_baliseAntenna_2_frontend.d_min = kcg_lit_int32(0);
+  outC->_L15.d_baliseAntenna_2_frontend.d_max = kcg_lit_int32(0);
+  outC->_L15.d_frontend_2_rearend.nominal = kcg_lit_int32(0);
+  outC->_L15.d_frontend_2_rearend.d_min = kcg_lit_int32(0);
+  outC->_L15.d_frontend_2_rearend.d_max = kcg_lit_int32(0);
+  outC->_L15.locationAccuracy_DefaultValue.nominal = kcg_lit_int32(0);
+  outC->_L15.locationAccuracy_DefaultValue.d_min = kcg_lit_int32(0);
+  outC->_L15.locationAccuracy_DefaultValue.d_max = kcg_lit_int32(0);
+  outC->_L15.centerDetectionAcc_DefaultValue.nominal = kcg_lit_int32(0);
+  outC->_L15.centerDetectionAcc_DefaultValue.d_min = kcg_lit_int32(0);
+  outC->_L15.centerDetectionAcc_DefaultValue.d_max = kcg_lit_int32(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
   outC->_L11 = kcg_true;
   outC->_L10.valid = kcg_true;
-  outC->_L10.systemTime = kcg_lit_int64(0);
-  outC->_L10.trainRunningNumber = kcg_lit_int64(0);
-  outC->UpdatedtrainProperties.nid_engine = kcg_lit_int64(0);
-  outC->UpdatedtrainProperties.nid_operational = kcg_lit_int64(0);
-  outC->UpdatedtrainProperties.l_train = kcg_lit_int64(0);
+  outC->_L10.systemTime = kcg_lit_int32(0);
+  outC->_L10.trainRunningNumber = kcg_lit_int32(0);
+  outC->UpdatedtrainProperties.nid_engine = kcg_lit_int32(0);
+  outC->UpdatedtrainProperties.nid_operational = kcg_lit_int32(0);
+  outC->UpdatedtrainProperties.l_train = kcg_lit_int32(0);
   outC->UpdatedtrainProperties.d_baliseAntenna_2_frontend.nominal =
-    kcg_lit_int64(0);
-  outC->UpdatedtrainProperties.d_baliseAntenna_2_frontend.d_min = kcg_lit_int64(
+    kcg_lit_int32(0);
+  outC->UpdatedtrainProperties.d_baliseAntenna_2_frontend.d_min = kcg_lit_int32(
       0);
-  outC->UpdatedtrainProperties.d_baliseAntenna_2_frontend.d_max = kcg_lit_int64(
+  outC->UpdatedtrainProperties.d_baliseAntenna_2_frontend.d_max = kcg_lit_int32(
       0);
-  outC->UpdatedtrainProperties.d_frontend_2_rearend.nominal = kcg_lit_int64(0);
-  outC->UpdatedtrainProperties.d_frontend_2_rearend.d_min = kcg_lit_int64(0);
-  outC->UpdatedtrainProperties.d_frontend_2_rearend.d_max = kcg_lit_int64(0);
+  outC->UpdatedtrainProperties.d_frontend_2_rearend.nominal = kcg_lit_int32(0);
+  outC->UpdatedtrainProperties.d_frontend_2_rearend.d_min = kcg_lit_int32(0);
+  outC->UpdatedtrainProperties.d_frontend_2_rearend.d_max = kcg_lit_int32(0);
   outC->UpdatedtrainProperties.locationAccuracy_DefaultValue.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->UpdatedtrainProperties.locationAccuracy_DefaultValue.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->UpdatedtrainProperties.locationAccuracy_DefaultValue.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->UpdatedtrainProperties.centerDetectionAcc_DefaultValue.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->UpdatedtrainProperties.centerDetectionAcc_DefaultValue.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->UpdatedtrainProperties.centerDetectionAcc_DefaultValue.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -194,6 +194,6 @@ void maintainTrainProperties_reset_EVC_MEM_Support_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** maintainTrainProperties_EVC_MEM_Support_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

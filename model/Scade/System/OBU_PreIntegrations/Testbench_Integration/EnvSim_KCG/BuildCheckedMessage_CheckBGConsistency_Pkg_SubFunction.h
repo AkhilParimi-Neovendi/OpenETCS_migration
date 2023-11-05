@@ -29,7 +29,7 @@ typedef struct {
   ReceivedMessage_T_Common_Types_Pkg /* _L40/ */ _L40;
   kcg_bool /* _L44/ */ _L44;
   TelegramArray_T_BG_Types_Pkg /* _L43/ */ _L43;
-  kcg_int64 /* _L42/ */ _L42;
+  kcg_int32 /* _L42/ */ _L42;
   centerOfBalisePosition_T_BG_Types_Pkg /* _L41/ */ _L41;
   RadioMetadata_T_Common_Types_Pkg /* _L46/ */ _L46;
   BG_Header_T_BG_Types_Pkg /* _L59/ */ _L59;

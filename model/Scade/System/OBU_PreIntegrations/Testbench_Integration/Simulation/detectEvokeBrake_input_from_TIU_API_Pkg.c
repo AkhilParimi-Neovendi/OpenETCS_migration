@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -83,10 +83,10 @@ void detectEvokeBrake_input_from_TIU_API_Pkg(
   last_EB_RevokedByDriver = outC->EB_RevokedByDriver;
   kcg_copy_Brake_pressure_value_T_TIU_Types_Pkg(&outC->_L7, brakeController);
   outC->_L8 = outC->_L7.pressure;
-  outC->_L12 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
   outC->_L11 = outC->_L12 == outC->_L8;
   outC->isMin = outC->_L11;
-  outC->_L10 = kcg_lit_int64(180000);
+  outC->_L10 = kcg_lit_int32(180000);
   outC->_L9 = outC->_L8 >= outC->_L10;
   outC->isMax = outC->_L9;
   outC->_L5 = M_MODE_Post_Trip;
@@ -284,13 +284,13 @@ void detectEvokeBrake_input_from_TIU_API_Pkg(
 void detectEvokeBrake_init_input_from_TIU_API_Pkg(
   outC_detectEvokeBrake_input_from_TIU_API_Pkg *outC)
 {
-  outC->_L12 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
   outC->_L11 = kcg_true;
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L10 = kcg_lit_int32(0);
   outC->_L9 = kcg_true;
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L8 = kcg_lit_int32(0);
   outC->_L7.valid = kcg_true;
-  outC->_L7.pressure = kcg_lit_int64(0);
+  outC->_L7.pressure = kcg_lit_int32(0);
   outC->_L5 = M_MODE_Full_Supervision;
   outC->_L4 = kcg_true;
   outC->_L3 = M_MODE_Full_Supervision;
@@ -351,6 +351,6 @@ void kcg_load_SV_detectEvokeBrake_input_from_TIU_API_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** detectEvokeBrake_input_from_TIU_API_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

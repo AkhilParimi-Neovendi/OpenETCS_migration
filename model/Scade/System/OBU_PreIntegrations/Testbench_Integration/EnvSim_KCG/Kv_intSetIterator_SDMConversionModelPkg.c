@@ -58,13 +58,13 @@ void Kv_intSetIterator_init_SDMConversionModelPkg(
   outC->_L3 = kcg_true;
   outC->_L2.valid = kcg_true;
   outC->_L2.q_nvkvintset = Q_NVKVINTSET_Freight_trains;
-  outC->_L2.a_nvp12 = kcg_lit_float64(0.0);
-  outC->_L2.a_nvp23 = kcg_lit_float64(0.0);
+  outC->_L2.a_nvp12 = kcg_lit_float32(0.0);
+  outC->_L2.a_nvp23 = kcg_lit_float32(0.0);
   for (idx = 0; idx < 7; idx++) {
     outC->_L2.nvkintArray[idx].valid = kcg_true;
-    outC->_L2.nvkintArray[idx].v_nvkvint = kcg_lit_int64(0);
-    outC->_L2.nvkintArray[idx].m_nvkvint12 = kcg_lit_float64(0.0);
-    outC->_L2.nvkintArray[idx].m_nvkvint23 = kcg_lit_float64(0.0);
+    outC->_L2.nvkintArray[idx].v_nvkvint = kcg_lit_int32(0);
+    outC->_L2.nvkintArray[idx].m_nvkvint12 = kcg_lit_float32(0.0);
+    outC->_L2.nvkintArray[idx].m_nvkvint23 = kcg_lit_float32(0.0);
   }
   outC->_L1 = kcg_true;
   outC->akku_out = kcg_true;

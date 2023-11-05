@@ -28,24 +28,24 @@ void No_Radio_Packets_init_RadioLib(outC_No_Radio_Packets_RadioLib *outC)
   kcg_size idx3;
 
   for (idx = 0; idx < 30; idx++) {
-    outC->_L30.PacketHeaders[idx].nid_packet = kcg_lit_int64(0);
+    outC->_L30.PacketHeaders[idx].nid_packet = kcg_lit_int32(0);
     outC->_L30.PacketHeaders[idx].q_dir = Q_DIR_Reverse;
     outC->_L30.PacketHeaders[idx].valid = kcg_true;
-    outC->_L30.PacketHeaders[idx].startAddress = kcg_lit_int64(0);
-    outC->_L30.PacketHeaders[idx].endAddress = kcg_lit_int64(0);
+    outC->_L30.PacketHeaders[idx].startAddress = kcg_lit_int32(0);
+    outC->_L30.PacketHeaders[idx].endAddress = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 500; idx1++) {
-    outC->_L30.PacketData[idx1] = kcg_lit_int64(0);
+    outC->_L30.PacketData[idx1] = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 30; idx2++) {
-    outC->Radio_packets_out.PacketHeaders[idx2].nid_packet = kcg_lit_int64(0);
+    outC->Radio_packets_out.PacketHeaders[idx2].nid_packet = kcg_lit_int32(0);
     outC->Radio_packets_out.PacketHeaders[idx2].q_dir = Q_DIR_Reverse;
     outC->Radio_packets_out.PacketHeaders[idx2].valid = kcg_true;
-    outC->Radio_packets_out.PacketHeaders[idx2].startAddress = kcg_lit_int64(0);
-    outC->Radio_packets_out.PacketHeaders[idx2].endAddress = kcg_lit_int64(0);
+    outC->Radio_packets_out.PacketHeaders[idx2].startAddress = kcg_lit_int32(0);
+    outC->Radio_packets_out.PacketHeaders[idx2].endAddress = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 500; idx3++) {
-    outC->Radio_packets_out.PacketData[idx3] = kcg_lit_int64(0);
+    outC->Radio_packets_out.PacketData[idx3] = kcg_lit_int32(0);
   }
 }
 #endif /* KCG_USER_DEFINED_INIT */

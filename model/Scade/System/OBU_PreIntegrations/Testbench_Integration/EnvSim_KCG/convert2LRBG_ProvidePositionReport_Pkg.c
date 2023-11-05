@@ -17,7 +17,7 @@ void convert2LRBG_ProvidePositionReport_Pkg(
 {
   outC->_L2 = nid_bg;
   outC->_L1 = nid_c;
-  outC->_L4 = kcg_lit_int64(100000);
+  outC->_L4 = kcg_lit_int32(100000);
   outC->_L3 = outC->_L4 * outC->_L1;
   outC->_L5 = outC->_L3 + outC->_L2;
   outC->nid_lrbg = outC->_L5;
@@ -27,12 +27,12 @@ void convert2LRBG_ProvidePositionReport_Pkg(
 void convert2LRBG_init_ProvidePositionReport_Pkg(
   outC_convert2LRBG_ProvidePositionReport_Pkg *outC)
 {
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->nid_lrbg = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->nid_lrbg = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

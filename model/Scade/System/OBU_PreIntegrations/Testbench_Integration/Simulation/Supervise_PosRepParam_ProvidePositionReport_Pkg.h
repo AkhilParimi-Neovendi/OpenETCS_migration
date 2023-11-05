@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _Supervise_PosRepParam_ProvidePositionReport_Pkg_H_
 #define _Supervise_PosRepParam_ProvidePositionReport_Pkg_H_
@@ -47,7 +47,7 @@ typedef struct {
   M_LOC /* _L15/ */ _L15;
   kcg_bool /* _L16/ */ _L16;
   kcg_bool /* _L17/ */ _L17;
-  kcg_int64 /* _L18/ */ _L18;
+  kcg_int32 /* _L18/ */ _L18;
 } outC_Supervise_PosRepParam_ProvidePositionReport_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -97,6 +97,6 @@ extern void kcg_load_SV_Supervise_PosRepParam_ProvidePositionReport_Pkg(
 #endif /* _Supervise_PosRepParam_ProvidePositionReport_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Supervise_PosRepParam_ProvidePositionReport_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

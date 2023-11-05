@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -30,17 +30,17 @@ void C_P041_fs_struct_to_array_init_TM_lib_internal(
   static kcg_size idx;
   static kcg_size idx1;
 
-  outC->_L11 = kcg_lit_int64(0);
+  outC->_L11 = kcg_lit_int32(0);
   for (idx = 0; idx < 3; idx++) {
-    outC->_L10[idx] = kcg_lit_int64(0);
+    outC->_L10[idx] = kcg_lit_int32(0);
   }
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L1.M_LEVELTR = kcg_lit_int64(0);
-  outC->_L1.NID_NTC = kcg_lit_int64(0);
-  outC->_L1.L_ACKLEVELTR = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L1.M_LEVELTR = kcg_lit_int32(0);
+  outC->_L1.NID_NTC = kcg_lit_int32(0);
+  outC->_L1.L_ACKLEVELTR = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 3; idx1++) {
-    outC->section_arrays[idx1] = kcg_lit_int64(0);
+    outC->section_arrays[idx1] = kcg_lit_int32(0);
   }
 }
 #endif /* KCG_USER_DEFINED_INIT */
@@ -57,6 +57,6 @@ void C_P041_fs_struct_to_array_reset_TM_lib_internal(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P041_fs_struct_to_array_TM_lib_internal.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

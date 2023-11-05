@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -39,7 +39,7 @@ void SSP_Normalize_Profile_TA_SSP_new(
     kcg_copy_StaticSpeedProfile_t_TrackAtlasTypes(&acc, &outC->_L3);
     /* _L3=(TA_SSP_new::SSP_Normalize_Profile_loop#1)/ */
     SSP_Normalize_Profile_loop_TA_SSP_new(
-      /* _L3= */(kcg_int64) idx2,
+      /* _L3= */(kcg_int32) idx2,
       &acc,
       outC->_L4[idx2],
       outC->_L6[idx2],
@@ -65,33 +65,33 @@ void SSP_Normalize_Profile_init_TA_SSP_new(
   static kcg_size idx5;
 
   for (idx1 = 0; idx1 < 50; idx1++) {
-    outC->_L6[idx1] = kcg_lit_int64(0);
+    outC->_L6[idx1] = kcg_lit_int32(0);
   }
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 50; idx2++) {
-    outC->_L4[idx2] = kcg_lit_int64(0);
+    outC->_L4[idx2] = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 50; idx3++) {
     outC->_L3[idx3].valid = kcg_true;
-    outC->_L3[idx3].d_static_abs = kcg_lit_int64(0);
-    outC->_L3[idx3].d_static_LRBG = kcg_lit_int64(0);
+    outC->_L3[idx3].d_static_abs = kcg_lit_int32(0);
+    outC->_L3[idx3].d_static_LRBG = kcg_lit_int32(0);
     outC->_L3[idx3].q_train_length_corr = kcg_true;
-    outC->_L3[idx3].v_static = kcg_lit_int64(0);
+    outC->_L3[idx3].v_static = kcg_lit_int32(0);
   }
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 50; idx4++) {
     outC->_L1[idx4].valid = kcg_true;
-    outC->_L1[idx4].d_static_abs = kcg_lit_int64(0);
-    outC->_L1[idx4].d_static_LRBG = kcg_lit_int64(0);
+    outC->_L1[idx4].d_static_abs = kcg_lit_int32(0);
+    outC->_L1[idx4].d_static_LRBG = kcg_lit_int32(0);
     outC->_L1[idx4].q_train_length_corr = kcg_true;
-    outC->_L1[idx4].v_static = kcg_lit_int64(0);
+    outC->_L1[idx4].v_static = kcg_lit_int32(0);
   }
   for (idx5 = 0; idx5 < 50; idx5++) {
     outC->ProfileNormalized_LRBG[idx5].valid = kcg_true;
-    outC->ProfileNormalized_LRBG[idx5].d_static_abs = kcg_lit_int64(0);
-    outC->ProfileNormalized_LRBG[idx5].d_static_LRBG = kcg_lit_int64(0);
+    outC->ProfileNormalized_LRBG[idx5].d_static_abs = kcg_lit_int32(0);
+    outC->ProfileNormalized_LRBG[idx5].d_static_LRBG = kcg_lit_int32(0);
     outC->ProfileNormalized_LRBG[idx5].q_train_length_corr = kcg_true;
-    outC->ProfileNormalized_LRBG[idx5].v_static = kcg_lit_int64(0);
+    outC->ProfileNormalized_LRBG[idx5].v_static = kcg_lit_int32(0);
   }
   for (idx = 0; idx < 50; idx++) {
     /* _L3=(TA_SSP_new::SSP_Normalize_Profile_loop#1)/ */
@@ -120,6 +120,6 @@ void SSP_Normalize_Profile_reset_TA_SSP_new(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** SSP_Normalize_Profile_TA_SSP_new.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

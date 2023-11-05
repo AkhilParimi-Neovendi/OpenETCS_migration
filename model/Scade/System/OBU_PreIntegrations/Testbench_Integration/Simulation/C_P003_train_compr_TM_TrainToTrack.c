@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -52,7 +52,7 @@ void C_P003_train_compr_TM_TrainToTrack(
   outC->_L68[0] = outC->_L91;
   outC->_L68[1] = outC->_L70;
   outC->_L68[2] = outC->_L71;
-  kcg_copy_array_int64_3(&outC->_L90[0], &outC->_L68);
+  kcg_copy_array_int32_3(&outC->_L90[0], &outC->_L68);
   kcg_copy_P003_nid_radio_list_int_t_TM_TrainToTrack(&outC->_L90[3], &outC->_L89);
   kcg_copy_P003_TrainTrack_int_TM_TrainToTrack(&outC->P003_int, &outC->_L90);
 }
@@ -68,35 +68,35 @@ void C_P003_train_compr_init_TM_TrainToTrack(
   static kcg_size idx4;
   static kcg_size idx5;
 
-  outC->_L91 = kcg_lit_int64(0);
+  outC->_L91 = kcg_lit_int32(0);
   for (idx = 0; idx < 8; idx++) {
-    outC->_L90[idx] = kcg_lit_int64(0);
+    outC->_L90[idx] = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 5; idx1++) {
-    outC->_L89[idx1] = kcg_lit_int64(0);
+    outC->_L89[idx1] = kcg_lit_int32(0);
   }
-  outC->_L71 = kcg_lit_int64(0);
-  outC->_L70 = kcg_lit_int64(0);
-  outC->_L69 = kcg_lit_int64(0);
+  outC->_L71 = kcg_lit_int32(0);
+  outC->_L70 = kcg_lit_int32(0);
+  outC->_L69 = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 3; idx2++) {
-    outC->_L68[idx2] = kcg_lit_int64(0);
+    outC->_L68[idx2] = kcg_lit_int32(0);
   }
   outC->_L2 = kcg_true;
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 5; idx3++) {
-    outC->_L6[idx3] = kcg_lit_int64(0);
+    outC->_L6[idx3] = kcg_lit_int32(0);
   }
   outC->_L1.valid = kcg_true;
-  outC->_L1.nid_packet = kcg_lit_int64(0);
-  outC->_L1.l_packet = kcg_lit_int64(0);
-  outC->_L1.n_iter = kcg_lit_int64(0);
+  outC->_L1.nid_packet = kcg_lit_int32(0);
+  outC->_L1.l_packet = kcg_lit_int32(0);
+  outC->_L1.n_iter = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 5; idx4++) {
-    outC->_L1.nid_radio[idx4] = kcg_lit_int64(0);
+    outC->_L1.nid_radio[idx4] = kcg_lit_int32(0);
   }
   for (idx5 = 0; idx5 < 8; idx5++) {
-    outC->P003_int[idx5] = kcg_lit_int64(0);
+    outC->P003_int[idx5] = kcg_lit_int32(0);
   }
   /* _L71=(TM_conversions::CAST_N_ITER_to_int#1)/ */
   CAST_N_ITER_to_int_init_TM_conversions(&outC->Context_CAST_N_ITER_to_int_1);
@@ -139,6 +139,6 @@ void C_P003_train_compr_reset_TM_TrainToTrack(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P003_train_compr_TM_TrainToTrack.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

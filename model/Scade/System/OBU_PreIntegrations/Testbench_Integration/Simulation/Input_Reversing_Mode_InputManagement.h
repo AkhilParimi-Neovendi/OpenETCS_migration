@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _Input_Reversing_Mode_InputManagement_H_
 #define _Input_Reversing_Mode_InputManagement_H_
@@ -40,8 +40,8 @@ typedef struct {
   V_REVERSE /* _L6/ */ _L6;
   T_Reversing_Data_Level_And_Mode_Types_Pkg /* _L1/ */ _L1;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L15/ */ _L15;
-  kcg_int64 /* _L16/ */ _L16;
-  kcg_int64 /* _L17/ */ _L17;
+  kcg_int32 /* _L16/ */ _L16;
+  kcg_int32 /* _L17/ */ _L17;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L18/ */ _L18;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L19/ */ _L19;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L20/ */ _L20;
@@ -73,6 +73,6 @@ extern void Input_Reversing_Mode_init_InputManagement(
 #endif /* _Input_Reversing_Mode_InputManagement_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Input_Reversing_Mode_InputManagement.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -43,18 +43,18 @@ void CAST_DMI_EVC_Radio_Net_Data_to_int1_init_DATA_Packets_EVC_to_DMI(
   static kcg_size idx1;
 
   outC->_L8.valid = kcg_true;
-  outC->_L8.system_clock = kcg_lit_int64(0);
-  outC->_L8.nid_mn = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
+  outC->_L8.system_clock = kcg_lit_int32(0);
+  outC->_L8.nid_mn = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
   for (idx = 0; idx < 3; idx++) {
-    outC->_L5[idx] = kcg_lit_int64(0);
+    outC->_L5[idx] = kcg_lit_int32(0);
   }
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L4 = kcg_true;
   for (idx1 = 0; idx1 < 3; idx1++) {
-    outC->dmi_evc_radio_net_data_int[idx1] = kcg_lit_int64(0);
+    outC->dmi_evc_radio_net_data_int[idx1] = kcg_lit_int32(0);
   }
   /* _L6=(TM_conversions::CAST_NID_MN_to_int#1)/ */
   CAST_NID_MN_to_int_init_TM_conversions(&outC->Context_CAST_NID_MN_to_int_1);
@@ -79,6 +79,6 @@ void CAST_DMI_EVC_Radio_Net_Data_to_int1_reset_DATA_Packets_EVC_to_DMI(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_DMI_EVC_Radio_Net_Data_to_int1_DATA_Packets_EVC_to_DMI.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

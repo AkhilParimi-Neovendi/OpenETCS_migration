@@ -21,16 +21,16 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* @1/Output1/ */ Output1_NumericToInt64_1_int32;
+  kcg_int32 /* @1/Output1/ */ Output1_NumericToInt64_1_int32;
   kcg_int32 /* @1/Input1/ */ Input1_NumericToInt64_1_int32;
-  kcg_int64 /* @1/_L2/ */ _L2_NumericToInt64_1_int32;
+  kcg_int32 /* @1/_L2/ */ _L2_NumericToInt64_1_int32;
   kcg_int32 /* @1/_L1/ */ _L1_NumericToInt64_1_int32;
   kcg_int32 /* _L1/ */ _L1;
   kcg_int32 /* _L5/ */ _L5;
   kcg_bool /* _L4/ */ _L4;
   kcg_int32 /* _L3/ */ _L3;
   kcg_bool /* _L2/ */ _L2;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L6/ */ _L6;
 } outC_CAST_Int_to_NID_RADIO_TM_conversions;
 
 /* ===========  node initialization and cycle functions  =========== */

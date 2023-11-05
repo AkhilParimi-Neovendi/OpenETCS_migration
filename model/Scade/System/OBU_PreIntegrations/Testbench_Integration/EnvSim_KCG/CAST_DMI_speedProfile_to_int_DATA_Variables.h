@@ -28,13 +28,13 @@ typedef struct {
   DMI_speedProfile_T_DMI_Types_Pkg /* _L1/ */ _L1;
   kcg_bool /* _L3/ */ _L3;
   DMI_SpeedProfileArray_T_DMI_Types_Pkg /* _L2/ */ _L2;
-  kcg_int64 /* _L4/ */ _L4;
-  array_int64_32 /* _L8/ */ _L8;
-  array_int64_32 /* _L7/ */ _L7;
-  array_int64_32 /* _L6/ */ _L6;
-  array_int64_32 /* _L5/ */ _L5;
+  kcg_int32 /* _L4/ */ _L4;
+  array_int32_32 /* _L8/ */ _L8;
+  array_int32_32 /* _L7/ */ _L7;
+  array_int32_32 /* _L6/ */ _L6;
+  array_int32_32 /* _L5/ */ _L5;
   P044_other_data_TM_TrainToTrack /* _L9/ */ _L9;
-  array_int64_129 /* _L10/ */ _L10;
+  array_int32_129 /* _L10/ */ _L10;
 } outC_CAST_DMI_speedProfile_to_int_DATA_Variables;
 
 /* ===========  node initialization and cycle functions  =========== */

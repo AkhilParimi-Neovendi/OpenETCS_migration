@@ -10,7 +10,7 @@
 /* TA_SSP_new::SSP_Normalize_Profile_loop/ */
 void SSP_Normalize_Profile_loop_TA_SSP_new(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* ProfileIn/ */
   StaticSpeedProfile_t_TrackAtlasTypes *ProfileIn,
   /* pos_BG/ */
@@ -23,7 +23,7 @@ void SSP_Normalize_Profile_loop_TA_SSP_new(
 
   outC->_L1 = i;
   kcg_copy_StaticSpeedProfile_t_TrackAtlasTypes(&outC->_L2, ProfileIn);
-  if ((kcg_lit_int64(0) <= outC->_L1) & (outC->_L1 < kcg_lit_int64(50))) {
+  if ((kcg_lit_int32(0) <= outC->_L1) & (outC->_L1 < kcg_lit_int32(50))) {
     kcg_copy_StaticSpeedSection_t_TrackAtlasTypes(
       &outC->_L4,
       &outC->_L2[outC->_L1]);
@@ -40,7 +40,7 @@ void SSP_Normalize_Profile_loop_TA_SSP_new(
   outC->_L46 = train_length;
   outC->_L47 = i;
   outC->_L48 = outC->_L4.v_static;
-  outC->_L11 = kcg_lit_int64(0);
+  outC->_L11 = kcg_lit_int32(0);
   outC->_L3 = pos_BG;
   outC->_L38 = outC->_L4.d_static_abs;
   outC->_L9 = outC->_L38 - outC->_L3;
@@ -78,7 +78,7 @@ void SSP_Normalize_Profile_loop_TA_SSP_new(
     outC->_L7.d_static_LRBG = outC->_L45;
   }
   kcg_copy_StaticSpeedProfile_t_TrackAtlasTypes(&outC->_L39, &outC->_L2);
-  if ((kcg_lit_int64(0) <= outC->_L40) & (outC->_L40 < kcg_lit_int64(50))) {
+  if ((kcg_lit_int32(0) <= outC->_L40) & (outC->_L40 < kcg_lit_int32(50))) {
     kcg_copy_StaticSpeedSection_t_TrackAtlasTypes(
       &outC->_L39[outC->_L40],
       &outC->_L7);
@@ -97,55 +97,55 @@ void SSP_Normalize_Profile_loop_init_TA_SSP_new(
   static kcg_size idx2;
 
   outC->_L50.valid = kcg_true;
-  outC->_L50.d_static_abs = kcg_lit_int64(0);
-  outC->_L50.d_static_LRBG = kcg_lit_int64(0);
+  outC->_L50.d_static_abs = kcg_lit_int32(0);
+  outC->_L50.d_static_LRBG = kcg_lit_int32(0);
   outC->_L50.q_train_length_corr = kcg_true;
-  outC->_L50.v_static = kcg_lit_int64(0);
+  outC->_L50.v_static = kcg_lit_int32(0);
   outC->_L49 = kcg_true;
-  outC->_L48 = kcg_lit_int64(0);
-  outC->_L47 = kcg_lit_int64(0);
-  outC->_L46 = kcg_lit_int64(0);
-  outC->_L45 = kcg_lit_int64(0);
+  outC->_L48 = kcg_lit_int32(0);
+  outC->_L47 = kcg_lit_int32(0);
+  outC->_L46 = kcg_lit_int32(0);
+  outC->_L45 = kcg_lit_int32(0);
   outC->_L44 = kcg_true;
-  outC->_L40 = kcg_lit_int64(0);
+  outC->_L40 = kcg_lit_int32(0);
   for (idx = 0; idx < 50; idx++) {
     outC->_L39[idx].valid = kcg_true;
-    outC->_L39[idx].d_static_abs = kcg_lit_int64(0);
-    outC->_L39[idx].d_static_LRBG = kcg_lit_int64(0);
+    outC->_L39[idx].d_static_abs = kcg_lit_int32(0);
+    outC->_L39[idx].d_static_LRBG = kcg_lit_int32(0);
     outC->_L39[idx].q_train_length_corr = kcg_true;
-    outC->_L39[idx].v_static = kcg_lit_int64(0);
+    outC->_L39[idx].v_static = kcg_lit_int32(0);
   }
-  outC->_L38 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
+  outC->_L38 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
   outC->_L7.valid = kcg_true;
-  outC->_L7.d_static_abs = kcg_lit_int64(0);
-  outC->_L7.d_static_LRBG = kcg_lit_int64(0);
+  outC->_L7.d_static_abs = kcg_lit_int32(0);
+  outC->_L7.d_static_LRBG = kcg_lit_int32(0);
   outC->_L7.q_train_length_corr = kcg_true;
-  outC->_L7.v_static = kcg_lit_int64(0);
+  outC->_L7.v_static = kcg_lit_int32(0);
   outC->_L5 = kcg_true;
   outC->_L4.valid = kcg_true;
-  outC->_L4.d_static_abs = kcg_lit_int64(0);
-  outC->_L4.d_static_LRBG = kcg_lit_int64(0);
+  outC->_L4.d_static_abs = kcg_lit_int32(0);
+  outC->_L4.d_static_LRBG = kcg_lit_int32(0);
   outC->_L4.q_train_length_corr = kcg_true;
-  outC->_L4.v_static = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L4.v_static = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 50; idx1++) {
     outC->_L2[idx1].valid = kcg_true;
-    outC->_L2[idx1].d_static_abs = kcg_lit_int64(0);
-    outC->_L2[idx1].d_static_LRBG = kcg_lit_int64(0);
+    outC->_L2[idx1].d_static_abs = kcg_lit_int32(0);
+    outC->_L2[idx1].d_static_LRBG = kcg_lit_int32(0);
     outC->_L2[idx1].q_train_length_corr = kcg_true;
-    outC->_L2[idx1].v_static = kcg_lit_int64(0);
+    outC->_L2[idx1].v_static = kcg_lit_int32(0);
   }
-  outC->_L1 = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
   outC->every = kcg_true;
   for (idx2 = 0; idx2 < 50; idx2++) {
     outC->ProfileNormalized_LRBG[idx2].valid = kcg_true;
-    outC->ProfileNormalized_LRBG[idx2].d_static_abs = kcg_lit_int64(0);
-    outC->ProfileNormalized_LRBG[idx2].d_static_LRBG = kcg_lit_int64(0);
+    outC->ProfileNormalized_LRBG[idx2].d_static_abs = kcg_lit_int32(0);
+    outC->ProfileNormalized_LRBG[idx2].d_static_LRBG = kcg_lit_int32(0);
     outC->ProfileNormalized_LRBG[idx2].q_train_length_corr = kcg_true;
-    outC->ProfileNormalized_LRBG[idx2].v_static = kcg_lit_int64(0);
+    outC->ProfileNormalized_LRBG[idx2].v_static = kcg_lit_int32(0);
   }
   /* _L45=(TA_Lib_internal::TrainLength_Correction#1)/ */
   TrainLength_Correction_init_TA_Lib_internal(

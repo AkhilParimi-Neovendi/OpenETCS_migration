@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _CheckMandatoryVariablesAndMA_CheckEuroradioMessage_H_
 #define _CheckMandatoryVariablesAndMA_CheckEuroradioMessage_H_
@@ -181,7 +181,7 @@ typedef struct {
   kcg_bool /* IfBlock1:else:then:_L2/ */ _L2_then_else_IfBlock1;
   RadioMetadata_T_Common_Types_Pkg /* IfBlock1:else:then:_L13/ */ _L13_then_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L14/ */ _L14_then_else_IfBlock1;
-  kcg_int64 /* nid_message/ */ nid_message;
+  kcg_int32 /* nid_message/ */ nid_message;
   RadioMetadata_T_Common_Types_Pkg /* radioMetadata/ */ radioMetadata;
   ReceivedMessage_T_Common_Types_Pkg /* _L1/ */ _L1;
   NID_MESSAGE /* _L2/ */ _L2;
@@ -210,6 +210,6 @@ extern void CheckMandatoryVariablesAndMA_init_CheckEuroradioMessage(
 #endif /* _CheckMandatoryVariablesAndMA_CheckEuroradioMessage_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CheckMandatoryVariablesAndMA_CheckEuroradioMessage.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

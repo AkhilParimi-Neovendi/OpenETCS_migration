@@ -23,18 +23,18 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   kcg_bool /* _L2/ */ _L2;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   kcg_bool /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
 } outC_Exception12RejectIfTextMessageAckPending_InformationFilter_Pkg_FirstFilter;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* InformationFilter_Pkg::FirstFilter::Exception12RejectIfTextMessageAckPending/ */
 extern void Exception12RejectIfTextMessageAckPending_InformationFilter_Pkg_FirstFilter(
   /* inCurrentTextMessageId/ */
-  kcg_int64 inCurrentTextMessageId,
+  kcg_int32 inCurrentTextMessageId,
   /* inLastAckTextMessageId/ */
-  kcg_int64 inLastAckTextMessageId,
+  kcg_int32 inLastAckTextMessageId,
   outC_Exception12RejectIfTextMessageAckPending_InformationFilter_Pkg_FirstFilter *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

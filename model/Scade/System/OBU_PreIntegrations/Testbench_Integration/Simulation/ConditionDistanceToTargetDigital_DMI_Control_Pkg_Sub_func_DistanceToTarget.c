@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -52,29 +52,29 @@ void ConditionDistanceToTargetDigital_init_DMI_Control_Pkg_Sub_func_DistanceToTa
   outC->_L4 = M_MODE_Full_Supervision;
   outC->_L5 = M_MODE_Full_Supervision;
   outC->_L6.valid = kcg_true;
-  outC->_L6.system_clock = kcg_lit_int64(0);
-  outC->_L6.v_train = kcg_lit_int64(0);
-  outC->_L6.location_front_train = kcg_lit_int64(0);
-  outC->_L6.location_brake_target = kcg_lit_int64(0);
-  outC->_L6.v_target = kcg_lit_int64(0);
-  outC->_L6.v_permitted = kcg_lit_int64(0);
-  outC->_L6.v_release = kcg_lit_int64(0);
-  outC->_L6.location_brake_curve_starting_point = kcg_lit_int64(0);
-  outC->_L6.v_intervention = kcg_lit_int64(0);
+  outC->_L6.system_clock = kcg_lit_int32(0);
+  outC->_L6.v_train = kcg_lit_int32(0);
+  outC->_L6.location_front_train = kcg_lit_int32(0);
+  outC->_L6.location_brake_target = kcg_lit_int32(0);
+  outC->_L6.v_target = kcg_lit_int32(0);
+  outC->_L6.v_permitted = kcg_lit_int32(0);
+  outC->_L6.v_release = kcg_lit_int32(0);
+  outC->_L6.location_brake_curve_starting_point = kcg_lit_int32(0);
+  outC->_L6.v_intervention = kcg_lit_int32(0);
   outC->_L6.mode = M_MODE_Full_Supervision;
   outC->_L6.level.level = M_LEVEL_Level_0;
-  outC->_L6.level.nid_stm = kcg_lit_int64(0);
-  outC->_L6.nid_c = kcg_lit_int64(0);
+  outC->_L6.level.nid_stm = kcg_lit_int32(0);
+  outC->_L6.nid_c = kcg_lit_int32(0);
   outC->_L6.nid_c_valid = kcg_true;
   outC->_L6.m_warning = supDis_normal_DMI_Types_Pkg;
   outC->_L6.sup_status = CSM_DMI_Types_Pkg;
-  outC->_L6.location_LOA = kcg_lit_int64(0);
-  outC->_L6.v_LOA = kcg_lit_int64(0);
-  outC->_L6.location_KP_Balise_Track = kcg_lit_int64(0);
-  outC->_L6.distance_KP_Balise = kcg_lit_int64(0);
-  outC->_L6.distance_to_TSA = kcg_lit_int64(0);
+  outC->_L6.location_LOA = kcg_lit_int32(0);
+  outC->_L6.v_LOA = kcg_lit_int32(0);
+  outC->_L6.location_KP_Balise_Track = kcg_lit_int32(0);
+  outC->_L6.distance_KP_Balise = kcg_lit_int32(0);
+  outC->_L6.distance_to_TSA = kcg_lit_int32(0);
   outC->_L6.radioConnectionStatus = conn_unknown_API_RadioCommunication_Pkg;
-  outC->_L6.distanceIndicationPoint = kcg_lit_int64(0);
+  outC->_L6.distanceIndicationPoint = kcg_lit_int32(0);
   outC->_L7 = kcg_true;
   outC->_L8 = kcg_true;
   outC->_L9 = M_MODE_Full_Supervision;
@@ -95,6 +95,6 @@ void ConditionDistanceToTargetDigital_reset_DMI_Control_Pkg_Sub_func_DistanceToT
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ConditionDistanceToTargetDigital_DMI_Control_Pkg_Sub_func_DistanceToTarget.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

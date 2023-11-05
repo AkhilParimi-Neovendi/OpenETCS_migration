@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _GP_Convert_P21_to_DistanceProfile_TA_Gradient_new_H_
 #define _GP_Convert_P21_to_DistanceProfile_TA_Gradient_new_H_
@@ -27,8 +27,8 @@ typedef struct {
   P021_OBU_sectionlist_enum_T_TM /* _L71/ */ _L71;
   Q_SCALE /* _L65/ */ _L65;
   P021_OBU_T_TM /* _L63/ */ _L63;
-  _16_array /* _L74/ */ _L74;
-  _59_array /* _L76/ */ _L76;
+  _15_array /* _L74/ */ _L74;
+  _81_array /* _L76/ */ _L76;
   GradientProfile_t_TrackAtlasTypes /* _L77/ */ _L77;
   GradientProfile_t_TrackAtlasTypes /* _L83/ */ _L83;
 } outC_GP_Convert_P21_to_DistanceProfile_TA_Gradient_new;
@@ -55,6 +55,6 @@ extern void GP_Convert_P21_to_DistanceProfile_init_TA_Gradient_new(
 #endif /* _GP_Convert_P21_to_DistanceProfile_TA_Gradient_new_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** GP_Convert_P21_to_DistanceProfile_TA_Gradient_new.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

@@ -15,7 +15,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* outTriggerId/ */ outTriggerId;
+  kcg_int32 /* outTriggerId/ */ outTriggerId;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -34,22 +34,22 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   NID_LRBG /* _L2/ */ _L2;
-  kcg_float64 /* _L3/ */ _L3;
-  kcg_int64 /* _L35/ */ _L35;
-  kcg_int64 /* _L36/ */ _L36;
+  kcg_float32 /* _L3/ */ _L3;
+  kcg_int32 /* _L35/ */ _L35;
+  kcg_int32 /* _L36/ */ _L36;
   T_TRAIN /* _L37/ */ _L37;
-  kcg_int64 /* _L38/ */ _L38;
-  kcg_int64 /* _L39/ */ _L39;
-  kcg_int64 /* _L40/ */ _L40;
-  kcg_int64 /* _L41/ */ _L41;
-  kcg_int64 /* _L46/ */ _L46;
-  kcg_int64 /* _L47/ */ _L47;
-  kcg_int64 /* _L48/ */ _L48;
-  kcg_int64 /* _L49/ */ _L49;
-  kcg_int64 /* _L50/ */ _L50;
-  kcg_int64 /* _L52/ */ _L52;
+  kcg_int32 /* _L38/ */ _L38;
+  kcg_int32 /* _L39/ */ _L39;
+  kcg_int32 /* _L40/ */ _L40;
+  kcg_int32 /* _L41/ */ _L41;
+  kcg_int32 /* _L46/ */ _L46;
+  kcg_int32 /* _L47/ */ _L47;
+  kcg_int32 /* _L48/ */ _L48;
+  kcg_int32 /* _L49/ */ _L49;
+  kcg_int32 /* _L50/ */ _L50;
+  kcg_int32 /* _L52/ */ _L52;
 } outC_UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_Bijlmer_RBC_Scenario_Pk;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -58,9 +58,9 @@ extern void UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessa
   /* inLRBG/ */
   NID_LRBG inLRBG,
   /* inDistanceToLRBG/ */
-  kcg_float64 inDistanceToLRBG,
+  kcg_float32 inDistanceToLRBG,
   /* inTriggerId/ */
-  kcg_int64 inTriggerId,
+  kcg_int32 inTriggerId,
   /* inRBCTime/ */
   T_TRAIN inRBCTime,
   outC_UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_Bijlmer_RBC_Scenario_Pk *outC);

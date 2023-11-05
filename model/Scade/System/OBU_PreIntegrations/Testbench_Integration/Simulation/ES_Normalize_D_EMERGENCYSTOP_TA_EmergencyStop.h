@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _ES_Normalize_D_EMERGENCYSTOP_TA_EmergencyStop_H_
 #define _ES_Normalize_D_EMERGENCYSTOP_TA_EmergencyStop_H_
@@ -22,15 +22,15 @@ typedef struct {
   Q_SCALE /* WhenBlock1: */ WhenBlock1_clock;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* WhenBlock1:Q_SCALE_10_cm_scale:_L1/ */ _L1_Q_SCALE_10_cm_scale_WhenBlock1;
-  kcg_int64 /* WhenBlock1:Q_SCALE_10_cm_scale:_L2/ */ _L2_Q_SCALE_10_cm_scale_WhenBlock1;
+  kcg_int32 /* WhenBlock1:Q_SCALE_10_cm_scale:_L1/ */ _L1_Q_SCALE_10_cm_scale_WhenBlock1;
+  kcg_int32 /* WhenBlock1:Q_SCALE_10_cm_scale:_L2/ */ _L2_Q_SCALE_10_cm_scale_WhenBlock1;
   D_EMERGENCYSTOP /* WhenBlock1:Q_SCALE_10_cm_scale:_L3/ */ _L3_Q_SCALE_10_cm_scale_WhenBlock1;
   D_EMERGENCYSTOP /* WhenBlock1:Q_SCALE_1_m_scale:_L1/ */ _L1_Q_SCALE_1_m_scale_WhenBlock1;
-  kcg_int64 /* WhenBlock1:Q_SCALE_1_m_scale:_L2/ */ _L2_Q_SCALE_1_m_scale_WhenBlock1;
-  kcg_int64 /* WhenBlock1:Q_SCALE_1_m_scale:_L3/ */ _L3_Q_SCALE_1_m_scale_WhenBlock1;
+  kcg_int32 /* WhenBlock1:Q_SCALE_1_m_scale:_L2/ */ _L2_Q_SCALE_1_m_scale_WhenBlock1;
+  kcg_int32 /* WhenBlock1:Q_SCALE_1_m_scale:_L3/ */ _L3_Q_SCALE_1_m_scale_WhenBlock1;
   D_EMERGENCYSTOP /* WhenBlock1:Q_SCALE_10_m_scale:_L1/ */ _L1_Q_SCALE_10_m_scale_WhenBlock1;
-  kcg_int64 /* WhenBlock1:Q_SCALE_10_m_scale:_L2/ */ _L2_Q_SCALE_10_m_scale_WhenBlock1;
-  kcg_int64 /* WhenBlock1:Q_SCALE_10_m_scale:_L3/ */ _L3_Q_SCALE_10_m_scale_WhenBlock1;
+  kcg_int32 /* WhenBlock1:Q_SCALE_10_m_scale:_L2/ */ _L2_Q_SCALE_10_m_scale_WhenBlock1;
+  kcg_int32 /* WhenBlock1:Q_SCALE_10_m_scale:_L3/ */ _L3_Q_SCALE_10_m_scale_WhenBlock1;
 } outC_ES_Normalize_D_EMERGENCYSTOP_TA_EmergencyStop;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -57,6 +57,6 @@ extern void ES_Normalize_D_EMERGENCYSTOP_init_TA_EmergencyStop(
 #endif /* _ES_Normalize_D_EMERGENCYSTOP_TA_EmergencyStop_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ES_Normalize_D_EMERGENCYSTOP_TA_EmergencyStop.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

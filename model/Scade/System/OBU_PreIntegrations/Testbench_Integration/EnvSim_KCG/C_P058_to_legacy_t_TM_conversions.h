@@ -33,8 +33,8 @@ typedef struct {
   Q_SCALE /* _L5/ */ _L5;
   Q_DIR /* _L4/ */ _L4;
   kcg_bool /* _L3/ */ _L3;
-  kcg_int64 /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L11/ */ _L11;
+  kcg_int32 /* _L12/ */ _L12;
   IterPacket58List_T_Packet_Types_Pkg /* _L20/ */ _L20;
   _93_array /* _L22/ */ _L22;
 } outC_C_P058_to_legacy_t_TM_conversions;

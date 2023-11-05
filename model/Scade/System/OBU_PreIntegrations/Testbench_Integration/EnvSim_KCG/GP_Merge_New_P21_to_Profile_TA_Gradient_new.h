@@ -26,7 +26,7 @@ typedef struct {
   kcg_bool every;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   GradientProfile_t_TrackAtlasTypes /* _L5/ */ _L5;
   M_TrainTrack_compressed_packets_T_TM_radio_messages /* _L9/ */ _L9;
   GradientProfile_t_TrackAtlasTypes /* _L14/ */ _L14;

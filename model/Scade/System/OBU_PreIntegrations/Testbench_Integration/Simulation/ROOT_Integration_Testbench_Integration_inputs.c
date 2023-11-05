@@ -1,27 +1,27 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #include "ROOT_Integration_Testbench_Integration.h"
 
 /* GUI_reset/ */
 kcg_bool GUI_reset;
 /* GUI_targetSpeed/ */
-kcg_float64 GUI_targetSpeed;
+kcg_float32 GUI_targetSpeed;
 /* GUI_traction/ */
-kcg_float64 GUI_traction;
+kcg_float32 GUI_traction;
 /* GUI_brake/ */
-kcg_float64 GUI_brake;
+kcg_float32 GUI_brake;
 /* GUI_initialPosition/ */
-kcg_float64 GUI_initialPosition;
+kcg_float32 GUI_initialPosition;
 /* GUI_initialVelocity/ */
-kcg_float64 GUI_initialVelocity;
+kcg_float32 GUI_initialVelocity;
 /* GUI_mode/ */
-kcg_int64 GUI_mode;
+kcg_int32 GUI_mode;
 /* GUI_level/ */
-kcg_int64 GUI_level;
+kcg_int32 GUI_level;
 /* GUI_mobileHWStatus/ */
-kcg_int64 GUI_mobileHWStatus;
+kcg_int32 GUI_mobileHWStatus;
 /* GUI_openDesk/ */
 kcg_bool GUI_openDesk;
 /* DMI_MousePressed/ */
@@ -79,6 +79,6 @@ kcg_bool DMI_ScrollDown;
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ROOT_Integration_Testbench_Integration_inputs.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

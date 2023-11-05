@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _ProvidePositionReport_ProvidePositionReport_Pkg_H_
 #define _ProvidePositionReport_ProvidePositionReport_Pkg_H_
@@ -53,7 +53,7 @@ typedef struct {
   TrainToTrackStatus_T_BG_Types_Pkg /* _L13/ */ _L13;
   RBC_Communication_T_ProvidePositionReport_Pkg /* _L15/ */ _L15;
   Q_DIRTRAIN /* _L277/ */ _L277;
-  _35_array /* _L279/ */ _L279;
+  _34_array /* _L279/ */ _L279;
   kcg_bool /* _L281/ */ _L281;
   kcg_bool /* _L282/ */ _L282;
   kcg_bool /* _L283/ */ _L283;
@@ -182,6 +182,6 @@ extern void kcg_load_SV_ProvidePositionReport_ProvidePositionReport_Pkg(
 #endif /* _ProvidePositionReport_ProvidePositionReport_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ProvidePositionReport_ProvidePositionReport_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

@@ -110,9 +110,9 @@ void Check2Headers_init_CheckBGConsistency_Pkg_SubFunction(
   outC->_L25 = kcg_true;
   outC->_L24 = kcg_true;
   outC->_L23 = Q_LINK_Unlinked;
-  outC->_L22 = kcg_lit_int64(0);
-  outC->_L21 = kcg_lit_int64(0);
-  outC->_L20 = kcg_lit_int64(0);
+  outC->_L22 = kcg_lit_int32(0);
+  outC->_L21 = kcg_lit_int32(0);
+  outC->_L20 = kcg_lit_int32(0);
   outC->_L19 = M_DUP_No_duplicates;
   outC->_L18 = N_TOTAL_1_balise_in_the_group;
   outC->_L17 = N_PIG_I_am_the_1st;
@@ -121,9 +121,9 @@ void Check2Headers_init_CheckBGConsistency_Pkg_SubFunction(
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L14 = Q_UPDOWN_Down_link_telegram;
   outC->_L4 = Q_LINK_Unlinked;
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
   outC->_L8 = M_DUP_No_duplicates;
   outC->_L9 = N_TOTAL_1_balise_in_the_group;
   outC->_L10 = N_PIG_I_am_the_1st;
@@ -138,9 +138,9 @@ void Check2Headers_init_CheckBGConsistency_Pkg_SubFunction(
   outC->_L3.n_pig = N_PIG_I_am_the_1st;
   outC->_L3.n_total = N_TOTAL_1_balise_in_the_group;
   outC->_L3.m_dup = M_DUP_No_duplicates;
-  outC->_L3.m_mcount = kcg_lit_int64(0);
-  outC->_L3.nid_c = kcg_lit_int64(0);
-  outC->_L3.nid_bg = kcg_lit_int64(0);
+  outC->_L3.m_mcount = kcg_lit_int32(0);
+  outC->_L3.nid_c = kcg_lit_int32(0);
+  outC->_L3.nid_bg = kcg_lit_int32(0);
   outC->_L3.q_link = Q_LINK_Unlinked;
   outC->_L1.q_updown = Q_UPDOWN_Down_link_telegram;
   outC->_L1.m_version =
@@ -149,9 +149,9 @@ void Check2Headers_init_CheckBGConsistency_Pkg_SubFunction(
   outC->_L1.n_pig = N_PIG_I_am_the_1st;
   outC->_L1.n_total = N_TOTAL_1_balise_in_the_group;
   outC->_L1.m_dup = M_DUP_No_duplicates;
-  outC->_L1.m_mcount = kcg_lit_int64(0);
-  outC->_L1.nid_c = kcg_lit_int64(0);
-  outC->_L1.nid_bg = kcg_lit_int64(0);
+  outC->_L1.m_mcount = kcg_lit_int32(0);
+  outC->_L1.nid_c = kcg_lit_int32(0);
+  outC->_L1.nid_bg = kcg_lit_int32(0);
   outC->_L1.q_link = Q_LINK_Unlinked;
   outC->m_dup_2 = M_DUP_No_duplicates;
   outC->n_pig_2 = N_PIG_I_am_the_1st;

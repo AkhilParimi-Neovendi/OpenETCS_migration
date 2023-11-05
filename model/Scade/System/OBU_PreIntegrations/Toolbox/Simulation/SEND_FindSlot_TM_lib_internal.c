@@ -10,7 +10,7 @@
 /* TM_lib_internal::SEND_FindSlot/ */
 void SEND_FindSlot_TM_lib_internal(
   /* a/ */
-  kcg_int64 a,
+  kcg_int32 a,
   /* MessageIn/ */
   MetadataElement_T_Common_Types_Pkg *MessageIn,
   /* EmptyHeader/ */
@@ -39,23 +39,23 @@ void SEND_FindSlot_TM_lib_internal(
 void SEND_FindSlot_init_TM_lib_internal(
   outC_SEND_FindSlot_TM_lib_internal *outC)
 {
-  outC->_L29 = kcg_lit_int64(0);
-  outC->_L28 = kcg_lit_int64(0);
-  outC->_L27 = kcg_lit_int64(0);
-  outC->_L19 = kcg_lit_int64(0);
+  outC->_L29 = kcg_lit_int32(0);
+  outC->_L28 = kcg_lit_int32(0);
+  outC->_L27 = kcg_lit_int32(0);
+  outC->_L19 = kcg_lit_int32(0);
   outC->_L17 = kcg_true;
-  outC->_L3.nid_packet = kcg_lit_int64(0);
+  outC->_L3.nid_packet = kcg_lit_int32(0);
   outC->_L3.q_dir = Q_DIR_Reverse;
   outC->_L3.valid = kcg_true;
-  outC->_L3.startAddress = kcg_lit_int64(0);
-  outC->_L3.endAddress = kcg_lit_int64(0);
-  outC->_L2.nid_packet = kcg_lit_int64(0);
+  outC->_L3.startAddress = kcg_lit_int32(0);
+  outC->_L3.endAddress = kcg_lit_int32(0);
+  outC->_L2.nid_packet = kcg_lit_int32(0);
   outC->_L2.q_dir = Q_DIR_Reverse;
   outC->_L2.valid = kcg_true;
-  outC->_L2.startAddress = kcg_lit_int64(0);
-  outC->_L2.endAddress = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->Acc = kcg_lit_int64(0);
+  outC->_L2.startAddress = kcg_lit_int32(0);
+  outC->_L2.endAddress = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->Acc = kcg_lit_int32(0);
   outC->Cont = kcg_true;
 }
 #endif /* KCG_USER_DEFINED_INIT */

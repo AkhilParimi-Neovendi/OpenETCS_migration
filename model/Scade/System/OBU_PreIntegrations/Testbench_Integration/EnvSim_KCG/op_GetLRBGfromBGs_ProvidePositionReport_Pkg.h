@@ -26,17 +26,17 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   trainPosition_T_TrainPosition_Types_Pck /* _L2/ */ _L2;
   positionedBGs_T_TrainPosition_Types_Pck /* _L1/ */ _L1;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   kcg_bool /* _L4/ */ _L4;
   kcg_bool /* _L5/ */ _L5;
   kcg_bool /* _L6/ */ _L6;
   positionedBG_T_TrainPosition_Types_Pck /* _L7/ */ _L7;
-  array_int64_41 /* _L8/ */ _L8;
+  array_int32_41 /* _L8/ */ _L8;
   positionedBG_T_TrainPosition_Types_Pck /* _L9/ */ _L9;
   NID_BG /* _L13/ */ _L13;
   positionedBG_T_TrainPosition_Types_Pck /* _L14/ */ _L14;
-  kcg_int64 /* _L15/ */ _L15;
-  kcg_int64 /* _L16/ */ _L16;
+  kcg_int32 /* _L15/ */ _L15;
+  kcg_int32 /* _L16/ */ _L16;
 } outC_op_GetLRBGfromBGs_ProvidePositionReport_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

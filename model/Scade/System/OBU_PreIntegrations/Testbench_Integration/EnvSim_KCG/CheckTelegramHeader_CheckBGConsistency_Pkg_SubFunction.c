@@ -44,7 +44,7 @@ void CheckTelegramHeader_CheckBGConsistency_Pkg_SubFunction(
   _4_noname = outC->_L36;
   outC->_L38 = outC->_L13.m_dup;
   _3_noname = outC->_L38;
-  outC->_L44 = kcg_lit_int64(0);
+  outC->_L44 = kcg_lit_int32(0);
   outC->_L46 = outC->_L48 > outC->_L44;
   outC->_L45 = outC->_L47 <= outC->_L48;
   outC->_L41 = outC->_L13.q_media;
@@ -64,17 +64,17 @@ void CheckTelegramHeader_CheckBGConsistency_Pkg_SubFunction(
 void CheckTelegramHeader_init_CheckBGConsistency_Pkg_SubFunction(
   outC_CheckTelegramHeader_CheckBGConsistency_Pkg_SubFunction *outC)
 {
-  outC->_L50 = kcg_lit_int64(0);
-  outC->_L49 = kcg_lit_int64(0);
-  outC->_L48 = kcg_lit_int64(0);
-  outC->_L47 = kcg_lit_int64(0);
+  outC->_L50 = kcg_lit_int32(0);
+  outC->_L49 = kcg_lit_int32(0);
+  outC->_L48 = kcg_lit_int32(0);
+  outC->_L47 = kcg_lit_int32(0);
   outC->_L46 = kcg_true;
   outC->_L45 = kcg_true;
-  outC->_L44 = kcg_lit_int64(0);
+  outC->_L44 = kcg_lit_int32(0);
   outC->_L34 = Q_LINK_Unlinked;
-  outC->_L35 = kcg_lit_int64(0);
-  outC->_L36 = kcg_lit_int64(0);
-  outC->_L37 = kcg_lit_int64(0);
+  outC->_L35 = kcg_lit_int32(0);
+  outC->_L36 = kcg_lit_int32(0);
+  outC->_L37 = kcg_lit_int32(0);
   outC->_L38 = M_DUP_No_duplicates;
   outC->_L39 = N_TOTAL_1_balise_in_the_group;
   outC->_L40 = N_PIG_I_am_the_1st;
@@ -92,9 +92,9 @@ void CheckTelegramHeader_init_CheckBGConsistency_Pkg_SubFunction(
   outC->_L13.n_pig = N_PIG_I_am_the_1st;
   outC->_L13.n_total = N_TOTAL_1_balise_in_the_group;
   outC->_L13.m_dup = M_DUP_No_duplicates;
-  outC->_L13.m_mcount = kcg_lit_int64(0);
-  outC->_L13.nid_c = kcg_lit_int64(0);
-  outC->_L13.nid_bg = kcg_lit_int64(0);
+  outC->_L13.m_mcount = kcg_lit_int32(0);
+  outC->_L13.nid_c = kcg_lit_int32(0);
+  outC->_L13.nid_bg = kcg_lit_int32(0);
   outC->_L13.q_link = Q_LINK_Unlinked;
   outC->isConsistent = kcg_true;
   /* _L47=(CheckBGConsistency_Pkg::SubFunction::N_PIG2int#1)/ */

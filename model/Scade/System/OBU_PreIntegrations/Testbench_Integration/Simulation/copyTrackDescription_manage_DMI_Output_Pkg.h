@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _copyTrackDescription_manage_DMI_Output_Pkg_H_
 #define _copyTrackDescription_manage_DMI_Output_Pkg_H_
@@ -27,7 +27,7 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   DataForDMI_t_TrackAtlasTypes /* _L1/ */ _L1;
   DMI_SpeedProfileArray_T_DMI_Types_Pkg /* _L7/ */ _L7;
-  kcg_int64 /* _L8/ */ _L8;
+  kcg_int32 /* _L8/ */ _L8;
   kcg_bool /* _L10/ */ _L10;
   MRSP_Profile_t_TrackAtlasTypes /* _L11/ */ _L11;
   DMI_SpeedProfileArray_T_DMI_Types_Pkg /* _L13/ */ _L13;
@@ -35,7 +35,7 @@ typedef struct {
   GradientProfile_for_DMI_t_TrackAtlasTypes /* _L15/ */ _L15;
   kcg_bool /* _L17/ */ _L17;
   DMI_gradientProfileArray_T_DMI_Types_Pkg /* _L19/ */ _L19;
-  kcg_int64 /* _L20/ */ _L20;
+  kcg_int32 /* _L20/ */ _L20;
   DMI_speedProfile_T_DMI_Types_Pkg /* _L22/ */ _L22;
   DMI_gradientProfile_T_DMI_Types_Pkg /* _L23/ */ _L23;
   kcg_bool /* _L25/ */ _L25;
@@ -43,7 +43,7 @@ typedef struct {
   DMI_Track_Description_T_DMI_Messages_EVC_to_DMI_Pkg /* _L27/ */ _L27;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L28/ */ _L28;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L29/ */ _L29;
-  kcg_int64 /* _L30/ */ _L30;
+  kcg_int32 /* _L30/ */ _L30;
   DMI_trackCondition_T_DMI_Types_Pkg /* _L31/ */ _L31;
   DMI_speedProfileElement_T_DMI_Types_Pkg /* _L33/ */ _L33;
   DMI_gradientProfileElement_T_DMI_Types_Pkg /* _L34/ */ _L34;
@@ -73,6 +73,6 @@ extern void copyTrackDescription_init_manage_DMI_Output_Pkg(
 #endif /* _copyTrackDescription_manage_DMI_Output_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** copyTrackDescription_manage_DMI_Output_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

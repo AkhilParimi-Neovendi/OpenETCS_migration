@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _CAST_Int_to_NID_MN_TM_conversions_H_
 #define _CAST_Int_to_NID_MN_TM_conversions_H_
@@ -21,10 +21,10 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L1/ */ _L1;
+  kcg_int32 /* _L5/ */ _L5;
   kcg_bool /* _L4/ */ _L4;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   kcg_bool /* _L2/ */ _L2;
 } outC_CAST_Int_to_NID_MN_TM_conversions;
 
@@ -32,7 +32,7 @@ typedef struct {
 /* TM_conversions::CAST_Int_to_NID_MN/ */
 extern void CAST_Int_to_NID_MN_TM_conversions(
   /* nid_mn_int/ */
-  kcg_int64 nid_mn_int,
+  kcg_int32 nid_mn_int,
   outC_CAST_Int_to_NID_MN_TM_conversions *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET
@@ -50,6 +50,6 @@ extern void CAST_Int_to_NID_MN_init_TM_conversions(
 #endif /* _CAST_Int_to_NID_MN_TM_conversions_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_Int_to_NID_MN_TM_conversions.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

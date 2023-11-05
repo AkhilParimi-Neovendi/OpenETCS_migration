@@ -21,22 +21,22 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_float64 /* _L12/ */ _L12;
-  kcg_int64 /* _L11/ */ _L11;
-  kcg_float64 /* _L8/ */ _L8;
-  kcg_int64 /* _L7/ */ _L7;
-  kcg_float64 /* _L6/ */ _L6;
-  kcg_float64 /* _L2/ */ _L2;
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_float32 /* _L12/ */ _L12;
+  kcg_int32 /* _L11/ */ _L11;
+  kcg_float32 /* _L8/ */ _L8;
+  kcg_int32 /* _L7/ */ _L7;
+  kcg_float32 /* _L6/ */ _L6;
+  kcg_float32 /* _L2/ */ _L2;
+  kcg_int32 /* _L1/ */ _L1;
   OdometrySpeeds_T_Obu_BasicTypes_Pkg /* _L13/ */ _L13;
   odometryFactors_T_Toolbox /* _L14/ */ _L14;
   Speed_T_Obu_BasicTypes_Pkg /* _L15/ */ _L15;
-  kcg_float64 /* _L16/ */ _L16;
-  kcg_float64 /* _L17/ */ _L17;
-  kcg_int64 /* _L18/ */ _L18;
-  kcg_float64 /* _L21/ */ _L21;
-  kcg_float64 /* _L20/ */ _L20;
-  kcg_float64 /* _L19/ */ _L19;
+  kcg_float32 /* _L16/ */ _L16;
+  kcg_float32 /* _L17/ */ _L17;
+  kcg_int32 /* _L18/ */ _L18;
+  kcg_float32 /* _L21/ */ _L21;
+  kcg_float32 /* _L20/ */ _L20;
+  kcg_float32 /* _L19/ */ _L19;
 } outC_ODO_genSpeedInaccuracies_Toolbox_Functions;
 
 /* ===========  node initialization and cycle functions  =========== */

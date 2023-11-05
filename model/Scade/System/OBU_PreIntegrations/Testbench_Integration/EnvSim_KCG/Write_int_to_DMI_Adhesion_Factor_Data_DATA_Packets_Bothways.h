@@ -27,8 +27,8 @@ typedef struct {
   DMI_Adhesion_Factor_Data_int_array_T_DATA /* _L8/ */ _L8;
   DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg /* _L11/ */ _L11;
   kcg_bool /* _L14/ */ _L14;
-  kcg_int64 /* _L13/ */ _L13;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L13/ */ _L13;
+  kcg_int32 /* _L12/ */ _L12;
   DMI_Adhesion_Factor_Data_T_DMI_Messages_Bothways_Pkg /* _L15/ */ _L15;
 } outC_Write_int_to_DMI_Adhesion_Factor_Data_DATA_Packets_Bothways;
 

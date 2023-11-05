@@ -15,20 +15,20 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   kcg_bool /* Cont/ */ Cont;
-  kcg_int64 /* Acc/ */ Acc;
+  kcg_int32 /* Acc/ */ Acc;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   MetadataElement_T_Common_Types_Pkg /* _L2/ */ _L2;
   MetadataElement_T_Common_Types_Pkg /* _L3/ */ _L3;
   kcg_bool /* _L17/ */ _L17;
-  kcg_int64 /* _L19/ */ _L19;
+  kcg_int32 /* _L19/ */ _L19;
   NID_PACKET /* _L27/ */ _L27;
-  kcg_int64 /* _L28/ */ _L28;
+  kcg_int32 /* _L28/ */ _L28;
   NID_PACKET /* _L29/ */ _L29;
 } outC_SEND_FindSlot_TM_lib_internal;
 
@@ -36,7 +36,7 @@ typedef struct {
 /* TM_lib_internal::SEND_FindSlot/ */
 extern void SEND_FindSlot_TM_lib_internal(
   /* a/ */
-  kcg_int64 a,
+  kcg_int32 a,
   /* MessageIn/ */
   MetadataElement_T_Common_Types_Pkg *MessageIn,
   /* EmptyHeader/ */

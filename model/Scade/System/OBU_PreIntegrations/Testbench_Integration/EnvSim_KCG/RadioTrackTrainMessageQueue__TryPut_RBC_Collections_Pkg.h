@@ -38,9 +38,9 @@ typedef struct {
   RadioTrackTrainMessageQueue_T /* IfBlock1:else:_L1/ */ _L1_else_IfBlock1;
   kcg_bool /* hasCapacity/ */ hasCapacity;
   RadioTrackTrainMessageQueue_T /* _L1/ */ _L1;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L4/ */ _L4;
   kcg_bool /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L6/ */ _L6;
 } outC_RadioTrackTrainMessageQueue__TryPut_RBC_Collections_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

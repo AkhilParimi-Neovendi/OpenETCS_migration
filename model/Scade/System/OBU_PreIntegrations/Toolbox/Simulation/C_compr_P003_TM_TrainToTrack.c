@@ -17,16 +17,16 @@ void C_compr_P003_TM_TrainToTrack(
   P003_nid_radio_list_int_t_TM_TrainToTrack op_call;
 
   kcg_copy_P003_TrainTrack_int_TM_TrainToTrack(&outC->_L1, P003_int);
-  kcg_copy_array_int64_3(&outC->_L94, (array_int64_3 *) &outC->_L1[0]);
+  kcg_copy_array_int32_3(&outC->_L94, (array_int32_3 *) &outC->_L1[0]);
   outC->_L98 = outC->_L94[0];
   /* _L105=(TM_TrainToTrack::Decode_NID_PACKET#1)/ */
   Decode_NID_PACKET_TM_TrainToTrack(
     outC->_L98,
-    kcg_lit_int64(3),
+    kcg_lit_int32(3),
     &outC->Context_Decode_NID_PACKET_1);
   outC->_L105 = outC->Context_Decode_NID_PACKET_1.Valid;
   outC->every = outC->_L105;
-  kcg_copy_array_int64_5(&outC->_L104, (array_int64_5 *) &outC->_L1[3]);
+  kcg_copy_array_int32_5(&outC->_L104, (array_int32_5 *) &outC->_L1[3]);
   if (outC->every) {
     /* _L89=(TM_TrainToTrack_lib_internal::C_P003_flatten_sections#1)/ */
     C_P003_flatten_sections_TM_TrainToTrack_lib_internal(
@@ -108,43 +108,43 @@ void C_compr_P003_init_TM_TrainToTrack(outC_C_compr_P003_TM_TrainToTrack *outC)
   kcg_size idx4;
   kcg_size idx5;
 
-  outC->_L108 = kcg_lit_int64(0);
-  outC->_L107 = kcg_lit_int64(0);
-  outC->_L106 = kcg_lit_int64(0);
+  outC->_L108 = kcg_lit_int32(0);
+  outC->_L107 = kcg_lit_int32(0);
+  outC->_L106 = kcg_lit_int32(0);
   outC->_L105 = kcg_true;
   for (idx = 0; idx < 5; idx++) {
-    outC->_L104[idx] = kcg_lit_int64(0);
+    outC->_L104[idx] = kcg_lit_int32(0);
   }
   outC->_L103.valid = kcg_true;
-  outC->_L103.nid_packet = kcg_lit_int64(0);
-  outC->_L103.l_packet = kcg_lit_int64(0);
-  outC->_L103.n_iter = kcg_lit_int64(0);
+  outC->_L103.nid_packet = kcg_lit_int32(0);
+  outC->_L103.l_packet = kcg_lit_int32(0);
+  outC->_L103.n_iter = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 5; idx1++) {
-    outC->_L103.nid_radio[idx1] = kcg_lit_int64(0);
+    outC->_L103.nid_radio[idx1] = kcg_lit_int32(0);
   }
-  outC->_L98 = kcg_lit_int64(0);
-  outC->_L99 = kcg_lit_int64(0);
-  outC->_L100 = kcg_lit_int64(0);
+  outC->_L98 = kcg_lit_int32(0);
+  outC->_L99 = kcg_lit_int32(0);
+  outC->_L100 = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 3; idx2++) {
-    outC->_L94[idx2] = kcg_lit_int64(0);
+    outC->_L94[idx2] = kcg_lit_int32(0);
   }
-  outC->_L71 = kcg_lit_int64(0);
-  outC->_L70 = kcg_lit_int64(0);
-  outC->_L69 = kcg_lit_int64(0);
+  outC->_L71 = kcg_lit_int32(0);
+  outC->_L70 = kcg_lit_int32(0);
+  outC->_L69 = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 8; idx3++) {
-    outC->_L1[idx3] = kcg_lit_int64(0);
+    outC->_L1[idx3] = kcg_lit_int32(0);
   }
   outC->every = kcg_true;
   for (idx4 = 0; idx4 < 5; idx4++) {
-    outC->_L89[idx4] = kcg_lit_int64(0);
+    outC->_L89[idx4] = kcg_lit_int32(0);
   }
   outC->init = kcg_true;
   outC->P003_out.valid = kcg_true;
-  outC->P003_out.nid_packet = kcg_lit_int64(0);
-  outC->P003_out.l_packet = kcg_lit_int64(0);
-  outC->P003_out.n_iter = kcg_lit_int64(0);
+  outC->P003_out.nid_packet = kcg_lit_int32(0);
+  outC->P003_out.l_packet = kcg_lit_int32(0);
+  outC->P003_out.n_iter = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 5; idx5++) {
-    outC->P003_out.nid_radio[idx5] = kcg_lit_int64(0);
+    outC->P003_out.nid_radio[idx5] = kcg_lit_int32(0);
   }
   /* _L71=(TM_conversions::CAST_N_ITER_to_int#1)/ */
   CAST_N_ITER_to_int_init_TM_conversions(&outC->Context_CAST_N_ITER_to_int_1);

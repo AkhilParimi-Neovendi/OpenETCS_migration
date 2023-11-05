@@ -22,21 +22,21 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   P005_sections_array_flat_T_TM /* _L1/ */ _L1;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L6/ */ _L6;
   P005_sections_array_flat_T_TM /* _L7/ */ _L7;
-  kcg_int64 /* _L8/ */ _L8;
+  kcg_int32 /* _L8/ */ _L8;
   P005_OBU_sectionlist_array_T_TM /* _L2/ */ _L2;
-  kcg_int64 /* _L10/ */ _L10;
-  kcg_int64 /* _L154/ */ _L154;
+  kcg_int32 /* _L10/ */ _L10;
+  kcg_int32 /* _L154/ */ _L154;
 } outC_C_P005_fs_flatten_array_TM_lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* TM_lib_internal::C_P005_fs_flatten_array/ */
 extern void C_P005_fs_flatten_array_TM_lib_internal(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* Acc/ */
   P005_sections_array_flat_T_TM *Acc,
   /* section_arrays/ */

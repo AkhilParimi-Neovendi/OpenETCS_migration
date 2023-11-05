@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -103,90 +103,90 @@ void InitilizeAccForEBDFootCalc_init_CalcBrakingCurves_Pkg_internalOperators(
   static kcg_size idx20;
   static kcg_size idx21;
 
-  outC->_L25 = kcg_lit_float64(0.0);
-  outC->_L24 = kcg_lit_int64(0);
+  outC->_L25 = kcg_lit_float32(0.0);
+  outC->_L24 = kcg_lit_int32(0);
   for (idx = 0; idx < 114; idx++) {
-    outC->_L23.distances[idx] = kcg_lit_float64(0.0);
+    outC->_L23.distances[idx] = kcg_lit_float32(0.0);
   }
   for (idx1 = 0; idx1 < 114; idx1++) {
-    outC->_L23.speeds[idx1] = kcg_lit_float64(0.0);
+    outC->_L23.speeds[idx1] = kcg_lit_float32(0.0);
   }
   for (idx2 = 0; idx2 < 114; idx2++) {
-    outC->_L23.accelerations[idx2] = kcg_lit_float64(0.0);
+    outC->_L23.accelerations[idx2] = kcg_lit_float32(0.0);
   }
   for (idx3 = 0; idx3 < 114; idx3++) {
     outC->_L23.valid[idx3] = kcg_true;
   }
   for (idx4 = 0; idx4 < 100; idx4++) {
-    outC->_L21.distance_definition[idx4] = kcg_lit_float64(0.0);
+    outC->_L21.distance_definition[idx4] = kcg_lit_float32(0.0);
   }
   for (idx5 = 0; idx5 < 14; idx5++) {
-    outC->_L21.speed_definition[idx5] = kcg_lit_float64(0.0);
+    outC->_L21.speed_definition[idx5] = kcg_lit_float32(0.0);
   }
   for (idx7 = 0; idx7 < 14; idx7++) {
     for (idx6 = 0; idx6 < 100; idx6++) {
-      outC->_L21.data[idx7][idx6] = kcg_lit_float64(0.0);
+      outC->_L21.data[idx7][idx6] = kcg_lit_float32(0.0);
     }
   }
   outC->_L20.targetType = EoA_TargetManagement_types;
-  outC->_L20.distance = kcg_lit_float64(0.0);
-  outC->_L20.speed = kcg_lit_float64(0.0);
+  outC->_L20.distance = kcg_lit_float32(0.0);
+  outC->_L20.speed = kcg_lit_float32(0.0);
   for (idx8 = 0; idx8 < 14; idx8++) {
-    outC->_L19[idx8] = kcg_lit_float64(0.0);
+    outC->_L19[idx8] = kcg_lit_float32(0.0);
   }
   for (idx9 = 0; idx9 < 100; idx9++) {
-    outC->_L18[idx9] = kcg_lit_float64(0.0);
+    outC->_L18[idx9] = kcg_lit_float32(0.0);
   }
-  outC->_L17.distance = kcg_lit_float64(0.0);
-  outC->_L17.speed = kcg_lit_float64(0.0);
-  outC->_L17.distanceIndex = kcg_lit_int64(0);
-  outC->_L17.speedIndex = kcg_lit_int64(0);
+  outC->_L17.distance = kcg_lit_float32(0.0);
+  outC->_L17.speed = kcg_lit_float32(0.0);
+  outC->_L17.distanceIndex = kcg_lit_int32(0);
+  outC->_L17.speedIndex = kcg_lit_int32(0);
   for (idx10 = 0; idx10 < 114; idx10++) {
-    outC->_L17.BC.distances[idx10] = kcg_lit_float64(0.0);
+    outC->_L17.BC.distances[idx10] = kcg_lit_float32(0.0);
   }
   for (idx11 = 0; idx11 < 114; idx11++) {
-    outC->_L17.BC.speeds[idx11] = kcg_lit_float64(0.0);
+    outC->_L17.BC.speeds[idx11] = kcg_lit_float32(0.0);
   }
   for (idx12 = 0; idx12 < 114; idx12++) {
-    outC->_L17.BC.accelerations[idx12] = kcg_lit_float64(0.0);
+    outC->_L17.BC.accelerations[idx12] = kcg_lit_float32(0.0);
   }
   for (idx13 = 0; idx13 < 114; idx13++) {
     outC->_L17.BC.valid[idx13] = kcg_true;
   }
-  outC->_L16 = kcg_lit_int64(0);
-  outC->_L15 = kcg_lit_float64(0.0);
-  outC->_L14 = kcg_lit_float64(0.0);
-  outC->_L13 = kcg_lit_float64(0.0);
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_float64(0.0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_float64(0.0);
+  outC->_L16 = kcg_lit_int32(0);
+  outC->_L15 = kcg_lit_float32(0.0);
+  outC->_L14 = kcg_lit_float32(0.0);
+  outC->_L13 = kcg_lit_float32(0.0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_float32(0.0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_float32(0.0);
   outC->_L1.targetType = EoA_TargetManagement_types;
-  outC->_L1.distance = kcg_lit_float64(0.0);
-  outC->_L1.speed = kcg_lit_float64(0.0);
+  outC->_L1.distance = kcg_lit_float32(0.0);
+  outC->_L1.speed = kcg_lit_float32(0.0);
   for (idx14 = 0; idx14 < 100; idx14++) {
-    outC->_L3.distance_definition[idx14] = kcg_lit_float64(0.0);
+    outC->_L3.distance_definition[idx14] = kcg_lit_float32(0.0);
   }
   for (idx15 = 0; idx15 < 14; idx15++) {
-    outC->_L3.speed_definition[idx15] = kcg_lit_float64(0.0);
+    outC->_L3.speed_definition[idx15] = kcg_lit_float32(0.0);
   }
   for (idx17 = 0; idx17 < 14; idx17++) {
     for (idx16 = 0; idx16 < 100; idx16++) {
-      outC->_L3.data[idx17][idx16] = kcg_lit_float64(0.0);
+      outC->_L3.data[idx17][idx16] = kcg_lit_float32(0.0);
     }
   }
-  outC->BCACCForEBDFoot.distance = kcg_lit_float64(0.0);
-  outC->BCACCForEBDFoot.speed = kcg_lit_float64(0.0);
-  outC->BCACCForEBDFoot.distanceIndex = kcg_lit_int64(0);
-  outC->BCACCForEBDFoot.speedIndex = kcg_lit_int64(0);
+  outC->BCACCForEBDFoot.distance = kcg_lit_float32(0.0);
+  outC->BCACCForEBDFoot.speed = kcg_lit_float32(0.0);
+  outC->BCACCForEBDFoot.distanceIndex = kcg_lit_int32(0);
+  outC->BCACCForEBDFoot.speedIndex = kcg_lit_int32(0);
   for (idx18 = 0; idx18 < 114; idx18++) {
-    outC->BCACCForEBDFoot.BC.distances[idx18] = kcg_lit_float64(0.0);
+    outC->BCACCForEBDFoot.BC.distances[idx18] = kcg_lit_float32(0.0);
   }
   for (idx19 = 0; idx19 < 114; idx19++) {
-    outC->BCACCForEBDFoot.BC.speeds[idx19] = kcg_lit_float64(0.0);
+    outC->BCACCForEBDFoot.BC.speeds[idx19] = kcg_lit_float32(0.0);
   }
   for (idx20 = 0; idx20 < 114; idx20++) {
-    outC->BCACCForEBDFoot.BC.accelerations[idx20] = kcg_lit_float64(0.0);
+    outC->BCACCForEBDFoot.BC.accelerations[idx20] = kcg_lit_float32(0.0);
   }
   for (idx21 = 0; idx21 < 114; idx21++) {
     outC->BCACCForEBDFoot.BC.valid[idx21] = kcg_true;
@@ -240,6 +240,6 @@ void InitilizeAccForEBDFootCalc_reset_CalcBrakingCurves_Pkg_internalOperators(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** InitilizeAccForEBDFootCalc_CalcBrakingCurves_Pkg_internalOperators.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

@@ -98,7 +98,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="int64"/>
+												<TypeRef name="int32"/>
 											</type>
 										</NamedType>
 									</type>
@@ -194,7 +194,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="int64"/>
+												<TypeRef name="int32"/>
 											</type>
 										</NamedType>
 									</type>
@@ -456,7 +456,7 @@
 																					<type>
 																						<NamedType>
 																							<type>
-																								<TypeRef name="int64"/>
+																								<TypeRef name="int32"/>
 																							</type>
 																						</NamedType>
 																					</type>
@@ -516,7 +516,7 @@
 																					<type>
 																						<NamedType>
 																							<type>
-																								<TypeRef name="int64"/>
+																								<TypeRef name="int32"/>
 																							</type>
 																						</NamedType>
 																					</type>
@@ -612,16 +612,16 @@
 																						<ed:Equation oid="!ed/472f8e/7016/2968/55ba0d96fbb"/>
 																					</pragmas>
 																				</Equation>
-																				<!-- _L5 = (_L3 : int64); -->
+																				<!-- _L5 = (_L3 : int32); -->
 																				<Equation>
 																					<lefts>
 																						<VariableRef name="_L5"/>
 																					</lefts>
 																					<right>
-																						<!-- (_L3 : int64) -->
+																						<!-- (_L3 : int32) -->
 																						<NumericCastOp name="1">
 																							<type>
-																								<TypeRef name="int64"/>
+																								<TypeRef name="int32"/>
 																							</type>
 																							<flow>
 																								<IdExpression>
@@ -1537,7 +1537,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="int64"/>
+												<TypeRef name="int32"/>
 											</type>
 										</NamedType>
 									</type>
@@ -1573,7 +1573,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="int64"/>
+												<TypeRef name="int32"/>
 											</type>
 										</NamedType>
 									</type>
@@ -14795,7 +14795,7 @@
 													<type>
 														<NamedType>
 															<type>
-																<TypeRef name="int64"/>
+																<TypeRef name="int32"/>
 															</type>
 														</NamedType>
 													</type>
@@ -14819,7 +14819,7 @@
 													<type>
 														<NamedType>
 															<type>
-																<TypeRef name="int64"/>
+																<TypeRef name="int32"/>
 															</type>
 														</NamedType>
 													</type>
@@ -15023,7 +15023,7 @@
 													<type>
 														<NamedType>
 															<type>
-																<TypeRef name="int64"/>
+																<TypeRef name="int32"/>
 															</type>
 														</NamedType>
 													</type>
@@ -15083,7 +15083,7 @@
 													<type>
 														<NamedType>
 															<type>
-																<TypeRef name="int64"/>
+																<TypeRef name="int32"/>
 															</type>
 														</NamedType>
 													</type>
@@ -15093,16 +15093,16 @@
 												</Variable>
 											</locals>
 											<data>
-												<!-- _L4 = (_L14 : int64); -->
+												<!-- _L4 = (_L14 : int32); -->
 												<Equation>
 													<lefts>
 														<VariableRef name="_L4"/>
 													</lefts>
 													<right>
-														<!-- (_L14 : int64) -->
+														<!-- (_L14 : int32) -->
 														<NumericCastOp name="1">
 															<type>
-																<TypeRef name="int64"/>
+																<TypeRef name="int32"/>
 															</type>
 															<flow>
 																<IdExpression>
@@ -16091,7 +16091,7 @@
 																					<type>
 																						<NamedType>
 																							<type>
-																								<TypeRef name="int64"/>
+																								<TypeRef name="int32"/>
 																							</type>
 																						</NamedType>
 																					</type>
@@ -16614,7 +16614,7 @@
 																					<type>
 																						<NamedType>
 																							<type>
-																								<TypeRef name="int64"/>
+																								<TypeRef name="int32"/>
 																							</type>
 																						</NamedType>
 																					</type>
@@ -19400,7 +19400,7 @@
 													<type>
 														<NamedType>
 															<type>
-																<TypeRef name="int64"/>
+																<TypeRef name="int32"/>
 															</type>
 														</NamedType>
 													</type>
@@ -19436,7 +19436,7 @@
 													<type>
 														<NamedType>
 															<type>
-																<TypeRef name="int64"/>
+																<TypeRef name="int32"/>
 															</type>
 														</NamedType>
 													</type>
@@ -19448,7 +19448,7 @@
 													<type>
 														<NamedType>
 															<type>
-																<TypeRef name="int64"/>
+																<TypeRef name="int32"/>
 															</type>
 														</NamedType>
 													</type>
@@ -20191,7 +20191,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -27285,7 +27285,7 @@
 													<type>
 														<NamedType>
 															<type>
-																<TypeRef name="int64"/>
+																<TypeRef name="int32"/>
 															</type>
 														</NamedType>
 													</type>
@@ -27297,7 +27297,7 @@
 													<type>
 														<NamedType>
 															<type>
-																<TypeRef name="int64"/>
+																<TypeRef name="int32"/>
 															</type>
 														</NamedType>
 													</type>

@@ -10,7 +10,7 @@
 /* TM_conversions::CAST_Int_to_L_DOUBTOVER/ */
 void CAST_Int_to_L_DOUBTOVER_TM_conversions(
   /* l_doubtiver_int/ */
-  kcg_int64 l_doubtiver_int,
+  kcg_int32 l_doubtiver_int,
   outC_CAST_Int_to_L_DOUBTOVER_TM_conversions *outC)
 {
   kcg_bool noname;
@@ -30,12 +30,12 @@ void CAST_Int_to_L_DOUBTOVER_TM_conversions(
 void CAST_Int_to_L_DOUBTOVER_init_TM_conversions(
   outC_CAST_Int_to_L_DOUBTOVER_TM_conversions *outC)
 {
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
   outC->_L8 = kcg_true;
   outC->_L9 = kcg_true;
-  outC->_L1 = kcg_lit_int64(0);
-  outC->l_doubtover = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->l_doubtover = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

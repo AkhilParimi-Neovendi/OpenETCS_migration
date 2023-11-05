@@ -3404,361 +3404,361 @@ extern int copy_Array_DMI_Q_Text(void *pToValue, const void *pFromValue);
 extern SimTypeUtils _Type_Array_DMI_Q_Text_Utils;
 
 /****************************************************************
- ** array_float64_1 
+ ** array_float32_1 
  ****************************************************************/
-extern int array_float64_1_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_float64_1_string(const char *str, char **endptr);
-extern int string_to_array_float64_1(const char *str, void *pValue, char **endptr);
-extern int is_array_float64_1_double_conversion_allowed();
-extern int array_float64_1_to_double(const void *pValue, double *nValue);
-extern int is_array_float64_1_long_conversion_allowed();
-extern int array_float64_1_to_long(const void *pValue, long *nValue);
-extern void compare_array_float64_1(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_float64_1_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_float64_1(void *pValue);
-extern int release_array_float64_1(void *pValue);
-extern int copy_array_float64_1(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_float64_1_Utils;
+extern int array_float32_1_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_float32_1_string(const char *str, char **endptr);
+extern int string_to_array_float32_1(const char *str, void *pValue, char **endptr);
+extern int is_array_float32_1_double_conversion_allowed();
+extern int array_float32_1_to_double(const void *pValue, double *nValue);
+extern int is_array_float32_1_long_conversion_allowed();
+extern int array_float32_1_to_long(const void *pValue, long *nValue);
+extern void compare_array_float32_1(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_float32_1_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_float32_1(void *pValue);
+extern int release_array_float32_1(void *pValue);
+extern int copy_array_float32_1(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_float32_1_Utils;
 
 /****************************************************************
- ** array_float64_10 
+ ** array_float32_10 
  ****************************************************************/
-extern int array_float64_10_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_float64_10_string(const char *str, char **endptr);
-extern int string_to_array_float64_10(const char *str, void *pValue, char **endptr);
-extern int is_array_float64_10_double_conversion_allowed();
-extern int array_float64_10_to_double(const void *pValue, double *nValue);
-extern int is_array_float64_10_long_conversion_allowed();
-extern int array_float64_10_to_long(const void *pValue, long *nValue);
-extern void compare_array_float64_10(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_float64_10_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_float64_10(void *pValue);
-extern int release_array_float64_10(void *pValue);
-extern int copy_array_float64_10(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_float64_10_Utils;
+extern int array_float32_10_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_float32_10_string(const char *str, char **endptr);
+extern int string_to_array_float32_10(const char *str, void *pValue, char **endptr);
+extern int is_array_float32_10_double_conversion_allowed();
+extern int array_float32_10_to_double(const void *pValue, double *nValue);
+extern int is_array_float32_10_long_conversion_allowed();
+extern int array_float32_10_to_long(const void *pValue, long *nValue);
+extern void compare_array_float32_10(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_float32_10_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_float32_10(void *pValue);
+extern int release_array_float32_10(void *pValue);
+extern int copy_array_float32_10(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_float32_10_Utils;
 
 /****************************************************************
- ** array_float64_100 
+ ** array_float32_100 
  ****************************************************************/
-extern int array_float64_100_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_float64_100_string(const char *str, char **endptr);
-extern int string_to_array_float64_100(const char *str, void *pValue, char **endptr);
-extern int is_array_float64_100_double_conversion_allowed();
-extern int array_float64_100_to_double(const void *pValue, double *nValue);
-extern int is_array_float64_100_long_conversion_allowed();
-extern int array_float64_100_to_long(const void *pValue, long *nValue);
-extern void compare_array_float64_100(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_float64_100_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_float64_100(void *pValue);
-extern int release_array_float64_100(void *pValue);
-extern int copy_array_float64_100(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_float64_100_Utils;
+extern int array_float32_100_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_float32_100_string(const char *str, char **endptr);
+extern int string_to_array_float32_100(const char *str, void *pValue, char **endptr);
+extern int is_array_float32_100_double_conversion_allowed();
+extern int array_float32_100_to_double(const void *pValue, double *nValue);
+extern int is_array_float32_100_long_conversion_allowed();
+extern int array_float32_100_to_long(const void *pValue, long *nValue);
+extern void compare_array_float32_100(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_float32_100_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_float32_100(void *pValue);
+extern int release_array_float32_100(void *pValue);
+extern int copy_array_float32_100(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_float32_100_Utils;
 
 /****************************************************************
- ** array_float64_100_1 
+ ** array_float32_100_1 
  ****************************************************************/
-extern int array_float64_100_1_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_float64_100_1_string(const char *str, char **endptr);
-extern int string_to_array_float64_100_1(const char *str, void *pValue, char **endptr);
-extern int is_array_float64_100_1_double_conversion_allowed();
-extern int array_float64_100_1_to_double(const void *pValue, double *nValue);
-extern int is_array_float64_100_1_long_conversion_allowed();
-extern int array_float64_100_1_to_long(const void *pValue, long *nValue);
-extern void compare_array_float64_100_1(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_float64_100_1_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_float64_100_1(void *pValue);
-extern int release_array_float64_100_1(void *pValue);
-extern int copy_array_float64_100_1(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_float64_100_1_Utils;
+extern int array_float32_100_1_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_float32_100_1_string(const char *str, char **endptr);
+extern int string_to_array_float32_100_1(const char *str, void *pValue, char **endptr);
+extern int is_array_float32_100_1_double_conversion_allowed();
+extern int array_float32_100_1_to_double(const void *pValue, double *nValue);
+extern int is_array_float32_100_1_long_conversion_allowed();
+extern int array_float32_100_1_to_long(const void *pValue, long *nValue);
+extern void compare_array_float32_100_1(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_float32_100_1_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_float32_100_1(void *pValue);
+extern int release_array_float32_100_1(void *pValue);
+extern int copy_array_float32_100_1(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_float32_100_1_Utils;
 
 /****************************************************************
- ** array_float64_100_13 
+ ** array_float32_100_13 
  ****************************************************************/
-extern int array_float64_100_13_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_float64_100_13_string(const char *str, char **endptr);
-extern int string_to_array_float64_100_13(const char *str, void *pValue, char **endptr);
-extern int is_array_float64_100_13_double_conversion_allowed();
-extern int array_float64_100_13_to_double(const void *pValue, double *nValue);
-extern int is_array_float64_100_13_long_conversion_allowed();
-extern int array_float64_100_13_to_long(const void *pValue, long *nValue);
-extern void compare_array_float64_100_13(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_float64_100_13_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_float64_100_13(void *pValue);
-extern int release_array_float64_100_13(void *pValue);
-extern int copy_array_float64_100_13(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_float64_100_13_Utils;
+extern int array_float32_100_13_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_float32_100_13_string(const char *str, char **endptr);
+extern int string_to_array_float32_100_13(const char *str, void *pValue, char **endptr);
+extern int is_array_float32_100_13_double_conversion_allowed();
+extern int array_float32_100_13_to_double(const void *pValue, double *nValue);
+extern int is_array_float32_100_13_long_conversion_allowed();
+extern int array_float32_100_13_to_long(const void *pValue, long *nValue);
+extern void compare_array_float32_100_13(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_float32_100_13_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_float32_100_13(void *pValue);
+extern int release_array_float32_100_13(void *pValue);
+extern int copy_array_float32_100_13(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_float32_100_13_Utils;
 
 /****************************************************************
- ** array_float64_100_6 
+ ** array_float32_100_6 
  ****************************************************************/
-extern int array_float64_100_6_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_float64_100_6_string(const char *str, char **endptr);
-extern int string_to_array_float64_100_6(const char *str, void *pValue, char **endptr);
-extern int is_array_float64_100_6_double_conversion_allowed();
-extern int array_float64_100_6_to_double(const void *pValue, double *nValue);
-extern int is_array_float64_100_6_long_conversion_allowed();
-extern int array_float64_100_6_to_long(const void *pValue, long *nValue);
-extern void compare_array_float64_100_6(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_float64_100_6_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_float64_100_6(void *pValue);
-extern int release_array_float64_100_6(void *pValue);
-extern int copy_array_float64_100_6(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_float64_100_6_Utils;
+extern int array_float32_100_6_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_float32_100_6_string(const char *str, char **endptr);
+extern int string_to_array_float32_100_6(const char *str, void *pValue, char **endptr);
+extern int is_array_float32_100_6_double_conversion_allowed();
+extern int array_float32_100_6_to_double(const void *pValue, double *nValue);
+extern int is_array_float32_100_6_long_conversion_allowed();
+extern int array_float32_100_6_to_long(const void *pValue, long *nValue);
+extern void compare_array_float32_100_6(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_float32_100_6_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_float32_100_6(void *pValue);
+extern int release_array_float32_100_6(void *pValue);
+extern int copy_array_float32_100_6(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_float32_100_6_Utils;
 
 /****************************************************************
- ** array_float64_100_8 
+ ** array_float32_100_8 
  ****************************************************************/
-extern int array_float64_100_8_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_float64_100_8_string(const char *str, char **endptr);
-extern int string_to_array_float64_100_8(const char *str, void *pValue, char **endptr);
-extern int is_array_float64_100_8_double_conversion_allowed();
-extern int array_float64_100_8_to_double(const void *pValue, double *nValue);
-extern int is_array_float64_100_8_long_conversion_allowed();
-extern int array_float64_100_8_to_long(const void *pValue, long *nValue);
-extern void compare_array_float64_100_8(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_float64_100_8_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_float64_100_8(void *pValue);
-extern int release_array_float64_100_8(void *pValue);
-extern int copy_array_float64_100_8(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_float64_100_8_Utils;
+extern int array_float32_100_8_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_float32_100_8_string(const char *str, char **endptr);
+extern int string_to_array_float32_100_8(const char *str, void *pValue, char **endptr);
+extern int is_array_float32_100_8_double_conversion_allowed();
+extern int array_float32_100_8_to_double(const void *pValue, double *nValue);
+extern int is_array_float32_100_8_long_conversion_allowed();
+extern int array_float32_100_8_to_long(const void *pValue, long *nValue);
+extern void compare_array_float32_100_8(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_float32_100_8_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_float32_100_8(void *pValue);
+extern int release_array_float32_100_8(void *pValue);
+extern int copy_array_float32_100_8(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_float32_100_8_Utils;
 
 /****************************************************************
- ** array_float64_10_10 
+ ** array_float32_10_10 
  ****************************************************************/
-extern int array_float64_10_10_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_float64_10_10_string(const char *str, char **endptr);
-extern int string_to_array_float64_10_10(const char *str, void *pValue, char **endptr);
-extern int is_array_float64_10_10_double_conversion_allowed();
-extern int array_float64_10_10_to_double(const void *pValue, double *nValue);
-extern int is_array_float64_10_10_long_conversion_allowed();
-extern int array_float64_10_10_to_long(const void *pValue, long *nValue);
-extern void compare_array_float64_10_10(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_float64_10_10_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_float64_10_10(void *pValue);
-extern int release_array_float64_10_10(void *pValue);
-extern int copy_array_float64_10_10(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_float64_10_10_Utils;
+extern int array_float32_10_10_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_float32_10_10_string(const char *str, char **endptr);
+extern int string_to_array_float32_10_10(const char *str, void *pValue, char **endptr);
+extern int is_array_float32_10_10_double_conversion_allowed();
+extern int array_float32_10_10_to_double(const void *pValue, double *nValue);
+extern int is_array_float32_10_10_long_conversion_allowed();
+extern int array_float32_10_10_to_long(const void *pValue, long *nValue);
+extern void compare_array_float32_10_10(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_float32_10_10_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_float32_10_10(void *pValue);
+extern int release_array_float32_10_10(void *pValue);
+extern int copy_array_float32_10_10(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_float32_10_10_Utils;
 
 /****************************************************************
- ** array_float64_110 
+ ** array_float32_110 
  ****************************************************************/
-extern int array_float64_110_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_float64_110_string(const char *str, char **endptr);
-extern int string_to_array_float64_110(const char *str, void *pValue, char **endptr);
-extern int is_array_float64_110_double_conversion_allowed();
-extern int array_float64_110_to_double(const void *pValue, double *nValue);
-extern int is_array_float64_110_long_conversion_allowed();
-extern int array_float64_110_to_long(const void *pValue, long *nValue);
-extern void compare_array_float64_110(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_float64_110_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_float64_110(void *pValue);
-extern int release_array_float64_110(void *pValue);
-extern int copy_array_float64_110(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_float64_110_Utils;
+extern int array_float32_110_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_float32_110_string(const char *str, char **endptr);
+extern int string_to_array_float32_110(const char *str, void *pValue, char **endptr);
+extern int is_array_float32_110_double_conversion_allowed();
+extern int array_float32_110_to_double(const void *pValue, double *nValue);
+extern int is_array_float32_110_long_conversion_allowed();
+extern int array_float32_110_to_long(const void *pValue, long *nValue);
+extern void compare_array_float32_110(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_float32_110_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_float32_110(void *pValue);
+extern int release_array_float32_110(void *pValue);
+extern int copy_array_float32_110(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_float32_110_Utils;
 
 /****************************************************************
- ** array_float64_113 
+ ** array_float32_113 
  ****************************************************************/
-extern int array_float64_113_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_float64_113_string(const char *str, char **endptr);
-extern int string_to_array_float64_113(const char *str, void *pValue, char **endptr);
-extern int is_array_float64_113_double_conversion_allowed();
-extern int array_float64_113_to_double(const void *pValue, double *nValue);
-extern int is_array_float64_113_long_conversion_allowed();
-extern int array_float64_113_to_long(const void *pValue, long *nValue);
-extern void compare_array_float64_113(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_float64_113_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_float64_113(void *pValue);
-extern int release_array_float64_113(void *pValue);
-extern int copy_array_float64_113(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_float64_113_Utils;
+extern int array_float32_113_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_float32_113_string(const char *str, char **endptr);
+extern int string_to_array_float32_113(const char *str, void *pValue, char **endptr);
+extern int is_array_float32_113_double_conversion_allowed();
+extern int array_float32_113_to_double(const void *pValue, double *nValue);
+extern int is_array_float32_113_long_conversion_allowed();
+extern int array_float32_113_to_long(const void *pValue, long *nValue);
+extern void compare_array_float32_113(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_float32_113_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_float32_113(void *pValue);
+extern int release_array_float32_113(void *pValue);
+extern int copy_array_float32_113(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_float32_113_Utils;
 
 /****************************************************************
- ** array_float64_114 
+ ** array_float32_114 
  ****************************************************************/
-extern int array_float64_114_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_float64_114_string(const char *str, char **endptr);
-extern int string_to_array_float64_114(const char *str, void *pValue, char **endptr);
-extern int is_array_float64_114_double_conversion_allowed();
-extern int array_float64_114_to_double(const void *pValue, double *nValue);
-extern int is_array_float64_114_long_conversion_allowed();
-extern int array_float64_114_to_long(const void *pValue, long *nValue);
-extern void compare_array_float64_114(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_float64_114_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_float64_114(void *pValue);
-extern int release_array_float64_114(void *pValue);
-extern int copy_array_float64_114(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_float64_114_Utils;
+extern int array_float32_114_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_float32_114_string(const char *str, char **endptr);
+extern int string_to_array_float32_114(const char *str, void *pValue, char **endptr);
+extern int is_array_float32_114_double_conversion_allowed();
+extern int array_float32_114_to_double(const void *pValue, double *nValue);
+extern int is_array_float32_114_long_conversion_allowed();
+extern int array_float32_114_to_long(const void *pValue, long *nValue);
+extern void compare_array_float32_114(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_float32_114_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_float32_114(void *pValue);
+extern int release_array_float32_114(void *pValue);
+extern int copy_array_float32_114(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_float32_114_Utils;
 
 /****************************************************************
- ** array_float64_12 
+ ** array_float32_12 
  ****************************************************************/
-extern int array_float64_12_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_float64_12_string(const char *str, char **endptr);
-extern int string_to_array_float64_12(const char *str, void *pValue, char **endptr);
-extern int is_array_float64_12_double_conversion_allowed();
-extern int array_float64_12_to_double(const void *pValue, double *nValue);
-extern int is_array_float64_12_long_conversion_allowed();
-extern int array_float64_12_to_long(const void *pValue, long *nValue);
-extern void compare_array_float64_12(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_float64_12_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_float64_12(void *pValue);
-extern int release_array_float64_12(void *pValue);
-extern int copy_array_float64_12(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_float64_12_Utils;
+extern int array_float32_12_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_float32_12_string(const char *str, char **endptr);
+extern int string_to_array_float32_12(const char *str, void *pValue, char **endptr);
+extern int is_array_float32_12_double_conversion_allowed();
+extern int array_float32_12_to_double(const void *pValue, double *nValue);
+extern int is_array_float32_12_long_conversion_allowed();
+extern int array_float32_12_to_long(const void *pValue, long *nValue);
+extern void compare_array_float32_12(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_float32_12_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_float32_12(void *pValue);
+extern int release_array_float32_12(void *pValue);
+extern int copy_array_float32_12(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_float32_12_Utils;
 
 /****************************************************************
- ** array_float64_13 
+ ** array_float32_13 
  ****************************************************************/
-extern int array_float64_13_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_float64_13_string(const char *str, char **endptr);
-extern int string_to_array_float64_13(const char *str, void *pValue, char **endptr);
-extern int is_array_float64_13_double_conversion_allowed();
-extern int array_float64_13_to_double(const void *pValue, double *nValue);
-extern int is_array_float64_13_long_conversion_allowed();
-extern int array_float64_13_to_long(const void *pValue, long *nValue);
-extern void compare_array_float64_13(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_float64_13_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_float64_13(void *pValue);
-extern int release_array_float64_13(void *pValue);
-extern int copy_array_float64_13(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_float64_13_Utils;
+extern int array_float32_13_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_float32_13_string(const char *str, char **endptr);
+extern int string_to_array_float32_13(const char *str, void *pValue, char **endptr);
+extern int is_array_float32_13_double_conversion_allowed();
+extern int array_float32_13_to_double(const void *pValue, double *nValue);
+extern int is_array_float32_13_long_conversion_allowed();
+extern int array_float32_13_to_long(const void *pValue, long *nValue);
+extern void compare_array_float32_13(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_float32_13_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_float32_13(void *pValue);
+extern int release_array_float32_13(void *pValue);
+extern int copy_array_float32_13(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_float32_13_Utils;
 
 /****************************************************************
- ** array_float64_3 
+ ** array_float32_3 
  ****************************************************************/
-extern int array_float64_3_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_float64_3_string(const char *str, char **endptr);
-extern int string_to_array_float64_3(const char *str, void *pValue, char **endptr);
-extern int is_array_float64_3_double_conversion_allowed();
-extern int array_float64_3_to_double(const void *pValue, double *nValue);
-extern int is_array_float64_3_long_conversion_allowed();
-extern int array_float64_3_to_long(const void *pValue, long *nValue);
-extern void compare_array_float64_3(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_float64_3_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_float64_3(void *pValue);
-extern int release_array_float64_3(void *pValue);
-extern int copy_array_float64_3(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_float64_3_Utils;
+extern int array_float32_3_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_float32_3_string(const char *str, char **endptr);
+extern int string_to_array_float32_3(const char *str, void *pValue, char **endptr);
+extern int is_array_float32_3_double_conversion_allowed();
+extern int array_float32_3_to_double(const void *pValue, double *nValue);
+extern int is_array_float32_3_long_conversion_allowed();
+extern int array_float32_3_to_long(const void *pValue, long *nValue);
+extern void compare_array_float32_3(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_float32_3_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_float32_3(void *pValue);
+extern int release_array_float32_3(void *pValue);
+extern int copy_array_float32_3(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_float32_3_Utils;
 
 /****************************************************************
- ** array_float64_32 
+ ** array_float32_32 
  ****************************************************************/
-extern int array_float64_32_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_float64_32_string(const char *str, char **endptr);
-extern int string_to_array_float64_32(const char *str, void *pValue, char **endptr);
-extern int is_array_float64_32_double_conversion_allowed();
-extern int array_float64_32_to_double(const void *pValue, double *nValue);
-extern int is_array_float64_32_long_conversion_allowed();
-extern int array_float64_32_to_long(const void *pValue, long *nValue);
-extern void compare_array_float64_32(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_float64_32_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_float64_32(void *pValue);
-extern int release_array_float64_32(void *pValue);
-extern int copy_array_float64_32(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_float64_32_Utils;
+extern int array_float32_32_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_float32_32_string(const char *str, char **endptr);
+extern int string_to_array_float32_32(const char *str, void *pValue, char **endptr);
+extern int is_array_float32_32_double_conversion_allowed();
+extern int array_float32_32_to_double(const void *pValue, double *nValue);
+extern int is_array_float32_32_long_conversion_allowed();
+extern int array_float32_32_to_long(const void *pValue, long *nValue);
+extern void compare_array_float32_32(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_float32_32_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_float32_32(void *pValue);
+extern int release_array_float32_32(void *pValue);
+extern int copy_array_float32_32(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_float32_32_Utils;
 
 /****************************************************************
- ** array_float64_5 
+ ** array_float32_5 
  ****************************************************************/
-extern int array_float64_5_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_float64_5_string(const char *str, char **endptr);
-extern int string_to_array_float64_5(const char *str, void *pValue, char **endptr);
-extern int is_array_float64_5_double_conversion_allowed();
-extern int array_float64_5_to_double(const void *pValue, double *nValue);
-extern int is_array_float64_5_long_conversion_allowed();
-extern int array_float64_5_to_long(const void *pValue, long *nValue);
-extern void compare_array_float64_5(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_float64_5_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_float64_5(void *pValue);
-extern int release_array_float64_5(void *pValue);
-extern int copy_array_float64_5(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_float64_5_Utils;
+extern int array_float32_5_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_float32_5_string(const char *str, char **endptr);
+extern int string_to_array_float32_5(const char *str, void *pValue, char **endptr);
+extern int is_array_float32_5_double_conversion_allowed();
+extern int array_float32_5_to_double(const void *pValue, double *nValue);
+extern int is_array_float32_5_long_conversion_allowed();
+extern int array_float32_5_to_long(const void *pValue, long *nValue);
+extern void compare_array_float32_5(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_float32_5_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_float32_5(void *pValue);
+extern int release_array_float32_5(void *pValue);
+extern int copy_array_float32_5(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_float32_5_Utils;
 
 /****************************************************************
- ** array_float64_50 
+ ** array_float32_50 
  ****************************************************************/
-extern int array_float64_50_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_float64_50_string(const char *str, char **endptr);
-extern int string_to_array_float64_50(const char *str, void *pValue, char **endptr);
-extern int is_array_float64_50_double_conversion_allowed();
-extern int array_float64_50_to_double(const void *pValue, double *nValue);
-extern int is_array_float64_50_long_conversion_allowed();
-extern int array_float64_50_to_long(const void *pValue, long *nValue);
-extern void compare_array_float64_50(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_float64_50_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_float64_50(void *pValue);
-extern int release_array_float64_50(void *pValue);
-extern int copy_array_float64_50(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_float64_50_Utils;
+extern int array_float32_50_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_float32_50_string(const char *str, char **endptr);
+extern int string_to_array_float32_50(const char *str, void *pValue, char **endptr);
+extern int is_array_float32_50_double_conversion_allowed();
+extern int array_float32_50_to_double(const void *pValue, double *nValue);
+extern int is_array_float32_50_long_conversion_allowed();
+extern int array_float32_50_to_long(const void *pValue, long *nValue);
+extern void compare_array_float32_50(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_float32_50_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_float32_50(void *pValue);
+extern int release_array_float32_50(void *pValue);
+extern int copy_array_float32_50(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_float32_50_Utils;
 
 /****************************************************************
- ** array_float64_5_5 
+ ** array_float32_5_5 
  ****************************************************************/
-extern int array_float64_5_5_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_float64_5_5_string(const char *str, char **endptr);
-extern int string_to_array_float64_5_5(const char *str, void *pValue, char **endptr);
-extern int is_array_float64_5_5_double_conversion_allowed();
-extern int array_float64_5_5_to_double(const void *pValue, double *nValue);
-extern int is_array_float64_5_5_long_conversion_allowed();
-extern int array_float64_5_5_to_long(const void *pValue, long *nValue);
-extern void compare_array_float64_5_5(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_float64_5_5_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_float64_5_5(void *pValue);
-extern int release_array_float64_5_5(void *pValue);
-extern int copy_array_float64_5_5(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_float64_5_5_Utils;
+extern int array_float32_5_5_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_float32_5_5_string(const char *str, char **endptr);
+extern int string_to_array_float32_5_5(const char *str, void *pValue, char **endptr);
+extern int is_array_float32_5_5_double_conversion_allowed();
+extern int array_float32_5_5_to_double(const void *pValue, double *nValue);
+extern int is_array_float32_5_5_long_conversion_allowed();
+extern int array_float32_5_5_to_long(const void *pValue, long *nValue);
+extern void compare_array_float32_5_5(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_float32_5_5_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_float32_5_5(void *pValue);
+extern int release_array_float32_5_5(void *pValue);
+extern int copy_array_float32_5_5(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_float32_5_5_Utils;
 
 /****************************************************************
- ** array_float64_6 
+ ** array_float32_6 
  ****************************************************************/
-extern int array_float64_6_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_float64_6_string(const char *str, char **endptr);
-extern int string_to_array_float64_6(const char *str, void *pValue, char **endptr);
-extern int is_array_float64_6_double_conversion_allowed();
-extern int array_float64_6_to_double(const void *pValue, double *nValue);
-extern int is_array_float64_6_long_conversion_allowed();
-extern int array_float64_6_to_long(const void *pValue, long *nValue);
-extern void compare_array_float64_6(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_float64_6_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_float64_6(void *pValue);
-extern int release_array_float64_6(void *pValue);
-extern int copy_array_float64_6(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_float64_6_Utils;
+extern int array_float32_6_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_float32_6_string(const char *str, char **endptr);
+extern int string_to_array_float32_6(const char *str, void *pValue, char **endptr);
+extern int is_array_float32_6_double_conversion_allowed();
+extern int array_float32_6_to_double(const void *pValue, double *nValue);
+extern int is_array_float32_6_long_conversion_allowed();
+extern int array_float32_6_to_long(const void *pValue, long *nValue);
+extern void compare_array_float32_6(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_float32_6_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_float32_6(void *pValue);
+extern int release_array_float32_6(void *pValue);
+extern int copy_array_float32_6(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_float32_6_Utils;
 
 /****************************************************************
- ** array_float64_8 
+ ** array_float32_8 
  ****************************************************************/
-extern int array_float64_8_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_float64_8_string(const char *str, char **endptr);
-extern int string_to_array_float64_8(const char *str, void *pValue, char **endptr);
-extern int is_array_float64_8_double_conversion_allowed();
-extern int array_float64_8_to_double(const void *pValue, double *nValue);
-extern int is_array_float64_8_long_conversion_allowed();
-extern int array_float64_8_to_long(const void *pValue, long *nValue);
-extern void compare_array_float64_8(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_float64_8_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_float64_8(void *pValue);
-extern int release_array_float64_8(void *pValue);
-extern int copy_array_float64_8(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_float64_8_Utils;
+extern int array_float32_8_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_float32_8_string(const char *str, char **endptr);
+extern int string_to_array_float32_8(const char *str, void *pValue, char **endptr);
+extern int is_array_float32_8_double_conversion_allowed();
+extern int array_float32_8_to_double(const void *pValue, double *nValue);
+extern int is_array_float32_8_long_conversion_allowed();
+extern int array_float32_8_to_long(const void *pValue, long *nValue);
+extern void compare_array_float32_8(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_float32_8_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_float32_8(void *pValue);
+extern int release_array_float32_8(void *pValue);
+extern int copy_array_float32_8(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_float32_8_Utils;
 
 /****************************************************************
- ** array_float64_9_6 
+ ** array_float32_9_6 
  ****************************************************************/
-extern int array_float64_9_6_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_float64_9_6_string(const char *str, char **endptr);
-extern int string_to_array_float64_9_6(const char *str, void *pValue, char **endptr);
-extern int is_array_float64_9_6_double_conversion_allowed();
-extern int array_float64_9_6_to_double(const void *pValue, double *nValue);
-extern int is_array_float64_9_6_long_conversion_allowed();
-extern int array_float64_9_6_to_long(const void *pValue, long *nValue);
-extern void compare_array_float64_9_6(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_float64_9_6_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_float64_9_6(void *pValue);
-extern int release_array_float64_9_6(void *pValue);
-extern int copy_array_float64_9_6(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_float64_9_6_Utils;
+extern int array_float32_9_6_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_float32_9_6_string(const char *str, char **endptr);
+extern int string_to_array_float32_9_6(const char *str, void *pValue, char **endptr);
+extern int is_array_float32_9_6_double_conversion_allowed();
+extern int array_float32_9_6_to_double(const void *pValue, double *nValue);
+extern int is_array_float32_9_6_long_conversion_allowed();
+extern int array_float32_9_6_to_long(const void *pValue, long *nValue);
+extern void compare_array_float32_9_6(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_float32_9_6_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_float32_9_6(void *pValue);
+extern int release_array_float32_9_6(void *pValue);
+extern int copy_array_float32_9_6(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_float32_9_6_Utils;
 
 /****************************************************************
  ** array_int32_10 
@@ -3778,6 +3778,822 @@ extern int copy_array_int32_10(void *pToValue, const void *pFromValue);
 extern SimTypeUtils _Type_array_int32_10_Utils;
 
 /****************************************************************
+ ** array_int32_100 
+ ****************************************************************/
+extern int array_int32_100_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_100_string(const char *str, char **endptr);
+extern int string_to_array_int32_100(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_100_double_conversion_allowed();
+extern int array_int32_100_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_100_long_conversion_allowed();
+extern int array_int32_100_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_100(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_100_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_100(void *pValue);
+extern int release_array_int32_100(void *pValue);
+extern int copy_array_int32_100(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_100_Utils;
+
+/****************************************************************
+ ** array_int32_104 
+ ****************************************************************/
+extern int array_int32_104_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_104_string(const char *str, char **endptr);
+extern int string_to_array_int32_104(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_104_double_conversion_allowed();
+extern int array_int32_104_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_104_long_conversion_allowed();
+extern int array_int32_104_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_104(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_104_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_104(void *pValue);
+extern int release_array_int32_104(void *pValue);
+extern int copy_array_int32_104(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_104_Utils;
+
+/****************************************************************
+ ** array_int32_105 
+ ****************************************************************/
+extern int array_int32_105_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_105_string(const char *str, char **endptr);
+extern int string_to_array_int32_105(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_105_double_conversion_allowed();
+extern int array_int32_105_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_105_long_conversion_allowed();
+extern int array_int32_105_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_105(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_105_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_105(void *pValue);
+extern int release_array_int32_105(void *pValue);
+extern int copy_array_int32_105(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_105_Utils;
+
+/****************************************************************
+ ** array_int32_11 
+ ****************************************************************/
+extern int array_int32_11_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_11_string(const char *str, char **endptr);
+extern int string_to_array_int32_11(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_11_double_conversion_allowed();
+extern int array_int32_11_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_11_long_conversion_allowed();
+extern int array_int32_11_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_11(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_11_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_11(void *pValue);
+extern int release_array_int32_11(void *pValue);
+extern int copy_array_int32_11(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_11_Utils;
+
+/****************************************************************
+ ** array_int32_110 
+ ****************************************************************/
+extern int array_int32_110_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_110_string(const char *str, char **endptr);
+extern int string_to_array_int32_110(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_110_double_conversion_allowed();
+extern int array_int32_110_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_110_long_conversion_allowed();
+extern int array_int32_110_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_110(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_110_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_110(void *pValue);
+extern int release_array_int32_110(void *pValue);
+extern int copy_array_int32_110(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_110_Utils;
+
+/****************************************************************
+ ** array_int32_114 
+ ****************************************************************/
+extern int array_int32_114_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_114_string(const char *str, char **endptr);
+extern int string_to_array_int32_114(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_114_double_conversion_allowed();
+extern int array_int32_114_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_114_long_conversion_allowed();
+extern int array_int32_114_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_114(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_114_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_114(void *pValue);
+extern int release_array_int32_114(void *pValue);
+extern int copy_array_int32_114(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_114_Utils;
+
+/****************************************************************
+ ** array_int32_12 
+ ****************************************************************/
+extern int array_int32_12_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_12_string(const char *str, char **endptr);
+extern int string_to_array_int32_12(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_12_double_conversion_allowed();
+extern int array_int32_12_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_12_long_conversion_allowed();
+extern int array_int32_12_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_12(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_12_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_12(void *pValue);
+extern int release_array_int32_12(void *pValue);
+extern int copy_array_int32_12(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_12_Utils;
+
+/****************************************************************
+ ** array_int32_128 
+ ****************************************************************/
+extern int array_int32_128_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_128_string(const char *str, char **endptr);
+extern int string_to_array_int32_128(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_128_double_conversion_allowed();
+extern int array_int32_128_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_128_long_conversion_allowed();
+extern int array_int32_128_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_128(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_128_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_128(void *pValue);
+extern int release_array_int32_128(void *pValue);
+extern int copy_array_int32_128(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_128_Utils;
+
+/****************************************************************
+ ** array_int32_128_32 
+ ****************************************************************/
+extern int array_int32_128_32_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_128_32_string(const char *str, char **endptr);
+extern int string_to_array_int32_128_32(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_128_32_double_conversion_allowed();
+extern int array_int32_128_32_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_128_32_long_conversion_allowed();
+extern int array_int32_128_32_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_128_32(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_128_32_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_128_32(void *pValue);
+extern int release_array_int32_128_32(void *pValue);
+extern int copy_array_int32_128_32(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_128_32_Utils;
+
+/****************************************************************
+ ** array_int32_129 
+ ****************************************************************/
+extern int array_int32_129_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_129_string(const char *str, char **endptr);
+extern int string_to_array_int32_129(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_129_double_conversion_allowed();
+extern int array_int32_129_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_129_long_conversion_allowed();
+extern int array_int32_129_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_129(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_129_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_129(void *pValue);
+extern int release_array_int32_129(void *pValue);
+extern int copy_array_int32_129(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_129_Utils;
+
+/****************************************************************
+ ** array_int32_13 
+ ****************************************************************/
+extern int array_int32_13_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_13_string(const char *str, char **endptr);
+extern int string_to_array_int32_13(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_13_double_conversion_allowed();
+extern int array_int32_13_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_13_long_conversion_allowed();
+extern int array_int32_13_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_13(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_13_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_13(void *pValue);
+extern int release_array_int32_13(void *pValue);
+extern int copy_array_int32_13(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_13_Utils;
+
+/****************************************************************
+ ** array_int32_131 
+ ****************************************************************/
+extern int array_int32_131_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_131_string(const char *str, char **endptr);
+extern int string_to_array_int32_131(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_131_double_conversion_allowed();
+extern int array_int32_131_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_131_long_conversion_allowed();
+extern int array_int32_131_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_131(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_131_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_131(void *pValue);
+extern int release_array_int32_131(void *pValue);
+extern int copy_array_int32_131(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_131_Utils;
+
+/****************************************************************
+ ** array_int32_14 
+ ****************************************************************/
+extern int array_int32_14_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_14_string(const char *str, char **endptr);
+extern int string_to_array_int32_14(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_14_double_conversion_allowed();
+extern int array_int32_14_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_14_long_conversion_allowed();
+extern int array_int32_14_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_14(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_14_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_14(void *pValue);
+extern int release_array_int32_14(void *pValue);
+extern int copy_array_int32_14(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_14_Utils;
+
+/****************************************************************
+ ** array_int32_15 
+ ****************************************************************/
+extern int array_int32_15_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_15_string(const char *str, char **endptr);
+extern int string_to_array_int32_15(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_15_double_conversion_allowed();
+extern int array_int32_15_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_15_long_conversion_allowed();
+extern int array_int32_15_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_15(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_15_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_15(void *pValue);
+extern int release_array_int32_15(void *pValue);
+extern int copy_array_int32_15(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_15_Utils;
+
+/****************************************************************
+ ** array_int32_150 
+ ****************************************************************/
+extern int array_int32_150_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_150_string(const char *str, char **endptr);
+extern int string_to_array_int32_150(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_150_double_conversion_allowed();
+extern int array_int32_150_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_150_long_conversion_allowed();
+extern int array_int32_150_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_150(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_150_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_150(void *pValue);
+extern int release_array_int32_150(void *pValue);
+extern int copy_array_int32_150(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_150_Utils;
+
+/****************************************************************
+ ** array_int32_17 
+ ****************************************************************/
+extern int array_int32_17_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_17_string(const char *str, char **endptr);
+extern int string_to_array_int32_17(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_17_double_conversion_allowed();
+extern int array_int32_17_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_17_long_conversion_allowed();
+extern int array_int32_17_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_17(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_17_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_17(void *pValue);
+extern int release_array_int32_17(void *pValue);
+extern int copy_array_int32_17(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_17_Utils;
+
+/****************************************************************
+ ** array_int32_18 
+ ****************************************************************/
+extern int array_int32_18_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_18_string(const char *str, char **endptr);
+extern int string_to_array_int32_18(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_18_double_conversion_allowed();
+extern int array_int32_18_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_18_long_conversion_allowed();
+extern int array_int32_18_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_18(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_18_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_18(void *pValue);
+extern int release_array_int32_18(void *pValue);
+extern int copy_array_int32_18(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_18_Utils;
+
+/****************************************************************
+ ** array_int32_198_33 
+ ****************************************************************/
+extern int array_int32_198_33_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_198_33_string(const char *str, char **endptr);
+extern int string_to_array_int32_198_33(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_198_33_double_conversion_allowed();
+extern int array_int32_198_33_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_198_33_long_conversion_allowed();
+extern int array_int32_198_33_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_198_33(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_198_33_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_198_33(void *pValue);
+extern int release_array_int32_198_33(void *pValue);
+extern int copy_array_int32_198_33(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_198_33_Utils;
+
+/****************************************************************
+ ** array_int32_2 
+ ****************************************************************/
+extern int array_int32_2_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_2_string(const char *str, char **endptr);
+extern int string_to_array_int32_2(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_2_double_conversion_allowed();
+extern int array_int32_2_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_2_long_conversion_allowed();
+extern int array_int32_2_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_2(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_2_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_2(void *pValue);
+extern int release_array_int32_2(void *pValue);
+extern int copy_array_int32_2(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_2_Utils;
+
+/****************************************************************
+ ** array_int32_20 
+ ****************************************************************/
+extern int array_int32_20_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_20_string(const char *str, char **endptr);
+extern int string_to_array_int32_20(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_20_double_conversion_allowed();
+extern int array_int32_20_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_20_long_conversion_allowed();
+extern int array_int32_20_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_20(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_20_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_20(void *pValue);
+extern int release_array_int32_20(void *pValue);
+extern int copy_array_int32_20(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_20_Utils;
+
+/****************************************************************
+ ** array_int32_21 
+ ****************************************************************/
+extern int array_int32_21_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_21_string(const char *str, char **endptr);
+extern int string_to_array_int32_21(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_21_double_conversion_allowed();
+extern int array_int32_21_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_21_long_conversion_allowed();
+extern int array_int32_21_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_21(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_21_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_21(void *pValue);
+extern int release_array_int32_21(void *pValue);
+extern int copy_array_int32_21(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_21_Utils;
+
+/****************************************************************
+ ** array_int32_22 
+ ****************************************************************/
+extern int array_int32_22_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_22_string(const char *str, char **endptr);
+extern int string_to_array_int32_22(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_22_double_conversion_allowed();
+extern int array_int32_22_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_22_long_conversion_allowed();
+extern int array_int32_22_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_22(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_22_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_22(void *pValue);
+extern int release_array_int32_22(void *pValue);
+extern int copy_array_int32_22(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_22_Utils;
+
+/****************************************************************
+ ** array_int32_221 
+ ****************************************************************/
+extern int array_int32_221_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_221_string(const char *str, char **endptr);
+extern int string_to_array_int32_221(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_221_double_conversion_allowed();
+extern int array_int32_221_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_221_long_conversion_allowed();
+extern int array_int32_221_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_221(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_221_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_221(void *pValue);
+extern int release_array_int32_221(void *pValue);
+extern int copy_array_int32_221(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_221_Utils;
+
+/****************************************************************
+ ** array_int32_23 
+ ****************************************************************/
+extern int array_int32_23_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_23_string(const char *str, char **endptr);
+extern int string_to_array_int32_23(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_23_double_conversion_allowed();
+extern int array_int32_23_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_23_long_conversion_allowed();
+extern int array_int32_23_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_23(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_23_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_23(void *pValue);
+extern int release_array_int32_23(void *pValue);
+extern int copy_array_int32_23(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_23_Utils;
+
+/****************************************************************
+ ** array_int32_24 
+ ****************************************************************/
+extern int array_int32_24_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_24_string(const char *str, char **endptr);
+extern int string_to_array_int32_24(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_24_double_conversion_allowed();
+extern int array_int32_24_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_24_long_conversion_allowed();
+extern int array_int32_24_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_24(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_24_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_24(void *pValue);
+extern int release_array_int32_24(void *pValue);
+extern int copy_array_int32_24(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_24_Utils;
+
+/****************************************************************
+ ** array_int32_25 
+ ****************************************************************/
+extern int array_int32_25_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_25_string(const char *str, char **endptr);
+extern int string_to_array_int32_25(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_25_double_conversion_allowed();
+extern int array_int32_25_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_25_long_conversion_allowed();
+extern int array_int32_25_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_25(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_25_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_25(void *pValue);
+extern int release_array_int32_25(void *pValue);
+extern int copy_array_int32_25(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_25_Utils;
+
+/****************************************************************
+ ** array_int32_260 
+ ****************************************************************/
+extern int array_int32_260_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_260_string(const char *str, char **endptr);
+extern int string_to_array_int32_260(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_260_double_conversion_allowed();
+extern int array_int32_260_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_260_long_conversion_allowed();
+extern int array_int32_260_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_260(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_260_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_260(void *pValue);
+extern int release_array_int32_260(void *pValue);
+extern int copy_array_int32_260(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_260_Utils;
+
+/****************************************************************
+ ** array_int32_261 
+ ****************************************************************/
+extern int array_int32_261_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_261_string(const char *str, char **endptr);
+extern int string_to_array_int32_261(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_261_double_conversion_allowed();
+extern int array_int32_261_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_261_long_conversion_allowed();
+extern int array_int32_261_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_261(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_261_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_261(void *pValue);
+extern int release_array_int32_261(void *pValue);
+extern int copy_array_int32_261(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_261_Utils;
+
+/****************************************************************
+ ** array_int32_266 
+ ****************************************************************/
+extern int array_int32_266_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_266_string(const char *str, char **endptr);
+extern int string_to_array_int32_266(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_266_double_conversion_allowed();
+extern int array_int32_266_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_266_long_conversion_allowed();
+extern int array_int32_266_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_266(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_266_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_266(void *pValue);
+extern int release_array_int32_266(void *pValue);
+extern int copy_array_int32_266(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_266_Utils;
+
+/****************************************************************
+ ** array_int32_269 
+ ****************************************************************/
+extern int array_int32_269_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_269_string(const char *str, char **endptr);
+extern int string_to_array_int32_269(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_269_double_conversion_allowed();
+extern int array_int32_269_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_269_long_conversion_allowed();
+extern int array_int32_269_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_269(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_269_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_269(void *pValue);
+extern int release_array_int32_269(void *pValue);
+extern int copy_array_int32_269(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_269_Utils;
+
+/****************************************************************
+ ** array_int32_28 
+ ****************************************************************/
+extern int array_int32_28_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_28_string(const char *str, char **endptr);
+extern int string_to_array_int32_28(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_28_double_conversion_allowed();
+extern int array_int32_28_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_28_long_conversion_allowed();
+extern int array_int32_28_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_28(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_28_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_28(void *pValue);
+extern int release_array_int32_28(void *pValue);
+extern int copy_array_int32_28(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_28_Utils;
+
+/****************************************************************
+ ** array_int32_280 
+ ****************************************************************/
+extern int array_int32_280_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_280_string(const char *str, char **endptr);
+extern int string_to_array_int32_280(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_280_double_conversion_allowed();
+extern int array_int32_280_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_280_long_conversion_allowed();
+extern int array_int32_280_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_280(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_280_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_280(void *pValue);
+extern int release_array_int32_280(void *pValue);
+extern int copy_array_int32_280(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_280_Utils;
+
+/****************************************************************
+ ** array_int32_283 
+ ****************************************************************/
+extern int array_int32_283_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_283_string(const char *str, char **endptr);
+extern int string_to_array_int32_283(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_283_double_conversion_allowed();
+extern int array_int32_283_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_283_long_conversion_allowed();
+extern int array_int32_283_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_283(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_283_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_283(void *pValue);
+extern int release_array_int32_283(void *pValue);
+extern int copy_array_int32_283(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_283_Utils;
+
+/****************************************************************
+ ** array_int32_285 
+ ****************************************************************/
+extern int array_int32_285_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_285_string(const char *str, char **endptr);
+extern int string_to_array_int32_285(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_285_double_conversion_allowed();
+extern int array_int32_285_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_285_long_conversion_allowed();
+extern int array_int32_285_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_285(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_285_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_285(void *pValue);
+extern int release_array_int32_285(void *pValue);
+extern int copy_array_int32_285(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_285_Utils;
+
+/****************************************************************
+ ** array_int32_289 
+ ****************************************************************/
+extern int array_int32_289_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_289_string(const char *str, char **endptr);
+extern int string_to_array_int32_289(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_289_double_conversion_allowed();
+extern int array_int32_289_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_289_long_conversion_allowed();
+extern int array_int32_289_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_289(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_289_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_289(void *pValue);
+extern int release_array_int32_289(void *pValue);
+extern int copy_array_int32_289(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_289_Utils;
+
+/****************************************************************
+ ** array_int32_292 
+ ****************************************************************/
+extern int array_int32_292_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_292_string(const char *str, char **endptr);
+extern int string_to_array_int32_292(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_292_double_conversion_allowed();
+extern int array_int32_292_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_292_long_conversion_allowed();
+extern int array_int32_292_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_292(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_292_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_292(void *pValue);
+extern int release_array_int32_292(void *pValue);
+extern int copy_array_int32_292(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_292_Utils;
+
+/****************************************************************
+ ** array_int32_2_32 
+ ****************************************************************/
+extern int array_int32_2_32_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_2_32_string(const char *str, char **endptr);
+extern int string_to_array_int32_2_32(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_2_32_double_conversion_allowed();
+extern int array_int32_2_32_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_2_32_long_conversion_allowed();
+extern int array_int32_2_32_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_2_32(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_2_32_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_2_32(void *pValue);
+extern int release_array_int32_2_32(void *pValue);
+extern int copy_array_int32_2_32(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_2_32_Utils;
+
+/****************************************************************
+ ** array_int32_2_32_32 
+ ****************************************************************/
+extern int array_int32_2_32_32_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_2_32_32_string(const char *str, char **endptr);
+extern int string_to_array_int32_2_32_32(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_2_32_32_double_conversion_allowed();
+extern int array_int32_2_32_32_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_2_32_32_long_conversion_allowed();
+extern int array_int32_2_32_32_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_2_32_32(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_2_32_32_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_2_32_32(void *pValue);
+extern int release_array_int32_2_32_32(void *pValue);
+extern int copy_array_int32_2_32_32(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_2_32_32_Utils;
+
+/****************************************************************
+ ** array_int32_2_32_64 
+ ****************************************************************/
+extern int array_int32_2_32_64_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_2_32_64_string(const char *str, char **endptr);
+extern int string_to_array_int32_2_32_64(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_2_32_64_double_conversion_allowed();
+extern int array_int32_2_32_64_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_2_32_64_long_conversion_allowed();
+extern int array_int32_2_32_64_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_2_32_64(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_2_32_64_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_2_32_64(void *pValue);
+extern int release_array_int32_2_32_64(void *pValue);
+extern int copy_array_int32_2_32_64(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_2_32_64_Utils;
+
+/****************************************************************
+ ** array_int32_2_33_99 
+ ****************************************************************/
+extern int array_int32_2_33_99_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_2_33_99_string(const char *str, char **endptr);
+extern int string_to_array_int32_2_33_99(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_2_33_99_double_conversion_allowed();
+extern int array_int32_2_33_99_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_2_33_99_long_conversion_allowed();
+extern int array_int32_2_33_99_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_2_33_99(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_2_33_99_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_2_33_99(void *pValue);
+extern int release_array_int32_2_33_99(void *pValue);
+extern int copy_array_int32_2_33_99(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_2_33_99_Utils;
+
+/****************************************************************
+ ** array_int32_2_4_8 
+ ****************************************************************/
+extern int array_int32_2_4_8_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_2_4_8_string(const char *str, char **endptr);
+extern int string_to_array_int32_2_4_8(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_2_4_8_double_conversion_allowed();
+extern int array_int32_2_4_8_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_2_4_8_long_conversion_allowed();
+extern int array_int32_2_4_8_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_2_4_8(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_2_4_8_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_2_4_8(void *pValue);
+extern int release_array_int32_2_4_8(void *pValue);
+extern int copy_array_int32_2_4_8(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_2_4_8_Utils;
+
+/****************************************************************
+ ** array_int32_3 
+ ****************************************************************/
+extern int array_int32_3_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_3_string(const char *str, char **endptr);
+extern int string_to_array_int32_3(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_3_double_conversion_allowed();
+extern int array_int32_3_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_3_long_conversion_allowed();
+extern int array_int32_3_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_3(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_3_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_3(void *pValue);
+extern int release_array_int32_3(void *pValue);
+extern int copy_array_int32_3(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_3_Utils;
+
+/****************************************************************
+ ** array_int32_30 
+ ****************************************************************/
+extern int array_int32_30_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_30_string(const char *str, char **endptr);
+extern int string_to_array_int32_30(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_30_double_conversion_allowed();
+extern int array_int32_30_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_30_long_conversion_allowed();
+extern int array_int32_30_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_30(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_30_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_30(void *pValue);
+extern int release_array_int32_30(void *pValue);
+extern int copy_array_int32_30(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_30_Utils;
+
+/****************************************************************
+ ** array_int32_301 
+ ****************************************************************/
+extern int array_int32_301_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_301_string(const char *str, char **endptr);
+extern int string_to_array_int32_301(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_301_double_conversion_allowed();
+extern int array_int32_301_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_301_long_conversion_allowed();
+extern int array_int32_301_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_301(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_301_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_301(void *pValue);
+extern int release_array_int32_301(void *pValue);
+extern int copy_array_int32_301(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_301_Utils;
+
+/****************************************************************
+ ** array_int32_302 
+ ****************************************************************/
+extern int array_int32_302_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_302_string(const char *str, char **endptr);
+extern int string_to_array_int32_302(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_302_double_conversion_allowed();
+extern int array_int32_302_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_302_long_conversion_allowed();
+extern int array_int32_302_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_302(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_302_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_302(void *pValue);
+extern int release_array_int32_302(void *pValue);
+extern int copy_array_int32_302(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_302_Utils;
+
+/****************************************************************
+ ** array_int32_304 
+ ****************************************************************/
+extern int array_int32_304_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_304_string(const char *str, char **endptr);
+extern int string_to_array_int32_304(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_304_double_conversion_allowed();
+extern int array_int32_304_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_304_long_conversion_allowed();
+extern int array_int32_304_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_304(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_304_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_304(void *pValue);
+extern int release_array_int32_304(void *pValue);
+extern int copy_array_int32_304(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_304_Utils;
+
+/****************************************************************
+ ** array_int32_307 
+ ****************************************************************/
+extern int array_int32_307_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_307_string(const char *str, char **endptr);
+extern int string_to_array_int32_307(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_307_double_conversion_allowed();
+extern int array_int32_307_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_307_long_conversion_allowed();
+extern int array_int32_307_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_307(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_307_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_307(void *pValue);
+extern int release_array_int32_307(void *pValue);
+extern int copy_array_int32_307(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_307_Utils;
+
+/****************************************************************
+ ** array_int32_31 
+ ****************************************************************/
+extern int array_int32_31_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_31_string(const char *str, char **endptr);
+extern int string_to_array_int32_31(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_31_double_conversion_allowed();
+extern int array_int32_31_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_31_long_conversion_allowed();
+extern int array_int32_31_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_31(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_31_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_31(void *pValue);
+extern int release_array_int32_31(void *pValue);
+extern int copy_array_int32_31(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_31_Utils;
+
+/****************************************************************
  ** array_int32_32 
  ****************************************************************/
 extern int array_int32_32_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
@@ -3793,6 +4609,142 @@ extern int init_array_int32_32(void *pValue);
 extern int release_array_int32_32(void *pValue);
 extern int copy_array_int32_32(void *pToValue, const void *pFromValue);
 extern SimTypeUtils _Type_array_int32_32_Utils;
+
+/****************************************************************
+ ** array_int32_32_32 
+ ****************************************************************/
+extern int array_int32_32_32_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_32_32_string(const char *str, char **endptr);
+extern int string_to_array_int32_32_32(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_32_32_double_conversion_allowed();
+extern int array_int32_32_32_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_32_32_long_conversion_allowed();
+extern int array_int32_32_32_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_32_32(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_32_32_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_32_32(void *pValue);
+extern int release_array_int32_32_32(void *pValue);
+extern int copy_array_int32_32_32(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_32_32_Utils;
+
+/****************************************************************
+ ** array_int32_33 
+ ****************************************************************/
+extern int array_int32_33_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_33_string(const char *str, char **endptr);
+extern int string_to_array_int32_33(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_33_double_conversion_allowed();
+extern int array_int32_33_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_33_long_conversion_allowed();
+extern int array_int32_33_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_33(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_33_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_33(void *pValue);
+extern int release_array_int32_33(void *pValue);
+extern int copy_array_int32_33(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_33_Utils;
+
+/****************************************************************
+ ** array_int32_350 
+ ****************************************************************/
+extern int array_int32_350_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_350_string(const char *str, char **endptr);
+extern int string_to_array_int32_350(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_350_double_conversion_allowed();
+extern int array_int32_350_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_350_long_conversion_allowed();
+extern int array_int32_350_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_350(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_350_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_350(void *pValue);
+extern int release_array_int32_350(void *pValue);
+extern int copy_array_int32_350(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_350_Utils;
+
+/****************************************************************
+ ** array_int32_395 
+ ****************************************************************/
+extern int array_int32_395_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_395_string(const char *str, char **endptr);
+extern int string_to_array_int32_395(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_395_double_conversion_allowed();
+extern int array_int32_395_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_395_long_conversion_allowed();
+extern int array_int32_395_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_395(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_395_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_395(void *pValue);
+extern int release_array_int32_395(void *pValue);
+extern int copy_array_int32_395(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_395_Utils;
+
+/****************************************************************
+ ** array_int32_396 
+ ****************************************************************/
+extern int array_int32_396_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_396_string(const char *str, char **endptr);
+extern int string_to_array_int32_396(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_396_double_conversion_allowed();
+extern int array_int32_396_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_396_long_conversion_allowed();
+extern int array_int32_396_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_396(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_396_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_396(void *pValue);
+extern int release_array_int32_396(void *pValue);
+extern int copy_array_int32_396(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_396_Utils;
+
+/****************************************************************
+ ** array_int32_3_33 
+ ****************************************************************/
+extern int array_int32_3_33_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_3_33_string(const char *str, char **endptr);
+extern int string_to_array_int32_3_33(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_3_33_double_conversion_allowed();
+extern int array_int32_3_33_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_3_33_long_conversion_allowed();
+extern int array_int32_3_33_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_3_33(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_3_33_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_3_33(void *pValue);
+extern int release_array_int32_3_33(void *pValue);
+extern int copy_array_int32_3_33(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_3_33_Utils;
+
+/****************************************************************
+ ** array_int32_3_33_231 
+ ****************************************************************/
+extern int array_int32_3_33_231_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_3_33_231_string(const char *str, char **endptr);
+extern int string_to_array_int32_3_33_231(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_3_33_231_double_conversion_allowed();
+extern int array_int32_3_33_231_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_3_33_231_long_conversion_allowed();
+extern int array_int32_3_33_231_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_3_33_231(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_3_33_231_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_3_33_231(void *pValue);
+extern int release_array_int32_3_33_231(void *pValue);
+extern int copy_array_int32_3_33_231(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_3_33_231_Utils;
+
+/****************************************************************
+ ** array_int32_3_33_99 
+ ****************************************************************/
+extern int array_int32_3_33_99_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_3_33_99_string(const char *str, char **endptr);
+extern int string_to_array_int32_3_33_99(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_3_33_99_double_conversion_allowed();
+extern int array_int32_3_33_99_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_3_33_99_long_conversion_allowed();
+extern int array_int32_3_33_99_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_3_33_99(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_3_33_99_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_3_33_99(void *pValue);
+extern int release_array_int32_3_33_99(void *pValue);
+extern int copy_array_int32_3_33_99(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_3_33_99_Utils;
 
 /****************************************************************
  ** array_int32_4 
@@ -3812,1789 +4764,786 @@ extern int copy_array_int32_4(void *pToValue, const void *pFromValue);
 extern SimTypeUtils _Type_array_int32_4_Utils;
 
 /****************************************************************
- ** array_int64_10 
- ****************************************************************/
-extern int array_int64_10_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_10_string(const char *str, char **endptr);
-extern int string_to_array_int64_10(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_10_double_conversion_allowed();
-extern int array_int64_10_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_10_long_conversion_allowed();
-extern int array_int64_10_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_10(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_10_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_10(void *pValue);
-extern int release_array_int64_10(void *pValue);
-extern int copy_array_int64_10(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_10_Utils;
-
-/****************************************************************
- ** array_int64_100 
- ****************************************************************/
-extern int array_int64_100_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_100_string(const char *str, char **endptr);
-extern int string_to_array_int64_100(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_100_double_conversion_allowed();
-extern int array_int64_100_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_100_long_conversion_allowed();
-extern int array_int64_100_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_100(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_100_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_100(void *pValue);
-extern int release_array_int64_100(void *pValue);
-extern int copy_array_int64_100(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_100_Utils;
-
-/****************************************************************
- ** array_int64_104 
- ****************************************************************/
-extern int array_int64_104_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_104_string(const char *str, char **endptr);
-extern int string_to_array_int64_104(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_104_double_conversion_allowed();
-extern int array_int64_104_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_104_long_conversion_allowed();
-extern int array_int64_104_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_104(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_104_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_104(void *pValue);
-extern int release_array_int64_104(void *pValue);
-extern int copy_array_int64_104(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_104_Utils;
-
-/****************************************************************
- ** array_int64_105 
- ****************************************************************/
-extern int array_int64_105_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_105_string(const char *str, char **endptr);
-extern int string_to_array_int64_105(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_105_double_conversion_allowed();
-extern int array_int64_105_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_105_long_conversion_allowed();
-extern int array_int64_105_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_105(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_105_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_105(void *pValue);
-extern int release_array_int64_105(void *pValue);
-extern int copy_array_int64_105(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_105_Utils;
-
-/****************************************************************
- ** array_int64_11 
- ****************************************************************/
-extern int array_int64_11_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_11_string(const char *str, char **endptr);
-extern int string_to_array_int64_11(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_11_double_conversion_allowed();
-extern int array_int64_11_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_11_long_conversion_allowed();
-extern int array_int64_11_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_11(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_11_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_11(void *pValue);
-extern int release_array_int64_11(void *pValue);
-extern int copy_array_int64_11(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_11_Utils;
-
-/****************************************************************
- ** array_int64_110 
- ****************************************************************/
-extern int array_int64_110_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_110_string(const char *str, char **endptr);
-extern int string_to_array_int64_110(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_110_double_conversion_allowed();
-extern int array_int64_110_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_110_long_conversion_allowed();
-extern int array_int64_110_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_110(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_110_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_110(void *pValue);
-extern int release_array_int64_110(void *pValue);
-extern int copy_array_int64_110(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_110_Utils;
-
+ ** array_int32_40 
+ ****************************************************************/
+extern int array_int32_40_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_40_string(const char *str, char **endptr);
+extern int string_to_array_int32_40(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_40_double_conversion_allowed();
+extern int array_int32_40_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_40_long_conversion_allowed();
+extern int array_int32_40_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_40(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_40_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_40(void *pValue);
+extern int release_array_int32_40(void *pValue);
+extern int copy_array_int32_40(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_40_Utils;
+
+/****************************************************************
+ ** array_int32_400 
+ ****************************************************************/
+extern int array_int32_400_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_400_string(const char *str, char **endptr);
+extern int string_to_array_int32_400(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_400_double_conversion_allowed();
+extern int array_int32_400_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_400_long_conversion_allowed();
+extern int array_int32_400_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_400(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_400_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_400(void *pValue);
+extern int release_array_int32_400(void *pValue);
+extern int copy_array_int32_400(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_400_Utils;
+
+/****************************************************************
+ ** array_int32_41 
+ ****************************************************************/
+extern int array_int32_41_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_41_string(const char *str, char **endptr);
+extern int string_to_array_int32_41(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_41_double_conversion_allowed();
+extern int array_int32_41_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_41_long_conversion_allowed();
+extern int array_int32_41_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_41(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_41_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_41(void *pValue);
+extern int release_array_int32_41(void *pValue);
+extern int copy_array_int32_41(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_41_Utils;
+
+/****************************************************************
+ ** array_int32_42 
+ ****************************************************************/
+extern int array_int32_42_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_42_string(const char *str, char **endptr);
+extern int string_to_array_int32_42(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_42_double_conversion_allowed();
+extern int array_int32_42_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_42_long_conversion_allowed();
+extern int array_int32_42_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_42(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_42_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_42(void *pValue);
+extern int release_array_int32_42(void *pValue);
+extern int copy_array_int32_42(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_42_Utils;
+
+/****************************************************************
+ ** array_int32_428 
+ ****************************************************************/
+extern int array_int32_428_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_428_string(const char *str, char **endptr);
+extern int string_to_array_int32_428(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_428_double_conversion_allowed();
+extern int array_int32_428_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_428_long_conversion_allowed();
+extern int array_int32_428_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_428(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_428_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_428(void *pValue);
+extern int release_array_int32_428(void *pValue);
+extern int copy_array_int32_428(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_428_Utils;
+
+/****************************************************************
+ ** array_int32_430 
+ ****************************************************************/
+extern int array_int32_430_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_430_string(const char *str, char **endptr);
+extern int string_to_array_int32_430(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_430_double_conversion_allowed();
+extern int array_int32_430_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_430_long_conversion_allowed();
+extern int array_int32_430_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_430(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_430_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_430(void *pValue);
+extern int release_array_int32_430(void *pValue);
+extern int copy_array_int32_430(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_430_Utils;
+
 /****************************************************************
- ** array_int64_114 
- ****************************************************************/
-extern int array_int64_114_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_114_string(const char *str, char **endptr);
-extern int string_to_array_int64_114(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_114_double_conversion_allowed();
-extern int array_int64_114_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_114_long_conversion_allowed();
-extern int array_int64_114_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_114(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_114_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_114(void *pValue);
-extern int release_array_int64_114(void *pValue);
-extern int copy_array_int64_114(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_114_Utils;
-
-/****************************************************************
- ** array_int64_12 
- ****************************************************************/
-extern int array_int64_12_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_12_string(const char *str, char **endptr);
-extern int string_to_array_int64_12(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_12_double_conversion_allowed();
-extern int array_int64_12_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_12_long_conversion_allowed();
-extern int array_int64_12_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_12(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_12_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_12(void *pValue);
-extern int release_array_int64_12(void *pValue);
-extern int copy_array_int64_12(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_12_Utils;
-
-/****************************************************************
- ** array_int64_128 
- ****************************************************************/
-extern int array_int64_128_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_128_string(const char *str, char **endptr);
-extern int string_to_array_int64_128(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_128_double_conversion_allowed();
-extern int array_int64_128_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_128_long_conversion_allowed();
-extern int array_int64_128_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_128(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_128_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_128(void *pValue);
-extern int release_array_int64_128(void *pValue);
-extern int copy_array_int64_128(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_128_Utils;
-
-/****************************************************************
- ** array_int64_128_32 
- ****************************************************************/
-extern int array_int64_128_32_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_128_32_string(const char *str, char **endptr);
-extern int string_to_array_int64_128_32(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_128_32_double_conversion_allowed();
-extern int array_int64_128_32_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_128_32_long_conversion_allowed();
-extern int array_int64_128_32_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_128_32(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_128_32_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_128_32(void *pValue);
-extern int release_array_int64_128_32(void *pValue);
-extern int copy_array_int64_128_32(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_128_32_Utils;
-
-/****************************************************************
- ** array_int64_129 
- ****************************************************************/
-extern int array_int64_129_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_129_string(const char *str, char **endptr);
-extern int string_to_array_int64_129(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_129_double_conversion_allowed();
-extern int array_int64_129_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_129_long_conversion_allowed();
-extern int array_int64_129_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_129(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_129_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_129(void *pValue);
-extern int release_array_int64_129(void *pValue);
-extern int copy_array_int64_129(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_129_Utils;
-
-/****************************************************************
- ** array_int64_13 
- ****************************************************************/
-extern int array_int64_13_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_13_string(const char *str, char **endptr);
-extern int string_to_array_int64_13(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_13_double_conversion_allowed();
-extern int array_int64_13_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_13_long_conversion_allowed();
-extern int array_int64_13_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_13(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_13_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_13(void *pValue);
-extern int release_array_int64_13(void *pValue);
-extern int copy_array_int64_13(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_13_Utils;
-
-/****************************************************************
- ** array_int64_131 
- ****************************************************************/
-extern int array_int64_131_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_131_string(const char *str, char **endptr);
-extern int string_to_array_int64_131(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_131_double_conversion_allowed();
-extern int array_int64_131_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_131_long_conversion_allowed();
-extern int array_int64_131_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_131(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_131_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_131(void *pValue);
-extern int release_array_int64_131(void *pValue);
-extern int copy_array_int64_131(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_131_Utils;
-
-/****************************************************************
- ** array_int64_14 
- ****************************************************************/
-extern int array_int64_14_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_14_string(const char *str, char **endptr);
-extern int string_to_array_int64_14(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_14_double_conversion_allowed();
-extern int array_int64_14_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_14_long_conversion_allowed();
-extern int array_int64_14_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_14(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_14_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_14(void *pValue);
-extern int release_array_int64_14(void *pValue);
-extern int copy_array_int64_14(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_14_Utils;
-
-/****************************************************************
- ** array_int64_15 
- ****************************************************************/
-extern int array_int64_15_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_15_string(const char *str, char **endptr);
-extern int string_to_array_int64_15(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_15_double_conversion_allowed();
-extern int array_int64_15_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_15_long_conversion_allowed();
-extern int array_int64_15_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_15(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_15_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_15(void *pValue);
-extern int release_array_int64_15(void *pValue);
-extern int copy_array_int64_15(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_15_Utils;
-
-/****************************************************************
- ** array_int64_150 
- ****************************************************************/
-extern int array_int64_150_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_150_string(const char *str, char **endptr);
-extern int string_to_array_int64_150(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_150_double_conversion_allowed();
-extern int array_int64_150_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_150_long_conversion_allowed();
-extern int array_int64_150_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_150(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_150_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_150(void *pValue);
-extern int release_array_int64_150(void *pValue);
-extern int copy_array_int64_150(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_150_Utils;
-
-/****************************************************************
- ** array_int64_17 
- ****************************************************************/
-extern int array_int64_17_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_17_string(const char *str, char **endptr);
-extern int string_to_array_int64_17(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_17_double_conversion_allowed();
-extern int array_int64_17_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_17_long_conversion_allowed();
-extern int array_int64_17_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_17(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_17_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_17(void *pValue);
-extern int release_array_int64_17(void *pValue);
-extern int copy_array_int64_17(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_17_Utils;
-
-/****************************************************************
- ** array_int64_18 
- ****************************************************************/
-extern int array_int64_18_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_18_string(const char *str, char **endptr);
-extern int string_to_array_int64_18(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_18_double_conversion_allowed();
-extern int array_int64_18_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_18_long_conversion_allowed();
-extern int array_int64_18_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_18(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_18_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_18(void *pValue);
-extern int release_array_int64_18(void *pValue);
-extern int copy_array_int64_18(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_18_Utils;
-
-/****************************************************************
- ** array_int64_198_33 
- ****************************************************************/
-extern int array_int64_198_33_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_198_33_string(const char *str, char **endptr);
-extern int string_to_array_int64_198_33(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_198_33_double_conversion_allowed();
-extern int array_int64_198_33_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_198_33_long_conversion_allowed();
-extern int array_int64_198_33_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_198_33(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_198_33_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_198_33(void *pValue);
-extern int release_array_int64_198_33(void *pValue);
-extern int copy_array_int64_198_33(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_198_33_Utils;
-
-/****************************************************************
- ** array_int64_2 
- ****************************************************************/
-extern int array_int64_2_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_2_string(const char *str, char **endptr);
-extern int string_to_array_int64_2(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_2_double_conversion_allowed();
-extern int array_int64_2_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_2_long_conversion_allowed();
-extern int array_int64_2_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_2(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_2_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_2(void *pValue);
-extern int release_array_int64_2(void *pValue);
-extern int copy_array_int64_2(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_2_Utils;
-
-/****************************************************************
- ** array_int64_20 
- ****************************************************************/
-extern int array_int64_20_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_20_string(const char *str, char **endptr);
-extern int string_to_array_int64_20(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_20_double_conversion_allowed();
-extern int array_int64_20_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_20_long_conversion_allowed();
-extern int array_int64_20_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_20(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_20_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_20(void *pValue);
-extern int release_array_int64_20(void *pValue);
-extern int copy_array_int64_20(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_20_Utils;
-
-/****************************************************************
- ** array_int64_21 
- ****************************************************************/
-extern int array_int64_21_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_21_string(const char *str, char **endptr);
-extern int string_to_array_int64_21(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_21_double_conversion_allowed();
-extern int array_int64_21_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_21_long_conversion_allowed();
-extern int array_int64_21_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_21(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_21_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_21(void *pValue);
-extern int release_array_int64_21(void *pValue);
-extern int copy_array_int64_21(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_21_Utils;
-
-/****************************************************************
- ** array_int64_22 
- ****************************************************************/
-extern int array_int64_22_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_22_string(const char *str, char **endptr);
-extern int string_to_array_int64_22(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_22_double_conversion_allowed();
-extern int array_int64_22_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_22_long_conversion_allowed();
-extern int array_int64_22_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_22(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_22_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_22(void *pValue);
-extern int release_array_int64_22(void *pValue);
-extern int copy_array_int64_22(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_22_Utils;
-
-/****************************************************************
- ** array_int64_221 
- ****************************************************************/
-extern int array_int64_221_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_221_string(const char *str, char **endptr);
-extern int string_to_array_int64_221(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_221_double_conversion_allowed();
-extern int array_int64_221_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_221_long_conversion_allowed();
-extern int array_int64_221_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_221(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_221_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_221(void *pValue);
-extern int release_array_int64_221(void *pValue);
-extern int copy_array_int64_221(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_221_Utils;
-
-/****************************************************************
- ** array_int64_23 
- ****************************************************************/
-extern int array_int64_23_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_23_string(const char *str, char **endptr);
-extern int string_to_array_int64_23(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_23_double_conversion_allowed();
-extern int array_int64_23_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_23_long_conversion_allowed();
-extern int array_int64_23_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_23(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_23_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_23(void *pValue);
-extern int release_array_int64_23(void *pValue);
-extern int copy_array_int64_23(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_23_Utils;
-
-/****************************************************************
- ** array_int64_24 
- ****************************************************************/
-extern int array_int64_24_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_24_string(const char *str, char **endptr);
-extern int string_to_array_int64_24(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_24_double_conversion_allowed();
-extern int array_int64_24_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_24_long_conversion_allowed();
-extern int array_int64_24_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_24(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_24_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_24(void *pValue);
-extern int release_array_int64_24(void *pValue);
-extern int copy_array_int64_24(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_24_Utils;
-
-/****************************************************************
- ** array_int64_25 
- ****************************************************************/
-extern int array_int64_25_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_25_string(const char *str, char **endptr);
-extern int string_to_array_int64_25(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_25_double_conversion_allowed();
-extern int array_int64_25_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_25_long_conversion_allowed();
-extern int array_int64_25_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_25(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_25_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_25(void *pValue);
-extern int release_array_int64_25(void *pValue);
-extern int copy_array_int64_25(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_25_Utils;
-
-/****************************************************************
- ** array_int64_260 
- ****************************************************************/
-extern int array_int64_260_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_260_string(const char *str, char **endptr);
-extern int string_to_array_int64_260(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_260_double_conversion_allowed();
-extern int array_int64_260_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_260_long_conversion_allowed();
-extern int array_int64_260_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_260(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_260_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_260(void *pValue);
-extern int release_array_int64_260(void *pValue);
-extern int copy_array_int64_260(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_260_Utils;
-
-/****************************************************************
- ** array_int64_261 
- ****************************************************************/
-extern int array_int64_261_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_261_string(const char *str, char **endptr);
-extern int string_to_array_int64_261(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_261_double_conversion_allowed();
-extern int array_int64_261_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_261_long_conversion_allowed();
-extern int array_int64_261_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_261(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_261_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_261(void *pValue);
-extern int release_array_int64_261(void *pValue);
-extern int copy_array_int64_261(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_261_Utils;
-
-/****************************************************************
- ** array_int64_266 
- ****************************************************************/
-extern int array_int64_266_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_266_string(const char *str, char **endptr);
-extern int string_to_array_int64_266(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_266_double_conversion_allowed();
-extern int array_int64_266_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_266_long_conversion_allowed();
-extern int array_int64_266_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_266(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_266_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_266(void *pValue);
-extern int release_array_int64_266(void *pValue);
-extern int copy_array_int64_266(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_266_Utils;
-
-/****************************************************************
- ** array_int64_269 
- ****************************************************************/
-extern int array_int64_269_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_269_string(const char *str, char **endptr);
-extern int string_to_array_int64_269(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_269_double_conversion_allowed();
-extern int array_int64_269_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_269_long_conversion_allowed();
-extern int array_int64_269_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_269(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_269_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_269(void *pValue);
-extern int release_array_int64_269(void *pValue);
-extern int copy_array_int64_269(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_269_Utils;
-
-/****************************************************************
- ** array_int64_28 
- ****************************************************************/
-extern int array_int64_28_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_28_string(const char *str, char **endptr);
-extern int string_to_array_int64_28(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_28_double_conversion_allowed();
-extern int array_int64_28_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_28_long_conversion_allowed();
-extern int array_int64_28_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_28(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_28_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_28(void *pValue);
-extern int release_array_int64_28(void *pValue);
-extern int copy_array_int64_28(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_28_Utils;
-
-/****************************************************************
- ** array_int64_280 
- ****************************************************************/
-extern int array_int64_280_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_280_string(const char *str, char **endptr);
-extern int string_to_array_int64_280(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_280_double_conversion_allowed();
-extern int array_int64_280_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_280_long_conversion_allowed();
-extern int array_int64_280_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_280(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_280_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_280(void *pValue);
-extern int release_array_int64_280(void *pValue);
-extern int copy_array_int64_280(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_280_Utils;
-
-/****************************************************************
- ** array_int64_283 
- ****************************************************************/
-extern int array_int64_283_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_283_string(const char *str, char **endptr);
-extern int string_to_array_int64_283(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_283_double_conversion_allowed();
-extern int array_int64_283_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_283_long_conversion_allowed();
-extern int array_int64_283_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_283(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_283_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_283(void *pValue);
-extern int release_array_int64_283(void *pValue);
-extern int copy_array_int64_283(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_283_Utils;
-
-/****************************************************************
- ** array_int64_285 
- ****************************************************************/
-extern int array_int64_285_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_285_string(const char *str, char **endptr);
-extern int string_to_array_int64_285(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_285_double_conversion_allowed();
-extern int array_int64_285_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_285_long_conversion_allowed();
-extern int array_int64_285_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_285(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_285_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_285(void *pValue);
-extern int release_array_int64_285(void *pValue);
-extern int copy_array_int64_285(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_285_Utils;
-
-/****************************************************************
- ** array_int64_289 
- ****************************************************************/
-extern int array_int64_289_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_289_string(const char *str, char **endptr);
-extern int string_to_array_int64_289(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_289_double_conversion_allowed();
-extern int array_int64_289_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_289_long_conversion_allowed();
-extern int array_int64_289_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_289(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_289_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_289(void *pValue);
-extern int release_array_int64_289(void *pValue);
-extern int copy_array_int64_289(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_289_Utils;
-
-/****************************************************************
- ** array_int64_292 
- ****************************************************************/
-extern int array_int64_292_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_292_string(const char *str, char **endptr);
-extern int string_to_array_int64_292(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_292_double_conversion_allowed();
-extern int array_int64_292_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_292_long_conversion_allowed();
-extern int array_int64_292_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_292(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_292_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_292(void *pValue);
-extern int release_array_int64_292(void *pValue);
-extern int copy_array_int64_292(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_292_Utils;
-
-/****************************************************************
- ** array_int64_2_32 
- ****************************************************************/
-extern int array_int64_2_32_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_2_32_string(const char *str, char **endptr);
-extern int string_to_array_int64_2_32(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_2_32_double_conversion_allowed();
-extern int array_int64_2_32_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_2_32_long_conversion_allowed();
-extern int array_int64_2_32_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_2_32(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_2_32_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_2_32(void *pValue);
-extern int release_array_int64_2_32(void *pValue);
-extern int copy_array_int64_2_32(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_2_32_Utils;
-
-/****************************************************************
- ** array_int64_2_32_32 
- ****************************************************************/
-extern int array_int64_2_32_32_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_2_32_32_string(const char *str, char **endptr);
-extern int string_to_array_int64_2_32_32(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_2_32_32_double_conversion_allowed();
-extern int array_int64_2_32_32_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_2_32_32_long_conversion_allowed();
-extern int array_int64_2_32_32_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_2_32_32(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_2_32_32_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_2_32_32(void *pValue);
-extern int release_array_int64_2_32_32(void *pValue);
-extern int copy_array_int64_2_32_32(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_2_32_32_Utils;
-
-/****************************************************************
- ** array_int64_2_32_64 
- ****************************************************************/
-extern int array_int64_2_32_64_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_2_32_64_string(const char *str, char **endptr);
-extern int string_to_array_int64_2_32_64(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_2_32_64_double_conversion_allowed();
-extern int array_int64_2_32_64_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_2_32_64_long_conversion_allowed();
-extern int array_int64_2_32_64_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_2_32_64(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_2_32_64_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_2_32_64(void *pValue);
-extern int release_array_int64_2_32_64(void *pValue);
-extern int copy_array_int64_2_32_64(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_2_32_64_Utils;
-
-/****************************************************************
- ** array_int64_2_33_99 
- ****************************************************************/
-extern int array_int64_2_33_99_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_2_33_99_string(const char *str, char **endptr);
-extern int string_to_array_int64_2_33_99(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_2_33_99_double_conversion_allowed();
-extern int array_int64_2_33_99_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_2_33_99_long_conversion_allowed();
-extern int array_int64_2_33_99_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_2_33_99(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_2_33_99_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_2_33_99(void *pValue);
-extern int release_array_int64_2_33_99(void *pValue);
-extern int copy_array_int64_2_33_99(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_2_33_99_Utils;
-
-/****************************************************************
- ** array_int64_2_4_8 
- ****************************************************************/
-extern int array_int64_2_4_8_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_2_4_8_string(const char *str, char **endptr);
-extern int string_to_array_int64_2_4_8(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_2_4_8_double_conversion_allowed();
-extern int array_int64_2_4_8_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_2_4_8_long_conversion_allowed();
-extern int array_int64_2_4_8_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_2_4_8(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_2_4_8_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_2_4_8(void *pValue);
-extern int release_array_int64_2_4_8(void *pValue);
-extern int copy_array_int64_2_4_8(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_2_4_8_Utils;
-
-/****************************************************************
- ** array_int64_3 
- ****************************************************************/
-extern int array_int64_3_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_3_string(const char *str, char **endptr);
-extern int string_to_array_int64_3(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_3_double_conversion_allowed();
-extern int array_int64_3_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_3_long_conversion_allowed();
-extern int array_int64_3_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_3(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_3_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_3(void *pValue);
-extern int release_array_int64_3(void *pValue);
-extern int copy_array_int64_3(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_3_Utils;
-
-/****************************************************************
- ** array_int64_30 
- ****************************************************************/
-extern int array_int64_30_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_30_string(const char *str, char **endptr);
-extern int string_to_array_int64_30(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_30_double_conversion_allowed();
-extern int array_int64_30_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_30_long_conversion_allowed();
-extern int array_int64_30_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_30(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_30_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_30(void *pValue);
-extern int release_array_int64_30(void *pValue);
-extern int copy_array_int64_30(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_30_Utils;
-
-/****************************************************************
- ** array_int64_301 
- ****************************************************************/
-extern int array_int64_301_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_301_string(const char *str, char **endptr);
-extern int string_to_array_int64_301(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_301_double_conversion_allowed();
-extern int array_int64_301_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_301_long_conversion_allowed();
-extern int array_int64_301_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_301(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_301_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_301(void *pValue);
-extern int release_array_int64_301(void *pValue);
-extern int copy_array_int64_301(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_301_Utils;
-
-/****************************************************************
- ** array_int64_302 
- ****************************************************************/
-extern int array_int64_302_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_302_string(const char *str, char **endptr);
-extern int string_to_array_int64_302(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_302_double_conversion_allowed();
-extern int array_int64_302_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_302_long_conversion_allowed();
-extern int array_int64_302_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_302(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_302_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_302(void *pValue);
-extern int release_array_int64_302(void *pValue);
-extern int copy_array_int64_302(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_302_Utils;
-
-/****************************************************************
- ** array_int64_304 
- ****************************************************************/
-extern int array_int64_304_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_304_string(const char *str, char **endptr);
-extern int string_to_array_int64_304(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_304_double_conversion_allowed();
-extern int array_int64_304_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_304_long_conversion_allowed();
-extern int array_int64_304_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_304(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_304_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_304(void *pValue);
-extern int release_array_int64_304(void *pValue);
-extern int copy_array_int64_304(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_304_Utils;
-
-/****************************************************************
- ** array_int64_307 
- ****************************************************************/
-extern int array_int64_307_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_307_string(const char *str, char **endptr);
-extern int string_to_array_int64_307(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_307_double_conversion_allowed();
-extern int array_int64_307_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_307_long_conversion_allowed();
-extern int array_int64_307_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_307(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_307_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_307(void *pValue);
-extern int release_array_int64_307(void *pValue);
-extern int copy_array_int64_307(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_307_Utils;
-
-/****************************************************************
- ** array_int64_31 
- ****************************************************************/
-extern int array_int64_31_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_31_string(const char *str, char **endptr);
-extern int string_to_array_int64_31(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_31_double_conversion_allowed();
-extern int array_int64_31_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_31_long_conversion_allowed();
-extern int array_int64_31_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_31(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_31_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_31(void *pValue);
-extern int release_array_int64_31(void *pValue);
-extern int copy_array_int64_31(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_31_Utils;
-
-/****************************************************************
- ** array_int64_32 
- ****************************************************************/
-extern int array_int64_32_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_32_string(const char *str, char **endptr);
-extern int string_to_array_int64_32(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_32_double_conversion_allowed();
-extern int array_int64_32_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_32_long_conversion_allowed();
-extern int array_int64_32_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_32(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_32_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_32(void *pValue);
-extern int release_array_int64_32(void *pValue);
-extern int copy_array_int64_32(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_32_Utils;
-
-/****************************************************************
- ** array_int64_32_32 
- ****************************************************************/
-extern int array_int64_32_32_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_32_32_string(const char *str, char **endptr);
-extern int string_to_array_int64_32_32(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_32_32_double_conversion_allowed();
-extern int array_int64_32_32_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_32_32_long_conversion_allowed();
-extern int array_int64_32_32_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_32_32(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_32_32_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_32_32(void *pValue);
-extern int release_array_int64_32_32(void *pValue);
-extern int copy_array_int64_32_32(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_32_32_Utils;
-
-/****************************************************************
- ** array_int64_33 
- ****************************************************************/
-extern int array_int64_33_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_33_string(const char *str, char **endptr);
-extern int string_to_array_int64_33(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_33_double_conversion_allowed();
-extern int array_int64_33_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_33_long_conversion_allowed();
-extern int array_int64_33_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_33(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_33_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_33(void *pValue);
-extern int release_array_int64_33(void *pValue);
-extern int copy_array_int64_33(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_33_Utils;
-
-/****************************************************************
- ** array_int64_350 
- ****************************************************************/
-extern int array_int64_350_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_350_string(const char *str, char **endptr);
-extern int string_to_array_int64_350(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_350_double_conversion_allowed();
-extern int array_int64_350_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_350_long_conversion_allowed();
-extern int array_int64_350_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_350(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_350_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_350(void *pValue);
-extern int release_array_int64_350(void *pValue);
-extern int copy_array_int64_350(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_350_Utils;
-
-/****************************************************************
- ** array_int64_395 
- ****************************************************************/
-extern int array_int64_395_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_395_string(const char *str, char **endptr);
-extern int string_to_array_int64_395(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_395_double_conversion_allowed();
-extern int array_int64_395_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_395_long_conversion_allowed();
-extern int array_int64_395_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_395(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_395_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_395(void *pValue);
-extern int release_array_int64_395(void *pValue);
-extern int copy_array_int64_395(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_395_Utils;
-
-/****************************************************************
- ** array_int64_396 
- ****************************************************************/
-extern int array_int64_396_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_396_string(const char *str, char **endptr);
-extern int string_to_array_int64_396(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_396_double_conversion_allowed();
-extern int array_int64_396_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_396_long_conversion_allowed();
-extern int array_int64_396_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_396(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_396_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_396(void *pValue);
-extern int release_array_int64_396(void *pValue);
-extern int copy_array_int64_396(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_396_Utils;
-
-/****************************************************************
- ** array_int64_3_33 
- ****************************************************************/
-extern int array_int64_3_33_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_3_33_string(const char *str, char **endptr);
-extern int string_to_array_int64_3_33(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_3_33_double_conversion_allowed();
-extern int array_int64_3_33_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_3_33_long_conversion_allowed();
-extern int array_int64_3_33_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_3_33(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_3_33_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_3_33(void *pValue);
-extern int release_array_int64_3_33(void *pValue);
-extern int copy_array_int64_3_33(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_3_33_Utils;
-
-/****************************************************************
- ** array_int64_3_33_231 
- ****************************************************************/
-extern int array_int64_3_33_231_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_3_33_231_string(const char *str, char **endptr);
-extern int string_to_array_int64_3_33_231(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_3_33_231_double_conversion_allowed();
-extern int array_int64_3_33_231_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_3_33_231_long_conversion_allowed();
-extern int array_int64_3_33_231_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_3_33_231(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_3_33_231_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_3_33_231(void *pValue);
-extern int release_array_int64_3_33_231(void *pValue);
-extern int copy_array_int64_3_33_231(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_3_33_231_Utils;
-
-/****************************************************************
- ** array_int64_3_33_99 
- ****************************************************************/
-extern int array_int64_3_33_99_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_3_33_99_string(const char *str, char **endptr);
-extern int string_to_array_int64_3_33_99(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_3_33_99_double_conversion_allowed();
-extern int array_int64_3_33_99_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_3_33_99_long_conversion_allowed();
-extern int array_int64_3_33_99_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_3_33_99(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_3_33_99_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_3_33_99(void *pValue);
-extern int release_array_int64_3_33_99(void *pValue);
-extern int copy_array_int64_3_33_99(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_3_33_99_Utils;
-
-/****************************************************************
- ** array_int64_4 
- ****************************************************************/
-extern int array_int64_4_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_4_string(const char *str, char **endptr);
-extern int string_to_array_int64_4(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_4_double_conversion_allowed();
-extern int array_int64_4_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_4_long_conversion_allowed();
-extern int array_int64_4_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_4(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_4_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_4(void *pValue);
-extern int release_array_int64_4(void *pValue);
-extern int copy_array_int64_4(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_4_Utils;
-
-/****************************************************************
- ** array_int64_40 
- ****************************************************************/
-extern int array_int64_40_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_40_string(const char *str, char **endptr);
-extern int string_to_array_int64_40(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_40_double_conversion_allowed();
-extern int array_int64_40_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_40_long_conversion_allowed();
-extern int array_int64_40_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_40(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_40_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_40(void *pValue);
-extern int release_array_int64_40(void *pValue);
-extern int copy_array_int64_40(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_40_Utils;
-
-/****************************************************************
- ** array_int64_400 
- ****************************************************************/
-extern int array_int64_400_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_400_string(const char *str, char **endptr);
-extern int string_to_array_int64_400(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_400_double_conversion_allowed();
-extern int array_int64_400_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_400_long_conversion_allowed();
-extern int array_int64_400_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_400(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_400_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_400(void *pValue);
-extern int release_array_int64_400(void *pValue);
-extern int copy_array_int64_400(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_400_Utils;
-
-/****************************************************************
- ** array_int64_41 
- ****************************************************************/
-extern int array_int64_41_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_41_string(const char *str, char **endptr);
-extern int string_to_array_int64_41(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_41_double_conversion_allowed();
-extern int array_int64_41_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_41_long_conversion_allowed();
-extern int array_int64_41_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_41(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_41_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_41(void *pValue);
-extern int release_array_int64_41(void *pValue);
-extern int copy_array_int64_41(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_41_Utils;
-
-/****************************************************************
- ** array_int64_42 
- ****************************************************************/
-extern int array_int64_42_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_42_string(const char *str, char **endptr);
-extern int string_to_array_int64_42(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_42_double_conversion_allowed();
-extern int array_int64_42_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_42_long_conversion_allowed();
-extern int array_int64_42_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_42(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_42_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_42(void *pValue);
-extern int release_array_int64_42(void *pValue);
-extern int copy_array_int64_42(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_42_Utils;
-
-/****************************************************************
- ** array_int64_428 
- ****************************************************************/
-extern int array_int64_428_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_428_string(const char *str, char **endptr);
-extern int string_to_array_int64_428(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_428_double_conversion_allowed();
-extern int array_int64_428_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_428_long_conversion_allowed();
-extern int array_int64_428_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_428(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_428_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_428(void *pValue);
-extern int release_array_int64_428(void *pValue);
-extern int copy_array_int64_428(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_428_Utils;
-
-/****************************************************************
- ** array_int64_430 
- ****************************************************************/
-extern int array_int64_430_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_430_string(const char *str, char **endptr);
-extern int string_to_array_int64_430(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_430_double_conversion_allowed();
-extern int array_int64_430_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_430_long_conversion_allowed();
-extern int array_int64_430_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_430(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_430_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_430(void *pValue);
-extern int release_array_int64_430(void *pValue);
-extern int copy_array_int64_430(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_430_Utils;
-
-/****************************************************************
- ** array_int64_432 
- ****************************************************************/
-extern int array_int64_432_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_432_string(const char *str, char **endptr);
-extern int string_to_array_int64_432(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_432_double_conversion_allowed();
-extern int array_int64_432_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_432_long_conversion_allowed();
-extern int array_int64_432_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_432(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_432_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_432(void *pValue);
-extern int release_array_int64_432(void *pValue);
-extern int copy_array_int64_432(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_432_Utils;
-
-/****************************************************************
- ** array_int64_444 
- ****************************************************************/
-extern int array_int64_444_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_444_string(const char *str, char **endptr);
-extern int string_to_array_int64_444(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_444_double_conversion_allowed();
-extern int array_int64_444_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_444_long_conversion_allowed();
-extern int array_int64_444_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_444(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_444_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_444(void *pValue);
-extern int release_array_int64_444(void *pValue);
-extern int copy_array_int64_444(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_444_Utils;
-
-/****************************************************************
- ** array_int64_48 
- ****************************************************************/
-extern int array_int64_48_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_48_string(const char *str, char **endptr);
-extern int string_to_array_int64_48(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_48_double_conversion_allowed();
-extern int array_int64_48_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_48_long_conversion_allowed();
-extern int array_int64_48_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_48(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_48_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_48(void *pValue);
-extern int release_array_int64_48(void *pValue);
-extern int copy_array_int64_48(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_48_Utils;
-
-/****************************************************************
- ** array_int64_491 
- ****************************************************************/
-extern int array_int64_491_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_491_string(const char *str, char **endptr);
-extern int string_to_array_int64_491(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_491_double_conversion_allowed();
-extern int array_int64_491_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_491_long_conversion_allowed();
-extern int array_int64_491_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_491(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_491_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_491(void *pValue);
-extern int release_array_int64_491(void *pValue);
-extern int copy_array_int64_491(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_491_Utils;
-
-/****************************************************************
- ** array_int64_492 
- ****************************************************************/
-extern int array_int64_492_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_492_string(const char *str, char **endptr);
-extern int string_to_array_int64_492(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_492_double_conversion_allowed();
-extern int array_int64_492_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_492_long_conversion_allowed();
-extern int array_int64_492_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_492(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_492_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_492(void *pValue);
-extern int release_array_int64_492(void *pValue);
-extern int copy_array_int64_492(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_492_Utils;
-
-/****************************************************************
- ** array_int64_494 
- ****************************************************************/
-extern int array_int64_494_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_494_string(const char *str, char **endptr);
-extern int string_to_array_int64_494(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_494_double_conversion_allowed();
-extern int array_int64_494_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_494_long_conversion_allowed();
-extern int array_int64_494_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_494(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_494_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_494(void *pValue);
-extern int release_array_int64_494(void *pValue);
-extern int copy_array_int64_494(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_494_Utils;
-
-/****************************************************************
- ** array_int64_496 
- ****************************************************************/
-extern int array_int64_496_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_496_string(const char *str, char **endptr);
-extern int string_to_array_int64_496(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_496_double_conversion_allowed();
-extern int array_int64_496_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_496_long_conversion_allowed();
-extern int array_int64_496_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_496(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_496_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_496(void *pValue);
-extern int release_array_int64_496(void *pValue);
-extern int copy_array_int64_496(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_496_Utils;
-
-/****************************************************************
- ** array_int64_499 
- ****************************************************************/
-extern int array_int64_499_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_499_string(const char *str, char **endptr);
-extern int string_to_array_int64_499(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_499_double_conversion_allowed();
-extern int array_int64_499_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_499_long_conversion_allowed();
-extern int array_int64_499_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_499(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_499_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_499(void *pValue);
-extern int release_array_int64_499(void *pValue);
-extern int copy_array_int64_499(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_499_Utils;
-
-/****************************************************************
- ** array_int64_4_32_128 
- ****************************************************************/
-extern int array_int64_4_32_128_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_4_32_128_string(const char *str, char **endptr);
-extern int string_to_array_int64_4_32_128(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_4_32_128_double_conversion_allowed();
-extern int array_int64_4_32_128_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_4_32_128_long_conversion_allowed();
-extern int array_int64_4_32_128_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_4_32_128(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_4_32_128_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_4_32_128(void *pValue);
-extern int release_array_int64_4_32_128(void *pValue);
-extern int copy_array_int64_4_32_128(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_4_32_128_Utils;
-
-/****************************************************************
- ** array_int64_5 
- ****************************************************************/
-extern int array_int64_5_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_5_string(const char *str, char **endptr);
-extern int string_to_array_int64_5(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_5_double_conversion_allowed();
-extern int array_int64_5_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_5_long_conversion_allowed();
-extern int array_int64_5_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_5(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_5_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_5(void *pValue);
-extern int release_array_int64_5(void *pValue);
-extern int copy_array_int64_5(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_5_Utils;
-
-/****************************************************************
- ** array_int64_500_500 
- ****************************************************************/
-extern int array_int64_500_500_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_500_500_string(const char *str, char **endptr);
-extern int string_to_array_int64_500_500(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_500_500_double_conversion_allowed();
-extern int array_int64_500_500_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_500_500_long_conversion_allowed();
-extern int array_int64_500_500_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_500_500(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_500_500_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_500_500(void *pValue);
-extern int release_array_int64_500_500(void *pValue);
-extern int copy_array_int64_500_500(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_500_500_Utils;
-
-/****************************************************************
- ** array_int64_56 
- ****************************************************************/
-extern int array_int64_56_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_56_string(const char *str, char **endptr);
-extern int string_to_array_int64_56(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_56_double_conversion_allowed();
-extern int array_int64_56_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_56_long_conversion_allowed();
-extern int array_int64_56_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_56(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_56_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_56(void *pValue);
-extern int release_array_int64_56(void *pValue);
-extern int copy_array_int64_56(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_56_Utils;
-
-/****************************************************************
- ** array_int64_6 
- ****************************************************************/
-extern int array_int64_6_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_6_string(const char *str, char **endptr);
-extern int string_to_array_int64_6(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_6_double_conversion_allowed();
-extern int array_int64_6_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_6_long_conversion_allowed();
-extern int array_int64_6_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_6(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_6_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_6(void *pValue);
-extern int release_array_int64_6(void *pValue);
-extern int copy_array_int64_6(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_6_Utils;
-
-/****************************************************************
- ** array_int64_627 
- ****************************************************************/
-extern int array_int64_627_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_627_string(const char *str, char **endptr);
-extern int string_to_array_int64_627(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_627_double_conversion_allowed();
-extern int array_int64_627_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_627_long_conversion_allowed();
-extern int array_int64_627_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_627(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_627_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_627(void *pValue);
-extern int release_array_int64_627(void *pValue);
-extern int copy_array_int64_627(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_627_Utils;
-
-/****************************************************************
- ** array_int64_64 
- ****************************************************************/
-extern int array_int64_64_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_64_string(const char *str, char **endptr);
-extern int string_to_array_int64_64(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_64_double_conversion_allowed();
-extern int array_int64_64_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_64_long_conversion_allowed();
-extern int array_int64_64_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_64(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_64_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_64(void *pValue);
-extern int release_array_int64_64(void *pValue);
-extern int copy_array_int64_64(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_64_Utils;
-
-/****************************************************************
- ** array_int64_64_32 
- ****************************************************************/
-extern int array_int64_64_32_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_64_32_string(const char *str, char **endptr);
-extern int string_to_array_int64_64_32(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_64_32_double_conversion_allowed();
-extern int array_int64_64_32_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_64_32_long_conversion_allowed();
-extern int array_int64_64_32_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_64_32(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_64_32_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_64_32(void *pValue);
-extern int release_array_int64_64_32(void *pValue);
-extern int copy_array_int64_64_32(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_64_32_Utils;
-
-/****************************************************************
- ** array_int64_65 
- ****************************************************************/
-extern int array_int64_65_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_65_string(const char *str, char **endptr);
-extern int string_to_array_int64_65(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_65_double_conversion_allowed();
-extern int array_int64_65_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_65_long_conversion_allowed();
-extern int array_int64_65_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_65(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_65_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_65(void *pValue);
-extern int release_array_int64_65(void *pValue);
-extern int copy_array_int64_65(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_65_Utils;
-
-/****************************************************************
- ** array_int64_66_33 
- ****************************************************************/
-extern int array_int64_66_33_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_66_33_string(const char *str, char **endptr);
-extern int string_to_array_int64_66_33(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_66_33_double_conversion_allowed();
-extern int array_int64_66_33_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_66_33_long_conversion_allowed();
-extern int array_int64_66_33_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_66_33(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_66_33_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_66_33(void *pValue);
-extern int release_array_int64_66_33(void *pValue);
-extern int copy_array_int64_66_33(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_66_33_Utils;
-
-/****************************************************************
- ** array_int64_68 
- ****************************************************************/
-extern int array_int64_68_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_68_string(const char *str, char **endptr);
-extern int string_to_array_int64_68(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_68_double_conversion_allowed();
-extern int array_int64_68_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_68_long_conversion_allowed();
-extern int array_int64_68_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_68(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_68_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_68(void *pValue);
-extern int release_array_int64_68(void *pValue);
-extern int copy_array_int64_68(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_68_Utils;
-
-/****************************************************************
- ** array_int64_6_221 
- ****************************************************************/
-extern int array_int64_6_221_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_6_221_string(const char *str, char **endptr);
-extern int string_to_array_int64_6_221(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_6_221_double_conversion_allowed();
-extern int array_int64_6_221_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_6_221_long_conversion_allowed();
-extern int array_int64_6_221_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_6_221(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_6_221_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_6_221(void *pValue);
-extern int release_array_int64_6_221(void *pValue);
-extern int copy_array_int64_6_221(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_6_221_Utils;
-
-/****************************************************************
- ** array_int64_7 
- ****************************************************************/
-extern int array_int64_7_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_7_string(const char *str, char **endptr);
-extern int string_to_array_int64_7(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_7_double_conversion_allowed();
-extern int array_int64_7_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_7_long_conversion_allowed();
-extern int array_int64_7_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_7(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_7_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_7(void *pValue);
-extern int release_array_int64_7(void *pValue);
-extern int copy_array_int64_7(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_7_Utils;
-
-/****************************************************************
- ** array_int64_70 
- ****************************************************************/
-extern int array_int64_70_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_70_string(const char *str, char **endptr);
-extern int string_to_array_int64_70(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_70_double_conversion_allowed();
-extern int array_int64_70_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_70_long_conversion_allowed();
-extern int array_int64_70_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_70(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_70_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_70(void *pValue);
-extern int release_array_int64_70(void *pValue);
-extern int copy_array_int64_70(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_70_Utils;
-
-/****************************************************************
- ** array_int64_72 
- ****************************************************************/
-extern int array_int64_72_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_72_string(const char *str, char **endptr);
-extern int string_to_array_int64_72(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_72_double_conversion_allowed();
-extern int array_int64_72_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_72_long_conversion_allowed();
-extern int array_int64_72_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_72(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_72_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_72(void *pValue);
-extern int release_array_int64_72(void *pValue);
-extern int copy_array_int64_72(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_72_Utils;
-
-/****************************************************************
- ** array_int64_7_33_231 
- ****************************************************************/
-extern int array_int64_7_33_231_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_7_33_231_string(const char *str, char **endptr);
-extern int string_to_array_int64_7_33_231(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_7_33_231_double_conversion_allowed();
-extern int array_int64_7_33_231_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_7_33_231_long_conversion_allowed();
-extern int array_int64_7_33_231_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_7_33_231(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_7_33_231_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_7_33_231(void *pValue);
-extern int release_array_int64_7_33_231(void *pValue);
-extern int copy_array_int64_7_33_231(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_7_33_231_Utils;
-
-/****************************************************************
- ** array_int64_8 
- ****************************************************************/
-extern int array_int64_8_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_8_string(const char *str, char **endptr);
-extern int string_to_array_int64_8(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_8_double_conversion_allowed();
-extern int array_int64_8_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_8_long_conversion_allowed();
-extern int array_int64_8_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_8(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_8_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_8(void *pValue);
-extern int release_array_int64_8(void *pValue);
-extern int copy_array_int64_8(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_8_Utils;
-
-/****************************************************************
- ** array_int64_888 
- ****************************************************************/
-extern int array_int64_888_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_888_string(const char *str, char **endptr);
-extern int string_to_array_int64_888(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_888_double_conversion_allowed();
-extern int array_int64_888_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_888_long_conversion_allowed();
-extern int array_int64_888_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_888(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_888_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_888(void *pValue);
-extern int release_array_int64_888(void *pValue);
-extern int copy_array_int64_888(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_888_Utils;
-
-/****************************************************************
- ** array_int64_891 
- ****************************************************************/
-extern int array_int64_891_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_891_string(const char *str, char **endptr);
-extern int string_to_array_int64_891(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_891_double_conversion_allowed();
-extern int array_int64_891_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_891_long_conversion_allowed();
-extern int array_int64_891_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_891(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_891_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_891(void *pValue);
-extern int release_array_int64_891(void *pValue);
-extern int copy_array_int64_891(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_891_Utils;
-
-/****************************************************************
- ** array_int64_894 
- ****************************************************************/
-extern int array_int64_894_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_894_string(const char *str, char **endptr);
-extern int string_to_array_int64_894(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_894_double_conversion_allowed();
-extern int array_int64_894_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_894_long_conversion_allowed();
-extern int array_int64_894_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_894(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_894_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_894(void *pValue);
-extern int release_array_int64_894(void *pValue);
-extern int copy_array_int64_894(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_894_Utils;
-
-/****************************************************************
- ** array_int64_8_4 
- ****************************************************************/
-extern int array_int64_8_4_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_8_4_string(const char *str, char **endptr);
-extern int string_to_array_int64_8_4(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_8_4_double_conversion_allowed();
-extern int array_int64_8_4_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_8_4_long_conversion_allowed();
-extern int array_int64_8_4_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_8_4(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_8_4_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_8_4(void *pValue);
-extern int release_array_int64_8_4(void *pValue);
-extern int copy_array_int64_8_4(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_8_4_Utils;
-
-/****************************************************************
- ** array_int64_9 
- ****************************************************************/
-extern int array_int64_9_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_9_string(const char *str, char **endptr);
-extern int string_to_array_int64_9(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_9_double_conversion_allowed();
-extern int array_int64_9_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_9_long_conversion_allowed();
-extern int array_int64_9_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_9(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_9_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_9(void *pValue);
-extern int release_array_int64_9(void *pValue);
-extern int copy_array_int64_9(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_9_Utils;
-
-/****************************************************************
- ** array_int64_95_33 
- ****************************************************************/
-extern int array_int64_95_33_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_95_33_string(const char *str, char **endptr);
-extern int string_to_array_int64_95_33(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_95_33_double_conversion_allowed();
-extern int array_int64_95_33_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_95_33_long_conversion_allowed();
-extern int array_int64_95_33_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_95_33(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_95_33_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_95_33(void *pValue);
-extern int release_array_int64_95_33(void *pValue);
-extern int copy_array_int64_95_33(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_95_33_Utils;
-
-/****************************************************************
- ** array_int64_961 
- ****************************************************************/
-extern int array_int64_961_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_961_string(const char *str, char **endptr);
-extern int string_to_array_int64_961(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_961_double_conversion_allowed();
-extern int array_int64_961_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_961_long_conversion_allowed();
-extern int array_int64_961_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_961(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_961_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_961(void *pValue);
-extern int release_array_int64_961(void *pValue);
-extern int copy_array_int64_961(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_961_Utils;
-
-/****************************************************************
- ** array_int64_964 
- ****************************************************************/
-extern int array_int64_964_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_964_string(const char *str, char **endptr);
-extern int string_to_array_int64_964(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_964_double_conversion_allowed();
-extern int array_int64_964_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_964_long_conversion_allowed();
-extern int array_int64_964_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_964(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_964_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_964(void *pValue);
-extern int release_array_int64_964(void *pValue);
-extern int copy_array_int64_964(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_964_Utils;
-
-/****************************************************************
- ** array_int64_97 
- ****************************************************************/
-extern int array_int64_97_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_97_string(const char *str, char **endptr);
-extern int string_to_array_int64_97(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_97_double_conversion_allowed();
-extern int array_int64_97_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_97_long_conversion_allowed();
-extern int array_int64_97_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_97(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_97_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_97(void *pValue);
-extern int release_array_int64_97(void *pValue);
-extern int copy_array_int64_97(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_97_Utils;
-
-/****************************************************************
- ** array_int64_975 
- ****************************************************************/
-extern int array_int64_975_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_975_string(const char *str, char **endptr);
-extern int string_to_array_int64_975(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_975_double_conversion_allowed();
-extern int array_int64_975_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_975_long_conversion_allowed();
-extern int array_int64_975_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_975(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_975_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_975(void *pValue);
-extern int release_array_int64_975(void *pValue);
-extern int copy_array_int64_975(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_975_Utils;
-
-/****************************************************************
- ** array_int64_978 
- ****************************************************************/
-extern int array_int64_978_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_978_string(const char *str, char **endptr);
-extern int string_to_array_int64_978(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_978_double_conversion_allowed();
-extern int array_int64_978_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_978_long_conversion_allowed();
-extern int array_int64_978_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_978(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_978_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_978(void *pValue);
-extern int release_array_int64_978(void *pValue);
-extern int copy_array_int64_978(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_978_Utils;
-
-/****************************************************************
- ** array_int64_987 
- ****************************************************************/
-extern int array_int64_987_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_987_string(const char *str, char **endptr);
-extern int string_to_array_int64_987(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_987_double_conversion_allowed();
-extern int array_int64_987_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_987_long_conversion_allowed();
-extern int array_int64_987_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_987(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_987_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_987(void *pValue);
-extern int release_array_int64_987(void *pValue);
-extern int copy_array_int64_987(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_987_Utils;
-
-/****************************************************************
- ** array_int64_99 
- ****************************************************************/
-extern int array_int64_99_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_99_string(const char *str, char **endptr);
-extern int string_to_array_int64_99(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_99_double_conversion_allowed();
-extern int array_int64_99_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_99_long_conversion_allowed();
-extern int array_int64_99_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_99(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_99_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_99(void *pValue);
-extern int release_array_int64_99(void *pValue);
-extern int copy_array_int64_99(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_99_Utils;
-
-/****************************************************************
- ** array_int64_990 
- ****************************************************************/
-extern int array_int64_990_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_990_string(const char *str, char **endptr);
-extern int string_to_array_int64_990(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_990_double_conversion_allowed();
-extern int array_int64_990_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_990_long_conversion_allowed();
-extern int array_int64_990_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_990(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_990_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_990(void *pValue);
-extern int release_array_int64_990(void *pValue);
-extern int copy_array_int64_990(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_990_Utils;
-
-/****************************************************************
- ** array_int64_99_33 
- ****************************************************************/
-extern int array_int64_99_33_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_int64_99_33_string(const char *str, char **endptr);
-extern int string_to_array_int64_99_33(const char *str, void *pValue, char **endptr);
-extern int is_array_int64_99_33_double_conversion_allowed();
-extern int array_int64_99_33_to_double(const void *pValue, double *nValue);
-extern int is_array_int64_99_33_long_conversion_allowed();
-extern int array_int64_99_33_to_long(const void *pValue, long *nValue);
-extern void compare_array_int64_99_33(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_int64_99_33_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_array_int64_99_33(void *pValue);
-extern int release_array_int64_99_33(void *pValue);
-extern int copy_array_int64_99_33(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_int64_99_33_Utils;
+ ** array_int32_432 
+ ****************************************************************/
+extern int array_int32_432_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_432_string(const char *str, char **endptr);
+extern int string_to_array_int32_432(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_432_double_conversion_allowed();
+extern int array_int32_432_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_432_long_conversion_allowed();
+extern int array_int32_432_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_432(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_432_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_432(void *pValue);
+extern int release_array_int32_432(void *pValue);
+extern int copy_array_int32_432(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_432_Utils;
+
+/****************************************************************
+ ** array_int32_444 
+ ****************************************************************/
+extern int array_int32_444_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_444_string(const char *str, char **endptr);
+extern int string_to_array_int32_444(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_444_double_conversion_allowed();
+extern int array_int32_444_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_444_long_conversion_allowed();
+extern int array_int32_444_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_444(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_444_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_444(void *pValue);
+extern int release_array_int32_444(void *pValue);
+extern int copy_array_int32_444(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_444_Utils;
+
+/****************************************************************
+ ** array_int32_48 
+ ****************************************************************/
+extern int array_int32_48_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_48_string(const char *str, char **endptr);
+extern int string_to_array_int32_48(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_48_double_conversion_allowed();
+extern int array_int32_48_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_48_long_conversion_allowed();
+extern int array_int32_48_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_48(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_48_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_48(void *pValue);
+extern int release_array_int32_48(void *pValue);
+extern int copy_array_int32_48(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_48_Utils;
+
+/****************************************************************
+ ** array_int32_491 
+ ****************************************************************/
+extern int array_int32_491_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_491_string(const char *str, char **endptr);
+extern int string_to_array_int32_491(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_491_double_conversion_allowed();
+extern int array_int32_491_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_491_long_conversion_allowed();
+extern int array_int32_491_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_491(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_491_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_491(void *pValue);
+extern int release_array_int32_491(void *pValue);
+extern int copy_array_int32_491(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_491_Utils;
+
+/****************************************************************
+ ** array_int32_492 
+ ****************************************************************/
+extern int array_int32_492_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_492_string(const char *str, char **endptr);
+extern int string_to_array_int32_492(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_492_double_conversion_allowed();
+extern int array_int32_492_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_492_long_conversion_allowed();
+extern int array_int32_492_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_492(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_492_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_492(void *pValue);
+extern int release_array_int32_492(void *pValue);
+extern int copy_array_int32_492(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_492_Utils;
+
+/****************************************************************
+ ** array_int32_494 
+ ****************************************************************/
+extern int array_int32_494_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_494_string(const char *str, char **endptr);
+extern int string_to_array_int32_494(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_494_double_conversion_allowed();
+extern int array_int32_494_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_494_long_conversion_allowed();
+extern int array_int32_494_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_494(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_494_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_494(void *pValue);
+extern int release_array_int32_494(void *pValue);
+extern int copy_array_int32_494(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_494_Utils;
+
+/****************************************************************
+ ** array_int32_496 
+ ****************************************************************/
+extern int array_int32_496_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_496_string(const char *str, char **endptr);
+extern int string_to_array_int32_496(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_496_double_conversion_allowed();
+extern int array_int32_496_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_496_long_conversion_allowed();
+extern int array_int32_496_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_496(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_496_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_496(void *pValue);
+extern int release_array_int32_496(void *pValue);
+extern int copy_array_int32_496(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_496_Utils;
+
+/****************************************************************
+ ** array_int32_499 
+ ****************************************************************/
+extern int array_int32_499_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_499_string(const char *str, char **endptr);
+extern int string_to_array_int32_499(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_499_double_conversion_allowed();
+extern int array_int32_499_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_499_long_conversion_allowed();
+extern int array_int32_499_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_499(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_499_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_499(void *pValue);
+extern int release_array_int32_499(void *pValue);
+extern int copy_array_int32_499(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_499_Utils;
+
+/****************************************************************
+ ** array_int32_4_32_128 
+ ****************************************************************/
+extern int array_int32_4_32_128_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_4_32_128_string(const char *str, char **endptr);
+extern int string_to_array_int32_4_32_128(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_4_32_128_double_conversion_allowed();
+extern int array_int32_4_32_128_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_4_32_128_long_conversion_allowed();
+extern int array_int32_4_32_128_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_4_32_128(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_4_32_128_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_4_32_128(void *pValue);
+extern int release_array_int32_4_32_128(void *pValue);
+extern int copy_array_int32_4_32_128(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_4_32_128_Utils;
+
+/****************************************************************
+ ** array_int32_5 
+ ****************************************************************/
+extern int array_int32_5_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_5_string(const char *str, char **endptr);
+extern int string_to_array_int32_5(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_5_double_conversion_allowed();
+extern int array_int32_5_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_5_long_conversion_allowed();
+extern int array_int32_5_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_5(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_5_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_5(void *pValue);
+extern int release_array_int32_5(void *pValue);
+extern int copy_array_int32_5(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_5_Utils;
+
+/****************************************************************
+ ** array_int32_500_500 
+ ****************************************************************/
+extern int array_int32_500_500_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_500_500_string(const char *str, char **endptr);
+extern int string_to_array_int32_500_500(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_500_500_double_conversion_allowed();
+extern int array_int32_500_500_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_500_500_long_conversion_allowed();
+extern int array_int32_500_500_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_500_500(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_500_500_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_500_500(void *pValue);
+extern int release_array_int32_500_500(void *pValue);
+extern int copy_array_int32_500_500(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_500_500_Utils;
+
+/****************************************************************
+ ** array_int32_56 
+ ****************************************************************/
+extern int array_int32_56_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_56_string(const char *str, char **endptr);
+extern int string_to_array_int32_56(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_56_double_conversion_allowed();
+extern int array_int32_56_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_56_long_conversion_allowed();
+extern int array_int32_56_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_56(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_56_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_56(void *pValue);
+extern int release_array_int32_56(void *pValue);
+extern int copy_array_int32_56(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_56_Utils;
+
+/****************************************************************
+ ** array_int32_6 
+ ****************************************************************/
+extern int array_int32_6_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_6_string(const char *str, char **endptr);
+extern int string_to_array_int32_6(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_6_double_conversion_allowed();
+extern int array_int32_6_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_6_long_conversion_allowed();
+extern int array_int32_6_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_6(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_6_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_6(void *pValue);
+extern int release_array_int32_6(void *pValue);
+extern int copy_array_int32_6(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_6_Utils;
+
+/****************************************************************
+ ** array_int32_627 
+ ****************************************************************/
+extern int array_int32_627_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_627_string(const char *str, char **endptr);
+extern int string_to_array_int32_627(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_627_double_conversion_allowed();
+extern int array_int32_627_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_627_long_conversion_allowed();
+extern int array_int32_627_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_627(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_627_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_627(void *pValue);
+extern int release_array_int32_627(void *pValue);
+extern int copy_array_int32_627(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_627_Utils;
+
+/****************************************************************
+ ** array_int32_64 
+ ****************************************************************/
+extern int array_int32_64_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_64_string(const char *str, char **endptr);
+extern int string_to_array_int32_64(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_64_double_conversion_allowed();
+extern int array_int32_64_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_64_long_conversion_allowed();
+extern int array_int32_64_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_64(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_64_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_64(void *pValue);
+extern int release_array_int32_64(void *pValue);
+extern int copy_array_int32_64(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_64_Utils;
+
+/****************************************************************
+ ** array_int32_64_32 
+ ****************************************************************/
+extern int array_int32_64_32_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_64_32_string(const char *str, char **endptr);
+extern int string_to_array_int32_64_32(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_64_32_double_conversion_allowed();
+extern int array_int32_64_32_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_64_32_long_conversion_allowed();
+extern int array_int32_64_32_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_64_32(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_64_32_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_64_32(void *pValue);
+extern int release_array_int32_64_32(void *pValue);
+extern int copy_array_int32_64_32(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_64_32_Utils;
+
+/****************************************************************
+ ** array_int32_65 
+ ****************************************************************/
+extern int array_int32_65_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_65_string(const char *str, char **endptr);
+extern int string_to_array_int32_65(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_65_double_conversion_allowed();
+extern int array_int32_65_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_65_long_conversion_allowed();
+extern int array_int32_65_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_65(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_65_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_65(void *pValue);
+extern int release_array_int32_65(void *pValue);
+extern int copy_array_int32_65(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_65_Utils;
+
+/****************************************************************
+ ** array_int32_66_33 
+ ****************************************************************/
+extern int array_int32_66_33_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_66_33_string(const char *str, char **endptr);
+extern int string_to_array_int32_66_33(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_66_33_double_conversion_allowed();
+extern int array_int32_66_33_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_66_33_long_conversion_allowed();
+extern int array_int32_66_33_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_66_33(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_66_33_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_66_33(void *pValue);
+extern int release_array_int32_66_33(void *pValue);
+extern int copy_array_int32_66_33(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_66_33_Utils;
+
+/****************************************************************
+ ** array_int32_68 
+ ****************************************************************/
+extern int array_int32_68_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_68_string(const char *str, char **endptr);
+extern int string_to_array_int32_68(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_68_double_conversion_allowed();
+extern int array_int32_68_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_68_long_conversion_allowed();
+extern int array_int32_68_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_68(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_68_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_68(void *pValue);
+extern int release_array_int32_68(void *pValue);
+extern int copy_array_int32_68(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_68_Utils;
+
+/****************************************************************
+ ** array_int32_6_221 
+ ****************************************************************/
+extern int array_int32_6_221_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_6_221_string(const char *str, char **endptr);
+extern int string_to_array_int32_6_221(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_6_221_double_conversion_allowed();
+extern int array_int32_6_221_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_6_221_long_conversion_allowed();
+extern int array_int32_6_221_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_6_221(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_6_221_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_6_221(void *pValue);
+extern int release_array_int32_6_221(void *pValue);
+extern int copy_array_int32_6_221(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_6_221_Utils;
+
+/****************************************************************
+ ** array_int32_7 
+ ****************************************************************/
+extern int array_int32_7_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_7_string(const char *str, char **endptr);
+extern int string_to_array_int32_7(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_7_double_conversion_allowed();
+extern int array_int32_7_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_7_long_conversion_allowed();
+extern int array_int32_7_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_7(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_7_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_7(void *pValue);
+extern int release_array_int32_7(void *pValue);
+extern int copy_array_int32_7(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_7_Utils;
+
+/****************************************************************
+ ** array_int32_70 
+ ****************************************************************/
+extern int array_int32_70_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_70_string(const char *str, char **endptr);
+extern int string_to_array_int32_70(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_70_double_conversion_allowed();
+extern int array_int32_70_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_70_long_conversion_allowed();
+extern int array_int32_70_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_70(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_70_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_70(void *pValue);
+extern int release_array_int32_70(void *pValue);
+extern int copy_array_int32_70(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_70_Utils;
+
+/****************************************************************
+ ** array_int32_72 
+ ****************************************************************/
+extern int array_int32_72_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_72_string(const char *str, char **endptr);
+extern int string_to_array_int32_72(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_72_double_conversion_allowed();
+extern int array_int32_72_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_72_long_conversion_allowed();
+extern int array_int32_72_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_72(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_72_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_72(void *pValue);
+extern int release_array_int32_72(void *pValue);
+extern int copy_array_int32_72(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_72_Utils;
+
+/****************************************************************
+ ** array_int32_7_33_231 
+ ****************************************************************/
+extern int array_int32_7_33_231_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_7_33_231_string(const char *str, char **endptr);
+extern int string_to_array_int32_7_33_231(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_7_33_231_double_conversion_allowed();
+extern int array_int32_7_33_231_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_7_33_231_long_conversion_allowed();
+extern int array_int32_7_33_231_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_7_33_231(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_7_33_231_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_7_33_231(void *pValue);
+extern int release_array_int32_7_33_231(void *pValue);
+extern int copy_array_int32_7_33_231(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_7_33_231_Utils;
+
+/****************************************************************
+ ** array_int32_8 
+ ****************************************************************/
+extern int array_int32_8_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_8_string(const char *str, char **endptr);
+extern int string_to_array_int32_8(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_8_double_conversion_allowed();
+extern int array_int32_8_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_8_long_conversion_allowed();
+extern int array_int32_8_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_8(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_8_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_8(void *pValue);
+extern int release_array_int32_8(void *pValue);
+extern int copy_array_int32_8(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_8_Utils;
+
+/****************************************************************
+ ** array_int32_888 
+ ****************************************************************/
+extern int array_int32_888_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_888_string(const char *str, char **endptr);
+extern int string_to_array_int32_888(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_888_double_conversion_allowed();
+extern int array_int32_888_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_888_long_conversion_allowed();
+extern int array_int32_888_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_888(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_888_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_888(void *pValue);
+extern int release_array_int32_888(void *pValue);
+extern int copy_array_int32_888(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_888_Utils;
+
+/****************************************************************
+ ** array_int32_891 
+ ****************************************************************/
+extern int array_int32_891_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_891_string(const char *str, char **endptr);
+extern int string_to_array_int32_891(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_891_double_conversion_allowed();
+extern int array_int32_891_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_891_long_conversion_allowed();
+extern int array_int32_891_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_891(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_891_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_891(void *pValue);
+extern int release_array_int32_891(void *pValue);
+extern int copy_array_int32_891(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_891_Utils;
+
+/****************************************************************
+ ** array_int32_894 
+ ****************************************************************/
+extern int array_int32_894_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_894_string(const char *str, char **endptr);
+extern int string_to_array_int32_894(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_894_double_conversion_allowed();
+extern int array_int32_894_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_894_long_conversion_allowed();
+extern int array_int32_894_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_894(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_894_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_894(void *pValue);
+extern int release_array_int32_894(void *pValue);
+extern int copy_array_int32_894(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_894_Utils;
+
+/****************************************************************
+ ** array_int32_8_4 
+ ****************************************************************/
+extern int array_int32_8_4_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_8_4_string(const char *str, char **endptr);
+extern int string_to_array_int32_8_4(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_8_4_double_conversion_allowed();
+extern int array_int32_8_4_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_8_4_long_conversion_allowed();
+extern int array_int32_8_4_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_8_4(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_8_4_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_8_4(void *pValue);
+extern int release_array_int32_8_4(void *pValue);
+extern int copy_array_int32_8_4(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_8_4_Utils;
+
+/****************************************************************
+ ** array_int32_9 
+ ****************************************************************/
+extern int array_int32_9_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_9_string(const char *str, char **endptr);
+extern int string_to_array_int32_9(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_9_double_conversion_allowed();
+extern int array_int32_9_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_9_long_conversion_allowed();
+extern int array_int32_9_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_9(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_9_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_9(void *pValue);
+extern int release_array_int32_9(void *pValue);
+extern int copy_array_int32_9(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_9_Utils;
+
+/****************************************************************
+ ** array_int32_95_33 
+ ****************************************************************/
+extern int array_int32_95_33_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_95_33_string(const char *str, char **endptr);
+extern int string_to_array_int32_95_33(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_95_33_double_conversion_allowed();
+extern int array_int32_95_33_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_95_33_long_conversion_allowed();
+extern int array_int32_95_33_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_95_33(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_95_33_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_95_33(void *pValue);
+extern int release_array_int32_95_33(void *pValue);
+extern int copy_array_int32_95_33(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_95_33_Utils;
+
+/****************************************************************
+ ** array_int32_961 
+ ****************************************************************/
+extern int array_int32_961_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_961_string(const char *str, char **endptr);
+extern int string_to_array_int32_961(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_961_double_conversion_allowed();
+extern int array_int32_961_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_961_long_conversion_allowed();
+extern int array_int32_961_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_961(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_961_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_961(void *pValue);
+extern int release_array_int32_961(void *pValue);
+extern int copy_array_int32_961(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_961_Utils;
+
+/****************************************************************
+ ** array_int32_964 
+ ****************************************************************/
+extern int array_int32_964_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_964_string(const char *str, char **endptr);
+extern int string_to_array_int32_964(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_964_double_conversion_allowed();
+extern int array_int32_964_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_964_long_conversion_allowed();
+extern int array_int32_964_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_964(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_964_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_964(void *pValue);
+extern int release_array_int32_964(void *pValue);
+extern int copy_array_int32_964(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_964_Utils;
+
+/****************************************************************
+ ** array_int32_97 
+ ****************************************************************/
+extern int array_int32_97_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_97_string(const char *str, char **endptr);
+extern int string_to_array_int32_97(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_97_double_conversion_allowed();
+extern int array_int32_97_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_97_long_conversion_allowed();
+extern int array_int32_97_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_97(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_97_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_97(void *pValue);
+extern int release_array_int32_97(void *pValue);
+extern int copy_array_int32_97(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_97_Utils;
+
+/****************************************************************
+ ** array_int32_975 
+ ****************************************************************/
+extern int array_int32_975_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_975_string(const char *str, char **endptr);
+extern int string_to_array_int32_975(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_975_double_conversion_allowed();
+extern int array_int32_975_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_975_long_conversion_allowed();
+extern int array_int32_975_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_975(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_975_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_975(void *pValue);
+extern int release_array_int32_975(void *pValue);
+extern int copy_array_int32_975(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_975_Utils;
+
+/****************************************************************
+ ** array_int32_978 
+ ****************************************************************/
+extern int array_int32_978_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_978_string(const char *str, char **endptr);
+extern int string_to_array_int32_978(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_978_double_conversion_allowed();
+extern int array_int32_978_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_978_long_conversion_allowed();
+extern int array_int32_978_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_978(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_978_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_978(void *pValue);
+extern int release_array_int32_978(void *pValue);
+extern int copy_array_int32_978(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_978_Utils;
+
+/****************************************************************
+ ** array_int32_987 
+ ****************************************************************/
+extern int array_int32_987_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_987_string(const char *str, char **endptr);
+extern int string_to_array_int32_987(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_987_double_conversion_allowed();
+extern int array_int32_987_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_987_long_conversion_allowed();
+extern int array_int32_987_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_987(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_987_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_987(void *pValue);
+extern int release_array_int32_987(void *pValue);
+extern int copy_array_int32_987(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_987_Utils;
+
+/****************************************************************
+ ** array_int32_99 
+ ****************************************************************/
+extern int array_int32_99_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_99_string(const char *str, char **endptr);
+extern int string_to_array_int32_99(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_99_double_conversion_allowed();
+extern int array_int32_99_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_99_long_conversion_allowed();
+extern int array_int32_99_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_99(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_99_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_99(void *pValue);
+extern int release_array_int32_99(void *pValue);
+extern int copy_array_int32_99(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_99_Utils;
+
+/****************************************************************
+ ** array_int32_990 
+ ****************************************************************/
+extern int array_int32_990_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_990_string(const char *str, char **endptr);
+extern int string_to_array_int32_990(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_990_double_conversion_allowed();
+extern int array_int32_990_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_990_long_conversion_allowed();
+extern int array_int32_990_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_990(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_990_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_990(void *pValue);
+extern int release_array_int32_990(void *pValue);
+extern int copy_array_int32_990(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_990_Utils;
+
+/****************************************************************
+ ** array_int32_99_33 
+ ****************************************************************/
+extern int array_int32_99_33_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_int32_99_33_string(const char *str, char **endptr);
+extern int string_to_array_int32_99_33(const char *str, void *pValue, char **endptr);
+extern int is_array_int32_99_33_double_conversion_allowed();
+extern int array_int32_99_33_to_double(const void *pValue, double *nValue);
+extern int is_array_int32_99_33_long_conversion_allowed();
+extern int array_int32_99_33_to_long(const void *pValue, long *nValue);
+extern void compare_array_int32_99_33(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_int32_99_33_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_array_int32_99_33(void *pValue);
+extern int release_array_int32_99_33(void *pValue);
+extern int copy_array_int32_99_33(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_int32_99_33_Utils;
 
 /****************************************************************
  ** ASafe_Data_T_CalcBrakingCurves_types 
@@ -7076,23 +7025,6 @@ extern int copy_DMI_airtightSystem_T_DMI_Types_Pkg(void *pToValue, const void *p
 extern SimTypeUtils _Type_DMI_airtightSystem_T_DMI_Types_Pkg_Utils;
 
 /****************************************************************
- ** DMI_Available_Menu_int_T_DATA 
- ****************************************************************/
-extern int DMI_Available_Menu_int_T_DATA_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_DMI_Available_Menu_int_T_DATA_string(const char *str, char **endptr);
-extern int string_to_DMI_Available_Menu_int_T_DATA(const char *str, void *pValue, char **endptr);
-extern int is_DMI_Available_Menu_int_T_DATA_double_conversion_allowed();
-extern int DMI_Available_Menu_int_T_DATA_to_double(const void *pValue, double *nValue);
-extern int is_DMI_Available_Menu_int_T_DATA_long_conversion_allowed();
-extern int DMI_Available_Menu_int_T_DATA_to_long(const void *pValue, long *nValue);
-extern void compare_DMI_Available_Menu_int_T_DATA(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_DMI_Available_Menu_int_T_DATA_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_DMI_Available_Menu_int_T_DATA(void *pValue);
-extern int release_DMI_Available_Menu_int_T_DATA(void *pValue);
-extern int copy_DMI_Available_Menu_int_T_DATA(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_DMI_Available_Menu_int_T_DATA_Utils;
-
-/****************************************************************
  ** DMI_Available_Menu_INT_T_DATA 
  ****************************************************************/
 extern int DMI_Available_Menu_INT_T_DATA_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
@@ -7108,6 +7040,23 @@ extern int init_DMI_Available_Menu_INT_T_DATA(void *pValue);
 extern int release_DMI_Available_Menu_INT_T_DATA(void *pValue);
 extern int copy_DMI_Available_Menu_INT_T_DATA(void *pToValue, const void *pFromValue);
 extern SimTypeUtils _Type_DMI_Available_Menu_INT_T_DATA_Utils;
+
+/****************************************************************
+ ** DMI_Available_Menu_int_T_DATA 
+ ****************************************************************/
+extern int DMI_Available_Menu_int_T_DATA_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_DMI_Available_Menu_int_T_DATA_string(const char *str, char **endptr);
+extern int string_to_DMI_Available_Menu_int_T_DATA(const char *str, void *pValue, char **endptr);
+extern int is_DMI_Available_Menu_int_T_DATA_double_conversion_allowed();
+extern int DMI_Available_Menu_int_T_DATA_to_double(const void *pValue, double *nValue);
+extern int is_DMI_Available_Menu_int_T_DATA_long_conversion_allowed();
+extern int DMI_Available_Menu_int_T_DATA_to_long(const void *pValue, long *nValue);
+extern void compare_DMI_Available_Menu_int_T_DATA(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_DMI_Available_Menu_int_T_DATA_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_DMI_Available_Menu_int_T_DATA(void *pValue);
+extern int release_DMI_Available_Menu_int_T_DATA(void *pValue);
+extern int copy_DMI_Available_Menu_int_T_DATA(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_DMI_Available_Menu_int_T_DATA_Utils;
 
 /****************************************************************
  ** DMI_Available_Menu_T_DMI_Types_Pkg 
@@ -20030,497 +19979,497 @@ extern int copy_sTractionIdentity_T_Packet_TrainTypes_Pkg(void *pToValue, const 
 extern SimTypeUtils _Type_sTractionIdentity_T_Packet_TrainTypes_Pkg_Utils;
 
 /****************************************************************
- ** struct_484599 
+ ** struct_485030 
  ****************************************************************/
-extern int struct_484599_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_484599_string(const char *str, char **endptr);
-extern int string_to_struct_484599(const char *str, void *pValue, char **endptr);
-extern int is_struct_484599_double_conversion_allowed();
-extern int struct_484599_to_double(const void *pValue, double *nValue);
-extern int is_struct_484599_long_conversion_allowed();
-extern int struct_484599_to_long(const void *pValue, long *nValue);
-extern void compare_struct_484599(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_484599_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_484599(void *pValue);
-extern int release_struct_484599(void *pValue);
-extern int copy_struct_484599(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_484599_Utils;
+extern int struct_485030_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_485030_string(const char *str, char **endptr);
+extern int string_to_struct_485030(const char *str, void *pValue, char **endptr);
+extern int is_struct_485030_double_conversion_allowed();
+extern int struct_485030_to_double(const void *pValue, double *nValue);
+extern int is_struct_485030_long_conversion_allowed();
+extern int struct_485030_to_long(const void *pValue, long *nValue);
+extern void compare_struct_485030(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_485030_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_485030(void *pValue);
+extern int release_struct_485030(void *pValue);
+extern int copy_struct_485030(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_485030_Utils;
 
 /****************************************************************
- ** struct_484617 
+ ** struct_485091 
  ****************************************************************/
-extern int struct_484617_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_484617_string(const char *str, char **endptr);
-extern int string_to_struct_484617(const char *str, void *pValue, char **endptr);
-extern int is_struct_484617_double_conversion_allowed();
-extern int struct_484617_to_double(const void *pValue, double *nValue);
-extern int is_struct_484617_long_conversion_allowed();
-extern int struct_484617_to_long(const void *pValue, long *nValue);
-extern void compare_struct_484617(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_484617_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_484617(void *pValue);
-extern int release_struct_484617(void *pValue);
-extern int copy_struct_484617(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_484617_Utils;
+extern int struct_485091_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_485091_string(const char *str, char **endptr);
+extern int string_to_struct_485091(const char *str, void *pValue, char **endptr);
+extern int is_struct_485091_double_conversion_allowed();
+extern int struct_485091_to_double(const void *pValue, double *nValue);
+extern int is_struct_485091_long_conversion_allowed();
+extern int struct_485091_to_long(const void *pValue, long *nValue);
+extern void compare_struct_485091(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_485091_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_485091(void *pValue);
+extern int release_struct_485091(void *pValue);
+extern int copy_struct_485091(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_485091_Utils;
 
 /****************************************************************
- ** struct_485021 
+ ** struct_485097 
  ****************************************************************/
-extern int struct_485021_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_485021_string(const char *str, char **endptr);
-extern int string_to_struct_485021(const char *str, void *pValue, char **endptr);
-extern int is_struct_485021_double_conversion_allowed();
-extern int struct_485021_to_double(const void *pValue, double *nValue);
-extern int is_struct_485021_long_conversion_allowed();
-extern int struct_485021_to_long(const void *pValue, long *nValue);
-extern void compare_struct_485021(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_485021_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_485021(void *pValue);
-extern int release_struct_485021(void *pValue);
-extern int copy_struct_485021(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_485021_Utils;
+extern int struct_485097_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_485097_string(const char *str, char **endptr);
+extern int string_to_struct_485097(const char *str, void *pValue, char **endptr);
+extern int is_struct_485097_double_conversion_allowed();
+extern int struct_485097_to_double(const void *pValue, double *nValue);
+extern int is_struct_485097_long_conversion_allowed();
+extern int struct_485097_to_long(const void *pValue, long *nValue);
+extern void compare_struct_485097(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_485097_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_485097(void *pValue);
+extern int release_struct_485097(void *pValue);
+extern int copy_struct_485097(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_485097_Utils;
 
 /****************************************************************
- ** struct_485072 
+ ** struct_485689 
  ****************************************************************/
-extern int struct_485072_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_485072_string(const char *str, char **endptr);
-extern int string_to_struct_485072(const char *str, void *pValue, char **endptr);
-extern int is_struct_485072_double_conversion_allowed();
-extern int struct_485072_to_double(const void *pValue, double *nValue);
-extern int is_struct_485072_long_conversion_allowed();
-extern int struct_485072_to_long(const void *pValue, long *nValue);
-extern void compare_struct_485072(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_485072_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_485072(void *pValue);
-extern int release_struct_485072(void *pValue);
-extern int copy_struct_485072(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_485072_Utils;
+extern int struct_485689_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_485689_string(const char *str, char **endptr);
+extern int string_to_struct_485689(const char *str, void *pValue, char **endptr);
+extern int is_struct_485689_double_conversion_allowed();
+extern int struct_485689_to_double(const void *pValue, double *nValue);
+extern int is_struct_485689_long_conversion_allowed();
+extern int struct_485689_to_long(const void *pValue, long *nValue);
+extern void compare_struct_485689(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_485689_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_485689(void *pValue);
+extern int release_struct_485689(void *pValue);
+extern int copy_struct_485689(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_485689_Utils;
 
 /****************************************************************
- ** struct_485102 
+ ** struct_486242 
  ****************************************************************/
-extern int struct_485102_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_485102_string(const char *str, char **endptr);
-extern int string_to_struct_485102(const char *str, void *pValue, char **endptr);
-extern int is_struct_485102_double_conversion_allowed();
-extern int struct_485102_to_double(const void *pValue, double *nValue);
-extern int is_struct_485102_long_conversion_allowed();
-extern int struct_485102_to_long(const void *pValue, long *nValue);
-extern void compare_struct_485102(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_485102_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_485102(void *pValue);
-extern int release_struct_485102(void *pValue);
-extern int copy_struct_485102(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_485102_Utils;
+extern int struct_486242_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_486242_string(const char *str, char **endptr);
+extern int string_to_struct_486242(const char *str, void *pValue, char **endptr);
+extern int is_struct_486242_double_conversion_allowed();
+extern int struct_486242_to_double(const void *pValue, double *nValue);
+extern int is_struct_486242_long_conversion_allowed();
+extern int struct_486242_to_long(const void *pValue, long *nValue);
+extern void compare_struct_486242(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_486242_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_486242(void *pValue);
+extern int release_struct_486242(void *pValue);
+extern int copy_struct_486242(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_486242_Utils;
 
 /****************************************************************
- ** struct_485264 
+ ** struct_486417 
  ****************************************************************/
-extern int struct_485264_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_485264_string(const char *str, char **endptr);
-extern int string_to_struct_485264(const char *str, void *pValue, char **endptr);
-extern int is_struct_485264_double_conversion_allowed();
-extern int struct_485264_to_double(const void *pValue, double *nValue);
-extern int is_struct_485264_long_conversion_allowed();
-extern int struct_485264_to_long(const void *pValue, long *nValue);
-extern void compare_struct_485264(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_485264_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_485264(void *pValue);
-extern int release_struct_485264(void *pValue);
-extern int copy_struct_485264(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_485264_Utils;
+extern int struct_486417_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_486417_string(const char *str, char **endptr);
+extern int string_to_struct_486417(const char *str, void *pValue, char **endptr);
+extern int is_struct_486417_double_conversion_allowed();
+extern int struct_486417_to_double(const void *pValue, double *nValue);
+extern int is_struct_486417_long_conversion_allowed();
+extern int struct_486417_to_long(const void *pValue, long *nValue);
+extern void compare_struct_486417(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_486417_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_486417(void *pValue);
+extern int release_struct_486417(void *pValue);
+extern int copy_struct_486417(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_486417_Utils;
 
 /****************************************************************
- ** struct_485794 
+ ** struct_486490 
  ****************************************************************/
-extern int struct_485794_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_485794_string(const char *str, char **endptr);
-extern int string_to_struct_485794(const char *str, void *pValue, char **endptr);
-extern int is_struct_485794_double_conversion_allowed();
-extern int struct_485794_to_double(const void *pValue, double *nValue);
-extern int is_struct_485794_long_conversion_allowed();
-extern int struct_485794_to_long(const void *pValue, long *nValue);
-extern void compare_struct_485794(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_485794_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_485794(void *pValue);
-extern int release_struct_485794(void *pValue);
-extern int copy_struct_485794(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_485794_Utils;
+extern int struct_486490_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_486490_string(const char *str, char **endptr);
+extern int string_to_struct_486490(const char *str, void *pValue, char **endptr);
+extern int is_struct_486490_double_conversion_allowed();
+extern int struct_486490_to_double(const void *pValue, double *nValue);
+extern int is_struct_486490_long_conversion_allowed();
+extern int struct_486490_to_long(const void *pValue, long *nValue);
+extern void compare_struct_486490(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_486490_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_486490(void *pValue);
+extern int release_struct_486490(void *pValue);
+extern int copy_struct_486490(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_486490_Utils;
 
 /****************************************************************
- ** struct_486081 
+ ** struct_486841 
  ****************************************************************/
-extern int struct_486081_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_486081_string(const char *str, char **endptr);
-extern int string_to_struct_486081(const char *str, void *pValue, char **endptr);
-extern int is_struct_486081_double_conversion_allowed();
-extern int struct_486081_to_double(const void *pValue, double *nValue);
-extern int is_struct_486081_long_conversion_allowed();
-extern int struct_486081_to_long(const void *pValue, long *nValue);
-extern void compare_struct_486081(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_486081_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_486081(void *pValue);
-extern int release_struct_486081(void *pValue);
-extern int copy_struct_486081(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_486081_Utils;
+extern int struct_486841_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_486841_string(const char *str, char **endptr);
+extern int string_to_struct_486841(const char *str, void *pValue, char **endptr);
+extern int is_struct_486841_double_conversion_allowed();
+extern int struct_486841_to_double(const void *pValue, double *nValue);
+extern int is_struct_486841_long_conversion_allowed();
+extern int struct_486841_to_long(const void *pValue, long *nValue);
+extern void compare_struct_486841(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_486841_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_486841(void *pValue);
+extern int release_struct_486841(void *pValue);
+extern int copy_struct_486841(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_486841_Utils;
 
 /****************************************************************
- ** struct_486660 
+ ** struct_487344 
  ****************************************************************/
-extern int struct_486660_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_486660_string(const char *str, char **endptr);
-extern int string_to_struct_486660(const char *str, void *pValue, char **endptr);
-extern int is_struct_486660_double_conversion_allowed();
-extern int struct_486660_to_double(const void *pValue, double *nValue);
-extern int is_struct_486660_long_conversion_allowed();
-extern int struct_486660_to_long(const void *pValue, long *nValue);
-extern void compare_struct_486660(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_486660_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_486660(void *pValue);
-extern int release_struct_486660(void *pValue);
-extern int copy_struct_486660(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_486660_Utils;
+extern int struct_487344_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_487344_string(const char *str, char **endptr);
+extern int string_to_struct_487344(const char *str, void *pValue, char **endptr);
+extern int is_struct_487344_double_conversion_allowed();
+extern int struct_487344_to_double(const void *pValue, double *nValue);
+extern int is_struct_487344_long_conversion_allowed();
+extern int struct_487344_to_long(const void *pValue, long *nValue);
+extern void compare_struct_487344(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_487344_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_487344(void *pValue);
+extern int release_struct_487344(void *pValue);
+extern int copy_struct_487344(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_487344_Utils;
 
 /****************************************************************
- ** struct_486733 
+ ** struct_487461 
  ****************************************************************/
-extern int struct_486733_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_486733_string(const char *str, char **endptr);
-extern int string_to_struct_486733(const char *str, void *pValue, char **endptr);
-extern int is_struct_486733_double_conversion_allowed();
-extern int struct_486733_to_double(const void *pValue, double *nValue);
-extern int is_struct_486733_long_conversion_allowed();
-extern int struct_486733_to_long(const void *pValue, long *nValue);
-extern void compare_struct_486733(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_486733_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_486733(void *pValue);
-extern int release_struct_486733(void *pValue);
-extern int copy_struct_486733(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_486733_Utils;
+extern int struct_487461_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_487461_string(const char *str, char **endptr);
+extern int string_to_struct_487461(const char *str, void *pValue, char **endptr);
+extern int is_struct_487461_double_conversion_allowed();
+extern int struct_487461_to_double(const void *pValue, double *nValue);
+extern int is_struct_487461_long_conversion_allowed();
+extern int struct_487461_to_long(const void *pValue, long *nValue);
+extern void compare_struct_487461(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_487461_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_487461(void *pValue);
+extern int release_struct_487461(void *pValue);
+extern int copy_struct_487461(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_487461_Utils;
 
 /****************************************************************
- ** struct_487049 
+ ** struct_487538 
  ****************************************************************/
-extern int struct_487049_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_487049_string(const char *str, char **endptr);
-extern int string_to_struct_487049(const char *str, void *pValue, char **endptr);
-extern int is_struct_487049_double_conversion_allowed();
-extern int struct_487049_to_double(const void *pValue, double *nValue);
-extern int is_struct_487049_long_conversion_allowed();
-extern int struct_487049_to_long(const void *pValue, long *nValue);
-extern void compare_struct_487049(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_487049_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_487049(void *pValue);
-extern int release_struct_487049(void *pValue);
-extern int copy_struct_487049(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_487049_Utils;
+extern int struct_487538_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_487538_string(const char *str, char **endptr);
+extern int string_to_struct_487538(const char *str, void *pValue, char **endptr);
+extern int is_struct_487538_double_conversion_allowed();
+extern int struct_487538_to_double(const void *pValue, double *nValue);
+extern int is_struct_487538_long_conversion_allowed();
+extern int struct_487538_to_long(const void *pValue, long *nValue);
+extern void compare_struct_487538(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_487538_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_487538(void *pValue);
+extern int release_struct_487538(void *pValue);
+extern int copy_struct_487538(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_487538_Utils;
 
 /****************************************************************
- ** struct_487196 
+ ** struct_487594 
  ****************************************************************/
-extern int struct_487196_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_487196_string(const char *str, char **endptr);
-extern int string_to_struct_487196(const char *str, void *pValue, char **endptr);
-extern int is_struct_487196_double_conversion_allowed();
-extern int struct_487196_to_double(const void *pValue, double *nValue);
-extern int is_struct_487196_long_conversion_allowed();
-extern int struct_487196_to_long(const void *pValue, long *nValue);
-extern void compare_struct_487196(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_487196_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_487196(void *pValue);
-extern int release_struct_487196(void *pValue);
-extern int copy_struct_487196(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_487196_Utils;
+extern int struct_487594_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_487594_string(const char *str, char **endptr);
+extern int string_to_struct_487594(const char *str, void *pValue, char **endptr);
+extern int is_struct_487594_double_conversion_allowed();
+extern int struct_487594_to_double(const void *pValue, double *nValue);
+extern int is_struct_487594_long_conversion_allowed();
+extern int struct_487594_to_long(const void *pValue, long *nValue);
+extern void compare_struct_487594(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_487594_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_487594(void *pValue);
+extern int release_struct_487594(void *pValue);
+extern int copy_struct_487594(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_487594_Utils;
 
 /****************************************************************
- ** struct_487387 
+ ** struct_488170 
  ****************************************************************/
-extern int struct_487387_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_487387_string(const char *str, char **endptr);
-extern int string_to_struct_487387(const char *str, void *pValue, char **endptr);
-extern int is_struct_487387_double_conversion_allowed();
-extern int struct_487387_to_double(const void *pValue, double *nValue);
-extern int is_struct_487387_long_conversion_allowed();
-extern int struct_487387_to_long(const void *pValue, long *nValue);
-extern void compare_struct_487387(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_487387_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_487387(void *pValue);
-extern int release_struct_487387(void *pValue);
-extern int copy_struct_487387(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_487387_Utils;
+extern int struct_488170_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_488170_string(const char *str, char **endptr);
+extern int string_to_struct_488170(const char *str, void *pValue, char **endptr);
+extern int is_struct_488170_double_conversion_allowed();
+extern int struct_488170_to_double(const void *pValue, double *nValue);
+extern int is_struct_488170_long_conversion_allowed();
+extern int struct_488170_to_long(const void *pValue, long *nValue);
+extern void compare_struct_488170(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_488170_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_488170(void *pValue);
+extern int release_struct_488170(void *pValue);
+extern int copy_struct_488170(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_488170_Utils;
 
 /****************************************************************
- ** struct_487566 
+ ** struct_488194 
  ****************************************************************/
-extern int struct_487566_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_487566_string(const char *str, char **endptr);
-extern int string_to_struct_487566(const char *str, void *pValue, char **endptr);
-extern int is_struct_487566_double_conversion_allowed();
-extern int struct_487566_to_double(const void *pValue, double *nValue);
-extern int is_struct_487566_long_conversion_allowed();
-extern int struct_487566_to_long(const void *pValue, long *nValue);
-extern void compare_struct_487566(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_487566_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_487566(void *pValue);
-extern int release_struct_487566(void *pValue);
-extern int copy_struct_487566(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_487566_Utils;
+extern int struct_488194_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_488194_string(const char *str, char **endptr);
+extern int string_to_struct_488194(const char *str, void *pValue, char **endptr);
+extern int is_struct_488194_double_conversion_allowed();
+extern int struct_488194_to_double(const void *pValue, double *nValue);
+extern int is_struct_488194_long_conversion_allowed();
+extern int struct_488194_to_long(const void *pValue, long *nValue);
+extern void compare_struct_488194(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_488194_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_488194(void *pValue);
+extern int release_struct_488194(void *pValue);
+extern int copy_struct_488194(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_488194_Utils;
 
 /****************************************************************
- ** struct_487754 
+ ** struct_488685 
  ****************************************************************/
-extern int struct_487754_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_487754_string(const char *str, char **endptr);
-extern int string_to_struct_487754(const char *str, void *pValue, char **endptr);
-extern int is_struct_487754_double_conversion_allowed();
-extern int struct_487754_to_double(const void *pValue, double *nValue);
-extern int is_struct_487754_long_conversion_allowed();
-extern int struct_487754_to_long(const void *pValue, long *nValue);
-extern void compare_struct_487754(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_487754_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_487754(void *pValue);
-extern int release_struct_487754(void *pValue);
-extern int copy_struct_487754(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_487754_Utils;
+extern int struct_488685_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_488685_string(const char *str, char **endptr);
+extern int string_to_struct_488685(const char *str, void *pValue, char **endptr);
+extern int is_struct_488685_double_conversion_allowed();
+extern int struct_488685_to_double(const void *pValue, double *nValue);
+extern int is_struct_488685_long_conversion_allowed();
+extern int struct_488685_to_long(const void *pValue, long *nValue);
+extern void compare_struct_488685(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_488685_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_488685(void *pValue);
+extern int release_struct_488685(void *pValue);
+extern int copy_struct_488685(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_488685_Utils;
 
 /****************************************************************
- ** struct_488406 
+ ** struct_488860 
  ****************************************************************/
-extern int struct_488406_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_488406_string(const char *str, char **endptr);
-extern int string_to_struct_488406(const char *str, void *pValue, char **endptr);
-extern int is_struct_488406_double_conversion_allowed();
-extern int struct_488406_to_double(const void *pValue, double *nValue);
-extern int is_struct_488406_long_conversion_allowed();
-extern int struct_488406_to_long(const void *pValue, long *nValue);
-extern void compare_struct_488406(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_488406_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_488406(void *pValue);
-extern int release_struct_488406(void *pValue);
-extern int copy_struct_488406(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_488406_Utils;
+extern int struct_488860_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_488860_string(const char *str, char **endptr);
+extern int string_to_struct_488860(const char *str, void *pValue, char **endptr);
+extern int is_struct_488860_double_conversion_allowed();
+extern int struct_488860_to_double(const void *pValue, double *nValue);
+extern int is_struct_488860_long_conversion_allowed();
+extern int struct_488860_to_long(const void *pValue, long *nValue);
+extern void compare_struct_488860(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_488860_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_488860(void *pValue);
+extern int release_struct_488860(void *pValue);
+extern int copy_struct_488860(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_488860_Utils;
 
 /****************************************************************
- ** struct_488418 
+ ** struct_489123 
  ****************************************************************/
-extern int struct_488418_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_488418_string(const char *str, char **endptr);
-extern int string_to_struct_488418(const char *str, void *pValue, char **endptr);
-extern int is_struct_488418_double_conversion_allowed();
-extern int struct_488418_to_double(const void *pValue, double *nValue);
-extern int is_struct_488418_long_conversion_allowed();
-extern int struct_488418_to_long(const void *pValue, long *nValue);
-extern void compare_struct_488418(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_488418_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_488418(void *pValue);
-extern int release_struct_488418(void *pValue);
-extern int copy_struct_488418(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_488418_Utils;
+extern int struct_489123_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_489123_string(const char *str, char **endptr);
+extern int string_to_struct_489123(const char *str, void *pValue, char **endptr);
+extern int is_struct_489123_double_conversion_allowed();
+extern int struct_489123_to_double(const void *pValue, double *nValue);
+extern int is_struct_489123_long_conversion_allowed();
+extern int struct_489123_to_long(const void *pValue, long *nValue);
+extern void compare_struct_489123(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_489123_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_489123(void *pValue);
+extern int release_struct_489123(void *pValue);
+extern int copy_struct_489123(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_489123_Utils;
 
 /****************************************************************
- ** struct_488833 
+ ** struct_491368 
  ****************************************************************/
-extern int struct_488833_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_488833_string(const char *str, char **endptr);
-extern int string_to_struct_488833(const char *str, void *pValue, char **endptr);
-extern int is_struct_488833_double_conversion_allowed();
-extern int struct_488833_to_double(const void *pValue, double *nValue);
-extern int is_struct_488833_long_conversion_allowed();
-extern int struct_488833_to_long(const void *pValue, long *nValue);
-extern void compare_struct_488833(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_488833_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_488833(void *pValue);
-extern int release_struct_488833(void *pValue);
-extern int copy_struct_488833(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_488833_Utils;
+extern int struct_491368_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_491368_string(const char *str, char **endptr);
+extern int string_to_struct_491368(const char *str, void *pValue, char **endptr);
+extern int is_struct_491368_double_conversion_allowed();
+extern int struct_491368_to_double(const void *pValue, double *nValue);
+extern int is_struct_491368_long_conversion_allowed();
+extern int struct_491368_to_long(const void *pValue, long *nValue);
+extern void compare_struct_491368(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_491368_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_491368(void *pValue);
+extern int release_struct_491368(void *pValue);
+extern int copy_struct_491368(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_491368_Utils;
 
 /****************************************************************
- ** struct_489524 
+ ** struct_491641 
  ****************************************************************/
-extern int struct_489524_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_489524_string(const char *str, char **endptr);
-extern int string_to_struct_489524(const char *str, void *pValue, char **endptr);
-extern int is_struct_489524_double_conversion_allowed();
-extern int struct_489524_to_double(const void *pValue, double *nValue);
-extern int is_struct_489524_long_conversion_allowed();
-extern int struct_489524_to_long(const void *pValue, long *nValue);
-extern void compare_struct_489524(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_489524_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_489524(void *pValue);
-extern int release_struct_489524(void *pValue);
-extern int copy_struct_489524(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_489524_Utils;
+extern int struct_491641_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_491641_string(const char *str, char **endptr);
+extern int string_to_struct_491641(const char *str, void *pValue, char **endptr);
+extern int is_struct_491641_double_conversion_allowed();
+extern int struct_491641_to_double(const void *pValue, double *nValue);
+extern int is_struct_491641_long_conversion_allowed();
+extern int struct_491641_to_long(const void *pValue, long *nValue);
+extern void compare_struct_491641(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_491641_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_491641(void *pValue);
+extern int release_struct_491641(void *pValue);
+extern int copy_struct_491641(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_491641_Utils;
 
 /****************************************************************
- ** struct_491646 
+ ** struct_491668 
  ****************************************************************/
-extern int struct_491646_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_491646_string(const char *str, char **endptr);
-extern int string_to_struct_491646(const char *str, void *pValue, char **endptr);
-extern int is_struct_491646_double_conversion_allowed();
-extern int struct_491646_to_double(const void *pValue, double *nValue);
-extern int is_struct_491646_long_conversion_allowed();
-extern int struct_491646_to_long(const void *pValue, long *nValue);
-extern void compare_struct_491646(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_491646_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_491646(void *pValue);
-extern int release_struct_491646(void *pValue);
-extern int copy_struct_491646(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_491646_Utils;
+extern int struct_491668_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_491668_string(const char *str, char **endptr);
+extern int string_to_struct_491668(const char *str, void *pValue, char **endptr);
+extern int is_struct_491668_double_conversion_allowed();
+extern int struct_491668_to_double(const void *pValue, double *nValue);
+extern int is_struct_491668_long_conversion_allowed();
+extern int struct_491668_to_long(const void *pValue, long *nValue);
+extern void compare_struct_491668(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_491668_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_491668(void *pValue);
+extern int release_struct_491668(void *pValue);
+extern int copy_struct_491668(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_491668_Utils;
 
 /****************************************************************
- ** struct_491791 
+ ** struct_491870 
  ****************************************************************/
-extern int struct_491791_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_491791_string(const char *str, char **endptr);
-extern int string_to_struct_491791(const char *str, void *pValue, char **endptr);
-extern int is_struct_491791_double_conversion_allowed();
-extern int struct_491791_to_double(const void *pValue, double *nValue);
-extern int is_struct_491791_long_conversion_allowed();
-extern int struct_491791_to_long(const void *pValue, long *nValue);
-extern void compare_struct_491791(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_491791_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_491791(void *pValue);
-extern int release_struct_491791(void *pValue);
-extern int copy_struct_491791(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_491791_Utils;
+extern int struct_491870_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_491870_string(const char *str, char **endptr);
+extern int string_to_struct_491870(const char *str, void *pValue, char **endptr);
+extern int is_struct_491870_double_conversion_allowed();
+extern int struct_491870_to_double(const void *pValue, double *nValue);
+extern int is_struct_491870_long_conversion_allowed();
+extern int struct_491870_to_long(const void *pValue, long *nValue);
+extern void compare_struct_491870(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_491870_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_491870(void *pValue);
+extern int release_struct_491870(void *pValue);
+extern int copy_struct_491870(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_491870_Utils;
 
 /****************************************************************
- ** struct_491898 
+ ** struct_492005 
  ****************************************************************/
-extern int struct_491898_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_491898_string(const char *str, char **endptr);
-extern int string_to_struct_491898(const char *str, void *pValue, char **endptr);
-extern int is_struct_491898_double_conversion_allowed();
-extern int struct_491898_to_double(const void *pValue, double *nValue);
-extern int is_struct_491898_long_conversion_allowed();
-extern int struct_491898_to_long(const void *pValue, long *nValue);
-extern void compare_struct_491898(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_491898_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_491898(void *pValue);
-extern int release_struct_491898(void *pValue);
-extern int copy_struct_491898(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_491898_Utils;
+extern int struct_492005_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_492005_string(const char *str, char **endptr);
+extern int string_to_struct_492005(const char *str, void *pValue, char **endptr);
+extern int is_struct_492005_double_conversion_allowed();
+extern int struct_492005_to_double(const void *pValue, double *nValue);
+extern int is_struct_492005_long_conversion_allowed();
+extern int struct_492005_to_long(const void *pValue, long *nValue);
+extern void compare_struct_492005(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_492005_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_492005(void *pValue);
+extern int release_struct_492005(void *pValue);
+extern int copy_struct_492005(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_492005_Utils;
 
 /****************************************************************
- ** struct_491925 
+ ** struct_492256 
  ****************************************************************/
-extern int struct_491925_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_491925_string(const char *str, char **endptr);
-extern int string_to_struct_491925(const char *str, void *pValue, char **endptr);
-extern int is_struct_491925_double_conversion_allowed();
-extern int struct_491925_to_double(const void *pValue, double *nValue);
-extern int is_struct_491925_long_conversion_allowed();
-extern int struct_491925_to_long(const void *pValue, long *nValue);
-extern void compare_struct_491925(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_491925_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_491925(void *pValue);
-extern int release_struct_491925(void *pValue);
-extern int copy_struct_491925(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_491925_Utils;
+extern int struct_492256_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_492256_string(const char *str, char **endptr);
+extern int string_to_struct_492256(const char *str, void *pValue, char **endptr);
+extern int is_struct_492256_double_conversion_allowed();
+extern int struct_492256_to_double(const void *pValue, double *nValue);
+extern int is_struct_492256_long_conversion_allowed();
+extern int struct_492256_to_long(const void *pValue, long *nValue);
+extern void compare_struct_492256(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_492256_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_492256(void *pValue);
+extern int release_struct_492256(void *pValue);
+extern int copy_struct_492256(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_492256_Utils;
 
 /****************************************************************
- ** struct_492127 
+ ** struct_492780 
  ****************************************************************/
-extern int struct_492127_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_492127_string(const char *str, char **endptr);
-extern int string_to_struct_492127(const char *str, void *pValue, char **endptr);
-extern int is_struct_492127_double_conversion_allowed();
-extern int struct_492127_to_double(const void *pValue, double *nValue);
-extern int is_struct_492127_long_conversion_allowed();
-extern int struct_492127_to_long(const void *pValue, long *nValue);
-extern void compare_struct_492127(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_492127_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_492127(void *pValue);
-extern int release_struct_492127(void *pValue);
-extern int copy_struct_492127(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_492127_Utils;
+extern int struct_492780_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_492780_string(const char *str, char **endptr);
+extern int string_to_struct_492780(const char *str, void *pValue, char **endptr);
+extern int is_struct_492780_double_conversion_allowed();
+extern int struct_492780_to_double(const void *pValue, double *nValue);
+extern int is_struct_492780_long_conversion_allowed();
+extern int struct_492780_to_long(const void *pValue, long *nValue);
+extern void compare_struct_492780(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_492780_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_492780(void *pValue);
+extern int release_struct_492780(void *pValue);
+extern int copy_struct_492780(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_492780_Utils;
 
 /****************************************************************
- ** struct_492262 
+ ** struct_493006 
  ****************************************************************/
-extern int struct_492262_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_492262_string(const char *str, char **endptr);
-extern int string_to_struct_492262(const char *str, void *pValue, char **endptr);
-extern int is_struct_492262_double_conversion_allowed();
-extern int struct_492262_to_double(const void *pValue, double *nValue);
-extern int is_struct_492262_long_conversion_allowed();
-extern int struct_492262_to_long(const void *pValue, long *nValue);
-extern void compare_struct_492262(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_492262_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_492262(void *pValue);
-extern int release_struct_492262(void *pValue);
-extern int copy_struct_492262(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_492262_Utils;
+extern int struct_493006_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_493006_string(const char *str, char **endptr);
+extern int string_to_struct_493006(const char *str, void *pValue, char **endptr);
+extern int is_struct_493006_double_conversion_allowed();
+extern int struct_493006_to_double(const void *pValue, double *nValue);
+extern int is_struct_493006_long_conversion_allowed();
+extern int struct_493006_to_long(const void *pValue, long *nValue);
+extern void compare_struct_493006(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_493006_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_493006(void *pValue);
+extern int release_struct_493006(void *pValue);
+extern int copy_struct_493006(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_493006_Utils;
 
 /****************************************************************
- ** struct_492513 
+ ** struct_493052 
  ****************************************************************/
-extern int struct_492513_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_492513_string(const char *str, char **endptr);
-extern int string_to_struct_492513(const char *str, void *pValue, char **endptr);
-extern int is_struct_492513_double_conversion_allowed();
-extern int struct_492513_to_double(const void *pValue, double *nValue);
-extern int is_struct_492513_long_conversion_allowed();
-extern int struct_492513_to_long(const void *pValue, long *nValue);
-extern void compare_struct_492513(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_492513_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_492513(void *pValue);
-extern int release_struct_492513(void *pValue);
-extern int copy_struct_492513(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_492513_Utils;
+extern int struct_493052_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_493052_string(const char *str, char **endptr);
+extern int string_to_struct_493052(const char *str, void *pValue, char **endptr);
+extern int is_struct_493052_double_conversion_allowed();
+extern int struct_493052_to_double(const void *pValue, double *nValue);
+extern int is_struct_493052_long_conversion_allowed();
+extern int struct_493052_to_long(const void *pValue, long *nValue);
+extern void compare_struct_493052(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_493052_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_493052(void *pValue);
+extern int release_struct_493052(void *pValue);
+extern int copy_struct_493052(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_493052_Utils;
 
 /****************************************************************
- ** struct_493015 
+ ** struct_493703 
  ****************************************************************/
-extern int struct_493015_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_493015_string(const char *str, char **endptr);
-extern int string_to_struct_493015(const char *str, void *pValue, char **endptr);
-extern int is_struct_493015_double_conversion_allowed();
-extern int struct_493015_to_double(const void *pValue, double *nValue);
-extern int is_struct_493015_long_conversion_allowed();
-extern int struct_493015_to_long(const void *pValue, long *nValue);
-extern void compare_struct_493015(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_493015_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_493015(void *pValue);
-extern int release_struct_493015(void *pValue);
-extern int copy_struct_493015(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_493015_Utils;
+extern int struct_493703_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_493703_string(const char *str, char **endptr);
+extern int string_to_struct_493703(const char *str, void *pValue, char **endptr);
+extern int is_struct_493703_double_conversion_allowed();
+extern int struct_493703_to_double(const void *pValue, double *nValue);
+extern int is_struct_493703_long_conversion_allowed();
+extern int struct_493703_to_long(const void *pValue, long *nValue);
+extern void compare_struct_493703(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_493703_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_493703(void *pValue);
+extern int release_struct_493703(void *pValue);
+extern int copy_struct_493703(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_493703_Utils;
 
 /****************************************************************
- ** struct_493287 
+ ** struct_493943 
  ****************************************************************/
-extern int struct_493287_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_493287_string(const char *str, char **endptr);
-extern int string_to_struct_493287(const char *str, void *pValue, char **endptr);
-extern int is_struct_493287_double_conversion_allowed();
-extern int struct_493287_to_double(const void *pValue, double *nValue);
-extern int is_struct_493287_long_conversion_allowed();
-extern int struct_493287_to_long(const void *pValue, long *nValue);
-extern void compare_struct_493287(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_493287_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_493287(void *pValue);
-extern int release_struct_493287(void *pValue);
-extern int copy_struct_493287(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_493287_Utils;
+extern int struct_493943_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_493943_string(const char *str, char **endptr);
+extern int string_to_struct_493943(const char *str, void *pValue, char **endptr);
+extern int is_struct_493943_double_conversion_allowed();
+extern int struct_493943_to_double(const void *pValue, double *nValue);
+extern int is_struct_493943_long_conversion_allowed();
+extern int struct_493943_to_long(const void *pValue, long *nValue);
+extern void compare_struct_493943(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_493943_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_493943(void *pValue);
+extern int release_struct_493943(void *pValue);
+extern int copy_struct_493943(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_493943_Utils;
 
 /****************************************************************
- ** struct_494268 
+ ** struct_494407 
  ****************************************************************/
-extern int struct_494268_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_struct_494268_string(const char *str, char **endptr);
-extern int string_to_struct_494268(const char *str, void *pValue, char **endptr);
-extern int is_struct_494268_double_conversion_allowed();
-extern int struct_494268_to_double(const void *pValue, double *nValue);
-extern int is_struct_494268_long_conversion_allowed();
-extern int struct_494268_to_long(const void *pValue, long *nValue);
-extern void compare_struct_494268(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_struct_494268_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int init_struct_494268(void *pValue);
-extern int release_struct_494268(void *pValue);
-extern int copy_struct_494268(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_struct_494268_Utils;
+extern int struct_494407_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_struct_494407_string(const char *str, char **endptr);
+extern int string_to_struct_494407(const char *str, void *pValue, char **endptr);
+extern int is_struct_494407_double_conversion_allowed();
+extern int struct_494407_to_double(const void *pValue, double *nValue);
+extern int is_struct_494407_long_conversion_allowed();
+extern int struct_494407_to_long(const void *pValue, long *nValue);
+extern void compare_struct_494407(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_struct_494407_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int init_struct_494407(void *pValue);
+extern int release_struct_494407(void *pValue);
+extern int copy_struct_494407(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_struct_494407_Utils;
 
 /****************************************************************
  ** SupervisionStatus_T_SDM_Types_Pkg 

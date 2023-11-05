@@ -14,21 +14,21 @@ void CAST_M_ADHESION_to_int_TM_conversions(
   outC_CAST_M_ADHESION_to_int_TM_conversions *outC)
 {
   /* m_adhesion_int/ */
-  static kcg_int64 m_adhesion_int_partial;
+  static kcg_int32 m_adhesion_int_partial;
   /* error/ */
   static kcg_bool error_partial;
   /* m_adhesion_int/ */
-  static kcg_int64 _1_m_adhesion_int_partial;
+  static kcg_int32 _1_m_adhesion_int_partial;
   /* error/ */
   static kcg_bool _2_error_partial;
   /* error/ */
   static kcg_bool _3_error_partial;
   /* m_adhesion_int/ */
-  static kcg_int64 _4_m_adhesion_int_partial;
+  static kcg_int32 _4_m_adhesion_int_partial;
   /* error/ */
   static kcg_bool _5_error_partial;
   /* m_adhesion_int/ */
-  static kcg_int64 _6_m_adhesion_int_partial;
+  static kcg_int32 _6_m_adhesion_int_partial;
   static kcg_bool noname;
 
   outC->_L1 = m_adhesion;
@@ -80,14 +80,14 @@ void CAST_M_ADHESION_to_int_init_TM_conversions(
   outC->m_adhesion_in = M_ADHESION_Slippery_rail;
   outC->error = kcg_true;
   outC->IfBlock1_clock = kcg_true;
-  outC->_L7_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L7_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L6_then_else_IfBlock1 = kcg_true;
-  outC->_L1_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L2_else_else_IfBlock1 = kcg_true;
   outC->else_clock_IfBlock1 = kcg_true;
   outC->_L7_then_IfBlock1 = kcg_true;
-  outC->_L8_then_IfBlock1 = kcg_lit_int64(0);
-  outC->m_adhesion_int = kcg_lit_int64(0);
+  outC->_L8_then_IfBlock1 = kcg_lit_int32(0);
+  outC->m_adhesion_int = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

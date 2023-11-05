@@ -17,7 +17,7 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* messageBus_out/ */ messageBus_out;
-  kcg_int64 /* t_train_assigned/ */ t_train_assigned;
+  kcg_int32 /* t_train_assigned/ */ t_train_assigned;
   /* -----------------------  no local probes  ----------------------- */
   /* ----------------------- local memories  ------------------------- */
   _104_SSM_ST_SM1 /* SM1: */ SM1_state_nxt;
@@ -37,10 +37,10 @@ typedef struct {
   _104_SSM_ST_SM1 /* SM1: */ SM1_state_act;
   _105_SSM_TR_SM1 /* SM1: */ SM1_fired_strong;
   _105_SSM_TR_SM1 /* SM1: */ SM1_fired;
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L2/ */ _L2;
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* _L1/ */ _L1;
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* _L3/ */ _L3;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   kcg_bool /* _L4/ */ _L4;
   M_TrainTrack_Message_T_TM_radio_messages /* _L6/ */ _L6;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L7/ */ _L7;

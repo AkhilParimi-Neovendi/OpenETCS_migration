@@ -21,18 +21,18 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* @1/A_Output/ */ A_Output_Abs_1_int64;
-  kcg_int64 /* @1/A_Input/ */ A_Input_Abs_1_int64;
-  kcg_int64 /* @1/_L8/ */ _L8_Abs_1_int64;
-  kcg_int64 /* @1/_L5/ */ _L5_Abs_1_int64;
-  kcg_int64 /* @1/_L3/ */ _L3_Abs_1_int64;
-  kcg_int64 /* @1/_L2/ */ _L2_Abs_1_int64;
-  kcg_bool /* @1/_L1/ */ _L1_Abs_1_int64;
+  kcg_int32 /* @1/A_Output/ */ A_Output_Abs_1_int32;
+  kcg_int32 /* @1/A_Input/ */ A_Input_Abs_1_int32;
+  kcg_int32 /* @1/_L8/ */ _L8_Abs_1_int32;
+  kcg_int32 /* @1/_L5/ */ _L5_Abs_1_int32;
+  kcg_int32 /* @1/_L3/ */ _L3_Abs_1_int32;
+  kcg_int32 /* @1/_L2/ */ _L2_Abs_1_int32;
+  kcg_bool /* @1/_L1/ */ _L1_Abs_1_int32;
   trainPosition_T_TrainPosition_Types_Pck /* _L1/ */ _L1;
   Location_T_Obu_BasicTypes_Pkg /* _L4/ */ _L4;
   Location_T_Obu_BasicTypes_Pkg /* _L7/ */ _L7;
-  kcg_int64 /* _L10/ */ _L10;
-  kcg_int64 /* _L11/ */ _L11;
+  kcg_int32 /* _L10/ */ _L10;
+  kcg_int32 /* _L11/ */ _L11;
 } outC_op_DOUBTOVER_ProvidePositionReport_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

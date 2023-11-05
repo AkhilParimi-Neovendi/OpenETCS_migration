@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _C_P009_train_compr_TM_TrainToTrack_H_
 #define _C_P009_train_compr_TM_TrainToTrack_H_
@@ -34,11 +34,11 @@ typedef struct {
   L_PACKET /* _L4/ */ _L4;
   NID_PACKET /* _L3/ */ _L3;
   kcg_bool /* _L2/ */ _L2;
-  array_int64_3 /* _L68/ */ _L68;
-  kcg_int64 /* _L69/ */ _L69;
-  kcg_int64 /* _L70/ */ _L70;
-  kcg_int64 /* _L71/ */ _L71;
-  kcg_int64 /* _L89/ */ _L89;
+  array_int32_3 /* _L68/ */ _L68;
+  kcg_int32 /* _L69/ */ _L69;
+  kcg_int32 /* _L70/ */ _L70;
+  kcg_int32 /* _L71/ */ _L71;
+  kcg_int32 /* _L89/ */ _L89;
 } outC_C_P009_train_compr_TM_TrainToTrack;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -63,6 +63,6 @@ extern void C_P009_train_compr_init_TM_TrainToTrack(
 #endif /* _C_P009_train_compr_TM_TrainToTrack_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P009_train_compr_TM_TrainToTrack.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

@@ -30,12 +30,12 @@ void CAST_D_TRACKCOND_to_int_TM_conversions(
 void CAST_D_TRACKCOND_to_int_init_TM_conversions(
   outC_CAST_D_TRACKCOND_to_int_TM_conversions *outC)
 {
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
   outC->_L8 = kcg_true;
   outC->_L9 = kcg_true;
-  outC->_L1 = kcg_lit_int64(0);
-  outC->d_trackcond_int = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->d_trackcond_int = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

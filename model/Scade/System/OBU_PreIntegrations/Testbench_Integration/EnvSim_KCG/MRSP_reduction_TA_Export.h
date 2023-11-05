@@ -22,28 +22,28 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* index/ */ index;
-  kcg_int64 /* next_index/ */ next_index;
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* index/ */ index;
+  kcg_int32 /* next_index/ */ next_index;
+  kcg_int32 /* _L1/ */ _L1;
   MRSP_Profile_t_TrackAtlasTypes /* _L3/ */ _L3;
   MRSP_Profile_t_TrackAtlasTypes /* _L7/ */ _L7;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L6/ */ _L6;
   MRSP_reduction_acc_TA_Export /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L12/ */ _L12;
   MRSP_Profile_t_TrackAtlasTypes /* _L13/ */ _L13;
-  kcg_int64 /* _L14/ */ _L14;
+  kcg_int32 /* _L14/ */ _L14;
   MRSP_section_t_TrackAtlasTypes /* _L15/ */ _L15;
-  kcg_int64 /* _L16/ */ _L16;
-  kcg_int64 /* _L17/ */ _L17;
+  kcg_int32 /* _L16/ */ _L16;
+  kcg_int32 /* _L17/ */ _L17;
   MRSP_section_t_TrackAtlasTypes /* _L19/ */ _L19;
   MRSP_Profile_t_TrackAtlasTypes /* _L18/ */ _L18;
   V_internal_Type_Obu_BasicTypes_Pkg /* _L20/ */ _L20;
   V_internal_Type_Obu_BasicTypes_Pkg /* _L21/ */ _L21;
   kcg_bool /* _L22/ */ _L22;
-  kcg_int64 /* _L23/ */ _L23;
-  kcg_int64 /* _L24/ */ _L24;
-  kcg_int64 /* _L25/ */ _L25;
-  kcg_int64 /* _L26/ */ _L26;
+  kcg_int32 /* _L23/ */ _L23;
+  kcg_int32 /* _L24/ */ _L24;
+  kcg_int32 /* _L25/ */ _L25;
+  kcg_int32 /* _L26/ */ _L26;
   kcg_bool /* _L28/ */ _L28;
   MRSP_reduction_acc_TA_Export /* _L2/ */ _L2;
 } outC_MRSP_reduction_TA_Export;
@@ -52,7 +52,7 @@ typedef struct {
 /* TA_Export::MRSP_reduction/ */
 extern void MRSP_reduction_TA_Export(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* acc/ */
   MRSP_reduction_acc_TA_Export *acc,
   /* MRSP/ */

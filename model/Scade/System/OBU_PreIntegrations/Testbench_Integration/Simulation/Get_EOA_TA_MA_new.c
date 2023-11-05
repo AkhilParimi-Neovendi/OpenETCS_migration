@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -16,7 +16,7 @@ void Get_EOA_TA_MA_new(
   static kcg_size idx;
   static L_internal_Type_Obu_BasicTypes_Pkg acc;
   static kcg_size idx1;
-  static kcg_int64 noname;
+  static kcg_int32 noname;
 
   kcg_copy_MovementAuthority_t_TrackAtlasTypes(&outC->_L6, MA_absolute);
   kcg_copy_MovementAuthoritySectionlist_t_TrackAtlasTypes(
@@ -38,12 +38,12 @@ void Get_EOA_TA_MA_new(
       acc = outC->_L4;
       /* _L2=(TA_MA_new::Get_EOA_loop#1)/ */
       Get_EOA_loop_TA_MA_new(
-        /* _L2= */(kcg_int64) idx1,
+        /* _L2= */(kcg_int32) idx1,
         acc,
         &outC->_L38[idx1],
         &outC->Context_Get_EOA_loop_1[idx1]);
       outC->_L4 = outC->Context_Get_EOA_loop_1[idx1].currentEOA;
-      outC->_L2 = /* _L2= */(kcg_int64) (idx1 + 1);
+      outC->_L2 = /* _L2= */(kcg_int32) (idx1 + 1);
       /* _L2= */
       if (!outC->Context_Get_EOA_loop_1[idx1].cont) {
         break;
@@ -51,7 +51,7 @@ void Get_EOA_TA_MA_new(
     }
   }
   else {
-    outC->_L2 = kcg_lit_int64(0);
+    outC->_L2 = kcg_lit_int32(0);
   }
   outC->currentEOA = outC->_L4;
   noname = outC->_L2;
@@ -70,52 +70,52 @@ void Get_EOA_init_TA_MA_new(outC_Get_EOA_TA_MA_new *outC)
     for (idx1 = 0; idx1 < 10; idx1++) {
       outC->_L38[idx2][idx1].valid = kcg_true;
       outC->_L38[idx2][idx1].q_endsection = kcg_true;
-      outC->_L38[idx2][idx1].l_section = kcg_lit_int64(0);
+      outC->_L38[idx2][idx1].l_section = kcg_lit_int32(0);
       outC->_L38[idx2][idx1].q_sectiontimer = kcg_true;
-      outC->_L38[idx2][idx1].t_sectiontimer = kcg_lit_int64(0);
-      outC->_L38[idx2][idx1].d_sectiontimerstoploc = kcg_lit_int64(0);
+      outC->_L38[idx2][idx1].t_sectiontimer = kcg_lit_int32(0);
+      outC->_L38[idx2][idx1].d_sectiontimerstoploc = kcg_lit_int32(0);
     }
   }
   for (idx3 = 0; idx3 < 10; idx3++) {
     outC->_L37[idx3].valid = kcg_true;
     outC->_L37[idx3].q_endsection = kcg_true;
-    outC->_L37[idx3].l_section = kcg_lit_int64(0);
+    outC->_L37[idx3].l_section = kcg_lit_int32(0);
     outC->_L37[idx3].q_sectiontimer = kcg_true;
-    outC->_L37[idx3].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L37[idx3].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L37[idx3].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L37[idx3].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
   outC->_L6.valid = kcg_true;
   outC->_L6.Level = MA_L1_TrackAtlasTypes;
   outC->_L6.q_dir = Q_DIR_Reverse;
-  outC->_L6.v_main = kcg_lit_int64(0);
-  outC->_L6.v_loa = kcg_lit_int64(0);
+  outC->_L6.v_main = kcg_lit_int32(0);
+  outC->_L6.v_loa = kcg_lit_int32(0);
   outC->_L6.t_loa_unlimited = kcg_true;
-  outC->_L6.t_loa = kcg_lit_int64(0);
-  outC->_L6.n_iter = kcg_lit_int64(0);
+  outC->_L6.t_loa = kcg_lit_int32(0);
+  outC->_L6.n_iter = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 10; idx4++) {
     outC->_L6.sections[idx4].valid = kcg_true;
     outC->_L6.sections[idx4].q_endsection = kcg_true;
-    outC->_L6.sections[idx4].l_section = kcg_lit_int64(0);
+    outC->_L6.sections[idx4].l_section = kcg_lit_int32(0);
     outC->_L6.sections[idx4].q_sectiontimer = kcg_true;
-    outC->_L6.sections[idx4].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L6.sections[idx4].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L6.sections[idx4].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L6.sections[idx4].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
   outC->_L6.q_dangerpoint = kcg_true;
-  outC->_L6.dangerpoint.d_DP_or_OL = kcg_lit_int64(0);
-  outC->_L6.dangerpoint.v_release = kcg_lit_int64(0);
+  outC->_L6.dangerpoint.d_DP_or_OL = kcg_lit_int32(0);
+  outC->_L6.dangerpoint.v_release = kcg_lit_int32(0);
   outC->_L6.dangerpoint.calc_v_release_onboard = kcg_true;
   outC->_L6.q_overlap = kcg_true;
-  outC->_L6.overlap.d_DP_or_OL = kcg_lit_int64(0);
-  outC->_L6.overlap.v_release = kcg_lit_int64(0);
+  outC->_L6.overlap.d_DP_or_OL = kcg_lit_int32(0);
+  outC->_L6.overlap.v_release = kcg_lit_int32(0);
   outC->_L6.overlap.calc_v_release_onboard = kcg_true;
   outC->_L6.q_endtimer = kcg_true;
-  outC->_L6.endtimer_t.t_endtimer = kcg_lit_int64(0);
-  outC->_L6.endtimer_t.d_endtimerstoploc = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L6.endtimer_t.t_endtimer = kcg_lit_int32(0);
+  outC->_L6.endtimer_t.d_endtimerstoploc = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->_L3 = kcg_true;
-  outC->_L2 = kcg_lit_int64(0);
-  outC->currentEOA = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->currentEOA = kcg_lit_int32(0);
   for (idx = 0; idx < 10; idx++) {
     /* _L2=(TA_MA_new::Get_EOA_loop#1)/ */
     Get_EOA_loop_init_TA_MA_new(&outC->Context_Get_EOA_loop_1[idx]);
@@ -140,6 +140,6 @@ void Get_EOA_reset_TA_MA_new(outC_Get_EOA_TA_MA_new *outC)
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Get_EOA_TA_MA_new.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

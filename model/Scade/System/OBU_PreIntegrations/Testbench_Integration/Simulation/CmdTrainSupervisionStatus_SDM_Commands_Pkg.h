@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _CmdTrainSupervisionStatus_SDM_Commands_Pkg_H_
 #define _CmdTrainSupervisionStatus_SDM_Commands_Pkg_H_
@@ -115,9 +115,9 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   kcg_bool /* modeInterplay:CSM:_L145/ */ _L145_CSM_modeInterplay;
-  kcg_int64 /* modeInterplay:CSM:_L144/ */ _L144_CSM_modeInterplay;
-  kcg_int64 /* modeInterplay:CSM:_L143/ */ _L143_CSM_modeInterplay;
-  kcg_int64 /* modeInterplay:CSM:_L142/ */ _L142_CSM_modeInterplay;
+  kcg_int32 /* modeInterplay:CSM:_L144/ */ _L144_CSM_modeInterplay;
+  kcg_int32 /* modeInterplay:CSM:_L143/ */ _L143_CSM_modeInterplay;
+  kcg_int32 /* modeInterplay:CSM:_L142/ */ _L142_CSM_modeInterplay;
   kcg_bool /* modeInterplay:CSM:_L67/ */ _L67_CSM_modeInterplay;
   SupervisionStatus_T_SDM_Types_Pkg /* modeInterplay:CSM:_L41/ */ _L41_CSM_modeInterplay;
   SupervisionStatus_T_SDM_Types_Pkg /* modeInterplay:CSM:_L45/ */ _L45_CSM_modeInterplay;
@@ -420,6 +420,6 @@ extern void kcg_load_SV_CmdTrainSupervisionStatus_SDM_Commands_Pkg(
 #endif /* _CmdTrainSupervisionStatus_SDM_Commands_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CmdTrainSupervisionStatus_SDM_Commands_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

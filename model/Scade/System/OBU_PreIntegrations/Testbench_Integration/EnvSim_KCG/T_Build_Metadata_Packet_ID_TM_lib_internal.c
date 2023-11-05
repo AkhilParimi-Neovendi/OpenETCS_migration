@@ -10,15 +10,15 @@
 /* TM_lib_internal::T_Build_Metadata_Packet_ID/ */
 void T_Build_Metadata_Packet_ID_TM_lib_internal(
   /* nid_packet_in/ */
-  kcg_int64 nid_packet_in,
+  kcg_int32 nid_packet_in,
   /* q_dir/ */
-  kcg_int64 q_dir,
+  kcg_int32 q_dir,
   /* id/ */
-  kcg_int64 id,
+  kcg_int32 id,
   /* nid_packet_defined/ */
   NID_PACKET nid_packet_defined,
   /* m_version/ */
-  kcg_int64 m_version,
+  kcg_int32 m_version,
   outC_T_Build_Metadata_Packet_ID_TM_lib_internal *outC)
 {
   static kcg_bool noname;
@@ -55,25 +55,25 @@ void T_Build_Metadata_Packet_ID_TM_lib_internal(
 void T_Build_Metadata_Packet_ID_init_TM_lib_internal(
   outC_T_Build_Metadata_Packet_ID_TM_lib_internal *outC)
 {
-  outC->_L15 = kcg_lit_int64(0);
-  outC->_L16 = kcg_lit_int64(0);
-  outC->_L17 = kcg_lit_int64(0);
-  outC->_L22 = kcg_lit_int64(0);
-  outC->_L20 = kcg_lit_int64(0);
-  outC->_L18 = kcg_lit_int64(0);
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L15 = kcg_lit_int32(0);
+  outC->_L16 = kcg_lit_int32(0);
+  outC->_L17 = kcg_lit_int32(0);
+  outC->_L22 = kcg_lit_int32(0);
+  outC->_L20 = kcg_lit_int32(0);
+  outC->_L18 = kcg_lit_int32(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
   outC->_L6 = kcg_true;
   outC->_L4 = kcg_true;
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->nid_packet_meta = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->nid_packet_meta = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

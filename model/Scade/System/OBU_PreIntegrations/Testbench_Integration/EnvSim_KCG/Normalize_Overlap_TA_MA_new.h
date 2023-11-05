@@ -28,7 +28,7 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L14/ */ _L14;
+  kcg_int32 /* _L14/ */ _L14;
   V_RELEASEOL /* _L13/ */ _L13;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L12/ */ _L12;
   D_OL /* _L11/ */ _L11;

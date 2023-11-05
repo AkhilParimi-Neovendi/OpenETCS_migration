@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -40,17 +40,17 @@ void SelectEndSection_init_SDM_Input_Wrappers(
   outC->_L12 = kcg_true;
   outC->_L11 = kcg_true;
   outC->_L10 = kcg_true;
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L4 = kcg_true;
   outC->_L2.valid = kcg_true;
   outC->_L2.q_endsection = kcg_true;
-  outC->_L2.l_section = kcg_lit_int64(0);
+  outC->_L2.l_section = kcg_lit_int32(0);
   outC->_L2.q_sectiontimer = kcg_true;
-  outC->_L2.t_sectiontimer = kcg_lit_int64(0);
-  outC->_L2.d_sectiontimerstoploc = kcg_lit_int64(0);
-  outC->eoa = kcg_lit_int64(0);
+  outC->_L2.t_sectiontimer = kcg_lit_int32(0);
+  outC->_L2.d_sectiontimerstoploc = kcg_lit_int32(0);
+  outC->eoa = kcg_lit_int32(0);
   outC->go_on = kcg_true;
 }
 #endif /* KCG_USER_DEFINED_INIT */
@@ -67,6 +67,6 @@ void SelectEndSection_reset_SDM_Input_Wrappers(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** SelectEndSection_SDM_Input_Wrappers.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

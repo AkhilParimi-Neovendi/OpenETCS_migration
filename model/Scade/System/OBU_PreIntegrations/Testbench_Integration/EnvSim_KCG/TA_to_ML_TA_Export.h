@@ -51,18 +51,18 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   T_Data_From_Track_Packet_Level_And_Mode_Types_Pkg /* _L6/ */ _L6;
   kcg_bool /* _L26/ */ _L26;
-  kcg_int64 /* _L25/ */ _L25;
+  kcg_int32 /* _L25/ */ _L25;
   kcg_bool /* _L24/ */ _L24;
   kcg_bool /* _L23/ */ _L23;
   kcg_bool /* _L22/ */ _L22;
   kcg_bool /* _L21/ */ _L21;
-  kcg_int64 /* _L20/ */ _L20;
+  kcg_int32 /* _L20/ */ _L20;
   kcg_bool /* _L18/ */ _L18;
-  kcg_int64 /* _L27/ */ _L27;
-  kcg_int64 /* _L28/ */ _L28;
-  kcg_int64 /* _L29/ */ _L29;
-  kcg_int64 /* _L30/ */ _L30;
-  kcg_int64 /* _L31/ */ _L31;
+  kcg_int32 /* _L27/ */ _L27;
+  kcg_int32 /* _L28/ */ _L28;
+  kcg_int32 /* _L29/ */ _L29;
+  kcg_int32 /* _L30/ */ _L30;
+  kcg_int32 /* _L31/ */ _L31;
   kcg_bool /* _L32/ */ _L32;
   ReceivedMessage_T_Common_Types_Pkg /* _L33/ */ _L33;
   NID_MESSAGE /* _L48/ */ _L48;

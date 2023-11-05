@@ -36,7 +36,7 @@ typedef struct {
   ParabolaCurveAccelerations_T_CalcBrakingCurves_types /* _L22/ */ _L22;
   ParabolaCurveSpeeds_T_CalcBrakingCurves_types /* _L23/ */ _L23;
   ParabolaCurveDistances_T_CalcBrakingCurves_types /* _L24/ */ _L24;
-  kcg_int64 /* _L36/ */ _L36;
+  kcg_int32 /* _L36/ */ _L36;
 } outC_setArc_CalcBrakingCurves_Pkg_internalOperators;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -47,7 +47,7 @@ extern void setArc_CalcBrakingCurves_Pkg_internalOperators(
   /* oldBC/ */
   ParabolaCurve_T_CalcBrakingCurves_types *oldBC,
   /* index/ */
-  kcg_int64 index,
+  kcg_int32 index,
   outC_setArc_CalcBrakingCurves_Pkg_internalOperators *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

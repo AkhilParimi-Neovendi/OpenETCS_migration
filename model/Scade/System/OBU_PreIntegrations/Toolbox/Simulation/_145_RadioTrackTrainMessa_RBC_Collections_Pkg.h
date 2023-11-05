@@ -21,21 +21,21 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   kcg_bool /* _L3/ */ _L3;
   RadioTrackTrainMessageQueueEntry_T /* _L4/ */ _L4;
   RadioTrackTrainMessageQueueEntry_T /* _L5/ */ _L5;
   RadioTrackTrainMessageQueueEntry_T /* _L6/ */ _L6;
-  kcg_int64 /* _L13/ */ _L13;
+  kcg_int32 /* _L13/ */ _L13;
 } outC__145_RadioTrackTrainMessa_RBC_Collections_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* RBC_Collections_Pkg::RadioTrackTrainMessageQueue__Take_Iterable2/ */
 extern void _145_RadioTrackTrainMessa_RBC_Collections_Pkg(
   /* inIndex/ */
-  kcg_int64 inIndex,
+  kcg_int32 inIndex,
   /* inComparisonIndex/ */
-  kcg_int64 inComparisonIndex,
+  kcg_int32 inComparisonIndex,
   /* inRadioTrackTrainMessageQueueEntry/ */
   RadioTrackTrainMessageQueueEntry_T *inRadioTrackTrainMessageQueueEntry,
   outC__145_RadioTrackTrainMessa_RBC_Collections_Pkg *outC);

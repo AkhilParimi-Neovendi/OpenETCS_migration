@@ -23,7 +23,7 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   Radio_TrainTrack_Header_T_Radio_Types_Pkg /* _L1/ */ _L1;
   M_136_T_TM_radio_messages /* _L2/ */ _L2;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L12/ */ _L12;
   kcg_bool /* _L13/ */ _L13;
   NID_MESSAGE /* _L14/ */ _L14;
   T_TRAIN /* _L15/ */ _L15;

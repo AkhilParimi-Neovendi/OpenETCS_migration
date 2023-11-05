@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _mergeBG_onTrack_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_
 #define _mergeBG_onTrack_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_
@@ -30,15 +30,15 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* indexOfBGInBGs/ */ indexOfBGInBGs;
+  kcg_int32 /* indexOfBGInBGs/ */ indexOfBGInBGs;
   kcg_bool /* bgFound/ */ bgFound;
   positionedBG_T_TrainPosition_Types_Pck /* bg_loc/ */ bg_loc;
   kcg_bool /* _L3/ */ _L3;
   kcg_bool /* _L2/ */ _L2;
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   kcg_bool /* _L6/ */ _L6;
   kcg_bool /* _L5/ */ _L5;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L4/ */ _L4;
   positionedBG_T_TrainPosition_Types_Pck /* _L7/ */ _L7;
   positionedBGs_T_TrainPosition_Types_Pck /* _L8/ */ _L8;
   kcg_bool /* _L9/ */ _L9;
@@ -57,7 +57,7 @@ typedef struct {
   positionedBG_T_TrainPosition_Types_Pck /* _L48/ */ _L48;
   positionedBG_T_TrainPosition_Types_Pck /* _L47/ */ _L47;
   positionedBGs_T_TrainPosition_Types_Pck /* _L62/ */ _L62;
-  kcg_int64 /* _L63/ */ _L63;
+  kcg_int32 /* _L63/ */ _L63;
   kcg_bool /* _L64/ */ _L64;
   positionedBG_T_TrainPosition_Types_Pck /* _L65/ */ _L65;
   kcg_bool /* _L66/ */ _L66;
@@ -73,7 +73,7 @@ typedef struct {
   positionedBG_T_TrainPosition_Types_Pck /* _L80/ */ _L80;
   positionedBG_T_TrainPosition_Types_Pck /* _L81/ */ _L81;
   kcg_bool /* _L82/ */ _L82;
-  kcg_int64 /* _L83/ */ _L83;
+  kcg_int32 /* _L83/ */ _L83;
 } outC_mergeBG_onTrack_CalculateTrainPosition_Pkg_BG_utilities_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -100,6 +100,6 @@ extern void mergeBG_onTrack_init_CalculateTrainPosition_Pkg_BG_utilities_Pkg(
 #endif /* _mergeBG_onTrack_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** mergeBG_onTrack_CalculateTrainPosition_Pkg_BG_utilities_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

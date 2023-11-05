@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _brakePercentToABrake_SDMConversionModelPkg_H_
 #define _brakePercentToABrake_SDMConversionModelPkg_H_
@@ -27,10 +27,10 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   av_Map_t_SDMConversionModelPkg /* _L1/ */ _L1;
   av_Map_t_SDMConversionModelPkg /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L4/ */ _L4;
   kcg_bool /* _L5/ */ _L5;
   a_Brake_t_SDMConversionModelPkg /* _L8/ */ _L8;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   trainData_T_TIU_Types_Pkg /* _L9/ */ _L9;
 } outC_brakePercentToABrake_SDMConversionModelPkg;
 
@@ -56,6 +56,6 @@ extern void brakePercentToABrake_init_SDMConversionModelPkg(
 #endif /* _brakePercentToABrake_SDMConversionModelPkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** brakePercentToABrake_SDMConversionModelPkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

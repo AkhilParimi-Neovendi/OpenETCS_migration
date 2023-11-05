@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _registeringToTheRadioNetwork_v2_MoRC_Pck_Subfunc_Pkg_H_
 #define _registeringToTheRadioNetwork_v2_MoRC_Pck_Subfunc_Pkg_H_
@@ -233,7 +233,7 @@ typedef struct {
   kcg_bool /* _L335/ */ _L335;
   mobileRegistrationContext_T_RCM_Types_Pkg /* _L343/ */ _L343;
   mobileRegistrationContext_T_RCM_Types_Pkg /* _L345/ */ _L345;
-  kcg_int64 /* _L346/ */ _L346;
+  kcg_int32 /* _L346/ */ _L346;
   P45_RadioNetworkRegistration_T_Packet_Types_Pkg /* _L347/ */ _L347;
   P45_RadioNetworkRegistration_T_Packet_Types_Pkg /* _L349/ */ _L349;
   sessionPhase_T_RCM_Session_Types_Pkg /* _L353/ */ _L353;
@@ -328,6 +328,6 @@ extern void kcg_load_SV_registeringToTheRadioNetwork_v2_MoRC_Pck_Subfunc_Pkg(
 #endif /* _registeringToTheRadioNetwork_v2_MoRC_Pck_Subfunc_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** registeringToTheRadioNetwork_v2_MoRC_Pck_Subfunc_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

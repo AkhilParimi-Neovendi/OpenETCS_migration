@@ -14,7 +14,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* outTotal/ */ outTotal;
+  kcg_int32 /* outTotal/ */ outTotal;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
@@ -29,15 +29,15 @@ typedef struct {
   kcg_bool /* IfBlock1: */ IfBlock1_clock;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:then:_L1/ */ _L1_then_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:else:else:then:_L1/ */ _L1_then_else_else_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:else:else:else:else:then:_L1/ */ _L1_then_else_else_else_else_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:else:else:else:else:else:else:_L2/ */ _L2_else_else_else_else_else_else_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:else:else:else:else:else:then:_L1/ */ _L1_then_else_else_else_else_else_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:else:else:else:then:_L1/ */ _L1_then_else_else_else_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:else:then:_L1/ */ _L1_then_else_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L1/ */ _L1_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:then:_L1/ */ _L1_then_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:else:else:then:_L1/ */ _L1_then_else_else_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:else:else:else:else:then:_L1/ */ _L1_then_else_else_else_else_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:else:else:else:else:else:else:_L2/ */ _L2_else_else_else_else_else_else_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:else:else:else:else:else:then:_L1/ */ _L1_then_else_else_else_else_else_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:else:else:else:then:_L1/ */ _L1_then_else_else_else_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:else:then:_L1/ */ _L1_then_else_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L1/ */ _L1_then_else_IfBlock1;
 } outC_convNTotal_Receive_TrackSide_Msg_Pkg_BaliseSupport;
 
 /* ===========  node initialization and cycle functions  =========== */

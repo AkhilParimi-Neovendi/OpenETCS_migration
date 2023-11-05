@@ -12,11 +12,11 @@ void isLEValid_TargetLimits_Pkg(
   /* valid1/ */
   kcg_bool valid1,
   /* i1/ */
-  kcg_float64 i1,
+  kcg_float32 i1,
   /* valid2/ */
   kcg_bool valid2,
   /* i2/ */
-  kcg_float64 i2,
+  kcg_float32 i2,
   outC_isLEValid_TargetLimits_Pkg *outC)
 {
   outC->_L9 = valid2;
@@ -38,8 +38,8 @@ void isLEValid_init_TargetLimits_Pkg(outC_isLEValid_TargetLimits_Pkg *outC)
   outC->_L6 = kcg_true;
   outC->_L7 = kcg_true;
   outC->_L8 = kcg_true;
-  outC->_L4 = kcg_lit_float64(0.0);
-  outC->_L2 = kcg_lit_float64(0.0);
+  outC->_L4 = kcg_lit_float32(0.0);
+  outC->_L2 = kcg_lit_float32(0.0);
   outC->_L1 = kcg_true;
   outC->result = kcg_true;
 }

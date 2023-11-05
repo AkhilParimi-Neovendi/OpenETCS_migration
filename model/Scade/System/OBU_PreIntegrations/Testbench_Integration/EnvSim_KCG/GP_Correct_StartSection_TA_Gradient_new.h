@@ -25,10 +25,10 @@ typedef struct {
   Gradient_section_t_TrackAtlasTypes /* _L3/ */ _L3;
   GradientProfile_t_TrackAtlasTypes /* _L5/ */ _L5;
   Gradient_section_t_TrackAtlasTypes /* _L7/ */ _L7;
-  kcg_int64 /* _L8/ */ _L8;
+  kcg_int32 /* _L8/ */ _L8;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
-  kcg_int64 /* _L11/ */ _L11;
+  kcg_int32 /* _L10/ */ _L10;
+  kcg_int32 /* _L11/ */ _L11;
   Gradient_section_t_TrackAtlasTypes /* _L12/ */ _L12;
 } outC_GP_Correct_StartSection_TA_Gradient_new;
 
@@ -38,7 +38,7 @@ extern void GP_Correct_StartSection_TA_Gradient_new(
   /* Profile_in/ */
   GradientProfile_t_TrackAtlasTypes *Profile_in,
   /* Loc_BG/ */
-  kcg_int64 Loc_BG,
+  kcg_int32 Loc_BG,
   outC_GP_Correct_StartSection_TA_Gradient_new *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

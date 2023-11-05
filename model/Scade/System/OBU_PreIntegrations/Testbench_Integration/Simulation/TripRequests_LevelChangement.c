@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -119,27 +119,27 @@ void TripRequests_init_LevelChangement(outC_TripRequests_LevelChangement *outC)
     outC->_L1.level_transition_priority_table[idx].transition.level =
       M_LEVEL_Level_0;
     outC->_L1.level_transition_priority_table[idx].transition.position =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L1.level_transition_priority_table[idx].transition.transitionType =
       M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
     outC->_L1.level_transition_priority_table[idx].transition.immediateAck =
       kcg_true;
     outC->_L1.level_transition_priority_table[idx].transition.AckLength =
-      kcg_lit_int64(0);
-    outC->_L1.level_transition_priority_table[idx].LRBG = kcg_lit_int64(0);
+      kcg_lit_int32(0);
+    outC->_L1.level_transition_priority_table[idx].LRBG = kcg_lit_int32(0);
     outC->_L1.level_transition_priority_table[idx].referenceLocation =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 7; idx1++) {
     outC->_L1.conditionnalTransition[idx1].is_set = kcg_true;
     outC->_L1.conditionnalTransition[idx1].transition.level = M_LEVEL_Level_0;
-    outC->_L1.conditionnalTransition[idx1].transition.position = kcg_lit_int64(0);
+    outC->_L1.conditionnalTransition[idx1].transition.position = kcg_lit_int32(0);
     outC->_L1.conditionnalTransition[idx1].transition.transitionType =
       M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
     outC->_L1.conditionnalTransition[idx1].transition.immediateAck = kcg_true;
-    outC->_L1.conditionnalTransition[idx1].transition.AckLength = kcg_lit_int64(0);
-    outC->_L1.conditionnalTransition[idx1].LRBG = kcg_lit_int64(0);
-    outC->_L1.conditionnalTransition[idx1].referenceLocation = kcg_lit_int64(0);
+    outC->_L1.conditionnalTransition[idx1].transition.AckLength = kcg_lit_int32(0);
+    outC->_L1.conditionnalTransition[idx1].LRBG = kcg_lit_int32(0);
+    outC->_L1.conditionnalTransition[idx1].referenceLocation = kcg_lit_int32(0);
   }
   outC->_L1.receivedL2L3MA_track = kcg_true;
   outC->_L1.receivedL1MA_track = kcg_true;
@@ -148,24 +148,24 @@ void TripRequests_init_LevelChangement(outC_TripRequests_LevelChangement *outC)
   for (idx2 = 0; idx2 < 7; idx2++) {
     outC->_L3[idx2].is_set = kcg_true;
     outC->_L3[idx2].transition.level = M_LEVEL_Level_0;
-    outC->_L3[idx2].transition.position = kcg_lit_int64(0);
+    outC->_L3[idx2].transition.position = kcg_lit_int32(0);
     outC->_L3[idx2].transition.transitionType =
       M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
     outC->_L3[idx2].transition.immediateAck = kcg_true;
-    outC->_L3[idx2].transition.AckLength = kcg_lit_int64(0);
-    outC->_L3[idx2].LRBG = kcg_lit_int64(0);
-    outC->_L3[idx2].referenceLocation = kcg_lit_int64(0);
+    outC->_L3[idx2].transition.AckLength = kcg_lit_int32(0);
+    outC->_L3[idx2].LRBG = kcg_lit_int32(0);
+    outC->_L3[idx2].referenceLocation = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 7; idx3++) {
     outC->_L2[idx3].is_set = kcg_true;
     outC->_L2[idx3].transition.level = M_LEVEL_Level_0;
-    outC->_L2[idx3].transition.position = kcg_lit_int64(0);
+    outC->_L2[idx3].transition.position = kcg_lit_int32(0);
     outC->_L2[idx3].transition.transitionType =
       M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
     outC->_L2[idx3].transition.immediateAck = kcg_true;
-    outC->_L2[idx3].transition.AckLength = kcg_lit_int64(0);
-    outC->_L2[idx3].LRBG = kcg_lit_int64(0);
-    outC->_L2[idx3].referenceLocation = kcg_lit_int64(0);
+    outC->_L2[idx3].transition.AckLength = kcg_lit_int32(0);
+    outC->_L2[idx3].LRBG = kcg_lit_int32(0);
+    outC->_L2[idx3].referenceLocation = kcg_lit_int32(0);
   }
   outC->Loc_L1_MA_track = kcg_true;
   outC->Loc_L2L3_MA_track = kcg_true;
@@ -193,6 +193,6 @@ void TripRequests_reset_LevelChangement(outC_TripRequests_LevelChangement *outC)
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** TripRequests_LevelChangement.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

@@ -35,7 +35,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="float64"/>
+										<TypeRef name="float32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -72,7 +72,7 @@
 											<type>
 												<NamedType>
 													<type>
-														<TypeRef name="float64"/>
+														<TypeRef name="float32"/>
 													</type>
 												</NamedType>
 											</type>
@@ -98,16 +98,16 @@
 												<ed:Equation oid="!ed/543db/1D03/1CC/558960cd2f2"/>
 											</pragmas>
 										</Equation>
-										<!-- _L2 = (_L1 : float64); -->
+										<!-- _L2 = (_L1 : float32); -->
 										<Equation>
 											<lefts>
 												<VariableRef name="_L2"/>
 											</lefts>
 											<right>
-												<!-- (_L1 : float64) -->
+												<!-- (_L1 : float32) -->
 												<NumericCastOp name="1">
 													<type>
-														<TypeRef name="float64"/>
+														<TypeRef name="float32"/>
 													</type>
 													<flow>
 														<IdExpression>
@@ -162,7 +162,7 @@
 											<type>
 												<NamedType>
 													<type>
-														<TypeRef name="float64"/>
+														<TypeRef name="float32"/>
 													</type>
 												</NamedType>
 											</type>
@@ -174,7 +174,7 @@
 											<type>
 												<NamedType>
 													<type>
-														<TypeRef name="float64"/>
+														<TypeRef name="float32"/>
 													</type>
 												</NamedType>
 											</type>
@@ -186,7 +186,7 @@
 											<type>
 												<NamedType>
 													<type>
-														<TypeRef name="float64"/>
+														<TypeRef name="float32"/>
 													</type>
 												</NamedType>
 											</type>
@@ -212,16 +212,16 @@
 												<ed:Equation oid="!ed/5440d/1D03/1CC/5589611c1e7c"/>
 											</pragmas>
 										</Equation>
-										<!-- _L2 = (_L1 : float64); -->
+										<!-- _L2 = (_L1 : float32); -->
 										<Equation>
 											<lefts>
 												<VariableRef name="_L2"/>
 											</lefts>
 											<right>
-												<!-- (_L1 : float64) -->
+												<!-- (_L1 : float32) -->
 												<NumericCastOp name="2">
 													<type>
-														<TypeRef name="float64"/>
+														<TypeRef name="float32"/>
 													</type>
 													<flow>
 														<IdExpression>
@@ -302,7 +302,7 @@
 											<type>
 												<NamedType>
 													<type>
-														<TypeRef name="float64"/>
+														<TypeRef name="float32"/>
 													</type>
 												</NamedType>
 											</type>
@@ -326,7 +326,7 @@
 											<type>
 												<NamedType>
 													<type>
-														<TypeRef name="float64"/>
+														<TypeRef name="float32"/>
 													</type>
 												</NamedType>
 											</type>
@@ -338,7 +338,7 @@
 											<type>
 												<NamedType>
 													<type>
-														<TypeRef name="float64"/>
+														<TypeRef name="float32"/>
 													</type>
 												</NamedType>
 											</type>
@@ -418,16 +418,16 @@
 												<ed:Equation oid="!ed/544b7/1D03/1CC/558961912c35"/>
 											</pragmas>
 										</Equation>
-										<!-- _L6 = (_L5 : float64); -->
+										<!-- _L6 = (_L5 : float32); -->
 										<Equation>
 											<lefts>
 												<VariableRef name="_L6"/>
 											</lefts>
 											<right>
-												<!-- (_L5 : float64) -->
+												<!-- (_L5 : float32) -->
 												<NumericCastOp name="3">
 													<type>
-														<TypeRef name="float64"/>
+														<TypeRef name="float32"/>
 													</type>
 													<flow>
 														<IdExpression>
@@ -735,7 +735,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="float64"/>
+										<TypeRef name="float32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -787,7 +787,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="float64"/>
+										<TypeRef name="float32"/>
 									</type>
 								</NamedType>
 							</type>

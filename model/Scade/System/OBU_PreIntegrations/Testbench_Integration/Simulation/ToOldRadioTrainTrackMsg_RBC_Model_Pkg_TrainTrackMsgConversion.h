@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _ToOldRadioTrainTrackMsg_RBC_Model_Pkg_TrainTrackMsgConversion_H_
 #define _ToOldRadioTrainTrackMsg_RBC_Model_Pkg_TrainTrackMsgConversion_H_
@@ -32,7 +32,7 @@ typedef struct {
   M_TrainTrack_MessageHd_T_TM_radio_messages /* _L11/ */ _L11;
   M_TrainTrack_compressed_packets_T_TM_radio_messages /* _L10/ */ _L10;
   outPackets_T_Common_Types_Pkg /* _L12/ */ _L12;
-  kcg_int64 /* _L13/ */ _L13;
+  kcg_int32 /* _L13/ */ _L13;
 } outC_ToOldRadioTrainTrackMsg_RBC_Model_Pkg_TrainTrackMsgConversion;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -73,6 +73,6 @@ extern void kcg_load_SV_ToOldRadioTrainTrackMsg_RBC_Model_Pkg_TrainTrackMsgConve
 #endif /* _ToOldRadioTrainTrackMsg_RBC_Model_Pkg_TrainTrackMsgConversion_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ToOldRadioTrainTrackMsg_RBC_Model_Pkg_TrainTrackMsgConversion.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

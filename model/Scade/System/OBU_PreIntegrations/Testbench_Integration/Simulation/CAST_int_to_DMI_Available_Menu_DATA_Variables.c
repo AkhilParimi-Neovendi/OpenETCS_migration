@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -15,10 +15,10 @@ void CAST_int_to_DMI_Available_Menu_DATA_Variables(
 {
   outC->_L36 = dmi_available_menu_int;
   /* _L34=(digital::Int2BoolVect#1)/ */
-  Int2BoolVect_digital_int64_30(outC->_L36, &outC->Context_Int2BoolVect_1);
+  Int2BoolVect_digital_int32_30(outC->_L36, &outC->Context_Int2BoolVect_1);
   kcg_copy_DMI_Available_Menu_int_T_DATA(
     &outC->_L34,
-    &outC->Context_Int2BoolVect_1.BV_int64_30);
+    &outC->Context_Int2BoolVect_1.BV_int32_30);
   outC->_L31 = outC->_L34[0];
   outC->_L30 = outC->_L34[1];
   outC->_L29 = outC->_L34[2];
@@ -120,7 +120,7 @@ void CAST_int_to_DMI_Available_Menu_init_DATA_Variables(
   outC->_L4 = kcg_true;
   outC->_L3 = kcg_true;
   outC->_L2 = kcg_true;
-  outC->_L36 = kcg_lit_int64(0);
+  outC->_L36 = kcg_lit_int32(0);
   for (idx = 0; idx < 30; idx++) {
     outC->_L34[idx] = kcg_true;
   }
@@ -185,7 +185,7 @@ void CAST_int_to_DMI_Available_Menu_init_DATA_Variables(
   outC->dmi_available_menu_ct.Menu_button_Set_VBC = kcg_true;
   outC->dmi_available_menu_ct.Menu_button_Remove_VBC = kcg_true;
   /* _L34=(digital::Int2BoolVect#1)/ */
-  Int2BoolVect_init_digital_int64_30(&outC->Context_Int2BoolVect_1);
+  Int2BoolVect_init_digital_int32_30(&outC->Context_Int2BoolVect_1);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -195,7 +195,7 @@ void CAST_int_to_DMI_Available_Menu_reset_DATA_Variables(
   outC_CAST_int_to_DMI_Available_Menu_DATA_Variables *outC)
 {
   /* _L34=(digital::Int2BoolVect#1)/ */
-  Int2BoolVect_reset_digital_int64_30(&outC->Context_Int2BoolVect_1);
+  Int2BoolVect_reset_digital_int32_30(&outC->Context_Int2BoolVect_1);
 }
 #endif /* KCG_NO_EXTERN_CALL_TO_RESET */
 
@@ -203,6 +203,6 @@ void CAST_int_to_DMI_Available_Menu_reset_DATA_Variables(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_int_to_DMI_Available_Menu_DATA_Variables.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

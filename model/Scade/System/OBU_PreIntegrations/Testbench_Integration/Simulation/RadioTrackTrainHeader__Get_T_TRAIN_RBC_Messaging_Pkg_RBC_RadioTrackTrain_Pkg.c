@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -27,24 +27,24 @@ void RadioTrackTrainHeader__Get_T_TRAIN_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pk
 void RadioTrackTrainHeader__Get_T_TRAIN_init_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg(
   outC_RadioTrackTrainHeader__Get_T_TRAIN_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg *outC)
 {
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1.radioDevice = kcg_lit_int64(0);
-  outC->_L1.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L1.nid_message = kcg_lit_int64(0);
-  outC->_L1.t_train = kcg_lit_int64(0);
-  outC->_L1.m_ack = kcg_lit_int64(0);
-  outC->_L1.nid_lrbg = kcg_lit_int64(0);
-  outC->_L1.t_train_reference = kcg_lit_int64(0);
-  outC->_L1.nid_em = kcg_lit_int64(0);
-  outC->_L1.q_scale = kcg_lit_int64(0);
-  outC->_L1.d_sr = kcg_lit_int64(0);
-  outC->_L1.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L1.d_ref = kcg_lit_int64(0);
-  outC->_L1.q_dir = kcg_lit_int64(0);
-  outC->_L1.d_emergencystop = kcg_lit_int64(0);
-  outC->_L1.m_version = kcg_lit_int64(0);
-  outC->out_T_TRAIN = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1.radioDevice = kcg_lit_int32(0);
+  outC->_L1.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L1.nid_message = kcg_lit_int32(0);
+  outC->_L1.t_train = kcg_lit_int32(0);
+  outC->_L1.m_ack = kcg_lit_int32(0);
+  outC->_L1.nid_lrbg = kcg_lit_int32(0);
+  outC->_L1.t_train_reference = kcg_lit_int32(0);
+  outC->_L1.nid_em = kcg_lit_int32(0);
+  outC->_L1.q_scale = kcg_lit_int32(0);
+  outC->_L1.d_sr = kcg_lit_int32(0);
+  outC->_L1.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L1.d_ref = kcg_lit_int32(0);
+  outC->_L1.q_dir = kcg_lit_int32(0);
+  outC->_L1.d_emergencystop = kcg_lit_int32(0);
+  outC->_L1.m_version = kcg_lit_int32(0);
+  outC->out_T_TRAIN = kcg_lit_int32(0);
   /* _L3=(TM_conversions::CAST_Int_to_T_TRAIN#1)/ */
   CAST_Int_to_T_TRAIN_init_TM_conversions(&outC->Context_CAST_Int_to_T_TRAIN_1);
 }
@@ -63,6 +63,6 @@ void RadioTrackTrainHeader__Get_T_TRAIN_reset_RBC_Messaging_Pkg_RBC_RadioTrackTr
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** RadioTrackTrainHeader__Get_T_TRAIN_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

@@ -45,8 +45,8 @@ typedef struct {
   kcg_bool /* IfBlock1:then:_L13/ */ _L13_then_IfBlock1;
   Q_LINKORIENTATION /* IfBlock1:then:_L12/ */ _L12_then_IfBlock1;
   kcg_bool /* IfBlock1:else:else:_L1/ */ _L1_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L2/ */ _L2_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L3/ */ _L3_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L2/ */ _L2_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L3/ */ _L3_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L49/ */ _L49_then_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L47/ */ _L47_then_else_IfBlock1;
   Q_LINKORIENTATION /* IfBlock1:else:then:_L45/ */ _L45_then_else_IfBlock1;
@@ -55,8 +55,8 @@ typedef struct {
   Telegram_T_BG_Types_Pkg /* IfBlock1:else:then:_L19/ */ _L19_then_else_IfBlock1;
   N_PIG /* IfBlock1:else:then:_L18/ */ _L18_then_else_IfBlock1;
   N_PIG /* IfBlock1:else:then:_L16/ */ _L16_then_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L15/ */ _L15_then_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L14/ */ _L14_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L15/ */ _L15_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L14/ */ _L14_then_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L13/ */ _L13_then_else_IfBlock1;
   Q_LINKORIENTATION /* IfBlock1:else:then:_L52/ */ _L52_then_else_IfBlock1;
   BG_Message_T_BG_Types_Pkg /* IfBlock1:else:then:_L58/ */ _L58_then_else_IfBlock1;
@@ -66,8 +66,8 @@ typedef struct {
   kcg_bool /* isSingle/ */ isSingle;
   kcg_bool /* isAnnounced/ */ isAnnounced;
   Q_LINKORIENTATION /* q_linkorientation_local/ */ q_linkorientation_local;
-  kcg_int64 /* nid_errorBG_local/ */ nid_errorBG_local;
-  kcg_int64 /* nid_c_local/ */ nid_c_local;
+  kcg_int32 /* nid_errorBG_local/ */ nid_errorBG_local;
+  kcg_int32 /* nid_c_local/ */ nid_c_local;
   Telegram_T_BG_Types_Pkg /* _L13/ */ _L13;
   kcg_bool /* _L12/ */ _L12;
   kcg_bool /* _L11/ */ _L11;

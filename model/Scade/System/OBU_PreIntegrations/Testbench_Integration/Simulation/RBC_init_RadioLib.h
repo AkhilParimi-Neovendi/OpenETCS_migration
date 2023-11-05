@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _RBC_init_RadioLib_H_
 #define _RBC_init_RadioLib_H_
@@ -24,7 +24,7 @@ typedef struct {
   R_data_internal_T_InfraLib /* _L1/ */ _L1;
   M_TrackTrain_Radio_T_TM_radio_messages /* _L2/ */ _L2;
   CompressedPackets_T_Common_Types_Pkg /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L4/ */ _L4;
   kcg_bool /* _L6/ */ _L6;
 } outC_RBC_init_RadioLib;
 
@@ -36,7 +36,7 @@ extern void RBC_init_RadioLib(
   /* Packets_in/ */
   CompressedPackets_T_Common_Types_Pkg *Packets_in,
   /* Trigger_in/ */
-  kcg_int64 Trigger_in,
+  kcg_int32 Trigger_in,
   /* Message_sent/ */
   kcg_bool Message_sent,
   outC_RBC_init_RadioLib *outC);
@@ -54,6 +54,6 @@ extern void RBC_init_init_RadioLib(outC_RBC_init_RadioLib *outC);
 #endif /* _RBC_init_RadioLib_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** RBC_init_RadioLib.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

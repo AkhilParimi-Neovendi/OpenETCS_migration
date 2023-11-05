@@ -22,12 +22,12 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   BaliseGroupData_TM /* _L2/ */ _L2;
-  kcg_int64 /* _L14/ */ _L14;
+  kcg_int32 /* _L14/ */ _L14;
   B_data_internal_T_InfraLib /* _L26/ */ _L26;
   BaliseTelegramHeader_int_T_TM /* _L27/ */ _L27;
   CompressedPackets_T_Common_Types_Pkg /* _L28/ */ _L28;
-  kcg_int64 /* _L29/ */ _L29;
-  kcg_float64 /* _L30/ */ _L30;
+  kcg_int32 /* _L29/ */ _L29;
+  kcg_float32 /* _L30/ */ _L30;
   kcg_bool /* _L31/ */ _L31;
 } outC_Balise_Group_Init_InfraLib;
 
@@ -35,7 +35,7 @@ typedef struct {
 /* InfraLib::Balise_Group_Init/ */
 extern void Balise_Group_Init_InfraLib(
   /* TrainPos/ */
-  kcg_float64 TrainPos,
+  kcg_float32 TrainPos,
   /* Engineering_Data/ */
   BaliseGroupData_TM *Engineering_Data,
   outC_Balise_Group_Init_InfraLib *outC);

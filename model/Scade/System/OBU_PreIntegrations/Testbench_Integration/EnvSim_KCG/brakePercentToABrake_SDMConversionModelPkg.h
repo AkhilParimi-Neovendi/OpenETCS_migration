@@ -27,10 +27,10 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   av_Map_t_SDMConversionModelPkg /* _L1/ */ _L1;
   av_Map_t_SDMConversionModelPkg /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L4/ */ _L4;
   kcg_bool /* _L5/ */ _L5;
   a_Brake_t_SDMConversionModelPkg /* _L8/ */ _L8;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   trainData_T_TIU_Types_Pkg /* _L9/ */ _L9;
 } outC_brakePercentToABrake_SDMConversionModelPkg;
 

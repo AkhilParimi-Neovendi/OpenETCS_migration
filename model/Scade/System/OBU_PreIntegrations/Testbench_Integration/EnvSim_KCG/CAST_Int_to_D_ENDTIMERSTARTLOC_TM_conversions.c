@@ -10,7 +10,7 @@
 /* TM_conversions::CAST_Int_to_D_ENDTIMERSTARTLOC/ */
 void CAST_Int_to_D_ENDTIMERSTARTLOC_TM_conversions(
   /* d_endtimerstartloc_int/ */
-  kcg_int64 d_endtimerstartloc_int,
+  kcg_int32 d_endtimerstartloc_int,
   outC_CAST_Int_to_D_ENDTIMERSTARTLOC_TM_conversions *outC)
 {
   static kcg_bool noname;
@@ -30,12 +30,12 @@ void CAST_Int_to_D_ENDTIMERSTARTLOC_TM_conversions(
 void CAST_Int_to_D_ENDTIMERSTARTLOC_init_TM_conversions(
   outC_CAST_Int_to_D_ENDTIMERSTARTLOC_TM_conversions *outC)
 {
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L8 = kcg_lit_int32(0);
   outC->_L9 = kcg_true;
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L10 = kcg_lit_int32(0);
   outC->_L11 = kcg_true;
-  outC->_L1 = kcg_lit_int64(0);
-  outC->d_endtimerstartloc = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->d_endtimerstartloc = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

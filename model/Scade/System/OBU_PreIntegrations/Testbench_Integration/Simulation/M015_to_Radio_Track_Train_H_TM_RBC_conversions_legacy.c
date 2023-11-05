@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -60,65 +60,65 @@ void M015_to_Radio_Track_Train_H_TM_RBC_conversions_legacy(
 void M015_to_Radio_Track_Train_H_init_TM_RBC_conversions_legacy(
   outC_M015_to_Radio_Track_Train_H_TM_RBC_conversions_legacy *outC)
 {
-  outC->_L31 = kcg_lit_int64(0);
-  outC->_L32 = kcg_lit_int64(0);
-  outC->_L24 = kcg_lit_int64(0);
+  outC->_L31 = kcg_lit_int32(0);
+  outC->_L32 = kcg_lit_int32(0);
+  outC->_L24 = kcg_lit_int32(0);
   outC->_L25 = Q_DIR_Reverse;
-  outC->_L26 = kcg_lit_int64(0);
+  outC->_L26 = kcg_lit_int32(0);
   outC->_L27 = Q_SCALE_10_cm_scale;
-  outC->_L28 = kcg_lit_int64(0);
+  outC->_L28 = kcg_lit_int32(0);
   outC->_L23 =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
-  outC->_L19 = kcg_lit_int64(0);
-  outC->_L18 = kcg_lit_int64(0);
-  outC->_L15 = kcg_lit_int64(0);
-  outC->_L14.radioDevice = kcg_lit_int64(0);
-  outC->_L14.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L14.nid_message = kcg_lit_int64(0);
-  outC->_L14.t_train = kcg_lit_int64(0);
+  outC->_L19 = kcg_lit_int32(0);
+  outC->_L18 = kcg_lit_int32(0);
+  outC->_L15 = kcg_lit_int32(0);
+  outC->_L14.radioDevice = kcg_lit_int32(0);
+  outC->_L14.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L14.nid_message = kcg_lit_int32(0);
+  outC->_L14.t_train = kcg_lit_int32(0);
   outC->_L14.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L14.nid_lrbg = kcg_lit_int64(0);
-  outC->_L14.t_train_reference = kcg_lit_int64(0);
-  outC->_L14.nid_em = kcg_lit_int64(0);
+  outC->_L14.nid_lrbg = kcg_lit_int32(0);
+  outC->_L14.t_train_reference = kcg_lit_int32(0);
+  outC->_L14.nid_em = kcg_lit_int32(0);
   outC->_L14.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L14.d_sr = kcg_lit_int64(0);
-  outC->_L14.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L14.d_ref = kcg_lit_int64(0);
+  outC->_L14.d_sr = kcg_lit_int32(0);
+  outC->_L14.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L14.d_ref = kcg_lit_int32(0);
   outC->_L14.q_dir = Q_DIR_Reverse;
-  outC->_L14.d_emergencystop = kcg_lit_int64(0);
+  outC->_L14.d_emergencystop = kcg_lit_int32(0);
   outC->_L14.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L2 = kcg_true;
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L6 = M_ACK_No_acknowledgement_required;
-  outC->_L7 = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(0);
   outC->_L1.valid = kcg_true;
-  outC->_L1.nid_message = kcg_lit_int64(0);
-  outC->_L1.l_message = kcg_lit_int64(0);
-  outC->_L1.t_train = kcg_lit_int64(0);
+  outC->_L1.nid_message = kcg_lit_int32(0);
+  outC->_L1.l_message = kcg_lit_int32(0);
+  outC->_L1.t_train = kcg_lit_int32(0);
   outC->_L1.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L1.nid_lrbg = kcg_lit_int64(0);
-  outC->_L1.nid_em = kcg_lit_int64(0);
+  outC->_L1.nid_lrbg = kcg_lit_int32(0);
+  outC->_L1.nid_em = kcg_lit_int32(0);
   outC->_L1.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L1.d_ref = kcg_lit_int64(0);
+  outC->_L1.d_ref = kcg_lit_int32(0);
   outC->_L1.q_dir = Q_DIR_Reverse;
-  outC->_L1.d_emergencystop = kcg_lit_int64(0);
-  outC->Radio_Track_Train_Hd_out.radioDevice = kcg_lit_int64(0);
-  outC->Radio_Track_Train_Hd_out.receivedSystemTime = kcg_lit_int64(0);
-  outC->Radio_Track_Train_Hd_out.nid_message = kcg_lit_int64(0);
-  outC->Radio_Track_Train_Hd_out.t_train = kcg_lit_int64(0);
+  outC->_L1.d_emergencystop = kcg_lit_int32(0);
+  outC->Radio_Track_Train_Hd_out.radioDevice = kcg_lit_int32(0);
+  outC->Radio_Track_Train_Hd_out.receivedSystemTime = kcg_lit_int32(0);
+  outC->Radio_Track_Train_Hd_out.nid_message = kcg_lit_int32(0);
+  outC->Radio_Track_Train_Hd_out.t_train = kcg_lit_int32(0);
   outC->Radio_Track_Train_Hd_out.m_ack = M_ACK_No_acknowledgement_required;
-  outC->Radio_Track_Train_Hd_out.nid_lrbg = kcg_lit_int64(0);
-  outC->Radio_Track_Train_Hd_out.t_train_reference = kcg_lit_int64(0);
-  outC->Radio_Track_Train_Hd_out.nid_em = kcg_lit_int64(0);
+  outC->Radio_Track_Train_Hd_out.nid_lrbg = kcg_lit_int32(0);
+  outC->Radio_Track_Train_Hd_out.t_train_reference = kcg_lit_int32(0);
+  outC->Radio_Track_Train_Hd_out.nid_em = kcg_lit_int32(0);
   outC->Radio_Track_Train_Hd_out.q_scale = Q_SCALE_10_cm_scale;
-  outC->Radio_Track_Train_Hd_out.d_sr = kcg_lit_int64(0);
-  outC->Radio_Track_Train_Hd_out.t_sh_rqst = kcg_lit_int64(0);
-  outC->Radio_Track_Train_Hd_out.d_ref = kcg_lit_int64(0);
+  outC->Radio_Track_Train_Hd_out.d_sr = kcg_lit_int32(0);
+  outC->Radio_Track_Train_Hd_out.t_sh_rqst = kcg_lit_int32(0);
+  outC->Radio_Track_Train_Hd_out.d_ref = kcg_lit_int32(0);
   outC->Radio_Track_Train_Hd_out.q_dir = Q_DIR_Reverse;
-  outC->Radio_Track_Train_Hd_out.d_emergencystop = kcg_lit_int64(0);
+  outC->Radio_Track_Train_Hd_out.d_emergencystop = kcg_lit_int32(0);
   outC->Radio_Track_Train_Hd_out.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
 }
@@ -136,6 +136,6 @@ void M015_to_Radio_Track_Train_H_reset_TM_RBC_conversions_legacy(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** M015_to_Radio_Track_Train_H_TM_RBC_conversions_legacy.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

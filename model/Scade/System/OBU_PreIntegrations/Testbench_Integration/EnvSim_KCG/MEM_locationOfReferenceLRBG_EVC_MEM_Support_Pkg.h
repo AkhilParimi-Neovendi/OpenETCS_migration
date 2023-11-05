@@ -40,7 +40,7 @@ typedef struct {
   kcg_bool /* _L16/ */ _L16;
   Location_T_Obu_BasicTypes_Pkg /* _L17/ */ _L17;
   kcg_bool /* _L18/ */ _L18;
-  kcg_int64 /* _L19/ */ _L19;
+  kcg_int32 /* _L19/ */ _L19;
   trainProperties_T_TrainPosition_Types_Pck /* _L20/ */ _L20;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L21/ */ _L21;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L22/ */ _L22;

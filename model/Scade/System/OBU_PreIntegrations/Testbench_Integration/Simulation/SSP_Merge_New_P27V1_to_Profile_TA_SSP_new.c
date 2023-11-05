@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -19,7 +19,7 @@ void SSP_Merge_New_P27V1_to_Profile_TA_SSP_new(
   static kcg_size idx1;
   static StaticSpeedProfile_t_TrackAtlasTypes acc;
   static kcg_size idx2;
-  static kcg_int64 op_call;
+  static kcg_int32 op_call;
 
   kcg_copy_StaticSpeedProfile_t_TrackAtlasTypes(
     &outC->_L45,
@@ -43,7 +43,7 @@ void SSP_Merge_New_P27V1_to_Profile_TA_SSP_new(
     outC->_L1 = op_call;
   }
   else {
-    outC->_L1 = kcg_lit_int64(0);
+    outC->_L1 = kcg_lit_int32(0);
   }
   /* _L9/ */
   for (idx1 = 0; idx1 < 50; idx1++) {
@@ -55,7 +55,7 @@ void SSP_Merge_New_P27V1_to_Profile_TA_SSP_new(
     kcg_copy_StaticSpeedProfile_t_TrackAtlasTypes(&acc, &outC->_L14);
     /* _L14=(TA_SSP_new::SSP_Merge_New_P27V1_to_Profile_loop#1)/ */
     SSP_Merge_New_P27V1_to_Profile_loop_TA_SSP_new(
-      /* _L14= */(kcg_int64) idx2,
+      /* _L14= */(kcg_int32) idx2,
       &acc,
       outC->_L9[idx2],
       &outC->_L47[idx2],
@@ -86,44 +86,44 @@ void SSP_Merge_New_P27V1_to_Profile_init_TA_SSP_new(
   for (idx2 = 0; idx2 < 50; idx2++) {
     for (idx1 = 0; idx1 < 50; idx1++) {
       outC->_L47[idx2][idx1].valid = kcg_true;
-      outC->_L47[idx2][idx1].d_static_abs = kcg_lit_int64(0);
-      outC->_L47[idx2][idx1].d_static_LRBG = kcg_lit_int64(0);
+      outC->_L47[idx2][idx1].d_static_abs = kcg_lit_int32(0);
+      outC->_L47[idx2][idx1].d_static_LRBG = kcg_lit_int32(0);
       outC->_L47[idx2][idx1].q_train_length_corr = kcg_true;
-      outC->_L47[idx2][idx1].v_static = kcg_lit_int64(0);
+      outC->_L47[idx2][idx1].v_static = kcg_lit_int32(0);
     }
   }
   for (idx3 = 0; idx3 < 50; idx3++) {
     outC->_L45[idx3].valid = kcg_true;
-    outC->_L45[idx3].d_static_abs = kcg_lit_int64(0);
-    outC->_L45[idx3].d_static_LRBG = kcg_lit_int64(0);
+    outC->_L45[idx3].d_static_abs = kcg_lit_int32(0);
+    outC->_L45[idx3].d_static_LRBG = kcg_lit_int32(0);
     outC->_L45[idx3].q_train_length_corr = kcg_true;
-    outC->_L45[idx3].v_static = kcg_lit_int64(0);
+    outC->_L45[idx3].v_static = kcg_lit_int32(0);
   }
   for (idx4 = 0; idx4 < 50; idx4++) {
     outC->_L14[idx4].valid = kcg_true;
-    outC->_L14[idx4].d_static_abs = kcg_lit_int64(0);
-    outC->_L14[idx4].d_static_LRBG = kcg_lit_int64(0);
+    outC->_L14[idx4].d_static_abs = kcg_lit_int32(0);
+    outC->_L14[idx4].d_static_LRBG = kcg_lit_int32(0);
     outC->_L14[idx4].q_train_length_corr = kcg_true;
-    outC->_L14[idx4].v_static = kcg_lit_int64(0);
+    outC->_L14[idx4].v_static = kcg_lit_int32(0);
   }
   for (idx5 = 0; idx5 < 50; idx5++) {
-    outC->_L9[idx5] = kcg_lit_int64(0);
+    outC->_L9[idx5] = kcg_lit_int32(0);
   }
   for (idx6 = 0; idx6 < 50; idx6++) {
     outC->_L5[idx6].valid = kcg_true;
-    outC->_L5[idx6].d_static_abs = kcg_lit_int64(0);
-    outC->_L5[idx6].d_static_LRBG = kcg_lit_int64(0);
+    outC->_L5[idx6].d_static_abs = kcg_lit_int32(0);
+    outC->_L5[idx6].d_static_LRBG = kcg_lit_int32(0);
     outC->_L5[idx6].q_train_length_corr = kcg_true;
-    outC->_L5[idx6].v_static = kcg_lit_int64(0);
+    outC->_L5[idx6].v_static = kcg_lit_int32(0);
   }
-  outC->_L1 = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
   outC->every = kcg_true;
   for (idx7 = 0; idx7 < 50; idx7++) {
     outC->SpeedProfile_out[idx7].valid = kcg_true;
-    outC->SpeedProfile_out[idx7].d_static_abs = kcg_lit_int64(0);
-    outC->SpeedProfile_out[idx7].d_static_LRBG = kcg_lit_int64(0);
+    outC->SpeedProfile_out[idx7].d_static_abs = kcg_lit_int32(0);
+    outC->SpeedProfile_out[idx7].d_static_LRBG = kcg_lit_int32(0);
     outC->SpeedProfile_out[idx7].q_train_length_corr = kcg_true;
-    outC->SpeedProfile_out[idx7].v_static = kcg_lit_int64(0);
+    outC->SpeedProfile_out[idx7].v_static = kcg_lit_int32(0);
   }
   for (idx = 0; idx < 50; idx++) {
     /* _L14=(TA_SSP_new::SSP_Merge_New_P27V1_to_Profile_loop#1)/ */
@@ -158,6 +158,6 @@ void SSP_Merge_New_P27V1_to_Profile_reset_TA_SSP_new(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** SSP_Merge_New_P27V1_to_Profile_TA_SSP_new.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

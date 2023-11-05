@@ -44,7 +44,7 @@ typedef struct {
   kcg_bool /* _L11/ */ _L11;
   kcg_bool /* _L14/ */ _L14;
   kcg_bool /* _L13/ */ _L13;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L12/ */ _L12;
   positionedBG_T_TrainPosition_Types_Pck /* _L16/ */ _L16;
   positionedBG_T_TrainPosition_Types_Pck /* _L17/ */ _L17;
   positionedBG_T_TrainPosition_Types_Pck /* _L18/ */ _L18;

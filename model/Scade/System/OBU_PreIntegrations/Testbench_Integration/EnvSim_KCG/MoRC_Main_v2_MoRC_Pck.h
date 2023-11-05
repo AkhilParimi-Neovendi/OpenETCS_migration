@@ -72,7 +72,7 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   NID_ENGINE /* ifMessageToRBC:then:_L11/ */ _L11_then_ifMessageToRBC;
   morc_configData_T_RCM_Session_Types_Pkg /* ifMessageToRBC:then:_L12/ */ _L12_then_ifMessageToRBC;
-  kcg_int64 /* ifMessageToRBC:then:_L10/ */ _L10_then_ifMessageToRBC;
+  kcg_int32 /* ifMessageToRBC:then:_L10/ */ _L10_then_ifMessageToRBC;
   kcg_bool /* ifMessageToRBC:then:_L9/ */ _L9_then_ifMessageToRBC;
   Radio_TrainTrack_Message_T_Radio_Types_Pkg /* ifMessageToRBC:then:_L6/ */ _L6_then_ifMessageToRBC;
   T_TRAIN /* ifMessageToRBC:then:_L7/ */ _L7_then_ifMessageToRBC;
@@ -80,7 +80,7 @@ typedef struct {
   PT3_OnboardTelephoneNumbers_T_Packet_TrainTypes_Pkg /* ifMessageToRBC:else:else:then:_L19/ */ _L19_then_else_else_ifMessageToRBC;
   morc_configData_T_RCM_Session_Types_Pkg /* ifMessageToRBC:else:else:then:_L17/ */ _L17_then_else_else_ifMessageToRBC;
   NID_ENGINE /* ifMessageToRBC:else:else:then:_L18/ */ _L18_then_else_else_ifMessageToRBC;
-  kcg_int64 /* ifMessageToRBC:else:else:then:_L16/ */ _L16_then_else_else_ifMessageToRBC;
+  kcg_int32 /* ifMessageToRBC:else:else:then:_L16/ */ _L16_then_else_else_ifMessageToRBC;
   Radio_TrainTrack_Message_T_Radio_Types_Pkg /* ifMessageToRBC:else:else:then:_L15/ */ _L15_then_else_else_ifMessageToRBC;
   kcg_bool /* ifMessageToRBC:else:else:then:_L10/ */ _L10_then_else_else_ifMessageToRBC;
   T_TRAIN /* ifMessageToRBC:else:else:then:_L11/ */ _L11_then_else_else_ifMessageToRBC;
@@ -91,14 +91,14 @@ typedef struct {
   Radio_TrainTrack_Message_T_Radio_Types_Pkg /* ifMessageToRBC:else:else:else:then:_L1/ */ _L1_then_else_else_else_ifMessageToRBC;
   kcg_bool /* ifMessageToRBC:else:else:else:then:_L5/ */ _L5_then_else_else_else_ifMessageToRBC;
   NID_MESSAGE /* ifMessageToRBC:else:else:else:then:_L6/ */ _L6_then_else_else_else_ifMessageToRBC;
-  kcg_int64 /* ifMessageToRBC:else:else:else:then:_L7/ */ _L7_then_else_else_else_ifMessageToRBC;
+  kcg_int32 /* ifMessageToRBC:else:else:else:then:_L7/ */ _L7_then_else_else_else_ifMessageToRBC;
   morc_configData_T_RCM_Session_Types_Pkg /* ifMessageToRBC:else:else:else:then:_L9/ */ _L9_then_else_else_else_ifMessageToRBC;
   NID_ENGINE /* ifMessageToRBC:else:else:else:then:_L8/ */ _L8_then_else_else_else_ifMessageToRBC;
   NID_MESSAGE /* ifMessageToRBC:else:then:_L4/ */ _L4_then_else_ifMessageToRBC;
   T_TRAIN /* ifMessageToRBC:else:then:_L3/ */ _L3_then_else_ifMessageToRBC;
   Radio_TrainTrack_Message_T_Radio_Types_Pkg /* ifMessageToRBC:else:then:_L2/ */ _L2_then_else_ifMessageToRBC;
   kcg_bool /* ifMessageToRBC:else:then:_L5/ */ _L5_then_else_ifMessageToRBC;
-  kcg_int64 /* ifMessageToRBC:else:then:_L6/ */ _L6_then_else_ifMessageToRBC;
+  kcg_int32 /* ifMessageToRBC:else:then:_L6/ */ _L6_then_else_ifMessageToRBC;
   morc_configData_T_RCM_Session_Types_Pkg /* ifMessageToRBC:else:then:_L8/ */ _L8_then_else_ifMessageToRBC;
   NID_ENGINE /* ifMessageToRBC:else:then:_L7/ */ _L7_then_else_ifMessageToRBC;
   kcg_bool /* sNotReady/ */ sNotReady;
@@ -183,14 +183,14 @@ typedef struct {
   morc_configData_T_RCM_Session_Types_Pkg /* _L105/ */ _L105;
   NID_RADIO /* _L106/ */ _L106;
   morc_configData_T_RCM_Session_Types_Pkg /* _L107/ */ _L107;
-  kcg_int64 /* _L108/ */ _L108;
+  kcg_int32 /* _L108/ */ _L108;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L110/ */ _L110;
   morc_configData_T_RCM_Session_Types_Pkg /* _L113/ */ _L113;
-  kcg_int64 /* _L112/ */ _L112;
+  kcg_int32 /* _L112/ */ _L112;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L111/ */ _L111;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L116/ */ _L116;
   morc_configData_T_RCM_Session_Types_Pkg /* _L115/ */ _L115;
-  kcg_int64 /* _L114/ */ _L114;
+  kcg_int32 /* _L114/ */ _L114;
   morc_configData_T_RCM_Session_Types_Pkg /* _L118/ */ _L118;
   P45_RadioNetworkRegistration_T_Packet_Types_Pkg /* _L117/ */ _L117;
   morc_configData_T_RCM_Session_Types_Pkg /* _L120/ */ _L120;

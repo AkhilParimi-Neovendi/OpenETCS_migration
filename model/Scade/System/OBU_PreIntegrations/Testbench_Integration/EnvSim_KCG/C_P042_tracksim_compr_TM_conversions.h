@@ -28,10 +28,10 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   Q_DIR /* @1/q_dir/ */ q_dir_CAST_Int_to_Q_DIR_1;
-  kcg_int64 /* @1/q_dir_int/ */ q_dir_int_CAST_Int_to_Q_DIR_1;
-  kcg_int64 /* @1/_L12/ */ _L12_CAST_Int_to_Q_DIR_1;
+  kcg_int32 /* @1/q_dir_int/ */ q_dir_int_CAST_Int_to_Q_DIR_1;
+  kcg_int32 /* @1/_L12/ */ _L12_CAST_Int_to_Q_DIR_1;
   kcg_bool /* @1/_L13/ */ _L13_CAST_Int_to_Q_DIR_1;
-  kcg_int64 /* @1/q_dir_in/ */ q_dir_in_CAST_Int_to_Q_DIR_1;
+  kcg_int32 /* @1/q_dir_in/ */ q_dir_in_CAST_Int_to_Q_DIR_1;
   kcg_bool /* @1/error/ */ error_CAST_Int_to_Q_DIR_1;
   kcg_bool /* @1/IfBlock1:else:then:_L5/ */ _L5_CAST_Int_to_Q_DIR_1_then_else_IfBlock1;
   Q_DIR /* @1/IfBlock1:else:then:_L3/ */ _L3_CAST_Int_to_Q_DIR_1_then_else_IfBlock1;
@@ -43,24 +43,24 @@ typedef struct {
   kcg_bool /* @1/IfBlock1:then:_L5/ */ _L5_CAST_Int_to_Q_DIR_1_then_IfBlock1;
   P042_trackside_int_T_TM /* _L1/ */ _L1;
   MetadataElement_T_Common_Types_Pkg /* _L204/ */ _L204;
-  kcg_int64 /* _L206/ */ _L206;
-  array_int64_492 /* _L209/ */ _L209;
-  kcg_int64 /* _L212/ */ _L212;
-  kcg_int64 /* _L213/ */ _L213;
-  kcg_int64 /* _L336/ */ _L336;
-  kcg_int64 /* _L217/ */ _L217;
-  kcg_int64 /* _L216/ */ _L216;
-  kcg_int64 /* _L215/ */ _L215;
+  kcg_int32 /* _L206/ */ _L206;
+  array_int32_492 /* _L209/ */ _L209;
+  kcg_int32 /* _L212/ */ _L212;
+  kcg_int32 /* _L213/ */ _L213;
+  kcg_int32 /* _L336/ */ _L336;
+  kcg_int32 /* _L217/ */ _L217;
+  kcg_int32 /* _L216/ */ _L216;
+  kcg_int32 /* _L215/ */ _L215;
   kcg_bool /* _L214/ */ _L214;
   Q_DIR /* _L356/ */ _L356;
-  array_int64_8 /* _L373/ */ _L373;
+  array_int32_8 /* _L373/ */ _L373;
   CompressedPacketData_T_Common_Types_Pkg /* _L383/ */ _L383;
-  kcg_int64 /* _L387/ */ _L387;
-  kcg_int64 /* _L388/ */ _L388;
-  kcg_int64 /* _L392/ */ _L392;
-  kcg_int64 /* _L391/ */ _L391;
-  kcg_int64 /* _L390/ */ _L390;
-  kcg_int64 /* _L389/ */ _L389;
+  kcg_int32 /* _L387/ */ _L387;
+  kcg_int32 /* _L388/ */ _L388;
+  kcg_int32 /* _L392/ */ _L392;
+  kcg_int32 /* _L391/ */ _L391;
+  kcg_int32 /* _L390/ */ _L390;
+  kcg_int32 /* _L389/ */ _L389;
   nid_packet_meta_TM /* _L393/ */ _L393;
 } outC_C_P042_tracksim_compr_TM_conversions;
 

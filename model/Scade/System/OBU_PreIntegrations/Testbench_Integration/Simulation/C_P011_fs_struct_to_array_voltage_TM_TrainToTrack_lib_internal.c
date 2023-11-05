@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -40,17 +40,17 @@ void C_P011_fs_struct_to_array_voltage_init_TM_TrainToTrack_lib_internal(
   static kcg_size idx;
   static kcg_size idx1;
 
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
   outC->_L3 = M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L4 = kcg_lit_int32(0);
   for (idx = 0; idx < 2; idx++) {
-    outC->_L2[idx] = kcg_lit_int64(0);
+    outC->_L2[idx] = kcg_lit_int32(0);
   }
   outC->_L1.m_voltage = M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-  outC->_L1.nid_ctraction = kcg_lit_int64(0);
+  outC->_L1.nid_ctraction = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 2; idx1++) {
-    outC->section_arrays[idx1] = kcg_lit_int64(0);
+    outC->section_arrays[idx1] = kcg_lit_int32(0);
   }
   /* _L13=(TM_conversions::CAST_M_VOLTAGE_to_int#1)/ */
   CAST_M_VOLTAGE_to_int_init_TM_conversions(
@@ -79,6 +79,6 @@ void C_P011_fs_struct_to_array_voltage_reset_TM_TrainToTrack_lib_internal(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P011_fs_struct_to_array_voltage_TM_TrainToTrack_lib_internal.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

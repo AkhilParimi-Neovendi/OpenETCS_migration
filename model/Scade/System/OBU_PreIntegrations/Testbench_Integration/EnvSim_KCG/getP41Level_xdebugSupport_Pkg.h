@@ -23,7 +23,7 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   P41_LevelTransistionOrders_T_Packet_Types_Pkg /* _L1/ */ _L1;
   P41_LevelTransitionOrder_T_Packet_Types_Pkg /* _L2/ */ _L2;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   M_LEVELTR /* _L5/ */ _L5;
   P41_LevelTransitionOrder_T_Packet_Types_Pkg /* _L8/ */ _L8;
   M_LEVEL /* _L9/ */ _L9;

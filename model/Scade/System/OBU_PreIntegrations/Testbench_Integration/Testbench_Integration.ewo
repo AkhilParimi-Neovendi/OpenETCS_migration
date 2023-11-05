@@ -6,6 +6,7 @@
 "C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\Radio\\MoRC\\MoRC.etp"="Simulation" 
 "C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\ETCS_Messaging\\TrackMessages\\TrackMessages.etp"="KCG" 
 "C:\\DBC\\OpenETCS\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\Testbench_Integration\\Testbench_Integration.etp"="EnvSim_KCG" 
+"C:\\DBC\\OpenETCS\\test\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\Testbench_Integration\\Testbench_Integration.etp"="Simulation" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Metrics and Rules Checker]
 
@@ -14,6 +15,7 @@
 "C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\Radio\\MoRC\\MoRC.etp"="KCG" 
 "C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\ETCS_Messaging\\TrackMessages\\TrackMessages.etp"="KCG" 
 "C:\\DBC\\OpenETCS\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\Testbench_Integration\\Testbench_Integration.etp"="testsim" 
+"C:\\DBC\\OpenETCS\\test\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\Testbench_Integration\\Testbench_Integration.etp"="Simulation" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Reporter]
 
@@ -22,6 +24,7 @@
 "C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\Radio\\MoRC\\MoRC.etp"="HTML" 
 "C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\ETCS_Messaging\\TrackMessages\\TrackMessages.etp"="HTML" 
 "C:\\DBC\\OpenETCS\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\Testbench_Integration\\Testbench_Integration.etp"="TCP_EVC_Simulation" 
+"C:\\DBC\\OpenETCS\\test\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\Testbench_Integration\\Testbench_Integration.etp"="TCP_EVC_Simulation" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Timing and Stack Analysis Tools]
 
@@ -30,10 +33,11 @@
 "C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\Radio\\MoRC\\MoRC.etp"="KCG" 
 "C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\ETCS_Messaging\\TrackMessages\\TrackMessages.etp"="KCG" 
 "C:\\DBC\\OpenETCS\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\Testbench_Integration\\Testbench_Integration.etp"="testsim" 
+"C:\\DBC\\OpenETCS\\test\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\Testbench_Integration\\Testbench_Integration.etp"="Simulation" 
 
 [STUDIO\Workspace]
 
-"ActiveProject"="C:\\DBC\\OpenETCS\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\Testbench_Integration\\Testbench_Integration.etp" 
+"ActiveProject"="C:\\DBC\\OpenETCS\\test\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\Testbench_Integration\\Testbench_Integration.etp" 
 
 [SCADE\Editor\Shortcut]
 

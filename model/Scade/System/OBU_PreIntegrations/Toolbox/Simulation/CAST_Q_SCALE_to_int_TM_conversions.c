@@ -14,29 +14,29 @@ void CAST_Q_SCALE_to_int_TM_conversions(
   outC_CAST_Q_SCALE_to_int_TM_conversions *outC)
 {
   /* d/ */
-  kcg_int64 d_partial;
+  kcg_int32 d_partial;
   /* error/ */
   kcg_bool error_partial;
   /* d/ */
-  kcg_int64 _1_d_partial;
+  kcg_int32 _1_d_partial;
   /* error/ */
   kcg_bool _2_error_partial;
   /* d/ */
-  kcg_int64 _3_d_partial;
+  kcg_int32 _3_d_partial;
   /* error/ */
   kcg_bool _4_error_partial;
   /* d/ */
-  kcg_int64 _5_d_partial;
+  kcg_int32 _5_d_partial;
   /* error/ */
   kcg_bool _6_error_partial;
   /* error/ */
   kcg_bool _7_error_partial;
   /* d/ */
-  kcg_int64 _8_d_partial;
+  kcg_int32 _8_d_partial;
   /* error/ */
   kcg_bool _9_error_partial;
   /* d/ */
-  kcg_int64 _10_d_partial;
+  kcg_int32 _10_d_partial;
   kcg_bool noname;
 
   outC->_L2 = q_scale_int;
@@ -117,16 +117,16 @@ void CAST_Q_SCALE_to_int_init_TM_conversions(
   outC->q_scale_in = Q_SCALE_10_cm_scale;
   outC->IfBlock1_clock = kcg_true;
   outC->_L3_then_else_IfBlock1 = kcg_true;
-  outC->_L1_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_IfBlock1 = kcg_true;
   outC->_L2_else_else_else_IfBlock1 = kcg_true;
-  outC->_L1_else_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_else_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L4_then_else_else_IfBlock1 = kcg_true;
   outC->else_clock_IfBlock1 = kcg_true;
-  outC->_L2_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L3_then_IfBlock1 = kcg_true;
-  outC->d = kcg_lit_int64(0);
+  outC->d = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

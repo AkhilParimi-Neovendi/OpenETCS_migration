@@ -69,9 +69,9 @@ void mapMoRCtoRadio_CS_init_manage_DMI_Output_Pkg(
   outC->_L15 = conn_unknown_API_RadioCommunication_Pkg;
   outC->_L13 = mcs_disconnected_RCM_Types_Pkg;
   outC->_L12.valid = kcg_true;
-  outC->_L12.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L12.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L12.status = mcs_disconnected_RCM_Types_Pkg;
-  outC->_L12.nid_radio = kcg_lit_int64(0);
+  outC->_L12.nid_radio = kcg_lit_int32(0);
   outC->_L12.settingUpConnectionHasFailed = kcg_true;
   outC->_L12.connectionLost = kcg_true;
   outC->_L12.isInRadioHole = kcg_true;
@@ -79,22 +79,22 @@ void mapMoRCtoRadio_CS_init_manage_DMI_Output_Pkg(
   outC->_L8 = conn_unknown_API_RadioCommunication_Pkg;
   outC->_L6 = conn_unknown_API_RadioCommunication_Pkg;
   outC->_L1.registration.valid = kcg_true;
-  outC->_L1.registration.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L1.registration.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L1.registration.healthStatus = mhs_nok_RCM_Types_Pkg;
   outC->_L1.registration.status = mrs_unregistered_RCM_Types_Pkg;
-  outC->_L1.registration.nid_mn = kcg_lit_int64(0);
+  outC->_L1.registration.nid_mn = kcg_lit_int32(0);
   outC->_L1.connection.valid = kcg_true;
-  outC->_L1.connection.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L1.connection.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L1.connection.status = mcs_disconnected_RCM_Types_Pkg;
-  outC->_L1.connection.nid_radio = kcg_lit_int64(0);
+  outC->_L1.connection.nid_radio = kcg_lit_int32(0);
   outC->_L1.connection.settingUpConnectionHasFailed = kcg_true;
   outC->_L1.connection.connectionLost = kcg_true;
   outC->_L1.connection.isInRadioHole = kcg_true;
   outC->_L1.session.valid = kcg_true;
   outC->_L1.session.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L1.session.nid_c = kcg_lit_int64(0);
-  outC->_L1.session.nid_rbc = kcg_lit_int64(0);
-  outC->_L1.session.nid_radio = kcg_lit_int64(0);
+  outC->_L1.session.nid_c = kcg_lit_int32(0);
+  outC->_L1.session.nid_rbc = kcg_lit_int32(0);
+  outC->_L1.session.nid_radio = kcg_lit_int32(0);
   outC->outBMI_CS = conn_unknown_API_RadioCommunication_Pkg;
 }
 #endif /* KCG_USER_DEFINED_INIT */

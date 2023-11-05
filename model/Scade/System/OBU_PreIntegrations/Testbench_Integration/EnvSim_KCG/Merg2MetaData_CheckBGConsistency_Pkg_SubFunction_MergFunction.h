@@ -28,12 +28,12 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   Metadata_T_Common_Types_Pkg /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
   MetadataElement_T_Common_Types_Pkg /* IfBlock1:else:_L26/ */ _L26_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:_L20/ */ _L20_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:_L20/ */ _L20_else_IfBlock1;
   MetadataElement_T_Common_Types_Pkg /* IfBlock1:else:_L11/ */ _L11_else_IfBlock1;
   Metadata_T_Common_Types_Pkg /* IfBlock1:else:_L12/ */ _L12_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:_L13/ */ _L13_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:_L13/ */ _L13_else_IfBlock1;
   Metadata_T_Common_Types_Pkg /* IfBlock1:else:_L14/ */ _L14_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:_L15/ */ _L15_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:_L15/ */ _L15_else_IfBlock1;
   Metadata_T_Common_Types_Pkg /* IfBlock1:else:_L16/ */ _L16_else_IfBlock1;
   MetadataElement_T_Common_Types_Pkg /* IfBlock1:else:_L18/ */ _L18_else_IfBlock1;
   Metadata_T_Common_Types_Pkg /* IfBlock1:else:_L19/ */ _L19_else_IfBlock1;
@@ -55,7 +55,7 @@ typedef struct {
 /* CheckBGConsistency_Pkg::SubFunction::MergFunction::Merg2MetaData/ */
 extern void Merg2MetaData_CheckBGConsistency_Pkg_SubFunction_MergFunction(
   /* ind/ */
-  kcg_int64 ind,
+  kcg_int32 ind,
   /* acc/ */
   Metadata_T_Common_Types_Pkg *acc,
   /* metadata_in/ */

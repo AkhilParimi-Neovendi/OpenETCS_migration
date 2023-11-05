@@ -31,7 +31,7 @@ void C_P015_to_legacy_t_TM_conversions(
   for (idx2 = 0; idx2 < 5; idx2++) {
     /* _L20=(TM_conversions::C_P015_to_legacy_loop#1)/ */
     C_P015_to_legacy_loop_TM_conversions(
-      /* _L20= */(kcg_int64) idx2,
+      /* _L20= */(kcg_int32) idx2,
       &outC->_L26[idx2],
       &outC->_L23[idx2],
       &outC->Context_C_P015_to_legacy_loop_1[idx2]);
@@ -60,136 +60,136 @@ void C_P015_to_legacy_t_init_TM_conversions(
 
   for (idx1 = 0; idx1 < 32; idx1++) {
     outC->_L45[idx1].valid = kcg_true;
-    outC->_L45[idx1].l_section = kcg_lit_int64(0);
+    outC->_L45[idx1].l_section = kcg_lit_int32(0);
     outC->_L45[idx1].q_sectiontimer = Q_SECTIONTIMER_No_Section_Timer_information;
-    outC->_L45[idx1].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L45[idx1].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L45[idx1].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L45[idx1].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 5; idx3++) {
     outC->_L26[idx3].valid = kcg_true;
     outC->_L26[idx3].q_dir = Q_DIR_Reverse;
     outC->_L26[idx3].q_scale = Q_SCALE_10_cm_scale;
-    outC->_L26[idx3].v_loa = kcg_lit_int64(0);
-    outC->_L26[idx3].t_loa = kcg_lit_int64(0);
-    outC->_L26[idx3].n_iter = kcg_lit_int64(0);
+    outC->_L26[idx3].v_loa = kcg_lit_int32(0);
+    outC->_L26[idx3].t_loa = kcg_lit_int32(0);
+    outC->_L26[idx3].n_iter = kcg_lit_int32(0);
     for (idx2 = 0; idx2 < 32; idx2++) {
       outC->_L26[idx3].sections[idx2].valid = kcg_true;
-      outC->_L26[idx3].sections[idx2].l_section = kcg_lit_int64(0);
+      outC->_L26[idx3].sections[idx2].l_section = kcg_lit_int32(0);
       outC->_L26[idx3].sections[idx2].q_sectiontimer =
         Q_SECTIONTIMER_No_Section_Timer_information;
-      outC->_L26[idx3].sections[idx2].t_sectiontimer = kcg_lit_int64(0);
-      outC->_L26[idx3].sections[idx2].d_sectiontimerstoploc = kcg_lit_int64(0);
+      outC->_L26[idx3].sections[idx2].t_sectiontimer = kcg_lit_int32(0);
+      outC->_L26[idx3].sections[idx2].d_sectiontimerstoploc = kcg_lit_int32(0);
     }
-    outC->_L26[idx3].l_endsection = kcg_lit_int64(0);
+    outC->_L26[idx3].l_endsection = kcg_lit_int32(0);
     outC->_L26[idx3].q_sectiontimer = Q_SECTIONTIMER_No_Section_Timer_information;
-    outC->_L26[idx3].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L26[idx3].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L26[idx3].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L26[idx3].d_sectiontimerstoploc = kcg_lit_int32(0);
     outC->_L26[idx3].q_endtimer = Q_ENDTIMER_No_End_section_timer_information;
-    outC->_L26[idx3].t_endtimer = kcg_lit_int64(0);
-    outC->_L26[idx3].d_endtimerstartloc = kcg_lit_int64(0);
+    outC->_L26[idx3].t_endtimer = kcg_lit_int32(0);
+    outC->_L26[idx3].d_endtimerstartloc = kcg_lit_int32(0);
     outC->_L26[idx3].q_dangerpoint = Q_DANGERPOINT_No_danger_point_information;
-    outC->_L26[idx3].d_dp = kcg_lit_int64(0);
-    outC->_L26[idx3].v_releasedp = kcg_lit_int64(0);
+    outC->_L26[idx3].d_dp = kcg_lit_int32(0);
+    outC->_L26[idx3].v_releasedp = kcg_lit_int32(0);
     outC->_L26[idx3].q_overlap = Q_OVERLAP_No_overlap_information;
-    outC->_L26[idx3].d_startol = kcg_lit_int64(0);
-    outC->_L26[idx3].t_ol = kcg_lit_int64(0);
-    outC->_L26[idx3].d_ol = kcg_lit_int64(0);
-    outC->_L26[idx3].v_releaseol = kcg_lit_int64(0);
+    outC->_L26[idx3].d_startol = kcg_lit_int32(0);
+    outC->_L26[idx3].t_ol = kcg_lit_int32(0);
+    outC->_L26[idx3].d_ol = kcg_lit_int32(0);
+    outC->_L26[idx3].v_releaseol = kcg_lit_int32(0);
   }
   for (idx5 = 0; idx5 < 5; idx5++) {
     for (idx4 = 0; idx4 < 32; idx4++) {
       outC->_L23[idx5][idx4].valid = kcg_true;
-      outC->_L23[idx5][idx4].l_section = kcg_lit_int64(0);
+      outC->_L23[idx5][idx4].l_section = kcg_lit_int32(0);
       outC->_L23[idx5][idx4].q_sectiontimer =
         Q_SECTIONTIMER_No_Section_Timer_information;
-      outC->_L23[idx5][idx4].t_sectiontimer = kcg_lit_int64(0);
-      outC->_L23[idx5][idx4].d_sectiontimerstoploc = kcg_lit_int64(0);
+      outC->_L23[idx5][idx4].t_sectiontimer = kcg_lit_int32(0);
+      outC->_L23[idx5][idx4].d_sectiontimerstoploc = kcg_lit_int32(0);
     }
   }
   for (idx6 = 0; idx6 < 5; idx6++) {
     outC->_L20[idx6].valid = kcg_true;
     outC->_L20[idx6].q_dir = Q_DIR_Reverse;
     outC->_L20[idx6].q_scale = Q_SCALE_10_cm_scale;
-    outC->_L20[idx6].v_loa = kcg_lit_int64(0);
-    outC->_L20[idx6].t_loa = kcg_lit_int64(0);
-    outC->_L20[idx6].l_section = kcg_lit_int64(0);
+    outC->_L20[idx6].v_loa = kcg_lit_int32(0);
+    outC->_L20[idx6].t_loa = kcg_lit_int32(0);
+    outC->_L20[idx6].l_section = kcg_lit_int32(0);
     outC->_L20[idx6].q_sectiontimer_k = Q_SECTIONTIMER_No_Section_Timer_information;
-    outC->_L20[idx6].t_sectiontimer_k = kcg_lit_int64(0);
-    outC->_L20[idx6].d_sectiontimerstoploc_k = kcg_lit_int64(0);
-    outC->_L20[idx6].l_endsection = kcg_lit_int64(0);
+    outC->_L20[idx6].t_sectiontimer_k = kcg_lit_int32(0);
+    outC->_L20[idx6].d_sectiontimerstoploc_k = kcg_lit_int32(0);
+    outC->_L20[idx6].l_endsection = kcg_lit_int32(0);
     outC->_L20[idx6].q_sectiontimer = Q_SECTIONTIMER_No_Section_Timer_information;
-    outC->_L20[idx6].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L20[idx6].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L20[idx6].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L20[idx6].d_sectiontimerstoploc = kcg_lit_int32(0);
     outC->_L20[idx6].q_endtimer = Q_ENDTIMER_No_End_section_timer_information;
-    outC->_L20[idx6].t_endtimer = kcg_lit_int64(0);
-    outC->_L20[idx6].d_endtimerstartloc = kcg_lit_int64(0);
+    outC->_L20[idx6].t_endtimer = kcg_lit_int32(0);
+    outC->_L20[idx6].d_endtimerstartloc = kcg_lit_int32(0);
     outC->_L20[idx6].q_dangerpoint = Q_DANGERPOINT_No_danger_point_information;
-    outC->_L20[idx6].d_dp = kcg_lit_int64(0);
-    outC->_L20[idx6].v_releasedp = kcg_lit_int64(0);
+    outC->_L20[idx6].d_dp = kcg_lit_int32(0);
+    outC->_L20[idx6].v_releasedp = kcg_lit_int32(0);
     outC->_L20[idx6].q_overlap = Q_OVERLAP_No_overlap_information;
-    outC->_L20[idx6].d_startol = kcg_lit_int64(0);
-    outC->_L20[idx6].t_ol = kcg_lit_int64(0);
-    outC->_L20[idx6].d_ol = kcg_lit_int64(0);
-    outC->_L20[idx6].v_releaseol = kcg_lit_int64(0);
+    outC->_L20[idx6].d_startol = kcg_lit_int32(0);
+    outC->_L20[idx6].t_ol = kcg_lit_int32(0);
+    outC->_L20[idx6].d_ol = kcg_lit_int32(0);
+    outC->_L20[idx6].v_releaseol = kcg_lit_int32(0);
   }
   outC->_L1.valid = kcg_true;
   outC->_L1.q_dir = Q_DIR_Reverse;
   outC->_L1.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L1.v_loa = kcg_lit_int64(0);
-  outC->_L1.t_loa = kcg_lit_int64(0);
-  outC->_L1.n_iter = kcg_lit_int64(0);
+  outC->_L1.v_loa = kcg_lit_int32(0);
+  outC->_L1.t_loa = kcg_lit_int32(0);
+  outC->_L1.n_iter = kcg_lit_int32(0);
   for (idx7 = 0; idx7 < 32; idx7++) {
     outC->_L1.sections[idx7].valid = kcg_true;
-    outC->_L1.sections[idx7].l_section = kcg_lit_int64(0);
+    outC->_L1.sections[idx7].l_section = kcg_lit_int32(0);
     outC->_L1.sections[idx7].q_sectiontimer =
       Q_SECTIONTIMER_No_Section_Timer_information;
-    outC->_L1.sections[idx7].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L1.sections[idx7].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L1.sections[idx7].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L1.sections[idx7].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
-  outC->_L1.l_endsection = kcg_lit_int64(0);
+  outC->_L1.l_endsection = kcg_lit_int32(0);
   outC->_L1.q_sectiontimer = Q_SECTIONTIMER_No_Section_Timer_information;
-  outC->_L1.t_sectiontimer = kcg_lit_int64(0);
-  outC->_L1.d_sectiontimerstoploc = kcg_lit_int64(0);
+  outC->_L1.t_sectiontimer = kcg_lit_int32(0);
+  outC->_L1.d_sectiontimerstoploc = kcg_lit_int32(0);
   outC->_L1.q_endtimer = Q_ENDTIMER_No_End_section_timer_information;
-  outC->_L1.t_endtimer = kcg_lit_int64(0);
-  outC->_L1.d_endtimerstartloc = kcg_lit_int64(0);
+  outC->_L1.t_endtimer = kcg_lit_int32(0);
+  outC->_L1.d_endtimerstartloc = kcg_lit_int32(0);
   outC->_L1.q_dangerpoint = Q_DANGERPOINT_No_danger_point_information;
-  outC->_L1.d_dp = kcg_lit_int64(0);
-  outC->_L1.v_releasedp = kcg_lit_int64(0);
+  outC->_L1.d_dp = kcg_lit_int32(0);
+  outC->_L1.v_releasedp = kcg_lit_int32(0);
   outC->_L1.q_overlap = Q_OVERLAP_No_overlap_information;
-  outC->_L1.d_startol = kcg_lit_int64(0);
-  outC->_L1.t_ol = kcg_lit_int64(0);
-  outC->_L1.d_ol = kcg_lit_int64(0);
-  outC->_L1.v_releaseol = kcg_lit_int64(0);
+  outC->_L1.d_startol = kcg_lit_int32(0);
+  outC->_L1.t_ol = kcg_lit_int32(0);
+  outC->_L1.d_ol = kcg_lit_int32(0);
+  outC->_L1.v_releaseol = kcg_lit_int32(0);
   for (idx8 = 0; idx8 < 5; idx8++) {
     outC->P015_legacy_out[idx8].valid = kcg_true;
     outC->P015_legacy_out[idx8].q_dir = Q_DIR_Reverse;
     outC->P015_legacy_out[idx8].q_scale = Q_SCALE_10_cm_scale;
-    outC->P015_legacy_out[idx8].v_loa = kcg_lit_int64(0);
-    outC->P015_legacy_out[idx8].t_loa = kcg_lit_int64(0);
-    outC->P015_legacy_out[idx8].l_section = kcg_lit_int64(0);
+    outC->P015_legacy_out[idx8].v_loa = kcg_lit_int32(0);
+    outC->P015_legacy_out[idx8].t_loa = kcg_lit_int32(0);
+    outC->P015_legacy_out[idx8].l_section = kcg_lit_int32(0);
     outC->P015_legacy_out[idx8].q_sectiontimer_k =
       Q_SECTIONTIMER_No_Section_Timer_information;
-    outC->P015_legacy_out[idx8].t_sectiontimer_k = kcg_lit_int64(0);
-    outC->P015_legacy_out[idx8].d_sectiontimerstoploc_k = kcg_lit_int64(0);
-    outC->P015_legacy_out[idx8].l_endsection = kcg_lit_int64(0);
+    outC->P015_legacy_out[idx8].t_sectiontimer_k = kcg_lit_int32(0);
+    outC->P015_legacy_out[idx8].d_sectiontimerstoploc_k = kcg_lit_int32(0);
+    outC->P015_legacy_out[idx8].l_endsection = kcg_lit_int32(0);
     outC->P015_legacy_out[idx8].q_sectiontimer =
       Q_SECTIONTIMER_No_Section_Timer_information;
-    outC->P015_legacy_out[idx8].t_sectiontimer = kcg_lit_int64(0);
-    outC->P015_legacy_out[idx8].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->P015_legacy_out[idx8].t_sectiontimer = kcg_lit_int32(0);
+    outC->P015_legacy_out[idx8].d_sectiontimerstoploc = kcg_lit_int32(0);
     outC->P015_legacy_out[idx8].q_endtimer =
       Q_ENDTIMER_No_End_section_timer_information;
-    outC->P015_legacy_out[idx8].t_endtimer = kcg_lit_int64(0);
-    outC->P015_legacy_out[idx8].d_endtimerstartloc = kcg_lit_int64(0);
+    outC->P015_legacy_out[idx8].t_endtimer = kcg_lit_int32(0);
+    outC->P015_legacy_out[idx8].d_endtimerstartloc = kcg_lit_int32(0);
     outC->P015_legacy_out[idx8].q_dangerpoint =
       Q_DANGERPOINT_No_danger_point_information;
-    outC->P015_legacy_out[idx8].d_dp = kcg_lit_int64(0);
-    outC->P015_legacy_out[idx8].v_releasedp = kcg_lit_int64(0);
+    outC->P015_legacy_out[idx8].d_dp = kcg_lit_int32(0);
+    outC->P015_legacy_out[idx8].v_releasedp = kcg_lit_int32(0);
     outC->P015_legacy_out[idx8].q_overlap = Q_OVERLAP_No_overlap_information;
-    outC->P015_legacy_out[idx8].d_startol = kcg_lit_int64(0);
-    outC->P015_legacy_out[idx8].t_ol = kcg_lit_int64(0);
-    outC->P015_legacy_out[idx8].d_ol = kcg_lit_int64(0);
-    outC->P015_legacy_out[idx8].v_releaseol = kcg_lit_int64(0);
+    outC->P015_legacy_out[idx8].d_startol = kcg_lit_int32(0);
+    outC->P015_legacy_out[idx8].t_ol = kcg_lit_int32(0);
+    outC->P015_legacy_out[idx8].d_ol = kcg_lit_int32(0);
+    outC->P015_legacy_out[idx8].v_releaseol = kcg_lit_int32(0);
   }
   for (idx = 0; idx < 5; idx++) {
     /* _L20=(TM_conversions::C_P015_to_legacy_loop#1)/ */

@@ -22,13 +22,13 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   GradientProfile_t_TrackAtlasTypes /* _L2/ */ _L2;
   GradientProfile_t_TrackAtlasTypes /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L4/ */ _L4;
   GradientProfile_t_TrackAtlasTypes /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
-  kcg_int64 /* _L7/ */ _L7;
+  kcg_int32 /* _L6/ */ _L6;
+  kcg_int32 /* _L7/ */ _L7;
   Gradient_section_t_TrackAtlasTypes /* _L8/ */ _L8;
   kcg_bool /* _L9/ */ _L9;
 } outC_GP_Truncate_at_BG_loop_TA_Gradient_new;
@@ -37,13 +37,13 @@ typedef struct {
 /* TA_Gradient_new::GP_Truncate_at_BG_loop/ */
 extern void GP_Truncate_at_BG_loop_TA_Gradient_new(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* Acc/ */
   GradientProfile_t_TrackAtlasTypes *Acc,
   /* Profile_in/ */
   GradientProfile_t_TrackAtlasTypes *Profile_in,
   /* Pointer/ */
-  kcg_int64 Pointer,
+  kcg_int32 Pointer,
   outC_GP_Truncate_at_BG_loop_TA_Gradient_new *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

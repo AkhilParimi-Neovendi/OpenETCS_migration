@@ -111,14 +111,14 @@ void C_P042_compr_onboard_TM_conversions(
   }
   outC->_L13_CAST_Int_to_Q_DIR_1 = outC->error_CAST_Int_to_Q_DIR_1;
   noname_CAST_Int_to_Q_DIR_1 = outC->_L13_CAST_Int_to_Q_DIR_1;
-  outC->_L5_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
+  outC->_L5_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
   outC->_L23 = outC->_L9[0];
   outC->nid_packet_int_CAST_Int_to_NID_PACKET_1 = outC->_L23;
   outC->_L1_CAST_Int_to_NID_PACKET_1 =
     outC->nid_packet_int_CAST_Int_to_NID_PACKET_1;
   outC->_L4_CAST_Int_to_NID_PACKET_1 = outC->_L1_CAST_Int_to_NID_PACKET_1 <
     outC->_L5_CAST_Int_to_NID_PACKET_1;
-  outC->_L3_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(256);
+  outC->_L3_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(256);
   outC->_L2_CAST_Int_to_NID_PACKET_1 = outC->_L1_CAST_Int_to_NID_PACKET_1 >
     outC->_L3_CAST_Int_to_NID_PACKET_1;
   noname_CAST_Int_to_NID_PACKET_1 = outC->_L2_CAST_Int_to_NID_PACKET_1;
@@ -149,7 +149,7 @@ void C_P042_compr_onboard_TM_conversions(
     &outC->Context_CAST_Int_to_NID_C_1);
   outC->_L27 = outC->Context_CAST_Int_to_NID_C_1.nid_c;
   outC->_L25 = outC->_L9[3];
-  outC->_L21 = kcg_lit_int64(42);
+  outC->_L21 = kcg_lit_int32(42);
   outC->_L12 = outC->nid_packet_CAST_Int_to_NID_PACKET_1;
   outC->_L22 = outC->_L12 == outC->_L21;
   kcg_copy_MetadataElement_T_Common_Types_Pkg(&outC->_L20, Metadata_Element);
@@ -179,43 +179,43 @@ void C_P042_compr_onboard_init_TM_conversions(
   static kcg_size idx;
 
   outC->_L33 = Q_SLEEPSESSION_Ignore_session_establishment_order;
-  outC->_L32 = kcg_lit_int64(0);
-  outC->_L31 = kcg_lit_int64(0);
-  outC->_L30 = kcg_lit_int64(0);
-  outC->_L29 = kcg_lit_int64(0);
-  outC->_L28 = kcg_lit_int64(0);
-  outC->_L27 = kcg_lit_int64(0);
-  outC->_L26 = kcg_lit_int64(0);
-  outC->_L25 = kcg_lit_int64(0);
-  outC->_L24 = kcg_lit_int64(0);
-  outC->_L23 = kcg_lit_int64(0);
+  outC->_L32 = kcg_lit_int32(0);
+  outC->_L31 = kcg_lit_int32(0);
+  outC->_L30 = kcg_lit_int32(0);
+  outC->_L29 = kcg_lit_int32(0);
+  outC->_L28 = kcg_lit_int32(0);
+  outC->_L27 = kcg_lit_int32(0);
+  outC->_L26 = kcg_lit_int32(0);
+  outC->_L25 = kcg_lit_int32(0);
+  outC->_L24 = kcg_lit_int32(0);
+  outC->_L23 = kcg_lit_int32(0);
   outC->_L22 = kcg_true;
-  outC->_L21 = kcg_lit_int64(0);
-  outC->_L20.nid_packet = kcg_lit_int64(0);
+  outC->_L21 = kcg_lit_int32(0);
+  outC->_L20.nid_packet = kcg_lit_int32(0);
   outC->_L20.q_dir = Q_DIR_Reverse;
   outC->_L20.valid = kcg_true;
-  outC->_L20.startAddress = kcg_lit_int64(0);
-  outC->_L20.endAddress = kcg_lit_int64(0);
+  outC->_L20.startAddress = kcg_lit_int32(0);
+  outC->_L20.endAddress = kcg_lit_int32(0);
   outC->_L4 = Q_RBC_Terminate_communication_session;
   for (idx = 0; idx < 500; idx++) {
-    outC->_L9[idx] = kcg_lit_int64(0);
+    outC->_L9[idx] = kcg_lit_int32(0);
   }
   outC->_L10.valid = kcg_true;
   outC->_L10.q_dir = Q_DIR_Reverse;
   outC->_L10.q_rbc = Q_RBC_Terminate_communication_session;
-  outC->_L10.nid_c = kcg_lit_int64(0);
-  outC->_L10.nid_rbc = kcg_lit_int64(0);
-  outC->_L10.nid_radio = kcg_lit_int64(0);
+  outC->_L10.nid_c = kcg_lit_int32(0);
+  outC->_L10.nid_rbc = kcg_lit_int32(0);
+  outC->_L10.nid_radio = kcg_lit_int32(0);
   outC->_L10.q_sleepsession = Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L11 = Q_DIR_Reverse;
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L1_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
-  outC->_L5_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L1_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
+  outC->_L5_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
   outC->_L4_CAST_Int_to_NID_PACKET_1 = kcg_true;
-  outC->_L3_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
+  outC->_L3_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
   outC->_L2_CAST_Int_to_NID_PACKET_1 = kcg_true;
-  outC->nid_packet_int_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
-  outC->nid_packet_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
+  outC->nid_packet_int_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
+  outC->nid_packet_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
   outC->_L5_CAST_Int_to_Q_DIR_1_then_IfBlock1 = kcg_true;
   outC->_L4_CAST_Int_to_Q_DIR_1_then_IfBlock1 = Q_DIR_Reverse;
   outC->else_clock_CAST_Int_to_Q_DIR_1_IfBlock1 = kcg_true;
@@ -228,17 +228,17 @@ void C_P042_compr_onboard_init_TM_conversions(
   outC->_L5_CAST_Int_to_Q_DIR_1_then_else_IfBlock1 = kcg_true;
   outC->IfBlock1_clock_CAST_Int_to_Q_DIR_1 = kcg_true;
   outC->error_CAST_Int_to_Q_DIR_1 = kcg_true;
-  outC->q_dir_in_CAST_Int_to_Q_DIR_1 = kcg_lit_int64(0);
+  outC->q_dir_in_CAST_Int_to_Q_DIR_1 = kcg_lit_int32(0);
   outC->_L13_CAST_Int_to_Q_DIR_1 = kcg_true;
-  outC->_L12_CAST_Int_to_Q_DIR_1 = kcg_lit_int64(0);
-  outC->q_dir_int_CAST_Int_to_Q_DIR_1 = kcg_lit_int64(0);
+  outC->_L12_CAST_Int_to_Q_DIR_1 = kcg_lit_int32(0);
+  outC->q_dir_int_CAST_Int_to_Q_DIR_1 = kcg_lit_int32(0);
   outC->q_dir_CAST_Int_to_Q_DIR_1 = Q_DIR_Reverse;
   outC->P131_onboard.valid = kcg_true;
   outC->P131_onboard.q_dir = Q_DIR_Reverse;
   outC->P131_onboard.q_rbc = Q_RBC_Terminate_communication_session;
-  outC->P131_onboard.nid_c = kcg_lit_int64(0);
-  outC->P131_onboard.nid_rbc = kcg_lit_int64(0);
-  outC->P131_onboard.nid_radio = kcg_lit_int64(0);
+  outC->P131_onboard.nid_c = kcg_lit_int32(0);
+  outC->P131_onboard.nid_rbc = kcg_lit_int32(0);
+  outC->P131_onboard.nid_radio = kcg_lit_int32(0);
   outC->P131_onboard.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   /* _L4=(TM_conversions::CAST_Int_to_Q_RBC#1)/ */

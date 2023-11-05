@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _Merg2MetaData_CheckBGConsistency_Pkg_SubFunction_MergFunction_H_
 #define _Merg2MetaData_CheckBGConsistency_Pkg_SubFunction_MergFunction_H_
@@ -28,12 +28,12 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   Metadata_T_Common_Types_Pkg /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
   MetadataElement_T_Common_Types_Pkg /* IfBlock1:else:_L26/ */ _L26_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:_L20/ */ _L20_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:_L20/ */ _L20_else_IfBlock1;
   MetadataElement_T_Common_Types_Pkg /* IfBlock1:else:_L11/ */ _L11_else_IfBlock1;
   Metadata_T_Common_Types_Pkg /* IfBlock1:else:_L12/ */ _L12_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:_L13/ */ _L13_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:_L13/ */ _L13_else_IfBlock1;
   Metadata_T_Common_Types_Pkg /* IfBlock1:else:_L14/ */ _L14_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:_L15/ */ _L15_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:_L15/ */ _L15_else_IfBlock1;
   Metadata_T_Common_Types_Pkg /* IfBlock1:else:_L16/ */ _L16_else_IfBlock1;
   MetadataElement_T_Common_Types_Pkg /* IfBlock1:else:_L18/ */ _L18_else_IfBlock1;
   Metadata_T_Common_Types_Pkg /* IfBlock1:else:_L19/ */ _L19_else_IfBlock1;
@@ -55,7 +55,7 @@ typedef struct {
 /* CheckBGConsistency_Pkg::SubFunction::MergFunction::Merg2MetaData/ */
 extern void Merg2MetaData_CheckBGConsistency_Pkg_SubFunction_MergFunction(
   /* ind/ */
-  kcg_int64 ind,
+  kcg_int32 ind,
   /* acc/ */
   Metadata_T_Common_Types_Pkg *acc,
   /* metadata_in/ */
@@ -77,6 +77,6 @@ extern void Merg2MetaData_init_CheckBGConsistency_Pkg_SubFunction_MergFunction(
 #endif /* _Merg2MetaData_CheckBGConsistency_Pkg_SubFunction_MergFunction_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Merg2MetaData_CheckBGConsistency_Pkg_SubFunction_MergFunction.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

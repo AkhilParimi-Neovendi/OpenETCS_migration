@@ -24,12 +24,12 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   MetadataElement_T_Common_Types_Pkg /* _L4/ */ _L4;
   NID_PACKET /* _L27/ */ _L27;
   kcg_bool /* _L29/ */ _L29;
   MetadataElement_T_Common_Types_Pkg /* _L30/ */ _L30;
-  kcg_int64 /* _L31/ */ _L31;
+  kcg_int32 /* _L31/ */ _L31;
   kcg_bool /* _L32/ */ _L32;
   kcg_bool /* _L33/ */ _L33;
   kcg_bool /* _L34/ */ _L34;
@@ -39,13 +39,13 @@ typedef struct {
 /* TM_lib_internal::RECV_LookupPacketLoop/ */
 extern void RECV_LookupPacketLoop_TM_lib_internal(
   /* Index/ */
-  kcg_int64 Index,
+  kcg_int32 Index,
   /* HeaderInit/ */
   MetadataElement_T_Common_Types_Pkg *HeaderInit,
   /* Message_in/ */
   MetadataElement_T_Common_Types_Pkg *Message_in,
   /* ID_in/ */
-  kcg_int64 ID_in,
+  kcg_int32 ID_in,
   /* F_version/ */
   kcg_bool F_version,
   /* F_id/ */

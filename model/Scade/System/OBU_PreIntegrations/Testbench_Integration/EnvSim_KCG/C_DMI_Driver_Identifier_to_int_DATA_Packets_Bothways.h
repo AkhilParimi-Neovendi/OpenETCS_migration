@@ -25,14 +25,14 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  array_int64_2 /* _L2/ */ _L2;
+  array_int32_2 /* _L2/ */ _L2;
   kcg_bool /* _L5/ */ _L5;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L4/ */ _L4;
   driverIdentifier_T_DMI_Messages_Bothways_Pkg /* _L3/ */ _L3;
   DMI_Driver_Identifier_T_DMI_Messages_Bothways_Pkg /* _L13/ */ _L13;
   DriverIdentifier_INT_T_DATA /* _L15/ */ _L15;
-  array_int64_11 /* _L16/ */ _L16;
-  kcg_int64 /* _L20/ */ _L20;
+  array_int32_11 /* _L16/ */ _L16;
+  kcg_int32 /* _L20/ */ _L20;
 } outC_C_DMI_Driver_Identifier_to_int_DATA_Packets_Bothways;
 
 /* ===========  node initialization and cycle functions  =========== */

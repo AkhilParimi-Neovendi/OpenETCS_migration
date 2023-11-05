@@ -54,17 +54,17 @@ void Write_DMI_Text_Message_to_int_init_DATA_Packets_EVC_to_DMI(
   static kcg_size idx3;
 
   for (idx = 0; idx < 262; idx++) {
-    outC->_L20[idx] = kcg_lit_int64(0);
+    outC->_L20[idx] = kcg_lit_int32(0);
   }
   outC->_L19 = kcg_true;
   for (idx1 = 0; idx1 < 262; idx1++) {
-    outC->_L18[idx1] = kcg_lit_int64(0);
+    outC->_L18[idx1] = kcg_lit_int32(0);
   }
   outC->_L1.valid = kcg_true;
-  outC->_L1.system_clock = kcg_lit_int64(0);
-  outC->_L1.textMessage_ID = kcg_lit_int64(0);
+  outC->_L1.system_clock = kcg_lit_int32(0);
+  outC->_L1.textMessage_ID = kcg_lit_int32(0);
   outC->_L1.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L1.l_text = kcg_lit_int64(0);
+  outC->_L1.l_text = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 255; idx2++) {
     outC->_L1.x_text[idx2] = ' ';
   }
@@ -72,7 +72,7 @@ void Write_DMI_Text_Message_to_int_init_DATA_Packets_EVC_to_DMI(
   outC->_L1.q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   outC->every = kcg_true;
   for (idx3 = 0; idx3 < 262; idx3++) {
-    outC->dmi_text_message_int[idx3] = kcg_lit_int64(0);
+    outC->dmi_text_message_int[idx3] = kcg_lit_int32(0);
   }
   /* _L18=(DATA::Packets::EVC_to_DMI::CAST_DMI_Text_Message_to_int1#1)/ */
   CAST_DMI_Text_Message_to_int1_init_DATA_Packets_EVC_to_DMI(

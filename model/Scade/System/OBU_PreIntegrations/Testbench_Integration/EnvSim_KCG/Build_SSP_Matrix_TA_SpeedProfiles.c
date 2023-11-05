@@ -85,58 +85,58 @@ void Build_SSP_Matrix_init_TA_SpeedProfiles(
   outC->_L13 = kcg_true;
   for (idx1 = 0; idx1 < 11; idx1++) {
     for (idx = 0; idx < 50; idx++) {
-      outC->_L12[idx1][idx].target = kcg_lit_int64(0);
-      outC->_L12[idx1][idx].speed = kcg_lit_int64(0);
+      outC->_L12[idx1][idx].target = kcg_lit_int32(0);
+      outC->_L12[idx1][idx].speed = kcg_lit_int32(0);
     }
   }
   for (idx2 = 0; idx2 < 50; idx2++) {
-    outC->_L11[idx2].target = kcg_lit_int64(0);
-    outC->_L11[idx2].speed = kcg_lit_int64(0);
+    outC->_L11[idx2].target = kcg_lit_int32(0);
+    outC->_L11[idx2].speed = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 50; idx3++) {
-    outC->_L10[idx3].target = kcg_lit_int64(0);
-    outC->_L10[idx3].speed = kcg_lit_int64(0);
+    outC->_L10[idx3].target = kcg_lit_int32(0);
+    outC->_L10[idx3].speed = kcg_lit_int32(0);
   }
   for (idx4 = 0; idx4 < 50; idx4++) {
-    outC->_L9[idx4].target = kcg_lit_int64(0);
-    outC->_L9[idx4].speed = kcg_lit_int64(0);
+    outC->_L9[idx4].target = kcg_lit_int32(0);
+    outC->_L9[idx4].speed = kcg_lit_int32(0);
   }
   for (idx5 = 0; idx5 < 50; idx5++) {
-    outC->_L8[idx5].target = kcg_lit_int64(0);
-    outC->_L8[idx5].speed = kcg_lit_int64(0);
+    outC->_L8[idx5].target = kcg_lit_int32(0);
+    outC->_L8[idx5].speed = kcg_lit_int32(0);
   }
   for (idx6 = 0; idx6 < 50; idx6++) {
-    outC->_L7[idx6].target = kcg_lit_int64(0);
-    outC->_L7[idx6].speed = kcg_lit_int64(0);
+    outC->_L7[idx6].target = kcg_lit_int32(0);
+    outC->_L7[idx6].speed = kcg_lit_int32(0);
   }
   for (idx7 = 0; idx7 < 50; idx7++) {
-    outC->_L6[idx7].target = kcg_lit_int64(0);
-    outC->_L6[idx7].speed = kcg_lit_int64(0);
+    outC->_L6[idx7].target = kcg_lit_int32(0);
+    outC->_L6[idx7].speed = kcg_lit_int32(0);
   }
   for (idx8 = 0; idx8 < 50; idx8++) {
-    outC->_L5[idx8].target = kcg_lit_int64(0);
-    outC->_L5[idx8].speed = kcg_lit_int64(0);
+    outC->_L5[idx8].target = kcg_lit_int32(0);
+    outC->_L5[idx8].speed = kcg_lit_int32(0);
   }
   for (idx9 = 0; idx9 < 50; idx9++) {
-    outC->_L4[idx9].target = kcg_lit_int64(0);
-    outC->_L4[idx9].speed = kcg_lit_int64(0);
+    outC->_L4[idx9].target = kcg_lit_int32(0);
+    outC->_L4[idx9].speed = kcg_lit_int32(0);
   }
   for (idx10 = 0; idx10 < 50; idx10++) {
-    outC->_L3[idx10].target = kcg_lit_int64(0);
-    outC->_L3[idx10].speed = kcg_lit_int64(0);
+    outC->_L3[idx10].target = kcg_lit_int32(0);
+    outC->_L3[idx10].speed = kcg_lit_int32(0);
   }
   for (idx11 = 0; idx11 < 50; idx11++) {
-    outC->_L2[idx11].target = kcg_lit_int64(0);
-    outC->_L2[idx11].speed = kcg_lit_int64(0);
+    outC->_L2[idx11].target = kcg_lit_int32(0);
+    outC->_L2[idx11].speed = kcg_lit_int32(0);
   }
   for (idx12 = 0; idx12 < 50; idx12++) {
-    outC->_L1[idx12].target = kcg_lit_int64(0);
-    outC->_L1[idx12].speed = kcg_lit_int64(0);
+    outC->_L1[idx12].target = kcg_lit_int32(0);
+    outC->_L1[idx12].speed = kcg_lit_int32(0);
   }
   for (idx14 = 0; idx14 < 11; idx14++) {
     for (idx13 = 0; idx13 < 50; idx13++) {
-      outC->SSP_matrix_out[idx14][idx13].target = kcg_lit_int64(0);
-      outC->SSP_matrix_out[idx14][idx13].speed = kcg_lit_int64(0);
+      outC->SSP_matrix_out[idx14][idx13].target = kcg_lit_int32(0);
+      outC->SSP_matrix_out[idx14][idx13].speed = kcg_lit_int32(0);
     }
   }
   outC->SSP_matrix_updated = kcg_true;

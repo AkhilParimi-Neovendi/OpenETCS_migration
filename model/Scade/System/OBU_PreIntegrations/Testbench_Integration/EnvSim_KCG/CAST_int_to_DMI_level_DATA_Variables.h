@@ -23,8 +23,8 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L17/ */ _L17;
-  kcg_int64 /* _L18/ */ _L18;
+  kcg_int32 /* _L17/ */ _L17;
+  kcg_int32 /* _L18/ */ _L18;
   DMI_level_T_DMI_Types_Pkg /* _L19/ */ _L19;
   M_LEVEL /* _L20/ */ _L20;
 } outC_CAST_int_to_DMI_level_DATA_Variables;
@@ -33,9 +33,9 @@ typedef struct {
 /* DATA::Variables::CAST_int_to_DMI_level/ */
 extern void CAST_int_to_DMI_level_DATA_Variables(
   /* level_int/ */
-  kcg_int64 level_int,
+  kcg_int32 level_int,
   /* nid_stm_int/ */
-  kcg_int64 nid_stm_int,
+  kcg_int32 nid_stm_int,
   outC_CAST_int_to_DMI_level_DATA_Variables *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

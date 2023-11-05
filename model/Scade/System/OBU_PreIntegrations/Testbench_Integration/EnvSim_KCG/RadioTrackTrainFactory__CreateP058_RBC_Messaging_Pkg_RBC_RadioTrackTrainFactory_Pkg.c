@@ -56,41 +56,41 @@ void RadioTrackTrainFactory__CreateP058_init_RBC_Messaging_Pkg_RBC_RadioTrackTra
   static kcg_size idx1;
   static kcg_size idx2;
 
-  outC->_L19 = kcg_lit_int64(0);
+  outC->_L19 = kcg_lit_int32(0);
   for (idx = 0; idx < 32; idx++) {
-    outC->_L18[idx].d_loc = kcg_lit_int64(0);
+    outC->_L18[idx].d_loc = kcg_lit_int32(0);
     outC->_L18[idx].q_lgtloc = Q_LGTLOC_Min_safe_rear_end;
   }
-  outC->_L17 = kcg_lit_int64(0);
+  outC->_L17 = kcg_lit_int32(0);
   outC->_L16 = M_LOC_Now;
-  outC->_L15 = kcg_lit_int64(0);
+  outC->_L15 = kcg_lit_int32(0);
   outC->_L14 = Q_SCALE_10_cm_scale;
   outC->_L13 = Q_DIR_Reverse;
   outC->_L12.valid = kcg_true;
-  outC->_L12.NID_PACKET = kcg_lit_int64(0);
-  outC->_L12.Q_DIR = kcg_lit_int64(0);
-  outC->_L12.L_PACKET = kcg_lit_int64(0);
-  outC->_L12.Q_SCALE = kcg_lit_int64(0);
-  outC->_L12.T_CYCLOC = kcg_lit_int64(0);
-  outC->_L12.D_CYCLOC = kcg_lit_int64(0);
-  outC->_L12.M_LOC = kcg_lit_int64(0);
-  outC->_L12.N_ITER = kcg_lit_int64(0);
+  outC->_L12.NID_PACKET = kcg_lit_int32(0);
+  outC->_L12.Q_DIR = kcg_lit_int32(0);
+  outC->_L12.L_PACKET = kcg_lit_int32(0);
+  outC->_L12.Q_SCALE = kcg_lit_int32(0);
+  outC->_L12.T_CYCLOC = kcg_lit_int32(0);
+  outC->_L12.D_CYCLOC = kcg_lit_int32(0);
+  outC->_L12.M_LOC = kcg_lit_int32(0);
+  outC->_L12.N_ITER = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 32; idx1++) {
-    outC->_L12.SECTIONS[idx1].D_LOC = kcg_lit_int64(0);
-    outC->_L12.SECTIONS[idx1].Q_LGTLOC = kcg_lit_int64(0);
+    outC->_L12.SECTIONS[idx1].D_LOC = kcg_lit_int32(0);
+    outC->_L12.SECTIONS[idx1].Q_LGTLOC = kcg_lit_int32(0);
   }
   outC->outRadioTrackTrainPacket.valid = kcg_true;
-  outC->outRadioTrackTrainPacket.NID_PACKET = kcg_lit_int64(0);
-  outC->outRadioTrackTrainPacket.Q_DIR = kcg_lit_int64(0);
-  outC->outRadioTrackTrainPacket.L_PACKET = kcg_lit_int64(0);
-  outC->outRadioTrackTrainPacket.Q_SCALE = kcg_lit_int64(0);
-  outC->outRadioTrackTrainPacket.T_CYCLOC = kcg_lit_int64(0);
-  outC->outRadioTrackTrainPacket.D_CYCLOC = kcg_lit_int64(0);
-  outC->outRadioTrackTrainPacket.M_LOC = kcg_lit_int64(0);
-  outC->outRadioTrackTrainPacket.N_ITER = kcg_lit_int64(0);
+  outC->outRadioTrackTrainPacket.NID_PACKET = kcg_lit_int32(0);
+  outC->outRadioTrackTrainPacket.Q_DIR = kcg_lit_int32(0);
+  outC->outRadioTrackTrainPacket.L_PACKET = kcg_lit_int32(0);
+  outC->outRadioTrackTrainPacket.Q_SCALE = kcg_lit_int32(0);
+  outC->outRadioTrackTrainPacket.T_CYCLOC = kcg_lit_int32(0);
+  outC->outRadioTrackTrainPacket.D_CYCLOC = kcg_lit_int32(0);
+  outC->outRadioTrackTrainPacket.M_LOC = kcg_lit_int32(0);
+  outC->outRadioTrackTrainPacket.N_ITER = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 32; idx2++) {
-    outC->outRadioTrackTrainPacket.SECTIONS[idx2].D_LOC = kcg_lit_int64(0);
-    outC->outRadioTrackTrainPacket.SECTIONS[idx2].Q_LGTLOC = kcg_lit_int64(0);
+    outC->outRadioTrackTrainPacket.SECTIONS[idx2].D_LOC = kcg_lit_int32(0);
+    outC->outRadioTrackTrainPacket.SECTIONS[idx2].Q_LGTLOC = kcg_lit_int32(0);
   }
   /* _L12=(RBC_Messaging_Pkg::RBC_RadioTrackTrain_Pkg::RBC_RadioTrackTrainPacket058_Pkg::RadioTrackTrainPacket058__Create#1)/ */
   RadioTrackTrainPacket058__Create_init_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg_RBC_RadioTrackTrainP(

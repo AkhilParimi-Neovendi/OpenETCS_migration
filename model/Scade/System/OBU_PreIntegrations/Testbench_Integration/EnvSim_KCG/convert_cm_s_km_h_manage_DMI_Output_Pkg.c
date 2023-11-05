@@ -14,12 +14,12 @@ void convert_cm_s_km_h_manage_DMI_Output_Pkg(
   outC_convert_cm_s_km_h_manage_DMI_Output_Pkg *outC)
 {
   outC->_L10 = cm_s;
-  outC->_L6 = kcg_lit_int64(1000);
-  outC->_L4 = kcg_lit_int64(36);
+  outC->_L6 = kcg_lit_int32(1000);
+  outC->_L4 = kcg_lit_int32(36);
   outC->_L1 = cm_s;
   outC->_L3 = outC->_L1 * outC->_L4;
   outC->_L5 = outC->_L3 / outC->_L6;
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L8 = kcg_lit_int32(0);
   outC->_L7 = outC->_L1 >= outC->_L8;
   /* _L9= */
   if (outC->_L7) {
@@ -35,16 +35,16 @@ void convert_cm_s_km_h_manage_DMI_Output_Pkg(
 void convert_cm_s_km_h_init_manage_DMI_Output_Pkg(
   outC_convert_cm_s_km_h_manage_DMI_Output_Pkg *outC)
 {
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
   outC->_L7 = kcg_true;
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->km_h = kcg_lit_int64(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->km_h = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

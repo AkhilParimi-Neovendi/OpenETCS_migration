@@ -34,7 +34,7 @@ typedef struct {
   kcg_bool /* _L9/ */ _L9;
   ASafe_T_CalcBrakingCurves_types /* _L10/ */ _L10;
   A_internal_Type_Obu_BasicTypes_Pkg /* _L24/ */ _L24;
-  array_int64_14 /* _L23/ */ _L23;
+  array_int32_14 /* _L23/ */ _L23;
   ASafe_Data_T_CalcBrakingCurves_types /* _L30/ */ _L30;
   ASafeSpeedDefinition_T_CalcBrakingCurves_types /* _L29/ */ _L29;
   ASafeDistanceDefinition_T_CalcBrakingCurves_types /* _L28/ */ _L28;

@@ -24,17 +24,17 @@ typedef struct {
   Q_SCALE /* _L1/ */ _L1;
   D_LINK /* _L2/ */ _L2;
   Q_LOCACC /* _L3/ */ _L3;
-  kcg_int64 /* _L7/ */ _L7;
+  kcg_int32 /* _L7/ */ _L7;
   Location_T_Obu_BasicTypes_Pkg /* _L8/ */ _L8;
   Location_T_Obu_BasicTypes_Pkg /* _L9/ */ _L9;
   Location_T_Obu_BasicTypes_Pkg /* _L10/ */ _L10;
   Location_T_Obu_BasicTypes_Pkg /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
-  kcg_int64 /* _L13/ */ _L13;
-  kcg_int64 /* _L14/ */ _L14;
-  kcg_int64 /* _L15/ */ _L15;
+  kcg_int32 /* _L12/ */ _L12;
+  kcg_int32 /* _L13/ */ _L13;
+  kcg_int32 /* _L14/ */ _L14;
+  kcg_int32 /* _L15/ */ _L15;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L22/ */ _L22;
-  kcg_int64 /* _L25/ */ _L25;
+  kcg_int32 /* _L25/ */ _L25;
 } outC_scaledDLINK_2_dlink_BasicLocationFunctions_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

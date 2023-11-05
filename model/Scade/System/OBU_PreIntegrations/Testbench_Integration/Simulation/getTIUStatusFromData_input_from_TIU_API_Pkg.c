@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -116,46 +116,46 @@ void getTIUStatusFromData_init_input_from_TIU_API_Pkg(
   outC->_L1.brake_status.m_additionalbrake_st =
     brake_status_not_defined_TIU_Types_Pkg;
   outC->_L1.brake_pressure.valid = kcg_true;
-  outC->_L1.brake_pressure.pressure = kcg_lit_int64(0);
+  outC->_L1.brake_pressure.pressure = kcg_lit_int32(0);
   outC->_L1.train_data_entry_type = fixed_entry_type_TIU_Types_Pkg;
   outC->_L1.train_data_info.valid = kcg_true;
   outC->_L1.train_data_info.acknowledgedByDriver = kcg_true;
   outC->_L1.train_data_info.trainCategory =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->_L1.train_data_info.cantDeficientcy = NC_CDTRAIN_Cant_Deficiency_80_mm;
-  outC->_L1.train_data_info.trainLength = kcg_lit_int64(0);
-  outC->_L1.train_data_info.brakePerctage = kcg_lit_int64(0);
-  outC->_L1.train_data_info.maxTrainSpeed = kcg_lit_int64(0);
+  outC->_L1.train_data_info.trainLength = kcg_lit_int32(0);
+  outC->_L1.train_data_info.brakePerctage = kcg_lit_int32(0);
+  outC->_L1.train_data_info.maxTrainSpeed = kcg_lit_int32(0);
   outC->_L1.train_data_info.loadingGauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L1.train_data_info.axleLoadCategory = M_AXLELOADCAT_A;
   outC->_L1.train_data_info.airtightSystem = M_AIRTIGHT_Not_fitted;
-  outC->_L1.train_data_info.axleNumber = kcg_lit_int64(0);
-  outC->_L1.train_data_info.numberNationalSystems = kcg_lit_int64(0);
+  outC->_L1.train_data_info.axleNumber = kcg_lit_int32(0);
+  outC->_L1.train_data_info.numberNationalSystems = kcg_lit_int32(0);
   for (idx = 0; idx < 5; idx++) {
-    outC->_L1.train_data_info.nationSystems[idx] = kcg_lit_int64(0);
+    outC->_L1.train_data_info.nationSystems[idx] = kcg_lit_int32(0);
   }
-  outC->_L1.train_data_info.numberTractionSystems = kcg_lit_int64(0);
+  outC->_L1.train_data_info.numberTractionSystems = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 4; idx1++) {
     outC->_L1.train_data_info.tractionSystem[idx1].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->_L1.train_data_info.tractionSystem[idx1].nid_ctraction = kcg_lit_int64(0);
+    outC->_L1.train_data_info.tractionSystem[idx1].nid_ctraction = kcg_lit_int32(0);
   }
   outC->_L1.type_I_train_and_brake_inhibition.valid = kcg_true;
   outC->_L1.type_I_train_and_brake_inhibition.nothing_to_resume_profile_follow.d_test_trackcond.now =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.type_I_train_and_brake_inhibition.nothing_to_resume_profile_follow.d_test_trackcond.distance =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.type_I_train_and_brake_inhibition.nothing_to_resume_profile_follow.l_test_trackcond.now =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.type_I_train_and_brake_inhibition.nothing_to_resume_profile_follow.l_test_trackcond.distance =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.type_I_train_and_brake_inhibition.nothing_to_resume_profile_follow.m_trackcond =
     non_stopping_area_TIU_Types_Pkg;
   outC->_L1.type_I_train_and_brake_inhibition.empty_profile_initial_state_to_be_resumed.now =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.type_I_train_and_brake_inhibition.empty_profile_initial_state_to_be_resumed.distance =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->isB = kcg_true;
   outC->isA = kcg_true;
   outC->outStatus.valid = kcg_true;
@@ -177,6 +177,6 @@ void getTIUStatusFromData_reset_input_from_TIU_API_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** getTIUStatusFromData_input_from_TIU_API_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

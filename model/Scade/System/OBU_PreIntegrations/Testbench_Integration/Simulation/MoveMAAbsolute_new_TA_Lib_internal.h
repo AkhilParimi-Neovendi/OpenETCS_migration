@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _MoveMAAbsolute_new_TA_Lib_internal_H_
 #define _MoveMAAbsolute_new_TA_Lib_internal_H_
@@ -30,7 +30,7 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   MovementAuthoritySectionlist_t_TrackAtlasTypes /* _L4/ */ _L4;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L37/ */ _L37;
-  array_int64_10 /* _L40/ */ _L40;
+  array_int32_10 /* _L40/ */ _L40;
   MovementAuthoritySectionlist_t_TrackAtlasTypes /* _L72/ */ _L72;
   MovementAuthority_t_TrackAtlasTypes /* _L103/ */ _L103;
   MovementAuthority_t_TrackAtlasTypes /* _L101/ */ _L101;
@@ -70,6 +70,6 @@ extern void MoveMAAbsolute_new_init_TA_Lib_internal(
 #endif /* _MoveMAAbsolute_new_TA_Lib_internal_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** MoveMAAbsolute_new_TA_Lib_internal.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

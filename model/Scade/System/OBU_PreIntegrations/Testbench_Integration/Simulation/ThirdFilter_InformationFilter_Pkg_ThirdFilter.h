@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _ThirdFilter_InformationFilter_Pkg_ThirdFilter_H_
 #define _ThirdFilter_InformationFilter_Pkg_ThirdFilter_H_
@@ -36,11 +36,11 @@ typedef struct {
   RBC_Id_T_Common_Types_Pkg /* sendingRBC/ */ sendingRBC;
   DMI_Available_Menu_int_T_DATA /* _L10/ */ _L10;
   ReceivedMessage_T_Common_Types_Pkg /* _L11/ */ _L11;
-  array_int64_30 /* _L12/ */ _L12;
+  array_int32_30 /* _L12/ */ _L12;
   Metadata_T_Common_Types_Pkg /* _L13/ */ _L13;
   kcg_bool /* _L18/ */ _L18;
   ReceivedMessage_T_Common_Types_Pkg /* _L22/ */ _L22;
-  _57_array /* _L23/ */ _L23;
+  _78_array /* _L23/ */ _L23;
   M_MODE /* _L24/ */ _L24;
   kcg_bool /* _L25/ */ _L25;
   MsgSource_T_Common_Types_Pkg /* _L26/ */ _L26;
@@ -83,6 +83,6 @@ extern void ThirdFilter_init_InformationFilter_Pkg_ThirdFilter(
 #endif /* _ThirdFilter_InformationFilter_Pkg_ThirdFilter_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ThirdFilter_InformationFilter_Pkg_ThirdFilter.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

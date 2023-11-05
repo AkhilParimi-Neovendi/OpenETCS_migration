@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _DMI_menu_req_To_ButtonEnabler_DMI_Control_Pkg_Sub_func_MenuRequest_H_
 #define _DMI_menu_req_To_ButtonEnabler_DMI_Control_Pkg_Sub_func_MenuRequest_H_
@@ -15,7 +15,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  array_int64_30 /* ButtonEnabler/ */ ButtonEnabler;
+  array_int32_30 /* ButtonEnabler/ */ ButtonEnabler;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -56,7 +56,7 @@ typedef struct {
   kcg_bool /* _L31/ */ _L31;
   kcg_bool /* _L32/ */ _L32;
   DMI_Available_Menu_int_T_DATA /* _L36/ */ _L36;
-  array_int64_30 /* _L37/ */ _L37;
+  array_int32_30 /* _L37/ */ _L37;
 } outC_DMI_menu_req_To_ButtonEnabler_DMI_Control_Pkg_Sub_func_MenuRequest;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -81,6 +81,6 @@ extern void DMI_menu_req_To_ButtonEnabler_init_DMI_Control_Pkg_Sub_func_MenuRequ
 #endif /* _DMI_menu_req_To_ButtonEnabler_DMI_Control_Pkg_Sub_func_MenuRequest_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** DMI_menu_req_To_ButtonEnabler_DMI_Control_Pkg_Sub_func_MenuRequest.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

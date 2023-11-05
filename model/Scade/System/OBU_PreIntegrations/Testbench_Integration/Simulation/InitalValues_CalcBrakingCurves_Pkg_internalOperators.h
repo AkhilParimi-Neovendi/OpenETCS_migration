@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _InitalValues_CalcBrakingCurves_Pkg_internalOperators_H_
 #define _InitalValues_CalcBrakingCurves_Pkg_internalOperators_H_
@@ -43,7 +43,7 @@ typedef struct {
   L_internal_real_Type_SDM_Types_Pkg /* _L148/ */ _L148;
   Target_real_T_TargetManagement_types /* _L149/ */ _L149;
   L_internal_real_Type_SDM_Types_Pkg /* _L150/ */ _L150;
-  kcg_float64 /* _L151/ */ _L151;
+  kcg_float32 /* _L151/ */ _L151;
 } outC_InitalValues_CalcBrakingCurves_Pkg_internalOperators;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -70,6 +70,6 @@ extern void InitalValues_init_CalcBrakingCurves_Pkg_internalOperators(
 #endif /* _InitalValues_CalcBrakingCurves_Pkg_internalOperators_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** InitalValues_CalcBrakingCurves_Pkg_internalOperators.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

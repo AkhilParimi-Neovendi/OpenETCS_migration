@@ -22,17 +22,17 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   NID_LRBG /* _L6/ */ _L6;
-  kcg_int64 /* _L7/ */ _L7;
-  kcg_int64 /* _L9/ */ _L9;
+  kcg_int32 /* _L7/ */ _L7;
+  kcg_int32 /* _L9/ */ _L9;
   NID_BG /* _L10/ */ _L10;
   kcg_bool /* _L11/ */ _L11;
   kcg_bool /* _L12/ */ _L12;
   kcg_bool /* _L13/ */ _L13;
   NID_LRBG /* _L17/ */ _L17;
-  kcg_int64 /* _L21/ */ _L21;
-  kcg_int64 /* _L22/ */ _L22;
+  kcg_int32 /* _L21/ */ _L21;
+  kcg_int32 /* _L22/ */ _L22;
 } outC_NIDLRBG_2_nidC_nidBG_CalculateTrainPosition_Pkg_BG_utilities_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

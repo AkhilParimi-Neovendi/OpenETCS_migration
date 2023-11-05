@@ -102,7 +102,7 @@ void compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy(
     &outC->Context_CAST_NID_MESSAGE_to_int_1);
   outC->_L33 = outC->Context_CAST_NID_MESSAGE_to_int_1.nid_message_int;
   outC->nid_message = outC->_L33;
-  outC->IfBlock2_clock = outC->nid_message == kcg_lit_int64(28);
+  outC->IfBlock2_clock = outC->nid_message == kcg_lit_int32(28);
   /* IfBlock2: */
   if (outC->IfBlock2_clock) {
     kcg_copy_M_TrackTrain_Radio_T_TM_radio_messages(
@@ -130,7 +130,7 @@ void compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy(
       &header_sheet2_partial);
   }
   else {
-    outC->else_clock_IfBlock2 = outC->nid_message == kcg_lit_int64(32);
+    outC->else_clock_IfBlock2 = outC->nid_message == kcg_lit_int32(32);
     /* IfBlock2:else: */
     if (outC->else_clock_IfBlock2) {
       kcg_copy_M_TrackTrain_Radio_T_TM_radio_messages(
@@ -158,7 +158,7 @@ void compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy(
         &_19_header_sheet2_partial);
     }
     else {
-      outC->else_clock_else_IfBlock2 = outC->nid_message == kcg_lit_int64(33);
+      outC->else_clock_else_IfBlock2 = outC->nid_message == kcg_lit_int32(33);
       /* IfBlock2:else:else: */
       if (outC->else_clock_else_IfBlock2) {
         kcg_copy_M_TrackTrain_Radio_T_TM_radio_messages(
@@ -186,7 +186,7 @@ void compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy(
           &_2_header_sheet2_partial);
       }
       else {
-        outC->else_clock_else_else_IfBlock2 = outC->nid_message == kcg_lit_int64(34);
+        outC->else_clock_else_else_IfBlock2 = outC->nid_message == kcg_lit_int32(34);
         /* IfBlock2:else:else:else: */
         if (outC->else_clock_else_else_IfBlock2) {
           kcg_copy_M_TrackTrain_Radio_T_TM_radio_messages(
@@ -215,7 +215,7 @@ void compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy(
         }
         else {
           outC->else_clock_else_else_else_IfBlock2 = outC->nid_message ==
-            kcg_lit_int64(38);
+            kcg_lit_int32(38);
           /* IfBlock2:else:else:else:else: */
           if (outC->else_clock_else_else_else_IfBlock2) {
             kcg_copy_M_TrackTrain_Radio_T_TM_radio_messages(
@@ -244,7 +244,7 @@ void compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy(
           }
           else {
             outC->else_clock_else_else_else_else_IfBlock2 = outC->nid_message ==
-              kcg_lit_int64(39);
+              kcg_lit_int32(39);
             /* IfBlock2:else:else:else:else:else: */
             if (outC->else_clock_else_else_else_else_IfBlock2) {
               kcg_copy_M_TrackTrain_Radio_T_TM_radio_messages(
@@ -273,7 +273,7 @@ void compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy(
             }
             else {
               outC->else_clock_else_else_else_else_else_IfBlock2 =
-                outC->nid_message == kcg_lit_int64(40);
+                outC->nid_message == kcg_lit_int32(40);
               /* IfBlock2:else:else:else:else:else:else: */
               if (outC->else_clock_else_else_else_else_else_IfBlock2) {
                 kcg_copy_M_TrackTrain_Radio_T_TM_radio_messages(
@@ -302,7 +302,7 @@ void compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy(
               }
               else {
                 outC->else_clock_else_else_else_else_else_else_IfBlock2 =
-                  outC->nid_message == kcg_lit_int64(41);
+                  outC->nid_message == kcg_lit_int32(41);
                 /* IfBlock2:else:else:else:else:else:else:else: */
                 if (outC->else_clock_else_else_else_else_else_else_IfBlock2) {
                   kcg_copy_M_TrackTrain_Radio_T_TM_radio_messages(
@@ -331,7 +331,7 @@ void compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy(
                 }
                 else {
                   outC->else_clock_else_else_else_else_else_else_else_IfBlock2 =
-                    outC->nid_message == kcg_lit_int64(43);
+                    outC->nid_message == kcg_lit_int32(43);
                   /* IfBlock2:else:else:else:else:else:else:else:else: */
                   if (outC->else_clock_else_else_else_else_else_else_else_IfBlock2) {
                     kcg_copy_M_TrackTrain_Radio_T_TM_radio_messages(
@@ -360,7 +360,7 @@ void compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy(
                   }
                   else {
                     outC->else_clock_else_else_else_else_else_else_else_else_IfBlock2 =
-                      outC->nid_message == kcg_lit_int64(45);
+                      outC->nid_message == kcg_lit_int32(45);
                     /* IfBlock2:else:else:else:else:else:else:else:else:else: */
                     if (outC->else_clock_else_else_else_else_else_else_else_else_IfBlock2) {
                       kcg_copy_M_TrackTrain_Radio_T_TM_radio_messages(
@@ -438,7 +438,7 @@ void compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy(
   kcg_copy_Radio_TrackTrain_Header_T_Radio_Types_Pkg(
     &outC->_L35,
     &outC->header_sheet2);
-  outC->IfBlock1_clock = outC->nid_message == kcg_lit_int64(2);
+  outC->IfBlock1_clock = outC->nid_message == kcg_lit_int32(2);
   /* IfBlock1: */
   if (outC->IfBlock1_clock) {
     kcg_copy_M_TrackTrain_Radio_T_TM_radio_messages(
@@ -466,7 +466,7 @@ void compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy(
       &header_sheet1_partial);
   }
   else {
-    outC->else_clock_IfBlock1 = outC->nid_message == kcg_lit_int64(3);
+    outC->else_clock_IfBlock1 = outC->nid_message == kcg_lit_int32(3);
     /* IfBlock1:else: */
     if (outC->else_clock_IfBlock1) {
       kcg_copy_M_TrackTrain_Radio_T_TM_radio_messages(
@@ -494,7 +494,7 @@ void compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy(
         &_38_header_sheet1_partial);
     }
     else {
-      outC->else_clock_else_IfBlock1 = outC->nid_message == kcg_lit_int64(6);
+      outC->else_clock_else_IfBlock1 = outC->nid_message == kcg_lit_int32(6);
       /* IfBlock1:else:else: */
       if (outC->else_clock_else_IfBlock1) {
         kcg_copy_M_TrackTrain_Radio_T_TM_radio_messages(
@@ -522,7 +522,7 @@ void compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy(
           &_21_header_sheet1_partial);
       }
       else {
-        outC->else_clock_else_else_IfBlock1 = outC->nid_message == kcg_lit_int64(8);
+        outC->else_clock_else_else_IfBlock1 = outC->nid_message == kcg_lit_int32(8);
         /* IfBlock1:else:else:else: */
         if (outC->else_clock_else_else_IfBlock1) {
           kcg_copy_M_TrackTrain_Radio_T_TM_radio_messages(
@@ -551,7 +551,7 @@ void compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy(
         }
         else {
           outC->else_clock_else_else_else_IfBlock1 = outC->nid_message ==
-            kcg_lit_int64(9);
+            kcg_lit_int32(9);
           /* IfBlock1:else:else:else:else: */
           if (outC->else_clock_else_else_else_IfBlock1) {
             kcg_copy_M_TrackTrain_Radio_T_TM_radio_messages(
@@ -580,7 +580,7 @@ void compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy(
           }
           else {
             outC->else_clock_else_else_else_else_IfBlock1 = outC->nid_message ==
-              kcg_lit_int64(15);
+              kcg_lit_int32(15);
             /* IfBlock1:else:else:else:else:else: */
             if (outC->else_clock_else_else_else_else_IfBlock1) {
               kcg_copy_M_TrackTrain_Radio_T_TM_radio_messages(
@@ -609,7 +609,7 @@ void compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy(
             }
             else {
               outC->else_clock_else_else_else_else_else_IfBlock1 =
-                outC->nid_message == kcg_lit_int64(16);
+                outC->nid_message == kcg_lit_int32(16);
               /* IfBlock1:else:else:else:else:else:else: */
               if (outC->else_clock_else_else_else_else_else_IfBlock1) {
                 kcg_copy_M_TrackTrain_Radio_T_TM_radio_messages(
@@ -638,7 +638,7 @@ void compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy(
               }
               else {
                 outC->else_clock_else_else_else_else_else_else_IfBlock1 =
-                  outC->nid_message == kcg_lit_int64(18);
+                  outC->nid_message == kcg_lit_int32(18);
                 /* IfBlock1:else:else:else:else:else:else:else: */
                 if (outC->else_clock_else_else_else_else_else_else_IfBlock1) {
                   kcg_copy_M_TrackTrain_Radio_T_TM_radio_messages(
@@ -667,7 +667,7 @@ void compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy(
                 }
                 else {
                   outC->else_clock_else_else_else_else_else_else_else_IfBlock1 =
-                    outC->nid_message == kcg_lit_int64(24);
+                    outC->nid_message == kcg_lit_int32(24);
                   /* IfBlock1:else:else:else:else:else:else:else:else: */
                   if (outC->else_clock_else_else_else_else_else_else_else_IfBlock1) {
                     kcg_copy_M_TrackTrain_Radio_T_TM_radio_messages(
@@ -696,7 +696,7 @@ void compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy(
                   }
                   else {
                     outC->else_clock_else_else_else_else_else_else_else_else_IfBlock1 =
-                      outC->nid_message == kcg_lit_int64(27);
+                      outC->nid_message == kcg_lit_int32(27);
                     /* IfBlock1:else:else:else:else:else:else:else:else:else: */
                     if (outC->else_clock_else_else_else_else_else_else_else_else_IfBlock1) {
                       kcg_copy_M_TrackTrain_Radio_T_TM_radio_messages(
@@ -774,7 +774,7 @@ void compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy(
   kcg_copy_Radio_TrackTrain_Header_T_Radio_Types_Pkg(
     &outC->_L34,
     &outC->header_sheet1);
-  outC->_L38 = kcg_lit_int64(27);
+  outC->_L38 = kcg_lit_int32(27);
   outC->_L36 = outC->nid_message;
   outC->_L37 = outC->_L36 <= outC->_L38;
   /* _L39= */
@@ -793,1150 +793,1150 @@ void compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy(
 void compressed_to_Radio_Track_Train_H_init_TM_RBC_conversions_legacy(
   outC_compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy *outC)
 {
-  outC->_L39.radioDevice = kcg_lit_int64(0);
-  outC->_L39.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L39.nid_message = kcg_lit_int64(0);
-  outC->_L39.t_train = kcg_lit_int64(0);
+  outC->_L39.radioDevice = kcg_lit_int32(0);
+  outC->_L39.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L39.nid_message = kcg_lit_int32(0);
+  outC->_L39.t_train = kcg_lit_int32(0);
   outC->_L39.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L39.nid_lrbg = kcg_lit_int64(0);
-  outC->_L39.t_train_reference = kcg_lit_int64(0);
-  outC->_L39.nid_em = kcg_lit_int64(0);
+  outC->_L39.nid_lrbg = kcg_lit_int32(0);
+  outC->_L39.t_train_reference = kcg_lit_int32(0);
+  outC->_L39.nid_em = kcg_lit_int32(0);
   outC->_L39.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L39.d_sr = kcg_lit_int64(0);
-  outC->_L39.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L39.d_ref = kcg_lit_int64(0);
+  outC->_L39.d_sr = kcg_lit_int32(0);
+  outC->_L39.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L39.d_ref = kcg_lit_int32(0);
   outC->_L39.q_dir = Q_DIR_Reverse;
-  outC->_L39.d_emergencystop = kcg_lit_int64(0);
+  outC->_L39.d_emergencystop = kcg_lit_int32(0);
   outC->_L39.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
-  outC->_L38 = kcg_lit_int64(0);
+  outC->_L38 = kcg_lit_int32(0);
   outC->_L37 = kcg_true;
-  outC->_L36 = kcg_lit_int64(0);
-  outC->_L35.radioDevice = kcg_lit_int64(0);
-  outC->_L35.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L35.nid_message = kcg_lit_int64(0);
-  outC->_L35.t_train = kcg_lit_int64(0);
+  outC->_L36 = kcg_lit_int32(0);
+  outC->_L35.radioDevice = kcg_lit_int32(0);
+  outC->_L35.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L35.nid_message = kcg_lit_int32(0);
+  outC->_L35.t_train = kcg_lit_int32(0);
   outC->_L35.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L35.nid_lrbg = kcg_lit_int64(0);
-  outC->_L35.t_train_reference = kcg_lit_int64(0);
-  outC->_L35.nid_em = kcg_lit_int64(0);
+  outC->_L35.nid_lrbg = kcg_lit_int32(0);
+  outC->_L35.t_train_reference = kcg_lit_int32(0);
+  outC->_L35.nid_em = kcg_lit_int32(0);
   outC->_L35.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L35.d_sr = kcg_lit_int64(0);
-  outC->_L35.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L35.d_ref = kcg_lit_int64(0);
+  outC->_L35.d_sr = kcg_lit_int32(0);
+  outC->_L35.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L35.d_ref = kcg_lit_int32(0);
   outC->_L35.q_dir = Q_DIR_Reverse;
-  outC->_L35.d_emergencystop = kcg_lit_int64(0);
+  outC->_L35.d_emergencystop = kcg_lit_int32(0);
   outC->_L35.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
-  outC->_L34.radioDevice = kcg_lit_int64(0);
-  outC->_L34.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L34.nid_message = kcg_lit_int64(0);
-  outC->_L34.t_train = kcg_lit_int64(0);
+  outC->_L34.radioDevice = kcg_lit_int32(0);
+  outC->_L34.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L34.nid_message = kcg_lit_int32(0);
+  outC->_L34.t_train = kcg_lit_int32(0);
   outC->_L34.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L34.nid_lrbg = kcg_lit_int64(0);
-  outC->_L34.t_train_reference = kcg_lit_int64(0);
-  outC->_L34.nid_em = kcg_lit_int64(0);
+  outC->_L34.nid_lrbg = kcg_lit_int32(0);
+  outC->_L34.t_train_reference = kcg_lit_int32(0);
+  outC->_L34.nid_em = kcg_lit_int32(0);
   outC->_L34.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L34.d_sr = kcg_lit_int64(0);
-  outC->_L34.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L34.d_ref = kcg_lit_int64(0);
+  outC->_L34.d_sr = kcg_lit_int32(0);
+  outC->_L34.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L34.d_ref = kcg_lit_int32(0);
   outC->_L34.q_dir = Q_DIR_Reverse;
-  outC->_L34.d_emergencystop = kcg_lit_int64(0);
+  outC->_L34.d_emergencystop = kcg_lit_int32(0);
   outC->_L34.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
-  outC->_L33 = kcg_lit_int64(0);
-  outC->_L32 = kcg_lit_int64(0);
+  outC->_L33 = kcg_lit_int32(0);
+  outC->_L32 = kcg_lit_int32(0);
   outC->_L1.valid = kcg_true;
-  outC->_L1.nid_message = kcg_lit_int64(0);
-  outC->_L1.l_message = kcg_lit_int64(0);
-  outC->_L1.t_train = kcg_lit_int64(0);
-  outC->_L1.field1 = kcg_lit_int64(0);
-  outC->_L1.field2 = kcg_lit_int64(0);
-  outC->_L1.field3 = kcg_lit_int64(0);
-  outC->_L1.field4 = kcg_lit_int64(0);
-  outC->_L1.field5 = kcg_lit_int64(0);
-  outC->_L1.field6 = kcg_lit_int64(0);
-  outC->_L1.field7 = kcg_lit_int64(0);
-  outC->_L1.field8 = kcg_lit_int64(0);
-  outC->header_sheet2.radioDevice = kcg_lit_int64(0);
-  outC->header_sheet2.receivedSystemTime = kcg_lit_int64(0);
-  outC->header_sheet2.nid_message = kcg_lit_int64(0);
-  outC->header_sheet2.t_train = kcg_lit_int64(0);
+  outC->_L1.nid_message = kcg_lit_int32(0);
+  outC->_L1.l_message = kcg_lit_int32(0);
+  outC->_L1.t_train = kcg_lit_int32(0);
+  outC->_L1.field1 = kcg_lit_int32(0);
+  outC->_L1.field2 = kcg_lit_int32(0);
+  outC->_L1.field3 = kcg_lit_int32(0);
+  outC->_L1.field4 = kcg_lit_int32(0);
+  outC->_L1.field5 = kcg_lit_int32(0);
+  outC->_L1.field6 = kcg_lit_int32(0);
+  outC->_L1.field7 = kcg_lit_int32(0);
+  outC->_L1.field8 = kcg_lit_int32(0);
+  outC->header_sheet2.radioDevice = kcg_lit_int32(0);
+  outC->header_sheet2.receivedSystemTime = kcg_lit_int32(0);
+  outC->header_sheet2.nid_message = kcg_lit_int32(0);
+  outC->header_sheet2.t_train = kcg_lit_int32(0);
   outC->header_sheet2.m_ack = M_ACK_No_acknowledgement_required;
-  outC->header_sheet2.nid_lrbg = kcg_lit_int64(0);
-  outC->header_sheet2.t_train_reference = kcg_lit_int64(0);
-  outC->header_sheet2.nid_em = kcg_lit_int64(0);
+  outC->header_sheet2.nid_lrbg = kcg_lit_int32(0);
+  outC->header_sheet2.t_train_reference = kcg_lit_int32(0);
+  outC->header_sheet2.nid_em = kcg_lit_int32(0);
   outC->header_sheet2.q_scale = Q_SCALE_10_cm_scale;
-  outC->header_sheet2.d_sr = kcg_lit_int64(0);
-  outC->header_sheet2.t_sh_rqst = kcg_lit_int64(0);
-  outC->header_sheet2.d_ref = kcg_lit_int64(0);
+  outC->header_sheet2.d_sr = kcg_lit_int32(0);
+  outC->header_sheet2.t_sh_rqst = kcg_lit_int32(0);
+  outC->header_sheet2.d_ref = kcg_lit_int32(0);
   outC->header_sheet2.q_dir = Q_DIR_Reverse;
-  outC->header_sheet2.d_emergencystop = kcg_lit_int64(0);
+  outC->header_sheet2.d_emergencystop = kcg_lit_int32(0);
   outC->header_sheet2.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
-  outC->header_sheet1.radioDevice = kcg_lit_int64(0);
-  outC->header_sheet1.receivedSystemTime = kcg_lit_int64(0);
-  outC->header_sheet1.nid_message = kcg_lit_int64(0);
-  outC->header_sheet1.t_train = kcg_lit_int64(0);
+  outC->header_sheet1.radioDevice = kcg_lit_int32(0);
+  outC->header_sheet1.receivedSystemTime = kcg_lit_int32(0);
+  outC->header_sheet1.nid_message = kcg_lit_int32(0);
+  outC->header_sheet1.t_train = kcg_lit_int32(0);
   outC->header_sheet1.m_ack = M_ACK_No_acknowledgement_required;
-  outC->header_sheet1.nid_lrbg = kcg_lit_int64(0);
-  outC->header_sheet1.t_train_reference = kcg_lit_int64(0);
-  outC->header_sheet1.nid_em = kcg_lit_int64(0);
+  outC->header_sheet1.nid_lrbg = kcg_lit_int32(0);
+  outC->header_sheet1.t_train_reference = kcg_lit_int32(0);
+  outC->header_sheet1.nid_em = kcg_lit_int32(0);
   outC->header_sheet1.q_scale = Q_SCALE_10_cm_scale;
-  outC->header_sheet1.d_sr = kcg_lit_int64(0);
-  outC->header_sheet1.t_sh_rqst = kcg_lit_int64(0);
-  outC->header_sheet1.d_ref = kcg_lit_int64(0);
+  outC->header_sheet1.d_sr = kcg_lit_int32(0);
+  outC->header_sheet1.t_sh_rqst = kcg_lit_int32(0);
+  outC->header_sheet1.d_ref = kcg_lit_int32(0);
   outC->header_sheet1.q_dir = Q_DIR_Reverse;
-  outC->header_sheet1.d_emergencystop = kcg_lit_int64(0);
+  outC->header_sheet1.d_emergencystop = kcg_lit_int32(0);
   outC->header_sheet1.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
-  outC->nid_message = kcg_lit_int64(0);
+  outC->nid_message = kcg_lit_int32(0);
   outC->IfBlock1_clock = kcg_true;
   outC->IfBlock2_clock = kcg_true;
   outC->_L1_then_else_IfBlock1.valid = kcg_true;
-  outC->_L1_then_else_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L1_then_else_IfBlock1.l_message = kcg_lit_int64(0);
-  outC->_L1_then_else_IfBlock1.t_train = kcg_lit_int64(0);
-  outC->_L1_then_else_IfBlock1.field1 = kcg_lit_int64(0);
-  outC->_L1_then_else_IfBlock1.field2 = kcg_lit_int64(0);
-  outC->_L1_then_else_IfBlock1.field3 = kcg_lit_int64(0);
-  outC->_L1_then_else_IfBlock1.field4 = kcg_lit_int64(0);
-  outC->_L1_then_else_IfBlock1.field5 = kcg_lit_int64(0);
-  outC->_L1_then_else_IfBlock1.field6 = kcg_lit_int64(0);
-  outC->_L1_then_else_IfBlock1.field7 = kcg_lit_int64(0);
-  outC->_L1_then_else_IfBlock1.field8 = kcg_lit_int64(0);
-  outC->_L2_then_else_IfBlock1.radioDevice = kcg_lit_int64(0);
-  outC->_L2_then_else_IfBlock1.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L2_then_else_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L2_then_else_IfBlock1.t_train = kcg_lit_int64(0);
+  outC->_L1_then_else_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L1_then_else_IfBlock1.l_message = kcg_lit_int32(0);
+  outC->_L1_then_else_IfBlock1.t_train = kcg_lit_int32(0);
+  outC->_L1_then_else_IfBlock1.field1 = kcg_lit_int32(0);
+  outC->_L1_then_else_IfBlock1.field2 = kcg_lit_int32(0);
+  outC->_L1_then_else_IfBlock1.field3 = kcg_lit_int32(0);
+  outC->_L1_then_else_IfBlock1.field4 = kcg_lit_int32(0);
+  outC->_L1_then_else_IfBlock1.field5 = kcg_lit_int32(0);
+  outC->_L1_then_else_IfBlock1.field6 = kcg_lit_int32(0);
+  outC->_L1_then_else_IfBlock1.field7 = kcg_lit_int32(0);
+  outC->_L1_then_else_IfBlock1.field8 = kcg_lit_int32(0);
+  outC->_L2_then_else_IfBlock1.radioDevice = kcg_lit_int32(0);
+  outC->_L2_then_else_IfBlock1.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L2_then_else_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L2_then_else_IfBlock1.t_train = kcg_lit_int32(0);
   outC->_L2_then_else_IfBlock1.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L2_then_else_IfBlock1.nid_lrbg = kcg_lit_int64(0);
-  outC->_L2_then_else_IfBlock1.t_train_reference = kcg_lit_int64(0);
-  outC->_L2_then_else_IfBlock1.nid_em = kcg_lit_int64(0);
+  outC->_L2_then_else_IfBlock1.nid_lrbg = kcg_lit_int32(0);
+  outC->_L2_then_else_IfBlock1.t_train_reference = kcg_lit_int32(0);
+  outC->_L2_then_else_IfBlock1.nid_em = kcg_lit_int32(0);
   outC->_L2_then_else_IfBlock1.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L2_then_else_IfBlock1.d_sr = kcg_lit_int64(0);
-  outC->_L2_then_else_IfBlock1.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L2_then_else_IfBlock1.d_ref = kcg_lit_int64(0);
+  outC->_L2_then_else_IfBlock1.d_sr = kcg_lit_int32(0);
+  outC->_L2_then_else_IfBlock1.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L2_then_else_IfBlock1.d_ref = kcg_lit_int32(0);
   outC->_L2_then_else_IfBlock1.q_dir = Q_DIR_Reverse;
-  outC->_L2_then_else_IfBlock1.d_emergencystop = kcg_lit_int64(0);
+  outC->_L2_then_else_IfBlock1.d_emergencystop = kcg_lit_int32(0);
   outC->_L2_then_else_IfBlock1.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L3_then_else_IfBlock1.valid = kcg_true;
-  outC->_L3_then_else_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L3_then_else_IfBlock1.l_message = kcg_lit_int64(0);
-  outC->_L3_then_else_IfBlock1.t_train = kcg_lit_int64(0);
+  outC->_L3_then_else_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L3_then_else_IfBlock1.l_message = kcg_lit_int32(0);
+  outC->_L3_then_else_IfBlock1.t_train = kcg_lit_int32(0);
   outC->_L3_then_else_IfBlock1.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L3_then_else_IfBlock1.nid_lrbg = kcg_lit_int64(0);
+  outC->_L3_then_else_IfBlock1.nid_lrbg = kcg_lit_int32(0);
   outC->else_clock_else_IfBlock1 = kcg_true;
   outC->_L1_then_else_else_else_IfBlock1.valid = kcg_true;
-  outC->_L1_then_else_else_else_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_IfBlock1.l_message = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_IfBlock1.t_train = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_IfBlock1.field1 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_IfBlock1.field2 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_IfBlock1.field3 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_IfBlock1.field4 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_IfBlock1.field5 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_IfBlock1.field6 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_IfBlock1.field7 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_IfBlock1.field8 = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_IfBlock1.radioDevice = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_IfBlock1.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_IfBlock1.t_train = kcg_lit_int64(0);
+  outC->_L1_then_else_else_else_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_IfBlock1.l_message = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_IfBlock1.t_train = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_IfBlock1.field1 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_IfBlock1.field2 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_IfBlock1.field3 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_IfBlock1.field4 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_IfBlock1.field5 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_IfBlock1.field6 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_IfBlock1.field7 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_IfBlock1.field8 = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_IfBlock1.radioDevice = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_IfBlock1.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_IfBlock1.t_train = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_IfBlock1.m_ack =
     M_ACK_No_acknowledgement_required;
-  outC->_L2_then_else_else_else_IfBlock1.nid_lrbg = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_IfBlock1.t_train_reference = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_IfBlock1.nid_em = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_IfBlock1.nid_lrbg = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_IfBlock1.t_train_reference = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_IfBlock1.nid_em = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_IfBlock1.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L2_then_else_else_else_IfBlock1.d_sr = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_IfBlock1.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_IfBlock1.d_ref = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_IfBlock1.d_sr = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_IfBlock1.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_IfBlock1.d_ref = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_IfBlock1.q_dir = Q_DIR_Reverse;
-  outC->_L2_then_else_else_else_IfBlock1.d_emergencystop = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_IfBlock1.d_emergencystop = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_IfBlock1.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L3_then_else_else_else_IfBlock1.valid = kcg_true;
-  outC->_L3_then_else_else_else_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_IfBlock1.l_message = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_IfBlock1.t_train = kcg_lit_int64(0);
+  outC->_L3_then_else_else_else_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_IfBlock1.l_message = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_IfBlock1.t_train = kcg_lit_int32(0);
   outC->_L3_then_else_else_else_IfBlock1.m_ack =
     M_ACK_No_acknowledgement_required;
-  outC->_L3_then_else_else_else_IfBlock1.nid_lrbg = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_IfBlock1.t_train_received = kcg_lit_int64(0);
+  outC->_L3_then_else_else_else_IfBlock1.nid_lrbg = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_IfBlock1.t_train_received = kcg_lit_int32(0);
   outC->else_clock_else_else_else_IfBlock1 = kcg_true;
   outC->_L1_then_else_else_else_else_else_IfBlock1.valid = kcg_true;
-  outC->_L1_then_else_else_else_else_else_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_else_IfBlock1.l_message = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_else_IfBlock1.t_train = kcg_lit_int64(0);
+  outC->_L1_then_else_else_else_else_else_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_else_IfBlock1.l_message = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_else_IfBlock1.t_train = kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_IfBlock1.m_ack =
     M_ACK_No_acknowledgement_required;
-  outC->_L1_then_else_else_else_else_else_IfBlock1.nid_lrbg = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_else_IfBlock1.nid_em = kcg_lit_int64(0);
+  outC->_L1_then_else_else_else_else_else_IfBlock1.nid_lrbg = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_else_IfBlock1.nid_em = kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_IfBlock1.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L1_then_else_else_else_else_else_IfBlock1.d_ref = kcg_lit_int64(0);
+  outC->_L1_then_else_else_else_else_else_IfBlock1.d_ref = kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_IfBlock1.q_dir = Q_DIR_Reverse;
   outC->_L1_then_else_else_else_else_else_IfBlock1.d_emergencystop =
-    kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_else_IfBlock1.radioDevice = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_else_IfBlock1.radioDevice = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_IfBlock1.receivedSystemTime =
-    kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_else_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_else_IfBlock1.t_train = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_else_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_else_IfBlock1.t_train = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_IfBlock1.m_ack =
     M_ACK_No_acknowledgement_required;
-  outC->_L2_then_else_else_else_else_else_IfBlock1.nid_lrbg = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_else_else_IfBlock1.nid_lrbg = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_IfBlock1.t_train_reference =
-    kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_else_IfBlock1.nid_em = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_else_IfBlock1.nid_em = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_IfBlock1.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L2_then_else_else_else_else_else_IfBlock1.d_sr = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_else_IfBlock1.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_else_IfBlock1.d_ref = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_else_else_IfBlock1.d_sr = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_else_IfBlock1.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_else_IfBlock1.d_ref = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_IfBlock1.q_dir = Q_DIR_Reverse;
   outC->_L2_then_else_else_else_else_else_IfBlock1.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_IfBlock1.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L3_then_else_else_else_else_else_IfBlock1.valid = kcg_true;
-  outC->_L3_then_else_else_else_else_else_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_IfBlock1.l_message = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_IfBlock1.t_train = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_IfBlock1.field1 = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_IfBlock1.field2 = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_IfBlock1.field3 = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_IfBlock1.field4 = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_IfBlock1.field5 = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_IfBlock1.field6 = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_IfBlock1.field7 = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_IfBlock1.field8 = kcg_lit_int64(0);
+  outC->_L3_then_else_else_else_else_else_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_IfBlock1.l_message = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_IfBlock1.t_train = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_IfBlock1.field1 = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_IfBlock1.field2 = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_IfBlock1.field3 = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_IfBlock1.field4 = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_IfBlock1.field5 = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_IfBlock1.field6 = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_IfBlock1.field7 = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_IfBlock1.field8 = kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock1.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock1.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock1.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock1.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock1.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock1.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock1.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock1.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock1.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock1.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock1.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock1.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock1.q_dir =
     Q_DIR_Reverse;
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock1.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock1.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock1.valid = kcg_true;
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock1.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock1.l_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock1.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock1.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock1.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock1.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_IfBlock1.valid = kcg_true;
   outC->_L4_then_else_else_else_else_else_else_else_IfBlock1.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_IfBlock1.l_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_IfBlock1.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_IfBlock1.field1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_IfBlock1.field2 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_IfBlock1.field3 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_IfBlock1.field4 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_IfBlock1.field5 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_IfBlock1.field6 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_IfBlock1.field7 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_IfBlock1.field8 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock1.valid =
     kcg_true;
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock1.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock1.l_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock1.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock1.field1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock1.field2 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock1.field3 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock1.field4 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock1.field5 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock1.field6 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock1.field7 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock1.field8 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_else_IfBlock1.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_else_IfBlock1.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_else_IfBlock1.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_else_IfBlock1.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_else_IfBlock1.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L2_then_else_else_else_else_else_else_else_else_else_IfBlock1.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_else_IfBlock1.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_else_IfBlock1.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_else_IfBlock1.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L2_then_else_else_else_else_else_else_else_else_else_IfBlock1.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_else_IfBlock1.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_else_IfBlock1.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_else_IfBlock1.q_dir =
     Q_DIR_Reverse;
   outC->_L2_then_else_else_else_else_else_else_else_else_else_IfBlock1.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_else_IfBlock1.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L3_then_else_else_else_else_else_else_else_else_else_IfBlock1.valid =
     kcg_true;
   outC->_L3_then_else_else_else_else_else_else_else_else_else_IfBlock1.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_else_IfBlock1.l_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_else_IfBlock1.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_else_IfBlock1.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L3_then_else_else_else_else_else_else_else_else_else_IfBlock1.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_else_IfBlock1.t_train_SH_request =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock1.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock1.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock1.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock1.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock1.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock1.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock1.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock1.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock1.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock1.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock1.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock1.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock1.q_dir =
     Q_DIR_Reverse;
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock1.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock1.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->else_clock_else_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L3_then_else_else_else_else_else_else_else_else_IfBlock1.valid =
     kcg_true;
   outC->_L3_then_else_else_else_else_else_else_else_else_IfBlock1.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_IfBlock1.l_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_IfBlock1.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_IfBlock1.field1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_IfBlock1.field2 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_IfBlock1.field3 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_IfBlock1.field4 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_IfBlock1.field5 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_IfBlock1.field6 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_IfBlock1.field7 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_IfBlock1.field8 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_IfBlock1.valid =
     kcg_true;
   outC->_L2_then_else_else_else_else_else_else_else_else_IfBlock1.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_IfBlock1.l_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_IfBlock1.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_IfBlock1.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L2_then_else_else_else_else_else_else_else_else_IfBlock1.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_IfBlock1.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_IfBlock1.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_IfBlock1.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_IfBlock1.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_IfBlock1.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L1_then_else_else_else_else_else_else_else_else_IfBlock1.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_IfBlock1.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_IfBlock1.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_IfBlock1.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L1_then_else_else_else_else_else_else_else_else_IfBlock1.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_IfBlock1.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_IfBlock1.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_IfBlock1.q_dir =
     Q_DIR_Reverse;
   outC->_L1_then_else_else_else_else_else_else_else_else_IfBlock1.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_IfBlock1.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->else_clock_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L3_then_else_else_else_else_else_else_IfBlock1.valid = kcg_true;
   outC->_L3_then_else_else_else_else_else_else_IfBlock1.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_IfBlock1.l_message =
-    kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_else_IfBlock1.t_train = kcg_lit_int64(
+    kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_else_IfBlock1.t_train = kcg_lit_int32(
       0);
-  outC->_L3_then_else_else_else_else_else_else_IfBlock1.field1 = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_else_IfBlock1.field2 = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_else_IfBlock1.field3 = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_else_IfBlock1.field4 = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_else_IfBlock1.field5 = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_else_IfBlock1.field6 = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_else_IfBlock1.field7 = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_else_IfBlock1.field8 = kcg_lit_int64(0);
+  outC->_L3_then_else_else_else_else_else_else_IfBlock1.field1 = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_else_IfBlock1.field2 = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_else_IfBlock1.field3 = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_else_IfBlock1.field4 = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_else_IfBlock1.field5 = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_else_IfBlock1.field6 = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_else_IfBlock1.field7 = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_else_IfBlock1.field8 = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_IfBlock1.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_IfBlock1.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_IfBlock1.nid_message =
-    kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_else_else_IfBlock1.t_train = kcg_lit_int64(
+    kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_else_else_IfBlock1.t_train = kcg_lit_int32(
       0);
   outC->_L2_then_else_else_else_else_else_else_IfBlock1.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L2_then_else_else_else_else_else_else_IfBlock1.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_IfBlock1.t_train_reference =
-    kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_else_else_IfBlock1.nid_em = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_else_else_IfBlock1.nid_em = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_IfBlock1.q_scale =
     Q_SCALE_10_cm_scale;
-  outC->_L2_then_else_else_else_else_else_else_IfBlock1.d_sr = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_else_else_else_IfBlock1.d_sr = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_IfBlock1.t_sh_rqst =
-    kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_else_else_IfBlock1.d_ref = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_else_else_IfBlock1.d_ref = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_IfBlock1.q_dir = Q_DIR_Reverse;
   outC->_L2_then_else_else_else_else_else_else_IfBlock1.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_IfBlock1.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L1_then_else_else_else_else_else_else_IfBlock1.valid = kcg_true;
   outC->_L1_then_else_else_else_else_else_else_IfBlock1.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_IfBlock1.l_message =
-    kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_else_else_IfBlock1.t_train = kcg_lit_int64(
+    kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_else_else_IfBlock1.t_train = kcg_lit_int32(
       0);
   outC->_L1_then_else_else_else_else_else_else_IfBlock1.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L1_then_else_else_else_else_else_else_IfBlock1.nid_lrbg =
-    kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_else_else_IfBlock1.nid_em = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_else_else_IfBlock1.nid_em = kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L3_then_else_else_else_else_IfBlock1.valid = kcg_true;
-  outC->_L3_then_else_else_else_else_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_IfBlock1.l_message = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_IfBlock1.t_train = kcg_lit_int64(0);
+  outC->_L3_then_else_else_else_else_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_IfBlock1.l_message = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_IfBlock1.t_train = kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_IfBlock1.m_ack =
     M_ACK_No_acknowledgement_required;
-  outC->_L3_then_else_else_else_else_IfBlock1.nid_lrbg = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_IfBlock1.radioDevice = kcg_lit_int64(0);
+  outC->_L3_then_else_else_else_else_IfBlock1.nid_lrbg = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_IfBlock1.radioDevice = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_IfBlock1.receivedSystemTime =
-    kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_IfBlock1.t_train = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_IfBlock1.t_train = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_IfBlock1.m_ack =
     M_ACK_No_acknowledgement_required;
-  outC->_L2_then_else_else_else_else_IfBlock1.nid_lrbg = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_IfBlock1.t_train_reference = kcg_lit_int64(
+  outC->_L2_then_else_else_else_else_IfBlock1.nid_lrbg = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_IfBlock1.t_train_reference = kcg_lit_int32(
       0);
-  outC->_L2_then_else_else_else_else_IfBlock1.nid_em = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_else_IfBlock1.nid_em = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_IfBlock1.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L2_then_else_else_else_else_IfBlock1.d_sr = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_IfBlock1.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_IfBlock1.d_ref = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_else_IfBlock1.d_sr = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_IfBlock1.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_IfBlock1.d_ref = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_IfBlock1.q_dir = Q_DIR_Reverse;
-  outC->_L2_then_else_else_else_else_IfBlock1.d_emergencystop = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_else_IfBlock1.d_emergencystop = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_IfBlock1.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L1_then_else_else_else_else_IfBlock1.valid = kcg_true;
-  outC->_L1_then_else_else_else_else_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_IfBlock1.l_message = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_IfBlock1.t_train = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_IfBlock1.field1 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_IfBlock1.field2 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_IfBlock1.field3 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_IfBlock1.field4 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_IfBlock1.field5 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_IfBlock1.field6 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_IfBlock1.field7 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_IfBlock1.field8 = kcg_lit_int64(0);
+  outC->_L1_then_else_else_else_else_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_IfBlock1.l_message = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_IfBlock1.t_train = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_IfBlock1.field1 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_IfBlock1.field2 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_IfBlock1.field3 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_IfBlock1.field4 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_IfBlock1.field5 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_IfBlock1.field6 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_IfBlock1.field7 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_IfBlock1.field8 = kcg_lit_int32(0);
   outC->else_clock_else_else_IfBlock1 = kcg_true;
   outC->_L3_then_else_else_IfBlock1.valid = kcg_true;
-  outC->_L3_then_else_else_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L3_then_else_else_IfBlock1.l_message = kcg_lit_int64(0);
-  outC->_L3_then_else_else_IfBlock1.t_train = kcg_lit_int64(0);
+  outC->_L3_then_else_else_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L3_then_else_else_IfBlock1.l_message = kcg_lit_int32(0);
+  outC->_L3_then_else_else_IfBlock1.t_train = kcg_lit_int32(0);
   outC->_L3_then_else_else_IfBlock1.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L3_then_else_else_IfBlock1.nid_lrbg = kcg_lit_int64(0);
-  outC->_L2_then_else_else_IfBlock1.radioDevice = kcg_lit_int64(0);
-  outC->_L2_then_else_else_IfBlock1.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L2_then_else_else_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L2_then_else_else_IfBlock1.t_train = kcg_lit_int64(0);
+  outC->_L3_then_else_else_IfBlock1.nid_lrbg = kcg_lit_int32(0);
+  outC->_L2_then_else_else_IfBlock1.radioDevice = kcg_lit_int32(0);
+  outC->_L2_then_else_else_IfBlock1.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L2_then_else_else_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L2_then_else_else_IfBlock1.t_train = kcg_lit_int32(0);
   outC->_L2_then_else_else_IfBlock1.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L2_then_else_else_IfBlock1.nid_lrbg = kcg_lit_int64(0);
-  outC->_L2_then_else_else_IfBlock1.t_train_reference = kcg_lit_int64(0);
-  outC->_L2_then_else_else_IfBlock1.nid_em = kcg_lit_int64(0);
+  outC->_L2_then_else_else_IfBlock1.nid_lrbg = kcg_lit_int32(0);
+  outC->_L2_then_else_else_IfBlock1.t_train_reference = kcg_lit_int32(0);
+  outC->_L2_then_else_else_IfBlock1.nid_em = kcg_lit_int32(0);
   outC->_L2_then_else_else_IfBlock1.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L2_then_else_else_IfBlock1.d_sr = kcg_lit_int64(0);
-  outC->_L2_then_else_else_IfBlock1.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L2_then_else_else_IfBlock1.d_ref = kcg_lit_int64(0);
+  outC->_L2_then_else_else_IfBlock1.d_sr = kcg_lit_int32(0);
+  outC->_L2_then_else_else_IfBlock1.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L2_then_else_else_IfBlock1.d_ref = kcg_lit_int32(0);
   outC->_L2_then_else_else_IfBlock1.q_dir = Q_DIR_Reverse;
-  outC->_L2_then_else_else_IfBlock1.d_emergencystop = kcg_lit_int64(0);
+  outC->_L2_then_else_else_IfBlock1.d_emergencystop = kcg_lit_int32(0);
   outC->_L2_then_else_else_IfBlock1.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L1_then_else_else_IfBlock1.valid = kcg_true;
-  outC->_L1_then_else_else_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L1_then_else_else_IfBlock1.l_message = kcg_lit_int64(0);
-  outC->_L1_then_else_else_IfBlock1.t_train = kcg_lit_int64(0);
-  outC->_L1_then_else_else_IfBlock1.field1 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_IfBlock1.field2 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_IfBlock1.field3 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_IfBlock1.field4 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_IfBlock1.field5 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_IfBlock1.field6 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_IfBlock1.field7 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_IfBlock1.field8 = kcg_lit_int64(0);
+  outC->_L1_then_else_else_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L1_then_else_else_IfBlock1.l_message = kcg_lit_int32(0);
+  outC->_L1_then_else_else_IfBlock1.t_train = kcg_lit_int32(0);
+  outC->_L1_then_else_else_IfBlock1.field1 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_IfBlock1.field2 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_IfBlock1.field3 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_IfBlock1.field4 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_IfBlock1.field5 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_IfBlock1.field6 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_IfBlock1.field7 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_IfBlock1.field8 = kcg_lit_int32(0);
   outC->else_clock_IfBlock1 = kcg_true;
   outC->_L1_then_IfBlock1.valid = kcg_true;
-  outC->_L1_then_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock1.l_message = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock1.t_train = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock1.field1 = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock1.field2 = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock1.field3 = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock1.field4 = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock1.field5 = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock1.field6 = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock1.field7 = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock1.field8 = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock1.l_message = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock1.t_train = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock1.field1 = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock1.field2 = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock1.field3 = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock1.field4 = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock1.field5 = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock1.field6 = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock1.field7 = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock1.field8 = kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.valid = kcg_true;
-  outC->_L2_then_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L2_then_IfBlock1.l_message = kcg_lit_int64(0);
-  outC->_L2_then_IfBlock1.t_train = kcg_lit_int64(0);
+  outC->_L2_then_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L2_then_IfBlock1.l_message = kcg_lit_int32(0);
+  outC->_L2_then_IfBlock1.t_train = kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L2_then_IfBlock1.nid_lrbg = kcg_lit_int64(0);
+  outC->_L2_then_IfBlock1.nid_lrbg = kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L2_then_IfBlock1.d_sr = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock1.radioDevice = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock1.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock1.t_train = kcg_lit_int64(0);
+  outC->_L2_then_IfBlock1.d_sr = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock1.radioDevice = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock1.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock1.t_train = kcg_lit_int32(0);
   outC->_L3_then_IfBlock1.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L3_then_IfBlock1.nid_lrbg = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock1.t_train_reference = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock1.nid_em = kcg_lit_int64(0);
+  outC->_L3_then_IfBlock1.nid_lrbg = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock1.t_train_reference = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock1.nid_em = kcg_lit_int32(0);
   outC->_L3_then_IfBlock1.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L3_then_IfBlock1.d_sr = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock1.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock1.d_ref = kcg_lit_int64(0);
+  outC->_L3_then_IfBlock1.d_sr = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock1.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock1.d_ref = kcg_lit_int32(0);
   outC->_L3_then_IfBlock1.q_dir = Q_DIR_Reverse;
-  outC->_L3_then_IfBlock1.d_emergencystop = kcg_lit_int64(0);
+  outC->_L3_then_IfBlock1.d_emergencystop = kcg_lit_int32(0);
   outC->_L3_then_IfBlock1.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L2_then_else_IfBlock2.valid = kcg_true;
-  outC->_L2_then_else_IfBlock2.nid_message = kcg_lit_int64(0);
-  outC->_L2_then_else_IfBlock2.l_message = kcg_lit_int64(0);
-  outC->_L2_then_else_IfBlock2.t_train = kcg_lit_int64(0);
+  outC->_L2_then_else_IfBlock2.nid_message = kcg_lit_int32(0);
+  outC->_L2_then_else_IfBlock2.l_message = kcg_lit_int32(0);
+  outC->_L2_then_else_IfBlock2.t_train = kcg_lit_int32(0);
   outC->_L2_then_else_IfBlock2.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L2_then_else_IfBlock2.nid_lrbg = kcg_lit_int64(0);
+  outC->_L2_then_else_IfBlock2.nid_lrbg = kcg_lit_int32(0);
   outC->_L2_then_else_IfBlock2.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
-  outC->_L3_then_else_IfBlock2.radioDevice = kcg_lit_int64(0);
-  outC->_L3_then_else_IfBlock2.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L3_then_else_IfBlock2.nid_message = kcg_lit_int64(0);
-  outC->_L3_then_else_IfBlock2.t_train = kcg_lit_int64(0);
+  outC->_L3_then_else_IfBlock2.radioDevice = kcg_lit_int32(0);
+  outC->_L3_then_else_IfBlock2.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L3_then_else_IfBlock2.nid_message = kcg_lit_int32(0);
+  outC->_L3_then_else_IfBlock2.t_train = kcg_lit_int32(0);
   outC->_L3_then_else_IfBlock2.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L3_then_else_IfBlock2.nid_lrbg = kcg_lit_int64(0);
-  outC->_L3_then_else_IfBlock2.t_train_reference = kcg_lit_int64(0);
-  outC->_L3_then_else_IfBlock2.nid_em = kcg_lit_int64(0);
+  outC->_L3_then_else_IfBlock2.nid_lrbg = kcg_lit_int32(0);
+  outC->_L3_then_else_IfBlock2.t_train_reference = kcg_lit_int32(0);
+  outC->_L3_then_else_IfBlock2.nid_em = kcg_lit_int32(0);
   outC->_L3_then_else_IfBlock2.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L3_then_else_IfBlock2.d_sr = kcg_lit_int64(0);
-  outC->_L3_then_else_IfBlock2.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L3_then_else_IfBlock2.d_ref = kcg_lit_int64(0);
+  outC->_L3_then_else_IfBlock2.d_sr = kcg_lit_int32(0);
+  outC->_L3_then_else_IfBlock2.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L3_then_else_IfBlock2.d_ref = kcg_lit_int32(0);
   outC->_L3_then_else_IfBlock2.q_dir = Q_DIR_Reverse;
-  outC->_L3_then_else_IfBlock2.d_emergencystop = kcg_lit_int64(0);
+  outC->_L3_then_else_IfBlock2.d_emergencystop = kcg_lit_int32(0);
   outC->_L3_then_else_IfBlock2.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L4_then_else_IfBlock2.valid = kcg_true;
-  outC->_L4_then_else_IfBlock2.nid_message = kcg_lit_int64(0);
-  outC->_L4_then_else_IfBlock2.l_message = kcg_lit_int64(0);
-  outC->_L4_then_else_IfBlock2.t_train = kcg_lit_int64(0);
-  outC->_L4_then_else_IfBlock2.field1 = kcg_lit_int64(0);
-  outC->_L4_then_else_IfBlock2.field2 = kcg_lit_int64(0);
-  outC->_L4_then_else_IfBlock2.field3 = kcg_lit_int64(0);
-  outC->_L4_then_else_IfBlock2.field4 = kcg_lit_int64(0);
-  outC->_L4_then_else_IfBlock2.field5 = kcg_lit_int64(0);
-  outC->_L4_then_else_IfBlock2.field6 = kcg_lit_int64(0);
-  outC->_L4_then_else_IfBlock2.field7 = kcg_lit_int64(0);
-  outC->_L4_then_else_IfBlock2.field8 = kcg_lit_int64(0);
+  outC->_L4_then_else_IfBlock2.nid_message = kcg_lit_int32(0);
+  outC->_L4_then_else_IfBlock2.l_message = kcg_lit_int32(0);
+  outC->_L4_then_else_IfBlock2.t_train = kcg_lit_int32(0);
+  outC->_L4_then_else_IfBlock2.field1 = kcg_lit_int32(0);
+  outC->_L4_then_else_IfBlock2.field2 = kcg_lit_int32(0);
+  outC->_L4_then_else_IfBlock2.field3 = kcg_lit_int32(0);
+  outC->_L4_then_else_IfBlock2.field4 = kcg_lit_int32(0);
+  outC->_L4_then_else_IfBlock2.field5 = kcg_lit_int32(0);
+  outC->_L4_then_else_IfBlock2.field6 = kcg_lit_int32(0);
+  outC->_L4_then_else_IfBlock2.field7 = kcg_lit_int32(0);
+  outC->_L4_then_else_IfBlock2.field8 = kcg_lit_int32(0);
   outC->else_clock_else_IfBlock2 = kcg_true;
   outC->_L1_then_else_else_else_IfBlock2.valid = kcg_true;
-  outC->_L1_then_else_else_else_IfBlock2.nid_message = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_IfBlock2.l_message = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_IfBlock2.t_train = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_IfBlock2.field1 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_IfBlock2.field2 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_IfBlock2.field3 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_IfBlock2.field4 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_IfBlock2.field5 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_IfBlock2.field6 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_IfBlock2.field7 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_IfBlock2.field8 = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_IfBlock2.radioDevice = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_IfBlock2.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_IfBlock2.nid_message = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_IfBlock2.t_train = kcg_lit_int64(0);
+  outC->_L1_then_else_else_else_IfBlock2.nid_message = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_IfBlock2.l_message = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_IfBlock2.t_train = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_IfBlock2.field1 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_IfBlock2.field2 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_IfBlock2.field3 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_IfBlock2.field4 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_IfBlock2.field5 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_IfBlock2.field6 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_IfBlock2.field7 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_IfBlock2.field8 = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_IfBlock2.radioDevice = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_IfBlock2.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_IfBlock2.nid_message = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_IfBlock2.t_train = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_IfBlock2.m_ack =
     M_ACK_No_acknowledgement_required;
-  outC->_L2_then_else_else_else_IfBlock2.nid_lrbg = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_IfBlock2.t_train_reference = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_IfBlock2.nid_em = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_IfBlock2.nid_lrbg = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_IfBlock2.t_train_reference = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_IfBlock2.nid_em = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_IfBlock2.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L2_then_else_else_else_IfBlock2.d_sr = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_IfBlock2.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_IfBlock2.d_ref = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_IfBlock2.d_sr = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_IfBlock2.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_IfBlock2.d_ref = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_IfBlock2.q_dir = Q_DIR_Reverse;
-  outC->_L2_then_else_else_else_IfBlock2.d_emergencystop = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_IfBlock2.d_emergencystop = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_IfBlock2.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L3_then_else_else_else_IfBlock2.valid = kcg_true;
-  outC->_L3_then_else_else_else_IfBlock2.nid_message = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_IfBlock2.l_message = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_IfBlock2.t_train = kcg_lit_int64(0);
+  outC->_L3_then_else_else_else_IfBlock2.nid_message = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_IfBlock2.l_message = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_IfBlock2.t_train = kcg_lit_int32(0);
   outC->_L3_then_else_else_else_IfBlock2.m_ack =
     M_ACK_No_acknowledgement_required;
-  outC->_L3_then_else_else_else_IfBlock2.nid_lrbg = kcg_lit_int64(0);
+  outC->_L3_then_else_else_else_IfBlock2.nid_lrbg = kcg_lit_int32(0);
   outC->_L3_then_else_else_else_IfBlock2.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L3_then_else_else_else_IfBlock2.d_ref = kcg_lit_int64(0);
+  outC->_L3_then_else_else_else_IfBlock2.d_ref = kcg_lit_int32(0);
   outC->_L3_then_else_else_else_IfBlock2.q_dir = Q_DIR_Reverse;
-  outC->_L3_then_else_else_else_IfBlock2.d_tafdisplay = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_IfBlock2.l_tafdisplay = kcg_lit_int64(0);
+  outC->_L3_then_else_else_else_IfBlock2.d_tafdisplay = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_IfBlock2.l_tafdisplay = kcg_lit_int32(0);
   outC->else_clock_else_else_else_IfBlock2 = kcg_true;
   outC->_L1_then_else_else_else_else_else_IfBlock2.valid = kcg_true;
-  outC->_L1_then_else_else_else_else_else_IfBlock2.nid_message = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_else_IfBlock2.l_message = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_else_IfBlock2.t_train = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_else_IfBlock2.field1 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_else_IfBlock2.field2 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_else_IfBlock2.field3 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_else_IfBlock2.field4 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_else_IfBlock2.field5 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_else_IfBlock2.field6 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_else_IfBlock2.field7 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_else_IfBlock2.field8 = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_else_IfBlock2.radioDevice = kcg_lit_int64(0);
+  outC->_L1_then_else_else_else_else_else_IfBlock2.nid_message = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_else_IfBlock2.l_message = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_else_IfBlock2.t_train = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_else_IfBlock2.field1 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_else_IfBlock2.field2 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_else_IfBlock2.field3 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_else_IfBlock2.field4 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_else_IfBlock2.field5 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_else_IfBlock2.field6 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_else_IfBlock2.field7 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_else_IfBlock2.field8 = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_else_IfBlock2.radioDevice = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_IfBlock2.receivedSystemTime =
-    kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_else_IfBlock2.nid_message = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_else_IfBlock2.t_train = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_else_IfBlock2.nid_message = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_else_IfBlock2.t_train = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_IfBlock2.m_ack =
     M_ACK_No_acknowledgement_required;
-  outC->_L2_then_else_else_else_else_else_IfBlock2.nid_lrbg = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_else_else_IfBlock2.nid_lrbg = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_IfBlock2.t_train_reference =
-    kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_else_IfBlock2.nid_em = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_else_IfBlock2.nid_em = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_IfBlock2.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L2_then_else_else_else_else_else_IfBlock2.d_sr = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_else_IfBlock2.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_else_IfBlock2.d_ref = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_else_else_IfBlock2.d_sr = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_else_IfBlock2.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_else_IfBlock2.d_ref = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_IfBlock2.q_dir = Q_DIR_Reverse;
   outC->_L2_then_else_else_else_else_else_IfBlock2.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_IfBlock2.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L3_then_else_else_else_else_else_IfBlock2.valid = kcg_true;
-  outC->_L3_then_else_else_else_else_else_IfBlock2.nid_message = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_IfBlock2.l_message = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_IfBlock2.t_train = kcg_lit_int64(0);
+  outC->_L3_then_else_else_else_else_else_IfBlock2.nid_message = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_IfBlock2.l_message = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_IfBlock2.t_train = kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_IfBlock2.m_ack =
     M_ACK_No_acknowledgement_required;
-  outC->_L3_then_else_else_else_else_else_IfBlock2.nid_lrbg = kcg_lit_int64(0);
+  outC->_L3_then_else_else_else_else_else_IfBlock2.nid_lrbg = kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_IfBlock2 = kcg_true;
   outC->_L1_then_else_else_else_else_else_else_else_IfBlock2.valid = kcg_true;
   outC->_L1_then_else_else_else_else_else_else_else_IfBlock2.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_IfBlock2.l_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_IfBlock2.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_IfBlock2.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L1_then_else_else_else_else_else_else_else_IfBlock2.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock2.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock2.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock2.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock2.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock2.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock2.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock2.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock2.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock2.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock2.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock2.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock2.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock2.q_dir =
     Q_DIR_Reverse;
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock2.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock2.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock2.valid = kcg_true;
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock2.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock2.l_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock2.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock2.field1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock2.field2 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock2.field3 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock2.field4 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock2.field5 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock2.field6 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock2.field7 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock2.field8 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_IfBlock2 = kcg_true;
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock2.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock2.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock2.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock2.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock2.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock2.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock2.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock2.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock2.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock2.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock2.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock2.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock2.q_dir =
     Q_DIR_Reverse;
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock2.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_else_IfBlock2.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L2_then_else_else_else_else_else_else_else_else_else_IfBlock2.valid =
     kcg_true;
   outC->_L2_then_else_else_else_else_else_else_else_else_else_IfBlock2.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_else_IfBlock2.l_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_else_IfBlock2.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_else_IfBlock2.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L2_then_else_else_else_else_else_else_else_else_else_IfBlock2.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_else_IfBlock2.q_orientation =
     Q_ORIENTATION_The_balise_group_has_been_passed_by_the_train_in_reverse_direction;
   outC->_L3_then_else_else_else_else_else_else_else_else_else_IfBlock2.valid =
     kcg_true;
   outC->_L3_then_else_else_else_else_else_else_else_else_else_IfBlock2.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_else_IfBlock2.l_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_else_IfBlock2.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_else_IfBlock2.field1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_else_IfBlock2.field2 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_else_IfBlock2.field3 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_else_IfBlock2.field4 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_else_IfBlock2.field5 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_else_IfBlock2.field6 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_else_IfBlock2.field7 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_else_IfBlock2.field8 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock2.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock2.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock2.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock2.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock2.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock2.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock2.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock2.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock2.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock2.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock2.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock2.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock2.q_dir =
     Q_DIR_Reverse;
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock2.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_else_else_else_else_else_else_else_else_else_else_IfBlock2.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->else_clock_else_else_else_else_else_else_else_else_IfBlock2 = kcg_true;
   outC->_L4_then_else_else_else_else_else_else_else_else_IfBlock2.valid =
     kcg_true;
   outC->_L4_then_else_else_else_else_else_else_else_else_IfBlock2.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_else_IfBlock2.l_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_else_IfBlock2.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_else_IfBlock2.field1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_else_IfBlock2.field2 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_else_IfBlock2.field3 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_else_IfBlock2.field4 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_else_IfBlock2.field5 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_else_IfBlock2.field6 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_else_IfBlock2.field7 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_else_IfBlock2.field8 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_IfBlock2.valid =
     kcg_true;
   outC->_L3_then_else_else_else_else_else_else_else_else_IfBlock2.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_IfBlock2.l_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_IfBlock2.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_else_IfBlock2.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L3_then_else_else_else_else_else_else_else_else_IfBlock2.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_IfBlock2.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_IfBlock2.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_IfBlock2.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_IfBlock2.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_IfBlock2.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L2_then_else_else_else_else_else_else_else_else_IfBlock2.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_IfBlock2.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_IfBlock2.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_IfBlock2.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L2_then_else_else_else_else_else_else_else_else_IfBlock2.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_IfBlock2.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_IfBlock2.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_IfBlock2.q_dir =
     Q_DIR_Reverse;
   outC->_L2_then_else_else_else_else_else_else_else_else_IfBlock2.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_IfBlock2.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->else_clock_else_else_else_else_else_else_IfBlock2 = kcg_true;
   outC->_L3_then_else_else_else_else_else_else_IfBlock2.valid = kcg_true;
   outC->_L3_then_else_else_else_else_else_else_IfBlock2.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_IfBlock2.l_message =
-    kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_else_IfBlock2.t_train = kcg_lit_int64(
+    kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_else_IfBlock2.t_train = kcg_lit_int32(
       0);
-  outC->_L3_then_else_else_else_else_else_else_IfBlock2.field1 = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_else_IfBlock2.field2 = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_else_IfBlock2.field3 = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_else_IfBlock2.field4 = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_else_IfBlock2.field5 = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_else_IfBlock2.field6 = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_else_IfBlock2.field7 = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_else_IfBlock2.field8 = kcg_lit_int64(0);
+  outC->_L3_then_else_else_else_else_else_else_IfBlock2.field1 = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_else_IfBlock2.field2 = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_else_IfBlock2.field3 = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_else_IfBlock2.field4 = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_else_IfBlock2.field5 = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_else_IfBlock2.field6 = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_else_IfBlock2.field7 = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_else_IfBlock2.field8 = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_IfBlock2.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_IfBlock2.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_IfBlock2.nid_message =
-    kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_else_else_IfBlock2.t_train = kcg_lit_int64(
+    kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_else_else_IfBlock2.t_train = kcg_lit_int32(
       0);
   outC->_L2_then_else_else_else_else_else_else_IfBlock2.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L2_then_else_else_else_else_else_else_IfBlock2.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_IfBlock2.t_train_reference =
-    kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_else_else_IfBlock2.nid_em = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_else_else_IfBlock2.nid_em = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_IfBlock2.q_scale =
     Q_SCALE_10_cm_scale;
-  outC->_L2_then_else_else_else_else_else_else_IfBlock2.d_sr = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_else_else_else_IfBlock2.d_sr = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_IfBlock2.t_sh_rqst =
-    kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_else_else_IfBlock2.d_ref = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_else_else_IfBlock2.d_ref = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_IfBlock2.q_dir = Q_DIR_Reverse;
   outC->_L2_then_else_else_else_else_else_else_IfBlock2.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_IfBlock2.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L1_then_else_else_else_else_else_else_IfBlock2.valid = kcg_true;
   outC->_L1_then_else_else_else_else_else_else_IfBlock2.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_IfBlock2.l_message =
-    kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_else_else_IfBlock2.t_train = kcg_lit_int64(
+    kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_else_else_IfBlock2.t_train = kcg_lit_int32(
       0);
   outC->_L1_then_else_else_else_else_else_else_IfBlock2.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L1_then_else_else_else_else_else_else_IfBlock2.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_IfBlock2 = kcg_true;
   outC->_L3_then_else_else_else_else_IfBlock2.valid = kcg_true;
-  outC->_L3_then_else_else_else_else_IfBlock2.nid_message = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_IfBlock2.l_message = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_IfBlock2.t_train = kcg_lit_int64(0);
+  outC->_L3_then_else_else_else_else_IfBlock2.nid_message = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_IfBlock2.l_message = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_IfBlock2.t_train = kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_IfBlock2.m_ack =
     M_ACK_No_acknowledgement_required;
-  outC->_L3_then_else_else_else_else_IfBlock2.nid_lrbg = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_IfBlock2.radioDevice = kcg_lit_int64(0);
+  outC->_L3_then_else_else_else_else_IfBlock2.nid_lrbg = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_IfBlock2.radioDevice = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_IfBlock2.receivedSystemTime =
-    kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_IfBlock2.nid_message = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_IfBlock2.t_train = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_IfBlock2.nid_message = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_IfBlock2.t_train = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_IfBlock2.m_ack =
     M_ACK_No_acknowledgement_required;
-  outC->_L2_then_else_else_else_else_IfBlock2.nid_lrbg = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_IfBlock2.t_train_reference = kcg_lit_int64(
+  outC->_L2_then_else_else_else_else_IfBlock2.nid_lrbg = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_IfBlock2.t_train_reference = kcg_lit_int32(
       0);
-  outC->_L2_then_else_else_else_else_IfBlock2.nid_em = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_else_IfBlock2.nid_em = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_IfBlock2.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L2_then_else_else_else_else_IfBlock2.d_sr = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_IfBlock2.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L2_then_else_else_else_else_IfBlock2.d_ref = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_else_IfBlock2.d_sr = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_IfBlock2.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L2_then_else_else_else_else_IfBlock2.d_ref = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_IfBlock2.q_dir = Q_DIR_Reverse;
-  outC->_L2_then_else_else_else_else_IfBlock2.d_emergencystop = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_else_IfBlock2.d_emergencystop = kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_IfBlock2.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L1_then_else_else_else_else_IfBlock2.valid = kcg_true;
-  outC->_L1_then_else_else_else_else_IfBlock2.nid_message = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_IfBlock2.l_message = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_IfBlock2.t_train = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_IfBlock2.field1 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_IfBlock2.field2 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_IfBlock2.field3 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_IfBlock2.field4 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_IfBlock2.field5 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_IfBlock2.field6 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_IfBlock2.field7 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_else_else_IfBlock2.field8 = kcg_lit_int64(0);
+  outC->_L1_then_else_else_else_else_IfBlock2.nid_message = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_IfBlock2.l_message = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_IfBlock2.t_train = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_IfBlock2.field1 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_IfBlock2.field2 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_IfBlock2.field3 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_IfBlock2.field4 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_IfBlock2.field5 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_IfBlock2.field6 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_IfBlock2.field7 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_else_else_IfBlock2.field8 = kcg_lit_int32(0);
   outC->else_clock_else_else_IfBlock2 = kcg_true;
   outC->_L3_then_else_else_IfBlock2.valid = kcg_true;
-  outC->_L3_then_else_else_IfBlock2.nid_message = kcg_lit_int64(0);
-  outC->_L3_then_else_else_IfBlock2.l_message = kcg_lit_int64(0);
-  outC->_L3_then_else_else_IfBlock2.t_train = kcg_lit_int64(0);
+  outC->_L3_then_else_else_IfBlock2.nid_message = kcg_lit_int32(0);
+  outC->_L3_then_else_else_IfBlock2.l_message = kcg_lit_int32(0);
+  outC->_L3_then_else_else_IfBlock2.t_train = kcg_lit_int32(0);
   outC->_L3_then_else_else_IfBlock2.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L3_then_else_else_IfBlock2.nid_lrbg = kcg_lit_int64(0);
+  outC->_L3_then_else_else_IfBlock2.nid_lrbg = kcg_lit_int32(0);
   outC->_L3_then_else_else_IfBlock2.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L3_then_else_else_IfBlock2.d_ref = kcg_lit_int64(0);
-  outC->_L2_then_else_else_IfBlock2.radioDevice = kcg_lit_int64(0);
-  outC->_L2_then_else_else_IfBlock2.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L2_then_else_else_IfBlock2.nid_message = kcg_lit_int64(0);
-  outC->_L2_then_else_else_IfBlock2.t_train = kcg_lit_int64(0);
+  outC->_L3_then_else_else_IfBlock2.d_ref = kcg_lit_int32(0);
+  outC->_L2_then_else_else_IfBlock2.radioDevice = kcg_lit_int32(0);
+  outC->_L2_then_else_else_IfBlock2.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L2_then_else_else_IfBlock2.nid_message = kcg_lit_int32(0);
+  outC->_L2_then_else_else_IfBlock2.t_train = kcg_lit_int32(0);
   outC->_L2_then_else_else_IfBlock2.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L2_then_else_else_IfBlock2.nid_lrbg = kcg_lit_int64(0);
-  outC->_L2_then_else_else_IfBlock2.t_train_reference = kcg_lit_int64(0);
-  outC->_L2_then_else_else_IfBlock2.nid_em = kcg_lit_int64(0);
+  outC->_L2_then_else_else_IfBlock2.nid_lrbg = kcg_lit_int32(0);
+  outC->_L2_then_else_else_IfBlock2.t_train_reference = kcg_lit_int32(0);
+  outC->_L2_then_else_else_IfBlock2.nid_em = kcg_lit_int32(0);
   outC->_L2_then_else_else_IfBlock2.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L2_then_else_else_IfBlock2.d_sr = kcg_lit_int64(0);
-  outC->_L2_then_else_else_IfBlock2.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L2_then_else_else_IfBlock2.d_ref = kcg_lit_int64(0);
+  outC->_L2_then_else_else_IfBlock2.d_sr = kcg_lit_int32(0);
+  outC->_L2_then_else_else_IfBlock2.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L2_then_else_else_IfBlock2.d_ref = kcg_lit_int32(0);
   outC->_L2_then_else_else_IfBlock2.q_dir = Q_DIR_Reverse;
-  outC->_L2_then_else_else_IfBlock2.d_emergencystop = kcg_lit_int64(0);
+  outC->_L2_then_else_else_IfBlock2.d_emergencystop = kcg_lit_int32(0);
   outC->_L2_then_else_else_IfBlock2.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L1_then_else_else_IfBlock2.valid = kcg_true;
-  outC->_L1_then_else_else_IfBlock2.nid_message = kcg_lit_int64(0);
-  outC->_L1_then_else_else_IfBlock2.l_message = kcg_lit_int64(0);
-  outC->_L1_then_else_else_IfBlock2.t_train = kcg_lit_int64(0);
-  outC->_L1_then_else_else_IfBlock2.field1 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_IfBlock2.field2 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_IfBlock2.field3 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_IfBlock2.field4 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_IfBlock2.field5 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_IfBlock2.field6 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_IfBlock2.field7 = kcg_lit_int64(0);
-  outC->_L1_then_else_else_IfBlock2.field8 = kcg_lit_int64(0);
+  outC->_L1_then_else_else_IfBlock2.nid_message = kcg_lit_int32(0);
+  outC->_L1_then_else_else_IfBlock2.l_message = kcg_lit_int32(0);
+  outC->_L1_then_else_else_IfBlock2.t_train = kcg_lit_int32(0);
+  outC->_L1_then_else_else_IfBlock2.field1 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_IfBlock2.field2 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_IfBlock2.field3 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_IfBlock2.field4 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_IfBlock2.field5 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_IfBlock2.field6 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_IfBlock2.field7 = kcg_lit_int32(0);
+  outC->_L1_then_else_else_IfBlock2.field8 = kcg_lit_int32(0);
   outC->else_clock_IfBlock2 = kcg_true;
   outC->_L1_then_IfBlock2.valid = kcg_true;
-  outC->_L1_then_IfBlock2.nid_message = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock2.l_message = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock2.t_train = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock2.field1 = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock2.field2 = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock2.field3 = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock2.field4 = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock2.field5 = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock2.field6 = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock2.field7 = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock2.field8 = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock2.nid_message = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock2.l_message = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock2.t_train = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock2.field1 = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock2.field2 = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock2.field3 = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock2.field4 = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock2.field5 = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock2.field6 = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock2.field7 = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock2.field8 = kcg_lit_int32(0);
   outC->_L2_then_IfBlock2.valid = kcg_true;
-  outC->_L2_then_IfBlock2.nid_message = kcg_lit_int64(0);
-  outC->_L2_then_IfBlock2.l_message = kcg_lit_int64(0);
-  outC->_L2_then_IfBlock2.t_train = kcg_lit_int64(0);
+  outC->_L2_then_IfBlock2.nid_message = kcg_lit_int32(0);
+  outC->_L2_then_IfBlock2.l_message = kcg_lit_int32(0);
+  outC->_L2_then_IfBlock2.t_train = kcg_lit_int32(0);
   outC->_L2_then_IfBlock2.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L2_then_IfBlock2.nid_lrbg = kcg_lit_int64(0);
-  outC->_L2_then_IfBlock2.t_train_SH_request = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock2.radioDevice = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock2.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock2.nid_message = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock2.t_train = kcg_lit_int64(0);
+  outC->_L2_then_IfBlock2.nid_lrbg = kcg_lit_int32(0);
+  outC->_L2_then_IfBlock2.t_train_SH_request = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock2.radioDevice = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock2.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock2.nid_message = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock2.t_train = kcg_lit_int32(0);
   outC->_L3_then_IfBlock2.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L3_then_IfBlock2.nid_lrbg = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock2.t_train_reference = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock2.nid_em = kcg_lit_int64(0);
+  outC->_L3_then_IfBlock2.nid_lrbg = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock2.t_train_reference = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock2.nid_em = kcg_lit_int32(0);
   outC->_L3_then_IfBlock2.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L3_then_IfBlock2.d_sr = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock2.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock2.d_ref = kcg_lit_int64(0);
+  outC->_L3_then_IfBlock2.d_sr = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock2.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock2.d_ref = kcg_lit_int32(0);
   outC->_L3_then_IfBlock2.q_dir = Q_DIR_Reverse;
-  outC->_L3_then_IfBlock2.d_emergencystop = kcg_lit_int64(0);
+  outC->_L3_then_IfBlock2.d_emergencystop = kcg_lit_int32(0);
   outC->_L3_then_IfBlock2.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
-  outC->Header_Out.radioDevice = kcg_lit_int64(0);
-  outC->Header_Out.receivedSystemTime = kcg_lit_int64(0);
-  outC->Header_Out.nid_message = kcg_lit_int64(0);
-  outC->Header_Out.t_train = kcg_lit_int64(0);
+  outC->Header_Out.radioDevice = kcg_lit_int32(0);
+  outC->Header_Out.receivedSystemTime = kcg_lit_int32(0);
+  outC->Header_Out.nid_message = kcg_lit_int32(0);
+  outC->Header_Out.t_train = kcg_lit_int32(0);
   outC->Header_Out.m_ack = M_ACK_No_acknowledgement_required;
-  outC->Header_Out.nid_lrbg = kcg_lit_int64(0);
-  outC->Header_Out.t_train_reference = kcg_lit_int64(0);
-  outC->Header_Out.nid_em = kcg_lit_int64(0);
+  outC->Header_Out.nid_lrbg = kcg_lit_int32(0);
+  outC->Header_Out.t_train_reference = kcg_lit_int32(0);
+  outC->Header_Out.nid_em = kcg_lit_int32(0);
   outC->Header_Out.q_scale = Q_SCALE_10_cm_scale;
-  outC->Header_Out.d_sr = kcg_lit_int64(0);
-  outC->Header_Out.t_sh_rqst = kcg_lit_int64(0);
-  outC->Header_Out.d_ref = kcg_lit_int64(0);
+  outC->Header_Out.d_sr = kcg_lit_int32(0);
+  outC->Header_Out.t_sh_rqst = kcg_lit_int32(0);
+  outC->Header_Out.d_ref = kcg_lit_int32(0);
   outC->Header_Out.q_dir = Q_DIR_Reverse;
-  outC->Header_Out.d_emergencystop = kcg_lit_int64(0);
+  outC->Header_Out.d_emergencystop = kcg_lit_int32(0);
   outC->Header_Out.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   /* IfBlock1:then:_L3=(TM_RBC_conversions_legacy::M002_to_Radio_Track_Train_H#1)/ */

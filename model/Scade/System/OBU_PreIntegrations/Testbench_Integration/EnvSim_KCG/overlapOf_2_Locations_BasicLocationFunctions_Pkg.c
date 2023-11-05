@@ -19,47 +19,47 @@ void overlapOf_2_Locations_BasicLocationFunctions_Pkg(
   outC->_L9 = outC->_L2.nominal;
   outC->_L8 = outC->_L2.d_max;
   outC->_L7 = outC->_L8 + outC->_L9;
-  outC->I2_Min_1_int64 = outC->_L7;
-  outC->_L22_Min_1_int64 = outC->I2_Min_1_int64;
+  outC->I2_Min_1_int32 = outC->_L7;
+  outC->_L22_Min_1_int32 = outC->I2_Min_1_int32;
   kcg_copy_LocWithInAcc_T_Obu_BasicTypes_Pkg(&outC->_L1, loc_1);
   outC->_L5 = outC->_L1.nominal;
   outC->_L3 = outC->_L1.d_max;
   outC->_L6 = outC->_L3 + outC->_L5;
-  outC->I1_Min_1_int64 = outC->_L6;
-  outC->_L21_Min_1_int64 = outC->I1_Min_1_int64;
-  outC->_L25_Min_1_int64 = outC->_L21_Min_1_int64 <= outC->_L22_Min_1_int64;
+  outC->I1_Min_1_int32 = outC->_L6;
+  outC->_L21_Min_1_int32 = outC->I1_Min_1_int32;
+  outC->_L25_Min_1_int32 = outC->_L21_Min_1_int32 <= outC->_L22_Min_1_int32;
   /* @1/_L24= */
-  if (outC->_L25_Min_1_int64) {
-    outC->_L24_Min_1_int64 = outC->_L21_Min_1_int64;
+  if (outC->_L25_Min_1_int32) {
+    outC->_L24_Min_1_int32 = outC->_L21_Min_1_int32;
   }
   else {
-    outC->_L24_Min_1_int64 = outC->_L22_Min_1_int64;
+    outC->_L24_Min_1_int32 = outC->_L22_Min_1_int32;
   }
-  outC->Mi_Output_Min_1_int64 = outC->_L24_Min_1_int64;
+  outC->Mi_Output_Min_1_int32 = outC->_L24_Min_1_int32;
   kcg_copy_LocWithInAcc_T_Obu_BasicTypes_Pkg(&outC->_L18, loc_2);
   outC->_L15 = outC->_L18.nominal;
   outC->_L13 = outC->_L18.d_min;
   outC->_L17 = outC->_L13 + outC->_L15;
-  outC->I2_Max_1_int64 = outC->_L17;
-  outC->_L2_Max_1_int64 = outC->I2_Max_1_int64;
+  outC->I2_Max_1_int32 = outC->_L17;
+  outC->_L2_Max_1_int32 = outC->I2_Max_1_int32;
   kcg_copy_LocWithInAcc_T_Obu_BasicTypes_Pkg(&outC->_L12, loc_1);
   outC->_L16 = outC->_L12.nominal;
   outC->_L14 = outC->_L12.d_min;
   outC->_L11 = outC->_L14 + outC->_L16;
-  outC->I1_Max_1_int64 = outC->_L11;
-  outC->_L1_Max_1_int64 = outC->I1_Max_1_int64;
-  outC->_L3_Max_1_int64 = outC->_L1_Max_1_int64 >= outC->_L2_Max_1_int64;
+  outC->I1_Max_1_int32 = outC->_L11;
+  outC->_L1_Max_1_int32 = outC->I1_Max_1_int32;
+  outC->_L3_Max_1_int32 = outC->_L1_Max_1_int32 >= outC->_L2_Max_1_int32;
   /* @2/_L4= */
-  if (outC->_L3_Max_1_int64) {
-    outC->_L4_Max_1_int64 = outC->_L1_Max_1_int64;
+  if (outC->_L3_Max_1_int32) {
+    outC->_L4_Max_1_int32 = outC->_L1_Max_1_int32;
   }
   else {
-    outC->_L4_Max_1_int64 = outC->_L2_Max_1_int64;
+    outC->_L4_Max_1_int32 = outC->_L2_Max_1_int32;
   }
-  outC->Ma_Output_Max_1_int64 = outC->_L4_Max_1_int64;
-  outC->_L19 = outC->Ma_Output_Max_1_int64;
-  outC->_L23 = kcg_lit_int64(2);
-  outC->_L10 = outC->Mi_Output_Min_1_int64;
+  outC->Ma_Output_Max_1_int32 = outC->_L4_Max_1_int32;
+  outC->_L19 = outC->Ma_Output_Max_1_int32;
+  outC->_L23 = kcg_lit_int32(2);
+  outC->_L10 = outC->Mi_Output_Min_1_int32;
   outC->_L21 = outC->_L10 - outC->_L19;
   outC->_L22 = outC->_L21 / outC->_L23;
   outC->_L24 = outC->_L22 + outC->_L19;
@@ -77,60 +77,60 @@ void overlapOf_2_Locations_BasicLocationFunctions_Pkg(
 void overlapOf_2_Locations_init_BasicLocationFunctions_Pkg(
   outC_overlapOf_2_Locations_BasicLocationFunctions_Pkg *outC)
 {
-  outC->_L33 = kcg_lit_int64(0);
-  outC->_L32 = kcg_lit_int64(0);
-  outC->_L31.nominal = kcg_lit_int64(0);
-  outC->_L31.d_min = kcg_lit_int64(0);
-  outC->_L31.d_max = kcg_lit_int64(0);
-  outC->_L24 = kcg_lit_int64(0);
-  outC->_L23 = kcg_lit_int64(0);
-  outC->_L22 = kcg_lit_int64(0);
-  outC->_L21 = kcg_lit_int64(0);
+  outC->_L33 = kcg_lit_int32(0);
+  outC->_L32 = kcg_lit_int32(0);
+  outC->_L31.nominal = kcg_lit_int32(0);
+  outC->_L31.d_min = kcg_lit_int32(0);
+  outC->_L31.d_max = kcg_lit_int32(0);
+  outC->_L24 = kcg_lit_int32(0);
+  outC->_L23 = kcg_lit_int32(0);
+  outC->_L22 = kcg_lit_int32(0);
+  outC->_L21 = kcg_lit_int32(0);
   outC->_L20 = kcg_true;
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L12.nominal = kcg_lit_int64(0);
-  outC->_L12.d_min = kcg_lit_int64(0);
-  outC->_L12.d_max = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L15 = kcg_lit_int64(0);
-  outC->_L16 = kcg_lit_int64(0);
-  outC->_L17 = kcg_lit_int64(0);
-  outC->_L18.nominal = kcg_lit_int64(0);
-  outC->_L18.d_min = kcg_lit_int64(0);
-  outC->_L18.d_max = kcg_lit_int64(0);
-  outC->_L19 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L2.nominal = kcg_lit_int64(0);
-  outC->_L2.d_min = kcg_lit_int64(0);
-  outC->_L2.d_max = kcg_lit_int64(0);
-  outC->_L1.nominal = kcg_lit_int64(0);
-  outC->_L1.d_min = kcg_lit_int64(0);
-  outC->_L1.d_max = kcg_lit_int64(0);
-  outC->_L1_Max_1_int64 = kcg_lit_int64(0);
-  outC->_L2_Max_1_int64 = kcg_lit_int64(0);
-  outC->_L3_Max_1_int64 = kcg_true;
-  outC->_L4_Max_1_int64 = kcg_lit_int64(0);
-  outC->I1_Max_1_int64 = kcg_lit_int64(0);
-  outC->I2_Max_1_int64 = kcg_lit_int64(0);
-  outC->Ma_Output_Max_1_int64 = kcg_lit_int64(0);
-  outC->_L21_Min_1_int64 = kcg_lit_int64(0);
-  outC->_L22_Min_1_int64 = kcg_lit_int64(0);
-  outC->_L24_Min_1_int64 = kcg_lit_int64(0);
-  outC->_L25_Min_1_int64 = kcg_true;
-  outC->I1_Min_1_int64 = kcg_lit_int64(0);
-  outC->I2_Min_1_int64 = kcg_lit_int64(0);
-  outC->Mi_Output_Min_1_int64 = kcg_lit_int64(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L12.nominal = kcg_lit_int32(0);
+  outC->_L12.d_min = kcg_lit_int32(0);
+  outC->_L12.d_max = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L15 = kcg_lit_int32(0);
+  outC->_L16 = kcg_lit_int32(0);
+  outC->_L17 = kcg_lit_int32(0);
+  outC->_L18.nominal = kcg_lit_int32(0);
+  outC->_L18.d_min = kcg_lit_int32(0);
+  outC->_L18.d_max = kcg_lit_int32(0);
+  outC->_L19 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L2.nominal = kcg_lit_int32(0);
+  outC->_L2.d_min = kcg_lit_int32(0);
+  outC->_L2.d_max = kcg_lit_int32(0);
+  outC->_L1.nominal = kcg_lit_int32(0);
+  outC->_L1.d_min = kcg_lit_int32(0);
+  outC->_L1.d_max = kcg_lit_int32(0);
+  outC->_L1_Max_1_int32 = kcg_lit_int32(0);
+  outC->_L2_Max_1_int32 = kcg_lit_int32(0);
+  outC->_L3_Max_1_int32 = kcg_true;
+  outC->_L4_Max_1_int32 = kcg_lit_int32(0);
+  outC->I1_Max_1_int32 = kcg_lit_int32(0);
+  outC->I2_Max_1_int32 = kcg_lit_int32(0);
+  outC->Ma_Output_Max_1_int32 = kcg_lit_int32(0);
+  outC->_L21_Min_1_int32 = kcg_lit_int32(0);
+  outC->_L22_Min_1_int32 = kcg_lit_int32(0);
+  outC->_L24_Min_1_int32 = kcg_lit_int32(0);
+  outC->_L25_Min_1_int32 = kcg_true;
+  outC->I1_Min_1_int32 = kcg_lit_int32(0);
+  outC->I2_Min_1_int32 = kcg_lit_int32(0);
+  outC->Mi_Output_Min_1_int32 = kcg_lit_int32(0);
   outC->overlap = kcg_true;
-  outC->loc.nominal = kcg_lit_int64(0);
-  outC->loc.d_min = kcg_lit_int64(0);
-  outC->loc.d_max = kcg_lit_int64(0);
+  outC->loc.nominal = kcg_lit_int32(0);
+  outC->loc.d_min = kcg_lit_int32(0);
+  outC->loc.d_max = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

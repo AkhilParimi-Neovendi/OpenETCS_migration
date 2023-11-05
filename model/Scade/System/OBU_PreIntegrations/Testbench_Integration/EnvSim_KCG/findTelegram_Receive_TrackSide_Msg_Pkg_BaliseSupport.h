@@ -27,7 +27,7 @@ typedef struct {
   TelegramArray_T_BG_Types_Pkg /* IfBlock1:then:_L2/ */ _L2_then_IfBlock1;
   _53_array /* IfBlock1:then:_L3/ */ _L3_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L5/ */ _L5_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L6/ */ _L6_then_IfBlock1;
   N_PIG /* IfBlock1:then:_L7/ */ _L7_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L9/ */ _L9_then_IfBlock1;

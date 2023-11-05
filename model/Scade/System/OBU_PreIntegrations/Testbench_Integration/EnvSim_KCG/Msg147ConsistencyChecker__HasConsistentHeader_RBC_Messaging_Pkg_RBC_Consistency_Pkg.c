@@ -28,15 +28,15 @@ void Msg147ConsistencyChecker__HasConsistentHeader_init_RBC_Messaging_Pkg_RBC_Co
   outC_Msg147ConsistencyChecker__HasConsistentHeader_RBC_Messaging_Pkg_RBC_Consistency_Pkg *outC)
 {
   outC->_L8.present = kcg_true;
-  outC->_L8.nid_message = kcg_lit_int64(0);
-  outC->_L8.t_train = kcg_lit_int64(0);
-  outC->_L8.nid_engine = kcg_lit_int64(0);
+  outC->_L8.nid_message = kcg_lit_int32(0);
+  outC->_L8.t_train = kcg_lit_int32(0);
+  outC->_L8.nid_engine = kcg_lit_int32(0);
   outC->_L8.xQ_MARQSTREASON = Q_MARQSTREASON_Start_selected_by_driver;
-  outC->_L8.xT_TRAIN = kcg_lit_int64(0);
-  outC->_L8.xNID_EM = kcg_lit_int64(0);
+  outC->_L8.xT_TRAIN = kcg_lit_int32(0);
+  outC->_L8.xNID_EM = kcg_lit_int32(0);
   outC->_L8.xQ_EMERGENCYSTOP =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
-  outC->_L8.xNID_TEXTMESSAGE = kcg_lit_int64(0);
+  outC->_L8.xNID_TEXTMESSAGE = kcg_lit_int32(0);
   outC->_L7 = kcg_true;
   outC->outIsConsistent = kcg_true;
 }

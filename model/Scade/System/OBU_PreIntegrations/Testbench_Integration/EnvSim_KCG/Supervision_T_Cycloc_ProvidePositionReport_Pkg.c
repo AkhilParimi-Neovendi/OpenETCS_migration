@@ -33,10 +33,10 @@ void Supervision_T_Cycloc_ProvidePositionReport_Pkg(
   outC->_L29 = systemTime;
   outC->_L31 = outC->_L29 - outC->_L27;
   outC->_L32 = outC->_L31 >= outC->_L34;
-  outC->_L41 = kcg_lit_int64(255);
+  outC->_L41 = kcg_lit_int32(255);
   outC->_L40 = tcycloc;
   outC->_L42 = outC->_L40 < outC->_L41;
-  outC->_L38 = kcg_lit_int64(0);
+  outC->_L38 = kcg_lit_int32(0);
   outC->_L36 = tcycloc;
   outC->_L37 = outC->_L36 > outC->_L38;
   outC->_L39 = outC->_L37 & outC->_L42;
@@ -57,26 +57,26 @@ void Supervision_T_Cycloc_init_ProvidePositionReport_Pkg(
   outC_Supervision_T_Cycloc_ProvidePositionReport_Pkg *outC)
 {
   outC->_L46 = kcg_true;
-  outC->_L45 = kcg_lit_int64(0);
-  outC->_L44 = kcg_lit_int64(0);
-  outC->_L43 = kcg_lit_int64(0);
-  outC->_L40 = kcg_lit_int64(0);
-  outC->_L41 = kcg_lit_int64(0);
+  outC->_L45 = kcg_lit_int32(0);
+  outC->_L44 = kcg_lit_int32(0);
+  outC->_L43 = kcg_lit_int32(0);
+  outC->_L40 = kcg_lit_int32(0);
+  outC->_L41 = kcg_lit_int32(0);
   outC->_L42 = kcg_true;
   outC->_L39 = kcg_true;
-  outC->_L38 = kcg_lit_int64(0);
+  outC->_L38 = kcg_lit_int32(0);
   outC->_L37 = kcg_true;
-  outC->_L36 = kcg_lit_int64(0);
+  outC->_L36 = kcg_lit_int32(0);
   outC->_L35 = kcg_true;
-  outC->_L34 = kcg_lit_int64(0);
-  outC->_L33 = kcg_lit_int64(0);
+  outC->_L34 = kcg_lit_int32(0);
+  outC->_L33 = kcg_lit_int32(0);
   outC->_L32 = kcg_true;
-  outC->_L31 = kcg_lit_int64(0);
-  outC->_L29 = kcg_lit_int64(0);
-  outC->_L28 = kcg_lit_int64(0);
-  outC->_L27 = kcg_lit_int64(0);
+  outC->_L31 = kcg_lit_int32(0);
+  outC->_L29 = kcg_lit_int32(0);
+  outC->_L28 = kcg_lit_int32(0);
+  outC->_L27 = kcg_lit_int32(0);
   outC->trigger = kcg_true;
-  outC->lastTime = kcg_lit_int64(0);
+  outC->lastTime = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -85,7 +85,7 @@ void Supervision_T_Cycloc_init_ProvidePositionReport_Pkg(
 void Supervision_T_Cycloc_reset_ProvidePositionReport_Pkg(
   outC_Supervision_T_Cycloc_ProvidePositionReport_Pkg *outC)
 {
-  outC->lastTime = kcg_lit_int64(0);
+  outC->lastTime = kcg_lit_int32(0);
 }
 #endif /* KCG_NO_EXTERN_CALL_TO_RESET */
 

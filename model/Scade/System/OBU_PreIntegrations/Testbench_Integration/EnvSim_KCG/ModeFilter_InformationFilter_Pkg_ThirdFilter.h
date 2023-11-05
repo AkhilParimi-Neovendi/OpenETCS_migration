@@ -30,10 +30,10 @@ typedef struct {
   ModeDecisionTableType_DataDictionary_Pkg /* _L249/ */ _L249;
   ModeDecisionTableActionKind_DataDictionary_Pkg /* _L256/ */ _L256;
   M_MODE /* _L259/ */ _L259;
-  kcg_int64 /* _L261/ */ _L261;
-  kcg_int64 /* _L262/ */ _L262;
+  kcg_int32 /* _L261/ */ _L261;
+  kcg_int32 /* _L262/ */ _L262;
   kcg_bool /* _L263/ */ _L263;
-  kcg_int64 /* _L268/ */ _L268;
+  kcg_int32 /* _L268/ */ _L268;
 } outC_ModeFilter_InformationFilter_Pkg_ThirdFilter;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -42,7 +42,7 @@ extern void ModeFilter_InformationFilter_Pkg_ThirdFilter(
   /* inOperationModus/ */
   M_MODE inOperationModus,
   /* inPacketId/ */
-  kcg_int64 inPacketId,
+  kcg_int32 inPacketId,
   outC_ModeFilter_InformationFilter_Pkg_ThirdFilter *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

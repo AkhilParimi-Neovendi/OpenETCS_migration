@@ -1,20 +1,22 @@
 #include "kcg_types.h"
 #include "impPASPgetRelavantBreakingValues.h"
- 
-void impPASPgetRelavantBreakingValues_PASP(  
-/* PASP::impPASPgetRelavantBreakingValues::CPS */ kcg_float64 CPS,
+
+ 
+void impPASPgetRelavantBreakingValues_PASP( 
+ 
+/* PASP::impPASPgetRelavantBreakingValues::CPS */ kcg_float32 CPS,
   /* PASP::impPASPgetRelavantBreakingValues::Distances */ tPASP_Array *Distances,
   /* PASP::impPASPgetRelavantBreakingValues::Speeds */ tPASP_Array *Speeds,
   /* PASP::impPASPgetRelavantBreakingValues::FilteredDistances */ tPASP_Array *FilteredDistances,
   /* PASP::impPASPgetRelavantBreakingValues::filteredSpeeds */ tPASP_Array *filteredSpeeds)
 {
-	kcg_int64 i;
-	kcg_int64 j;
-	kcg_int64 lastIndex = 0;
-	kcg_float64 maxSSPDist = 0.0;
+	kcg_int32 i;
+	kcg_int32 j;
+	kcg_int32 lastIndex = 0;
+	kcg_float32 maxSSPDist = 0.0;
 
 	(*FilteredDistances)[0] = (*Distances)[1];
-	(*filteredSpeeds)[0] = (kcg_float64)4.0;
+	(*filteredSpeeds)[0] = (kcg_float32)4.0;
 
 
 	for(i = 0; i <= 9; i++)
@@ -29,8 +31,8 @@ void impPASPgetRelavantBreakingValues_PASP(
 	
 	for (i = 0; i <= 8; i++) {
 		// calculate speed levels for pair of speeds in input array
-		kcg_int64 speedLevel1 = utilGetSpeedLevel((*Speeds)[i+1], CPS);
-		kcg_int64 speedLevel2 = utilGetSpeedLevel((*Speeds)[i], CPS);
+		kcg_int32 speedLevel1 = utilGetSpeedLevel((*Speeds)[i+1], CPS);
+		kcg_int32 speedLevel2 = utilGetSpeedLevel((*Speeds)[i], CPS);
 		if ((*Speeds)[i+1] < 0.0){
 			(*FilteredDistances)[lastIndex] = maxSSPDist;
 			(*filteredSpeeds)[lastIndex] = speedLevel2;
@@ -39,7 +41,7 @@ void impPASPgetRelavantBreakingValues_PASP(
 			lastIndex++;
 			
 			(*FilteredDistances)[lastIndex] = (*Distances)[i+2];
-			(*filteredSpeeds)[lastIndex] = (kcg_float64)speedLevel1;
+			(*filteredSpeeds)[lastIndex] = (kcg_float32)speedLevel1;
 		} else if (speedLevel1 == 0) {
 			for (j = i+1; j <= 8; j++) {
 				(*FilteredDistances)[j] = (*Distances)[i+1];
@@ -53,9 +55,11 @@ void impPASPgetRelavantBreakingValues_PASP(
 			(*FilteredDistances)[i+1] = 1337.0;
 		}
 	}
-} 
-    
-kcg_int64 utilGetSpeedLevel (kcg_float64 value1, kcg_float64 referenceValue) {
+}
+ 
+   
+ 
+kcg_int32 utilGetSpeedLevel (kcg_float32 value1, kcg_float32 referenceValue) {
 	if ((int)referenceValue == 0) {
 		return 4;
 	}
@@ -64,7 +68,7 @@ kcg_int64 utilGetSpeedLevel (kcg_float64 value1, kcg_float64 referenceValue) {
 	{
 		return 0;
 	}
-	kcg_float64 value1Percent = (value1/referenceValue);
+	kcg_float32 value1Percent = (value1/referenceValue);
 	
 	if (value1Percent > 0.99) {
 		return 4;
@@ -76,7 +80,11 @@ kcg_int64 utilGetSpeedLevel (kcg_float64 value1, kcg_float64 referenceValue) {
 		return 1;
 	} else if (0.01 > value1Percent) {
 		return 0;
-	} 
-} 
- 
-  
+	}
+ 
+}
+ 
+
+ 
+ 
+ 

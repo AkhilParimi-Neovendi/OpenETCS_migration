@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _checkSingleBB_Receive_TrackSide_Msg_Pkg_BaliseSupport_H_
 #define _checkSingleBB_Receive_TrackSide_Msg_Pkg_BaliseSupport_H_
@@ -24,9 +24,9 @@ typedef struct {
   BGCollector_T_Receive_TrackSide_Msg_Pkg /* _L2/ */ _L2;
   BGCollector_T_Receive_TrackSide_Msg_Pkg /* _L3/ */ _L3;
   kcg_bool /* _L14/ */ _L14;
-  kcg_int64 /* _L15/ */ _L15;
+  kcg_int32 /* _L15/ */ _L15;
   kcg_bool /* _L16/ */ _L16;
-  kcg_int64 /* _L17/ */ _L17;
+  kcg_int32 /* _L17/ */ _L17;
   Telegram_T_BG_Types_Pkg /* _L18/ */ _L18;
   kcg_bool /* _L19/ */ _L19;
   kcg_bool /* _L20/ */ _L20;
@@ -38,8 +38,8 @@ typedef struct {
   NID_BG /* _L27/ */ _L27;
   centerOfBalisePosition_T_BG_Types_Pkg /* _L26/ */ _L26;
   centerOfBalisePosition_T_BG_Types_Pkg /* _L25/ */ _L25;
-  kcg_int64 /* _L24/ */ _L24;
-  kcg_int64 /* _L23/ */ _L23;
+  kcg_int32 /* _L24/ */ _L24;
+  kcg_int32 /* _L23/ */ _L23;
 } outC_checkSingleBB_Receive_TrackSide_Msg_Pkg_BaliseSupport;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -66,6 +66,6 @@ extern void checkSingleBB_init_Receive_TrackSide_Msg_Pkg_BaliseSupport(
 #endif /* _checkSingleBB_Receive_TrackSide_Msg_Pkg_BaliseSupport_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** checkSingleBB_Receive_TrackSide_Msg_Pkg_BaliseSupport.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

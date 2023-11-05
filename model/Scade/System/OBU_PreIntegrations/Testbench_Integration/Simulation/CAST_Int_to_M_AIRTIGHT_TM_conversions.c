@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,7 +10,7 @@
 /* TM_conversions::CAST_Int_to_M_AIRTIGHT/ */
 void CAST_Int_to_M_AIRTIGHT_TM_conversions(
   /* int__m_airtight_in/ */
-  kcg_int64 int__m_airtight_in,
+  kcg_int32 int__m_airtight_in,
   outC_CAST_Int_to_M_AIRTIGHT_TM_conversions *outC)
 {
   /* m_airtight/ */
@@ -75,10 +75,10 @@ void CAST_Int_to_M_AIRTIGHT_TM_conversions(
 void CAST_Int_to_M_AIRTIGHT_init_TM_conversions(
   outC_CAST_Int_to_M_AIRTIGHT_TM_conversions *outC)
 {
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->_L5 = kcg_true;
   outC->error = kcg_true;
-  outC->m_airtight_in = kcg_lit_int64(0);
+  outC->m_airtight_in = kcg_lit_int32(0);
   outC->IfBlock1_clock = kcg_true;
   outC->_L7_then_else_IfBlock1 = M_AIRTIGHT_Not_fitted;
   outC->_L6_then_else_IfBlock1 = kcg_true;
@@ -103,6 +103,6 @@ void CAST_Int_to_M_AIRTIGHT_reset_TM_conversions(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_Int_to_M_AIRTIGHT_TM_conversions.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

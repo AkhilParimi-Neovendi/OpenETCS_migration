@@ -19,7 +19,7 @@ void Write_int_to_DMI_Train_Running_Number_DATA_Packets_Bothways(
     &outC->_L8,
     dmi_train_running_number_int);
   outC->_L13 = outC->_L8[0];
-  outC->_L12 = kcg_lit_int64(1);
+  outC->_L12 = kcg_lit_int32(1);
   outC->_L11 = outC->_L12 == outC->_L13;
   outC->every = outC->_L11;
   if (outC->every) {
@@ -57,21 +57,21 @@ void Write_int_to_DMI_Train_Running_Number_init_DATA_Packets_Bothways(
   static kcg_size idx;
 
   outC->_L14.valid = kcg_true;
-  outC->_L14.systemTime = kcg_lit_int64(0);
-  outC->_L14.trainRunningNumber = kcg_lit_int64(0);
+  outC->_L14.systemTime = kcg_lit_int32(0);
+  outC->_L14.trainRunningNumber = kcg_lit_int32(0);
   outC->_L11 = kcg_true;
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
   outC->_L10.valid = kcg_true;
-  outC->_L10.systemTime = kcg_lit_int64(0);
-  outC->_L10.trainRunningNumber = kcg_lit_int64(0);
+  outC->_L10.systemTime = kcg_lit_int32(0);
+  outC->_L10.trainRunningNumber = kcg_lit_int32(0);
   for (idx = 0; idx < 3; idx++) {
-    outC->_L8[idx] = kcg_lit_int64(0);
+    outC->_L8[idx] = kcg_lit_int32(0);
   }
   outC->every = kcg_true;
   outC->dmi_train_running_number_ct.valid = kcg_true;
-  outC->dmi_train_running_number_ct.systemTime = kcg_lit_int64(0);
-  outC->dmi_train_running_number_ct.trainRunningNumber = kcg_lit_int64(0);
+  outC->dmi_train_running_number_ct.systemTime = kcg_lit_int32(0);
+  outC->dmi_train_running_number_ct.trainRunningNumber = kcg_lit_int32(0);
   /* _L10=(DATA::Packets::Bothways::C_int_to_DMI_Train_Running_Number#1)/ */
   C_int_to_DMI_Train_Running_Number_init_DATA_Packets_Bothways(
     &outC->Context_C_int_to_DMI_Train_Running_Number_1);

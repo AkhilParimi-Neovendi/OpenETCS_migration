@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _C_P005_ForCalcTrainPos_TM_conversions_H_
 #define _C_P005_ForCalcTrainPos_TM_conversions_H_
@@ -33,11 +33,11 @@ typedef struct {
   Q_DIR /* _L7/ */ _L7;
   kcg_bool /* _L6/ */ _L6;
   P005_OBU_sectionlist_enum_T_TM /* _L18/ */ _L18;
-  _92_array /* _L20/ */ _L20;
-  _89_array /* _L21/ */ _L21;
-  array_int64_33 /* _L22/ */ _L22;
+  _9_array /* _L20/ */ _L20;
+  _7_array /* _L21/ */ _L21;
+  array_int32_33 /* _L22/ */ _L22;
   NID_C /* _L23/ */ _L23;
-  array_int64_33 /* _L24/ */ _L24;
+  array_int32_33 /* _L24/ */ _L24;
 } outC_C_P005_ForCalcTrainPos_TM_conversions;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -66,6 +66,6 @@ extern void C_P005_ForCalcTrainPos_init_TM_conversions(
 #endif /* _C_P005_ForCalcTrainPos_TM_conversions_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P005_ForCalcTrainPos_TM_conversions.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

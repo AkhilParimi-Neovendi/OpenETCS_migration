@@ -34,7 +34,7 @@ typedef struct {
   positionedBG_T_TrainPosition_Types_Pck /* _L2/ */ _L2;
   LinkedBG_T_BG_Types_Pkg /* _L3/ */ _L3;
   infoFromLinking_T_TrainPosition_Types_Pck /* _L17/ */ _L17;
-  kcg_int64 /* _L16/ */ _L16;
+  kcg_int32 /* _L16/ */ _L16;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L15/ */ _L15;
   Q_LINK /* _L14/ */ _L14;
   NID_BG /* _L13/ */ _L13;
@@ -48,7 +48,7 @@ typedef struct {
   passedBG_T_BG_Types_Pkg /* _L89/ */ _L89;
   LinkedBG_T_BG_Types_Pkg /* _L90/ */ _L90;
   passedBG_T_BG_Types_Pkg /* _L113/ */ _L113;
-  kcg_int64 /* _L114/ */ _L114;
+  kcg_int32 /* _L114/ */ _L114;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L117/ */ _L117;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L119/ */ _L119;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L120/ */ _L120;

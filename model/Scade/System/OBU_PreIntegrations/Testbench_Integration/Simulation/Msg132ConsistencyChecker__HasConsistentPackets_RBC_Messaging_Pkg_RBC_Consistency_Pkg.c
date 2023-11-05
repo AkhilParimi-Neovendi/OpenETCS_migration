@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -112,146 +112,146 @@ void Msg132ConsistencyChecker__HasConsistentPackets_init_RBC_Messaging_Pkg_RBC_C
   outC->_L16 = kcg_true;
   outC->_L18 = kcg_true;
   outC->_L19.p0.valid = kcg_true;
-  outC->_L19.p0.packet0.NID_PACKET = kcg_lit_int64(0);
-  outC->_L19.p0.packet0.L_PACKET = kcg_lit_int64(0);
+  outC->_L19.p0.packet0.NID_PACKET = kcg_lit_int32(0);
+  outC->_L19.p0.packet0.L_PACKET = kcg_lit_int32(0);
   outC->_L19.p0.packet0.qscale = Q_SCALE_10_cm_scale;
-  outC->_L19.p0.packet0.NID_LRBG = kcg_lit_int64(0);
-  outC->_L19.p0.packet0.D_LRBG = kcg_lit_int64(0);
+  outC->_L19.p0.packet0.NID_LRBG = kcg_lit_int32(0);
+  outC->_L19.p0.packet0.D_LRBG = kcg_lit_int32(0);
   outC->_L19.p0.packet0.dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L19.p0.packet0.dlrbg = Q_DLRBG_Reverse;
-  outC->_L19.p0.packet0.L_DOUBTOVER = kcg_lit_int64(0);
-  outC->_L19.p0.packet0.L_DOUBTUNDER = kcg_lit_int64(0);
+  outC->_L19.p0.packet0.L_DOUBTOVER = kcg_lit_int32(0);
+  outC->_L19.p0.packet0.L_DOUBTUNDER = kcg_lit_int32(0);
   outC->_L19.p0.packet0.length =
     Q_LENGTH_No_train_integrity_information_available;
-  outC->_L19.p0.packet0.L_TRAININT = kcg_lit_int64(0);
-  outC->_L19.p0.packet0.V_TRAIN = kcg_lit_int64(0);
+  outC->_L19.p0.packet0.L_TRAININT = kcg_lit_int32(0);
+  outC->_L19.p0.packet0.V_TRAIN = kcg_lit_int32(0);
   outC->_L19.p0.packet0.dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L19.p0.packet0.mode = M_MODE_Full_Supervision;
   outC->_L19.p0.packet0.level = M_LEVEL_Level_0;
-  outC->_L19.p0.packet0.NID_NTC = kcg_lit_int64(0);
+  outC->_L19.p0.packet0.NID_NTC = kcg_lit_int32(0);
   outC->_L19.p1.valid = kcg_true;
-  outC->_L19.p1.packet1.NID_PACKET = kcg_lit_int64(0);
-  outC->_L19.p1.packet1.L_PACKET = kcg_lit_int64(0);
+  outC->_L19.p1.packet1.NID_PACKET = kcg_lit_int32(0);
+  outC->_L19.p1.packet1.L_PACKET = kcg_lit_int32(0);
   outC->_L19.p1.packet1.qscale = Q_SCALE_10_cm_scale;
-  outC->_L19.p1.packet1.NID_LRBG = kcg_lit_int64(0);
-  outC->_L19.p1.packet1.NID_PRVLRBG = kcg_lit_int64(0);
-  outC->_L19.p1.packet1.D_LRBG = kcg_lit_int64(0);
+  outC->_L19.p1.packet1.NID_LRBG = kcg_lit_int32(0);
+  outC->_L19.p1.packet1.NID_PRVLRBG = kcg_lit_int32(0);
+  outC->_L19.p1.packet1.D_LRBG = kcg_lit_int32(0);
   outC->_L19.p1.packet1.dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L19.p1.packet1.dlrbg = Q_DLRBG_Reverse;
-  outC->_L19.p1.packet1.L_DOUBTOVER = kcg_lit_int64(0);
-  outC->_L19.p1.packet1.L_DOUBTUNDER = kcg_lit_int64(0);
+  outC->_L19.p1.packet1.L_DOUBTOVER = kcg_lit_int32(0);
+  outC->_L19.p1.packet1.L_DOUBTUNDER = kcg_lit_int32(0);
   outC->_L19.p1.packet1.length =
     Q_LENGTH_No_train_integrity_information_available;
-  outC->_L19.p1.packet1.L_TRAININT = kcg_lit_int64(0);
-  outC->_L19.p1.packet1.V_TRAIN = kcg_lit_int64(0);
+  outC->_L19.p1.packet1.L_TRAININT = kcg_lit_int32(0);
+  outC->_L19.p1.packet1.V_TRAIN = kcg_lit_int32(0);
   outC->_L19.p1.packet1.dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L19.p1.packet1.mode = M_MODE_Full_Supervision;
   outC->_L19.p1.packet1.level = M_LEVEL_Level_0;
-  outC->_L19.p1.packet1.NID_NTC = kcg_lit_int64(0);
+  outC->_L19.p1.packet1.NID_NTC = kcg_lit_int32(0);
   outC->_L19.p3.valid = kcg_true;
-  outC->_L19.p3.number = kcg_lit_int64(0);
+  outC->_L19.p3.number = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 1; idx1++) {
     outC->_L19.p3.aNID_RADIO[idx1].valid = kcg_true;
     for (idx = 0; idx < 15; idx++) {
-      outC->_L19.p3.aNID_RADIO[idx1].telephoneNumber[idx] = kcg_lit_int64(0);
+      outC->_L19.p3.aNID_RADIO[idx1].telephoneNumber[idx] = kcg_lit_int32(0);
     }
   }
   outC->_L19.p4.valid = kcg_true;
   outC->_L19.p4.m_error = M_ERROR_Balise_group_linking_consistency_error;
   outC->_L19.p5.valid = kcg_true;
-  outC->_L19.p5.TrainRunningNumber = kcg_lit_int64(0);
+  outC->_L19.p5.TrainRunningNumber = kcg_lit_int32(0);
   outC->_L19.p9.valid = kcg_true;
-  outC->_L19.p9.transitionInformation = kcg_lit_int64(0);
+  outC->_L19.p9.transitionInformation = kcg_lit_int32(0);
   outC->_L19.p11.valid = kcg_true;
   outC->_L19.p11.nc_cdtrain = NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L19.p11.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->_L19.p11.l_train = kcg_lit_int64(0);
-  outC->_L19.p11.v_maxtrain = kcg_lit_int64(0);
+  outC->_L19.p11.l_train = kcg_lit_int32(0);
+  outC->_L19.p11.v_maxtrain = kcg_lit_int32(0);
   outC->_L19.p11.m_loadinggoage =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L19.p11.m_axleloadcat = M_AXLELOADCAT_A;
   outC->_L19.p11.m_airtight = M_AIRTIGHT_Not_fitted;
-  outC->_L19.p11.n_axle = kcg_lit_int64(0);
-  outC->_L19.p11.nIter_tractionIdentity = kcg_lit_int64(0);
+  outC->_L19.p11.n_axle = kcg_lit_int32(0);
+  outC->_L19.p11.nIter_tractionIdentity = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 4; idx2++) {
     outC->_L19.p11.tractionIdentity[idx2].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->_L19.p11.tractionIdentity[idx2].nid_ctraction = kcg_lit_int64(0);
+    outC->_L19.p11.tractionIdentity[idx2].nid_ctraction = kcg_lit_int32(0);
   }
-  outC->_L19.p11.nIter_ntc = kcg_lit_int64(0);
+  outC->_L19.p11.nIter_ntc = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 5; idx3++) {
-    outC->_L19.p11.nid_ntc[idx3] = kcg_lit_int64(0);
+    outC->_L19.p11.nid_ntc[idx3] = kcg_lit_int32(0);
   }
   outC->_L20 = kcg_true;
   outC->_L21 = kcg_true;
   outC->_L22.valid = kcg_true;
-  outC->_L22.TrainRunningNumber = kcg_lit_int64(0);
+  outC->_L22.TrainRunningNumber = kcg_lit_int32(0);
   outC->_L23.valid = kcg_true;
-  outC->_L23.packet1.NID_PACKET = kcg_lit_int64(0);
-  outC->_L23.packet1.L_PACKET = kcg_lit_int64(0);
+  outC->_L23.packet1.NID_PACKET = kcg_lit_int32(0);
+  outC->_L23.packet1.L_PACKET = kcg_lit_int32(0);
   outC->_L23.packet1.qscale = Q_SCALE_10_cm_scale;
-  outC->_L23.packet1.NID_LRBG = kcg_lit_int64(0);
-  outC->_L23.packet1.NID_PRVLRBG = kcg_lit_int64(0);
-  outC->_L23.packet1.D_LRBG = kcg_lit_int64(0);
+  outC->_L23.packet1.NID_LRBG = kcg_lit_int32(0);
+  outC->_L23.packet1.NID_PRVLRBG = kcg_lit_int32(0);
+  outC->_L23.packet1.D_LRBG = kcg_lit_int32(0);
   outC->_L23.packet1.dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L23.packet1.dlrbg = Q_DLRBG_Reverse;
-  outC->_L23.packet1.L_DOUBTOVER = kcg_lit_int64(0);
-  outC->_L23.packet1.L_DOUBTUNDER = kcg_lit_int64(0);
+  outC->_L23.packet1.L_DOUBTOVER = kcg_lit_int32(0);
+  outC->_L23.packet1.L_DOUBTUNDER = kcg_lit_int32(0);
   outC->_L23.packet1.length = Q_LENGTH_No_train_integrity_information_available;
-  outC->_L23.packet1.L_TRAININT = kcg_lit_int64(0);
-  outC->_L23.packet1.V_TRAIN = kcg_lit_int64(0);
+  outC->_L23.packet1.L_TRAININT = kcg_lit_int32(0);
+  outC->_L23.packet1.V_TRAIN = kcg_lit_int32(0);
   outC->_L23.packet1.dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L23.packet1.mode = M_MODE_Full_Supervision;
   outC->_L23.packet1.level = M_LEVEL_Level_0;
-  outC->_L23.packet1.NID_NTC = kcg_lit_int64(0);
+  outC->_L23.packet1.NID_NTC = kcg_lit_int32(0);
   outC->_L24 = kcg_true;
   outC->_L27.valid = kcg_true;
-  outC->_L27.number = kcg_lit_int64(0);
+  outC->_L27.number = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 1; idx5++) {
     outC->_L27.aNID_RADIO[idx5].valid = kcg_true;
     for (idx4 = 0; idx4 < 15; idx4++) {
-      outC->_L27.aNID_RADIO[idx5].telephoneNumber[idx4] = kcg_lit_int64(0);
+      outC->_L27.aNID_RADIO[idx5].telephoneNumber[idx4] = kcg_lit_int32(0);
     }
   }
   outC->_L28.valid = kcg_true;
   outC->_L28.nc_cdtrain = NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L28.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->_L28.l_train = kcg_lit_int64(0);
-  outC->_L28.v_maxtrain = kcg_lit_int64(0);
+  outC->_L28.l_train = kcg_lit_int32(0);
+  outC->_L28.v_maxtrain = kcg_lit_int32(0);
   outC->_L28.m_loadinggoage =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L28.m_axleloadcat = M_AXLELOADCAT_A;
   outC->_L28.m_airtight = M_AIRTIGHT_Not_fitted;
-  outC->_L28.n_axle = kcg_lit_int64(0);
-  outC->_L28.nIter_tractionIdentity = kcg_lit_int64(0);
+  outC->_L28.n_axle = kcg_lit_int32(0);
+  outC->_L28.nIter_tractionIdentity = kcg_lit_int32(0);
   for (idx6 = 0; idx6 < 4; idx6++) {
     outC->_L28.tractionIdentity[idx6].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->_L28.tractionIdentity[idx6].nid_ctraction = kcg_lit_int64(0);
+    outC->_L28.tractionIdentity[idx6].nid_ctraction = kcg_lit_int32(0);
   }
-  outC->_L28.nIter_ntc = kcg_lit_int64(0);
+  outC->_L28.nIter_ntc = kcg_lit_int32(0);
   for (idx7 = 0; idx7 < 5; idx7++) {
-    outC->_L28.nid_ntc[idx7] = kcg_lit_int64(0);
+    outC->_L28.nid_ntc[idx7] = kcg_lit_int32(0);
   }
   outC->_L29.valid = kcg_true;
-  outC->_L29.packet0.NID_PACKET = kcg_lit_int64(0);
-  outC->_L29.packet0.L_PACKET = kcg_lit_int64(0);
+  outC->_L29.packet0.NID_PACKET = kcg_lit_int32(0);
+  outC->_L29.packet0.L_PACKET = kcg_lit_int32(0);
   outC->_L29.packet0.qscale = Q_SCALE_10_cm_scale;
-  outC->_L29.packet0.NID_LRBG = kcg_lit_int64(0);
-  outC->_L29.packet0.D_LRBG = kcg_lit_int64(0);
+  outC->_L29.packet0.NID_LRBG = kcg_lit_int32(0);
+  outC->_L29.packet0.D_LRBG = kcg_lit_int32(0);
   outC->_L29.packet0.dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L29.packet0.dlrbg = Q_DLRBG_Reverse;
-  outC->_L29.packet0.L_DOUBTOVER = kcg_lit_int64(0);
-  outC->_L29.packet0.L_DOUBTUNDER = kcg_lit_int64(0);
+  outC->_L29.packet0.L_DOUBTOVER = kcg_lit_int32(0);
+  outC->_L29.packet0.L_DOUBTUNDER = kcg_lit_int32(0);
   outC->_L29.packet0.length = Q_LENGTH_No_train_integrity_information_available;
-  outC->_L29.packet0.L_TRAININT = kcg_lit_int64(0);
-  outC->_L29.packet0.V_TRAIN = kcg_lit_int64(0);
+  outC->_L29.packet0.L_TRAININT = kcg_lit_int32(0);
+  outC->_L29.packet0.V_TRAIN = kcg_lit_int32(0);
   outC->_L29.packet0.dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L29.packet0.mode = M_MODE_Full_Supervision;
   outC->_L29.packet0.level = M_LEVEL_Level_0;
-  outC->_L29.packet0.NID_NTC = kcg_lit_int64(0);
+  outC->_L29.packet0.NID_NTC = kcg_lit_int32(0);
   outC->_L30 = kcg_true;
   outC->_L31 = kcg_true;
   outC->_L32 = kcg_true;
@@ -348,6 +348,6 @@ void Msg132ConsistencyChecker__HasConsistentPackets_reset_RBC_Messaging_Pkg_RBC_
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Msg132ConsistencyChecker__HasConsistentPackets_RBC_Messaging_Pkg_RBC_Consistency_Pkg.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

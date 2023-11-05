@@ -14,23 +14,23 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* counter/ */ counter;
+  kcg_int32 /* counter/ */ counter;
   /* -----------------------  no local probes  ----------------------- */
   /* ----------------------- local memories  ------------------------- */
   kcg_bool init;
-  kcg_int64 /* _L11/ */ _L11;
+  kcg_int32 /* _L11/ */ _L11;
   /* -------------------- no sub nodes' contexts  -------------------- */
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L2/ */ _L2;
   kcg_bool /* _L3/ */ _L3;
   kcg_bool /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
-  kcg_int64 /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L6/ */ _L6;
+  kcg_int32 /* _L9/ */ _L9;
+  kcg_int32 /* _L10/ */ _L10;
+  kcg_int32 /* _L12/ */ _L12;
 } outC_countUp_CalculateTrainPosition_Pkg_gp_functions_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

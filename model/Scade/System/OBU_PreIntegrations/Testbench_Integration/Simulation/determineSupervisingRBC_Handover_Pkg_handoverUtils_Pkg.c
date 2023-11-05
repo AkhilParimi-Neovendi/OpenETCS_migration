@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -157,11 +157,11 @@ void determineSupervisingRBC_Handover_Pkg_handoverUtils_Pkg(
 void determineSupervisingRBC_init_Handover_Pkg_handoverUtils_Pkg(
   outC_determineSupervisingRBC_Handover_Pkg_handoverUtils_Pkg *outC)
 {
-  outC->_L58 = kcg_lit_int64(0);
-  outC->_L57 = kcg_lit_int64(0);
+  outC->_L58 = kcg_lit_int32(0);
+  outC->_L57 = kcg_lit_int32(0);
   outC->_L56 = kcg_lit_int64(0);
-  outC->_L55 = kcg_lit_int64(0);
-  outC->_L54 = kcg_lit_int64(0);
+  outC->_L55 = kcg_lit_int32(0);
+  outC->_L54 = kcg_lit_int32(0);
   outC->_L53 = kcg_true;
   outC->_L52 = sp_terminated_RCM_Session_Types_Pkg;
   outC->_L51 = kcg_true;
@@ -170,29 +170,29 @@ void determineSupervisingRBC_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L48 = kcg_true;
   outC->_L47 = kcg_true;
   outC->_L46.valid = kcg_true;
-  outC->_L46.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L46.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L46.healthStatus = mhs_nok_RCM_Types_Pkg;
   outC->_L46.status = mrs_unregistered_RCM_Types_Pkg;
-  outC->_L46.nid_mn = kcg_lit_int64(0);
+  outC->_L46.nid_mn = kcg_lit_int32(0);
   outC->_L45.valid = kcg_true;
   outC->_L45.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L45.nid_c = kcg_lit_int64(0);
-  outC->_L45.nid_rbc = kcg_lit_int64(0);
+  outC->_L45.nid_c = kcg_lit_int32(0);
+  outC->_L45.nid_rbc = kcg_lit_int32(0);
   outC->_L45.nid_radio = kcg_lit_int64(0);
   outC->_L44.valid = kcg_true;
-  outC->_L44.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L44.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L44.status = mcs_disconnected_RCM_Types_Pkg;
   outC->_L44.nid_radio = kcg_lit_int64(0);
   outC->_L44.settingUpConnectionHasFailed = kcg_true;
   outC->_L44.connectionLost = kcg_true;
   outC->_L44.isInRadioHole = kcg_true;
   outC->_L37.registration.valid = kcg_true;
-  outC->_L37.registration.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L37.registration.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L37.registration.healthStatus = mhs_nok_RCM_Types_Pkg;
   outC->_L37.registration.status = mrs_unregistered_RCM_Types_Pkg;
-  outC->_L37.registration.nid_mn = kcg_lit_int64(0);
+  outC->_L37.registration.nid_mn = kcg_lit_int32(0);
   outC->_L37.connection.valid = kcg_true;
-  outC->_L37.connection.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L37.connection.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L37.connection.status = mcs_disconnected_RCM_Types_Pkg;
   outC->_L37.connection.nid_radio = kcg_lit_int64(0);
   outC->_L37.connection.settingUpConnectionHasFailed = kcg_true;
@@ -200,25 +200,25 @@ void determineSupervisingRBC_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L37.connection.isInRadioHole = kcg_true;
   outC->_L37.session.valid = kcg_true;
   outC->_L37.session.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L37.session.nid_c = kcg_lit_int64(0);
-  outC->_L37.session.nid_rbc = kcg_lit_int64(0);
+  outC->_L37.session.nid_c = kcg_lit_int32(0);
+  outC->_L37.session.nid_rbc = kcg_lit_int32(0);
   outC->_L37.session.nid_radio = kcg_lit_int64(0);
   outC->_L13.valid = kcg_true;
-  outC->_L13.mobileDeviceNo = kcg_lit_int64(0);
-  outC->_L13.nid_c = kcg_lit_int64(0);
-  outC->_L13.nid_RBC = kcg_lit_int64(0);
+  outC->_L13.mobileDeviceNo = kcg_lit_int32(0);
+  outC->_L13.nid_c = kcg_lit_int32(0);
+  outC->_L13.nid_RBC = kcg_lit_int32(0);
   outC->_L13.nid_radio = kcg_lit_int64(0);
-  outC->_L13.nid_mn = kcg_lit_int64(0);
+  outC->_L13.nid_mn = kcg_lit_int32(0);
   outC->supervisingStatusFromMobile.registration.valid = kcg_true;
-  outC->supervisingStatusFromMobile.registration.mobileDeviceNo = kcg_lit_int64(
+  outC->supervisingStatusFromMobile.registration.mobileDeviceNo = kcg_lit_int32(
       0);
   outC->supervisingStatusFromMobile.registration.healthStatus =
     mhs_nok_RCM_Types_Pkg;
   outC->supervisingStatusFromMobile.registration.status =
     mrs_unregistered_RCM_Types_Pkg;
-  outC->supervisingStatusFromMobile.registration.nid_mn = kcg_lit_int64(0);
+  outC->supervisingStatusFromMobile.registration.nid_mn = kcg_lit_int32(0);
   outC->supervisingStatusFromMobile.connection.valid = kcg_true;
-  outC->supervisingStatusFromMobile.connection.mobileDeviceNo = kcg_lit_int64(0);
+  outC->supervisingStatusFromMobile.connection.mobileDeviceNo = kcg_lit_int32(0);
   outC->supervisingStatusFromMobile.connection.status =
     mcs_disconnected_RCM_Types_Pkg;
   outC->supervisingStatusFromMobile.connection.nid_radio = kcg_lit_int64(0);
@@ -229,18 +229,18 @@ void determineSupervisingRBC_init_Handover_Pkg_handoverUtils_Pkg(
   outC->supervisingStatusFromMobile.session.valid = kcg_true;
   outC->supervisingStatusFromMobile.session.phase =
     sp_terminated_RCM_Session_Types_Pkg;
-  outC->supervisingStatusFromMobile.session.nid_c = kcg_lit_int64(0);
-  outC->supervisingStatusFromMobile.session.nid_rbc = kcg_lit_int64(0);
+  outC->supervisingStatusFromMobile.session.nid_c = kcg_lit_int32(0);
+  outC->supervisingStatusFromMobile.session.nid_rbc = kcg_lit_int32(0);
   outC->supervisingStatusFromMobile.session.nid_radio = kcg_lit_int64(0);
   outC->IfBlock1_clock = kcg_true;
   outC->_L1_else_IfBlock1 = kcg_true;
   outC->_L2_else_IfBlock1.registration.valid = kcg_true;
-  outC->_L2_else_IfBlock1.registration.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L2_else_IfBlock1.registration.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L2_else_IfBlock1.registration.healthStatus = mhs_nok_RCM_Types_Pkg;
   outC->_L2_else_IfBlock1.registration.status = mrs_unregistered_RCM_Types_Pkg;
-  outC->_L2_else_IfBlock1.registration.nid_mn = kcg_lit_int64(0);
+  outC->_L2_else_IfBlock1.registration.nid_mn = kcg_lit_int32(0);
   outC->_L2_else_IfBlock1.connection.valid = kcg_true;
-  outC->_L2_else_IfBlock1.connection.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L2_else_IfBlock1.connection.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L2_else_IfBlock1.connection.status = mcs_disconnected_RCM_Types_Pkg;
   outC->_L2_else_IfBlock1.connection.nid_radio = kcg_lit_int64(0);
   outC->_L2_else_IfBlock1.connection.settingUpConnectionHasFailed = kcg_true;
@@ -248,16 +248,16 @@ void determineSupervisingRBC_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L2_else_IfBlock1.connection.isInRadioHole = kcg_true;
   outC->_L2_else_IfBlock1.session.valid = kcg_true;
   outC->_L2_else_IfBlock1.session.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L2_else_IfBlock1.session.nid_c = kcg_lit_int64(0);
-  outC->_L2_else_IfBlock1.session.nid_rbc = kcg_lit_int64(0);
+  outC->_L2_else_IfBlock1.session.nid_c = kcg_lit_int32(0);
+  outC->_L2_else_IfBlock1.session.nid_rbc = kcg_lit_int32(0);
   outC->_L2_else_IfBlock1.session.nid_radio = kcg_lit_int64(0);
   outC->_L3_else_IfBlock1.registration.valid = kcg_true;
-  outC->_L3_else_IfBlock1.registration.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L3_else_IfBlock1.registration.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L3_else_IfBlock1.registration.healthStatus = mhs_nok_RCM_Types_Pkg;
   outC->_L3_else_IfBlock1.registration.status = mrs_unregistered_RCM_Types_Pkg;
-  outC->_L3_else_IfBlock1.registration.nid_mn = kcg_lit_int64(0);
+  outC->_L3_else_IfBlock1.registration.nid_mn = kcg_lit_int32(0);
   outC->_L3_else_IfBlock1.connection.valid = kcg_true;
-  outC->_L3_else_IfBlock1.connection.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L3_else_IfBlock1.connection.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L3_else_IfBlock1.connection.status = mcs_disconnected_RCM_Types_Pkg;
   outC->_L3_else_IfBlock1.connection.nid_radio = kcg_lit_int64(0);
   outC->_L3_else_IfBlock1.connection.settingUpConnectionHasFailed = kcg_true;
@@ -265,16 +265,16 @@ void determineSupervisingRBC_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L3_else_IfBlock1.connection.isInRadioHole = kcg_true;
   outC->_L3_else_IfBlock1.session.valid = kcg_true;
   outC->_L3_else_IfBlock1.session.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L3_else_IfBlock1.session.nid_c = kcg_lit_int64(0);
-  outC->_L3_else_IfBlock1.session.nid_rbc = kcg_lit_int64(0);
+  outC->_L3_else_IfBlock1.session.nid_c = kcg_lit_int32(0);
+  outC->_L3_else_IfBlock1.session.nid_rbc = kcg_lit_int32(0);
   outC->_L3_else_IfBlock1.session.nid_radio = kcg_lit_int64(0);
   outC->_L4_else_IfBlock1.registration.valid = kcg_true;
-  outC->_L4_else_IfBlock1.registration.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L4_else_IfBlock1.registration.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L4_else_IfBlock1.registration.healthStatus = mhs_nok_RCM_Types_Pkg;
   outC->_L4_else_IfBlock1.registration.status = mrs_unregistered_RCM_Types_Pkg;
-  outC->_L4_else_IfBlock1.registration.nid_mn = kcg_lit_int64(0);
+  outC->_L4_else_IfBlock1.registration.nid_mn = kcg_lit_int32(0);
   outC->_L4_else_IfBlock1.connection.valid = kcg_true;
-  outC->_L4_else_IfBlock1.connection.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L4_else_IfBlock1.connection.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L4_else_IfBlock1.connection.status = mcs_disconnected_RCM_Types_Pkg;
   outC->_L4_else_IfBlock1.connection.nid_radio = kcg_lit_int64(0);
   outC->_L4_else_IfBlock1.connection.settingUpConnectionHasFailed = kcg_true;
@@ -282,17 +282,17 @@ void determineSupervisingRBC_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L4_else_IfBlock1.connection.isInRadioHole = kcg_true;
   outC->_L4_else_IfBlock1.session.valid = kcg_true;
   outC->_L4_else_IfBlock1.session.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L4_else_IfBlock1.session.nid_c = kcg_lit_int64(0);
-  outC->_L4_else_IfBlock1.session.nid_rbc = kcg_lit_int64(0);
+  outC->_L4_else_IfBlock1.session.nid_c = kcg_lit_int32(0);
+  outC->_L4_else_IfBlock1.session.nid_rbc = kcg_lit_int32(0);
   outC->_L4_else_IfBlock1.session.nid_radio = kcg_lit_int64(0);
   outC->_L5_else_IfBlock1 = kcg_true;
   outC->_L6_else_IfBlock1.registration.valid = kcg_true;
-  outC->_L6_else_IfBlock1.registration.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L6_else_IfBlock1.registration.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L6_else_IfBlock1.registration.healthStatus = mhs_nok_RCM_Types_Pkg;
   outC->_L6_else_IfBlock1.registration.status = mrs_unregistered_RCM_Types_Pkg;
-  outC->_L6_else_IfBlock1.registration.nid_mn = kcg_lit_int64(0);
+  outC->_L6_else_IfBlock1.registration.nid_mn = kcg_lit_int32(0);
   outC->_L6_else_IfBlock1.connection.valid = kcg_true;
-  outC->_L6_else_IfBlock1.connection.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L6_else_IfBlock1.connection.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L6_else_IfBlock1.connection.status = mcs_disconnected_RCM_Types_Pkg;
   outC->_L6_else_IfBlock1.connection.nid_radio = kcg_lit_int64(0);
   outC->_L6_else_IfBlock1.connection.settingUpConnectionHasFailed = kcg_true;
@@ -300,16 +300,16 @@ void determineSupervisingRBC_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L6_else_IfBlock1.connection.isInRadioHole = kcg_true;
   outC->_L6_else_IfBlock1.session.valid = kcg_true;
   outC->_L6_else_IfBlock1.session.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L6_else_IfBlock1.session.nid_c = kcg_lit_int64(0);
-  outC->_L6_else_IfBlock1.session.nid_rbc = kcg_lit_int64(0);
+  outC->_L6_else_IfBlock1.session.nid_c = kcg_lit_int32(0);
+  outC->_L6_else_IfBlock1.session.nid_rbc = kcg_lit_int32(0);
   outC->_L6_else_IfBlock1.session.nid_radio = kcg_lit_int64(0);
   outC->_L7_else_IfBlock1.registration.valid = kcg_true;
-  outC->_L7_else_IfBlock1.registration.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L7_else_IfBlock1.registration.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L7_else_IfBlock1.registration.healthStatus = mhs_nok_RCM_Types_Pkg;
   outC->_L7_else_IfBlock1.registration.status = mrs_unregistered_RCM_Types_Pkg;
-  outC->_L7_else_IfBlock1.registration.nid_mn = kcg_lit_int64(0);
+  outC->_L7_else_IfBlock1.registration.nid_mn = kcg_lit_int32(0);
   outC->_L7_else_IfBlock1.connection.valid = kcg_true;
-  outC->_L7_else_IfBlock1.connection.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L7_else_IfBlock1.connection.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L7_else_IfBlock1.connection.status = mcs_disconnected_RCM_Types_Pkg;
   outC->_L7_else_IfBlock1.connection.nid_radio = kcg_lit_int64(0);
   outC->_L7_else_IfBlock1.connection.settingUpConnectionHasFailed = kcg_true;
@@ -317,8 +317,8 @@ void determineSupervisingRBC_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L7_else_IfBlock1.connection.isInRadioHole = kcg_true;
   outC->_L7_else_IfBlock1.session.valid = kcg_true;
   outC->_L7_else_IfBlock1.session.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L7_else_IfBlock1.session.nid_c = kcg_lit_int64(0);
-  outC->_L7_else_IfBlock1.session.nid_rbc = kcg_lit_int64(0);
+  outC->_L7_else_IfBlock1.session.nid_c = kcg_lit_int32(0);
+  outC->_L7_else_IfBlock1.session.nid_rbc = kcg_lit_int32(0);
   outC->_L7_else_IfBlock1.session.nid_radio = kcg_lit_int64(0);
   outC->_L14_else_IfBlock1 = kcg_true;
   outC->_L15_else_IfBlock1 = kcg_true;
@@ -329,12 +329,12 @@ void determineSupervisingRBC_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L20_else_IfBlock1 = kcg_true;
   outC->_L21_else_IfBlock1 = kcg_true;
   outC->_L1_then_IfBlock1.registration.valid = kcg_true;
-  outC->_L1_then_IfBlock1.registration.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1.registration.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L1_then_IfBlock1.registration.healthStatus = mhs_nok_RCM_Types_Pkg;
   outC->_L1_then_IfBlock1.registration.status = mrs_unregistered_RCM_Types_Pkg;
-  outC->_L1_then_IfBlock1.registration.nid_mn = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1.registration.nid_mn = kcg_lit_int32(0);
   outC->_L1_then_IfBlock1.connection.valid = kcg_true;
-  outC->_L1_then_IfBlock1.connection.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1.connection.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L1_then_IfBlock1.connection.status = mcs_disconnected_RCM_Types_Pkg;
   outC->_L1_then_IfBlock1.connection.nid_radio = kcg_lit_int64(0);
   outC->_L1_then_IfBlock1.connection.settingUpConnectionHasFailed = kcg_true;
@@ -342,19 +342,19 @@ void determineSupervisingRBC_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L1_then_IfBlock1.connection.isInRadioHole = kcg_true;
   outC->_L1_then_IfBlock1.session.valid = kcg_true;
   outC->_L1_then_IfBlock1.session.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L1_then_IfBlock1.session.nid_c = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock1.session.nid_rbc = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1.session.nid_c = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock1.session.nid_rbc = kcg_lit_int32(0);
   outC->_L1_then_IfBlock1.session.nid_radio = kcg_lit_int64(0);
   outC->_L2_then_IfBlock1 = kcg_true;
   outC->_L3_then_IfBlock1 = kcg_true;
   outC->supervising_isMobile_2 = kcg_true;
   outC->supervising_isMobile_1 = kcg_true;
   outC->supervisingRBC.valid = kcg_true;
-  outC->supervisingRBC.mobileDeviceNo = kcg_lit_int64(0);
-  outC->supervisingRBC.nid_c = kcg_lit_int64(0);
-  outC->supervisingRBC.nid_RBC = kcg_lit_int64(0);
+  outC->supervisingRBC.mobileDeviceNo = kcg_lit_int32(0);
+  outC->supervisingRBC.nid_c = kcg_lit_int32(0);
+  outC->supervisingRBC.nid_RBC = kcg_lit_int32(0);
   outC->supervisingRBC.nid_radio = kcg_lit_int64(0);
-  outC->supervisingRBC.nid_mn = kcg_lit_int64(0);
+  outC->supervisingRBC.nid_mn = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -370,6 +370,6 @@ void determineSupervisingRBC_reset_Handover_Pkg_handoverUtils_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** determineSupervisingRBC_Handover_Pkg_handoverUtils_Pkg.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

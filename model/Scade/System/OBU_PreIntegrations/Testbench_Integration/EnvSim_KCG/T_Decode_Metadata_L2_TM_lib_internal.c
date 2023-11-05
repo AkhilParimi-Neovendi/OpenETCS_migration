@@ -10,9 +10,9 @@
 /* TM_lib_internal::T_Decode_Metadata_L2/ */
 void T_Decode_Metadata_L2_TM_lib_internal(
   /* Metadata/ */
-  kcg_int64 Metadata,
+  kcg_int32 Metadata,
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   outC_T_Decode_Metadata_L2_TM_lib_internal *outC)
 {
   outC->_L2 = Metadata;
@@ -25,10 +25,10 @@ void T_Decode_Metadata_L2_TM_lib_internal(
 void T_Decode_Metadata_L2_init_TM_lib_internal(
   outC_T_Decode_Metadata_L2_TM_lib_internal *outC)
 {
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->nid_packet = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->nid_packet = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

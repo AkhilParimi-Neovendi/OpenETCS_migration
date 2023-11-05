@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _DetermineValidFlags_InformationFilter_Pkg_SecondFilter_H_
 #define _DetermineValidFlags_InformationFilter_Pkg_SecondFilter_H_
@@ -26,13 +26,13 @@ typedef struct {
   NID_PACKET /* _L3/ */ _L3;
   Q_DIR /* _L4/ */ _L4;
   kcg_bool /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
-  kcg_int64 /* _L7/ */ _L7;
+  kcg_int32 /* _L6/ */ _L6;
+  kcg_int32 /* _L7/ */ _L7;
   NID_PACKET /* _L8/ */ _L8;
   Q_DIR /* _L9/ */ _L9;
   kcg_bool /* _L10/ */ _L10;
-  kcg_int64 /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L11/ */ _L11;
+  kcg_int32 /* _L12/ */ _L12;
   MetadataElement_T_Common_Types_Pkg /* _L13/ */ _L13;
   kcg_bool /* _L14/ */ _L14;
 } outC_DetermineValidFlags_InformationFilter_Pkg_SecondFilter;
@@ -61,6 +61,6 @@ extern void DetermineValidFlags_init_InformationFilter_Pkg_SecondFilter(
 #endif /* _DetermineValidFlags_InformationFilter_Pkg_SecondFilter_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** DetermineValidFlags_InformationFilter_Pkg_SecondFilter.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

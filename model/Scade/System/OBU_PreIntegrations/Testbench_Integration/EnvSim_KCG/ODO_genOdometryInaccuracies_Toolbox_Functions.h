@@ -23,17 +23,17 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   L_internal_Type_Obu_BasicTypes_Pkg /* _L1/ */ _L1;
   OdometryLocations_T_Obu_BasicTypes_Pkg /* _L8/ */ _L8;
-  kcg_float64 /* _L16/ */ _L16;
-  kcg_int64 /* _L17/ */ _L17;
-  kcg_int64 /* _L18/ */ _L18;
-  kcg_int64 /* _L19/ */ _L19;
-  kcg_float64 /* _L20/ */ _L20;
-  kcg_float64 /* _L21/ */ _L21;
-  kcg_float64 /* _L22/ */ _L22;
+  kcg_float32 /* _L16/ */ _L16;
+  kcg_int32 /* _L17/ */ _L17;
+  kcg_int32 /* _L18/ */ _L18;
+  kcg_int32 /* _L19/ */ _L19;
+  kcg_float32 /* _L20/ */ _L20;
+  kcg_float32 /* _L21/ */ _L21;
+  kcg_float32 /* _L22/ */ _L22;
   odometryFactors_T_Toolbox /* _L33/ */ _L33;
-  kcg_float64 /* _L36/ */ _L36;
-  kcg_float64 /* _L35/ */ _L35;
-  kcg_float64 /* _L34/ */ _L34;
+  kcg_float32 /* _L36/ */ _L36;
+  kcg_float32 /* _L35/ */ _L35;
+  kcg_float32 /* _L34/ */ _L34;
 } outC_ODO_genOdometryInaccuracies_Toolbox_Functions;
 
 /* ===========  node initialization and cycle functions  =========== */

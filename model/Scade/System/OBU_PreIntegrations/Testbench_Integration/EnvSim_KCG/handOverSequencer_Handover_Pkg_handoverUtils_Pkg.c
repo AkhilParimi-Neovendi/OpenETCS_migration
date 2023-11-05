@@ -3732,63 +3732,63 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L8.BG_Common_Header.q_media = Q_MEDIA_Balise;
   outC->_L8.BG_Common_Header.n_total = N_TOTAL_1_balise_in_the_group;
-  outC->_L8.BG_Common_Header.m_mcount = kcg_lit_int64(0);
-  outC->_L8.BG_Common_Header.nid_c = kcg_lit_int64(0);
-  outC->_L8.BG_Common_Header.nid_bg = kcg_lit_int64(0);
+  outC->_L8.BG_Common_Header.m_mcount = kcg_lit_int32(0);
+  outC->_L8.BG_Common_Header.nid_c = kcg_lit_int32(0);
+  outC->_L8.BG_Common_Header.nid_bg = kcg_lit_int32(0);
   outC->_L8.BG_Common_Header.q_link = Q_LINK_Unlinked;
   outC->_L8.BG_Common_Header.bgPosition.valid = kcg_true;
-  outC->_L8.BG_Common_Header.bgPosition.timestamp = kcg_lit_int64(0);
-  outC->_L8.BG_Common_Header.bgPosition.odo.o_nominal = kcg_lit_int64(0);
-  outC->_L8.BG_Common_Header.bgPosition.odo.o_min = kcg_lit_int64(0);
-  outC->_L8.BG_Common_Header.bgPosition.odo.o_max = kcg_lit_int64(0);
-  outC->_L8.BG_Common_Header.bgPosition.speed.v_safeNominal = kcg_lit_int64(0);
-  outC->_L8.BG_Common_Header.bgPosition.speed.v_rawNominal = kcg_lit_int64(0);
-  outC->_L8.BG_Common_Header.bgPosition.speed.v_lower = kcg_lit_int64(0);
-  outC->_L8.BG_Common_Header.bgPosition.speed.v_upper = kcg_lit_int64(0);
-  outC->_L8.BG_Common_Header.bgPosition.acceleration = kcg_lit_int64(0);
+  outC->_L8.BG_Common_Header.bgPosition.timestamp = kcg_lit_int32(0);
+  outC->_L8.BG_Common_Header.bgPosition.odo.o_nominal = kcg_lit_int32(0);
+  outC->_L8.BG_Common_Header.bgPosition.odo.o_min = kcg_lit_int32(0);
+  outC->_L8.BG_Common_Header.bgPosition.odo.o_max = kcg_lit_int32(0);
+  outC->_L8.BG_Common_Header.bgPosition.speed.v_safeNominal = kcg_lit_int32(0);
+  outC->_L8.BG_Common_Header.bgPosition.speed.v_rawNominal = kcg_lit_int32(0);
+  outC->_L8.BG_Common_Header.bgPosition.speed.v_lower = kcg_lit_int32(0);
+  outC->_L8.BG_Common_Header.bgPosition.speed.v_upper = kcg_lit_int32(0);
+  outC->_L8.BG_Common_Header.bgPosition.acceleration = kcg_lit_int32(0);
   outC->_L8.BG_Common_Header.bgPosition.motionState = noMotion_Obu_BasicTypes_Pkg;
   outC->_L8.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L8.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
-  outC->_L8.BG_Common_Header.q_nvlocacc = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L8.BG_Common_Header.q_nvlocacc = kcg_lit_int32(0);
   outC->_L8.BG_Common_Header.noCoordinateSystemHasBeenAssigned = kcg_true;
   outC->_L8.BG_Common_Header.trainOrientationToBG = Q_DIRLRBG_Reverse;
   outC->_L8.BG_Common_Header.trainRunningDirectionToBG = Q_DIRTRAIN_Reverse;
-  outC->_L8.Radio_Common_Header.radioDevice = kcg_lit_int64(0);
-  outC->_L8.Radio_Common_Header.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L8.Radio_Common_Header.nid_message = kcg_lit_int64(0);
-  outC->_L8.Radio_Common_Header.t_train = kcg_lit_int64(0);
+  outC->_L8.Radio_Common_Header.radioDevice = kcg_lit_int32(0);
+  outC->_L8.Radio_Common_Header.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L8.Radio_Common_Header.nid_message = kcg_lit_int32(0);
+  outC->_L8.Radio_Common_Header.t_train = kcg_lit_int32(0);
   outC->_L8.Radio_Common_Header.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L8.Radio_Common_Header.nid_lrbg = kcg_lit_int64(0);
-  outC->_L8.Radio_Common_Header.t_train_reference = kcg_lit_int64(0);
-  outC->_L8.Radio_Common_Header.nid_em = kcg_lit_int64(0);
+  outC->_L8.Radio_Common_Header.nid_lrbg = kcg_lit_int32(0);
+  outC->_L8.Radio_Common_Header.t_train_reference = kcg_lit_int32(0);
+  outC->_L8.Radio_Common_Header.nid_em = kcg_lit_int32(0);
   outC->_L8.Radio_Common_Header.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L8.Radio_Common_Header.d_sr = kcg_lit_int64(0);
-  outC->_L8.Radio_Common_Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L8.Radio_Common_Header.d_ref = kcg_lit_int64(0);
+  outC->_L8.Radio_Common_Header.d_sr = kcg_lit_int32(0);
+  outC->_L8.Radio_Common_Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L8.Radio_Common_Header.d_ref = kcg_lit_int32(0);
   outC->_L8.Radio_Common_Header.q_dir = Q_DIR_Reverse;
-  outC->_L8.Radio_Common_Header.d_emergencystop = kcg_lit_int64(0);
+  outC->_L8.Radio_Common_Header.d_emergencystop = kcg_lit_int32(0);
   outC->_L8.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx = 0; idx < 30; idx++) {
-    outC->_L8.packets.PacketHeaders[idx].nid_packet = kcg_lit_int64(0);
+    outC->_L8.packets.PacketHeaders[idx].nid_packet = kcg_lit_int32(0);
     outC->_L8.packets.PacketHeaders[idx].q_dir = Q_DIR_Reverse;
     outC->_L8.packets.PacketHeaders[idx].valid = kcg_true;
-    outC->_L8.packets.PacketHeaders[idx].startAddress = kcg_lit_int64(0);
-    outC->_L8.packets.PacketHeaders[idx].endAddress = kcg_lit_int64(0);
+    outC->_L8.packets.PacketHeaders[idx].startAddress = kcg_lit_int32(0);
+    outC->_L8.packets.PacketHeaders[idx].endAddress = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 500; idx1++) {
-    outC->_L8.packets.PacketData[idx1] = kcg_lit_int64(0);
+    outC->_L8.packets.PacketData[idx1] = kcg_lit_int32(0);
   }
   outC->_L8.sendingRBC.valid = kcg_true;
-  outC->_L8.sendingRBC.nid_c = kcg_lit_int64(0);
-  outC->_L8.sendingRBC.rbc_id = kcg_lit_int64(0);
-  outC->_L8.sendingRBC.device_id = kcg_lit_int64(0);
+  outC->_L8.sendingRBC.nid_c = kcg_lit_int32(0);
+  outC->_L8.sendingRBC.rbc_id = kcg_lit_int32(0);
+  outC->_L8.sendingRBC.device_id = kcg_lit_int32(0);
   outC->_L7.valid = kcg_true;
   outC->_L7.source = msrc_undefined_Common_Types_Pkg;
   outC->_L7.radioMetadata.t_train_reference = kcg_true;
@@ -3806,63 +3806,63 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L7.BG_Common_Header.q_media = Q_MEDIA_Balise;
   outC->_L7.BG_Common_Header.n_total = N_TOTAL_1_balise_in_the_group;
-  outC->_L7.BG_Common_Header.m_mcount = kcg_lit_int64(0);
-  outC->_L7.BG_Common_Header.nid_c = kcg_lit_int64(0);
-  outC->_L7.BG_Common_Header.nid_bg = kcg_lit_int64(0);
+  outC->_L7.BG_Common_Header.m_mcount = kcg_lit_int32(0);
+  outC->_L7.BG_Common_Header.nid_c = kcg_lit_int32(0);
+  outC->_L7.BG_Common_Header.nid_bg = kcg_lit_int32(0);
   outC->_L7.BG_Common_Header.q_link = Q_LINK_Unlinked;
   outC->_L7.BG_Common_Header.bgPosition.valid = kcg_true;
-  outC->_L7.BG_Common_Header.bgPosition.timestamp = kcg_lit_int64(0);
-  outC->_L7.BG_Common_Header.bgPosition.odo.o_nominal = kcg_lit_int64(0);
-  outC->_L7.BG_Common_Header.bgPosition.odo.o_min = kcg_lit_int64(0);
-  outC->_L7.BG_Common_Header.bgPosition.odo.o_max = kcg_lit_int64(0);
-  outC->_L7.BG_Common_Header.bgPosition.speed.v_safeNominal = kcg_lit_int64(0);
-  outC->_L7.BG_Common_Header.bgPosition.speed.v_rawNominal = kcg_lit_int64(0);
-  outC->_L7.BG_Common_Header.bgPosition.speed.v_lower = kcg_lit_int64(0);
-  outC->_L7.BG_Common_Header.bgPosition.speed.v_upper = kcg_lit_int64(0);
-  outC->_L7.BG_Common_Header.bgPosition.acceleration = kcg_lit_int64(0);
+  outC->_L7.BG_Common_Header.bgPosition.timestamp = kcg_lit_int32(0);
+  outC->_L7.BG_Common_Header.bgPosition.odo.o_nominal = kcg_lit_int32(0);
+  outC->_L7.BG_Common_Header.bgPosition.odo.o_min = kcg_lit_int32(0);
+  outC->_L7.BG_Common_Header.bgPosition.odo.o_max = kcg_lit_int32(0);
+  outC->_L7.BG_Common_Header.bgPosition.speed.v_safeNominal = kcg_lit_int32(0);
+  outC->_L7.BG_Common_Header.bgPosition.speed.v_rawNominal = kcg_lit_int32(0);
+  outC->_L7.BG_Common_Header.bgPosition.speed.v_lower = kcg_lit_int32(0);
+  outC->_L7.BG_Common_Header.bgPosition.speed.v_upper = kcg_lit_int32(0);
+  outC->_L7.BG_Common_Header.bgPosition.acceleration = kcg_lit_int32(0);
   outC->_L7.BG_Common_Header.bgPosition.motionState = noMotion_Obu_BasicTypes_Pkg;
   outC->_L7.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L7.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
-  outC->_L7.BG_Common_Header.q_nvlocacc = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L7.BG_Common_Header.q_nvlocacc = kcg_lit_int32(0);
   outC->_L7.BG_Common_Header.noCoordinateSystemHasBeenAssigned = kcg_true;
   outC->_L7.BG_Common_Header.trainOrientationToBG = Q_DIRLRBG_Reverse;
   outC->_L7.BG_Common_Header.trainRunningDirectionToBG = Q_DIRTRAIN_Reverse;
-  outC->_L7.Radio_Common_Header.radioDevice = kcg_lit_int64(0);
-  outC->_L7.Radio_Common_Header.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L7.Radio_Common_Header.nid_message = kcg_lit_int64(0);
-  outC->_L7.Radio_Common_Header.t_train = kcg_lit_int64(0);
+  outC->_L7.Radio_Common_Header.radioDevice = kcg_lit_int32(0);
+  outC->_L7.Radio_Common_Header.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L7.Radio_Common_Header.nid_message = kcg_lit_int32(0);
+  outC->_L7.Radio_Common_Header.t_train = kcg_lit_int32(0);
   outC->_L7.Radio_Common_Header.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L7.Radio_Common_Header.nid_lrbg = kcg_lit_int64(0);
-  outC->_L7.Radio_Common_Header.t_train_reference = kcg_lit_int64(0);
-  outC->_L7.Radio_Common_Header.nid_em = kcg_lit_int64(0);
+  outC->_L7.Radio_Common_Header.nid_lrbg = kcg_lit_int32(0);
+  outC->_L7.Radio_Common_Header.t_train_reference = kcg_lit_int32(0);
+  outC->_L7.Radio_Common_Header.nid_em = kcg_lit_int32(0);
   outC->_L7.Radio_Common_Header.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L7.Radio_Common_Header.d_sr = kcg_lit_int64(0);
-  outC->_L7.Radio_Common_Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L7.Radio_Common_Header.d_ref = kcg_lit_int64(0);
+  outC->_L7.Radio_Common_Header.d_sr = kcg_lit_int32(0);
+  outC->_L7.Radio_Common_Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L7.Radio_Common_Header.d_ref = kcg_lit_int32(0);
   outC->_L7.Radio_Common_Header.q_dir = Q_DIR_Reverse;
-  outC->_L7.Radio_Common_Header.d_emergencystop = kcg_lit_int64(0);
+  outC->_L7.Radio_Common_Header.d_emergencystop = kcg_lit_int32(0);
   outC->_L7.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx2 = 0; idx2 < 30; idx2++) {
-    outC->_L7.packets.PacketHeaders[idx2].nid_packet = kcg_lit_int64(0);
+    outC->_L7.packets.PacketHeaders[idx2].nid_packet = kcg_lit_int32(0);
     outC->_L7.packets.PacketHeaders[idx2].q_dir = Q_DIR_Reverse;
     outC->_L7.packets.PacketHeaders[idx2].valid = kcg_true;
-    outC->_L7.packets.PacketHeaders[idx2].startAddress = kcg_lit_int64(0);
-    outC->_L7.packets.PacketHeaders[idx2].endAddress = kcg_lit_int64(0);
+    outC->_L7.packets.PacketHeaders[idx2].startAddress = kcg_lit_int32(0);
+    outC->_L7.packets.PacketHeaders[idx2].endAddress = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 500; idx3++) {
-    outC->_L7.packets.PacketData[idx3] = kcg_lit_int64(0);
+    outC->_L7.packets.PacketData[idx3] = kcg_lit_int32(0);
   }
   outC->_L7.sendingRBC.valid = kcg_true;
-  outC->_L7.sendingRBC.nid_c = kcg_lit_int64(0);
-  outC->_L7.sendingRBC.rbc_id = kcg_lit_int64(0);
-  outC->_L7.sendingRBC.device_id = kcg_lit_int64(0);
+  outC->_L7.sendingRBC.nid_c = kcg_lit_int32(0);
+  outC->_L7.sendingRBC.rbc_id = kcg_lit_int32(0);
+  outC->_L7.sendingRBC.device_id = kcg_lit_int32(0);
   outC->_L2.valid = kcg_true;
   outC->_L2.source = msrc_undefined_Common_Types_Pkg;
   outC->_L2.radioMetadata.t_train_reference = kcg_true;
@@ -3880,63 +3880,63 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L2.BG_Common_Header.q_media = Q_MEDIA_Balise;
   outC->_L2.BG_Common_Header.n_total = N_TOTAL_1_balise_in_the_group;
-  outC->_L2.BG_Common_Header.m_mcount = kcg_lit_int64(0);
-  outC->_L2.BG_Common_Header.nid_c = kcg_lit_int64(0);
-  outC->_L2.BG_Common_Header.nid_bg = kcg_lit_int64(0);
+  outC->_L2.BG_Common_Header.m_mcount = kcg_lit_int32(0);
+  outC->_L2.BG_Common_Header.nid_c = kcg_lit_int32(0);
+  outC->_L2.BG_Common_Header.nid_bg = kcg_lit_int32(0);
   outC->_L2.BG_Common_Header.q_link = Q_LINK_Unlinked;
   outC->_L2.BG_Common_Header.bgPosition.valid = kcg_true;
-  outC->_L2.BG_Common_Header.bgPosition.timestamp = kcg_lit_int64(0);
-  outC->_L2.BG_Common_Header.bgPosition.odo.o_nominal = kcg_lit_int64(0);
-  outC->_L2.BG_Common_Header.bgPosition.odo.o_min = kcg_lit_int64(0);
-  outC->_L2.BG_Common_Header.bgPosition.odo.o_max = kcg_lit_int64(0);
-  outC->_L2.BG_Common_Header.bgPosition.speed.v_safeNominal = kcg_lit_int64(0);
-  outC->_L2.BG_Common_Header.bgPosition.speed.v_rawNominal = kcg_lit_int64(0);
-  outC->_L2.BG_Common_Header.bgPosition.speed.v_lower = kcg_lit_int64(0);
-  outC->_L2.BG_Common_Header.bgPosition.speed.v_upper = kcg_lit_int64(0);
-  outC->_L2.BG_Common_Header.bgPosition.acceleration = kcg_lit_int64(0);
+  outC->_L2.BG_Common_Header.bgPosition.timestamp = kcg_lit_int32(0);
+  outC->_L2.BG_Common_Header.bgPosition.odo.o_nominal = kcg_lit_int32(0);
+  outC->_L2.BG_Common_Header.bgPosition.odo.o_min = kcg_lit_int32(0);
+  outC->_L2.BG_Common_Header.bgPosition.odo.o_max = kcg_lit_int32(0);
+  outC->_L2.BG_Common_Header.bgPosition.speed.v_safeNominal = kcg_lit_int32(0);
+  outC->_L2.BG_Common_Header.bgPosition.speed.v_rawNominal = kcg_lit_int32(0);
+  outC->_L2.BG_Common_Header.bgPosition.speed.v_lower = kcg_lit_int32(0);
+  outC->_L2.BG_Common_Header.bgPosition.speed.v_upper = kcg_lit_int32(0);
+  outC->_L2.BG_Common_Header.bgPosition.acceleration = kcg_lit_int32(0);
   outC->_L2.BG_Common_Header.bgPosition.motionState = noMotion_Obu_BasicTypes_Pkg;
   outC->_L2.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L2.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
-  outC->_L2.BG_Common_Header.q_nvlocacc = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L2.BG_Common_Header.q_nvlocacc = kcg_lit_int32(0);
   outC->_L2.BG_Common_Header.noCoordinateSystemHasBeenAssigned = kcg_true;
   outC->_L2.BG_Common_Header.trainOrientationToBG = Q_DIRLRBG_Reverse;
   outC->_L2.BG_Common_Header.trainRunningDirectionToBG = Q_DIRTRAIN_Reverse;
-  outC->_L2.Radio_Common_Header.radioDevice = kcg_lit_int64(0);
-  outC->_L2.Radio_Common_Header.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L2.Radio_Common_Header.nid_message = kcg_lit_int64(0);
-  outC->_L2.Radio_Common_Header.t_train = kcg_lit_int64(0);
+  outC->_L2.Radio_Common_Header.radioDevice = kcg_lit_int32(0);
+  outC->_L2.Radio_Common_Header.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L2.Radio_Common_Header.nid_message = kcg_lit_int32(0);
+  outC->_L2.Radio_Common_Header.t_train = kcg_lit_int32(0);
   outC->_L2.Radio_Common_Header.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L2.Radio_Common_Header.nid_lrbg = kcg_lit_int64(0);
-  outC->_L2.Radio_Common_Header.t_train_reference = kcg_lit_int64(0);
-  outC->_L2.Radio_Common_Header.nid_em = kcg_lit_int64(0);
+  outC->_L2.Radio_Common_Header.nid_lrbg = kcg_lit_int32(0);
+  outC->_L2.Radio_Common_Header.t_train_reference = kcg_lit_int32(0);
+  outC->_L2.Radio_Common_Header.nid_em = kcg_lit_int32(0);
   outC->_L2.Radio_Common_Header.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L2.Radio_Common_Header.d_sr = kcg_lit_int64(0);
-  outC->_L2.Radio_Common_Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L2.Radio_Common_Header.d_ref = kcg_lit_int64(0);
+  outC->_L2.Radio_Common_Header.d_sr = kcg_lit_int32(0);
+  outC->_L2.Radio_Common_Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L2.Radio_Common_Header.d_ref = kcg_lit_int32(0);
   outC->_L2.Radio_Common_Header.q_dir = Q_DIR_Reverse;
-  outC->_L2.Radio_Common_Header.d_emergencystop = kcg_lit_int64(0);
+  outC->_L2.Radio_Common_Header.d_emergencystop = kcg_lit_int32(0);
   outC->_L2.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx4 = 0; idx4 < 30; idx4++) {
-    outC->_L2.packets.PacketHeaders[idx4].nid_packet = kcg_lit_int64(0);
+    outC->_L2.packets.PacketHeaders[idx4].nid_packet = kcg_lit_int32(0);
     outC->_L2.packets.PacketHeaders[idx4].q_dir = Q_DIR_Reverse;
     outC->_L2.packets.PacketHeaders[idx4].valid = kcg_true;
-    outC->_L2.packets.PacketHeaders[idx4].startAddress = kcg_lit_int64(0);
-    outC->_L2.packets.PacketHeaders[idx4].endAddress = kcg_lit_int64(0);
+    outC->_L2.packets.PacketHeaders[idx4].startAddress = kcg_lit_int32(0);
+    outC->_L2.packets.PacketHeaders[idx4].endAddress = kcg_lit_int32(0);
   }
   for (idx5 = 0; idx5 < 500; idx5++) {
-    outC->_L2.packets.PacketData[idx5] = kcg_lit_int64(0);
+    outC->_L2.packets.PacketData[idx5] = kcg_lit_int32(0);
   }
   outC->_L2.sendingRBC.valid = kcg_true;
-  outC->_L2.sendingRBC.nid_c = kcg_lit_int64(0);
-  outC->_L2.sendingRBC.rbc_id = kcg_lit_int64(0);
-  outC->_L2.sendingRBC.device_id = kcg_lit_int64(0);
+  outC->_L2.sendingRBC.nid_c = kcg_lit_int32(0);
+  outC->_L2.sendingRBC.rbc_id = kcg_lit_int32(0);
+  outC->_L2.sendingRBC.device_id = kcg_lit_int32(0);
   outC->_L3 = kcg_true;
   outC->_L6 = kcg_true;
   outC->_L1 = kcg_true;
@@ -3960,40 +3960,40 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->p131_transitionOrder_mem.BG_Common_Header.q_media = Q_MEDIA_Balise;
   outC->p131_transitionOrder_mem.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
-  outC->p131_transitionOrder_mem.BG_Common_Header.m_mcount = kcg_lit_int64(0);
-  outC->p131_transitionOrder_mem.BG_Common_Header.nid_c = kcg_lit_int64(0);
-  outC->p131_transitionOrder_mem.BG_Common_Header.nid_bg = kcg_lit_int64(0);
+  outC->p131_transitionOrder_mem.BG_Common_Header.m_mcount = kcg_lit_int32(0);
+  outC->p131_transitionOrder_mem.BG_Common_Header.nid_c = kcg_lit_int32(0);
+  outC->p131_transitionOrder_mem.BG_Common_Header.nid_bg = kcg_lit_int32(0);
   outC->p131_transitionOrder_mem.BG_Common_Header.q_link = Q_LINK_Unlinked;
   outC->p131_transitionOrder_mem.BG_Common_Header.bgPosition.valid = kcg_true;
   outC->p131_transitionOrder_mem.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p131_transitionOrder_mem.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p131_transitionOrder_mem.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p131_transitionOrder_mem.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p131_transitionOrder_mem.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p131_transitionOrder_mem.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p131_transitionOrder_mem.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p131_transitionOrder_mem.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p131_transitionOrder_mem.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p131_transitionOrder_mem.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->p131_transitionOrder_mem.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->p131_transitionOrder_mem.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p131_transitionOrder_mem.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p131_transitionOrder_mem.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
-  outC->p131_transitionOrder_mem.BG_Common_Header.q_nvlocacc = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->p131_transitionOrder_mem.BG_Common_Header.q_nvlocacc = kcg_lit_int32(0);
   outC->p131_transitionOrder_mem.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->p131_transitionOrder_mem.BG_Common_Header.trainOrientationToBG =
@@ -4001,46 +4001,46 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->p131_transitionOrder_mem.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->p131_transitionOrder_mem.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p131_transitionOrder_mem.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p131_transitionOrder_mem.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
-  outC->p131_transitionOrder_mem.Radio_Common_Header.t_train = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->p131_transitionOrder_mem.Radio_Common_Header.t_train = kcg_lit_int32(0);
   outC->p131_transitionOrder_mem.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
-  outC->p131_transitionOrder_mem.Radio_Common_Header.nid_lrbg = kcg_lit_int64(0);
+  outC->p131_transitionOrder_mem.Radio_Common_Header.nid_lrbg = kcg_lit_int32(0);
   outC->p131_transitionOrder_mem.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
-  outC->p131_transitionOrder_mem.Radio_Common_Header.nid_em = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->p131_transitionOrder_mem.Radio_Common_Header.nid_em = kcg_lit_int32(0);
   outC->p131_transitionOrder_mem.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
-  outC->p131_transitionOrder_mem.Radio_Common_Header.d_sr = kcg_lit_int64(0);
-  outC->p131_transitionOrder_mem.Radio_Common_Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->p131_transitionOrder_mem.Radio_Common_Header.d_ref = kcg_lit_int64(0);
+  outC->p131_transitionOrder_mem.Radio_Common_Header.d_sr = kcg_lit_int32(0);
+  outC->p131_transitionOrder_mem.Radio_Common_Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->p131_transitionOrder_mem.Radio_Common_Header.d_ref = kcg_lit_int32(0);
   outC->p131_transitionOrder_mem.Radio_Common_Header.q_dir = Q_DIR_Reverse;
   outC->p131_transitionOrder_mem.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p131_transitionOrder_mem.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx6 = 0; idx6 < 30; idx6++) {
     outC->p131_transitionOrder_mem.packets.PacketHeaders[idx6].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->p131_transitionOrder_mem.packets.PacketHeaders[idx6].q_dir =
       Q_DIR_Reverse;
     outC->p131_transitionOrder_mem.packets.PacketHeaders[idx6].valid = kcg_true;
     outC->p131_transitionOrder_mem.packets.PacketHeaders[idx6].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->p131_transitionOrder_mem.packets.PacketHeaders[idx6].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx7 = 0; idx7 < 500; idx7++) {
-    outC->p131_transitionOrder_mem.packets.PacketData[idx7] = kcg_lit_int64(0);
+    outC->p131_transitionOrder_mem.packets.PacketData[idx7] = kcg_lit_int32(0);
   }
   outC->p131_transitionOrder_mem.sendingRBC.valid = kcg_true;
-  outC->p131_transitionOrder_mem.sendingRBC.nid_c = kcg_lit_int64(0);
-  outC->p131_transitionOrder_mem.sendingRBC.rbc_id = kcg_lit_int64(0);
-  outC->p131_transitionOrder_mem.sendingRBC.device_id = kcg_lit_int64(0);
+  outC->p131_transitionOrder_mem.sendingRBC.nid_c = kcg_lit_int32(0);
+  outC->p131_transitionOrder_mem.sendingRBC.rbc_id = kcg_lit_int32(0);
+  outC->p131_transitionOrder_mem.sendingRBC.device_id = kcg_lit_int32(0);
   outC->IfBlock1_clock = kcg_true;
   outC->sHandoverFinished = kcg_true;
   outC->sNotReady = kcg_true;
@@ -4077,45 +4077,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -4123,59 +4123,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx8 = 0; idx8 < 30; idx8++) {
     outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx8].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx8].q_dir =
       Q_DIR_Reverse;
     outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx8].valid =
       kcg_true;
     outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx8].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx8].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx9 = 0; idx9 < 500; idx9++) {
     outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketData[idx9] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L19_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L18_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1 =
     kcg_true;
   outC->_L17_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1 =
@@ -4215,45 +4215,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -4261,59 +4261,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx10 = 0; idx10 < 30; idx10++) {
     outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx10].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx10].q_dir =
       Q_DIR_Reverse;
     outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx10].valid =
       kcg_true;
     outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx10].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx10].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx11 = 0; idx11 < 500; idx11++) {
     outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketData[idx11] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1 =
     kcg_true;
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.valid =
@@ -4349,45 +4349,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -4395,59 +4395,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx12 = 0; idx12 < 30; idx12++) {
     outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx12].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx12].q_dir =
       Q_DIR_Reverse;
     outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx12].valid =
       kcg_true;
     outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx12].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx12].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx13 = 0; idx13 < 500; idx13++) {
     outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketData[idx13] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.valid =
     kcg_true;
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.source =
@@ -4481,45 +4481,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -4527,59 +4527,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx14 = 0; idx14 < 30; idx14++) {
     outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx14].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx14].q_dir =
       Q_DIR_Reverse;
     outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx14].valid =
       kcg_true;
     outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx14].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx14].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx15 = 0; idx15 < 500; idx15++) {
     outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketData[idx15] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.valid =
     kcg_true;
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.source =
@@ -4613,45 +4613,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -4659,59 +4659,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx16 = 0; idx16 < 30; idx16++) {
     outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx16].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx16].q_dir =
       Q_DIR_Reverse;
     outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx16].valid =
       kcg_true;
     outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx16].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx16].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx17 = 0; idx17 < 500; idx17++) {
     outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketData[idx17] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.valid =
     kcg_true;
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.source =
@@ -4745,45 +4745,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -4791,59 +4791,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx18 = 0; idx18 < 30; idx18++) {
     outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx18].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx18].q_dir =
       Q_DIR_Reverse;
     outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx18].valid =
       kcg_true;
     outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx18].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx18].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx19 = 0; idx19 < 500; idx19++) {
     outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketData[idx19] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1 =
     kcg_true;
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.valid =
@@ -4879,45 +4879,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -4925,59 +4925,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx20 = 0; idx20 < 30; idx20++) {
     outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx20].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx20].q_dir =
       Q_DIR_Reverse;
     outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx20].valid =
       kcg_true;
     outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx20].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx20].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx21 = 0; idx21 < 500; idx21++) {
     outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketData[idx21] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->transitionOrdered_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1 =
     kcg_true;
   outC->tr_1_clock_WaitForTransitionOrder_handOver_with_1_Session_SM_else_IfBlock1 =
@@ -4989,31 +4989,31 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L15_WaitForMaxSafeFrontEndPassing_handOver_with_1_Session_SM_else_IfBlock1.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L15_WaitForMaxSafeFrontEndPassing_handOver_with_1_Session_SM_else_IfBlock1.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForMaxSafeFrontEndPassing_handOver_with_1_Session_SM_else_IfBlock1.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForMaxSafeFrontEndPassing_handOver_with_1_Session_SM_else_IfBlock1.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_WaitForMaxSafeFrontEndPassing_handOver_with_1_Session_SM_else_IfBlock1 =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_1_Session_SM_else_IfBlock1.registration.valid =
     kcg_true;
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_1_Session_SM_else_IfBlock1.registration.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_1_Session_SM_else_IfBlock1.registration.healthStatus =
     mhs_nok_RCM_Types_Pkg;
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_1_Session_SM_else_IfBlock1.registration.status =
     mrs_unregistered_RCM_Types_Pkg;
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_1_Session_SM_else_IfBlock1.registration.nid_mn =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_1_Session_SM_else_IfBlock1.connection.valid =
     kcg_true;
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_1_Session_SM_else_IfBlock1.connection.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_1_Session_SM_else_IfBlock1.connection.status =
     mcs_disconnected_RCM_Types_Pkg;
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_1_Session_SM_else_IfBlock1.connection.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_1_Session_SM_else_IfBlock1.connection.settingUpConnectionHasFailed =
     kcg_true;
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_1_Session_SM_else_IfBlock1.connection.connectionLost =
@@ -5025,11 +5025,11 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_1_Session_SM_else_IfBlock1.session.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_1_Session_SM_else_IfBlock1.session.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_1_Session_SM_else_IfBlock1.session.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_1_Session_SM_else_IfBlock1.session.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5_WaitForMaxSafeFrontEndPassing_handOver_with_1_Session_SM_else_IfBlock1 =
     kcg_true;
   outC->_L6_WaitForMaxSafeFrontEndPassing_handOver_with_1_Session_SM_else_IfBlock1 =
@@ -5049,11 +5049,11 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L17_WaitForMinSafeRearEndPassing_handOver_with_1_Session_SM_else_IfBlock1.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L17_WaitForMinSafeRearEndPassing_handOver_with_1_Session_SM_else_IfBlock1.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L17_WaitForMinSafeRearEndPassing_handOver_with_1_Session_SM_else_IfBlock1.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L17_WaitForMinSafeRearEndPassing_handOver_with_1_Session_SM_else_IfBlock1.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L16_WaitForMinSafeRearEndPassing_handOver_with_1_Session_SM_else_IfBlock1 =
     kcg_true;
   outC->_L1_WaitForMinSafeRearEndPassing_handOver_with_1_Session_SM_else_IfBlock1 =
@@ -5061,21 +5061,21 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_1_Session_SM_else_IfBlock1.registration.valid =
     kcg_true;
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_1_Session_SM_else_IfBlock1.registration.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_1_Session_SM_else_IfBlock1.registration.healthStatus =
     mhs_nok_RCM_Types_Pkg;
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_1_Session_SM_else_IfBlock1.registration.status =
     mrs_unregistered_RCM_Types_Pkg;
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_1_Session_SM_else_IfBlock1.registration.nid_mn =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_1_Session_SM_else_IfBlock1.connection.valid =
     kcg_true;
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_1_Session_SM_else_IfBlock1.connection.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_1_Session_SM_else_IfBlock1.connection.status =
     mcs_disconnected_RCM_Types_Pkg;
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_1_Session_SM_else_IfBlock1.connection.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_1_Session_SM_else_IfBlock1.connection.settingUpConnectionHasFailed =
     kcg_true;
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_1_Session_SM_else_IfBlock1.connection.connectionLost =
@@ -5087,11 +5087,11 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_1_Session_SM_else_IfBlock1.session.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_1_Session_SM_else_IfBlock1.session.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_1_Session_SM_else_IfBlock1.session.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_1_Session_SM_else_IfBlock1.session.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5_WaitForMinSafeRearEndPassing_handOver_with_1_Session_SM_else_IfBlock1 =
     kcg_true;
   outC->_L8_WaitForMinSafeRearEndPassing_handOver_with_1_Session_SM_else_IfBlock1 =
@@ -5109,11 +5109,11 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L24_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L24_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L24_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L24_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.valid =
     kcg_true;
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.source =
@@ -5147,45 +5147,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -5193,77 +5193,77 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx22 = 0; idx22 < 30; idx22++) {
     outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx22].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx22].q_dir =
       Q_DIR_Reverse;
     outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx22].valid =
       kcg_true;
     outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx22].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx22].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx23 = 0; idx23 < 500; idx23++) {
     outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketData[idx23] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L20_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.registration.valid =
     kcg_true;
   outC->_L20_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.registration.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L20_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.registration.healthStatus =
     mhs_nok_RCM_Types_Pkg;
   outC->_L20_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.registration.status =
     mrs_unregistered_RCM_Types_Pkg;
   outC->_L20_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.registration.nid_mn =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L20_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.connection.valid =
     kcg_true;
   outC->_L20_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.connection.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L20_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.connection.status =
     mcs_disconnected_RCM_Types_Pkg;
   outC->_L20_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.connection.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L20_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.connection.settingUpConnectionHasFailed =
     kcg_true;
   outC->_L20_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.connection.connectionLost =
@@ -5275,11 +5275,11 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L20_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.session.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L20_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.session.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L20_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.session.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L20_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1.session.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1 =
     M_MODE_Full_Supervision;
   outC->_L9_WaitForSessionWithAcceptingRBCEstablished_handOver_with_1_Session_SM_else_IfBlock1 =
@@ -5339,45 +5339,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -5385,59 +5385,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx24 = 0; idx24 < 30; idx24++) {
     outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx24].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx24].q_dir =
       Q_DIR_Reverse;
     outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx24].valid =
       kcg_true;
     outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx24].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx24].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx25 = 0; idx25 < 500; idx25++) {
     outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketData[idx25] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L33_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1 =
     kcg_true;
   outC->_L26_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1 =
@@ -5451,11 +5451,11 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L29_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.q_rbc =
     Q_RBC_Terminate_communication_session;
   outC->_L29_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L29_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L29_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L29_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L28_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1 =
@@ -5464,19 +5464,19 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
     Q_RBC_Terminate_communication_session;
   for (idx26 = 0; idx26 < 30; idx26++) {
     outC->_L31_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.PacketHeaders[idx26].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L31_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.PacketHeaders[idx26].q_dir =
       Q_DIR_Reverse;
     outC->_L31_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.PacketHeaders[idx26].valid =
       kcg_true;
     outC->_L31_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.PacketHeaders[idx26].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L31_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.PacketHeaders[idx26].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx27 = 0; idx27 < 500; idx27++) {
     outC->_L31_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.PacketData[idx27] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L32_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1 =
     Q_RBC_Terminate_communication_session;
@@ -5513,45 +5513,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -5559,59 +5559,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx28 = 0; idx28 < 30; idx28++) {
     outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx28].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx28].q_dir =
       Q_DIR_Reverse;
     outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx28].valid =
       kcg_true;
     outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx28].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx28].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx29 = 0; idx29 < 500; idx29++) {
     outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketData[idx29] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.valid =
     kcg_true;
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.source =
@@ -5645,45 +5645,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -5691,77 +5691,77 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx30 = 0; idx30 < 30; idx30++) {
     outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx30].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx30].q_dir =
       Q_DIR_Reverse;
     outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx30].valid =
       kcg_true;
     outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx30].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx30].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx31 = 0; idx31 < 500; idx31++) {
     outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketData[idx31] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.registration.valid =
     kcg_true;
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.registration.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.registration.healthStatus =
     mhs_nok_RCM_Types_Pkg;
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.registration.status =
     mrs_unregistered_RCM_Types_Pkg;
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.registration.nid_mn =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.connection.valid =
     kcg_true;
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.connection.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.connection.status =
     mcs_disconnected_RCM_Types_Pkg;
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.connection.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.connection.settingUpConnectionHasFailed =
     kcg_true;
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.connection.connectionLost =
@@ -5773,11 +5773,11 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.session.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.session.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.session.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.session.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.valid =
     kcg_true;
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.source =
@@ -5811,45 +5811,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -5857,59 +5857,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx32 = 0; idx32 < 30; idx32++) {
     outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx32].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx32].q_dir =
       Q_DIR_Reverse;
     outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx32].valid =
       kcg_true;
     outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx32].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx32].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx33 = 0; idx33 < 500; idx33++) {
     outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketData[idx33] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->terminationWithHandingOverRBCOrdered_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Sessi =
     kcg_true;
   outC->tr_1_clock_WaitForTerminationOrderFromHandingOverRBC_handOver_with_1_Session_SM_else_IfBlock1 =
@@ -5923,29 +5923,29 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L7_WaitForHandingOverRBCTerminated_handOver_with_1_Session_SM_else_IfBlock1.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L7_WaitForHandingOverRBCTerminated_handOver_with_1_Session_SM_else_IfBlock1.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForHandingOverRBCTerminated_handOver_with_1_Session_SM_else_IfBlock1.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForHandingOverRBCTerminated_handOver_with_1_Session_SM_else_IfBlock1.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_1_Session_SM_else_IfBlock1.registration.valid =
     kcg_true;
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_1_Session_SM_else_IfBlock1.registration.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_1_Session_SM_else_IfBlock1.registration.healthStatus =
     mhs_nok_RCM_Types_Pkg;
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_1_Session_SM_else_IfBlock1.registration.status =
     mrs_unregistered_RCM_Types_Pkg;
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_1_Session_SM_else_IfBlock1.registration.nid_mn =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_1_Session_SM_else_IfBlock1.connection.valid =
     kcg_true;
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_1_Session_SM_else_IfBlock1.connection.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_1_Session_SM_else_IfBlock1.connection.status =
     mcs_disconnected_RCM_Types_Pkg;
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_1_Session_SM_else_IfBlock1.connection.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_1_Session_SM_else_IfBlock1.connection.settingUpConnectionHasFailed =
     kcg_true;
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_1_Session_SM_else_IfBlock1.connection.connectionLost =
@@ -5957,11 +5957,11 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_1_Session_SM_else_IfBlock1.session.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_1_Session_SM_else_IfBlock1.session.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_1_Session_SM_else_IfBlock1.session.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_1_Session_SM_else_IfBlock1.session.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForHandingOverRBCTerminated_handOver_with_1_Session_SM_else_IfBlock1 =
     kcg_true;
   outC->_L4_WaitForHandingOverRBCTerminated_handOver_with_1_Session_SM_else_IfBlock1 =
@@ -5979,13 +5979,13 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L67_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.valid =
     kcg_true;
   outC->_L67_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L67_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.healthStatus =
     mhs_nok_RCM_Types_Pkg;
   outC->_L67_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.status =
     mrs_unregistered_RCM_Types_Pkg;
   outC->_L67_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.nid_mn =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L63_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1 =
     kcg_true;
   outC->_L64_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1 =
@@ -6033,45 +6033,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -6079,59 +6079,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx34 = 0; idx34 < 30; idx34++) {
     outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx34].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx34].q_dir =
       Q_DIR_Reverse;
     outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx34].valid =
       kcg_true;
     outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx34].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx34].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx35 = 0; idx35 < 500; idx35++) {
     outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketData[idx35] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L55_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.valid =
     kcg_true;
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.source =
@@ -6165,45 +6165,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -6211,59 +6211,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx36 = 0; idx36 < 30; idx36++) {
     outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx36].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx36].q_dir =
       Q_DIR_Reverse;
     outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx36].valid =
       kcg_true;
     outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx36].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx36].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx37 = 0; idx37 < 500; idx37++) {
     outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketData[idx37] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L54_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L53_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1 =
     kcg_true;
   outC->_L43_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1 =
@@ -6275,25 +6275,25 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L47_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1 =
     kcg_true;
   outC->_L48_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L49_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.registration.valid =
     kcg_true;
   outC->_L49_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.registration.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L49_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.registration.healthStatus =
     mhs_nok_RCM_Types_Pkg;
   outC->_L49_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.registration.status =
     mrs_unregistered_RCM_Types_Pkg;
   outC->_L49_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.registration.nid_mn =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L49_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.connection.valid =
     kcg_true;
   outC->_L49_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.connection.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L49_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.connection.status =
     mcs_disconnected_RCM_Types_Pkg;
   outC->_L49_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.connection.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L49_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.connection.settingUpConnectionHasFailed =
     kcg_true;
   outC->_L49_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.connection.connectionLost =
@@ -6305,41 +6305,41 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L49_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.session.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L49_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.session.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L49_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.session.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L49_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.session.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L50_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1 =
     kcg_true;
   outC->_L51_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1 =
     kcg_true;
   outC->_L42_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L41_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1 =
     kcg_true;
   for (idx38 = 0; idx38 < 30; idx38++) {
     outC->_L37_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.PacketHeaders[idx38].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L37_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.PacketHeaders[idx38].q_dir =
       Q_DIR_Reverse;
     outC->_L37_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.PacketHeaders[idx38].valid =
       kcg_true;
     outC->_L37_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.PacketHeaders[idx38].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L37_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.PacketHeaders[idx38].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx39 = 0; idx39 < 500; idx39++) {
     outC->_L37_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.PacketData[idx39] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L39_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.valid =
     kcg_true;
   outC->_L39_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.q_dir =
     Q_DIR_Reverse;
   outC->_L39_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.nid_mn =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L38_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1 =
     kcg_true;
   outC->_L40_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1 =
@@ -6377,45 +6377,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -6423,59 +6423,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx40 = 0; idx40 < 30; idx40++) {
     outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx40].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx40].q_dir =
       Q_DIR_Reverse;
     outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx40].valid =
       kcg_true;
     outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx40].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx40].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx41 = 0; idx41 < 500; idx41++) {
     outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketData[idx41] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->unregistered_or_noReregisterRequired_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1 =
     kcg_true;
   outC->tr_1_clock_RegisterAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1 =
@@ -6487,31 +6487,31 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L10_WaitForHandingOverRBCRegistered_handOver_with_1_Session_SM_else_IfBlock1.valid =
     kcg_true;
   outC->_L10_WaitForHandingOverRBCRegistered_handOver_with_1_Session_SM_else_IfBlock1.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L10_WaitForHandingOverRBCRegistered_handOver_with_1_Session_SM_else_IfBlock1.healthStatus =
     mhs_nok_RCM_Types_Pkg;
   outC->_L10_WaitForHandingOverRBCRegistered_handOver_with_1_Session_SM_else_IfBlock1.status =
     mrs_unregistered_RCM_Types_Pkg;
   outC->_L10_WaitForHandingOverRBCRegistered_handOver_with_1_Session_SM_else_IfBlock1.nid_mn =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_1_Session_SM_else_IfBlock1.registration.valid =
     kcg_true;
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_1_Session_SM_else_IfBlock1.registration.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_1_Session_SM_else_IfBlock1.registration.healthStatus =
     mhs_nok_RCM_Types_Pkg;
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_1_Session_SM_else_IfBlock1.registration.status =
     mrs_unregistered_RCM_Types_Pkg;
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_1_Session_SM_else_IfBlock1.registration.nid_mn =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_1_Session_SM_else_IfBlock1.connection.valid =
     kcg_true;
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_1_Session_SM_else_IfBlock1.connection.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_1_Session_SM_else_IfBlock1.connection.status =
     mcs_disconnected_RCM_Types_Pkg;
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_1_Session_SM_else_IfBlock1.connection.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_1_Session_SM_else_IfBlock1.connection.settingUpConnectionHasFailed =
     kcg_true;
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_1_Session_SM_else_IfBlock1.connection.connectionLost =
@@ -6523,11 +6523,11 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_1_Session_SM_else_IfBlock1.session.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_1_Session_SM_else_IfBlock1.session.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_1_Session_SM_else_IfBlock1.session.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_1_Session_SM_else_IfBlock1.session.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForHandingOverRBCRegistered_handOver_with_1_Session_SM_else_IfBlock1 =
     mrs_unregistered_RCM_Types_Pkg;
   outC->_L9_WaitForHandingOverRBCRegistered_handOver_with_1_Session_SM_else_IfBlock1 =
@@ -6571,45 +6571,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -6617,59 +6617,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx42 = 0; idx42 < 30; idx42++) {
     outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx42].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx42].q_dir =
       Q_DIR_Reverse;
     outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx42].valid =
       kcg_true;
     outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx42].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx42].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx43 = 0; idx43 < 500; idx43++) {
     outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketData[idx43] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.valid =
     kcg_true;
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.source =
@@ -6703,45 +6703,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -6749,77 +6749,77 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx44 = 0; idx44 < 30; idx44++) {
     outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx44].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx44].q_dir =
       Q_DIR_Reverse;
     outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx44].valid =
       kcg_true;
     outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx44].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx44].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx45 = 0; idx45 < 500; idx45++) {
     outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketData[idx45] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.registration.valid =
     kcg_true;
   outC->_L6_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.registration.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.registration.healthStatus =
     mhs_nok_RCM_Types_Pkg;
   outC->_L6_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.registration.status =
     mrs_unregistered_RCM_Types_Pkg;
   outC->_L6_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.registration.nid_mn =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.connection.valid =
     kcg_true;
   outC->_L6_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.connection.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.connection.status =
     mcs_disconnected_RCM_Types_Pkg;
   outC->_L6_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.connection.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.connection.settingUpConnectionHasFailed =
     kcg_true;
   outC->_L6_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.connection.connectionLost =
@@ -6831,11 +6831,11 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L6_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.session.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L6_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.session.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.session.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.session.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.valid =
     kcg_true;
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.source =
@@ -6869,45 +6869,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -6915,59 +6915,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx46 = 0; idx46 < 30; idx46++) {
     outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx46].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx46].q_dir =
       Q_DIR_Reverse;
     outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx46].valid =
       kcg_true;
     outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx46].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketHeaders[idx46].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx47 = 0; idx47 < 500; idx47++) {
     outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.packets.PacketData[idx47] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->tr_1_clock_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1 =
     kcg_true;
   outC->tr_2_clock_EstablishSessionWithAcceptingRBC_handOver_with_1_Session_SM_else_IfBlock1 =
@@ -7015,45 +7015,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -7061,59 +7061,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx48 = 0; idx48 < 30; idx48++) {
     outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx48].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx48].q_dir =
       Q_DIR_Reverse;
     outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx48].valid =
       kcg_true;
     outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx48].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx48].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx49 = 0; idx49 < 500; idx49++) {
     outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketData[idx49] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L11_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.valid =
     kcg_true;
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.source =
@@ -7147,45 +7147,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -7193,59 +7193,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx50 = 0; idx50 < 30; idx50++) {
     outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx50].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx50].q_dir =
       Q_DIR_Reverse;
     outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx50].valid =
       kcg_true;
     outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx50].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx50].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx51 = 0; idx51 < 500; idx51++) {
     outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketData[idx51] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.valid =
     kcg_true;
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.source =
@@ -7279,45 +7279,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -7325,59 +7325,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx52 = 0; idx52 < 30; idx52++) {
     outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx52].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx52].q_dir =
       Q_DIR_Reverse;
     outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx52].valid =
       kcg_true;
     outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx52].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx52].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx53 = 0; idx53 < 500; idx53++) {
     outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketData[idx53] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.valid =
     kcg_true;
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.source =
@@ -7411,45 +7411,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -7457,59 +7457,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx54 = 0; idx54 < 30; idx54++) {
     outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx54].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx54].q_dir =
       Q_DIR_Reverse;
     outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx54].valid =
       kcg_true;
     outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx54].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx54].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx55 = 0; idx55 < 500; idx55++) {
     outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketData[idx55] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L10_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1 =
     kcg_true;
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.valid =
@@ -7545,45 +7545,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -7591,79 +7591,79 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx56 = 0; idx56 < 30; idx56++) {
     outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx56].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx56].q_dir =
       Q_DIR_Reverse;
     outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx56].valid =
       kcg_true;
     outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx56].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx56].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx57 = 0; idx57 < 500; idx57++) {
     outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketData[idx57] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1 =
     kcg_true;
   outC->_L2_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.registration.valid =
     kcg_true;
   outC->_L2_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.registration.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.registration.healthStatus =
     mhs_nok_RCM_Types_Pkg;
   outC->_L2_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.registration.status =
     mrs_unregistered_RCM_Types_Pkg;
   outC->_L2_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.registration.nid_mn =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.connection.valid =
     kcg_true;
   outC->_L2_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.connection.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.connection.status =
     mcs_disconnected_RCM_Types_Pkg;
   outC->_L2_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.connection.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.connection.settingUpConnectionHasFailed =
     kcg_true;
   outC->_L2_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.connection.connectionLost =
@@ -7675,11 +7675,11 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L2_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.session.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L2_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.valid =
     kcg_true;
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.source =
@@ -7713,45 +7713,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -7759,59 +7759,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx58 = 0; idx58 < 30; idx58++) {
     outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx58].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx58].q_dir =
       Q_DIR_Reverse;
     outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx58].valid =
       kcg_true;
     outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx58].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx58].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx59 = 0; idx59 < 500; idx59++) {
     outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketData[idx59] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->tr_1_clock_WaitForTransitionOrder_handOver_with_2_Sessions_SM_then_IfBlock1 =
     kcg_true;
   outC->_L38_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1 =
@@ -7823,11 +7823,11 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L40_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L40_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L40_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L40_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L41_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1 =
     kcg_true;
   outC->_L37_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1 =
@@ -7837,11 +7837,11 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L36_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L36_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L36_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L35_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1 =
     kcg_true;
   outC->_L1_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1 =
@@ -7849,21 +7849,21 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.registration.valid =
     kcg_true;
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.registration.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.registration.healthStatus =
     mhs_nok_RCM_Types_Pkg;
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.registration.status =
     mrs_unregistered_RCM_Types_Pkg;
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.registration.nid_mn =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.connection.valid =
     kcg_true;
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.connection.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.connection.status =
     mcs_disconnected_RCM_Types_Pkg;
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.connection.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.connection.settingUpConnectionHasFailed =
     kcg_true;
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.connection.connectionLost =
@@ -7875,11 +7875,11 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.session.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1 =
     kcg_true;
   outC->_L6_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1 =
@@ -7891,21 +7891,21 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L13_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.registration.valid =
     kcg_true;
   outC->_L13_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.registration.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.registration.healthStatus =
     mhs_nok_RCM_Types_Pkg;
   outC->_L13_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.registration.status =
     mrs_unregistered_RCM_Types_Pkg;
   outC->_L13_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.registration.nid_mn =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.connection.valid =
     kcg_true;
   outC->_L13_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.connection.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.connection.status =
     mcs_disconnected_RCM_Types_Pkg;
   outC->_L13_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.connection.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.connection.settingUpConnectionHasFailed =
     kcg_true;
   outC->_L13_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.connection.connectionLost =
@@ -7917,11 +7917,11 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L13_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.session.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L13_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1 =
     kcg_true;
   outC->_L15_WaitForMaxSafeFrontEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1 =
@@ -7935,11 +7935,11 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L22_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L22_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L22_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L22_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1 =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L24_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1 =
@@ -7957,11 +7957,11 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L21_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L21_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L17_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1 =
     kcg_true;
   outC->_L16_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1 =
@@ -7969,21 +7969,21 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.registration.valid =
     kcg_true;
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.registration.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.registration.healthStatus =
     mhs_nok_RCM_Types_Pkg;
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.registration.status =
     mrs_unregistered_RCM_Types_Pkg;
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.registration.nid_mn =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.connection.valid =
     kcg_true;
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.connection.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.connection.status =
     mcs_disconnected_RCM_Types_Pkg;
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.connection.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.connection.settingUpConnectionHasFailed =
     kcg_true;
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.connection.connectionLost =
@@ -7995,11 +7995,11 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.session.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1 =
     kcg_true;
   outC->_L8_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1 =
@@ -8009,21 +8009,21 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L13_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.registration.valid =
     kcg_true;
   outC->_L13_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.registration.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.registration.healthStatus =
     mhs_nok_RCM_Types_Pkg;
   outC->_L13_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.registration.status =
     mrs_unregistered_RCM_Types_Pkg;
   outC->_L13_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.registration.nid_mn =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.connection.valid =
     kcg_true;
   outC->_L13_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.connection.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.connection.status =
     mcs_disconnected_RCM_Types_Pkg;
   outC->_L13_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.connection.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.connection.settingUpConnectionHasFailed =
     kcg_true;
   outC->_L13_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.connection.connectionLost =
@@ -8035,11 +8035,11 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L13_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.session.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L13_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L15_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1 =
     kcg_true;
   outC->tr_1_clock_WaitForMinSafeRearEndPassing_handOver_with_2_Sessions_SM_then_IfBlock1 =
@@ -8053,11 +8053,11 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L21_WaitForSessionWithAcceptingRBCEstablished_handOver_with_2_Sessions_SM_then_IfBlock1.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L21_WaitForSessionWithAcceptingRBCEstablished_handOver_with_2_Sessions_SM_then_IfBlock1.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_WaitForSessionWithAcceptingRBCEstablished_handOver_with_2_Sessions_SM_then_IfBlock1.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L21_WaitForSessionWithAcceptingRBCEstablished_handOver_with_2_Sessions_SM_then_IfBlock1.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L22_WaitForSessionWithAcceptingRBCEstablished_handOver_with_2_Sessions_SM_then_IfBlock1 =
     kcg_true;
   outC->_L23_WaitForSessionWithAcceptingRBCEstablished_handOver_with_2_Sessions_SM_then_IfBlock1 =
@@ -8081,21 +8081,21 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L5_WaitForSessionWithAcceptingRBCEstablished_handOver_with_2_Sessions_SM_then_IfBlock1.registration.valid =
     kcg_true;
   outC->_L5_WaitForSessionWithAcceptingRBCEstablished_handOver_with_2_Sessions_SM_then_IfBlock1.registration.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5_WaitForSessionWithAcceptingRBCEstablished_handOver_with_2_Sessions_SM_then_IfBlock1.registration.healthStatus =
     mhs_nok_RCM_Types_Pkg;
   outC->_L5_WaitForSessionWithAcceptingRBCEstablished_handOver_with_2_Sessions_SM_then_IfBlock1.registration.status =
     mrs_unregistered_RCM_Types_Pkg;
   outC->_L5_WaitForSessionWithAcceptingRBCEstablished_handOver_with_2_Sessions_SM_then_IfBlock1.registration.nid_mn =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5_WaitForSessionWithAcceptingRBCEstablished_handOver_with_2_Sessions_SM_then_IfBlock1.connection.valid =
     kcg_true;
   outC->_L5_WaitForSessionWithAcceptingRBCEstablished_handOver_with_2_Sessions_SM_then_IfBlock1.connection.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5_WaitForSessionWithAcceptingRBCEstablished_handOver_with_2_Sessions_SM_then_IfBlock1.connection.status =
     mcs_disconnected_RCM_Types_Pkg;
   outC->_L5_WaitForSessionWithAcceptingRBCEstablished_handOver_with_2_Sessions_SM_then_IfBlock1.connection.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5_WaitForSessionWithAcceptingRBCEstablished_handOver_with_2_Sessions_SM_then_IfBlock1.connection.settingUpConnectionHasFailed =
     kcg_true;
   outC->_L5_WaitForSessionWithAcceptingRBCEstablished_handOver_with_2_Sessions_SM_then_IfBlock1.connection.connectionLost =
@@ -8107,11 +8107,11 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L5_WaitForSessionWithAcceptingRBCEstablished_handOver_with_2_Sessions_SM_then_IfBlock1.session.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L5_WaitForSessionWithAcceptingRBCEstablished_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5_WaitForSessionWithAcceptingRBCEstablished_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5_WaitForSessionWithAcceptingRBCEstablished_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->sessionWithAcceptingRBCEstablished_WaitForSessionWithAcceptingRBCEstablished_handOver_with_2_Session =
     kcg_true;
   outC->tr_1_clock_WaitForSessionWithAcceptingRBCEstablished_handOver_with_2_Sessions_SM_then_IfBlock1 =
@@ -8133,30 +8133,30 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L27_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.q_rbc =
     Q_RBC_Terminate_communication_session;
   outC->_L27_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L26_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1 =
     kcg_true;
   for (idx60 = 0; idx60 < 30; idx60++) {
     outC->_L28_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.PacketHeaders[idx60].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L28_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.PacketHeaders[idx60].q_dir =
       Q_DIR_Reverse;
     outC->_L28_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.PacketHeaders[idx60].valid =
       kcg_true;
     outC->_L28_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.PacketHeaders[idx60].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L28_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.PacketHeaders[idx60].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx61 = 0; idx61 < 500; idx61++) {
     outC->_L28_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.PacketData[idx61] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.valid =
     kcg_true;
@@ -8191,45 +8191,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -8237,59 +8237,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx62 = 0; idx62 < 30; idx62++) {
     outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx62].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx62].q_dir =
       Q_DIR_Reverse;
     outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx62].valid =
       kcg_true;
     outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx62].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx62].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx63 = 0; idx63 < 500; idx63++) {
     outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketData[idx63] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.valid =
     kcg_true;
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.source =
@@ -8323,45 +8323,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -8369,59 +8369,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx64 = 0; idx64 < 30; idx64++) {
     outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx64].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx64].q_dir =
       Q_DIR_Reverse;
     outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx64].valid =
       kcg_true;
     outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx64].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx64].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx65 = 0; idx65 < 500; idx65++) {
     outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketData[idx65] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L23_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.valid =
     kcg_true;
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.source =
@@ -8455,45 +8455,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -8501,77 +8501,77 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx66 = 0; idx66 < 30; idx66++) {
     outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx66].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx66].q_dir =
       Q_DIR_Reverse;
     outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx66].valid =
       kcg_true;
     outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx66].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx66].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx67 = 0; idx67 < 500; idx67++) {
     outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketData[idx67] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.registration.valid =
     kcg_true;
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.registration.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.registration.healthStatus =
     mhs_nok_RCM_Types_Pkg;
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.registration.status =
     mrs_unregistered_RCM_Types_Pkg;
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.registration.nid_mn =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.connection.valid =
     kcg_true;
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.connection.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.connection.status =
     mcs_disconnected_RCM_Types_Pkg;
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.connection.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.connection.settingUpConnectionHasFailed =
     kcg_true;
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.connection.connectionLost =
@@ -8583,11 +8583,11 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.session.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.valid =
     kcg_true;
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.source =
@@ -8621,45 +8621,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -8667,59 +8667,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx68 = 0; idx68 < 30; idx68++) {
     outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx68].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx68].q_dir =
       Q_DIR_Reverse;
     outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx68].valid =
       kcg_true;
     outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx68].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx68].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx69 = 0; idx69 < 500; idx69++) {
     outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketData[idx69] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1 =
     kcg_true;
   outC->terminationWithHandingOverRBCOrdered_WaitForTerminationOrderFromHandingOverRBC_handOver_with_2_Sessi =
@@ -8735,19 +8735,19 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L14_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L14_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L10_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1.valid =
     kcg_true;
   outC->_L10_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L10_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1.status =
     mcs_disconnected_RCM_Types_Pkg;
   outC->_L10_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L10_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1.settingUpConnectionHasFailed =
     kcg_true;
   outC->_L10_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1.connectionLost =
@@ -8767,21 +8767,21 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1.registration.valid =
     kcg_true;
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1.registration.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1.registration.healthStatus =
     mhs_nok_RCM_Types_Pkg;
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1.registration.status =
     mrs_unregistered_RCM_Types_Pkg;
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1.registration.nid_mn =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1.connection.valid =
     kcg_true;
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1.connection.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1.connection.status =
     mcs_disconnected_RCM_Types_Pkg;
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1.connection.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1.connection.settingUpConnectionHasFailed =
     kcg_true;
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1.connection.connectionLost =
@@ -8793,11 +8793,11 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1.session.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1 =
     kcg_true;
   outC->_L4_WaitForHandingOverRBCTerminated_handOver_with_2_Sessions_SM_then_IfBlock1 =
@@ -8815,13 +8815,13 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L43_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.valid =
     kcg_true;
   outC->_L43_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L43_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.healthStatus =
     mhs_nok_RCM_Types_Pkg;
   outC->_L43_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.status =
     mrs_unregistered_RCM_Types_Pkg;
   outC->_L43_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.nid_mn =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L42_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1 =
     kcg_true;
   outC->_L41_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1 =
@@ -8841,7 +8841,7 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L16_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1 =
     mrs_unregistered_RCM_Types_Pkg;
   outC->_L17_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L18_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1 =
     kcg_true;
   outC->_L19_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1 =
@@ -8857,21 +8857,21 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L24_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.registration.valid =
     kcg_true;
   outC->_L24_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.registration.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L24_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.registration.healthStatus =
     mhs_nok_RCM_Types_Pkg;
   outC->_L24_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.registration.status =
     mrs_unregistered_RCM_Types_Pkg;
   outC->_L24_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.registration.nid_mn =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L24_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.connection.valid =
     kcg_true;
   outC->_L24_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.connection.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L24_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.connection.status =
     mcs_disconnected_RCM_Types_Pkg;
   outC->_L24_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.connection.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L24_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.connection.settingUpConnectionHasFailed =
     kcg_true;
   outC->_L24_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.connection.connectionLost =
@@ -8883,17 +8883,17 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L24_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.session.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L24_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L24_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L24_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L26_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.valid =
     kcg_true;
   outC->_L26_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.q_dir =
     Q_DIR_Reverse;
   outC->_L26_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.nid_mn =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L25_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1 =
     kcg_true;
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.valid =
@@ -8929,45 +8929,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -8975,59 +8975,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx70 = 0; idx70 < 30; idx70++) {
     outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx70].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx70].q_dir =
       Q_DIR_Reverse;
     outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx70].valid =
       kcg_true;
     outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx70].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx70].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx71 = 0; idx71 < 500; idx71++) {
     outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketData[idx71] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L27_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L28_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1 =
     kcg_true;
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.valid =
@@ -9063,45 +9063,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -9109,59 +9109,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx72 = 0; idx72 < 30; idx72++) {
     outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx72].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx72].q_dir =
       Q_DIR_Reverse;
     outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx72].valid =
       kcg_true;
     outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx72].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx72].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx73 = 0; idx73 < 500; idx73++) {
     outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketData[idx73] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L30_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.valid =
     kcg_true;
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.source =
@@ -9195,45 +9195,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.trainOrientationToBG =
@@ -9241,77 +9241,77 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx74 = 0; idx74 < 30; idx74++) {
     outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx74].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx74].q_dir =
       Q_DIR_Reverse;
     outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx74].valid =
       kcg_true;
     outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx74].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketHeaders[idx74].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx75 = 0; idx75 < 500; idx75++) {
     outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.packets.PacketData[idx75] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.valid =
     kcg_true;
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L32_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   for (idx76 = 0; idx76 < 30; idx76++) {
     outC->_L33_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.PacketHeaders[idx76].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L33_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.PacketHeaders[idx76].q_dir =
       Q_DIR_Reverse;
     outC->_L33_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.PacketHeaders[idx76].valid =
       kcg_true;
     outC->_L33_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.PacketHeaders[idx76].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L33_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.PacketHeaders[idx76].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx77 = 0; idx77 < 500; idx77++) {
     outC->_L33_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1.PacketData[idx77] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->_L34_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L12_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlock1 =
     kcg_true;
   outC->unregistered_or_noReregisterRequired_ReregisterHandingOverRBC_handOver_with_2_Sessions_SM_then_IfBlo =
@@ -9325,33 +9325,33 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L14_WaitForHandingOverRBCRegistered_handOver_with_2_Sessions_SM_then_IfBlock1.valid =
     kcg_true;
   outC->_L14_WaitForHandingOverRBCRegistered_handOver_with_2_Sessions_SM_then_IfBlock1.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L14_WaitForHandingOverRBCRegistered_handOver_with_2_Sessions_SM_then_IfBlock1.healthStatus =
     mhs_nok_RCM_Types_Pkg;
   outC->_L14_WaitForHandingOverRBCRegistered_handOver_with_2_Sessions_SM_then_IfBlock1.status =
     mrs_unregistered_RCM_Types_Pkg;
   outC->_L14_WaitForHandingOverRBCRegistered_handOver_with_2_Sessions_SM_then_IfBlock1.nid_mn =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L13_WaitForHandingOverRBCRegistered_handOver_with_2_Sessions_SM_then_IfBlock1 =
     kcg_true;
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_2_Sessions_SM_then_IfBlock1.registration.valid =
     kcg_true;
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_2_Sessions_SM_then_IfBlock1.registration.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_2_Sessions_SM_then_IfBlock1.registration.healthStatus =
     mhs_nok_RCM_Types_Pkg;
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_2_Sessions_SM_then_IfBlock1.registration.status =
     mrs_unregistered_RCM_Types_Pkg;
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_2_Sessions_SM_then_IfBlock1.registration.nid_mn =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_2_Sessions_SM_then_IfBlock1.connection.valid =
     kcg_true;
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_2_Sessions_SM_then_IfBlock1.connection.mobileDeviceNo =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_2_Sessions_SM_then_IfBlock1.connection.status =
     mcs_disconnected_RCM_Types_Pkg;
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_2_Sessions_SM_then_IfBlock1.connection.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_2_Sessions_SM_then_IfBlock1.connection.settingUpConnectionHasFailed =
     kcg_true;
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_2_Sessions_SM_then_IfBlock1.connection.connectionLost =
@@ -9363,11 +9363,11 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_2_Sessions_SM_then_IfBlock1.session.phase =
     sp_terminated_RCM_Session_Types_Pkg;
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_WaitForHandingOverRBCRegistered_handOver_with_2_Sessions_SM_then_IfBlock1.session.nid_radio =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_WaitForHandingOverRBCRegistered_handOver_with_2_Sessions_SM_then_IfBlock1 =
     mrs_unregistered_RCM_Types_Pkg;
   outC->_L9_WaitForHandingOverRBCRegistered_handOver_with_2_Sessions_SM_then_IfBlock1 =
@@ -9407,83 +9407,83 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L7_Memory_1_struct.BG_Common_Header.q_media = Q_MEDIA_Balise;
   outC->_L7_Memory_1_struct.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
-  outC->_L7_Memory_1_struct.BG_Common_Header.m_mcount = kcg_lit_int64(0);
-  outC->_L7_Memory_1_struct.BG_Common_Header.nid_c = kcg_lit_int64(0);
-  outC->_L7_Memory_1_struct.BG_Common_Header.nid_bg = kcg_lit_int64(0);
+  outC->_L7_Memory_1_struct.BG_Common_Header.m_mcount = kcg_lit_int32(0);
+  outC->_L7_Memory_1_struct.BG_Common_Header.nid_c = kcg_lit_int32(0);
+  outC->_L7_Memory_1_struct.BG_Common_Header.nid_bg = kcg_lit_int32(0);
   outC->_L7_Memory_1_struct.BG_Common_Header.q_link = Q_LINK_Unlinked;
   outC->_L7_Memory_1_struct.BG_Common_Header.bgPosition.valid = kcg_true;
   outC->_L7_Memory_1_struct.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_Memory_1_struct.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_Memory_1_struct.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L7_Memory_1_struct.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L7_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L7_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
-  outC->_L7_Memory_1_struct.BG_Common_Header.q_nvlocacc = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L7_Memory_1_struct.BG_Common_Header.q_nvlocacc = kcg_lit_int32(0);
   outC->_L7_Memory_1_struct.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L7_Memory_1_struct.BG_Common_Header.trainOrientationToBG =
     Q_DIRLRBG_Reverse;
   outC->_L7_Memory_1_struct.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
-  outC->_L7_Memory_1_struct.Radio_Common_Header.radioDevice = kcg_lit_int64(0);
+  outC->_L7_Memory_1_struct.Radio_Common_Header.radioDevice = kcg_lit_int32(0);
   outC->_L7_Memory_1_struct.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
-  outC->_L7_Memory_1_struct.Radio_Common_Header.nid_message = kcg_lit_int64(0);
-  outC->_L7_Memory_1_struct.Radio_Common_Header.t_train = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L7_Memory_1_struct.Radio_Common_Header.nid_message = kcg_lit_int32(0);
+  outC->_L7_Memory_1_struct.Radio_Common_Header.t_train = kcg_lit_int32(0);
   outC->_L7_Memory_1_struct.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
-  outC->_L7_Memory_1_struct.Radio_Common_Header.nid_lrbg = kcg_lit_int64(0);
+  outC->_L7_Memory_1_struct.Radio_Common_Header.nid_lrbg = kcg_lit_int32(0);
   outC->_L7_Memory_1_struct.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
-  outC->_L7_Memory_1_struct.Radio_Common_Header.nid_em = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L7_Memory_1_struct.Radio_Common_Header.nid_em = kcg_lit_int32(0);
   outC->_L7_Memory_1_struct.Radio_Common_Header.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L7_Memory_1_struct.Radio_Common_Header.d_sr = kcg_lit_int64(0);
-  outC->_L7_Memory_1_struct.Radio_Common_Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L7_Memory_1_struct.Radio_Common_Header.d_ref = kcg_lit_int64(0);
+  outC->_L7_Memory_1_struct.Radio_Common_Header.d_sr = kcg_lit_int32(0);
+  outC->_L7_Memory_1_struct.Radio_Common_Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L7_Memory_1_struct.Radio_Common_Header.d_ref = kcg_lit_int32(0);
   outC->_L7_Memory_1_struct.Radio_Common_Header.q_dir = Q_DIR_Reverse;
-  outC->_L7_Memory_1_struct.Radio_Common_Header.d_emergencystop = kcg_lit_int64(
+  outC->_L7_Memory_1_struct.Radio_Common_Header.d_emergencystop = kcg_lit_int32(
       0);
   outC->_L7_Memory_1_struct.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx78 = 0; idx78 < 30; idx78++) {
     outC->_L7_Memory_1_struct.packets.PacketHeaders[idx78].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L7_Memory_1_struct.packets.PacketHeaders[idx78].q_dir = Q_DIR_Reverse;
     outC->_L7_Memory_1_struct.packets.PacketHeaders[idx78].valid = kcg_true;
     outC->_L7_Memory_1_struct.packets.PacketHeaders[idx78].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L7_Memory_1_struct.packets.PacketHeaders[idx78].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx79 = 0; idx79 < 500; idx79++) {
-    outC->_L7_Memory_1_struct.packets.PacketData[idx79] = kcg_lit_int64(0);
+    outC->_L7_Memory_1_struct.packets.PacketData[idx79] = kcg_lit_int32(0);
   }
   outC->_L7_Memory_1_struct.sendingRBC.valid = kcg_true;
-  outC->_L7_Memory_1_struct.sendingRBC.nid_c = kcg_lit_int64(0);
-  outC->_L7_Memory_1_struct.sendingRBC.rbc_id = kcg_lit_int64(0);
-  outC->_L7_Memory_1_struct.sendingRBC.device_id = kcg_lit_int64(0);
+  outC->_L7_Memory_1_struct.sendingRBC.nid_c = kcg_lit_int32(0);
+  outC->_L7_Memory_1_struct.sendingRBC.rbc_id = kcg_lit_int32(0);
+  outC->_L7_Memory_1_struct.sendingRBC.device_id = kcg_lit_int32(0);
   outC->_L6_Memory_1_struct.valid = kcg_true;
   outC->_L6_Memory_1_struct.source = msrc_undefined_Common_Types_Pkg;
   outC->_L6_Memory_1_struct.radioMetadata.t_train_reference = kcg_true;
@@ -9503,83 +9503,83 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L6_Memory_1_struct.BG_Common_Header.q_media = Q_MEDIA_Balise;
   outC->_L6_Memory_1_struct.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
-  outC->_L6_Memory_1_struct.BG_Common_Header.m_mcount = kcg_lit_int64(0);
-  outC->_L6_Memory_1_struct.BG_Common_Header.nid_c = kcg_lit_int64(0);
-  outC->_L6_Memory_1_struct.BG_Common_Header.nid_bg = kcg_lit_int64(0);
+  outC->_L6_Memory_1_struct.BG_Common_Header.m_mcount = kcg_lit_int32(0);
+  outC->_L6_Memory_1_struct.BG_Common_Header.nid_c = kcg_lit_int32(0);
+  outC->_L6_Memory_1_struct.BG_Common_Header.nid_bg = kcg_lit_int32(0);
   outC->_L6_Memory_1_struct.BG_Common_Header.q_link = Q_LINK_Unlinked;
   outC->_L6_Memory_1_struct.BG_Common_Header.bgPosition.valid = kcg_true;
   outC->_L6_Memory_1_struct.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_Memory_1_struct.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_Memory_1_struct.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L6_Memory_1_struct.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L6_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
-  outC->_L6_Memory_1_struct.BG_Common_Header.q_nvlocacc = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L6_Memory_1_struct.BG_Common_Header.q_nvlocacc = kcg_lit_int32(0);
   outC->_L6_Memory_1_struct.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L6_Memory_1_struct.BG_Common_Header.trainOrientationToBG =
     Q_DIRLRBG_Reverse;
   outC->_L6_Memory_1_struct.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
-  outC->_L6_Memory_1_struct.Radio_Common_Header.radioDevice = kcg_lit_int64(0);
+  outC->_L6_Memory_1_struct.Radio_Common_Header.radioDevice = kcg_lit_int32(0);
   outC->_L6_Memory_1_struct.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
-  outC->_L6_Memory_1_struct.Radio_Common_Header.nid_message = kcg_lit_int64(0);
-  outC->_L6_Memory_1_struct.Radio_Common_Header.t_train = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L6_Memory_1_struct.Radio_Common_Header.nid_message = kcg_lit_int32(0);
+  outC->_L6_Memory_1_struct.Radio_Common_Header.t_train = kcg_lit_int32(0);
   outC->_L6_Memory_1_struct.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
-  outC->_L6_Memory_1_struct.Radio_Common_Header.nid_lrbg = kcg_lit_int64(0);
+  outC->_L6_Memory_1_struct.Radio_Common_Header.nid_lrbg = kcg_lit_int32(0);
   outC->_L6_Memory_1_struct.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
-  outC->_L6_Memory_1_struct.Radio_Common_Header.nid_em = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L6_Memory_1_struct.Radio_Common_Header.nid_em = kcg_lit_int32(0);
   outC->_L6_Memory_1_struct.Radio_Common_Header.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L6_Memory_1_struct.Radio_Common_Header.d_sr = kcg_lit_int64(0);
-  outC->_L6_Memory_1_struct.Radio_Common_Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L6_Memory_1_struct.Radio_Common_Header.d_ref = kcg_lit_int64(0);
+  outC->_L6_Memory_1_struct.Radio_Common_Header.d_sr = kcg_lit_int32(0);
+  outC->_L6_Memory_1_struct.Radio_Common_Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L6_Memory_1_struct.Radio_Common_Header.d_ref = kcg_lit_int32(0);
   outC->_L6_Memory_1_struct.Radio_Common_Header.q_dir = Q_DIR_Reverse;
-  outC->_L6_Memory_1_struct.Radio_Common_Header.d_emergencystop = kcg_lit_int64(
+  outC->_L6_Memory_1_struct.Radio_Common_Header.d_emergencystop = kcg_lit_int32(
       0);
   outC->_L6_Memory_1_struct.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx80 = 0; idx80 < 30; idx80++) {
     outC->_L6_Memory_1_struct.packets.PacketHeaders[idx80].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L6_Memory_1_struct.packets.PacketHeaders[idx80].q_dir = Q_DIR_Reverse;
     outC->_L6_Memory_1_struct.packets.PacketHeaders[idx80].valid = kcg_true;
     outC->_L6_Memory_1_struct.packets.PacketHeaders[idx80].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L6_Memory_1_struct.packets.PacketHeaders[idx80].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx81 = 0; idx81 < 500; idx81++) {
-    outC->_L6_Memory_1_struct.packets.PacketData[idx81] = kcg_lit_int64(0);
+    outC->_L6_Memory_1_struct.packets.PacketData[idx81] = kcg_lit_int32(0);
   }
   outC->_L6_Memory_1_struct.sendingRBC.valid = kcg_true;
-  outC->_L6_Memory_1_struct.sendingRBC.nid_c = kcg_lit_int64(0);
-  outC->_L6_Memory_1_struct.sendingRBC.rbc_id = kcg_lit_int64(0);
-  outC->_L6_Memory_1_struct.sendingRBC.device_id = kcg_lit_int64(0);
+  outC->_L6_Memory_1_struct.sendingRBC.nid_c = kcg_lit_int32(0);
+  outC->_L6_Memory_1_struct.sendingRBC.rbc_id = kcg_lit_int32(0);
+  outC->_L6_Memory_1_struct.sendingRBC.device_id = kcg_lit_int32(0);
   outC->_L5_Memory_1_struct.valid = kcg_true;
   outC->_L5_Memory_1_struct.source = msrc_undefined_Common_Types_Pkg;
   outC->_L5_Memory_1_struct.radioMetadata.t_train_reference = kcg_true;
@@ -9599,83 +9599,83 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L5_Memory_1_struct.BG_Common_Header.q_media = Q_MEDIA_Balise;
   outC->_L5_Memory_1_struct.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
-  outC->_L5_Memory_1_struct.BG_Common_Header.m_mcount = kcg_lit_int64(0);
-  outC->_L5_Memory_1_struct.BG_Common_Header.nid_c = kcg_lit_int64(0);
-  outC->_L5_Memory_1_struct.BG_Common_Header.nid_bg = kcg_lit_int64(0);
+  outC->_L5_Memory_1_struct.BG_Common_Header.m_mcount = kcg_lit_int32(0);
+  outC->_L5_Memory_1_struct.BG_Common_Header.nid_c = kcg_lit_int32(0);
+  outC->_L5_Memory_1_struct.BG_Common_Header.nid_bg = kcg_lit_int32(0);
   outC->_L5_Memory_1_struct.BG_Common_Header.q_link = Q_LINK_Unlinked;
   outC->_L5_Memory_1_struct.BG_Common_Header.bgPosition.valid = kcg_true;
   outC->_L5_Memory_1_struct.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5_Memory_1_struct.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5_Memory_1_struct.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L5_Memory_1_struct.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L5_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
-  outC->_L5_Memory_1_struct.BG_Common_Header.q_nvlocacc = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L5_Memory_1_struct.BG_Common_Header.q_nvlocacc = kcg_lit_int32(0);
   outC->_L5_Memory_1_struct.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L5_Memory_1_struct.BG_Common_Header.trainOrientationToBG =
     Q_DIRLRBG_Reverse;
   outC->_L5_Memory_1_struct.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
-  outC->_L5_Memory_1_struct.Radio_Common_Header.radioDevice = kcg_lit_int64(0);
+  outC->_L5_Memory_1_struct.Radio_Common_Header.radioDevice = kcg_lit_int32(0);
   outC->_L5_Memory_1_struct.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
-  outC->_L5_Memory_1_struct.Radio_Common_Header.nid_message = kcg_lit_int64(0);
-  outC->_L5_Memory_1_struct.Radio_Common_Header.t_train = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L5_Memory_1_struct.Radio_Common_Header.nid_message = kcg_lit_int32(0);
+  outC->_L5_Memory_1_struct.Radio_Common_Header.t_train = kcg_lit_int32(0);
   outC->_L5_Memory_1_struct.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
-  outC->_L5_Memory_1_struct.Radio_Common_Header.nid_lrbg = kcg_lit_int64(0);
+  outC->_L5_Memory_1_struct.Radio_Common_Header.nid_lrbg = kcg_lit_int32(0);
   outC->_L5_Memory_1_struct.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
-  outC->_L5_Memory_1_struct.Radio_Common_Header.nid_em = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L5_Memory_1_struct.Radio_Common_Header.nid_em = kcg_lit_int32(0);
   outC->_L5_Memory_1_struct.Radio_Common_Header.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L5_Memory_1_struct.Radio_Common_Header.d_sr = kcg_lit_int64(0);
-  outC->_L5_Memory_1_struct.Radio_Common_Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L5_Memory_1_struct.Radio_Common_Header.d_ref = kcg_lit_int64(0);
+  outC->_L5_Memory_1_struct.Radio_Common_Header.d_sr = kcg_lit_int32(0);
+  outC->_L5_Memory_1_struct.Radio_Common_Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L5_Memory_1_struct.Radio_Common_Header.d_ref = kcg_lit_int32(0);
   outC->_L5_Memory_1_struct.Radio_Common_Header.q_dir = Q_DIR_Reverse;
-  outC->_L5_Memory_1_struct.Radio_Common_Header.d_emergencystop = kcg_lit_int64(
+  outC->_L5_Memory_1_struct.Radio_Common_Header.d_emergencystop = kcg_lit_int32(
       0);
   outC->_L5_Memory_1_struct.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx82 = 0; idx82 < 30; idx82++) {
     outC->_L5_Memory_1_struct.packets.PacketHeaders[idx82].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_Memory_1_struct.packets.PacketHeaders[idx82].q_dir = Q_DIR_Reverse;
     outC->_L5_Memory_1_struct.packets.PacketHeaders[idx82].valid = kcg_true;
     outC->_L5_Memory_1_struct.packets.PacketHeaders[idx82].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5_Memory_1_struct.packets.PacketHeaders[idx82].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx83 = 0; idx83 < 500; idx83++) {
-    outC->_L5_Memory_1_struct.packets.PacketData[idx83] = kcg_lit_int64(0);
+    outC->_L5_Memory_1_struct.packets.PacketData[idx83] = kcg_lit_int32(0);
   }
   outC->_L5_Memory_1_struct.sendingRBC.valid = kcg_true;
-  outC->_L5_Memory_1_struct.sendingRBC.nid_c = kcg_lit_int64(0);
-  outC->_L5_Memory_1_struct.sendingRBC.rbc_id = kcg_lit_int64(0);
-  outC->_L5_Memory_1_struct.sendingRBC.device_id = kcg_lit_int64(0);
+  outC->_L5_Memory_1_struct.sendingRBC.nid_c = kcg_lit_int32(0);
+  outC->_L5_Memory_1_struct.sendingRBC.rbc_id = kcg_lit_int32(0);
+  outC->_L5_Memory_1_struct.sendingRBC.device_id = kcg_lit_int32(0);
   outC->_L3_Memory_1_struct = kcg_true;
   outC->_L2_Memory_1_struct.valid = kcg_true;
   outC->_L2_Memory_1_struct.source = msrc_undefined_Common_Types_Pkg;
@@ -9696,83 +9696,83 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L2_Memory_1_struct.BG_Common_Header.q_media = Q_MEDIA_Balise;
   outC->_L2_Memory_1_struct.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
-  outC->_L2_Memory_1_struct.BG_Common_Header.m_mcount = kcg_lit_int64(0);
-  outC->_L2_Memory_1_struct.BG_Common_Header.nid_c = kcg_lit_int64(0);
-  outC->_L2_Memory_1_struct.BG_Common_Header.nid_bg = kcg_lit_int64(0);
+  outC->_L2_Memory_1_struct.BG_Common_Header.m_mcount = kcg_lit_int32(0);
+  outC->_L2_Memory_1_struct.BG_Common_Header.nid_c = kcg_lit_int32(0);
+  outC->_L2_Memory_1_struct.BG_Common_Header.nid_bg = kcg_lit_int32(0);
   outC->_L2_Memory_1_struct.BG_Common_Header.q_link = Q_LINK_Unlinked;
   outC->_L2_Memory_1_struct.BG_Common_Header.bgPosition.valid = kcg_true;
   outC->_L2_Memory_1_struct.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_Memory_1_struct.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_Memory_1_struct.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L2_Memory_1_struct.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L2_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
-  outC->_L2_Memory_1_struct.BG_Common_Header.q_nvlocacc = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L2_Memory_1_struct.BG_Common_Header.q_nvlocacc = kcg_lit_int32(0);
   outC->_L2_Memory_1_struct.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L2_Memory_1_struct.BG_Common_Header.trainOrientationToBG =
     Q_DIRLRBG_Reverse;
   outC->_L2_Memory_1_struct.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
-  outC->_L2_Memory_1_struct.Radio_Common_Header.radioDevice = kcg_lit_int64(0);
+  outC->_L2_Memory_1_struct.Radio_Common_Header.radioDevice = kcg_lit_int32(0);
   outC->_L2_Memory_1_struct.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
-  outC->_L2_Memory_1_struct.Radio_Common_Header.nid_message = kcg_lit_int64(0);
-  outC->_L2_Memory_1_struct.Radio_Common_Header.t_train = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L2_Memory_1_struct.Radio_Common_Header.nid_message = kcg_lit_int32(0);
+  outC->_L2_Memory_1_struct.Radio_Common_Header.t_train = kcg_lit_int32(0);
   outC->_L2_Memory_1_struct.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
-  outC->_L2_Memory_1_struct.Radio_Common_Header.nid_lrbg = kcg_lit_int64(0);
+  outC->_L2_Memory_1_struct.Radio_Common_Header.nid_lrbg = kcg_lit_int32(0);
   outC->_L2_Memory_1_struct.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
-  outC->_L2_Memory_1_struct.Radio_Common_Header.nid_em = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L2_Memory_1_struct.Radio_Common_Header.nid_em = kcg_lit_int32(0);
   outC->_L2_Memory_1_struct.Radio_Common_Header.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L2_Memory_1_struct.Radio_Common_Header.d_sr = kcg_lit_int64(0);
-  outC->_L2_Memory_1_struct.Radio_Common_Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L2_Memory_1_struct.Radio_Common_Header.d_ref = kcg_lit_int64(0);
+  outC->_L2_Memory_1_struct.Radio_Common_Header.d_sr = kcg_lit_int32(0);
+  outC->_L2_Memory_1_struct.Radio_Common_Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L2_Memory_1_struct.Radio_Common_Header.d_ref = kcg_lit_int32(0);
   outC->_L2_Memory_1_struct.Radio_Common_Header.q_dir = Q_DIR_Reverse;
-  outC->_L2_Memory_1_struct.Radio_Common_Header.d_emergencystop = kcg_lit_int64(
+  outC->_L2_Memory_1_struct.Radio_Common_Header.d_emergencystop = kcg_lit_int32(
       0);
   outC->_L2_Memory_1_struct.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx84 = 0; idx84 < 30; idx84++) {
     outC->_L2_Memory_1_struct.packets.PacketHeaders[idx84].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L2_Memory_1_struct.packets.PacketHeaders[idx84].q_dir = Q_DIR_Reverse;
     outC->_L2_Memory_1_struct.packets.PacketHeaders[idx84].valid = kcg_true;
     outC->_L2_Memory_1_struct.packets.PacketHeaders[idx84].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L2_Memory_1_struct.packets.PacketHeaders[idx84].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx85 = 0; idx85 < 500; idx85++) {
-    outC->_L2_Memory_1_struct.packets.PacketData[idx85] = kcg_lit_int64(0);
+    outC->_L2_Memory_1_struct.packets.PacketData[idx85] = kcg_lit_int32(0);
   }
   outC->_L2_Memory_1_struct.sendingRBC.valid = kcg_true;
-  outC->_L2_Memory_1_struct.sendingRBC.nid_c = kcg_lit_int64(0);
-  outC->_L2_Memory_1_struct.sendingRBC.rbc_id = kcg_lit_int64(0);
-  outC->_L2_Memory_1_struct.sendingRBC.device_id = kcg_lit_int64(0);
+  outC->_L2_Memory_1_struct.sendingRBC.nid_c = kcg_lit_int32(0);
+  outC->_L2_Memory_1_struct.sendingRBC.rbc_id = kcg_lit_int32(0);
+  outC->_L2_Memory_1_struct.sendingRBC.device_id = kcg_lit_int32(0);
   outC->_L1_Memory_1_struct = kcg_true;
   outC->_L9_Memory_1_struct.valid = kcg_true;
   outC->_L9_Memory_1_struct.source = msrc_undefined_Common_Types_Pkg;
@@ -9793,83 +9793,83 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L9_Memory_1_struct.BG_Common_Header.q_media = Q_MEDIA_Balise;
   outC->_L9_Memory_1_struct.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
-  outC->_L9_Memory_1_struct.BG_Common_Header.m_mcount = kcg_lit_int64(0);
-  outC->_L9_Memory_1_struct.BG_Common_Header.nid_c = kcg_lit_int64(0);
-  outC->_L9_Memory_1_struct.BG_Common_Header.nid_bg = kcg_lit_int64(0);
+  outC->_L9_Memory_1_struct.BG_Common_Header.m_mcount = kcg_lit_int32(0);
+  outC->_L9_Memory_1_struct.BG_Common_Header.nid_c = kcg_lit_int32(0);
+  outC->_L9_Memory_1_struct.BG_Common_Header.nid_bg = kcg_lit_int32(0);
   outC->_L9_Memory_1_struct.BG_Common_Header.q_link = Q_LINK_Unlinked;
   outC->_L9_Memory_1_struct.BG_Common_Header.bgPosition.valid = kcg_true;
   outC->_L9_Memory_1_struct.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_Memory_1_struct.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_Memory_1_struct.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L9_Memory_1_struct.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L9_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L9_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
-  outC->_L9_Memory_1_struct.BG_Common_Header.q_nvlocacc = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L9_Memory_1_struct.BG_Common_Header.q_nvlocacc = kcg_lit_int32(0);
   outC->_L9_Memory_1_struct.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L9_Memory_1_struct.BG_Common_Header.trainOrientationToBG =
     Q_DIRLRBG_Reverse;
   outC->_L9_Memory_1_struct.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
-  outC->_L9_Memory_1_struct.Radio_Common_Header.radioDevice = kcg_lit_int64(0);
+  outC->_L9_Memory_1_struct.Radio_Common_Header.radioDevice = kcg_lit_int32(0);
   outC->_L9_Memory_1_struct.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
-  outC->_L9_Memory_1_struct.Radio_Common_Header.nid_message = kcg_lit_int64(0);
-  outC->_L9_Memory_1_struct.Radio_Common_Header.t_train = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L9_Memory_1_struct.Radio_Common_Header.nid_message = kcg_lit_int32(0);
+  outC->_L9_Memory_1_struct.Radio_Common_Header.t_train = kcg_lit_int32(0);
   outC->_L9_Memory_1_struct.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
-  outC->_L9_Memory_1_struct.Radio_Common_Header.nid_lrbg = kcg_lit_int64(0);
+  outC->_L9_Memory_1_struct.Radio_Common_Header.nid_lrbg = kcg_lit_int32(0);
   outC->_L9_Memory_1_struct.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
-  outC->_L9_Memory_1_struct.Radio_Common_Header.nid_em = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L9_Memory_1_struct.Radio_Common_Header.nid_em = kcg_lit_int32(0);
   outC->_L9_Memory_1_struct.Radio_Common_Header.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L9_Memory_1_struct.Radio_Common_Header.d_sr = kcg_lit_int64(0);
-  outC->_L9_Memory_1_struct.Radio_Common_Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L9_Memory_1_struct.Radio_Common_Header.d_ref = kcg_lit_int64(0);
+  outC->_L9_Memory_1_struct.Radio_Common_Header.d_sr = kcg_lit_int32(0);
+  outC->_L9_Memory_1_struct.Radio_Common_Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L9_Memory_1_struct.Radio_Common_Header.d_ref = kcg_lit_int32(0);
   outC->_L9_Memory_1_struct.Radio_Common_Header.q_dir = Q_DIR_Reverse;
-  outC->_L9_Memory_1_struct.Radio_Common_Header.d_emergencystop = kcg_lit_int64(
+  outC->_L9_Memory_1_struct.Radio_Common_Header.d_emergencystop = kcg_lit_int32(
       0);
   outC->_L9_Memory_1_struct.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx86 = 0; idx86 < 30; idx86++) {
     outC->_L9_Memory_1_struct.packets.PacketHeaders[idx86].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L9_Memory_1_struct.packets.PacketHeaders[idx86].q_dir = Q_DIR_Reverse;
     outC->_L9_Memory_1_struct.packets.PacketHeaders[idx86].valid = kcg_true;
     outC->_L9_Memory_1_struct.packets.PacketHeaders[idx86].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L9_Memory_1_struct.packets.PacketHeaders[idx86].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx87 = 0; idx87 < 500; idx87++) {
-    outC->_L9_Memory_1_struct.packets.PacketData[idx87] = kcg_lit_int64(0);
+    outC->_L9_Memory_1_struct.packets.PacketData[idx87] = kcg_lit_int32(0);
   }
   outC->_L9_Memory_1_struct.sendingRBC.valid = kcg_true;
-  outC->_L9_Memory_1_struct.sendingRBC.nid_c = kcg_lit_int64(0);
-  outC->_L9_Memory_1_struct.sendingRBC.rbc_id = kcg_lit_int64(0);
-  outC->_L9_Memory_1_struct.sendingRBC.device_id = kcg_lit_int64(0);
+  outC->_L9_Memory_1_struct.sendingRBC.nid_c = kcg_lit_int32(0);
+  outC->_L9_Memory_1_struct.sendingRBC.rbc_id = kcg_lit_int32(0);
+  outC->_L9_Memory_1_struct.sendingRBC.device_id = kcg_lit_int32(0);
   outC->M_Input_Memory_1_struct.valid = kcg_true;
   outC->M_Input_Memory_1_struct.source = msrc_undefined_Common_Types_Pkg;
   outC->M_Input_Memory_1_struct.radioMetadata.t_train_reference = kcg_true;
@@ -9889,86 +9889,86 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->M_Input_Memory_1_struct.BG_Common_Header.q_media = Q_MEDIA_Balise;
   outC->M_Input_Memory_1_struct.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
-  outC->M_Input_Memory_1_struct.BG_Common_Header.m_mcount = kcg_lit_int64(0);
-  outC->M_Input_Memory_1_struct.BG_Common_Header.nid_c = kcg_lit_int64(0);
-  outC->M_Input_Memory_1_struct.BG_Common_Header.nid_bg = kcg_lit_int64(0);
+  outC->M_Input_Memory_1_struct.BG_Common_Header.m_mcount = kcg_lit_int32(0);
+  outC->M_Input_Memory_1_struct.BG_Common_Header.nid_c = kcg_lit_int32(0);
+  outC->M_Input_Memory_1_struct.BG_Common_Header.nid_bg = kcg_lit_int32(0);
   outC->M_Input_Memory_1_struct.BG_Common_Header.q_link = Q_LINK_Unlinked;
   outC->M_Input_Memory_1_struct.BG_Common_Header.bgPosition.valid = kcg_true;
   outC->M_Input_Memory_1_struct.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->M_Input_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->M_Input_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->M_Input_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->M_Input_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->M_Input_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->M_Input_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->M_Input_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->M_Input_Memory_1_struct.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->M_Input_Memory_1_struct.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->M_Input_Memory_1_struct.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->M_Input_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->M_Input_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->M_Input_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
-  outC->M_Input_Memory_1_struct.BG_Common_Header.q_nvlocacc = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->M_Input_Memory_1_struct.BG_Common_Header.q_nvlocacc = kcg_lit_int32(0);
   outC->M_Input_Memory_1_struct.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->M_Input_Memory_1_struct.BG_Common_Header.trainOrientationToBG =
     Q_DIRLRBG_Reverse;
   outC->M_Input_Memory_1_struct.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
-  outC->M_Input_Memory_1_struct.Radio_Common_Header.radioDevice = kcg_lit_int64(
+  outC->M_Input_Memory_1_struct.Radio_Common_Header.radioDevice = kcg_lit_int32(
       0);
   outC->M_Input_Memory_1_struct.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
-  outC->M_Input_Memory_1_struct.Radio_Common_Header.nid_message = kcg_lit_int64(
+    kcg_lit_int32(0);
+  outC->M_Input_Memory_1_struct.Radio_Common_Header.nid_message = kcg_lit_int32(
       0);
-  outC->M_Input_Memory_1_struct.Radio_Common_Header.t_train = kcg_lit_int64(0);
+  outC->M_Input_Memory_1_struct.Radio_Common_Header.t_train = kcg_lit_int32(0);
   outC->M_Input_Memory_1_struct.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
-  outC->M_Input_Memory_1_struct.Radio_Common_Header.nid_lrbg = kcg_lit_int64(0);
+  outC->M_Input_Memory_1_struct.Radio_Common_Header.nid_lrbg = kcg_lit_int32(0);
   outC->M_Input_Memory_1_struct.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
-  outC->M_Input_Memory_1_struct.Radio_Common_Header.nid_em = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->M_Input_Memory_1_struct.Radio_Common_Header.nid_em = kcg_lit_int32(0);
   outC->M_Input_Memory_1_struct.Radio_Common_Header.q_scale = Q_SCALE_10_cm_scale;
-  outC->M_Input_Memory_1_struct.Radio_Common_Header.d_sr = kcg_lit_int64(0);
-  outC->M_Input_Memory_1_struct.Radio_Common_Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->M_Input_Memory_1_struct.Radio_Common_Header.d_ref = kcg_lit_int64(0);
+  outC->M_Input_Memory_1_struct.Radio_Common_Header.d_sr = kcg_lit_int32(0);
+  outC->M_Input_Memory_1_struct.Radio_Common_Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->M_Input_Memory_1_struct.Radio_Common_Header.d_ref = kcg_lit_int32(0);
   outC->M_Input_Memory_1_struct.Radio_Common_Header.q_dir = Q_DIR_Reverse;
   outC->M_Input_Memory_1_struct.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->M_Input_Memory_1_struct.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx88 = 0; idx88 < 30; idx88++) {
     outC->M_Input_Memory_1_struct.packets.PacketHeaders[idx88].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->M_Input_Memory_1_struct.packets.PacketHeaders[idx88].q_dir =
       Q_DIR_Reverse;
     outC->M_Input_Memory_1_struct.packets.PacketHeaders[idx88].valid = kcg_true;
     outC->M_Input_Memory_1_struct.packets.PacketHeaders[idx88].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->M_Input_Memory_1_struct.packets.PacketHeaders[idx88].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx89 = 0; idx89 < 500; idx89++) {
-    outC->M_Input_Memory_1_struct.packets.PacketData[idx89] = kcg_lit_int64(0);
+    outC->M_Input_Memory_1_struct.packets.PacketData[idx89] = kcg_lit_int32(0);
   }
   outC->M_Input_Memory_1_struct.sendingRBC.valid = kcg_true;
-  outC->M_Input_Memory_1_struct.sendingRBC.nid_c = kcg_lit_int64(0);
-  outC->M_Input_Memory_1_struct.sendingRBC.rbc_id = kcg_lit_int64(0);
-  outC->M_Input_Memory_1_struct.sendingRBC.device_id = kcg_lit_int64(0);
+  outC->M_Input_Memory_1_struct.sendingRBC.nid_c = kcg_lit_int32(0);
+  outC->M_Input_Memory_1_struct.sendingRBC.rbc_id = kcg_lit_int32(0);
+  outC->M_Input_Memory_1_struct.sendingRBC.device_id = kcg_lit_int32(0);
   outC->Reset_Memory_1_struct = kcg_true;
   outC->MemCond_Memory_1_struct = kcg_true;
   outC->InitVal_Memory_1_struct.valid = kcg_true;
@@ -9990,86 +9990,86 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->InitVal_Memory_1_struct.BG_Common_Header.q_media = Q_MEDIA_Balise;
   outC->InitVal_Memory_1_struct.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
-  outC->InitVal_Memory_1_struct.BG_Common_Header.m_mcount = kcg_lit_int64(0);
-  outC->InitVal_Memory_1_struct.BG_Common_Header.nid_c = kcg_lit_int64(0);
-  outC->InitVal_Memory_1_struct.BG_Common_Header.nid_bg = kcg_lit_int64(0);
+  outC->InitVal_Memory_1_struct.BG_Common_Header.m_mcount = kcg_lit_int32(0);
+  outC->InitVal_Memory_1_struct.BG_Common_Header.nid_c = kcg_lit_int32(0);
+  outC->InitVal_Memory_1_struct.BG_Common_Header.nid_bg = kcg_lit_int32(0);
   outC->InitVal_Memory_1_struct.BG_Common_Header.q_link = Q_LINK_Unlinked;
   outC->InitVal_Memory_1_struct.BG_Common_Header.bgPosition.valid = kcg_true;
   outC->InitVal_Memory_1_struct.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->InitVal_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->InitVal_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->InitVal_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->InitVal_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->InitVal_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->InitVal_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->InitVal_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->InitVal_Memory_1_struct.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->InitVal_Memory_1_struct.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->InitVal_Memory_1_struct.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->InitVal_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->InitVal_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->InitVal_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
-  outC->InitVal_Memory_1_struct.BG_Common_Header.q_nvlocacc = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->InitVal_Memory_1_struct.BG_Common_Header.q_nvlocacc = kcg_lit_int32(0);
   outC->InitVal_Memory_1_struct.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->InitVal_Memory_1_struct.BG_Common_Header.trainOrientationToBG =
     Q_DIRLRBG_Reverse;
   outC->InitVal_Memory_1_struct.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
-  outC->InitVal_Memory_1_struct.Radio_Common_Header.radioDevice = kcg_lit_int64(
+  outC->InitVal_Memory_1_struct.Radio_Common_Header.radioDevice = kcg_lit_int32(
       0);
   outC->InitVal_Memory_1_struct.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
-  outC->InitVal_Memory_1_struct.Radio_Common_Header.nid_message = kcg_lit_int64(
+    kcg_lit_int32(0);
+  outC->InitVal_Memory_1_struct.Radio_Common_Header.nid_message = kcg_lit_int32(
       0);
-  outC->InitVal_Memory_1_struct.Radio_Common_Header.t_train = kcg_lit_int64(0);
+  outC->InitVal_Memory_1_struct.Radio_Common_Header.t_train = kcg_lit_int32(0);
   outC->InitVal_Memory_1_struct.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
-  outC->InitVal_Memory_1_struct.Radio_Common_Header.nid_lrbg = kcg_lit_int64(0);
+  outC->InitVal_Memory_1_struct.Radio_Common_Header.nid_lrbg = kcg_lit_int32(0);
   outC->InitVal_Memory_1_struct.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
-  outC->InitVal_Memory_1_struct.Radio_Common_Header.nid_em = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->InitVal_Memory_1_struct.Radio_Common_Header.nid_em = kcg_lit_int32(0);
   outC->InitVal_Memory_1_struct.Radio_Common_Header.q_scale = Q_SCALE_10_cm_scale;
-  outC->InitVal_Memory_1_struct.Radio_Common_Header.d_sr = kcg_lit_int64(0);
-  outC->InitVal_Memory_1_struct.Radio_Common_Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->InitVal_Memory_1_struct.Radio_Common_Header.d_ref = kcg_lit_int64(0);
+  outC->InitVal_Memory_1_struct.Radio_Common_Header.d_sr = kcg_lit_int32(0);
+  outC->InitVal_Memory_1_struct.Radio_Common_Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->InitVal_Memory_1_struct.Radio_Common_Header.d_ref = kcg_lit_int32(0);
   outC->InitVal_Memory_1_struct.Radio_Common_Header.q_dir = Q_DIR_Reverse;
   outC->InitVal_Memory_1_struct.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->InitVal_Memory_1_struct.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx90 = 0; idx90 < 30; idx90++) {
     outC->InitVal_Memory_1_struct.packets.PacketHeaders[idx90].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->InitVal_Memory_1_struct.packets.PacketHeaders[idx90].q_dir =
       Q_DIR_Reverse;
     outC->InitVal_Memory_1_struct.packets.PacketHeaders[idx90].valid = kcg_true;
     outC->InitVal_Memory_1_struct.packets.PacketHeaders[idx90].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->InitVal_Memory_1_struct.packets.PacketHeaders[idx90].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx91 = 0; idx91 < 500; idx91++) {
-    outC->InitVal_Memory_1_struct.packets.PacketData[idx91] = kcg_lit_int64(0);
+    outC->InitVal_Memory_1_struct.packets.PacketData[idx91] = kcg_lit_int32(0);
   }
   outC->InitVal_Memory_1_struct.sendingRBC.valid = kcg_true;
-  outC->InitVal_Memory_1_struct.sendingRBC.nid_c = kcg_lit_int64(0);
-  outC->InitVal_Memory_1_struct.sendingRBC.rbc_id = kcg_lit_int64(0);
-  outC->InitVal_Memory_1_struct.sendingRBC.device_id = kcg_lit_int64(0);
+  outC->InitVal_Memory_1_struct.sendingRBC.nid_c = kcg_lit_int32(0);
+  outC->InitVal_Memory_1_struct.sendingRBC.rbc_id = kcg_lit_int32(0);
+  outC->InitVal_Memory_1_struct.sendingRBC.device_id = kcg_lit_int32(0);
   outC->Out_Memory_1_struct.valid = kcg_true;
   outC->Out_Memory_1_struct.source = msrc_undefined_Common_Types_Pkg;
   outC->Out_Memory_1_struct.radioMetadata.t_train_reference = kcg_true;
@@ -10089,83 +10089,83 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->Out_Memory_1_struct.BG_Common_Header.q_media = Q_MEDIA_Balise;
   outC->Out_Memory_1_struct.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
-  outC->Out_Memory_1_struct.BG_Common_Header.m_mcount = kcg_lit_int64(0);
-  outC->Out_Memory_1_struct.BG_Common_Header.nid_c = kcg_lit_int64(0);
-  outC->Out_Memory_1_struct.BG_Common_Header.nid_bg = kcg_lit_int64(0);
+  outC->Out_Memory_1_struct.BG_Common_Header.m_mcount = kcg_lit_int32(0);
+  outC->Out_Memory_1_struct.BG_Common_Header.nid_c = kcg_lit_int32(0);
+  outC->Out_Memory_1_struct.BG_Common_Header.nid_bg = kcg_lit_int32(0);
   outC->Out_Memory_1_struct.BG_Common_Header.q_link = Q_LINK_Unlinked;
   outC->Out_Memory_1_struct.BG_Common_Header.bgPosition.valid = kcg_true;
   outC->Out_Memory_1_struct.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->Out_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->Out_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->Out_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->Out_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->Out_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->Out_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->Out_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->Out_Memory_1_struct.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->Out_Memory_1_struct.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->Out_Memory_1_struct.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->Out_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->Out_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->Out_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
-  outC->Out_Memory_1_struct.BG_Common_Header.q_nvlocacc = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->Out_Memory_1_struct.BG_Common_Header.q_nvlocacc = kcg_lit_int32(0);
   outC->Out_Memory_1_struct.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->Out_Memory_1_struct.BG_Common_Header.trainOrientationToBG =
     Q_DIRLRBG_Reverse;
   outC->Out_Memory_1_struct.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
-  outC->Out_Memory_1_struct.Radio_Common_Header.radioDevice = kcg_lit_int64(0);
+  outC->Out_Memory_1_struct.Radio_Common_Header.radioDevice = kcg_lit_int32(0);
   outC->Out_Memory_1_struct.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
-  outC->Out_Memory_1_struct.Radio_Common_Header.nid_message = kcg_lit_int64(0);
-  outC->Out_Memory_1_struct.Radio_Common_Header.t_train = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->Out_Memory_1_struct.Radio_Common_Header.nid_message = kcg_lit_int32(0);
+  outC->Out_Memory_1_struct.Radio_Common_Header.t_train = kcg_lit_int32(0);
   outC->Out_Memory_1_struct.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
-  outC->Out_Memory_1_struct.Radio_Common_Header.nid_lrbg = kcg_lit_int64(0);
+  outC->Out_Memory_1_struct.Radio_Common_Header.nid_lrbg = kcg_lit_int32(0);
   outC->Out_Memory_1_struct.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
-  outC->Out_Memory_1_struct.Radio_Common_Header.nid_em = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->Out_Memory_1_struct.Radio_Common_Header.nid_em = kcg_lit_int32(0);
   outC->Out_Memory_1_struct.Radio_Common_Header.q_scale = Q_SCALE_10_cm_scale;
-  outC->Out_Memory_1_struct.Radio_Common_Header.d_sr = kcg_lit_int64(0);
-  outC->Out_Memory_1_struct.Radio_Common_Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->Out_Memory_1_struct.Radio_Common_Header.d_ref = kcg_lit_int64(0);
+  outC->Out_Memory_1_struct.Radio_Common_Header.d_sr = kcg_lit_int32(0);
+  outC->Out_Memory_1_struct.Radio_Common_Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->Out_Memory_1_struct.Radio_Common_Header.d_ref = kcg_lit_int32(0);
   outC->Out_Memory_1_struct.Radio_Common_Header.q_dir = Q_DIR_Reverse;
-  outC->Out_Memory_1_struct.Radio_Common_Header.d_emergencystop = kcg_lit_int64(
+  outC->Out_Memory_1_struct.Radio_Common_Header.d_emergencystop = kcg_lit_int32(
       0);
   outC->Out_Memory_1_struct.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx92 = 0; idx92 < 30; idx92++) {
     outC->Out_Memory_1_struct.packets.PacketHeaders[idx92].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->Out_Memory_1_struct.packets.PacketHeaders[idx92].q_dir = Q_DIR_Reverse;
     outC->Out_Memory_1_struct.packets.PacketHeaders[idx92].valid = kcg_true;
     outC->Out_Memory_1_struct.packets.PacketHeaders[idx92].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->Out_Memory_1_struct.packets.PacketHeaders[idx92].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx93 = 0; idx93 < 500; idx93++) {
-    outC->Out_Memory_1_struct.packets.PacketData[idx93] = kcg_lit_int64(0);
+    outC->Out_Memory_1_struct.packets.PacketData[idx93] = kcg_lit_int32(0);
   }
   outC->Out_Memory_1_struct.sendingRBC.valid = kcg_true;
-  outC->Out_Memory_1_struct.sendingRBC.nid_c = kcg_lit_int64(0);
-  outC->Out_Memory_1_struct.sendingRBC.rbc_id = kcg_lit_int64(0);
-  outC->Out_Memory_1_struct.sendingRBC.device_id = kcg_lit_int64(0);
+  outC->Out_Memory_1_struct.sendingRBC.nid_c = kcg_lit_int32(0);
+  outC->Out_Memory_1_struct.sendingRBC.rbc_id = kcg_lit_int32(0);
+  outC->Out_Memory_1_struct.sendingRBC.device_id = kcg_lit_int32(0);
   outC->establishSessionWithAcceptingRBCOrdered_then_IfBlock1 = kcg_true;
   outC->_L8_Memory_1_struct.valid = kcg_true;
   outC->_L8_Memory_1_struct.source = msrc_undefined_Common_Types_Pkg;
@@ -10186,83 +10186,83 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->_L8_Memory_1_struct.BG_Common_Header.q_media = Q_MEDIA_Balise;
   outC->_L8_Memory_1_struct.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
-  outC->_L8_Memory_1_struct.BG_Common_Header.m_mcount = kcg_lit_int64(0);
-  outC->_L8_Memory_1_struct.BG_Common_Header.nid_c = kcg_lit_int64(0);
-  outC->_L8_Memory_1_struct.BG_Common_Header.nid_bg = kcg_lit_int64(0);
+  outC->_L8_Memory_1_struct.BG_Common_Header.m_mcount = kcg_lit_int32(0);
+  outC->_L8_Memory_1_struct.BG_Common_Header.nid_c = kcg_lit_int32(0);
+  outC->_L8_Memory_1_struct.BG_Common_Header.nid_bg = kcg_lit_int32(0);
   outC->_L8_Memory_1_struct.BG_Common_Header.q_link = Q_LINK_Unlinked;
   outC->_L8_Memory_1_struct.BG_Common_Header.bgPosition.valid = kcg_true;
   outC->_L8_Memory_1_struct.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_Memory_1_struct.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_Memory_1_struct.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_Memory_1_struct.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_Memory_1_struct.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L8_Memory_1_struct.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L8_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L8_Memory_1_struct.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
-  outC->_L8_Memory_1_struct.BG_Common_Header.q_nvlocacc = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L8_Memory_1_struct.BG_Common_Header.q_nvlocacc = kcg_lit_int32(0);
   outC->_L8_Memory_1_struct.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->_L8_Memory_1_struct.BG_Common_Header.trainOrientationToBG =
     Q_DIRLRBG_Reverse;
   outC->_L8_Memory_1_struct.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
-  outC->_L8_Memory_1_struct.Radio_Common_Header.radioDevice = kcg_lit_int64(0);
+  outC->_L8_Memory_1_struct.Radio_Common_Header.radioDevice = kcg_lit_int32(0);
   outC->_L8_Memory_1_struct.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
-  outC->_L8_Memory_1_struct.Radio_Common_Header.nid_message = kcg_lit_int64(0);
-  outC->_L8_Memory_1_struct.Radio_Common_Header.t_train = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L8_Memory_1_struct.Radio_Common_Header.nid_message = kcg_lit_int32(0);
+  outC->_L8_Memory_1_struct.Radio_Common_Header.t_train = kcg_lit_int32(0);
   outC->_L8_Memory_1_struct.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
-  outC->_L8_Memory_1_struct.Radio_Common_Header.nid_lrbg = kcg_lit_int64(0);
+  outC->_L8_Memory_1_struct.Radio_Common_Header.nid_lrbg = kcg_lit_int32(0);
   outC->_L8_Memory_1_struct.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
-  outC->_L8_Memory_1_struct.Radio_Common_Header.nid_em = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L8_Memory_1_struct.Radio_Common_Header.nid_em = kcg_lit_int32(0);
   outC->_L8_Memory_1_struct.Radio_Common_Header.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L8_Memory_1_struct.Radio_Common_Header.d_sr = kcg_lit_int64(0);
-  outC->_L8_Memory_1_struct.Radio_Common_Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L8_Memory_1_struct.Radio_Common_Header.d_ref = kcg_lit_int64(0);
+  outC->_L8_Memory_1_struct.Radio_Common_Header.d_sr = kcg_lit_int32(0);
+  outC->_L8_Memory_1_struct.Radio_Common_Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L8_Memory_1_struct.Radio_Common_Header.d_ref = kcg_lit_int32(0);
   outC->_L8_Memory_1_struct.Radio_Common_Header.q_dir = Q_DIR_Reverse;
-  outC->_L8_Memory_1_struct.Radio_Common_Header.d_emergencystop = kcg_lit_int64(
+  outC->_L8_Memory_1_struct.Radio_Common_Header.d_emergencystop = kcg_lit_int32(
       0);
   outC->_L8_Memory_1_struct.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx94 = 0; idx94 < 30; idx94++) {
     outC->_L8_Memory_1_struct.packets.PacketHeaders[idx94].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L8_Memory_1_struct.packets.PacketHeaders[idx94].q_dir = Q_DIR_Reverse;
     outC->_L8_Memory_1_struct.packets.PacketHeaders[idx94].valid = kcg_true;
     outC->_L8_Memory_1_struct.packets.PacketHeaders[idx94].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L8_Memory_1_struct.packets.PacketHeaders[idx94].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx95 = 0; idx95 < 500; idx95++) {
-    outC->_L8_Memory_1_struct.packets.PacketData[idx95] = kcg_lit_int64(0);
+    outC->_L8_Memory_1_struct.packets.PacketData[idx95] = kcg_lit_int32(0);
   }
   outC->_L8_Memory_1_struct.sendingRBC.valid = kcg_true;
-  outC->_L8_Memory_1_struct.sendingRBC.nid_c = kcg_lit_int64(0);
-  outC->_L8_Memory_1_struct.sendingRBC.rbc_id = kcg_lit_int64(0);
-  outC->_L8_Memory_1_struct.sendingRBC.device_id = kcg_lit_int64(0);
+  outC->_L8_Memory_1_struct.sendingRBC.nid_c = kcg_lit_int32(0);
+  outC->_L8_Memory_1_struct.sendingRBC.rbc_id = kcg_lit_int32(0);
+  outC->_L8_Memory_1_struct.sendingRBC.device_id = kcg_lit_int32(0);
   outC->init2 = kcg_true;
   outC->init1 = kcg_true;
   outC->init = kcg_true;
@@ -10305,45 +10305,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.BG_Common_Header.trainOrientationToBG =
@@ -10351,59 +10351,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx96 = 0; idx96 < 30; idx96++) {
     outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.packets.PacketHeaders[idx96].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.packets.PacketHeaders[idx96].q_dir =
       Q_DIR_Reverse;
     outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.packets.PacketHeaders[idx96].valid =
       kcg_true;
     outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.packets.PacketHeaders[idx96].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.packets.PacketHeaders[idx96].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx97 = 0; idx97 < 500; idx97++) {
     outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.packets.PacketData[idx97] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.sendingRBC.valid =
     kcg_true;
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_acceptingRBC.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.valid = kcg_true;
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.source =
     msrc_undefined_Common_Types_Pkg;
@@ -10436,45 +10436,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.BG_Common_Header.trainOrientationToBG =
@@ -10482,59 +10482,59 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx98 = 0; idx98 < 30; idx98++) {
     outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.packets.PacketHeaders[idx98].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.packets.PacketHeaders[idx98].q_dir =
       Q_DIR_Reverse;
     outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.packets.PacketHeaders[idx98].valid =
       kcg_true;
     outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.packets.PacketHeaders[idx98].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.packets.PacketHeaders[idx98].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx99 = 0; idx99 < 500; idx99++) {
     outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.packets.PacketData[idx99] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.sendingRBC.valid =
     kcg_true;
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p45_radioNetworkRegistrationOrder_for_handingOverRBC.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.valid = kcg_true;
   outC->p42_sessionCmd_for_handingOverRBC.source =
     msrc_undefined_Common_Types_Pkg;
@@ -10559,45 +10559,45 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->p42_sessionCmd_for_handingOverRBC.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->p42_sessionCmd_for_handingOverRBC.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.BG_Common_Header.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.BG_Common_Header.nid_bg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.BG_Common_Header.q_link =
     Q_LINK_Unlinked;
   outC->p42_sessionCmd_for_handingOverRBC.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->p42_sessionCmd_for_handingOverRBC.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->p42_sessionCmd_for_handingOverRBC.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->p42_sessionCmd_for_handingOverRBC.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->p42_sessionCmd_for_handingOverRBC.BG_Common_Header.trainOrientationToBG =
@@ -10605,55 +10605,55 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->p42_sessionCmd_for_handingOverRBC.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->p42_sessionCmd_for_handingOverRBC.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->p42_sessionCmd_for_handingOverRBC.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->p42_sessionCmd_for_handingOverRBC.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->p42_sessionCmd_for_handingOverRBC.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_handingOverRBC.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx100 = 0; idx100 < 30; idx100++) {
     outC->p42_sessionCmd_for_handingOverRBC.packets.PacketHeaders[idx100].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->p42_sessionCmd_for_handingOverRBC.packets.PacketHeaders[idx100].q_dir =
       Q_DIR_Reverse;
     outC->p42_sessionCmd_for_handingOverRBC.packets.PacketHeaders[idx100].valid =
       kcg_true;
     outC->p42_sessionCmd_for_handingOverRBC.packets.PacketHeaders[idx100].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->p42_sessionCmd_for_handingOverRBC.packets.PacketHeaders[idx100].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx101 = 0; idx101 < 500; idx101++) {
     outC->p42_sessionCmd_for_handingOverRBC.packets.PacketData[idx101] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->p42_sessionCmd_for_handingOverRBC.sendingRBC.valid = kcg_true;
-  outC->p42_sessionCmd_for_handingOverRBC.sendingRBC.nid_c = kcg_lit_int64(0);
-  outC->p42_sessionCmd_for_handingOverRBC.sendingRBC.rbc_id = kcg_lit_int64(0);
-  outC->p42_sessionCmd_for_handingOverRBC.sendingRBC.device_id = kcg_lit_int64(0);
+  outC->p42_sessionCmd_for_handingOverRBC.sendingRBC.nid_c = kcg_lit_int32(0);
+  outC->p42_sessionCmd_for_handingOverRBC.sendingRBC.rbc_id = kcg_lit_int32(0);
+  outC->p42_sessionCmd_for_handingOverRBC.sendingRBC.device_id = kcg_lit_int32(0);
   outC->p42_sessionCmd_for_acceptingRBC.valid = kcg_true;
   outC->p42_sessionCmd_for_acceptingRBC.source = msrc_undefined_Common_Types_Pkg;
   outC->p42_sessionCmd_for_acceptingRBC.radioMetadata.t_train_reference =
@@ -10675,43 +10675,43 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->p42_sessionCmd_for_acceptingRBC.BG_Common_Header.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->p42_sessionCmd_for_acceptingRBC.BG_Common_Header.m_mcount =
-    kcg_lit_int64(0);
-  outC->p42_sessionCmd_for_acceptingRBC.BG_Common_Header.nid_c = kcg_lit_int64(0);
-  outC->p42_sessionCmd_for_acceptingRBC.BG_Common_Header.nid_bg = kcg_lit_int64(
+    kcg_lit_int32(0);
+  outC->p42_sessionCmd_for_acceptingRBC.BG_Common_Header.nid_c = kcg_lit_int32(0);
+  outC->p42_sessionCmd_for_acceptingRBC.BG_Common_Header.nid_bg = kcg_lit_int32(
       0);
   outC->p42_sessionCmd_for_acceptingRBC.BG_Common_Header.q_link = Q_LINK_Unlinked;
   outC->p42_sessionCmd_for_acceptingRBC.BG_Common_Header.bgPosition.valid =
     kcg_true;
   outC->p42_sessionCmd_for_acceptingRBC.BG_Common_Header.bgPosition.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_acceptingRBC.BG_Common_Header.bgPosition.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_acceptingRBC.BG_Common_Header.bgPosition.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_acceptingRBC.BG_Common_Header.bgPosition.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_acceptingRBC.BG_Common_Header.bgPosition.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_acceptingRBC.BG_Common_Header.bgPosition.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_acceptingRBC.BG_Common_Header.bgPosition.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_acceptingRBC.BG_Common_Header.bgPosition.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_acceptingRBC.BG_Common_Header.bgPosition.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_acceptingRBC.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->p42_sessionCmd_for_acceptingRBC.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->p42_sessionCmd_for_acceptingRBC.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_acceptingRBC.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_acceptingRBC.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_acceptingRBC.BG_Common_Header.q_nvlocacc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_acceptingRBC.BG_Common_Header.noCoordinateSystemHasBeenAssigned =
     kcg_true;
   outC->p42_sessionCmd_for_acceptingRBC.BG_Common_Header.trainOrientationToBG =
@@ -10719,54 +10719,54 @@ void handOverSequencer_init_Handover_Pkg_handoverUtils_Pkg(
   outC->p42_sessionCmd_for_acceptingRBC.BG_Common_Header.trainRunningDirectionToBG =
     Q_DIRTRAIN_Reverse;
   outC->p42_sessionCmd_for_acceptingRBC.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_acceptingRBC.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_acceptingRBC.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_acceptingRBC.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_acceptingRBC.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->p42_sessionCmd_for_acceptingRBC.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_acceptingRBC.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_acceptingRBC.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_acceptingRBC.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->p42_sessionCmd_for_acceptingRBC.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_acceptingRBC.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_acceptingRBC.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_acceptingRBC.Radio_Common_Header.q_dir = Q_DIR_Reverse;
   outC->p42_sessionCmd_for_acceptingRBC.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->p42_sessionCmd_for_acceptingRBC.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx102 = 0; idx102 < 30; idx102++) {
     outC->p42_sessionCmd_for_acceptingRBC.packets.PacketHeaders[idx102].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->p42_sessionCmd_for_acceptingRBC.packets.PacketHeaders[idx102].q_dir =
       Q_DIR_Reverse;
     outC->p42_sessionCmd_for_acceptingRBC.packets.PacketHeaders[idx102].valid =
       kcg_true;
     outC->p42_sessionCmd_for_acceptingRBC.packets.PacketHeaders[idx102].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->p42_sessionCmd_for_acceptingRBC.packets.PacketHeaders[idx102].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx103 = 0; idx103 < 500; idx103++) {
     outC->p42_sessionCmd_for_acceptingRBC.packets.PacketData[idx103] =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   outC->p42_sessionCmd_for_acceptingRBC.sendingRBC.valid = kcg_true;
-  outC->p42_sessionCmd_for_acceptingRBC.sendingRBC.nid_c = kcg_lit_int64(0);
-  outC->p42_sessionCmd_for_acceptingRBC.sendingRBC.rbc_id = kcg_lit_int64(0);
-  outC->p42_sessionCmd_for_acceptingRBC.sendingRBC.device_id = kcg_lit_int64(0);
+  outC->p42_sessionCmd_for_acceptingRBC.sendingRBC.nid_c = kcg_lit_int32(0);
+  outC->p42_sessionCmd_for_acceptingRBC.sendingRBC.rbc_id = kcg_lit_int32(0);
+  outC->p42_sessionCmd_for_acceptingRBC.sendingRBC.device_id = kcg_lit_int32(0);
   /* IfBlock1:then:handOver_with_2_Sessions_SM:WaitForMaxSafeFrontEndPassing:_L11=(digital::RisingEdge#4)/ */
   RisingEdge_init_digital(&outC->Context_RisingEdge_4);
   /* IfBlock1:then:handOver_with_2_Sessions_SM:WaitForMinSafeRearEndPassing:_L11=(digital::RisingEdge#9)/ */

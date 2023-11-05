@@ -27,10 +27,10 @@ typedef struct {
   positionedBGs_T_TrainPosition_Types_Pck /* _L1/ */ _L1;
   positionedBG_T_TrainPosition_Types_Pck /* _L2/ */ _L2;
   linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   kcg_bool /* _L8/ */ _L8;
-  kcg_int64 /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L9/ */ _L9;
+  kcg_int32 /* _L10/ */ _L10;
   positionedBG_T_TrainPosition_Types_Pck /* _L15/ */ _L15;
   positionedBG_T_TrainPosition_Types_Pck /* _L16/ */ _L16;
   positionedBG_T_TrainPosition_Types_Pck /* _L17/ */ _L17;

@@ -53,18 +53,18 @@ void Write_DMI_Adhesion_Factor_Data_to_int_init_DATA_Packets_Bothways(
   static kcg_size idx2;
 
   for (idx = 0; idx < 3; idx++) {
-    outC->_L22[idx] = kcg_lit_int64(0);
+    outC->_L22[idx] = kcg_lit_int32(0);
   }
   outC->_L21 = kcg_true;
   for (idx1 = 0; idx1 < 3; idx1++) {
-    outC->_L20[idx1] = kcg_lit_int64(0);
+    outC->_L20[idx1] = kcg_lit_int32(0);
   }
   outC->_L14.valid = kcg_true;
-  outC->_L14.systemTime = kcg_lit_int64(0);
+  outC->_L14.systemTime = kcg_lit_int32(0);
   outC->_L14.adhesionFactor = M_ADHESION_Slippery_rail;
   outC->every = kcg_true;
   for (idx2 = 0; idx2 < 3; idx2++) {
-    outC->dmi_adhesion_factor_data_int[idx2] = kcg_lit_int64(0);
+    outC->dmi_adhesion_factor_data_int[idx2] = kcg_lit_int32(0);
   }
   /* _L20=(DATA::Packets::Bothways::C_DMI_Adhesion_Factor_Data_to_int#1)/ */
   C_DMI_Adhesion_Factor_Data_to_int_init_DATA_Packets_Bothways(

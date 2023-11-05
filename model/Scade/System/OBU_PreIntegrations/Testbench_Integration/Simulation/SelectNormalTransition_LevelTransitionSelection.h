@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _SelectNormalTransition_LevelTransitionSelection_H_
 #define _SelectNormalTransition_LevelTransitionSelection_H_
@@ -24,13 +24,13 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* Loc_index/ */ Loc_index;
+  kcg_int32 /* Loc_index/ */ Loc_index;
   T_LevelTransition_Level_And_Mode_Types_Pkg /* _L25/ */ _L25;
-  kcg_int64 /* _L27/ */ _L27;
+  kcg_int32 /* _L27/ */ _L27;
   T_LevelTransition_Level_And_Mode_Types_Pkg /* _L28/ */ _L28;
   T_LevelTransition_PriorityTable_Level_And_Mode_Types_Pkg /* _L29/ */ _L29;
   T_ERTMS_capabilities_Level_And_Mode_Types_Pkg /* _L30/ */ _L30;
-  _87_array /* _L31/ */ _L31;
+  _89_array /* _L31/ */ _L31;
   kcg_bool /* _L32/ */ _L32;
   kcg_bool /* _L33/ */ _L33;
   kcg_bool /* _L34/ */ _L34;
@@ -64,6 +64,6 @@ extern void SelectNormalTransition_init_LevelTransitionSelection(
 #endif /* _SelectNormalTransition_LevelTransitionSelection_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** SelectNormalTransition_LevelTransitionSelection.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

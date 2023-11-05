@@ -15,10 +15,10 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* valid/ */ valid;
-  kcg_int64 /* start_section/ */ start_section;
-  kcg_int64 /* end_section/ */ end_section;
-  kcg_int64 /* gradiant/ */ gradiant;
+  kcg_int32 /* valid/ */ valid;
+  kcg_int32 /* start_section/ */ start_section;
+  kcg_int32 /* end_section/ */ end_section;
+  kcg_int32 /* gradiant/ */ gradiant;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -31,7 +31,7 @@ typedef struct {
   L_internal_Type_Obu_BasicTypes_Pkg /* _L4/ */ _L4;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L3/ */ _L3;
   G_internal_Type_Obu_BasicTypes_Pkg /* _L2/ */ _L2;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L6/ */ _L6;
 } outC_CAST_DMI_gradientProfileElement_to_int_DATA_Variables;
 
 /* ===========  node initialization and cycle functions  =========== */

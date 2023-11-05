@@ -28,7 +28,7 @@ typedef struct {
   T_internal_real_Type_SDM_Types_Pkg /* _L6/ */ _L6;
   T_internal_real_Type_SDM_Types_Pkg /* _L7/ */ _L7;
   T_internal_real_Type_SDM_Types_Pkg /* _L8/ */ _L8;
-  kcg_float64 /* _L9/ */ _L9;
+  kcg_float32 /* _L9/ */ _L9;
   T_internal_real_Type_SDM_Types_Pkg /* _L10/ */ _L10;
   T_internal_real_Type_SDM_Types_Pkg /* _L11/ */ _L11;
 } outC_splitT_bs_TargetLimits_Pkg;

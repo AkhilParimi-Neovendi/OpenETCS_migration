@@ -61,8 +61,8 @@ typedef struct {
   M_SUPERVISION_STATUS_DMI_Types_Pkg /* _L88/ */ _L88;
   trainPosition_T_TrainPosition_Types_Pck /* _L91/ */ _L91;
   Location_T_Obu_BasicTypes_Pkg /* _L90/ */ _L90;
-  kcg_int64 /* _L92/ */ _L92;
-  kcg_int64 /* _L94/ */ _L94;
+  kcg_int32 /* _L92/ */ _L92;
+  kcg_int32 /* _L94/ */ _L94;
   kcg_bool /* _L98/ */ _L98;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L99/ */ _L99;
   kcg_bool /* _L107/ */ _L107;

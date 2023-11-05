@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _Merg2MetaDataIteration_CheckBGConsistency_Pkg_SubFunction_MergFunction_H_
 #define _Merg2MetaDataIteration_CheckBGConsistency_Pkg_SubFunction_MergFunction_H_
@@ -25,7 +25,7 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   Metadata_T_Common_Types_Pkg /* _L11/ */ _L11;
   Metadata_T_Common_Types_Pkg /* _L12/ */ _L12;
-  _51_array /* _L17/ */ _L17;
+  _53_array /* _L17/ */ _L17;
   Telegram_T_BG_Types_Pkg /* _L18/ */ _L18;
   Metadata_T_Common_Types_Pkg /* _L19/ */ _L19;
 } outC_Merg2MetaDataIteration_CheckBGConsistency_Pkg_SubFunction_MergFunction;
@@ -54,6 +54,6 @@ extern void Merg2MetaDataIteration_init_CheckBGConsistency_Pkg_SubFunction_MergF
 #endif /* _Merg2MetaDataIteration_CheckBGConsistency_Pkg_SubFunction_MergFunction_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Merg2MetaDataIteration_CheckBGConsistency_Pkg_SubFunction_MergFunction.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

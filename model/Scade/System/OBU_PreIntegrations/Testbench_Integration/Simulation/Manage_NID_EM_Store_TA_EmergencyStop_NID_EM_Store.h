@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _Manage_NID_EM_Store_TA_EmergencyStop_NID_EM_Store_H_
 #define _Manage_NID_EM_Store_TA_EmergencyStop_NID_EM_Store_H_
@@ -30,26 +30,26 @@ typedef struct {
   kcg_bool /* IfBlock1: */ IfBlock1_clock;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  _53_array /* IfBlock1:then:_L16/ */ _L16_then_IfBlock1;
+  _54_array /* IfBlock1:then:_L16/ */ _L16_then_IfBlock1;
   NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store /* IfBlock1:then:_L15/ */ _L15_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L11/ */ _L11_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L11/ */ _L11_then_IfBlock1;
   NID_EM /* IfBlock1:then:_L12/ */ _L12_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L13/ */ _L13_then_IfBlock1;
-  _53_array /* IfBlock1:then:_L2/ */ _L2_then_IfBlock1;
+  _54_array /* IfBlock1:then:_L2/ */ _L2_then_IfBlock1;
   NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
   NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store /* IfBlock1:then:_L3/ */ _L3_then_IfBlock1;
   NID_EM_Store_T_TA_EmergencyStop_NID_EM_Store /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
-  _53_array /* IfBlock1:then:_L5/ */ _L5_then_IfBlock1;
+  _54_array /* IfBlock1:then:_L5/ */ _L5_then_IfBlock1;
   NID_EM_Store_T_TA_EmergencyStop_NID_EM_Store /* IfBlock1:else:else:_L1/ */ _L1_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:_L2/ */ _L2_else_else_IfBlock1;
-  _53_array /* IfBlock1:else:then:_L2/ */ _L2_then_else_IfBlock1;
+  _54_array /* IfBlock1:else:then:_L2/ */ _L2_then_else_IfBlock1;
   NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store /* IfBlock1:else:then:_L1/ */ _L1_then_else_IfBlock1;
-  _53_array /* IfBlock1:else:then:_L4/ */ _L4_then_else_IfBlock1;
+  _54_array /* IfBlock1:else:then:_L4/ */ _L4_then_else_IfBlock1;
   NID_EM_STORE_Acc_T_TA_EmergencyStop_NID_EM_Store /* IfBlock1:else:then:_L3/ */ _L3_then_else_IfBlock1;
   NID_EM_Store_T_TA_EmergencyStop_NID_EM_Store /* IfBlock1:else:then:_L5/ */ _L5_then_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L8/ */ _L8_then_else_IfBlock1;
   NID_EM /* IfBlock1:else:then:_L9/ */ _L9_then_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L10/ */ _L10_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L10/ */ _L10_then_else_IfBlock1;
 } outC_Manage_NID_EM_Store_TA_EmergencyStop_NID_EM_Store;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -80,6 +80,6 @@ extern void Manage_NID_EM_Store_init_TA_EmergencyStop_NID_EM_Store(
 #endif /* _Manage_NID_EM_Store_TA_EmergencyStop_NID_EM_Store_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Manage_NID_EM_Store_TA_EmergencyStop_NID_EM_Store.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

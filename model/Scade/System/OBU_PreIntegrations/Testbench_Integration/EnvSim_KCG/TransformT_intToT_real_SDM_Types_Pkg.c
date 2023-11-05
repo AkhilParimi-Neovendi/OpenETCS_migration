@@ -13,9 +13,9 @@ void TransformT_intToT_real_SDM_Types_Pkg(
   T_internal_Type_Obu_BasicTypes_Pkg time_int,
   outC_TransformT_intToT_real_SDM_Types_Pkg *outC)
 {
-  outC->_L4 = kcg_lit_float64(1000.0);
+  outC->_L4 = kcg_lit_float32(1000.0);
   outC->_L3 = time_int;
-  outC->_L1 = /* _L1= */(kcg_float64) outC->_L3;
+  outC->_L1 = /* _L1= */(kcg_float32) outC->_L3;
   outC->_L2 = outC->_L1 / outC->_L4;
   outC->time_real = outC->_L2;
 }
@@ -24,11 +24,11 @@ void TransformT_intToT_real_SDM_Types_Pkg(
 void TransformT_intToT_real_init_SDM_Types_Pkg(
   outC_TransformT_intToT_real_SDM_Types_Pkg *outC)
 {
-  outC->_L4 = kcg_lit_float64(0.0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_float64(0.0);
-  outC->_L1 = kcg_lit_float64(0.0);
-  outC->time_real = kcg_lit_float64(0.0);
+  outC->_L4 = kcg_lit_float32(0.0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_float32(0.0);
+  outC->_L1 = kcg_lit_float32(0.0);
+  outC->time_real = kcg_lit_float32(0.0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

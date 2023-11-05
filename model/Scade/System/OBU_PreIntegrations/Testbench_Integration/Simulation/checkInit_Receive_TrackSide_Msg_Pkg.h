@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _checkInit_Receive_TrackSide_Msg_Pkg_H_
 #define _checkInit_Receive_TrackSide_Msg_Pkg_H_
@@ -28,8 +28,8 @@ typedef struct {
   BGCollector_T_Receive_TrackSide_Msg_Pkg /* IfBlock1:else:_L20/ */ _L20_else_IfBlock1;
   Telegram_T_BG_Types_Pkg /* IfBlock1:else:_L19/ */ _L19_else_IfBlock1;
   kcg_bool /* isDefined/ */ isDefined;
-  kcg_int64 /* _L2/ */ _L2;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L2/ */ _L2;
+  kcg_int32 /* _L4/ */ _L4;
   kcg_bool /* _L6/ */ _L6;
   BGCollector_T_Receive_TrackSide_Msg_Pkg /* _L8/ */ _L8;
 } outC_checkInit_Receive_TrackSide_Msg_Pkg;
@@ -58,6 +58,6 @@ extern void checkInit_init_Receive_TrackSide_Msg_Pkg(
 #endif /* _checkInit_Receive_TrackSide_Msg_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** checkInit_Receive_TrackSide_Msg_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _Send_M147_TM_radio_messages_H_
 #define _Send_M147_TM_radio_messages_H_
@@ -22,7 +22,7 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* MessageBus_out/ */ MessageBus_out;
-  kcg_int64 /* t_train_assigned/ */ t_train_assigned;
+  kcg_int32 /* t_train_assigned/ */ t_train_assigned;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -41,13 +41,13 @@ typedef struct {
   P001_TM_TrainToTrack /* _L96/ */ _L96;
   P000_TM_TrainToTrack /* _L95/ */ _L95;
   M_VERSION /* _L94/ */ _L94;
-  kcg_int64 /* _L93/ */ _L93;
+  kcg_int32 /* _L93/ */ _L93;
   M_TrainTrack_compressed_packets_T_TM_radio_messages /* _L92/ */ _L92;
   P000_TrainTrack_int_TM_TrainToTrack /* _L90/ */ _L90;
   kcg_bool /* _L89/ */ _L89;
   kcg_bool /* _L88/ */ _L88;
   kcg_bool /* _L87/ */ _L87;
-  array_int64_33 /* _L86/ */ _L86;
+  array_int32_33 /* _L86/ */ _L86;
   P001_TrainTrack_int_TM_TrainToTrack /* _L84/ */ _L84;
   P000_TrainTrack_int_TM_TrainToTrack /* _L83/ */ _L83;
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* _L104/ */ _L104;
@@ -56,9 +56,9 @@ typedef struct {
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* _L100/ */ _L100;
   M_TrainTrack_Message_T_TM_radio_messages /* _L103/ */ _L103;
   kcg_bool /* _L105/ */ _L105;
-  kcg_int64 /* _L99/ */ _L99;
+  kcg_int32 /* _L99/ */ _L99;
   kcg_bool /* _L98/ */ _L98;
-  kcg_int64 /* _L106/ */ _L106;
+  kcg_int32 /* _L106/ */ _L106;
 } outC_Send_M147_TM_radio_messages;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -109,6 +109,6 @@ extern void kcg_load_SV_Send_M147_TM_radio_messages(
 #endif /* _Send_M147_TM_radio_messages_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Send_M147_TM_radio_messages.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

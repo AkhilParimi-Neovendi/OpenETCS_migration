@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -13,9 +13,9 @@ void InflateABrakeSafe_SDMConversionModelPkg(
   av_MergedMap_t_SDMConversionModelPkg *aBrakeSafe_cm,
   outC_InflateABrakeSafe_SDMConversionModelPkg *outC)
 {
-  static kcg_int64 acc;
+  static kcg_int32 acc;
   static kcg_size idx;
-  static kcg_int64 acc1;
+  static kcg_int32 acc1;
   static kcg_size idx2;
   static kcg_size idx3;
   static kcg_size idx4;
@@ -23,7 +23,7 @@ void InflateABrakeSafe_SDMConversionModelPkg(
   static A_internal_Type_Obu_BasicTypes_Pkg noname;
   static V_internal_Type_Obu_BasicTypes_Pkg _6_noname;
 
-  outC->_L38 = kcg_lit_int64(0);
+  outC->_L38 = kcg_lit_int32(0);
   kcg_copy_av_MergedMap_t_SDMConversionModelPkg(&outC->_L1, aBrakeSafe_cm);
   kcg_copy_v_MergedSteps_t_SDMConversionModelPkg(&outC->_L25, &outC->_L1.v);
   outC->_L9 = outC->_L38;
@@ -39,7 +39,7 @@ void InflateABrakeSafe_SDMConversionModelPkg(
     outC->_L37[idx] = outC->Context_InflateABrakeSpeeds_1[idx].Vint;
   }
   _6_noname = outC->_L9;
-  outC->_L36 = kcg_lit_int64(0);
+  outC->_L36 = kcg_lit_int32(0);
   kcg_copy_a_MergedSteps_t_SDMConversionModelPkg(&outC->_L24, &outC->_L1.a);
   outC->_L35 = outC->_L36;
   /* _L35= */
@@ -62,15 +62,15 @@ void InflateABrakeSafe_SDMConversionModelPkg(
   for (idx3 = 0; idx3 < 1; idx3++) {
     kcg_copy_ASafeRow_T_CalcBrakingCurves_types(&outC->_L10[idx3], &outC->_L32);
   }
-  kcg_copy_array_float64_100_13(&outC->_L26[0], &outC->_L31);
+  kcg_copy_array_float32_100_13(&outC->_L26[0], &outC->_L31);
   kcg_copy_ASafeRow_T_CalcBrakingCurves_types(&outC->_L26[13], &outC->_L10[0]);
   /* _L4/ */
   for (idx4 = 0; idx4 < 1; idx4++) {
     outC->_L4[idx4] = outC->_L34;
   }
-  kcg_copy_array_float64_13(&outC->_L15[0], &outC->_L37);
+  kcg_copy_array_float32_13(&outC->_L15[0], &outC->_L37);
   outC->_L15[13] = outC->_L4[0];
-  outC->_L2 = kcg_lit_float64(0.0);
+  outC->_L2 = kcg_lit_float32(0.0);
   /* _L12/ */
   for (idx5 = 0; idx5 < 100; idx5++) {
     outC->_L12[idx5] = outC->_L2;
@@ -115,74 +115,74 @@ void InflateABrakeSafe_init_SDMConversionModelPkg(
   static kcg_size idx23;
   static kcg_size idx24;
 
-  outC->_L38 = kcg_lit_int64(0);
+  outC->_L38 = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 13; idx2++) {
-    outC->_L37[idx2] = kcg_lit_float64(0.0);
+    outC->_L37[idx2] = kcg_lit_float32(0.0);
   }
-  outC->_L36 = kcg_lit_int64(0);
-  outC->_L35 = kcg_lit_int64(0);
-  outC->_L34 = kcg_lit_float64(0.0);
+  outC->_L36 = kcg_lit_int32(0);
+  outC->_L35 = kcg_lit_int32(0);
+  outC->_L34 = kcg_lit_float32(0.0);
   for (idx3 = 0; idx3 < 100; idx3++) {
-    outC->_L32[idx3] = kcg_lit_float64(0.0);
+    outC->_L32[idx3] = kcg_lit_float32(0.0);
   }
   for (idx5 = 0; idx5 < 13; idx5++) {
     for (idx4 = 0; idx4 < 100; idx4++) {
-      outC->_L31[idx5][idx4] = kcg_lit_float64(0.0);
+      outC->_L31[idx5][idx4] = kcg_lit_float32(0.0);
     }
   }
   for (idx7 = 0; idx7 < 14; idx7++) {
     for (idx6 = 0; idx6 < 100; idx6++) {
-      outC->_L26[idx7][idx6] = kcg_lit_float64(0.0);
+      outC->_L26[idx7][idx6] = kcg_lit_float32(0.0);
     }
   }
   for (idx8 = 0; idx8 < 13; idx8++) {
-    outC->_L24[idx8] = kcg_lit_int64(0);
+    outC->_L24[idx8] = kcg_lit_int32(0);
   }
   for (idx9 = 0; idx9 < 13; idx9++) {
-    outC->_L25[idx9] = kcg_lit_int64(0);
+    outC->_L25[idx9] = kcg_lit_int32(0);
   }
-  outC->_L2 = kcg_lit_float64(0.0);
+  outC->_L2 = kcg_lit_float32(0.0);
   for (idx10 = 0; idx10 < 1; idx10++) {
-    outC->_L4[idx10] = kcg_lit_float64(0.0);
+    outC->_L4[idx10] = kcg_lit_float32(0.0);
   }
-  outC->_L9 = kcg_lit_int64(0);
+  outC->_L9 = kcg_lit_int32(0);
   for (idx12 = 0; idx12 < 1; idx12++) {
     for (idx11 = 0; idx11 < 100; idx11++) {
-      outC->_L10[idx12][idx11] = kcg_lit_float64(0.0);
+      outC->_L10[idx12][idx11] = kcg_lit_float32(0.0);
     }
   }
   for (idx13 = 0; idx13 < 100; idx13++) {
-    outC->_L11.distance_definition[idx13] = kcg_lit_float64(0.0);
+    outC->_L11.distance_definition[idx13] = kcg_lit_float32(0.0);
   }
   for (idx14 = 0; idx14 < 14; idx14++) {
-    outC->_L11.speed_definition[idx14] = kcg_lit_float64(0.0);
+    outC->_L11.speed_definition[idx14] = kcg_lit_float32(0.0);
   }
   for (idx16 = 0; idx16 < 14; idx16++) {
     for (idx15 = 0; idx15 < 100; idx15++) {
-      outC->_L11.data[idx16][idx15] = kcg_lit_float64(0.0);
+      outC->_L11.data[idx16][idx15] = kcg_lit_float32(0.0);
     }
   }
   for (idx17 = 0; idx17 < 100; idx17++) {
-    outC->_L12[idx17] = kcg_lit_float64(0.0);
+    outC->_L12[idx17] = kcg_lit_float32(0.0);
   }
   for (idx18 = 0; idx18 < 14; idx18++) {
-    outC->_L15[idx18] = kcg_lit_float64(0.0);
+    outC->_L15[idx18] = kcg_lit_float32(0.0);
   }
   for (idx19 = 0; idx19 < 13; idx19++) {
-    outC->_L1.a[idx19] = kcg_lit_int64(0);
+    outC->_L1.a[idx19] = kcg_lit_int32(0);
   }
   for (idx20 = 0; idx20 < 13; idx20++) {
-    outC->_L1.v[idx20] = kcg_lit_int64(0);
+    outC->_L1.v[idx20] = kcg_lit_int32(0);
   }
   for (idx21 = 0; idx21 < 100; idx21++) {
-    outC->aBrakeSafe.distance_definition[idx21] = kcg_lit_float64(0.0);
+    outC->aBrakeSafe.distance_definition[idx21] = kcg_lit_float32(0.0);
   }
   for (idx22 = 0; idx22 < 14; idx22++) {
-    outC->aBrakeSafe.speed_definition[idx22] = kcg_lit_float64(0.0);
+    outC->aBrakeSafe.speed_definition[idx22] = kcg_lit_float32(0.0);
   }
   for (idx24 = 0; idx24 < 14; idx24++) {
     for (idx23 = 0; idx23 < 100; idx23++) {
-      outC->aBrakeSafe.data[idx24][idx23] = kcg_lit_float64(0.0);
+      outC->aBrakeSafe.data[idx24][idx23] = kcg_lit_float32(0.0);
     }
   }
   for (idx1 = 0; idx1 < 13; idx1++) {
@@ -223,6 +223,6 @@ void InflateABrakeSafe_reset_SDMConversionModelPkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** InflateABrakeSafe_SDMConversionModelPkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

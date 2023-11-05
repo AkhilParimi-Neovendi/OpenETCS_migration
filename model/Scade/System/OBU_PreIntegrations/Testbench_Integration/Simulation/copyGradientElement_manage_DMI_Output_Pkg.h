@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _copyGradientElement_manage_DMI_Output_Pkg_H_
 #define _copyGradientElement_manage_DMI_Output_Pkg_H_
@@ -28,14 +28,14 @@ typedef struct {
   L_internal_Type_Obu_BasicTypes_Pkg /* _L5/ */ _L5;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L4/ */ _L4;
   G_internal_Type_Obu_BasicTypes_Pkg /* _L3/ */ _L3;
-  kcg_int64 /* _L7/ */ _L7;
+  kcg_int32 /* _L7/ */ _L7;
 } outC_copyGradientElement_manage_DMI_Output_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* manage_DMI_Output_Pkg::copyGradientElement/ */
 extern void copyGradientElement_manage_DMI_Output_Pkg(
   /* index/ */
-  kcg_int64 index,
+  kcg_int32 index,
   /* fromTrackAtlas/ */
   GradientProfile_for_DMI_section_t_TrackAtlasTypes *fromTrackAtlas,
   outC_copyGradientElement_manage_DMI_Output_Pkg *outC);
@@ -55,6 +55,6 @@ extern void copyGradientElement_init_manage_DMI_Output_Pkg(
 #endif /* _copyGradientElement_manage_DMI_Output_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** copyGradientElement_manage_DMI_Output_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

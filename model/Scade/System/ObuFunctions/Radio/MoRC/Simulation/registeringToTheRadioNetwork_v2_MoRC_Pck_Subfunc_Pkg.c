@@ -1020,7 +1020,7 @@ void registeringToTheRadioNetwork_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L365.valid = kcg_true;
   outC->_L365.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L365.status = mcs_disconnected_RCM_Types_Pkg;
-  outC->_L365.nid_radio = kcg_lit_int64(0);
+  outC->_L365.nid_radio = kcg_lit_int32(0);
   outC->_L365.settingUpConnectionHasFailed = kcg_true;
   outC->_L365.connectionLost = kcg_true;
   outC->_L365.isInRadioHole = kcg_true;
@@ -1032,7 +1032,7 @@ void registeringToTheRadioNetwork_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L357.valid = kcg_true;
   outC->_L357.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L357.status = mcs_disconnected_RCM_Types_Pkg;
-  outC->_L357.nid_radio = kcg_lit_int64(0);
+  outC->_L357.nid_radio = kcg_lit_int32(0);
   outC->_L357.settingUpConnectionHasFailed = kcg_true;
   outC->_L357.connectionLost = kcg_true;
   outC->_L357.isInRadioHole = kcg_true;
@@ -1151,7 +1151,7 @@ void registeringToTheRadioNetwork_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L212.phase = sp_terminated_RCM_Session_Types_Pkg;
   outC->_L212.nid_c = kcg_lit_int32(0);
   outC->_L212.nid_rbc = kcg_lit_int32(0);
-  outC->_L212.nid_radio = kcg_lit_int64(0);
+  outC->_L212.nid_radio = kcg_lit_int32(0);
   outC->_L211 = kcg_true;
   outC->_L200 = kcg_true;
   outC->_L193 = M_LEVEL_Level_0;

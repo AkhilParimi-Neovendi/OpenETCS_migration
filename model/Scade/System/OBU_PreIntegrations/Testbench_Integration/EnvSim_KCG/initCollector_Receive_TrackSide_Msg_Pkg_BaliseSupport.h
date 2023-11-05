@@ -27,9 +27,9 @@ typedef struct {
   centerOfBalisePosition_T_BG_Types_Pkg /* _L10/ */ _L10;
   kcg_bool /* _L9/ */ _L9;
   NID_C /* _L8/ */ _L8;
-  kcg_int64 /* _L7/ */ _L7;
+  kcg_int32 /* _L7/ */ _L7;
   TelegramHeader_T_BG_Types_Pkg /* _L6/ */ _L6;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   N_TOTAL /* _L4/ */ _L4;
   NID_BG /* _L3/ */ _L3;
   centerOfBalisePosition_T_BG_Types_Pkg /* _L2/ */ _L2;

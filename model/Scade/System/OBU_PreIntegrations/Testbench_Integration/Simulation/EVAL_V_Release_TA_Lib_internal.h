@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _EVAL_V_Release_TA_Lib_internal_H_
 #define _EVAL_V_Release_TA_Lib_internal_H_
@@ -22,26 +22,26 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   kcg_bool /* _L2/ */ _L2;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
-  kcg_int64 /* _L7/ */ _L7;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L6/ */ _L6;
+  kcg_int32 /* _L7/ */ _L7;
   kcg_bool /* _L9/ */ _L9;
-  kcg_int64 /* _L8/ */ _L8;
-  kcg_int64 /* _L10/ */ _L10;
-  kcg_int64 /* _L11/ */ _L11;
+  kcg_int32 /* _L8/ */ _L8;
+  kcg_int32 /* _L10/ */ _L10;
+  kcg_int32 /* _L11/ */ _L11;
 } outC_EVAL_V_Release_TA_Lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* TA_Lib_internal::EVAL_V_Release/ */
 extern void EVAL_V_Release_TA_Lib_internal(
   /* V_in/ */
-  kcg_int64 V_in,
+  kcg_int32 V_in,
   /* V_NV_in/ */
-  kcg_int64 V_NV_in,
+  kcg_int32 V_NV_in,
   outC_EVAL_V_Release_TA_Lib_internal *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET
@@ -59,6 +59,6 @@ extern void EVAL_V_Release_init_TA_Lib_internal(
 #endif /* _EVAL_V_Release_TA_Lib_internal_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** EVAL_V_Release_TA_Lib_internal.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

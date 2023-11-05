@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _improveUnlinkedBGLocations_CalculateTrainPosition_Pkg_BG_relocation_Pkg_H_
 #define _improveUnlinkedBGLocations_CalculateTrainPosition_Pkg_BG_relocation_Pkg_H_
@@ -28,8 +28,8 @@ typedef struct {
   linkedBGs_indices_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg /* _L2/ */ _L2;
   positionedBGs_T_TrainPosition_Types_Pck /* _L3/ */ _L3;
   positionedBGs_T_TrainPosition_Types_Pck /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
-  _71_array /* _L8/ */ _L8;
+  kcg_int32 /* _L6/ */ _L6;
+  _72_array /* _L8/ */ _L8;
   kcg_bool /* _L12/ */ _L12;
 } outC_improveUnlinkedBGLocations_CalculateTrainPosition_Pkg_BG_relocation_Pkg;
 
@@ -55,6 +55,6 @@ extern void improveUnlinkedBGLocations_init_CalculateTrainPosition_Pkg_BG_reloca
 #endif /* _improveUnlinkedBGLocations_CalculateTrainPosition_Pkg_BG_relocation_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** improveUnlinkedBGLocations_CalculateTrainPosition_Pkg_BG_relocation_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

@@ -25,14 +25,14 @@ typedef struct {
   NID_PACKET /* _L6/ */ _L6;
   Q_DIR /* _L5/ */ _L5;
   kcg_bool /* _L4/ */ _L4;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L2/ */ _L2;
   MetadataElement_T_Common_Types_Pkg /* _L7/ */ _L7;
-  kcg_int64 /* _L8/ */ _L8;
-  kcg_int64 /* _L9/ */ _L9;
-  kcg_int64 /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
-  kcg_int64 /* _L13/ */ _L13;
+  kcg_int32 /* _L8/ */ _L8;
+  kcg_int32 /* _L9/ */ _L9;
+  kcg_int32 /* _L11/ */ _L11;
+  kcg_int32 /* _L12/ */ _L12;
+  kcg_int32 /* _L13/ */ _L13;
 } outC_ShiftAddress_CheckBGConsistency_Pkg_SubFunction_MergFunction;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -41,7 +41,7 @@ extern void ShiftAddress_CheckBGConsistency_Pkg_SubFunction_MergFunction(
   /* metaData_In/ */
   MetadataElement_T_Common_Types_Pkg *metaData_In,
   /* distance/ */
-  kcg_int64 distance,
+  kcg_int32 distance,
   outC_ShiftAddress_CheckBGConsistency_Pkg_SubFunction_MergFunction *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

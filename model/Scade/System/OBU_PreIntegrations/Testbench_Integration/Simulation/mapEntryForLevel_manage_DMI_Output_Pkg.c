@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -54,14 +54,14 @@ void mapEntryForLevel_init_manage_DMI_Output_Pkg(
 {
   outC->_L11 = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   outC->_L10.valid = kcg_true;
-  outC->_L10.system_clock = kcg_lit_int64(0);
+  outC->_L10.system_clock = kcg_lit_int32(0);
   outC->_L10.entry_request = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   outC->_L9.valid = kcg_true;
-  outC->_L9.system_clock = kcg_lit_int64(0);
+  outC->_L9.system_clock = kcg_lit_int32(0);
   outC->_L9.entry_request = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   outC->_L8 = kcg_true;
   outC->_L7.valid = kcg_true;
-  outC->_L7.system_clock = kcg_lit_int64(0);
+  outC->_L7.system_clock = kcg_lit_int32(0);
   outC->_L7.entry_request = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   outC->_L6 = kcg_true;
   outC->_L5 = kcg_true;
@@ -69,10 +69,10 @@ void mapEntryForLevel_init_manage_DMI_Output_Pkg(
   outC->_L3 = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   outC->_L2 = kcg_true;
   outC->_L1.valid = kcg_true;
-  outC->_L1.system_clock = kcg_lit_int64(0);
+  outC->_L1.system_clock = kcg_lit_int32(0);
   outC->_L1.entry_request = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   outC->new_entryRequest.valid = kcg_true;
-  outC->new_entryRequest.system_clock = kcg_lit_int64(0);
+  outC->new_entryRequest.system_clock = kcg_lit_int32(0);
   outC->new_entryRequest.entry_request =
     Enter_revalidate_driver_identifier_DMI_Types_Pkg;
 }
@@ -90,6 +90,6 @@ void mapEntryForLevel_reset_manage_DMI_Output_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** mapEntryForLevel_manage_DMI_Output_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

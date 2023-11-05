@@ -19,7 +19,7 @@ typedef struct {
   /* -----------------------  no local probes  ----------------------- */
   /* ----------------------- local memories  ------------------------- */
   kcg_bool init;
-  kcg_int64 /* @1/_L4/ */ _L4_MemoryBasic_1_int64;
+  kcg_int32 /* @1/_L4/ */ _L4_MemoryBasic_1_int32;
   SSM_ST_TimerStatus_SM /* TimerStatus_SM: */ TimerStatus_SM_state_nxt;
   kcg_bool /* TimerStatus_SM: */ TimerStatus_SM_reset_act;
   kcg_bool /* TimerStatus_SM: */ TimerStatus_SM_reset_nxt;
@@ -35,18 +35,18 @@ typedef struct {
   SSM_ST_TimerStatus_SM /* TimerStatus_SM: */ TimerStatus_SM_state_act;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* @1/Memorized/ */ Memorized_MemoryBasic_1_int64;
-  kcg_bool /* @1/Write/ */ Write_MemoryBasic_1_int64;
-  kcg_int64 /* @1/Init/ */ Init_MemoryBasic_1_int64;
-  kcg_int64 /* @1/BM_Input/ */ BM_Input_MemoryBasic_1_int64;
-  kcg_int64 /* @1/_L7/ */ _L7_MemoryBasic_1_int64;
-  kcg_int64 /* @1/_L6/ */ _L6_MemoryBasic_1_int64;
-  kcg_bool /* @1/_L5/ */ _L5_MemoryBasic_1_int64;
-  kcg_int64 /* @1/_L2/ */ _L2_MemoryBasic_1_int64;
+  kcg_int32 /* @1/Memorized/ */ Memorized_MemoryBasic_1_int32;
+  kcg_bool /* @1/Write/ */ Write_MemoryBasic_1_int32;
+  kcg_int32 /* @1/Init/ */ Init_MemoryBasic_1_int32;
+  kcg_int32 /* @1/BM_Input/ */ BM_Input_MemoryBasic_1_int32;
+  kcg_int32 /* @1/_L7/ */ _L7_MemoryBasic_1_int32;
+  kcg_int32 /* @1/_L6/ */ _L6_MemoryBasic_1_int32;
+  kcg_bool /* @1/_L5/ */ _L5_MemoryBasic_1_int32;
+  kcg_int32 /* @1/_L2/ */ _L2_MemoryBasic_1_int32;
   kcg_bool /* TimerStatus_SM:Stopped:_L1/ */ _L1_Stopped_TimerStatus_SM;
   kcg_bool /* TimerStatus_SM:Counting:_L8/ */ _L8_Counting_TimerStatus_SM;
   kcg_bool /* TimerStatus_SM:Counting:_L7/ */ _L7_Counting_TimerStatus_SM;
-  kcg_int64 /* TimerStatus_SM:Counting:_L6/ */ _L6_Counting_TimerStatus_SM;
+  kcg_int32 /* TimerStatus_SM:Counting:_L6/ */ _L6_Counting_TimerStatus_SM;
   time_Type_MoRC_Pck /* TimerStatus_SM:Counting:_L5/ */ _L5_Counting_TimerStatus_SM;
   time_Type_MoRC_Pck /* TimerStatus_SM:Counting:_L4/ */ _L4_Counting_TimerStatus_SM;
   time_Type_MoRC_Pck /* TimerStatus_SM:Counting:_L1/ */ _L1_Counting_TimerStatus_SM;

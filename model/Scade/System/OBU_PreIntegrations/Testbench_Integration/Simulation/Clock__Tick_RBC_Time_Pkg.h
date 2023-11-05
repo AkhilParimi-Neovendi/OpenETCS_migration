@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _Clock__Tick_RBC_Time_Pkg_H_
 #define _Clock__Tick_RBC_Time_Pkg_H_
@@ -29,7 +29,7 @@ typedef struct {
   T_TRAIN /* _L2/ */ _L2;
   Clock_T /* _L3/ */ _L3;
   T_TRAIN /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
 } outC_Clock__Tick_RBC_Time_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -52,6 +52,6 @@ extern void Clock__Tick_init_RBC_Time_Pkg(outC_Clock__Tick_RBC_Time_Pkg *outC);
 #endif /* _Clock__Tick_RBC_Time_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Clock__Tick_RBC_Time_Pkg.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

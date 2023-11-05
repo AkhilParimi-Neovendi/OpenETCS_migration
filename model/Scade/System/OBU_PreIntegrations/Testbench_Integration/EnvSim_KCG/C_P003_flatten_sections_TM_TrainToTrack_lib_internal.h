@@ -24,7 +24,7 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   P003_nid_radio_list_t_TM_TrainToTrack /* _L75/ */ _L75;
-  array_int64_5 /* _L74/ */ _L74;
+  array_int32_5 /* _L74/ */ _L74;
 } outC_C_P003_flatten_sections_TM_TrainToTrack_lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */

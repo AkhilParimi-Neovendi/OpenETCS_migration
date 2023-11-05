@@ -58,8 +58,8 @@ typedef struct {
   kcg_bool /* _L310/ */ _L310;
   Q_DIRLRBG /* _L311/ */ _L311;
   Q_DIRLRBG /* _L312/ */ _L312;
-  kcg_int64 /* _L315/ */ _L315;
-  kcg_int64 /* _L316/ */ _L316;
+  kcg_int32 /* _L315/ */ _L315;
+  kcg_int32 /* _L316/ */ _L316;
   positionedBG_T_TrainPosition_Types_Pck /* _L320/ */ _L320;
   trainPositionInfo_T_TrainPosition_Types_Pck /* _L343/ */ _L343;
   kcg_bool /* _L344/ */ _L344;
@@ -70,8 +70,8 @@ typedef struct {
   L_internal_Type_Obu_BasicTypes_Pkg /* _L367/ */ _L367;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L368/ */ _L368;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L369/ */ _L369;
-  kcg_int64 /* _L370/ */ _L370;
-  kcg_int64 /* _L371/ */ _L371;
+  kcg_int32 /* _L370/ */ _L370;
+  kcg_int32 /* _L371/ */ _L371;
 } outC_calculateTrainpositionAttributes_CalculateTrainPosition_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

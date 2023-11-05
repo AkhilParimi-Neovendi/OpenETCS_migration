@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _patchMsgFlow_RadioSupport_Pkg_H_
 #define _patchMsgFlow_RadioSupport_Pkg_H_
@@ -34,14 +34,14 @@ typedef struct {
   kcg_bool /* _L6/ */ _L6;
   M_LEVEL /* _L5/ */ _L5;
   M_LEVEL /* _L4/ */ _L4;
-  kcg_int64 /* _L13/ */ _L13;
+  kcg_int32 /* _L13/ */ _L13;
   NID_MESSAGE /* _L14/ */ _L14;
   NID_MESSAGE /* _L15/ */ _L15;
   kcg_bool /* _L16/ */ _L16;
   kcg_bool /* _L17/ */ _L17;
   kcg_bool /* _L18/ */ _L18;
   M_TrainTrack_Message_T_TM_radio_messages /* _L19/ */ _L19;
-  kcg_int64 /* _L28/ */ _L28;
+  kcg_int32 /* _L28/ */ _L28;
   M_TrainTrack_Message_T_TM_radio_messages /* _L27/ */ _L27;
   kcg_bool /* _L26/ */ _L26;
   kcg_bool /* _L25/ */ _L25;
@@ -81,6 +81,6 @@ extern void patchMsgFlow_init_RadioSupport_Pkg(
 #endif /* _patchMsgFlow_RadioSupport_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** patchMsgFlow_RadioSupport_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _CountMSG_DMI_Control_Pkg_Sub_func_TextMessages_H_
 #define _CountMSG_DMI_Control_Pkg_Sub_func_TextMessages_H_
@@ -14,7 +14,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* num/ */ num;
+  kcg_int32 /* num/ */ num;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
@@ -22,16 +22,16 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   array_char_30_5 /* _L1/ */ _L1;
-  kcg_int64 /* _L9/ */ _L9;
-  kcg_int64 /* _L22/ */ _L22;
-  kcg_int64 /* _L32/ */ _L32;
-  kcg_int64 /* _L24/ */ _L24;
-  kcg_int64 /* _L42/ */ _L42;
-  kcg_int64 /* _L39/ */ _L39;
-  kcg_int64 /* _L46/ */ _L46;
-  kcg_int64 /* _L67/ */ _L67;
-  kcg_int64 /* _L58/ */ _L58;
-  kcg_int64 /* _L73/ */ _L73;
+  kcg_int32 /* _L9/ */ _L9;
+  kcg_int32 /* _L22/ */ _L22;
+  kcg_int32 /* _L32/ */ _L32;
+  kcg_int32 /* _L24/ */ _L24;
+  kcg_int32 /* _L42/ */ _L42;
+  kcg_int32 /* _L39/ */ _L39;
+  kcg_int32 /* _L46/ */ _L46;
+  kcg_int32 /* _L67/ */ _L67;
+  kcg_int32 /* _L58/ */ _L58;
+  kcg_int32 /* _L73/ */ _L73;
   array_char_30 /* _L74/ */ _L74;
   kcg_bool /* _L75/ */ _L75;
   array_char_30 /* _L76/ */ _L76;
@@ -136,7 +136,7 @@ typedef struct {
   kcg_bool /* _L230/ */ _L230;
   array_char_30 /* _L249/ */ _L249;
   array_char_30 /* _L250/ */ _L250;
-  kcg_int64 /* _L53/ */ _L53;
+  kcg_int32 /* _L53/ */ _L53;
 } outC_CountMSG_DMI_Control_Pkg_Sub_func_TextMessages;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -159,6 +159,6 @@ extern void CountMSG_init_DMI_Control_Pkg_Sub_func_TextMessages(
 #endif /* _CountMSG_DMI_Control_Pkg_Sub_func_TextMessages_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CountMSG_DMI_Control_Pkg_Sub_func_TextMessages.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

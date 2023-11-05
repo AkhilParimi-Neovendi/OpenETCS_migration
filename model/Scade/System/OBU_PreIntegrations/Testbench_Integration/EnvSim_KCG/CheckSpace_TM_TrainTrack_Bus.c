@@ -14,12 +14,12 @@ void CheckSpace_TM_TrainTrack_Bus(
   outC_CheckSpace_TM_TrainTrack_Bus *outC)
 {
   static kcg_size idx;
-  static kcg_int64 acc;
+  static kcg_int32 acc;
   static kcg_size idx1;
-  static kcg_int64 noname;
+  static kcg_int32 noname;
 
   outC->_L8 = BusWidth_TM_TrainTrack_Bus;
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
   kcg_copy_M_TrainTrackMessageBus_t_TM_TrainTrack_Bus(&outC->_L1, MessageBus);
   /* _L6/ */
   for (idx = 0; idx < 5; idx++) {
@@ -36,12 +36,12 @@ void CheckSpace_TM_TrainTrack_Bus(
       acc = outC->_L4;
       /* _L2=(TM_TrainTrack_Bus::CheckSpaceLoop#1)/ */
       CheckSpaceLoop_TM_TrainTrack_Bus(
-        /* _L2= */(kcg_int64) idx1,
+        /* _L2= */(kcg_int32) idx1,
         acc,
         &outC->_L6[idx1],
         &outC->Context_CheckSpaceLoop_1[idx1]);
       outC->_L4 = outC->Context_CheckSpaceLoop_1[idx1].Count;
-      outC->_L2 = /* _L2= */(kcg_int64) (idx1 + 1);
+      outC->_L2 = /* _L2= */(kcg_int32) (idx1 + 1);
       /* _L2= */
       if (!outC->Context_CheckSpaceLoop_1[idx1].cont) {
         break;
@@ -49,7 +49,7 @@ void CheckSpace_TM_TrainTrack_Bus(
     }
   }
   else {
-    outC->_L2 = kcg_lit_int64(0);
+    outC->_L2 = kcg_lit_int32(0);
   }
   outC->_L9 = outC->_L4 >= outC->_L8;
   noname = outC->_L2;
@@ -68,40 +68,40 @@ void CheckSpace_init_TM_TrainTrack_Bus(outC_CheckSpace_TM_TrainTrack_Bus *outC)
   static kcg_size idx5;
 
   outC->_L9 = kcg_true;
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L8 = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 5; idx3++) {
     for (idx2 = 0; idx2 < 5; idx2++) {
       outC->_L6[idx3][idx2].Message.valid = kcg_true;
-      outC->_L6[idx3][idx2].Message.nid_message = kcg_lit_int64(0);
-      outC->_L6[idx3][idx2].Message.l_message = kcg_lit_int64(0);
-      outC->_L6[idx3][idx2].Message.t_train = kcg_lit_int64(0);
-      outC->_L6[idx3][idx2].Message.nid_engine = kcg_lit_int64(0);
-      outC->_L6[idx3][idx2].Message.field1 = kcg_lit_int64(0);
-      outC->_L6[idx3][idx2].Message.field2 = kcg_lit_int64(0);
-      outC->_L6[idx3][idx2].Message.field3 = kcg_lit_int64(0);
+      outC->_L6[idx3][idx2].Message.nid_message = kcg_lit_int32(0);
+      outC->_L6[idx3][idx2].Message.l_message = kcg_lit_int32(0);
+      outC->_L6[idx3][idx2].Message.t_train = kcg_lit_int32(0);
+      outC->_L6[idx3][idx2].Message.nid_engine = kcg_lit_int32(0);
+      outC->_L6[idx3][idx2].Message.field1 = kcg_lit_int32(0);
+      outC->_L6[idx3][idx2].Message.field2 = kcg_lit_int32(0);
+      outC->_L6[idx3][idx2].Message.field3 = kcg_lit_int32(0);
       for (idx1 = 0; idx1 < 50; idx1++) {
-        outC->_L6[idx3][idx2].OptionalPackets[idx1] = kcg_lit_int64(0);
+        outC->_L6[idx3][idx2].OptionalPackets[idx1] = kcg_lit_int32(0);
       }
     }
   }
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->_L3 = kcg_true;
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 5; idx5++) {
     outC->_L1[idx5].Message.valid = kcg_true;
-    outC->_L1[idx5].Message.nid_message = kcg_lit_int64(0);
-    outC->_L1[idx5].Message.l_message = kcg_lit_int64(0);
-    outC->_L1[idx5].Message.t_train = kcg_lit_int64(0);
-    outC->_L1[idx5].Message.nid_engine = kcg_lit_int64(0);
-    outC->_L1[idx5].Message.field1 = kcg_lit_int64(0);
-    outC->_L1[idx5].Message.field2 = kcg_lit_int64(0);
-    outC->_L1[idx5].Message.field3 = kcg_lit_int64(0);
+    outC->_L1[idx5].Message.nid_message = kcg_lit_int32(0);
+    outC->_L1[idx5].Message.l_message = kcg_lit_int32(0);
+    outC->_L1[idx5].Message.t_train = kcg_lit_int32(0);
+    outC->_L1[idx5].Message.nid_engine = kcg_lit_int32(0);
+    outC->_L1[idx5].Message.field1 = kcg_lit_int32(0);
+    outC->_L1[idx5].Message.field2 = kcg_lit_int32(0);
+    outC->_L1[idx5].Message.field3 = kcg_lit_int32(0);
     for (idx4 = 0; idx4 < 50; idx4++) {
-      outC->_L1[idx5].OptionalPackets[idx4] = kcg_lit_int64(0);
+      outC->_L1[idx5].OptionalPackets[idx4] = kcg_lit_int32(0);
     }
   }
-  outC->SlotsUsed = kcg_lit_int64(0);
+  outC->SlotsUsed = kcg_lit_int32(0);
   outC->Busy = kcg_true;
   for (idx = 0; idx < 5; idx++) {
     /* _L2=(TM_TrainTrack_Bus::CheckSpaceLoop#1)/ */

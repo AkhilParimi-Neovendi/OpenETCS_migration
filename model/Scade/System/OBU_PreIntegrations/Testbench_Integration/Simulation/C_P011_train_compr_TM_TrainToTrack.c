@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -126,9 +126,9 @@ void C_P011_train_compr_TM_TrainToTrack(
   outC->_L68[8] = outC->_L105;
   outC->_L68[9] = outC->_L106;
   outC->_L68[10] = outC->_L107;
-  kcg_copy_array_int64_11(&outC->_L110[0], &outC->_L68);
-  kcg_copy_array_int64_9(&outC->_L110[11], &outC->_L111);
-  kcg_copy_array_int64_20(&outC->_L88[0], &outC->_L110);
+  kcg_copy_array_int32_11(&outC->_L110[0], &outC->_L68);
+  kcg_copy_array_int32_9(&outC->_L110[11], &outC->_L111);
+  kcg_copy_array_int32_20(&outC->_L88[0], &outC->_L110);
   kcg_copy_P011_ntc_list_array_T_TM_TrainToTrack(&outC->_L88[20], &outC->_L114);
   outC->_L2 = outC->_L1.valid;
   noname = outC->_L2;
@@ -153,85 +153,85 @@ void C_P011_train_compr_init_TM_TrainToTrack(
   static kcg_size idx11;
 
   for (idx = 0; idx < 5; idx++) {
-    outC->_L114[idx] = kcg_lit_int64(0);
+    outC->_L114[idx] = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 8; idx1++) {
-    outC->_L113[idx1] = kcg_lit_int64(0);
+    outC->_L113[idx1] = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 9; idx2++) {
-    outC->_L111[idx2] = kcg_lit_int64(0);
+    outC->_L111[idx2] = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 20; idx3++) {
-    outC->_L110[idx3] = kcg_lit_int64(0);
+    outC->_L110[idx3] = kcg_lit_int32(0);
   }
   for (idx4 = 0; idx4 < 1; idx4++) {
-    outC->_L109[idx4] = kcg_lit_int64(0);
+    outC->_L109[idx4] = kcg_lit_int32(0);
   }
-  outC->_L108 = kcg_lit_int64(0);
-  outC->_L107 = kcg_lit_int64(0);
-  outC->_L106 = kcg_lit_int64(0);
-  outC->_L105 = kcg_lit_int64(0);
-  outC->_L104 = kcg_lit_int64(0);
-  outC->_L103 = kcg_lit_int64(0);
-  outC->_L102 = kcg_lit_int64(0);
-  outC->_L101 = kcg_lit_int64(0);
-  outC->_L100 = kcg_lit_int64(0);
+  outC->_L108 = kcg_lit_int32(0);
+  outC->_L107 = kcg_lit_int32(0);
+  outC->_L106 = kcg_lit_int32(0);
+  outC->_L105 = kcg_lit_int32(0);
+  outC->_L104 = kcg_lit_int32(0);
+  outC->_L103 = kcg_lit_int32(0);
+  outC->_L102 = kcg_lit_int32(0);
+  outC->_L101 = kcg_lit_int32(0);
+  outC->_L100 = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 5; idx5++) {
-    outC->_L89[idx5] = kcg_lit_int64(0);
+    outC->_L89[idx5] = kcg_lit_int32(0);
   }
-  outC->_L90 = kcg_lit_int64(0);
+  outC->_L90 = kcg_lit_int32(0);
   for (idx6 = 0; idx6 < 4; idx6++) {
     outC->_L91[idx6].m_voltage = M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->_L91[idx6].nid_ctraction = kcg_lit_int64(0);
+    outC->_L91[idx6].nid_ctraction = kcg_lit_int32(0);
   }
-  outC->_L92 = kcg_lit_int64(0);
-  outC->_L93 = kcg_lit_int64(0);
+  outC->_L92 = kcg_lit_int32(0);
+  outC->_L93 = kcg_lit_int32(0);
   outC->_L94 = M_AIRTIGHT_Not_fitted;
   outC->_L95 = M_AXLELOADCAT_A;
   outC->_L96 =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
-  outC->_L97 = kcg_lit_int64(0);
-  outC->_L98 = kcg_lit_int64(0);
+  outC->_L97 = kcg_lit_int32(0);
+  outC->_L98 = kcg_lit_int32(0);
   outC->_L99 =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   for (idx7 = 0; idx7 < 25; idx7++) {
-    outC->_L88[idx7] = kcg_lit_int64(0);
+    outC->_L88[idx7] = kcg_lit_int32(0);
   }
-  outC->_L71 = kcg_lit_int64(0);
-  outC->_L70 = kcg_lit_int64(0);
-  outC->_L69 = kcg_lit_int64(0);
+  outC->_L71 = kcg_lit_int32(0);
+  outC->_L70 = kcg_lit_int32(0);
+  outC->_L69 = kcg_lit_int32(0);
   for (idx8 = 0; idx8 < 11; idx8++) {
-    outC->_L68[idx8] = kcg_lit_int64(0);
+    outC->_L68[idx8] = kcg_lit_int32(0);
   }
   outC->_L2 = kcg_true;
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->_L5 = NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L1.valid = kcg_true;
-  outC->_L1.nid_packet = kcg_lit_int64(0);
-  outC->_L1.l_packet = kcg_lit_int64(0);
+  outC->_L1.nid_packet = kcg_lit_int32(0);
+  outC->_L1.l_packet = kcg_lit_int32(0);
   outC->_L1.nc_cdtrain = NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L1.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->_L1.l_train = kcg_lit_int64(0);
-  outC->_L1.v_maxtrain = kcg_lit_int64(0);
+  outC->_L1.l_train = kcg_lit_int32(0);
+  outC->_L1.v_maxtrain = kcg_lit_int32(0);
   outC->_L1.m_loadinggauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L1.m_axleloadcat = M_AXLELOADCAT_A;
   outC->_L1.m_airtight = M_AIRTIGHT_Not_fitted;
-  outC->_L1.n_axle = kcg_lit_int64(0);
-  outC->_L1.n_iter_voltage = kcg_lit_int64(0);
+  outC->_L1.n_axle = kcg_lit_int32(0);
+  outC->_L1.n_iter_voltage = kcg_lit_int32(0);
   for (idx9 = 0; idx9 < 4; idx9++) {
     outC->_L1.voltage_list[idx9].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->_L1.voltage_list[idx9].nid_ctraction = kcg_lit_int64(0);
+    outC->_L1.voltage_list[idx9].nid_ctraction = kcg_lit_int32(0);
   }
-  outC->_L1.n_iter_nid_ntc = kcg_lit_int64(0);
+  outC->_L1.n_iter_nid_ntc = kcg_lit_int32(0);
   for (idx10 = 0; idx10 < 5; idx10++) {
-    outC->_L1.nid_ntc_list[idx10] = kcg_lit_int64(0);
+    outC->_L1.nid_ntc_list[idx10] = kcg_lit_int32(0);
   }
   for (idx11 = 0; idx11 < 25; idx11++) {
-    outC->P011_int[idx11] = kcg_lit_int64(0);
+    outC->P011_int[idx11] = kcg_lit_int32(0);
   }
   /* _L107=(TM_conversions::CAST_N_ITER_to_int#1)/ */
   CAST_N_ITER_to_int_init_TM_conversions(&outC->Context_CAST_N_ITER_to_int_1);
@@ -325,6 +325,6 @@ void C_P011_train_compr_reset_TM_TrainToTrack(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P011_train_compr_TM_TrainToTrack.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

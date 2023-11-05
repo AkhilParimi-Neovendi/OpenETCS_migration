@@ -39,19 +39,19 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   P003_TrainTrack_int_TM_TrainToTrack /* _L1/ */ _L1;
-  kcg_int64 /* _L69/ */ _L69;
-  kcg_int64 /* _L70/ */ _L70;
-  kcg_int64 /* _L71/ */ _L71;
-  array_int64_3 /* _L94/ */ _L94;
-  kcg_int64 /* _L100/ */ _L100;
-  kcg_int64 /* _L99/ */ _L99;
-  kcg_int64 /* _L98/ */ _L98;
+  kcg_int32 /* _L69/ */ _L69;
+  kcg_int32 /* _L70/ */ _L70;
+  kcg_int32 /* _L71/ */ _L71;
+  array_int32_3 /* _L94/ */ _L94;
+  kcg_int32 /* _L100/ */ _L100;
+  kcg_int32 /* _L99/ */ _L99;
+  kcg_int32 /* _L98/ */ _L98;
   P003_TM_TrainToTrack /* _L103/ */ _L103;
-  array_int64_5 /* _L104/ */ _L104;
+  array_int32_5 /* _L104/ */ _L104;
   kcg_bool /* _L105/ */ _L105;
-  kcg_int64 /* _L106/ */ _L106;
-  kcg_int64 /* _L107/ */ _L107;
-  kcg_int64 /* _L108/ */ _L108;
+  kcg_int32 /* _L106/ */ _L106;
+  kcg_int32 /* _L107/ */ _L107;
+  kcg_int32 /* _L108/ */ _L108;
 } outC_C_compr_P003_TM_TrainToTrack;
 
 /* ===========  node initialization and cycle functions  =========== */

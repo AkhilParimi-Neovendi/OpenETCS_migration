@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -26,6 +26,7 @@ void mapCMDToRTM_radioOutput_Pkg(
   else {
     outC->_L38 = outC->_L39;
   }
+  outC->_L40 = /* _L40= */(kcg_int32) outC->_L38;
   kcg_copy_mobileRegistrationCmd_T_RCM_Types_Pkg(
     &outC->_L21,
     mobileRegistrationCMD);
@@ -36,7 +37,7 @@ void mapCMDToRTM_radioOutput_Pkg(
     outC->_L36 = outC->_L34;
   }
   else {
-    outC->_L36 = outC->_L38;
+    outC->_L36 = outC->_L40;
   }
   /* _L22=(radioOutput_Pkg::mapnewCMD_toCmd#1)/ */
   mapnewCMD_toCmd_radioOutput_Pkg(
@@ -61,34 +62,35 @@ void mapCMDToRTM_radioOutput_Pkg(
 #ifndef KCG_USER_DEFINED_INIT
 void mapCMDToRTM_init_radioOutput_Pkg(outC_mapCMDToRTM_radioOutput_Pkg *outC)
 {
+  outC->_L40 = kcg_lit_int32(0);
   outC->_L39 = kcg_lit_int64(0);
   outC->_L38 = kcg_lit_int64(0);
   outC->_L37 = kcg_true;
-  outC->_L36 = kcg_lit_int64(0);
+  outC->_L36 = kcg_lit_int32(0);
   outC->_L35 = kcg_lit_int64(0);
-  outC->_L34 = kcg_lit_int64(0);
+  outC->_L34 = kcg_lit_int32(0);
   outC->_L33 = kcg_true;
-  outC->_L26 = kcg_lit_int64(0);
+  outC->_L26 = kcg_lit_int32(0);
   outC->_L25 = kcg_lit_int64(0);
   outC->_L24 = kcg_true;
   outC->_L23 = cmdr_not_relevant_API_RadioCommunication_Pkg;
   outC->_L22 = cmdr_not_relevant_API_RadioCommunication_Pkg;
   outC->_L21.valid = kcg_true;
-  outC->_L21.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L21.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L21.action = mra_nop_RCM_Types_Pkg;
-  outC->_L21.network_id = kcg_lit_int64(0);
+  outC->_L21.network_id = kcg_lit_int32(0);
   outC->_L20.valid = kcg_true;
-  outC->_L20.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L20.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L20.action = mca_nop_RCM_Types_Pkg;
   outC->_L20.nid_radio = kcg_lit_int64(0);
   outC->_L18.valid = kcg_true;
   outC->_L18.cmd = cmdr_not_relevant_API_RadioCommunication_Pkg;
-  outC->_L18.networkID = kcg_lit_int64(0);
-  outC->outMN = kcg_lit_int64(0);
+  outC->_L18.networkID = kcg_lit_int32(0);
+  outC->outMN = kcg_lit_int32(0);
   outC->outRadio = kcg_lit_int64(0);
   outC->toRTM.valid = kcg_true;
   outC->toRTM.cmd = cmdr_not_relevant_API_RadioCommunication_Pkg;
-  outC->toRTM.networkID = kcg_lit_int64(0);
+  outC->toRTM.networkID = kcg_lit_int32(0);
   /* _L22=(radioOutput_Pkg::mapnewCMD_toCmd#1)/ */
   mapnewCMD_toCmd_init_radioOutput_Pkg(&outC->Context_mapnewCMD_toCmd_1);
 }
@@ -126,6 +128,6 @@ void kcg_load_SV_mapCMDToRTM_radioOutput_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** mapCMDToRTM_radioOutput_Pkg.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

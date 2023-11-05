@@ -43,8 +43,8 @@ typedef struct {
   kcg_bool /* _L47/ */ _L47;
   kcg_bool /* _L48/ */ _L48;
   kcg_bool /* _L50/ */ _L50;
-  kcg_int64 /* _L51/ */ _L51;
-  kcg_int64 /* _L52/ */ _L52;
+  kcg_int32 /* _L51/ */ _L51;
+  kcg_int32 /* _L52/ */ _L52;
 } outC_locReachedOrPassed_BasicLocationFunctions_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

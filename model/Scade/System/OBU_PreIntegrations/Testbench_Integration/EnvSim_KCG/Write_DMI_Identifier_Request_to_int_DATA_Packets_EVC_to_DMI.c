@@ -55,25 +55,25 @@ void Write_DMI_Identifier_Request_to_int_init_DATA_Packets_EVC_to_DMI(
 
   outC->_L20 = kcg_true;
   for (idx = 0; idx < 261; idx++) {
-    outC->_L19[idx] = kcg_lit_int64(0);
+    outC->_L19[idx] = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 261; idx1++) {
-    outC->_L18[idx1] = kcg_lit_int64(0);
+    outC->_L18[idx1] = kcg_lit_int32(0);
   }
   outC->_L1.valid = kcg_true;
-  outC->_L1.system_clock = kcg_lit_int64(0);
+  outC->_L1.system_clock = kcg_lit_int32(0);
   outC->_L1.ERTMS_Version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L1.EVC_Version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
-  outC->_L1.l_name = kcg_lit_int64(0);
+  outC->_L1.l_name = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 255; idx2++) {
     outC->_L1.x_name[idx2] = ' ';
   }
-  outC->_L1.l_extra = kcg_lit_int64(0);
+  outC->_L1.l_extra = kcg_lit_int32(0);
   outC->every = kcg_true;
   for (idx3 = 0; idx3 < 261; idx3++) {
-    outC->dmi_id_int[idx3] = kcg_lit_int64(0);
+    outC->dmi_id_int[idx3] = kcg_lit_int32(0);
   }
   /* _L18=(DATA::Packets::EVC_to_DMI::CAST_DMI_Identifier_Request_to_int1#1)/ */
   CAST_DMI_Identifier_Request_to_int1_init_DATA_Packets_EVC_to_DMI(

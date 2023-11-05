@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -14,21 +14,21 @@ void CAST_Q_RBC_to_int_TM_conversions(
   outC_CAST_Q_RBC_to_int_TM_conversions *outC)
 {
   /* q_rbc_int/ */
-  static kcg_int64 q_rbc_int_partial;
+  static kcg_int32 q_rbc_int_partial;
   /* error/ */
   static kcg_bool error_partial;
   /* q_rbc_int/ */
-  static kcg_int64 _1_q_rbc_int_partial;
+  static kcg_int32 _1_q_rbc_int_partial;
   /* error/ */
   static kcg_bool _2_error_partial;
   /* error/ */
   static kcg_bool _3_error_partial;
   /* q_rbc_int/ */
-  static kcg_int64 _4_q_rbc_int_partial;
+  static kcg_int32 _4_q_rbc_int_partial;
   /* error/ */
   static kcg_bool _5_error_partial;
   /* q_rbc_int/ */
-  static kcg_int64 _6_q_rbc_int_partial;
+  static kcg_int32 _6_q_rbc_int_partial;
   static kcg_bool noname;
 
   outC->_L12 = q_rbc;
@@ -80,13 +80,13 @@ void CAST_Q_RBC_to_int_init_TM_conversions(
   outC->error = kcg_true;
   outC->IfBlock1_clock = kcg_true;
   outC->_L5_then_else_IfBlock1 = kcg_true;
-  outC->_L3_then_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L1_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L3_then_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L1_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L2_else_else_IfBlock1 = kcg_true;
   outC->else_clock_IfBlock1 = kcg_true;
-  outC->_L4_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L4_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L5_then_IfBlock1 = kcg_true;
-  outC->q_rbc_int = kcg_lit_int64(0);
+  outC->q_rbc_int = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -102,6 +102,6 @@ void CAST_Q_RBC_to_int_reset_TM_conversions(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_Q_RBC_to_int_TM_conversions.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

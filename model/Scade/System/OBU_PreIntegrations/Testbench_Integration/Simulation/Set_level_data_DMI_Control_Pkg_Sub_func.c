@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -33,17 +33,17 @@ void Set_level_data_init_DMI_Control_Pkg_Sub_func(
   outC_Set_level_data_DMI_Control_Pkg_Sub_func *outC)
 {
   outC->_L11.valid = kcg_true;
-  outC->_L11.systemTime = kcg_lit_int64(0);
+  outC->_L11.systemTime = kcg_lit_int32(0);
   outC->_L11.level.level = M_LEVEL_Level_0;
-  outC->_L11.level.nid_stm = kcg_lit_int64(0);
+  outC->_L11.level.nid_stm = kcg_lit_int32(0);
   outC->_L9.level = M_LEVEL_Level_0;
-  outC->_L9.nid_stm = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L9.nid_stm = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
   outC->_L1 = kcg_true;
   outC->dmi_level_data.valid = kcg_true;
-  outC->dmi_level_data.systemTime = kcg_lit_int64(0);
+  outC->dmi_level_data.systemTime = kcg_lit_int32(0);
   outC->dmi_level_data.level.level = M_LEVEL_Level_0;
-  outC->dmi_level_data.level.nid_stm = kcg_lit_int64(0);
+  outC->dmi_level_data.level.nid_stm = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -59,6 +59,6 @@ void Set_level_data_reset_DMI_Control_Pkg_Sub_func(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Set_level_data_DMI_Control_Pkg_Sub_func.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

@@ -41,9 +41,9 @@ typedef struct {
   kcg_bool /* IfBlock1:else:else:else:then:_L4/ */ _L4_then_else_else_else_IfBlock1;
   M_VOLTAGE /* IfBlock1:else:then:_L3/ */ _L3_then_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L5/ */ _L5_then_else_IfBlock1;
-  kcg_int64 /* m_voltage_in/ */ m_voltage_in;
+  kcg_int32 /* m_voltage_in/ */ m_voltage_in;
   kcg_bool /* error/ */ error;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L4/ */ _L4;
   kcg_bool /* _L5/ */ _L5;
 } outC_CAST_Int_to_M_VOLTAGE_TM_conversions;
 
@@ -51,7 +51,7 @@ typedef struct {
 /* TM_conversions::CAST_Int_to_M_VOLTAGE/ */
 extern void CAST_Int_to_M_VOLTAGE_TM_conversions(
   /* m_voltage_int/ */
-  kcg_int64 m_voltage_int,
+  kcg_int32 m_voltage_int,
   outC_CAST_Int_to_M_VOLTAGE_TM_conversions *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

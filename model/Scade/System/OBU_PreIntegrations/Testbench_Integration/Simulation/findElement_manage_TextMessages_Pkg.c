@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -60,22 +60,22 @@ void findElement_init_manage_TextMessages_Pkg(
   outC->_L10 = con_undefined_DMI_Types_Pkg;
   outC->_L9 = M_LEVEL_Level_0;
   outC->_L8.valid = kcg_true;
-  outC->_L8.dmi_textMessageID = kcg_lit_int64(0);
-  outC->_L8.timeStamp = kcg_lit_int64(0);
+  outC->_L8.dmi_textMessageID = kcg_lit_int32(0);
+  outC->_L8.timeStamp = kcg_lit_int32(0);
   outC->_L8.textReport = Q_TEXTREPORT_No_driver_acknowledgement_report_required;
   outC->_L8.context = con_undefined_DMI_Types_Pkg;
-  outC->_L8.nid_textmessage = kcg_lit_int64(0);
+  outC->_L8.nid_textmessage = kcg_lit_int32(0);
   outC->_L8.whichLevel = M_LEVEL_Level_0;
   outC->_L8.whichMode = M_MODE_Full_Supervision;
   outC->_L6 = kcg_true;
   outC->_L3 = M_LEVEL_Level_0;
   outC->_L2 = kcg_true;
   outC->_L1.valid = kcg_true;
-  outC->_L1.dmi_textMessageID = kcg_lit_int64(0);
-  outC->_L1.timeStamp = kcg_lit_int64(0);
+  outC->_L1.dmi_textMessageID = kcg_lit_int32(0);
+  outC->_L1.timeStamp = kcg_lit_int32(0);
   outC->_L1.textReport = Q_TEXTREPORT_No_driver_acknowledgement_report_required;
   outC->_L1.context = con_undefined_DMI_Types_Pkg;
-  outC->_L1.nid_textmessage = kcg_lit_int64(0);
+  outC->_L1.nid_textmessage = kcg_lit_int32(0);
   outC->_L1.whichLevel = M_LEVEL_Level_0;
   outC->_L1.whichMode = M_MODE_Full_Supervision;
   outC->result = kcg_true;
@@ -94,6 +94,6 @@ void findElement_reset_manage_TextMessages_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** findElement_manage_TextMessages_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

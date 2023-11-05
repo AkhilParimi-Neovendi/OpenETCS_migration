@@ -35,9 +35,9 @@ typedef struct {
   P005_OBU_sectionlist_enum_T_TM /* _L18/ */ _L18;
   _20_array /* _L20/ */ _L20;
   _19_array /* _L21/ */ _L21;
-  array_int64_33 /* _L22/ */ _L22;
+  array_int32_33 /* _L22/ */ _L22;
   NID_C /* _L23/ */ _L23;
-  array_int64_33 /* _L24/ */ _L24;
+  array_int32_33 /* _L24/ */ _L24;
 } outC_C_P005_ForCalcTrainPos_TM_conversions;
 
 /* ===========  node initialization and cycle functions  =========== */

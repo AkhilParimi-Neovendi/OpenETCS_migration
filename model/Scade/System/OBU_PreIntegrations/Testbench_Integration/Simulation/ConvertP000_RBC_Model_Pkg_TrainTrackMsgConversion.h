@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _ConvertP000_RBC_Model_Pkg_TrainTrackMsgConversion_H_
 #define _ConvertP000_RBC_Model_Pkg_TrainTrackMsgConversion_H_
@@ -59,15 +59,15 @@ typedef struct {
   NID_NTC /* _L2/ */ _L2;
   PT0_PositionReport_T_Packet_TrainTypes_Pkg /* _L19/ */ _L19;
   Position_Report_TrainToTrack /* _L20/ */ _L20;
-  kcg_int64 /* _L22/ */ _L22;
-  kcg_int64 /* _L23/ */ _L23;
-  kcg_int64 /* _L25/ */ _L25;
-  kcg_int64 /* _L26/ */ _L26;
-  kcg_int64 /* _L28/ */ _L28;
-  kcg_int64 /* _L29/ */ _L29;
-  kcg_int64 /* _L30/ */ _L30;
-  kcg_int64 /* _L31/ */ _L31;
-  kcg_int64 /* _L32/ */ _L32;
+  kcg_int32 /* _L22/ */ _L22;
+  kcg_int32 /* _L23/ */ _L23;
+  kcg_int32 /* _L25/ */ _L25;
+  kcg_int32 /* _L26/ */ _L26;
+  kcg_int32 /* _L28/ */ _L28;
+  kcg_int32 /* _L29/ */ _L29;
+  kcg_int32 /* _L30/ */ _L30;
+  kcg_int32 /* _L31/ */ _L31;
+  kcg_int32 /* _L32/ */ _L32;
 } outC_ConvertP000_RBC_Model_Pkg_TrainTrackMsgConversion;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -92,6 +92,6 @@ extern void ConvertP000_init_RBC_Model_Pkg_TrainTrackMsgConversion(
 #endif /* _ConvertP000_RBC_Model_Pkg_TrainTrackMsgConversion_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ConvertP000_RBC_Model_Pkg_TrainTrackMsgConversion.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

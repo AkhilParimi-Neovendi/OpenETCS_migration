@@ -25,8 +25,8 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   R_data_internal_T_InfraLib /* _L23/ */ _L23;
-  kcg_int64 /* _L26/ */ _L26;
-  kcg_int64 /* _L27/ */ _L27;
+  kcg_int32 /* _L26/ */ _L26;
+  kcg_int32 /* _L27/ */ _L27;
   kcg_bool /* _L52/ */ _L52;
   R_data_internal_T_InfraLib /* _L53/ */ _L53;
   R_data_internal_T_InfraLib /* _L4/ */ _L4;
@@ -38,7 +38,7 @@ extern void Send_RBC_LRBG_354_D_00275_3_M003_UserStories13_16_US_13(
   /* RadiaDataIn/ */
   R_data_internal_T_InfraLib *RadiaDataIn,
   /* TriggerValue/ */
-  kcg_int64 TriggerValue,
+  kcg_int32 TriggerValue,
   outC_Send_RBC_LRBG_354_D_00275_3_M003_UserStories13_16_US_13 *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

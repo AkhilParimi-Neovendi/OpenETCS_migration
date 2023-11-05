@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _indexOfLastPassedBG_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_
 #define _indexOfLastPassedBG_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_
@@ -15,7 +15,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* indexOfBG/ */ indexOfBG;
+  kcg_int32 /* indexOfBG/ */ indexOfBG;
   kcg_bool /* BG_found/ */ BG_found;
   kcg_bool /* indexValid/ */ indexValid;
   /* -----------------------  no local probes  ----------------------- */
@@ -25,12 +25,12 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L1/ */ _L1;
+  kcg_int32 /* _L3/ */ _L3;
   positionedBGs_T_TrainPosition_Types_Pck /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   kcg_bool /* _L6/ */ _L6;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L12/ */ _L12;
   kcg_bool /* _L10/ */ _L10;
   kcg_bool /* _L9/ */ _L9;
   kcg_bool /* _L8/ */ _L8;
@@ -65,6 +65,6 @@ extern void indexOfLastPassedBG_init_CalculateTrainPosition_Pkg_BG_utilities_Pkg
 #endif /* _indexOfLastPassedBG_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** indexOfLastPassedBG_CalculateTrainPosition_Pkg_BG_utilities_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

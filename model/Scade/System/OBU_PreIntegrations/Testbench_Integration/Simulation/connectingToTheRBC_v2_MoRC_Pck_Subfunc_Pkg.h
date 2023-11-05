@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _connectingToTheRBC_v2_MoRC_Pck_Subfunc_Pkg_H_
 #define _connectingToTheRBC_v2_MoRC_Pck_Subfunc_Pkg_H_
@@ -70,7 +70,7 @@ typedef struct {
   kcg_bool /* _L387/ */ _L387;
   kcg_bool /* _L388/ */ _L388;
   mobileConnectionContext_T_RCM_Types_Pkg /* _L389/ */ _L389;
-  kcg_int64 /* _L390/ */ _L390;
+  kcg_int32 /* _L390/ */ _L390;
   NID_RADIO /* _L391/ */ _L391;
   mobileConnectionCmd_T_RCM_Types_Pkg /* _L392/ */ _L392;
   mobileConnetionAction_T_RCM_Types_Pkg /* _L393/ */ _L393;
@@ -103,6 +103,6 @@ extern void connectingToTheRBC_v2_init_MoRC_Pck_Subfunc_Pkg(
 #endif /* _connectingToTheRBC_v2_MoRC_Pck_Subfunc_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** connectingToTheRBC_v2_MoRC_Pck_Subfunc_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

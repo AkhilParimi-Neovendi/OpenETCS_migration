@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _Write_int_to_DMI_Radio_Net_Data_DATA_Packets_DMI_to_EVC_H_
 #define _Write_int_to_DMI_Radio_Net_Data_DATA_Packets_DMI_to_EVC_H_
@@ -26,8 +26,8 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   DMI_Radio_Net_Data_int_array_T_DATA /* _L5/ */ _L5;
   DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg /* _L7/ */ _L7;
-  kcg_int64 /* _L11/ */ _L11;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L11/ */ _L11;
+  kcg_int32 /* _L10/ */ _L10;
   kcg_bool /* _L9/ */ _L9;
   DMI_Radio_Net_Data_T_DMI_Messages_DMI_to_EVC_Pkg /* _L12/ */ _L12;
 } outC_Write_int_to_DMI_Radio_Net_Data_DATA_Packets_DMI_to_EVC;
@@ -54,6 +54,6 @@ extern void Write_int_to_DMI_Radio_Net_Data_init_DATA_Packets_DMI_to_EVC(
 #endif /* _Write_int_to_DMI_Radio_Net_Data_DATA_Packets_DMI_to_EVC_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Write_int_to_DMI_Radio_Net_Data_DATA_Packets_DMI_to_EVC.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

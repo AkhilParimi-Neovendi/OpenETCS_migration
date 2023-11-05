@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _C_P058_to_legacy_loop_TM_conversions_H_
 #define _C_P058_to_legacy_loop_TM_conversions_H_
@@ -26,7 +26,7 @@ typedef struct {
   Q_LGTLOC /* _L5/ */ _L5;
   D_LOC /* _L4/ */ _L4;
   kcg_bool /* _L3/ */ _L3;
-  kcg_int64 /* _L20/ */ _L20;
+  kcg_int32 /* _L20/ */ _L20;
   P058_section_enum_T_TM /* _L21/ */ _L21;
 } outC_C_P058_to_legacy_loop_TM_conversions;
 
@@ -34,7 +34,7 @@ typedef struct {
 /* TM_conversions::C_P058_to_legacy_loop/ */
 extern void C_P058_to_legacy_loop_TM_conversions(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* P058_in/ */
   P058_OBU_sectionlist_enum_T_TM *P058_in,
   outC_C_P058_to_legacy_loop_TM_conversions *outC);
@@ -54,6 +54,6 @@ extern void C_P058_to_legacy_loop_init_TM_conversions(
 #endif /* _C_P058_to_legacy_loop_TM_conversions_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P058_to_legacy_loop_TM_conversions.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

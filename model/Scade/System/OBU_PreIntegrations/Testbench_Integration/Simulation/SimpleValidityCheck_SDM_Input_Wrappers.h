@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _SimpleValidityCheck_SDM_Input_Wrappers_H_
 #define _SimpleValidityCheck_SDM_Input_Wrappers_H_
@@ -43,7 +43,7 @@ typedef struct {
   V_odometry_Type_Obu_BasicTypes_Pkg /* _L20/ */ _L20;
   kcg_bool /* _L22/ */ _L22;
   kcg_bool /* _L23/ */ _L23;
-  kcg_int64 /* _L24/ */ _L24;
+  kcg_int32 /* _L24/ */ _L24;
   kcg_bool /* _L25/ */ _L25;
   kcg_bool /* _L26/ */ _L26;
   kcg_bool /* _L27/ */ _L27;
@@ -80,6 +80,6 @@ extern void SimpleValidityCheck_init_SDM_Input_Wrappers(
 #endif /* _SimpleValidityCheck_SDM_Input_Wrappers_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** SimpleValidityCheck_SDM_Input_Wrappers.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

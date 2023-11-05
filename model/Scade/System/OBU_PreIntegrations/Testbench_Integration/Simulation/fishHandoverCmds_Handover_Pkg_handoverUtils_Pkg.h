@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _fishHandoverCmds_Handover_Pkg_handoverUtils_Pkg_H_
 #define _fishHandoverCmds_Handover_Pkg_handoverUtils_Pkg_H_
@@ -55,8 +55,8 @@ typedef struct {
   NID_LRBG /* _L41/ */ _L41;
   NID_LRBG /* _L42/ */ _L42;
   NID_RBC /* _L43/ */ _L43;
-  kcg_int64 /* _L45/ */ _L45;
-  kcg_int64 /* _L46/ */ _L46;
+  kcg_int32 /* _L45/ */ _L45;
+  kcg_int32 /* _L46/ */ _L46;
   CompressedPackets_T_Common_Types_Pkg /* _L47/ */ _L47;
   kcg_bool /* _L48/ */ _L48;
   NID_RADIO /* _L49/ */ _L49;
@@ -109,6 +109,7 @@ typedef struct {
   msgFromTrack_T_RCM_MsgTypes_Pkg /* _L184/ */ _L184;
   msgFromTrack_T_RCM_MsgTypes_Pkg /* _L185/ */ _L185;
   msgFromTrack_T_RCM_MsgTypes_Pkg /* _L186/ */ _L186;
+  kcg_int64 /* _L187/ */ _L187;
 } outC_fishHandoverCmds_Handover_Pkg_handoverUtils_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -135,6 +136,6 @@ extern void fishHandoverCmds_init_Handover_Pkg_handoverUtils_Pkg(
 #endif /* _fishHandoverCmds_Handover_Pkg_handoverUtils_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** fishHandoverCmds_Handover_Pkg_handoverUtils_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

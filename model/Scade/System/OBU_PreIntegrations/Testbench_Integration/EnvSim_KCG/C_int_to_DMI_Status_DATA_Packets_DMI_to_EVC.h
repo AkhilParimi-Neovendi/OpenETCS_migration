@@ -29,10 +29,10 @@ typedef struct {
   DMI_Status_int_array_T_DATA /* _L2/ */ _L2;
   DMI_StatusSet_T_DMI_Types_Pkg /* _L12/ */ _L12;
   kcg_bool /* _L13/ */ _L13;
-  kcg_int64 /* _L18/ */ _L18;
-  kcg_int64 /* _L17/ */ _L17;
-  kcg_int64 /* _L16/ */ _L16;
-  kcg_int64 /* _L15/ */ _L15;
+  kcg_int32 /* _L18/ */ _L18;
+  kcg_int32 /* _L17/ */ _L17;
+  kcg_int32 /* _L16/ */ _L16;
+  kcg_int32 /* _L15/ */ _L15;
 } outC_C_int_to_DMI_Status_DATA_Packets_DMI_to_EVC;
 
 /* ===========  node initialization and cycle functions  =========== */

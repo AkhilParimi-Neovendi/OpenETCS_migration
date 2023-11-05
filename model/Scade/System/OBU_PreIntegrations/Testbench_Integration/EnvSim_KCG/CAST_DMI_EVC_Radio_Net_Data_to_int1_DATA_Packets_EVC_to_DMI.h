@@ -28,9 +28,9 @@ typedef struct {
   kcg_bool /* _L4/ */ _L4;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L3/ */ _L3;
   NID_MN /* _L2/ */ _L2;
-  array_int64_3 /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
-  kcg_int64 /* _L7/ */ _L7;
+  array_int32_3 /* _L5/ */ _L5;
+  kcg_int32 /* _L6/ */ _L6;
+  kcg_int32 /* _L7/ */ _L7;
   DMI_EVC_Radio_Net_Data_T_DMI_Messages_EVC_to_DMI_Pkg /* _L8/ */ _L8;
 } outC_CAST_DMI_EVC_Radio_Net_Data_to_int1_DATA_Packets_EVC_to_DMI;
 

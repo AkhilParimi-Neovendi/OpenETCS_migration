@@ -42,18 +42,18 @@ void Clock__Limit_RBC_Time_Pkg(
 #ifndef KCG_USER_DEFINED_INIT
 void Clock__Limit_init_RBC_Time_Pkg(outC_Clock__Limit_RBC_Time_Pkg *outC)
 {
-  outC->_L11.m_Value = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L11.m_Value = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->_L5 = kcg_true;
   outC->_L6 = kcg_true;
-  outC->_L7.m_Value = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L7.m_Value = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
   outC->_L9 = kcg_true;
-  outC->_L1.m_Value = kcg_lit_int64(0);
-  outC->outClock.m_Value = kcg_lit_int64(0);
+  outC->_L1.m_Value = kcg_lit_int32(0);
+  outC->outClock.m_Value = kcg_lit_int32(0);
   /* _L10=(RBC_Time_Pkg::Clock__GetSeconds#1)/ */
   Clock__GetSeconds_init_RBC_Time_Pkg(&outC->Context_Clock__GetSeconds_1);
   /* _L11=(RBC_Time_Pkg::Clock__Reset#1)/ */

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _SDM_InputWrapper_SDM_Input_Wrappers_H_
 #define _SDM_InputWrapper_SDM_Input_Wrappers_H_
@@ -65,9 +65,9 @@ typedef struct {
   L_internal_real_Type_SDM_Types_Pkg /* _L241/ */ _L241;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L245/ */ _L245;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L246/ */ _L246;
-  kcg_int64 /* _L247/ */ _L247;
-  kcg_int64 /* _L248/ */ _L248;
-  kcg_int64 /* _L249/ */ _L249;
+  kcg_int32 /* _L247/ */ _L247;
+  kcg_int32 /* _L248/ */ _L248;
+  kcg_int32 /* _L249/ */ _L249;
   L_internal_real_Type_SDM_Types_Pkg /* _L250/ */ _L250;
   kcg_bool /* _L262/ */ _L262;
   MovementAuthority_t_TrackAtlasTypes /* _L263/ */ _L263;
@@ -80,7 +80,7 @@ typedef struct {
   L_internal_Type_Obu_BasicTypes_Pkg /* _L271/ */ _L271;
   trainProperties_T_TrainPosition_Types_Pck /* _L280/ */ _L280;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L279/ */ _L279;
-  kcg_int64 /* _L281/ */ _L281;
+  kcg_int32 /* _L281/ */ _L281;
   MA_Level_t_TrackAtlasTypes /* _L282/ */ _L282;
   DataForSupervision_nextGen_t_TrackAtlasTypes /* _L284/ */ _L284;
   MA_section_real_T_TargetManagement_types /* _L289/ */ _L289;
@@ -129,6 +129,6 @@ extern void kcg_load_SV_SDM_InputWrapper_SDM_Input_Wrappers(
 #endif /* _SDM_InputWrapper_SDM_Input_Wrappers_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** SDM_InputWrapper_SDM_Input_Wrappers.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

@@ -14,11 +14,11 @@ void extractPositionReportFromBus_RCM_Utils_Pkg_encoders(
   outC_extractPositionReportFromBus_RCM_Utils_Pkg_encoders *outC)
 {
   static kcg_size idx;
-  static kcg_int64 acc;
+  static kcg_int32 acc;
   static kcg_size idx1;
-  static kcg_int64 noname;
+  static kcg_int32 noname;
 
-  outC->_L5 = kcg_lit_int64(-1);
+  outC->_L5 = kcg_lit_int32(-1);
   kcg_copy_M_TrainTrackMessageBus_t_TM_TrainTrack_Bus(&outC->_L1, messageBus);
   /* _L6/ */
   for (idx = 0; idx < 5; idx++) {
@@ -35,12 +35,12 @@ void extractPositionReportFromBus_RCM_Utils_Pkg_encoders(
       acc = outC->_L4;
       /* _L2=(RCM_Utils_Pkg::encoders::extractPositionReportFromBus_itr#1)/ */
       extractPositionReportFromBus_itr_RCM_Utils_Pkg_encoders(
-        /* _L2= */(kcg_int64) idx1,
+        /* _L2= */(kcg_int32) idx1,
         acc,
         &outC->_L6[idx1],
         &outC->Context_extractPositionReportFromBus_itr_1[idx1]);
       outC->_L4 = outC->Context_extractPositionReportFromBus_itr_1[idx1].acc_out;
-      outC->_L2 = /* _L2= */(kcg_int64) (idx1 + 1);
+      outC->_L2 = /* _L2= */(kcg_int32) (idx1 + 1);
       /* _L2= */
       if (!outC->Context_extractPositionReportFromBus_itr_1[idx1].cont) {
         break;
@@ -48,9 +48,9 @@ void extractPositionReportFromBus_RCM_Utils_Pkg_encoders(
     }
   }
   else {
-    outC->_L2 = kcg_lit_int64(0);
+    outC->_L2 = kcg_lit_int32(0);
   }
-  if ((kcg_lit_int64(0) <= outC->_L4) & (outC->_L4 < kcg_lit_int64(5))) {
+  if ((kcg_lit_int32(0) <= outC->_L4) & (outC->_L4 < kcg_lit_int32(5))) {
     kcg_copy_M_TrainTrack_Message_T_TM_radio_messages(
       &outC->_L9,
       &outC->_L1[outC->_L4]);
@@ -61,7 +61,7 @@ void extractPositionReportFromBus_RCM_Utils_Pkg_encoders(
       (M_TrainTrack_Message_T_TM_radio_messages *)
         &DEFAULT_TrainToTrackMessage_TM_radio_messages);
   }
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L8 = kcg_lit_int32(0);
   outC->_L7 = outC->_L4 >= outC->_L8;
   kcg_copy_M_TrainTrack_Message_T_TM_radio_messages(
     &outC->positionReport,
@@ -84,60 +84,60 @@ void extractPositionReportFromBus_init_RCM_Utils_Pkg_encoders(
   static kcg_size idx7;
 
   outC->_L9.Message.valid = kcg_true;
-  outC->_L9.Message.nid_message = kcg_lit_int64(0);
-  outC->_L9.Message.l_message = kcg_lit_int64(0);
-  outC->_L9.Message.t_train = kcg_lit_int64(0);
-  outC->_L9.Message.nid_engine = kcg_lit_int64(0);
-  outC->_L9.Message.field1 = kcg_lit_int64(0);
-  outC->_L9.Message.field2 = kcg_lit_int64(0);
-  outC->_L9.Message.field3 = kcg_lit_int64(0);
+  outC->_L9.Message.nid_message = kcg_lit_int32(0);
+  outC->_L9.Message.l_message = kcg_lit_int32(0);
+  outC->_L9.Message.t_train = kcg_lit_int32(0);
+  outC->_L9.Message.nid_engine = kcg_lit_int32(0);
+  outC->_L9.Message.field1 = kcg_lit_int32(0);
+  outC->_L9.Message.field2 = kcg_lit_int32(0);
+  outC->_L9.Message.field3 = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 50; idx1++) {
-    outC->_L9.OptionalPackets[idx1] = kcg_lit_int64(0);
+    outC->_L9.OptionalPackets[idx1] = kcg_lit_int32(0);
   }
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L8 = kcg_lit_int32(0);
   outC->_L7 = kcg_true;
   for (idx4 = 0; idx4 < 5; idx4++) {
     for (idx3 = 0; idx3 < 5; idx3++) {
       outC->_L6[idx4][idx3].Message.valid = kcg_true;
-      outC->_L6[idx4][idx3].Message.nid_message = kcg_lit_int64(0);
-      outC->_L6[idx4][idx3].Message.l_message = kcg_lit_int64(0);
-      outC->_L6[idx4][idx3].Message.t_train = kcg_lit_int64(0);
-      outC->_L6[idx4][idx3].Message.nid_engine = kcg_lit_int64(0);
-      outC->_L6[idx4][idx3].Message.field1 = kcg_lit_int64(0);
-      outC->_L6[idx4][idx3].Message.field2 = kcg_lit_int64(0);
-      outC->_L6[idx4][idx3].Message.field3 = kcg_lit_int64(0);
+      outC->_L6[idx4][idx3].Message.nid_message = kcg_lit_int32(0);
+      outC->_L6[idx4][idx3].Message.l_message = kcg_lit_int32(0);
+      outC->_L6[idx4][idx3].Message.t_train = kcg_lit_int32(0);
+      outC->_L6[idx4][idx3].Message.nid_engine = kcg_lit_int32(0);
+      outC->_L6[idx4][idx3].Message.field1 = kcg_lit_int32(0);
+      outC->_L6[idx4][idx3].Message.field2 = kcg_lit_int32(0);
+      outC->_L6[idx4][idx3].Message.field3 = kcg_lit_int32(0);
       for (idx2 = 0; idx2 < 50; idx2++) {
-        outC->_L6[idx4][idx3].OptionalPackets[idx2] = kcg_lit_int64(0);
+        outC->_L6[idx4][idx3].OptionalPackets[idx2] = kcg_lit_int32(0);
       }
     }
   }
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->_L3 = kcg_true;
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
   for (idx6 = 0; idx6 < 5; idx6++) {
     outC->_L1[idx6].Message.valid = kcg_true;
-    outC->_L1[idx6].Message.nid_message = kcg_lit_int64(0);
-    outC->_L1[idx6].Message.l_message = kcg_lit_int64(0);
-    outC->_L1[idx6].Message.t_train = kcg_lit_int64(0);
-    outC->_L1[idx6].Message.nid_engine = kcg_lit_int64(0);
-    outC->_L1[idx6].Message.field1 = kcg_lit_int64(0);
-    outC->_L1[idx6].Message.field2 = kcg_lit_int64(0);
-    outC->_L1[idx6].Message.field3 = kcg_lit_int64(0);
+    outC->_L1[idx6].Message.nid_message = kcg_lit_int32(0);
+    outC->_L1[idx6].Message.l_message = kcg_lit_int32(0);
+    outC->_L1[idx6].Message.t_train = kcg_lit_int32(0);
+    outC->_L1[idx6].Message.nid_engine = kcg_lit_int32(0);
+    outC->_L1[idx6].Message.field1 = kcg_lit_int32(0);
+    outC->_L1[idx6].Message.field2 = kcg_lit_int32(0);
+    outC->_L1[idx6].Message.field3 = kcg_lit_int32(0);
     for (idx5 = 0; idx5 < 50; idx5++) {
-      outC->_L1[idx6].OptionalPackets[idx5] = kcg_lit_int64(0);
+      outC->_L1[idx6].OptionalPackets[idx5] = kcg_lit_int32(0);
     }
   }
   outC->positionReport.Message.valid = kcg_true;
-  outC->positionReport.Message.nid_message = kcg_lit_int64(0);
-  outC->positionReport.Message.l_message = kcg_lit_int64(0);
-  outC->positionReport.Message.t_train = kcg_lit_int64(0);
-  outC->positionReport.Message.nid_engine = kcg_lit_int64(0);
-  outC->positionReport.Message.field1 = kcg_lit_int64(0);
-  outC->positionReport.Message.field2 = kcg_lit_int64(0);
-  outC->positionReport.Message.field3 = kcg_lit_int64(0);
+  outC->positionReport.Message.nid_message = kcg_lit_int32(0);
+  outC->positionReport.Message.l_message = kcg_lit_int32(0);
+  outC->positionReport.Message.t_train = kcg_lit_int32(0);
+  outC->positionReport.Message.nid_engine = kcg_lit_int32(0);
+  outC->positionReport.Message.field1 = kcg_lit_int32(0);
+  outC->positionReport.Message.field2 = kcg_lit_int32(0);
+  outC->positionReport.Message.field3 = kcg_lit_int32(0);
   for (idx7 = 0; idx7 < 50; idx7++) {
-    outC->positionReport.OptionalPackets[idx7] = kcg_lit_int64(0);
+    outC->positionReport.OptionalPackets[idx7] = kcg_lit_int32(0);
   }
   outC->found = kcg_true;
   for (idx = 0; idx < 5; idx++) {

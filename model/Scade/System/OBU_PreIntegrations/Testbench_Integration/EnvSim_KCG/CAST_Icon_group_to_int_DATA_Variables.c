@@ -229,28 +229,28 @@ void CAST_Icon_group_to_int_init_DATA_Variables(
   outC->error = kcg_true;
   outC->IfBlock1_clock = kcg_true;
   outC->_L3_then_else_IfBlock1 = kcg_true;
-  outC->_L2_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_IfBlock1 = kcg_true;
   outC->_L3_then_else_else_else_IfBlock1 = kcg_true;
-  outC->_L2_then_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_else_else_IfBlock1 = kcg_true;
   outC->_L3_then_else_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L2_then_else_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L3_else_else_else_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L3_else_else_else_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L4_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L2_then_else_else_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->else_clock_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L2_then_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_IfBlock1 = kcg_true;
   outC->else_clock_else_else_IfBlock1 = kcg_true;
-  outC->_L2_then_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L3_then_else_else_IfBlock1 = kcg_true;
   outC->else_clock_IfBlock1 = kcg_true;
-  outC->_L2_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L3_then_IfBlock1 = kcg_true;
-  outC->Output1 = kcg_lit_int64(0);
+  outC->Output1 = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

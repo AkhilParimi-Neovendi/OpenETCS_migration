@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _d_SBI2_TargetLimits_Pkg_H_
 #define _d_SBI2_TargetLimits_Pkg_H_
@@ -28,10 +28,10 @@ typedef struct {
   L_internal_real_Type_SDM_Types_Pkg /* _L70/ */ _L70;
   kcg_bool /* _L82/ */ _L82;
   bec_t_TargetLimits_Pkg /* _L83/ */ _L83;
-  kcg_float64 /* _L85/ */ _L85;
-  kcg_float64 /* _L88/ */ _L88;
+  kcg_float32 /* _L85/ */ _L85;
+  kcg_float32 /* _L88/ */ _L88;
   T_trac_t_TargetLimits_Pkg /* _L87/ */ _L87;
-  kcg_float64 /* _L86/ */ _L86;
+  kcg_float32 /* _L86/ */ _L86;
   V_internal_real_Type_SDM_Types_Pkg /* _L89/ */ _L89;
   L_internal_real_Type_SDM_Types_Pkg /* _L93/ */ _L93;
   V_internal_real_Type_SDM_Types_Pkg /* _L92/ */ _L92;
@@ -64,6 +64,6 @@ extern void d_SBI2_init_TargetLimits_Pkg(outC_d_SBI2_TargetLimits_Pkg *outC);
 #endif /* _d_SBI2_TargetLimits_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** d_SBI2_TargetLimits_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

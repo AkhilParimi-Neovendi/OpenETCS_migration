@@ -14,37 +14,37 @@ void CAST_M_VERSION_to_int_TM_conversions(
   outC_CAST_M_VERSION_to_int_TM_conversions *outC)
 {
   /* m_version_int/ */
-  static kcg_int64 m_version_int_partial;
+  static kcg_int32 m_version_int_partial;
   /* error/ */
   static kcg_bool error_partial;
   /* m_version_int/ */
-  static kcg_int64 _1_m_version_int_partial;
+  static kcg_int32 _1_m_version_int_partial;
   /* error/ */
   static kcg_bool _2_error_partial;
   /* m_version_int/ */
-  static kcg_int64 _3_m_version_int_partial;
+  static kcg_int32 _3_m_version_int_partial;
   /* error/ */
   static kcg_bool _4_error_partial;
   /* m_version_int/ */
-  static kcg_int64 _5_m_version_int_partial;
+  static kcg_int32 _5_m_version_int_partial;
   /* error/ */
   static kcg_bool _6_error_partial;
   /* error/ */
   static kcg_bool _7_error_partial;
   /* m_version_int/ */
-  static kcg_int64 _8_m_version_int_partial;
+  static kcg_int32 _8_m_version_int_partial;
   /* error/ */
   static kcg_bool _9_error_partial;
   /* m_version_int/ */
-  static kcg_int64 _10_m_version_int_partial;
+  static kcg_int32 _10_m_version_int_partial;
   /* error/ */
   static kcg_bool _11_error_partial;
   /* m_version_int/ */
-  static kcg_int64 _12_m_version_int_partial;
+  static kcg_int32 _12_m_version_int_partial;
   /* error/ */
   static kcg_bool _13_error_partial;
   /* m_version_int/ */
-  static kcg_int64 _14_m_version_int_partial;
+  static kcg_int32 _14_m_version_int_partial;
   static kcg_bool noname;
 
   outC->_L4 = m_version;
@@ -150,19 +150,19 @@ void CAST_M_VERSION_to_int_init_TM_conversions(
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->IfBlock1_clock = kcg_true;
   outC->_L5_then_else_IfBlock1 = kcg_true;
-  outC->_L3_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L3_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_IfBlock1 = kcg_true;
   outC->_L4_then_else_else_else_IfBlock1 = kcg_true;
-  outC->_L2_then_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L1_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L2_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_else_IfBlock1 = kcg_true;
-  outC->_L2_then_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L4_then_else_else_IfBlock1 = kcg_true;
   outC->else_clock_IfBlock1 = kcg_true;
-  outC->_L4_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L4_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L5_then_IfBlock1 = kcg_true;
-  outC->m_version_int = kcg_lit_int64(0);
+  outC->m_version_int = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

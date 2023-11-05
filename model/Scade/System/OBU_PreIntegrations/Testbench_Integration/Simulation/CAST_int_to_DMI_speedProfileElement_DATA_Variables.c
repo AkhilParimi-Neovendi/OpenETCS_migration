@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,13 +10,13 @@
 /* DATA::Variables::CAST_int_to_DMI_speedProfileElement/ */
 void CAST_int_to_DMI_speedProfileElement_DATA_Variables(
   /* valid/ */
-  kcg_int64 valid,
+  kcg_int32 valid,
   /* loc_abs/ */
-  kcg_int64 loc_abs,
+  kcg_int32 loc_abs,
   /* loc_lrbg/ */
-  kcg_int64 loc_lrbg,
+  kcg_int32 loc_lrbg,
   /* mrs/ */
-  kcg_int64 mrs,
+  kcg_int32 mrs,
   outC_CAST_int_to_DMI_speedProfileElement_DATA_Variables *outC)
 {
   outC->_L11 = valid;
@@ -40,18 +40,18 @@ void CAST_int_to_DMI_speedProfileElement_init_DATA_Variables(
   outC_CAST_int_to_DMI_speedProfileElement_DATA_Variables *outC)
 {
   outC->_L15 = kcg_true;
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
   outC->_L5.valid = kcg_true;
-  outC->_L5.Loc_Abs = kcg_lit_int64(0);
-  outC->_L5.Loc_LRBG = kcg_lit_int64(0);
-  outC->_L5.MRS = kcg_lit_int64(0);
+  outC->_L5.Loc_Abs = kcg_lit_int32(0);
+  outC->_L5.Loc_LRBG = kcg_lit_int32(0);
+  outC->_L5.MRS = kcg_lit_int32(0);
   outC->dmi_speedProfileElemen.valid = kcg_true;
-  outC->dmi_speedProfileElemen.Loc_Abs = kcg_lit_int64(0);
-  outC->dmi_speedProfileElemen.Loc_LRBG = kcg_lit_int64(0);
-  outC->dmi_speedProfileElemen.MRS = kcg_lit_int64(0);
+  outC->dmi_speedProfileElemen.Loc_Abs = kcg_lit_int32(0);
+  outC->dmi_speedProfileElemen.Loc_LRBG = kcg_lit_int32(0);
+  outC->dmi_speedProfileElemen.MRS = kcg_lit_int32(0);
   /* _L15=(Utilities::Int_to_Bool#1)/ */
   Int_to_Bool_init_Utilities(&outC->Context_Int_to_Bool_1);
 }
@@ -71,6 +71,6 @@ void CAST_int_to_DMI_speedProfileElement_reset_DATA_Variables(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_int_to_DMI_speedProfileElement_DATA_Variables.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

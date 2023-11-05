@@ -47,7 +47,7 @@ typedef struct {
   M_LOC /* _L15/ */ _L15;
   kcg_bool /* _L16/ */ _L16;
   kcg_bool /* _L17/ */ _L17;
-  kcg_int64 /* _L18/ */ _L18;
+  kcg_int32 /* _L18/ */ _L18;
 } outC_Supervise_PosRepParam_ProvidePositionReport_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,11 +10,11 @@
 /* Utilities::Int_Check/ */
 void Int_Check_Utilities(
   /* int_in/ */
-  kcg_int64 int_in,
+  kcg_int32 int_in,
   /* max_value/ */
-  kcg_int64 max_value,
+  kcg_int32 max_value,
   /* min_value/ */
-  kcg_int64 min_value,
+  kcg_int32 min_value,
   outC_Int_Check_Utilities *outC)
 {
   outC->_L9 = kcg_false;
@@ -44,9 +44,9 @@ void Int_Check_init_Utilities(outC_Int_Check_Utilities *outC)
   outC->_L6 = kcg_true;
   outC->_L5 = kcg_true;
   outC->_L4 = kcg_true;
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
   outC->error = kcg_true;
 }
 #endif /* KCG_USER_DEFINED_INIT */
@@ -62,6 +62,6 @@ void Int_Check_reset_Utilities(outC_Int_Check_Utilities *outC)
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Int_Check_Utilities.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

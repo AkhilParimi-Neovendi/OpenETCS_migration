@@ -28,17 +28,17 @@ typedef struct {
   L_internal_real_Type_SDM_Types_Pkg /* _L5/ */ _L5;
   V_internal_real_Type_SDM_Types_Pkg /* _L4/ */ _L4;
   A_internal_real_Type_SDM_Types_Pkg /* _L3/ */ _L3;
-  kcg_float64 /* _L6/ */ _L6;
-  kcg_float64 /* _L7/ */ _L7;
-  kcg_float64 /* _L9/ */ _L9;
-  kcg_float64 /* _L10/ */ _L10;
-  kcg_float64 /* _L11/ */ _L11;
-  kcg_float64 /* _L15/ */ _L15;
+  kcg_float32 /* _L6/ */ _L6;
+  kcg_float32 /* _L7/ */ _L7;
+  kcg_float32 /* _L9/ */ _L9;
+  kcg_float32 /* _L10/ */ _L10;
+  kcg_float32 /* _L11/ */ _L11;
+  kcg_float32 /* _L15/ */ _L15;
   kcg_bool /* _L13/ */ _L13;
-  kcg_float64 /* _L14/ */ _L14;
-  kcg_float64 /* _L16/ */ _L16;
-  kcg_float64 /* _L23/ */ _L23;
-  kcg_float64 /* _L24/ */ _L24;
+  kcg_float32 /* _L14/ */ _L14;
+  kcg_float32 /* _L16/ */ _L16;
+  kcg_float32 /* _L23/ */ _L23;
+  kcg_float32 /* _L24/ */ _L24;
 } outC_getLocationOnCurveArc_CalcBrakingCurves_types;
 
 /* ===========  node initialization and cycle functions  =========== */

@@ -32,8 +32,8 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   TrackType_US_Integration_November /* IfBlock1:then:_L9/ */ _L9_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L8/ */ _L8_then_IfBlock1;
-  kcg_float64 /* IfBlock1:then:_L7/ */ _L7_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L8/ */ _L8_then_IfBlock1;
+  kcg_float32 /* IfBlock1:then:_L7/ */ _L7_then_IfBlock1;
   CompressedPackets_T_Common_Types_Pkg /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
   TelegramHeader_T_BG_Types_Pkg /* IfBlock1:then:_L2/ */ _L2_then_IfBlock1;
   CompressedBaliseMessage_TM /* IfBlock1:then:_L3/ */ _L3_then_IfBlock1;
@@ -41,8 +41,8 @@ typedef struct {
   CompressedPackets_T_Common_Types_Pkg /* IfBlock1:then:_L5/ */ _L5_then_IfBlock1;
   CompressedRadioMessage_TM /* IfBlock1:then:_L6/ */ _L6_then_IfBlock1;
   TrackType_US_Integration_November /* IfBlock1:else:_L9/ */ _L9_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:_L8/ */ _L8_else_IfBlock1;
-  kcg_float64 /* IfBlock1:else:_L7/ */ _L7_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:_L8/ */ _L8_else_IfBlock1;
+  kcg_float32 /* IfBlock1:else:_L7/ */ _L7_else_IfBlock1;
   CompressedPackets_T_Common_Types_Pkg /* IfBlock1:else:_L1/ */ _L1_else_IfBlock1;
   TelegramHeader_T_BG_Types_Pkg /* IfBlock1:else:_L2/ */ _L2_else_IfBlock1;
   CompressedBaliseMessage_TM /* IfBlock1:else:_L3/ */ _L3_else_IfBlock1;
@@ -55,9 +55,9 @@ typedef struct {
 /* US_Integration_November::Amsterdam_Utrecht/ */
 extern void Amsterdam_Utrecht_US_Integration_November(
   /* TrainPos/ */
-  kcg_float64 TrainPos,
+  kcg_float32 TrainPos,
   /* Trigger_in/ */
-  kcg_int64 Trigger_in,
+  kcg_int32 Trigger_in,
   /* SelectTrack/ */
   TrackType_US_Integration_November SelectTrack,
   outC_Amsterdam_Utrecht_US_Integration_November *outC);

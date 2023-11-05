@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -40,24 +40,24 @@ void RadioTrackTrainFactory__CreateP057_RBC_Messaging_Pkg_RBC_RadioTrackTrainFac
 void RadioTrackTrainFactory__CreateP057_init_RBC_Messaging_Pkg_RBC_RadioTrackTrainFactory_Pkg(
   outC_RadioTrackTrainFactory__CreateP057_RBC_Messaging_Pkg_RBC_RadioTrackTrainFactory_Pkg *outC)
 {
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L12 = kcg_lit_int64(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L12 = kcg_lit_int32(0);
   outC->_L11 = Q_DIR_Reverse;
   outC->_L2.valid = kcg_true;
-  outC->_L2.NID_PACKET = kcg_lit_int64(0);
-  outC->_L2.Q_DIR = kcg_lit_int64(0);
-  outC->_L2.L_PACKET = kcg_lit_int64(0);
-  outC->_L2.T_MAR = kcg_lit_int64(0);
-  outC->_L2.T_TIMEOUTRQST = kcg_lit_int64(0);
-  outC->_L2.T_CYCRQST = kcg_lit_int64(0);
+  outC->_L2.NID_PACKET = kcg_lit_int32(0);
+  outC->_L2.Q_DIR = kcg_lit_int32(0);
+  outC->_L2.L_PACKET = kcg_lit_int32(0);
+  outC->_L2.T_MAR = kcg_lit_int32(0);
+  outC->_L2.T_TIMEOUTRQST = kcg_lit_int32(0);
+  outC->_L2.T_CYCRQST = kcg_lit_int32(0);
   outC->outRadioTrackTrainPacket.valid = kcg_true;
-  outC->outRadioTrackTrainPacket.NID_PACKET = kcg_lit_int64(0);
-  outC->outRadioTrackTrainPacket.Q_DIR = kcg_lit_int64(0);
-  outC->outRadioTrackTrainPacket.L_PACKET = kcg_lit_int64(0);
-  outC->outRadioTrackTrainPacket.T_MAR = kcg_lit_int64(0);
-  outC->outRadioTrackTrainPacket.T_TIMEOUTRQST = kcg_lit_int64(0);
-  outC->outRadioTrackTrainPacket.T_CYCRQST = kcg_lit_int64(0);
+  outC->outRadioTrackTrainPacket.NID_PACKET = kcg_lit_int32(0);
+  outC->outRadioTrackTrainPacket.Q_DIR = kcg_lit_int32(0);
+  outC->outRadioTrackTrainPacket.L_PACKET = kcg_lit_int32(0);
+  outC->outRadioTrackTrainPacket.T_MAR = kcg_lit_int32(0);
+  outC->outRadioTrackTrainPacket.T_TIMEOUTRQST = kcg_lit_int32(0);
+  outC->outRadioTrackTrainPacket.T_CYCRQST = kcg_lit_int32(0);
   /* _L2=(RBC_Messaging_Pkg::RBC_RadioTrackTrain_Pkg::RBC_RadioTrackTrainPacket057_Pkg::RadioTrackTrainPacket057__Create#1)/ */
   RadioTrackTrainPacket057__Create_init_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg_RBC_RadioTrackTrainPacket057_Pkg(
     &outC->Context_RadioTrackTrainPacket057__Create_1);
@@ -79,6 +79,6 @@ void RadioTrackTrainFactory__CreateP057_reset_RBC_Messaging_Pkg_RBC_RadioTrackTr
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** RadioTrackTrainFactory__CreateP057_RBC_Messaging_Pkg_RBC_RadioTrackTrainFactory_Pkg.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

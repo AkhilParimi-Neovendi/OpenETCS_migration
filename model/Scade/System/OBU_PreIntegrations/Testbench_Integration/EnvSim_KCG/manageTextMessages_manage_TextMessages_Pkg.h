@@ -76,7 +76,7 @@ typedef struct {
   DMI_Text_Message_T_DMI_Messages_EVC_to_DMI_Pkg /* _L16/ */ _L16;
   DMI_TXT_MSGList_status_T_DMI_Types_Pkg /* _L14/ */ _L14;
   DMI_Text_Message_T_DMI_Messages_EVC_to_DMI_Pkg /* _L18/ */ _L18;
-  kcg_int64 /* _L20/ */ _L20;
+  kcg_int32 /* _L20/ */ _L20;
   DMI_context_TXT_MSG_T_DMI_Types_Pkg /* _L22/ */ _L22;
   M_MODE /* _L24/ */ _L24;
   Q_TEXTREPORT /* _L26/ */ _L26;

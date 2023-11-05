@@ -10,7 +10,7 @@
 /* DATA::Variables::CAST_int_to_DMI_Request/ */
 void CAST_int_to_DMI_Request_DATA_Variables(
   /* dmi_request_int/ */
-  kcg_int64 dmi_request_int,
+  kcg_int32 dmi_request_int,
   outC_CAST_int_to_DMI_Request_DATA_Variables *outC)
 {
   /* dmi_reqest_ct/ */

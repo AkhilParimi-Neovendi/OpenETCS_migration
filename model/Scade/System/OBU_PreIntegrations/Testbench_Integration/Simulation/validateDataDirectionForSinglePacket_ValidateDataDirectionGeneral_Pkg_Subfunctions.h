@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _validateDataDirectionForSinglePacket_ValidateDataDirectionGeneral_Pkg_Subfunctions_H_
 #define _validateDataDirectionForSinglePacket_ValidateDataDirectionGeneral_Pkg_Subfunctions_H_
@@ -35,8 +35,8 @@ typedef struct {
   kcg_bool /* IfBlock1:then:_L8/ */ _L8_then_IfBlock1;
   MetadataElement_T_Common_Types_Pkg /* IfBlock1:then:_L9/ */ _L9_then_IfBlock1;
   Q_DIR /* IfBlock1:then:_L10/ */ _L10_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L15/ */ _L15_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L14/ */ _L14_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L15/ */ _L15_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L14/ */ _L14_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L13/ */ _L13_then_IfBlock1;
   Q_DIR /* IfBlock1:then:_L12/ */ _L12_then_IfBlock1;
   NID_PACKET /* IfBlock1:then:_L11/ */ _L11_then_IfBlock1;
@@ -88,6 +88,6 @@ extern void validateDataDirectionForSinglePacket_init_ValidateDataDirectionGener
 #endif /* _validateDataDirectionForSinglePacket_ValidateDataDirectionGeneral_Pkg_Subfunctions_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** validateDataDirectionForSinglePacket_ValidateDataDirectionGeneral_Pkg_Subfunctions.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

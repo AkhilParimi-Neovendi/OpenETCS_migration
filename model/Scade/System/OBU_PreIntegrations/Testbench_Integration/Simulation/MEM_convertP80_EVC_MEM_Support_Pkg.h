@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _MEM_convertP80_EVC_MEM_Support_Pkg_H_
 #define _MEM_convertP80_EVC_MEM_Support_Pkg_H_
@@ -25,16 +25,16 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   P080_OBU_T_TM /* _L1/ */ _L1;
   P80_ModeProfiles_T_Packet_Types_Pkg /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L4/ */ _L4;
   P80_ModeProfile_T_Packet_Types_Pkg /* _L5/ */ _L5;
-  _73_array /* _L6/ */ _L6;
+  _102_array /* _L6/ */ _L6;
   Q_DIR /* _L7/ */ _L7;
   Q_SCALE /* _L8/ */ _L8;
   kcg_bool /* _L9/ */ _L9;
   P080_OBU_sectionlist_enum_T_TM /* _L10/ */ _L10;
-  _23_array /* _L11/ */ _L11;
-  _72_array /* _L13/ */ _L13;
-  _22_array /* _L14/ */ _L14;
+  _21_array /* _L11/ */ _L11;
+  _98_array /* _L13/ */ _L13;
+  _20_array /* _L14/ */ _L14;
   P003_OBU_T_TM /* _L15/ */ _L15;
 } outC_MEM_convertP80_EVC_MEM_Support_Pkg;
 
@@ -62,6 +62,6 @@ extern void MEM_convertP80_init_EVC_MEM_Support_Pkg(
 #endif /* _MEM_convertP80_EVC_MEM_Support_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** MEM_convertP80_EVC_MEM_Support_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

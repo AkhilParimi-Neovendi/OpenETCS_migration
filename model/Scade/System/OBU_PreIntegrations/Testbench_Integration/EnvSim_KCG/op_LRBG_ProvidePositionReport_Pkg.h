@@ -16,7 +16,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* d_lrbg/ */ d_lrbg;
+  kcg_int32 /* d_lrbg/ */ d_lrbg;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -25,13 +25,13 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* @1/A_Output/ */ A_Output_Abs_1_int64;
-  kcg_int64 /* @1/A_Input/ */ A_Input_Abs_1_int64;
-  kcg_int64 /* @1/_L8/ */ _L8_Abs_1_int64;
-  kcg_int64 /* @1/_L5/ */ _L5_Abs_1_int64;
-  kcg_int64 /* @1/_L3/ */ _L3_Abs_1_int64;
-  kcg_int64 /* @1/_L2/ */ _L2_Abs_1_int64;
-  kcg_bool /* @1/_L1/ */ _L1_Abs_1_int64;
+  kcg_int32 /* @1/A_Output/ */ A_Output_Abs_1_int32;
+  kcg_int32 /* @1/A_Input/ */ A_Input_Abs_1_int32;
+  kcg_int32 /* @1/_L8/ */ _L8_Abs_1_int32;
+  kcg_int32 /* @1/_L5/ */ _L5_Abs_1_int32;
+  kcg_int32 /* @1/_L3/ */ _L3_Abs_1_int32;
+  kcg_int32 /* @1/_L2/ */ _L2_Abs_1_int32;
+  kcg_bool /* @1/_L1/ */ _L1_Abs_1_int32;
   trainPosition_T_TrainPosition_Types_Pck /* _L2/ */ _L2;
   positionedBGs_T_TrainPosition_Types_Pck /* _L1/ */ _L1;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L13/ */ _L13;
@@ -40,7 +40,7 @@ typedef struct {
   kcg_bool /* _L16/ */ _L16;
   kcg_bool /* _L18/ */ _L18;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L19/ */ _L19;
-  kcg_int64 /* _L20/ */ _L20;
+  kcg_int32 /* _L20/ */ _L20;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L31/ */ _L31;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L32/ */ _L32;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L33/ */ _L33;

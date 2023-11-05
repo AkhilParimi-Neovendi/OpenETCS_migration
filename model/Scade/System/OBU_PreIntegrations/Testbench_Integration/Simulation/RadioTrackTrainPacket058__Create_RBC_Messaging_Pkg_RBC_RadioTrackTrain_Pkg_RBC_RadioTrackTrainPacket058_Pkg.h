@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _RadioTrackTrainPacket058__Create_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg_RBC_RadioTrackTrainPacket058_Pkg_H_
 #define _RadioTrackTrainPacket058__Create_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg_RBC_RadioTrackTrainPacket058_Pkg_H_
@@ -60,13 +60,13 @@ typedef struct {
   P058_trackside_int_T_TM /* _L29/ */ _L29;
   T_CYCLOC /* _L30/ */ _L30;
   P058_trackside_int_T_TM /* _L31/ */ _L31;
-  kcg_int64 /* _L32/ */ _L32;
+  kcg_int32 /* _L32/ */ _L32;
   P058_trackside_int_T_TM /* _L33/ */ _L33;
   N_ITER /* _L35/ */ _L35;
-  kcg_int64 /* _L36/ */ _L36;
-  kcg_int64 /* _L37/ */ _L37;
-  kcg_int64 /* _L38/ */ _L38;
-  kcg_int64 /* _L39/ */ _L39;
+  kcg_int32 /* _L36/ */ _L36;
+  kcg_int32 /* _L37/ */ _L37;
+  kcg_int32 /* _L38/ */ _L38;
+  kcg_int32 /* _L39/ */ _L39;
   L_PACKET /* _L40/ */ _L40;
 } outC_RadioTrackTrainPacket058__Create_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg_RBC_RadioTrackTrainPacket058_Pkg;
 
@@ -104,6 +104,6 @@ extern void RadioTrackTrainPacket058__Create_init_RBC_Messaging_Pkg_RBC_RadioTra
 #endif /* _RadioTrackTrainPacket058__Create_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg_RBC_RadioTrackTrainPacket058_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** RadioTrackTrainPacket058__Create_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg_RBC_RadioTrackTrainPacket058_Pkg.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

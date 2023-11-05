@@ -14,21 +14,21 @@ void CAST_M_ACK_to_int_TM_conversions(
   outC_CAST_M_ACK_to_int_TM_conversions *outC)
 {
   /* m_ack_int/ */
-  kcg_int64 m_ack_int_partial;
+  kcg_int32 m_ack_int_partial;
   /* error/ */
   kcg_bool error_partial;
   /* m_ack_int/ */
-  kcg_int64 _1_m_ack_int_partial;
+  kcg_int32 _1_m_ack_int_partial;
   /* error/ */
   kcg_bool _2_error_partial;
   /* error/ */
   kcg_bool _3_error_partial;
   /* m_ack_int/ */
-  kcg_int64 _4_m_ack_int_partial;
+  kcg_int32 _4_m_ack_int_partial;
   /* error/ */
   kcg_bool _5_error_partial;
   /* m_ack_int/ */
-  kcg_int64 _6_m_ack_int_partial;
+  kcg_int32 _6_m_ack_int_partial;
   kcg_bool noname;
 
   outC->_L4 = m_ack;
@@ -80,14 +80,14 @@ void CAST_M_ACK_to_int_init_TM_conversions(
   outC->error = kcg_true;
   outC->m_ack_in = M_ACK_No_acknowledgement_required;
   outC->IfBlock1_clock = kcg_true;
-  outC->_L7_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L7_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L6_then_else_IfBlock1 = kcg_true;
-  outC->_L1_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L2_else_else_IfBlock1 = kcg_true;
   outC->else_clock_IfBlock1 = kcg_true;
   outC->_L7_then_IfBlock1 = kcg_true;
-  outC->_L8_then_IfBlock1 = kcg_lit_int64(0);
-  outC->m_ack_int = kcg_lit_int64(0);
+  outC->_L8_then_IfBlock1 = kcg_lit_int32(0);
+  outC->m_ack_int = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

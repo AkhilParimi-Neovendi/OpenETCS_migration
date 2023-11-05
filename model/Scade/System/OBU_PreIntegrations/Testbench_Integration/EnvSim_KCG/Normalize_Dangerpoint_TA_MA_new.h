@@ -41,7 +41,7 @@ typedef struct {
   V_RELEASEDP /* _L11/ */ _L11;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L12/ */ _L12;
   D_DP /* _L13/ */ _L13;
-  kcg_int64 /* _L14/ */ _L14;
+  kcg_int32 /* _L14/ */ _L14;
   DP_or_OL_t_TrackAtlasTypes /* _L15/ */ _L15;
   DP_or_OL_t_TrackAtlasTypes /* _L16/ */ _L16;
 } outC_Normalize_Dangerpoint_TA_MA_new;

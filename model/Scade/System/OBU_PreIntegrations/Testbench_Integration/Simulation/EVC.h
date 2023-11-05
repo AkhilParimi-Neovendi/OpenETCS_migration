@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _EVC_H_
 #define _EVC_H_
@@ -52,15 +52,15 @@ typedef struct {
   L_internal_Type_Obu_BasicTypes_Pkg /* debugTrainPositionNominal/ */ debugTrainPositionNominal;
   L_internal_Type_Obu_BasicTypes_Pkg /* debugTrainPositionDeltaMax/ */ debugTrainPositionDeltaMax;
   L_internal_Type_Obu_BasicTypes_Pkg /* debugTrainPositionDeltaMin/ */ debugTrainPositionDeltaMin;
-  kcg_float64 /* debugPermittedSpeed/ */ debugPermittedSpeed;
-  kcg_float64 /* debugIinterventionSpeed/ */ debugIinterventionSpeed;
+  kcg_float32 /* debugPermittedSpeed/ */ debugPermittedSpeed;
+  kcg_float32 /* debugIinterventionSpeed/ */ debugIinterventionSpeed;
   M_MODE /* debugCurrentMode/ */ debugCurrentMode;
   M_LEVEL /* debugCurrentLevel/ */ debugCurrentLevel;
   /* -----------------------   local probes  ------------------------- */
   odometry_T_Obu_BasicTypes_Pkg /* probe_Odometry/ */ probe_Odometry;
   probesBalises_T_xdebugSupport_Pkg /* probe_Balises/ */ probe_Balises;
-  kcg_float64 /* probe_distMsg/ */ probe_distMsg;
-  kcg_float64 /* probe_distBG/ */ probe_distBG;
+  kcg_float32 /* probe_distMsg/ */ probe_distMsg;
+  kcg_float32 /* probe_distBG/ */ probe_distBG;
   NID_MESSAGE /* probe_MSGinAfterFilter/ */ probe_MSGinAfterFilter;
   NID_LRBG /* probe_LRBG/ */ probe_LRBG;
   NID_BG /* probe_BG_afterCheck/ */ probe_BG_afterCheck;
@@ -186,7 +186,7 @@ typedef struct {
   T_Data_To_BG_Management_Level_And_Mode_Types_Pkg /* ML_dataToBG_Management/ */ ML_dataToBG_Management;
   kcg_bool /* ML_ServiceBrakeCmd/ */ ML_ServiceBrakeCmd;
   kcg_bool /* ML_EB_Request/ */ ML_EB_Request;
-  kcg_int64 /* MSG_lastAckTextMsgId/ */ MSG_lastAckTextMsgId;
+  kcg_int32 /* MSG_lastAckTextMsgId/ */ MSG_lastAckTextMsgId;
   kcg_bool /* MSG_pendingNTCTransition/ */ MSG_pendingNTCTransition;
   Message_Train_Interface_to_EVC_T_TIU_Types_Pkg /* TIU_InputMessage/ */ TIU_InputMessage;
   T_Data_From_Speed_Supervision_Level_And_Mode_Types_Pkg /* SMD_DataForML/ */ SMD_DataForML;
@@ -264,10 +264,10 @@ typedef struct {
   speedSupervisionForDMI_T_DMI_Types_Pkg /* _L652/ */ _L652;
   Brake_command_T_TIU_Types_Pkg /* _L699/ */ _L699;
   V_internal_Type_Obu_BasicTypes_Pkg /* _L709/ */ _L709;
-  kcg_float64 /* _L710/ */ _L710;
-  kcg_float64 /* _L711/ */ _L711;
+  kcg_float32 /* _L710/ */ _L710;
+  kcg_float32 /* _L711/ */ _L711;
   V_internal_Type_Obu_BasicTypes_Pkg /* _L718/ */ _L718;
-  kcg_int64 /* _L719/ */ _L719;
+  kcg_int32 /* _L719/ */ _L719;
   V_internal_Type_Obu_BasicTypes_Pkg /* _L721/ */ _L721;
   DMI_to_EVC_Message_int_T_API_DMI_Pkg /* _L735/ */ _L735;
   DMI_EVC_status_T_DMI_Types_Pkg /* _L742/ */ _L742;
@@ -393,7 +393,7 @@ typedef struct {
   kcg_bool /* _L1030/ */ _L1030;
   kcg_bool /* _L1031/ */ _L1031;
   kcg_bool /* _L1032/ */ _L1032;
-  kcg_int64 /* _L1037/ */ _L1037;
+  kcg_int32 /* _L1037/ */ _L1037;
   T_Data_From_Localisation_Level_And_Mode_Types_Pkg /* _L1038/ */ _L1038;
   trainPosition_T_TrainPosition_Types_Pck /* _L1039/ */ _L1039;
   odometry_T_Obu_BasicTypes_Pkg /* _L1040/ */ _L1040;
@@ -418,7 +418,7 @@ typedef struct {
   kcg_bool /* _L1091/ */ _L1091;
   kcg_bool /* _L1092/ */ _L1092;
   T_AcknoledgementRequest_Level_And_Mode_Types_Pkg /* _L1095/ */ _L1095;
-  kcg_int64 /* _L1099/ */ _L1099;
+  kcg_int32 /* _L1099/ */ _L1099;
   kcg_bool /* _L1103/ */ _L1103;
   kcg_bool /* _L1104/ */ _L1104;
   kcg_bool /* _L1107/ */ _L1107;
@@ -450,7 +450,7 @@ typedef struct {
   Brake_inhibition_command_T_TIU_Types_Pkg /* _L166/ */ _L166;
   T_Mode_Level_Level_And_Mode_Types_Pkg /* _L1200/ */ _L1200;
   Type_I_train_commands_T_TIU_Types_Pkg /* _L1202/ */ _L1202;
-  kcg_int64 /* _L1203/ */ _L1203;
+  kcg_int32 /* _L1203/ */ _L1203;
   trainData_Trigger_T_trainData_Types_pkg /* _L1205/ */ _L1205;
   trainData_T_TIU_Types_Pkg /* _L1204/ */ _L1204;
   kcg_bool /* _L1206/ */ _L1206;
@@ -571,10 +571,10 @@ typedef struct {
   T_Data_From_Track_Packet_Level_And_Mode_Types_Pkg /* _L1503/ */ _L1503;
   DataForModeAndLevel_t_TrackAtlasTypes /* _L1510/ */ _L1510;
   NID_BG /* _L1512/ */ _L1512;
-  kcg_float64 /* _L1511/ */ _L1511;
+  kcg_float32 /* _L1511/ */ _L1511;
   NID_LRBG /* _L1515/ */ _L1515;
   NID_BG /* _L1514/ */ _L1514;
-  kcg_float64 /* _L1513/ */ _L1513;
+  kcg_float32 /* _L1513/ */ _L1513;
   kcg_bool /* _L1516/ */ _L1516;
   kcg_bool /* _L1517/ */ _L1517;
   T_Mode_Level_Level_And_Mode_Types_Pkg /* _L1521/ */ _L1521;
@@ -638,7 +638,7 @@ typedef struct {
   mobileConnectionContext_T_RCM_Types_Pkg /* _L1658/ */ _L1658;
   kcg_bool /* _L1660/ */ _L1660;
   mobileRegistrationContext_T_RCM_Types_Pkg /* _L1661/ */ _L1661;
-  kcg_int64 /* _L1662/ */ _L1662;
+  kcg_int32 /* _L1662/ */ _L1662;
   mobileConnectionContext_T_RCM_Types_Pkg /* _L1663/ */ _L1663;
   mobileRegistrationContext_T_RCM_Types_Pkg /* _L1664/ */ _L1664;
   T_TRAIN /* _L1665/ */ _L1665;
@@ -647,7 +647,7 @@ typedef struct {
   ReceivedMessage_T_Common_Types_Pkg /* _L1668/ */ _L1668;
   abilityToHandleCommunicationSessions_Handover_Pkg /* _L1669/ */ _L1669;
   morc_configData_T_RCM_Session_Types_Pkg /* _L1670/ */ _L1670;
-  kcg_int64 /* _L1671/ */ _L1671;
+  kcg_int32 /* _L1671/ */ _L1671;
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* _L1673/ */ _L1673;
   obuEventsAndPhases_T_RCM_Session_Types_Pkg /* _L1675/ */ _L1675;
   kcg_bool /* _L1677/ */ _L1677;
@@ -830,6 +830,6 @@ extern void kcg_load_SV_EVC(outC_EVC *outC, SV_EVC *SV);
 #endif /* _EVC_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** EVC.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

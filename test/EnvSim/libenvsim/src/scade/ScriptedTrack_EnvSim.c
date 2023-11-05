@@ -29,8 +29,8 @@ void ScriptedTrack_reset_EnvSim(outC_ScriptedTrack_EnvSim *outC)
 
 /* EnvSim::ScriptedTrack */
 void ScriptedTrack_EnvSim(
-  /* EnvSim::ScriptedTrack::actualTrainPos */ kcg_float64 actualTrainPos,
-  /* EnvSim::ScriptedTrack::radioTrainPos */ kcg_float64 radioTrainPos,
+  /* EnvSim::ScriptedTrack::actualTrainPos */ kcg_float32 actualTrainPos,
+  /* EnvSim::ScriptedTrack::radioTrainPos */ kcg_float32 radioTrainPos,
   outC_ScriptedTrack_EnvSim *outC)
 {
   if(!ScriptedTrack_initialized_EnvSim) {

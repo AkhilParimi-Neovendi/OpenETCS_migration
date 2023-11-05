@@ -36,7 +36,7 @@ typedef struct {
   Q_DIR /* _L21/ */ _L21;
   D_EMERGENCYSTOP /* _L22/ */ _L22;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L25/ */ _L25;
-  kcg_int64 /* _L24/ */ _L24;
+  kcg_int32 /* _L24/ */ _L24;
   Q_SCALE /* _L26/ */ _L26;
   D_REF /* _L27/ */ _L27;
   M_VERSION /* _L28/ */ _L28;

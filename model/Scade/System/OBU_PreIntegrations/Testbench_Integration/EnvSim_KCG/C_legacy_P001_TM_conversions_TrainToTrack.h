@@ -28,20 +28,20 @@ typedef struct {
   M_LEVEL /* _L38/ */ _L38;
   M_MODE /* _L37/ */ _L37;
   Q_DIRTRAIN /* _L36/ */ _L36;
-  kcg_int64 /* _L35/ */ _L35;
-  kcg_int64 /* _L34/ */ _L34;
+  kcg_int32 /* _L35/ */ _L35;
+  kcg_int32 /* _L34/ */ _L34;
   Q_LENGTH /* _L33/ */ _L33;
-  kcg_int64 /* _L32/ */ _L32;
-  kcg_int64 /* _L31/ */ _L31;
+  kcg_int32 /* _L32/ */ _L32;
+  kcg_int32 /* _L31/ */ _L31;
   Q_DLRBG /* _L30/ */ _L30;
   Q_DIRLRBG /* _L29/ */ _L29;
-  kcg_int64 /* _L28/ */ _L28;
-  kcg_int64 /* _L27/ */ _L27;
-  kcg_int64 /* _L26/ */ _L26;
+  kcg_int32 /* _L28/ */ _L28;
+  kcg_int32 /* _L27/ */ _L27;
+  kcg_int32 /* _L26/ */ _L26;
   Q_SCALE /* _L25/ */ _L25;
-  kcg_int64 /* _L24/ */ _L24;
-  kcg_int64 /* _L23/ */ _L23;
-  kcg_int64 /* _L39/ */ _L39;
+  kcg_int32 /* _L24/ */ _L24;
+  kcg_int32 /* _L23/ */ _L23;
+  kcg_int32 /* _L39/ */ _L39;
 } outC_C_legacy_P001_TM_conversions_TrainToTrack;
 
 /* ===========  node initialization and cycle functions  =========== */

@@ -10,7 +10,7 @@
 /* TM_conversions::CAST_Int_to_M_MAMODE/ */
 void CAST_Int_to_M_MAMODE_TM_conversions(
   /* m_mamode_int/ */
-  kcg_int64 m_mamode_int,
+  kcg_int32 m_mamode_int,
   outC_CAST_Int_to_M_MAMODE_TM_conversions *outC)
 {
   /* m_mamode/ */
@@ -99,9 +99,9 @@ void CAST_Int_to_M_MAMODE_init_TM_conversions(
   outC_CAST_Int_to_M_MAMODE_TM_conversions *outC)
 {
   outC->_L7 = kcg_true;
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->error = kcg_true;
-  outC->m_mamode_in = kcg_lit_int64(0);
+  outC->m_mamode_in = kcg_lit_int32(0);
   outC->IfBlock1_clock = kcg_true;
   outC->_L7_then_else_IfBlock1 = M_MAMODE_On_Sight;
   outC->_L6_then_else_IfBlock1 = kcg_true;

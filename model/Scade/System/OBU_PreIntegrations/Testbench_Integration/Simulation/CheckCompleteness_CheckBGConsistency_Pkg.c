@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -48,7 +48,7 @@ void CheckCompleteness_CheckBGConsistency_Pkg(
   outC->nTotal = outC->_L5;
   outC->_L3 = outC->_L1.numberBalises;
   outC->numberOfBalises = outC->_L3;
-  outC->IfBlock1_clock = outC->numberOfBalises == kcg_lit_int64(1);
+  outC->IfBlock1_clock = outC->numberOfBalises == kcg_lit_int32(1);
   /* IfBlock1: */
   if (outC->IfBlock1_clock) {
     isComplete_partial = kcg_false;
@@ -71,7 +71,7 @@ void CheckCompleteness_CheckBGConsistency_Pkg(
   }
   else {
     outC->else_clock_IfBlock1 = (!(outC->numberOfBalises > outC->nTotal)) &
-      (outC->numberOfBalises > kcg_lit_int64(0));
+      (outC->numberOfBalises > kcg_lit_int32(0));
     /* IfBlock1:else: */
     if (outC->else_clock_IfBlock1) {
       _8_isSingleBG_partial = kcg_false;
@@ -151,9 +151,9 @@ void CheckCompleteness_init_CheckBGConsistency_Pkg(
   static kcg_size idx18;
   static kcg_size idx19;
 
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L4 = N_TOTAL_1_balise_in_the_group;
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L1.present = kcg_true;
   for (idx2 = 0; idx2 < 8; idx2++) {
     outC->_L1.Telegrams[idx2].valid = kcg_true;
@@ -166,61 +166,61 @@ void CheckCompleteness_init_CheckBGConsistency_Pkg(
     outC->_L1.Telegrams[idx2].telegramheader.n_total =
       N_TOTAL_1_balise_in_the_group;
     outC->_L1.Telegrams[idx2].telegramheader.m_dup = M_DUP_No_duplicates;
-    outC->_L1.Telegrams[idx2].telegramheader.m_mcount = kcg_lit_int64(0);
-    outC->_L1.Telegrams[idx2].telegramheader.nid_c = kcg_lit_int64(0);
-    outC->_L1.Telegrams[idx2].telegramheader.nid_bg = kcg_lit_int64(0);
+    outC->_L1.Telegrams[idx2].telegramheader.m_mcount = kcg_lit_int32(0);
+    outC->_L1.Telegrams[idx2].telegramheader.nid_c = kcg_lit_int32(0);
+    outC->_L1.Telegrams[idx2].telegramheader.nid_bg = kcg_lit_int32(0);
     outC->_L1.Telegrams[idx2].telegramheader.q_link = Q_LINK_Unlinked;
     for (idx = 0; idx < 30; idx++) {
       outC->_L1.Telegrams[idx2].packets.PacketHeaders[idx].nid_packet =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L1.Telegrams[idx2].packets.PacketHeaders[idx].q_dir = Q_DIR_Reverse;
       outC->_L1.Telegrams[idx2].packets.PacketHeaders[idx].valid = kcg_true;
       outC->_L1.Telegrams[idx2].packets.PacketHeaders[idx].startAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L1.Telegrams[idx2].packets.PacketHeaders[idx].endAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
     for (idx1 = 0; idx1 < 500; idx1++) {
-      outC->_L1.Telegrams[idx2].packets.PacketData[idx1] = kcg_lit_int64(0);
+      outC->_L1.Telegrams[idx2].packets.PacketData[idx1] = kcg_lit_int32(0);
     }
   }
-  outC->_L1.numberBalises = kcg_lit_int64(0);
+  outC->_L1.numberBalises = kcg_lit_int32(0);
   outC->_L1.centerOfBalisePosition.odometerOfBaliseDetection.valid = kcg_true;
   outC->_L1.centerOfBalisePosition.odometerOfBaliseDetection.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.centerOfBalisePosition.odometerOfBaliseDetection.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.centerOfBalisePosition.odometerOfBaliseDetection.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.centerOfBalisePosition.odometerOfBaliseDetection.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.centerOfBalisePosition.odometerOfBaliseDetection.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.centerOfBalisePosition.odometerOfBaliseDetection.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.centerOfBalisePosition.odometerOfBaliseDetection.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.centerOfBalisePosition.odometerOfBaliseDetection.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.centerOfBalisePosition.odometerOfBaliseDetection.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.centerOfBalisePosition.odometerOfBaliseDetection.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L1.centerOfBalisePosition.odometerOfBaliseDetection.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L1.centerOfBalisePosition.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.centerOfBalisePosition.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1.centerOfBalisePosition.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
-  outC->nTotal = kcg_lit_int64(0);
-  outC->numberOfBalises = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->nTotal = kcg_lit_int32(0);
+  outC->numberOfBalises = kcg_lit_int32(0);
   outC->IfBlock1_clock = kcg_true;
   outC->_L9_then_else_IfBlock1 = kcg_true;
-  outC->_L8_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L8_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L7_then_else_IfBlock1 = kcg_true;
-  outC->_L5_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L5_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L2_then_else_IfBlock1.valid = kcg_true;
   outC->_L2_then_else_IfBlock1.checkResult = kcg_true;
   outC->_L2_then_else_IfBlock1.telegramheader.q_updown =
@@ -232,22 +232,22 @@ void CheckCompleteness_init_CheckBGConsistency_Pkg(
   outC->_L2_then_else_IfBlock1.telegramheader.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L2_then_else_IfBlock1.telegramheader.m_dup = M_DUP_No_duplicates;
-  outC->_L2_then_else_IfBlock1.telegramheader.m_mcount = kcg_lit_int64(0);
-  outC->_L2_then_else_IfBlock1.telegramheader.nid_c = kcg_lit_int64(0);
-  outC->_L2_then_else_IfBlock1.telegramheader.nid_bg = kcg_lit_int64(0);
+  outC->_L2_then_else_IfBlock1.telegramheader.m_mcount = kcg_lit_int32(0);
+  outC->_L2_then_else_IfBlock1.telegramheader.nid_c = kcg_lit_int32(0);
+  outC->_L2_then_else_IfBlock1.telegramheader.nid_bg = kcg_lit_int32(0);
   outC->_L2_then_else_IfBlock1.telegramheader.q_link = Q_LINK_Unlinked;
   for (idx3 = 0; idx3 < 30; idx3++) {
     outC->_L2_then_else_IfBlock1.packets.PacketHeaders[idx3].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L2_then_else_IfBlock1.packets.PacketHeaders[idx3].q_dir = Q_DIR_Reverse;
     outC->_L2_then_else_IfBlock1.packets.PacketHeaders[idx3].valid = kcg_true;
     outC->_L2_then_else_IfBlock1.packets.PacketHeaders[idx3].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L2_then_else_IfBlock1.packets.PacketHeaders[idx3].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx4 = 0; idx4 < 500; idx4++) {
-    outC->_L2_then_else_IfBlock1.packets.PacketData[idx4] = kcg_lit_int64(0);
+    outC->_L2_then_else_IfBlock1.packets.PacketData[idx4] = kcg_lit_int32(0);
   }
   outC->_L1_then_else_IfBlock1 = kcg_true;
   for (idx7 = 0; idx7 < 8; idx7++) {
@@ -262,23 +262,23 @@ void CheckCompleteness_init_CheckBGConsistency_Pkg(
     outC->_L3_then_else_IfBlock1[idx7].telegramheader.n_total =
       N_TOTAL_1_balise_in_the_group;
     outC->_L3_then_else_IfBlock1[idx7].telegramheader.m_dup = M_DUP_No_duplicates;
-    outC->_L3_then_else_IfBlock1[idx7].telegramheader.m_mcount = kcg_lit_int64(0);
-    outC->_L3_then_else_IfBlock1[idx7].telegramheader.nid_c = kcg_lit_int64(0);
-    outC->_L3_then_else_IfBlock1[idx7].telegramheader.nid_bg = kcg_lit_int64(0);
+    outC->_L3_then_else_IfBlock1[idx7].telegramheader.m_mcount = kcg_lit_int32(0);
+    outC->_L3_then_else_IfBlock1[idx7].telegramheader.nid_c = kcg_lit_int32(0);
+    outC->_L3_then_else_IfBlock1[idx7].telegramheader.nid_bg = kcg_lit_int32(0);
     outC->_L3_then_else_IfBlock1[idx7].telegramheader.q_link = Q_LINK_Unlinked;
     for (idx5 = 0; idx5 < 30; idx5++) {
       outC->_L3_then_else_IfBlock1[idx7].packets.PacketHeaders[idx5].nid_packet =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L3_then_else_IfBlock1[idx7].packets.PacketHeaders[idx5].q_dir =
         Q_DIR_Reverse;
       outC->_L3_then_else_IfBlock1[idx7].packets.PacketHeaders[idx5].valid = kcg_true;
       outC->_L3_then_else_IfBlock1[idx7].packets.PacketHeaders[idx5].startAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L3_then_else_IfBlock1[idx7].packets.PacketHeaders[idx5].endAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
     for (idx6 = 0; idx6 < 500; idx6++) {
-      outC->_L3_then_else_IfBlock1[idx7].packets.PacketData[idx6] = kcg_lit_int64(0);
+      outC->_L3_then_else_IfBlock1[idx7].packets.PacketData[idx6] = kcg_lit_int32(0);
     }
   }
   outC->_L4_then_else_IfBlock1.present = kcg_true;
@@ -298,61 +298,61 @@ void CheckCompleteness_init_CheckBGConsistency_Pkg(
     outC->_L4_then_else_IfBlock1.Telegrams[idx10].telegramheader.m_dup =
       M_DUP_No_duplicates;
     outC->_L4_then_else_IfBlock1.Telegrams[idx10].telegramheader.m_mcount =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L4_then_else_IfBlock1.Telegrams[idx10].telegramheader.nid_c =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L4_then_else_IfBlock1.Telegrams[idx10].telegramheader.nid_bg =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L4_then_else_IfBlock1.Telegrams[idx10].telegramheader.q_link =
       Q_LINK_Unlinked;
     for (idx8 = 0; idx8 < 30; idx8++) {
       outC->_L4_then_else_IfBlock1.Telegrams[idx10].packets.PacketHeaders[idx8].nid_packet =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L4_then_else_IfBlock1.Telegrams[idx10].packets.PacketHeaders[idx8].q_dir =
         Q_DIR_Reverse;
       outC->_L4_then_else_IfBlock1.Telegrams[idx10].packets.PacketHeaders[idx8].valid =
         kcg_true;
       outC->_L4_then_else_IfBlock1.Telegrams[idx10].packets.PacketHeaders[idx8].startAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L4_then_else_IfBlock1.Telegrams[idx10].packets.PacketHeaders[idx8].endAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
     for (idx9 = 0; idx9 < 500; idx9++) {
       outC->_L4_then_else_IfBlock1.Telegrams[idx10].packets.PacketData[idx9] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
-  outC->_L4_then_else_IfBlock1.numberBalises = kcg_lit_int64(0);
+  outC->_L4_then_else_IfBlock1.numberBalises = kcg_lit_int32(0);
   outC->_L4_then_else_IfBlock1.centerOfBalisePosition.odometerOfBaliseDetection.valid =
     kcg_true;
   outC->_L4_then_else_IfBlock1.centerOfBalisePosition.odometerOfBaliseDetection.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_IfBlock1.centerOfBalisePosition.odometerOfBaliseDetection.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_IfBlock1.centerOfBalisePosition.odometerOfBaliseDetection.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_IfBlock1.centerOfBalisePosition.odometerOfBaliseDetection.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_IfBlock1.centerOfBalisePosition.odometerOfBaliseDetection.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_IfBlock1.centerOfBalisePosition.odometerOfBaliseDetection.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_IfBlock1.centerOfBalisePosition.odometerOfBaliseDetection.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_IfBlock1.centerOfBalisePosition.odometerOfBaliseDetection.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_IfBlock1.centerOfBalisePosition.odometerOfBaliseDetection.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_IfBlock1.centerOfBalisePosition.odometerOfBaliseDetection.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L4_then_else_IfBlock1.centerOfBalisePosition.odometerOfBaliseDetection.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L4_then_else_IfBlock1.centerOfBalisePosition.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_IfBlock1.centerOfBalisePosition.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_IfBlock1.centerOfBalisePosition.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L6_else_else_IfBlock1.valid = kcg_true;
   outC->_L6_else_else_IfBlock1.checkResult = kcg_true;
   outC->_L6_else_else_IfBlock1.telegramheader.q_updown =
@@ -364,22 +364,22 @@ void CheckCompleteness_init_CheckBGConsistency_Pkg(
   outC->_L6_else_else_IfBlock1.telegramheader.n_total =
     N_TOTAL_1_balise_in_the_group;
   outC->_L6_else_else_IfBlock1.telegramheader.m_dup = M_DUP_No_duplicates;
-  outC->_L6_else_else_IfBlock1.telegramheader.m_mcount = kcg_lit_int64(0);
-  outC->_L6_else_else_IfBlock1.telegramheader.nid_c = kcg_lit_int64(0);
-  outC->_L6_else_else_IfBlock1.telegramheader.nid_bg = kcg_lit_int64(0);
+  outC->_L6_else_else_IfBlock1.telegramheader.m_mcount = kcg_lit_int32(0);
+  outC->_L6_else_else_IfBlock1.telegramheader.nid_c = kcg_lit_int32(0);
+  outC->_L6_else_else_IfBlock1.telegramheader.nid_bg = kcg_lit_int32(0);
   outC->_L6_else_else_IfBlock1.telegramheader.q_link = Q_LINK_Unlinked;
   for (idx11 = 0; idx11 < 30; idx11++) {
     outC->_L6_else_else_IfBlock1.packets.PacketHeaders[idx11].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L6_else_else_IfBlock1.packets.PacketHeaders[idx11].q_dir = Q_DIR_Reverse;
     outC->_L6_else_else_IfBlock1.packets.PacketHeaders[idx11].valid = kcg_true;
     outC->_L6_else_else_IfBlock1.packets.PacketHeaders[idx11].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L6_else_else_IfBlock1.packets.PacketHeaders[idx11].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx12 = 0; idx12 < 500; idx12++) {
-    outC->_L6_else_else_IfBlock1.packets.PacketData[idx12] = kcg_lit_int64(0);
+    outC->_L6_else_else_IfBlock1.packets.PacketData[idx12] = kcg_lit_int32(0);
   }
   outC->_L5_else_else_IfBlock1 = kcg_true;
   outC->else_clock_IfBlock1 = kcg_true;
@@ -401,61 +401,61 @@ void CheckCompleteness_init_CheckBGConsistency_Pkg(
     outC->_L2_then_IfBlock1.Telegrams[idx15].telegramheader.m_dup =
       M_DUP_No_duplicates;
     outC->_L2_then_IfBlock1.Telegrams[idx15].telegramheader.m_mcount =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L2_then_IfBlock1.Telegrams[idx15].telegramheader.nid_c =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L2_then_IfBlock1.Telegrams[idx15].telegramheader.nid_bg =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L2_then_IfBlock1.Telegrams[idx15].telegramheader.q_link =
       Q_LINK_Unlinked;
     for (idx13 = 0; idx13 < 30; idx13++) {
       outC->_L2_then_IfBlock1.Telegrams[idx15].packets.PacketHeaders[idx13].nid_packet =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L2_then_IfBlock1.Telegrams[idx15].packets.PacketHeaders[idx13].q_dir =
         Q_DIR_Reverse;
       outC->_L2_then_IfBlock1.Telegrams[idx15].packets.PacketHeaders[idx13].valid =
         kcg_true;
       outC->_L2_then_IfBlock1.Telegrams[idx15].packets.PacketHeaders[idx13].startAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L2_then_IfBlock1.Telegrams[idx15].packets.PacketHeaders[idx13].endAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
     for (idx14 = 0; idx14 < 500; idx14++) {
       outC->_L2_then_IfBlock1.Telegrams[idx15].packets.PacketData[idx14] =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
   }
-  outC->_L2_then_IfBlock1.numberBalises = kcg_lit_int64(0);
+  outC->_L2_then_IfBlock1.numberBalises = kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.centerOfBalisePosition.odometerOfBaliseDetection.valid =
     kcg_true;
   outC->_L2_then_IfBlock1.centerOfBalisePosition.odometerOfBaliseDetection.timestamp =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.centerOfBalisePosition.odometerOfBaliseDetection.odo.o_nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.centerOfBalisePosition.odometerOfBaliseDetection.odo.o_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.centerOfBalisePosition.odometerOfBaliseDetection.odo.o_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.centerOfBalisePosition.odometerOfBaliseDetection.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.centerOfBalisePosition.odometerOfBaliseDetection.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.centerOfBalisePosition.odometerOfBaliseDetection.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.centerOfBalisePosition.odometerOfBaliseDetection.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.centerOfBalisePosition.odometerOfBaliseDetection.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.centerOfBalisePosition.odometerOfBaliseDetection.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L2_then_IfBlock1.centerOfBalisePosition.odometerOfBaliseDetection.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L2_then_IfBlock1.centerOfBalisePosition.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.centerOfBalisePosition.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.centerOfBalisePosition.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_IfBlock1.valid = kcg_true;
   outC->_L3_then_IfBlock1.checkResult = kcg_true;
   outC->_L3_then_IfBlock1.telegramheader.q_updown = Q_UPDOWN_Down_link_telegram;
@@ -465,22 +465,22 @@ void CheckCompleteness_init_CheckBGConsistency_Pkg(
   outC->_L3_then_IfBlock1.telegramheader.n_pig = N_PIG_I_am_the_1st;
   outC->_L3_then_IfBlock1.telegramheader.n_total = N_TOTAL_1_balise_in_the_group;
   outC->_L3_then_IfBlock1.telegramheader.m_dup = M_DUP_No_duplicates;
-  outC->_L3_then_IfBlock1.telegramheader.m_mcount = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock1.telegramheader.nid_c = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock1.telegramheader.nid_bg = kcg_lit_int64(0);
+  outC->_L3_then_IfBlock1.telegramheader.m_mcount = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock1.telegramheader.nid_c = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock1.telegramheader.nid_bg = kcg_lit_int32(0);
   outC->_L3_then_IfBlock1.telegramheader.q_link = Q_LINK_Unlinked;
   for (idx16 = 0; idx16 < 30; idx16++) {
     outC->_L3_then_IfBlock1.packets.PacketHeaders[idx16].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_then_IfBlock1.packets.PacketHeaders[idx16].q_dir = Q_DIR_Reverse;
     outC->_L3_then_IfBlock1.packets.PacketHeaders[idx16].valid = kcg_true;
     outC->_L3_then_IfBlock1.packets.PacketHeaders[idx16].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3_then_IfBlock1.packets.PacketHeaders[idx16].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx17 = 0; idx17 < 500; idx17++) {
-    outC->_L3_then_IfBlock1.packets.PacketData[idx17] = kcg_lit_int64(0);
+    outC->_L3_then_IfBlock1.packets.PacketData[idx17] = kcg_lit_int32(0);
   }
   outC->lastTelegram.valid = kcg_true;
   outC->lastTelegram.checkResult = kcg_true;
@@ -491,19 +491,19 @@ void CheckCompleteness_init_CheckBGConsistency_Pkg(
   outC->lastTelegram.telegramheader.n_pig = N_PIG_I_am_the_1st;
   outC->lastTelegram.telegramheader.n_total = N_TOTAL_1_balise_in_the_group;
   outC->lastTelegram.telegramheader.m_dup = M_DUP_No_duplicates;
-  outC->lastTelegram.telegramheader.m_mcount = kcg_lit_int64(0);
-  outC->lastTelegram.telegramheader.nid_c = kcg_lit_int64(0);
-  outC->lastTelegram.telegramheader.nid_bg = kcg_lit_int64(0);
+  outC->lastTelegram.telegramheader.m_mcount = kcg_lit_int32(0);
+  outC->lastTelegram.telegramheader.nid_c = kcg_lit_int32(0);
+  outC->lastTelegram.telegramheader.nid_bg = kcg_lit_int32(0);
   outC->lastTelegram.telegramheader.q_link = Q_LINK_Unlinked;
   for (idx18 = 0; idx18 < 30; idx18++) {
-    outC->lastTelegram.packets.PacketHeaders[idx18].nid_packet = kcg_lit_int64(0);
+    outC->lastTelegram.packets.PacketHeaders[idx18].nid_packet = kcg_lit_int32(0);
     outC->lastTelegram.packets.PacketHeaders[idx18].q_dir = Q_DIR_Reverse;
     outC->lastTelegram.packets.PacketHeaders[idx18].valid = kcg_true;
-    outC->lastTelegram.packets.PacketHeaders[idx18].startAddress = kcg_lit_int64(0);
-    outC->lastTelegram.packets.PacketHeaders[idx18].endAddress = kcg_lit_int64(0);
+    outC->lastTelegram.packets.PacketHeaders[idx18].startAddress = kcg_lit_int32(0);
+    outC->lastTelegram.packets.PacketHeaders[idx18].endAddress = kcg_lit_int32(0);
   }
   for (idx19 = 0; idx19 < 500; idx19++) {
-    outC->lastTelegram.packets.PacketData[idx19] = kcg_lit_int64(0);
+    outC->lastTelegram.packets.PacketData[idx19] = kcg_lit_int32(0);
   }
   outC->isSingleBG = kcg_true;
   outC->isComplete = kcg_true;
@@ -540,6 +540,6 @@ void CheckCompleteness_reset_CheckBGConsistency_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CheckCompleteness_CheckBGConsistency_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

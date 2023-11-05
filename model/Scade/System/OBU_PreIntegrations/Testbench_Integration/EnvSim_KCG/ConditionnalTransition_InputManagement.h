@@ -33,14 +33,14 @@ typedef struct {
   M_LEVELTR /* _L8/ */ _L8;
   NID_NTC /* _L9/ */ _L9;
   T_LevelTransition_Level_And_Mode_Types_Pkg /* _L10/ */ _L10;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L12/ */ _L12;
   T_TransitionType_Level_And_Mode_Types_Pkg /* _L13/ */ _L13;
   M_LEVEL /* _L16/ */ _L16;
   M_LEVELTR /* _L17/ */ _L17;
   M_LEVEL /* _L18/ */ _L18;
   T_LevelTansitionInfo_Level_And_Mode_Types_Pkg /* _L19/ */ _L19;
   kcg_bool /* _L20/ */ _L20;
-  kcg_int64 /* _L21/ */ _L21;
+  kcg_int32 /* _L21/ */ _L21;
 } outC_ConditionnalTransition_InputManagement;
 
 /* ===========  node initialization and cycle functions  =========== */

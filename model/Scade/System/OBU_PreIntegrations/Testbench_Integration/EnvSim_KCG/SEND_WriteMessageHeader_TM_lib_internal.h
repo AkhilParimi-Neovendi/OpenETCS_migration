@@ -16,8 +16,8 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   Metadata_T_Common_Types_Pkg /* HeadersOut/ */ HeadersOut;
-  kcg_int64 /* NewStartAddr/ */ NewStartAddr;
-  kcg_int64 /* NewEndAddr/ */ NewEndAddr;
+  kcg_int32 /* NewStartAddr/ */ NewStartAddr;
+  kcg_int32 /* NewEndAddr/ */ NewEndAddr;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -27,26 +27,26 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   Metadata_T_Common_Types_Pkg /* _L1/ */ _L1;
   kcg_bool /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   Metadata_T_Common_Types_Pkg /* _L8/ */ _L8;
   MetadataElement_T_Common_Types_Pkg /* _L9/ */ _L9;
-  kcg_int64 /* _L16/ */ _L16;
-  kcg_int64 /* _L17/ */ _L17;
-  kcg_int64 /* _L18/ */ _L18;
-  kcg_int64 /* _L22/ */ _L22;
+  kcg_int32 /* _L16/ */ _L16;
+  kcg_int32 /* _L17/ */ _L17;
+  kcg_int32 /* _L18/ */ _L18;
+  kcg_int32 /* _L22/ */ _L22;
   Metadata_T_Common_Types_Pkg /* _L23/ */ _L23;
   Metadata_T_Common_Types_Pkg /* _L24/ */ _L24;
-  kcg_int64 /* _L31/ */ _L31;
+  kcg_int32 /* _L31/ */ _L31;
   kcg_bool /* _L32/ */ _L32;
-  kcg_int64 /* _L33/ */ _L33;
-  kcg_int64 /* _L34/ */ _L34;
-  kcg_int64 /* _L35/ */ _L35;
-  kcg_int64 /* _L36/ */ _L36;
-  kcg_int64 /* _L37/ */ _L37;
+  kcg_int32 /* _L33/ */ _L33;
+  kcg_int32 /* _L34/ */ _L34;
+  kcg_int32 /* _L35/ */ _L35;
+  kcg_int32 /* _L36/ */ _L36;
+  kcg_int32 /* _L37/ */ _L37;
   MetadataElement_T_Common_Types_Pkg /* _L43/ */ _L43;
   MetadataElement_T_Common_Types_Pkg /* _L44/ */ _L44;
-  kcg_int64 /* _L7/ */ _L7;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L7/ */ _L7;
+  kcg_int32 /* _L3/ */ _L3;
 } outC_SEND_WriteMessageHeader_TM_lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */

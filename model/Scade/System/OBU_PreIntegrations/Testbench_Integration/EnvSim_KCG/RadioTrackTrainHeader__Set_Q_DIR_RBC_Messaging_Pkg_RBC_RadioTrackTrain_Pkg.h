@@ -26,7 +26,7 @@ typedef struct {
   Radio_TrackTrain_Header_T_TM /* _L1/ */ _L1;
   Q_DIR /* _L2/ */ _L2;
   Radio_TrackTrain_Header_T_TM /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L4/ */ _L4;
 } outC_RadioTrackTrainHeader__Set_Q_DIR_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

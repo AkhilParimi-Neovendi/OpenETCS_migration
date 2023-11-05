@@ -36,14 +36,14 @@ void C_int_to_DMI_Radio_Net_Data_init_DATA_Packets_DMI_to_EVC(
 
   outC->_L6 = kcg_true;
   for (idx = 0; idx < 2; idx++) {
-    outC->_L5[idx] = kcg_lit_int64(0);
+    outC->_L5[idx] = kcg_lit_int32(0);
   }
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->_L2.valid = kcg_true;
-  outC->_L2.systemTime = kcg_lit_int64(0);
+  outC->_L2.systemTime = kcg_lit_int32(0);
   outC->dmi_radio_net_data_ct.valid = kcg_true;
-  outC->dmi_radio_net_data_ct.systemTime = kcg_lit_int64(0);
+  outC->dmi_radio_net_data_ct.systemTime = kcg_lit_int32(0);
   /* _L6=(Utilities::Int_to_Bool#1)/ */
   Int_to_Bool_init_Utilities(&outC->Context_Int_to_Bool_1);
 }

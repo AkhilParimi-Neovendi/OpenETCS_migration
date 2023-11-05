@@ -26,8 +26,8 @@ typedef struct {
   CompressedPacketData_T_Common_Types_Pkg /* _L6/ */ _L6;
   CompressedPacketData_T_Common_Types_Pkg /* _L5/ */ _L5;
   CompressedPacketData_T_Common_Types_Pkg /* _L4/ */ _L4;
-  array_int64_500_500 /* _L3/ */ _L3;
-  array_int64_500_500 /* _L2/ */ _L2;
+  array_int32_500_500 /* _L3/ */ _L3;
+  array_int32_500_500 /* _L2/ */ _L2;
   CompressedPacketData_T_Common_Types_Pkg /* _L1/ */ _L1;
 } outC_Merg2PacketsListArray_CheckBGConsistency_Pkg_SubFunction_MergFunction;
 

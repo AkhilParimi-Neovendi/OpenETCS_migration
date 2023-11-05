@@ -10,12 +10,12 @@
 /* Toolbox::Functions::TRAIN_systemTimeGenerator/ */
 void TRAIN_systemTimeGenerator_Toolbox_Functions(
   /* deltaTime/ */
-  kcg_int64 deltaTime,
+  kcg_int32 deltaTime,
   outC_TRAIN_systemTimeGenerator_Toolbox_Functions *outC)
 {
   /* _L4= */
   if (outC->init) {
-    outC->_L4 = kcg_lit_int64(0);
+    outC->_L4 = kcg_lit_int32(0);
   }
   else {
     outC->_L4 = outC->_L2;
@@ -30,11 +30,11 @@ void TRAIN_systemTimeGenerator_Toolbox_Functions(
 void TRAIN_systemTimeGenerator_init_Toolbox_Functions(
   outC_TRAIN_systemTimeGenerator_Toolbox_Functions *outC)
 {
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
   outC->init = kcg_true;
-  outC->timestamp = kcg_lit_int64(0);
+  outC->timestamp = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

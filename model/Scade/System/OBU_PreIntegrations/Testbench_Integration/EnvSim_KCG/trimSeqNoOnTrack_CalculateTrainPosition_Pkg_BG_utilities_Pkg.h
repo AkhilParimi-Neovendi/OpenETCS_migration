@@ -25,8 +25,8 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   positionedBGs_T_TrainPosition_Types_Pck /* _L1/ */ _L1;
   positionedBGs_T_TrainPosition_Types_Pck /* _L3/ */ _L3;
-  kcg_int64 /* _L2/ */ _L2;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L2/ */ _L2;
+  kcg_int32 /* _L5/ */ _L5;
 } outC_trimSeqNoOnTrack_CalculateTrainPosition_Pkg_BG_utilities_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

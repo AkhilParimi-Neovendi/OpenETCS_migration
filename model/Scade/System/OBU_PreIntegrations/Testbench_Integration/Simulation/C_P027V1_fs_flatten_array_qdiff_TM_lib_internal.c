@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,33 +10,33 @@
 /* TM_lib_internal::C_P027V1_fs_flatten_array_qdiff/ */
 void C_P027V1_fs_flatten_array_qdiff_TM_lib_internal(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* Acc/ */
   P027V1_sections_array_flat_qdiff_T_TM_baseline2 *Acc,
   /* section_arrays/ */
   P027V1_OBU_sectionlist_array_qdiff_T_TM_baseline2 *section_arrays,
   outC_C_P027V1_fs_flatten_array_qdiff_TM_lib_internal *outC)
 {
-  outC->_L5 = kcg_lit_int64(2);
+  outC->_L5 = kcg_lit_int32(2);
   outC->_L3 = i;
   outC->_L154 = outC->_L3 / outC->_L5;
   outC->_L6 = outC->_L3 % outC->_L5;
   kcg_copy_P027V1_OBU_sectionlist_array_qdiff_T_TM_baseline2(
     &outC->_L2,
     section_arrays);
-  if ((kcg_lit_int64(0) <= outC->_L154) & (outC->_L154 < kcg_lit_int64(32)) &
-    ((kcg_lit_int64(0) <= outC->_L6) & (outC->_L6 < kcg_lit_int64(2)))) {
+  if ((kcg_lit_int32(0) <= outC->_L154) & (outC->_L154 < kcg_lit_int32(32)) &
+    ((kcg_lit_int32(0) <= outC->_L6) & (outC->_L6 < kcg_lit_int32(2)))) {
     outC->_L10 = outC->_L2[outC->_L154][outC->_L6];
   }
   else {
-    outC->_L10 = kcg_lit_int64(0);
+    outC->_L10 = kcg_lit_int32(0);
   }
   outC->_L8 = i;
   kcg_copy_P027V1_sections_array_flat_qdiff_T_TM_baseline2(&outC->_L1, Acc);
   kcg_copy_P027V1_sections_array_flat_qdiff_T_TM_baseline2(
     &outC->_L7,
     &outC->_L1);
-  if ((kcg_lit_int64(0) <= outC->_L8) & (outC->_L8 < kcg_lit_int64(64))) {
+  if ((kcg_lit_int32(0) <= outC->_L8) & (outC->_L8 < kcg_lit_int32(64))) {
     outC->_L7[outC->_L8] = outC->_L10;
   }
   kcg_copy_P027V1_sections_array_flat_qdiff_T_TM_baseline2(
@@ -54,25 +54,25 @@ void C_P027V1_fs_flatten_array_qdiff_init_TM_lib_internal(
   static kcg_size idx3;
   static kcg_size idx4;
 
-  outC->_L154 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L154 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 32; idx1++) {
     for (idx = 0; idx < 2; idx++) {
-      outC->_L2[idx1][idx] = kcg_lit_int64(0);
+      outC->_L2[idx1][idx] = kcg_lit_int32(0);
     }
   }
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L8 = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 64; idx2++) {
-    outC->_L7[idx2] = kcg_lit_int64(0);
+    outC->_L7[idx2] = kcg_lit_int32(0);
   }
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 64; idx3++) {
-    outC->_L1[idx3] = kcg_lit_int64(0);
+    outC->_L1[idx3] = kcg_lit_int32(0);
   }
   for (idx4 = 0; idx4 < 64; idx4++) {
-    outC->flat[idx4] = kcg_lit_int64(0);
+    outC->flat[idx4] = kcg_lit_int32(0);
   }
 }
 #endif /* KCG_USER_DEFINED_INIT */
@@ -87,6 +87,6 @@ void C_P027V1_fs_flatten_array_qdiff_reset_TM_lib_internal(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P027V1_fs_flatten_array_qdiff_TM_lib_internal.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

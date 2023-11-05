@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _RadioTrackTrainMsgQueue_RBC_Messaging_Pkg_H_
 #define _RadioTrackTrainMsgQueue_RBC_Messaging_Pkg_H_
@@ -57,9 +57,9 @@ typedef struct {
   RadioTrackTrainMessageQueue_T /* IfBlock1:else:_L5/ */ _L5_else_IfBlock1;
   RBC_Data_T_RBC_DataBus_Pkg /* IfBlock1:else:_L6/ */ _L6_else_IfBlock1;
   CompressedRadioMessage_TM /* IfBlock1:else:_L3/ */ _L3_else_IfBlock1;
-  kcg_int64 /* remainingCapacity/ */ remainingCapacity;
+  kcg_int32 /* remainingCapacity/ */ remainingCapacity;
   RBC_Data_T_RBC_DataBus_Pkg /* _L1/ */ _L1;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   RadioTrackTrainMessageQueue_T /* _L6/ */ _L6;
 } outC_RadioTrackTrainMsgQueue_RBC_Messaging_Pkg;
 
@@ -85,6 +85,6 @@ extern void RadioTrackTrainMsgQueue_init_RBC_Messaging_Pkg(
 #endif /* _RadioTrackTrainMsgQueue_RBC_Messaging_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** RadioTrackTrainMsgQueue_RBC_Messaging_Pkg.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

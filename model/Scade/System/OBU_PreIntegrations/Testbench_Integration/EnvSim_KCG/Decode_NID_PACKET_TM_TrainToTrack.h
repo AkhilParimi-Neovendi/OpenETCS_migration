@@ -21,8 +21,8 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L1/ */ _L1;
+  kcg_int32 /* _L2/ */ _L2;
   kcg_bool /* _L3/ */ _L3;
 } outC_Decode_NID_PACKET_TM_TrainToTrack;
 
@@ -30,9 +30,9 @@ typedef struct {
 /* TM_TrainToTrack::Decode_NID_PACKET/ */
 extern void Decode_NID_PACKET_TM_TrainToTrack(
   /* Meta/ */
-  kcg_int64 Meta,
+  kcg_int32 Meta,
   /* Packet_ID/ */
-  kcg_int64 Packet_ID,
+  kcg_int32 Packet_ID,
   outC_Decode_NID_PACKET_TM_TrainToTrack *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _InformationFilter_InformationFilter_Pkg_H_
 #define _InformationFilter_InformationFilter_Pkg_H_
@@ -21,16 +21,16 @@ typedef struct {
   T_Data_From_Track_MASSPGradient_Available_Level_And_Mode_Types_Pkg /* IF_toML/ */ IF_toML;
   /* -----------------------  no local probes  ----------------------- */
   /* ----------------------- local memories  ------------------------- */
-  kcg_int64 /* inSupervisingDevice/ */ mem_inSupervisingDevice;
+  kcg_int32 /* inSupervisingDevice/ */ mem_inSupervisingDevice;
   kcg_bool init;
-  struct_493015 /* @1/_L4/ */ _L4_MemoryBasic_1_struct;
+  struct_492780 /* @1/_L4/ */ _L4_MemoryBasic_1_struct;
   _138_SSM_ST_SM1 /* SM1: */ SM1_state_nxt;
   kcg_bool /* SM1: */ SM1_reset_act;
   kcg_bool /* SM1: */ SM1_reset_nxt;
   ReceivedMessage_T_Common_Types_Pkg /* bufferMsg/ */ bufferMsg;
   kcg_bool /* storeInBuffer/ */ storeInBuffer;
   kcg_bool /* bufferHasPriority/ */ bufferHasPriority;
-  kcg_int64 /* currBuffersize/ */ currBuffersize;
+  kcg_int32 /* currBuffersize/ */ currBuffersize;
   /* ---------------------  sub nodes' contexts  --------------------- */
   outC_FilterSequence_InformationFilter_Pkg /* _L95=(InformationFilter_Pkg::FilterSequence)/ */ Context_FilterSequence;
   outC_flagsForLevelChange_InformationFilter_Pkg /* _L153=(InformationFilter_Pkg::flagsForLevelChange#1)/ */ Context_flagsForLevelChange_1;
@@ -40,14 +40,14 @@ typedef struct {
   _138_SSM_ST_SM1 /* SM1: */ SM1_state_act;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  struct_493015 /* @1/Memorized/ */ Memorized_MemoryBasic_1_struct;
+  struct_492780 /* @1/Memorized/ */ Memorized_MemoryBasic_1_struct;
   kcg_bool /* @1/Write/ */ Write_MemoryBasic_1_struct;
-  struct_493015 /* @1/Init/ */ Init_MemoryBasic_1_struct;
-  struct_493015 /* @1/BM_Input/ */ BM_Input_MemoryBasic_1_struct;
-  struct_493015 /* @1/_L7/ */ _L7_MemoryBasic_1_struct;
-  struct_493015 /* @1/_L6/ */ _L6_MemoryBasic_1_struct;
+  struct_492780 /* @1/Init/ */ Init_MemoryBasic_1_struct;
+  struct_492780 /* @1/BM_Input/ */ BM_Input_MemoryBasic_1_struct;
+  struct_492780 /* @1/_L7/ */ _L7_MemoryBasic_1_struct;
+  struct_492780 /* @1/_L6/ */ _L6_MemoryBasic_1_struct;
   kcg_bool /* @1/_L5/ */ _L5_MemoryBasic_1_struct;
-  struct_493015 /* @1/_L2/ */ _L2_MemoryBasic_1_struct;
+  struct_492780 /* @1/_L2/ */ _L2_MemoryBasic_1_struct;
   kcg_bool /* SM1:State2:_L2/ */ _L2_State2_SM1;
   kcg_bool /* SM1:State3:_L1/ */ _L1_State3_SM1;
   _138_SSM_ST_SM1 /* SM1: */ SM1_state_sel;
@@ -59,7 +59,7 @@ typedef struct {
   kcg_bool /* cond4_8_5_4b/ */ cond4_8_5_4b;
   kcg_bool /* cond4_8_5_4a/ */ cond4_8_5_4a;
   T_Mode_Level_Level_And_Mode_Types_Pkg /* _L5/ */ _L5;
-  kcg_int64 /* _L18/ */ _L18;
+  kcg_int32 /* _L18/ */ _L18;
   kcg_bool /* _L32/ */ _L32;
   kcg_bool /* _L33/ */ _L33;
   ReceivedMessage_T_Common_Types_Pkg /* _L60/ */ _L60;
@@ -82,7 +82,7 @@ typedef struct {
   kcg_bool /* _L111/ */ _L111;
   kcg_bool /* _L112/ */ _L112;
   kcg_bool /* _L118/ */ _L118;
-  kcg_int64 /* _L119/ */ _L119;
+  kcg_int32 /* _L119/ */ _L119;
   kcg_bool /* _L121/ */ _L121;
   kcg_bool /* _L122/ */ _L122;
   ReceivedMessage_T_Common_Types_Pkg /* _L123/ */ _L123;
@@ -99,9 +99,9 @@ typedef struct {
   kcg_bool /* _L138/ */ _L138;
   kcg_bool /* _L140/ */ _L140;
   kcg_bool /* _L141/ */ _L141;
-  kcg_int64 /* _L144/ */ _L144;
+  kcg_int32 /* _L144/ */ _L144;
   T_Mode_Level_Level_And_Mode_Types_Pkg /* _L145/ */ _L145;
-  kcg_int64 /* _L147/ */ _L147;
+  kcg_int32 /* _L147/ */ _L147;
   kcg_bool /* _L148/ */ _L148;
   morcStatus_T_RCM_Session_Types_Pkg /* _L152/ */ _L152;
   morcStatus_T_RCM_Session_Types_Pkg /* _L132/ */ _L132;
@@ -122,7 +122,7 @@ extern void InformationFilter_InformationFilter_Pkg(
   /* inModeLevel/ */
   T_Mode_Level_Level_And_Mode_Types_Pkg *inModeLevel,
   /* inSupervisingDevice/ */
-  kcg_int64 inSupervisingDevice,
+  kcg_int32 inSupervisingDevice,
   /* inFilterEvents/ */
   filterRelatedEvents_T_Common_Types_Pkg *inFilterEvents,
   /* inActiveCab/ */
@@ -147,16 +147,16 @@ extern void InformationFilter_init_InformationFilter_Pkg(
 typedef struct {
   /* --------------------- no memorised outputs  --------------------- */
   /* ----------------------- local memories  ------------------------- */
-  kcg_int64 /* currBuffersize/ */ Context_currBuffersize;
+  kcg_int32 /* currBuffersize/ */ Context_currBuffersize;
   kcg_bool /* bufferHasPriority/ */ Context_bufferHasPriority;
   kcg_bool /* storeInBuffer/ */ Context_storeInBuffer;
   ReceivedMessage_T_Common_Types_Pkg /* bufferMsg/ */ Context_bufferMsg;
   kcg_bool /* SM1: */ Context_SM1_reset_nxt;
   kcg_bool /* SM1: */ Context_SM1_reset_act;
   _138_SSM_ST_SM1 /* SM1: */ Context_SM1_state_nxt;
-  struct_493015 /* @1/_L4/ */ Context__L4_MemoryBasic_1;
+  struct_492780 /* @1/_L4/ */ Context__L4_MemoryBasic_1;
   kcg_bool Context_init;
-  kcg_int64 /* inSupervisingDevice/ */ Context_mem_inSupervisingDevice;
+  kcg_int32 /* inSupervisingDevice/ */ Context_mem_inSupervisingDevice;
   /* -----------------------  no local probes  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
   SV_TransitionBuffer_InformationFilter_Pkg Context_TransitionBuffer_1;
@@ -178,6 +178,6 @@ extern void kcg_load_SV_InformationFilter_InformationFilter_Pkg(
 #endif /* _InformationFilter_InformationFilter_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** InformationFilter_InformationFilter_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

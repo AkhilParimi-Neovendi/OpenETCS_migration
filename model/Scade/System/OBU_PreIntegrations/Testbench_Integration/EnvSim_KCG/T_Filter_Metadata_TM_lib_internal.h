@@ -27,14 +27,14 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
-  kcg_int64 /* _L2/ */ _L2;
-  kcg_int64 /* _L6/ */ _L6;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L10/ */ _L10;
-  kcg_int64 /* _L8/ */ _L8;
-  kcg_int64 /* _L7/ */ _L7;
+  kcg_int32 /* _L1/ */ _L1;
+  kcg_int32 /* _L2/ */ _L2;
+  kcg_int32 /* _L6/ */ _L6;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L10/ */ _L10;
+  kcg_int32 /* _L8/ */ _L8;
+  kcg_int32 /* _L7/ */ _L7;
   kcg_bool /* _L11/ */ _L11;
   kcg_bool /* _L17/ */ _L17;
   kcg_bool /* _L18/ */ _L18;
@@ -47,9 +47,9 @@ typedef struct {
 /* TM_lib_internal::T_Filter_Metadata/ */
 extern void T_Filter_Metadata_TM_lib_internal(
   /* Metadata_from_track/ */
-  kcg_int64 Metadata_from_track,
+  kcg_int32 Metadata_from_track,
   /* Metadata_looked_for/ */
-  kcg_int64 Metadata_looked_for,
+  kcg_int32 Metadata_looked_for,
   /* F_version/ */
   kcg_bool F_version,
   /* F_id/ */

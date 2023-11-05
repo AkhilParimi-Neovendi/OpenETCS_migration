@@ -28,7 +28,7 @@ typedef struct {
   kcg_bool /* _L7/ */ _L7;
   Radio_TrainTrack_Header_T_TM_transitional /* _L8/ */ _L8;
   kcg_bool /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   trainProperties_T_TrainPosition_Types_Pck /* _L11/ */ _L11;
   NID_ENGINE /* _L12/ */ _L12;
   Q_EMERGENCYSTOP /* _L13/ */ _L13;

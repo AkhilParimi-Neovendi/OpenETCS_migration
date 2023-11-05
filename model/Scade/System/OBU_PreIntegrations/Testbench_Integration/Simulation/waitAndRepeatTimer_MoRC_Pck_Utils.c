@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -18,7 +18,7 @@ void waitAndRepeatTimer_MoRC_Pck_Utils(
   /* repeatInterval/ */
   time_Type_MoRC_Pck repeatInterval,
   /* maxNoOfRepetitions/ */
-  kcg_int64 maxNoOfRepetitions,
+  kcg_int32 maxNoOfRepetitions,
   outC_waitAndRepeatTimer_MoRC_Pck_Utils *outC)
 {
   outC->_L21 = re_start;
@@ -39,7 +39,7 @@ void waitAndRepeatTimer_MoRC_Pck_Utils(
   outC->_L11 = maxNoOfRepetitions;
   /* _L9= */
   if (outC->init) {
-    outC->_L9 = kcg_lit_int64(0);
+    outC->_L9 = kcg_lit_int32(0);
   }
   else {
     outC->_L9 = outC->_L22;
@@ -49,8 +49,8 @@ void waitAndRepeatTimer_MoRC_Pck_Utils(
   outC->_L28 = outC->_L14 & outC->_L27;
   outC->_L15 = outC->_L14 & outC->_L1;
   outC->_L25 = outC->_L15 | outC->_L28;
-  outC->_L23 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(1);
+  outC->_L23 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(1);
   outC->_L6 = outC->_L7 + outC->_L9;
   /* _L8= */
   if (outC->_L1) {
@@ -79,21 +79,21 @@ void waitAndRepeatTimer_init_MoRC_Pck_Utils(
   outC->_L27 = kcg_true;
   outC->_L25 = kcg_true;
   outC->_L24 = kcg_true;
-  outC->_L23 = kcg_lit_int64(0);
+  outC->_L23 = kcg_lit_int32(0);
   outC->_L21 = kcg_true;
   outC->_L15 = kcg_true;
   outC->_L14 = kcg_true;
-  outC->_L11 = kcg_lit_int64(0);
+  outC->_L11 = kcg_lit_int32(0);
   outC->_L10 = kcg_true;
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L4 = kcg_true;
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L1 = kcg_true;
-  outC->_L22 = kcg_lit_int64(0);
+  outC->_L22 = kcg_lit_int32(0);
   outC->init = kcg_true;
   outC->elapsed = kcg_true;
   outC->triggerAction = kcg_true;
@@ -138,6 +138,6 @@ void kcg_load_SV_waitAndRepeatTimer_MoRC_Pck_Utils(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** waitAndRepeatTimer_MoRC_Pck_Utils.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -44,16 +44,16 @@ void C_int_to_DMI_Driver_Reqest_init_DATA_Packets_DMI_to_EVC(
   outC->_L9 = kcg_true;
   outC->_L8 = Start_of_mission_DMI_Types_Pkg;
   outC->_L5.valid = kcg_true;
-  outC->_L5.systemTime = kcg_lit_int64(0);
+  outC->_L5.systemTime = kcg_lit_int32(0);
   outC->_L5.m_request = Start_of_mission_DMI_Types_Pkg;
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
   for (idx = 0; idx < 3; idx++) {
-    outC->_L1[idx] = kcg_lit_int64(0);
+    outC->_L1[idx] = kcg_lit_int32(0);
   }
   outC->dmi_driver_request_ct.valid = kcg_true;
-  outC->dmi_driver_request_ct.systemTime = kcg_lit_int64(0);
+  outC->dmi_driver_request_ct.systemTime = kcg_lit_int32(0);
   outC->dmi_driver_request_ct.m_request = Start_of_mission_DMI_Types_Pkg;
   /* _L8=(DATA::Variables::CAST_int_to_DMI_Request#1)/ */
   CAST_int_to_DMI_Request_init_DATA_Variables(
@@ -80,6 +80,6 @@ void C_int_to_DMI_Driver_Reqest_reset_DATA_Packets_DMI_to_EVC(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_int_to_DMI_Driver_Reqest_DATA_Packets_DMI_to_EVC.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

@@ -14,37 +14,37 @@ void CAST_NC_TRAIN_to_int_TM_conversions(
   outC_CAST_NC_TRAIN_to_int_TM_conversions *outC)
 {
   /* nc_train_int/ */
-  static kcg_int64 nc_train_int_partial;
+  static kcg_int32 nc_train_int_partial;
   /* error/ */
   static kcg_bool error_partial;
   /* nc_train_int/ */
-  static kcg_int64 _1_nc_train_int_partial;
+  static kcg_int32 _1_nc_train_int_partial;
   /* error/ */
   static kcg_bool _2_error_partial;
   /* nc_train_int/ */
-  static kcg_int64 _3_nc_train_int_partial;
+  static kcg_int32 _3_nc_train_int_partial;
   /* error/ */
   static kcg_bool _4_error_partial;
   /* nc_train_int/ */
-  static kcg_int64 _5_nc_train_int_partial;
+  static kcg_int32 _5_nc_train_int_partial;
   /* error/ */
   static kcg_bool _6_error_partial;
   /* error/ */
   static kcg_bool _7_error_partial;
   /* nc_train_int/ */
-  static kcg_int64 _8_nc_train_int_partial;
+  static kcg_int32 _8_nc_train_int_partial;
   /* error/ */
   static kcg_bool _9_error_partial;
   /* nc_train_int/ */
-  static kcg_int64 _10_nc_train_int_partial;
+  static kcg_int32 _10_nc_train_int_partial;
   /* error/ */
   static kcg_bool _11_error_partial;
   /* nc_train_int/ */
-  static kcg_int64 _12_nc_train_int_partial;
+  static kcg_int32 _12_nc_train_int_partial;
   /* error/ */
   static kcg_bool _13_error_partial;
   /* nc_train_int/ */
-  static kcg_int64 _14_nc_train_int_partial;
+  static kcg_int32 _14_nc_train_int_partial;
   static kcg_bool noname;
 
   outC->_L4 = nc_train;
@@ -150,19 +150,19 @@ void CAST_NC_TRAIN_to_int_init_TM_conversions(
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
   outC->IfBlock1_clock = kcg_true;
   outC->_L5_then_else_IfBlock1 = kcg_true;
-  outC->_L3_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L3_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_IfBlock1 = kcg_true;
   outC->_L4_then_else_else_else_IfBlock1 = kcg_true;
-  outC->_L2_then_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L1_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L2_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_else_IfBlock1 = kcg_true;
-  outC->_L2_then_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L4_then_else_else_IfBlock1 = kcg_true;
   outC->else_clock_IfBlock1 = kcg_true;
-  outC->_L4_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L4_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L5_then_IfBlock1 = kcg_true;
-  outC->nc_train_int = kcg_lit_int64(0);
+  outC->nc_train_int = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

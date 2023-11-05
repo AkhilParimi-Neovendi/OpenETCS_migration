@@ -12,7 +12,7 @@ void addNewSection_SDM_GradientAcceleration_Pkg(
   /* newGradientSection/ */
   Gradient_real_t_SDM_GradientAcceleration_types newGradientSection,
   /* index/ */
-  kcg_int64 index,
+  kcg_int32 index,
   /* Accu/ */
   ACC_SDM_GradientAcceleration_Pkg *Accu,
   outC_addNewSection_SDM_GradientAcceleration_Pkg *outC)
@@ -32,7 +32,7 @@ void addNewSection_SDM_GradientAcceleration_Pkg(
   kcg_copy_GradientProfile_real_compensated_t_SDM_GradientAcceleration_types(
     &outC->_L4,
     &outC->_L5);
-  if ((kcg_lit_int64(0) <= outC->_L1) & (outC->_L1 < kcg_lit_int64(100))) {
+  if ((kcg_lit_int32(0) <= outC->_L1) & (outC->_L1 < kcg_lit_int32(100))) {
     kcg_copy_Gradient_section_real_t_SDM_GradientAcceleration_types(
       &outC->_L4[outC->_L1],
       &outC->_L6);
@@ -52,44 +52,44 @@ void addNewSection_init_SDM_GradientAcceleration_Pkg(
   static kcg_size idx3;
   static kcg_size idx4;
 
-  outC->_L9.frontPos = kcg_lit_float64(0.0);
-  outC->_L9.frontIndex = kcg_lit_int64(0);
-  outC->_L9.rearPos = kcg_lit_float64(0.0);
-  outC->_L9.rearIndex = kcg_lit_int64(0);
+  outC->_L9.frontPos = kcg_lit_float32(0.0);
+  outC->_L9.frontIndex = kcg_lit_int32(0);
+  outC->_L9.rearPos = kcg_lit_float32(0.0);
+  outC->_L9.rearIndex = kcg_lit_int32(0);
   for (idx = 0; idx < 100; idx++) {
-    outC->_L9.compensatedGradientProfile[idx].location = kcg_lit_float64(0.0);
-    outC->_L9.compensatedGradientProfile[idx].gradient = kcg_lit_float64(0.0);
+    outC->_L9.compensatedGradientProfile[idx].location = kcg_lit_float32(0.0);
+    outC->_L9.compensatedGradientProfile[idx].gradient = kcg_lit_float32(0.0);
     outC->_L9.compensatedGradientProfile[idx].valid = kcg_true;
   }
-  outC->_L8 = kcg_lit_float64(0.0);
+  outC->_L8 = kcg_lit_float32(0.0);
   outC->_L7 = kcg_true;
-  outC->_L6.location = kcg_lit_float64(0.0);
-  outC->_L6.gradient = kcg_lit_float64(0.0);
+  outC->_L6.location = kcg_lit_float32(0.0);
+  outC->_L6.gradient = kcg_lit_float32(0.0);
   outC->_L6.valid = kcg_true;
   for (idx1 = 0; idx1 < 100; idx1++) {
-    outC->_L5[idx1].location = kcg_lit_float64(0.0);
-    outC->_L5[idx1].gradient = kcg_lit_float64(0.0);
+    outC->_L5[idx1].location = kcg_lit_float32(0.0);
+    outC->_L5[idx1].gradient = kcg_lit_float32(0.0);
     outC->_L5[idx1].valid = kcg_true;
   }
   for (idx2 = 0; idx2 < 100; idx2++) {
-    outC->_L4[idx2].location = kcg_lit_float64(0.0);
-    outC->_L4[idx2].gradient = kcg_lit_float64(0.0);
+    outC->_L4[idx2].location = kcg_lit_float32(0.0);
+    outC->_L4[idx2].gradient = kcg_lit_float32(0.0);
     outC->_L4[idx2].valid = kcg_true;
   }
-  outC->_L1 = kcg_lit_int64(0);
-  outC->_L2.frontPos = kcg_lit_float64(0.0);
-  outC->_L2.frontIndex = kcg_lit_int64(0);
-  outC->_L2.rearPos = kcg_lit_float64(0.0);
-  outC->_L2.rearIndex = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->_L2.frontPos = kcg_lit_float32(0.0);
+  outC->_L2.frontIndex = kcg_lit_int32(0);
+  outC->_L2.rearPos = kcg_lit_float32(0.0);
+  outC->_L2.rearIndex = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 100; idx3++) {
-    outC->_L2.compensatedGradientProfile[idx3].location = kcg_lit_float64(0.0);
-    outC->_L2.compensatedGradientProfile[idx3].gradient = kcg_lit_float64(0.0);
+    outC->_L2.compensatedGradientProfile[idx3].location = kcg_lit_float32(0.0);
+    outC->_L2.compensatedGradientProfile[idx3].gradient = kcg_lit_float32(0.0);
     outC->_L2.compensatedGradientProfile[idx3].valid = kcg_true;
   }
-  outC->_L3 = kcg_lit_float64(0.0);
+  outC->_L3 = kcg_lit_float32(0.0);
   for (idx4 = 0; idx4 < 100; idx4++) {
-    outC->modifiedProfile[idx4].location = kcg_lit_float64(0.0);
-    outC->modifiedProfile[idx4].gradient = kcg_lit_float64(0.0);
+    outC->modifiedProfile[idx4].location = kcg_lit_float32(0.0);
+    outC->modifiedProfile[idx4].gradient = kcg_lit_float32(0.0);
     outC->modifiedProfile[idx4].valid = kcg_true;
   }
 }

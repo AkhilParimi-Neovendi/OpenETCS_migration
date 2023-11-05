@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _TargetSelector_TargetLimits_Pkg_H_
 #define _TargetSelector_TargetLimits_Pkg_H_
@@ -61,17 +61,17 @@ typedef struct {
   kcg_bool /* GuiCurveEn/ */ GuiCurveEn;
   ParabolaCurve_T_CalcBrakingCurves_types /* CurveSBD/ */ CurveSBD;
   _106_array /* _L42/ */ _L42;
-  _29_array /* _L40/ */ _L40;
+  _27_array /* _L40/ */ _L40;
   kcg_bool /* _L36/ */ _L36;
   _105_array /* _L33/ */ _L33;
-  kcg_int64 /* _L28/ */ _L28;
+  kcg_int32 /* _L28/ */ _L28;
   TargetIteratorAkku_TargetLimits_Pkg /* _L29/ */ _L29;
   kcg_bool /* _L59/ */ _L59;
   TargetIteratorAkku_TargetLimits_Pkg /* _L60/ */ _L60;
-  kcg_int64 /* _L55/ */ _L55;
+  kcg_int32 /* _L55/ */ _L55;
   L_internal_real_Type_SDM_Types_Pkg /* _L69/ */ _L69;
   L_internal_real_Type_SDM_Types_Pkg /* _L65/ */ _L65;
-  kcg_int64 /* _L80/ */ _L80;
+  kcg_int32 /* _L80/ */ _L80;
   kcg_bool /* _L110/ */ _L110;
   ParabolaCurve_T_CalcBrakingCurves_types /* _L109/ */ _L109;
   ParabolaCurve_T_CalcBrakingCurves_types /* _L108/ */ _L108;
@@ -116,8 +116,8 @@ typedef struct {
   t_Brake_t_SDMModelPkg /* _L209/ */ _L209;
   T_trac_t_TargetLimits_Pkg /* _L238/ */ _L238;
   bec_t_TargetLimits_Pkg /* _L243/ */ _L243;
-  kcg_int64 /* _L242/ */ _L242;
-  kcg_float64 /* _L241/ */ _L241;
+  kcg_int32 /* _L242/ */ _L242;
+  kcg_float32 /* _L241/ */ _L241;
   TargetType_T_TargetManagement_types /* _L240/ */ _L240;
   TargetIteratorAkku_TargetLimits_Pkg /* _L239/ */ _L239;
   L_internal_real_Type_SDM_Types_Pkg /* _L246/ */ _L246;
@@ -131,12 +131,12 @@ typedef struct {
   kcg_bool /* _L253/ */ _L253;
   ParabolaCurve_list_MRSP_T_CalcBrakingCurves_types /* _L255/ */ _L255;
   array_bool_110 /* _L256/ */ _L256;
-  kcg_int64 /* _L257/ */ _L257;
+  kcg_int32 /* _L257/ */ _L257;
   kcg_bool /* _L264/ */ _L264;
   V_internal_real_Type_SDM_Types_Pkg /* _L265/ */ _L265;
   kcg_bool /* _L261/ */ _L261;
   kcg_bool /* _L262/ */ _L262;
-  kcg_float64 /* _L263/ */ _L263;
+  kcg_float32 /* _L263/ */ _L263;
   T_internal_real_Type_SDM_Types_Pkg /* _L259/ */ _L259;
   ParabolaCurve_T_CalcBrakingCurves_types /* _L266/ */ _L266;
   ParabolaCurve_T_CalcBrakingCurves_types /* _L267/ */ _L267;
@@ -156,7 +156,7 @@ typedef struct {
   TargetType_T_TargetManagement_types /* _L279/ */ _L279;
   Target_real_T_TargetManagement_types /* _L282/ */ _L282;
   Target_real_T_TargetManagement_types /* _L283/ */ _L283;
-  array_float64_110 /* _L286/ */ _L286;
+  array_float32_110 /* _L286/ */ _L286;
   Target_T_TargetManagement_types /* _L287/ */ _L287;
   V_internal_real_Type_SDM_Types_Pkg /* _L293/ */ _L293;
   L_internal_real_Type_SDM_Types_Pkg /* _L292/ */ _L292;
@@ -204,6 +204,6 @@ extern void TargetSelector_init_TargetLimits_Pkg(
 #endif /* _TargetSelector_TargetLimits_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** TargetSelector_TargetLimits_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

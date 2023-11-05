@@ -32,13 +32,13 @@ typedef struct {
   kcg_bool /* IfBlock1: */ IfBlock1_clock;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* IfBlock1:then:_L8/ */ _L8_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L8/ */ _L8_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L5/ */ _L5_then_IfBlock1;
   CompressedPackets_T_Common_Types_Pkg /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
   M_TrackTrain_Radio_T_TM_radio_messages /* IfBlock1:then:_L3/ */ _L3_then_IfBlock1;
   M_TrackTrain_Radio_T_TM_radio_messages /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
   CompressedPackets_T_Common_Types_Pkg /* IfBlock1:then:_L2/ */ _L2_then_IfBlock1;
-  kcg_int64 /* IfBlock1:else:_L6/ */ _L6_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:_L6/ */ _L6_else_IfBlock1;
   CompressedPackets_T_Common_Types_Pkg /* IfBlock1:else:_L4/ */ _L4_else_IfBlock1;
   M_TrackTrain_Radio_T_TM_radio_messages /* IfBlock1:else:_L5/ */ _L5_else_IfBlock1;
   kcg_bool /* IfBlock1:else:_L3/ */ _L3_else_IfBlock1;
@@ -57,7 +57,7 @@ typedef struct {
 /* US_Integration_November::Amsterdam_Utrecht_RBC_Integration/ */
 extern void Amsterdam_Utrecht_RBC_Integration_US_Integration_November(
   /* Trigger_in/ */
-  kcg_int64 Trigger_in,
+  kcg_int32 Trigger_in,
   /* SelectTrack/ */
   TrackType_US_Integration_November SelectTrack,
   outC_Amsterdam_Utrecht_RBC_Integration_US_Integration_November *outC);

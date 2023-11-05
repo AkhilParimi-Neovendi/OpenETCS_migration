@@ -16,9 +16,9 @@ void CAST_V_MAXTRAIN_to_int_TM_conversions(
   static kcg_bool noname;
   static kcg_bool _1_noname;
 
-  outC->_L16 = kcg_lit_int64(120);
-  outC->_L15 = kcg_lit_int64(0);
-  outC->_L12 = kcg_lit_int64(5);
+  outC->_L16 = kcg_lit_int32(120);
+  outC->_L15 = kcg_lit_int32(0);
+  outC->_L12 = kcg_lit_int32(5);
   outC->_L1 = v_maxtrain;
   outC->_L11 = outC->_L1 / outC->_L12;
   outC->_L13 = outC->_L11 < outC->_L15;
@@ -34,12 +34,12 @@ void CAST_V_MAXTRAIN_to_int_init_TM_conversions(
 {
   outC->_L13 = kcg_true;
   outC->_L14 = kcg_true;
-  outC->_L15 = kcg_lit_int64(0);
-  outC->_L16 = kcg_lit_int64(0);
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->v_maxtrain_int = kcg_lit_int64(0);
+  outC->_L15 = kcg_lit_int32(0);
+  outC->_L16 = kcg_lit_int32(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->v_maxtrain_int = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

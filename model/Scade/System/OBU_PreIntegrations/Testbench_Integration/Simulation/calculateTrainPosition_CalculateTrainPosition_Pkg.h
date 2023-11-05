@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _calculateTrainPosition_CalculateTrainPosition_Pkg_H_
 #define _calculateTrainPosition_CalculateTrainPosition_Pkg_H_
@@ -95,7 +95,7 @@ typedef struct {
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L329/ */ _L329;
   trainPositionInfo_T_TrainPosition_Types_Pck /* _L327/ */ _L327;
   kcg_bool /* _L322/ */ _L322;
-  kcg_int64 /* _L323/ */ _L323;
+  kcg_int32 /* _L323/ */ _L323;
   positionedBG_T_TrainPosition_Types_Pck /* _L324/ */ _L324;
   kcg_bool /* _L321/ */ _L321;
   passedBG_T_BG_Types_Pkg /* _L331/ */ _L331;
@@ -173,6 +173,6 @@ extern void kcg_load_SV_calculateTrainPosition_CalculateTrainPosition_Pkg(
 #endif /* _calculateTrainPosition_CalculateTrainPosition_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** calculateTrainPosition_CalculateTrainPosition_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

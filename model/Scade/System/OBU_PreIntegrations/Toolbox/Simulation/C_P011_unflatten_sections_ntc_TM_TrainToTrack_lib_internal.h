@@ -24,7 +24,7 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   P011_ntc_list_array_T_TM_TrainToTrack /* _L1/ */ _L1;
-  array_int64_5 /* _L9/ */ _L9;
+  array_int32_5 /* _L9/ */ _L9;
 } outC_C_P011_unflatten_sections_ntc_TM_TrainToTrack_lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */

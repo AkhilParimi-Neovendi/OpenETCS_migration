@@ -8,14 +8,14 @@
 /* context */
 
 extern kcg_bool _ctx_GUI_reset_buffer;
-extern kcg_float64 _ctx_GUI_targetSpeed_buffer;
-extern kcg_float64 _ctx_GUI_traction_buffer;
-extern kcg_float64 _ctx_GUI_brake_buffer;
-extern kcg_float64 _ctx_GUI_initialPosition_buffer;
-extern kcg_float64 _ctx_GUI_initialVelocity_buffer;
-extern kcg_int64 _ctx_GUI_mode_buffer;
-extern kcg_int64 _ctx_GUI_level_buffer;
-extern kcg_int64 _ctx_GUI_mobileHWStatus_buffer;
+extern kcg_float32 _ctx_GUI_targetSpeed_buffer;
+extern kcg_float32 _ctx_GUI_traction_buffer;
+extern kcg_float32 _ctx_GUI_brake_buffer;
+extern kcg_float32 _ctx_GUI_initialPosition_buffer;
+extern kcg_float32 _ctx_GUI_initialVelocity_buffer;
+extern kcg_int32 _ctx_GUI_mode_buffer;
+extern kcg_int32 _ctx_GUI_level_buffer;
+extern kcg_int32 _ctx_GUI_mobileHWStatus_buffer;
 extern kcg_bool _ctx_GUI_openDesk_buffer;
 extern kcg_bool _ctx_DMI_MousePressed_buffer;
 extern kcg_bool _ctx_DMI_startRequest_buffer;

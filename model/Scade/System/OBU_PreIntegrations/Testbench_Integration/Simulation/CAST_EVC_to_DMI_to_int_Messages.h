@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _CAST_EVC_to_DMI_to_int_Messages_H_
 #define _CAST_EVC_to_DMI_to_int_Messages_H_
@@ -89,9 +89,9 @@ typedef struct {
   DMI_Adhesion_Factor_Data_int_array_T_DATA /* _L49/ */ _L49;
   DMI_Icons_int_array_T_DATA /* _L50/ */ _L50;
   DMI_Driver_Identifier_int_array_T_DATA /* _L51/ */ _L51;
-  kcg_int64 /* _L53/ */ _L53;
-  kcg_int64 /* _L54/ */ _L54;
-  kcg_int64 /* _L55/ */ _L55;
+  kcg_int32 /* _L53/ */ _L53;
+  kcg_int32 /* _L54/ */ _L54;
+  kcg_int32 /* _L55/ */ _L55;
 } outC_CAST_EVC_to_DMI_to_int_Messages;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -116,6 +116,6 @@ extern void CAST_EVC_to_DMI_to_int_init_Messages(
 #endif /* _CAST_EVC_to_DMI_to_int_Messages_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_EVC_to_DMI_to_int_Messages.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

@@ -17,7 +17,7 @@ void Write_int_to_DMI_Icon_Ack_DATA_Packets_DMI_to_EVC(
 
   kcg_copy_DMI_Icon_Ack_int_array_T_DATA(&outC->_L12, dmi_icon_ack_int);
   outC->_L17 = outC->_L12[0];
-  outC->_L18 = kcg_lit_int64(1);
+  outC->_L18 = kcg_lit_int32(1);
   outC->_L16 = outC->_L18 == outC->_L17;
   outC->every = outC->_L16;
   if (outC->every) {
@@ -51,21 +51,21 @@ void Write_int_to_DMI_Icon_Ack_init_DATA_Packets_DMI_to_EVC(
   static kcg_size idx;
 
   outC->_L19.valid = kcg_true;
-  outC->_L19.systemTime = kcg_lit_int64(0);
-  outC->_L19.DMI_nid_icon_identifier = kcg_lit_int64(0);
+  outC->_L19.systemTime = kcg_lit_int32(0);
+  outC->_L19.DMI_nid_icon_identifier = kcg_lit_int32(0);
   outC->_L16 = kcg_true;
-  outC->_L17 = kcg_lit_int64(0);
-  outC->_L18 = kcg_lit_int64(0);
+  outC->_L17 = kcg_lit_int32(0);
+  outC->_L18 = kcg_lit_int32(0);
   outC->_L14.valid = kcg_true;
-  outC->_L14.systemTime = kcg_lit_int64(0);
-  outC->_L14.DMI_nid_icon_identifier = kcg_lit_int64(0);
+  outC->_L14.systemTime = kcg_lit_int32(0);
+  outC->_L14.DMI_nid_icon_identifier = kcg_lit_int32(0);
   for (idx = 0; idx < 3; idx++) {
-    outC->_L12[idx] = kcg_lit_int64(0);
+    outC->_L12[idx] = kcg_lit_int32(0);
   }
   outC->every = kcg_true;
   outC->dmi_icon_ack_ct.valid = kcg_true;
-  outC->dmi_icon_ack_ct.systemTime = kcg_lit_int64(0);
-  outC->dmi_icon_ack_ct.DMI_nid_icon_identifier = kcg_lit_int64(0);
+  outC->dmi_icon_ack_ct.systemTime = kcg_lit_int32(0);
+  outC->dmi_icon_ack_ct.DMI_nid_icon_identifier = kcg_lit_int32(0);
   /* _L14=(DATA::Packets::DMI_to_EVC::C_int_to_DMI_Icon_Ack#1)/ */
   C_int_to_DMI_Icon_Ack_init_DATA_Packets_DMI_to_EVC(
     &outC->Context_C_int_to_DMI_Icon_Ack_1);

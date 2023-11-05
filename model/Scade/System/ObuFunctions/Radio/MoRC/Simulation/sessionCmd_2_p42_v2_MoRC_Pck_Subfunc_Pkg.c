@@ -98,7 +98,7 @@ void sessionCmd_2_p42_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L22.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L22.nid_c = kcg_lit_int32(0);
   outC->_L22.nid_RBC = kcg_lit_int32(0);
-  outC->_L22.nid_radio = kcg_lit_int64(0);
+  outC->_L22.nid_radio = kcg_lit_int32(0);
   outC->_L22.q_sleepsession = Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L22.origin.valid = kcg_true;
   outC->_L22.origin.nid_c = kcg_lit_int32(0);
@@ -110,7 +110,7 @@ void sessionCmd_2_p42_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L5 = Q_RBC_Terminate_communication_session;
   outC->_L6 = kcg_lit_int32(0);
   outC->_L7 = kcg_lit_int32(0);
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L8 = kcg_lit_int32(0);
   outC->_L9.valid = kcg_true;
   outC->_L9.nid_c = kcg_lit_int32(0);
   outC->_L9.rbc_id = kcg_lit_int32(0);
@@ -127,7 +127,7 @@ void sessionCmd_2_p42_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L11.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L11.nid_c = kcg_lit_int32(0);
   outC->_L11.nid_RBC = kcg_lit_int32(0);
-  outC->_L11.nid_radio = kcg_lit_int64(0);
+  outC->_L11.nid_radio = kcg_lit_int32(0);
   outC->_L11.q_sleepsession = Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L11.origin.valid = kcg_true;
   outC->_L11.origin.nid_c = kcg_lit_int32(0);
@@ -139,7 +139,7 @@ void sessionCmd_2_p42_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L1.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L1.nid_c = kcg_lit_int32(0);
   outC->_L1.nid_rbc = kcg_lit_int32(0);
-  outC->_L1.nid_radio = kcg_lit_int64(0);
+  outC->_L1.nid_radio = kcg_lit_int32(0);
   outC->_L1.origin.valid = kcg_true;
   outC->_L1.origin.nid_c = kcg_lit_int32(0);
   outC->_L1.origin.rbc_id = kcg_lit_int32(0);
@@ -156,7 +156,7 @@ void sessionCmd_2_p42_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L1.p42.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L1.p42.nid_c = kcg_lit_int32(0);
   outC->_L1.p42.nid_RBC = kcg_lit_int32(0);
-  outC->_L1.p42.nid_radio = kcg_lit_int64(0);
+  outC->_L1.p42.nid_radio = kcg_lit_int32(0);
   outC->_L1.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L1.p42.origin.valid = kcg_true;
@@ -169,7 +169,7 @@ void sessionCmd_2_p42_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->p42_SessionManagement.q_rbc = Q_RBC_Terminate_communication_session;
   outC->p42_SessionManagement.nid_c = kcg_lit_int32(0);
   outC->p42_SessionManagement.nid_RBC = kcg_lit_int32(0);
-  outC->p42_SessionManagement.nid_radio = kcg_lit_int64(0);
+  outC->p42_SessionManagement.nid_radio = kcg_lit_int32(0);
   outC->p42_SessionManagement.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->p42_SessionManagement.origin.valid = kcg_true;

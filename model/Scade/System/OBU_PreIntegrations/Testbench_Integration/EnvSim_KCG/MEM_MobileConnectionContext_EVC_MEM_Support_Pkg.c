@@ -12,14 +12,14 @@ void MEM_MobileConnectionContext_EVC_MEM_Support_Pkg(
   /* MobileFromAPI/ */
   mobileHWStatus_Type_MoRC_Pck *MobileFromAPI,
   /* mobileDeviceNo/ */
-  kcg_int64 mobileDeviceNo,
+  kcg_int32 mobileDeviceNo,
   /* Radio_ID/ */
   NID_RADIO Radio_ID,
   /* inRadioHole/ */
   kcg_bool inRadioHole,
   outC_MEM_MobileConnectionContext_EVC_MEM_Support_Pkg *outC)
 {
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L3 = mobileDeviceNo;
   outC->_L4 = outC->_L3 >= outC->_L5;
   kcg_copy_mobileHWStatus_Type_MoRC_Pck(&outC->_L1, MobileFromAPI);
@@ -59,46 +59,46 @@ void MEM_MobileConnectionContext_init_EVC_MEM_Support_Pkg(
   outC_MEM_MobileConnectionContext_EVC_MEM_Support_Pkg *outC)
 {
   outC->_L31.valid = kcg_true;
-  outC->_L31.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L31.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L31.status = mcs_disconnected_RCM_Types_Pkg;
-  outC->_L31.nid_radio = kcg_lit_int64(0);
+  outC->_L31.nid_radio = kcg_lit_int32(0);
   outC->_L31.settingUpConnectionHasFailed = kcg_true;
   outC->_L31.connectionLost = kcg_true;
   outC->_L31.isInRadioHole = kcg_true;
-  outC->_L30 = kcg_lit_int64(0);
+  outC->_L30 = kcg_lit_int32(0);
   outC->_L28 = kcg_true;
   outC->_L27 = kcg_true;
   outC->_L26 = kcg_true;
   outC->_L25 = mhwc_notRegistered_MoRC_Pck;
   outC->_L24 = mcs_disconnected_RCM_Types_Pkg;
   outC->_L21.valid = kcg_true;
-  outC->_L21.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L21.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L21.status = mcs_disconnected_RCM_Types_Pkg;
-  outC->_L21.nid_radio = kcg_lit_int64(0);
+  outC->_L21.nid_radio = kcg_lit_int32(0);
   outC->_L21.settingUpConnectionHasFailed = kcg_true;
   outC->_L21.connectionLost = kcg_true;
   outC->_L21.isInRadioHole = kcg_true;
   outC->_L13 = kcg_true;
   outC->_L12 = kcg_true;
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L4 = kcg_true;
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L1.valid = kcg_true;
   outC->_L1.connectionStatus = mhwc_notRegistered_MoRC_Pck;
   outC->_L1.settingUpConnectionHasFailed = kcg_true;
   outC->_L1.connectionLost = kcg_true;
   outC->ConnectionContext.valid = kcg_true;
-  outC->ConnectionContext.mobileDeviceNo = kcg_lit_int64(0);
+  outC->ConnectionContext.mobileDeviceNo = kcg_lit_int32(0);
   outC->ConnectionContext.status = mcs_disconnected_RCM_Types_Pkg;
-  outC->ConnectionContext.nid_radio = kcg_lit_int64(0);
+  outC->ConnectionContext.nid_radio = kcg_lit_int32(0);
   outC->ConnectionContext.settingUpConnectionHasFailed = kcg_true;
   outC->ConnectionContext.connectionLost = kcg_true;
   outC->ConnectionContext.isInRadioHole = kcg_true;
   outC->MobileConnectionContext.valid = kcg_true;
-  outC->MobileConnectionContext.mobileDeviceNo = kcg_lit_int64(0);
+  outC->MobileConnectionContext.mobileDeviceNo = kcg_lit_int32(0);
   outC->MobileConnectionContext.status = mcs_disconnected_RCM_Types_Pkg;
-  outC->MobileConnectionContext.nid_radio = kcg_lit_int64(0);
+  outC->MobileConnectionContext.nid_radio = kcg_lit_int32(0);
   outC->MobileConnectionContext.settingUpConnectionHasFailed = kcg_true;
   outC->MobileConnectionContext.connectionLost = kcg_true;
   outC->MobileConnectionContext.isInRadioHole = kcg_true;

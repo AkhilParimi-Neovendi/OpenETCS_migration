@@ -16,11 +16,11 @@ void FindIndexOfMetaData_CheckBGConsistency_Pkg_SubFunction_MergFunction(
   outC_FindIndexOfMetaData_CheckBGConsistency_Pkg_SubFunction_MergFunction *outC)
 {
   static Q_DIR noname;
-  static kcg_int64 _1_noname;
+  static kcg_int32 _1_noname;
   static NID_PACKET _2_noname;
   static NID_PACKET _3_noname;
   static Q_DIR _4_noname;
-  static kcg_int64 _5_noname;
+  static kcg_int32 _5_noname;
 
   kcg_copy_MetadataElement_T_Common_Types_Pkg(&outC->_L18, acc);
   kcg_copy_MetadataElement_T_Common_Types_Pkg(&outC->_L1, acc);
@@ -69,53 +69,53 @@ void FindIndexOfMetaData_CheckBGConsistency_Pkg_SubFunction_MergFunction(
 void FindIndexOfMetaData_init_CheckBGConsistency_Pkg_SubFunction_MergFunction(
   outC_FindIndexOfMetaData_CheckBGConsistency_Pkg_SubFunction_MergFunction *outC)
 {
-  outC->_L18.nid_packet = kcg_lit_int64(0);
+  outC->_L18.nid_packet = kcg_lit_int32(0);
   outC->_L18.q_dir = Q_DIR_Reverse;
   outC->_L18.valid = kcg_true;
-  outC->_L18.startAddress = kcg_lit_int64(0);
-  outC->_L18.endAddress = kcg_lit_int64(0);
-  outC->_L17.nid_packet = kcg_lit_int64(0);
+  outC->_L18.startAddress = kcg_lit_int32(0);
+  outC->_L18.endAddress = kcg_lit_int32(0);
+  outC->_L17.nid_packet = kcg_lit_int32(0);
   outC->_L17.q_dir = Q_DIR_Reverse;
   outC->_L17.valid = kcg_true;
-  outC->_L17.startAddress = kcg_lit_int64(0);
-  outC->_L17.endAddress = kcg_lit_int64(0);
-  outC->_L16.nid_packet = kcg_lit_int64(0);
+  outC->_L17.startAddress = kcg_lit_int32(0);
+  outC->_L17.endAddress = kcg_lit_int32(0);
+  outC->_L16.nid_packet = kcg_lit_int32(0);
   outC->_L16.q_dir = Q_DIR_Reverse;
   outC->_L16.valid = kcg_true;
-  outC->_L16.startAddress = kcg_lit_int64(0);
-  outC->_L16.endAddress = kcg_lit_int64(0);
+  outC->_L16.startAddress = kcg_lit_int32(0);
+  outC->_L16.endAddress = kcg_lit_int32(0);
   outC->_L15 = kcg_true;
-  outC->_L14.nid_packet = kcg_lit_int64(0);
+  outC->_L14.nid_packet = kcg_lit_int32(0);
   outC->_L14.q_dir = Q_DIR_Reverse;
   outC->_L14.valid = kcg_true;
-  outC->_L14.startAddress = kcg_lit_int64(0);
-  outC->_L14.endAddress = kcg_lit_int64(0);
+  outC->_L14.startAddress = kcg_lit_int32(0);
+  outC->_L14.endAddress = kcg_lit_int32(0);
   outC->_L13 = kcg_true;
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
   outC->_L10 = kcg_true;
   outC->_L9 = Q_DIR_Reverse;
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L7.nid_packet = kcg_lit_int64(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L7.nid_packet = kcg_lit_int32(0);
   outC->_L7.q_dir = Q_DIR_Reverse;
   outC->_L7.valid = kcg_true;
-  outC->_L7.startAddress = kcg_lit_int64(0);
-  outC->_L7.endAddress = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L7.startAddress = kcg_lit_int32(0);
+  outC->_L7.endAddress = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L4 = kcg_true;
   outC->_L5 = Q_DIR_Reverse;
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L1.nid_packet = kcg_lit_int64(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L1.nid_packet = kcg_lit_int32(0);
   outC->_L1.q_dir = Q_DIR_Reverse;
   outC->_L1.valid = kcg_true;
-  outC->_L1.startAddress = kcg_lit_int64(0);
-  outC->_L1.endAddress = kcg_lit_int64(0);
-  outC->metadata.nid_packet = kcg_lit_int64(0);
+  outC->_L1.startAddress = kcg_lit_int32(0);
+  outC->_L1.endAddress = kcg_lit_int32(0);
+  outC->metadata.nid_packet = kcg_lit_int32(0);
   outC->metadata.q_dir = Q_DIR_Reverse;
   outC->metadata.valid = kcg_true;
-  outC->metadata.startAddress = kcg_lit_int64(0);
-  outC->metadata.endAddress = kcg_lit_int64(0);
+  outC->metadata.startAddress = kcg_lit_int32(0);
+  outC->metadata.endAddress = kcg_lit_int32(0);
   outC->go_on = kcg_true;
 }
 #endif /* KCG_USER_DEFINED_INIT */

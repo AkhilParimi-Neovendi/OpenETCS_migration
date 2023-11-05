@@ -58,16 +58,16 @@ typedef struct {
   M_MODE /* _L3/ */ _L3;
   M_LEVEL /* _L2/ */ _L2;
   Position_Report_based_on_two_balise_groups_TrainToTrack /* _L20/ */ _L20;
-  kcg_int64 /* _L22/ */ _L22;
-  kcg_int64 /* _L23/ */ _L23;
-  kcg_int64 /* _L25/ */ _L25;
-  kcg_int64 /* _L28/ */ _L28;
-  kcg_int64 /* _L29/ */ _L29;
-  kcg_int64 /* _L31/ */ _L31;
+  kcg_int32 /* _L22/ */ _L22;
+  kcg_int32 /* _L23/ */ _L23;
+  kcg_int32 /* _L25/ */ _L25;
+  kcg_int32 /* _L28/ */ _L28;
+  kcg_int32 /* _L29/ */ _L29;
+  kcg_int32 /* _L31/ */ _L31;
   NID_NTC /* _L33/ */ _L33;
-  kcg_int64 /* _L34/ */ _L34;
-  kcg_int64 /* _L35/ */ _L35;
-  kcg_int64 /* _L36/ */ _L36;
+  kcg_int32 /* _L34/ */ _L34;
+  kcg_int32 /* _L35/ */ _L35;
+  kcg_int32 /* _L36/ */ _L36;
   PT1_PositionReport_2BG_T_Packet_TrainTypes_Pkg /* _L38/ */ _L38;
 } outC_ConvertP001_RBC_Model_Pkg_TrainTrackMsgConversion;
 

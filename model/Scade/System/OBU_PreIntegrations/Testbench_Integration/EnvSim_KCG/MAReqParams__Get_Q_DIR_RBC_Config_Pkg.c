@@ -24,9 +24,9 @@ void MAReqParams__Get_Q_DIR_init_RBC_Config_Pkg(
 {
   outC->_L2 = Q_DIR_Reverse;
   outC->_L1.q_dir = Q_DIR_Reverse;
-  outC->_L1.t_mar = kcg_lit_int64(0);
-  outC->_L1.t_timeoutrqst = kcg_lit_int64(0);
-  outC->_L1.t_cycrqst = kcg_lit_int64(0);
+  outC->_L1.t_mar = kcg_lit_int32(0);
+  outC->_L1.t_timeoutrqst = kcg_lit_int32(0);
+  outC->_L1.t_cycrqst = kcg_lit_int32(0);
   outC->out_Q_DIR = Q_DIR_Reverse;
 }
 #endif /* KCG_USER_DEFINED_INIT */

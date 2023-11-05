@@ -30,7 +30,7 @@ typedef struct {
   NID_MESSAGE /* _L3/ */ _L3;
   kcg_bool /* _L4/ */ _L4;
   kcg_bool /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L6/ */ _L6;
   kcg_bool /* _L7/ */ _L7;
   kcg_bool /* _L8/ */ _L8;
 } outC_RadioTrackTrainMessage__IsValid_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg;

@@ -62,39 +62,39 @@ void deleteLeadingUndefinedElements_init_CalcBrakingCurves_Pkg_internalOperators
     outC->_L24[idx] = kcg_true;
   }
   for (idx1 = 0; idx1 < 114; idx1++) {
-    outC->_L23.distances[idx1] = kcg_lit_float64(0.0);
+    outC->_L23.distances[idx1] = kcg_lit_float32(0.0);
   }
   for (idx2 = 0; idx2 < 114; idx2++) {
-    outC->_L23.speeds[idx2] = kcg_lit_float64(0.0);
+    outC->_L23.speeds[idx2] = kcg_lit_float32(0.0);
   }
   for (idx3 = 0; idx3 < 114; idx3++) {
-    outC->_L23.accelerations[idx3] = kcg_lit_float64(0.0);
+    outC->_L23.accelerations[idx3] = kcg_lit_float32(0.0);
   }
   for (idx4 = 0; idx4 < 114; idx4++) {
     outC->_L23.valid[idx4] = kcg_true;
   }
   outC->_L21 = kcg_true;
   for (idx5 = 0; idx5 < 114; idx5++) {
-    outC->_L2.distances[idx5] = kcg_lit_float64(0.0);
+    outC->_L2.distances[idx5] = kcg_lit_float32(0.0);
   }
   for (idx6 = 0; idx6 < 114; idx6++) {
-    outC->_L2.speeds[idx6] = kcg_lit_float64(0.0);
+    outC->_L2.speeds[idx6] = kcg_lit_float32(0.0);
   }
   for (idx7 = 0; idx7 < 114; idx7++) {
-    outC->_L2.accelerations[idx7] = kcg_lit_float64(0.0);
+    outC->_L2.accelerations[idx7] = kcg_lit_float32(0.0);
   }
   for (idx8 = 0; idx8 < 114; idx8++) {
     outC->_L2.valid[idx8] = kcg_true;
   }
   outC->every = kcg_true;
   for (idx9 = 0; idx9 < 114; idx9++) {
-    outC->newCurve.distances[idx9] = kcg_lit_float64(0.0);
+    outC->newCurve.distances[idx9] = kcg_lit_float32(0.0);
   }
   for (idx10 = 0; idx10 < 114; idx10++) {
-    outC->newCurve.speeds[idx10] = kcg_lit_float64(0.0);
+    outC->newCurve.speeds[idx10] = kcg_lit_float32(0.0);
   }
   for (idx11 = 0; idx11 < 114; idx11++) {
-    outC->newCurve.accelerations[idx11] = kcg_lit_float64(0.0);
+    outC->newCurve.accelerations[idx11] = kcg_lit_float32(0.0);
   }
   for (idx12 = 0; idx12 < 114; idx12++) {
     outC->newCurve.valid[idx12] = kcg_true;

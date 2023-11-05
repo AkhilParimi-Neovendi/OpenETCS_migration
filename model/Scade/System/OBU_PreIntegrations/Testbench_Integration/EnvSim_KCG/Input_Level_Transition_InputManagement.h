@@ -27,8 +27,8 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   T_LevelTransition_PriorityTable_Level_And_Mode_Types_Pkg /* _L124/ */ _L124;
-  array_int64_7 /* _L126/ */ _L126;
-  array_int64_7 /* _L127/ */ _L127;
+  array_int32_7 /* _L126/ */ _L126;
+  array_int32_7 /* _L127/ */ _L127;
   T_LevelTransition_PriorityTable_Level_And_Mode_Types_Pkg /* _L129/ */ _L129;
   NID_LRBG /* _L130/ */ _L130;
   Location_T_Obu_BasicTypes_Pkg /* _L131/ */ _L131;

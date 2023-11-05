@@ -10,12 +10,12 @@
 /* manage_DMI_Output_Pkg::copySpeedProfileElement/ */
 void copySpeedProfileElement_manage_DMI_Output_Pkg(
   /* index/ */
-  kcg_int64 index,
+  kcg_int32 index,
   /* fromTrackAtlas/ */
   MRSP_section_t_TrackAtlasTypes *fromTrackAtlas,
   outC_copySpeedProfileElement_manage_DMI_Output_Pkg *outC)
 {
-  static kcg_int64 noname;
+  static kcg_int32 noname;
 
   outC->_L7 = index;
   noname = outC->_L7;
@@ -36,23 +36,23 @@ void copySpeedProfileElement_manage_DMI_Output_Pkg(
 void copySpeedProfileElement_init_manage_DMI_Output_Pkg(
   outC_copySpeedProfileElement_manage_DMI_Output_Pkg *outC)
 {
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L6 = kcg_true;
   outC->_L2.valid = kcg_true;
-  outC->_L2.Loc_Abs = kcg_lit_int64(0);
-  outC->_L2.Loc_LRBG = kcg_lit_int64(0);
-  outC->_L2.MRS = kcg_lit_int64(0);
+  outC->_L2.Loc_Abs = kcg_lit_int32(0);
+  outC->_L2.Loc_LRBG = kcg_lit_int32(0);
+  outC->_L2.MRS = kcg_lit_int32(0);
   outC->_L1.valid = kcg_true;
-  outC->_L1.Loc_Abs = kcg_lit_int64(0);
-  outC->_L1.Loc_LRBG = kcg_lit_int64(0);
-  outC->_L1.MRS = kcg_lit_int64(0);
+  outC->_L1.Loc_Abs = kcg_lit_int32(0);
+  outC->_L1.Loc_LRBG = kcg_lit_int32(0);
+  outC->_L1.MRS = kcg_lit_int32(0);
   outC->toDMI.valid = kcg_true;
-  outC->toDMI.Loc_Abs = kcg_lit_int64(0);
-  outC->toDMI.Loc_LRBG = kcg_lit_int64(0);
-  outC->toDMI.MRS = kcg_lit_int64(0);
+  outC->toDMI.Loc_Abs = kcg_lit_int32(0);
+  outC->toDMI.Loc_LRBG = kcg_lit_int32(0);
+  outC->toDMI.MRS = kcg_lit_int32(0);
   outC->_1_continue = kcg_true;
 }
 #endif /* KCG_USER_DEFINED_INIT */

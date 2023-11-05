@@ -10,11 +10,11 @@
 /* Utilities::Int_Check/ */
 void Int_Check_Utilities(
   /* int_in/ */
-  kcg_int64 int_in,
+  kcg_int32 int_in,
   /* max_value/ */
-  kcg_int64 max_value,
+  kcg_int32 max_value,
   /* min_value/ */
-  kcg_int64 min_value,
+  kcg_int32 min_value,
   outC_Int_Check_Utilities *outC)
 {
   outC->_L9 = kcg_false;
@@ -44,9 +44,9 @@ void Int_Check_init_Utilities(outC_Int_Check_Utilities *outC)
   outC->_L6 = kcg_true;
   outC->_L5 = kcg_true;
   outC->_L4 = kcg_true;
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
   outC->error = kcg_true;
 }
 #endif /* KCG_USER_DEFINED_INIT */

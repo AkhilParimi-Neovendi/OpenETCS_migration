@@ -720,7 +720,7 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
   Ctxt_MoRC_Main_v2_MoRC_Pck._L132.phase = sp_terminated_RCM_Session_Types_Pkg;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L132.nid_c = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L132.nid_rbc = kcg_lit_int32(0);
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L132.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L132.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L131.valid = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L131.mobileDeviceNo = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L131.healthStatus = mhs_nok_RCM_Types_Pkg;
@@ -730,7 +730,7 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
   Ctxt_MoRC_Main_v2_MoRC_Pck._L130.phase = sp_terminated_RCM_Session_Types_Pkg;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L130.nid_c = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L130.nid_rbc = kcg_lit_int32(0);
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L130.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L130.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L129.valid = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L129.mobileDeviceNo = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L129.healthStatus = mhs_nok_RCM_Types_Pkg;
@@ -739,14 +739,14 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
   Ctxt_MoRC_Main_v2_MoRC_Pck._L128.valid = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L128.mobileDeviceNo = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L128.status = mcs_disconnected_RCM_Types_Pkg;
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L128.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L128.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L128.settingUpConnectionHasFailed = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L128.connectionLost = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L128.isInRadioHole = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L127.valid = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L127.mobileDeviceNo = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L127.status = mcs_disconnected_RCM_Types_Pkg;
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L127.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L127.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L127.settingUpConnectionHasFailed = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L127.connectionLost = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L127.isInRadioHole = kcg_true;
@@ -761,11 +761,11 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
   Ctxt_MoRC_Main_v2_MoRC_Pck._L123.phase = sp_terminated_RCM_Session_Types_Pkg;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L123.nid_c = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L123.nid_rbc = kcg_lit_int32(0);
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L123.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L123.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L122.valid = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L122.mobileDeviceNo = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L122.status = mcs_disconnected_RCM_Types_Pkg;
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L122.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L122.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L122.settingUpConnectionHasFailed = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L122.connectionLost = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L122.isInRadioHole = kcg_true;
@@ -780,7 +780,7 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
   Ctxt_MoRC_Main_v2_MoRC_Pck._L121.connection.mobileDeviceNo = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L121.connection.status =
     mcs_disconnected_RCM_Types_Pkg;
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L121.connection.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L121.connection.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L121.connection.settingUpConnectionHasFailed =
     kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L121.connection.connectionLost = kcg_true;
@@ -790,14 +790,14 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
     sp_terminated_RCM_Session_Types_Pkg;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L121.session.nid_c = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L121.session.nid_rbc = kcg_lit_int32(0);
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L121.session.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L121.session.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L119 = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L120.radioNetworkID_Default.valid = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L120.radioNetworkID_Default.q_dir = Q_DIR_Reverse;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L120.radioNetworkID_Default.nid_mn =
     kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L120.nid_radio_shortNumberStoredOnboard =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L120.noOfRetriesOfSendingTerminationMessage =
     kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L120.maxWaitingTimeForAckMessageReceived =
@@ -831,7 +831,7 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
   Ctxt_MoRC_Main_v2_MoRC_Pck._L118.radioNetworkID_Default.nid_mn =
     kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L118.nid_radio_shortNumberStoredOnboard =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L118.noOfRetriesOfSendingTerminationMessage =
     kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L118.maxWaitingTimeForAckMessageReceived =
@@ -863,7 +863,7 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
   Ctxt_MoRC_Main_v2_MoRC_Pck._L115.radioNetworkID_Default.nid_mn =
     kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L115.nid_radio_shortNumberStoredOnboard =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L115.noOfRetriesOfSendingTerminationMessage =
     kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L115.maxWaitingTimeForAckMessageReceived =
@@ -897,7 +897,7 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
   Ctxt_MoRC_Main_v2_MoRC_Pck._L113.radioNetworkID_Default.nid_mn =
     kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L113.nid_radio_shortNumberStoredOnboard =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L113.noOfRetriesOfSendingTerminationMessage =
     kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L113.maxWaitingTimeForAckMessageReceived =
@@ -930,7 +930,7 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
   Ctxt_MoRC_Main_v2_MoRC_Pck._L107.radioNetworkID_Default.nid_mn =
     kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L107.nid_radio_shortNumberStoredOnboard =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L107.noOfRetriesOfSendingTerminationMessage =
     kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L107.maxWaitingTimeForAckMessageReceived =
@@ -956,13 +956,13 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
       0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L107.noOfTriesToEstablishASafeRadioConnection =
     kcg_lit_int32(0);
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L106 = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L106 = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L105.radioNetworkID_Default.valid = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L105.radioNetworkID_Default.q_dir = Q_DIR_Reverse;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L105.radioNetworkID_Default.nid_mn =
     kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L105.nid_radio_shortNumberStoredOnboard =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L105.noOfRetriesOfSendingTerminationMessage =
     kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L105.maxWaitingTimeForAckMessageReceived =
@@ -1119,7 +1119,7 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
   Ctxt_MoRC_Main_v2_MoRC_Pck._L99.q_rbc = Q_RBC_Terminate_communication_session;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L99.nid_c = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L99.nid_RBC = kcg_lit_int32(0);
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L99.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L99.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L99.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L99.origin.valid = kcg_true;
@@ -1154,7 +1154,7 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
   Ctxt_MoRC_Main_v2_MoRC_Pck._L93.q_rbc = Q_RBC_Terminate_communication_session;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L93.nid_c = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L93.nid_RBC = kcg_lit_int32(0);
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L93.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L93.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L93.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L93.origin.valid = kcg_true;
@@ -1167,7 +1167,7 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
   Ctxt_MoRC_Main_v2_MoRC_Pck._L92.q_rbc = Q_RBC_Terminate_communication_session;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L92.nid_c = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L92.nid_RBC = kcg_lit_int32(0);
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L92.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L92.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L92.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L92.origin.valid = kcg_true;
@@ -1180,7 +1180,7 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
   Ctxt_MoRC_Main_v2_MoRC_Pck._L91.q_rbc = Q_RBC_Terminate_communication_session;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L91.nid_c = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L91.nid_RBC = kcg_lit_int32(0);
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L91.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L91.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L91.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L91.origin.valid = kcg_true;
@@ -1329,7 +1329,7 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
   Ctxt_MoRC_Main_v2_MoRC_Pck._L83.phase = sp_terminated_RCM_Session_Types_Pkg;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L83.nid_c = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L83.nid_rbc = kcg_lit_int32(0);
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L83.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L83.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L82 = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L79 = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L78 = kcg_lit_int32(0);
@@ -1337,7 +1337,7 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
   Ctxt_MoRC_Main_v2_MoRC_Pck._L77.phase = sp_terminated_RCM_Session_Types_Pkg;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L77.nid_c = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L77.nid_rbc = kcg_lit_int32(0);
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L77.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L77.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L76 = M_MODE_Full_Supervision;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L75.atPowerUp = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L75.atPowerDown = kcg_true;
@@ -1378,7 +1378,7 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
   Ctxt_MoRC_Main_v2_MoRC_Pck._L65.valid = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L65.mobileDeviceNo = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L65.status = mcs_disconnected_RCM_Types_Pkg;
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L65.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L65.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L65.settingUpConnectionHasFailed = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L65.connectionLost = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L65.isInRadioHole = kcg_true;
@@ -1388,7 +1388,7 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
   Ctxt_MoRC_Main_v2_MoRC_Pck._L56.q_rbc = Q_RBC_Terminate_communication_session;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L56.nid_c = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L56.nid_RBC = kcg_lit_int32(0);
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L56.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L56.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L56.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L56.origin.valid = kcg_true;
@@ -1406,12 +1406,12 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
   Ctxt_MoRC_Main_v2_MoRC_Pck._L64.phase = sp_terminated_RCM_Session_Types_Pkg;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L64.nid_c = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L64.nid_rbc = kcg_lit_int32(0);
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L64.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L64.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L55 = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L51.valid = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L51.mobileDeviceNo = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L51.status = mcs_disconnected_RCM_Types_Pkg;
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L51.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L51.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L51.settingUpConnectionHasFailed = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L51.connectionLost = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L51.isInRadioHole = kcg_true;
@@ -1462,7 +1462,7 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
   Ctxt_MoRC_Main_v2_MoRC_Pck._L43.valid = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L43.mobileDeviceNo = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L43.status = mcs_disconnected_RCM_Types_Pkg;
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L43.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L43.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L43.settingUpConnectionHasFailed = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L43.connectionLost = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L43.isInRadioHole = kcg_true;
@@ -1549,17 +1549,17 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
   Ctxt_MoRC_Main_v2_MoRC_Pck._L30.phase = sp_terminated_RCM_Session_Types_Pkg;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L30.nid_c = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L30.nid_rbc = kcg_lit_int32(0);
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L30.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L30.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L28.valid = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L28.phase = sp_terminated_RCM_Session_Types_Pkg;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L28.nid_c = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L28.nid_rbc = kcg_lit_int32(0);
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L28.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L28.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L27.valid = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L27.phase = sp_terminated_RCM_Session_Types_Pkg;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L27.nid_c = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L27.nid_rbc = kcg_lit_int32(0);
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L27.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L27.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L26.valid = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L26.mobileDeviceNo = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L26.healthStatus = mhs_nok_RCM_Types_Pkg;
@@ -1582,18 +1582,18 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
   Ctxt_MoRC_Main_v2_MoRC_Pck._L14.valid = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L14.mobileDeviceNo = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L14.status = mcs_disconnected_RCM_Types_Pkg;
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L14.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L14.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L14.settingUpConnectionHasFailed = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L14.connectionLost = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L14.isInRadioHole = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L8.valid = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L8.mobileDeviceNo = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L8.action = mca_nop_RCM_Types_Pkg;
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L8.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L8.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L9.valid = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L9.mobileDeviceNo = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L9.status = mcs_disconnected_RCM_Types_Pkg;
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L9.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L9.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L9.settingUpConnectionHasFailed = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L9.connectionLost = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L9.isInRadioHole = kcg_true;
@@ -1601,14 +1601,14 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
   Ctxt_MoRC_Main_v2_MoRC_Pck._L2.valid = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L2.mobileDeviceNo = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L2.action = mca_nop_RCM_Types_Pkg;
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L2.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L2.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L1.valid = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L1.initiatedByOBU = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L1.initiatedByRBC = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L1.q_rbc = Q_RBC_Terminate_communication_session;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L1.nid_c = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L1.nid_rbc = kcg_lit_int32(0);
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L1.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L1.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L1.origin.valid = kcg_true;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L1.origin.nid_c = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L1.origin.rbc_id = kcg_lit_int32(0);
@@ -1626,7 +1626,7 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
     Q_RBC_Terminate_communication_session;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L1.p42.nid_c = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L1.p42.nid_RBC = kcg_lit_int32(0);
-  Ctxt_MoRC_Main_v2_MoRC_Pck._L1.p42.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck._L1.p42.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L1.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   Ctxt_MoRC_Main_v2_MoRC_Pck._L1.p42.origin.valid = kcg_true;
@@ -1688,7 +1688,7 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
     Q_RBC_Terminate_communication_session;
   Ctxt_MoRC_Main_v2_MoRC_Pck.p42_sessionManagement.nid_c = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck.p42_sessionManagement.nid_RBC = kcg_lit_int32(0);
-  Ctxt_MoRC_Main_v2_MoRC_Pck.p42_sessionManagement.nid_radio = kcg_lit_int64(0);
+  Ctxt_MoRC_Main_v2_MoRC_Pck.p42_sessionManagement.nid_radio = kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck.p42_sessionManagement.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   Ctxt_MoRC_Main_v2_MoRC_Pck.p42_sessionManagement.origin.valid = kcg_true;
@@ -1708,7 +1708,7 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
   Ctxt_MoRC_Main_v2_MoRC_Pck._L8_then_else_ifMessageToRBC.radioNetworkID_Default.nid_mn =
     kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L8_then_else_ifMessageToRBC.nid_radio_shortNumberStoredOnboard =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L8_then_else_ifMessageToRBC.noOfRetriesOfSendingTerminationMessage =
     kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L8_then_else_ifMessageToRBC.maxWaitingTimeForAckMessageReceived =
@@ -1896,7 +1896,7 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
   Ctxt_MoRC_Main_v2_MoRC_Pck._L9_then_else_else_else_ifMessageToRBC.radioNetworkID_Default.nid_mn =
     kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L9_then_else_else_else_ifMessageToRBC.nid_radio_shortNumberStoredOnboard =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L9_then_else_else_else_ifMessageToRBC.noOfRetriesOfSendingTerminationMessage =
     kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L9_then_else_else_else_ifMessageToRBC.maxWaitingTimeForAckMessageReceived =
@@ -2532,7 +2532,7 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
   Ctxt_MoRC_Main_v2_MoRC_Pck._L17_then_else_else_ifMessageToRBC.radioNetworkID_Default.nid_mn =
     kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L17_then_else_else_ifMessageToRBC.nid_radio_shortNumberStoredOnboard =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L17_then_else_else_ifMessageToRBC.noOfRetriesOfSendingTerminationMessage =
     kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L17_then_else_else_ifMessageToRBC.maxWaitingTimeForAckMessageReceived =
@@ -2721,7 +2721,7 @@ void MoRC_Main_v2_init_MoRC_Pck(void)
   Ctxt_MoRC_Main_v2_MoRC_Pck._L12_then_ifMessageToRBC.radioNetworkID_Default.nid_mn =
     kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L12_then_ifMessageToRBC.nid_radio_shortNumberStoredOnboard =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L12_then_ifMessageToRBC.noOfRetriesOfSendingTerminationMessage =
     kcg_lit_int32(0);
   Ctxt_MoRC_Main_v2_MoRC_Pck._L12_then_ifMessageToRBC.maxWaitingTimeForAckMessageReceived =

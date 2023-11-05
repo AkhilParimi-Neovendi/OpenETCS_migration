@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -57,98 +57,98 @@ void Read_P015_Legacy_init_TM_specific(outC_Read_P015_Legacy_TM_specific *outC)
     outC->_L4[idx].valid = kcg_true;
     outC->_L4[idx].q_dir = Q_DIR_Reverse;
     outC->_L4[idx].q_scale = Q_SCALE_10_cm_scale;
-    outC->_L4[idx].v_loa = kcg_lit_int64(0);
-    outC->_L4[idx].t_loa = kcg_lit_int64(0);
-    outC->_L4[idx].l_section = kcg_lit_int64(0);
+    outC->_L4[idx].v_loa = kcg_lit_int32(0);
+    outC->_L4[idx].t_loa = kcg_lit_int32(0);
+    outC->_L4[idx].l_section = kcg_lit_int32(0);
     outC->_L4[idx].q_sectiontimer_k = Q_SECTIONTIMER_No_Section_Timer_information;
-    outC->_L4[idx].t_sectiontimer_k = kcg_lit_int64(0);
-    outC->_L4[idx].d_sectiontimerstoploc_k = kcg_lit_int64(0);
-    outC->_L4[idx].l_endsection = kcg_lit_int64(0);
+    outC->_L4[idx].t_sectiontimer_k = kcg_lit_int32(0);
+    outC->_L4[idx].d_sectiontimerstoploc_k = kcg_lit_int32(0);
+    outC->_L4[idx].l_endsection = kcg_lit_int32(0);
     outC->_L4[idx].q_sectiontimer = Q_SECTIONTIMER_No_Section_Timer_information;
-    outC->_L4[idx].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L4[idx].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L4[idx].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L4[idx].d_sectiontimerstoploc = kcg_lit_int32(0);
     outC->_L4[idx].q_endtimer = Q_ENDTIMER_No_End_section_timer_information;
-    outC->_L4[idx].t_endtimer = kcg_lit_int64(0);
-    outC->_L4[idx].d_endtimerstartloc = kcg_lit_int64(0);
+    outC->_L4[idx].t_endtimer = kcg_lit_int32(0);
+    outC->_L4[idx].d_endtimerstartloc = kcg_lit_int32(0);
     outC->_L4[idx].q_dangerpoint = Q_DANGERPOINT_No_danger_point_information;
-    outC->_L4[idx].d_dp = kcg_lit_int64(0);
-    outC->_L4[idx].v_releasedp = kcg_lit_int64(0);
+    outC->_L4[idx].d_dp = kcg_lit_int32(0);
+    outC->_L4[idx].v_releasedp = kcg_lit_int32(0);
     outC->_L4[idx].q_overlap = Q_OVERLAP_No_overlap_information;
-    outC->_L4[idx].d_startol = kcg_lit_int64(0);
-    outC->_L4[idx].t_ol = kcg_lit_int64(0);
-    outC->_L4[idx].d_ol = kcg_lit_int64(0);
-    outC->_L4[idx].v_releaseol = kcg_lit_int64(0);
+    outC->_L4[idx].d_startol = kcg_lit_int32(0);
+    outC->_L4[idx].t_ol = kcg_lit_int32(0);
+    outC->_L4[idx].d_ol = kcg_lit_int32(0);
+    outC->_L4[idx].v_releaseol = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 30; idx1++) {
-    outC->_L3.PacketHeaders[idx1].nid_packet = kcg_lit_int64(0);
+    outC->_L3.PacketHeaders[idx1].nid_packet = kcg_lit_int32(0);
     outC->_L3.PacketHeaders[idx1].q_dir = Q_DIR_Reverse;
     outC->_L3.PacketHeaders[idx1].valid = kcg_true;
-    outC->_L3.PacketHeaders[idx1].startAddress = kcg_lit_int64(0);
-    outC->_L3.PacketHeaders[idx1].endAddress = kcg_lit_int64(0);
+    outC->_L3.PacketHeaders[idx1].startAddress = kcg_lit_int32(0);
+    outC->_L3.PacketHeaders[idx1].endAddress = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 500; idx2++) {
-    outC->_L3.PacketData[idx2] = kcg_lit_int64(0);
+    outC->_L3.PacketData[idx2] = kcg_lit_int32(0);
   }
   outC->_L1 = kcg_true;
   outC->_L2.valid = kcg_true;
   outC->_L2.q_dir = Q_DIR_Reverse;
   outC->_L2.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L2.v_loa = kcg_lit_int64(0);
-  outC->_L2.t_loa = kcg_lit_int64(0);
-  outC->_L2.n_iter = kcg_lit_int64(0);
+  outC->_L2.v_loa = kcg_lit_int32(0);
+  outC->_L2.t_loa = kcg_lit_int32(0);
+  outC->_L2.n_iter = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 32; idx3++) {
     outC->_L2.sections[idx3].valid = kcg_true;
-    outC->_L2.sections[idx3].l_section = kcg_lit_int64(0);
+    outC->_L2.sections[idx3].l_section = kcg_lit_int32(0);
     outC->_L2.sections[idx3].q_sectiontimer =
       Q_SECTIONTIMER_No_Section_Timer_information;
-    outC->_L2.sections[idx3].t_sectiontimer = kcg_lit_int64(0);
-    outC->_L2.sections[idx3].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->_L2.sections[idx3].t_sectiontimer = kcg_lit_int32(0);
+    outC->_L2.sections[idx3].d_sectiontimerstoploc = kcg_lit_int32(0);
   }
-  outC->_L2.l_endsection = kcg_lit_int64(0);
+  outC->_L2.l_endsection = kcg_lit_int32(0);
   outC->_L2.q_sectiontimer = Q_SECTIONTIMER_No_Section_Timer_information;
-  outC->_L2.t_sectiontimer = kcg_lit_int64(0);
-  outC->_L2.d_sectiontimerstoploc = kcg_lit_int64(0);
+  outC->_L2.t_sectiontimer = kcg_lit_int32(0);
+  outC->_L2.d_sectiontimerstoploc = kcg_lit_int32(0);
   outC->_L2.q_endtimer = Q_ENDTIMER_No_End_section_timer_information;
-  outC->_L2.t_endtimer = kcg_lit_int64(0);
-  outC->_L2.d_endtimerstartloc = kcg_lit_int64(0);
+  outC->_L2.t_endtimer = kcg_lit_int32(0);
+  outC->_L2.d_endtimerstartloc = kcg_lit_int32(0);
   outC->_L2.q_dangerpoint = Q_DANGERPOINT_No_danger_point_information;
-  outC->_L2.d_dp = kcg_lit_int64(0);
-  outC->_L2.v_releasedp = kcg_lit_int64(0);
+  outC->_L2.d_dp = kcg_lit_int32(0);
+  outC->_L2.v_releasedp = kcg_lit_int32(0);
   outC->_L2.q_overlap = Q_OVERLAP_No_overlap_information;
-  outC->_L2.d_startol = kcg_lit_int64(0);
-  outC->_L2.t_ol = kcg_lit_int64(0);
-  outC->_L2.d_ol = kcg_lit_int64(0);
-  outC->_L2.v_releaseol = kcg_lit_int64(0);
+  outC->_L2.d_startol = kcg_lit_int32(0);
+  outC->_L2.t_ol = kcg_lit_int32(0);
+  outC->_L2.d_ol = kcg_lit_int32(0);
+  outC->_L2.v_releaseol = kcg_lit_int32(0);
   outC->every = kcg_true;
   for (idx4 = 0; idx4 < 5; idx4++) {
     outC->P015_legacy_out[idx4].valid = kcg_true;
     outC->P015_legacy_out[idx4].q_dir = Q_DIR_Reverse;
     outC->P015_legacy_out[idx4].q_scale = Q_SCALE_10_cm_scale;
-    outC->P015_legacy_out[idx4].v_loa = kcg_lit_int64(0);
-    outC->P015_legacy_out[idx4].t_loa = kcg_lit_int64(0);
-    outC->P015_legacy_out[idx4].l_section = kcg_lit_int64(0);
+    outC->P015_legacy_out[idx4].v_loa = kcg_lit_int32(0);
+    outC->P015_legacy_out[idx4].t_loa = kcg_lit_int32(0);
+    outC->P015_legacy_out[idx4].l_section = kcg_lit_int32(0);
     outC->P015_legacy_out[idx4].q_sectiontimer_k =
       Q_SECTIONTIMER_No_Section_Timer_information;
-    outC->P015_legacy_out[idx4].t_sectiontimer_k = kcg_lit_int64(0);
-    outC->P015_legacy_out[idx4].d_sectiontimerstoploc_k = kcg_lit_int64(0);
-    outC->P015_legacy_out[idx4].l_endsection = kcg_lit_int64(0);
+    outC->P015_legacy_out[idx4].t_sectiontimer_k = kcg_lit_int32(0);
+    outC->P015_legacy_out[idx4].d_sectiontimerstoploc_k = kcg_lit_int32(0);
+    outC->P015_legacy_out[idx4].l_endsection = kcg_lit_int32(0);
     outC->P015_legacy_out[idx4].q_sectiontimer =
       Q_SECTIONTIMER_No_Section_Timer_information;
-    outC->P015_legacy_out[idx4].t_sectiontimer = kcg_lit_int64(0);
-    outC->P015_legacy_out[idx4].d_sectiontimerstoploc = kcg_lit_int64(0);
+    outC->P015_legacy_out[idx4].t_sectiontimer = kcg_lit_int32(0);
+    outC->P015_legacy_out[idx4].d_sectiontimerstoploc = kcg_lit_int32(0);
     outC->P015_legacy_out[idx4].q_endtimer =
       Q_ENDTIMER_No_End_section_timer_information;
-    outC->P015_legacy_out[idx4].t_endtimer = kcg_lit_int64(0);
-    outC->P015_legacy_out[idx4].d_endtimerstartloc = kcg_lit_int64(0);
+    outC->P015_legacy_out[idx4].t_endtimer = kcg_lit_int32(0);
+    outC->P015_legacy_out[idx4].d_endtimerstartloc = kcg_lit_int32(0);
     outC->P015_legacy_out[idx4].q_dangerpoint =
       Q_DANGERPOINT_No_danger_point_information;
-    outC->P015_legacy_out[idx4].d_dp = kcg_lit_int64(0);
-    outC->P015_legacy_out[idx4].v_releasedp = kcg_lit_int64(0);
+    outC->P015_legacy_out[idx4].d_dp = kcg_lit_int32(0);
+    outC->P015_legacy_out[idx4].v_releasedp = kcg_lit_int32(0);
     outC->P015_legacy_out[idx4].q_overlap = Q_OVERLAP_No_overlap_information;
-    outC->P015_legacy_out[idx4].d_startol = kcg_lit_int64(0);
-    outC->P015_legacy_out[idx4].t_ol = kcg_lit_int64(0);
-    outC->P015_legacy_out[idx4].d_ol = kcg_lit_int64(0);
-    outC->P015_legacy_out[idx4].v_releaseol = kcg_lit_int64(0);
+    outC->P015_legacy_out[idx4].d_startol = kcg_lit_int32(0);
+    outC->P015_legacy_out[idx4].t_ol = kcg_lit_int32(0);
+    outC->P015_legacy_out[idx4].d_ol = kcg_lit_int32(0);
+    outC->P015_legacy_out[idx4].v_releaseol = kcg_lit_int32(0);
   }
   /* _L4=(TM_conversions::C_P015_to_legacy_t#1)/ */
   C_P015_to_legacy_t_init_TM_conversions(&outC->Context_C_P015_to_legacy_t_1);
@@ -170,6 +170,6 @@ void Read_P015_Legacy_reset_TM_specific(outC_Read_P015_Legacy_TM_specific *outC)
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Read_P015_Legacy_TM_specific.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

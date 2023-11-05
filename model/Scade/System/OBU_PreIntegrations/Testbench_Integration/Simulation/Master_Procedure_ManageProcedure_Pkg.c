@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -2605,18 +2605,18 @@ void Master_Procedure_init_ManageProcedure_Pkg(
   outC->_L306 = sp_terminated_RCM_Session_Types_Pkg;
   outC->_L305.valid = kcg_true;
   outC->_L305.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L305.nid_c = kcg_lit_int64(0);
-  outC->_L305.nid_rbc = kcg_lit_int64(0);
+  outC->_L305.nid_c = kcg_lit_int32(0);
+  outC->_L305.nid_rbc = kcg_lit_int32(0);
   outC->_L305.nid_radio = kcg_lit_int64(0);
   outC->_L304 = mrs_unregistered_RCM_Types_Pkg;
   outC->_L303.valid = kcg_true;
-  outC->_L303.nid_c = kcg_lit_int64(0);
-  outC->_L303.rbc_id = kcg_lit_int64(0);
-  outC->_L303.device_id = kcg_lit_int64(0);
+  outC->_L303.nid_c = kcg_lit_int32(0);
+  outC->_L303.rbc_id = kcg_lit_int32(0);
+  outC->_L303.device_id = kcg_lit_int32(0);
   outC->_L290.valid = kcg_true;
-  outC->_L290.nid_c = kcg_lit_int64(0);
-  outC->_L290.rbc_id = kcg_lit_int64(0);
-  outC->_L290.device_id = kcg_lit_int64(0);
+  outC->_L290.nid_c = kcg_lit_int32(0);
+  outC->_L290.rbc_id = kcg_lit_int32(0);
+  outC->_L290.device_id = kcg_lit_int32(0);
   outC->_L283 = kcg_true;
   outC->_L282 = kcg_true;
   outC->_L280 = kcg_true;
@@ -2625,7 +2625,7 @@ void Master_Procedure_init_ManageProcedure_Pkg(
   outC->_L277 = kcg_true;
   outC->_L272 = Start_of_mission_DMI_Types_Pkg;
   outC->_L271.valid = kcg_true;
-  outC->_L271.systemTime = kcg_lit_int64(0);
+  outC->_L271.systemTime = kcg_lit_int32(0);
   outC->_L271.m_request = Start_of_mission_DMI_Types_Pkg;
   outC->_L265 = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   outC->_L264 = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
@@ -2638,13 +2638,13 @@ void Master_Procedure_init_ManageProcedure_Pkg(
   outC->_L244 = kcg_true;
   outC->_L245 = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   outC->_L246 = kcg_true;
-  outC->_L247 = kcg_lit_int64(0);
+  outC->_L247 = kcg_lit_int32(0);
   outC->_L248 = kcg_true;
   outC->_L249 = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   outC->_L250 = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   outC->_L252 = kcg_true;
   outC->_L253.valid = kcg_true;
-  outC->_L253.system_clock = kcg_lit_int64(0);
+  outC->_L253.system_clock = kcg_lit_int32(0);
   outC->_L253.entry_request = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   outC->_L254 = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   outC->_L255 = kcg_true;
@@ -2657,10 +2657,10 @@ void Master_Procedure_init_ManageProcedure_Pkg(
   outC->_L256.DMI_TrainDataValidated = kcg_true;
   outC->_L256.DMI_StartReceived = kcg_true;
   outC->_L256.DMI_Identifier.valid = kcg_true;
-  outC->_L256.DMI_Identifier.systemTime = kcg_lit_int64(0);
+  outC->_L256.DMI_Identifier.systemTime = kcg_lit_int32(0);
   outC->_L256.DMI_Identifier.DMI_Identifier = DMI_1_DMI_Types_Pkg;
   outC->_L256.DMI_Identifier.Cabin_Identifier = cabin_A_DMI_Types_Pkg;
-  outC->_L256.DMI_Identifier.l_name = kcg_lit_int64(0);
+  outC->_L256.DMI_Identifier.l_name = kcg_lit_int32(0);
   for (idx = 0; idx < 255; idx++) {
     outC->_L256.DMI_Identifier.DMI_name[idx] = ' ';
   }
@@ -2700,93 +2700,93 @@ void Master_Procedure_init_ManageProcedure_Pkg(
   outC->_L213 = kcg_true;
   outC->_L194.valid = kcg_true;
   outC->_L194.messageSource = msrc_undefined_Common_Types_Pkg;
-  outC->_L194.Radio_Common_Header.radioDevice = kcg_lit_int64(0);
-  outC->_L194.Radio_Common_Header.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L194.Radio_Common_Header.nid_message = kcg_lit_int64(0);
-  outC->_L194.Radio_Common_Header.t_train = kcg_lit_int64(0);
+  outC->_L194.Radio_Common_Header.radioDevice = kcg_lit_int32(0);
+  outC->_L194.Radio_Common_Header.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L194.Radio_Common_Header.nid_message = kcg_lit_int32(0);
+  outC->_L194.Radio_Common_Header.t_train = kcg_lit_int32(0);
   outC->_L194.Radio_Common_Header.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L194.Radio_Common_Header.nid_lrbg = kcg_lit_int64(0);
-  outC->_L194.Radio_Common_Header.t_train_reference = kcg_lit_int64(0);
-  outC->_L194.Radio_Common_Header.nid_em = kcg_lit_int64(0);
+  outC->_L194.Radio_Common_Header.nid_lrbg = kcg_lit_int32(0);
+  outC->_L194.Radio_Common_Header.t_train_reference = kcg_lit_int32(0);
+  outC->_L194.Radio_Common_Header.nid_em = kcg_lit_int32(0);
   outC->_L194.Radio_Common_Header.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L194.Radio_Common_Header.d_sr = kcg_lit_int64(0);
-  outC->_L194.Radio_Common_Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L194.Radio_Common_Header.d_ref = kcg_lit_int64(0);
+  outC->_L194.Radio_Common_Header.d_sr = kcg_lit_int32(0);
+  outC->_L194.Radio_Common_Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L194.Radio_Common_Header.d_ref = kcg_lit_int32(0);
   outC->_L194.Radio_Common_Header.q_dir = Q_DIR_Reverse;
-  outC->_L194.Radio_Common_Header.d_emergencystop = kcg_lit_int64(0);
+  outC->_L194.Radio_Common_Header.d_emergencystop = kcg_lit_int32(0);
   outC->_L194.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L194.p42.valid = kcg_true;
   outC->_L194.p42.q_dir = Q_DIR_Reverse;
   outC->_L194.p42.q_rbc = Q_RBC_Terminate_communication_session;
-  outC->_L194.p42.nid_c = kcg_lit_int64(0);
-  outC->_L194.p42.nid_rbc = kcg_lit_int64(0);
+  outC->_L194.p42.nid_c = kcg_lit_int32(0);
+  outC->_L194.p42.nid_rbc = kcg_lit_int32(0);
   outC->_L194.p42.nid_radio = kcg_lit_int64(0);
   outC->_L194.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L194.p45.valid = kcg_true;
   outC->_L194.p45.q_dir = Q_DIR_Reverse;
-  outC->_L194.p45.nid_mn = kcg_lit_int64(0);
+  outC->_L194.p45.nid_mn = kcg_lit_int32(0);
   outC->_L194.sendingRBC.valid = kcg_true;
-  outC->_L194.sendingRBC.nid_c = kcg_lit_int64(0);
-  outC->_L194.sendingRBC.rbc_id = kcg_lit_int64(0);
-  outC->_L194.sendingRBC.device_id = kcg_lit_int64(0);
+  outC->_L194.sendingRBC.nid_c = kcg_lit_int32(0);
+  outC->_L194.sendingRBC.rbc_id = kcg_lit_int32(0);
+  outC->_L194.sendingRBC.device_id = kcg_lit_int32(0);
   outC->_L187 = Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L188 = kcg_lit_int64(0);
-  outC->_L189 = kcg_lit_int64(0);
-  outC->_L190 = kcg_lit_int64(0);
+  outC->_L189 = kcg_lit_int32(0);
+  outC->_L190 = kcg_lit_int32(0);
   outC->_L191 = Q_RBC_Terminate_communication_session;
   outC->_L192 = Q_DIR_Reverse;
   outC->_L193 = kcg_true;
   outC->_L154.valid = kcg_true;
   outC->_L154.messageSource = msrc_undefined_Common_Types_Pkg;
-  outC->_L154.Radio_Common_Header.radioDevice = kcg_lit_int64(0);
-  outC->_L154.Radio_Common_Header.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L154.Radio_Common_Header.nid_message = kcg_lit_int64(0);
-  outC->_L154.Radio_Common_Header.t_train = kcg_lit_int64(0);
+  outC->_L154.Radio_Common_Header.radioDevice = kcg_lit_int32(0);
+  outC->_L154.Radio_Common_Header.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L154.Radio_Common_Header.nid_message = kcg_lit_int32(0);
+  outC->_L154.Radio_Common_Header.t_train = kcg_lit_int32(0);
   outC->_L154.Radio_Common_Header.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L154.Radio_Common_Header.nid_lrbg = kcg_lit_int64(0);
-  outC->_L154.Radio_Common_Header.t_train_reference = kcg_lit_int64(0);
-  outC->_L154.Radio_Common_Header.nid_em = kcg_lit_int64(0);
+  outC->_L154.Radio_Common_Header.nid_lrbg = kcg_lit_int32(0);
+  outC->_L154.Radio_Common_Header.t_train_reference = kcg_lit_int32(0);
+  outC->_L154.Radio_Common_Header.nid_em = kcg_lit_int32(0);
   outC->_L154.Radio_Common_Header.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L154.Radio_Common_Header.d_sr = kcg_lit_int64(0);
-  outC->_L154.Radio_Common_Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L154.Radio_Common_Header.d_ref = kcg_lit_int64(0);
+  outC->_L154.Radio_Common_Header.d_sr = kcg_lit_int32(0);
+  outC->_L154.Radio_Common_Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L154.Radio_Common_Header.d_ref = kcg_lit_int32(0);
   outC->_L154.Radio_Common_Header.q_dir = Q_DIR_Reverse;
-  outC->_L154.Radio_Common_Header.d_emergencystop = kcg_lit_int64(0);
+  outC->_L154.Radio_Common_Header.d_emergencystop = kcg_lit_int32(0);
   outC->_L154.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L154.p42.valid = kcg_true;
   outC->_L154.p42.q_dir = Q_DIR_Reverse;
   outC->_L154.p42.q_rbc = Q_RBC_Terminate_communication_session;
-  outC->_L154.p42.nid_c = kcg_lit_int64(0);
-  outC->_L154.p42.nid_rbc = kcg_lit_int64(0);
+  outC->_L154.p42.nid_c = kcg_lit_int32(0);
+  outC->_L154.p42.nid_rbc = kcg_lit_int32(0);
   outC->_L154.p42.nid_radio = kcg_lit_int64(0);
   outC->_L154.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L154.p45.valid = kcg_true;
   outC->_L154.p45.q_dir = Q_DIR_Reverse;
-  outC->_L154.p45.nid_mn = kcg_lit_int64(0);
+  outC->_L154.p45.nid_mn = kcg_lit_int32(0);
   outC->_L154.sendingRBC.valid = kcg_true;
-  outC->_L154.sendingRBC.nid_c = kcg_lit_int64(0);
-  outC->_L154.sendingRBC.rbc_id = kcg_lit_int64(0);
-  outC->_L154.sendingRBC.device_id = kcg_lit_int64(0);
+  outC->_L154.sendingRBC.nid_c = kcg_lit_int32(0);
+  outC->_L154.sendingRBC.rbc_id = kcg_lit_int32(0);
+  outC->_L154.sendingRBC.device_id = kcg_lit_int32(0);
   outC->_L153.valid = kcg_true;
   outC->_L153.q_dir = Q_DIR_Reverse;
   outC->_L153.q_rbc = Q_RBC_Terminate_communication_session;
-  outC->_L153.nid_c = kcg_lit_int64(0);
-  outC->_L153.nid_rbc = kcg_lit_int64(0);
+  outC->_L153.nid_c = kcg_lit_int32(0);
+  outC->_L153.nid_rbc = kcg_lit_int32(0);
   outC->_L153.nid_radio = kcg_lit_int64(0);
   outC->_L153.q_sleepsession = Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L151.valid = kcg_true;
   outC->_L151.q_dir = Q_DIR_Reverse;
-  outC->_L151.nid_mn = kcg_lit_int64(0);
+  outC->_L151.nid_mn = kcg_lit_int32(0);
   outC->_L149 = Q_DIR_Reverse;
   outC->_L147.valid = kcg_true;
   outC->_L147.q_dir = Q_DIR_Reverse;
   outC->_L147.q_rbc = Q_RBC_Terminate_communication_session;
-  outC->_L147.nid_c = kcg_lit_int64(0);
-  outC->_L147.nid_rbc = kcg_lit_int64(0);
+  outC->_L147.nid_c = kcg_lit_int32(0);
+  outC->_L147.nid_rbc = kcg_lit_int32(0);
   outC->_L147.nid_radio = kcg_lit_int64(0);
   outC->_L147.q_sleepsession = Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L131 = kcg_true;
@@ -2801,19 +2801,19 @@ void Master_Procedure_init_ManageProcedure_Pkg(
   outC->_L86 = kcg_true;
   outC->_L85 = sp_terminated_RCM_Session_Types_Pkg;
   outC->_L84.valid = kcg_true;
-  outC->_L84.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L84.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L84.healthStatus = mhs_nok_RCM_Types_Pkg;
   outC->_L84.status = mrs_unregistered_RCM_Types_Pkg;
-  outC->_L84.nid_mn = kcg_lit_int64(0);
+  outC->_L84.nid_mn = kcg_lit_int32(0);
   outC->_L83 = kcg_true;
   outC->_L82 = mrs_unregistered_RCM_Types_Pkg;
   outC->_L71.registration.valid = kcg_true;
-  outC->_L71.registration.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L71.registration.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L71.registration.healthStatus = mhs_nok_RCM_Types_Pkg;
   outC->_L71.registration.status = mrs_unregistered_RCM_Types_Pkg;
-  outC->_L71.registration.nid_mn = kcg_lit_int64(0);
+  outC->_L71.registration.nid_mn = kcg_lit_int32(0);
   outC->_L71.connection.valid = kcg_true;
-  outC->_L71.connection.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L71.connection.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L71.connection.status = mcs_disconnected_RCM_Types_Pkg;
   outC->_L71.connection.nid_radio = kcg_lit_int64(0);
   outC->_L71.connection.settingUpConnectionHasFailed = kcg_true;
@@ -2821,156 +2821,156 @@ void Master_Procedure_init_ManageProcedure_Pkg(
   outC->_L71.connection.isInRadioHole = kcg_true;
   outC->_L71.session.valid = kcg_true;
   outC->_L71.session.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L71.session.nid_c = kcg_lit_int64(0);
-  outC->_L71.session.nid_rbc = kcg_lit_int64(0);
+  outC->_L71.session.nid_c = kcg_lit_int32(0);
+  outC->_L71.session.nid_rbc = kcg_lit_int32(0);
   outC->_L71.session.nid_radio = kcg_lit_int64(0);
   outC->_L70.valid = kcg_true;
   outC->_L70.messageSource = msrc_undefined_Common_Types_Pkg;
-  outC->_L70.Radio_Common_Header.radioDevice = kcg_lit_int64(0);
-  outC->_L70.Radio_Common_Header.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L70.Radio_Common_Header.nid_message = kcg_lit_int64(0);
-  outC->_L70.Radio_Common_Header.t_train = kcg_lit_int64(0);
+  outC->_L70.Radio_Common_Header.radioDevice = kcg_lit_int32(0);
+  outC->_L70.Radio_Common_Header.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L70.Radio_Common_Header.nid_message = kcg_lit_int32(0);
+  outC->_L70.Radio_Common_Header.t_train = kcg_lit_int32(0);
   outC->_L70.Radio_Common_Header.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L70.Radio_Common_Header.nid_lrbg = kcg_lit_int64(0);
-  outC->_L70.Radio_Common_Header.t_train_reference = kcg_lit_int64(0);
-  outC->_L70.Radio_Common_Header.nid_em = kcg_lit_int64(0);
+  outC->_L70.Radio_Common_Header.nid_lrbg = kcg_lit_int32(0);
+  outC->_L70.Radio_Common_Header.t_train_reference = kcg_lit_int32(0);
+  outC->_L70.Radio_Common_Header.nid_em = kcg_lit_int32(0);
   outC->_L70.Radio_Common_Header.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L70.Radio_Common_Header.d_sr = kcg_lit_int64(0);
-  outC->_L70.Radio_Common_Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L70.Radio_Common_Header.d_ref = kcg_lit_int64(0);
+  outC->_L70.Radio_Common_Header.d_sr = kcg_lit_int32(0);
+  outC->_L70.Radio_Common_Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L70.Radio_Common_Header.d_ref = kcg_lit_int32(0);
   outC->_L70.Radio_Common_Header.q_dir = Q_DIR_Reverse;
-  outC->_L70.Radio_Common_Header.d_emergencystop = kcg_lit_int64(0);
+  outC->_L70.Radio_Common_Header.d_emergencystop = kcg_lit_int32(0);
   outC->_L70.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L70.p42.valid = kcg_true;
   outC->_L70.p42.q_dir = Q_DIR_Reverse;
   outC->_L70.p42.q_rbc = Q_RBC_Terminate_communication_session;
-  outC->_L70.p42.nid_c = kcg_lit_int64(0);
-  outC->_L70.p42.nid_rbc = kcg_lit_int64(0);
+  outC->_L70.p42.nid_c = kcg_lit_int32(0);
+  outC->_L70.p42.nid_rbc = kcg_lit_int32(0);
   outC->_L70.p42.nid_radio = kcg_lit_int64(0);
   outC->_L70.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L70.p45.valid = kcg_true;
   outC->_L70.p45.q_dir = Q_DIR_Reverse;
-  outC->_L70.p45.nid_mn = kcg_lit_int64(0);
+  outC->_L70.p45.nid_mn = kcg_lit_int32(0);
   outC->_L70.sendingRBC.valid = kcg_true;
-  outC->_L70.sendingRBC.nid_c = kcg_lit_int64(0);
-  outC->_L70.sendingRBC.rbc_id = kcg_lit_int64(0);
-  outC->_L70.sendingRBC.device_id = kcg_lit_int64(0);
+  outC->_L70.sendingRBC.nid_c = kcg_lit_int32(0);
+  outC->_L70.sendingRBC.rbc_id = kcg_lit_int32(0);
+  outC->_L70.sendingRBC.device_id = kcg_lit_int32(0);
   outC->_L69 = kcg_true;
   outC->_L67 = kcg_true;
-  outC->_L65.radioDevice = kcg_lit_int64(0);
-  outC->_L65.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L65.nid_message = kcg_lit_int64(0);
-  outC->_L65.t_train = kcg_lit_int64(0);
+  outC->_L65.radioDevice = kcg_lit_int32(0);
+  outC->_L65.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L65.nid_message = kcg_lit_int32(0);
+  outC->_L65.t_train = kcg_lit_int32(0);
   outC->_L65.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L65.nid_lrbg = kcg_lit_int64(0);
-  outC->_L65.t_train_reference = kcg_lit_int64(0);
-  outC->_L65.nid_em = kcg_lit_int64(0);
+  outC->_L65.nid_lrbg = kcg_lit_int32(0);
+  outC->_L65.t_train_reference = kcg_lit_int32(0);
+  outC->_L65.nid_em = kcg_lit_int32(0);
   outC->_L65.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L65.d_sr = kcg_lit_int64(0);
-  outC->_L65.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L65.d_ref = kcg_lit_int64(0);
+  outC->_L65.d_sr = kcg_lit_int32(0);
+  outC->_L65.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L65.d_ref = kcg_lit_int32(0);
   outC->_L65.q_dir = Q_DIR_Reverse;
-  outC->_L65.d_emergencystop = kcg_lit_int64(0);
+  outC->_L65.d_emergencystop = kcg_lit_int32(0);
   outC->_L65.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L63 = msrc_undefined_Common_Types_Pkg;
   outC->_L61.valid = kcg_true;
   outC->_L61.messageSource = msrc_undefined_Common_Types_Pkg;
-  outC->_L61.Radio_Common_Header.radioDevice = kcg_lit_int64(0);
-  outC->_L61.Radio_Common_Header.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L61.Radio_Common_Header.nid_message = kcg_lit_int64(0);
-  outC->_L61.Radio_Common_Header.t_train = kcg_lit_int64(0);
+  outC->_L61.Radio_Common_Header.radioDevice = kcg_lit_int32(0);
+  outC->_L61.Radio_Common_Header.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L61.Radio_Common_Header.nid_message = kcg_lit_int32(0);
+  outC->_L61.Radio_Common_Header.t_train = kcg_lit_int32(0);
   outC->_L61.Radio_Common_Header.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L61.Radio_Common_Header.nid_lrbg = kcg_lit_int64(0);
-  outC->_L61.Radio_Common_Header.t_train_reference = kcg_lit_int64(0);
-  outC->_L61.Radio_Common_Header.nid_em = kcg_lit_int64(0);
+  outC->_L61.Radio_Common_Header.nid_lrbg = kcg_lit_int32(0);
+  outC->_L61.Radio_Common_Header.t_train_reference = kcg_lit_int32(0);
+  outC->_L61.Radio_Common_Header.nid_em = kcg_lit_int32(0);
   outC->_L61.Radio_Common_Header.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L61.Radio_Common_Header.d_sr = kcg_lit_int64(0);
-  outC->_L61.Radio_Common_Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L61.Radio_Common_Header.d_ref = kcg_lit_int64(0);
+  outC->_L61.Radio_Common_Header.d_sr = kcg_lit_int32(0);
+  outC->_L61.Radio_Common_Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L61.Radio_Common_Header.d_ref = kcg_lit_int32(0);
   outC->_L61.Radio_Common_Header.q_dir = Q_DIR_Reverse;
-  outC->_L61.Radio_Common_Header.d_emergencystop = kcg_lit_int64(0);
+  outC->_L61.Radio_Common_Header.d_emergencystop = kcg_lit_int32(0);
   outC->_L61.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L61.p42.valid = kcg_true;
   outC->_L61.p42.q_dir = Q_DIR_Reverse;
   outC->_L61.p42.q_rbc = Q_RBC_Terminate_communication_session;
-  outC->_L61.p42.nid_c = kcg_lit_int64(0);
-  outC->_L61.p42.nid_rbc = kcg_lit_int64(0);
+  outC->_L61.p42.nid_c = kcg_lit_int32(0);
+  outC->_L61.p42.nid_rbc = kcg_lit_int32(0);
   outC->_L61.p42.nid_radio = kcg_lit_int64(0);
   outC->_L61.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L61.p45.valid = kcg_true;
   outC->_L61.p45.q_dir = Q_DIR_Reverse;
-  outC->_L61.p45.nid_mn = kcg_lit_int64(0);
+  outC->_L61.p45.nid_mn = kcg_lit_int32(0);
   outC->_L61.sendingRBC.valid = kcg_true;
-  outC->_L61.sendingRBC.nid_c = kcg_lit_int64(0);
-  outC->_L61.sendingRBC.rbc_id = kcg_lit_int64(0);
-  outC->_L61.sendingRBC.device_id = kcg_lit_int64(0);
-  outC->_L50 = kcg_lit_int64(0);
+  outC->_L61.sendingRBC.nid_c = kcg_lit_int32(0);
+  outC->_L61.sendingRBC.rbc_id = kcg_lit_int32(0);
+  outC->_L61.sendingRBC.device_id = kcg_lit_int32(0);
+  outC->_L50 = kcg_lit_int32(0);
   outC->_L49 = Q_DIR_Reverse;
   outC->_L47.valid = kcg_true;
   outC->_L47.q_dir = Q_DIR_Reverse;
-  outC->_L47.nid_mn = kcg_lit_int64(0);
+  outC->_L47.nid_mn = kcg_lit_int32(0);
   outC->_L40.valid = kcg_true;
   outC->_L40.q_dir = Q_DIR_Reverse;
   outC->_L40.q_rbc = Q_RBC_Terminate_communication_session;
-  outC->_L40.nid_c = kcg_lit_int64(0);
-  outC->_L40.nid_rbc = kcg_lit_int64(0);
+  outC->_L40.nid_c = kcg_lit_int32(0);
+  outC->_L40.nid_rbc = kcg_lit_int32(0);
   outC->_L40.nid_radio = kcg_lit_int64(0);
   outC->_L40.q_sleepsession = Q_SLEEPSESSION_Ignore_session_establishment_order;
-  outC->_L39.radioDevice = kcg_lit_int64(0);
-  outC->_L39.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L39.nid_message = kcg_lit_int64(0);
-  outC->_L39.t_train = kcg_lit_int64(0);
+  outC->_L39.radioDevice = kcg_lit_int32(0);
+  outC->_L39.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L39.nid_message = kcg_lit_int32(0);
+  outC->_L39.t_train = kcg_lit_int32(0);
   outC->_L39.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L39.nid_lrbg = kcg_lit_int64(0);
-  outC->_L39.t_train_reference = kcg_lit_int64(0);
-  outC->_L39.nid_em = kcg_lit_int64(0);
+  outC->_L39.nid_lrbg = kcg_lit_int32(0);
+  outC->_L39.t_train_reference = kcg_lit_int32(0);
+  outC->_L39.nid_em = kcg_lit_int32(0);
   outC->_L39.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L39.d_sr = kcg_lit_int64(0);
-  outC->_L39.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L39.d_ref = kcg_lit_int64(0);
+  outC->_L39.d_sr = kcg_lit_int32(0);
+  outC->_L39.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L39.d_ref = kcg_lit_int32(0);
   outC->_L39.q_dir = Q_DIR_Reverse;
-  outC->_L39.d_emergencystop = kcg_lit_int64(0);
+  outC->_L39.d_emergencystop = kcg_lit_int32(0);
   outC->_L39.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L37 = msrc_undefined_Common_Types_Pkg;
   outC->_L29.valid = kcg_true;
   outC->_L29.messageSource = msrc_undefined_Common_Types_Pkg;
-  outC->_L29.Radio_Common_Header.radioDevice = kcg_lit_int64(0);
-  outC->_L29.Radio_Common_Header.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L29.Radio_Common_Header.nid_message = kcg_lit_int64(0);
-  outC->_L29.Radio_Common_Header.t_train = kcg_lit_int64(0);
+  outC->_L29.Radio_Common_Header.radioDevice = kcg_lit_int32(0);
+  outC->_L29.Radio_Common_Header.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L29.Radio_Common_Header.nid_message = kcg_lit_int32(0);
+  outC->_L29.Radio_Common_Header.t_train = kcg_lit_int32(0);
   outC->_L29.Radio_Common_Header.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L29.Radio_Common_Header.nid_lrbg = kcg_lit_int64(0);
-  outC->_L29.Radio_Common_Header.t_train_reference = kcg_lit_int64(0);
-  outC->_L29.Radio_Common_Header.nid_em = kcg_lit_int64(0);
+  outC->_L29.Radio_Common_Header.nid_lrbg = kcg_lit_int32(0);
+  outC->_L29.Radio_Common_Header.t_train_reference = kcg_lit_int32(0);
+  outC->_L29.Radio_Common_Header.nid_em = kcg_lit_int32(0);
   outC->_L29.Radio_Common_Header.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L29.Radio_Common_Header.d_sr = kcg_lit_int64(0);
-  outC->_L29.Radio_Common_Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L29.Radio_Common_Header.d_ref = kcg_lit_int64(0);
+  outC->_L29.Radio_Common_Header.d_sr = kcg_lit_int32(0);
+  outC->_L29.Radio_Common_Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L29.Radio_Common_Header.d_ref = kcg_lit_int32(0);
   outC->_L29.Radio_Common_Header.q_dir = Q_DIR_Reverse;
-  outC->_L29.Radio_Common_Header.d_emergencystop = kcg_lit_int64(0);
+  outC->_L29.Radio_Common_Header.d_emergencystop = kcg_lit_int32(0);
   outC->_L29.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L29.p42.valid = kcg_true;
   outC->_L29.p42.q_dir = Q_DIR_Reverse;
   outC->_L29.p42.q_rbc = Q_RBC_Terminate_communication_session;
-  outC->_L29.p42.nid_c = kcg_lit_int64(0);
-  outC->_L29.p42.nid_rbc = kcg_lit_int64(0);
+  outC->_L29.p42.nid_c = kcg_lit_int32(0);
+  outC->_L29.p42.nid_rbc = kcg_lit_int32(0);
   outC->_L29.p42.nid_radio = kcg_lit_int64(0);
   outC->_L29.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L29.p45.valid = kcg_true;
   outC->_L29.p45.q_dir = Q_DIR_Reverse;
-  outC->_L29.p45.nid_mn = kcg_lit_int64(0);
+  outC->_L29.p45.nid_mn = kcg_lit_int32(0);
   outC->_L29.sendingRBC.valid = kcg_true;
-  outC->_L29.sendingRBC.nid_c = kcg_lit_int64(0);
-  outC->_L29.sendingRBC.rbc_id = kcg_lit_int64(0);
-  outC->_L29.sendingRBC.device_id = kcg_lit_int64(0);
+  outC->_L29.sendingRBC.nid_c = kcg_lit_int32(0);
+  outC->_L29.sendingRBC.rbc_id = kcg_lit_int32(0);
+  outC->_L29.sendingRBC.device_id = kcg_lit_int32(0);
   outC->Mode_and_Level_is_valid_from_Mode_and_Level_Management = kcg_true;
   outC->statusLevel_from_DMI = kcg_true;
   outC->M_LEVEL_Level1 = kcg_true;
@@ -3091,33 +3091,33 @@ void Master_Procedure_init_ManageProcedure_Pkg(
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.messageSource =
     msrc_undefined_Common_Types_Pkg;
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.Radio_Common_Header.radioDevice =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.Radio_Common_Header.receivedSystemTime =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.Radio_Common_Header.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.Radio_Common_Header.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.Radio_Common_Header.m_ack =
     M_ACK_No_acknowledgement_required;
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.Radio_Common_Header.nid_lrbg =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.Radio_Common_Header.t_train_reference =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.Radio_Common_Header.nid_em =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.Radio_Common_Header.q_scale =
     Q_SCALE_10_cm_scale;
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.Radio_Common_Header.d_sr =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.Radio_Common_Header.t_sh_rqst =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.Radio_Common_Header.d_ref =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.Radio_Common_Header.q_dir =
     Q_DIR_Reverse;
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.Radio_Common_Header.d_emergencystop =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.p42.valid =
@@ -3127,9 +3127,9 @@ void Master_Procedure_init_ManageProcedure_Pkg(
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.p42.q_rbc =
     Q_RBC_Terminate_communication_session;
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.p42.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.p42.nid_rbc =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.p42.nid_radio =
     kcg_lit_int64(0);
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.p42.q_sleepsession =
@@ -3139,17 +3139,17 @@ void Master_Procedure_init_ManageProcedure_Pkg(
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.p45.q_dir =
     Q_DIR_Reverse;
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.p45.nid_mn =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.sendingRBC.valid =
     kcg_true;
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.sendingRBC.nid_c =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.sendingRBC.rbc_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->request_Start_Mobile_Terminal_and_RBC_Registration_to_MoRC.sendingRBC.device_id =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->DMI_Entry_Request_to_DMI.valid = kcg_true;
-  outC->DMI_Entry_Request_to_DMI.system_clock = kcg_lit_int64(0);
+  outC->DMI_Entry_Request_to_DMI.system_clock = kcg_lit_int32(0);
   outC->DMI_Entry_Request_to_DMI.entry_request =
     Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   /* SM1:SoM_L2_3_FS_SR_OS_LS_SH:_L4=(SoMProcedure_Pkg::SoM_SR_FS_OS_LS_SH_SN_UN#1)/ */
@@ -3212,8 +3212,8 @@ void kcg_save_SV_Master_Procedure_ManageProcedure_Pkg(
   SV->Context_SM3_reset_nxt = outC->SM3_reset_nxt_Awakness_of_Train_SM1;
   SV->_1_Context_init = outC->init1;
   SV->Context_init = outC->init;
-  kcg_copy_struct_487049(&SV->Context_fby_1, &outC->fby_1);
-  kcg_copy_struct_487049(&SV->Context_fby_2, &outC->fby_2);
+  kcg_copy_struct_486841(&SV->Context_fby_1, &outC->fby_1);
+  kcg_copy_struct_486841(&SV->Context_fby_2, &outC->fby_2);
 }
 
 void kcg_load_SV_Master_Procedure_ManageProcedure_Pkg(
@@ -3242,14 +3242,14 @@ void kcg_load_SV_Master_Procedure_ManageProcedure_Pkg(
   outC->SM3_reset_nxt_Awakness_of_Train_SM1 = SV->Context_SM3_reset_nxt;
   outC->init1 = SV->_1_Context_init;
   outC->init = SV->Context_init;
-  kcg_copy_struct_487049(&outC->fby_1, &SV->Context_fby_1);
-  kcg_copy_struct_487049(&outC->fby_2, &SV->Context_fby_2);
+  kcg_copy_struct_486841(&outC->fby_1, &SV->Context_fby_1);
+  kcg_copy_struct_486841(&outC->fby_2, &SV->Context_fby_2);
 }
 
 
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Master_Procedure_ManageProcedure_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

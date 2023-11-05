@@ -41,15 +41,15 @@ typedef struct {
   RadioTrackTrainMessageQueueEntry_T /* IfBlock1:then:_L8/ */ _L8_then_IfBlock1;
   RadioTrackTrainMessageQueueEntries_T /* IfBlock1:then:_L7/ */ _L7_then_IfBlock1;
   RadioTrackTrainMessageQueueEntry_T /* IfBlock1:then:_L6/ */ _L6_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L5/ */ _L5_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L5/ */ _L5_then_IfBlock1;
   RadioTrackTrainMessageQueueEntry_T /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
   array /* IfBlock1:then:_L3/ */ _L3_then_IfBlock1;
   RadioTrackTrainMessageQueueEntries_T /* IfBlock1:then:_L2/ */ _L2_then_IfBlock1;
   RadioTrackTrainMessageQueue_T /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:foundIndex/ */ foundIndex_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L14/ */ _L14_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L15/ */ _L15_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L13/ */ _L13_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:foundIndex/ */ foundIndex_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L14/ */ _L14_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L15/ */ _L15_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L13/ */ _L13_else_else_IfBlock1;
   RadioTrackTrainMessageQueueEntry_T /* IfBlock1:else:else:_L12/ */ _L12_else_else_IfBlock1;
   RadioTrackTrainMessageQueue_T /* IfBlock1:else:else:_L11/ */ _L11_else_else_IfBlock1;
   RadioTrackTrainMessageQueueEntry_T /* IfBlock1:else:else:_L10/ */ _L10_else_else_IfBlock1;
@@ -57,16 +57,16 @@ typedef struct {
   RadioTrackTrainMessageQueueEntries_T /* IfBlock1:else:else:_L8/ */ _L8_else_else_IfBlock1;
   RadioTrackTrainMessageQueue_T /* IfBlock1:else:else:_L7/ */ _L7_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:_L6/ */ _L6_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L5/ */ _L5_else_else_IfBlock1;
-  array_int64_8 /* IfBlock1:else:else:_L4/ */ _L4_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L5/ */ _L5_else_else_IfBlock1;
+  array_int32_8 /* IfBlock1:else:else:_L4/ */ _L4_else_else_IfBlock1;
   RadioTrackTrainMessageQueueEntries_T /* IfBlock1:else:else:_L3/ */ _L3_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L2/ */ _L2_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L2/ */ _L2_else_else_IfBlock1;
   RadioTrackTrainMessageQueueEntries_T /* IfBlock1:else:else:_L1/ */ _L1_else_else_IfBlock1;
   RadioTrackTrainMessageQueue_T /* IfBlock1:else:then:_L23/ */ _L23_then_else_IfBlock1;
   RadioTrackTrainMessageQueueEntry_T /* IfBlock1:else:then:_L24/ */ _L24_then_else_IfBlock1;
-  kcg_int64 /* remainingCapacity/ */ remainingCapacity;
+  kcg_int32 /* remainingCapacity/ */ remainingCapacity;
   RadioTrackTrainMessageQueue_T /* _L1/ */ _L1;
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L2/ */ _L2;
 } outC_RadioTrackTrainMessageQueue__Take_RBC_Collections_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

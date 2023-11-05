@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -14,7 +14,7 @@ void Set_IconAck_DMI_Control_Pkg_Sub_func(
   /* system_time/ */
   T_internal_Type_Obu_BasicTypes_Pkg system_time,
   /* NID_icon_id/ */
-  kcg_int64 NID_icon_id,
+  kcg_int32 NID_icon_id,
   outC_Set_IconAck_DMI_Control_Pkg_Sub_func *outC)
 {
   outC->_L1 = valid;
@@ -31,14 +31,14 @@ void Set_IconAck_init_DMI_Control_Pkg_Sub_func(
   outC_Set_IconAck_DMI_Control_Pkg_Sub_func *outC)
 {
   outC->_L4.valid = kcg_true;
-  outC->_L4.systemTime = kcg_lit_int64(0);
-  outC->_L4.DMI_nid_icon_identifier = kcg_lit_int64(0);
+  outC->_L4.systemTime = kcg_lit_int32(0);
+  outC->_L4.DMI_nid_icon_identifier = kcg_lit_int32(0);
   outC->_L1 = kcg_true;
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->IconAck.valid = kcg_true;
-  outC->IconAck.systemTime = kcg_lit_int64(0);
-  outC->IconAck.DMI_nid_icon_identifier = kcg_lit_int64(0);
+  outC->IconAck.systemTime = kcg_lit_int32(0);
+  outC->IconAck.DMI_nid_icon_identifier = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -54,6 +54,6 @@ void Set_IconAck_reset_DMI_Control_Pkg_Sub_func(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Set_IconAck_DMI_Control_Pkg_Sub_func.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

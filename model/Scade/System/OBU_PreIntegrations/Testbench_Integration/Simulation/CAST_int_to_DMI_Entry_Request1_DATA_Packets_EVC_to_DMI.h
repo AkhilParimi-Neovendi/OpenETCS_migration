@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _CAST_int_to_DMI_Entry_Request1_DATA_Packets_EVC_to_DMI_H_
 #define _CAST_int_to_DMI_Entry_Request1_DATA_Packets_EVC_to_DMI_H_
@@ -26,9 +26,9 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   kcg_bool /* _L14/ */ _L14;
-  kcg_int64 /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
-  kcg_int64 /* _L13/ */ _L13;
+  kcg_int32 /* _L11/ */ _L11;
+  kcg_int32 /* _L12/ */ _L12;
+  kcg_int32 /* _L13/ */ _L13;
   DMI_Entry_Request_T_DMI_Messages_EVC_to_DMI_Pkg /* _L9/ */ _L9;
   DMI_Entry_Request_int_array_T_DATA /* _L15/ */ _L15;
   DMI_List_Entry_Request_T_DMI_Types_Pkg /* _L16/ */ _L16;
@@ -56,6 +56,6 @@ extern void CAST_int_to_DMI_Entry_Request1_init_DATA_Packets_EVC_to_DMI(
 #endif /* _CAST_int_to_DMI_Entry_Request1_DATA_Packets_EVC_to_DMI_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_int_to_DMI_Entry_Request1_DATA_Packets_EVC_to_DMI.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

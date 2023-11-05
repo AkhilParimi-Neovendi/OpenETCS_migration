@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -42,19 +42,19 @@ void CAST_int_to_DMI_EVC_Radio_Net_Data1_init_DATA_Packets_EVC_to_DMI(
   static kcg_size idx;
 
   for (idx = 0; idx < 3; idx++) {
-    outC->_L10[idx] = kcg_lit_int64(0);
+    outC->_L10[idx] = kcg_lit_int32(0);
   }
   outC->_L7 = kcg_true;
-  outC->_L6 = kcg_lit_int64(0);
+  outC->_L6 = kcg_lit_int32(0);
   outC->_L5.valid = kcg_true;
-  outC->_L5.system_clock = kcg_lit_int64(0);
-  outC->_L5.nid_mn = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L5.system_clock = kcg_lit_int32(0);
+  outC->_L5.nid_mn = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->dmi_evc_radio_net_data_ct.valid = kcg_true;
-  outC->dmi_evc_radio_net_data_ct.system_clock = kcg_lit_int64(0);
-  outC->dmi_evc_radio_net_data_ct.nid_mn = kcg_lit_int64(0);
+  outC->dmi_evc_radio_net_data_ct.system_clock = kcg_lit_int32(0);
+  outC->dmi_evc_radio_net_data_ct.nid_mn = kcg_lit_int32(0);
   /* _L6=(TM_conversions::CAST_Int_to_NID_MN#1)/ */
   CAST_Int_to_NID_MN_init_TM_conversions(&outC->Context_CAST_Int_to_NID_MN_1);
   /* _L7=(Utilities::Int_to_Bool#1)/ */
@@ -78,6 +78,6 @@ void CAST_int_to_DMI_EVC_Radio_Net_Data1_reset_DATA_Packets_EVC_to_DMI(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_int_to_DMI_EVC_Radio_Net_Data1_DATA_Packets_EVC_to_DMI.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

@@ -29,13 +29,13 @@ typedef struct {
   Q_LINK /* _L9/ */ _L9;
   kcg_bool /* _L11/ */ _L11;
   linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg /* _L12/ */ _L12;
-  kcg_int64 /* _L18/ */ _L18;
-  kcg_int64 /* _L17/ */ _L17;
-  kcg_int64 /* _L16/ */ _L16;
+  kcg_int32 /* _L18/ */ _L18;
+  kcg_int32 /* _L17/ */ _L17;
+  kcg_int32 /* _L16/ */ _L16;
   linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg /* _L19/ */ _L19;
-  kcg_int64 /* _L20/ */ _L20;
-  kcg_int64 /* _L22/ */ _L22;
-  kcg_int64 /* _L21/ */ _L21;
+  kcg_int32 /* _L20/ */ _L20;
+  kcg_int32 /* _L22/ */ _L22;
+  kcg_int32 /* _L21/ */ _L21;
 } outC_findLinkedBG_fwd_itr_CalculateTrainPosition_Pkg_BG_relocation_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

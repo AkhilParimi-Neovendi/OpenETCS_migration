@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -61,7 +61,7 @@ void initiateSession_v2_MoRC_Pck_Subfunc_Pkg(
   static RBC_Id_T_Common_Types_Pkg _9_origin_partial;
   /* rbc_valid/ */
   static kcg_bool _10_rbc_valid_partial;
-  static kcg_int64 noname;
+  static kcg_int32 noname;
   /* nid_c/ */
   static NID_C _11_nid_c_partial;
   /* nid_rbc/ */
@@ -319,7 +319,7 @@ void initiateSession_v2_MoRC_Pck_Subfunc_Pkg(
         _19_nid_rbc_partial = _7_nid_rbc_partial;
       }
       else {
-        outC->_L7_else_else_else_IfBlock1 = kcg_lit_int64(0);
+        outC->_L7_else_else_else_IfBlock1 = kcg_lit_int32(0);
         _12_nid_rbc_partial = outC->_L7_else_else_else_IfBlock1;
         _19_nid_rbc_partial = _12_nid_rbc_partial;
       }
@@ -364,7 +364,8 @@ void initiateSession_v2_MoRC_Pck_Subfunc_Pkg(
         _18_nid_radio_partial = _8_nid_radio_partial;
       }
       else {
-        _13_nid_radio_partial = outC->_L7_else_else_else_IfBlock1;
+        outC->_L8_else_else_else_IfBlock1 = kcg_lit_int64(0);
+        _13_nid_radio_partial = outC->_L8_else_else_else_IfBlock1;
         _18_nid_radio_partial = _13_nid_radio_partial;
       }
       _3_nid_radio_partial = _18_nid_radio_partial;
@@ -445,38 +446,38 @@ void initiateSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC_initiateSession_v2_MoRC_Pck_Subfunc_Pkg *outC)
 {
   outC->_L229.valid = kcg_true;
-  outC->_L229.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L229.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L229.healthStatus = mhs_nok_RCM_Types_Pkg;
   outC->_L229.status = mrs_unregistered_RCM_Types_Pkg;
-  outC->_L229.nid_mn = kcg_lit_int64(0);
+  outC->_L229.nid_mn = kcg_lit_int32(0);
   outC->_L228 = kcg_true;
   outC->_L227 = kcg_true;
   outC->_L226.valid = kcg_true;
-  outC->_L226.nid_c = kcg_lit_int64(0);
-  outC->_L226.rbc_id = kcg_lit_int64(0);
-  outC->_L226.device_id = kcg_lit_int64(0);
-  outC->_L225 = kcg_lit_int64(0);
+  outC->_L226.nid_c = kcg_lit_int32(0);
+  outC->_L226.rbc_id = kcg_lit_int32(0);
+  outC->_L226.device_id = kcg_lit_int32(0);
+  outC->_L225 = kcg_lit_int32(0);
   outC->_L224 = kcg_lit_int64(0);
-  outC->_L223 = kcg_lit_int64(0);
+  outC->_L223 = kcg_lit_int32(0);
   outC->_L222 = Q_RBC_Terminate_communication_session;
   outC->_L220.valid = kcg_true;
   outC->_L220.msgSrc = msrc_undefined_Common_Types_Pkg;
   outC->_L220.origin.valid = kcg_true;
-  outC->_L220.origin.nid_c = kcg_lit_int64(0);
-  outC->_L220.origin.rbc_id = kcg_lit_int64(0);
-  outC->_L220.origin.device_id = kcg_lit_int64(0);
+  outC->_L220.origin.nid_c = kcg_lit_int32(0);
+  outC->_L220.origin.rbc_id = kcg_lit_int32(0);
+  outC->_L220.origin.device_id = kcg_lit_int32(0);
   outC->_L219.valid = kcg_true;
   outC->_L219.msgSrc = msrc_undefined_Common_Types_Pkg;
   outC->_L219.q_dir = Q_DIR_Reverse;
   outC->_L219.q_rbc = Q_RBC_Terminate_communication_session;
-  outC->_L219.nid_c = kcg_lit_int64(0);
-  outC->_L219.nid_RBC = kcg_lit_int64(0);
+  outC->_L219.nid_c = kcg_lit_int32(0);
+  outC->_L219.nid_RBC = kcg_lit_int32(0);
   outC->_L219.nid_radio = kcg_lit_int64(0);
   outC->_L219.q_sleepsession = Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L219.origin.valid = kcg_true;
-  outC->_L219.origin.nid_c = kcg_lit_int64(0);
-  outC->_L219.origin.rbc_id = kcg_lit_int64(0);
-  outC->_L219.origin.device_id = kcg_lit_int64(0);
+  outC->_L219.origin.nid_c = kcg_lit_int32(0);
+  outC->_L219.origin.rbc_id = kcg_lit_int32(0);
+  outC->_L219.origin.device_id = kcg_lit_int32(0);
   outC->_L218 = kcg_true;
   outC->_L217 = kcg_true;
   outC->_L216 = kcg_true;
@@ -484,32 +485,32 @@ void initiateSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L215.initiatedByOBU = kcg_true;
   outC->_L215.initiatedByRBC = kcg_true;
   outC->_L215.q_rbc = Q_RBC_Terminate_communication_session;
-  outC->_L215.nid_c = kcg_lit_int64(0);
-  outC->_L215.nid_rbc = kcg_lit_int64(0);
+  outC->_L215.nid_c = kcg_lit_int32(0);
+  outC->_L215.nid_rbc = kcg_lit_int32(0);
   outC->_L215.nid_radio = kcg_lit_int64(0);
   outC->_L215.origin.valid = kcg_true;
-  outC->_L215.origin.nid_c = kcg_lit_int64(0);
-  outC->_L215.origin.rbc_id = kcg_lit_int64(0);
-  outC->_L215.origin.device_id = kcg_lit_int64(0);
+  outC->_L215.origin.nid_c = kcg_lit_int32(0);
+  outC->_L215.origin.rbc_id = kcg_lit_int32(0);
+  outC->_L215.origin.device_id = kcg_lit_int32(0);
   outC->_L215.m38.valid = kcg_true;
   outC->_L215.m38.msgSrc = msrc_undefined_Common_Types_Pkg;
   outC->_L215.m38.origin.valid = kcg_true;
-  outC->_L215.m38.origin.nid_c = kcg_lit_int64(0);
-  outC->_L215.m38.origin.rbc_id = kcg_lit_int64(0);
-  outC->_L215.m38.origin.device_id = kcg_lit_int64(0);
+  outC->_L215.m38.origin.nid_c = kcg_lit_int32(0);
+  outC->_L215.m38.origin.rbc_id = kcg_lit_int32(0);
+  outC->_L215.m38.origin.device_id = kcg_lit_int32(0);
   outC->_L215.p42.valid = kcg_true;
   outC->_L215.p42.msgSrc = msrc_undefined_Common_Types_Pkg;
   outC->_L215.p42.q_dir = Q_DIR_Reverse;
   outC->_L215.p42.q_rbc = Q_RBC_Terminate_communication_session;
-  outC->_L215.p42.nid_c = kcg_lit_int64(0);
-  outC->_L215.p42.nid_RBC = kcg_lit_int64(0);
+  outC->_L215.p42.nid_c = kcg_lit_int32(0);
+  outC->_L215.p42.nid_RBC = kcg_lit_int32(0);
   outC->_L215.p42.nid_radio = kcg_lit_int64(0);
   outC->_L215.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L215.p42.origin.valid = kcg_true;
-  outC->_L215.p42.origin.nid_c = kcg_lit_int64(0);
-  outC->_L215.p42.origin.rbc_id = kcg_lit_int64(0);
-  outC->_L215.p42.origin.device_id = kcg_lit_int64(0);
+  outC->_L215.p42.origin.nid_c = kcg_lit_int32(0);
+  outC->_L215.p42.origin.rbc_id = kcg_lit_int32(0);
+  outC->_L215.p42.origin.device_id = kcg_lit_int32(0);
   outC->_L214 = kcg_true;
   outC->_L212 = kcg_true;
   outC->_L211 = kcg_true;
@@ -539,8 +540,8 @@ void initiateSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L183 = sp_terminated_RCM_Session_Types_Pkg;
   outC->_L184.valid = kcg_true;
   outC->_L184.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L184.nid_c = kcg_lit_int64(0);
-  outC->_L184.nid_rbc = kcg_lit_int64(0);
+  outC->_L184.nid_c = kcg_lit_int32(0);
+  outC->_L184.nid_rbc = kcg_lit_int32(0);
   outC->_L184.nid_radio = kcg_lit_int64(0);
   outC->_L185 = kcg_true;
   outC->_L152.atPowerUp = kcg_true;
@@ -577,13 +578,13 @@ void initiateSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L141 = kcg_true;
   outC->_L140 = kcg_true;
   outC->_L139 = kcg_true;
-  outC->_L138 = kcg_lit_int64(0);
-  outC->_L137 = kcg_lit_int64(0);
+  outC->_L138 = kcg_lit_int32(0);
+  outC->_L137 = kcg_lit_int32(0);
   outC->_L136 = kcg_true;
   outC->_L135.valid = kcg_true;
-  outC->_L135.nid_c = kcg_lit_int64(0);
-  outC->_L135.rbc_id = kcg_lit_int64(0);
-  outC->_L135.device_id = kcg_lit_int64(0);
+  outC->_L135.nid_c = kcg_lit_int32(0);
+  outC->_L135.rbc_id = kcg_lit_int32(0);
+  outC->_L135.device_id = kcg_lit_int32(0);
   outC->_L134 = kcg_true;
   outC->_L133 = kcg_true;
   outC->_L132 = sp_terminated_RCM_Session_Types_Pkg;
@@ -593,88 +594,89 @@ void initiateSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L126 = M_MODE_Full_Supervision;
   outC->_L118 = kcg_true;
   outC->_L117 = kcg_true;
-  outC->_L116 = kcg_lit_int64(0);
-  outC->_L115 = kcg_lit_int64(0);
+  outC->_L116 = kcg_lit_int32(0);
+  outC->_L115 = kcg_lit_int32(0);
   outC->_L114 = kcg_true;
   outC->_L113 = Q_RBC_Terminate_communication_session;
   outC->_L112 = kcg_true;
-  outC->_L109 = kcg_lit_int64(0);
-  outC->_L108 = kcg_lit_int64(0);
+  outC->_L109 = kcg_lit_int32(0);
+  outC->_L108 = kcg_lit_int32(0);
   outC->_L107 = Q_RBC_Terminate_communication_session;
   outC->_L106 = kcg_true;
   outC->_L99.valid = kcg_true;
   outC->_L99.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L99.nid_c = kcg_lit_int64(0);
-  outC->_L99.nid_rbc = kcg_lit_int64(0);
+  outC->_L99.nid_c = kcg_lit_int32(0);
+  outC->_L99.nid_rbc = kcg_lit_int32(0);
   outC->_L99.nid_radio = kcg_lit_int64(0);
   outC->_L97.valid = kcg_true;
   outC->_L97.msgSrc = msrc_undefined_Common_Types_Pkg;
   outC->_L97.origin.valid = kcg_true;
-  outC->_L97.origin.nid_c = kcg_lit_int64(0);
-  outC->_L97.origin.rbc_id = kcg_lit_int64(0);
-  outC->_L97.origin.device_id = kcg_lit_int64(0);
+  outC->_L97.origin.nid_c = kcg_lit_int32(0);
+  outC->_L97.origin.rbc_id = kcg_lit_int32(0);
+  outC->_L97.origin.device_id = kcg_lit_int32(0);
   outC->_L96.valid = kcg_true;
   outC->_L96.msgSrc = msrc_undefined_Common_Types_Pkg;
   outC->_L96.q_dir = Q_DIR_Reverse;
   outC->_L96.q_rbc = Q_RBC_Terminate_communication_session;
-  outC->_L96.nid_c = kcg_lit_int64(0);
-  outC->_L96.nid_RBC = kcg_lit_int64(0);
+  outC->_L96.nid_c = kcg_lit_int32(0);
+  outC->_L96.nid_RBC = kcg_lit_int32(0);
   outC->_L96.nid_radio = kcg_lit_int64(0);
   outC->_L96.q_sleepsession = Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L96.origin.valid = kcg_true;
-  outC->_L96.origin.nid_c = kcg_lit_int64(0);
-  outC->_L96.origin.rbc_id = kcg_lit_int64(0);
-  outC->_L96.origin.device_id = kcg_lit_int64(0);
+  outC->_L96.origin.nid_c = kcg_lit_int32(0);
+  outC->_L96.origin.rbc_id = kcg_lit_int32(0);
+  outC->_L96.origin.device_id = kcg_lit_int32(0);
   outC->rbc_valid = kcg_true;
   outC->origin.valid = kcg_true;
-  outC->origin.nid_c = kcg_lit_int64(0);
-  outC->origin.rbc_id = kcg_lit_int64(0);
-  outC->origin.device_id = kcg_lit_int64(0);
+  outC->origin.nid_c = kcg_lit_int32(0);
+  outC->origin.rbc_id = kcg_lit_int32(0);
+  outC->origin.device_id = kcg_lit_int32(0);
   outC->nid_radio = kcg_lit_int64(0);
-  outC->nid_rbc = kcg_lit_int64(0);
-  outC->nid_c = kcg_lit_int64(0);
+  outC->nid_rbc = kcg_lit_int32(0);
+  outC->nid_c = kcg_lit_int32(0);
   outC->initiateSessionFromRBC = kcg_true;
   outC->initiateSessionFromOBU = kcg_true;
   outC->initiateSessionViaP42fromOBU = kcg_true;
   outC->IfBlock1_clock = kcg_true;
   outC->_L13_then_else_IfBlock1.valid = kcg_true;
-  outC->_L13_then_else_IfBlock1.nid_c = kcg_lit_int64(0);
-  outC->_L13_then_else_IfBlock1.rbc_id = kcg_lit_int64(0);
-  outC->_L13_then_else_IfBlock1.device_id = kcg_lit_int64(0);
+  outC->_L13_then_else_IfBlock1.nid_c = kcg_lit_int32(0);
+  outC->_L13_then_else_IfBlock1.rbc_id = kcg_lit_int32(0);
+  outC->_L13_then_else_IfBlock1.device_id = kcg_lit_int32(0);
   outC->_L3_then_else_IfBlock1 = kcg_true;
   outC->_L4_then_else_IfBlock1 = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L5_then_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L6_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L5_then_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L6_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L7_then_else_IfBlock1 = kcg_lit_int64(0);
   outC->_L1_then_else_IfBlock1.valid = kcg_true;
   outC->_L1_then_else_IfBlock1.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L1_then_else_IfBlock1.nid_c = kcg_lit_int64(0);
-  outC->_L1_then_else_IfBlock1.nid_rbc = kcg_lit_int64(0);
+  outC->_L1_then_else_IfBlock1.nid_c = kcg_lit_int32(0);
+  outC->_L1_then_else_IfBlock1.nid_rbc = kcg_lit_int32(0);
   outC->_L1_then_else_IfBlock1.nid_radio = kcg_lit_int64(0);
   outC->else_clock_else_IfBlock1 = kcg_true;
   outC->_L1_else_else_else_IfBlock1 = kcg_true;
   outC->_L6_else_else_else_IfBlock1.valid = kcg_true;
-  outC->_L6_else_else_else_IfBlock1.nid_c = kcg_lit_int64(0);
-  outC->_L6_else_else_else_IfBlock1.rbc_id = kcg_lit_int64(0);
-  outC->_L6_else_else_else_IfBlock1.device_id = kcg_lit_int64(0);
-  outC->_L7_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L6_else_else_else_IfBlock1.nid_c = kcg_lit_int32(0);
+  outC->_L6_else_else_else_IfBlock1.rbc_id = kcg_lit_int32(0);
+  outC->_L6_else_else_else_IfBlock1.device_id = kcg_lit_int32(0);
+  outC->_L7_else_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L8_else_else_else_IfBlock1 = kcg_lit_int64(0);
   outC->_L1_then_else_else_IfBlock1.valid = kcg_true;
   outC->_L1_then_else_else_IfBlock1.msgSrc = msrc_undefined_Common_Types_Pkg;
   outC->_L1_then_else_else_IfBlock1.origin.valid = kcg_true;
-  outC->_L1_then_else_else_IfBlock1.origin.nid_c = kcg_lit_int64(0);
-  outC->_L1_then_else_else_IfBlock1.origin.rbc_id = kcg_lit_int64(0);
-  outC->_L1_then_else_else_IfBlock1.origin.device_id = kcg_lit_int64(0);
+  outC->_L1_then_else_else_IfBlock1.origin.nid_c = kcg_lit_int32(0);
+  outC->_L1_then_else_else_IfBlock1.origin.rbc_id = kcg_lit_int32(0);
+  outC->_L1_then_else_else_IfBlock1.origin.device_id = kcg_lit_int32(0);
   outC->_L8_then_else_else_IfBlock1.valid = kcg_true;
-  outC->_L8_then_else_else_IfBlock1.nid_c = kcg_lit_int64(0);
-  outC->_L8_then_else_else_IfBlock1.rbc_id = kcg_lit_int64(0);
-  outC->_L8_then_else_else_IfBlock1.device_id = kcg_lit_int64(0);
-  outC->_L12_then_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L11_then_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L10_then_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L8_then_else_else_IfBlock1.nid_c = kcg_lit_int32(0);
+  outC->_L8_then_else_else_IfBlock1.rbc_id = kcg_lit_int32(0);
+  outC->_L8_then_else_else_IfBlock1.device_id = kcg_lit_int32(0);
+  outC->_L12_then_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L11_then_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L10_then_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L9_then_else_else_IfBlock1 = kcg_true;
   outC->_L14_then_else_else_IfBlock1 = kcg_lit_int64(0);
   outC->_L16_then_else_else_IfBlock1.valid = kcg_true;
-  outC->_L16_then_else_else_IfBlock1.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L16_then_else_else_IfBlock1.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L16_then_else_else_IfBlock1.status = mcs_disconnected_RCM_Types_Pkg;
   outC->_L16_then_else_else_IfBlock1.nid_radio = kcg_lit_int64(0);
   outC->_L16_then_else_else_IfBlock1.settingUpConnectionHasFailed = kcg_true;
@@ -685,35 +687,35 @@ void initiateSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L1_then_IfBlock1.msgSrc = msrc_undefined_Common_Types_Pkg;
   outC->_L1_then_IfBlock1.q_dir = Q_DIR_Reverse;
   outC->_L1_then_IfBlock1.q_rbc = Q_RBC_Terminate_communication_session;
-  outC->_L1_then_IfBlock1.nid_c = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock1.nid_RBC = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1.nid_c = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock1.nid_RBC = kcg_lit_int32(0);
   outC->_L1_then_IfBlock1.nid_radio = kcg_lit_int64(0);
   outC->_L1_then_IfBlock1.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L1_then_IfBlock1.origin.valid = kcg_true;
-  outC->_L1_then_IfBlock1.origin.nid_c = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock1.origin.rbc_id = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock1.origin.device_id = kcg_lit_int64(0);
-  outC->_L2_then_IfBlock1 = kcg_lit_int64(0);
-  outC->_L4_then_IfBlock1 = kcg_lit_int64(0);
-  outC->_L5_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1.origin.nid_c = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock1.origin.rbc_id = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock1.origin.device_id = kcg_lit_int32(0);
+  outC->_L2_then_IfBlock1 = kcg_lit_int32(0);
+  outC->_L4_then_IfBlock1 = kcg_lit_int32(0);
+  outC->_L5_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L6_then_IfBlock1 = kcg_true;
-  outC->_L7_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L7_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L8_then_IfBlock1.valid = kcg_true;
   outC->_L8_then_IfBlock1.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L8_then_IfBlock1.nid_c = kcg_lit_int64(0);
-  outC->_L8_then_IfBlock1.nid_rbc = kcg_lit_int64(0);
+  outC->_L8_then_IfBlock1.nid_c = kcg_lit_int32(0);
+  outC->_L8_then_IfBlock1.nid_rbc = kcg_lit_int32(0);
   outC->_L8_then_IfBlock1.nid_radio = kcg_lit_int64(0);
-  outC->_L9_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L9_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L10_then_IfBlock1 = kcg_lit_int64(0);
   outC->_L11_then_IfBlock1 = kcg_lit_int64(0);
   outC->_L12_then_IfBlock1 = kcg_true;
   outC->_L13_then_IfBlock1 = kcg_lit_int64(0);
   outC->_L14_then_IfBlock1 = kcg_lit_int64(0);
   outC->_L15_then_IfBlock1.valid = kcg_true;
-  outC->_L15_then_IfBlock1.nid_c = kcg_lit_int64(0);
-  outC->_L15_then_IfBlock1.rbc_id = kcg_lit_int64(0);
-  outC->_L15_then_IfBlock1.device_id = kcg_lit_int64(0);
+  outC->_L15_then_IfBlock1.nid_c = kcg_lit_int32(0);
+  outC->_L15_then_IfBlock1.rbc_id = kcg_lit_int32(0);
+  outC->_L15_then_IfBlock1.device_id = kcg_lit_int32(0);
   outC->_L16_then_IfBlock1 = kcg_true;
   outC->_L17_then_IfBlock1 = kcg_true;
   outC->_L18_then_IfBlock1 = kcg_true;
@@ -721,32 +723,32 @@ void initiateSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->sessionEstablishCmd.initiatedByOBU = kcg_true;
   outC->sessionEstablishCmd.initiatedByRBC = kcg_true;
   outC->sessionEstablishCmd.q_rbc = Q_RBC_Terminate_communication_session;
-  outC->sessionEstablishCmd.nid_c = kcg_lit_int64(0);
-  outC->sessionEstablishCmd.nid_rbc = kcg_lit_int64(0);
+  outC->sessionEstablishCmd.nid_c = kcg_lit_int32(0);
+  outC->sessionEstablishCmd.nid_rbc = kcg_lit_int32(0);
   outC->sessionEstablishCmd.nid_radio = kcg_lit_int64(0);
   outC->sessionEstablishCmd.origin.valid = kcg_true;
-  outC->sessionEstablishCmd.origin.nid_c = kcg_lit_int64(0);
-  outC->sessionEstablishCmd.origin.rbc_id = kcg_lit_int64(0);
-  outC->sessionEstablishCmd.origin.device_id = kcg_lit_int64(0);
+  outC->sessionEstablishCmd.origin.nid_c = kcg_lit_int32(0);
+  outC->sessionEstablishCmd.origin.rbc_id = kcg_lit_int32(0);
+  outC->sessionEstablishCmd.origin.device_id = kcg_lit_int32(0);
   outC->sessionEstablishCmd.m38.valid = kcg_true;
   outC->sessionEstablishCmd.m38.msgSrc = msrc_undefined_Common_Types_Pkg;
   outC->sessionEstablishCmd.m38.origin.valid = kcg_true;
-  outC->sessionEstablishCmd.m38.origin.nid_c = kcg_lit_int64(0);
-  outC->sessionEstablishCmd.m38.origin.rbc_id = kcg_lit_int64(0);
-  outC->sessionEstablishCmd.m38.origin.device_id = kcg_lit_int64(0);
+  outC->sessionEstablishCmd.m38.origin.nid_c = kcg_lit_int32(0);
+  outC->sessionEstablishCmd.m38.origin.rbc_id = kcg_lit_int32(0);
+  outC->sessionEstablishCmd.m38.origin.device_id = kcg_lit_int32(0);
   outC->sessionEstablishCmd.p42.valid = kcg_true;
   outC->sessionEstablishCmd.p42.msgSrc = msrc_undefined_Common_Types_Pkg;
   outC->sessionEstablishCmd.p42.q_dir = Q_DIR_Reverse;
   outC->sessionEstablishCmd.p42.q_rbc = Q_RBC_Terminate_communication_session;
-  outC->sessionEstablishCmd.p42.nid_c = kcg_lit_int64(0);
-  outC->sessionEstablishCmd.p42.nid_RBC = kcg_lit_int64(0);
+  outC->sessionEstablishCmd.p42.nid_c = kcg_lit_int32(0);
+  outC->sessionEstablishCmd.p42.nid_RBC = kcg_lit_int32(0);
   outC->sessionEstablishCmd.p42.nid_radio = kcg_lit_int64(0);
   outC->sessionEstablishCmd.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->sessionEstablishCmd.p42.origin.valid = kcg_true;
-  outC->sessionEstablishCmd.p42.origin.nid_c = kcg_lit_int64(0);
-  outC->sessionEstablishCmd.p42.origin.rbc_id = kcg_lit_int64(0);
-  outC->sessionEstablishCmd.p42.origin.device_id = kcg_lit_int64(0);
+  outC->sessionEstablishCmd.p42.origin.nid_c = kcg_lit_int32(0);
+  outC->sessionEstablishCmd.p42.origin.rbc_id = kcg_lit_int32(0);
+  outC->sessionEstablishCmd.p42.origin.device_id = kcg_lit_int32(0);
   /* _L210=(MoRC_Pck::Subfunc_Pkg::validate_q_sleepsession_v2)/ */
   validate_q_sleepsession_v2_init_MoRC_Pck_Subfunc_Pkg(
     &outC->Context_validate_q_sleepsession_v2);
@@ -768,6 +770,6 @@ void initiateSession_v2_reset_MoRC_Pck_Subfunc_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** initiateSession_v2_MoRC_Pck_Subfunc_Pkg.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

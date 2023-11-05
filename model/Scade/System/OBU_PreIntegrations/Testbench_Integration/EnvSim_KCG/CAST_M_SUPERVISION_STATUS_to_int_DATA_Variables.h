@@ -26,18 +26,18 @@ typedef struct {
   kcg_bool /* IfBlock1: */ IfBlock1_clock;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
   kcg_bool /* IfBlock1:then:_L3/ */ _L3_then_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:then:_L4/ */ _L4_then_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:then:_L4/ */ _L4_then_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:then:_L3/ */ _L3_then_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:else:else:then:_L3/ */ _L3_then_else_else_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:else:else:then:_L3/ */ _L3_then_else_else_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:else:else:then:_L2/ */ _L2_then_else_else_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:else:else:else:_L5/ */ _L5_else_else_else_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:else:else:else:_L5/ */ _L5_else_else_else_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:else:else:else:_L3/ */ _L3_else_else_else_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:else:then:_L2/ */ _L2_then_else_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:else:then:_L3/ */ _L3_then_else_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:else:then:_L3/ */ _L3_then_else_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L2/ */ _L2_then_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L3/ */ _L3_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L3/ */ _L3_then_else_IfBlock1;
   kcg_bool /* error/ */ error;
   kcg_bool /* _L1/ */ _L1;
 } outC_CAST_M_SUPERVISION_STATUS_to_int_DATA_Variables;

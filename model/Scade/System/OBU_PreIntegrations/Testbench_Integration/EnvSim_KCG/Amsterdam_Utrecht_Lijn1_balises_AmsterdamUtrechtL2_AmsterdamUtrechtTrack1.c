@@ -10,20 +10,20 @@
 /* AmsterdamUtrechtL2::AmsterdamUtrechtTrack1::Amsterdam_Utrecht_Lijn1_balises/ */
 void Amsterdam_Utrecht_Lijn1_balises_AmsterdamUtrechtL2_AmsterdamUtrechtTrack1(
   /* TrainPosSim_in/ */
-  kcg_float64 TrainPosSim_in,
+  kcg_float32 TrainPosSim_in,
   outC_Amsterdam_Utrecht_Lijn1_balises_AmsterdamUtrechtL2_AmsterdamUtrechtTrack1 *outC)
 {
   outC->_L16 = TrainPosSim_in;
   /* _L15=(InfraLib::TrackInit#1)/ */
-  TrackInit_InfraLib(outC->_L16, kcg_lit_int64(0), &outC->Context_TrackInit_1);
+  TrackInit_InfraLib(outC->_L16, kcg_lit_int32(0), &outC->Context_TrackInit_1);
   kcg_copy_TrackSectionData_T_InfraLib(
     &outC->_L15,
     &outC->Context_TrackInit_1.SectionData_out);
   /* _L13=(InfraLib::TrackDiscontinuity#1)/ */
   TrackDiscontinuity_InfraLib(
     &outC->_L15,
-    kcg_lit_int64(104775),
-    kcg_lit_int64(105650),
+    kcg_lit_int32(104775),
+    kcg_lit_int32(105650),
     &outC->Context_TrackDiscontinuity_1);
   kcg_copy_TrackSectionData_T_InfraLib(
     &outC->_L13,
@@ -38,8 +38,8 @@ void Amsterdam_Utrecht_Lijn1_balises_AmsterdamUtrechtL2_AmsterdamUtrechtTrack1(
   /* _L14=(InfraLib::TrackDiscontinuity#2)/ */
   TrackDiscontinuity_InfraLib(
     &outC->_L1,
-    kcg_lit_int64(1659) - kcg_lit_int64(400),
-    kcg_lit_int64(32962),
+    kcg_lit_int32(1659) - kcg_lit_int32(400),
+    kcg_lit_int32(32962),
     &outC->Context_TrackDiscontinuity_2);
   kcg_copy_TrackSectionData_T_InfraLib(
     &outC->_L14,
@@ -168,437 +168,437 @@ void Amsterdam_Utrecht_Lijn1_balises_init_AmsterdamUtrechtL2_AmsterdamUtrechtTra
   static kcg_size idx32;
   static kcg_size idx33;
 
-  outC->_L17.Header.q_updown = kcg_lit_int64(0);
-  outC->_L17.Header.m_version = kcg_lit_int64(0);
-  outC->_L17.Header.q_media = kcg_lit_int64(0);
-  outC->_L17.Header.n_pig = kcg_lit_int64(0);
-  outC->_L17.Header.n_total = kcg_lit_int64(0);
-  outC->_L17.Header.m_dup = kcg_lit_int64(0);
-  outC->_L17.Header.m_mcount = kcg_lit_int64(0);
-  outC->_L17.Header.nid_c = kcg_lit_int64(0);
-  outC->_L17.Header.nid_bg = kcg_lit_int64(0);
-  outC->_L17.Header.q_link = kcg_lit_int64(0);
+  outC->_L17.Header.q_updown = kcg_lit_int32(0);
+  outC->_L17.Header.m_version = kcg_lit_int32(0);
+  outC->_L17.Header.q_media = kcg_lit_int32(0);
+  outC->_L17.Header.n_pig = kcg_lit_int32(0);
+  outC->_L17.Header.n_total = kcg_lit_int32(0);
+  outC->_L17.Header.m_dup = kcg_lit_int32(0);
+  outC->_L17.Header.m_mcount = kcg_lit_int32(0);
+  outC->_L17.Header.nid_c = kcg_lit_int32(0);
+  outC->_L17.Header.nid_bg = kcg_lit_int32(0);
+  outC->_L17.Header.q_link = kcg_lit_int32(0);
   for (idx = 0; idx < 30; idx++) {
-    outC->_L17.Messages.PacketHeaders[idx].nid_packet = kcg_lit_int64(0);
+    outC->_L17.Messages.PacketHeaders[idx].nid_packet = kcg_lit_int32(0);
     outC->_L17.Messages.PacketHeaders[idx].q_dir = Q_DIR_Reverse;
     outC->_L17.Messages.PacketHeaders[idx].valid = kcg_true;
-    outC->_L17.Messages.PacketHeaders[idx].startAddress = kcg_lit_int64(0);
-    outC->_L17.Messages.PacketHeaders[idx].endAddress = kcg_lit_int64(0);
+    outC->_L17.Messages.PacketHeaders[idx].startAddress = kcg_lit_int32(0);
+    outC->_L17.Messages.PacketHeaders[idx].endAddress = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 500; idx1++) {
-    outC->_L17.Messages.PacketData[idx1] = kcg_lit_int64(0);
+    outC->_L17.Messages.PacketData[idx1] = kcg_lit_int32(0);
   }
-  outC->_L16 = kcg_lit_float64(0.0);
-  outC->_L15.TrainPosRaw.TrainPos_in = kcg_lit_float64(0.0);
-  outC->_L15.TrainPosRaw.OffsetTotal = kcg_lit_int64(0);
-  outC->_L15.TrainPosRaw.TrainPosCalibrated = kcg_lit_float64(0.0);
-  outC->_L15.BG_Message.Header.q_updown = kcg_lit_int64(0);
-  outC->_L15.BG_Message.Header.m_version = kcg_lit_int64(0);
-  outC->_L15.BG_Message.Header.q_media = kcg_lit_int64(0);
-  outC->_L15.BG_Message.Header.n_pig = kcg_lit_int64(0);
-  outC->_L15.BG_Message.Header.n_total = kcg_lit_int64(0);
-  outC->_L15.BG_Message.Header.m_dup = kcg_lit_int64(0);
-  outC->_L15.BG_Message.Header.m_mcount = kcg_lit_int64(0);
-  outC->_L15.BG_Message.Header.nid_c = kcg_lit_int64(0);
-  outC->_L15.BG_Message.Header.nid_bg = kcg_lit_int64(0);
-  outC->_L15.BG_Message.Header.q_link = kcg_lit_int64(0);
+  outC->_L16 = kcg_lit_float32(0.0);
+  outC->_L15.TrainPosRaw.TrainPos_in = kcg_lit_float32(0.0);
+  outC->_L15.TrainPosRaw.OffsetTotal = kcg_lit_int32(0);
+  outC->_L15.TrainPosRaw.TrainPosCalibrated = kcg_lit_float32(0.0);
+  outC->_L15.BG_Message.Header.q_updown = kcg_lit_int32(0);
+  outC->_L15.BG_Message.Header.m_version = kcg_lit_int32(0);
+  outC->_L15.BG_Message.Header.q_media = kcg_lit_int32(0);
+  outC->_L15.BG_Message.Header.n_pig = kcg_lit_int32(0);
+  outC->_L15.BG_Message.Header.n_total = kcg_lit_int32(0);
+  outC->_L15.BG_Message.Header.m_dup = kcg_lit_int32(0);
+  outC->_L15.BG_Message.Header.m_mcount = kcg_lit_int32(0);
+  outC->_L15.BG_Message.Header.nid_c = kcg_lit_int32(0);
+  outC->_L15.BG_Message.Header.nid_bg = kcg_lit_int32(0);
+  outC->_L15.BG_Message.Header.q_link = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 30; idx2++) {
     outC->_L15.BG_Message.Messages.PacketHeaders[idx2].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L15.BG_Message.Messages.PacketHeaders[idx2].q_dir = Q_DIR_Reverse;
     outC->_L15.BG_Message.Messages.PacketHeaders[idx2].valid = kcg_true;
     outC->_L15.BG_Message.Messages.PacketHeaders[idx2].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L15.BG_Message.Messages.PacketHeaders[idx2].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 500; idx3++) {
-    outC->_L15.BG_Message.Messages.PacketData[idx3] = kcg_lit_int64(0);
+    outC->_L15.BG_Message.Messages.PacketData[idx3] = kcg_lit_int32(0);
   }
-  outC->_L14.TrainPosRaw.TrainPos_in = kcg_lit_float64(0.0);
-  outC->_L14.TrainPosRaw.OffsetTotal = kcg_lit_int64(0);
-  outC->_L14.TrainPosRaw.TrainPosCalibrated = kcg_lit_float64(0.0);
-  outC->_L14.BG_Message.Header.q_updown = kcg_lit_int64(0);
-  outC->_L14.BG_Message.Header.m_version = kcg_lit_int64(0);
-  outC->_L14.BG_Message.Header.q_media = kcg_lit_int64(0);
-  outC->_L14.BG_Message.Header.n_pig = kcg_lit_int64(0);
-  outC->_L14.BG_Message.Header.n_total = kcg_lit_int64(0);
-  outC->_L14.BG_Message.Header.m_dup = kcg_lit_int64(0);
-  outC->_L14.BG_Message.Header.m_mcount = kcg_lit_int64(0);
-  outC->_L14.BG_Message.Header.nid_c = kcg_lit_int64(0);
-  outC->_L14.BG_Message.Header.nid_bg = kcg_lit_int64(0);
-  outC->_L14.BG_Message.Header.q_link = kcg_lit_int64(0);
+  outC->_L14.TrainPosRaw.TrainPos_in = kcg_lit_float32(0.0);
+  outC->_L14.TrainPosRaw.OffsetTotal = kcg_lit_int32(0);
+  outC->_L14.TrainPosRaw.TrainPosCalibrated = kcg_lit_float32(0.0);
+  outC->_L14.BG_Message.Header.q_updown = kcg_lit_int32(0);
+  outC->_L14.BG_Message.Header.m_version = kcg_lit_int32(0);
+  outC->_L14.BG_Message.Header.q_media = kcg_lit_int32(0);
+  outC->_L14.BG_Message.Header.n_pig = kcg_lit_int32(0);
+  outC->_L14.BG_Message.Header.n_total = kcg_lit_int32(0);
+  outC->_L14.BG_Message.Header.m_dup = kcg_lit_int32(0);
+  outC->_L14.BG_Message.Header.m_mcount = kcg_lit_int32(0);
+  outC->_L14.BG_Message.Header.nid_c = kcg_lit_int32(0);
+  outC->_L14.BG_Message.Header.nid_bg = kcg_lit_int32(0);
+  outC->_L14.BG_Message.Header.q_link = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 30; idx4++) {
     outC->_L14.BG_Message.Messages.PacketHeaders[idx4].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L14.BG_Message.Messages.PacketHeaders[idx4].q_dir = Q_DIR_Reverse;
     outC->_L14.BG_Message.Messages.PacketHeaders[idx4].valid = kcg_true;
     outC->_L14.BG_Message.Messages.PacketHeaders[idx4].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L14.BG_Message.Messages.PacketHeaders[idx4].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx5 = 0; idx5 < 500; idx5++) {
-    outC->_L14.BG_Message.Messages.PacketData[idx5] = kcg_lit_int64(0);
+    outC->_L14.BG_Message.Messages.PacketData[idx5] = kcg_lit_int32(0);
   }
-  outC->_L13.TrainPosRaw.TrainPos_in = kcg_lit_float64(0.0);
-  outC->_L13.TrainPosRaw.OffsetTotal = kcg_lit_int64(0);
-  outC->_L13.TrainPosRaw.TrainPosCalibrated = kcg_lit_float64(0.0);
-  outC->_L13.BG_Message.Header.q_updown = kcg_lit_int64(0);
-  outC->_L13.BG_Message.Header.m_version = kcg_lit_int64(0);
-  outC->_L13.BG_Message.Header.q_media = kcg_lit_int64(0);
-  outC->_L13.BG_Message.Header.n_pig = kcg_lit_int64(0);
-  outC->_L13.BG_Message.Header.n_total = kcg_lit_int64(0);
-  outC->_L13.BG_Message.Header.m_dup = kcg_lit_int64(0);
-  outC->_L13.BG_Message.Header.m_mcount = kcg_lit_int64(0);
-  outC->_L13.BG_Message.Header.nid_c = kcg_lit_int64(0);
-  outC->_L13.BG_Message.Header.nid_bg = kcg_lit_int64(0);
-  outC->_L13.BG_Message.Header.q_link = kcg_lit_int64(0);
+  outC->_L13.TrainPosRaw.TrainPos_in = kcg_lit_float32(0.0);
+  outC->_L13.TrainPosRaw.OffsetTotal = kcg_lit_int32(0);
+  outC->_L13.TrainPosRaw.TrainPosCalibrated = kcg_lit_float32(0.0);
+  outC->_L13.BG_Message.Header.q_updown = kcg_lit_int32(0);
+  outC->_L13.BG_Message.Header.m_version = kcg_lit_int32(0);
+  outC->_L13.BG_Message.Header.q_media = kcg_lit_int32(0);
+  outC->_L13.BG_Message.Header.n_pig = kcg_lit_int32(0);
+  outC->_L13.BG_Message.Header.n_total = kcg_lit_int32(0);
+  outC->_L13.BG_Message.Header.m_dup = kcg_lit_int32(0);
+  outC->_L13.BG_Message.Header.m_mcount = kcg_lit_int32(0);
+  outC->_L13.BG_Message.Header.nid_c = kcg_lit_int32(0);
+  outC->_L13.BG_Message.Header.nid_bg = kcg_lit_int32(0);
+  outC->_L13.BG_Message.Header.q_link = kcg_lit_int32(0);
   for (idx6 = 0; idx6 < 30; idx6++) {
     outC->_L13.BG_Message.Messages.PacketHeaders[idx6].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L13.BG_Message.Messages.PacketHeaders[idx6].q_dir = Q_DIR_Reverse;
     outC->_L13.BG_Message.Messages.PacketHeaders[idx6].valid = kcg_true;
     outC->_L13.BG_Message.Messages.PacketHeaders[idx6].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L13.BG_Message.Messages.PacketHeaders[idx6].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx7 = 0; idx7 < 500; idx7++) {
-    outC->_L13.BG_Message.Messages.PacketData[idx7] = kcg_lit_int64(0);
+    outC->_L13.BG_Message.Messages.PacketData[idx7] = kcg_lit_int32(0);
   }
-  outC->_L12.TrainPosRaw.TrainPos_in = kcg_lit_float64(0.0);
-  outC->_L12.TrainPosRaw.OffsetTotal = kcg_lit_int64(0);
-  outC->_L12.TrainPosRaw.TrainPosCalibrated = kcg_lit_float64(0.0);
-  outC->_L12.BG_Message.Header.q_updown = kcg_lit_int64(0);
-  outC->_L12.BG_Message.Header.m_version = kcg_lit_int64(0);
-  outC->_L12.BG_Message.Header.q_media = kcg_lit_int64(0);
-  outC->_L12.BG_Message.Header.n_pig = kcg_lit_int64(0);
-  outC->_L12.BG_Message.Header.n_total = kcg_lit_int64(0);
-  outC->_L12.BG_Message.Header.m_dup = kcg_lit_int64(0);
-  outC->_L12.BG_Message.Header.m_mcount = kcg_lit_int64(0);
-  outC->_L12.BG_Message.Header.nid_c = kcg_lit_int64(0);
-  outC->_L12.BG_Message.Header.nid_bg = kcg_lit_int64(0);
-  outC->_L12.BG_Message.Header.q_link = kcg_lit_int64(0);
+  outC->_L12.TrainPosRaw.TrainPos_in = kcg_lit_float32(0.0);
+  outC->_L12.TrainPosRaw.OffsetTotal = kcg_lit_int32(0);
+  outC->_L12.TrainPosRaw.TrainPosCalibrated = kcg_lit_float32(0.0);
+  outC->_L12.BG_Message.Header.q_updown = kcg_lit_int32(0);
+  outC->_L12.BG_Message.Header.m_version = kcg_lit_int32(0);
+  outC->_L12.BG_Message.Header.q_media = kcg_lit_int32(0);
+  outC->_L12.BG_Message.Header.n_pig = kcg_lit_int32(0);
+  outC->_L12.BG_Message.Header.n_total = kcg_lit_int32(0);
+  outC->_L12.BG_Message.Header.m_dup = kcg_lit_int32(0);
+  outC->_L12.BG_Message.Header.m_mcount = kcg_lit_int32(0);
+  outC->_L12.BG_Message.Header.nid_c = kcg_lit_int32(0);
+  outC->_L12.BG_Message.Header.nid_bg = kcg_lit_int32(0);
+  outC->_L12.BG_Message.Header.q_link = kcg_lit_int32(0);
   for (idx8 = 0; idx8 < 30; idx8++) {
     outC->_L12.BG_Message.Messages.PacketHeaders[idx8].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L12.BG_Message.Messages.PacketHeaders[idx8].q_dir = Q_DIR_Reverse;
     outC->_L12.BG_Message.Messages.PacketHeaders[idx8].valid = kcg_true;
     outC->_L12.BG_Message.Messages.PacketHeaders[idx8].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L12.BG_Message.Messages.PacketHeaders[idx8].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx9 = 0; idx9 < 500; idx9++) {
-    outC->_L12.BG_Message.Messages.PacketData[idx9] = kcg_lit_int64(0);
+    outC->_L12.BG_Message.Messages.PacketData[idx9] = kcg_lit_int32(0);
   }
-  outC->_L11.TrainPosRaw.TrainPos_in = kcg_lit_float64(0.0);
-  outC->_L11.TrainPosRaw.OffsetTotal = kcg_lit_int64(0);
-  outC->_L11.TrainPosRaw.TrainPosCalibrated = kcg_lit_float64(0.0);
-  outC->_L11.BG_Message.Header.q_updown = kcg_lit_int64(0);
-  outC->_L11.BG_Message.Header.m_version = kcg_lit_int64(0);
-  outC->_L11.BG_Message.Header.q_media = kcg_lit_int64(0);
-  outC->_L11.BG_Message.Header.n_pig = kcg_lit_int64(0);
-  outC->_L11.BG_Message.Header.n_total = kcg_lit_int64(0);
-  outC->_L11.BG_Message.Header.m_dup = kcg_lit_int64(0);
-  outC->_L11.BG_Message.Header.m_mcount = kcg_lit_int64(0);
-  outC->_L11.BG_Message.Header.nid_c = kcg_lit_int64(0);
-  outC->_L11.BG_Message.Header.nid_bg = kcg_lit_int64(0);
-  outC->_L11.BG_Message.Header.q_link = kcg_lit_int64(0);
+  outC->_L11.TrainPosRaw.TrainPos_in = kcg_lit_float32(0.0);
+  outC->_L11.TrainPosRaw.OffsetTotal = kcg_lit_int32(0);
+  outC->_L11.TrainPosRaw.TrainPosCalibrated = kcg_lit_float32(0.0);
+  outC->_L11.BG_Message.Header.q_updown = kcg_lit_int32(0);
+  outC->_L11.BG_Message.Header.m_version = kcg_lit_int32(0);
+  outC->_L11.BG_Message.Header.q_media = kcg_lit_int32(0);
+  outC->_L11.BG_Message.Header.n_pig = kcg_lit_int32(0);
+  outC->_L11.BG_Message.Header.n_total = kcg_lit_int32(0);
+  outC->_L11.BG_Message.Header.m_dup = kcg_lit_int32(0);
+  outC->_L11.BG_Message.Header.m_mcount = kcg_lit_int32(0);
+  outC->_L11.BG_Message.Header.nid_c = kcg_lit_int32(0);
+  outC->_L11.BG_Message.Header.nid_bg = kcg_lit_int32(0);
+  outC->_L11.BG_Message.Header.q_link = kcg_lit_int32(0);
   for (idx10 = 0; idx10 < 30; idx10++) {
     outC->_L11.BG_Message.Messages.PacketHeaders[idx10].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L11.BG_Message.Messages.PacketHeaders[idx10].q_dir = Q_DIR_Reverse;
     outC->_L11.BG_Message.Messages.PacketHeaders[idx10].valid = kcg_true;
     outC->_L11.BG_Message.Messages.PacketHeaders[idx10].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L11.BG_Message.Messages.PacketHeaders[idx10].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx11 = 0; idx11 < 500; idx11++) {
-    outC->_L11.BG_Message.Messages.PacketData[idx11] = kcg_lit_int64(0);
+    outC->_L11.BG_Message.Messages.PacketData[idx11] = kcg_lit_int32(0);
   }
-  outC->_L10.TrainPosRaw.TrainPos_in = kcg_lit_float64(0.0);
-  outC->_L10.TrainPosRaw.OffsetTotal = kcg_lit_int64(0);
-  outC->_L10.TrainPosRaw.TrainPosCalibrated = kcg_lit_float64(0.0);
-  outC->_L10.BG_Message.Header.q_updown = kcg_lit_int64(0);
-  outC->_L10.BG_Message.Header.m_version = kcg_lit_int64(0);
-  outC->_L10.BG_Message.Header.q_media = kcg_lit_int64(0);
-  outC->_L10.BG_Message.Header.n_pig = kcg_lit_int64(0);
-  outC->_L10.BG_Message.Header.n_total = kcg_lit_int64(0);
-  outC->_L10.BG_Message.Header.m_dup = kcg_lit_int64(0);
-  outC->_L10.BG_Message.Header.m_mcount = kcg_lit_int64(0);
-  outC->_L10.BG_Message.Header.nid_c = kcg_lit_int64(0);
-  outC->_L10.BG_Message.Header.nid_bg = kcg_lit_int64(0);
-  outC->_L10.BG_Message.Header.q_link = kcg_lit_int64(0);
+  outC->_L10.TrainPosRaw.TrainPos_in = kcg_lit_float32(0.0);
+  outC->_L10.TrainPosRaw.OffsetTotal = kcg_lit_int32(0);
+  outC->_L10.TrainPosRaw.TrainPosCalibrated = kcg_lit_float32(0.0);
+  outC->_L10.BG_Message.Header.q_updown = kcg_lit_int32(0);
+  outC->_L10.BG_Message.Header.m_version = kcg_lit_int32(0);
+  outC->_L10.BG_Message.Header.q_media = kcg_lit_int32(0);
+  outC->_L10.BG_Message.Header.n_pig = kcg_lit_int32(0);
+  outC->_L10.BG_Message.Header.n_total = kcg_lit_int32(0);
+  outC->_L10.BG_Message.Header.m_dup = kcg_lit_int32(0);
+  outC->_L10.BG_Message.Header.m_mcount = kcg_lit_int32(0);
+  outC->_L10.BG_Message.Header.nid_c = kcg_lit_int32(0);
+  outC->_L10.BG_Message.Header.nid_bg = kcg_lit_int32(0);
+  outC->_L10.BG_Message.Header.q_link = kcg_lit_int32(0);
   for (idx12 = 0; idx12 < 30; idx12++) {
     outC->_L10.BG_Message.Messages.PacketHeaders[idx12].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L10.BG_Message.Messages.PacketHeaders[idx12].q_dir = Q_DIR_Reverse;
     outC->_L10.BG_Message.Messages.PacketHeaders[idx12].valid = kcg_true;
     outC->_L10.BG_Message.Messages.PacketHeaders[idx12].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L10.BG_Message.Messages.PacketHeaders[idx12].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx13 = 0; idx13 < 500; idx13++) {
-    outC->_L10.BG_Message.Messages.PacketData[idx13] = kcg_lit_int64(0);
+    outC->_L10.BG_Message.Messages.PacketData[idx13] = kcg_lit_int32(0);
   }
-  outC->_L9.TrainPosRaw.TrainPos_in = kcg_lit_float64(0.0);
-  outC->_L9.TrainPosRaw.OffsetTotal = kcg_lit_int64(0);
-  outC->_L9.TrainPosRaw.TrainPosCalibrated = kcg_lit_float64(0.0);
-  outC->_L9.BG_Message.Header.q_updown = kcg_lit_int64(0);
-  outC->_L9.BG_Message.Header.m_version = kcg_lit_int64(0);
-  outC->_L9.BG_Message.Header.q_media = kcg_lit_int64(0);
-  outC->_L9.BG_Message.Header.n_pig = kcg_lit_int64(0);
-  outC->_L9.BG_Message.Header.n_total = kcg_lit_int64(0);
-  outC->_L9.BG_Message.Header.m_dup = kcg_lit_int64(0);
-  outC->_L9.BG_Message.Header.m_mcount = kcg_lit_int64(0);
-  outC->_L9.BG_Message.Header.nid_c = kcg_lit_int64(0);
-  outC->_L9.BG_Message.Header.nid_bg = kcg_lit_int64(0);
-  outC->_L9.BG_Message.Header.q_link = kcg_lit_int64(0);
+  outC->_L9.TrainPosRaw.TrainPos_in = kcg_lit_float32(0.0);
+  outC->_L9.TrainPosRaw.OffsetTotal = kcg_lit_int32(0);
+  outC->_L9.TrainPosRaw.TrainPosCalibrated = kcg_lit_float32(0.0);
+  outC->_L9.BG_Message.Header.q_updown = kcg_lit_int32(0);
+  outC->_L9.BG_Message.Header.m_version = kcg_lit_int32(0);
+  outC->_L9.BG_Message.Header.q_media = kcg_lit_int32(0);
+  outC->_L9.BG_Message.Header.n_pig = kcg_lit_int32(0);
+  outC->_L9.BG_Message.Header.n_total = kcg_lit_int32(0);
+  outC->_L9.BG_Message.Header.m_dup = kcg_lit_int32(0);
+  outC->_L9.BG_Message.Header.m_mcount = kcg_lit_int32(0);
+  outC->_L9.BG_Message.Header.nid_c = kcg_lit_int32(0);
+  outC->_L9.BG_Message.Header.nid_bg = kcg_lit_int32(0);
+  outC->_L9.BG_Message.Header.q_link = kcg_lit_int32(0);
   for (idx14 = 0; idx14 < 30; idx14++) {
     outC->_L9.BG_Message.Messages.PacketHeaders[idx14].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L9.BG_Message.Messages.PacketHeaders[idx14].q_dir = Q_DIR_Reverse;
     outC->_L9.BG_Message.Messages.PacketHeaders[idx14].valid = kcg_true;
     outC->_L9.BG_Message.Messages.PacketHeaders[idx14].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L9.BG_Message.Messages.PacketHeaders[idx14].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx15 = 0; idx15 < 500; idx15++) {
-    outC->_L9.BG_Message.Messages.PacketData[idx15] = kcg_lit_int64(0);
+    outC->_L9.BG_Message.Messages.PacketData[idx15] = kcg_lit_int32(0);
   }
-  outC->_L8.TrainPosRaw.TrainPos_in = kcg_lit_float64(0.0);
-  outC->_L8.TrainPosRaw.OffsetTotal = kcg_lit_int64(0);
-  outC->_L8.TrainPosRaw.TrainPosCalibrated = kcg_lit_float64(0.0);
-  outC->_L8.BG_Message.Header.q_updown = kcg_lit_int64(0);
-  outC->_L8.BG_Message.Header.m_version = kcg_lit_int64(0);
-  outC->_L8.BG_Message.Header.q_media = kcg_lit_int64(0);
-  outC->_L8.BG_Message.Header.n_pig = kcg_lit_int64(0);
-  outC->_L8.BG_Message.Header.n_total = kcg_lit_int64(0);
-  outC->_L8.BG_Message.Header.m_dup = kcg_lit_int64(0);
-  outC->_L8.BG_Message.Header.m_mcount = kcg_lit_int64(0);
-  outC->_L8.BG_Message.Header.nid_c = kcg_lit_int64(0);
-  outC->_L8.BG_Message.Header.nid_bg = kcg_lit_int64(0);
-  outC->_L8.BG_Message.Header.q_link = kcg_lit_int64(0);
+  outC->_L8.TrainPosRaw.TrainPos_in = kcg_lit_float32(0.0);
+  outC->_L8.TrainPosRaw.OffsetTotal = kcg_lit_int32(0);
+  outC->_L8.TrainPosRaw.TrainPosCalibrated = kcg_lit_float32(0.0);
+  outC->_L8.BG_Message.Header.q_updown = kcg_lit_int32(0);
+  outC->_L8.BG_Message.Header.m_version = kcg_lit_int32(0);
+  outC->_L8.BG_Message.Header.q_media = kcg_lit_int32(0);
+  outC->_L8.BG_Message.Header.n_pig = kcg_lit_int32(0);
+  outC->_L8.BG_Message.Header.n_total = kcg_lit_int32(0);
+  outC->_L8.BG_Message.Header.m_dup = kcg_lit_int32(0);
+  outC->_L8.BG_Message.Header.m_mcount = kcg_lit_int32(0);
+  outC->_L8.BG_Message.Header.nid_c = kcg_lit_int32(0);
+  outC->_L8.BG_Message.Header.nid_bg = kcg_lit_int32(0);
+  outC->_L8.BG_Message.Header.q_link = kcg_lit_int32(0);
   for (idx16 = 0; idx16 < 30; idx16++) {
     outC->_L8.BG_Message.Messages.PacketHeaders[idx16].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L8.BG_Message.Messages.PacketHeaders[idx16].q_dir = Q_DIR_Reverse;
     outC->_L8.BG_Message.Messages.PacketHeaders[idx16].valid = kcg_true;
     outC->_L8.BG_Message.Messages.PacketHeaders[idx16].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L8.BG_Message.Messages.PacketHeaders[idx16].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx17 = 0; idx17 < 500; idx17++) {
-    outC->_L8.BG_Message.Messages.PacketData[idx17] = kcg_lit_int64(0);
+    outC->_L8.BG_Message.Messages.PacketData[idx17] = kcg_lit_int32(0);
   }
-  outC->_L7.TrainPosRaw.TrainPos_in = kcg_lit_float64(0.0);
-  outC->_L7.TrainPosRaw.OffsetTotal = kcg_lit_int64(0);
-  outC->_L7.TrainPosRaw.TrainPosCalibrated = kcg_lit_float64(0.0);
-  outC->_L7.BG_Message.Header.q_updown = kcg_lit_int64(0);
-  outC->_L7.BG_Message.Header.m_version = kcg_lit_int64(0);
-  outC->_L7.BG_Message.Header.q_media = kcg_lit_int64(0);
-  outC->_L7.BG_Message.Header.n_pig = kcg_lit_int64(0);
-  outC->_L7.BG_Message.Header.n_total = kcg_lit_int64(0);
-  outC->_L7.BG_Message.Header.m_dup = kcg_lit_int64(0);
-  outC->_L7.BG_Message.Header.m_mcount = kcg_lit_int64(0);
-  outC->_L7.BG_Message.Header.nid_c = kcg_lit_int64(0);
-  outC->_L7.BG_Message.Header.nid_bg = kcg_lit_int64(0);
-  outC->_L7.BG_Message.Header.q_link = kcg_lit_int64(0);
+  outC->_L7.TrainPosRaw.TrainPos_in = kcg_lit_float32(0.0);
+  outC->_L7.TrainPosRaw.OffsetTotal = kcg_lit_int32(0);
+  outC->_L7.TrainPosRaw.TrainPosCalibrated = kcg_lit_float32(0.0);
+  outC->_L7.BG_Message.Header.q_updown = kcg_lit_int32(0);
+  outC->_L7.BG_Message.Header.m_version = kcg_lit_int32(0);
+  outC->_L7.BG_Message.Header.q_media = kcg_lit_int32(0);
+  outC->_L7.BG_Message.Header.n_pig = kcg_lit_int32(0);
+  outC->_L7.BG_Message.Header.n_total = kcg_lit_int32(0);
+  outC->_L7.BG_Message.Header.m_dup = kcg_lit_int32(0);
+  outC->_L7.BG_Message.Header.m_mcount = kcg_lit_int32(0);
+  outC->_L7.BG_Message.Header.nid_c = kcg_lit_int32(0);
+  outC->_L7.BG_Message.Header.nid_bg = kcg_lit_int32(0);
+  outC->_L7.BG_Message.Header.q_link = kcg_lit_int32(0);
   for (idx18 = 0; idx18 < 30; idx18++) {
     outC->_L7.BG_Message.Messages.PacketHeaders[idx18].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L7.BG_Message.Messages.PacketHeaders[idx18].q_dir = Q_DIR_Reverse;
     outC->_L7.BG_Message.Messages.PacketHeaders[idx18].valid = kcg_true;
     outC->_L7.BG_Message.Messages.PacketHeaders[idx18].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L7.BG_Message.Messages.PacketHeaders[idx18].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx19 = 0; idx19 < 500; idx19++) {
-    outC->_L7.BG_Message.Messages.PacketData[idx19] = kcg_lit_int64(0);
+    outC->_L7.BG_Message.Messages.PacketData[idx19] = kcg_lit_int32(0);
   }
-  outC->_L6.TrainPosRaw.TrainPos_in = kcg_lit_float64(0.0);
-  outC->_L6.TrainPosRaw.OffsetTotal = kcg_lit_int64(0);
-  outC->_L6.TrainPosRaw.TrainPosCalibrated = kcg_lit_float64(0.0);
-  outC->_L6.BG_Message.Header.q_updown = kcg_lit_int64(0);
-  outC->_L6.BG_Message.Header.m_version = kcg_lit_int64(0);
-  outC->_L6.BG_Message.Header.q_media = kcg_lit_int64(0);
-  outC->_L6.BG_Message.Header.n_pig = kcg_lit_int64(0);
-  outC->_L6.BG_Message.Header.n_total = kcg_lit_int64(0);
-  outC->_L6.BG_Message.Header.m_dup = kcg_lit_int64(0);
-  outC->_L6.BG_Message.Header.m_mcount = kcg_lit_int64(0);
-  outC->_L6.BG_Message.Header.nid_c = kcg_lit_int64(0);
-  outC->_L6.BG_Message.Header.nid_bg = kcg_lit_int64(0);
-  outC->_L6.BG_Message.Header.q_link = kcg_lit_int64(0);
+  outC->_L6.TrainPosRaw.TrainPos_in = kcg_lit_float32(0.0);
+  outC->_L6.TrainPosRaw.OffsetTotal = kcg_lit_int32(0);
+  outC->_L6.TrainPosRaw.TrainPosCalibrated = kcg_lit_float32(0.0);
+  outC->_L6.BG_Message.Header.q_updown = kcg_lit_int32(0);
+  outC->_L6.BG_Message.Header.m_version = kcg_lit_int32(0);
+  outC->_L6.BG_Message.Header.q_media = kcg_lit_int32(0);
+  outC->_L6.BG_Message.Header.n_pig = kcg_lit_int32(0);
+  outC->_L6.BG_Message.Header.n_total = kcg_lit_int32(0);
+  outC->_L6.BG_Message.Header.m_dup = kcg_lit_int32(0);
+  outC->_L6.BG_Message.Header.m_mcount = kcg_lit_int32(0);
+  outC->_L6.BG_Message.Header.nid_c = kcg_lit_int32(0);
+  outC->_L6.BG_Message.Header.nid_bg = kcg_lit_int32(0);
+  outC->_L6.BG_Message.Header.q_link = kcg_lit_int32(0);
   for (idx20 = 0; idx20 < 30; idx20++) {
     outC->_L6.BG_Message.Messages.PacketHeaders[idx20].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L6.BG_Message.Messages.PacketHeaders[idx20].q_dir = Q_DIR_Reverse;
     outC->_L6.BG_Message.Messages.PacketHeaders[idx20].valid = kcg_true;
     outC->_L6.BG_Message.Messages.PacketHeaders[idx20].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L6.BG_Message.Messages.PacketHeaders[idx20].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx21 = 0; idx21 < 500; idx21++) {
-    outC->_L6.BG_Message.Messages.PacketData[idx21] = kcg_lit_int64(0);
+    outC->_L6.BG_Message.Messages.PacketData[idx21] = kcg_lit_int32(0);
   }
-  outC->_L5.TrainPosRaw.TrainPos_in = kcg_lit_float64(0.0);
-  outC->_L5.TrainPosRaw.OffsetTotal = kcg_lit_int64(0);
-  outC->_L5.TrainPosRaw.TrainPosCalibrated = kcg_lit_float64(0.0);
-  outC->_L5.BG_Message.Header.q_updown = kcg_lit_int64(0);
-  outC->_L5.BG_Message.Header.m_version = kcg_lit_int64(0);
-  outC->_L5.BG_Message.Header.q_media = kcg_lit_int64(0);
-  outC->_L5.BG_Message.Header.n_pig = kcg_lit_int64(0);
-  outC->_L5.BG_Message.Header.n_total = kcg_lit_int64(0);
-  outC->_L5.BG_Message.Header.m_dup = kcg_lit_int64(0);
-  outC->_L5.BG_Message.Header.m_mcount = kcg_lit_int64(0);
-  outC->_L5.BG_Message.Header.nid_c = kcg_lit_int64(0);
-  outC->_L5.BG_Message.Header.nid_bg = kcg_lit_int64(0);
-  outC->_L5.BG_Message.Header.q_link = kcg_lit_int64(0);
+  outC->_L5.TrainPosRaw.TrainPos_in = kcg_lit_float32(0.0);
+  outC->_L5.TrainPosRaw.OffsetTotal = kcg_lit_int32(0);
+  outC->_L5.TrainPosRaw.TrainPosCalibrated = kcg_lit_float32(0.0);
+  outC->_L5.BG_Message.Header.q_updown = kcg_lit_int32(0);
+  outC->_L5.BG_Message.Header.m_version = kcg_lit_int32(0);
+  outC->_L5.BG_Message.Header.q_media = kcg_lit_int32(0);
+  outC->_L5.BG_Message.Header.n_pig = kcg_lit_int32(0);
+  outC->_L5.BG_Message.Header.n_total = kcg_lit_int32(0);
+  outC->_L5.BG_Message.Header.m_dup = kcg_lit_int32(0);
+  outC->_L5.BG_Message.Header.m_mcount = kcg_lit_int32(0);
+  outC->_L5.BG_Message.Header.nid_c = kcg_lit_int32(0);
+  outC->_L5.BG_Message.Header.nid_bg = kcg_lit_int32(0);
+  outC->_L5.BG_Message.Header.q_link = kcg_lit_int32(0);
   for (idx22 = 0; idx22 < 30; idx22++) {
     outC->_L5.BG_Message.Messages.PacketHeaders[idx22].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5.BG_Message.Messages.PacketHeaders[idx22].q_dir = Q_DIR_Reverse;
     outC->_L5.BG_Message.Messages.PacketHeaders[idx22].valid = kcg_true;
     outC->_L5.BG_Message.Messages.PacketHeaders[idx22].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L5.BG_Message.Messages.PacketHeaders[idx22].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx23 = 0; idx23 < 500; idx23++) {
-    outC->_L5.BG_Message.Messages.PacketData[idx23] = kcg_lit_int64(0);
+    outC->_L5.BG_Message.Messages.PacketData[idx23] = kcg_lit_int32(0);
   }
-  outC->_L4.TrainPosRaw.TrainPos_in = kcg_lit_float64(0.0);
-  outC->_L4.TrainPosRaw.OffsetTotal = kcg_lit_int64(0);
-  outC->_L4.TrainPosRaw.TrainPosCalibrated = kcg_lit_float64(0.0);
-  outC->_L4.BG_Message.Header.q_updown = kcg_lit_int64(0);
-  outC->_L4.BG_Message.Header.m_version = kcg_lit_int64(0);
-  outC->_L4.BG_Message.Header.q_media = kcg_lit_int64(0);
-  outC->_L4.BG_Message.Header.n_pig = kcg_lit_int64(0);
-  outC->_L4.BG_Message.Header.n_total = kcg_lit_int64(0);
-  outC->_L4.BG_Message.Header.m_dup = kcg_lit_int64(0);
-  outC->_L4.BG_Message.Header.m_mcount = kcg_lit_int64(0);
-  outC->_L4.BG_Message.Header.nid_c = kcg_lit_int64(0);
-  outC->_L4.BG_Message.Header.nid_bg = kcg_lit_int64(0);
-  outC->_L4.BG_Message.Header.q_link = kcg_lit_int64(0);
+  outC->_L4.TrainPosRaw.TrainPos_in = kcg_lit_float32(0.0);
+  outC->_L4.TrainPosRaw.OffsetTotal = kcg_lit_int32(0);
+  outC->_L4.TrainPosRaw.TrainPosCalibrated = kcg_lit_float32(0.0);
+  outC->_L4.BG_Message.Header.q_updown = kcg_lit_int32(0);
+  outC->_L4.BG_Message.Header.m_version = kcg_lit_int32(0);
+  outC->_L4.BG_Message.Header.q_media = kcg_lit_int32(0);
+  outC->_L4.BG_Message.Header.n_pig = kcg_lit_int32(0);
+  outC->_L4.BG_Message.Header.n_total = kcg_lit_int32(0);
+  outC->_L4.BG_Message.Header.m_dup = kcg_lit_int32(0);
+  outC->_L4.BG_Message.Header.m_mcount = kcg_lit_int32(0);
+  outC->_L4.BG_Message.Header.nid_c = kcg_lit_int32(0);
+  outC->_L4.BG_Message.Header.nid_bg = kcg_lit_int32(0);
+  outC->_L4.BG_Message.Header.q_link = kcg_lit_int32(0);
   for (idx24 = 0; idx24 < 30; idx24++) {
     outC->_L4.BG_Message.Messages.PacketHeaders[idx24].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L4.BG_Message.Messages.PacketHeaders[idx24].q_dir = Q_DIR_Reverse;
     outC->_L4.BG_Message.Messages.PacketHeaders[idx24].valid = kcg_true;
     outC->_L4.BG_Message.Messages.PacketHeaders[idx24].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L4.BG_Message.Messages.PacketHeaders[idx24].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx25 = 0; idx25 < 500; idx25++) {
-    outC->_L4.BG_Message.Messages.PacketData[idx25] = kcg_lit_int64(0);
+    outC->_L4.BG_Message.Messages.PacketData[idx25] = kcg_lit_int32(0);
   }
-  outC->_L3.TrainPosRaw.TrainPos_in = kcg_lit_float64(0.0);
-  outC->_L3.TrainPosRaw.OffsetTotal = kcg_lit_int64(0);
-  outC->_L3.TrainPosRaw.TrainPosCalibrated = kcg_lit_float64(0.0);
-  outC->_L3.BG_Message.Header.q_updown = kcg_lit_int64(0);
-  outC->_L3.BG_Message.Header.m_version = kcg_lit_int64(0);
-  outC->_L3.BG_Message.Header.q_media = kcg_lit_int64(0);
-  outC->_L3.BG_Message.Header.n_pig = kcg_lit_int64(0);
-  outC->_L3.BG_Message.Header.n_total = kcg_lit_int64(0);
-  outC->_L3.BG_Message.Header.m_dup = kcg_lit_int64(0);
-  outC->_L3.BG_Message.Header.m_mcount = kcg_lit_int64(0);
-  outC->_L3.BG_Message.Header.nid_c = kcg_lit_int64(0);
-  outC->_L3.BG_Message.Header.nid_bg = kcg_lit_int64(0);
-  outC->_L3.BG_Message.Header.q_link = kcg_lit_int64(0);
+  outC->_L3.TrainPosRaw.TrainPos_in = kcg_lit_float32(0.0);
+  outC->_L3.TrainPosRaw.OffsetTotal = kcg_lit_int32(0);
+  outC->_L3.TrainPosRaw.TrainPosCalibrated = kcg_lit_float32(0.0);
+  outC->_L3.BG_Message.Header.q_updown = kcg_lit_int32(0);
+  outC->_L3.BG_Message.Header.m_version = kcg_lit_int32(0);
+  outC->_L3.BG_Message.Header.q_media = kcg_lit_int32(0);
+  outC->_L3.BG_Message.Header.n_pig = kcg_lit_int32(0);
+  outC->_L3.BG_Message.Header.n_total = kcg_lit_int32(0);
+  outC->_L3.BG_Message.Header.m_dup = kcg_lit_int32(0);
+  outC->_L3.BG_Message.Header.m_mcount = kcg_lit_int32(0);
+  outC->_L3.BG_Message.Header.nid_c = kcg_lit_int32(0);
+  outC->_L3.BG_Message.Header.nid_bg = kcg_lit_int32(0);
+  outC->_L3.BG_Message.Header.q_link = kcg_lit_int32(0);
   for (idx26 = 0; idx26 < 30; idx26++) {
     outC->_L3.BG_Message.Messages.PacketHeaders[idx26].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3.BG_Message.Messages.PacketHeaders[idx26].q_dir = Q_DIR_Reverse;
     outC->_L3.BG_Message.Messages.PacketHeaders[idx26].valid = kcg_true;
     outC->_L3.BG_Message.Messages.PacketHeaders[idx26].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L3.BG_Message.Messages.PacketHeaders[idx26].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx27 = 0; idx27 < 500; idx27++) {
-    outC->_L3.BG_Message.Messages.PacketData[idx27] = kcg_lit_int64(0);
+    outC->_L3.BG_Message.Messages.PacketData[idx27] = kcg_lit_int32(0);
   }
-  outC->_L2.TrainPosRaw.TrainPos_in = kcg_lit_float64(0.0);
-  outC->_L2.TrainPosRaw.OffsetTotal = kcg_lit_int64(0);
-  outC->_L2.TrainPosRaw.TrainPosCalibrated = kcg_lit_float64(0.0);
-  outC->_L2.BG_Message.Header.q_updown = kcg_lit_int64(0);
-  outC->_L2.BG_Message.Header.m_version = kcg_lit_int64(0);
-  outC->_L2.BG_Message.Header.q_media = kcg_lit_int64(0);
-  outC->_L2.BG_Message.Header.n_pig = kcg_lit_int64(0);
-  outC->_L2.BG_Message.Header.n_total = kcg_lit_int64(0);
-  outC->_L2.BG_Message.Header.m_dup = kcg_lit_int64(0);
-  outC->_L2.BG_Message.Header.m_mcount = kcg_lit_int64(0);
-  outC->_L2.BG_Message.Header.nid_c = kcg_lit_int64(0);
-  outC->_L2.BG_Message.Header.nid_bg = kcg_lit_int64(0);
-  outC->_L2.BG_Message.Header.q_link = kcg_lit_int64(0);
+  outC->_L2.TrainPosRaw.TrainPos_in = kcg_lit_float32(0.0);
+  outC->_L2.TrainPosRaw.OffsetTotal = kcg_lit_int32(0);
+  outC->_L2.TrainPosRaw.TrainPosCalibrated = kcg_lit_float32(0.0);
+  outC->_L2.BG_Message.Header.q_updown = kcg_lit_int32(0);
+  outC->_L2.BG_Message.Header.m_version = kcg_lit_int32(0);
+  outC->_L2.BG_Message.Header.q_media = kcg_lit_int32(0);
+  outC->_L2.BG_Message.Header.n_pig = kcg_lit_int32(0);
+  outC->_L2.BG_Message.Header.n_total = kcg_lit_int32(0);
+  outC->_L2.BG_Message.Header.m_dup = kcg_lit_int32(0);
+  outC->_L2.BG_Message.Header.m_mcount = kcg_lit_int32(0);
+  outC->_L2.BG_Message.Header.nid_c = kcg_lit_int32(0);
+  outC->_L2.BG_Message.Header.nid_bg = kcg_lit_int32(0);
+  outC->_L2.BG_Message.Header.q_link = kcg_lit_int32(0);
   for (idx28 = 0; idx28 < 30; idx28++) {
     outC->_L2.BG_Message.Messages.PacketHeaders[idx28].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L2.BG_Message.Messages.PacketHeaders[idx28].q_dir = Q_DIR_Reverse;
     outC->_L2.BG_Message.Messages.PacketHeaders[idx28].valid = kcg_true;
     outC->_L2.BG_Message.Messages.PacketHeaders[idx28].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L2.BG_Message.Messages.PacketHeaders[idx28].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx29 = 0; idx29 < 500; idx29++) {
-    outC->_L2.BG_Message.Messages.PacketData[idx29] = kcg_lit_int64(0);
+    outC->_L2.BG_Message.Messages.PacketData[idx29] = kcg_lit_int32(0);
   }
-  outC->_L1.TrainPosRaw.TrainPos_in = kcg_lit_float64(0.0);
-  outC->_L1.TrainPosRaw.OffsetTotal = kcg_lit_int64(0);
-  outC->_L1.TrainPosRaw.TrainPosCalibrated = kcg_lit_float64(0.0);
-  outC->_L1.BG_Message.Header.q_updown = kcg_lit_int64(0);
-  outC->_L1.BG_Message.Header.m_version = kcg_lit_int64(0);
-  outC->_L1.BG_Message.Header.q_media = kcg_lit_int64(0);
-  outC->_L1.BG_Message.Header.n_pig = kcg_lit_int64(0);
-  outC->_L1.BG_Message.Header.n_total = kcg_lit_int64(0);
-  outC->_L1.BG_Message.Header.m_dup = kcg_lit_int64(0);
-  outC->_L1.BG_Message.Header.m_mcount = kcg_lit_int64(0);
-  outC->_L1.BG_Message.Header.nid_c = kcg_lit_int64(0);
-  outC->_L1.BG_Message.Header.nid_bg = kcg_lit_int64(0);
-  outC->_L1.BG_Message.Header.q_link = kcg_lit_int64(0);
+  outC->_L1.TrainPosRaw.TrainPos_in = kcg_lit_float32(0.0);
+  outC->_L1.TrainPosRaw.OffsetTotal = kcg_lit_int32(0);
+  outC->_L1.TrainPosRaw.TrainPosCalibrated = kcg_lit_float32(0.0);
+  outC->_L1.BG_Message.Header.q_updown = kcg_lit_int32(0);
+  outC->_L1.BG_Message.Header.m_version = kcg_lit_int32(0);
+  outC->_L1.BG_Message.Header.q_media = kcg_lit_int32(0);
+  outC->_L1.BG_Message.Header.n_pig = kcg_lit_int32(0);
+  outC->_L1.BG_Message.Header.n_total = kcg_lit_int32(0);
+  outC->_L1.BG_Message.Header.m_dup = kcg_lit_int32(0);
+  outC->_L1.BG_Message.Header.m_mcount = kcg_lit_int32(0);
+  outC->_L1.BG_Message.Header.nid_c = kcg_lit_int32(0);
+  outC->_L1.BG_Message.Header.nid_bg = kcg_lit_int32(0);
+  outC->_L1.BG_Message.Header.q_link = kcg_lit_int32(0);
   for (idx30 = 0; idx30 < 30; idx30++) {
     outC->_L1.BG_Message.Messages.PacketHeaders[idx30].nid_packet =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L1.BG_Message.Messages.PacketHeaders[idx30].q_dir = Q_DIR_Reverse;
     outC->_L1.BG_Message.Messages.PacketHeaders[idx30].valid = kcg_true;
     outC->_L1.BG_Message.Messages.PacketHeaders[idx30].startAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
     outC->_L1.BG_Message.Messages.PacketHeaders[idx30].endAddress =
-      kcg_lit_int64(0);
+      kcg_lit_int32(0);
   }
   for (idx31 = 0; idx31 < 500; idx31++) {
-    outC->_L1.BG_Message.Messages.PacketData[idx31] = kcg_lit_int64(0);
+    outC->_L1.BG_Message.Messages.PacketData[idx31] = kcg_lit_int32(0);
   }
-  outC->BaliseMessage.Header.q_updown = kcg_lit_int64(0);
-  outC->BaliseMessage.Header.m_version = kcg_lit_int64(0);
-  outC->BaliseMessage.Header.q_media = kcg_lit_int64(0);
-  outC->BaliseMessage.Header.n_pig = kcg_lit_int64(0);
-  outC->BaliseMessage.Header.n_total = kcg_lit_int64(0);
-  outC->BaliseMessage.Header.m_dup = kcg_lit_int64(0);
-  outC->BaliseMessage.Header.m_mcount = kcg_lit_int64(0);
-  outC->BaliseMessage.Header.nid_c = kcg_lit_int64(0);
-  outC->BaliseMessage.Header.nid_bg = kcg_lit_int64(0);
-  outC->BaliseMessage.Header.q_link = kcg_lit_int64(0);
+  outC->BaliseMessage.Header.q_updown = kcg_lit_int32(0);
+  outC->BaliseMessage.Header.m_version = kcg_lit_int32(0);
+  outC->BaliseMessage.Header.q_media = kcg_lit_int32(0);
+  outC->BaliseMessage.Header.n_pig = kcg_lit_int32(0);
+  outC->BaliseMessage.Header.n_total = kcg_lit_int32(0);
+  outC->BaliseMessage.Header.m_dup = kcg_lit_int32(0);
+  outC->BaliseMessage.Header.m_mcount = kcg_lit_int32(0);
+  outC->BaliseMessage.Header.nid_c = kcg_lit_int32(0);
+  outC->BaliseMessage.Header.nid_bg = kcg_lit_int32(0);
+  outC->BaliseMessage.Header.q_link = kcg_lit_int32(0);
   for (idx32 = 0; idx32 < 30; idx32++) {
-    outC->BaliseMessage.Messages.PacketHeaders[idx32].nid_packet = kcg_lit_int64(0);
+    outC->BaliseMessage.Messages.PacketHeaders[idx32].nid_packet = kcg_lit_int32(0);
     outC->BaliseMessage.Messages.PacketHeaders[idx32].q_dir = Q_DIR_Reverse;
     outC->BaliseMessage.Messages.PacketHeaders[idx32].valid = kcg_true;
     outC->BaliseMessage.Messages.PacketHeaders[idx32].startAddress =
-      kcg_lit_int64(0);
-    outC->BaliseMessage.Messages.PacketHeaders[idx32].endAddress = kcg_lit_int64(0);
+      kcg_lit_int32(0);
+    outC->BaliseMessage.Messages.PacketHeaders[idx32].endAddress = kcg_lit_int32(0);
   }
   for (idx33 = 0; idx33 < 500; idx33++) {
-    outC->BaliseMessage.Messages.PacketData[idx33] = kcg_lit_int64(0);
+    outC->BaliseMessage.Messages.PacketData[idx33] = kcg_lit_int32(0);
   }
   /* _L17=(InfraLib::TrackClose#1)/ */
   TrackClose_init_InfraLib(&outC->Context_TrackClose_1);

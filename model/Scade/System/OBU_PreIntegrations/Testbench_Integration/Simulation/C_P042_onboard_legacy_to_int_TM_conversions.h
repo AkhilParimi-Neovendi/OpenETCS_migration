@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _C_P042_onboard_legacy_to_int_TM_conversions_H_
 #define _C_P042_onboard_legacy_to_int_TM_conversions_H_
@@ -28,20 +28,20 @@ typedef struct {
   outC_CAST_Q_DIR_to_int_TM_conversions /* _L11=(TM_conversions::CAST_Q_DIR_to_int#1)/ */ Context_CAST_Q_DIR_to_int_1;
   outC_CAST_NID_C_to_int_TM_conversions /* _L27=(TM_conversions::CAST_NID_C_to_int#1)/ */ Context_CAST_NID_C_to_int_1;
   outC_CAST_NID_RBC_to_int_TM_conversions /* _L29=(TM_conversions::CAST_NID_RBC_to_int#1)/ */ Context_CAST_NID_RBC_to_int_1;
-  outC_CAST_NID_RADIO_to_int_TM_conversions /* _L31=(TM_conversions::CAST_NID_RADIO_to_int#1)/ */ Context_CAST_NID_RADIO_to_int_1;
   outC_CAST_Q_SLEEPSESSION_to_int_TM_conversions /* _L33=(TM_conversions::CAST_Q_SLEEPSESSION_to_int#1)/ */ Context_CAST_Q_SLEEPSESSION_to_int_1;
+  outC_CAST_NID_RADIO_to_int_TM_conversions /* _L31=(TM_conversions::CAST_NID_RADIO_to_int#1)/ */ Context_CAST_NID_RADIO_to_int_1;
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L11/ */ _L11;
+  kcg_int32 /* _L11/ */ _L11;
   P042_trackside_int_T_TM /* _L10/ */ _L10;
   P42_SessionManagement_T_Packet_Types_Pkg /* _L9/ */ _L9;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L21/ */ _L21;
-  kcg_int64 /* _L27/ */ _L27;
-  kcg_int64 /* _L29/ */ _L29;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L21/ */ _L21;
+  kcg_int32 /* _L27/ */ _L27;
+  kcg_int32 /* _L29/ */ _L29;
   kcg_int64 /* _L31/ */ _L31;
-  kcg_int64 /* _L33/ */ _L33;
+  kcg_int32 /* _L33/ */ _L33;
   Q_SLEEPSESSION /* _L40/ */ _L40;
   NID_RADIO /* _L39/ */ _L39;
   NID_RBC /* _L38/ */ _L38;
@@ -49,7 +49,8 @@ typedef struct {
   Q_RBC /* _L36/ */ _L36;
   Q_DIR /* _L35/ */ _L35;
   kcg_bool /* _L34/ */ _L34;
-  kcg_int64 /* _L48/ */ _L48;
+  kcg_int32 /* _L48/ */ _L48;
+  kcg_int32 /* _L49/ */ _L49;
 } outC_C_P042_onboard_legacy_to_int_TM_conversions;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -74,6 +75,6 @@ extern void C_P042_onboard_legacy_to_int_init_TM_conversions(
 #endif /* _C_P042_onboard_legacy_to_int_TM_conversions_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P042_onboard_legacy_to_int_TM_conversions.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

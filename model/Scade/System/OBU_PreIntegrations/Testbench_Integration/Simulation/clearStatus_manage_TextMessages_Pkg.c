@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -34,14 +34,14 @@ void clearStatus_manage_TextMessages_Pkg(
     for (idx1 = 0; idx1 < 31; idx1++) {
       /* _L3=(manage_TextMessages_Pkg::deleteElement#1)/ */
       deleteElement_manage_TextMessages_Pkg(
-        /* _L3= */(kcg_int64) idx1,
+        /* _L3= */(kcg_int32) idx1,
         &outC->_L6[idx1],
         outC->_L9[idx1],
         &outC->Context_deleteElement_1[idx1]);
       kcg_copy_DMI_TXT_MSG_status_T_DMI_Types_Pkg(
         &outC->_L5[idx1],
         &outC->Context_deleteElement_1[idx1].toStore);
-      outC->_L3 = /* _L3= */(kcg_int64) (idx1 + 1);
+      outC->_L3 = /* _L3= */(kcg_int32) (idx1 + 1);
       /* _L3= */
       if (!outC->Context_deleteElement_1[idx1]._1_continue) {
         break;
@@ -49,7 +49,7 @@ void clearStatus_manage_TextMessages_Pkg(
     }
   }
   else {
-    outC->_L3 = kcg_lit_int64(0);
+    outC->_L3 = kcg_lit_int32(0);
   }
 #ifdef KCG_MAPW_CPY
 
@@ -76,50 +76,50 @@ void clearStatus_init_manage_TextMessages_Pkg(
   static kcg_size idx4;
 
   outC->_L10.valid = kcg_true;
-  outC->_L10.dmi_textMessageID = kcg_lit_int64(0);
-  outC->_L10.timeStamp = kcg_lit_int64(0);
+  outC->_L10.dmi_textMessageID = kcg_lit_int32(0);
+  outC->_L10.timeStamp = kcg_lit_int32(0);
   outC->_L10.textReport = Q_TEXTREPORT_No_driver_acknowledgement_report_required;
   outC->_L10.context = con_undefined_DMI_Types_Pkg;
-  outC->_L10.nid_textmessage = kcg_lit_int64(0);
+  outC->_L10.nid_textmessage = kcg_lit_int32(0);
   outC->_L10.whichLevel = M_LEVEL_Level_0;
   outC->_L10.whichMode = M_MODE_Full_Supervision;
   for (idx1 = 0; idx1 < 31; idx1++) {
-    outC->_L9[idx1] = kcg_lit_int64(0);
+    outC->_L9[idx1] = kcg_lit_int32(0);
   }
-  outC->_L7 = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 31; idx2++) {
     outC->_L6[idx2].valid = kcg_true;
-    outC->_L6[idx2].dmi_textMessageID = kcg_lit_int64(0);
-    outC->_L6[idx2].timeStamp = kcg_lit_int64(0);
+    outC->_L6[idx2].dmi_textMessageID = kcg_lit_int32(0);
+    outC->_L6[idx2].timeStamp = kcg_lit_int32(0);
     outC->_L6[idx2].textReport =
       Q_TEXTREPORT_No_driver_acknowledgement_report_required;
     outC->_L6[idx2].context = con_undefined_DMI_Types_Pkg;
-    outC->_L6[idx2].nid_textmessage = kcg_lit_int64(0);
+    outC->_L6[idx2].nid_textmessage = kcg_lit_int32(0);
     outC->_L6[idx2].whichLevel = M_LEVEL_Level_0;
     outC->_L6[idx2].whichMode = M_MODE_Full_Supervision;
   }
   for (idx3 = 0; idx3 < 31; idx3++) {
     outC->_L5[idx3].valid = kcg_true;
-    outC->_L5[idx3].dmi_textMessageID = kcg_lit_int64(0);
-    outC->_L5[idx3].timeStamp = kcg_lit_int64(0);
+    outC->_L5[idx3].dmi_textMessageID = kcg_lit_int32(0);
+    outC->_L5[idx3].timeStamp = kcg_lit_int32(0);
     outC->_L5[idx3].textReport =
       Q_TEXTREPORT_No_driver_acknowledgement_report_required;
     outC->_L5[idx3].context = con_undefined_DMI_Types_Pkg;
-    outC->_L5[idx3].nid_textmessage = kcg_lit_int64(0);
+    outC->_L5[idx3].nid_textmessage = kcg_lit_int32(0);
     outC->_L5[idx3].whichLevel = M_LEVEL_Level_0;
     outC->_L5[idx3].whichMode = M_MODE_Full_Supervision;
   }
   outC->_L4 = kcg_true;
-  outC->_L3 = kcg_lit_int64(0);
-  outC->outIndex = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->outIndex = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 31; idx4++) {
     outC->outStatusList[idx4].valid = kcg_true;
-    outC->outStatusList[idx4].dmi_textMessageID = kcg_lit_int64(0);
-    outC->outStatusList[idx4].timeStamp = kcg_lit_int64(0);
+    outC->outStatusList[idx4].dmi_textMessageID = kcg_lit_int32(0);
+    outC->outStatusList[idx4].timeStamp = kcg_lit_int32(0);
     outC->outStatusList[idx4].textReport =
       Q_TEXTREPORT_No_driver_acknowledgement_report_required;
     outC->outStatusList[idx4].context = con_undefined_DMI_Types_Pkg;
-    outC->outStatusList[idx4].nid_textmessage = kcg_lit_int64(0);
+    outC->outStatusList[idx4].nid_textmessage = kcg_lit_int32(0);
     outC->outStatusList[idx4].whichLevel = M_LEVEL_Level_0;
     outC->outStatusList[idx4].whichMode = M_MODE_Full_Supervision;
   }
@@ -150,6 +150,6 @@ void clearStatus_reset_manage_TextMessages_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** clearStatus_manage_TextMessages_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

@@ -36,7 +36,7 @@ typedef struct {
   odoMotionState_T_Obu_BasicTypes_Pkg /* _L13/ */ _L13;
   kcg_bool /* _L14/ */ _L14;
   OdometrySpeed_T_Toolbox /* _L15/ */ _L15;
-  kcg_int64 /* _L16/ */ _L16;
+  kcg_int32 /* _L16/ */ _L16;
   odoMotionState_T_Obu_BasicTypes_Pkg /* _L17/ */ _L17;
   odoMotionState_T_Obu_BasicTypes_Pkg /* _L18/ */ _L18;
   odoMotionDirection_T_Obu_BasicTypes_Pkg /* _L19/ */ _L19;

@@ -12,14 +12,14 @@ void UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_RBC
   /* inLRBG/ */
   NID_LRBG inLRBG,
   /* inDistanceToLRBG/ */
-  kcg_float64 inDistanceToLRBG,
+  kcg_float32 inDistanceToLRBG,
   /* inRBCTime/ */
   T_TRAIN inRBCTime,
   outC_UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_RBC_Scenario_Pkg *outC)
 {
   outC->_L2 = inLRBG;
   outC->_L3 = inDistanceToLRBG;
-  outC->_L38 = kcg_lit_int64(-1);
+  outC->_L38 = kcg_lit_int32(-1);
   outC->_L37 = inRBCTime;
   /* _L1=(RBC_Scenario_Pkg::UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_Amstel#1)/ */
   UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_Amstel_RBC_Scenario_Pkg(
@@ -142,25 +142,25 @@ void UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_RBC
 void UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_init_RBC_Scenario_Pkg(
   outC_UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_RBC_Scenario_Pkg *outC)
 {
-  outC->_L53 = kcg_lit_int64(0);
-  outC->_L52 = kcg_lit_int64(0);
-  outC->_L51 = kcg_lit_int64(0);
-  outC->_L50 = kcg_lit_int64(0);
-  outC->_L47 = kcg_lit_int64(0);
-  outC->_L46 = kcg_lit_int64(0);
-  outC->_L45 = kcg_lit_int64(0);
-  outC->_L44 = kcg_lit_int64(0);
-  outC->_L43 = kcg_lit_int64(0);
-  outC->_L42 = kcg_lit_int64(0);
-  outC->_L40 = kcg_lit_int64(0);
-  outC->_L39 = kcg_lit_int64(0);
-  outC->_L38 = kcg_lit_int64(0);
-  outC->_L37 = kcg_lit_int64(0);
-  outC->_L35 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_float64(0.0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->outTriggerId = kcg_lit_int64(0);
+  outC->_L53 = kcg_lit_int32(0);
+  outC->_L52 = kcg_lit_int32(0);
+  outC->_L51 = kcg_lit_int32(0);
+  outC->_L50 = kcg_lit_int32(0);
+  outC->_L47 = kcg_lit_int32(0);
+  outC->_L46 = kcg_lit_int32(0);
+  outC->_L45 = kcg_lit_int32(0);
+  outC->_L44 = kcg_lit_int32(0);
+  outC->_L43 = kcg_lit_int32(0);
+  outC->_L42 = kcg_lit_int32(0);
+  outC->_L40 = kcg_lit_int32(0);
+  outC->_L39 = kcg_lit_int32(0);
+  outC->_L38 = kcg_lit_int32(0);
+  outC->_L37 = kcg_lit_int32(0);
+  outC->_L35 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_float32(0.0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->outTriggerId = kcg_lit_int32(0);
   /* _L53=(RBC_Scenario_Pkg::Triggers_UserStory16#1)/ */
   Triggers_UserStory16_init_RBC_Scenario_Pkg(
     &outC->Context_Triggers_UserStory16_1);

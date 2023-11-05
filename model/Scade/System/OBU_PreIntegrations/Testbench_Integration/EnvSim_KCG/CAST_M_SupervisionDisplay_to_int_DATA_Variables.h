@@ -27,16 +27,16 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   kcg_bool /* IfBlock1:then:_L3/ */ _L3_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L2/ */ _L2_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L2/ */ _L2_then_IfBlock1;
   kcg_bool /* IfBlock1:else:else:then:_L3/ */ _L3_then_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:then:_L1/ */ _L1_then_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:then:_L1/ */ _L1_then_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:else:else:then:_L2/ */ _L2_then_else_else_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:else:else:then:_L1/ */ _L1_then_else_else_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:else:else:then:_L1/ */ _L1_then_else_else_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:else:else:else:_L3/ */ _L3_else_else_else_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:else:else:else:_L4/ */ _L4_else_else_else_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:else:then:_L1/ */ _L1_then_else_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:else:else:else:_L4/ */ _L4_else_else_else_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:else:then:_L1/ */ _L1_then_else_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:else:then:_L2/ */ _L2_then_else_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L1/ */ _L1_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L1/ */ _L1_then_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L2/ */ _L2_then_else_IfBlock1;
   kcg_bool /* error/ */ error;
   kcg_bool /* _L1/ */ _L1;

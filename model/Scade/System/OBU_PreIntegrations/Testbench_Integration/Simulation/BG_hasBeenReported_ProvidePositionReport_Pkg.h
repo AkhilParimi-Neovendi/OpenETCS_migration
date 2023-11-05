@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _BG_hasBeenReported_ProvidePositionReport_Pkg_H_
 #define _BG_hasBeenReported_ProvidePositionReport_Pkg_H_
@@ -25,10 +25,10 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   ReportedBGList_T_ProvidePositionReport_Pkg /* _L9/ */ _L9;
-  array_int64_8 /* _L2/ */ _L2;
+  array_int32_8 /* _L2/ */ _L2;
   NID_BG /* _L1/ */ _L1;
   OdometryLocations_T_Obu_BasicTypes_Pkg /* _L16/ */ _L16;
-  _70_array /* _L18/ */ _L18;
+  _71_array /* _L18/ */ _L18;
   kcg_bool /* _L21/ */ _L21;
   ReportedBGList_T_ProvidePositionReport_Pkg /* _L23/ */ _L23;
   kcg_bool /* _L22/ */ _L22;
@@ -60,6 +60,6 @@ extern void BG_hasBeenReported_init_ProvidePositionReport_Pkg(
 #endif /* _BG_hasBeenReported_ProvidePositionReport_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** BG_hasBeenReported_ProvidePositionReport_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

@@ -39,7 +39,7 @@ typedef struct {
   NID_MN /* _L36/ */ _L36;
   kcg_bool /* _L37/ */ _L37;
   NID_RADIO /* _L38/ */ _L38;
-  kcg_int64 /* _L39/ */ _L39;
+  kcg_int32 /* _L39/ */ _L39;
 } outC_mapCMDToRTM_radioOutput_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

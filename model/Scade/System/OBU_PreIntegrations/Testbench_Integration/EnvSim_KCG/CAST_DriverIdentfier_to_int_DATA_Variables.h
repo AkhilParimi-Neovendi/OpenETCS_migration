@@ -23,7 +23,7 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   driverIdentifier_T_DMI_Messages_Bothways_Pkg /* _L8/ */ _L8;
-  array_int64_9 /* _L10/ */ _L10;
+  array_int32_9 /* _L10/ */ _L10;
 } outC_CAST_DriverIdentfier_to_int_DATA_Variables;
 
 /* ===========  node initialization and cycle functions  =========== */

@@ -125,7 +125,7 @@ void flagsForLevelChange_init_InformationFilter_Pkg(
   outC->_L160.pendingL12L3Transition = kcg_true;
   outC->_L160.pendingAckOfTrainDataFromRBC = kcg_true;
   outC->_L160.emergencyStopAccepted = kcg_true;
-  outC->_L160.lastAckTextMessageId = kcg_lit_int64(0);
+  outC->_L160.lastAckTextMessageId = kcg_lit_int32(0);
   outC->_L160.pendingNTCTransition = kcg_true;
   outC->_L160.SPPAndGradientOnBoard = kcg_true;
   outC->_L160.MACoverNotFullLength = kcg_true;
@@ -133,7 +133,7 @@ void flagsForLevelChange_init_InformationFilter_Pkg(
   outC->_L159.pendingL12L3Transition = kcg_true;
   outC->_L159.pendingAckOfTrainDataFromRBC = kcg_true;
   outC->_L159.emergencyStopAccepted = kcg_true;
-  outC->_L159.lastAckTextMessageId = kcg_lit_int64(0);
+  outC->_L159.lastAckTextMessageId = kcg_lit_int32(0);
   outC->_L159.pendingNTCTransition = kcg_true;
   outC->_L159.SPPAndGradientOnBoard = kcg_true;
   outC->_L159.MACoverNotFullLength = kcg_true;
@@ -154,64 +154,64 @@ void flagsForLevelChange_init_InformationFilter_Pkg(
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L158.BG_Common_Header.q_media = Q_MEDIA_Balise;
   outC->_L158.BG_Common_Header.n_total = N_TOTAL_1_balise_in_the_group;
-  outC->_L158.BG_Common_Header.m_mcount = kcg_lit_int64(0);
-  outC->_L158.BG_Common_Header.nid_c = kcg_lit_int64(0);
-  outC->_L158.BG_Common_Header.nid_bg = kcg_lit_int64(0);
+  outC->_L158.BG_Common_Header.m_mcount = kcg_lit_int32(0);
+  outC->_L158.BG_Common_Header.nid_c = kcg_lit_int32(0);
+  outC->_L158.BG_Common_Header.nid_bg = kcg_lit_int32(0);
   outC->_L158.BG_Common_Header.q_link = Q_LINK_Unlinked;
   outC->_L158.BG_Common_Header.bgPosition.valid = kcg_true;
-  outC->_L158.BG_Common_Header.bgPosition.timestamp = kcg_lit_int64(0);
-  outC->_L158.BG_Common_Header.bgPosition.odo.o_nominal = kcg_lit_int64(0);
-  outC->_L158.BG_Common_Header.bgPosition.odo.o_min = kcg_lit_int64(0);
-  outC->_L158.BG_Common_Header.bgPosition.odo.o_max = kcg_lit_int64(0);
-  outC->_L158.BG_Common_Header.bgPosition.speed.v_safeNominal = kcg_lit_int64(0);
-  outC->_L158.BG_Common_Header.bgPosition.speed.v_rawNominal = kcg_lit_int64(0);
-  outC->_L158.BG_Common_Header.bgPosition.speed.v_lower = kcg_lit_int64(0);
-  outC->_L158.BG_Common_Header.bgPosition.speed.v_upper = kcg_lit_int64(0);
-  outC->_L158.BG_Common_Header.bgPosition.acceleration = kcg_lit_int64(0);
+  outC->_L158.BG_Common_Header.bgPosition.timestamp = kcg_lit_int32(0);
+  outC->_L158.BG_Common_Header.bgPosition.odo.o_nominal = kcg_lit_int32(0);
+  outC->_L158.BG_Common_Header.bgPosition.odo.o_min = kcg_lit_int32(0);
+  outC->_L158.BG_Common_Header.bgPosition.odo.o_max = kcg_lit_int32(0);
+  outC->_L158.BG_Common_Header.bgPosition.speed.v_safeNominal = kcg_lit_int32(0);
+  outC->_L158.BG_Common_Header.bgPosition.speed.v_rawNominal = kcg_lit_int32(0);
+  outC->_L158.BG_Common_Header.bgPosition.speed.v_lower = kcg_lit_int32(0);
+  outC->_L158.BG_Common_Header.bgPosition.speed.v_upper = kcg_lit_int32(0);
+  outC->_L158.BG_Common_Header.bgPosition.acceleration = kcg_lit_int32(0);
   outC->_L158.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L158.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L158.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L158.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L158.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
-  outC->_L158.BG_Common_Header.q_nvlocacc = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L158.BG_Common_Header.q_nvlocacc = kcg_lit_int32(0);
   outC->_L158.BG_Common_Header.noCoordinateSystemHasBeenAssigned = kcg_true;
   outC->_L158.BG_Common_Header.trainOrientationToBG = Q_DIRLRBG_Reverse;
   outC->_L158.BG_Common_Header.trainRunningDirectionToBG = Q_DIRTRAIN_Reverse;
-  outC->_L158.Radio_Common_Header.radioDevice = kcg_lit_int64(0);
-  outC->_L158.Radio_Common_Header.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L158.Radio_Common_Header.nid_message = kcg_lit_int64(0);
-  outC->_L158.Radio_Common_Header.t_train = kcg_lit_int64(0);
+  outC->_L158.Radio_Common_Header.radioDevice = kcg_lit_int32(0);
+  outC->_L158.Radio_Common_Header.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L158.Radio_Common_Header.nid_message = kcg_lit_int32(0);
+  outC->_L158.Radio_Common_Header.t_train = kcg_lit_int32(0);
   outC->_L158.Radio_Common_Header.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L158.Radio_Common_Header.nid_lrbg = kcg_lit_int64(0);
-  outC->_L158.Radio_Common_Header.t_train_reference = kcg_lit_int64(0);
-  outC->_L158.Radio_Common_Header.nid_em = kcg_lit_int64(0);
+  outC->_L158.Radio_Common_Header.nid_lrbg = kcg_lit_int32(0);
+  outC->_L158.Radio_Common_Header.t_train_reference = kcg_lit_int32(0);
+  outC->_L158.Radio_Common_Header.nid_em = kcg_lit_int32(0);
   outC->_L158.Radio_Common_Header.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L158.Radio_Common_Header.d_sr = kcg_lit_int64(0);
-  outC->_L158.Radio_Common_Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L158.Radio_Common_Header.d_ref = kcg_lit_int64(0);
+  outC->_L158.Radio_Common_Header.d_sr = kcg_lit_int32(0);
+  outC->_L158.Radio_Common_Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L158.Radio_Common_Header.d_ref = kcg_lit_int32(0);
   outC->_L158.Radio_Common_Header.q_dir = Q_DIR_Reverse;
-  outC->_L158.Radio_Common_Header.d_emergencystop = kcg_lit_int64(0);
+  outC->_L158.Radio_Common_Header.d_emergencystop = kcg_lit_int32(0);
   outC->_L158.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx = 0; idx < 30; idx++) {
-    outC->_L158.packets.PacketHeaders[idx].nid_packet = kcg_lit_int64(0);
+    outC->_L158.packets.PacketHeaders[idx].nid_packet = kcg_lit_int32(0);
     outC->_L158.packets.PacketHeaders[idx].q_dir = Q_DIR_Reverse;
     outC->_L158.packets.PacketHeaders[idx].valid = kcg_true;
-    outC->_L158.packets.PacketHeaders[idx].startAddress = kcg_lit_int64(0);
-    outC->_L158.packets.PacketHeaders[idx].endAddress = kcg_lit_int64(0);
+    outC->_L158.packets.PacketHeaders[idx].startAddress = kcg_lit_int32(0);
+    outC->_L158.packets.PacketHeaders[idx].endAddress = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 500; idx1++) {
-    outC->_L158.packets.PacketData[idx1] = kcg_lit_int64(0);
+    outC->_L158.packets.PacketData[idx1] = kcg_lit_int32(0);
   }
   outC->_L158.sendingRBC.valid = kcg_true;
-  outC->_L158.sendingRBC.nid_c = kcg_lit_int64(0);
-  outC->_L158.sendingRBC.rbc_id = kcg_lit_int64(0);
-  outC->_L158.sendingRBC.device_id = kcg_lit_int64(0);
+  outC->_L158.sendingRBC.nid_c = kcg_lit_int32(0);
+  outC->_L158.sendingRBC.rbc_id = kcg_lit_int32(0);
+  outC->_L158.sendingRBC.device_id = kcg_lit_int32(0);
   outC->_L152.compatibleModeAndLevel = kcg_true;
   outC->_L152.level = M_LEVEL_Level_0;
   outC->_L152.newLevel = kcg_true;
@@ -235,64 +235,64 @@ void flagsForLevelChange_init_InformationFilter_Pkg(
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   outC->_L155.BG_Common_Header.q_media = Q_MEDIA_Balise;
   outC->_L155.BG_Common_Header.n_total = N_TOTAL_1_balise_in_the_group;
-  outC->_L155.BG_Common_Header.m_mcount = kcg_lit_int64(0);
-  outC->_L155.BG_Common_Header.nid_c = kcg_lit_int64(0);
-  outC->_L155.BG_Common_Header.nid_bg = kcg_lit_int64(0);
+  outC->_L155.BG_Common_Header.m_mcount = kcg_lit_int32(0);
+  outC->_L155.BG_Common_Header.nid_c = kcg_lit_int32(0);
+  outC->_L155.BG_Common_Header.nid_bg = kcg_lit_int32(0);
   outC->_L155.BG_Common_Header.q_link = Q_LINK_Unlinked;
   outC->_L155.BG_Common_Header.bgPosition.valid = kcg_true;
-  outC->_L155.BG_Common_Header.bgPosition.timestamp = kcg_lit_int64(0);
-  outC->_L155.BG_Common_Header.bgPosition.odo.o_nominal = kcg_lit_int64(0);
-  outC->_L155.BG_Common_Header.bgPosition.odo.o_min = kcg_lit_int64(0);
-  outC->_L155.BG_Common_Header.bgPosition.odo.o_max = kcg_lit_int64(0);
-  outC->_L155.BG_Common_Header.bgPosition.speed.v_safeNominal = kcg_lit_int64(0);
-  outC->_L155.BG_Common_Header.bgPosition.speed.v_rawNominal = kcg_lit_int64(0);
-  outC->_L155.BG_Common_Header.bgPosition.speed.v_lower = kcg_lit_int64(0);
-  outC->_L155.BG_Common_Header.bgPosition.speed.v_upper = kcg_lit_int64(0);
-  outC->_L155.BG_Common_Header.bgPosition.acceleration = kcg_lit_int64(0);
+  outC->_L155.BG_Common_Header.bgPosition.timestamp = kcg_lit_int32(0);
+  outC->_L155.BG_Common_Header.bgPosition.odo.o_nominal = kcg_lit_int32(0);
+  outC->_L155.BG_Common_Header.bgPosition.odo.o_min = kcg_lit_int32(0);
+  outC->_L155.BG_Common_Header.bgPosition.odo.o_max = kcg_lit_int32(0);
+  outC->_L155.BG_Common_Header.bgPosition.speed.v_safeNominal = kcg_lit_int32(0);
+  outC->_L155.BG_Common_Header.bgPosition.speed.v_rawNominal = kcg_lit_int32(0);
+  outC->_L155.BG_Common_Header.bgPosition.speed.v_lower = kcg_lit_int32(0);
+  outC->_L155.BG_Common_Header.bgPosition.speed.v_upper = kcg_lit_int32(0);
+  outC->_L155.BG_Common_Header.bgPosition.acceleration = kcg_lit_int32(0);
   outC->_L155.BG_Common_Header.bgPosition.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->_L155.BG_Common_Header.bgPosition.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->_L155.BG_Common_Header.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L155.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L155.BG_Common_Header.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
-  outC->_L155.BG_Common_Header.q_nvlocacc = kcg_lit_int64(0);
+    kcg_lit_int32(0);
+  outC->_L155.BG_Common_Header.q_nvlocacc = kcg_lit_int32(0);
   outC->_L155.BG_Common_Header.noCoordinateSystemHasBeenAssigned = kcg_true;
   outC->_L155.BG_Common_Header.trainOrientationToBG = Q_DIRLRBG_Reverse;
   outC->_L155.BG_Common_Header.trainRunningDirectionToBG = Q_DIRTRAIN_Reverse;
-  outC->_L155.Radio_Common_Header.radioDevice = kcg_lit_int64(0);
-  outC->_L155.Radio_Common_Header.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L155.Radio_Common_Header.nid_message = kcg_lit_int64(0);
-  outC->_L155.Radio_Common_Header.t_train = kcg_lit_int64(0);
+  outC->_L155.Radio_Common_Header.radioDevice = kcg_lit_int32(0);
+  outC->_L155.Radio_Common_Header.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L155.Radio_Common_Header.nid_message = kcg_lit_int32(0);
+  outC->_L155.Radio_Common_Header.t_train = kcg_lit_int32(0);
   outC->_L155.Radio_Common_Header.m_ack = M_ACK_No_acknowledgement_required;
-  outC->_L155.Radio_Common_Header.nid_lrbg = kcg_lit_int64(0);
-  outC->_L155.Radio_Common_Header.t_train_reference = kcg_lit_int64(0);
-  outC->_L155.Radio_Common_Header.nid_em = kcg_lit_int64(0);
+  outC->_L155.Radio_Common_Header.nid_lrbg = kcg_lit_int32(0);
+  outC->_L155.Radio_Common_Header.t_train_reference = kcg_lit_int32(0);
+  outC->_L155.Radio_Common_Header.nid_em = kcg_lit_int32(0);
   outC->_L155.Radio_Common_Header.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L155.Radio_Common_Header.d_sr = kcg_lit_int64(0);
-  outC->_L155.Radio_Common_Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L155.Radio_Common_Header.d_ref = kcg_lit_int64(0);
+  outC->_L155.Radio_Common_Header.d_sr = kcg_lit_int32(0);
+  outC->_L155.Radio_Common_Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L155.Radio_Common_Header.d_ref = kcg_lit_int32(0);
   outC->_L155.Radio_Common_Header.q_dir = Q_DIR_Reverse;
-  outC->_L155.Radio_Common_Header.d_emergencystop = kcg_lit_int64(0);
+  outC->_L155.Radio_Common_Header.d_emergencystop = kcg_lit_int32(0);
   outC->_L155.Radio_Common_Header.m_version =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx2 = 0; idx2 < 30; idx2++) {
-    outC->_L155.packets.PacketHeaders[idx2].nid_packet = kcg_lit_int64(0);
+    outC->_L155.packets.PacketHeaders[idx2].nid_packet = kcg_lit_int32(0);
     outC->_L155.packets.PacketHeaders[idx2].q_dir = Q_DIR_Reverse;
     outC->_L155.packets.PacketHeaders[idx2].valid = kcg_true;
-    outC->_L155.packets.PacketHeaders[idx2].startAddress = kcg_lit_int64(0);
-    outC->_L155.packets.PacketHeaders[idx2].endAddress = kcg_lit_int64(0);
+    outC->_L155.packets.PacketHeaders[idx2].startAddress = kcg_lit_int32(0);
+    outC->_L155.packets.PacketHeaders[idx2].endAddress = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 500; idx3++) {
-    outC->_L155.packets.PacketData[idx3] = kcg_lit_int64(0);
+    outC->_L155.packets.PacketData[idx3] = kcg_lit_int32(0);
   }
   outC->_L155.sendingRBC.valid = kcg_true;
-  outC->_L155.sendingRBC.nid_c = kcg_lit_int64(0);
-  outC->_L155.sendingRBC.rbc_id = kcg_lit_int64(0);
-  outC->_L155.sendingRBC.device_id = kcg_lit_int64(0);
+  outC->_L155.sendingRBC.nid_c = kcg_lit_int32(0);
+  outC->_L155.sendingRBC.rbc_id = kcg_lit_int32(0);
+  outC->_L155.sendingRBC.device_id = kcg_lit_int32(0);
   outC->every = kcg_true;
   outC->_L163.P12_received = kcg_true;
   outC->_L163.P15_received = kcg_true;
@@ -302,7 +302,7 @@ void flagsForLevelChange_init_InformationFilter_Pkg(
   outC->_L157.pendingL12L3Transition = kcg_true;
   outC->_L157.pendingAckOfTrainDataFromRBC = kcg_true;
   outC->_L157.emergencyStopAccepted = kcg_true;
-  outC->_L157.lastAckTextMessageId = kcg_lit_int64(0);
+  outC->_L157.lastAckTextMessageId = kcg_lit_int32(0);
   outC->_L157.pendingNTCTransition = kcg_true;
   outC->_L157.SPPAndGradientOnBoard = kcg_true;
   outC->_L157.MACoverNotFullLength = kcg_true;
@@ -315,7 +315,7 @@ void flagsForLevelChange_init_InformationFilter_Pkg(
   outC->outFilterEvents.pendingL12L3Transition = kcg_true;
   outC->outFilterEvents.pendingAckOfTrainDataFromRBC = kcg_true;
   outC->outFilterEvents.emergencyStopAccepted = kcg_true;
-  outC->outFilterEvents.lastAckTextMessageId = kcg_lit_int64(0);
+  outC->outFilterEvents.lastAckTextMessageId = kcg_lit_int32(0);
   outC->outFilterEvents.pendingNTCTransition = kcg_true;
   outC->outFilterEvents.SPPAndGradientOnBoard = kcg_true;
   outC->outFilterEvents.MACoverNotFullLength = kcg_true;

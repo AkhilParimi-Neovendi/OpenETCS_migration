@@ -102,8 +102,8 @@ typedef struct {
   kcg_bool /* _L15/ */ _L15;
   DMI_Driver_Request_T_DMI_Messages_DMI_to_EVC_Pkg /* _L16/ */ _L16;
   kcg_bool /* _L18/ */ _L18;
-  kcg_int64 /* _L19/ */ _L19;
-  kcg_int64 /* _L20/ */ _L20;
+  kcg_int32 /* _L19/ */ _L19;
+  kcg_int32 /* _L20/ */ _L20;
 } outC_manageDMI_Input_manage_DMI_Input_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

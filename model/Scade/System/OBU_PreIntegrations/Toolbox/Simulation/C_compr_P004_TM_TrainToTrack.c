@@ -18,13 +18,13 @@ void C_compr_P004_TM_TrainToTrack(
   kcg_bool noname_CAST_Int_to_L_PACKET_1;
   kcg_bool _2_noname_CAST_Int_to_L_PACKET_1;
 
-  outC->_L5_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
+  outC->_L5_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
   kcg_copy_P004_TrainTrack_int_TM_TrainToTrack(&outC->_L1, P004_in);
   outC->_L2 = outC->_L1[0];
   /* _L73=(TM_TrainToTrack::Decode_NID_PACKET#1)/ */
   Decode_NID_PACKET_TM_TrainToTrack(
     outC->_L2,
-    kcg_lit_int64(4),
+    kcg_lit_int32(4),
     &outC->Context_Decode_NID_PACKET_1);
   outC->_L73 = outC->Context_Decode_NID_PACKET_1.Valid;
   /* _L74=(TM_TrainToTrack::Filter_Variable#1)/ */
@@ -38,14 +38,14 @@ void C_compr_P004_TM_TrainToTrack(
     outC->nid_packet_int_CAST_Int_to_NID_PACKET_1;
   outC->_L4_CAST_Int_to_NID_PACKET_1 = outC->_L1_CAST_Int_to_NID_PACKET_1 <
     outC->_L5_CAST_Int_to_NID_PACKET_1;
-  outC->_L3_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(256);
+  outC->_L3_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(256);
   outC->_L2_CAST_Int_to_NID_PACKET_1 = outC->_L1_CAST_Int_to_NID_PACKET_1 >
     outC->_L3_CAST_Int_to_NID_PACKET_1;
   noname_CAST_Int_to_NID_PACKET_1 = outC->_L2_CAST_Int_to_NID_PACKET_1;
   _1_noname_CAST_Int_to_NID_PACKET_1 = outC->_L4_CAST_Int_to_NID_PACKET_1;
   outC->nid_packet_CAST_Int_to_NID_PACKET_1 = outC->_L1_CAST_Int_to_NID_PACKET_1;
-  outC->_L13_CAST_Int_to_L_PACKET_1 = kcg_lit_int64(8191);
-  outC->_L12_CAST_Int_to_L_PACKET_1 = kcg_lit_int64(0);
+  outC->_L13_CAST_Int_to_L_PACKET_1 = kcg_lit_int32(8191);
+  outC->_L12_CAST_Int_to_L_PACKET_1 = kcg_lit_int32(0);
   outC->_L3 = outC->_L1[1];
   /* _L75=(TM_TrainToTrack::Filter_Variable#2)/ */
   Filter_Variable_TM_TrainToTrack(
@@ -88,40 +88,40 @@ void C_compr_P004_init_TM_TrainToTrack(outC_C_compr_P004_TM_TrainToTrack *outC)
 {
   kcg_size idx;
 
-  outC->_L76 = kcg_lit_int64(0);
-  outC->_L75 = kcg_lit_int64(0);
-  outC->_L74 = kcg_lit_int64(0);
+  outC->_L76 = kcg_lit_int32(0);
+  outC->_L75 = kcg_lit_int32(0);
+  outC->_L74 = kcg_lit_int32(0);
   outC->_L73 = kcg_true;
   outC->_L72.valid = kcg_true;
-  outC->_L72.nid_packet = kcg_lit_int64(0);
-  outC->_L72.l_packet = kcg_lit_int64(0);
+  outC->_L72.nid_packet = kcg_lit_int32(0);
+  outC->_L72.l_packet = kcg_lit_int32(0);
   outC->_L72.m_error = M_ERROR_Balise_group_linking_consistency_error;
   outC->_L71 = M_ERROR_Balise_group_linking_consistency_error;
-  outC->_L70 = kcg_lit_int64(0);
-  outC->_L69 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L70 = kcg_lit_int32(0);
+  outC->_L69 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
   for (idx = 0; idx < 3; idx++) {
-    outC->_L1[idx] = kcg_lit_int64(0);
+    outC->_L1[idx] = kcg_lit_int32(0);
   }
-  outC->_L1_CAST_Int_to_L_PACKET_1 = kcg_lit_int64(0);
+  outC->_L1_CAST_Int_to_L_PACKET_1 = kcg_lit_int32(0);
   outC->_L9_CAST_Int_to_L_PACKET_1 = kcg_true;
   outC->_L8_CAST_Int_to_L_PACKET_1 = kcg_true;
-  outC->_L12_CAST_Int_to_L_PACKET_1 = kcg_lit_int64(0);
-  outC->_L13_CAST_Int_to_L_PACKET_1 = kcg_lit_int64(0);
-  outC->l_packet_int_CAST_Int_to_L_PACKET_1 = kcg_lit_int64(0);
-  outC->l_packet_CAST_Int_to_L_PACKET_1 = kcg_lit_int64(0);
-  outC->_L1_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
-  outC->_L5_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
+  outC->_L12_CAST_Int_to_L_PACKET_1 = kcg_lit_int32(0);
+  outC->_L13_CAST_Int_to_L_PACKET_1 = kcg_lit_int32(0);
+  outC->l_packet_int_CAST_Int_to_L_PACKET_1 = kcg_lit_int32(0);
+  outC->l_packet_CAST_Int_to_L_PACKET_1 = kcg_lit_int32(0);
+  outC->_L1_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
+  outC->_L5_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
   outC->_L4_CAST_Int_to_NID_PACKET_1 = kcg_true;
-  outC->_L3_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
+  outC->_L3_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
   outC->_L2_CAST_Int_to_NID_PACKET_1 = kcg_true;
-  outC->nid_packet_int_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
-  outC->nid_packet_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
+  outC->nid_packet_int_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
+  outC->nid_packet_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
   outC->P004_out.valid = kcg_true;
-  outC->P004_out.nid_packet = kcg_lit_int64(0);
-  outC->P004_out.l_packet = kcg_lit_int64(0);
+  outC->P004_out.nid_packet = kcg_lit_int32(0);
+  outC->P004_out.l_packet = kcg_lit_int32(0);
   outC->P004_out.m_error = M_ERROR_Balise_group_linking_consistency_error;
   /* _L71=(TM_conversions::CAST_Int_to_M_ERROR#1)/ */
   CAST_Int_to_M_ERROR_init_TM_conversions(&outC->Context_CAST_Int_to_M_ERROR_1);

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -29,7 +29,7 @@ void Send_M129_TM_radio_messages(
   static kcg_bool noname;
   static M_VERSION _1_noname;
 
-  outC->_L55 = kcg_lit_int64(0);
+  outC->_L55 = kcg_lit_int32(0);
   /* _L56/ */
   for (idx = 0; idx < 8; idx++) {
     outC->_L56[idx] = outC->_L55;
@@ -68,8 +68,8 @@ void Send_M129_TM_radio_messages(
   }
   kcg_copy_P000_TrainTrack_int_TM_TrainToTrack(&outC->_L53[0], &outC->_L51);
   kcg_copy_P011_TrainTrack_int_TM_TrainToTrack(&outC->_L53[17], &outC->_L15);
-  kcg_copy_array_int64_42(&outC->_L54[0], &outC->_L53);
-  kcg_copy_array_int64_8(&outC->_L54[42], &outC->_L56);
+  kcg_copy_array_int32_42(&outC->_L54[0], &outC->_L53);
+  kcg_copy_array_int32_8(&outC->_L54[42], &outC->_L56);
   kcg_copy_M_129_T_TM_radio_messages(&outC->_L62, Message_129_in);
   /* _L60=(TM_RBC_conversions::C_M129_to_header#2)/ */
   C_M129_to_header_TM_RBC_conversions(
@@ -144,169 +144,169 @@ void Send_M129_init_TM_radio_messages(outC_Send_M129_TM_radio_messages *outC)
   static kcg_size idx15;
   static kcg_size idx16;
 
-  outC->_L100 = kcg_lit_int64(0);
+  outC->_L100 = kcg_lit_int32(0);
   outC->_L93 = kcg_true;
-  outC->_L94 = kcg_lit_int64(0);
+  outC->_L94 = kcg_lit_int32(0);
   outC->_L98 = kcg_true;
   outC->_L67.Message.valid = kcg_true;
-  outC->_L67.Message.nid_message = kcg_lit_int64(0);
-  outC->_L67.Message.l_message = kcg_lit_int64(0);
-  outC->_L67.Message.t_train = kcg_lit_int64(0);
-  outC->_L67.Message.nid_engine = kcg_lit_int64(0);
-  outC->_L67.Message.field1 = kcg_lit_int64(0);
-  outC->_L67.Message.field2 = kcg_lit_int64(0);
-  outC->_L67.Message.field3 = kcg_lit_int64(0);
+  outC->_L67.Message.nid_message = kcg_lit_int32(0);
+  outC->_L67.Message.l_message = kcg_lit_int32(0);
+  outC->_L67.Message.t_train = kcg_lit_int32(0);
+  outC->_L67.Message.nid_engine = kcg_lit_int32(0);
+  outC->_L67.Message.field1 = kcg_lit_int32(0);
+  outC->_L67.Message.field2 = kcg_lit_int32(0);
+  outC->_L67.Message.field3 = kcg_lit_int32(0);
   for (idx = 0; idx < 50; idx++) {
-    outC->_L67.OptionalPackets[idx] = kcg_lit_int64(0);
+    outC->_L67.OptionalPackets[idx] = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 5; idx2++) {
     outC->_L97[idx2].Message.valid = kcg_true;
-    outC->_L97[idx2].Message.nid_message = kcg_lit_int64(0);
-    outC->_L97[idx2].Message.l_message = kcg_lit_int64(0);
-    outC->_L97[idx2].Message.t_train = kcg_lit_int64(0);
-    outC->_L97[idx2].Message.nid_engine = kcg_lit_int64(0);
-    outC->_L97[idx2].Message.field1 = kcg_lit_int64(0);
-    outC->_L97[idx2].Message.field2 = kcg_lit_int64(0);
-    outC->_L97[idx2].Message.field3 = kcg_lit_int64(0);
+    outC->_L97[idx2].Message.nid_message = kcg_lit_int32(0);
+    outC->_L97[idx2].Message.l_message = kcg_lit_int32(0);
+    outC->_L97[idx2].Message.t_train = kcg_lit_int32(0);
+    outC->_L97[idx2].Message.nid_engine = kcg_lit_int32(0);
+    outC->_L97[idx2].Message.field1 = kcg_lit_int32(0);
+    outC->_L97[idx2].Message.field2 = kcg_lit_int32(0);
+    outC->_L97[idx2].Message.field3 = kcg_lit_int32(0);
     for (idx1 = 0; idx1 < 50; idx1++) {
-      outC->_L97[idx2].OptionalPackets[idx1] = kcg_lit_int64(0);
+      outC->_L97[idx2].OptionalPackets[idx1] = kcg_lit_int32(0);
     }
   }
   outC->_L65.Message.valid = kcg_true;
-  outC->_L65.Message.nid_message = kcg_lit_int64(0);
-  outC->_L65.Message.l_message = kcg_lit_int64(0);
-  outC->_L65.Message.t_train = kcg_lit_int64(0);
-  outC->_L65.Message.nid_engine = kcg_lit_int64(0);
-  outC->_L65.Message.field1 = kcg_lit_int64(0);
-  outC->_L65.Message.field2 = kcg_lit_int64(0);
-  outC->_L65.Message.field3 = kcg_lit_int64(0);
+  outC->_L65.Message.nid_message = kcg_lit_int32(0);
+  outC->_L65.Message.l_message = kcg_lit_int32(0);
+  outC->_L65.Message.t_train = kcg_lit_int32(0);
+  outC->_L65.Message.nid_engine = kcg_lit_int32(0);
+  outC->_L65.Message.field1 = kcg_lit_int32(0);
+  outC->_L65.Message.field2 = kcg_lit_int32(0);
+  outC->_L65.Message.field3 = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 50; idx3++) {
-    outC->_L65.OptionalPackets[idx3] = kcg_lit_int64(0);
+    outC->_L65.OptionalPackets[idx3] = kcg_lit_int32(0);
   }
-  outC->_L59 = kcg_lit_int64(0);
+  outC->_L59 = kcg_lit_int32(0);
   outC->_L60.valid = kcg_true;
-  outC->_L60.nid_message = kcg_lit_int64(0);
-  outC->_L60.l_message = kcg_lit_int64(0);
-  outC->_L60.t_train = kcg_lit_int64(0);
-  outC->_L60.nid_engine = kcg_lit_int64(0);
-  outC->_L60.field1 = kcg_lit_int64(0);
-  outC->_L60.field2 = kcg_lit_int64(0);
-  outC->_L60.field3 = kcg_lit_int64(0);
+  outC->_L60.nid_message = kcg_lit_int32(0);
+  outC->_L60.l_message = kcg_lit_int32(0);
+  outC->_L60.t_train = kcg_lit_int32(0);
+  outC->_L60.nid_engine = kcg_lit_int32(0);
+  outC->_L60.field1 = kcg_lit_int32(0);
+  outC->_L60.field2 = kcg_lit_int32(0);
+  outC->_L60.field3 = kcg_lit_int32(0);
   outC->_L62.valid = kcg_true;
-  outC->_L62.nid_message = kcg_lit_int64(0);
-  outC->_L62.l_message = kcg_lit_int64(0);
-  outC->_L62.t_train = kcg_lit_int64(0);
-  outC->_L62.nid_engine = kcg_lit_int64(0);
+  outC->_L62.nid_message = kcg_lit_int32(0);
+  outC->_L62.l_message = kcg_lit_int32(0);
+  outC->_L62.t_train = kcg_lit_int32(0);
+  outC->_L62.nid_engine = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 5; idx5++) {
     outC->_L63[idx5].Message.valid = kcg_true;
-    outC->_L63[idx5].Message.nid_message = kcg_lit_int64(0);
-    outC->_L63[idx5].Message.l_message = kcg_lit_int64(0);
-    outC->_L63[idx5].Message.t_train = kcg_lit_int64(0);
-    outC->_L63[idx5].Message.nid_engine = kcg_lit_int64(0);
-    outC->_L63[idx5].Message.field1 = kcg_lit_int64(0);
-    outC->_L63[idx5].Message.field2 = kcg_lit_int64(0);
-    outC->_L63[idx5].Message.field3 = kcg_lit_int64(0);
+    outC->_L63[idx5].Message.nid_message = kcg_lit_int32(0);
+    outC->_L63[idx5].Message.l_message = kcg_lit_int32(0);
+    outC->_L63[idx5].Message.t_train = kcg_lit_int32(0);
+    outC->_L63[idx5].Message.nid_engine = kcg_lit_int32(0);
+    outC->_L63[idx5].Message.field1 = kcg_lit_int32(0);
+    outC->_L63[idx5].Message.field2 = kcg_lit_int32(0);
+    outC->_L63[idx5].Message.field3 = kcg_lit_int32(0);
     for (idx4 = 0; idx4 < 50; idx4++) {
-      outC->_L63[idx5].OptionalPackets[idx4] = kcg_lit_int64(0);
+      outC->_L63[idx5].OptionalPackets[idx4] = kcg_lit_int32(0);
     }
   }
   outC->_L64 =
     M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS;
   for (idx6 = 0; idx6 < 8; idx6++) {
-    outC->_L56[idx6] = kcg_lit_int64(0);
+    outC->_L56[idx6] = kcg_lit_int32(0);
   }
-  outC->_L55 = kcg_lit_int64(0);
+  outC->_L55 = kcg_lit_int32(0);
   for (idx7 = 0; idx7 < 50; idx7++) {
-    outC->_L54[idx7] = kcg_lit_int64(0);
+    outC->_L54[idx7] = kcg_lit_int32(0);
   }
   for (idx8 = 0; idx8 < 42; idx8++) {
-    outC->_L53[idx8] = kcg_lit_int64(0);
+    outC->_L53[idx8] = kcg_lit_int32(0);
   }
   for (idx9 = 0; idx9 < 17; idx9++) {
-    outC->_L51[idx9] = kcg_lit_int64(0);
+    outC->_L51[idx9] = kcg_lit_int32(0);
   }
   outC->_L50 = kcg_true;
   outC->_L49 = kcg_true;
   outC->_L48 = kcg_true;
   for (idx10 = 0; idx10 < 25; idx10++) {
-    outC->_L15[idx10] = kcg_lit_int64(0);
+    outC->_L15[idx10] = kcg_lit_int32(0);
   }
   for (idx11 = 0; idx11 < 17; idx11++) {
-    outC->_L13[idx11] = kcg_lit_int64(0);
+    outC->_L13[idx11] = kcg_lit_int32(0);
   }
   for (idx12 = 0; idx12 < 17; idx12++) {
-    outC->_L11[idx12] = kcg_lit_int64(0);
+    outC->_L11[idx12] = kcg_lit_int32(0);
   }
   outC->_L7.valid = kcg_true;
-  outC->_L7.nid_packet = kcg_lit_int64(0);
-  outC->_L7.l_packet = kcg_lit_int64(0);
+  outC->_L7.nid_packet = kcg_lit_int32(0);
+  outC->_L7.l_packet = kcg_lit_int32(0);
   outC->_L7.nc_cdtrain = NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L7.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->_L7.l_train = kcg_lit_int64(0);
-  outC->_L7.v_maxtrain = kcg_lit_int64(0);
+  outC->_L7.l_train = kcg_lit_int32(0);
+  outC->_L7.v_maxtrain = kcg_lit_int32(0);
   outC->_L7.m_loadinggauge =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L7.m_axleloadcat = M_AXLELOADCAT_A;
   outC->_L7.m_airtight = M_AIRTIGHT_Not_fitted;
-  outC->_L7.n_axle = kcg_lit_int64(0);
-  outC->_L7.n_iter_voltage = kcg_lit_int64(0);
+  outC->_L7.n_axle = kcg_lit_int32(0);
+  outC->_L7.n_iter_voltage = kcg_lit_int32(0);
   for (idx13 = 0; idx13 < 4; idx13++) {
     outC->_L7.voltage_list[idx13].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->_L7.voltage_list[idx13].nid_ctraction = kcg_lit_int64(0);
+    outC->_L7.voltage_list[idx13].nid_ctraction = kcg_lit_int32(0);
   }
-  outC->_L7.n_iter_nid_ntc = kcg_lit_int64(0);
+  outC->_L7.n_iter_nid_ntc = kcg_lit_int32(0);
   for (idx14 = 0; idx14 < 5; idx14++) {
-    outC->_L7.nid_ntc_list[idx14] = kcg_lit_int64(0);
+    outC->_L7.nid_ntc_list[idx14] = kcg_lit_int32(0);
   }
   outC->_L6.valid = kcg_true;
-  outC->_L6.nid_packet = kcg_lit_int64(0);
-  outC->_L6.l_packet = kcg_lit_int64(0);
+  outC->_L6.nid_packet = kcg_lit_int32(0);
+  outC->_L6.l_packet = kcg_lit_int32(0);
   outC->_L6.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L6.nid_lrbg = kcg_lit_int64(0);
-  outC->_L6.nid_prvlrbg = kcg_lit_int64(0);
-  outC->_L6.d_lrbg = kcg_lit_int64(0);
+  outC->_L6.nid_lrbg = kcg_lit_int32(0);
+  outC->_L6.nid_prvlrbg = kcg_lit_int32(0);
+  outC->_L6.d_lrbg = kcg_lit_int32(0);
   outC->_L6.q_dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L6.q_dlrbg = Q_DLRBG_Reverse;
-  outC->_L6.l_doubtover = kcg_lit_int64(0);
-  outC->_L6.l_doubtunder = kcg_lit_int64(0);
+  outC->_L6.l_doubtover = kcg_lit_int32(0);
+  outC->_L6.l_doubtunder = kcg_lit_int32(0);
   outC->_L6.q_length = Q_LENGTH_No_train_integrity_information_available;
-  outC->_L6.l_trainint = kcg_lit_int64(0);
-  outC->_L6.v_train = kcg_lit_int64(0);
+  outC->_L6.l_trainint = kcg_lit_int32(0);
+  outC->_L6.v_train = kcg_lit_int32(0);
   outC->_L6.q_dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L6.m_mode = M_MODE_Full_Supervision;
   outC->_L6.m_level = M_LEVEL_Level_0;
-  outC->_L6.nid_ntc = kcg_lit_int64(0);
+  outC->_L6.nid_ntc = kcg_lit_int32(0);
   outC->_L5.valid = kcg_true;
-  outC->_L5.nid_packet = kcg_lit_int64(0);
-  outC->_L5.l_packet = kcg_lit_int64(0);
+  outC->_L5.nid_packet = kcg_lit_int32(0);
+  outC->_L5.l_packet = kcg_lit_int32(0);
   outC->_L5.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L5.nid_lrbg = kcg_lit_int64(0);
-  outC->_L5.d_lrbg = kcg_lit_int64(0);
+  outC->_L5.nid_lrbg = kcg_lit_int32(0);
+  outC->_L5.d_lrbg = kcg_lit_int32(0);
   outC->_L5.q_dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L5.q_dlrbg = Q_DLRBG_Reverse;
-  outC->_L5.l_doubtover = kcg_lit_int64(0);
-  outC->_L5.l_doubtunder = kcg_lit_int64(0);
+  outC->_L5.l_doubtover = kcg_lit_int32(0);
+  outC->_L5.l_doubtunder = kcg_lit_int32(0);
   outC->_L5.q_length = Q_LENGTH_No_train_integrity_information_available;
-  outC->_L5.l_trainint = kcg_lit_int64(0);
-  outC->_L5.v_train = kcg_lit_int64(0);
+  outC->_L5.l_trainint = kcg_lit_int32(0);
+  outC->_L5.v_train = kcg_lit_int32(0);
   outC->_L5.q_dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L5.m_mode = M_MODE_Full_Supervision;
   outC->_L5.m_level = M_LEVEL_Level_0;
-  outC->_L5.nid_ntc = kcg_lit_int64(0);
-  outC->t_train_assigned = kcg_lit_int64(0);
+  outC->_L5.nid_ntc = kcg_lit_int32(0);
+  outC->t_train_assigned = kcg_lit_int32(0);
   for (idx16 = 0; idx16 < 5; idx16++) {
     outC->MessageBus_out[idx16].Message.valid = kcg_true;
-    outC->MessageBus_out[idx16].Message.nid_message = kcg_lit_int64(0);
-    outC->MessageBus_out[idx16].Message.l_message = kcg_lit_int64(0);
-    outC->MessageBus_out[idx16].Message.t_train = kcg_lit_int64(0);
-    outC->MessageBus_out[idx16].Message.nid_engine = kcg_lit_int64(0);
-    outC->MessageBus_out[idx16].Message.field1 = kcg_lit_int64(0);
-    outC->MessageBus_out[idx16].Message.field2 = kcg_lit_int64(0);
-    outC->MessageBus_out[idx16].Message.field3 = kcg_lit_int64(0);
+    outC->MessageBus_out[idx16].Message.nid_message = kcg_lit_int32(0);
+    outC->MessageBus_out[idx16].Message.l_message = kcg_lit_int32(0);
+    outC->MessageBus_out[idx16].Message.t_train = kcg_lit_int32(0);
+    outC->MessageBus_out[idx16].Message.nid_engine = kcg_lit_int32(0);
+    outC->MessageBus_out[idx16].Message.field1 = kcg_lit_int32(0);
+    outC->MessageBus_out[idx16].Message.field2 = kcg_lit_int32(0);
+    outC->MessageBus_out[idx16].Message.field3 = kcg_lit_int32(0);
     for (idx15 = 0; idx15 < 50; idx15++) {
-      outC->MessageBus_out[idx16].OptionalPackets[idx15] = kcg_lit_int64(0);
+      outC->MessageBus_out[idx16].OptionalPackets[idx15] = kcg_lit_int32(0);
     }
   }
   /* _L97=(TM_TrainTrack_Bus::MergeMessageToBus#1)/ */
@@ -376,6 +376,6 @@ void kcg_load_SV_Send_M129_TM_radio_messages(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Send_M129_TM_radio_messages.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _MA_Convert_P15_to_DistanceProfile_TA_MA_new_H_
 #define _MA_Convert_P15_to_DistanceProfile_TA_MA_new_H_
@@ -33,8 +33,8 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   P015_OBU_sectionlist_enum_T_TM /* _L71/ */ _L71;
   Q_SCALE /* _L65/ */ _L65;
-  _101_array /* _L74/ */ _L74;
-  _10_array /* _L76/ */ _L76;
+  _100_array /* _L74/ */ _L74;
+  _41_array /* _L76/ */ _L76;
   AccuDistanceProfileMA_TA_MA_new /* _L77/ */ _L77;
   AccuDistanceProfileMA_TA_MA_new /* _L83/ */ _L83;
   MovementAuthority_t_TrackAtlasTypes /* _L128/ */ _L128;
@@ -59,7 +59,7 @@ typedef struct {
   MovementAuthoritySectionlist_t_TrackAtlasTypes /* _L161/ */ _L161;
   N_ITER /* _L163/ */ _L163;
   P015_OBU_sectionlist_enum_T_TM /* _L166/ */ _L166;
-  array_int64_10 /* _L167/ */ _L167;
+  array_int32_10 /* _L167/ */ _L167;
   MovementAuthority_t_TrackAtlasTypes /* _L168/ */ _L168;
   MovementAuthority_t_TrackAtlasTypes /* _L169/ */ _L169;
 } outC_MA_Convert_P15_to_DistanceProfile_TA_MA_new;
@@ -88,6 +88,6 @@ extern void MA_Convert_P15_to_DistanceProfile_init_TA_MA_new(
 #endif /* _MA_Convert_P15_to_DistanceProfile_TA_MA_new_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** MA_Convert_P15_to_DistanceProfile_TA_MA_new.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

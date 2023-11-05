@@ -24,7 +24,7 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   A_internal_real_Type_SDM_Types_Pkg /* _L1/ */ _L1;
   A_gradient_element_t_SDM_GradientAcceleration_types /* _L2/ */ _L2;
-  kcg_float64 /* _L3/ */ _L3;
+  kcg_float32 /* _L3/ */ _L3;
   kcg_bool /* _L4/ */ _L4;
   A_internal_real_Type_SDM_Types_Pkg /* _L5/ */ _L5;
   A_internal_real_Type_SDM_Types_Pkg /* _L6/ */ _L6;

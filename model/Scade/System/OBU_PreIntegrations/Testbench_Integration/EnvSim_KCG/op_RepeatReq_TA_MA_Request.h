@@ -26,7 +26,7 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   T_internal_Type_Obu_BasicTypes_Pkg /* _L9/ */ _L9;
   kcg_bool /* _L7/ */ _L7;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   kcg_bool /* _L17/ */ _L17;
   kcg_bool /* _L18/ */ _L18;
   kcg_bool /* _L19/ */ _L19;
@@ -34,9 +34,9 @@ typedef struct {
   T_internal_Type_Obu_BasicTypes_Pkg /* _L21/ */ _L21;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L22/ */ _L22;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L16/ */ _L16;
-  kcg_int64 /* _L27/ */ _L27;
+  kcg_int32 /* _L27/ */ _L27;
   T_CYCLOC /* _L28/ */ _L28;
-  kcg_int64 /* _L29/ */ _L29;
+  kcg_int32 /* _L29/ */ _L29;
 } outC_op_RepeatReq_TA_MA_Request;
 
 /* ===========  node initialization and cycle functions  =========== */

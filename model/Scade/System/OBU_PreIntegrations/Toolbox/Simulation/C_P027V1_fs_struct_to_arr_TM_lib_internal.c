@@ -30,15 +30,15 @@ void C_P027V1_fs_struct_to_arr_init_TM_lib_internal(
   kcg_size idx;
   kcg_size idx1;
 
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
   for (idx = 0; idx < 2; idx++) {
-    outC->_L2[idx] = kcg_lit_int64(0);
+    outC->_L2[idx] = kcg_lit_int32(0);
   }
-  outC->_L1.NC_DIFF = kcg_lit_int64(0);
-  outC->_L1.V_DIFF = kcg_lit_int64(0);
+  outC->_L1.NC_DIFF = kcg_lit_int32(0);
+  outC->_L1.V_DIFF = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 2; idx1++) {
-    outC->section_arrays[idx1] = kcg_lit_int64(0);
+    outC->section_arrays[idx1] = kcg_lit_int32(0);
   }
 }
 #endif /* KCG_USER_DEFINED_INIT */

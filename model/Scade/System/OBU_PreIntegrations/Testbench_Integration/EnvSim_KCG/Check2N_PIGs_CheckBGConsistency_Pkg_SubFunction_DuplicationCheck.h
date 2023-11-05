@@ -35,9 +35,9 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   N_PIG /* _L1/ */ _L1;
   N_PIG /* _L2/ */ _L2;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L5/ */ _L5;
   kcg_bool /* _L7/ */ _L7;
   kcg_bool /* _L15/ */ _L15;
   kcg_bool /* _L16/ */ _L16;

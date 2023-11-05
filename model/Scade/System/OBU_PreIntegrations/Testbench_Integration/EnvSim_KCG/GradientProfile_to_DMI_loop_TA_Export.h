@@ -22,11 +22,11 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   Gradient_section_t_TrackAtlasTypes /* _L20/ */ _L20;
-  kcg_int64 /* _L25/ */ _L25;
+  kcg_int32 /* _L25/ */ _L25;
   kcg_bool /* _L24/ */ _L24;
-  kcg_int64 /* _L26/ */ _L26;
-  kcg_int64 /* _L27/ */ _L27;
-  kcg_int64 /* _L28/ */ _L28;
+  kcg_int32 /* _L26/ */ _L26;
+  kcg_int32 /* _L27/ */ _L27;
+  kcg_int32 /* _L28/ */ _L28;
   GradientProfile_for_DMI_section_t_TrackAtlasTypes /* _L40/ */ _L40;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L46/ */ _L46;
   G_internal_Type_Obu_BasicTypes_Pkg /* _L45/ */ _L45;
@@ -40,11 +40,11 @@ typedef struct {
   kcg_bool /* _L52/ */ _L52;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L53/ */ _L53;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L54/ */ _L54;
-  kcg_int64 /* _L55/ */ _L55;
+  kcg_int32 /* _L55/ */ _L55;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L56/ */ _L56;
-  kcg_int64 /* _L58/ */ _L58;
-  kcg_int64 /* _L59/ */ _L59;
-  kcg_int64 /* _L60/ */ _L60;
+  kcg_int32 /* _L58/ */ _L58;
+  kcg_int32 /* _L59/ */ _L59;
+  kcg_int32 /* _L60/ */ _L60;
 } outC_GradientProfile_to_DMI_loop_TA_Export;
 
 /* ===========  node initialization and cycle functions  =========== */

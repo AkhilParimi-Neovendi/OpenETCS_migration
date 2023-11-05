@@ -24,10 +24,10 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   P003V1_OBU_sectionlist_int_T_TM_baseline2 /* _L1/ */ _L1;
-  kcg_int64 /* _L3/ */ _L3;
-  array_int64_32 /* _L5/ */ _L5;
-  array_int64_32_32 /* _L6/ */ _L6;
-  kcg_int64 /* _L7/ */ _L7;
+  kcg_int32 /* _L3/ */ _L3;
+  array_int32_32 /* _L5/ */ _L5;
+  array_int32_32_32 /* _L6/ */ _L6;
+  kcg_int32 /* _L7/ */ _L7;
   _61_array /* _L9/ */ _L9;
   kcg_bool /* _L11/ */ _L11;
 } outC_C_P003V1_unflatten_sections_TM_lib_internal;
@@ -38,7 +38,7 @@ extern void C_P003V1_unflatten_sections_TM_lib_internal(
   /* nid_packet_ok/ */
   kcg_bool nid_packet_ok,
   /* n_iter/ */
-  kcg_int64 n_iter,
+  kcg_int32 n_iter,
   /* flat/ */
   P003V1_OBU_sectionlist_int_T_TM_baseline2 *flat,
   outC_C_P003V1_unflatten_sections_TM_lib_internal *outC);

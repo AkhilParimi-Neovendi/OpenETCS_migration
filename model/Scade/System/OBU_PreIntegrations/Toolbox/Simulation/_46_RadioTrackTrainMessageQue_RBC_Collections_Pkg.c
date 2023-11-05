@@ -29,30 +29,30 @@ void _46_RadioTrackTrainMessageQue_init_RBC_Collections_Pkg(
 
   outC->_L2 = kcg_true;
   outC->_L1.m_IsValid = kcg_true;
-  outC->_L1.m_Entry.Header.radioDevice = kcg_lit_int64(0);
-  outC->_L1.m_Entry.Header.receivedSystemTime = kcg_lit_int64(0);
-  outC->_L1.m_Entry.Header.nid_message = kcg_lit_int64(0);
-  outC->_L1.m_Entry.Header.t_train = kcg_lit_int64(0);
-  outC->_L1.m_Entry.Header.m_ack = kcg_lit_int64(0);
-  outC->_L1.m_Entry.Header.nid_lrbg = kcg_lit_int64(0);
-  outC->_L1.m_Entry.Header.t_train_reference = kcg_lit_int64(0);
-  outC->_L1.m_Entry.Header.nid_em = kcg_lit_int64(0);
-  outC->_L1.m_Entry.Header.q_scale = kcg_lit_int64(0);
-  outC->_L1.m_Entry.Header.d_sr = kcg_lit_int64(0);
-  outC->_L1.m_Entry.Header.t_sh_rqst = kcg_lit_int64(0);
-  outC->_L1.m_Entry.Header.d_ref = kcg_lit_int64(0);
-  outC->_L1.m_Entry.Header.q_dir = kcg_lit_int64(0);
-  outC->_L1.m_Entry.Header.d_emergencystop = kcg_lit_int64(0);
-  outC->_L1.m_Entry.Header.m_version = kcg_lit_int64(0);
+  outC->_L1.m_Entry.Header.radioDevice = kcg_lit_int32(0);
+  outC->_L1.m_Entry.Header.receivedSystemTime = kcg_lit_int32(0);
+  outC->_L1.m_Entry.Header.nid_message = kcg_lit_int32(0);
+  outC->_L1.m_Entry.Header.t_train = kcg_lit_int32(0);
+  outC->_L1.m_Entry.Header.m_ack = kcg_lit_int32(0);
+  outC->_L1.m_Entry.Header.nid_lrbg = kcg_lit_int32(0);
+  outC->_L1.m_Entry.Header.t_train_reference = kcg_lit_int32(0);
+  outC->_L1.m_Entry.Header.nid_em = kcg_lit_int32(0);
+  outC->_L1.m_Entry.Header.q_scale = kcg_lit_int32(0);
+  outC->_L1.m_Entry.Header.d_sr = kcg_lit_int32(0);
+  outC->_L1.m_Entry.Header.t_sh_rqst = kcg_lit_int32(0);
+  outC->_L1.m_Entry.Header.d_ref = kcg_lit_int32(0);
+  outC->_L1.m_Entry.Header.q_dir = kcg_lit_int32(0);
+  outC->_L1.m_Entry.Header.d_emergencystop = kcg_lit_int32(0);
+  outC->_L1.m_Entry.Header.m_version = kcg_lit_int32(0);
   for (idx = 0; idx < 30; idx++) {
-    outC->_L1.m_Entry.Messages.PacketHeaders[idx].nid_packet = kcg_lit_int64(0);
+    outC->_L1.m_Entry.Messages.PacketHeaders[idx].nid_packet = kcg_lit_int32(0);
     outC->_L1.m_Entry.Messages.PacketHeaders[idx].q_dir = Q_DIR_Reverse;
     outC->_L1.m_Entry.Messages.PacketHeaders[idx].valid = kcg_true;
-    outC->_L1.m_Entry.Messages.PacketHeaders[idx].startAddress = kcg_lit_int64(0);
-    outC->_L1.m_Entry.Messages.PacketHeaders[idx].endAddress = kcg_lit_int64(0);
+    outC->_L1.m_Entry.Messages.PacketHeaders[idx].startAddress = kcg_lit_int32(0);
+    outC->_L1.m_Entry.Messages.PacketHeaders[idx].endAddress = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 500; idx1++) {
-    outC->_L1.m_Entry.Messages.PacketData[idx1] = kcg_lit_int64(0);
+    outC->_L1.m_Entry.Messages.PacketData[idx1] = kcg_lit_int32(0);
   }
   outC->outIsValid = kcg_true;
 }

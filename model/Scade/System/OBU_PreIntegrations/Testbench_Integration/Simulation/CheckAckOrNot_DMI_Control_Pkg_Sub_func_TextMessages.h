@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _CheckAckOrNot_DMI_Control_Pkg_Sub_func_TextMessages_H_
 #define _CheckAckOrNot_DMI_Control_Pkg_Sub_func_TextMessages_H_
@@ -71,6 +71,6 @@ extern void CheckAckOrNot_init_DMI_Control_Pkg_Sub_func_TextMessages(
 #endif /* _CheckAckOrNot_DMI_Control_Pkg_Sub_func_TextMessages_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CheckAckOrNot_DMI_Control_Pkg_Sub_func_TextMessages.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

@@ -31,19 +31,19 @@ typedef struct {
   CompressedPacketData_T_Common_Types_Pkg /* _L432/ */ _L432;
   MetadataElement_T_Common_Types_Pkg /* _L431/ */ _L431;
   Metadata_T_Common_Types_Pkg /* _L435/ */ _L435;
-  kcg_int64 /* _L436/ */ _L436;
-  kcg_int64 /* _L437/ */ _L437;
+  kcg_int32 /* _L436/ */ _L436;
+  kcg_int32 /* _L437/ */ _L437;
   CompressedPackets_T_Common_Types_Pkg /* _L434/ */ _L434;
   CompressedPacketData_T_Common_Types_Pkg /* _L433/ */ _L433;
-  kcg_int64 /* _L438/ */ _L438;
+  kcg_int32 /* _L438/ */ _L438;
   CompressedPackets_T_Common_Types_Pkg /* _L439/ */ _L439;
   P027V1_section_int_T_TM_baseline2 /* _L440/ */ _L440;
-  kcg_int64 /* _L441/ */ _L441;
+  kcg_int32 /* _L441/ */ _L441;
   CompressedPacketData_T_Common_Types_Pkg /* _L443/ */ _L443;
   Metadata_T_Common_Types_Pkg /* _L442/ */ _L442;
-  kcg_int64 /* _L446/ */ _L446;
+  kcg_int32 /* _L446/ */ _L446;
   kcg_bool /* _L447/ */ _L447;
-  kcg_int64 /* _L448/ */ _L448;
+  kcg_int32 /* _L448/ */ _L448;
   Q_DIR /* _L449/ */ _L449;
 } outC_C_P027V1_tracksim_merge_sections_TM_conversions_baseline2;
 
@@ -51,15 +51,15 @@ typedef struct {
 /* TM_conversions_baseline2::C_P027V1_tracksim_merge_sections/ */
 extern void C_P027V1_tracksim_merge_sections_TM_conversions_baseline2(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* PacketStream_in/ */
   CompressedPackets_T_Common_Types_Pkg *PacketStream_in,
   /* P027V1_sections_from_track/ */
   P027V1_section_int_T_TM_baseline2 *P027V1_sections_from_track,
   /* n_iter/ */
-  kcg_int64 n_iter,
+  kcg_int32 n_iter,
   /* meta_first_section_in/ */
-  kcg_int64 meta_first_section_in,
+  kcg_int32 meta_first_section_in,
   /* q_dir/ */
   Q_DIR q_dir,
   outC_C_P027V1_tracksim_merge_sections_TM_conversions_baseline2 *outC);

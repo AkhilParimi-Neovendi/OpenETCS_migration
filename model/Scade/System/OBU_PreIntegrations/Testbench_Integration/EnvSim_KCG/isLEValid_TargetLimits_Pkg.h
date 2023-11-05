@@ -22,8 +22,8 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   kcg_bool /* _L1/ */ _L1;
-  kcg_float64 /* _L2/ */ _L2;
-  kcg_float64 /* _L4/ */ _L4;
+  kcg_float32 /* _L2/ */ _L2;
+  kcg_float32 /* _L4/ */ _L4;
   kcg_bool /* _L8/ */ _L8;
   kcg_bool /* _L7/ */ _L7;
   kcg_bool /* _L6/ */ _L6;
@@ -37,11 +37,11 @@ extern void isLEValid_TargetLimits_Pkg(
   /* valid1/ */
   kcg_bool valid1,
   /* i1/ */
-  kcg_float64 i1,
+  kcg_float32 i1,
   /* valid2/ */
   kcg_bool valid2,
   /* i2/ */
-  kcg_float64 i2,
+  kcg_float32 i2,
   outC_isLEValid_TargetLimits_Pkg *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

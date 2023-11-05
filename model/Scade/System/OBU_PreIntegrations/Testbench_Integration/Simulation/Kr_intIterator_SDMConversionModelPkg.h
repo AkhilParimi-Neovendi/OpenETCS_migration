@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _Kr_intIterator_SDMConversionModelPkg_H_
 #define _Kr_intIterator_SDMConversionModelPkg_H_
@@ -17,7 +17,7 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   kcg_bool /* goOn/ */ goOn;
-  kcg_int64 /* m_now/ */ m_now;
+  kcg_int32 /* m_now/ */ m_now;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -32,7 +32,7 @@ typedef struct {
   kcg_bool /* _L2/ */ _L2;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L8/ */ _L8;
   A_internal_Type_Obu_BasicTypes_Pkg /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   kcg_bool /* _L11/ */ _L11;
   kcg_bool /* _L12/ */ _L12;
   A_internal_Type_Obu_BasicTypes_Pkg /* _L16/ */ _L16;
@@ -42,7 +42,7 @@ typedef struct {
 /* SDMConversionModelPkg::Kr_intIterator/ */
 extern void Kr_intIterator_SDMConversionModelPkg(
   /* m_last/ */
-  kcg_int64 m_last,
+  kcg_int32 m_last,
   /* Kr_int/ */
   nvkrint_T_Packet_Types_Pkg *Kr_int,
   /* L/ */
@@ -64,6 +64,6 @@ extern void Kr_intIterator_init_SDMConversionModelPkg(
 #endif /* _Kr_intIterator_SDMConversionModelPkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Kr_intIterator_SDMConversionModelPkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

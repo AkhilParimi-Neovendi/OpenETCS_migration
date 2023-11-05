@@ -33,21 +33,21 @@ void Calculate_MRSP1_init_TA_MRSP_new(outC_Calculate_MRSP1_TA_MRSP_new *outC)
 
   for (idx = 0; idx < 110; idx++) {
     outC->_L18[idx].valid = kcg_true;
-    outC->_L18[idx].Loc_Abs = kcg_lit_int64(0);
-    outC->_L18[idx].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L18[idx].MRS = kcg_lit_int64(0);
+    outC->_L18[idx].Loc_Abs = kcg_lit_int32(0);
+    outC->_L18[idx].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L18[idx].MRS = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 11; idx2++) {
     for (idx1 = 0; idx1 < 50; idx1++) {
-      outC->_L15[idx2][idx1].target = kcg_lit_int64(0);
-      outC->_L15[idx2][idx1].speed = kcg_lit_int64(0);
+      outC->_L15[idx2][idx1].target = kcg_lit_int32(0);
+      outC->_L15[idx2][idx1].speed = kcg_lit_int32(0);
     }
   }
   for (idx3 = 0; idx3 < 110; idx3++) {
     outC->MRSP[idx3].valid = kcg_true;
-    outC->MRSP[idx3].Loc_Abs = kcg_lit_int64(0);
-    outC->MRSP[idx3].Loc_LRBG = kcg_lit_int64(0);
-    outC->MRSP[idx3].MRS = kcg_lit_int64(0);
+    outC->MRSP[idx3].Loc_Abs = kcg_lit_int32(0);
+    outC->MRSP[idx3].Loc_LRBG = kcg_lit_int32(0);
+    outC->MRSP[idx3].MRS = kcg_lit_int32(0);
   }
 }
 #endif /* KCG_USER_DEFINED_INIT */

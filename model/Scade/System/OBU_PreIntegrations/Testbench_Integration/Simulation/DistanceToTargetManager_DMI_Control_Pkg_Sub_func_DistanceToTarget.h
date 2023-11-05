@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _DistanceToTargetManager_DMI_Control_Pkg_Sub_func_DistanceToTarget_H_
 #define _DistanceToTargetManager_DMI_Control_Pkg_Sub_func_DistanceToTarget_H_
@@ -17,8 +17,8 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_float64 /* DistanceToTarget_toDisplay/ */ DistanceToTarget_toDisplay;
-  kcg_float64 /* InterpolatedDistanceToTarget_toDisplay/ */ InterpolatedDistanceToTarget_toDisplay;
+  kcg_float32 /* DistanceToTarget_toDisplay/ */ DistanceToTarget_toDisplay;
+  kcg_float32 /* InterpolatedDistanceToTarget_toDisplay/ */ InterpolatedDistanceToTarget_toDisplay;
   kcg_bool /* DistanceToTargetBarVisibility_toDisplay/ */ DistanceToTargetBarVisibility_toDisplay;
   kcg_bool /* DistanceToTargetVisibilityDigital_toDisplay/ */ DistanceToTargetVisibilityDigital_toDisplay;
   /* -----------------------  no local probes  ----------------------- */
@@ -38,24 +38,24 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   kcg_bool /* DistanceToTargetA2IfBlock:then:_L2/ */ _L2_then_DistanceToTargetA2IfBlock;
-  kcg_float64 /* DistanceToTargetA2IfBlock:then:_L1/ */ _L1_then_DistanceToTargetA2IfBlock;
+  kcg_float32 /* DistanceToTargetA2IfBlock:then:_L1/ */ _L1_then_DistanceToTargetA2IfBlock;
   kcg_bool /* DistanceToTargetA2IfBlock:else:_L1/ */ _L1_else_DistanceToTargetA2IfBlock;
-  kcg_float64 /* DistanceToTargetBarIfBlock:then:_L15/ */ _L15_then_DistanceToTargetBarIfBlock;
+  kcg_float32 /* DistanceToTargetBarIfBlock:then:_L15/ */ _L15_then_DistanceToTargetBarIfBlock;
   kcg_bool /* DistanceToTargetBarIfBlock:then:_L6/ */ _L6_then_DistanceToTargetBarIfBlock;
-  kcg_float64 /* DistanceToTargetBarIfBlock:then:_L2/ */ _L2_then_DistanceToTargetBarIfBlock;
+  kcg_float32 /* DistanceToTargetBarIfBlock:then:_L2/ */ _L2_then_DistanceToTargetBarIfBlock;
   kcg_bool /* DistanceToTargetBarIfBlock:else:_L5/ */ _L5_else_DistanceToTargetBarIfBlock;
   kcg_bool /* ConditionTargetBar/ */ ConditionTargetBar;
-  kcg_float64 /* localDistanceToTarget/ */ localDistanceToTarget;
+  kcg_float32 /* localDistanceToTarget/ */ localDistanceToTarget;
   kcg_bool /* ConditionDistanceToTarget/ */ ConditionDistanceToTarget;
   DMI_Dynamic_T_DMI_Messages_EVC_to_DMI_Pkg /* _L7/ */ _L7;
   kcg_bool /* _L8/ */ _L8;
   DMI_Dynamic_T_DMI_Messages_EVC_to_DMI_Pkg /* _L9/ */ _L9;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L10/ */ _L10;
-  kcg_float64 /* _L11/ */ _L11;
+  kcg_float32 /* _L11/ */ _L11;
   kcg_bool /* _L21/ */ _L21;
   DMI_Dynamic_T_DMI_Messages_EVC_to_DMI_Pkg /* _L20/ */ _L20;
-  kcg_float64 /* _L22/ */ _L22;
-  kcg_float64 /* _L23/ */ _L23;
+  kcg_float32 /* _L22/ */ _L22;
+  kcg_float32 /* _L23/ */ _L23;
 } outC_DistanceToTargetManager_DMI_Control_Pkg_Sub_func_DistanceToTarget;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -78,8 +78,8 @@ typedef struct {
   /* ----------------------  memorised outputs  ---------------------- */
   kcg_bool /* DistanceToTargetVisibilityDigital_toDisplay/ */ Context_DistanceToTargetVisibilityDigital_toDisplay;
   kcg_bool /* DistanceToTargetBarVisibility_toDisplay/ */ Context_DistanceToTargetBarVisibility_toDisplay;
-  kcg_float64 /* InterpolatedDistanceToTarget_toDisplay/ */ Context_InterpolatedDistanceToTarget_toDisplay;
-  kcg_float64 /* DistanceToTarget_toDisplay/ */ Context_DistanceToTarget_toDisplay;
+  kcg_float32 /* InterpolatedDistanceToTarget_toDisplay/ */ Context_InterpolatedDistanceToTarget_toDisplay;
+  kcg_float32 /* DistanceToTarget_toDisplay/ */ Context_DistanceToTarget_toDisplay;
   /* ----------------------- local memories  ------------------------- */
   kcg_bool /* _L19/ */ Context__L19;
   kcg_bool /* _L6/ */ Context__L6;
@@ -101,6 +101,6 @@ extern void kcg_load_SV_DistanceToTargetManager_DMI_Control_Pkg_Sub_func_Distanc
 #endif /* _DistanceToTargetManager_DMI_Control_Pkg_Sub_func_DistanceToTarget_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** DistanceToTargetManager_DMI_Control_Pkg_Sub_func_DistanceToTarget.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

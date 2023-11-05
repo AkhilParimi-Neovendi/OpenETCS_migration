@@ -31,7 +31,7 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   M_MODE /* _L5/ */ _L5;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L4/ */ _L4;
   filterRelatedEvents_T_Common_Types_Pkg /* _L3/ */ _L3;
   M_LEVEL /* _L2/ */ _L2;
   ReceivedMessage_T_Common_Types_Pkg /* _L1/ */ _L1;
@@ -58,7 +58,7 @@ extern void FilterSequence_InformationFilter_Pkg(
   /* inFilterEvents/ */
   filterRelatedEvents_T_Common_Types_Pkg *inFilterEvents,
   /* inSupervisingDevice/ */
-  kcg_int64 inSupervisingDevice,
+  kcg_int32 inSupervisingDevice,
   /* inMode/ */
   M_MODE inMode,
   outC_FilterSequence_InformationFilter_Pkg *outC);

@@ -14,7 +14,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* meta/ */ meta;
+  kcg_int32 /* meta/ */ meta;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
@@ -23,12 +23,12 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   NID_PACKET /* _L1/ */ _L1;
   kcg_bool /* _L6/ */ _L6;
-  kcg_int64 /* _L7/ */ _L7;
+  kcg_int32 /* _L7/ */ _L7;
   NID_PACKET /* _L8/ */ _L8;
-  kcg_int64 /* _L9/ */ _L9;
+  kcg_int32 /* _L9/ */ _L9;
   kcg_bool /* _L10/ */ _L10;
-  kcg_int64 /* _L11/ */ _L11;
-  kcg_int64 /* _L13/ */ _L13;
+  kcg_int32 /* _L11/ */ _L11;
+  kcg_int32 /* _L13/ */ _L13;
 } outC_Encode_NID_PACKET_TM_TrainToTrack;
 
 /* ===========  node initialization and cycle functions  =========== */

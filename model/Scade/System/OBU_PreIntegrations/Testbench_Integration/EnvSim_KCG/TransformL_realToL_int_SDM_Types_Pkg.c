@@ -13,10 +13,10 @@ void TransformL_realToL_int_SDM_Types_Pkg(
   L_internal_real_Type_SDM_Types_Pkg loc_real,
   outC_TransformL_realToL_int_SDM_Types_Pkg *outC)
 {
-  outC->_L3 = kcg_lit_float64(100.0);
+  outC->_L3 = kcg_lit_float32(100.0);
   outC->_L4 = loc_real;
   outC->_L1 = outC->_L4 * outC->_L3;
-  outC->_L2 = /* _L2= */(kcg_int64) outC->_L1;
+  outC->_L2 = /* _L2= */(kcg_int32) outC->_L1;
   outC->loc_int = outC->_L2;
 }
 
@@ -24,11 +24,11 @@ void TransformL_realToL_int_SDM_Types_Pkg(
 void TransformL_realToL_int_init_SDM_Types_Pkg(
   outC_TransformL_realToL_int_SDM_Types_Pkg *outC)
 {
-  outC->_L4 = kcg_lit_float64(0.0);
-  outC->_L1 = kcg_lit_float64(0.0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_float64(0.0);
-  outC->loc_int = kcg_lit_int64(0);
+  outC->_L4 = kcg_lit_float32(0.0);
+  outC->_L1 = kcg_lit_float32(0.0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_float32(0.0);
+  outC->loc_int = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

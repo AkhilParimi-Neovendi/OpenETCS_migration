@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _Balise_417_0_AmsterdamUtrechtL2_Sheet12_Breukelen_Balises_H_
 #define _Balise_417_0_AmsterdamUtrechtL2_Sheet12_Breukelen_Balises_H_
@@ -32,8 +32,8 @@ typedef struct {
   B_data_internal_T_InfraLib /* _L15/ */ _L15;
   B_data_internal_T_InfraLib /* _L17/ */ _L17;
   BaliseTelegramHeader_int_T_TM /* _L19/ */ _L19;
-  kcg_int64 /* _L20/ */ _L20;
-  kcg_int64 /* _L21/ */ _L21;
+  kcg_int32 /* _L20/ */ _L20;
+  kcg_int32 /* _L21/ */ _L21;
   BaliseTelegramHeader_int_T_TM /* _L23/ */ _L23;
 } outC_Balise_417_0_AmsterdamUtrechtL2_Sheet12_Breukelen_Balises;
 
@@ -45,7 +45,7 @@ extern void Balise_417_0_AmsterdamUtrechtL2_Sheet12_Breukelen_Balises(
   /* Header/ */
   BaliseTelegramHeader_int_T_TM *Header,
   /* PIG_nom/ */
-  kcg_int64 PIG_nom,
+  kcg_int32 PIG_nom,
   outC_Balise_417_0_AmsterdamUtrechtL2_Sheet12_Breukelen_Balises *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET
@@ -63,6 +63,6 @@ extern void Balise_417_0_init_AmsterdamUtrechtL2_Sheet12_Breukelen_Balises(
 #endif /* _Balise_417_0_AmsterdamUtrechtL2_Sheet12_Breukelen_Balises_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Balise_417_0_AmsterdamUtrechtL2_Sheet12_Breukelen_Balises.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

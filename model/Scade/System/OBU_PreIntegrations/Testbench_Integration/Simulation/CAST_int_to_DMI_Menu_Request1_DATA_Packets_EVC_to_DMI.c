@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -44,7 +44,7 @@ void CAST_int_to_DMI_Menu_Request1_init_DATA_Packets_EVC_to_DMI(
   static kcg_size idx;
 
   for (idx = 0; idx < 3; idx++) {
-    outC->_L10[idx] = kcg_lit_int64(0);
+    outC->_L10[idx] = kcg_lit_int32(0);
   }
   outC->_L8.Menu_button_start_of_mission = kcg_true;
   outC->_L8.Menu_button_shunting = kcg_true;
@@ -78,7 +78,7 @@ void CAST_int_to_DMI_Menu_Request1_init_DATA_Packets_EVC_to_DMI(
   outC->_L8.Menu_button_Remove_VBC = kcg_true;
   outC->_L6 = kcg_true;
   outC->_L5.valid = kcg_true;
-  outC->_L5.system_clock = kcg_lit_int64(0);
+  outC->_L5.system_clock = kcg_lit_int32(0);
   outC->_L5.available_menu.Menu_button_start_of_mission = kcg_true;
   outC->_L5.available_menu.Menu_button_shunting = kcg_true;
   outC->_L5.available_menu.Menu_button_shunting_exit = kcg_true;
@@ -109,11 +109,11 @@ void CAST_int_to_DMI_Menu_Request1_init_DATA_Packets_EVC_to_DMI(
   outC->_L5.available_menu.Fix_train_data_entry = kcg_true;
   outC->_L5.available_menu.Menu_button_Set_VBC = kcg_true;
   outC->_L5.available_menu.Menu_button_Remove_VBC = kcg_true;
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->dmi_menu_request_ct.valid = kcg_true;
-  outC->dmi_menu_request_ct.system_clock = kcg_lit_int64(0);
+  outC->dmi_menu_request_ct.system_clock = kcg_lit_int32(0);
   outC->dmi_menu_request_ct.available_menu.Menu_button_start_of_mission =
     kcg_true;
   outC->dmi_menu_request_ct.available_menu.Menu_button_shunting = kcg_true;
@@ -181,6 +181,6 @@ void CAST_int_to_DMI_Menu_Request1_reset_DATA_Packets_EVC_to_DMI(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_int_to_DMI_Menu_Request1_DATA_Packets_EVC_to_DMI.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

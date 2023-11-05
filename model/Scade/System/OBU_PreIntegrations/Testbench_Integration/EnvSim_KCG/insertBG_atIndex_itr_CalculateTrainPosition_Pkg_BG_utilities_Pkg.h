@@ -36,9 +36,9 @@ typedef struct {
 /* CalculateTrainPosition_Pkg::BG_utilities_Pkg::insertBG_atIndex_itr/ */
 extern void insertBG_atIndex_itr_CalculateTrainPosition_Pkg_BG_utilities_Pkg(
   /* iteratorIndex/ */
-  kcg_int64 iteratorIndex,
+  kcg_int32 iteratorIndex,
   /* indexOfBG/ */
-  kcg_int64 indexOfBG,
+  kcg_int32 indexOfBG,
   /* BG_toBeInserted/ */
   positionedBG_T_TrainPosition_Types_Pck *BG_toBeInserted,
   /* BG_in/ */

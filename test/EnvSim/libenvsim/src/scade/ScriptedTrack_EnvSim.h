@@ -22,8 +22,8 @@ typedef struct {
 /* ===========  node initialization and cycle functions  =========== */
 /* EnvSim::ScriptedTrack */
 extern void ScriptedTrack_EnvSim(
-  /* EnvSim::ScriptedTrack::actualTrainPos */ kcg_float64 actualTrainPos,
-  /* EnvSim::ScriptedTrack::radioTrainPos */ kcg_float64 radioTrainPos,
+  /* EnvSim::ScriptedTrack::actualTrainPos */ kcg_float32 actualTrainPos,
+  /* EnvSim::ScriptedTrack::radioTrainPos */ kcg_float32 radioTrainPos,
   outC_ScriptedTrack_EnvSim *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

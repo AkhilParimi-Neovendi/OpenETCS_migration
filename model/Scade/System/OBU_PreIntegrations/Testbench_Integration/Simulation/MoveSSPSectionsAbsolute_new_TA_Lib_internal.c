@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -31,7 +31,7 @@ void MoveSSPSectionsAbsolute_new_TA_Lib_internal(
     kcg_copy_StaticSpeedProfile_t_TrackAtlasTypes(&acc, &outC->_L4);
     /* _L4=(TA_Lib_internal::MoveSSPSectionsAbsolute_Loop_new#1)/ */
     MoveSSPSectionsAbsolute_Loop_new_TA_Lib_internal(
-      /* _L4= */(kcg_int64) idx1,
+      /* _L4= */(kcg_int32) idx1,
       &acc,
       outC->_L40[idx1],
       &outC->Context_MoveSSPSectionsAbsolute_Loop_new_1[idx1]);
@@ -53,29 +53,29 @@ void MoveSSPSectionsAbsolute_new_init_TA_Lib_internal(
   static kcg_size idx4;
 
   for (idx1 = 0; idx1 < 50; idx1++) {
-    outC->_L40[idx1] = kcg_lit_int64(0);
+    outC->_L40[idx1] = kcg_lit_int32(0);
   }
-  outC->_L37 = kcg_lit_int64(0);
+  outC->_L37 = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 50; idx2++) {
     outC->_L4[idx2].valid = kcg_true;
-    outC->_L4[idx2].d_static_abs = kcg_lit_int64(0);
-    outC->_L4[idx2].d_static_LRBG = kcg_lit_int64(0);
+    outC->_L4[idx2].d_static_abs = kcg_lit_int32(0);
+    outC->_L4[idx2].d_static_LRBG = kcg_lit_int32(0);
     outC->_L4[idx2].q_train_length_corr = kcg_true;
-    outC->_L4[idx2].v_static = kcg_lit_int64(0);
+    outC->_L4[idx2].v_static = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 50; idx3++) {
     outC->_L2[idx3].valid = kcg_true;
-    outC->_L2[idx3].d_static_abs = kcg_lit_int64(0);
-    outC->_L2[idx3].d_static_LRBG = kcg_lit_int64(0);
+    outC->_L2[idx3].d_static_abs = kcg_lit_int32(0);
+    outC->_L2[idx3].d_static_LRBG = kcg_lit_int32(0);
     outC->_L2[idx3].q_train_length_corr = kcg_true;
-    outC->_L2[idx3].v_static = kcg_lit_int64(0);
+    outC->_L2[idx3].v_static = kcg_lit_int32(0);
   }
   for (idx4 = 0; idx4 < 50; idx4++) {
     outC->ProfileOut[idx4].valid = kcg_true;
-    outC->ProfileOut[idx4].d_static_abs = kcg_lit_int64(0);
-    outC->ProfileOut[idx4].d_static_LRBG = kcg_lit_int64(0);
+    outC->ProfileOut[idx4].d_static_abs = kcg_lit_int32(0);
+    outC->ProfileOut[idx4].d_static_LRBG = kcg_lit_int32(0);
     outC->ProfileOut[idx4].q_train_length_corr = kcg_true;
-    outC->ProfileOut[idx4].v_static = kcg_lit_int64(0);
+    outC->ProfileOut[idx4].v_static = kcg_lit_int32(0);
   }
   for (idx = 0; idx < 50; idx++) {
     /* _L4=(TA_Lib_internal::MoveSSPSectionsAbsolute_Loop_new#1)/ */
@@ -104,6 +104,6 @@ void MoveSSPSectionsAbsolute_new_reset_TA_Lib_internal(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** MoveSSPSectionsAbsolute_new_TA_Lib_internal.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

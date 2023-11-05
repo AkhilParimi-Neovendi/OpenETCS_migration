@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,16 +10,16 @@
 /* SDM_GradientAcceleration_Pkg::SearchIndexInGradientprofileInternal/ */
 void SearchIndexInGradientprofileInternal_SDM_GradientAcceleration_Pkg(
   /* index/ */
-  kcg_int64 index,
+  kcg_int32 index,
   /* indexOfPosition/ */
-  kcg_int64 indexOfPosition,
+  kcg_int32 indexOfPosition,
   /* position/ */
   L_internal_real_Type_SDM_Types_Pkg position,
   /* GradientProfile/ */
   GradientProfile_real_t_SDM_GradientAcceleration_types *GradientProfile,
   outC_SearchIndexInGradientprofileInternal_SDM_GradientAcceleration_Pkg *outC)
 {
-  outC->_L13 = kcg_lit_float64(0.0);
+  outC->_L13 = kcg_lit_float32(0.0);
   outC->_L14 = kcg_false;
   outC->_L12.location = outC->_L13;
   outC->_L12.gradient = outC->_L13;
@@ -28,7 +28,7 @@ void SearchIndexInGradientprofileInternal_SDM_GradientAcceleration_Pkg(
   kcg_copy_GradientProfile_real_t_SDM_GradientAcceleration_types(
     &outC->_L4,
     GradientProfile);
-  if ((kcg_lit_int64(0) <= outC->_L1) & (outC->_L1 < kcg_lit_int64(50))) {
+  if ((kcg_lit_int32(0) <= outC->_L1) & (outC->_L1 < kcg_lit_int32(50))) {
     kcg_copy_Gradient_section_real_t_SDM_GradientAcceleration_types(
       &outC->_L5,
       &outC->_L4[outC->_L1]);
@@ -61,28 +61,28 @@ void SearchIndexInGradientprofileInternal_init_SDM_GradientAcceleration_Pkg(
 {
   static kcg_size idx;
 
-  outC->_L15 = kcg_lit_float64(0.0);
+  outC->_L15 = kcg_lit_float32(0.0);
   outC->_L14 = kcg_true;
-  outC->_L13 = kcg_lit_float64(0.0);
-  outC->_L12.location = kcg_lit_float64(0.0);
-  outC->_L12.gradient = kcg_lit_float64(0.0);
+  outC->_L13 = kcg_lit_float32(0.0);
+  outC->_L12.location = kcg_lit_float32(0.0);
+  outC->_L12.gradient = kcg_lit_float32(0.0);
   outC->_L12.valid = kcg_true;
   outC->_L11 = kcg_true;
   outC->_L10 = kcg_true;
   outC->_L9 = kcg_true;
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5.location = kcg_lit_float64(0.0);
-  outC->_L5.gradient = kcg_lit_float64(0.0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5.location = kcg_lit_float32(0.0);
+  outC->_L5.gradient = kcg_lit_float32(0.0);
   outC->_L5.valid = kcg_true;
   for (idx = 0; idx < 50; idx++) {
-    outC->_L4[idx].location = kcg_lit_float64(0.0);
-    outC->_L4[idx].gradient = kcg_lit_float64(0.0);
+    outC->_L4[idx].location = kcg_lit_float32(0.0);
+    outC->_L4[idx].gradient = kcg_lit_float32(0.0);
     outC->_L4[idx].valid = kcg_true;
   }
-  outC->_L3 = kcg_lit_float64(0.0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->indexOfPositionOut = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_float32(0.0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->indexOfPositionOut = kcg_lit_int32(0);
   outC->cond = kcg_true;
 }
 #endif /* KCG_USER_DEFINED_INIT */
@@ -99,6 +99,6 @@ void SearchIndexInGradientprofileInternal_reset_SDM_GradientAcceleration_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** SearchIndexInGradientprofileInternal_SDM_GradientAcceleration_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

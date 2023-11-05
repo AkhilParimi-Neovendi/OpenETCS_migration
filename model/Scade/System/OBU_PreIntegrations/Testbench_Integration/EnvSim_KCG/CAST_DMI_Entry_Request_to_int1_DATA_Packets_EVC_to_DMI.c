@@ -43,19 +43,19 @@ void CAST_DMI_Entry_Request_to_int1_init_DATA_Packets_EVC_to_DMI(
   static kcg_size idx;
   static kcg_size idx1;
 
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
   outC->_L3 = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->_L5 = kcg_true;
   for (idx = 0; idx < 3; idx++) {
-    outC->_L2[idx] = kcg_lit_int64(0);
+    outC->_L2[idx] = kcg_lit_int32(0);
   }
   outC->_L1.valid = kcg_true;
-  outC->_L1.system_clock = kcg_lit_int64(0);
+  outC->_L1.system_clock = kcg_lit_int32(0);
   outC->_L1.entry_request = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   for (idx1 = 0; idx1 < 3; idx1++) {
-    outC->dmi_entry_request_int[idx1] = kcg_lit_int64(0);
+    outC->dmi_entry_request_int[idx1] = kcg_lit_int32(0);
   }
   /* _L7=(DATA::Variables::CAST_DMI_List_Entry_Request_to_int#1)/ */
   CAST_DMI_List_Entry_Request_to_int_init_DATA_Variables(

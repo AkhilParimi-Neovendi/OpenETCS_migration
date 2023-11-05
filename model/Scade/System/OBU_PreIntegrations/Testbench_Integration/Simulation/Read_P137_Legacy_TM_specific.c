@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -35,14 +35,14 @@ void Read_P137_Legacy_init_TM_specific(outC_Read_P137_Legacy_TM_specific *outC)
   static kcg_size idx1;
 
   for (idx = 0; idx < 30; idx++) {
-    outC->_L3.PacketHeaders[idx].nid_packet = kcg_lit_int64(0);
+    outC->_L3.PacketHeaders[idx].nid_packet = kcg_lit_int32(0);
     outC->_L3.PacketHeaders[idx].q_dir = Q_DIR_Reverse;
     outC->_L3.PacketHeaders[idx].valid = kcg_true;
-    outC->_L3.PacketHeaders[idx].startAddress = kcg_lit_int64(0);
-    outC->_L3.PacketHeaders[idx].endAddress = kcg_lit_int64(0);
+    outC->_L3.PacketHeaders[idx].startAddress = kcg_lit_int32(0);
+    outC->_L3.PacketHeaders[idx].endAddress = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 500; idx1++) {
-    outC->_L3.PacketData[idx1] = kcg_lit_int64(0);
+    outC->_L3.PacketData[idx1] = kcg_lit_int32(0);
   }
   outC->_L1 = kcg_true;
   outC->_L2.valid = kcg_true;
@@ -67,6 +67,6 @@ void Read_P137_Legacy_reset_TM_specific(outC_Read_P137_Legacy_TM_specific *outC)
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Read_P137_Legacy_TM_specific.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

@@ -10,15 +10,15 @@
 /* TM_conversions_baseline2::C_P027V1_tracksim_merge_sections/ */
 void C_P027V1_tracksim_merge_sections_TM_conversions_baseline2(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* PacketStream_in/ */
   CompressedPackets_T_Common_Types_Pkg *PacketStream_in,
   /* P027V1_sections_from_track/ */
   P027V1_section_int_T_TM_baseline2 *P027V1_sections_from_track,
   /* n_iter/ */
-  kcg_int64 n_iter,
+  kcg_int32 n_iter,
   /* meta_first_section_in/ */
-  kcg_int64 meta_first_section_in,
+  kcg_int32 meta_first_section_in,
   /* q_dir/ */
   Q_DIR q_dir,
   outC_C_P027V1_tracksim_merge_sections_TM_conversions_baseline2 *outC)
@@ -96,78 +96,78 @@ void C_P027V1_tracksim_merge_sections_init_TM_conversions_baseline2(
   static kcg_size idx11;
 
   outC->_L449 = Q_DIR_Reverse;
-  outC->_L448 = kcg_lit_int64(0);
+  outC->_L448 = kcg_lit_int32(0);
   outC->_L447 = kcg_true;
-  outC->_L446 = kcg_lit_int64(0);
+  outC->_L446 = kcg_lit_int32(0);
   for (idx = 0; idx < 30; idx++) {
-    outC->_L442[idx].nid_packet = kcg_lit_int64(0);
+    outC->_L442[idx].nid_packet = kcg_lit_int32(0);
     outC->_L442[idx].q_dir = Q_DIR_Reverse;
     outC->_L442[idx].valid = kcg_true;
-    outC->_L442[idx].startAddress = kcg_lit_int64(0);
-    outC->_L442[idx].endAddress = kcg_lit_int64(0);
+    outC->_L442[idx].startAddress = kcg_lit_int32(0);
+    outC->_L442[idx].endAddress = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 500; idx1++) {
-    outC->_L443[idx1] = kcg_lit_int64(0);
+    outC->_L443[idx1] = kcg_lit_int32(0);
   }
-  outC->_L441 = kcg_lit_int64(0);
-  outC->_L440.D_STATIC = kcg_lit_int64(0);
-  outC->_L440.V_STATIC = kcg_lit_int64(0);
-  outC->_L440.Q_FRONT = kcg_lit_int64(0);
-  outC->_L440.N_ITER = kcg_lit_int64(0);
+  outC->_L441 = kcg_lit_int32(0);
+  outC->_L440.D_STATIC = kcg_lit_int32(0);
+  outC->_L440.V_STATIC = kcg_lit_int32(0);
+  outC->_L440.Q_FRONT = kcg_lit_int32(0);
+  outC->_L440.N_ITER = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 32; idx2++) {
-    outC->_L440.SECTIONS_q_diff[idx2].NC_DIFF = kcg_lit_int64(0);
-    outC->_L440.SECTIONS_q_diff[idx2].V_DIFF = kcg_lit_int64(0);
+    outC->_L440.SECTIONS_q_diff[idx2].NC_DIFF = kcg_lit_int32(0);
+    outC->_L440.SECTIONS_q_diff[idx2].V_DIFF = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 30; idx3++) {
-    outC->_L439.PacketHeaders[idx3].nid_packet = kcg_lit_int64(0);
+    outC->_L439.PacketHeaders[idx3].nid_packet = kcg_lit_int32(0);
     outC->_L439.PacketHeaders[idx3].q_dir = Q_DIR_Reverse;
     outC->_L439.PacketHeaders[idx3].valid = kcg_true;
-    outC->_L439.PacketHeaders[idx3].startAddress = kcg_lit_int64(0);
-    outC->_L439.PacketHeaders[idx3].endAddress = kcg_lit_int64(0);
+    outC->_L439.PacketHeaders[idx3].startAddress = kcg_lit_int32(0);
+    outC->_L439.PacketHeaders[idx3].endAddress = kcg_lit_int32(0);
   }
   for (idx4 = 0; idx4 < 500; idx4++) {
-    outC->_L439.PacketData[idx4] = kcg_lit_int64(0);
+    outC->_L439.PacketData[idx4] = kcg_lit_int32(0);
   }
-  outC->_L438 = kcg_lit_int64(0);
+  outC->_L438 = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 500; idx5++) {
-    outC->_L433[idx5] = kcg_lit_int64(0);
+    outC->_L433[idx5] = kcg_lit_int32(0);
   }
   for (idx6 = 0; idx6 < 30; idx6++) {
-    outC->_L434.PacketHeaders[idx6].nid_packet = kcg_lit_int64(0);
+    outC->_L434.PacketHeaders[idx6].nid_packet = kcg_lit_int32(0);
     outC->_L434.PacketHeaders[idx6].q_dir = Q_DIR_Reverse;
     outC->_L434.PacketHeaders[idx6].valid = kcg_true;
-    outC->_L434.PacketHeaders[idx6].startAddress = kcg_lit_int64(0);
-    outC->_L434.PacketHeaders[idx6].endAddress = kcg_lit_int64(0);
+    outC->_L434.PacketHeaders[idx6].startAddress = kcg_lit_int32(0);
+    outC->_L434.PacketHeaders[idx6].endAddress = kcg_lit_int32(0);
   }
   for (idx7 = 0; idx7 < 500; idx7++) {
-    outC->_L434.PacketData[idx7] = kcg_lit_int64(0);
+    outC->_L434.PacketData[idx7] = kcg_lit_int32(0);
   }
-  outC->_L437 = kcg_lit_int64(0);
-  outC->_L436 = kcg_lit_int64(0);
+  outC->_L437 = kcg_lit_int32(0);
+  outC->_L436 = kcg_lit_int32(0);
   for (idx8 = 0; idx8 < 30; idx8++) {
-    outC->_L435[idx8].nid_packet = kcg_lit_int64(0);
+    outC->_L435[idx8].nid_packet = kcg_lit_int32(0);
     outC->_L435[idx8].q_dir = Q_DIR_Reverse;
     outC->_L435[idx8].valid = kcg_true;
-    outC->_L435[idx8].startAddress = kcg_lit_int64(0);
-    outC->_L435[idx8].endAddress = kcg_lit_int64(0);
+    outC->_L435[idx8].startAddress = kcg_lit_int32(0);
+    outC->_L435[idx8].endAddress = kcg_lit_int32(0);
   }
-  outC->_L431.nid_packet = kcg_lit_int64(0);
+  outC->_L431.nid_packet = kcg_lit_int32(0);
   outC->_L431.q_dir = Q_DIR_Reverse;
   outC->_L431.valid = kcg_true;
-  outC->_L431.startAddress = kcg_lit_int64(0);
-  outC->_L431.endAddress = kcg_lit_int64(0);
+  outC->_L431.startAddress = kcg_lit_int32(0);
+  outC->_L431.endAddress = kcg_lit_int32(0);
   for (idx9 = 0; idx9 < 500; idx9++) {
-    outC->_L432[idx9] = kcg_lit_int64(0);
+    outC->_L432[idx9] = kcg_lit_int32(0);
   }
   for (idx10 = 0; idx10 < 30; idx10++) {
-    outC->Packets_Out.PacketHeaders[idx10].nid_packet = kcg_lit_int64(0);
+    outC->Packets_Out.PacketHeaders[idx10].nid_packet = kcg_lit_int32(0);
     outC->Packets_Out.PacketHeaders[idx10].q_dir = Q_DIR_Reverse;
     outC->Packets_Out.PacketHeaders[idx10].valid = kcg_true;
-    outC->Packets_Out.PacketHeaders[idx10].startAddress = kcg_lit_int64(0);
-    outC->Packets_Out.PacketHeaders[idx10].endAddress = kcg_lit_int64(0);
+    outC->Packets_Out.PacketHeaders[idx10].startAddress = kcg_lit_int32(0);
+    outC->Packets_Out.PacketHeaders[idx10].endAddress = kcg_lit_int32(0);
   }
   for (idx11 = 0; idx11 < 500; idx11++) {
-    outC->Packets_Out.PacketData[idx11] = kcg_lit_int64(0);
+    outC->Packets_Out.PacketData[idx11] = kcg_lit_int32(0);
   }
   outC->cont = kcg_true;
   /* _L433=(TM_lib_internal::SEND_MessageData#1)/ */

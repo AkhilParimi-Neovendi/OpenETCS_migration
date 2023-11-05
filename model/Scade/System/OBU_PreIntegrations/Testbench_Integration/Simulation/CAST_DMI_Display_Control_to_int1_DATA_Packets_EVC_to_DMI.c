@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -40,19 +40,19 @@ void CAST_DMI_Display_Control_to_int1_init_DATA_Packets_EVC_to_DMI(
   static kcg_size idx;
   static kcg_size idx1;
 
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L4 = kcg_true;
   outC->_L5 = kcg_true;
   for (idx = 0; idx < 3; idx++) {
-    outC->_L2[idx] = kcg_lit_int64(0);
+    outC->_L2[idx] = kcg_lit_int32(0);
   }
   outC->_L1.valid = kcg_true;
   outC->_L1.cab_is_active = kcg_true;
-  outC->_L1.system_clock = kcg_lit_int64(0);
+  outC->_L1.system_clock = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 3; idx1++) {
-    outC->dmi_display_control_int[idx1] = kcg_lit_int64(0);
+    outC->dmi_display_control_int[idx1] = kcg_lit_int32(0);
   }
   /* _L6=(Utilities::Bool_to_Int#1)/ */
   Bool_to_Int_init_Utilities(&outC->Context_Bool_to_Int_1);
@@ -77,6 +77,6 @@ void CAST_DMI_Display_Control_to_int1_reset_DATA_Packets_EVC_to_DMI(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_DMI_Display_Control_to_int1_DATA_Packets_EVC_to_DMI.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

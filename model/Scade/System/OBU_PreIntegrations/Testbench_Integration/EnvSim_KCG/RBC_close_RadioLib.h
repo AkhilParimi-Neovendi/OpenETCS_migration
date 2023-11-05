@@ -24,7 +24,7 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   R_data_internal_T_InfraLib /* _L1/ */ _L1;
   kcg_bool /* _L5/ */ _L5;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L4/ */ _L4;
   CompressedPackets_T_Common_Types_Pkg /* _L3/ */ _L3;
   M_TrackTrain_Radio_T_TM_radio_messages /* _L2/ */ _L2;
 } outC_RBC_close_RadioLib;

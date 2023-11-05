@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _MRSP_to_DMI_TA_Export_H_
 #define _MRSP_to_DMI_TA_Export_H_
@@ -27,17 +27,17 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   MRSP_Profile_t_TrackAtlasTypes /* _L657/ */ _L657;
   MRSP_reduction_acc_TA_Export /* _L660/ */ _L660;
-  _90_array /* _L659/ */ _L659;
+  _91_array /* _L659/ */ _L659;
   MRSP_Profile_t_TrackAtlasTypes /* _L658/ */ _L658;
   MRSP_reduction_acc_TA_Export /* _L665/ */ _L665;
-  kcg_int64 /* _L666/ */ _L666;
+  kcg_int32 /* _L666/ */ _L666;
   kcg_bool /* _L667/ */ _L667;
-  kcg_int64 /* _L669/ */ _L669;
+  kcg_int32 /* _L669/ */ _L669;
   kcg_bool /* _L670/ */ _L670;
-  array_int64_110 /* _L676/ */ _L676;
+  array_int32_110 /* _L676/ */ _L676;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L677/ */ _L677;
   MRSP_Profile_t_TrackAtlasTypes /* _L679/ */ _L679;
-  _90_array /* _L680/ */ _L680;
+  _91_array /* _L680/ */ _L680;
 } outC_MRSP_to_DMI_TA_Export;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -62,6 +62,6 @@ extern void MRSP_to_DMI_init_TA_Export(outC_MRSP_to_DMI_TA_Export *outC);
 #endif /* _MRSP_to_DMI_TA_Export_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** MRSP_to_DMI_TA_Export.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

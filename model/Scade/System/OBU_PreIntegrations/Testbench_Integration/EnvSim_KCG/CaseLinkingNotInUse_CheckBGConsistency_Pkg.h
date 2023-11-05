@@ -46,13 +46,13 @@ typedef struct {
   kcg_bool /* IfBlock1:else:else:_L4/ */ _L4_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:_L3/ */ _L3_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:_L5/ */ _L5_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L7/ */ _L7_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L6/ */ _L6_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L7/ */ _L7_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L6/ */ _L6_else_else_IfBlock1;
   ReceivedMessage_T_Common_Types_Pkg /* IfBlock1:else:then:_L3/ */ _L3_then_else_IfBlock1;
   N_PIG /* IfBlock1:else:then:_L18/ */ _L18_then_else_IfBlock1;
   N_PIG /* IfBlock1:else:then:_L16/ */ _L16_then_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L15/ */ _L15_then_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L14/ */ _L14_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L15/ */ _L15_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L14/ */ _L14_then_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L13/ */ _L13_then_else_IfBlock1;
   ReceivedMessage_T_Common_Types_Pkg /* IfBlock1:else:then:_L23/ */ _L23_then_else_IfBlock1;
   Q_NVLOCACC /* IfBlock1:else:then:_L24/ */ _L24_then_else_IfBlock1;
@@ -62,8 +62,8 @@ typedef struct {
   kcg_bool /* isComplete/ */ isComplete;
   kcg_bool /* isSingle/ */ isSingle;
   Telegram_T_BG_Types_Pkg /* lastTelegram/ */ lastTelegram;
-  kcg_int64 /* nid_errorBG_local/ */ nid_errorBG_local;
-  kcg_int64 /* nid_c_local/ */ nid_c_local;
+  kcg_int32 /* nid_errorBG_local/ */ nid_errorBG_local;
+  kcg_int32 /* nid_c_local/ */ nid_c_local;
   Telegram_T_BG_Types_Pkg /* _L13/ */ _L13;
   kcg_bool /* _L12/ */ _L12;
   kcg_bool /* _L11/ */ _L11;

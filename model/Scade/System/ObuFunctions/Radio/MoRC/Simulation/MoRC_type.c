@@ -3485,7 +3485,7 @@ SimTypeUtils _Type_kcg_float32_Utils = {
 };
 
 /****************************************************************
- ** kcg_float64 
+ ** kcg_float32 
  ****************************************************************/
 
 #ifdef __cplusplus
@@ -3498,22 +3498,22 @@ SimTypeUtils _Type_kcg_float32_Utils = {
   struct SimTypeVTable *pSimFloat64VTable;
 #endif
 
-int kcg_float64_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj)
+int kcg_float32_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj)
 {
     if (pSimFloat64VTable != NULL
         && pSimFloat64VTable->m_pfnGetConvInfo(SptString, SptNone) == 1) {
        return pfnStrAppend(*(char**)pSimFloat64VTable->m_pfnToType(SptString, pValue), pStrObj);
     }
-    return predef_kcg_float64_to_string(*((kcg_float64*)pValue), pConverter->m_RealFormat, pfnStrAppend, pStrObj);
+    return predef_kcg_float32_to_string(*((kcg_float32*)pValue), pConverter->m_RealFormat, pfnStrAppend, pStrObj);
 }
 
-int check_kcg_float64_string(const char *str, char **endptr)
+int check_kcg_float32_string(const char *str, char **endptr)
 {
-    static kcg_float64 rTemp;
-    return string_to_kcg_float64(str, (void*)&rTemp, endptr);
+    static kcg_float32 rTemp;
+    return string_to_kcg_float32(str, (void*)&rTemp, endptr);
 }
 
-int string_to_kcg_float64(const char *str, void *pValue, char **endptr)
+int string_to_kcg_float32(const char *str, void *pValue, char **endptr)
 {
     int nRet = 0;
     skip_whitespace(str);
@@ -3521,12 +3521,12 @@ int string_to_kcg_float64(const char *str, void *pValue, char **endptr)
         nRet = string_to_VTable(str, pSimFloat64VTable, pValue, endptr);
     }
     if (nRet == 0) {
-        nRet = predef_string_to_kcg_float64(str, (kcg_float64*)pValue, endptr);
+        nRet = predef_string_to_kcg_float32(str, (kcg_float32*)pValue, endptr);
     }
     return nRet;
 }
 
-int is_kcg_float64_double_conversion_allowed()
+int is_kcg_float32_double_conversion_allowed()
 {
     if (pSimFloat64VTable != NULL) {
         return is_VTable_double_conversion_allowed(pSimFloat64VTable);
@@ -3534,16 +3534,16 @@ int is_kcg_float64_double_conversion_allowed()
     return 1;
 }
 
-int kcg_float64_to_double(const void *pValue, double *nValue)
+int kcg_float32_to_double(const void *pValue, double *nValue)
 {
     if (pSimFloat64VTable != NULL) {
         return VTable_to_double(pValue, pSimFloat64VTable, nValue);
     }
-    *nValue = (double)*((kcg_float64*)pValue);
+    *nValue = (double)*((kcg_float32*)pValue);
     return 1;
 }
 
-int is_kcg_float64_long_conversion_allowed()
+int is_kcg_float32_long_conversion_allowed()
 {
     if (pSimFloat64VTable != NULL) {
         return is_VTable_long_conversion_allowed(pSimFloat64VTable);
@@ -3551,16 +3551,16 @@ int is_kcg_float64_long_conversion_allowed()
     return 1;
 }
 
-int kcg_float64_to_long(const void *pValue, long *nValue)
+int kcg_float32_to_long(const void *pValue, long *nValue)
 {
     if (pSimFloat64VTable != NULL) {
         return VTable_to_long(pValue, pSimFloat64VTable, nValue);
     }
-    *nValue = (long)*((kcg_float64*)pValue);
+    *nValue = (long)*((kcg_float32*)pValue);
     return 1;
 }
 
-void compare_kcg_float64(int *pResult, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths)
+void compare_kcg_float32(int *pResult, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths)
 {
     int unitResult = 0;
     if (!pTol)
@@ -3583,49 +3583,49 @@ void compare_kcg_float64(int *pResult, const void *pValue1, const void *pValue2,
         }
     } else {
         /* Predefined comparison (with tolerance): */
-        unitResult = predef_compare_kcg_float64(pResult, *((kcg_float64*)pValue1), *((kcg_float64*)pValue2), pTol);
+        unitResult = predef_compare_kcg_float32(pResult, *((kcg_float32*)pValue1), *((kcg_float32*)pValue2), pTol);
     }
     if (unitResult != 0 && pfnStrListAppend != NULL && pszPath != NULL && *pszPath != 0 && pListErrPaths != NULL)
         pfnStrListAppend(pszPath, pListErrPaths);
 }
 
-int get_kcg_float64_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj)
+int get_kcg_float32_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj)
 {
     return pfnStrAppend("F64", pStrObj);
 }
 
-int init_kcg_float64(void *pValue)
+int init_kcg_float32(void *pValue)
 {
-    *(kcg_float64*)pValue = 0.0;
+    *(kcg_float32*)pValue = 0.0;
     return 1;
 }
 
-int release_kcg_float64(void *pValue)
+int release_kcg_float32(void *pValue)
 {
     UNUSED(pValue);
     return 1;
 }
 
-int copy_kcg_float64(void *pToValue, const void *pFromValue)
+int copy_kcg_float32(void *pToValue, const void *pFromValue)
 {
-    *((kcg_float64*)pToValue) = *((kcg_float64*)pFromValue);
+    *((kcg_float32*)pToValue) = *((kcg_float32*)pFromValue);
     return 1;
 }
 
-SimTypeUtils _Type_kcg_float64_Utils = {
-    kcg_float64_to_string,
-    check_kcg_float64_string,
-    string_to_kcg_float64,
-    is_kcg_float64_double_conversion_allowed,
-    kcg_float64_to_double,
-    is_kcg_float64_long_conversion_allowed,
-    kcg_float64_to_long,
-    compare_kcg_float64,
-    get_kcg_float64_signature,
-    init_kcg_float64,
-    release_kcg_float64,
-    copy_kcg_float64,
-    sizeof(kcg_float64)
+SimTypeUtils _Type_kcg_float32_Utils = {
+    kcg_float32_to_string,
+    check_kcg_float32_string,
+    string_to_kcg_float32,
+    is_kcg_float32_double_conversion_allowed,
+    kcg_float32_to_double,
+    is_kcg_float32_long_conversion_allowed,
+    kcg_float32_to_long,
+    compare_kcg_float32,
+    get_kcg_float32_signature,
+    init_kcg_float32,
+    release_kcg_float32,
+    copy_kcg_float32,
+    sizeof(kcg_float32)
 };
 
 /****************************************************************
@@ -3956,7 +3956,7 @@ SimTypeUtils _Type_kcg_int32_Utils = {
 };
 
 /****************************************************************
- ** kcg_int64 
+ ** kcg_int32 
  ****************************************************************/
 
 #ifdef __cplusplus
@@ -3969,27 +3969,27 @@ SimTypeUtils _Type_kcg_int32_Utils = {
   struct SimTypeVTable *pSimInt64VTable;
 #endif
 
-static SimConstValUtils const kcg_int64_constants[] = {
+static SimConstValUtils const kcg_int32_constants[] = {
     { "RCM_MsgTypes_Pkg::cNID_RADIO_useTheShortNumberStoredOnboard", &TU_cNID_RADIO_useTheShortNumberStoredOnboard_RCM_MsgTypes_Pkg },
     { "cNID_RADIO_useTheShortNumberStoredOnboard", &TU_cNID_RADIO_useTheShortNumberStoredOnboard_RCM_MsgTypes_Pkg },
 };
 
-int kcg_int64_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj)
+int kcg_int32_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj)
 {
     if (pSimInt64VTable != NULL
         && pSimInt64VTable->m_pfnGetConvInfo(SptString, SptNone) == 1) {
        return pfnStrAppend(*(char**)pSimInt64VTable->m_pfnToType(SptString, pValue), pStrObj);
     }
-    return predef_kcg_int64_to_string(*((kcg_int64*)pValue), pfnStrAppend, pStrObj);
+    return predef_kcg_int32_to_string(*((kcg_int32*)pValue), pfnStrAppend, pStrObj);
 }
 
-int check_kcg_int64_string(const char *str, char **endptr)
+int check_kcg_int32_string(const char *str, char **endptr)
 {
-    static kcg_int64 rTemp;
-    return string_to_kcg_int64(str, (void*)&rTemp, endptr);
+    static kcg_int32 rTemp;
+    return string_to_kcg_int32(str, (void*)&rTemp, endptr);
 }
 
-int string_to_kcg_int64(const char *str, void *pValue, char **endptr)
+int string_to_kcg_int32(const char *str, void *pValue, char **endptr)
 {
     int nRet = 0;
     skip_whitespace(str);
@@ -3997,18 +3997,18 @@ int string_to_kcg_int64(const char *str, void *pValue, char **endptr)
         nRet = string_to_VTable(str, pSimInt64VTable, pValue, endptr);
     }
     if (nRet == 0 && pConverter->m_pfnStringToConstant) {
-        nRet = pConverter->m_pfnStringToConstant(str, pValue, kcg_int64_constants, sizeof(kcg_int64_constants) / sizeof(kcg_int64_constants[0]), sizeof(kcg_int64), endptr);
+        nRet = pConverter->m_pfnStringToConstant(str, pValue, kcg_int32_constants, sizeof(kcg_int32_constants) / sizeof(kcg_int32_constants[0]), sizeof(kcg_int32), endptr);
         if (nRet != 0) {
             return 2;
         }
     }
     if (nRet == 0) {
-        nRet = predef_string_to_kcg_int64(str, (kcg_int64*)pValue, endptr);
+        nRet = predef_string_to_kcg_int32(str, (kcg_int32*)pValue, endptr);
     }
     return nRet;
 }
 
-int is_kcg_int64_double_conversion_allowed()
+int is_kcg_int32_double_conversion_allowed()
 {
     if (pSimInt64VTable != NULL) {
         return is_VTable_double_conversion_allowed(pSimInt64VTable);
@@ -4016,16 +4016,16 @@ int is_kcg_int64_double_conversion_allowed()
     return 1;
 }
 
-int kcg_int64_to_double(const void *pValue, double *nValue)
+int kcg_int32_to_double(const void *pValue, double *nValue)
 {
     if (pSimInt64VTable != NULL) {
         return VTable_to_double(pValue, pSimInt64VTable, nValue);
     }
-    *nValue = (double)*((kcg_int64*)pValue);
+    *nValue = (double)*((kcg_int32*)pValue);
     return 1;
 }
 
-int is_kcg_int64_long_conversion_allowed()
+int is_kcg_int32_long_conversion_allowed()
 {
     if (pSimInt64VTable != NULL) {
         return is_VTable_long_conversion_allowed(pSimInt64VTable);
@@ -4033,16 +4033,16 @@ int is_kcg_int64_long_conversion_allowed()
     return 1;
 }
 
-int kcg_int64_to_long(const void *pValue, long *nValue)
+int kcg_int32_to_long(const void *pValue, long *nValue)
 {
     if (pSimInt64VTable != NULL) {
         return VTable_to_long(pValue, pSimInt64VTable, nValue);
     }
-    *nValue = (long)*((kcg_int64*)pValue);
+    *nValue = (long)*((kcg_int32*)pValue);
     return 1;
 }
 
-void compare_kcg_int64(int *pResult, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths)
+void compare_kcg_int32(int *pResult, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths)
 {
     int unitResult = 0;
     /* Customized comparison */
@@ -4052,50 +4052,50 @@ void compare_kcg_int64(int *pResult, const void *pValue1, const void *pValue2, S
         unitResult = pSimInt64VTable->m_pfnCompare(pResult, pValue1, pValue2);
     } else {
         /* Predefined comparison */
-        unitResult = predef_compare_kcg_int64(pResult, *((kcg_int64*)pValue1), *((kcg_int64*)pValue2));
+        unitResult = predef_compare_kcg_int32(pResult, *((kcg_int32*)pValue1), *((kcg_int32*)pValue2));
     }
     UNUSED(pTol);
     if (unitResult != 0 && pfnStrListAppend != NULL && pszPath != NULL && *pszPath != 0 && pListErrPaths != NULL)
         pfnStrListAppend(pszPath, pListErrPaths);
 }
 
-int get_kcg_int64_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj)
+int get_kcg_int32_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj)
 {
     return pfnStrAppend("I64", pStrObj);
 }
 
-int init_kcg_int64(void *pValue)
+int init_kcg_int32(void *pValue)
 {
-    *(kcg_int64*)pValue = 0;
+    *(kcg_int32*)pValue = 0;
     return 1;
 }
 
-int release_kcg_int64(void *pValue)
+int release_kcg_int32(void *pValue)
 {
     UNUSED(pValue);
     return 1;
 }
 
-int copy_kcg_int64(void *pToValue, const void *pFromValue)
+int copy_kcg_int32(void *pToValue, const void *pFromValue)
 {
-    *((kcg_int64*)pToValue) = *((kcg_int64*)pFromValue);
+    *((kcg_int32*)pToValue) = *((kcg_int32*)pFromValue);
     return 1;
 }
 
-SimTypeUtils _Type_kcg_int64_Utils = {
-    kcg_int64_to_string,
-    check_kcg_int64_string,
-    string_to_kcg_int64,
-    is_kcg_int64_double_conversion_allowed,
-    kcg_int64_to_double,
-    is_kcg_int64_long_conversion_allowed,
-    kcg_int64_to_long,
-    compare_kcg_int64,
-    get_kcg_int64_signature,
-    init_kcg_int64,
-    release_kcg_int64,
-    copy_kcg_int64,
-    sizeof(kcg_int64)
+SimTypeUtils _Type_kcg_int32_Utils = {
+    kcg_int32_to_string,
+    check_kcg_int32_string,
+    string_to_kcg_int32,
+    is_kcg_int32_double_conversion_allowed,
+    kcg_int32_to_double,
+    is_kcg_int32_long_conversion_allowed,
+    kcg_int32_to_long,
+    compare_kcg_int32,
+    get_kcg_int32_signature,
+    init_kcg_int32,
+    release_kcg_int32,
+    copy_kcg_int32,
+    sizeof(kcg_int32)
 };
 
 /****************************************************************
@@ -4667,135 +4667,135 @@ SimTypeUtils _Type_kcg_uint32_Utils = {
 };
 
 /****************************************************************
- ** kcg_uint64 
+ ** kcg_uint32 
  ****************************************************************/
 
 #ifdef __cplusplus
-  #ifdef pSimUint64VTable_defined
-    extern struct SimTypeVTable *pSimUint64VTable;
+  #ifdef pSimUint32VTable_defined
+    extern struct SimTypeVTable *pSimUint32VTable;
   #else 
-    struct SimTypeVTable *pSimUint64VTable = NULL;
+    struct SimTypeVTable *pSimUint32VTable = NULL;
   #endif
 #else
-  struct SimTypeVTable *pSimUint64VTable;
+  struct SimTypeVTable *pSimUint32VTable;
 #endif
 
-int kcg_uint64_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj)
+int kcg_uint32_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj)
 {
-    if (pSimUint64VTable != NULL
-        && pSimUint64VTable->m_pfnGetConvInfo(SptString, SptNone) == 1) {
-       return pfnStrAppend(*(char**)pSimUint64VTable->m_pfnToType(SptString, pValue), pStrObj);
+    if (pSimUint32VTable != NULL
+        && pSimUint32VTable->m_pfnGetConvInfo(SptString, SptNone) == 1) {
+       return pfnStrAppend(*(char**)pSimUint32VTable->m_pfnToType(SptString, pValue), pStrObj);
     }
-    return predef_kcg_uint64_to_string(*((kcg_uint64*)pValue), pfnStrAppend, pStrObj);
+    return predef_kcg_uint32_to_string(*((kcg_uint32*)pValue), pfnStrAppend, pStrObj);
 }
 
-int check_kcg_uint64_string(const char *str, char **endptr)
+int check_kcg_uint32_string(const char *str, char **endptr)
 {
-    static kcg_uint64 rTemp;
-    return string_to_kcg_uint64(str, (void*)&rTemp, endptr);
+    static kcg_uint32 rTemp;
+    return string_to_kcg_uint32(str, (void*)&rTemp, endptr);
 }
 
-int string_to_kcg_uint64(const char *str, void *pValue, char **endptr)
+int string_to_kcg_uint32(const char *str, void *pValue, char **endptr)
 {
     int nRet = 0;
     skip_whitespace(str);
-    if (pSimUint64VTable != NULL) {
-        nRet = string_to_VTable(str, pSimUint64VTable, pValue, endptr);
+    if (pSimUint32VTable != NULL) {
+        nRet = string_to_VTable(str, pSimUint32VTable, pValue, endptr);
     }
     if (nRet == 0) {
-        nRet = predef_string_to_kcg_uint64(str, (kcg_uint64*)pValue, endptr);
+        nRet = predef_string_to_kcg_uint32(str, (kcg_uint32*)pValue, endptr);
     }
     return nRet;
 }
 
-int is_kcg_uint64_double_conversion_allowed()
+int is_kcg_uint32_double_conversion_allowed()
 {
-    if (pSimUint64VTable != NULL) {
-        return is_VTable_double_conversion_allowed(pSimUint64VTable);
+    if (pSimUint32VTable != NULL) {
+        return is_VTable_double_conversion_allowed(pSimUint32VTable);
     }
     return 1;
 }
 
-int kcg_uint64_to_double(const void *pValue, double *nValue)
+int kcg_uint32_to_double(const void *pValue, double *nValue)
 {
-    if (pSimUint64VTable != NULL) {
-        return VTable_to_double(pValue, pSimUint64VTable, nValue);
+    if (pSimUint32VTable != NULL) {
+        return VTable_to_double(pValue, pSimUint32VTable, nValue);
     }
-    *nValue = (double)*((kcg_uint64*)pValue);
+    *nValue = (double)*((kcg_uint32*)pValue);
     return 1;
 }
 
-int is_kcg_uint64_long_conversion_allowed()
+int is_kcg_uint32_long_conversion_allowed()
 {
-    if (pSimUint64VTable != NULL) {
-        return is_VTable_long_conversion_allowed(pSimUint64VTable);
+    if (pSimUint32VTable != NULL) {
+        return is_VTable_long_conversion_allowed(pSimUint32VTable);
     }
     return 1;
 }
 
-int kcg_uint64_to_long(const void *pValue, long *nValue)
+int kcg_uint32_to_long(const void *pValue, long *nValue)
 {
-    if (pSimUint64VTable != NULL) {
-        return VTable_to_long(pValue, pSimUint64VTable, nValue);
+    if (pSimUint32VTable != NULL) {
+        return VTable_to_long(pValue, pSimUint32VTable, nValue);
     }
-    *nValue = (long)*((kcg_uint64*)pValue);
+    *nValue = (long)*((kcg_uint32*)pValue);
     return 1;
 }
 
-void compare_kcg_uint64(int *pResult, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths)
+void compare_kcg_uint32(int *pResult, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths)
 {
     int unitResult = 0;
     /* Customized comparison */
-    if (pSimUint64VTable != NULL
-        && pSimUint64VTable->m_version >= Scv612
-        && pSimUint64VTable->m_pfnCompare != NULL) {
-        unitResult = pSimUint64VTable->m_pfnCompare(pResult, pValue1, pValue2);
+    if (pSimUint32VTable != NULL
+        && pSimUint32VTable->m_version >= Scv612
+        && pSimUint32VTable->m_pfnCompare != NULL) {
+        unitResult = pSimUint32VTable->m_pfnCompare(pResult, pValue1, pValue2);
     } else {
         /* Predefined comparison */
-        unitResult = predef_compare_kcg_uint64(pResult, *((kcg_uint64*)pValue1), *((kcg_uint64*)pValue2));
+        unitResult = predef_compare_kcg_uint32(pResult, *((kcg_uint32*)pValue1), *((kcg_uint32*)pValue2));
     }
     UNUSED(pTol);
     if (unitResult != 0 && pfnStrListAppend != NULL && pszPath != NULL && *pszPath != 0 && pListErrPaths != NULL)
         pfnStrListAppend(pszPath, pListErrPaths);
 }
 
-int get_kcg_uint64_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj)
+int get_kcg_uint32_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj)
 {
     return pfnStrAppend("UI64", pStrObj);
 }
 
-int init_kcg_uint64(void *pValue)
+int init_kcg_uint32(void *pValue)
 {
-    *(kcg_uint64*)pValue = 0;
+    *(kcg_uint32*)pValue = 0;
     return 1;
 }
 
-int release_kcg_uint64(void *pValue)
+int release_kcg_uint32(void *pValue)
 {
     UNUSED(pValue);
     return 1;
 }
 
-int copy_kcg_uint64(void *pToValue, const void *pFromValue)
+int copy_kcg_uint32(void *pToValue, const void *pFromValue)
 {
-    *((kcg_uint64*)pToValue) = *((kcg_uint64*)pFromValue);
+    *((kcg_uint32*)pToValue) = *((kcg_uint32*)pFromValue);
     return 1;
 }
 
-SimTypeUtils _Type_kcg_uint64_Utils = {
-    kcg_uint64_to_string,
-    check_kcg_uint64_string,
-    string_to_kcg_uint64,
-    is_kcg_uint64_double_conversion_allowed,
-    kcg_uint64_to_double,
-    is_kcg_uint64_long_conversion_allowed,
-    kcg_uint64_to_long,
-    compare_kcg_uint64,
-    get_kcg_uint64_signature,
-    init_kcg_uint64,
-    release_kcg_uint64,
-    copy_kcg_uint64,
-    sizeof(kcg_uint64)
+SimTypeUtils _Type_kcg_uint32_Utils = {
+    kcg_uint32_to_string,
+    check_kcg_uint32_string,
+    string_to_kcg_uint32,
+    is_kcg_uint32_double_conversion_allowed,
+    kcg_uint32_to_double,
+    is_kcg_uint32_long_conversion_allowed,
+    kcg_uint32_to_long,
+    compare_kcg_uint32,
+    get_kcg_uint32_signature,
+    init_kcg_uint32,
+    release_kcg_uint32,
+    copy_kcg_uint32,
+    sizeof(kcg_uint32)
 };
 
 /****************************************************************
@@ -12178,7 +12178,7 @@ int NID_RADIO_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *p
         && pSimNID_RADIOVTable->m_pfnGetConvInfo(SptString, SptNone) == 1) {
        return pfnStrAppend(*(char**)pSimNID_RADIOVTable->m_pfnToType(SptString, pValue), pStrObj);
     }
-    return kcg_int64_to_string(pValue, pfnStrAppend, pStrObj);
+    return kcg_int32_to_string(pValue, pfnStrAppend, pStrObj);
 }
 
 int check_NID_RADIO_string(const char *str, char **endptr)
@@ -12201,7 +12201,7 @@ int string_to_NID_RADIO(const char *str, void *pValue, char **endptr)
         }
     }
     if (nRet == 0) {
-        nRet = string_to_kcg_int64(str, pValue, endptr);
+        nRet = string_to_kcg_int32(str, pValue, endptr);
     }
     return nRet;
 }
@@ -12211,7 +12211,7 @@ int is_NID_RADIO_double_conversion_allowed()
     if (pSimNID_RADIOVTable != NULL) {
         return is_VTable_double_conversion_allowed(pSimNID_RADIOVTable);
     }
-    return is_kcg_int64_double_conversion_allowed();
+    return is_kcg_int32_double_conversion_allowed();
 }
 
 int NID_RADIO_to_double(const void *pValue, double *nValue)
@@ -12219,7 +12219,7 @@ int NID_RADIO_to_double(const void *pValue, double *nValue)
     if (pSimNID_RADIOVTable != NULL) {
         return VTable_to_double(pValue, pSimNID_RADIOVTable, nValue);
     }
-    return kcg_int64_to_double(pValue, nValue);
+    return kcg_int32_to_double(pValue, nValue);
 }
 
 int is_NID_RADIO_long_conversion_allowed()
@@ -12227,7 +12227,7 @@ int is_NID_RADIO_long_conversion_allowed()
     if (pSimNID_RADIOVTable != NULL) {
         return is_VTable_long_conversion_allowed(pSimNID_RADIOVTable);
     }
-    return is_kcg_int64_long_conversion_allowed();
+    return is_kcg_int32_long_conversion_allowed();
 }
 
 int NID_RADIO_to_long(const void *pValue, long *nValue)
@@ -12235,7 +12235,7 @@ int NID_RADIO_to_long(const void *pValue, long *nValue)
     if (pSimNID_RADIOVTable != NULL) {
         return VTable_to_long(pValue, pSimNID_RADIOVTable, nValue);
     }
-    return kcg_int64_to_long(pValue, nValue);
+    return kcg_int32_to_long(pValue, nValue);
 }
 
 void compare_NID_RADIO(int *pResult, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths)
@@ -12261,7 +12261,7 @@ void compare_NID_RADIO(int *pResult, const void *pValue1, const void *pValue2, S
         }
     } else {
         /* Aliased type comparison: */
-        compare_kcg_int64(pResult, pValue1, pValue2, pTol, pszPath, pfnStrListAppend, pListErrPaths);
+        compare_kcg_int32(pResult, pValue1, pValue2, pTol, pszPath, pfnStrListAppend, pListErrPaths);
     }
     if (unitResult != 0 && pfnStrListAppend != NULL && pszPath != NULL && *pszPath != 0 && pListErrPaths != NULL)
         pfnStrListAppend(pszPath, pListErrPaths);
@@ -12269,12 +12269,12 @@ void compare_NID_RADIO(int *pResult, const void *pValue1, const void *pValue2, S
 
 int get_NID_RADIO_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj)
 {
-    return get_kcg_int64_signature(pfnStrAppend, pStrObj);
+    return get_kcg_int32_signature(pfnStrAppend, pStrObj);
 }
 
 int init_NID_RADIO(void *pValue)
 {
-    init_kcg_int64(pValue);
+    init_kcg_int32(pValue);
     return 1;
 }
 

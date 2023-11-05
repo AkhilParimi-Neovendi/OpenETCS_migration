@@ -10,7 +10,7 @@
 /* TM_lib_internal::T_Decode_metadata_new/ */
 void T_Decode_metadata_new_TM_lib_internal(
   /* Metadata_in/ */
-  kcg_int64 Metadata_in,
+  kcg_int32 Metadata_in,
   outC_T_Decode_metadata_new_TM_lib_internal *outC)
 {
   outC->_L11 = DIM_offset_metadata_id_TM_lib_internal;
@@ -32,19 +32,19 @@ void T_Decode_metadata_new_TM_lib_internal(
 void T_Decode_metadata_new_init_TM_lib_internal(
   outC_T_Decode_metadata_new_TM_lib_internal *outC)
 {
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->m_version = kcg_lit_int64(0);
-  outC->id = kcg_lit_int64(0);
-  outC->nid_packet = kcg_lit_int64(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->m_version = kcg_lit_int32(0);
+  outC->id = kcg_lit_int32(0);
+  outC->nid_packet = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

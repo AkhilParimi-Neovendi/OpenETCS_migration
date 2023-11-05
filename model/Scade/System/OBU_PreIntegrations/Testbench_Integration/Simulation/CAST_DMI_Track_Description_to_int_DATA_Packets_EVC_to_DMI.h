@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _CAST_DMI_Track_Description_to_int_DATA_Packets_EVC_to_DMI_H_
 #define _CAST_DMI_Track_Description_to_int_DATA_Packets_EVC_to_DMI_H_
@@ -35,11 +35,11 @@ typedef struct {
   DMI_speedProfile_T_DMI_Types_Pkg /* _L4/ */ _L4;
   DMI_gradientProfile_T_DMI_Types_Pkg /* _L3/ */ _L3;
   DMI_trackCondition_T_DMI_Types_Pkg /* _L2/ */ _L2;
-  array_int64_2 /* _L7/ */ _L7;
+  array_int32_2 /* _L7/ */ _L7;
   DMI_trackCondition_int_array_T /* _L8/ */ _L8;
   DMI_gradientProfile_int_arrayT /* _L9/ */ _L9;
   DMI_speedProfile_int_array_T_DATA /* _L10/ */ _L10;
-  kcg_int64 /* _L11/ */ _L11;
+  kcg_int32 /* _L11/ */ _L11;
   DMI_Track_Description_int_array_T /* _L12/ */ _L12;
 } outC_CAST_DMI_Track_Description_to_int_DATA_Packets_EVC_to_DMI;
 
@@ -65,6 +65,6 @@ extern void CAST_DMI_Track_Description_to_int_init_DATA_Packets_EVC_to_DMI(
 #endif /* _CAST_DMI_Track_Description_to_int_DATA_Packets_EVC_to_DMI_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_DMI_Track_Description_to_int_DATA_Packets_EVC_to_DMI.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

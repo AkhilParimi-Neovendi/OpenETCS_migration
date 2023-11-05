@@ -10,11 +10,11 @@
 /* TA_SSP_new::SSP_Merge_New_P27V1_to_Profile_loop/ */
 void SSP_Merge_New_P27V1_to_Profile_loop_TA_SSP_new(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* SP/ */
   StaticSpeedProfile_t_TrackAtlasTypes *SP,
   /* First_Section_To_Replace/ */
-  kcg_int64 First_Section_To_Replace,
+  kcg_int32 First_Section_To_Replace,
   /* new_SP_received/ */
   StaticSpeedProfile_t_TrackAtlasTypes *new_SP_received,
   outC_SSP_Merge_New_P27V1_to_Profile_loop_TA_SSP_new *outC)
@@ -22,7 +22,7 @@ void SSP_Merge_New_P27V1_to_Profile_loop_TA_SSP_new(
   kcg_copy_StaticSpeedProfile_t_TrackAtlasTypes(&outC->_L20, SP);
   outC->_L11 = i;
   kcg_copy_StaticSpeedProfile_t_TrackAtlasTypes(&outC->_L6, new_SP_received);
-  if ((kcg_lit_int64(0) <= outC->_L11) & (outC->_L11 < kcg_lit_int64(50))) {
+  if ((kcg_lit_int32(0) <= outC->_L11) & (outC->_L11 < kcg_lit_int32(50))) {
     kcg_copy_StaticSpeedSection_t_TrackAtlasTypes(
       &outC->_L15,
       &outC->_L6[outC->_L11]);
@@ -37,7 +37,7 @@ void SSP_Merge_New_P27V1_to_Profile_loop_TA_SSP_new(
   outC->_L5 = i;
   outC->_L7 = outC->_L5 + outC->_L4;
   kcg_copy_StaticSpeedProfile_t_TrackAtlasTypes(&outC->_L19, &outC->_L20);
-  if ((kcg_lit_int64(0) <= outC->_L7) & (outC->_L7 < kcg_lit_int64(50))) {
+  if ((kcg_lit_int32(0) <= outC->_L7) & (outC->_L7 < kcg_lit_int32(50))) {
     kcg_copy_StaticSpeedSection_t_TrackAtlasTypes(
       &outC->_L19[outC->_L7],
       &outC->_L15);
@@ -56,40 +56,40 @@ void SSP_Merge_New_P27V1_to_Profile_loop_init_TA_SSP_new(
 
   for (idx = 0; idx < 50; idx++) {
     outC->_L20[idx].valid = kcg_true;
-    outC->_L20[idx].d_static_abs = kcg_lit_int64(0);
-    outC->_L20[idx].d_static_LRBG = kcg_lit_int64(0);
+    outC->_L20[idx].d_static_abs = kcg_lit_int32(0);
+    outC->_L20[idx].d_static_LRBG = kcg_lit_int32(0);
     outC->_L20[idx].q_train_length_corr = kcg_true;
-    outC->_L20[idx].v_static = kcg_lit_int64(0);
+    outC->_L20[idx].v_static = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 50; idx1++) {
     outC->_L19[idx1].valid = kcg_true;
-    outC->_L19[idx1].d_static_abs = kcg_lit_int64(0);
-    outC->_L19[idx1].d_static_LRBG = kcg_lit_int64(0);
+    outC->_L19[idx1].d_static_abs = kcg_lit_int32(0);
+    outC->_L19[idx1].d_static_LRBG = kcg_lit_int32(0);
     outC->_L19[idx1].q_train_length_corr = kcg_true;
-    outC->_L19[idx1].v_static = kcg_lit_int64(0);
+    outC->_L19[idx1].v_static = kcg_lit_int32(0);
   }
   outC->_L15.valid = kcg_true;
-  outC->_L15.d_static_abs = kcg_lit_int64(0);
-  outC->_L15.d_static_LRBG = kcg_lit_int64(0);
+  outC->_L15.d_static_abs = kcg_lit_int32(0);
+  outC->_L15.d_static_LRBG = kcg_lit_int32(0);
   outC->_L15.q_train_length_corr = kcg_true;
-  outC->_L15.v_static = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
-  outC->_L7 = kcg_lit_int64(0);
+  outC->_L15.v_static = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
+  outC->_L7 = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 50; idx2++) {
     outC->_L6[idx2].valid = kcg_true;
-    outC->_L6[idx2].d_static_abs = kcg_lit_int64(0);
-    outC->_L6[idx2].d_static_LRBG = kcg_lit_int64(0);
+    outC->_L6[idx2].d_static_abs = kcg_lit_int32(0);
+    outC->_L6[idx2].d_static_LRBG = kcg_lit_int32(0);
     outC->_L6[idx2].q_train_length_corr = kcg_true;
-    outC->_L6[idx2].v_static = kcg_lit_int64(0);
+    outC->_L6[idx2].v_static = kcg_lit_int32(0);
   }
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 50; idx3++) {
     outC->SSP[idx3].valid = kcg_true;
-    outC->SSP[idx3].d_static_abs = kcg_lit_int64(0);
-    outC->SSP[idx3].d_static_LRBG = kcg_lit_int64(0);
+    outC->SSP[idx3].d_static_abs = kcg_lit_int32(0);
+    outC->SSP[idx3].d_static_LRBG = kcg_lit_int32(0);
     outC->SSP[idx3].q_train_length_corr = kcg_true;
-    outC->SSP[idx3].v_static = kcg_lit_int64(0);
+    outC->SSP[idx3].v_static = kcg_lit_int32(0);
   }
 }
 #endif /* KCG_USER_DEFINED_INIT */

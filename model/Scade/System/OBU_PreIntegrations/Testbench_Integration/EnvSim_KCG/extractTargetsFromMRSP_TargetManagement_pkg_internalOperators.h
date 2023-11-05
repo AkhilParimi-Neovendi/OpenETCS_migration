@@ -24,10 +24,10 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   extractTargetsMRSPACC_TargetManagement_pkg /* _L1/ */ _L1;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   MRSP_internal_T_TargetManagement_types /* _L7/ */ _L7;
   extractTargetsMRSPACC_TargetManagement_pkg /* _L12/ */ _L12;
-  kcg_int64 /* _L13/ */ _L13;
+  kcg_int32 /* _L13/ */ _L13;
   _87_array /* _L14/ */ _L14;
   MRSP_internal_T_TargetManagement_types /* _L21/ */ _L21;
   kcg_bool /* _L22/ */ _L22;

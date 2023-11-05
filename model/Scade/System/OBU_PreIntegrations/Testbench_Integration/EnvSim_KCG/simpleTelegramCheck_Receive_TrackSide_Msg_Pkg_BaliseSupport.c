@@ -10,7 +10,7 @@
 /* Receive_TrackSide_Msg_Pkg::BaliseSupport::simpleTelegramCheck/ */
 void simpleTelegramCheck_Receive_TrackSide_Msg_Pkg_BaliseSupport(
   /* iteratorIndex/ */
-  kcg_int64 iteratorIndex,
+  kcg_int32 iteratorIndex,
   /* accu/ */
   kcg_bool accu,
   /* telegram/ */
@@ -19,7 +19,7 @@ void simpleTelegramCheck_Receive_TrackSide_Msg_Pkg_BaliseSupport(
   N_PIG which_pig,
   outC_simpleTelegramCheck_Receive_TrackSide_Msg_Pkg_BaliseSupport *outC)
 {
-  static kcg_int64 noname;
+  static kcg_int32 noname;
   static kcg_bool _1_noname;
 
   outC->_L16 = accu;
@@ -50,7 +50,7 @@ void simpleTelegramCheck_init_Receive_TrackSide_Msg_Pkg_BaliseSupport(
   outC->_L14 = kcg_true;
   outC->_L13 = kcg_true;
   outC->_L12 = kcg_true;
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L8 = kcg_lit_int32(0);
   outC->_L1.valid = kcg_true;
   outC->_L1.checkResult = kcg_true;
   outC->_L1.telegramheader.q_updown = Q_UPDOWN_Down_link_telegram;
@@ -60,19 +60,19 @@ void simpleTelegramCheck_init_Receive_TrackSide_Msg_Pkg_BaliseSupport(
   outC->_L1.telegramheader.n_pig = N_PIG_I_am_the_1st;
   outC->_L1.telegramheader.n_total = N_TOTAL_1_balise_in_the_group;
   outC->_L1.telegramheader.m_dup = M_DUP_No_duplicates;
-  outC->_L1.telegramheader.m_mcount = kcg_lit_int64(0);
-  outC->_L1.telegramheader.nid_c = kcg_lit_int64(0);
-  outC->_L1.telegramheader.nid_bg = kcg_lit_int64(0);
+  outC->_L1.telegramheader.m_mcount = kcg_lit_int32(0);
+  outC->_L1.telegramheader.nid_c = kcg_lit_int32(0);
+  outC->_L1.telegramheader.nid_bg = kcg_lit_int32(0);
   outC->_L1.telegramheader.q_link = Q_LINK_Unlinked;
   for (idx = 0; idx < 30; idx++) {
-    outC->_L1.packets.PacketHeaders[idx].nid_packet = kcg_lit_int64(0);
+    outC->_L1.packets.PacketHeaders[idx].nid_packet = kcg_lit_int32(0);
     outC->_L1.packets.PacketHeaders[idx].q_dir = Q_DIR_Reverse;
     outC->_L1.packets.PacketHeaders[idx].valid = kcg_true;
-    outC->_L1.packets.PacketHeaders[idx].startAddress = kcg_lit_int64(0);
-    outC->_L1.packets.PacketHeaders[idx].endAddress = kcg_lit_int64(0);
+    outC->_L1.packets.PacketHeaders[idx].startAddress = kcg_lit_int32(0);
+    outC->_L1.packets.PacketHeaders[idx].endAddress = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 500; idx1++) {
-    outC->_L1.packets.PacketData[idx1] = kcg_lit_int64(0);
+    outC->_L1.packets.PacketData[idx1] = kcg_lit_int32(0);
   }
   outC->_L3 = N_PIG_I_am_the_1st;
   outC->_L2 = kcg_true;

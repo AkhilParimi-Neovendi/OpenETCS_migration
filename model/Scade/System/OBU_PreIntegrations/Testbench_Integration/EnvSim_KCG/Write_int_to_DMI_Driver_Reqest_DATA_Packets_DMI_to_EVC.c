@@ -19,7 +19,7 @@ void Write_int_to_DMI_Driver_Reqest_DATA_Packets_DMI_to_EVC(
     &outC->_L1,
     dmi_driver_request_int);
   outC->_L10 = outC->_L1[0];
-  outC->_L12 = kcg_lit_int64(1);
+  outC->_L12 = kcg_lit_int32(1);
   outC->_L11 = outC->_L12 == outC->_L10;
   outC->every = outC->_L11;
   if (outC->every) {
@@ -57,20 +57,20 @@ void Write_int_to_DMI_Driver_Reqest_init_DATA_Packets_DMI_to_EVC(
   static kcg_size idx;
 
   outC->_L14.valid = kcg_true;
-  outC->_L14.systemTime = kcg_lit_int64(0);
+  outC->_L14.systemTime = kcg_lit_int32(0);
   outC->_L14.m_request = Start_of_mission_DMI_Types_Pkg;
   outC->_L13.valid = kcg_true;
-  outC->_L13.systemTime = kcg_lit_int64(0);
+  outC->_L13.systemTime = kcg_lit_int32(0);
   outC->_L13.m_request = Start_of_mission_DMI_Types_Pkg;
-  outC->_L12 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
   outC->_L11 = kcg_true;
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L10 = kcg_lit_int32(0);
   for (idx = 0; idx < 3; idx++) {
-    outC->_L1[idx] = kcg_lit_int64(0);
+    outC->_L1[idx] = kcg_lit_int32(0);
   }
   outC->every = kcg_true;
   outC->dmi_driver_request_ct.valid = kcg_true;
-  outC->dmi_driver_request_ct.systemTime = kcg_lit_int64(0);
+  outC->dmi_driver_request_ct.systemTime = kcg_lit_int32(0);
   outC->dmi_driver_request_ct.m_request = Start_of_mission_DMI_Types_Pkg;
   /* _L13=(DATA::Packets::DMI_to_EVC::C_int_to_DMI_Driver_Reqest#1)/ */
   C_int_to_DMI_Driver_Reqest_init_DATA_Packets_DMI_to_EVC(

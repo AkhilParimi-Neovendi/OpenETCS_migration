@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _InitilizeAccForEBDFootCalc_CalcBrakingCurves_Pkg_internalOperators_H_
 #define _InitilizeAccForEBDFootCalc_CalcBrakingCurves_Pkg_internalOperators_H_
@@ -36,12 +36,12 @@ typedef struct {
   ASafe_T_CalcBrakingCurves_types /* _L3/ */ _L3;
   Target_real_T_TargetManagement_types /* _L1/ */ _L1;
   L_internal_real_Type_SDM_Types_Pkg /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   V_internal_real_Type_SDM_Types_Pkg /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L12/ */ _L12;
   L_internal_real_Type_SDM_Types_Pkg /* _L13/ */ _L13;
   V_internal_real_Type_SDM_Types_Pkg /* _L14/ */ _L14;
-  kcg_float64 /* _L15/ */ _L15;
+  kcg_float32 /* _L15/ */ _L15;
   V_odometry_Type_Obu_BasicTypes_Pkg /* _L16/ */ _L16;
   BCAccumulator_type_CalcBrakingCurves_Pkg /* _L17/ */ _L17;
   ASafeDistanceDefinition_T_CalcBrakingCurves_types /* _L18/ */ _L18;
@@ -77,6 +77,6 @@ extern void InitilizeAccForEBDFootCalc_init_CalcBrakingCurves_Pkg_internalOperat
 #endif /* _InitilizeAccForEBDFootCalc_CalcBrakingCurves_Pkg_internalOperators_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** InitilizeAccForEBDFootCalc_CalcBrakingCurves_Pkg_internalOperators.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

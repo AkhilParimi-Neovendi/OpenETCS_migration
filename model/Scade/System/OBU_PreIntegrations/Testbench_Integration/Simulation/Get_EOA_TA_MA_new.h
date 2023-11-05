@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _Get_EOA_TA_MA_new_H_
 #define _Get_EOA_TA_MA_new_H_
@@ -23,13 +23,13 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L2/ */ _L2;
   kcg_bool /* _L3/ */ _L3;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L4/ */ _L4;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L5/ */ _L5;
   MovementAuthority_t_TrackAtlasTypes /* _L6/ */ _L6;
   MovementAuthoritySectionlist_t_TrackAtlasTypes /* _L37/ */ _L37;
-  _84_array /* _L38/ */ _L38;
+  _86_array /* _L38/ */ _L38;
 } outC_Get_EOA_TA_MA_new;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -52,6 +52,6 @@ extern void Get_EOA_init_TA_MA_new(outC_Get_EOA_TA_MA_new *outC);
 #endif /* _Get_EOA_TA_MA_new_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Get_EOA_TA_MA_new.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

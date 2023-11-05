@@ -27,10 +27,10 @@ void Clock__Reset_RBC_Time_Pkg(
 #ifndef KCG_USER_DEFINED_INIT
 void Clock__Reset_init_RBC_Time_Pkg(outC_Clock__Reset_RBC_Time_Pkg *outC)
 {
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L2.m_Value = kcg_lit_int64(0);
-  outC->_L1.m_Value = kcg_lit_int64(0);
-  outC->outClock.m_Value = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L2.m_Value = kcg_lit_int32(0);
+  outC->_L1.m_Value = kcg_lit_int32(0);
+  outC->outClock.m_Value = kcg_lit_int32(0);
   /* _L2=(RBC_Time_Pkg::Clock__SetSeconds#1)/ */
   Clock__SetSeconds_init_RBC_Time_Pkg(&outC->Context_Clock__SetSeconds_1);
 }

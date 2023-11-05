@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _FilterSequence_InformationFilter_Pkg_H_
 #define _FilterSequence_InformationFilter_Pkg_H_
@@ -31,7 +31,7 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   M_MODE /* _L5/ */ _L5;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L4/ */ _L4;
   filterRelatedEvents_T_Common_Types_Pkg /* _L3/ */ _L3;
   M_LEVEL /* _L2/ */ _L2;
   ReceivedMessage_T_Common_Types_Pkg /* _L1/ */ _L1;
@@ -58,7 +58,7 @@ extern void FilterSequence_InformationFilter_Pkg(
   /* inFilterEvents/ */
   filterRelatedEvents_T_Common_Types_Pkg *inFilterEvents,
   /* inSupervisingDevice/ */
-  kcg_int64 inSupervisingDevice,
+  kcg_int32 inSupervisingDevice,
   /* inMode/ */
   M_MODE inMode,
   outC_FilterSequence_InformationFilter_Pkg *outC);
@@ -78,6 +78,6 @@ extern void FilterSequence_init_InformationFilter_Pkg(
 #endif /* _FilterSequence_InformationFilter_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** FilterSequence_InformationFilter_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

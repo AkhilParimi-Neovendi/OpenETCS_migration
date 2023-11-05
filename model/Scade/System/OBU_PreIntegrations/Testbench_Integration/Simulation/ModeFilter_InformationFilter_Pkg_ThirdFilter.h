@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _ModeFilter_InformationFilter_Pkg_ThirdFilter_H_
 #define _ModeFilter_InformationFilter_Pkg_ThirdFilter_H_
@@ -30,10 +30,10 @@ typedef struct {
   ModeDecisionTableType_DataDictionary_Pkg /* _L249/ */ _L249;
   ModeDecisionTableActionKind_DataDictionary_Pkg /* _L256/ */ _L256;
   M_MODE /* _L259/ */ _L259;
-  kcg_int64 /* _L261/ */ _L261;
-  kcg_int64 /* _L262/ */ _L262;
+  kcg_int32 /* _L261/ */ _L261;
+  kcg_int32 /* _L262/ */ _L262;
   kcg_bool /* _L263/ */ _L263;
-  kcg_int64 /* _L268/ */ _L268;
+  kcg_int32 /* _L268/ */ _L268;
 } outC_ModeFilter_InformationFilter_Pkg_ThirdFilter;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -42,7 +42,7 @@ extern void ModeFilter_InformationFilter_Pkg_ThirdFilter(
   /* inOperationModus/ */
   M_MODE inOperationModus,
   /* inPacketId/ */
-  kcg_int64 inPacketId,
+  kcg_int32 inPacketId,
   outC_ModeFilter_InformationFilter_Pkg_ThirdFilter *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET
@@ -60,6 +60,6 @@ extern void ModeFilter_init_InformationFilter_Pkg_ThirdFilter(
 #endif /* _ModeFilter_InformationFilter_Pkg_ThirdFilter_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ModeFilter_InformationFilter_Pkg_ThirdFilter.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

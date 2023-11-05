@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,9 +10,9 @@
 /* DMI_Control_Pkg::Sub_func::EntryRequest::Gen_array_window_mask_iterator/ */
 void Gen_array_window_mask_iterator_DMI_Control_Pkg_Sub_func_EntryRequest(
   /* index/ */
-  kcg_int64 index,
+  kcg_int32 index,
   /* position/ */
-  kcg_int64 position,
+  kcg_int32 position,
   outC_Gen_array_window_mask_iterator_DMI_Control_Pkg_Sub_func_EntryRequest *outC)
 {
   outC->_L6 = kcg_false;
@@ -38,8 +38,8 @@ void Gen_array_window_mask_iterator_init_DMI_Control_Pkg_Sub_func_EntryRequest(
   outC->_L5 = kcg_true;
   outC->_L4 = kcg_true;
   outC->_L3 = kcg_true;
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
   outC->Output = kcg_true;
 }
 #endif /* KCG_USER_DEFINED_INIT */
@@ -56,6 +56,6 @@ void Gen_array_window_mask_iterator_reset_DMI_Control_Pkg_Sub_func_EntryRequest(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Gen_array_window_mask_iterator_DMI_Control_Pkg_Sub_func_EntryRequest.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _TrackAtlasETCS_TrackAtlas_H_
 #define _TrackAtlasETCS_TrackAtlas_H_
@@ -132,7 +132,7 @@ typedef struct {
   FromTIU_t_TrackAtlasTypes /* _L123/ */ _L123;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L30/ */ _L30;
   MRSP_Profile_t_TrackAtlasTypes /* _L119/ */ _L119;
-  kcg_int64 /* _L118/ */ _L118;
+  kcg_int32 /* _L118/ */ _L118;
   MRSP_Profile_t_TrackAtlasTypes /* _L129/ */ _L129;
   MRSP_Profile_t_TrackAtlasTypes /* _L131/ */ _L131;
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* _L134/ */ _L134;
@@ -223,6 +223,6 @@ extern void kcg_load_SV_TrackAtlasETCS_TrackAtlas(
 #endif /* _TrackAtlasETCS_TrackAtlas_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** TrackAtlasETCS_TrackAtlas.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

@@ -25,9 +25,9 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   DMI_to_EVC_Message_int_T_API_DMI_Pkg /* _L1/ */ _L1;
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L2/ */ _L2;
   kcg_bool /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L4/ */ _L4;
   DMI_to_EVC_Message_T_API_DMI_Pkg /* _L5/ */ _L5;
   DMI_to_EVC_Message_T_API_DMI_Pkg /* _L6/ */ _L6;
 } outC_Write_int_to_DMI_to_EVC_Messages;

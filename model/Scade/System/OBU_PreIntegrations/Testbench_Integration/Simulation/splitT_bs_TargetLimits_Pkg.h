@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _splitT_bs_TargetLimits_Pkg_H_
 #define _splitT_bs_TargetLimits_Pkg_H_
@@ -28,7 +28,7 @@ typedef struct {
   T_internal_real_Type_SDM_Types_Pkg /* _L6/ */ _L6;
   T_internal_real_Type_SDM_Types_Pkg /* _L7/ */ _L7;
   T_internal_real_Type_SDM_Types_Pkg /* _L8/ */ _L8;
-  kcg_float64 /* _L9/ */ _L9;
+  kcg_float32 /* _L9/ */ _L9;
   T_internal_real_Type_SDM_Types_Pkg /* _L10/ */ _L10;
   T_internal_real_Type_SDM_Types_Pkg /* _L11/ */ _L11;
 } outC_splitT_bs_TargetLimits_Pkg;
@@ -59,6 +59,6 @@ extern void splitT_bs_init_TargetLimits_Pkg(
 #endif /* _splitT_bs_TargetLimits_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** splitT_bs_TargetLimits_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

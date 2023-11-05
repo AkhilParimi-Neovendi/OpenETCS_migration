@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -468,32 +468,32 @@ void ZoomLevel_init(outC_ZoomLevel *outC)
   outC->SM1_state_act = SSM_st_Zoom1_SM1;
   outC->SM1_state_sel = SSM_st_Zoom1_SM1;
   for (idx = 0; idx < 9; idx++) {
-    outC->_L1_Zoom5_SM1[idx] = kcg_lit_float64(0.0);
+    outC->_L1_Zoom5_SM1[idx] = kcg_lit_float32(0.0);
   }
   outC->_L2_Zoom5_SM1 = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 9; idx1++) {
-    outC->_L1_Zoom6_SM1[idx1] = kcg_lit_float64(0.0);
+    outC->_L1_Zoom6_SM1[idx1] = kcg_lit_float32(0.0);
   }
   outC->_L2_Zoom6_SM1 = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 9; idx2++) {
-    outC->_L1_Zoom3_SM1[idx2] = kcg_lit_float64(0.0);
+    outC->_L1_Zoom3_SM1[idx2] = kcg_lit_float32(0.0);
   }
   outC->_L2_Zoom3_SM1 = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 9; idx3++) {
-    outC->_L1_Zoom4_SM1[idx3] = kcg_lit_float64(0.0);
+    outC->_L1_Zoom4_SM1[idx3] = kcg_lit_float32(0.0);
   }
   outC->_L2_Zoom4_SM1 = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 9; idx4++) {
-    outC->_L1_Zoom2_SM1[idx4] = kcg_lit_float64(0.0);
+    outC->_L1_Zoom2_SM1[idx4] = kcg_lit_float32(0.0);
   }
   outC->_L2_Zoom2_SM1 = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 9; idx5++) {
-    outC->_L1_Zoom1_SM1[idx5] = kcg_lit_float64(0.0);
+    outC->_L1_Zoom1_SM1[idx5] = kcg_lit_float32(0.0);
   }
   outC->_L2_Zoom1_SM1 = kcg_lit_int32(0);
   outC->zoomlevel = kcg_lit_int32(0);
   for (idx6 = 0; idx6 < 9; idx6++) {
-    outC->Scale[idx6] = kcg_lit_float64(0.0);
+    outC->Scale[idx6] = kcg_lit_float32(0.0);
   }
   outC->SM1_reset_act = kcg_false;
   outC->SM1_reset_nxt = kcg_false;
@@ -528,6 +528,6 @@ void kcg_load_SV_ZoomLevel(outC_ZoomLevel *outC, SV_ZoomLevel *SV)
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ZoomLevel.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

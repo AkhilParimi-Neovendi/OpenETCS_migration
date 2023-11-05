@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _StatusPlanningArea_DMI_Control_Pkg_Sub_func_H_
 #define _StatusPlanningArea_DMI_Control_Pkg_Sub_func_H_
@@ -32,11 +32,11 @@ typedef struct {
   SSM_TR_PlanningAreaStatus /* PlanningAreaStatus: */ PlanningAreaStatus_fired;
   kcg_bool /* ShowingState/ */ ShowingState;
   kcg_bool /* HidingState/ */ HidingState;
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   kcg_bool /* _L2/ */ _L2;
   kcg_bool /* _L3/ */ _L3;
   kcg_bool /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   kcg_bool /* _L6/ */ _L6;
   kcg_bool /* _L7/ */ _L7;
   kcg_bool /* _L9/ */ _L9;
@@ -50,7 +50,7 @@ typedef struct {
 /* DMI_Control_Pkg::Sub_func::StatusPlanningArea/ */
 extern void StatusPlanningArea_DMI_Control_Pkg_Sub_func(
   /* ModeIndex/ */
-  kcg_int64 ModeIndex,
+  kcg_int32 ModeIndex,
   /* Hide/ */
   kcg_bool Hide,
   /* show/ */
@@ -90,6 +90,6 @@ extern void kcg_load_SV_StatusPlanningArea_DMI_Control_Pkg_Sub_func(
 #endif /* _StatusPlanningArea_DMI_Control_Pkg_Sub_func_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** StatusPlanningArea_DMI_Control_Pkg_Sub_func.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

@@ -12,7 +12,7 @@ const mobileRegistrationContext_T_RCM_Types_Pkg cNoMobileRegistrationContext_RCM
 
 /* RCM_Types_Pkg::cNoConnectionContext/ */
 const mobileConnectionContext_T_RCM_Types_Pkg cNoConnectionContext_RCM_Types_Pkg = {
-  kcg_false, kcg_lit_int32(0), mcs_disconnected_RCM_Types_Pkg, kcg_lit_int64(0),
+  kcg_false, kcg_lit_int32(0), mcs_disconnected_RCM_Types_Pkg, kcg_lit_int32(0),
   kcg_false, kcg_false, kcg_false };
 
 /* MoRC_Pck::Coder_Pkg::cEmptyOutPackets/ */
@@ -50,23 +50,23 @@ const outPackets_T_Common_Types_Pkg cEmptyOutPackets_MoRC_Pck_Coder_Pkg = { {
 /* RCM_Session_Types_Pkg::cInitialSessionStatus/ */
 const sessionStatus_T_RCM_Session_Types_Pkg cInitialSessionStatus_RCM_Session_Types_Pkg = {
   kcg_true, sp_terminated_RCM_Session_Types_Pkg, kcg_lit_int32(0),
-  kcg_lit_int32(0), kcg_lit_int64(0) };
+  kcg_lit_int32(0), kcg_lit_int32(0) };
 
 /* RCM_Session_Types_Pkg::cNoSessionStatus/ */
 const sessionStatus_T_RCM_Session_Types_Pkg cNoSessionStatus_RCM_Session_Types_Pkg = {
   kcg_false, sp_terminated_RCM_Session_Types_Pkg, kcg_lit_int32(0),
-  kcg_lit_int32(0), kcg_lit_int64(0) };
+  kcg_lit_int32(0), kcg_lit_int32(0) };
 
 /* RCM_Session_Types_Pkg::cNoSessionCmd/ */
 const sessionCmd_T_RCM_Session_Types_Pkg cNoSessionCmd_RCM_Session_Types_Pkg = {
   kcg_false, kcg_false, kcg_false, Q_RBC_Terminate_communication_session,
-  kcg_lit_int32(0), kcg_lit_int32(0), kcg_lit_int64(0), { kcg_false,
+  kcg_lit_int32(0), kcg_lit_int32(0), kcg_lit_int32(0), { kcg_false,
     kcg_lit_int32(0), kcg_lit_int32(0), kcg_lit_int32(0) }, { kcg_false,
     msrc_undefined_Common_Types_Pkg, { kcg_false, kcg_lit_int32(0),
       kcg_lit_int32(0), kcg_lit_int32(0) } }, { kcg_false,
     msrc_undefined_Common_Types_Pkg, Q_DIR_Reverse,
     Q_RBC_Terminate_communication_session, kcg_lit_int32(0), kcg_lit_int32(0),
-    kcg_lit_int64(0), Q_SLEEPSESSION_Ignore_session_establishment_order, {
+    kcg_lit_int32(0), Q_SLEEPSESSION_Ignore_session_establishment_order, {
       kcg_false, kcg_lit_int32(0), kcg_lit_int32(0), kcg_lit_int32(0) } } };
 
 /* TM::DEFAULT_PHeader/ */
@@ -209,7 +209,7 @@ const P45_RadioNetworkRegistration_T_Packet_Types_Pkg cNoP45_RadioNetworkRegistr
 const p42_sessionManagement_T_RCM_MsgTypes_Pkg cNo_p42_SessionManagement_RCM_MsgTypes_Pkg = {
   kcg_false, msrc_undefined_Common_Types_Pkg, Q_DIR_Reverse,
   Q_RBC_Terminate_communication_session, kcg_lit_int32(0), kcg_lit_int32(0),
-  kcg_lit_int64(0), Q_SLEEPSESSION_Ignore_session_establishment_order, {
+  kcg_lit_int32(0), Q_SLEEPSESSION_Ignore_session_establishment_order, {
     kcg_false, kcg_lit_int32(0), kcg_lit_int32(0), kcg_lit_int32(0) } };
 
 /* MoRC_Pck::Subfunc_Pkg::cNoOrigin/ */

@@ -620,7 +620,7 @@ extern const BaliseTelegramHeader_int_T_TM BG361_header_B1_Balises426;
 extern const BaliseTelegramHeader_int_T_TM BG361_header_B0_Balises426;
 
 /* TM::DIM_MaxElementsPacket137/ */
-#define DIM_MaxElementsPacket137_TM (kcg_lit_int64(4))
+#define DIM_MaxElementsPacket137_TM (kcg_lit_int32(4))
 
 /* Packets426::BG361_P137/ */
 extern const P137_trackside_int_T_TM BG361_P137_Packets426;
@@ -1037,7 +1037,7 @@ extern const P041_trackside_int_T_TM LRBG354_P041_2_Packets426;
 extern const M_003_int_T_TM_radio_messages LRBG_354_D_00275_3_M003_Messages_426;
 
 /* TM::DIM_MaxElementsPacket065/ */
-#define DIM_MaxElementsPacket065_TM (kcg_lit_int64(9))
+#define DIM_MaxElementsPacket065_TM (kcg_lit_int32(9))
 
 /* Packets426::LRBG354_P027_1_1/ */
 extern const P027V1_trackside_int_T_TM_baseline2 LRBG354_P027_1_1_Packets426;
@@ -1076,38 +1076,38 @@ extern const M_008_int_T_TM_radio_messages LRBG_353_D_00421_9_M008_Messages_426;
 extern const M_032_int_T_TM_radio_messages LRBG_353_D_00319_2_M032_Messages_426;
 
 /* TM_RBC_conversions_legacy::default_t_sh_rqst/ */
-#define default_t_sh_rqst_TM_RBC_conversions_legacy (kcg_lit_int64(0))
+#define default_t_sh_rqst_TM_RBC_conversions_legacy (kcg_lit_int32(0))
 
 /* TM_RBC_conversions_legacy::default_receivedSystemTime/ */
-#define default_receivedSystemTime_TM_RBC_conversions_legacy (kcg_lit_int64(0))
+#define default_receivedSystemTime_TM_RBC_conversions_legacy (kcg_lit_int32(0))
 
 /* TM_RBC_conversions_legacy::default_radioDevice/ */
-#define default_radioDevice_TM_RBC_conversions_legacy (kcg_lit_int64(0))
+#define default_radioDevice_TM_RBC_conversions_legacy (kcg_lit_int32(0))
 
 /* TM_RBC_conversions_legacy::default_m_version/ */
 #define default_m_version_TM_RBC_conversions_legacy                           \
   M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS
 
 /* TM_RBC_conversions_legacy::default_d_emergencystop/ */
-#define default_d_emergencystop_TM_RBC_conversions_legacy (kcg_lit_int64(0))
+#define default_d_emergencystop_TM_RBC_conversions_legacy (kcg_lit_int32(0))
 
 /* TM_RBC_conversions_legacy::default_q_dir/ */
 #define default_q_dir_TM_RBC_conversions_legacy Q_DIR_Reverse
 
 /* TM_RBC_conversions_legacy::default_d_ref/ */
-#define default_d_ref_TM_RBC_conversions_legacy (kcg_lit_int64(0))
+#define default_d_ref_TM_RBC_conversions_legacy (kcg_lit_int32(0))
 
 /* TM_RBC_conversions_legacy::default_d_sr/ */
-#define default_d_sr_TM_RBC_conversions_legacy (kcg_lit_int64(0))
+#define default_d_sr_TM_RBC_conversions_legacy (kcg_lit_int32(0))
 
 /* TM_RBC_conversions_legacy::default_q_scale/ */
 #define default_q_scale_TM_RBC_conversions_legacy Q_SCALE_1_m_scale
 
 /* TM_RBC_conversions_legacy::default_nid_em/ */
-#define default_nid_em_TM_RBC_conversions_legacy (kcg_lit_int64(0))
+#define default_nid_em_TM_RBC_conversions_legacy (kcg_lit_int32(0))
 
 /* TM_RBC_conversions_legacy::default_t_train_reference/ */
-#define default_t_train_reference_TM_RBC_conversions_legacy (kcg_lit_int64(0))
+#define default_t_train_reference_TM_RBC_conversions_legacy (kcg_lit_int32(0))
 
 /* TM_RBC_conversions_legacy::default_header/ */
 extern const _4_Radio_TrackTrain_Header_T_Radio_Types_Pkg default_header_TM_RBC_conversions_legacy;
@@ -1121,10 +1121,10 @@ extern const _4_Radio_TrackTrain_Header_T_Radio_Types_Pkg default_header_TM_RBC_
   Q_ORIENTATION_The_balise_group_has_been_passed_by_the_train_in_reverse_direction
 
 /* TM_conversions::INT_Q_ORIENTATION_nominal/ */
-#define INT_Q_ORIENTATION_nominal_TM_conversions (kcg_lit_int64(1))
+#define INT_Q_ORIENTATION_nominal_TM_conversions (kcg_lit_int32(1))
 
 /* TM_conversions::INT_Q_ORIENTATION_reverse/ */
-#define INT_Q_ORIENTATION_reverse_TM_conversions (kcg_lit_int64(0))
+#define INT_Q_ORIENTATION_reverse_TM_conversions (kcg_lit_int32(0))
 
 /* TM::DEFAULT_BTMMessage/ */
 extern const CompressedBaliseMessage_TM DEFAULT_BTMMessage_TM;
@@ -1203,7 +1203,7 @@ extern const P046_sections_array_flat_T_TM DEFAULT_P046_sections_array_flat_TM;
 
 /* TM::DIM_MaxElementsPacket046/ */
 #define DIM_MaxElementsPacket046_TM                                           \
-  ((kcg_lit_int64(32) + kcg_lit_int64(1)) * kcg_lit_int64(2) + kcg_lit_int64(4))
+  ((kcg_lit_int32(32) + kcg_lit_int32(1)) * kcg_lit_int32(2) + kcg_lit_int32(4))
 
 /* Balises_Sim::BG100_header_B0/ */
 extern const BaliseTelegramHeader_int_T_TM BG100_header_B0_Balises_Sim;
@@ -1215,7 +1215,7 @@ extern const BaliseTelegramHeader_int_T_TM BG100_header_B1_Balises_Sim;
 extern const P045_trackside_int_T_TM BG100_P045_Packets_Sim;
 
 /* TM::DIM_MaxElementsPacket045/ */
-#define DIM_MaxElementsPacket045_TM (kcg_lit_int64(4))
+#define DIM_MaxElementsPacket045_TM (kcg_lit_int32(4))
 
 /* Balises426::BG426/ */
 extern const BaliseGroupData_Basics BG426_Balises426;
@@ -1399,7 +1399,7 @@ extern const P041_sections_array_flat_T_TM DEFAULT_P041_sections_array_flat_TM;
 
 /* TM::DIM_MaxElementsPacket041/ */
 #define DIM_MaxElementsPacket041_TM                                           \
-  ((kcg_lit_int64(32) + kcg_lit_int64(1)) * kcg_lit_int64(3) + kcg_lit_int64(6))
+  ((kcg_lit_int32(32) + kcg_lit_int32(1)) * kcg_lit_int32(3) + kcg_lit_int32(6))
 
 /* Packets426::BG443_P041/ */
 extern const P041_trackside_int_T_TM BG443_P041_Packets426;
@@ -1438,23 +1438,23 @@ extern const BaliseTelegramHeader_int_T_TM BG438_header_B1_Balises426;
 extern const BaliseTelegramHeader_int_T_TM DEFAULT_TM_BaliseHeaderInt_TM;
 
 /* InfraLib::ReleaseDelta/ */
-#define ReleaseDelta_InfraLib (kcg_lit_float64(1.5))
+#define ReleaseDelta_InfraLib (kcg_lit_float32(1.5))
 
 /* InfraLib::Half_Distance_Balises_in_BG/ */
 #define Half_Distance_Balises_in_BG_InfraLib                                  \
-  (kcg_lit_float64(3.0) / kcg_lit_float64(2.0))
+  (kcg_lit_float32(3.0) / kcg_lit_float32(2.0))
 
 /* InfraLib::Distance_Balises_in_BG/ */
-#define Distance_Balises_in_BG_InfraLib (kcg_lit_float64(3.0))
+#define Distance_Balises_in_BG_InfraLib (kcg_lit_float32(3.0))
 
 /* TM::DIM_scale_eng_location/ */
-#define DIM_scale_eng_location_TM (kcg_lit_float64(1.0))
+#define DIM_scale_eng_location_TM (kcg_lit_float32(1.0))
 
 /* TM::INT_Q_DIR_both/ */
-#define INT_Q_DIR_both_TM (kcg_lit_int64(2))
+#define INT_Q_DIR_both_TM (kcg_lit_int32(2))
 
 /* TM::DIM_MaxElementsPacket255/ */
-#define DIM_MaxElementsPacket255_TM (kcg_lit_int64(1))
+#define DIM_MaxElementsPacket255_TM (kcg_lit_int32(1))
 
 /* Packets426::BGxxx_P255/ */
 extern const P255_trackside_int_T_TM BGxxx_P255_Packets426;
@@ -1517,10 +1517,10 @@ extern const M_TrackTrain_Radio_T_TM_radio_messages no_message_US_Integration_No
 #define ENUM_Q_LINK_linked_TM_conversions Q_LINK_Linked
 
 /* TM_conversions::INT_Q_LINK_unlinked/ */
-#define INT_Q_LINK_unlinked_TM_conversions (kcg_lit_int64(0))
+#define INT_Q_LINK_unlinked_TM_conversions (kcg_lit_int32(0))
 
 /* TM_conversions::INT_Q_LINK_linked/ */
-#define INT_Q_LINK_linked_TM_conversions (kcg_lit_int64(1))
+#define INT_Q_LINK_linked_TM_conversions (kcg_lit_int32(1))
 
 /* TM_conversions::ENUM_M_DUP_duplicate_of_previous/ */
 #define ENUM_M_DUP_duplicate_of_previous_TM_conversions                       \
@@ -1534,13 +1534,13 @@ extern const M_TrackTrain_Radio_T_TM_radio_messages no_message_US_Integration_No
   M_DUP_This_balise_is_a_duplicate_of_the_next_balise
 
 /* TM_conversions::INT_M_DUP_no_duplicates/ */
-#define INT_M_DUP_no_duplicates_TM_conversions (kcg_lit_int64(0))
+#define INT_M_DUP_no_duplicates_TM_conversions (kcg_lit_int32(0))
 
 /* TM_conversions::INT_M_DUP_duplicate_of_previous/ */
-#define INT_M_DUP_duplicate_of_previous_TM_conversions (kcg_lit_int64(2))
+#define INT_M_DUP_duplicate_of_previous_TM_conversions (kcg_lit_int32(2))
 
 /* TM_conversions::INT_M_DUP_duplicate_of_next/ */
-#define INT_M_DUP_duplicate_of_next_TM_conversions (kcg_lit_int64(1))
+#define INT_M_DUP_duplicate_of_next_TM_conversions (kcg_lit_int32(1))
 
 /* TM_conversions::ENUM_N_TOTAL_1/ */
 #define ENUM_N_TOTAL_1_TM_conversions N_TOTAL_1_balise_in_the_group
@@ -1567,28 +1567,28 @@ extern const M_TrackTrain_Radio_T_TM_radio_messages no_message_US_Integration_No
 #define ENUM_N_TOTAL_8_TM_conversions N_TOTAL_8_balises_in_the_group
 
 /* TM_conversions::INT_N_TOTAL_8/ */
-#define INT_N_TOTAL_8_TM_conversions (kcg_lit_int64(7))
+#define INT_N_TOTAL_8_TM_conversions (kcg_lit_int32(7))
 
 /* TM_conversions::INT_N_TOTAL_7/ */
-#define INT_N_TOTAL_7_TM_conversions (kcg_lit_int64(6))
+#define INT_N_TOTAL_7_TM_conversions (kcg_lit_int32(6))
 
 /* TM_conversions::INT_N_TOTAL_6/ */
-#define INT_N_TOTAL_6_TM_conversions (kcg_lit_int64(5))
+#define INT_N_TOTAL_6_TM_conversions (kcg_lit_int32(5))
 
 /* TM_conversions::INT_N_TOTAL_5/ */
-#define INT_N_TOTAL_5_TM_conversions (kcg_lit_int64(4))
+#define INT_N_TOTAL_5_TM_conversions (kcg_lit_int32(4))
 
 /* TM_conversions::INT_N_TOTAL_4/ */
-#define INT_N_TOTAL_4_TM_conversions (kcg_lit_int64(3))
+#define INT_N_TOTAL_4_TM_conversions (kcg_lit_int32(3))
 
 /* TM_conversions::INT_N_TOTAL_3/ */
-#define INT_N_TOTAL_3_TM_conversions (kcg_lit_int64(2))
+#define INT_N_TOTAL_3_TM_conversions (kcg_lit_int32(2))
 
 /* TM_conversions::INT_N_TOTAL_2/ */
-#define INT_N_TOTAL_2_TM_conversions (kcg_lit_int64(1))
+#define INT_N_TOTAL_2_TM_conversions (kcg_lit_int32(1))
 
 /* TM_conversions::INT_N_TOTAL_1/ */
-#define INT_N_TOTAL_1_TM_conversions (kcg_lit_int64(0))
+#define INT_N_TOTAL_1_TM_conversions (kcg_lit_int32(0))
 
 /* TM_conversions::ENUM_N_PIG_1st/ */
 #define ENUM_N_PIG_1st_TM_conversions N_PIG_I_am_the_1st
@@ -1615,28 +1615,28 @@ extern const M_TrackTrain_Radio_T_TM_radio_messages no_message_US_Integration_No
 #define ENUM_N_PIG_8th_TM_conversions N_PIG_I_am_the_8th
 
 /* TM_conversions::INT_N_PIG_8th/ */
-#define INT_N_PIG_8th_TM_conversions (kcg_lit_int64(7))
+#define INT_N_PIG_8th_TM_conversions (kcg_lit_int32(7))
 
 /* TM_conversions::INT_N_PIG_7th/ */
-#define INT_N_PIG_7th_TM_conversions (kcg_lit_int64(6))
+#define INT_N_PIG_7th_TM_conversions (kcg_lit_int32(6))
 
 /* TM_conversions::INT_N_PIG_6th/ */
-#define INT_N_PIG_6th_TM_conversions (kcg_lit_int64(5))
+#define INT_N_PIG_6th_TM_conversions (kcg_lit_int32(5))
 
 /* TM_conversions::INT_N_PIG_5th/ */
-#define INT_N_PIG_5th_TM_conversions (kcg_lit_int64(4))
+#define INT_N_PIG_5th_TM_conversions (kcg_lit_int32(4))
 
 /* TM_conversions::INT_N_PIG_4th/ */
-#define INT_N_PIG_4th_TM_conversions (kcg_lit_int64(3))
+#define INT_N_PIG_4th_TM_conversions (kcg_lit_int32(3))
 
 /* TM_conversions::INT_N_PIG_3rd/ */
-#define INT_N_PIG_3rd_TM_conversions (kcg_lit_int64(2))
+#define INT_N_PIG_3rd_TM_conversions (kcg_lit_int32(2))
 
 /* TM_conversions::INT_N_PIG_2nd/ */
-#define INT_N_PIG_2nd_TM_conversions (kcg_lit_int64(1))
+#define INT_N_PIG_2nd_TM_conversions (kcg_lit_int32(1))
 
 /* TM_conversions::INT_N_PIG_1st/ */
-#define INT_N_PIG_1st_TM_conversions (kcg_lit_int64(0))
+#define INT_N_PIG_1st_TM_conversions (kcg_lit_int32(0))
 
 /* TM_conversions::ENUM_Q_MEDIA_Loop/ */
 #define ENUM_Q_MEDIA_Loop_TM_conversions Q_MEDIA_Loop
@@ -1645,10 +1645,10 @@ extern const M_TrackTrain_Radio_T_TM_radio_messages no_message_US_Integration_No
 #define ENUM_Q_MEDIA_Balise_TM_conversions Q_MEDIA_Balise
 
 /* TM_conversions::INT_Q_MEDIA_Loop/ */
-#define INT_Q_MEDIA_Loop_TM_conversions (kcg_lit_int64(1))
+#define INT_Q_MEDIA_Loop_TM_conversions (kcg_lit_int32(1))
 
 /* TM_conversions::INT_Q_MEDIA_Balise/ */
-#define INT_Q_MEDIA_Balise_TM_conversions (kcg_lit_int64(0))
+#define INT_Q_MEDIA_Balise_TM_conversions (kcg_lit_int32(0))
 
 /* TM_conversions::ENUM_Q_UPDOWN_uplink/ */
 #define ENUM_Q_UPDOWN_uplink_TM_conversions Q_UPDOWN_Up_link_telegram
@@ -1657,10 +1657,10 @@ extern const M_TrackTrain_Radio_T_TM_radio_messages no_message_US_Integration_No
 #define ENUM_Q_UPDOWN_downlink_TM_conversions Q_UPDOWN_Down_link_telegram
 
 /* TM_conversions::INT_Q_UPDOWN_uplink/ */
-#define INT_Q_UPDOWN_uplink_TM_conversions (kcg_lit_int64(1))
+#define INT_Q_UPDOWN_uplink_TM_conversions (kcg_lit_int32(1))
 
 /* TM_conversions::INT_Q_UPDOWN_downlink/ */
-#define INT_Q_UPDOWN_downlink_TM_conversions (kcg_lit_int64(0))
+#define INT_Q_UPDOWN_downlink_TM_conversions (kcg_lit_int32(0))
 
 /* US_Integration_November::UserStory13to16/ */
 #define UserStory13to16_US_Integration_November                               \
@@ -1683,7 +1683,7 @@ extern const CompressedRadioMessage_TM Empty_RadioTrackTrainMessage_RBC_Messagin
 extern const _25_array DIAG_MSG_DEFAULT_ARRAY_RBC_Diagnostic_Pkg;
 
 /* T_TRAIN_MAX/ */
-#define T_TRAIN_MAX (kcg_lit_int64(2147483647))
+#define T_TRAIN_MAX (kcg_lit_int32(2147483647))
 
 /* CLOCK_DEFAULT/ */
 extern const Clock_T CLOCK_DEFAULT;
@@ -1732,35 +1732,35 @@ extern const P003_nid_radio_list_int_t_TM_TrainToTrack DEFAULT_P003_nid_radio_li
 
 /* TM_conversions::INT_M_ERROR_Unlinked_balise_group_message_consistency_error/ */
 #define INT_M_ERROR_Unlinked_balise_group_message_consistency_error_TM_conversions\
-  (kcg_lit_int64(2))
+  (kcg_lit_int32(2))
 
 /* TM_conversions::INT_M_ERROR_Safety_critical_failure/ */
-#define INT_M_ERROR_Safety_critical_failure_TM_conversions (kcg_lit_int64(6))
+#define INT_M_ERROR_Safety_critical_failure_TM_conversions (kcg_lit_int32(6))
 
 /* TM_conversions::INT_M_ERROR_Radio_sequence_error/ */
-#define INT_M_ERROR_Radio_sequence_error_TM_conversions (kcg_lit_int64(4))
+#define INT_M_ERROR_Radio_sequence_error_TM_conversions (kcg_lit_int32(4))
 
 /* TM_conversions::INT_M_ERROR_Radio_safe_radio_connection_error/ */
 #define INT_M_ERROR_Radio_safe_radio_connection_error_TM_conversions          \
-  (kcg_lit_int64(5))
+  (kcg_lit_int32(5))
 
 /* TM_conversions::INT_M_ERROR_Radio_message_consistency_error/ */
 #define INT_M_ERROR_Radio_message_consistency_error_TM_conversions            \
-  (kcg_lit_int64(3))
+  (kcg_lit_int32(3))
 
 /* TM_conversions::INT_M_ERROR_Linked_balise_group_message_consistency_error/ */
 #define INT_M_ERROR_Linked_balise_group_message_consistency_error_TM_conversions\
-  (kcg_lit_int64(1))
+  (kcg_lit_int32(1))
 
 /* TM_conversions::INT_M_ERROR_Double_repositioning_error/ */
-#define INT_M_ERROR_Double_repositioning_error_TM_conversions (kcg_lit_int64(8))
+#define INT_M_ERROR_Double_repositioning_error_TM_conversions (kcg_lit_int32(8))
 
 /* TM_conversions::INT_M_ERROR_Double_linking_error/ */
-#define INT_M_ERROR_Double_linking_error_TM_conversions (kcg_lit_int64(7))
+#define INT_M_ERROR_Double_linking_error_TM_conversions (kcg_lit_int32(7))
 
 /* TM_conversions::INT_M_ERROR_balise_group_linking_conistency/ */
 #define INT_M_ERROR_balise_group_linking_conistency_TM_conversions            \
-  (kcg_lit_int64(0))
+  (kcg_lit_int32(0))
 
 /* TM_conversions::ENUM_M_VOLTAGE_AC_25_kV_50_Hz/ */
 #define ENUM_M_VOLTAGE_AC_25_kV_50_Hz_TM_conversions M_VOLTAGE_AC_25_kV_50_Hz
@@ -1783,22 +1783,22 @@ extern const P003_nid_radio_list_int_t_TM_TrainToTrack DEFAULT_P003_nid_radio_li
   M_VOLTAGE_Line_not_fitted_with_any_traction_system
 
 /* TM_conversions::INT_M_VOLTAGE_DC_600_or_750_V/ */
-#define INT_M_VOLTAGE_DC_600_or_750_V_TM_conversions (kcg_lit_int64(5))
+#define INT_M_VOLTAGE_DC_600_or_750_V_TM_conversions (kcg_lit_int32(5))
 
 /* TM_conversions::INT_M_VOLTAGE_DC_1_5_kV/ */
-#define INT_M_VOLTAGE_DC_1_5_kV_TM_conversions (kcg_lit_int64(4))
+#define INT_M_VOLTAGE_DC_1_5_kV_TM_conversions (kcg_lit_int32(4))
 
 /* TM_conversions::INT_M_VOLTAGE_DC_3_kV/ */
-#define INT_M_VOLTAGE_DC_3_kV_TM_conversions (kcg_lit_int64(3))
+#define INT_M_VOLTAGE_DC_3_kV_TM_conversions (kcg_lit_int32(3))
 
 /* TM_conversions::INT_M_VOLTAGE_AC_15_kV_16_7_Hz/ */
-#define INT_M_VOLTAGE_AC_15_kV_16_7_Hz_TM_conversions (kcg_lit_int64(2))
+#define INT_M_VOLTAGE_AC_15_kV_16_7_Hz_TM_conversions (kcg_lit_int32(2))
 
 /* TM_conversions::INT_M_VOLTAGE_AC_25_kV_50_Hz/ */
-#define INT_M_VOLTAGE_AC_25_kV_50_Hz_TM_conversions (kcg_lit_int64(1))
+#define INT_M_VOLTAGE_AC_25_kV_50_Hz_TM_conversions (kcg_lit_int32(1))
 
 /* TM_conversions::INT_M_VOLTAGE_Line_not_fitted/ */
-#define INT_M_VOLTAGE_Line_not_fitted_TM_conversions (kcg_lit_int64(0))
+#define INT_M_VOLTAGE_Line_not_fitted_TM_conversions (kcg_lit_int32(0))
 
 /* TM_TrainToTrack::DEFAULT_P011_voltage_section/ */
 extern const P011_voltage_TM_TrainToTrack DEFAULT_P011_voltage_section_TM_TrainToTrack;
@@ -1816,10 +1816,10 @@ extern const P011_ntc_list_TM_TrainToTrack DEFAULT_P011_ntc_list_TM_TrainToTrack
 #define ENUM_M_AIRTIGHT_not_fitted_TM_conversions M_AIRTIGHT_Not_fitted
 
 /* TM_conversions::INT_M_AIRTIGHT_not_fitted/ */
-#define INT_M_AIRTIGHT_not_fitted_TM_conversions (kcg_lit_int64(0))
+#define INT_M_AIRTIGHT_not_fitted_TM_conversions (kcg_lit_int32(0))
 
 /* TM_conversions::INT_M_AIRTIGHT_fitted/ */
-#define INT_M_AIRTIGHT_fitted_TM_conversions (kcg_lit_int64(1))
+#define INT_M_AIRTIGHT_fitted_TM_conversions (kcg_lit_int32(1))
 
 /* TM_conversions::ENUM_M_AXLELOADCAT_A/ */
 #define ENUM_M_AXLELOADCAT_A_TM_conversions M_AXLELOADCAT_A
@@ -1861,40 +1861,40 @@ extern const P011_ntc_list_TM_TrainToTrack DEFAULT_P011_ntc_list_TM_TrainToTrack
 #define ENUM_M_AXLELOADCAT_E5_TM_conversions M_AXLELOADCAT_E5
 
 /* TM_conversions::INT_M_AXLELOADCAT_HS17/ */
-#define INT_M_AXLELOADCAT_HS17_TM_conversions (kcg_lit_int64(1))
+#define INT_M_AXLELOADCAT_HS17_TM_conversions (kcg_lit_int32(1))
 
 /* TM_conversions::INT_M_AXLELOADCAT_E5/ */
-#define INT_M_AXLELOADCAT_E5_TM_conversions (kcg_lit_int64(12))
+#define INT_M_AXLELOADCAT_E5_TM_conversions (kcg_lit_int32(12))
 
 /* TM_conversions::INT_M_AXLELOADCAT_E4/ */
-#define INT_M_AXLELOADCAT_E4_TM_conversions (kcg_lit_int64(11))
+#define INT_M_AXLELOADCAT_E4_TM_conversions (kcg_lit_int32(11))
 
 /* TM_conversions::INT_M_AXLELOADCAT_D4XL/ */
-#define INT_M_AXLELOADCAT_D4XL_TM_conversions (kcg_lit_int64(10))
+#define INT_M_AXLELOADCAT_D4XL_TM_conversions (kcg_lit_int32(10))
 
 /* TM_conversions::INT_M_AXLELOADCAT_D4/ */
-#define INT_M_AXLELOADCAT_D4_TM_conversions (kcg_lit_int64(9))
+#define INT_M_AXLELOADCAT_D4_TM_conversions (kcg_lit_int32(9))
 
 /* TM_conversions::INT_M_AXLELOADCAT_D3/ */
-#define INT_M_AXLELOADCAT_D3_TM_conversions (kcg_lit_int64(8))
+#define INT_M_AXLELOADCAT_D3_TM_conversions (kcg_lit_int32(8))
 
 /* TM_conversions::INT_M_AXLELOADCAT_D2/ */
-#define INT_M_AXLELOADCAT_D2_TM_conversions (kcg_lit_int64(7))
+#define INT_M_AXLELOADCAT_D2_TM_conversions (kcg_lit_int32(7))
 
 /* TM_conversions::INT_M_AXLELOADCAT_C3/ */
-#define INT_M_AXLELOADCAT_C3_TM_conversions (kcg_lit_int64(5))
+#define INT_M_AXLELOADCAT_C3_TM_conversions (kcg_lit_int32(5))
 
 /* TM_conversions::INT_M_AXLELOADCAT_C2/ */
-#define INT_M_AXLELOADCAT_C2_TM_conversions (kcg_lit_int64(4))
+#define INT_M_AXLELOADCAT_C2_TM_conversions (kcg_lit_int32(4))
 
 /* TM_conversions::INT_M_AXLELOADCAT_B2/ */
-#define INT_M_AXLELOADCAT_B2_TM_conversions (kcg_lit_int64(3))
+#define INT_M_AXLELOADCAT_B2_TM_conversions (kcg_lit_int32(3))
 
 /* TM_conversions::INT_M_AXLELOADCAT_B1/ */
-#define INT_M_AXLELOADCAT_B1_TM_conversions (kcg_lit_int64(2))
+#define INT_M_AXLELOADCAT_B1_TM_conversions (kcg_lit_int32(2))
 
 /* TM_conversions::INT_M_AXLELOADCAT_A/ */
-#define INT_M_AXLELOADCAT_A_TM_conversions (kcg_lit_int64(0))
+#define INT_M_AXLELOADCAT_A_TM_conversions (kcg_lit_int32(0))
 
 /* TM_conversions::ENUM_M_LOADINGGAUGE_G1/ */
 #define ENUM_M_LOADINGGAUGE_G1_TM_conversions M_LOADINGGAUGE_G1
@@ -1913,25 +1913,25 @@ extern const P011_ntc_list_TM_TrainToTrack DEFAULT_P011_ntc_list_TM_TrainToTrack
   M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles
 
 /* TM_conversions::INT_M_LOADINGGAUGE_does_not_fit/ */
-#define INT_M_LOADINGGAUGE_does_not_fit_TM_conversions (kcg_lit_int64(0))
+#define INT_M_LOADINGGAUGE_does_not_fit_TM_conversions (kcg_lit_int32(0))
 
 /* TM_conversions::INT_M_LOADINGGAUGE_GC/ */
-#define INT_M_LOADINGGAUGE_GC_TM_conversions (kcg_lit_int64(4))
+#define INT_M_LOADINGGAUGE_GC_TM_conversions (kcg_lit_int32(4))
 
 /* TM_conversions::INT_M_LOADINGGAUGE_GB/ */
-#define INT_M_LOADINGGAUGE_GB_TM_conversions (kcg_lit_int64(3))
+#define INT_M_LOADINGGAUGE_GB_TM_conversions (kcg_lit_int32(3))
 
 /* TM_conversions::INT_M_LOADINGGAUGE_GA/ */
-#define INT_M_LOADINGGAUGE_GA_TM_conversions (kcg_lit_int64(2))
+#define INT_M_LOADINGGAUGE_GA_TM_conversions (kcg_lit_int32(2))
 
 /* TM_conversions::INT_M_LOADINGGAUGE_G1/ */
-#define INT_M_LOADINGGAUGE_G1_TM_conversions (kcg_lit_int64(1))
+#define INT_M_LOADINGGAUGE_G1_TM_conversions (kcg_lit_int32(1))
 
 /* TM_conversions::DIM_L_TRAIN_min/ */
-#define DIM_L_TRAIN_min_TM_conversions (kcg_lit_int64(0))
+#define DIM_L_TRAIN_min_TM_conversions (kcg_lit_int32(0))
 
 /* TM_conversions::DIM_L_TRAIN_max/ */
-#define DIM_L_TRAIN_max_TM_conversions (kcg_lit_int64(4095))
+#define DIM_L_TRAIN_max_TM_conversions (kcg_lit_int32(4095))
 
 /* TM_conversions::ENUM_NC_TRAIN_freight_P/ */
 #define ENUM_NC_TRAIN_freight_P_TM_conversions                                \
@@ -1949,16 +1949,16 @@ extern const P011_ntc_list_TM_TrainToTrack DEFAULT_P011_ntc_list_TM_TrainToTrack
   NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category
 
 /* TM_conversions::INT_NC_TRAIN_passenger/ */
-#define INT_NC_TRAIN_passenger_TM_conversions (kcg_lit_int64(3))
+#define INT_NC_TRAIN_passenger_TM_conversions (kcg_lit_int32(3))
 
 /* TM_conversions::INT_NC_TRAIN_freight_G/ */
-#define INT_NC_TRAIN_freight_G_TM_conversions (kcg_lit_int64(2))
+#define INT_NC_TRAIN_freight_G_TM_conversions (kcg_lit_int32(2))
 
 /* TM_conversions::INT_NC_TRAIN_freight_P/ */
-#define INT_NC_TRAIN_freight_P_TM_conversions (kcg_lit_int64(1))
+#define INT_NC_TRAIN_freight_P_TM_conversions (kcg_lit_int32(1))
 
 /* TM_conversions::INT_NC_TRAIN_no_train_categroy/ */
-#define INT_NC_TRAIN_no_train_categroy_TM_conversions (kcg_lit_int64(0))
+#define INT_NC_TRAIN_no_train_categroy_TM_conversions (kcg_lit_int32(0))
 
 /* TM_conversions::ENUM_NC_CDTRAIN_080mm/ */
 #define ENUM_NC_CDTRAIN_080mm_TM_conversions NC_CDTRAIN_Cant_Deficiency_80_mm
@@ -1994,46 +1994,46 @@ extern const P011_ntc_list_TM_TrainToTrack DEFAULT_P011_ntc_list_TM_TrainToTrack
 #define ENUM_NC_CDTRAIN_300mm_TM_conversions NC_CDTRAIN_Cant_Deficiency_300_mm
 
 /* TM_conversions::INT_NC_CDTRAIN_300mm/ */
-#define INT_NC_CDTRAIN_300mm_TM_conversions (kcg_lit_int64(10))
+#define INT_NC_CDTRAIN_300mm_TM_conversions (kcg_lit_int32(10))
 
 /* TM_conversions::INT_NC_CDTRAIN_275mm/ */
-#define INT_NC_CDTRAIN_275mm_TM_conversions (kcg_lit_int64(9))
+#define INT_NC_CDTRAIN_275mm_TM_conversions (kcg_lit_int32(9))
 
 /* TM_conversions::INT_NC_CDTRAIN_245mm/ */
-#define INT_NC_CDTRAIN_245mm_TM_conversions (kcg_lit_int64(8))
+#define INT_NC_CDTRAIN_245mm_TM_conversions (kcg_lit_int32(8))
 
 /* TM_conversions::INT_NC_CDTRAIN_225mm/ */
-#define INT_NC_CDTRAIN_225mm_TM_conversions (kcg_lit_int64(7))
+#define INT_NC_CDTRAIN_225mm_TM_conversions (kcg_lit_int32(7))
 
 /* TM_conversions::INT_NC_CDTRAIN_210mm/ */
-#define INT_NC_CDTRAIN_210mm_TM_conversions (kcg_lit_int64(6))
+#define INT_NC_CDTRAIN_210mm_TM_conversions (kcg_lit_int32(6))
 
 /* TM_conversions::INT_NC_CDTRAIN_180mm/ */
-#define INT_NC_CDTRAIN_180mm_TM_conversions (kcg_lit_int64(5))
+#define INT_NC_CDTRAIN_180mm_TM_conversions (kcg_lit_int32(5))
 
 /* TM_conversions::INT_NC_CDTRAIN_165mm/ */
-#define INT_NC_CDTRAIN_165mm_TM_conversions (kcg_lit_int64(4))
+#define INT_NC_CDTRAIN_165mm_TM_conversions (kcg_lit_int32(4))
 
 /* TM_conversions::INT_NC_CDTRAIN_150mm/ */
-#define INT_NC_CDTRAIN_150mm_TM_conversions (kcg_lit_int64(3))
+#define INT_NC_CDTRAIN_150mm_TM_conversions (kcg_lit_int32(3))
 
 /* TM_conversions::INT_NC_CDTRAIN_130mm/ */
-#define INT_NC_CDTRAIN_130mm_TM_conversions (kcg_lit_int64(2))
+#define INT_NC_CDTRAIN_130mm_TM_conversions (kcg_lit_int32(2))
 
 /* TM_conversions::INT_NC_CDTRAIN_100mm/ */
-#define INT_NC_CDTRAIN_100mm_TM_conversions (kcg_lit_int64(1))
+#define INT_NC_CDTRAIN_100mm_TM_conversions (kcg_lit_int32(1))
 
 /* TM_conversions::INT_NC_CDTRAIN_080mm/ */
-#define INT_NC_CDTRAIN_080mm_TM_conversions (kcg_lit_int64(0))
+#define INT_NC_CDTRAIN_080mm_TM_conversions (kcg_lit_int32(0))
 
 /* TM_radio_messages::nid_meta_p000/ */
-#define nid_meta_p000_TM_radio_messages (kcg_lit_int64(998))
+#define nid_meta_p000_TM_radio_messages (kcg_lit_int32(998))
 
 /* TM_TrainToTrack::INVALID_VARIABLE/ */
-#define INVALID_VARIABLE_TM_TrainToTrack (kcg_lit_int64(0))
+#define INVALID_VARIABLE_TM_TrainToTrack (kcg_lit_int32(0))
 
 /* TM_TrainToTrack::DIM_max_elements_P001/ */
-#define DIM_max_elements_P001_TM_TrainToTrack (kcg_lit_int64(17))
+#define DIM_max_elements_P001_TM_TrainToTrack (kcg_lit_int32(17))
 
 /* TM_conversions::ENUM_M_LEVEL_Level_0/ */
 #define ENUM_M_LEVEL_Level_0_TM_conversions M_LEVEL_Level_0
@@ -2052,19 +2052,19 @@ extern const P011_ntc_list_TM_TrainToTrack DEFAULT_P011_ntc_list_TM_TrainToTrack
   M_LEVEL_Level_NTC_specified_by_NID_NTC
 
 /* TM_conversions::INT_M_LEVEL_Level_NTC/ */
-#define INT_M_LEVEL_Level_NTC_TM_conversions (kcg_lit_int64(1))
+#define INT_M_LEVEL_Level_NTC_TM_conversions (kcg_lit_int32(1))
 
 /* TM_conversions::INT_M_LEVEL_Level_3/ */
-#define INT_M_LEVEL_Level_3_TM_conversions (kcg_lit_int64(4))
+#define INT_M_LEVEL_Level_3_TM_conversions (kcg_lit_int32(4))
 
 /* TM_conversions::INT_M_LEVEL_Level_2/ */
-#define INT_M_LEVEL_Level_2_TM_conversions (kcg_lit_int64(3))
+#define INT_M_LEVEL_Level_2_TM_conversions (kcg_lit_int32(3))
 
 /* TM_conversions::INT_M_LEVEL_Level_1/ */
-#define INT_M_LEVEL_Level_1_TM_conversions (kcg_lit_int64(2))
+#define INT_M_LEVEL_Level_1_TM_conversions (kcg_lit_int32(2))
 
 /* TM_conversions::INT_M_LEVEL_Level_0/ */
-#define INT_M_LEVEL_Level_0_TM_conversions (kcg_lit_int64(0))
+#define INT_M_LEVEL_Level_0_TM_conversions (kcg_lit_int32(0))
 
 /* TM_conversions::ENUM_M_MODE_Full_Supervision/ */
 #define ENUM_M_MODE_Full_Supervision_TM_conversions M_MODE_Full_Supervision
@@ -2116,52 +2116,52 @@ extern const P011_ntc_list_TM_TrainToTrack DEFAULT_P011_ntc_list_TM_TrainToTrack
 #define ENUM_M_MODE_System_Failure_TM_conversions M_MODE_System_Failure
 
 /* TM_conversions::INT_M_MODE_Unfitted/ */
-#define INT_M_MODE_Unfitted_TM_conversions (kcg_lit_int64(4))
+#define INT_M_MODE_Unfitted_TM_conversions (kcg_lit_int32(4))
 
 /* TM_conversions::INT_M_MODE_Trip/ */
-#define INT_M_MODE_Trip_TM_conversions (kcg_lit_int64(7))
+#define INT_M_MODE_Trip_TM_conversions (kcg_lit_int32(7))
 
 /* TM_conversions::INT_M_MODE_System_Failure/ */
-#define INT_M_MODE_System_Failure_TM_conversions (kcg_lit_int64(9))
+#define INT_M_MODE_System_Failure_TM_conversions (kcg_lit_int32(9))
 
 /* TM_conversions::INT_M_MODE_Stand_By/ */
-#define INT_M_MODE_Stand_By_TM_conversions (kcg_lit_int64(6))
+#define INT_M_MODE_Stand_By_TM_conversions (kcg_lit_int32(6))
 
 /* TM_conversions::INT_M_MODE_Staff_Responsible/ */
-#define INT_M_MODE_Staff_Responsible_TM_conversions (kcg_lit_int64(2))
+#define INT_M_MODE_Staff_Responsible_TM_conversions (kcg_lit_int32(2))
 
 /* TM_conversions::INT_M_MODE_Sleeping/ */
-#define INT_M_MODE_Sleeping_TM_conversions (kcg_lit_int64(5))
+#define INT_M_MODE_Sleeping_TM_conversions (kcg_lit_int32(5))
 
 /* TM_conversions::INT_M_MODE_Shunting/ */
-#define INT_M_MODE_Shunting_TM_conversions (kcg_lit_int64(3))
+#define INT_M_MODE_Shunting_TM_conversions (kcg_lit_int32(3))
 
 /* TM_conversions::INT_M_MODE_Reversing/ */
-#define INT_M_MODE_Reversing_TM_conversions (kcg_lit_int64(14))
+#define INT_M_MODE_Reversing_TM_conversions (kcg_lit_int32(14))
 
 /* TM_conversions::INT_M_MODE_Post_Trip/ */
-#define INT_M_MODE_Post_Trip_TM_conversions (kcg_lit_int64(8))
+#define INT_M_MODE_Post_Trip_TM_conversions (kcg_lit_int32(8))
 
 /* TM_conversions::INT_M_MODE_Passive_Shunting/ */
-#define INT_M_MODE_Passive_Shunting_TM_conversions (kcg_lit_int64(15))
+#define INT_M_MODE_Passive_Shunting_TM_conversions (kcg_lit_int32(15))
 
 /* TM_conversions::INT_M_MODE_On_Sight/ */
-#define INT_M_MODE_On_Sight_TM_conversions (kcg_lit_int64(1))
+#define INT_M_MODE_On_Sight_TM_conversions (kcg_lit_int32(1))
 
 /* TM_conversions::INT_M_MODE_Non_Leading/ */
-#define INT_M_MODE_Non_Leading_TM_conversions (kcg_lit_int64(11))
+#define INT_M_MODE_Non_Leading_TM_conversions (kcg_lit_int32(11))
 
 /* TM_conversions::INT_M_MODE_National_System/ */
-#define INT_M_MODE_National_System_TM_conversions (kcg_lit_int64(13))
+#define INT_M_MODE_National_System_TM_conversions (kcg_lit_int32(13))
 
 /* TM_conversions::INT_M_MODE_Limited_Supervision/ */
-#define INT_M_MODE_Limited_Supervision_TM_conversions (kcg_lit_int64(12))
+#define INT_M_MODE_Limited_Supervision_TM_conversions (kcg_lit_int32(12))
 
 /* TM_conversions::INT_M_MODE_Isolation/ */
-#define INT_M_MODE_Isolation_TM_conversions (kcg_lit_int64(10))
+#define INT_M_MODE_Isolation_TM_conversions (kcg_lit_int32(10))
 
 /* TM_conversions::INT_M_MODE_Full_Supervision/ */
-#define INT_M_MODE_Full_Supervision_TM_conversions (kcg_lit_int64(0))
+#define INT_M_MODE_Full_Supervision_TM_conversions (kcg_lit_int32(0))
 
 /* TM_conversions::ENUM_Q_DIRTRAIN_nominal/ */
 #define ENUM_Q_DIRTRAIN_nominal_TM_conversions Q_DIRTRAIN_Nominal
@@ -2173,13 +2173,13 @@ extern const P011_ntc_list_TM_TrainToTrack DEFAULT_P011_ntc_list_TM_TrainToTrack
 #define ENUM_Q_DIRTRAIN_unknown_TM_conversions Q_DIRTRAIN_Unknown
 
 /* TM_conversions::INT_Q_DIRTRAIN_unknown/ */
-#define INT_Q_DIRTRAIN_unknown_TM_conversions (kcg_lit_int64(2))
+#define INT_Q_DIRTRAIN_unknown_TM_conversions (kcg_lit_int32(2))
 
 /* TM_conversions::INT_Q_DIRTRAIN_reverse/ */
-#define INT_Q_DIRTRAIN_reverse_TM_conversions (kcg_lit_int64(0))
+#define INT_Q_DIRTRAIN_reverse_TM_conversions (kcg_lit_int32(0))
 
 /* TM_conversions::INT_Q_DIRTRAIN_nominal/ */
-#define INT_Q_DIRTRAIN_nominal_TM_conversions (kcg_lit_int64(1))
+#define INT_Q_DIRTRAIN_nominal_TM_conversions (kcg_lit_int32(1))
 
 /* TM_conversions::ENUM_Q_LENGTH_no_info_available/ */
 #define ENUM_Q_LENGTH_no_info_available_TM_conversions                        \
@@ -2198,16 +2198,16 @@ extern const P011_ntc_list_TM_TrainToTrack DEFAULT_P011_ntc_list_TM_TrainToTrack
   Q_LENGTH_Train_integrity_lost
 
 /* TM_conversions::INT_Q_LENGTH_integrity_lost/ */
-#define INT_Q_LENGTH_integrity_lost_TM_conversions (kcg_lit_int64(3))
+#define INT_Q_LENGTH_integrity_lost_TM_conversions (kcg_lit_int32(3))
 
 /* TM_conversions::INT_Q_LENGTH_confimed_by_driver/ */
-#define INT_Q_LENGTH_confimed_by_driver_TM_conversions (kcg_lit_int64(2))
+#define INT_Q_LENGTH_confimed_by_driver_TM_conversions (kcg_lit_int32(2))
 
 /* TM_conversions::INT_Q_LENGTH_confimed_by_device/ */
-#define INT_Q_LENGTH_confimed_by_device_TM_conversions (kcg_lit_int64(1))
+#define INT_Q_LENGTH_confimed_by_device_TM_conversions (kcg_lit_int32(1))
 
 /* TM_conversions::INT_Q_LENGTH_no_info_available/ */
-#define INT_Q_LENGTH_no_info_available_TM_conversions (kcg_lit_int64(0))
+#define INT_Q_LENGTH_no_info_available_TM_conversions (kcg_lit_int32(0))
 
 /* TM_conversions::ENUM_Q_DLRBG_nominal/ */
 #define ENUM_Q_DLRBG_nominal_TM_conversions Q_DLRBG_Nominal
@@ -2219,13 +2219,13 @@ extern const P011_ntc_list_TM_TrainToTrack DEFAULT_P011_ntc_list_TM_TrainToTrack
 #define ENUM_Q_DLRBG_unknown_TM_conversions Q_DLRBG_Unknown
 
 /* TM_conversions::INT_Q_DLRBG_unknown/ */
-#define INT_Q_DLRBG_unknown_TM_conversions (kcg_lit_int64(2))
+#define INT_Q_DLRBG_unknown_TM_conversions (kcg_lit_int32(2))
 
 /* TM_conversions::INT_Q_DLRBG_reverse/ */
-#define INT_Q_DLRBG_reverse_TM_conversions (kcg_lit_int64(0))
+#define INT_Q_DLRBG_reverse_TM_conversions (kcg_lit_int32(0))
 
 /* TM_conversions::INT_Q_DLRBG_nominal/ */
-#define INT_Q_DLRBG_nominal_TM_conversions (kcg_lit_int64(1))
+#define INT_Q_DLRBG_nominal_TM_conversions (kcg_lit_int32(1))
 
 /* TM_conversions::ENUM_Q_DIRLRBG_nominal/ */
 #define ENUM_Q_DIRLRBG_nominal_TM_conversions Q_DIRLRBG_Nominal
@@ -2237,34 +2237,34 @@ extern const P011_ntc_list_TM_TrainToTrack DEFAULT_P011_ntc_list_TM_TrainToTrack
 #define ENUM_Q_DIRLRBG_unknown_TM_conversions Q_DIRLRBG_Unknown
 
 /* TM_conversions::INT_Q_DIRLRBG_unknown/ */
-#define INT_Q_DIRLRBG_unknown_TM_conversions (kcg_lit_int64(2))
+#define INT_Q_DIRLRBG_unknown_TM_conversions (kcg_lit_int32(2))
 
 /* TM_conversions::INT_Q_DIRLRBG_reverse/ */
-#define INT_Q_DIRLRBG_reverse_TM_conversions (kcg_lit_int64(0))
+#define INT_Q_DIRLRBG_reverse_TM_conversions (kcg_lit_int32(0))
 
 /* TM_conversions::INT_Q_DIRLRBG_nominal/ */
-#define INT_Q_DIRLRBG_nominal_TM_conversions (kcg_lit_int64(1))
+#define INT_Q_DIRLRBG_nominal_TM_conversions (kcg_lit_int32(1))
 
 /* TM_TrainToTrack::DIM_max_elements_P003/ */
 #define DIM_max_elements_P003_TM_TrainToTrack                                 \
-  (kcg_lit_int64(3) + kcg_lit_int64(5))
+  (kcg_lit_int32(3) + kcg_lit_int32(5))
 
 /* TM_TrainToTrack::DIM_max_elements_P005/ */
-#define DIM_max_elements_P005_TM_TrainToTrack (kcg_lit_int64(3))
+#define DIM_max_elements_P005_TM_TrainToTrack (kcg_lit_int32(3))
 
 /* TM_TrainToTrack::DIM_max_elements_P004/ */
-#define DIM_max_elements_P004_TM_TrainToTrack (kcg_lit_int64(3))
+#define DIM_max_elements_P004_TM_TrainToTrack (kcg_lit_int32(3))
 
 /* TM_TrainToTrack::DIM_max_elements_P009/ */
-#define DIM_max_elements_P009_TM_TrainToTrack (kcg_lit_int64(3))
+#define DIM_max_elements_P009_TM_TrainToTrack (kcg_lit_int32(3))
 
 /* TM_TrainToTrack::DIM_max_elements_P011/ */
 #define DIM_max_elements_P011_TM_TrainToTrack                                 \
-  (kcg_lit_int64(11) + kcg_lit_int64(4) * kcg_lit_int64(2) + kcg_lit_int64(1) +\
-    kcg_lit_int64(5))
+  (kcg_lit_int32(11) + kcg_lit_int32(4) * kcg_lit_int32(2) + kcg_lit_int32(1) +\
+    kcg_lit_int32(5))
 
 /* TM_TrainToTrack::DIM_max_elements_P000/ */
-#define DIM_max_elements_P000_TM_TrainToTrack (kcg_lit_int64(17))
+#define DIM_max_elements_P000_TM_TrainToTrack (kcg_lit_int32(17))
 
 /* RBC_Model_Pkg::TrainTrackMsgConversion::cEMPTY_NID_NTC/ */
 extern const aNID_NTC_T_Packet_TrainTypes_Pkg cEMPTY_NID_NTC_RBC_Model_Pkg_TrainTrackMsgConversion;
@@ -2276,22 +2276,22 @@ extern const aTractionIdentity_T_Packet_TrainTypes_Pkg cEMPTY_TRACTION_IDENTITY_
 extern const aNID_RADIO_T_Packet_TrainTypes_Pkg cEMPTY_ANID_RADIO_RBC_Model_Pkg_TrainTrackMsgConversion;
 
 /* TM_conversions::DIM_L_TRAININT_max/ */
-#define DIM_L_TRAININT_max_TM_conversions (kcg_lit_int64(32767))
+#define DIM_L_TRAININT_max_TM_conversions (kcg_lit_int32(32767))
 
 /* TM_conversions::DIM_L_TRAININT_min/ */
-#define DIM_L_TRAININT_min_TM_conversions (kcg_lit_int64(0))
+#define DIM_L_TRAININT_min_TM_conversions (kcg_lit_int32(0))
 
 /* TM_conversions::DIM_L_min/ */
-#define DIM_L_min_TM_conversions (kcg_lit_int64(0))
+#define DIM_L_min_TM_conversions (kcg_lit_int32(0))
 
 /* TM_conversions::DIM_L_max/ */
-#define DIM_L_max_TM_conversions (kcg_lit_int64(32767))
+#define DIM_L_max_TM_conversions (kcg_lit_int32(32767))
 
 /* RBC_Model_Pkg::TrainTrackMsgConversion::DEFAULT_P003/ */
 extern const P003_TM_TrainToTrack DEFAULT_P003_RBC_Model_Pkg_TrainTrackMsgConversion;
 
 /* TM_TrainToTrack::DIM_nid_radio_list/ */
-#define DIM_nid_radio_list_TM_TrainToTrack (kcg_lit_int64(5))
+#define DIM_nid_radio_list_TM_TrainToTrack (kcg_lit_int32(5))
 
 /* RBC_Model_Pkg::TrainTrackMsgConversion::DEFAULT_P005/ */
 extern const P005_TM_TrainToTrack DEFAULT_P005_RBC_Model_Pkg_TrainTrackMsgConversion;
@@ -2306,10 +2306,10 @@ extern const P009_TM_TrainToTrack DEFAULT_P009_RBC_Model_Pkg_TrainTrackMsgConver
 extern const P011_TM_TrainToTrack DEFAULT_P011_RBC_Model_Pkg_TrainTrackMsgConversion;
 
 /* TM_TrainToTrack::DIM_nid_ntc_list/ */
-#define DIM_nid_ntc_list_TM_TrainToTrack (kcg_lit_int64(5))
+#define DIM_nid_ntc_list_TM_TrainToTrack (kcg_lit_int32(5))
 
 /* TM_TrainToTrack::DIM_voltage_list/ */
-#define DIM_voltage_list_TM_TrainToTrack (kcg_lit_int64(4))
+#define DIM_voltage_list_TM_TrainToTrack (kcg_lit_int32(4))
 
 /* RBC_Model_Pkg::TrainTrackMsgConversion::DEFAULT_P000/ */
 extern const P000_TM_TrainToTrack DEFAULT_P000_RBC_Model_Pkg_TrainTrackMsgConversion;
@@ -2319,18 +2319,18 @@ extern const P001_TM_TrainToTrack DEFAULT_P001_RBC_Model_Pkg_TrainTrackMsgConver
 
 /* RBC_Model_Pkg::TrainTrackMsgConversion::cDEFAULT_NID_TEXTMESSAGE/ */
 #define cDEFAULT_NID_TEXTMESSAGE_RBC_Model_Pkg_TrainTrackMsgConversion        \
-  (kcg_lit_int64(0))
+  (kcg_lit_int32(0))
 
 /* RBC_Model_Pkg::TrainTrackMsgConversion::cDEFAULT_EMERGENCYSTOP/ */
 #define cDEFAULT_EMERGENCYSTOP_RBC_Model_Pkg_TrainTrackMsgConversion          \
   _12_Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA
 
 /* RBC_Model_Pkg::TrainTrackMsgConversion::cDEFAULT_NID_EM/ */
-#define cDEFAULT_NID_EM_RBC_Model_Pkg_TrainTrackMsgConversion (kcg_lit_int64(0))
+#define cDEFAULT_NID_EM_RBC_Model_Pkg_TrainTrackMsgConversion (kcg_lit_int32(0))
 
 /* RBC_Model_Pkg::TrainTrackMsgConversion::cDEFAULT_T_TRAIN/ */
 #define cDEFAULT_T_TRAIN_RBC_Model_Pkg_TrainTrackMsgConversion                \
-  (kcg_lit_int64(0))
+  (kcg_lit_int32(0))
 
 /* RBC_Model_Pkg::TrainTrackMsgConversion::cDEFAULT_Q_MARQSTREASON/ */
 #define cDEFAULT_Q_MARQSTREASON_RBC_Model_Pkg_TrainTrackMsgConversion         \
@@ -2353,18 +2353,18 @@ extern const P001_TM_TrainToTrack DEFAULT_P001_RBC_Model_Pkg_TrainTrackMsgConver
   Q_EMERGENCYSTOP_Emergency_stop
 
 /* TM_conversions::INT_Q_EMERGENCYSTOP_rejected/ */
-#define INT_Q_EMERGENCYSTOP_rejected_TM_conversions (kcg_lit_int64(3))
+#define INT_Q_EMERGENCYSTOP_rejected_TM_conversions (kcg_lit_int32(3))
 
 /* TM_conversions::INT_Q_EMERGENCYSTOP_uncond_accepted/ */
-#define INT_Q_EMERGENCYSTOP_uncond_accepted_TM_conversions (kcg_lit_int64(2))
+#define INT_Q_EMERGENCYSTOP_uncond_accepted_TM_conversions (kcg_lit_int32(2))
 
 /* TM_conversions::INT_Q_EMERGENCYSTOP_cond_accepted_with_no_EOA_update/ */
 #define _10_INT_Q_EMERGENCYSTOP_cond_accepted_with_no_EOA_update_TM_conversions\
-  (kcg_lit_int64(1))
+  (kcg_lit_int32(1))
 
 /* TM_conversions::INT_Q_EMERGENCYSTOP_cond_accepted_with_EOA_update/ */
 #define INT_Q_EMERGENCYSTOP_cond_accepted_with_EOA_update_TM_conversions      \
-  (kcg_lit_int64(0))
+  (kcg_lit_int32(0))
 
 /* TM_conversions::ENUM_Q_MARQSTREASON_timer_preindication_LOA/ */
 #define ENUM_Q_MARQSTREASON_timer_preindication_LOA_TM_conversions            \
@@ -2387,27 +2387,27 @@ extern const P001_TM_TrainToTrack DEFAULT_P001_RBC_Model_Pkg_TrainTrackMsgConver
   Q_MARQSTREASON_Start_selected_by_driver
 
 /* TM_conversions::INT_Q_MARQSTREASON_TAF/ */
-#define INT_Q_MARQSTREASON_TAF_TM_conversions (kcg_lit_int64(4))
+#define INT_Q_MARQSTREASON_TAF_TM_conversions (kcg_lit_int32(4))
 
 /* TM_conversions::INT_Q_MARQSTREASON_track_description_deleted/ */
 #define INT_Q_MARQSTREASON_track_description_deleted_TM_conversions           \
-  (kcg_lit_int64(3))
+  (kcg_lit_int32(3))
 
 /* TM_conversions::INT_Q_MARQSTREASON_section_timer/ */
-#define INT_Q_MARQSTREASON_section_timer_TM_conversions (kcg_lit_int64(2))
+#define INT_Q_MARQSTREASON_section_timer_TM_conversions (kcg_lit_int32(2))
 
 /* TM_conversions::INT_Q_MARQSTREASON_timer_preindication_LOA/ */
 #define INT_Q_MARQSTREASON_timer_preindication_LOA_TM_conversions             \
-  (kcg_lit_int64(1))
+  (kcg_lit_int32(1))
 
 /* TM_conversions::INT_Q_MARQSTREASON_driver/ */
-#define INT_Q_MARQSTREASON_driver_TM_conversions (kcg_lit_int64(0))
+#define INT_Q_MARQSTREASON_driver_TM_conversions (kcg_lit_int32(0))
 
 /* TM_conversions::INT_Q_LGTLOC_min_safe_rear_end/ */
-#define INT_Q_LGTLOC_min_safe_rear_end_TM_conversions (kcg_lit_int64(0))
+#define INT_Q_LGTLOC_min_safe_rear_end_TM_conversions (kcg_lit_int32(0))
 
 /* TM_conversions::INT_Q_LGTLOC_max_safe_front_end/ */
-#define INT_Q_LGTLOC_max_safe_front_end_TM_conversions (kcg_lit_int64(1))
+#define INT_Q_LGTLOC_max_safe_front_end_TM_conversions (kcg_lit_int32(1))
 
 /* TM_conversions::ENUM_Q_LGTLOC_min_safe_rear_end/ */
 #define ENUM_Q_LGTLOC_min_safe_rear_end_TM_conversions                        \
@@ -2421,13 +2421,13 @@ extern const P001_TM_TrainToTrack DEFAULT_P001_RBC_Model_Pkg_TrainTrackMsgConver
 extern const P058_section_int_T_TM P058_SECTIONS_DEFAULT;
 
 /* TM_conversions::INT_M_LOC_every_LRBG/ */
-#define INT_M_LOC_every_LRBG_TM_conversions (kcg_lit_int64(1))
+#define INT_M_LOC_every_LRBG_TM_conversions (kcg_lit_int32(1))
 
 /* TM_conversions::INT_M_LOC_not_when_LRBG/ */
-#define INT_M_LOC_not_when_LRBG_TM_conversions (kcg_lit_int64(2))
+#define INT_M_LOC_not_when_LRBG_TM_conversions (kcg_lit_int32(2))
 
 /* TM_conversions::INT_M_LOC_now/ */
-#define INT_M_LOC_now_TM_conversions (kcg_lit_int64(0))
+#define INT_M_LOC_now_TM_conversions (kcg_lit_int32(0))
 
 /* TM_conversions::ENUM_M_LOC_now/ */
 #define ENUM_M_LOC_now_TM_conversions M_LOC_Now
@@ -2441,87 +2441,87 @@ extern const P058_section_int_T_TM P058_SECTIONS_DEFAULT;
   M_LOC_Every_LRBG_compliant_balise_group
 
 /* RBC_Messaging_Pkg::P58_L_PACKET_STATIC_PART/ */
-#define P58_L_PACKET_STATIC_PART_RBC_Messaging_Pkg (kcg_lit_int64(56))
+#define P58_L_PACKET_STATIC_PART_RBC_Messaging_Pkg (kcg_lit_int32(56))
 
 /* RBC_Messaging_Pkg::P58_L_PACKET_D_LOC_Q_LGTLOC/ */
-#define P58_L_PACKET_D_LOC_Q_LGTLOC_RBC_Messaging_Pkg (kcg_lit_int64(16))
+#define P58_L_PACKET_D_LOC_Q_LGTLOC_RBC_Messaging_Pkg (kcg_lit_int32(16))
 
 /* RBC_Messaging_Pkg::P57_L_PACKET/ */
-#define P57_L_PACKET_RBC_Messaging_Pkg (kcg_lit_int64(49))
+#define P57_L_PACKET_RBC_Messaging_Pkg (kcg_lit_int32(49))
 
 /* TM::DEFAULT_P058_sections_array_flat/ */
 extern const P058_sections_array_flat_T_TM DEFAULT_P058_sections_array_flat_TM;
 
 /* TM::DIM_MaxElementsPacket058/ */
 #define DIM_MaxElementsPacket058_TM                                           \
-  (kcg_lit_int64(32) * kcg_lit_int64(2) + kcg_lit_int64(8))
+  (kcg_lit_int32(32) * kcg_lit_int32(2) + kcg_lit_int32(8))
 
 /* TM::DIM_MaxElementsPacket042/ */
-#define DIM_MaxElementsPacket042_TM (kcg_lit_int64(8))
+#define DIM_MaxElementsPacket042_TM (kcg_lit_int32(8))
 
 /* TM::DIM_MaxElementsPacket057/ */
-#define DIM_MaxElementsPacket057_TM (kcg_lit_int64(6))
+#define DIM_MaxElementsPacket057_TM (kcg_lit_int32(6))
 
 /* TM::DEFAULT_P021_sections_array_flat/ */
 extern const P021_sections_array_flat_T_TM DEFAULT_P021_sections_array_flat_TM;
 
 /* TM::DIM_MaxElementsPacket021/ */
 #define DIM_MaxElementsPacket021_TM                                           \
-  ((kcg_lit_int64(32) + kcg_lit_int64(1)) * kcg_lit_int64(3) + kcg_lit_int64( \
-      4) + kcg_lit_int64(1))
+  ((kcg_lit_int32(32) + kcg_lit_int32(1)) * kcg_lit_int32(3) + kcg_lit_int32( \
+      4) + kcg_lit_int32(1))
 
 /* TM::DEFAULT_P015_sections_array_flat/ */
 extern const P015_sections_array_flat_T_TM DEFAULT_P015_sections_array_flat_TM;
 
 /* TM::DIM_MaxElementsPacket015/ */
 #define DIM_MaxElementsPacket015_TM                                           \
-  (kcg_lit_int64(32) * kcg_lit_int64(4) + kcg_lit_int64(15) + kcg_lit_int64(1) +\
-    kcg_lit_int64(6))
+  (kcg_lit_int32(32) * kcg_lit_int32(4) + kcg_lit_int32(15) + kcg_lit_int32(1) +\
+    kcg_lit_int32(6))
 
 /* TM::DEFAULT_P005_sections_array_flat/ */
 extern const P005_sections_array_flat_T_TM DEFAULT_P005_sections_array_flat_TM;
 
 /* TM::INT_M_VERSION_2_0/ */
-#define INT_M_VERSION_2_0_TM (kcg_lit_int64(32))
+#define INT_M_VERSION_2_0_TM (kcg_lit_int32(32))
 
 /* TM::DIM_MaxElementsPacket063/ */
 #define DIM_MaxElementsPacket063_TM                                           \
-  (kcg_lit_int64(32) * kcg_lit_int64(3) + kcg_lit_int64(4))
+  (kcg_lit_int32(32) * kcg_lit_int32(3) + kcg_lit_int32(4))
 
 /* TM_baseline2::DEFAULT_P027V1_sections_array_qdiff_flat/ */
 extern const P027V1_sections_array_flat_qdiff_T_TM_baseline2 DEFAULT_P027V1_sections_array_qdiff_flat_TM_baseline2;
 
 /* TM::DIM_MaxElementsPacket027v1_section/ */
 #define DIM_MaxElementsPacket027v1_section_TM                                 \
-  (kcg_lit_int64(32) * kcg_lit_int64(2) + kcg_lit_int64(4))
+  (kcg_lit_int32(32) * kcg_lit_int32(2) + kcg_lit_int32(4))
 
 /* TM::DIM_MaxElementsPacket027v1_body/ */
-#define DIM_MaxElementsPacket027v1_body_TM (kcg_lit_int64(6))
+#define DIM_MaxElementsPacket027v1_body_TM (kcg_lit_int32(6))
 
 /* TM_lib_internal::DIM_offset_metadata_q_dir/ */
-#define DIM_offset_metadata_q_dir_TM_lib_internal (kcg_lit_int64(100000))
+#define DIM_offset_metadata_q_dir_TM_lib_internal (kcg_lit_int32(100000))
 
 /* TM_lib_internal::DIM_offset_metadata_id/ */
-#define DIM_offset_metadata_id_TM_lib_internal (kcg_lit_int64(1))
+#define DIM_offset_metadata_id_TM_lib_internal (kcg_lit_int32(1))
 
 /* TM_lib_internal::DIM_offset_metadata_m_version/ */
-#define DIM_offset_metadata_m_version_TM_lib_internal (kcg_lit_int64(1000))
+#define DIM_offset_metadata_m_version_TM_lib_internal (kcg_lit_int32(1000))
 
 /* TM_lib_internal::DIM_offset_metadata_nid_packet/ */
-#define DIM_offset_metadata_nid_packet_TM_lib_internal (kcg_lit_int64(1000000))
+#define DIM_offset_metadata_nid_packet_TM_lib_internal (kcg_lit_int32(1000000))
 
 /* TM::ERROR_nid_packet/ */
-#define ERROR_nid_packet_TM (kcg_lit_int64(-1))
+#define ERROR_nid_packet_TM (kcg_lit_int32(-1))
 
 /* TM_baseline2::DIM_MaxElementsPacket003V1/ */
 #define DIM_MaxElementsPacket003V1_TM_baseline2                               \
-  (kcg_lit_int64(32) * kcg_lit_int64(1) + kcg_lit_int64(6) + kcg_lit_int64(18))
+  (kcg_lit_int32(32) * kcg_lit_int32(1) + kcg_lit_int32(6) + kcg_lit_int32(18))
 
 /* TM::INT_M_VERSION_1_0/ */
-#define INT_M_VERSION_1_0_TM (kcg_lit_int64(16))
+#define INT_M_VERSION_1_0_TM (kcg_lit_int32(16))
 
 /* TM::DIM_MaxRMessages/ */
-#define DIM_MaxRMessages_TM (kcg_lit_int64(30))
+#define DIM_MaxRMessages_TM (kcg_lit_int32(30))
 
 /* TM::DEFAULT_Headers/ */
 extern const Metadata_T_Common_Types_Pkg DEFAULT_Headers_TM;
@@ -2546,25 +2546,25 @@ extern const P021_trackside_int_T_TM P021_DEFAULT;
 extern const P027V1_trackside_int_T_TM_baseline2 P027_DEFAULT;
 
 /* D_EMERGENCYSTOP_DEFAULT/ */
-#define D_EMERGENCYSTOP_DEFAULT (kcg_lit_int64(0))
+#define D_EMERGENCYSTOP_DEFAULT (kcg_lit_int32(0))
 
 /* Q_DIR_DEFAULT/ */
 #define Q_DIR_DEFAULT Q_DIR_Reverse
 
 /* D_REF_DEFAULT/ */
-#define D_REF_DEFAULT (kcg_lit_int64(0))
+#define D_REF_DEFAULT (kcg_lit_int32(0))
 
 /* Q_SCALE_DEFAULT/ */
 #define Q_SCALE_DEFAULT Q_SCALE_10_cm_scale
 
 /* T_NVCONTACT_DEFAULT/ */
-#define T_NVCONTACT_DEFAULT (kcg_lit_int64(0))
+#define T_NVCONTACT_DEFAULT (kcg_lit_int32(0))
 
 /* T_NVCONTACT_UNLIMITED/ */
-#define T_NVCONTACT_UNLIMITED (kcg_lit_int64(255))
+#define T_NVCONTACT_UNLIMITED (kcg_lit_int32(255))
 
 /* T_NVCONTACT_FACTOR/ */
-#define T_NVCONTACT_FACTOR (kcg_lit_int64(75))
+#define T_NVCONTACT_FACTOR (kcg_lit_int32(75))
 
 /* P042_RequestSessionTermination/ */
 extern const P042_trackside_int_T_TM P042_RequestSessionTermination;
@@ -2576,7 +2576,7 @@ extern const P058_trackside_int_T_TM P058_DEFAULT;
 extern const P057_trackside_int_T_TM P057_DEFAULT;
 
 /* NID_EM_DEFAULT/ */
-#define NID_EM_DEFAULT (kcg_lit_int64(0))
+#define NID_EM_DEFAULT (kcg_lit_int32(0))
 
 /* RADIO_TRACK_TRAIN_MESSAGE_QUEUE_DEFAULT/ */
 extern const _2_RadioTrackTrainMessageQueue_T _9_RADIO_TRACK_TRAIN_MESSAGE_QUEUE_DEFAULT;
@@ -2585,13 +2585,13 @@ extern const _2_RadioTrackTrainMessageQueue_T _9_RADIO_TRACK_TRAIN_MESSAGE_QUEUE
 extern const RadioTrackTrainMessageQueueEntry_T _8_RADIO_TRACK_TRAIN_MESSAGE_QUEUE_ENTRY_DEFAULT;
 
 /* T_TRAIN_DEFAULT/ */
-#define T_TRAIN_DEFAULT (kcg_lit_int64(0))
+#define T_TRAIN_DEFAULT (kcg_lit_int32(0))
 
 /* SESSION_MANAGEMENT_DEFAULT/ */
 extern const SessionManagement_T SESSION_MANAGEMENT_DEFAULT;
 
 /* T_TRAIN_MIN/ */
-#define T_TRAIN_MIN (kcg_lit_int64(0))
+#define T_TRAIN_MIN (kcg_lit_int32(0))
 
 /* P042_DEFAULT/ */
 extern const P042_trackside_int_T_TM P042_DEFAULT;
@@ -2603,20 +2603,20 @@ extern const P005_trackside_int_T_TM P005_DEFAULT;
 extern const P003V1_trackside_int_T_TM_baseline2 P003_DEFAULT;
 
 /* NID_LRBG_UNKNOWN/ */
-#define NID_LRBG_UNKNOWN (kcg_lit_int64(16777215))
+#define NID_LRBG_UNKNOWN (kcg_lit_int32(16777215))
 
 /* RBC_Diagnostic_Pkg::DIAG_ELEMENTS/ */
-#define DIAG_ELEMENTS_RBC_Diagnostic_Pkg (kcg_lit_int64(16))
+#define DIAG_ELEMENTS_RBC_Diagnostic_Pkg (kcg_lit_int32(16))
 
 /* RADIO_TRACK_TRAIN_MESSAGE_QUEUE_CAPACITY/ */
-#define RADIO_TRACK_TRAIN_MESSAGE_QUEUE_CAPACITY (kcg_lit_int64(8))
+#define RADIO_TRACK_TRAIN_MESSAGE_QUEUE_CAPACITY (kcg_lit_int32(8))
 
 /* CYCLE_TIME/ */
-#define CYCLE_TIME (kcg_lit_int64(20))
+#define CYCLE_TIME (kcg_lit_int32(20))
 
 /* Toolbox::cSimulationTractionBoost/ */
 #define cSimulationTractionBoost_Toolbox                                      \
-  (kcg_lit_float64(3.141592653589793238462643))
+  (kcg_lit_float32(3.141592653589793238462643))
 
 /* Toolbox::cOdometryFactors/ */
 extern const odometryFactors_T_Toolbox cOdometryFactors_Toolbox;
@@ -2634,16 +2634,16 @@ extern const API_RadioMsgHeader_T_API_Msg_Pkg cEmptyRadioMsgHeader_Toolbox;
 #define ENUM_Q_SCALE_10cm_TM_conversions Q_SCALE_10_cm_scale
 
 /* TM_conversions::INT_Q_SCALE_10m/ */
-#define INT_Q_SCALE_10m_TM_conversions (kcg_lit_int64(2))
+#define INT_Q_SCALE_10m_TM_conversions (kcg_lit_int32(2))
 
 /* TM_conversions::INT_Q_SCALE_1m/ */
-#define INT_Q_SCALE_1m_TM_conversions (kcg_lit_int64(1))
+#define INT_Q_SCALE_1m_TM_conversions (kcg_lit_int32(1))
 
 /* TM_conversions::INT_Q_SCALE_10cm/ */
-#define INT_Q_SCALE_10cm_TM_conversions (kcg_lit_int64(0))
+#define INT_Q_SCALE_10cm_TM_conversions (kcg_lit_int32(0))
 
 /* TM_conversions::DIM_D_max_neg/ */
-#define DIM_D_max_neg_TM_conversions (kcg_lit_int64(-32768))
+#define DIM_D_max_neg_TM_conversions (kcg_lit_int32(-32768))
 
 /* TM_conversions::ENUM_M_VERSION_Version_1_0/ */
 #define ENUM_M_VERSION_Version_1_0_TM_conversions                             \
@@ -2662,16 +2662,16 @@ extern const API_RadioMsgHeader_T_API_Msg_Pkg cEmptyRadioMsgHeader_Toolbox;
   M_VERSION_Previous_versions_according_to_e_g_EEIG_SRS_and_UIC_A200_SRS
 
 /* TM_conversions::INT_M_VERSION_2_0/ */
-#define INT_M_VERSION_2_0_TM_conversions (kcg_lit_int64(32))
+#define INT_M_VERSION_2_0_TM_conversions (kcg_lit_int32(32))
 
 /* TM_conversions::INT_M_VERSION_1_1/ */
-#define INT_M_VERSION_1_1_TM_conversions (kcg_lit_int64(17))
+#define INT_M_VERSION_1_1_TM_conversions (kcg_lit_int32(17))
 
 /* TM_conversions::INT_M_VERSION_1_0/ */
-#define INT_M_VERSION_1_0_TM_conversions (kcg_lit_int64(16))
+#define INT_M_VERSION_1_0_TM_conversions (kcg_lit_int32(16))
 
 /* TM_conversions::INT_M_VERSION_previous_M/ */
-#define INT_M_VERSION_previous_M_TM_conversions (kcg_lit_int64(15))
+#define INT_M_VERSION_previous_M_TM_conversions (kcg_lit_int32(15))
 
 /* TM_conversions::ENUM_Q_DIR_nominal/ */
 #define ENUM_Q_DIR_nominal_TM_conversions Q_DIR_Nominal
@@ -2683,13 +2683,13 @@ extern const API_RadioMsgHeader_T_API_Msg_Pkg cEmptyRadioMsgHeader_Toolbox;
 #define ENUM_Q_DIR_both_TM_conversions Q_DIR_Both_directions
 
 /* TM_conversions::INT_Q_DIR_both/ */
-#define INT_Q_DIR_both_TM_conversions (kcg_lit_int64(2))
+#define INT_Q_DIR_both_TM_conversions (kcg_lit_int32(2))
 
 /* TM_conversions::INT_Q_DIR_reverse/ */
-#define INT_Q_DIR_reverse_TM_conversions (kcg_lit_int64(0))
+#define INT_Q_DIR_reverse_TM_conversions (kcg_lit_int32(0))
 
 /* TM_conversions::INT_Q_DIR_nomiinal/ */
-#define INT_Q_DIR_nomiinal_TM_conversions (kcg_lit_int64(1))
+#define INT_Q_DIR_nomiinal_TM_conversions (kcg_lit_int32(1))
 
 /* TM_conversions::ENUM_M_ACK_no_acknowledgement/ */
 #define ENUM_M_ACK_no_acknowledgement_TM_conversions                          \
@@ -2699,19 +2699,19 @@ extern const API_RadioMsgHeader_T_API_Msg_Pkg cEmptyRadioMsgHeader_Toolbox;
 #define ENUM_M_ACK_acknowledgement_TM_conversions M_ACK_Acknowledgement_required
 
 /* TM_conversions::INT_M_ACK_no_acknowledgement/ */
-#define INT_M_ACK_no_acknowledgement_TM_conversions (kcg_lit_int64(0))
+#define INT_M_ACK_no_acknowledgement_TM_conversions (kcg_lit_int32(0))
 
 /* TM_conversions::INT_M_ACK_acknowledgement/ */
-#define INT_M_ACK_acknowledgement_TM_conversions (kcg_lit_int64(1))
+#define INT_M_ACK_acknowledgement_TM_conversions (kcg_lit_int32(1))
 
 /* TM_conversions::DIM_D_max/ */
-#define DIM_D_max_TM_conversions (kcg_lit_int64(32767))
+#define DIM_D_max_TM_conversions (kcg_lit_int32(32767))
 
 /* TM_conversions::DIM_D_min/ */
-#define DIM_D_min_TM_conversions (kcg_lit_int64(0))
+#define DIM_D_min_TM_conversions (kcg_lit_int32(0))
 
 /* Toolbox::cMobileRegistrationDelayCycles/ */
-#define cMobileRegistrationDelayCycles_Toolbox (kcg_lit_int64(5))
+#define cMobileRegistrationDelayCycles_Toolbox (kcg_lit_int32(5))
 
 /* Toolbox::cEmptyBtmMessageHeader/ */
 extern const API_TelegramHeader_T_API_Msg_Pkg cEmptyBtmMessageHeader_Toolbox;
@@ -2754,40 +2754,40 @@ extern const odometry_T_Obu_BasicTypes_Pkg cInitialOdometrieValue_Toolbox;
 extern const M_TrainTrack_Message_T_TM_radio_messages cEmptyRadioMessageToRBC_Message_nextGen_Toolbox;
 
 /* TM_radio_messages::DIM_max_payload/ */
-#define DIM_max_payload_TM_radio_messages (kcg_lit_int64(50))
+#define DIM_max_payload_TM_radio_messages (kcg_lit_int32(50))
 
 /* Toolbox::cMaximumAcceleration/ */
-#define cMaximumAcceleration_Toolbox (kcg_lit_float64(1.6))
+#define cMaximumAcceleration_Toolbox (kcg_lit_float32(1.6))
 
 /* Packet_TrainTypes_Pkg::cDigitsInTelephoneNumber/ */
-#define cDigitsInTelephoneNumber_Packet_TrainTypes_Pkg (kcg_lit_int64(15))
+#define cDigitsInTelephoneNumber_Packet_TrainTypes_Pkg (kcg_lit_int32(15))
 
 /* Packet_TrainTypes_Pkg::cmaxNumberTelephoneNumbers/ */
-#define cmaxNumberTelephoneNumbers_Packet_TrainTypes_Pkg (kcg_lit_int64(1))
+#define cmaxNumberTelephoneNumbers_Packet_TrainTypes_Pkg (kcg_lit_int32(1))
 
 /* Packet_TrainTypes_Pkg::cMaxTractionIdentity/ */
-#define cMaxTractionIdentity_Packet_TrainTypes_Pkg (kcg_lit_int64(4))
+#define cMaxTractionIdentity_Packet_TrainTypes_Pkg (kcg_lit_int32(4))
 
 /* Packet_TrainTypes_Pkg::cMaxNationalSystem/ */
-#define cMaxNationalSystem_Packet_TrainTypes_Pkg (kcg_lit_int64(5))
+#define cMaxNationalSystem_Packet_TrainTypes_Pkg (kcg_lit_int32(5))
 
 /* DYNAMIC_CONFIG_UTRECHT_AMSTERDAM/ */
 extern const DynamicConfig_T DYNAMIC_CONFIG_UTRECHT_AMSTERDAM;
 
 /* TM::DIM_N_ITER/ */
-#define DIM_N_ITER_TM (kcg_lit_int64(32))
+#define DIM_N_ITER_TM (kcg_lit_int32(32))
 
 /* RADIO_TRACK_TRAIN_MESSAGE_DEFAULT/ */
 extern const CompressedRadioMessage_TM RADIO_TRACK_TRAIN_MESSAGE_DEFAULT;
 
 /* Common_Types_Pkg::cDIM_MaxDataElementsInRMessage/ */
-#define cDIM_MaxDataElementsInRMessage_Common_Types_Pkg (kcg_lit_int64(500))
+#define cDIM_MaxDataElementsInRMessage_Common_Types_Pkg (kcg_lit_int32(500))
 
 /* Common_Types_Pkg::cMetadataArraySize/ */
-#define cMetadataArraySize_Common_Types_Pkg (kcg_lit_int64(30))
+#define cMetadataArraySize_Common_Types_Pkg (kcg_lit_int32(30))
 
 /* Common_Types_Pkg::cDIM_MaxRMessages/ */
-#define cDIM_MaxRMessages_Common_Types_Pkg (kcg_lit_int64(30))
+#define cDIM_MaxRMessages_Common_Types_Pkg (kcg_lit_int32(30))
 
 #endif /* _KCG_CONSTS_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********

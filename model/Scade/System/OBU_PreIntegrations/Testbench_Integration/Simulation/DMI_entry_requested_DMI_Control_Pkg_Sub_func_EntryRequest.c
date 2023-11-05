@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -98,7 +98,7 @@ void DMI_entry_requested_init_DMI_Control_Pkg_Sub_func_EntryRequest(
     outC->_L2[idx6] = kcg_true;
   }
   outC->_L1.valid = kcg_true;
-  outC->_L1.system_clock = kcg_lit_int64(0);
+  outC->_L1.system_clock = kcg_lit_int32(0);
   outC->_L1.entry_request = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   outC->LevelMenu = kcg_true;
   outC->hideMainmenu = kcg_true;
@@ -126,6 +126,6 @@ void DMI_entry_requested_reset_DMI_Control_Pkg_Sub_func_EntryRequest(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** DMI_entry_requested_DMI_Control_Pkg_Sub_func_EntryRequest.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

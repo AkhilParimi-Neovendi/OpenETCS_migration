@@ -64,28 +64,28 @@ void locReachedOrPassed_BasicLocationFunctions_Pkg(
 void locReachedOrPassed_init_BasicLocationFunctions_Pkg(
   outC_locReachedOrPassed_BasicLocationFunctions_Pkg *outC)
 {
-  outC->_L52 = kcg_lit_int64(0);
-  outC->_L51 = kcg_lit_int64(0);
+  outC->_L52 = kcg_lit_int32(0);
+  outC->_L51 = kcg_lit_int32(0);
   outC->_L50 = kcg_true;
   outC->_L48 = kcg_true;
   outC->_L47 = kcg_true;
-  outC->_L41 = kcg_lit_int64(0);
-  outC->_L42 = kcg_lit_int64(0);
-  outC->_L43 = kcg_lit_int64(0);
-  outC->_L40.nominal = kcg_lit_int64(0);
-  outC->_L40.d_min = kcg_lit_int64(0);
-  outC->_L40.d_max = kcg_lit_int64(0);
+  outC->_L41 = kcg_lit_int32(0);
+  outC->_L42 = kcg_lit_int32(0);
+  outC->_L43 = kcg_lit_int32(0);
+  outC->_L40.nominal = kcg_lit_int32(0);
+  outC->_L40.d_min = kcg_lit_int32(0);
+  outC->_L40.d_max = kcg_lit_int32(0);
   outC->_L39 = kcg_true;
   outC->_L38 = kcg_true;
-  outC->_L37.nominal = kcg_lit_int64(0);
-  outC->_L37.d_min = kcg_lit_int64(0);
-  outC->_L37.d_max = kcg_lit_int64(0);
-  outC->_L36.nominal = kcg_lit_int64(0);
-  outC->_L36.d_min = kcg_lit_int64(0);
-  outC->_L36.d_max = kcg_lit_int64(0);
-  outC->_L34.nominal = kcg_lit_int64(0);
-  outC->_L34.d_min = kcg_lit_int64(0);
-  outC->_L34.d_max = kcg_lit_int64(0);
+  outC->_L37.nominal = kcg_lit_int32(0);
+  outC->_L37.d_min = kcg_lit_int32(0);
+  outC->_L37.d_max = kcg_lit_int32(0);
+  outC->_L36.nominal = kcg_lit_int32(0);
+  outC->_L36.d_min = kcg_lit_int32(0);
+  outC->_L36.d_max = kcg_lit_int32(0);
+  outC->_L34.nominal = kcg_lit_int32(0);
+  outC->_L34.d_min = kcg_lit_int32(0);
+  outC->_L34.d_max = kcg_lit_int32(0);
   outC->_L35 = kcg_true;
   outC->hit = kcg_true;
   /* _L39=(digital::RisingEdge#1)/ */

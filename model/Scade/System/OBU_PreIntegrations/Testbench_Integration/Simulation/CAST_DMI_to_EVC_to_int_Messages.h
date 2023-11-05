@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _CAST_DMI_to_EVC_to_int_Messages_H_
 #define _CAST_DMI_to_EVC_to_int_Messages_H_
@@ -72,9 +72,9 @@ typedef struct {
   DMI_Icon_Ack_int_array_T_DATA /* _L27/ */ _L27;
   DMI_Level_Data_int_array_T_DATA /* _L28/ */ _L28;
   DMI_to_EVC_Message_int_T_API_DMI_Pkg /* _L29/ */ _L29;
-  kcg_int64 /* _L35/ */ _L35;
-  kcg_int64 /* _L34/ */ _L34;
-  kcg_int64 /* _L33/ */ _L33;
+  kcg_int32 /* _L35/ */ _L35;
+  kcg_int32 /* _L34/ */ _L34;
+  kcg_int32 /* _L33/ */ _L33;
   P044_other_data_TM_TrainToTrack /* _L32/ */ _L32;
 } outC_CAST_DMI_to_EVC_to_int_Messages;
 
@@ -100,6 +100,6 @@ extern void CAST_DMI_to_EVC_to_int_init_Messages(
 #endif /* _CAST_DMI_to_EVC_to_int_Messages_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_DMI_to_EVC_to_int_Messages.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

@@ -57,33 +57,33 @@ void Read_P046_Legacy_init_TM_specific(outC_Read_P046_Legacy_TM_specific *outC)
     outC->_L4[idx].valid = kcg_true;
     outC->_L4[idx].q_dir = Q_DIR_Reverse;
     outC->_L4[idx].m_leveltr = M_LEVELTR_Level_0;
-    outC->_L4[idx].nid_ntc = kcg_lit_int64(0);
+    outC->_L4[idx].nid_ntc = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 30; idx1++) {
-    outC->_L3.PacketHeaders[idx1].nid_packet = kcg_lit_int64(0);
+    outC->_L3.PacketHeaders[idx1].nid_packet = kcg_lit_int32(0);
     outC->_L3.PacketHeaders[idx1].q_dir = Q_DIR_Reverse;
     outC->_L3.PacketHeaders[idx1].valid = kcg_true;
-    outC->_L3.PacketHeaders[idx1].startAddress = kcg_lit_int64(0);
-    outC->_L3.PacketHeaders[idx1].endAddress = kcg_lit_int64(0);
+    outC->_L3.PacketHeaders[idx1].startAddress = kcg_lit_int32(0);
+    outC->_L3.PacketHeaders[idx1].endAddress = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 500; idx2++) {
-    outC->_L3.PacketData[idx2] = kcg_lit_int64(0);
+    outC->_L3.PacketData[idx2] = kcg_lit_int32(0);
   }
   outC->_L1 = kcg_true;
   outC->_L2.valid = kcg_true;
   outC->_L2.q_dir = Q_DIR_Reverse;
-  outC->_L2.n_iter = kcg_lit_int64(0);
+  outC->_L2.n_iter = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 33; idx3++) {
     outC->_L2.sections[idx3].valid = kcg_true;
     outC->_L2.sections[idx3].m_leveltr = M_LEVELTR_Level_0;
-    outC->_L2.sections[idx3].nid_ntc = kcg_lit_int64(0);
+    outC->_L2.sections[idx3].nid_ntc = kcg_lit_int32(0);
   }
   outC->every = kcg_true;
   for (idx4 = 0; idx4 < 7; idx4++) {
     outC->P046_legacy_out[idx4].valid = kcg_true;
     outC->P046_legacy_out[idx4].q_dir = Q_DIR_Reverse;
     outC->P046_legacy_out[idx4].m_leveltr = M_LEVELTR_Level_0;
-    outC->P046_legacy_out[idx4].nid_ntc = kcg_lit_int64(0);
+    outC->P046_legacy_out[idx4].nid_ntc = kcg_lit_int32(0);
   }
   /* _L4=(TM_conversions::C_P046_to_legacy_t#1)/ */
   C_P046_to_legacy_t_init_TM_conversions(&outC->Context_C_P046_to_legacy_t_1);

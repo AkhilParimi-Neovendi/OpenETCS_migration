@@ -47,7 +47,7 @@ typedef struct {
   TrainLocations_real_T_SDM_Types_Pkg /* _L89/ */ _L89;
   MA_section_real_T_TargetManagement_types /* _L97/ */ _L97;
   extractTargetsMRSPACC_TargetManagement_pkg /* _L98/ */ _L98;
-  kcg_int64 /* _L99/ */ _L99;
+  kcg_int32 /* _L99/ */ _L99;
   Target_list_MRSP_real_T_TargetManagement_types /* _L107/ */ _L107;
   Target_list_MRSP_real_T_TargetManagement_types /* _L121/ */ _L121;
   Target_real_T_TargetManagement_types /* _L14/ */ _L14;

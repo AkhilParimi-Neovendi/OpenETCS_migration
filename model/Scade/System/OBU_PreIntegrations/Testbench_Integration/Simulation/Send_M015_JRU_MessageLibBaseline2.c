@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -29,40 +29,40 @@ void Send_M015_JRU_init_MessageLibBaseline2(
   outC_Send_M015_JRU_MessageLibBaseline2 *outC)
 {
   outC->_L2.valid = kcg_true;
-  outC->_L2.nid_message = kcg_lit_int64(0);
-  outC->_L2.l_message = kcg_lit_int64(0);
-  outC->_L2.t_train = kcg_lit_int64(0);
-  outC->_L2.field1 = kcg_lit_int64(0);
-  outC->_L2.field2 = kcg_lit_int64(0);
-  outC->_L2.field3 = kcg_lit_int64(0);
-  outC->_L2.field4 = kcg_lit_int64(0);
-  outC->_L2.field5 = kcg_lit_int64(0);
-  outC->_L2.field6 = kcg_lit_int64(0);
-  outC->_L2.field7 = kcg_lit_int64(0);
-  outC->_L2.field8 = kcg_lit_int64(0);
+  outC->_L2.nid_message = kcg_lit_int32(0);
+  outC->_L2.l_message = kcg_lit_int32(0);
+  outC->_L2.t_train = kcg_lit_int32(0);
+  outC->_L2.field1 = kcg_lit_int32(0);
+  outC->_L2.field2 = kcg_lit_int32(0);
+  outC->_L2.field3 = kcg_lit_int32(0);
+  outC->_L2.field4 = kcg_lit_int32(0);
+  outC->_L2.field5 = kcg_lit_int32(0);
+  outC->_L2.field6 = kcg_lit_int32(0);
+  outC->_L2.field7 = kcg_lit_int32(0);
+  outC->_L2.field8 = kcg_lit_int32(0);
   outC->_L1.valid = kcg_true;
-  outC->_L1.nid_message = kcg_lit_int64(0);
-  outC->_L1.l_message = kcg_lit_int64(0);
-  outC->_L1.t_train = kcg_lit_int64(0);
-  outC->_L1.m_ack = kcg_lit_int64(0);
-  outC->_L1.nid_lrbg = kcg_lit_int64(0);
-  outC->_L1.nid_em = kcg_lit_int64(0);
-  outC->_L1.q_scale = kcg_lit_int64(0);
-  outC->_L1.d_ref = kcg_lit_int64(0);
-  outC->_L1.q_dir = kcg_lit_int64(0);
-  outC->_L1.d_emergencystop = kcg_lit_int64(0);
+  outC->_L1.nid_message = kcg_lit_int32(0);
+  outC->_L1.l_message = kcg_lit_int32(0);
+  outC->_L1.t_train = kcg_lit_int32(0);
+  outC->_L1.m_ack = kcg_lit_int32(0);
+  outC->_L1.nid_lrbg = kcg_lit_int32(0);
+  outC->_L1.nid_em = kcg_lit_int32(0);
+  outC->_L1.q_scale = kcg_lit_int32(0);
+  outC->_L1.d_ref = kcg_lit_int32(0);
+  outC->_L1.q_dir = kcg_lit_int32(0);
+  outC->_L1.d_emergencystop = kcg_lit_int32(0);
   outC->Message_Out.valid = kcg_true;
-  outC->Message_Out.nid_message = kcg_lit_int64(0);
-  outC->Message_Out.l_message = kcg_lit_int64(0);
-  outC->Message_Out.t_train = kcg_lit_int64(0);
-  outC->Message_Out.field1 = kcg_lit_int64(0);
-  outC->Message_Out.field2 = kcg_lit_int64(0);
-  outC->Message_Out.field3 = kcg_lit_int64(0);
-  outC->Message_Out.field4 = kcg_lit_int64(0);
-  outC->Message_Out.field5 = kcg_lit_int64(0);
-  outC->Message_Out.field6 = kcg_lit_int64(0);
-  outC->Message_Out.field7 = kcg_lit_int64(0);
-  outC->Message_Out.field8 = kcg_lit_int64(0);
+  outC->Message_Out.nid_message = kcg_lit_int32(0);
+  outC->Message_Out.l_message = kcg_lit_int32(0);
+  outC->Message_Out.t_train = kcg_lit_int32(0);
+  outC->Message_Out.field1 = kcg_lit_int32(0);
+  outC->Message_Out.field2 = kcg_lit_int32(0);
+  outC->Message_Out.field3 = kcg_lit_int32(0);
+  outC->Message_Out.field4 = kcg_lit_int32(0);
+  outC->Message_Out.field5 = kcg_lit_int32(0);
+  outC->Message_Out.field6 = kcg_lit_int32(0);
+  outC->Message_Out.field7 = kcg_lit_int32(0);
+  outC->Message_Out.field8 = kcg_lit_int32(0);
   /* _L2=(TM_RBC_conversions::C_M015_int_to_header#1)/ */
   C_M015_int_to_header_init_TM_RBC_conversions(
     &outC->Context_C_M015_int_to_header_1);
@@ -84,6 +84,6 @@ void Send_M015_JRU_reset_MessageLibBaseline2(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Send_M015_JRU_MessageLibBaseline2.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

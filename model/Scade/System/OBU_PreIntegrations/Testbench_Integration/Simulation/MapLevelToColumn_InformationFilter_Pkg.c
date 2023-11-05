@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -13,11 +13,11 @@ void MapLevelToColumn_InformationFilter_Pkg(
   M_LEVEL inLevel,
   outC_MapLevelToColumn_InformationFilter_Pkg *outC)
 {
-  outC->_L7 = kcg_lit_int64(4);
-  outC->_L6 = kcg_lit_int64(3);
-  outC->_L5 = kcg_lit_int64(2);
-  outC->_L4 = kcg_lit_int64(1);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(4);
+  outC->_L6 = kcg_lit_int32(3);
+  outC->_L5 = kcg_lit_int32(2);
+  outC->_L4 = kcg_lit_int32(1);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L1 = inLevel;
   /* _L2= */
   switch (outC->_L1) {
@@ -47,14 +47,14 @@ void MapLevelToColumn_InformationFilter_Pkg(
 void MapLevelToColumn_init_InformationFilter_Pkg(
   outC_MapLevelToColumn_InformationFilter_Pkg *outC)
 {
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
   outC->_L1 = M_LEVEL_Level_0;
-  outC->outColumn = kcg_lit_int64(0);
+  outC->outColumn = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -70,6 +70,6 @@ void MapLevelToColumn_reset_InformationFilter_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** MapLevelToColumn_InformationFilter_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

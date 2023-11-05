@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _RTM_Toolbox_TrainModules_H_
 #define _RTM_Toolbox_TrainModules_H_
@@ -19,8 +19,8 @@ typedef struct {
   mobileHWStatus_Type_MoRC_Pck /* mobileHWStatus/ */ mobileHWStatus;
   /* -----------------------  no local probes  ----------------------- */
   /* ----------------------- local memories  ------------------------- */
-  struct_485102 /* GSM_R_MobileManagement:Connecting:_L2= */ fby_4;
-  struct_485102 /* GSM_R_MobileManagement:Registering:_L2= */ fby_3;
+  struct_485091 /* GSM_R_MobileManagement:Connecting:_L2= */ fby_4;
+  struct_485091 /* GSM_R_MobileManagement:Registering:_L2= */ fby_3;
   kcg_bool init;
   kcg_bool init1;
   SSM_ST_GSM_R_MobileManagement /* GSM_R_MobileManagement: */ GSM_R_MobileManagement_state_nxt;
@@ -130,14 +130,14 @@ typedef struct {
   Radio_TrackTrain_Header_T_TM /* _L6/ */ _L6;
   API_RadioMsgHeader_T_API_Msg_Pkg /* _L29/ */ _L29;
   kcg_bool /* _L30/ */ _L30;
-  kcg_int64 /* _L31/ */ _L31;
+  kcg_int32 /* _L31/ */ _L31;
   kcg_bool /* _L32/ */ _L32;
   RadioMetadata_T_Common_Types_Pkg /* _L37/ */ _L37;
   Radio_TrackTrain_Header_T_TM_transitional /* _L51/ */ _L51;
   NID_MESSAGE /* _L52/ */ _L52;
   RBC_Id_T_Common_Types_Pkg /* _L53/ */ _L53;
   kcg_bool /* _L54/ */ _L54;
-  kcg_int64 /* _L55/ */ _L55;
+  kcg_int32 /* _L55/ */ _L55;
 } outC_RTM_Toolbox_TrainModules;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -173,8 +173,8 @@ typedef struct {
   SSM_ST_GSM_R_MobileManagement /* GSM_R_MobileManagement: */ Context_GSM_R_MobileManagement_state_nxt;
   kcg_bool _1_Context_init;
   kcg_bool Context_init;
-  struct_485102 /* GSM_R_MobileManagement:Registering:_L2= */ Context_fby_3;
-  struct_485102 /* GSM_R_MobileManagement:Connecting:_L2= */ Context_fby_4;
+  struct_485091 /* GSM_R_MobileManagement:Registering:_L2= */ Context_fby_3;
+  struct_485091 /* GSM_R_MobileManagement:Connecting:_L2= */ Context_fby_4;
   /* -----------------------  no local probes  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
 } SV_RTM_Toolbox_TrainModules;
@@ -191,6 +191,6 @@ extern void kcg_load_SV_RTM_Toolbox_TrainModules(
 #endif /* _RTM_Toolbox_TrainModules_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** RTM_Toolbox_TrainModules.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

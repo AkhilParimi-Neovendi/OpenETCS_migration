@@ -24,7 +24,7 @@
 						<Plug name="Brake" type="real" pathname="SCADE Display\TestPanel.rgfx" layer="control_panel"/>
 					</output>
 					<inputs>
-						<Variable name="Brake" type="float64" oid="!ed/3f6c/447E/9B0/53271fa837bc" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="Brake" type="float32" oid="!ed/3f6c/447E/9B0/53271fa837bc" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</inputs>
 				</MappingItem>
 				<MappingItem>
@@ -213,7 +213,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="TrainPosition_toDisplay" type="float64" oid="!ed/3bf4/776B/17A4/5326bc667f16" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="TrainPosition_toDisplay" type="float32" oid="!ed/3bf4/776B/17A4/5326bc667f16" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="TrainPosition" type="real" oid="9fab9a30-67a5-4322-81ac-6aaab0007355" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -221,7 +221,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="ETCS_LevelSymbol_toDisplay" type="int64" oid="!ed/14fdd/7990/1664/54d4e203705a" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="ETCS_LevelSymbol_toDisplay" type="int32" oid="!ed/14fdd/7990/1664/54d4e203705a" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="LevelSymbol" type="int" oid="96cd9bf6-ca62-466f-b232-6a49d06aa162" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -237,7 +237,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="TrainSpeed_toDisplay" type="float64" oid="!ed/3bfd/776B/17A4/5326bf417118" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="TrainSpeed_toDisplay" type="float32" oid="!ed/3bfd/776B/17A4/5326bf417118" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="TrainSpeed" type="real" oid="da2bfd60-d4af-4a08-bc36-fad7222de403" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -253,7 +253,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SpeedDigitOne_toDisplay" type="float64" oid="!ed/3bff/776B/17A4/5326bf74d46" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="SpeedDigitOne_toDisplay" type="float32" oid="!ed/3bff/776B/17A4/5326bf74d46" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="SpeedDigitOne" type="real" oid="39c387d8-eb30-4a75-9c41-ba09c27f2201" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -261,7 +261,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SpeedDigitTwo_toDisplay" type="float64" oid="!ed/3c00/776B/17A4/5326bf7e807" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="SpeedDigitTwo_toDisplay" type="float32" oid="!ed/3c00/776B/17A4/5326bf7e807" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="SpeedDigitTwo" type="real" oid="88d58878-8afe-474a-8f0f-91b6030a58fb" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -269,7 +269,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SpeedDigitThree_toDisplay" type="float64" oid="!ed/3c01/776B/17A4/5326bf857e63" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="SpeedDigitThree_toDisplay" type="float32" oid="!ed/3c01/776B/17A4/5326bf857e63" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="SpeedDigitThree" type="real" oid="42bd3539-0bd5-4bfa-987b-377dcfa2086b" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -277,7 +277,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SpeedTarget_toDisplay" type="float64" oid="!ed/3c03/776B/17A4/5326bfb0164a" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="SpeedTarget_toDisplay" type="float32" oid="!ed/3c03/776B/17A4/5326bfb0164a" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="Vtarget" type="real" oid="63d3b084-c683-4989-9d03-ce5cc6cff049" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -285,7 +285,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SpeedPermitted_toDisplay" type="float64" oid="!ed/3c02/776B/17A4/5326bf9135a6" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="SpeedPermitted_toDisplay" type="float32" oid="!ed/3c02/776B/17A4/5326bf9135a6" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="Vperm" type="real" oid="9ec456b6-9f36-4614-8764-20baafe20840" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -293,7 +293,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SpeedRelease_toDisplay" type="float64" oid="!ed/3c04/776B/17A4/5326bfbc20c7" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="SpeedRelease_toDisplay" type="float32" oid="!ed/3c04/776B/17A4/5326bfbc20c7" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="Vrelease" type="real" oid="ac259477-9510-4d5e-880d-de622b3d4d60" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -301,7 +301,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SpeedIntervention_toDisplay" type="float64" oid="!ed/1fef4/1867/F54/551556e0606e" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="SpeedIntervention_toDisplay" type="float32" oid="!ed/1fef4/1867/F54/551556e0606e" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="Vinterv" type="real" oid="b7e16333-d4c0-4df3-8689-77819b93222a" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -309,7 +309,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="DistanceToTarget_toDisplay" type="float64" oid="!ed/3dfb/5AE3/1D14/5326e76017bc" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="DistanceToTarget_toDisplay" type="float32" oid="!ed/3dfb/5AE3/1D14/5326e76017bc" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="DistanceToTarget" type="real" oid="546b14ea-4939-4a76-9f31-a9c2d8708049" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -325,7 +325,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="InterpolatedDistanceToTarget_toDisplay" type="float64" oid="!ed/7bb6/1528/B54/53270ead390a" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="InterpolatedDistanceToTarget_toDisplay" type="float32" oid="!ed/7bb6/1528/B54/53270ead390a" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="InterpolatedDistanceToTarget" type="real" oid="6300f7cd-67b7-497b-af79-99ec1f0f6dc0" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -341,7 +341,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="PointerColor_toDisplay" type="int64" oid="!ed/3f81/42B3/520/5405b95e7c90" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="PointerColor_toDisplay" type="int32" oid="!ed/3f81/42B3/520/5405b95e7c90" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="PointerColor" type="int" oid="5e2acf65-cc4c-4b9a-98c0-b37acb355627" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -349,7 +349,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="DriverID_Display_toDisplay" type="int64 ^MAXTextLength" oid="!ed/404c/17B4/1498/54bd1e447e8a" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="DriverID_Display_toDisplay" type="int32 ^MAXTextLength" oid="!ed/404c/17B4/1498/54bd1e447e8a" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="DriverID_Display" type="int ^9" oid="478ff4c5-e2fa-48bc-aeba-e0d7f91aabe3" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -357,7 +357,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="TrainRN_Display_toDisplay" type="int64 ^MAXTextLength" oid="!ed/14f0a/7922/4BC/54cf7fb87ed9" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="TrainRN_Display_toDisplay" type="int32 ^MAXTextLength" oid="!ed/14f0a/7922/4BC/54cf7fb87ed9" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="TrainRN_Display" type="int ^9" oid="d59d99ec-863b-4249-b082-552ff2abbd57" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -373,7 +373,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="ArrayButtonsEnabler_toDisplay" type="int64 ^DimButtonEnabler" oid="!ed/47c5/1772/E4C/54c7b7cc54d1" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="ArrayButtonsEnabler_toDisplay" type="int32 ^DimButtonEnabler" oid="!ed/47c5/1772/E4C/54c7b7cc54d1" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="buttonEnabler" type="int ^30" oid="52c1d351-f078-43fd-92c6-a955bbd6ab6d" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -381,7 +381,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="CloseButtonEnabler_toDisplay" type="int64" oid="!ed/14d44/100F/1614/54d4ca4d515d" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="CloseButtonEnabler_toDisplay" type="int32" oid="!ed/14d44/100F/1614/54d4ca4d515d" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="closeButtonEnabler" type="int" oid="83d889ce-1d42-4bcd-a6c1-6679a7272011" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -397,7 +397,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="RBC_status_symbol_toDisplay" type="int64" oid="!ed/161e9/3495/ED4/54d8b5d139bd" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="RBC_status_symbol_toDisplay" type="int32" oid="!ed/161e9/3495/ED4/54d8b5d139bd" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="RBC_status_symbol" type="int" oid="df3b7920-4196-492d-9d56-76e9798a77f9" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -413,7 +413,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="ModeSymbol_toDisplay" type="int64" oid="!ed/15b4e/5F11/110C/54db7c92678c" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="ModeSymbol_toDisplay" type="int32" oid="!ed/15b4e/5F11/110C/54db7c92678c" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="ModeSymbol" type="int" oid="4e24db17-2569-40e4-bfc5-d88b699a1b7a" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -429,7 +429,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="ArrayOfMsgIndex_toDisplay" type="int64 ^MaxNumDisplayMsg" oid="!ed/15673/5DBE/1754/54df940140a0" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="ArrayOfMsgIndex_toDisplay" type="int32 ^MaxNumDisplayMsg" oid="!ed/15673/5DBE/1754/54df940140a0" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="ArrayOfMsgIndex" type="int ^5" oid="1b966f6a-c638-49c0-bc49-3679d11af8b0" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -437,7 +437,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="trainCategoryIndex_toDisplay" type="int64" oid="!ed/19052/2BF6/186C/54e3476d1129" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="trainCategoryIndex_toDisplay" type="int32" oid="!ed/19052/2BF6/186C/54e3476d1129" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="indexTrainCategory" type="int" oid="bc29089b-619c-4d4f-858b-9c9bf5b2946c" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -445,7 +445,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="trainAxleloadIndex_toDisplay" type="int64" oid="!ed/1905b/2BF6/186C/54e34781d55" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="trainAxleloadIndex_toDisplay" type="int32" oid="!ed/1905b/2BF6/186C/54e34781d55" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="trainAxleLoad" type="int" oid="d78b7406-1bf6-416b-b860-459ad36af79b" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -453,7 +453,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="trainAirtightIndex_toDisplay" type="int64" oid="!ed/19064/2BF6/186C/54e347ad286d" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="trainAirtightIndex_toDisplay" type="int32" oid="!ed/19064/2BF6/186C/54e347ad286d" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="trainAirtightIndex" type="int" oid="1c3ad97f-ef05-4829-8d42-382eb9193380" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -461,7 +461,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="trainLoadingGougeIndex_toDisplay" type="int64" oid="!ed/1906d/2BF6/186C/54e347c447b7" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="trainLoadingGougeIndex_toDisplay" type="int32" oid="!ed/1906d/2BF6/186C/54e347c447b7" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="trainLoadingGaugeIndex" type="int" oid="8fd7b7e9-9465-4081-a271-f810918d49ef" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -469,7 +469,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="trainLenght_toDisplay" type="float64" oid="!ed/1907e/2BF6/186C/54e34833491" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="trainLenght_toDisplay" type="float32" oid="!ed/1907e/2BF6/186C/54e34833491" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="trainLenght" type="real" oid="bb13c2ec-835f-43f2-8735-f88b8239eeb9" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -477,7 +477,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="trainBrakePerc_toDisplay" type="float64" oid="!ed/19080/2BF6/186C/54e348485742" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="trainBrakePerc_toDisplay" type="float32" oid="!ed/19080/2BF6/186C/54e348485742" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="trainBrakePerc" type="real" oid="ec1e8879-16da-4ef0-ba28-46dc38641db7" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -485,7 +485,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="trainMaxspeed_toDisplay" type="float64" oid="!ed/1907f/2BF6/186C/54e348434b7" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="trainMaxspeed_toDisplay" type="float32" oid="!ed/1907f/2BF6/186C/54e348434b7" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="trainMaxSpeed" type="real" oid="e5c06866-53fc-4254-a467-79c91df6c80b" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -501,7 +501,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="traindataYesNoIndex_toDisplay" type="int64" oid="!ed/19483/2BF6/186C/54e35da24750" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="traindataYesNoIndex_toDisplay" type="int32" oid="!ed/19483/2BF6/186C/54e35da24750" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="traindataYesNoIndex" type="int" oid="bf7f3b16-8786-44d9-a5a0-23ca78ac6eb5" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -517,7 +517,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="closeButtonIndex_toDisplay" type="int64" oid="!ed/18ade/B5B/8F0/54ec994230a3" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="closeButtonIndex_toDisplay" type="int32" oid="!ed/18ade/B5B/8F0/54ec994230a3" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="closeButtonIndex" type="int" oid="4941be7e-0628-4698-8ca4-d918cf72afae" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -549,7 +549,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="iconGroupIndex_toDisplay" type="int64" oid="!ed/1e8f2/209A/1A74/54f433565c63" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="iconGroupIndex_toDisplay" type="int32" oid="!ed/1e8f2/209A/1A74/54f433565c63" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="iconGroupIndex" type="int" oid="7bde0440-de84-4817-aab3-46824ee12b8c" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -557,7 +557,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="levelSymbolAnnouncementIndex_toDisplay" type="int64" oid="!ed/1e908/209A/1A74/54f434a1443d" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="levelSymbolAnnouncementIndex_toDisplay" type="int32" oid="!ed/1e908/209A/1A74/54f434a1443d" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="LevelSymbolAnncouncement" type="int" oid="f6ea73fe-840c-4e0e-8b31-12c6e39e23e2" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -565,7 +565,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="modeSymbolAnnouncementIndex_toDisplay" type="int64" oid="!ed/1e909/209A/1A74/54f434a26779" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="modeSymbolAnnouncementIndex_toDisplay" type="int32" oid="!ed/1e909/209A/1A74/54f434a26779" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="ModeSymbolAnnouncement" type="int" oid="c18f89ef-a627-4790-a072-a08e1599611c" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -573,7 +573,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="hourGlassCounter_toDisplay" type="float64" oid="!ed/1ec7a/4E91/AF0/54f49778439e" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="hourGlassCounter_toDisplay" type="float32" oid="!ed/1ec7a/4E91/AF0/54f49778439e" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="translateHourGlass" type="real" oid="17511044-edff-4b50-8c64-d9b2422ac33e" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -589,7 +589,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="VpermColor_toDisplay" type="int64" oid="!ed/208fd/3A86/A9C/5508597c7db1" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="VpermColor_toDisplay" type="int32" oid="!ed/208fd/3A86/A9C/5508597c7db1" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="VpermColor" type="int" oid="0e93e24c-eb0e-49d4-a95a-4441ad3570b1" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -597,7 +597,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="VreleaseColor_toDisplay" type="int64" oid="!ed/208fe/3A86/A9C/5508597d732a" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="VreleaseColor_toDisplay" type="int32" oid="!ed/208fe/3A86/A9C/5508597d732a" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="VreleaseColor" type="int" oid="a6d46cfa-4a78-45d1-bda3-9b2b07ad9b1f" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -605,7 +605,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="VtargetColor_toDisplay" type="int64" oid="!ed/208ff/3A86/A9C/5508597e73f0" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="VtargetColor_toDisplay" type="int32" oid="!ed/208ff/3A86/A9C/5508597e73f0" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="VtargetColor" type="int" oid="8137f937-c743-4887-b5a7-bff97ba0a3a7" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -629,7 +629,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="vtarget_permColor_toDisplay" type="int64" oid="!ed/20112/171/1214/550980a6651d" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="vtarget_permColor_toDisplay" type="int32" oid="!ed/20112/171/1214/550980a6651d" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="Vtarget_permColor" type="int" oid="1b8c6d30-9a25-4b75-a1d8-a83bfe1b7966" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -637,7 +637,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="Vinterv_Color_toDisplay" type="int64" oid="!ed/1fe71/1867/F54/551555087054" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="Vinterv_Color_toDisplay" type="int32" oid="!ed/1fe71/1867/F54/551555087054" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="VintervColor" type="int" oid="27e155b7-efff-47f8-bfb9-d6794b46dd11" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -653,7 +653,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="ArrayLevelIndex_toDisplay" type="int64 ^12" oid="!ed/105b0/258C/DC8/554b67595cb5" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="ArrayLevelIndex_toDisplay" type="int32 ^12" oid="!ed/105b0/258C/DC8/554b67595cb5" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="ArrayLevelIndex" type="int ^12" oid="289083a1-27ea-4b83-af95-c866c867a775" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -661,7 +661,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="IndexLevel_toDisplay" type="int64" oid="!ed/1072d/757/1554/554cb02010eb" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="IndexLevel_toDisplay" type="int32" oid="!ed/1072d/757/1554/554cb02010eb" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="LevelIndex" type="int" oid="8c42030f-6fa6-46a9-a4d4-a65e4554e2b8" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -669,7 +669,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="IndexFixedMsg_toDisplay" type="int64 ^5" oid="!ed/176ba/11E0/7C4/556448244c" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="IndexFixedMsg_toDisplay" type="int32 ^5" oid="!ed/176ba/11E0/7C4/556448244c" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="IndexFixedMsg" type="int ^5" oid="bcd8ba80-6fda-4214-82b5-ae1cf4e1c557" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -685,7 +685,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="Array_hh_toDisplay" type="float64 ^5" oid="!ed/24048/44DE/1844/5567047c70f4" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="Array_hh_toDisplay" type="float32 ^5" oid="!ed/24048/44DE/1844/5567047c70f4" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="Array_hh" type="real ^5" oid="e7ba0a35-7f79-453a-89d0-93101acae77d" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -693,7 +693,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="Array_mm_toDisplay" type="float64 ^5" oid="!ed/24049/44DE/1844/55670487e2a" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="Array_mm_toDisplay" type="float32 ^5" oid="!ed/24049/44DE/1844/55670487e2a" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="Array_mm" type="real ^5" oid="444020fa-30fb-499c-851c-48e340da375d" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -709,7 +709,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="D_SPDI_SpeedChangeIndex_toDisplay" type="int64 ^MAX_SPEEDPROFILES_DMI" oid="!ed/18680/4E61/1398/5571a21277d3" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="D_SPDI_SpeedChangeIndex_toDisplay" type="int32 ^MAX_SPEEDPROFILES_DMI" oid="!ed/18680/4E61/1398/5571a21277d3" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="D_SPID_SpeedChangeIndex" type="int ^10" oid="bb41ef17-67a3-48cb-8d70-c3f59011da26" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -717,7 +717,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="D_SPDI_SpeedChangePosition_toDisplay" type="float64 ^MAX_SPEEDPROFILES_DMI" oid="!ed/1867f/4E61/1398/5571a2125083" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="D_SPDI_SpeedChangePosition_toDisplay" type="float32 ^MAX_SPEEDPROFILES_DMI" oid="!ed/1867f/4E61/1398/5571a2125083" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="D_SPDI_speedChangePosition" type="real ^10" oid="30b5e01f-f3cc-45a0-9d17-f6f246d33ae3" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -725,7 +725,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="D_PASP_IndicatorMarker_toDisplay" type="float64 ^1" oid="!ed/a259d/57/2410/563746815ab1" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="D_PASP_IndicatorMarker_toDisplay" type="float32 ^1" oid="!ed/a259d/57/2410/563746815ab1" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="D_PASP_IndicationMarkerPosition" type="real ^1" oid="e2ba87f9-5798-4a02-8186-e36a97890bcd" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -733,7 +733,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="D_PASP_Speeds_toDisplay" type="float64 ^4" oid="!ed/1867e/4E61/1398/5571a212715b" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="D_PASP_Speeds_toDisplay" type="float32 ^4" oid="!ed/1867e/4E61/1398/5571a212715b" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="D_PASP_FilteredSpeeds" type="real ^4" oid="52f43821-7088-428e-a5e4-1a49251c089b" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -741,7 +741,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="D_PASP_Distances_toDisplay" type="float64 ^4" oid="!ed/1867d/4E61/1398/5571a2121916" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="D_PASP_Distances_toDisplay" type="float32 ^4" oid="!ed/1867d/4E61/1398/5571a2121916" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="D_PASP_BreakPointPositions" type="real ^4" oid="e273b38c-2707-4044-8b63-deceef783833" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -757,7 +757,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="D_GradientEndInterpolated_toDisplay" type="float64 ^MAX_GRADIENTS" oid="!ed/1867b/4E61/1398/5571a2124125" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="D_GradientEndInterpolated_toDisplay" type="float32 ^MAX_GRADIENTS" oid="!ed/1867b/4E61/1398/5571a2124125" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="D_GradientEndInterpolated" type="real ^32" oid="86740870-ef73-4fa3-b475-6d3897811e43" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -766,7 +766,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="D_GradientStartInterpolated_toDisplay" type="float64 ^MAX_GRADIENTS" oid="!ed/1867a/4E61/1398/5571a21233a3" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="D_GradientStartInterpolated_toDisplay" type="float32 ^MAX_GRADIENTS" oid="!ed/1867a/4E61/1398/5571a21233a3" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="D_GradientsStartInterpolated" type="real ^32" oid="617dd6d9-78ea-4599-8d9e-be00dc78c39d" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -790,7 +790,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="D_GradientsValue_toDisplay" type="float64 ^MAX_GRADIENTS" oid="!ed/1915d/165B/D14/5578582a40b9" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="D_GradientsValue_toDisplay" type="float32 ^MAX_GRADIENTS" oid="!ed/1915d/165B/D14/5578582a40b9" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="D_GradientsValue" type="real ^32" oid="0c200ef4-873a-42f2-b827-73f20031399a" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -798,7 +798,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="ScrollDownEnableTypeIndex" type="int64" oid="!ed/a2a2f/5AE8/4F0/564d9317409c" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="ScrollDownEnableTypeIndex" type="int32" oid="!ed/a2a2f/5AE8/4F0/564d9317409c" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="scrollDownEnableTypeIndex" type="int" oid="8aca2180-60dc-4632-abb9-413c2aed2327" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -806,7 +806,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="ScrollUpEnableTypeIndex" type="int64" oid="!ed/a2a2e/5AE8/4F0/564d93171c22" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="ScrollUpEnableTypeIndex" type="int32" oid="!ed/a2a2e/5AE8/4F0/564d93171c22" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="scrollUpEnableTypeIndex" type="int" oid="9efaf0ef-bb07-4cf0-beb4-be75b3d0b74b" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>
@@ -814,7 +814,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="TimeArray" type="float64 ^4" oid="!ed/a8505/9B9/4D10/564f03107834" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
+						<Variable name="TimeArray" type="float32 ^4" oid="!ed/a8505/9B9/4D10/564f03107834" instancepath="DMI_Control_Pkg::DMI_Controller/"/>
 					</output>
 					<inputs>
 						<Plug name="localTimeArray" type="real ^4" oid="f3dc2d3d-6fa1-4920-b3a4-86b9179ca241" pathname="SCADE Display\DMI.sgfx" layer="DMI" layerOid="b407b1a6-e1ce-4242-902a-855eafe548c8"/>

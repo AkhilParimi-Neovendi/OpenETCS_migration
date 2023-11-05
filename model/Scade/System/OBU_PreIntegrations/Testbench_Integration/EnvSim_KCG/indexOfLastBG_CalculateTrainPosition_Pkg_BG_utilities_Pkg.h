@@ -15,7 +15,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* indexOfBG/ */ indexOfBG;
+  kcg_int32 /* indexOfBG/ */ indexOfBG;
   kcg_bool /* BG_found/ */ BG_found;
   kcg_bool /* indexValid/ */ indexValid;
   /* -----------------------  no local probes  ----------------------- */
@@ -25,12 +25,12 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L1/ */ _L1;
+  kcg_int32 /* _L3/ */ _L3;
   positionedBGs_T_TrainPosition_Types_Pck /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   kcg_bool /* _L6/ */ _L6;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L12/ */ _L12;
   kcg_bool /* _L10/ */ _L10;
   kcg_bool /* _L9/ */ _L9;
   kcg_bool /* _L8/ */ _L8;

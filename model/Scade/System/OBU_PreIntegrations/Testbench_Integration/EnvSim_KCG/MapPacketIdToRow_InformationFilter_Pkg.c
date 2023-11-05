@@ -10,7 +10,7 @@
 /* InformationFilter_Pkg::MapPacketIdToRow/ */
 void MapPacketIdToRow_InformationFilter_Pkg(
   /* inPacketId/ */
-  kcg_int64 inPacketId,
+  kcg_int32 inPacketId,
   outC_MapPacketIdToRow_InformationFilter_Pkg *outC)
 {
   outC->_L1 = inPacketId;
@@ -21,8 +21,8 @@ void MapPacketIdToRow_InformationFilter_Pkg(
 void MapPacketIdToRow_init_InformationFilter_Pkg(
   outC_MapPacketIdToRow_InformationFilter_Pkg *outC)
 {
-  outC->_L1 = kcg_lit_int64(0);
-  outC->outRow = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->outRow = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

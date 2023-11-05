@@ -112,11 +112,11 @@
 				</ed:Type>
 			</pragmas>
 		</Type>
-		<Type name="int64">
+		<Type name="int32">
 			<definition>
 				<NamedType>
 					<type>
-						<TypeRef name="int64"/>
+						<TypeRef name="int32"/>
 					</type>
 				</NamedType>
 			</definition>
@@ -128,7 +128,7 @@
 			<definition>
 				<NamedType>
 					<type>
-						<TypeRef name="float64"/>
+						<TypeRef name="float32"/>
 					</type>
 				</NamedType>
 			</definition>

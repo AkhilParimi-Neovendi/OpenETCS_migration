@@ -21,15 +21,15 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L2/ */ _L2;
   GradientProfile_real_t_SDM_GradientAcceleration_types /* _L1/ */ _L1;
   Gradient_section_real_t_SDM_GradientAcceleration_types /* _L4/ */ _L4;
   kcg_bool /* _L5/ */ _L5;
   Gradient_section_real_t_SDM_GradientAcceleration_types /* _L6/ */ _L6;
-  kcg_float64 /* _L7/ */ _L7;
-  kcg_float64 /* _L8/ */ _L8;
-  kcg_int64 /* _L9/ */ _L9;
+  kcg_float32 /* _L7/ */ _L7;
+  kcg_float32 /* _L8/ */ _L8;
+  kcg_int32 /* _L9/ */ _L9;
 } outC_selectGradientOffset_SDM_GradientAcceleration_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -38,9 +38,9 @@ extern void selectGradientOffset_SDM_GradientAcceleration_Pkg(
   /* GradientProfile/ */
   GradientProfile_real_t_SDM_GradientAcceleration_types *GradientProfile,
   /* Index/ */
-  kcg_int64 Index,
+  kcg_int32 Index,
   /* Offset/ */
-  kcg_int64 Offset,
+  kcg_int32 Offset,
   outC_selectGradientOffset_SDM_GradientAcceleration_Pkg *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

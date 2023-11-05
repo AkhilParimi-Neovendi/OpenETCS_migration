@@ -29,9 +29,9 @@ typedef struct {
   NID_LRBG /* _L1/ */ _L1;
   NID_C /* _L2/ */ _L2;
   NID_BG /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L7/ */ _L7;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L7/ */ _L7;
   NID_LRBG /* _L6/ */ _L6;
 } outC_DECODE_NID_LRBG_TM_conversions;
 

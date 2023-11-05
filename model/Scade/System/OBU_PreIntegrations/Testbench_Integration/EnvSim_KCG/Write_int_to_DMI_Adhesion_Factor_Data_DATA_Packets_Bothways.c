@@ -19,7 +19,7 @@ void Write_int_to_DMI_Adhesion_Factor_Data_DATA_Packets_Bothways(
     &outC->_L8,
     dmi_adhesion_factor_data_int);
   outC->_L12 = outC->_L8[0];
-  outC->_L13 = kcg_lit_int64(1);
+  outC->_L13 = kcg_lit_int32(1);
   outC->_L14 = outC->_L13 == outC->_L12;
   outC->every = outC->_L14;
   if (outC->every) {
@@ -57,20 +57,20 @@ void Write_int_to_DMI_Adhesion_Factor_Data_init_DATA_Packets_Bothways(
   static kcg_size idx;
 
   outC->_L15.valid = kcg_true;
-  outC->_L15.systemTime = kcg_lit_int64(0);
+  outC->_L15.systemTime = kcg_lit_int32(0);
   outC->_L15.adhesionFactor = M_ADHESION_Slippery_rail;
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
   outC->_L14 = kcg_true;
   outC->_L11.valid = kcg_true;
-  outC->_L11.systemTime = kcg_lit_int64(0);
+  outC->_L11.systemTime = kcg_lit_int32(0);
   outC->_L11.adhesionFactor = M_ADHESION_Slippery_rail;
   for (idx = 0; idx < 3; idx++) {
-    outC->_L8[idx] = kcg_lit_int64(0);
+    outC->_L8[idx] = kcg_lit_int32(0);
   }
   outC->every = kcg_true;
   outC->dmi_adhesion_factor_data_ct.valid = kcg_true;
-  outC->dmi_adhesion_factor_data_ct.systemTime = kcg_lit_int64(0);
+  outC->dmi_adhesion_factor_data_ct.systemTime = kcg_lit_int32(0);
   outC->dmi_adhesion_factor_data_ct.adhesionFactor = M_ADHESION_Slippery_rail;
   /* _L11=(DATA::Packets::Bothways::C_int_to_DMI_Adhesion_Factor_Data#1)/ */
   C_int_to_DMI_Adhesion_Factor_Data_init_DATA_Packets_Bothways(

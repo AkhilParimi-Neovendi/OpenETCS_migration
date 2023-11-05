@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _Build_RBC_LRBG_431_D_00410_2_M015_AmsterdamUtrechtL2_Sheet14_Maarssen_RBC_H_
 #define _Build_RBC_LRBG_431_D_00410_2_M015_AmsterdamUtrechtL2_Sheet14_Maarssen_RBC_H_
@@ -57,6 +57,6 @@ extern void Build_RBC_LRBG_431_D_00410_2_M015_init_AmsterdamUtrechtL2_Sheet14_Ma
 #endif /* _Build_RBC_LRBG_431_D_00410_2_M015_AmsterdamUtrechtL2_Sheet14_Maarssen_RBC_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Build_RBC_LRBG_431_D_00410_2_M015_AmsterdamUtrechtL2_Sheet14_Maarssen_RBC.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

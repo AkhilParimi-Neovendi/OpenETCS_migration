@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -90,7 +90,7 @@ void DMI_menu_req_To_ButtonEnabler_DMI_Control_Pkg_Sub_func_MenuRequest(
     outC->_L37[idx] =
       outC->Context_ButtonMask_to_buttonIndex_iterator_1[idx].valueout;
   }
-  kcg_copy_array_int64_30(&outC->ButtonEnabler, &outC->_L37);
+  kcg_copy_array_int32_30(&outC->ButtonEnabler, &outC->_L37);
 }
 
 #ifndef KCG_USER_DEFINED_INIT
@@ -103,7 +103,7 @@ void DMI_menu_req_To_ButtonEnabler_init_DMI_Control_Pkg_Sub_func_MenuRequest(
   static kcg_size idx3;
 
   for (idx1 = 0; idx1 < 30; idx1++) {
-    outC->_L37[idx1] = kcg_lit_int64(0);
+    outC->_L37[idx1] = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 30; idx2++) {
     outC->_L36[idx2] = kcg_true;
@@ -169,7 +169,7 @@ void DMI_menu_req_To_ButtonEnabler_init_DMI_Control_Pkg_Sub_func_MenuRequest(
   outC->_L2.Menu_button_Set_VBC = kcg_true;
   outC->_L2.Menu_button_Remove_VBC = kcg_true;
   outC->_L1.valid = kcg_true;
-  outC->_L1.system_clock = kcg_lit_int64(0);
+  outC->_L1.system_clock = kcg_lit_int32(0);
   outC->_L1.available_menu.Menu_button_start_of_mission = kcg_true;
   outC->_L1.available_menu.Menu_button_shunting = kcg_true;
   outC->_L1.available_menu.Menu_button_shunting_exit = kcg_true;
@@ -201,7 +201,7 @@ void DMI_menu_req_To_ButtonEnabler_init_DMI_Control_Pkg_Sub_func_MenuRequest(
   outC->_L1.available_menu.Menu_button_Set_VBC = kcg_true;
   outC->_L1.available_menu.Menu_button_Remove_VBC = kcg_true;
   for (idx3 = 0; idx3 < 30; idx3++) {
-    outC->ButtonEnabler[idx3] = kcg_lit_int64(0);
+    outC->ButtonEnabler[idx3] = kcg_lit_int32(0);
   }
   for (idx = 0; idx < 30; idx++) {
     /* _L37=(DMI_Control_Pkg::Sub_func::MenuRequest::ButtonMask_to_buttonIndex_iterator#1)/ */
@@ -230,6 +230,6 @@ void DMI_menu_req_To_ButtonEnabler_reset_DMI_Control_Pkg_Sub_func_MenuRequest(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** DMI_menu_req_To_ButtonEnabler_DMI_Control_Pkg_Sub_func_MenuRequest.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

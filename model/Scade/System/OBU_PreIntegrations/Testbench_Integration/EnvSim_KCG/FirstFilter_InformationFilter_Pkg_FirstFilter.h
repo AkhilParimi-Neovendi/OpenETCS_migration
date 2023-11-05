@@ -46,7 +46,7 @@ typedef struct {
   array_bool_30 /* _L1/ */ _L1;
   _45_array /* _L46/ */ _L46;
   MsgSource_T_Common_Types_Pkg /* _L48/ */ _L48;
-  array_int64_30 /* _L49/ */ _L49;
+  array_int32_30 /* _L49/ */ _L49;
   _73_array /* _L45/ */ _L45;
   Radio_TrackTrain_Header_T_Radio_Types_Pkg /* _L82/ */ _L82;
   CompressedPackets_T_Common_Types_Pkg /* _L81/ */ _L81;
@@ -55,7 +55,7 @@ typedef struct {
   array_bool_30 /* _L108/ */ _L108;
   array_bool_30 /* _L110/ */ _L110;
   array_bool_30 /* _L111/ */ _L111;
-  array_int64_30 /* _L112/ */ _L112;
+  array_int32_30 /* _L112/ */ _L112;
   array_bool_30 /* _L113/ */ _L113;
   array_bool_30 /* _L114/ */ _L114;
   kcg_bool /* _L116/ */ _L116;
@@ -68,7 +68,7 @@ typedef struct {
   kcg_bool /* _L149/ */ _L149;
   kcg_bool /* _L150/ */ _L150;
   kcg_bool /* _L151/ */ _L151;
-  kcg_int64 /* _L152/ */ _L152;
+  kcg_int32 /* _L152/ */ _L152;
   kcg_bool /* _L153/ */ _L153;
   kcg_bool /* _L154/ */ _L154;
   kcg_bool /* _L155/ */ _L155;

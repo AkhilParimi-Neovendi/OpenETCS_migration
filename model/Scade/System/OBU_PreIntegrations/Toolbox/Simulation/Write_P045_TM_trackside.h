@@ -32,8 +32,8 @@ typedef struct {
   Metadata_T_Common_Types_Pkg /* _L4/ */ _L4;
   CompressedPacketData_T_Common_Types_Pkg /* _L10/ */ _L10;
   kcg_bool /* _L18/ */ _L18;
-  kcg_int64 /* _L21/ */ _L21;
-  kcg_int64 /* _L22/ */ _L22;
+  kcg_int32 /* _L21/ */ _L21;
+  kcg_int32 /* _L22/ */ _L22;
   CompressedPackets_T_Common_Types_Pkg /* _L39/ */ _L39;
   CompressedPackets_T_Common_Types_Pkg /* _L40/ */ _L40;
   CompressedPacketData_T_Common_Types_Pkg /* _L42/ */ _L42;

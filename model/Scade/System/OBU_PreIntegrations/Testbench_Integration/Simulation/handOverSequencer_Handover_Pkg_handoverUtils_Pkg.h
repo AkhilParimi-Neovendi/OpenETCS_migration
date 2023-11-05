@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _handOverSequencer_Handover_Pkg_handoverUtils_Pkg_H_
 #define _handOverSequencer_Handover_Pkg_handoverUtils_Pkg_H_
@@ -36,7 +36,7 @@ typedef struct {
   kcg_bool init;
   kcg_bool init1;
   kcg_bool init2;
-  struct_493015 /* @1/_L8/ */ _L8_Memory_1_struct;
+  struct_492780 /* @1/_L8/ */ _L8_Memory_1_struct;
   kcg_bool /* IfBlock1:then:establishSessionWithAcceptingRBCOrdered/ */ establishSessionWithAcceptingRBCOrdered_then_IfBlock1;
   msgFromTrack_T_RCM_MsgTypes_Pkg /* IfBlock1:then:p45_radioNetworkRegistrationOrder_2_handingOverRBC_loc/ */ p45_radioNetworkRegistrationOrder_2_handingOverRBC_loc_then_IfBlock1;
   kcg_bool /* IfBlock1:then:handOver_with_2_Sessions_SM: */ handOver_with_2_Sessions_SM_reset_nxt_then_IfBlock1;
@@ -101,18 +101,18 @@ typedef struct {
   kcg_bool /* IfBlock1: */ IfBlock1_clock;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  struct_493015 /* @1/Out/ */ Out_Memory_1_struct;
-  struct_493015 /* @1/InitVal/ */ InitVal_Memory_1_struct;
+  struct_492780 /* @1/Out/ */ Out_Memory_1_struct;
+  struct_492780 /* @1/InitVal/ */ InitVal_Memory_1_struct;
   kcg_bool /* @1/MemCond/ */ MemCond_Memory_1_struct;
   kcg_bool /* @1/Reset/ */ Reset_Memory_1_struct;
-  struct_493015 /* @1/M_Input/ */ M_Input_Memory_1_struct;
-  struct_493015 /* @1/_L9/ */ _L9_Memory_1_struct;
+  struct_492780 /* @1/M_Input/ */ M_Input_Memory_1_struct;
+  struct_492780 /* @1/_L9/ */ _L9_Memory_1_struct;
   kcg_bool /* @1/_L1/ */ _L1_Memory_1_struct;
-  struct_493015 /* @1/_L2/ */ _L2_Memory_1_struct;
+  struct_492780 /* @1/_L2/ */ _L2_Memory_1_struct;
   kcg_bool /* @1/_L3/ */ _L3_Memory_1_struct;
-  struct_493015 /* @1/_L5/ */ _L5_Memory_1_struct;
-  struct_493015 /* @1/_L6/ */ _L6_Memory_1_struct;
-  struct_493015 /* @1/_L7/ */ _L7_Memory_1_struct;
+  struct_492780 /* @1/_L5/ */ _L5_Memory_1_struct;
+  struct_492780 /* @1/_L6/ */ _L6_Memory_1_struct;
+  struct_492780 /* @1/_L7/ */ _L7_Memory_1_struct;
   SSM_TR_handOver_with_2_Sessions_SM_then_IfBlock1 /* IfBlock1:then:handOver_with_2_Sessions_SM: */ handOver_with_2_Sessions_SM_fired_then_IfBlock1;
   SSM_TR_handOver_with_2_Sessions_SM_then_IfBlock1 /* IfBlock1:then:handOver_with_2_Sessions_SM: */ handOver_with_2_Sessions_SM_fired_strong_then_IfBlock1;
   SSM_ST_handOver_with_2_Sessions_SM_then_IfBlock1 /* IfBlock1:then:handOver_with_2_Sessions_SM: */ handOver_with_2_Sessions_SM_state_act_then_IfBlock1;
@@ -404,7 +404,7 @@ typedef struct {
   kcg_bool /* IfBlock1:then:handOver_with_2_Sessions_SM: */ Context_handOver_with_2_Sessions_SM_reset_nxt;
   msgFromTrack_T_RCM_MsgTypes_Pkg /* IfBlock1:then:p45_radioNetworkRegistrationOrder_2_handingOverRBC_loc/ */ Context_p45_radioNetworkRegistrationOrder_2_handingOverRBC_loc;
   kcg_bool /* IfBlock1:then:establishSessionWithAcceptingRBCOrdered/ */ Context_establishSessionWithAcceptingRBCOrdered;
-  struct_493015 /* @1/_L8/ */ Context__L8_Memory_1;
+  struct_492780 /* @1/_L8/ */ Context__L8_Memory_1;
   kcg_bool _2_Context_init;
   kcg_bool _1_Context_init;
   kcg_bool Context_init;
@@ -433,6 +433,6 @@ extern void kcg_load_SV_handOverSequencer_Handover_Pkg_handoverUtils_Pkg(
 #endif /* _handOverSequencer_Handover_Pkg_handoverUtils_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** handOverSequencer_Handover_Pkg_handoverUtils_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

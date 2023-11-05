@@ -28,14 +28,14 @@ typedef struct {
   L_internal_Type_Obu_BasicTypes_Pkg /* _L5/ */ _L5;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L4/ */ _L4;
   G_internal_Type_Obu_BasicTypes_Pkg /* _L3/ */ _L3;
-  kcg_int64 /* _L7/ */ _L7;
+  kcg_int32 /* _L7/ */ _L7;
 } outC_copyGradientElement_manage_DMI_Output_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* manage_DMI_Output_Pkg::copyGradientElement/ */
 extern void copyGradientElement_manage_DMI_Output_Pkg(
   /* index/ */
-  kcg_int64 index,
+  kcg_int32 index,
   /* fromTrackAtlas/ */
   GradientProfile_for_DMI_section_t_TrackAtlasTypes *fromTrackAtlas,
   outC_copyGradientElement_manage_DMI_Output_Pkg *outC);

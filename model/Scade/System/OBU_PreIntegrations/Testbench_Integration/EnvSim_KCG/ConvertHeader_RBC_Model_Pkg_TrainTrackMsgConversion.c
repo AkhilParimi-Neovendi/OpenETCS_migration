@@ -33,8 +33,8 @@ void ConvertHeader_RBC_Model_Pkg_TrainTrackMsgConversion(
   static Q_MARQSTREASON q_marqstreason_partial;
   /* q_marqstreason/ */
   static Q_MARQSTREASON _5_q_marqstreason_partial;
-  static kcg_int64 noname;
-  static kcg_int64 _6_noname;
+  static kcg_int32 noname;
+  static kcg_int32 _6_noname;
 
   kcg_copy_M_TrainTrack_MessageHd_T_TM_radio_messages(&outC->_L1, newHeader);
   outC->_L21 = outC->_L1.field3;
@@ -43,7 +43,7 @@ void ConvertHeader_RBC_Model_Pkg_TrainTrackMsgConversion(
   _6_noname = outC->_L40;
   outC->_L27 = outC->_L1.nid_message;
   outC->nid_message = outC->_L27;
-  outC->Decode_NID_TEXTMESSAGE_clock = outC->nid_message == kcg_lit_int64(158);
+  outC->Decode_NID_TEXTMESSAGE_clock = outC->nid_message == kcg_lit_int32(158);
   if (outC->Decode_NID_TEXTMESSAGE_clock) {
   }
   else {
@@ -69,7 +69,7 @@ void ConvertHeader_RBC_Model_Pkg_TrainTrackMsgConversion(
     outC->nid_textmessage = _1_nid_textmessage_partial;
   }
   outC->_L39 = outC->nid_textmessage;
-  outC->Decode_Emergency_Stop_clock = outC->nid_message == kcg_lit_int64(147);
+  outC->Decode_Emergency_Stop_clock = outC->nid_message == kcg_lit_int32(147);
   if (outC->Decode_Emergency_Stop_clock) {
   }
   else {
@@ -114,9 +114,9 @@ void ConvertHeader_RBC_Model_Pkg_TrainTrackMsgConversion(
     outC->nid_em = _2_nid_em_partial;
   }
   outC->_L34 = outC->nid_em;
-  outC->Decode_xT_TRAIN_clock = (outC->nid_message == kcg_lit_int64(137)) |
-    (outC->nid_message == kcg_lit_int64(138)) | (outC->nid_message ==
-      kcg_lit_int64(146));
+  outC->Decode_xT_TRAIN_clock = (outC->nid_message == kcg_lit_int32(137)) |
+    (outC->nid_message == kcg_lit_int32(138)) | (outC->nid_message ==
+      kcg_lit_int32(146));
   /* Decode_xT_TRAIN: */
   if (outC->Decode_xT_TRAIN_clock) {
     outC->_L2_then_Decode_xT_TRAIN = outC->field1;
@@ -135,7 +135,7 @@ void ConvertHeader_RBC_Model_Pkg_TrainTrackMsgConversion(
     outC->xt_train = _4_xt_train_partial;
   }
   outC->_L32 = outC->xt_train;
-  outC->Decode_Q_MARQSTREASON_clock = outC->nid_message == kcg_lit_int64(132);
+  outC->Decode_Q_MARQSTREASON_clock = outC->nid_message == kcg_lit_int32(132);
   /* Decode_Q_MARQSTREASON: */
   if (outC->Decode_Q_MARQSTREASON_clock) {
     outC->_L2_then_Decode_Q_MARQSTREASON = outC->field1;
@@ -194,83 +194,83 @@ void ConvertHeader_RBC_Model_Pkg_TrainTrackMsgConversion(
 void ConvertHeader_init_RBC_Model_Pkg_TrainTrackMsgConversion(
   outC_ConvertHeader_RBC_Model_Pkg_TrainTrackMsgConversion *outC)
 {
-  outC->_L40 = kcg_lit_int64(0);
-  outC->_L39 = kcg_lit_int64(0);
+  outC->_L40 = kcg_lit_int32(0);
+  outC->_L39 = kcg_lit_int32(0);
   outC->_L36 =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
-  outC->_L34 = kcg_lit_int64(0);
-  outC->_L32 = kcg_lit_int64(0);
+  outC->_L34 = kcg_lit_int32(0);
+  outC->_L32 = kcg_lit_int32(0);
   outC->_L31 = Q_MARQSTREASON_Start_selected_by_driver;
-  outC->_L29 = kcg_lit_int64(0);
-  outC->_L21 = kcg_lit_int64(0);
-  outC->_L22 = kcg_lit_int64(0);
-  outC->_L23 = kcg_lit_int64(0);
-  outC->_L24 = kcg_lit_int64(0);
-  outC->_L25 = kcg_lit_int64(0);
-  outC->_L26 = kcg_lit_int64(0);
-  outC->_L27 = kcg_lit_int64(0);
+  outC->_L29 = kcg_lit_int32(0);
+  outC->_L21 = kcg_lit_int32(0);
+  outC->_L22 = kcg_lit_int32(0);
+  outC->_L23 = kcg_lit_int32(0);
+  outC->_L24 = kcg_lit_int32(0);
+  outC->_L25 = kcg_lit_int32(0);
+  outC->_L26 = kcg_lit_int32(0);
+  outC->_L27 = kcg_lit_int32(0);
   outC->_L28 = kcg_true;
-  outC->_L17 = kcg_lit_int64(0);
-  outC->_L16 = kcg_lit_int64(0);
+  outC->_L17 = kcg_lit_int32(0);
+  outC->_L16 = kcg_lit_int32(0);
   outC->_L10.present = kcg_true;
-  outC->_L10.nid_message = kcg_lit_int64(0);
-  outC->_L10.t_train = kcg_lit_int64(0);
-  outC->_L10.nid_engine = kcg_lit_int64(0);
+  outC->_L10.nid_message = kcg_lit_int32(0);
+  outC->_L10.t_train = kcg_lit_int32(0);
+  outC->_L10.nid_engine = kcg_lit_int32(0);
   outC->_L10.xQ_MARQSTREASON = Q_MARQSTREASON_Start_selected_by_driver;
-  outC->_L10.xT_TRAIN = kcg_lit_int64(0);
-  outC->_L10.xNID_EM = kcg_lit_int64(0);
+  outC->_L10.xT_TRAIN = kcg_lit_int32(0);
+  outC->_L10.xNID_EM = kcg_lit_int32(0);
   outC->_L10.xQ_EMERGENCYSTOP =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
-  outC->_L10.xNID_TEXTMESSAGE = kcg_lit_int64(0);
+  outC->_L10.xNID_TEXTMESSAGE = kcg_lit_int32(0);
   outC->_L1.valid = kcg_true;
-  outC->_L1.nid_message = kcg_lit_int64(0);
-  outC->_L1.l_message = kcg_lit_int64(0);
-  outC->_L1.t_train = kcg_lit_int64(0);
-  outC->_L1.nid_engine = kcg_lit_int64(0);
-  outC->_L1.field1 = kcg_lit_int64(0);
-  outC->_L1.field2 = kcg_lit_int64(0);
-  outC->_L1.field3 = kcg_lit_int64(0);
-  outC->nid_textmessage = kcg_lit_int64(0);
+  outC->_L1.nid_message = kcg_lit_int32(0);
+  outC->_L1.l_message = kcg_lit_int32(0);
+  outC->_L1.t_train = kcg_lit_int32(0);
+  outC->_L1.nid_engine = kcg_lit_int32(0);
+  outC->_L1.field1 = kcg_lit_int32(0);
+  outC->_L1.field2 = kcg_lit_int32(0);
+  outC->_L1.field3 = kcg_lit_int32(0);
+  outC->nid_textmessage = kcg_lit_int32(0);
   outC->q_emergencystop =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
-  outC->nid_em = kcg_lit_int64(0);
-  outC->xt_train = kcg_lit_int64(0);
-  outC->nid_message = kcg_lit_int64(0);
+  outC->nid_em = kcg_lit_int32(0);
+  outC->xt_train = kcg_lit_int32(0);
+  outC->nid_message = kcg_lit_int32(0);
   outC->q_marqstreason = Q_MARQSTREASON_Start_selected_by_driver;
-  outC->field3 = kcg_lit_int64(0);
-  outC->field2 = kcg_lit_int64(0);
-  outC->field1 = kcg_lit_int64(0);
+  outC->field3 = kcg_lit_int32(0);
+  outC->field2 = kcg_lit_int32(0);
+  outC->field1 = kcg_lit_int32(0);
   outC->Decode_Q_MARQSTREASON_clock = kcg_true;
   outC->Decode_xT_TRAIN_clock = kcg_true;
   outC->Decode_Emergency_Stop_clock = kcg_true;
   outC->Decode_NID_TEXTMESSAGE_clock = kcg_true;
   outC->_L1_else_Decode_Q_MARQSTREASON = Q_MARQSTREASON_Start_selected_by_driver;
   outC->_L1_then_Decode_Q_MARQSTREASON = Q_MARQSTREASON_Start_selected_by_driver;
-  outC->_L2_then_Decode_Q_MARQSTREASON = kcg_lit_int64(0);
-  outC->_L1_else_Decode_xT_TRAIN = kcg_lit_int64(0);
-  outC->_L1_then_Decode_xT_TRAIN = kcg_lit_int64(0);
-  outC->_L2_then_Decode_xT_TRAIN = kcg_lit_int64(0);
-  outC->_L1_else_Decode_Emergency_Stop = kcg_lit_int64(0);
+  outC->_L2_then_Decode_Q_MARQSTREASON = kcg_lit_int32(0);
+  outC->_L1_else_Decode_xT_TRAIN = kcg_lit_int32(0);
+  outC->_L1_then_Decode_xT_TRAIN = kcg_lit_int32(0);
+  outC->_L2_then_Decode_xT_TRAIN = kcg_lit_int32(0);
+  outC->_L1_else_Decode_Emergency_Stop = kcg_lit_int32(0);
   outC->_L2_else_Decode_Emergency_Stop =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
-  outC->_L1_then_Decode_Emergency_Stop = kcg_lit_int64(0);
-  outC->_L2_then_Decode_Emergency_Stop = kcg_lit_int64(0);
+  outC->_L1_then_Decode_Emergency_Stop = kcg_lit_int32(0);
+  outC->_L2_then_Decode_Emergency_Stop = kcg_lit_int32(0);
   outC->_L3_then_Decode_Emergency_Stop =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
-  outC->_L4_then_Decode_Emergency_Stop = kcg_lit_int64(0);
-  outC->_L1_else_Decode_NID_TEXTMESSAGE = kcg_lit_int64(0);
-  outC->_L1_then_Decode_NID_TEXTMESSAGE = kcg_lit_int64(0);
-  outC->_L2_then_Decode_NID_TEXTMESSAGE = kcg_lit_int64(0);
+  outC->_L4_then_Decode_Emergency_Stop = kcg_lit_int32(0);
+  outC->_L1_else_Decode_NID_TEXTMESSAGE = kcg_lit_int32(0);
+  outC->_L1_then_Decode_NID_TEXTMESSAGE = kcg_lit_int32(0);
+  outC->_L2_then_Decode_NID_TEXTMESSAGE = kcg_lit_int32(0);
   outC->oldHeader.present = kcg_true;
-  outC->oldHeader.nid_message = kcg_lit_int64(0);
-  outC->oldHeader.t_train = kcg_lit_int64(0);
-  outC->oldHeader.nid_engine = kcg_lit_int64(0);
+  outC->oldHeader.nid_message = kcg_lit_int32(0);
+  outC->oldHeader.t_train = kcg_lit_int32(0);
+  outC->oldHeader.nid_engine = kcg_lit_int32(0);
   outC->oldHeader.xQ_MARQSTREASON = Q_MARQSTREASON_Start_selected_by_driver;
-  outC->oldHeader.xT_TRAIN = kcg_lit_int64(0);
-  outC->oldHeader.xNID_EM = kcg_lit_int64(0);
+  outC->oldHeader.xT_TRAIN = kcg_lit_int32(0);
+  outC->oldHeader.xNID_EM = kcg_lit_int32(0);
   outC->oldHeader.xQ_EMERGENCYSTOP =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
-  outC->oldHeader.xNID_TEXTMESSAGE = kcg_lit_int64(0);
+  outC->oldHeader.xNID_TEXTMESSAGE = kcg_lit_int32(0);
   outC->present = kcg_true;
   /* _L16=(TM_conversions::CAST_Int_to_NID_MESSAGE#1)/ */
   CAST_Int_to_NID_MESSAGE_init_TM_conversions(

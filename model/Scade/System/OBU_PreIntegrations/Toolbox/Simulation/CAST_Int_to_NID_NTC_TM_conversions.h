@@ -21,10 +21,10 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L1/ */ _L1;
+  kcg_int32 /* _L5/ */ _L5;
   kcg_bool /* _L4/ */ _L4;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   kcg_bool /* _L2/ */ _L2;
 } outC_CAST_Int_to_NID_NTC_TM_conversions;
 
@@ -32,7 +32,7 @@ typedef struct {
 /* TM_conversions::CAST_Int_to_NID_NTC/ */
 extern void CAST_Int_to_NID_NTC_TM_conversions(
   /* nid_ntc_int/ */
-  kcg_int64 nid_ntc_int,
+  kcg_int32 nid_ntc_int,
   outC_CAST_Int_to_NID_NTC_TM_conversions *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

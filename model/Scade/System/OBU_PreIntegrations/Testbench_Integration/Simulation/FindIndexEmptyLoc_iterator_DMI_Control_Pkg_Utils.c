@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,15 +10,15 @@
 /* DMI_Control_Pkg::Utils::FindIndexEmptyLoc_iterator/ */
 void FindIndexEmptyLoc_iterator_DMI_Control_Pkg_Utils(
   /* index/ */
-  kcg_int64 index,
+  kcg_int32 index,
   /* Acc/ */
   kcg_bool Acc,
   /* in_digit_display/ */
-  kcg_int64 in_digit_display,
+  kcg_int32 in_digit_display,
   outC_FindIndexEmptyLoc_iterator_DMI_Control_Pkg_Utils *outC)
 {
   outC->_L30 = ASCII_space_DMI_Control_Pkg;
-  outC->_L22 = MAXTextLength_DMI_Control_Pkg - kcg_lit_int64(1);
+  outC->_L22 = MAXTextLength_DMI_Control_Pkg - kcg_lit_int32(1);
   outC->_L19 = index;
   outC->_L21 = outC->_L19 == outC->_L22;
   outC->_L1 = in_digit_display;
@@ -35,16 +35,16 @@ void FindIndexEmptyLoc_iterator_DMI_Control_Pkg_Utils(
 void FindIndexEmptyLoc_iterator_init_DMI_Control_Pkg_Utils(
   outC_FindIndexEmptyLoc_iterator_DMI_Control_Pkg_Utils *outC)
 {
-  outC->_L30 = kcg_lit_int64(0);
+  outC->_L30 = kcg_lit_int32(0);
   outC->_L29 = kcg_true;
   outC->_L25 = kcg_true;
-  outC->_L22 = kcg_lit_int64(0);
+  outC->_L22 = kcg_lit_int32(0);
   outC->_L21 = kcg_true;
   outC->_L17 = kcg_true;
-  outC->_L19 = kcg_lit_int64(0);
+  outC->_L19 = kcg_lit_int32(0);
   outC->_L3 = kcg_true;
   outC->_L7 = kcg_true;
-  outC->_L1 = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
   outC->accout = kcg_true;
   outC->condition = kcg_true;
 }
@@ -62,6 +62,6 @@ void FindIndexEmptyLoc_iterator_reset_DMI_Control_Pkg_Utils(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** FindIndexEmptyLoc_iterator_DMI_Control_Pkg_Utils.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

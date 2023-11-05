@@ -15,26 +15,26 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   L_internal_real_Type_SDM_Types_Pkg /* DistanceStepOut/ */ DistanceStepOut;
-  kcg_int64 /* DistanceStepIndexOut/ */ DistanceStepIndexOut;
+  kcg_int32 /* DistanceStepIndexOut/ */ DistanceStepIndexOut;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  array_int64_100 /* @1/_L86/ */ _L86_SearchIdxFloor_1;
-  array_float64_100 /* @1/_L74/ */ _L74_SearchIdxFloor_1;
-  array_int64_100 /* @1/_L84/ */ _L84_SearchIdxFloor_1;
+  array_int32_100 /* @1/_L86/ */ _L86_SearchIdxFloor_1;
+  array_float32_100 /* @1/_L74/ */ _L74_SearchIdxFloor_1;
+  array_int32_100 /* @1/_L84/ */ _L84_SearchIdxFloor_1;
   array_bool_100 /* @1/_L77/ */ _L77_SearchIdxFloor_1;
-  array_float64_100 /* @1/_L40/ */ _L40_SearchIdxFloor_1;
-  array_int64_100 /* @1/_L8/ */ _L8_SearchIdxFloor_1;
+  array_float32_100 /* @1/_L40/ */ _L40_SearchIdxFloor_1;
+  array_int32_100 /* @1/_L8/ */ _L8_SearchIdxFloor_1;
   L_internal_real_Type_SDM_Types_Pkg /* _L5/ */ _L5;
   ASafeDistanceDefinition_T_CalcBrakingCurves_types /* _L4/ */ _L4;
-  array_float64_100 /* _L3/ */ _L3;
-  kcg_int64 /* _L2/ */ _L2;
-  kcg_float64 /* _L7/ */ _L7;
-  kcg_float64 /* _L8/ */ _L8;
-  kcg_int64 /* _L1/ */ _L1;
+  array_float32_100 /* _L3/ */ _L3;
+  kcg_int32 /* _L2/ */ _L2;
+  kcg_float32 /* _L7/ */ _L7;
+  kcg_float32 /* _L8/ */ _L8;
+  kcg_int32 /* _L1/ */ _L1;
 } outC_getDistanceStepFromDistance_CalcBrakingCurves_Pkg_Step_Function_operators;
 
 /* ===========  node initialization and cycle functions  =========== */

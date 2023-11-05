@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -63,10 +63,10 @@ void InputF2Functions_init_Interfaces(outC_InputF2Functions_Interfaces *outC)
   outC->_L25.tNvContactError = kcg_true;
   outC->_L25.otherTimingError = kcg_true;
   outC->_L25.radioMessageConsistencyError = kcg_true;
-  outC->_L25.nid_c = kcg_lit_int64(0);
-  outC->_L25.nid_errorbg = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L14 = kcg_lit_int64(0);
+  outC->_L25.nid_c = kcg_lit_int32(0);
+  outC->_L25.nid_errorbg = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L14 = kcg_lit_int32(0);
   outC->_L15 = kcg_true;
   outC->_L16 = kcg_true;
   outC->_L17 = kcg_true;
@@ -81,8 +81,8 @@ void InputF2Functions_init_Interfaces(outC_InputF2Functions_Interfaces *outC)
   outC->_L1.Common_Errors.tNvContactError = kcg_true;
   outC->_L1.Common_Errors.otherTimingError = kcg_true;
   outC->_L1.Common_Errors.radioMessageConsistencyError = kcg_true;
-  outC->_L1.Common_Errors.nid_c = kcg_lit_int64(0);
-  outC->_L1.Common_Errors.nid_errorbg = kcg_lit_int64(0);
+  outC->_L1.Common_Errors.nid_c = kcg_lit_int32(0);
+  outC->_L1.Common_Errors.nid_errorbg = kcg_lit_int32(0);
   outC->_L1.Failure_Occured = kcg_true;
   outC->_L1.Continue_Shunting_Active = kcg_true;
   outC->_L1.Stop_Shunting_Stored = kcg_true;
@@ -106,6 +106,6 @@ void InputF2Functions_reset_Interfaces(outC_InputF2Functions_Interfaces *outC)
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** InputF2Functions_Interfaces.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

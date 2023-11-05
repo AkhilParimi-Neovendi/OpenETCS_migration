@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _Build_PosReport_ProvidePositionReport_Pkg_H_
 #define _Build_PosReport_ProvidePositionReport_Pkg_H_
@@ -39,7 +39,7 @@ typedef struct {
   kcg_bool every;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  _35_array /* _L10/ */ _L10;
+  _34_array /* _L10/ */ _L10;
   PT0_PositionReport_T_Packet_TrainTypes_Pkg /* _L26/ */ _L26;
   PT5_TrainRunningNumber_Packet_TrainTypes_Pkg /* _L25/ */ _L25;
   PT4_ErrorReporting_T_Packet_TrainTypes_Pkg /* _L24/ */ _L24;
@@ -80,7 +80,7 @@ extern void Build_PosReport_ProvidePositionReport_Pkg(
   /* in_packet1/ */
   PT1_PositionReport_2BG_T_Packet_TrainTypes_Pkg *in_packet1,
   /* errorVector/ */
-  _35_array *errorVector,
+  _34_array *errorVector,
   /* t_train/ */
   T_TRAIN t_train,
   outC_Build_PosReport_ProvidePositionReport_Pkg *outC);
@@ -100,6 +100,6 @@ extern void Build_PosReport_init_ProvidePositionReport_Pkg(
 #endif /* _Build_PosReport_ProvidePositionReport_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Build_PosReport_ProvidePositionReport_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

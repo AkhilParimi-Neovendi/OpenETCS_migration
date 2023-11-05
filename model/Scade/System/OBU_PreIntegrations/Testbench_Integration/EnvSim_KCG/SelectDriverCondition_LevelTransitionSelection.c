@@ -64,65 +64,65 @@ void SelectDriverCondition_init_LevelTransitionSelection(
 {
   outC->_L25.is_set = kcg_true;
   outC->_L25.transition.level = M_LEVEL_Level_0;
-  outC->_L25.transition.position = kcg_lit_int64(0);
+  outC->_L25.transition.position = kcg_lit_int32(0);
   outC->_L25.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L25.transition.immediateAck = kcg_true;
-  outC->_L25.transition.AckLength = kcg_lit_int64(0);
-  outC->_L25.LRBG = kcg_lit_int64(0);
-  outC->_L25.referenceLocation = kcg_lit_int64(0);
+  outC->_L25.transition.AckLength = kcg_lit_int32(0);
+  outC->_L25.LRBG = kcg_lit_int32(0);
+  outC->_L25.referenceLocation = kcg_lit_int32(0);
   outC->_L31 = kcg_true;
   outC->_L30 = kcg_true;
   outC->_L28 = kcg_true;
   outC->_L27 = kcg_true;
   outC->_L26.is_set = kcg_true;
   outC->_L26.transition.level = M_LEVEL_Level_0;
-  outC->_L26.transition.position = kcg_lit_int64(0);
+  outC->_L26.transition.position = kcg_lit_int32(0);
   outC->_L26.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L26.transition.immediateAck = kcg_true;
-  outC->_L26.transition.AckLength = kcg_lit_int64(0);
-  outC->_L26.LRBG = kcg_lit_int64(0);
-  outC->_L26.referenceLocation = kcg_lit_int64(0);
+  outC->_L26.transition.AckLength = kcg_lit_int32(0);
+  outC->_L26.LRBG = kcg_lit_int32(0);
+  outC->_L26.referenceLocation = kcg_lit_int32(0);
   outC->_L24.is_set = kcg_true;
   outC->_L24.transition.level = M_LEVEL_Level_0;
-  outC->_L24.transition.position = kcg_lit_int64(0);
+  outC->_L24.transition.position = kcg_lit_int32(0);
   outC->_L24.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L24.transition.immediateAck = kcg_true;
-  outC->_L24.transition.AckLength = kcg_lit_int64(0);
-  outC->_L24.LRBG = kcg_lit_int64(0);
-  outC->_L24.referenceLocation = kcg_lit_int64(0);
+  outC->_L24.transition.AckLength = kcg_lit_int32(0);
+  outC->_L24.LRBG = kcg_lit_int32(0);
+  outC->_L24.referenceLocation = kcg_lit_int32(0);
   outC->_L17 = M_LEVEL_Level_0;
-  outC->_L21 = kcg_lit_int64(0);
-  outC->_L20 = kcg_lit_int64(0);
+  outC->_L21 = kcg_lit_int32(0);
+  outC->_L20 = kcg_lit_int32(0);
   outC->_L19.level = M_LEVEL_Level_0;
-  outC->_L19.position = kcg_lit_int64(0);
+  outC->_L19.position = kcg_lit_int32(0);
   outC->_L19.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L19.immediateAck = kcg_true;
-  outC->_L19.AckLength = kcg_lit_int64(0);
+  outC->_L19.AckLength = kcg_lit_int32(0);
   outC->_L18 = kcg_true;
   outC->_L3.is_set = kcg_true;
   outC->_L3.transition.level = M_LEVEL_Level_0;
-  outC->_L3.transition.position = kcg_lit_int64(0);
+  outC->_L3.transition.position = kcg_lit_int32(0);
   outC->_L3.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->_L3.transition.immediateAck = kcg_true;
-  outC->_L3.transition.AckLength = kcg_lit_int64(0);
-  outC->_L3.LRBG = kcg_lit_int64(0);
-  outC->_L3.referenceLocation = kcg_lit_int64(0);
+  outC->_L3.transition.AckLength = kcg_lit_int32(0);
+  outC->_L3.LRBG = kcg_lit_int32(0);
+  outC->_L3.referenceLocation = kcg_lit_int32(0);
   outC->Driver_Transition_Level = M_LEVEL_Level_0;
   outC->Driver_Transition_Set = kcg_true;
   outC->driver_output_level_transition.is_set = kcg_true;
   outC->driver_output_level_transition.transition.level = M_LEVEL_Level_0;
-  outC->driver_output_level_transition.transition.position = kcg_lit_int64(0);
+  outC->driver_output_level_transition.transition.position = kcg_lit_int32(0);
   outC->driver_output_level_transition.transition.transitionType =
     M_TransitionType_Conditional_Level_And_Mode_Types_Pkg;
   outC->driver_output_level_transition.transition.immediateAck = kcg_true;
-  outC->driver_output_level_transition.transition.AckLength = kcg_lit_int64(0);
-  outC->driver_output_level_transition.LRBG = kcg_lit_int64(0);
-  outC->driver_output_level_transition.referenceLocation = kcg_lit_int64(0);
+  outC->driver_output_level_transition.transition.AckLength = kcg_lit_int32(0);
+  outC->driver_output_level_transition.LRBG = kcg_lit_int32(0);
+  outC->driver_output_level_transition.referenceLocation = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

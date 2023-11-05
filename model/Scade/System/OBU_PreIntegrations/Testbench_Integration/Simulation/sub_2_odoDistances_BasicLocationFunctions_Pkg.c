@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -42,41 +42,41 @@ void sub_2_odoDistances_BasicLocationFunctions_Pkg(
 void sub_2_odoDistances_init_BasicLocationFunctions_Pkg(
   outC_sub_2_odoDistances_BasicLocationFunctions_Pkg *outC)
 {
-  outC->_L31.nominal = kcg_lit_int64(0);
-  outC->_L31.d_min = kcg_lit_int64(0);
-  outC->_L31.d_max = kcg_lit_int64(0);
-  outC->_L24 = kcg_lit_int64(0);
-  outC->_L23 = kcg_lit_int64(0);
-  outC->_L18.o_nominal = kcg_lit_int64(0);
-  outC->_L18.o_min = kcg_lit_int64(0);
-  outC->_L18.o_max = kcg_lit_int64(0);
-  outC->_L19.o_nominal = kcg_lit_int64(0);
-  outC->_L19.o_min = kcg_lit_int64(0);
-  outC->_L19.o_max = kcg_lit_int64(0);
-  outC->_L20 = kcg_lit_int64(0);
-  outC->_L21 = kcg_lit_int64(0);
-  outC->_L22 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L15 = kcg_lit_int64(0);
-  outC->_L16.o_nominal = kcg_lit_int64(0);
-  outC->_L16.o_min = kcg_lit_int64(0);
-  outC->_L16.o_max = kcg_lit_int64(0);
-  outC->_L17.o_nominal = kcg_lit_int64(0);
-  outC->_L17.o_min = kcg_lit_int64(0);
-  outC->_L17.o_max = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L2.o_nominal = kcg_lit_int64(0);
-  outC->_L2.o_min = kcg_lit_int64(0);
-  outC->_L2.o_max = kcg_lit_int64(0);
-  outC->_L1.o_nominal = kcg_lit_int64(0);
-  outC->_L1.o_min = kcg_lit_int64(0);
-  outC->_L1.o_max = kcg_lit_int64(0);
-  outC->distance.nominal = kcg_lit_int64(0);
-  outC->distance.d_min = kcg_lit_int64(0);
-  outC->distance.d_max = kcg_lit_int64(0);
+  outC->_L31.nominal = kcg_lit_int32(0);
+  outC->_L31.d_min = kcg_lit_int32(0);
+  outC->_L31.d_max = kcg_lit_int32(0);
+  outC->_L24 = kcg_lit_int32(0);
+  outC->_L23 = kcg_lit_int32(0);
+  outC->_L18.o_nominal = kcg_lit_int32(0);
+  outC->_L18.o_min = kcg_lit_int32(0);
+  outC->_L18.o_max = kcg_lit_int32(0);
+  outC->_L19.o_nominal = kcg_lit_int32(0);
+  outC->_L19.o_min = kcg_lit_int32(0);
+  outC->_L19.o_max = kcg_lit_int32(0);
+  outC->_L20 = kcg_lit_int32(0);
+  outC->_L21 = kcg_lit_int32(0);
+  outC->_L22 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L15 = kcg_lit_int32(0);
+  outC->_L16.o_nominal = kcg_lit_int32(0);
+  outC->_L16.o_min = kcg_lit_int32(0);
+  outC->_L16.o_max = kcg_lit_int32(0);
+  outC->_L17.o_nominal = kcg_lit_int32(0);
+  outC->_L17.o_min = kcg_lit_int32(0);
+  outC->_L17.o_max = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L2.o_nominal = kcg_lit_int32(0);
+  outC->_L2.o_min = kcg_lit_int32(0);
+  outC->_L2.o_max = kcg_lit_int32(0);
+  outC->_L1.o_nominal = kcg_lit_int32(0);
+  outC->_L1.o_min = kcg_lit_int32(0);
+  outC->_L1.o_max = kcg_lit_int32(0);
+  outC->distance.nominal = kcg_lit_int32(0);
+  outC->distance.d_min = kcg_lit_int32(0);
+  outC->distance.d_max = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -92,6 +92,6 @@ void sub_2_odoDistances_reset_BasicLocationFunctions_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** sub_2_odoDistances_BasicLocationFunctions_Pkg.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

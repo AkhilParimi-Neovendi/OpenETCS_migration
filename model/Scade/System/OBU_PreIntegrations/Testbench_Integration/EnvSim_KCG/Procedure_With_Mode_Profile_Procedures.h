@@ -7,7 +7,7 @@
 
 #include "kcg_types.h"
 #include "Mode_Profile_Calculations_Librairies.h"
-#include "Counter_pwlinear_int64.h"
+#include "Counter_pwlinear_int32.h"
 
 /* =====================  no input structure  ====================== */
 
@@ -35,10 +35,10 @@ typedef struct {
   SSM_ST_SM_Mode_Profile_By_Trackside /* SM_Mode_Profile_By_Trackside: */ SM_Mode_Profile_By_Trackside_state_nxt;
   kcg_bool /* SM_Mode_Profile_By_Trackside: */ SM_Mode_Profile_By_Trackside_reset_act;
   kcg_bool /* SM_Mode_Profile_By_Trackside: */ SM_Mode_Profile_By_Trackside_reset_nxt;
-  kcg_int64 /* Loc_Timer/ */ Loc_Timer;
+  kcg_int32 /* Loc_Timer/ */ Loc_Timer;
   kcg_bool /* Loc_Confirmation/ */ Loc_Confirmation;
   /* ---------------------  sub nodes' contexts  --------------------- */
-  outC_Counter_pwlinear_int64 /* SM_Mode_Profile_By_Trackside:Current_Location:SM_Current_Location:Switch_Autorized_Waiting_Ack:_L1=(pwlinear::Counter#8)/ */ Context_Counter_8;
+  outC_Counter_pwlinear_int32 /* SM_Mode_Profile_By_Trackside:Current_Location:SM_Current_Location:Switch_Autorized_Waiting_Ack:_L1=(pwlinear::Counter#8)/ */ Context_Counter_8;
   outC_Mode_Profile_Calculations_Librairies /* _L97=(Librairies::Mode_Profile_Calculations#1)/ */ Context_Mode_Profile_Calculations_1;
   /* ------------------ clocks of observable data -------------------- */
   SSM_ST_SM_Futher_Location_Futher_location_SM_Mode_Profile_By_Trackside /* SM_Mode_Profile_By_Trackside:Futher_location:SM_Futher_Location: */ SM_Futher_Location_clock_Futher_location_SM_Mode_Profile_By_Trackside;
@@ -67,8 +67,8 @@ typedef struct {
   kcg_bool /* SM_Mode_Profile_By_Trackside:Current_Location:SM_Current_Location:Switch_Autorized_Waiting_Ack:IfBlock1:then:_L1/ */ _L1_then_IfBlock1_Switch_Autorized_Waiting_Ack_SM_Current_Location_Current_Location_SM_Mode_Profile_;
   kcg_bool /* SM_Mode_Profile_By_Trackside:Current_Location:SM_Current_Location:Switch_Autorized_Waiting_Ack:IfBlock1:else:else:_L1/ */ _L1_else_else_IfBlock1_Switch_Autorized_Waiting_Ack_SM_Current_Location_Current_Location_SM_Mode_Pro;
   kcg_bool /* SM_Mode_Profile_By_Trackside:Current_Location:SM_Current_Location:Switch_Autorized_Waiting_Ack:IfBlock1:else:then:_L1/ */ _L1_then_else_IfBlock1_Switch_Autorized_Waiting_Ack_SM_Current_Location_Current_Location_SM_Mode_Pro;
-  kcg_int64 /* SM_Mode_Profile_By_Trackside:Current_Location:SM_Current_Location:Switch_Autorized_Waiting_Ack:_L1/ */ _L1_Switch_Autorized_Waiting_Ack_SM_Current_Location_Current_Location_SM_Mode_Profile_By_Trackside;
-  kcg_int64 /* SM_Mode_Profile_By_Trackside:Current_Location:SM_Current_Location:Switch_Autorized_Waiting_Ack:_L2/ */ _L2_Switch_Autorized_Waiting_Ack_SM_Current_Location_Current_Location_SM_Mode_Profile_By_Trackside;
+  kcg_int32 /* SM_Mode_Profile_By_Trackside:Current_Location:SM_Current_Location:Switch_Autorized_Waiting_Ack:_L1/ */ _L1_Switch_Autorized_Waiting_Ack_SM_Current_Location_Current_Location_SM_Mode_Profile_By_Trackside;
+  kcg_int32 /* SM_Mode_Profile_By_Trackside:Current_Location:SM_Current_Location:Switch_Autorized_Waiting_Ack:_L2/ */ _L2_Switch_Autorized_Waiting_Ack_SM_Current_Location_Current_Location_SM_Mode_Profile_By_Trackside;
   kcg_bool /* SM_Mode_Profile_By_Trackside:Current_Location:SM_Current_Location:Switch_Autorized_Waiting_Ack:_L4/ */ _L4_Switch_Autorized_Waiting_Ack_SM_Current_Location_Current_Location_SM_Mode_Profile_By_Trackside;
   kcg_bool /* SM_Mode_Profile_By_Trackside:Current_Location:SM_Current_Location:Switch_Autorized_Waiting_Ack:_L6/ */ _L6_Switch_Autorized_Waiting_Ack_SM_Current_Location_Current_Location_SM_Mode_Profile_By_Trackside;
   kcg_bool /* Loc_Ack_Req_To_Driver/ */ Loc_Ack_Req_To_Driver;

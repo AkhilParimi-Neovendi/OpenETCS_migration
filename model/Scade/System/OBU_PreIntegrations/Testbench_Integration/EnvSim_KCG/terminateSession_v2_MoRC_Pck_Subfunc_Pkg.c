@@ -20,7 +20,7 @@ void terminateSession_v2_MoRC_Pck_Subfunc_Pkg(
   /* reset/ */
   kcg_bool reset,
   /* noOfRetriesOfSendingTerminationMessage/ */
-  kcg_int64 noOfRetriesOfSendingTerminationMessage,
+  kcg_int32 noOfRetriesOfSendingTerminationMessage,
   /* maxWaitingTimeForAckMessageReceived/ */
   T_internal_Type_Obu_BasicTypes_Pkg maxWaitingTimeForAckMessageReceived,
   outC_terminateSession_v2_MoRC_Pck_Subfunc_Pkg *outC)
@@ -486,30 +486,30 @@ void terminateSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L97.valid = kcg_true;
   outC->_L97.msgSrc = msrc_undefined_Common_Types_Pkg;
   outC->_L97.origin.valid = kcg_true;
-  outC->_L97.origin.nid_c = kcg_lit_int64(0);
-  outC->_L97.origin.rbc_id = kcg_lit_int64(0);
-  outC->_L97.origin.device_id = kcg_lit_int64(0);
-  outC->_L97.lrbg = kcg_lit_int64(0);
+  outC->_L97.origin.nid_c = kcg_lit_int32(0);
+  outC->_L97.origin.rbc_id = kcg_lit_int32(0);
+  outC->_L97.origin.device_id = kcg_lit_int32(0);
+  outC->_L97.lrbg = kcg_lit_int32(0);
   outC->_L88 = kcg_true;
-  outC->_L89 = kcg_lit_int64(0);
+  outC->_L89 = kcg_lit_int32(0);
   outC->_L90.valid = kcg_true;
   outC->_L90.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L90.nid_c = kcg_lit_int64(0);
-  outC->_L90.nid_rbc = kcg_lit_int64(0);
-  outC->_L90.nid_radio = kcg_lit_int64(0);
+  outC->_L90.nid_c = kcg_lit_int32(0);
+  outC->_L90.nid_rbc = kcg_lit_int32(0);
+  outC->_L90.nid_radio = kcg_lit_int32(0);
   outC->_L91.valid = kcg_true;
   outC->_L91.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L91.nid_c = kcg_lit_int64(0);
-  outC->_L91.nid_rbc = kcg_lit_int64(0);
-  outC->_L91.nid_radio = kcg_lit_int64(0);
+  outC->_L91.nid_c = kcg_lit_int32(0);
+  outC->_L91.nid_rbc = kcg_lit_int32(0);
+  outC->_L91.nid_radio = kcg_lit_int32(0);
   outC->_L92.valid = kcg_true;
   outC->_L92.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L92.nid_c = kcg_lit_int64(0);
-  outC->_L92.nid_rbc = kcg_lit_int64(0);
-  outC->_L92.nid_radio = kcg_lit_int64(0);
-  outC->_L93 = kcg_lit_int64(0);
+  outC->_L92.nid_c = kcg_lit_int32(0);
+  outC->_L92.nid_rbc = kcg_lit_int32(0);
+  outC->_L92.nid_radio = kcg_lit_int32(0);
+  outC->_L93 = kcg_lit_int32(0);
   outC->_L94 = kcg_true;
-  outC->_L95 = kcg_lit_int64(0);
+  outC->_L95 = kcg_lit_int32(0);
   outC->_L96 = sp_terminated_RCM_Session_Types_Pkg;
   outC->definedNumberOfRepetitionsHasBeenReached = kcg_true;
   outC->ackTerminationOfACommunicationSessionReceived = kcg_true;
@@ -530,56 +530,56 @@ void terminateSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L6_waitForAckTerminationOfCommunicationSessionReceived_SM1 = kcg_true;
   outC->_L4_waitForAckTerminationOfCommunicationSessionReceived_SM1 = kcg_true;
   outC->_L3_waitForAckTerminationOfCommunicationSessionReceived_SM1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_waitForAckTerminationOfCommunicationSessionReceived_SM1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_waitForAckTerminationOfCommunicationSessionReceived_SM1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_MemoryBasic_1_struct.valid = kcg_true;
   outC->_L2_MemoryBasic_1_struct.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L2_MemoryBasic_1_struct.nid_c = kcg_lit_int64(0);
-  outC->_L2_MemoryBasic_1_struct.nid_rbc = kcg_lit_int64(0);
-  outC->_L2_MemoryBasic_1_struct.nid_radio = kcg_lit_int64(0);
+  outC->_L2_MemoryBasic_1_struct.nid_c = kcg_lit_int32(0);
+  outC->_L2_MemoryBasic_1_struct.nid_rbc = kcg_lit_int32(0);
+  outC->_L2_MemoryBasic_1_struct.nid_radio = kcg_lit_int32(0);
   outC->_L5_MemoryBasic_1_struct = kcg_true;
   outC->_L6_MemoryBasic_1_struct.valid = kcg_true;
   outC->_L6_MemoryBasic_1_struct.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L6_MemoryBasic_1_struct.nid_c = kcg_lit_int64(0);
-  outC->_L6_MemoryBasic_1_struct.nid_rbc = kcg_lit_int64(0);
-  outC->_L6_MemoryBasic_1_struct.nid_radio = kcg_lit_int64(0);
+  outC->_L6_MemoryBasic_1_struct.nid_c = kcg_lit_int32(0);
+  outC->_L6_MemoryBasic_1_struct.nid_rbc = kcg_lit_int32(0);
+  outC->_L6_MemoryBasic_1_struct.nid_radio = kcg_lit_int32(0);
   outC->_L7_MemoryBasic_1_struct.valid = kcg_true;
   outC->_L7_MemoryBasic_1_struct.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L7_MemoryBasic_1_struct.nid_c = kcg_lit_int64(0);
-  outC->_L7_MemoryBasic_1_struct.nid_rbc = kcg_lit_int64(0);
-  outC->_L7_MemoryBasic_1_struct.nid_radio = kcg_lit_int64(0);
+  outC->_L7_MemoryBasic_1_struct.nid_c = kcg_lit_int32(0);
+  outC->_L7_MemoryBasic_1_struct.nid_rbc = kcg_lit_int32(0);
+  outC->_L7_MemoryBasic_1_struct.nid_radio = kcg_lit_int32(0);
   outC->BM_Input_MemoryBasic_1_struct.valid = kcg_true;
   outC->BM_Input_MemoryBasic_1_struct.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->BM_Input_MemoryBasic_1_struct.nid_c = kcg_lit_int64(0);
-  outC->BM_Input_MemoryBasic_1_struct.nid_rbc = kcg_lit_int64(0);
-  outC->BM_Input_MemoryBasic_1_struct.nid_radio = kcg_lit_int64(0);
+  outC->BM_Input_MemoryBasic_1_struct.nid_c = kcg_lit_int32(0);
+  outC->BM_Input_MemoryBasic_1_struct.nid_rbc = kcg_lit_int32(0);
+  outC->BM_Input_MemoryBasic_1_struct.nid_radio = kcg_lit_int32(0);
   outC->Init_MemoryBasic_1_struct.valid = kcg_true;
   outC->Init_MemoryBasic_1_struct.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->Init_MemoryBasic_1_struct.nid_c = kcg_lit_int64(0);
-  outC->Init_MemoryBasic_1_struct.nid_rbc = kcg_lit_int64(0);
-  outC->Init_MemoryBasic_1_struct.nid_radio = kcg_lit_int64(0);
+  outC->Init_MemoryBasic_1_struct.nid_c = kcg_lit_int32(0);
+  outC->Init_MemoryBasic_1_struct.nid_rbc = kcg_lit_int32(0);
+  outC->Init_MemoryBasic_1_struct.nid_radio = kcg_lit_int32(0);
   outC->Write_MemoryBasic_1_struct = kcg_true;
   outC->Memorized_MemoryBasic_1_struct.valid = kcg_true;
   outC->Memorized_MemoryBasic_1_struct.phase =
     sp_terminated_RCM_Session_Types_Pkg;
-  outC->Memorized_MemoryBasic_1_struct.nid_c = kcg_lit_int64(0);
-  outC->Memorized_MemoryBasic_1_struct.nid_rbc = kcg_lit_int64(0);
-  outC->Memorized_MemoryBasic_1_struct.nid_radio = kcg_lit_int64(0);
+  outC->Memorized_MemoryBasic_1_struct.nid_c = kcg_lit_int32(0);
+  outC->Memorized_MemoryBasic_1_struct.nid_rbc = kcg_lit_int32(0);
+  outC->Memorized_MemoryBasic_1_struct.nid_radio = kcg_lit_int32(0);
   outC->_L4_MemoryBasic_1_struct.valid = kcg_true;
   outC->_L4_MemoryBasic_1_struct.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L4_MemoryBasic_1_struct.nid_c = kcg_lit_int64(0);
-  outC->_L4_MemoryBasic_1_struct.nid_rbc = kcg_lit_int64(0);
-  outC->_L4_MemoryBasic_1_struct.nid_radio = kcg_lit_int64(0);
+  outC->_L4_MemoryBasic_1_struct.nid_c = kcg_lit_int32(0);
+  outC->_L4_MemoryBasic_1_struct.nid_rbc = kcg_lit_int32(0);
+  outC->_L4_MemoryBasic_1_struct.nid_radio = kcg_lit_int32(0);
   outC->init = kcg_true;
   outC->notReady = kcg_true;
   outC->sessionStatus.valid = kcg_true;
   outC->sessionStatus.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->sessionStatus.nid_c = kcg_lit_int64(0);
-  outC->sessionStatus.nid_rbc = kcg_lit_int64(0);
-  outC->sessionStatus.nid_radio = kcg_lit_int64(0);
+  outC->sessionStatus.nid_c = kcg_lit_int32(0);
+  outC->sessionStatus.nid_rbc = kcg_lit_int32(0);
+  outC->sessionStatus.nid_radio = kcg_lit_int32(0);
   outC->terminated = kcg_true;
   outC->requestReleaseOfSafeRadioConnection = kcg_true;
   outC->send_m156_TerminationOfCommunicationSession = kcg_true;

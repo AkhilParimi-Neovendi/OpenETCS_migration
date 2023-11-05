@@ -34,8 +34,8 @@ typedef struct {
   CompressedBaliseMessage_TM /* _L17/ */ _L17;
   TelegramHeader_T_BG_Types_Pkg /* _L16/ */ _L16;
   CompressedPackets_T_Common_Types_Pkg /* _L15/ */ _L15;
-  kcg_float64 /* _L21/ */ _L21;
-  kcg_int64 /* _L22/ */ _L22;
+  kcg_float32 /* _L21/ */ _L21;
+  kcg_int32 /* _L22/ */ _L22;
   TrackType_US_Integration_November /* _L23/ */ _L23;
 } outC_Amsterdam_Utrecht_modular_US_Integration_November;
 
@@ -43,9 +43,9 @@ typedef struct {
 /* US_Integration_November::Amsterdam_Utrecht_modular/ */
 extern void Amsterdam_Utrecht_modular_US_Integration_November(
   /* TrainPos/ */
-  kcg_float64 TrainPos,
+  kcg_float32 TrainPos,
   /* Trigger_in/ */
-  kcg_int64 Trigger_in,
+  kcg_int32 Trigger_in,
   /* SelectTrack/ */
   TrackType_US_Integration_November SelectTrack,
   outC_Amsterdam_Utrecht_modular_US_Integration_November *outC);

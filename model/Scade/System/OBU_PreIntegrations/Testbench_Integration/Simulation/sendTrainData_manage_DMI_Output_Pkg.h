@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _sendTrainData_manage_DMI_Output_Pkg_H_
 #define _sendTrainData_manage_DMI_Output_Pkg_H_
@@ -27,7 +27,7 @@ typedef struct {
   kcg_bool /* _L7/ */ _L7;
   NC_TRAIN /* _L8/ */ _L8;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   V_internal_Type_Obu_BasicTypes_Pkg /* _L11/ */ _L11;
   M_AXLELOADCAT /* _L12/ */ _L12;
   M_AIRTIGHT /* _L13/ */ _L13;
@@ -58,6 +58,6 @@ extern void sendTrainData_init_manage_DMI_Output_Pkg(
 #endif /* _sendTrainData_manage_DMI_Output_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** sendTrainData_manage_DMI_Output_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

@@ -29,7 +29,7 @@ typedef struct {
   P011_voltage_list_TM_TrainToTrack /* _L75/ */ _L75;
   P011_voltage_sectionlist_array_T_TM_TrainToTrack /* _L74/ */ _L74;
   P011_voltage_sections_array_flat_t_TM_TrainToTrack /* _L78/ */ _L78;
-  array_int64_2_4_8 /* _L80/ */ _L80;
+  array_int32_2_4_8 /* _L80/ */ _L80;
 } outC_C_P011_flatten_sections_voltage_TM_TrainToTrack_lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */

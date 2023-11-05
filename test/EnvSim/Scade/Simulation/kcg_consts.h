@@ -8,13 +8,13 @@
 #include "kcg_types.h"
 
 /* Common_Types_Pkg::cDIM_MaxDataElementsInRMessage/ */
-#define cDIM_MaxDataElementsInRMessage_Common_Types_Pkg (kcg_lit_int64(500))
+#define cDIM_MaxDataElementsInRMessage_Common_Types_Pkg (kcg_lit_int32(500))
 
 /* Common_Types_Pkg::cMetadataArraySize/ */
-#define cMetadataArraySize_Common_Types_Pkg (kcg_lit_int64(30))
+#define cMetadataArraySize_Common_Types_Pkg (kcg_lit_int32(30))
 
 /* Common_Types_Pkg::cDIM_MaxRMessages/ */
-#define cDIM_MaxRMessages_Common_Types_Pkg (kcg_lit_int64(30))
+#define cDIM_MaxRMessages_Common_Types_Pkg (kcg_lit_int32(30))
 
 #endif /* _KCG_CONSTS_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********

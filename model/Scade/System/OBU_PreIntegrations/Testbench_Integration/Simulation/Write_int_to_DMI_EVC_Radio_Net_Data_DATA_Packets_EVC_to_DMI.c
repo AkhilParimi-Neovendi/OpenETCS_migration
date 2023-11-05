@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -19,7 +19,7 @@ void Write_int_to_DMI_EVC_Radio_Net_Data_DATA_Packets_EVC_to_DMI(
     &outC->_L10,
     dmi_evc_radio_net_data_int);
   outC->_L14 = outC->_L10[0];
-  outC->_L13 = kcg_lit_int64(1);
+  outC->_L13 = kcg_lit_int32(1);
   outC->_L12 = outC->_L13 == outC->_L14;
   outC->every = outC->_L12;
   if (outC->every) {
@@ -57,21 +57,21 @@ void Write_int_to_DMI_EVC_Radio_Net_Data_init_DATA_Packets_EVC_to_DMI(
   static kcg_size idx;
 
   outC->_L15.valid = kcg_true;
-  outC->_L15.system_clock = kcg_lit_int64(0);
-  outC->_L15.nid_mn = kcg_lit_int64(0);
+  outC->_L15.system_clock = kcg_lit_int32(0);
+  outC->_L15.nid_mn = kcg_lit_int32(0);
   outC->_L12 = kcg_true;
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L14 = kcg_lit_int64(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L14 = kcg_lit_int32(0);
   outC->_L11.valid = kcg_true;
-  outC->_L11.system_clock = kcg_lit_int64(0);
-  outC->_L11.nid_mn = kcg_lit_int64(0);
+  outC->_L11.system_clock = kcg_lit_int32(0);
+  outC->_L11.nid_mn = kcg_lit_int32(0);
   for (idx = 0; idx < 3; idx++) {
-    outC->_L10[idx] = kcg_lit_int64(0);
+    outC->_L10[idx] = kcg_lit_int32(0);
   }
   outC->every = kcg_true;
   outC->dmi_evc_radio_net_data_ct.valid = kcg_true;
-  outC->dmi_evc_radio_net_data_ct.system_clock = kcg_lit_int64(0);
-  outC->dmi_evc_radio_net_data_ct.nid_mn = kcg_lit_int64(0);
+  outC->dmi_evc_radio_net_data_ct.system_clock = kcg_lit_int32(0);
+  outC->dmi_evc_radio_net_data_ct.nid_mn = kcg_lit_int32(0);
   /* _L11=(DATA::Packets::EVC_to_DMI::CAST_int_to_DMI_EVC_Radio_Net_Data1#1)/ */
   CAST_int_to_DMI_EVC_Radio_Net_Data1_init_DATA_Packets_EVC_to_DMI(
     &outC->Context_CAST_int_to_DMI_EVC_Radio_Net_Data1_1);
@@ -93,6 +93,6 @@ void Write_int_to_DMI_EVC_Radio_Net_Data_reset_DATA_Packets_EVC_to_DMI(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Write_int_to_DMI_EVC_Radio_Net_Data_DATA_Packets_EVC_to_DMI.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

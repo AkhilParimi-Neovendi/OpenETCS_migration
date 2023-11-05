@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _SpeedSupervision_Integration_SpeedSupervision_Integration_Pkg_H_
 #define _SpeedSupervision_Integration_SpeedSupervision_Integration_Pkg_H_
@@ -69,7 +69,7 @@ typedef struct {
   SDM_Commands_T_SDM_Types_Pkg /* _L65/ */ _L65;
   TargetCollection_T_TargetManagement_types /* _L81/ */ _L81;
   TrainLocations_real_T_SDM_Types_Pkg /* _L86/ */ _L86;
-  kcg_int64 /* _L94/ */ _L94;
+  kcg_int32 /* _L94/ */ _L94;
   TrainLocations_real_T_SDM_Types_Pkg /* _L96/ */ _L96;
   TargetCollection_T_TargetManagement_types /* _L97/ */ _L97;
   MRSP_internal_T_TargetManagement_types /* _L98/ */ _L98;
@@ -120,7 +120,7 @@ typedef struct {
   Target_T_TargetManagement_types /* _L256/ */ _L256;
   TargetCollection_T_TargetManagement_types /* _L255/ */ _L255;
   CurveCollection_T_CalcBrakingCurves_types /* _L254/ */ _L254;
-  kcg_int64 /* _L275/ */ _L275;
+  kcg_int32 /* _L275/ */ _L275;
   DataForSupervision_nextGen_t_TrackAtlasTypes /* _L276/ */ _L276;
   speedSupervisionForDMI_T_DMI_Types_Pkg /* _L277/ */ _L277;
 } outC_SpeedSupervision_Integration_SpeedSupervision_Integration_Pkg;
@@ -182,6 +182,6 @@ extern void kcg_load_SV_SpeedSupervision_Integration_SpeedSupervision_Integratio
 #endif /* _SpeedSupervision_Integration_SpeedSupervision_Integration_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** SpeedSupervision_Integration_SpeedSupervision_Integration_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

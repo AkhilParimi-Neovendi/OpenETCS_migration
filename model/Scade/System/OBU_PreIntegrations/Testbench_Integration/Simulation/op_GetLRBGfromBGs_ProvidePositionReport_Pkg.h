@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _op_GetLRBGfromBGs_ProvidePositionReport_Pkg_H_
 #define _op_GetLRBGfromBGs_ProvidePositionReport_Pkg_H_
@@ -26,17 +26,17 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   trainPosition_T_TrainPosition_Types_Pck /* _L2/ */ _L2;
   positionedBGs_T_TrainPosition_Types_Pck /* _L1/ */ _L1;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   kcg_bool /* _L4/ */ _L4;
   kcg_bool /* _L5/ */ _L5;
   kcg_bool /* _L6/ */ _L6;
   positionedBG_T_TrainPosition_Types_Pck /* _L7/ */ _L7;
-  array_int64_41 /* _L8/ */ _L8;
+  array_int32_41 /* _L8/ */ _L8;
   positionedBG_T_TrainPosition_Types_Pck /* _L9/ */ _L9;
   NID_BG /* _L13/ */ _L13;
   positionedBG_T_TrainPosition_Types_Pck /* _L14/ */ _L14;
-  kcg_int64 /* _L15/ */ _L15;
-  kcg_int64 /* _L16/ */ _L16;
+  kcg_int32 /* _L15/ */ _L15;
+  kcg_int32 /* _L16/ */ _L16;
 } outC_op_GetLRBGfromBGs_ProvidePositionReport_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -63,6 +63,6 @@ extern void op_GetLRBGfromBGs_init_ProvidePositionReport_Pkg(
 #endif /* _op_GetLRBGfromBGs_ProvidePositionReport_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** op_GetLRBGfromBGs_ProvidePositionReport_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

@@ -67,47 +67,47 @@ void RadioTrainTrackMessageConsistencyChecker__HasConsistentHeader_RBC_Messaging
   outC->_L3 =
     outC->Context_RadioTrainTrackHeader__Get_NID_MESSAGE_1.out_NID_MESSAGE;
   outC->radioTrainTrackMessageId = outC->_L3;
-  outC->IfBlock1_clock = outC->radioTrainTrackMessageId == kcg_lit_int64(129);
+  outC->IfBlock1_clock = outC->radioTrainTrackMessageId == kcg_lit_int32(129);
   if (outC->IfBlock1_clock) {
   }
   else {
-    outC->else_clock_IfBlock1 = outC->radioTrainTrackMessageId == kcg_lit_int64(
+    outC->else_clock_IfBlock1 = outC->radioTrainTrackMessageId == kcg_lit_int32(
         132);
     if (outC->else_clock_IfBlock1) {
     }
     else {
       outC->else_clock_else_IfBlock1 = outC->radioTrainTrackMessageId ==
-        kcg_lit_int64(136);
+        kcg_lit_int32(136);
       if (outC->else_clock_else_IfBlock1) {
       }
       else {
         outC->else_clock_else_else_IfBlock1 = outC->radioTrainTrackMessageId ==
-          kcg_lit_int64(146);
+          kcg_lit_int32(146);
         if (outC->else_clock_else_else_IfBlock1) {
         }
         else {
           outC->else_clock_else_else_else_IfBlock1 =
-            outC->radioTrainTrackMessageId == kcg_lit_int64(154);
+            outC->radioTrainTrackMessageId == kcg_lit_int32(154);
           if (outC->else_clock_else_else_else_IfBlock1) {
           }
           else {
             outC->else_clock_else_else_else_else_IfBlock1 =
-              outC->radioTrainTrackMessageId == kcg_lit_int64(155);
+              outC->radioTrainTrackMessageId == kcg_lit_int32(155);
             if (outC->else_clock_else_else_else_else_IfBlock1) {
             }
             else {
               outC->else_clock_else_else_else_else_else_IfBlock1 =
-                outC->radioTrainTrackMessageId == kcg_lit_int64(159);
+                outC->radioTrainTrackMessageId == kcg_lit_int32(159);
               if (outC->else_clock_else_else_else_else_else_IfBlock1) {
               }
               else {
                 outC->else_clock_else_else_else_else_else_else_IfBlock1 =
-                  outC->radioTrainTrackMessageId == kcg_lit_int64(156);
+                  outC->radioTrainTrackMessageId == kcg_lit_int32(156);
                 if (outC->else_clock_else_else_else_else_else_else_IfBlock1) {
                 }
                 else {
                   outC->else_clock_else_else_else_else_else_else_else_IfBlock1 =
-                    outC->radioTrainTrackMessageId == kcg_lit_int64(147);
+                    outC->radioTrainTrackMessageId == kcg_lit_int32(147);
                   if (outC->else_clock_else_else_else_else_else_else_else_IfBlock1) {
                   }
                   else {
@@ -295,248 +295,248 @@ void RadioTrainTrackMessageConsistencyChecker__HasConsistentHeader_init_RBC_Mess
 
   outC->_L1.present = kcg_true;
   outC->_L1.header.present = kcg_true;
-  outC->_L1.header.nid_message = kcg_lit_int64(0);
-  outC->_L1.header.t_train = kcg_lit_int64(0);
-  outC->_L1.header.nid_engine = kcg_lit_int64(0);
+  outC->_L1.header.nid_message = kcg_lit_int32(0);
+  outC->_L1.header.t_train = kcg_lit_int32(0);
+  outC->_L1.header.nid_engine = kcg_lit_int32(0);
   outC->_L1.header.xQ_MARQSTREASON = Q_MARQSTREASON_Start_selected_by_driver;
-  outC->_L1.header.xT_TRAIN = kcg_lit_int64(0);
-  outC->_L1.header.xNID_EM = kcg_lit_int64(0);
+  outC->_L1.header.xT_TRAIN = kcg_lit_int32(0);
+  outC->_L1.header.xNID_EM = kcg_lit_int32(0);
   outC->_L1.header.xQ_EMERGENCYSTOP =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
-  outC->_L1.header.xNID_TEXTMESSAGE = kcg_lit_int64(0);
+  outC->_L1.header.xNID_TEXTMESSAGE = kcg_lit_int32(0);
   outC->_L1.packets.p0.valid = kcg_true;
-  outC->_L1.packets.p0.packet0.NID_PACKET = kcg_lit_int64(0);
-  outC->_L1.packets.p0.packet0.L_PACKET = kcg_lit_int64(0);
+  outC->_L1.packets.p0.packet0.NID_PACKET = kcg_lit_int32(0);
+  outC->_L1.packets.p0.packet0.L_PACKET = kcg_lit_int32(0);
   outC->_L1.packets.p0.packet0.qscale = Q_SCALE_10_cm_scale;
-  outC->_L1.packets.p0.packet0.NID_LRBG = kcg_lit_int64(0);
-  outC->_L1.packets.p0.packet0.D_LRBG = kcg_lit_int64(0);
+  outC->_L1.packets.p0.packet0.NID_LRBG = kcg_lit_int32(0);
+  outC->_L1.packets.p0.packet0.D_LRBG = kcg_lit_int32(0);
   outC->_L1.packets.p0.packet0.dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L1.packets.p0.packet0.dlrbg = Q_DLRBG_Reverse;
-  outC->_L1.packets.p0.packet0.L_DOUBTOVER = kcg_lit_int64(0);
-  outC->_L1.packets.p0.packet0.L_DOUBTUNDER = kcg_lit_int64(0);
+  outC->_L1.packets.p0.packet0.L_DOUBTOVER = kcg_lit_int32(0);
+  outC->_L1.packets.p0.packet0.L_DOUBTUNDER = kcg_lit_int32(0);
   outC->_L1.packets.p0.packet0.length =
     Q_LENGTH_No_train_integrity_information_available;
-  outC->_L1.packets.p0.packet0.L_TRAININT = kcg_lit_int64(0);
-  outC->_L1.packets.p0.packet0.V_TRAIN = kcg_lit_int64(0);
+  outC->_L1.packets.p0.packet0.L_TRAININT = kcg_lit_int32(0);
+  outC->_L1.packets.p0.packet0.V_TRAIN = kcg_lit_int32(0);
   outC->_L1.packets.p0.packet0.dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L1.packets.p0.packet0.mode = M_MODE_Full_Supervision;
   outC->_L1.packets.p0.packet0.level = M_LEVEL_Level_0;
-  outC->_L1.packets.p0.packet0.NID_NTC = kcg_lit_int64(0);
+  outC->_L1.packets.p0.packet0.NID_NTC = kcg_lit_int32(0);
   outC->_L1.packets.p1.valid = kcg_true;
-  outC->_L1.packets.p1.packet1.NID_PACKET = kcg_lit_int64(0);
-  outC->_L1.packets.p1.packet1.L_PACKET = kcg_lit_int64(0);
+  outC->_L1.packets.p1.packet1.NID_PACKET = kcg_lit_int32(0);
+  outC->_L1.packets.p1.packet1.L_PACKET = kcg_lit_int32(0);
   outC->_L1.packets.p1.packet1.qscale = Q_SCALE_10_cm_scale;
-  outC->_L1.packets.p1.packet1.NID_LRBG = kcg_lit_int64(0);
-  outC->_L1.packets.p1.packet1.NID_PRVLRBG = kcg_lit_int64(0);
-  outC->_L1.packets.p1.packet1.D_LRBG = kcg_lit_int64(0);
+  outC->_L1.packets.p1.packet1.NID_LRBG = kcg_lit_int32(0);
+  outC->_L1.packets.p1.packet1.NID_PRVLRBG = kcg_lit_int32(0);
+  outC->_L1.packets.p1.packet1.D_LRBG = kcg_lit_int32(0);
   outC->_L1.packets.p1.packet1.dirlrbg = Q_DIRLRBG_Reverse;
   outC->_L1.packets.p1.packet1.dlrbg = Q_DLRBG_Reverse;
-  outC->_L1.packets.p1.packet1.L_DOUBTOVER = kcg_lit_int64(0);
-  outC->_L1.packets.p1.packet1.L_DOUBTUNDER = kcg_lit_int64(0);
+  outC->_L1.packets.p1.packet1.L_DOUBTOVER = kcg_lit_int32(0);
+  outC->_L1.packets.p1.packet1.L_DOUBTUNDER = kcg_lit_int32(0);
   outC->_L1.packets.p1.packet1.length =
     Q_LENGTH_No_train_integrity_information_available;
-  outC->_L1.packets.p1.packet1.L_TRAININT = kcg_lit_int64(0);
-  outC->_L1.packets.p1.packet1.V_TRAIN = kcg_lit_int64(0);
+  outC->_L1.packets.p1.packet1.L_TRAININT = kcg_lit_int32(0);
+  outC->_L1.packets.p1.packet1.V_TRAIN = kcg_lit_int32(0);
   outC->_L1.packets.p1.packet1.dirtrain = Q_DIRTRAIN_Reverse;
   outC->_L1.packets.p1.packet1.mode = M_MODE_Full_Supervision;
   outC->_L1.packets.p1.packet1.level = M_LEVEL_Level_0;
-  outC->_L1.packets.p1.packet1.NID_NTC = kcg_lit_int64(0);
+  outC->_L1.packets.p1.packet1.NID_NTC = kcg_lit_int32(0);
   outC->_L1.packets.p3.valid = kcg_true;
-  outC->_L1.packets.p3.number = kcg_lit_int64(0);
+  outC->_L1.packets.p3.number = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 1; idx1++) {
     outC->_L1.packets.p3.aNID_RADIO[idx1].valid = kcg_true;
     for (idx = 0; idx < 15; idx++) {
-      outC->_L1.packets.p3.aNID_RADIO[idx1].telephoneNumber[idx] = kcg_lit_int64(0);
+      outC->_L1.packets.p3.aNID_RADIO[idx1].telephoneNumber[idx] = kcg_lit_int32(0);
     }
   }
   outC->_L1.packets.p4.valid = kcg_true;
   outC->_L1.packets.p4.m_error = M_ERROR_Balise_group_linking_consistency_error;
   outC->_L1.packets.p5.valid = kcg_true;
-  outC->_L1.packets.p5.TrainRunningNumber = kcg_lit_int64(0);
+  outC->_L1.packets.p5.TrainRunningNumber = kcg_lit_int32(0);
   outC->_L1.packets.p9.valid = kcg_true;
-  outC->_L1.packets.p9.transitionInformation = kcg_lit_int64(0);
+  outC->_L1.packets.p9.transitionInformation = kcg_lit_int32(0);
   outC->_L1.packets.p11.valid = kcg_true;
   outC->_L1.packets.p11.nc_cdtrain = NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->_L1.packets.p11.nc_train =
     NC_TRAIN_Train_does_not_belong_to_any_of_the_Other_International_Train_Category;
-  outC->_L1.packets.p11.l_train = kcg_lit_int64(0);
-  outC->_L1.packets.p11.v_maxtrain = kcg_lit_int64(0);
+  outC->_L1.packets.p11.l_train = kcg_lit_int32(0);
+  outC->_L1.packets.p11.v_maxtrain = kcg_lit_int32(0);
   outC->_L1.packets.p11.m_loadinggoage =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
   outC->_L1.packets.p11.m_axleloadcat = M_AXLELOADCAT_A;
   outC->_L1.packets.p11.m_airtight = M_AIRTIGHT_Not_fitted;
-  outC->_L1.packets.p11.n_axle = kcg_lit_int64(0);
-  outC->_L1.packets.p11.nIter_tractionIdentity = kcg_lit_int64(0);
+  outC->_L1.packets.p11.n_axle = kcg_lit_int32(0);
+  outC->_L1.packets.p11.nIter_tractionIdentity = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 4; idx2++) {
     outC->_L1.packets.p11.tractionIdentity[idx2].m_voltage =
       M_VOLTAGE_Line_not_fitted_with_any_traction_system;
-    outC->_L1.packets.p11.tractionIdentity[idx2].nid_ctraction = kcg_lit_int64(0);
+    outC->_L1.packets.p11.tractionIdentity[idx2].nid_ctraction = kcg_lit_int32(0);
   }
-  outC->_L1.packets.p11.nIter_ntc = kcg_lit_int64(0);
+  outC->_L1.packets.p11.nIter_ntc = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 5; idx3++) {
-    outC->_L1.packets.p11.nid_ntc[idx3] = kcg_lit_int64(0);
+    outC->_L1.packets.p11.nid_ntc[idx3] = kcg_lit_int32(0);
   }
   outC->_L2.present = kcg_true;
-  outC->_L2.nid_message = kcg_lit_int64(0);
-  outC->_L2.t_train = kcg_lit_int64(0);
-  outC->_L2.nid_engine = kcg_lit_int64(0);
+  outC->_L2.nid_message = kcg_lit_int32(0);
+  outC->_L2.t_train = kcg_lit_int32(0);
+  outC->_L2.nid_engine = kcg_lit_int32(0);
   outC->_L2.xQ_MARQSTREASON = Q_MARQSTREASON_Start_selected_by_driver;
-  outC->_L2.xT_TRAIN = kcg_lit_int64(0);
-  outC->_L2.xNID_EM = kcg_lit_int64(0);
+  outC->_L2.xT_TRAIN = kcg_lit_int32(0);
+  outC->_L2.xNID_EM = kcg_lit_int32(0);
   outC->_L2.xQ_EMERGENCYSTOP =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
-  outC->_L2.xNID_TEXTMESSAGE = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L2.xNID_TEXTMESSAGE = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->radioTrainTrackHeader.present = kcg_true;
-  outC->radioTrainTrackHeader.nid_message = kcg_lit_int64(0);
-  outC->radioTrainTrackHeader.t_train = kcg_lit_int64(0);
-  outC->radioTrainTrackHeader.nid_engine = kcg_lit_int64(0);
+  outC->radioTrainTrackHeader.nid_message = kcg_lit_int32(0);
+  outC->radioTrainTrackHeader.t_train = kcg_lit_int32(0);
+  outC->radioTrainTrackHeader.nid_engine = kcg_lit_int32(0);
   outC->radioTrainTrackHeader.xQ_MARQSTREASON =
     Q_MARQSTREASON_Start_selected_by_driver;
-  outC->radioTrainTrackHeader.xT_TRAIN = kcg_lit_int64(0);
-  outC->radioTrainTrackHeader.xNID_EM = kcg_lit_int64(0);
+  outC->radioTrainTrackHeader.xT_TRAIN = kcg_lit_int32(0);
+  outC->radioTrainTrackHeader.xNID_EM = kcg_lit_int32(0);
   outC->radioTrainTrackHeader.xQ_EMERGENCYSTOP =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
-  outC->radioTrainTrackHeader.xNID_TEXTMESSAGE = kcg_lit_int64(0);
-  outC->radioTrainTrackMessageId = kcg_lit_int64(0);
+  outC->radioTrainTrackHeader.xNID_TEXTMESSAGE = kcg_lit_int32(0);
+  outC->radioTrainTrackMessageId = kcg_lit_int32(0);
   outC->IfBlock1_clock = kcg_true;
   outC->_L3_then_else_IfBlock1.present = kcg_true;
-  outC->_L3_then_else_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L3_then_else_IfBlock1.t_train = kcg_lit_int64(0);
-  outC->_L3_then_else_IfBlock1.nid_engine = kcg_lit_int64(0);
+  outC->_L3_then_else_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L3_then_else_IfBlock1.t_train = kcg_lit_int32(0);
+  outC->_L3_then_else_IfBlock1.nid_engine = kcg_lit_int32(0);
   outC->_L3_then_else_IfBlock1.xQ_MARQSTREASON =
     Q_MARQSTREASON_Start_selected_by_driver;
-  outC->_L3_then_else_IfBlock1.xT_TRAIN = kcg_lit_int64(0);
-  outC->_L3_then_else_IfBlock1.xNID_EM = kcg_lit_int64(0);
+  outC->_L3_then_else_IfBlock1.xT_TRAIN = kcg_lit_int32(0);
+  outC->_L3_then_else_IfBlock1.xNID_EM = kcg_lit_int32(0);
   outC->_L3_then_else_IfBlock1.xQ_EMERGENCYSTOP =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
-  outC->_L3_then_else_IfBlock1.xNID_TEXTMESSAGE = kcg_lit_int64(0);
+  outC->_L3_then_else_IfBlock1.xNID_TEXTMESSAGE = kcg_lit_int32(0);
   outC->_L1_then_else_IfBlock1 = kcg_true;
   outC->else_clock_else_IfBlock1 = kcg_true;
   outC->_L4_then_else_else_else_IfBlock1.present = kcg_true;
-  outC->_L4_then_else_else_else_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L4_then_else_else_else_IfBlock1.t_train = kcg_lit_int64(0);
-  outC->_L4_then_else_else_else_IfBlock1.nid_engine = kcg_lit_int64(0);
+  outC->_L4_then_else_else_else_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L4_then_else_else_else_IfBlock1.t_train = kcg_lit_int32(0);
+  outC->_L4_then_else_else_else_IfBlock1.nid_engine = kcg_lit_int32(0);
   outC->_L4_then_else_else_else_IfBlock1.xQ_MARQSTREASON =
     Q_MARQSTREASON_Start_selected_by_driver;
-  outC->_L4_then_else_else_else_IfBlock1.xT_TRAIN = kcg_lit_int64(0);
-  outC->_L4_then_else_else_else_IfBlock1.xNID_EM = kcg_lit_int64(0);
+  outC->_L4_then_else_else_else_IfBlock1.xT_TRAIN = kcg_lit_int32(0);
+  outC->_L4_then_else_else_else_IfBlock1.xNID_EM = kcg_lit_int32(0);
   outC->_L4_then_else_else_else_IfBlock1.xQ_EMERGENCYSTOP =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
-  outC->_L4_then_else_else_else_IfBlock1.xNID_TEXTMESSAGE = kcg_lit_int64(0);
+  outC->_L4_then_else_else_else_IfBlock1.xNID_TEXTMESSAGE = kcg_lit_int32(0);
   outC->_L1_then_else_else_else_IfBlock1 = kcg_true;
   outC->else_clock_else_else_else_IfBlock1 = kcg_true;
   outC->_L3_then_else_else_else_else_else_IfBlock1.present = kcg_true;
-  outC->_L3_then_else_else_else_else_else_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_IfBlock1.t_train = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_IfBlock1.nid_engine = kcg_lit_int64(0);
+  outC->_L3_then_else_else_else_else_else_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_IfBlock1.t_train = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_IfBlock1.nid_engine = kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_IfBlock1.xQ_MARQSTREASON =
     Q_MARQSTREASON_Start_selected_by_driver;
-  outC->_L3_then_else_else_else_else_else_IfBlock1.xT_TRAIN = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_IfBlock1.xNID_EM = kcg_lit_int64(0);
+  outC->_L3_then_else_else_else_else_else_IfBlock1.xT_TRAIN = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_IfBlock1.xNID_EM = kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_IfBlock1.xQ_EMERGENCYSTOP =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
   outC->_L3_then_else_else_else_else_else_IfBlock1.xNID_TEXTMESSAGE =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->else_clock_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L2_then_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock1.present = kcg_true;
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock1.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock1.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock1.nid_engine =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock1.xQ_MARQSTREASON =
     Q_MARQSTREASON_Start_selected_by_driver;
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock1.xT_TRAIN =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock1.xNID_EM =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock1.xQ_EMERGENCYSTOP =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
   outC->_L3_then_else_else_else_else_else_else_else_IfBlock1.xNID_TEXTMESSAGE =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L1_else_else_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L1_then_else_else_else_else_else_else_else_else_IfBlock1.present =
     kcg_true;
   outC->_L1_then_else_else_else_else_else_else_else_else_IfBlock1.nid_message =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_IfBlock1.t_train =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_IfBlock1.nid_engine =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_IfBlock1.xQ_MARQSTREASON =
     Q_MARQSTREASON_Start_selected_by_driver;
   outC->_L1_then_else_else_else_else_else_else_else_else_IfBlock1.xT_TRAIN =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_IfBlock1.xNID_EM =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_IfBlock1.xQ_EMERGENCYSTOP =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
   outC->_L1_then_else_else_else_else_else_else_else_else_IfBlock1.xNID_TEXTMESSAGE =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L2_then_else_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->else_clock_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L1_then_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L3_then_else_else_else_else_else_else_IfBlock1.present = kcg_true;
   outC->_L3_then_else_else_else_else_else_else_IfBlock1.nid_message =
-    kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_else_IfBlock1.t_train = kcg_lit_int64(
+    kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_else_IfBlock1.t_train = kcg_lit_int32(
       0);
   outC->_L3_then_else_else_else_else_else_else_IfBlock1.nid_engine =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_else_else_IfBlock1.xQ_MARQSTREASON =
     Q_MARQSTREASON_Start_selected_by_driver;
   outC->_L3_then_else_else_else_else_else_else_IfBlock1.xT_TRAIN =
-    kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_else_else_IfBlock1.xNID_EM = kcg_lit_int64(
+    kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_else_else_IfBlock1.xNID_EM = kcg_lit_int32(
       0);
   outC->_L3_then_else_else_else_else_else_else_IfBlock1.xQ_EMERGENCYSTOP =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
   outC->_L3_then_else_else_else_else_else_else_IfBlock1.xNID_TEXTMESSAGE =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L1_then_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L3_then_else_else_else_else_IfBlock1.present = kcg_true;
-  outC->_L3_then_else_else_else_else_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_IfBlock1.t_train = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_IfBlock1.nid_engine = kcg_lit_int64(0);
+  outC->_L3_then_else_else_else_else_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_IfBlock1.t_train = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_IfBlock1.nid_engine = kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_IfBlock1.xQ_MARQSTREASON =
     Q_MARQSTREASON_Start_selected_by_driver;
-  outC->_L3_then_else_else_else_else_IfBlock1.xT_TRAIN = kcg_lit_int64(0);
-  outC->_L3_then_else_else_else_else_IfBlock1.xNID_EM = kcg_lit_int64(0);
+  outC->_L3_then_else_else_else_else_IfBlock1.xT_TRAIN = kcg_lit_int32(0);
+  outC->_L3_then_else_else_else_else_IfBlock1.xNID_EM = kcg_lit_int32(0);
   outC->_L3_then_else_else_else_else_IfBlock1.xQ_EMERGENCYSTOP =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
-  outC->_L3_then_else_else_else_else_IfBlock1.xNID_TEXTMESSAGE = kcg_lit_int64(0);
+  outC->_L3_then_else_else_else_else_IfBlock1.xNID_TEXTMESSAGE = kcg_lit_int32(0);
   outC->else_clock_else_else_IfBlock1 = kcg_true;
   outC->_L1_then_else_else_IfBlock1 = kcg_true;
   outC->_L4_then_else_else_IfBlock1.present = kcg_true;
-  outC->_L4_then_else_else_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L4_then_else_else_IfBlock1.t_train = kcg_lit_int64(0);
-  outC->_L4_then_else_else_IfBlock1.nid_engine = kcg_lit_int64(0);
+  outC->_L4_then_else_else_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L4_then_else_else_IfBlock1.t_train = kcg_lit_int32(0);
+  outC->_L4_then_else_else_IfBlock1.nid_engine = kcg_lit_int32(0);
   outC->_L4_then_else_else_IfBlock1.xQ_MARQSTREASON =
     Q_MARQSTREASON_Start_selected_by_driver;
-  outC->_L4_then_else_else_IfBlock1.xT_TRAIN = kcg_lit_int64(0);
-  outC->_L4_then_else_else_IfBlock1.xNID_EM = kcg_lit_int64(0);
+  outC->_L4_then_else_else_IfBlock1.xT_TRAIN = kcg_lit_int32(0);
+  outC->_L4_then_else_else_IfBlock1.xNID_EM = kcg_lit_int32(0);
   outC->_L4_then_else_else_IfBlock1.xQ_EMERGENCYSTOP =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
-  outC->_L4_then_else_else_IfBlock1.xNID_TEXTMESSAGE = kcg_lit_int64(0);
+  outC->_L4_then_else_else_IfBlock1.xNID_TEXTMESSAGE = kcg_lit_int32(0);
   outC->else_clock_IfBlock1 = kcg_true;
   outC->_L1_then_IfBlock1 = kcg_true;
   outC->_L2_then_IfBlock1.present = kcg_true;
-  outC->_L2_then_IfBlock1.nid_message = kcg_lit_int64(0);
-  outC->_L2_then_IfBlock1.t_train = kcg_lit_int64(0);
-  outC->_L2_then_IfBlock1.nid_engine = kcg_lit_int64(0);
+  outC->_L2_then_IfBlock1.nid_message = kcg_lit_int32(0);
+  outC->_L2_then_IfBlock1.t_train = kcg_lit_int32(0);
+  outC->_L2_then_IfBlock1.nid_engine = kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.xQ_MARQSTREASON =
     Q_MARQSTREASON_Start_selected_by_driver;
-  outC->_L2_then_IfBlock1.xT_TRAIN = kcg_lit_int64(0);
-  outC->_L2_then_IfBlock1.xNID_EM = kcg_lit_int64(0);
+  outC->_L2_then_IfBlock1.xT_TRAIN = kcg_lit_int32(0);
+  outC->_L2_then_IfBlock1.xNID_EM = kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.xQ_EMERGENCYSTOP =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
-  outC->_L2_then_IfBlock1.xNID_TEXTMESSAGE = kcg_lit_int64(0);
+  outC->_L2_then_IfBlock1.xNID_TEXTMESSAGE = kcg_lit_int32(0);
   outC->outIsConsistent = kcg_true;
   /* IfBlock1:then:_L1=(RBC_Messaging_Pkg::RBC_Consistency_Pkg::Msg129ConsistencyChecker__HasConsistentHeader#1)/ */
   Msg129ConsistencyChecker__HasConsistentHeader_init_RBC_Messaging_Pkg_RBC_Consistency_Pkg(

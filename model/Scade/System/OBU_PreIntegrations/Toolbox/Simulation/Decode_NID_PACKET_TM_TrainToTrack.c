@@ -10,9 +10,9 @@
 /* TM_TrainToTrack::Decode_NID_PACKET/ */
 void Decode_NID_PACKET_TM_TrainToTrack(
   /* Meta/ */
-  kcg_int64 Meta,
+  kcg_int32 Meta,
   /* Packet_ID/ */
-  kcg_int64 Packet_ID,
+  kcg_int32 Packet_ID,
   outC_Decode_NID_PACKET_TM_TrainToTrack *outC)
 {
   outC->_L2 = Packet_ID;
@@ -26,8 +26,8 @@ void Decode_NID_PACKET_init_TM_TrainToTrack(
   outC_Decode_NID_PACKET_TM_TrainToTrack *outC)
 {
   outC->_L3 = kcg_true;
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
   outC->Valid = kcg_true;
 }
 #endif /* KCG_USER_DEFINED_INIT */

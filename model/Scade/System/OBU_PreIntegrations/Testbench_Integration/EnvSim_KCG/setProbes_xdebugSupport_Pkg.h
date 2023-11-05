@@ -44,11 +44,11 @@ typedef struct {
   CompressedPackets_T_Common_Types_Pkg /* _L9/ */ _L9;
   Metadata_T_Common_Types_Pkg /* _L10/ */ _L10;
   MetadataElement_T_Common_Types_Pkg /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L12/ */ _L12;
   NID_PACKET /* _L13/ */ _L13;
   MetadataElement_T_Common_Types_Pkg /* _L15/ */ _L15;
   NID_PACKET /* _L14/ */ _L14;
-  kcg_int64 /* _L16/ */ _L16;
+  kcg_int32 /* _L16/ */ _L16;
   NID_MESSAGE /* _L18/ */ _L18;
   NID_BG /* _L19/ */ _L19;
   kcg_bool /* _L20/ */ _L20;
@@ -78,11 +78,11 @@ typedef struct {
   kcg_bool /* _L51/ */ _L51;
   NID_BG /* _L52/ */ _L52;
   NID_MESSAGE /* _L54/ */ _L54;
-  kcg_int64 /* _L55/ */ _L55;
+  kcg_int32 /* _L55/ */ _L55;
   kcg_bool /* _L57/ */ _L57;
-  kcg_int64 /* _L58/ */ _L58;
+  kcg_int32 /* _L58/ */ _L58;
   kcg_bool /* _L59/ */ _L59;
-  kcg_int64 /* _L60/ */ _L60;
+  kcg_int32 /* _L60/ */ _L60;
 } outC_setProbes_xdebugSupport_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

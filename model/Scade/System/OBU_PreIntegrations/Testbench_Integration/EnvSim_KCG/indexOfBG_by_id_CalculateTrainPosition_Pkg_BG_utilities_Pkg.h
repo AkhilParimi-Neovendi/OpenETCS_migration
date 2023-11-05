@@ -15,7 +15,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* indexOfBG/ */ indexOfBG;
+  kcg_int32 /* indexOfBG/ */ indexOfBG;
   kcg_bool /* BG_found/ */ BG_found;
   kcg_bool /* indexValid/ */ indexValid;
   /* -----------------------  no local probes  ----------------------- */
@@ -28,13 +28,13 @@ typedef struct {
   positionedBG_T_TrainPosition_Types_Pck /* _L1/ */ _L1;
   positionedBGs_T_TrainPosition_Types_Pck /* _L2/ */ _L2;
   kcg_bool /* _L3/ */ _L3;
-  kcg_int64 /* _L6/ */ _L6;
-  kcg_int64 /* _L8/ */ _L8;
-  kcg_int64 /* _L9/ */ _L9;
+  kcg_int32 /* _L6/ */ _L6;
+  kcg_int32 /* _L8/ */ _L8;
+  kcg_int32 /* _L9/ */ _L9;
   positionedBGs_T_TrainPosition_Types_Pck /* _L11/ */ _L11;
   positionedBG_T_TrainPosition_Types_Pck /* _L12/ */ _L12;
   kcg_bool /* _L16/ */ _L16;
-  kcg_int64 /* _L17/ */ _L17;
+  kcg_int32 /* _L17/ */ _L17;
   kcg_bool /* _L18/ */ _L18;
   kcg_bool /* _L19/ */ _L19;
 } outC_indexOfBG_by_id_CalculateTrainPosition_Pkg_BG_utilities_Pkg;

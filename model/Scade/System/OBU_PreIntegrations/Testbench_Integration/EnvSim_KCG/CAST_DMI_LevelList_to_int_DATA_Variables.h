@@ -23,13 +23,13 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   DMI_level_array_T_DMI_Types_Pkg /* _L2/ */ _L2;
-  array_int64_65 /* _L4/ */ _L4;
+  array_int32_65 /* _L4/ */ _L4;
   DMI_LevelList_T_DMI_Types_Pkg /* _L5/ */ _L5;
-  array_int64_32 /* _L6/ */ _L6;
+  array_int32_32 /* _L6/ */ _L6;
   P044_other_data_TM_TrainToTrack /* _L7/ */ _L7;
-  array_int64_32 /* _L8/ */ _L8;
+  array_int32_32 /* _L8/ */ _L8;
 } outC_CAST_DMI_LevelList_to_int_DATA_Variables;
 
 /* ===========  node initialization and cycle functions  =========== */

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _msg_2_passedBG_CalculateTrainPosition_Pkg_msgAdapter_Pkg_H_
 #define _msg_2_passedBG_CalculateTrainPosition_Pkg_msgAdapter_Pkg_H_
@@ -66,8 +66,8 @@ typedef struct {
   NID_C /* _L323/ */ _L323;
   NID_LRBG /* _L325/ */ _L325;
   kcg_bool /* _L326/ */ _L326;
-  kcg_int64 /* _L327/ */ _L327;
-  kcg_int64 /* _L328/ */ _L328;
+  kcg_int32 /* _L327/ */ _L327;
+  kcg_int32 /* _L328/ */ _L328;
 } outC_msg_2_passedBG_CalculateTrainPosition_Pkg_msgAdapter_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -92,6 +92,6 @@ extern void msg_2_passedBG_init_CalculateTrainPosition_Pkg_msgAdapter_Pkg(
 #endif /* _msg_2_passedBG_CalculateTrainPosition_Pkg_msgAdapter_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** msg_2_passedBG_CalculateTrainPosition_Pkg_msgAdapter_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

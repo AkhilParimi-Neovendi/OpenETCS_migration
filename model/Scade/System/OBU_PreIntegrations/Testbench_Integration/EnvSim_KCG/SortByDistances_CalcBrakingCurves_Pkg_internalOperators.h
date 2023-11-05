@@ -33,7 +33,7 @@ typedef struct {
   ParabolaCurveAccelerations_T_CalcBrakingCurves_types /* _L9/ */ _L9;
   ParabolaCurve_T_CalcBrakingCurves_types /* _L18/ */ _L18;
   ParabolaCurve_T_CalcBrakingCurves_types /* _L19/ */ _L19;
-  kcg_int64 /* _L21/ */ _L21;
+  kcg_int32 /* _L21/ */ _L21;
   kcg_bool /* _L22/ */ _L22;
   ParabolaCurveValid_T_CalcBrakingCurves_types /* _L23/ */ _L23;
 } outC_SortByDistances_CalcBrakingCurves_Pkg_internalOperators;

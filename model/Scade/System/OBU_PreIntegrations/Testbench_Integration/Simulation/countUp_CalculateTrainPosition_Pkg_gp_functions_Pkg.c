@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -15,16 +15,16 @@ void countUp_CalculateTrainPosition_Pkg_gp_functions_Pkg(
   kcg_bool reset,
   outC_countUp_CalculateTrainPosition_Pkg_gp_functions_Pkg *outC)
 {
-  outC->_L12 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
   /* _L6= */
   if (outC->init) {
-    outC->_L6 = kcg_lit_int64(0);
+    outC->_L6 = kcg_lit_int32(0);
   }
   else {
     outC->_L6 = outC->_L11;
   }
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(1);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(1);
   outC->_L3 = count;
   /* _L9= */
   if (outC->_L3) {
@@ -50,17 +50,17 @@ void countUp_CalculateTrainPosition_Pkg_gp_functions_Pkg(
 void countUp_init_CalculateTrainPosition_Pkg_gp_functions_Pkg(
   outC_countUp_CalculateTrainPosition_Pkg_gp_functions_Pkg *outC)
 {
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L4 = kcg_true;
   outC->_L3 = kcg_true;
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L11 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L11 = kcg_lit_int32(0);
   outC->init = kcg_true;
-  outC->counter = kcg_lit_int64(0);
+  outC->counter = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -94,6 +94,6 @@ void kcg_load_SV_countUp_CalculateTrainPosition_Pkg_gp_functions_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** countUp_CalculateTrainPosition_Pkg_gp_functions_Pkg.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

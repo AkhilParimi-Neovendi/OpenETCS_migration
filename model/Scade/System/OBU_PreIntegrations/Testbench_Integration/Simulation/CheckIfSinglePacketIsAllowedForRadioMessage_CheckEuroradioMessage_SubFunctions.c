@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -37,7 +37,7 @@ void CheckIfSinglePacketIsAllowedForRadioMessage_CheckEuroradioMessage_SubFuncti
   outC->_L20 =
     outC->Context_T_extract_nid_packet_from_metadata_selector_1.nid_packet;
   outC->nid_packet = outC->_L20;
-  outC->IfBlock2_clock = outC->nid_packet != kcg_lit_int64(0);
+  outC->IfBlock2_clock = outC->nid_packet != kcg_lit_int32(0);
   if (outC->IfBlock2_clock) {
   }
   else {
@@ -58,10 +58,10 @@ void CheckIfSinglePacketIsAllowedForRadioMessage_CheckEuroradioMessage_SubFuncti
       kcg_copy_MetadataTruthtable_T1_CheckEuroradioMessage(
         &outC->_L2_then_IfBlock1_then_IfBlock2,
         permittedPackets);
-      if ((kcg_lit_int64(0) <= outC->_L5_then_IfBlock1_then_IfBlock2) &
-        (outC->_L5_then_IfBlock1_then_IfBlock2 < kcg_lit_int64(46)) &
-        ((kcg_lit_int64(0) <= outC->_L7_then_IfBlock1_then_IfBlock2) &
-          (outC->_L7_then_IfBlock1_then_IfBlock2 < kcg_lit_int64(256)))) {
+      if ((kcg_lit_int32(0) <= outC->_L5_then_IfBlock1_then_IfBlock2) &
+        (outC->_L5_then_IfBlock1_then_IfBlock2 < kcg_lit_int32(46)) &
+        ((kcg_lit_int32(0) <= outC->_L7_then_IfBlock1_then_IfBlock2) &
+          (outC->_L7_then_IfBlock1_then_IfBlock2 < kcg_lit_int32(256)))) {
         outC->_L1_then_IfBlock1_then_IfBlock2 =
           outC->_L2_then_IfBlock1_then_IfBlock2[outC->_L5_then_IfBlock1_then_IfBlock2][outC->_L7_then_IfBlock1_then_IfBlock2];
       }
@@ -94,32 +94,32 @@ void CheckIfSinglePacketIsAllowedForRadioMessage_init_CheckEuroradioMessage_SubF
   static kcg_size idx;
   static kcg_size idx1;
 
-  outC->_L20 = kcg_lit_int64(0);
+  outC->_L20 = kcg_lit_int32(0);
   outC->_L19 = kcg_true;
   outC->_L16 = kcg_true;
   outC->_L15 = kcg_true;
   outC->_L14 = kcg_true;
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L3.nid_packet = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L3.nid_packet = kcg_lit_int32(0);
   outC->_L3.q_dir = Q_DIR_Reverse;
   outC->_L3.valid = kcg_true;
-  outC->_L3.startAddress = kcg_lit_int64(0);
-  outC->_L3.endAddress = kcg_lit_int64(0);
+  outC->_L3.startAddress = kcg_lit_int32(0);
+  outC->_L3.endAddress = kcg_lit_int32(0);
   outC->validTmp = kcg_true;
-  outC->nid_packet = kcg_lit_int64(0);
+  outC->nid_packet = kcg_lit_int32(0);
   outC->present = kcg_true;
   outC->IfBlock2_clock = kcg_true;
   outC->_L1_else_IfBlock2 = kcg_true;
-  outC->_L7_then_IfBlock1_then_IfBlock2 = kcg_lit_int64(0);
+  outC->_L7_then_IfBlock1_then_IfBlock2 = kcg_lit_int32(0);
   outC->_L1_then_IfBlock1_then_IfBlock2 = kcg_true;
   for (idx1 = 0; idx1 < 46; idx1++) {
     for (idx = 0; idx < 256; idx++) {
       outC->_L2_then_IfBlock1_then_IfBlock2[idx1][idx] = kcg_true;
     }
   }
-  outC->_L3_then_IfBlock1_then_IfBlock2 = kcg_lit_int64(0);
+  outC->_L3_then_IfBlock1_then_IfBlock2 = kcg_lit_int32(0);
   outC->_L4_then_IfBlock1_then_IfBlock2 = kcg_true;
-  outC->_L5_then_IfBlock1_then_IfBlock2 = kcg_lit_int64(0);
+  outC->_L5_then_IfBlock1_then_IfBlock2 = kcg_lit_int32(0);
   outC->_L1_else_IfBlock1_then_IfBlock2 = kcg_true;
   outC->IfBlock1_clock_then_IfBlock2 = kcg_true;
   outC->valid = kcg_true;
@@ -144,6 +144,6 @@ void CheckIfSinglePacketIsAllowedForRadioMessage_reset_CheckEuroradioMessage_Sub
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CheckIfSinglePacketIsAllowedForRadioMessage_CheckEuroradioMessage_SubFunctions.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

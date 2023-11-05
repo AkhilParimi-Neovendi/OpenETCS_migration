@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _CalcDMI_output_SDM_Commands_Pkg_H_
 #define _CalcDMI_output_SDM_Commands_Pkg_H_
@@ -61,8 +61,8 @@ typedef struct {
   M_SUPERVISION_STATUS_DMI_Types_Pkg /* _L88/ */ _L88;
   trainPosition_T_TrainPosition_Types_Pck /* _L91/ */ _L91;
   Location_T_Obu_BasicTypes_Pkg /* _L90/ */ _L90;
-  kcg_int64 /* _L92/ */ _L92;
-  kcg_int64 /* _L94/ */ _L94;
+  kcg_int32 /* _L92/ */ _L92;
+  kcg_int32 /* _L94/ */ _L94;
   kcg_bool /* _L98/ */ _L98;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L99/ */ _L99;
   kcg_bool /* _L107/ */ _L107;
@@ -94,6 +94,6 @@ extern void CalcDMI_output_init_SDM_Commands_Pkg(
 #endif /* _CalcDMI_output_SDM_Commands_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CalcDMI_output_SDM_Commands_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

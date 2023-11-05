@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _addNewSection_SDM_GradientAcceleration_Pkg_H_
 #define _addNewSection_SDM_GradientAcceleration_Pkg_H_
@@ -23,7 +23,7 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   Gradient_real_t_SDM_GradientAcceleration_types /* _L3/ */ _L3;
   ACC_SDM_GradientAcceleration_Pkg /* _L2/ */ _L2;
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   GradientProfile_real_compensated_t_SDM_GradientAcceleration_types /* _L4/ */ _L4;
   GradientProfile_real_compensated_t_SDM_GradientAcceleration_types /* _L5/ */ _L5;
   Gradient_section_real_t_SDM_GradientAcceleration_types /* _L6/ */ _L6;
@@ -38,7 +38,7 @@ extern void addNewSection_SDM_GradientAcceleration_Pkg(
   /* newGradientSection/ */
   Gradient_real_t_SDM_GradientAcceleration_types newGradientSection,
   /* index/ */
-  kcg_int64 index,
+  kcg_int32 index,
   /* Accu/ */
   ACC_SDM_GradientAcceleration_Pkg *Accu,
   outC_addNewSection_SDM_GradientAcceleration_Pkg *outC);
@@ -58,6 +58,6 @@ extern void addNewSection_init_SDM_GradientAcceleration_Pkg(
 #endif /* _addNewSection_SDM_GradientAcceleration_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** addNewSection_SDM_GradientAcceleration_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

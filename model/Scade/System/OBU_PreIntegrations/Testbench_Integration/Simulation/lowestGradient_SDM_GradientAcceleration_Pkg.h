@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _lowestGradient_SDM_GradientAcceleration_Pkg_H_
 #define _lowestGradient_SDM_GradientAcceleration_Pkg_H_
@@ -25,19 +25,19 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   GradientProfile_real_t_SDM_GradientAcceleration_types /* _L1/ */ _L1;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   Gradient_real_t_SDM_GradientAcceleration_types /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   kcg_bool /* _L6/ */ _L6;
   kcg_bool /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   Gradient_real_t_SDM_GradientAcceleration_types /* _L15/ */ _L15;
   kcg_bool /* _L16/ */ _L16;
   kcg_bool /* _L17/ */ _L17;
   Gradient_real_t_SDM_GradientAcceleration_types /* _L18/ */ _L18;
-  kcg_int64 /* _L19/ */ _L19;
-  kcg_int64 /* _L20/ */ _L20;
-  kcg_int64 /* _L22/ */ _L22;
+  kcg_int32 /* _L19/ */ _L19;
+  kcg_int32 /* _L20/ */ _L20;
+  kcg_int32 /* _L22/ */ _L22;
   Gradient_section_real_t_SDM_GradientAcceleration_types /* _L23/ */ _L23;
 } outC_lowestGradient_SDM_GradientAcceleration_Pkg;
 
@@ -45,15 +45,15 @@ typedef struct {
 /* SDM_GradientAcceleration_Pkg::lowestGradient/ */
 extern void lowestGradient_SDM_GradientAcceleration_Pkg(
   /* Index/ */
-  kcg_int64 Index,
+  kcg_int32 Index,
   /* lowestGradientAccu/ */
   Gradient_real_t_SDM_GradientAcceleration_types lowestGradientAccu,
   /* GradientProfile/ */
   GradientProfile_real_t_SDM_GradientAcceleration_types *GradientProfile,
   /* BeginIndex/ */
-  kcg_int64 BeginIndex,
+  kcg_int32 BeginIndex,
   /* EndIndex/ */
-  kcg_int64 EndIndex,
+  kcg_int32 EndIndex,
   outC_lowestGradient_SDM_GradientAcceleration_Pkg *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET
@@ -71,6 +71,6 @@ extern void lowestGradient_init_SDM_GradientAcceleration_Pkg(
 #endif /* _lowestGradient_SDM_GradientAcceleration_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** lowestGradient_SDM_GradientAcceleration_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

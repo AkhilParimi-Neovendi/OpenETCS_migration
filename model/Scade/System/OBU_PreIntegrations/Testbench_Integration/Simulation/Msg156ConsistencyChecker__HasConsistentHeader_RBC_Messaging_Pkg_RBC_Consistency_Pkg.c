@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -42,20 +42,20 @@ void Msg156ConsistencyChecker__HasConsistentHeader_init_RBC_Messaging_Pkg_RBC_Co
 {
   outC->_L1 = kcg_true;
   outC->_L2.present = kcg_true;
-  outC->_L2.nid_message = kcg_lit_int64(0);
-  outC->_L2.t_train = kcg_lit_int64(0);
-  outC->_L2.nid_engine = kcg_lit_int64(0);
+  outC->_L2.nid_message = kcg_lit_int32(0);
+  outC->_L2.t_train = kcg_lit_int32(0);
+  outC->_L2.nid_engine = kcg_lit_int32(0);
   outC->_L2.xQ_MARQSTREASON = Q_MARQSTREASON_Start_selected_by_driver;
-  outC->_L2.xT_TRAIN = kcg_lit_int64(0);
-  outC->_L2.xNID_EM = kcg_lit_int64(0);
+  outC->_L2.xT_TRAIN = kcg_lit_int32(0);
+  outC->_L2.xNID_EM = kcg_lit_int32(0);
   outC->_L2.xQ_EMERGENCYSTOP =
     Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_update_of_EOA;
-  outC->_L2.xNID_TEXTMESSAGE = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L2.xNID_TEXTMESSAGE = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L4 = Q_MARQSTREASON_Start_selected_by_driver;
   outC->_L5 = Q_MARQSTREASON_Start_selected_by_driver;
   outC->_L6 = kcg_true;
-  outC->_L7 = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(0);
   outC->_L8 = kcg_true;
   outC->outIsConsistent = kcg_true;
   /* _L3=(RBC_Messaging_Pkg::RBC_RadioTrainTrack_Pkg::RadioTrainTrackHeader__Get_T_TRAIN_Ref#1)/ */
@@ -85,6 +85,6 @@ void Msg156ConsistencyChecker__HasConsistentHeader_reset_RBC_Messaging_Pkg_RBC_C
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Msg156ConsistencyChecker__HasConsistentHeader_RBC_Messaging_Pkg_RBC_Consistency_Pkg.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

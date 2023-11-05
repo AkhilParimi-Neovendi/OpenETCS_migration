@@ -57,9 +57,9 @@ typedef struct {
   RadioTrackTrainMessageQueue_T /* IfBlock1:else:_L5/ */ _L5_else_IfBlock1;
   RBC_Data_T_RBC_DataBus_Pkg /* IfBlock1:else:_L6/ */ _L6_else_IfBlock1;
   CompressedRadioMessage_TM /* IfBlock1:else:_L3/ */ _L3_else_IfBlock1;
-  kcg_int64 /* remainingCapacity/ */ remainingCapacity;
+  kcg_int32 /* remainingCapacity/ */ remainingCapacity;
   RBC_Data_T_RBC_DataBus_Pkg /* _L1/ */ _L1;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   RadioTrackTrainMessageQueue_T /* _L6/ */ _L6;
 } outC_RadioTrackTrainMsgQueue_RBC_Messaging_Pkg;
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _C_DMI_Train_Data_to_int_DATA_Packets_Bothways_H_
 #define _C_DMI_Train_Data_to_int_DATA_Packets_Bothways_H_
@@ -31,11 +31,11 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  array_int64_9 /* _L2/ */ _L2;
-  kcg_int64 /* _L13/ */ _L13;
-  kcg_int64 /* _L14/ */ _L14;
-  kcg_int64 /* _L15/ */ _L15;
-  kcg_int64 /* _L16/ */ _L16;
+  array_int32_9 /* _L2/ */ _L2;
+  kcg_int32 /* _L13/ */ _L13;
+  kcg_int32 /* _L14/ */ _L14;
+  kcg_int32 /* _L15/ */ _L15;
+  kcg_int32 /* _L16/ */ _L16;
   DMI_Train_Data_T_DMI_Messages_Bothways_Pkg /* _L22/ */ _L22;
   M_LOADINGGAUGE /* _L24/ */ _L24;
   M_AIRTIGHT /* _L25/ */ _L25;
@@ -46,7 +46,7 @@ typedef struct {
   NC_TRAIN /* _L30/ */ _L30;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L31/ */ _L31;
   kcg_bool /* _L32/ */ _L32;
-  kcg_int64 /* _L36/ */ _L36;
+  kcg_int32 /* _L36/ */ _L36;
 } outC_C_DMI_Train_Data_to_int_DATA_Packets_Bothways;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -71,6 +71,6 @@ extern void C_DMI_Train_Data_to_int_init_DATA_Packets_Bothways(
 #endif /* _C_DMI_Train_Data_to_int_DATA_Packets_Bothways_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_DMI_Train_Data_to_int_DATA_Packets_Bothways.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

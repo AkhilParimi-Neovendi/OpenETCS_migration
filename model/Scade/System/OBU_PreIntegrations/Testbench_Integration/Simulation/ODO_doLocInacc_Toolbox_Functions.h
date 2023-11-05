@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _ODO_doLocInacc_Toolbox_Functions_H_
 #define _ODO_doLocInacc_Toolbox_Functions_H_
@@ -22,7 +22,7 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L2/ */ _L2;
-  kcg_int64 /* _L9/ */ _L9;
+  kcg_int32 /* _L9/ */ _L9;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L12/ */ _L12;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L13/ */ _L13;
 } outC_ODO_doLocInacc_Toolbox_Functions;
@@ -51,6 +51,6 @@ extern void ODO_doLocInacc_init_Toolbox_Functions(
 #endif /* _ODO_doLocInacc_Toolbox_Functions_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ODO_doLocInacc_Toolbox_Functions.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

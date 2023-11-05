@@ -44,7 +44,7 @@ void Manage_NID_EM_Store_TA_EmergencyStop_NID_EM_Store(
   /* handled/ */
   static kcg_bool _11_handled_partial;
 
-  outC->IfBlock1_clock = add & ((*inStore).nfree > kcg_lit_int64(0));
+  outC->IfBlock1_clock = add & ((*inStore).nfree > kcg_lit_int32(0));
   /* IfBlock1: */
   if (outC->IfBlock1_clock) {
     kcg_copy__51_array(&outC->_L16_then_IfBlock1, &(*inStore).items);
@@ -189,67 +189,67 @@ void Manage_NID_EM_Store_init_TA_EmergencyStop_NID_EM_Store(
   static kcg_size idx11;
 
   outC->IfBlock1_clock = kcg_true;
-  outC->_L10_then_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L9_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L10_then_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L9_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L8_then_else_IfBlock1 = kcg_true;
-  outC->_L5_then_else_IfBlock1.nfree = kcg_lit_int64(0);
+  outC->_L5_then_else_IfBlock1.nfree = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 8; idx3++) {
-    outC->_L5_then_else_IfBlock1.items[idx3].nid_em = kcg_lit_int64(0);
+    outC->_L5_then_else_IfBlock1.items[idx3].nid_em = kcg_lit_int32(0);
     outC->_L5_then_else_IfBlock1.items[idx3].valid = kcg_true;
   }
   outC->_L3_then_else_IfBlock1.handled = kcg_true;
-  outC->_L3_then_else_IfBlock1.nid_em = kcg_lit_int64(0);
-  outC->_L3_then_else_IfBlock1.nfree = kcg_lit_int64(0);
+  outC->_L3_then_else_IfBlock1.nid_em = kcg_lit_int32(0);
+  outC->_L3_then_else_IfBlock1.nfree = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 8; idx4++) {
-    outC->_L4_then_else_IfBlock1[idx4].nid_em = kcg_lit_int64(0);
+    outC->_L4_then_else_IfBlock1[idx4].nid_em = kcg_lit_int32(0);
     outC->_L4_then_else_IfBlock1[idx4].valid = kcg_true;
   }
   outC->_L1_then_else_IfBlock1.handled = kcg_true;
-  outC->_L1_then_else_IfBlock1.nid_em = kcg_lit_int64(0);
-  outC->_L1_then_else_IfBlock1.nfree = kcg_lit_int64(0);
+  outC->_L1_then_else_IfBlock1.nid_em = kcg_lit_int32(0);
+  outC->_L1_then_else_IfBlock1.nfree = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 8; idx5++) {
-    outC->_L2_then_else_IfBlock1[idx5].nid_em = kcg_lit_int64(0);
+    outC->_L2_then_else_IfBlock1[idx5].nid_em = kcg_lit_int32(0);
     outC->_L2_then_else_IfBlock1[idx5].valid = kcg_true;
   }
   outC->_L2_else_else_IfBlock1 = kcg_true;
-  outC->_L1_else_else_IfBlock1.nfree = kcg_lit_int64(0);
+  outC->_L1_else_else_IfBlock1.nfree = kcg_lit_int32(0);
   for (idx6 = 0; idx6 < 8; idx6++) {
-    outC->_L1_else_else_IfBlock1.items[idx6].nid_em = kcg_lit_int64(0);
+    outC->_L1_else_else_IfBlock1.items[idx6].nid_em = kcg_lit_int32(0);
     outC->_L1_else_else_IfBlock1.items[idx6].valid = kcg_true;
   }
   outC->else_clock_IfBlock1 = kcg_true;
   for (idx7 = 0; idx7 < 8; idx7++) {
-    outC->_L5_then_IfBlock1[idx7].nid_em = kcg_lit_int64(0);
+    outC->_L5_then_IfBlock1[idx7].nid_em = kcg_lit_int32(0);
     outC->_L5_then_IfBlock1[idx7].valid = kcg_true;
   }
-  outC->_L4_then_IfBlock1.nfree = kcg_lit_int64(0);
+  outC->_L4_then_IfBlock1.nfree = kcg_lit_int32(0);
   for (idx8 = 0; idx8 < 8; idx8++) {
-    outC->_L4_then_IfBlock1.items[idx8].nid_em = kcg_lit_int64(0);
+    outC->_L4_then_IfBlock1.items[idx8].nid_em = kcg_lit_int32(0);
     outC->_L4_then_IfBlock1.items[idx8].valid = kcg_true;
   }
   outC->_L3_then_IfBlock1.handled = kcg_true;
-  outC->_L3_then_IfBlock1.nid_em = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock1.nfree = kcg_lit_int64(0);
+  outC->_L3_then_IfBlock1.nid_em = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock1.nfree = kcg_lit_int32(0);
   outC->_L1_then_IfBlock1.handled = kcg_true;
-  outC->_L1_then_IfBlock1.nid_em = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock1.nfree = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1.nid_em = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock1.nfree = kcg_lit_int32(0);
   for (idx9 = 0; idx9 < 8; idx9++) {
-    outC->_L2_then_IfBlock1[idx9].nid_em = kcg_lit_int64(0);
+    outC->_L2_then_IfBlock1[idx9].nid_em = kcg_lit_int32(0);
     outC->_L2_then_IfBlock1[idx9].valid = kcg_true;
   }
   outC->_L13_then_IfBlock1 = kcg_true;
-  outC->_L12_then_IfBlock1 = kcg_lit_int64(0);
-  outC->_L11_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L12_then_IfBlock1 = kcg_lit_int32(0);
+  outC->_L11_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L15_then_IfBlock1.handled = kcg_true;
-  outC->_L15_then_IfBlock1.nid_em = kcg_lit_int64(0);
-  outC->_L15_then_IfBlock1.nfree = kcg_lit_int64(0);
+  outC->_L15_then_IfBlock1.nid_em = kcg_lit_int32(0);
+  outC->_L15_then_IfBlock1.nfree = kcg_lit_int32(0);
   for (idx10 = 0; idx10 < 8; idx10++) {
-    outC->_L16_then_IfBlock1[idx10].nid_em = kcg_lit_int64(0);
+    outC->_L16_then_IfBlock1[idx10].nid_em = kcg_lit_int32(0);
     outC->_L16_then_IfBlock1[idx10].valid = kcg_true;
   }
-  outC->outStore.nfree = kcg_lit_int64(0);
+  outC->outStore.nfree = kcg_lit_int32(0);
   for (idx11 = 0; idx11 < 8; idx11++) {
-    outC->outStore.items[idx11].nid_em = kcg_lit_int64(0);
+    outC->outStore.items[idx11].nid_em = kcg_lit_int32(0);
     outC->outStore.items[idx11].valid = kcg_true;
   }
   outC->handled = kcg_true;

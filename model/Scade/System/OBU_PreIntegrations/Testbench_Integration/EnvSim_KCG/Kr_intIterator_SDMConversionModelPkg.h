@@ -17,7 +17,7 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   kcg_bool /* goOn/ */ goOn;
-  kcg_int64 /* m_now/ */ m_now;
+  kcg_int32 /* m_now/ */ m_now;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -32,7 +32,7 @@ typedef struct {
   kcg_bool /* _L2/ */ _L2;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L8/ */ _L8;
   A_internal_Type_Obu_BasicTypes_Pkg /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   kcg_bool /* _L11/ */ _L11;
   kcg_bool /* _L12/ */ _L12;
   A_internal_Type_Obu_BasicTypes_Pkg /* _L16/ */ _L16;
@@ -42,7 +42,7 @@ typedef struct {
 /* SDMConversionModelPkg::Kr_intIterator/ */
 extern void Kr_intIterator_SDMConversionModelPkg(
   /* m_last/ */
-  kcg_int64 m_last,
+  kcg_int32 m_last,
   /* Kr_int/ */
   nvkrint_T_Packet_Types_Pkg *Kr_int,
   /* L/ */

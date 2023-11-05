@@ -28,7 +28,7 @@ typedef struct {
   NID_MESSAGE /* _L8/ */ _L8;
   MetadataTruthtable_T1_CheckEuroradioMessage /* _L9/ */ _L9;
   kcg_bool /* _L11/ */ _L11;
-  array_int64_30 /* _L12/ */ _L12;
+  array_int32_30 /* _L12/ */ _L12;
   array_bool_256_46_30 /* _L13/ */ _L13;
   kcg_bool /* _L14/ */ _L14;
 } outC_CheckAllowedPacketsRadio_CheckEuroradioMessage;

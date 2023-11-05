@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _Bool_to_Int_Utilities_H_
 #define _Bool_to_Int_Utilities_H_
@@ -14,7 +14,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* int_out/ */ int_out;
+  kcg_int32 /* int_out/ */ int_out;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
@@ -24,11 +24,11 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   kcg_bool /* IfBlock1:then:_L2/ */ _L2_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L2/ */ _L2_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L2/ */ _L2_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:_L1/ */ _L1_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L2/ */ _L2_then_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L1/ */ _L1_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L1/ */ _L1_then_else_IfBlock1;
   kcg_bool /* errorLocal/ */ errorLocal;
   kcg_bool /* _L1/ */ _L1;
 } outC_Bool_to_Int_Utilities;
@@ -53,6 +53,6 @@ extern void Bool_to_Int_init_Utilities(outC_Bool_to_Int_Utilities *outC);
 #endif /* _Bool_to_Int_Utilities_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Bool_to_Int_Utilities.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

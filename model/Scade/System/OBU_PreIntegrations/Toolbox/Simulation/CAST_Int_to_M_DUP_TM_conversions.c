@@ -10,7 +10,7 @@
 /* TM_conversions::CAST_Int_to_M_DUP/ */
 void CAST_Int_to_M_DUP_TM_conversions(
   /* int_in/ */
-  kcg_int64 int_in,
+  kcg_int32 int_in,
   outC_CAST_Int_to_M_DUP_TM_conversions *outC)
 {
   /* m_dup/ */
@@ -114,9 +114,9 @@ void CAST_Int_to_M_DUP_init_TM_conversions(
   outC_CAST_Int_to_M_DUP_TM_conversions *outC)
 {
   outC->_L3 = kcg_true;
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
   outC->error = kcg_true;
-  outC->m_dup_in = kcg_lit_int64(0);
+  outC->m_dup_in = kcg_lit_int32(0);
   outC->IfBlock1_clock = kcg_true;
   outC->_L6_then_else_IfBlock1 = kcg_true;
   outC->_L5_then_else_IfBlock1 = M_DUP_No_duplicates;

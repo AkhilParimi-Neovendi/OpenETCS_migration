@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_RBC_Scenario_Pkg_H_
 #define _UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_RBC_Scenario_Pkg_H_
@@ -28,7 +28,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* outTriggerId/ */ outTriggerId;
+  kcg_int32 /* outTriggerId/ */ outTriggerId;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -49,24 +49,24 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   NID_LRBG /* _L2/ */ _L2;
-  kcg_float64 /* _L3/ */ _L3;
-  kcg_int64 /* _L35/ */ _L35;
+  kcg_float32 /* _L3/ */ _L3;
+  kcg_int32 /* _L35/ */ _L35;
   T_TRAIN /* _L37/ */ _L37;
-  kcg_int64 /* _L38/ */ _L38;
-  kcg_int64 /* _L39/ */ _L39;
-  kcg_int64 /* _L40/ */ _L40;
-  kcg_int64 /* _L42/ */ _L42;
-  kcg_int64 /* _L43/ */ _L43;
-  kcg_int64 /* _L44/ */ _L44;
-  kcg_int64 /* _L45/ */ _L45;
-  kcg_int64 /* _L46/ */ _L46;
-  kcg_int64 /* _L47/ */ _L47;
-  kcg_int64 /* _L50/ */ _L50;
-  kcg_int64 /* _L51/ */ _L51;
-  kcg_int64 /* _L52/ */ _L52;
-  kcg_int64 /* _L53/ */ _L53;
+  kcg_int32 /* _L38/ */ _L38;
+  kcg_int32 /* _L39/ */ _L39;
+  kcg_int32 /* _L40/ */ _L40;
+  kcg_int32 /* _L42/ */ _L42;
+  kcg_int32 /* _L43/ */ _L43;
+  kcg_int32 /* _L44/ */ _L44;
+  kcg_int32 /* _L45/ */ _L45;
+  kcg_int32 /* _L46/ */ _L46;
+  kcg_int32 /* _L47/ */ _L47;
+  kcg_int32 /* _L50/ */ _L50;
+  kcg_int32 /* _L51/ */ _L51;
+  kcg_int32 /* _L52/ */ _L52;
+  kcg_int32 /* _L53/ */ _L53;
 } outC_UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_RBC_Scenario_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -75,7 +75,7 @@ extern void UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessa
   /* inLRBG/ */
   NID_LRBG inLRBG,
   /* inDistanceToLRBG/ */
-  kcg_float64 inDistanceToLRBG,
+  kcg_float32 inDistanceToLRBG,
   /* inRBCTime/ */
   T_TRAIN inRBCTime,
   outC_UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_RBC_Scenario_Pkg *outC);
@@ -121,6 +121,6 @@ extern void kcg_load_SV_UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTra
 #endif /* _UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_RBC_Scenario_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_RBC_Scenario_Pkg.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

@@ -90,11 +90,11 @@ void C_P005_ForCalcTrainPos_init_TM_conversions(
   static kcg_size idx9;
 
   for (idx1 = 0; idx1 < 33; idx1++) {
-    outC->_L24[idx1] = kcg_lit_int64(0);
+    outC->_L24[idx1] = kcg_lit_int32(0);
   }
-  outC->_L23 = kcg_lit_int64(0);
+  outC->_L23 = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 33; idx2++) {
-    outC->_L22[idx2] = kcg_lit_int64(0);
+    outC->_L22[idx2] = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 33; idx3++) {
     outC->_L21[idx3] = Q_SCALE_10_cm_scale;
@@ -104,80 +104,80 @@ void C_P005_ForCalcTrainPos_init_TM_conversions(
   }
   for (idx5 = 0; idx5 < 33; idx5++) {
     outC->_L18[idx5].valid = kcg_true;
-    outC->_L18[idx5].d_link = kcg_lit_int64(0);
+    outC->_L18[idx5].d_link = kcg_lit_int32(0);
     outC->_L18[idx5].q_newcountry =
       Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-    outC->_L18[idx5].nid_c = kcg_lit_int64(0);
-    outC->_L18[idx5].nid_bg = kcg_lit_int64(0);
+    outC->_L18[idx5].nid_c = kcg_lit_int32(0);
+    outC->_L18[idx5].nid_bg = kcg_lit_int32(0);
     outC->_L18[idx5].q_linkorientation =
       Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction;
     outC->_L18[idx5].q_linkreaction = Q_LINKREACTION_Train_trip;
-    outC->_L18[idx5].q_locacc = kcg_lit_int64(0);
+    outC->_L18[idx5].q_locacc = kcg_lit_int32(0);
   }
   outC->_L6 = kcg_true;
   outC->_L7 = Q_DIR_Reverse;
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L8 = kcg_lit_int32(0);
   outC->_L9 = Q_SCALE_10_cm_scale;
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L10 = kcg_lit_int32(0);
   for (idx6 = 0; idx6 < 33; idx6++) {
     outC->_L11[idx6].valid = kcg_true;
-    outC->_L11[idx6].d_link = kcg_lit_int64(0);
+    outC->_L11[idx6].d_link = kcg_lit_int32(0);
     outC->_L11[idx6].q_newcountry =
       Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-    outC->_L11[idx6].nid_c = kcg_lit_int64(0);
-    outC->_L11[idx6].nid_bg = kcg_lit_int64(0);
+    outC->_L11[idx6].nid_c = kcg_lit_int32(0);
+    outC->_L11[idx6].nid_bg = kcg_lit_int32(0);
     outC->_L11[idx6].q_linkorientation =
       Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction;
     outC->_L11[idx6].q_linkreaction = Q_LINKREACTION_Train_trip;
-    outC->_L11[idx6].q_locacc = kcg_lit_int64(0);
+    outC->_L11[idx6].q_locacc = kcg_lit_int32(0);
   }
   for (idx7 = 0; idx7 < 33; idx7++) {
     outC->_L4[idx7].valid = kcg_true;
-    outC->_L4[idx7].nid_LRBG = kcg_lit_int64(0);
+    outC->_L4[idx7].nid_LRBG = kcg_lit_int32(0);
     outC->_L4[idx7].q_dir = Q_DIR_Reverse;
     outC->_L4[idx7].q_scale = Q_SCALE_10_cm_scale;
-    outC->_L4[idx7].d_link = kcg_lit_int64(0);
+    outC->_L4[idx7].d_link = kcg_lit_int32(0);
     outC->_L4[idx7].q_newcountry =
       Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-    outC->_L4[idx7].nid_c = kcg_lit_int64(0);
-    outC->_L4[idx7].nid_bg = kcg_lit_int64(0);
+    outC->_L4[idx7].nid_c = kcg_lit_int32(0);
+    outC->_L4[idx7].nid_bg = kcg_lit_int32(0);
     outC->_L4[idx7].q_linkorientation =
       Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction;
     outC->_L4[idx7].q_linkreaction = Q_LINKREACTION_Train_trip;
-    outC->_L4[idx7].q_locacc = kcg_lit_int64(0);
+    outC->_L4[idx7].q_locacc = kcg_lit_int32(0);
   }
   outC->_L2.valid = kcg_true;
   outC->_L2.q_dir = Q_DIR_Reverse;
-  outC->_L2.l_packet = kcg_lit_int64(0);
+  outC->_L2.l_packet = kcg_lit_int32(0);
   outC->_L2.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L2.n_iter = kcg_lit_int64(0);
+  outC->_L2.n_iter = kcg_lit_int32(0);
   for (idx8 = 0; idx8 < 33; idx8++) {
     outC->_L2.sections[idx8].valid = kcg_true;
-    outC->_L2.sections[idx8].d_link = kcg_lit_int64(0);
+    outC->_L2.sections[idx8].d_link = kcg_lit_int32(0);
     outC->_L2.sections[idx8].q_newcountry =
       Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-    outC->_L2.sections[idx8].nid_c = kcg_lit_int64(0);
-    outC->_L2.sections[idx8].nid_bg = kcg_lit_int64(0);
+    outC->_L2.sections[idx8].nid_c = kcg_lit_int32(0);
+    outC->_L2.sections[idx8].nid_bg = kcg_lit_int32(0);
     outC->_L2.sections[idx8].q_linkorientation =
       Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction;
     outC->_L2.sections[idx8].q_linkreaction = Q_LINKREACTION_Train_trip;
-    outC->_L2.sections[idx8].q_locacc = kcg_lit_int64(0);
+    outC->_L2.sections[idx8].q_locacc = kcg_lit_int32(0);
   }
-  outC->_L1 = kcg_lit_int64(0);
+  outC->_L1 = kcg_lit_int32(0);
   for (idx9 = 0; idx9 < 33; idx9++) {
     outC->LinkedBGsOUT[idx9].valid = kcg_true;
-    outC->LinkedBGsOUT[idx9].nid_LRBG = kcg_lit_int64(0);
+    outC->LinkedBGsOUT[idx9].nid_LRBG = kcg_lit_int32(0);
     outC->LinkedBGsOUT[idx9].q_dir = Q_DIR_Reverse;
     outC->LinkedBGsOUT[idx9].q_scale = Q_SCALE_10_cm_scale;
-    outC->LinkedBGsOUT[idx9].d_link = kcg_lit_int64(0);
+    outC->LinkedBGsOUT[idx9].d_link = kcg_lit_int32(0);
     outC->LinkedBGsOUT[idx9].q_newcountry =
       Q_NEWCOUNTRY_Same_country__or__railway_administration_no_NID_C_follows;
-    outC->LinkedBGsOUT[idx9].nid_c = kcg_lit_int64(0);
-    outC->LinkedBGsOUT[idx9].nid_bg = kcg_lit_int64(0);
+    outC->LinkedBGsOUT[idx9].nid_c = kcg_lit_int32(0);
+    outC->LinkedBGsOUT[idx9].nid_bg = kcg_lit_int32(0);
     outC->LinkedBGsOUT[idx9].q_linkorientation =
       Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_reverse_direction;
     outC->LinkedBGsOUT[idx9].q_linkreaction = Q_LINKREACTION_Train_trip;
-    outC->LinkedBGsOUT[idx9].q_locacc = kcg_lit_int64(0);
+    outC->LinkedBGsOUT[idx9].q_locacc = kcg_lit_int32(0);
   }
   for (idx = 0; idx < 33; idx++) {
     /* _L4=(TM_conversions::C_P005_LinkedBGs#1)/ */

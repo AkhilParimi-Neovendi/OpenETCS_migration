@@ -240,7 +240,7 @@ void initiateSession_v2_MoRC_Pck_Subfunc_Pkg(
         outC->_L7_else_else_else_IfBlock1 = kcg_lit_int32(0);
         outC->Input1_NumericToInt64_1_int32 = outC->_L7_else_else_else_IfBlock1;
         outC->_L1_NumericToInt64_1_int32 = outC->Input1_NumericToInt64_1_int32;
-        outC->_L2_NumericToInt64_1_int32 = /* @1/_L2= */(kcg_int64)
+        outC->_L2_NumericToInt64_1_int32 = /* @1/_L2= */(kcg_int32)
             outC->_L1_NumericToInt64_1_int32;
         outC->Output1_NumericToInt64_1_int32 = outC->_L2_NumericToInt64_1_int32;
         outC->_L1_else_else_else_IfBlock1 = kcg_false;
@@ -462,7 +462,7 @@ void initiateSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L226.rbc_id = kcg_lit_int32(0);
   outC->_L226.device_id = kcg_lit_int32(0);
   outC->_L225 = kcg_lit_int32(0);
-  outC->_L224 = kcg_lit_int64(0);
+  outC->_L224 = kcg_lit_int32(0);
   outC->_L223 = kcg_lit_int32(0);
   outC->_L222 = Q_RBC_Terminate_communication_session;
   outC->_L220.valid = kcg_true;
@@ -477,7 +477,7 @@ void initiateSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L219.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L219.nid_c = kcg_lit_int32(0);
   outC->_L219.nid_RBC = kcg_lit_int32(0);
-  outC->_L219.nid_radio = kcg_lit_int64(0);
+  outC->_L219.nid_radio = kcg_lit_int32(0);
   outC->_L219.q_sleepsession = Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L219.origin.valid = kcg_true;
   outC->_L219.origin.nid_c = kcg_lit_int32(0);
@@ -492,7 +492,7 @@ void initiateSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L215.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L215.nid_c = kcg_lit_int32(0);
   outC->_L215.nid_rbc = kcg_lit_int32(0);
-  outC->_L215.nid_radio = kcg_lit_int64(0);
+  outC->_L215.nid_radio = kcg_lit_int32(0);
   outC->_L215.origin.valid = kcg_true;
   outC->_L215.origin.nid_c = kcg_lit_int32(0);
   outC->_L215.origin.rbc_id = kcg_lit_int32(0);
@@ -509,7 +509,7 @@ void initiateSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L215.p42.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L215.p42.nid_c = kcg_lit_int32(0);
   outC->_L215.p42.nid_RBC = kcg_lit_int32(0);
-  outC->_L215.p42.nid_radio = kcg_lit_int64(0);
+  outC->_L215.p42.nid_radio = kcg_lit_int32(0);
   outC->_L215.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L215.p42.origin.valid = kcg_true;
@@ -547,7 +547,7 @@ void initiateSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L184.phase = sp_terminated_RCM_Session_Types_Pkg;
   outC->_L184.nid_c = kcg_lit_int32(0);
   outC->_L184.nid_rbc = kcg_lit_int32(0);
-  outC->_L184.nid_radio = kcg_lit_int64(0);
+  outC->_L184.nid_radio = kcg_lit_int32(0);
   outC->_L185 = kcg_true;
   outC->_L152.atPowerUp = kcg_true;
   outC->_L152.atPowerDown = kcg_true;
@@ -612,7 +612,7 @@ void initiateSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L99.phase = sp_terminated_RCM_Session_Types_Pkg;
   outC->_L99.nid_c = kcg_lit_int32(0);
   outC->_L99.nid_rbc = kcg_lit_int32(0);
-  outC->_L99.nid_radio = kcg_lit_int64(0);
+  outC->_L99.nid_radio = kcg_lit_int32(0);
   outC->_L97.valid = kcg_true;
   outC->_L97.msgSrc = msrc_undefined_Common_Types_Pkg;
   outC->_L97.origin.valid = kcg_true;
@@ -625,7 +625,7 @@ void initiateSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L96.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L96.nid_c = kcg_lit_int32(0);
   outC->_L96.nid_RBC = kcg_lit_int32(0);
-  outC->_L96.nid_radio = kcg_lit_int64(0);
+  outC->_L96.nid_radio = kcg_lit_int32(0);
   outC->_L96.q_sleepsession = Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L96.origin.valid = kcg_true;
   outC->_L96.origin.nid_c = kcg_lit_int32(0);
@@ -636,7 +636,7 @@ void initiateSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->origin.nid_c = kcg_lit_int32(0);
   outC->origin.rbc_id = kcg_lit_int32(0);
   outC->origin.device_id = kcg_lit_int32(0);
-  outC->nid_radio = kcg_lit_int64(0);
+  outC->nid_radio = kcg_lit_int32(0);
   outC->nid_rbc = kcg_lit_int32(0);
   outC->nid_c = kcg_lit_int32(0);
   outC->initiateSessionFromRBC = kcg_true;
@@ -651,12 +651,12 @@ void initiateSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L4_then_else_IfBlock1 = sp_terminated_RCM_Session_Types_Pkg;
   outC->_L5_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L6_then_else_IfBlock1 = kcg_lit_int32(0);
-  outC->_L7_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L7_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L1_then_else_IfBlock1.valid = kcg_true;
   outC->_L1_then_else_IfBlock1.phase = sp_terminated_RCM_Session_Types_Pkg;
   outC->_L1_then_else_IfBlock1.nid_c = kcg_lit_int32(0);
   outC->_L1_then_else_IfBlock1.nid_rbc = kcg_lit_int32(0);
-  outC->_L1_then_else_IfBlock1.nid_radio = kcg_lit_int64(0);
+  outC->_L1_then_else_IfBlock1.nid_radio = kcg_lit_int32(0);
   outC->else_clock_else_IfBlock1 = kcg_true;
   outC->_L1_else_else_else_IfBlock1 = kcg_true;
   outC->_L6_else_else_else_IfBlock1.valid = kcg_true;
@@ -664,7 +664,7 @@ void initiateSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L6_else_else_else_IfBlock1.rbc_id = kcg_lit_int32(0);
   outC->_L6_else_else_else_IfBlock1.device_id = kcg_lit_int32(0);
   outC->_L7_else_else_else_IfBlock1 = kcg_lit_int32(0);
-  outC->_L8_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L8_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L1_then_else_else_IfBlock1.valid = kcg_true;
   outC->_L1_then_else_else_IfBlock1.msgSrc = msrc_undefined_Common_Types_Pkg;
   outC->_L1_then_else_else_IfBlock1.origin.valid = kcg_true;
@@ -679,11 +679,11 @@ void initiateSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L11_then_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L10_then_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L9_then_else_else_IfBlock1 = kcg_true;
-  outC->_L14_then_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L14_then_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L16_then_else_else_IfBlock1.valid = kcg_true;
   outC->_L16_then_else_else_IfBlock1.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L16_then_else_else_IfBlock1.status = mcs_disconnected_RCM_Types_Pkg;
-  outC->_L16_then_else_else_IfBlock1.nid_radio = kcg_lit_int64(0);
+  outC->_L16_then_else_else_IfBlock1.nid_radio = kcg_lit_int32(0);
   outC->_L16_then_else_else_IfBlock1.settingUpConnectionHasFailed = kcg_true;
   outC->_L16_then_else_else_IfBlock1.connectionLost = kcg_true;
   outC->_L16_then_else_else_IfBlock1.isInRadioHole = kcg_true;
@@ -694,7 +694,7 @@ void initiateSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L1_then_IfBlock1.q_rbc = Q_RBC_Terminate_communication_session;
   outC->_L1_then_IfBlock1.nid_c = kcg_lit_int32(0);
   outC->_L1_then_IfBlock1.nid_RBC = kcg_lit_int32(0);
-  outC->_L1_then_IfBlock1.nid_radio = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1.nid_radio = kcg_lit_int32(0);
   outC->_L1_then_IfBlock1.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->_L1_then_IfBlock1.origin.valid = kcg_true;
@@ -710,13 +710,13 @@ void initiateSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L8_then_IfBlock1.phase = sp_terminated_RCM_Session_Types_Pkg;
   outC->_L8_then_IfBlock1.nid_c = kcg_lit_int32(0);
   outC->_L8_then_IfBlock1.nid_rbc = kcg_lit_int32(0);
-  outC->_L8_then_IfBlock1.nid_radio = kcg_lit_int64(0);
+  outC->_L8_then_IfBlock1.nid_radio = kcg_lit_int32(0);
   outC->_L9_then_IfBlock1 = kcg_lit_int32(0);
-  outC->_L10_then_IfBlock1 = kcg_lit_int64(0);
-  outC->_L11_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L10_then_IfBlock1 = kcg_lit_int32(0);
+  outC->_L11_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L12_then_IfBlock1 = kcg_true;
-  outC->_L13_then_IfBlock1 = kcg_lit_int64(0);
-  outC->_L14_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L13_then_IfBlock1 = kcg_lit_int32(0);
+  outC->_L14_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L15_then_IfBlock1.valid = kcg_true;
   outC->_L15_then_IfBlock1.nid_c = kcg_lit_int32(0);
   outC->_L15_then_IfBlock1.rbc_id = kcg_lit_int32(0);
@@ -725,16 +725,16 @@ void initiateSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->_L17_then_IfBlock1 = kcg_true;
   outC->_L18_then_IfBlock1 = kcg_true;
   outC->_L1_NumericToInt64_1_int32 = kcg_lit_int32(0);
-  outC->_L2_NumericToInt64_1_int32 = kcg_lit_int64(0);
+  outC->_L2_NumericToInt64_1_int32 = kcg_lit_int32(0);
   outC->Input1_NumericToInt64_1_int32 = kcg_lit_int32(0);
-  outC->Output1_NumericToInt64_1_int32 = kcg_lit_int64(0);
+  outC->Output1_NumericToInt64_1_int32 = kcg_lit_int32(0);
   outC->sessionEstablishCmd.valid = kcg_true;
   outC->sessionEstablishCmd.initiatedByOBU = kcg_true;
   outC->sessionEstablishCmd.initiatedByRBC = kcg_true;
   outC->sessionEstablishCmd.q_rbc = Q_RBC_Terminate_communication_session;
   outC->sessionEstablishCmd.nid_c = kcg_lit_int32(0);
   outC->sessionEstablishCmd.nid_rbc = kcg_lit_int32(0);
-  outC->sessionEstablishCmd.nid_radio = kcg_lit_int64(0);
+  outC->sessionEstablishCmd.nid_radio = kcg_lit_int32(0);
   outC->sessionEstablishCmd.origin.valid = kcg_true;
   outC->sessionEstablishCmd.origin.nid_c = kcg_lit_int32(0);
   outC->sessionEstablishCmd.origin.rbc_id = kcg_lit_int32(0);
@@ -751,7 +751,7 @@ void initiateSession_v2_init_MoRC_Pck_Subfunc_Pkg(
   outC->sessionEstablishCmd.p42.q_rbc = Q_RBC_Terminate_communication_session;
   outC->sessionEstablishCmd.p42.nid_c = kcg_lit_int32(0);
   outC->sessionEstablishCmd.p42.nid_RBC = kcg_lit_int32(0);
-  outC->sessionEstablishCmd.p42.nid_radio = kcg_lit_int64(0);
+  outC->sessionEstablishCmd.p42.nid_radio = kcg_lit_int32(0);
   outC->sessionEstablishCmd.p42.q_sleepsession =
     Q_SLEEPSESSION_Ignore_session_establishment_order;
   outC->sessionEstablishCmd.p42.origin.valid = kcg_true;

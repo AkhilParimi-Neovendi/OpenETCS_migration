@@ -25,7 +25,7 @@ typedef struct {
   Q_MARQSTREASON /* _L7/ */ _L7;
   trainProperties_T_TrainPosition_Types_Pck /* _L5/ */ _L5;
   T_TRAIN /* _L4/ */ _L4;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   NID_ENGINE /* _L2/ */ _L2;
   kcg_bool /* _L1/ */ _L1;
   NID_EM /* _L9/ */ _L9;

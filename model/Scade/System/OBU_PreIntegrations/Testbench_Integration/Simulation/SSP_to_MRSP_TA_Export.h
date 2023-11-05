@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _SSP_to_MRSP_TA_Export_H_
 #define _SSP_to_MRSP_TA_Export_H_
@@ -22,12 +22,12 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   StaticSpeedProfile_t_TrackAtlasTypes /* _L3/ */ _L3;
   MRSP_Profile_t_TrackAtlasTypes /* _L4/ */ _L4;
   MRSP_Profile_t_TrackAtlasTypes /* _L5/ */ _L5;
   StaticSpeedSection_t_TrackAtlasTypes /* _L7/ */ _L7;
-  kcg_int64 /* _L8/ */ _L8;
+  kcg_int32 /* _L8/ */ _L8;
   V_internal_Type_Obu_BasicTypes_Pkg /* _L18/ */ _L18;
   kcg_bool /* _L17/ */ _L17;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L16/ */ _L16;
@@ -40,7 +40,7 @@ typedef struct {
 /* TA_Export::SSP_to_MRSP/ */
 extern void SSP_to_MRSP_TA_Export(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* MRSP_init/ */
   MRSP_Profile_t_TrackAtlasTypes *MRSP_init,
   /* SSP/ */
@@ -60,6 +60,6 @@ extern void SSP_to_MRSP_init_TA_Export(outC_SSP_to_MRSP_TA_Export *outC);
 #endif /* _SSP_to_MRSP_TA_Export_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** SSP_to_MRSP_TA_Export.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

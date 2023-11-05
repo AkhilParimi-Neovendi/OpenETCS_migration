@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _Get_Position_of_LRBG_TA_Lib_internal_H_
 #define _Get_Position_of_LRBG_TA_Lib_internal_H_
@@ -27,16 +27,16 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   kcg_bool /* _L3/ */ _L3;
   kcg_bool /* _L2/ */ _L2;
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   positionedBGs_T_TrainPosition_Types_Pck /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L6/ */ _L6;
   ReceivedMessage_T_Common_Types_Pkg /* _L7/ */ _L7;
   positionedBG_T_TrainPosition_Types_Pck /* _L8/ */ _L8;
   kcg_bool /* _L9/ */ _L9;
   Q_LINK /* _L10/ */ _L10;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L12/ */ _L12;
   kcg_bool /* _L13/ */ _L13;
   infoFromLinking_T_TrainPosition_Types_Pck /* _L14/ */ _L14;
   passedBG_T_BG_Types_Pkg /* _L15/ */ _L15;
@@ -70,6 +70,6 @@ extern void Get_Position_of_LRBG_init_TA_Lib_internal(
 #endif /* _Get_Position_of_LRBG_TA_Lib_internal_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Get_Position_of_LRBG_TA_Lib_internal.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

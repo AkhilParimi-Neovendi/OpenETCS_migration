@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -17,7 +17,7 @@ void extractTargetsFromMRSP_TargetManagement_pkg_internalOperators(
   static kcg_size idx1;
   static extractTargetsMRSPACC_TargetManagement_pkg acc;
   static kcg_size idx2;
-  static kcg_int64 noname;
+  static kcg_int32 noname;
 
   /* _L24/ */
   for (idx = 0; idx < 110; idx++) {
@@ -32,7 +32,7 @@ void extractTargetsFromMRSP_TargetManagement_pkg_internalOperators(
   for (idx1 = 0; idx1 < 110; idx1++) {
     kcg_copy_MRSP_internal_T_TargetManagement_types(&outC->_L14[idx1], &outC->_L7);
   }
-  outC->_L13 = kcg_lit_int64(-1);
+  outC->_L13 = kcg_lit_int32(-1);
   kcg_copy_Target_list_MRSP_real_T_TargetManagement_types(
     &outC->_L12.targetList,
     &outC->_L24);
@@ -45,14 +45,14 @@ void extractTargetsFromMRSP_TargetManagement_pkg_internalOperators(
       kcg_copy_extractTargetsMRSPACC_TargetManagement_pkg(&acc, &outC->_L1);
       /* _L3=(TargetManagement_pkg::internalOperators::extractTargetsFromMRSPInt#1)/ */
       extractTargetsFromMRSPInt_TargetManagement_pkg_internalOperators(
-        /* _L3= */(kcg_int64) idx2,
+        /* _L3= */(kcg_int32) idx2,
         &acc,
         &outC->_L14[idx2],
         &outC->Context_extractTargetsFromMRSPInt_1[idx2]);
       kcg_copy_extractTargetsMRSPACC_TargetManagement_pkg(
         &outC->_L1,
         &outC->Context_extractTargetsFromMRSPInt_1[idx2].ACCUout);
-      outC->_L3 = /* _L3= */(kcg_int64) (idx2 + 1);
+      outC->_L3 = /* _L3= */(kcg_int32) (idx2 + 1);
       /* _L3= */
       if (!outC->Context_extractTargetsFromMRSPInt_1[idx2].endCondition) {
         break;
@@ -60,7 +60,7 @@ void extractTargetsFromMRSP_TargetManagement_pkg_internalOperators(
     }
   }
   else {
-    outC->_L3 = kcg_lit_int64(0);
+    outC->_L3 = kcg_lit_int32(0);
   }
   kcg_copy_extractTargetsMRSPACC_TargetManagement_pkg(
     &outC->TargetsOfMRSP,
@@ -84,47 +84,47 @@ void extractTargetsFromMRSP_init_TargetManagement_pkg_internalOperators(
 
   for (idx1 = 0; idx1 < 110; idx1++) {
     outC->_L24[idx1].targetType = EoA_TargetManagement_types;
-    outC->_L24[idx1].distance = kcg_lit_float64(0.0);
-    outC->_L24[idx1].speed = kcg_lit_float64(0.0);
+    outC->_L24[idx1].distance = kcg_lit_float32(0.0);
+    outC->_L24[idx1].speed = kcg_lit_float32(0.0);
   }
   outC->_L22 = kcg_true;
   for (idx2 = 0; idx2 < 110; idx2++) {
-    outC->_L21[idx2].Loc_Abs = kcg_lit_float64(0.0);
-    outC->_L21[idx2].MRS = kcg_lit_float64(0.0);
+    outC->_L21[idx2].Loc_Abs = kcg_lit_float32(0.0);
+    outC->_L21[idx2].MRS = kcg_lit_float32(0.0);
     outC->_L21[idx2].valid = kcg_true;
   }
   for (idx4 = 0; idx4 < 110; idx4++) {
     for (idx3 = 0; idx3 < 110; idx3++) {
-      outC->_L14[idx4][idx3].Loc_Abs = kcg_lit_float64(0.0);
-      outC->_L14[idx4][idx3].MRS = kcg_lit_float64(0.0);
+      outC->_L14[idx4][idx3].Loc_Abs = kcg_lit_float32(0.0);
+      outC->_L14[idx4][idx3].MRS = kcg_lit_float32(0.0);
       outC->_L14[idx4][idx3].valid = kcg_true;
     }
   }
-  outC->_L13 = kcg_lit_int64(0);
+  outC->_L13 = kcg_lit_int32(0);
   for (idx5 = 0; idx5 < 110; idx5++) {
     outC->_L12.targetList[idx5].targetType = EoA_TargetManagement_types;
-    outC->_L12.targetList[idx5].distance = kcg_lit_float64(0.0);
-    outC->_L12.targetList[idx5].speed = kcg_lit_float64(0.0);
+    outC->_L12.targetList[idx5].distance = kcg_lit_float32(0.0);
+    outC->_L12.targetList[idx5].speed = kcg_lit_float32(0.0);
   }
-  outC->_L12.lastInsertedTargetIndex = kcg_lit_int64(0);
+  outC->_L12.lastInsertedTargetIndex = kcg_lit_int32(0);
   for (idx6 = 0; idx6 < 110; idx6++) {
-    outC->_L7[idx6].Loc_Abs = kcg_lit_float64(0.0);
-    outC->_L7[idx6].MRS = kcg_lit_float64(0.0);
+    outC->_L7[idx6].Loc_Abs = kcg_lit_float32(0.0);
+    outC->_L7[idx6].MRS = kcg_lit_float32(0.0);
     outC->_L7[idx6].valid = kcg_true;
   }
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
   for (idx7 = 0; idx7 < 110; idx7++) {
     outC->_L1.targetList[idx7].targetType = EoA_TargetManagement_types;
-    outC->_L1.targetList[idx7].distance = kcg_lit_float64(0.0);
-    outC->_L1.targetList[idx7].speed = kcg_lit_float64(0.0);
+    outC->_L1.targetList[idx7].distance = kcg_lit_float32(0.0);
+    outC->_L1.targetList[idx7].speed = kcg_lit_float32(0.0);
   }
-  outC->_L1.lastInsertedTargetIndex = kcg_lit_int64(0);
+  outC->_L1.lastInsertedTargetIndex = kcg_lit_int32(0);
   for (idx8 = 0; idx8 < 110; idx8++) {
     outC->TargetsOfMRSP.targetList[idx8].targetType = EoA_TargetManagement_types;
-    outC->TargetsOfMRSP.targetList[idx8].distance = kcg_lit_float64(0.0);
-    outC->TargetsOfMRSP.targetList[idx8].speed = kcg_lit_float64(0.0);
+    outC->TargetsOfMRSP.targetList[idx8].distance = kcg_lit_float32(0.0);
+    outC->TargetsOfMRSP.targetList[idx8].speed = kcg_lit_float32(0.0);
   }
-  outC->TargetsOfMRSP.lastInsertedTargetIndex = kcg_lit_int64(0);
+  outC->TargetsOfMRSP.lastInsertedTargetIndex = kcg_lit_int32(0);
   for (idx = 0; idx < 110; idx++) {
     /* _L3=(TargetManagement_pkg::internalOperators::extractTargetsFromMRSPInt#1)/ */
     extractTargetsFromMRSPInt_init_TargetManagement_pkg_internalOperators(
@@ -152,6 +152,6 @@ void extractTargetsFromMRSP_reset_TargetManagement_pkg_internalOperators(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** extractTargetsFromMRSP_TargetManagement_pkg_internalOperators.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _C_DMI_Level_Data_to_int_DATA_Packets_Bothways_H_
 #define _C_DMI_Level_Data_to_int_DATA_Packets_Bothways_H_
@@ -28,11 +28,11 @@ typedef struct {
   kcg_bool /* _L4/ */ _L4;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L3/ */ _L3;
   DMI_level_T_DMI_Types_Pkg /* _L2/ */ _L2;
-  kcg_int64 /* _L11/ */ _L11;
+  kcg_int32 /* _L11/ */ _L11;
   DMI_Level_Data_T_DMI_Messages_Bothways_Pkg /* _L14/ */ _L14;
-  array_int64_4 /* _L15/ */ _L15;
-  kcg_int64 /* _L19/ */ _L19;
-  kcg_int64 /* _L20/ */ _L20;
+  array_int32_4 /* _L15/ */ _L15;
+  kcg_int32 /* _L19/ */ _L19;
+  kcg_int32 /* _L20/ */ _L20;
 } outC_C_DMI_Level_Data_to_int_DATA_Packets_Bothways;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -57,6 +57,6 @@ extern void C_DMI_Level_Data_to_int_init_DATA_Packets_Bothways(
 #endif /* _C_DMI_Level_Data_to_int_DATA_Packets_Bothways_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_DMI_Level_Data_to_int_DATA_Packets_Bothways.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

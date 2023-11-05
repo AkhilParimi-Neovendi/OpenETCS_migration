@@ -41,26 +41,26 @@ typedef struct {
   kcg_bool /* Decode_Q_MARQSTREASON: */ Decode_Q_MARQSTREASON_clock;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* Decode_NID_TEXTMESSAGE:then:_L2/ */ _L2_then_Decode_NID_TEXTMESSAGE;
+  kcg_int32 /* Decode_NID_TEXTMESSAGE:then:_L2/ */ _L2_then_Decode_NID_TEXTMESSAGE;
   NID_TEXTMESSAGE /* Decode_NID_TEXTMESSAGE:then:_L1/ */ _L1_then_Decode_NID_TEXTMESSAGE;
   NID_TEXTMESSAGE /* Decode_NID_TEXTMESSAGE:else:_L1/ */ _L1_else_Decode_NID_TEXTMESSAGE;
-  kcg_int64 /* Decode_Emergency_Stop:then:_L4/ */ _L4_then_Decode_Emergency_Stop;
+  kcg_int32 /* Decode_Emergency_Stop:then:_L4/ */ _L4_then_Decode_Emergency_Stop;
   Q_EMERGENCYSTOP /* Decode_Emergency_Stop:then:_L3/ */ _L3_then_Decode_Emergency_Stop;
   NID_EM /* Decode_Emergency_Stop:then:_L2/ */ _L2_then_Decode_Emergency_Stop;
-  kcg_int64 /* Decode_Emergency_Stop:then:_L1/ */ _L1_then_Decode_Emergency_Stop;
+  kcg_int32 /* Decode_Emergency_Stop:then:_L1/ */ _L1_then_Decode_Emergency_Stop;
   Q_EMERGENCYSTOP /* Decode_Emergency_Stop:else:_L2/ */ _L2_else_Decode_Emergency_Stop;
   NID_EM /* Decode_Emergency_Stop:else:_L1/ */ _L1_else_Decode_Emergency_Stop;
-  kcg_int64 /* Decode_xT_TRAIN:then:_L2/ */ _L2_then_Decode_xT_TRAIN;
+  kcg_int32 /* Decode_xT_TRAIN:then:_L2/ */ _L2_then_Decode_xT_TRAIN;
   T_TRAIN /* Decode_xT_TRAIN:then:_L1/ */ _L1_then_Decode_xT_TRAIN;
   T_TRAIN /* Decode_xT_TRAIN:else:_L1/ */ _L1_else_Decode_xT_TRAIN;
-  kcg_int64 /* Decode_Q_MARQSTREASON:then:_L2/ */ _L2_then_Decode_Q_MARQSTREASON;
+  kcg_int32 /* Decode_Q_MARQSTREASON:then:_L2/ */ _L2_then_Decode_Q_MARQSTREASON;
   Q_MARQSTREASON /* Decode_Q_MARQSTREASON:then:_L1/ */ _L1_then_Decode_Q_MARQSTREASON;
   Q_MARQSTREASON /* Decode_Q_MARQSTREASON:else:_L1/ */ _L1_else_Decode_Q_MARQSTREASON;
-  kcg_int64 /* field1/ */ field1;
-  kcg_int64 /* field2/ */ field2;
-  kcg_int64 /* field3/ */ field3;
+  kcg_int32 /* field1/ */ field1;
+  kcg_int32 /* field2/ */ field2;
+  kcg_int32 /* field3/ */ field3;
   Q_MARQSTREASON /* q_marqstreason/ */ q_marqstreason;
-  kcg_int64 /* nid_message/ */ nid_message;
+  kcg_int32 /* nid_message/ */ nid_message;
   T_TRAIN /* xt_train/ */ xt_train;
   NID_EM /* nid_em/ */ nid_em;
   Q_EMERGENCYSTOP /* q_emergencystop/ */ q_emergencystop;
@@ -70,20 +70,20 @@ typedef struct {
   NID_MESSAGE /* _L16/ */ _L16;
   T_TRAIN /* _L17/ */ _L17;
   kcg_bool /* _L28/ */ _L28;
-  kcg_int64 /* _L27/ */ _L27;
-  kcg_int64 /* _L26/ */ _L26;
-  kcg_int64 /* _L25/ */ _L25;
-  kcg_int64 /* _L24/ */ _L24;
-  kcg_int64 /* _L23/ */ _L23;
-  kcg_int64 /* _L22/ */ _L22;
-  kcg_int64 /* _L21/ */ _L21;
+  kcg_int32 /* _L27/ */ _L27;
+  kcg_int32 /* _L26/ */ _L26;
+  kcg_int32 /* _L25/ */ _L25;
+  kcg_int32 /* _L24/ */ _L24;
+  kcg_int32 /* _L23/ */ _L23;
+  kcg_int32 /* _L22/ */ _L22;
+  kcg_int32 /* _L21/ */ _L21;
   NID_ENGINE /* _L29/ */ _L29;
   Q_MARQSTREASON /* _L31/ */ _L31;
   T_TRAIN /* _L32/ */ _L32;
   NID_EM /* _L34/ */ _L34;
   Q_EMERGENCYSTOP /* _L36/ */ _L36;
   NID_TEXTMESSAGE /* _L39/ */ _L39;
-  kcg_int64 /* _L40/ */ _L40;
+  kcg_int32 /* _L40/ */ _L40;
 } outC_ConvertHeader_RBC_Model_Pkg_TrainTrackMsgConversion;
 
 /* ===========  node initialization and cycle functions  =========== */

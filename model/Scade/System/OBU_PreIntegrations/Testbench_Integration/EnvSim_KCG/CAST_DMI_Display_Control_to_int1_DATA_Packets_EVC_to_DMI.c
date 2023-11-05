@@ -40,19 +40,19 @@ void CAST_DMI_Display_Control_to_int1_init_DATA_Packets_EVC_to_DMI(
   static kcg_size idx;
   static kcg_size idx1;
 
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L4 = kcg_true;
   outC->_L5 = kcg_true;
   for (idx = 0; idx < 3; idx++) {
-    outC->_L2[idx] = kcg_lit_int64(0);
+    outC->_L2[idx] = kcg_lit_int32(0);
   }
   outC->_L1.valid = kcg_true;
   outC->_L1.cab_is_active = kcg_true;
-  outC->_L1.system_clock = kcg_lit_int64(0);
+  outC->_L1.system_clock = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 3; idx1++) {
-    outC->dmi_display_control_int[idx1] = kcg_lit_int64(0);
+    outC->dmi_display_control_int[idx1] = kcg_lit_int32(0);
   }
   /* _L6=(Utilities::Bool_to_Int#1)/ */
   Bool_to_Int_init_Utilities(&outC->Context_Bool_to_Int_1);

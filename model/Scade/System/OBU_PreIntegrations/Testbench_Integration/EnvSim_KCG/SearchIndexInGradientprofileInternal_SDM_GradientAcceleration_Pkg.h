@@ -15,24 +15,24 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   kcg_bool /* cond/ */ cond;
-  kcg_int64 /* indexOfPositionOut/ */ indexOfPositionOut;
+  kcg_int32 /* indexOfPositionOut/ */ indexOfPositionOut;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L1/ */ _L1;
+  kcg_int32 /* _L2/ */ _L2;
   L_internal_real_Type_SDM_Types_Pkg /* _L3/ */ _L3;
   GradientProfile_real_t_SDM_GradientAcceleration_types /* _L4/ */ _L4;
   Gradient_section_real_t_SDM_GradientAcceleration_types /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L6/ */ _L6;
   kcg_bool /* _L9/ */ _L9;
   kcg_bool /* _L10/ */ _L10;
   kcg_bool /* _L11/ */ _L11;
   Gradient_section_real_t_SDM_GradientAcceleration_types /* _L12/ */ _L12;
-  kcg_float64 /* _L13/ */ _L13;
+  kcg_float32 /* _L13/ */ _L13;
   kcg_bool /* _L14/ */ _L14;
   L_internal_real_Type_SDM_Types_Pkg /* _L15/ */ _L15;
 } outC_SearchIndexInGradientprofileInternal_SDM_GradientAcceleration_Pkg;
@@ -41,9 +41,9 @@ typedef struct {
 /* SDM_GradientAcceleration_Pkg::SearchIndexInGradientprofileInternal/ */
 extern void SearchIndexInGradientprofileInternal_SDM_GradientAcceleration_Pkg(
   /* index/ */
-  kcg_int64 index,
+  kcg_int32 index,
   /* indexOfPosition/ */
-  kcg_int64 indexOfPosition,
+  kcg_int32 indexOfPosition,
   /* position/ */
   L_internal_real_Type_SDM_Types_Pkg position,
   /* GradientProfile/ */

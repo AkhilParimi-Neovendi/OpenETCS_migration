@@ -30,31 +30,31 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   NID_PACKET /* @1/nid_packet/ */ nid_packet_CAST_Int_to_NID_PACKET_1;
-  kcg_int64 /* @1/nid_packet_int/ */ nid_packet_int_CAST_Int_to_NID_PACKET_1;
+  kcg_int32 /* @1/nid_packet_int/ */ nid_packet_int_CAST_Int_to_NID_PACKET_1;
   kcg_bool /* @1/_L2/ */ _L2_CAST_Int_to_NID_PACKET_1;
-  kcg_int64 /* @1/_L3/ */ _L3_CAST_Int_to_NID_PACKET_1;
+  kcg_int32 /* @1/_L3/ */ _L3_CAST_Int_to_NID_PACKET_1;
   kcg_bool /* @1/_L4/ */ _L4_CAST_Int_to_NID_PACKET_1;
-  kcg_int64 /* @1/_L5/ */ _L5_CAST_Int_to_NID_PACKET_1;
-  kcg_int64 /* @1/_L1/ */ _L1_CAST_Int_to_NID_PACKET_1;
+  kcg_int32 /* @1/_L5/ */ _L5_CAST_Int_to_NID_PACKET_1;
+  kcg_int32 /* @1/_L1/ */ _L1_CAST_Int_to_NID_PACKET_1;
   L_PACKET /* @2/l_packet/ */ l_packet_CAST_Int_to_L_PACKET_1;
-  kcg_int64 /* @2/l_packet_int/ */ l_packet_int_CAST_Int_to_L_PACKET_1;
-  kcg_int64 /* @2/_L13/ */ _L13_CAST_Int_to_L_PACKET_1;
-  kcg_int64 /* @2/_L12/ */ _L12_CAST_Int_to_L_PACKET_1;
+  kcg_int32 /* @2/l_packet_int/ */ l_packet_int_CAST_Int_to_L_PACKET_1;
+  kcg_int32 /* @2/_L13/ */ _L13_CAST_Int_to_L_PACKET_1;
+  kcg_int32 /* @2/_L12/ */ _L12_CAST_Int_to_L_PACKET_1;
   kcg_bool /* @2/_L8/ */ _L8_CAST_Int_to_L_PACKET_1;
   kcg_bool /* @2/_L9/ */ _L9_CAST_Int_to_L_PACKET_1;
-  kcg_int64 /* @2/_L1/ */ _L1_CAST_Int_to_L_PACKET_1;
+  kcg_int32 /* @2/_L1/ */ _L1_CAST_Int_to_L_PACKET_1;
   P009_TrainTrack_int_TM_TrainToTrack /* _L1/ */ _L1;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L2/ */ _L2;
   NID_PACKET /* _L69/ */ _L69;
   L_PACKET /* _L70/ */ _L70;
   NID_LTRBG /* _L71/ */ _L71;
   P009_TM_TrainToTrack /* _L72/ */ _L72;
   kcg_bool /* _L73/ */ _L73;
-  kcg_int64 /* _L74/ */ _L74;
-  kcg_int64 /* _L75/ */ _L75;
-  kcg_int64 /* _L76/ */ _L76;
+  kcg_int32 /* _L74/ */ _L74;
+  kcg_int32 /* _L75/ */ _L75;
+  kcg_int32 /* _L76/ */ _L76;
 } outC_C_compr_P009_TM_TrainToTrack;
 
 /* ===========  node initialization and cycle functions  =========== */

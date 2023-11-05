@@ -12,7 +12,7 @@ void DistanceToNextStep_SDM_GradientAcceleration_Pkg(
   /* position/ */
   L_internal_real_Type_SDM_Types_Pkg position,
   /* relatedIndex/ */
-  kcg_int64 relatedIndex,
+  kcg_int32 relatedIndex,
   /* GradientProfile/ */
   GradientProfile_real_t_SDM_GradientAcceleration_types *GradientProfile,
   outC_DistanceToNextStep_SDM_GradientAcceleration_Pkg *outC)
@@ -21,7 +21,7 @@ void DistanceToNextStep_SDM_GradientAcceleration_Pkg(
     &outC->_L3,
     GradientProfile);
   outC->_L2 = relatedIndex;
-  outC->_L6 = kcg_lit_int64(1);
+  outC->_L6 = kcg_lit_int32(1);
   /* _L15=(SDM_GradientAcceleration_Pkg::selectGradientOffset#2)/ */
   selectGradientOffset_SDM_GradientAcceleration_Pkg(
     &outC->_L3,
@@ -45,22 +45,22 @@ void DistanceToNextStep_init_SDM_GradientAcceleration_Pkg(
 {
   static kcg_size idx;
 
-  outC->_L15.location = kcg_lit_float64(0.0);
-  outC->_L15.gradient = kcg_lit_float64(0.0);
+  outC->_L15.location = kcg_lit_float32(0.0);
+  outC->_L15.gradient = kcg_lit_float32(0.0);
   outC->_L15.valid = kcg_true;
   outC->_L13 = kcg_true;
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_float64(0.0);
-  outC->_L4 = kcg_lit_float64(0.0);
-  outC->_L1 = kcg_lit_float64(0.0);
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_float32(0.0);
+  outC->_L4 = kcg_lit_float32(0.0);
+  outC->_L1 = kcg_lit_float32(0.0);
+  outC->_L2 = kcg_lit_int32(0);
   for (idx = 0; idx < 50; idx++) {
-    outC->_L3[idx].location = kcg_lit_float64(0.0);
-    outC->_L3[idx].gradient = kcg_lit_float64(0.0);
+    outC->_L3[idx].location = kcg_lit_float32(0.0);
+    outC->_L3[idx].gradient = kcg_lit_float32(0.0);
     outC->_L3[idx].valid = kcg_true;
   }
   outC->validDistance = kcg_true;
-  outC->distance = kcg_lit_float64(0.0);
+  outC->distance = kcg_lit_float32(0.0);
   /* _L15=(SDM_GradientAcceleration_Pkg::selectGradientOffset#2)/ */
   selectGradientOffset_init_SDM_GradientAcceleration_Pkg(
     &outC->Context_selectGradientOffset_2);

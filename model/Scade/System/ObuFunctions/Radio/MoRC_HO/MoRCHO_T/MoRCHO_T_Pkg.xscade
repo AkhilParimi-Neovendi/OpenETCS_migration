@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/4" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/2">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
 		<Package name="MoRCHO_T_Pkg">
 			<declarations>
@@ -4734,7 +4734,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="int"/>
+												<TypeRef name="int32"/>
 											</type>
 										</NamedType>
 									</type>
@@ -4818,7 +4818,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="int"/>
+												<TypeRef name="int32"/>
 											</type>
 										</NamedType>
 									</type>
@@ -4830,7 +4830,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="int"/>
+												<TypeRef name="int32"/>
 											</type>
 										</NamedType>
 									</type>
@@ -4842,7 +4842,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="int"/>
+												<TypeRef name="int32"/>
 											</type>
 										</NamedType>
 									</type>
@@ -4914,7 +4914,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="int"/>
+												<TypeRef name="int32"/>
 											</type>
 										</NamedType>
 									</type>
@@ -4926,7 +4926,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="int"/>
+												<TypeRef name="int32"/>
 											</type>
 										</NamedType>
 									</type>
@@ -6816,7 +6816,7 @@
 								</Equation>
 							</data>
 							<pragmas>
-								<ed:Operator oid="!ed/35b9d6/575/884/55f00f1c45b9" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+								<ed:Operator oid="!ed/35b9d6/575/884/55f00f1c45b9" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<diagrams>
 										<NetDiagram name="diagram_tc_sm" landscape="true" format="A4 (210 297)" oid="!ed/35b9d7/575/884/55f00f1c3bc2">
 											<presentationElements>
@@ -8060,17 +8060,50 @@
 											</presentationElements>
 										</NetDiagram>
 									</diagrams>
+									<references>
+										<TypeRef path="RCM_Types_Pkg::mobileRegistrationContext_T" refOid="!ed/13bd38/54F5/1D9C/55c9aa9e260"/>
+										<TypeRef path="RCM_MsgTypes_Pkg::msgToTrack_T" refOid="!ed/2a7aca/CC3/7A8/55db01947723"/>
+										<TypeRef path="RCM_Session_Types_Pkg::morcStatus_T" refOid="!ed/15ad6c/1DF9/1E9C/55e7f7da1f42"/>
+										<TypeRef path="RCM_MsgTypes_Pkg::msgFromTrack_T" refOid="!ed/330a91/7A7D/9A0/55e4375554db"/>
+										<ConstVarRef path="Handover_Pkg::cNoMessageFromTrack" refOid="!ed/46c19f/7183/2318/559d31e356f2"/>
+										<ConstVarRef path="Common_Types_Pkg::msrc_Euroradio" refOid="!ed/b479/35CD/12BC/5485942844bf"/>
+										<ConstVarRef path="RCM_Types_Pkg::mrs_registered" refOid="!ed/13bd60/54F5/1D9C/55c9ac2111f5"/>
+										<ConstVarRef path="RCM_Types_Pkg::mcs_disconnected" refOid="!ed/13bd62/54F5/1D9C/55c9accb752b"/>
+										<ConstVarRef path="RCM_Session_Types_Pkg::sp_terminated" refOid="!ed/58128c/7EE7/FBC/55cc7e6926f0"/>
+									</references>
 								</ed:Operator>
 							</pragmas>
 						</Operator>
 					</declarations>
 					<pragmas>
-						<ed:Package oid="!ed/1c5e2a/575/884/55efef97685" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+						<ed:Package oid="!ed/1c5e2a/575/884/55efef97685" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
 								<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/1c5e2b/575/884/55efef9721b9" blockKind="constants" columnsSize="0, 342, 306, 520, 300"/>
 								<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/1c5e2c/575/884/55efef977314" blockKind="types"/>
 								<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/1c5e2d/575/884/55efef975c09" blockKind="sensors"/>
 							</diagrams>
+							<references>
+								<TypeRef path="RCM_Types_Pkg::mobileRegistrationContext_T" refOid="!ed/13bd38/54F5/1D9C/55c9aa9e260"/>
+								<ConstVarRef path="RCM_Types_Pkg::mhs_ok" refOid="!ed/13bd53/54F5/1D9C/55c9abc5f6a"/>
+								<ConstVarRef path="RCM_Types_Pkg::mrs_unregistered" refOid="!ed/13bd5e/54F5/1D9C/55c9ac0c7a26"/>
+								<ConstVarRef path="RCM_Types_Pkg::mrs_registering" refOid="!ed/13bd5f/54F5/1D9C/55c9ac2043c3"/>
+								<ConstVarRef path="RCM_Types_Pkg::mrs_registered" refOid="!ed/13bd60/54F5/1D9C/55c9ac2111f5"/>
+								<TypeRef path="RCM_Types_Pkg::mobileConnectionContext_T" refOid="!ed/13bded/54F5/1D9C/55c9c8477b"/>
+								<ConstVarRef path="RCM_Types_Pkg::mcs_disconnected" refOid="!ed/13bd62/54F5/1D9C/55c9accb752b"/>
+								<ConstVarRef path="RCM_Types_Pkg::mcs_connecting" refOid="!ed/13bd63/54F5/1D9C/55c9acfd6ea0"/>
+								<ConstVarRef path="RCM_Types_Pkg::mcs_connected" refOid="!ed/13bd64/54F5/1D9C/55c9acfe72d8"/>
+								<ConstVarRef path="RCM_Types_Pkg::mhs_nok" refOid="!ed/13bd52/54F5/1D9C/55c9aba7da9"/>
+								<TypeRef path="RCM_Types_Pkg::mobileRegistrationCmd_T" refOid="!ed/13bd77/54F5/1D9C/55c9aee7289d"/>
+								<ConstVarRef path="RCM_Types_Pkg::mra_nop" refOid="!ed/13bd96/54F5/1D9C/55c9afd07bf5"/>
+								<TypeRef path="RCM_Types_Pkg::mobileConnectionCmd_T" refOid="!ed/13bd99/54F5/1D9C/55c9b0d85aab"/>
+								<ConstVarRef path="RCM_Types_Pkg::mca_nop" refOid="!ed/13bdb8/54F5/1D9C/55c9c4af164c"/>
+								<TypeRef path="Packet_Types_Pkg::P45_RadioNetworkRegistration_T" refOid="!ed/5bb5/569A/FF0/54880cef6b45"/>
+								<TypeRef path="Packet_Types_Pkg::P42_SessionManagement_T" refOid="!ed/5b8e/569A/FF0/54880cef7d56"/>
+								<TypeRef path="RCM_MsgTypes_Pkg::msgFromTrack_T" refOid="!ed/330a91/7A7D/9A0/55e4375554db"/>
+								<ConstVarRef path="Common_Types_Pkg::msrc_Euroradio" refOid="!ed/b479/35CD/12BC/5485942844bf"/>
+								<ConstVarRef path="Obu_BasicTypes_Pkg::noMotion" refOid="!ed/3c3e/3EFF/1644/5475e9693159"/>
+								<ConstVarRef path="Obu_BasicTypes_Pkg::unknownDirection" refOid="!ed/3c41/3EFF/1644/5475e9e941c7"/>
+							</references>
 						</ed:Package>
 					</pragmas>
 				</Package>
@@ -8108,7 +8141,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="int"/>
+												<TypeRef name="int32"/>
 											</type>
 										</NamedType>
 									</type>
@@ -8120,7 +8153,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="int"/>
+												<TypeRef name="int32"/>
 											</type>
 										</NamedType>
 									</type>
@@ -8132,7 +8165,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="int"/>
+												<TypeRef name="int32"/>
 											</type>
 										</NamedType>
 									</type>
@@ -8144,7 +8177,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="int"/>
+												<TypeRef name="int32"/>
 											</type>
 										</NamedType>
 									</type>
@@ -8156,7 +8189,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="int"/>
+												<TypeRef name="int32"/>
 											</type>
 										</NamedType>
 									</type>
@@ -8263,14 +8296,14 @@
 										<ed:Equation oid="!ed/1ef3da/575/884/55eff20d4b4"/>
 									</pragmas>
 								</Equation>
-								<!-- _L4 = _L1 div _L5; -->
+								<!-- _L4 = _L1 / _L5; -->
 								<Equation>
 									<lefts>
 										<VariableRef name="_L4"/>
 									</lefts>
 									<right>
-										<!-- _L1 div _L5 -->
-										<BinaryOp name="1" operator="div">
+										<!-- _L1 / _L5 -->
+										<BinaryOp name="2" operator="/">
 											<operands>
 												<IdExpression>
 													<path>
@@ -8303,7 +8336,7 @@
 								</Equation>
 							</data>
 							<pragmas>
-								<ed:Operator oid="!ed/1ef38f/575/884/55eff0ea7b83" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+								<ed:Operator oid="!ed/1ef38f/575/884/55eff0ea7b83" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<diagrams>
 										<NetDiagram name="diagram_genTime_1" landscape="true" format="A4 (210 297)" oid="!ed/1ef390/575/884/55eff0ea58f4">
 											<presentationElements>
@@ -8424,6 +8457,9 @@
 											</presentationElements>
 										</NetDiagram>
 									</diagrams>
+									<references>
+										<TypeRef path="Obu_BasicTypes_Pkg::T_internal_Type" refOid="!ed/8178/4AD8/11D4/5304c5cd1d44"/>
+									</references>
 								</ed:Operator>
 							</pragmas>
 						</Operator>
@@ -8620,7 +8656,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="int"/>
+												<TypeRef name="int32"/>
 											</type>
 										</NamedType>
 									</type>
@@ -8800,6 +8836,19 @@
 													</path>
 												</IdExpression>
 											</callParameters>
+											<pragmas>
+												<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+													<references>
+														<TypeRef path="RCM_Types_Pkg::mobileRegistrationContext_T" refOid="!ed/13bd38/54F5/1D9C/55c9aa9e260">
+															<LabelRef refOid="!ed/13bd39/54F5/1D9C/55c9aabd5b5"/>
+															<LabelRef refOid="!ed/13bdbb/54F5/1D9C/55c9c5c63a11"/>
+															<LabelRef refOid="!ed/13bd50/54F5/1D9C/55c9ab7571ff"/>
+															<LabelRef refOid="!ed/13bd43/54F5/1D9C/55c9aad51969"/>
+															<LabelRef refOid="!ed/13bd42/54F5/1D9C/55c9aad45245"/>
+														</TypeRef>
+													</references>
+												</ed:CallExpression>
+											</pragmas>
 										</CallExpression>
 									</right>
 									<pragmas>
@@ -8915,6 +8964,19 @@
 													</path>
 												</IdExpression>
 											</callParameters>
+											<pragmas>
+												<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+													<references>
+														<OperatorRef path="linear::Memory" refOid="win_5F4/6877/EC/3A07F19E/630F">
+															<InputRef refOid="win_5F5/316D/EC/3A07F19E/724F"/>
+															<InputRef refOid="win_5F9/496E/EC/3A07F19E/4B0F"/>
+															<InputRef refOid="win_5F7/50A3/EC/3A07F19E/207B"/>
+															<InputRef refOid="win_5F8/3BA/EC/3A07F19E/1696"/>
+															<OutputRef refOid="win_5F6/3869/EC/3A07F19E/65D1"/>
+														</OperatorRef>
+													</references>
+												</ed:CallExpression>
+											</pragmas>
 										</CallExpression>
 									</right>
 									<pragmas>
@@ -9532,7 +9594,7 @@
 								</Equation>
 							</data>
 							<pragmas>
-								<ed:Operator oid="!ed/35b9e8/575/884/55f010152b31" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+								<ed:Operator oid="!ed/35b9e8/575/884/55f010152b31" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<diagrams>
 										<NetDiagram name="diagram_mobileRegistration_1" landscape="true" format="A4 (210 297)" oid="!ed/35b9e9/575/884/55f0101575ca">
 											<presentationElements>
@@ -10141,6 +10203,17 @@
 											</presentationElements>
 										</NetDiagram>
 									</diagrams>
+									<references>
+										<TypeRef path="RCM_Types_Pkg::mobileRegistrationCmd_T" refOid="!ed/13bd77/54F5/1D9C/55c9aee7289d"/>
+										<TypeRef path="RCM_Types_Pkg::mobileRegistrationContext_T" refOid="!ed/13bd38/54F5/1D9C/55c9aa9e260"/>
+										<TypeRef path="RCM_Types_Pkg::mobileRegistrationStatus_T" refOid="!ed/13bd5d/54F5/1D9C/55c9abf19d"/>
+										<ConstVarRef path="RCM_Types_Pkg::mhs_ok" refOid="!ed/13bd53/54F5/1D9C/55c9abc5f6a"/>
+										<ConstVarRef path="RCM_Types_Pkg::mra_register" refOid="!ed/13bd97/54F5/1D9C/55c9b07c6d23"/>
+										<ConstVarRef path="RCM_Types_Pkg::mra_unregister" refOid="!ed/13bd98/54F5/1D9C/55c9b07d3ee6"/>
+										<ConstVarRef path="RCM_Types_Pkg::mrs_unregistered" refOid="!ed/13bd5e/54F5/1D9C/55c9ac0c7a26"/>
+										<ConstVarRef path="RCM_Types_Pkg::mrs_registering" refOid="!ed/13bd5f/54F5/1D9C/55c9ac2043c3"/>
+										<ConstVarRef path="RCM_Types_Pkg::mrs_registered" refOid="!ed/13bd60/54F5/1D9C/55c9ac2111f5"/>
+									</references>
 								</ed:Operator>
 							</pragmas>
 						</Operator>
@@ -10313,7 +10386,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="int"/>
+												<TypeRef name="int32"/>
 											</type>
 										</NamedType>
 									</type>
@@ -10620,6 +10693,19 @@
 													</path>
 												</IdExpression>
 											</callParameters>
+											<pragmas>
+												<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+													<references>
+														<OperatorRef path="linear::Memory" refOid="win_5F4/6877/EC/3A07F19E/630F">
+															<InputRef refOid="win_5F5/316D/EC/3A07F19E/724F"/>
+															<InputRef refOid="win_5F9/496E/EC/3A07F19E/4B0F"/>
+															<InputRef refOid="win_5F7/50A3/EC/3A07F19E/207B"/>
+															<InputRef refOid="win_5F8/3BA/EC/3A07F19E/1696"/>
+															<OutputRef refOid="win_5F6/3869/EC/3A07F19E/65D1"/>
+														</OperatorRef>
+													</references>
+												</ed:CallExpression>
+											</pragmas>
 										</CallExpression>
 									</right>
 									<pragmas>
@@ -11223,6 +11309,21 @@
 													</path>
 												</IdExpression>
 											</callParameters>
+											<pragmas>
+												<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+													<references>
+														<TypeRef path="RCM_Types_Pkg::mobileConnectionContext_T" refOid="!ed/13bded/54F5/1D9C/55c9c8477b">
+															<LabelRef refOid="!ed/13bdee/54F5/1D9C/55c9c84733b7"/>
+															<LabelRef refOid="!ed/13bdef/54F5/1D9C/55c9c8476491"/>
+															<LabelRef refOid="!ed/13bdf1/54F5/1D9C/55c9c8475a8b"/>
+															<LabelRef refOid="!ed/13bdf2/54F5/1D9C/55c9c847677f"/>
+															<LabelRef refOid="!ed/13be06/54F5/1D9C/55c9c915680c"/>
+															<LabelRef refOid="!ed/13bdf3/54F5/1D9C/55c9c8474187"/>
+															<LabelRef refOid="!ed/13be19/54F5/1D9C/55c9ca462856"/>
+														</TypeRef>
+													</references>
+												</ed:CallExpression>
+											</pragmas>
 										</CallExpression>
 									</right>
 									<pragmas>
@@ -11485,7 +11586,7 @@
 								</Equation>
 							</data>
 							<pragmas>
-								<ed:Operator oid="!ed/35bd8e/575/884/55f01d18d59" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+								<ed:Operator oid="!ed/35bd8e/575/884/55f01d18d59" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<diagrams>
 										<NetDiagram name="diagram_mobileConnection_1" landscape="true" format="A4 (210 297)" oid="!ed/35bdbc/575/884/55f01d187655">
 											<presentationElements>
@@ -12222,6 +12323,18 @@
 											</presentationElements>
 										</NetDiagram>
 									</diagrams>
+									<references>
+										<TypeRef path="RCM_Types_Pkg::mobileRegistrationContext_T" refOid="!ed/13bd38/54F5/1D9C/55c9aa9e260"/>
+										<TypeRef path="RCM_Types_Pkg::mobileConnectionCmd_T" refOid="!ed/13bd99/54F5/1D9C/55c9b0d85aab"/>
+										<TypeRef path="RCM_Types_Pkg::mobileConnectionContext_T" refOid="!ed/13bded/54F5/1D9C/55c9c8477b"/>
+										<TypeRef path="RCM_Types_Pkg::mobileConnectionStatus_T" refOid="!ed/13bd61/54F5/1D9C/55c9ac927d33"/>
+										<ConstVarRef path="RCM_Types_Pkg::mcs_disconnected" refOid="!ed/13bd62/54F5/1D9C/55c9accb752b"/>
+										<ConstVarRef path="RCM_Types_Pkg::mcs_connecting" refOid="!ed/13bd63/54F5/1D9C/55c9acfd6ea0"/>
+										<ConstVarRef path="RCM_Types_Pkg::mcs_connected" refOid="!ed/13bd64/54F5/1D9C/55c9acfe72d8"/>
+										<ConstVarRef path="RCM_Types_Pkg::mca_connect" refOid="!ed/13bdb9/54F5/1D9C/55c9c4c5507b"/>
+										<ConstVarRef path="RCM_Types_Pkg::mca_disconnect" refOid="!ed/13bdba/54F5/1D9C/55c9c4c665ec"/>
+										<ConstVarRef path="RCM_Types_Pkg::mrs_registered" refOid="!ed/13bd60/54F5/1D9C/55c9ac2111f5"/>
+									</references>
 								</ed:Operator>
 							</pragmas>
 						</Operator>
@@ -12457,6 +12570,21 @@
 													</path>
 												</IdExpression>
 											</callParameters>
+											<pragmas>
+												<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+													<references>
+														<TypeRef path="Common_Types_Pkg::ReceivedMessage_T" refOid="!ed/b45c/35CD/12BC/548592b1712c">
+															<LabelRef refOid="!ed/c8c1/7202/4D4/549084006a5f"/>
+															<LabelRef refOid="!ed/b465/35CD/12BC/5485940f2023"/>
+															<LabelRef refOid="!ed/23a2d/100C/D58/549842fe5319"/>
+															<LabelRef refOid="!ed/b47b/35CD/12BC/548594436225"/>
+															<LabelRef refOid="!ed/b485/35CD/12BC/548594581f79"/>
+															<LabelRef refOid="!ed/5bec/6191/117C/549195674b6d"/>
+															<LabelRef refOid="!ed/1d870/5182/1538/55a4f00b551f"/>
+														</TypeRef>
+													</references>
+												</ed:CallExpression>
+											</pragmas>
 										</CallExpression>
 									</right>
 									<pragmas>
@@ -12485,6 +12613,16 @@
 													</path>
 												</IdExpression>
 											</callParameters>
+											<pragmas>
+												<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+													<references>
+														<OperatorRef path="TM_specific_send::Send_P045_no_merge" refOid="!ed/1eee0d/73E9/B6C/55ba8e9e60df">
+															<InputRef refOid="!ed/1eee1b/73E9/B6C/55ba8e9e6b09"/>
+															<OutputRef refOid="!ed/1eee1a/73E9/B6C/55ba8e9e6c54"/>
+														</OperatorRef>
+													</references>
+												</ed:CallExpression>
+											</pragmas>
 										</CallExpression>
 									</right>
 									<pragmas>
@@ -12634,6 +12772,17 @@
 													</path>
 												</IdExpression>
 											</callParameters>
+											<pragmas>
+												<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+													<references>
+														<OperatorRef path="TM::Read_P045" refOid="!ed/1ccf1/4ED9/C10/557445cb3a17">
+															<InputRef refOid="!ed/1ccfc/4ED9/C10/557445cb38f5"/>
+															<OutputRef refOid="!ed/165cc2/7320/14EC/559b077237f7"/>
+															<OutputRef refOid="!ed/1ccfb/4ED9/C10/557445cb336"/>
+														</OperatorRef>
+													</references>
+												</ed:CallExpression>
+											</pragmas>
 										</CallExpression>
 									</right>
 									<pragmas>
@@ -12674,7 +12823,7 @@
 								</Equation>
 							</data>
 							<pragmas>
-								<ed:Operator oid="!ed/58c04c/575/884/55f033721fa7" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+								<ed:Operator oid="!ed/58c04c/575/884/55f033721fa7" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<diagrams>
 										<NetDiagram name="diagram_p45_2_msgFromTrack_1" landscape="true" format="A4 (210 297)" oid="!ed/58c04d/575/884/55f033722fb5">
 											<presentationElements>
@@ -12889,6 +13038,11 @@
 											</presentationElements>
 										</NetDiagram>
 									</diagrams>
+									<references>
+										<TypeRef path="Packet_Types_Pkg::P45_RadioNetworkRegistration_T" refOid="!ed/5bb5/569A/FF0/54880cef6b45"/>
+										<TypeRef path="RCM_MsgTypes_Pkg::msgFromTrack_T" refOid="!ed/330a91/7A7D/9A0/55e4375554db"/>
+										<ConstVarRef path="Common_Types_Pkg::msrc_Eurobalise" refOid="!ed/b47a/35CD/12BC/5485942d3572"/>
+									</references>
 								</ed:Operator>
 							</pragmas>
 						</Operator>
@@ -13124,6 +13278,21 @@
 													</path>
 												</IdExpression>
 											</callParameters>
+											<pragmas>
+												<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+													<references>
+														<TypeRef path="Common_Types_Pkg::ReceivedMessage_T" refOid="!ed/b45c/35CD/12BC/548592b1712c">
+															<LabelRef refOid="!ed/c8c1/7202/4D4/549084006a5f"/>
+															<LabelRef refOid="!ed/b465/35CD/12BC/5485940f2023"/>
+															<LabelRef refOid="!ed/23a2d/100C/D58/549842fe5319"/>
+															<LabelRef refOid="!ed/b47b/35CD/12BC/548594436225"/>
+															<LabelRef refOid="!ed/b485/35CD/12BC/548594581f79"/>
+															<LabelRef refOid="!ed/5bec/6191/117C/549195674b6d"/>
+															<LabelRef refOid="!ed/1d870/5182/1538/55a4f00b551f"/>
+														</TypeRef>
+													</references>
+												</ed:CallExpression>
+											</pragmas>
 										</CallExpression>
 									</right>
 									<pragmas>
@@ -13152,6 +13321,16 @@
 													</path>
 												</IdExpression>
 											</callParameters>
+											<pragmas>
+												<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+													<references>
+														<OperatorRef path="TM_specific_send::Send_P042_no_merge" refOid="!ed/1eed10/73E9/B6C/55ba8c661f75">
+															<InputRef refOid="!ed/1eed1e/73E9/B6C/55ba8c661e76"/>
+															<OutputRef refOid="!ed/1eed1d/73E9/B6C/55ba8c662290"/>
+														</OperatorRef>
+													</references>
+												</ed:CallExpression>
+											</pragmas>
 										</CallExpression>
 									</right>
 									<pragmas>
@@ -13301,6 +13480,17 @@
 													</path>
 												</IdExpression>
 											</callParameters>
+											<pragmas>
+												<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+													<references>
+														<OperatorRef path="TM::Read_P042" refOid="!ed/1cec7/4ED9/C10/55744b8e1313">
+															<InputRef refOid="!ed/1ced2/4ED9/C10/55744b8e6c67"/>
+															<OutputRef refOid="!ed/165cb7/7320/14EC/559b07656329"/>
+															<OutputRef refOid="!ed/1ced1/4ED9/C10/55744b8e7203"/>
+														</OperatorRef>
+													</references>
+												</ed:CallExpression>
+											</pragmas>
 										</CallExpression>
 									</right>
 									<pragmas>
@@ -13341,7 +13531,7 @@
 								</Equation>
 							</data>
 							<pragmas>
-								<ed:Operator oid="!ed/bed03a/59FF/1DE8/55f6a6c77fe5" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+								<ed:Operator oid="!ed/bed03a/59FF/1DE8/55f6a6c77fe5" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<diagrams>
 										<NetDiagram name="diagram_p42_2_msgFromTrack_1" landscape="true" format="A4 (210 297)" oid="!ed/bed048/59FF/1DE8/55f6a6c72c7c">
 											<presentationElements>
@@ -13556,6 +13746,11 @@
 											</presentationElements>
 										</NetDiagram>
 									</diagrams>
+									<references>
+										<TypeRef path="Packet_Types_Pkg::P42_SessionManagement_T" refOid="!ed/5b8e/569A/FF0/54880cef7d56"/>
+										<TypeRef path="RCM_MsgTypes_Pkg::msgFromTrack_T" refOid="!ed/330a91/7A7D/9A0/55e4375554db"/>
+										<ConstVarRef path="Common_Types_Pkg::msrc_Eurobalise" refOid="!ed/b47a/35CD/12BC/5485942d3572"/>
+									</references>
 								</ed:Operator>
 							</pragmas>
 						</Operator>
@@ -13849,7 +14044,7 @@
 								</Equation>
 							</data>
 							<pragmas>
-								<ed:Operator oid="!ed/3e2366/5CFF/182C/55f7fdbf4dd" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+								<ed:Operator oid="!ed/3e2366/5CFF/182C/55f7fdbf4dd" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<diagrams>
 										<NetDiagram name="diagram_msgToTrack_2_m155_1" landscape="true" format="A4 (210 297)" oid="!ed/3e2367/5CFF/182C/55f7fdbfbef">
 											<presentationElements>
@@ -13984,6 +14179,10 @@
 											</presentationElements>
 										</NetDiagram>
 									</diagrams>
+									<references>
+										<TypeRef path="RCM_MsgTypes_Pkg::msgToTrack_T" refOid="!ed/2a7aca/CC3/7A8/55db01947723"/>
+										<ConstVarRef path="Id_Pkg::co155_Initiation_of_a_communication_session" refOid="!ed/13dde/4FFE/31C/54df7b552512"/>
+									</references>
 								</ed:Operator>
 							</pragmas>
 						</Operator>
@@ -14129,7 +14328,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="int"/>
+												<TypeRef name="int32"/>
 											</type>
 										</NamedType>
 									</type>
@@ -14372,6 +14571,17 @@
 													</path>
 												</IdExpression>
 											</callParameters>
+											<pragmas>
+												<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+													<references>
+														<TypeRef path="Packet_TrainTypes_Pkg::PT3_OnboardTelephoneNumbers_T" refOid="!ed/13e41/1963/1E14/54d0c29346e">
+															<LabelRef refOid="!ed/13e42/1963/1E14/54d0c36b7cef"/>
+															<LabelRef refOid="!ed/853aa/1963/1E14/54d0e7725a1d"/>
+															<LabelRef refOid="!ed/853d6/1963/1E14/54d0e8936582"/>
+														</TypeRef>
+													</references>
+												</ed:CallExpression>
+											</pragmas>
 										</CallExpression>
 									</right>
 									<pragmas>
@@ -14428,7 +14638,7 @@
 								</Equation>
 							</data>
 							<pragmas>
-								<ed:Operator oid="!ed/3e2423/5CFF/182C/55f8000d2055" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+								<ed:Operator oid="!ed/3e2423/5CFF/182C/55f8000d2055" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<diagrams>
 										<NetDiagram name="diagram_msgToTrack_2_m159_1" landscape="true" format="A4 (210 297)" oid="!ed/3e242c/5CFF/182C/55f8000d43b8">
 											<presentationElements>
@@ -14643,6 +14853,10 @@
 											</presentationElements>
 										</NetDiagram>
 									</diagrams>
+									<references>
+										<TypeRef path="RCM_MsgTypes_Pkg::msgToTrack_T" refOid="!ed/2a7aca/CC3/7A8/55db01947723"/>
+										<ConstVarRef path="Id_Pkg::co159_Session_established" refOid="!ed/13e22/4FFE/31C/54df7c351f2f"/>
+									</references>
 								</ed:Operator>
 							</pragmas>
 						</Operator>
@@ -14936,7 +15150,7 @@
 								</Equation>
 							</data>
 							<pragmas>
-								<ed:Operator oid="!ed/35675b/6587/1B80/55f971514458" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+								<ed:Operator oid="!ed/35675b/6587/1B80/55f971514458" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<diagrams>
 										<NetDiagram name="diagram_msgToTrack_2_m156_1" landscape="true" format="A4 (210 297)" oid="!ed/356764/6587/1B80/55f9715132b3">
 											<presentationElements>
@@ -15071,6 +15285,10 @@
 											</presentationElements>
 										</NetDiagram>
 									</diagrams>
+									<references>
+										<TypeRef path="RCM_MsgTypes_Pkg::msgToTrack_T" refOid="!ed/2a7aca/CC3/7A8/55db01947723"/>
+										<ConstVarRef path="Id_Pkg::co156_Termination_of_a_communication_session" refOid="!ed/13e30/4FFE/31C/54df7c361406"/>
+									</references>
 								</ed:Operator>
 							</pragmas>
 						</Operator>
@@ -15306,6 +15524,21 @@
 													</path>
 												</IdExpression>
 											</callParameters>
+											<pragmas>
+												<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+													<references>
+														<TypeRef path="Common_Types_Pkg::ReceivedMessage_T" refOid="!ed/b45c/35CD/12BC/548592b1712c">
+															<LabelRef refOid="!ed/c8c1/7202/4D4/549084006a5f"/>
+															<LabelRef refOid="!ed/b465/35CD/12BC/5485940f2023"/>
+															<LabelRef refOid="!ed/23a2d/100C/D58/549842fe5319"/>
+															<LabelRef refOid="!ed/b47b/35CD/12BC/548594436225"/>
+															<LabelRef refOid="!ed/b485/35CD/12BC/548594581f79"/>
+															<LabelRef refOid="!ed/5bec/6191/117C/549195674b6d"/>
+															<LabelRef refOid="!ed/1d870/5182/1538/55a4f00b551f"/>
+														</TypeRef>
+													</references>
+												</ed:CallExpression>
+											</pragmas>
 										</CallExpression>
 									</right>
 									<pragmas>
@@ -15334,6 +15567,16 @@
 													</path>
 												</IdExpression>
 											</callParameters>
+											<pragmas>
+												<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+													<references>
+														<OperatorRef path="TM_specific_send::Send_P045_no_merge" refOid="!ed/1eee0d/73E9/B6C/55ba8e9e60df">
+															<InputRef refOid="!ed/1eee1b/73E9/B6C/55ba8e9e6b09"/>
+															<OutputRef refOid="!ed/1eee1a/73E9/B6C/55ba8e9e6c54"/>
+														</OperatorRef>
+													</references>
+												</ed:CallExpression>
+											</pragmas>
 										</CallExpression>
 									</right>
 									<pragmas>
@@ -15483,6 +15726,17 @@
 													</path>
 												</IdExpression>
 											</callParameters>
+											<pragmas>
+												<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+													<references>
+														<OperatorRef path="TM::Read_P045" refOid="!ed/1ccf1/4ED9/C10/557445cb3a17">
+															<InputRef refOid="!ed/1ccfc/4ED9/C10/557445cb38f5"/>
+															<OutputRef refOid="!ed/165cc2/7320/14EC/559b077237f7"/>
+															<OutputRef refOid="!ed/1ccfb/4ED9/C10/557445cb336"/>
+														</OperatorRef>
+													</references>
+												</ed:CallExpression>
+											</pragmas>
 										</CallExpression>
 									</right>
 									<pragmas>
@@ -15523,7 +15777,7 @@
 								</Equation>
 							</data>
 							<pragmas>
-								<ed:Operator oid="!ed/35680a/6587/1B80/55f9737a1a79" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+								<ed:Operator oid="!ed/35680a/6587/1B80/55f9737a1a79" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<diagrams>
 										<NetDiagram name="diagram_m39_2_msgFromTrack_1" landscape="true" format="A4 (210 297)" oid="!ed/356818/6587/1B80/55f9737a77f">
 											<presentationElements>
@@ -15738,12 +15992,17 @@
 											</presentationElements>
 										</NetDiagram>
 									</diagrams>
+									<references>
+										<TypeRef path="Packet_Types_Pkg::P45_RadioNetworkRegistration_T" refOid="!ed/5bb5/569A/FF0/54880cef6b45"/>
+										<TypeRef path="RCM_MsgTypes_Pkg::msgFromTrack_T" refOid="!ed/330a91/7A7D/9A0/55e4375554db"/>
+										<ConstVarRef path="Common_Types_Pkg::msrc_Eurobalise" refOid="!ed/b47a/35CD/12BC/5485942d3572"/>
+									</references>
 								</ed:Operator>
 							</pragmas>
 						</Operator>
 					</declarations>
 					<pragmas>
-						<ed:Package oid="!ed/1ef37d/575/884/55eff0907c98" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+						<ed:Package oid="!ed/1ef37d/575/884/55eff0907c98" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
 								<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/1ef37e/575/884/55eff090263d" blockKind="constants" columnsSize="0, 212, 262, 204, 300"/>
 								<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/1ef37f/575/884/55eff090602e" blockKind="types"/>
@@ -22654,7 +22913,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Variable oid="!ed/1ef5ca/575/884/55eff88273be" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+								<ed:Variable oid="!ed/1ef5ca/575/884/55eff88273be" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Control command to be sent to the mobile modem.</comment>
 								</ed:Variable>
 							</pragmas>
@@ -22668,7 +22927,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Variable oid="!ed/1ef5d1/575/884/55eff8824343" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+								<ed:Variable oid="!ed/1ef5d1/575/884/55eff8824343" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Control command to be sent to the mobile modem.</comment>
 								</ed:Variable>
 							</pragmas>
@@ -22706,7 +22965,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Variable oid="!ed/1ef5e6/575/884/55eff8822c82" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+								<ed:Variable oid="!ed/1ef5e6/575/884/55eff8822c82" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>3.5.7.1</comment>
 								</ed:Variable>
 							</pragmas>
@@ -22720,7 +22979,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Variable oid="!ed/1ef5ed/575/884/55eff882713e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+								<ed:Variable oid="!ed/1ef5ed/575/884/55eff882713e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Supervising RBC: </comment>
 									<comment>If valid = false, there is currently no supervising RBC.</comment>
 									<comment>if valid = true and nid_RBC has changed, the currently active RBC has changed.</comment>
@@ -22736,7 +22995,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Variable oid="!ed/1ef5f3/575/884/55eff88266d9" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+								<ed:Variable oid="!ed/1ef5f3/575/884/55eff88266d9" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>3.15.1.3.6 : </comment>
 									<comment>Information received from the accepting RBC shall be buffered as long as a position report (maximum safe front end passed) has not been sent to the accepting RBC.</comment>
 									<comment>Exception: Acknowledgement of train data.</comment>
@@ -22788,7 +23047,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Variable oid="!ed/1ef60d/575/884/55eff8825eb1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+								<ed:Variable oid="!ed/1ef60d/575/884/55eff8825eb1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>3.5.5.1e)</comment>
 								</ed:Variable>
 							</pragmas>
@@ -22814,7 +23073,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Variable oid="!ed/1ef619/575/884/55eff8822b6b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+								<ed:Variable oid="!ed/1ef619/575/884/55eff8822b6b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>3.5.6.7</comment>
 								</ed:Variable>
 							</pragmas>
@@ -22840,7 +23099,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Variable oid="!ed/1ef625/575/884/55eff8827f56" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+								<ed:Variable oid="!ed/1ef625/575/884/55eff8827f56" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>3.5.6.2</comment>
 								</ed:Variable>
 							</pragmas>
@@ -22854,7 +23113,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Variable oid="!ed/1ef62c/575/884/55eff882731e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+								<ed:Variable oid="!ed/1ef62c/575/884/55eff882731e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>3.5.6.2</comment>
 								</ed:Variable>
 							</pragmas>
@@ -23691,6 +23950,22 @@
 											</path>
 										</IdExpression>
 									</callParameters>
+									<pragmas>
+										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<references>
+												<OperatorRef path="CalculateTrainPosition_Pkg::calculateTrainPosition" refOid="!ed/3d0e1/1CAF/1A3C/5304ac4a6ea0">
+													<InputRef refOid="!ed/818e/113E/16A8/5346c93665de"/>
+													<InputRef refOid="!ed/818f/113E/16A8/5346c94d7c8f"/>
+													<InputRef refOid="!ed/3b423/19F0/1C04/552e2df71a8a"/>
+													<InputRef refOid="!ed/af6f2/113E/16A8/5346d9491c82"/>
+													<InputRef refOid="!ed/20abc/1E8E/11EC/537245c73154"/>
+													<OutputRef refOid="!ed/2130c/1280/217C/537ddbe87b5b"/>
+													<OutputRef refOid="!ed/20928/6FEF/D48/536b5699510"/>
+													<OutputRef refOid="!ed/20af9/671/173C/5372618d6bb8"/>
+												</OperatorRef>
+											</references>
+										</ed:CallExpression>
+									</pragmas>
 								</CallExpression>
 							</right>
 							<pragmas>
@@ -24422,7 +24697,7 @@
 						</Equation>
 					</data>
 					<pragmas>
-						<ed:Operator oid="!ed/1c5e2e/575/884/55efefa8784a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+						<ed:Operator oid="!ed/1c5e2e/575/884/55efefa8784a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
 								<NetDiagram name="diagram_TestInt_1" landscape="true" format="A4 (210 297)" oid="!ed/1c5e2f/575/884/55efefa8139c">
 									<presentationElements>
@@ -25216,12 +25491,22 @@
 									</presentationElements>
 								</NetDiagram>
 							</diagrams>
+							<references>
+								<TypeRef path="RCM_Session_Types_Pkg::morcStatus_T" refOid="!ed/15ad6c/1DF9/1E9C/55e7f7da1f42"/>
+								<TypeRef path="RCM_Types_Pkg::mobileConnectionCmd_T" refOid="!ed/13bd99/54F5/1D9C/55c9b0d85aab"/>
+								<TypeRef path="RCM_Types_Pkg::mobileRegistrationCmd_T" refOid="!ed/13bd77/54F5/1D9C/55c9aee7289d"/>
+								<TypeRef path="RCM_Session_Types_Pkg::safeRadioConnectionIndication_T" refOid="!ed/227b80/7A7D/9A0/55e42ea427b3"/>
+								<TypeRef path="Handover_Pkg::connection_ids_T" refOid="!ed/122537/7FE3/A44/553f75934f28"/>
+								<TypeRef path="RCM_MsgTypes_Pkg::msgToTrack_T" refOid="!ed/2a7aca/CC3/7A8/55db01947723"/>
+								<TypeRef path="Packet_Types_Pkg::P45_RadioNetworkRegistration_T" refOid="!ed/5bb5/569A/FF0/54880cef6b45"/>
+								<ConstVarRef path="RCM_Session_Types_Pkg::cNoMoRCStatus" refOid="!ed/1a248a/1321/1C18/55ed86317942"/>
+							</references>
 						</ed:Operator>
 					</pragmas>
 				</Operator>
 			</declarations>
 			<pragmas>
-				<ed:Package commentsToC="true" oid="!ed/1c5e26/575/884/55efef6a2883" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+				<ed:Package commentsToC="true" oid="!ed/1c5e26/575/884/55efef6a2883" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<comment>D3.5 Management of Radio Communication</comment>
 					<comment>D3.15 RBC/RBC Handover</comment>
 					<comment>D5.15 RBC/RBC Handover</comment>
@@ -25243,6 +25528,25 @@
 						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/1c5e28/575/884/55efef6a5757" blockKind="types"/>
 						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/1c5e29/575/884/55efef6a2b65" blockKind="sensors"/>
 					</diagrams>
+					<references>
+						<TypeRef path="Obu_BasicTypes_Pkg::odometry_T" refOid="!ed/1c7c1/1CCC/1EE4/53d0e87d25d5"/>
+						<ConstVarRef path="Obu_BasicTypes_Pkg::noMotion" refOid="!ed/3c3e/3EFF/1644/5475e9693159"/>
+						<ConstVarRef path="Obu_BasicTypes_Pkg::unknownDirection" refOid="!ed/3c41/3EFF/1644/5475e9e941c7"/>
+						<TypeRef path="BG_Types_Pkg::passedBG_T" refOid="!ed/172724/1CCC/1EE4/53d11ef9129e"/>
+						<TypeRef path="RCM_MsgTypes_Pkg::msgFromTrack_T" refOid="!ed/330a91/7A7D/9A0/55e4375554db"/>
+						<ConstVarRef path="Common_Types_Pkg::msrc_undefined" refOid="!ed/853e9/1963/1E14/54d0ea956d76"/>
+						<TypeRef path="RCM_MsgTypes_Pkg::msgToTrack_T" refOid="!ed/2a7aca/CC3/7A8/55db01947723"/>
+						<TypeRef path="Packet_Types_Pkg::P45_RadioNetworkRegistration_T" refOid="!ed/5bb5/569A/FF0/54880cef6b45"/>
+						<TypeRef path="RCM_Session_Types_Pkg::obuEventsAndPhases_T" refOid="!ed/43c5ba/7EE7/FBC/55cc6df8b67"/>
+						<TypeRef path="Handover_Pkg::abilityToHandleCommunicationSessions" refOid="!ed/41767/3205/151C/554b3c6537f5"/>
+						<ConstVarRef path="Handover_Pkg::isAbleToManageOneSession" refOid="!ed/41768/3205/151C/554b3c9bb49"/>
+						<TypeRef path="TrainPosition_Types_Pck::trainProperties_T" refOid="!ed/77eae/113E/16A8/5346d44884a"/>
+						<TypeRef path="RCM_Session_Types_Pkg::morc_configData_T" refOid="!ed/15ac17/6F4F/13F0/55e6b14d319c"/>
+						<TypeRef path="Common_Types_Pkg::RadioMetadata_T" refOid="!ed/23a2f/100C/D58/5498431b70df"/>
+						<TypeRef path="BG_Types_Pkg::BG_Header_T" refOid="!ed/4196c/3650/1BF8/5398278578a7"/>
+						<TypeRef path="Radio_Types_Pkg::Radio_TrackTrain_Header_T" refOid="!ed/5bed/59EE/B08/546dba56264c"/>
+						<TypeRef path="Common_Types_Pkg::RBC_Id_T" refOid="!ed/1d84e/1FEB/11C8/55a3d08f5387"/>
+					</references>
 				</ed:Package>
 				<kcg:Pragma>
 					doc D3.5 Management of Radio Communication

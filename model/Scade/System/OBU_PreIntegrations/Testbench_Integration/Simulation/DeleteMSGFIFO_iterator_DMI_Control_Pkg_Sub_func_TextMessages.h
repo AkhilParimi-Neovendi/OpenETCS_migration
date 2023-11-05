@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _DeleteMSGFIFO_iterator_DMI_Control_Pkg_Sub_func_TextMessages_H_
 #define _DeleteMSGFIFO_iterator_DMI_Control_Pkg_Sub_func_TextMessages_H_
@@ -21,9 +21,9 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L15/ */ _L15;
+  kcg_int32 /* _L15/ */ _L15;
   kcg_bool /* _L16/ */ _L16;
-  kcg_int64 /* _L17/ */ _L17;
+  kcg_int32 /* _L17/ */ _L17;
   MsgStructure /* _L19/ */ _L19;
   MsgStructure /* _L30/ */ _L30;
   MsgStructure /* _L35/ */ _L35;
@@ -33,13 +33,13 @@ typedef struct {
 /* DMI_Control_Pkg::Sub_func::TextMessages::DeleteMSGFIFO_iterator/ */
 extern void DeleteMSGFIFO_iterator_DMI_Control_Pkg_Sub_func_TextMessages(
   /* index/ */
-  kcg_int64 index,
+  kcg_int32 index,
   /* QueueElemIn/ */
   MsgStructure *QueueElemIn,
   /* QueueElemShifted/ */
   MsgStructure *QueueElemShifted,
   /* Pos/ */
-  kcg_int64 Pos,
+  kcg_int32 Pos,
   outC_DeleteMSGFIFO_iterator_DMI_Control_Pkg_Sub_func_TextMessages *outC);
 
 extern void DeleteMSGFIFO_iterator_reset_DMI_Control_Pkg_Sub_func_TextMessages(
@@ -55,6 +55,6 @@ extern void DeleteMSGFIFO_iterator_init_DMI_Control_Pkg_Sub_func_TextMessages(
 #endif /* _DeleteMSGFIFO_iterator_DMI_Control_Pkg_Sub_func_TextMessages_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** DeleteMSGFIFO_iterator_DMI_Control_Pkg_Sub_func_TextMessages.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _op_3_8_2_3_a_TA_MA_Request_H_
 #define _op_3_8_2_3_a_TA_MA_Request_H_
@@ -32,17 +32,17 @@ typedef struct {
   trainPosition_T_TrainPosition_Types_Pck /* _L1/ */ _L1;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L5/ */ _L5;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L7/ */ _L7;
-  kcg_int64 /* _L8/ */ _L8;
+  kcg_int32 /* _L8/ */ _L8;
   OdometrySpeeds_T_Obu_BasicTypes_Pkg /* _L9/ */ _L9;
-  kcg_float64 /* _L10/ */ _L10;
-  kcg_float64 /* _L11/ */ _L11;
-  kcg_float64 /* _L17/ */ _L17;
+  kcg_float32 /* _L10/ */ _L10;
+  kcg_float32 /* _L11/ */ _L11;
+  kcg_float32 /* _L17/ */ _L17;
   V_odometry_Type_Obu_BasicTypes_Pkg /* _L19/ */ _L19;
   kcg_bool /* _L21/ */ _L21;
-  kcg_float64 /* _L20/ */ _L20;
-  kcg_float64 /* _L27/ */ _L27;
+  kcg_float32 /* _L20/ */ _L20;
+  kcg_float32 /* _L27/ */ _L27;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L29/ */ _L29;
-  kcg_int64 /* _L30/ */ _L30;
+  kcg_int32 /* _L30/ */ _L30;
   kcg_bool /* _L31/ */ _L31;
   kcg_bool /* _L33/ */ _L33;
   kcg_bool /* _L34/ */ _L34;
@@ -97,6 +97,6 @@ extern void kcg_load_SV_op_3_8_2_3_a_TA_MA_Request(
 #endif /* _op_3_8_2_3_a_TA_MA_Request_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** op_3_8_2_3_a_TA_MA_Request.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

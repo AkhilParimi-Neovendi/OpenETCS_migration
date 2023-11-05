@@ -34,11 +34,11 @@ typedef struct {
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* _L84/ */ _L84;
   T_TRAIN /* _L85/ */ _L85;
   NID_ENGINE /* _L102/ */ _L102;
-  kcg_int64 /* _L101/ */ _L101;
+  kcg_int32 /* _L101/ */ _L101;
   kcg_bool /* _L100/ */ _L100;
   trainProperties_T_TrainPosition_Types_Pck /* _L99/ */ _L99;
   M_132_T_TM_radio_messages /* _L98/ */ _L98;
-  kcg_int64 /* _L97/ */ _L97;
+  kcg_int32 /* _L97/ */ _L97;
   Q_MARQSTREASON /* _L103/ */ _L103;
   M_VERSION /* _L104/ */ _L104;
   P009_TM_TrainToTrack /* _L105/ */ _L105;
@@ -47,7 +47,7 @@ typedef struct {
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* _L108/ */ _L108;
   P000_TM_TrainToTrack /* _L109/ */ _L109;
   P001_TM_TrainToTrack /* _L110/ */ _L110;
-  kcg_int64 /* _L111/ */ _L111;
+  kcg_int32 /* _L111/ */ _L111;
   Q_MARQSTREASON /* _L114/ */ _L114;
 } outC_Build_MA_request_TA_MA_Request;
 

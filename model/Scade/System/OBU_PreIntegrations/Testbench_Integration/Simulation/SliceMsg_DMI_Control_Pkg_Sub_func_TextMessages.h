@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _SliceMsg_DMI_Control_Pkg_Sub_func_TextMessages_H_
 #define _SliceMsg_DMI_Control_Pkg_Sub_func_TextMessages_H_
@@ -32,16 +32,16 @@ typedef struct {
   L_TEXT /* _L10/ */ _L10;
   kcg_bool /* _L11/ */ _L11;
   kcg_bool /* _L12/ */ _L12;
-  kcg_int64 /* _L13/ */ _L13;
-  kcg_int64 /* _L14/ */ _L14;
+  kcg_int32 /* _L13/ */ _L13;
+  kcg_int32 /* _L14/ */ _L14;
   kcg_bool /* _L15/ */ _L15;
   array_char_30_5 /* _L16/ */ _L16;
   MsgStructure /* _L18/ */ _L18;
   DMI_Text_Message_T_DMI_Messages_EVC_to_DMI_Pkg /* _L19/ */ _L19;
-  kcg_int64 /* _L26/ */ _L26;
+  kcg_int32 /* _L26/ */ _L26;
   kcg_bool /* _L25/ */ _L25;
   L_TEXT /* _L24/ */ _L24;
-  kcg_int64 /* _L23/ */ _L23;
+  kcg_int32 /* _L23/ */ _L23;
   kcg_bool /* _L22/ */ _L22;
   kcg_bool /* _L21/ */ _L21;
   array_char_30_5 /* _L28/ */ _L28;
@@ -55,8 +55,8 @@ typedef struct {
   kcg_bool /* _L43/ */ _L43;
   DMI_Text_Message_T_DMI_Messages_EVC_to_DMI_Pkg /* _L42/ */ _L42;
   kcg_bool /* _L41/ */ _L41;
-  kcg_int64 /* _L40/ */ _L40;
-  kcg_int64 /* _L39/ */ _L39;
+  kcg_int32 /* _L40/ */ _L40;
+  kcg_int32 /* _L39/ */ _L39;
   kcg_bool /* _L38/ */ _L38;
   MsgStructure /* _L37/ */ _L37;
   L_TEXT /* _L36/ */ _L36;
@@ -68,8 +68,8 @@ typedef struct {
   array_char_30_5 /* _L49/ */ _L49;
   kcg_bool /* _L57/ */ _L57;
   DMI_Text_Message_T_DMI_Messages_EVC_to_DMI_Pkg /* _L56/ */ _L56;
-  kcg_int64 /* _L55/ */ _L55;
-  kcg_int64 /* _L54/ */ _L54;
+  kcg_int32 /* _L55/ */ _L55;
+  kcg_int32 /* _L54/ */ _L54;
   MsgStructure /* _L53/ */ _L53;
   kcg_bool /* _L52/ */ _L52;
   L_TEXT /* _L51/ */ _L51;
@@ -81,14 +81,14 @@ typedef struct {
   array_char_30 /* _L59/ */ _L59;
   array_char_30_5 /* _L63/ */ _L63;
   array_char_30_5 /* _L64/ */ _L64;
-  kcg_int64 /* _L72/ */ _L72;
+  kcg_int32 /* _L72/ */ _L72;
   DMI_Text_Message_T_DMI_Messages_EVC_to_DMI_Pkg /* _L71/ */ _L71;
   kcg_bool /* _L70/ */ _L70;
   kcg_bool /* _L69/ */ _L69;
   kcg_bool /* _L68/ */ _L68;
   L_TEXT /* _L67/ */ _L67;
   MsgStructure /* _L66/ */ _L66;
-  kcg_int64 /* _L65/ */ _L65;
+  kcg_int32 /* _L65/ */ _L65;
   DMI_TEXT_DMI_Types_Pkg /* _L73/ */ _L73;
   array_char_30 /* _L79/ */ _L79;
   array_char_30 /* _L78/ */ _L78;
@@ -124,6 +124,6 @@ extern void SliceMsg_init_DMI_Control_Pkg_Sub_func_TextMessages(
 #endif /* _SliceMsg_DMI_Control_Pkg_Sub_func_TextMessages_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** SliceMsg_DMI_Control_Pkg_Sub_func_TextMessages.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

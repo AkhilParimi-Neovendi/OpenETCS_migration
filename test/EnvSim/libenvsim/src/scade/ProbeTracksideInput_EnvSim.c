@@ -35,7 +35,7 @@ void ProbeTracksideInput_reset_EnvSim(outC_ProbeTracksideInput_EnvSim *outC)
 
 /* EnvSim::ProbeTracksideInput */
 void ProbeTracksideInput_EnvSim(
-  kcg_float64 currentPosition,
+  kcg_float32 currentPosition,
   CompressedBaliseMessage_TM *baliseMessage,
   CompressedRadioMessage_TM *radioMessage,
   M_TrainTrack_Message_T_TM_radio_messages *trainMessage,

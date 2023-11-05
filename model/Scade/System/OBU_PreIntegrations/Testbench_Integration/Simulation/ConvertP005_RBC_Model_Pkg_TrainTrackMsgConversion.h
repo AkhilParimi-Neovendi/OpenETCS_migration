@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _ConvertP005_RBC_Model_Pkg_TrainTrackMsgConversion_H_
 #define _ConvertP005_RBC_Model_Pkg_TrainTrackMsgConversion_H_
@@ -51,6 +51,6 @@ extern void ConvertP005_init_RBC_Model_Pkg_TrainTrackMsgConversion(
 #endif /* _ConvertP005_RBC_Model_Pkg_TrainTrackMsgConversion_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ConvertP005_RBC_Model_Pkg_TrainTrackMsgConversion.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

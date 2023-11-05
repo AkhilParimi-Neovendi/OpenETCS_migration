@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _FirstFilter_InformationFilter_Pkg_FirstFilter_H_
 #define _FirstFilter_InformationFilter_Pkg_FirstFilter_H_
@@ -44,10 +44,10 @@ typedef struct {
   RadioMetadata_T_Common_Types_Pkg /* _L8/ */ _L8;
   BG_Header_T_BG_Types_Pkg /* _L9/ */ _L9;
   DMI_Available_Menu_int_T_DATA /* _L1/ */ _L1;
-  _6_array /* _L46/ */ _L46;
+  _35_array /* _L46/ */ _L46;
   MsgSource_T_Common_Types_Pkg /* _L48/ */ _L48;
-  array_int64_30 /* _L49/ */ _L49;
-  _98_array /* _L45/ */ _L45;
+  array_int32_30 /* _L49/ */ _L49;
+  _18_array /* _L45/ */ _L45;
   Radio_TrackTrain_Header_T_Radio_Types_Pkg /* _L82/ */ _L82;
   CompressedPackets_T_Common_Types_Pkg /* _L81/ */ _L81;
   Metadata_T_Common_Types_Pkg /* _L98/ */ _L98;
@@ -55,7 +55,7 @@ typedef struct {
   DMI_Available_Menu_int_T_DATA /* _L108/ */ _L108;
   DMI_Available_Menu_int_T_DATA /* _L110/ */ _L110;
   DMI_Available_Menu_int_T_DATA /* _L111/ */ _L111;
-  array_int64_30 /* _L112/ */ _L112;
+  array_int32_30 /* _L112/ */ _L112;
   DMI_Available_Menu_int_T_DATA /* _L113/ */ _L113;
   DMI_Available_Menu_int_T_DATA /* _L114/ */ _L114;
   kcg_bool /* _L116/ */ _L116;
@@ -68,7 +68,7 @@ typedef struct {
   kcg_bool /* _L149/ */ _L149;
   kcg_bool /* _L150/ */ _L150;
   kcg_bool /* _L151/ */ _L151;
-  kcg_int64 /* _L152/ */ _L152;
+  kcg_int32 /* _L152/ */ _L152;
   kcg_bool /* _L153/ */ _L153;
   kcg_bool /* _L154/ */ _L154;
   kcg_bool /* _L155/ */ _L155;
@@ -120,6 +120,6 @@ extern void FirstFilter_init_InformationFilter_Pkg_FirstFilter(
 #endif /* _FirstFilter_InformationFilter_Pkg_FirstFilter_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** FirstFilter_InformationFilter_Pkg_FirstFilter.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

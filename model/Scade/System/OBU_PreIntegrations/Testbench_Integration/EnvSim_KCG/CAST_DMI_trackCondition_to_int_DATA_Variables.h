@@ -25,11 +25,11 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   DMI_trackCondition_T_DMI_Types_Pkg /* _L1/ */ _L1;
   DMI_trackConditionArray_T_DMI_Types_Pkg /* _L2/ */ _L2;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   P044_other_data_TM_TrainToTrack /* _L6/ */ _L6;
-  array_int64_65 /* _L7/ */ _L7;
-  array_int64_32 /* _L9/ */ _L9;
-  array_int64_32 /* _L8/ */ _L8;
+  array_int32_65 /* _L7/ */ _L7;
+  array_int32_32 /* _L9/ */ _L9;
+  array_int32_32 /* _L8/ */ _L8;
 } outC_CAST_DMI_trackCondition_to_int_DATA_Variables;
 
 /* ===========  node initialization and cycle functions  =========== */

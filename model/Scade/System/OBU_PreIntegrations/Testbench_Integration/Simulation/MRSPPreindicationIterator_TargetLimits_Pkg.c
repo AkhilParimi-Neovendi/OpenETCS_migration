@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,7 +10,7 @@
 /* TargetLimits_Pkg::MRSPPreindicationIterator/ */
 void MRSPPreindicationIterator_TargetLimits_Pkg(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* MRSP_preindication_mix/ */
   MRSP_internal_section_T_TargetManagement_types *MRSP_preindication_mix,
   /* MRSP_sect_n/ */
@@ -85,7 +85,7 @@ void MRSPPreindicationIterator_TargetLimits_Pkg(
     outC->_L22 = op_call;
   }
   else {
-    outC->_L22 = kcg_lit_float64(0.0);
+    outC->_L22 = kcg_lit_float32(0.0);
   }
   outC->D_I = outC->_L22;
   outC->_L71 = outC->D_I;
@@ -95,7 +95,7 @@ void MRSPPreindicationIterator_TargetLimits_Pkg(
   outC->_L33 = outC->_L70 & outC->_L42 & outC->_L72;
   outC->cornerCaseFulfilled = outC->_L33;
   outC->_L63 = outC->cornerCaseFulfilled;
-  outC->_L108 = MRSPMaxSections_TrackAtlasTypes - kcg_lit_int64(1);
+  outC->_L108 = MRSPMaxSections_TrackAtlasTypes - kcg_lit_int32(1);
   outC->_L107 = i;
   outC->_L110 = outC->_L107 == outC->_L108;
   outC->_L102 = outC->currentlyValid;
@@ -191,44 +191,44 @@ void MRSPPreindicationIterator_init_TargetLimits_Pkg(
   outC->_L113 = kcg_true;
   outC->_L111 = kcg_true;
   outC->_L110 = kcg_true;
-  outC->_L108 = kcg_lit_int64(0);
-  outC->_L107 = kcg_lit_int64(0);
-  outC->_L104 = kcg_lit_float64(0.0);
-  outC->_L103 = kcg_lit_float64(0.0);
+  outC->_L108 = kcg_lit_int32(0);
+  outC->_L107 = kcg_lit_int32(0);
+  outC->_L104 = kcg_lit_float32(0.0);
+  outC->_L103 = kcg_lit_float32(0.0);
   outC->_L102 = kcg_true;
   outC->_L99 = kcg_true;
   outC->_L98 = kcg_true;
   outC->_L96 = kcg_true;
   outC->_L97 = kcg_true;
   outC->_L90 = kcg_true;
-  outC->_L89.Traction = kcg_lit_float64(0.0);
-  outC->_L89.berem = kcg_lit_float64(0.0);
-  outC->_L89.bs = kcg_lit_float64(0.0);
-  outC->_L89.bs1 = kcg_lit_float64(0.0);
-  outC->_L89.bs2 = kcg_lit_float64(0.0);
+  outC->_L89.Traction = kcg_lit_float32(0.0);
+  outC->_L89.berem = kcg_lit_float32(0.0);
+  outC->_L89.bs = kcg_lit_float32(0.0);
+  outC->_L89.bs1 = kcg_lit_float32(0.0);
+  outC->_L89.bs2 = kcg_lit_float32(0.0);
   outC->_L89.inhComp = kcg_true;
-  outC->_L89.indication = kcg_lit_float64(0.0);
+  outC->_L89.indication = kcg_lit_float32(0.0);
   for (idx = 0; idx < 114; idx++) {
-    outC->_L88.distances[idx] = kcg_lit_float64(0.0);
+    outC->_L88.distances[idx] = kcg_lit_float32(0.0);
   }
   for (idx1 = 0; idx1 < 114; idx1++) {
-    outC->_L88.speeds[idx1] = kcg_lit_float64(0.0);
+    outC->_L88.speeds[idx1] = kcg_lit_float32(0.0);
   }
   for (idx2 = 0; idx2 < 114; idx2++) {
-    outC->_L88.accelerations[idx2] = kcg_lit_float64(0.0);
+    outC->_L88.accelerations[idx2] = kcg_lit_float32(0.0);
   }
   for (idx3 = 0; idx3 < 114; idx3++) {
     outC->_L88.valid[idx3] = kcg_true;
   }
   outC->_L87 = kcg_true;
   for (idx4 = 0; idx4 < 114; idx4++) {
-    outC->_L84.distances[idx4] = kcg_lit_float64(0.0);
+    outC->_L84.distances[idx4] = kcg_lit_float32(0.0);
   }
   for (idx5 = 0; idx5 < 114; idx5++) {
-    outC->_L84.speeds[idx5] = kcg_lit_float64(0.0);
+    outC->_L84.speeds[idx5] = kcg_lit_float32(0.0);
   }
   for (idx6 = 0; idx6 < 114; idx6++) {
-    outC->_L84.accelerations[idx6] = kcg_lit_float64(0.0);
+    outC->_L84.accelerations[idx6] = kcg_lit_float32(0.0);
   }
   for (idx7 = 0; idx7 < 114; idx7++) {
     outC->_L84.valid[idx7] = kcg_true;
@@ -238,65 +238,65 @@ void MRSPPreindicationIterator_init_TargetLimits_Pkg(
   outC->_L79 = kcg_true;
   outC->_L78 = kcg_true;
   outC->_L76 = kcg_true;
-  outC->_L73 = kcg_lit_float64(0.0);
+  outC->_L73 = kcg_lit_float32(0.0);
   outC->_L72 = kcg_true;
-  outC->_L71 = kcg_lit_float64(0.0);
+  outC->_L71 = kcg_lit_float32(0.0);
   outC->_L70 = kcg_true;
   outC->_L65 = kcg_true;
   outC->_L63 = kcg_true;
   outC->_L62 = kcg_true;
   outC->_L59 = kcg_true;
-  outC->_L57 = kcg_lit_float64(0.0);
-  outC->_L54 = kcg_lit_float64(0.0);
-  outC->_L53 = kcg_lit_float64(0.0);
-  outC->_L52 = kcg_lit_float64(0.0);
-  outC->_L51 = kcg_lit_float64(0.0);
-  outC->_L50 = kcg_lit_float64(0.0);
+  outC->_L57 = kcg_lit_float32(0.0);
+  outC->_L54 = kcg_lit_float32(0.0);
+  outC->_L53 = kcg_lit_float32(0.0);
+  outC->_L52 = kcg_lit_float32(0.0);
+  outC->_L51 = kcg_lit_float32(0.0);
+  outC->_L50 = kcg_lit_float32(0.0);
   outC->_L49 = kcg_true;
   outC->_L48 = kcg_true;
-  outC->_L47 = kcg_lit_float64(0.0);
-  outC->_L46 = kcg_lit_float64(0.0);
+  outC->_L47 = kcg_lit_float32(0.0);
+  outC->_L46 = kcg_lit_float32(0.0);
   outC->_L45 = kcg_true;
   outC->_L44 = kcg_true;
   outC->_L43 = kcg_true;
   outC->_L42 = kcg_true;
-  outC->_L39 = kcg_lit_float64(0.0);
-  outC->_L35 = kcg_lit_float64(0.0);
+  outC->_L39 = kcg_lit_float32(0.0);
+  outC->_L35 = kcg_lit_float32(0.0);
   outC->_L33 = kcg_true;
-  outC->_L29.Loc_Abs = kcg_lit_float64(0.0);
-  outC->_L29.MRS = kcg_lit_float64(0.0);
+  outC->_L29.Loc_Abs = kcg_lit_float32(0.0);
+  outC->_L29.MRS = kcg_lit_float32(0.0);
   outC->_L29.valid = kcg_true;
-  outC->_L28 = kcg_lit_float64(0.0);
-  outC->_L27 = kcg_lit_float64(0.0);
-  outC->_L26 = kcg_lit_float64(0.0);
-  outC->_L25 = kcg_lit_float64(0.0);
-  outC->_L22 = kcg_lit_float64(0.0);
-  outC->_L19 = kcg_lit_float64(0.0);
-  outC->_L20 = kcg_lit_float64(0.0);
+  outC->_L28 = kcg_lit_float32(0.0);
+  outC->_L27 = kcg_lit_float32(0.0);
+  outC->_L26 = kcg_lit_float32(0.0);
+  outC->_L25 = kcg_lit_float32(0.0);
+  outC->_L22 = kcg_lit_float32(0.0);
+  outC->_L19 = kcg_lit_float32(0.0);
+  outC->_L20 = kcg_lit_float32(0.0);
   outC->_L21 = kcg_true;
-  outC->_L8.Loc_Abs = kcg_lit_float64(0.0);
-  outC->_L8.MRS = kcg_lit_float64(0.0);
+  outC->_L8.Loc_Abs = kcg_lit_float32(0.0);
+  outC->_L8.MRS = kcg_lit_float32(0.0);
   outC->_L8.valid = kcg_true;
-  outC->_L7.Loc_Abs = kcg_lit_float64(0.0);
-  outC->_L7.MRS = kcg_lit_float64(0.0);
+  outC->_L7.Loc_Abs = kcg_lit_float32(0.0);
+  outC->_L7.MRS = kcg_lit_float32(0.0);
   outC->_L7.valid = kcg_true;
-  outC->_L4 = kcg_lit_float64(0.0);
-  outC->_L5 = kcg_lit_float64(0.0);
+  outC->_L4 = kcg_lit_float32(0.0);
+  outC->_L5 = kcg_lit_float32(0.0);
   outC->_L6 = kcg_true;
   outC->finalCaseFulfilled = kcg_true;
   outC->currentlyValid = kcg_true;
   outC->finalize = kcg_true;
   outC->cornerCaseFulfilled = kcg_true;
   outC->simpleCaseFulfilled = kcg_true;
-  outC->D_start = kcg_lit_float64(0.0);
+  outC->D_start = kcg_lit_float32(0.0);
   outC->lastIsValid = kcg_true;
-  outC->D_I_1 = kcg_lit_float64(0.0);
-  outC->V_MRSPn_1 = kcg_lit_float64(0.0);
-  outC->V_MRSPn = kcg_lit_float64(0.0);
-  outC->D_I = kcg_lit_float64(0.0);
+  outC->D_I_1 = kcg_lit_float32(0.0);
+  outC->V_MRSPn_1 = kcg_lit_float32(0.0);
+  outC->V_MRSPn = kcg_lit_float32(0.0);
+  outC->D_I = kcg_lit_float32(0.0);
   outC->every = kcg_true;
-  outC->MRSP_preindication_next.Loc_Abs = kcg_lit_float64(0.0);
-  outC->MRSP_preindication_next.MRS = kcg_lit_float64(0.0);
+  outC->MRSP_preindication_next.Loc_Abs = kcg_lit_float32(0.0);
+  outC->MRSP_preindication_next.MRS = kcg_lit_float32(0.0);
   outC->MRSP_preindication_next.valid = kcg_true;
   outC->goOn = kcg_true;
   /* _L90=(TargetLimits_Pkg::d_I_MRSP#1)/ */
@@ -318,6 +318,6 @@ void MRSPPreindicationIterator_reset_TargetLimits_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** MRSPPreindicationIterator_TargetLimits_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

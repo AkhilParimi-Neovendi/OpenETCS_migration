@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _Write_P255_TM_trackside_H_
 #define _Write_P255_TM_trackside_H_
@@ -32,8 +32,8 @@ typedef struct {
   Metadata_T_Common_Types_Pkg /* _L4/ */ _L4;
   CompressedPacketData_T_Common_Types_Pkg /* _L10/ */ _L10;
   kcg_bool /* _L18/ */ _L18;
-  kcg_int64 /* _L21/ */ _L21;
-  kcg_int64 /* _L22/ */ _L22;
+  kcg_int32 /* _L21/ */ _L21;
+  kcg_int32 /* _L22/ */ _L22;
   CompressedPackets_T_Common_Types_Pkg /* _L39/ */ _L39;
   CompressedPackets_T_Common_Types_Pkg /* _L40/ */ _L40;
   CompressedPacketData_T_Common_Types_Pkg /* _L42/ */ _L42;
@@ -64,6 +64,6 @@ extern void Write_P255_init_TM_trackside(outC_Write_P255_TM_trackside *outC);
 #endif /* _Write_P255_TM_trackside_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Write_P255_TM_trackside.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

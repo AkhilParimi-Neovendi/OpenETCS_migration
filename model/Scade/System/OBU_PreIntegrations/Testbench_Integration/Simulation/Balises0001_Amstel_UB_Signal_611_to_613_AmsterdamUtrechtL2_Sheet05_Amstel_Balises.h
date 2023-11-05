@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _Balises0001_Amstel_UB_Signal_611_to_613_AmsterdamUtrechtL2_Sheet05_Amstel_Balises_H_
 #define _Balises0001_Amstel_UB_Signal_611_to_613_AmsterdamUtrechtL2_Sheet05_Amstel_Balises_H_
@@ -26,7 +26,7 @@ typedef struct {
   CompressedBaliseMessage_TM /* _L1/ */ _L1;
   TrackSectionData_T_InfraLib /* _L3/ */ _L3;
   CompressedBaliseMessage_TM /* _L13/ */ _L13;
-  kcg_float64 /* _L14/ */ _L14;
+  kcg_float32 /* _L14/ */ _L14;
   TrackSectionData_T_InfraLib /* _L15/ */ _L15;
 } outC_Balises0001_Amstel_UB_Signal_611_to_613_AmsterdamUtrechtL2_Sheet05_Amstel_Balises;
 
@@ -52,6 +52,6 @@ extern void Balises0001_Amstel_UB_Signal_611_to_613_init_AmsterdamUtrechtL2_Shee
 #endif /* _Balises0001_Amstel_UB_Signal_611_to_613_AmsterdamUtrechtL2_Sheet05_Amstel_Balises_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Balises0001_Amstel_UB_Signal_611_to_613_AmsterdamUtrechtL2_Sheet05_Amstel_Balises.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -152,68 +152,68 @@ void sendBrakesToDMI_init_manage_DMI_Output_Pkg(
   outC->releaseBrake = kcg_true;
   outC->applyBrake = kcg_true;
   outC->IfBlock1_clock = kcg_true;
-  outC->_L3_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L3_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L4_then_else_IfBlock1.valid = kcg_true;
-  outC->_L4_then_else_IfBlock1.system_clock = kcg_lit_int64(0);
+  outC->_L4_then_else_IfBlock1.system_clock = kcg_lit_int32(0);
   outC->_L4_then_else_IfBlock1.DMI_m_icon_control_flag =
     show_icon_in_area_DMI_Types_Pkg;
-  outC->_L4_then_else_IfBlock1.DMI_m_icon_flashing_freq = kcg_lit_float64(0.0);
+  outC->_L4_then_else_IfBlock1.DMI_m_icon_flashing_freq = kcg_lit_float32(0.0);
   outC->_L4_then_else_IfBlock1.DMI_nid_icon_group = level_symbol_DMI_Types_Pkg;
-  outC->_L4_then_else_IfBlock1.DMI_nid_icon_rank = kcg_lit_int64(0);
+  outC->_L4_then_else_IfBlock1.DMI_nid_icon_rank = kcg_lit_int32(0);
   outC->_L4_then_else_IfBlock1.DMI_nid_area_group = A_DMI_Types_Pkg;
-  outC->_L4_then_else_IfBlock1.DMI_nid_area_rank = kcg_lit_int64(0);
-  outC->_L4_then_else_IfBlock1.DMI_nid_icon_identifier = kcg_lit_int64(0);
+  outC->_L4_then_else_IfBlock1.DMI_nid_area_rank = kcg_lit_int32(0);
+  outC->_L4_then_else_IfBlock1.DMI_nid_icon_identifier = kcg_lit_int32(0);
   outC->_L5_then_else_IfBlock1.valid = kcg_true;
-  outC->_L5_then_else_IfBlock1.system_clock = kcg_lit_int64(0);
+  outC->_L5_then_else_IfBlock1.system_clock = kcg_lit_int32(0);
   outC->_L5_then_else_IfBlock1.DMI_m_icon_control_flag =
     show_icon_in_area_DMI_Types_Pkg;
-  outC->_L5_then_else_IfBlock1.DMI_m_icon_flashing_freq = kcg_lit_float64(0.0);
+  outC->_L5_then_else_IfBlock1.DMI_m_icon_flashing_freq = kcg_lit_float32(0.0);
   outC->_L5_then_else_IfBlock1.DMI_nid_icon_group = level_symbol_DMI_Types_Pkg;
-  outC->_L5_then_else_IfBlock1.DMI_nid_icon_rank = kcg_lit_int64(0);
+  outC->_L5_then_else_IfBlock1.DMI_nid_icon_rank = kcg_lit_int32(0);
   outC->_L5_then_else_IfBlock1.DMI_nid_area_group = A_DMI_Types_Pkg;
-  outC->_L5_then_else_IfBlock1.DMI_nid_area_rank = kcg_lit_int64(0);
-  outC->_L5_then_else_IfBlock1.DMI_nid_icon_identifier = kcg_lit_int64(0);
+  outC->_L5_then_else_IfBlock1.DMI_nid_area_rank = kcg_lit_int32(0);
+  outC->_L5_then_else_IfBlock1.DMI_nid_icon_identifier = kcg_lit_int32(0);
   outC->_L1_else_else_IfBlock1.valid = kcg_true;
-  outC->_L1_else_else_IfBlock1.system_clock = kcg_lit_int64(0);
+  outC->_L1_else_else_IfBlock1.system_clock = kcg_lit_int32(0);
   outC->_L1_else_else_IfBlock1.DMI_m_icon_control_flag =
     show_icon_in_area_DMI_Types_Pkg;
-  outC->_L1_else_else_IfBlock1.DMI_m_icon_flashing_freq = kcg_lit_float64(0.0);
+  outC->_L1_else_else_IfBlock1.DMI_m_icon_flashing_freq = kcg_lit_float32(0.0);
   outC->_L1_else_else_IfBlock1.DMI_nid_icon_group = level_symbol_DMI_Types_Pkg;
-  outC->_L1_else_else_IfBlock1.DMI_nid_icon_rank = kcg_lit_int64(0);
+  outC->_L1_else_else_IfBlock1.DMI_nid_icon_rank = kcg_lit_int32(0);
   outC->_L1_else_else_IfBlock1.DMI_nid_area_group = A_DMI_Types_Pkg;
-  outC->_L1_else_else_IfBlock1.DMI_nid_area_rank = kcg_lit_int64(0);
-  outC->_L1_else_else_IfBlock1.DMI_nid_icon_identifier = kcg_lit_int64(0);
+  outC->_L1_else_else_IfBlock1.DMI_nid_area_rank = kcg_lit_int32(0);
+  outC->_L1_else_else_IfBlock1.DMI_nid_icon_identifier = kcg_lit_int32(0);
   outC->else_clock_IfBlock1 = kcg_true;
   outC->_L1_then_IfBlock1.valid = kcg_true;
-  outC->_L1_then_IfBlock1.system_clock = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1.system_clock = kcg_lit_int32(0);
   outC->_L1_then_IfBlock1.DMI_m_icon_control_flag =
     show_icon_in_area_DMI_Types_Pkg;
-  outC->_L1_then_IfBlock1.DMI_m_icon_flashing_freq = kcg_lit_float64(0.0);
+  outC->_L1_then_IfBlock1.DMI_m_icon_flashing_freq = kcg_lit_float32(0.0);
   outC->_L1_then_IfBlock1.DMI_nid_icon_group = level_symbol_DMI_Types_Pkg;
-  outC->_L1_then_IfBlock1.DMI_nid_icon_rank = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1.DMI_nid_icon_rank = kcg_lit_int32(0);
   outC->_L1_then_IfBlock1.DMI_nid_area_group = A_DMI_Types_Pkg;
-  outC->_L1_then_IfBlock1.DMI_nid_area_rank = kcg_lit_int64(0);
-  outC->_L1_then_IfBlock1.DMI_nid_icon_identifier = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1.DMI_nid_area_rank = kcg_lit_int32(0);
+  outC->_L1_then_IfBlock1.DMI_nid_icon_identifier = kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.valid = kcg_true;
-  outC->_L2_then_IfBlock1.system_clock = kcg_lit_int64(0);
+  outC->_L2_then_IfBlock1.system_clock = kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.DMI_m_icon_control_flag =
     show_icon_in_area_DMI_Types_Pkg;
-  outC->_L2_then_IfBlock1.DMI_m_icon_flashing_freq = kcg_lit_float64(0.0);
+  outC->_L2_then_IfBlock1.DMI_m_icon_flashing_freq = kcg_lit_float32(0.0);
   outC->_L2_then_IfBlock1.DMI_nid_icon_group = level_symbol_DMI_Types_Pkg;
-  outC->_L2_then_IfBlock1.DMI_nid_icon_rank = kcg_lit_int64(0);
+  outC->_L2_then_IfBlock1.DMI_nid_icon_rank = kcg_lit_int32(0);
   outC->_L2_then_IfBlock1.DMI_nid_area_group = A_DMI_Types_Pkg;
-  outC->_L2_then_IfBlock1.DMI_nid_area_rank = kcg_lit_int64(0);
-  outC->_L2_then_IfBlock1.DMI_nid_icon_identifier = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_IfBlock1.DMI_nid_area_rank = kcg_lit_int32(0);
+  outC->_L2_then_IfBlock1.DMI_nid_icon_identifier = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock1 = kcg_lit_int32(0);
   outC->dmi_iconRequest.valid = kcg_true;
-  outC->dmi_iconRequest.system_clock = kcg_lit_int64(0);
+  outC->dmi_iconRequest.system_clock = kcg_lit_int32(0);
   outC->dmi_iconRequest.DMI_m_icon_control_flag = show_icon_in_area_DMI_Types_Pkg;
-  outC->dmi_iconRequest.DMI_m_icon_flashing_freq = kcg_lit_float64(0.0);
+  outC->dmi_iconRequest.DMI_m_icon_flashing_freq = kcg_lit_float32(0.0);
   outC->dmi_iconRequest.DMI_nid_icon_group = level_symbol_DMI_Types_Pkg;
-  outC->dmi_iconRequest.DMI_nid_icon_rank = kcg_lit_int64(0);
+  outC->dmi_iconRequest.DMI_nid_icon_rank = kcg_lit_int32(0);
   outC->dmi_iconRequest.DMI_nid_area_group = A_DMI_Types_Pkg;
-  outC->dmi_iconRequest.DMI_nid_area_rank = kcg_lit_int64(0);
-  outC->dmi_iconRequest.DMI_nid_icon_identifier = kcg_lit_int64(0);
+  outC->dmi_iconRequest.DMI_nid_area_rank = kcg_lit_int32(0);
+  outC->dmi_iconRequest.DMI_nid_icon_identifier = kcg_lit_int32(0);
   kcg_copy_Brake_command_T_TIU_Types_Pkg(
     &outC->mem_brakeCommand,
     (Brake_command_T_TIU_Types_Pkg *) &cInitBrakeCommand_manage_DMI_Output_Pkg);
@@ -254,6 +254,6 @@ void kcg_load_SV_sendBrakesToDMI_manage_DMI_Output_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** sendBrakesToDMI_manage_DMI_Output_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

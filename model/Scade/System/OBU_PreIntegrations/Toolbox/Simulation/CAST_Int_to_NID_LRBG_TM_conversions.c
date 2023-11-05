@@ -10,16 +10,16 @@
 /* TM_conversions::CAST_Int_to_NID_LRBG/ */
 void CAST_Int_to_NID_LRBG_TM_conversions(
   /* Int_in/ */
-  kcg_int64 Int_in,
+  kcg_int32 Int_in,
   outC_CAST_Int_to_NID_LRBG_TM_conversions *outC)
 {
   kcg_bool noname;
   kcg_bool _1_noname;
 
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L1 = Int_in;
   outC->_L4 = outC->_L1 < outC->_L5;
-  outC->_L3 = kcg_lit_int64(16777215);
+  outC->_L3 = kcg_lit_int32(16777215);
   outC->_L2 = outC->_L1 > outC->_L3;
   _1_noname = outC->_L2;
   noname = outC->_L4;
@@ -31,11 +31,11 @@ void CAST_Int_to_NID_LRBG_init_TM_conversions(
   outC_CAST_Int_to_NID_LRBG_TM_conversions *outC)
 {
   outC->_L2 = kcg_true;
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L4 = kcg_true;
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->NID_LRBG_out = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->NID_LRBG_out = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -21,7 +21,7 @@ void mapMLtoElement_manage_TextMessages_Pkg(
     inModeLevel_Ack);
   outC->_L33 = outC->_L32.LevelNeedsAck;
   outC->_L16 = outC->_L32.valid;
-  outC->_L27 = kcg_lit_int64(0);
+  outC->_L27 = kcg_lit_int32(0);
   outC->_L28 = Q_TEXTREPORT_No_driver_acknowledgement_report_required;
   outC->_L24 = con_modeChange_DMI_Types_Pkg;
   outC->_L21 = con_levelMgmt_DMI_Types_Pkg;
@@ -41,7 +41,7 @@ void mapMLtoElement_manage_TextMessages_Pkg(
   else {
     outC->_L18 = outC->_L19;
   }
-  outC->_L29 = kcg_lit_int64(0);
+  outC->_L29 = kcg_lit_int32(0);
   outC->_L26 = outC->_L32.whichMode;
   outC->_L14.valid = outC->_L16;
   outC->_L14.dmi_textMessageID = outC->_L27;
@@ -66,9 +66,9 @@ void mapMLtoElement_init_manage_TextMessages_Pkg(
   outC->_L32.whichMode = M_MODE_Full_Supervision;
   outC->_L32.SH_Req_RefusedByRBC = kcg_true;
   outC->_L32.LevelNeedsAck = kcg_true;
-  outC->_L29 = kcg_lit_int64(0);
+  outC->_L29 = kcg_lit_int32(0);
   outC->_L28 = Q_TEXTREPORT_No_driver_acknowledgement_report_required;
-  outC->_L27 = kcg_lit_int64(0);
+  outC->_L27 = kcg_lit_int32(0);
   outC->_L26 = M_MODE_Full_Supervision;
   outC->_L24 = con_undefined_DMI_Types_Pkg;
   outC->_L22 = con_undefined_DMI_Types_Pkg;
@@ -78,20 +78,20 @@ void mapMLtoElement_init_manage_TextMessages_Pkg(
   outC->_L18 = con_undefined_DMI_Types_Pkg;
   outC->_L16 = kcg_true;
   outC->_L14.valid = kcg_true;
-  outC->_L14.dmi_textMessageID = kcg_lit_int64(0);
-  outC->_L14.timeStamp = kcg_lit_int64(0);
+  outC->_L14.dmi_textMessageID = kcg_lit_int32(0);
+  outC->_L14.timeStamp = kcg_lit_int32(0);
   outC->_L14.textReport = Q_TEXTREPORT_No_driver_acknowledgement_report_required;
   outC->_L14.context = con_undefined_DMI_Types_Pkg;
-  outC->_L14.nid_textmessage = kcg_lit_int64(0);
+  outC->_L14.nid_textmessage = kcg_lit_int32(0);
   outC->_L14.whichLevel = M_LEVEL_Level_0;
   outC->_L14.whichMode = M_MODE_Full_Supervision;
   outC->outDerivedElement.valid = kcg_true;
-  outC->outDerivedElement.dmi_textMessageID = kcg_lit_int64(0);
-  outC->outDerivedElement.timeStamp = kcg_lit_int64(0);
+  outC->outDerivedElement.dmi_textMessageID = kcg_lit_int32(0);
+  outC->outDerivedElement.timeStamp = kcg_lit_int32(0);
   outC->outDerivedElement.textReport =
     Q_TEXTREPORT_No_driver_acknowledgement_report_required;
   outC->outDerivedElement.context = con_undefined_DMI_Types_Pkg;
-  outC->outDerivedElement.nid_textmessage = kcg_lit_int64(0);
+  outC->outDerivedElement.nid_textmessage = kcg_lit_int32(0);
   outC->outDerivedElement.whichLevel = M_LEVEL_Level_0;
   outC->outDerivedElement.whichMode = M_MODE_Full_Supervision;
 }
@@ -109,6 +109,6 @@ void mapMLtoElement_reset_manage_TextMessages_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** mapMLtoElement_manage_TextMessages_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

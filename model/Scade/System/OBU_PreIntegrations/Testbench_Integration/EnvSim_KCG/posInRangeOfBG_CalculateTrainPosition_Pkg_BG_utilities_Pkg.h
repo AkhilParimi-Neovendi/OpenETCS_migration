@@ -16,7 +16,7 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   kcg_bool /* isInRange/ */ isInRange;
-  kcg_int64 /* indexOfBG/ */ indexOfBG;
+  kcg_int32 /* indexOfBG/ */ indexOfBG;
   positionedBG_T_TrainPosition_Types_Pck /* BG/ */ BG;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
@@ -28,9 +28,9 @@ typedef struct {
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L2/ */ _L2;
   positionedBGs_T_TrainPosition_Types_Pck /* _L3/ */ _L3;
   kcg_bool /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L7/ */ _L7;
-  kcg_int64 /* _L8/ */ _L8;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L7/ */ _L7;
+  kcg_int32 /* _L8/ */ _L8;
   _22_array /* _L9/ */ _L9;
   positionedBG_T_TrainPosition_Types_Pck /* _L10/ */ _L10;
   kcg_bool /* _L12/ */ _L12;

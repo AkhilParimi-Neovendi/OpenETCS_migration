@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy_H_
 #define _compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy_H_
@@ -185,17 +185,17 @@ typedef struct {
   M_003_T_TM_radio_messages /* IfBlock1:else:then:_L3/ */ _L3_then_else_IfBlock1;
   Radio_TrackTrain_Header_T_Radio_Types_Pkg /* IfBlock1:else:then:_L2/ */ _L2_then_else_IfBlock1;
   M_TrackTrain_Radio_T_TM_radio_messages /* IfBlock1:else:then:_L1/ */ _L1_then_else_IfBlock1;
-  kcg_int64 /* nid_message/ */ nid_message;
+  kcg_int32 /* nid_message/ */ nid_message;
   Radio_TrackTrain_Header_T_Radio_Types_Pkg /* header_sheet1/ */ header_sheet1;
   Radio_TrackTrain_Header_T_Radio_Types_Pkg /* header_sheet2/ */ header_sheet2;
   M_TrackTrain_Radio_T_TM_radio_messages /* _L1/ */ _L1;
-  kcg_int64 /* _L32/ */ _L32;
-  kcg_int64 /* _L33/ */ _L33;
+  kcg_int32 /* _L32/ */ _L32;
+  kcg_int32 /* _L33/ */ _L33;
   Radio_TrackTrain_Header_T_Radio_Types_Pkg /* _L34/ */ _L34;
   Radio_TrackTrain_Header_T_Radio_Types_Pkg /* _L35/ */ _L35;
-  kcg_int64 /* _L36/ */ _L36;
+  kcg_int32 /* _L36/ */ _L36;
   kcg_bool /* _L37/ */ _L37;
-  kcg_int64 /* _L38/ */ _L38;
+  kcg_int32 /* _L38/ */ _L38;
   Radio_TrackTrain_Header_T_Radio_Types_Pkg /* _L39/ */ _L39;
 } outC_compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy;
 
@@ -221,6 +221,6 @@ extern void compressed_to_Radio_Track_Train_H_init_TM_RBC_conversions_legacy(
 #endif /* _compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** compressed_to_Radio_Track_Train_H_TM_RBC_conversions_legacy.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

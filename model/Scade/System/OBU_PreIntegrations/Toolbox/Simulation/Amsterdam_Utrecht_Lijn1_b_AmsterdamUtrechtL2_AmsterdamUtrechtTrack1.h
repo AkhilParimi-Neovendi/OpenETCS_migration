@@ -67,7 +67,7 @@ typedef struct {
   TrackSectionData_T_InfraLib /* _L13/ */ _L13;
   TrackSectionData_T_InfraLib /* _L14/ */ _L14;
   TrackSectionData_T_InfraLib /* _L15/ */ _L15;
-  kcg_float64 /* _L16/ */ _L16;
+  kcg_float32 /* _L16/ */ _L16;
   CompressedBaliseMessage_TM /* _L17/ */ _L17;
 } outC_Amsterdam_Utrecht_Lijn1_b_AmsterdamUtrechtL2_AmsterdamUtrechtTrack1;
 
@@ -75,7 +75,7 @@ typedef struct {
 /* AmsterdamUtrechtL2::AmsterdamUtrechtTrack1::Amsterdam_Utrecht_Lijn1_balises/ */
 extern void Amsterdam_Utrecht_Lijn1_b_AmsterdamUtrechtL2_AmsterdamUtrechtTrack1(
   /* TrainPosSim_in/ */
-  kcg_float64 TrainPosSim_in,
+  kcg_float32 TrainPosSim_in,
   outC_Amsterdam_Utrecht_Lijn1_b_AmsterdamUtrechtL2_AmsterdamUtrechtTrack1 *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

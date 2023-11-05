@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _determineSupervisingRBC_Handover_Pkg_handoverUtils_Pkg_H_
 #define _determineSupervisingRBC_Handover_Pkg_handoverUtils_Pkg_H_
@@ -59,7 +59,7 @@ typedef struct {
   NID_RBC /* _L55/ */ _L55;
   NID_RADIO /* _L56/ */ _L56;
   NID_MN /* _L57/ */ _L57;
-  kcg_int64 /* _L58/ */ _L58;
+  kcg_int32 /* _L58/ */ _L58;
 } outC_determineSupervisingRBC_Handover_Pkg_handoverUtils_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -92,6 +92,6 @@ extern void determineSupervisingRBC_init_Handover_Pkg_handoverUtils_Pkg(
 #endif /* _determineSupervisingRBC_Handover_Pkg_handoverUtils_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** determineSupervisingRBC_Handover_Pkg_handoverUtils_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

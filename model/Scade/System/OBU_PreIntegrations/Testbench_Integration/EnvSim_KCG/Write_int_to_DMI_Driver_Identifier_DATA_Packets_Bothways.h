@@ -25,11 +25,11 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   DMI_Driver_Identifier_int_array_T_DATA /* _L9/ */ _L9;
-  kcg_int64 /* _L26/ */ _L26;
+  kcg_int32 /* _L26/ */ _L26;
   kcg_bool /* _L25/ */ _L25;
   DMI_Driver_Identifier_T_DMI_Messages_Bothways_Pkg /* _L24/ */ _L24;
   DMI_Driver_Identifier_T_DMI_Messages_Bothways_Pkg /* _L23/ */ _L23;
-  kcg_int64 /* _L22/ */ _L22;
+  kcg_int32 /* _L22/ */ _L22;
 } outC_Write_int_to_DMI_Driver_Identifier_DATA_Packets_Bothways;
 
 /* ===========  node initialization and cycle functions  =========== */

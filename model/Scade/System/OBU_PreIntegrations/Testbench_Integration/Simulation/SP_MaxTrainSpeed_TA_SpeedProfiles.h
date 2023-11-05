@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _SP_MaxTrainSpeed_TA_SpeedProfiles_H_
 #define _SP_MaxTrainSpeed_TA_SpeedProfiles_H_
@@ -21,7 +21,7 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   SSP_cat_t_TA_MRSP /* _L2/ */ _L2;
   kcg_bool /* _L3/ */ _L3;
 } outC_SP_MaxTrainSpeed_TA_SpeedProfiles;
@@ -32,7 +32,7 @@ extern void SP_MaxTrainSpeed_TA_SpeedProfiles(
   /* reset/ */
   kcg_bool reset,
   /* TrainDataIn/ */
-  kcg_int64 TrainDataIn,
+  kcg_int32 TrainDataIn,
   outC_SP_MaxTrainSpeed_TA_SpeedProfiles *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET
@@ -50,6 +50,6 @@ extern void SP_MaxTrainSpeed_init_TA_SpeedProfiles(
 #endif /* _SP_MaxTrainSpeed_TA_SpeedProfiles_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** SP_MaxTrainSpeed_TA_SpeedProfiles.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

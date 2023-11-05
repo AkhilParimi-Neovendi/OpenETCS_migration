@@ -18,17 +18,17 @@ extern void RemoteGUI_EnvSim(
 
 #ifndef Int_to_Char_Utilities
 /* Utilities::Int_to_Char/ */
-extern kcg_char Int_to_Char_Utilities(/* int_in/ */ kcg_int64 int_in);
+extern kcg_char Int_to_Char_Utilities(/* int_in/ */ kcg_int32 int_in);
 #endif /* Int_to_Char_Utilities */
 
 #ifndef SqrtR64_mathext_mathextimpl
 /* mathext::mathextimpl::SqrtR64/ */
-extern kcg_float64 SqrtR64_mathext_mathextimpl(/* i/ */ kcg_float64 i);
+extern kcg_float32 SqrtR64_mathext_mathextimpl(/* i/ */ kcg_float32 i);
 #endif /* SqrtR64_mathext_mathextimpl */
 
 #ifndef Char_to_Int_Utilities
 /* Utilities::Char_to_Int/ */
-extern kcg_int64 Char_to_Int_Utilities(/* char_out/ */ kcg_char char_out);
+extern kcg_int32 Char_to_Int_Utilities(/* char_out/ */ kcg_char char_out);
 #endif /* Char_to_Int_Utilities */
 
 #endif /* _KCG_IMPORTED_FUNCTIONS_H_ */

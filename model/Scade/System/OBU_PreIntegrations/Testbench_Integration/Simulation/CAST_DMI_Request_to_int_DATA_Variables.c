@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -14,309 +14,309 @@ void CAST_DMI_Request_to_int_DATA_Variables(
   outC_CAST_DMI_Request_to_int_DATA_Variables *outC)
 {
   /* dmi_request_int/ */
-  static kcg_int64 dmi_request_int_partial;
+  static kcg_int32 dmi_request_int_partial;
   /* error/ */
   static kcg_bool error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _1_dmi_request_int_partial;
+  static kcg_int32 _1_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _2_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _3_dmi_request_int_partial;
+  static kcg_int32 _3_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _4_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _5_dmi_request_int_partial;
+  static kcg_int32 _5_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _6_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _7_dmi_request_int_partial;
+  static kcg_int32 _7_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _8_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _9_dmi_request_int_partial;
+  static kcg_int32 _9_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _10_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _11_dmi_request_int_partial;
+  static kcg_int32 _11_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _12_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _13_dmi_request_int_partial;
+  static kcg_int32 _13_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _14_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _15_dmi_request_int_partial;
+  static kcg_int32 _15_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _16_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _17_dmi_request_int_partial;
+  static kcg_int32 _17_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _18_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _19_dmi_request_int_partial;
+  static kcg_int32 _19_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _20_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _21_dmi_request_int_partial;
+  static kcg_int32 _21_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _22_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _23_dmi_request_int_partial;
+  static kcg_int32 _23_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _24_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _25_dmi_request_int_partial;
+  static kcg_int32 _25_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _26_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _27_dmi_request_int_partial;
+  static kcg_int32 _27_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _28_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _29_dmi_request_int_partial;
+  static kcg_int32 _29_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _30_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _31_dmi_request_int_partial;
+  static kcg_int32 _31_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _32_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _33_dmi_request_int_partial;
+  static kcg_int32 _33_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _34_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _35_dmi_request_int_partial;
+  static kcg_int32 _35_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _36_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _37_dmi_request_int_partial;
+  static kcg_int32 _37_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _38_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _39_dmi_request_int_partial;
+  static kcg_int32 _39_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _40_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _41_dmi_request_int_partial;
+  static kcg_int32 _41_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _42_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _43_dmi_request_int_partial;
+  static kcg_int32 _43_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _44_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _45_dmi_request_int_partial;
+  static kcg_int32 _45_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _46_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _47_dmi_request_int_partial;
+  static kcg_int32 _47_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _48_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _49_dmi_request_int_partial;
+  static kcg_int32 _49_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _50_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _51_dmi_request_int_partial;
+  static kcg_int32 _51_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _52_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _53_dmi_request_int_partial;
+  static kcg_int32 _53_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _54_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _55_dmi_request_int_partial;
+  static kcg_int32 _55_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _56_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _57_dmi_request_int_partial;
+  static kcg_int32 _57_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _58_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _59_dmi_request_int_partial;
+  static kcg_int32 _59_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _60_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _61_dmi_request_int_partial;
+  static kcg_int32 _61_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _62_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _63_dmi_request_int_partial;
+  static kcg_int32 _63_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _64_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _65_dmi_request_int_partial;
+  static kcg_int32 _65_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _66_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _67_dmi_request_int_partial;
+  static kcg_int32 _67_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _68_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _69_dmi_request_int_partial;
+  static kcg_int32 _69_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _70_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _71_dmi_request_int_partial;
+  static kcg_int32 _71_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _72_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _73_dmi_request_int_partial;
+  static kcg_int32 _73_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _74_error_partial;
   /* error/ */
   static kcg_bool _75_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _76_dmi_request_int_partial;
+  static kcg_int32 _76_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _77_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _78_dmi_request_int_partial;
+  static kcg_int32 _78_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _79_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _80_dmi_request_int_partial;
+  static kcg_int32 _80_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _81_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _82_dmi_request_int_partial;
+  static kcg_int32 _82_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _83_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _84_dmi_request_int_partial;
+  static kcg_int32 _84_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _85_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _86_dmi_request_int_partial;
+  static kcg_int32 _86_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _87_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _88_dmi_request_int_partial;
+  static kcg_int32 _88_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _89_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _90_dmi_request_int_partial;
+  static kcg_int32 _90_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _91_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _92_dmi_request_int_partial;
+  static kcg_int32 _92_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _93_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _94_dmi_request_int_partial;
+  static kcg_int32 _94_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _95_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _96_dmi_request_int_partial;
+  static kcg_int32 _96_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _97_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _98_dmi_request_int_partial;
+  static kcg_int32 _98_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _99_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _100_dmi_request_int_partial;
+  static kcg_int32 _100_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _101_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _102_dmi_request_int_partial;
+  static kcg_int32 _102_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _103_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _104_dmi_request_int_partial;
+  static kcg_int32 _104_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _105_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _106_dmi_request_int_partial;
+  static kcg_int32 _106_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _107_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _108_dmi_request_int_partial;
+  static kcg_int32 _108_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _109_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _110_dmi_request_int_partial;
+  static kcg_int32 _110_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _111_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _112_dmi_request_int_partial;
+  static kcg_int32 _112_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _113_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _114_dmi_request_int_partial;
+  static kcg_int32 _114_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _115_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _116_dmi_request_int_partial;
+  static kcg_int32 _116_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _117_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _118_dmi_request_int_partial;
+  static kcg_int32 _118_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _119_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _120_dmi_request_int_partial;
+  static kcg_int32 _120_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _121_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _122_dmi_request_int_partial;
+  static kcg_int32 _122_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _123_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _124_dmi_request_int_partial;
+  static kcg_int32 _124_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _125_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _126_dmi_request_int_partial;
+  static kcg_int32 _126_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _127_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _128_dmi_request_int_partial;
+  static kcg_int32 _128_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _129_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _130_dmi_request_int_partial;
+  static kcg_int32 _130_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _131_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _132_dmi_request_int_partial;
+  static kcg_int32 _132_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _133_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _134_dmi_request_int_partial;
+  static kcg_int32 _134_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _135_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _136_dmi_request_int_partial;
+  static kcg_int32 _136_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _137_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _138_dmi_request_int_partial;
+  static kcg_int32 _138_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _139_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _140_dmi_request_int_partial;
+  static kcg_int32 _140_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _141_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _142_dmi_request_int_partial;
+  static kcg_int32 _142_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _143_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _144_dmi_request_int_partial;
+  static kcg_int32 _144_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _145_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _146_dmi_request_int_partial;
+  static kcg_int32 _146_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _147_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _148_dmi_request_int_partial;
+  static kcg_int32 _148_dmi_request_int_partial;
   /* error/ */
   static kcg_bool _149_error_partial;
   /* dmi_request_int/ */
-  static kcg_int64 _150_dmi_request_int_partial;
+  static kcg_int32 _150_dmi_request_int_partial;
   static kcg_bool noname;
 
   outC->IfBlock1_clock = dmi_reqest_ct ==
@@ -625,17 +625,17 @@ void CAST_DMI_Request_to_int_DATA_Variables(
                                                               dmi_reqest_ct == ENUM_DMI_Request_T_Shunting_exit;
                                                             /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else: */
                                                             if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
-                                                              outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+                                                              outC->_L423_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
                                                                 kcg_false;
                                                               _93_error_partial =
-                                                                outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
+                                                                outC->_L423_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
                                                               _58_error_partial = _93_error_partial;
                                                             }
                                                             else {
-                                                              outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+                                                              outC->_8_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
                                                                 dmi_reqest_ct == ENUM_DMI_Request_T_Shunting_entry;
                                                               /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else: */
-                                                              if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
+                                                              if (outC->_8_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
                                                                 outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
                                                                   kcg_false;
                                                                 _60_error_partial =
@@ -643,87 +643,87 @@ void CAST_DMI_Request_to_int_DATA_Variables(
                                                                 _91_error_partial = _60_error_partial;
                                                               }
                                                               else {
-                                                                outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+                                                                outC->_1_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
                                                                   dmi_reqest_ct == ENUM_DMI_Request_T_Show_tunnel_stopping_information;
                                                                 /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else: */
-                                                                if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
-                                                                  outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+                                                                if (outC->_1_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
+                                                                  outC->_L421_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
                                                                     kcg_false;
                                                                   _89_error_partial =
-                                                                    outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
+                                                                    outC->_L421_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
                                                                   _62_error_partial = _89_error_partial;
                                                                 }
                                                                 else {
-                                                                  outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+                                                                  outC->_7_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
                                                                     dmi_reqest_ct == ENUM_DMI_Request_T_Set_VBC_request;
                                                                   /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else: */
-                                                                  if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
-                                                                    outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+                                                                  if (outC->_7_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
+                                                                    outC->_L410_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
                                                                       kcg_false;
                                                                     _64_error_partial =
-                                                                      outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
+                                                                      outC->_L410_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
                                                                     _87_error_partial = _64_error_partial;
                                                                   }
                                                                   else {
-                                                                    outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+                                                                    outC->_2_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
                                                                       dmi_reqest_ct == ENUM_DMI_Request_T_Scroll_text_up;
                                                                     /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else: */
-                                                                    if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
-                                                                      outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+                                                                    if (outC->_2_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
+                                                                      outC->_L419_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
                                                                         kcg_false;
                                                                       _85_error_partial =
-                                                                        outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
+                                                                        outC->_L419_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
                                                                       _66_error_partial = _85_error_partial;
                                                                     }
                                                                     else {
-                                                                      outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+                                                                      outC->_6_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
                                                                         dmi_reqest_ct == ENUM_DMI_Request_T_Scroll_text_down;
                                                                       /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else: */
-                                                                      if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
-                                                                        outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+                                                                      if (outC->_6_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
+                                                                        outC->_L412_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
                                                                           kcg_false;
                                                                         _68_error_partial =
-                                                                          outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
+                                                                          outC->_L412_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
                                                                         _83_error_partial = _68_error_partial;
                                                                       }
                                                                       else {
-                                                                        outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+                                                                        outC->_3_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
                                                                           dmi_reqest_ct == ENUM_DMI_Request_T_Request_to_use_short_number;
                                                                         /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else: */
-                                                                        if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
-                                                                          outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+                                                                        if (outC->_3_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
+                                                                          outC->_L417_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
                                                                             kcg_false;
                                                                           _81_error_partial =
-                                                                            outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
+                                                                            outC->_L417_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
                                                                           _70_error_partial = _81_error_partial;
                                                                         }
                                                                         else {
-                                                                          outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+                                                                          outC->_5_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
                                                                             dmi_reqest_ct == ENUM_DMI_Request_T_Request_to_show_supervision_data;
                                                                           /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else: */
-                                                                          if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
-                                                                            outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+                                                                          if (outC->_5_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
+                                                                            outC->_L414_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
                                                                               kcg_false;
                                                                             _72_error_partial =
-                                                                              outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
+                                                                              outC->_L414_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
                                                                             _79_error_partial = _72_error_partial;
                                                                           }
                                                                           else {
-                                                                            outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+                                                                            outC->_4_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBloc =
                                                                               dmi_reqest_ct == ENUM_DMI_Request_T_Request_to_show_geographical_position;
                                                                             /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else: */
-                                                                            if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
-                                                                              outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+                                                                            if (outC->_4_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBloc) {
+                                                                              outC->_L415_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBl =
                                                                                 kcg_false;
                                                                               _77_error_partial =
-                                                                                outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
+                                                                                outC->_L415_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBl;
                                                                               _74_error_partial = _77_error_partial;
                                                                             }
                                                                             else {
-                                                                              outC->_L4_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+                                                                              outC->_L4_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBloc =
                                                                                 kcg_true;
                                                                               _75_error_partial =
-                                                                                outC->_L4_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
+                                                                                outC->_L4_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBloc;
                                                                               _74_error_partial = _75_error_partial;
                                                                             }
                                                                             _79_error_partial = _74_error_partial;
@@ -1056,15 +1056,15 @@ void CAST_DMI_Request_to_int_DATA_Variables(
                                                           else {
                                                             /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else: */
                                                             if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
-                                                              outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+                                                              outC->_L524_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
                                                                 INT_DMI_Request_T_Shunting_exit;
                                                               _94_dmi_request_int_partial =
-                                                                outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
+                                                                outC->_L524_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
                                                               _57_dmi_request_int_partial = _94_dmi_request_int_partial;
                                                             }
                                                             else {
                                                               /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else: */
-                                                              if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
+                                                              if (outC->_8_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
                                                                 outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
                                                                   INT_DMI_Request_T_Shunting_entry;
                                                                 _59_dmi_request_int_partial =
@@ -1073,72 +1073,72 @@ void CAST_DMI_Request_to_int_DATA_Variables(
                                                               }
                                                               else {
                                                                 /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else: */
-                                                                if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
-                                                                  outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+                                                                if (outC->_1_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
+                                                                  outC->_L522_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
                                                                     INT_DMI_Request_T_Show_tunnel_stopping_information;
                                                                   _90_dmi_request_int_partial =
-                                                                    outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
+                                                                    outC->_L522_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
                                                                   _61_dmi_request_int_partial = _90_dmi_request_int_partial;
                                                                 }
                                                                 else {
                                                                   /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else: */
-                                                                  if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
-                                                                    outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+                                                                  if (outC->_7_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
+                                                                    outC->_L59_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
                                                                       INT_DMI_Request_T_Set_VBC_request;
                                                                     _63_dmi_request_int_partial =
-                                                                      outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
+                                                                      outC->_L59_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
                                                                     _88_dmi_request_int_partial = _63_dmi_request_int_partial;
                                                                   }
                                                                   else {
                                                                     /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else: */
-                                                                    if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
-                                                                      outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+                                                                    if (outC->_2_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
+                                                                      outC->_L520_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
                                                                         INT_DMI_Request_T_Scroll_text_up;
                                                                       _86_dmi_request_int_partial =
-                                                                        outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
+                                                                        outC->_L520_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
                                                                       _65_dmi_request_int_partial = _86_dmi_request_int_partial;
                                                                     }
                                                                     else {
                                                                       /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else: */
-                                                                      if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
-                                                                        outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+                                                                      if (outC->_6_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
+                                                                        outC->_L511_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
                                                                           INT_DMI_Request_T_Scroll_text_down;
                                                                         _67_dmi_request_int_partial =
-                                                                          outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
+                                                                          outC->_L511_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
                                                                         _84_dmi_request_int_partial = _67_dmi_request_int_partial;
                                                                       }
                                                                       else {
                                                                         /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else: */
-                                                                        if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
-                                                                          outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+                                                                        if (outC->_3_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
+                                                                          outC->_L518_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
                                                                             INT_DMI_Request_T_Request_to_use_short_number;
                                                                           _82_dmi_request_int_partial =
-                                                                            outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
+                                                                            outC->_L518_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
                                                                           _69_dmi_request_int_partial = _82_dmi_request_int_partial;
                                                                         }
                                                                         else {
                                                                           /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else: */
-                                                                          if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
-                                                                            outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+                                                                          if (outC->_5_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
+                                                                            outC->_L513_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
                                                                               INT_DMI_Request_T_Request_to_show_supervision_data;
                                                                             _71_dmi_request_int_partial =
-                                                                              outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
+                                                                              outC->_L513_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
                                                                             _80_dmi_request_int_partial = _71_dmi_request_int_partial;
                                                                           }
                                                                           else {
                                                                             /* IfBlock1:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else:else: */
-                                                                            if (outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1) {
-                                                                              outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+                                                                            if (outC->_4_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBloc) {
+                                                                              outC->_L516_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBl =
                                                                                 INT_DMI_Request_T_Request_to_show_geographical_position;
                                                                               _78_dmi_request_int_partial =
-                                                                                outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
+                                                                                outC->_L516_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBl;
                                                                               _73_dmi_request_int_partial = _78_dmi_request_int_partial;
                                                                             }
                                                                             else {
-                                                                              outC->_L7_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+                                                                              outC->_L7_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBloc =
                                                                                 INT_DMI_Request_T_End_of_NTC_data_entry;
                                                                               _76_dmi_request_int_partial =
-                                                                                outC->_L7_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1;
+                                                                                outC->_L7_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBloc;
                                                                               _73_dmi_request_int_partial = _76_dmi_request_int_partial;
                                                                             }
                                                                             _80_dmi_request_int_partial = _73_dmi_request_int_partial;
@@ -1224,210 +1224,210 @@ void CAST_DMI_Request_to_int_init_DATA_Variables(
   outC->_L668 = kcg_true;
   outC->error = kcg_true;
   outC->IfBlock1_clock = kcg_true;
-  outC->_L5_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L5_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L4_then_else_IfBlock1 = kcg_true;
   outC->else_clock_else_IfBlock1 = kcg_true;
-  outC->_L5_then_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L5_then_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L4_then_else_else_else_IfBlock1 = kcg_true;
   outC->else_clock_else_else_else_IfBlock1 = kcg_true;
-  outC->_L5_then_else_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L5_then_else_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->else_clock_else_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L5_then_else_else_else_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L5_then_else_else_else_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->else_clock_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L5_then_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->else_clock_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
-  outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
-  outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+  outC->_L524_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+    kcg_lit_int32(0);
+  outC->_L423_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
-  outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+  outC->_8_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
-  outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
-  outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+  outC->_L522_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+    kcg_lit_int32(0);
+  outC->_L421_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
-  outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+  outC->_7_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
-  outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
-  outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+  outC->_L520_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+    kcg_lit_int32(0);
+  outC->_L419_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
-  outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+  outC->_6_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
-  outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
-  outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+  outC->_L518_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+    kcg_lit_int32(0);
+  outC->_L417_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
-  outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+  outC->_5_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
-  outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
-  outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+  outC->_L516_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBl =
+    kcg_lit_int32(0);
+  outC->_L415_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBl =
     kcg_true;
-  outC->_L7_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
-  outC->_L4_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+  outC->_L7_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBloc =
+    kcg_lit_int32(0);
+  outC->_L4_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBloc =
     kcg_true;
-  outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+  outC->_4_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBloc =
     kcg_true;
-  outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+  outC->_L414_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
-  outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
-  outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+  outC->_L513_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+    kcg_lit_int32(0);
+  outC->_3_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
-  outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+  outC->_L412_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
-  outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
-  outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+  outC->_L511_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+    kcg_lit_int32(0);
+  outC->_2_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
-  outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+  outC->_L410_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
-  outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
-  outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+  outC->_L59_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
+    kcg_lit_int32(0);
+  outC->_1_else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L4_then_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L5_then_else_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L4_then_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L5_then_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L4_then_else_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L5_then_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L4_then_else_else_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L5_then_else_else_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L5_then_else_else_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L4_then_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L6_then_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L6_then_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_else_IfBlock1 = kcg_true;
   outC->_L4_then_else_else_IfBlock1 = kcg_true;
-  outC->_L5_then_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L5_then_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_IfBlock1 = kcg_true;
-  outC->_L1_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L2_then_IfBlock1 = kcg_true;
-  outC->dmi_request_int = kcg_lit_int64(0);
+  outC->dmi_request_int = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -1443,6 +1443,6 @@ void CAST_DMI_Request_to_int_reset_DATA_Variables(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_DMI_Request_to_int_DATA_Variables.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

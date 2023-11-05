@@ -12,9 +12,9 @@ void UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_Bij
   /* inLRBG/ */
   NID_LRBG inLRBG,
   /* inDistanceToLRBG/ */
-  kcg_float64 inDistanceToLRBG,
+  kcg_float32 inDistanceToLRBG,
   /* inTriggerId/ */
-  kcg_int64 inTriggerId,
+  kcg_int32 inTriggerId,
   /* inRBCTime/ */
   T_TRAIN inRBCTime,
   outC_UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_Bijlmer_RBC_Scenario_Pk *outC)
@@ -29,11 +29,11 @@ void UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_Bij
     outC->_L3,
     outC->_L36,
     outC->_L37,
-    kcg_lit_int64(354),
-    kcg_lit_float64(270.3),
-    kcg_lit_float64(280.3),
-    kcg_lit_int64(354002753),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(354),
+    kcg_lit_float32(270.3),
+    kcg_lit_float32(280.3),
+    kcg_lit_int32(354002753),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_1);
   outC->_L1 = outC->Context_RadioTrackTrainMessageTrigger__Trigger_1.outTriggerId;
   /* _L35=(RBC_Scenario_Pkg::RadioTrackTrainMessageTrigger__Trigger#2)/ */
@@ -42,11 +42,11 @@ void UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_Bij
     outC->_L3,
     outC->_L1,
     outC->_L37,
-    kcg_lit_int64(351),
-    kcg_lit_float64(49.9),
-    kcg_lit_float64(59.9),
-    kcg_lit_int64(351000549),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(351),
+    kcg_lit_float32(49.9),
+    kcg_lit_float32(59.9),
+    kcg_lit_int32(351000549),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_2);
   outC->_L35 =
     outC->Context_RadioTrackTrainMessageTrigger__Trigger_2.outTriggerId;
@@ -56,11 +56,11 @@ void UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_Bij
     outC->_L3,
     outC->_L35,
     outC->_L37,
-    kcg_lit_int64(355),
-    kcg_lit_float64(84.4),
-    kcg_lit_float64(94.4),
-    kcg_lit_int64(355000894),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(355),
+    kcg_lit_float32(84.4),
+    kcg_lit_float32(94.4),
+    kcg_lit_int32(355000894),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_3);
   outC->_L38 =
     outC->Context_RadioTrackTrainMessageTrigger__Trigger_3.outTriggerId;
@@ -70,11 +70,11 @@ void UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_Bij
     outC->_L3,
     outC->_L38,
     outC->_L37,
-    kcg_lit_int64(356),
-    kcg_lit_float64(43.5),
-    kcg_lit_float64(53.5),
-    kcg_lit_int64(356000485),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(356),
+    kcg_lit_float32(43.5),
+    kcg_lit_float32(53.5),
+    kcg_lit_int32(356000485),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_4);
   outC->_L39 =
     outC->Context_RadioTrackTrainMessageTrigger__Trigger_4.outTriggerId;
@@ -84,11 +84,11 @@ void UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_Bij
     outC->_L3,
     outC->_L39,
     outC->_L37,
-    kcg_lit_int64(358),
-    kcg_lit_float64(118.1),
-    kcg_lit_float64(128.1),
-    kcg_lit_int64(358001231),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(358),
+    kcg_lit_float32(118.1),
+    kcg_lit_float32(128.1),
+    kcg_lit_int32(358001231),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_5);
   outC->_L40 =
     outC->Context_RadioTrackTrainMessageTrigger__Trigger_5.outTriggerId;
@@ -98,11 +98,11 @@ void UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_Bij
     outC->_L3,
     outC->_L40,
     outC->_L37,
-    kcg_lit_int64(360),
-    kcg_lit_float64(244.2),
-    kcg_lit_float64(254.2),
-    kcg_lit_int64(360002492),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(360),
+    kcg_lit_float32(244.2),
+    kcg_lit_float32(254.2),
+    kcg_lit_int32(360002492),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_17);
   outC->_L52 =
     outC->Context_RadioTrackTrainMessageTrigger__Trigger_17.outTriggerId;
@@ -112,11 +112,11 @@ void UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_Bij
     outC->_L3,
     outC->_L52,
     outC->_L37,
-    kcg_lit_int64(362),
-    kcg_lit_float64(119.9),
-    kcg_lit_float64(129.9),
-    kcg_lit_int64(362001249),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(362),
+    kcg_lit_float32(119.9),
+    kcg_lit_float32(129.9),
+    kcg_lit_int32(362001249),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_6);
   outC->_L41 =
     outC->Context_RadioTrackTrainMessageTrigger__Trigger_6.outTriggerId;
@@ -126,11 +126,11 @@ void UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_Bij
     outC->_L3,
     outC->_L41,
     outC->_L37,
-    kcg_lit_int64(362),
-    kcg_lit_float64(228.1),
-    kcg_lit_float64(233.1),
-    kcg_lit_int64(362002306),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(362),
+    kcg_lit_float32(228.1),
+    kcg_lit_float32(233.1),
+    kcg_lit_int32(362002306),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_11);
   outC->_L46 =
     outC->Context_RadioTrackTrainMessageTrigger__Trigger_11.outTriggerId;
@@ -140,11 +140,11 @@ void UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_Bij
     outC->_L3,
     outC->_L46,
     outC->_L37,
-    kcg_lit_int64(362),
-    kcg_lit_float64(236.4),
-    kcg_lit_float64(241.4),
-    kcg_lit_int64(362002389),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(362),
+    kcg_lit_float32(236.4),
+    kcg_lit_float32(241.4),
+    kcg_lit_int32(362002389),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_12);
   outC->_L47 =
     outC->Context_RadioTrackTrainMessageTrigger__Trigger_12.outTriggerId;
@@ -154,11 +154,11 @@ void UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_Bij
     outC->_L3,
     outC->_L47,
     outC->_L37,
-    kcg_lit_int64(364),
-    kcg_lit_float64(86.1),
-    kcg_lit_float64(96.1),
-    kcg_lit_int64(364000911),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(364),
+    kcg_lit_float32(86.1),
+    kcg_lit_float32(96.1),
+    kcg_lit_int32(364000911),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_13);
   outC->_L48 =
     outC->Context_RadioTrackTrainMessageTrigger__Trigger_13.outTriggerId;
@@ -168,11 +168,11 @@ void UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_Bij
     outC->_L3,
     outC->_L48,
     outC->_L37,
-    kcg_lit_int64(369),
-    kcg_lit_float64(226.3),
-    kcg_lit_float64(237.3),
-    kcg_lit_int64(369002313),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(369),
+    kcg_lit_float32(226.3),
+    kcg_lit_float32(237.3),
+    kcg_lit_int32(369002313),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_14);
   outC->_L49 =
     outC->Context_RadioTrackTrainMessageTrigger__Trigger_14.outTriggerId;
@@ -182,11 +182,11 @@ void UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_Bij
     outC->_L3,
     outC->_L49,
     outC->_L37,
-    kcg_lit_int64(341),
-    kcg_lit_float64(129.4),
-    kcg_lit_float64(139.4),
-    kcg_lit_int64(341001344),
-    kcg_lit_float64(0.0),
+    kcg_lit_int32(341),
+    kcg_lit_float32(129.4),
+    kcg_lit_float32(139.4),
+    kcg_lit_int32(341001344),
+    kcg_lit_float32(0.0),
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_15);
   outC->_L50 =
     outC->Context_RadioTrackTrainMessageTrigger__Trigger_15.outTriggerId;
@@ -197,23 +197,23 @@ void UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_Bij
 void UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_Bijlmer_init_RBC_Scenario_Pk(
   outC_UtrechtAmsterdamScenarioStory00AWrapper__TriggerRadioTrackTrainMessages_Bijlmer_RBC_Scenario_Pk *outC)
 {
-  outC->_L52 = kcg_lit_int64(0);
-  outC->_L50 = kcg_lit_int64(0);
-  outC->_L49 = kcg_lit_int64(0);
-  outC->_L48 = kcg_lit_int64(0);
-  outC->_L47 = kcg_lit_int64(0);
-  outC->_L46 = kcg_lit_int64(0);
-  outC->_L41 = kcg_lit_int64(0);
-  outC->_L40 = kcg_lit_int64(0);
-  outC->_L39 = kcg_lit_int64(0);
-  outC->_L38 = kcg_lit_int64(0);
-  outC->_L37 = kcg_lit_int64(0);
-  outC->_L36 = kcg_lit_int64(0);
-  outC->_L35 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_float64(0.0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->outTriggerId = kcg_lit_int64(0);
+  outC->_L52 = kcg_lit_int32(0);
+  outC->_L50 = kcg_lit_int32(0);
+  outC->_L49 = kcg_lit_int32(0);
+  outC->_L48 = kcg_lit_int32(0);
+  outC->_L47 = kcg_lit_int32(0);
+  outC->_L46 = kcg_lit_int32(0);
+  outC->_L41 = kcg_lit_int32(0);
+  outC->_L40 = kcg_lit_int32(0);
+  outC->_L39 = kcg_lit_int32(0);
+  outC->_L38 = kcg_lit_int32(0);
+  outC->_L37 = kcg_lit_int32(0);
+  outC->_L36 = kcg_lit_int32(0);
+  outC->_L35 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_float32(0.0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->outTriggerId = kcg_lit_int32(0);
   /* _L50=(RBC_Scenario_Pkg::RadioTrackTrainMessageTrigger__Trigger#15)/ */
   RadioTrackTrainMessageTrigger__Trigger_init_RBC_Scenario_Pkg(
     &outC->Context_RadioTrackTrainMessageTrigger__Trigger_15);

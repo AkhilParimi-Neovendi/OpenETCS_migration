@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _ConvertMA_SDM_Input_Wrappers_H_
 #define _ConvertMA_SDM_Input_Wrappers_H_
@@ -57,12 +57,12 @@ typedef struct {
   kcg_bool /* _L192/ */ _L192;
   MovementAuthoritySectionlist_t_TrackAtlasTypes /* _L191/ */ _L191;
   MovementAuthority_t_TrackAtlasTypes /* _L193/ */ _L193;
-  kcg_int64 /* _L199/ */ _L199;
+  kcg_int32 /* _L199/ */ _L199;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L200/ */ _L200;
-  kcg_int64 /* _L201/ */ _L201;
+  kcg_int32 /* _L201/ */ _L201;
   kcg_bool /* _L202/ */ _L202;
   kcg_bool /* _L204/ */ _L204;
-  kcg_int64 /* _L205/ */ _L205;
+  kcg_int32 /* _L205/ */ _L205;
 } outC_ConvertMA_SDM_Input_Wrappers;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -87,6 +87,6 @@ extern void ConvertMA_init_SDM_Input_Wrappers(
 #endif /* _ConvertMA_SDM_Input_Wrappers_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ConvertMA_SDM_Input_Wrappers.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

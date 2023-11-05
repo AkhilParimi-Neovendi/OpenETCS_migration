@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _TOOLS_convert_engineering_location_TM_conversions_H_
 #define _TOOLS_convert_engineering_location_TM_conversions_H_
@@ -14,24 +14,24 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_float64 /* Loc_real/ */ Loc_real;
+  kcg_float32 /* Loc_real/ */ Loc_real;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
-  kcg_float64 /* _L2/ */ _L2;
-  kcg_float64 /* _L3/ */ _L3;
-  kcg_float64 /* _L4/ */ _L4;
+  kcg_int32 /* _L1/ */ _L1;
+  kcg_float32 /* _L2/ */ _L2;
+  kcg_float32 /* _L3/ */ _L3;
+  kcg_float32 /* _L4/ */ _L4;
 } outC_TOOLS_convert_engineering_location_TM_conversions;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* TM_conversions::TOOLS_convert_engineering_location/ */
 extern void TOOLS_convert_engineering_location_TM_conversions(
   /* Loc_int/ */
-  kcg_int64 Loc_int,
+  kcg_int32 Loc_int,
   outC_TOOLS_convert_engineering_location_TM_conversions *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET
@@ -49,6 +49,6 @@ extern void TOOLS_convert_engineering_location_init_TM_conversions(
 #endif /* _TOOLS_convert_engineering_location_TM_conversions_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** TOOLS_convert_engineering_location_TM_conversions.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

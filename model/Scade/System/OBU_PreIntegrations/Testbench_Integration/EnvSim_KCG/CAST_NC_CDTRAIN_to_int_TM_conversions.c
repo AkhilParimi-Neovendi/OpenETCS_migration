@@ -14,93 +14,93 @@ void CAST_NC_CDTRAIN_to_int_TM_conversions(
   outC_CAST_NC_CDTRAIN_to_int_TM_conversions *outC)
 {
   /* nc_cdtrain_int/ */
-  static kcg_int64 nc_cdtrain_int_partial;
+  static kcg_int32 nc_cdtrain_int_partial;
   /* error/ */
   static kcg_bool error_partial;
   /* nc_cdtrain_int/ */
-  static kcg_int64 _1_nc_cdtrain_int_partial;
+  static kcg_int32 _1_nc_cdtrain_int_partial;
   /* error/ */
   static kcg_bool _2_error_partial;
   /* nc_cdtrain_int/ */
-  static kcg_int64 _3_nc_cdtrain_int_partial;
+  static kcg_int32 _3_nc_cdtrain_int_partial;
   /* error/ */
   static kcg_bool _4_error_partial;
   /* nc_cdtrain_int/ */
-  static kcg_int64 _5_nc_cdtrain_int_partial;
+  static kcg_int32 _5_nc_cdtrain_int_partial;
   /* error/ */
   static kcg_bool _6_error_partial;
   /* nc_cdtrain_int/ */
-  static kcg_int64 _7_nc_cdtrain_int_partial;
+  static kcg_int32 _7_nc_cdtrain_int_partial;
   /* error/ */
   static kcg_bool _8_error_partial;
   /* nc_cdtrain_int/ */
-  static kcg_int64 _9_nc_cdtrain_int_partial;
+  static kcg_int32 _9_nc_cdtrain_int_partial;
   /* error/ */
   static kcg_bool _10_error_partial;
   /* nc_cdtrain_int/ */
-  static kcg_int64 _11_nc_cdtrain_int_partial;
+  static kcg_int32 _11_nc_cdtrain_int_partial;
   /* error/ */
   static kcg_bool _12_error_partial;
   /* nc_cdtrain_int/ */
-  static kcg_int64 _13_nc_cdtrain_int_partial;
+  static kcg_int32 _13_nc_cdtrain_int_partial;
   /* error/ */
   static kcg_bool _14_error_partial;
   /* nc_cdtrain_int/ */
-  static kcg_int64 _15_nc_cdtrain_int_partial;
+  static kcg_int32 _15_nc_cdtrain_int_partial;
   /* error/ */
   static kcg_bool _16_error_partial;
   /* nc_cdtrain_int/ */
-  static kcg_int64 _17_nc_cdtrain_int_partial;
+  static kcg_int32 _17_nc_cdtrain_int_partial;
   /* error/ */
   static kcg_bool _18_error_partial;
   /* nc_cdtrain_int/ */
-  static kcg_int64 _19_nc_cdtrain_int_partial;
+  static kcg_int32 _19_nc_cdtrain_int_partial;
   /* error/ */
   static kcg_bool _20_error_partial;
   /* nc_cdtrain_int/ */
-  static kcg_int64 _21_nc_cdtrain_int_partial;
+  static kcg_int32 _21_nc_cdtrain_int_partial;
   /* error/ */
   static kcg_bool _22_error_partial;
   /* error/ */
   static kcg_bool _23_error_partial;
   /* nc_cdtrain_int/ */
-  static kcg_int64 _24_nc_cdtrain_int_partial;
+  static kcg_int32 _24_nc_cdtrain_int_partial;
   /* error/ */
   static kcg_bool _25_error_partial;
   /* nc_cdtrain_int/ */
-  static kcg_int64 _26_nc_cdtrain_int_partial;
+  static kcg_int32 _26_nc_cdtrain_int_partial;
   /* error/ */
   static kcg_bool _27_error_partial;
   /* nc_cdtrain_int/ */
-  static kcg_int64 _28_nc_cdtrain_int_partial;
+  static kcg_int32 _28_nc_cdtrain_int_partial;
   /* error/ */
   static kcg_bool _29_error_partial;
   /* nc_cdtrain_int/ */
-  static kcg_int64 _30_nc_cdtrain_int_partial;
+  static kcg_int32 _30_nc_cdtrain_int_partial;
   /* error/ */
   static kcg_bool _31_error_partial;
   /* nc_cdtrain_int/ */
-  static kcg_int64 _32_nc_cdtrain_int_partial;
+  static kcg_int32 _32_nc_cdtrain_int_partial;
   /* error/ */
   static kcg_bool _33_error_partial;
   /* nc_cdtrain_int/ */
-  static kcg_int64 _34_nc_cdtrain_int_partial;
+  static kcg_int32 _34_nc_cdtrain_int_partial;
   /* error/ */
   static kcg_bool _35_error_partial;
   /* nc_cdtrain_int/ */
-  static kcg_int64 _36_nc_cdtrain_int_partial;
+  static kcg_int32 _36_nc_cdtrain_int_partial;
   /* error/ */
   static kcg_bool _37_error_partial;
   /* nc_cdtrain_int/ */
-  static kcg_int64 _38_nc_cdtrain_int_partial;
+  static kcg_int32 _38_nc_cdtrain_int_partial;
   /* error/ */
   static kcg_bool _39_error_partial;
   /* nc_cdtrain_int/ */
-  static kcg_int64 _40_nc_cdtrain_int_partial;
+  static kcg_int32 _40_nc_cdtrain_int_partial;
   /* error/ */
   static kcg_bool _41_error_partial;
   /* nc_cdtrain_int/ */
-  static kcg_int64 _42_nc_cdtrain_int_partial;
+  static kcg_int32 _42_nc_cdtrain_int_partial;
   static kcg_bool noname;
 
   outC->_L4 = nc_cdtrain;
@@ -363,48 +363,48 @@ void CAST_NC_CDTRAIN_to_int_init_TM_conversions(
   outC->error = kcg_true;
   outC->nc_cdtrain_in = NC_CDTRAIN_Cant_Deficiency_80_mm;
   outC->IfBlock1_clock = kcg_true;
-  outC->_L3_then_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L3_then_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L5_then_else_IfBlock1 = kcg_true;
   outC->else_clock_else_IfBlock1 = kcg_true;
   outC->_L4_then_else_else_else_IfBlock1 = kcg_true;
-  outC->_L2_then_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_else_else_IfBlock1 = kcg_true;
   outC->_L4_then_else_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L2_then_else_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L4_then_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L2_then_else_else_else_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L4_then_else_else_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L2_then_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->else_clock_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L2_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_else_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->_L2_then_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L1_then_else_else_else_else_else_else_else_else_else_else_IfBlock1 =
     kcg_true;
   outC->else_clock_else_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L3_then_else_else_else_else_else_else_else_else_IfBlock1 =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->_L5_then_else_else_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->else_clock_else_else_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L2_then_else_else_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->_L4_then_else_else_else_else_else_else_IfBlock1 = kcg_true;
   outC->else_clock_else_else_else_else_IfBlock1 = kcg_true;
   outC->_L4_then_else_else_else_else_IfBlock1 = kcg_true;
-  outC->_L2_then_else_else_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_else_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_else_else_IfBlock1 = kcg_true;
   outC->_L4_then_else_else_IfBlock1 = kcg_true;
-  outC->_L2_then_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L2_then_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_IfBlock1 = kcg_true;
   outC->_L5_then_IfBlock1 = kcg_true;
-  outC->_L4_then_IfBlock1 = kcg_lit_int64(0);
-  outC->nc_cdtrain_int = kcg_lit_int64(0);
+  outC->_L4_then_IfBlock1 = kcg_lit_int32(0);
+  outC->nc_cdtrain_int = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

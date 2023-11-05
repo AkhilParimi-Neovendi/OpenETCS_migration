@@ -24,10 +24,10 @@ typedef struct {
   kcg_bool /* IfBlock1: */ IfBlock1_clock;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
-  kcg_int64 /* IfBlock1:else:_L1/ */ _L1_else_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
+  kcg_int32 /* IfBlock1:else:_L1/ */ _L1_else_IfBlock1;
   kcg_bool /* doCalc/ */ doCalc;
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   trainPosition_T_TrainPosition_Types_Pck /* _L2/ */ _L2;
   kcg_bool /* _L3/ */ _L3;
   kcg_bool /* _L4/ */ _L4;

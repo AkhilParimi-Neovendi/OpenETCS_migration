@@ -10,29 +10,29 @@
 /* TM_lib_internal::C_P015_fs_flatten_array/ */
 void C_P015_fs_flatten_array_TM_lib_internal(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* Acc/ */
   P015_sections_array_flat_T_TM *Acc,
   /* section_arrays/ */
   P015_OBU_sectionlist_array_T_TM *section_arrays,
   outC_C_P015_fs_flatten_array_TM_lib_internal *outC)
 {
-  outC->_L5 = kcg_lit_int64(4);
+  outC->_L5 = kcg_lit_int32(4);
   outC->_L3 = i;
   outC->_L154 = outC->_L3 / outC->_L5;
   outC->_L6 = outC->_L3 % outC->_L5;
   kcg_copy_P015_OBU_sectionlist_array_T_TM(&outC->_L2, section_arrays);
-  if ((kcg_lit_int64(0) <= outC->_L154) & (outC->_L154 < kcg_lit_int64(32)) &
-    ((kcg_lit_int64(0) <= outC->_L6) & (outC->_L6 < kcg_lit_int64(4)))) {
+  if ((kcg_lit_int32(0) <= outC->_L154) & (outC->_L154 < kcg_lit_int32(32)) &
+    ((kcg_lit_int32(0) <= outC->_L6) & (outC->_L6 < kcg_lit_int32(4)))) {
     outC->_L10 = outC->_L2[outC->_L154][outC->_L6];
   }
   else {
-    outC->_L10 = kcg_lit_int64(0);
+    outC->_L10 = kcg_lit_int32(0);
   }
   outC->_L8 = i;
   kcg_copy_P015_sections_array_flat_T_TM(&outC->_L1, Acc);
   kcg_copy_P015_sections_array_flat_T_TM(&outC->_L7, &outC->_L1);
-  if ((kcg_lit_int64(0) <= outC->_L8) & (outC->_L8 < kcg_lit_int64(128))) {
+  if ((kcg_lit_int32(0) <= outC->_L8) & (outC->_L8 < kcg_lit_int32(128))) {
     outC->_L7[outC->_L8] = outC->_L10;
   }
   kcg_copy_P015_sections_array_flat_T_TM(&outC->flat, &outC->_L7);
@@ -48,25 +48,25 @@ void C_P015_fs_flatten_array_init_TM_lib_internal(
   static kcg_size idx3;
   static kcg_size idx4;
 
-  outC->_L154 = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L154 = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 32; idx1++) {
     for (idx = 0; idx < 4; idx++) {
-      outC->_L2[idx1][idx] = kcg_lit_int64(0);
+      outC->_L2[idx1][idx] = kcg_lit_int32(0);
     }
   }
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L8 = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 128; idx2++) {
-    outC->_L7[idx2] = kcg_lit_int64(0);
+    outC->_L7[idx2] = kcg_lit_int32(0);
   }
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 128; idx3++) {
-    outC->_L1[idx3] = kcg_lit_int64(0);
+    outC->_L1[idx3] = kcg_lit_int32(0);
   }
   for (idx4 = 0; idx4 < 128; idx4++) {
-    outC->flat[idx4] = kcg_lit_int64(0);
+    outC->flat[idx4] = kcg_lit_int32(0);
   }
 }
 #endif /* KCG_USER_DEFINED_INIT */

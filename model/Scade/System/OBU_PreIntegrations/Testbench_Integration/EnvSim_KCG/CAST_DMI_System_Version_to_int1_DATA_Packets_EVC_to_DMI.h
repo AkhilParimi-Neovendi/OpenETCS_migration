@@ -26,12 +26,12 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   DMI_System_Version_T_DMI_Messages_EVC_to_DMI_Pkg /* _L1/ */ _L1;
-  array_int64_3 /* _L2/ */ _L2;
+  array_int32_3 /* _L2/ */ _L2;
   kcg_bool /* _L5/ */ _L5;
   T_internal_Type_Obu_BasicTypes_Pkg /* _L4/ */ _L4;
   M_VERSION /* _L3/ */ _L3;
-  kcg_int64 /* _L6/ */ _L6;
-  kcg_int64 /* _L7/ */ _L7;
+  kcg_int32 /* _L6/ */ _L6;
+  kcg_int32 /* _L7/ */ _L7;
 } outC_CAST_DMI_System_Version_to_int1_DATA_Packets_EVC_to_DMI;
 
 /* ===========  node initialization and cycle functions  =========== */

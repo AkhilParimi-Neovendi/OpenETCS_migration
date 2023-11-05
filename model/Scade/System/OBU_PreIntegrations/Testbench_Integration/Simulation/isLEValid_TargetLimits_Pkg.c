@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -12,11 +12,11 @@ void isLEValid_TargetLimits_Pkg(
   /* valid1/ */
   kcg_bool valid1,
   /* i1/ */
-  kcg_float64 i1,
+  kcg_float32 i1,
   /* valid2/ */
   kcg_bool valid2,
   /* i2/ */
-  kcg_float64 i2,
+  kcg_float32 i2,
   outC_isLEValid_TargetLimits_Pkg *outC)
 {
   outC->_L9 = valid2;
@@ -38,8 +38,8 @@ void isLEValid_init_TargetLimits_Pkg(outC_isLEValid_TargetLimits_Pkg *outC)
   outC->_L6 = kcg_true;
   outC->_L7 = kcg_true;
   outC->_L8 = kcg_true;
-  outC->_L4 = kcg_lit_float64(0.0);
-  outC->_L2 = kcg_lit_float64(0.0);
+  outC->_L4 = kcg_lit_float32(0.0);
+  outC->_L2 = kcg_lit_float32(0.0);
   outC->_L1 = kcg_true;
   outC->result = kcg_true;
 }
@@ -56,6 +56,6 @@ void isLEValid_reset_TargetLimits_Pkg(outC_isLEValid_TargetLimits_Pkg *outC)
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** isLEValid_TargetLimits_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

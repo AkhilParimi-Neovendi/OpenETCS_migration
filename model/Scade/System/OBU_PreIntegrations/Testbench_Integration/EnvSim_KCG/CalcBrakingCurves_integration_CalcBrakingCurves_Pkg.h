@@ -39,7 +39,7 @@ typedef struct {
   ParabolaCurve_T_CalcBrakingCurves_types /* emptyCurve/ */ emptyCurve;
   ASafe_T_CalcBrakingCurves_types /* _L4/ */ _L4;
   _26_array /* _L6/ */ _L6;
-  array_float64_110 /* _L22/ */ _L22;
+  array_float32_110 /* _L22/ */ _L22;
   ASafe_T_CalcBrakingCurves_types /* _L29/ */ _L29;
   TargetCollection_T_TargetManagement_types /* _L35/ */ _L35;
   Target_real_T_TargetManagement_types /* _L43/ */ _L43;
@@ -50,7 +50,7 @@ typedef struct {
   kcg_bool /* _L60/ */ _L60;
   TrainLocations_real_T_SDM_Types_Pkg /* _L65/ */ _L65;
   L_internal_real_Type_SDM_Types_Pkg /* _L71/ */ _L71;
-  kcg_int64 /* _L72/ */ _L72;
+  kcg_int32 /* _L72/ */ _L72;
   kcg_bool /* _L75/ */ _L75;
   kcg_bool /* _L78/ */ _L78;
   ParabolaCurve_list_MRSP_T_CalcBrakingCurves_types /* _L83/ */ _L83;

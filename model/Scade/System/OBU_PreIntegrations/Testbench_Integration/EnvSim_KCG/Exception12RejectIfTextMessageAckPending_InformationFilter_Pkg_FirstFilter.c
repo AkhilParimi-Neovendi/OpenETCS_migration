@@ -10,9 +10,9 @@
 /* InformationFilter_Pkg::FirstFilter::Exception12RejectIfTextMessageAckPending/ */
 void Exception12RejectIfTextMessageAckPending_InformationFilter_Pkg_FirstFilter(
   /* inCurrentTextMessageId/ */
-  kcg_int64 inCurrentTextMessageId,
+  kcg_int32 inCurrentTextMessageId,
   /* inLastAckTextMessageId/ */
-  kcg_int64 inLastAckTextMessageId,
+  kcg_int32 inLastAckTextMessageId,
   outC_Exception12RejectIfTextMessageAckPending_InformationFilter_Pkg_FirstFilter *outC)
 {
   outC->_L5 = inLastAckTextMessageId;
@@ -27,9 +27,9 @@ void Exception12RejectIfTextMessageAckPending_InformationFilter_Pkg_FirstFilter(
 void Exception12RejectIfTextMessageAckPending_init_InformationFilter_Pkg_FirstFilter(
   outC_Exception12RejectIfTextMessageAckPending_InformationFilter_Pkg_FirstFilter *outC)
 {
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L4 = kcg_true;
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L2 = kcg_true;
   outC->outStoreInTransitionBuffer = kcg_true;
   outC->outAcceptMessage = kcg_true;

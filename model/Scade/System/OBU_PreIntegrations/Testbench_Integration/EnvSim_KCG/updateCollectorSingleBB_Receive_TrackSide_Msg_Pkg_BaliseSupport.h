@@ -30,8 +30,8 @@ typedef struct {
   NID_BG /* _L8/ */ _L8;
   centerOfBalisePosition_T_BG_Types_Pkg /* _L7/ */ _L7;
   centerOfBalisePosition_T_BG_Types_Pkg /* _L6/ */ _L6;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L4/ */ _L4;
   kcg_bool /* _L12/ */ _L12;
   kcg_bool /* _L13/ */ _L13;
 } outC_updateCollectorSingleBB_Receive_TrackSide_Msg_Pkg_BaliseSupport;

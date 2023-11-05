@@ -36,15 +36,15 @@ void collectGradientLocations_SDMModelPkg(
 void collectGradientLocations_init_SDMModelPkg(
   outC_collectGradientLocations_SDMModelPkg *outC)
 {
-  outC->_L11 = kcg_lit_float64(0.0);
-  outC->_L10 = kcg_lit_float64(0.0);
+  outC->_L11 = kcg_lit_float32(0.0);
+  outC->_L10 = kcg_lit_float32(0.0);
   outC->_L9 = kcg_true;
-  outC->_L2.position = kcg_lit_float64(0.0);
-  outC->_L2.gradient_acceleration = kcg_lit_float64(0.0);
+  outC->_L2.position = kcg_lit_float32(0.0);
+  outC->_L2.gradient_acceleration = kcg_lit_float32(0.0);
   outC->_L2.valid = kcg_true;
-  outC->_L1 = kcg_lit_float64(0.0);
-  outC->location = kcg_lit_float64(0.0);
-  outC->location_ = kcg_lit_float64(0.0);
+  outC->_L1 = kcg_lit_float32(0.0);
+  outC->location = kcg_lit_float32(0.0);
+  outC->location_ = kcg_lit_float32(0.0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

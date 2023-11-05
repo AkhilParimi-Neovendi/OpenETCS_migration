@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _Position_In_Ack_Area_Librairies_H_
 #define _Position_In_Ack_Area_Librairies_H_
@@ -27,7 +27,7 @@ typedef struct {
   Location_T_Obu_BasicTypes_Pkg /* _L5/ */ _L5;
   Location_T_Obu_BasicTypes_Pkg /* _L4/ */ _L4;
   Location_T_Obu_BasicTypes_Pkg /* _L2/ */ _L2;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   kcg_bool /* _L11/ */ _L11;
   kcg_bool /* _L12/ */ _L12;
 } outC_Position_In_Ack_Area_Librairies;
@@ -58,6 +58,6 @@ extern void Position_In_Ack_Area_init_Librairies(
 #endif /* _Position_In_Ack_Area_Librairies_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Position_In_Ack_Area_Librairies.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

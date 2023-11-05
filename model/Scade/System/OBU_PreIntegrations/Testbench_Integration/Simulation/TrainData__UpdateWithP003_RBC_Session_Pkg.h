@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _TrainData__UpdateWithP003_RBC_Session_Pkg_H_
 #define _TrainData__UpdateWithP003_RBC_Session_Pkg_H_
@@ -37,7 +37,7 @@ typedef struct {
   Radio_TrainTrack_Message_T_Radio_Types_Pkg /* _L6/ */ _L6;
   PT3_OnboardTelephoneNumbers_T_Packet_TrainTypes_Pkg /* _L5/ */ _L5;
   TrainData_T /* _L4/ */ _L4;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   aNID_RADIO_T_Packet_TrainTypes_Pkg /* _L2/ */ _L2;
   outPackets_T_Common_Types_Pkg /* _L1/ */ _L1;
   TrainData_T /* _L9/ */ _L9;
@@ -67,6 +67,6 @@ extern void TrainData__UpdateWithP003_init_RBC_Session_Pkg(
 #endif /* _TrainData__UpdateWithP003_RBC_Session_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** TrainData__UpdateWithP003_RBC_Session_Pkg.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

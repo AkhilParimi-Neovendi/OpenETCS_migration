@@ -37,7 +37,7 @@ typedef struct {
 /* Utilities::Int_to_Bool/ */
 extern void Int_to_Bool_Utilities(
   /* int_in/ */
-  kcg_int64 int_in,
+  kcg_int32 int_in,
   outC_Int_to_Bool_Utilities *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

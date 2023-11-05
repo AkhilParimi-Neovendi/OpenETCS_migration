@@ -40,8 +40,8 @@ typedef struct {
   V_REVERSE /* _L6/ */ _L6;
   T_Reversing_Data_Level_And_Mode_Types_Pkg /* _L1/ */ _L1;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L15/ */ _L15;
-  kcg_int64 /* _L16/ */ _L16;
-  kcg_int64 /* _L17/ */ _L17;
+  kcg_int32 /* _L16/ */ _L16;
+  kcg_int32 /* _L17/ */ _L17;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L18/ */ _L18;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L19/ */ _L19;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L20/ */ _L20;

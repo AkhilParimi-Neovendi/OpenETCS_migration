@@ -46,7 +46,7 @@ typedef struct {
   M_VERSION /* _L35/ */ _L35;
   trainData_T_TIU_Types_Pkg /* _L36/ */ _L36;
   P011_TM_TrainToTrack /* _L37/ */ _L37;
-  kcg_int64 /* _L38/ */ _L38;
+  kcg_int32 /* _L38/ */ _L38;
   trainDataStatus_T_trainData_Types_pkg /* _L45/ */ _L45;
   trainDataStatus_T_trainData_Types_pkg /* _L44/ */ _L44;
   T_TRAIN /* _L43/ */ _L43;

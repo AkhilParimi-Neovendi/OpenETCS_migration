@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _C_DMI_identifier_to_int_DATA_Packets_DMI_to_EVC_H_
 #define _C_DMI_identifier_to_int_DATA_Packets_DMI_to_EVC_H_
@@ -38,14 +38,14 @@ typedef struct {
   L_TEXT /* _L5/ */ _L5;
   DMI_TEXT_DMI_Types_Pkg /* _L4/ */ _L4;
   M_VERSION /* _L3/ */ _L3;
-  kcg_int64 /* _L13/ */ _L13;
-  kcg_int64 /* _L22/ */ _L22;
+  kcg_int32 /* _L13/ */ _L13;
+  kcg_int32 /* _L22/ */ _L22;
   DMI_TEXT_INT_Array_T_DATA /* _L23/ */ _L23;
-  kcg_int64 /* _L24/ */ _L24;
+  kcg_int32 /* _L24/ */ _L24;
   P044_other_data_TM_TrainToTrack /* _L28/ */ _L28;
-  array_int64_5 /* _L32/ */ _L32;
-  kcg_int64 /* _L36/ */ _L36;
-  array_int64_261 /* _L39/ */ _L39;
+  array_int32_5 /* _L32/ */ _L32;
+  kcg_int32 /* _L36/ */ _L36;
+  array_int32_261 /* _L39/ */ _L39;
   DMI_Identifier_T_DMI_Messages_DMI_to_EVC_Pkg /* _L40/ */ _L40;
 } outC_C_DMI_identifier_to_int_DATA_Packets_DMI_to_EVC;
 
@@ -71,6 +71,6 @@ extern void C_DMI_identifier_to_int_init_DATA_Packets_DMI_to_EVC(
 #endif /* _C_DMI_identifier_to_int_DATA_Packets_DMI_to_EVC_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_DMI_identifier_to_int_DATA_Packets_DMI_to_EVC.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

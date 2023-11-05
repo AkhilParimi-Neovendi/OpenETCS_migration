@@ -43,24 +43,24 @@ void add_odo_2_Location_BasicLocationFunctions_Pkg(
 void add_odo_2_Location_init_BasicLocationFunctions_Pkg(
   outC_add_odo_2_Location_BasicLocationFunctions_Pkg *outC)
 {
-  outC->_L5.nominal = kcg_lit_int64(0);
-  outC->_L5.d_min = kcg_lit_int64(0);
-  outC->_L5.d_max = kcg_lit_int64(0);
-  outC->_L4.nominal = kcg_lit_int64(0);
-  outC->_L4.d_min = kcg_lit_int64(0);
-  outC->_L4.d_max = kcg_lit_int64(0);
-  outC->_L3.o_nominal = kcg_lit_int64(0);
-  outC->_L3.o_min = kcg_lit_int64(0);
-  outC->_L3.o_max = kcg_lit_int64(0);
-  outC->_L2.o_nominal = kcg_lit_int64(0);
-  outC->_L2.o_min = kcg_lit_int64(0);
-  outC->_L2.o_max = kcg_lit_int64(0);
-  outC->_L1.nominal = kcg_lit_int64(0);
-  outC->_L1.d_min = kcg_lit_int64(0);
-  outC->_L1.d_max = kcg_lit_int64(0);
-  outC->location.nominal = kcg_lit_int64(0);
-  outC->location.d_min = kcg_lit_int64(0);
-  outC->location.d_max = kcg_lit_int64(0);
+  outC->_L5.nominal = kcg_lit_int32(0);
+  outC->_L5.d_min = kcg_lit_int32(0);
+  outC->_L5.d_max = kcg_lit_int32(0);
+  outC->_L4.nominal = kcg_lit_int32(0);
+  outC->_L4.d_min = kcg_lit_int32(0);
+  outC->_L4.d_max = kcg_lit_int32(0);
+  outC->_L3.o_nominal = kcg_lit_int32(0);
+  outC->_L3.o_min = kcg_lit_int32(0);
+  outC->_L3.o_max = kcg_lit_int32(0);
+  outC->_L2.o_nominal = kcg_lit_int32(0);
+  outC->_L2.o_min = kcg_lit_int32(0);
+  outC->_L2.o_max = kcg_lit_int32(0);
+  outC->_L1.nominal = kcg_lit_int32(0);
+  outC->_L1.d_min = kcg_lit_int32(0);
+  outC->_L1.d_max = kcg_lit_int32(0);
+  outC->location.nominal = kcg_lit_int32(0);
+  outC->location.d_min = kcg_lit_int32(0);
+  outC->location.d_max = kcg_lit_int32(0);
   /* _L5=(BasicLocationFunctions_Pkg::add_2_Distances#1)/ */
   add_2_Distances_init_BasicLocationFunctions_Pkg(
     &outC->Context_add_2_Distances_1);

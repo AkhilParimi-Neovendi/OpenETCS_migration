@@ -1,12 +1,12 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _CAST_int_to_DMI_Available_Menu_DATA_Variables_H_
 #define _CAST_int_to_DMI_Available_Menu_DATA_Variables_H_
 
 #include "kcg_types.h"
-#include "Int2BoolVect_digital_int64_30.h"
+#include "Int2BoolVect_digital_int32_30.h"
 
 /* =====================  no input structure  ====================== */
 
@@ -19,7 +19,7 @@ typedef struct {
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
-  outC_Int2BoolVect_digital_int64_30 /* _L34=(digital::Int2BoolVect#1)/ */ Context_Int2BoolVect_1;
+  outC_Int2BoolVect_digital_int32_30 /* _L34=(digital::Int2BoolVect#1)/ */ Context_Int2BoolVect_1;
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
@@ -80,6 +80,6 @@ extern void CAST_int_to_DMI_Available_Menu_init_DATA_Variables(
 #endif /* _CAST_int_to_DMI_Available_Menu_DATA_Variables_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_int_to_DMI_Available_Menu_DATA_Variables.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

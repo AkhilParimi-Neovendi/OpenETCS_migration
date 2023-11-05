@@ -32,8 +32,8 @@ typedef struct {
   B_data_internal_T_InfraLib /* _L15/ */ _L15;
   B_data_internal_T_InfraLib /* _L17/ */ _L17;
   BaliseTelegramHeader_int_T_TM /* _L19/ */ _L19;
-  kcg_int64 /* _L20/ */ _L20;
-  kcg_int64 /* _L21/ */ _L21;
+  kcg_int32 /* _L20/ */ _L20;
+  kcg_int32 /* _L21/ */ _L21;
   BaliseTelegramHeader_int_T_TM /* _L23/ */ _L23;
 } outC_Balise_375_1_AmsterdamUtrechtL2_Sheet08A_Abcoude_Balises;
 
@@ -45,7 +45,7 @@ extern void Balise_375_1_AmsterdamUtrechtL2_Sheet08A_Abcoude_Balises(
   /* Header/ */
   BaliseTelegramHeader_int_T_TM *Header,
   /* PIG_nom/ */
-  kcg_int64 PIG_nom,
+  kcg_int32 PIG_nom,
   outC_Balise_375_1_AmsterdamUtrechtL2_Sheet08A_Abcoude_Balises *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

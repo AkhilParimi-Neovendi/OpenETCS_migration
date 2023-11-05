@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _SelectConditionnalTransition_LevelTransitionSelection_H_
 #define _SelectConditionnalTransition_LevelTransitionSelection_H_
@@ -39,7 +39,7 @@ typedef struct {
   T_LevelTransition_PriorityTable_Level_And_Mode_Types_Pkg /* _L2/ */ _L2;
   kcg_bool /* _L3/ */ _L3;
   M_LEVEL /* _L4/ */ _L4;
-  _18_array /* _L5/ */ _L5;
+  _50_array /* _L5/ */ _L5;
 } outC_SelectConditionnalTransition_LevelTransitionSelection;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -72,6 +72,6 @@ extern void SelectConditionnalTransition_init_LevelTransitionSelection(
 #endif /* _SelectConditionnalTransition_LevelTransitionSelection_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** SelectConditionnalTransition_LevelTransitionSelection.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

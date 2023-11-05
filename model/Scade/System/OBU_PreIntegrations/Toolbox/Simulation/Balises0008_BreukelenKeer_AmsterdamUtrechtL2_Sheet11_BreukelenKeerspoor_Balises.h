@@ -49,7 +49,7 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   TrackSectionData_T_InfraLib /* _L4/ */ _L4;
   CompressedBaliseMessage_TM /* _L3/ */ _L3;
-  kcg_float64 /* _L2/ */ _L2;
+  kcg_float32 /* _L2/ */ _L2;
   CompressedBaliseMessage_TM /* _L1/ */ _L1;
   TrackSectionData_T_InfraLib /* _L6/ */ _L6;
   CompressedBaliseMessage_TM /* _L7/ */ _L7;

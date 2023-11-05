@@ -1707,12 +1707,12 @@ void Procedure_Train_Trip_init_Procedures(
   outC->_L16_Waiting_Driver_Selection_SM_Train_Trip = kcg_true;
   outC->_L17_Waiting_Driver_Selection_SM_Train_Trip = kcg_true;
   outC->_L18_Waiting_Driver_Selection_SM_Train_Trip = kcg_true;
-  outC->_L19_Waiting_Driver_Selection_SM_Train_Trip.Distance = kcg_lit_int64(0);
+  outC->_L19_Waiting_Driver_Selection_SM_Train_Trip.Distance = kcg_lit_int32(0);
   outC->_L19_Waiting_Driver_Selection_SM_Train_Trip.Mode =
     Profile_OS_Level_And_Mode_Types_Pkg;
-  outC->_L19_Waiting_Driver_Selection_SM_Train_Trip.Speed = kcg_lit_int64(0);
-  outC->_L19_Waiting_Driver_Selection_SM_Train_Trip.Length = kcg_lit_int64(0);
-  outC->_L19_Waiting_Driver_Selection_SM_Train_Trip.Length_Ack = kcg_lit_int64(0);
+  outC->_L19_Waiting_Driver_Selection_SM_Train_Trip.Speed = kcg_lit_int32(0);
+  outC->_L19_Waiting_Driver_Selection_SM_Train_Trip.Length = kcg_lit_int32(0);
+  outC->_L19_Waiting_Driver_Selection_SM_Train_Trip.Length_Ack = kcg_lit_int32(0);
   outC->_L20_Waiting_Driver_Selection_SM_Train_Trip = kcg_true;
   outC->_L1_SN_Mode_SM_Train_Trip = kcg_true;
   outC->_L1_UN_Mode_SM_Train_Trip = kcg_true;

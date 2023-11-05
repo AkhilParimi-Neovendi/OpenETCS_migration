@@ -25,7 +25,7 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   P080_OBU_T_TM /* _L1/ */ _L1;
   P80_ModeProfiles_T_Packet_Types_Pkg /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L4/ */ _L4;
   P80_ModeProfile_T_Packet_Types_Pkg /* _L5/ */ _L5;
   _8_array /* _L6/ */ _L6;
   Q_DIR /* _L7/ */ _L7;

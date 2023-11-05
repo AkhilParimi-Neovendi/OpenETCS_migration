@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _ASCII_to_Char_iterator_DMI_Control_Pkg_Utils_H_
 #define _ASCII_to_Char_iterator_DMI_Control_Pkg_Utils_H_
@@ -32,14 +32,14 @@ typedef struct {
   kcg_char /* _L3/ */ _L3;
   kcg_char /* _L2/ */ _L2;
   kcg_char /* _L1/ */ _L1;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L12/ */ _L12;
 } outC_ASCII_to_Char_iterator_DMI_Control_Pkg_Utils;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* DMI_Control_Pkg::Utils::ASCII_to_Char_iterator/ */
 extern void ASCII_to_Char_iterator_DMI_Control_Pkg_Utils(
   /* ascii/ */
-  kcg_int64 ascii,
+  kcg_int32 ascii,
   outC_ASCII_to_Char_iterator_DMI_Control_Pkg_Utils *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET
@@ -57,6 +57,6 @@ extern void ASCII_to_Char_iterator_init_DMI_Control_Pkg_Utils(
 #endif /* _ASCII_to_Char_iterator_DMI_Control_Pkg_Utils_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ASCII_to_Char_iterator_DMI_Control_Pkg_Utils.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

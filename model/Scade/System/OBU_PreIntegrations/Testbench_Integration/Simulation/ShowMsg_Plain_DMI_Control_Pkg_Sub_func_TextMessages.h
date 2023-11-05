@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _ShowMsg_Plain_DMI_Control_Pkg_Sub_func_TextMessages_H_
 #define _ShowMsg_Plain_DMI_Control_Pkg_Sub_func_TextMessages_H_
@@ -19,7 +19,7 @@ typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   array_char_30_5 /* PlainText/ */ PlainText;
   kcg_bool /* isMoreThanFive/ */ isMoreThanFive;
-  array_int64_10 /* MsgNumArray/ */ MsgNumArray;
+  array_int32_10 /* MsgNumArray/ */ MsgNumArray;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -52,34 +52,34 @@ typedef struct {
   MsgStructure /* Msg3/ */ Msg3;
   MsgStructure /* Msg4/ */ Msg4;
   MsgStructure /* Msg5/ */ Msg5;
-  kcg_int64 /* LocalNumMsg/ */ LocalNumMsg;
+  kcg_int32 /* LocalNumMsg/ */ LocalNumMsg;
   MsgStructure /* Msg6/ */ Msg6;
   MsgStructure /* Msg7/ */ Msg7;
   MsgStructure /* Msg8/ */ Msg8;
   MsgStructure /* Msg9/ */ Msg9;
   MsgStructure /* Msg10/ */ Msg10;
-  kcg_int64 /* num1/ */ num1;
-  kcg_int64 /* num2/ */ num2;
-  kcg_int64 /* num3/ */ num3;
-  kcg_int64 /* num4/ */ num4;
-  kcg_int64 /* num5/ */ num5;
-  kcg_int64 /* num6/ */ num6;
-  kcg_int64 /* num7/ */ num7;
-  kcg_int64 /* num8/ */ num8;
-  kcg_int64 /* num9/ */ num9;
-  kcg_int64 /* num10/ */ num10;
+  kcg_int32 /* num1/ */ num1;
+  kcg_int32 /* num2/ */ num2;
+  kcg_int32 /* num3/ */ num3;
+  kcg_int32 /* num4/ */ num4;
+  kcg_int32 /* num5/ */ num5;
+  kcg_int32 /* num6/ */ num6;
+  kcg_int32 /* num7/ */ num7;
+  kcg_int32 /* num8/ */ num8;
+  kcg_int32 /* num9/ */ num9;
+  kcg_int32 /* num10/ */ num10;
   array_char_30_5 /* _L19/ */ _L19;
   MsgStructure /* _L74/ */ _L74;
   MsgStructure /* _L91/ */ _L91;
-  _95_array /* _L88/ */ _L88;
+  _94_array /* _L88/ */ _L88;
   MsgStructure /* _L97/ */ _L97;
   MsgStructure /* _L104/ */ _L104;
   MsgStructure /* _L114/ */ _L114;
   MsgStructure /* _L117/ */ _L117;
   MsgStructure /* _L118/ */ _L118;
-  kcg_int64 /* _L147/ */ _L147;
+  kcg_int32 /* _L147/ */ _L147;
   kcg_bool /* _L148/ */ _L148;
-  kcg_int64 /* _L149/ */ _L149;
+  kcg_int32 /* _L149/ */ _L149;
   MsgStructure /* _L150/ */ _L150;
   MsgStructure /* _L151/ */ _L151;
   MsgStructure /* _L152/ */ _L152;
@@ -94,7 +94,7 @@ typedef struct {
   MsgStructure /* _L164/ */ _L164;
   MsgStructure /* _L165/ */ _L165;
   array_char_30_5 /* _L166/ */ _L166;
-  kcg_int64 /* _L167/ */ _L167;
+  kcg_int32 /* _L167/ */ _L167;
   array_char_30_5_5 /* _L168/ */ _L168;
   array_char_30_5 /* _L169/ */ _L169;
   array_char_30_5 /* _L170/ */ _L170;
@@ -105,15 +105,15 @@ typedef struct {
   array_char_30_5 /* _L175/ */ _L175;
   array_char_30_5 /* _L176/ */ _L176;
   array_char_30_5 /* _L177/ */ _L177;
-  kcg_int64 /* _L178/ */ _L178;
-  kcg_int64 /* _L179/ */ _L179;
-  kcg_int64 /* _L180/ */ _L180;
-  kcg_int64 /* _L181/ */ _L181;
-  kcg_int64 /* _L182/ */ _L182;
-  kcg_int64 /* _L183/ */ _L183;
-  kcg_int64 /* _L184/ */ _L184;
-  kcg_int64 /* _L185/ */ _L185;
-  kcg_int64 /* _L186/ */ _L186;
+  kcg_int32 /* _L178/ */ _L178;
+  kcg_int32 /* _L179/ */ _L179;
+  kcg_int32 /* _L180/ */ _L180;
+  kcg_int32 /* _L181/ */ _L181;
+  kcg_int32 /* _L182/ */ _L182;
+  kcg_int32 /* _L183/ */ _L183;
+  kcg_int32 /* _L184/ */ _L184;
+  kcg_int32 /* _L185/ */ _L185;
+  kcg_int32 /* _L186/ */ _L186;
   array_char_30_5_5 /* _L187/ */ _L187;
   array_char_30_5_5 /* _L188/ */ _L188;
   array_char_30_5_5 /* _L189/ */ _L189;
@@ -123,47 +123,47 @@ typedef struct {
   array_char_30_5_5 /* _L193/ */ _L193;
   array_char_30_5_5 /* _L194/ */ _L194;
   array_char_30_5_5 /* _L195/ */ _L195;
-  array_int64_5 /* _L196/ */ _L196;
-  array_int64_5 /* _L197/ */ _L197;
-  array_int64_5 /* _L198/ */ _L198;
-  array_int64_5 /* _L199/ */ _L199;
-  array_int64_5 /* _L203/ */ _L203;
-  array_int64_5 /* _L204/ */ _L204;
-  array_int64_5 /* _L205/ */ _L205;
-  array_int64_5 /* _L206/ */ _L206;
-  array_int64_5 /* _L207/ */ _L207;
-  kcg_int64 /* _L209/ */ _L209;
-  kcg_int64 /* _L210/ */ _L210;
-  array_int64_5 /* _L211/ */ _L211;
-  kcg_int64 /* _L215/ */ _L215;
-  kcg_int64 /* _L216/ */ _L216;
-  kcg_int64 /* _L217/ */ _L217;
-  kcg_int64 /* _L218/ */ _L218;
-  kcg_int64 /* _L219/ */ _L219;
-  kcg_int64 /* _L220/ */ _L220;
-  kcg_int64 /* _L221/ */ _L221;
-  kcg_int64 /* _L222/ */ _L222;
-  kcg_int64 /* _L223/ */ _L223;
-  kcg_int64 /* _L224/ */ _L224;
-  array_int64_10 /* _L226/ */ _L226;
-  kcg_int64 /* _L231/ */ _L231;
-  kcg_int64 /* _L232/ */ _L232;
-  kcg_int64 /* _L233/ */ _L233;
-  kcg_int64 /* _L234/ */ _L234;
-  kcg_int64 /* _L235/ */ _L235;
-  kcg_int64 /* _L236/ */ _L236;
-  kcg_int64 /* _L237/ */ _L237;
-  kcg_int64 /* _L238/ */ _L238;
-  kcg_int64 /* _L239/ */ _L239;
+  array_int32_5 /* _L196/ */ _L196;
+  array_int32_5 /* _L197/ */ _L197;
+  array_int32_5 /* _L198/ */ _L198;
+  array_int32_5 /* _L199/ */ _L199;
+  array_int32_5 /* _L203/ */ _L203;
+  array_int32_5 /* _L204/ */ _L204;
+  array_int32_5 /* _L205/ */ _L205;
+  array_int32_5 /* _L206/ */ _L206;
+  array_int32_5 /* _L207/ */ _L207;
+  kcg_int32 /* _L209/ */ _L209;
+  kcg_int32 /* _L210/ */ _L210;
+  array_int32_5 /* _L211/ */ _L211;
+  kcg_int32 /* _L215/ */ _L215;
+  kcg_int32 /* _L216/ */ _L216;
+  kcg_int32 /* _L217/ */ _L217;
+  kcg_int32 /* _L218/ */ _L218;
+  kcg_int32 /* _L219/ */ _L219;
+  kcg_int32 /* _L220/ */ _L220;
+  kcg_int32 /* _L221/ */ _L221;
+  kcg_int32 /* _L222/ */ _L222;
+  kcg_int32 /* _L223/ */ _L223;
+  kcg_int32 /* _L224/ */ _L224;
+  array_int32_10 /* _L226/ */ _L226;
+  kcg_int32 /* _L231/ */ _L231;
+  kcg_int32 /* _L232/ */ _L232;
+  kcg_int32 /* _L233/ */ _L233;
+  kcg_int32 /* _L234/ */ _L234;
+  kcg_int32 /* _L235/ */ _L235;
+  kcg_int32 /* _L236/ */ _L236;
+  kcg_int32 /* _L237/ */ _L237;
+  kcg_int32 /* _L238/ */ _L238;
+  kcg_int32 /* _L239/ */ _L239;
 } outC_ShowMsg_Plain_DMI_Control_Pkg_Sub_func_TextMessages;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* DMI_Control_Pkg::Sub_func::TextMessages::ShowMsg_Plain/ */
 extern void ShowMsg_Plain_DMI_Control_Pkg_Sub_func_TextMessages(
   /* Msgarray/ */
-  _95_array *Msgarray,
+  _94_array *Msgarray,
   /* scrollLevel/ */
-  kcg_int64 scrollLevel,
+  kcg_int32 scrollLevel,
   outC_ShowMsg_Plain_DMI_Control_Pkg_Sub_func_TextMessages *outC);
 
 extern void ShowMsg_Plain_reset_DMI_Control_Pkg_Sub_func_TextMessages(
@@ -195,6 +195,6 @@ extern void kcg_load_SV_ShowMsg_Plain_DMI_Control_Pkg_Sub_func_TextMessages(
 #endif /* _ShowMsg_Plain_DMI_Control_Pkg_Sub_func_TextMessages_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ShowMsg_Plain_DMI_Control_Pkg_Sub_func_TextMessages.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

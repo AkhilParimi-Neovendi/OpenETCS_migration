@@ -23,19 +23,19 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_float64 /* _L1/ */ _L1;
-  kcg_int64 /* _L2/ */ _L2;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_float64 /* _L4/ */ _L4;
-  kcg_float64 /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_float32 /* _L1/ */ _L1;
+  kcg_int32 /* _L2/ */ _L2;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_float32 /* _L4/ */ _L4;
+  kcg_float32 /* _L5/ */ _L5;
+  kcg_int32 /* _L6/ */ _L6;
 } outC_CAST_DMI_m_icon_flashing_freq_to_int_DATA_Variables;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* DATA::Variables::CAST_DMI_m_icon_flashing_freq_to_int/ */
 extern void CAST_DMI_m_icon_flashing_freq_to_int_DATA_Variables(
   /* dmi_m_icon_flashing_freq_ct/ */
-  kcg_float64 dmi_m_icon_flashing_freq_ct,
+  kcg_float32 dmi_m_icon_flashing_freq_ct,
   outC_CAST_DMI_m_icon_flashing_freq_to_int_DATA_Variables *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

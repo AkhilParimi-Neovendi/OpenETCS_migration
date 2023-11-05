@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _positionLinkedBGs_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_
 #define _positionLinkedBGs_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_
@@ -30,7 +30,7 @@ typedef struct {
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L6/ */ _L6;
   LocWithInAcc_T_Obu_BasicTypes_Pkg /* _L7/ */ _L7;
   trainProperties_T_TrainPosition_Types_Pck /* _L8/ */ _L8;
-  _54_array /* _L9/ */ _L9;
+  _55_array /* _L9/ */ _L9;
 } outC_positionLinkedBGs_CalculateTrainPosition_Pkg_BG_utilities_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -59,6 +59,6 @@ extern void positionLinkedBGs_init_CalculateTrainPosition_Pkg_BG_utilities_Pkg(
 #endif /* _positionLinkedBGs_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** positionLinkedBGs_CalculateTrainPosition_Pkg_BG_utilities_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _CaseLinkingNotInUse_CheckBGConsistency_Pkg_H_
 #define _CaseLinkingNotInUse_CheckBGConsistency_Pkg_H_
@@ -46,13 +46,13 @@ typedef struct {
   kcg_bool /* IfBlock1:else:else:_L4/ */ _L4_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:_L3/ */ _L3_else_else_IfBlock1;
   kcg_bool /* IfBlock1:else:else:_L5/ */ _L5_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L7/ */ _L7_else_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:else:_L6/ */ _L6_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L7/ */ _L7_else_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:else:_L6/ */ _L6_else_else_IfBlock1;
   ReceivedMessage_T_Common_Types_Pkg /* IfBlock1:else:then:_L3/ */ _L3_then_else_IfBlock1;
   N_PIG /* IfBlock1:else:then:_L18/ */ _L18_then_else_IfBlock1;
   N_PIG /* IfBlock1:else:then:_L16/ */ _L16_then_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L15/ */ _L15_then_else_IfBlock1;
-  kcg_int64 /* IfBlock1:else:then:_L14/ */ _L14_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L15/ */ _L15_then_else_IfBlock1;
+  kcg_int32 /* IfBlock1:else:then:_L14/ */ _L14_then_else_IfBlock1;
   kcg_bool /* IfBlock1:else:then:_L13/ */ _L13_then_else_IfBlock1;
   ReceivedMessage_T_Common_Types_Pkg /* IfBlock1:else:then:_L23/ */ _L23_then_else_IfBlock1;
   Q_NVLOCACC /* IfBlock1:else:then:_L24/ */ _L24_then_else_IfBlock1;
@@ -62,8 +62,8 @@ typedef struct {
   kcg_bool /* isComplete/ */ isComplete;
   kcg_bool /* isSingle/ */ isSingle;
   Telegram_T_BG_Types_Pkg /* lastTelegram/ */ lastTelegram;
-  kcg_int64 /* nid_errorBG_local/ */ nid_errorBG_local;
-  kcg_int64 /* nid_c_local/ */ nid_c_local;
+  kcg_int32 /* nid_errorBG_local/ */ nid_errorBG_local;
+  kcg_int32 /* nid_c_local/ */ nid_c_local;
   Telegram_T_BG_Types_Pkg /* _L13/ */ _L13;
   kcg_bool /* _L12/ */ _L12;
   kcg_bool /* _L11/ */ _L11;
@@ -99,6 +99,6 @@ extern void CaseLinkingNotInUse_init_CheckBGConsistency_Pkg(
 #endif /* _CaseLinkingNotInUse_CheckBGConsistency_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CaseLinkingNotInUse_CheckBGConsistency_Pkg.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

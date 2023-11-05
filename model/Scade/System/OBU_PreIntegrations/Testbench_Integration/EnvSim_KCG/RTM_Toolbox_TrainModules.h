@@ -130,14 +130,14 @@ typedef struct {
   Radio_TrackTrain_Header_T_TM /* _L6/ */ _L6;
   API_RadioMsgHeader_T_API_Msg_Pkg /* _L29/ */ _L29;
   kcg_bool /* _L30/ */ _L30;
-  kcg_int64 /* _L31/ */ _L31;
+  kcg_int32 /* _L31/ */ _L31;
   kcg_bool /* _L32/ */ _L32;
   RadioMetadata_T_Common_Types_Pkg /* _L37/ */ _L37;
   Radio_TrackTrain_Header_T_TM_transitional /* _L51/ */ _L51;
   NID_MESSAGE /* _L52/ */ _L52;
   RBC_Id_T_Common_Types_Pkg /* _L53/ */ _L53;
   kcg_bool /* _L54/ */ _L54;
-  kcg_int64 /* _L55/ */ _L55;
+  kcg_int32 /* _L55/ */ _L55;
 } outC_RTM_Toolbox_TrainModules;
 
 /* ===========  node initialization and cycle functions  =========== */

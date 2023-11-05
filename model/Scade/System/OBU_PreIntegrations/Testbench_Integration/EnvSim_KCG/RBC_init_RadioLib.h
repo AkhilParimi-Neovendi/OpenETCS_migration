@@ -24,7 +24,7 @@ typedef struct {
   R_data_internal_T_InfraLib /* _L1/ */ _L1;
   M_TrackTrain_Radio_T_TM_radio_messages /* _L2/ */ _L2;
   CompressedPackets_T_Common_Types_Pkg /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L4/ */ _L4;
   kcg_bool /* _L6/ */ _L6;
 } outC_RBC_init_RadioLib;
 
@@ -36,7 +36,7 @@ extern void RBC_init_RadioLib(
   /* Packets_in/ */
   CompressedPackets_T_Common_Types_Pkg *Packets_in,
   /* Trigger_in/ */
-  kcg_int64 Trigger_in,
+  kcg_int32 Trigger_in,
   /* Message_sent/ */
   kcg_bool Message_sent,
   outC_RBC_init_RadioLib *outC);

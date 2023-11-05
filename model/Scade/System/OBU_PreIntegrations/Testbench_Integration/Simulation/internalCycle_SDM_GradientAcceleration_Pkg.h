@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _internalCycle_SDM_GradientAcceleration_Pkg_H_
 #define _internalCycle_SDM_GradientAcceleration_Pkg_H_
@@ -39,7 +39,7 @@ typedef struct {
   ACC_SDM_GradientAcceleration_Pkg /* _L26/ */ _L26;
   ACC_SDM_GradientAcceleration_Pkg /* _L41/ */ _L41;
   Gradient_real_t_SDM_GradientAcceleration_types /* _L45/ */ _L45;
-  kcg_int64 /* _L46/ */ _L46;
+  kcg_int32 /* _L46/ */ _L46;
   kcg_bool /* _L48/ */ _L48;
   GradientProfile_real_t_SDM_GradientAcceleration_types /* _L49/ */ _L49;
   _4_array /* _L50/ */ _L50;
@@ -47,34 +47,34 @@ typedef struct {
   M_TrainTrack_compressed_packets_T_TM_radio_messages /* _L52/ */ _L52;
   ACC_SDM_GradientAcceleration_Pkg /* _L53/ */ _L53;
   ACC_SDM_GradientAcceleration_Pkg /* _L60/ */ _L60;
-  kcg_int64 /* _L74/ */ _L74;
-  kcg_int64 /* _L73/ */ _L73;
+  kcg_int32 /* _L74/ */ _L74;
+  kcg_int32 /* _L73/ */ _L73;
   kcg_bool /* _L77/ */ _L77;
-  kcg_float64 /* _L76/ */ _L76;
+  kcg_float32 /* _L76/ */ _L76;
   kcg_bool /* _L75/ */ _L75;
-  kcg_float64 /* _L79/ */ _L79;
-  kcg_float64 /* _L78/ */ _L78;
+  kcg_float32 /* _L79/ */ _L79;
+  kcg_float32 /* _L78/ */ _L78;
   ACC_SDM_GradientAcceleration_Pkg /* _L80/ */ _L80;
-  kcg_int64 /* _L83/ */ _L83;
+  kcg_int32 /* _L83/ */ _L83;
   kcg_bool /* _L88/ */ _L88;
   GradientProfile_real_t_SDM_GradientAcceleration_types /* _L92/ */ _L92;
   Gradient_real_t_SDM_GradientAcceleration_types /* _L94/ */ _L94;
   kcg_bool /* _L99/ */ _L99;
   ACC_SDM_GradientAcceleration_Pkg /* _L104/ */ _L104;
-  kcg_int64 /* _L105/ */ _L105;
+  kcg_int32 /* _L105/ */ _L105;
   ACC_SDM_GradientAcceleration_Pkg /* _L109/ */ _L109;
-  kcg_int64 /* _L108/ */ _L108;
-  kcg_int64 /* _L112/ */ _L112;
+  kcg_int32 /* _L108/ */ _L108;
+  kcg_int32 /* _L112/ */ _L112;
   GradientProfile_real_compensated_t_SDM_GradientAcceleration_types /* _L115/ */ _L115;
   Gradient_section_real_t_SDM_GradientAcceleration_types /* _L116/ */ _L116;
-  kcg_int64 /* _L117/ */ _L117;
+  kcg_int32 /* _L117/ */ _L117;
 } outC_internalCycle_SDM_GradientAcceleration_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* SDM_GradientAcceleration_Pkg::internalCycle/ */
 extern void internalCycle_SDM_GradientAcceleration_Pkg(
   /* index/ */
-  kcg_int64 index,
+  kcg_int32 index,
   /* Accu/ */
   ACC_SDM_GradientAcceleration_Pkg *Accu,
   /* SvLPosition/ */
@@ -98,6 +98,6 @@ extern void internalCycle_init_SDM_GradientAcceleration_Pkg(
 #endif /* _internalCycle_SDM_GradientAcceleration_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** internalCycle_SDM_GradientAcceleration_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

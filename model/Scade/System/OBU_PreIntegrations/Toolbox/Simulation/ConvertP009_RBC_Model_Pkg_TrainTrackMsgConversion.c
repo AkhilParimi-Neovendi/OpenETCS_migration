@@ -35,17 +35,17 @@ void ConvertP009_init_RBC_Model_Pkg_TrainTrackMsgConversion(
   outC_ConvertP009_RBC_Model_Pkg_TrainTrackMsgConversion *outC)
 {
   outC->_L6.valid = kcg_true;
-  outC->_L6.transitionInformation = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L6.transitionInformation = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->_L5 = kcg_true;
   outC->_L1.valid = kcg_true;
-  outC->_L1.nid_packet = kcg_lit_int64(0);
-  outC->_L1.l_packet = kcg_lit_int64(0);
-  outC->_L1.nid_ltrbg = kcg_lit_int64(0);
+  outC->_L1.nid_packet = kcg_lit_int32(0);
+  outC->_L1.l_packet = kcg_lit_int32(0);
+  outC->_L1.nid_ltrbg = kcg_lit_int32(0);
   outC->oldP009.valid = kcg_true;
-  outC->oldP009.transitionInformation = kcg_lit_int64(0);
+  outC->oldP009.transitionInformation = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

@@ -14,23 +14,23 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_float64 /* km_h/ */ km_h;
+  kcg_float32 /* km_h/ */ km_h;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_float64 /* _L1/ */ _L1;
-  kcg_float64 /* _L2/ */ _L2;
-  kcg_float64 /* _L3/ */ _L3;
+  kcg_float32 /* _L1/ */ _L1;
+  kcg_float32 /* _L2/ */ _L2;
+  kcg_float32 /* _L3/ */ _L3;
 } outC_m_s_To_km_h_Toolbox_Converters;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* Toolbox::Converters::m_s_To_km_h/ */
 extern void m_s_To_km_h_Toolbox_Converters(
   /* m_s/ */
-  kcg_float64 m_s,
+  kcg_float32 m_s,
   outC_m_s_To_km_h_Toolbox_Converters *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

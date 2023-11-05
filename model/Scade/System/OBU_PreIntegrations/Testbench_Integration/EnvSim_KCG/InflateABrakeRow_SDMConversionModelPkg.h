@@ -26,9 +26,9 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   A_internal_Type_Obu_BasicTypes_Pkg /* _L1/ */ _L1;
   A_internal_real_Type_SDM_Types_Pkg /* _L2/ */ _L2;
-  array_float64_100 /* _L3/ */ _L3;
+  array_float32_100 /* _L3/ */ _L3;
   kcg_bool /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L5/ */ _L5;
   A_internal_Type_Obu_BasicTypes_Pkg /* _L6/ */ _L6;
   A_internal_Type_Obu_BasicTypes_Pkg /* _L7/ */ _L7;
 } outC_InflateABrakeRow_SDMConversionModelPkg;

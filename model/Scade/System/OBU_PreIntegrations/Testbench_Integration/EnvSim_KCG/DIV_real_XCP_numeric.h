@@ -14,7 +14,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_float64 /* Result/ */ Result;
+  kcg_float32 /* Result/ */ Result;
   kcg_bool /* Exception/ */ Exception;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
@@ -22,12 +22,12 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_float64 /* _L1/ */ _L1;
-  kcg_float64 /* _L2/ */ _L2;
-  kcg_float64 /* _L3/ */ _L3;
-  kcg_float64 /* _L4/ */ _L4;
-  kcg_float64 /* _L5/ */ _L5;
-  kcg_float64 /* _L6/ */ _L6;
+  kcg_float32 /* _L1/ */ _L1;
+  kcg_float32 /* _L2/ */ _L2;
+  kcg_float32 /* _L3/ */ _L3;
+  kcg_float32 /* _L4/ */ _L4;
+  kcg_float32 /* _L5/ */ _L5;
+  kcg_float32 /* _L6/ */ _L6;
   kcg_bool /* _L7/ */ _L7;
   kcg_bool /* _L8/ */ _L8;
 } outC_DIV_real_XCP_numeric;
@@ -36,11 +36,11 @@ typedef struct {
 /* XCP_numeric::DIV_real/ */
 extern void DIV_real_XCP_numeric(
   /* Dividend/ */
-  kcg_float64 Dividend,
+  kcg_float32 Dividend,
   /* Divisor/ */
-  kcg_float64 Divisor,
+  kcg_float32 Divisor,
   /* Default/ */
-  kcg_float64 Default,
+  kcg_float32 Default,
   outC_DIV_real_XCP_numeric *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

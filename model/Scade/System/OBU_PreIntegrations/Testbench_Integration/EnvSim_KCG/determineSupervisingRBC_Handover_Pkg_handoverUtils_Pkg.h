@@ -59,7 +59,7 @@ typedef struct {
   NID_RBC /* _L55/ */ _L55;
   NID_RADIO /* _L56/ */ _L56;
   NID_MN /* _L57/ */ _L57;
-  kcg_int64 /* _L58/ */ _L58;
+  kcg_int32 /* _L58/ */ _L58;
 } outC_determineSupervisingRBC_Handover_Pkg_handoverUtils_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

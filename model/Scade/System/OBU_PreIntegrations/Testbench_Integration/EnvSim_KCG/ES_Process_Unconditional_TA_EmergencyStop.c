@@ -82,22 +82,22 @@ void ES_Process_Unconditional_init_TA_EmergencyStop(
 
   outC->_L13 = kcg_true;
   outC->IfBlock1_clock = kcg_true;
-  outC->_L1_else_IfBlock1.nfree = kcg_lit_int64(0);
+  outC->_L1_else_IfBlock1.nfree = kcg_lit_int32(0);
   for (idx = 0; idx < 8; idx++) {
-    outC->_L1_else_IfBlock1.items[idx].nid_em = kcg_lit_int64(0);
+    outC->_L1_else_IfBlock1.items[idx].nid_em = kcg_lit_int32(0);
     outC->_L1_else_IfBlock1.items[idx].valid = kcg_true;
   }
   outC->_L5_then_IfBlock1 = kcg_true;
-  outC->_L4_then_IfBlock1 = kcg_lit_int64(0);
-  outC->_L3_then_IfBlock1.nfree = kcg_lit_int64(0);
+  outC->_L4_then_IfBlock1 = kcg_lit_int32(0);
+  outC->_L3_then_IfBlock1.nfree = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 8; idx1++) {
-    outC->_L3_then_IfBlock1.items[idx1].nid_em = kcg_lit_int64(0);
+    outC->_L3_then_IfBlock1.items[idx1].nid_em = kcg_lit_int32(0);
     outC->_L3_then_IfBlock1.items[idx1].valid = kcg_true;
   }
   outC->_L2_then_IfBlock1 = kcg_true;
-  outC->_L1_then_IfBlock1.nfree = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1.nfree = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 8; idx2++) {
-    outC->_L1_then_IfBlock1.items[idx2].nid_em = kcg_lit_int64(0);
+    outC->_L1_then_IfBlock1.items[idx2].nid_em = kcg_lit_int32(0);
     outC->_L1_then_IfBlock1.items[idx2].valid = kcg_true;
   }
   outC->_L6_then_IfBlock1 = kcg_true;

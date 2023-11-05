@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,13 +10,13 @@
 /* DMI_Control_Pkg::Sub_func::TextMessages::FIFO_Insert_Op_ACK/ */
 void FIFO_Insert_Op_ACK_DMI_Control_Pkg_Sub_func_TextMessages(
   /* Pos/ */
-  kcg_int64 Pos,
+  kcg_int32 Pos,
   /* Messaggio/ */
   DMI_Text_Message_T_DMI_Messages_EVC_to_DMI_Pkg *Messaggio,
   /* new_mm/ */
-  kcg_float64 new_mm,
+  kcg_float32 new_mm,
   /* new_hh/ */
-  kcg_float64 new_hh,
+  kcg_float32 new_hh,
   /* isFull/ */
   kcg_bool isFull,
   outC_FIFO_Insert_Op_ACK_DMI_Control_Pkg_Sub_func_TextMessages *outC)
@@ -28,19 +28,19 @@ void FIFO_Insert_Op_ACK_DMI_Control_Pkg_Sub_func_TextMessages(
   static kcg_size idx4;
   static kcg_size idx5;
   static kcg_size idx6;
-  static _80_array acc;
+  static _82_array acc;
   static kcg_size idx7;
-  static kcg_int64 noname;
+  static kcg_int32 noname;
   /* mm_array/ */
-  static array_float64_5 last_mm_array;
+  static array_float32_5 last_mm_array;
   /* hh_array/ */
-  static array_float64_5 last_hh_array;
+  static array_float32_5 last_hh_array;
   /* queue/ */
-  static _80_array last_queue;
+  static _82_array last_queue;
 
-  kcg_copy_array_float64_5(&last_mm_array, &outC->mm_array);
-  kcg_copy_array_float64_5(&last_hh_array, &outC->hh_array);
-  kcg_copy__80_array(&last_queue, &outC->queue);
+  kcg_copy_array_float32_5(&last_mm_array, &outC->mm_array);
+  kcg_copy_array_float32_5(&last_hh_array, &outC->hh_array);
+  kcg_copy__82_array(&last_queue, &outC->queue);
   outC->_L18 = Pos;
   /* _L26/ */
   for (idx = 0; idx < 5; idx++) {
@@ -63,14 +63,14 @@ void FIFO_Insert_Op_ACK_DMI_Control_Pkg_Sub_func_TextMessages(
     for (idx3 = 0; idx3 < 5; idx3++) {
       /* _L22=(DMI_Control_Pkg::Sub_func::TextMessages::InsertTime_iterator#1)/ */
       InsertTime_iterator_DMI_Control_Pkg_Sub_func_TextMessages(
-        /* _L22= */(kcg_int64) idx3,
+        /* _L22= */(kcg_int32) idx3,
         outC->_L26[idx3],
         outC->_L25[idx3],
         outC->_L19[idx3],
         &outC->Context_InsertTime_iterator_1[idx3]);
       outC->_L23[idx3] = outC->Context_InsertTime_iterator_1[idx3].hh;
       outC->_L24[idx3] = outC->Context_InsertTime_iterator_1[idx3].mm;
-      outC->_L22 = /* _L22= */(kcg_int64) (idx3 + 1);
+      outC->_L22 = /* _L22= */(kcg_int32) (idx3 + 1);
       /* _L22= */
       if (!outC->Context_InsertTime_iterator_1[idx3].condition) {
         break;
@@ -78,25 +78,25 @@ void FIFO_Insert_Op_ACK_DMI_Control_Pkg_Sub_func_TextMessages(
     }
   }
   else {
-    outC->_L22 = kcg_lit_int64(0);
+    outC->_L22 = kcg_lit_int32(0);
   }
 #ifdef KCG_MAPW_CPY
 
   /* _L22= */
   for (idx3 = /* _L22= */(kcg_size) outC->_L22; idx3 < 5; idx3++) {
-    outC->_L23[idx3] = kcg_lit_float64(-1.0);
-    outC->_L24[idx3] = kcg_lit_float64(-1.0);
+    outC->_L23[idx3] = kcg_lit_float32(-1.0);
+    outC->_L24[idx3] = kcg_lit_float32(-1.0);
   }
 #endif /* KCG_MAPW_CPY */
 
-  kcg_copy__80_array(&outC->_L36, &last_queue);
+  kcg_copy__82_array(&outC->_L36, &last_queue);
   outC->_L29 = isFull;
   /* _L31/ */
   for (idx4 = 0; idx4 < 5; idx4++) {
     outC->_L31[idx4] = outC->_L29;
   }
-  kcg_copy_array_float64_5(&outC->mm_array, &outC->_L24);
-  kcg_copy_array_float64_5(&outC->hh_array, &outC->_L23);
+  kcg_copy_array_float32_5(&outC->mm_array, &outC->_L24);
+  kcg_copy_array_float32_5(&outC->hh_array, &outC->_L23);
   noname = outC->_L22;
   outC->_L5 = Pos;
   /* _L9/ */
@@ -110,23 +110,23 @@ void FIFO_Insert_Op_ACK_DMI_Control_Pkg_Sub_func_TextMessages(
       &outC->_L7[idx6],
       &outC->_L4);
   }
-  kcg_copy__80_array(&outC->_L34, &outC->_L36);
+  kcg_copy__82_array(&outC->_L34, &outC->_L36);
   /* _L34= */
   for (idx7 = 0; idx7 < 5; idx7++) {
-    kcg_copy__80_array(&acc, &outC->_L34);
+    kcg_copy__82_array(&acc, &outC->_L34);
     /* _L34=(DMI_Control_Pkg::Sub_func::TextMessages::InsertStructMSGFIFO_iterator_ack#1)/ */
     InsertStructMSGFIFO_iterator_ack_DMI_Control_Pkg_Sub_func_TextMessages(
-      /* _L34= */(kcg_int64) idx7,
+      /* _L34= */(kcg_int32) idx7,
       &acc,
       outC->_L9[idx7],
       &outC->_L7[idx7],
       outC->_L31[idx7],
       &outC->Context_InsertStructMSGFIFO_iterator_ack_1[idx7]);
-    kcg_copy__80_array(
+    kcg_copy__82_array(
       &outC->_L34,
       &outC->Context_InsertStructMSGFIFO_iterator_ack_1[idx7].OutputArray);
   }
-  kcg_copy__80_array(&outC->queue, &outC->_L34);
+  kcg_copy__82_array(&outC->queue, &outC->_L34);
 }
 
 #ifndef KCG_USER_DEFINED_INIT
@@ -150,20 +150,20 @@ void FIFO_Insert_Op_ACK_init_DMI_Control_Pkg_Sub_func_TextMessages(
   static kcg_size idx14;
   static kcg_size idx15;
 
-  outC->_L22 = kcg_lit_int64(0);
+  outC->_L22 = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 5; idx2++) {
-    outC->_L23[idx2] = kcg_lit_float64(0.0);
+    outC->_L23[idx2] = kcg_lit_float32(0.0);
   }
   for (idx3 = 0; idx3 < 5; idx3++) {
-    outC->_L24[idx3] = kcg_lit_float64(0.0);
+    outC->_L24[idx3] = kcg_lit_float32(0.0);
   }
   for (idx5 = 0; idx5 < 5; idx5++) {
     outC->_L36[idx5].present = kcg_true;
     outC->_L36[idx5].dmi_msg.valid = kcg_true;
-    outC->_L36[idx5].dmi_msg.system_clock = kcg_lit_int64(0);
-    outC->_L36[idx5].dmi_msg.textMessage_ID = kcg_lit_int64(0);
+    outC->_L36[idx5].dmi_msg.system_clock = kcg_lit_int32(0);
+    outC->_L36[idx5].dmi_msg.textMessage_ID = kcg_lit_int32(0);
     outC->_L36[idx5].dmi_msg.q_text = balise_read_error_DMI_Types_Pkg;
-    outC->_L36[idx5].dmi_msg.l_text = kcg_lit_int64(0);
+    outC->_L36[idx5].dmi_msg.l_text = kcg_lit_int32(0);
     for (idx4 = 0; idx4 < 255; idx4++) {
       outC->_L36[idx5].dmi_msg.x_text[idx4] = ' ';
     }
@@ -173,10 +173,10 @@ void FIFO_Insert_Op_ACK_init_DMI_Control_Pkg_Sub_func_TextMessages(
   for (idx7 = 0; idx7 < 5; idx7++) {
     outC->_L34[idx7].present = kcg_true;
     outC->_L34[idx7].dmi_msg.valid = kcg_true;
-    outC->_L34[idx7].dmi_msg.system_clock = kcg_lit_int64(0);
-    outC->_L34[idx7].dmi_msg.textMessage_ID = kcg_lit_int64(0);
+    outC->_L34[idx7].dmi_msg.system_clock = kcg_lit_int32(0);
+    outC->_L34[idx7].dmi_msg.textMessage_ID = kcg_lit_int32(0);
     outC->_L34[idx7].dmi_msg.q_text = balise_read_error_DMI_Types_Pkg;
-    outC->_L34[idx7].dmi_msg.l_text = kcg_lit_int64(0);
+    outC->_L34[idx7].dmi_msg.l_text = kcg_lit_int32(0);
     for (idx6 = 0; idx6 < 255; idx6++) {
       outC->_L34[idx7].dmi_msg.x_text[idx6] = ' ';
     }
@@ -187,40 +187,40 @@ void FIFO_Insert_Op_ACK_init_DMI_Control_Pkg_Sub_func_TextMessages(
     outC->_L31[idx8] = kcg_true;
   }
   outC->_L29 = kcg_true;
-  outC->_L17 = kcg_lit_float64(0.0);
-  outC->_L18 = kcg_lit_int64(0);
+  outC->_L17 = kcg_lit_float32(0.0);
+  outC->_L18 = kcg_lit_int32(0);
   for (idx9 = 0; idx9 < 5; idx9++) {
-    outC->_L19[idx9] = kcg_lit_float64(0.0);
+    outC->_L19[idx9] = kcg_lit_float32(0.0);
   }
-  outC->_L20 = kcg_lit_float64(0.0);
+  outC->_L20 = kcg_lit_float32(0.0);
   outC->_L21 = kcg_true;
   for (idx10 = 0; idx10 < 5; idx10++) {
-    outC->_L25[idx10] = kcg_lit_float64(0.0);
+    outC->_L25[idx10] = kcg_lit_float32(0.0);
   }
   for (idx11 = 0; idx11 < 5; idx11++) {
-    outC->_L26[idx11] = kcg_lit_int64(0);
+    outC->_L26[idx11] = kcg_lit_int32(0);
   }
   for (idx12 = 0; idx12 < 5; idx12++) {
-    outC->_L9[idx12] = kcg_lit_int64(0);
+    outC->_L9[idx12] = kcg_lit_int32(0);
   }
   for (idx14 = 0; idx14 < 5; idx14++) {
     outC->_L7[idx14].valid = kcg_true;
-    outC->_L7[idx14].system_clock = kcg_lit_int64(0);
-    outC->_L7[idx14].textMessage_ID = kcg_lit_int64(0);
+    outC->_L7[idx14].system_clock = kcg_lit_int32(0);
+    outC->_L7[idx14].textMessage_ID = kcg_lit_int32(0);
     outC->_L7[idx14].q_text = balise_read_error_DMI_Types_Pkg;
-    outC->_L7[idx14].l_text = kcg_lit_int64(0);
+    outC->_L7[idx14].l_text = kcg_lit_int32(0);
     for (idx13 = 0; idx13 < 255; idx13++) {
       outC->_L7[idx14].x_text[idx13] = ' ';
     }
     outC->_L7[idx14].q_textClass = Q_TEXTCLASS_Auxiliary_Information;
     outC->_L7[idx14].q_textConfirm = Q_TEXTCONFIRM_No_confirmation_required;
   }
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L4.valid = kcg_true;
-  outC->_L4.system_clock = kcg_lit_int64(0);
-  outC->_L4.textMessage_ID = kcg_lit_int64(0);
+  outC->_L4.system_clock = kcg_lit_int32(0);
+  outC->_L4.textMessage_ID = kcg_lit_int32(0);
   outC->_L4.q_text = balise_read_error_DMI_Types_Pkg;
-  outC->_L4.l_text = kcg_lit_int64(0);
+  outC->_L4.l_text = kcg_lit_int32(0);
   for (idx15 = 0; idx15 < 255; idx15++) {
     outC->_L4.x_text[idx15] = ' ';
   }
@@ -236,15 +236,15 @@ void FIFO_Insert_Op_ACK_init_DMI_Control_Pkg_Sub_func_TextMessages(
     InsertTime_iterator_init_DMI_Control_Pkg_Sub_func_TextMessages(
       &outC->Context_InsertTime_iterator_1[idx]);
   }
-  kcg_copy__80_array(
+  kcg_copy__82_array(
     &outC->queue,
-    (_80_array *) &cMsgStructQueue_DMI_Control_Pkg);
-  kcg_copy_array_float64_5(
+    (_82_array *) &cMsgStructQueue_DMI_Control_Pkg);
+  kcg_copy_array_float32_5(
     &outC->hh_array,
-    (array_float64_5 *) &cArray_hh_leer5_DMI_Control_Pkg);
-  kcg_copy_array_float64_5(
+    (array_float32_5 *) &cArray_hh_leer5_DMI_Control_Pkg);
+  kcg_copy_array_float32_5(
     &outC->mm_array,
-    (array_float64_5 *) &cArray_mm_leer5_DMI_Control_Pkg);
+    (array_float32_5 *) &cArray_mm_leer5_DMI_Control_Pkg);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -265,15 +265,15 @@ void FIFO_Insert_Op_ACK_reset_DMI_Control_Pkg_Sub_func_TextMessages(
     InsertTime_iterator_reset_DMI_Control_Pkg_Sub_func_TextMessages(
       &outC->Context_InsertTime_iterator_1[idx]);
   }
-  kcg_copy__80_array(
+  kcg_copy__82_array(
     &outC->queue,
-    (_80_array *) &cMsgStructQueue_DMI_Control_Pkg);
-  kcg_copy_array_float64_5(
+    (_82_array *) &cMsgStructQueue_DMI_Control_Pkg);
+  kcg_copy_array_float32_5(
     &outC->hh_array,
-    (array_float64_5 *) &cArray_hh_leer5_DMI_Control_Pkg);
-  kcg_copy_array_float64_5(
+    (array_float32_5 *) &cArray_hh_leer5_DMI_Control_Pkg);
+  kcg_copy_array_float32_5(
     &outC->mm_array,
-    (array_float64_5 *) &cArray_mm_leer5_DMI_Control_Pkg);
+    (array_float32_5 *) &cArray_mm_leer5_DMI_Control_Pkg);
 }
 
 
@@ -294,9 +294,9 @@ void kcg_save_SV_FIFO_Insert_Op_ACK_DMI_Control_Pkg_Sub_func_TextMessages(
       &SV->Context_InsertStructMSGFIFO_iterator_ack_1[i],
       &outC->Context_InsertStructMSGFIFO_iterator_ack_1[i]);
   }
-  kcg_copy_array_float64_5(&SV->Context_mm_array, &outC->mm_array);
-  kcg_copy_array_float64_5(&SV->Context_hh_array, &outC->hh_array);
-  kcg_copy__80_array(&SV->Context_queue, &outC->queue);
+  kcg_copy_array_float32_5(&SV->Context_mm_array, &outC->mm_array);
+  kcg_copy_array_float32_5(&SV->Context_hh_array, &outC->hh_array);
+  kcg_copy__82_array(&SV->Context_queue, &outC->queue);
 }
 
 void kcg_load_SV_FIFO_Insert_Op_ACK_DMI_Control_Pkg_Sub_func_TextMessages(
@@ -316,15 +316,15 @@ void kcg_load_SV_FIFO_Insert_Op_ACK_DMI_Control_Pkg_Sub_func_TextMessages(
       &outC->Context_InsertStructMSGFIFO_iterator_ack_1[i],
       &SV->Context_InsertStructMSGFIFO_iterator_ack_1[i]);
   }
-  kcg_copy_array_float64_5(&outC->mm_array, &SV->Context_mm_array);
-  kcg_copy_array_float64_5(&outC->hh_array, &SV->Context_hh_array);
-  kcg_copy__80_array(&outC->queue, &SV->Context_queue);
+  kcg_copy_array_float32_5(&outC->mm_array, &SV->Context_mm_array);
+  kcg_copy_array_float32_5(&outC->hh_array, &SV->Context_hh_array);
+  kcg_copy__82_array(&outC->queue, &SV->Context_queue);
 }
 
 
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** FIFO_Insert_Op_ACK_DMI_Control_Pkg_Sub_func_TextMessages.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

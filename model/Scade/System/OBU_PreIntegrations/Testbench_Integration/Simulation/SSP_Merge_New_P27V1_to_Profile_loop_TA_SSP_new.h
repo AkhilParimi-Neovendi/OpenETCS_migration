@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _SSP_Merge_New_P27V1_to_Profile_loop_TA_SSP_new_H_
 #define _SSP_Merge_New_P27V1_to_Profile_loop_TA_SSP_new_H_
@@ -21,11 +21,11 @@ typedef struct {
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L5/ */ _L5;
   StaticSpeedProfile_t_TrackAtlasTypes /* _L6/ */ _L6;
-  kcg_int64 /* _L7/ */ _L7;
-  kcg_int64 /* _L11/ */ _L11;
+  kcg_int32 /* _L7/ */ _L7;
+  kcg_int32 /* _L11/ */ _L11;
   StaticSpeedSection_t_TrackAtlasTypes /* _L15/ */ _L15;
   StaticSpeedProfile_t_TrackAtlasTypes /* _L19/ */ _L19;
   StaticSpeedProfile_t_TrackAtlasTypes /* _L20/ */ _L20;
@@ -35,11 +35,11 @@ typedef struct {
 /* TA_SSP_new::SSP_Merge_New_P27V1_to_Profile_loop/ */
 extern void SSP_Merge_New_P27V1_to_Profile_loop_TA_SSP_new(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* SP/ */
   StaticSpeedProfile_t_TrackAtlasTypes *SP,
   /* First_Section_To_Replace/ */
-  kcg_int64 First_Section_To_Replace,
+  kcg_int32 First_Section_To_Replace,
   /* new_SP_received/ */
   StaticSpeedProfile_t_TrackAtlasTypes *new_SP_received,
   outC_SSP_Merge_New_P27V1_to_Profile_loop_TA_SSP_new *outC);
@@ -59,6 +59,6 @@ extern void SSP_Merge_New_P27V1_to_Profile_loop_init_TA_SSP_new(
 #endif /* _SSP_Merge_New_P27V1_to_Profile_loop_TA_SSP_new_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** SSP_Merge_New_P27V1_to_Profile_loop_TA_SSP_new.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

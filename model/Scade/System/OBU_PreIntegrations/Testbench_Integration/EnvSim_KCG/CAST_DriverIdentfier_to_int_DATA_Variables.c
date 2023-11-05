@@ -37,13 +37,13 @@ void CAST_DriverIdentfier_to_int_init_DATA_Variables(
   static kcg_size idx2;
 
   for (idx = 0; idx < 9; idx++) {
-    outC->_L10[idx] = kcg_lit_int64(0);
+    outC->_L10[idx] = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 9; idx1++) {
     outC->_L8[idx1] = ' ';
   }
   for (idx2 = 0; idx2 < 9; idx2++) {
-    outC->driverIdentfier_int_array[idx2] = kcg_lit_int64(0);
+    outC->driverIdentfier_int_array[idx2] = kcg_lit_int32(0);
   }
 }
 #endif /* KCG_USER_DEFINED_INIT */

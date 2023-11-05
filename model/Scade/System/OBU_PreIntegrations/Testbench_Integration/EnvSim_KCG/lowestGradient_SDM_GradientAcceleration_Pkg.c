@@ -10,15 +10,15 @@
 /* SDM_GradientAcceleration_Pkg::lowestGradient/ */
 void lowestGradient_SDM_GradientAcceleration_Pkg(
   /* Index/ */
-  kcg_int64 Index,
+  kcg_int32 Index,
   /* lowestGradientAccu/ */
   Gradient_real_t_SDM_GradientAcceleration_types lowestGradientAccu,
   /* GradientProfile/ */
   GradientProfile_real_t_SDM_GradientAcceleration_types *GradientProfile,
   /* BeginIndex/ */
-  kcg_int64 BeginIndex,
+  kcg_int32 BeginIndex,
   /* EndIndex/ */
-  kcg_int64 EndIndex,
+  kcg_int32 EndIndex,
   outC_lowestGradient_SDM_GradientAcceleration_Pkg *outC)
 {
   kcg_copy_GradientProfile_real_t_SDM_GradientAcceleration_types(
@@ -62,28 +62,28 @@ void lowestGradient_init_SDM_GradientAcceleration_Pkg(
 {
   static kcg_size idx;
 
-  outC->_L23.location = kcg_lit_float64(0.0);
-  outC->_L23.gradient = kcg_lit_float64(0.0);
+  outC->_L23.location = kcg_lit_float32(0.0);
+  outC->_L23.gradient = kcg_lit_float32(0.0);
   outC->_L23.valid = kcg_true;
-  outC->_L22 = kcg_lit_int64(0);
-  outC->_L20 = kcg_lit_int64(0);
-  outC->_L19 = kcg_lit_int64(0);
-  outC->_L18 = kcg_lit_float64(0.0);
+  outC->_L22 = kcg_lit_int32(0);
+  outC->_L20 = kcg_lit_int32(0);
+  outC->_L19 = kcg_lit_int32(0);
+  outC->_L18 = kcg_lit_float32(0.0);
   outC->_L17 = kcg_true;
   outC->_L16 = kcg_true;
-  outC->_L15 = kcg_lit_float64(0.0);
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L15 = kcg_lit_float32(0.0);
+  outC->_L10 = kcg_lit_int32(0);
   outC->_L9 = kcg_true;
   outC->_L6 = kcg_true;
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_float64(0.0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_float32(0.0);
+  outC->_L3 = kcg_lit_int32(0);
   for (idx = 0; idx < 50; idx++) {
-    outC->_L1[idx].location = kcg_lit_float64(0.0);
-    outC->_L1[idx].gradient = kcg_lit_float64(0.0);
+    outC->_L1[idx].location = kcg_lit_float32(0.0);
+    outC->_L1[idx].gradient = kcg_lit_float32(0.0);
     outC->_L1[idx].valid = kcg_true;
   }
-  outC->lowestGradientOut = kcg_lit_float64(0.0);
+  outC->lowestGradientOut = kcg_lit_float32(0.0);
   outC->cond = kcg_true;
   /* _L23=(SDM_GradientAcceleration_Pkg::selectGradientOffset)/ */
   selectGradientOffset_init_SDM_GradientAcceleration_Pkg(

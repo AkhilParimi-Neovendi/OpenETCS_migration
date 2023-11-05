@@ -14,23 +14,23 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* element/ */ element;
+  kcg_int32 /* element/ */ element;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
-  kcg_int64 /* _L1/ */ _L1;
+  kcg_int32 /* _L1/ */ _L1;
   P003V1_OBU_sectionlist_int_T_TM_baseline2 /* _L2/ */ _L2;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L6/ */ _L6;
 } outC_C_P003V1_extract_el_section_TM_lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */
 /* TM_lib_internal::C_P003V1_extract_el_section/ */
 extern void C_P003V1_extract_el_section_TM_lib_internal(
   /* offset/ */
-  kcg_int64 offset,
+  kcg_int32 offset,
   /* flat/ */
   P003V1_OBU_sectionlist_int_T_TM_baseline2 *flat,
   outC_C_P003V1_extract_el_section_TM_lib_internal *outC);

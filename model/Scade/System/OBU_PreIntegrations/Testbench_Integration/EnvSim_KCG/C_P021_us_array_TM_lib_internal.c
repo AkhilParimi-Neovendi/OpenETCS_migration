@@ -10,9 +10,9 @@
 /* TM_lib_internal::C_P021_us_array/ */
 void C_P021_us_array_TM_lib_internal(
   /* i/ */
-  kcg_int64 i,
+  kcg_int32 i,
   /* n_iter_int/ */
-  kcg_int64 n_iter_int,
+  kcg_int32 n_iter_int,
   /* flat/ */
   P021_sections_array_flat_T_TM *flat,
   outC_C_P021_us_array_TM_lib_internal *outC)
@@ -28,7 +28,7 @@ void C_P021_us_array_TM_lib_internal(
   C_P021_extract_el_section_TM_lib_internal(
     outC->_L16,
     &outC->_L1,
-    kcg_lit_int64(1),
+    kcg_lit_int32(1),
     &outC->Context_C_P021_extract_el_section_2);
   outC->_L19 = outC->Context_C_P021_extract_el_section_2.element;
   /* _L28=(TM_conversions::CAST_Int_to_Q_GDIR#1)/ */
@@ -40,7 +40,7 @@ void C_P021_us_array_TM_lib_internal(
   C_P021_extract_el_section_TM_lib_internal(
     outC->_L16,
     &outC->_L1,
-    kcg_lit_int64(2),
+    kcg_lit_int32(2),
     &outC->Context_C_P021_extract_el_section_3);
   outC->_L20 = outC->Context_C_P021_extract_el_section_3.element;
   /* _L26=(TM_conversions::CAST_Int_to_G_A#1)/ */
@@ -50,7 +50,7 @@ void C_P021_us_array_TM_lib_internal(
   C_P021_extract_el_section_TM_lib_internal(
     outC->_L16,
     &outC->_L1,
-    kcg_lit_int64(0),
+    kcg_lit_int32(0),
     &outC->Context_C_P021_extract_el_section_1);
   outC->_L15 = outC->Context_C_P021_extract_el_section_1.element;
   /* _L25=(TM_conversions::CAST_Int_to_D_GRADIENT#1)/ */
@@ -75,26 +75,26 @@ void C_P021_us_array_init_TM_lib_internal(
   outC->_L33 = kcg_true;
   outC->_L32 = kcg_true;
   outC->_L28 = Q_GDIR_downhill;
-  outC->_L26 = kcg_lit_int64(0);
-  outC->_L25 = kcg_lit_int64(0);
-  outC->_L20 = kcg_lit_int64(0);
-  outC->_L19 = kcg_lit_int64(0);
-  outC->_L18 = kcg_lit_int64(0);
-  outC->_L16 = kcg_lit_int64(0);
-  outC->_L15 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L26 = kcg_lit_int32(0);
+  outC->_L25 = kcg_lit_int32(0);
+  outC->_L20 = kcg_lit_int32(0);
+  outC->_L19 = kcg_lit_int32(0);
+  outC->_L18 = kcg_lit_int32(0);
+  outC->_L16 = kcg_lit_int32(0);
+  outC->_L15 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L4.valid = kcg_true;
-  outC->_L4.d_gradient = kcg_lit_int64(0);
+  outC->_L4.d_gradient = kcg_lit_int32(0);
   outC->_L4.q_gdir = Q_GDIR_downhill;
-  outC->_L4.g_a = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L4.g_a = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
   for (idx = 0; idx < 99; idx++) {
-    outC->_L1[idx] = kcg_lit_int64(0);
+    outC->_L1[idx] = kcg_lit_int32(0);
   }
   outC->sections.valid = kcg_true;
-  outC->sections.d_gradient = kcg_lit_int64(0);
+  outC->sections.d_gradient = kcg_lit_int32(0);
   outC->sections.q_gdir = Q_GDIR_downhill;
-  outC->sections.g_a = kcg_lit_int64(0);
+  outC->sections.g_a = kcg_lit_int32(0);
   outC->cont = kcg_true;
   /* _L25=(TM_conversions::CAST_Int_to_D_GRADIENT#1)/ */
   CAST_Int_to_D_GRADIENT_init_TM_conversions(

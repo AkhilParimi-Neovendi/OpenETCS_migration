@@ -98,80 +98,80 @@ void GP_Position_GP_with_BGs_init_TA_Gradient_new(
   static kcg_size idx9;
 
   outC->_L28 = kcg_true;
-  outC->_L27 = kcg_lit_int64(0);
+  outC->_L27 = kcg_lit_int32(0);
   for (idx = 0; idx < 50; idx++) {
     outC->_L24[idx].valid = kcg_true;
-    outC->_L24[idx].Loc_Absolute = kcg_lit_int64(0);
-    outC->_L24[idx].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L24[idx].Gradient = kcg_lit_int64(0);
-    outC->_L24[idx].L_Gradient = kcg_lit_int64(0);
+    outC->_L24[idx].Loc_Absolute = kcg_lit_int32(0);
+    outC->_L24[idx].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L24[idx].Gradient = kcg_lit_int32(0);
+    outC->_L24[idx].L_Gradient = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 50; idx1++) {
     outC->_L23[idx1].valid = kcg_true;
-    outC->_L23[idx1].Loc_Absolute = kcg_lit_int64(0);
-    outC->_L23[idx1].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L23[idx1].Gradient = kcg_lit_int64(0);
-    outC->_L23[idx1].L_Gradient = kcg_lit_int64(0);
+    outC->_L23[idx1].Loc_Absolute = kcg_lit_int32(0);
+    outC->_L23[idx1].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L23[idx1].Gradient = kcg_lit_int32(0);
+    outC->_L23[idx1].L_Gradient = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 50; idx2++) {
     outC->_L22[idx2].valid = kcg_true;
-    outC->_L22[idx2].Loc_Absolute = kcg_lit_int64(0);
-    outC->_L22[idx2].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L22[idx2].Gradient = kcg_lit_int64(0);
-    outC->_L22[idx2].L_Gradient = kcg_lit_int64(0);
+    outC->_L22[idx2].Loc_Absolute = kcg_lit_int32(0);
+    outC->_L22[idx2].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L22[idx2].Gradient = kcg_lit_int32(0);
+    outC->_L22[idx2].L_Gradient = kcg_lit_int32(0);
   }
   for (idx3 = 0; idx3 < 50; idx3++) {
     outC->_L18[idx3].valid = kcg_true;
-    outC->_L18[idx3].Loc_Absolute = kcg_lit_int64(0);
-    outC->_L18[idx3].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L18[idx3].Gradient = kcg_lit_int64(0);
-    outC->_L18[idx3].L_Gradient = kcg_lit_int64(0);
+    outC->_L18[idx3].Loc_Absolute = kcg_lit_int32(0);
+    outC->_L18[idx3].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L18[idx3].Gradient = kcg_lit_int32(0);
+    outC->_L18[idx3].L_Gradient = kcg_lit_int32(0);
   }
   for (idx4 = 0; idx4 < 50; idx4++) {
     outC->_L16[idx4].valid = kcg_true;
-    outC->_L16[idx4].Loc_Absolute = kcg_lit_int64(0);
-    outC->_L16[idx4].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L16[idx4].Gradient = kcg_lit_int64(0);
-    outC->_L16[idx4].L_Gradient = kcg_lit_int64(0);
+    outC->_L16[idx4].Loc_Absolute = kcg_lit_int32(0);
+    outC->_L16[idx4].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L16[idx4].Gradient = kcg_lit_int32(0);
+    outC->_L16[idx4].L_Gradient = kcg_lit_int32(0);
   }
   outC->_L15 = kcg_true;
   for (idx5 = 0; idx5 < 50; idx5++) {
     outC->_L6[idx5].valid = kcg_true;
-    outC->_L6[idx5].Loc_Absolute = kcg_lit_int64(0);
-    outC->_L6[idx5].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L6[idx5].Gradient = kcg_lit_int64(0);
-    outC->_L6[idx5].L_Gradient = kcg_lit_int64(0);
+    outC->_L6[idx5].Loc_Absolute = kcg_lit_int32(0);
+    outC->_L6[idx5].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L6[idx5].Gradient = kcg_lit_int32(0);
+    outC->_L6[idx5].L_Gradient = kcg_lit_int32(0);
   }
-  outC->_L9 = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L9 = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
   for (idx6 = 0; idx6 < 50; idx6++) {
     outC->_L5[idx6].valid = kcg_true;
-    outC->_L5[idx6].Loc_Absolute = kcg_lit_int64(0);
-    outC->_L5[idx6].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L5[idx6].Gradient = kcg_lit_int64(0);
-    outC->_L5[idx6].L_Gradient = kcg_lit_int64(0);
+    outC->_L5[idx6].Loc_Absolute = kcg_lit_int32(0);
+    outC->_L5[idx6].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L5[idx6].Gradient = kcg_lit_int32(0);
+    outC->_L5[idx6].L_Gradient = kcg_lit_int32(0);
   }
   for (idx7 = 0; idx7 < 50; idx7++) {
     outC->_L4[idx7].valid = kcg_true;
-    outC->_L4[idx7].Loc_Absolute = kcg_lit_int64(0);
-    outC->_L4[idx7].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L4[idx7].Gradient = kcg_lit_int64(0);
-    outC->_L4[idx7].L_Gradient = kcg_lit_int64(0);
+    outC->_L4[idx7].Loc_Absolute = kcg_lit_int32(0);
+    outC->_L4[idx7].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L4[idx7].Gradient = kcg_lit_int32(0);
+    outC->_L4[idx7].L_Gradient = kcg_lit_int32(0);
   }
   for (idx8 = 0; idx8 < 50; idx8++) {
     outC->ProfileLoopOut[idx8].valid = kcg_true;
-    outC->ProfileLoopOut[idx8].Loc_Absolute = kcg_lit_int64(0);
-    outC->ProfileLoopOut[idx8].Loc_LRBG = kcg_lit_int64(0);
-    outC->ProfileLoopOut[idx8].Gradient = kcg_lit_int64(0);
-    outC->ProfileLoopOut[idx8].L_Gradient = kcg_lit_int64(0);
+    outC->ProfileLoopOut[idx8].Loc_Absolute = kcg_lit_int32(0);
+    outC->ProfileLoopOut[idx8].Loc_LRBG = kcg_lit_int32(0);
+    outC->ProfileLoopOut[idx8].Gradient = kcg_lit_int32(0);
+    outC->ProfileLoopOut[idx8].L_Gradient = kcg_lit_int32(0);
   }
   outC->available = kcg_true;
   for (idx9 = 0; idx9 < 50; idx9++) {
     outC->ProfileOut[idx9].valid = kcg_true;
-    outC->ProfileOut[idx9].Loc_Absolute = kcg_lit_int64(0);
-    outC->ProfileOut[idx9].Loc_LRBG = kcg_lit_int64(0);
-    outC->ProfileOut[idx9].Gradient = kcg_lit_int64(0);
-    outC->ProfileOut[idx9].L_Gradient = kcg_lit_int64(0);
+    outC->ProfileOut[idx9].Loc_Absolute = kcg_lit_int32(0);
+    outC->ProfileOut[idx9].Loc_LRBG = kcg_lit_int32(0);
+    outC->ProfileOut[idx9].Gradient = kcg_lit_int32(0);
+    outC->ProfileOut[idx9].L_Gradient = kcg_lit_int32(0);
   }
   /* _L23=(TA_Gradient_new::GP_Truncate_at_BG#3)/ */
   GP_Truncate_at_BG_init_TA_Gradient_new(&outC->Context_GP_Truncate_at_BG_3);

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:57
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 #ifndef _C_P000_train_compr_TM_TrainToTrack_H_
 #define _C_P000_train_compr_TM_TrainToTrack_H_
@@ -71,27 +71,27 @@ typedef struct {
   L_PACKET /* _L4/ */ _L4;
   NID_PACKET /* _L3/ */ _L3;
   kcg_bool /* _L2/ */ _L2;
-  kcg_int64 /* _L69/ */ _L69;
-  kcg_int64 /* _L70/ */ _L70;
-  kcg_int64 /* _L71/ */ _L71;
-  kcg_int64 /* _L72/ */ _L72;
+  kcg_int32 /* _L69/ */ _L69;
+  kcg_int32 /* _L70/ */ _L70;
+  kcg_int32 /* _L71/ */ _L71;
+  kcg_int32 /* _L72/ */ _L72;
   NID_NTC /* _L73/ */ _L73;
-  kcg_int64 /* _L74/ */ _L74;
-  kcg_int64 /* _L75/ */ _L75;
-  kcg_int64 /* _L77/ */ _L77;
-  kcg_int64 /* _L78/ */ _L78;
-  kcg_int64 /* _L79/ */ _L79;
-  kcg_int64 /* _L80/ */ _L80;
-  kcg_int64 /* _L81/ */ _L81;
-  kcg_int64 /* _L82/ */ _L82;
-  kcg_int64 /* _L83/ */ _L83;
-  kcg_int64 /* _L84/ */ _L84;
-  kcg_int64 /* _L85/ */ _L85;
-  array_int64_17 /* _L68/ */ _L68;
-  kcg_int64 /* _L91/ */ _L91;
+  kcg_int32 /* _L74/ */ _L74;
+  kcg_int32 /* _L75/ */ _L75;
+  kcg_int32 /* _L77/ */ _L77;
+  kcg_int32 /* _L78/ */ _L78;
+  kcg_int32 /* _L79/ */ _L79;
+  kcg_int32 /* _L80/ */ _L80;
+  kcg_int32 /* _L81/ */ _L81;
+  kcg_int32 /* _L82/ */ _L82;
+  kcg_int32 /* _L83/ */ _L83;
+  kcg_int32 /* _L84/ */ _L84;
+  kcg_int32 /* _L85/ */ _L85;
+  array_int32_17 /* _L68/ */ _L68;
+  kcg_int32 /* _L91/ */ _L91;
   D_LRBG /* _L92/ */ _L92;
-  kcg_int64 /* _L93/ */ _L93;
-  kcg_int64 /* _L94/ */ _L94;
+  kcg_int32 /* _L93/ */ _L93;
+  kcg_int32 /* _L94/ */ _L94;
 } outC_C_P000_train_compr_TM_TrainToTrack;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -116,6 +116,6 @@ extern void C_P000_train_compr_init_TM_TrainToTrack(
 #endif /* _C_P000_train_compr_TM_TrainToTrack_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P000_train_compr_TM_TrainToTrack.h
-** Generation date: 2023-10-12T15:09:57
+** Generation date: 2023-11-05T09:06:58
 *************************************************************$ */
 

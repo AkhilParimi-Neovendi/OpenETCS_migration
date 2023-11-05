@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:59
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _Filter_Variable_TM_TrainToTrack_H_
 #define _Filter_Variable_TM_TrainToTrack_H_
@@ -14,7 +14,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* int_out/ */ int_out;
+  kcg_int32 /* int_out/ */ int_out;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* -------------------- no sub nodes' contexts  -------------------- */
@@ -22,9 +22,9 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   kcg_bool /* _L1/ */ _L1;
-  kcg_int64 /* _L2/ */ _L2;
-  kcg_int64 /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L2/ */ _L2;
+  kcg_int32 /* _L3/ */ _L3;
+  kcg_int32 /* _L4/ */ _L4;
 } outC_Filter_Variable_TM_TrainToTrack;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -33,7 +33,7 @@ extern void Filter_Variable_TM_TrainToTrack(
   /* valid/ */
   kcg_bool valid,
   /* int_in/ */
-  kcg_int64 int_in,
+  kcg_int32 int_in,
   outC_Filter_Variable_TM_TrainToTrack *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET
@@ -51,6 +51,6 @@ extern void Filter_Variable_init_TM_TrainToTrack(
 #endif /* _Filter_Variable_TM_TrainToTrack_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Filter_Variable_TM_TrainToTrack.h
-** Generation date: 2023-10-12T15:09:59
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

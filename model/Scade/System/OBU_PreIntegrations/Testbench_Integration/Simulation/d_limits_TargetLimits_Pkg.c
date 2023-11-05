@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -93,7 +93,7 @@ void d_limits_TargetLimits_Pkg(
   }
   else {
     outC->_L28 = kcg_false;
-    outC->_L29 = kcg_lit_float64(0.0);
+    outC->_L29 = kcg_lit_float32(0.0);
   }
   /* _L31=(TargetLimits_Pkg::selectLEValid#1)/ */
   selectLEValid_TargetLimits_Pkg(
@@ -132,81 +132,81 @@ void d_limits_init_TargetLimits_Pkg(outC_d_limits_TargetLimits_Pkg *outC)
   static kcg_size idx6;
   static kcg_size idx7;
 
-  outC->_L25.Traction = kcg_lit_float64(0.0);
-  outC->_L25.berem = kcg_lit_float64(0.0);
-  outC->_L25.bs = kcg_lit_float64(0.0);
-  outC->_L25.bs1 = kcg_lit_float64(0.0);
-  outC->_L25.bs2 = kcg_lit_float64(0.0);
+  outC->_L25.Traction = kcg_lit_float32(0.0);
+  outC->_L25.berem = kcg_lit_float32(0.0);
+  outC->_L25.bs = kcg_lit_float32(0.0);
+  outC->_L25.bs1 = kcg_lit_float32(0.0);
+  outC->_L25.bs2 = kcg_lit_float32(0.0);
   outC->_L25.inhComp = kcg_true;
-  outC->_L25.indication = kcg_lit_float64(0.0);
-  outC->_L39 = kcg_lit_float64(0.0);
+  outC->_L25.indication = kcg_lit_float32(0.0);
+  outC->_L39 = kcg_lit_float32(0.0);
   for (idx = 0; idx < 114; idx++) {
-    outC->_L44.distances[idx] = kcg_lit_float64(0.0);
+    outC->_L44.distances[idx] = kcg_lit_float32(0.0);
   }
   for (idx1 = 0; idx1 < 114; idx1++) {
-    outC->_L44.speeds[idx1] = kcg_lit_float64(0.0);
+    outC->_L44.speeds[idx1] = kcg_lit_float32(0.0);
   }
   for (idx2 = 0; idx2 < 114; idx2++) {
-    outC->_L44.accelerations[idx2] = kcg_lit_float64(0.0);
+    outC->_L44.accelerations[idx2] = kcg_lit_float32(0.0);
   }
   for (idx3 = 0; idx3 < 114; idx3++) {
     outC->_L44.valid[idx3] = kcg_true;
   }
-  outC->_L43 = kcg_lit_float64(0.0);
-  outC->_L42.Traction = kcg_lit_float64(0.0);
-  outC->_L42.berem = kcg_lit_float64(0.0);
-  outC->_L42.bs = kcg_lit_float64(0.0);
-  outC->_L42.bs1 = kcg_lit_float64(0.0);
-  outC->_L42.bs2 = kcg_lit_float64(0.0);
+  outC->_L43 = kcg_lit_float32(0.0);
+  outC->_L42.Traction = kcg_lit_float32(0.0);
+  outC->_L42.berem = kcg_lit_float32(0.0);
+  outC->_L42.bs = kcg_lit_float32(0.0);
+  outC->_L42.bs1 = kcg_lit_float32(0.0);
+  outC->_L42.bs2 = kcg_lit_float32(0.0);
   outC->_L42.inhComp = kcg_true;
-  outC->_L42.indication = kcg_lit_float64(0.0);
-  outC->_L41 = kcg_lit_float64(0.0);
+  outC->_L42.indication = kcg_lit_float32(0.0);
+  outC->_L41 = kcg_lit_float32(0.0);
   outC->_L40 = kcg_true;
   outC->_L37 = kcg_true;
-  outC->_L38 = kcg_lit_float64(0.0);
+  outC->_L38 = kcg_lit_float32(0.0);
   outC->_L36 = kcg_true;
-  outC->_L34 = kcg_lit_float64(0.0);
+  outC->_L34 = kcg_lit_float32(0.0);
   outC->_L33 = kcg_true;
   outC->_L31 = kcg_true;
-  outC->_L30 = kcg_lit_float64(0.0);
-  outC->_L29 = kcg_lit_float64(0.0);
+  outC->_L30 = kcg_lit_float32(0.0);
+  outC->_L29 = kcg_lit_float32(0.0);
   outC->_L28 = kcg_true;
   outC->_L27 = kcg_true;
   for (idx4 = 0; idx4 < 114; idx4++) {
-    outC->_L26.distances[idx4] = kcg_lit_float64(0.0);
+    outC->_L26.distances[idx4] = kcg_lit_float32(0.0);
   }
   for (idx5 = 0; idx5 < 114; idx5++) {
-    outC->_L26.speeds[idx5] = kcg_lit_float64(0.0);
+    outC->_L26.speeds[idx5] = kcg_lit_float32(0.0);
   }
   for (idx6 = 0; idx6 < 114; idx6++) {
-    outC->_L26.accelerations[idx6] = kcg_lit_float64(0.0);
+    outC->_L26.accelerations[idx6] = kcg_lit_float32(0.0);
   }
   for (idx7 = 0; idx7 < 114; idx7++) {
     outC->_L26.valid[idx7] = kcg_true;
   }
-  outC->_L20 = kcg_lit_float64(0.0);
-  outC->_L19 = kcg_lit_float64(0.0);
-  outC->_L18 = kcg_lit_float64(0.0);
-  outC->_L17 = kcg_lit_float64(0.0);
-  outC->_L16 = kcg_lit_float64(0.0);
-  outC->_L15 = kcg_lit_float64(0.0);
-  outC->_L14 = kcg_lit_float64(0.0);
-  outC->_L13 = kcg_lit_float64(0.0);
-  outC->_L12 = kcg_lit_float64(0.0);
+  outC->_L20 = kcg_lit_float32(0.0);
+  outC->_L19 = kcg_lit_float32(0.0);
+  outC->_L18 = kcg_lit_float32(0.0);
+  outC->_L17 = kcg_lit_float32(0.0);
+  outC->_L16 = kcg_lit_float32(0.0);
+  outC->_L15 = kcg_lit_float32(0.0);
+  outC->_L14 = kcg_lit_float32(0.0);
+  outC->_L13 = kcg_lit_float32(0.0);
+  outC->_L12 = kcg_lit_float32(0.0);
   outC->_L11 = kcg_true;
-  outC->_L10 = kcg_lit_float64(0.0);
-  outC->_L8 = kcg_lit_float64(0.0);
-  outC->_L7 = kcg_lit_float64(0.0);
-  outC->_L6 = kcg_lit_float64(0.0);
-  outC->_L4 = kcg_lit_float64(0.0);
-  outC->_L3 = kcg_lit_float64(0.0);
-  outC->_L2 = kcg_lit_float64(0.0);
+  outC->_L10 = kcg_lit_float32(0.0);
+  outC->_L8 = kcg_lit_float32(0.0);
+  outC->_L7 = kcg_lit_float32(0.0);
+  outC->_L6 = kcg_lit_float32(0.0);
+  outC->_L4 = kcg_lit_float32(0.0);
+  outC->_L3 = kcg_lit_float32(0.0);
+  outC->_L2 = kcg_lit_float32(0.0);
   outC->every = kcg_true;
   outC->FLOIisSBI1 = kcg_true;
-  outC->D_FLOI = kcg_lit_float64(0.0);
-  outC->D_W = kcg_lit_float64(0.0);
-  outC->D_P = kcg_lit_float64(0.0);
-  outC->D_I = kcg_lit_float64(0.0);
+  outC->D_FLOI = kcg_lit_float32(0.0);
+  outC->D_W = kcg_lit_float32(0.0);
+  outC->D_P = kcg_lit_float32(0.0);
+  outC->D_I = kcg_lit_float32(0.0);
   /* _L31=(TargetLimits_Pkg::selectLEValid#1)/ */
   selectLEValid_init_TargetLimits_Pkg(&outC->Context_selectLEValid_1);
   /* _L11=(TargetLimits_Pkg::isLEValid#2)/ */
@@ -239,6 +239,6 @@ void d_limits_reset_TargetLimits_Pkg(outC_d_limits_TargetLimits_Pkg *outC)
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** d_limits_TargetLimits_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

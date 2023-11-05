@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:02
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -42,18 +42,18 @@ void Clock__Limit_RBC_Time_Pkg(
 #ifndef KCG_USER_DEFINED_INIT
 void Clock__Limit_init_RBC_Time_Pkg(outC_Clock__Limit_RBC_Time_Pkg *outC)
 {
-  outC->_L11.m_Value = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L11.m_Value = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->_L5 = kcg_true;
   outC->_L6 = kcg_true;
-  outC->_L7.m_Value = kcg_lit_int64(0);
-  outC->_L8 = kcg_lit_int64(0);
+  outC->_L7.m_Value = kcg_lit_int32(0);
+  outC->_L8 = kcg_lit_int32(0);
   outC->_L9 = kcg_true;
-  outC->_L1.m_Value = kcg_lit_int64(0);
-  outC->outClock.m_Value = kcg_lit_int64(0);
+  outC->_L1.m_Value = kcg_lit_int32(0);
+  outC->outClock.m_Value = kcg_lit_int32(0);
   /* _L10=(RBC_Time_Pkg::Clock__GetSeconds#1)/ */
   Clock__GetSeconds_init_RBC_Time_Pkg(&outC->Context_Clock__GetSeconds_1);
   /* _L11=(RBC_Time_Pkg::Clock__Reset#1)/ */
@@ -76,6 +76,6 @@ void Clock__Limit_reset_RBC_Time_Pkg(outC_Clock__Limit_RBC_Time_Pkg *outC)
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Clock__Limit_RBC_Time_Pkg.c
-** Generation date: 2023-10-12T15:10:02
+** Generation date: 2023-11-05T09:07:02
 *************************************************************$ */
 

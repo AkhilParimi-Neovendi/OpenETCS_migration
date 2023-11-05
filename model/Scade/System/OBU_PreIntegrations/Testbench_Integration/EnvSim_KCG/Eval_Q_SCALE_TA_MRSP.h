@@ -22,17 +22,17 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   Q_SCALE /* _L1/ */ _L1;
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L2/ */ _L2;
   Q_SCALE /* _L3/ */ _L3;
   Q_SCALE /* _L4/ */ _L4;
   kcg_bool /* _L6/ */ _L6;
-  kcg_int64 /* _L7/ */ _L7;
-  kcg_int64 /* _L8/ */ _L8;
+  kcg_int32 /* _L7/ */ _L7;
+  kcg_int32 /* _L8/ */ _L8;
   kcg_bool /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
-  kcg_int64 /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
-  kcg_int64 /* _L14/ */ _L14;
+  kcg_int32 /* _L10/ */ _L10;
+  kcg_int32 /* _L11/ */ _L11;
+  kcg_int32 /* _L12/ */ _L12;
+  kcg_int32 /* _L14/ */ _L14;
 } outC_Eval_Q_SCALE_TA_MRSP;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -41,7 +41,7 @@ extern void Eval_Q_SCALE_TA_MRSP(
   /* q_scale_in/ */
   Q_SCALE q_scale_in,
   /* d_in/ */
-  kcg_int64 d_in,
+  kcg_int32 d_in,
   outC_Eval_Q_SCALE_TA_MRSP *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET

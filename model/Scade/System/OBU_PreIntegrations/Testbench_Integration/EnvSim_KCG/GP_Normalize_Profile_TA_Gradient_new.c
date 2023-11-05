@@ -31,7 +31,7 @@ void GP_Normalize_Profile_TA_Gradient_new(
     kcg_copy_GradientProfile_t_TrackAtlasTypes(&acc, &outC->_L3);
     /* _L3=(TA_Gradient_new::GP_Normalize_Profile_loop#1)/ */
     GP_Normalize_Profile_loop_TA_Gradient_new(
-      /* _L3= */(kcg_int64) idx1,
+      /* _L3= */(kcg_int32) idx1,
       &acc,
       outC->_L4[idx1],
       &outC->Context_GP_Normalize_Profile_loop_1[idx1]);
@@ -55,29 +55,29 @@ void GP_Normalize_Profile_init_TA_Gradient_new(
   static kcg_size idx4;
 
   for (idx1 = 0; idx1 < 50; idx1++) {
-    outC->_L4[idx1] = kcg_lit_int64(0);
+    outC->_L4[idx1] = kcg_lit_int32(0);
   }
   for (idx2 = 0; idx2 < 50; idx2++) {
     outC->_L3[idx2].valid = kcg_true;
-    outC->_L3[idx2].Loc_Absolute = kcg_lit_int64(0);
-    outC->_L3[idx2].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L3[idx2].Gradient = kcg_lit_int64(0);
-    outC->_L3[idx2].L_Gradient = kcg_lit_int64(0);
+    outC->_L3[idx2].Loc_Absolute = kcg_lit_int32(0);
+    outC->_L3[idx2].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L3[idx2].Gradient = kcg_lit_int32(0);
+    outC->_L3[idx2].L_Gradient = kcg_lit_int32(0);
   }
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 50; idx3++) {
     outC->_L1[idx3].valid = kcg_true;
-    outC->_L1[idx3].Loc_Absolute = kcg_lit_int64(0);
-    outC->_L1[idx3].Loc_LRBG = kcg_lit_int64(0);
-    outC->_L1[idx3].Gradient = kcg_lit_int64(0);
-    outC->_L1[idx3].L_Gradient = kcg_lit_int64(0);
+    outC->_L1[idx3].Loc_Absolute = kcg_lit_int32(0);
+    outC->_L1[idx3].Loc_LRBG = kcg_lit_int32(0);
+    outC->_L1[idx3].Gradient = kcg_lit_int32(0);
+    outC->_L1[idx3].L_Gradient = kcg_lit_int32(0);
   }
   for (idx4 = 0; idx4 < 50; idx4++) {
     outC->ProfileNormalized_LRBG[idx4].valid = kcg_true;
-    outC->ProfileNormalized_LRBG[idx4].Loc_Absolute = kcg_lit_int64(0);
-    outC->ProfileNormalized_LRBG[idx4].Loc_LRBG = kcg_lit_int64(0);
-    outC->ProfileNormalized_LRBG[idx4].Gradient = kcg_lit_int64(0);
-    outC->ProfileNormalized_LRBG[idx4].L_Gradient = kcg_lit_int64(0);
+    outC->ProfileNormalized_LRBG[idx4].Loc_Absolute = kcg_lit_int32(0);
+    outC->ProfileNormalized_LRBG[idx4].Loc_LRBG = kcg_lit_int32(0);
+    outC->ProfileNormalized_LRBG[idx4].Gradient = kcg_lit_int32(0);
+    outC->ProfileNormalized_LRBG[idx4].L_Gradient = kcg_lit_int32(0);
   }
   for (idx = 0; idx < 50; idx++) {
     /* _L3=(TA_Gradient_new::GP_Normalize_Profile_loop#1)/ */

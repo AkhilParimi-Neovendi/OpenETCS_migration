@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -37,7 +37,7 @@ void ContinuousTimeoutCheck_CheckEuroradioMessage(
   outC->IfBlock1_clock = outC->doCheck;
   /* IfBlock1: */
   if (outC->IfBlock1_clock) {
-    outC->_L10_then_IfBlock1 = kcg_lit_int64(1000);
+    outC->_L10_then_IfBlock1 = kcg_lit_int32(1000);
     outC->_L8_then_IfBlock1 = tNvContact;
     outC->_L9_then_IfBlock1 = outC->_L8_then_IfBlock1 * outC->_L10_then_IfBlock1;
     outC->_L5_then_IfBlock1 = lastRelevantEventTimestamp;
@@ -65,16 +65,16 @@ void ContinuousTimeoutCheck_init_CheckEuroradioMessage(
   outC->_L3 = sp_terminated_RCM_Session_Types_Pkg;
   outC->_L2.valid = kcg_true;
   outC->_L2.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L2.nid_c = kcg_lit_int64(0);
-  outC->_L2.nid_rbc = kcg_lit_int64(0);
+  outC->_L2.nid_c = kcg_lit_int32(0);
+  outC->_L2.nid_rbc = kcg_lit_int32(0);
   outC->_L2.nid_radio = kcg_lit_int64(0);
   outC->_L1.registration.valid = kcg_true;
-  outC->_L1.registration.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L1.registration.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L1.registration.healthStatus = mhs_nok_RCM_Types_Pkg;
   outC->_L1.registration.status = mrs_unregistered_RCM_Types_Pkg;
-  outC->_L1.registration.nid_mn = kcg_lit_int64(0);
+  outC->_L1.registration.nid_mn = kcg_lit_int32(0);
   outC->_L1.connection.valid = kcg_true;
-  outC->_L1.connection.mobileDeviceNo = kcg_lit_int64(0);
+  outC->_L1.connection.mobileDeviceNo = kcg_lit_int32(0);
   outC->_L1.connection.status = mcs_disconnected_RCM_Types_Pkg;
   outC->_L1.connection.nid_radio = kcg_lit_int64(0);
   outC->_L1.connection.settingUpConnectionHasFailed = kcg_true;
@@ -82,19 +82,19 @@ void ContinuousTimeoutCheck_init_CheckEuroradioMessage(
   outC->_L1.connection.isInRadioHole = kcg_true;
   outC->_L1.session.valid = kcg_true;
   outC->_L1.session.phase = sp_terminated_RCM_Session_Types_Pkg;
-  outC->_L1.session.nid_c = kcg_lit_int64(0);
-  outC->_L1.session.nid_rbc = kcg_lit_int64(0);
+  outC->_L1.session.nid_c = kcg_lit_int32(0);
+  outC->_L1.session.nid_rbc = kcg_lit_int32(0);
   outC->_L1.session.nid_radio = kcg_lit_int64(0);
   outC->doCheck = kcg_true;
   outC->IfBlock1_clock = kcg_true;
   outC->_L1_else_IfBlock1 = kcg_true;
-  outC->_L1_then_IfBlock1 = kcg_lit_int64(0);
-  outC->_L5_then_IfBlock1 = kcg_lit_int64(0);
-  outC->_L6_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1 = kcg_lit_int32(0);
+  outC->_L5_then_IfBlock1 = kcg_lit_int32(0);
+  outC->_L6_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L7_then_IfBlock1 = kcg_true;
-  outC->_L8_then_IfBlock1 = kcg_lit_int64(0);
-  outC->_L9_then_IfBlock1 = kcg_lit_int64(0);
-  outC->_L10_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L8_then_IfBlock1 = kcg_lit_int32(0);
+  outC->_L9_then_IfBlock1 = kcg_lit_int32(0);
+  outC->_L10_then_IfBlock1 = kcg_lit_int32(0);
   outC->tNvContactError = kcg_true;
 }
 #endif /* KCG_USER_DEFINED_INIT */
@@ -111,6 +111,6 @@ void ContinuousTimeoutCheck_reset_CheckEuroradioMessage(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** ContinuousTimeoutCheck_CheckEuroradioMessage.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

@@ -24,7 +24,7 @@ typedef struct {
   Target_real_T_TargetManagement_types /* _L1/ */ _L1;
   V_internal_real_Type_SDM_Types_Pkg /* _L2/ */ _L2;
   kcg_bool /* _L8/ */ _L8;
-  kcg_float64 /* _L9/ */ _L9;
+  kcg_float32 /* _L9/ */ _L9;
 } outC_isMRSPorLOATarget_CalcBrakingCurves_Pkg_internalOperators;
 
 /* ===========  node initialization and cycle functions  =========== */

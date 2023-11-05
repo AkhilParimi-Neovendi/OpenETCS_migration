@@ -38,10 +38,10 @@ typedef struct {
   kcg_bool /* _L14/ */ _L14;
   B_data_internal_T_InfraLib /* _L16/ */ _L16;
   BaliseGroupData_TM /* _L19/ */ _L19;
-  kcg_int64 /* _L20/ */ _L20;
-  kcg_int64 /* _L21/ */ _L21;
+  kcg_int32 /* _L20/ */ _L20;
+  kcg_int32 /* _L21/ */ _L21;
   B_data_internal_T_InfraLib /* _L8/ */ _L8;
-  kcg_float64 /* _L28/ */ _L28;
+  kcg_float32 /* _L28/ */ _L28;
   CompressedBaliseMessage_TM /* _L29/ */ _L29;
 } outC_Balise_Group_391_AmsterdamUtrechtL2_Sheet09_AbcoudeBreukelen_Balises;
 
@@ -51,7 +51,7 @@ extern void Balise_Group_391_AmsterdamUtrechtL2_Sheet09_AbcoudeBreukelen_Balises
   /* BG_message_in/ */
   CompressedBaliseMessage_TM *BG_message_in,
   /* TrainPos/ */
-  kcg_float64 TrainPos,
+  kcg_float32 TrainPos,
   /* Engineering_Data/ */
   BaliseGroupData_TM *Engineering_Data,
   outC_Balise_Group_391_AmsterdamUtrechtL2_Sheet09_AbcoudeBreukelen_Balises *outC);

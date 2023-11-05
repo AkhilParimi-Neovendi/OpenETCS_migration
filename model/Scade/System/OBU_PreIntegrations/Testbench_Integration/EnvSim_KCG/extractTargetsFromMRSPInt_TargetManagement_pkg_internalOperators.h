@@ -24,15 +24,15 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   MRSP_internal_section_T_TargetManagement_types /* _L14/ */ _L14;
   MRSP_internal_section_T_TargetManagement_types /* _L15/ */ _L15;
-  kcg_int64 /* _L16/ */ _L16;
-  kcg_int64 /* _L17/ */ _L17;
-  kcg_int64 /* _L18/ */ _L18;
+  kcg_int32 /* _L16/ */ _L16;
+  kcg_int32 /* _L17/ */ _L17;
+  kcg_int32 /* _L18/ */ _L18;
   extractTargetsMRSPACC_TargetManagement_pkg /* _L30/ */ _L30;
   extractTargetsMRSPACC_TargetManagement_pkg /* _L31/ */ _L31;
   Target_list_MRSP_real_T_TargetManagement_types /* _L33/ */ _L33;
-  kcg_int64 /* _L32/ */ _L32;
-  kcg_int64 /* _L34/ */ _L34;
-  kcg_int64 /* _L35/ */ _L35;
+  kcg_int32 /* _L32/ */ _L32;
+  kcg_int32 /* _L34/ */ _L34;
+  kcg_int32 /* _L35/ */ _L35;
   Target_list_MRSP_real_T_TargetManagement_types /* _L36/ */ _L36;
   MRSP_internal_T_TargetManagement_types /* _L3/ */ _L3;
   extractTargetsMRSPACC_TargetManagement_pkg /* _L53/ */ _L53;
@@ -53,7 +53,7 @@ typedef struct {
 /* TargetManagement_pkg::internalOperators::extractTargetsFromMRSPInt/ */
 extern void extractTargetsFromMRSPInt_TargetManagement_pkg_internalOperators(
   /* index/ */
-  kcg_int64 index,
+  kcg_int32 index,
   /* ACCU/ */
   extractTargetsMRSPACC_TargetManagement_pkg *ACCU,
   /* MRSP/ */

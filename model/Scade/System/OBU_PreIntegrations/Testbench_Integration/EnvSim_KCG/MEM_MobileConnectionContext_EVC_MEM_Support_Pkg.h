@@ -25,10 +25,10 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   mobileConnectionContext_T_RCM_Types_Pkg /* ConnectionContext/ */ ConnectionContext;
   mobileHWStatus_Type_MoRC_Pck /* _L1/ */ _L1;
-  kcg_int64 /* _L3/ */ _L3;
+  kcg_int32 /* _L3/ */ _L3;
   kcg_bool /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L5/ */ _L5;
+  kcg_int32 /* _L6/ */ _L6;
   kcg_bool /* _L12/ */ _L12;
   kcg_bool /* _L13/ */ _L13;
   mobileConnectionContext_T_RCM_Types_Pkg /* _L21/ */ _L21;
@@ -47,7 +47,7 @@ extern void MEM_MobileConnectionContext_EVC_MEM_Support_Pkg(
   /* MobileFromAPI/ */
   mobileHWStatus_Type_MoRC_Pck *MobileFromAPI,
   /* mobileDeviceNo/ */
-  kcg_int64 mobileDeviceNo,
+  kcg_int32 mobileDeviceNo,
   /* Radio_ID/ */
   NID_RADIO Radio_ID,
   /* inRadioHole/ */

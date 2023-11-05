@@ -40,24 +40,24 @@ void _114_RadioTrackTrainFacto_RBC_Messaging_Pkg_RBC_RadioTrackTrainFactory_Pkg(
 void _114_RadioTrackTrainFacto_init_RBC_Messaging_Pkg_RBC_RadioTrackTrainFactory_Pkg(
   outC__114_RadioTrackTrainFacto_RBC_Messaging_Pkg_RBC_RadioTrackTrainFactory_Pkg *outC)
 {
-  outC->_L14 = kcg_lit_int64(0);
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L12 = kcg_lit_int64(0);
+  outC->_L14 = kcg_lit_int32(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L12 = kcg_lit_int32(0);
   outC->_L11 = Q_DIR_Reverse;
   outC->_L2.valid = kcg_true;
-  outC->_L2.NID_PACKET = kcg_lit_int64(0);
-  outC->_L2.Q_DIR = kcg_lit_int64(0);
-  outC->_L2.L_PACKET = kcg_lit_int64(0);
-  outC->_L2.T_MAR = kcg_lit_int64(0);
-  outC->_L2.T_TIMEOUTRQST = kcg_lit_int64(0);
-  outC->_L2.T_CYCRQST = kcg_lit_int64(0);
+  outC->_L2.NID_PACKET = kcg_lit_int32(0);
+  outC->_L2.Q_DIR = kcg_lit_int32(0);
+  outC->_L2.L_PACKET = kcg_lit_int32(0);
+  outC->_L2.T_MAR = kcg_lit_int32(0);
+  outC->_L2.T_TIMEOUTRQST = kcg_lit_int32(0);
+  outC->_L2.T_CYCRQST = kcg_lit_int32(0);
   outC->outRadioTrackTrainPacket.valid = kcg_true;
-  outC->outRadioTrackTrainPacket.NID_PACKET = kcg_lit_int64(0);
-  outC->outRadioTrackTrainPacket.Q_DIR = kcg_lit_int64(0);
-  outC->outRadioTrackTrainPacket.L_PACKET = kcg_lit_int64(0);
-  outC->outRadioTrackTrainPacket.T_MAR = kcg_lit_int64(0);
-  outC->outRadioTrackTrainPacket.T_TIMEOUTRQST = kcg_lit_int64(0);
-  outC->outRadioTrackTrainPacket.T_CYCRQST = kcg_lit_int64(0);
+  outC->outRadioTrackTrainPacket.NID_PACKET = kcg_lit_int32(0);
+  outC->outRadioTrackTrainPacket.Q_DIR = kcg_lit_int32(0);
+  outC->outRadioTrackTrainPacket.L_PACKET = kcg_lit_int32(0);
+  outC->outRadioTrackTrainPacket.T_MAR = kcg_lit_int32(0);
+  outC->outRadioTrackTrainPacket.T_TIMEOUTRQST = kcg_lit_int32(0);
+  outC->outRadioTrackTrainPacket.T_CYCRQST = kcg_lit_int32(0);
   /* _L2=(RBC_Messaging_Pkg::RBC_RadioTrackTrain_Pkg::RBC_RadioTrackTrainPacket057_Pkg::RadioTrackTrainPacket057__Create#1)/ */
   _113_RadioTrackTrainPacke_init_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg_RBC_RadioTrackTrainPacket057_Pkg(
     &outC->Context_RadioTrackTrainPacket057__Create_1);

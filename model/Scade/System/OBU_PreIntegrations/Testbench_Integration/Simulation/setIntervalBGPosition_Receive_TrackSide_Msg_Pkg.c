@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -38,82 +38,82 @@ void setIntervalBGPosition_init_Receive_TrackSide_Msg_Pkg(
 {
   outC->_L18 = kcg_true;
   outC->_L7.odometerOfBaliseDetection.valid = kcg_true;
-  outC->_L7.odometerOfBaliseDetection.timestamp = kcg_lit_int64(0);
-  outC->_L7.odometerOfBaliseDetection.odo.o_nominal = kcg_lit_int64(0);
-  outC->_L7.odometerOfBaliseDetection.odo.o_min = kcg_lit_int64(0);
-  outC->_L7.odometerOfBaliseDetection.odo.o_max = kcg_lit_int64(0);
-  outC->_L7.odometerOfBaliseDetection.speed.v_safeNominal = kcg_lit_int64(0);
-  outC->_L7.odometerOfBaliseDetection.speed.v_rawNominal = kcg_lit_int64(0);
-  outC->_L7.odometerOfBaliseDetection.speed.v_lower = kcg_lit_int64(0);
-  outC->_L7.odometerOfBaliseDetection.speed.v_upper = kcg_lit_int64(0);
-  outC->_L7.odometerOfBaliseDetection.acceleration = kcg_lit_int64(0);
+  outC->_L7.odometerOfBaliseDetection.timestamp = kcg_lit_int32(0);
+  outC->_L7.odometerOfBaliseDetection.odo.o_nominal = kcg_lit_int32(0);
+  outC->_L7.odometerOfBaliseDetection.odo.o_min = kcg_lit_int32(0);
+  outC->_L7.odometerOfBaliseDetection.odo.o_max = kcg_lit_int32(0);
+  outC->_L7.odometerOfBaliseDetection.speed.v_safeNominal = kcg_lit_int32(0);
+  outC->_L7.odometerOfBaliseDetection.speed.v_rawNominal = kcg_lit_int32(0);
+  outC->_L7.odometerOfBaliseDetection.speed.v_lower = kcg_lit_int32(0);
+  outC->_L7.odometerOfBaliseDetection.speed.v_upper = kcg_lit_int32(0);
+  outC->_L7.odometerOfBaliseDetection.acceleration = kcg_lit_int32(0);
   outC->_L7.odometerOfBaliseDetection.motionState = noMotion_Obu_BasicTypes_Pkg;
   outC->_L7.odometerOfBaliseDetection.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
-  outC->_L7.BG_centerDetectionInaccuraccuracies.nominal = kcg_lit_int64(0);
-  outC->_L7.BG_centerDetectionInaccuraccuracies.d_min = kcg_lit_int64(0);
-  outC->_L7.BG_centerDetectionInaccuraccuracies.d_max = kcg_lit_int64(0);
+  outC->_L7.BG_centerDetectionInaccuraccuracies.nominal = kcg_lit_int32(0);
+  outC->_L7.BG_centerDetectionInaccuraccuracies.d_min = kcg_lit_int32(0);
+  outC->_L7.BG_centerDetectionInaccuraccuracies.d_max = kcg_lit_int32(0);
   outC->_L4.odometerOfBaliseDetection.valid = kcg_true;
-  outC->_L4.odometerOfBaliseDetection.timestamp = kcg_lit_int64(0);
-  outC->_L4.odometerOfBaliseDetection.odo.o_nominal = kcg_lit_int64(0);
-  outC->_L4.odometerOfBaliseDetection.odo.o_min = kcg_lit_int64(0);
-  outC->_L4.odometerOfBaliseDetection.odo.o_max = kcg_lit_int64(0);
-  outC->_L4.odometerOfBaliseDetection.speed.v_safeNominal = kcg_lit_int64(0);
-  outC->_L4.odometerOfBaliseDetection.speed.v_rawNominal = kcg_lit_int64(0);
-  outC->_L4.odometerOfBaliseDetection.speed.v_lower = kcg_lit_int64(0);
-  outC->_L4.odometerOfBaliseDetection.speed.v_upper = kcg_lit_int64(0);
-  outC->_L4.odometerOfBaliseDetection.acceleration = kcg_lit_int64(0);
+  outC->_L4.odometerOfBaliseDetection.timestamp = kcg_lit_int32(0);
+  outC->_L4.odometerOfBaliseDetection.odo.o_nominal = kcg_lit_int32(0);
+  outC->_L4.odometerOfBaliseDetection.odo.o_min = kcg_lit_int32(0);
+  outC->_L4.odometerOfBaliseDetection.odo.o_max = kcg_lit_int32(0);
+  outC->_L4.odometerOfBaliseDetection.speed.v_safeNominal = kcg_lit_int32(0);
+  outC->_L4.odometerOfBaliseDetection.speed.v_rawNominal = kcg_lit_int32(0);
+  outC->_L4.odometerOfBaliseDetection.speed.v_lower = kcg_lit_int32(0);
+  outC->_L4.odometerOfBaliseDetection.speed.v_upper = kcg_lit_int32(0);
+  outC->_L4.odometerOfBaliseDetection.acceleration = kcg_lit_int32(0);
   outC->_L4.odometerOfBaliseDetection.motionState = noMotion_Obu_BasicTypes_Pkg;
   outC->_L4.odometerOfBaliseDetection.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
-  outC->_L4.BG_centerDetectionInaccuraccuracies.nominal = kcg_lit_int64(0);
-  outC->_L4.BG_centerDetectionInaccuraccuracies.d_min = kcg_lit_int64(0);
-  outC->_L4.BG_centerDetectionInaccuraccuracies.d_max = kcg_lit_int64(0);
+  outC->_L4.BG_centerDetectionInaccuraccuracies.nominal = kcg_lit_int32(0);
+  outC->_L4.BG_centerDetectionInaccuraccuracies.d_min = kcg_lit_int32(0);
+  outC->_L4.BG_centerDetectionInaccuraccuracies.d_max = kcg_lit_int32(0);
   outC->_L2.odometerOfBaliseDetection.valid = kcg_true;
-  outC->_L2.odometerOfBaliseDetection.timestamp = kcg_lit_int64(0);
-  outC->_L2.odometerOfBaliseDetection.odo.o_nominal = kcg_lit_int64(0);
-  outC->_L2.odometerOfBaliseDetection.odo.o_min = kcg_lit_int64(0);
-  outC->_L2.odometerOfBaliseDetection.odo.o_max = kcg_lit_int64(0);
-  outC->_L2.odometerOfBaliseDetection.speed.v_safeNominal = kcg_lit_int64(0);
-  outC->_L2.odometerOfBaliseDetection.speed.v_rawNominal = kcg_lit_int64(0);
-  outC->_L2.odometerOfBaliseDetection.speed.v_lower = kcg_lit_int64(0);
-  outC->_L2.odometerOfBaliseDetection.speed.v_upper = kcg_lit_int64(0);
-  outC->_L2.odometerOfBaliseDetection.acceleration = kcg_lit_int64(0);
+  outC->_L2.odometerOfBaliseDetection.timestamp = kcg_lit_int32(0);
+  outC->_L2.odometerOfBaliseDetection.odo.o_nominal = kcg_lit_int32(0);
+  outC->_L2.odometerOfBaliseDetection.odo.o_min = kcg_lit_int32(0);
+  outC->_L2.odometerOfBaliseDetection.odo.o_max = kcg_lit_int32(0);
+  outC->_L2.odometerOfBaliseDetection.speed.v_safeNominal = kcg_lit_int32(0);
+  outC->_L2.odometerOfBaliseDetection.speed.v_rawNominal = kcg_lit_int32(0);
+  outC->_L2.odometerOfBaliseDetection.speed.v_lower = kcg_lit_int32(0);
+  outC->_L2.odometerOfBaliseDetection.speed.v_upper = kcg_lit_int32(0);
+  outC->_L2.odometerOfBaliseDetection.acceleration = kcg_lit_int32(0);
   outC->_L2.odometerOfBaliseDetection.motionState = noMotion_Obu_BasicTypes_Pkg;
   outC->_L2.odometerOfBaliseDetection.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
-  outC->_L2.BG_centerDetectionInaccuraccuracies.nominal = kcg_lit_int64(0);
-  outC->_L2.BG_centerDetectionInaccuraccuracies.d_min = kcg_lit_int64(0);
-  outC->_L2.BG_centerDetectionInaccuraccuracies.d_max = kcg_lit_int64(0);
+  outC->_L2.BG_centerDetectionInaccuraccuracies.nominal = kcg_lit_int32(0);
+  outC->_L2.BG_centerDetectionInaccuraccuracies.d_min = kcg_lit_int32(0);
+  outC->_L2.BG_centerDetectionInaccuraccuracies.d_max = kcg_lit_int32(0);
   outC->outUpdateBGPosition.odometerOfBaliseDetection.valid = kcg_true;
-  outC->outUpdateBGPosition.odometerOfBaliseDetection.timestamp = kcg_lit_int64(
+  outC->outUpdateBGPosition.odometerOfBaliseDetection.timestamp = kcg_lit_int32(
       0);
   outC->outUpdateBGPosition.odometerOfBaliseDetection.odo.o_nominal =
-    kcg_lit_int64(0);
-  outC->outUpdateBGPosition.odometerOfBaliseDetection.odo.o_min = kcg_lit_int64(
+    kcg_lit_int32(0);
+  outC->outUpdateBGPosition.odometerOfBaliseDetection.odo.o_min = kcg_lit_int32(
       0);
-  outC->outUpdateBGPosition.odometerOfBaliseDetection.odo.o_max = kcg_lit_int64(
+  outC->outUpdateBGPosition.odometerOfBaliseDetection.odo.o_max = kcg_lit_int32(
       0);
   outC->outUpdateBGPosition.odometerOfBaliseDetection.speed.v_safeNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outUpdateBGPosition.odometerOfBaliseDetection.speed.v_rawNominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outUpdateBGPosition.odometerOfBaliseDetection.speed.v_lower =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outUpdateBGPosition.odometerOfBaliseDetection.speed.v_upper =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outUpdateBGPosition.odometerOfBaliseDetection.acceleration =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outUpdateBGPosition.odometerOfBaliseDetection.motionState =
     noMotion_Obu_BasicTypes_Pkg;
   outC->outUpdateBGPosition.odometerOfBaliseDetection.motionDirection =
     unknownDirection_Obu_BasicTypes_Pkg;
   outC->outUpdateBGPosition.BG_centerDetectionInaccuraccuracies.nominal =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outUpdateBGPosition.BG_centerDetectionInaccuraccuracies.d_min =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
   outC->outUpdateBGPosition.BG_centerDetectionInaccuraccuracies.d_max =
-    kcg_lit_int64(0);
+    kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -129,6 +129,6 @@ void setIntervalBGPosition_reset_Receive_TrackSide_Msg_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** setIntervalBGPosition_Receive_TrackSide_Msg_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

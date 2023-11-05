@@ -30,11 +30,11 @@ typedef struct {
   kcg_bool /* _L11/ */ _L11;
   linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg /* _L12/ */ _L12;
   linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg /* _L19/ */ _L19;
-  kcg_int64 /* _L20/ */ _L20;
+  kcg_int32 /* _L20/ */ _L20;
   linkedBG_index_T_CalculateTrainPosition_Pkg_BG_relocation_Pkg /* _L25/ */ _L25;
-  kcg_int64 /* _L26/ */ _L26;
-  kcg_int64 /* _L27/ */ _L27;
-  kcg_int64 /* _L28/ */ _L28;
+  kcg_int32 /* _L26/ */ _L26;
+  kcg_int32 /* _L27/ */ _L27;
+  kcg_int32 /* _L28/ */ _L28;
 } outC_findLinkedBG_bckwd_itr_CalculateTrainPosition_Pkg_BG_relocation_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -151,18 +151,18 @@ void doEntryRequest_init_manage_DMI_Output_Pkg(
   outC_doEntryRequest_manage_DMI_Output_Pkg *outC)
 {
   outC->_L4.valid = kcg_true;
-  outC->_L4.system_clock = kcg_lit_int64(0);
+  outC->_L4.system_clock = kcg_lit_int32(0);
   outC->_L4.entry_request = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   outC->_L3 = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   outC->_L2 = kcg_true;
   outC->_L1.valid = kcg_true;
-  outC->_L1.system_clock = kcg_lit_int64(0);
+  outC->_L1.system_clock = kcg_lit_int32(0);
   outC->_L1.entry_request = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   outC->entry = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   outC->valid = kcg_true;
   outC->IfBlock1_clock = kcg_true;
   outC->_L1_then_IfBlock1.valid = kcg_true;
-  outC->_L1_then_IfBlock1.system_clock = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1.system_clock = kcg_lit_int32(0);
   outC->_L1_then_IfBlock1.available_menu.Menu_button_start_of_mission = kcg_true;
   outC->_L1_then_IfBlock1.available_menu.Menu_button_shunting = kcg_true;
   outC->_L1_then_IfBlock1.available_menu.Menu_button_shunting_exit = kcg_true;
@@ -200,7 +200,7 @@ void doEntryRequest_init_manage_DMI_Output_Pkg(
   outC->_L1_then_IfBlock1.available_menu.Menu_button_Remove_VBC = kcg_true;
   outC->_L2_then_IfBlock1 = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   outC->_L3_then_IfBlock1.valid = kcg_true;
-  outC->_L3_then_IfBlock1.system_clock = kcg_lit_int64(0);
+  outC->_L3_then_IfBlock1.system_clock = kcg_lit_int32(0);
   outC->_L3_then_IfBlock1.available_menu.Menu_button_start_of_mission = kcg_true;
   outC->_L3_then_IfBlock1.available_menu.Menu_button_shunting = kcg_true;
   outC->_L3_then_IfBlock1.available_menu.Menu_button_shunting_exit = kcg_true;
@@ -237,7 +237,7 @@ void doEntryRequest_init_manage_DMI_Output_Pkg(
   outC->_L3_then_IfBlock1.available_menu.Menu_button_Set_VBC = kcg_true;
   outC->_L3_then_IfBlock1.available_menu.Menu_button_Remove_VBC = kcg_true;
   outC->_L4_then_IfBlock1.valid = kcg_true;
-  outC->_L4_then_IfBlock1.system_clock = kcg_lit_int64(0);
+  outC->_L4_then_IfBlock1.system_clock = kcg_lit_int32(0);
   outC->_L4_then_IfBlock1.available_menu.Menu_button_start_of_mission = kcg_true;
   outC->_L4_then_IfBlock1.available_menu.Menu_button_shunting = kcg_true;
   outC->_L4_then_IfBlock1.available_menu.Menu_button_shunting_exit = kcg_true;
@@ -274,7 +274,7 @@ void doEntryRequest_init_manage_DMI_Output_Pkg(
   outC->_L4_then_IfBlock1.available_menu.Menu_button_Set_VBC = kcg_true;
   outC->_L4_then_IfBlock1.available_menu.Menu_button_Remove_VBC = kcg_true;
   outC->_L5_then_IfBlock1.valid = kcg_true;
-  outC->_L5_then_IfBlock1.system_clock = kcg_lit_int64(0);
+  outC->_L5_then_IfBlock1.system_clock = kcg_lit_int32(0);
   outC->_L5_then_IfBlock1.available_menu.Menu_button_start_of_mission = kcg_true;
   outC->_L5_then_IfBlock1.available_menu.Menu_button_shunting = kcg_true;
   outC->_L5_then_IfBlock1.available_menu.Menu_button_shunting_exit = kcg_true;
@@ -311,7 +311,7 @@ void doEntryRequest_init_manage_DMI_Output_Pkg(
   outC->_L5_then_IfBlock1.available_menu.Menu_button_Set_VBC = kcg_true;
   outC->_L5_then_IfBlock1.available_menu.Menu_button_Remove_VBC = kcg_true;
   outC->_L6_then_IfBlock1.valid = kcg_true;
-  outC->_L6_then_IfBlock1.system_clock = kcg_lit_int64(0);
+  outC->_L6_then_IfBlock1.system_clock = kcg_lit_int32(0);
   outC->_L6_then_IfBlock1.available_menu.Menu_button_start_of_mission = kcg_true;
   outC->_L6_then_IfBlock1.available_menu.Menu_button_shunting = kcg_true;
   outC->_L6_then_IfBlock1.available_menu.Menu_button_shunting_exit = kcg_true;
@@ -347,13 +347,13 @@ void doEntryRequest_init_manage_DMI_Output_Pkg(
   outC->_L6_then_IfBlock1.available_menu.Fix_train_data_entry = kcg_true;
   outC->_L6_then_IfBlock1.available_menu.Menu_button_Set_VBC = kcg_true;
   outC->_L6_then_IfBlock1.available_menu.Menu_button_Remove_VBC = kcg_true;
-  outC->_L7_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L7_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L9_then_IfBlock1 = Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   outC->_L14_then_IfBlock1 = kcg_true;
   outC->_L15_then_IfBlock1 = kcg_true;
   outC->_L17_then_IfBlock1 = kcg_true;
   outC->_L19_then_IfBlock1.valid = kcg_true;
-  outC->_L19_then_IfBlock1.system_clock = kcg_lit_int64(0);
+  outC->_L19_then_IfBlock1.system_clock = kcg_lit_int32(0);
   outC->_L19_then_IfBlock1.available_menu.Menu_button_start_of_mission = kcg_true;
   outC->_L19_then_IfBlock1.available_menu.Menu_button_shunting = kcg_true;
   outC->_L19_then_IfBlock1.available_menu.Menu_button_shunting_exit = kcg_true;
@@ -396,11 +396,11 @@ void doEntryRequest_init_manage_DMI_Output_Pkg(
   outC->outLevelsNeeded = kcg_true;
   outC->sendTrainDataToDMI = kcg_true;
   outC->new_entryRequest.valid = kcg_true;
-  outC->new_entryRequest.system_clock = kcg_lit_int64(0);
+  outC->new_entryRequest.system_clock = kcg_lit_int32(0);
   outC->new_entryRequest.entry_request =
     Enter_revalidate_driver_identifier_DMI_Types_Pkg;
   outC->new_menuRequest.valid = kcg_true;
-  outC->new_menuRequest.system_clock = kcg_lit_int64(0);
+  outC->new_menuRequest.system_clock = kcg_lit_int32(0);
   outC->new_menuRequest.available_menu.Menu_button_start_of_mission = kcg_true;
   outC->new_menuRequest.available_menu.Menu_button_shunting = kcg_true;
   outC->new_menuRequest.available_menu.Menu_button_shunting_exit = kcg_true;
@@ -456,6 +456,6 @@ void doEntryRequest_reset_manage_DMI_Output_Pkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** doEntryRequest_manage_DMI_Output_Pkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

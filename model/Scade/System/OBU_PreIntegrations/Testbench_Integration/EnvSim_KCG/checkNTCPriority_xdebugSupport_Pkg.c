@@ -18,9 +18,9 @@ void checkNTCPriority_xdebugSupport_Pkg(
     (P41_LevelTransitionOrder_T_Packet_Types_Pkg *)
       &cNoP41Element_xdebugSupport_Pkg);
   outC->_L6 = M_LEVELTR_Level_NTC_specified_by_NID_NTC;
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
   kcg_copy_P41_LevelTransistionOrders_T_Packet_Types_Pkg(&outC->_L1, p41);
-  if ((kcg_lit_int64(0) <= outC->_L3) & (outC->_L3 < kcg_lit_int64(7))) {
+  if ((kcg_lit_int32(0) <= outC->_L3) & (outC->_L3 < kcg_lit_int32(7))) {
     kcg_copy_P41_LevelTransitionOrder_T_Packet_Types_Pkg(
       &outC->_L2,
       &outC->_L1[outC->_L3]);
@@ -42,29 +42,29 @@ void checkNTCPriority_init_xdebugSupport_Pkg(
   outC->_L8.valid = kcg_true;
   outC->_L8.q_dir = Q_DIR_Reverse;
   outC->_L8.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L8.d_leveltr = kcg_lit_int64(0);
+  outC->_L8.d_leveltr = kcg_lit_int32(0);
   outC->_L8.m_leveltr = M_LEVELTR_Level_0;
-  outC->_L8.nid_ntc = kcg_lit_int64(0);
-  outC->_L8.l_ackleveltr = kcg_lit_int64(0);
+  outC->_L8.nid_ntc = kcg_lit_int32(0);
+  outC->_L8.l_ackleveltr = kcg_lit_int32(0);
   outC->_L7 = kcg_true;
   outC->_L6 = M_LEVELTR_Level_0;
   outC->_L5 = M_LEVELTR_Level_0;
-  outC->_L3 = kcg_lit_int64(0);
+  outC->_L3 = kcg_lit_int32(0);
   outC->_L2.valid = kcg_true;
   outC->_L2.q_dir = Q_DIR_Reverse;
   outC->_L2.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L2.d_leveltr = kcg_lit_int64(0);
+  outC->_L2.d_leveltr = kcg_lit_int32(0);
   outC->_L2.m_leveltr = M_LEVELTR_Level_0;
-  outC->_L2.nid_ntc = kcg_lit_int64(0);
-  outC->_L2.l_ackleveltr = kcg_lit_int64(0);
+  outC->_L2.nid_ntc = kcg_lit_int32(0);
+  outC->_L2.l_ackleveltr = kcg_lit_int32(0);
   for (idx = 0; idx < 7; idx++) {
     outC->_L1[idx].valid = kcg_true;
     outC->_L1[idx].q_dir = Q_DIR_Reverse;
     outC->_L1[idx].q_scale = Q_SCALE_10_cm_scale;
-    outC->_L1[idx].d_leveltr = kcg_lit_int64(0);
+    outC->_L1[idx].d_leveltr = kcg_lit_int32(0);
     outC->_L1[idx].m_leveltr = M_LEVELTR_Level_0;
-    outC->_L1[idx].nid_ntc = kcg_lit_int64(0);
-    outC->_L1[idx].l_ackleveltr = kcg_lit_int64(0);
+    outC->_L1[idx].nid_ntc = kcg_lit_int32(0);
+    outC->_L1[idx].l_ackleveltr = kcg_lit_int32(0);
   }
   outC->isNTC = kcg_true;
 }

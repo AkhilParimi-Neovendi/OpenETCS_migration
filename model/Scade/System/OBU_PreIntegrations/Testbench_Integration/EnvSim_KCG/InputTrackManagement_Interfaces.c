@@ -56,17 +56,17 @@ void InputTrackManagement_init_Interfaces(
   static kcg_size idx;
   static kcg_size idx1;
 
-  outC->_L39.Distance = kcg_lit_int64(0);
+  outC->_L39.Distance = kcg_lit_int32(0);
   outC->_L39.Mode = Profile_OS_Level_And_Mode_Types_Pkg;
-  outC->_L39.Speed = kcg_lit_int64(0);
-  outC->_L39.Length = kcg_lit_int64(0);
-  outC->_L39.Length_Ack = kcg_lit_int64(0);
+  outC->_L39.Speed = kcg_lit_int32(0);
+  outC->_L39.Length = kcg_lit_int32(0);
+  outC->_L39.Length_Ack = kcg_lit_int32(0);
   outC->_L28 = kcg_true;
   outC->_L29.Available = kcg_true;
-  outC->_L29.Dist_Start = kcg_lit_int64(0);
-  outC->_L29.Length = kcg_lit_int64(0);
-  outC->_L29.Dist_Run = kcg_lit_int64(0);
-  outC->_L29.Speed = kcg_lit_int64(0);
+  outC->_L29.Dist_Start = kcg_lit_int32(0);
+  outC->_L29.Length = kcg_lit_int32(0);
+  outC->_L29.Dist_Run = kcg_lit_int32(0);
+  outC->_L29.Speed = kcg_lit_int32(0);
   outC->_L30 = kcg_true;
   outC->_L31 = kcg_true;
   outC->_L32 = kcg_true;
@@ -75,21 +75,21 @@ void InputTrackManagement_init_Interfaces(
   outC->_L35 = kcg_true;
   outC->_L36 = kcg_true;
   for (idx = 0; idx < 3; idx++) {
-    outC->_L37[idx].Distance = kcg_lit_int64(0);
+    outC->_L37[idx].Distance = kcg_lit_int32(0);
     outC->_L37[idx].Mode = Profile_OS_Level_And_Mode_Types_Pkg;
-    outC->_L37[idx].Speed = kcg_lit_int64(0);
-    outC->_L37[idx].Length = kcg_lit_int64(0);
-    outC->_L37[idx].Length_Ack = kcg_lit_int64(0);
+    outC->_L37[idx].Speed = kcg_lit_int32(0);
+    outC->_L37[idx].Length = kcg_lit_int32(0);
+    outC->_L37[idx].Length_Ack = kcg_lit_int32(0);
   }
   outC->_L38 = kcg_true;
   outC->_L1.MA_SSP_Gradient_Available = kcg_true;
   for (idx1 = 0; idx1 < 3; idx1++) {
-    outC->_L1.Mode_Profile_On_Board[idx1].Distance = kcg_lit_int64(0);
+    outC->_L1.Mode_Profile_On_Board[idx1].Distance = kcg_lit_int32(0);
     outC->_L1.Mode_Profile_On_Board[idx1].Mode =
       Profile_OS_Level_And_Mode_Types_Pkg;
-    outC->_L1.Mode_Profile_On_Board[idx1].Speed = kcg_lit_int64(0);
-    outC->_L1.Mode_Profile_On_Board[idx1].Length = kcg_lit_int64(0);
-    outC->_L1.Mode_Profile_On_Board[idx1].Length_Ack = kcg_lit_int64(0);
+    outC->_L1.Mode_Profile_On_Board[idx1].Speed = kcg_lit_int32(0);
+    outC->_L1.Mode_Profile_On_Board[idx1].Length = kcg_lit_int32(0);
+    outC->_L1.Mode_Profile_On_Board[idx1].Length_Ack = kcg_lit_int32(0);
   }
   outC->_L1.Shunting_granted_By_RBC = kcg_true;
   outC->_L1.Trip_Order_Given_By_Balise = kcg_true;
@@ -99,17 +99,17 @@ void InputTrackManagement_init_Interfaces(
   outC->_L1.RBC_Ack_TR_EB_Revocked = kcg_true;
   outC->_L1.RBC_Authorized_SR = kcg_true;
   outC->_L1.Reversing_Data.Available = kcg_true;
-  outC->_L1.Reversing_Data.Dist_Start = kcg_lit_int64(0);
-  outC->_L1.Reversing_Data.Length = kcg_lit_int64(0);
-  outC->_L1.Reversing_Data.Dist_Run = kcg_lit_int64(0);
-  outC->_L1.Reversing_Data.Speed = kcg_lit_int64(0);
+  outC->_L1.Reversing_Data.Dist_Start = kcg_lit_int32(0);
+  outC->_L1.Reversing_Data.Length = kcg_lit_int32(0);
+  outC->_L1.Reversing_Data.Dist_Run = kcg_lit_int32(0);
+  outC->_L1.Reversing_Data.Speed = kcg_lit_int32(0);
   outC->_L1.Emergency_Stop_Message_Received = kcg_true;
   outC->Emergency_Stop_Message_Received = kcg_true;
   outC->Reversing_Data.Available = kcg_true;
-  outC->Reversing_Data.Dist_Start = kcg_lit_int64(0);
-  outC->Reversing_Data.Length = kcg_lit_int64(0);
-  outC->Reversing_Data.Dist_Run = kcg_lit_int64(0);
-  outC->Reversing_Data.Speed = kcg_lit_int64(0);
+  outC->Reversing_Data.Dist_Start = kcg_lit_int32(0);
+  outC->Reversing_Data.Length = kcg_lit_int32(0);
+  outC->Reversing_Data.Dist_Run = kcg_lit_int32(0);
+  outC->Reversing_Data.Speed = kcg_lit_int32(0);
   outC->RBC_Authorized_SR = kcg_true;
   outC->RCB_Ack_And_EB_Revocked = kcg_true;
   outC->Stop_If_In_SR = kcg_true;
@@ -117,11 +117,11 @@ void InputTrackManagement_init_Interfaces(
   outC->List_BG_Related_To_SR_Empty = kcg_true;
   outC->Trip_Order_Given_By_Balise = kcg_true;
   outC->Shunting_Granted_By_RBC = kcg_true;
-  outC->Mode_Profile_On_Board.Distance = kcg_lit_int64(0);
+  outC->Mode_Profile_On_Board.Distance = kcg_lit_int32(0);
   outC->Mode_Profile_On_Board.Mode = Profile_OS_Level_And_Mode_Types_Pkg;
-  outC->Mode_Profile_On_Board.Speed = kcg_lit_int64(0);
-  outC->Mode_Profile_On_Board.Length = kcg_lit_int64(0);
-  outC->Mode_Profile_On_Board.Length_Ack = kcg_lit_int64(0);
+  outC->Mode_Profile_On_Board.Speed = kcg_lit_int32(0);
+  outC->Mode_Profile_On_Board.Length = kcg_lit_int32(0);
+  outC->Mode_Profile_On_Board.Length_Ack = kcg_lit_int32(0);
   outC->MA_SSP_Gradient_Available = kcg_true;
 }
 #endif /* KCG_USER_DEFINED_INIT */

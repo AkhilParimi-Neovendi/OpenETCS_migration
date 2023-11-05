@@ -16,8 +16,8 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  kcg_int64 /* d_trackcond_int/ */ d_trackcond_int;
-  kcg_int64 /* m_trackcond_int/ */ m_trackcond_int;
+  kcg_int32 /* d_trackcond_int/ */ d_trackcond_int;
+  kcg_int32 /* m_trackcond_int/ */ m_trackcond_int;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -29,8 +29,8 @@ typedef struct {
   DMI_trackConditionElement_T_DMI_Types_Pkg /* _L1/ */ _L1;
   D_TRACKCOND /* _L3/ */ _L3;
   M_TRACKCOND /* _L2/ */ _L2;
-  kcg_int64 /* _L4/ */ _L4;
-  kcg_int64 /* _L5/ */ _L5;
+  kcg_int32 /* _L4/ */ _L4;
+  kcg_int32 /* _L5/ */ _L5;
 } outC_CAST_DMI_trackConditionElement_to_int_DATA_Variables;
 
 /* ===========  node initialization and cycle functions  =========== */

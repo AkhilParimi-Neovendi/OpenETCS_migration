@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _C_int_to_DMI_Driver_Identifier_DATA_Packets_Bothways_H_
 #define _C_int_to_DMI_Driver_Identifier_DATA_Packets_Bothways_H_
@@ -29,9 +29,9 @@ typedef struct {
   DMI_Driver_Identifier_int_array_T_DATA /* _L9/ */ _L9;
   kcg_bool /* _L10/ */ _L10;
   driverIdentifier_T_DMI_Messages_Bothways_Pkg /* _L6/ */ _L6;
-  kcg_int64 /* _L19/ */ _L19;
-  kcg_int64 /* _L20/ */ _L20;
-  array_int64_9 /* _L21/ */ _L21;
+  kcg_int32 /* _L19/ */ _L19;
+  kcg_int32 /* _L20/ */ _L20;
+  array_int32_9 /* _L21/ */ _L21;
 } outC_C_int_to_DMI_Driver_Identifier_DATA_Packets_Bothways;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -56,6 +56,6 @@ extern void C_int_to_DMI_Driver_Identifier_init_DATA_Packets_Bothways(
 #endif /* _C_int_to_DMI_Driver_Identifier_DATA_Packets_Bothways_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_int_to_DMI_Driver_Identifier_DATA_Packets_Bothways.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

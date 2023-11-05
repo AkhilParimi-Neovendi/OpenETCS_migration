@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:01
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -53,30 +53,30 @@ void Read_P139_Legacy_init_TM_specific(outC_Read_P139_Legacy_TM_specific *outC)
   outC->_L4.valid = kcg_true;
   outC->_L4.q_dir = Q_DIR_Reverse;
   outC->_L4.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L4.d_reverse = kcg_lit_int64(0);
-  outC->_L4.v_reverse = kcg_lit_int64(0);
+  outC->_L4.d_reverse = kcg_lit_int32(0);
+  outC->_L4.v_reverse = kcg_lit_int32(0);
   for (idx = 0; idx < 30; idx++) {
-    outC->_L3.PacketHeaders[idx].nid_packet = kcg_lit_int64(0);
+    outC->_L3.PacketHeaders[idx].nid_packet = kcg_lit_int32(0);
     outC->_L3.PacketHeaders[idx].q_dir = Q_DIR_Reverse;
     outC->_L3.PacketHeaders[idx].valid = kcg_true;
-    outC->_L3.PacketHeaders[idx].startAddress = kcg_lit_int64(0);
-    outC->_L3.PacketHeaders[idx].endAddress = kcg_lit_int64(0);
+    outC->_L3.PacketHeaders[idx].startAddress = kcg_lit_int32(0);
+    outC->_L3.PacketHeaders[idx].endAddress = kcg_lit_int32(0);
   }
   for (idx1 = 0; idx1 < 500; idx1++) {
-    outC->_L3.PacketData[idx1] = kcg_lit_int64(0);
+    outC->_L3.PacketData[idx1] = kcg_lit_int32(0);
   }
   outC->_L1 = kcg_true;
   outC->_L2.valid = kcg_true;
   outC->_L2.q_dir = Q_DIR_Reverse;
   outC->_L2.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L2.d_reverse = kcg_lit_int64(0);
-  outC->_L2.v_reverse = kcg_lit_int64(0);
+  outC->_L2.d_reverse = kcg_lit_int32(0);
+  outC->_L2.v_reverse = kcg_lit_int32(0);
   outC->every = kcg_true;
   outC->P139_legacy_out.valid = kcg_true;
   outC->P139_legacy_out.q_dir = Q_DIR_Reverse;
   outC->P139_legacy_out.q_scale = Q_SCALE_10_cm_scale;
-  outC->P139_legacy_out.d_reverse = kcg_lit_int64(0);
-  outC->P139_legacy_out.v_reverse = kcg_lit_int64(0);
+  outC->P139_legacy_out.d_reverse = kcg_lit_int32(0);
+  outC->P139_legacy_out.v_reverse = kcg_lit_int32(0);
   /* _L4=(TM_conversions::C_P139_to_legacy_t#1)/ */
   C_P139_to_legacy_t_init_TM_conversions(&outC->Context_C_P139_to_legacy_t_1);
   /* _L1=(TM::Read_P139#1)/ */ Read_P139_init_TM(&outC->Context_Read_P139_1);
@@ -97,6 +97,6 @@ void Read_P139_Legacy_reset_TM_specific(outC_Read_P139_Legacy_TM_specific *outC)
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** Read_P139_Legacy_TM_specific.c
-** Generation date: 2023-10-12T15:10:01
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

@@ -111,21 +111,21 @@ void C_P045_compr_onboard_TM_conversions(
   }
   outC->_L13_CAST_Int_to_Q_DIR_1 = outC->error_CAST_Int_to_Q_DIR_1;
   noname_CAST_Int_to_Q_DIR_1 = outC->_L13_CAST_Int_to_Q_DIR_1;
-  outC->_L5_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
+  outC->_L5_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
   outC->_L23 = outC->_L9[0];
   outC->nid_packet_int_CAST_Int_to_NID_PACKET_1 = outC->_L23;
   outC->_L1_CAST_Int_to_NID_PACKET_1 =
     outC->nid_packet_int_CAST_Int_to_NID_PACKET_1;
   outC->_L4_CAST_Int_to_NID_PACKET_1 = outC->_L1_CAST_Int_to_NID_PACKET_1 <
     outC->_L5_CAST_Int_to_NID_PACKET_1;
-  outC->_L3_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(256);
+  outC->_L3_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(256);
   outC->_L2_CAST_Int_to_NID_PACKET_1 = outC->_L1_CAST_Int_to_NID_PACKET_1 >
     outC->_L3_CAST_Int_to_NID_PACKET_1;
   noname_CAST_Int_to_NID_PACKET_1 = outC->_L2_CAST_Int_to_NID_PACKET_1;
   _11_noname_CAST_Int_to_NID_PACKET_1 = outC->_L4_CAST_Int_to_NID_PACKET_1;
   outC->nid_packet_CAST_Int_to_NID_PACKET_1 = outC->_L1_CAST_Int_to_NID_PACKET_1;
   outC->_L25 = outC->_L9[3];
-  outC->_L21 = kcg_lit_int64(45);
+  outC->_L21 = kcg_lit_int32(45);
   outC->_L12 = outC->nid_packet_CAST_Int_to_NID_PACKET_1;
   outC->_L22 = outC->_L12 == outC->_L21;
   kcg_copy_MetadataElement_T_Common_Types_Pkg(&outC->_L20, Metadata_Element);
@@ -150,32 +150,32 @@ void C_P045_compr_onboard_init_TM_conversions(
 {
   static kcg_size idx;
 
-  outC->_L25 = kcg_lit_int64(0);
-  outC->_L24 = kcg_lit_int64(0);
-  outC->_L23 = kcg_lit_int64(0);
+  outC->_L25 = kcg_lit_int32(0);
+  outC->_L24 = kcg_lit_int32(0);
+  outC->_L23 = kcg_lit_int32(0);
   outC->_L22 = kcg_true;
-  outC->_L21 = kcg_lit_int64(0);
-  outC->_L20.nid_packet = kcg_lit_int64(0);
+  outC->_L21 = kcg_lit_int32(0);
+  outC->_L20.nid_packet = kcg_lit_int32(0);
   outC->_L20.q_dir = Q_DIR_Reverse;
   outC->_L20.valid = kcg_true;
-  outC->_L20.startAddress = kcg_lit_int64(0);
-  outC->_L20.endAddress = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L20.startAddress = kcg_lit_int32(0);
+  outC->_L20.endAddress = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
   for (idx = 0; idx < 500; idx++) {
-    outC->_L9[idx] = kcg_lit_int64(0);
+    outC->_L9[idx] = kcg_lit_int32(0);
   }
   outC->_L10.valid = kcg_true;
   outC->_L10.q_dir = Q_DIR_Reverse;
-  outC->_L10.nid_mn = kcg_lit_int64(0);
+  outC->_L10.nid_mn = kcg_lit_int32(0);
   outC->_L11 = Q_DIR_Reverse;
-  outC->_L12 = kcg_lit_int64(0);
-  outC->_L1_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
-  outC->_L5_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
+  outC->_L1_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
+  outC->_L5_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
   outC->_L4_CAST_Int_to_NID_PACKET_1 = kcg_true;
-  outC->_L3_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
+  outC->_L3_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
   outC->_L2_CAST_Int_to_NID_PACKET_1 = kcg_true;
-  outC->nid_packet_int_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
-  outC->nid_packet_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
+  outC->nid_packet_int_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
+  outC->nid_packet_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
   outC->_L5_CAST_Int_to_Q_DIR_1_then_IfBlock1 = kcg_true;
   outC->_L4_CAST_Int_to_Q_DIR_1_then_IfBlock1 = Q_DIR_Reverse;
   outC->else_clock_CAST_Int_to_Q_DIR_1_IfBlock1 = kcg_true;
@@ -188,14 +188,14 @@ void C_P045_compr_onboard_init_TM_conversions(
   outC->_L5_CAST_Int_to_Q_DIR_1_then_else_IfBlock1 = kcg_true;
   outC->IfBlock1_clock_CAST_Int_to_Q_DIR_1 = kcg_true;
   outC->error_CAST_Int_to_Q_DIR_1 = kcg_true;
-  outC->q_dir_in_CAST_Int_to_Q_DIR_1 = kcg_lit_int64(0);
+  outC->q_dir_in_CAST_Int_to_Q_DIR_1 = kcg_lit_int32(0);
   outC->_L13_CAST_Int_to_Q_DIR_1 = kcg_true;
-  outC->_L12_CAST_Int_to_Q_DIR_1 = kcg_lit_int64(0);
-  outC->q_dir_int_CAST_Int_to_Q_DIR_1 = kcg_lit_int64(0);
+  outC->_L12_CAST_Int_to_Q_DIR_1 = kcg_lit_int32(0);
+  outC->q_dir_int_CAST_Int_to_Q_DIR_1 = kcg_lit_int32(0);
   outC->q_dir_CAST_Int_to_Q_DIR_1 = Q_DIR_Reverse;
   outC->P045_onboard.valid = kcg_true;
   outC->P045_onboard.q_dir = Q_DIR_Reverse;
-  outC->P045_onboard.nid_mn = kcg_lit_int64(0);
+  outC->P045_onboard.nid_mn = kcg_lit_int32(0);
   /* _L4=(TM_conversions::CAST_Int_to_NID_MN#1)/ */
   CAST_Int_to_NID_MN_init_TM_conversions(&outC->Context_CAST_Int_to_NID_MN_1);
 }

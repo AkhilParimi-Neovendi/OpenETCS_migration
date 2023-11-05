@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:03
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -13,11 +13,11 @@ void LoadingGougeInfoConverter_DMI_Control_Pkg_Sub_func_TrainData(
   M_LOADINGGAUGE loadingGougeEnum,
   outC_LoadingGougeInfoConverter_DMI_Control_Pkg_Sub_func_TrainData *outC)
 {
-  outC->_L7 = kcg_lit_int64(5);
-  outC->_L6 = kcg_lit_int64(4);
-  outC->_L5 = kcg_lit_int64(3);
-  outC->_L4 = kcg_lit_int64(2);
-  outC->_L3 = kcg_lit_int64(1);
+  outC->_L7 = kcg_lit_int32(5);
+  outC->_L6 = kcg_lit_int32(4);
+  outC->_L5 = kcg_lit_int32(3);
+  outC->_L4 = kcg_lit_int32(2);
+  outC->_L3 = kcg_lit_int32(1);
   outC->_L1 = loadingGougeEnum;
   /* _L2= */
   switch (outC->_L1) {
@@ -44,15 +44,15 @@ void LoadingGougeInfoConverter_DMI_Control_Pkg_Sub_func_TrainData(
 void LoadingGougeInfoConverter_init_DMI_Control_Pkg_Sub_func_TrainData(
   outC_LoadingGougeInfoConverter_DMI_Control_Pkg_Sub_func_TrainData *outC)
 {
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
   outC->_L1 =
     M_LOADINGGAUGE_The_train_does_not_fit_to_any_of_the_interoperable_loading_gauge_profiles;
-  outC->loadingGougeIndex = kcg_lit_int64(0);
+  outC->loadingGougeIndex = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 
@@ -68,6 +68,6 @@ void LoadingGougeInfoConverter_reset_DMI_Control_Pkg_Sub_func_TrainData(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** LoadingGougeInfoConverter_DMI_Control_Pkg_Sub_func_TrainData.c
-** Generation date: 2023-10-12T15:10:03
+** Generation date: 2023-11-05T09:07:03
 *************************************************************$ */
 

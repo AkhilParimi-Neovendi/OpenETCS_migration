@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -22,7 +22,7 @@ void findTelegram_Receive_TrackSide_Msg_Pkg_BaliseSupport(
   static kcg_size idx1;
   /* telegramAlreadyInGroup/ */
   static kcg_bool telegramAlreadyInGroup_partial;
-  static kcg_int64 noname;
+  static kcg_int32 noname;
   /* telegramAlreadyInGroup/ */
   static kcg_bool _2_telegramAlreadyInGroup_partial;
 
@@ -48,14 +48,14 @@ void findTelegram_Receive_TrackSide_Msg_Pkg_BaliseSupport(
         acc = outC->_L5_then_IfBlock1;
         /* IfBlock1:then:_L4=(Receive_TrackSide_Msg_Pkg::BaliseSupport::simpleTelegramCheck#7)/ */
         simpleTelegramCheck_Receive_TrackSide_Msg_Pkg_BaliseSupport(
-          /* IfBlock1:then:_L4= */(kcg_int64) idx1,
+          /* IfBlock1:then:_L4= */(kcg_int32) idx1,
           acc,
           &outC->_L2_then_IfBlock1[idx1],
           outC->_L3_then_IfBlock1[idx1],
           &outC->Context_simpleTelegramCheck_7[idx1]);
         outC->_L5_then_IfBlock1 =
           outC->Context_simpleTelegramCheck_7[idx1].telegramAlreadyInGroup;
-        outC->_L4_then_IfBlock1 = /* IfBlock1:then:_L4= */(kcg_int64) (idx1 + 1);
+        outC->_L4_then_IfBlock1 = /* IfBlock1:then:_L4= */(kcg_int32) (idx1 + 1);
         /* IfBlock1:then:_L4= */
         if (!outC->Context_simpleTelegramCheck_7[idx1].cont) {
           break;
@@ -63,7 +63,7 @@ void findTelegram_Receive_TrackSide_Msg_Pkg_BaliseSupport(
       }
     }
     else {
-      outC->_L4_then_IfBlock1 = kcg_lit_int64(0);
+      outC->_L4_then_IfBlock1 = kcg_lit_int32(0);
     }
     noname = outC->_L4_then_IfBlock1;
     telegramAlreadyInGroup_partial = outC->_L5_then_IfBlock1;
@@ -100,19 +100,19 @@ void findTelegram_init_Receive_TrackSide_Msg_Pkg_BaliseSupport(
     outC->_L30[idx3].telegramheader.n_pig = N_PIG_I_am_the_1st;
     outC->_L30[idx3].telegramheader.n_total = N_TOTAL_1_balise_in_the_group;
     outC->_L30[idx3].telegramheader.m_dup = M_DUP_No_duplicates;
-    outC->_L30[idx3].telegramheader.m_mcount = kcg_lit_int64(0);
-    outC->_L30[idx3].telegramheader.nid_c = kcg_lit_int64(0);
-    outC->_L30[idx3].telegramheader.nid_bg = kcg_lit_int64(0);
+    outC->_L30[idx3].telegramheader.m_mcount = kcg_lit_int32(0);
+    outC->_L30[idx3].telegramheader.nid_c = kcg_lit_int32(0);
+    outC->_L30[idx3].telegramheader.nid_bg = kcg_lit_int32(0);
     outC->_L30[idx3].telegramheader.q_link = Q_LINK_Unlinked;
     for (idx1 = 0; idx1 < 30; idx1++) {
-      outC->_L30[idx3].packets.PacketHeaders[idx1].nid_packet = kcg_lit_int64(0);
+      outC->_L30[idx3].packets.PacketHeaders[idx1].nid_packet = kcg_lit_int32(0);
       outC->_L30[idx3].packets.PacketHeaders[idx1].q_dir = Q_DIR_Reverse;
       outC->_L30[idx3].packets.PacketHeaders[idx1].valid = kcg_true;
-      outC->_L30[idx3].packets.PacketHeaders[idx1].startAddress = kcg_lit_int64(0);
-      outC->_L30[idx3].packets.PacketHeaders[idx1].endAddress = kcg_lit_int64(0);
+      outC->_L30[idx3].packets.PacketHeaders[idx1].startAddress = kcg_lit_int32(0);
+      outC->_L30[idx3].packets.PacketHeaders[idx1].endAddress = kcg_lit_int32(0);
     }
     for (idx2 = 0; idx2 < 500; idx2++) {
-      outC->_L30[idx3].packets.PacketData[idx2] = kcg_lit_int64(0);
+      outC->_L30[idx3].packets.PacketData[idx2] = kcg_lit_int32(0);
     }
   }
   outC->valid = kcg_true;
@@ -121,7 +121,7 @@ void findTelegram_init_Receive_TrackSide_Msg_Pkg_BaliseSupport(
   outC->_L9_then_IfBlock1 = kcg_true;
   outC->_L7_then_IfBlock1 = N_PIG_I_am_the_1st;
   outC->_L6_then_IfBlock1 = kcg_true;
-  outC->_L4_then_IfBlock1 = kcg_lit_int64(0);
+  outC->_L4_then_IfBlock1 = kcg_lit_int32(0);
   outC->_L5_then_IfBlock1 = kcg_true;
   for (idx4 = 0; idx4 < 8; idx4++) {
     outC->_L3_then_IfBlock1[idx4] = N_PIG_I_am_the_1st;
@@ -138,22 +138,22 @@ void findTelegram_init_Receive_TrackSide_Msg_Pkg_BaliseSupport(
     outC->_L2_then_IfBlock1[idx7].telegramheader.n_total =
       N_TOTAL_1_balise_in_the_group;
     outC->_L2_then_IfBlock1[idx7].telegramheader.m_dup = M_DUP_No_duplicates;
-    outC->_L2_then_IfBlock1[idx7].telegramheader.m_mcount = kcg_lit_int64(0);
-    outC->_L2_then_IfBlock1[idx7].telegramheader.nid_c = kcg_lit_int64(0);
-    outC->_L2_then_IfBlock1[idx7].telegramheader.nid_bg = kcg_lit_int64(0);
+    outC->_L2_then_IfBlock1[idx7].telegramheader.m_mcount = kcg_lit_int32(0);
+    outC->_L2_then_IfBlock1[idx7].telegramheader.nid_c = kcg_lit_int32(0);
+    outC->_L2_then_IfBlock1[idx7].telegramheader.nid_bg = kcg_lit_int32(0);
     outC->_L2_then_IfBlock1[idx7].telegramheader.q_link = Q_LINK_Unlinked;
     for (idx5 = 0; idx5 < 30; idx5++) {
       outC->_L2_then_IfBlock1[idx7].packets.PacketHeaders[idx5].nid_packet =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L2_then_IfBlock1[idx7].packets.PacketHeaders[idx5].q_dir = Q_DIR_Reverse;
       outC->_L2_then_IfBlock1[idx7].packets.PacketHeaders[idx5].valid = kcg_true;
       outC->_L2_then_IfBlock1[idx7].packets.PacketHeaders[idx5].startAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
       outC->_L2_then_IfBlock1[idx7].packets.PacketHeaders[idx5].endAddress =
-        kcg_lit_int64(0);
+        kcg_lit_int32(0);
     }
     for (idx6 = 0; idx6 < 500; idx6++) {
-      outC->_L2_then_IfBlock1[idx7].packets.PacketData[idx6] = kcg_lit_int64(0);
+      outC->_L2_then_IfBlock1[idx7].packets.PacketData[idx6] = kcg_lit_int32(0);
     }
   }
   outC->telegramAlreadyInGroup = kcg_true;
@@ -184,6 +184,6 @@ void findTelegram_reset_Receive_TrackSide_Msg_Pkg_BaliseSupport(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** findTelegram_Receive_TrackSide_Msg_Pkg_BaliseSupport.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

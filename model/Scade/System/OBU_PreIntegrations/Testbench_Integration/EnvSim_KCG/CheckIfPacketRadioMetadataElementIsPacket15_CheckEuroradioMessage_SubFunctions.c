@@ -23,7 +23,7 @@ void CheckIfPacketRadioMetadataElementIsPacket15_CheckEuroradioMessage_SubFuncti
     &outC->Context_T_extract_nid_packet_from_metadata_selector_1);
   outC->_L9 =
     outC->Context_T_extract_nid_packet_from_metadata_selector_1.nid_packet;
-  outC->_L4 = kcg_lit_int64(15);
+  outC->_L4 = kcg_lit_int32(15);
   outC->_L3 = outC->_L9 == outC->_L4;
   outC->_L6 = accumulatorInput;
   outC->_L8 = outC->_L6 | outC->_L3;
@@ -34,17 +34,17 @@ void CheckIfPacketRadioMetadataElementIsPacket15_CheckEuroradioMessage_SubFuncti
 void CheckIfPacketRadioMetadataElementIsPacket15_init_CheckEuroradioMessage_SubFunctions(
   outC_CheckIfPacketRadioMetadataElementIsPacket15_CheckEuroradioMessage_SubFunctions *outC)
 {
-  outC->_L9 = kcg_lit_int64(0);
+  outC->_L9 = kcg_lit_int32(0);
   outC->_L8 = kcg_true;
   outC->_L6 = kcg_true;
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->_L3 = kcg_true;
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L1.nid_packet = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L1.nid_packet = kcg_lit_int32(0);
   outC->_L1.q_dir = Q_DIR_Reverse;
   outC->_L1.valid = kcg_true;
-  outC->_L1.startAddress = kcg_lit_int64(0);
-  outC->_L1.endAddress = kcg_lit_int64(0);
+  outC->_L1.startAddress = kcg_lit_int32(0);
+  outC->_L1.endAddress = kcg_lit_int32(0);
   outC->result = kcg_true;
   /* _L9=(TM::T_extract_nid_packet_from_metadata_selector#1)/ */
   T_extract_nid_packet_from_metadata_selector_init_TM(

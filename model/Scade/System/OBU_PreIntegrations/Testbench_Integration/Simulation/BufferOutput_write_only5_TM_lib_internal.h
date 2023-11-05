@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _BufferOutput_write_only5_TM_lib_internal_H_
 #define _BufferOutput_write_only5_TM_lib_internal_H_
@@ -15,7 +15,7 @@
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
   M_TrainTrackRadioOutputBuffer_t_TM_lib_internal /* Buffer_Out/ */ Buffer_Out;
-  kcg_int64 /* Stacksize_new/ */ Stacksize_new;
+  kcg_int32 /* Stacksize_new/ */ Stacksize_new;
   M_TrainTrack_Message_T_TM_radio_messages /* Message_out/ */ Message_out;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
@@ -24,17 +24,17 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   M_TrainTrackRadioOutputBuffer_t_TM_lib_internal /* _L1/ */ _L1;
-  kcg_int64 /* _L2/ */ _L2;
+  kcg_int32 /* _L2/ */ _L2;
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus /* _L3/ */ _L3;
-  _97_array /* _L4/ */ _L4;
+  _96_array /* _L4/ */ _L4;
   M_TrainTrackRadioOutputBuffer_t_TM_lib_internal /* _L5/ */ _L5;
-  _82_array /* _L6/ */ _L6;
-  kcg_int64 /* _L7/ */ _L7;
-  kcg_int64 /* _L8/ */ _L8;
+  _84_array /* _L6/ */ _L6;
+  kcg_int32 /* _L7/ */ _L7;
+  kcg_int32 /* _L8/ */ _L8;
   M_TrainTrack_Message_T_TM_radio_messages /* _L9/ */ _L9;
-  kcg_int64 /* _L10/ */ _L10;
+  kcg_int32 /* _L10/ */ _L10;
   kcg_bool /* _L11/ */ _L11;
-  kcg_int64 /* _L12/ */ _L12;
+  kcg_int32 /* _L12/ */ _L12;
 } outC_BufferOutput_write_only5_TM_lib_internal;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -43,7 +43,7 @@ extern void BufferOutput_write_only5_TM_lib_internal(
   /* Buffer_In/ */
   M_TrainTrackRadioOutputBuffer_t_TM_lib_internal *Buffer_In,
   /* Stacksize_old/ */
-  kcg_int64 Stacksize_old,
+  kcg_int32 Stacksize_old,
   /* Message_In/ */
   M_TrainTrackMessageBus_t_TM_TrainTrack_Bus *Message_In,
   outC_BufferOutput_write_only5_TM_lib_internal *outC);
@@ -63,6 +63,6 @@ extern void BufferOutput_write_only5_init_TM_lib_internal(
 #endif /* _BufferOutput_write_only5_TM_lib_internal_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** BufferOutput_write_only5_TM_lib_internal.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

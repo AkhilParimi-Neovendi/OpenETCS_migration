@@ -56,7 +56,7 @@ void triggerForMA_init_manage_DMI_Input_Pkg(
 {
   outC->_L2 = kcg_true;
   outC->_L1.valid = kcg_true;
-  outC->_L1.systemTime = kcg_lit_int64(0);
+  outC->_L1.systemTime = kcg_lit_int32(0);
   outC->_L1.m_request = Start_of_mission_DMI_Types_Pkg;
   outC->isValid = kcg_true;
   outC->IfBlock1_clock = kcg_true;
@@ -64,7 +64,7 @@ void triggerForMA_init_manage_DMI_Input_Pkg(
   outC->_L1_else_IfBlock1.driverSelectsStart = kcg_true;
   outC->_L2_then_IfBlock1 = Start_of_mission_DMI_Types_Pkg;
   outC->_L1_then_IfBlock1.valid = kcg_true;
-  outC->_L1_then_IfBlock1.systemTime = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1.systemTime = kcg_lit_int32(0);
   outC->_L1_then_IfBlock1.m_request = Start_of_mission_DMI_Types_Pkg;
   outC->_L4_then_IfBlock1 = kcg_true;
   outC->_L5_then_IfBlock1 = Start_of_mission_DMI_Types_Pkg;

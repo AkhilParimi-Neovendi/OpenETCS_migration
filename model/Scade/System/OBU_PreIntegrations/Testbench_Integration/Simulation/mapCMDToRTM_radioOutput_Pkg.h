@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _mapCMDToRTM_radioOutput_Pkg_H_
 #define _mapCMDToRTM_radioOutput_Pkg_H_
@@ -40,6 +40,7 @@ typedef struct {
   kcg_bool /* _L37/ */ _L37;
   NID_RADIO /* _L38/ */ _L38;
   kcg_int64 /* _L39/ */ _L39;
+  kcg_int32 /* _L40/ */ _L40;
 } outC_mapCMDToRTM_radioOutput_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -82,6 +83,6 @@ extern void kcg_load_SV_mapCMDToRTM_radioOutput_Pkg(
 #endif /* _mapCMDToRTM_radioOutput_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** mapCMDToRTM_radioOutput_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

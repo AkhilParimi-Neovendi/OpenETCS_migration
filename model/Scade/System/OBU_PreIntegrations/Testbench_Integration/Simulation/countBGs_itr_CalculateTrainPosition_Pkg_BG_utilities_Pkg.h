@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:58
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 #ifndef _countBGs_itr_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_
 #define _countBGs_itr_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_
@@ -24,9 +24,9 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   positionedBG_T_TrainPosition_Types_Pck /* _L1/ */ _L1;
   kcg_bool /* _L2/ */ _L2;
-  kcg_int64 /* _L8/ */ _L8;
-  kcg_int64 /* _L7/ */ _L7;
-  kcg_int64 /* _L6/ */ _L6;
+  kcg_int32 /* _L8/ */ _L8;
+  kcg_int32 /* _L7/ */ _L7;
+  kcg_int32 /* _L6/ */ _L6;
   BG_counters_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg /* _L9/ */ _L9;
   BG_counters_T_CalculateTrainPosition_Pkg_BG_utilities_Pkg /* _L10/ */ _L10;
   Q_LINK /* _L11/ */ _L11;
@@ -34,27 +34,27 @@ typedef struct {
   kcg_bool /* _L13/ */ _L13;
   kcg_bool /* _L14/ */ _L14;
   kcg_bool /* _L15/ */ _L15;
-  kcg_int64 /* _L17/ */ _L17;
-  kcg_int64 /* _L18/ */ _L18;
-  kcg_int64 /* _L19/ */ _L19;
-  kcg_int64 /* _L22/ */ _L22;
-  kcg_int64 /* _L21/ */ _L21;
-  kcg_int64 /* _L20/ */ _L20;
-  kcg_int64 /* _L25/ */ _L25;
-  kcg_int64 /* _L24/ */ _L24;
-  kcg_int64 /* _L23/ */ _L23;
-  kcg_int64 /* _L29/ */ _L29;
-  kcg_int64 /* _L30/ */ _L30;
-  kcg_int64 /* _L31/ */ _L31;
-  kcg_int64 /* _L33/ */ _L33;
-  kcg_int64 /* _L32/ */ _L32;
-  kcg_int64 /* _L35/ */ _L35;
-  kcg_int64 /* _L34/ */ _L34;
-  kcg_int64 /* _L37/ */ _L37;
-  kcg_int64 /* _L36/ */ _L36;
-  kcg_int64 /* _L40/ */ _L40;
-  kcg_int64 /* _L41/ */ _L41;
-  kcg_int64 /* _L42/ */ _L42;
+  kcg_int32 /* _L17/ */ _L17;
+  kcg_int32 /* _L18/ */ _L18;
+  kcg_int32 /* _L19/ */ _L19;
+  kcg_int32 /* _L22/ */ _L22;
+  kcg_int32 /* _L21/ */ _L21;
+  kcg_int32 /* _L20/ */ _L20;
+  kcg_int32 /* _L25/ */ _L25;
+  kcg_int32 /* _L24/ */ _L24;
+  kcg_int32 /* _L23/ */ _L23;
+  kcg_int32 /* _L29/ */ _L29;
+  kcg_int32 /* _L30/ */ _L30;
+  kcg_int32 /* _L31/ */ _L31;
+  kcg_int32 /* _L33/ */ _L33;
+  kcg_int32 /* _L32/ */ _L32;
+  kcg_int32 /* _L35/ */ _L35;
+  kcg_int32 /* _L34/ */ _L34;
+  kcg_int32 /* _L37/ */ _L37;
+  kcg_int32 /* _L36/ */ _L36;
+  kcg_int32 /* _L40/ */ _L40;
+  kcg_int32 /* _L41/ */ _L41;
+  kcg_int32 /* _L42/ */ _L42;
   positionedBG_T_TrainPosition_Types_Pck /* _L44/ */ _L44;
   kcg_bool /* _L43/ */ _L43;
   kcg_bool /* _L45/ */ _L45;
@@ -87,6 +87,6 @@ extern void countBGs_itr_init_CalculateTrainPosition_Pkg_BG_utilities_Pkg(
 #endif /* _countBGs_itr_CalculateTrainPosition_Pkg_BG_utilities_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** countBGs_itr_CalculateTrainPosition_Pkg_BG_utilities_Pkg.h
-** Generation date: 2023-10-12T15:09:58
+** Generation date: 2023-11-05T09:06:59
 *************************************************************$ */
 

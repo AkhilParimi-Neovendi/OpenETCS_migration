@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -19,7 +19,7 @@ void InflateABrakeRow_SDMConversionModelPkg(
 
   outC->_L7 = Akku;
   outC->_L1 = A;
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L4 = outC->_L1 > outC->_L5;
   /* _L6= */
   if (outC->_L4) {
@@ -48,19 +48,19 @@ void InflateABrakeRow_init_SDMConversionModelPkg(
   static kcg_size idx;
   static kcg_size idx1;
 
-  outC->_L7 = kcg_lit_int64(0);
-  outC->_L6 = kcg_lit_int64(0);
-  outC->_L5 = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(0);
+  outC->_L6 = kcg_lit_int32(0);
+  outC->_L5 = kcg_lit_int32(0);
   outC->_L4 = kcg_true;
   for (idx = 0; idx < 100; idx++) {
-    outC->_L3[idx] = kcg_lit_float64(0.0);
+    outC->_L3[idx] = kcg_lit_float32(0.0);
   }
-  outC->_L2 = kcg_lit_float64(0.0);
-  outC->_L1 = kcg_lit_int64(0);
+  outC->_L2 = kcg_lit_float32(0.0);
+  outC->_L1 = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 100; idx1++) {
-    outC->ASafeRow[idx1] = kcg_lit_float64(0.0);
+    outC->ASafeRow[idx1] = kcg_lit_float32(0.0);
   }
-  outC->Akku_out = kcg_lit_int64(0);
+  outC->Akku_out = kcg_lit_int32(0);
   /* _L2=(SDM_Types_Pkg::TransformA_intToA_real#1)/ */
   TransformA_intToA_real_init_SDM_Types_Pkg(
     &outC->Context_TransformA_intToA_real_1);
@@ -82,6 +82,6 @@ void InflateABrakeRow_reset_SDMConversionModelPkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** InflateABrakeRow_SDMConversionModelPkg.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

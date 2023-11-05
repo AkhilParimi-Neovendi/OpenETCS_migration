@@ -44,23 +44,23 @@ void C_int_to_DMI_Level_Data_init_DATA_Packets_Bothways(
   static kcg_size idx;
 
   outC->_L12.level = M_LEVEL_Level_0;
-  outC->_L12.nid_stm = kcg_lit_int64(0);
-  outC->_L10 = kcg_lit_int64(0);
+  outC->_L12.nid_stm = kcg_lit_int32(0);
+  outC->_L10 = kcg_lit_int32(0);
   outC->_L9 = kcg_true;
   for (idx = 0; idx < 4; idx++) {
-    outC->_L8[idx] = kcg_lit_int64(0);
+    outC->_L8[idx] = kcg_lit_int32(0);
   }
   outC->_L5.valid = kcg_true;
-  outC->_L5.systemTime = kcg_lit_int64(0);
+  outC->_L5.systemTime = kcg_lit_int32(0);
   outC->_L5.level.level = M_LEVEL_Level_0;
-  outC->_L5.level.nid_stm = kcg_lit_int64(0);
-  outC->_L2 = kcg_lit_int64(0);
-  outC->_L3 = kcg_lit_int64(0);
-  outC->_L4 = kcg_lit_int64(0);
+  outC->_L5.level.nid_stm = kcg_lit_int32(0);
+  outC->_L2 = kcg_lit_int32(0);
+  outC->_L3 = kcg_lit_int32(0);
+  outC->_L4 = kcg_lit_int32(0);
   outC->dmi_level_data_ct.valid = kcg_true;
-  outC->dmi_level_data_ct.systemTime = kcg_lit_int64(0);
+  outC->dmi_level_data_ct.systemTime = kcg_lit_int32(0);
   outC->dmi_level_data_ct.level.level = M_LEVEL_Level_0;
-  outC->dmi_level_data_ct.level.nid_stm = kcg_lit_int64(0);
+  outC->dmi_level_data_ct.level.nid_stm = kcg_lit_int32(0);
   /* _L9=(Utilities::Int_to_Bool#1)/ */
   Int_to_Bool_init_Utilities(&outC->Context_Int_to_Bool_1);
   /* _L12=(DATA::Variables::CAST_int_to_DMI_level#1)/ */

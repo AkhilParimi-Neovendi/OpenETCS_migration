@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _setNew_manage_TextMessages_Pkg_H_
 #define _setNew_manage_TextMessages_Pkg_H_
@@ -24,7 +24,7 @@ typedef struct {
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
   kcg_bool /* IfBlock1:then:_L5/ */ _L5_then_IfBlock1;
-  kcg_int64 /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
+  kcg_int32 /* IfBlock1:then:_L4/ */ _L4_then_IfBlock1;
   DMI_TXT_MSG_status_T_DMI_Types_Pkg /* IfBlock1:then:_L2/ */ _L2_then_IfBlock1;
   DMI_TXT_MSG_status_T_DMI_Types_Pkg /* IfBlock1:then:_L1/ */ _L1_then_IfBlock1;
   kcg_bool /* IfBlock1:else:_L2/ */ _L2_else_IfBlock1;
@@ -39,7 +39,7 @@ typedef struct {
 /* manage_TextMessages_Pkg::setNew/ */
 extern void setNew_manage_TextMessages_Pkg(
   /* indexMAPwi/ */
-  kcg_int64 indexMAPwi,
+  kcg_int32 indexMAPwi,
   /* fromStore/ */
   DMI_TXT_MSG_status_T_DMI_Types_Pkg *fromStore,
   /* actualTextMsg/ */
@@ -61,6 +61,6 @@ extern void setNew_init_manage_TextMessages_Pkg(
 #endif /* _setNew_manage_TextMessages_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** setNew_manage_TextMessages_Pkg.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

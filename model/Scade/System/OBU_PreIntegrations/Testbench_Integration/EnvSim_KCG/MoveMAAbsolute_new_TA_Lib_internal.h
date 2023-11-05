@@ -30,7 +30,7 @@ typedef struct {
   /* ------------------- (-debug) local variables -------------------- */
   MovementAuthoritySectionlist_t_TrackAtlasTypes /* _L4/ */ _L4;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L37/ */ _L37;
-  array_int64_10 /* _L40/ */ _L40;
+  array_int32_10 /* _L40/ */ _L40;
   MovementAuthoritySectionlist_t_TrackAtlasTypes /* _L72/ */ _L72;
   MovementAuthority_t_TrackAtlasTypes /* _L103/ */ _L103;
   MovementAuthority_t_TrackAtlasTypes /* _L101/ */ _L101;

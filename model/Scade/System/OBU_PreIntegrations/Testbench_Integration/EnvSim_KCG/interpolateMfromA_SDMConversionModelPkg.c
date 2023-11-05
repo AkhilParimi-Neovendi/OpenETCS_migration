@@ -77,23 +77,23 @@ void interpolateMfromA_init_SDMConversionModelPkg(
   outC_interpolateMfromA_SDMConversionModelPkg *outC)
 {
   outC->IfBlock1_clock = kcg_true;
-  outC->_L1_then_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L1_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L2_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L3_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L5_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L4_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L6_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L7_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L8_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L9_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L10_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L11_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L12_else_else_IfBlock1 = kcg_lit_int64(0);
-  outC->_L13_else_else_IfBlock1 = kcg_lit_int64(0);
+  outC->_L1_then_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L1_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L2_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L3_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L5_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L4_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L6_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L7_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L8_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L9_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L10_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L11_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L12_else_else_IfBlock1 = kcg_lit_int32(0);
+  outC->_L13_else_else_IfBlock1 = kcg_lit_int32(0);
   outC->else_clock_IfBlock1 = kcg_true;
-  outC->_L1_then_IfBlock1 = kcg_lit_int64(0);
-  outC->m = kcg_lit_int64(0);
+  outC->_L1_then_IfBlock1 = kcg_lit_int32(0);
+  outC->m = kcg_lit_int32(0);
 }
 #endif /* KCG_USER_DEFINED_INIT */
 

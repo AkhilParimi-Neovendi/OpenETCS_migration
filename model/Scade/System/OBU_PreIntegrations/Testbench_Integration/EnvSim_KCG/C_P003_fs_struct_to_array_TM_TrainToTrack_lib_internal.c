@@ -26,9 +26,9 @@ void C_P003_fs_struct_to_array_TM_TrainToTrack_lib_internal(
 void C_P003_fs_struct_to_array_init_TM_TrainToTrack_lib_internal(
   outC_C_P003_fs_struct_to_array_TM_TrainToTrack_lib_internal *outC)
 {
-  outC->_L13 = kcg_lit_int64(0);
-  outC->_L1 = kcg_lit_int64(0);
-  outC->section_arrays = kcg_lit_int64(0);
+  outC->_L13 = kcg_lit_int32(0);
+  outC->_L1 = kcg_lit_int32(0);
+  outC->section_arrays = kcg_lit_int32(0);
   /* _L13=(TM_conversions::CAST_Int_to_NID_RADIO#1)/ */
   CAST_Int_to_NID_RADIO_init_TM_conversions(
     &outC->Context_CAST_Int_to_NID_RADIO_1);

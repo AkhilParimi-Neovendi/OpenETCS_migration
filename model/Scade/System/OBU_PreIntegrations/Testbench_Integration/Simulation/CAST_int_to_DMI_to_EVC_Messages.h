@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:09:56
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 #ifndef _CAST_int_to_DMI_to_EVC_Messages_H_
 #define _CAST_int_to_DMI_to_EVC_Messages_H_
@@ -59,21 +59,21 @@ typedef struct {
   DMI_Level_Data_T_DMI_Messages_Bothways_Pkg /* _L28/ */ _L28;
   DMI_to_EVC_Message_T_API_DMI_Pkg /* _L29/ */ _L29;
   DMI_to_EVC_Message_int_T_API_DMI_Pkg /* _L31/ */ _L31;
-  array_int64_4 /* _L33/ */ _L33;
-  array_int64_261 /* _L34/ */ _L34;
-  array_int64_3 /* _L36/ */ _L36;
-  array_int64_11 /* _L37/ */ _L37;
-  array_int64_3 /* _L38/ */ _L38;
-  array_int64_2 /* _L39/ */ _L39;
-  array_int64_4 /* _L40/ */ _L40;
-  array_int64_3 /* _L41/ */ _L41;
-  array_int64_9 /* _L42/ */ _L42;
-  array_int64_3 /* _L43/ */ _L43;
-  array_int64_3 /* _L44/ */ _L44;
-  array_int64_4 /* _L45/ */ _L45;
-  kcg_int64 /* _L49/ */ _L49;
+  array_int32_4 /* _L33/ */ _L33;
+  array_int32_261 /* _L34/ */ _L34;
+  array_int32_3 /* _L36/ */ _L36;
+  array_int32_11 /* _L37/ */ _L37;
+  array_int32_3 /* _L38/ */ _L38;
+  array_int32_2 /* _L39/ */ _L39;
+  array_int32_4 /* _L40/ */ _L40;
+  array_int32_3 /* _L41/ */ _L41;
+  array_int32_9 /* _L42/ */ _L42;
+  array_int32_3 /* _L43/ */ _L43;
+  array_int32_3 /* _L44/ */ _L44;
+  array_int32_4 /* _L45/ */ _L45;
+  kcg_int32 /* _L49/ */ _L49;
   kcg_bool /* _L48/ */ _L48;
-  kcg_int64 /* _L47/ */ _L47;
+  kcg_int32 /* _L47/ */ _L47;
 } outC_CAST_int_to_DMI_to_EVC_Messages;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -98,6 +98,6 @@ extern void CAST_int_to_DMI_to_EVC_init_Messages(
 #endif /* _CAST_int_to_DMI_to_EVC_Messages_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** CAST_int_to_DMI_to_EVC_Messages.h
-** Generation date: 2023-10-12T15:09:56
+** Generation date: 2023-11-05T09:06:57
 *************************************************************$ */
 

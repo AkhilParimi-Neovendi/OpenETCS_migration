@@ -2,22 +2,26 @@
 [STUDIO\TOOLS\CONFIGURATIONS\Code Generator]
 
 "C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\Radio\\MoRC\\MoRC.etp"="Simulation" 
+"C:\\DBC\\OpenETCS\\test\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\Radio\\MoRC\\MoRC.etp"="KCG" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Metrics and Rules Checker]
 
 "C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\Radio\\MoRC\\MoRC.etp"="KCG" 
+"C:\\DBC\\OpenETCS\\test\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\Radio\\MoRC\\MoRC.etp"="KCG" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Reporter]
 
 "C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\Radio\\MoRC\\MoRC.etp"="HTML" 
+"C:\\DBC\\OpenETCS\\test\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\Radio\\MoRC\\MoRC.etp"="HTML" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Timing and Stack Analysis Tools]
 
 "C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\Radio\\MoRC\\MoRC.etp"="KCG" 
+"C:\\DBC\\OpenETCS\\test\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\Radio\\MoRC\\MoRC.etp"="KCG" 
 
 [STUDIO\Workspace]
 
-"ActiveProject"="C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\Radio\\MoRC\\MoRC.etp" 
+"ActiveProject"="C:\\DBC\\OpenETCS\\test\\modeling-Scade65Migration\\model\\Scade\\System\\ObuFunctions\\Radio\\MoRC\\MoRC.etp" 
 
 [SCADE\Editor\Shortcut]
 

@@ -582,9 +582,9 @@ const MappingScope scope_249 = {
 };
 
 const MappingEntry scope_248_entries[3] = {
-    /* 0 */ { MAP_OUTPUT, "Output1", NULL, sizeof(kcg_int64), offsetof(outC_CAST_Int_to_NID_RADIO_TM_conversions, Output1_NumericToInt64_1_int32), &_Type_kcg_int64_Utils, NULL, NULL, NULL, 1, 0 },
+    /* 0 */ { MAP_OUTPUT, "Output1", NULL, sizeof(kcg_int32), offsetof(outC_CAST_Int_to_NID_RADIO_TM_conversions, Output1_NumericToInt64_1_int32), &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 0 },
     /* 1 */ { MAP_LOCAL, "_L1", NULL, sizeof(kcg_int32), offsetof(outC_CAST_Int_to_NID_RADIO_TM_conversions, _L1_NumericToInt64_1_int32), &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 1 },
-    /* 2 */ { MAP_LOCAL, "_L2", NULL, sizeof(kcg_int64), offsetof(outC_CAST_Int_to_NID_RADIO_TM_conversions, _L2_NumericToInt64_1_int32), &_Type_kcg_int64_Utils, NULL, NULL, NULL, 1, 2 }
+    /* 2 */ { MAP_LOCAL, "_L2", NULL, sizeof(kcg_int32), offsetof(outC_CAST_Int_to_NID_RADIO_TM_conversions, _L2_NumericToInt64_1_int32), &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 2 }
 };
 const MappingScope scope_248 = {
     "TM_conversions::CAST_Int_to_NID_RADIO/ CAST_Int_to_NID_RADIO_TM_conversions/math::NumericToInt64 1",
@@ -598,7 +598,7 @@ const MappingEntry scope_247_entries[8] = {
     /* 3 */ { MAP_LOCAL, "_L4", NULL, sizeof(kcg_bool), offsetof(outC_CAST_Int_to_NID_RADIO_TM_conversions, _L4), &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 3 },
     /* 4 */ { MAP_LOCAL, "_L3", NULL, sizeof(kcg_int32), offsetof(outC_CAST_Int_to_NID_RADIO_TM_conversions, _L3), &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 4 },
     /* 5 */ { MAP_LOCAL, "_L2", NULL, sizeof(kcg_bool), offsetof(outC_CAST_Int_to_NID_RADIO_TM_conversions, _L2), &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 5 },
-    /* 6 */ { MAP_LOCAL, "_L6", NULL, sizeof(kcg_int64), offsetof(outC_CAST_Int_to_NID_RADIO_TM_conversions, _L6), &_Type_kcg_int64_Utils, NULL, NULL, NULL, 1, 6 },
+    /* 6 */ { MAP_LOCAL, "_L6", NULL, sizeof(kcg_int32), offsetof(outC_CAST_Int_to_NID_RADIO_TM_conversions, _L6), &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 6 },
     /* 7 */ { MAP_EXPANDED, "math::NumericToInt64 1", NULL, 0, 0, NULL, NULL, NULL, &scope_248, 1, 7 }
 };
 const MappingScope scope_247 = {
@@ -3504,9 +3504,9 @@ const MappingScope scope_56 = {
 };
 
 const MappingEntry scope_55_entries[3] = {
-    /* 0 */ { MAP_OUTPUT, "Output1", NULL, sizeof(kcg_int64), offsetof(outC_initiateSession_v2_MoRC_Pck_Subfunc_Pkg, Output1_NumericToInt64_1_int32), &_Type_kcg_int64_Utils, &scope_53_entries[0], isActive_kcg_bool_kcg_false, NULL, 1, 0 },
+    /* 0 */ { MAP_OUTPUT, "Output1", NULL, sizeof(kcg_int32), offsetof(outC_initiateSession_v2_MoRC_Pck_Subfunc_Pkg, Output1_NumericToInt64_1_int32), &_Type_kcg_int32_Utils, &scope_53_entries[0], isActive_kcg_bool_kcg_false, NULL, 1, 0 },
     /* 1 */ { MAP_LOCAL, "_L1", NULL, sizeof(kcg_int32), offsetof(outC_initiateSession_v2_MoRC_Pck_Subfunc_Pkg, _L1_NumericToInt64_1_int32), &_Type_kcg_int32_Utils, &scope_53_entries[0], isActive_kcg_bool_kcg_false, NULL, 1, 1 },
-    /* 2 */ { MAP_LOCAL, "_L2", NULL, sizeof(kcg_int64), offsetof(outC_initiateSession_v2_MoRC_Pck_Subfunc_Pkg, _L2_NumericToInt64_1_int32), &_Type_kcg_int64_Utils, &scope_53_entries[0], isActive_kcg_bool_kcg_false, NULL, 1, 2 }
+    /* 2 */ { MAP_LOCAL, "_L2", NULL, sizeof(kcg_int32), offsetof(outC_initiateSession_v2_MoRC_Pck_Subfunc_Pkg, _L2_NumericToInt64_1_int32), &_Type_kcg_int32_Utils, &scope_53_entries[0], isActive_kcg_bool_kcg_false, NULL, 1, 2 }
 };
 const MappingScope scope_55 = {
     "MoRC_Pck::Subfunc_Pkg::initiateSession_v2/ initiateSession_v2_MoRC_Pck_Subfunc_PkgIfBlock1:else:else:else:/math::NumericToInt64 1",
@@ -3517,7 +3517,7 @@ const MappingEntry scope_54_entries[5] = {
     /* 0 */ { MAP_LOCAL, "_L1", NULL, sizeof(kcg_bool), offsetof(outC_initiateSession_v2_MoRC_Pck_Subfunc_Pkg, _L1_else_else_else_IfBlock1), &_Type_kcg_bool_Utils, &scope_53_entries[0], isActive_kcg_bool_kcg_false, NULL, 1, 0 },
     /* 1 */ { MAP_LOCAL, "_L6", NULL, sizeof(RBC_Id_T_Common_Types_Pkg), offsetof(outC_initiateSession_v2_MoRC_Pck_Subfunc_Pkg, _L6_else_else_else_IfBlock1), &_Type_RBC_Id_T_Common_Types_Pkg_Utils, &scope_53_entries[0], isActive_kcg_bool_kcg_false, &scope_41, 1, 1 },
     /* 2 */ { MAP_LOCAL, "_L7", NULL, sizeof(kcg_int32), offsetof(outC_initiateSession_v2_MoRC_Pck_Subfunc_Pkg, _L7_else_else_else_IfBlock1), &_Type_kcg_int32_Utils, &scope_53_entries[0], isActive_kcg_bool_kcg_false, NULL, 1, 2 },
-    /* 3 */ { MAP_LOCAL, "_L8", NULL, sizeof(kcg_int64), offsetof(outC_initiateSession_v2_MoRC_Pck_Subfunc_Pkg, _L8_else_else_else_IfBlock1), &_Type_kcg_int64_Utils, &scope_53_entries[0], isActive_kcg_bool_kcg_false, NULL, 1, 3 },
+    /* 3 */ { MAP_LOCAL, "_L8", NULL, sizeof(kcg_int32), offsetof(outC_initiateSession_v2_MoRC_Pck_Subfunc_Pkg, _L8_else_else_else_IfBlock1), &_Type_kcg_int32_Utils, &scope_53_entries[0], isActive_kcg_bool_kcg_false, NULL, 1, 3 },
     /* 4 */ { MAP_EXPANDED, "math::NumericToInt64 1", NULL, 0, 0, NULL, NULL, NULL, &scope_55, 1, 4 }
 };
 const MappingScope scope_54 = {

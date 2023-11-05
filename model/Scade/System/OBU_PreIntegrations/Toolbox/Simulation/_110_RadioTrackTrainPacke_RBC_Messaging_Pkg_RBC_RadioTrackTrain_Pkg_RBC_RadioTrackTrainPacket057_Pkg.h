@@ -26,7 +26,7 @@ typedef struct {
   P057_trackside_int_T_TM /* _L1/ */ _L1;
   Q_DIR /* _L2/ */ _L2;
   P057_trackside_int_T_TM /* _L3/ */ _L3;
-  kcg_int64 /* _L4/ */ _L4;
+  kcg_int32 /* _L4/ */ _L4;
 } outC__110_RadioTrackTrainPacke_RBC_Messaging_Pkg_RBC_RadioTrackTrain_Pkg_RBC_RadioTrackTrainPacket057_Pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

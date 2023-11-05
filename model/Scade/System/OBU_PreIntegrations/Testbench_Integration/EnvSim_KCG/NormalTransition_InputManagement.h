@@ -53,7 +53,7 @@ typedef struct {
   T_LevelTansitionInfo_Level_And_Mode_Types_Pkg /* _L29/ */ _L29;
   kcg_bool /* _L30/ */ _L30;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L32/ */ _L32;
-  kcg_int64 /* _L33/ */ _L33;
+  kcg_int32 /* _L33/ */ _L33;
   L_internal_Type_Obu_BasicTypes_Pkg /* _L34/ */ _L34;
 } outC_NormalTransition_InputManagement;
 

@@ -26,7 +26,7 @@ typedef struct {
   M_129_T_TM_radio_messages /* _L17/ */ _L17;
   kcg_bool /* _L18/ */ _L18;
   NID_MESSAGE /* _L19/ */ _L19;
-  kcg_int64 /* _L20/ */ _L20;
+  kcg_int32 /* _L20/ */ _L20;
 } outC_headerMsg129_ng_trainData_pkg;
 
 /* ===========  node initialization and cycle functions  =========== */

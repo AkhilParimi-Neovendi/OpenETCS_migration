@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 #ifndef _LevelListAdapter_DMI_Control_Pkg_Utils_H_
 #define _LevelListAdapter_DMI_Control_Pkg_Utils_H_
@@ -15,7 +15,7 @@
 /* ========================  context type  ========================= */
 typedef struct {
   /* ---------------------------  outputs  --------------------------- */
-  array_int64_12 /* ArrayLevelIndex_toDisplay/ */ ArrayLevelIndex_toDisplay;
+  array_int32_12 /* ArrayLevelIndex_toDisplay/ */ ArrayLevelIndex_toDisplay;
   /* -----------------------  no local probes  ----------------------- */
   /* -----------------------  no local memory  ----------------------- */
   /* ---------------------  sub nodes' contexts  --------------------- */
@@ -26,16 +26,16 @@ typedef struct {
   DMI_EVC_Level_Data_T_DMI_Messages_EVC_to_DMI_Pkg /* _L1/ */ _L1;
   kcg_bool /* _L4/ */ _L4;
   DMI_LevelList_T_DMI_Types_Pkg /* _L7/ */ _L7;
-  kcg_int64 /* _L8/ */ _L8;
-  array_int64_32 /* _L9/ */ _L9;
+  kcg_int32 /* _L8/ */ _L8;
+  array_int32_32 /* _L9/ */ _L9;
   DMI_level_array_T_DMI_Types_Pkg /* _L15/ */ _L15;
-  kcg_int64 /* _L16/ */ _L16;
+  kcg_int32 /* _L16/ */ _L16;
   kcg_bool /* _L17/ */ _L17;
-  kcg_int64 /* _L18/ */ _L18;
+  kcg_int32 /* _L18/ */ _L18;
   kcg_bool /* _L19/ */ _L19;
-  array_int64_12 /* _L21/ */ _L21;
-  array_int64_32 /* _L24/ */ _L24;
-  kcg_int64 /* _L25/ */ _L25;
+  array_int32_12 /* _L21/ */ _L21;
+  array_int32_32 /* _L24/ */ _L24;
+  kcg_int32 /* _L25/ */ _L25;
 } outC_LevelListAdapter_DMI_Control_Pkg_Utils;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -60,6 +60,6 @@ extern void LevelListAdapter_init_DMI_Control_Pkg_Utils(
 #endif /* _LevelListAdapter_DMI_Control_Pkg_Utils_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** LevelListAdapter_DMI_Control_Pkg_Utils.h
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:00
 *************************************************************$ */
 

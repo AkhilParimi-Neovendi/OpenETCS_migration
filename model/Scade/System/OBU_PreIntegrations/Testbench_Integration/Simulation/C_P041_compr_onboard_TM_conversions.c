@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
-** Command: kcg662.exe -config C:/DBC/OpenETCS/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
-** Generation date: 2023-10-12T15:10:00
+** Command: kcg662.exe -config C:/DBC/OpenETCS/test/modeling-Scade65Migration/model/Scade/System/OBU_PreIntegrations/Testbench_Integration/Simulation/config.txt
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -158,14 +158,14 @@ void C_P041_compr_onboard_TM_conversions(
     }
     outC->q_scale_CAST_Int_to_Q_SCALE_1 = _8_q_scale_partial_CAST_Int_to_Q_SCALE_1;
   }
-  outC->_L11_CAST_Int_to_N_ITER_1 = kcg_lit_int64(0);
+  outC->_L11_CAST_Int_to_N_ITER_1 = kcg_lit_int32(0);
   outC->_L17 = outC->_L9[5];
   outC->n_iter_int_CAST_Int_to_N_ITER_1 = outC->_L17;
   outC->_L1_CAST_Int_to_N_ITER_1 = outC->n_iter_int_CAST_Int_to_N_ITER_1;
   outC->_L10_CAST_Int_to_N_ITER_1 = outC->_L1_CAST_Int_to_N_ITER_1 <
     outC->_L11_CAST_Int_to_N_ITER_1;
   noname_CAST_Int_to_N_ITER_1 = outC->_L10_CAST_Int_to_N_ITER_1;
-  outC->_L9_CAST_Int_to_N_ITER_1 = kcg_lit_int64(31);
+  outC->_L9_CAST_Int_to_N_ITER_1 = kcg_lit_int32(31);
   outC->_L12_CAST_Int_to_N_ITER_1 = outC->_L1_CAST_Int_to_N_ITER_1 >
     outC->_L9_CAST_Int_to_N_ITER_1;
   _11_noname_CAST_Int_to_N_ITER_1 = outC->_L12_CAST_Int_to_N_ITER_1;
@@ -236,14 +236,14 @@ void C_P041_compr_onboard_TM_conversions(
   }
   outC->_L13_CAST_Int_to_Q_DIR_1 = outC->error_CAST_Int_to_Q_DIR_1;
   noname_CAST_Int_to_Q_DIR_1 = outC->_L13_CAST_Int_to_Q_DIR_1;
-  outC->_L5_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
+  outC->_L5_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
   outC->_L18 = outC->_L9[0];
   outC->nid_packet_int_CAST_Int_to_NID_PACKET_1 = outC->_L18;
   outC->_L1_CAST_Int_to_NID_PACKET_1 =
     outC->nid_packet_int_CAST_Int_to_NID_PACKET_1;
   outC->_L4_CAST_Int_to_NID_PACKET_1 = outC->_L1_CAST_Int_to_NID_PACKET_1 <
     outC->_L5_CAST_Int_to_NID_PACKET_1;
-  outC->_L3_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(256);
+  outC->_L3_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(256);
   outC->_L2_CAST_Int_to_NID_PACKET_1 = outC->_L1_CAST_Int_to_NID_PACKET_1 >
     outC->_L3_CAST_Int_to_NID_PACKET_1;
   noname_CAST_Int_to_NID_PACKET_1 = outC->_L2_CAST_Int_to_NID_PACKET_1;
@@ -255,12 +255,12 @@ void C_P041_compr_onboard_TM_conversions(
     outC->_L27,
     &outC->Context_CAST_Int_to_D_LEVELTR_1);
   outC->_L28 = outC->Context_CAST_Int_to_D_LEVELTR_1.d_leveltr;
-  outC->_L21 = kcg_lit_int64(41);
+  outC->_L21 = kcg_lit_int32(41);
   outC->_L12 = outC->nid_packet_CAST_Int_to_NID_PACKET_1;
   outC->_L22 = outC->_L12 == outC->_L21;
   kcg_copy_MetadataElement_T_Common_Types_Pkg(&outC->_L20, Metadata_Element);
   kcg_copy_MetadataElement_T_Common_Types_Pkg(&noname, &outC->_L20);
-  kcg_copy_array_int64_99(&outC->_L13, (array_int64_99 *) &outC->_L9[6]);
+  kcg_copy_array_int32_99(&outC->_L13, (array_int32_99 *) &outC->_L9[6]);
   outC->_L11 = outC->q_dir_CAST_Int_to_Q_DIR_1;
   outC->_L4 = outC->q_scale_CAST_Int_to_Q_SCALE_1;
   outC->_L7 = outC->n_iter_CAST_Int_to_N_ITER_1;
@@ -292,53 +292,53 @@ void C_P041_compr_onboard_init_TM_conversions(
   static kcg_size idx3;
   static kcg_size idx4;
 
-  outC->_L28 = kcg_lit_int64(0);
-  outC->_L27 = kcg_lit_int64(0);
-  outC->_L26 = kcg_lit_int64(0);
-  outC->_L25 = kcg_lit_int64(0);
+  outC->_L28 = kcg_lit_int32(0);
+  outC->_L27 = kcg_lit_int32(0);
+  outC->_L26 = kcg_lit_int32(0);
+  outC->_L25 = kcg_lit_int32(0);
   outC->_L22 = kcg_true;
-  outC->_L21 = kcg_lit_int64(0);
-  outC->_L20.nid_packet = kcg_lit_int64(0);
+  outC->_L21 = kcg_lit_int32(0);
+  outC->_L20.nid_packet = kcg_lit_int32(0);
   outC->_L20.q_dir = Q_DIR_Reverse;
   outC->_L20.valid = kcg_true;
-  outC->_L20.startAddress = kcg_lit_int64(0);
-  outC->_L20.endAddress = kcg_lit_int64(0);
-  outC->_L18 = kcg_lit_int64(0);
-  outC->_L17 = kcg_lit_int64(0);
+  outC->_L20.startAddress = kcg_lit_int32(0);
+  outC->_L20.endAddress = kcg_lit_int32(0);
+  outC->_L18 = kcg_lit_int32(0);
+  outC->_L17 = kcg_lit_int32(0);
   outC->_L4 = Q_SCALE_10_cm_scale;
   for (idx = 0; idx < 33; idx++) {
     outC->_L5[idx].valid = kcg_true;
     outC->_L5[idx].m_leveltr = M_LEVELTR_Level_0;
-    outC->_L5[idx].nid_ntc = kcg_lit_int64(0);
-    outC->_L5[idx].l_ackleveltr = kcg_lit_int64(0);
+    outC->_L5[idx].nid_ntc = kcg_lit_int32(0);
+    outC->_L5[idx].l_ackleveltr = kcg_lit_int32(0);
   }
-  outC->_L7 = kcg_lit_int64(0);
+  outC->_L7 = kcg_lit_int32(0);
   for (idx1 = 0; idx1 < 500; idx1++) {
-    outC->_L9[idx1] = kcg_lit_int64(0);
+    outC->_L9[idx1] = kcg_lit_int32(0);
   }
   outC->_L10.valid = kcg_true;
   outC->_L10.q_dir = Q_DIR_Reverse;
   outC->_L10.q_scale = Q_SCALE_10_cm_scale;
-  outC->_L10.d_leveltr = kcg_lit_int64(0);
-  outC->_L10.n_iter = kcg_lit_int64(0);
+  outC->_L10.d_leveltr = kcg_lit_int32(0);
+  outC->_L10.n_iter = kcg_lit_int32(0);
   for (idx2 = 0; idx2 < 33; idx2++) {
     outC->_L10.sections[idx2].valid = kcg_true;
     outC->_L10.sections[idx2].m_leveltr = M_LEVELTR_Level_0;
-    outC->_L10.sections[idx2].nid_ntc = kcg_lit_int64(0);
-    outC->_L10.sections[idx2].l_ackleveltr = kcg_lit_int64(0);
+    outC->_L10.sections[idx2].nid_ntc = kcg_lit_int32(0);
+    outC->_L10.sections[idx2].l_ackleveltr = kcg_lit_int32(0);
   }
   outC->_L11 = Q_DIR_Reverse;
-  outC->_L12 = kcg_lit_int64(0);
+  outC->_L12 = kcg_lit_int32(0);
   for (idx3 = 0; idx3 < 99; idx3++) {
-    outC->_L13[idx3] = kcg_lit_int64(0);
+    outC->_L13[idx3] = kcg_lit_int32(0);
   }
-  outC->_L1_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
-  outC->_L5_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
+  outC->_L1_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
+  outC->_L5_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
   outC->_L4_CAST_Int_to_NID_PACKET_1 = kcg_true;
-  outC->_L3_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
+  outC->_L3_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
   outC->_L2_CAST_Int_to_NID_PACKET_1 = kcg_true;
-  outC->nid_packet_int_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
-  outC->nid_packet_CAST_Int_to_NID_PACKET_1 = kcg_lit_int64(0);
+  outC->nid_packet_int_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
+  outC->nid_packet_CAST_Int_to_NID_PACKET_1 = kcg_lit_int32(0);
   outC->_L5_CAST_Int_to_Q_DIR_1_then_IfBlock1 = kcg_true;
   outC->_L4_CAST_Int_to_Q_DIR_1_then_IfBlock1 = Q_DIR_Reverse;
   outC->else_clock_CAST_Int_to_Q_DIR_1_IfBlock1 = kcg_true;
@@ -351,18 +351,18 @@ void C_P041_compr_onboard_init_TM_conversions(
   outC->_L5_CAST_Int_to_Q_DIR_1_then_else_IfBlock1 = kcg_true;
   outC->IfBlock1_clock_CAST_Int_to_Q_DIR_1 = kcg_true;
   outC->error_CAST_Int_to_Q_DIR_1 = kcg_true;
-  outC->q_dir_in_CAST_Int_to_Q_DIR_1 = kcg_lit_int64(0);
+  outC->q_dir_in_CAST_Int_to_Q_DIR_1 = kcg_lit_int32(0);
   outC->_L13_CAST_Int_to_Q_DIR_1 = kcg_true;
-  outC->_L12_CAST_Int_to_Q_DIR_1 = kcg_lit_int64(0);
-  outC->q_dir_int_CAST_Int_to_Q_DIR_1 = kcg_lit_int64(0);
+  outC->_L12_CAST_Int_to_Q_DIR_1 = kcg_lit_int32(0);
+  outC->q_dir_int_CAST_Int_to_Q_DIR_1 = kcg_lit_int32(0);
   outC->q_dir_CAST_Int_to_Q_DIR_1 = Q_DIR_Reverse;
-  outC->_L1_CAST_Int_to_N_ITER_1 = kcg_lit_int64(0);
+  outC->_L1_CAST_Int_to_N_ITER_1 = kcg_lit_int32(0);
   outC->_L12_CAST_Int_to_N_ITER_1 = kcg_true;
-  outC->_L11_CAST_Int_to_N_ITER_1 = kcg_lit_int64(0);
+  outC->_L11_CAST_Int_to_N_ITER_1 = kcg_lit_int32(0);
   outC->_L10_CAST_Int_to_N_ITER_1 = kcg_true;
-  outC->_L9_CAST_Int_to_N_ITER_1 = kcg_lit_int64(0);
-  outC->n_iter_int_CAST_Int_to_N_ITER_1 = kcg_lit_int64(0);
-  outC->n_iter_CAST_Int_to_N_ITER_1 = kcg_lit_int64(0);
+  outC->_L9_CAST_Int_to_N_ITER_1 = kcg_lit_int32(0);
+  outC->n_iter_int_CAST_Int_to_N_ITER_1 = kcg_lit_int32(0);
+  outC->n_iter_CAST_Int_to_N_ITER_1 = kcg_lit_int32(0);
   outC->_L3_CAST_Int_to_Q_SCALE_1_then_IfBlock1 = kcg_true;
   outC->_L2_CAST_Int_to_Q_SCALE_1_then_IfBlock1 = Q_SCALE_10_cm_scale;
   outC->else_clock_CAST_Int_to_Q_SCALE_1_IfBlock1 = kcg_true;
@@ -374,22 +374,22 @@ void C_P041_compr_onboard_init_TM_conversions(
   outC->_L1_CAST_Int_to_Q_SCALE_1_then_else_IfBlock1 = Q_SCALE_10_cm_scale;
   outC->_L3_CAST_Int_to_Q_SCALE_1_then_else_IfBlock1 = kcg_true;
   outC->IfBlock1_clock_CAST_Int_to_Q_SCALE_1 = kcg_true;
-  outC->q_scale_in_CAST_Int_to_Q_SCALE_1 = kcg_lit_int64(0);
+  outC->q_scale_in_CAST_Int_to_Q_SCALE_1 = kcg_lit_int32(0);
   outC->error_CAST_Int_to_Q_SCALE_1 = kcg_true;
-  outC->_L2_CAST_Int_to_Q_SCALE_1 = kcg_lit_int64(0);
+  outC->_L2_CAST_Int_to_Q_SCALE_1 = kcg_lit_int32(0);
   outC->_L4_CAST_Int_to_Q_SCALE_1 = kcg_true;
-  outC->q_scale_int_CAST_Int_to_Q_SCALE_1 = kcg_lit_int64(0);
+  outC->q_scale_int_CAST_Int_to_Q_SCALE_1 = kcg_lit_int32(0);
   outC->q_scale_CAST_Int_to_Q_SCALE_1 = Q_SCALE_10_cm_scale;
   outC->P041_onboard.valid = kcg_true;
   outC->P041_onboard.q_dir = Q_DIR_Reverse;
   outC->P041_onboard.q_scale = Q_SCALE_10_cm_scale;
-  outC->P041_onboard.d_leveltr = kcg_lit_int64(0);
-  outC->P041_onboard.n_iter = kcg_lit_int64(0);
+  outC->P041_onboard.d_leveltr = kcg_lit_int32(0);
+  outC->P041_onboard.n_iter = kcg_lit_int32(0);
   for (idx4 = 0; idx4 < 33; idx4++) {
     outC->P041_onboard.sections[idx4].valid = kcg_true;
     outC->P041_onboard.sections[idx4].m_leveltr = M_LEVELTR_Level_0;
-    outC->P041_onboard.sections[idx4].nid_ntc = kcg_lit_int64(0);
-    outC->P041_onboard.sections[idx4].l_ackleveltr = kcg_lit_int64(0);
+    outC->P041_onboard.sections[idx4].nid_ntc = kcg_lit_int32(0);
+    outC->P041_onboard.sections[idx4].l_ackleveltr = kcg_lit_int32(0);
   }
   /* _L5=(TM_lib_internal::C_P041_unflatten_sections#1)/ */
   C_P041_unflatten_sections_init_TM_lib_internal(
@@ -422,6 +422,6 @@ void C_P041_compr_onboard_reset_TM_conversions(
 
 /* $********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
 ** C_P041_compr_onboard_TM_conversions.c
-** Generation date: 2023-10-12T15:10:00
+** Generation date: 2023-11-05T09:07:01
 *************************************************************$ */
 

@@ -609,7 +609,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -635,7 +635,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -647,7 +647,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -659,7 +659,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -744,16 +744,16 @@
 								<ed:Equation oid="!ed/42df/1017/1980/53c8e7f15a97"/>
 							</pragmas>
 						</Equation>
-						<!-- _L3 = (1 : int64); -->
+						<!-- _L3 = (1 : int32); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L3"/>
 							</lefts>
 							<right>
-								<!-- (1 : int64) -->
+								<!-- (1 : int32) -->
 								<NumericCastOp name="1">
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 									<flow>
 										<ConstValue value="1"/>
@@ -764,16 +764,16 @@
 								<ed:Equation oid="!ed/42e0/1017/1980/53c8e7f13587"/>
 							</pragmas>
 						</Equation>
-						<!-- _L4 = (0 : int64); -->
+						<!-- _L4 = (0 : int32); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L4"/>
 							</lefts>
 							<right>
-								<!-- (0 : int64) -->
+								<!-- (0 : int32) -->
 								<NumericCastOp name="2">
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 									<flow>
 										<ConstValue value="0"/>
@@ -1155,7 +1155,7 @@
 						</kcg:Pragma>
 					</pragmas>
 				</Operator>
-				<Operator kind="function" name="BoolToUint64">
+				<Operator kind="function" name="BoolToUint32">
 					<inputs>
 						<Variable name="BTI_Input">
 							<type>
@@ -1175,7 +1175,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="uint64"/>
+										<TypeRef name="uint32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1201,7 +1201,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="uint64"/>
+										<TypeRef name="uint32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1213,7 +1213,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="uint64"/>
+										<TypeRef name="uint32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1225,7 +1225,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="uint64"/>
+										<TypeRef name="uint32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1310,16 +1310,16 @@
 								<ed:Equation oid="!ed/43f3/1017/1980/53c8e82966d4"/>
 							</pragmas>
 						</Equation>
-						<!-- _L3 = (1 : uint64); -->
+						<!-- _L3 = (1 : uint32); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L3"/>
 							</lefts>
 							<right>
-								<!-- (1 : uint64) -->
+								<!-- (1 : uint32) -->
 								<NumericCastOp name="4">
 									<type>
-										<TypeRef name="uint64"/>
+										<TypeRef name="uint32"/>
 									</type>
 									<flow>
 										<ConstValue value="1"/>
@@ -1330,16 +1330,16 @@
 								<ed:Equation oid="!ed/43f4/1017/1980/53c8e8294f8f"/>
 							</pragmas>
 						</Equation>
-						<!-- _L4 = (0 : uint64); -->
+						<!-- _L4 = (0 : uint32); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L4"/>
 							</lefts>
 							<right>
-								<!-- (0 : uint64) -->
+								<!-- (0 : uint32) -->
 								<NumericCastOp name="3">
 									<type>
-										<TypeRef name="uint64"/>
+										<TypeRef name="uint32"/>
 									</type>
 									<flow>
 										<ConstValue value="0"/>
@@ -1356,7 +1356,7 @@
 							<comment>Converts a Boolean value into an integer value. </comment>
 							<comment>When the input is true then the output is equal to 1, otherwise the output is equal to 0.</comment>
 							<diagrams>
-								<NetDiagram name="eq_BoolToUint64" landscape="false" format="A4 (210 297)" oid="!ed/43f6/1017/1980/53c8e82975ee">
+								<NetDiagram name="eq_BoolToUint32" landscape="false" format="A4 (210 297)" oid="!ed/43f6/1017/1980/53c8e82975ee">
 									<presentationElements>
 										<EquationGE presentable="!ed/43f1/1017/1980/53c8e829a6e">
 											<position>
@@ -2024,7 +2024,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="float64"/>
+										<TypeRef name="float32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -2038,7 +2038,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="float64"/>
+										<TypeRef name="float32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -2062,7 +2062,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="float64"/>
+										<TypeRef name="float32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -2074,7 +2074,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="float64"/>
+										<TypeRef name="float32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -2159,16 +2159,16 @@
 								<ed:Equation oid="!ed/447d/1017/1980/53c8e8382737"/>
 							</pragmas>
 						</Equation>
-						<!-- _L9 = (0.0 : float64); -->
+						<!-- _L9 = (0.0 : float32); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L9"/>
 							</lefts>
 							<right>
-								<!-- (0.0 : float64) -->
+								<!-- (0.0 : float32) -->
 								<NumericCastOp name="2">
 									<type>
-										<TypeRef name="float64"/>
+										<TypeRef name="float32"/>
 									</type>
 									<flow>
 										<ConstValue value="0.0"/>
@@ -2179,16 +2179,16 @@
 								<ed:Equation oid="!ed/447e/1017/1980/53c8e8382049"/>
 							</pragmas>
 						</Equation>
-						<!-- _L10 = (1.0 : float64); -->
+						<!-- _L10 = (1.0 : float32); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L10"/>
 							</lefts>
 							<right>
-								<!-- (1.0 : float64) -->
+								<!-- (1.0 : float32) -->
 								<NumericCastOp name="1">
 									<type>
-										<TypeRef name="float64"/>
+										<TypeRef name="float32"/>
 									</type>
 									<flow>
 										<ConstValue value="1.0"/>
@@ -2991,7 +2991,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -3024,7 +3024,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -3066,16 +3066,16 @@
 								<ed:Equation oid="!ed/1f98/796C/1D9C/547df3e57e4d"/>
 							</pragmas>
 						</Equation>
-						<!-- _L2 = (_L1 : int64); -->
+						<!-- _L2 = (_L1 : int32); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L2"/>
 							</lefts>
 							<right>
-								<!-- (_L1 : int64) -->
+								<!-- (_L1 : int32) -->
 								<NumericCastOp name="1">
 									<type>
-										<TypeRef name="int64"/>
+										<TypeRef name="int32"/>
 									</type>
 									<flow>
 										<IdExpression>
@@ -3484,7 +3484,7 @@
 						</ed:Operator>
 					</pragmas>
 				</Operator>
-				<Operator kind="function" name="NumericToUint64">
+				<Operator kind="function" name="NumericToUint32">
 					<inputs>
 						<Variable name="Input1">
 							<type>
@@ -3504,7 +3504,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="uint64"/>
+										<TypeRef name="uint32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -3537,7 +3537,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="uint64"/>
+										<TypeRef name="uint32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -3579,16 +3579,16 @@
 								<ed:Equation oid="!ed/1fe3/796C/1D9C/547df40b5dec"/>
 							</pragmas>
 						</Equation>
-						<!-- _L2 = (_L1 : uint64); -->
+						<!-- _L2 = (_L1 : uint32); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L2"/>
 							</lefts>
 							<right>
-								<!-- (_L1 : uint64) -->
+								<!-- (_L1 : uint32) -->
 								<NumericCastOp name="1">
 									<type>
-										<TypeRef name="uint64"/>
+										<TypeRef name="uint32"/>
 									</type>
 									<flow>
 										<IdExpression>
@@ -3607,7 +3607,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/1fe1/796C/1D9C/547df40baa0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
 							<diagrams>
-								<NetDiagram name="diagram_NumericToUint64_1" landscape="true" format="A4 (210 297)" oid="!ed/1fe5/796C/1D9C/547df40b4d7f">
+								<NetDiagram name="diagram_NumericToUint32_1" landscape="true" format="A4 (210 297)" oid="!ed/1fe5/796C/1D9C/547df40b4d7f">
 									<presentationElements>
 										<EquationGE presentable="!ed/1fe2/796C/1D9C/547df40b6cdd">
 											<position>
@@ -3675,7 +3675,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="float64"/>
+										<TypeRef name="float32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -3708,7 +3708,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="float64"/>
+										<TypeRef name="float32"/>
 									</type>
 								</NamedType>
 							</type>
@@ -3750,16 +3750,16 @@
 								<ed:Equation oid="!ed/1ffc/796C/1D9C/547df40b3862"/>
 							</pragmas>
 						</Equation>
-						<!-- _L2 = (_L1 : float64); -->
+						<!-- _L2 = (_L1 : float32); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L2"/>
 							</lefts>
 							<right>
-								<!-- (_L1 : float64) -->
+								<!-- (_L1 : float32) -->
 								<NumericCastOp name="1">
 									<type>
-										<TypeRef name="float64"/>
+										<TypeRef name="float32"/>
 									</type>
 									<flow>
 										<IdExpression>
