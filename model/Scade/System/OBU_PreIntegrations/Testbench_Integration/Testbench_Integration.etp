@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="686" defaultConfiguration="21">
+<Project id="1" oid_count="687" defaultConfiguration="21">
 	<props>
 		<Prop id="10" name="@STUDIO:PRODUCT">
 			<value>SC</value>
@@ -14995,6 +14995,10 @@
 		<Prop id="686" name="@GENERATOR:DEBUG">
 			<value>true</value>
 			<configuration>21</configuration>
+		</Prop>
+		<Prop id="687" name="@GENERATOR:DEBUG">
+			<value>true</value>
+			<configuration>650</configuration>
 		</Prop>
 	</props>
 	<roots>

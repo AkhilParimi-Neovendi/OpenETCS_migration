@@ -5,6 +5,7 @@
 "C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\openETCS_EVC\\openETCS_EVC.etp"="KCG" 
 "C:\\DBC\\OpenETCS\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\openETCS_EVC\\openETCS_EVC.etp"="KCG" 
 "C:\\DBC\\OpenETCS\\test\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\openETCS_EVC\\openETCS_EVC.etp"="KCG" 
+"C:\\DBC\\OpenETCS\\ScadeMigration\\model\\Scade\\System\\OBU_PreIntegrations\\openETCS_EVC\\openETCS_EVC.etp"="Simulation" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Metrics and Rules Checker]
 
@@ -12,6 +13,7 @@
 "C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\openETCS_EVC\\openETCS_EVC.etp"="KCG" 
 "C:\\DBC\\OpenETCS\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\openETCS_EVC\\openETCS_EVC.etp"="KCG" 
 "C:\\DBC\\OpenETCS\\test\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\openETCS_EVC\\openETCS_EVC.etp"="KCG" 
+"C:\\DBC\\OpenETCS\\ScadeMigration\\model\\Scade\\System\\OBU_PreIntegrations\\openETCS_EVC\\openETCS_EVC.etp"="KCG" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Reporter]
 
@@ -19,6 +21,7 @@
 "C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\openETCS_EVC\\openETCS_EVC.etp"="HTML" 
 "C:\\DBC\\OpenETCS\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\openETCS_EVC\\openETCS_EVC.etp"="HTML" 
 "C:\\DBC\\OpenETCS\\test\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\openETCS_EVC\\openETCS_EVC.etp"="HTML" 
+"C:\\DBC\\OpenETCS\\ScadeMigration\\model\\Scade\\System\\OBU_PreIntegrations\\openETCS_EVC\\openETCS_EVC.etp"="HTML" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Timing and Stack Analysis Tools]
 
@@ -26,10 +29,11 @@
 "C:\\DBC\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\openETCS_EVC\\openETCS_EVC.etp"="KCG" 
 "C:\\DBC\\OpenETCS\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\openETCS_EVC\\openETCS_EVC.etp"="KCG" 
 "C:\\DBC\\OpenETCS\\test\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\openETCS_EVC\\openETCS_EVC.etp"="KCG" 
+"C:\\DBC\\OpenETCS\\ScadeMigration\\model\\Scade\\System\\OBU_PreIntegrations\\openETCS_EVC\\openETCS_EVC.etp"="KCG" 
 
 [STUDIO\Workspace]
 
-"ActiveProject"="C:\\DBC\\OpenETCS\\test\\modeling-Scade65Migration\\model\\Scade\\System\\OBU_PreIntegrations\\openETCS_EVC\\openETCS_EVC.etp" 
+"ActiveProject"="C:\\DBC\\OpenETCS\\ScadeMigration\\model\\Scade\\System\\OBU_PreIntegrations\\openETCS_EVC\\openETCS_EVC.etp" 
 
 [SCADE\Editor\Shortcut]
 

@@ -1,0 +1,584 @@
+$********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
+** Command: kcg662.exe -config C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/config.txt
+** Generation date: 2023-11-06T13:54:13
+*************************************************************$
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 62732, character 0
+  at path TrackAtlasTypes::MovementAuthoritySection_t/
+ Interface element MovementAuthoritySection_t_TrackAtlasTypes has been renamed
+ because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 375082, character 0
+  at path TM_baseline2::P027V1_OBU_sectionlist_enum_qdiff_T/
+ Interface element P027V1_OBU_sectionlist_enum_qdiff_T_TM_baseline2 has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 54554, character 0
+  at path DMI_Messages_EVC_to_DMI_Pkg::DMI_Track_Description_T/
+ Interface element DMI_Track_Description_T_DMI_Messages_EVC_to_DMI_Pkg has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 55698, character 0
+  at path DMI_Messages_Bothways_Pkg::DMI_Driver_Identifier_T/
+ Interface element DMI_Driver_Identifier_T_DMI_Messages_Bothways_Pkg has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 174874, character 0
+  at path Packet_Types_Pkg::P15_Level23MovementAuthorities_T/
+ Interface element P15_Level23MovementAuthorities_T_Packet_Types_Pkg has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 174764, character 0
+  at path Packet_Types_Pkg::P12_Level1MovementAuthorities_T/
+ Interface element P12_Level1MovementAuthorities_T_Packet_Types_Pkg has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 174759, character 0
+  at path Packet_Types_Pkg::P46_ConditionalLevelTransitionOrders_T/
+ Interface element P46_ConditionalLevelTransitionOrders_T_Packet_Types_Pkg has
+ been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 375294, character 0
+  at path TM_baseline2::P203V1_OBU_k_m_sectionlist_enum_T/
+ Interface element P203V1_OBU_k_m_sectionlist_enum_T_TM_baseline2 has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 62691, character 0
+  at path TrackAtlasTypes::GradientProfile_for_DMI_section_t/
+ Interface element GradientProfile_for_DMI_section_t_TrackAtlasTypes has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 64998, character 0
+  at path DATA::DMI_EVC_Coded_Train_Data_int_array_T/
+ Interface element DMI_EVC_Coded_Train_Data_int_array_T_DATA has been renamed
+ because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 65017, character 0
+  at path DATA::DMI_Identifier_Request_int_array_T/
+ Interface element DMI_Identifier_Request_int_array_T_DATA has been renamed
+ because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 65042, character 0
+  at path DATA::DMI_EVC_Radio_Net_Data_int_array_T/
+ Interface element DMI_EVC_Radio_Net_Data_int_array_T_DATA has been renamed
+ because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 65047, character 0
+  at path DATA::DMI_Train_Running_Number_int_array_T/
+ Interface element DMI_Train_Running_Number_int_array_T_DATA has been renamed
+ because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 65057, character 0
+  at path DATA::DMI_Adhesion_Factor_Data_int_array_T/
+ Interface element DMI_Adhesion_Factor_Data_int_array_T_DATA has been renamed
+ because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 317165, character 0
+  at path TM::P003_OBU_nid_c_sectionlist_enum_T/
+ Interface element P003_OBU_nid_c_sectionlist_enum_T_TM has been renamed because
+ it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 614282, character 0
+  at path TM_transitional::Radio_TrainTrack_Header_T/
+ Interface element Radio_TrainTrack_Header_T_TM_transitional has been renamed
+ because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 614271, character 0
+  at path TM_transitional::Radio_TrainTrack_Message_T/
+ Interface element Radio_TrainTrack_Message_T_TM_transitional has been renamed
+ because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 28, character 0
+  at path ENUM_M_SupervisionDisplay_T_supDis_indication/
+ Interface element ENUM_M_SupervisionDisplay_T_supDis_indication has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 32, character 0
+  at path ENUM_M_SupervisionDisplay_T_supDis_overspeed/
+ Interface element ENUM_M_SupervisionDisplay_T_supDis_overspeed has been renamed
+ because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 36, character 0
+  at path ENUM_M_SupervisionDisplay_T_supDis_warning/
+ Interface element ENUM_M_SupervisionDisplay_T_supDis_warning has been renamed
+ because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 40, character 0
+  at path ENUM_M_SupervisionDisplay_T_supDis_intervention/
+ Interface element ENUM_M_SupervisionDisplay_T_supDis_intervention has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 48, character 0
+  at path INT_M_SupervisionDisplay_T_supDis_intervention/
+ Interface element INT_M_SupervisionDisplay_T_supDis_intervention has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 52, character 0
+  at path INT_M_SupervisionDisplay_T_supDis_warning/
+ Interface element INT_M_SupervisionDisplay_T_supDis_warning has been renamed
+ because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 56, character 0
+  at path INT_M_SupervisionDisplay_T_supDis_overspeed/
+ Interface element INT_M_SupervisionDisplay_T_supDis_overspeed has been renamed
+ because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 60, character 0
+  at path INT_M_SupervisionDisplay_T_supDis_indication/
+ Interface element INT_M_SupervisionDisplay_T_supDis_indication has been renamed
+ because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 108, character 0
+  at path ENUM_connectionStatusRadioUnit_T_conn_no_connection/
+ Interface element ENUM_connectionStatusRadioUnit_T_conn_no_connection has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 112, character 0
+  at path ENUM_connectionStatusRadioUnit_T_conn_ConnectionUp/
+ Interface element ENUM_connectionStatusRadioUnit_T_conn_ConnectionUp has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 116, character 0
+  at path ENUM_connectionStatusRadioUnit_T_conn_SetupFailed/
+ Interface element ENUM_connectionStatusRadioUnit_T_conn_SetupFailed has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 124, character 0
+  at path INT_connectionStatusRadioUnit_T_conn_SetupFailed/
+ Interface element INT_connectionStatusRadioUnit_T_conn_SetupFailed has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 128, character 0
+  at path INT_connectionStatusRadioUnit_T_conn_ConnectionUp/
+ Interface element INT_connectionStatusRadioUnit_T_conn_ConnectionUp has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 132, character 0
+  at path INT_connectionStatusRadioUnit_T_conn_no_connection/
+ Interface element INT_connectionStatusRadioUnit_T_conn_no_connection has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 140, character 0
+  at path ENUM_DMI_List_Entry_Request_T_Enter_revalidate_train_running_number/
+ Interface element
+ ENUM_DMI_List_Entry_Request_T_Enter_revalidate_train_running_number has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 144, character 0
+  at path ENUM_DMI_List_Entry_Request_T_Enter_revalidate_ETCS_level/
+ Interface element ENUM_DMI_List_Entry_Request_T_Enter_revalidate_ETCS_level has
+ been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 148, character 0
+  at path ENUM_DMI_List_Entry_Request_T_Enter_RBC_contact_menu/
+ Interface element ENUM_DMI_List_Entry_Request_T_Enter_RBC_contact_menu has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 156, character 0
+  at path ENUM_DMI_List_Entry_Request_T_Enter_NTC_data/
+ Interface element ENUM_DMI_List_Entry_Request_T_Enter_NTC_data has been renamed
+ because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 164, character 0
+  at path ENUM_DMI_List_Entry_Request_T_Enable_the_track_ahead_free_by_the_driver/
+ Interface element
+ ENUM_DMI_List_Entry_Request_T_Enable_the_track_ahead_free_by_the_driver has
+ been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 172, character 0
+  at path ENUM_DMI_List_Entry_Request_T_Show_main_window/
+ Interface element ENUM_DMI_List_Entry_Request_T_Show_main_window has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 180, character 0
+  at path ENUM_DMI_List_Entry_Request_T_Hide_adhesion_factor_entry_window/
+ Interface element
+ ENUM_DMI_List_Entry_Request_T_Hide_adhesion_factor_entry_window has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 184, character 0
+  at path ENUM_DMI_List_Entry_Request_T_Show_Set_VBC_validation_window/
+ Interface element ENUM_DMI_List_Entry_Request_T_Show_Set_VBC_validation_window
+ has been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 188, character 0
+  at path ENUM_DMI_List_Entry_Request_T_Show_Remove_VBC_validation_window/
+ Interface element
+ ENUM_DMI_List_Entry_Request_T_Show_Remove_VBC_validation_window has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 196, character 0
+  at path INT_DMI_List_Entry_Request_T_Show_Set_VBC_validation_window/
+ Interface element INT_DMI_List_Entry_Request_T_Show_Set_VBC_validation_window
+ has been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 204, character 0
+  at path INT_DMI_List_Entry_Request_T_Hide_adhesion_factor_entry_window/
+ Interface element
+ INT_DMI_List_Entry_Request_T_Hide_adhesion_factor_entry_window has been renamed
+ because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 208, character 0
+  at path INT_DMI_List_Entry_Request_T_Hide_main_window/
+ Interface element INT_DMI_List_Entry_Request_T_Hide_main_window has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 212, character 0
+  at path INT_DMI_List_Entry_Request_T_Show_main_window/
+ Interface element INT_DMI_List_Entry_Request_T_Show_main_window has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 228, character 0
+  at path INT_DMI_List_Entry_Request_T_Enter_NTC_data/
+ Interface element INT_DMI_List_Entry_Request_T_Enter_NTC_data has been renamed
+ because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 236, character 0
+  at path INT_DMI_List_Entry_Request_T_Enter_RBC_contact_menu/
+ Interface element INT_DMI_List_Entry_Request_T_Enter_RBC_contact_menu has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 240, character 0
+  at path INT_DMI_List_Entry_Request_T_Enter_revalidate_ETCS_level/
+ Interface element INT_DMI_List_Entry_Request_T_Enter_revalidate_ETCS_level has
+ been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 244, character 0
+  at path INT_DMI_List_Entry_Request_T_Enter_revalidate_train_running_number/
+ Interface element
+ INT_DMI_List_Entry_Request_T_Enter_revalidate_train_running_number has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 248, character 0
+  at path INT_DMI_List_Entry_Request_T_Enter_revalidate_driver_identifier/
+ Interface element
+ INT_DMI_List_Entry_Request_T_Enter_revalidate_driver_identifier has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 300, character 0
+  at path ENUM_DMI_Q_TEXT_route_unsuitable_loading_gauge/
+ Interface element ENUM_DMI_Q_TEXT_route_unsuitable_loading_gauge has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 304, character 0
+  at path ENUM_DMI_Q_TEXT_route_unsuitable_traction_system/
+ Interface element ENUM_DMI_Q_TEXT_route_unsuitable_traction_system has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 416, character 0
+  at path INT_DMI_Q_TEXT_route_unsuitable_loading_gauge/
+ Interface element INT_DMI_Q_TEXT_route_unsuitable_loading_gauge has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 420, character 0
+  at path INT_DMI_Q_TEXT_route_unsuitable_axle_load_category/
+ Interface element INT_DMI_Q_TEXT_route_unsuitable_axle_load_category has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 99446, character 0
+  at path TM_conversions::ENUM_Q_TEXTCONFIRM_confirmation_EB/
+ Interface element ENUM_Q_TEXTCONFIRM_confirmation_EB_TM_conversions has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 1530, character 29
+  at path Q_TEXTCONFIRM_Confirmation_required_command_application_of_the_emergency_brake_when_display_end_condition_is_fulfilled_unless_the_text_has_already_been_acknowledged_by_the_driver/
+ Interface element
+ Q_TEXTCONFIRM_Confirmation_required_command_application_of_the_emergency_brake_when_display_end_condition_is_fulfilled_unless_the_text_has_already_been_acknowledged_by_the_driver
+ has been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 99450, character 0
+  at path TM_conversions::ENUM_Q_TEXTCONFIRM_confirmation_SB/
+ Interface element ENUM_Q_TEXTCONFIRM_confirmation_SB_TM_conversions has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 1528, character 29
+  at path Q_TEXTCONFIRM_Confirmation_required_command_application_of_the_service_brake_when_display_end_condition_is_fulfilled_unless_the_text_has_already_been_acknowledged_by_the_driver/
+ Interface element
+ Q_TEXTCONFIRM_Confirmation_required_command_application_of_the_service_brake_when_display_end_condition_is_fulfilled_unless_the_text_has_already_been_acknowledged_by_the_driver
+ has been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 99466, character 0
+  at path TM_conversions::INT_Q_TEXTCONFIRM_confirmation_SB/
+ Interface element INT_Q_TEXTCONFIRM_confirmation_SB_TM_conversions has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 99470, character 0
+  at path TM_conversions::INT_Q_TEXTCONFIRM_confirmation_EB/
+ Interface element INT_Q_TEXTCONFIRM_confirmation_EB_TM_conversions has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 99494, character 0
+  at path TM_conversions::ENUM_M_TRACKCOND_Powerless_section_switch_off_the_main_power_switch/
+ Interface element
+ ENUM_M_TRACKCOND_Powerless_section_switch_off_the_main_power_switch_TM_conversions
+ has been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 99510, character 0
+  at path TM_conversions::ENUM_M_TRACKCOND_Switch_off_eddy_current_brake_for_service_brake/
+ Interface element
+ ENUM_M_TRACKCOND_Switch_off_eddy_current_brake_for_service_brake_TM_conversions
+ has been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 1554, character 29
+  at path M_TRACKCOND_Switch_off_eddy_current_brake_for_service_brake_Initial_state_is_eddy_current_brake_for_service_brake_on/
+ Interface element
+ M_TRACKCOND_Switch_off_eddy_current_brake_for_service_brake_Initial_state_is_eddy_current_brake_for_service_brake_on
+ has been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 99546, character 0
+  at path TM_conversions::INT_M_TRACKCOND_Switch_off_eddy_current_brake_for_emergency_brake/
+ Interface element
+ INT_M_TRACKCOND_Switch_off_eddy_current_brake_for_emergency_brake_TM_conversions
+ has been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 99562, character 0
+  at path TM_conversions::INT_M_TRACKCOND_Powerless_section_Lower_pantograph/
+ Interface element
+ INT_M_TRACKCOND_Powerless_section_Lower_pantograph_TM_conversions has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 476, character 0
+  at path ENUM_Icon_control_flag_T_show_icon_flashing_in_area/
+ Interface element ENUM_Icon_control_flag_T_show_icon_flashing_in_area has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 480, character 0
+  at path ENUM_Icon_control_flag_T_show_icon_with_yellow_flashing_frame_in_area/
+ Interface element
+ ENUM_Icon_control_flag_T_show_icon_with_yellow_flashing_frame_in_area has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 488, character 0
+  at path INT_Icon_control_flag_T_show_icon_with_yellow_flashing_frame_in_area/
+ Interface element
+ INT_Icon_control_flag_T_show_icon_with_yellow_flashing_frame_in_area has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 492, character 0
+  at path INT_Icon_control_flag_T_show_icon_flashing_in_area/
+ Interface element INT_Icon_control_flag_T_show_icon_flashing_in_area has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 1575, character 29
+  at path NC_TRAIN_Freight_train_braked_in_G_position/
+ Interface element NC_TRAIN_Freight_train_braked_in_G_position has been renamed
+ because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 792, character 0
+  at path INT_DMI_Cabin_Identifier_T_cabin_B/
+ Interface element INT_DMI_Cabin_Identifier_T_cabin_B has been renamed because
+ it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 800, character 0
+  at path ENUM_DMI_Cabin_Identifier_T_cabin_B/
+ Interface element ENUM_DMI_Cabin_Identifier_T_cabin_B has been renamed because
+ it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 868, character 0
+  at path INT_DMI_Request_T_Request_for_system_version/
+ Interface element INT_DMI_Request_T_Request_for_system_version has been renamed
+ because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 876, character 0
+  at path INT_DMI_Request_T_Request_for_train_data_view/
+ Interface element INT_DMI_Request_T_Request_for_train_data_view has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 892, character 0
+  at path INT_DMI_Request_T_Request_to_hide_supervision_data/
+ Interface element INT_DMI_Request_T_Request_to_hide_supervision_data has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 952, character 0
+  at path INT_DMI_Request_T_Request_to_show_geographical_position/
+ Interface element INT_DMI_Request_T_Request_to_show_geographical_position has
+ been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 964, character 0
+  at path ENUM_DMI_Request_T_Request_to_show_supervision_data/
+ Interface element ENUM_DMI_Request_T_Request_to_show_supervision_data has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 976, character 0
+  at path ENUM_DMI_Request_T_Scroll_text_up/
+ Interface element ENUM_DMI_Request_T_Scroll_text_up has been renamed because it
+ collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 1024, character 0
+  at path ENUM_DMI_Request_T_Request_to_hide_geographical_information/
+ Interface element ENUM_DMI_Request_T_Request_to_hide_geographical_information
+ has been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 1040, character 0
+  at path ENUM_DMI_Request_T_Request_for_train_data/
+ Interface element ENUM_DMI_Request_T_Request_for_train_data has been renamed
+ because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 1044, character 0
+  at path ENUM_DMI_Request_T_Request_for_system_version/
+ Interface element ENUM_DMI_Request_T_Request_for_system_version has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 1048, character 0
+  at path ENUM_DMI_Request_T_Request_for_switching_train_data_entry/
+ Interface element ENUM_DMI_Request_T_Request_for_switching_train_data_entry has
+ been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 1052, character 0
+  at path ENUM_DMI_Request_T_Request_for_SR_data/
+ Interface element ENUM_DMI_Request_T_Request_for_SR_data has been renamed
+ because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 1056, character 0
+  at path ENUM_DMI_Request_T_Request_for_radio_network_entry/
+ Interface element ENUM_DMI_Request_T_Request_for_radio_network_entry has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 1060, character 0
+  at path ENUM_DMI_Request_T_Request_for_Adhesion_factor_data/
+ Interface element ENUM_DMI_Request_T_Request_for_Adhesion_factor_data has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 2358, character 29
+  at path Q_LENGTH_Train_integrity_confirmed_by_driver/
+ Interface element Q_LENGTH_Train_integrity_confirmed_by_driver has been renamed
+ because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 1386, character 29
+  at path Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_nominal_direction/
+ Interface element
+ Q_LINKORIENTATION_The_balise_group_is_seen_by_the_train_in_nominal_direction
+ has been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 593899, character 0
+  at path TA_MRSP_new::DIM_maxSSP_individual_sections/
+ Interface element DIM_maxSSP_individual_sections_TA_MRSP_new has been renamed
+ because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 1743, character 29
+  at path Q_NVEMRRLS_Revoke_emergency_brake_command_when_permitted_speed_supervision_limit_is_no_longer_exceeded/
+ Interface element
+ Q_NVEMRRLS_Revoke_emergency_brake_command_when_permitted_speed_supervision_limit_is_no_longer_exceeded
+ has been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 100398, character 0
+  at path TM_conversions::ENUM_Q_EMERGENCYSTOP_cond_accepted_with_no_EOA_update/
+ Interface element
+ ENUM_Q_EMERGENCYSTOP_cond_accepted_with_no_EOA_update_TM_conversions has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 2344, character 29
+  at path Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_no_update_of_EOA/
+ Interface element
+ Q_EMERGENCYSTOP_Conditional_Emergency_Stop_accepted_with_no_update_of_EOA has
+ been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 100422, character 0
+  at path TM_conversions::INT_Q_EMERGENCYSTOP_cond_accepted_with_EOA_update/
+ Interface element
+ INT_Q_EMERGENCYSTOP_cond_accepted_with_EOA_update_TM_conversions has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 659267, character 0
+  at path RCM_MsgTypes_Pkg::cNID_RADIO_useTheShortNumberStoredOnboard/
+ Interface element cNID_RADIO_useTheShortNumberStoredOnboard_RCM_MsgTypes_Pkg
+ has been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 2053, character 29
+  at path M_DUP_This_balise_is_a_duplicate_of_the_next_balise/
+ Interface element M_DUP_This_balise_is_a_duplicate_of_the_next_balise has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 2238, character 29
+  at path Q_DIFF_Other_specific_category_does_not_replace_the_Cant_Deficiency_SSP/
+ Interface element
+ Q_DIFF_Other_specific_category_does_not_replace_the_Cant_Deficiency_SSP has
+ been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 2246, character 29
+  at path NC_CDDIFF_Specific_SSP_applicable_to_Cant_Deficiency_100_mm/
+ Interface element NC_CDDIFF_Specific_SSP_applicable_to_Cant_Deficiency_100_mm
+ has been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 2248, character 29
+  at path NC_CDDIFF_Specific_SSP_applicable_to_Cant_Deficiency_130_mm/
+ Interface element NC_CDDIFF_Specific_SSP_applicable_to_Cant_Deficiency_130_mm
+ has been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 2250, character 29
+  at path NC_CDDIFF_Specific_SSP_applicable_to_Cant_Deficiency_150_mm/
+ Interface element NC_CDDIFF_Specific_SSP_applicable_to_Cant_Deficiency_150_mm
+ has been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 2252, character 29
+  at path NC_CDDIFF_Specific_SSP_applicable_to_Cant_Deficiency_165_mm/
+ Interface element NC_CDDIFF_Specific_SSP_applicable_to_Cant_Deficiency_165_mm
+ has been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 2254, character 29
+  at path NC_CDDIFF_Specific_SSP_applicable_to_Cant_Deficiency_180_mm/
+ Interface element NC_CDDIFF_Specific_SSP_applicable_to_Cant_Deficiency_180_mm
+ has been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 2256, character 29
+  at path NC_CDDIFF_Specific_SSP_applicable_to_Cant_Deficiency_210_mm/
+ Interface element NC_CDDIFF_Specific_SSP_applicable_to_Cant_Deficiency_210_mm
+ has been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 2258, character 29
+  at path NC_CDDIFF_Specific_SSP_applicable_to_Cant_Deficiency_225_mm/
+ Interface element NC_CDDIFF_Specific_SSP_applicable_to_Cant_Deficiency_225_mm
+ has been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 2260, character 29
+  at path NC_CDDIFF_Specific_SSP_applicable_to_Cant_Deficiency_245_mm/
+ Interface element NC_CDDIFF_Specific_SSP_applicable_to_Cant_Deficiency_245_mm
+ has been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 2262, character 29
+  at path NC_CDDIFF_Specific_SSP_applicable_to_Cant_Deficiency_275_mm/
+ Interface element NC_CDDIFF_Specific_SSP_applicable_to_Cant_Deficiency_275_mm
+ has been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 2264, character 30
+  at path NC_CDDIFF_Specific_SSP_applicable_to_Cant_Deficiency_300_mm/
+ Interface element NC_CDDIFF_Specific_SSP_applicable_to_Cant_Deficiency_300_mm
+ has been renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 41503, character 0
+  at path TIU_Types_Pkg::switch_off_eddy_current_brake_for_emergency_brake/
+ Interface element
+ switch_off_eddy_current_brake_for_emergency_brake_TIU_Types_Pkg has been
+ renamed because it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 1895, character 29
+  at path M_NVEBCL_Confidence_level_99_99/
+ Interface element M_NVEBCL_Confidence_level_99_99 has been renamed because it
+ collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 1897, character 29
+  at path M_NVEBCL_Confidence_level_99_999/
+ Interface element M_NVEBCL_Confidence_level_99_999 has been renamed because it
+ collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 1899, character 29
+  at path M_NVEBCL_Confidence_level_99_9999/
+ Interface element M_NVEBCL_Confidence_level_99_9999 has been renamed because it
+ collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 1901, character 29
+  at path M_NVEBCL_Confidence_level_99_99999/
+ Interface element M_NVEBCL_Confidence_level_99_99999 has been renamed because
+ it collides
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/DBC/OpenETCS/ScadeMigration/model/Scade/System/OBU_PreIntegrations/openETCS_EVC/Simulation/scade_model_without_unused.scade, line 1903, character 29
+  at path M_NVEBCL_Confidence_level_99_999999/
+ Interface element M_NVEBCL_Confidence_level_99_999999 has been renamed because
+ it collides
+110 warnings were found
+No error was found
+No failure occurred
+$********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
+** kcg.log
+** Generation date: 2023-11-06T13:54:32
+*************************************************************$
